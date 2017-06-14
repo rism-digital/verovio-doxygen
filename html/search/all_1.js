@@ -10,6 +10,7 @@ var searchData=
   ['boundaryend',['BoundaryEnd',['../classvrv_1_1_boundary_end.html',1,'vrv']]],
   ['boundarystartinterface',['BoundaryStartInterface',['../classvrv_1_1_boundary_start_interface.html',1,'vrv']]],
   ['boundingbox',['BoundingBox',['../classvrv_1_1_bounding_box.html',1,'vrv']]],
+  ['breath',['Breath',['../classvrv_1_1_breath.html',1,'vrv']]],
   ['brush',['Brush',['../classvrv_1_1_brush.html',1,'vrv']]],
   ['btrem',['BTrem',['../classvrv_1_1_b_trem.html',1,'vrv']]]
 ];

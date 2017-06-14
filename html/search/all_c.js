@@ -10,7 +10,7 @@ var searchData=
   ['m_5fcontent',['m_content',['../classvrv_1_1_annot.html#a184f9b0fe1d935528b12ecf31e974d4c',1,'vrv::Annot']]],
   ['m_5fcrossstaff',['m_crossStaff',['../classvrv_1_1_layer_element.html#af61467813ceb6c74c05b55484007c48b',1,'vrv::LayerElement']]],
   ['m_5fcurrentcolour',['m_currentColour',['../classvrv_1_1_view.html#ae6aac368e2134e991fb7a1a5e93f59df',1,'vrv::View']]],
-  ['m_5fdashes',['m_dashes',['../classvrv_1_1_ledger_line.html#a454d8b770afe504c39964f9a83849e50',1,'vrv::LedgerLine']]],
+  ['m_5fdashes',['m_dashes',['../classvrv_1_1_ledger_line.html#a1f028b4f8242c566116eecc0313d2618',1,'vrv::LedgerLine']]],
   ['m_5fdoc',['m_doc',['../classvrv_1_1_view.html#a922bb7e5bab67bd8e28206bd6e4f8c8e',1,'vrv::View']]],
   ['m_5fdots',['m_dots',['../classvrv_1_1_chord.html#a715914acbf21fbd7c67d0589315f94de',1,'vrv::Chord']]],
   ['m_5fdrawingabbrlabelswidth',['m_drawingAbbrLabelsWidth',['../classvrv_1_1_system.html#a7b772466b57f56986b857cac4c08a018',1,'vrv::System']]],

@@ -19,6 +19,7 @@ var classvrv_1_1_note =
     [ "GetDrawingTieAttr", "classvrv_1_1_note.html#a8ff01edf9a31714dcdd364d31e89c450", null ],
     [ "GetDurationInterface", "classvrv_1_1_note.html#a8f681874ac5c6e434eac390455ae68f4", null ],
     [ "GetFlippedNotehead", "classvrv_1_1_note.html#a520f34e67cd0e66c90216e942720b646", null ],
+    [ "GetMensuralSmuflNoteHead", "classvrv_1_1_note.html#af68a87a9293bf48b69765cc3719725bc", null ],
     [ "GetPitchInterface", "classvrv_1_1_note.html#a9fe7c87d2ca44ee1d7eddf14e39b7b4c", null ],
     [ "GetStemDownNW", "classvrv_1_1_note.html#a35dc1dc87e971a555952ad95acbbea9b", null ],
     [ "GetStemmedDrawingInterface", "classvrv_1_1_note.html#a71274e9a15a5002858728613005ef147", null ],

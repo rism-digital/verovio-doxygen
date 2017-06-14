@@ -35,6 +35,7 @@ var searchData=
   ['setscoredefdrawingwidth',['SetScoreDefDrawingWidth',['../classvrv_1_1_view.html#a303f43f2ba8d9098e6391efc79711fbf',1,'vrv::View']]],
   ['setstaffdefredrawflags',['SetStaffDefRedrawFlags',['../classvrv_1_1_object.html#a28b81f899cf3c244799da6f49ae3dd34',1,'vrv::Object::SetStaffDefRedrawFlags()'],['../classvrv_1_1_staff_def.html#a56d69722b3495b9e5e91d38229753caa',1,'vrv::StaffDef::SetStaffDefRedrawFlags()']]],
   ['setstartonly',['SetStartOnly',['../classvrv_1_1_time_point_interface.html#a4c3a7f2c3fd21358c4c25dbae8443f4a',1,'vrv::TimePointInterface']]],
+  ['settypeoption',['SetTypeOption',['../classvrv_1_1_file_input_stream.html#a345157c98eba9361c5692fd6f224e90e',1,'vrv::FileInputStream::SetTypeOption()'],['../classvrv_1_1_humdrum_input.html#adc96602ef12dbf7dbd18a7c1ae03d0dd',1,'vrv::HumdrumInput::SetTypeOption()']]],
   ['setuuidstr',['SetUuidStr',['../classvrv_1_1_time_point_interface.html#acf47474d192a6a9c14732c4055605a6d',1,'vrv::TimePointInterface']]],
   ['splitartic',['SplitArtic',['../classvrv_1_1_artic.html#ab6b401bb7dfd502eccd21bf9614bc905',1,'vrv::Artic']]],
   ['stackgraceelement',['StackGraceElement',['../classvrv_1_1_grace_aligner.html#adafd1105e2839665f24976d256653ad8',1,'vrv::GraceAligner']]],

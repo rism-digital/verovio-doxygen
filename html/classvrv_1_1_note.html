@@ -98,6 +98,7 @@ Inheritance diagram for vrv::Note:</div>
  <div class="center">
   <img src="classvrv_1_1_note.png" usemap="#vrv::Note_map" alt=""/>
   <map id="vrv::Note_map" name="vrv::Note_map">
+<area href="classvrv_1_1_position_interface.html" title="This class is an interface for elements with a position on the staff, such as rests. " alt="vrv::PositionInterface" shape="rect" coords="194,224,378,248"/>
 <area href="classvrv_1_1_pitch_interface.html" title="This class is an interface for elements with pitch, such as notes and neumes. " alt="vrv::PitchInterface" shape="rect" coords="194,168,378,192"/>
 <area href="classvrv_1_1_duration_interface.html" title="This class is an interface for elements with duration, such as notes and rests. " alt="vrv::DurationInterface" shape="rect" coords="194,112,378,136"/>
 <area href="classvrv_1_1_stemmed_drawing_interface.html" title="This class is an interface for MEI stemmed element. " alt="vrv::StemmedDrawingInterface" shape="rect" coords="194,56,378,80"/>
@@ -117,6 +118,10 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a3f569dd14639313902bcdcf1fe6d9f22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a3f569dd14639313902bcdcf1fe6d9f22">IsUnissonWith</a> (<a class="el" href="classvrv_1_1_note.html">Note</a> *note, bool ignoreAccid=false)</td></tr>
 <tr class="memdesc:a3f569dd14639313902bcdcf1fe6d9f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the note is a unisson.  <a href="#a3f569dd14639313902bcdcf1fe6d9f22">More...</a><br /></td></tr>
 <tr class="separator:a3f569dd14639313902bcdcf1fe6d9f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af68a87a9293bf48b69765cc3719725bc"><td class="memItemLeft" align="right" valign="top"><a id="af68a87a9293bf48b69765cc3719725bc"></a>
+wchar_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#af68a87a9293bf48b69765cc3719725bc">GetMensuralSmuflNoteHead</a> ()</td></tr>
+<tr class="memdesc:af68a87a9293bf48b69765cc3719725bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the SMuFL code for a mensural note looking at the staff notation type, the coloration and the duration. <br /></td></tr>
+<tr class="separator:af68a87a9293bf48b69765cc3719725bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0505ca9921082084eb7aa32e38cda96"><td class="memItemLeft" align="right" valign="top"><a id="aa0505ca9921082084eb7aa32e38cda96"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#aa0505ca9921082084eb7aa32e38cda96">CalcStem</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
 <tr class="memdesc:aa0505ca9921082084eb7aa32e38cda96"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a0b93f8b6e02c8ba98a03db67fe5d5d10" title="Set the drawing stem positions, including for beams. ">Object::CalcStem</a>. <br /></td></tr>
@@ -1061,6 +1066,36 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~PitchInterface</b
 <tr class="memitem:a41ec055c958eb670dda01b89974e3232 inherit pub_methods_classvrv_1_1_pitch_interface"><td class="memItemLeft" align="right" valign="top">virtual InterfaceId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_pitch_interface.html#a41ec055c958eb670dda01b89974e3232">IsInterface</a> ()</td></tr>
 <tr class="memdesc:a41ec055c958eb670dda01b89974e3232 inherit pub_methods_classvrv_1_1_pitch_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method returning the InterfaceId of the interface.  <a href="classvrv_1_1_pitch_interface.html#a41ec055c958eb670dda01b89974e3232">More...</a><br /></td></tr>
 <tr class="separator:a41ec055c958eb670dda01b89974e3232 inherit pub_methods_classvrv_1_1_pitch_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classvrv_1_1_position_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_position_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_position_interface.html">vrv::PositionInterface</a></td></tr>
+<tr class="memitem:aab1a8c7f3f3fa7fb5680db989030b1db inherit pub_methods_classvrv_1_1_position_interface"><td class="memItemLeft" align="right" valign="top"><a id="aab1a8c7f3f3fa7fb5680db989030b1db"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>CalcDrawingLoc</b> (<a class="el" href="classvrv_1_1_layer.html">Layer</a> *layer, <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *element)</td></tr>
+<tr class="separator:aab1a8c7f3f3fa7fb5680db989030b1db inherit pub_methods_classvrv_1_1_position_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932d3221b8cd285116ffde54bc7a17e8 inherit pub_methods_classvrv_1_1_position_interface"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_position_interface.html#a932d3221b8cd285116ffde54bc7a17e8">HasIdenticalPositionInterface</a> (<a class="el" href="classvrv_1_1_position_interface.html">PositionInterface</a> *otherPitchInterface)</td></tr>
+<tr class="memdesc:a932d3221b8cd285116ffde54bc7a17e8 inherit pub_methods_classvrv_1_1_position_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inteface comparison operator.  <a href="classvrv_1_1_position_interface.html#a932d3221b8cd285116ffde54bc7a17e8">More...</a><br /></td></tr>
+<tr class="separator:a932d3221b8cd285116ffde54bc7a17e8 inherit pub_methods_classvrv_1_1_position_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aab8fb785b348dcf88714338863bc78 inherit pub_methods_classvrv_1_1_position_interface"><td class="memItemLeft" align="right" valign="top"><a id="a1aab8fb785b348dcf88714338863bc78"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_position_interface.html#a1aab8fb785b348dcf88714338863bc78">InterfaceResetDrawing</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams, <a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:a1aab8fb785b348dcf88714338863bc78 inherit pub_methods_classvrv_1_1_position_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a69ad18810d5249e8bb56be54884d2b50" title="Reset the drawing values before calling PrepareDrawing after changes. ">Object::ResetDrawing</a>. <br /></td></tr>
+<tr class="separator:a1aab8fb785b348dcf88714338863bc78 inherit pub_methods_classvrv_1_1_position_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74c74fcf22d5ae9e9286623353da322 inherit pub_methods_classvrv_1_1_position_interface"><td class="memItemLeft" align="right" valign="top"><a id="ac74c74fcf22d5ae9e9286623353da322"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_position_interface.html#ac74c74fcf22d5ae9e9286623353da322">InterfaceResetHorizontalAlignment</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams, <a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:ac74c74fcf22d5ae9e9286623353da322 inherit pub_methods_classvrv_1_1_position_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a69ad18810d5249e8bb56be54884d2b50" title="Reset the drawing values before calling PrepareDrawing after changes. ">Object::ResetDrawing</a>. <br /></td></tr>
+<tr class="separator:ac74c74fcf22d5ae9e9286623353da322 inherit pub_methods_classvrv_1_1_position_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abda3bfd8e411f1e32cf2d3a746772668 inherit pub_methods_classvrv_1_1_position_interface"><td class="memItemLeft" align="right" valign="top"><a id="abda3bfd8e411f1e32cf2d3a746772668"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PositionInterface</b> ()</td></tr>
+<tr class="separator:abda3bfd8e411f1e32cf2d3a746772668 inherit pub_methods_classvrv_1_1_position_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70c7d8744d6a775a95345420e9800361 inherit pub_methods_classvrv_1_1_position_interface"><td class="memItemLeft" align="right" valign="top"><a id="a70c7d8744d6a775a95345420e9800361"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~PositionInterface</b> ()</td></tr>
+<tr class="separator:a70c7d8744d6a775a95345420e9800361 inherit pub_methods_classvrv_1_1_position_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d7e19319bcf359fc2119512e720004 inherit pub_methods_classvrv_1_1_position_interface"><td class="memItemLeft" align="right" valign="top">virtual InterfaceId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_position_interface.html#ae5d7e19319bcf359fc2119512e720004">IsInterface</a> ()</td></tr>
+<tr class="memdesc:ae5d7e19319bcf359fc2119512e720004 inherit pub_methods_classvrv_1_1_position_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method returning the InterfaceId of the interface.  <a href="classvrv_1_1_position_interface.html#ae5d7e19319bcf359fc2119512e720004">More...</a><br /></td></tr>
+<tr class="separator:ae5d7e19319bcf359fc2119512e720004 inherit pub_methods_classvrv_1_1_position_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bdb6437c6e8739beea47e4bb978493f inherit pub_methods_classvrv_1_1_position_interface"><td class="memItemLeft" align="right" valign="top"><a id="a3bdb6437c6e8739beea47e4bb978493f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDrawingLoc</b> (int drawingLoc)</td></tr>
+<tr class="separator:a3bdb6437c6e8739beea47e4bb978493f inherit pub_methods_classvrv_1_1_position_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48e070408ebae29ba2e89806fe4b5ff8 inherit pub_methods_classvrv_1_1_position_interface"><td class="memItemLeft" align="right" valign="top"><a id="a48e070408ebae29ba2e89806fe4b5ff8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingLoc</b> () const</td></tr>
+<tr class="separator:a48e070408ebae29ba2e89806fe4b5ff8 inherit pub_methods_classvrv_1_1_position_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -1333,7 +1368,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_note.html">Note</a></li>
-    <li class="footer">Generated on Thu May 4 2017 08:57:59 by
+    <li class="footer">Generated on Wed Jun 14 2017 14:34:21 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
