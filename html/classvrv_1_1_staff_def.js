@@ -2,6 +2,7 @@ var classvrv_1_1_staff_def =
 [
     [ "StaffDef", "classvrv_1_1_staff_def.html#a43c7d9e23ec5ff4ad2cb18438b327cd7", null ],
     [ "~StaffDef", "classvrv_1_1_staff_def.html#a9124d498ee71d74310ce445adfa5a2cb", null ],
+    [ "AddChild", "classvrv_1_1_staff_def.html#a53cbaf9d2d49b3dcaaf59151301f6085", null ],
     [ "Clone", "classvrv_1_1_staff_def.html#a1fe5138bb30bad885747a679f7257dcd", null ],
     [ "GetClassId", "classvrv_1_1_staff_def.html#adce6d45d600288f618295a80674cb19c", null ],
     [ "GetClassName", "classvrv_1_1_staff_def.html#ae0013f0e223f9e450295fa96f1f6ad62", null ],

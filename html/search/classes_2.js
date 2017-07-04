@@ -2,6 +2,7 @@ var searchData=
 [
   ['calcdotsparams',['CalcDotsParams',['../classvrv_1_1_calc_dots_params.html',1,'vrv']]],
   ['calcmaxmeasuredurationparams',['CalcMaxMeasureDurationParams',['../classvrv_1_1_calc_max_measure_duration_params.html',1,'vrv']]],
+  ['calconsetoffsetparams',['CalcOnsetOffsetParams',['../classvrv_1_1_calc_onset_offset_params.html',1,'vrv']]],
   ['calcstemparams',['CalcStemParams',['../classvrv_1_1_calc_stem_params.html',1,'vrv']]],
   ['castoffencodingparams',['CastOffEncodingParams',['../classvrv_1_1_cast_off_encoding_params.html',1,'vrv']]],
   ['castoffpagesparams',['CastOffPagesParams',['../classvrv_1_1_cast_off_pages_params.html',1,'vrv']]],

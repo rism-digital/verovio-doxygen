@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('classvrv_1_1_generate_m_i_d_i_params.h
 </div><!--header-->
 <div class="contents">
 
-<p>member 0: MidiFile*: the MidiFile we are writing to member 1: int*: the midi track number member 2: int*: the current time in the measure (incremented by each element) member 3: int*: the current total measure time (incremented by each measure member 4: std::vector&lt;double&gt;: a stack of maximum duration filled by the functor member 5: int* the semi tone transposition for the current track member 6: int with the current bpm  
+<p>member 0: MidiFile*: the MidiFile we are writing to member 1: int: the midi track number member 3: double: the score time from the start of the music to the start of the current measure member 4: int: the semi tone transposition for the current track member 5: int with the current tempo  
  <a href="classvrv_1_1_generate_m_i_d_i_params.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="functorparams_8h_source.html">functorparams.h</a>&gt;</code></p>
@@ -116,24 +116,18 @@ MidiFile *&#160;</td><td class="memItemRight" valign="bottom"><b>m_midiFile</b><
 <tr class="memitem:a437d6363e81b3565106f77d5db868637"><td class="memItemLeft" align="right" valign="top"><a id="a437d6363e81b3565106f77d5db868637"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_midiTrack</b></td></tr>
 <tr class="separator:a437d6363e81b3565106f77d5db868637"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68eb808c350706ab3a163324fe9ec58f"><td class="memItemLeft" align="right" valign="top"><a id="a68eb808c350706ab3a163324fe9ec58f"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentMeasureTime</b></td></tr>
-<tr class="separator:a68eb808c350706ab3a163324fe9ec58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0078b3ff3c9bc63cffba4a01a8bb315"><td class="memItemLeft" align="right" valign="top"><a id="ab0078b3ff3c9bc63cffba4a01a8bb315"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>m_totalTime</b></td></tr>
 <tr class="separator:ab0078b3ff3c9bc63cffba4a01a8bb315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf2f41b2f0840f31cb4f2cdc07397df8"><td class="memItemLeft" align="right" valign="top"><a id="adf2f41b2f0840f31cb4f2cdc07397df8"></a>
-std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxValues</b></td></tr>
-<tr class="separator:adf2f41b2f0840f31cb4f2cdc07397df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb7602c62aa7f79a2b15a9104bc0f8e3"><td class="memItemLeft" align="right" valign="top"><a id="acb7602c62aa7f79a2b15a9104bc0f8e3"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_transSemi</b></td></tr>
 <tr class="separator:acb7602c62aa7f79a2b15a9104bc0f8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a892673c4585f2698d46ceb9c9c583083"><td class="memItemLeft" align="right" valign="top"><a id="a892673c4585f2698d46ceb9c9c583083"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentBpm</b></td></tr>
-<tr class="separator:a892673c4585f2698d46ceb9c9c583083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51a8e71dfbcc0b7e6998e6d3aab6da6"><td class="memItemLeft" align="right" valign="top"><a id="af51a8e71dfbcc0b7e6998e6d3aab6da6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentTempo</b></td></tr>
+<tr class="separator:af51a8e71dfbcc0b7e6998e6d3aab6da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>member 0: MidiFile*: the MidiFile we are writing to member 1: int*: the midi track number member 2: int*: the current time in the measure (incremented by each element) member 3: int*: the current total measure time (incremented by each measure member 4: std::vector&lt;double&gt;: a stack of maximum duration filled by the functor member 5: int* the semi tone transposition for the current track member 6: int with the current bpm </p>
+<div class="textblock"><p>member 0: MidiFile*: the MidiFile we are writing to member 1: int: the midi track number member 3: double: the score time from the start of the music to the start of the current measure member 4: int: the semi tone transposition for the current track member 5: int with the current tempo </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="functorparams_8h_source.html">functorparams.h</a></li>
 </ul>
@@ -143,7 +137,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentBpm</b></td><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_generate_m_i_d_i_params.html">GenerateMIDIParams</a></li>
-    <li class="footer">Generated on Wed Jun 14 2017 14:34:20 by
+    <li class="footer">Generated on Tue Jul 4 2017 12:04:31 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

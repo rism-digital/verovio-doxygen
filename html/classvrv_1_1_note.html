@@ -81,7 +81,6 @@ $(document).ready(function(){initNavTree('classvrv_1_1_note.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classvrv_1_1_note-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vrv::Note Class Reference</div>  </div>
@@ -166,6 +165,14 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a57ed94630df5769cc71b832f6ea5522b">ResetHorizontalAlignment</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
 <tr class="memdesc:a57ed94630df5769cc71b832f6ea5522b"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#acea387d6c12925339a10f94312d9a82f" title="Reset the horizontal alignment environment for various types for object. ">Object::ResetHorizontalAlignment</a>. <br /></td></tr>
 <tr class="separator:a57ed94630df5769cc71b832f6ea5522b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bc1140c2a72c564fe0806238d7b8684"><td class="memItemLeft" align="right" valign="top"><a id="a2bc1140c2a72c564fe0806238d7b8684"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a2bc1140c2a72c564fe0806238d7b8684">GenerateMIDI</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
+<tr class="memdesc:a2bc1140c2a72c564fe0806238d7b8684"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a426081ffba31e4251a2c36ceeb2a43ba" title="Export the object to a MidiFile. ">Object::GenerateMIDI</a>. <br /></td></tr>
+<tr class="separator:a2bc1140c2a72c564fe0806238d7b8684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f88949434306c66a20ed4d28d6bea85"><td class="memItemLeft" align="right" valign="top"><a id="a8f88949434306c66a20ed4d28d6bea85"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a8f88949434306c66a20ed4d28d6bea85">GenerateTimemap</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
+<tr class="memdesc:a8f88949434306c66a20ed4d28d6bea85"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#abe889073301d6e1dfe55e725b6532948" title="Export the object to a JSON timemap file. ">Object::GenerateTimemap</a>. <br /></td></tr>
+<tr class="separator:a8f88949434306c66a20ed4d28d6bea85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, reset and class name methods</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Reset method resets all attribute classes </p>
 </div></td></tr>
@@ -256,6 +263,41 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memitem:a35dc1dc87e971a555952ad95acbbea9b"><td class="memItemLeft" align="right" valign="top"><a id="a35dc1dc87e971a555952ad95acbbea9b"></a>
 virtual <a class="el" href="classvrv_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetStemDownNW</b> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, int staffSize, bool graceSize)</td></tr>
 <tr class="separator:a35dc1dc87e971a555952ad95acbbea9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a0c518a751b415b97dbf5649daec5bc8a"><td class="memItemLeft" align="right" valign="top"><a id="a0c518a751b415b97dbf5649daec5bc8a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a0c518a751b415b97dbf5649daec5bc8a">SetScoreTimeOnset</a> (double scoreTime)</td></tr>
+<tr class="memdesc:a0c518a751b415b97dbf5649daec5bc8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">MIDI timing information. <br /></td></tr>
+<tr class="separator:a0c518a751b415b97dbf5649daec5bc8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ababdf198d9f4cadb001802731f1bc79f"><td class="memItemLeft" align="right" valign="top"><a id="ababdf198d9f4cadb001802731f1bc79f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRealTimeOnsetSeconds</b> (double timeInSeconds)</td></tr>
+<tr class="separator:ababdf198d9f4cadb001802731f1bc79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a7d88dd8c4f5ff265753e00fa94c574"><td class="memItemLeft" align="right" valign="top"><a id="a2a7d88dd8c4f5ff265753e00fa94c574"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetScoreTimeOffset</b> (double scoreTime)</td></tr>
+<tr class="separator:a2a7d88dd8c4f5ff265753e00fa94c574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a5f4d49457dd5ce4e6fed0a4813aec"><td class="memItemLeft" align="right" valign="top"><a id="af2a5f4d49457dd5ce4e6fed0a4813aec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRealTimeOffsetSeconds</b> (double timeInSeconds)</td></tr>
+<tr class="separator:af2a5f4d49457dd5ce4e6fed0a4813aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2980719a6e9b09b72fc4fc8756d1265"><td class="memItemLeft" align="right" valign="top"><a id="aa2980719a6e9b09b72fc4fc8756d1265"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetScoreTimeTiedDuration</b> (double timeInSeconds)</td></tr>
+<tr class="separator:aa2980719a6e9b09b72fc4fc8756d1265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22252d0dd455d2500ab57b2798d158f2"><td class="memItemLeft" align="right" valign="top"><a id="a22252d0dd455d2500ab57b2798d158f2"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>GetScoreTimeOnset</b> ()</td></tr>
+<tr class="separator:a22252d0dd455d2500ab57b2798d158f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cde66157c0596d4dd95fdd938b558c4"><td class="memItemLeft" align="right" valign="top"><a id="a9cde66157c0596d4dd95fdd938b558c4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetRealTimeOnsetMilliseconds</b> ()</td></tr>
+<tr class="separator:a9cde66157c0596d4dd95fdd938b558c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0b1fca33ffb9eee4f4073e2d4db1da"><td class="memItemLeft" align="right" valign="top"><a id="a0a0b1fca33ffb9eee4f4073e2d4db1da"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>GetScoreTimeOffset</b> ()</td></tr>
+<tr class="separator:a0a0b1fca33ffb9eee4f4073e2d4db1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f012d55d2e3c53bac97b46b46ed526"><td class="memItemLeft" align="right" valign="top"><a id="ae2f012d55d2e3c53bac97b46b46ed526"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>GetScoreTimeTiedDuration</b> ()</td></tr>
+<tr class="separator:ae2f012d55d2e3c53bac97b46b46ed526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae49167ff474326ce2dcc681e90b91c5f"><td class="memItemLeft" align="right" valign="top"><a id="ae49167ff474326ce2dcc681e90b91c5f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetRealTimeOffsetMilliseconds</b> ()</td></tr>
+<tr class="separator:ae49167ff474326ce2dcc681e90b91c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04e712065f097601be40f1bd6d86ce06"><td class="memItemLeft" align="right" valign="top"><a id="a04e712065f097601be40f1bd6d86ce06"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>GetScoreTimeDuration</b> ()</td></tr>
+<tr class="separator:a04e712065f097601be40f1bd6d86ce06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvrv_1_1_layer_element"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_layer_element')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></td></tr>
 <tr class="memitem:a319bbc28b17b11be635f53ade3d64325 inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a319bbc28b17b11be635f53ade3d64325"></a>
 <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a319bbc28b17b11be635f53ade3d64325">operator=</a> (const <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> &amp;element)</td></tr>
@@ -329,10 +371,6 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#ab5991a73982d49831d7edeb8fb8a8482">FindTimeSpanningLayerElements</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
 <tr class="memdesc:ab5991a73982d49831d7edeb8fb8a8482 inherit pub_methods_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a0f12c221bb892a8920ea1fab4098a7fa" title="Retrieve the time spanning layer elements between two points. ">Object::FindTimeSpanningLayerElements</a>. <br /></td></tr>
 <tr class="separator:ab5991a73982d49831d7edeb8fb8a8482 inherit pub_methods_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a901cc82df3ccc9d41d7833459d9ee3e2 inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a901cc82df3ccc9d41d7833459d9ee3e2"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a901cc82df3ccc9d41d7833459d9ee3e2">CalcMaxMeasureDuration</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
-<tr class="memdesc:a901cc82df3ccc9d41d7833459d9ee3e2 inherit pub_methods_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#ade83951cbefb443049938380b46df228" title="Calculate the maximum duration of each measure. ">Object::CalcMaxMeasureDuration</a>. <br /></td></tr>
-<tr class="separator:a901cc82df3ccc9d41d7833459d9ee3e2 inherit pub_methods_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6294e2662280f0cf6f48bbf9855cf28c inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a6294e2662280f0cf6f48bbf9855cf28c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>LayerElement</b> ()</td></tr>
 <tr class="separator:a6294e2662280f0cf6f48bbf9855cf28c inherit pub_methods_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -411,13 +449,14 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:af036ca361bb026bae7290265e5da54d3 inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="af036ca361bb026bae7290265e5da54d3"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareCrossStaffEnd</b> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
 <tr class="separator:af036ca361bb026bae7290265e5da54d3 inherit pub_methods_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7454a0a6922a5682093047666c63102f inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a7454a0a6922a5682093047666c63102f"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a7454a0a6922a5682093047666c63102f">GenerateMIDI</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
-<tr class="memdesc:a7454a0a6922a5682093047666c63102f inherit pub_methods_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a426081ffba31e4251a2c36ceeb2a43ba" title="Export the object to a MidiFile. ">Object::GenerateMIDI</a>. <br /></td></tr>
-<tr class="separator:a7454a0a6922a5682093047666c63102f inherit pub_methods_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3103139823a2ca11724ab38cf23f7a52 inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a3103139823a2ca11724ab38cf23f7a52"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateMIDIEnd</b> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
-<tr class="separator:a3103139823a2ca11724ab38cf23f7a52 inherit pub_methods_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb316760f79f10a53b29936e8439e22 inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a4cb316760f79f10a53b29936e8439e22"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a4cb316760f79f10a53b29936e8439e22">CalcOnsetOffset</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
+<tr class="memdesc:a4cb316760f79f10a53b29936e8439e22 inherit pub_methods_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a1e1336770fd1b687628ef53b207d29f2" title="Prepare Note onsets. ">Object::CalcOnsetOffset</a>. <br /></td></tr>
+<tr class="separator:a4cb316760f79f10a53b29936e8439e22 inherit pub_methods_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75e5001ec1a419764ece5141bf00726c inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a75e5001ec1a419764ece5141bf00726c"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a75e5001ec1a419764ece5141bf00726c">ResolveMIDITies</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
+<tr class="memdesc:a75e5001ec1a419764ece5141bf00726c inherit pub_methods_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a93b5fe054b2d26fe91ff50a5861fe08c" title="Adjust note timings based on ties. ">Object::ResolveMIDITies</a>. <br /></td></tr>
+<tr class="separator:a75e5001ec1a419764ece5141bf00726c inherit pub_methods_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvrv_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_object.html">vrv::Object</a></td></tr>
 <tr class="memitem:a3b131f39c868a8a1e9b768bdc0eae811 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a3b131f39c868a8a1e9b768bdc0eae811"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a3b131f39c868a8a1e9b768bdc0eae811">IsFloatingObject</a> () const</td></tr>
@@ -473,9 +512,9 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetComment</b>
 <tr class="memitem:a3b47aa3445a48e681db41607cedcd4b4 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a3b47aa3445a48e681db41607cedcd4b4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetComment</b> (std::string comment)</td></tr>
 <tr class="separator:a3b47aa3445a48e681db41607cedcd4b4 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50f6fdf18f2161322857cf43a18a53bb inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a50f6fdf18f2161322857cf43a18a53bb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasComment</b> (void)</td></tr>
-<tr class="separator:a50f6fdf18f2161322857cf43a18a53bb inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d95d6ed5231e12c17d17868d337b218 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a5d95d6ed5231e12c17d17868d337b218"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasComment</b> ()</td></tr>
+<tr class="separator:a5d95d6ed5231e12c17d17868d337b218 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bd78730c9d5f0302710213488708adb inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a6bd78730c9d5f0302710213488708adb"></a>
 <a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a6bd78730c9d5f0302710213488708adb">GetChild</a> (int idx) const</td></tr>
 <tr class="memdesc:a6bd78730c9d5f0302710213488708adb inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Child access (generic) <br /></td></tr>
@@ -648,6 +687,10 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:a84120019fd68f6d7015f6765d7114a7b inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a84120019fd68f6d7015f6765d7114a7b">UnCastOff</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
 <tr class="memdesc:a84120019fd68f6d7015f6765d7114a7b inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undo the cast of both pages and system.  <a href="classvrv_1_1_object.html#a84120019fd68f6d7015f6765d7114a7b">More...</a><br /></td></tr>
 <tr class="separator:a84120019fd68f6d7015f6765d7114a7b inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade83951cbefb443049938380b46df228 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="ade83951cbefb443049938380b46df228"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#ade83951cbefb443049938380b46df228">CalcMaxMeasureDuration</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
+<tr class="memdesc:ade83951cbefb443049938380b46df228 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the maximum duration of each measure. <br /></td></tr>
+<tr class="separator:ade83951cbefb443049938380b46df228 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae10fe4f6d8a8b450b680f10cfe39a9cc inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="ae10fe4f6d8a8b450b680f10cfe39a9cc"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Object</b> ()</td></tr>
 <tr class="separator:ae10fe4f6d8a8b450b680f10cfe39a9cc inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -732,6 +775,10 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a179616a313a938ec562a31e47a9b025a">FindAllByAttComparison</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
 <tr class="memdesc:a179616a313a938ec562a31e47a9b025a inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a all <a class="el" href="classvrv_1_1_object.html" title="This class represents a basic object. ">Object</a> with a <a class="el" href="classvrv_1_1_att_comparison.html">AttComparison</a> functor. <br /></td></tr>
 <tr class="separator:a179616a313a938ec562a31e47a9b025a inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71a31e15e7bdc343ecb4b43a0d84276 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="aa71a31e15e7bdc343ecb4b43a0d84276"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#aa71a31e15e7bdc343ecb4b43a0d84276">FindSpaceInReferenceAlignments</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
+<tr class="memdesc:aa71a31e15e7bdc343ecb4b43a0d84276 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look if the time / duration passed as parameter overlap with a space in the alignment references. <br /></td></tr>
+<tr class="separator:aa71a31e15e7bdc343ecb4b43a0d84276 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eb3c52e16525ed1a559a825fa85e00e inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a3eb3c52e16525ed1a559a825fa85e00e">GetAlignmentLeftRight</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
 <tr class="memdesc:a3eb3c52e16525ed1a559a825fa85e00e inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the minimum left and maximum right for an alignment.  <a href="classvrv_1_1_object.html#a3eb3c52e16525ed1a559a825fa85e00e">More...</a><br /></td></tr>
 <tr class="separator:a3eb3c52e16525ed1a559a825fa85e00e inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -829,6 +876,9 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:aee6f8abfde8d2fe26b067f97b6ba9f0b inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="aee6f8abfde8d2fe26b067f97b6ba9f0b"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>CastOffSystemsEnd</b> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
 <tr class="separator:aee6f8abfde8d2fe26b067f97b6ba9f0b inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d2bbd8c168fd6904c864f297b3deeb inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="ae8d2bbd8c168fd6904c864f297b3deeb"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>CalcOnsetOffsetEnd</b> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
+<tr class="separator:ae8d2bbd8c168fd6904c864f297b3deeb inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvrv_1_1_bounding_box"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_bounding_box')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_bounding_box.html">vrv::BoundingBox</a></td></tr>
 <tr class="memitem:ae79b9324168608f36cb71c8ca4174220 inherit pub_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="ae79b9324168608f36cb71c8ca4174220"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#ae79b9324168608f36cb71c8ca4174220">ResetBoundingBox</a> ()</td></tr>
@@ -1097,34 +1147,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDrawingLoc</b> (in
 int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingLoc</b> () const</td></tr>
 <tr class="separator:a48e070408ebae29ba2e89806fe4b5ff8 inherit pub_methods_classvrv_1_1_position_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:acb6e4036ff5bd948c196f00dde236ff4"><td class="memItemLeft" align="right" valign="top"><a id="acb6e4036ff5bd948c196f00dde236ff4"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>m_playingOnset</b></td></tr>
-<tr class="separator:acb6e4036ff5bd948c196f00dde236ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67723c62a9d0f620772c289d15ebd216"><td class="memItemLeft" align="right" valign="top"><a id="a67723c62a9d0f620772c289d15ebd216"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>m_playingOffset</b></td></tr>
-<tr class="separator:a67723c62a9d0f620772c289d15ebd216"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_classvrv_1_1_layer_element"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classvrv_1_1_layer_element')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></td></tr>
-<tr class="memitem:a66bf79ef721a113ab2e5ff354313fe2e inherit pub_attribs_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a66bf79ef721a113ab2e5ff354313fe2e">m_xAbs</a></td></tr>
-<tr class="memdesc:a66bf79ef721a113ab2e5ff354313fe2e inherit pub_attribs_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute position X.  <a href="classvrv_1_1_layer_element.html#a66bf79ef721a113ab2e5ff354313fe2e">More...</a><br /></td></tr>
-<tr class="separator:a66bf79ef721a113ab2e5ff354313fe2e inherit pub_attribs_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b95cac7afb86bba8d7695ebd5a960d1 inherit pub_attribs_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a9b95cac7afb86bba8d7695ebd5a960d1"></a>
-<a class="el" href="classvrv_1_1_beam_element_coord.html">BeamElementCoord</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a9b95cac7afb86bba8d7695ebd5a960d1">m_beamElementCoord</a></td></tr>
-<tr class="memdesc:a9b95cac7afb86bba8d7695ebd5a960d1 inherit pub_attribs_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">This stores a pointer to the corresponding BeamElementCoord(currentDur &gt; DUR_4) <br /></td></tr>
-<tr class="separator:a9b95cac7afb86bba8d7695ebd5a960d1 inherit pub_attribs_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af61467813ceb6c74c05b55484007c48b inherit pub_attribs_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="af61467813ceb6c74c05b55484007c48b"></a>
-<a class="el" href="classvrv_1_1_staff.html">Staff</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#af61467813ceb6c74c05b55484007c48b">m_crossStaff</a></td></tr>
-<tr class="memdesc:af61467813ceb6c74c05b55484007c48b inherit pub_attribs_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">This stores a pointer to the cross-staff (if any) and the appropriate layer See <a class="el" href="classvrv_1_1_object.html#a873d7c2f7805530e06ebd07885c399b6" title="See cross-staff / layer pointers on LayerElement. ">Object::PrepareCrossStaff</a>. <br /></td></tr>
-<tr class="separator:af61467813ceb6c74c05b55484007c48b inherit pub_attribs_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93464f5da77d7acbf8565d6a70b47e91 inherit pub_attribs_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a93464f5da77d7acbf8565d6a70b47e91"></a>
-<a class="el" href="classvrv_1_1_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_crossLayer</b></td></tr>
-<tr class="separator:a93464f5da77d7acbf8565d6a70b47e91 inherit pub_attribs_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_classvrv_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classvrv_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classvrv_1_1_object.html">vrv::Object</a></td></tr>
-<tr class="memitem:a74ae0995caefb72a71445ba43fce0652 inherit pub_attribs_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">ArrayOfStrAttr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a74ae0995caefb72a71445ba43fce0652">m_unsupported</a></td></tr>
-<tr class="memdesc:a74ae0995caefb72a71445ba43fce0652 inherit pub_attribs_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keep an array of unsupported attributes as pairs.  <a href="classvrv_1_1_object.html#a74ae0995caefb72a71445ba43fce0652">More...</a><br /></td></tr>
-<tr class="separator:a74ae0995caefb72a71445ba43fce0652 inherit pub_attribs_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_classvrv_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classvrv_1_1_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classvrv_1_1_object.html">vrv::Object</a></td></tr>
@@ -1174,6 +1196,25 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverl
 <tr class="memitem:a3efb531b25e89181a821d237fbdf903e inherit pub_static_methods_classvrv_1_1_pitch_interface"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_pitch_interface.html#a3efb531b25e89181a821d237fbdf903e">AdjustPname</a> (int &amp;pname, int &amp;oct)</td></tr>
 <tr class="memdesc:a3efb531b25e89181a821d237fbdf903e inherit pub_static_methods_classvrv_1_1_pitch_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust the pname and the octave for values outside the range.  <a href="classvrv_1_1_pitch_interface.html#a3efb531b25e89181a821d237fbdf903e">More...</a><br /></td></tr>
 <tr class="separator:a3efb531b25e89181a821d237fbdf903e inherit pub_static_methods_classvrv_1_1_pitch_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classvrv_1_1_layer_element"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classvrv_1_1_layer_element')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></td></tr>
+<tr class="memitem:a66bf79ef721a113ab2e5ff354313fe2e inherit pub_attribs_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a66bf79ef721a113ab2e5ff354313fe2e">m_xAbs</a></td></tr>
+<tr class="memdesc:a66bf79ef721a113ab2e5ff354313fe2e inherit pub_attribs_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute position X.  <a href="classvrv_1_1_layer_element.html#a66bf79ef721a113ab2e5ff354313fe2e">More...</a><br /></td></tr>
+<tr class="separator:a66bf79ef721a113ab2e5ff354313fe2e inherit pub_attribs_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b95cac7afb86bba8d7695ebd5a960d1 inherit pub_attribs_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a9b95cac7afb86bba8d7695ebd5a960d1"></a>
+<a class="el" href="classvrv_1_1_beam_element_coord.html">BeamElementCoord</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a9b95cac7afb86bba8d7695ebd5a960d1">m_beamElementCoord</a></td></tr>
+<tr class="memdesc:a9b95cac7afb86bba8d7695ebd5a960d1 inherit pub_attribs_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">This stores a pointer to the corresponding BeamElementCoord(currentDur &gt; DUR_4) <br /></td></tr>
+<tr class="separator:a9b95cac7afb86bba8d7695ebd5a960d1 inherit pub_attribs_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61467813ceb6c74c05b55484007c48b inherit pub_attribs_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="af61467813ceb6c74c05b55484007c48b"></a>
+<a class="el" href="classvrv_1_1_staff.html">Staff</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#af61467813ceb6c74c05b55484007c48b">m_crossStaff</a></td></tr>
+<tr class="memdesc:af61467813ceb6c74c05b55484007c48b inherit pub_attribs_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">This stores a pointer to the cross-staff (if any) and the appropriate layer See <a class="el" href="classvrv_1_1_object.html#a873d7c2f7805530e06ebd07885c399b6" title="See cross-staff / layer pointers on LayerElement. ">Object::PrepareCrossStaff</a>. <br /></td></tr>
+<tr class="separator:af61467813ceb6c74c05b55484007c48b inherit pub_attribs_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93464f5da77d7acbf8565d6a70b47e91 inherit pub_attribs_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a93464f5da77d7acbf8565d6a70b47e91"></a>
+<a class="el" href="classvrv_1_1_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_crossLayer</b></td></tr>
+<tr class="separator:a93464f5da77d7acbf8565d6a70b47e91 inherit pub_attribs_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classvrv_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classvrv_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classvrv_1_1_object.html">vrv::Object</a></td></tr>
+<tr class="memitem:a74ae0995caefb72a71445ba43fce0652 inherit pub_attribs_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">ArrayOfStrAttr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a74ae0995caefb72a71445ba43fce0652">m_unsupported</a></td></tr>
+<tr class="memdesc:a74ae0995caefb72a71445ba43fce0652 inherit pub_attribs_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keep an array of unsupported attributes as pairs.  <a href="classvrv_1_1_object.html#a74ae0995caefb72a71445ba43fce0652">More...</a><br /></td></tr>
+<tr class="separator:a74ae0995caefb72a71445ba43fce0652 inherit pub_attribs_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classvrv_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classvrv_1_1_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classvrv_1_1_object.html">vrv::Object</a></td></tr>
 <tr class="memitem:a0af864d1b64a70d4ec8b62a520114bde inherit pro_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a0af864d1b64a70d4ec8b62a520114bde"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a0af864d1b64a70d4ec8b62a520114bde">ClearChildren</a> ()</td></tr>
@@ -1368,7 +1409,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_note.html">Note</a></li>
-    <li class="footer">Generated on Wed Jun 14 2017 14:34:21 by
+    <li class="footer">Generated on Tue Jul 4 2017 12:04:33 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

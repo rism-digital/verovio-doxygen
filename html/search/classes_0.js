@@ -28,9 +28,10 @@ var searchData=
   ['articpart',['ArticPart',['../classvrv_1_1_artic_part.html',1,'vrv']]],
   ['articparttypecomparison',['ArticPartTypeComparison',['../classvrv_1_1_artic_part_type_comparison.html',1,'vrv']]],
   ['att',['Att',['../classvrv_1_1_att.html',1,'vrv']]],
-  ['attcommonncomparison',['AttCommonNComparison',['../classvrv_1_1_att_common_n_comparison.html',1,'vrv']]],
-  ['attcommonncomparisonany',['AttCommonNComparisonAny',['../classvrv_1_1_att_common_n_comparison_any.html',1,'vrv']]],
   ['attcomparison',['AttComparison',['../classvrv_1_1_att_comparison.html',1,'vrv']]],
   ['attcomparisonany',['AttComparisonAny',['../classvrv_1_1_att_comparison_any.html',1,'vrv']]],
-  ['attdurextreme',['AttDurExtreme',['../classvrv_1_1_att_dur_extreme.html',1,'vrv']]]
+  ['attdurextreme',['AttDurExtreme',['../classvrv_1_1_att_dur_extreme.html',1,'vrv']]],
+  ['attnintegercomparison',['AttNIntegerComparison',['../classvrv_1_1_att_n_integer_comparison.html',1,'vrv']]],
+  ['attnintegercomparisonany',['AttNIntegerComparisonAny',['../classvrv_1_1_att_n_integer_comparison_any.html',1,'vrv']]],
+  ['attnnumberlikecomparison',['AttNNumberLikeComparison',['../classvrv_1_1_att_n_number_like_comparison.html',1,'vrv']]]
 ];

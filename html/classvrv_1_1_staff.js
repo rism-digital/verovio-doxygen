@@ -14,7 +14,6 @@ var classvrv_1_1_staff =
     [ "GetClassId", "classvrv_1_1_staff.html#a45ab1dbee2599d16bbdd1184e6f499ff", null ],
     [ "GetClassName", "classvrv_1_1_staff.html#a80895a7014216eebfbe9d25887f5f256", null ],
     [ "GetDrawingY", "classvrv_1_1_staff.html#a3d6e1da7c6a779c77eebdcc749723e1e", null ],
-    [ "GetLayerCount", "classvrv_1_1_staff.html#ad2d72b34a1d1301d0201a61cfc8fb4c9", null ],
     [ "GetLedgerLinesAbove", "classvrv_1_1_staff.html#a5f0ab356bcfb44c730bf0d52cd060a92", null ],
     [ "GetLedgerLinesAboveCue", "classvrv_1_1_staff.html#a94fc7f27ea139a3b37983f383464b18b", null ],
     [ "GetLedgerLinesBelow", "classvrv_1_1_staff.html#ae91c2b2dffa5b7be17298693c96b1d39", null ],

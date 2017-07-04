@@ -33,6 +33,7 @@ var searchData=
   ['setresourcepath',['SetResourcePath',['../classvrv_1_1_toolkit.html#aed5c67aae6d92d7c8d1d68edf5a5ae65',1,'vrv::Toolkit']]],
   ['setscorebasedmei',['SetScoreBasedMEI',['../classvrv_1_1_mei_output.html#a20c066584aea082583dd117483369b42',1,'vrv::MeiOutput']]],
   ['setscoredefdrawingwidth',['SetScoreDefDrawingWidth',['../classvrv_1_1_view.html#a303f43f2ba8d9098e6391efc79711fbf',1,'vrv::View']]],
+  ['setscoretimeonset',['SetScoreTimeOnset',['../classvrv_1_1_note.html#a0c518a751b415b97dbf5649daec5bc8a',1,'vrv::Note']]],
   ['setstaffdefredrawflags',['SetStaffDefRedrawFlags',['../classvrv_1_1_object.html#a28b81f899cf3c244799da6f49ae3dd34',1,'vrv::Object::SetStaffDefRedrawFlags()'],['../classvrv_1_1_staff_def.html#a56d69722b3495b9e5e91d38229753caa',1,'vrv::StaffDef::SetStaffDefRedrawFlags()']]],
   ['setstartonly',['SetStartOnly',['../classvrv_1_1_time_point_interface.html#a4c3a7f2c3fd21358c4c25dbae8443f4a',1,'vrv::TimePointInterface']]],
   ['settypeoption',['SetTypeOption',['../classvrv_1_1_file_input_stream.html#a345157c98eba9361c5692fd6f224e90e',1,'vrv::FileInputStream::SetTypeOption()'],['../classvrv_1_1_humdrum_input.html#adc96602ef12dbf7dbd18a7c1ae03d0dd',1,'vrv::HumdrumInput::SetTypeOption()']]],

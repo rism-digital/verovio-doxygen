@@ -10,6 +10,7 @@ var classvrv_1_1_beam_drawing_params =
     [ "m_beamWidthBlack", "classvrv_1_1_beam_drawing_params.html#aeca381975751c44112817dacb4d9107b", null ],
     [ "m_beamWidthWhite", "classvrv_1_1_beam_drawing_params.html#a18277ef53f135eb8464dd60550f59ec1", null ],
     [ "m_changingDur", "classvrv_1_1_beam_drawing_params.html#a7570a6f497472e3f401df251270bc2b7", null ],
+    [ "m_crossStaff", "classvrv_1_1_beam_drawing_params.html#a5aefcccb6cdcb3ca51d5faa1c1128709", null ],
     [ "m_cueSize", "classvrv_1_1_beam_drawing_params.html#a3186230c705018eefca12eb575d1f7c9", null ],
     [ "m_hasMultipleStemDir", "classvrv_1_1_beam_drawing_params.html#a1a7acfd7366e0c7f052dd3218eb486bd", null ],
     [ "m_shortestDur", "classvrv_1_1_beam_drawing_params.html#ae3d5603d361737ecc12794907699a782", null ],

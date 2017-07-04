@@ -4,6 +4,7 @@ var classvrv_1_1_chord =
     [ "~Chord", "classvrv_1_1_chord.html#a9ae1e1fa231042a16cb94107e2572ee8", null ],
     [ "AddChild", "classvrv_1_1_chord.html#ae003b9ef10ebe3e78f523c72f436ca55", null ],
     [ "CalcDots", "classvrv_1_1_chord.html#a4260532e67b95993b013a4d5b63949e2", null ],
+    [ "CalcOnsetOffsetEnd", "classvrv_1_1_chord.html#af50769e5d312c8618af00ff9ba4fdf8f", null ],
     [ "CalcStem", "classvrv_1_1_chord.html#a820f37e84596cb5f2810faf19075de14", null ],
     [ "ClearClusters", "classvrv_1_1_chord.html#afca94680f94f3e222e231970bc60e2d7", null ],
     [ "FilterList", "classvrv_1_1_chord.html#a725f7e46b31a610503cac3f8a17c5fc7", null ],

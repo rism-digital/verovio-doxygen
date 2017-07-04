@@ -1,7 +1,9 @@
 var classvrv_1_1_calc_max_measure_duration_params =
 [
     [ "CalcMaxMeasureDurationParams", "classvrv_1_1_calc_max_measure_duration_params.html#af73b57ab16abd51061bfca59dafb3c57", null ],
-    [ "m_currentBpm", "classvrv_1_1_calc_max_measure_duration_params.html#a71ede56a9efecf0a34ad9761f6357765", null ],
-    [ "m_currentValue", "classvrv_1_1_calc_max_measure_duration_params.html#ab94c510a9a40cee02eb01c7d07f516d9", null ],
-    [ "m_maxValues", "classvrv_1_1_calc_max_measure_duration_params.html#a64010608e9ad493eef83ab67e7377371", null ]
+    [ "m_currentRealTimeSeconds", "classvrv_1_1_calc_max_measure_duration_params.html#a6bf8c71a3f0434687a147f8ca0a7f12a", null ],
+    [ "m_currentScoreTime", "classvrv_1_1_calc_max_measure_duration_params.html#a8408efc55000c267707dff317cdbb547", null ],
+    [ "m_currentTempo", "classvrv_1_1_calc_max_measure_duration_params.html#a1622fe7289d4ebdffbdd12e568834eff", null ],
+    [ "m_maxCurrentRealTimeSeconds", "classvrv_1_1_calc_max_measure_duration_params.html#a86fb81674d83d026f09ac7826160219b", null ],
+    [ "m_maxCurrentScoreTime", "classvrv_1_1_calc_max_measure_duration_params.html#a4f070475d2483e268cfba4a50db40415", null ]
 ];

@@ -5,7 +5,7 @@ var classvrv_1_1_floating_positioner =
     [ "CalcDrawingYRel", "classvrv_1_1_floating_positioner.html#a610bffb3224668e17473bd16ba7d6b2a", null ],
     [ "CalcXMinMaxY", "classvrv_1_1_floating_positioner.html#a28d264f2aa6274709617d07b781986ae", null ],
     [ "GetClassId", "classvrv_1_1_floating_positioner.html#ad8fc1446cdd041730ca8272adf2bc7b7", null ],
-    [ "GetDrawingPlace", "classvrv_1_1_floating_positioner.html#a05d7aea6bc5fa725d499e445500840f5", null ],
+    [ "GetDrawingPlace", "classvrv_1_1_floating_positioner.html#a099f28d64fad8f6f49956a3e31f77d27", null ],
     [ "GetDrawingX", "classvrv_1_1_floating_positioner.html#a3df93cb0ac04f18b868bc43010ab7bdd", null ],
     [ "GetDrawingY", "classvrv_1_1_floating_positioner.html#a756ef0892b0d5112ec4ded05a6f22860", null ],
     [ "GetDrawingYRel", "classvrv_1_1_floating_positioner.html#a7b6fbe7862b608feb1319eeccc0129fc", null ],
@@ -23,5 +23,5 @@ var classvrv_1_1_floating_positioner =
     [ "m_cuvreXMinMaxY", "classvrv_1_1_floating_positioner.html#adac191d051aadf1533deaaecb1e5d21f", null ],
     [ "m_drawingYRel", "classvrv_1_1_floating_positioner.html#a52d529c02864d41c1b31cad82be18881", null ],
     [ "m_object", "classvrv_1_1_floating_positioner.html#a37c2446744eb4ae4149628468b066c5e", null ],
-    [ "m_place", "classvrv_1_1_floating_positioner.html#a230809600834d92bdbe3258fc931f172", null ]
+    [ "m_place", "classvrv_1_1_floating_positioner.html#a8de6e1593f879aeec0c128cf67c1e388", null ]
 ];

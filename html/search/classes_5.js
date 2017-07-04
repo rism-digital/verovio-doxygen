@@ -10,6 +10,7 @@ var searchData=
   ['findbyattcomparisonparams',['FindByAttComparisonParams',['../classvrv_1_1_find_by_att_comparison_params.html',1,'vrv']]],
   ['findbyuuidparams',['FindByUuidParams',['../classvrv_1_1_find_by_uuid_params.html',1,'vrv']]],
   ['findextremebyattcomparisonparams',['FindExtremeByAttComparisonParams',['../classvrv_1_1_find_extreme_by_att_comparison_params.html',1,'vrv']]],
+  ['findspaceinalignmentparams',['FindSpaceInAlignmentParams',['../classvrv_1_1_find_space_in_alignment_params.html',1,'vrv']]],
   ['findtimespanninglayerelementsparams',['FindTimeSpanningLayerElementsParams',['../classvrv_1_1_find_time_spanning_layer_elements_params.html',1,'vrv']]],
   ['flag',['Flag',['../classvrv_1_1_flag.html',1,'vrv']]],
   ['floatingobject',['FloatingObject',['../classvrv_1_1_floating_object.html',1,'vrv']]],

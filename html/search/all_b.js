@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['label',['Label',['../classvrv_1_1_label.html',1,'vrv']]],
+  ['labelabbr',['LabelAbbr',['../classvrv_1_1_label_abbr.html',1,'vrv']]],
   ['layer',['Layer',['../classvrv_1_1_layer.html',1,'vrv']]],
   ['layerelement',['LayerElement',['../classvrv_1_1_layer_element.html',1,'vrv']]],
   ['layout',['LayOut',['../classvrv_1_1_page.html#a29a3f02e9620a674f4f1f1ebdf818089',1,'vrv::Page']]],

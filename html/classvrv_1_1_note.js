@@ -8,6 +8,8 @@ var classvrv_1_1_note =
     [ "CalcLedgerLines", "classvrv_1_1_note.html#a67c593777c501900d80826cfcf7ed535", null ],
     [ "CalcStem", "classvrv_1_1_note.html#aa0505ca9921082084eb7aa32e38cda96", null ],
     [ "FillStaffCurrentTimeSpanning", "classvrv_1_1_note.html#a6886de271d42a7e1be452338d7153e99", null ],
+    [ "GenerateMIDI", "classvrv_1_1_note.html#a2bc1140c2a72c564fe0806238d7b8684", null ],
+    [ "GenerateTimemap", "classvrv_1_1_note.html#a8f88949434306c66a20ed4d28d6bea85", null ],
     [ "GetClassId", "classvrv_1_1_note.html#a88b7a68ecd32a24add5288d9e883730a", null ],
     [ "GetClassName", "classvrv_1_1_note.html#aae29d17ca525e7bc9c258d5697ae20de", null ],
     [ "GetCluster", "classvrv_1_1_note.html#aecc23a1f92c40bb4e4f1dc1da58ab8aa", null ],
@@ -21,6 +23,12 @@ var classvrv_1_1_note =
     [ "GetFlippedNotehead", "classvrv_1_1_note.html#a520f34e67cd0e66c90216e942720b646", null ],
     [ "GetMensuralSmuflNoteHead", "classvrv_1_1_note.html#af68a87a9293bf48b69765cc3719725bc", null ],
     [ "GetPitchInterface", "classvrv_1_1_note.html#a9fe7c87d2ca44ee1d7eddf14e39b7b4c", null ],
+    [ "GetRealTimeOffsetMilliseconds", "classvrv_1_1_note.html#ae49167ff474326ce2dcc681e90b91c5f", null ],
+    [ "GetRealTimeOnsetMilliseconds", "classvrv_1_1_note.html#a9cde66157c0596d4dd95fdd938b558c4", null ],
+    [ "GetScoreTimeDuration", "classvrv_1_1_note.html#a04e712065f097601be40f1bd6d86ce06", null ],
+    [ "GetScoreTimeOffset", "classvrv_1_1_note.html#a0a0b1fca33ffb9eee4f4073e2d4db1da", null ],
+    [ "GetScoreTimeOnset", "classvrv_1_1_note.html#a22252d0dd455d2500ab57b2798d158f2", null ],
+    [ "GetScoreTimeTiedDuration", "classvrv_1_1_note.html#ae2f012d55d2e3c53bac97b46b46ed526", null ],
     [ "GetStemDownNW", "classvrv_1_1_note.html#a35dc1dc87e971a555952ad95acbbea9b", null ],
     [ "GetStemmedDrawingInterface", "classvrv_1_1_note.html#a71274e9a15a5002858728613005ef147", null ],
     [ "GetStemUpSE", "classvrv_1_1_note.html#a4270768391433ba58acea66a16b3cbf4", null ],
@@ -40,6 +48,9 @@ var classvrv_1_1_note =
     [ "SetDrawingLoc", "classvrv_1_1_note.html#a28b46326ae7c510b1daaee0a243d325e", null ],
     [ "SetDrawingTieAttr", "classvrv_1_1_note.html#a07b3aa69a379cc1f30a01fb695b90a9d", null ],
     [ "SetFlippedNotehead", "classvrv_1_1_note.html#a9bd4ecffc2b79ff14134ca3c4da8ebbe", null ],
-    [ "m_playingOffset", "classvrv_1_1_note.html#a67723c62a9d0f620772c289d15ebd216", null ],
-    [ "m_playingOnset", "classvrv_1_1_note.html#acb6e4036ff5bd948c196f00dde236ff4", null ]
+    [ "SetRealTimeOffsetSeconds", "classvrv_1_1_note.html#af2a5f4d49457dd5ce4e6fed0a4813aec", null ],
+    [ "SetRealTimeOnsetSeconds", "classvrv_1_1_note.html#ababdf198d9f4cadb001802731f1bc79f", null ],
+    [ "SetScoreTimeOffset", "classvrv_1_1_note.html#a2a7d88dd8c4f5ff265753e00fa94c574", null ],
+    [ "SetScoreTimeOnset", "classvrv_1_1_note.html#a0c518a751b415b97dbf5649daec5bc8a", null ],
+    [ "SetScoreTimeTiedDuration", "classvrv_1_1_note.html#aa2980719a6e9b09b72fc4fc8756d1265", null ]
 ];

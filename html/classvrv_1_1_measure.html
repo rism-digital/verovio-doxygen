@@ -143,10 +143,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memitem:a361599317323129d770b37bb2fb88576"><td class="memItemLeft" align="right" valign="top"><a id="a361599317323129d770b37bb2fb88576"></a>
 std::vector&lt; <a class="el" href="classvrv_1_1_staff.html">Staff</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFirstStaffGrpStaves</b> (<a class="el" href="classvrv_1_1_score_def.html">ScoreDef</a> *scoreDef)</td></tr>
 <tr class="separator:a361599317323129d770b37bb2fb88576"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0c0a415900bd2e8573e49da527f271b"><td class="memItemLeft" align="right" valign="top"><a id="ae0c0a415900bd2e8573e49da527f271b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#ae0c0a415900bd2e8573e49da527f271b">UpgradePageBasedMEI</a> (<a class="el" href="classvrv_1_1_system.html">System</a> *system)</td></tr>
-<tr class="memdesc:ae0c0a415900bd2e8573e49da527f271b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom method for upgrading page-based unmeasured transcription data. <br /></td></tr>
-<tr class="separator:ae0c0a415900bd2e8573e49da527f271b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe08d9e1f4a7ee4f783b2b389553b83"><td class="memItemLeft" align="right" valign="top"><a id="a7fe08d9e1f4a7ee4f783b2b389553b83"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a7fe08d9e1f4a7ee4f783b2b389553b83">EnclosesTime</a> (int time) const</td></tr>
+<tr class="memdesc:a7fe08d9e1f4a7ee4f783b2b389553b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the measure encloses the given time (in millisecond) Return the playing repeat time (1-based), 0 otherwise. <br /></td></tr>
+<tr class="separator:a7fe08d9e1f4a7ee4f783b2b389553b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0a6a313db006e370bb90be3d7ece0ab"><td class="memItemLeft" align="right" valign="top"><a id="ab0a6a313db006e370bb90be3d7ece0ab"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#ab0a6a313db006e370bb90be3d7ece0ab">GetRealTimeOffsetMilliseconds</a> (int repeat) const</td></tr>
+<tr class="memdesc:ab0a6a313db006e370bb90be3d7ece0ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the real time offset in millisecond for the repeat (1-based). <br /></td></tr>
+<tr class="separator:ab0a6a313db006e370bb90be3d7ece0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7f854dba4cbe22e81661f7acf10e56c"><td class="memItemLeft" align="right" valign="top"><a id="ad7f854dba4cbe22e81661f7acf10e56c"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#ad7f854dba4cbe22e81661f7acf10e56c">ConvertToPageBased</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
 <tr class="memdesc:ad7f854dba4cbe22e81661f7acf10e56c"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#ae930432f04c711ac22a14c66a92feb5e" title="Convert top-level all container (section, endings) and editorial elements to boundary elements...">Object::ConvertToPageBased</a>. <br /></td></tr>
@@ -351,9 +355,16 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>SaveEnd</b> (<
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#af0a102d6699c8d6949f3ee9a3390859b">GenerateMIDI</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
 <tr class="memdesc:af0a102d6699c8d6949f3ee9a3390859b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the object to a MidiFile. <br /></td></tr>
 <tr class="separator:af0a102d6699c8d6949f3ee9a3390859b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ff19112fbbbaf6fd34aa85b3b50fa52"><td class="memItemLeft" align="right" valign="top"><a id="a1ff19112fbbbaf6fd34aa85b3b50fa52"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateMIDIEnd</b> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
-<tr class="separator:a1ff19112fbbbaf6fd34aa85b3b50fa52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">See Object::GenerateTimemap</div></td></tr>
+<tr class="memitem:a950524d9d7199aea4a2848c128893ac3"><td class="memItemLeft" align="right" valign="top"><a id="a950524d9d7199aea4a2848c128893ac3"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a950524d9d7199aea4a2848c128893ac3">GenerateTimemap</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
+<tr class="memdesc:a950524d9d7199aea4a2848c128893ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the object to a JSON timemap file. <br /></td></tr>
+<tr class="separator:a950524d9d7199aea4a2848c128893ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a980d96f6f3e15a9a2c9be8018e41201c"><td class="memItemLeft" align="right" valign="top"><a id="a980d96f6f3e15a9a2c9be8018e41201c"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a980d96f6f3e15a9a2c9be8018e41201c">CalcOnsetOffset</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
+<tr class="memdesc:a980d96f6f3e15a9a2c9be8018e41201c"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a1e1336770fd1b687628ef53b207d29f2" title="Prepare Note onsets. ">Object::CalcOnsetOffset</a>. <br /></td></tr>
+<tr class="separator:a980d96f6f3e15a9a2c9be8018e41201c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvrv_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_object.html">vrv::Object</a></td></tr>
 <tr class="memitem:a3b131f39c868a8a1e9b768bdc0eae811 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a3b131f39c868a8a1e9b768bdc0eae811"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a3b131f39c868a8a1e9b768bdc0eae811">IsFloatingObject</a> () const</td></tr>
@@ -418,9 +429,9 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetComment</b>
 <tr class="memitem:a3b47aa3445a48e681db41607cedcd4b4 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a3b47aa3445a48e681db41607cedcd4b4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetComment</b> (std::string comment)</td></tr>
 <tr class="separator:a3b47aa3445a48e681db41607cedcd4b4 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50f6fdf18f2161322857cf43a18a53bb inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a50f6fdf18f2161322857cf43a18a53bb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasComment</b> (void)</td></tr>
-<tr class="separator:a50f6fdf18f2161322857cf43a18a53bb inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d95d6ed5231e12c17d17868d337b218 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a5d95d6ed5231e12c17d17868d337b218"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasComment</b> ()</td></tr>
+<tr class="separator:a5d95d6ed5231e12c17d17868d337b218 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bd78730c9d5f0302710213488708adb inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a6bd78730c9d5f0302710213488708adb"></a>
 <a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a6bd78730c9d5f0302710213488708adb">GetChild</a> (int idx) const</td></tr>
 <tr class="memdesc:a6bd78730c9d5f0302710213488708adb inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Child access (generic) <br /></td></tr>
@@ -687,6 +698,10 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a179616a313a938ec562a31e47a9b025a">FindAllByAttComparison</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
 <tr class="memdesc:a179616a313a938ec562a31e47a9b025a inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a all <a class="el" href="classvrv_1_1_object.html" title="This class represents a basic object. ">Object</a> with a <a class="el" href="classvrv_1_1_att_comparison.html">AttComparison</a> functor. <br /></td></tr>
 <tr class="separator:a179616a313a938ec562a31e47a9b025a inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71a31e15e7bdc343ecb4b43a0d84276 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="aa71a31e15e7bdc343ecb4b43a0d84276"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#aa71a31e15e7bdc343ecb4b43a0d84276">FindSpaceInReferenceAlignments</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
+<tr class="memdesc:aa71a31e15e7bdc343ecb4b43a0d84276 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look if the time / duration passed as parameter overlap with a space in the alignment references. <br /></td></tr>
+<tr class="separator:aa71a31e15e7bdc343ecb4b43a0d84276 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f12c221bb892a8920ea1fab4098a7fa inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a0f12c221bb892a8920ea1fab4098a7fa"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a0f12c221bb892a8920ea1fab4098a7fa">FindTimeSpanningLayerElements</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
 <tr class="memdesc:a0f12c221bb892a8920ea1fab4098a7fa inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the time spanning layer elements between two points. <br /></td></tr>
@@ -773,6 +788,13 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:aee6f8abfde8d2fe26b067f97b6ba9f0b inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="aee6f8abfde8d2fe26b067f97b6ba9f0b"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>CastOffSystemsEnd</b> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
 <tr class="separator:aee6f8abfde8d2fe26b067f97b6ba9f0b inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d2bbd8c168fd6904c864f297b3deeb inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="ae8d2bbd8c168fd6904c864f297b3deeb"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>CalcOnsetOffsetEnd</b> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
+<tr class="separator:ae8d2bbd8c168fd6904c864f297b3deeb inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b5fe054b2d26fe91ff50a5861fe08c inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a93b5fe054b2d26fe91ff50a5861fe08c"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a93b5fe054b2d26fe91ff50a5861fe08c">ResolveMIDITies</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
+<tr class="memdesc:a93b5fe054b2d26fe91ff50a5861fe08c inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust note timings based on ties. <br /></td></tr>
+<tr class="separator:a93b5fe054b2d26fe91ff50a5861fe08c inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvrv_1_1_bounding_box"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_bounding_box')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_bounding_box.html">vrv::BoundingBox</a></td></tr>
 <tr class="memitem:ae79b9324168608f36cb71c8ca4174220 inherit pub_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="ae79b9324168608f36cb71c8ca4174220"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#ae79b9324168608f36cb71c8ca4174220">ResetBoundingBox</a> ()</td></tr>
@@ -1174,7 +1196,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_measure.html">Measure</a></li>
-    <li class="footer">Generated on Wed Jun 14 2017 14:34:21 by
+    <li class="footer">Generated on Tue Jul 4 2017 12:04:32 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
