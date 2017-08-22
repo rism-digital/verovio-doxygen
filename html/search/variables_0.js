@@ -17,6 +17,7 @@ var searchData=
   ['m_5fdrawingbeammaxslope',['m_drawingBeamMaxSlope',['../classvrv_1_1_doc.html#a0acd9a295cb0a8364f55a44081197ef5',1,'vrv::Doc']]],
   ['m_5fdrawingbeamminslope',['m_drawingBeamMinSlope',['../classvrv_1_1_doc.html#a673c48b796b9e7d6283ea15b9fd9de05',1,'vrv::Doc']]],
   ['m_5fdrawingcancelaccidtype',['m_drawingCancelAccidType',['../classvrv_1_1_key_sig.html#a2c6e3e5fbf89a06398f6061cf991f8bf',1,'vrv::KeySig']]],
+  ['m_5fdrawingcuesize',['m_drawingCueSize',['../classvrv_1_1_layer_element.html#a98868bde8bc6d40dbfc9b0fb5632354f',1,'vrv::LayerElement']]],
   ['m_5fdrawingevenspacing',['m_drawingEvenSpacing',['../classvrv_1_1_doc.html#a0eefb7b7af9e8a1221f8e9eb7a69e398',1,'vrv::Doc']]],
   ['m_5fdrawingjustifyx',['m_drawingJustifyX',['../classvrv_1_1_doc.html#ae301bdd393f0a71c9a1d334df41e38a5',1,'vrv::Doc']]],
   ['m_5fdrawinglabelswidth',['m_drawingLabelsWidth',['../classvrv_1_1_system.html#a968558e99136535da89c65270dc80b3c',1,'vrv::System']]],

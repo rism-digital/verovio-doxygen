@@ -2,6 +2,7 @@ var classvrv_1_1_svg_device_context =
 [
     [ "SvgDeviceContext", "classvrv_1_1_svg_device_context.html#ad1ec9f7fea335ffcfd369435bc9affc2", null ],
     [ "~SvgDeviceContext", "classvrv_1_1_svg_device_context.html#aa9b9c3d319fb507ad296bad981e60653", null ],
+    [ "AddDescription", "classvrv_1_1_svg_device_context.html#a5e29f907daf69ca965136f903bb0969f", null ],
     [ "DrawBackgroundImage", "classvrv_1_1_svg_device_context.html#acbc42017687021b1a84fc728b071921b", null ],
     [ "DrawCircle", "classvrv_1_1_svg_device_context.html#a0954a937c4b88746e4dd785f686d2a22", null ],
     [ "DrawComplexBezierPath", "classvrv_1_1_svg_device_context.html#a236ff67a9ccc50cae9f46637b3957434", null ],

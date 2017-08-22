@@ -26,6 +26,7 @@ var classvrv_1_1_system =
     [ "GetDrawingYRel", "classvrv_1_1_system.html#a30964900c8f91e66644bd156e1924401", null ],
     [ "GetHeight", "classvrv_1_1_system.html#a4dcd13387fa5b83a9dbbb7492e6ab78b", null ],
     [ "GetSystemIdx", "classvrv_1_1_system.html#a89c0cdfa6d45bb5af1927608ca06cb52", null ],
+    [ "HasMixedDrawingStemDir", "classvrv_1_1_system.html#a78f5b8fa8d7f7043f8547301ae24aee3", null ],
     [ "JustifyX", "classvrv_1_1_system.html#a3f54a62351d3e54fcea861225a52bcb0", null ],
     [ "Reset", "classvrv_1_1_system.html#a0204eb6fce138e7edbaef95ae3c707b1", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_system.html#a1ce3b747859b8527f6678952e51c2d8c", null ],

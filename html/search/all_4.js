@@ -9,6 +9,5 @@ var searchData=
   ['expansion',['Expansion',['../classvrv_1_1_expansion.html',1,'vrv']]],
   ['exportfile',['ExportFile',['../classvrv_1_1_file_output_stream.html#aa1ad330aa13c1290d2714366aa5e8d48',1,'vrv::FileOutputStream::ExportFile()'],['../classvrv_1_1_mei_output.html#acd4564eff50dead142838679e42e7c55',1,'vrv::MeiOutput::ExportFile()']]],
   ['exportmidi',['ExportMIDI',['../classvrv_1_1_doc.html#a8d5b755ccb86f875aeed6d03bec26218',1,'vrv::Doc']]],
-  ['exporttimemap',['ExportTimemap',['../classvrv_1_1_doc.html#a770613cbab57a30c515bbc653acf17ee',1,'vrv::Doc']]],
-  ['extractuuidfragment',['ExtractUuidFragment',['../classvrv_1_1_time_point_interface.html#a84852fde24469edca530034c261ef1fa',1,'vrv::TimePointInterface']]]
+  ['exporttimemap',['ExportTimemap',['../classvrv_1_1_doc.html#a770613cbab57a30c515bbc653acf17ee',1,'vrv::Doc']]]
 ];

@@ -55,8 +55,10 @@ var classvrv_1_1_att =
     [ "StrToStr", "classvrv_1_1_att.html#a65b7bc2210f5f4dad29bac63eafbcf4d", null ],
     [ "StrToTempus", "classvrv_1_1_att.html#aebfd863b8358cdd29ed6d2dfecb92642", null ],
     [ "StrToTie", "classvrv_1_1_att.html#a431abe756ea097f70c51b3e74456a0d2", null ],
+    [ "StrToXsdAnyURIList", "classvrv_1_1_att.html#a1b49103419d070b0aa4af67fb3aeb9f4", null ],
     [ "StrToXsdPositiveIntegerList", "classvrv_1_1_att.html#aa0f32f35b377efdc6c35b23e2a9a8cfd", null ],
     [ "TempusToStr", "classvrv_1_1_att.html#ae4be0cd34067c1fa06ba6c42c509c0fb", null ],
     [ "TieToStr", "classvrv_1_1_att.html#a7727871af3be50fa99389981620ece4c", null ],
+    [ "XsdAnyURIListToStr", "classvrv_1_1_att.html#a1b4d1060d813973eab7628fe12fcbd39", null ],
     [ "XsdPositiveIntegerListToStr", "classvrv_1_1_att.html#ad450c19fed7c6403375234ba1d97b3a2", null ]
 ];

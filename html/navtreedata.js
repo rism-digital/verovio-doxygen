@@ -20,18 +20,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classvrv_1_1_att.html#a15b81856cdc9ddddfb91c23462f304a1",
-"classvrv_1_1_bounding_box.html#a8343f2b84e7bb194cb9377c304703bba",
-"classvrv_1_1_dir.html#a4eb6f92b618b322be4f1d0340deb9005",
-"classvrv_1_1_file_input_stream.html#afc335afede6007a0137b49e94645d6cb",
-"classvrv_1_1_humdrum_input.html#a34378463697a34909000f152e9727423",
-"classvrv_1_1_layer_element.html#a7bd87c91c7e394f0299a6b9a3b6d6d9a",
-"classvrv_1_1_note.html#a2a7d88dd8c4f5ff265753e00fa94c574",
-"classvrv_1_1_page.html#a29a3f02e9620a674f4f1f1ebdf818089",
-"classvrv_1_1_section.html#acdd7e18394d27f6b6772e54906db980c",
-"classvrv_1_1_style.html#aee2c55858ef8b9062985ac2773a04673",
-"classvrv_1_1_toolkit.html#a3859f9341d415376b7d8f11a1aa8e352",
-"classvrv_1_1_view.html#ae5ca8f2c3fd55027afe6ae9bf00a1825"
+"classvrv_1_1_artic_part.html#ae524c0c4869f698b1ce0e1b24acb4774",
+"classvrv_1_1_bounding_box.html#a505bfcdcaff3d551fdbd3a74ed3375f0",
+"classvrv_1_1_device_context.html#ae3758acb41e34d14ba0ec760648776b4",
+"classvrv_1_1_fermata.html#acb3c8f88bd73f26627fffc29b1df1a99",
+"classvrv_1_1_humdrum_input.html#a117d7bab1ef8067ae63d839a47b5dde0",
+"classvrv_1_1_layer_element.html",
+"classvrv_1_1_mordent.html#adb954af79c0fd7bb4f41f98bf37eec53",
+"classvrv_1_1_object_list_interface.html",
+"classvrv_1_1_score_def.html",
+"classvrv_1_1_style.html#a16e446b5fde4a23c3cd05268beb1a0f5",
+"classvrv_1_1_time_point_interface.html#aad4fd22f92288ae7c9f8a7b2500ee6a5",
+"classvrv_1_1_view.html#a91c2eb84f422eec8085474a75b9aed82",
+"svgdevicecontext_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

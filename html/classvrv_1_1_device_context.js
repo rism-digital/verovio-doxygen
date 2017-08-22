@@ -2,6 +2,7 @@ var classvrv_1_1_device_context =
 [
     [ "DeviceContext", "classvrv_1_1_device_context.html#ac93a258491871eefffa02697159f432f", null ],
     [ "~DeviceContext", "classvrv_1_1_device_context.html#ae3758acb41e34d14ba0ec760648776b4", null ],
+    [ "AddDescription", "classvrv_1_1_device_context.html#aededb30ba44efb6c40ff3b2570d7868c", null ],
     [ "DeactivateGraphic", "classvrv_1_1_device_context.html#a48b74c4a9ba8bb520dab35be4b7e2ff3", null ],
     [ "DeactivateGraphicX", "classvrv_1_1_device_context.html#a872fc5700311884640e4956cac4a26a9", null ],
     [ "DeactivateGraphicY", "classvrv_1_1_device_context.html#a9843522526eee72a9db4cc5ab566f943", null ],

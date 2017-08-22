@@ -3,7 +3,6 @@ var classvrv_1_1_time_point_interface =
     [ "TimePointInterface", "classvrv_1_1_time_point_interface.html#a470841fa6a90f560e791882bd0d7ff3d", null ],
     [ "~TimePointInterface", "classvrv_1_1_time_point_interface.html#af09ee1866e7e88461f21fae70f267862", null ],
     [ "AddStaff", "classvrv_1_1_time_point_interface.html#a67678cf06ae06579a830344df5c5598a", null ],
-    [ "ExtractUuidFragment", "classvrv_1_1_time_point_interface.html#a84852fde24469edca530034c261ef1fa", null ],
     [ "GetStart", "classvrv_1_1_time_point_interface.html#a3cd14634c9ef2903e83a560ba52788a9", null ],
     [ "GetStartMeasure", "classvrv_1_1_time_point_interface.html#a54007f47ab2054a75b29618b8b47dd4f", null ],
     [ "GetTstampStaves", "classvrv_1_1_time_point_interface.html#acc143d64530139d69ea66c3c413581d0", null ],

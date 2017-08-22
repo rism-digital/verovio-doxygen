@@ -205,9 +205,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setClef</b> (<a class
 <tr class="memitem:a09bba2b6cba984973d62dd5610def8ee"><td class="memItemLeft" align="right" valign="top"><a id="a09bba2b6cba984973d62dd5610def8ee"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setTimeSig</b> (<a class="el" href="classvrv_1_1_staff_def.html">StaffDef</a> *part, const std::string &amp;timesig)</td></tr>
 <tr class="separator:a09bba2b6cba984973d62dd5610def8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abced5f2f3ab052fb4371778c9cdf8f8a"><td class="memItemLeft" align="right" valign="top"><a id="abced5f2f3ab052fb4371778c9cdf8f8a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setMeterSymbol</b> (<a class="el" href="classvrv_1_1_staff_def.html">StaffDef</a> *part, const std::string &amp;metersig)</td></tr>
-<tr class="separator:abced5f2f3ab052fb4371778c9cdf8f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c094e226176e20758273ac5ebe08627"><td class="memItemLeft" align="right" valign="top"><a id="a5c094e226176e20758273ac5ebe08627"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>fillPartInfo</b> (hum::HTp partstart, int partnumber, int partcount)</td></tr>
 <tr class="separator:a5c094e226176e20758273ac5ebe08627"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,6 +319,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>handleGroupEnds</b> (
 <tr class="memitem:a77e9abee7e5765851e333acdea1f6e0c"><td class="memItemLeft" align="right" valign="top"><a id="a77e9abee7e5765851e333acdea1f6e0c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>handleStaffStateVariables</b> (hum::HTp token)</td></tr>
 <tr class="separator:a77e9abee7e5765851e333acdea1f6e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ff5bbf284e6e919da0fd1d3f736bde"><td class="memItemLeft" align="right" valign="top"><a id="aa3ff5bbf284e6e919da0fd1d3f736bde"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleStaffDynamStateVariables</b> (hum::HTp token)</td></tr>
+<tr class="separator:aa3ff5bbf284e6e919da0fd1d3f736bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1accfb930bca801a5904ff66fc601b82"><td class="memItemLeft" align="right" valign="top"><a id="a1accfb930bca801a5904ff66fc601b82"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>removeTuplet</b> (std::vector&lt; std::string &gt; &amp;elements, std::vector&lt; void *&gt; &amp;pointers)</td></tr>
 <tr class="separator:a1accfb930bca801a5904ff66fc601b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -487,6 +487,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setInstrumentName</b>
 <tr class="memitem:ad6ca2be853ffe4a68782a3d1d5bdf494"><td class="memItemLeft" align="right" valign="top"><a id="ad6ca2be853ffe4a68782a3d1d5bdf494"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setInstrumentAbbreviation</b> (<a class="el" href="classvrv_1_1_staff_def.html">vrv::StaffDef</a> *staffdef, const string &amp;name)</td></tr>
 <tr class="separator:ad6ca2be853ffe4a68782a3d1d5bdf494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a9637a9cdd7ceaf1121a2c020e5f94d"><td class="memItemLeft" align="right" valign="top"><a id="a8a9637a9cdd7ceaf1121a2c020e5f94d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addDefaultTempo</b> (<a class="el" href="classvrv_1_1_score_def.html">ScoreDef</a> &amp;m_scoreDef)</td></tr>
+<tr class="separator:a8a9637a9cdd7ceaf1121a2c020e5f94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58cc0e8d37e95ee47ec150ecb99a5a51"><td class="memItemLeft" align="right" valign="top"><a id="a58cc0e8d37e95ee47ec150ecb99a5a51"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getChordNoteCount</b> (hum::HTp token)</td></tr>
+<tr class="separator:a58cc0e8d37e95ee47ec150ecb99a5a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a966c63e8921aded6ad9d48f54e9a583d"><td class="memItemLeft" align="right" valign="top"><a id="a966c63e8921aded6ad9d48f54e9a583d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>createHeader</b> ()</td></tr>
 <tr class="separator:a966c63e8921aded6ad9d48f54e9a583d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -554,12 +560,19 @@ template&lt;class ELEMENT &gt; </td></tr>
 template&lt;class ELEMENT &gt; </td></tr>
 <tr class="memitem:a08e9dff112a6c25ea589af6b3994b79d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setPlace</b> (ELEMENT *element, const std::string &amp;place)</td></tr>
 <tr class="separator:a08e9dff112a6c25ea589af6b3994b79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ba172152db55d37054ee3f6f53eedb"><td class="memTemplParams" colspan="2"><a id="a20ba172152db55d37054ee3f6f53eedb"></a>
+template&lt;class ELEMENT &gt; </td></tr>
+<tr class="memitem:a20ba172152db55d37054ee3f6f53eedb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setMeterSymbol</b> (ELEMENT *element, const std::string &amp;metersig)</td></tr>
+<tr class="separator:a20ba172152db55d37054ee3f6f53eedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2501e155cdbb1278d27b0b0d24db15f"><td class="memItemLeft" align="right" valign="top"><a id="ac2501e155cdbb1278d27b0b0d24db15f"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>cleanHarmString</b> (const std::string &amp;content)</td></tr>
 <tr class="separator:ac2501e155cdbb1278d27b0b0d24db15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43e0bf47b06d6236044b62278bab7a1a"><td class="memItemLeft" align="right" valign="top"><a id="a43e0bf47b06d6236044b62278bab7a1a"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>cleanHarmString2</b> (const std::string &amp;content)</td></tr>
 <tr class="separator:a43e0bf47b06d6236044b62278bab7a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7ff82edd8070395219d0befd44e392"><td class="memItemLeft" align="right" valign="top"><a id="a3e7ff82edd8070395219d0befd44e392"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>cleanHarmString3</b> (const std::string &amp;content)</td></tr>
+<tr class="separator:a3e7ff82edd8070395219d0befd44e392"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a594f91f226fddbe57cd36a70dea302"><td class="memItemLeft" align="right" valign="top"><a id="a3a594f91f226fddbe57cd36a70dea302"></a>
 std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cleanFBString</b> (const std::string &amp;content)</td></tr>
 <tr class="separator:a3a594f91f226fddbe57cd36a70dea302"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -617,7 +630,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_outformat</b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_humdrum_input.html">HumdrumInput</a></li>
-    <li class="footer">Generated on Tue Jul 4 2017 12:04:32 by
+    <li class="footer">Generated on Tue Aug 22 2017 08:21:43 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
