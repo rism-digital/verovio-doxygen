@@ -109,6 +109,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a98b03a16d2a3ead9ac3d7e3bafe2490d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_device_context.html#a98b03a16d2a3ead9ac3d7e3bafe2490d">DrawPlaceholder</a> (int x, int y)</td></tr>
 <tr class="memdesc:a98b03a16d2a3ead9ac3d7e3bafe2490d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special method for forcing bounding boxes to be updated Used for invisible elements (e.g.  <a href="#a98b03a16d2a3ead9ac3d7e3bafe2490d">More...</a><br /></td></tr>
 <tr class="separator:a98b03a16d2a3ead9ac3d7e3bafe2490d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd76f01c9742de3d4a0446f905b1003b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b">UseGlobalStyling</a> ()</td></tr>
+<tr class="memdesc:afd76f01c9742de3d4a0446f905b1003b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method indicating if default global styling is used.  <a href="#afd76f01c9742de3d4a0446f905b1003b">More...</a><br /></td></tr>
+<tr class="separator:afd76f01c9742de3d4a0446f905b1003b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, and other standard methods</div></td></tr>
 <tr class="memitem:ac93a258491871eefffa02697159f432f"><td class="memItemLeft" align="right" valign="top"><a id="ac93a258491871eefffa02697159f432f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DeviceContext</b> ()</td></tr>
@@ -282,6 +285,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartTextGrap
 <tr class="memitem:a00aa64395ad2f5854f87dca59db6a9ef"><td class="memItemLeft" align="right" valign="top"><a id="a00aa64395ad2f5854f87dca59db6a9ef"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>EndTextGraphic</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object, <a class="el" href="classvrv_1_1_view.html">View</a> *view)</td></tr>
 <tr class="separator:a00aa64395ad2f5854f87dca59db6a9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Method for rotating a graphic (clockwise).</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>This should be called only once per graphic and before drawing anything in it. </p>
+</div></td></tr>
+<tr class="memitem:a4e4441d51b1054301bf4f256878f6364"><td class="memItemLeft" align="right" valign="top"><a id="a4e4441d51b1054301bf4f256878f6364"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RotateGraphic</b> (<a class="el" href="classvrv_1_1_point.html">Point</a> const &amp;orig, double angle)=0</td></tr>
+<tr class="separator:a4e4441d51b1054301bf4f256878f6364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Method for starting and ending page</div></td></tr>
 <tr class="memitem:a67e396a9032ff8f17abb70adb03180c9"><td class="memItemLeft" align="right" valign="top"><a id="a67e396a9032ff8f17abb70adb03180c9"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartPage</b> ()=0</td></tr>
@@ -416,6 +425,36 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isDeactivatedY</b><
 
 </div>
 </div>
+<a id="afd76f01c9742de3d4a0446f905b1003b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd76f01c9742de3d4a0446f905b1003b">&#9670;&nbsp;</a></span>UseGlobalStyling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool vrv::DeviceContext::UseGlobalStyling </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method indicating if default global styling is used. </p>
+<p>Typically this is the case with SVG and CSS. When global styling is used, some elements will not set corresponding styles. Global styling is false by default. </p>
+
+<p>Reimplemented in <a class="el" href="classvrv_1_1_svg_device_context.html#a6f4aa56187a3cde13540946a67f50cbc">vrv::SvgDeviceContext</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="devicecontext_8h_source.html">devicecontext.h</a></li>
 </ul>
@@ -425,7 +464,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isDeactivatedY</b><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_device_context.html">DeviceContext</a></li>
-    <li class="footer">Generated on Tue Aug 22 2017 08:21:41 by
+    <li class="footer">Generated on Wed Sep 6 2017 12:03:21 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

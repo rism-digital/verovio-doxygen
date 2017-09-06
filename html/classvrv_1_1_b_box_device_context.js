@@ -25,6 +25,7 @@ var classvrv_1_1_b_box_device_context =
     [ "GetLogicalOrigin", "classvrv_1_1_b_box_device_context.html#a8e94ceef1d83ddac03e54f44069c80f8", null ],
     [ "MoveTextTo", "classvrv_1_1_b_box_device_context.html#a5b9c19400a36495c71b7f7bccf80457f", null ],
     [ "ResumeGraphic", "classvrv_1_1_b_box_device_context.html#a0d6db6bee42d4c830e613fa7e5fe36ba", null ],
+    [ "RotateGraphic", "classvrv_1_1_b_box_device_context.html#a7c440dd517132159a07f88e77b619234", null ],
     [ "SetBackground", "classvrv_1_1_b_box_device_context.html#a63940b47d7a50da456364ba8de8155e5", null ],
     [ "SetBackgroundImage", "classvrv_1_1_b_box_device_context.html#ab8f8e162b260c0d010e939693f9b1b6a", null ],
     [ "SetBackgroundMode", "classvrv_1_1_b_box_device_context.html#a4e0e02d3dd9ea4621aca21e54d078f4d", null ],

@@ -75,6 +75,8 @@ var files =
     [ "smufl.h", "smufl_8h_source.html", null ],
     [ "space.h", "space_8h_source.html", null ],
     [ "staff.h", "staff_8h_source.html", null ],
+    [ "staffdef.h", "staffdef_8h_source.html", null ],
+    [ "staffgrp.h", "staffgrp_8h_source.html", null ],
     [ "style.h", "style_8h_source.html", null ],
     [ "svgdevicecontext.h", "svgdevicecontext_8h_source.html", null ],
     [ "syl.h", "syl_8h_source.html", null ],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['save',['Save',['../classvrv_1_1_artic_part.html#adbf5d8ae4c2bb3222842f33c3c5d9961',1,'vrv::ArticPart::Save()'],['../classvrv_1_1_dots.html#a4454529ca358ddefdf610c417d6d28bc',1,'vrv::Dots::Save()'],['../classvrv_1_1_flag.html#a82e80def83d663169416ba589fafce81',1,'vrv::Flag::Save()'],['../classvrv_1_1_stem.html#a85e737a4827ede4cc5621048db5f0b8e',1,'vrv::Stem::Save()'],['../classvrv_1_1_measure.html#a53146c5860c0e95b6510108dbc5493d8',1,'vrv::Measure::Save()'],['../classvrv_1_1_object.html#a9ed5a5a188e80752f5f553f0267059dd',1,'vrv::Object::Save(FileOutputStream *output)'],['../classvrv_1_1_object.html#a8ec6663670b4b6522cb4892babf36742',1,'vrv::Object::Save(FunctorParams *functorParams)']]],
+  ['save',['Save',['../classvrv_1_1_artic_part.html#adbf5d8ae4c2bb3222842f33c3c5d9961',1,'vrv::ArticPart::Save()'],['../classvrv_1_1_bracket.html#a199544f642565b8be52fbd04806d89ce',1,'vrv::Bracket::Save()'],['../classvrv_1_1_dots.html#a4454529ca358ddefdf610c417d6d28bc',1,'vrv::Dots::Save()'],['../classvrv_1_1_flag.html#a82e80def83d663169416ba589fafce81',1,'vrv::Flag::Save()'],['../classvrv_1_1_num.html#ac410615822e31a86ce2c21f709a604a1',1,'vrv::Num::Save()'],['../classvrv_1_1_stem.html#a85e737a4827ede4cc5621048db5f0b8e',1,'vrv::Stem::Save()'],['../classvrv_1_1_measure.html#a53146c5860c0e95b6510108dbc5493d8',1,'vrv::Measure::Save()'],['../classvrv_1_1_object.html#a9ed5a5a188e80752f5f553f0267059dd',1,'vrv::Object::Save(FileOutputStream *output)'],['../classvrv_1_1_object.html#a8ec6663670b4b6522cb4892babf36742',1,'vrv::Object::Save(FunctorParams *functorParams)']]],
   ['savefile',['SaveFile',['../classvrv_1_1_toolkit.html#a968a2feb41a558700a2e9061489ce90a',1,'vrv::Toolkit']]],
   ['searchalignmentattime',['SearchAlignmentAtTime',['../classvrv_1_1_horizontal_aligner.html#a1b3764dfcb51917eca727e2e55c402b2',1,'vrv::HorizontalAligner']]],
   ['setalignment',['SetAlignment',['../classvrv_1_1_bar_line.html#a9b25f3c724cbe2f6ca61609a6f835aff',1,'vrv::BarLine']]],
@@ -25,6 +25,7 @@ var searchData=
   ['setkeysig',['setKeySig',['../classvrv_1_1_humdrum_input.html#ac4e80552bc9472ec47a23e2d8f2efad1',1,'vrv::HumdrumInput']]],
   ['setmaxtime',['SetMaxTime',['../classvrv_1_1_measure_aligner.html#aab4edf29c88be6e12e726668af041d9d',1,'vrv::MeasureAligner']]],
   ['setmdivxpathquery',['SetMdivXPathQuery',['../classvrv_1_1_file_input_stream.html#a54d4f2123a797f2c76d53bbd3afe92a9',1,'vrv::FileInputStream::SetMdivXPathQuery()'],['../classvrv_1_1_mei_input.html#aa039e44d5ddd789af9f4a64c9a2ef667',1,'vrv::MeiInput::SetMdivXPathQuery()']]],
+  ['setmmoutput',['SetMMOutput',['../classvrv_1_1_svg_device_context.html#a57ff509fb8c71c3fd48092ba269cc159',1,'vrv::SvgDeviceContext']]],
   ['setoverflowbboxes',['SetOverflowBBoxes',['../classvrv_1_1_object.html#a45993175bb6a94cbbd0a5b69251e25eb',1,'vrv::Object']]],
   ['setoverflowbboxesend',['SetOverflowBBoxesEnd',['../classvrv_1_1_object.html#a70161897776b5acbaf0dddaa1ddd9def',1,'vrv::Object']]],
   ['setpage',['SetPage',['../classvrv_1_1_view.html#aafac411031b669991917681ad56660b2',1,'vrv::View']]],

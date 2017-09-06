@@ -6,6 +6,7 @@ var searchData=
   ['add',['Add',['../classvrv_1_1_add.html',1,'vrv']]],
   ['addlayerelementtoflatlistparams',['AddLayerElementToFlatListParams',['../classvrv_1_1_add_layer_element_to_flat_list_params.html',1,'vrv']]],
   ['adjustaccidxparams',['AdjustAccidXParams',['../classvrv_1_1_adjust_accid_x_params.html',1,'vrv']]],
+  ['adjustarpegparams',['AdjustArpegParams',['../classvrv_1_1_adjust_arpeg_params.html',1,'vrv']]],
   ['adjustfloatingpostionergrpsparams',['AdjustFloatingPostionerGrpsParams',['../classvrv_1_1_adjust_floating_postioner_grps_params.html',1,'vrv']]],
   ['adjustfloatingpostionersparams',['AdjustFloatingPostionersParams',['../classvrv_1_1_adjust_floating_postioners_params.html',1,'vrv']]],
   ['adjustgracexposparams',['AdjustGraceXPosParams',['../classvrv_1_1_adjust_grace_x_pos_params.html',1,'vrv']]],

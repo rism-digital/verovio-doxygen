@@ -7,6 +7,8 @@ var classvrv_1_1_object =
     [ "AddChild", "classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948", null ],
     [ "AddLayerElementToFlatList", "classvrv_1_1_object.html#a1af968d5140f79fd056aa5a46d7cad11", null ],
     [ "AdjustAccidX", "classvrv_1_1_object.html#a08855458e45646f3831f2edf7c8a77e0", null ],
+    [ "AdjustArpeg", "classvrv_1_1_object.html#a9a7ac871bbd388bc57ad3efbcd5523e4", null ],
+    [ "AdjustArpegEnd", "classvrv_1_1_object.html#adbd52d9a86b0a97174b734269a690048", null ],
     [ "AdjustArticWithSlurs", "classvrv_1_1_object.html#a0f7c68b80209c30180004962bff3c8f0", null ],
     [ "AdjustFloatingPostionerGrps", "classvrv_1_1_object.html#abcd57261b89b6ec071298fe425a5a43e", null ],
     [ "AdjustFloatingPostioners", "classvrv_1_1_object.html#abeb2cbfab87ef2b87f38e74c47500d56", null ],

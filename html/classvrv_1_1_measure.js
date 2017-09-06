@@ -5,6 +5,7 @@ var classvrv_1_1_measure =
     [ "AddChild", "classvrv_1_1_measure.html#a81e1e232db13e677d6114a4b21033157", null ],
     [ "AddTimestamp", "classvrv_1_1_measure.html#a67df4d10c89fedc0a403cb7169170d0a", null ],
     [ "AdjustAccidX", "classvrv_1_1_measure.html#afcfbbf264d2da532a19945d12f9dbe3d", null ],
+    [ "AdjustArpegEnd", "classvrv_1_1_measure.html#a273ae3933bf78d6c3d439dadf059a673", null ],
     [ "AdjustGraceXPos", "classvrv_1_1_measure.html#aad4e143d91b129999b2cf020925b40b1", null ],
     [ "AdjustLayers", "classvrv_1_1_measure.html#a65d7eae484556ea7e423a516f975060d", null ],
     [ "AdjustSylSpacingEnd", "classvrv_1_1_measure.html#ae14b75d9c98a3737a1993baea142a126", null ],

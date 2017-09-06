@@ -5,7 +5,7 @@ var classvrv_1_1_floating_object =
     [ "~FloatingObject", "classvrv_1_1_floating_object.html#ac09ff8994cb1d0119fdd67d25d12f410", null ],
     [ "FillStaffCurrentTimeSpanning", "classvrv_1_1_floating_object.html#a26acefe41b29aa28c85eb244f624d2c1", null ],
     [ "GetClassId", "classvrv_1_1_floating_object.html#ae043bc6c34e3044bd8bf1befa9ad3726", null ],
-    [ "GetCurrentFloatingPositioner", "classvrv_1_1_floating_object.html#a4d92135a6f8a1967fb53ac60e3cbb0c7", null ],
+    [ "GetCurrentFloatingPositioner", "classvrv_1_1_floating_object.html#aa26df3350328cd96704f766ac3db0615", null ],
     [ "GetDrawingGrpId", "classvrv_1_1_floating_object.html#a67e6ef3b80f122a42bcccd89701bc298", null ],
     [ "GetDrawingX", "classvrv_1_1_floating_object.html#a9173ddc12fab3e823f592b4688cec8e0", null ],
     [ "GetDrawingY", "classvrv_1_1_floating_object.html#a44a902421018e125f191dfcb31d8c50a", null ],

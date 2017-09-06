@@ -213,6 +213,7 @@ var hierarchy =
         [ "vrv::BarLine", "classvrv_1_1_bar_line.html", null ],
         [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
         [ "vrv::BeatRpt", "classvrv_1_1_beat_rpt.html", null ],
+        [ "vrv::Bracket", "classvrv_1_1_bracket.html", null ],
         [ "vrv::BTrem", "classvrv_1_1_b_trem.html", null ],
         [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
         [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
@@ -231,6 +232,7 @@ var hierarchy =
         [ "vrv::MultiRest", "classvrv_1_1_multi_rest.html", null ],
         [ "vrv::MultiRpt", "classvrv_1_1_multi_rpt.html", null ],
         [ "vrv::Note", "classvrv_1_1_note.html", null ],
+        [ "vrv::Num", "classvrv_1_1_num.html", null ],
         [ "vrv::Proport", "classvrv_1_1_proport.html", null ],
         [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
         [ "vrv::Space", "classvrv_1_1_space.html", null ],
@@ -497,6 +499,7 @@ var hierarchy =
       [ "vrv::FTrem", "classvrv_1_1_f_trem.html", null ]
     ] ],
     [ "AttTupletVis", null, [
+      [ "vrv::Num", "classvrv_1_1_num.html", null ],
       [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ]
     ] ],
     [ "AttTurnLog", null, [
@@ -602,6 +605,7 @@ var hierarchy =
     [ "vrv::FunctorParams", "classvrv_1_1_functor_params.html", [
       [ "vrv::AddLayerElementToFlatListParams", "classvrv_1_1_add_layer_element_to_flat_list_params.html", null ],
       [ "vrv::AdjustAccidXParams", "classvrv_1_1_adjust_accid_x_params.html", null ],
+      [ "vrv::AdjustArpegParams", "classvrv_1_1_adjust_arpeg_params.html", null ],
       [ "vrv::AdjustFloatingPostionerGrpsParams", "classvrv_1_1_adjust_floating_postioner_grps_params.html", null ],
       [ "vrv::AdjustFloatingPostionersParams", "classvrv_1_1_adjust_floating_postioners_params.html", null ],
       [ "vrv::AdjustGraceXPosParams", "classvrv_1_1_adjust_grace_x_pos_params.html", null ],

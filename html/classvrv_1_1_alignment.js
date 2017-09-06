@@ -7,6 +7,7 @@ var classvrv_1_1_alignment =
     [ "AddLayerElementRef", "classvrv_1_1_alignment.html#ab52c03819037b643b89612716dc4629a", null ],
     [ "AddToAccidSpace", "classvrv_1_1_alignment.html#a54d97c1551306ae4def0e8ceb7be0152", null ],
     [ "AdjustAccidX", "classvrv_1_1_alignment.html#adaeb0f47b3019237561fcc908d565830", null ],
+    [ "AdjustArpeg", "classvrv_1_1_alignment.html#a7a0dad8192abed90b8eedc6b5b224dd5", null ],
     [ "AdjustGraceXPos", "classvrv_1_1_alignment.html#ab9c27a19a896037763c272763344e650", null ],
     [ "AdjustGraceXPosEnd", "classvrv_1_1_alignment.html#abce9fcb87cebbb71ef1549bc56d15198", null ],
     [ "AdjustXPos", "classvrv_1_1_alignment.html#a93b9611a56a39c342f74ab87ddb703fc", null ],
