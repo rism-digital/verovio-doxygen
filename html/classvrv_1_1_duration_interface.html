@@ -97,12 +97,11 @@ Inheritance diagram for vrv::DurationInterface:</div>
  <div class="center">
   <img src="classvrv_1_1_duration_interface.png" usemap="#vrv::DurationInterface_map" alt=""/>
   <map id="vrv::DurationInterface_map" name="vrv::DurationInterface_map">
-<area href="classvrv_1_1_interface.html" title="This is a base class for regrouping MEI att classes. " alt="vrv::Interface" shape="rect" coords="435,0,570,24"/>
+<area href="classvrv_1_1_interface.html" title="This is a base class for regrouping MEI att classes. " alt="vrv::Interface" shape="rect" coords="362,0,497,24"/>
 <area href="classvrv_1_1_chord.html" title="This class represents a collection of notes in the same layer with the same onset time..." alt="vrv::Chord" shape="rect" coords="0,504,135,528"/>
-<area href="classvrv_1_1_ligature.html" title="This class represents a collection of notes in the same layer with successive onset times..." alt="vrv::Ligature" shape="rect" coords="145,504,280,528"/>
-<area href="classvrv_1_1_note.html" title="This class models the MEI &lt;note&gt; element. " alt="vrv::Note" shape="rect" coords="290,504,425,528"/>
-<area href="classvrv_1_1_rest.html" title="This class models the MEI &lt;rest&gt; element. " alt="vrv::Rest" shape="rect" coords="435,504,570,528"/>
-<area href="classvrv_1_1_space.html" title="This class models the MEI &lt;space&gt; " alt="vrv::Space" shape="rect" coords="580,504,715,528"/>
+<area href="classvrv_1_1_note.html" title="This class models the MEI &lt;note&gt; element. " alt="vrv::Note" shape="rect" coords="145,504,280,528"/>
+<area href="classvrv_1_1_rest.html" title="This class models the MEI &lt;rest&gt; element. " alt="vrv::Rest" shape="rect" coords="290,504,425,528"/>
+<area href="classvrv_1_1_space.html" title="This class models the MEI &lt;space&gt; " alt="vrv::Space" shape="rect" coords="435,504,570,528"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -123,10 +122,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_duration_interface.html#ae07578a3e138bddc967229f1ee93cb94">IsLastInBeam</a> (<a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *noteOrRest)</td></tr>
 <tr class="memdesc:ae07578a3e138bddc967229f1ee93cb94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the note or rest is the last of a beam. <br /></td></tr>
 <tr class="separator:ae07578a3e138bddc967229f1ee93cb94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74149eeb70f90f1f6414a10720fb328a"><td class="memItemLeft" align="right" valign="top"><a id="a74149eeb70f90f1f6414a10720fb328a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_duration_interface.html#a74149eeb70f90f1f6414a10720fb328a">GetActualDur</a> () const</td></tr>
-<tr class="memdesc:a74149eeb70f90f1f6414a10720fb328a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the actual duration of the note, for both CMN and mensural durations See data_DURATION For CMN, it is the same (DURATION_1 == DUR_1) For mensural, we need to apply the DUR_MENSURAL_MASK. <br /></td></tr>
-<tr class="separator:a74149eeb70f90f1f6414a10720fb328a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec84ae43f7d2b25df6e3b9f05aa4bea7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_duration_interface.html#aec84ae43f7d2b25df6e3b9f05aa4bea7">GetNoteOrChordDur</a> (<a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *element)</td></tr>
 <tr class="memdesc:aec84ae43f7d2b25df6e3b9f05aa4bea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the element is part of a chord, return the chord actual duration, otherwise the note actual duration.  <a href="#aec84ae43f7d2b25df6e3b9f05aa4bea7">More...</a><br /></td></tr>
 <tr class="separator:aec84ae43f7d2b25df6e3b9f05aa4bea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,6 +147,15 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()<
 <tr class="memitem:a3c58d1f63c78fb509576ecefce5ea5ab"><td class="memItemLeft" align="right" valign="top">virtual InterfaceId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_duration_interface.html#a3c58d1f63c78fb509576ecefce5ea5ab">IsInterface</a> ()</td></tr>
 <tr class="memdesc:a3c58d1f63c78fb509576ecefce5ea5ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method returning the InterfaceId of the interface.  <a href="#a3c58d1f63c78fb509576ecefce5ea5ab">More...</a><br /></td></tr>
 <tr class="separator:a3c58d1f63c78fb509576ecefce5ea5ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Return the actual (gestural) duration of the note, for both CMN and mensural durations</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>See data_DURATION For CMN, it is the same (DURATION_1 == DUR_1) For mensural, we need to apply the DUR_MENSURAL_MASK </p>
+</div></td></tr>
+<tr class="memitem:a74149eeb70f90f1f6414a10720fb328a"><td class="memItemLeft" align="right" valign="top"><a id="a74149eeb70f90f1f6414a10720fb328a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetActualDur</b> () const</td></tr>
+<tr class="separator:a74149eeb70f90f1f6414a10720fb328a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633cc6377cbb770438eacc87fdb1622f"><td class="memItemLeft" align="right" valign="top"><a id="a633cc6377cbb770438eacc87fdb1622f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetActualDurGes</b> () const</td></tr>
+<tr class="separator:a633cc6377cbb770438eacc87fdb1622f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvrv_1_1_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_interface.html">vrv::Interface</a></td></tr>
 <tr class="memitem:a57c9a4f18b81a07ef0d14dc040f84257 inherit pub_methods_classvrv_1_1_interface"><td class="memItemLeft" align="right" valign="top"><a id="a57c9a4f18b81a07ef0d14dc040f84257"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_interface.html#a57c9a4f18b81a07ef0d14dc040f84257">RegisterInterfaceAttClass</a> (AttClassId attClassId)</td></tr>
@@ -199,7 +203,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Interface</b> ()<
 </div><div class="memdoc">
 
 <p>Returns the duration (in double) for the element. </p>
-<p>It returns 0.0 for grace notes. Careful: this method is not overriding <a class="el" href="classvrv_1_1_layer_element.html#abaca82bc513ba6bbbc1bcd3d59fa7172" title="Returns the duration if the child element has a DurationInterface. ">LayerElement::GetAlignmentDuration</a> since <a class="el" href="classvrv_1_1_layer_element.html" title="This class is a base class for the Layer (&lt;layer&gt;) content. ">LayerElement</a> and <a class="el" href="classvrv_1_1_duration_interface.html" title="This class is an interface for elements with duration, such as notes and rests. ">DurationInterface</a> have no inheritance link. </p>
+<p>It returns 0.0 for grace notes. Careful: this method is not overriding <a class="el" href="classvrv_1_1_layer_element.html#a21200c6f95f9bac5ef98b7cd4c5d7e26" title="Returns the duration if the child element has a DurationInterface. ">LayerElement::GetAlignmentDuration</a> since <a class="el" href="classvrv_1_1_layer_element.html" title="This class is a base class for the Layer (&lt;layer&gt;) content. ">LayerElement</a> and <a class="el" href="classvrv_1_1_duration_interface.html" title="This class is an interface for elements with duration, such as notes and rests. ">DurationInterface</a> have no inheritance link. </p>
 
 </div>
 </div>
@@ -284,7 +288,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Interface</b> ()<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_duration_interface.html">DurationInterface</a></li>
-    <li class="footer">Generated on Fri Sep 8 2017 12:00:45 by
+    <li class="footer">Generated on Tue Jan 23 2018 22:23:00 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

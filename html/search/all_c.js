@@ -97,7 +97,7 @@ var searchData=
   ['mordent',['Mordent',['../classvrv_1_1_mordent.html',1,'vrv']]],
   ['movechildrenfrom',['MoveChildrenFrom',['../classvrv_1_1_object.html#aa846e8099e10d6cf427e8255e4a62dd4',1,'vrv::Object']]],
   ['moveitselfto',['MoveItselfTo',['../classvrv_1_1_object.html#ac7063ea155c08f4e39e5c59b735f1d9e',1,'vrv::Object']]],
-  ['movetextto',['MoveTextTo',['../classvrv_1_1_b_box_device_context.html#a5b9c19400a36495c71b7f7bccf80457f',1,'vrv::BBoxDeviceContext::MoveTextTo()'],['../classvrv_1_1_device_context.html#a93dfe49d4e142712b62e67e3f5914043',1,'vrv::DeviceContext::MoveTextTo()'],['../classvrv_1_1_svg_device_context.html#ac7579ffcdf3f65f5b270a90988dc3079',1,'vrv::SvgDeviceContext::MoveTextTo()']]],
+  ['movetextto',['MoveTextTo',['../classvrv_1_1_b_box_device_context.html#a5012526492c83ba6b4f6584282284945',1,'vrv::BBoxDeviceContext::MoveTextTo()'],['../classvrv_1_1_device_context.html#a6c3c986752d435a388780f314d335939',1,'vrv::DeviceContext::MoveTextTo()'],['../classvrv_1_1_svg_device_context.html#a2d43511f2d0870ae970a64fc780539b3',1,'vrv::SvgDeviceContext::MoveTextTo()']]],
   ['mrest',['MRest',['../classvrv_1_1_m_rest.html',1,'vrv']]],
   ['mrpt',['MRpt',['../classvrv_1_1_m_rpt.html',1,'vrv']]],
   ['mrpt2',['MRpt2',['../classvrv_1_1_m_rpt2.html',1,'vrv']]],

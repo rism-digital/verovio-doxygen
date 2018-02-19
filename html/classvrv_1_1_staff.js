@@ -5,6 +5,7 @@ var classvrv_1_1_staff =
     [ "AddChild", "classvrv_1_1_staff.html#a8756c96787854aca70ceefbd09067341", null ],
     [ "AddLegerLineAbove", "classvrv_1_1_staff.html#a941e11231b93cb273d8159ea4921fd0b", null ],
     [ "AddLegerLineBelow", "classvrv_1_1_staff.html#a4bb9998ed6c19ad946a3f3ec75bd09c8", null ],
+    [ "AlignHorizontally", "classvrv_1_1_staff.html#a1a5a6358590d1e40aa6db5111897d955", null ],
     [ "AlignVertically", "classvrv_1_1_staff.html#a117c874984f47c04a116e5a369f73b52", null ],
     [ "ApplyPPUFactor", "classvrv_1_1_staff.html#a4da5a3d4db00bc3b2d0fe5da397dc764", null ],
     [ "CalcPitchPosYRel", "classvrv_1_1_staff.html#a807cc990002cfb0f520cf43b72a893e8", null ],

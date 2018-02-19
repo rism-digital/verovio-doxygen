@@ -3,6 +3,7 @@ var searchData=
   ['f',['F',['../classvrv_1_1_f.html',1,'vrv']]],
   ['fb',['Fb',['../classvrv_1_1_fb.html',1,'vrv']]],
   ['fermata',['Fermata',['../classvrv_1_1_fermata.html',1,'vrv']]],
+  ['fig',['Fig',['../classvrv_1_1_fig.html',1,'vrv']]],
   ['fileinputstream',['FileInputStream',['../classvrv_1_1_file_input_stream.html',1,'vrv']]],
   ['fileoutputstream',['FileOutputStream',['../classvrv_1_1_file_output_stream.html',1,'vrv']]],
   ['fillstaffcurrenttimespanningparams',['FillStaffCurrentTimeSpanningParams',['../classvrv_1_1_fill_staff_current_time_spanning_params.html',1,'vrv']]],

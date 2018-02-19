@@ -25,6 +25,7 @@ var searchData=
   ['annot',['Annot',['../classvrv_1_1_annot.html',1,'vrv']]],
   ['app',['App',['../classvrv_1_1_app.html',1,'vrv']]],
   ['applyppufactorparams',['ApplyPPUFactorParams',['../classvrv_1_1_apply_p_p_u_factor_params.html',1,'vrv']]],
+  ['areaposinterface',['AreaPosInterface',['../classvrv_1_1_area_pos_interface.html',1,'vrv']]],
   ['arpeg',['Arpeg',['../classvrv_1_1_arpeg.html',1,'vrv']]],
   ['artic',['Artic',['../classvrv_1_1_artic.html',1,'vrv']]],
   ['articpart',['ArticPart',['../classvrv_1_1_artic_part.html',1,'vrv']]],

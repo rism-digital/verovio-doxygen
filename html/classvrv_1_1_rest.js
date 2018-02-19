@@ -4,6 +4,7 @@ var classvrv_1_1_rest =
     [ "~Rest", "classvrv_1_1_rest.html#aaa67c33a39cc66e5336f442019559648", null ],
     [ "AddChild", "classvrv_1_1_rest.html#a375cbeaa0d5bab366974d70bf7aba00c", null ],
     [ "CalcDots", "classvrv_1_1_rest.html#af19bb53fe6642d20ddb9a66e92f7b163", null ],
+    [ "ConvertAnalyticalMarkup", "classvrv_1_1_rest.html#a3bff8477bce94fdfd9902bb61489711f", null ],
     [ "GetClassId", "classvrv_1_1_rest.html#a16c4e518ca56bd1fb4172f4f08bcb53d", null ],
     [ "GetClassName", "classvrv_1_1_rest.html#a4bf613cd46cb142f95c45c4312b1d682", null ],
     [ "GetDurationInterface", "classvrv_1_1_rest.html#aee501b600391fb19b2b224f087b1c2ea", null ],

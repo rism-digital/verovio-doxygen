@@ -7,6 +7,7 @@ var classvrv_1_1_align_horizontally_params =
     [ "m_hasMultipleLayer", "classvrv_1_1_align_horizontally_params.html#a19341ccd5213056e1d5aff66df66bb65", null ],
     [ "m_isFirstMeasure", "classvrv_1_1_align_horizontally_params.html#a80f32e73c0e3ae9972ee25f7ab7936c1", null ],
     [ "m_measureAligner", "classvrv_1_1_align_horizontally_params.html#aa824c580acdb0ebe2fe27ff90adb0cac", null ],
+    [ "m_notationType", "classvrv_1_1_align_horizontally_params.html#a235a04ca80bff85896772c10b3d37762", null ],
     [ "m_scoreDefRole", "classvrv_1_1_align_horizontally_params.html#af8e6c8b8ccb6eee45b29c731cec5fb56", null ],
     [ "m_time", "classvrv_1_1_align_horizontally_params.html#a8fd8d050c15b1b5ae31a70e458feef9d", null ]
 ];

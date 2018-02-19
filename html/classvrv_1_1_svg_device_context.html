@@ -112,9 +112,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a57ff509fb8c71c3fd48092ba269cc159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting mm output flag (false by default) <br /></td></tr>
 <tr class="separator:a57ff509fb8c71c3fd48092ba269cc159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, and other standard methods</div></td></tr>
-<tr class="memitem:ad1ec9f7fea335ffcfd369435bc9affc2"><td class="memItemLeft" align="right" valign="top"><a id="ad1ec9f7fea335ffcfd369435bc9affc2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SvgDeviceContext</b> (int width, int height)</td></tr>
-<tr class="separator:ad1ec9f7fea335ffcfd369435bc9affc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323435cc92c74019ffde5bb562ead4c6"><td class="memItemLeft" align="right" valign="top"><a id="a323435cc92c74019ffde5bb562ead4c6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SvgDeviceContext</b> ()</td></tr>
+<tr class="separator:a323435cc92c74019ffde5bb562ead4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9b9c3d319fb507ad296bad981e60653"><td class="memItemLeft" align="right" valign="top"><a id="aa9b9c3d319fb507ad296bad981e60653"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~SvgDeviceContext</b> ()</td></tr>
 <tr class="separator:aa9b9c3d319fb507ad296bad981e60653"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,9 +140,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTextBackgr
 <tr class="memitem:a8ac520672f2f1701645a2fa92784f9ab"><td class="memItemLeft" align="right" valign="top"><a id="a8ac520672f2f1701645a2fa92784f9ab"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLogicalOrigin</b> (int x, int y)</td></tr>
 <tr class="separator:a8ac520672f2f1701645a2fa92784f9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a132f07a40faf5edef415054e40f0354d"><td class="memItemLeft" align="right" valign="top"><a id="a132f07a40faf5edef415054e40f0354d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUserScale</b> (double xScale, double yScale)</td></tr>
-<tr class="separator:a132f07a40faf5edef415054e40f0354d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Getters</div></td></tr>
 <tr class="memitem:ac6a3d1d79db9edb601ea6186ba0dc9bc"><td class="memItemLeft" align="right" valign="top"><a id="ac6a3d1d79db9edb601ea6186ba0dc9bc"></a>
 virtual <a class="el" href="classvrv_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetLogicalOrigin</b> ()</td></tr>
@@ -178,29 +175,32 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawRotatedTe
 <tr class="memitem:ad9c89aa47bf19d011087660c3bfac7dc"><td class="memItemLeft" align="right" valign="top"><a id="ad9c89aa47bf19d011087660c3bfac7dc"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawRoundedRectangle</b> (int x, int y, int width, int height, double radius)</td></tr>
 <tr class="separator:ad9c89aa47bf19d011087660c3bfac7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07cd5f590db3c15c33b8d19b9ceba7ed"><td class="memItemLeft" align="right" valign="top"><a id="a07cd5f590db3c15c33b8d19b9ceba7ed"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawText</b> (const std::string &amp;text, const std::wstring wtext=L&quot;&quot;)</td></tr>
-<tr class="separator:a07cd5f590db3c15c33b8d19b9ceba7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8401b269e040aeb1475075f6bc9fa8d"><td class="memItemLeft" align="right" valign="top"><a id="aa8401b269e040aeb1475075f6bc9fa8d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawText</b> (const std::string &amp;text, const std::wstring wtext=L&quot;&quot;, int x=VRV_UNSET, int y=VRV_UNSET)</td></tr>
+<tr class="separator:aa8401b269e040aeb1475075f6bc9fa8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79ea897e016ba2b6fed94ef8904a6290"><td class="memItemLeft" align="right" valign="top"><a id="a79ea897e016ba2b6fed94ef8904a6290"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawMusicText</b> (const std::wstring &amp;text, int x, int y, bool setSmuflGlyph=false)</td></tr>
 <tr class="separator:a79ea897e016ba2b6fed94ef8904a6290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe48df994bd75bd85544e335f332c1c1"><td class="memItemLeft" align="right" valign="top"><a id="abe48df994bd75bd85544e335f332c1c1"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawSpline</b> (int n, <a class="el" href="classvrv_1_1_point.html">Point</a> points[])</td></tr>
 <tr class="separator:abe48df994bd75bd85544e335f332c1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db20db164d3310401a784a84d5e9196"><td class="memItemLeft" align="right" valign="top"><a id="a5db20db164d3310401a784a84d5e9196"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawSvgShape</b> (int x, int y, int width, int height, pugi::xml_node svg)</td></tr>
+<tr class="separator:a5db20db164d3310401a784a84d5e9196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbc42017687021b1a84fc728b071921b"><td class="memItemLeft" align="right" valign="top"><a id="acbc42017687021b1a84fc728b071921b"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawBackgroundImage</b> (int x=0, int y=0)</td></tr>
 <tr class="separator:acbc42017687021b1a84fc728b071921b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Method for starting and ending a text</div></td></tr>
-<tr class="memitem:a66150560a302e9a2ba42bca231fab4af"><td class="memItemLeft" align="right" valign="top"><a id="a66150560a302e9a2ba42bca231fab4af"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartText</b> (int x, int y, char alignement=LEFT)</td></tr>
-<tr class="separator:a66150560a302e9a2ba42bca231fab4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee5188f399641043dab2d277f9f1326c"><td class="memItemLeft" align="right" valign="top"><a id="aee5188f399641043dab2d277f9f1326c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartText</b> (int x, int y, data_HORIZONTALALIGNMENT alignement=HORIZONTALALIGNMENT_left)</td></tr>
+<tr class="separator:aee5188f399641043dab2d277f9f1326c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a707fdca95a1025c22936bf1ec5a2137b"><td class="memItemLeft" align="right" valign="top"><a id="a707fdca95a1025c22936bf1ec5a2137b"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>EndText</b> ()</td></tr>
 <tr class="separator:a707fdca95a1025c22936bf1ec5a2137b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7579ffcdf3f65f5b270a90988dc3079"><td class="memItemLeft" align="right" valign="top"><a id="ac7579ffcdf3f65f5b270a90988dc3079"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_svg_device_context.html#ac7579ffcdf3f65f5b270a90988dc3079">MoveTextTo</a> (int x, int y)</td></tr>
-<tr class="memdesc:ac7579ffcdf3f65f5b270a90988dc3079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a text to the specified position, for example when starting a new line. <br /></td></tr>
-<tr class="separator:ac7579ffcdf3f65f5b270a90988dc3079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d43511f2d0870ae970a64fc780539b3"><td class="memItemLeft" align="right" valign="top"><a id="a2d43511f2d0870ae970a64fc780539b3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_svg_device_context.html#a2d43511f2d0870ae970a64fc780539b3">MoveTextTo</a> (int x, int y, data_HORIZONTALALIGNMENT alignment)</td></tr>
+<tr class="memdesc:a2d43511f2d0870ae970a64fc780539b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a text to the specified position. <br /></td></tr>
+<tr class="separator:a2d43511f2d0870ae970a64fc780539b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Method for starting and ending a graphic</div></td></tr>
 <tr class="memitem:a71dc11add64070cc053bbecb6f5c5830"><td class="memItemLeft" align="right" valign="top"><a id="a71dc11add64070cc053bbecb6f5c5830"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartGraphic</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object, std::string gClass, std::string gId)</td></tr>
@@ -257,6 +257,27 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~DeviceContext</b>
 <tr class="memitem:aecf9ed01e0d0c5e6f64f8b90c3e4bedd inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="aecf9ed01e0d0c5e6f64f8b90c3e4bedd"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Is</b> (ClassId classId) const</td></tr>
 <tr class="separator:aecf9ed01e0d0c5e6f64f8b90c3e4bedd inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ab4809a1030d0445c6998daf06efcd inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="a60ab4809a1030d0445c6998daf06efcd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWidth</b> (int width)</td></tr>
+<tr class="separator:a60ab4809a1030d0445c6998daf06efcd inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3981d3d5f658d2b9eb0c9f0cdff5d1eb inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="a3981d3d5f658d2b9eb0c9f0cdff5d1eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHeight</b> (int height)</td></tr>
+<tr class="separator:a3981d3d5f658d2b9eb0c9f0cdff5d1eb inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a667b03b2f73ad526b6eca886a06a27a1 inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="a667b03b2f73ad526b6eca886a06a27a1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUserScale</b> (double scaleX, double scaleY)</td></tr>
+<tr class="separator:a667b03b2f73ad526b6eca886a06a27a1 inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7a341cef74317e25eb52d664564544 inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="afd7a341cef74317e25eb52d664564544"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetWidth</b> ()</td></tr>
+<tr class="separator:afd7a341cef74317e25eb52d664564544 inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ecf8d39c6e0656dd1f575038363c3e inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="a17ecf8d39c6e0656dd1f575038363c3e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetHeight</b> ()</td></tr>
+<tr class="separator:a17ecf8d39c6e0656dd1f575038363c3e inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12bc02f99e26e673278dce400693a8f6 inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="a12bc02f99e26e673278dce400693a8f6"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>GetUserScaleX</b> ()</td></tr>
+<tr class="separator:a12bc02f99e26e673278dce400693a8f6 inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac192682e11cb0258024b1c3a19c8a65e inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="ac192682e11cb0258024b1c3a19c8a65e"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>GetUserScaleY</b> ()</td></tr>
+<tr class="separator:ac192682e11cb0258024b1c3a19c8a65e inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb4e404ae6cbc48f586f78db3b911b1d inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="acb4e404ae6cbc48f586f78db3b911b1d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBrush</b> (int colour, int opacity)</td></tr>
 <tr class="separator:acb4e404ae6cbc48f586f78db3b911b1d inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -275,6 +296,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetPen</b> ()</td><
 <tr class="memitem:a23962774a3aa1c288e8cc3365a521aed inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="a23962774a3aa1c288e8cc3365a521aed"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetFont</b> ()</td></tr>
 <tr class="separator:a23962774a3aa1c288e8cc3365a521aed inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0ad30e8097f77c67038758a14bd45e inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="acd0ad30e8097f77c67038758a14bd45e"></a>
+<a class="el" href="classvrv_1_1_font_info.html">FontInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFont</b> ()</td></tr>
+<tr class="separator:acd0ad30e8097f77c67038758a14bd45e inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a133155f77d9bb5035033eaad82687999 inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="a133155f77d9bb5035033eaad82687999"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetTextExtent</b> (const std::string &amp;string, <a class="el" href="classvrv_1_1_text_extend.html">TextExtend</a> *extend)</td></tr>
 <tr class="separator:a133155f77d9bb5035033eaad82687999 inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -365,7 +389,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isDeactivatedY</b><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_svg_device_context.html">SvgDeviceContext</a></li>
-    <li class="footer">Generated on Fri Sep 8 2017 12:00:50 by
+    <li class="footer">Generated on Tue Jan 23 2018 22:23:03 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

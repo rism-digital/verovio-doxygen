@@ -7,6 +7,8 @@ var classvrv_1_1_ligature =
     [ "FilterList", "classvrv_1_1_ligature.html#a861857c36b3668eb6263b247f9f06108", null ],
     [ "GetClassId", "classvrv_1_1_ligature.html#a3ae9b7786658bd725726f7dc8aef638d", null ],
     [ "GetClassName", "classvrv_1_1_ligature.html#a6d55fd013e98a7f50096ab6209da6810", null ],
+    [ "GetFirstNote", "classvrv_1_1_ligature.html#a1ac3c2386e687ceca3e8adee0e89a7e2", null ],
+    [ "GetLastNote", "classvrv_1_1_ligature.html#a1db3d26a346811010619d9039062aed6", null ],
     [ "HasToBeAligned", "classvrv_1_1_ligature.html#a72d016417fcfecdc5f73283287167b8e", null ],
     [ "PositionInLigature", "classvrv_1_1_ligature.html#a8bab53f0b12355d5250c75c6de55f80e", null ],
     [ "Reset", "classvrv_1_1_ligature.html#abbbb11eae3514269e4c6ad03b0c52416", null ]

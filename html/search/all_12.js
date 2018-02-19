@@ -3,6 +3,7 @@ var searchData=
   ['tempo',['Tempo',['../classvrv_1_1_tempo.html',1,'vrv']]],
   ['text',['Text',['../classvrv_1_1_text.html',1,'vrv']]],
   ['textdirinterface',['TextDirInterface',['../classvrv_1_1_text_dir_interface.html',1,'vrv']]],
+  ['textdrawingparams',['TextDrawingParams',['../classvrv_1_1_text_drawing_params.html',1,'vrv']]],
   ['textelement',['TextElement',['../classvrv_1_1_text_element.html',1,'vrv']]],
   ['textextend',['TextExtend',['../classvrv_1_1_text_extend.html',1,'vrv']]],
   ['textlistinterface',['TextListInterface',['../classvrv_1_1_text_list_interface.html',1,'vrv']]],
@@ -14,5 +15,6 @@ var searchData=
   ['toolkit',['Toolkit',['../classvrv_1_1_toolkit.html',1,'vrv::Toolkit'],['../classvrv_1_1_toolkit.html#ad009ed5b8852f67843a34c4b6fd1e3c7',1,'vrv::Toolkit::Toolkit()']]],
   ['trill',['Trill',['../classvrv_1_1_trill.html',1,'vrv']]],
   ['tuplet',['Tuplet',['../classvrv_1_1_tuplet.html',1,'vrv']]],
+  ['tupletnum',['TupletNum',['../classvrv_1_1_tuplet_num.html',1,'vrv']]],
   ['turn',['Turn',['../classvrv_1_1_turn.html',1,'vrv']]]
 ];

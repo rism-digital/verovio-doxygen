@@ -25,7 +25,6 @@ var hierarchy =
       [ "vrv::Dots", "classvrv_1_1_dots.html", null ],
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", [
         [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
-        [ "vrv::Ligature", "classvrv_1_1_ligature.html", null ],
         [ "vrv::Note", "classvrv_1_1_note.html", null ],
         [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
         [ "vrv::Space", "classvrv_1_1_space.html", null ]
@@ -157,7 +156,16 @@ var hierarchy =
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ]
     ] ],
     [ "AttHorizontalAlign", null, [
-      [ "vrv::Rend", "classvrv_1_1_rend.html", null ]
+      [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", [
+        [ "vrv::Fig", "classvrv_1_1_fig.html", null ],
+        [ "vrv::Rend", "classvrv_1_1_rend.html", null ]
+      ] ],
+      [ "vrv::RunningElement", "classvrv_1_1_running_element.html", [
+        [ "vrv::PgFoot", "classvrv_1_1_pg_foot.html", null ],
+        [ "vrv::PgFoot2", "classvrv_1_1_pg_foot2.html", null ],
+        [ "vrv::PgHead", "classvrv_1_1_pg_head.html", null ],
+        [ "vrv::PgHead2", "classvrv_1_1_pg_head2.html", null ]
+      ] ]
     ] ],
     [ "AttKeySigDefaultAnl", null, [
       [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ]
@@ -232,7 +240,6 @@ var hierarchy =
         [ "vrv::MultiRest", "classvrv_1_1_multi_rest.html", null ],
         [ "vrv::MultiRpt", "classvrv_1_1_multi_rpt.html", null ],
         [ "vrv::Note", "classvrv_1_1_note.html", null ],
-        [ "vrv::Num", "classvrv_1_1_num.html", null ],
         [ "vrv::Proport", "classvrv_1_1_proport.html", null ],
         [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
         [ "vrv::Space", "classvrv_1_1_space.html", null ],
@@ -240,8 +247,10 @@ var hierarchy =
         [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
         [ "vrv::TimestampAttr", "classvrv_1_1_timestamp_attr.html", null ],
         [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ],
+        [ "vrv::TupletNum", "classvrv_1_1_tuplet_num.html", null ],
         [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
       ] ],
+      [ "vrv::Num", "classvrv_1_1_num.html", null ],
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ],
       [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ]
     ] ],
@@ -252,6 +261,9 @@ var hierarchy =
       [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
       [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ],
       [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
+    ] ],
+    [ "AttLigatureLog", null, [
+      [ "vrv::Ligature", "classvrv_1_1_ligature.html", null ]
     ] ],
     [ "AttLineLoc", null, [
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ]
@@ -467,13 +479,11 @@ var hierarchy =
     ] ],
     [ "AttStems", null, [
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
-      [ "vrv::Ligature", "classvrv_1_1_ligature.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Stem", "classvrv_1_1_stem.html", null ]
     ] ],
     [ "AttStemsCmn", null, [
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
-      [ "vrv::Ligature", "classvrv_1_1_ligature.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Stem", "classvrv_1_1_stem.html", null ]
     ] ],
@@ -482,7 +492,6 @@ var hierarchy =
     ] ],
     [ "AttTiePresent", null, [
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
-      [ "vrv::Ligature", "classvrv_1_1_ligature.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ]
     ] ],
     [ "AttTimestamp2Logical", null, [
@@ -499,8 +508,8 @@ var hierarchy =
       [ "vrv::FTrem", "classvrv_1_1_f_trem.html", null ]
     ] ],
     [ "AttTupletVis", null, [
-      [ "vrv::Num", "classvrv_1_1_num.html", null ],
-      [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ]
+      [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ],
+      [ "vrv::TupletNum", "classvrv_1_1_tuplet_num.html", null ]
     ] ],
     [ "AttTurnLog", null, [
       [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
@@ -511,6 +520,7 @@ var hierarchy =
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
+      [ "vrv::RunningElement", "classvrv_1_1_running_element.html", null ],
       [ "vrv::ScoreDefElement", "classvrv_1_1_score_def_element.html", null ],
       [ "vrv::Staff", "classvrv_1_1_staff.html", null ],
       [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ],
@@ -525,6 +535,9 @@ var hierarchy =
       ] ],
       [ "vrv::TextElement", "classvrv_1_1_text_element.html", [
         [ "vrv::F", "classvrv_1_1_f.html", null ],
+        [ "vrv::Fig", "classvrv_1_1_fig.html", null ],
+        [ "vrv::Lb", "classvrv_1_1_lb.html", null ],
+        [ "vrv::Num", "classvrv_1_1_num.html", null ],
         [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
         [ "vrv::Text", "classvrv_1_1_text.html", null ]
       ] ]
@@ -533,6 +546,9 @@ var hierarchy =
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
       [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
       [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
+    ] ],
+    [ "AttVerticalAlign", null, [
+      [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", null ]
     ] ],
     [ "AttVisibility", null, [
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
@@ -573,11 +589,13 @@ var hierarchy =
         [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
         [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
         [ "vrv::Page", "classvrv_1_1_page.html", null ],
+        [ "vrv::RunningElement", "classvrv_1_1_running_element.html", null ],
         [ "vrv::Score", "classvrv_1_1_score.html", null ],
         [ "vrv::ScoreDefElement", "classvrv_1_1_score_def_element.html", null ],
         [ "vrv::Staff", "classvrv_1_1_staff.html", null ],
         [ "vrv::StaffAlignment", "classvrv_1_1_staff_alignment.html", null ],
         [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ],
+        [ "vrv::Svg", "classvrv_1_1_svg.html", null ],
         [ "vrv::System", "classvrv_1_1_system.html", null ],
         [ "vrv::SystemAligner", "classvrv_1_1_system_aligner.html", null ],
         [ "vrv::TextElement", "classvrv_1_1_text_element.html", null ],
@@ -626,6 +644,7 @@ var hierarchy =
       [ "vrv::CastOffEncodingParams", "classvrv_1_1_cast_off_encoding_params.html", null ],
       [ "vrv::CastOffPagesParams", "classvrv_1_1_cast_off_pages_params.html", null ],
       [ "vrv::CastOffSystemsParams", "classvrv_1_1_cast_off_systems_params.html", null ],
+      [ "vrv::ConvertAnalyticalMarkupParams", "classvrv_1_1_convert_analytical_markup_params.html", null ],
       [ "vrv::ConvertToPageBasedParams", "classvrv_1_1_convert_to_page_based_params.html", null ],
       [ "vrv::FillStaffCurrentTimeSpanningParams", "classvrv_1_1_fill_staff_current_time_spanning_params.html", null ],
       [ "vrv::FindAllBetweenParams", "classvrv_1_1_find_all_between_params.html", null ],
@@ -648,7 +667,6 @@ var hierarchy =
       [ "vrv::PreparePointersByLayerParams", "classvrv_1_1_prepare_pointers_by_layer_params.html", null ],
       [ "vrv::PrepareProcessingListsParams", "classvrv_1_1_prepare_processing_lists_params.html", null ],
       [ "vrv::PrepareRptParams", "classvrv_1_1_prepare_rpt_params.html", null ],
-      [ "vrv::PrepareTieAttrParams", "classvrv_1_1_prepare_tie_attr_params.html", null ],
       [ "vrv::PrepareTimePointingParams", "classvrv_1_1_prepare_time_pointing_params.html", null ],
       [ "vrv::PrepareTimeSpanningParams", "classvrv_1_1_prepare_time_spanning_params.html", null ],
       [ "vrv::PrepareTimestampsParams", "classvrv_1_1_prepare_timestamps_params.html", null ],
@@ -672,6 +690,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "vrv::Interface", "classvrv_1_1_interface.html", [
+      [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", null ],
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ],
       [ "vrv::PitchInterface", "classvrv_1_1_pitch_interface.html", null ],
       [ "vrv::PlistInterface", "classvrv_1_1_plist_interface.html", null ],
@@ -689,6 +708,7 @@ var hierarchy =
       [ "vrv::FTrem", "classvrv_1_1_f_trem.html", null ],
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::Ligature", "classvrv_1_1_ligature.html", null ],
+      [ "vrv::RunningElement", "classvrv_1_1_running_element.html", null ],
       [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
       [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ],
       [ "vrv::TextListInterface", "classvrv_1_1_text_list_interface.html", [
@@ -718,6 +738,7 @@ var hierarchy =
       [ "vrv::Note", "classvrv_1_1_note.html", null ]
     ] ],
     [ "vrv::Style", "classvrv_1_1_style.html", null ],
+    [ "vrv::TextDrawingParams", "classvrv_1_1_text_drawing_params.html", null ],
     [ "vrv::TextExtend", "classvrv_1_1_text_extend.html", null ],
     [ "vrv::Toolkit", "classvrv_1_1_toolkit.html", null ],
     [ "vrv::View", "classvrv_1_1_view.html", null ]

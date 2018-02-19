@@ -1,6 +1,6 @@
 var classvrv_1_1_svg_device_context =
 [
-    [ "SvgDeviceContext", "classvrv_1_1_svg_device_context.html#ad1ec9f7fea335ffcfd369435bc9affc2", null ],
+    [ "SvgDeviceContext", "classvrv_1_1_svg_device_context.html#a323435cc92c74019ffde5bb562ead4c6", null ],
     [ "~SvgDeviceContext", "classvrv_1_1_svg_device_context.html#aa9b9c3d319fb507ad296bad981e60653", null ],
     [ "AddDescription", "classvrv_1_1_svg_device_context.html#a5e29f907daf69ca965136f903bb0969f", null ],
     [ "DrawBackgroundImage", "classvrv_1_1_svg_device_context.html#acbc42017687021b1a84fc728b071921b", null ],
@@ -15,7 +15,8 @@ var classvrv_1_1_svg_device_context =
     [ "DrawRotatedText", "classvrv_1_1_svg_device_context.html#a96404689644ca4ac62bea30ea339c0d4", null ],
     [ "DrawRoundedRectangle", "classvrv_1_1_svg_device_context.html#ad9c89aa47bf19d011087660c3bfac7dc", null ],
     [ "DrawSpline", "classvrv_1_1_svg_device_context.html#abe48df994bd75bd85544e335f332c1c1", null ],
-    [ "DrawText", "classvrv_1_1_svg_device_context.html#a07cd5f590db3c15c33b8d19b9ceba7ed", null ],
+    [ "DrawSvgShape", "classvrv_1_1_svg_device_context.html#a5db20db164d3310401a784a84d5e9196", null ],
+    [ "DrawText", "classvrv_1_1_svg_device_context.html#aa8401b269e040aeb1475075f6bc9fa8d", null ],
     [ "EndCustomGraphic", "classvrv_1_1_svg_device_context.html#ac50fe3ff5ecfc89601fb452cc9b8b487", null ],
     [ "EndGraphic", "classvrv_1_1_svg_device_context.html#ae83372897c6a03389283b96490bb2d0b", null ],
     [ "EndPage", "classvrv_1_1_svg_device_context.html#a527a04fab98c8467a74df223a1271183", null ],
@@ -25,7 +26,7 @@ var classvrv_1_1_svg_device_context =
     [ "GetClassId", "classvrv_1_1_svg_device_context.html#a0d56409641c3fbf7ae0aca34767aed8e", null ],
     [ "GetLogicalOrigin", "classvrv_1_1_svg_device_context.html#ac6a3d1d79db9edb601ea6186ba0dc9bc", null ],
     [ "GetStringSVG", "classvrv_1_1_svg_device_context.html#a49eb15ae209f1ab05b072c5fb9589d3a", null ],
-    [ "MoveTextTo", "classvrv_1_1_svg_device_context.html#ac7579ffcdf3f65f5b270a90988dc3079", null ],
+    [ "MoveTextTo", "classvrv_1_1_svg_device_context.html#a2d43511f2d0870ae970a64fc780539b3", null ],
     [ "ResumeGraphic", "classvrv_1_1_svg_device_context.html#af8eecdd8d413452aa8ecf16841996ea4", null ],
     [ "RotateGraphic", "classvrv_1_1_svg_device_context.html#a5ca29e896064f0ec00775bf29ed273ec", null ],
     [ "SetBackground", "classvrv_1_1_svg_device_context.html#a2ea853d8c0e2115cfed2678bf32286cb", null ],
@@ -35,11 +36,10 @@ var classvrv_1_1_svg_device_context =
     [ "SetMMOutput", "classvrv_1_1_svg_device_context.html#a57ff509fb8c71c3fd48092ba269cc159", null ],
     [ "SetTextBackground", "classvrv_1_1_svg_device_context.html#aa2a3ea34616aeedae80e1dc6bc6a94ed", null ],
     [ "SetTextForeground", "classvrv_1_1_svg_device_context.html#add274673932c989484d58575fb5d8223", null ],
-    [ "SetUserScale", "classvrv_1_1_svg_device_context.html#a132f07a40faf5edef415054e40f0354d", null ],
     [ "StartCustomGraphic", "classvrv_1_1_svg_device_context.html#a9dece695b0b61b4dbc3cac44dd32e71c", null ],
     [ "StartGraphic", "classvrv_1_1_svg_device_context.html#a71dc11add64070cc053bbecb6f5c5830", null ],
     [ "StartPage", "classvrv_1_1_svg_device_context.html#a8ef1a054499a2f007c138168ddcd0521", null ],
-    [ "StartText", "classvrv_1_1_svg_device_context.html#a66150560a302e9a2ba42bca231fab4af", null ],
+    [ "StartText", "classvrv_1_1_svg_device_context.html#aee5188f399641043dab2d277f9f1326c", null ],
     [ "StartTextGraphic", "classvrv_1_1_svg_device_context.html#ac213e970775c8d3ae0ab8e6c1f0f32cf", null ],
     [ "UseGlobalStyling", "classvrv_1_1_svg_device_context.html#a6f4aa56187a3cde13540946a67f50cbc", null ]
 ];

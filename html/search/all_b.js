@@ -9,9 +9,11 @@ var searchData=
   ['layoutpitchpos',['LayOutPitchPos',['../classvrv_1_1_page.html#a801f4b7752db01eb9201e355fe4aa000',1,'vrv::Page']]],
   ['layouttranscription',['LayOutTranscription',['../classvrv_1_1_page.html#a0c2dafbc00b0f3185a4ee416f019498f',1,'vrv::Page']]],
   ['layoutvertically',['LayOutVertically',['../classvrv_1_1_page.html#ab16b3f4c2bcc87738e77032c393d638d',1,'vrv::Page']]],
+  ['lb',['Lb',['../classvrv_1_1_lb.html',1,'vrv']]],
   ['ledgerline',['LedgerLine',['../classvrv_1_1_ledger_line.html',1,'vrv']]],
   ['lem',['Lem',['../classvrv_1_1_lem.html',1,'vrv']]],
   ['ligature',['Ligature',['../classvrv_1_1_ligature.html',1,'vrv']]],
   ['loaddata',['LoadData',['../classvrv_1_1_toolkit.html#a9a08fd8e89da6c2c709eaae69e28b2b1',1,'vrv::Toolkit']]],
-  ['loadfile',['LoadFile',['../classvrv_1_1_toolkit.html#a3859f9341d415376b7d8f11a1aa8e352',1,'vrv::Toolkit']]]
+  ['loadfile',['LoadFile',['../classvrv_1_1_toolkit.html#a3859f9341d415376b7d8f11a1aa8e352',1,'vrv::Toolkit']]],
+  ['loadfooter',['LoadFooter',['../classvrv_1_1_running_element.html#a947bcc6ab9bb13bcb86ffaa459ed9c1d',1,'vrv::RunningElement']]]
 ];
