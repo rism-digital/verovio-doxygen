@@ -15,5 +15,6 @@ var classvrv_1_1_beam =
     [ "IsFirstInBeam", "classvrv_1_1_beam.html#a6b77b30f89dcc0f8b266138baa8904eb", null ],
     [ "IsLastInBeam", "classvrv_1_1_beam.html#a5ca2c02f0c77954a50b1629d0afe7598", null ],
     [ "Reset", "classvrv_1_1_beam.html#af9658a57fe7b26e291db0937e03aaeae", null ],
+    [ "ResetDrawing", "classvrv_1_1_beam.html#ae79b6a8ecf851f3d78d6b490ef62a14a", null ],
     [ "m_drawingParams", "classvrv_1_1_beam.html#ab9ff11ae6216d53ce2b5e8f7256b4415", null ]
 ];

@@ -6,7 +6,7 @@ var classvrv_1_1_running_element =
     [ "AddChild", "classvrv_1_1_running_element.html#afb5bfa2986d2e18dd16ed8fb403853ec", null ],
     [ "AddPageNum", "classvrv_1_1_running_element.html#ad54c3f73d54d0d5b51eb993d7c0dd80d", null ],
     [ "AdjustDrawingScaling", "classvrv_1_1_running_element.html#a57a0db80266fb422961749454e4f35e1", null ],
-    [ "AdjustYPos", "classvrv_1_1_running_element.html#ab55e0ae23ef8cba61a35a07748fae6e3", null ],
+    [ "AdjustRunningElementYPos", "classvrv_1_1_running_element.html#ad3969e5fb5f31e4b1c3dca9eecd6b0db", null ],
     [ "AlignVertically", "classvrv_1_1_running_element.html#aa9598aa7d2125993646e8d840f195385", null ],
     [ "Clone", "classvrv_1_1_running_element.html#a04ba4d5006ebb734329b199bed29dfba", null ],
     [ "FilterList", "classvrv_1_1_running_element.html#a82561a55f7fa26ec07ee67882478863b", null ],
@@ -26,7 +26,7 @@ var classvrv_1_1_running_element =
     [ "Reset", "classvrv_1_1_running_element.html#ac5e8c435b16512ea3daf18f29b31b004", null ],
     [ "Save", "classvrv_1_1_running_element.html#a3d92ee04ae6d9d496dd678aff7a90c71", null ],
     [ "SaveEnd", "classvrv_1_1_running_element.html#a8a84599f9400c228af119dcb7c5c22a1", null ],
-    [ "SetCurrentPageNum", "classvrv_1_1_running_element.html#a2ba64e6d0fa83b67245091c883df5ae8", null ],
+    [ "SetCurrentPageNum", "classvrv_1_1_running_element.html#a1fb0858c1b662b2c96b33c66b055b69a", null ],
     [ "SetDrawingPage", "classvrv_1_1_running_element.html#ad99cddf73705a541160bed1e7b34454b", null ],
     [ "SetDrawingYRel", "classvrv_1_1_running_element.html#a212de9d05319398c856b6a065bfa203e", null ]
 ];

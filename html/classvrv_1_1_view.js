@@ -168,5 +168,6 @@ var classvrv_1_1_view =
     [ "m_currentSystem", "classvrv_1_1_view.html#ade9b0251ef2551af69d53a220fa239c3", null ],
     [ "m_doc", "classvrv_1_1_view.html#a922bb7e5bab67bd8e28206bd6e4f8c8e", null ],
     [ "m_drawingScoreDef", "classvrv_1_1_view.html#ab16976e8a08645f3fdb70a658ede2c15", null ],
+    [ "m_options", "classvrv_1_1_view.html#a63a1674d9b36c2b1d1ccb358cc968961", null ],
     [ "m_pageIdx", "classvrv_1_1_view.html#a5012b077ef799dbbc711144b6c15eea9", null ]
 ];

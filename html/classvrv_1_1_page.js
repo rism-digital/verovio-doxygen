@@ -28,9 +28,10 @@ var classvrv_1_1_page =
     [ "SetPPUFactor", "classvrv_1_1_page.html#a5efc6e77de212aeaadf46f93c11c4d75", null ],
     [ "m_drawingScoreDef", "classvrv_1_1_page.html#a93ad65400a74b61fa5ab692018038361", null ],
     [ "m_pageHeight", "classvrv_1_1_page.html#a6e2bf8197d1f54f8977efbc15ea5765c", null ],
-    [ "m_pageLeftMar", "classvrv_1_1_page.html#a74d2379cd116e92cd95e71c14e1f1205", null ],
-    [ "m_pageRightMar", "classvrv_1_1_page.html#a6bdcf44210efe9a10ea59effb1d5482a", null ],
-    [ "m_pageTopMar", "classvrv_1_1_page.html#a697f8633ba089e69ce34f7735a5efe7b", null ],
+    [ "m_pageMarginBottom", "classvrv_1_1_page.html#a78c509d9ccfed4635807aac50bce0288", null ],
+    [ "m_pageMarginLeft", "classvrv_1_1_page.html#a55d88d7f78119d3d358b697867f1aa9c", null ],
+    [ "m_pageMarginRight", "classvrv_1_1_page.html#a860be93082e2b1e168425b06b58311eb", null ],
+    [ "m_pageMarginTop", "classvrv_1_1_page.html#a561c8c529d822cbd5eda0f03866f33d6", null ],
     [ "m_pageWidth", "classvrv_1_1_page.html#a7915248836b2e53973c22840963fc8a9", null ],
     [ "m_PPUFactor", "classvrv_1_1_page.html#aec718fc1ac6ba74b3cadba551753f8c1", null ],
     [ "m_surface", "classvrv_1_1_page.html#a2f188b167ed93af6d53128faa4b3dc90", null ]

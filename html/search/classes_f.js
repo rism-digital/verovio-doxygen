@@ -1,6 +1,7 @@
 var searchData=
 [
   ['page',['Page',['../classvrv_1_1_page.html',1,'vrv']]],
+  ['pages',['Pages',['../classvrv_1_1_pages.html',1,'vrv']]],
   ['pb',['Pb',['../classvrv_1_1_pb.html',1,'vrv']]],
   ['pedal',['Pedal',['../classvrv_1_1_pedal.html',1,'vrv']]],
   ['pen',['Pen',['../classvrv_1_1_pen.html',1,'vrv']]],

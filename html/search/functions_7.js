@@ -33,5 +33,6 @@ var searchData=
   ['isspanningmeasures',['IsSpanningMeasures',['../classvrv_1_1_time_spanning_interface.html#a8889df0c70dd8ad214c556b776aa0511',1,'vrv::TimeSpanningInterface']]],
   ['issymbolonly',['IsSymbolOnly',['../classvrv_1_1_dynam.html#a240b3048c78b08eb6084c52167574032',1,'vrv::Dynam']]],
   ['isunissonwith',['IsUnissonWith',['../classvrv_1_1_note.html#a3f569dd14639313902bcdcf1fe6d9f22',1,'vrv::Note']]],
-  ['isvalidref',['IsValidRef',['../classvrv_1_1_arpeg.html#a3fc3e103a514919ab04b862eeb4a3cfa',1,'vrv::Arpeg::IsValidRef()'],['../classvrv_1_1_plist_interface.html#ab77a229a4b86768589a86c988851f447',1,'vrv::PlistInterface::IsValidRef()']]]
+  ['isvalidref',['IsValidRef',['../classvrv_1_1_arpeg.html#a3fc3e103a514919ab04b862eeb4a3cfa',1,'vrv::Arpeg::IsValidRef()'],['../classvrv_1_1_plist_interface.html#ab77a229a4b86768589a86c988851f447',1,'vrv::PlistInterface::IsValidRef()']]],
+  ['isvisible',['IsVisible',['../classvrv_1_1_chord.html#a502c5d2649e8a742254db09135446eec',1,'vrv::Chord::IsVisible()'],['../classvrv_1_1_note.html#a598f4774d77583117482ada9ef5681e4',1,'vrv::Note::IsVisible()']]]
 ];

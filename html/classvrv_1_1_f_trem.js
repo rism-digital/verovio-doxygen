@@ -11,5 +11,6 @@ var classvrv_1_1_f_trem =
     [ "GetElementCoords", "classvrv_1_1_f_trem.html#a2e5f7d17b592c5b9cb645c1179db45e7", null ],
     [ "InitCoords", "classvrv_1_1_f_trem.html#aa9a95a3a48cfc4d0b75856b37c2ef852", null ],
     [ "Reset", "classvrv_1_1_f_trem.html#abfe7d983b09535ba5c074878c70eeed9", null ],
+    [ "ResetDrawing", "classvrv_1_1_f_trem.html#a8cc3bad0753705f487c1186bdcaecf80", null ],
     [ "m_drawingParams", "classvrv_1_1_f_trem.html#a6627e6544c48dd0fa9919a4125886750", null ]
 ];

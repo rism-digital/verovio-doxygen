@@ -51,6 +51,5 @@ var searchData=
   ['converttopagebaseddoc',['ConvertToPageBasedDoc',['../classvrv_1_1_doc.html#a1f5b58cd73b6f04ce22ebf231c69db32',1,'vrv::Doc']]],
   ['converttopagebasedparams',['ConvertToPageBasedParams',['../classvrv_1_1_convert_to_page_based_params.html',1,'vrv']]],
   ['corr',['Corr',['../classvrv_1_1_corr.html',1,'vrv']]],
-  ['createscorebuffer',['CreateScoreBuffer',['../classvrv_1_1_doc.html#a015895be073387040f0429f474a589a9',1,'vrv::Doc']]],
   ['custos',['Custos',['../classvrv_1_1_custos.html',1,'vrv']]]
 ];

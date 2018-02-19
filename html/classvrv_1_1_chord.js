@@ -25,10 +25,12 @@ var classvrv_1_1_chord =
     [ "GetYTop", "classvrv_1_1_chord.html#acdeba8547ecd0d921bcfe7c603deae00", null ],
     [ "HasCrossStaff", "classvrv_1_1_chord.html#a53c3538256b587ed7471a977f9091a05", null ],
     [ "HasToBeAligned", "classvrv_1_1_chord.html#abde63c234417f3bde3d67dc189643ac3", null ],
+    [ "IsVisible", "classvrv_1_1_chord.html#a502c5d2649e8a742254db09135446eec", null ],
     [ "PositionInChord", "classvrv_1_1_chord.html#ad9046f9798eab922478f13c533e5e22f", null ],
     [ "PrepareLayerElementParts", "classvrv_1_1_chord.html#a18666c327afebb5d2548c01f84ee1de0", null ],
     [ "Reset", "classvrv_1_1_chord.html#a37534ad2cdc258e0b41df2f96ec115df", null ],
     [ "ResetAccidList", "classvrv_1_1_chord.html#a15da29444f2bc2ec20cd87f28b012fe5", null ],
+    [ "ResetDrawing", "classvrv_1_1_chord.html#a219f277237156ada2d457903076740c6", null ],
     [ "m_clusters", "classvrv_1_1_chord.html#ab6a3d07bd7a51b21d6300bdf5e0ebcef", null ],
     [ "m_dots", "classvrv_1_1_chord.html#a715914acbf21fbd7c67d0589315f94de", null ]
 ];

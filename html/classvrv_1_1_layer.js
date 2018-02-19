@@ -38,6 +38,7 @@ var classvrv_1_1_layer =
     [ "PrepareProcessingLists", "classvrv_1_1_layer.html#a0fc8fe59a19f1777afa25b5719d43adb", null ],
     [ "PrepareRpt", "classvrv_1_1_layer.html#ad622e8231dfae3932f38439a3d2502ea", null ],
     [ "Reset", "classvrv_1_1_layer.html#a3041f812957ab5e179668e832b86746e", null ],
+    [ "ResetHorizontalAlignment", "classvrv_1_1_layer.html#a8dfad94746e5bc31420776c9783224f2", null ],
     [ "ResetStaffDefObjects", "classvrv_1_1_layer.html#a973a56164bfe4785b69e9b44ce65489c", null ],
     [ "SetDrawCautionKeySigCancel", "classvrv_1_1_layer.html#a101eb115a5917af374c4eac04ca7a645", null ],
     [ "SetDrawingCautionValues", "classvrv_1_1_layer.html#a5adbee5370bec875186360c8721425cd", null ],

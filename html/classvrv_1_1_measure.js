@@ -3,6 +3,7 @@ var classvrv_1_1_measure =
     [ "Measure", "classvrv_1_1_measure.html#a61646aedd32264c9b5c2f812dde7f402", null ],
     [ "~Measure", "classvrv_1_1_measure.html#a8d4529908c3720683e20a001b5881336", null ],
     [ "AddChild", "classvrv_1_1_measure.html#a81e1e232db13e677d6114a4b21033157", null ],
+    [ "AddChildBack", "classvrv_1_1_measure.html#afbaab874c0a2b37b3f2bbd175756f4aa", null ],
     [ "AddTimestamp", "classvrv_1_1_measure.html#a67df4d10c89fedc0a403cb7169170d0a", null ],
     [ "AdjustAccidX", "classvrv_1_1_measure.html#afcfbbf264d2da532a19945d12f9dbe3d", null ],
     [ "AdjustArpegEnd", "classvrv_1_1_measure.html#a273ae3933bf78d6c3d439dadf059a673", null ],

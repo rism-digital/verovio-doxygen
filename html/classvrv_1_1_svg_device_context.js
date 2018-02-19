@@ -39,7 +39,7 @@ var classvrv_1_1_svg_device_context =
     [ "StartCustomGraphic", "classvrv_1_1_svg_device_context.html#a9dece695b0b61b4dbc3cac44dd32e71c", null ],
     [ "StartGraphic", "classvrv_1_1_svg_device_context.html#a71dc11add64070cc053bbecb6f5c5830", null ],
     [ "StartPage", "classvrv_1_1_svg_device_context.html#a8ef1a054499a2f007c138168ddcd0521", null ],
-    [ "StartText", "classvrv_1_1_svg_device_context.html#aee5188f399641043dab2d277f9f1326c", null ],
+    [ "StartText", "classvrv_1_1_svg_device_context.html#a1d5d1cec76db1ff81c5af3059f2e773c", null ],
     [ "StartTextGraphic", "classvrv_1_1_svg_device_context.html#ac213e970775c8d3ae0ab8e6c1f0f32cf", null ],
     [ "UseGlobalStyling", "classvrv_1_1_svg_device_context.html#a6f4aa56187a3cde13540946a67f50cbc", null ]
 ];

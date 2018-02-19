@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['parseoptions',['ParseOptions',['../classvrv_1_1_toolkit.html#a42b40d3cd04322fc299f2134e03a2580',1,'vrv::Toolkit']]],
   ['positioninchord',['PositionInChord',['../classvrv_1_1_chord.html#ad9046f9798eab922478f13c533e5e22f',1,'vrv::Chord']]],
   ['positioninligature',['PositionInLigature',['../classvrv_1_1_ligature.html#a8bab53f0b12355d5250c75c6de55f80e',1,'vrv::Ligature']]],
   ['prepareboundaries',['PrepareBoundaries',['../classvrv_1_1_boundary_end.html#aeb741e55b22fa843466a6e46075818ce',1,'vrv::BoundaryEnd::PrepareBoundaries()'],['../classvrv_1_1_editorial_element.html#ae619830b7bf77603328d2d4e6742c10f',1,'vrv::EditorialElement::PrepareBoundaries()'],['../classvrv_1_1_ending.html#a1704ee591ae157f7e7f553e176d8aab6',1,'vrv::Ending::PrepareBoundaries()'],['../classvrv_1_1_measure.html#a951466390e4c4a3a4d47687714853f8a',1,'vrv::Measure::PrepareBoundaries()'],['../classvrv_1_1_object.html#a5608529769df462c68433b5f50680969',1,'vrv::Object::PrepareBoundaries()'],['../classvrv_1_1_section.html#a8908d7a3629b999b424bdf2c6d894143',1,'vrv::Section::PrepareBoundaries()']]],

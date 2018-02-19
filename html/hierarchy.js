@@ -250,7 +250,10 @@ var hierarchy =
         [ "vrv::TupletNum", "classvrv_1_1_tuplet_num.html", null ],
         [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
       ] ],
+      [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
       [ "vrv::Num", "classvrv_1_1_num.html", null ],
+      [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
+      [ "vrv::Score", "classvrv_1_1_score.html", null ],
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ],
       [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ]
     ] ],
@@ -293,6 +296,9 @@ var hierarchy =
     [ "AttMensurVis", null, [
       [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ]
     ] ],
+    [ "AttMeterConformanceBar", null, [
+      [ "vrv::Measure", "classvrv_1_1_measure.html", null ]
+    ] ],
     [ "AttMeterSigDefaultLog", null, [
       [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ]
     ] ],
@@ -330,9 +336,12 @@ var hierarchy =
     ] ],
     [ "AttNNumberLike", null, [
       [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
+      [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
+      [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
       [ "vrv::Pb", "classvrv_1_1_pb.html", null ],
       [ "vrv::Sb", "classvrv_1_1_sb.html", null ],
+      [ "vrv::Score", "classvrv_1_1_score.html", null ],
       [ "vrv::Section", "classvrv_1_1_section.html", null ]
     ] ],
     [ "AttNotationType", null, [
@@ -587,8 +596,10 @@ var hierarchy =
         [ "vrv::LabelAbbr", "classvrv_1_1_label_abbr.html", null ],
         [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
         [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
+        [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
         [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
         [ "vrv::Page", "classvrv_1_1_page.html", null ],
+        [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
         [ "vrv::RunningElement", "classvrv_1_1_running_element.html", null ],
         [ "vrv::Score", "classvrv_1_1_score.html", null ],
         [ "vrv::ScoreDefElement", "classvrv_1_1_score_def_element.html", null ],
@@ -727,6 +738,18 @@ var hierarchy =
         [ "vrv::MeiOutput", "classvrv_1_1_mei_output.html", null ]
       ] ]
     ] ],
+    [ "vrv::Option", "classvrv_1_1_option.html", [
+      [ "vrv::OptionArray", "classvrv_1_1_option_array.html", null ],
+      [ "vrv::OptionBool", "classvrv_1_1_option_bool.html", null ],
+      [ "vrv::OptionDbl", "classvrv_1_1_option_dbl.html", null ],
+      [ "vrv::OptionInt", "classvrv_1_1_option_int.html", null ],
+      [ "vrv::OptionIntMap", "classvrv_1_1_option_int_map.html", null ],
+      [ "vrv::OptionStaffrel", "classvrv_1_1_option_staffrel.html", null ],
+      [ "vrv::OptionStaffrelBasic", "classvrv_1_1_option_staffrel_basic.html", null ],
+      [ "vrv::OptionString", "classvrv_1_1_option_string.html", null ]
+    ] ],
+    [ "vrv::OptionGrp", "classvrv_1_1_option_grp.html", null ],
+    [ "vrv::Options", "classvrv_1_1_options.html", null ],
     [ "vrv::Pen", "classvrv_1_1_pen.html", null ],
     [ "vrv::Point", "classvrv_1_1_point.html", null ],
     [ "vrv::Resources", "classvrv_1_1_resources.html", null ],
@@ -737,7 +760,6 @@ var hierarchy =
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ]
     ] ],
-    [ "vrv::Style", "classvrv_1_1_style.html", null ],
     [ "vrv::TextDrawingParams", "classvrv_1_1_text_drawing_params.html", null ],
     [ "vrv::TextExtend", "classvrv_1_1_text_extend.html", null ],
     [ "vrv::Toolkit", "classvrv_1_1_toolkit.html", null ],

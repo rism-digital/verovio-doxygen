@@ -145,6 +145,7 @@ var classvrv_1_1_object =
     [ "RegisterAttClass", "classvrv_1_1_object.html#aa5bcd61a747583c6ed2b97039129df68", null ],
     [ "RegisterInterface", "classvrv_1_1_object.html#a172109ee605efdf2c2b23440adef333c", null ],
     [ "Relinquish", "classvrv_1_1_object.html#a48ea7a78dfbdf0195235b56679924c76", null ],
+    [ "ReplaceChild", "classvrv_1_1_object.html#aba32b01b87b8f31455e68c77a3d8ee40", null ],
     [ "ReplaceDrawingValuesInStaffDef", "classvrv_1_1_object.html#aa1c070a008b1db58a5036c27c2fb8307", null ],
     [ "Reset", "classvrv_1_1_object.html#acdbfa3602b2a05ed4c7ba41c77f92b7e", null ],
     [ "ResetCachedDrawingX", "classvrv_1_1_object.html#a7cd2ff14f4324ac8fdb54739fac93532", null ],

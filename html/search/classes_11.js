@@ -23,7 +23,6 @@ var searchData=
   ['staffgrp',['StaffGrp',['../classvrv_1_1_staff_grp.html',1,'vrv']]],
   ['stem',['Stem',['../classvrv_1_1_stem.html',1,'vrv']]],
   ['stemmeddrawinginterface',['StemmedDrawingInterface',['../classvrv_1_1_stemmed_drawing_interface.html',1,'vrv']]],
-  ['style',['Style',['../classvrv_1_1_style.html',1,'vrv']]],
   ['supplied',['Supplied',['../classvrv_1_1_supplied.html',1,'vrv']]],
   ['svg',['Svg',['../classvrv_1_1_svg.html',1,'vrv']]],
   ['svgdevicecontext',['SvgDeviceContext',['../classvrv_1_1_svg_device_context.html',1,'vrv']]],

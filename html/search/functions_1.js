@@ -36,6 +36,5 @@ var searchData=
   ['convertanalyticalmarkupend',['ConvertAnalyticalMarkupEnd',['../classvrv_1_1_measure.html#aa263afb8672d1aa39bedac7c661cab2e',1,'vrv::Measure']]],
   ['convertfromanalyticalmarkup',['ConvertFromAnalyticalMarkup',['../classvrv_1_1_fermata.html#ab48ab808d6d0458b290e13310917ff08',1,'vrv::Fermata']]],
   ['converttopagebased',['ConvertToPageBased',['../classvrv_1_1_editorial_element.html#a2c4de467927781e48d6c968d2d8bdf3e',1,'vrv::EditorialElement::ConvertToPageBased()'],['../classvrv_1_1_ending.html#ad02f22cea7a4925749540248da475e26',1,'vrv::Ending::ConvertToPageBased()'],['../classvrv_1_1_measure.html#ad7f854dba4cbe22e81661f7acf10e56c',1,'vrv::Measure::ConvertToPageBased()'],['../classvrv_1_1_object.html#ae930432f04c711ac22a14c66a92feb5e',1,'vrv::Object::ConvertToPageBased()'],['../classvrv_1_1_score_def.html#a682908fdfabf7d58172278157d910e22',1,'vrv::ScoreDef::ConvertToPageBased()'],['../classvrv_1_1_section.html#acdd7e18394d27f6b6772e54906db980c',1,'vrv::Section::ConvertToPageBased()'],['../classvrv_1_1_system_element.html#a40e18f5218b411bfe4caf158138b97e2',1,'vrv::SystemElement::ConvertToPageBased()']]],
-  ['converttopagebaseddoc',['ConvertToPageBasedDoc',['../classvrv_1_1_doc.html#a1f5b58cd73b6f04ce22ebf231c69db32',1,'vrv::Doc']]],
-  ['createscorebuffer',['CreateScoreBuffer',['../classvrv_1_1_doc.html#a015895be073387040f0429f474a589a9',1,'vrv::Doc']]]
+  ['converttopagebaseddoc',['ConvertToPageBasedDoc',['../classvrv_1_1_doc.html#a1f5b58cd73b6f04ce22ebf231c69db32',1,'vrv::Doc']]]
 ];
