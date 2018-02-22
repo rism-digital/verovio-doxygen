@@ -40,6 +40,7 @@ var searchData=
   ['setgracealigmentxpos',['SetGraceAligmentXPos',['../classvrv_1_1_grace_aligner.html#aae43f582f69b1634c2f2eb5387c1125a',1,'vrv::GraceAligner']]],
   ['setmaxtime',['SetMaxTime',['../classvrv_1_1_measure_aligner.html#aab4edf29c88be6e12e726668af041d9d',1,'vrv::MeasureAligner']]],
   ['setmmoutput',['SetMMOutput',['../classvrv_1_1_svg_device_context.html#a57ff509fb8c71c3fd48092ba269cc159',1,'vrv::SvgDeviceContext']]],
+  ['setobjectxy',['SetObjectXY',['../classvrv_1_1_floating_positioner.html#aeb49f3289c5a6f5561728dc61e41dfaf',1,'vrv::FloatingPositioner']]],
   ['setoverflowbboxes',['SetOverflowBBoxes',['../classvrv_1_1_object.html#a45993175bb6a94cbbd0a5b69251e25eb',1,'vrv::Object']]],
   ['setoverflowbboxesend',['SetOverflowBBoxesEnd',['../classvrv_1_1_object.html#a70161897776b5acbaf0dddaa1ddd9def',1,'vrv::Object']]],
   ['setoverflowbboxesparams',['SetOverflowBBoxesParams',['../classvrv_1_1_set_overflow_b_boxes_params.html',1,'vrv']]],

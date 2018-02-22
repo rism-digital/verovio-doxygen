@@ -13,6 +13,7 @@ var classvrv_1_1_staff_alignment =
     [ "CalcOverflowBelow", "classvrv_1_1_staff_alignment.html#a6e7c3cc5f9cfebf735403a76a85ebd3a", null ],
     [ "ClearPositioners", "classvrv_1_1_staff_alignment.html#ab0c857aa5a9a585e4107edd6ef102f3e", null ],
     [ "GetClassId", "classvrv_1_1_staff_alignment.html#a20d7a25eb66364941345cc321f95e99c", null ],
+    [ "GetCorrespFloatingPositioner", "classvrv_1_1_staff_alignment.html#ae46cadae61f249115e75d43ae10b5f4e", null ],
     [ "GetOverflowAbove", "classvrv_1_1_staff_alignment.html#aa44565764f93a854ea71bc6b63e7227e", null ],
     [ "GetOverflowBelow", "classvrv_1_1_staff_alignment.html#aca990971e8025a3f499abf7a64c3617c", null ],
     [ "GetOverlap", "classvrv_1_1_staff_alignment.html#a6ed49d27f75b6f76726db774f91b6005", null ],

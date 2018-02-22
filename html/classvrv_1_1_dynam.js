@@ -10,5 +10,6 @@ var classvrv_1_1_dynam =
     [ "GetTimePointInterface", "classvrv_1_1_dynam.html#a5305925f82202889890c32f4cb10b78d", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_dynam.html#a14ac04f421eb2b6dcdbc23cfa63772d4", null ],
     [ "IsSymbolOnly", "classvrv_1_1_dynam.html#a240b3048c78b08eb6084c52167574032", null ],
+    [ "PrepareFloatingGrps", "classvrv_1_1_dynam.html#a0739a1199a1933b88eb6af34aa352cd5", null ],
     [ "Reset", "classvrv_1_1_dynam.html#a796634a0f186838ef311761060835d05", null ]
 ];

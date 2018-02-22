@@ -49,6 +49,7 @@ var classvrv_1_1_options =
     [ "m_mdivXPathQuery", "classvrv_1_1_options.html#ac94939b1b904c41073c45d33a4dbea7f", null ],
     [ "m_measureMinWidth", "classvrv_1_1_options.html#aa05a631b62399492d3c89c8bc6cbae26", null ],
     [ "m_measureNumber", "classvrv_1_1_options.html#a7325a901197e1643cfdd43373210488c", null ],
+    [ "m_mensuralToMeasure", "classvrv_1_1_options.html#ace0da799034ed728698c346b5c604fb3", null ],
     [ "m_mmOutput", "classvrv_1_1_options.html#af6b86f9f5c11eb1ce187ce7b90143c3f", null ],
     [ "m_noFooter", "classvrv_1_1_options.html#a9f3e7b21b401a774d42cf11e68e02a83", null ],
     [ "m_noHeader", "classvrv_1_1_options.html#a59542cd295857ad5473661c0f6a50268", null ],

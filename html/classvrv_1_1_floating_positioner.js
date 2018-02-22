@@ -1,9 +1,10 @@
 var classvrv_1_1_floating_positioner =
 [
-    [ "FloatingPositioner", "classvrv_1_1_floating_positioner.html#aa48621171f0a36d7c2b53c4491616b02", null ],
+    [ "FloatingPositioner", "classvrv_1_1_floating_positioner.html#a4ab8146566f889a218f2a772ae2a8816", null ],
     [ "~FloatingPositioner", "classvrv_1_1_floating_positioner.html#ac573fdccc3b55359b972e7a6794a36cd", null ],
     [ "CalcDrawingYRel", "classvrv_1_1_floating_positioner.html#a610bffb3224668e17473bd16ba7d6b2a", null ],
     [ "CalcXMinMaxY", "classvrv_1_1_floating_positioner.html#a28d264f2aa6274709617d07b781986ae", null ],
+    [ "GetAlignment", "classvrv_1_1_floating_positioner.html#acac4eb8ec7d5e7a87eb90aafe9f2f9ad", null ],
     [ "GetClassId", "classvrv_1_1_floating_positioner.html#ad8fc1446cdd041730ca8272adf2bc7b7", null ],
     [ "GetDrawingPlace", "classvrv_1_1_floating_positioner.html#a099f28d64fad8f6f49956a3e31f77d27", null ],
     [ "GetDrawingX", "classvrv_1_1_floating_positioner.html#a3df93cb0ac04f18b868bc43010ab7bdd", null ],
@@ -18,6 +19,7 @@ var classvrv_1_1_floating_positioner =
     [ "SetDrawingYRel", "classvrv_1_1_floating_positioner.html#a002454438057c1451a5e152e39304b57", null ],
     [ "SetObjectXY", "classvrv_1_1_floating_positioner.html#aeb49f3289c5a6f5561728dc61e41dfaf", null ],
     [ "UpdateCurvePosition", "classvrv_1_1_floating_positioner.html#aa4958542dae25dd4f448ca6fb79640ab", null ],
+    [ "m_alignment", "classvrv_1_1_floating_positioner.html#a1bca7057eeaed8bbb766a6ee4d10f84e", null ],
     [ "m_cuvreAngle", "classvrv_1_1_floating_positioner.html#a116792dc9e2f82c919a31612343240af", null ],
     [ "m_cuvreDir", "classvrv_1_1_floating_positioner.html#ab5419c0671043a9bc35d2c26ae745a3b", null ],
     [ "m_cuvrePoints", "classvrv_1_1_floating_positioner.html#af0fb574dfbcd8a8fe385d3f263a839fd", null ],

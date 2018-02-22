@@ -208,6 +208,7 @@ var hierarchy =
         [ "vrv::Lem", "classvrv_1_1_lem.html", null ],
         [ "vrv::Orig", "classvrv_1_1_orig.html", null ],
         [ "vrv::Rdg", "classvrv_1_1_rdg.html", null ],
+        [ "vrv::Ref", "classvrv_1_1_ref.html", null ],
         [ "vrv::Reg", "classvrv_1_1_reg.html", null ],
         [ "vrv::Restore", "classvrv_1_1_restore.html", null ],
         [ "vrv::Sic", "classvrv_1_1_sic.html", null ],
@@ -336,6 +337,7 @@ var hierarchy =
     ] ],
     [ "AttNNumberLike", null, [
       [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
+      [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
       [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
       [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
@@ -559,6 +561,10 @@ var hierarchy =
     [ "AttVerticalAlign", null, [
       [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", null ]
     ] ],
+    [ "AttVerticalAlignment", null, [
+      [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
+      [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ]
+    ] ],
     [ "AttVisibility", null, [
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
@@ -656,7 +662,9 @@ var hierarchy =
       [ "vrv::CastOffPagesParams", "classvrv_1_1_cast_off_pages_params.html", null ],
       [ "vrv::CastOffSystemsParams", "classvrv_1_1_cast_off_systems_params.html", null ],
       [ "vrv::ConvertAnalyticalMarkupParams", "classvrv_1_1_convert_analytical_markup_params.html", null ],
+      [ "vrv::ConvertToCastOffMensuralParams", "classvrv_1_1_convert_to_cast_off_mensural_params.html", null ],
       [ "vrv::ConvertToPageBasedParams", "classvrv_1_1_convert_to_page_based_params.html", null ],
+      [ "vrv::ConvertToUnCastOffMensuralParams", "classvrv_1_1_convert_to_un_cast_off_mensural_params.html", null ],
       [ "vrv::FillStaffCurrentTimeSpanningParams", "classvrv_1_1_fill_staff_current_time_spanning_params.html", null ],
       [ "vrv::FindAllBetweenParams", "classvrv_1_1_find_all_between_params.html", null ],
       [ "vrv::FindAllByAttComparisonParams", "classvrv_1_1_find_all_by_att_comparison_params.html", null ],

@@ -24,6 +24,7 @@ var classvrv_1_1_chord =
     [ "GetYExtremes", "classvrv_1_1_chord.html#aa2eb098db501191ccbc5aa530c6b486b", null ],
     [ "GetYTop", "classvrv_1_1_chord.html#acdeba8547ecd0d921bcfe7c603deae00", null ],
     [ "HasCrossStaff", "classvrv_1_1_chord.html#a53c3538256b587ed7471a977f9091a05", null ],
+    [ "HasNoteWithDots", "classvrv_1_1_chord.html#a9de31be09e892bc0f2ee30e52e44307c", null ],
     [ "HasToBeAligned", "classvrv_1_1_chord.html#abde63c234417f3bde3d67dc189643ac3", null ],
     [ "IsVisible", "classvrv_1_1_chord.html#a502c5d2649e8a742254db09135446eec", null ],
     [ "PositionInChord", "classvrv_1_1_chord.html#ad9046f9798eab922478f13c533e5e22f", null ],

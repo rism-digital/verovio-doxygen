@@ -3,6 +3,7 @@ var classvrv_1_1_bar_line =
     [ "BarLine", "classvrv_1_1_bar_line.html#a1778321d86ec586c12353b49de330e01", null ],
     [ "~BarLine", "classvrv_1_1_bar_line.html#a83331e33eca87896ba18383a9d902db4", null ],
     [ "Clone", "classvrv_1_1_bar_line.html#ad582205a58e0df8139cf87eb8ea9ae03", null ],
+    [ "ConvertToCastOffMensural", "classvrv_1_1_bar_line.html#a504350fdc36aaae756529a237981cc34", null ],
     [ "GetClassId", "classvrv_1_1_bar_line.html#a60fbf7bdd1374144c8c37fcebfa10182", null ],
     [ "GetClassName", "classvrv_1_1_bar_line.html#a1874f31186ae0ce4db753c4acb43a6f3", null ],
     [ "HasRepetitionDots", "classvrv_1_1_bar_line.html#a2d9659dbb8cf0f9eaefa85d28859bf83", null ],

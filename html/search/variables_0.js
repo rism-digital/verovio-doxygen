@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['m_5falignment',['m_alignment',['../classvrv_1_1_floating_positioner.html#a1bca7057eeaed8bbb766a6ee4d10f84e',1,'vrv::FloatingPositioner']]],
   ['m_5fbeamelementcoord',['m_beamElementCoord',['../classvrv_1_1_layer_element.html#a9b95cac7afb86bba8d7695ebd5a960d1',1,'vrv::LayerElement']]],
   ['m_5fcacheddrawingx',['m_cachedDrawingX',['../classvrv_1_1_bounding_box.html#a4961ebaf8f99abe31ee894345cd84a16',1,'vrv::BoundingBox']]],
   ['m_5fchildren',['m_children',['../classvrv_1_1_object.html#a3f896d8fcccd24f2d443db940aa086e5',1,'vrv::Object']]],
@@ -42,6 +43,7 @@ var searchData=
   ['m_5fisdeactivatedx',['m_isDeactivatedX',['../classvrv_1_1_device_context.html#a07ec2ee8e4d62cd3adb5459f9cd62a67',1,'vrv::DeviceContext']]],
   ['m_5flevel',['m_level',['../classvrv_1_1_app.html#a06f4d332dfccd1af6fffe54fe90f1701',1,'vrv::App::m_level()'],['../classvrv_1_1_choice.html#a29b49df33bd674309c9a41f91663ce09',1,'vrv::Choice::m_level()']]],
   ['m_5fmeasurealigner',['m_measureAligner',['../classvrv_1_1_measure.html#a39f4319275584a57b898dcbfcbed760e',1,'vrv::Measure']]],
+  ['m_5fobject',['m_object',['../classvrv_1_1_floating_positioner.html#a37c2446744eb4ae4149628468b066c5e',1,'vrv::FloatingPositioner']]],
   ['m_5foptions',['m_options',['../classvrv_1_1_view.html#a63a1674d9b36c2b1d1ccb358cc968961',1,'vrv::View']]],
   ['m_5fpageheight',['m_pageHeight',['../classvrv_1_1_page.html#a6e2bf8197d1f54f8977efbc15ea5765c',1,'vrv::Page']]],
   ['m_5fpageidx',['m_pageIdx',['../classvrv_1_1_view.html#a5012b077ef799dbbc711144b6c15eea9',1,'vrv::View']]],
