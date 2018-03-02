@@ -22,7 +22,7 @@ var classvrv_1_1_staff_alignment =
     [ "GetStaffSize", "classvrv_1_1_staff_alignment.html#a7fa1759557d1353566cfdcd56de6edf7", null ],
     [ "GetVerseCount", "classvrv_1_1_staff_alignment.html#abb3f2fd560fe0a0aeb316b1869f37e14", null ],
     [ "GetYRel", "classvrv_1_1_staff_alignment.html#a1abdba3b5c8406e42f16e06340a906b5", null ],
-    [ "SetCurrentFloatingPositioner", "classvrv_1_1_staff_alignment.html#a8efb2c9135e21bf82fc247f29edadea1", null ],
+    [ "SetCurrentFloatingPositioner", "classvrv_1_1_staff_alignment.html#a2509f2cdd8ef0e40f10aaca7ec29c814", null ],
     [ "SetOverflowAbove", "classvrv_1_1_staff_alignment.html#a6a5256bb9500487e025d3a20a0a0cfac", null ],
     [ "SetOverflowBelow", "classvrv_1_1_staff_alignment.html#adebf5d0f38a753d8af894af8ab2b3da6", null ],
     [ "SetOverlap", "classvrv_1_1_staff_alignment.html#a52f47b3d146de94276e2b29b20cf9bbe", null ],

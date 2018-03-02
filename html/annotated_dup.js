@@ -142,6 +142,7 @@ var annotated_dup =
       [ "MeiOutput", "classvrv_1_1_mei_output.html", "classvrv_1_1_mei_output" ],
       [ "Mensur", "classvrv_1_1_mensur.html", "classvrv_1_1_mensur" ],
       [ "MeterSig", "classvrv_1_1_meter_sig.html", "classvrv_1_1_meter_sig" ],
+      [ "MNum", "classvrv_1_1_m_num.html", "classvrv_1_1_m_num" ],
       [ "Mordent", "classvrv_1_1_mordent.html", "classvrv_1_1_mordent" ],
       [ "MRest", "classvrv_1_1_m_rest.html", "classvrv_1_1_m_rest" ],
       [ "MRpt", "classvrv_1_1_m_rpt.html", "classvrv_1_1_m_rpt" ],

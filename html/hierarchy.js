@@ -74,6 +74,7 @@ var hierarchy =
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
       [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ],
+      [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
       [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
@@ -140,6 +141,9 @@ var hierarchy =
     [ "AttEndings", null, [
       [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ]
     ] ],
+    [ "AttExtender", null, [
+      [ "vrv::Octave", "classvrv_1_1_octave.html", null ]
+    ] ],
     [ "AttFermataPresent", null, [
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ],
       [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ]
@@ -186,6 +190,7 @@ var hierarchy =
         [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
         [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
         [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
+        [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
         [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
         [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
         [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
@@ -252,15 +257,23 @@ var hierarchy =
         [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
       ] ],
       [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
-      [ "vrv::Num", "classvrv_1_1_num.html", null ],
       [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
       [ "vrv::Score", "classvrv_1_1_score.html", null ],
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ],
-      [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ]
+      [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ],
+      [ "vrv::TextElement", "classvrv_1_1_text_element.html", [
+        [ "vrv::F", "classvrv_1_1_f.html", null ],
+        [ "vrv::Fig", "classvrv_1_1_fig.html", null ],
+        [ "vrv::Lb", "classvrv_1_1_lb.html", null ],
+        [ "vrv::Num", "classvrv_1_1_num.html", null ],
+        [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
+        [ "vrv::Text", "classvrv_1_1_text.html", null ]
+      ] ]
     ] ],
     [ "AttLang", null, [
       [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
       [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
+      [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
       [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
       [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ],
@@ -273,7 +286,8 @@ var hierarchy =
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ]
     ] ],
     [ "AttLineRend", null, [
-      [ "vrv::Ending", "classvrv_1_1_ending.html", null ]
+      [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
+      [ "vrv::Octave", "classvrv_1_1_octave.html", null ]
     ] ],
     [ "AttLineRendBase", null, [
       [ "vrv::Octave", "classvrv_1_1_octave.html", null ]
@@ -283,6 +297,9 @@ var hierarchy =
     ] ],
     [ "AttMeasureLog", null, [
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ]
+    ] ],
+    [ "AttMeasureNumbers", null, [
+      [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ]
     ] ],
     [ "AttMensuralLog", null, [
       [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ]
@@ -396,6 +413,7 @@ var hierarchy =
         [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
         [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
         [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
+        [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
         [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ]
       ] ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
@@ -460,6 +478,7 @@ var hierarchy =
           [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
           [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
           [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
+          [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
           [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
           [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
           [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
@@ -544,16 +563,10 @@ var hierarchy =
         [ "vrv::Sb", "classvrv_1_1_sb.html", null ],
         [ "vrv::Section", "classvrv_1_1_section.html", null ]
       ] ],
-      [ "vrv::TextElement", "classvrv_1_1_text_element.html", [
-        [ "vrv::F", "classvrv_1_1_f.html", null ],
-        [ "vrv::Fig", "classvrv_1_1_fig.html", null ],
-        [ "vrv::Lb", "classvrv_1_1_lb.html", null ],
-        [ "vrv::Num", "classvrv_1_1_num.html", null ],
-        [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
-        [ "vrv::Text", "classvrv_1_1_text.html", null ]
-      ] ]
+      [ "vrv::TextElement", "classvrv_1_1_text_element.html", null ]
     ] ],
     [ "AttTypography", null, [
+      [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
       [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
       [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
@@ -737,6 +750,7 @@ var hierarchy =
         [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
         [ "vrv::Label", "classvrv_1_1_label.html", null ],
         [ "vrv::LabelAbbr", "classvrv_1_1_label_abbr.html", null ],
+        [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
         [ "vrv::Syl", "classvrv_1_1_syl.html", null ]
       ] ],
       [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ]

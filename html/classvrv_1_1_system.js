@@ -31,7 +31,7 @@ var classvrv_1_1_system =
     [ "Reset", "classvrv_1_1_system.html#a0204eb6fce138e7edbaef95ae3c707b1", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_system.html#a1ce3b747859b8527f6678952e51c2d8c", null ],
     [ "ResetVerticalAlignment", "classvrv_1_1_system.html#a42ce9e0d7c04ddd4c0f3318c4a899485", null ],
-    [ "SetCurrentFloatingPositioner", "classvrv_1_1_system.html#a12643cd8101ab0f89d33574360f60900", null ],
+    [ "SetCurrentFloatingPositioner", "classvrv_1_1_system.html#a3038eabbb2ccc9a8f95538cbc1917ae8", null ],
     [ "SetDrawingAbbrLabelsWidth", "classvrv_1_1_system.html#a81cb31df1ad314c49c835ee8d5484edf", null ],
     [ "SetDrawingLabelsWidth", "classvrv_1_1_system.html#a4e1c01cd9704b45d07961a013a7f3b54", null ],
     [ "SetDrawingScoreDef", "classvrv_1_1_system.html#a5faeee3d7620a9b7953ec59db7d31d01", null ],

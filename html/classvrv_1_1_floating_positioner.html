@@ -105,9 +105,9 @@ Inheritance diagram for vrv::FloatingPositioner:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4ab8146566f889a218f2a772ae2a8816"><td class="memItemLeft" align="right" valign="top"><a id="a4ab8146566f889a218f2a772ae2a8816"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FloatingPositioner</b> (<a class="el" href="classvrv_1_1_floating_object.html">FloatingObject</a> *object, <a class="el" href="classvrv_1_1_staff_alignment.html">StaffAlignment</a> *alignment)</td></tr>
-<tr class="separator:a4ab8146566f889a218f2a772ae2a8816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e725efff149c8687d7f35595f23da16"><td class="memItemLeft" align="right" valign="top"><a id="a2e725efff149c8687d7f35595f23da16"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FloatingPositioner</b> (<a class="el" href="classvrv_1_1_floating_object.html">FloatingObject</a> *object, <a class="el" href="classvrv_1_1_staff_alignment.html">StaffAlignment</a> *alignment, char spanningType)</td></tr>
+<tr class="separator:a2e725efff149c8687d7f35595f23da16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8fc1446cdd041730ca8272adf2bc7b7"><td class="memItemLeft" align="right" valign="top"><a id="ad8fc1446cdd041730ca8272adf2bc7b7"></a>
 virtual ClassId&#160;</td><td class="memItemRight" valign="bottom"><b>GetClassId</b> () const</td></tr>
 <tr class="separator:ad8fc1446cdd041730ca8272adf2bc7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,6 +132,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="classvrv_1_1_staff_alignment.html">StaffAlignment</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_floating_positioner.html#acac4eb8ec7d5e7a87eb90aafe9f2f9ad">GetAlignment</a> () const</td></tr>
 <tr class="memdesc:acac4eb8ec7d5e7a87eb90aafe9f2f9ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the <a class="el" href="classvrv_1_1_staff_alignment.html" title="This class stores an alignement position staves will point to. ">StaffAlignment</a> (asserted, cannot be NULL) <br /></td></tr>
 <tr class="separator:acac4eb8ec7d5e7a87eb90aafe9f2f9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb237747b671faa7e47fa29f005b25ff"><td class="memItemLeft" align="right" valign="top"><a id="acb237747b671faa7e47fa29f005b25ff"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_floating_positioner.html#acb237747b671faa7e47fa29f005b25ff">GetSpanningType</a> ()</td></tr>
+<tr class="memdesc:acb237747b671faa7e47fa29f005b25ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the spanning type. <br /></td></tr>
+<tr class="separator:acb237747b671faa7e47fa29f005b25ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a610bffb3224668e17473bd16ba7d6b2a"><td class="memItemLeft" align="right" valign="top"><a id="a610bffb3224668e17473bd16ba7d6b2a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>CalcDrawingYRel</b> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="el" href="classvrv_1_1_staff_alignment.html">StaffAlignment</a> *staffAlignment, <a class="el" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *horizOverlapingBBox)</td></tr>
 <tr class="separator:a610bffb3224668e17473bd16ba7d6b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -326,6 +330,10 @@ curvature_CURVEDIR&#160;</td><td class="memItemRight" valign="bottom"><b>m_cuvre
 <tr class="memitem:adac191d051aadf1533deaaecb1e5d21f"><td class="memItemLeft" align="right" valign="top"><a id="adac191d051aadf1533deaaecb1e5d21f"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cuvreXMinMaxY</b></td></tr>
 <tr class="separator:adac191d051aadf1533deaaecb1e5d21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f5ccc86f7d5afd5bee395b4d31ccf1e"><td class="memItemLeft" align="right" valign="top"><a id="a9f5ccc86f7d5afd5bee395b4d31ccf1e"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_floating_positioner.html#a9f5ccc86f7d5afd5bee395b4d31ccf1e">m_spanningType</a></td></tr>
+<tr class="memdesc:a9f5ccc86f7d5afd5bee395b4d31ccf1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The spanning type of the positionner for spanning control elements. <br /></td></tr>
+<tr class="separator:a9f5ccc86f7d5afd5bee395b4d31ccf1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -455,7 +463,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_floating_positioner.html">FloatingPositioner</a></li>
-    <li class="footer">Generated on Thu Feb 22 2018 16:15:51 by
+    <li class="footer">Generated on Fri Mar 2 2018 08:27:09 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

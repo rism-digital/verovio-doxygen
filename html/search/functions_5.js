@@ -2,6 +2,7 @@ var searchData=
 [
   ['generatedocumentscoredef',['GenerateDocumentScoreDef',['../classvrv_1_1_doc.html#add470d20e80b6fb3b87f5fbfb8cbd222',1,'vrv::Doc']]],
   ['generateheaderandfooter',['GenerateHeaderAndFooter',['../classvrv_1_1_doc.html#ad006f6d1239bf4c525cecd71d7d2733b',1,'vrv::Doc']]],
+  ['generatemeasurenumbers',['GenerateMeasureNumbers',['../classvrv_1_1_doc.html#aa94a58d50fbe08a45b813503678bb4ac',1,'vrv::Doc']]],
   ['generatemidi',['GenerateMIDI',['../classvrv_1_1_measure.html#af0a102d6699c8d6949f3ee9a3390859b',1,'vrv::Measure::GenerateMIDI()'],['../classvrv_1_1_note.html#a2bc1140c2a72c564fe0806238d7b8684',1,'vrv::Note::GenerateMIDI()'],['../classvrv_1_1_object.html#a426081ffba31e4251a2c36ceeb2a43ba',1,'vrv::Object::GenerateMIDI()']]],
   ['generatetimemap',['GenerateTimemap',['../classvrv_1_1_measure.html#a950524d9d7199aea4a2848c128893ac3',1,'vrv::Measure::GenerateTimemap()'],['../classvrv_1_1_note.html#a8f88949434306c66a20ed4d28d6bea85',1,'vrv::Note::GenerateTimemap()'],['../classvrv_1_1_object.html#abe889073301d6e1dfe55e725b6532948',1,'vrv::Object::GenerateTimemap()']]],
   ['getadjusteddrawingpageheight',['GetAdjustedDrawingPageHeight',['../classvrv_1_1_doc.html#a301056a989b90a286ec1f3e745226744',1,'vrv::Doc']]],
@@ -94,6 +95,7 @@ var searchData=
   ['getrowheight',['GetRowHeight',['../classvrv_1_1_running_element.html#a11700a4dce46ddfea311b38b9636be16',1,'vrv::RunningElement']]],
   ['getscore',['GetScore',['../classvrv_1_1_doc.html#a9f36424c62698289922dc1944c81372b',1,'vrv::Doc']]],
   ['getsmuflcode',['GetSmuflCode',['../classvrv_1_1_artic.html#a3e98493c8679887c387eb5c0982cd5d0',1,'vrv::Artic']]],
+  ['getspanningtype',['GetSpanningType',['../classvrv_1_1_floating_positioner.html#acb237747b671faa7e47fa29f005b25ff',1,'vrv::FloatingPositioner']]],
   ['getstaffalignment',['GetStaffAlignment',['../classvrv_1_1_system_aligner.html#a0a2e6ca43c0ce6f73bdd3df1754c8a2d',1,'vrv::SystemAligner']]],
   ['getstaffalignmentforstaffn',['GetStaffAlignmentForStaffN',['../classvrv_1_1_system_aligner.html#a5c35dd9c6a023b5b591f99b80385c995',1,'vrv::SystemAligner']]],
   ['getstaffdef',['GetStaffDef',['../classvrv_1_1_score_def.html#afd16c952de1b8829f86ee7499bbb1fa6',1,'vrv::ScoreDef']]],

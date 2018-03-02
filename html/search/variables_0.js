@@ -56,6 +56,7 @@ var searchData=
   ['m_5freturncode',['m_returnCode',['../classvrv_1_1_functor.html#a932a34b24d1424607b862d2416b14b86',1,'vrv::Functor']]],
   ['m_5fscoredef',['m_scoreDef',['../classvrv_1_1_doc.html#a2440ae954bedb2ba82cd7e878e96cff8',1,'vrv::Doc']]],
   ['m_5fselectors',['m_selectors',['../classvrv_1_1_options.html#ad197649417d09e309b4e38f26fa8c21a',1,'vrv::Options']]],
+  ['m_5fspanningtype',['m_spanningType',['../classvrv_1_1_floating_positioner.html#a9f5ccc86f7d5afd5bee395b4d31ccf1e',1,'vrv::FloatingPositioner']]],
   ['m_5fsurface',['m_surface',['../classvrv_1_1_page.html#a2f188b167ed93af6d53128faa4b3dc90',1,'vrv::Page']]],
   ['m_5fsystemleftmar',['m_systemLeftMar',['../classvrv_1_1_system.html#af19a983bddd62ef8f3eb0000add766ec',1,'vrv::System']]],
   ['m_5fsystemrightmar',['m_systemRightMar',['../classvrv_1_1_system.html#a00b7543c20a944c462b5b8b6ab0a0f13',1,'vrv::System']]],

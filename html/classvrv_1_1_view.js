@@ -76,7 +76,7 @@ var classvrv_1_1_view =
     [ "DrawMensurSlash", "classvrv_1_1_view.html#a75c6e5bed60f20879258bdb48620dead", null ],
     [ "DrawMeterSig", "classvrv_1_1_view.html#a305a0b42285af465187b04899425a976", null ],
     [ "DrawMeterSigFigures", "classvrv_1_1_view.html#a8c4e13c590404f2a2280d03156ad9199", null ],
-    [ "DrawMNum", "classvrv_1_1_view.html#ac8c80f13e5e374a6387f9c48fc113e28", null ],
+    [ "DrawMNum", "classvrv_1_1_view.html#ab674c82ab62a0634f59b1e99789ecce9", null ],
     [ "DrawMordent", "classvrv_1_1_view.html#a5088a2cb8271699acd882696663bd4f6", null ],
     [ "DrawMRest", "classvrv_1_1_view.html#a27851d5dab8760ea84fa4e0e1545d06c", null ],
     [ "DrawMRpt", "classvrv_1_1_view.html#ab77c16dfaa2a8d7ec437ae58e8282672", null ],

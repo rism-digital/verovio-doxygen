@@ -17,6 +17,7 @@ var classvrv_1_1_doc =
     [ "ExportTimemap", "classvrv_1_1_doc.html#a770613cbab57a30c515bbc653acf17ee", null ],
     [ "GenerateDocumentScoreDef", "classvrv_1_1_doc.html#add470d20e80b6fb3b87f5fbfb8cbd222", null ],
     [ "GenerateHeaderAndFooter", "classvrv_1_1_doc.html#ad006f6d1239bf4c525cecd71d7d2733b", null ],
+    [ "GenerateMeasureNumbers", "classvrv_1_1_doc.html#aa94a58d50fbe08a45b813503678bb4ac", null ],
     [ "GetAdjustedDrawingPageHeight", "classvrv_1_1_doc.html#a301056a989b90a286ec1f3e745226744", null ],
     [ "GetAdjustedDrawingPageWidth", "classvrv_1_1_doc.html#a71b430700d764832659b7aff1f78a8bd", null ],
     [ "GetBottomMargin", "classvrv_1_1_doc.html#a5f09c6986d723456ba22e01f9eaf95f0", null ],
