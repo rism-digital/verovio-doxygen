@@ -120,6 +120,7 @@ var annotated_dup =
       [ "HorizontalAligner", "classvrv_1_1_horizontal_aligner.html", "classvrv_1_1_horizontal_aligner" ],
       [ "HumdrumInput", "classvrv_1_1_humdrum_input.html", "classvrv_1_1_humdrum_input" ],
       [ "HumdrumSignifiers", "classvrv_1_1_humdrum_signifiers.html", "classvrv_1_1_humdrum_signifiers" ],
+      [ "InstrDef", "classvrv_1_1_instr_def.html", "classvrv_1_1_instr_def" ],
       [ "Interface", "classvrv_1_1_interface.html", "classvrv_1_1_interface" ],
       [ "IntTree", "structvrv_1_1_int_tree.html", "structvrv_1_1_int_tree" ],
       [ "IsAttributeComparison", "classvrv_1_1_is_attribute_comparison.html", "classvrv_1_1_is_attribute_comparison" ],

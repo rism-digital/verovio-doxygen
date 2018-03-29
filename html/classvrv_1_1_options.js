@@ -23,6 +23,8 @@ var classvrv_1_1_options =
     [ "m_general", "classvrv_1_1_options.html#a39af9494b89df90199d208bd5bd0d73c", null ],
     [ "m_generalLayout", "classvrv_1_1_options.html#a2f2ea31f618b0fc45a40a64e637bda68", null ],
     [ "m_graceFactor", "classvrv_1_1_options.html#a774df12da8a9067314eb91a4d31bfb42", null ],
+    [ "m_graceRhythmAlign", "classvrv_1_1_options.html#a68a4f1007a6e61c01f8b20559f9ebf06", null ],
+    [ "m_graceRightAlign", "classvrv_1_1_options.html#a89d555af121de6d29815f5c4168f1724", null ],
     [ "m_hairpinSize", "classvrv_1_1_options.html#a68368d266873d514eb6c5d7979d349c3", null ],
     [ "m_humType", "classvrv_1_1_options.html#a2f7899685445e82ff96770b404cf8410", null ],
     [ "m_landscape", "classvrv_1_1_options.html#a0b55be9ed4783e0116172c3836c7c1e3", null ],

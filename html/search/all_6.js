@@ -50,7 +50,7 @@ var searchData=
   ['getendmeasure',['GetEndMeasure',['../classvrv_1_1_time_spanning_interface.html#ab1286ca2a24e646753e7ffcc6ff3394d',1,'vrv::TimeSpanningInterface']]],
   ['getfirstparent',['GetFirstParent',['../classvrv_1_1_object.html#a1cbfb9b6e29a947dd063382023317fe2',1,'vrv::Object']]],
   ['getglyph',['GetGlyph',['../classvrv_1_1_resources.html#ac65b3dab77d5f896192397734da16157',1,'vrv::Resources']]],
-  ['getgracealigner',['GetGraceAligner',['../classvrv_1_1_alignment.html#ac5b5b0592801db16db84bf83524793f1',1,'vrv::Alignment']]],
+  ['getgracealigner',['GetGraceAligner',['../classvrv_1_1_alignment.html#ae806f6c44d2251c5adf385d21d22e2be',1,'vrv::Alignment']]],
   ['getheight',['GetHeight',['../classvrv_1_1_system.html#a4dcd13387fa5b83a9dbbb7492e6ab78b',1,'vrv::System']]],
   ['getidx',['GetIdx',['../classvrv_1_1_object.html#a2bfb8ee92dbd7e805de0aae51d07d534',1,'vrv::Object']]],
   ['getinnercenterx',['GetInnerCenterX',['../classvrv_1_1_measure.html#a0fefb48a87e3b9ccd5b5f2539cdebee1',1,'vrv::Measure']]],

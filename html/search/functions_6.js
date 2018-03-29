@@ -5,7 +5,7 @@ var searchData=
   ['hasattribute',['HasAttribute',['../classvrv_1_1_object.html#a07880f4ad709e37ca6b5483110905383',1,'vrv::Object']]],
   ['haschild',['HasChild',['../classvrv_1_1_object.html#afb80a1297dbe6a0652008895a001572b',1,'vrv::Object']]],
   ['hascrossstaff',['HasCrossStaff',['../classvrv_1_1_chord.html#a53c3538256b587ed7471a977f9091a05',1,'vrv::Chord']]],
-  ['hasgracealigner',['HasGraceAligner',['../classvrv_1_1_alignment.html#a53c0039316080d3464c62e9c55cc55e8',1,'vrv::Alignment']]],
+  ['hasgracealigner',['HasGraceAligner',['../classvrv_1_1_alignment.html#ae694154976e041cf41059ba6274b3d79',1,'vrv::Alignment']]],
   ['hasidenticaldurationinterface',['HasIdenticalDurationInterface',['../classvrv_1_1_duration_interface.html#a4069af8ecad13f6b29e960cec642b6f5',1,'vrv::DurationInterface']]],
   ['hasidenticalpitchinterface',['HasIdenticalPitchInterface',['../classvrv_1_1_pitch_interface.html#a2851d8a28d8129f3301f2367a3302f1a',1,'vrv::PitchInterface']]],
   ['hasidenticalpositioninterface',['HasIdenticalPositionInterface',['../classvrv_1_1_position_interface.html#a932d3221b8cd285116ffde54bc7a17e8',1,'vrv::PositionInterface']]],

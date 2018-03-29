@@ -14,7 +14,7 @@ var classvrv_1_1_beam_drawing_params =
     [ "m_cueSize", "classvrv_1_1_beam_drawing_params.html#a3186230c705018eefca12eb575d1f7c9", null ],
     [ "m_hasMultipleStemDir", "classvrv_1_1_beam_drawing_params.html#a1a7acfd7366e0c7f052dd3218eb486bd", null ],
     [ "m_shortestDur", "classvrv_1_1_beam_drawing_params.html#ae3d5603d361737ecc12794907699a782", null ],
-    [ "m_startingY", "classvrv_1_1_beam_drawing_params.html#a5b4fad57c711d0f47a72996d20b695cc", null ],
-    [ "m_stemDir", "classvrv_1_1_beam_drawing_params.html#ab64c03199a0f14778bc644d614c6bb59", null ],
-    [ "m_verticalBoost", "classvrv_1_1_beam_drawing_params.html#a6e8dacddd636ea89927a447a0192e932", null ]
+    [ "m_startingX", "classvrv_1_1_beam_drawing_params.html#ad9659492b11b2aada7aa1cd8446d9249", null ],
+    [ "m_startingY", "classvrv_1_1_beam_drawing_params.html#aa5b74c8df4585ed6ad1f8d0fd756b135", null ],
+    [ "m_stemDir", "classvrv_1_1_beam_drawing_params.html#ab64c03199a0f14778bc644d614c6bb59", null ]
 ];

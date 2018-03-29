@@ -44,6 +44,9 @@ var hierarchy =
     [ "AttBeatRptVis", null, [
       [ "vrv::BeatRpt", "classvrv_1_1_beat_rpt.html", null ]
     ] ],
+    [ "AttChannelized", null, [
+      [ "vrv::InstrDef", "classvrv_1_1_instr_def.html", null ]
+    ] ],
     [ "AttCleffingLog", null, [
       [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", [
         [ "vrv::ScoreDefElement", "classvrv_1_1_score_def_element.html", [
@@ -220,6 +223,7 @@ var hierarchy =
         [ "vrv::Supplied", "classvrv_1_1_supplied.html", null ],
         [ "vrv::Unclear", "classvrv_1_1_unclear.html", null ]
       ] ],
+      [ "vrv::InstrDef", "classvrv_1_1_instr_def.html", null ],
       [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", [
         [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
         [ "vrv::Artic", "classvrv_1_1_artic.html", null ],
@@ -329,6 +333,9 @@ var hierarchy =
     [ "AttMeterSigVis", null, [
       [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ]
     ] ],
+    [ "AttMidiInstrument", null, [
+      [ "vrv::InstrDef", "classvrv_1_1_instr_def.html", null ]
+    ] ],
     [ "AttMidiTempo", null, [
       [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ],
       [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ]
@@ -355,6 +362,7 @@ var hierarchy =
     [ "AttNNumberLike", null, [
       [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
       [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
+      [ "vrv::InstrDef", "classvrv_1_1_instr_def.html", null ],
       [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
       [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
@@ -574,7 +582,7 @@ var hierarchy =
     [ "AttVerticalAlign", null, [
       [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", null ]
     ] ],
-    [ "AttVerticalAlignment", null, [
+    [ "AttVerticalGroup", null, [
       [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ]
     ] ],
@@ -611,6 +619,7 @@ var hierarchy =
           [ "vrv::GraceAligner", "classvrv_1_1_grace_aligner.html", null ],
           [ "vrv::MeasureAligner", "classvrv_1_1_measure_aligner.html", null ]
         ] ],
+        [ "vrv::InstrDef", "classvrv_1_1_instr_def.html", null ],
         [ "vrv::Label", "classvrv_1_1_label.html", null ],
         [ "vrv::LabelAbbr", "classvrv_1_1_label_abbr.html", null ],
         [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
