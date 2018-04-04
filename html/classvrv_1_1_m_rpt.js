@@ -2,6 +2,7 @@ var classvrv_1_1_m_rpt =
 [
     [ "MRpt", "classvrv_1_1_m_rpt.html#ae9b444c2e78b110a6ed9803cf2d47346", null ],
     [ "~MRpt", "classvrv_1_1_m_rpt.html#aeb71e502b1e1a7bbb893f7f6b18d802b", null ],
+    [ "GenerateMIDI", "classvrv_1_1_m_rpt.html#a59ada8011f93e34e4c7e57ef188612a9", null ],
     [ "GetClassId", "classvrv_1_1_m_rpt.html#adebf25fa7047f327c3f4dbf2261638e4", null ],
     [ "GetClassName", "classvrv_1_1_m_rpt.html#a4b142f0e9fac9b421a474e5ecae5cbeb", null ],
     [ "PrepareRpt", "classvrv_1_1_m_rpt.html#adee1294eed9ce05b6f759a439c858a79", null ],

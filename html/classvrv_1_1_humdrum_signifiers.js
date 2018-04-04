@@ -13,5 +13,7 @@ var classvrv_1_1_humdrum_signifiers =
     [ "nostem", "classvrv_1_1_humdrum_signifiers.html#a9663155015794ed2e35ab42e7dd25313", null ],
     [ "rspace_color", "classvrv_1_1_humdrum_signifiers.html#a01795bc2d02f888d1a1b446da2f4abe3", null ],
     [ "space_color", "classvrv_1_1_humdrum_signifiers.html#a17efb2f70761d86d9dd2acf4f4ea04ee", null ],
-    [ "terminallong", "classvrv_1_1_humdrum_signifiers.html#a05c92d3bb8004e71a0fe159faca257c6", null ]
+    [ "terminallong", "classvrv_1_1_humdrum_signifiers.html#a05c92d3bb8004e71a0fe159faca257c6", null ],
+    [ "textcolor", "classvrv_1_1_humdrum_signifiers.html#a1c4d9de3d67c8432c08a02908ac78c05", null ],
+    [ "textmark", "classvrv_1_1_humdrum_signifiers.html#a3564ce4ddebe648b66cd26c0b5813494", null ]
 ];

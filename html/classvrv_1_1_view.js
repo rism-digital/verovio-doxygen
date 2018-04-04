@@ -68,7 +68,7 @@ var classvrv_1_1_view =
     [ "DrawMensur", "classvrv_1_1_view.html#a996684014a80ece24f0cd4a9e707d049", null ],
     [ "DrawMensuralNote", "classvrv_1_1_view.html#a651558f192674df0282bd069fb7a8e9c", null ],
     [ "DrawMensuralRest", "classvrv_1_1_view.html#a0551726ca37d8101339cc7f333631334", null ],
-    [ "DrawMensuralStem", "classvrv_1_1_view.html#a94e7bcbebc30354ddb282c785a7ff255", null ],
+    [ "DrawMensuralStem", "classvrv_1_1_view.html#a1251c367eabd429570531db7482d2199", null ],
     [ "DrawMensurCircle", "classvrv_1_1_view.html#a40ce839c9c1146b3caeebc7fcf0b9f9b", null ],
     [ "DrawMensurDot", "classvrv_1_1_view.html#aaea0e349943238b3fc5ca2139d4c56ec", null ],
     [ "DrawMensurHalfCircle", "classvrv_1_1_view.html#a74b637f9dc564cd0e7e22abe3ab439ce", null ],
