@@ -16,6 +16,7 @@ var searchData=
   ['isboundaryelement',['IsBoundaryElement',['../classvrv_1_1_object.html#a5b1d528341ef806d382cdd1c27911021',1,'vrv::Object']]],
   ['iscentered',['IsCentered',['../classvrv_1_1_artic.html#a0f3c3112f20c06ce5f18d8a97c9ecea7',1,'vrv::Artic']]],
   ['ischordtone',['IsChordTone',['../classvrv_1_1_note.html#abfcac1365637007ca58537cbae8fa306',1,'vrv::Note']]],
+  ['isempty',['IsEmpty',['../classvrv_1_1_segmented_line.html#aa996c2ce49be02747886a79b45e030d3',1,'vrv::SegmentedLine']]],
   ['isfirstinbeam',['IsFirstInBeam',['../classvrv_1_1_beam.html#a6b77b30f89dcc0f8b266138baa8904eb',1,'vrv::Beam::IsFirstInBeam()'],['../classvrv_1_1_duration_interface.html#ac7abd60beb364ff44323e4e60e11d59f',1,'vrv::DurationInterface::IsFirstInBeam()']]],
   ['isfloatingobject',['IsFloatingObject',['../classvrv_1_1_object.html#a3b131f39c868a8a1e9b768bdc0eae811',1,'vrv::Object']]],
   ['isgracenote',['IsGraceNote',['../classvrv_1_1_layer_element.html#ab307b4c131fd2560f831e355dc31908d',1,'vrv::LayerElement']]],
@@ -33,6 +34,7 @@ var searchData=
   ['isspanningmeasures',['IsSpanningMeasures',['../classvrv_1_1_time_spanning_interface.html#a8889df0c70dd8ad214c556b776aa0511',1,'vrv::TimeSpanningInterface']]],
   ['issymbolonly',['IsSymbolOnly',['../classvrv_1_1_dynam.html#a240b3048c78b08eb6084c52167574032',1,'vrv::Dynam']]],
   ['isunissonwith',['IsUnissonWith',['../classvrv_1_1_note.html#a3f569dd14639313902bcdcf1fe6d9f22',1,'vrv::Note']]],
+  ['isunsegmented',['IsUnsegmented',['../classvrv_1_1_segmented_line.html#a181fb19bdd3fbf969eb236118315e065',1,'vrv::SegmentedLine']]],
   ['isvalidref',['IsValidRef',['../classvrv_1_1_arpeg.html#a3fc3e103a514919ab04b862eeb4a3cfa',1,'vrv::Arpeg::IsValidRef()'],['../classvrv_1_1_plist_interface.html#ab77a229a4b86768589a86c988851f447',1,'vrv::PlistInterface::IsValidRef()']]],
   ['isvisible',['IsVisible',['../classvrv_1_1_chord.html#a502c5d2649e8a742254db09135446eec',1,'vrv::Chord::IsVisible()'],['../classvrv_1_1_note.html#a598f4774d77583117482ada9ef5681e4',1,'vrv::Note::IsVisible()']]]
 ];

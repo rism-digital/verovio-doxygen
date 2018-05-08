@@ -13,6 +13,7 @@ var searchData=
   ['adjustlayersparams',['AdjustLayersParams',['../classvrv_1_1_adjust_layers_params.html',1,'vrv']]],
   ['adjuststaffoverlapparams',['AdjustStaffOverlapParams',['../classvrv_1_1_adjust_staff_overlap_params.html',1,'vrv']]],
   ['adjustsylspacingparams',['AdjustSylSpacingParams',['../classvrv_1_1_adjust_syl_spacing_params.html',1,'vrv']]],
+  ['adjustxoverflowparams',['AdjustXOverflowParams',['../classvrv_1_1_adjust_x_overflow_params.html',1,'vrv']]],
   ['adjustxposparams',['AdjustXPosParams',['../classvrv_1_1_adjust_x_pos_params.html',1,'vrv']]],
   ['adjustyposparams',['AdjustYPosParams',['../classvrv_1_1_adjust_y_pos_params.html',1,'vrv']]],
   ['alignhorizontallyparams',['AlignHorizontallyParams',['../classvrv_1_1_align_horizontally_params.html',1,'vrv']]],

@@ -13,7 +13,7 @@ var classvrv_1_1_doc =
     [ "ConvertToCastOffMensuralDoc", "classvrv_1_1_doc.html#a61f5bae93a22f6240087187284dfb3c1", null ],
     [ "ConvertToPageBasedDoc", "classvrv_1_1_doc.html#a1f5b58cd73b6f04ce22ebf231c69db32", null ],
     [ "ConvertToUnCastOffMensuralDoc", "classvrv_1_1_doc.html#a560f44ff928ec391ba5d86a1785c4590", null ],
-    [ "ExportMIDI", "classvrv_1_1_doc.html#a8d5b755ccb86f875aeed6d03bec26218", null ],
+    [ "ExportMIDI", "classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5", null ],
     [ "ExportTimemap", "classvrv_1_1_doc.html#a770613cbab57a30c515bbc653acf17ee", null ],
     [ "GenerateDocumentScoreDef", "classvrv_1_1_doc.html#add470d20e80b6fb3b87f5fbfb8cbd222", null ],
     [ "GenerateHeaderAndFooter", "classvrv_1_1_doc.html#ad006f6d1239bf4c525cecd71d7d2733b", null ],

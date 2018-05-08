@@ -5,6 +5,8 @@ var classvrv_1_1_system =
     [ "AddChild", "classvrv_1_1_system.html#a74085bf784ecdc0ef6525c9e43804844", null ],
     [ "AdjustFloatingPostioners", "classvrv_1_1_system.html#a66a414f599962c78dc36365d4cce7c9d", null ],
     [ "AdjustStaffOverlap", "classvrv_1_1_system.html#a2e4bfa30abf92e487736005db9d270f4", null ],
+    [ "AdjustXOverflow", "classvrv_1_1_system.html#acf17073cb929dc3eb114d8daac30c016", null ],
+    [ "AdjustXOverflowEnd", "classvrv_1_1_system.html#a40fab7159edc3c6a8f44a50122faaaec", null ],
     [ "AdjustYPos", "classvrv_1_1_system.html#a0911ad3482e6ff43e57e832a0a0a3c4c", null ],
     [ "AlignHorizontally", "classvrv_1_1_system.html#ac5485e7573278cc935c49edbe75e580e", null ],
     [ "AlignMeasures", "classvrv_1_1_system.html#a6c2c305854d0f875af16f0a48c98425c", null ],

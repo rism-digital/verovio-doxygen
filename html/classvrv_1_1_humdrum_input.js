@@ -53,6 +53,8 @@ var classvrv_1_1_humdrum_input =
     [ "convertHumdrum", "classvrv_1_1_humdrum_input.html#adac7f4973c52b08488b1d838f001095b", null ],
     [ "convertMeasureStaff", "classvrv_1_1_humdrum_input.html#a60a4b41fc01ceccbc1940df3932dee69", null ],
     [ "convertMeasureStaves", "classvrv_1_1_humdrum_input.html#a47bc7378a18b649503600b7338ec78b4", null ],
+    [ "convertMensuralRhythm", "classvrv_1_1_humdrum_input.html#a496a3d29ed1a5a8dac5fa6ae301d118b", null ],
+    [ "convertMensuralToken", "classvrv_1_1_humdrum_input.html#ac75005c3242ab0c9837591ba5b3aba21", null ],
     [ "convertNote", "classvrv_1_1_humdrum_input.html#a4dafbf9efe8792fc423c29df8a4130ee", null ],
     [ "convertRest", "classvrv_1_1_humdrum_input.html#a3cdfd814b636b1ce984d05bcc38ad831", null ],
     [ "convertRhythm", "classvrv_1_1_humdrum_input.html#aff101726f730123e7e95db600991229b", null ],

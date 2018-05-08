@@ -583,10 +583,13 @@ var hierarchy =
       [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", null ]
     ] ],
     [ "AttVerticalGroup", null, [
+      [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
       [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
-      [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ]
+      [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
+      [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ]
     ] ],
     [ "AttVisibility", null, [
+      [ "vrv::BarLine", "classvrv_1_1_bar_line.html", null ],
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
@@ -669,6 +672,7 @@ var hierarchy =
       [ "vrv::AdjustLayersParams", "classvrv_1_1_adjust_layers_params.html", null ],
       [ "vrv::AdjustStaffOverlapParams", "classvrv_1_1_adjust_staff_overlap_params.html", null ],
       [ "vrv::AdjustSylSpacingParams", "classvrv_1_1_adjust_syl_spacing_params.html", null ],
+      [ "vrv::AdjustXOverflowParams", "classvrv_1_1_adjust_x_overflow_params.html", null ],
       [ "vrv::AdjustXPosParams", "classvrv_1_1_adjust_x_pos_params.html", null ],
       [ "vrv::AdjustYPosParams", "classvrv_1_1_adjust_y_pos_params.html", null ],
       [ "vrv::AlignHorizontallyParams", "classvrv_1_1_align_horizontally_params.html", null ],
@@ -784,6 +788,7 @@ var hierarchy =
     [ "vrv::Pen", "classvrv_1_1_pen.html", null ],
     [ "vrv::Point", "classvrv_1_1_point.html", null ],
     [ "vrv::Resources", "classvrv_1_1_resources.html", null ],
+    [ "vrv::SegmentedLine", "classvrv_1_1_segmented_line.html", null ],
     [ "vrv::StaffDefDrawingInterface", "classvrv_1_1_staff_def_drawing_interface.html", [
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
     ] ],

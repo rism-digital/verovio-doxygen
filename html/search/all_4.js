@@ -8,6 +8,6 @@ var searchData=
   ['expan',['Expan',['../classvrv_1_1_expan.html',1,'vrv']]],
   ['expansion',['Expansion',['../classvrv_1_1_expansion.html',1,'vrv']]],
   ['exportfile',['ExportFile',['../classvrv_1_1_file_output_stream.html#aa1ad330aa13c1290d2714366aa5e8d48',1,'vrv::FileOutputStream::ExportFile()'],['../classvrv_1_1_mei_output.html#acd4564eff50dead142838679e42e7c55',1,'vrv::MeiOutput::ExportFile()']]],
-  ['exportmidi',['ExportMIDI',['../classvrv_1_1_doc.html#a8d5b755ccb86f875aeed6d03bec26218',1,'vrv::Doc']]],
+  ['exportmidi',['ExportMIDI',['../classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5',1,'vrv::Doc']]],
   ['exporttimemap',['ExportTimemap',['../classvrv_1_1_doc.html#a770613cbab57a30c515bbc653acf17ee',1,'vrv::Doc']]]
 ];
