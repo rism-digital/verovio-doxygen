@@ -24,10 +24,12 @@ var searchData=
   ['staffgrp',['StaffGrp',['../classvrv_1_1_staff_grp.html',1,'vrv']]],
   ['stem',['Stem',['../classvrv_1_1_stem.html',1,'vrv']]],
   ['stemmeddrawinginterface',['StemmedDrawingInterface',['../classvrv_1_1_stemmed_drawing_interface.html',1,'vrv']]],
+  ['subst',['Subst',['../classvrv_1_1_subst.html',1,'vrv']]],
   ['supplied',['Supplied',['../classvrv_1_1_supplied.html',1,'vrv']]],
   ['svg',['Svg',['../classvrv_1_1_svg.html',1,'vrv']]],
   ['svgdevicecontext',['SvgDeviceContext',['../classvrv_1_1_svg_device_context.html',1,'vrv']]],
   ['syl',['Syl',['../classvrv_1_1_syl.html',1,'vrv']]],
+  ['syllable',['Syllable',['../classvrv_1_1_syllable.html',1,'vrv']]],
   ['system',['System',['../classvrv_1_1_system.html',1,'vrv']]],
   ['systemaligner',['SystemAligner',['../classvrv_1_1_system_aligner.html',1,'vrv']]],
   ['systemelement',['SystemElement',['../classvrv_1_1_system_element.html',1,'vrv']]]

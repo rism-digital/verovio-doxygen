@@ -99,7 +99,9 @@ Inheritance diagram for vrv::PitchInterface:</div>
   <img src="classvrv_1_1_pitch_interface.png" usemap="#vrv::PitchInterface_map" alt=""/>
   <map id="vrv::PitchInterface_map" name="vrv::PitchInterface_map">
 <area href="classvrv_1_1_interface.html" title="This is a base class for regrouping MEI att classes. " alt="vrv::Interface" shape="rect" coords="0,0,115,24"/>
-<area href="classvrv_1_1_note.html" title="This class models the MEI &lt;note&gt; element. " alt="vrv::Note" shape="rect" coords="187,112,302,136"/>
+<area href="classvrv_1_1_custos.html" alt="vrv::Custos" shape="rect" coords="62,112,177,136"/>
+<area href="classvrv_1_1_nc.html" title="This class models the MEI &lt;nc&gt; element. " alt="vrv::Nc" shape="rect" coords="187,112,302,136"/>
+<area href="classvrv_1_1_note.html" title="This class models the MEI &lt;note&gt; element. " alt="vrv::Note" shape="rect" coords="312,112,427,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -108,6 +110,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2851d8a28d8129f3301f2367a3302f1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_pitch_interface.html#a2851d8a28d8129f3301f2367a3302f1a">HasIdenticalPitchInterface</a> (<a class="el" href="classvrv_1_1_pitch_interface.html">PitchInterface</a> *otherPitchInterface)</td></tr>
 <tr class="memdesc:a2851d8a28d8129f3301f2367a3302f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_interface.html" title="This is a base class for regrouping MEI att classes. ">Interface</a> comparison operator.  <a href="#a2851d8a28d8129f3301f2367a3302f1a">More...</a><br /></td></tr>
 <tr class="separator:a2851d8a28d8129f3301f2367a3302f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa50e2d8637677e753a582083b7b8afb7"><td class="memItemLeft" align="right" valign="top"><a id="aa50e2d8637677e753a582083b7b8afb7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_pitch_interface.html#aa50e2d8637677e753a582083b7b8afb7">AdjustPitchByOffset</a> (int pitchOffset)</td></tr>
+<tr class="memdesc:aa50e2d8637677e753a582083b7b8afb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shift pname and octave by a certain number of steps. <br /></td></tr>
+<tr class="separator:aa50e2d8637677e753a582083b7b8afb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a558b1156e546118a81d6ed12e739f4ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_pitch_interface.html#a558b1156e546118a81d6ed12e739f4ab">PitchDifferenceTo</a> (<a class="el" href="classvrv_1_1_pitch_interface.html">PitchInterface</a> *pi)</td></tr>
+<tr class="memdesc:a558b1156e546118a81d6ed12e739f4ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get steps between calling object and parameter.  <a href="#a558b1156e546118a81d6ed12e739f4ab">More...</a><br /></td></tr>
+<tr class="separator:a558b1156e546118a81d6ed12e739f4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, reset methods</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Reset method resets all attribute classes </p>
 </div></td></tr>
@@ -141,12 +150,15 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Interface</b> ()<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac6d9b7ec74dba44097241bb60b365284"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_pitch_interface.html#ac6d9b7ec74dba44097241bb60b365284">CalcLoc</a> (data_PITCHNAME pname, int oct, int clefLocOffset)</td></tr>
-<tr class="memdesc:ac6d9b7ec74dba44097241bb60b365284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the loc for a pitch and octave and considerting the clef loc offset.  <a href="#ac6d9b7ec74dba44097241bb60b365284">More...</a><br /></td></tr>
-<tr class="separator:ac6d9b7ec74dba44097241bb60b365284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3efb531b25e89181a821d237fbdf903e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_pitch_interface.html#a3efb531b25e89181a821d237fbdf903e">AdjustPname</a> (int &amp;pname, int &amp;oct)</td></tr>
 <tr class="memdesc:a3efb531b25e89181a821d237fbdf903e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust the pname and the octave for values outside the range.  <a href="#a3efb531b25e89181a821d237fbdf903e">More...</a><br /></td></tr>
 <tr class="separator:a3efb531b25e89181a821d237fbdf903e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938c1e64f503db16125b082cc2d4e82c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_pitch_interface.html#a938c1e64f503db16125b082cc2d4e82c">CalcLoc</a> (<a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *element, <a class="el" href="classvrv_1_1_layer.html">Layer</a> *layer, bool topChordNote=true)</td></tr>
+<tr class="memdesc:a938c1e64f503db16125b082cc2d4e82c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the loc for a note, rest or chord considering its position in the layer.  <a href="#a938c1e64f503db16125b082cc2d4e82c">More...</a><br /></td></tr>
+<tr class="separator:a938c1e64f503db16125b082cc2d4e82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6d9b7ec74dba44097241bb60b365284"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_pitch_interface.html#ac6d9b7ec74dba44097241bb60b365284">CalcLoc</a> (data_PITCHNAME pname, int oct, int clefLocOffset)</td></tr>
+<tr class="memdesc:ac6d9b7ec74dba44097241bb60b365284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the loc for a pitch and octave and considerting the clef loc offset.  <a href="#ac6d9b7ec74dba44097241bb60b365284">More...</a><br /></td></tr>
+<tr class="separator:ac6d9b7ec74dba44097241bb60b365284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is an interface for elements with pitch, such as notes and neumes. </p>
@@ -191,8 +203,53 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a938c1e64f503db16125b082cc2d4e82c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a938c1e64f503db16125b082cc2d4e82c">&#9670;&nbsp;</a></span>CalcLoc() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int vrv::PitchInterface::CalcLoc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_layer.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>topChordNote</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate the loc for a note, rest or chord considering its position in the layer. </p>
+<p>By default for chord takes the top note, but the bottom note otherwise. E.g., return 0 for and C4 with clef C1, -2 with clef G2. </p>
+
+</div>
+</div>
 <a id="ac6d9b7ec74dba44097241bb60b365284"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6d9b7ec74dba44097241bb60b365284">&#9670;&nbsp;</a></span>CalcLoc()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6d9b7ec74dba44097241bb60b365284">&#9670;&nbsp;</a></span>CalcLoc() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,6 +344,27 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a558b1156e546118a81d6ed12e739f4ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a558b1156e546118a81d6ed12e739f4ab">&#9670;&nbsp;</a></span>PitchDifferenceTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vrv::PitchInterface::PitchDifferenceTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_pitch_interface.html">PitchInterface</a> *&#160;</td>
+          <td class="paramname"><em>pi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get steps between calling object and parameter. </p>
+<p>Returns calling pitch minus parameter pitch. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="pitchinterface_8h_source.html">pitchinterface.h</a></li>
 </ul>
@@ -296,7 +374,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_pitch_interface.html">PitchInterface</a></li>
-    <li class="footer">Generated on Wed May 9 2018 09:37:19 by
+    <li class="footer">Generated on Wed Jul 4 2018 23:37:08 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

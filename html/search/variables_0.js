@@ -42,7 +42,7 @@ var searchData=
   ['m_5fhaslayoutinformation',['m_hasLayoutInformation',['../classvrv_1_1_file_input_stream.html#a46152aad3fa73405859f3fab30020e10',1,'vrv::FileInputStream']]],
   ['m_5fheader',['m_header',['../classvrv_1_1_doc.html#a316c65ece6773370792d689e832ffe50',1,'vrv::Doc']]],
   ['m_5fisdeactivatedx',['m_isDeactivatedX',['../classvrv_1_1_device_context.html#a07ec2ee8e4d62cd3adb5459f9cd62a67',1,'vrv::DeviceContext']]],
-  ['m_5flevel',['m_level',['../classvrv_1_1_app.html#a06f4d332dfccd1af6fffe54fe90f1701',1,'vrv::App::m_level()'],['../classvrv_1_1_choice.html#a29b49df33bd674309c9a41f91663ce09',1,'vrv::Choice::m_level()']]],
+  ['m_5flevel',['m_level',['../classvrv_1_1_app.html#a06f4d332dfccd1af6fffe54fe90f1701',1,'vrv::App::m_level()'],['../classvrv_1_1_choice.html#a29b49df33bd674309c9a41f91663ce09',1,'vrv::Choice::m_level()'],['../classvrv_1_1_subst.html#a0fcfee6ba50b8df1d742f8a1ee56e16b',1,'vrv::Subst::m_level()']]],
   ['m_5fmeasurealigner',['m_measureAligner',['../classvrv_1_1_measure.html#a39f4319275584a57b898dcbfcbed760e',1,'vrv::Measure']]],
   ['m_5fobject',['m_object',['../classvrv_1_1_floating_positioner.html#a37c2446744eb4ae4149628468b066c5e',1,'vrv::FloatingPositioner']]],
   ['m_5foptions',['m_options',['../classvrv_1_1_view.html#a63a1674d9b36c2b1d1ccb358cc968961',1,'vrv::View']]],

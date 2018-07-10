@@ -36,7 +36,7 @@ var searchData=
   ['setscoretimeonset',['SetScoreTimeOnset',['../classvrv_1_1_beat_rpt.html#aa30a960c5be7e82620ac868a20ea89d4',1,'vrv::BeatRpt::SetScoreTimeOnset()'],['../classvrv_1_1_note.html#a0c518a751b415b97dbf5649daec5bc8a',1,'vrv::Note::SetScoreTimeOnset()']]],
   ['setstaffdefredrawflags',['SetStaffDefRedrawFlags',['../classvrv_1_1_object.html#a28b81f899cf3c244799da6f49ae3dd34',1,'vrv::Object::SetStaffDefRedrawFlags()'],['../classvrv_1_1_staff_def.html#a56d69722b3495b9e5e91d38229753caa',1,'vrv::StaffDef::SetStaffDefRedrawFlags()']]],
   ['setstartonly',['SetStartOnly',['../classvrv_1_1_time_point_interface.html#a4c3a7f2c3fd21358c4c25dbae8443f4a',1,'vrv::TimePointInterface']]],
-  ['setuuidstr',['SetUuidStr',['../classvrv_1_1_time_point_interface.html#acf47474d192a6a9c14732c4055605a6d',1,'vrv::TimePointInterface']]],
+  ['setuuidstr',['SetUuidStr',['../classvrv_1_1_linking_interface.html#a0ba4b3ed3ba51bdff6f8ef3305aa1f9b',1,'vrv::LinkingInterface::SetUuidStr()'],['../classvrv_1_1_time_point_interface.html#acf47474d192a6a9c14732c4055605a6d',1,'vrv::TimePointInterface::SetUuidStr()']]],
   ['setuuidstrs',['SetUuidStrs',['../classvrv_1_1_plist_interface.html#a38c6c2162becabf7f6f061de2c2c7b62',1,'vrv::PlistInterface']]],
   ['splitartic',['SplitArtic',['../classvrv_1_1_artic.html#ab6b401bb7dfd502eccd21bf9614bc905',1,'vrv::Artic']]],
   ['stackgraceelement',['StackGraceElement',['../classvrv_1_1_grace_aligner.html#adafd1105e2839665f24976d256653ad8',1,'vrv::GraceAligner']]],

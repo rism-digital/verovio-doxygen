@@ -79,7 +79,11 @@ var classvrv_1_1_options =
     [ "m_rightMarginRest", "classvrv_1_1_options.html#a43903ef128b090106f0ed59d79d82c44", null ],
     [ "m_rightMarginRightBarLine", "classvrv_1_1_options.html#af805838d6677ab9ad2abbee7a6f77a78", null ],
     [ "m_selectors", "classvrv_1_1_options.html#ad197649417d09e309b4e38f26fa8c21a", null ],
+    [ "m_slurControlPoints", "classvrv_1_1_options.html#aa92cbe7ceabdd6210e6ae066176a28e8", null ],
+    [ "m_slurCurveFactor", "classvrv_1_1_options.html#a514004f22db6cd842d6a38bce4e184ac", null ],
+    [ "m_slurHeightFactor", "classvrv_1_1_options.html#a481cc78411ddd72c97f3a4638937c228", null ],
     [ "m_slurMaxHeight", "classvrv_1_1_options.html#a3d13cdc0c430c9d8ff69c60a3dbdbeee", null ],
+    [ "m_slurMaxSlope", "classvrv_1_1_options.html#a7c3c2c679892af5b2d81b3d023d4a672", null ],
     [ "m_slurMinHeight", "classvrv_1_1_options.html#a053a262ff753626ff9dbe6b2157929a3", null ],
     [ "m_slurThickness", "classvrv_1_1_options.html#a114b93e333e33b544e9399f76b5297bd", null ],
     [ "m_spacingLinear", "classvrv_1_1_options.html#a8d8b753b970a8a684f08097df3e3c275", null ],
@@ -88,6 +92,7 @@ var classvrv_1_1_options =
     [ "m_spacingSystem", "classvrv_1_1_options.html#a0f1fad5d7d9357190f7642f9836f504d", null ],
     [ "m_staffLineWidth", "classvrv_1_1_options.html#abea51a72096d7e1ef5007badca46d2de", null ],
     [ "m_stemWidth", "classvrv_1_1_options.html#a28ef5b887e4b46f0577c82989a668452", null ],
+    [ "m_substXPathQuery", "classvrv_1_1_options.html#a6f72efbd2c67add68717901a20fd51c7", null ],
     [ "m_tieThickness", "classvrv_1_1_options.html#ac8544825e5f9986ce15c27cfd9a9d84e", null ],
     [ "m_unit", "classvrv_1_1_options.html#aeee4defed73cfb5cfbd17428d2b5c696", null ]
 ];
