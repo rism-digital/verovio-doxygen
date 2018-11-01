@@ -13,7 +13,7 @@ var searchData=
   ['hasmiditimemap',['HasMidiTimemap',['../classvrv_1_1_doc.html#afaf7e1be6f9e7737884383c2e20e1ee6',1,'vrv::Doc']]],
   ['hasmixeddrawingstemdir',['HasMixedDrawingStemDir',['../classvrv_1_1_system.html#a78f5b8fa8d7f7043f8547301ae24aee3',1,'vrv::System']]],
   ['hasmultiplelayer',['HasMultipleLayer',['../classvrv_1_1_alignment_reference.html#a9c1895942dd54bf9ac12b788dbf7570c',1,'vrv::AlignmentReference']]],
-  ['hasnextlink',['HasNextLink',['../classvrv_1_1_linking_interface.html#a720bbd3d60b166019278b30b8c26e004',1,'vrv::LinkingInterface']]],
+  ['hasnextlink',['HasNextLink',['../classvrv_1_1_linking_interface.html#a634bea817c5bf3e1c4e537a9d3165a63',1,'vrv::LinkingInterface']]],
   ['hasnotewithdots',['HasNoteWithDots',['../classvrv_1_1_chord.html#a9de31be09e892bc0f2ee30e52e44307c',1,'vrv::Chord']]],
   ['haspage',['HasPage',['../classvrv_1_1_doc.html#a7629eb7f06402cbd2d1ca31fbd122941',1,'vrv::Doc']]],
   ['hasstart',['HasStart',['../classvrv_1_1_time_point_interface.html#a645c1d24917af2fe9687bd41589a53b8',1,'vrv::TimePointInterface']]],

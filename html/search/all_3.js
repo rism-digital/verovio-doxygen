@@ -18,6 +18,7 @@ var searchData=
   ['dots',['Dots',['../classvrv_1_1_dots.html',1,'vrv']]],
   ['drag',['Drag',['../classvrv_1_1_toolkit.html#aa956c1056f02604d11c926fd348ae989',1,'vrv::Toolkit']]],
   ['drawcurrentpage',['DrawCurrentPage',['../classvrv_1_1_view.html#a1ab1a369039358ad7b6440c62b442ceb',1,'vrv::View']]],
+  ['drawingisvisible',['DrawingIsVisible',['../classvrv_1_1_staff.html#abb9be0b494c5daf6344dccdbfb657a55',1,'vrv::Staff']]],
   ['drawinglistinterface',['DrawingListInterface',['../classvrv_1_1_drawing_list_interface.html',1,'vrv']]],
   ['drawplaceholder',['DrawPlaceholder',['../classvrv_1_1_b_box_device_context.html#ace984ec9c99483969dbd20c27c26ff1f',1,'vrv::BBoxDeviceContext::DrawPlaceholder()'],['../classvrv_1_1_device_context.html#a98b03a16d2a3ead9ac3d7e3bafe2490d',1,'vrv::DeviceContext::DrawPlaceholder()']]],
   ['durationinterface',['DurationInterface',['../classvrv_1_1_duration_interface.html',1,'vrv']]],

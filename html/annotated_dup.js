@@ -166,6 +166,7 @@ var annotated_dup =
       [ "ObjectComparison", "classvrv_1_1_object_comparison.html", "classvrv_1_1_object_comparison" ],
       [ "ObjectListInterface", "classvrv_1_1_object_list_interface.html", "classvrv_1_1_object_list_interface" ],
       [ "Octave", "classvrv_1_1_octave.html", "classvrv_1_1_octave" ],
+      [ "OptimizeScoreDefParams", "classvrv_1_1_optimize_score_def_params.html", "classvrv_1_1_optimize_score_def_params" ],
       [ "Option", "classvrv_1_1_option.html", "classvrv_1_1_option" ],
       [ "OptionArray", "classvrv_1_1_option_array.html", "classvrv_1_1_option_array" ],
       [ "OptionBool", "classvrv_1_1_option_bool.html", "classvrv_1_1_option_bool" ],

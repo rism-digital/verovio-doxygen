@@ -22,6 +22,7 @@ var searchData=
   ['getcellheight',['GetCellHeight',['../classvrv_1_1_running_element.html#a72615f0ef616081ba1b268d35cf5d98f',1,'vrv::RunningElement']]],
   ['getchild',['GetChild',['../classvrv_1_1_object.html#a6bd78730c9d5f0302710213488708adb',1,'vrv::Object']]],
   ['getchildindex',['GetChildIndex',['../classvrv_1_1_object.html#aa187432e90c784c80ac11e25ba92161c',1,'vrv::Object']]],
+  ['getchildren',['GetChildren',['../classvrv_1_1_object.html#a78de7132f898f287a1e7365be22fee04',1,'vrv::Object']]],
   ['getchildrendalignment',['GetChildRendAlignment',['../classvrv_1_1_control_element.html#a22f1eb1bb3c79301295a80e054804fa8',1,'vrv::ControlElement']]],
   ['getclef',['GetClef',['../classvrv_1_1_layer.html#a07e4a02152c687549acfd2c5ae3eef62',1,'vrv::Layer']]],
   ['getcleflocoffset',['GetClefLocOffset',['../classvrv_1_1_clef.html#a3024936525419403269c083ac4332940',1,'vrv::Clef::GetClefLocOffset()'],['../classvrv_1_1_layer.html#ad9c8c466adf27ed39d3e4c4829a96acd',1,'vrv::Layer::GetClefLocOffset()']]],

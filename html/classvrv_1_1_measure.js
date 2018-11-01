@@ -55,6 +55,7 @@ var classvrv_1_1_measure =
     [ "GetWidth", "classvrv_1_1_measure.html#aaea9b1238acf043b2ea503ce946080a3", null ],
     [ "IsMeasuredMusic", "classvrv_1_1_measure.html#a53fc4fd98146722a9cc4784f1b9a7498", null ],
     [ "JustifyX", "classvrv_1_1_measure.html#ad0c8a3ad617244b1025761ae4b1042ca", null ],
+    [ "OptimizeScoreDef", "classvrv_1_1_measure.html#a63fafdb1d58882fc47c68f701d7cd2ba", null ],
     [ "PrepareBoundaries", "classvrv_1_1_measure.html#a951466390e4c4a3a4d47687714853f8a", null ],
     [ "PrepareCrossStaff", "classvrv_1_1_measure.html#a0e2cb2c7caca730fcd1db213e3d92e20", null ],
     [ "PrepareFloatingGrps", "classvrv_1_1_measure.html#aa9f379a505dfb64bf467d99e83e57f5e", null ],

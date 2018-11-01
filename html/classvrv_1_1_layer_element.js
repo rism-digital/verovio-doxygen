@@ -26,6 +26,7 @@ var classvrv_1_1_layer_element =
     [ "GetDrawingY", "classvrv_1_1_layer_element.html#a19ea22c5c2f0cbd87cf19430d1cedefe", null ],
     [ "GetDrawingYRel", "classvrv_1_1_layer_element.html#a4e488b36c98c828a39acab21f28cb5c9", null ],
     [ "GetGraceAlignment", "classvrv_1_1_layer_element.html#aca8dd46568873a81f46b1cbcc1c5944a", null ],
+    [ "GetLinkingInterface", "classvrv_1_1_layer_element.html#a6d3ca2b7de44fc77676a0c340e1934ae", null ],
     [ "GetScoreDefRole", "classvrv_1_1_layer_element.html#abcd8e1cf9412090b3de520f1119b7196", null ],
     [ "HasGraceAlignment", "classvrv_1_1_layer_element.html#af7dc9beccbdababcc7635ceeea73ad5b", null ],
     [ "HasToBeAligned", "classvrv_1_1_layer_element.html#a1b3d0717c72110cfd974524a9c43cafc", null ],

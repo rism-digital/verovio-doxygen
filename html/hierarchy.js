@@ -39,6 +39,9 @@ var hierarchy =
     [ "AttBasic", null, [
       [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ]
     ] ],
+    [ "AttBeamedWith", null, [
+      [ "vrv::Beam", "classvrv_1_1_beam.html", null ]
+    ] ],
     [ "AttBeamSecondary", null, [
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ]
     ] ],
@@ -299,7 +302,8 @@ var hierarchy =
     ] ],
     [ "AttLinking", null, [
       [ "vrv::LinkingInterface", "classvrv_1_1_linking_interface.html", [
-        [ "vrv::ControlElement", "classvrv_1_1_control_element.html", null ]
+        [ "vrv::ControlElement", "classvrv_1_1_control_element.html", null ],
+        [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ]
       ] ]
     ] ],
     [ "AttLyricStyle", null, [
@@ -406,6 +410,9 @@ var hierarchy =
     [ "AttOctaveDisplacement", null, [
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
       [ "vrv::Octave", "classvrv_1_1_octave.html", null ]
+    ] ],
+    [ "AttOptimization", null, [
+      [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ]
     ] ],
     [ "AttOrnamentAccid", null, [
       [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
@@ -736,6 +743,7 @@ var hierarchy =
       [ "vrv::GenerateTimemapParams", "classvrv_1_1_generate_timemap_params.html", null ],
       [ "vrv::GetAlignmentLeftRightParams", "classvrv_1_1_get_alignment_left_right_params.html", null ],
       [ "vrv::JustifyXParams", "classvrv_1_1_justify_x_params.html", null ],
+      [ "vrv::OptimizeScoreDefParams", "classvrv_1_1_optimize_score_def_params.html", null ],
       [ "vrv::PrepareBoundariesParams", "classvrv_1_1_prepare_boundaries_params.html", null ],
       [ "vrv::PrepareCrossStaffParams", "classvrv_1_1_prepare_cross_staff_params.html", null ],
       [ "vrv::PrepareFloatingGrpsParams", "classvrv_1_1_prepare_floating_grps_params.html", null ],

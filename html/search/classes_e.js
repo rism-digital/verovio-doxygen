@@ -4,6 +4,7 @@ var searchData=
   ['objectcomparison',['ObjectComparison',['../classvrv_1_1_object_comparison.html',1,'vrv']]],
   ['objectlistinterface',['ObjectListInterface',['../classvrv_1_1_object_list_interface.html',1,'vrv']]],
   ['octave',['Octave',['../classvrv_1_1_octave.html',1,'vrv']]],
+  ['optimizescoredefparams',['OptimizeScoreDefParams',['../classvrv_1_1_optimize_score_def_params.html',1,'vrv']]],
   ['option',['Option',['../classvrv_1_1_option.html',1,'vrv']]],
   ['optionarray',['OptionArray',['../classvrv_1_1_option_array.html',1,'vrv']]],
   ['optionbool',['OptionBool',['../classvrv_1_1_option_bool.html',1,'vrv']]],

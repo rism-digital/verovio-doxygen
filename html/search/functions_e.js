@@ -15,6 +15,7 @@ var searchData=
   ['setcurrentfloatingpositioner',['SetCurrentFloatingPositioner',['../classvrv_1_1_staff_alignment.html#a2509f2cdd8ef0e40f10aaca7ec29c814',1,'vrv::StaffAlignment']]],
   ['setcurrentpagenum',['SetCurrentPageNum',['../classvrv_1_1_running_element.html#a1fb0858c1b662b2c96b33c66b055b69a',1,'vrv::RunningElement']]],
   ['setcurrentscoredef',['SetCurrentScoreDef',['../classvrv_1_1_object.html#add47b63f56af38add94c019fa227e178',1,'vrv::Object']]],
+  ['setcurrentscoredefdoc',['SetCurrentScoreDefDoc',['../classvrv_1_1_doc.html#a2b94d4f6f13aaa0e38dc155ac3156b23',1,'vrv::Doc']]],
   ['setdoc',['SetDoc',['../classvrv_1_1_view.html#a851d75c2d465a1c90b7d97082b961a1b',1,'vrv::View']]],
   ['setdrawingbarlines',['SetDrawingBarLines',['../classvrv_1_1_measure.html#a3e6d67be8ba77e3cdb621f905d21e0bb',1,'vrv::Measure']]],
   ['setdrawingcautionvalues',['SetDrawingCautionValues',['../classvrv_1_1_layer.html#a5adbee5370bec875186360c8721425cd',1,'vrv::Layer']]],
