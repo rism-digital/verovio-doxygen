@@ -43,6 +43,7 @@ var files =
     [ "git_commit.h", "git__commit_8h_source.html", null ],
     [ "glyph.h", "glyph_8h_source.html", null ],
     [ "hairpin.h", "hairpin_8h_source.html", null ],
+    [ "halfmrpt.h", "halfmrpt_8h_source.html", null ],
     [ "harm.h", "harm_8h_source.html", null ],
     [ "horizontalaligner.h", "horizontalaligner_8h_source.html", null ],
     [ "instrdef.h", "instrdef_8h_source.html", null ],

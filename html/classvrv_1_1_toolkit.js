@@ -15,6 +15,7 @@ var classvrv_1_1_toolkit =
     [ "GetHumdrumFile", "classvrv_1_1_toolkit.html#ade214f7c4d835643aa13046d8ae000ef", null ],
     [ "GetLog", "classvrv_1_1_toolkit.html#a0dacf26288d829c51737cbca389c7117", null ],
     [ "GetMEI", "classvrv_1_1_toolkit.html#a43316856b410fc798d99d8637a3de206", null ],
+    [ "GetMIDIValuesForElement", "classvrv_1_1_toolkit.html#a1b7c6ef82b1ec90af16f8f32da24dd5f", null ],
     [ "GetOption", "classvrv_1_1_toolkit.html#a68c3c9a776a1ec7e9734bb7540864e49", null ],
     [ "GetOptions", "classvrv_1_1_toolkit.html#af661135bee3a565fc0606f55ec0981e7", null ],
     [ "GetOptions", "classvrv_1_1_toolkit.html#aebe87c2bdaa8388550be5529a1c72163", null ],

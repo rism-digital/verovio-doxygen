@@ -3,7 +3,6 @@ var classvrv_1_1_layer =
     [ "Layer", "classvrv_1_1_layer.html#a724dca004187b1e5246e460306d953c2", null ],
     [ "~Layer", "classvrv_1_1_layer.html#a3efb36570915aba509ae375a610699a9", null ],
     [ "AddChild", "classvrv_1_1_layer.html#aca24781dca1d322d561a2c5e2ee72815", null ],
-    [ "AdjustSylSpacing", "classvrv_1_1_layer.html#aaf533ff9e8e78f1ef778157a55507491", null ],
     [ "AlignHorizontally", "classvrv_1_1_layer.html#ab2e1b95d9f6b6be1a493a2c483094b04", null ],
     [ "AlignHorizontallyEnd", "classvrv_1_1_layer.html#aa8aa7f77d951d8ab597c1556b54e1ad9", null ],
     [ "CalcOnsetOffset", "classvrv_1_1_layer.html#aaac00d03690b56d5c5c61cc3765af867", null ],

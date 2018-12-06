@@ -7,7 +7,6 @@ var classvrv_1_1_m_num =
     [ "GetClassName", "classvrv_1_1_m_num.html#afeaf6bd7fed835dbae80952478690182", null ],
     [ "GetTextDirInterface", "classvrv_1_1_m_num.html#a77c4d3ae34b53609262b1ee5901bbfb2", null ],
     [ "GetTimePointInterface", "classvrv_1_1_m_num.html#adb3fd530961c8deddf7ce16f3ee0e502", null ],
-    [ "GetTimeSpanningInterface", "classvrv_1_1_m_num.html#ace5ce0e4b7dd84968c7ed1e71e8bd079", null ],
     [ "IsGenerated", "classvrv_1_1_m_num.html#aa01ec8b7ad75d13ad453adf6fa38fb38", null ],
     [ "IsGenerated", "classvrv_1_1_m_num.html#a34d932e08dcee83bcd2fd0f4e6babf0f", null ],
     [ "Reset", "classvrv_1_1_m_num.html#aa68a27dc8215d8698cbb608b43f9ac47", null ],

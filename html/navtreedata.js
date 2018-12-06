@@ -1,3 +1,26 @@
+/*
+@ @licstart  The following is the entire license notice for the
+JavaScript code in this file.
+
+Copyright (C) 1997-2017 by Dimitri van Heesch
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+@licend  The above is the entire license notice
+for the JavaScript code in this file
+*/
 var NAVTREE =
 [
   [ "Main Page", "index.html", [
@@ -11,8 +34,8 @@ var NAVTREE =
         [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
-    [ "Files", null, [
-      [ "File List", "files.html", "files" ]
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
@@ -20,21 +43,22 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classvrv_1_1_arpeg.html#acc23d06529c683a70382d3388e95fce2",
-"classvrv_1_1_beam_element_coord.html#ad39a98a648db43efa4ae8d382d95d06d",
-"classvrv_1_1_convert_analytical_markup_params.html#ab5b36936655d09eb1e1652b4b08b94db",
-"classvrv_1_1_drawing_list_interface.html#a92cab20a8ca65a588e6acd0facca43c9",
-"classvrv_1_1_font_info.html#a267d705a74cfb4c2a7e09cf0ee10c825",
-"classvrv_1_1_humdrum_input.html#aae05e041fe33d73f2fdb41d4072d3187",
-"classvrv_1_1_layer_element.html#abcd8e1cf9412090b3de520f1119b7196",
-"classvrv_1_1_meter_sig.html#a722370c5c8487dea8d3547a037561fd9",
-"classvrv_1_1_object.html#ab2e351247e616a3f30eaf2e3d125f054",
-"classvrv_1_1_options.html#a6f72efbd2c67add68717901a20fd51c7",
-"classvrv_1_1_prepare_time_spanning_params.html",
-"classvrv_1_1_staff.html#a172c03af3f8a3beb704f4bb35a751966",
-"classvrv_1_1_system.html#a40fab7159edc3c6a8f44a50122faaaec",
-"classvrv_1_1_tuplet.html#a9c2c58a68ca84256e200656635a12668",
-"classvrv_1_1data___m_i_d_i_v_a_l_u_e___p_a_n.html#a945d0d098d43353a01dd9ed625f61b4f"
+"classvrv_1_1_arpeg.html#a5f238eed6fd2aded2572ee35c07509be",
+"classvrv_1_1_beam_element_coord.html#a1978586c632e48599f36d1cbd484e669",
+"classvrv_1_1_control_element.html#a5f10fa01845e54916a8cc68a29ee96a6",
+"classvrv_1_1_dots.html#a659d9a38c90bf0d98afbdc83c15702b5",
+"classvrv_1_1_floating_positioner.html#a7b6fbe7862b608feb1319eeccc0129fc",
+"classvrv_1_1_humdrum_input.html#a8258a8fa6d3bf4ca3b6f98877e0ffd0c",
+"classvrv_1_1_layer_element.html#a2fb9126c18e349cefe4a66479c97f17a",
+"classvrv_1_1_measure_aligner.html#af9c8e8bed146847a7cfd14db87164ff8",
+"classvrv_1_1_object.html#a817a55b73b4356214fecf01d9da87d26",
+"classvrv_1_1_option_string.html#ad1bf524fccc2a384586a9ada26428c31",
+"classvrv_1_1_prepare_boundaries_params.html#a23fb31f49e7cfd9701a7e7a0a098b4a9",
+"classvrv_1_1_set_current_score_def_params.html#a3c994ef81d4f611dcec89a815e319dfd",
+"classvrv_1_1_svg_device_context.html#ac6a3d1d79db9edb601ea6186ba0dc9bc",
+"classvrv_1_1_toolkit.html#a321e0a62f5f15b1c5cd522fb0e514d3f",
+"classvrv_1_1_view.html#ae6004afb083cecb78e8ca94b2b7f0b99",
+"page_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

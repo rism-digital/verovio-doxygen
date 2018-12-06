@@ -1,6 +1,8 @@
 var searchData=
 [
   ['damage',['Damage',['../classvrv_1_1_damage.html',1,'vrv']]],
+  ['data_5fcompassdirection',['data_COMPASSDIRECTION',['../classvrv_1_1data___c_o_m_p_a_s_s_d_i_r_e_c_t_i_o_n.html',1,'vrv']]],
+  ['data_5feventrel',['data_EVENTREL',['../classvrv_1_1data___e_v_e_n_t_r_e_l.html',1,'vrv']]],
   ['data_5ffontsize',['data_FONTSIZE',['../classvrv_1_1data___f_o_n_t_s_i_z_e.html',1,'vrv']]],
   ['data_5fmidivalue_5fname',['data_MIDIVALUE_NAME',['../classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e.html',1,'vrv']]],
   ['data_5fmidivalue_5fpan',['data_MIDIVALUE_PAN',['../classvrv_1_1data___m_i_d_i_v_a_l_u_e___p_a_n.html',1,'vrv']]],

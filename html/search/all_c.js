@@ -44,6 +44,7 @@ var searchData=
   ['m_5fisdeactivatedx',['m_isDeactivatedX',['../classvrv_1_1_device_context.html#a07ec2ee8e4d62cd3adb5459f9cd62a67',1,'vrv::DeviceContext']]],
   ['m_5flevel',['m_level',['../classvrv_1_1_app.html#a06f4d332dfccd1af6fffe54fe90f1701',1,'vrv::App::m_level()'],['../classvrv_1_1_choice.html#a29b49df33bd674309c9a41f91663ce09',1,'vrv::Choice::m_level()'],['../classvrv_1_1_subst.html#a0fcfee6ba50b8df1d742f8a1ee56e16b',1,'vrv::Subst::m_level()']]],
   ['m_5fmeasurealigner',['m_measureAligner',['../classvrv_1_1_measure.html#a39f4319275584a57b898dcbfcbed760e',1,'vrv::Measure']]],
+  ['m_5fnextwordsyl',['m_nextWordSyl',['../classvrv_1_1_syl.html#a4361a86d6f701297177228a378b9313c',1,'vrv::Syl']]],
   ['m_5fobject',['m_object',['../classvrv_1_1_floating_positioner.html#a37c2446744eb4ae4149628468b066c5e',1,'vrv::FloatingPositioner']]],
   ['m_5foptions',['m_options',['../classvrv_1_1_view.html#a63a1674d9b36c2b1d1ccb358cc968961',1,'vrv::View']]],
   ['m_5fpageheight',['m_pageHeight',['../classvrv_1_1_page.html#a6e2bf8197d1f54f8977efbc15ea5765c',1,'vrv::Page']]],
