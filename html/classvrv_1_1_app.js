@@ -4,6 +4,7 @@ var classvrv_1_1_app =
     [ "App", "classvrv_1_1_app.html#a5f309fa01beb42fdba4cc65cb6311d4a", null ],
     [ "~App", "classvrv_1_1_app.html#a03151f608ed89d30ee7fff04fd506bc5", null ],
     [ "AddChild", "classvrv_1_1_app.html#adf95cef5fe23595f282c5132632ad586", null ],
+    [ "Clone", "classvrv_1_1_app.html#ab342926bfe019d33b4fa73f044308364", null ],
     [ "GetClassId", "classvrv_1_1_app.html#a7634a60d7072b0721f55f7ca022c42cf", null ],
     [ "GetClassName", "classvrv_1_1_app.html#a8d1d561a48a1d30f53b25f6a159b6393", null ],
     [ "GetLevel", "classvrv_1_1_app.html#a07dd8b721f08e752c19884426a183633", null ],

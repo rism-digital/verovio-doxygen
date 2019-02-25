@@ -43,22 +43,22 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classvrv_1_1_arpeg.html#a5f238eed6fd2aded2572ee35c07509be",
-"classvrv_1_1_beam_element_coord.html#a1978586c632e48599f36d1cbd484e669",
-"classvrv_1_1_control_element.html#a5f10fa01845e54916a8cc68a29ee96a6",
-"classvrv_1_1_dots.html#a659d9a38c90bf0d98afbdc83c15702b5",
-"classvrv_1_1_floating_positioner.html#a7b6fbe7862b608feb1319eeccc0129fc",
-"classvrv_1_1_humdrum_input.html#a8258a8fa6d3bf4ca3b6f98877e0ffd0c",
-"classvrv_1_1_layer_element.html#a2fb9126c18e349cefe4a66479c97f17a",
-"classvrv_1_1_measure_aligner.html#af9c8e8bed146847a7cfd14db87164ff8",
-"classvrv_1_1_object.html#a817a55b73b4356214fecf01d9da87d26",
-"classvrv_1_1_option_string.html#ad1bf524fccc2a384586a9ada26428c31",
-"classvrv_1_1_prepare_boundaries_params.html#a23fb31f49e7cfd9701a7e7a0a098b4a9",
-"classvrv_1_1_set_current_score_def_params.html#a3c994ef81d4f611dcec89a815e319dfd",
-"classvrv_1_1_svg_device_context.html#ac6a3d1d79db9edb601ea6186ba0dc9bc",
-"classvrv_1_1_toolkit.html#a321e0a62f5f15b1c5cd522fb0e514d3f",
-"classvrv_1_1_view.html#ae6004afb083cecb78e8ca94b2b7f0b99",
-"page_8h_source.html"
+"classvrv_1_1_app.html#ab342926bfe019d33b4fa73f044308364",
+"classvrv_1_1_beam_drawing_params.html#a8f9762364fda287e2876c4d750e05b96",
+"classvrv_1_1_chord.html#ae003b9ef10ebe3e78f523c72f436ca55",
+"classvrv_1_1_doc.html#aa94a58d50fbe08a45b813503678bb4ac",
+"classvrv_1_1_flag.html#a8e1b942f4c24d383ab8c5a9e71a6a02a",
+"classvrv_1_1_humdrum_input.html#a3a459374bc6abf82df87b359c00782d4",
+"classvrv_1_1_label_abbr.html#aa9166241cda070e7e97ff3329863c2cb",
+"classvrv_1_1_measure.html#a7d781ed88cc2163372144e0b14a86158",
+"classvrv_1_1_object.html#a311186b3525f994471394fcc38bbcda8",
+"classvrv_1_1_option_dbl.html#acf94ab68b69f93ff8893108c27f0811a",
+"classvrv_1_1_pen.html#a705ab4f5f9175f73de86588c7da41a95",
+"classvrv_1_1_score_def.html#a102b5f13253f242dce2723129486f4b1",
+"classvrv_1_1_stem.html#a37c6e8854a498b6caf17774615a4d4e9",
+"classvrv_1_1_text_element.html#ab922ad557ef315d4a683ec038b6ea6b9",
+"classvrv_1_1_view.html#a26c6f8d15d1397a68c848307974ea63c",
+"classvrv_1_1data___p_l_a_c_e_m_e_n_t.html#a39787b34f44279bf4528ecb702a87187"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

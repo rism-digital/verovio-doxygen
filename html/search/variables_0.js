@@ -1,6 +1,7 @@
 var searchData=
 [
   ['m_5falignment',['m_alignment',['../classvrv_1_1_floating_positioner.html#a1bca7057eeaed8bbb766a6ee4d10f84e',1,'vrv::FloatingPositioner']]],
+  ['m_5fback',['m_back',['../classvrv_1_1_doc.html#ab96acb5023fb2cdbe88b648ac7065293',1,'vrv::Doc']]],
   ['m_5fbeamelementcoord',['m_beamElementCoord',['../classvrv_1_1_layer_element.html#a9b95cac7afb86bba8d7695ebd5a960d1',1,'vrv::LayerElement']]],
   ['m_5fcacheddrawingx',['m_cachedDrawingX',['../classvrv_1_1_bounding_box.html#a4961ebaf8f99abe31ee894345cd84a16',1,'vrv::BoundingBox']]],
   ['m_5fchildren',['m_children',['../classvrv_1_1_object.html#a3f896d8fcccd24f2d443db940aa086e5',1,'vrv::Object']]],
@@ -36,6 +37,7 @@ var searchData=
   ['m_5fdrawingxrel',['m_drawingXRel',['../classvrv_1_1_floating_positioner.html#a38eda844f3a1146ed42aafe46b7cf86b',1,'vrv::FloatingPositioner::m_drawingXRel()'],['../classvrv_1_1_layer_element.html#a592cebc1769e23ff79403a675a923c65',1,'vrv::LayerElement::m_drawingXRel()'],['../classvrv_1_1_measure.html#a0f66f8a9a11ea45c967fbb796b21d91f',1,'vrv::Measure::m_drawingXRel()'],['../classvrv_1_1_system.html#ab233f37912d21801c6b4537ea8098fe2',1,'vrv::System::m_drawingXRel()']]],
   ['m_5fdrawingyrel',['m_drawingYRel',['../classvrv_1_1_floating_positioner.html#a52d529c02864d41c1b31cad82be18881',1,'vrv::FloatingPositioner::m_drawingYRel()'],['../classvrv_1_1_layer_element.html#a33f69b421d5fbe77c6e89e2da3e46b3b',1,'vrv::LayerElement::m_drawingYRel()'],['../classvrv_1_1_system.html#ab553279dd8a0432402c4a3b122973b8c',1,'vrv::System::m_drawingYRel()']]],
   ['m_5felementmargins',['m_elementMargins',['../classvrv_1_1_options.html#a61eb54b3d98171f50a13088b53ee28b0',1,'vrv::Options']]],
+  ['m_5ffront',['m_front',['../classvrv_1_1_doc.html#af7116b1917f0a7cf8ed2b9b617496082',1,'vrv::Doc']]],
   ['m_5fgeneral',['m_general',['../classvrv_1_1_options.html#a39af9494b89df90199d208bd5bd0d73c',1,'vrv::Options']]],
   ['m_5fgenerallayout',['m_generalLayout',['../classvrv_1_1_options.html#a2f2ea31f618b0fc45a40a64e637bda68',1,'vrv::Options']]],
   ['m_5fgracealignment',['m_graceAlignment',['../classvrv_1_1_layer_element.html#a6ee0bb4018d8ba684437586512ff4136',1,'vrv::LayerElement']]],

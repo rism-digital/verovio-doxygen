@@ -15,6 +15,7 @@ var searchData=
   ['toolkit',['Toolkit',['../classvrv_1_1_toolkit.html',1,'vrv::Toolkit'],['../classvrv_1_1_toolkit.html#ad009ed5b8852f67843a34c4b6fd1e3c7',1,'vrv::Toolkit::Toolkit()']]],
   ['trill',['Trill',['../classvrv_1_1_trill.html',1,'vrv']]],
   ['tuplet',['Tuplet',['../classvrv_1_1_tuplet.html',1,'vrv']]],
+  ['tupletbracket',['TupletBracket',['../classvrv_1_1_tuplet_bracket.html',1,'vrv']]],
   ['tupletnum',['TupletNum',['../classvrv_1_1_tuplet_num.html',1,'vrv']]],
   ['turn',['Turn',['../classvrv_1_1_turn.html',1,'vrv']]]
 ];

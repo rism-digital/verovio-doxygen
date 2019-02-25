@@ -76,6 +76,7 @@ var classvrv_1_1_doc =
     [ "SetOptions", "classvrv_1_1_doc.html#a737120e0423e4dcdfbab9fa19ae6a284", null ],
     [ "SetType", "classvrv_1_1_doc.html#a37e132213aabf855ee05e8c64488f474", null ],
     [ "UnCastOffDoc", "classvrv_1_1_doc.html#a60ec7810abc3f73ed1bb41e521289693", null ],
+    [ "m_back", "classvrv_1_1_doc.html#ab96acb5023fb2cdbe88b648ac7065293", null ],
     [ "m_drawingBeamMaxSlope", "classvrv_1_1_doc.html#a0acd9a295cb0a8364f55a44081197ef5", null ],
     [ "m_drawingBeamMinSlope", "classvrv_1_1_doc.html#a673c48b796b9e7d6283ea15b9fd9de05", null ],
     [ "m_drawingPageHeight", "classvrv_1_1_doc.html#acba1a54bcd73e33ed1323d233dd70582", null ],
@@ -84,6 +85,7 @@ var classvrv_1_1_doc =
     [ "m_drawingPageMarginRight", "classvrv_1_1_doc.html#a88836d316e96b0768e4554474647484d", null ],
     [ "m_drawingPageMarginTop", "classvrv_1_1_doc.html#a026209f9be82af99d6b6b76019134033", null ],
     [ "m_drawingPageWidth", "classvrv_1_1_doc.html#a5b9bd5a0e1d35561ab36f37093e219a0", null ],
+    [ "m_front", "classvrv_1_1_doc.html#af7116b1917f0a7cf8ed2b9b617496082", null ],
     [ "m_header", "classvrv_1_1_doc.html#a316c65ece6773370792d689e832ffe50", null ],
     [ "m_scoreDef", "classvrv_1_1_doc.html#a2440ae954bedb2ba82cd7e878e96cff8", null ]
 ];

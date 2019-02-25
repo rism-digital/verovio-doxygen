@@ -40,6 +40,7 @@ var searchData=
   ['getcurrenttext',['GetCurrentText',['../classvrv_1_1_num.html#ace095fb1ccb9b89830af4d75f840956d',1,'vrv::Num']]],
   ['getdiatonicpitch',['GetDiatonicPitch',['../classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f',1,'vrv::Note']]],
   ['getdrawingcuesize',['GetDrawingCueSize',['../classvrv_1_1_layer_element.html#a59337806c3fccb0be89e81e5c7ec5c0b',1,'vrv::LayerElement']]],
+  ['getdrawingleftrightxrel',['GetDrawingLeftRightXRel',['../classvrv_1_1_tuplet.html#a3cb7c9445d2e57ba155c39d1ab2ca32f',1,'vrv::Tuplet']]],
   ['getdrawinglist',['GetDrawingList',['../classvrv_1_1_drawing_list_interface.html#aa34aacdcba9480bed38f7b783094ae5f',1,'vrv::DrawingListInterface']]],
   ['getdrawingoverflow',['GetDrawingOverflow',['../classvrv_1_1_measure.html#a97daa859320700155a05dc52c400e007',1,'vrv::Measure']]],
   ['getdrawingpage',['GetDrawingPage',['../classvrv_1_1_doc.html#a04a6b8916d6e77d1acc6e370827dc532',1,'vrv::Doc']]],
@@ -131,6 +132,7 @@ var searchData=
   ['getuuid',['GetUuid',['../classvrv_1_1_toolkit.html#aaf003d6419a475cd62984eab04e72b9f',1,'vrv::Toolkit']]],
   ['getversion',['GetVersion',['../classvrv_1_1_toolkit.html#a293b23b38c10be4da8b38c4b3a769d1d',1,'vrv::Toolkit']]],
   ['getwidth',['GetWidth',['../classvrv_1_1_measure.html#aaea9b1238acf043b2ea503ce946080a3',1,'vrv::Measure']]],
+  ['getxmin',['GetXMin',['../classvrv_1_1_chord.html#a755cc9fa239cc69992391802c07f7f78',1,'vrv::Chord']]],
   ['getyextremes',['GetYExtremes',['../classvrv_1_1_chord.html#aa2eb098db501191ccbc5aa530c6b486b',1,'vrv::Chord']]],
   ['glyph',['Glyph',['../classvrv_1_1_glyph.html',1,'vrv']]],
   ['gracealigner',['GraceAligner',['../classvrv_1_1_grace_aligner.html',1,'vrv::GraceAligner'],['../classvrv_1_1_grace_aligner.html#ab08bb82df59699af188bcc229d98ea52',1,'vrv::GraceAligner::GraceAligner()']]]

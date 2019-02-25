@@ -11,6 +11,7 @@ var classvrv_1_1_staff =
     [ "ApplyPPUFactor", "classvrv_1_1_staff.html#a4da5a3d4db00bc3b2d0fe5da397dc764", null ],
     [ "CalcOnsetOffset", "classvrv_1_1_staff.html#a31043856d7ca807142154185f4f1eacd", null ],
     [ "CalcPitchPosYRel", "classvrv_1_1_staff.html#a807cc990002cfb0f520cf43b72a893e8", null ],
+    [ "CalcStem", "classvrv_1_1_staff.html#abd990f1b0d2dd8abe5864c53be8f3cfa", null ],
     [ "ClearLedgerLines", "classvrv_1_1_staff.html#a5981a4796f897d0f70600c0594bba6fa", null ],
     [ "ConvertToCastOffMensural", "classvrv_1_1_staff.html#aefef81d13f6dddad4edb00ba33e220c9", null ],
     [ "CopyChildren", "classvrv_1_1_staff.html#a5d3844f725a18937913d2f3ad19eae95", null ],

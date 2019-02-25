@@ -6,6 +6,5 @@ var classvrv_1_1_adjust_syl_spacing_params =
     [ "m_overlapingSyl", "classvrv_1_1_adjust_syl_spacing_params.html#ac8d3472ea109205bfd06c526f204e2b6", null ],
     [ "m_previousMeasure", "classvrv_1_1_adjust_syl_spacing_params.html#ae4655a78061239de91cf05789ee68921", null ],
     [ "m_previousSyl", "classvrv_1_1_adjust_syl_spacing_params.html#a0032bedc02c0627295f6361054109c77", null ],
-    [ "m_staffSize", "classvrv_1_1_adjust_syl_spacing_params.html#a88b83c6364b41eef831d0576927f2d3b", null ],
-    [ "m_wordSpace", "classvrv_1_1_adjust_syl_spacing_params.html#a9dc73c2ac14a8ec3092466c7cc77f31b", null ]
+    [ "m_staffSize", "classvrv_1_1_adjust_syl_spacing_params.html#a88b83c6364b41eef831d0576927f2d3b", null ]
 ];

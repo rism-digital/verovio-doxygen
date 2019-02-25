@@ -6,7 +6,6 @@ var classvrv_1_1_layer =
     [ "AlignHorizontally", "classvrv_1_1_layer.html#ab2e1b95d9f6b6be1a493a2c483094b04", null ],
     [ "AlignHorizontallyEnd", "classvrv_1_1_layer.html#aa8aa7f77d951d8ab597c1556b54e1ad9", null ],
     [ "CalcOnsetOffset", "classvrv_1_1_layer.html#aaac00d03690b56d5c5c61cc3765af867", null ],
-    [ "CalcStem", "classvrv_1_1_layer.html#ade8a03fdedd7f17fa67acc41b40fe5d4", null ],
     [ "ConvertToCastOffMensural", "classvrv_1_1_layer.html#ad17da9513b74e8fcfd3e8893a54da16d", null ],
     [ "ConvertToUnCastOffMensural", "classvrv_1_1_layer.html#a0c1820fbd11943a83be7d9fc85bd372c", null ],
     [ "CopyChildren", "classvrv_1_1_layer.html#a6c5cbbd855b7dc6e96f13723b1cdb698", null ],

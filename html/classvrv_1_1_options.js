@@ -11,6 +11,7 @@ var classvrv_1_1_options =
     [ "m_barLineWidth", "classvrv_1_1_options.html#ac449a9605b18639f8cd80919af8de323", null ],
     [ "m_beamMaxSlope", "classvrv_1_1_options.html#acb34a2439c346557d99368a878510357", null ],
     [ "m_beamMinSlope", "classvrv_1_1_options.html#af54a9973eae907c92bfb5d1e285449f2", null ],
+    [ "m_bottomMarginHarm", "classvrv_1_1_options.html#a857f563b1327563c916833eb3ce8a239", null ],
     [ "m_breaks", "classvrv_1_1_options.html#aab37d3899f4c42e7838ed389f946c4b3", null ],
     [ "m_choiceXPathQuery", "classvrv_1_1_options.html#a3b9c987a4dcdf48c94e242f5f46c77ff", null ],
     [ "m_defaultBottomMargin", "classvrv_1_1_options.html#aadd9a7eba2d6b83437f0f863794b1542", null ],
@@ -50,10 +51,12 @@ var classvrv_1_1_options =
     [ "m_lyricNoStartHyphen", "classvrv_1_1_options.html#a7c71920d1b69d857c51a801d942d074e", null ],
     [ "m_lyricSize", "classvrv_1_1_options.html#ad5caf6faa464e6c6306a8b182dc788a3", null ],
     [ "m_lyricTopMinMargin", "classvrv_1_1_options.html#affb7bf4abf275c12e7d05e880536f537", null ],
+    [ "m_lyricWordSpace", "classvrv_1_1_options.html#a299c0fb2289ecef0156c813cbe12356c", null ],
     [ "m_mdivXPathQuery", "classvrv_1_1_options.html#ac94939b1b904c41073c45d33a4dbea7f", null ],
     [ "m_measureMinWidth", "classvrv_1_1_options.html#aa05a631b62399492d3c89c8bc6cbae26", null ],
     [ "m_measureNumber", "classvrv_1_1_options.html#a7325a901197e1643cfdd43373210488c", null ],
     [ "m_mensuralToMeasure", "classvrv_1_1_options.html#ace0da799034ed728698c346b5c604fb3", null ],
+    [ "m_midiTempoAdjustment", "classvrv_1_1_options.html#ac5351533fcb3dc839e95adba9cafbf0d", null ],
     [ "m_mmOutput", "classvrv_1_1_options.html#af6b86f9f5c11eb1ce187ce7b90143c3f", null ],
     [ "m_noFooter", "classvrv_1_1_options.html#a9f3e7b21b401a774d42cf11e68e02a83", null ],
     [ "m_noHeader", "classvrv_1_1_options.html#a59542cd295857ad5473661c0f6a50268", null ],
@@ -98,5 +101,8 @@ var classvrv_1_1_options =
     [ "m_stemWidth", "classvrv_1_1_options.html#a28ef5b887e4b46f0577c82989a668452", null ],
     [ "m_substXPathQuery", "classvrv_1_1_options.html#a6f72efbd2c67add68717901a20fd51c7", null ],
     [ "m_tieThickness", "classvrv_1_1_options.html#ac8544825e5f9986ce15c27cfd9a9d84e", null ],
-    [ "m_unit", "classvrv_1_1_options.html#aeee4defed73cfb5cfbd17428d2b5c696", null ]
+    [ "m_topMarginHarm", "classvrv_1_1_options.html#a67a343d8c1dfe4c5432f1b49ae6ef67d", null ],
+    [ "m_unit", "classvrv_1_1_options.html#aeee4defed73cfb5cfbd17428d2b5c696", null ],
+    [ "m_usePgFooterForAll", "classvrv_1_1_options.html#af2efa96f02df7235c09c9688d8d528c9", null ],
+    [ "m_usePgHeaderForAll", "classvrv_1_1_options.html#ad7e3496eb7c557c2ed05af9fc1d6f899", null ]
 ];
