@@ -2,6 +2,7 @@ var classvrv_1_1_nc =
 [
     [ "Nc", "classvrv_1_1_nc.html#aa09f6ac62c797c72eefcabe353e1e93a", null ],
     [ "~Nc", "classvrv_1_1_nc.html#a3e524912615848fff179b6f12badb316", null ],
+    [ "Clone", "classvrv_1_1_nc.html#ad2f34a9457fcd8d4c4c46b142fba0bf2", null ],
     [ "GetClassId", "classvrv_1_1_nc.html#a8eed35c4c73391461d4e9e4c3c6a2946", null ],
     [ "GetClassName", "classvrv_1_1_nc.html#a8df2aea4fe02fd6c3abb8fa7451ca3e1", null ],
     [ "GetDurationInterface", "classvrv_1_1_nc.html#af8c719d56e68346254e026d7e7eba4ac", null ],

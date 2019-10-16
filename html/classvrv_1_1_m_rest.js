@@ -2,6 +2,7 @@ var classvrv_1_1_m_rest =
 [
     [ "MRest", "classvrv_1_1_m_rest.html#a2b0d68b7f3af6c879271e745a446caa6", null ],
     [ "~MRest", "classvrv_1_1_m_rest.html#ada9ae91fe0defb74e10f47fb0c2a6161", null ],
+    [ "Clone", "classvrv_1_1_m_rest.html#ad7be714d2e1382633bd2be562e127bc0", null ],
     [ "ConvertAnalyticalMarkup", "classvrv_1_1_m_rest.html#a83eace9b867758d7343276c83f16ea7a", null ],
     [ "GetClassId", "classvrv_1_1_m_rest.html#a673c396056144078104a468161c68eb9", null ],
     [ "GetClassName", "classvrv_1_1_m_rest.html#a92c399e5cc8e7d0649f8d0047648ecb8", null ],

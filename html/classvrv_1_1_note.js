@@ -7,6 +7,7 @@ var classvrv_1_1_note =
     [ "CalcDots", "classvrv_1_1_note.html#ad31936d93922bf87540780a67d8569eb", null ],
     [ "CalcLedgerLines", "classvrv_1_1_note.html#a67c593777c501900d80826cfcf7ed535", null ],
     [ "CalcStem", "classvrv_1_1_note.html#aa0505ca9921082084eb7aa32e38cda96", null ],
+    [ "Clone", "classvrv_1_1_note.html#a4fac2b9a8fb11c0b9b5764535eafd777", null ],
     [ "ConvertAnalyticalMarkup", "classvrv_1_1_note.html#a6b093a500bfba61fbfcb22b9ced8f59c", null ],
     [ "GenerateMIDI", "classvrv_1_1_note.html#a2bc1140c2a72c564fe0806238d7b8684", null ],
     [ "GenerateTimemap", "classvrv_1_1_note.html#a8f88949434306c66a20ed4d28d6bea85", null ],

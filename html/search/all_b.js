@@ -3,6 +3,8 @@ var searchData=
   ['label',['Label',['../classvrv_1_1_label.html',1,'vrv']]],
   ['labelabbr',['LabelAbbr',['../classvrv_1_1_label_abbr.html',1,'vrv']]],
   ['layer',['Layer',['../classvrv_1_1_layer.html',1,'vrv']]],
+  ['layercountintimespan',['LayerCountInTimeSpan',['../classvrv_1_1_layer_element.html#a4a33beb818e9013104f3b54d738d17dc',1,'vrv::LayerElement::LayerCountInTimeSpan()'],['../classvrv_1_1_mensur.html#a13788ec7feed5b0312421efbf60e5329',1,'vrv::Mensur::LayerCountInTimeSpan()'],['../classvrv_1_1_meter_sig.html#a52ae19681b0e8e94cef2481ce90312bf',1,'vrv::MeterSig::LayerCountInTimeSpan()'],['../classvrv_1_1_object.html#a9af0cce7b5db85a68ed87c274176aa66',1,'vrv::Object::LayerCountInTimeSpan()']]],
+  ['layercountintimespanparams',['LayerCountInTimeSpanParams',['../classvrv_1_1_layer_count_in_time_span_params.html',1,'vrv']]],
   ['layerelement',['LayerElement',['../classvrv_1_1_layer_element.html',1,'vrv']]],
   ['layout',['LayOut',['../classvrv_1_1_page.html#a29a3f02e9620a674f4f1f1ebdf818089',1,'vrv::Page']]],
   ['layouthorizontally',['LayOutHorizontally',['../classvrv_1_1_page.html#a81afdc28b7093b3c034b30b9d2177d7a',1,'vrv::Page']]],

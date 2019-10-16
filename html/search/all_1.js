@@ -7,6 +7,7 @@ var searchData=
   ['beamdrawingparams',['BeamDrawingParams',['../classvrv_1_1_beam_drawing_params.html',1,'vrv']]],
   ['beamelementcoord',['BeamElementCoord',['../classvrv_1_1_beam_element_coord.html',1,'vrv']]],
   ['beatrpt',['BeatRpt',['../classvrv_1_1_beat_rpt.html',1,'vrv']]],
+  ['binarycomp',['binaryComp',['../classvrv_1_1_object.html#aa63ca849b67044acc38f89a6030b03c2',1,'vrv::Object']]],
   ['boundaryend',['BoundaryEnd',['../classvrv_1_1_boundary_end.html',1,'vrv']]],
   ['boundarystartinterface',['BoundaryStartInterface',['../classvrv_1_1_boundary_start_interface.html',1,'vrv']]],
   ['boundingbox',['BoundingBox',['../classvrv_1_1_bounding_box.html',1,'vrv']]],

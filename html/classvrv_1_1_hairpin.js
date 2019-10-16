@@ -3,6 +3,7 @@ var classvrv_1_1_hairpin =
     [ "Hairpin", "classvrv_1_1_hairpin.html#a6427d72ce5409c30a4f5b0ba13fe6d95", null ],
     [ "~Hairpin", "classvrv_1_1_hairpin.html#a49d64afb7464a6b4b66b622a3fd6cc5c", null ],
     [ "CalcHeight", "classvrv_1_1_hairpin.html#a2affe62ba7e56bbb3724fb7f14c3e913", null ],
+    [ "Clone", "classvrv_1_1_hairpin.html#ad30a7a760082e1ca519a0200a56701ff", null ],
     [ "GetClassId", "classvrv_1_1_hairpin.html#a25793bd74be8581827064934c6091f4a", null ],
     [ "GetClassName", "classvrv_1_1_hairpin.html#a34ac5d23a8589f900b882d4a37bbe6ef", null ],
     [ "GetDrawingLength", "classvrv_1_1_hairpin.html#aad7782389abff0abf4eff92f45e79005", null ],

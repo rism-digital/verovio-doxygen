@@ -1,6 +1,8 @@
 var searchData=
 [
   ['f',['F',['../classvrv_1_1_f.html',1,'vrv']]],
+  ['facsimile',['Facsimile',['../classvrv_1_1_facsimile.html',1,'vrv']]],
+  ['facsimileinterface',['FacsimileInterface',['../classvrv_1_1_facsimile_interface.html',1,'vrv']]],
   ['fb',['Fb',['../classvrv_1_1_fb.html',1,'vrv']]],
   ['fermata',['Fermata',['../classvrv_1_1_fermata.html',1,'vrv']]],
   ['fig',['Fig',['../classvrv_1_1_fig.html',1,'vrv']]],
@@ -12,7 +14,6 @@ var searchData=
   ['findbycomparisonparams',['FindByComparisonParams',['../classvrv_1_1_find_by_comparison_params.html',1,'vrv']]],
   ['findbyuuidparams',['FindByUuidParams',['../classvrv_1_1_find_by_uuid_params.html',1,'vrv']]],
   ['findextremebycomparisonparams',['FindExtremeByComparisonParams',['../classvrv_1_1_find_extreme_by_comparison_params.html',1,'vrv']]],
-  ['findspaceinalignmentparams',['FindSpaceInAlignmentParams',['../classvrv_1_1_find_space_in_alignment_params.html',1,'vrv']]],
   ['findspannedlayerelementsparams',['FindSpannedLayerElementsParams',['../classvrv_1_1_find_spanned_layer_elements_params.html',1,'vrv']]],
   ['flag',['Flag',['../classvrv_1_1_flag.html',1,'vrv']]],
   ['floatingcurvepositioner',['FloatingCurvePositioner',['../classvrv_1_1_floating_curve_positioner.html',1,'vrv']]],

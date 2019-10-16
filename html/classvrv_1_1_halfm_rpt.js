@@ -2,6 +2,7 @@ var classvrv_1_1_halfm_rpt =
 [
     [ "HalfmRpt", "classvrv_1_1_halfm_rpt.html#aeacf0161adc0a59188979a75e3397e43", null ],
     [ "~HalfmRpt", "classvrv_1_1_halfm_rpt.html#ae30434e0490b1e03acfd84c70a2bb408", null ],
+    [ "Clone", "classvrv_1_1_halfm_rpt.html#a12296319004a0d194e448ee278b8b76a", null ],
     [ "GenerateMIDI", "classvrv_1_1_halfm_rpt.html#a80f34ae7921bca1727980dfa23740dd7", null ],
     [ "GetClassId", "classvrv_1_1_halfm_rpt.html#afe70004edd63842c8d78daca04822ae6", null ],
     [ "GetClassName", "classvrv_1_1_halfm_rpt.html#a8b51d0fb86a502412f2d382d34a26b7f", null ],

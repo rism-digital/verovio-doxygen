@@ -5,6 +5,7 @@ var classvrv_1_1_ending =
     [ "AddChild", "classvrv_1_1_ending.html#a2b12b38ccf841d0360311f23c90dd9a8", null ],
     [ "CastOffEncoding", "classvrv_1_1_ending.html#a337f773d94d752ac4cf20eb2e87cb4f2", null ],
     [ "CastOffSystems", "classvrv_1_1_ending.html#a90e151ed74273b4ae227d27b3b41c4d8", null ],
+    [ "Clone", "classvrv_1_1_ending.html#a35fc37132c747f6d3521c68bc19d096c", null ],
     [ "ConvertToPageBased", "classvrv_1_1_ending.html#ad02f22cea7a4925749540248da475e26", null ],
     [ "ConvertToPageBasedEnd", "classvrv_1_1_ending.html#a9dcb8acc92d09f15876bbd170ea5b026", null ],
     [ "GetClassId", "classvrv_1_1_ending.html#aa2da16ca00ba71020bf0650e9792bebe", null ],

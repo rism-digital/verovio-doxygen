@@ -9,8 +9,8 @@ var classvrv_1_1_alignment_reference =
     [ "AdjustAccidX", "classvrv_1_1_alignment_reference.html#a43fd712d1b7c968155d8869ee7116645", null ],
     [ "AdjustGraceXPos", "classvrv_1_1_alignment_reference.html#a1d1d8ec73574cab1273446e88f72d021", null ],
     [ "AdjustLayers", "classvrv_1_1_alignment_reference.html#a235100af5d136b53d38e75262a8ab901", null ],
-    [ "FindSpaceInReferenceAlignments", "classvrv_1_1_alignment_reference.html#adc32be7fb130aa6289bcecc031395c0c", null ],
     [ "GetClassId", "classvrv_1_1_alignment_reference.html#a62d722004288cf230d54c2b02e4b4619", null ],
     [ "HasMultipleLayer", "classvrv_1_1_alignment_reference.html#a9c1895942dd54bf9ac12b788dbf7570c", null ],
-    [ "Reset", "classvrv_1_1_alignment_reference.html#aadc2d7cae6429e02e91766794b4667a2", null ]
+    [ "Reset", "classvrv_1_1_alignment_reference.html#aadc2d7cae6429e02e91766794b4667a2", null ],
+    [ "UnsetCurrentScoreDef", "classvrv_1_1_alignment_reference.html#a0b6df6ceb0d88c1a7697d849e1fa3ec2", null ]
 ];

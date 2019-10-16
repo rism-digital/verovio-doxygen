@@ -9,6 +9,8 @@ var classvrv_1_1_stem =
     [ "GetDrawingStemDir", "classvrv_1_1_stem.html#ad399167bd3d45713091086372dd3f120", null ],
     [ "GetDrawingStemLen", "classvrv_1_1_stem.html#a5aa01935976a27af006afc2c8f9d814d", null ],
     [ "HasToBeAligned", "classvrv_1_1_stem.html#a37c6e8854a498b6caf17774615a4d4e9", null ],
+    [ "IsVirtual", "classvrv_1_1_stem.html#a0c1e564f8d08832e092a7536d3399b78", null ],
+    [ "IsVirtual", "classvrv_1_1_stem.html#a465d5e56923679f5c7d328c19327062c", null ],
     [ "Reset", "classvrv_1_1_stem.html#a653600afa3c68bf5002e445a6b24f9a7", null ],
     [ "ResetDrawing", "classvrv_1_1_stem.html#afa780134a7876f434ce445f725ccb36e", null ],
     [ "Save", "classvrv_1_1_stem.html#a85e737a4827ede4cc5621048db5f0b8e", null ],

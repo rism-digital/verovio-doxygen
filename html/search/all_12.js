@@ -7,6 +7,7 @@ var searchData=
   ['textelement',['TextElement',['../classvrv_1_1_text_element.html',1,'vrv']]],
   ['textextend',['TextExtend',['../classvrv_1_1_text_extend.html',1,'vrv']]],
   ['textlistinterface',['TextListInterface',['../classvrv_1_1_text_list_interface.html',1,'vrv']]],
+  ['thisorsameasaslink',['ThisOrSameasAsLink',['../classvrv_1_1_layer_element.html#a4aec9410afe12afe4a47f742dda300ac',1,'vrv::LayerElement']]],
   ['tie',['Tie',['../classvrv_1_1_tie.html',1,'vrv']]],
   ['timepointinterface',['TimePointInterface',['../classvrv_1_1_time_point_interface.html',1,'vrv']]],
   ['timespanninginterface',['TimeSpanningInterface',['../classvrv_1_1_time_spanning_interface.html',1,'vrv']]],

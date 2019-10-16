@@ -2,6 +2,7 @@ var classvrv_1_1_beat_rpt =
 [
     [ "BeatRpt", "classvrv_1_1_beat_rpt.html#a829bfa1b73afb255900e51abfef3cc85", null ],
     [ "~BeatRpt", "classvrv_1_1_beat_rpt.html#a79ec07bb69e6d14dbaa4ce8c50a56a8e", null ],
+    [ "Clone", "classvrv_1_1_beat_rpt.html#a120a95fbe727ae63e9dbcc37156b3f8e", null ],
     [ "GenerateMIDI", "classvrv_1_1_beat_rpt.html#a342926628a5badf0e3c7e85d27be005a", null ],
     [ "GetBeatRptAlignmentDuration", "classvrv_1_1_beat_rpt.html#a46d10bc1d9d4d3fae07fc25b08621b10", null ],
     [ "GetClassId", "classvrv_1_1_beat_rpt.html#aa7fe876f846f9c5f90ae308425950360", null ],

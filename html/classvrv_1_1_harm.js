@@ -3,6 +3,8 @@ var classvrv_1_1_harm =
     [ "Harm", "classvrv_1_1_harm.html#a51315c657eceb3f204ff7eb4c005f558", null ],
     [ "~Harm", "classvrv_1_1_harm.html#a50537ed4f444e523a435b7938080273e", null ],
     [ "AddChild", "classvrv_1_1_harm.html#a274cac4d91a80e41c748dcf69c393234", null ],
+    [ "AdjustHarmGrpsSpacing", "classvrv_1_1_harm.html#a916874198ae12c2140dfee6eea802958", null ],
+    [ "Clone", "classvrv_1_1_harm.html#a25542ab84d0d139b6382ed79e55a5276", null ],
     [ "GetClassId", "classvrv_1_1_harm.html#a0e70b0540ba17fcab90ce11044237215", null ],
     [ "GetClassName", "classvrv_1_1_harm.html#a8f59154cf70725cf9630c6bc7fa92a6d", null ],
     [ "GetTextDirInterface", "classvrv_1_1_harm.html#aeb213f52b78957210645243166ae4953", null ],

@@ -11,6 +11,7 @@ var searchData=
   ['adjustfloatingpositionergrpsparams',['AdjustFloatingPositionerGrpsParams',['../classvrv_1_1_adjust_floating_positioner_grps_params.html',1,'vrv']]],
   ['adjustfloatingpositionersparams',['AdjustFloatingPositionersParams',['../classvrv_1_1_adjust_floating_positioners_params.html',1,'vrv']]],
   ['adjustgracexposparams',['AdjustGraceXPosParams',['../classvrv_1_1_adjust_grace_x_pos_params.html',1,'vrv']]],
+  ['adjustharmgrpsspacingparams',['AdjustHarmGrpsSpacingParams',['../classvrv_1_1_adjust_harm_grps_spacing_params.html',1,'vrv']]],
   ['adjustlayersparams',['AdjustLayersParams',['../classvrv_1_1_adjust_layers_params.html',1,'vrv']]],
   ['adjustslursparams',['AdjustSlursParams',['../classvrv_1_1_adjust_slurs_params.html',1,'vrv']]],
   ['adjuststaffoverlapparams',['AdjustStaffOverlapParams',['../classvrv_1_1_adjust_staff_overlap_params.html',1,'vrv']]],
@@ -34,8 +35,8 @@ var searchData=
   ['articpart',['ArticPart',['../classvrv_1_1_artic_part.html',1,'vrv']]],
   ['articparttypecomparison',['ArticPartTypeComparison',['../classvrv_1_1_artic_part_type_comparison.html',1,'vrv']]],
   ['att',['Att',['../classvrv_1_1_att.html',1,'vrv']]],
-  ['attdurextreme',['AttDurExtreme',['../classvrv_1_1_att_dur_extreme.html',1,'vrv']]],
+  ['attdurextremecomparison',['AttDurExtremeComparison',['../classvrv_1_1_att_dur_extreme_comparison.html',1,'vrv']]],
+  ['attnintegeranycomparison',['AttNIntegerAnyComparison',['../classvrv_1_1_att_n_integer_any_comparison.html',1,'vrv']]],
   ['attnintegercomparison',['AttNIntegerComparison',['../classvrv_1_1_att_n_integer_comparison.html',1,'vrv']]],
-  ['attnintegercomparisonany',['AttNIntegerComparisonAny',['../classvrv_1_1_att_n_integer_comparison_any.html',1,'vrv']]],
   ['attnnumberlikecomparison',['AttNNumberLikeComparison',['../classvrv_1_1_att_n_number_like_comparison.html',1,'vrv']]]
 ];
