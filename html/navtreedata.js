@@ -23,7 +23,7 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "My Project", "index.html", [
+  [ "Verovio", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -53,14 +53,14 @@ var NAVTREEINDEX =
 "classvrv_1_1_humdrum_input.html#aa961d3fb71506f1a6b7224fd5e346d09",
 "classvrv_1_1_layer_element.html#a1a9024f996b4f7295a9b124f809bab63",
 "classvrv_1_1_measure.html#af731c117b6225ac76b540a9946a7a105",
-"classvrv_1_1_object.html#a4eec6780edc930e49d9874c1036735a4",
-"classvrv_1_1_option_int.html#a472ea1717d7e595c19f8a44f6fb573a0",
-"classvrv_1_1_pen.html#aed2f3f78a98aef17e1bab9f13dcd3ee2",
-"classvrv_1_1_score_def.html#a1225a27011925b11b208356a11bebdd3",
-"classvrv_1_1_staff_grp.html#a077f0d79e3d5cc9f39389059d6610165",
-"classvrv_1_1_tempo.html#aa553ffccdc329e97a1a5d70313e03476",
-"classvrv_1_1_unclear.html#a0a001dd044cb25c0e3836f770664c7d5",
-"classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e.html#a6258dc8a8503015b7660b522e589f403"
+"classvrv_1_1_object.html#a4dc4ba189667de40dfbb15b88adb5b0e",
+"classvrv_1_1_option_int.html#a37e7e6af414971fc70f2b836c2059017",
+"classvrv_1_1_pen.html#abefb553ea35eef07dd24bebf63be57dd",
+"classvrv_1_1_score_def.html#a102b5f13253f242dce2723129486f4b1",
+"classvrv_1_1_staff_grp.html",
+"classvrv_1_1_tempo.html#aa38e41c56cae88acab5750a2734c0fd3",
+"classvrv_1_1_unclear.html",
+"classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e.html#a602c692672af8f38d62de74153bb9847"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
