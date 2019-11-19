@@ -1,29 +1,6 @@
-/*
-@ @licstart  The following is the entire license notice for the
-JavaScript code in this file.
-
-Copyright (C) 1997-2017 by Dimitri van Heesch
-
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-
-@licend  The above is the entire license notice
-for the JavaScript code in this file
-*/
 var NAVTREE =
 [
-  [ "Verovio", "index.html", [
+  [ "Main Page", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -35,8 +12,8 @@ var NAVTREE =
         [ "Typedefs", "functions_type.html", null ]
       ] ]
     ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+    [ "Files", null, [
+      [ "File List", "files.html", "files" ]
     ] ]
   ] ]
 ];
@@ -47,20 +24,20 @@ var NAVTREEINDEX =
 "classvrv_1_1_anchored_text.html#aa4f44c9dd35ee0df9fbf250ee6efc66e",
 "classvrv_1_1_beam.html#a6b77b30f89dcc0f8b266138baa8904eb",
 "classvrv_1_1_chord.html#a6340d9df5553b11147021b3900062da5",
-"classvrv_1_1_doc.html#a61315fc07401c27bc2102a11fdb84850",
-"classvrv_1_1_f_trem.html#a9d63ea01c6f5b613c608424b9d68ccad",
-"classvrv_1_1_glyph.html",
-"classvrv_1_1_humdrum_input.html#aa961d3fb71506f1a6b7224fd5e346d09",
-"classvrv_1_1_layer_element.html#a1a9024f996b4f7295a9b124f809bab63",
-"classvrv_1_1_measure.html#af731c117b6225ac76b540a9946a7a105",
-"classvrv_1_1_object.html#a4dc4ba189667de40dfbb15b88adb5b0e",
-"classvrv_1_1_option_int.html#a37e7e6af414971fc70f2b836c2059017",
-"classvrv_1_1_pen.html#abefb553ea35eef07dd24bebf63be57dd",
-"classvrv_1_1_score_def.html#a102b5f13253f242dce2723129486f4b1",
-"classvrv_1_1_staff_grp.html",
-"classvrv_1_1_tempo.html#aa38e41c56cae88acab5750a2734c0fd3",
-"classvrv_1_1_unclear.html",
-"classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e.html#a602c692672af8f38d62de74153bb9847"
+"classvrv_1_1_doc.html#a5f945c6fccddecd1c0cedb8b49708082",
+"classvrv_1_1_f_trem.html#a8cc3bad0753705f487c1186bdcaecf80",
+"classvrv_1_1_get_alignment_left_right_params.html#af27523d799fe0fb36d1e15112e1d4159",
+"classvrv_1_1_humdrum_input.html#aa8a37ba94c89552f82f6258928df00c9",
+"classvrv_1_1_layer_element.html#a19ea22c5c2f0cbd87cf19430d1cedefe",
+"classvrv_1_1_measure.html#af0a102d6699c8d6949f3ee9a3390859b",
+"classvrv_1_1_object.html#a4d2903e69118df1b627cb99ecd036948",
+"classvrv_1_1_option_int.html#a1a52e5fe075a6cf41b7aec4c24138332",
+"classvrv_1_1_pen.html#ab4af462bde810bfe30e35e27d93bafb5",
+"classvrv_1_1_score_def.html#a0eb1eacbcf4060a8ec958d73a8d5f65e",
+"classvrv_1_1_staff_def_drawing_interface.html#aed58ecb2cd66f66cf0b83df6492fe3ac",
+"classvrv_1_1_tempo.html#a9a4204ff4a0177f32dbf5a557f1e1551",
+"classvrv_1_1_un_cast_off_params.html#aaea663f1627310ae807ce26f9a2a814a",
+"classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e.html#a5f652d45b6142dc83b098dd27cf92b69"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

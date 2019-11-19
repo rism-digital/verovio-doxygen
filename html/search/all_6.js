@@ -1,7 +1,8 @@
 var searchData=
 [
   ['generatedocumentscoredef',['GenerateDocumentScoreDef',['../classvrv_1_1_doc.html#add470d20e80b6fb3b87f5fbfb8cbd222',1,'vrv::Doc']]],
-  ['generateheaderandfooter',['GenerateHeaderAndFooter',['../classvrv_1_1_doc.html#ad006f6d1239bf4c525cecd71d7d2733b',1,'vrv::Doc']]],
+  ['generatefooter',['GenerateFooter',['../classvrv_1_1_doc.html#a0347725af90af5972681ce8a6f82c209',1,'vrv::Doc']]],
+  ['generateheader',['GenerateHeader',['../classvrv_1_1_doc.html#a1d4bc05da1139a74390eafda43eb991d',1,'vrv::Doc']]],
   ['generatemeasurenumbers',['GenerateMeasureNumbers',['../classvrv_1_1_doc.html#aa94a58d50fbe08a45b813503678bb4ac',1,'vrv::Doc']]],
   ['generatemidi',['GenerateMIDI',['../classvrv_1_1_beat_rpt.html#a342926628a5badf0e3c7e85d27be005a',1,'vrv::BeatRpt::GenerateMIDI()'],['../classvrv_1_1_halfm_rpt.html#a80f34ae7921bca1727980dfa23740dd7',1,'vrv::HalfmRpt::GenerateMIDI()'],['../classvrv_1_1_layer_element.html#a7454a0a6922a5682093047666c63102f',1,'vrv::LayerElement::GenerateMIDI()'],['../classvrv_1_1_measure.html#af0a102d6699c8d6949f3ee9a3390859b',1,'vrv::Measure::GenerateMIDI()'],['../classvrv_1_1_m_rpt.html#a59ada8011f93e34e4c7e57ef188612a9',1,'vrv::MRpt::GenerateMIDI()'],['../classvrv_1_1_note.html#a2bc1140c2a72c564fe0806238d7b8684',1,'vrv::Note::GenerateMIDI()'],['../classvrv_1_1_object.html#a426081ffba31e4251a2c36ceeb2a43ba',1,'vrv::Object::GenerateMIDI()'],['../classvrv_1_1_pedal.html#a1f4162a8567c8f86e71c158cb1344aec',1,'vrv::Pedal::GenerateMIDI()']]],
   ['generatemidiparams',['GenerateMIDIParams',['../classvrv_1_1_generate_m_i_d_i_params.html',1,'vrv']]],
