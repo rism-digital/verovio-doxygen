@@ -55,6 +55,7 @@ var classvrv_1_1_measure =
     [ "GetRightBarLineLeft", "classvrv_1_1_measure.html#abc2883e3de8cf8bfd5c2210a7ea0ccc5", null ],
     [ "GetRightBarLineRight", "classvrv_1_1_measure.html#ac302be4e65ce4567b86806ed257002d7", null ],
     [ "GetRightBarLineXRel", "classvrv_1_1_measure.html#ac1bb604df97282f84e038010d1ce3fb0", null ],
+    [ "GetTopVisibleStaff", "classvrv_1_1_measure.html#a763effb0962a66b89e7b083f1e2a10f2", null ],
     [ "GetWidth", "classvrv_1_1_measure.html#aaea9b1238acf043b2ea503ce946080a3", null ],
     [ "IsMeasuredMusic", "classvrv_1_1_measure.html#a53fc4fd98146722a9cc4784f1b9a7498", null ],
     [ "JustifyX", "classvrv_1_1_measure.html#ad0c8a3ad617244b1025761ae4b1042ca", null ],

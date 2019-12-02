@@ -29,15 +29,15 @@ var NAVTREEINDEX =
 "classvrv_1_1_get_alignment_left_right_params.html#af27523d799fe0fb36d1e15112e1d4159",
 "classvrv_1_1_humdrum_input.html#aa8a37ba94c89552f82f6258928df00c9",
 "classvrv_1_1_layer_element.html#a19ea22c5c2f0cbd87cf19430d1cedefe",
-"classvrv_1_1_measure.html#af0a102d6699c8d6949f3ee9a3390859b",
-"classvrv_1_1_object.html#a4d2903e69118df1b627cb99ecd036948",
-"classvrv_1_1_option_int.html#a1a52e5fe075a6cf41b7aec4c24138332",
-"classvrv_1_1_pen.html#ab4af462bde810bfe30e35e27d93bafb5",
-"classvrv_1_1_score_def.html#a0eb1eacbcf4060a8ec958d73a8d5f65e",
-"classvrv_1_1_staff_def_drawing_interface.html#aed58ecb2cd66f66cf0b83df6492fe3ac",
-"classvrv_1_1_tempo.html#a9a4204ff4a0177f32dbf5a557f1e1551",
-"classvrv_1_1_un_cast_off_params.html#aaea663f1627310ae807ce26f9a2a814a",
-"classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e.html#a5f652d45b6142dc83b098dd27cf92b69"
+"classvrv_1_1_measure.html#aef403edaac68db7c30caf13d1f411d31",
+"classvrv_1_1_object.html#a4bf38f527d70161c92062a2347b7c11e",
+"classvrv_1_1_option_int.html#a0ea90706dae504b7e428dbc8d7359cca",
+"classvrv_1_1_pen.html#a705ab4f5f9175f73de86588c7da41a95",
+"classvrv_1_1_score_def.html#a004881a2cfb78869dc4edd96e730344c",
+"classvrv_1_1_staff_def_drawing_interface.html#ae12b25ab8c18dc93f6c2a343e9d443d5",
+"classvrv_1_1_tempo.html#a6e765445e376927719d418b21b894441",
+"classvrv_1_1_un_cast_off_params.html",
+"classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e.html#a5890367e2a1f11fc86eac687fc3f117d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

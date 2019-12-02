@@ -134,6 +134,7 @@ var searchData=
   ['gettimestampattime',['GetTimestampAtTime',['../classvrv_1_1_timestamp_aligner.html#a7bb2cf662de501c0a64060552f0116e3',1,'vrv::TimestampAligner']]],
   ['gettimestampattralignmentduration',['GetTimestampAttrAlignmentDuration',['../classvrv_1_1_timestamp_attr.html#a31df3f579a4941c27081c35ac30ad8cd',1,'vrv::TimestampAttr']]],
   ['gettopnote',['GetTopNote',['../classvrv_1_1_chord.html#aeeb2849de0748966d70c7078bdfd4530',1,'vrv::Chord']]],
+  ['gettopvisiblestaff',['GetTopVisibleStaff',['../classvrv_1_1_measure.html#a763effb0962a66b89e7b083f1e2a10f2',1,'vrv::Measure']]],
   ['gettstampstaves',['GetTstampStaves',['../classvrv_1_1_time_point_interface.html#acc143d64530139d69ea66c3c413581d0',1,'vrv::TimePointInterface']]],
   ['gettype',['GetType',['../classvrv_1_1_doc.html#a213c6fa5fa357db062f4b86665689e44',1,'vrv::Doc']]],
   ['getunitsperem',['GetUnitsPerEm',['../classvrv_1_1_glyph.html#a9e5796c79d1e0231a409cfe7bb17606e',1,'vrv::Glyph']]],

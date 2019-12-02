@@ -106,6 +106,7 @@ var classvrv_1_1_options =
     [ "m_substXPathQuery", "classvrv_1_1_options.html#a6f72efbd2c67add68717901a20fd51c7", null ],
     [ "m_svgBoundingBoxes", "classvrv_1_1_options.html#a533ba481ca7a089c930e8bf427941e88", null ],
     [ "m_svgViewBox", "classvrv_1_1_options.html#af2c48515412786095a387d48b56258c4", null ],
+    [ "m_systemDivider", "classvrv_1_1_options.html#a8d20dd57b521de25b066003d5a306caf", null ],
     [ "m_tieThickness", "classvrv_1_1_options.html#ac8544825e5f9986ce15c27cfd9a9d84e", null ],
     [ "m_topMarginHarm", "classvrv_1_1_options.html#a67a343d8c1dfe4c5432f1b49ae6ef67d", null ],
     [ "m_unit", "classvrv_1_1_options.html#aeee4defed73cfb5cfbd17428d2b5c696", null ],
