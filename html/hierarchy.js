@@ -118,6 +118,10 @@ var hierarchy =
       [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
       [ "vrv::Tie", "classvrv_1_1_tie.html", null ]
     ] ],
+    [ "AttCurveRend", null, [
+      [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
+      [ "vrv::Tie", "classvrv_1_1_tie.html", null ]
+    ] ],
     [ "AttDistances", null, [
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
     ] ],
