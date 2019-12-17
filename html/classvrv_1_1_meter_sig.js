@@ -8,7 +8,5 @@ var classvrv_1_1_meter_sig =
     [ "HasToBeAligned", "classvrv_1_1_meter_sig.html#a4f11053c4d675bf745d2ce0d9da6ed20", null ],
     [ "IsScoreDefElement", "classvrv_1_1_meter_sig.html#aad14add6fb4178146d32028905bd02dc", null ],
     [ "LayerCountInTimeSpan", "classvrv_1_1_meter_sig.html#a52ae19681b0e8e94cef2481ce90312bf", null ],
-    [ "meterSigDefaultVisToMeterSigVis", "classvrv_1_1_meter_sig.html#a73cf1692a427667ac931806eb2b10c4c", null ],
-    [ "meterSigVisToMeterSigDefaultVis", "classvrv_1_1_meter_sig.html#a35690b3ee1bca631c7ad5ab5fecfd1ba", null ],
     [ "Reset", "classvrv_1_1_meter_sig.html#ae6ca88828841d660bdc908132b230e6b", null ]
 ];
