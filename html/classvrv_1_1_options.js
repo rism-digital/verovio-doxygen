@@ -50,7 +50,6 @@ var classvrv_1_1_options =
     [ "m_leftMarginNote", "classvrv_1_1_options.html#a7643c231a4d90546504b1d90689b7d95", null ],
     [ "m_leftMarginRest", "classvrv_1_1_options.html#aa44b3323247f238b51105a92f1e5d214", null ],
     [ "m_leftMarginRightBarLine", "classvrv_1_1_options.html#a89124dd9f0267f9864126d57b0ca2949", null ],
-    [ "m_leftPosition", "classvrv_1_1_options.html#a87ced2fb8c8dfc29c70867ec5be621e5", null ],
     [ "m_lyricHyphenLength", "classvrv_1_1_options.html#ab9cb7c56f3b7b04e25bdff161ac97dc7", null ],
     [ "m_lyricHyphenWidth", "classvrv_1_1_options.html#a9672b56567207064db2007fa2e360657", null ],
     [ "m_lyricNoStartHyphen", "classvrv_1_1_options.html#a7c71920d1b69d857c51a801d942d074e", null ],
