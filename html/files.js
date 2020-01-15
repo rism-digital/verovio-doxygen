@@ -145,6 +145,7 @@ var files =
     [ "timeinterface.h", "timeinterface_8h_source.html", null ],
     [ "timestamp.h", "timestamp_8h_source.html", null ],
     [ "toolkit.h", "toolkit_8h_source.html", null ],
+    [ "transposition.h", "transposition_8h_source.html", null ],
     [ "trill.h", "trill_8h_source.html", null ],
     [ "tuplet.h", "tuplet_8h_source.html", null ],
     [ "turn.h", "turn_8h_source.html", null ],

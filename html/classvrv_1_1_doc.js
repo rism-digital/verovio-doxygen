@@ -81,6 +81,7 @@ var classvrv_1_1_doc =
     [ "SetMensuralMusicOnly", "classvrv_1_1_doc.html#a8441cb0b67a44650505421ce5bc13bb5", null ],
     [ "SetOptions", "classvrv_1_1_doc.html#a737120e0423e4dcdfbab9fa19ae6a284", null ],
     [ "SetType", "classvrv_1_1_doc.html#a37e132213aabf855ee05e8c64488f474", null ],
+    [ "TransposeDoc", "classvrv_1_1_doc.html#a303c7a587723539a78b83f642111f2a1", null ],
     [ "UnCastOffDoc", "classvrv_1_1_doc.html#a60ec7810abc3f73ed1bb41e521289693", null ],
     [ "m_back", "classvrv_1_1_doc.html#ab96acb5023fb2cdbe88b648ac7065293", null ],
     [ "m_drawingBeamMaxSlope", "classvrv_1_1_doc.html#a0acd9a295cb0a8364f55a44081197ef5", null ],

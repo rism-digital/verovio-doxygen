@@ -110,6 +110,7 @@ var searchData=
   ['getrestglyph',['GetRestGlyph',['../classvrv_1_1_rest.html#a8fef749e4b295396a681d123634a926d',1,'vrv::Rest']]],
   ['getrestlocoffset',['GetRestLocOffset',['../classvrv_1_1_rest.html#a40b214754d02756ccf9c44cd877a8585',1,'vrv::Rest']]],
   ['getrightalignment',['GetRightAlignment',['../classvrv_1_1_measure_aligner.html#aa46abc4ed23893053af6638052db07a4',1,'vrv::MeasureAligner']]],
+  ['getrootpitch',['GetRootPitch',['../classvrv_1_1_harm.html#abfcb9c5e0fbb7149ea6267660c15cf66',1,'vrv::Harm']]],
   ['getrowheight',['GetRowHeight',['../classvrv_1_1_running_element.html#a11700a4dce46ddfea311b38b9636be16',1,'vrv::RunningElement']]],
   ['getscore',['GetScore',['../classvrv_1_1_doc.html#a9f36424c62698289922dc1944c81372b',1,'vrv::Doc']]],
   ['getsegmentcount',['GetSegmentCount',['../classvrv_1_1_segmented_line.html#a6f9e6ef9e83a6a68ad4c6cd4700a4e73',1,'vrv::SegmentedLine']]],

@@ -206,6 +206,7 @@ var classvrv_1_1_object =
     [ "SetUuid", "classvrv_1_1_object.html#a190abc310da990f676c931d272bbb434", null ],
     [ "SortChildren", "classvrv_1_1_object.html#aa8caf0942b1ff1c02f6f8e879397ca21", null ],
     [ "SwapUuid", "classvrv_1_1_object.html#af4f98c391b356cf51597e4777bf31185", null ],
+    [ "Transpose", "classvrv_1_1_object.html#a0ee02f42628df9898a57349899c1ba3e", null ],
     [ "UnCastOff", "classvrv_1_1_object.html#a84120019fd68f6d7015f6765d7114a7b", null ],
     [ "UnsetCurrentScoreDef", "classvrv_1_1_object.html#a0ca2ca9c97d370b2f80d7ce8d9e0ac45", null ],
     [ "m_children", "classvrv_1_1_object.html#a3f896d8fcccd24f2d443db940aa086e5", null ],

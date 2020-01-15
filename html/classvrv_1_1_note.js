@@ -51,5 +51,6 @@ var classvrv_1_1_note =
     [ "SetRealTimeOnsetSeconds", "classvrv_1_1_note.html#ababdf198d9f4cadb001802731f1bc79f", null ],
     [ "SetScoreTimeOffset", "classvrv_1_1_note.html#a2a7d88dd8c4f5ff265753e00fa94c574", null ],
     [ "SetScoreTimeOnset", "classvrv_1_1_note.html#a0c518a751b415b97dbf5649daec5bc8a", null ],
-    [ "SetScoreTimeTiedDuration", "classvrv_1_1_note.html#aa2980719a6e9b09b72fc4fc8756d1265", null ]
+    [ "SetScoreTimeTiedDuration", "classvrv_1_1_note.html#aa2980719a6e9b09b72fc4fc8756d1265", null ],
+    [ "Transpose", "classvrv_1_1_note.html#a2725dc432a246462217624b556ae36a7", null ]
 ];

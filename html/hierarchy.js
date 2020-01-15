@@ -827,6 +827,7 @@ var hierarchy =
       [ "vrv::SetCurrentScoreDefParams", "classvrv_1_1_set_current_score_def_params.html", null ],
       [ "vrv::SetOverflowBBoxesParams", "classvrv_1_1_set_overflow_b_boxes_params.html", null ],
       [ "vrv::SetStaffDefRedrawFlagsParams", "classvrv_1_1_set_staff_def_redraw_flags_params.html", null ],
+      [ "vrv::TransposeParams", "classvrv_1_1_transpose_params.html", null ],
       [ "vrv::UnCastOffParams", "classvrv_1_1_un_cast_off_params.html", null ],
       [ "vrv::UnsetCurrentScoreDefParams", "classvrv_1_1_unset_current_score_def_params.html", null ]
     ] ],
@@ -911,5 +912,7 @@ var hierarchy =
     [ "vrv::TextDrawingParams", "classvrv_1_1_text_drawing_params.html", null ],
     [ "vrv::TextExtend", "classvrv_1_1_text_extend.html", null ],
     [ "vrv::Toolkit", "classvrv_1_1_toolkit.html", null ],
+    [ "vrv::TransPitch", "classvrv_1_1_trans_pitch.html", null ],
+    [ "vrv::Transposer", "classvrv_1_1_transposer.html", null ],
     [ "vrv::View", "classvrv_1_1_view.html", null ]
 ];
