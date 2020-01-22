@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"classvrv_1_1_staff_def_drawing_interface.html#a182bfa04d47d929c9bbba966bee632f4":[0,0,0,253,0],
+"classvrv_1_1_staff_def_drawing_interface.html#a189c279fda5b3e2ef3941b49d103cd71":[0,0,0,253,7],
 "classvrv_1_1_staff_def_drawing_interface.html#a1c2e114513254f455cb0e19282dc9156":[0,0,0,253,1],
 "classvrv_1_1_staff_def_drawing_interface.html#a486eafb72d60c7d68b7781fb8fb7aa3c":[0,0,0,253,15],
 "classvrv_1_1_staff_def_drawing_interface.html#a4a9c0b9e08b106d8183753b06c9f4e75":[0,0,0,253,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "classvrv_1_1_system_aligner.html#a5c35dd9c6a023b5b591f99b80385c995":[0,0,0,266,8],
 "classvrv_1_1_system_aligner.html#a6aaada146129d7e4c727bb471aa8ad96":[0,0,0,266,6],
 "classvrv_1_1_system_aligner.html#a6b1062f8939a64e6fd43ab3922006a6c":[0,0,0,266,3],
-"classvrv_1_1_system_aligner.html#a9adc9a3111069c7abdb3854eaa57533d":[0,0,0,266,9],
-"classvrv_1_1_system_aligner.html#aa53dff327ac62c66aef1f78217c21113":[0,0,0,266,1],
-"classvrv_1_1_system_aligner.html#ad9a0c88c2a3bf95eee7feb4cc7dfad9f":[0,0,0,266,4]
+"classvrv_1_1_system_aligner.html#a9adc9a3111069c7abdb3854eaa57533d":[0,0,0,266,9]
 };
