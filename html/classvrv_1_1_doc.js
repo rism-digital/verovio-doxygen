@@ -65,7 +65,7 @@ var classvrv_1_1_doc =
     [ "HasMidiTimemap", "classvrv_1_1_doc.html#afaf7e1be6f9e7737884383c2e20e1ee6", null ],
     [ "HasPage", "classvrv_1_1_doc.html#a7629eb7f06402cbd2d1ca31fbd122941", null ],
     [ "IsMensuralMusicOnly", "classvrv_1_1_doc.html#aa9fb208cd70f668767cd70d0f742baca", null ],
-    [ "OptimizeScoreDefDoc", "classvrv_1_1_doc.html#a21e4236672a318db8ee12f54d20ab123", null ],
+    [ "OptimizeScoreDefDoc", "classvrv_1_1_doc.html#a0199c08ac7ad1ae97cf29bf891a05177", null ],
     [ "PrepareDrawing", "classvrv_1_1_doc.html#a957061578a058f9ddeabb0a66cf80cd8", null ],
     [ "PrepareJsonTimemap", "classvrv_1_1_doc.html#a97de6363fe90928e886aa284bb57cc39", null ],
     [ "PrepareLyricsEnd", "classvrv_1_1_doc.html#aa8a7c978b60c76370c50a6fe78667c38", null ],
