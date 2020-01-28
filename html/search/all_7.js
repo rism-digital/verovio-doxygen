@@ -9,6 +9,7 @@ var searchData=
   ['hascrossstaff',['HasCrossStaff',['../classvrv_1_1_chord.html#a53c3538256b587ed7471a977f9091a05',1,'vrv::Chord']]],
   ['hasdescendant',['HasDescendant',['../classvrv_1_1_object.html#a32d88cd25d424a5c15b014efe736ee20',1,'vrv::Object']]],
   ['haseditorialcontent',['HasEditorialContent',['../classvrv_1_1_object.html#ac9dd387934b8960b47b96a0c05bb1b84',1,'vrv::Object']]],
+  ['hasexpansionmap',['HasExpansionMap',['../classvrv_1_1_expansion_map.html#a9f6d987eb4632933ad16a516888830c2',1,'vrv::ExpansionMap']]],
   ['hasfacsimile',['HasFacsimile',['../classvrv_1_1_facsimile_interface.html#a9b6d5de555d36707d8687a3590b7d0f4',1,'vrv::FacsimileInterface']]],
   ['hasgracealigner',['HasGraceAligner',['../classvrv_1_1_alignment.html#ae694154976e041cf41059ba6274b3d79',1,'vrv::Alignment']]],
   ['hasidenticaldurationinterface',['HasIdenticalDurationInterface',['../classvrv_1_1_duration_interface.html#a4069af8ecad13f6b29e960cec642b6f5',1,'vrv::DurationInterface']]],

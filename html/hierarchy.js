@@ -756,6 +756,7 @@ var hierarchy =
       [ "vrv::EditorToolkitMensural", "classvrv_1_1_editor_toolkit_mensural.html", null ],
       [ "vrv::EditorToolkitNeume", "classvrv_1_1_editor_toolkit_neume.html", null ]
     ] ],
+    [ "vrv::ExpansionMap", "classvrv_1_1_expansion_map.html", null ],
     [ "vrv::FontInfo", "classvrv_1_1_font_info.html", null ],
     [ "vrv::Functor", "classvrv_1_1_functor.html", null ],
     [ "vrv::FunctorParams", "classvrv_1_1_functor_params.html", [

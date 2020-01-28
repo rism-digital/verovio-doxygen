@@ -101,6 +101,7 @@ var annotated_dup =
       [ "Ending", "classvrv_1_1_ending.html", "classvrv_1_1_ending" ],
       [ "Expan", "classvrv_1_1_expan.html", "classvrv_1_1_expan" ],
       [ "Expansion", "classvrv_1_1_expansion.html", "classvrv_1_1_expansion" ],
+      [ "ExpansionMap", "classvrv_1_1_expansion_map.html", "classvrv_1_1_expansion_map" ],
       [ "F", "classvrv_1_1_f.html", "classvrv_1_1_f" ],
       [ "Facsimile", "classvrv_1_1_facsimile.html", "classvrv_1_1_facsimile" ],
       [ "FacsimileInterface", "classvrv_1_1_facsimile_interface.html", "classvrv_1_1_facsimile_interface" ],

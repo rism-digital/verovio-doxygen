@@ -47,6 +47,7 @@ var files =
     [ "ending.h", "ending_8h_source.html", null ],
     [ "expan.h", "expan_8h_source.html", null ],
     [ "expansion.h", "expansion_8h_source.html", null ],
+    [ "expansionmap.h", "expansionmap_8h_source.html", null ],
     [ "f.h", "f_8h_source.html", null ],
     [ "facsimile.h", "facsimile_8h_source.html", null ],
     [ "facsimileinterface.h", "facsimileinterface_8h_source.html", null ],

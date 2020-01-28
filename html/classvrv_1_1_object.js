@@ -135,6 +135,8 @@ var classvrv_1_1_object =
     [ "IsBoundaryElement", "classvrv_1_1_object.html#a5b1d528341ef806d382cdd1c27911021", null ],
     [ "IsControlElement", "classvrv_1_1_object.html#aab9a49af1e67891dcfd1b929a6d64aa9", null ],
     [ "IsEditorialElement", "classvrv_1_1_object.html#a46776dd312ff3631580f9e0ff293d52e", null ],
+    [ "IsExpansion", "classvrv_1_1_object.html#a76f4663d1b09c5fe2b0c771eeb3f7d0e", null ],
+    [ "IsExpansion", "classvrv_1_1_object.html#a07dfe3de52f16cff12eefabe11c6cd96", null ],
     [ "IsFloatingObject", "classvrv_1_1_object.html#a3b131f39c868a8a1e9b768bdc0eae811", null ],
     [ "IsLayerElement", "classvrv_1_1_object.html#a311186b3525f994471394fcc38bbcda8", null ],
     [ "IsModified", "classvrv_1_1_object.html#a4eec6780edc930e49d9874c1036735a4", null ],

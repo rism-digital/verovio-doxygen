@@ -7,5 +7,6 @@ var searchData=
   ['editortoolkitneume',['EditorToolkitNeume',['../classvrv_1_1_editor_toolkit_neume.html',1,'vrv']]],
   ['ending',['Ending',['../classvrv_1_1_ending.html',1,'vrv']]],
   ['expan',['Expan',['../classvrv_1_1_expan.html',1,'vrv']]],
-  ['expansion',['Expansion',['../classvrv_1_1_expansion.html',1,'vrv']]]
+  ['expansion',['Expansion',['../classvrv_1_1_expansion.html',1,'vrv']]],
+  ['expansionmap',['ExpansionMap',['../classvrv_1_1_expansion_map.html',1,'vrv']]]
 ];

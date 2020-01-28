@@ -23,6 +23,7 @@ var classvrv_1_1_options =
     [ "m_defaultTopMargin", "classvrv_1_1_options.html#aefc4eff98ae3f05cdd712070aa696040", null ],
     [ "m_elementMargins", "classvrv_1_1_options.html#a61eb54b3d98171f50a13088b53ee28b0", null ],
     [ "m_evenNoteSpacing", "classvrv_1_1_options.html#a47a6b8323bcd89b41cfe0c105f4b2855", null ],
+    [ "m_expand", "classvrv_1_1_options.html#a8b723e65a35248961c4778eb630ede91", null ],
     [ "m_font", "classvrv_1_1_options.html#a02ded0c8e17a9eb4a2abaf311ca5603e", null ],
     [ "m_footer", "classvrv_1_1_options.html#a3f6b2b692977ecc6c6e30e50f704712e", null ],
     [ "m_general", "classvrv_1_1_options.html#a39af9494b89df90199d208bd5bd0d73c", null ],

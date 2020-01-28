@@ -50,7 +50,7 @@ var classvrv_1_1_measure =
     [ "GetLeftBarLineXRel", "classvrv_1_1_measure.html#a8baffbc20023e7b2c63549ae05c83323", null ],
     [ "GetMeasureIdx", "classvrv_1_1_measure.html#a576172291cab812579e24126e5151526", null ],
     [ "GetNonJustifiableLeftMargin", "classvrv_1_1_measure.html#a4f4172e322a4283c0357b60369469d2a", null ],
-    [ "GetRealTimeOffsetMilliseconds", "classvrv_1_1_measure.html#ab0a6a313db006e370bb90be3d7ece0ab", null ],
+    [ "GetRealTimeOffsetMilliseconds", "classvrv_1_1_measure.html#a2e0a2e000a3f00933d117d2257503425", null ],
     [ "GetRightBarLine", "classvrv_1_1_measure.html#a2fa5c27bb65c565c92aab2be7dbe9331", null ],
     [ "GetRightBarLineLeft", "classvrv_1_1_measure.html#abc2883e3de8cf8bfd5c2210a7ea0ccc5", null ],
     [ "GetRightBarLineRight", "classvrv_1_1_measure.html#ac302be4e65ce4567b86806ed257002d7", null ],
