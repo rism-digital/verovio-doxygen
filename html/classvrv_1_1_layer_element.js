@@ -49,7 +49,7 @@ var classvrv_1_1_layer_element =
     [ "PrepareTimePointing", "classvrv_1_1_layer_element.html#a3be9e2b87933dfacf3e4603d58053282", null ],
     [ "PrepareTimeSpanning", "classvrv_1_1_layer_element.html#a72dc4f513f06956e474ca0bfca73aeb2", null ],
     [ "Reset", "classvrv_1_1_layer_element.html#afda62d2037293f7448dc26ca2e445b68", null ],
-    [ "ResetDrawing", "classvrv_1_1_layer_element.html#a1db491b9477c7cd8b12707eef76b3f39", null ],
+    [ "ResetDrawing", "classvrv_1_1_layer_element.html#a4e0934ac589bc8c0c3a246c8ec957d6d", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_layer_element.html#ad80313afbd3e9a3d22a320cfbc6b5685", null ],
     [ "ResetVerticalAlignment", "classvrv_1_1_layer_element.html#a1911c3248161c492f5d1fdad9e429ae0", null ],
     [ "ResolveMIDITies", "classvrv_1_1_layer_element.html#a75e5001ec1a419764ece5141bf00726c", null ],
