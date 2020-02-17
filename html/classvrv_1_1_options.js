@@ -7,6 +7,7 @@ var classvrv_1_1_options =
     [ "GetItems", "classvrv_1_1_options.html#af6975fbacba7a01a6dd9b3d2bd10b49e", null ],
     [ "operator=", "classvrv_1_1_options.html#a74dc71b87ede438281effef92b0565ab", null ],
     [ "m_adjustPageHeight", "classvrv_1_1_options.html#a735a57989544427597a3861dbfb1d342", null ],
+    [ "m_adjustPageWidth", "classvrv_1_1_options.html#a9079f2d91e591e1803a88ad21b80abdf", null ],
     [ "m_appXPathQuery", "classvrv_1_1_options.html#a1c542c27c270b7daff4b7f56e6f38eaa", null ],
     [ "m_barLineWidth", "classvrv_1_1_options.html#ac449a9605b18639f8cd80919af8de323", null ],
     [ "m_beamMaxSlope", "classvrv_1_1_options.html#acb34a2439c346557d99368a878510357", null ],
