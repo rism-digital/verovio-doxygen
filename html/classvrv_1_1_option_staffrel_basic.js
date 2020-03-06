@@ -8,5 +8,5 @@ var classvrv_1_1_option_staffrel_basic =
     [ "GetStrValue", "classvrv_1_1_option_staffrel_basic.html#a3056f6cdcc8c8a84b2f955afede54624", null ],
     [ "GetValue", "classvrv_1_1_option_staffrel_basic.html#a0e7e5d6a8bc13c076f56b48724ca0265", null ],
     [ "Init", "classvrv_1_1_option_staffrel_basic.html#a45796918cc6925fb7b1ec0b234dd61b1", null ],
-    [ "SetValue", "classvrv_1_1_option_staffrel_basic.html#ac0ffe63f1db09576906457be0381fddf", null ]
+    [ "SetValue", "classvrv_1_1_option_staffrel_basic.html#a7eea6359ca4ec55120277b1a4c2a4b8b", null ]
 ];

@@ -10,7 +10,7 @@ var classvrv_1_1_option_dbl =
     [ "GetStrValue", "classvrv_1_1_option_dbl.html#a32b51075f821982fac2cbd2a322980ff", null ],
     [ "GetValue", "classvrv_1_1_option_dbl.html#a28f4e3e3168b59bd8b8e970c3e9c321f", null ],
     [ "Init", "classvrv_1_1_option_dbl.html#a4c76047d9eeae8b00c2a625c362edc49", null ],
-    [ "SetValue", "classvrv_1_1_option_dbl.html#a5383720bf1e341d49c86fba6552277a1", null ],
+    [ "SetValue", "classvrv_1_1_option_dbl.html#a7ed4524cd3242d8abc3e1e2f31a94a00", null ],
     [ "SetValue", "classvrv_1_1_option_dbl.html#ad8356d74c8a6e5e24a065be74e724150", null ],
     [ "SetValueDbl", "classvrv_1_1_option_dbl.html#a25bb4c1eaa0a5e764a3a9b816c86e09b", null ]
 ];

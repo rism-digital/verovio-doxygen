@@ -227,6 +227,7 @@ var annotated_dup =
       [ "Rdg", "classvrv_1_1_rdg.html", "classvrv_1_1_rdg" ],
       [ "Ref", "classvrv_1_1_ref.html", "classvrv_1_1_ref" ],
       [ "Reg", "classvrv_1_1_reg.html", "classvrv_1_1_reg" ],
+      [ "Reh", "classvrv_1_1_reh.html", "classvrv_1_1_reh" ],
       [ "Rend", "classvrv_1_1_rend.html", "classvrv_1_1_rend" ],
       [ "ReorderByXPosParams", "classvrv_1_1_reorder_by_x_pos_params.html", "classvrv_1_1_reorder_by_x_pos_params" ],
       [ "ReplaceDrawingValuesInStaffDefParams", "classvrv_1_1_replace_drawing_values_in_staff_def_params.html", "classvrv_1_1_replace_drawing_values_in_staff_def_params" ],

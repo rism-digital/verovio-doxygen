@@ -113,6 +113,7 @@ var files =
     [ "rdg.h", "rdg_8h_source.html", null ],
     [ "ref.h", "ref_8h_source.html", null ],
     [ "reg.h", "reg_8h_source.html", null ],
+    [ "reh.h", "reh_8h_source.html", null ],
     [ "rend.h", "rend_8h_source.html", null ],
     [ "rest.h", "rest_8h_source.html", null ],
     [ "restore.h", "restore_8h_source.html", null ],

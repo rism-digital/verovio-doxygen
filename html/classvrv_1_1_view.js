@@ -99,6 +99,7 @@ var classvrv_1_1_view =
     [ "DrawPgHeader", "classvrv_1_1_view.html#adcdff366b99d5a31b410ccba1ef96900", null ],
     [ "DrawProport", "classvrv_1_1_view.html#ad0095a78977a0f62eb9bdbe247b602fd", null ],
     [ "DrawProportFigures", "classvrv_1_1_view.html#ae6004afb083cecb78e8ca94b2b7f0b99", null ],
+    [ "DrawReh", "classvrv_1_1_view.html#aae4080234b5771317d0775f688d2c6d3", null ],
     [ "DrawRend", "classvrv_1_1_view.html#a84c4cb4dcac5576f127a73bfc7f7330d", null ],
     [ "DrawRest", "classvrv_1_1_view.html#af3bc479b7cddc1efbaa2ea086a4fd952", null ],
     [ "DrawRestBreve", "classvrv_1_1_view.html#a305e4365435e866f62c19ae8c422be3c", null ],
