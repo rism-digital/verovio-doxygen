@@ -37,7 +37,7 @@ var classvrv_1_1_staff =
     [ "SetFromFacsimile", "classvrv_1_1_staff.html#a71c2243c3a8920516443bc45557c5783", null ],
     [ "UnsetCurrentScoreDef", "classvrv_1_1_staff.html#acf6d012ff957195b4656fd1342a09154", null ],
     [ "m_drawingLines", "classvrv_1_1_staff.html#a983ca678e5969c874a018a2b3587942c", null ],
-    [ "m_drawingNotationType", "classvrv_1_1_staff.html#a16981c4e0ceb8bab404e4b5881021243", null ],
+    [ "m_drawingNotationType", "classvrv_1_1_staff.html#a51a65ab400013ddc21d125a01aa2256e", null ],
     [ "m_drawingStaffDef", "classvrv_1_1_staff.html#a4fcf7b214a32b47b0a8597d8a69089ec", null ],
     [ "m_drawingStaffSize", "classvrv_1_1_staff.html#af64a2d11ba5b97412094e00d6f908c63", null ],
     [ "m_timeSpanningElements", "classvrv_1_1_staff.html#a172c03af3f8a3beb704f4bb35a751966", null ],

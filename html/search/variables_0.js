@@ -24,7 +24,7 @@ var searchData=
   ['m_5fdrawingmeasurecount',['m_drawingMeasureCount',['../classvrv_1_1_m_rpt.html#a0c04454136a4651bc77f2f6e434f2f51',1,'vrv::MRpt']]],
   ['m_5fdrawingnbflags',['m_drawingNbFlags',['../classvrv_1_1_flag.html#a7929130917107698cecb8e3fa6f15466',1,'vrv::Flag']]],
   ['m_5fdrawingnextelement',['m_drawingNextElement',['../classvrv_1_1_dot.html#aae4b4b6d9e460978fdf9a127ab102c14',1,'vrv::Dot']]],
-  ['m_5fdrawingnotationtype',['m_drawingNotationType',['../classvrv_1_1_staff.html#a16981c4e0ceb8bab404e4b5881021243',1,'vrv::Staff']]],
+  ['m_5fdrawingnotationtype',['m_drawingNotationType',['../classvrv_1_1_staff.html#a51a65ab400013ddc21d125a01aa2256e',1,'vrv::Staff']]],
   ['m_5fdrawingnote',['m_drawingNote',['../classvrv_1_1_dot.html#a5fd307f78948cc3b6528877df704beea',1,'vrv::Dot']]],
   ['m_5fdrawingpageheight',['m_drawingPageHeight',['../classvrv_1_1_doc.html#acba1a54bcd73e33ed1323d233dd70582',1,'vrv::Doc']]],
   ['m_5fdrawingpagemarginbot',['m_drawingPageMarginBot',['../classvrv_1_1_doc.html#ac7601a96e250f7245bf9f41938c34352',1,'vrv::Doc']]],
