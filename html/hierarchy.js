@@ -591,6 +591,9 @@ var hierarchy =
     [ "AttSylLog", null, [
       [ "vrv::Syl", "classvrv_1_1_syl.html", null ]
     ] ],
+    [ "AttSystems", null, [
+      [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ]
+    ] ],
     [ "AttTextRendition", null, [
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ]
     ] ],
