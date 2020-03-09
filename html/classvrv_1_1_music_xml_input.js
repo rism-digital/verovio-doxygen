@@ -1,7 +1,6 @@
 var classvrv_1_1_music_xml_input =
 [
-    [ "MusicXmlInput", "classvrv_1_1_music_xml_input.html#a4bebb0f3d2033f44e03d8ef89369af77", null ],
+    [ "MusicXmlInput", "classvrv_1_1_music_xml_input.html#aceb2632ff8c6a962087f8f768f20f355", null ],
     [ "~MusicXmlInput", "classvrv_1_1_music_xml_input.html#a43c6dfa399db2476b24a9d36134d2edb", null ],
-    [ "ImportFile", "classvrv_1_1_music_xml_input.html#afa17ef89fc362f82a93b331fa4bc5733", null ],
-    [ "ImportString", "classvrv_1_1_music_xml_input.html#a10a0dd41b9b5b0fb418454eb6ace9897", null ]
+    [ "Import", "classvrv_1_1_music_xml_input.html#a0958a62f484f7427c8bbd341fc2cff6a", null ]
 ];

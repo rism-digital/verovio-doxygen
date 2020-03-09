@@ -15,6 +15,7 @@ var searchData=
   ['pitchinterface',['PitchInterface',['../classvrv_1_1_pitch_interface.html',1,'vrv']]],
   ['plistinterface',['PlistInterface',['../classvrv_1_1_plist_interface.html',1,'vrv']]],
   ['point',['Point',['../classvrv_1_1_point.html',1,'vrv']]],
+  ['pointingtocomparison',['PointingToComparison',['../classvrv_1_1_pointing_to_comparison.html',1,'vrv']]],
   ['positioninchord',['PositionInChord',['../classvrv_1_1_chord.html#ad9046f9798eab922478f13c533e5e22f',1,'vrv::Chord']]],
   ['positioninligature',['PositionInLigature',['../classvrv_1_1_ligature.html#a8bab53f0b12355d5250c75c6de55f80e',1,'vrv::Ligature']]],
   ['positioninterface',['PositionInterface',['../classvrv_1_1_position_interface.html',1,'vrv']]],

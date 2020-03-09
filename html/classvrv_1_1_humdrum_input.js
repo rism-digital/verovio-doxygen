@@ -1,6 +1,6 @@
 var classvrv_1_1_humdrum_input =
 [
-    [ "HumdrumInput", "classvrv_1_1_humdrum_input.html#adeee7f4f47b136767ea3940c3130dc74", null ],
+    [ "HumdrumInput", "classvrv_1_1_humdrum_input.html#a2306faaf6a47b0b5dbb23beadf43df24", null ],
     [ "~HumdrumInput", "classvrv_1_1_humdrum_input.html#abb67aed16d8d1fe9ba31d0d1987bacf5", null ],
     [ "addArpeggio", "classvrv_1_1_humdrum_input.html#ab18231c76dd68ab8ceb917d4765fd3d0", null ],
     [ "addArticulations", "classvrv_1_1_humdrum_input.html#a902de02f98825c4f59e4b94ad74dae7a", null ],
@@ -144,8 +144,7 @@ var classvrv_1_1_humdrum_input =
     [ "hasBelowParameter", "classvrv_1_1_humdrum_input.html#a06c7b5ea0287b3f113914dad89342515", null ],
     [ "hasFullMeasureRest", "classvrv_1_1_humdrum_input.html#a83514e05e714e77817ac90f8856c89f3", null ],
     [ "hasIndent", "classvrv_1_1_humdrum_input.html#a9e7ed83460801c264643a78009ddfe12", null ],
-    [ "ImportFile", "classvrv_1_1_humdrum_input.html#a6208cde64909f937dde33110b63700c1", null ],
-    [ "ImportString", "classvrv_1_1_humdrum_input.html#a9020657aac299210a0b44f41880c1ef7", null ],
+    [ "Import", "classvrv_1_1_humdrum_input.html#a3a67f681e9a3f1da8e5ef0f8c02a9c7a", null ],
     [ "initializeIgnoreVector", "classvrv_1_1_humdrum_input.html#aafa817cf0f910dfc7e6e48b73c3b7f57", null ],
     [ "initializeSpineColor", "classvrv_1_1_humdrum_input.html#a69f54bc4a7b9dff130605e8761b8397d", null ],
     [ "insertBeam", "classvrv_1_1_humdrum_input.html#a1ca98bb64c14a6248135276f8b96e163", null ],

@@ -736,7 +736,8 @@ var hierarchy =
         [ "vrv::IsEmptyComparison", "classvrv_1_1_is_empty_comparison.html", null ],
         [ "vrv::MeasureAlignerTypeComparison", "classvrv_1_1_measure_aligner_type_comparison.html", null ],
         [ "vrv::MeasureOnsetOffsetComparison", "classvrv_1_1_measure_onset_offset_comparison.html", null ],
-        [ "vrv::NoteOnsetOffsetComparison", "classvrv_1_1_note_onset_offset_comparison.html", null ]
+        [ "vrv::NoteOnsetOffsetComparison", "classvrv_1_1_note_onset_offset_comparison.html", null ],
+        [ "vrv::PointingToComparison", "classvrv_1_1_pointing_to_comparison.html", null ]
       ] ],
       [ "vrv::ClassIdsComparison", "classvrv_1_1_class_ids_comparison.html", null ],
       [ "vrv::InterfaceComparison", "classvrv_1_1_interface_comparison.html", null ],
@@ -842,13 +843,11 @@ var hierarchy =
     ] ],
     [ "vrv::Glyph", "classvrv_1_1_glyph.html", null ],
     [ "vrv::HumdrumSignifiers", "classvrv_1_1_humdrum_signifiers.html", null ],
-    [ "ifstream", null, [
-      [ "vrv::FileInputStream", "classvrv_1_1_file_input_stream.html", [
-        [ "vrv::AbcInput", "classvrv_1_1_abc_input.html", null ],
-        [ "vrv::HumdrumInput", "classvrv_1_1_humdrum_input.html", null ],
-        [ "vrv::MeiInput", "classvrv_1_1_mei_input.html", null ],
-        [ "vrv::MusicXmlInput", "classvrv_1_1_music_xml_input.html", null ]
-      ] ]
+    [ "vrv::Input", "classvrv_1_1_input.html", [
+      [ "vrv::ABCInput", "classvrv_1_1_a_b_c_input.html", null ],
+      [ "vrv::HumdrumInput", "classvrv_1_1_humdrum_input.html", null ],
+      [ "vrv::MEIInput", "classvrv_1_1_m_e_i_input.html", null ],
+      [ "vrv::MusicXmlInput", "classvrv_1_1_music_xml_input.html", null ]
     ] ],
     [ "vrv::Interface", "classvrv_1_1_interface.html", [
       [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", null ],
@@ -889,11 +888,6 @@ var hierarchy =
       ] ],
       [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ]
     ] ],
-    [ "ofstream", null, [
-      [ "vrv::FileOutputStream", "classvrv_1_1_file_output_stream.html", [
-        [ "vrv::MeiOutput", "classvrv_1_1_mei_output.html", null ]
-      ] ]
-    ] ],
     [ "vrv::Option", "classvrv_1_1_option.html", [
       [ "vrv::OptionArray", "classvrv_1_1_option_array.html", null ],
       [ "vrv::OptionBool", "classvrv_1_1_option_bool.html", null ],
@@ -906,6 +900,9 @@ var hierarchy =
     ] ],
     [ "vrv::OptionGrp", "classvrv_1_1_option_grp.html", null ],
     [ "vrv::Options", "classvrv_1_1_options.html", null ],
+    [ "vrv::Output", "classvrv_1_1_output.html", [
+      [ "vrv::MEIOutput", "classvrv_1_1_m_e_i_output.html", null ]
+    ] ],
     [ "vrv::Pen", "classvrv_1_1_pen.html", null ],
     [ "vrv::Point", "classvrv_1_1_point.html", null ],
     [ "vrv::Resources", "classvrv_1_1_resources.html", null ],

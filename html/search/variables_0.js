@@ -44,7 +44,7 @@ var searchData=
   ['m_5fgeneral',['m_general',['../classvrv_1_1_options.html#a39af9494b89df90199d208bd5bd0d73c',1,'vrv::Options']]],
   ['m_5fgenerallayout',['m_generalLayout',['../classvrv_1_1_options.html#a2f2ea31f618b0fc45a40a64e637bda68',1,'vrv::Options']]],
   ['m_5fgracealignment',['m_graceAlignment',['../classvrv_1_1_layer_element.html#a6ee0bb4018d8ba684437586512ff4136',1,'vrv::LayerElement']]],
-  ['m_5fhaslayoutinformation',['m_hasLayoutInformation',['../classvrv_1_1_file_input_stream.html#a46152aad3fa73405859f3fab30020e10',1,'vrv::FileInputStream']]],
+  ['m_5fhaslayoutinformation',['m_hasLayoutInformation',['../classvrv_1_1_input.html#ae5b786823e4fef5ca80a48530513919c',1,'vrv::Input']]],
   ['m_5fheader',['m_header',['../classvrv_1_1_doc.html#a316c65ece6773370792d689e832ffe50',1,'vrv::Doc']]],
   ['m_5fisdeactivatedx',['m_isDeactivatedX',['../classvrv_1_1_device_context.html#a07ec2ee8e4d62cd3adb5459f9cd62a67',1,'vrv::DeviceContext']]],
   ['m_5flevel',['m_level',['../classvrv_1_1_app.html#a06f4d332dfccd1af6fffe54fe90f1701',1,'vrv::App::m_level()'],['../classvrv_1_1_choice.html#a29b49df33bd674309c9a41f91663ce09',1,'vrv::Choice::m_level()'],['../classvrv_1_1_subst.html#a0fcfee6ba50b8df1d742f8a1ee56e16b',1,'vrv::Subst::m_level()']]],

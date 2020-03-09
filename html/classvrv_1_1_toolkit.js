@@ -37,6 +37,8 @@ var classvrv_1_1_toolkit =
     [ "RenderToDeviceContext", "classvrv_1_1_toolkit.html#aa6f27919ec3642d4da89408f8143f51d", null ],
     [ "RenderToMIDI", "classvrv_1_1_toolkit.html#a24988e48cc901661fd4db03ec9f756e9", null ],
     [ "RenderToMIDIFile", "classvrv_1_1_toolkit.html#a298894afff860e0675f2ca3b199fda98", null ],
+    [ "RenderToPAE", "classvrv_1_1_toolkit.html#a572174dc1e44773a2ab83a0ac79b479c", null ],
+    [ "RenderToPAEFile", "classvrv_1_1_toolkit.html#a4360e00f3093a9360bf231e3d7f48c5f", null ],
     [ "RenderToSVG", "classvrv_1_1_toolkit.html#a8bbb4ba84ababad72248b9515cdd6348", null ],
     [ "RenderToSVGFile", "classvrv_1_1_toolkit.html#a3ff0a3aa8deeef77c291d496ee0d2959", null ],
     [ "RenderToTimemap", "classvrv_1_1_toolkit.html#a4172ff70b76b47701fdab68c7ee2f12d", null ],

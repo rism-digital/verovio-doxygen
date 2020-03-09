@@ -6,8 +6,6 @@ var searchData=
   ['fb',['Fb',['../classvrv_1_1_fb.html',1,'vrv']]],
   ['fermata',['Fermata',['../classvrv_1_1_fermata.html',1,'vrv']]],
   ['fig',['Fig',['../classvrv_1_1_fig.html',1,'vrv']]],
-  ['fileinputstream',['FileInputStream',['../classvrv_1_1_file_input_stream.html',1,'vrv']]],
-  ['fileoutputstream',['FileOutputStream',['../classvrv_1_1_file_output_stream.html',1,'vrv']]],
   ['fillflatlist',['FillFlatList',['../classvrv_1_1_object.html#a3749f83f36adfc8748438ca17b1e5f91',1,'vrv::Object']]],
   ['fillmap',['FillMap',['../classvrv_1_1_key_sig.html#a28a387bd776ffa1cdb1438f1e98448f1',1,'vrv::KeySig']]],
   ['fillstaffcurrenttimespanning',['FillStaffCurrentTimeSpanning',['../classvrv_1_1_f.html#a52eb7173a2889ce5fca5907f13a5d8c7',1,'vrv::F::FillStaffCurrentTimeSpanning()'],['../classvrv_1_1_floating_object.html#a26acefe41b29aa28c85eb244f624d2c1',1,'vrv::FloatingObject::FillStaffCurrentTimeSpanning()'],['../classvrv_1_1_object.html#a75266bd3b8cdd0db529367a5f9f16450',1,'vrv::Object::FillStaffCurrentTimeSpanning()'],['../classvrv_1_1_staff.html#a0315f172bfa34a1b25afa4a62e77db09',1,'vrv::Staff::FillStaffCurrentTimeSpanning()'],['../classvrv_1_1_syl.html#a97f982b99f0becd3d207dcb7c621636a',1,'vrv::Syl::FillStaffCurrentTimeSpanning()']]],

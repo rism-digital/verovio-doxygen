@@ -10,6 +10,8 @@ var searchData=
   ['rendertodevicecontext',['RenderToDeviceContext',['../classvrv_1_1_toolkit.html#aa6f27919ec3642d4da89408f8143f51d',1,'vrv::Toolkit']]],
   ['rendertomidi',['RenderToMIDI',['../classvrv_1_1_toolkit.html#a24988e48cc901661fd4db03ec9f756e9',1,'vrv::Toolkit']]],
   ['rendertomidifile',['RenderToMIDIFile',['../classvrv_1_1_toolkit.html#a298894afff860e0675f2ca3b199fda98',1,'vrv::Toolkit']]],
+  ['rendertopae',['RenderToPAE',['../classvrv_1_1_toolkit.html#a572174dc1e44773a2ab83a0ac79b479c',1,'vrv::Toolkit']]],
+  ['rendertopaefile',['RenderToPAEFile',['../classvrv_1_1_toolkit.html#a4360e00f3093a9360bf231e3d7f48c5f',1,'vrv::Toolkit']]],
   ['rendertosvg',['RenderToSVG',['../classvrv_1_1_toolkit.html#a8bbb4ba84ababad72248b9515cdd6348',1,'vrv::Toolkit']]],
   ['rendertosvgfile',['RenderToSVGFile',['../classvrv_1_1_toolkit.html#a3ff0a3aa8deeef77c291d496ee0d2959',1,'vrv::Toolkit']]],
   ['rendertotimemap',['RenderToTimemap',['../classvrv_1_1_toolkit.html#a4172ff70b76b47701fdab68c7ee2f12d',1,'vrv::Toolkit']]],

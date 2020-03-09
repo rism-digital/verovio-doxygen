@@ -12,7 +12,7 @@ var searchData=
   ['hasidenticaldurationinterface',['HasIdenticalDurationInterface',['../classvrv_1_1_duration_interface.html#a4069af8ecad13f6b29e960cec642b6f5',1,'vrv::DurationInterface']]],
   ['hasidenticalpitchinterface',['HasIdenticalPitchInterface',['../classvrv_1_1_pitch_interface.html#a2851d8a28d8129f3301f2367a3302f1a',1,'vrv::PitchInterface']]],
   ['hasidenticalpositioninterface',['HasIdenticalPositionInterface',['../classvrv_1_1_position_interface.html#a932d3221b8cd285116ffde54bc7a17e8',1,'vrv::PositionInterface']]],
-  ['haslayoutinformation',['HasLayoutInformation',['../classvrv_1_1_file_input_stream.html#aaab137b06a33e650c5a4b85f29dbac4a',1,'vrv::FileInputStream']]],
+  ['haslayoutinformation',['HasLayoutInformation',['../classvrv_1_1_input.html#ab983f3a606f7a2675d4c002260439123',1,'vrv::Input']]],
   ['hasmiditimemap',['HasMidiTimemap',['../classvrv_1_1_doc.html#afaf7e1be6f9e7737884383c2e20e1ee6',1,'vrv::Doc']]],
   ['hasmixeddrawingstemdir',['HasMixedDrawingStemDir',['../classvrv_1_1_system.html#a78f5b8fa8d7f7043f8547301ae24aee3',1,'vrv::System']]],
   ['hasmultiplelayer',['HasMultipleLayer',['../classvrv_1_1_alignment_reference.html#a9c1895942dd54bf9ac12b788dbf7570c',1,'vrv::AlignmentReference']]],
