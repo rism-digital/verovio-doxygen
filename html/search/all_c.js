@@ -94,6 +94,7 @@ var searchData=
   ['mrest',['MRest',['../classvrv_1_1_m_rest.html',1,'vrv']]],
   ['mrpt',['MRpt',['../classvrv_1_1_m_rpt.html',1,'vrv']]],
   ['mrpt2',['MRpt2',['../classvrv_1_1_m_rpt2.html',1,'vrv']]],
+  ['mspace',['MSpace',['../classvrv_1_1_m_space.html',1,'vrv']]],
   ['multirest',['MultiRest',['../classvrv_1_1_multi_rest.html',1,'vrv']]],
   ['multirpt',['MultiRpt',['../classvrv_1_1_multi_rpt.html',1,'vrv']]],
   ['musicxmlinput',['MusicXmlInput',['../classvrv_1_1_music_xml_input.html',1,'vrv']]]

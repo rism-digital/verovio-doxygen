@@ -172,6 +172,7 @@ var annotated_dup =
       [ "MRest", "classvrv_1_1_m_rest.html", "classvrv_1_1_m_rest" ],
       [ "MRpt", "classvrv_1_1_m_rpt.html", "classvrv_1_1_m_rpt" ],
       [ "MRpt2", "classvrv_1_1_m_rpt2.html", "classvrv_1_1_m_rpt2" ],
+      [ "MSpace", "classvrv_1_1_m_space.html", "classvrv_1_1_m_space" ],
       [ "MultiRest", "classvrv_1_1_multi_rest.html", "classvrv_1_1_multi_rest" ],
       [ "MultiRpt", "classvrv_1_1_multi_rpt.html", "classvrv_1_1_multi_rpt" ],
       [ "MusicXmlInput", "classvrv_1_1_music_xml_input.html", "classvrv_1_1_music_xml_input" ],

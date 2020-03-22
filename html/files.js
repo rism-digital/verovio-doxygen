@@ -88,6 +88,7 @@ var files =
     [ "mrest.h", "mrest_8h_source.html", null ],
     [ "mrpt.h", "mrpt_8h_source.html", null ],
     [ "mrpt2.h", "mrpt2_8h_source.html", null ],
+    [ "mspace.h", "mspace_8h_source.html", null ],
     [ "multirest.h", "multirest_8h_source.html", null ],
     [ "multirpt.h", "multirpt_8h_source.html", null ],
     [ "nc.h", "nc_8h_source.html", null ],

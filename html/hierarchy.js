@@ -26,6 +26,7 @@ var hierarchy =
       [ "vrv::Dots", "classvrv_1_1_dots.html", null ],
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", [
         [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
+        [ "vrv::MSpace", "classvrv_1_1_m_space.html", null ],
         [ "vrv::Nc", "classvrv_1_1_nc.html", null ],
         [ "vrv::Note", "classvrv_1_1_note.html", null ],
         [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
@@ -183,6 +184,7 @@ var hierarchy =
           [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
           [ "vrv::MRpt", "classvrv_1_1_m_rpt.html", null ],
           [ "vrv::MRpt2", "classvrv_1_1_m_rpt2.html", null ],
+          [ "vrv::MSpace", "classvrv_1_1_m_space.html", null ],
           [ "vrv::MultiRest", "classvrv_1_1_multi_rest.html", null ],
           [ "vrv::MultiRpt", "classvrv_1_1_multi_rpt.html", null ],
           [ "vrv::Nc", "classvrv_1_1_nc.html", null ],
