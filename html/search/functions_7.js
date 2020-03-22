@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['initcoords',['InitCoords',['../classvrv_1_1_beam.html#ac67b7923596604a487ed1ee643307bb9',1,'vrv::Beam::InitCoords()'],['../classvrv_1_1_f_trem.html#a1929e89ee90aec32ae1b737e70ac41db',1,'vrv::FTrem::InitCoords()']]],
+  ['initcoordrefs',['InitCoordRefs',['../classvrv_1_1_beam_segment.html#aae2d6f202398b11757729b803cad00fd',1,'vrv::BeamSegment']]],
+  ['initcoords',['InitCoords',['../classvrv_1_1_beam_drawing_interface.html#a77537490027ed7685e9a711caa8a5300',1,'vrv::BeamDrawingInterface']]],
   ['initfonts',['InitFonts',['../classvrv_1_1_resources.html#adf153b2fb62a2d1e2e45d566d13eaae7',1,'vrv::Resources']]],
   ['inittextfont',['InitTextFont',['../classvrv_1_1_resources.html#a4626f61f7fab55505af7e0f8b153fe00',1,'vrv::Resources']]],
   ['insertchild',['InsertChild',['../classvrv_1_1_object.html#ac14929dac6e5b5e699d16ba7fc258d9d',1,'vrv::Object']]],

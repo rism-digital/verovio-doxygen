@@ -4,14 +4,12 @@ var classvrv_1_1_f_trem =
     [ "~FTrem", "classvrv_1_1_f_trem.html#a9d63ea01c6f5b613c608424b9d68ccad", null ],
     [ "AddChild", "classvrv_1_1_f_trem.html#abb8be6995dab20cdff23f51815b59053", null ],
     [ "CalcStem", "classvrv_1_1_f_trem.html#a3499df150aa0a0c368444f06e2de2cce", null ],
-    [ "ClearCoords", "classvrv_1_1_f_trem.html#af7cc5477ab63bedbe850950c327fb041", null ],
     [ "Clone", "classvrv_1_1_f_trem.html#a1181f23b4370b0bd175e606847a130df", null ],
     [ "FilterList", "classvrv_1_1_f_trem.html#af2adaa2dc99d95d46f61f27b0de95469", null ],
     [ "GetClassId", "classvrv_1_1_f_trem.html#a7bdd9a33fbda39c95fc449a86627b4a3", null ],
     [ "GetClassName", "classvrv_1_1_f_trem.html#afa1e493c18d2ef33388f92b50181bd0b", null ],
-    [ "GetElementCoords", "classvrv_1_1_f_trem.html#a2e5f7d17b592c5b9cb645c1179db45e7", null ],
-    [ "InitCoords", "classvrv_1_1_f_trem.html#a1929e89ee90aec32ae1b737e70ac41db", null ],
+    [ "GetElementCoords", "classvrv_1_1_f_trem.html#abe34526b692174e71058933cbd6a13f7", null ],
     [ "Reset", "classvrv_1_1_f_trem.html#abfe7d983b09535ba5c074878c70eeed9", null ],
     [ "ResetDrawing", "classvrv_1_1_f_trem.html#a8cc3bad0753705f487c1186bdcaecf80", null ],
-    [ "m_drawingParams", "classvrv_1_1_f_trem.html#a6627e6544c48dd0fa9919a4125886750", null ]
+    [ "m_beamSegment", "classvrv_1_1_f_trem.html#a2d92c62158abae23f39aa4656b20a509", null ]
 ];

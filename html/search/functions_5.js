@@ -125,6 +125,7 @@ var searchData=
   ['getstaffsize',['GetStaffSize',['../classvrv_1_1_staff_alignment.html#a7fa1759557d1353566cfdcd56de6edf7',1,'vrv::StaffAlignment']]],
   ['getstartend',['GetStartEnd',['../classvrv_1_1_segmented_line.html#aafc565731a4e7c14b040df641a19246a',1,'vrv::SegmentedLine']]],
   ['getstartmeasure',['GetStartMeasure',['../classvrv_1_1_time_point_interface.html#a54007f47ab2054a75b29618b8b47dd4f',1,'vrv::TimePointInterface']]],
+  ['getstemdir',['GetStemDir',['../classvrv_1_1_beam_element_coord.html#adeaa12ab4464a5908e12961223fe73b3',1,'vrv::BeamElementCoord']]],
   ['getstemupse',['GetStemUpSE',['../classvrv_1_1_chord.html#a7ff47c9a51b5202fed1a14a6028cfc00',1,'vrv::Chord::GetStemUpSE()'],['../classvrv_1_1_note.html#afcd31bece9b368a8ab4c426467605faa',1,'vrv::Note::GetStemUpSE()']]],
   ['getstringsvg',['GetStringSVG',['../classvrv_1_1_svg_device_context.html#a49eb15ae209f1ab05b072c5fb9589d3a',1,'vrv::SvgDeviceContext']]],
   ['getsymbolstr',['GetSymbolStr',['../classvrv_1_1_accid.html#a5cc5d4c6956dff578e41c78e71d0acc1',1,'vrv::Accid::GetSymbolStr()'],['../classvrv_1_1_dynam.html#a0234de69512a615bb0e74f09474cbdd2',1,'vrv::Dynam::GetSymbolStr()'],['../classvrv_1_1_key_accid.html#a9a052dc64b40a2b6a8a67aabc1c7e62a',1,'vrv::KeyAccid::GetSymbolStr()']]],

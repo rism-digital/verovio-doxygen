@@ -62,7 +62,6 @@ var classvrv_1_1_layer_element =
     [ "SetScoreDefRole", "classvrv_1_1_layer_element.html#a4595a64d4bc651cc59928d15bc8c0ff2", null ],
     [ "ThisOrSameasAsLink", "classvrv_1_1_layer_element.html#a4aec9410afe12afe4a47f742dda300ac", null ],
     [ "m_alignment", "classvrv_1_1_layer_element.html#aad5569b5dbc43a1fcfba069c58e18ada", null ],
-    [ "m_beamElementCoord", "classvrv_1_1_layer_element.html#a9b95cac7afb86bba8d7695ebd5a960d1", null ],
     [ "m_crossLayer", "classvrv_1_1_layer_element.html#a93464f5da77d7acbf8565d6a70b47e91", null ],
     [ "m_crossStaff", "classvrv_1_1_layer_element.html#af61467813ceb6c74c05b55484007c48b", null ],
     [ "m_drawingCueSize", "classvrv_1_1_layer_element.html#a98868bde8bc6d40dbfc9b0fb5632354f", null ],

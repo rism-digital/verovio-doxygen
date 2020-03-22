@@ -678,8 +678,12 @@ var hierarchy =
     [ "AttWhitespace", null, [
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ]
     ] ],
-    [ "vrv::BeamDrawingParams", "classvrv_1_1_beam_drawing_params.html", null ],
+    [ "vrv::BeamDrawingInterface", "classvrv_1_1_beam_drawing_interface.html", [
+      [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
+      [ "vrv::FTrem", "classvrv_1_1_f_trem.html", null ]
+    ] ],
     [ "vrv::BeamElementCoord", "classvrv_1_1_beam_element_coord.html", null ],
+    [ "vrv::BeamSegment", "classvrv_1_1_beam_segment.html", null ],
     [ "vrv::BoundaryStartInterface", "classvrv_1_1_boundary_start_interface.html", [
       [ "vrv::EditorialElement", "classvrv_1_1_editorial_element.html", null ],
       [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
@@ -760,7 +764,6 @@ var hierarchy =
     ] ],
     [ "vrv::DiatonicSort", "classvrv_1_1_diatonic_sort.html", null ],
     [ "vrv::DrawingListInterface", "classvrv_1_1_drawing_list_interface.html", [
-      [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::System", "classvrv_1_1_system.html", null ]

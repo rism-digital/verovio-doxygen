@@ -113,6 +113,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a777cd96f58898204059f5f08dbf2a736"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a777cd96f58898204059f5f08dbf2a736">AddChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
 <tr class="memdesc:a777cd96f58898204059f5f08dbf2a736"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_add.html">Add</a> an element (a verse or an accid) to a note.  <a href="#a777cd96f58898204059f5f08dbf2a736">More...</a><br /></td></tr>
 <tr class="separator:a777cd96f58898204059f5f08dbf2a736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bcfe9b0dfad97964d0db5c76ebd6169"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a7bcfe9b0dfad97964d0db5c76ebd6169">HasLedgerLines</a> (int &amp;linesAbove, int &amp;linesBelow, <a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff=NULL)</td></tr>
+<tr class="memdesc:a7bcfe9b0dfad97964d0db5c76ebd6169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the note has leger lines.  <a href="#a7bcfe9b0dfad97964d0db5c76ebd6169">More...</a><br /></td></tr>
+<tr class="separator:a7bcfe9b0dfad97964d0db5c76ebd6169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f569dd14639313902bcdcf1fe6d9f22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a3f569dd14639313902bcdcf1fe6d9f22">IsUnissonWith</a> (<a class="el" href="classvrv_1_1_note.html">Note</a> *note, bool ignoreAccid=false)</td></tr>
 <tr class="memdesc:a3f569dd14639313902bcdcf1fe6d9f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the note is a unisson.  <a href="#a3f569dd14639313902bcdcf1fe6d9f22">More...</a><br /></td></tr>
 <tr class="separator:a3f569dd14639313902bcdcf1fe6d9f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,6 +259,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFlippedNotehead</b
 <tr class="memitem:a629966f7c711abe84be1cba69085de8e"><td class="memItemLeft" align="right" valign="top"><a id="a629966f7c711abe84be1cba69085de8e"></a>
 virtual <a class="el" href="classvrv_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetStemDownNW</b> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, int staffSize, bool isCueSize)</td></tr>
 <tr class="separator:a629966f7c711abe84be1cba69085de8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c097143e4813ddfeb92612de6f29fc"><td class="memItemLeft" align="right" valign="top"><a id="a99c097143e4813ddfeb92612de6f29fc"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>CalcStemLenInHalfUnits</b> (<a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff)</td></tr>
+<tr class="separator:a99c097143e4813ddfeb92612de6f29fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a0c518a751b415b97dbf5649daec5bc8a"><td class="memItemLeft" align="right" valign="top"><a id="a0c518a751b415b97dbf5649daec5bc8a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a0c518a751b415b97dbf5649daec5bc8a">SetScoreTimeOnset</a> (double scoreTime)</td></tr>
@@ -1437,6 +1443,10 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>sortByUlx</b> 
 <tr class="memitem:a316a3efda8b19590914f3c4e736d2323 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a316a3efda8b19590914f3c4e736d2323">SwapPoints</a> (<a class="el" href="classvrv_1_1_point.html">Point</a> &amp;p1, <a class="el" href="classvrv_1_1_point.html">Point</a> &amp;p2)</td></tr>
 <tr class="memdesc:a316a3efda8b19590914f3c4e736d2323 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the points passed as reference.  <a href="classvrv_1_1_bounding_box.html#a316a3efda8b19590914f3c4e736d2323">More...</a><br /></td></tr>
 <tr class="separator:a316a3efda8b19590914f3c4e736d2323 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2658cb5ed914d5c435de4a3740bff2e7 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="a2658cb5ed914d5c435de4a3740bff2e7"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a2658cb5ed914d5c435de4a3740bff2e7">CalcSlope</a> (<a class="el" href="classvrv_1_1_point.html">Point</a> const &amp;p1, <a class="el" href="classvrv_1_1_point.html">Point</a> const &amp;p2)</td></tr>
+<tr class="memdesc:a2658cb5ed914d5c435de4a3740bff2e7 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the slope represented by two points. <br /></td></tr>
+<tr class="separator:a2658cb5ed914d5c435de4a3740bff2e7 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80465f84c7190f8cb0a9765693376be2 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="a80465f84c7190f8cb0a9765693376be2"></a>
 static <a class="el" href="classvrv_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a80465f84c7190f8cb0a9765693376be2">CalcPositionAfterRotation</a> (<a class="el" href="classvrv_1_1_point.html">Point</a> point, float alpha, <a class="el" href="classvrv_1_1_point.html">Point</a> center)</td></tr>
 <tr class="memdesc:a80465f84c7190f8cb0a9765693376be2 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the position of a point after a rotation of alpha (in radian) around the center. <br /></td></tr>
@@ -1484,10 +1494,6 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverl
 <tr class="memitem:a66bf79ef721a113ab2e5ff354313fe2e inherit pub_attribs_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a66bf79ef721a113ab2e5ff354313fe2e">m_xAbs</a></td></tr>
 <tr class="memdesc:a66bf79ef721a113ab2e5ff354313fe2e inherit pub_attribs_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute position X.  <a href="classvrv_1_1_layer_element.html#a66bf79ef721a113ab2e5ff354313fe2e">More...</a><br /></td></tr>
 <tr class="separator:a66bf79ef721a113ab2e5ff354313fe2e inherit pub_attribs_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b95cac7afb86bba8d7695ebd5a960d1 inherit pub_attribs_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a9b95cac7afb86bba8d7695ebd5a960d1"></a>
-<a class="el" href="classvrv_1_1_beam_element_coord.html">BeamElementCoord</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a9b95cac7afb86bba8d7695ebd5a960d1">m_beamElementCoord</a></td></tr>
-<tr class="memdesc:a9b95cac7afb86bba8d7695ebd5a960d1 inherit pub_attribs_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">This stores a pointer to the corresponding BeamElementCoord(currentDur &gt; DUR_4) <br /></td></tr>
-<tr class="separator:a9b95cac7afb86bba8d7695ebd5a960d1 inherit pub_attribs_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af61467813ceb6c74c05b55484007c48b inherit pub_attribs_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="af61467813ceb6c74c05b55484007c48b"></a>
 <a class="el" href="classvrv_1_1_staff.html">Staff</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#af61467813ceb6c74c05b55484007c48b">m_crossStaff</a></td></tr>
 <tr class="memdesc:af61467813ceb6c74c05b55484007c48b inherit pub_attribs_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">This stores a pointer to the cross-staff (if any) and the appropriate layer See <a class="el" href="classvrv_1_1_object.html#a873d7c2f7805530e06ebd07885c399b6" title="See cross-staff / layer pointers on LayerElement. ">Object::PrepareCrossStaff</a>. <br /></td></tr>
@@ -1678,6 +1684,43 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
+<a id="a7bcfe9b0dfad97964d0db5c76ebd6169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bcfe9b0dfad97964d0db5c76ebd6169">&#9670;&nbsp;</a></span>HasLedgerLines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vrv::Note::HasLedgerLines </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>linesAbove</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>linesBelow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_staff.html">Staff</a> *&#160;</td>
+          <td class="paramname"><em>staff</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the note has leger lines. </p>
+<p>If staff is passed, use it for getting the staff line number. Otherwise, it will look for the <a class="el" href="classvrv_1_1_staff.html" title="This class represents a staff in a laid-out score (Doc). ">Staff</a> ancestor. Set the value of ledger lines above or below. </p>
+
+</div>
+</div>
 <a id="a58b9d65399c6c4483ea27d7fbe1ed692"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58b9d65399c6c4483ea27d7fbe1ed692">&#9670;&nbsp;</a></span>HasToBeAligned()</h2>
 
@@ -1748,7 +1791,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_note.html">Note</a></li>
-    <li class="footer">Generated on Sun Mar 22 2020 08:05:23 by
+    <li class="footer">Generated on Sun Mar 22 2020 15:46:44 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
