@@ -10,7 +10,6 @@ var classvrv_1_1_slur =
     [ "GetClassId", "classvrv_1_1_slur.html#a5fa6aa883d9531cc351d362158127e3f", null ],
     [ "GetClassName", "classvrv_1_1_slur.html#ab39993d37ee0c8444785c9d1fc52749c", null ],
     [ "GetControlPoints", "classvrv_1_1_slur.html#a53069ee410ac18874547721818de6909", null ],
-    [ "GetCrossStaffOverflows", "classvrv_1_1_slur.html#a3a287e6c792f46616c86e3e4fd99d6b5", null ],
     [ "GetDrawingCurvedir", "classvrv_1_1_slur.html#afeaac42992c2985ff5dfd8fc4b58dc5b", null ],
     [ "GetSpannedPointPositions", "classvrv_1_1_slur.html#a8efa4b34ec36ac60f7ee6992020c63e7", null ],
     [ "GetTimePointInterface", "classvrv_1_1_slur.html#ae637e2e59d5e7cb88fb96e6dce4c1baf", null ],

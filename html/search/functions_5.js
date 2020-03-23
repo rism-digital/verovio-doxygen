@@ -37,7 +37,7 @@ var searchData=
   ['getcorrespfloatingpositioner',['GetCorrespFloatingPositioner',['../classvrv_1_1_floating_object.html#aef3059c4ebeb1d581e5ce06319d11050',1,'vrv::FloatingObject::GetCorrespFloatingPositioner()'],['../classvrv_1_1_staff_alignment.html#ae46cadae61f249115e75d43ae10b5f4e',1,'vrv::StaffAlignment::GetCorrespFloatingPositioner()']]],
   ['getcrossstaff',['GetCrossStaff',['../classvrv_1_1_layer_element.html#af90812923cb1a9046f4287e855f64dc2',1,'vrv::LayerElement']]],
   ['getcrossstaffextremes',['GetCrossStaffExtremes',['../classvrv_1_1_chord.html#a88c18c0343ac30642a23f44bac26d755',1,'vrv::Chord']]],
-  ['getcrossstaffoverflows',['GetCrossStaffOverflows',['../classvrv_1_1_chord.html#a3204eed0bc3715186f961db7545916a4',1,'vrv::Chord::GetCrossStaffOverflows()'],['../classvrv_1_1_slur.html#a3a287e6c792f46616c86e3e4fd99d6b5',1,'vrv::Slur::GetCrossStaffOverflows()']]],
+  ['getcrossstaffoverflows',['GetCrossStaffOverflows',['../classvrv_1_1_chord.html#a3204eed0bc3715186f961db7545916a4',1,'vrv::Chord::GetCrossStaffOverflows()'],['../classvrv_1_1_time_spanning_interface.html#a963916dd83f823c3ae6ea5bfdfd6248d',1,'vrv::TimeSpanningInterface::GetCrossStaffOverflows()']]],
   ['getcurrenttext',['GetCurrentText',['../classvrv_1_1_num.html#ace095fb1ccb9b89830af4d75f840956d',1,'vrv::Num']]],
   ['getdescendantindex',['GetDescendantIndex',['../classvrv_1_1_object.html#a318be52d7897d2a16d699374a4b702ed',1,'vrv::Object']]],
   ['getdiatonicpitch',['GetDiatonicPitch',['../classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f',1,'vrv::Note']]],

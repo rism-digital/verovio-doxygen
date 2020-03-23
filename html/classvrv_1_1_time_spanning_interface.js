@@ -2,6 +2,7 @@ var classvrv_1_1_time_spanning_interface =
 [
     [ "TimeSpanningInterface", "classvrv_1_1_time_spanning_interface.html#ac94e8747e0ea08969523467586f59717", null ],
     [ "~TimeSpanningInterface", "classvrv_1_1_time_spanning_interface.html#aa23a346e154d20fe23b0c472cc2ad43f", null ],
+    [ "GetCrossStaffOverflows", "classvrv_1_1_time_spanning_interface.html#a963916dd83f823c3ae6ea5bfdfd6248d", null ],
     [ "GetEnd", "classvrv_1_1_time_spanning_interface.html#ae3bf35a85b17a514c8559bf5e8385fc2", null ],
     [ "GetEndMeasure", "classvrv_1_1_time_spanning_interface.html#ab1286ca2a24e646753e7ffcc6ff3394d", null ],
     [ "GetTimePointInterface", "classvrv_1_1_time_spanning_interface.html#a3cefd66ce3b1542568132a2ef87646c8", null ],
