@@ -83,7 +83,7 @@ var searchData=
   ['getmaxstaffsize',['GetMaxStaffSize',['../classvrv_1_1_score_def.html#a9228bda856401d3115b2f2a0023a390a',1,'vrv::ScoreDef::GetMaxStaffSize()'],['../classvrv_1_1_staff_grp.html#a511a37516b151679be18a3eb13385647',1,'vrv::StaffGrp::GetMaxStaffSize()']]],
   ['getmaxtime',['GetMaxTime',['../classvrv_1_1_measure_aligner.html#af9c8e8bed146847a7cfd14db87164ff8',1,'vrv::MeasureAligner']]],
   ['getmeasureidx',['GetMeasureIdx',['../classvrv_1_1_measure.html#a576172291cab812579e24126e5151526',1,'vrv::Measure']]],
-  ['getmei',['GetMEI',['../classvrv_1_1_toolkit.html#a43316856b410fc798d99d8637a3de206',1,'vrv::Toolkit::GetMEI(int pageNo=0, bool scoreBased=true)'],['../classvrv_1_1_toolkit.html#ad6270e2b075118275fc35ea6aa5a9198',1,'vrv::Toolkit::GetMEI(const std::string &amp;jsonOptions)']]],
+  ['getmei',['GetMEI',['../classvrv_1_1_toolkit.html#ad6270e2b075118275fc35ea6aa5a9198',1,'vrv::Toolkit']]],
   ['getmensuralsmuflnotehead',['GetMensuralSmuflNoteHead',['../classvrv_1_1_note.html#af68a87a9293bf48b69765cc3719725bc',1,'vrv::Note']]],
   ['getmidiexportdone',['GetMidiExportDone',['../classvrv_1_1_doc.html#ab09d1142c97b77fdbb612c787049b907',1,'vrv::Doc']]],
   ['getmidivaluesforelement',['GetMIDIValuesForElement',['../classvrv_1_1_toolkit.html#a1b7c6ef82b1ec90af16f8f32da24dd5f',1,'vrv::Toolkit']]],
