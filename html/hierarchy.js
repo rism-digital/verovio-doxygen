@@ -433,6 +433,9 @@ var hierarchy =
         [ "vrv::Note", "classvrv_1_1_note.html", null ]
       ] ]
     ] ],
+    [ "AttNoteHeads", null, [
+      [ "vrv::Note", "classvrv_1_1_note.html", null ]
+    ] ],
     [ "AttNumbered", null, [
       [ "vrv::MultiRest", "classvrv_1_1_multi_rest.html", null ],
       [ "vrv::MultiRpt", "classvrv_1_1_multi_rpt.html", null ]
