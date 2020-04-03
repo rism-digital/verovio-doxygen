@@ -155,7 +155,8 @@ var hierarchy =
     [ "AttExtender", null, [
       [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
       [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
-      [ "vrv::Octave", "classvrv_1_1_octave.html", null ]
+      [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
+      [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
     ] ],
     [ "AttFacsimile", null, [
       [ "vrv::FacsimileInterface", "classvrv_1_1_facsimile_interface.html", [
