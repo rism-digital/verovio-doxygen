@@ -29,16 +29,16 @@ var NAVTREEINDEX =
 "classvrv_1_1_generate_m_i_d_i_params.html#ab0078b3ff3c9bc63cffba4a01a8bb315",
 "classvrv_1_1_humdrum_input.html#a887025c7387bbb5d53e4ec49b474e07c",
 "classvrv_1_1_label_abbr.html#a643a9ce1c3e241b477cd122a9ffcf3e3",
-"classvrv_1_1_mdiv.html#a1ce1b225537bb48242cebe98524bb504",
-"classvrv_1_1_num.html",
-"classvrv_1_1_optimize_score_def_params.html#a359845987134ad7ec3de3c352ca3c9b4",
-"classvrv_1_1_options.html#af805838d6677ab9ad2abbee7a6f77a78",
-"classvrv_1_1_reg.html#a57d09deeded00eaab66519fba848dc06",
-"classvrv_1_1_staff.html#a0315f172bfa34a1b25afa4a62e77db09",
-"classvrv_1_1_syl.html#a5e69117c04b4db86874de66f0c5d8270",
-"classvrv_1_1_toolkit.html#a38a9103a6e2e3196fa40f2170874793b",
-"classvrv_1_1_view.html#a1d43d6f24ff959692ac53f006f4ed3a4",
-"classvrv_1_1data___p_l_a_c_e_m_e_n_t.html#aff3ddd19d9015a09feb81b46822161b8"
+"classvrv_1_1_mdiv.html#a2feff2dd52fe229fb3346921ef6610d9",
+"classvrv_1_1_num.html#a49bd29d00e6f166063aad90bfe5e44d7",
+"classvrv_1_1_optimize_score_def_params.html#a617199678c607fa23442418231868a61",
+"classvrv_1_1_options.html#afb68eac71e0886e6458018e63ee94524",
+"classvrv_1_1_reg.html#a66bb7c893ed81490394e310e8ad64745",
+"classvrv_1_1_staff.html#a09d1b17015dc87defb658131d2897117",
+"classvrv_1_1_syl.html#a66d380bb93bb0abd4afd78b21251bfc9",
+"classvrv_1_1_toolkit.html#a3ff0a3aa8deeef77c291d496ee0d2959",
+"classvrv_1_1_view.html#a2112e69dbe8de940f486983ebfcdd21c",
+"clef_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
