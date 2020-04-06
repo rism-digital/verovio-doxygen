@@ -329,7 +329,8 @@ var hierarchy =
     [ "AttLineRend", null, [
       [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
       [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
-      [ "vrv::Octave", "classvrv_1_1_octave.html", null ]
+      [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
+      [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
     ] ],
     [ "AttLineRendBase", null, [
       [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
