@@ -2,7 +2,7 @@ var classvrv_1_1_object =
 [
     [ "binaryComp", "classvrv_1_1_object.html#aa63ca849b67044acc38f89a6030b03c2", null ],
     [ "Object", "classvrv_1_1_object.html#ae10fe4f6d8a8b450b680f10cfe39a9cc", null ],
-    [ "Object", "classvrv_1_1_object.html#a1cd1b2abff8f38818aab5f1f5b8d1f7e", null ],
+    [ "Object", "classvrv_1_1_object.html#aa3351c670d6ea28be99e411ac6a667d3", null ],
     [ "~Object", "classvrv_1_1_object.html#a350424e9cf31d3b7d1bb5f5754944401", null ],
     [ "Object", "classvrv_1_1_object.html#a8be4ecf7908559751e728551718a8bfc", null ],
     [ "AddChild", "classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948", null ],
