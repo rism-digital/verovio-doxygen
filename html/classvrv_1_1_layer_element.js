@@ -23,7 +23,7 @@ var classvrv_1_1_layer_element =
     [ "GetCrossStaff", "classvrv_1_1_layer_element.html#af90812923cb1a9046f4287e855f64dc2", null ],
     [ "GetDrawingBottom", "classvrv_1_1_layer_element.html#adc8310a7a1bc7736e3113339d970a8f5", null ],
     [ "GetDrawingCueSize", "classvrv_1_1_layer_element.html#a59337806c3fccb0be89e81e5c7ec5c0b", null ],
-    [ "GetDrawingRadius", "classvrv_1_1_layer_element.html#a5a0c22415ad28f3e69c2b9e4c9f34efb", null ],
+    [ "GetDrawingRadius", "classvrv_1_1_layer_element.html#ac0a98f1ac5226eadda933521399eccb4", null ],
     [ "GetDrawingTop", "classvrv_1_1_layer_element.html#adddc28bcbf4f499766a8ca6a7f19ee52", null ],
     [ "GetDrawingX", "classvrv_1_1_layer_element.html#a4c15879eb45487137492ccbd8a96fc39", null ],
     [ "GetDrawingXRel", "classvrv_1_1_layer_element.html#a0587b46544f84d658158e7e521e6ae45", null ],

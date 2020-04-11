@@ -49,7 +49,7 @@ var searchData=
   ['getdrawinglist',['GetDrawingList',['../classvrv_1_1_drawing_list_interface.html#acffbc6780719ad0f0342be03a3aa2a3e',1,'vrv::DrawingListInterface']]],
   ['getdrawingoverflow',['GetDrawingOverflow',['../classvrv_1_1_measure.html#a97daa859320700155a05dc52c400e007',1,'vrv::Measure']]],
   ['getdrawingpage',['GetDrawingPage',['../classvrv_1_1_doc.html#a04a6b8916d6e77d1acc6e370827dc532',1,'vrv::Doc']]],
-  ['getdrawingradius',['GetDrawingRadius',['../classvrv_1_1_layer_element.html#a5a0c22415ad28f3e69c2b9e4c9f34efb',1,'vrv::LayerElement']]],
+  ['getdrawingradius',['GetDrawingRadius',['../classvrv_1_1_layer_element.html#ac0a98f1ac5226eadda933521399eccb4',1,'vrv::LayerElement']]],
   ['getdrawingtop',['GetDrawingTop',['../classvrv_1_1_layer_element.html#adddc28bcbf4f499766a8ca6a7f19ee52',1,'vrv::LayerElement']]],
   ['getdrawingtopbottomnotes',['GetDrawingTopBottomNotes',['../classvrv_1_1_arpeg.html#a5f238eed6fd2aded2572ee35c07509be',1,'vrv::Arpeg']]],
   ['getdrawingx',['GetDrawingX',['../classvrv_1_1_measure.html#a7d781ed88cc2163372144e0b14a86158',1,'vrv::Measure']]],
