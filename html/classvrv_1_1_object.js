@@ -45,6 +45,7 @@ var classvrv_1_1_object =
     [ "CalcChordNoteHeads", "classvrv_1_1_object.html#a277607c9a525f437a721e8c526963d44", null ],
     [ "CalcDots", "classvrv_1_1_object.html#a30538b76016036369786f42be54482c2", null ],
     [ "CalcLedgerLines", "classvrv_1_1_object.html#aa102c1e31b16c63319763a5fc1c8351c", null ],
+    [ "CalcLigatureNotePos", "classvrv_1_1_object.html#a5bd96aae8a25cedd2c63ce09b92388a3", null ],
     [ "CalcMaxMeasureDuration", "classvrv_1_1_object.html#ade83951cbefb443049938380b46df228", null ],
     [ "CalcOnsetOffset", "classvrv_1_1_object.html#a1e1336770fd1b687628ef53b207d29f2", null ],
     [ "CalcOnsetOffsetEnd", "classvrv_1_1_object.html#ae8d2bbd8c168fd6904c864f297b3deeb", null ],

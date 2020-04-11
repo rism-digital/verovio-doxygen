@@ -17,7 +17,6 @@ var searchData=
   ['point',['Point',['../classvrv_1_1_point.html',1,'vrv']]],
   ['pointingtocomparison',['PointingToComparison',['../classvrv_1_1_pointing_to_comparison.html',1,'vrv']]],
   ['positioninchord',['PositionInChord',['../classvrv_1_1_chord.html#ad9046f9798eab922478f13c533e5e22f',1,'vrv::Chord']]],
-  ['positioninligature',['PositionInLigature',['../classvrv_1_1_ligature.html#a8bab53f0b12355d5250c75c6de55f80e',1,'vrv::Ligature']]],
   ['positioninterface',['PositionInterface',['../classvrv_1_1_position_interface.html',1,'vrv']]],
   ['prepareboundaries',['PrepareBoundaries',['../classvrv_1_1_boundary_end.html#aeb741e55b22fa843466a6e46075818ce',1,'vrv::BoundaryEnd::PrepareBoundaries()'],['../classvrv_1_1_editorial_element.html#ae619830b7bf77603328d2d4e6742c10f',1,'vrv::EditorialElement::PrepareBoundaries()'],['../classvrv_1_1_ending.html#a1704ee591ae157f7e7f553e176d8aab6',1,'vrv::Ending::PrepareBoundaries()'],['../classvrv_1_1_measure.html#a951466390e4c4a3a4d47687714853f8a',1,'vrv::Measure::PrepareBoundaries()'],['../classvrv_1_1_object.html#a5608529769df462c68433b5f50680969',1,'vrv::Object::PrepareBoundaries()'],['../classvrv_1_1_section.html#a8908d7a3629b999b424bdf2c6d894143',1,'vrv::Section::PrepareBoundaries()']]],
   ['prepareboundariesparams',['PrepareBoundariesParams',['../classvrv_1_1_prepare_boundaries_params.html',1,'vrv']]],
