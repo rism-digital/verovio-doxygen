@@ -2,7 +2,6 @@ var classvrv_1_1_view =
 [
     [ "View", "classvrv_1_1_view.html#a721ff64f1ce15ac64a4e0b78308e84bd", null ],
     [ "~View", "classvrv_1_1_view.html#af301e8e99bc2946c263bf0ec66827a7d", null ],
-    [ "CalculateLigaturePosX", "classvrv_1_1_view.html#ab3b8e69fce4186944476ef4bef7d6d51", null ],
     [ "CalculatePitchCode", "classvrv_1_1_view.html#a2112e69dbe8de940f486983ebfcdd21c", null ],
     [ "DoRefresh", "classvrv_1_1_view.html#ae14823561b1b9dfdae0711e77ac7dcb6", null ],
     [ "DoReset", "classvrv_1_1_view.html#a26c6f8d15d1397a68c848307974ea63c", null ],
