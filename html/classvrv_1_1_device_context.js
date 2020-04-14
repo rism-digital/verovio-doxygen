@@ -17,7 +17,7 @@ var classvrv_1_1_device_context =
     [ "DrawPolygon", "classvrv_1_1_device_context.html#a95acfaeb1aeaae60f9f13d621a0fbd20", null ],
     [ "DrawRectangle", "classvrv_1_1_device_context.html#acefb308c1eec39621ece1a33e5ec6cfc", null ],
     [ "DrawRotatedText", "classvrv_1_1_device_context.html#a1e17b9e5546e0f0cba1db5aee91d8aa0", null ],
-    [ "DrawRoundedRectangle", "classvrv_1_1_device_context.html#a2ee1de89aaf45c8ec8f572077f5d0843", null ],
+    [ "DrawRoundedRectangle", "classvrv_1_1_device_context.html#af2b653a984a2da914664f19376e1e706", null ],
     [ "DrawSimpleBezierPath", "classvrv_1_1_device_context.html#aac4ee308c44759868f5acdeedbcfcf4a", null ],
     [ "DrawSpline", "classvrv_1_1_device_context.html#a610036a7413ea52b0ce8905d04ecb23d", null ],
     [ "DrawSvgShape", "classvrv_1_1_device_context.html#ac3574c9b1f29fc5ca9cd9f0450ec0ac6", null ],

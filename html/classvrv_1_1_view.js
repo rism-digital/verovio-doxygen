@@ -48,7 +48,7 @@ var classvrv_1_1_view =
     [ "DrawFermata", "classvrv_1_1_view.html#aa1e17b2aee2529c58ae7faee1041dff1", null ],
     [ "DrawFig", "classvrv_1_1_view.html#a0bbce1fc7c6f6cd943da83e8866a1a7b", null ],
     [ "DrawFilledRectangle", "classvrv_1_1_view.html#a5d7fe1e4eeaaecd22a796703ee9c630f", null ],
-    [ "DrawFilledRoundedRectangle", "classvrv_1_1_view.html#a3952b4356f4a0a017952d11c2383c35f", null ],
+    [ "DrawFilledRoundedRectangle", "classvrv_1_1_view.html#a1237c4e9e5b7fd25787933eca04e9372", null ],
     [ "DrawFlag", "classvrv_1_1_view.html#a248475c16901e329189a1daf1470bd40", null ],
     [ "DrawFTrem", "classvrv_1_1_view.html#a2cc270dfd01f43d976d0b9dfe8ee7dd2", null ],
     [ "DrawGraceGrp", "classvrv_1_1_view.html#abc6d0a996e82ac4c0cebf76e88132446", null ],
