@@ -418,7 +418,8 @@ var hierarchy =
       [ "vrv::Pb", "classvrv_1_1_pb.html", null ],
       [ "vrv::Sb", "classvrv_1_1_sb.html", null ],
       [ "vrv::Score", "classvrv_1_1_score.html", null ],
-      [ "vrv::Section", "classvrv_1_1_section.html", null ]
+      [ "vrv::Section", "classvrv_1_1_section.html", null ],
+      [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
     ] ],
     [ "AttNotationType", null, [
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
