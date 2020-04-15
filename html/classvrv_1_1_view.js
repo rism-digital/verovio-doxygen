@@ -114,7 +114,7 @@ var classvrv_1_1_view =
     [ "DrawSlur", "classvrv_1_1_view.html#a68d86b67e466c9d49ca6e3c12a473d33", null ],
     [ "DrawSmuflCode", "classvrv_1_1_view.html#aa63e5736efde1198c4ccd95754e484a4", null ],
     [ "DrawSmuflLine", "classvrv_1_1_view.html#ac68db6ccd59e5c9d3f5b825b5075f974", null ],
-    [ "DrawSmuflString", "classvrv_1_1_view.html#ae4d6668d1cea5051d0664501add49ed4", null ],
+    [ "DrawSmuflString", "classvrv_1_1_view.html#a356a3667d4cbdf16205e9d9b5f9dd02b", null ],
     [ "DrawSpace", "classvrv_1_1_view.html#a761b0f017e09396ebb6e1166dd587209", null ],
     [ "DrawStaff", "classvrv_1_1_view.html#a1d43d6f24ff959692ac53f006f4ed3a4", null ],
     [ "DrawStaffChildren", "classvrv_1_1_view.html#a13da848d9092d64b3095458af90dacc0", null ],
