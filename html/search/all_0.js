@@ -81,6 +81,7 @@ var searchData=
   ['anchoredtext',['AnchoredText',['../classvrv_1_1_anchored_text.html',1,'vrv']]],
   ['annot',['Annot',['../classvrv_1_1_annot.html',1,'vrv']]],
   ['app',['App',['../classvrv_1_1_app.html',1,'vrv']]],
+  ['appendidandclass',['AppendIdAndClass',['../classvrv_1_1_svg_device_context.html#a5d3e723edc1abcc7dd80f0c57130658d',1,'vrv::SvgDeviceContext']]],
   ['applyppufactor',['ApplyPPUFactor',['../classvrv_1_1_layer_element.html#af9a09348014736c76d46b2ba76ef7feb',1,'vrv::LayerElement::ApplyPPUFactor()'],['../classvrv_1_1_measure.html#ae622172e1691680b9cd37266d359a8b3',1,'vrv::Measure::ApplyPPUFactor()'],['../classvrv_1_1_object.html#a1579484058fb14c4c8cdf4ad58249db6',1,'vrv::Object::ApplyPPUFactor()'],['../classvrv_1_1_page.html#aee8cf1f81854af6351ef2dd1cf63d4c7',1,'vrv::Page::ApplyPPUFactor()'],['../classvrv_1_1_staff.html#a4da5a3d4db00bc3b2d0fe5da397dc764',1,'vrv::Staff::ApplyPPUFactor()'],['../classvrv_1_1_system.html#a6805d86791ce23c50b0a3183c6153bc0',1,'vrv::System::ApplyPPUFactor()']]],
   ['applyppufactorparams',['ApplyPPUFactorParams',['../classvrv_1_1_apply_p_p_u_factor_params.html',1,'vrv']]],
   ['approximatebezierboundingbox',['ApproximateBezierBoundingBox',['../classvrv_1_1_bounding_box.html#ae9a22cf5d306abb22ff5f557e81bd9af',1,'vrv::BoundingBox']]],

@@ -44,6 +44,7 @@ var searchData=
   ['setfont',['SetFont',['../classvrv_1_1_resources.html#a2f74660bac3475bd1a846bd096e3abf1',1,'vrv::Resources']]],
   ['setfromfacsimile',['SetFromFacsimile',['../classvrv_1_1_staff.html#a71c2243c3a8920516443bc45557c5783',1,'vrv::Staff']]],
   ['setgracealigmentxpos',['SetGraceAligmentXPos',['../classvrv_1_1_grace_aligner.html#aae43f582f69b1634c2f2eb5387c1125a',1,'vrv::GraceAligner']]],
+  ['sethtml5',['SetHtml5',['../classvrv_1_1_svg_device_context.html#adc6379479221d18e869b45fe29c563fe',1,'vrv::SvgDeviceContext']]],
   ['setmaxtime',['SetMaxTime',['../classvrv_1_1_measure_aligner.html#aab4edf29c88be6e12e726668af041d9d',1,'vrv::MeasureAligner']]],
   ['setmmoutput',['SetMMOutput',['../classvrv_1_1_svg_device_context.html#a57ff509fb8c71c3fd48092ba269cc159',1,'vrv::SvgDeviceContext']]],
   ['setoverflowbboxes',['SetOverflowBBoxes',['../classvrv_1_1_object.html#a45993175bb6a94cbbd0a5b69251e25eb',1,'vrv::Object']]],
