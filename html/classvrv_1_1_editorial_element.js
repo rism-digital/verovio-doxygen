@@ -1,7 +1,7 @@
 var classvrv_1_1_editorial_element =
 [
     [ "EditorialElement", "classvrv_1_1_editorial_element.html#a4474520c6d72089022e7053304b6843d", null ],
-    [ "EditorialElement", "classvrv_1_1_editorial_element.html#ad84cb7aa6f6278d9c341072d2a9db8e4", null ],
+    [ "EditorialElement", "classvrv_1_1_editorial_element.html#a5eae643a76df237718c695f6aae3a873", null ],
     [ "~EditorialElement", "classvrv_1_1_editorial_element.html#a60f52f19ea76b7e7b89c46338bbabb00", null ],
     [ "AddChild", "classvrv_1_1_editorial_element.html#ab6f6bd0064ed0bb9c4c1ff2ac193bf57", null ],
     [ "CastOffEncoding", "classvrv_1_1_editorial_element.html#a639ec21fae82c03f57cc3f61a4e66362", null ],
