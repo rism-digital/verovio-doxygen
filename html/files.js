@@ -57,6 +57,7 @@ var files =
     [ "floatingobject.h", "floatingobject_8h_source.html", null ],
     [ "ftrem.h", "ftrem_8h_source.html", null ],
     [ "functorparams.h", "functorparams_8h_source.html", null ],
+    [ "gliss.h", "gliss_8h_source.html", null ],
     [ "glyph.h", "glyph_8h_source.html", null ],
     [ "gracegrp.h", "gracegrp_8h_source.html", null ],
     [ "hairpin.h", "hairpin_8h_source.html", null ],

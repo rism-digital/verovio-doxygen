@@ -151,6 +151,7 @@ var searchData=
   ['getxmin',['GetXMin',['../classvrv_1_1_chord.html#a755cc9fa239cc69992391802c07f7f78',1,'vrv::Chord']]],
   ['getyextremes',['GetYExtremes',['../classvrv_1_1_chord.html#aa2eb098db501191ccbc5aa530c6b486b',1,'vrv::Chord']]],
   ['getzone',['GetZone',['../classvrv_1_1_facsimile_interface.html#a3ca53c1bfe956ae1bfbb0a77f3c672b0',1,'vrv::FacsimileInterface']]],
+  ['gliss',['Gliss',['../classvrv_1_1_gliss.html',1,'vrv']]],
   ['glyph',['Glyph',['../classvrv_1_1_glyph.html',1,'vrv']]],
   ['gracealigner',['GraceAligner',['../classvrv_1_1_grace_aligner.html',1,'vrv::GraceAligner'],['../classvrv_1_1_grace_aligner.html#ab08bb82df59699af188bcc229d98ea52',1,'vrv::GraceAligner::GraceAligner()']]],
   ['gracegrp',['GraceGrp',['../classvrv_1_1_grace_grp.html',1,'vrv']]]

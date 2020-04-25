@@ -79,6 +79,7 @@ var hierarchy =
       [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
       [ "vrv::Dot", "classvrv_1_1_dot.html", null ],
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
+      [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
       [ "vrv::GraceGrp", "classvrv_1_1_grace_grp.html", null ],
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
@@ -260,6 +261,7 @@ var hierarchy =
         [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
         [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
         [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
+        [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
         [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
         [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
         [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
@@ -329,6 +331,7 @@ var hierarchy =
     [ "AttLineRend", null, [
       [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
       [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
+      [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
       [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
     ] ],
@@ -336,6 +339,7 @@ var hierarchy =
       [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
       [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
       [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
+      [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
       [ "vrv::Octave", "classvrv_1_1_octave.html", null ]
     ] ],
     [ "AttLinking", null, [
@@ -410,6 +414,7 @@ var hierarchy =
     ] ],
     [ "AttNNumberLike", null, [
       [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
+      [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
       [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
       [ "vrv::InstrDef", "classvrv_1_1_instr_def.html", null ],
       [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
@@ -553,6 +558,7 @@ var hierarchy =
           [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
           [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
           [ "vrv::F", "classvrv_1_1_f.html", null ],
+          [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
           [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
           [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
           [ "vrv::Octave", "classvrv_1_1_octave.html", null ],

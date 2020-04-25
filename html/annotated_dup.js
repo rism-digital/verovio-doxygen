@@ -128,6 +128,7 @@ var annotated_dup =
       [ "GenerateMIDIParams", "classvrv_1_1_generate_m_i_d_i_params.html", "classvrv_1_1_generate_m_i_d_i_params" ],
       [ "GenerateTimemapParams", "classvrv_1_1_generate_timemap_params.html", "classvrv_1_1_generate_timemap_params" ],
       [ "GetAlignmentLeftRightParams", "classvrv_1_1_get_alignment_left_right_params.html", "classvrv_1_1_get_alignment_left_right_params" ],
+      [ "Gliss", "classvrv_1_1_gliss.html", "classvrv_1_1_gliss" ],
       [ "Glyph", "classvrv_1_1_glyph.html", "classvrv_1_1_glyph" ],
       [ "GraceAligner", "classvrv_1_1_grace_aligner.html", "classvrv_1_1_grace_aligner" ],
       [ "GraceGrp", "classvrv_1_1_grace_grp.html", "classvrv_1_1_grace_grp" ],
