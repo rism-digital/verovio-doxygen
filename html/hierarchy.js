@@ -469,6 +469,9 @@ var hierarchy =
     [ "AttPedalLog", null, [
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ]
     ] ],
+    [ "AttPedalVis", null, [
+      [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ]
+    ] ],
     [ "AttPitch", null, [
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
       [ "vrv::PitchInterface", "classvrv_1_1_pitch_interface.html", null ]
