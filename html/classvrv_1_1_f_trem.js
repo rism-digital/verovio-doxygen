@@ -6,6 +6,7 @@ var classvrv_1_1_f_trem =
     [ "CalcStem", "classvrv_1_1_f_trem.html#a3499df150aa0a0c368444f06e2de2cce", null ],
     [ "Clone", "classvrv_1_1_f_trem.html#a1181f23b4370b0bd175e606847a130df", null ],
     [ "FilterList", "classvrv_1_1_f_trem.html#af2adaa2dc99d95d46f61f27b0de95469", null ],
+    [ "GenerateMIDI", "classvrv_1_1_f_trem.html#a5e2e8de23909abe5b0bb986bc21c3122", null ],
     [ "GetClassId", "classvrv_1_1_f_trem.html#a7bdd9a33fbda39c95fc449a86627b4a3", null ],
     [ "GetClassName", "classvrv_1_1_f_trem.html#afa1e493c18d2ef33388f92b50181bd0b", null ],
     [ "GetElementCoords", "classvrv_1_1_f_trem.html#abe34526b692174e71058933cbd6a13f7", null ],

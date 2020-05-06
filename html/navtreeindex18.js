@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"classvrv_1_1data___m_i_d_i_v_a_l_u_e___p_a_n.html#ae1d9e6a14507ef420008775b729b390d":[0,0,0,81,3],
 "classvrv_1_1data___p_l_a_c_e_m_e_n_t.html":[0,0,0,82],
 "classvrv_1_1data___p_l_a_c_e_m_e_n_t.html#a171bea684dd4b6ce8e1721405a2bcfc3":[0,0,0,82,6],
 "classvrv_1_1data___p_l_a_c_e_m_e_n_t.html#a19b561a564fed1179a8a33afe323d523":[0,0,0,82,17],
@@ -53,8 +54,8 @@ var NAVTREEINDEX18 =
 "files.html":[1,0],
 "floatingobject_8h_source.html":[1,0,54],
 "ftrem_8h_source.html":[1,0,55],
-"functions.html":[0,3,0],
 "functions.html":[0,3,0,0],
+"functions.html":[0,3,0],
 "functions_b.html":[0,3,0,1],
 "functions_c.html":[0,3,0,2],
 "functions_d.html":[0,3,0,3],
