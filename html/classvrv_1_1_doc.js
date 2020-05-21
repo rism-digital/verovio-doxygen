@@ -98,6 +98,6 @@ var classvrv_1_1_doc =
     [ "m_expansionMap", "classvrv_1_1_doc.html#a7b7051375f9a3ed2e35f33957687a56e", null ],
     [ "m_front", "classvrv_1_1_doc.html#af7116b1917f0a7cf8ed2b9b617496082", null ],
     [ "m_header", "classvrv_1_1_doc.html#a316c65ece6773370792d689e832ffe50", null ],
-    [ "m_notationType", "classvrv_1_1_doc.html#ac8c03d319f5980f42db9faba0253cb6f", null ],
-    [ "m_scoreDef", "classvrv_1_1_doc.html#a2440ae954bedb2ba82cd7e878e96cff8", null ]
+    [ "m_mdivScoreDef", "classvrv_1_1_doc.html#acb8dde81e20cebe9ade0956b73a7437a", null ],
+    [ "m_notationType", "classvrv_1_1_doc.html#ac8c03d319f5980f42db9faba0253cb6f", null ]
 ];
