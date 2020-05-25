@@ -553,7 +553,6 @@ var hierarchy =
         [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
         [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
         [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
-        [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
         [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
         [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ],
         [ "vrv::TimeSpanningInterface", "classvrv_1_1_time_spanning_interface.html", [
@@ -565,6 +564,7 @@ var hierarchy =
           [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
           [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
           [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
+          [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
           [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
           [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
           [ "vrv::Tie", "classvrv_1_1_tie.html", null ],

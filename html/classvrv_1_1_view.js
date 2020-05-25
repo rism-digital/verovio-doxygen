@@ -98,6 +98,7 @@ var classvrv_1_1_view =
     [ "DrawOctave", "classvrv_1_1_view.html#ac0c76bea5f32e2f8074693c14c2e6195", null ],
     [ "DrawPartFilledRectangle", "classvrv_1_1_view.html#af932b7453ad33f6a3909b68c12b5fef5", null ],
     [ "DrawPedal", "classvrv_1_1_view.html#a5d9f88428c22c67573f7fb56ed086ab3", null ],
+    [ "DrawPedalLine", "classvrv_1_1_view.html#a97d482d2124dcc5e84c0bf697b14fde7", null ],
     [ "DrawPgFooter", "classvrv_1_1_view.html#af2978c3ab43b84a259ad483f76dc3cd4", null ],
     [ "DrawPgHeader", "classvrv_1_1_view.html#adcdff366b99d5a31b410ccba1ef96900", null ],
     [ "DrawProport", "classvrv_1_1_view.html#ad0095a78977a0f62eb9bdbe247b602fd", null ],
