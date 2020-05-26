@@ -128,6 +128,7 @@ var hierarchy =
       [ "vrv::Tie", "classvrv_1_1_tie.html", null ]
     ] ],
     [ "AttDistances", null, [
+      [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
     ] ],
     [ "AttDotLog", null, [
