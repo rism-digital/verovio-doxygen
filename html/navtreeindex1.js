@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"classvrv_1_1_anchored_text.html#aa4f44c9dd35ee0df9fbf250ee6efc66e":[0,0,0,25,4],
 "classvrv_1_1_anchored_text.html#abbccf56ecc91175568fe68bf6129b077":[0,0,0,25,2],
 "classvrv_1_1_annot.html":[0,0,0,26],
 "classvrv_1_1_annot.html#a05ba17efa86eef486c7fadd7144fd32c":[0,0,0,26,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "classvrv_1_1_beam.html#a57682a7262276b450a4b2b295d4729a9":[0,0,0,42,9],
 "classvrv_1_1_beam.html#a5c43590b54de49afaa058cd8efe96851":[0,0,0,42,7],
 "classvrv_1_1_beam.html#a5ca2c02f0c77954a50b1629d0afe7598":[0,0,0,42,12],
-"classvrv_1_1_beam.html#a60d90b31b728d67d6c1143c264e5af3c":[0,0,0,42,1],
-"classvrv_1_1_beam.html#a68e2b6e3f79c497e1f9ff3fa6f76af48":[0,0,0,42,3]
+"classvrv_1_1_beam.html#a60d90b31b728d67d6c1143c264e5af3c":[0,0,0,42,1]
 };

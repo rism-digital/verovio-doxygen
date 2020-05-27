@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classvrv_1_1_beam.html#a68e2b6e3f79c497e1f9ff3fa6f76af48":[0,0,0,42,3],
 "classvrv_1_1_beam.html#a6b77b30f89dcc0f8b266138baa8904eb":[0,0,0,42,11],
 "classvrv_1_1_beam.html#ab71aee85c2aa5a40f3108de7cf6d4b5f":[0,0,0,42,6],
 "classvrv_1_1_beam.html#ad870ee58fa2f27ea30c1123b74e0f57f":[0,0,0,42,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "classvrv_1_1_cast_off_systems_params.html#a4aaca7f1cd92eb3f3815be8652a21019":[0,0,0,60,1],
 "classvrv_1_1_cast_off_systems_params.html#a975af3c11817a18593489ab06af4720a":[0,0,0,60,4],
 "classvrv_1_1_cast_off_systems_params.html#aa3bb532e6551acc2afd418b97e4334fd":[0,0,0,60,7],
-"classvrv_1_1_cast_off_systems_params.html#aa8092edb93f07086a647ff002b06eb71":[0,0,0,60,5],
-"classvrv_1_1_cast_off_systems_params.html#aaafe75137d4c35920034dd2c1a09b904":[0,0,0,60,0]
+"classvrv_1_1_cast_off_systems_params.html#aa8092edb93f07086a647ff002b06eb71":[0,0,0,60,5]
 };

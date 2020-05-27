@@ -20,6 +20,7 @@ var searchData=
   ['m_5fdrawingjustifiableheight',['m_drawingJustifiableHeight',['../classvrv_1_1_page.html#a9f9973481f71fb5308a29eb0930b0dbc',1,'vrv::Page']]],
   ['m_5fdrawingjustifiablestaves',['m_drawingJustifiableStaves',['../classvrv_1_1_page.html#aadeb4a694dbfbe92827c32af556787ac',1,'vrv::Page']]],
   ['m_5fdrawingjustifiablesystems',['m_drawingJustifiableSystems',['../classvrv_1_1_page.html#a18aabfaf4cc28965a987e1cdb8f5ce87',1,'vrv::Page']]],
+  ['m_5fdrawinglabelabbr',['m_drawingLabelAbbr',['../classvrv_1_1_verse.html#aa18c85bde310ef1387f164eef3d9301c',1,'vrv::Verse']]],
   ['m_5fdrawinglabelswidth',['m_drawingLabelsWidth',['../classvrv_1_1_system.html#a968558e99136535da89c65270dc80b3c',1,'vrv::System']]],
   ['m_5fdrawinglines',['m_drawingLines',['../classvrv_1_1_staff.html#a983ca678e5969c874a018a2b3587942c',1,'vrv::Staff']]],
   ['m_5fdrawingmeasurecount',['m_drawingMeasureCount',['../classvrv_1_1_m_rpt.html#a0c04454136a4651bc77f2f6e434f2f51',1,'vrv::MRpt']]],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classvrv_1_1_functor_params.html#ae8cb423b21bff493ebdfea2189173191":[0,0,0,123,1],
 "classvrv_1_1_generate_m_i_d_i_params.html":[0,0,0,124],
 "classvrv_1_1_generate_m_i_d_i_params.html#a099869302dfba354a6c7dc86214977c1":[0,0,0,124,2],
 "classvrv_1_1_generate_m_i_d_i_params.html#a3c96b7a8c5c1456f493386eacd69f4eb":[0,0,0,124,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classvrv_1_1_humdrum_input.html#a753a2c3f3171d62739375714b3fd6da8":[0,0,0,135,27],
 "classvrv_1_1_humdrum_input.html#a762a62853506ed4922d7ce0cf2627504":[0,0,0,135,23],
 "classvrv_1_1_humdrum_input.html#a77e38a7839c1b60f0412309c8a68f64a":[0,0,0,135,227],
-"classvrv_1_1_humdrum_input.html#a77e9abee7e5765851e333acdea1f6e0c":[0,0,0,135,155],
-"classvrv_1_1_humdrum_input.html#a789990da73831fe3fa775dc306a994b8":[0,0,0,135,223]
+"classvrv_1_1_humdrum_input.html#a77e9abee7e5765851e333acdea1f6e0c":[0,0,0,135,155]
 };
