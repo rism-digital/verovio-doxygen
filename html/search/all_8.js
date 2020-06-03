@@ -3,7 +3,7 @@ var searchData=
   ['initcoordrefs',['InitCoordRefs',['../classvrv_1_1_beam_segment.html#aae2d6f202398b11757729b803cad00fd',1,'vrv::BeamSegment']]],
   ['initcoords',['InitCoords',['../classvrv_1_1_beam_drawing_interface.html#a77537490027ed7685e9a711caa8a5300',1,'vrv::BeamDrawingInterface']]],
   ['initfonts',['InitFonts',['../classvrv_1_1_resources.html#adf153b2fb62a2d1e2e45d566d13eaae7',1,'vrv::Resources']]],
-  ['inittextfont',['InitTextFont',['../classvrv_1_1_resources.html#a4626f61f7fab55505af7e0f8b153fe00',1,'vrv::Resources']]],
+  ['inittextfont',['InitTextFont',['../classvrv_1_1_resources.html#ac523bb268e6b9261362a9332746d881e',1,'vrv::Resources']]],
   ['input',['Input',['../classvrv_1_1_input.html',1,'vrv']]],
   ['insertchild',['InsertChild',['../classvrv_1_1_object.html#ac14929dac6e5b5e699d16ba7fc258d9d',1,'vrv::Object']]],
   ['instrdef',['InstrDef',['../classvrv_1_1_instr_def.html',1,'vrv']]],

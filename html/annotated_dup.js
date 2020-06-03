@@ -235,7 +235,7 @@ var annotated_dup =
       [ "Rend", "classvrv_1_1_rend.html", "classvrv_1_1_rend" ],
       [ "ReorderByXPosParams", "classvrv_1_1_reorder_by_x_pos_params.html", "classvrv_1_1_reorder_by_x_pos_params" ],
       [ "ReplaceDrawingValuesInStaffDefParams", "classvrv_1_1_replace_drawing_values_in_staff_def_params.html", "classvrv_1_1_replace_drawing_values_in_staff_def_params" ],
-      [ "Resources", "classvrv_1_1_resources.html", null ],
+      [ "Resources", "classvrv_1_1_resources.html", "classvrv_1_1_resources" ],
       [ "Rest", "classvrv_1_1_rest.html", "classvrv_1_1_rest" ],
       [ "Restore", "classvrv_1_1_restore.html", "classvrv_1_1_restore" ],
       [ "RunningElement", "classvrv_1_1_running_element.html", "classvrv_1_1_running_element" ],
