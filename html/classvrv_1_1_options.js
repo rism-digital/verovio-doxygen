@@ -70,6 +70,8 @@ var classvrv_1_1_options =
     [ "m_mmOutput", "classvrv_1_1_options.html#af6b86f9f5c11eb1ce187ce7b90143c3f", null ],
     [ "m_noJustification", "classvrv_1_1_options.html#a69dd05fc3c0518b6397c408802493b2c", null ],
     [ "m_openControlEvents", "classvrv_1_1_options.html#af07fdbeb723c5670d21be7b637dfdd47", null ],
+    [ "m_outputIndent", "classvrv_1_1_options.html#a8365e7fb35a9e562b3b108b8b8c41588", null ],
+    [ "m_outputIndentTab", "classvrv_1_1_options.html#a230a60d43b7bbf1db70e5e31c6a0b344", null ],
     [ "m_outputSmuflXmlEntities", "classvrv_1_1_options.html#a35a052f15304fa0bec0d694c91e2f74b", null ],
     [ "m_pageHeight", "classvrv_1_1_options.html#ab5801ba39f23af2b4c9e9bdaca162928", null ],
     [ "m_pageMarginBottom", "classvrv_1_1_options.html#aeae246f3c60b0b4d9f59ec9366b38eaa", null ],

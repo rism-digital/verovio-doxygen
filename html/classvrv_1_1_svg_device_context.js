@@ -38,6 +38,7 @@ var classvrv_1_1_svg_device_context =
     [ "SetBackgroundMode", "classvrv_1_1_svg_device_context.html#a4c400b011269f2f6966aa508db6586a0", null ],
     [ "SetFacsimile", "classvrv_1_1_svg_device_context.html#a8b65f0e3f8f263b8c2d241e602c085f8", null ],
     [ "SetHtml5", "classvrv_1_1_svg_device_context.html#adc6379479221d18e869b45fe29c563fe", null ],
+    [ "SetIndent", "classvrv_1_1_svg_device_context.html#a28e178314d34a9d0876b23aa9972067c", null ],
     [ "SetLogicalOrigin", "classvrv_1_1_svg_device_context.html#a8ac520672f2f1701645a2fa92784f9ab", null ],
     [ "SetMMOutput", "classvrv_1_1_svg_device_context.html#a57ff509fb8c71c3fd48092ba269cc159", null ],
     [ "SetSvgBoundingBoxes", "classvrv_1_1_svg_device_context.html#ae59f5620c868167fef4915c0dfe30618", null ],

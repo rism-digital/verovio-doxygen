@@ -1,7 +1,7 @@
 var searchData=
 [
   ['save',['Save',['../classvrv_1_1_artic_part.html#adbf5d8ae4c2bb3222842f33c3c5d9961',1,'vrv::ArticPart::Save()'],['../classvrv_1_1_dots.html#a4454529ca358ddefdf610c417d6d28bc',1,'vrv::Dots::Save()'],['../classvrv_1_1_flag.html#a82e80def83d663169416ba589fafce81',1,'vrv::Flag::Save()'],['../classvrv_1_1_tuplet_bracket.html#ab4989f09c8e7b778808e713aecb2c991',1,'vrv::TupletBracket::Save()'],['../classvrv_1_1_tuplet_num.html#a40de91808c7743a5b9c8383f1aea32dd',1,'vrv::TupletNum::Save()'],['../classvrv_1_1_stem.html#a85e737a4827ede4cc5621048db5f0b8e',1,'vrv::Stem::Save()'],['../classvrv_1_1_measure.html#a53146c5860c0e95b6510108dbc5493d8',1,'vrv::Measure::Save()'],['../classvrv_1_1_m_num.html#a00abba36e85227ee915fb9f8bde32f68',1,'vrv::MNum::Save()'],['../classvrv_1_1_object.html#a74097c855ed070b02fd06810207d0ac0',1,'vrv::Object::Save(Output *output)'],['../classvrv_1_1_object.html#a8ec6663670b4b6522cb4892babf36742',1,'vrv::Object::Save(FunctorParams *functorParams)'],['../classvrv_1_1_running_element.html#a3d92ee04ae6d9d496dd678aff7a90c71',1,'vrv::RunningElement::Save()']]],
-  ['savefile',['SaveFile',['../classvrv_1_1_toolkit.html#a968a2feb41a558700a2e9061489ce90a',1,'vrv::Toolkit']]],
+  ['savefile',['SaveFile',['../classvrv_1_1_toolkit.html#a13472202620102f546072fc83b689089',1,'vrv::Toolkit']]],
   ['searchalignmentattime',['SearchAlignmentAtTime',['../classvrv_1_1_horizontal_aligner.html#a1b3764dfcb51917eca727e2e55c402b2',1,'vrv::HorizontalAligner']]],
   ['selecttextfont',['SelectTextFont',['../classvrv_1_1_resources.html#a7ef43348354b19edc94e6e5eb8b88e63',1,'vrv::Resources']]],
   ['setalignment',['SetAlignment',['../classvrv_1_1_bar_line.html#a9b25f3c724cbe2f6ca61609a6f835aff',1,'vrv::BarLine']]],
@@ -27,6 +27,7 @@ var searchData=
   ['setfromfacsimile',['SetFromFacsimile',['../classvrv_1_1_staff.html#a71c2243c3a8920516443bc45557c5783',1,'vrv::Staff']]],
   ['setgracealigmentxpos',['SetGraceAligmentXPos',['../classvrv_1_1_grace_aligner.html#aae43f582f69b1634c2f2eb5387c1125a',1,'vrv::GraceAligner']]],
   ['sethtml5',['SetHtml5',['../classvrv_1_1_svg_device_context.html#adc6379479221d18e869b45fe29c563fe',1,'vrv::SvgDeviceContext']]],
+  ['setindent',['SetIndent',['../classvrv_1_1_m_e_i_output.html#a4633a24c057d8a068a514c9efcccdb1a',1,'vrv::MEIOutput::SetIndent()'],['../classvrv_1_1_svg_device_context.html#a28e178314d34a9d0876b23aa9972067c',1,'vrv::SvgDeviceContext::SetIndent()']]],
   ['setmaxtime',['SetMaxTime',['../classvrv_1_1_measure_aligner.html#aab4edf29c88be6e12e726668af041d9d',1,'vrv::MeasureAligner']]],
   ['setmmoutput',['SetMMOutput',['../classvrv_1_1_svg_device_context.html#a57ff509fb8c71c3fd48092ba269cc159',1,'vrv::SvgDeviceContext']]],
   ['setoverflowbboxes',['SetOverflowBBoxes',['../classvrv_1_1_object.html#a45993175bb6a94cbbd0a5b69251e25eb',1,'vrv::Object']]],

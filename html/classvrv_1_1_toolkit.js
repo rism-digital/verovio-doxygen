@@ -25,7 +25,6 @@ var classvrv_1_1_toolkit =
     [ "GetPageCount", "classvrv_1_1_toolkit.html#af24ccae4968a35e71b5fd82b70ee086c", null ],
     [ "GetPageWithElement", "classvrv_1_1_toolkit.html#a234616d8b4ab54ec1b7efb79e5ae464d", null ],
     [ "GetScale", "classvrv_1_1_toolkit.html#a321e0a62f5f15b1c5cd522fb0e514d3f", null ],
-    [ "GetScoreBasedMei", "classvrv_1_1_toolkit.html#a20b8750381ce863eef75e8463ca21cfd", null ],
     [ "GetTimeForElement", "classvrv_1_1_toolkit.html#ab29688374542c0d3fb3cf5007bd23ab2", null ],
     [ "GetUuid", "classvrv_1_1_toolkit.html#aaf003d6419a475cd62984eab04e72b9f", null ],
     [ "GetVersion", "classvrv_1_1_toolkit.html#a293b23b38c10be4da8b38c4b3a769d1d", null ],
@@ -44,7 +43,7 @@ var classvrv_1_1_toolkit =
     [ "RenderToTimemap", "classvrv_1_1_toolkit.html#a4172ff70b76b47701fdab68c7ee2f12d", null ],
     [ "RenderToTimemapFile", "classvrv_1_1_toolkit.html#ae007856d580be07e60aeb52efb826a40", null ],
     [ "ResetLogBuffer", "classvrv_1_1_toolkit.html#a9621011e0b28c573d62c5412a8c886ec", null ],
-    [ "SaveFile", "classvrv_1_1_toolkit.html#a968a2feb41a558700a2e9061489ce90a", null ],
+    [ "SaveFile", "classvrv_1_1_toolkit.html#a13472202620102f546072fc83b689089", null ],
     [ "SetCString", "classvrv_1_1_toolkit.html#a7d77de8b102acd2f07f0fa23270f82a5", null ],
     [ "SetHumdrumBuffer", "classvrv_1_1_toolkit.html#a5ae3fb587d96567263bfebc1261ff4d9", null ],
     [ "SetInputFrom", "classvrv_1_1_toolkit.html#abbe738f9285b31845ea71cb322d9a581", null ],
@@ -53,6 +52,5 @@ var classvrv_1_1_toolkit =
     [ "SetOptions", "classvrv_1_1_toolkit.html#a09c79a752dd0b9e752506d9bcf583ecd", null ],
     [ "SetOutputTo", "classvrv_1_1_toolkit.html#a765716f5361637b41914ee6b74e39ac7", null ],
     [ "SetResourcePath", "classvrv_1_1_toolkit.html#aed5c67aae6d92d7c8d1d68edf5a5ae65", null ],
-    [ "SetScale", "classvrv_1_1_toolkit.html#a53b48c97c58b0da6e6083193ebd966e4", null ],
-    [ "SetScoreBasedMei", "classvrv_1_1_toolkit.html#a4ed96afe25db5a99aa9d89f80c399176", null ]
+    [ "SetScale", "classvrv_1_1_toolkit.html#a53b48c97c58b0da6e6083193ebd966e4", null ]
 ];
