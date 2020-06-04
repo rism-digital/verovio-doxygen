@@ -112,6 +112,7 @@ var annotated_dup =
       [ "FillStaffCurrentTimeSpanningParams", "classvrv_1_1_fill_staff_current_time_spanning_params.html", "classvrv_1_1_fill_staff_current_time_spanning_params" ],
       [ "FindAllBetweenParams", "classvrv_1_1_find_all_between_params.html", "classvrv_1_1_find_all_between_params" ],
       [ "FindAllByComparisonParams", "classvrv_1_1_find_all_by_comparison_params.html", "classvrv_1_1_find_all_by_comparison_params" ],
+      [ "FindAllReferencedObjectsParams", "classvrv_1_1_find_all_referenced_objects_params.html", "classvrv_1_1_find_all_referenced_objects_params" ],
       [ "FindByComparisonParams", "classvrv_1_1_find_by_comparison_params.html", "classvrv_1_1_find_by_comparison_params" ],
       [ "FindByUuidParams", "classvrv_1_1_find_by_uuid_params.html", "classvrv_1_1_find_by_uuid_params" ],
       [ "FindExtremeByComparisonParams", "classvrv_1_1_find_extreme_by_comparison_params.html", "classvrv_1_1_find_extreme_by_comparison_params" ],

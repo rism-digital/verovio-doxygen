@@ -75,6 +75,7 @@ var classvrv_1_1_object =
     [ "FindAllByComparison", "classvrv_1_1_object.html#aa5fd51861abce2d3237ef9d115d32ba6", null ],
     [ "FindAllDescendantBetween", "classvrv_1_1_object.html#a7ba7ae169a7258a16d3ff24cd2620420", null ],
     [ "FindAllDescendantByComparison", "classvrv_1_1_object.html#af3c1aa93cec13297b8535cccc01ff719", null ],
+    [ "FindAllReferencedObjects", "classvrv_1_1_object.html#acd19a93751c317da1c6a0873e606f882", null ],
     [ "FindByComparison", "classvrv_1_1_object.html#a7cfaeb87486d72cd79c8aec19f8b8108", null ],
     [ "FindByUuid", "classvrv_1_1_object.html#a3a8ac50b3a292c42c0b24d7c7a6cd3b1", null ],
     [ "FindDescendantByComparison", "classvrv_1_1_object.html#a75077fdacaa928e36fe20b90eaca7a7a", null ],

@@ -56,6 +56,7 @@ var searchData=
   ['setparent',['SetParent',['../classvrv_1_1_object.html#a9f30aa6a8185b260943003a08980d376',1,'vrv::Object']]],
   ['setredrawflags',['SetRedrawFlags',['../classvrv_1_1_score_def.html#a195f7226008f1ab25190bf630de92606',1,'vrv::ScoreDef']]],
   ['setref',['SetRef',['../classvrv_1_1_plist_interface.html#a49a2a6767d0e8512174b83004c18a44d',1,'vrv::PlistInterface']]],
+  ['setremoveids',['SetRemoveIds',['../classvrv_1_1_m_e_i_output.html#a2ecd99315ccb1bac894cca2dc4dfa6ec',1,'vrv::MEIOutput']]],
   ['setresourcepath',['SetResourcePath',['../classvrv_1_1_toolkit.html#aed5c67aae6d92d7c8d1d68edf5a5ae65',1,'vrv::Toolkit']]],
   ['setscorebasedmei',['SetScoreBasedMEI',['../classvrv_1_1_m_e_i_output.html#ada785a9d7f36e7f2eb8e5d9b2e4bdba4',1,'vrv::MEIOutput']]],
   ['setscoredefdrawingwidth',['SetScoreDefDrawingWidth',['../classvrv_1_1_view.html#a303f43f2ba8d9098e6391efc79711fbf',1,'vrv::View']]],

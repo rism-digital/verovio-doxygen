@@ -26,19 +26,19 @@ var NAVTREEINDEX =
 "classvrv_1_1_cast_off_systems_params.html#aaafe75137d4c35920034dd2c1a09b904",
 "classvrv_1_1_doc.html#a059b599126531fd3a4ce7b11396e3a57",
 "classvrv_1_1_expan.html#a2f63e8db77d2eb6ea0553e5a0c239a7d",
-"classvrv_1_1_functor_params.html#ae8cb423b21bff493ebdfea2189173191",
-"classvrv_1_1_humdrum_input.html#a789990da73831fe3fa775dc306a994b8",
-"classvrv_1_1_key_sig.html#ac721f136d36dae83f351d24e36895519",
-"classvrv_1_1_m_rpt2.html#a15a1da2059f511b731f1dc065c788d59",
-"classvrv_1_1_note.html#abfcac1365637007ca58537cbae8fa306",
-"classvrv_1_1_object_list_interface.html#ab5637423219e7de94ef81b7169a8ace1",
-"classvrv_1_1_options.html#ad7e3496eb7c557c2ed05af9fc1d6f899",
-"classvrv_1_1_proport.html#a21500c42dccd10dd0951fa06c6d97262",
-"classvrv_1_1_slur.html#a4763f0c674829ba0888bb2428a6dac55",
-"classvrv_1_1_svg_device_context.html#a8d517fa6a149e98130f99268e660c7a1",
-"classvrv_1_1_timestamp_aligner.html#a7bb2cf662de501c0a64060552f0116e3",
-"classvrv_1_1_verse.html#a98529570ab28b9440bfa26c9afd60f03",
-"classvrv_1_1data___m_i_d_i_v_a_l_u_e___p_a_n.html#a015e7acebc7c29de460c78ab448d2397"
+"classvrv_1_1_functor_doc_params.html#a67ae4ff8e0030cacef7bc48e14efe58e",
+"classvrv_1_1_humdrum_input.html#a762a62853506ed4922d7ce0cf2627504",
+"classvrv_1_1_key_sig.html#a96373c8c36f74ba451a48e5a2d86bc73",
+"classvrv_1_1_m_rpt.html#adee1294eed9ce05b6f759a439c858a79",
+"classvrv_1_1_note.html#ab3c689500734a8835591d172b6a9d44d",
+"classvrv_1_1_object_list_interface.html#a3bdaaa1533dc4c5c662562db54a23146",
+"classvrv_1_1_options.html#ad197649417d09e309b4e38f26fa8c21a",
+"classvrv_1_1_prepare_timestamps_params.html",
+"classvrv_1_1_sic.html#a8c3906c73f5d948880b4929c24b6859b",
+"classvrv_1_1_svg_device_context.html#a77fd186d55c84dc8035bca75782a8ed5",
+"classvrv_1_1_time_spanning_interface.html#ae3bf35a85b17a514c8559bf5e8385fc2",
+"classvrv_1_1_verse.html#a37836f552f298a3b22d8614b4386ad4e",
+"classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e.html#aa60c770fe0d73ef060c8b85731e2bb57"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
