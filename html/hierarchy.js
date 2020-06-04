@@ -230,6 +230,9 @@ var hierarchy =
     [ "AttHairpinLog", null, [
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ]
     ] ],
+    [ "AttHairpinVis", null, [
+      [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ]
+    ] ],
     [ "AttHorizontalAlign", null, [
       [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", [
         [ "vrv::Fig", "classvrv_1_1_fig.html", null ],
