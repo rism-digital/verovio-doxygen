@@ -105,9 +105,9 @@ Inheritance diagram for vrv::Verse:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adc3501e4a9c4096cd920b415aa02bd33"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_verse.html#adc3501e4a9c4096cd920b415aa02bd33">AddChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
-<tr class="memdesc:adc3501e4a9c4096cd920b415aa02bd33"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_add.html">Add</a> an element (a syl) to a verse.  <a href="#adc3501e4a9c4096cd920b415aa02bd33">More...</a><br /></td></tr>
-<tr class="separator:adc3501e4a9c4096cd920b415aa02bd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9058fe62a08ee9f21386980ad5ceeba"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_verse.html#af9058fe62a08ee9f21386980ad5ceeba">IsSupportedChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:af9058fe62a08ee9f21386980ad5ceeba"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_add.html">Add</a> an element (a syl) to a verse.  <a href="#af9058fe62a08ee9f21386980ad5ceeba">More...</a><br /></td></tr>
+<tr class="separator:af9058fe62a08ee9f21386980ad5ceeba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d2e84d9ae678a3716d3df6d154c819a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_verse.html#a7d2e84d9ae678a3716d3df6d154c819a">AdjustPosition</a> (int &amp;overlap, int freeSpace, <a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc)</td></tr>
 <tr class="memdesc:a7d2e84d9ae678a3716d3df6d154c819a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the adjustment according to the overlap and the free space available before.  <a href="#a7d2e84d9ae678a3716d3df6d154c819a">More...</a><br /></td></tr>
 <tr class="separator:a7d2e84d9ae678a3716d3df6d154c819a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -466,6 +466,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a5d22ebda01e0b254c13d558f5ffdb098">ResetParent</a> ()</td></tr>
 <tr class="memdesc:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the parent of the <a class="el" href="classvrv_1_1_object.html" title="This class represents a basic object. ">Object</a>.  <a href="classvrv_1_1_object.html#a5d22ebda01e0b254c13d558f5ffdb098">More...</a><br /></td></tr>
 <tr class="separator:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">AddChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for adding children.  <a href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">More...</a><br /></td></tr>
+<tr class="separator:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bfb8ee92dbd7e805de0aae51d07d534 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a2bfb8ee92dbd7e805de0aae51d07d534"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a2bfb8ee92dbd7e805de0aae51d07d534">GetIdx</a> () const</td></tr>
 <tr class="memdesc:a2bfb8ee92dbd7e805de0aae51d07d534 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the index position of the object in its parent (-1 if not found) <br /></td></tr>
@@ -1316,37 +1319,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <tr class="separator:a548baf7b854ef877313302670da5d0b8 inherit pro_attribs_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="adc3501e4a9c4096cd920b415aa02bd33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc3501e4a9c4096cd920b415aa02bd33">&#9670;&nbsp;</a></span>AddChild()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void vrv::Verse::AddChild </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td>
-          <td class="paramname"><em>object</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><a class="el" href="classvrv_1_1_add.html">Add</a> an element (a syl) to a verse. </p>
-<p>Only <a class="el" href="classvrv_1_1_syl.html" title="Syl is a TimeSpanningInterface for managing syllable connectors. ">Syl</a> elements will be actually added to the verse. </p>
-
-<p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">vrv::Object</a>.</p>
-
-</div>
-</div>
 <a id="a7d2e84d9ae678a3716d3df6d154c819a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7d2e84d9ae678a3716d3df6d154c819a">&#9670;&nbsp;</a></span>AdjustPosition()</h2>
 
@@ -1414,6 +1386,37 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
+<a id="af9058fe62a08ee9f21386980ad5ceeba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9058fe62a08ee9f21386980ad5ceeba">&#9670;&nbsp;</a></span>IsSupportedChild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool vrv::Verse::IsSupportedChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classvrv_1_1_add.html">Add</a> an element (a syl) to a verse. </p>
+<p>Only <a class="el" href="classvrv_1_1_syl.html" title="Syl is a TimeSpanningInterface for managing syllable connectors. ">Syl</a> elements will be actually added to the verse. </p>
+
+<p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#a06ffb8f7f251aeea862abe1f76b5599d">vrv::Object</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="verse_8h_source.html">verse.h</a></li>
 </ul>
@@ -1423,7 +1426,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_verse.html">Verse</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 13:30:26 by
+    <li class="footer">Generated on Fri Jun 5 2020 15:07:02 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

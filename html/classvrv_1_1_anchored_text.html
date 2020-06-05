@@ -110,9 +110,9 @@ Inheritance diagram for vrv::AnchoredText:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abbccf56ecc91175568fe68bf6129b077"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_anchored_text.html#abbccf56ecc91175568fe68bf6129b077">AddChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
-<tr class="memdesc:abbccf56ecc91175568fe68bf6129b077"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_add.html">Add</a> an element (text, rend.  <a href="#abbccf56ecc91175568fe68bf6129b077">More...</a><br /></td></tr>
-<tr class="separator:abbccf56ecc91175568fe68bf6129b077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee388004d3d13c844e24890dade1dd78"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_anchored_text.html#aee388004d3d13c844e24890dade1dd78">IsSupportedChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:aee388004d3d13c844e24890dade1dd78"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_add.html">Add</a> an element (text, rend.  <a href="#aee388004d3d13c844e24890dade1dd78">More...</a><br /></td></tr>
+<tr class="separator:aee388004d3d13c844e24890dade1dd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, reset methods</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Reset method reset all attribute classes </p>
 </div></td></tr>
@@ -351,6 +351,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a5d22ebda01e0b254c13d558f5ffdb098">ResetParent</a> ()</td></tr>
 <tr class="memdesc:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the parent of the <a class="el" href="classvrv_1_1_object.html" title="This class represents a basic object. ">Object</a>.  <a href="classvrv_1_1_object.html#a5d22ebda01e0b254c13d558f5ffdb098">More...</a><br /></td></tr>
 <tr class="separator:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">AddChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for adding children.  <a href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">More...</a><br /></td></tr>
+<tr class="separator:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bfb8ee92dbd7e805de0aae51d07d534 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a2bfb8ee92dbd7e805de0aae51d07d534"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a2bfb8ee92dbd7e805de0aae51d07d534">GetIdx</a> () const</td></tr>
 <tr class="memdesc:a2bfb8ee92dbd7e805de0aae51d07d534 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the index position of the object in its parent (-1 if not found) <br /></td></tr>
@@ -1199,37 +1202,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is an interface for &lt;anchoredText&gt; elements at the measure level. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="abbccf56ecc91175568fe68bf6129b077"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbccf56ecc91175568fe68bf6129b077">&#9670;&nbsp;</a></span>AddChild()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void vrv::AnchoredText::AddChild </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td>
-          <td class="paramname"><em>object</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><a class="el" href="classvrv_1_1_add.html">Add</a> an element (text, rend. </p>
-<p>etc.) to a tempo. Only supported elements will be actually added to the child list. </p>
-
-<p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">vrv::Object</a>.</p>
-
-</div>
-</div>
 <a id="a20764ae832f7cef4148c8a419d878646"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20764ae832f7cef4148c8a419d878646">&#9670;&nbsp;</a></span>Clone()</h2>
 
@@ -1257,6 +1229,37 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <p>The method has to be overridden. </p>
 
 <p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#ab2d363effa62d58a65f8aba1330c1379">vrv::Object</a>.</p>
+
+</div>
+</div>
+<a id="aee388004d3d13c844e24890dade1dd78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee388004d3d13c844e24890dade1dd78">&#9670;&nbsp;</a></span>IsSupportedChild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool vrv::AnchoredText::IsSupportedChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classvrv_1_1_add.html">Add</a> an element (text, rend. </p>
+<p>etc.) to a tempo. Only supported elements will be actually added to the child list. </p>
+
+<p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#a06ffb8f7f251aeea862abe1f76b5599d">vrv::Object</a>.</p>
 
 </div>
 </div>
@@ -1299,7 +1302,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_anchored_text.html">AnchoredText</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 13:30:15 by
+    <li class="footer">Generated on Fri Jun 5 2020 15:06:50 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

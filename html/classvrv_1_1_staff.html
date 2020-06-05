@@ -192,9 +192,9 @@ virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetCla
 virtual ClassId&#160;</td><td class="memItemRight" valign="bottom"><b>GetClassId</b> () const</td></tr>
 <tr class="separator:a45ab1dbee2599d16bbdd1184e6f499ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Methods for adding allowed content</div></td></tr>
-<tr class="memitem:a8756c96787854aca70ceefbd09067341"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_staff.html#a8756c96787854aca70ceefbd09067341">AddChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
-<tr class="memdesc:a8756c96787854aca70ceefbd09067341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for adding children.  <a href="#a8756c96787854aca70ceefbd09067341">More...</a><br /></td></tr>
-<tr class="separator:a8756c96787854aca70ceefbd09067341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd736f43548230fda02b92158a176ca8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_staff.html#acd736f43548230fda02b92158a176ca8">IsSupportedChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:acd736f43548230fda02b92158a176ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for checking if a child can be added.  <a href="#acd736f43548230fda02b92158a176ca8">More...</a><br /></td></tr>
+<tr class="separator:acd736f43548230fda02b92158a176ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Get the X and Y drawing position</div></td></tr>
 <tr class="memitem:a3d6e1da7c6a779c77eebdcc749723e1e"><td class="memItemLeft" align="right" valign="top"><a id="a3d6e1da7c6a779c77eebdcc749723e1e"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingY</b> () const</td></tr>
@@ -356,6 +356,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a5d22ebda01e0b254c13d558f5ffdb098">ResetParent</a> ()</td></tr>
 <tr class="memdesc:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the parent of the <a class="el" href="classvrv_1_1_object.html" title="This class represents a basic object. ">Object</a>.  <a href="classvrv_1_1_object.html#a5d22ebda01e0b254c13d558f5ffdb098">More...</a><br /></td></tr>
 <tr class="separator:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">AddChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for adding children.  <a href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">More...</a><br /></td></tr>
+<tr class="separator:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bfb8ee92dbd7e805de0aae51d07d534 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a2bfb8ee92dbd7e805de0aae51d07d534"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a2bfb8ee92dbd7e805de0aae51d07d534">GetIdx</a> () const</td></tr>
 <tr class="memdesc:a2bfb8ee92dbd7e805de0aae51d07d534 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the index position of the object in its parent (-1 if not found) <br /></td></tr>
@@ -1195,37 +1198,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div class="textblock"><p>This class represents a staff in a laid-out score (<a class="el" href="classvrv_1_1_doc.html" title="This class is a hold the data and corresponds to the model of a MVC design pattern. ">Doc</a>). </p>
 <p>A <a class="el" href="classvrv_1_1_staff.html" title="This class represents a staff in a laid-out score (Doc). ">Staff</a> is contained in a <a class="el" href="classvrv_1_1_system.html" title="This class represents a system in a laid-out score (Doc). ">System</a>. It contains <a class="el" href="classvrv_1_1_measure.html" title="This class represents a measure in a page-based score (Doc). ">Measure</a> objects. For unmeasured music, one single <a class="el" href="classvrv_1_1_measure.html" title="This class represents a measure in a page-based score (Doc). ">Measure</a> is added for simplifying internal processing </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8756c96787854aca70ceefbd09067341"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8756c96787854aca70ceefbd09067341">&#9670;&nbsp;</a></span>AddChild()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void vrv::Staff::AddChild </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td>
-          <td class="paramname"><em>object</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Base method for adding children. </p>
-<p>The method has to be overridden. </p>
-
-<p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">vrv::Object</a>.</p>
-
-</div>
-</div>
 <a id="a941e11231b93cb273d8159ea4921fd0b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a941e11231b93cb273d8159ea4921fd0b">&#9670;&nbsp;</a></span>AddLegerLineAbove()</h2>
 
@@ -1319,6 +1291,37 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
+<a id="acd736f43548230fda02b92158a176ca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd736f43548230fda02b92158a176ca8">&#9670;&nbsp;</a></span>IsSupportedChild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool vrv::Staff::IsSupportedChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Base method for checking if a child can be added. </p>
+<p>The method has to be overridden. </p>
+
+<p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#a06ffb8f7f251aeea862abe1f76b5599d">vrv::Object</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="abf3552a9fecc27efcc21fae14cf1836f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf3552a9fecc27efcc21fae14cf1836f">&#9670;&nbsp;</a></span>m_yAbs</h2>
@@ -1346,7 +1349,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_staff.html">Staff</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 13:30:25 by
+    <li class="footer">Generated on Fri Jun 5 2020 15:07:00 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

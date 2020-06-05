@@ -111,9 +111,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a57682a7262276b450a4b2b295d4729a9"><td class="memItemLeft" align="right" valign="top"><a id="a57682a7262276b450a4b2b295d4729a9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>GetNoteCount</b> () const</td></tr>
 <tr class="separator:a57682a7262276b450a4b2b295d4729a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bf2871cb6ceb877ef0f87acb43e0393"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beam.html#a2bf2871cb6ceb877ef0f87acb43e0393">AddChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
-<tr class="memdesc:a2bf2871cb6ceb877ef0f87acb43e0393"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_add.html">Add</a> an element (a note or a rest) to a beam.  <a href="#a2bf2871cb6ceb877ef0f87acb43e0393">More...</a><br /></td></tr>
-<tr class="separator:a2bf2871cb6ceb877ef0f87acb43e0393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af420328a2d142e36095a11b6cea16f3f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beam.html#af420328a2d142e36095a11b6cea16f3f">IsSupportedChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:af420328a2d142e36095a11b6cea16f3f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_add.html">Add</a> an element (a note or a rest) to a beam.  <a href="#af420328a2d142e36095a11b6cea16f3f">More...</a><br /></td></tr>
+<tr class="separator:af420328a2d142e36095a11b6cea16f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bbd297104dd527dbf817a71e5129599"><td class="memItemLeft" align="right" valign="top"><a id="a1bbd297104dd527dbf817a71e5129599"></a>
 const ArrayOfBeamElementCoords *&#160;</td><td class="memItemRight" valign="bottom"><b>GetElementCoords</b> ()</td></tr>
 <tr class="separator:a1bbd297104dd527dbf817a71e5129599"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -471,6 +471,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a5d22ebda01e0b254c13d558f5ffdb098">ResetParent</a> ()</td></tr>
 <tr class="memdesc:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the parent of the <a class="el" href="classvrv_1_1_object.html" title="This class represents a basic object. ">Object</a>.  <a href="classvrv_1_1_object.html#a5d22ebda01e0b254c13d558f5ffdb098">More...</a><br /></td></tr>
 <tr class="separator:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">AddChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for adding children.  <a href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">More...</a><br /></td></tr>
+<tr class="separator:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bfb8ee92dbd7e805de0aae51d07d534 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a2bfb8ee92dbd7e805de0aae51d07d534"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a2bfb8ee92dbd7e805de0aae51d07d534">GetIdx</a> () const</td></tr>
 <tr class="memdesc:a2bfb8ee92dbd7e805de0aae51d07d534 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the index position of the object in its parent (-1 if not found) <br /></td></tr>
@@ -1435,37 +1438,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <tr class="separator:a548baf7b854ef877313302670da5d0b8 inherit pro_attribs_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2bf2871cb6ceb877ef0f87acb43e0393"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bf2871cb6ceb877ef0f87acb43e0393">&#9670;&nbsp;</a></span>AddChild()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void vrv::Beam::AddChild </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td>
-          <td class="paramname"><em>object</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><a class="el" href="classvrv_1_1_add.html">Add</a> an element (a note or a rest) to a beam. </p>
-<p>Only <a class="el" href="classvrv_1_1_note.html" title="This class models the MEI &lt;note&gt; element. ">Note</a> or <a class="el" href="classvrv_1_1_rest.html" title="This class models the MEI &lt;rest&gt; element. ">Rest</a> elements will be actually added to the beam. </p>
-
-<p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">vrv::Object</a>.</p>
-
-</div>
-</div>
 <a id="aefb179940f5416e7be8297c6869643e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aefb179940f5416e7be8297c6869643e5">&#9670;&nbsp;</a></span>Clone()</h2>
 
@@ -1577,6 +1549,37 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
+<a id="af420328a2d142e36095a11b6cea16f3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af420328a2d142e36095a11b6cea16f3f">&#9670;&nbsp;</a></span>IsSupportedChild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool vrv::Beam::IsSupportedChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classvrv_1_1_add.html">Add</a> an element (a note or a rest) to a beam. </p>
+<p>Only <a class="el" href="classvrv_1_1_note.html" title="This class models the MEI &lt;note&gt; element. ">Note</a> or <a class="el" href="classvrv_1_1_rest.html" title="This class models the MEI &lt;rest&gt; element. ">Rest</a> elements will be actually added to the beam. </p>
+
+<p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#a06ffb8f7f251aeea862abe1f76b5599d">vrv::Object</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="beam_8h_source.html">beam.h</a></li>
 </ul>
@@ -1586,7 +1589,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_beam.html">Beam</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 13:30:16 by
+    <li class="footer">Generated on Fri Jun 5 2020 15:06:51 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

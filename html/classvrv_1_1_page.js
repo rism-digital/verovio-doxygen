@@ -2,7 +2,6 @@ var classvrv_1_1_page =
 [
     [ "Page", "classvrv_1_1_page.html#aef17cc516b80dce4f3cc8c86a417e4b8", null ],
     [ "~Page", "classvrv_1_1_page.html#a49c908159583beb6bc58706fc34f9bb6", null ],
-    [ "AddChild", "classvrv_1_1_page.html#aaab394087268b7ac653d6d935bd306c6", null ],
     [ "AlignSystems", "classvrv_1_1_page.html#a98ab67d3c831b71bddd4669833ef01c1", null ],
     [ "AlignSystemsEnd", "classvrv_1_1_page.html#acaf7f9335da4f1cb6df7d0b33a9bd372", null ],
     [ "AlignVerticallyEnd", "classvrv_1_1_page.html#a878519b8c9d6f053b62ef525c38430c2", null ],
@@ -18,6 +17,7 @@ var classvrv_1_1_page =
     [ "GetPPUFactor", "classvrv_1_1_page.html#a8490304e26cdf6b0ab0b9bf342d956be", null ],
     [ "GetStaffPosOnPage", "classvrv_1_1_page.html#a8d0b481d1f2ee288d54cea70b2f18570", null ],
     [ "GetSystemCount", "classvrv_1_1_page.html#ad61c7e4e46e6c81a2da83f9737aa08e5", null ],
+    [ "IsSupportedChild", "classvrv_1_1_page.html#ad3d4ee3e1674476c6c110fc4a80aad4d", null ],
     [ "JustifyHorizontally", "classvrv_1_1_page.html#a01e27bb8082d59453406dd7848a8d1b2", null ],
     [ "JustifyVertically", "classvrv_1_1_page.html#a677cbec6a571326d624fe812a0c432fa", null ],
     [ "LayOut", "classvrv_1_1_page.html#a29a3f02e9620a674f4f1f1ebdf818089", null ],

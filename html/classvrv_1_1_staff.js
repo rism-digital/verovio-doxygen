@@ -2,7 +2,6 @@ var classvrv_1_1_staff =
 [
     [ "Staff", "classvrv_1_1_staff.html#a49e12a89a175f2fcfd38cef978463455", null ],
     [ "~Staff", "classvrv_1_1_staff.html#a37cd8e05822ef95c7edf9ea7340d425f", null ],
-    [ "AddChild", "classvrv_1_1_staff.html#a8756c96787854aca70ceefbd09067341", null ],
     [ "AddLegerLineAbove", "classvrv_1_1_staff.html#a941e11231b93cb273d8159ea4921fd0b", null ],
     [ "AddLegerLineBelow", "classvrv_1_1_staff.html#a4bb9998ed6c19ad946a3f3ec75bd09c8", null ],
     [ "AdjustSylSpacing", "classvrv_1_1_staff.html#a6790f6311e231fb5898d10c2b5499559", null ],
@@ -29,6 +28,7 @@ var classvrv_1_1_staff =
     [ "GetLedgerLinesBelow", "classvrv_1_1_staff.html#ae91c2b2dffa5b7be17298693c96b1d39", null ],
     [ "GetLedgerLinesBelowCue", "classvrv_1_1_staff.html#a4773a1ba3e425e3b717f04c79928cfb2", null ],
     [ "GetStaffIdx", "classvrv_1_1_staff.html#a96635013f3b4f9d0b68df8eebbc4b0b2", null ],
+    [ "IsSupportedChild", "classvrv_1_1_staff.html#acd736f43548230fda02b92158a176ca8", null ],
     [ "OptimizeScoreDef", "classvrv_1_1_staff.html#ab8980fe9ea3f010412b481ff39e0959e", null ],
     [ "PrepareRpt", "classvrv_1_1_staff.html#a7d46724555e4ba27339181e17b945a33", null ],
     [ "Reset", "classvrv_1_1_staff.html#aaf72035d9ae4ae883541f3c4e7eab9ad", null ],

@@ -2,7 +2,6 @@ var classvrv_1_1_measure =
 [
     [ "Measure", "classvrv_1_1_measure.html#a61646aedd32264c9b5c2f812dde7f402", null ],
     [ "~Measure", "classvrv_1_1_measure.html#a8d4529908c3720683e20a001b5881336", null ],
-    [ "AddChild", "classvrv_1_1_measure.html#a81e1e232db13e677d6114a4b21033157", null ],
     [ "AddChildBack", "classvrv_1_1_measure.html#afbaab874c0a2b37b3f2bbd175756f4aa", null ],
     [ "AddTimestamp", "classvrv_1_1_measure.html#a67df4d10c89fedc0a403cb7169170d0a", null ],
     [ "AdjustAccidX", "classvrv_1_1_measure.html#afcfbbf264d2da532a19945d12f9dbe3d", null ],
@@ -58,6 +57,7 @@ var classvrv_1_1_measure =
     [ "GetTopVisibleStaff", "classvrv_1_1_measure.html#a763effb0962a66b89e7b083f1e2a10f2", null ],
     [ "GetWidth", "classvrv_1_1_measure.html#aaea9b1238acf043b2ea503ce946080a3", null ],
     [ "IsMeasuredMusic", "classvrv_1_1_measure.html#a53fc4fd98146722a9cc4784f1b9a7498", null ],
+    [ "IsSupportedChild", "classvrv_1_1_measure.html#aa00165c434ab1ab55478b8cd7c28fc90", null ],
     [ "JustifyX", "classvrv_1_1_measure.html#ad0c8a3ad617244b1025761ae4b1042ca", null ],
     [ "OptimizeScoreDef", "classvrv_1_1_measure.html#a63fafdb1d58882fc47c68f701d7cd2ba", null ],
     [ "PrepareBoundaries", "classvrv_1_1_measure.html#a951466390e4c4a3a4d47687714853f8a", null ],

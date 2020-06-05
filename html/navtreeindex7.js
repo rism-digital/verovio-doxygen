@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"classvrv_1_1_humdrum_input.html#a74672d2abfc5eeb6ed1d3ce5d9ac8280":[0,0,0,136,32],
+"classvrv_1_1_humdrum_input.html#a753a2c3f3171d62739375714b3fd6da8":[0,0,0,136,27],
 "classvrv_1_1_humdrum_input.html#a762a62853506ed4922d7ce0cf2627504":[0,0,0,136,23],
 "classvrv_1_1_humdrum_input.html#a77e38a7839c1b60f0412309c8a68f64a":[0,0,0,136,227],
 "classvrv_1_1_humdrum_input.html#a77e9abee7e5765851e333acdea1f6e0c":[0,0,0,136,155],
@@ -237,17 +239,15 @@ var NAVTREEINDEX7 =
 "classvrv_1_1_key_accid.html#ac7d38a0d440e7bbada7c9fb7a2e7af1c":[0,0,0,148,3],
 "classvrv_1_1_key_accid.html#afdd546a5f24a549742468f6b49733409":[0,0,0,148,7],
 "classvrv_1_1_key_sig.html":[0,0,0,149],
-"classvrv_1_1_key_sig.html#a02524e3562b11cd590f785d9e957143f":[0,0,0,149,9],
+"classvrv_1_1_key_sig.html#a02524e3562b11cd590f785d9e957143f":[0,0,0,149,8],
 "classvrv_1_1_key_sig.html#a1cee69880edc205bf3e1627e99072cdd":[0,0,0,149,16],
-"classvrv_1_1_key_sig.html#a22cc70d7748a17e80c7950e51857964a":[0,0,0,149,5],
-"classvrv_1_1_key_sig.html#a258a5338899c3b124d86d913a8ab4790":[0,0,0,149,13],
-"classvrv_1_1_key_sig.html#a28a387bd776ffa1cdb1438f1e98448f1":[0,0,0,149,4],
+"classvrv_1_1_key_sig.html#a22cc70d7748a17e80c7950e51857964a":[0,0,0,149,4],
+"classvrv_1_1_key_sig.html#a258a5338899c3b124d86d913a8ab4790":[0,0,0,149,12],
+"classvrv_1_1_key_sig.html#a28a387bd776ffa1cdb1438f1e98448f1":[0,0,0,149,3],
 "classvrv_1_1_key_sig.html#a2c6e3e5fbf89a06398f6061cf991f8bf":[0,0,0,149,17],
-"classvrv_1_1_key_sig.html#a4603d05b2d150b965de3593467370aa3":[0,0,0,149,3],
-"classvrv_1_1_key_sig.html#a4f5441adc770e0e9eaed39ce3cd1e172":[0,0,0,149,10],
+"classvrv_1_1_key_sig.html#a4603d05b2d150b965de3593467370aa3":[0,0,0,149,2],
+"classvrv_1_1_key_sig.html#a4f5441adc770e0e9eaed39ce3cd1e172":[0,0,0,149,9],
 "classvrv_1_1_key_sig.html#a51b93077c9b89cf9e09607083114ec0c":[0,0,0,149,18],
 "classvrv_1_1_key_sig.html#a5d508aa999353ab19a1bb00e5aa4a356":[0,0,0,149,14],
-"classvrv_1_1_key_sig.html#a612602eea7d3c5253643349afbf3b8fb":[0,0,0,149,2],
-"classvrv_1_1_key_sig.html#a8c89b9d4ea03ac427c1b39aa3f35bb83":[0,0,0,149,11],
-"classvrv_1_1_key_sig.html#a8d11b45861f5d76bdd90f07e38524a07":[0,0,0,149,1]
+"classvrv_1_1_key_sig.html#a8c89b9d4ea03ac427c1b39aa3f35bb83":[0,0,0,149,10]
 };

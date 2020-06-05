@@ -2,7 +2,6 @@ var classvrv_1_1_system =
 [
     [ "System", "classvrv_1_1_system.html#a223d2c59c2cf8254fa2da02eb838e506", null ],
     [ "~System", "classvrv_1_1_system.html#af4320266d4e1284a2721f1f370843fbf", null ],
-    [ "AddChild", "classvrv_1_1_system.html#a74085bf784ecdc0ef6525c9e43804844", null ],
     [ "AddToDrawingListIfNeccessary", "classvrv_1_1_system.html#a10f72720bebe778fecef7633ddbc9c38", null ],
     [ "AdjustFloatingPositioners", "classvrv_1_1_system.html#a4758434c52084eec15a430d66ee6407e", null ],
     [ "AdjustHarmGrpsSpacing", "classvrv_1_1_system.html#a1fa7e0cd77f95fbbd8ae1d10b2b05c47", null ],
@@ -37,6 +36,7 @@ var classvrv_1_1_system =
     [ "HasMixedDrawingStemDir", "classvrv_1_1_system.html#a78f5b8fa8d7f7043f8547301ae24aee3", null ],
     [ "IsDrawingOptimized", "classvrv_1_1_system.html#ac19fbd767747babe72806961d9d30bbd", null ],
     [ "IsDrawingOptimized", "classvrv_1_1_system.html#a060b80619621bf26c076b69e7a4bd0c7", null ],
+    [ "IsSupportedChild", "classvrv_1_1_system.html#aa016a2db50574ea0eb45c29549dcab93", null ],
     [ "JustifyX", "classvrv_1_1_system.html#a3f54a62351d3e54fcea861225a52bcb0", null ],
     [ "JustifyY", "classvrv_1_1_system.html#a9fda5426b8a20ffbef63b554159f16bc", null ],
     [ "OptimizeScoreDef", "classvrv_1_1_system.html#a5875510824a744cc494a7be247ce6aef", null ],

@@ -136,9 +136,9 @@ virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetCla
 virtual ClassId&#160;</td><td class="memItemRight" valign="bottom"><b>GetClassId</b> () const</td></tr>
 <tr class="separator:adad64497ae7d9d984b9b5fedb6d5b218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Methods for adding allowed content</div></td></tr>
-<tr class="memitem:a956604868479af1d37015170b0a84dc8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_staff_grp.html#a956604868479af1d37015170b0a84dc8">AddChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
-<tr class="memdesc:a956604868479af1d37015170b0a84dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for adding children.  <a href="#a956604868479af1d37015170b0a84dc8">More...</a><br /></td></tr>
-<tr class="separator:a956604868479af1d37015170b0a84dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a7dc49e7551930bbe65cab7ff11b66f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_staff_grp.html#a8a7dc49e7551930bbe65cab7ff11b66f">IsSupportedChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:a8a7dc49e7551930bbe65cab7ff11b66f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for checking if a child can be added.  <a href="#a8a7dc49e7551930bbe65cab7ff11b66f">More...</a><br /></td></tr>
+<tr class="separator:a8a7dc49e7551930bbe65cab7ff11b66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Setter and getter of the drawing visible flag</div></td></tr>
 <tr class="memitem:a077f0d79e3d5cc9f39389059d6610165"><td class="memItemLeft" align="right" valign="top"><a id="a077f0d79e3d5cc9f39389059d6610165"></a>
 VisibilityOptimization&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingVisibility</b> () const</td></tr>
@@ -266,6 +266,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a5d22ebda01e0b254c13d558f5ffdb098">ResetParent</a> ()</td></tr>
 <tr class="memdesc:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the parent of the <a class="el" href="classvrv_1_1_object.html" title="This class represents a basic object. ">Object</a>.  <a href="classvrv_1_1_object.html#a5d22ebda01e0b254c13d558f5ffdb098">More...</a><br /></td></tr>
 <tr class="separator:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">AddChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for adding children.  <a href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">More...</a><br /></td></tr>
+<tr class="separator:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bfb8ee92dbd7e805de0aae51d07d534 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a2bfb8ee92dbd7e805de0aae51d07d534"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a2bfb8ee92dbd7e805de0aae51d07d534">GetIdx</a> () const</td></tr>
 <tr class="memdesc:a2bfb8ee92dbd7e805de0aae51d07d534 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the index position of the object in its parent (-1 if not found) <br /></td></tr>
@@ -1126,37 +1129,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div class="textblock"><p>This class represents a MEI staffGrp. </p>
 <p>It contains <a class="el" href="classvrv_1_1_staff_def.html" title="This class represents a MEI staffDef. ">StaffDef</a> objects. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a956604868479af1d37015170b0a84dc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a956604868479af1d37015170b0a84dc8">&#9670;&nbsp;</a></span>AddChild()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void vrv::StaffGrp::AddChild </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td>
-          <td class="paramname"><em>object</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Base method for adding children. </p>
-<p>The method has to be overridden. </p>
-
-<p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">vrv::Object</a>.</p>
-
-</div>
-</div>
 <a id="aa514749edfce8e38079e8be763c036b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa514749edfce8e38079e8be763c036b7">&#9670;&nbsp;</a></span>Clone()</h2>
 
@@ -1184,6 +1156,37 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <p>The method has to be overridden. </p>
 
 <p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#ab2d363effa62d58a65f8aba1330c1379">vrv::Object</a>.</p>
+
+</div>
+</div>
+<a id="a8a7dc49e7551930bbe65cab7ff11b66f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a7dc49e7551930bbe65cab7ff11b66f">&#9670;&nbsp;</a></span>IsSupportedChild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool vrv::StaffGrp::IsSupportedChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Base method for checking if a child can be added. </p>
+<p>The method has to be overridden. </p>
+
+<p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#a06ffb8f7f251aeea862abe1f76b5599d">vrv::Object</a>.</p>
 
 </div>
 </div>
@@ -1226,7 +1229,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_staff_grp.html">StaffGrp</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 13:30:25 by
+    <li class="footer">Generated on Fri Jun 5 2020 15:07:00 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

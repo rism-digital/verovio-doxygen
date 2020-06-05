@@ -2,7 +2,6 @@ var classvrv_1_1_syl =
 [
     [ "Syl", "classvrv_1_1_syl.html#a9cba9ac9d44ff3e7481616159f125a2a", null ],
     [ "~Syl", "classvrv_1_1_syl.html#a8be15ecb9214a389483e7a10ffc04b2b", null ],
-    [ "AddChild", "classvrv_1_1_syl.html#a969ee1646f3ebc1ef176e05c27c64bf1", null ],
     [ "CalcConnectorSpacing", "classvrv_1_1_syl.html#a66d380bb93bb0abd4afd78b21251bfc9", null ],
     [ "Clone", "classvrv_1_1_syl.html#a5e69117c04b4db86874de66f0c5d8270", null ],
     [ "FillStaffCurrentTimeSpanning", "classvrv_1_1_syl.html#a97f982b99f0becd3d207dcb7c621636a", null ],
@@ -11,6 +10,7 @@ var classvrv_1_1_syl =
     [ "GetTimePointInterface", "classvrv_1_1_syl.html#ace61c5236a8c0ad372dadca3f9d43630", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_syl.html#af1b2a4a8269a722e8c149cf478029980", null ],
     [ "IsRelativeToStaff", "classvrv_1_1_syl.html#a05ccd19d32fd60fa4be0bcd627000345", null ],
+    [ "IsSupportedChild", "classvrv_1_1_syl.html#a2e7542e7dc6a79d46043912c281c7b21", null ],
     [ "PrepareLyrics", "classvrv_1_1_syl.html#a1a6e9b3882e72eb56dfc0335dbf3f63d", null ],
     [ "Reset", "classvrv_1_1_syl.html#ad8421ee7c48a1a2810a40cd268613400", null ],
     [ "ResetDrawing", "classvrv_1_1_syl.html#a23fd0bc19c3581f210bc071aa7dbbc39", null ],

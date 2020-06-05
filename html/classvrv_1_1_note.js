@@ -37,6 +37,7 @@ var classvrv_1_1_note =
     [ "HasToBeAligned", "classvrv_1_1_note.html#a58b9d65399c6c4483ea27d7fbe1ed692", null ],
     [ "IsChordTone", "classvrv_1_1_note.html#abfcac1365637007ca58537cbae8fa306", null ],
     [ "IsClusterExtreme", "classvrv_1_1_note.html#a1a7d0a9ea9cb70585ce2b438e41dd4a5", null ],
+    [ "IsSupportedChild", "classvrv_1_1_note.html#af8978d10060897439846033392758ef6", null ],
     [ "IsUnissonWith", "classvrv_1_1_note.html#a3f569dd14639313902bcdcf1fe6d9f22", null ],
     [ "IsVisible", "classvrv_1_1_note.html#a598f4774d77583117482ada9ef5681e4", null ],
     [ "PrepareLayerElementParts", "classvrv_1_1_note.html#ac5c20e5611ce8dba349929f4757a8efa", null ],

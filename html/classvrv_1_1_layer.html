@@ -256,9 +256,9 @@ virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetCla
 virtual ClassId&#160;</td><td class="memItemRight" valign="bottom"><b>GetClassId</b> () const</td></tr>
 <tr class="separator:a193dde1fba281d43e464b4ff44b349b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Methods for adding allowed content</div></td></tr>
-<tr class="memitem:aca24781dca1d322d561a2c5e2ee72815"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer.html#aca24781dca1d322d561a2c5e2ee72815">AddChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
-<tr class="memdesc:aca24781dca1d322d561a2c5e2ee72815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for adding children.  <a href="#aca24781dca1d322d561a2c5e2ee72815">More...</a><br /></td></tr>
-<tr class="separator:aca24781dca1d322d561a2c5e2ee72815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3ece7e57070b36092d85f7b58e7b3a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer.html#add3ece7e57070b36092d85f7b58e7b3a">IsSupportedChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:add3ece7e57070b36092d85f7b58e7b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for checking if a child can be added.  <a href="#add3ece7e57070b36092d85f7b58e7b3a">More...</a><br /></td></tr>
+<tr class="separator:add3ece7e57070b36092d85f7b58e7b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Set and get the stem direction of the layer.</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>This stays STEMDIRECTION_NONE with on single layer in the staff. </p>
 </div></td></tr>
@@ -393,6 +393,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a5d22ebda01e0b254c13d558f5ffdb098">ResetParent</a> ()</td></tr>
 <tr class="memdesc:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the parent of the <a class="el" href="classvrv_1_1_object.html" title="This class represents a basic object. ">Object</a>.  <a href="classvrv_1_1_object.html#a5d22ebda01e0b254c13d558f5ffdb098">More...</a><br /></td></tr>
 <tr class="separator:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">AddChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for adding children.  <a href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">More...</a><br /></td></tr>
+<tr class="separator:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bfb8ee92dbd7e805de0aae51d07d534 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a2bfb8ee92dbd7e805de0aae51d07d534"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a2bfb8ee92dbd7e805de0aae51d07d534">GetIdx</a> () const</td></tr>
 <tr class="memdesc:a2bfb8ee92dbd7e805de0aae51d07d534 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the index position of the object in its parent (-1 if not found) <br /></td></tr>
@@ -1237,37 +1240,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div class="textblock"><p>This class represents a layer in a laid-out score (<a class="el" href="classvrv_1_1_doc.html" title="This class is a hold the data and corresponds to the model of a MVC design pattern. ">Doc</a>). </p>
 <p>A <a class="el" href="classvrv_1_1_layer.html" title="This class represents a layer in a laid-out score (Doc). ">Layer</a> is contained in a <a class="el" href="classvrv_1_1_staff.html" title="This class represents a staff in a laid-out score (Doc). ">Staff</a>. It contains <a class="el" href="classvrv_1_1_layer_element.html" title="This class is a base class for the Layer (&lt;layer&gt;) content. ">LayerElement</a> objects. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aca24781dca1d322d561a2c5e2ee72815"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca24781dca1d322d561a2c5e2ee72815">&#9670;&nbsp;</a></span>AddChild()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void vrv::Layer::AddChild </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td>
-          <td class="paramname"><em>object</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Base method for adding children. </p>
-<p>The method has to be overridden. </p>
-
-<p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">vrv::Object</a>.</p>
-
-</div>
-</div>
 <a id="ad6961cffad65b4347639a7bf93d5e409"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6961cffad65b4347639a7bf93d5e409">&#9670;&nbsp;</a></span>Clone()</h2>
 
@@ -1453,6 +1425,37 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
+<a id="add3ece7e57070b36092d85f7b58e7b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add3ece7e57070b36092d85f7b58e7b3a">&#9670;&nbsp;</a></span>IsSupportedChild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool vrv::Layer::IsSupportedChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Base method for checking if a child can be added. </p>
+<p>The method has to be overridden. </p>
+
+<p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#a06ffb8f7f251aeea862abe1f76b5599d">vrv::Object</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="layer_8h_source.html">layer.h</a></li>
 </ul>
@@ -1462,7 +1465,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_layer.html">Layer</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 13:30:20 by
+    <li class="footer">Generated on Fri Jun 5 2020 15:06:55 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -2,7 +2,6 @@ var classvrv_1_1_neume =
 [
     [ "Neume", "classvrv_1_1_neume.html#a7ef37c29a357205c1140f08f890f8476", null ],
     [ "~Neume", "classvrv_1_1_neume.html#aa01b75b6514a606f567459c710a89753", null ],
-    [ "AddChild", "classvrv_1_1_neume.html#a18976aee09dfd702cbeb5108f5387b18", null ],
     [ "Clone", "classvrv_1_1_neume.html#a89401dde8ddf84d0931a4eeddcc96428", null ],
     [ "GenerateChildMelodic", "classvrv_1_1_neume.html#acbf3e102b8872d17abfa71bf67faa87c", null ],
     [ "GetClassId", "classvrv_1_1_neume.html#a228b98c2affe8cb7679f3e9f52958bbb", null ],
@@ -13,5 +12,6 @@ var classvrv_1_1_neume =
     [ "GetPitchDifferences", "classvrv_1_1_neume.html#ab1a97eb2b91ffeef4641dc1595ece4a5", null ],
     [ "GetPosition", "classvrv_1_1_neume.html#a6e1782681d06194a5f2c5e91ad276b52", null ],
     [ "IsLastInNeume", "classvrv_1_1_neume.html#a3a1aefe2dee1a5f47191f9cb166264d2", null ],
+    [ "IsSupportedChild", "classvrv_1_1_neume.html#a54078846b5d8bf453cdfc9aa0c022ebf", null ],
     [ "Reset", "classvrv_1_1_neume.html#a866f47751f685f9d0c2084f16359935b", null ]
 ];

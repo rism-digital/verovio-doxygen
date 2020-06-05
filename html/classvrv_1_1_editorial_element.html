@@ -167,9 +167,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()<
 virtual ClassId&#160;</td><td class="memItemRight" valign="bottom"><b>GetClassId</b> () const</td></tr>
 <tr class="separator:a0167c3d81c50f835b90a102ac396c228"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Add children to an editorial element.</div></td></tr>
-<tr class="memitem:ab6f6bd0064ed0bb9c4c1ff2ac193bf57"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editorial_element.html#ab6f6bd0064ed0bb9c4c1ff2ac193bf57">AddChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
-<tr class="memdesc:ab6f6bd0064ed0bb9c4c1ff2ac193bf57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for adding children.  <a href="#ab6f6bd0064ed0bb9c4c1ff2ac193bf57">More...</a><br /></td></tr>
-<tr class="separator:ab6f6bd0064ed0bb9c4c1ff2ac193bf57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e47611a92fd87e59eec40244afa3e6b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editorial_element.html#a6e47611a92fd87e59eec40244afa3e6b">IsSupportedChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:a6e47611a92fd87e59eec40244afa3e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for checking if a child can be added.  <a href="#a6e47611a92fd87e59eec40244afa3e6b">More...</a><br /></td></tr>
+<tr class="separator:a6e47611a92fd87e59eec40244afa3e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvrv_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_object.html">vrv::Object</a></td></tr>
 <tr class="memitem:a3b131f39c868a8a1e9b768bdc0eae811 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a3b131f39c868a8a1e9b768bdc0eae811"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a3b131f39c868a8a1e9b768bdc0eae811">IsFloatingObject</a> () const</td></tr>
@@ -293,6 +293,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a5d22ebda01e0b254c13d558f5ffdb098">ResetParent</a> ()</td></tr>
 <tr class="memdesc:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the parent of the <a class="el" href="classvrv_1_1_object.html" title="This class represents a basic object. ">Object</a>.  <a href="classvrv_1_1_object.html#a5d22ebda01e0b254c13d558f5ffdb098">More...</a><br /></td></tr>
 <tr class="separator:a5d22ebda01e0b254c13d558f5ffdb098 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">AddChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for adding children.  <a href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">More...</a><br /></td></tr>
+<tr class="separator:a2ab113f1faf62ee0332687ff981c0948 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bfb8ee92dbd7e805de0aae51d07d534 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a2bfb8ee92dbd7e805de0aae51d07d534"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a2bfb8ee92dbd7e805de0aae51d07d534">GetIdx</a> () const</td></tr>
 <tr class="memdesc:a2bfb8ee92dbd7e805de0aae51d07d534 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the index position of the object in its parent (-1 if not found) <br /></td></tr>
@@ -1140,8 +1143,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div class="textblock"><p>This class is a base class for the editorial element containing musical content, for example &lt;rgd&gt; or &lt;add&gt;. </p>
 <p>It is not an abstract class but should not be instantiated directly. It can be both a container (in score-based MEI) and a boundary (in page-based MEI). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab6f6bd0064ed0bb9c4c1ff2ac193bf57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6f6bd0064ed0bb9c4c1ff2ac193bf57">&#9670;&nbsp;</a></span>AddChild()</h2>
+<a id="a6e47611a92fd87e59eec40244afa3e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e47611a92fd87e59eec40244afa3e6b">&#9670;&nbsp;</a></span>IsSupportedChild()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1150,7 +1153,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void vrv::EditorialElement::AddChild </td>
+          <td class="memname">virtual bool vrv::EditorialElement::IsSupportedChild </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td>
           <td class="paramname"><em>object</em></td><td>)</td>
@@ -1164,12 +1167,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 </table>
 </div><div class="memdoc">
 
-<p>Base method for adding children. </p>
+<p>Base method for checking if a child can be added. </p>
 <p>The method has to be overridden. </p>
 
-<p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948">vrv::Object</a>.</p>
+<p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#a06ffb8f7f251aeea862abe1f76b5599d">vrv::Object</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classvrv_1_1_subst.html#af763668c5f4acbf065d973ccaefff55a">vrv::Subst</a>, <a class="el" href="classvrv_1_1_annot.html#aac605619c2fde6a74e1782d1c84ea4b9">vrv::Annot</a>, <a class="el" href="classvrv_1_1_choice.html#a1d4ddd3267610ef0111fca7b8d1b4ff1">vrv::Choice</a>, and <a class="el" href="classvrv_1_1_app.html#adf95cef5fe23595f282c5132632ad586">vrv::App</a>.</p>
+<p>Reimplemented in <a class="el" href="classvrv_1_1_subst.html#ab67dc54048f21a4fe3c213f949e60261">vrv::Subst</a>, <a class="el" href="classvrv_1_1_annot.html#a76ea8b351c8d1bdf06eb4b83221ed5f2">vrv::Annot</a>, <a class="el" href="classvrv_1_1_choice.html#a9858d8c40d863a944a4d6c4bcade08bb">vrv::Choice</a>, and <a class="el" href="classvrv_1_1_app.html#a3fafd4a8815ac21942ea4497900dc125">vrv::App</a>.</p>
 
 </div>
 </div>
@@ -1200,7 +1203,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_editorial_element.html">EditorialElement</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 13:30:18 by
+    <li class="footer">Generated on Fri Jun 5 2020 15:06:53 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

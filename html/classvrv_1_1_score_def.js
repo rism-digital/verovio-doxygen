@@ -2,7 +2,6 @@ var classvrv_1_1_score_def =
 [
     [ "ScoreDef", "classvrv_1_1_score_def.html#ab886ff9d7830dab871f0ab00d33ce30f", null ],
     [ "~ScoreDef", "classvrv_1_1_score_def.html#ab6536d74aa22516600d0978ef528227e", null ],
-    [ "AddChild", "classvrv_1_1_score_def.html#a84d613522f0f0ff1d87b2560fe03db2b", null ],
     [ "CastOffEncoding", "classvrv_1_1_score_def.html#ae52790aa45bf26e259bdd4fb923820cc", null ],
     [ "CastOffSystems", "classvrv_1_1_score_def.html#a0201cf78e1a7efbf950650f6105fa0cd", null ],
     [ "Clone", "classvrv_1_1_score_def.html#abe767118fd157ab3c3760a8f17beb52f", null ],
@@ -19,6 +18,7 @@ var classvrv_1_1_score_def =
     [ "GetPgHead2", "classvrv_1_1_score_def.html#a6953b3060cef9dc4cb419743355f62b3", null ],
     [ "GetStaffDef", "classvrv_1_1_score_def.html#afd16c952de1b8829f86ee7499bbb1fa6", null ],
     [ "GetStaffNs", "classvrv_1_1_score_def.html#aa914794d578ec1fb7f3327c6be007cd4", null ],
+    [ "IsSupportedChild", "classvrv_1_1_score_def.html#a37bb21b40890e0788b64879b95d337bb", null ],
     [ "ReplaceDrawingValues", "classvrv_1_1_score_def.html#a1225a27011925b11b208356a11bebdd3", null ],
     [ "ReplaceDrawingValues", "classvrv_1_1_score_def.html#a9c783c24225cb3b84f2096cbc727cbca", null ],
     [ "Reset", "classvrv_1_1_score_def.html#ab7953cd561585a76c37a35410e7c2df8", null ],

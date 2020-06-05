@@ -145,6 +145,7 @@ var classvrv_1_1_object =
     [ "IsReferenceObject", "classvrv_1_1_object.html#ad507cfd401ea330cca65a4891b90da80", null ],
     [ "IsRunningElement", "classvrv_1_1_object.html#a5b19179d87ef32147c3d513fa735c07f", null ],
     [ "IsScoreDefElement", "classvrv_1_1_object.html#a774acf3d4a93bd2e94451eeb1b883273", null ],
+    [ "IsSupportedChild", "classvrv_1_1_object.html#a06ffb8f7f251aeea862abe1f76b5599d", null ],
     [ "IsSystemElement", "classvrv_1_1_object.html#a334a7956ff32ade0704f4afdd74f37a6", null ],
     [ "IsTextElement", "classvrv_1_1_object.html#a958bf53eb4117b0438aa5ddb9264c1c8", null ],
     [ "JustifyX", "classvrv_1_1_object.html#af644f5ed4600bb29ca03ded3f95b3467", null ],

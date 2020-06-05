@@ -13,6 +13,7 @@ var classvrv_1_1_rest =
     [ "GetRestGlyph", "classvrv_1_1_rest.html#a8fef749e4b295396a681d123634a926d", null ],
     [ "GetRestLocOffset", "classvrv_1_1_rest.html#a40b214754d02756ccf9c44cd877a8585", null ],
     [ "HasToBeAligned", "classvrv_1_1_rest.html#ac2bbc82110e13e8ff4c1ed1213e03827", null ],
+    [ "IsSupportedChild", "classvrv_1_1_rest.html#a182fd69b5fd2e047956e0d84c547f278", null ],
     [ "PrepareLayerElementParts", "classvrv_1_1_rest.html#ab47924cf3fad7acf067b461538ef2473", null ],
     [ "Reset", "classvrv_1_1_rest.html#a9b09bf380303f8e8be757229a4ba6e45", null ],
     [ "ResetDrawing", "classvrv_1_1_rest.html#a4f2900e1bb9ef0616d9963bed4e906fe", null ],

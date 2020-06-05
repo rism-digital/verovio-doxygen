@@ -2,7 +2,6 @@ var classvrv_1_1_layer =
 [
     [ "Layer", "classvrv_1_1_layer.html#a724dca004187b1e5246e460306d953c2", null ],
     [ "~Layer", "classvrv_1_1_layer.html#a3efb36570915aba509ae375a610699a9", null ],
-    [ "AddChild", "classvrv_1_1_layer.html#aca24781dca1d322d561a2c5e2ee72815", null ],
     [ "AlignHorizontally", "classvrv_1_1_layer.html#ab2e1b95d9f6b6be1a493a2c483094b04", null ],
     [ "AlignHorizontallyEnd", "classvrv_1_1_layer.html#aa8aa7f77d951d8ab597c1556b54e1ad9", null ],
     [ "CalcOnsetOffset", "classvrv_1_1_layer.html#aaac00d03690b56d5c5c61cc3765af867", null ],
@@ -39,6 +38,7 @@ var classvrv_1_1_layer =
     [ "HasCautionStaffDef", "classvrv_1_1_layer.html#a7611e8efaec6d9396d9820673a176890", null ],
     [ "HasStaffDef", "classvrv_1_1_layer.html#afc53eb8da93d5e0dd7762019098a5330", null ],
     [ "Insert", "classvrv_1_1_layer.html#a43f41e5e547889a2f79b54e22f9ac2d5", null ],
+    [ "IsSupportedChild", "classvrv_1_1_layer.html#add3ece7e57070b36092d85f7b58e7b3a", null ],
     [ "PrepareProcessingLists", "classvrv_1_1_layer.html#a0fc8fe59a19f1777afa25b5719d43adb", null ],
     [ "PrepareRpt", "classvrv_1_1_layer.html#ad622e8231dfae3932f38439a3d2502ea", null ],
     [ "Reset", "classvrv_1_1_layer.html#a3041f812957ab5e179668e832b86746e", null ],

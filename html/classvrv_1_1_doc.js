@@ -2,7 +2,6 @@ var classvrv_1_1_doc =
 [
     [ "Doc", "classvrv_1_1_doc.html#a6ae80af9be1fb301753322a4d779bced", null ],
     [ "~Doc", "classvrv_1_1_doc.html#a516c030103274ed0eb17f283b6f55088", null ],
-    [ "AddChild", "classvrv_1_1_doc.html#afa5e63f78721a319b7c195c46a5789d4", null ],
     [ "CalculateMidiTimemap", "classvrv_1_1_doc.html#a064d5e554df56f41a487a42e89056343", null ],
     [ "CastOffDoc", "classvrv_1_1_doc.html#a931f9cb5bb89b797564b30d35f10e0cc", null ],
     [ "CastOffDocBase", "classvrv_1_1_doc.html#a3236e4011cec21159de59f1926882387", null ],
@@ -68,6 +67,7 @@ var classvrv_1_1_doc =
     [ "HasMidiTimemap", "classvrv_1_1_doc.html#afaf7e1be6f9e7737884383c2e20e1ee6", null ],
     [ "HasPage", "classvrv_1_1_doc.html#a7629eb7f06402cbd2d1ca31fbd122941", null ],
     [ "IsMensuralMusicOnly", "classvrv_1_1_doc.html#aa9fb208cd70f668767cd70d0f742baca", null ],
+    [ "IsSupportedChild", "classvrv_1_1_doc.html#a9e5c6d769a8edcf00d38c9acb47b15cd", null ],
     [ "OptimizeScoreDefDoc", "classvrv_1_1_doc.html#a0199c08ac7ad1ae97cf29bf891a05177", null ],
     [ "PrepareDrawing", "classvrv_1_1_doc.html#a957061578a058f9ddeabb0a66cf80cd8", null ],
     [ "PrepareJsonTimemap", "classvrv_1_1_doc.html#ae67fa968d4fc3dd2caadca4ebb07c4d9", null ],

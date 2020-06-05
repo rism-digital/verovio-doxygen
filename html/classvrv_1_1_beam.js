@@ -2,7 +2,6 @@ var classvrv_1_1_beam =
 [
     [ "Beam", "classvrv_1_1_beam.html#ad870ee58fa2f27ea30c1123b74e0f57f", null ],
     [ "~Beam", "classvrv_1_1_beam.html#a60d90b31b728d67d6c1143c264e5af3c", null ],
-    [ "AddChild", "classvrv_1_1_beam.html#a2bf2871cb6ceb877ef0f87acb43e0393", null ],
     [ "CalcStem", "classvrv_1_1_beam.html#a68e2b6e3f79c497e1f9ff3fa6f76af48", null ],
     [ "Clone", "classvrv_1_1_beam.html#aefb179940f5416e7be8297c6869643e5", null ],
     [ "FilterList", "classvrv_1_1_beam.html#ae1196829afda910061e001b95d061091", null ],
@@ -13,6 +12,7 @@ var classvrv_1_1_beam =
     [ "GetPosition", "classvrv_1_1_beam.html#a1c878bf5ec80f7bd9a0f7c2c7aa8a8e0", null ],
     [ "IsFirstInBeam", "classvrv_1_1_beam.html#a6b77b30f89dcc0f8b266138baa8904eb", null ],
     [ "IsLastInBeam", "classvrv_1_1_beam.html#a5ca2c02f0c77954a50b1629d0afe7598", null ],
+    [ "IsSupportedChild", "classvrv_1_1_beam.html#af420328a2d142e36095a11b6cea16f3f", null ],
     [ "Reset", "classvrv_1_1_beam.html#af9658a57fe7b26e291db0937e03aaeae", null ],
     [ "ResetDrawing", "classvrv_1_1_beam.html#ae79b6a8ecf851f3d78d6b490ef62a14a", null ],
     [ "m_beamSegment", "classvrv_1_1_beam.html#a522873ab5d186e4d7036d6a00a408f83", null ]
