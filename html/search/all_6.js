@@ -35,6 +35,7 @@ var searchData=
   ['getcleflocoffset',['GetClefLocOffset',['../classvrv_1_1_clef.html#a3024936525419403269c083ac4332940',1,'vrv::Clef::GetClefLocOffset()'],['../classvrv_1_1_layer.html#ad9c8c466adf27ed39d3e4c4829a96acd',1,'vrv::Layer::GetClefLocOffset()']]],
   ['getcodestr',['GetCodeStr',['../classvrv_1_1_glyph.html#a9b2879e91a774ec78623387d6192b555',1,'vrv::Glyph']]],
   ['getcolheight',['GetColHeight',['../classvrv_1_1_running_element.html#a2d4ed9fdba62957bf02465d72b28c1fb',1,'vrv::RunningElement']]],
+  ['getcomment',['GetComment',['../classvrv_1_1_object.html#aa8a0722010e05e1e2cb04d90a9535cc4',1,'vrv::Object']]],
   ['getcontentheight',['GetContentHeight',['../classvrv_1_1_page.html#af5028d206f7fb8e8b5c58d5644ca5a29',1,'vrv::Page']]],
   ['getcontentwidth',['GetContentWidth',['../classvrv_1_1_page.html#a0608a60a03878f6c8223d103c3765cec',1,'vrv::Page']]],
   ['getcorrespfloatingpositioner',['GetCorrespFloatingPositioner',['../classvrv_1_1_floating_object.html#aef3059c4ebeb1d581e5ce06319d11050',1,'vrv::FloatingObject::GetCorrespFloatingPositioner()'],['../classvrv_1_1_staff_alignment.html#ae46cadae61f249115e75d43ae10b5f4e',1,'vrv::StaffAlignment::GetCorrespFloatingPositioner()']]],
