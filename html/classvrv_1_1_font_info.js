@@ -10,6 +10,7 @@ var classvrv_1_1_font_info =
     [ "GetSupSubScript", "classvrv_1_1_font_info.html#a53b0b14a02ebcc3db998742e7169ea0f", null ],
     [ "GetUnderlined", "classvrv_1_1_font_info.html#a1152bfaac791b4e4a960bb8c164ca77c", null ],
     [ "GetWeight", "classvrv_1_1_font_info.html#a612f2505374399fc9582f682db9448db", null ],
+    [ "GetWidthToHeightRatio", "classvrv_1_1_font_info.html#a94cc3d4f77641394b2c42225af2cd9fa", null ],
     [ "SetEncoding", "classvrv_1_1_font_info.html#a267d705a74cfb4c2a7e09cf0ee10c825", null ],
     [ "SetFaceName", "classvrv_1_1_font_info.html#a2f7575feaa37ec2e82e5dced7c099dd3", null ],
     [ "SetFamily", "classvrv_1_1_font_info.html#a3b6c654cc9d43f04b15d7c004aa70fb1", null ],
@@ -17,5 +18,6 @@ var classvrv_1_1_font_info =
     [ "SetStyle", "classvrv_1_1_font_info.html#ada9029267ee9e139e2c2c2a38c86abf8", null ],
     [ "SetSupSubScript", "classvrv_1_1_font_info.html#aa6a11452473ee4a1876c2866ba8d38d6", null ],
     [ "SetUnderlined", "classvrv_1_1_font_info.html#a6f6ae0b0e01b727c3b2bda7c70a22736", null ],
-    [ "SetWeight", "classvrv_1_1_font_info.html#a985ed22953d016e80f6b801060f215bc", null ]
+    [ "SetWeight", "classvrv_1_1_font_info.html#a985ed22953d016e80f6b801060f215bc", null ],
+    [ "SetWidthToHeightRatio", "classvrv_1_1_font_info.html#a9c360203f29ddf2392219bbdfc2cf200", null ]
 ];

@@ -26,19 +26,19 @@ var NAVTREEINDEX =
 "classvrv_1_1_cast_off_systems_params.html#aa8092edb93f07086a647ff002b06eb71",
 "classvrv_1_1_doc.html#a047c911499ccc787cb9288792ead88b9",
 "classvrv_1_1_expan.html",
-"classvrv_1_1_functor_doc_params.html",
-"classvrv_1_1_humdrum_input.html#a74672d2abfc5eeb6ed1d3ce5d9ac8280",
-"classvrv_1_1_key_sig.html#a8d11b45861f5d76bdd90f07e38524a07",
-"classvrv_1_1_m_rpt.html#a59ada8011f93e34e4c7e57ef188612a9",
-"classvrv_1_1_note.html#aaf328e99a702f986ee1bf61936b49b28",
-"classvrv_1_1_object.html#afe64fa5f9df4e735ed7f1e9a5935a339",
-"classvrv_1_1_options.html#ac8544825e5f9986ce15c27cfd9a9d84e",
-"classvrv_1_1_prepare_time_pointing_params.html",
-"classvrv_1_1_set_staff_def_redraw_flags_params.html#a571793ea2537085e497a83fb2c2926e4",
-"classvrv_1_1_svg_device_context.html#a5d3e723edc1abcc7dd80f0c57130658d",
-"classvrv_1_1_time_spanning_interface.html#a8889df0c70dd8ad214c556b776aa0511",
-"classvrv_1_1_unclear.html#aa5046e312c4ed0ffea9b8e7c28396a85",
-"classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e.html#a5890367e2a1f11fc86eac687fc3f117d"
+"classvrv_1_1_functor.html#a932a34b24d1424607b862d2416b14b86",
+"classvrv_1_1_humdrum_input.html#a7332593c7955c707aad04da2bb708d03",
+"classvrv_1_1_key_sig.html#a5d508aa999353ab19a1bb00e5aa4a356",
+"classvrv_1_1_m_rpt.html#a430c30f62f2d32245a21feb7a0c07fb7",
+"classvrv_1_1_note.html#aa8ed8330eedbe43ecde48e5f83ff8df0",
+"classvrv_1_1_object.html#af8ee73eca8e0a08ae535318c4462fad1",
+"classvrv_1_1_options.html#ac3b1e3abb7a6cdcc1964d2c0e9226529",
+"classvrv_1_1_prepare_rpt_params.html#a3741233cf53d903012ed74f14e44fb9a",
+"classvrv_1_1_set_staff_def_redraw_flags_params.html",
+"classvrv_1_1_svg_device_context.html#a53af8754695059541846ad32bdd6a0a6",
+"classvrv_1_1_time_spanning_interface.html#a662b369eb4ed6068d8b9da4de73108ed",
+"classvrv_1_1_unclear.html#a3b0b6fc4327a3cd9e25e2c7d11f4e5dd",
+"classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

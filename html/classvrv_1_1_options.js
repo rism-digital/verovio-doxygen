@@ -120,6 +120,7 @@ var classvrv_1_1_options =
     [ "m_transpose", "classvrv_1_1_options.html#a33ea0b9feff99e830b71dcba0e3e0255", null ],
     [ "m_transposeSelectedOnly", "classvrv_1_1_options.html#a57839601f0ca3a92fa9f48526f77502a", null ],
     [ "m_unit", "classvrv_1_1_options.html#aeee4defed73cfb5cfbd17428d2b5c696", null ],
+    [ "m_useBraceGlyph", "classvrv_1_1_options.html#a5da26dd52d4cef7b2999a13bf38ddf13", null ],
     [ "m_useFacsimile", "classvrv_1_1_options.html#a13f3cec902927a5e97f748e26fdeca6f", null ],
     [ "m_usePgFooterForAll", "classvrv_1_1_options.html#af2efa96f02df7235c09c9688d8d528c9", null ],
     [ "m_usePgHeaderForAll", "classvrv_1_1_options.html#ad7e3496eb7c557c2ed05af9fc1d6f899", null ]
