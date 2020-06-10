@@ -23,7 +23,7 @@ var classvrv_1_1_measure =
     [ "CastOffSystems", "classvrv_1_1_measure.html#a079569c6758abafd6d1136bbdd1d3b90", null ],
     [ "Clone", "classvrv_1_1_measure.html#ab0185d809c59283051da9becf63e5d66", null ],
     [ "CloneReset", "classvrv_1_1_measure.html#a1ba728231a9d00e4ef654fde6bdf6088", null ],
-    [ "ConvertAnalyticalMarkupEnd", "classvrv_1_1_measure.html#aa263afb8672d1aa39bedac7c661cab2e", null ],
+    [ "ConvertMarkupAnalyticalEnd", "classvrv_1_1_measure.html#a9ef54d0ae25fead7b4be98041aab013e", null ],
     [ "ConvertToCastOffMensural", "classvrv_1_1_measure.html#a7f755d22cf46575c6f1069edeb2f89d5", null ],
     [ "ConvertToPageBased", "classvrv_1_1_measure.html#ad7f854dba4cbe22e81661f7acf10e56c", null ],
     [ "ConvertToUnCastOffMensural", "classvrv_1_1_measure.html#af84b21d4ad5d2220833b830d5b2721aa", null ],

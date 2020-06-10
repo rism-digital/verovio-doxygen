@@ -9,7 +9,7 @@ var classvrv_1_1_note =
     [ "CalcStem", "classvrv_1_1_note.html#aa0505ca9921082084eb7aa32e38cda96", null ],
     [ "CalcStemLenInThirdUnits", "classvrv_1_1_note.html#aaf328e99a702f986ee1bf61936b49b28", null ],
     [ "Clone", "classvrv_1_1_note.html#a4fac2b9a8fb11c0b9b5764535eafd777", null ],
-    [ "ConvertAnalyticalMarkup", "classvrv_1_1_note.html#a6b093a500bfba61fbfcb22b9ced8f59c", null ],
+    [ "ConvertMarkupAnalytical", "classvrv_1_1_note.html#aba95f5cbd284314def2cb1601f5b8887", null ],
     [ "GenerateMIDI", "classvrv_1_1_note.html#a2bc1140c2a72c564fe0806238d7b8684", null ],
     [ "GenerateTimemap", "classvrv_1_1_note.html#a8f88949434306c66a20ed4d28d6bea85", null ],
     [ "GetClassId", "classvrv_1_1_note.html#a88b7a68ecd32a24add5288d9e883730a", null ],

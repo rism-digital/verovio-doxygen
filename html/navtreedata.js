@@ -30,7 +30,7 @@ var NAVTREEINDEX =
 "classvrv_1_1_humdrum_input.html#a74672d2abfc5eeb6ed1d3ce5d9ac8280",
 "classvrv_1_1_key_sig.html#a8d11b45861f5d76bdd90f07e38524a07",
 "classvrv_1_1_m_rpt.html#a59ada8011f93e34e4c7e57ef188612a9",
-"classvrv_1_1_note.html#aae29d17ca525e7bc9c258d5697ae20de",
+"classvrv_1_1_note.html#aaf328e99a702f986ee1bf61936b49b28",
 "classvrv_1_1_object.html#afe64fa5f9df4e735ed7f1e9a5935a339",
 "classvrv_1_1_options.html#ac8544825e5f9986ce15c27cfd9a9d84e",
 "classvrv_1_1_prepare_time_pointing_params.html",
