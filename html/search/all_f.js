@@ -11,6 +11,7 @@ var searchData=
   ['pgfoot2',['PgFoot2',['../classvrv_1_1_pg_foot2.html',1,'vrv']]],
   ['pghead',['PgHead',['../classvrv_1_1_pg_head.html',1,'vrv']]],
   ['pghead2',['PgHead2',['../classvrv_1_1_pg_head2.html',1,'vrv']]],
+  ['phrase',['Phrase',['../classvrv_1_1_phrase.html',1,'vrv']]],
   ['pitchdifferenceto',['PitchDifferenceTo',['../classvrv_1_1_pitch_interface.html#a558b1156e546118a81d6ed12e739f4ab',1,'vrv::PitchInterface']]],
   ['pitchinterface',['PitchInterface',['../classvrv_1_1_pitch_interface.html',1,'vrv']]],
   ['plistinterface',['PlistInterface',['../classvrv_1_1_plist_interface.html',1,'vrv']]],

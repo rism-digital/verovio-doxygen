@@ -1,6 +1,7 @@
 var classvrv_1_1_slur =
 [
     [ "Slur", "classvrv_1_1_slur.html#a1ec0689cb00d78dde080ab663e172b67", null ],
+    [ "Slur", "classvrv_1_1_slur.html#ae47e78f3ed46696bf4b1341175601279", null ],
     [ "~Slur", "classvrv_1_1_slur.html#a6487bbaf1c4a31323a85f7309853d82c", null ],
     [ "AdjustSlur", "classvrv_1_1_slur.html#a4763f0c674829ba0888bb2428a6dac55", null ],
     [ "AdjustSlurCurve", "classvrv_1_1_slur.html#a93a2b9c018e7320df765f63fa672fd28", null ],

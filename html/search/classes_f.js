@@ -9,6 +9,7 @@ var searchData=
   ['pgfoot2',['PgFoot2',['../classvrv_1_1_pg_foot2.html',1,'vrv']]],
   ['pghead',['PgHead',['../classvrv_1_1_pg_head.html',1,'vrv']]],
   ['pghead2',['PgHead2',['../classvrv_1_1_pg_head2.html',1,'vrv']]],
+  ['phrase',['Phrase',['../classvrv_1_1_phrase.html',1,'vrv']]],
   ['pitchinterface',['PitchInterface',['../classvrv_1_1_pitch_interface.html',1,'vrv']]],
   ['plistinterface',['PlistInterface',['../classvrv_1_1_plist_interface.html',1,'vrv']]],
   ['point',['Point',['../classvrv_1_1_point.html',1,'vrv']]],
