@@ -372,9 +372,6 @@ var hierarchy =
     [ "AttMensuralShared", null, [
       [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ]
     ] ],
-    [ "AttMensurLog", null, [
-      [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ]
-    ] ],
     [ "AttMensurVis", null, [
       [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ]
     ] ],
