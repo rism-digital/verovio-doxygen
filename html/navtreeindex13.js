@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"classvrv_1_1_prepare_pointers_by_layer_params.html":[0,0,0,222],
 "classvrv_1_1_prepare_pointers_by_layer_params.html#a46f005825c8b23a6c2df252301c7f466":[0,0,0,222,2],
 "classvrv_1_1_prepare_pointers_by_layer_params.html#a99f6f904a2fe731eb1c2cda1190ca5fc":[0,0,0,222,0],
 "classvrv_1_1_prepare_pointers_by_layer_params.html#aee753e32f488f46c525192a227650b51":[0,0,0,222,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "classvrv_1_1_set_child_zones_params.html#a687862daeba9d9c4d43bfdff66760418":[0,0,0,251,1],
 "classvrv_1_1_set_current_score_def_params.html":[0,0,0,252],
 "classvrv_1_1_set_current_score_def_params.html#a10934c7ebfd2e38b2f94a7cb4ded02ae":[0,0,0,252,2],
-"classvrv_1_1_set_current_score_def_params.html#a1b10a3f611011073175a544bd8e8acab":[0,0,0,252,0],
-"classvrv_1_1_set_current_score_def_params.html#a320d6807517f6e5551f21fb179a1f337":[0,0,0,252,3]
+"classvrv_1_1_set_current_score_def_params.html#a1b10a3f611011073175a544bd8e8acab":[0,0,0,252,0]
 };

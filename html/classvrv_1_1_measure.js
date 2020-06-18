@@ -68,6 +68,7 @@ var classvrv_1_1_measure =
     [ "PrepareTimeSpanningEnd", "classvrv_1_1_measure.html#a37630e9ee44eb6aa4f615fb8ab92aa43", null ],
     [ "PrepareTimestampsEnd", "classvrv_1_1_measure.html#a7a5b451606b8378d0e4cdbc4728996d4", null ],
     [ "Reset", "classvrv_1_1_measure.html#a82fee57a4557d152cdecc5c97c9d1d6b", null ],
+    [ "ResetCachedDrawingX", "classvrv_1_1_measure.html#ab9a3f0be6d3e66a6fafc27ff5a8b7372", null ],
     [ "ResetDrawing", "classvrv_1_1_measure.html#a9592e7c53aac45b95a5a797e37550fe7", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_measure.html#a13da1440d609e772eb651bf169802999", null ],
     [ "Save", "classvrv_1_1_measure.html#a53146c5860c0e95b6510108dbc5493d8", null ],
