@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"classvrv_1_1_options.html#abea51a72096d7e1ef5007badca46d2de":[0,0,0,195,108],
+"classvrv_1_1_options.html#ac07598b462731f6f0386279effeb59f7":[0,0,0,195,88],
 "classvrv_1_1_options.html#ac3b1e3abb7a6cdcc1964d2c0e9226529":[0,0,0,195,40],
 "classvrv_1_1_options.html#ac449a9605b18639f8cd80919af8de323":[0,0,0,195,9],
 "classvrv_1_1_options.html#ac5351533fcb3dc839e95adba9cafbf0d":[0,0,0,195,65],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "classvrv_1_1_prepare_plist_params.html#a308ee12e349603c67845860c48c4565b":[0,0,0,221,2],
 "classvrv_1_1_prepare_plist_params.html#a5c8d41e37323972c0266fe666e4f9324":[0,0,0,221,0],
 "classvrv_1_1_prepare_plist_params.html#a5efe18cd2a558d878f8e8a20b51363df":[0,0,0,221,1],
-"classvrv_1_1_prepare_pointers_by_layer_params.html":[0,0,0,222],
-"classvrv_1_1_prepare_pointers_by_layer_params.html#a46f005825c8b23a6c2df252301c7f466":[0,0,0,222,2],
-"classvrv_1_1_prepare_pointers_by_layer_params.html#a99f6f904a2fe731eb1c2cda1190ca5fc":[0,0,0,222,0]
+"classvrv_1_1_prepare_pointers_by_layer_params.html":[0,0,0,222]
 };
