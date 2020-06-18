@@ -23,7 +23,7 @@ var searchData=
   ['calcthickbezier',['CalcThickBezier',['../classvrv_1_1_bounding_box.html#ae087d56d7ff270c908e3a723be01f6e7',1,'vrv::BoundingBox']]],
   ['calculatemiditimemap',['CalculateMidiTimemap',['../classvrv_1_1_doc.html#a064d5e554df56f41a487a42e89056343',1,'vrv::Doc']]],
   ['castoffdoc',['CastOffDoc',['../classvrv_1_1_doc.html#a931f9cb5bb89b797564b30d35f10e0cc',1,'vrv::Doc']]],
-  ['castoffdocbase',['CastOffDocBase',['../classvrv_1_1_doc.html#a3236e4011cec21159de59f1926882387',1,'vrv::Doc']]],
+  ['castoffdocbase',['CastOffDocBase',['../classvrv_1_1_doc.html#acee3dd13eb5525e6527cee8adb0359f7',1,'vrv::Doc']]],
   ['castoffencoding',['CastOffEncoding',['../classvrv_1_1_editorial_element.html#a639ec21fae82c03f57cc3f61a4e66362',1,'vrv::EditorialElement::CastOffEncoding()'],['../classvrv_1_1_ending.html#a337f773d94d752ac4cf20eb2e87cb4f2',1,'vrv::Ending::CastOffEncoding()'],['../classvrv_1_1_measure.html#a3f7917b1aee0d8393a9e44484eda2c2d',1,'vrv::Measure::CastOffEncoding()'],['../classvrv_1_1_object.html#ae1320bf0b5a56f033dcc561147225ba7',1,'vrv::Object::CastOffEncoding()'],['../classvrv_1_1_pb.html#a7fda5cd00884f531269370f5609793c5',1,'vrv::Pb::CastOffEncoding()'],['../classvrv_1_1_sb.html#afc89859f4b7333bb04bde88d995c4732',1,'vrv::Sb::CastOffEncoding()'],['../classvrv_1_1_score_def.html#ae52790aa45bf26e259bdd4fb923820cc',1,'vrv::ScoreDef::CastOffEncoding()'],['../classvrv_1_1_system_element.html#a8bde0f7535211864ea3d298c32ff1ab2',1,'vrv::SystemElement::CastOffEncoding()']]],
   ['castoffencodingdoc',['CastOffEncodingDoc',['../classvrv_1_1_doc.html#a1f4801d2f14675afd7a372f525cbed2d',1,'vrv::Doc']]],
   ['castofflinedoc',['CastOffLineDoc',['../classvrv_1_1_doc.html#a4676652a2b466a52a0b5462f6bd19031',1,'vrv::Doc']]],

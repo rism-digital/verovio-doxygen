@@ -4,7 +4,7 @@ var classvrv_1_1_doc =
     [ "~Doc", "classvrv_1_1_doc.html#a516c030103274ed0eb17f283b6f55088", null ],
     [ "CalculateMidiTimemap", "classvrv_1_1_doc.html#a064d5e554df56f41a487a42e89056343", null ],
     [ "CastOffDoc", "classvrv_1_1_doc.html#a931f9cb5bb89b797564b30d35f10e0cc", null ],
-    [ "CastOffDocBase", "classvrv_1_1_doc.html#a3236e4011cec21159de59f1926882387", null ],
+    [ "CastOffDocBase", "classvrv_1_1_doc.html#acee3dd13eb5525e6527cee8adb0359f7", null ],
     [ "CastOffEncodingDoc", "classvrv_1_1_doc.html#a1f4801d2f14675afd7a372f525cbed2d", null ],
     [ "CastOffLineDoc", "classvrv_1_1_doc.html#a4676652a2b466a52a0b5462f6bd19031", null ],
     [ "CastOffRunningElements", "classvrv_1_1_doc.html#ab50a46ae81caf105c0884f38ee88502e", null ],

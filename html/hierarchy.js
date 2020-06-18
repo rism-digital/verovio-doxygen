@@ -142,6 +142,9 @@ var hierarchy =
     [ "AttDurationLogical", null, [
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ]
     ] ],
+    [ "AttDurationQuality", null, [
+      [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ]
+    ] ],
     [ "AttDurationRatio", null, [
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ],
       [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ],
