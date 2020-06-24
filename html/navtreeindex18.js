@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"classvrv_1_1data___l_i_n_e_w_i_d_t_h.html#a3ae8bf5b3b764e33eeff058cc3d2924a":[0,0,0,79,6],
 "classvrv_1_1data___l_i_n_e_w_i_d_t_h.html#a3ed7694491e34650345960e8002587d5":[0,0,0,79,9],
 "classvrv_1_1data___l_i_n_e_w_i_d_t_h.html#a6adda1bd5ffdd57975a7e98fdf39a73b":[0,0,0,79,1],
 "classvrv_1_1data___l_i_n_e_w_i_d_t_h.html#a6c455c4b49d2140c4cb9babcdde6167f":[0,0,0,79,3],
@@ -94,8 +95,8 @@ var NAVTREEINDEX18 =
 "files.html":[1,0],
 "floatingobject_8h_source.html":[1,0,54],
 "ftrem_8h_source.html":[1,0,55],
-"functions.html":[0,3,0],
 "functions.html":[0,3,0,0],
+"functions.html":[0,3,0],
 "functions_b.html":[0,3,0,1],
 "functions_c.html":[0,3,0,2],
 "functions_d.html":[0,3,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "tuplet_8h_source.html":[1,0,152],
 "turn_8h_source.html":[1,0,153],
 "unclear_8h_source.html":[1,0,154],
-"verse_8h_source.html":[1,0,155],
-"verticalaligner_8h_source.html":[1,0,156]
+"verse_8h_source.html":[1,0,155]
 };
