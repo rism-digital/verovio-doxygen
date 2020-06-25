@@ -15,6 +15,7 @@ var classvrv_1_1_layer_element =
     [ "FindSpannedLayerElements", "classvrv_1_1_layer_element.html#a5333826e9fc9e8438f4852208113e418", null ],
     [ "GenerateMIDI", "classvrv_1_1_layer_element.html#a7454a0a6922a5682093047666c63102f", null ],
     [ "GenerateTimemap", "classvrv_1_1_layer_element.html#acaa8acf77da1dec85348c36879318e97", null ],
+    [ "GenerateZoneBounds", "classvrv_1_1_layer_element.html#a0dce2be85a425e83b627c8d0a9a5b0f6", null ],
     [ "GetAlignment", "classvrv_1_1_layer_element.html#aa86e897a30a465eb14823ff0b7d6c32c", null ],
     [ "GetAlignmentDuration", "classvrv_1_1_layer_element.html#a21200c6f95f9bac5ef98b7cd4c5d7e26", null ],
     [ "GetAlignmentLayerN", "classvrv_1_1_layer_element.html#a2fb9126c18e349cefe4a66479c97f17a", null ],

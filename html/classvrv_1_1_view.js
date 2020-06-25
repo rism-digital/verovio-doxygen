@@ -70,7 +70,7 @@ var classvrv_1_1_view =
     [ "DrawLedgerLines", "classvrv_1_1_view.html#a2ad6d68a763473fd74419d6680e181a6", null ],
     [ "DrawLigature", "classvrv_1_1_view.html#a1bbedacd80efd2c9bbd89055a9f9ce81", null ],
     [ "DrawLigatureNote", "classvrv_1_1_view.html#aa33a36bdc73dc4b73b1e3ccb78fcf4d5", null ],
-    [ "DrawLyricString", "classvrv_1_1_view.html#a4ce196b3b1b4e2abcf48b248c15b429d", null ],
+    [ "DrawLyricString", "classvrv_1_1_view.html#a34528d0e5176379202314d9bf3ab85e4", null ],
     [ "DrawMaximaToBrevis", "classvrv_1_1_view.html#ad02fe9344075d7cdfe8505472004c84e", null ],
     [ "DrawMeasure", "classvrv_1_1_view.html#a8834997867b9112c8b023c0899963cb4", null ],
     [ "DrawMeasureChildren", "classvrv_1_1_view.html#a67afe613a42dbeb6a91796438bee7a91", null ],

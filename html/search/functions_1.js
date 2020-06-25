@@ -57,5 +57,6 @@ var searchData=
   ['converttopagebaseddoc',['ConvertToPageBasedDoc',['../classvrv_1_1_doc.html#a1f5b58cd73b6f04ce22ebf231c69db32',1,'vrv::Doc']]],
   ['converttouncastoffmensural',['ConvertToUnCastOffMensural',['../classvrv_1_1_layer.html#a0c1820fbd11943a83be7d9fc85bd372c',1,'vrv::Layer::ConvertToUnCastOffMensural()'],['../classvrv_1_1_measure.html#af84b21d4ad5d2220833b830d5b2721aa',1,'vrv::Measure::ConvertToUnCastOffMensural()'],['../classvrv_1_1_section.html#a40e9dad5539e0a06760cfc518956f4a5',1,'vrv::Section::ConvertToUnCastOffMensural()']]],
   ['converttouncastoffmensuraldoc',['ConvertToUnCastOffMensuralDoc',['../classvrv_1_1_doc.html#a560f44ff928ec391ba5d86a1785c4590',1,'vrv::Doc']]],
-  ['copychildren',['CopyChildren',['../classvrv_1_1_horizontal_aligner.html#aa5ef753812c2c22af63fa22c1c734934',1,'vrv::HorizontalAligner::CopyChildren()'],['../classvrv_1_1_object.html#a4bf38f527d70161c92062a2347b7c11e',1,'vrv::Object::CopyChildren()'],['../classvrv_1_1_system_aligner.html#a3bc76fd12fc590ddc2f40681cc17965a',1,'vrv::SystemAligner::CopyChildren()']]]
+  ['copychildren',['CopyChildren',['../classvrv_1_1_horizontal_aligner.html#aa5ef753812c2c22af63fa22c1c734934',1,'vrv::HorizontalAligner::CopyChildren()'],['../classvrv_1_1_object.html#a4bf38f527d70161c92062a2347b7c11e',1,'vrv::Object::CopyChildren()'],['../classvrv_1_1_system_aligner.html#a3bc76fd12fc590ddc2f40681cc17965a',1,'vrv::SystemAligner::CopyChildren()']]],
+  ['createdefaultzone',['CreateDefaultZone',['../classvrv_1_1_syl.html#a61983aa1e78d32047fffe5f3c083c09f',1,'vrv::Syl']]]
 ];

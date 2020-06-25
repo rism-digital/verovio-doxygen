@@ -8,5 +8,6 @@ var classvrv_1_1_syllable =
     [ "HasToBeAligned", "classvrv_1_1_syllable.html#a67f3160296ef03037d663926cc7806d7", null ],
     [ "Init", "classvrv_1_1_syllable.html#a821a1929e0cdb8e6323d17ecfbeac9ea", null ],
     [ "IsSupportedChild", "classvrv_1_1_syllable.html#a7e8020b5fa554bd0d3a305bbded89227", null ],
+    [ "MarkupAddSyl", "classvrv_1_1_syllable.html#a380ee2dac242e43806ceb337600ea36f", null ],
     [ "Reset", "classvrv_1_1_syllable.html#a0ca49af721550295a990e95a9e3ca2ba", null ]
 ];

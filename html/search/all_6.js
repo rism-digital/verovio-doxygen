@@ -8,6 +8,7 @@ var searchData=
   ['generatemidiparams',['GenerateMIDIParams',['../classvrv_1_1_generate_m_i_d_i_params.html',1,'vrv']]],
   ['generatetimemap',['GenerateTimemap',['../classvrv_1_1_layer_element.html#acaa8acf77da1dec85348c36879318e97',1,'vrv::LayerElement::GenerateTimemap()'],['../classvrv_1_1_measure.html#a950524d9d7199aea4a2848c128893ac3',1,'vrv::Measure::GenerateTimemap()'],['../classvrv_1_1_note.html#a8f88949434306c66a20ed4d28d6bea85',1,'vrv::Note::GenerateTimemap()'],['../classvrv_1_1_object.html#abe889073301d6e1dfe55e725b6532948',1,'vrv::Object::GenerateTimemap()']]],
   ['generatetimemapparams',['GenerateTimemapParams',['../classvrv_1_1_generate_timemap_params.html',1,'vrv']]],
+  ['generatezonebounds',['GenerateZoneBounds',['../classvrv_1_1_layer_element.html#a0dce2be85a425e83b627c8d0a9a5b0f6',1,'vrv::LayerElement']]],
   ['getaccidcount',['GetAccidCount',['../classvrv_1_1_key_sig.html#ad4b4f7de43afe0ce8d66e4a2944ab5e8',1,'vrv::KeySig']]],
   ['getaccidpnameat',['GetAccidPnameAt',['../classvrv_1_1_key_sig.html#a02cd5e22517b0651ea6dbec0e0044230',1,'vrv::KeySig']]],
   ['getaccidtype',['GetAccidType',['../classvrv_1_1_key_sig.html#ae862f334460bcf1cbf4311a696f52921',1,'vrv::KeySig']]],

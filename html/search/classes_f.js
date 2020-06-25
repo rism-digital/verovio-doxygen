@@ -17,6 +17,7 @@ var searchData=
   ['positioninterface',['PositionInterface',['../classvrv_1_1_position_interface.html',1,'vrv']]],
   ['prepareboundariesparams',['PrepareBoundariesParams',['../classvrv_1_1_prepare_boundaries_params.html',1,'vrv']]],
   ['preparecrossstaffparams',['PrepareCrossStaffParams',['../classvrv_1_1_prepare_cross_staff_params.html',1,'vrv']]],
+  ['preparefacsimileparams',['PrepareFacsimileParams',['../classvrv_1_1_prepare_facsimile_params.html',1,'vrv']]],
   ['preparefloatinggrpsparams',['PrepareFloatingGrpsParams',['../classvrv_1_1_prepare_floating_grps_params.html',1,'vrv']]],
   ['preparelinkingparams',['PrepareLinkingParams',['../classvrv_1_1_prepare_linking_params.html',1,'vrv']]],
   ['preparelyricsparams',['PrepareLyricsParams',['../classvrv_1_1_prepare_lyrics_params.html',1,'vrv']]],

@@ -26,6 +26,7 @@ var searchData=
   ['findbycomparisonparams',['FindByComparisonParams',['../classvrv_1_1_find_by_comparison_params.html',1,'vrv']]],
   ['findbyuuid',['FindByUuid',['../classvrv_1_1_object.html#a3a8ac50b3a292c42c0b24d7c7a6cd3b1',1,'vrv::Object']]],
   ['findbyuuidparams',['FindByUuidParams',['../classvrv_1_1_find_by_uuid_params.html',1,'vrv']]],
+  ['findchildbycomparisonparams',['FindChildByComparisonParams',['../classvrv_1_1_find_child_by_comparison_params.html',1,'vrv']]],
   ['finddescendantbycomparison',['FindDescendantByComparison',['../classvrv_1_1_object.html#a75077fdacaa928e36fe20b90eaca7a7a',1,'vrv::Object']]],
   ['finddescendantbytype',['FindDescendantByType',['../classvrv_1_1_object.html#a2c65f3e559db5add1055a45e60d44536',1,'vrv::Object']]],
   ['finddescendantbyuuid',['FindDescendantByUuid',['../classvrv_1_1_object.html#af7647ce739175bbba03428b59969727c',1,'vrv::Object']]],

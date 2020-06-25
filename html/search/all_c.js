@@ -81,6 +81,7 @@ var searchData=
   ['m_5fxabs',['m_xAbs',['../classvrv_1_1_layer_element.html#a66bf79ef721a113ab2e5ff354313fe2e',1,'vrv::LayerElement::m_xAbs()'],['../classvrv_1_1_measure.html#a01d1317a4566fcddf833550820277d91',1,'vrv::Measure::m_xAbs()'],['../classvrv_1_1_system.html#a81e14c9e77b2637c4899c8ce0646ca59',1,'vrv::System::m_xAbs()']]],
   ['m_5fyabs',['m_yAbs',['../classvrv_1_1_staff.html#abf3552a9fecc27efcc21fae14cf1836f',1,'vrv::Staff::m_yAbs()'],['../classvrv_1_1_system.html#a876d12958421f4a97b13dabd64deeb08',1,'vrv::System::m_yAbs()']]],
   ['makevisible',['MakeVisible',['../classvrv_1_1_mdiv.html#aed76997a32ca68f9ca9f2c1dc614bca6',1,'vrv::Mdiv']]],
+  ['markupaddsyl',['MarkupAddSyl',['../classvrv_1_1_syllable.html#a380ee2dac242e43806ceb337600ea36f',1,'vrv::Syllable']]],
   ['mdiv',['Mdiv',['../classvrv_1_1_mdiv.html',1,'vrv']]],
   ['measure',['Measure',['../classvrv_1_1_measure.html',1,'vrv']]],
   ['measurealigner',['MeasureAligner',['../classvrv_1_1_measure_aligner.html',1,'vrv::MeasureAligner'],['../classvrv_1_1_measure_aligner.html#ad32c2551ae190f29ae458fbe5185a025',1,'vrv::MeasureAligner::MeasureAligner()']]],

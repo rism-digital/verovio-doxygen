@@ -18,7 +18,7 @@ var classvrv_1_1_b_box_device_context =
     [ "DrawSimpleBezierPath", "classvrv_1_1_b_box_device_context.html#a04ceb7fecd8fcb8ffd17ae697236c285", null ],
     [ "DrawSpline", "classvrv_1_1_b_box_device_context.html#a0591f1fac44c88ebbc9f41ed1fe347e9", null ],
     [ "DrawSvgShape", "classvrv_1_1_b_box_device_context.html#ac08b2830e09a3116517f3b240ca4bbc7", null ],
-    [ "DrawText", "classvrv_1_1_b_box_device_context.html#a19ca974e47e0a18b958b607f2848dd11", null ],
+    [ "DrawText", "classvrv_1_1_b_box_device_context.html#a7124aa926bba2a9e7211ceb3bececf76", null ],
     [ "EndGraphic", "classvrv_1_1_b_box_device_context.html#adc1dba465d87b817623d46338d1b1df9", null ],
     [ "EndPage", "classvrv_1_1_b_box_device_context.html#a0dc95a379d74f6404bb7395dfb5e7433", null ],
     [ "EndResumedGraphic", "classvrv_1_1_b_box_device_context.html#aba9a073664281f51aa42cacf9337d7bc", null ],

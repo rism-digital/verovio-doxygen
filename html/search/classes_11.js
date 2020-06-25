@@ -11,7 +11,6 @@ var searchData=
   ['setalignmentpitchposparams',['SetAlignmentPitchPosParams',['../classvrv_1_1_set_alignment_pitch_pos_params.html',1,'vrv']]],
   ['setalignmentxposparams',['SetAlignmentXPosParams',['../classvrv_1_1_set_alignment_x_pos_params.html',1,'vrv']]],
   ['setcautionaryscoredefparams',['SetCautionaryScoreDefParams',['../classvrv_1_1_set_cautionary_score_def_params.html',1,'vrv']]],
-  ['setchildzonesparams',['SetChildZonesParams',['../classvrv_1_1_set_child_zones_params.html',1,'vrv']]],
   ['setcurrentscoredefparams',['SetCurrentScoreDefParams',['../classvrv_1_1_set_current_score_def_params.html',1,'vrv']]],
   ['setoverflowbboxesparams',['SetOverflowBBoxesParams',['../classvrv_1_1_set_overflow_b_boxes_params.html',1,'vrv']]],
   ['setstaffdefredrawflagsparams',['SetStaffDefRedrawFlagsParams',['../classvrv_1_1_set_staff_def_redraw_flags_params.html',1,'vrv']]],

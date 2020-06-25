@@ -1,7 +1,7 @@
 var searchData=
 [
   ['edit',['Edit',['../classvrv_1_1_toolkit.html#a38a9103a6e2e3196fa40f2170874793b',1,'vrv::Toolkit']]],
-  ['editinfo',['EditInfo',['../classvrv_1_1_editor_toolkit.html#a1be064ecb6ffea1b27712648a19e1312',1,'vrv::EditorToolkit::EditInfo()'],['../classvrv_1_1_editor_toolkit_c_m_n.html#ad22d7835dbf78b2546745d31075aeb88',1,'vrv::EditorToolkitCMN::EditInfo()']]],
+  ['editinfo',['EditInfo',['../classvrv_1_1_editor_toolkit.html#a1be064ecb6ffea1b27712648a19e1312',1,'vrv::EditorToolkit::EditInfo()'],['../classvrv_1_1_editor_toolkit_c_m_n.html#ad22d7835dbf78b2546745d31075aeb88',1,'vrv::EditorToolkitCMN::EditInfo()'],['../classvrv_1_1_editor_toolkit_neume.html#af12a007a759c5fbc0d4308d384cf3545',1,'vrv::EditorToolkitNeume::EditInfo()']]],
   ['editorialelement',['EditorialElement',['../classvrv_1_1_editorial_element.html',1,'vrv']]],
   ['editortoolkit',['EditorToolkit',['../classvrv_1_1_editor_toolkit.html',1,'vrv']]],
   ['editortoolkitcmn',['EditorToolkitCMN',['../classvrv_1_1_editor_toolkit_c_m_n.html',1,'vrv']]],

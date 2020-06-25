@@ -79,6 +79,7 @@ var searchData=
   ['converttouncastoffmensuralparams',['ConvertToUnCastOffMensuralParams',['../classvrv_1_1_convert_to_un_cast_off_mensural_params.html',1,'vrv']]],
   ['copychildren',['CopyChildren',['../classvrv_1_1_horizontal_aligner.html#aa5ef753812c2c22af63fa22c1c734934',1,'vrv::HorizontalAligner::CopyChildren()'],['../classvrv_1_1_object.html#a4bf38f527d70161c92062a2347b7c11e',1,'vrv::Object::CopyChildren()'],['../classvrv_1_1_system_aligner.html#a3bc76fd12fc590ddc2f40681cc17965a',1,'vrv::SystemAligner::CopyChildren()']]],
   ['corr',['Corr',['../classvrv_1_1_corr.html',1,'vrv']]],
+  ['createdefaultzone',['CreateDefaultZone',['../classvrv_1_1_syl.html#a61983aa1e78d32047fffe5f3c083c09f',1,'vrv::Syl']]],
   ['curvespannedelement',['CurveSpannedElement',['../classvrv_1_1_curve_spanned_element.html',1,'vrv']]],
   ['custos',['Custos',['../classvrv_1_1_custos.html',1,'vrv']]]
 ];

@@ -12,6 +12,7 @@ var searchData=
   ['findallreferencedobjectsparams',['FindAllReferencedObjectsParams',['../classvrv_1_1_find_all_referenced_objects_params.html',1,'vrv']]],
   ['findbycomparisonparams',['FindByComparisonParams',['../classvrv_1_1_find_by_comparison_params.html',1,'vrv']]],
   ['findbyuuidparams',['FindByUuidParams',['../classvrv_1_1_find_by_uuid_params.html',1,'vrv']]],
+  ['findchildbycomparisonparams',['FindChildByComparisonParams',['../classvrv_1_1_find_child_by_comparison_params.html',1,'vrv']]],
   ['findextremebycomparisonparams',['FindExtremeByComparisonParams',['../classvrv_1_1_find_extreme_by_comparison_params.html',1,'vrv']]],
   ['findspannedlayerelementsparams',['FindSpannedLayerElementsParams',['../classvrv_1_1_find_spanned_layer_elements_params.html',1,'vrv']]],
   ['flag',['Flag',['../classvrv_1_1_flag.html',1,'vrv']]],
