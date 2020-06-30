@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"structvrv_1_1_closest_b_b.html#acdc0607c597cc92e988e9d9c41173d47":[0,0,0,66,0],
 "structvrv_1_1_closest_b_b.html#acea28781d0d1b123aae14c872a6367eb":[0,0,0,66,3],
 "structvrv_1_1_closest_b_b.html#ae4c15a00f3ead7ec067bf72ce647aa55":[0,0,0,66,2],
 "structvrv_1_1_int_tree.html":[0,0,0,143],

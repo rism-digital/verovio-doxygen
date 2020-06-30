@@ -13,6 +13,7 @@ var classvrv_1_1_options =
     [ "m_beamMaxSlope", "classvrv_1_1_options.html#acb34a2439c346557d99368a878510357", null ],
     [ "m_beamMinSlope", "classvrv_1_1_options.html#af54a9973eae907c92bfb5d1e285449f2", null ],
     [ "m_bottomMarginHarm", "classvrv_1_1_options.html#a857f563b1327563c916833eb3ce8a239", null ],
+    [ "m_bottomMarginPgHead", "classvrv_1_1_options.html#a04d38d4149806f4713dd6be8370b7d61", null ],
     [ "m_breaks", "classvrv_1_1_options.html#aab37d3899f4c42e7838ed389f946c4b3", null ],
     [ "m_choiceXPathQuery", "classvrv_1_1_options.html#a3b9c987a4dcdf48c94e242f5f46c77ff", null ],
     [ "m_condenseEncoded", "classvrv_1_1_options.html#a2c2fb3485b53542a0488bea7df0d1949", null ],
