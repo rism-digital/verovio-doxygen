@@ -49,6 +49,7 @@ var classvrv_1_1_view =
     [ "DrawFig", "classvrv_1_1_view.html#a0bbce1fc7c6f6cd943da83e8866a1a7b", null ],
     [ "DrawFilledRectangle", "classvrv_1_1_view.html#a5d7fe1e4eeaaecd22a796703ee9c630f", null ],
     [ "DrawFilledRoundedRectangle", "classvrv_1_1_view.html#a1237c4e9e5b7fd25787933eca04e9372", null ],
+    [ "DrawFing", "classvrv_1_1_view.html#a3360426bb9b5843ebcb1375ae43eacc3", null ],
     [ "DrawFlag", "classvrv_1_1_view.html#a248475c16901e329189a1daf1470bd40", null ],
     [ "DrawFTrem", "classvrv_1_1_view.html#a2cc270dfd01f43d976d0b9dfe8ee7dd2", null ],
     [ "DrawGliss", "classvrv_1_1_view.html#a31c72e813fd88ae486ad754378aa8267", null ],

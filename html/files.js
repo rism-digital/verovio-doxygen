@@ -54,6 +54,7 @@ var files =
     [ "fb.h", "fb_8h_source.html", null ],
     [ "fermata.h", "fermata_8h_source.html", null ],
     [ "fig.h", "fig_8h_source.html", null ],
+    [ "fing.h", "fing_8h_source.html", null ],
     [ "floatingobject.h", "floatingobject_8h_source.html", null ],
     [ "ftrem.h", "ftrem_8h_source.html", null ],
     [ "functorparams.h", "functorparams_8h_source.html", null ],

@@ -118,6 +118,7 @@ var annotated_dup =
       [ "FindChildByComparisonParams", "classvrv_1_1_find_child_by_comparison_params.html", "classvrv_1_1_find_child_by_comparison_params" ],
       [ "FindExtremeByComparisonParams", "classvrv_1_1_find_extreme_by_comparison_params.html", "classvrv_1_1_find_extreme_by_comparison_params" ],
       [ "FindSpannedLayerElementsParams", "classvrv_1_1_find_spanned_layer_elements_params.html", "classvrv_1_1_find_spanned_layer_elements_params" ],
+      [ "Fing", "classvrv_1_1_fing.html", "classvrv_1_1_fing" ],
       [ "Flag", "classvrv_1_1_flag.html", "classvrv_1_1_flag" ],
       [ "FloatingCurvePositioner", "classvrv_1_1_floating_curve_positioner.html", "classvrv_1_1_floating_curve_positioner" ],
       [ "FloatingObject", "classvrv_1_1_floating_object.html", "classvrv_1_1_floating_object" ],
