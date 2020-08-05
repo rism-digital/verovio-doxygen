@@ -97,6 +97,7 @@ var classvrv_1_1_options =
     [ "m_rightMarginRest", "classvrv_1_1_options.html#a43903ef128b090106f0ed59d79d82c44", null ],
     [ "m_rightMarginRightBarLine", "classvrv_1_1_options.html#af805838d6677ab9ad2abbee7a6f77a78", null ],
     [ "m_selectors", "classvrv_1_1_options.html#ad197649417d09e309b4e38f26fa8c21a", null ],
+    [ "m_shrinkToFit", "classvrv_1_1_options.html#a26335379e5d001bcf4014f3d9b25eb60", null ],
     [ "m_slurControlPoints", "classvrv_1_1_options.html#aa92cbe7ceabdd6210e6ae066176a28e8", null ],
     [ "m_slurCurveFactor", "classvrv_1_1_options.html#a514004f22db6cd842d6a38bce4e184ac", null ],
     [ "m_slurHeightFactor", "classvrv_1_1_options.html#a481cc78411ddd72c97f3a4638937c228", null ],
