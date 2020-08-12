@@ -127,7 +127,7 @@ var classvrv_1_1_object =
     [ "GetTextDirInterface", "classvrv_1_1_object.html#ac2308546f247b47d6fdaaf0e90490fa5", null ],
     [ "GetTimePointInterface", "classvrv_1_1_object.html#a738ca662cfaa09bb0122966cb29b43c6", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_object.html#a2ac1817c7492a51e6bb550f3002b32de", null ],
-    [ "GetUuid", "classvrv_1_1_object.html#ac8703fe5f635125d8377e9060d123c64", null ],
+    [ "GetUuid", "classvrv_1_1_object.html#a7bcc3062c90aa6f927f8c51f180b585b", null ],
     [ "HasAttClass", "classvrv_1_1_object.html#a9020ecbd4da7cb50ed8ffa686eeae8e5", null ],
     [ "HasAttribute", "classvrv_1_1_object.html#a07880f4ad709e37ca6b5483110905383", null ],
     [ "HasClosingComment", "classvrv_1_1_object.html#ad52c48d64fdb14dbc0a4dcf40aa87295", null ],
