@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"neume_8h_source.html":[1,0,94],
+"note_8h_source.html":[1,0,95],
 "num_8h_source.html":[1,0,96],
 "object_8h_source.html":[1,0,97],
 "octave_8h_source.html":[1,0,98],

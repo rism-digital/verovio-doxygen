@@ -136,6 +136,7 @@ var classvrv_1_1_view =
     [ "DrawSyllable", "classvrv_1_1_view.html#a578b7e223344dce694d64c2fc9f0f5d5", null ],
     [ "DrawSystem", "classvrv_1_1_view.html#a3738d55851defd326fd3e6b546765ca7", null ],
     [ "DrawSystemChildren", "classvrv_1_1_view.html#a981adfebaaef85eb343817cf9cc41779", null ],
+    [ "DrawSystemDivider", "classvrv_1_1_view.html#a1feb986b7ced0dc98c09369a5236226a", null ],
     [ "DrawSystemEditorialElement", "classvrv_1_1_view.html#ac951fa41a3708f23d8c08b4b3b727aac", null ],
     [ "DrawSystemElement", "classvrv_1_1_view.html#ad83326a59ee81da6e7c872f2972651d1", null ],
     [ "DrawSystemList", "classvrv_1_1_view.html#a15a0eaf99cb4c8464853acb924eb8650", null ],

@@ -25,6 +25,7 @@ var searchData=
   ['getattributes',['GetAttributes',['../classvrv_1_1_object.html#aeb7e152a62704071901972bbfa06062c',1,'vrv::Object']]],
   ['getbeatrptalignmentduration',['GetBeatRptAlignmentDuration',['../classvrv_1_1_beat_rpt.html#a46d10bc1d9d4d3fae07fc25b08621b10',1,'vrv::BeatRpt']]],
   ['getbottomalignment',['GetBottomAlignment',['../classvrv_1_1_system_aligner.html#af9fa20703a935c4c82106847e1949565',1,'vrv::SystemAligner']]],
+  ['getbottomvisiblestaff',['GetBottomVisibleStaff',['../classvrv_1_1_measure.html#aebb30d801973e472dade538e89a1ee93',1,'vrv::Measure']]],
   ['getboundingbox',['GetBoundingBox',['../classvrv_1_1_glyph.html#aa1680eb7e1403b16a86a9b2d4b4585f4',1,'vrv::Glyph']]],
   ['getcellheight',['GetCellHeight',['../classvrv_1_1_running_element.html#a72615f0ef616081ba1b268d35cf5d98f',1,'vrv::RunningElement']]],
   ['getchild',['GetChild',['../classvrv_1_1_object.html#a6bd78730c9d5f0302710213488708adb',1,'vrv::Object']]],

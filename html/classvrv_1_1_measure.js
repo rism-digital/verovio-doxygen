@@ -31,6 +31,7 @@ var classvrv_1_1_measure =
     [ "FillStaffCurrentTimeSpanningEnd", "classvrv_1_1_measure.html#a10521d415e6f5270a6f26c67cf5b3427", null ],
     [ "GenerateMIDI", "classvrv_1_1_measure.html#af0a102d6699c8d6949f3ee9a3390859b", null ],
     [ "GenerateTimemap", "classvrv_1_1_measure.html#a950524d9d7199aea4a2848c128893ac3", null ],
+    [ "GetBottomVisibleStaff", "classvrv_1_1_measure.html#aebb30d801973e472dade538e89a1ee93", null ],
     [ "GetClassId", "classvrv_1_1_measure.html#a9f65c7db6b9594f725acfb3f9036fe9d", null ],
     [ "GetClassName", "classvrv_1_1_measure.html#a098196c1420ef58217b023e710b2fe99", null ],
     [ "GetDrawingEnding", "classvrv_1_1_measure.html#ac8bf69134a3e11c216cd9f712d51a090", null ],
