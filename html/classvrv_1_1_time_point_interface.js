@@ -5,7 +5,7 @@ var classvrv_1_1_time_point_interface =
     [ "AddStaff", "classvrv_1_1_time_point_interface.html#a67678cf06ae06579a830344df5c5598a", null ],
     [ "GetStart", "classvrv_1_1_time_point_interface.html#a3cd14634c9ef2903e83a560ba52788a9", null ],
     [ "GetStartMeasure", "classvrv_1_1_time_point_interface.html#a54007f47ab2054a75b29618b8b47dd4f", null ],
-    [ "GetTstampStaves", "classvrv_1_1_time_point_interface.html#acc143d64530139d69ea66c3c413581d0", null ],
+    [ "GetTstampStaves", "classvrv_1_1_time_point_interface.html#a27a48797d818dd92d3f7ff82f0678a17", null ],
     [ "HasStart", "classvrv_1_1_time_point_interface.html#a645c1d24917af2fe9687bd41589a53b8", null ],
     [ "InterfacePrepareTimePointing", "classvrv_1_1_time_point_interface.html#af12c0fb8fe5605633e3ceeb75806d798", null ],
     [ "InterfacePrepareTimestamps", "classvrv_1_1_time_point_interface.html#aad4fd22f92288ae7c9f8a7b2500ee6a5", null ],
