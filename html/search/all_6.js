@@ -98,6 +98,7 @@ var searchData=
   ['getnotatedidforelement',['GetNotatedIdForElement',['../classvrv_1_1_toolkit.html#ab20d86aba8f534079fdf01dd72e97178',1,'vrv::Toolkit']]],
   ['getnotationmode',['GetNotationMode',['../classvrv_1_1_view.html#afe6147dc2aa9a756204fbc2a180ec24c',1,'vrv::View']]],
   ['getnoteorchorddur',['GetNoteOrChordDur',['../classvrv_1_1_duration_interface.html#aec84ae43f7d2b25df6e3b9f05aa4bea7',1,'vrv::DurationInterface']]],
+  ['getnumberoflines',['GetNumberOfLines',['../classvrv_1_1_text_dir_interface.html#a9025c812fe7d2f34dd87b74fcaf66c65',1,'vrv::TextDirInterface']]],
   ['getobject',['GetObject',['../classvrv_1_1_floating_positioner.html#a4a2d68cb0bedc4e157d87bda473c0afa',1,'vrv::FloatingPositioner']]],
   ['getoptions',['GetOptions',['../classvrv_1_1_doc.html#a76da40d9080851c199899b30c6c6c9ac',1,'vrv::Doc::GetOptions()'],['../classvrv_1_1_toolkit.html#af661135bee3a565fc0606f55ec0981e7',1,'vrv::Toolkit::GetOptions()']]],
   ['getoutput',['GetOutput',['../classvrv_1_1_m_e_i_output.html#ac42d95b55efe169cd73773767193d962',1,'vrv::MEIOutput']]],

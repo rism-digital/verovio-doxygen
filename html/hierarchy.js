@@ -806,6 +806,7 @@ var hierarchy =
       [ "vrv::AdjustAccidXParams", "classvrv_1_1_adjust_accid_x_params.html", null ],
       [ "vrv::AdjustArpegParams", "classvrv_1_1_adjust_arpeg_params.html", null ],
       [ "vrv::AdjustFloatingPositionerGrpsParams", "classvrv_1_1_adjust_floating_positioner_grps_params.html", null ],
+      [ "vrv::AdjustFloatingPositionersBetweenParams", "classvrv_1_1_adjust_floating_positioners_between_params.html", null ],
       [ "vrv::AdjustFloatingPositionersParams", "classvrv_1_1_adjust_floating_positioners_params.html", null ],
       [ "vrv::AdjustGraceXPosParams", "classvrv_1_1_adjust_grace_x_pos_params.html", null ],
       [ "vrv::AdjustHarmGrpsSpacingParams", "classvrv_1_1_adjust_harm_grps_spacing_params.html", null ],

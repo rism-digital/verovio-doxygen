@@ -61,6 +61,7 @@ var classvrv_1_1_doc =
     [ "GetTextGlyphHeight", "classvrv_1_1_doc.html#ac5a5b6f36e6dd6cc72a6492602fcc0e1", null ],
     [ "GetTextGlyphWidth", "classvrv_1_1_doc.html#abdcd41de181aaabcf6017f60c2b9cea8", null ],
     [ "GetTextLineHeight", "classvrv_1_1_doc.html#af5ce7aff4ceba283b6e0e8e41f47f32f", null ],
+    [ "GetTextXHeight", "classvrv_1_1_doc.html#a3429ee3432a4058ae34ae9eccfe9d0fd", null ],
     [ "GetTopMargin", "classvrv_1_1_doc.html#ace174d712f8281af1ef91a51f67acad9", null ],
     [ "GetType", "classvrv_1_1_doc.html#a213c6fa5fa357db062f4b86665689e44", null ],
     [ "HasFacsimile", "classvrv_1_1_doc.html#a047c911499ccc787cb9288792ead88b9", null ],

@@ -15,6 +15,7 @@ var classvrv_1_1_object =
     [ "AdjustCrossStaffYPosEnd", "classvrv_1_1_object.html#a91e929fac940d876aa172b0b6c160c26", null ],
     [ "AdjustFloatingPositionerGrps", "classvrv_1_1_object.html#a757300b40f61c72a86c66fe9df7f8b5d", null ],
     [ "AdjustFloatingPositioners", "classvrv_1_1_object.html#a3b246662209d352732e6f3018efe7748", null ],
+    [ "AdjustFloatingPositionersBetween", "classvrv_1_1_object.html#aa7b805cd96f7dc63c47c640d01dd9954", null ],
     [ "AdjustGraceXPos", "classvrv_1_1_object.html#a7f4019d68ac2206469e1ed0de22610a3", null ],
     [ "AdjustGraceXPosEnd", "classvrv_1_1_object.html#a935fdcf665ba277d9a7879a91b8b6f57", null ],
     [ "AdjustHarmGrpsSpacing", "classvrv_1_1_object.html#a905f84521c7583c3f1cdaf806ceecdaf", null ],

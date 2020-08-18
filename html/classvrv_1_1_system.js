@@ -4,6 +4,7 @@ var classvrv_1_1_system =
     [ "~System", "classvrv_1_1_system.html#af4320266d4e1284a2721f1f370843fbf", null ],
     [ "AddToDrawingListIfNeccessary", "classvrv_1_1_system.html#a10f72720bebe778fecef7633ddbc9c38", null ],
     [ "AdjustFloatingPositioners", "classvrv_1_1_system.html#a4758434c52084eec15a430d66ee6407e", null ],
+    [ "AdjustFloatingPositionersBetween", "classvrv_1_1_system.html#a1f7703bae08bf1a0924e585dc8bcc784", null ],
     [ "AdjustHarmGrpsSpacing", "classvrv_1_1_system.html#a1fa7e0cd77f95fbbd8ae1d10b2b05c47", null ],
     [ "AdjustHarmGrpsSpacingEnd", "classvrv_1_1_system.html#ae5f180851992bc7707c42d719d126a40", null ],
     [ "AdjustSlurs", "classvrv_1_1_system.html#a2b91f6a228c43de1ae8526a156162b12", null ],

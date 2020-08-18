@@ -6,6 +6,7 @@ var classvrv_1_1_staff_alignment =
     [ "AddBBoxBelow", "classvrv_1_1_staff_alignment.html#aad91647368dc7d03520e0bd3f5139602", null ],
     [ "AdjustFloatingPositionerGrps", "classvrv_1_1_staff_alignment.html#a94ea6a0dcdaedbec12fddfd2044504d3", null ],
     [ "AdjustFloatingPositioners", "classvrv_1_1_staff_alignment.html#a322832b50441cfe3be04c02de1d30477", null ],
+    [ "AdjustFloatingPositionersBetween", "classvrv_1_1_staff_alignment.html#aa021121f8fcc17cd7725a670bcc1a203", null ],
     [ "AdjustSlurs", "classvrv_1_1_staff_alignment.html#a7f008edcf766dbc33c4081bffc7e609b", null ],
     [ "AdjustStaffOverlap", "classvrv_1_1_staff_alignment.html#a95156ca42aab6edbf29245a8d5c31c66", null ],
     [ "AdjustYPos", "classvrv_1_1_staff_alignment.html#a5cad2210131847da6d015f741c3c5602", null ],
