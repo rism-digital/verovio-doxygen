@@ -58,6 +58,9 @@ var hierarchy =
     [ "AttBracketSpanLog", null, [
       [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ]
     ] ],
+    [ "AttBTremLog", null, [
+      [ "vrv::BTrem", "classvrv_1_1_b_trem.html", null ]
+    ] ],
     [ "AttChannelized", null, [
       [ "vrv::InstrDef", "classvrv_1_1_instr_def.html", null ]
     ] ],
