@@ -198,9 +198,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ad527815e979b4f095ae5132fb5fd7fce"><td class="memItemLeft" align="right" valign="top"><a id="ad527815e979b4f095ae5132fb5fd7fce"></a>
 <a class="el" href="classvrv_1_1_staff.html">Staff</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaff</b> () const</td></tr>
 <tr class="separator:ad527815e979b4f095ae5132fb5fd7fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fb04424daeec026b36f72be7c5b47e1"><td class="memItemLeft" align="right" valign="top"><a id="a2fb04424daeec026b36f72be7c5b47e1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStaff</b> (<a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff, <a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc)</td></tr>
-<tr class="separator:a2fb04424daeec026b36f72be7c5b47e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5734d8b2d2b6ff3ea7075fd839a3d8e"><td class="memItemLeft" align="right" valign="top"><a id="ac5734d8b2d2b6ff3ea7075fd839a3d8e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStaff</b> (<a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff, <a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="el" href="classvrv_1_1_system_aligner.html#a024f36eb64e0d6adf31217b55ba72b8e">SystemAligner::SpacingType</a> spacingType)</td></tr>
+<tr class="separator:ac5734d8b2d2b6ff3ea7075fd839a3d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Calculates the overlow (above or below for the bounding box.</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Looks if the bounding box is a <a class="el" href="classvrv_1_1_floating_positioner.html" title="This class represents a basic object in the layout domain. ">FloatingPositioner</a> or not, in which case it we take into account its m_drawingYRel value. </p>
 </div></td></tr>
@@ -210,6 +210,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>CalcOverflowAbove</b> 
 <tr class="memitem:a6e7c3cc5f9cfebf735403a76a85ebd3a"><td class="memItemLeft" align="right" valign="top"><a id="a6e7c3cc5f9cfebf735403a76a85ebd3a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>CalcOverflowBelow</b> (<a class="el" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *box)</td></tr>
 <tr class="separator:a6e7c3cc5f9cfebf735403a76a85ebd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Set of functions for spacing calculations</div></td></tr>
+<tr class="memitem:a73928620dc8eca951318e23c73041150"><td class="memItemLeft" align="right" valign="top"><a id="a73928620dc8eca951318e23c73041150"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetMinimumSpacing</b> (const <a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc) const</td></tr>
+<tr class="separator:a73928620dc8eca951318e23c73041150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8439d39daad273cdc338e1741a4b45ec"><td class="memItemLeft" align="right" valign="top"><a id="a8439d39daad273cdc338e1741a4b45ec"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>CalcMinimumRequiredSpacing</b> (const <a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc) const</td></tr>
+<tr class="separator:a8439d39daad273cdc338e1741a4b45ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Setter and getter for overflow and overlap values</div></td></tr>
 <tr class="memitem:a6a5256bb9500487e025d3a20a0a0cfac"><td class="memItemLeft" align="right" valign="top"><a id="a6a5256bb9500487e025d3a20a0a0cfac"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOverflowAbove</b> (int overflowAbove)</td></tr>
@@ -232,6 +239,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetOverlap</b> () cons
 <tr class="memitem:a46bbc916af3129153608f26d68f42f2d"><td class="memItemLeft" align="right" valign="top"><a id="a46bbc916af3129153608f26d68f42f2d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaffHeight</b> () const</td></tr>
 <tr class="separator:a46bbc916af3129153608f26d68f42f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Returns justification factor based on staff type</div></td></tr>
+<tr class="memitem:abb406c242d66daf69268cb3b3f3d2cab"><td class="memItemLeft" align="right" valign="top"><a id="abb406c242d66daf69268cb3b3f3d2cab"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>GetJustificationFactor</b> (const <a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc) const</td></tr>
+<tr class="separator:abb406c242d66daf69268cb3b3f3d2cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Adds a bounding box to the array of overflowing objects above or below</div></td></tr>
 <tr class="memitem:abe912a2607606376bea1a21731c5195d"><td class="memItemLeft" align="right" valign="top"><a id="abe912a2607606376bea1a21731c5195d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddBBoxAbove</b> (<a class="el" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *box)</td></tr>
@@ -684,12 +695,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetChildCount</b> (con
 <tr class="memitem:ab2e351247e616a3f30eaf2e3d125f054 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="ab2e351247e616a3f30eaf2e3d125f054"></a>
 <a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetNext</b> ()</td></tr>
 <tr class="separator:ab2e351247e616a3f30eaf2e3d125f054 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dce341e40b1cfcf2254006796410402 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a4dce341e40b1cfcf2254006796410402"></a>
-<a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetNext</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *child, const ClassId classId=UNSPECIFIED)</td></tr>
-<tr class="separator:a4dce341e40b1cfcf2254006796410402 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84fb28d7cb21b9d515a4a93c93fcb732 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a84fb28d7cb21b9d515a4a93c93fcb732"></a>
-<a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPrevious</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *child, const ClassId classId=UNSPECIFIED)</td></tr>
-<tr class="separator:a84fb28d7cb21b9d515a4a93c93fcb732 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fda6549b288e139959f2e50355792e7 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a3fda6549b288e139959f2e50355792e7"></a>
+<a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetNext</b> (const <a class="el" href="classvrv_1_1_object.html">Object</a> *child, const ClassId classId=UNSPECIFIED)</td></tr>
+<tr class="separator:a3fda6549b288e139959f2e50355792e7 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a7c60cdf50a4072927aa671112f1f3 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a26a7c60cdf50a4072927aa671112f1f3"></a>
+<a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPrevious</b> (const <a class="el" href="classvrv_1_1_object.html">Object</a> *child, const ClassId classId=UNSPECIFIED)</td></tr>
+<tr class="separator:a26a7c60cdf50a4072927aa671112f1f3 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af17afdb1b9eba2df2d2f9b14bf98a8b0 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="af17afdb1b9eba2df2d2f9b14bf98a8b0"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingX</b> () const</td></tr>
 <tr class="separator:af17afdb1b9eba2df2d2f9b14bf98a8b0 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1248,7 +1259,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_staff_alignment.html">StaffAlignment</a></li>
-    <li class="footer">Generated on Fri Aug 21 2020 09:07:45 by
+    <li class="footer">Generated on Fri Aug 21 2020 10:37:55 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

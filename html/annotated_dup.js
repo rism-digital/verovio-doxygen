@@ -306,6 +306,7 @@ var annotated_dup =
       [ "UnsetCurrentScoreDefParams", "classvrv_1_1_unset_current_score_def_params.html", "classvrv_1_1_unset_current_score_def_params" ],
       [ "Verse", "classvrv_1_1_verse.html", "classvrv_1_1_verse" ],
       [ "View", "classvrv_1_1_view.html", "classvrv_1_1_view" ],
+      [ "VisibleStaffDefOrGrpObject", "classvrv_1_1_visible_staff_def_or_grp_object.html", "classvrv_1_1_visible_staff_def_or_grp_object" ],
       [ "Zone", "classvrv_1_1_zone.html", "classvrv_1_1_zone" ]
     ] ]
 ];

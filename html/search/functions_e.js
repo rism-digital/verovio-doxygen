@@ -40,6 +40,7 @@ var searchData=
   ['setscorebasedmei',['SetScoreBasedMEI',['../classvrv_1_1_m_e_i_output.html#ada785a9d7f36e7f2eb8e5d9b2e4bdba4',1,'vrv::MEIOutput']]],
   ['setscoredefdrawingwidth',['SetScoreDefDrawingWidth',['../classvrv_1_1_view.html#a303f43f2ba8d9098e6391efc79711fbf',1,'vrv::View']]],
   ['setscoretimeonset',['SetScoreTimeOnset',['../classvrv_1_1_beat_rpt.html#aa30a960c5be7e82620ac868a20ea89d4',1,'vrv::BeatRpt::SetScoreTimeOnset()'],['../classvrv_1_1_note.html#a0c518a751b415b97dbf5649daec5bc8a',1,'vrv::Note::SetScoreTimeOnset()']]],
+  ['setspacing',['SetSpacing',['../classvrv_1_1_system_aligner.html#a4ae91b3e9e2bfeda965f9a4370e7bc41',1,'vrv::SystemAligner']]],
   ['setstaffdefredrawflags',['SetStaffDefRedrawFlags',['../classvrv_1_1_object.html#a28b81f899cf3c244799da6f49ae3dd34',1,'vrv::Object::SetStaffDefRedrawFlags()'],['../classvrv_1_1_staff_def.html#a56d69722b3495b9e5e91d38229753caa',1,'vrv::StaffDef::SetStaffDefRedrawFlags()']]],
   ['setstartonly',['SetStartOnly',['../classvrv_1_1_time_point_interface.html#a4c3a7f2c3fd21358c4c25dbae8443f4a',1,'vrv::TimePointInterface']]],
   ['setsvgboundingboxes',['SetSvgBoundingBoxes',['../classvrv_1_1_svg_device_context.html#ae59f5620c868167fef4915c0dfe30618',1,'vrv::SvgDeviceContext']]],

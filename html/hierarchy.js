@@ -776,7 +776,9 @@ var hierarchy =
         [ "vrv::NoteOnsetOffsetComparison", "classvrv_1_1_note_onset_offset_comparison.html", null ],
         [ "vrv::PointingToComparison", "classvrv_1_1_pointing_to_comparison.html", null ]
       ] ],
-      [ "vrv::ClassIdsComparison", "classvrv_1_1_class_ids_comparison.html", null ],
+      [ "vrv::ClassIdsComparison", "classvrv_1_1_class_ids_comparison.html", [
+        [ "vrv::VisibleStaffDefOrGrpObject", "classvrv_1_1_visible_staff_def_or_grp_object.html", null ]
+      ] ],
       [ "vrv::InterfaceComparison", "classvrv_1_1_interface_comparison.html", null ],
       [ "vrv::IsEditorialElementComparison", "classvrv_1_1_is_editorial_element_comparison.html", null ]
     ] ],
