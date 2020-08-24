@@ -2,8 +2,8 @@ var classvrv_1_1_staff =
 [
     [ "Staff", "classvrv_1_1_staff.html#a49e12a89a175f2fcfd38cef978463455", null ],
     [ "~Staff", "classvrv_1_1_staff.html#a37cd8e05822ef95c7edf9ea7340d425f", null ],
-    [ "AddLegerLineAbove", "classvrv_1_1_staff.html#a941e11231b93cb273d8159ea4921fd0b", null ],
-    [ "AddLegerLineBelow", "classvrv_1_1_staff.html#a4bb9998ed6c19ad946a3f3ec75bd09c8", null ],
+    [ "AddLedgerLineAbove", "classvrv_1_1_staff.html#a161dcbe91588b5cb23560162166079f6", null ],
+    [ "AddLedgerLineBelow", "classvrv_1_1_staff.html#a3ff6e40dbafa9509a985a9ae6d93319b", null ],
     [ "AdjustDrawingStaffSize", "classvrv_1_1_staff.html#ae194d3de0191a955118338c70e157133", null ],
     [ "AdjustSylSpacing", "classvrv_1_1_staff.html#a6790f6311e231fb5898d10c2b5499559", null ],
     [ "AlignHorizontally", "classvrv_1_1_staff.html#a1a5a6358590d1e40aa6db5111897d955", null ],

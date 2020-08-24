@@ -13,7 +13,7 @@ var searchData=
   ['addlayerelementref',['AddLayerElementRef',['../classvrv_1_1_alignment.html#ab52c03819037b643b89612716dc4629a',1,'vrv::Alignment']]],
   ['addlayerelementtoflatlist',['AddLayerElementToFlatList',['../classvrv_1_1_object.html#a1af968d5140f79fd056aa5a46d7cad11',1,'vrv::Object']]],
   ['addlayerelementtoflatlistparams',['AddLayerElementToFlatListParams',['../classvrv_1_1_add_layer_element_to_flat_list_params.html',1,'vrv']]],
-  ['addlegerlineabove',['AddLegerLineAbove',['../classvrv_1_1_staff.html#a941e11231b93cb273d8159ea4921fd0b',1,'vrv::Staff']]],
+  ['addledgerlineabove',['AddLedgerLineAbove',['../classvrv_1_1_staff.html#a161dcbe91588b5cb23560162166079f6',1,'vrv::Staff']]],
   ['addpagenum',['AddPageNum',['../classvrv_1_1_running_element.html#ad54c3f73d54d0d5b51eb993d7c0dd80d',1,'vrv::RunningElement']]],
   ['addref',['AddRef',['../classvrv_1_1_plist_interface.html#a6d9427ddda8b4db587ec91b9b796f7b5',1,'vrv::PlistInterface']]],
   ['addrefallowduplicate',['AddRefAllowDuplicate',['../classvrv_1_1_plist_interface.html#abf9d04ad183281727a87426c82c3c8d1',1,'vrv::PlistInterface']]],
