@@ -168,6 +168,9 @@ var hierarchy =
       [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
     ] ],
+    [ "AttExtSym", null, [
+      [ "vrv::Note", "classvrv_1_1_note.html", null ]
+    ] ],
     [ "AttFacsimile", null, [
       [ "vrv::FacsimileInterface", "classvrv_1_1_facsimile_interface.html", [
         [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", [

@@ -23,6 +23,7 @@ var classvrv_1_1_note =
     [ "GetFlippedNotehead", "classvrv_1_1_note.html#a520f34e67cd0e66c90216e942720b646", null ],
     [ "GetMensuralSmuflNoteHead", "classvrv_1_1_note.html#af68a87a9293bf48b69765cc3719725bc", null ],
     [ "GetMIDIPitch", "classvrv_1_1_note.html#ab3c689500734a8835591d172b6a9d44d", null ],
+    [ "GetNoteheadGlyph", "classvrv_1_1_note.html#a3f66a8f4adf8eb4174b3c1ec388ad05d", null ],
     [ "GetPitchInterface", "classvrv_1_1_note.html#a9fe7c87d2ca44ee1d7eddf14e39b7b4c", null ],
     [ "GetRealTimeOffsetMilliseconds", "classvrv_1_1_note.html#a4b5121564ec2b6ce0c79f83456595407", null ],
     [ "GetRealTimeOnsetMilliseconds", "classvrv_1_1_note.html#afa15c4328a96d0b5cc52556adf3c9383", null ],

@@ -98,6 +98,7 @@ var searchData=
   ['getnonjustifiableleftmargin',['GetNonJustifiableLeftMargin',['../classvrv_1_1_measure.html#a4f4172e322a4283c0357b60369469d2a',1,'vrv::Measure']]],
   ['getnotatedidforelement',['GetNotatedIdForElement',['../classvrv_1_1_toolkit.html#ab20d86aba8f534079fdf01dd72e97178',1,'vrv::Toolkit']]],
   ['getnotationmode',['GetNotationMode',['../classvrv_1_1_view.html#afe6147dc2aa9a756204fbc2a180ec24c',1,'vrv::View']]],
+  ['getnoteheadglyph',['GetNoteheadGlyph',['../classvrv_1_1_note.html#a3f66a8f4adf8eb4174b3c1ec388ad05d',1,'vrv::Note']]],
   ['getnoteorchorddur',['GetNoteOrChordDur',['../classvrv_1_1_duration_interface.html#aec84ae43f7d2b25df6e3b9f05aa4bea7',1,'vrv::DurationInterface']]],
   ['getnumberoflines',['GetNumberOfLines',['../classvrv_1_1_text_dir_interface.html#a9025c812fe7d2f34dd87b74fcaf66c65',1,'vrv::TextDirInterface']]],
   ['getobject',['GetObject',['../classvrv_1_1_floating_positioner.html#a4a2d68cb0bedc4e157d87bda473c0afa',1,'vrv::FloatingPositioner']]],
