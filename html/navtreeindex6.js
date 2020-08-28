@@ -1,14 +1,15 @@
 var NAVTREEINDEX6 =
 {
 "classvrv_1_1_floating_positioner.html#a8d7e6ef43868940eae8b4f2d374f85ff":[0,0,0,122,11],
-"classvrv_1_1_floating_positioner.html#a99e8532f6ab38b81a39c5625b5955539":[0,0,0,122,16],
-"classvrv_1_1_floating_positioner.html#a9f5ccc86f7d5afd5bee395b4d31ccf1e":[0,0,0,122,25],
+"classvrv_1_1_floating_positioner.html#a99e8532f6ab38b81a39c5625b5955539":[0,0,0,122,17],
+"classvrv_1_1_floating_positioner.html#a9f5ccc86f7d5afd5bee395b4d31ccf1e":[0,0,0,122,26],
 "classvrv_1_1_floating_positioner.html#ac573fdccc3b55359b972e7a6794a36cd":[0,0,0,122,1],
 "classvrv_1_1_floating_positioner.html#acac4eb8ec7d5e7a87eb90aafe9f2f9ad":[0,0,0,122,3],
-"classvrv_1_1_floating_positioner.html#acb237747b671faa7e47fa29f005b25ff":[0,0,0,122,13],
+"classvrv_1_1_floating_positioner.html#acb237747b671faa7e47fa29f005b25ff":[0,0,0,122,14],
 "classvrv_1_1_floating_positioner.html#ad0274e75f43e0d222ec91eb2ba78f85b":[0,0,0,122,7],
 "classvrv_1_1_floating_positioner.html#ad8fc1446cdd041730ca8272adf2bc7b7":[0,0,0,122,4],
-"classvrv_1_1_floating_positioner.html#aeb49f3289c5a6f5561728dc61e41dfaf":[0,0,0,122,19],
+"classvrv_1_1_floating_positioner.html#ae4fac0866d87036d9d68a55bfbe39f28":[0,0,0,122,13],
+"classvrv_1_1_floating_positioner.html#aeb49f3289c5a6f5561728dc61e41dfaf":[0,0,0,122,20],
 "classvrv_1_1_font_info.html":[0,0,0,123],
 "classvrv_1_1_font_info.html#a1152bfaac791b4e4a960bb8c164ca77c":[0,0,0,123,8],
 "classvrv_1_1_font_info.html#a267d705a74cfb4c2a7e09cf0ee10c825":[0,0,0,123,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classvrv_1_1_humdrum_input.html#a41024aaf426e75834f55f977ad34b7f9":[0,0,0,139,46],
 "classvrv_1_1_humdrum_input.html#a41aef1246f7a206093b1506a82688523":[0,0,0,139,129],
 "classvrv_1_1_humdrum_input.html#a431630b2f62593b725127c70018e540e":[0,0,0,139,233],
-"classvrv_1_1_humdrum_input.html#a4331aad67af49271614f1865967a44bb":[0,0,0,139,286],
-"classvrv_1_1_humdrum_input.html#a44aea3f1cfebb48e3fe3c37406014c4c":[0,0,0,139,27]
+"classvrv_1_1_humdrum_input.html#a4331aad67af49271614f1865967a44bb":[0,0,0,139,286]
 };

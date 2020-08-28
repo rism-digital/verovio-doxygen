@@ -13,6 +13,7 @@ var classvrv_1_1_floating_positioner =
     [ "GetObject", "classvrv_1_1_floating_positioner.html#a4a2d68cb0bedc4e157d87bda473c0afa", null ],
     [ "GetObjectX", "classvrv_1_1_floating_positioner.html#a8d7e6ef43868940eae8b4f2d374f85ff", null ],
     [ "GetObjectY", "classvrv_1_1_floating_positioner.html#a511ffadd2852a892fbdda97233ea15f9", null ],
+    [ "GetSpaceBelow", "classvrv_1_1_floating_positioner.html#ae4fac0866d87036d9d68a55bfbe39f28", null ],
     [ "GetSpanningType", "classvrv_1_1_floating_positioner.html#acb237747b671faa7e47fa29f005b25ff", null ],
     [ "ResetCachedDrawingX", "classvrv_1_1_floating_positioner.html#a4a3620a3114d95f04d5ff53992118c63", null ],
     [ "ResetCachedDrawingY", "classvrv_1_1_floating_positioner.html#a1ae7919ef2dc65c0f4a2c9c616c188c6", null ],
