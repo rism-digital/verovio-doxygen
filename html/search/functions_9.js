@@ -1,6 +1,7 @@
 var searchData=
 [
   ['layercountintimespan',['LayerCountInTimeSpan',['../classvrv_1_1_layer_element.html#a4a33beb818e9013104f3b54d738d17dc',1,'vrv::LayerElement::LayerCountInTimeSpan()'],['../classvrv_1_1_mensur.html#a13788ec7feed5b0312421efbf60e5329',1,'vrv::Mensur::LayerCountInTimeSpan()'],['../classvrv_1_1_meter_sig.html#a52ae19681b0e8e94cef2481ce90312bf',1,'vrv::MeterSig::LayerCountInTimeSpan()'],['../classvrv_1_1_object.html#a9af0cce7b5db85a68ed87c274176aa66',1,'vrv::Object::LayerCountInTimeSpan()']]],
+  ['layerelementsintimespan',['LayerElementsInTimeSpan',['../classvrv_1_1_layer_element.html#a14ce747ddac9314656a445974ed2bf8a',1,'vrv::LayerElement::LayerElementsInTimeSpan()'],['../classvrv_1_1_object.html#add866a8144bcb528808a3e9d6a8f9d45',1,'vrv::Object::LayerElementsInTimeSpan()']]],
   ['layout',['LayOut',['../classvrv_1_1_page.html#a29a3f02e9620a674f4f1f1ebdf818089',1,'vrv::Page']]],
   ['layouthorizontally',['LayOutHorizontally',['../classvrv_1_1_page.html#a81afdc28b7093b3c034b30b9d2177d7a',1,'vrv::Page']]],
   ['layoutpitchpos',['LayOutPitchPos',['../classvrv_1_1_page.html#a801f4b7752db01eb9201e355fe4aa000',1,'vrv::Page']]],

@@ -29,6 +29,8 @@ var classvrv_1_1_layer =
     [ "GetDrawingStemDir", "classvrv_1_1_layer.html#a9384a5e86b46e31c7fb07d98d6583107", null ],
     [ "GetLayerCountForTimeSpanOf", "classvrv_1_1_layer.html#a63a9e22b4ed9ae96df451eadadad1b6b", null ],
     [ "GetLayerCountInTimeSpan", "classvrv_1_1_layer.html#a22ad6d6f1b834a6021071493b857e925", null ],
+    [ "GetLayerElementsForTimeSpanOf", "classvrv_1_1_layer.html#a96189d2b99f5ebc42e27adf803beff4b", null ],
+    [ "GetLayerElementsInTimeSpan", "classvrv_1_1_layer.html#a277d547509d230b04e5990e4bca1beff", null ],
     [ "GetLayerIdx", "classvrv_1_1_layer.html#adfcf758667726eabfc225acc484fe525", null ],
     [ "GetPrevious", "classvrv_1_1_layer.html#a6eec7985e014cbd2764f343c792a8d0f", null ],
     [ "GetStaffDefClef", "classvrv_1_1_layer.html#a3ea553fd0cd0463e81aefe498d4c6253", null ],
