@@ -34,7 +34,6 @@ var searchData=
   ['chain',['Chain',['../classvrv_1_1_editor_toolkit_c_m_n.html#a683fef0158ea252795b25b0fb798c5f1',1,'vrv::EditorToolkitCMN::Chain()'],['../classvrv_1_1_editor_toolkit_neume.html#a43ace3311204fc2ae9adc611b103a947',1,'vrv::EditorToolkitNeume::Chain()']]],
   ['clearchildren',['ClearChildren',['../classvrv_1_1_object.html#a0af864d1b64a70d4ec8b62a520114bde',1,'vrv::Object']]],
   ['clearclusters',['ClearClusters',['../classvrv_1_1_chord.html#afca94680f94f3e222e231970bc60e2d7',1,'vrv::Chord::ClearClusters()'],['../classvrv_1_1_ligature.html#a4349458debb941bb30c622f2f87e4b19',1,'vrv::Ligature::ClearClusters()']]],
-  ['clearcoordrefs',['ClearCoordRefs',['../classvrv_1_1_beam_segment.html#a29c1c949f0d813b5ffc8303515bc804f',1,'vrv::BeamSegment']]],
   ['clearcoords',['ClearCoords',['../classvrv_1_1_beam_drawing_interface.html#ace5c4c0657c94d8de99b933c75eb3e8f',1,'vrv::BeamDrawingInterface']]],
   ['cleargracealigners',['ClearGraceAligners',['../classvrv_1_1_alignment.html#a69dbbfa23611f87db7df6c03a26e52a9',1,'vrv::Alignment']]],
   ['clearledgerlines',['ClearLedgerLines',['../classvrv_1_1_staff.html#a5981a4796f897d0f70600c0594bba6fa',1,'vrv::Staff']]],
