@@ -6,5 +6,6 @@ var classvrv_1_1_turn =
     [ "GetClassId", "classvrv_1_1_turn.html#a5b87b5dcea0a9ef391588d170218365b", null ],
     [ "GetClassName", "classvrv_1_1_turn.html#a4c987b975705e2435348abd1b9872e2a", null ],
     [ "GetTimePointInterface", "classvrv_1_1_turn.html#ace2f5bb2edc7b98f933cb91203a736fe", null ],
+    [ "GetTurnGlyph", "classvrv_1_1_turn.html#a049ad442cab2fd9cf5ef83b027edf5c9", null ],
     [ "Reset", "classvrv_1_1_turn.html#a9cfcaad7fe3a7f4c3492a2b98449f03b", null ]
 ];
