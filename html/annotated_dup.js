@@ -201,6 +201,7 @@ var annotated_dup =
       [ "OptionGrp", "classvrv_1_1_option_grp.html", "classvrv_1_1_option_grp" ],
       [ "OptionInt", "classvrv_1_1_option_int.html", "classvrv_1_1_option_int" ],
       [ "OptionIntMap", "classvrv_1_1_option_int_map.html", "classvrv_1_1_option_int_map" ],
+      [ "OptionJson", "classvrv_1_1_option_json.html", "classvrv_1_1_option_json" ],
       [ "Options", "classvrv_1_1_options.html", "classvrv_1_1_options" ],
       [ "OptionStaffrel", "classvrv_1_1_option_staffrel.html", "classvrv_1_1_option_staffrel" ],
       [ "OptionStaffrelBasic", "classvrv_1_1_option_staffrel_basic.html", "classvrv_1_1_option_staffrel_basic" ],

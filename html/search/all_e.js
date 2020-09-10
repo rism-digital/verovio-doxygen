@@ -16,6 +16,7 @@ var searchData=
   ['optiongrp',['OptionGrp',['../classvrv_1_1_option_grp.html',1,'vrv']]],
   ['optionint',['OptionInt',['../classvrv_1_1_option_int.html',1,'vrv']]],
   ['optionintmap',['OptionIntMap',['../classvrv_1_1_option_int_map.html',1,'vrv']]],
+  ['optionjson',['OptionJson',['../classvrv_1_1_option_json.html',1,'vrv']]],
   ['options',['Options',['../classvrv_1_1_options.html',1,'vrv']]],
   ['optionstaffrel',['OptionStaffrel',['../classvrv_1_1_option_staffrel.html',1,'vrv']]],
   ['optionstaffrelbasic',['OptionStaffrelBasic',['../classvrv_1_1_option_staffrel_basic.html',1,'vrv']]],
