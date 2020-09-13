@@ -18,5 +18,6 @@ var classvrv_1_1_rest =
     [ "PrepareLayerElementParts", "classvrv_1_1_rest.html#ab47924cf3fad7acf067b461538ef2473", null ],
     [ "Reset", "classvrv_1_1_rest.html#a9b09bf380303f8e8be757229a4ba6e45", null ],
     [ "ResetDrawing", "classvrv_1_1_rest.html#a4f2900e1bb9ef0616d9963bed4e906fe", null ],
-    [ "ResetHorizontalAlignment", "classvrv_1_1_rest.html#a7b59b9f07f33f684e142d888cb068187", null ]
+    [ "ResetHorizontalAlignment", "classvrv_1_1_rest.html#a7b59b9f07f33f684e142d888cb068187", null ],
+    [ "Transpose", "classvrv_1_1_rest.html#a705b110585231c34e4ad48c1501a4c62", null ]
 ];
