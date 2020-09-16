@@ -117,6 +117,7 @@ var searchData=
   ['getpagewithelement',['GetPageWithElement',['../classvrv_1_1_toolkit.html#a234616d8b4ab54ec1b7efb79e5ae464d',1,'vrv::Toolkit']]],
   ['getparent',['GetParent',['../classvrv_1_1_object.html#a96ca869c3849c0f108655ad5d900a2c7',1,'vrv::Object']]],
   ['getpath',['GetPath',['../classvrv_1_1_glyph.html#a73c308789e1a3b282783597060ff01db',1,'vrv::Glyph::GetPath()'],['../classvrv_1_1_resources.html#ac8a749d1dbdc5b23dc8ee27d23f68261',1,'vrv::Resources::GetPath()']]],
+  ['getpedalglyph',['GetPedalGlyph',['../classvrv_1_1_pedal.html#a68b550860ce390cecc9d04441256a950',1,'vrv::Pedal']]],
   ['getposition',['GetPosition',['../classvrv_1_1_beam.html#a1c878bf5ec80f7bd9a0f7c2c7aa8a8e0',1,'vrv::Beam']]],
   ['getppufactor',['GetPPUFactor',['../classvrv_1_1_view.html#ae71d5dd5d3791d6ffb25dfde2b37a26f',1,'vrv::View']]],
   ['getrealtimeoffsetmilliseconds',['GetRealTimeOffsetMilliseconds',['../classvrv_1_1_measure.html#a2e0a2e000a3f00933d117d2257503425',1,'vrv::Measure']]],
