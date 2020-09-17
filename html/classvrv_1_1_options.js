@@ -45,7 +45,6 @@ var classvrv_1_1_options =
     [ "m_justificationBracketGroup", "classvrv_1_1_options.html#a3d0cad5a947b1d3805d827adb8d23186", null ],
     [ "m_justificationStaff", "classvrv_1_1_options.html#ac855ab06d149182343eb3334253d7187", null ],
     [ "m_justificationSystem", "classvrv_1_1_options.html#a26e12e975c778bb78a65bc8ebe6ee113", null ],
-    [ "m_justifyIncludeLastPage", "classvrv_1_1_options.html#adf0a299458dc0a6cb4d4d6d05fb54636", null ],
     [ "m_justifyVertically", "classvrv_1_1_options.html#afb68eac71e0886e6458018e63ee94524", null ],
     [ "m_landscape", "classvrv_1_1_options.html#a0b55be9ed4783e0116172c3836c7c1e3", null ],
     [ "m_ledgerLineExtension", "classvrv_1_1_options.html#ac748f355a4213dd79da79a1adf2a6f5a", null ],
