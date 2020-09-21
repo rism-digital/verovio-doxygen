@@ -3,7 +3,7 @@ var classvrv_1_1_beam_element_coord =
     [ "BeamElementCoord", "classvrv_1_1_beam_element_coord.html#a3d4c541e6a6640a5a9df1ac50db27bb2", null ],
     [ "~BeamElementCoord", "classvrv_1_1_beam_element_coord.html#ad39a98a648db43efa4ae8d382d95d06d", null ],
     [ "GetStemDir", "classvrv_1_1_beam_element_coord.html#adeaa12ab4464a5908e12961223fe73b3", null ],
-    [ "SetDrawingStemDir", "classvrv_1_1_beam_element_coord.html#a9602aa2a18f8d5cc9b993f88d074645f", null ],
+    [ "SetDrawingStemDir", "classvrv_1_1_beam_element_coord.html#a221c845016f2e6e5626a38d1dfeb125e", null ],
     [ "m_breaksec", "classvrv_1_1_beam_element_coord.html#ae86c87990d1a0fd3a79f340aafe31d6e", null ],
     [ "m_centered", "classvrv_1_1_beam_element_coord.html#a722f671cf181576d13b9ad96e8a14e53", null ],
     [ "m_closestNote", "classvrv_1_1_beam_element_coord.html#ac90293b4815f8f90c2c46f7d8d9c53ad", null ],
