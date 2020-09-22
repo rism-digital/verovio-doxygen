@@ -94,6 +94,7 @@ var searchData=
   ['modify',['Modify',['../classvrv_1_1_object.html#a985728e489aed60707c313327bf7c464',1,'vrv::Object']]],
   ['mordent',['Mordent',['../classvrv_1_1_mordent.html',1,'vrv']]],
   ['movechildrenfrom',['MoveChildrenFrom',['../classvrv_1_1_object.html#aa846e8099e10d6cf427e8255e4a62dd4',1,'vrv::Object']]],
+  ['movefrontvertical',['MoveFrontVertical',['../classvrv_1_1_floating_curve_positioner.html#acabb8e7619f73abd41833951e65f0f59',1,'vrv::FloatingCurvePositioner']]],
   ['moveitselfto',['MoveItselfTo',['../classvrv_1_1_object.html#ac7063ea155c08f4e39e5c59b735f1d9e',1,'vrv::Object']]],
   ['mrest',['MRest',['../classvrv_1_1_m_rest.html',1,'vrv']]],
   ['mrpt',['MRpt',['../classvrv_1_1_m_rpt.html',1,'vrv']]],
