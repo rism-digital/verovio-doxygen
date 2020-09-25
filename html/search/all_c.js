@@ -10,6 +10,7 @@ var searchData=
   ['m_5fcrossstaff',['m_crossStaff',['../classvrv_1_1_layer_element.html#af61467813ceb6c74c05b55484007c48b',1,'vrv::LayerElement']]],
   ['m_5fcurrentcolour',['m_currentColour',['../classvrv_1_1_view.html#ae6aac368e2134e991fb7a1a5e93f59df',1,'vrv::View']]],
   ['m_5fdashes',['m_dashes',['../classvrv_1_1_ledger_line.html#a1f028b4f8242c566116eecc0313d2618',1,'vrv::LedgerLine']]],
+  ['m_5fdefaultfontname',['m_defaultFontName',['../classvrv_1_1_device_context.html#a6ae1a7cfb38d34062d4484fd91d15817',1,'vrv::DeviceContext']]],
   ['m_5fdoc',['m_doc',['../classvrv_1_1_view.html#a922bb7e5bab67bd8e28206bd6e4f8c8e',1,'vrv::View']]],
   ['m_5fdots',['m_dots',['../classvrv_1_1_chord.html#a715914acbf21fbd7c67d0589315f94de',1,'vrv::Chord']]],
   ['m_5fdrawingabbrlabelswidth',['m_drawingAbbrLabelsWidth',['../classvrv_1_1_system.html#a7b772466b57f56986b857cac4c08a018',1,'vrv::System']]],
