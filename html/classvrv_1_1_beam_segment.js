@@ -18,5 +18,6 @@ var classvrv_1_1_beam_segment =
     [ "m_nbNotesOrChords", "classvrv_1_1_beam_segment.html#ac8f157a7767baa24cd20744e8aef70e5", null ],
     [ "m_startingX", "classvrv_1_1_beam_segment.html#aa1f250180ef6b9763fcbd4abf4ab3931", null ],
     [ "m_startingY", "classvrv_1_1_beam_segment.html#a1f63d1613a1a68aab6c2988b016b4980", null ],
+    [ "m_uniformStemLength", "classvrv_1_1_beam_segment.html#a1787d8320f76e0afe1a7ae84c90c174c", null ],
     [ "m_verticalCenter", "classvrv_1_1_beam_segment.html#a15b467b4275e576f076ee509beac817d", null ]
 ];

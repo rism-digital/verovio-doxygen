@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"durationinterface_8h_source.html":[1,0,36],
+"dynam_8h_source.html":[1,0,37],
 "editorial_8h_source.html":[1,0,38],
 "editortoolkit_8h_source.html":[1,0,39],
 "editortoolkit__cmn_8h_source.html":[1,0,40],
@@ -20,8 +22,8 @@ var NAVTREEINDEX19 =
 "fing_8h_source.html":[1,0,54],
 "floatingobject_8h_source.html":[1,0,55],
 "ftrem_8h_source.html":[1,0,56],
-"functions.html":[0,3,0,0],
 "functions.html":[0,3,0],
+"functions.html":[0,3,0,0],
 "functions_b.html":[0,3,0,1],
 "functions_c.html":[0,3,0,2],
 "functions_d.html":[0,3,0,3],
