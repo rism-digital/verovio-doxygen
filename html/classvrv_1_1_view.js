@@ -14,7 +14,7 @@ var classvrv_1_1_view =
     [ "DrawArticPart", "classvrv_1_1_view.html#ab27c08e32c0ce6f7e9da7cdeb48bb4ef", null ],
     [ "DrawBarLine", "classvrv_1_1_view.html#ad8a95de0deb08ef2fe081cc95037b9c2", null ],
     [ "DrawBarLine", "classvrv_1_1_view.html#a1cecb17af00b13cd9cfb74b5983c082d", null ],
-    [ "DrawBarLineDots", "classvrv_1_1_view.html#ab49c1d2616ee599ba55a638e42295810", null ],
+    [ "DrawBarLineDots", "classvrv_1_1_view.html#a2b61d41841e94c885f0415a4e5b519e4", null ],
     [ "DrawBarLines", "classvrv_1_1_view.html#a3f4073d3c49e6c09bd33cd62bc09ae9f", null ],
     [ "DrawBeam", "classvrv_1_1_view.html#a0220af899cfe64232a2257afbf9f30cc", null ],
     [ "DrawBeatRpt", "classvrv_1_1_view.html#a36bad20e7ec3ff717a67852ef9ee99da", null ],
