@@ -3,6 +3,7 @@ var classvrv_1_1_layer_element =
     [ "LayerElement", "classvrv_1_1_layer_element.html#a6294e2662280f0cf6f48bbf9855cf28c", null ],
     [ "LayerElement", "classvrv_1_1_layer_element.html#a7390b1dd3524dff7f1a3240eb9fa9926", null ],
     [ "~LayerElement", "classvrv_1_1_layer_element.html#a7bd87c91c7e394f0299a6b9a3b6d6d9a", null ],
+    [ "AdjustBeams", "classvrv_1_1_layer_element.html#ae490412b5c145adfba5f99fc5c914021", null ],
     [ "AdjustGraceXPos", "classvrv_1_1_layer_element.html#ac7edd83b4e5ccb384a51ee21587409cf", null ],
     [ "AdjustLayers", "classvrv_1_1_layer_element.html#a1a9024f996b4f7295a9b124f809bab63", null ],
     [ "AdjustXPos", "classvrv_1_1_layer_element.html#aad11c8d0fb029a782acddd5d043de3ff", null ],

@@ -1,6 +1,28 @@
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this file.
+
+Copyright (C) 1997-2019 by Dimitri van Heesch
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of version 2 of the GNU General Public License as published by
+the Free Software Foundation
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+@licend  The above is the entire license notice
+for the JavaScript code in this file
+*/
 var NAVTREE =
 [
-  [ "Main Page", "index.html", [
+  [ "My Project", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -13,8 +35,8 @@ var NAVTREE =
         [ "Enumerations", "functions_enum.html", null ]
       ] ]
     ] ],
-    [ "Files", null, [
-      [ "File List", "files.html", "files" ]
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
@@ -22,25 +44,25 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classvrv_1_1_anchored_text.html",
-"classvrv_1_1_beam.html#a1c878bf5ec80f7bd9a0f7c2c7aa8a8e0",
-"classvrv_1_1_cast_off_pages_params.html#ac9424c1d8b80bde93b8c7f2ed2c0f656",
-"classvrv_1_1_dir.html#aafe41c4d53971b746a80d293207d35f5",
-"classvrv_1_1_editorial_element.html#a9403af2ac0f9c7d915001a6a8a612628",
-"classvrv_1_1_floating_positioner.html#a52d529c02864d41c1b31cad82be18881",
-"classvrv_1_1_humdrum_input.html#a3a67f681e9a3f1da8e5ef0f8c02a9c7a",
-"classvrv_1_1_humdrum_signifiers.html#a73e4b1175025252cdcbe401660acbf30",
-"classvrv_1_1_layer_elements_in_time_span_params.html#a8046833085ba3621905b148bb5372623",
-"classvrv_1_1_mensur.html#afe74f8103ccc4554defb5840a463e69d",
-"classvrv_1_1_object.html#a7cfaeb87486d72cd79c8aec19f8b8108",
-"classvrv_1_1_option_json.html#a89c98394002c05e9963e5dc804308c8c",
-"classvrv_1_1_pedal.html#a494fad59b2cb35cba023a5c0a4f88cc0",
-"classvrv_1_1_restore.html#ad5755074f209d0f2b9c2e59167239e02",
-"classvrv_1_1_staff_alignment.html#a6ed49d27f75b6f76726db774f91b6005",
-"classvrv_1_1_system.html#a4e1c01cd9704b45d07961a013a7f3b54",
-"classvrv_1_1_toolkit.html#aed5c67aae6d92d7c8d1d68edf5a5ae65",
-"classvrv_1_1_view.html#a36c099dbaa2678c80e73ceb93ea030f1",
-"durationinterface_8h_source.html"
+"classvrv_1_1_alignment_reference.html#a56af923297484b68524b1cbb6cec60f6",
+"classvrv_1_1_bar_line_attr.html#a15b3c95296bbd8ef19ca525a023a5d5c",
+"classvrv_1_1_cast_off_encoding_params.html#ad53f8164c709383e737b4a540457c23f",
+"classvrv_1_1_device_context.html#af91bb7e0130d56330457e6775b33332c",
+"classvrv_1_1_editor_toolkit_neume.html#ae38043613ee1eae9c1a333fc5c5834b8",
+"classvrv_1_1_floating_positioner.html#a002454438057c1451a5e152e39304b57",
+"classvrv_1_1_humdrum_input.html#a32fbe2d4d96280c830d725d67b204abb",
+"classvrv_1_1_humdrum_signifiers.html#a05c92d3bb8004e71a0fe159faca257c6",
+"classvrv_1_1_layer_element.html#af14973423c50d4a301799acafee56877",
+"classvrv_1_1_measure_aligner_type_comparison.html#ac1addc8bcc6d9195a394e62d99637e63",
+"classvrv_1_1_object.html#a738ca662cfaa09bb0122966cb29b43c6",
+"classvrv_1_1_option_int_map.html#a3dfdc38e4814226eb25f9e7b1c083387",
+"classvrv_1_1_pages.html#a652b6672709453915b30bee50c15e176",
+"classvrv_1_1_rest.html#a705b110585231c34e4ad48c1501a4c62",
+"classvrv_1_1_staff.html#af64a2d11ba5b97412094e00d6f908c63",
+"classvrv_1_1_system.html#a1fa7e0cd77f95fbbd8ae1d10b2b05c47",
+"classvrv_1_1_toolkit.html#a97d14fc376f8532765955015b26a6811",
+"classvrv_1_1_view.html#a2cec524c77a81e17a402520c25c0b86d",
+"classvrv_1_1data___p_l_a_c_e_m_e_n_t.html#aef4987f7ee331b3b0025fd9aee8b9cea"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

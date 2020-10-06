@@ -9,6 +9,7 @@ var annotated_dup =
       [ "AddLayerElementToFlatListParams", "classvrv_1_1_add_layer_element_to_flat_list_params.html", "classvrv_1_1_add_layer_element_to_flat_list_params" ],
       [ "AdjustAccidXParams", "classvrv_1_1_adjust_accid_x_params.html", "classvrv_1_1_adjust_accid_x_params" ],
       [ "AdjustArpegParams", "classvrv_1_1_adjust_arpeg_params.html", "classvrv_1_1_adjust_arpeg_params" ],
+      [ "AdjustBeamParams", "classvrv_1_1_adjust_beam_params.html", "classvrv_1_1_adjust_beam_params" ],
       [ "AdjustFloatingPositionerGrpsParams", "classvrv_1_1_adjust_floating_positioner_grps_params.html", "classvrv_1_1_adjust_floating_positioner_grps_params" ],
       [ "AdjustFloatingPositionersBetweenParams", "classvrv_1_1_adjust_floating_positioners_between_params.html", "classvrv_1_1_adjust_floating_positioners_between_params" ],
       [ "AdjustFloatingPositionersParams", "classvrv_1_1_adjust_floating_positioners_params.html", "classvrv_1_1_adjust_floating_positioners_params" ],

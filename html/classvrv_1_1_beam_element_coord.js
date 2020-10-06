@@ -10,6 +10,7 @@ var classvrv_1_1_beam_element_coord =
     [ "m_closestNote", "classvrv_1_1_beam_element_coord.html#ac90293b4815f8f90c2c46f7d8d9c53ad", null ],
     [ "m_dur", "classvrv_1_1_beam_element_coord.html#a1af51e56a62893fff666c463b265b5e0", null ],
     [ "m_element", "classvrv_1_1_beam_element_coord.html#a1978586c632e48599f36d1cbd484e669", null ],
+    [ "m_overlapMargin", "classvrv_1_1_beam_element_coord.html#a0e6c6a71cb6bb0dc5cd0e299c8ecd7a3", null ],
     [ "m_partialFlagPlace", "classvrv_1_1_beam_element_coord.html#a960a8da7d590eb5ea152a25a92bbd54d", null ],
     [ "m_partialFlags", "classvrv_1_1_beam_element_coord.html#a3024e5d8ba924a0f4e9bccfdaf5f41f8", null ],
     [ "m_shortened", "classvrv_1_1_beam_element_coord.html#a311467215d2756888e136060f7a30870", null ],

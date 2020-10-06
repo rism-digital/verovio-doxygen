@@ -2,6 +2,8 @@ var classvrv_1_1_beam =
 [
     [ "Beam", "classvrv_1_1_beam.html#ad870ee58fa2f27ea30c1123b74e0f57f", null ],
     [ "~Beam", "classvrv_1_1_beam.html#a60d90b31b728d67d6c1143c264e5af3c", null ],
+    [ "AdjustBeams", "classvrv_1_1_beam.html#a816f031fe4b45d076e9e5dfd741987c8", null ],
+    [ "AdjustBeamsEnd", "classvrv_1_1_beam.html#a3e6a16748d090469091ec0f8262ee2e0", null ],
     [ "CalcStem", "classvrv_1_1_beam.html#a68e2b6e3f79c497e1f9ff3fa6f76af48", null ],
     [ "Clone", "classvrv_1_1_beam.html#aefb179940f5416e7be8297c6869643e5", null ],
     [ "FilterList", "classvrv_1_1_beam.html#ae1196829afda910061e001b95d061091", null ],

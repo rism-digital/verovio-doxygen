@@ -818,6 +818,7 @@ var hierarchy =
       [ "vrv::AddLayerElementToFlatListParams", "classvrv_1_1_add_layer_element_to_flat_list_params.html", null ],
       [ "vrv::AdjustAccidXParams", "classvrv_1_1_adjust_accid_x_params.html", null ],
       [ "vrv::AdjustArpegParams", "classvrv_1_1_adjust_arpeg_params.html", null ],
+      [ "vrv::AdjustBeamParams", "classvrv_1_1_adjust_beam_params.html", null ],
       [ "vrv::AdjustFloatingPositionerGrpsParams", "classvrv_1_1_adjust_floating_positioner_grps_params.html", null ],
       [ "vrv::AdjustFloatingPositionersBetweenParams", "classvrv_1_1_adjust_floating_positioners_between_params.html", null ],
       [ "vrv::AdjustFloatingPositionersParams", "classvrv_1_1_adjust_floating_positioners_params.html", null ],
