@@ -439,6 +439,7 @@ var hierarchy =
       [ "vrv::InstrDef", "classvrv_1_1_instr_def.html", null ],
       [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
+      [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
       [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
       [ "vrv::Pb", "classvrv_1_1_pb.html", null ],
       [ "vrv::Sb", "classvrv_1_1_sb.html", null ],
