@@ -33,6 +33,7 @@ var classvrv_1_1_system =
     [ "GetDrawingY", "classvrv_1_1_system.html#a8bb75b3cabf6f6b55b512744aed3d261", null ],
     [ "GetDrawingYRel", "classvrv_1_1_system.html#a30964900c8f91e66644bd156e1924401", null ],
     [ "GetHeight", "classvrv_1_1_system.html#a4dcd13387fa5b83a9dbbb7492e6ab78b", null ],
+    [ "GetMinimumSystemSpacing", "classvrv_1_1_system.html#a1434a0fad021420d35b35540604d0a39", null ],
     [ "GetSystemIdx", "classvrv_1_1_system.html#a89c0cdfa6d45bb5af1927608ca06cb52", null ],
     [ "HasMixedDrawingStemDir", "classvrv_1_1_system.html#a78f5b8fa8d7f7043f8547301ae24aee3", null ],
     [ "IsDrawingOptimized", "classvrv_1_1_system.html#ac19fbd767747babe72806961d9d30bbd", null ],

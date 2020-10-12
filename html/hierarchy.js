@@ -555,6 +555,9 @@ var hierarchy =
       [ "vrv::Supplied", "classvrv_1_1_supplied.html", null ],
       [ "vrv::Unclear", "classvrv_1_1_unclear.html", null ]
     ] ],
+    [ "AttSpacing", null, [
+      [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ]
+    ] ],
     [ "AttStaffDefLog", null, [
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
     ] ],

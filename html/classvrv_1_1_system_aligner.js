@@ -19,6 +19,7 @@ var classvrv_1_1_system_aligner =
     [ "GetOverflowBelow", "classvrv_1_1_system_aligner.html#ab40985940913afb19165390f4392d778", null ],
     [ "GetStaffAlignment", "classvrv_1_1_system_aligner.html#a0a2e6ca43c0ce6f73bdd3df1754c8a2d", null ],
     [ "GetStaffAlignmentForStaffN", "classvrv_1_1_system_aligner.html#a5c35dd9c6a023b5b591f99b80385c995", null ],
+    [ "GetSystem", "classvrv_1_1_system_aligner.html#a5c916b5e3799ce149199694090b2f1ce", null ],
     [ "Reset", "classvrv_1_1_system_aligner.html#a9adc9a3111069c7abdb3854eaa57533d", null ],
     [ "SetSpacing", "classvrv_1_1_system_aligner.html#a4ae91b3e9e2bfeda965f9a4370e7bc41", null ]
 ];
