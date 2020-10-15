@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"classvrv_1_1_measure_aligner_type_comparison.html#a779419b8ac4f9839ede16817f0eb2dcd":[0,0,0,169,1],
 "classvrv_1_1_measure_aligner_type_comparison.html#ac1addc8bcc6d9195a394e62d99637e63":[0,0,0,169,2],
 "classvrv_1_1_measure_onset_offset_comparison.html":[0,0,0,170],
 "classvrv_1_1_measure_onset_offset_comparison.html#a6bb6efaf42dc708eb08f1e759d637866":[0,0,0,170,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "classvrv_1_1_object.html#a6bd78730c9d5f0302710213488708adb":[0,0,0,189,95],
 "classvrv_1_1_object.html#a6bdcb61d424d48a52281eec119128ceb":[0,0,0,189,33],
 "classvrv_1_1_object.html#a70161897776b5acbaf0dddaa1ddd9def":[0,0,0,189,218],
-"classvrv_1_1_object.html#a70fc6206cd0d6608724d91d03e64d767":[0,0,0,189,184],
-"classvrv_1_1_object.html#a72def6c07065fa48ad7cd844dd4b2ed5":[0,0,0,189,181]
+"classvrv_1_1_object.html#a70fc6206cd0d6608724d91d03e64d767":[0,0,0,189,184]
 };

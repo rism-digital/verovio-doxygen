@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_cast_off_encoding_params.html#a55f67ee68b4533cd0572c1508b0db2b1":[0,0,0,60,4],
 "classvrv_1_1_cast_off_encoding_params.html#ad53f8164c709383e737b4a540457c23f":[0,0,0,60,5],
 "classvrv_1_1_cast_off_encoding_params.html#ad6a4acbdce4e2c5302ae64147fad05ec":[0,0,0,60,2],
 "classvrv_1_1_cast_off_pages_params.html":[0,0,0,61],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_device_context.html#aededb30ba44efb6c40ff3b2570d7868c":[0,0,0,86,2],
 "classvrv_1_1_device_context.html#aedf032effd9e08abb64a17169b6cb7d5":[0,0,0,86,49],
 "classvrv_1_1_device_context.html#af0f4325b56f2fe5945b4828aec0a068e":[0,0,0,86,7],
-"classvrv_1_1_device_context.html#af2b653a984a2da914664f19376e1e706":[0,0,0,86,17],
-"classvrv_1_1_device_context.html#af40102f26edf1fd7386c6aa8ade0a0df":[0,0,0,86,23]
+"classvrv_1_1_device_context.html#af2b653a984a2da914664f19376e1e706":[0,0,0,86,17]
 };
