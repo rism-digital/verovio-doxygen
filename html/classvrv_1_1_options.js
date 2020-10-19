@@ -132,6 +132,7 @@ var classvrv_1_1_options =
     [ "m_svgViewBox", "classvrv_1_1_options.html#af2c48515412786095a387d48b56258c4", null ],
     [ "m_systemDivider", "classvrv_1_1_options.html#a8d20dd57b521de25b066003d5a306caf", null ],
     [ "m_systemMaxPerPage", "classvrv_1_1_options.html#a504f8bffb6cc293f0877d8900cd5c350", null ],
+    [ "m_textEnclosureThickness", "classvrv_1_1_options.html#a787f299734d80778b81354f73f965623", null ],
     [ "m_thickBarlineThickness", "classvrv_1_1_options.html#ace1220d21b70fa177059184c753d2cbc", null ],
     [ "m_tieThickness", "classvrv_1_1_options.html#ac8544825e5f9986ce15c27cfd9a9d84e", null ],
     [ "m_topMarginHarm", "classvrv_1_1_options.html#a67a343d8c1dfe4c5432f1b49ae6ef67d", null ],
