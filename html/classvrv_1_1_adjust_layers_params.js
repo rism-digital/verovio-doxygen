@@ -8,5 +8,6 @@ var classvrv_1_1_adjust_layers_params =
     [ "m_doc", "classvrv_1_1_adjust_layers_params.html#ac0051934614a15b34f0b568c53423e7f", null ],
     [ "m_functor", "classvrv_1_1_adjust_layers_params.html#a60fd208bfef1e9547ed41fde818e6f22", null ],
     [ "m_previous", "classvrv_1_1_adjust_layers_params.html#ae93ab72cf3143edfcfd0214bb4f5e381", null ],
-    [ "m_staffNs", "classvrv_1_1_adjust_layers_params.html#ae7b8f5cb8aa5309efa1f65ed50207ca5", null ]
+    [ "m_staffNs", "classvrv_1_1_adjust_layers_params.html#ae7b8f5cb8aa5309efa1f65ed50207ca5", null ],
+    [ "m_unison", "classvrv_1_1_adjust_layers_params.html#a609c7780e04d723bdf7e0d6f73e333c0", null ]
 ];

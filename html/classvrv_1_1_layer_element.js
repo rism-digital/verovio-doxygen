@@ -6,6 +6,7 @@ var classvrv_1_1_layer_element =
     [ "AdjustBeams", "classvrv_1_1_layer_element.html#ae490412b5c145adfba5f99fc5c914021", null ],
     [ "AdjustGraceXPos", "classvrv_1_1_layer_element.html#ac7edd83b4e5ccb384a51ee21587409cf", null ],
     [ "AdjustLayers", "classvrv_1_1_layer_element.html#a1a9024f996b4f7295a9b124f809bab63", null ],
+    [ "AdjustOverlappingLayers", "classvrv_1_1_layer_element.html#a712eb8213c94674ea4b720b613fc5426", null ],
     [ "AdjustXPos", "classvrv_1_1_layer_element.html#aad11c8d0fb029a782acddd5d043de3ff", null ],
     [ "AdjustXRelForTranscription", "classvrv_1_1_layer_element.html#a65d2f6acbf90a39ce5e7b34b8713ddc1", null ],
     [ "AlignHorizontally", "classvrv_1_1_layer_element.html#aa9313165677a808adb9ac9084aa012d2", null ],

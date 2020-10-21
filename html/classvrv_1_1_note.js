@@ -6,6 +6,7 @@ var classvrv_1_1_note =
     [ "CalcChordNoteHeads", "classvrv_1_1_note.html#ad056c8566782223ddbd1f6da4281771d", null ],
     [ "CalcDots", "classvrv_1_1_note.html#ad31936d93922bf87540780a67d8569eb", null ],
     [ "CalcLedgerLines", "classvrv_1_1_note.html#a67c593777c501900d80826cfcf7ed535", null ],
+    [ "CalcNoteHorizontalOverlap", "classvrv_1_1_note.html#afc275e68f184cf3124a56ac74ca04658", null ],
     [ "CalcStem", "classvrv_1_1_note.html#aa0505ca9921082084eb7aa32e38cda96", null ],
     [ "CalcStemLenInThirdUnits", "classvrv_1_1_note.html#aaf328e99a702f986ee1bf61936b49b28", null ],
     [ "Clone", "classvrv_1_1_note.html#a4fac2b9a8fb11c0b9b5764535eafd777", null ],
