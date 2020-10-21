@@ -4,6 +4,7 @@ var classvrv_1_1data___f_o_n_t_s_i_z_e =
     [ "~data_FONTSIZE", "classvrv_1_1data___f_o_n_t_s_i_z_e.html#a4bf57bacbe1738476233f86153361686", null ],
     [ "GetFontSizeNumeric", "classvrv_1_1data___f_o_n_t_s_i_z_e.html#a62ee383e1e2732f7ebce0e0fa77f9d38", null ],
     [ "GetPercent", "classvrv_1_1data___f_o_n_t_s_i_z_e.html#aa82750637e7480e160c6bf18a4cc9f57", null ],
+    [ "GetPercentForTerm", "classvrv_1_1data___f_o_n_t_s_i_z_e.html#a204481850581f21b1240a0edc39ec1e4", null ],
     [ "GetTerm", "classvrv_1_1data___f_o_n_t_s_i_z_e.html#a46bf1be225136c28134a8ca1e74f1b07", null ],
     [ "GetType", "classvrv_1_1data___f_o_n_t_s_i_z_e.html#a6983c21ffe282182c276667178969afd", null ],
     [ "HasValue", "classvrv_1_1data___f_o_n_t_s_i_z_e.html#aa1c680f5196f7377237e5a54ac264105", null ],
