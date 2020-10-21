@@ -148,7 +148,7 @@ var classvrv_1_1_view =
     [ "DrawTextEditorialElement", "classvrv_1_1_view.html#a7ba6dd131553da5091e3d4004eb2299a", null ],
     [ "DrawTextElement", "classvrv_1_1_view.html#a92b21a1d1f8f14636eaeed766dd0eebd", null ],
     [ "DrawTextString", "classvrv_1_1_view.html#af8ec1658067d523478044b721c3ea199", null ],
-    [ "DrawThickBezierCurve", "classvrv_1_1_view.html#a01e1ab45766a4a9ee04c846f4d1fb7c7", null ],
+    [ "DrawThickBezierCurve", "classvrv_1_1_view.html#a5de4c855adb5fbae6923e3f6bdd2b69c", null ],
     [ "DrawTie", "classvrv_1_1_view.html#ac132015c7b5900dcf0faba08d6d7546a", null ],
     [ "DrawTimeSpanningElement", "classvrv_1_1_view.html#a229730b700b9e34cf020921827eab201", null ],
     [ "DrawTrill", "classvrv_1_1_view.html#a2e140d152975ad26ac7787045ecb007b", null ],
@@ -188,5 +188,7 @@ var classvrv_1_1_view =
     [ "m_doc", "classvrv_1_1_view.html#a922bb7e5bab67bd8e28206bd6e4f8c8e", null ],
     [ "m_drawingScoreDef", "classvrv_1_1_view.html#ab16976e8a08645f3fdb70a658ede2c15", null ],
     [ "m_options", "classvrv_1_1_view.html#a63a1674d9b36c2b1d1ccb358cc968961", null ],
-    [ "m_pageIdx", "classvrv_1_1_view.html#a5012b077ef799dbbc711144b6c15eea9", null ]
+    [ "m_pageIdx", "classvrv_1_1_view.html#a5012b077ef799dbbc711144b6c15eea9", null ],
+    [ "m_slurThicknessCoeficient", "classvrv_1_1_view.html#a0acf4cf8800097748c7f513a1fc5ba7d", null ],
+    [ "m_tieThicknessCoeficient", "classvrv_1_1_view.html#af35d4f32dc4aa3709a284d47c00b7338", null ]
 ];
