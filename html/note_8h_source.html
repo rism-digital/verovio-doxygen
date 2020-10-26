@@ -196,8 +196,8 @@ $(document).ready(function(){initNavTree('note_8h_source.html',''); initResizabl
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_note.html#a598f4774d77583117482ada9ef5681e4">IsVisible</a>();</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    std::pair&lt;int, int&gt; <a class="code" href="classvrv_1_1_note.html#afc275e68f184cf3124a56ac74ca04658">CalcNoteHorizontalOverlap</a>(</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keyword">const</span> std::vector&lt;LayerElement *&gt; &amp;otherElements, <span class="keywordtype">bool</span> isChordElement, <span class="keywordtype">bool</span> ignoreUnison = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    std::pair&lt;int, bool&gt; <a class="code" href="classvrv_1_1_note.html#a60635e7c7542aa20c3dcffdc876930d4">CalcNoteHorizontalOverlap</a>(</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keyword">const</span> std::vector&lt;LayerElement *&gt; &amp;otherElements, <span class="keywordtype">bool</span> isChordElement, <span class="keywordtype">bool</span> isLowerElement = <span class="keyword">false</span>, <span class="keywordtype">bool</span> unison = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_note.html#a0c518a751b415b97dbf5649daec5bc8a">SetScoreTimeOnset</a>(<span class="keywordtype">double</span> scoreTime);</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">void</span> SetRealTimeOnsetSeconds(<span class="keywordtype">double</span> timeInSeconds);</div>
@@ -213,91 +213,93 @@ $(document).ready(function(){initNavTree('note_8h_source.html',''); initResizabl
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordtype">double</span> GetScoreTimeDuration();</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordtype">char</span> GetMIDIPitch();</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_note.html#a1713de7a7281001b09d910a360496c1e">AdjustOverlappingLayers</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keyword">const</span> std::vector&lt;LayerElement *&gt; &amp;otherElements, <span class="keywordtype">bool</span> &amp;isUnison);</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#aba95f5cbd284314def2cb1601f5b8887">ConvertMarkupAnalytical</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="comment">//----------//</span></div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#aa0505ca9921082084eb7aa32e38cda96">CalcStem</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#aba95f5cbd284314def2cb1601f5b8887">ConvertMarkupAnalytical</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#ad056c8566782223ddbd1f6da4281771d">CalcChordNoteHeads</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#aa0505ca9921082084eb7aa32e38cda96">CalcStem</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#ad31936d93922bf87540780a67d8569eb">CalcDots</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#ad056c8566782223ddbd1f6da4281771d">CalcChordNoteHeads</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a67c593777c501900d80826cfcf7ed535">CalcLedgerLines</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#ad31936d93922bf87540780a67d8569eb">CalcDots</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#ac5c20e5611ce8dba349929f4757a8efa">PrepareLayerElementParts</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a67c593777c501900d80826cfcf7ed535">CalcLedgerLines</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#abe7983adf04930b56757c181df0d0b31">PrepareLyrics</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#ac5c20e5611ce8dba349929f4757a8efa">PrepareLayerElementParts</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a701a19d11c0f03dfdb427e9246853f44">PreparePointersByLayer</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#abe7983adf04930b56757c181df0d0b31">PrepareLyrics</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#aa8ed8330eedbe43ecde48e5f83ff8df0">ResetDrawing</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a701a19d11c0f03dfdb427e9246853f44">PreparePointersByLayer</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a57ed94630df5769cc71b832f6ea5522b">ResetHorizontalAlignment</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#aa8ed8330eedbe43ecde48e5f83ff8df0">ResetDrawing</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a2bc1140c2a72c564fe0806238d7b8684">GenerateMIDI</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a57ed94630df5769cc71b832f6ea5522b">ResetHorizontalAlignment</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a8f88949434306c66a20ed4d28d6bea85">GenerateTimemap</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a2bc1140c2a72c564fe0806238d7b8684">GenerateMIDI</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a2725dc432a246462217624b556ae36a7">Transpose</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a8f88949434306c66a20ed4d28d6bea85">GenerateTimemap</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordtype">int</span> GetChromaticAlteration();</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <a class="code" href="classvrv_1_1_trans_pitch.html">TransPitch</a> GetTransPitch();</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">void</span> UpdateFromTransPitch(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_trans_pitch.html">TransPitch</a> &amp;tp);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">bool</span> IsDotOverlappingWithFlag(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keyword">const</span> <span class="keywordtype">int</span> staffSize, <span class="keywordtype">bool</span> isDotShifted);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordtype">int</span> m_drawingLoc;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordtype">bool</span> m_flippedNotehead;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a2725dc432a246462217624b556ae36a7">Transpose</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordtype">int</span> GetChromaticAlteration();</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <a class="code" href="classvrv_1_1_trans_pitch.html">TransPitch</a> GetTransPitch();</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordtype">void</span> UpdateFromTransPitch(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_trans_pitch.html">TransPitch</a> &amp;tp);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordtype">bool</span> IsDotOverlappingWithFlag(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keyword">const</span> <span class="keywordtype">int</span> staffSize, <span class="keywordtype">bool</span> isDotShifted);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordtype">int</span> m_drawingLoc;</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    ChordCluster *m_cluster;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordtype">bool</span> m_flippedNotehead;</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordtype">int</span> m_clusterPosition;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    ChordCluster *m_cluster;</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">double</span> m_scoreTimeOnset;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordtype">double</span> m_scoreTimeOffset;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordtype">double</span> m_realTimeOnsetMilliseconds;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordtype">int</span> m_clusterPosition;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordtype">double</span> m_scoreTimeOnset;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordtype">double</span> m_scoreTimeOffset;</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordtype">double</span> m_realTimeOffsetMilliseconds;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keywordtype">double</span> m_scoreTimeTiedDuration;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="keywordtype">char</span> m_MIDIPitch;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;};</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment">// DiatonicSort</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
-<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="classvrv_1_1_diatonic_sort.html">  376</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_diatonic_sort.html">DiatonicSort</a> {</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <a class="code" href="classvrv_1_1_diatonic_sort.html">DiatonicSort</a>() {}</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *first, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *second)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvrv_1_1_note.html">Note</a> *n1 = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="classvrv_1_1_note.html">Note</a> *<span class="keyword">&gt;</span>(first);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvrv_1_1_note.html">Note</a> *n2 = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="classvrv_1_1_note.html">Note</a> *<span class="keyword">&gt;</span>(second);</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        assert(n1 &amp;&amp; n2);</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keywordflow">return</span> (n1-&gt;<a class="code" href="classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f">GetDiatonicPitch</a>() &lt; n2-&gt;<a class="code" href="classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f">GetDiatonicPitch</a>());</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    }</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;};</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordtype">double</span> m_realTimeOnsetMilliseconds;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordtype">double</span> m_realTimeOffsetMilliseconds;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="keywordtype">double</span> m_scoreTimeTiedDuration;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keywordtype">char</span> m_MIDIPitch;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;};</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment">// DiatonicSort</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
+<div class="line"><a name="l00381"></a><span class="lineno"><a class="line" href="classvrv_1_1_diatonic_sort.html">  381</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_diatonic_sort.html">DiatonicSort</a> {</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <a class="code" href="classvrv_1_1_diatonic_sort.html">DiatonicSort</a>() {}</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *first, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *second)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvrv_1_1_note.html">Note</a> *n1 = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="classvrv_1_1_note.html">Note</a> *<span class="keyword">&gt;</span>(first);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvrv_1_1_note.html">Note</a> *n2 = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="classvrv_1_1_note.html">Note</a> *<span class="keyword">&gt;</span>(second);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        assert(n1 &amp;&amp; n2);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">return</span> (n1-&gt;<a class="code" href="classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f">GetDiatonicPitch</a>() &lt; n2-&gt;<a class="code" href="classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f">GetDiatonicPitch</a>());</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    }</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;};</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_note_html_aa8ed8330eedbe43ecde48e5f83ff8df0"><div class="ttname"><a href="classvrv_1_1_note.html#aa8ed8330eedbe43ecde48e5f83ff8df0">vrv::Note::ResetDrawing</a></div><div class="ttdeci">virtual int ResetDrawing(FunctorParams *functorParams)</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
@@ -305,7 +307,6 @@ $(document).ready(function(){initNavTree('note_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassvrv_1_1_staff_html"><div class="ttname"><a href="classvrv_1_1_staff.html">vrv::Staff</a></div><div class="ttdoc">This class represents a staff in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> staff.h:35</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a40bd7cfa491712c99ed6d1bb22fe880f"><div class="ttname"><a href="classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f">vrv::Note::GetDiatonicPitch</a></div><div class="ttdeci">int GetDiatonicPitch() const</div><div class="ttdoc">}</div><div class="ttdef"><b>Definition:</b> note.h:163</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a777cd96f58898204059f5f08dbf2a736"><div class="ttname"><a href="classvrv_1_1_note.html#a777cd96f58898204059f5f08dbf2a736">vrv::Note::AddChild</a></div><div class="ttdeci">virtual void AddChild(Object *object)</div><div class="ttdoc">Overwritten method for note.</div></div>
-<div class="ttc" id="aclassvrv_1_1_note_html_afc275e68f184cf3124a56ac74ca04658"><div class="ttname"><a href="classvrv_1_1_note.html#afc275e68f184cf3124a56ac74ca04658">vrv::Note::CalcNoteHorizontalOverlap</a></div><div class="ttdeci">std::pair&lt; int, int &gt; CalcNoteHorizontalOverlap(Doc *doc, const std::vector&lt; LayerElement * &gt; &amp;otherElements, bool isChordElement, bool ignoreUnison=false)</div><div class="ttdoc">Calculate note horizontal overlap with elemenents from another layers.</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_abfcac1365637007ca58537cbae8fa306"><div class="ttname"><a href="classvrv_1_1_note.html#abfcac1365637007ca58537cbae8fa306">vrv::Note::IsChordTone</a></div><div class="ttdeci">Chord * IsChordTone() const</div><div class="ttdoc">Overriding functions to return information from chord parent if any.</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:39</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_af8978d10060897439846033392758ef6"><div class="ttname"><a href="classvrv_1_1_note.html#af8978d10060897439846033392758ef6">vrv::Note::IsSupportedChild</a></div><div class="ttdeci">virtual bool IsSupportedChild(Object *object)</div><div class="ttdoc">Add an element (a verse or an accid) to a note.</div></div>
@@ -315,6 +316,7 @@ $(document).ready(function(){initNavTree('note_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassvrv_1_1_note_html_a7bcfe9b0dfad97964d0db5c76ebd6169"><div class="ttname"><a href="classvrv_1_1_note.html#a7bcfe9b0dfad97964d0db5c76ebd6169">vrv::Note::HasLedgerLines</a></div><div class="ttdeci">bool HasLedgerLines(int &amp;linesAbove, int &amp;linesBelow, Staff *staff=NULL)</div><div class="ttdoc">Check if the note has ledger lines.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:53</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a4fac2b9a8fb11c0b9b5764535eafd777"><div class="ttname"><a href="classvrv_1_1_note.html#a4fac2b9a8fb11c0b9b5764535eafd777">vrv::Note::Clone</a></div><div class="ttdeci">virtual Object * Clone() const</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> note.h:70</div></div>
+<div class="ttc" id="aclassvrv_1_1_note_html_a1713de7a7281001b09d910a360496c1e"><div class="ttname"><a href="classvrv_1_1_note.html#a1713de7a7281001b09d910a360496c1e">vrv::Note::AdjustOverlappingLayers</a></div><div class="ttdeci">virtual void AdjustOverlappingLayers(Doc *doc, const std::vector&lt; LayerElement * &gt; &amp;otherElements, bool &amp;isUnison)</div><div class="ttdoc">Helper to adjust overlaping layers for notes.</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a8f88949434306c66a20ed4d28d6bea85"><div class="ttname"><a href="classvrv_1_1_note.html#a8f88949434306c66a20ed4d28d6bea85">vrv::Note::GenerateTimemap</a></div><div class="ttdeci">virtual int GenerateTimemap(FunctorParams *functorParams)</div><div class="ttdoc">See Object::GenerateTimemap.</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a0c518a751b415b97dbf5649daec5bc8a"><div class="ttname"><a href="classvrv_1_1_note.html#a0c518a751b415b97dbf5649daec5bc8a">vrv::Note::SetScoreTimeOnset</a></div><div class="ttdeci">void SetScoreTimeOnset(double scoreTime)</div><div class="ttdoc">MIDI timing information.</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_ad31936d93922bf87540780a67d8569eb"><div class="ttname"><a href="classvrv_1_1_note.html#ad31936d93922bf87540780a67d8569eb">vrv::Note::CalcDots</a></div><div class="ttdeci">virtual int CalcDots(FunctorParams *functorParams)</div><div class="ttdoc">See Object::CalcDots.</div></div>
@@ -324,7 +326,7 @@ $(document).ready(function(){initNavTree('note_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassvrv_1_1_note_html_a67c593777c501900d80826cfcf7ed535"><div class="ttname"><a href="classvrv_1_1_note.html#a67c593777c501900d80826cfcf7ed535">vrv::Note::CalcLedgerLines</a></div><div class="ttdeci">virtual int CalcLedgerLines(FunctorParams *functorParams)</div><div class="ttdoc">See Object::CalcLedgerLines.</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html"><div class="ttname"><a href="classvrv_1_1_note.html">vrv::Note</a></div><div class="ttdoc">This class models the MEI &lt;note&gt; element.</div><div class="ttdef"><b>Definition:</b> note.h:45</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_aba95f5cbd284314def2cb1601f5b8887"><div class="ttname"><a href="classvrv_1_1_note.html#aba95f5cbd284314def2cb1601f5b8887">vrv::Note::ConvertMarkupAnalytical</a></div><div class="ttdeci">virtual int ConvertMarkupAnalytical(FunctorParams *functorParams)</div><div class="ttdoc">See Object::ConvertMarkupAnalytical.</div></div>
-<div class="ttc" id="aclassvrv_1_1_diatonic_sort_html"><div class="ttname"><a href="classvrv_1_1_diatonic_sort.html">vrv::DiatonicSort</a></div><div class="ttdoc">Unary predicate for comparing object types.</div><div class="ttdef"><b>Definition:</b> note.h:376</div></div>
+<div class="ttc" id="aclassvrv_1_1_diatonic_sort_html"><div class="ttname"><a href="classvrv_1_1_diatonic_sort.html">vrv::DiatonicSort</a></div><div class="ttdoc">Unary predicate for comparing object types.</div><div class="ttdef"><b>Definition:</b> note.h:381</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a57ed94630df5769cc71b832f6ea5522b"><div class="ttname"><a href="classvrv_1_1_note.html#a57ed94630df5769cc71b832f6ea5522b">vrv::Note::ResetHorizontalAlignment</a></div><div class="ttdeci">virtual int ResetHorizontalAlignment(FunctorParams *functorParams)</div><div class="ttdoc">See Object::ResetHorizontalAlignment.</div></div>
 <div class="ttc" id="aclassvrv_1_1_stemmed_drawing_interface_html"><div class="ttname"><a href="classvrv_1_1_stemmed_drawing_interface.html">vrv::StemmedDrawingInterface</a></div><div class="ttdoc">This class is an interface for MEI stemmed element.</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:229</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a2bc1140c2a72c564fe0806238d7b8684"><div class="ttname"><a href="classvrv_1_1_note.html#a2bc1140c2a72c564fe0806238d7b8684">vrv::Note::GenerateMIDI</a></div><div class="ttdeci">virtual int GenerateMIDI(FunctorParams *functorParams)</div><div class="ttdoc">See Object::GenerateMIDI.</div></div>
@@ -339,13 +341,14 @@ $(document).ready(function(){initNavTree('note_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:38</div></div>
 <div class="ttc" id="aclassvrv_1_1_point_html"><div class="ttname"><a href="classvrv_1_1_point.html">vrv::Point</a></div><div class="ttdoc">Simple class for representing points.</div><div class="ttdef"><b>Definition:</b> devicecontextbase.h:156</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_ac5c20e5611ce8dba349929f4757a8efa"><div class="ttname"><a href="classvrv_1_1_note.html#ac5c20e5611ce8dba349929f4757a8efa">vrv::Note::PrepareLayerElementParts</a></div><div class="ttdeci">virtual int PrepareLayerElementParts(FunctorParams *functorParams)</div><div class="ttdoc">See Object::PrepareLayerElementParts.</div></div>
+<div class="ttc" id="aclassvrv_1_1_note_html_a60635e7c7542aa20c3dcffdc876930d4"><div class="ttname"><a href="classvrv_1_1_note.html#a60635e7c7542aa20c3dcffdc876930d4">vrv::Note::CalcNoteHorizontalOverlap</a></div><div class="ttdeci">std::pair&lt; int, bool &gt; CalcNoteHorizontalOverlap(Doc *doc, const std::vector&lt; LayerElement * &gt; &amp;otherElements, bool isChordElement, bool isLowerElement=false, bool unison=true)</div><div class="ttdoc">Calculate note horizontal overlap with elemenents from another layers.</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a3f569dd14639313902bcdcf1fe6d9f22"><div class="ttname"><a href="classvrv_1_1_note.html#a3f569dd14639313902bcdcf1fe6d9f22">vrv::Note::IsUnissonWith</a></div><div class="ttdeci">bool IsUnissonWith(Note *note, bool ignoreAccid=false)</div><div class="ttdoc">Return true if the note is a unisson.</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_params_html"><div class="ttname"><a href="classvrv_1_1_functor_params.html">vrv::FunctorParams</a></div><div class="ttdoc">This is the base class for all MEI att classes.</div><div class="ttdef"><b>Definition:</b> functorparams.h:69</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>note.h</b></li>
-    <li class="footer">Generated on Mon Oct 26 2020 10:05:28 for My Project by
+    <li class="footer">Generated on Mon Oct 26 2020 21:21:57 for My Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

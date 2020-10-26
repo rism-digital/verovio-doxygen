@@ -16,7 +16,7 @@ var searchData=
   ['calcmaxmeasureduration_134',['CalcMaxMeasureDuration',['../classvrv_1_1_measure.html#ae16da1362db2e64a14fe959922e92cde',1,'vrv::Measure::CalcMaxMeasureDuration()'],['../classvrv_1_1_object.html#ade83951cbefb443049938380b46df228',1,'vrv::Object::CalcMaxMeasureDuration()']]],
   ['calcmaxmeasuredurationparams_135',['CalcMaxMeasureDurationParams',['../classvrv_1_1_calc_max_measure_duration_params.html',1,'vrv']]],
   ['calcminmaxy_136',['CalcMinMaxY',['../classvrv_1_1_floating_curve_positioner.html#a4e46a7462444bb57b0a67d7c4f06ff1d',1,'vrv::FloatingCurvePositioner']]],
-  ['calcnotehorizontaloverlap_137',['CalcNoteHorizontalOverlap',['../classvrv_1_1_note.html#afc275e68f184cf3124a56ac74ca04658',1,'vrv::Note']]],
+  ['calcnotehorizontaloverlap_137',['CalcNoteHorizontalOverlap',['../classvrv_1_1_note.html#a60635e7c7542aa20c3dcffdc876930d4',1,'vrv::Note']]],
   ['calconsetoffset_138',['CalcOnsetOffset',['../classvrv_1_1_layer.html#aaac00d03690b56d5c5c61cc3765af867',1,'vrv::Layer::CalcOnsetOffset()'],['../classvrv_1_1_layer_element.html#a4cb316760f79f10a53b29936e8439e22',1,'vrv::LayerElement::CalcOnsetOffset()'],['../classvrv_1_1_measure.html#a980d96f6f3e15a9a2c9be8018e41201c',1,'vrv::Measure::CalcOnsetOffset()'],['../classvrv_1_1_object.html#a1e1336770fd1b687628ef53b207d29f2',1,'vrv::Object::CalcOnsetOffset()'],['../classvrv_1_1_staff.html#a31043856d7ca807142154185f4f1eacd',1,'vrv::Staff::CalcOnsetOffset()']]],
   ['calconsetoffsetend_139',['CalcOnsetOffsetEnd',['../classvrv_1_1_chord.html#af50769e5d312c8618af00ff9ba4fdf8f',1,'vrv::Chord']]],
   ['calconsetoffsetparams_140',['CalcOnsetOffsetParams',['../classvrv_1_1_calc_onset_offset_params.html',1,'vrv']]],
@@ -81,7 +81,8 @@ var searchData=
   ['converttouncastoffmensuralparams_199',['ConvertToUnCastOffMensuralParams',['../classvrv_1_1_convert_to_un_cast_off_mensural_params.html',1,'vrv']]],
   ['copychildren_200',['CopyChildren',['../classvrv_1_1_horizontal_aligner.html#aa5ef753812c2c22af63fa22c1c734934',1,'vrv::HorizontalAligner::CopyChildren()'],['../classvrv_1_1_object.html#a4bf38f527d70161c92062a2347b7c11e',1,'vrv::Object::CopyChildren()'],['../classvrv_1_1_system_aligner.html#a3bc76fd12fc590ddc2f40681cc17965a',1,'vrv::SystemAligner::CopyChildren()']]],
   ['corr_201',['Corr',['../classvrv_1_1_corr.html',1,'vrv']]],
-  ['createdefaultzone_202',['CreateDefaultZone',['../classvrv_1_1_syl.html#a61983aa1e78d32047fffe5f3c083c09f',1,'vrv::Syl']]],
-  ['curvespannedelement_203',['CurveSpannedElement',['../classvrv_1_1_curve_spanned_element.html',1,'vrv']]],
-  ['custos_204',['Custos',['../classvrv_1_1_custos.html',1,'vrv']]]
+  ['countelementsinunison_202',['CountElementsInUnison',['../classvrv_1_1_layer_element.html#a3334d5cdd9472146f2db3fc5564b70bf',1,'vrv::LayerElement']]],
+  ['createdefaultzone_203',['CreateDefaultZone',['../classvrv_1_1_syl.html#a61983aa1e78d32047fffe5f3c083c09f',1,'vrv::Syl']]],
+  ['curvespannedelement_204',['CurveSpannedElement',['../classvrv_1_1_curve_spanned_element.html',1,'vrv']]],
+  ['custos_205',['Custos',['../classvrv_1_1_custos.html',1,'vrv']]]
 ];

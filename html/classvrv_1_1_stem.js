@@ -2,6 +2,7 @@ var classvrv_1_1_stem =
 [
     [ "Stem", "classvrv_1_1_stem.html#a46360b09214d81f4d130e99757632ee8", null ],
     [ "~Stem", "classvrv_1_1_stem.html#a8feba57af3b9b967512d2cb39895d9cd", null ],
+    [ "AdjustOverlappingLayers", "classvrv_1_1_stem.html#a3cb598265e053a9206ce31a2b1d3edcf", null ],
     [ "CalcStem", "classvrv_1_1_stem.html#aae4fef92faa5f1d61b1ecab89d3f8e92", null ],
     [ "GetClassId", "classvrv_1_1_stem.html#a1c6de5b9422c0ce447ee7745e09444b5", null ],
     [ "GetClassName", "classvrv_1_1_stem.html#af5d69a843ce040620e33fb64e5e17f31", null ],

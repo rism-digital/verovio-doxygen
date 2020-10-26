@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('classvrv_1_1_layer_element.html',''); 
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classvrv_1_1_layer_element-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -209,10 +210,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>GetContentAlignment
 <tr class="memitem:a0dce2be85a425e83b627c8d0a9a5b0f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a0dce2be85a425e83b627c8d0a9a5b0f6">GenerateZoneBounds</a> (int *ulx, int *uly, int *lrx, int *lry)</td></tr>
 <tr class="memdesc:a0dce2be85a425e83b627c8d0a9a5b0f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get zone bounds using child elements with facsimile information.  <a href="classvrv_1_1_layer_element.html#a0dce2be85a425e83b627c8d0a9a5b0f6">More...</a><br /></td></tr>
 <tr class="separator:a0dce2be85a425e83b627c8d0a9a5b0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a712eb8213c94674ea4b720b613fc5426"><td class="memItemLeft" align="right" valign="top"><a id="a712eb8213c94674ea4b720b613fc5426"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a712eb8213c94674ea4b720b613fc5426">AdjustOverlappingLayers</a> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, const std::vector&lt; <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> * &gt; &amp;otherElements, bool &amp;isUnison)</td></tr>
-<tr class="memdesc:a712eb8213c94674ea4b720b613fc5426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to adjust overlaping layers for notes, chords, stems, etc. <br /></td></tr>
-<tr class="separator:a712eb8213c94674ea4b720b613fc5426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62fa30c878d862cfe97b33dbaad07d2"><td class="memItemLeft" align="right" valign="top"><a id="ad62fa30c878d862cfe97b33dbaad07d2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#ad62fa30c878d862cfe97b33dbaad07d2">AdjustOverlappingLayers</a> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, const std::vector&lt; <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> * &gt; &amp;otherElements, bool &amp;isUnison)</td></tr>
+<tr class="memdesc:ad62fa30c878d862cfe97b33dbaad07d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to adjust overlaping layers for notes, chords, stems, etc. <br /></td></tr>
+<tr class="separator:ad62fa30c878d862cfe97b33dbaad07d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae490412b5c145adfba5f99fc5c914021"><td class="memItemLeft" align="right" valign="top"><a id="ae490412b5c145adfba5f99fc5c914021"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#ae490412b5c145adfba5f99fc5c914021">AdjustBeams</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
 <tr class="memdesc:ae490412b5c145adfba5f99fc5c914021"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a0d2579fea0aea8b317a490c1654be52b" title="Calculate the vertical position adjustment for the beam if it overlaps with layer elements.">Object::AdjustBeams</a>. <br /></td></tr>
@@ -1340,6 +1341,17 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a74ae0995caefb72a71445ba43fce0652 inherit pub_attribs_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keep an array of unsupported attributes as pairs.  <a href="classvrv_1_1_object.html#a74ae0995caefb72a71445ba43fce0652">More...</a><br /></td></tr>
 <tr class="separator:a74ae0995caefb72a71445ba43fce0652 inherit pub_attribs_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a3334d5cdd9472146f2db3fc5564b70bf"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a3334d5cdd9472146f2db3fc5564b70bf">CountElementsInUnison</a> (const std::set&lt; int &gt; &amp;firstChord, const std::set&lt; int &gt; &amp;secondChord, data_STEMDIRECTION stemDirection)</td></tr>
+<tr class="memdesc:a3334d5cdd9472146f2db3fc5564b70bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to figure whether two chords are in fully in unison based on the locations of the notes.  <a href="classvrv_1_1_layer_element.html#a3334d5cdd9472146f2db3fc5564b70bf">More...</a><br /></td></tr>
+<tr class="separator:a3334d5cdd9472146f2db3fc5564b70bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classvrv_1_1_linking_interface"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classvrv_1_1_linking_interface')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classvrv_1_1_linking_interface.html">vrv::LinkingInterface</a></td></tr>
+<tr class="memitem:a0ba4b3ed3ba51bdff6f8ef3305aa1f9b inherit pro_methods_classvrv_1_1_linking_interface"><td class="memItemLeft" align="right" valign="top"><a id="a0ba4b3ed3ba51bdff6f8ef3305aa1f9b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_linking_interface.html#a0ba4b3ed3ba51bdff6f8ef3305aa1f9b">SetUuidStr</a> ()</td></tr>
+<tr class="memdesc:a0ba4b3ed3ba51bdff6f8ef3305aa1f9b inherit pro_methods_classvrv_1_1_linking_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the fragment of the start or end @xml:id if given. <br /></td></tr>
+<tr class="separator:a0ba4b3ed3ba51bdff6f8ef3305aa1f9b inherit pro_methods_classvrv_1_1_linking_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aad5569b5dbc43a1fcfba069c58e18ada"><td class="memItemLeft" align="right" valign="top"><a id="aad5569b5dbc43a1fcfba069c58e18ada"></a>
@@ -1440,16 +1452,56 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectTopOverlap<
 <tr class="memitem:a74c28d831f2e14aec44a848a961f8b42 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="a74c28d831f2e14aec44a848a961f8b42"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverlap</b> (const <a class="el" href="classvrv_1_1_point.html">Point</a> rect1[2], const <a class="el" href="classvrv_1_1_point.html">Point</a> rect2[2], int margin, int hMargin)</td></tr>
 <tr class="separator:a74c28d831f2e14aec44a848a961f8b42 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classvrv_1_1_linking_interface"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classvrv_1_1_linking_interface')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classvrv_1_1_linking_interface.html">vrv::LinkingInterface</a></td></tr>
-<tr class="memitem:a0ba4b3ed3ba51bdff6f8ef3305aa1f9b inherit pro_methods_classvrv_1_1_linking_interface"><td class="memItemLeft" align="right" valign="top"><a id="a0ba4b3ed3ba51bdff6f8ef3305aa1f9b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_linking_interface.html#a0ba4b3ed3ba51bdff6f8ef3305aa1f9b">SetUuidStr</a> ()</td></tr>
-<tr class="memdesc:a0ba4b3ed3ba51bdff6f8ef3305aa1f9b inherit pro_methods_classvrv_1_1_linking_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the fragment of the start or end @xml:id if given. <br /></td></tr>
-<tr class="separator:a0ba4b3ed3ba51bdff6f8ef3305aa1f9b inherit pro_methods_classvrv_1_1_linking_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is a base class for the <a class="el" href="classvrv_1_1_layer.html" title="This class represents a layer in a laid-out score (Doc).">Layer</a> (&lt;layer&gt;) content. </p>
 <p>It is not an abstract class but should not be instantiated directly. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3334d5cdd9472146f2db3fc5564b70bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3334d5cdd9472146f2db3fc5564b70bf">&#9670;&nbsp;</a></span>CountElementsInUnison()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int vrv::LayerElement::CountElementsInUnison </td>
+          <td>(</td>
+          <td class="paramtype">const std::set&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>firstChord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>secondChord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">data_STEMDIRECTION&#160;</td>
+          <td class="paramname"><em>stemDirection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper to figure whether two chords are in fully in unison based on the locations of the notes. </p>
+<p>This function assumes that two chords are already in unison and checks whether chords can overlap with their unison notes or if they should be placed separately. Returns true if all elements can safely overlap. </p>
+
+</div>
+</div>
 <a id="a0dce2be85a425e83b627c8d0a9a5b0f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0dce2be85a425e83b627c8d0a9a5b0f6">&#9670;&nbsp;</a></span>GenerateZoneBounds()</h2>
 
@@ -1727,7 +1779,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a></li>
-    <li class="footer">Generated on Mon Oct 26 2020 10:05:31 for My Project by
+    <li class="footer">Generated on Mon Oct 26 2020 21:21:59 for My Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
