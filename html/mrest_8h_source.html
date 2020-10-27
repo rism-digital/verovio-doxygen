@@ -108,39 +108,40 @@ $(document).ready(function(){initNavTree('mrest_8h_source.html',''); initResizab
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classvrv_1_1_m_rest.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_m_rest.html">MRest</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>,</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;              <span class="keyword">public</span> <a class="code" href="classvrv_1_1_position_interface.html">PositionInterface</a>,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;              <span class="keyword">public</span> AttCue,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;              <span class="keyword">public</span> AttFermataPresent,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;              <span class="keyword">public</span> AttVisibility {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classvrv_1_1_m_rest.html">MRest</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_m_rest.html">MRest</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classvrv_1_1_m_rest.html#ad7be714d2e1382633bd2be562e127bc0">   37</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_m_rest.html#ad7be714d2e1382633bd2be562e127bc0">Clone</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_m_rest.html">MRest</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Reset();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> std::string GetClassName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;MRest&quot;</span>; }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> ClassId GetClassId()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> MREST; }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> PositionInterface *GetPositionInterface() { <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>PositionInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_m_rest.html#a845ac484506e96521355ced8674bca54">ConvertMarkupAnalytical</a>(FunctorParams *functorParams);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_m_rest.html#ac99114d25defa897af639d2e2fefd850">ResetDrawing</a>(FunctorParams *functorParams);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_m_rest.html#a96355153a35f29e29e3268f8b5b578ea">ResetHorizontalAlignment</a>(FunctorParams *functorParams);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;              <span class="keyword">public</span> AttColor,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;              <span class="keyword">public</span> AttCue,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;              <span class="keyword">public</span> AttFermataPresent,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;              <span class="keyword">public</span> AttVisibility {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classvrv_1_1_m_rest.html">MRest</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_m_rest.html">MRest</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classvrv_1_1_m_rest.html#ad7be714d2e1382633bd2be562e127bc0">   38</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_m_rest.html#ad7be714d2e1382633bd2be562e127bc0">Clone</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_m_rest.html">MRest</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Reset();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> std::string GetClassName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;MRest&quot;</span>; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> ClassId GetClassId()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> MREST; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> PositionInterface *GetPositionInterface() { <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>PositionInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_m_rest.html#a845ac484506e96521355ced8674bca54">ConvertMarkupAnalytical</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_m_rest.html#ac99114d25defa897af639d2e2fefd850">ResetDrawing</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_m_rest.html#a96355153a35f29e29e3268f8b5b578ea">ResetHorizontalAlignment</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_position_interface_html"><div class="ttname"><a href="classvrv_1_1_position_interface.html">vrv::PositionInterface</a></div><div class="ttdoc">This class is an interface for elements with a position on the staff, such as rests.</div><div class="ttdef"><b>Definition:</b> positioninterface.h:28</div></div>
@@ -148,14 +149,14 @@ $(document).ready(function(){initNavTree('mrest_8h_source.html',''); initResizab
 <div class="ttc" id="aclassvrv_1_1_m_rest_html_ac99114d25defa897af639d2e2fefd850"><div class="ttname"><a href="classvrv_1_1_m_rest.html#ac99114d25defa897af639d2e2fefd850">vrv::MRest::ResetDrawing</a></div><div class="ttdeci">virtual int ResetDrawing(FunctorParams *functorParams)</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
 <div class="ttc" id="aclassvrv_1_1_m_rest_html_a845ac484506e96521355ced8674bca54"><div class="ttname"><a href="classvrv_1_1_m_rest.html#a845ac484506e96521355ced8674bca54">vrv::MRest::ConvertMarkupAnalytical</a></div><div class="ttdeci">virtual int ConvertMarkupAnalytical(FunctorParams *functorParams)</div><div class="ttdoc">See Object::ConvertMarkupAnalytical.</div></div>
 <div class="ttc" id="aclassvrv_1_1_m_rest_html_a96355153a35f29e29e3268f8b5b578ea"><div class="ttname"><a href="classvrv_1_1_m_rest.html#a96355153a35f29e29e3268f8b5b578ea">vrv::MRest::ResetHorizontalAlignment</a></div><div class="ttdeci">virtual int ResetHorizontalAlignment(FunctorParams *functorParams)</div><div class="ttdoc">See Object::ResetHorizontalAlignment.</div></div>
-<div class="ttc" id="aclassvrv_1_1_m_rest_html_ad7be714d2e1382633bd2be562e127bc0"><div class="ttname"><a href="classvrv_1_1_m_rest.html#ad7be714d2e1382633bd2be562e127bc0">vrv::MRest::Clone</a></div><div class="ttdeci">virtual Object * Clone() const</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> mrest.h:37</div></div>
+<div class="ttc" id="aclassvrv_1_1_m_rest_html_ad7be714d2e1382633bd2be562e127bc0"><div class="ttname"><a href="classvrv_1_1_m_rest.html#ad7be714d2e1382633bd2be562e127bc0">vrv::MRest::Clone</a></div><div class="ttdeci">virtual Object * Clone() const</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> mrest.h:38</div></div>
 <div class="ttc" id="aclassvrv_1_1_m_rest_html"><div class="ttname"><a href="classvrv_1_1_m_rest.html">vrv::MRest</a></div><div class="ttdoc">This class models the MEI &lt;mRest&gt; element.</div><div class="ttdef"><b>Definition:</b> mrest.h:24</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:38</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>mrest.h</b></li>
-    <li class="footer">Generated on Tue Oct 27 2020 12:33:33 for My Project by
+    <li class="footer">Generated on Tue Oct 27 2020 14:46:53 for My Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
