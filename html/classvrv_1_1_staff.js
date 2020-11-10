@@ -19,6 +19,7 @@ var classvrv_1_1_staff =
     [ "DrawingIsVisible", "classvrv_1_1_staff.html#abb9be0b494c5daf6344dccdbfb657a55", null ],
     [ "FillStaffCurrentTimeSpanning", "classvrv_1_1_staff.html#a0315f172bfa34a1b25afa4a62e77db09", null ],
     [ "GetAlignment", "classvrv_1_1_staff.html#a7a7f13fe4d00ba35ed03b952535027fb", null ],
+    [ "GetChildren", "classvrv_1_1_staff.html#aa4a035cb69c6135b5ca21531aa578382", null ],
     [ "GetClassId", "classvrv_1_1_staff.html#a45ab1dbee2599d16bbdd1184e6f499ff", null ],
     [ "GetClassName", "classvrv_1_1_staff.html#a80895a7014216eebfbe9d25887f5f256", null ],
     [ "GetDrawingRotate", "classvrv_1_1_staff.html#a323086f2690b72d00ea11c53751fb8ce", null ],

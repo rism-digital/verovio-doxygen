@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['m_5falignment_1811',['m_alignment',['../classvrv_1_1_floating_positioner.html#a1bca7057eeaed8bbb766a6ee4d10f84e',1,'vrv::FloatingPositioner']]],
-  ['m_5fback_1812',['m_back',['../classvrv_1_1_doc.html#ab96acb5023fb2cdbe88b648ac7065293',1,'vrv::Doc']]],
-  ['m_5fbeamelementcoordrefs_1813',['m_beamElementCoordRefs',['../classvrv_1_1_beam_segment.html#a2f8cd54b0cdac4e3db644a8c3bd22e19',1,'vrv::BeamSegment']]],
-  ['m_5fbeamelementcoords_1814',['m_beamElementCoords',['../classvrv_1_1_beam_drawing_interface.html#a8cea0232f11aa62bc020f19757dd526c',1,'vrv::BeamDrawingInterface']]],
-  ['m_5fcacheddrawingx_1815',['m_cachedDrawingX',['../classvrv_1_1_bounding_box.html#a4961ebaf8f99abe31ee894345cd84a16',1,'vrv::BoundingBox']]],
-  ['m_5fchildren_1816',['m_children',['../classvrv_1_1_object.html#a3f896d8fcccd24f2d443db940aa086e5',1,'vrv::Object']]],
+  ['m_5falignment_1812',['m_alignment',['../classvrv_1_1_floating_positioner.html#a1bca7057eeaed8bbb766a6ee4d10f84e',1,'vrv::FloatingPositioner']]],
+  ['m_5fback_1813',['m_back',['../classvrv_1_1_doc.html#ab96acb5023fb2cdbe88b648ac7065293',1,'vrv::Doc']]],
+  ['m_5fbeamelementcoordrefs_1814',['m_beamElementCoordRefs',['../classvrv_1_1_beam_segment.html#a2f8cd54b0cdac4e3db644a8c3bd22e19',1,'vrv::BeamSegment']]],
+  ['m_5fbeamelementcoords_1815',['m_beamElementCoords',['../classvrv_1_1_beam_drawing_interface.html#a8cea0232f11aa62bc020f19757dd526c',1,'vrv::BeamDrawingInterface']]],
+  ['m_5fcacheddrawingx_1816',['m_cachedDrawingX',['../classvrv_1_1_bounding_box.html#a4961ebaf8f99abe31ee894345cd84a16',1,'vrv::BoundingBox']]],
   ['m_5fcontent_1817',['m_content',['../classvrv_1_1_annot.html#a184f9b0fe1d935528b12ecf31e974d4c',1,'vrv::Annot']]],
   ['m_5fcrossstaff_1818',['m_crossStaff',['../classvrv_1_1_layer_element.html#af61467813ceb6c74c05b55484007c48b',1,'vrv::LayerElement']]],
   ['m_5fcurrentcolour_1819',['m_currentColour',['../classvrv_1_1_view.html#ae6aac368e2134e991fb7a1a5e93f59df',1,'vrv::View']]],

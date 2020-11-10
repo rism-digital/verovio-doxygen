@@ -101,7 +101,8 @@ var classvrv_1_1_object =
     [ "GetChildCount", "classvrv_1_1_object.html#a21704672a51a54150db818e2e14af2da", null ],
     [ "GetChildCount", "classvrv_1_1_object.html#a88129489683bd7a5ec580f87e43e3360", null ],
     [ "GetChildIndex", "classvrv_1_1_object.html#aa187432e90c784c80ac11e25ba92161c", null ],
-    [ "GetChildren", "classvrv_1_1_object.html#a78de7132f898f287a1e7365be22fee04", null ],
+    [ "GetChildren", "classvrv_1_1_object.html#a35273845b5714fd8e78ce82e18a60f3c", null ],
+    [ "GetChildrenForModification", "classvrv_1_1_object.html#a36a7f108361c29dae9b92078359ca105", null ],
     [ "GetClassId", "classvrv_1_1_object.html#a21d8756c0c921f9fa7bac0e210eb5e00", null ],
     [ "GetClassName", "classvrv_1_1_object.html#a85f5f4c2c61b31f3e0cfafccf6893dd3", null ],
     [ "GetClosingComment", "classvrv_1_1_object.html#a65066ae5b40a4dc3aab9bf76abc57d36", null ],
@@ -228,6 +229,5 @@ var classvrv_1_1_object =
     [ "Transpose", "classvrv_1_1_object.html#a0ee02f42628df9898a57349899c1ba3e", null ],
     [ "UnCastOff", "classvrv_1_1_object.html#a84120019fd68f6d7015f6765d7114a7b", null ],
     [ "UnsetCurrentScoreDef", "classvrv_1_1_object.html#a0ca2ca9c97d370b2f80d7ce8d9e0ac45", null ],
-    [ "m_children", "classvrv_1_1_object.html#a3f896d8fcccd24f2d443db940aa086e5", null ],
     [ "m_unsupported", "classvrv_1_1_object.html#a74ae0995caefb72a71445ba43fce0652", null ]
 ];

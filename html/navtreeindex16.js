@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"classvrv_1_1_syllable.html#a380ee2dac242e43806ceb337600ea36f":[0,0,0,279,8],
 "classvrv_1_1_syllable.html#a4d96cdc9d30d5dca1f4b1c1c05925450":[0,0,0,279,0],
 "classvrv_1_1_syllable.html#a67f3160296ef03037d663926cc7806d7":[0,0,0,279,5],
 "classvrv_1_1_syllable.html#a7e8020b5fa554bd0d3a305bbded89227":[0,0,0,279,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "classvrv_1_1_toolkit.html#a1b7c6ef82b1ec90af16f8f32da24dd5f":[0,0,0,295,16],
 "classvrv_1_1_toolkit.html#a234616d8b4ab54ec1b7efb79e5ae464d":[0,0,0,295,23],
 "classvrv_1_1_toolkit.html#a24988e48cc901661fd4db03ec9f756e9":[0,0,0,295,34],
-"classvrv_1_1_toolkit.html#a293b23b38c10be4da8b38c4b3a769d1d":[0,0,0,295,27],
-"classvrv_1_1_toolkit.html#a298894afff860e0675f2ca3b199fda98":[0,0,0,295,35]
+"classvrv_1_1_toolkit.html#a293b23b38c10be4da8b38c4b3a769d1d":[0,0,0,295,27]
 };
