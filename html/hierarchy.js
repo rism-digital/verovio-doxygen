@@ -349,7 +349,7 @@ var hierarchy =
       [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ],
       [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
     ] ],
-    [ "AttLigatureLog", null, [
+    [ "AttLigatureVis", null, [
       [ "vrv::Ligature", "classvrv_1_1_ligature.html", null ]
     ] ],
     [ "AttLineLoc", null, [
@@ -455,9 +455,6 @@ var hierarchy =
     [ "AttNotationType", null, [
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
     ] ],
-    [ "AttNoteAnlMensural", null, [
-      [ "vrv::Note", "classvrv_1_1_note.html", null ]
-    ] ],
     [ "AttNoteGes", null, [
       [ "vrv::PitchInterface", "classvrv_1_1_pitch_interface.html", [
         [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
@@ -467,6 +464,9 @@ var hierarchy =
       ] ]
     ] ],
     [ "AttNoteHeads", null, [
+      [ "vrv::Note", "classvrv_1_1_note.html", null ]
+    ] ],
+    [ "AttNoteVisMensural", null, [
       [ "vrv::Note", "classvrv_1_1_note.html", null ]
     ] ],
     [ "AttNumbered", null, [
