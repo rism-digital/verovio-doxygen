@@ -126,37 +126,39 @@ $(document).ready(function(){initNavTree('arpeg_8h_source.html',''); initResizab
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_arpeg.html#a5f238eed6fd2aded2572ee35c07509be">GetDrawingTopBottomNotes</a>(Note *&amp;top, Note *&amp;bottom);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> PlistInterface *GetPlistInterface() { <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>PlistInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> TimePointInterface *GetTimePointInterface() { <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TimePointInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span> GetDrawingXRel()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingXRel; }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetDrawingXRel(<span class="keywordtype">int</span> drawingXRel);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_arpeg.html#a3fc3e103a514919ab04b862eeb4a3cfa">IsValidRef</a>(Object *ref);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    Staff *<a class="code" href="classvrv_1_1_arpeg.html#aaab2107a9ec1a6c51018674da16ba32c">GetCrossStaff</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">virtual</span> PlistInterface *GetPlistInterface() { <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>PlistInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">virtual</span> TimePointInterface *GetTimePointInterface() { <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TimePointInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> GetDrawingXRel()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingXRel; }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetDrawingXRel(<span class="keywordtype">int</span> drawingXRel);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_arpeg.html#afe4fc5c1345b90506ebe58d2f30dfaba">ResetHorizontalAlignment</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_arpeg.html#a3fc3e103a514919ab04b862eeb4a3cfa">IsValidRef</a>(Object *ref);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//----------//</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_arpeg.html#a5dd32e1801e6fd0b203ac40b5e99c3a3">AdjustArpeg</a>(FunctorParams *functorParams);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_arpeg.html#a90a11373c1862998e957cc4d4d8ba8b3">ResetDrawing</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_arpeg.html#afe4fc5c1345b90506ebe58d2f30dfaba">ResetHorizontalAlignment</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_arpeg.html#a5dd32e1801e6fd0b203ac40b5e99c3a3">AdjustArpeg</a>(FunctorParams *functorParams);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">int</span> m_drawingXRel;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_arpeg.html#a90a11373c1862998e957cc4d4d8ba8b3">ResetDrawing</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">int</span> m_drawingXRel;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_arpeg_html_afe4fc5c1345b90506ebe58d2f30dfaba"><div class="ttname"><a href="classvrv_1_1_arpeg.html#afe4fc5c1345b90506ebe58d2f30dfaba">vrv::Arpeg::ResetHorizontalAlignment</a></div><div class="ttdeci">virtual int ResetHorizontalAlignment(FunctorParams *functorParams)</div><div class="ttdoc">See Object::ResetHorizontalAlignment.</div></div>
@@ -166,6 +168,7 @@ $(document).ready(function(){initNavTree('arpeg_8h_source.html',''); initResizab
 <div class="ttc" id="aclassvrv_1_1_arpeg_html_a5dd32e1801e6fd0b203ac40b5e99c3a3"><div class="ttname"><a href="classvrv_1_1_arpeg.html#a5dd32e1801e6fd0b203ac40b5e99c3a3">vrv::Arpeg::AdjustArpeg</a></div><div class="ttdeci">virtual int AdjustArpeg(FunctorParams *functorParams)</div><div class="ttdoc">See Object::AdjustArpeg.</div></div>
 <div class="ttc" id="aclassvrv_1_1_arpeg_html"><div class="ttname"><a href="classvrv_1_1_arpeg.html">vrv::Arpeg</a></div><div class="ttdoc">This class models the MEI &lt;arpeg&gt; element.</div><div class="ttdef"><b>Definition:</b> arpeg.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_arpeg_html_ab774c9c55fb6b881f101d15b077276ee"><div class="ttname"><a href="classvrv_1_1_arpeg.html#ab774c9c55fb6b881f101d15b077276ee">vrv::Arpeg::Clone</a></div><div class="ttdeci">virtual Object * Clone() const</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> arpeg.h:40</div></div>
+<div class="ttc" id="aclassvrv_1_1_arpeg_html_aaab2107a9ec1a6c51018674da16ba32c"><div class="ttname"><a href="classvrv_1_1_arpeg.html#aaab2107a9ec1a6c51018674da16ba32c">vrv::Arpeg::GetCrossStaff</a></div><div class="ttdeci">Staff * GetCrossStaff()</div><div class="ttdoc">Get cross staff of the front element if all elements of arpeggio are cross-staff.</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_plist_interface_html"><div class="ttname"><a href="classvrv_1_1_plist_interface.html">vrv::PlistInterface</a></div><div class="ttdoc">This class is an interface for elements having a single time point, such as tempo,...</div><div class="ttdef"><b>Definition:</b> plistinterface.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_arpeg_html_a3fc3e103a514919ab04b862eeb4a3cfa"><div class="ttname"><a href="classvrv_1_1_arpeg.html#a3fc3e103a514919ab04b862eeb4a3cfa">vrv::Arpeg::IsValidRef</a></div><div class="ttdeci">virtual bool IsValidRef(Object *ref)</div><div class="ttdoc">Custom method for @plist validation.</div></div>
@@ -175,7 +178,7 @@ $(document).ready(function(){initNavTree('arpeg_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>arpeg.h</b></li>
-    <li class="footer">Generated on Mon Nov 23 2020 10:56:18 for My Project by
+    <li class="footer">Generated on Fri Nov 27 2020 13:18:28 for My Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

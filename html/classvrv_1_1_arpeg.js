@@ -6,6 +6,7 @@ var classvrv_1_1_arpeg =
     [ "Clone", "classvrv_1_1_arpeg.html#ab774c9c55fb6b881f101d15b077276ee", null ],
     [ "GetClassId", "classvrv_1_1_arpeg.html#a873503501f6985affb961db28f753ea8", null ],
     [ "GetClassName", "classvrv_1_1_arpeg.html#a80bcbb96849f494a87db04dae4a6c6a0", null ],
+    [ "GetCrossStaff", "classvrv_1_1_arpeg.html#aaab2107a9ec1a6c51018674da16ba32c", null ],
     [ "GetDrawingTopBottomNotes", "classvrv_1_1_arpeg.html#a5f238eed6fd2aded2572ee35c07509be", null ],
     [ "GetDrawingX", "classvrv_1_1_arpeg.html#acc23d06529c683a70382d3388e95fce2", null ],
     [ "GetDrawingXRel", "classvrv_1_1_arpeg.html#ae90124eac70122805a217f580a19c19d", null ],

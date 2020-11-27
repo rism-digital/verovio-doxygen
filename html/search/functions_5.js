@@ -41,7 +41,7 @@ var searchData=
   ['getcontentheight_1458',['GetContentHeight',['../classvrv_1_1_page.html#af5028d206f7fb8e8b5c58d5644ca5a29',1,'vrv::Page']]],
   ['getcontentwidth_1459',['GetContentWidth',['../classvrv_1_1_page.html#a0608a60a03878f6c8223d103c3765cec',1,'vrv::Page']]],
   ['getcorrespfloatingpositioner_1460',['GetCorrespFloatingPositioner',['../classvrv_1_1_floating_object.html#aef3059c4ebeb1d581e5ce06319d11050',1,'vrv::FloatingObject::GetCorrespFloatingPositioner()'],['../classvrv_1_1_staff_alignment.html#ae46cadae61f249115e75d43ae10b5f4e',1,'vrv::StaffAlignment::GetCorrespFloatingPositioner()']]],
-  ['getcrossstaff_1461',['GetCrossStaff',['../classvrv_1_1_layer_element.html#af90812923cb1a9046f4287e855f64dc2',1,'vrv::LayerElement']]],
+  ['getcrossstaff_1461',['GetCrossStaff',['../classvrv_1_1_arpeg.html#aaab2107a9ec1a6c51018674da16ba32c',1,'vrv::Arpeg::GetCrossStaff()'],['../classvrv_1_1_layer_element.html#af90812923cb1a9046f4287e855f64dc2',1,'vrv::LayerElement::GetCrossStaff()']]],
   ['getcrossstaffextremes_1462',['GetCrossStaffExtremes',['../classvrv_1_1_chord.html#a88c18c0343ac30642a23f44bac26d755',1,'vrv::Chord']]],
   ['getcrossstaffoverflows_1463',['GetCrossStaffOverflows',['../classvrv_1_1_chord.html#a3204eed0bc3715186f961db7545916a4',1,'vrv::Chord::GetCrossStaffOverflows()'],['../classvrv_1_1_time_spanning_interface.html#a963916dd83f823c3ae6ea5bfdfd6248d',1,'vrv::TimeSpanningInterface::GetCrossStaffOverflows()']]],
   ['getcurrenttext_1464',['GetCurrentText',['../classvrv_1_1_num.html#ace095fb1ccb9b89830af4d75f840956d',1,'vrv::Num']]],
