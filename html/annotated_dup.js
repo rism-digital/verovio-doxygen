@@ -220,6 +220,7 @@ var annotated_dup =
       [ "PgHead2", "classvrv_1_1_pg_head2.html", "classvrv_1_1_pg_head2" ],
       [ "Phrase", "classvrv_1_1_phrase.html", "classvrv_1_1_phrase" ],
       [ "PitchInterface", "classvrv_1_1_pitch_interface.html", "classvrv_1_1_pitch_interface" ],
+      [ "Plica", "classvrv_1_1_plica.html", "classvrv_1_1_plica" ],
       [ "PlistInterface", "classvrv_1_1_plist_interface.html", "classvrv_1_1_plist_interface" ],
       [ "Point", "classvrv_1_1_point.html", "classvrv_1_1_point" ],
       [ "PointingToComparison", "classvrv_1_1_pointing_to_comparison.html", "classvrv_1_1_pointing_to_comparison" ],

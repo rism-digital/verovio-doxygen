@@ -214,6 +214,7 @@ var hierarchy =
           [ "vrv::Nc", "classvrv_1_1_nc.html", null ],
           [ "vrv::Neume", "classvrv_1_1_neume.html", null ],
           [ "vrv::Note", "classvrv_1_1_note.html", null ],
+          [ "vrv::Plica", "classvrv_1_1_plica.html", null ],
           [ "vrv::Proport", "classvrv_1_1_proport.html", null ],
           [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
           [ "vrv::Space", "classvrv_1_1_space.html", null ],
@@ -522,6 +523,9 @@ var hierarchy =
       ] ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
       [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
+    ] ],
+    [ "AttPlicaVis", null, [
+      [ "vrv::Plica", "classvrv_1_1_plica.html", null ]
     ] ],
     [ "AttPlist", null, [
       [ "vrv::Annot", "classvrv_1_1_annot.html", null ],

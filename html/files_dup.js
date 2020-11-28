@@ -111,6 +111,7 @@ var files_dup =
     [ "pghead2.h", "pghead2_8h_source.html", null ],
     [ "phrase.h", "phrase_8h_source.html", null ],
     [ "pitchinterface.h", "pitchinterface_8h_source.html", null ],
+    [ "plica.h", "plica_8h_source.html", null ],
     [ "plistinterface.h", "plistinterface_8h_source.html", null ],
     [ "positioninterface.h", "positioninterface_8h_source.html", null ],
     [ "proport.h", "proport_8h_source.html", null ],
