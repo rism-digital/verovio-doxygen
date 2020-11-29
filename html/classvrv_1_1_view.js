@@ -34,6 +34,7 @@ var classvrv_1_1_view =
     [ "DrawDir", "classvrv_1_1_view.html#ae5ca8f2c3fd55027afe6ae9bf00a1825", null ],
     [ "DrawDot", "classvrv_1_1_view.html#a784d025847a1a702695bba8bd704e176", null ],
     [ "DrawDot", "classvrv_1_1_view.html#a85a2b586e641814ad20f2bd520e773f2", null ],
+    [ "DrawDotInLigature", "classvrv_1_1_view.html#a5442d39b30587eeea850cef2b4601ca7", null ],
     [ "DrawDots", "classvrv_1_1_view.html#a703a4f8e82214c2625a3dc11780fc86a", null ],
     [ "DrawDotsPart", "classvrv_1_1_view.html#a4ad1c6e3713eaade221683df44ab8a0e", null ],
     [ "DrawDurationElement", "classvrv_1_1_view.html#a34c710188868cba6cfb43733b0304180", null ],
