@@ -615,6 +615,7 @@ var hierarchy =
         [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
         [ "vrv::Dot", "classvrv_1_1_dot.html", null ],
         [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
+        [ "vrv::MultiRest", "classvrv_1_1_multi_rest.html", null ],
         [ "vrv::Nc", "classvrv_1_1_nc.html", null ],
         [ "vrv::Note", "classvrv_1_1_note.html", null ],
         [ "vrv::Rest", "classvrv_1_1_rest.html", null ]
@@ -726,6 +727,9 @@ var hierarchy =
     ] ],
     [ "AttWhitespace", null, [
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ]
+    ] ],
+    [ "AttWidth", null, [
+      [ "vrv::MultiRest", "classvrv_1_1_multi_rest.html", null ]
     ] ],
     [ "vrv::BeamDrawingInterface", "classvrv_1_1_beam_drawing_interface.html", [
       [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
