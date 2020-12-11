@@ -412,6 +412,12 @@ var hierarchy =
       [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ],
       [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ]
     ] ],
+    [ "AttMidiValue", null, [
+      [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ]
+    ] ],
+    [ "AttMidiValue2", null, [
+      [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ]
+    ] ],
     [ "AttMidiVelocity", null, [
       [ "vrv::Note", "classvrv_1_1_note.html", null ]
     ] ],
