@@ -50,19 +50,20 @@ var NAVTREEINDEX =
 "classvrv_1_1_device_context.html#aecf9ed01e0d0c5e6f64f8b90c3e4bedd",
 "classvrv_1_1_editor_toolkit_neume.html#abad909b7228f86d3668e057ae16482f4",
 "classvrv_1_1_floating_object.html#ac09ff8994cb1d0119fdd67d25d12f410",
-"classvrv_1_1_humdrum_input.html#a2eb4ccdf0e0b7b40195398436aa19fdf",
-"classvrv_1_1_humdrum_input.html#afc541fd96b9b12c19b7b1b0c07e1c9cd",
-"classvrv_1_1_layer_element.html#ad62fa30c878d862cfe97b33dbaad07d2",
-"classvrv_1_1_measure_aligner.html#ae6a64b2c27e8f75b9bf6071b10fd2e07",
-"classvrv_1_1_object.html#a677194130b19ebd382b4868f9284985b",
-"classvrv_1_1_option_int.html#a5dad9b19c0545f699f30e44465ce49f2",
-"classvrv_1_1_page.html#aa791ea73a455a4c528fead15b09116e9",
-"classvrv_1_1_rend.html#ac4ab791198afe604c835a20cdf6ad796",
-"classvrv_1_1_staff.html#a5981a4796f897d0f70600c0594bba6fa",
-"classvrv_1_1_syl.html#a8be15ecb9214a389483e7a10ffc04b2b",
-"classvrv_1_1_toolkit.html#a09c79a752dd0b9e752506d9bcf583ecd",
-"classvrv_1_1_verse.html#affe8ae62b3b29ee06d9ce10a30ddfd82",
-"classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e.html#a6258dc8a8503015b7660b522e589f403"
+"classvrv_1_1_humdrum_input.html#a2994fa04a6a3dbdb6b21085f8bf54443",
+"classvrv_1_1_humdrum_input.html#af18f9af9ee2c087887a3d6b83c3d8b8c",
+"classvrv_1_1_layer_element.html#a9119ab77c4eb82a8ad74cb8a20f7784d",
+"classvrv_1_1_measure.html#af84b21d4ad5d2220833b830d5b2721aa",
+"classvrv_1_1_object.html#a506499857fa99ad918b7c236670acaf2",
+"classvrv_1_1_option_grp.html#a2c5bacdd32d1d12e208c001eae737e24",
+"classvrv_1_1_page.html#a55d88d7f78119d3d358b697867f1aa9c",
+"classvrv_1_1_reh.html#a34a2e9921d35c78b07b6f378337023b8",
+"classvrv_1_1_staff.html#a117c874984f47c04a116e5a369f73b52",
+"classvrv_1_1_svg_device_context.html#ae59f5620c868167fef4915c0dfe30618",
+"classvrv_1_1_timestamp_aligner.html",
+"classvrv_1_1_unclear.html#aabafe82390e07aeab3f93c197edb5b74",
+"classvrv_1_1data___l_i_n_e_w_i_d_t_h.html#a6adda1bd5ffdd57975a7e98fdf39a73b",
+"verse_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

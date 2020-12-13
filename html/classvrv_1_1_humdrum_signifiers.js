@@ -10,6 +10,7 @@ var classvrv_1_1_humdrum_signifiers =
     [ "editacc", "classvrv_1_1_humdrum_signifiers.html#a907dffa585e5c2f043cbd09d2febc994", null ],
     [ "edittype", "classvrv_1_1_humdrum_signifiers.html#a8c9c1b81f9cb720734c0d883c3c1fe5e", null ],
     [ "empty", "classvrv_1_1_humdrum_signifiers.html#a5a44d3479ca5c84c80d5116a149f3bc7", null ],
+    [ "hairpinAccent", "classvrv_1_1_humdrum_signifiers.html#ab66a6cbe68a034df07006ba86a8cdd54", null ],
     [ "irest_color", "classvrv_1_1_humdrum_signifiers.html#acefc2f4cf69633e05ac5f5515de03552", null ],
     [ "ispace_color", "classvrv_1_1_humdrum_signifiers.html#a4d74a91b5405881760ac46d83ce5ad38", null ],
     [ "mark", "classvrv_1_1_humdrum_signifiers.html#a6b2e9117d9ed6cd66000296f01dcd855", null ],
