@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"unclear_8h_source.html":[1,0,156],
 "verse_8h_source.html":[1,0,157],
 "verticalaligner_8h_source.html":[1,0,158],
 "view_8h_source.html":[1,0,159],
