@@ -444,6 +444,7 @@ var hierarchy =
       [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
     ] ],
     [ "AttNNumberLike", null, [
+      [ "vrv::BarLine", "classvrv_1_1_bar_line.html", null ],
       [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
       [ "vrv::Fing", "classvrv_1_1_fing.html", null ],
       [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
