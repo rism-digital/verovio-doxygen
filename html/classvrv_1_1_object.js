@@ -177,6 +177,7 @@ var classvrv_1_1_object =
     [ "PrepareFacsimile", "classvrv_1_1_object.html#ac75af86dda467af7ae8d928c83b1a7c8", null ],
     [ "PrepareFloatingGrps", "classvrv_1_1_object.html#af6ece837a732f054019b9230c59d8701", null ],
     [ "PrepareFloatingGrpsEnd", "classvrv_1_1_object.html#ac9850da37f019eae12da8c42776e67b8", null ],
+    [ "PrepareGroupSymbols", "classvrv_1_1_object.html#ad476ed6490a1c2234a078b8d0195d14a", null ],
     [ "PrepareLayerElementParts", "classvrv_1_1_object.html#a211bdcbc97d6e6eb1b39266d38fea6ef", null ],
     [ "PrepareLinking", "classvrv_1_1_object.html#a506499857fa99ad918b7c236670acaf2", null ],
     [ "PrepareLyrics", "classvrv_1_1_object.html#a1bda4d7b151d3ceb49e8dcf2a6b4474e", null ],

@@ -55,6 +55,7 @@ var classvrv_1_1_view =
     [ "DrawFTrem", "classvrv_1_1_view.html#a2cc270dfd01f43d976d0b9dfe8ee7dd2", null ],
     [ "DrawGliss", "classvrv_1_1_view.html#a31c72e813fd88ae486ad754378aa8267", null ],
     [ "DrawGraceGrp", "classvrv_1_1_view.html#abc6d0a996e82ac4c0cebf76e88132446", null ],
+    [ "DrawGrpSym", "classvrv_1_1_view.html#a88cca46ca25ecffa69c8a0f76849a58d", null ],
     [ "DrawHairpin", "classvrv_1_1_view.html#a6d706ccd9a5a99171e7606d97cf3f207", null ],
     [ "DrawHalfmRpt", "classvrv_1_1_view.html#a7108efe1ff4dad378c59801a7502fedf", null ],
     [ "DrawHarm", "classvrv_1_1_view.html#a33fd3c9ff31917748cdcd7d778a81975", null ],

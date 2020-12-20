@@ -7,9 +7,12 @@ var classvrv_1_1_staff_grp =
     [ "GetClassId", "classvrv_1_1_staff_grp.html#adad64497ae7d9d984b9b5fedb6d5b218", null ],
     [ "GetClassName", "classvrv_1_1_staff_grp.html#aa7b93aae121239427d02183c48631275", null ],
     [ "GetDrawingVisibility", "classvrv_1_1_staff_grp.html#a077f0d79e3d5cc9f39389059d6610165", null ],
+    [ "GetFirstLastStaffDef", "classvrv_1_1_staff_grp.html#a3e5fa35120cdeec8f3dc6139a658379e", null ],
+    [ "GetGroupSymbol", "classvrv_1_1_staff_grp.html#ad19d58f46603d24bd12c618ac7f48d36", null ],
     [ "GetMaxStaffSize", "classvrv_1_1_staff_grp.html#a511a37516b151679be18a3eb13385647", null ],
     [ "IsSupportedChild", "classvrv_1_1_staff_grp.html#a8a7dc49e7551930bbe65cab7ff11b66f", null ],
     [ "OptimizeScoreDefEnd", "classvrv_1_1_staff_grp.html#a9f1bc73b52b11a9f05678a56a7c3f4e1", null ],
     [ "Reset", "classvrv_1_1_staff_grp.html#a347677b55f3e9749ac925d19b3e55b9b", null ],
-    [ "SetDrawingVisibility", "classvrv_1_1_staff_grp.html#a84b445f6a6c649cd9f35f9fd2adbecaa", null ]
+    [ "SetDrawingVisibility", "classvrv_1_1_staff_grp.html#a84b445f6a6c649cd9f35f9fd2adbecaa", null ],
+    [ "SetGroupSymbol", "classvrv_1_1_staff_grp.html#a94713544a37bd12ad3b8aafaff326fd0", null ]
 ];

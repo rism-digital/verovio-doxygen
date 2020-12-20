@@ -84,6 +84,7 @@ var hierarchy =
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
       [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
       [ "vrv::GraceGrp", "classvrv_1_1_grace_grp.html", null ],
+      [ "vrv::GrpSym", "classvrv_1_1_grp_sym.html", null ],
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
       [ "vrv::HalfmRpt", "classvrv_1_1_halfm_rpt.html", null ],
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
@@ -248,6 +249,9 @@ var hierarchy =
     ] ],
     [ "AttGraceGrpLog", null, [
       [ "vrv::GraceGrp", "classvrv_1_1_grace_grp.html", null ]
+    ] ],
+    [ "AttGrpSymLog", null, [
+      [ "vrv::GrpSym", "classvrv_1_1_grp_sym.html", null ]
     ] ],
     [ "AttHairpinLog", null, [
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ]
@@ -581,6 +585,7 @@ var hierarchy =
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
     ] ],
     [ "AttStaffGroupingSym", null, [
+      [ "vrv::GrpSym", "classvrv_1_1_grp_sym.html", null ],
       [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ]
     ] ],
     [ "AttStaffGrpVis", null, [
@@ -632,9 +637,11 @@ var hierarchy =
       [ "vrv::PositionInterface", "classvrv_1_1_position_interface.html", null ]
     ] ],
     [ "AttStartEndId", null, [
+      [ "vrv::GrpSym", "classvrv_1_1_grp_sym.html", null ],
       [ "vrv::TimeSpanningInterface", "classvrv_1_1_time_spanning_interface.html", null ]
     ] ],
     [ "AttStartId", null, [
+      [ "vrv::GrpSym", "classvrv_1_1_grp_sym.html", null ],
       [ "vrv::TimePointInterface", "classvrv_1_1_time_point_interface.html", null ]
     ] ],
     [ "AttStems", null, [
@@ -764,6 +771,7 @@ var hierarchy =
           [ "vrv::ControlElement", "classvrv_1_1_control_element.html", null ],
           [ "vrv::SystemElement", "classvrv_1_1_system_element.html", null ]
         ] ],
+        [ "vrv::GrpSym", "classvrv_1_1_grp_sym.html", null ],
         [ "vrv::HorizontalAligner", "classvrv_1_1_horizontal_aligner.html", [
           [ "vrv::GraceAligner", "classvrv_1_1_grace_aligner.html", null ],
           [ "vrv::MeasureAligner", "classvrv_1_1_measure_aligner.html", null ]
@@ -806,7 +814,8 @@ var hierarchy =
         [ "vrv::MeasureAlignerTypeComparison", "classvrv_1_1_measure_aligner_type_comparison.html", null ],
         [ "vrv::MeasureOnsetOffsetComparison", "classvrv_1_1_measure_onset_offset_comparison.html", null ],
         [ "vrv::NoteOnsetOffsetComparison", "classvrv_1_1_note_onset_offset_comparison.html", null ],
-        [ "vrv::PointingToComparison", "classvrv_1_1_pointing_to_comparison.html", null ]
+        [ "vrv::PointingToComparison", "classvrv_1_1_pointing_to_comparison.html", null ],
+        [ "vrv::UuidComparison", "classvrv_1_1_uuid_comparison.html", null ]
       ] ],
       [ "vrv::ClassIdsComparison", "classvrv_1_1_class_ids_comparison.html", [
         [ "vrv::VisibleStaffDefOrGrpObject", "classvrv_1_1_visible_staff_def_or_grp_object.html", null ]
