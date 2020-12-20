@@ -1,8 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"classvrv_1_1_visible_staff_def_or_grp_object.html#a889b236447ae501cebe189233fc5958b":[0,0,0,313,2],
-"classvrv_1_1_visible_staff_def_or_grp_object.html#ae4cb3ed0df77c34e6cc358d92a9a3a5c":[0,0,0,313,1],
-"classvrv_1_1_zone.html":[0,0,0,314],
 "classvrv_1_1_zone.html#a2cbc2715d26308c07275a7fd5e30f8c7":[0,0,0,314,7],
 "classvrv_1_1_zone.html#a48ce69c151bbd947402d95b926ecbbaf":[0,0,0,314,2],
 "classvrv_1_1_zone.html#a4aeaaa9f400e056d7b7a405d33999e98":[0,0,0,314,0],
@@ -129,16 +126,16 @@ var NAVTREEINDEX19 =
 "fing_8h_source.html":[1,0,54],
 "floatingobject_8h_source.html":[1,0,55],
 "ftrem_8h_source.html":[1,0,56],
-"functions.html":[0,3,0],
 "functions.html":[0,3,0,0],
+"functions.html":[0,3,0],
 "functions_b.html":[0,3,0,1],
 "functions_c.html":[0,3,0,2],
 "functions_d.html":[0,3,0,3],
 "functions_e.html":[0,3,0,4],
 "functions_enum.html":[0,3,4],
 "functions_f.html":[0,3,0,5],
-"functions_func.html":[0,3,1,0],
 "functions_func.html":[0,3,1],
+"functions_func.html":[0,3,1,0],
 "functions_func_c.html":[0,3,1,1],
 "functions_func_d.html":[0,3,1,2],
 "functions_func_e.html":[0,3,1,3],
@@ -249,5 +246,8 @@ var NAVTREEINDEX19 =
 "scoredefinterface_8h_source.html":[1,0,127],
 "section_8h_source.html":[1,0,128],
 "sic_8h_source.html":[1,0,129],
-"slur_8h_source.html":[1,0,130]
+"slur_8h_source.html":[1,0,130],
+"smufl_8h_source.html":[1,0,131],
+"space_8h_source.html":[1,0,132],
+"staff_8h_source.html":[1,0,133]
 };
