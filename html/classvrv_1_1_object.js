@@ -27,6 +27,7 @@ var classvrv_1_1_object =
     [ "AdjustStaffOverlap", "classvrv_1_1_object.html#a56434ce48d536c537485260bec7ef6c2", null ],
     [ "AdjustSylSpacing", "classvrv_1_1_object.html#af1cfac1b1885dea453542d8fccdc4461", null ],
     [ "AdjustSylSpacingEnd", "classvrv_1_1_object.html#ada977235c88371e047043642cb5ff3bb", null ],
+    [ "AdjustTupletNumOverlap", "classvrv_1_1_object.html#a8aaf88c9ab32e7cc92a6d39189031caa", null ],
     [ "AdjustTupletsX", "classvrv_1_1_object.html#a59773566ac731e75fa34166fa1d78aa3", null ],
     [ "AdjustTupletsY", "classvrv_1_1_object.html#a80bc658bb972eabcee2d0aa536386cfc", null ],
     [ "AdjustXOverflow", "classvrv_1_1_object.html#af18e010dd5e84c10b4c10cfa0636db08", null ],

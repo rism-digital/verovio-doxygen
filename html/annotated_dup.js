@@ -19,6 +19,7 @@ var annotated_dup =
       [ "AdjustSlursParams", "classvrv_1_1_adjust_slurs_params.html", "classvrv_1_1_adjust_slurs_params" ],
       [ "AdjustStaffOverlapParams", "classvrv_1_1_adjust_staff_overlap_params.html", "classvrv_1_1_adjust_staff_overlap_params" ],
       [ "AdjustSylSpacingParams", "classvrv_1_1_adjust_syl_spacing_params.html", "classvrv_1_1_adjust_syl_spacing_params" ],
+      [ "AdjustTupletNumOverlapParams", "classvrv_1_1_adjust_tuplet_num_overlap_params.html", "classvrv_1_1_adjust_tuplet_num_overlap_params" ],
       [ "AdjustXOverflowParams", "classvrv_1_1_adjust_x_overflow_params.html", "classvrv_1_1_adjust_x_overflow_params" ],
       [ "AdjustXPosParams", "classvrv_1_1_adjust_x_pos_params.html", "classvrv_1_1_adjust_x_pos_params" ],
       [ "AdjustYPosParams", "classvrv_1_1_adjust_y_pos_params.html", "classvrv_1_1_adjust_y_pos_params" ],
