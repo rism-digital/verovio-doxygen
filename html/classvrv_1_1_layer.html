@@ -246,6 +246,9 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer.html#ad622e8231dfae3932f38439a3d2502ea">PrepareRpt</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
 <tr class="memdesc:ad622e8231dfae3932f38439a3d2502ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a1512dc40ee5cbcefd3dd463776e24c0c" title="Functor for setting mRpt drawing numbers (if required) The functor is processed by staff/layer using ...">Object::PrepareRpt</a>. <br /></td></tr>
 <tr class="separator:ad622e8231dfae3932f38439a3d2502ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f6fd58a9380728c20d6e94a0e2672f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer.html#a41f6fd58a9380728c20d6e94a0e2672f">ResetDrawing</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
+<tr class="memdesc:a41f6fd58a9380728c20d6e94a0e2672f"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#abe889073301d6e1dfe55e725b6532948" title="Export the object to a JSON timemap file.">Object::GenerateTimemap</a> To be added once <a class="el" href="classvrv_1_1_layer.html" title="This class represents a layer in a laid-out score (Doc).">Layer</a> implements <a class="el" href="classvrv_1_1_linking_interface.html" title="This class is an interface for elements having a link It is not an abstract class but should not be i...">LinkingInterface</a>.  <a href="classvrv_1_1_layer.html#a41f6fd58a9380728c20d6e94a0e2672f">More...</a><br /></td></tr>
+<tr class="separator:a41f6fd58a9380728c20d6e94a0e2672f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, and other standard methods</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Reset method resets all attribute classes </p>
 </div></td></tr>
@@ -283,6 +286,19 @@ data_STEMDIRECTION&#160;</td><td class="memItemRight" valign="bottom"><b>GetDraw
 <tr class="memitem:a9384a5e86b46e31c7fb07d98d6583107"><td class="memItemLeft" align="right" valign="top"><a id="a9384a5e86b46e31c7fb07d98d6583107"></a>
 data_STEMDIRECTION&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingStemDir</b> (const ArrayOfBeamElementCoords *coords)</td></tr>
 <tr class="separator:a9384a5e86b46e31c7fb07d98d6583107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Setter and getter for the cross-staff flags</div></td></tr>
+<tr class="memitem:af2b6c3163468f34d782e334675d82bb9"><td class="memItemLeft" align="right" valign="top"><a id="af2b6c3163468f34d782e334675d82bb9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCrossStaffFromAbove</b> (bool crossStaff)</td></tr>
+<tr class="separator:af2b6c3163468f34d782e334675d82bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe990fc7f90739f43103ca3e2805504"><td class="memItemLeft" align="right" valign="top"><a id="adbe990fc7f90739f43103ca3e2805504"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasCrossStaffFromAbove</b> () const</td></tr>
+<tr class="separator:adbe990fc7f90739f43103ca3e2805504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ff6e247682992b7fba8137af6eca5a"><td class="memItemLeft" align="right" valign="top"><a id="a37ff6e247682992b7fba8137af6eca5a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCrossStaffFromBelow</b> (bool crossStaff)</td></tr>
+<tr class="separator:a37ff6e247682992b7fba8137af6eca5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e25e8082abddb22bec2cdb8b440ad8"><td class="memItemLeft" align="right" valign="top"><a id="a02e25e8082abddb22bec2cdb8b440ad8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasCrossStaffFromBelow</b> () const</td></tr>
+<tr class="separator:a02e25e8082abddb22bec2cdb8b440ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:aaac00d03690b56d5c5c61cc3765af867"><td class="memItemLeft" align="right" valign="top"><a id="aaac00d03690b56d5c5c61cc3765af867"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer.html#aaac00d03690b56d5c5c61cc3765af867">CalcOnsetOffset</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
@@ -652,10 +668,6 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a5608529769df462c68433b5f50680969">PrepareBoundaries</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
 <tr class="memdesc:a5608529769df462c68433b5f50680969 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_functor.html" title="This class is an abstact Functor for the object hierarchy.">Functor</a> for setting <a class="el" href="classvrv_1_1_measure.html" title="This class represents a measure in a page-based score (Doc).">Measure</a> of <a class="el" href="classvrv_1_1_ending.html" title="This class represents a MEI ending.">Ending</a>. <br /></td></tr>
 <tr class="separator:a5608529769df462c68433b5f50680969 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69ad18810d5249e8bb56be54884d2b50 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a69ad18810d5249e8bb56be54884d2b50"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a69ad18810d5249e8bb56be54884d2b50">ResetDrawing</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
-<tr class="memdesc:a69ad18810d5249e8bb56be54884d2b50 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the drawing values before calling PrepareDrawing after changes. <br /></td></tr>
-<tr class="separator:a69ad18810d5249e8bb56be54884d2b50 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d26e4876ee5a38e4c01fae4af747c23 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a3d26e4876ee5a38e4c01fae4af747c23">GetRelativeLayerElement</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
 <tr class="memdesc:a3d26e4876ee5a38e4c01fae4af747c23 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Go through all layer elements of the layer and return next/previous element relative to the specified layer element.  <a href="classvrv_1_1_object.html#a3d26e4876ee5a38e4c01fae4af747c23">More...</a><br /></td></tr>
 <tr class="separator:a3d26e4876ee5a38e4c01fae4af747c23 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1580,6 +1592,37 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
+<a id="a41f6fd58a9380728c20d6e94a0e2672f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41f6fd58a9380728c20d6e94a0e2672f">&#9670;&nbsp;</a></span>ResetDrawing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int vrv::Layer::ResetDrawing </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>See <a class="el" href="classvrv_1_1_object.html#abe889073301d6e1dfe55e725b6532948" title="Export the object to a JSON timemap file.">Object::GenerateTimemap</a> To be added once <a class="el" href="classvrv_1_1_layer.html" title="This class represents a layer in a laid-out score (Doc).">Layer</a> implements <a class="el" href="classvrv_1_1_linking_interface.html" title="This class is an interface for elements having a link It is not an abstract class but should not be i...">LinkingInterface</a>. </p>
+<p>See <a class="el" href="classvrv_1_1_object.html#a69ad18810d5249e8bb56be54884d2b50" title="Reset the drawing values before calling PrepareDrawing after changes.">Object::ResetDrawing</a> To be added once <a class="el" href="classvrv_1_1_layer.html" title="This class represents a layer in a laid-out score (Doc).">Layer</a> implements <a class="el" href="classvrv_1_1_linking_interface.html" title="This class is an interface for elements having a link It is not an abstract class but should not be i...">LinkingInterface</a> </p>
+
+<p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#a69ad18810d5249e8bb56be54884d2b50">vrv::Object</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="layer_8h_source.html">layer.h</a></li>
 </ul>
@@ -1589,7 +1632,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_layer.html">Layer</a></li>
-    <li class="footer">Generated on Tue Jan 5 2021 22:15:11 for My Project by
+    <li class="footer">Generated on Wed Jan 6 2021 06:49:11 for My Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

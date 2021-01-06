@@ -186,59 +186,68 @@ $(document).ready(function(){initNavTree('layer_8h_source.html',''); initResizab
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            m_cautionStaffDefClef || m_cautionStaffDefKeySig || m_cautionStaffDefMensur || m_cautionStaffDefMeterSig);</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#ad17da9513b74e8fcfd3e8893a54da16d">ConvertToCastOffMensural</a>(FunctorParams *params);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a0c1820fbd11943a83be7d9fc85bd372c">ConvertToUnCastOffMensural</a>(FunctorParams *params);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">void</span> SetCrossStaffFromAbove(<span class="keywordtype">bool</span> crossStaff) { m_crossStaffFromAbove = crossStaff; }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">bool</span> HasCrossStaffFromAbove()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_crossStaffFromAbove; }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">void</span> SetCrossStaffFromBelow(<span class="keywordtype">bool</span> crossStaff) { m_crossStaffFromBelow = crossStaff; }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">bool</span> HasCrossStaffFromBelow()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_crossStaffFromBelow; }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">//----------//</span></div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#aaef4bde4c30d8f9a213987d77fea267e">UnsetCurrentScoreDef</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#ad17da9513b74e8fcfd3e8893a54da16d">ConvertToCastOffMensural</a>(FunctorParams *params);</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a8dfad94746e5bc31420776c9783224f2">ResetHorizontalAlignment</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a0c1820fbd11943a83be7d9fc85bd372c">ConvertToUnCastOffMensural</a>(FunctorParams *params);</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#ab2e1b95d9f6b6be1a493a2c483094b04">AlignHorizontally</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#aaef4bde4c30d8f9a213987d77fea267e">UnsetCurrentScoreDef</a>(FunctorParams *functorParams);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#aa8aa7f77d951d8ab597c1556b54e1ad9">AlignHorizontallyEnd</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a8dfad94746e5bc31420776c9783224f2">ResetHorizontalAlignment</a>(FunctorParams *functorParams);</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a0fc8fe59a19f1777afa25b5719d43adb">PrepareProcessingLists</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#ab2e1b95d9f6b6be1a493a2c483094b04">AlignHorizontally</a>(FunctorParams *functorParams);</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#ad622e8231dfae3932f38439a3d2502ea">PrepareRpt</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#aa8aa7f77d951d8ab597c1556b54e1ad9">AlignHorizontallyEnd</a>(FunctorParams *functorParams);</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#aaac00d03690b56d5c5c61cc3765af867">CalcOnsetOffset</a>(FunctorParams *functorParams);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="comment">// virtual int GenerateTimemap(FunctorParams *functorParams);</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="comment">// virtual int ResetDrawing(FunctorParams *);</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    data_STEMDIRECTION m_drawingStemDir;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a0fc8fe59a19f1777afa25b5719d43adb">PrepareProcessingLists</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#ad622e8231dfae3932f38439a3d2502ea">PrepareRpt</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#aaac00d03690b56d5c5c61cc3765af867">CalcOnsetOffset</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="comment">// virtual int GenerateTimemap(FunctorParams *functorParams);</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a41f6fd58a9380728c20d6e94a0e2672f">ResetDrawing</a>(FunctorParams *);</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    Clef *m_staffDefClef;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    KeySig *m_staffDefKeySig;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    Mensur *m_staffDefMensur;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    MeterSig *m_staffDefMeterSig;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordtype">bool</span> m_drawKeySigCancellation;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    Clef *m_cautionStaffDefClef;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    KeySig *m_cautionStaffDefKeySig;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    Mensur *m_cautionStaffDefMensur;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    MeterSig *m_cautionStaffDefMeterSig;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordtype">bool</span> m_drawCautionKeySigCancel;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;};</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    data_STEMDIRECTION m_drawingStemDir;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordtype">bool</span> m_crossStaffFromBelow;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordtype">bool</span> m_crossStaffFromAbove;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    Clef *m_staffDefClef;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    KeySig *m_staffDefKeySig;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    Mensur *m_staffDefMensur;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    MeterSig *m_staffDefMeterSig;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">bool</span> m_drawKeySigCancellation;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    Clef *m_cautionStaffDefClef;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    KeySig *m_cautionStaffDefKeySig;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    Mensur *m_cautionStaffDefMensur;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    MeterSig *m_cautionStaffDefMeterSig;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordtype">bool</span> m_drawCautionKeySigCancel;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;};</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_layer_html_a5adbee5370bec875186360c8721425cd"><div class="ttname"><a href="classvrv_1_1_layer.html#a5adbee5370bec875186360c8721425cd">vrv::Layer::SetDrawingCautionValues</a></div><div class="ttdeci">void SetDrawingCautionValues(StaffDef *currentStaffDef)</div><div class="ttdoc">Set drawing clef, keysig and mensur if necessary and if available.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_ad9c8c466adf27ed39d3e4c4829a96acd"><div class="ttname"><a href="classvrv_1_1_layer.html#ad9c8c466adf27ed39d3e4c4829a96acd">vrv::Layer::GetClefLocOffset</a></div><div class="ttdeci">int GetClefLocOffset(LayerElement *test)</div><div class="ttdoc">Return the clef offset for the position x.</div></div>
+<div class="ttc" id="aclassvrv_1_1_layer_html_a41f6fd58a9380728c20d6e94a0e2672f"><div class="ttname"><a href="classvrv_1_1_layer.html#a41f6fd58a9380728c20d6e94a0e2672f">vrv::Layer::ResetDrawing</a></div><div class="ttdeci">virtual int ResetDrawing(FunctorParams *)</div><div class="ttdoc">See Object::GenerateTimemap To be added once Layer implements LinkingInterface.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_aaef4bde4c30d8f9a213987d77fea267e"><div class="ttname"><a href="classvrv_1_1_layer.html#aaef4bde4c30d8f9a213987d77fea267e">vrv::Layer::UnsetCurrentScoreDef</a></div><div class="ttdeci">virtual int UnsetCurrentScoreDef(FunctorParams *functorParams)</div><div class="ttdoc">See Object::UnsetCurrentScoreDef.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_add3ece7e57070b36092d85f7b58e7b3a"><div class="ttname"><a href="classvrv_1_1_layer.html#add3ece7e57070b36092d85f7b58e7b3a">vrv::Layer::IsSupportedChild</a></div><div class="ttdeci">virtual bool IsSupportedChild(Object *object)</div><div class="ttdoc">Base method for checking if a child can be added.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html_a2bfb8ee92dbd7e805de0aae51d07d534"><div class="ttname"><a href="classvrv_1_1_object.html#a2bfb8ee92dbd7e805de0aae51d07d534">vrv::Object::GetIdx</a></div><div class="ttdeci">int GetIdx() const</div><div class="ttdoc">Return the index position of the object in its parent (-1 if not found)</div></div>
@@ -270,7 +279,7 @@ $(document).ready(function(){initNavTree('layer_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>layer.h</b></li>
-    <li class="footer">Generated on Tue Jan 5 2021 22:15:09 for My Project by
+    <li class="footer">Generated on Wed Jan 6 2021 06:49:09 for My Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

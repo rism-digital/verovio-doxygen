@@ -1,5 +1,10 @@
 var NAVTREEINDEX20 =
 {
+"sic_8h_source.html":[1,0,129],
+"slur_8h_source.html":[1,0,130],
+"smufl_8h_source.html":[1,0,131],
+"space_8h_source.html":[1,0,132],
+"staff_8h_source.html":[1,0,133],
 "staffdef_8h_source.html":[1,0,134],
 "staffgrp_8h_source.html":[1,0,135],
 "structvrv_1_1_closest_b_b.html":[0,0,0,69],
