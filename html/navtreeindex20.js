@@ -1,5 +1,9 @@
 var NAVTREEINDEX20 =
 {
+"sb_8h_source.html":[1,0,124],
+"score_8h_source.html":[1,0,125],
+"scoredef_8h_source.html":[1,0,126],
+"scoredefinterface_8h_source.html":[1,0,127],
 "section_8h_source.html":[1,0,128],
 "sic_8h_source.html":[1,0,129],
 "slur_8h_source.html":[1,0,130],

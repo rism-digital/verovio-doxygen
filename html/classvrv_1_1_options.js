@@ -18,6 +18,7 @@ var classvrv_1_1_options =
     [ "m_bottomMarginPgHead", "classvrv_1_1_options.html#a04d38d4149806f4713dd6be8370b7d61", null ],
     [ "m_bracketThickness", "classvrv_1_1_options.html#a4311cad04890bfe936addfdf3251de25", null ],
     [ "m_breaks", "classvrv_1_1_options.html#aab37d3899f4c42e7838ed389f946c4b3", null ],
+    [ "m_breaksSmartSb", "classvrv_1_1_options.html#a7e663d4cb8135cd27eef37dcc926d28d", null ],
     [ "m_choiceXPathQuery", "classvrv_1_1_options.html#a3b9c987a4dcdf48c94e242f5f46c77ff", null ],
     [ "m_condense", "classvrv_1_1_options.html#a71e85a428c98b12c11fa8dde3e28c62e", null ],
     [ "m_condenseEncoded", "classvrv_1_1_options.html#a2c2fb3485b53542a0488bea7df0d1949", null ],

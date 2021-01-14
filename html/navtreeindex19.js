@@ -1,5 +1,9 @@
 var NAVTREEINDEX19 =
 {
+"classvrv_1_1_view.html#af8ec1658067d523478044b721c3ea199":[0,0,0,312,147],
+"classvrv_1_1_view.html#af932b7453ad33f6a3909b68c12b5fef5":[0,0,0,312,100],
+"classvrv_1_1_view.html#afe6147dc2aa9a756204fbc2a180ec24c":[0,0,0,312,160],
+"classvrv_1_1_view.html#afe9a057654a48943b239e032265aa35c":[0,0,0,312,173],
 "classvrv_1_1_visible_staff_def_or_grp_object.html":[0,0,0,313],
 "classvrv_1_1_visible_staff_def_or_grp_object.html#a0e870e8c4ec1595d9ca5a12d591d3c0e":[0,0,0,313,3],
 "classvrv_1_1_visible_staff_def_or_grp_object.html#a4261a207ab393148c618b231f80b053d":[0,0,0,313,0],
@@ -132,8 +136,8 @@ var NAVTREEINDEX19 =
 "fing_8h_source.html":[1,0,54],
 "floatingobject_8h_source.html":[1,0,55],
 "ftrem_8h_source.html":[1,0,56],
-"functions.html":[0,3,0,0],
 "functions.html":[0,3,0],
+"functions.html":[0,3,0,0],
 "functions_b.html":[0,3,0,1],
 "functions_c.html":[0,3,0,2],
 "functions_d.html":[0,3,0,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX19 =
 "rend_8h_source.html":[1,0,120],
 "rest_8h_source.html":[1,0,121],
 "restore_8h_source.html":[1,0,122],
-"runningelement_8h_source.html":[1,0,123],
-"sb_8h_source.html":[1,0,124],
-"score_8h_source.html":[1,0,125],
-"scoredef_8h_source.html":[1,0,126],
-"scoredefinterface_8h_source.html":[1,0,127]
+"runningelement_8h_source.html":[1,0,123]
 };
