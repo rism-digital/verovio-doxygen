@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"classvrv_1_1_visible_staff_def_or_grp_object.html":[0,0,0,313],
 "classvrv_1_1_visible_staff_def_or_grp_object.html#a0e870e8c4ec1595d9ca5a12d591d3c0e":[0,0,0,313,3],
 "classvrv_1_1_visible_staff_def_or_grp_object.html#a4261a207ab393148c618b231f80b053d":[0,0,0,313,0],
 "classvrv_1_1_visible_staff_def_or_grp_object.html#a889b236447ae501cebe189233fc5958b":[0,0,0,313,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "sb_8h_source.html":[1,0,124],
 "score_8h_source.html":[1,0,125],
 "scoredef_8h_source.html":[1,0,126],
-"scoredefinterface_8h_source.html":[1,0,127],
-"section_8h_source.html":[1,0,128]
+"scoredefinterface_8h_source.html":[1,0,127]
 };
