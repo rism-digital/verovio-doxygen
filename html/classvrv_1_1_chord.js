@@ -18,7 +18,6 @@ var classvrv_1_1_chord =
     [ "GetClassId", "classvrv_1_1_chord.html#a7da1bd0f574ea8beaa2d056d6dc9a6c2", null ],
     [ "GetClassName", "classvrv_1_1_chord.html#a023099b099b09a829f1a120b7cf0b1c2", null ],
     [ "GetCrossStaffExtremes", "classvrv_1_1_chord.html#a88c18c0343ac30642a23f44bac26d755", null ],
-    [ "GetCrossStaffOverflows", "classvrv_1_1_chord.html#a3204eed0bc3715186f961db7545916a4", null ],
     [ "GetDurationInterface", "classvrv_1_1_chord.html#a17e0bd6b6cb3c44f3b904958634aed83", null ],
     [ "GetStemDownNW", "classvrv_1_1_chord.html#a5095f4b12d1c96c10fe153911b301f8b", null ],
     [ "GetStemmedDrawingInterface", "classvrv_1_1_chord.html#aa2b9f4e5dae1424608caae31230481e3", null ],
