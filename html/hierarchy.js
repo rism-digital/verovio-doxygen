@@ -745,10 +745,6 @@ var hierarchy =
     [ "AttWidth", null, [
       [ "vrv::MultiRest", "classvrv_1_1_multi_rest.html", null ]
     ] ],
-    [ "vrv::BeamDrawingInterface", "classvrv_1_1_beam_drawing_interface.html", [
-      [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
-      [ "vrv::FTrem", "classvrv_1_1_f_trem.html", null ]
-    ] ],
     [ "vrv::BeamElementCoord", "classvrv_1_1_beam_element_coord.html", null ],
     [ "vrv::BeamSegment", "classvrv_1_1_beam_segment.html", null ],
     [ "vrv::BoundaryStartInterface", "classvrv_1_1_boundary_start_interface.html", [
@@ -951,9 +947,11 @@ var hierarchy =
     [ "vrv::LedgerLine", "classvrv_1_1_ledger_line.html", null ],
     [ "vrv::ObjectComparison", "classvrv_1_1_object_comparison.html", null ],
     [ "vrv::ObjectListInterface", "classvrv_1_1_object_list_interface.html", [
-      [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
+      [ "vrv::BeamDrawingInterface", "classvrv_1_1_beam_drawing_interface.html", [
+        [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
+        [ "vrv::FTrem", "classvrv_1_1_f_trem.html", null ]
+      ] ],
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
-      [ "vrv::FTrem", "classvrv_1_1_f_trem.html", null ],
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::Ligature", "classvrv_1_1_ligature.html", null ],

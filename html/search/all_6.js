@@ -126,7 +126,7 @@ var searchData=
   ['getparent_419',['GetParent',['../classvrv_1_1_object.html#a96ca869c3849c0f108655ad5d900a2c7',1,'vrv::Object']]],
   ['getpath_420',['GetPath',['../classvrv_1_1_glyph.html#a73c308789e1a3b282783597060ff01db',1,'vrv::Glyph::GetPath()'],['../classvrv_1_1_resources.html#ac8a749d1dbdc5b23dc8ee27d23f68261',1,'vrv::Resources::GetPath()']]],
   ['getpedalglyph_421',['GetPedalGlyph',['../classvrv_1_1_pedal.html#a68b550860ce390cecc9d04441256a950',1,'vrv::Pedal']]],
-  ['getposition_422',['GetPosition',['../classvrv_1_1_beam.html#a1c878bf5ec80f7bd9a0f7c2c7aa8a8e0',1,'vrv::Beam']]],
+  ['getposition_422',['GetPosition',['../classvrv_1_1_beam_drawing_interface.html#a9571c5f0332590bffb23d5a85d32416b',1,'vrv::BeamDrawingInterface']]],
   ['getppufactor_423',['GetPPUFactor',['../classvrv_1_1_view.html#ae71d5dd5d3791d6ffb25dfde2b37a26f',1,'vrv::View']]],
   ['getrealtimeoffsetmilliseconds_424',['GetRealTimeOffsetMilliseconds',['../classvrv_1_1_measure.html#a2e0a2e000a3f00933d117d2257503425',1,'vrv::Measure']]],
   ['getreferencewithelement_425',['GetReferenceWithElement',['../classvrv_1_1_alignment.html#a4b5535808594d25a33fc7c1315144870',1,'vrv::Alignment']]],
