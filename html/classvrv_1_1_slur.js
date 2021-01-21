@@ -16,6 +16,8 @@ var classvrv_1_1_slur =
     [ "GetTimePointInterface", "classvrv_1_1_slur.html#ae637e2e59d5e7cb88fb96e6dce4c1baf", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_slur.html#aa77005731f1ab5666433f1a2ee4b8c9f", null ],
     [ "HasDrawingCurvedir", "classvrv_1_1_slur.html#aebb2e1d5c4efce7392bdd0aaff627573", null ],
+    [ "IsCrossStaff", "classvrv_1_1_slur.html#a6187027874ce353fa3aca3aef490fdd5", null ],
+    [ "IsCrossStaff", "classvrv_1_1_slur.html#a638183ccab7930c9e8167affbfb33cad", null ],
     [ "Reset", "classvrv_1_1_slur.html#ad489e51d4fbd05c4a7b77171979c980d", null ],
     [ "ResetDrawing", "classvrv_1_1_slur.html#ab47be962fd8854013a1e7751140567c1", null ],
     [ "SetDrawingCurvedir", "classvrv_1_1_slur.html#abab16819ba64a14c2dd8ffeefdef696e", null ]

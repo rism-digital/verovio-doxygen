@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"classvrv_1_1_prepare_time_pointing_params.html":[0,0,0,236],
 "classvrv_1_1_prepare_time_pointing_params.html#a70d37f773a1187857bdd99427c0dde0c":[0,0,0,236,0],
 "classvrv_1_1_prepare_time_pointing_params.html#a94a352a9dd9f811d3898f8aa46183115":[0,0,0,236,1],
 "classvrv_1_1_prepare_time_spanning_params.html":[0,0,0,237],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "classvrv_1_1_set_overflow_b_boxes_params.html#aba055d44d2a9d5d059fafe0c5e0b2900":[0,0,0,263,0],
 "classvrv_1_1_set_staff_def_redraw_flags_params.html":[0,0,0,264],
 "classvrv_1_1_set_staff_def_redraw_flags_params.html#a011cae7c9f74c99c6ae027e04547dae4":[0,0,0,264,0],
-"classvrv_1_1_set_staff_def_redraw_flags_params.html#a28793a0a224d499b3e215e313ca03876":[0,0,0,264,4],
-"classvrv_1_1_set_staff_def_redraw_flags_params.html#a571793ea2537085e497a83fb2c2926e4":[0,0,0,264,1]
+"classvrv_1_1_set_staff_def_redraw_flags_params.html#a28793a0a224d499b3e215e313ca03876":[0,0,0,264,4]
 };
