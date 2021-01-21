@@ -173,13 +173,14 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_custos.html#a078de34fc81fc732137fb4ffd13986e1":[0,0,0,79,5],
 "classvrv_1_1_custos.html#a09aa8de289e4ad804464cee76956b7a2":[0,0,0,79,3],
 "classvrv_1_1_custos.html#a192760d5684ff93273c023d8f768ca06":[0,0,0,79,0],
-"classvrv_1_1_custos.html#a32c4ea04b40a718aabdd6199f8ed4423":[0,0,0,79,7],
+"classvrv_1_1_custos.html#a32c4ea04b40a718aabdd6199f8ed4423":[0,0,0,79,8],
 "classvrv_1_1_custos.html#a3d64c576ca5154a564de6249f6352a9c":[0,0,0,79,2],
 "classvrv_1_1_custos.html#a4414edc48b8ec7dbc04f78560b368be5":[0,0,0,79,6],
 "classvrv_1_1_custos.html#a74190b9123f77367b106921680d71a6b":[0,0,0,79,1],
-"classvrv_1_1_custos.html#a7b61ca3e20e31a1a89ce896f46e31c79":[0,0,0,79,9],
-"classvrv_1_1_custos.html#a7f671bc4914ec75b5642e64b997ba1b3":[0,0,0,79,8],
+"classvrv_1_1_custos.html#a7b61ca3e20e31a1a89ce896f46e31c79":[0,0,0,79,10],
+"classvrv_1_1_custos.html#a7f671bc4914ec75b5642e64b997ba1b3":[0,0,0,79,9],
 "classvrv_1_1_custos.html#ae1d9ed3b8898b4ccef02bedf933c052d":[0,0,0,79,4],
+"classvrv_1_1_custos.html#aef459ff92dd4fc94100ed4a9ac33c3ee":[0,0,0,79,7],
 "classvrv_1_1_damage.html":[0,0,0,80],
 "classvrv_1_1_damage.html#a1e069800a85fe9d3a32f9e49fc5d307c":[0,0,0,80,5],
 "classvrv_1_1_damage.html#a32e3c940cd148df1261f584a0b3c37e2":[0,0,0,80,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_device_context.html#ac192682e11cb0258024b1c3a19c8a65e":[0,0,0,87,37],
 "classvrv_1_1_device_context.html#ac3574c9b1f29fc5ca9cd9f0450ec0ac6":[0,0,0,87,20],
 "classvrv_1_1_device_context.html#ac93a258491871eefffa02697159f432f":[0,0,0,87,0],
-"classvrv_1_1_device_context.html#acb4e404ae6cbc48f586f78db3b911b1d":[0,0,0,87,51],
-"classvrv_1_1_device_context.html#acd0ad30e8097f77c67038758a14bd45e":[0,0,0,87,30]
+"classvrv_1_1_device_context.html#acb4e404ae6cbc48f586f78db3b911b1d":[0,0,0,87,51]
 };
