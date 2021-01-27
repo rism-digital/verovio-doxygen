@@ -19,8 +19,7 @@ var hierarchy =
       [ "vrv::Arpeg", "classvrv_1_1_arpeg.html", null ]
     ] ],
     [ "AttArticulation", null, [
-      [ "vrv::Artic", "classvrv_1_1_artic.html", null ],
-      [ "vrv::ArticPart", "classvrv_1_1_artic_part.html", null ]
+      [ "vrv::Artic", "classvrv_1_1_artic.html", null ]
     ] ],
     [ "AttAugmentDots", null, [
       [ "vrv::Dots", "classvrv_1_1_dots.html", null ],
@@ -71,7 +70,6 @@ var hierarchy =
       [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
       [ "vrv::Arpeg", "classvrv_1_1_arpeg.html", null ],
       [ "vrv::Artic", "classvrv_1_1_artic.html", null ],
-      [ "vrv::ArticPart", "classvrv_1_1_artic_part.html", null ],
       [ "vrv::BarLine", "classvrv_1_1_bar_line.html", null ],
       [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
       [ "vrv::BeatRpt", "classvrv_1_1_beat_rpt.html", null ],
@@ -187,7 +185,6 @@ var hierarchy =
         [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", [
           [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
           [ "vrv::Artic", "classvrv_1_1_artic.html", null ],
-          [ "vrv::ArticPart", "classvrv_1_1_artic_part.html", null ],
           [ "vrv::BarLine", "classvrv_1_1_bar_line.html", null ],
           [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
           [ "vrv::BeatRpt", "classvrv_1_1_beat_rpt.html", null ],
@@ -516,7 +513,6 @@ var hierarchy =
     ] ],
     [ "AttPlacement", null, [
       [ "vrv::Artic", "classvrv_1_1_artic.html", null ],
-      [ "vrv::ArticPart", "classvrv_1_1_artic_part.html", null ],
       [ "vrv::Breath", "classvrv_1_1_breath.html", null ],
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
@@ -800,7 +796,6 @@ var hierarchy =
     [ "vrv::ClosestBB", "structvrv_1_1_closest_b_b.html", null ],
     [ "vrv::Comparison", "classvrv_1_1_comparison.html", [
       [ "vrv::ClassIdComparison", "classvrv_1_1_class_id_comparison.html", [
-        [ "vrv::ArticPartTypeComparison", "classvrv_1_1_artic_part_type_comparison.html", null ],
         [ "vrv::AttDurExtremeComparison", "classvrv_1_1_att_dur_extreme_comparison.html", null ],
         [ "vrv::AttNIntegerAnyComparison", "classvrv_1_1_att_n_integer_any_comparison.html", null ],
         [ "vrv::AttNIntegerComparison", "classvrv_1_1_att_n_integer_comparison.html", null ],
@@ -847,6 +842,7 @@ var hierarchy =
       [ "vrv::AddLayerElementToFlatListParams", "classvrv_1_1_add_layer_element_to_flat_list_params.html", null ],
       [ "vrv::AdjustAccidXParams", "classvrv_1_1_adjust_accid_x_params.html", null ],
       [ "vrv::AdjustArpegParams", "classvrv_1_1_adjust_arpeg_params.html", null ],
+      [ "vrv::AdjustArticParams", "classvrv_1_1_adjust_artic_params.html", null ],
       [ "vrv::AdjustBeamParams", "classvrv_1_1_adjust_beam_params.html", null ],
       [ "vrv::AdjustFloatingPositionerGrpsParams", "classvrv_1_1_adjust_floating_positioner_grps_params.html", null ],
       [ "vrv::AdjustFloatingPositionersBetweenParams", "classvrv_1_1_adjust_floating_positioners_between_params.html", null ],
@@ -866,6 +862,7 @@ var hierarchy =
       [ "vrv::AlignSystemsParams", "classvrv_1_1_align_systems_params.html", null ],
       [ "vrv::AlignVerticallyParams", "classvrv_1_1_align_vertically_params.html", null ],
       [ "vrv::ApplyPPUFactorParams", "classvrv_1_1_apply_p_p_u_factor_params.html", null ],
+      [ "vrv::CalcArticParams", "classvrv_1_1_calc_artic_params.html", null ],
       [ "vrv::CalcDotsParams", "classvrv_1_1_calc_dots_params.html", null ],
       [ "vrv::CalcMaxMeasureDurationParams", "classvrv_1_1_calc_max_measure_duration_params.html", null ],
       [ "vrv::CalcOnsetOffsetParams", "classvrv_1_1_calc_onset_offset_params.html", null ],
@@ -874,6 +871,7 @@ var hierarchy =
       [ "vrv::CastOffPagesParams", "classvrv_1_1_cast_off_pages_params.html", null ],
       [ "vrv::CastOffSystemsParams", "classvrv_1_1_cast_off_systems_params.html", null ],
       [ "vrv::ConvertMarkupAnalyticalParams", "classvrv_1_1_convert_markup_analytical_params.html", null ],
+      [ "vrv::ConvertMarkupArticParams", "classvrv_1_1_convert_markup_artic_params.html", null ],
       [ "vrv::ConvertScoreDefMarkupParams", "classvrv_1_1_convert_score_def_markup_params.html", null ],
       [ "vrv::ConvertToCastOffMensuralParams", "classvrv_1_1_convert_to_cast_off_mensural_params.html", null ],
       [ "vrv::ConvertToPageBasedParams", "classvrv_1_1_convert_to_page_based_params.html", null ],
