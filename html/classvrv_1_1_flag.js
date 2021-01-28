@@ -4,7 +4,7 @@ var classvrv_1_1_flag =
     [ "~Flag", "classvrv_1_1_flag.html#a9b969b6f72638671d836b42c8af20af0", null ],
     [ "GetClassId", "classvrv_1_1_flag.html#a3749c17294ae18545ea377ed60c233fc", null ],
     [ "GetClassName", "classvrv_1_1_flag.html#a8e1b942f4c24d383ab8c5a9e71a6a02a", null ],
-    [ "GetSmuflCode", "classvrv_1_1_flag.html#a121826298e606f3e03ca13b7019aae01", null ],
+    [ "GetFlagGlyph", "classvrv_1_1_flag.html#a4caa8b8fda10b78e693546057ac27dce", null ],
     [ "GetStemDownNW", "classvrv_1_1_flag.html#a97690e6e6b2d215ee26852e0365180d2", null ],
     [ "GetStemUpSE", "classvrv_1_1_flag.html#a4c9ab74646fbefe657bed21bd2eaa273", null ],
     [ "HasToBeAligned", "classvrv_1_1_flag.html#aa46be86df5afe720e5e90abdbb845a16", null ],

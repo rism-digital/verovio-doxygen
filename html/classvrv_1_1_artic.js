@@ -11,6 +11,7 @@ var classvrv_1_1_artic =
     [ "ConvertMarkupArtic", "classvrv_1_1_artic.html#a566d6c721af17c666de8c98089056298", null ],
     [ "GetAllArtics", "classvrv_1_1_artic.html#aeb46e15699edb5d500c44a77ae5d06e5", null ],
     [ "GetArticFirst", "classvrv_1_1_artic.html#a6ca670ded21c502ccb27f31176d90aee", null ],
+    [ "GetArticGlyph", "classvrv_1_1_artic.html#ada5ab8899327647fa9c2756af5cf7053", null ],
     [ "GetClassId", "classvrv_1_1_artic.html#a4714c7d0a8b6739daa5a84352e953206", null ],
     [ "GetClassName", "classvrv_1_1_artic.html#ac993bfadffd73b30fe6b372399d2d352", null ],
     [ "GetDrawingPlace", "classvrv_1_1_artic.html#a318062fc0b6c2ffbb2986c3f1d90c26a", null ],

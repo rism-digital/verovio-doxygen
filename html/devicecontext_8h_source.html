@@ -235,50 +235,54 @@ $(document).ready(function(){initNavTree('devicecontext_8h_source.html',''); ini
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> StartPage() = 0;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> EndPage() = 0;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
-<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="classvrv_1_1_device_context.html#a73f8ff83665f5699325367b3a3743bae">  259</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_device_context.html#a73f8ff83665f5699325367b3a3743bae">RGB2Int</a>(<span class="keywordtype">char</span> red, <span class="keywordtype">char</span> green, <span class="keywordtype">char</span> blue) { <span class="keywordflow">return</span> (red &lt;&lt; 16 | green &lt;&lt; 8 | blue); }</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddDescription(<span class="keyword">const</span> std::string &amp;text){};</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
-<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b">  273</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b">UseGlobalStyling</a>() { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordtype">void</span> AddGlyphToTextExtend(<a class="code" href="classvrv_1_1_glyph.html">Glyph</a> *glyph, <a class="code" href="classvrv_1_1_text_extend.html">TextExtend</a> *extend);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    std::stack&lt;Pen&gt; m_penStack;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    std::stack&lt;Brush&gt; m_brushStack;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    std::stack&lt;FontInfo *&gt; m_fontStack;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
-<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="classvrv_1_1_device_context.html#a07ec2ee8e4d62cd3adb5459f9cd62a67">  286</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_device_context.html#a07ec2ee8e4d62cd3adb5459f9cd62a67">m_isDeactivatedX</a>;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordtype">bool</span> m_isDeactivatedY;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddDescription(<span class="keyword">const</span> std::string &amp;text){};</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b">  270</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b">UseGlobalStyling</a>() { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="comment">// Static methods //</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="classvrv_1_1_device_context.html#a73f8ff83665f5699325367b3a3743bae">  277</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_device_context.html#a73f8ff83665f5699325367b3a3743bae">RGB2Int</a>(<span class="keywordtype">char</span> red, <span class="keywordtype">char</span> green, <span class="keywordtype">char</span> blue) { <span class="keywordflow">return</span> (red &lt;&lt; 16 | green &lt;&lt; 8 | blue); }</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordtype">void</span> AddGlyphToTextExtend(<a class="code" href="classvrv_1_1_glyph.html">Glyph</a> *glyph, <a class="code" href="classvrv_1_1_text_extend.html">TextExtend</a> *extend);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    std::stack&lt;Pen&gt; m_penStack;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    std::stack&lt;Brush&gt; m_brushStack;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    std::stack&lt;FontInfo *&gt; m_fontStack;</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <a class="code" href="classvrv_1_1_zone.html">Zone</a> *m_facsimile = NULL;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">int</span> m_width;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">int</span> m_height;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordtype">int</span> m_contentHeight;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">double</span> m_userScaleX;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordtype">double</span> m_userScaleY;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;};</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">#endif // __AX_DC_H__</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno"><a class="line" href="classvrv_1_1_device_context.html#a07ec2ee8e4d62cd3adb5459f9cd62a67">  290</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_device_context.html#a07ec2ee8e4d62cd3adb5459f9cd62a67">m_isDeactivatedX</a>;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordtype">bool</span> m_isDeactivatedY;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <a class="code" href="classvrv_1_1_zone.html">Zone</a> *m_facsimile = NULL;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordtype">int</span> m_width;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">int</span> m_height;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordtype">int</span> m_contentHeight;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">double</span> m_userScaleX;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordtype">double</span> m_userScaleY;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;};</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">#endif // __AX_DC_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_zone_html"><div class="ttname"><a href="classvrv_1_1_zone.html">vrv::Zone</a></div><div class="ttdoc">Implements the zone element in MEI.</div><div class="ttdef"><b>Definition:</b> zone.h:30</div></div>
 <div class="ttc" id="aclassvrv_1_1_device_context_html_a98b03a16d2a3ead9ac3d7e3bafe2490d"><div class="ttname"><a href="classvrv_1_1_device_context.html#a98b03a16d2a3ead9ac3d7e3bafe2490d">vrv::DeviceContext::DrawPlaceholder</a></div><div class="ttdeci">virtual void DrawPlaceholder(int x, int y)</div><div class="ttdoc">Special method for forcing bounding boxes to be updated Used for invisible elements (e....</div><div class="ttdef"><b>Definition:</b> devicecontext.h:166</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:53</div></div>
-<div class="ttc" id="aclassvrv_1_1_device_context_html_a73f8ff83665f5699325367b3a3743bae"><div class="ttname"><a href="classvrv_1_1_device_context.html#a73f8ff83665f5699325367b3a3743bae">vrv::DeviceContext::RGB2Int</a></div><div class="ttdeci">static int RGB2Int(char red, char green, char blue)</div><div class="ttdoc">Colour conversion method.</div><div class="ttdef"><b>Definition:</b> devicecontext.h:259</div></div>
-<div class="ttc" id="aclassvrv_1_1_device_context_html_a07ec2ee8e4d62cd3adb5459f9cd62a67"><div class="ttname"><a href="classvrv_1_1_device_context.html#a07ec2ee8e4d62cd3adb5459f9cd62a67">vrv::DeviceContext::m_isDeactivatedX</a></div><div class="ttdeci">bool m_isDeactivatedX</div><div class="ttdoc">flag for indicating if the graphic is deactivated</div><div class="ttdef"><b>Definition:</b> devicecontext.h:286</div></div>
+<div class="ttc" id="aclassvrv_1_1_device_context_html_a73f8ff83665f5699325367b3a3743bae"><div class="ttname"><a href="classvrv_1_1_device_context.html#a73f8ff83665f5699325367b3a3743bae">vrv::DeviceContext::RGB2Int</a></div><div class="ttdeci">static int RGB2Int(char red, char green, char blue)</div><div class="ttdoc">Colour conversion method.</div><div class="ttdef"><b>Definition:</b> devicecontext.h:277</div></div>
+<div class="ttc" id="aclassvrv_1_1_device_context_html_a07ec2ee8e4d62cd3adb5459f9cd62a67"><div class="ttname"><a href="classvrv_1_1_device_context.html#a07ec2ee8e4d62cd3adb5459f9cd62a67">vrv::DeviceContext::m_isDeactivatedX</a></div><div class="ttdeci">bool m_isDeactivatedX</div><div class="ttdoc">flag for indicating if the graphic is deactivated</div><div class="ttdef"><b>Definition:</b> devicecontext.h:290</div></div>
 <div class="ttc" id="aclassvrv_1_1_font_info_html"><div class="ttname"><a href="classvrv_1_1_font_info.html">vrv::FontInfo</a></div><div class="ttdoc">This class is store font properties.</div><div class="ttdef"><b>Definition:</b> devicecontextbase.h:99</div></div>
 <div class="ttc" id="aclassvrv_1_1_device_context_html"><div class="ttname"><a href="classvrv_1_1_device_context.html">vrv::DeviceContext</a></div><div class="ttdoc">This class is an abstract device context.</div><div class="ttdef"><b>Definition:</b> devicecontext.h:56</div></div>
-<div class="ttc" id="aclassvrv_1_1_device_context_html_afd76f01c9742de3d4a0446f905b1003b"><div class="ttname"><a href="classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b">vrv::DeviceContext::UseGlobalStyling</a></div><div class="ttdeci">virtual bool UseGlobalStyling()</div><div class="ttdoc">Method indicating if default global styling is used.</div><div class="ttdef"><b>Definition:</b> devicecontext.h:273</div></div>
+<div class="ttc" id="aclassvrv_1_1_device_context_html_afd76f01c9742de3d4a0446f905b1003b"><div class="ttname"><a href="classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b">vrv::DeviceContext::UseGlobalStyling</a></div><div class="ttdeci">virtual bool UseGlobalStyling()</div><div class="ttdoc">Method indicating if default global styling is used.</div><div class="ttdef"><b>Definition:</b> devicecontext.h:270</div></div>
 <div class="ttc" id="aclassvrv_1_1_view_html"><div class="ttname"><a href="classvrv_1_1_view.html">vrv::View</a></div><div class="ttdoc">This class is a drawing context and corresponds to the view of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> view.h:91</div></div>
 <div class="ttc" id="aclassvrv_1_1_glyph_html"><div class="ttname"><a href="classvrv_1_1_glyph.html">vrv::Glyph</a></div><div class="ttdoc">This class is used for storing a music font glyph.</div><div class="ttdef"><b>Definition:</b> glyph.h:31</div></div>
 <div class="ttc" id="aclassvrv_1_1_point_html"><div class="ttname"><a href="classvrv_1_1_point.html">vrv::Point</a></div><div class="ttdoc">Simple class for representing points.</div><div class="ttdef"><b>Definition:</b> devicecontextbase.h:156</div></div>
@@ -287,7 +291,7 @@ $(document).ready(function(){initNavTree('devicecontext_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>devicecontext.h</b></li>
-    <li class="footer">Generated on Thu Jan 28 2021 15:11:40 for My Project by
+    <li class="footer">Generated on Thu Jan 28 2021 17:05:02 for My Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

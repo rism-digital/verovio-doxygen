@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classvrv_1_1_bar_line.html#a60fbf7bdd1374144c8c37fcebfa10182":[0,0,0,41,4],
 "classvrv_1_1_bar_line.html#a83331e33eca87896ba18383a9d902db4":[0,0,0,41,1],
 "classvrv_1_1_bar_line.html#a9b25f3c724cbe2f6ca61609a6f835aff":[0,0,0,41,9],
 "classvrv_1_1_bar_line.html#a9c4e16bbd0716287717220396b11b758":[0,0,0,41,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "classvrv_1_1_calc_max_measure_duration_params.html#a8408efc55000c267707dff317cdbb547":[0,0,0,58,2],
 "classvrv_1_1_calc_max_measure_duration_params.html#a86fb81674d83d026f09ac7826160219b":[0,0,0,58,4],
 "classvrv_1_1_calc_max_measure_duration_params.html#aa0eecfb9746852390e9290d93423f234":[0,0,0,58,6],
-"classvrv_1_1_calc_max_measure_duration_params.html#af73b57ab16abd51061bfca59dafb3c57":[0,0,0,58,0],
-"classvrv_1_1_calc_onset_offset_params.html":[0,0,0,59]
+"classvrv_1_1_calc_max_measure_duration_params.html#af73b57ab16abd51061bfca59dafb3c57":[0,0,0,58,0]
 };

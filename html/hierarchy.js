@@ -173,6 +173,7 @@ var hierarchy =
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
     ] ],
     [ "AttExtSym", null, [
+      [ "vrv::Artic", "classvrv_1_1_artic.html", null ],
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
       [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],

@@ -26,7 +26,7 @@ var classvrv_1_1_note =
     [ "GetDrawingLoc", "classvrv_1_1_note.html#ab6a03a24edabc295b5c5c7aa6319e274", null ],
     [ "GetDurationInterface", "classvrv_1_1_note.html#a8f681874ac5c6e434eac390455ae68f4", null ],
     [ "GetFlippedNotehead", "classvrv_1_1_note.html#a520f34e67cd0e66c90216e942720b646", null ],
-    [ "GetMensuralSmuflNoteHead", "classvrv_1_1_note.html#af68a87a9293bf48b69765cc3719725bc", null ],
+    [ "GetMensuralNoteheadGlyph", "classvrv_1_1_note.html#abc7cd90f6528b7ccb1217e9b6a4f7ab1", null ],
     [ "GetMIDIPitch", "classvrv_1_1_note.html#ab3c689500734a8835591d172b6a9d44d", null ],
     [ "GetNoteheadGlyph", "classvrv_1_1_note.html#a3f66a8f4adf8eb4174b3c1ec388ad05d", null ],
     [ "GetPitchInterface", "classvrv_1_1_note.html#a9fe7c87d2ca44ee1d7eddf14e39b7b4c", null ],
