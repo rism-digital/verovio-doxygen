@@ -12,5 +12,5 @@ var classvrv_1_1_dot =
     [ "ResetDrawing", "classvrv_1_1_dot.html#a8284f4468b749572fd757975ccaa5acd", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_dot.html#ad9646c30e98336c512bc195c87d535be", null ],
     [ "m_drawingNextElement", "classvrv_1_1_dot.html#aae4b4b6d9e460978fdf9a127ab102c14", null ],
-    [ "m_drawingNote", "classvrv_1_1_dot.html#a5fd307f78948cc3b6528877df704beea", null ]
+    [ "m_drawingPreviousElement", "classvrv_1_1_dot.html#a41b57f2786b272be8c2f512afe40d0e2", null ]
 ];
