@@ -730,6 +730,7 @@ var hierarchy =
     [ "AttVisibility", null, [
       [ "vrv::BarLine", "classvrv_1_1_bar_line.html", null ],
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
+      [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],

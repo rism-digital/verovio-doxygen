@@ -111,42 +111,43 @@ $(document).ready(function(){initNavTree('clef_8h_source.html',''); initResizabl
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;             <span class="keyword">public</span> AttClefShape,</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;             <span class="keyword">public</span> AttColor,</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;             <span class="keyword">public</span> AttLineLoc,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;             <span class="keyword">public</span> AttOctaveDisplacement {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classvrv_1_1_clef.html">Clef</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_clef.html">Clef</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classvrv_1_1_clef.html#af4329c1d512e1df1af7c73ae86ca1c0f">   38</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_clef.html#af4329c1d512e1df1af7c73ae86ca1c0f">Clone</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_clef.html">Clef</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Reset();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> std::string GetClassName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Clef&quot;</span>; }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> ClassId GetClassId()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> CLEF; }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classvrv_1_1_clef.html#afc662623ee8d3d99b781ee1448eea294">   45</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_clef.html#afc662623ee8d3d99b781ee1448eea294">HasToBeAligned</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classvrv_1_1_clef.html#a8985636b81b185c5f0893f49f4f76ba0">   48</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_clef.html#a8985636b81b185c5f0893f49f4f76ba0">IsScoreDefElement</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (this-&gt;<a class="code" href="classvrv_1_1_object.html#a96ca869c3849c0f108655ad5d900a2c7">GetParent</a>() &amp;&amp; this-&gt;<a class="code" href="classvrv_1_1_object.html#a214d80f16352cda785bdbf1ba3423b68">GetFirstAncestor</a>(SCOREDEF)); }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_clef.html#a3024936525419403269c083ac4332940">GetClefLocOffset</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Static methods //</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_clef.html#ae7d2093fa9bcf95556ef94740e40d2f5">ClefId</a>(data_CLEFSHAPE shape, <span class="keywordtype">char</span> line, data_OCTAVE_DIS octaveDis, data_STAFFREL_basic place);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_clef.html#a285e82c9651d90fbaacee005d3597ecd">AdjustBeams</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;             <span class="keyword">public</span> AttOctaveDisplacement,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;             <span class="keyword">public</span> AttVisibility {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classvrv_1_1_clef.html">Clef</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_clef.html">Clef</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classvrv_1_1_clef.html#af4329c1d512e1df1af7c73ae86ca1c0f">   39</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_clef.html#af4329c1d512e1df1af7c73ae86ca1c0f">Clone</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_clef.html">Clef</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Reset();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> std::string GetClassName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Clef&quot;</span>; }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> ClassId GetClassId()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> CLEF; }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classvrv_1_1_clef.html#afc662623ee8d3d99b781ee1448eea294">   46</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_clef.html#afc662623ee8d3d99b781ee1448eea294">HasToBeAligned</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classvrv_1_1_clef.html#a8985636b81b185c5f0893f49f4f76ba0">   49</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_clef.html#a8985636b81b185c5f0893f49f4f76ba0">IsScoreDefElement</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (this-&gt;<a class="code" href="classvrv_1_1_object.html#a96ca869c3849c0f108655ad5d900a2c7">GetParent</a>() &amp;&amp; this-&gt;<a class="code" href="classvrv_1_1_object.html#a214d80f16352cda785bdbf1ba3423b68">GetFirstAncestor</a>(SCOREDEF)); }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_clef.html#a3024936525419403269c083ac4332940">GetClefLocOffset</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// Static methods //</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_clef.html#ae7d2093fa9bcf95556ef94740e40d2f5">ClefId</a>(data_CLEFSHAPE shape, <span class="keywordtype">char</span> line, data_OCTAVE_DIS octaveDis, data_STAFFREL_basic place);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_clef.html#a285e82c9651d90fbaacee005d3597ecd">AdjustBeams</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_clef_html_a285e82c9651d90fbaacee005d3597ecd"><div class="ttname"><a href="classvrv_1_1_clef.html#a285e82c9651d90fbaacee005d3597ecd">vrv::Clef::AdjustBeams</a></div><div class="ttdeci">virtual int AdjustBeams(FunctorParams *functorParams)</div><div class="ttdoc">See Object::AdjustBeams.</div></div>
@@ -154,18 +155,18 @@ $(document).ready(function(){initNavTree('clef_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassvrv_1_1_clef_html_a3024936525419403269c083ac4332940"><div class="ttname"><a href="classvrv_1_1_clef.html#a3024936525419403269c083ac4332940">vrv::Clef::GetClefLocOffset</a></div><div class="ttdeci">int GetClefLocOffset() const</div><div class="ttdoc">Return the offset of the clef.</div></div>
 <div class="ttc" id="aclassvrv_1_1_clef_html"><div class="ttname"><a href="classvrv_1_1_clef.html">vrv::Clef</a></div><div class="ttdoc">This class models the MEI &lt;clef&gt; element.</div><div class="ttdef"><b>Definition:</b> clef.h:25</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html_a214d80f16352cda785bdbf1ba3423b68"><div class="ttname"><a href="classvrv_1_1_object.html#a214d80f16352cda785bdbf1ba3423b68">vrv::Object::GetFirstAncestor</a></div><div class="ttdeci">Object * GetFirstAncestor(const ClassId classId, int maxSteps=-1) const</div><div class="ttdoc">Return the first ancestor of the specified type.</div></div>
-<div class="ttc" id="aclassvrv_1_1_clef_html_af4329c1d512e1df1af7c73ae86ca1c0f"><div class="ttname"><a href="classvrv_1_1_clef.html#af4329c1d512e1df1af7c73ae86ca1c0f">vrv::Clef::Clone</a></div><div class="ttdeci">virtual Object * Clone() const</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> clef.h:38</div></div>
-<div class="ttc" id="aclassvrv_1_1_clef_html_afc662623ee8d3d99b781ee1448eea294"><div class="ttname"><a href="classvrv_1_1_clef.html#afc662623ee8d3d99b781ee1448eea294">vrv::Clef::HasToBeAligned</a></div><div class="ttdeci">virtual bool HasToBeAligned() const</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> clef.h:45</div></div>
+<div class="ttc" id="aclassvrv_1_1_clef_html_af4329c1d512e1df1af7c73ae86ca1c0f"><div class="ttname"><a href="classvrv_1_1_clef.html#af4329c1d512e1df1af7c73ae86ca1c0f">vrv::Clef::Clone</a></div><div class="ttdeci">virtual Object * Clone() const</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> clef.h:39</div></div>
+<div class="ttc" id="aclassvrv_1_1_clef_html_afc662623ee8d3d99b781ee1448eea294"><div class="ttname"><a href="classvrv_1_1_clef.html#afc662623ee8d3d99b781ee1448eea294">vrv::Clef::HasToBeAligned</a></div><div class="ttdeci">virtual bool HasToBeAligned() const</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> clef.h:46</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html_a96ca869c3849c0f108655ad5d900a2c7"><div class="ttname"><a href="classvrv_1_1_object.html#a96ca869c3849c0f108655ad5d900a2c7">vrv::Object::GetParent</a></div><div class="ttdeci">Object * GetParent() const</div><div class="ttdoc">Get the parent of the Object.</div><div class="ttdef"><b>Definition:</b> object.h:307</div></div>
 <div class="ttc" id="aclassvrv_1_1_clef_html_ae7d2093fa9bcf95556ef94740e40d2f5"><div class="ttname"><a href="classvrv_1_1_clef.html#ae7d2093fa9bcf95556ef94740e40d2f5">vrv::Clef::ClefId</a></div><div class="ttdeci">static int ClefId(data_CLEFSHAPE shape, char line, data_OCTAVE_DIS octaveDis, data_STAFFREL_basic place)</div><div class="ttdoc">Return a clef id based on the various parameters.</div></div>
-<div class="ttc" id="aclassvrv_1_1_clef_html_a8985636b81b185c5f0893f49f4f76ba0"><div class="ttname"><a href="classvrv_1_1_clef.html#a8985636b81b185c5f0893f49f4f76ba0">vrv::Clef::IsScoreDefElement</a></div><div class="ttdeci">virtual bool IsScoreDefElement() const</div><div class="ttdoc">Override the method since check is required.</div><div class="ttdef"><b>Definition:</b> clef.h:48</div></div>
+<div class="ttc" id="aclassvrv_1_1_clef_html_a8985636b81b185c5f0893f49f4f76ba0"><div class="ttname"><a href="classvrv_1_1_clef.html#a8985636b81b185c5f0893f49f4f76ba0">vrv::Clef::IsScoreDefElement</a></div><div class="ttdeci">virtual bool IsScoreDefElement() const</div><div class="ttdoc">Override the method since check is required.</div><div class="ttdef"><b>Definition:</b> clef.h:49</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:40</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_params_html"><div class="ttname"><a href="classvrv_1_1_functor_params.html">vrv::FunctorParams</a></div><div class="ttdoc">This is the base class for all MEI att classes.</div><div class="ttdef"><b>Definition:</b> functorparams.h:71</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>clef.h</b></li>
-    <li class="footer">Generated on Fri Jan 29 2021 18:35:34 for My Project by
+    <li class="footer">Generated on Mon Feb 1 2021 07:00:37 for My Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
