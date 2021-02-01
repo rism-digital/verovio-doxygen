@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"classvrv_1_1_segmented_line.html":[0,0,0,259],
 "classvrv_1_1_segmented_line.html#a109e7cfadfccd78acb2c87196ea7bc8d":[0,0,0,259,0],
 "classvrv_1_1_segmented_line.html#a181fb19bdd3fbf969eb236118315e065":[0,0,0,259,6],
 "classvrv_1_1_segmented_line.html#a46c3c3ea976b246b62d5357592d8ee2c":[0,0,0,259,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "classvrv_1_1_stemmed_drawing_interface.html#aa6ca072d56e6db65adf4ea7ef1600fa5":[0,0,0,276,12],
 "classvrv_1_1_stemmed_drawing_interface.html#aa990dc55c67926e2b841b858667a46d2":[0,0,0,276,6],
 "classvrv_1_1_stemmed_drawing_interface.html#ab55442afdb100573dc6b84d7563edf00":[0,0,0,276,14],
-"classvrv_1_1_stemmed_drawing_interface.html#abb143107baeb30b8a651005be5631482":[0,0,0,276,5],
-"classvrv_1_1_stemmed_drawing_interface.html#ad3647b086385d8f6586a6d140c1198c1":[0,0,0,276,13]
+"classvrv_1_1_stemmed_drawing_interface.html#abb143107baeb30b8a651005be5631482":[0,0,0,276,5]
 };

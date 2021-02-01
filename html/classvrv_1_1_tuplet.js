@@ -5,7 +5,7 @@ var classvrv_1_1_tuplet =
     [ "AddChild", "classvrv_1_1_tuplet.html#a091eac9913c75a427dca15b7db03b84b", null ],
     [ "AdjustTupletsX", "classvrv_1_1_tuplet.html#aa3753def5cf71c42591725ca226f9e0e", null ],
     [ "AdjustTupletsY", "classvrv_1_1_tuplet.html#a7ae244f9388019b00ce7c833772633dd", null ],
-    [ "CalcDrawingBracketAndNumPos", "classvrv_1_1_tuplet.html#a8a2a9030c048ec0849129c65dc51e0cb", null ],
+    [ "CalcDrawingBracketAndNumPos", "classvrv_1_1_tuplet.html#ac6b04379bb72ad6f90757952cf3bcc81", null ],
     [ "Clone", "classvrv_1_1_tuplet.html#a019a73b63c401903c8ace051236f9a5a", null ],
     [ "FilterList", "classvrv_1_1_tuplet.html#ac37a3de61479bd6fd6c6040c425616d1", null ],
     [ "GetBracketAlignedBeam", "classvrv_1_1_tuplet.html#af478c6973cb3618dcd600b33ce6aedcf", null ],

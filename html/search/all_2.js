@@ -9,7 +9,7 @@ var searchData=
   ['calcdecasteljau_129',['CalcDeCasteljau',['../classvrv_1_1_bounding_box.html#ac09f7239af89a7e19ca235761589e150',1,'vrv::BoundingBox']]],
   ['calcdots_130',['CalcDots',['../classvrv_1_1_chord.html#a4260532e67b95993b013a4d5b63949e2',1,'vrv::Chord::CalcDots()'],['../classvrv_1_1_note.html#ad31936d93922bf87540780a67d8569eb',1,'vrv::Note::CalcDots()'],['../classvrv_1_1_object.html#a30538b76016036369786f42be54482c2',1,'vrv::Object::CalcDots()'],['../classvrv_1_1_rest.html#af19bb53fe6642d20ddb9a66e92f7b163',1,'vrv::Rest::CalcDots()']]],
   ['calcdotsparams_131',['CalcDotsParams',['../classvrv_1_1_calc_dots_params.html',1,'vrv']]],
-  ['calcdrawingbracketandnumpos_132',['CalcDrawingBracketAndNumPos',['../classvrv_1_1_tuplet.html#a8a2a9030c048ec0849129c65dc51e0cb',1,'vrv::Tuplet']]],
+  ['calcdrawingbracketandnumpos_132',['CalcDrawingBracketAndNumPos',['../classvrv_1_1_tuplet.html#ac6b04379bb72ad6f90757952cf3bcc81',1,'vrv::Tuplet']]],
   ['calcledgerlines_133',['CalcLedgerLines',['../classvrv_1_1_note.html#a67c593777c501900d80826cfcf7ed535',1,'vrv::Note::CalcLedgerLines()'],['../classvrv_1_1_object.html#aa102c1e31b16c63319763a5fc1c8351c',1,'vrv::Object::CalcLedgerLines()']]],
   ['calcligaturenotepos_134',['CalcLigatureNotePos',['../classvrv_1_1_ligature.html#a80a0704bc2d5b29e711a89d1a495d71e',1,'vrv::Ligature::CalcLigatureNotePos()'],['../classvrv_1_1_object.html#a5bd96aae8a25cedd2c63ce09b92388a3',1,'vrv::Object::CalcLigatureNotePos()']]],
   ['calclinearinterpolation_135',['CalcLinearInterpolation',['../classvrv_1_1_bounding_box.html#af5401bb6040fe859bf6b7dc09c3c35b8',1,'vrv::BoundingBox']]],
