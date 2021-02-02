@@ -811,6 +811,7 @@ var hierarchy =
         [ "vrv::UuidComparison", "classvrv_1_1_uuid_comparison.html", null ]
       ] ],
       [ "vrv::ClassIdsComparison", "classvrv_1_1_class_ids_comparison.html", [
+        [ "vrv::ReverseClassIdsComparison", "classvrv_1_1_reverse_class_ids_comparison.html", null ],
         [ "vrv::VisibleStaffDefOrGrpObject", "classvrv_1_1_visible_staff_def_or_grp_object.html", null ]
       ] ],
       [ "vrv::InterfaceComparison", "classvrv_1_1_interface_comparison.html", null ],
@@ -846,6 +847,7 @@ var hierarchy =
       [ "vrv::AdjustArpegParams", "classvrv_1_1_adjust_arpeg_params.html", null ],
       [ "vrv::AdjustArticParams", "classvrv_1_1_adjust_artic_params.html", null ],
       [ "vrv::AdjustBeamParams", "classvrv_1_1_adjust_beam_params.html", null ],
+      [ "vrv::AdjustClefsParams", "classvrv_1_1_adjust_clefs_params.html", null ],
       [ "vrv::AdjustFloatingPositionerGrpsParams", "classvrv_1_1_adjust_floating_positioner_grps_params.html", null ],
       [ "vrv::AdjustFloatingPositionersBetweenParams", "classvrv_1_1_adjust_floating_positioners_between_params.html", null ],
       [ "vrv::AdjustFloatingPositionersParams", "classvrv_1_1_adjust_floating_positioners_params.html", null ],

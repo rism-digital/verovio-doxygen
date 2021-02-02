@@ -14,6 +14,7 @@ var classvrv_1_1_object =
     [ "AdjustArticWithSlurs", "classvrv_1_1_object.html#a0f7c68b80209c30180004962bff3c8f0", null ],
     [ "AdjustBeams", "classvrv_1_1_object.html#a0d2579fea0aea8b317a490c1654be52b", null ],
     [ "AdjustBeamsEnd", "classvrv_1_1_object.html#a1373589b997e00e6dc811eb3139194e8", null ],
+    [ "AdjustClefChanges", "classvrv_1_1_object.html#a6c19b533f485fd10e5649bb5c441c884", null ],
     [ "AdjustCrossStaffYPos", "classvrv_1_1_object.html#abeee6db6564ff37f1fd686033751d51f", null ],
     [ "AdjustCrossStaffYPosEnd", "classvrv_1_1_object.html#a91e929fac940d876aa172b0b6c160c26", null ],
     [ "AdjustFloatingPositionerGrps", "classvrv_1_1_object.html#a757300b40f61c72a86c66fe9df7f8b5d", null ],
