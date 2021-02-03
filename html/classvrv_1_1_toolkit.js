@@ -26,6 +26,7 @@ var classvrv_1_1_toolkit =
     [ "GetPageWithElement", "classvrv_1_1_toolkit.html#a234616d8b4ab54ec1b7efb79e5ae464d", null ],
     [ "GetScale", "classvrv_1_1_toolkit.html#a321e0a62f5f15b1c5cd522fb0e514d3f", null ],
     [ "GetTimeForElement", "classvrv_1_1_toolkit.html#ab29688374542c0d3fb3cf5007bd23ab2", null ],
+    [ "GetTimesForElement", "classvrv_1_1_toolkit.html#ad79d6ace65df36810f0d84e774aee05d", null ],
     [ "GetUuid", "classvrv_1_1_toolkit.html#aaf003d6419a475cd62984eab04e72b9f", null ],
     [ "GetVersion", "classvrv_1_1_toolkit.html#a293b23b38c10be4da8b38c4b3a769d1d", null ],
     [ "IdentifyInputFrom", "classvrv_1_1_toolkit.html#a05feed813407bca32d82d34319f5185a", null ],

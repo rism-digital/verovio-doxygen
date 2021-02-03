@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"hierarchy.html":[0,2],
 "horizontalaligner_8h_source.html":[1,0,65],
 "index.html":[],
 "instrdef_8h_source.html":[1,0,66],
