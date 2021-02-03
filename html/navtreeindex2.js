@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"classvrv_1_1_b_trem.html#a8c7cd9ab4c8b07e187f72e4036e8c517":[0,0,0,56,6],
+"classvrv_1_1_b_trem.html#ab082ec3a0c9d31338df10d08eb4a9639":[0,0,0,56,0],
 "classvrv_1_1_b_trem.html#ae923c2ba91fa1b81e5600d46069b670b":[0,0,0,56,2],
 "classvrv_1_1_bar_line.html":[0,0,0,42],
 "classvrv_1_1_bar_line.html#a1778321d86ec586c12353b49de330e01":[0,0,0,42,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "classvrv_1_1_calc_dots_params.html#a67ebac1b783c72fce9c679db175db5f1":[0,0,0,58,3],
 "classvrv_1_1_calc_dots_params.html#a9ae1587720af43e71e2d8024a0b2dd34":[0,0,0,58,1],
 "classvrv_1_1_calc_dots_params.html#abeabff21c6f1fa5f0cc2d6f939713875":[0,0,0,58,4],
-"classvrv_1_1_calc_dots_params.html#ad32624f6e5bdbf47b1b6531e6c6c01d4":[0,0,0,58,0],
-"classvrv_1_1_calc_max_measure_duration_params.html":[0,0,0,59],
-"classvrv_1_1_calc_max_measure_duration_params.html#a1622fe7289d4ebdffbdd12e568834eff":[0,0,0,59,3]
+"classvrv_1_1_calc_dots_params.html#ad32624f6e5bdbf47b1b6531e6c6c01d4":[0,0,0,58,0]
 };

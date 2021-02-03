@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_calc_max_measure_duration_params.html":[0,0,0,59],
+"classvrv_1_1_calc_max_measure_duration_params.html#a1622fe7289d4ebdffbdd12e568834eff":[0,0,0,59,3],
 "classvrv_1_1_calc_max_measure_duration_params.html#a4f070475d2483e268cfba4a50db40415":[0,0,0,59,5],
 "classvrv_1_1_calc_max_measure_duration_params.html#a6bf8c71a3f0434687a147f8ca0a7f12a":[0,0,0,59,1],
 "classvrv_1_1_calc_max_measure_duration_params.html#a8408efc55000c267707dff317cdbb547":[0,0,0,59,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_device_context.html#a667b03b2f73ad526b6eca886a06a27a1":[0,0,0,89,59],
 "classvrv_1_1_device_context.html#a66f66f27572b0b3e79cceef7db4344f3":[0,0,0,89,71],
 "classvrv_1_1_device_context.html#a67e396a9032ff8f17abb70adb03180c9":[0,0,0,89,63],
-"classvrv_1_1_device_context.html#a6c3c986752d435a388780f314d335939":[0,0,0,89,40],
-"classvrv_1_1_device_context.html#a6d5986ed4e3e78abed237ba60dd2f483":[0,0,0,89,64],
-"classvrv_1_1_device_context.html#a6d7152c1b0fcc3814a81de6620ff7aee":[0,0,0,89,6]
+"classvrv_1_1_device_context.html#a6c3c986752d435a388780f314d335939":[0,0,0,89,40]
 };
