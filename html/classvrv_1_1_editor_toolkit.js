@@ -5,6 +5,6 @@ var classvrv_1_1_editor_toolkit =
     [ "EditInfo", "classvrv_1_1_editor_toolkit.html#a1be064ecb6ffea1b27712648a19e1312", null ],
     [ "ParseEditorAction", "classvrv_1_1_editor_toolkit.html#a4072ba0fc25bf93cf164daa8b0772f2f", null ],
     [ "m_doc", "classvrv_1_1_editor_toolkit.html#a7f13a9e3501c89738646d52704854230", null ],
-    [ "m_editInfo", "classvrv_1_1_editor_toolkit.html#a3d6f72e8a4f7ab6a338c7d69a1b24c97", null ],
+    [ "m_editInfo", "classvrv_1_1_editor_toolkit.html#aab58ec0ad523f9b339bde7dd1fff289e", null ],
     [ "m_view", "classvrv_1_1_editor_toolkit.html#aee2461420e8735846056fb6fd9b33f40", null ]
 ];
