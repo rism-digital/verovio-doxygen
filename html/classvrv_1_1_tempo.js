@@ -10,5 +10,6 @@ var classvrv_1_1_tempo =
     [ "GetTextDirInterface", "classvrv_1_1_tempo.html#aa553ffccdc329e97a1a5d70313e03476", null ],
     [ "GetTimePointInterface", "classvrv_1_1_tempo.html#a9a4204ff4a0177f32dbf5a557f1e1551", null ],
     [ "IsSupportedChild", "classvrv_1_1_tempo.html#a6efb6c725df26fc6490d745f81a43ad1", null ],
-    [ "Reset", "classvrv_1_1_tempo.html#a3a16d51f3ccb7a68b4c8a6efe01c6718", null ]
+    [ "Reset", "classvrv_1_1_tempo.html#a3a16d51f3ccb7a68b4c8a6efe01c6718", null ],
+    [ "ResetDrawing", "classvrv_1_1_tempo.html#a5f426924d12677dc1ffd51ad0999d1fb", null ]
 ];
