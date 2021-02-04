@@ -857,6 +857,7 @@ var hierarchy =
       [ "vrv::AdjustSlursParams", "classvrv_1_1_adjust_slurs_params.html", null ],
       [ "vrv::AdjustStaffOverlapParams", "classvrv_1_1_adjust_staff_overlap_params.html", null ],
       [ "vrv::AdjustSylSpacingParams", "classvrv_1_1_adjust_syl_spacing_params.html", null ],
+      [ "vrv::AdjustTempoParams", "classvrv_1_1_adjust_tempo_params.html", null ],
       [ "vrv::AdjustTupletNumOverlapParams", "classvrv_1_1_adjust_tuplet_num_overlap_params.html", null ],
       [ "vrv::AdjustXOverflowParams", "classvrv_1_1_adjust_x_overflow_params.html", null ],
       [ "vrv::AdjustXPosParams", "classvrv_1_1_adjust_x_pos_params.html", null ],

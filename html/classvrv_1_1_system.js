@@ -11,6 +11,7 @@ var classvrv_1_1_system =
     [ "AdjustStaffOverlap", "classvrv_1_1_system.html#a2e4bfa30abf92e487736005db9d270f4", null ],
     [ "AdjustSylSpacing", "classvrv_1_1_system.html#a4fbcd2b5cd79c2325cabe4beb4c36655", null ],
     [ "AdjustSylSpacingEnd", "classvrv_1_1_system.html#a214233f856e854a25d50e1699119bb2d", null ],
+    [ "AdjustTempo", "classvrv_1_1_system.html#a520af2c0ee806aeaeaa6b8a4a298a45f", null ],
     [ "AdjustXOverflow", "classvrv_1_1_system.html#acf17073cb929dc3eb114d8daac30c016", null ],
     [ "AdjustXOverflowEnd", "classvrv_1_1_system.html#a40fab7159edc3c6a8f44a50122faaaec", null ],
     [ "AdjustYPos", "classvrv_1_1_system.html#a0911ad3482e6ff43e57e832a0a0a3c4c", null ],

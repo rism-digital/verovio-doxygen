@@ -12,7 +12,6 @@ var classvrv_1_1_alignment =
     [ "AdjustXPos", "classvrv_1_1_alignment.html#a93b9611a56a39c342f74ab87ddb703fc", null ],
     [ "AdjustXPosEnd", "classvrv_1_1_alignment.html#aa69589c917373da6dd82120b819063c9", null ],
     [ "ClearGraceAligners", "classvrv_1_1_alignment.html#a69dbbfa23611f87db7df6c03a26e52a9", null ],
-    [ "GetAccidAdjustedPosition", "classvrv_1_1_alignment.html#a58d33563888eaf94be620185191a3681", null ],
     [ "GetClassId", "classvrv_1_1_alignment.html#a83dd2c33e9c6d89bc21a2d91c0f7a972", null ],
     [ "GetGraceAligner", "classvrv_1_1_alignment.html#ae806f6c44d2251c5adf385d21d22e2be", null ],
     [ "GetLeftRight", "classvrv_1_1_alignment.html#aed80b800a911661778307d8103dc2b68", null ],
