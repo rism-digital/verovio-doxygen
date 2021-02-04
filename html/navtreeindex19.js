@@ -1,5 +1,8 @@
 var NAVTREEINDEX19 =
 {
+"classvrv_1_1_view.html#a9ace0083ad59fc48cc9ded56c63d5fb5":[0,0,0,315,92],
+"classvrv_1_1_view.html#aa05e0576409456496c76a63c7e3e1185":[0,0,0,315,88],
+"classvrv_1_1_view.html#aa1e17b2aee2529c58ae7faee1041dff1":[0,0,0,315,45],
 "classvrv_1_1_view.html#aa2e78145592d2b9c39e1d49f87c2b4f6":[0,0,0,315,87],
 "classvrv_1_1_view.html#aa33a36bdc73dc4b73b1e3ccb78fcf4d5":[0,0,0,315,71],
 "classvrv_1_1_view.html#aa63e5736efde1198c4ccd95754e484a4":[0,0,0,315,116],
@@ -208,8 +211,8 @@ var NAVTREEINDEX19 =
 "functions_e.html":[0,3,0,4],
 "functions_enum.html":[0,3,4],
 "functions_f.html":[0,3,0,5],
-"functions_func.html":[0,3,1],
 "functions_func.html":[0,3,1,0],
+"functions_func.html":[0,3,1],
 "functions_func_c.html":[0,3,1,1],
 "functions_func_d.html":[0,3,1,2],
 "functions_func_e.html":[0,3,1,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX19 =
 "functions_w.html":[0,3,0,19],
 "functorparams_8h_source.html":[1,0,57],
 "gliss_8h_source.html":[1,0,58],
-"glyph_8h_source.html":[1,0,59],
-"gracegrp_8h_source.html":[1,0,60],
-"grpsym_8h_source.html":[1,0,61],
-"hairpin_8h_source.html":[1,0,62]
+"glyph_8h_source.html":[1,0,59]
 };

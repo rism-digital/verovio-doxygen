@@ -6,6 +6,7 @@ var classvrv_1_1_measure_aligner =
     [ "AdjustProportionally", "classvrv_1_1_measure_aligner.html#ae6a64b2c27e8f75b9bf6071b10fd2e07", null ],
     [ "GetAlignmentAtTime", "classvrv_1_1_measure_aligner.html#aeac4bcbe00b4bd1b05cae495b8dbb977", null ],
     [ "GetClassId", "classvrv_1_1_measure_aligner.html#aed6055de2a0f45d8cdc5a524e491d5fa", null ],
+    [ "GetInitialTstampDur", "classvrv_1_1_measure_aligner.html#a70c73263b1a8a7d11482a73351b43a75", null ],
     [ "GetLeftAlignment", "classvrv_1_1_measure_aligner.html#a91340c51c57dcfb68de9e1436f002959", null ],
     [ "GetLeftBarLineAlignment", "classvrv_1_1_measure_aligner.html#a14e6976b09aaefe1364a8f5f632dbd19", null ],
     [ "GetMaxTime", "classvrv_1_1_measure_aligner.html#af9c8e8bed146847a7cfd14db87164ff8", null ],
@@ -16,5 +17,6 @@ var classvrv_1_1_measure_aligner =
     [ "PushAlignmentsRight", "classvrv_1_1_measure_aligner.html#a2ea7245b5f0cf0bb1bc4fc144f29e8af", null ],
     [ "Reset", "classvrv_1_1_measure_aligner.html#a5a533dcbe8644f3c92975643210a0341", null ],
     [ "SetAlignmentXPos", "classvrv_1_1_measure_aligner.html#ab727c9924c45bddee7ddf241d91299c6", null ],
+    [ "SetInitialTstamp", "classvrv_1_1_measure_aligner.html#a49a407aaec5b22bfa71116770b3746a8", null ],
     [ "SetMaxTime", "classvrv_1_1_measure_aligner.html#aab4edf29c88be6e12e726668af041d9d", null ]
 ];
