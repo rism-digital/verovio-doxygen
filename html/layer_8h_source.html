@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('layer_8h_source.html',''); initResizab
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a0c1820fbd11943a83be7d9fc85bd372c">ConvertToUnCastOffMensural</a>(FunctorParams *params);</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#aaef4bde4c30d8f9a213987d77fea267e">UnsetCurrentScoreDef</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a4266ba9b2be435c0fdac988c46662dcf">ScoreDefUnsetCurrent</a>(FunctorParams *functorParams);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a8dfad94746e5bc31420776c9783224f2">ResetHorizontalAlignment</a>(FunctorParams *functorParams);</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
@@ -246,9 +246,9 @@ $(document).ready(function(){initNavTree('layer_8h_source.html',''); initResizab
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_layer_html_a5adbee5370bec875186360c8721425cd"><div class="ttname"><a href="classvrv_1_1_layer.html#a5adbee5370bec875186360c8721425cd">vrv::Layer::SetDrawingCautionValues</a></div><div class="ttdeci">void SetDrawingCautionValues(StaffDef *currentStaffDef)</div><div class="ttdoc">Set drawing clef, keysig and mensur if necessary and if available.</div></div>
+<div class="ttc" id="aclassvrv_1_1_layer_html_a4266ba9b2be435c0fdac988c46662dcf"><div class="ttname"><a href="classvrv_1_1_layer.html#a4266ba9b2be435c0fdac988c46662dcf">vrv::Layer::ScoreDefUnsetCurrent</a></div><div class="ttdeci">virtual int ScoreDefUnsetCurrent(FunctorParams *functorParams)</div><div class="ttdoc">See Object::UnscoreDefSetCurrent.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_ad9c8c466adf27ed39d3e4c4829a96acd"><div class="ttname"><a href="classvrv_1_1_layer.html#ad9c8c466adf27ed39d3e4c4829a96acd">vrv::Layer::GetClefLocOffset</a></div><div class="ttdeci">int GetClefLocOffset(LayerElement *test)</div><div class="ttdoc">Return the clef offset for the position x.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_a41f6fd58a9380728c20d6e94a0e2672f"><div class="ttname"><a href="classvrv_1_1_layer.html#a41f6fd58a9380728c20d6e94a0e2672f">vrv::Layer::ResetDrawing</a></div><div class="ttdeci">virtual int ResetDrawing(FunctorParams *)</div><div class="ttdoc">See Object::GenerateTimemap To be added once Layer implements LinkingInterface.</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_html_aaef4bde4c30d8f9a213987d77fea267e"><div class="ttname"><a href="classvrv_1_1_layer.html#aaef4bde4c30d8f9a213987d77fea267e">vrv::Layer::UnsetCurrentScoreDef</a></div><div class="ttdeci">virtual int UnsetCurrentScoreDef(FunctorParams *functorParams)</div><div class="ttdoc">See Object::UnsetCurrentScoreDef.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_add3ece7e57070b36092d85f7b58e7b3a"><div class="ttname"><a href="classvrv_1_1_layer.html#add3ece7e57070b36092d85f7b58e7b3a">vrv::Layer::IsSupportedChild</a></div><div class="ttdeci">virtual bool IsSupportedChild(Object *object)</div><div class="ttdoc">Base method for checking if a child can be added.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html_a2bfb8ee92dbd7e805de0aae51d07d534"><div class="ttname"><a href="classvrv_1_1_object.html#a2bfb8ee92dbd7e805de0aae51d07d534">vrv::Object::GetIdx</a></div><div class="ttdeci">int GetIdx() const</div><div class="ttdoc">Return the index position of the object in its parent (-1 if not found)</div></div>
 <div class="ttc" id="aclassvrv_1_1_drawing_list_interface_html"><div class="ttname"><a href="classvrv_1_1_drawing_list_interface.html">vrv::DrawingListInterface</a></div><div class="ttdoc">This class is an interface for elements with duration, such as notes and rests.</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:31</div></div>
@@ -279,7 +279,7 @@ $(document).ready(function(){initNavTree('layer_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>layer.h</b></li>
-    <li class="footer">Generated on Sat Feb 6 2021 10:58:41 for My Project by
+    <li class="footer">Generated on Mon Feb 8 2021 10:02:23 for My Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

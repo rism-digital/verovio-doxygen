@@ -49,12 +49,12 @@ var classvrv_1_1_layer =
     [ "ResetDrawing", "classvrv_1_1_layer.html#a41f6fd58a9380728c20d6e94a0e2672f", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_layer.html#a8dfad94746e5bc31420776c9783224f2", null ],
     [ "ResetStaffDefObjects", "classvrv_1_1_layer.html#a973a56164bfe4785b69e9b44ce65489c", null ],
+    [ "ScoreDefUnsetCurrent", "classvrv_1_1_layer.html#a4266ba9b2be435c0fdac988c46662dcf", null ],
     [ "SetCrossStaffFromAbove", "classvrv_1_1_layer.html#af2b6c3163468f34d782e334675d82bb9", null ],
     [ "SetCrossStaffFromBelow", "classvrv_1_1_layer.html#a37ff6e247682992b7fba8137af6eca5a", null ],
     [ "SetDrawCautionKeySigCancel", "classvrv_1_1_layer.html#a101eb115a5917af374c4eac04ca7a645", null ],
     [ "SetDrawingCautionValues", "classvrv_1_1_layer.html#a5adbee5370bec875186360c8721425cd", null ],
     [ "SetDrawingStaffDefValues", "classvrv_1_1_layer.html#a421c1c5be200da96251d817767f13f3d", null ],
     [ "SetDrawingStemDir", "classvrv_1_1_layer.html#a5dcc8411b2ec5d975c0fc1f32ce48d72", null ],
-    [ "SetDrawKeySigCancellation", "classvrv_1_1_layer.html#a6451d65100ffa53da3f46f173f3e98cf", null ],
-    [ "UnsetCurrentScoreDef", "classvrv_1_1_layer.html#aaef4bde4c30d8f9a213987d77fea267e", null ]
+    [ "SetDrawKeySigCancellation", "classvrv_1_1_layer.html#a6451d65100ffa53da3f46f173f3e98cf", null ]
 ];

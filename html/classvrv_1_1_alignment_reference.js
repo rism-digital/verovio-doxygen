@@ -13,5 +13,5 @@ var classvrv_1_1_alignment_reference =
     [ "HasMultipleLayer", "classvrv_1_1_alignment_reference.html#a9c1895942dd54bf9ac12b788dbf7570c", null ],
     [ "IsSupportedChild", "classvrv_1_1_alignment_reference.html#a5042b74cd1f6292ef8d74dda10c5bfbf", null ],
     [ "Reset", "classvrv_1_1_alignment_reference.html#aadc2d7cae6429e02e91766794b4667a2", null ],
-    [ "UnsetCurrentScoreDef", "classvrv_1_1_alignment_reference.html#a0b6df6ceb0d88c1a7697d849e1fa3ec2", null ]
+    [ "ScoreDefUnsetCurrent", "classvrv_1_1_alignment_reference.html#ab7d3be8f28951c215eea7e31e73b5309", null ]
 ];

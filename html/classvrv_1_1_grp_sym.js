@@ -9,8 +9,8 @@ var classvrv_1_1_grp_sym =
     [ "GetDrawingY", "classvrv_1_1_grp_sym.html#a5133bfc250ab2ed745270c7b77edfaf1", null ],
     [ "GetEndDef", "classvrv_1_1_grp_sym.html#a15ceea23d00ca854af793af05a3b7f7f", null ],
     [ "GetStartDef", "classvrv_1_1_grp_sym.html#a794b945f61aed2ccdac21eddccb23fd3", null ],
-    [ "PrepareGroupSymbols", "classvrv_1_1_grp_sym.html#aa5db9914fc854736a11695af4928fcf0", null ],
     [ "Reset", "classvrv_1_1_grp_sym.html#a14756a349793abd3d996c1b28f61c14c", null ],
+    [ "ScoreDefSetGrpSym", "classvrv_1_1_grp_sym.html#ace082a98369197f33a1debc1348b2d74", null ],
     [ "SetEndDef", "classvrv_1_1_grp_sym.html#aeb90a82468f32ec7c0e9d1466137bb3d", null ],
     [ "SetStartDef", "classvrv_1_1_grp_sym.html#a46f46829811f58fbae7b59bf5bf96029", null ]
 ];

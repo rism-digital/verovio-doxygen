@@ -11,8 +11,8 @@ var classvrv_1_1_staff_grp =
     [ "GetGroupSymbol", "classvrv_1_1_staff_grp.html#ad19d58f46603d24bd12c618ac7f48d36", null ],
     [ "GetMaxStaffSize", "classvrv_1_1_staff_grp.html#a511a37516b151679be18a3eb13385647", null ],
     [ "IsSupportedChild", "classvrv_1_1_staff_grp.html#a8a7dc49e7551930bbe65cab7ff11b66f", null ],
-    [ "OptimizeScoreDefEnd", "classvrv_1_1_staff_grp.html#a9f1bc73b52b11a9f05678a56a7c3f4e1", null ],
     [ "Reset", "classvrv_1_1_staff_grp.html#a347677b55f3e9749ac925d19b3e55b9b", null ],
+    [ "ScoreDefOptimizeEnd", "classvrv_1_1_staff_grp.html#a69b67d11eb2ddb5c61e9680e8da9eccb", null ],
     [ "SetDrawingVisibility", "classvrv_1_1_staff_grp.html#a84b445f6a6c649cd9f35f9fd2adbecaa", null ],
     [ "SetGroupSymbol", "classvrv_1_1_staff_grp.html#a94713544a37bd12ad3b8aafaff326fd0", null ]
 ];
