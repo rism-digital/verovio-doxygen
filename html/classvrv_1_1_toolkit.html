@@ -108,12 +108,19 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="separator:aed5c67aae6d92d7c8d1d68edf5a5ae65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3859f9341d415376b7d8f11a1aa8e352"><td class="memItemLeft" align="right" valign="top"><a id="a3859f9341d415376b7d8f11a1aa8e352"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#a3859f9341d415376b7d8f11a1aa8e352">LoadFile</a> (const std::string &amp;filename)</td></tr>
-<tr class="memdesc:a3859f9341d415376b7d8f11a1aa8e352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a file with the specified type. <br /></td></tr>
+<tr class="memdesc:a3859f9341d415376b7d8f11a1aa8e352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a file and call <a class="el" href="classvrv_1_1_toolkit.html#a9a08fd8e89da6c2c709eaae69e28b2b1" title="Load a string data with the type previously specified in the options.">Toolkit::LoadData</a> Previously convert UTF16 files to UTF8 or extract files from MusicXML compressed files. <br /></td></tr>
 <tr class="separator:a3859f9341d415376b7d8f11a1aa8e352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a08fd8e89da6c2c709eaae69e28b2b1"><td class="memItemLeft" align="right" valign="top"><a id="a9a08fd8e89da6c2c709eaae69e28b2b1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#a9a08fd8e89da6c2c709eaae69e28b2b1">LoadData</a> (const std::string &amp;data)</td></tr>
-<tr class="memdesc:a9a08fd8e89da6c2c709eaae69e28b2b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a string data with the specified type. <br /></td></tr>
+<tr class="memitem:a9a08fd8e89da6c2c709eaae69e28b2b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#a9a08fd8e89da6c2c709eaae69e28b2b1">LoadData</a> (const std::string &amp;data)</td></tr>
+<tr class="memdesc:a9a08fd8e89da6c2c709eaae69e28b2b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a string data with the type previously specified in the options.  <a href="classvrv_1_1_toolkit.html#a9a08fd8e89da6c2c709eaae69e28b2b1">More...</a><br /></td></tr>
 <tr class="separator:a9a08fd8e89da6c2c709eaae69e28b2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae2ad736af0f0d436c9131745057556"><td class="memItemLeft" align="right" valign="top"><a id="aeae2ad736af0f0d436c9131745057556"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#aeae2ad736af0f0d436c9131745057556">LoadZipDataBase64</a> (const std::string &amp;data)</td></tr>
+<tr class="memdesc:aeae2ad736af0f0d436c9131745057556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a MusicXML compressed file passed as base64 encoded string. <br /></td></tr>
+<tr class="separator:aeae2ad736af0f0d436c9131745057556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf4167617faed8347a7da3291e927e05"><td class="memItemLeft" align="right" valign="top"><a id="abf4167617faed8347a7da3291e927e05"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#abf4167617faed8347a7da3291e927e05">LoadZipDataBuffer</a> (const unsigned char *data, int length)</td></tr>
+<tr class="memdesc:abf4167617faed8347a7da3291e927e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a MusicXML compressed file passed as a buffer of bytes. <br /></td></tr>
+<tr class="separator:abf4167617faed8347a7da3291e927e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13472202620102f546072fc83b689089"><td class="memItemLeft" align="right" valign="top"><a id="a13472202620102f546072fc83b689089"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#a13472202620102f546072fc83b689089">SaveFile</a> (const std::string &amp;filename, const std::string &amp;jsonOptions)</td></tr>
 <tr class="memdesc:a13472202620102f546072fc83b689089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save an MEI file. <br /></td></tr>
@@ -460,6 +467,27 @@ static std::map&lt; std::string, ClassId &gt;&#160;</td><td class="memItemRight"
 
 </div>
 </div>
+<a id="a9a08fd8e89da6c2c709eaae69e28b2b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a08fd8e89da6c2c709eaae69e28b2b1">&#9670;&nbsp;</a></span>LoadData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vrv::Toolkit::LoadData </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load a string data with the type previously specified in the options. </p>
+<p>Auto-detect if nothing was previously specified. </p>
+
+</div>
+</div>
 <a id="a19431c36d29a2301ee946da2cd01946e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a19431c36d29a2301ee946da2cd01946e">&#9670;&nbsp;</a></span>RedoLayout()</h2>
 
@@ -684,7 +712,7 @@ static std::map&lt; std::string, ClassId &gt;&#160;</td><td class="memItemRight"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_toolkit.html">Toolkit</a></li>
-    <li class="footer">Generated on Mon Feb 22 2021 15:52:44 for My Project by
+    <li class="footer">Generated on Mon Feb 22 2021 16:10:25 for My Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

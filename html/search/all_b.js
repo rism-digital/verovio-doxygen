@@ -20,5 +20,7 @@ var searchData=
   ['linkinginterface_597',['LinkingInterface',['../classvrv_1_1_linking_interface.html',1,'vrv']]],
   ['loaddata_598',['LoadData',['../classvrv_1_1_toolkit.html#a9a08fd8e89da6c2c709eaae69e28b2b1',1,'vrv::Toolkit']]],
   ['loadfile_599',['LoadFile',['../classvrv_1_1_toolkit.html#a3859f9341d415376b7d8f11a1aa8e352',1,'vrv::Toolkit']]],
-  ['loadfooter_600',['LoadFooter',['../classvrv_1_1_running_element.html#a947bcc6ab9bb13bcb86ffaa459ed9c1d',1,'vrv::RunningElement']]]
+  ['loadfooter_600',['LoadFooter',['../classvrv_1_1_running_element.html#a947bcc6ab9bb13bcb86ffaa459ed9c1d',1,'vrv::RunningElement']]],
+  ['loadzipdatabase64_601',['LoadZipDataBase64',['../classvrv_1_1_toolkit.html#aeae2ad736af0f0d436c9131745057556',1,'vrv::Toolkit']]],
+  ['loadzipdatabuffer_602',['LoadZipDataBuffer',['../classvrv_1_1_toolkit.html#abf4167617faed8347a7da3291e927e05',1,'vrv::Toolkit']]]
 ];

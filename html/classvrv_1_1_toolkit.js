@@ -32,6 +32,8 @@ var classvrv_1_1_toolkit =
     [ "IdentifyInputFrom", "classvrv_1_1_toolkit.html#a05feed813407bca32d82d34319f5185a", null ],
     [ "LoadData", "classvrv_1_1_toolkit.html#a9a08fd8e89da6c2c709eaae69e28b2b1", null ],
     [ "LoadFile", "classvrv_1_1_toolkit.html#a3859f9341d415376b7d8f11a1aa8e352", null ],
+    [ "LoadZipDataBase64", "classvrv_1_1_toolkit.html#aeae2ad736af0f0d436c9131745057556", null ],
+    [ "LoadZipDataBuffer", "classvrv_1_1_toolkit.html#abf4167617faed8347a7da3291e927e05", null ],
     [ "RedoLayout", "classvrv_1_1_toolkit.html#a19431c36d29a2301ee946da2cd01946e", null ],
     [ "RedoPagePitchPosLayout", "classvrv_1_1_toolkit.html#aff4b4b830b5859bf07d19e8ca63d2335", null ],
     [ "RenderToDeviceContext", "classvrv_1_1_toolkit.html#aa6f27919ec3642d4da89408f8143f51d", null ],
