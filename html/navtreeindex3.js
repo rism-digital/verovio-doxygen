@@ -136,8 +136,11 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_clef.html#af4329c1d512e1df1af7c73ae86ca1c0f":[0,0,0,70,4],
 "classvrv_1_1_clef.html#afc662623ee8d3d99b781ee1448eea294":[0,0,0,70,8],
 "classvrv_1_1_comparison.html":[0,0,0,72],
+"classvrv_1_1_comparison.html#a37942706c6e3b456614918d7e7f7fe98":[0,0,0,72,2],
 "classvrv_1_1_comparison.html#a7475c6f175d151734e27030596229c38":[0,0,0,72,1],
 "classvrv_1_1_comparison.html#a7bfa626596bfb256d03a1d55c77e8f64":[0,0,0,72,0],
+"classvrv_1_1_comparison.html#a92988e2685626527724dc49a0ec8f871":[0,0,0,72,4],
+"classvrv_1_1_comparison.html#a929ae60ab691c8f16b8d7b4fd07f3fc1":[0,0,0,72,3],
 "classvrv_1_1_control_element.html":[0,0,0,73],
 "classvrv_1_1_control_element.html#a22f1eb1bb3c79301295a80e054804fa8":[0,0,0,73,4],
 "classvrv_1_1_control_element.html#a2cd0ecb73934d457a4b5dcf18bfd41de":[0,0,0,73,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_device_context.html#a5aa27f5f2cfae5422eeffd5c9b18b102":[0,0,0,90,22],
 "classvrv_1_1_device_context.html#a5c6716a2a7b48a1ca1b57c9d9beabf6a":[0,0,0,90,8],
 "classvrv_1_1_device_context.html#a60ab4809a1030d0445c6998daf06efcd":[0,0,0,90,60],
-"classvrv_1_1_device_context.html#a610036a7413ea52b0ce8905d04ecb23d":[0,0,0,90,19],
-"classvrv_1_1_device_context.html#a65439d6b8329cd53c0ef6d94b938625f":[0,0,0,90,10],
-"classvrv_1_1_device_context.html#a667b03b2f73ad526b6eca886a06a27a1":[0,0,0,90,59],
-"classvrv_1_1_device_context.html#a66f66f27572b0b3e79cceef7db4344f3":[0,0,0,90,71]
+"classvrv_1_1_device_context.html#a610036a7413ea52b0ce8905d04ecb23d":[0,0,0,90,19]
 };

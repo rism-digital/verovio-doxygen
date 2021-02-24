@@ -10,6 +10,5 @@ var searchData=
   ['resources_1230',['Resources',['../classvrv_1_1_resources.html',1,'vrv']]],
   ['rest_1231',['Rest',['../classvrv_1_1_rest.html',1,'vrv']]],
   ['restore_1232',['Restore',['../classvrv_1_1_restore.html',1,'vrv']]],
-  ['reverseclassidscomparison_1233',['ReverseClassIdsComparison',['../classvrv_1_1_reverse_class_ids_comparison.html',1,'vrv']]],
-  ['runningelement_1234',['RunningElement',['../classvrv_1_1_running_element.html',1,'vrv']]]
+  ['runningelement_1233',['RunningElement',['../classvrv_1_1_running_element.html',1,'vrv']]]
 ];

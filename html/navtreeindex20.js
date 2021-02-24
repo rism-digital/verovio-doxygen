@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"functions_h.html":[0,3,0,7],
 "functions_i.html":[0,3,0,8],
 "functions_j.html":[0,3,0,9],
 "functions_l.html":[0,3,0,10],
@@ -103,8 +104,8 @@ var NAVTREEINDEX20 =
 "structvrv_1_1_closest_b_b.html#ae4c15a00f3ead7ec067bf72ce647aa55":[0,0,0,71,2],
 "structvrv_1_1_int_tree.html":[0,0,0,152],
 "structvrv_1_1_int_tree.html#ab527660cdce61cc8ae7521d4933fd6fb":[0,0,0,152,0],
-"structvrv_1_1_staff_sort.html":[0,0,0,279],
-"structvrv_1_1_staff_sort.html#a6bdec7c49db040406f1b91c1504f0529":[0,0,0,279,0],
+"structvrv_1_1_staff_sort.html":[0,0,0,278],
+"structvrv_1_1_staff_sort.html#a6bdec7c49db040406f1b91c1504f0529":[0,0,0,278,0],
 "subst_8h_source.html":[1,0,136],
 "supplied_8h_source.html":[1,0,137],
 "surface_8h_source.html":[1,0,138],

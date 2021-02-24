@@ -811,7 +811,6 @@ var hierarchy =
         [ "vrv::UuidComparison", "classvrv_1_1_uuid_comparison.html", null ]
       ] ],
       [ "vrv::ClassIdsComparison", "classvrv_1_1_class_ids_comparison.html", [
-        [ "vrv::ReverseClassIdsComparison", "classvrv_1_1_reverse_class_ids_comparison.html", null ],
         [ "vrv::VisibleStaffDefOrGrpObject", "classvrv_1_1_visible_staff_def_or_grp_object.html", null ]
       ] ],
       [ "vrv::InterfaceComparison", "classvrv_1_1_interface_comparison.html", null ],

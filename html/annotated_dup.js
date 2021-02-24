@@ -253,7 +253,6 @@ var annotated_dup =
       [ "Resources", "classvrv_1_1_resources.html", "classvrv_1_1_resources" ],
       [ "Rest", "classvrv_1_1_rest.html", "classvrv_1_1_rest" ],
       [ "Restore", "classvrv_1_1_restore.html", "classvrv_1_1_restore" ],
-      [ "ReverseClassIdsComparison", "classvrv_1_1_reverse_class_ids_comparison.html", "classvrv_1_1_reverse_class_ids_comparison" ],
       [ "RunningElement", "classvrv_1_1_running_element.html", "classvrv_1_1_running_element" ],
       [ "SaveParams", "classvrv_1_1_save_params.html", "classvrv_1_1_save_params" ],
       [ "Sb", "classvrv_1_1_sb.html", "classvrv_1_1_sb" ],
