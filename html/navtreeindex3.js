@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_calc_dots_params.html#a67ebac1b783c72fce9c679db175db5f1":[0,0,0,59,3],
+"classvrv_1_1_calc_dots_params.html#a9ae1587720af43e71e2d8024a0b2dd34":[0,0,0,59,1],
 "classvrv_1_1_calc_dots_params.html#abeabff21c6f1fa5f0cc2d6f939713875":[0,0,0,59,4],
 "classvrv_1_1_calc_dots_params.html#ad32624f6e5bdbf47b1b6531e6c6c01d4":[0,0,0,59,0],
 "classvrv_1_1_calc_max_measure_duration_params.html":[0,0,0,60],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_device_context.html#a4e4441d51b1054301bf4f256878f6364":[0,0,0,90,47],
 "classvrv_1_1_device_context.html#a51f6a313deb1d2d1e3d80aa9d130d8d3":[0,0,0,90,9],
 "classvrv_1_1_device_context.html#a5aa27f5f2cfae5422eeffd5c9b18b102":[0,0,0,90,22],
-"classvrv_1_1_device_context.html#a5c6716a2a7b48a1ca1b57c9d9beabf6a":[0,0,0,90,8],
-"classvrv_1_1_device_context.html#a60ab4809a1030d0445c6998daf06efcd":[0,0,0,90,60],
-"classvrv_1_1_device_context.html#a610036a7413ea52b0ce8905d04ecb23d":[0,0,0,90,19]
+"classvrv_1_1_device_context.html#a5c6716a2a7b48a1ca1b57c9d9beabf6a":[0,0,0,90,8]
 };
