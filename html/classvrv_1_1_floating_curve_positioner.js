@@ -3,7 +3,7 @@ var classvrv_1_1_floating_curve_positioner =
     [ "FloatingCurvePositioner", "classvrv_1_1_floating_curve_positioner.html#a3cbd2dd57e3eb9a687f91c9ba6185bfb", null ],
     [ "~FloatingCurvePositioner", "classvrv_1_1_floating_curve_positioner.html#a182a06641e3574eb9c7b4b43baf5c4df", null ],
     [ "AddSpannedElement", "classvrv_1_1_floating_curve_positioner.html#a77060e0dbc69dc9a839497fba690acab", null ],
-    [ "CalcAdjustment", "classvrv_1_1_floating_curve_positioner.html#afad7ea4b18d11db2c2f07ae5f900b34b", null ],
+    [ "CalcAdjustment", "classvrv_1_1_floating_curve_positioner.html#ae59d41e4b80818f2a43206ed6ac41b5e", null ],
     [ "CalcMinMaxY", "classvrv_1_1_floating_curve_positioner.html#a4e46a7462444bb57b0a67d7c4f06ff1d", null ],
     [ "ClearSpannedElements", "classvrv_1_1_floating_curve_positioner.html#acf6229982048e963f98e56b66074d33f", null ],
     [ "GetAngle", "classvrv_1_1_floating_curve_positioner.html#ad7b1b6fb4395c622fb37d042f3e1bc91", null ],
