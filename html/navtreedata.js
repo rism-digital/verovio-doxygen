@@ -56,7 +56,7 @@ var NAVTREEINDEX =
 "classvrv_1_1_mdiv.html#a5c5020b2bc33951b1ef83c106b6a035f",
 "classvrv_1_1_note.html#af2a5f4d49457dd5ce4e6fed0a4813aec",
 "classvrv_1_1_object.html#af644f5ed4600bb29ca03ded3f95b3467",
-"classvrv_1_1_options.html#a7c3c2c679892af5b2d81b3d023d4a672",
+"classvrv_1_1_options.html#a7d7b0ae2657f39ef6819ed7ec23ce721",
 "classvrv_1_1_point.html#a0ddb95a7dab4b28a1bd4095e9851ac7c",
 "classvrv_1_1_score_def_element.html#a164b285418aaace19e6f436fb88ec720",
 "classvrv_1_1_staff_def_drawing_interface.html#ac0952e8be7f77c790e11bb5614312737",
