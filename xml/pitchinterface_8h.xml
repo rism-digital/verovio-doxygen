@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="pitchinterface_8h" kind="file" language="C++">
+    <compoundname>pitchinterface.h</compoundname>
+    <includes local="yes">atts_gestural.h</includes>
+    <includes local="yes">atts_shared.h</includes>
+    <includedby refid="note_8h" local="yes">note.h</includedby>
+    <includedby refid="custos_8h" local="yes">custos.h</includedby>
+    <includedby refid="keyaccid_8h" local="yes">keyaccid.h</includedby>
+    <includedby refid="nc_8h" local="yes">nc.h</includedby>
+    <includedby refid="neume_8h" local="yes">neume.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>atts_gestural.h</label>
+      </node>
+      <node id="3">
+        <label>atts_shared.h</label>
+      </node>
+      <node id="1">
+        <label>pitchinterface.h</label>
+        <link refid="pitchinterface_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>note.h</label>
+        <link refid="note_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>comparison.h</label>
+        <link refid="comparison_8h_source"/>
+      </node>
+      <node id="7">
+        <label>neume.h</label>
+        <link refid="neume_8h_source"/>
+      </node>
+      <node id="4">
+        <label>custos.h</label>
+        <link refid="custos_8h_source"/>
+      </node>
+      <node id="6">
+        <label>nc.h</label>
+        <link refid="nc_8h_source"/>
+      </node>
+      <node id="1">
+        <label>pitchinterface.h</label>
+        <link refid="pitchinterface_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>keyaccid.h</label>
+        <link refid="keyaccid_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classvrv_1_1_pitch_interface" prot="public">vrv::PitchInterface</innerclass>
+    <innernamespace refid="namespacevrv">vrv</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Name:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pitchinterface.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author:<sp/><sp/><sp/><sp/><sp/><sp/>Laurent<sp/>Pugin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created:<sp/><sp/><sp/><sp/><sp/>2011</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>Authors<sp/>and<sp/>others.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__VRV_PITCH_INTERFACE_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__VRV_PITCH_INTERFACE_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atts_gestural.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atts_shared.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vrv<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Clef;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Layer;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PitchInterface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classvrv_1_1_pitch_interface" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_pitch_interface" kindref="compound">PitchInterface</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_interface" kindref="compound">Interface</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttNoteGes,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttOctave,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttPitch<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_pitch_interface" kindref="compound">PitchInterface</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_pitch_interface" kindref="compound">PitchInterface</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset();</highlight></codeline>
+<codeline lineno="37" refid="classvrv_1_1_pitch_interface_1a41ec055c958eb670dda01b89974e3232" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>InterfaceId<sp/><ref refid="classvrv_1_1_pitch_interface_1a41ec055c958eb670dda01b89974e3232" kindref="member">IsInterface</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>INTERFACE_PITCH;<sp/>}</highlight></codeline>
+<codeline lineno="39"></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_pitch_interface_1a2851d8a28d8129f3301f2367a3302f1a" kindref="member">HasIdenticalPitchInterface</ref>(<ref refid="classvrv_1_1_pitch_interface" kindref="compound">PitchInterface</ref><sp/>*otherPitchInterface);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_pitch_interface_1aa50e2d8637677e753a582083b7b8afb7" kindref="member">AdjustPitchByOffset</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pitchOffset);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_pitch_interface_1a558b1156e546118a81d6ed12e739f4ab" kindref="member">PitchDifferenceTo</ref>(<ref refid="classvrv_1_1_pitch_interface" kindref="compound">PitchInterface</ref><sp/>*pi);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_pitch_interface_1af3c44934cc0cd821bacad09edb86aa6b" kindref="member">AdjustPitchForNewClef</ref>(<ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref><sp/>*oldClef,<sp/><ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref><sp/>*newClef);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Static<sp/>methods<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_pitch_interface_1a3efb531b25e89181a821d237fbdf903e" kindref="member">AdjustPname</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;pname,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;oct);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_pitch_interface_1a6b60bce457e288430cdf085b5c3876d1" kindref="member">CalcLoc</ref>(<ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref><sp/>*element,<sp/><ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref><sp/>*layer,<sp/><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref><sp/>*crossStaffElement,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>topChordNote<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_pitch_interface_1a6b60bce457e288430cdf085b5c3876d1" kindref="member">CalcLoc</ref>(data_PITCHNAME<sp/>pname,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>oct,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clefLocOffset);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/pitchinterface.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classvrv_1_1_plist_interface" kind="class" language="C++" prot="public">
+    <compoundname>vrv::PlistInterface</compoundname>
+    <basecompoundref refid="classvrv_1_1_interface" prot="public" virt="non-virtual">vrv::Interface</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">AttPlist</basecompoundref>
+    <derivedcompoundref refid="classvrv_1_1_arpeg" prot="public" virt="non-virtual">vrv::Arpeg</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_expansion" prot="public" virt="non-virtual">vrv::Expansion</derivedcompoundref>
+    <includes refid="plistinterface_8h" local="no">plistinterface.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Constructors, destructors, reset methods</header>
+      <description><para>Reset method reset all attribute classes </para>
+</description>
+      <memberdef kind="function" id="classvrv_1_1_plist_interface_1ae39e8f1ad793a390322af422c052025c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vrv::PlistInterface::PlistInterface</definition>
+        <argsstring>()</argsstring>
+        <name>PlistInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" line="34" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_plist_interface_1a796ca7d2c91aae5e0a1e8fafd331939d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual vrv::PlistInterface::~PlistInterface</definition>
+        <argsstring>()</argsstring>
+        <name>~PlistInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" line="35" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_plist_interface_1a2ff8406cd82aad5b2303385cf1b8d055" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void vrv::PlistInterface::Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <reimplementedby refid="classvrv_1_1_expansion_1a5fc93a2c358ef3458ae4eb29e49fefda">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_arpeg_1a153c3a0c91d7a8a3ef171d10b70ea933">Reset</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" line="36" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_plist_interface_1a023fd81e924659fbfac3ba4e60fafebe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>InterfaceId</type>
+        <definition>virtual InterfaceId vrv::PlistInterface::IsInterface</definition>
+        <argsstring>()</argsstring>
+        <name>IsInterface</name>
+        <reimplements refid="classvrv_1_1_interface_1a5a6818097ffc4a990e6e6e004cf1aaa3">IsInterface</reimplements>
+        <briefdescription>
+<para>Virtual method returning the InterfaceId of the interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Needs to be overridden in child classes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" line="37" column="25" bodyfile="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvrv_1_1_plist_interface_1af960cff0e7fcc5b73389aa7d698b76cd" prot="private" static="no" mutable="no">
+        <type>ArrayOfObjects</type>
+        <definition>ArrayOfObjects vrv::PlistInterface::m_references</definition>
+        <argsstring></argsstring>
+        <name>m_references</name>
+        <briefdescription>
+<para>An array of resolved references. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Filled in InterfacePreparePlist (backward). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" line="101" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_plist_interface_1a83b6a92cda669fe5cb314610719c57e5" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; vrv::PlistInterface::m_uuids</definition>
+        <argsstring></argsstring>
+        <name>m_uuids</name>
+        <briefdescription>
+<para>An array of parsed any uris stored as uuids. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Filled in InterfacePreparePlist (backward and forward). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" line="107" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvrv_1_1_plist_interface_1a6d9427ddda8b4db587ec91b9b796f7b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::PlistInterface::AddRef</definition>
+        <argsstring>(std::string ref)</argsstring>
+        <name>AddRef</name>
+        <param>
+          <type>std::string</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classvrv_1_1_add" kindref="compound">Add</ref> a reference ref to the AttPlist vector (if not already there) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" line="43" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_plist_interface_1abf9d04ad183281727a87426c82c3c8d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::PlistInterface::AddRefAllowDuplicate</definition>
+        <argsstring>(const std::string &amp;ref)</argsstring>
+        <name>AddRefAllowDuplicate</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classvrv_1_1_add" kindref="compound">Add</ref> a references, not checking if it is already in the list (for expansion@plist). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" line="48" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_plist_interface_1a49a2a6767d0e8512174b83004c18a44d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::PlistInterface::SetRef</definition>
+        <argsstring>(Object *object)</argsstring>
+        <name>SetRef</name>
+        <param>
+          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>Set a reference object when the uuid is found in the m_uuids. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Calls IsValidRef to check that the type of object is valid. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" line="54" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_plist_interface_1a39c3b83292bbcb3b6b2f10ba7a74188f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const ArrayOfObjects *</type>
+        <definition>const ArrayOfObjects* vrv::PlistInterface::GetRefs</definition>
+        <argsstring>()</argsstring>
+        <name>GetRefs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" line="56" column="26" bodyfile="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_plist_interface_1a07adf9a3dde70b4d3e4cf7ab2d221580" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int vrv::PlistInterface::InterfacePreparePlist</definition>
+        <argsstring>(FunctorParams *functorParams, Object *object)</argsstring>
+        <name>InterfacePreparePlist</name>
+        <param>
+          <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
+          <declname>functorParams</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>We have functor in the interface for avoiding code duplication in each implementation class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Since we are in an interface, we need to pass the <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> (implementation) to the functor method. These not called by the Process/Call loop but by the implementaion classes explicitely. See <ref refid="classvrv_1_1_floating_object_1a26acefe41b29aa28c85eb244f624d2c1" kindref="member">FloatingObject::FillStaffCurrentTimeSpanning</ref> for an example. See <ref refid="classvrv_1_1_object_1af10db2b195d5667b53c982409ecb9500" kindref="member">Object::PreparePlist</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" line="72" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_plist_interface_1a4d6fa537f37ed847c3d02504ca5d244d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int vrv::PlistInterface::InterfaceResetDrawing</definition>
+        <argsstring>(FunctorParams *functorParams, Object *object)</argsstring>
+        <name>InterfaceResetDrawing</name>
+        <param>
+          <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
+          <declname>functorParams</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>See <ref refid="classvrv_1_1_object_1a69ad18810d5249e8bb56be54884d2b50" kindref="member">Object::ResetDrawing</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" line="77" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classvrv_1_1_plist_interface_1a38c6c2162becabf7f6f061de2c2c7b62" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::PlistInterface::SetUuidStrs</definition>
+        <argsstring>()</argsstring>
+        <name>SetUuidStrs</name>
+        <briefdescription>
+<para>Extract the fragment of the any uris given in @plist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" line="83" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_plist_interface_1ab77a229a4b86768589a86c988851f447" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool vrv::PlistInterface::IsValidRef</definition>
+        <argsstring>(Object *ref)</argsstring>
+        <name>IsValidRef</name>
+        <reimplementedby refid="classvrv_1_1_arpeg_1a3fc3e103a514919ab04b862eeb4a3cfa">IsValidRef</reimplementedby>
+        <param>
+          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+<para>Method to be redefined in the child class if specific validation is required. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The method is called from <ref refid="classvrv_1_1_plist_interface_1a49a2a6767d0e8512174b83004c18a44d" kindref="member">PlistInterface::SetRef</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" line="89" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is an interface for elements having a single time point, such as tempo, reh, etc. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It is not an abstract class but should not be instantiated directly. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>AttPlist</label>
+      </node>
+      <node id="2">
+        <label>vrv::Interface</label>
+        <link refid="classvrv_1_1_interface"/>
+      </node>
+      <node id="5">
+        <label>vrv::Expansion</label>
+        <link refid="classvrv_1_1_expansion"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vrv::PlistInterface</label>
+        <link refid="classvrv_1_1_plist_interface"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vrv::Arpeg</label>
+        <link refid="classvrv_1_1_arpeg"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>AttPlist</label>
+      </node>
+      <node id="2">
+        <label>vrv::Interface</label>
+        <link refid="classvrv_1_1_interface"/>
+      </node>
+      <node id="1">
+        <label>vrv::PlistInterface</label>
+        <link refid="classvrv_1_1_plist_interface"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" line="27" column="55" bodyfile="/home/runner/work/verovio/verovio/include/vrv/plistinterface.h" bodystart="27" bodyend="108"/>
+    <listofallmembers>
+      <member refid="classvrv_1_1_plist_interface_1a6d9427ddda8b4db587ec91b9b796f7b5" prot="public" virt="non-virtual"><scope>vrv::PlistInterface</scope><name>AddRef</name></member>
+      <member refid="classvrv_1_1_plist_interface_1abf9d04ad183281727a87426c82c3c8d1" prot="public" virt="non-virtual"><scope>vrv::PlistInterface</scope><name>AddRefAllowDuplicate</name></member>
+      <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual"><scope>vrv::PlistInterface</scope><name>GetAttClasses</name></member>
+      <member refid="classvrv_1_1_plist_interface_1a39c3b83292bbcb3b6b2f10ba7a74188f" prot="public" virt="non-virtual"><scope>vrv::PlistInterface</scope><name>GetRefs</name></member>
+      <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual"><scope>vrv::PlistInterface</scope><name>Interface</name></member>
+      <member refid="classvrv_1_1_plist_interface_1a07adf9a3dde70b4d3e4cf7ab2d221580" prot="public" virt="virtual"><scope>vrv::PlistInterface</scope><name>InterfacePreparePlist</name></member>
+      <member refid="classvrv_1_1_plist_interface_1a4d6fa537f37ed847c3d02504ca5d244d" prot="public" virt="virtual"><scope>vrv::PlistInterface</scope><name>InterfaceResetDrawing</name></member>
+      <member refid="classvrv_1_1_plist_interface_1a023fd81e924659fbfac3ba4e60fafebe" prot="public" virt="virtual"><scope>vrv::PlistInterface</scope><name>IsInterface</name></member>
+      <member refid="classvrv_1_1_plist_interface_1ab77a229a4b86768589a86c988851f447" prot="protected" virt="virtual"><scope>vrv::PlistInterface</scope><name>IsValidRef</name></member>
+      <member refid="classvrv_1_1_plist_interface_1af960cff0e7fcc5b73389aa7d698b76cd" prot="private" virt="non-virtual"><scope>vrv::PlistInterface</scope><name>m_references</name></member>
+      <member refid="classvrv_1_1_plist_interface_1a83b6a92cda669fe5cb314610719c57e5" prot="private" virt="non-virtual"><scope>vrv::PlistInterface</scope><name>m_uuids</name></member>
+      <member refid="classvrv_1_1_plist_interface_1ae39e8f1ad793a390322af422c052025c" prot="public" virt="non-virtual"><scope>vrv::PlistInterface</scope><name>PlistInterface</name></member>
+      <member refid="classvrv_1_1_interface_1a57c9a4f18b81a07ef0d14dc040f84257" prot="public" virt="non-virtual"><scope>vrv::PlistInterface</scope><name>RegisterInterfaceAttClass</name></member>
+      <member refid="classvrv_1_1_plist_interface_1a2ff8406cd82aad5b2303385cf1b8d055" prot="public" virt="virtual"><scope>vrv::PlistInterface</scope><name>Reset</name></member>
+      <member refid="classvrv_1_1_plist_interface_1a49a2a6767d0e8512174b83004c18a44d" prot="public" virt="non-virtual"><scope>vrv::PlistInterface</scope><name>SetRef</name></member>
+      <member refid="classvrv_1_1_plist_interface_1a38c6c2162becabf7f6f061de2c2c7b62" prot="protected" virt="non-virtual"><scope>vrv::PlistInterface</scope><name>SetUuidStrs</name></member>
+      <member refid="classvrv_1_1_interface_1a1fbabd3b506190dc2f1b4584a49a85ea" prot="public" virt="virtual"><scope>vrv::PlistInterface</scope><name>~Interface</name></member>
+      <member refid="classvrv_1_1_plist_interface_1a796ca7d2c91aae5e0a1e8fafd331939d" prot="public" virt="virtual"><scope>vrv::PlistInterface</scope><name>~PlistInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

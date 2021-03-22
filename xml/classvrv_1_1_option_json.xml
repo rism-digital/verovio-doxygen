@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classvrv_1_1_option_json" kind="class" language="C++" prot="public">
+    <compoundname>vrv::OptionJson</compoundname>
+    <basecompoundref refid="classvrv_1_1_option" prot="public" virt="non-virtual">vrv::Option</basecompoundref>
+    <includes refid="options_8h" local="no">options.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classvrv_1_1_option_json_1a1f2388458473973b71734faec8f21e81" prot="private" static="no">
+        <type>std::vector&lt; std::reference_wrapper&lt; jsonxx::Value &gt; &gt;</type>
+        <definition>using vrv::OptionJson::JsonPath =  std::vector&lt;std::reference_wrapper&lt;jsonxx::Value&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>JsonPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="430" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/options.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvrv_1_1_option_json_1acc6d4ec3d80fe3d3cf71e2c250865a7f" prot="private" static="no" mutable="no">
+        <type>jsonxx::Object</type>
+        <definition>jsonxx::Object vrv::OptionJson::m_values</definition>
+        <argsstring></argsstring>
+        <name>m_values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="450" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/options.h" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_option_json_1a3b7e45f3900aacd0547aa37e4171e9f8" prot="private" static="no" mutable="no">
+        <type>jsonxx::Object</type>
+        <definition>jsonxx::Object vrv::OptionJson::m_defaultValues</definition>
+        <argsstring></argsstring>
+        <name>m_defaultValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="451" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/options.h" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvrv_1_1_option_json_1aa24d69161382f7a352d6f5f12c7aa8a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vrv::OptionJson::OptionJson</definition>
+        <argsstring>()=default</argsstring>
+        <name>OptionJson</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="434" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_option_json_1a62b72c3fda56b2afae608565d54b333a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual vrv::OptionJson::~OptionJson</definition>
+        <argsstring>()=default</argsstring>
+        <name>~OptionJson</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="435" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_option_json_1a89c98394002c05e9963e5dc804308c8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void vrv::OptionJson::Init</definition>
+        <argsstring>(const std::string &amp;defaultValue)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="436" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_option_json_1a741d4a204fe7b3c67b94a492c20e3676" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool vrv::OptionJson::SetValue</definition>
+        <argsstring>(const std::string &amp;jsonFilePath)</argsstring>
+        <name>SetValue</name>
+        <reimplements refid="classvrv_1_1_option_1a5511c04b24ab1f69c2461db926467904">SetValue</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>jsonFilePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="438" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_option_json_1afb806a1149d89680015d6d18e9e24ccf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::OptionJson::GetIntValue</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;jsonNodePath, bool getDefault=false) const</argsstring>
+        <name>GetIntValue</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>jsonNodePath</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>getDefault</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="441" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_option_json_1a97fdcb0bb957de49ac9d150b724b1381" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double vrv::OptionJson::GetDoubleValue</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;jsonNodePath, bool getDefault=false) const</argsstring>
+        <name>GetDoubleValue</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>jsonNodePath</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>getDefault</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="442" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_option_json_1a4f22e2b79f1e253a43f5d6503f36be0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::OptionJson::UpdateNodeValue</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;jsonNodePath, const std::string &amp;value)</argsstring>
+        <name>UpdateNodeValue</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>jsonNodePath</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="444" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classvrv_1_1_option_json_1a8359351bb326cead846919c16f263298" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>JsonPath</type>
+        <definition>JsonPath vrv::OptionJson::StringPath2NodePath</definition>
+        <argsstring>(const jsonxx::Object &amp;obj, const std::vector&lt; std::string &gt; &amp;jsonNodePath) const</argsstring>
+        <name>StringPath2NodePath</name>
+        <param>
+          <type>const jsonxx::Object &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>jsonNodePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="447" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is for Json input params. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>vrv::Option</label>
+        <link refid="classvrv_1_1_option"/>
+      </node>
+      <node id="1">
+        <label>vrv::OptionJson</label>
+        <link refid="classvrv_1_1_option_json"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>vrv::Option</label>
+        <link refid="classvrv_1_1_option"/>
+      </node>
+      <node id="1">
+        <label>vrv::OptionJson</label>
+        <link refid="classvrv_1_1_option_json"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="429" column="31" bodyfile="/home/runner/work/verovio/verovio/include/vrv/options.h" bodystart="429" bodyend="452"/>
+    <listofallmembers>
+      <member refid="classvrv_1_1_option_1aa155480132189834872910b2d4df408f" prot="public" virt="virtual"><scope>vrv::OptionJson</scope><name>CopyTo</name></member>
+      <member refid="classvrv_1_1_option_1afe87fc615d1acb253514886dacc5ebee" prot="public" virt="virtual"><scope>vrv::OptionJson</scope><name>GetDefaultStrValue</name></member>
+      <member refid="classvrv_1_1_option_1a1153f69ba589862993101d8dfd2f7088" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>GetDescription</name></member>
+      <member refid="classvrv_1_1_option_json_1a97fdcb0bb957de49ac9d150b724b1381" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>GetDoubleValue</name></member>
+      <member refid="classvrv_1_1_option_json_1afb806a1149d89680015d6d18e9e24ccf" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>GetIntValue</name></member>
+      <member refid="classvrv_1_1_option_1a82df76a199d364087a67d8c69402b4d3" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>GetKey</name></member>
+      <member refid="classvrv_1_1_option_1ac8b50b534f9fa37b8514d5faa9f126a1" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>GetShortOption</name></member>
+      <member refid="classvrv_1_1_option_1ae426eb0b0ef7021511e88324dc81dd33" prot="public" virt="virtual"><scope>vrv::OptionJson</scope><name>GetStrValue</name></member>
+      <member refid="classvrv_1_1_option_1a00ea4b5fa5b1167de94e5ea3e2b3c755" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>GetTitle</name></member>
+      <member refid="classvrv_1_1_option_json_1a89c98394002c05e9963e5dc804308c8c" prot="public" virt="virtual"><scope>vrv::OptionJson</scope><name>Init</name></member>
+      <member refid="classvrv_1_1_option_1aa68765042bdfb08c28904a21fb72e48e" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>IsCmdOnly</name></member>
+      <member refid="classvrv_1_1_option_1a06a7eba77f58463cb282ba050803d883" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>IsSet</name></member>
+      <member refid="classvrv_1_1_option_json_1a1f2388458473973b71734faec8f21e81" prot="private" virt="non-virtual"><scope>vrv::OptionJson</scope><name>JsonPath</name></member>
+      <member refid="classvrv_1_1_option_json_1a3b7e45f3900aacd0547aa37e4171e9f8" prot="private" virt="non-virtual"><scope>vrv::OptionJson</scope><name>m_defaultValues</name></member>
+      <member refid="classvrv_1_1_option_1a605929a76631b73d73b83d8ecf6ed101" prot="protected" virt="non-virtual"><scope>vrv::OptionJson</scope><name>m_description</name></member>
+      <member refid="classvrv_1_1_option_1a02579df539cbcb709723e84bf47a2fa0" prot="protected" virt="non-virtual"><scope>vrv::OptionJson</scope><name>m_isSet</name></member>
+      <member refid="classvrv_1_1_option_1a743c22feedd51435c853bc5236bae4d8" prot="protected" virt="non-virtual"><scope>vrv::OptionJson</scope><name>m_title</name></member>
+      <member refid="classvrv_1_1_option_json_1acc6d4ec3d80fe3d3cf71e2c250865a7f" prot="private" virt="non-virtual"><scope>vrv::OptionJson</scope><name>m_values</name></member>
+      <member refid="classvrv_1_1_option_1a1dae6d620174225baaf6e7cfeafdcb54" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>Option</name></member>
+      <member refid="classvrv_1_1_option_json_1aa24d69161382f7a352d6f5f12c7aa8a0" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>OptionJson</name></member>
+      <member refid="classvrv_1_1_option_1a75eb0cf7a34a8bcc36fc56d94623de39" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>s_breaks</name></member>
+      <member refid="classvrv_1_1_option_1a4d407291828d11de042b9b70766f8631" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>s_condense</name></member>
+      <member refid="classvrv_1_1_option_1a1a5698634db18b1326a305bb1c537663" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>s_footer</name></member>
+      <member refid="classvrv_1_1_option_1a84e1f4926014a0a19cef485e84de8794" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>s_header</name></member>
+      <member refid="classvrv_1_1_option_1a695b5b728e773c55486b2cf01fe7723e" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>s_systemDivider</name></member>
+      <member refid="classvrv_1_1_option_1a3ed6996376e9a2710153cb952fbf11dc" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>SetInfo</name></member>
+      <member refid="classvrv_1_1_option_1a5aa21034e52a16467c9f2a2cba1404fb" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>SetKey</name></member>
+      <member refid="classvrv_1_1_option_1a823e50c6b88c0ce63e44f228b3f97dcd" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>SetShortOption</name></member>
+      <member refid="classvrv_1_1_option_json_1a741d4a204fe7b3c67b94a492c20e3676" prot="public" virt="virtual"><scope>vrv::OptionJson</scope><name>SetValue</name></member>
+      <member refid="classvrv_1_1_option_1ad85df9b36f8ea145c77d67c53be1ac06" prot="public" virt="virtual"><scope>vrv::OptionJson</scope><name>SetValueArray</name></member>
+      <member refid="classvrv_1_1_option_1a00ab08b7dc9b8d0c03485f9ae93efd55" prot="public" virt="virtual"><scope>vrv::OptionJson</scope><name>SetValueBool</name></member>
+      <member refid="classvrv_1_1_option_1a9561b1a933969e5b274785d977b75539" prot="public" virt="virtual"><scope>vrv::OptionJson</scope><name>SetValueDbl</name></member>
+      <member refid="classvrv_1_1_option_json_1a8359351bb326cead846919c16f263298" prot="protected" virt="non-virtual"><scope>vrv::OptionJson</scope><name>StringPath2NodePath</name></member>
+      <member refid="classvrv_1_1_option_1a8197df949d810a3f12aac223d8593036" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>ToJson</name></member>
+      <member refid="classvrv_1_1_option_json_1a4f22e2b79f1e253a43f5d6503f36be0d" prot="public" virt="non-virtual"><scope>vrv::OptionJson</scope><name>UpdateNodeValue</name></member>
+      <member refid="classvrv_1_1_option_1a95a1b144e58be8c1174c7a03a8198402" prot="public" virt="virtual"><scope>vrv::OptionJson</scope><name>~Option</name></member>
+      <member refid="classvrv_1_1_option_json_1a62b72c3fda56b2afae608565d54b333a" prot="public" virt="virtual"><scope>vrv::OptionJson</scope><name>~OptionJson</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

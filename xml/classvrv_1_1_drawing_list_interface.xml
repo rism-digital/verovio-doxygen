@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classvrv_1_1_drawing_list_interface" kind="class" language="C++" prot="public">
+    <compoundname>vrv::DrawingListInterface</compoundname>
+    <derivedcompoundref refid="classvrv_1_1_chord" prot="public" virt="non-virtual">vrv::Chord</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_layer" prot="public" virt="non-virtual">vrv::Layer</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_system" prot="public" virt="non-virtual">vrv::System</derivedcompoundref>
+    <includes refid="drawinginterface_8h" local="no">drawinginterface.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Constructors, destructors, reset methods</header>
+      <description><para>Reset method reset all attribute classes </para>
+</description>
+      <memberdef kind="function" id="classvrv_1_1_drawing_list_interface_1a33795e2af86cbbe66f71c10266e81b2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vrv::DrawingListInterface::DrawingListInterface</definition>
+        <argsstring>()</argsstring>
+        <name>DrawingListInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="38" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_drawing_list_interface_1a92cab20a8ca65a588e6acd0facca43c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual vrv::DrawingListInterface::~DrawingListInterface</definition>
+        <argsstring>()</argsstring>
+        <name>~DrawingListInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="39" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_drawing_list_interface_1a1a69c8d2fecf12f6b22f2544e0312298" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void vrv::DrawingListInterface::Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <reimplementedby refid="classvrv_1_1_system_1a0204eb6fce138e7edbaef95ae3c707b1">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_layer_1a3041f812957ab5e179668e832b86746e">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_chord_1a37534ad2cdc258e0b41df2f96ec115df">Reset</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="40" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvrv_1_1_drawing_list_interface_1a20ea943a21971a0b45f024a604adec57" prot="private" static="no" mutable="no">
+        <type>ArrayOfObjects</type>
+        <definition>ArrayOfObjects vrv::DrawingListInterface::m_drawingList</definition>
+        <argsstring></argsstring>
+        <name>m_drawingList</name>
+        <briefdescription>
+<para>The list of object for which drawing is postponed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="69" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvrv_1_1_drawing_list_interface_1a1d255ea3d329ebbd6d7cd32fbe88646d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::DrawingListInterface::AddToDrawingList</definition>
+        <argsstring>(Object *element)</argsstring>
+        <name>AddToDrawingList</name>
+        <param>
+          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classvrv_1_1_add" kindref="compound">Add</ref> an element to the drawing list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The drawing list is used to postponed the drawing of elements that need to be drawn in a particular order. For example, we need to draw beams before tuplets </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="49" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_drawing_list_interface_1acffbc6780719ad0f0342be03a3aa2a3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ArrayOfObjects *</type>
+        <definition>ArrayOfObjects* vrv::DrawingListInterface::GetDrawingList</definition>
+        <argsstring>()</argsstring>
+        <name>GetDrawingList</name>
+        <briefdescription>
+<para>Return the drawing list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is used when actually drawing the list (see View::DrawLayerList) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="55" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_drawing_list_interface_1a4b20a831da972d0a05fa42be7c6eb5e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::DrawingListInterface::ResetDrawingList</definition>
+        <argsstring>()</argsstring>
+        <name>ResetDrawingList</name>
+        <briefdescription>
+<para>Reset the drawing list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clears the list - called when the layer starts to be drawn </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="61" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is an interface for elements with duration, such as notes and rests. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It is not an abstract class but should not be instantiate directly. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>vrv::System</label>
+        <link refid="classvrv_1_1_system"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vrv::Layer</label>
+        <link refid="classvrv_1_1_layer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vrv::DrawingListInterface</label>
+        <link refid="classvrv_1_1_drawing_list_interface"/>
+      </node>
+      <node id="2">
+        <label>vrv::Chord</label>
+        <link refid="classvrv_1_1_chord"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="31" column="27" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="31" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classvrv_1_1_drawing_list_interface_1a1d255ea3d329ebbd6d7cd32fbe88646d" prot="public" virt="non-virtual"><scope>vrv::DrawingListInterface</scope><name>AddToDrawingList</name></member>
+      <member refid="classvrv_1_1_drawing_list_interface_1a33795e2af86cbbe66f71c10266e81b2a" prot="public" virt="non-virtual"><scope>vrv::DrawingListInterface</scope><name>DrawingListInterface</name></member>
+      <member refid="classvrv_1_1_drawing_list_interface_1acffbc6780719ad0f0342be03a3aa2a3e" prot="public" virt="non-virtual"><scope>vrv::DrawingListInterface</scope><name>GetDrawingList</name></member>
+      <member refid="classvrv_1_1_drawing_list_interface_1a20ea943a21971a0b45f024a604adec57" prot="private" virt="non-virtual"><scope>vrv::DrawingListInterface</scope><name>m_drawingList</name></member>
+      <member refid="classvrv_1_1_drawing_list_interface_1a1a69c8d2fecf12f6b22f2544e0312298" prot="public" virt="virtual"><scope>vrv::DrawingListInterface</scope><name>Reset</name></member>
+      <member refid="classvrv_1_1_drawing_list_interface_1a4b20a831da972d0a05fa42be7c6eb5e9" prot="public" virt="non-virtual"><scope>vrv::DrawingListInterface</scope><name>ResetDrawingList</name></member>
+      <member refid="classvrv_1_1_drawing_list_interface_1a92cab20a8ca65a588e6acd0facca43c9" prot="public" virt="virtual"><scope>vrv::DrawingListInterface</scope><name>~DrawingListInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
