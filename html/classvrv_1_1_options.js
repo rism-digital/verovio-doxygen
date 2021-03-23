@@ -102,6 +102,7 @@ var classvrv_1_1_options =
     [ "m_pageMarginRight", "classvrv_1_1_options.html#ace8a3086225d681fd7a5c318ead60c77", null ],
     [ "m_pageMarginTop", "classvrv_1_1_options.html#a90c8856d6cd154decfc1688f16f406fd", null ],
     [ "m_pageWidth", "classvrv_1_1_options.html#aca00327cd576517798da97a3b19a7620", null ],
+    [ "m_preserveAnalyticalMarkup", "classvrv_1_1_options.html#a68f639357c0a5e439e81bad3a2e07f09", null ],
     [ "m_removeIds", "classvrv_1_1_options.html#a90c42c497b2adcd4486a8db5f8a3dc8b", null ],
     [ "m_repeatBarLineDotSeparation", "classvrv_1_1_options.html#aa7802ef2ba975cf0081f9f4a89126106", null ],
     [ "m_repeatEndingLineThickness", "classvrv_1_1_options.html#abebf9a2faa7f8d20eb04122e92340a4e", null ],
