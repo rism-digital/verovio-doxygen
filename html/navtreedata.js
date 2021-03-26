@@ -23,6 +23,7 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Verovio", "index.html", [
+    [ "Modules", "modules.html", "modules" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -61,9 +62,9 @@ var NAVTREEINDEX =
 "classvrv_1_1_score_def_element.html",
 "classvrv_1_1_staff_def_drawing_interface.html#aaac1940882febdca988dd88db5b40ce7",
 "classvrv_1_1_system_aligner.html#a024f36eb64e0d6adf31217b55ba72b8ea7d55ac077f11ad55a67924103d450612",
-"classvrv_1_1_transposer.html#a01d58ae9abbaced361f5cdb4f6cf9e90",
-"classvrv_1_1_view.html#a673da3b81291694b9cc4c54fa48fa993",
-"functions_enum.html"
+"classvrv_1_1_transposer.html#a2e6152a878b3f63a41213e9b7e350c2d",
+"classvrv_1_1_view.html#a7108efe1ff4dad378c59801a7502fedf",
+"functions_func_h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
