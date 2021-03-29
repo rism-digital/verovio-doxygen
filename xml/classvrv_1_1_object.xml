@@ -5,6 +5,7 @@
     <basecompoundref refid="classvrv_1_1_bounding_box" prot="public" virt="non-virtual">vrv::BoundingBox</basecompoundref>
     <derivedcompoundref refid="classvrv_1_1_alignment" prot="public" virt="non-virtual">vrv::Alignment</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_alignment_reference" prot="public" virt="non-virtual">vrv::AlignmentReference</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_course" prot="public" virt="non-virtual">vrv::Course</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_doc" prot="public" virt="non-virtual">vrv::Doc</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_editorial_element" prot="public" virt="non-virtual">vrv::EditorialElement</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_facsimile" prot="public" virt="non-virtual">vrv::Facsimile</derivedcompoundref>
@@ -33,6 +34,7 @@
     <derivedcompoundref refid="classvrv_1_1_system_aligner" prot="public" virt="non-virtual">vrv::SystemAligner</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_text_element" prot="public" virt="non-virtual">vrv::TextElement</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_timestamp_aligner" prot="public" virt="non-virtual">vrv::TimestampAligner</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_tuning" prot="public" virt="non-virtual">vrv::Tuning</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_zone" prot="public" virt="non-virtual">vrv::Zone</derivedcompoundref>
     <includes refid="object_8h" local="no">object.h</includes>
       <sectiondef kind="user-defined">
@@ -115,19 +117,24 @@
         <reimplementedby refid="classvrv_1_1_choice_1a9f75ad8d16485cbc86930d5ab2898370">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_artic_1a4714c7d0a8b6739daa5a84352e953206">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_text_element_1a3a8b1ead506de9c2493014afb156b8dd">GetClassId</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tab_rhythm_1aa091c3c9f5927612a61a73f74897721b">GetClassId</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tab_grp_1add808f85d3f7afa207e372d9fba64470">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_m_space_1a408a039a39dde604139de50be00e8475">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_dot_1a1bafb9e6824ae5082f44834ad5a15865">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_verse_1a59896421a993ca60e2b16ff90ffbe865">GetClassId</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tuning_1ac86abdf57336783d98d879ec7ae16872">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_text_1ae3d2b960fc32ccf357ff653622d67c40">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_subst_1a4fa4ccf4f69e890ac07ebe24370dbce1">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_space_1a1065cb6514ee3ee7af1708bbda481d73">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_ref_1a52661c180f1152d996626f0705eaae6c">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_proport_1a37fe66566439442473c3b040ccd7d069">GetClassId</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_pitch_inflection_1ae003d066ed128651d12ba15edad39620">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_lb_1afee7361c659366b2024f040a5cbe26da">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_label_abbr_1aeb1e461db679b89e25d6bdbfbe468d94">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_label_1a84e3b6af4a66b19dfeabbd9b69440b29">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_fig_1a2f5f1ed47213a582e9e917eac950ac58">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_fb_1ac7cac97a272bd4c0166ab9b43dec7fda">GetClassId</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_course_1a32efc530e079dd01f07eb507850da100">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_b_trem_1a40e3dcb4eb672a7aaf44176abe76e63b">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_system_element_1a758e163364a8e1db9cd11974a079eb22">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_sb_1a58e18defc2d478bc7f33f08980ecde8b">GetClassId</reimplementedby>
@@ -196,9 +203,9 @@
         <reimplementedby refid="classvrv_1_1_mensur_1aa87d905b4a48a9d56e3a409113a5a2b3">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_accid_1a3689c1fdcdb79936f916165090337084">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_staff_def_1adce6d45d600288f618295a80674cb19c">GetClassId</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_staff_1a45ab1dbee2599d16bbdd1184e6f499ff">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_key_sig_1ac721f136d36dae83f351d24e36895519">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_syl_1a10371013889039451c45b6240282ba30">GetClassId</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_staff_1a45ab1dbee2599d16bbdd1184e6f499ff">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_editorial_element_1a0167c3d81c50f835b90a102ac396c228">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_doc_1ab032fe3514cf8bb156c066687e3550c2">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_layer_1a193dde1fba281d43e464b4ff44b349b7">GetClassId</reimplementedby>
@@ -263,19 +270,24 @@
         <reimplementedby refid="classvrv_1_1_choice_1a568317d32339905a334d9350370dabf6">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_artic_1ac993bfadffd73b30fe6b372399d2d352">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_text_element_1a1a3cc5bfb13626f97cfacdb5fd9f90e1">GetClassName</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tab_rhythm_1a4f4fc34cf5373571cfb0cd011b311578">GetClassName</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tab_grp_1a24fb5b2a70b3181293dd6f01125dd2b2">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_m_space_1a39574eb7ac95055d5dd5b43406ad9793">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_dot_1aabcde78742af726ff904103de75fc789">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_verse_1a37836f552f298a3b22d8614b4386ad4e">GetClassName</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tuning_1a1532038385cc69a393312f775092b481">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_text_1aa53a047f37b8ecde1f1052c298c5cd77">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_subst_1a216c07d734446aa5ae9eab9a52f2c415">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_space_1a4c0e4916fb72394771df7fc03ffd4272">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_ref_1ad46a51726bdc61bf07cff7719cd62705">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_proport_1ab4db17374e6da8cd875e66fafecbbdc2">GetClassName</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_pitch_inflection_1a2587cc1860959894a6fc61fe1b819c1c">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_lb_1ad678650e3538ee3cf291ebfa83d0f752">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_label_abbr_1a4e84b467d510e2a3a1dc8218a9ae290a">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_label_1a0a6f2745b291b7b579f333cf50ba1038">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_fig_1a2fe2ec897e18642d0844b4d8a7c9758d">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_fb_1ad4099ad8fe48d6e7c5377c305d5d5eb8">GetClassName</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_course_1a8dcf681960de13564e779d99f1037766">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_b_trem_1a734f71d5b174eb977b17e3829406173a">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_sb_1a28c3b2f4003c0a24e9526767aa2b3948">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_pb_1adf3ce979bc817d3ea3e8615f75586a67">GetClassName</reimplementedby>
@@ -337,9 +349,9 @@
         <reimplementedby refid="classvrv_1_1_mensur_1a1e84a5086829f087234f1911f9cdb9fb">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_accid_1a818f5a0b5822e8231f33898bce3f07ac">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_staff_def_1ae0013f0e223f9e450295fa96f1f6ad62">GetClassName</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_staff_1a80895a7014216eebfbe9d25887f5f256">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_key_sig_1a02524e3562b11cd590f785d9e957143f">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_syl_1a7438acbc222b7cf550e1cc791c123af2">GetClassName</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_staff_1a80895a7014216eebfbe9d25887f5f256">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_layer_1a7902af1e7f1494c546bc11afb6be5766">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_nc_1a8df2aea4fe02fd6c3abb8fa7451ca3e1">GetClassName</reimplementedby>
         <reimplementedby refid="classvrv_1_1_rest_1a4bf613cd46cb142f95c45c4312b1d682">GetClassName</reimplementedby>
@@ -1356,8 +1368,8 @@
         <reimplementedby refid="classvrv_1_1_tuplet_bracket_1a41915a43a5710c574e62d990b5336c79">ResetHorizontalAlignment</reimplementedby>
         <reimplementedby refid="classvrv_1_1_layer_element_1ad80313afbd3e9a3d22a320cfbc6b5685">ResetHorizontalAlignment</reimplementedby>
         <reimplementedby refid="classvrv_1_1_measure_1a13da1440d609e772eb651bf169802999">ResetHorizontalAlignment</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_note_1a57ed94630df5769cc71b832f6ea5522b">ResetHorizontalAlignment</reimplementedby>
         <reimplementedby refid="classvrv_1_1_tuplet_num_1a1b8777b182073961ae82249c0c464a65">ResetHorizontalAlignment</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_note_1a57ed94630df5769cc71b832f6ea5522b">ResetHorizontalAlignment</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
         </param>
@@ -2802,6 +2814,7 @@
         <definition>virtual DurationInterface* vrv::Object::GetDurationInterface</definition>
         <argsstring>()</argsstring>
         <name>GetDurationInterface</name>
+        <reimplementedby refid="classvrv_1_1_tab_grp_1a9d5017d1c3211087f6017c9a8964d8db">GetDurationInterface</reimplementedby>
         <reimplementedby refid="classvrv_1_1_space_1ad232f9f5d449c4cf556bb60a3051b595">GetDurationInterface</reimplementedby>
         <reimplementedby refid="classvrv_1_1_nc_1af8c719d56e68346254e026d7e7eba4ac">GetDurationInterface</reimplementedby>
         <reimplementedby refid="classvrv_1_1_chord_1a17e0bd6b6cb3c44f3b904958634aed83">GetDurationInterface</reimplementedby>
@@ -2949,6 +2962,7 @@
         <definition>virtual TimePointInterface* vrv::Object::GetTimePointInterface</definition>
         <argsstring>()</argsstring>
         <name>GetTimePointInterface</name>
+        <reimplementedby refid="classvrv_1_1_pitch_inflection_1a98a021b70fb6367a6f8af8de8107174e">GetTimePointInterface</reimplementedby>
         <reimplementedby refid="classvrv_1_1_f_1ab73341e44e8bc2cb2cbdbcc696dc7518">GetTimePointInterface</reimplementedby>
         <reimplementedby refid="classvrv_1_1_breath_1a55cf6006bbbc7b4a95540ccedf57ec1a">GetTimePointInterface</reimplementedby>
         <reimplementedby refid="classvrv_1_1_slur_1ae637e2e59d5e7cb88fb96e6dce4c1baf">GetTimePointInterface</reimplementedby>
@@ -2984,6 +2998,7 @@
         <definition>virtual TimeSpanningInterface* vrv::Object::GetTimeSpanningInterface</definition>
         <argsstring>()</argsstring>
         <name>GetTimeSpanningInterface</name>
+        <reimplementedby refid="classvrv_1_1_pitch_inflection_1aba4dd5050bd1a6e800b86b987684089c">GetTimeSpanningInterface</reimplementedby>
         <reimplementedby refid="classvrv_1_1_f_1a13ebf084cd43c63c6f8b4dbbe3f3ac70">GetTimeSpanningInterface</reimplementedby>
         <reimplementedby refid="classvrv_1_1_slur_1aa77005731f1ab5666433f1a2ee4b8c9f">GetTimeSpanningInterface</reimplementedby>
         <reimplementedby refid="classvrv_1_1_gliss_1a334ee4ba68662836443fddb38f951de6">GetTimeSpanningInterface</reimplementedby>
@@ -3037,19 +3052,24 @@
         <reimplementedby refid="classvrv_1_1_choice_1ae7d8c67af83a44e01ac8d16512314ac6">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_artic_1a111b2fe726683343b7edc43ec7730919">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_text_element_1a8ac1eec61d858d477357d64e0b6f1338">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tab_rhythm_1a4409c4d8cc37302e70268147ffed72c7">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tab_grp_1aec861a67a88f0ea1f0f1333b36da40ba">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_m_space_1aabc8c405d293b80fffc2f8ae5ef90ac8">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_dot_1a573879ea0cb5a2aa550fb99faf7f0a52">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_verse_1a274a32008d98d318d126e70dd812948b">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tuning_1a29b79b7dfe19da7b6b46c5f558a35942">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_text_1a0f10976c135be6c5b73c2f6eecd8a4c3">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_subst_1ad62d527419deffbc48b2d5fd6556e1ca">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_space_1a480f2a5a33f8256c0c088b2e9846cd62">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_ref_1aa4ac1349f6a13087f34081516dfefb11">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_proport_1abe080e5bc139c410e93ffb36e244a01c">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_pitch_inflection_1a52f617af981b4bbfa15bf096ff83162e">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_lb_1ad2cd52c48685373de02fd93c1bb24a7a">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_label_abbr_1ac29dcd911aff05bca4e15facd49a7235">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_label_1a5538e9b2ac0780674ca00937db718501">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_fig_1a883e1b825c5f0c33daedd4f52ee0f80e">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_fb_1aa0de47ab5710dd1074ea1b6c89240c88">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_course_1a097d015db1764fb9f652417a119c6b97">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_b_trem_1a8c7cd9ab4c8b07e187f72e4036e8c517">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_sb_1a551be1cf0301942047b57576508f1134">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_pb_1a7826c28da54c675a9e504fc6b223c5e8">Reset</reimplementedby>
@@ -3117,9 +3137,9 @@
         <reimplementedby refid="classvrv_1_1_mensur_1a2a4d0f5eb80e43876dfa8ab61edc8ad3">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_accid_1a77f0229943afc71686a9a5ad48866ab6">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_staff_def_1a9ad4b6e622c59afd708421d253ffd21d">Reset</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_staff_1aaf72035d9ae4ae883541f3c4e7eab9ad">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_key_sig_1a5d508aa999353ab19a1bb00e5aa4a356">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_syl_1ad8421ee7c48a1a2810a40cd268613400">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_staff_1aaf72035d9ae4ae883541f3c4e7eab9ad">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_layer_1a3041f812957ab5e179668e832b86746e">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_editorial_element_1abd7e8631e1dd27b74faf50fa278d0a11">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_nc_1a39e89152fddafecfe0327be2f7a2535b">Reset</reimplementedby>
@@ -3307,16 +3327,19 @@
         <reimplementedby refid="classvrv_1_1_m_space_1a20fe56d8916bf3ef25543c214b4ab587">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_dot_1aa510618130fc68c247e44cd5ac9be1b1">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_verse_1a4d1595e500c8141c72e001dd43e7e1a7">Clone</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tuning_1a5e8e6b6ac8de0b443533f55942559600">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_text_1aa7e711c41836402f619f5fba0e45402d">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_subst_1a10ae14cea7284306a07f353ca648be0c">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_space_1a7d54a6eeca3904f4a31790227e5a2346">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_ref_1aeff0a5ff7af8e49470e2d219b67623cb">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_proport_1a5655e9edaba74e66bbba0da1a8b9e3c5">Clone</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_pitch_inflection_1aeca09c2567b4c883253f417c83fef8fc">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_lb_1af4312caadbf5dbd104dd587d2f698675">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_label_abbr_1af14a6b9f5f1ab6a04b72892ef8092bb8">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_label_1a5115492c0f37bd5545a0eeab1b45c1ae">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_fig_1a3c8263a6c7c2ac8239f71c4be526192a">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_fb_1a567b375cee8004f13b44e02bbeb7a00d">Clone</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_course_1a02cc7676b68251fdd8dd834723d17851">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_b_trem_1ae923c2ba91fa1b81e5600d46069b670b">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_sb_1aaa03bd2fa2230cd5149bf6cf4db0f93e">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_pb_1aa361938fda6df1b4e420572a8a6e84a3">Clone</reimplementedby>
@@ -3373,17 +3396,17 @@
         <reimplementedby refid="classvrv_1_1_mensur_1a879317e2ac917dbd0829549dc10a4f1e">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_accid_1a93a65794738d7589660518832e5d22bc">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_staff_def_1a1fe5138bb30bad885747a679f7257dcd">Clone</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_staff_1a49f589ba0558922e1a2e0e9c22b172ac">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_key_sig_1a4603d05b2d150b965de3593467370aa3">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_syl_1a5e69117c04b4db86874de66f0c5d8270">Clone</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_staff_1a49f589ba0558922e1a2e0e9c22b172ac">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_running_element_1a04ba4d5006ebb734329b199bed29dfba">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_layer_1ad6961cffad65b4347639a7bf93d5e409">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_nc_1ad2f34a9457fcd8d4c4c46b142fba0bf2">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_rest_1a7993997c921837a240f3e04f4fd7d7f6">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_measure_1ab0185d809c59283051da9becf63e5d66">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_chord_1a07f9f5a3d2722d9ae7cca4b40722232e">Clone</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_note_1a4fac2b9a8fb11c0b9b5764535eafd777">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_neume_1a89401dde8ddf84d0931a4eeddcc96428">Clone</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_note_1a4fac2b9a8fb11c0b9b5764535eafd777">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_bar_line_attr_1a8ef81ad6367eae8c94f72512be252f7d">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_score_def_1abe767118fd157ab3c3760a8f17beb52f">Clone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_beam_1aefb179940f5416e7be8297c6869643e5">Clone</reimplementedby>
@@ -3763,6 +3786,8 @@
         <argsstring>(Object *object)</argsstring>
         <name>IsSupportedChild</name>
         <reimplementedby refid="classvrv_1_1_grace_grp_1af946a640bdcdfb4566087e081856d434">IsSupportedChild</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tuning_1aeeca4fc5e9b04f51e5b2b13318a18ed6">IsSupportedChild</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_course_1aa5fc5c82b71784c7ad3f883ea03ab5b8">IsSupportedChild</reimplementedby>
         <reimplementedby refid="classvrv_1_1_app_1a3fafd4a8815ac21942ea4497900dc125">IsSupportedChild</reimplementedby>
         <reimplementedby refid="classvrv_1_1_verse_1af9058fe62a08ee9f21386980ad5ceeba">IsSupportedChild</reimplementedby>
         <reimplementedby refid="classvrv_1_1_surface_1a38bb199abab97cea1cb2561ff2f78613">IsSupportedChild</reimplementedby>
@@ -3772,6 +3797,7 @@
         <reimplementedby refid="classvrv_1_1_fb_1a06248a241f24c2557aeb222d908e752a">IsSupportedChild</reimplementedby>
         <reimplementedby refid="classvrv_1_1_choice_1a9858d8c40d863a944a4d6c4bcade08bb">IsSupportedChild</reimplementedby>
         <reimplementedby refid="classvrv_1_1_b_trem_1a4dc0461f664a02b7205dd777f209213b">IsSupportedChild</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tab_rhythm_1aa325a9a51ee2a484cf9f5d20779cf92d">IsSupportedChild</reimplementedby>
         <reimplementedby refid="classvrv_1_1_mdiv_1a8a4814991a589decdb5af38d6d07f556">IsSupportedChild</reimplementedby>
         <reimplementedby refid="classvrv_1_1_annot_1a76ea8b351c8d1bdf06eb4b83221ed5f2">IsSupportedChild</reimplementedby>
         <reimplementedby refid="classvrv_1_1_subst_1ab67dc54048f21a4fe3c213f949e60261">IsSupportedChild</reimplementedby>
@@ -3782,6 +3808,7 @@
         <reimplementedby refid="classvrv_1_1_section_1a707be137fa9c0cd02c44e0290005445a">IsSupportedChild</reimplementedby>
         <reimplementedby refid="classvrv_1_1_facsimile_1a5bd29155581104e4788affef991f5931">IsSupportedChild</reimplementedby>
         <reimplementedby refid="classvrv_1_1_ending_1a97d92533b4c47e3fbc6e403c286a854b">IsSupportedChild</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tab_grp_1a691512c1f016a420dc55e8783772ddb5">IsSupportedChild</reimplementedby>
         <reimplementedby refid="classvrv_1_1_tuplet_1aec8524e5296e4c15954974723cb2de87">IsSupportedChild</reimplementedby>
         <reimplementedby refid="classvrv_1_1_page_1ad3d4ee3e1674476c6c110fc4a80aad4d">IsSupportedChild</reimplementedby>
         <reimplementedby refid="classvrv_1_1_ligature_1ad2e92ac5e2a2ec5a59d4cf534fe4fa28">IsSupportedChild</reimplementedby>
@@ -5589,205 +5616,211 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="67">
+      <node id="69">
         <label>vrv::LayerElement</label>
         <link refid="classvrv_1_1_layer_element"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5">
+      <node id="6">
         <label>vrv::Doc</label>
         <link refid="classvrv_1_1_doc"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12">
+      <node id="13">
         <label>vrv::Corr</label>
         <link refid="classvrv_1_1_corr"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="47">
+      <node id="49">
         <label>vrv::Phrase</label>
         <link refid="classvrv_1_1_phrase"/>
-        <childnode refid="46" relation="public-inheritance">
+        <childnode refid="48" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="61">
+      <node id="63">
         <label>vrv::GraceAligner</label>
         <link refid="classvrv_1_1_grace_aligner"/>
-        <childnode refid="60" relation="public-inheritance">
+        <childnode refid="62" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6">
+      <node id="7">
         <label>vrv::EditorialElement</label>
         <link refid="classvrv_1_1_editorial_element"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="44">
+      <node id="45">
         <label>vrv::Pedal</label>
         <link refid="classvrv_1_1_pedal"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="98">
+      <node id="100">
         <label>vrv::Plica</label>
         <link refid="classvrv_1_1_plica"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="78">
+      <node id="80">
         <label>vrv::Dot</label>
         <link refid="classvrv_1_1_dot"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="128">
+      <node id="132">
         <label>vrv::System</label>
         <link refid="classvrv_1_1_system"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="120">
+      <node id="124">
         <label>vrv::ScoreDefElement</label>
         <link refid="classvrv_1_1_score_def_element"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="48">
+      <node id="50">
         <label>vrv::Tempo</label>
         <link refid="classvrv_1_1_tempo"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="76">
+      <node id="78">
         <label>vrv::Clef</label>
         <link refid="classvrv_1_1_clef"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="43">
+      <node id="44">
         <label>vrv::Octave</label>
         <link refid="classvrv_1_1_octave"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="80">
+      <node id="82">
         <label>vrv::Flag</label>
         <link refid="classvrv_1_1_flag"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="34">
+      <node id="35">
         <label>vrv::Dir</label>
         <link refid="classvrv_1_1_dir"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="107">
+      <node id="111">
         <label>vrv::TupletBracket</label>
         <link refid="classvrv_1_1_tuplet_bracket"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="28">
+      <node id="29">
         <label>vrv::FloatingObject</label>
         <link refid="classvrv_1_1_floating_object"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="89">
+      <node id="91">
         <label>vrv::MRest</label>
         <link refid="classvrv_1_1_m_rest"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="111">
+      <node id="115">
         <label>vrv::Measure</label>
         <link refid="classvrv_1_1_measure"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="129">
+      <node id="5">
+        <label>vrv::Course</label>
+        <link refid="classvrv_1_1_course"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="133">
         <label>vrv::SystemAligner</label>
         <link refid="classvrv_1_1_system_aligner"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15">
+      <node id="16">
         <label>vrv::Expan</label>
         <link refid="classvrv_1_1_expan"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="132">
+      <node id="136">
         <label>vrv::Fig</label>
         <link refid="classvrv_1_1_fig"/>
-        <childnode refid="130" relation="public-inheritance">
+        <childnode refid="134" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="123">
+      <node id="127">
         <label>vrv::Staff</label>
         <link refid="classvrv_1_1_staff"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="135">
+      <node id="139">
         <label>vrv::Rend</label>
         <link refid="classvrv_1_1_rend"/>
-        <childnode refid="130" relation="public-inheritance">
+        <childnode refid="134" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="74">
+      <node id="76">
         <label>vrv::BTrem</label>
         <link refid="classvrv_1_1_b_trem"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="40">
+      <node id="41">
         <label>vrv::Harm</label>
         <link refid="classvrv_1_1_harm"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="105">
+      <node id="109">
         <label>vrv::TimestampAttr</label>
         <link refid="classvrv_1_1_timestamp_attr"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="119">
+      <node id="123">
         <label>vrv::Score</label>
         <link refid="classvrv_1_1_score"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="77">
+      <node id="79">
         <label>vrv::Custos</label>
         <link refid="classvrv_1_1_custos"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="60">
+      <node id="62">
         <label>vrv::HorizontalAligner</label>
         <link refid="classvrv_1_1_horizontal_aligner"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11">
+      <node id="12">
         <label>vrv::Choice</label>
         <link refid="classvrv_1_1_choice"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="82">
+      <node id="84">
         <label>vrv::GraceGrp</label>
         <link refid="classvrv_1_1_grace_grp"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="138">
+      <node id="143">
         <label>vrv::Zone</label>
         <link refid="classvrv_1_1_zone"/>
         <childnode refid="1" relation="public-inheritance">
@@ -5797,424 +5830,436 @@
         <label>vrv::BoundingBox</label>
         <link refid="classvrv_1_1_bounding_box"/>
       </node>
-      <node id="58">
+      <node id="60">
         <label>vrv::Section</label>
         <link refid="classvrv_1_1_section"/>
-        <childnode refid="52" relation="public-inheritance">
+        <childnode refid="54" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="38">
+      <node id="39">
         <label>vrv::Gliss</label>
         <link refid="classvrv_1_1_gliss"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="109">
+      <node id="113">
         <label>vrv::Verse</label>
         <link refid="classvrv_1_1_verse"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="85">
+      <node id="87">
         <label>vrv::KeySig</label>
         <link refid="classvrv_1_1_key_sig"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="71">
+      <node id="73">
         <label>vrv::BarLineAttr</label>
         <link refid="classvrv_1_1_bar_line_attr"/>
-        <childnode refid="70" relation="public-inheritance">
+        <childnode refid="72" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="130">
+      <node id="134">
         <label>vrv::TextElement</label>
         <link refid="classvrv_1_1_text_element"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="51">
+      <node id="53">
         <label>vrv::Turn</label>
         <link refid="classvrv_1_1_turn"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="59">
+      <node id="61">
         <label>vrv::GrpSym</label>
         <link refid="classvrv_1_1_grp_sym"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="115">
+      <node id="119">
         <label>vrv::PgFoot</label>
         <link refid="classvrv_1_1_pg_foot"/>
-        <childnode refid="114" relation="public-inheritance">
+        <childnode refid="118" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10">
+      <node id="11">
         <label>vrv::App</label>
         <link refid="classvrv_1_1_app"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="55">
+      <node id="57">
         <label>vrv::Expansion</label>
         <link refid="classvrv_1_1_expansion"/>
-        <childnode refid="52" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="19">
-        <label>vrv::Ref</label>
-        <link refid="classvrv_1_1_ref"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="54" relation="public-inheritance">
         </childnode>
       </node>
       <node id="20">
-        <label>vrv::Reg</label>
-        <link refid="classvrv_1_1_reg"/>
-        <childnode refid="6" relation="public-inheritance">
+        <label>vrv::Ref</label>
+        <link refid="classvrv_1_1_ref"/>
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="45">
+      <node id="21">
+        <label>vrv::Reg</label>
+        <link refid="classvrv_1_1_reg"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
         <label>vrv::Reh</label>
         <link refid="classvrv_1_1_reh"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>vrv::MeterSig</label>
+        <link refid="classvrv_1_1_meter_sig"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>vrv::Fermata</label>
+        <link refid="classvrv_1_1_fermata"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>vrv::HalfmRpt</label>
+        <link refid="classvrv_1_1_halfm_rpt"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>vrv::Rdg</label>
+        <link refid="classvrv_1_1_rdg"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>vrv::PgFoot2</label>
+        <link refid="classvrv_1_1_pg_foot2"/>
+        <childnode refid="118" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>vrv::Space</label>
+        <link refid="classvrv_1_1_space"/>
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
       <node id="88">
-        <label>vrv::MeterSig</label>
-        <link refid="classvrv_1_1_meter_sig"/>
-        <childnode refid="67" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="36">
-        <label>vrv::Fermata</label>
-        <link refid="classvrv_1_1_fermata"/>
-        <childnode refid="29" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="83">
-        <label>vrv::HalfmRpt</label>
-        <link refid="classvrv_1_1_halfm_rpt"/>
-        <childnode refid="67" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="18">
-        <label>vrv::Rdg</label>
-        <link refid="classvrv_1_1_rdg"/>
-        <childnode refid="6" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="116">
-        <label>vrv::PgFoot2</label>
-        <link refid="classvrv_1_1_pg_foot2"/>
-        <childnode refid="114" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="101">
-        <label>vrv::Space</label>
-        <link refid="classvrv_1_1_space"/>
-        <childnode refid="67" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="86">
         <label>vrv::Ligature</label>
         <link refid="classvrv_1_1_ligature"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="30">
+      <node id="31">
         <label>vrv::AnchoredText</label>
         <link refid="classvrv_1_1_anchored_text"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="108">
+      <node id="112">
         <label>vrv::TupletNum</label>
         <link refid="classvrv_1_1_tuplet_num"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="33">
+      <node id="34">
         <label>vrv::Breath</label>
         <link refid="classvrv_1_1_breath"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="118">
+      <node id="122">
         <label>vrv::PgHead2</label>
         <link refid="classvrv_1_1_pg_head2"/>
-        <childnode refid="114" relation="public-inheritance">
+        <childnode refid="118" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="42">
+      <node id="43">
         <label>vrv::Mordent</label>
         <link refid="classvrv_1_1_mordent"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="97">
+      <node id="99">
         <label>vrv::Note</label>
         <link refid="classvrv_1_1_note"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="113">
+      <node id="117">
         <label>vrv::Pages</label>
         <link refid="classvrv_1_1_pages"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="64">
+      <node id="66">
         <label>vrv::Label</label>
         <link refid="classvrv_1_1_label"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="66">
+      <node id="68">
         <label>vrv::Layer</label>
         <link refid="classvrv_1_1_layer"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="50">
+      <node id="52">
         <label>vrv::Trill</label>
         <link refid="classvrv_1_1_trill"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="136">
+      <node id="140">
         <label>vrv::Text</label>
         <link refid="classvrv_1_1_text"/>
-        <childnode refid="130" relation="public-inheritance">
+        <childnode refid="134" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="65">
+      <node id="67">
         <label>vrv::LabelAbbr</label>
         <link refid="classvrv_1_1_label_abbr"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8">
+      <node id="9">
         <label>vrv::Add</label>
         <link refid="classvrv_1_1_add"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="70">
+      <node id="72">
         <label>vrv::BarLine</label>
         <link refid="classvrv_1_1_bar_line"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="99">
+      <node id="101">
         <label>vrv::Proport</label>
         <link refid="classvrv_1_1_proport"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="27">
+      <node id="28">
         <label>vrv::Fb</label>
         <link refid="classvrv_1_1_fb"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13">
+      <node id="14">
         <label>vrv::Damage</label>
         <link refid="classvrv_1_1_damage"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="100">
+      <node id="102">
         <label>vrv::Rest</label>
         <link refid="classvrv_1_1_rest"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="126">
+      <node id="130">
         <label>vrv::Surface</label>
         <link refid="classvrv_1_1_surface"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="131">
+      <node id="135">
         <label>vrv::F</label>
         <link refid="classvrv_1_1_f"/>
-        <childnode refid="130" relation="public-inheritance">
+        <childnode refid="134" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="91">
+      <node id="93">
         <label>vrv::MRpt2</label>
         <link refid="classvrv_1_1_m_rpt2"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="124">
+      <node id="128">
         <label>vrv::StaffAlignment</label>
         <link refid="classvrv_1_1_staff_alignment"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="23">
+      <node id="24">
         <label>vrv::Subst</label>
         <link refid="classvrv_1_1_subst"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="54">
+      <node id="56">
         <label>vrv::Ending</label>
         <link refid="classvrv_1_1_ending"/>
-        <childnode refid="52" relation="public-inheritance">
+        <childnode refid="54" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="117">
+      <node id="121">
         <label>vrv::PgHead</label>
         <link refid="classvrv_1_1_pg_head"/>
-        <childnode refid="114" relation="public-inheritance">
+        <childnode refid="118" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="137">
+      <node id="141">
         <label>vrv::TimestampAligner</label>
         <link refid="classvrv_1_1_timestamp_aligner"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="56">
+      <node id="58">
         <label>vrv::Pb</label>
         <link refid="classvrv_1_1_pb"/>
-        <childnode refid="52" relation="public-inheritance">
+        <childnode refid="54" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="87">
+      <node id="142">
+        <label>vrv::Tuning</label>
+        <link refid="classvrv_1_1_tuning"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
         <label>vrv::Mensur</label>
         <link refid="classvrv_1_1_mensur"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="96">
+      <node id="98">
         <label>vrv::Neume</label>
         <link refid="classvrv_1_1_neume"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="81">
+      <node id="83">
         <label>vrv::FTrem</label>
         <link refid="classvrv_1_1_f_trem"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="95">
+      <node id="97">
         <label>vrv::Nc</label>
         <link refid="classvrv_1_1_nc"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="125">
+      <node id="129">
         <label>vrv::StaffGrp</label>
         <link refid="classvrv_1_1_staff_grp"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7">
+      <node id="8">
         <label>vrv::Abbr</label>
         <link refid="classvrv_1_1_abbr"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="133">
+      <node id="137">
         <label>vrv::Lb</label>
         <link refid="classvrv_1_1_lb"/>
-        <childnode refid="130" relation="public-inheritance">
+        <childnode refid="134" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="25">
+      <node id="26">
         <label>vrv::Unclear</label>
         <link refid="classvrv_1_1_unclear"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="35">
+      <node id="36">
         <label>vrv::Dynam</label>
         <link refid="classvrv_1_1_dynam"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="93">
+      <node id="95">
         <label>vrv::MultiRest</label>
         <link refid="classvrv_1_1_multi_rest"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="122">
+      <node id="126">
         <label>vrv::StaffDef</label>
         <link refid="classvrv_1_1_staff_def"/>
-        <childnode refid="120" relation="public-inheritance">
+        <childnode refid="124" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="84">
+      <node id="107">
+        <label>vrv::TabGrp</label>
+        <link refid="classvrv_1_1_tab_grp"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="86">
         <label>vrv::KeyAccid</label>
         <link refid="classvrv_1_1_key_accid"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="110">
+      <node id="114">
         <label>vrv::Mdiv</label>
         <link refid="classvrv_1_1_mdiv"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="127">
+      <node id="131">
         <label>vrv::Svg</label>
         <link refid="classvrv_1_1_svg"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="17">
+      <node id="18">
         <label>vrv::Orig</label>
         <link refid="classvrv_1_1_orig"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="104">
+      <node id="106">
         <label>vrv::Syllable</label>
         <link refid="classvrv_1_1_syllable"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="49">
+      <node id="51">
         <label>vrv::Tie</label>
         <link refid="classvrv_1_1_tie"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="103">
+      <node id="105">
         <label>vrv::Syl</label>
         <link refid="classvrv_1_1_syl"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="14">
+      <node id="15">
         <label>vrv::Del</label>
         <link refid="classvrv_1_1_del"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="121">
+      <node id="125">
         <label>vrv::ScoreDef</label>
         <link refid="classvrv_1_1_score_def"/>
-        <childnode refid="120" relation="public-inheritance">
+        <childnode refid="124" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="26">
+      <node id="27">
         <label>vrv::Facsimile</label>
         <link refid="classvrv_1_1_facsimile"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="21">
+      <node id="22">
         <label>vrv::Restore</label>
         <link refid="classvrv_1_1_restore"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
       <node id="4">
@@ -6223,16 +6268,16 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="57">
+      <node id="59">
         <label>vrv::Sb</label>
         <link refid="classvrv_1_1_sb"/>
-        <childnode refid="52" relation="public-inheritance">
+        <childnode refid="54" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="16">
+      <node id="17">
         <label>vrv::Lem</label>
         <link refid="classvrv_1_1_lem"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
       <node id="3">
@@ -6241,58 +6286,70 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="41">
+      <node id="108">
+        <label>vrv::TabRhythm</label>
+        <link refid="classvrv_1_1_tab_rhythm"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
         <label>vrv::MNum</label>
         <link refid="classvrv_1_1_m_num"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="62">
+      <node id="64">
         <label>vrv::MeasureAligner</label>
         <link refid="classvrv_1_1_measure_aligner"/>
-        <childnode refid="60" relation="public-inheritance">
+        <childnode refid="62" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="52">
+      <node id="54">
         <label>vrv::SystemElement</label>
         <link refid="classvrv_1_1_system_element"/>
-        <childnode refid="28" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="92">
-        <label>vrv::MSpace</label>
-        <link refid="classvrv_1_1_m_space"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="29" relation="public-inheritance">
         </childnode>
       </node>
       <node id="46">
+        <label>vrv::PitchInflection</label>
+        <link refid="classvrv_1_1_pitch_inflection"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>vrv::MSpace</label>
+        <link refid="classvrv_1_1_m_space"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="48">
         <label>vrv::Slur</label>
         <link refid="classvrv_1_1_slur"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="90">
+      <node id="92">
         <label>vrv::MRpt</label>
         <link refid="classvrv_1_1_m_rpt"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="63">
+      <node id="65">
         <label>vrv::InstrDef</label>
         <link refid="classvrv_1_1_instr_def"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="94">
+      <node id="96">
         <label>vrv::MultiRpt</label>
         <link refid="classvrv_1_1_multi_rpt"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="29">
+      <node id="30">
         <label>vrv::ControlElement</label>
         <link refid="classvrv_1_1_control_element"/>
-        <childnode refid="28" relation="public-inheritance">
+        <childnode refid="29" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1">
@@ -6301,118 +6358,118 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="68">
+      <node id="70">
         <label>vrv::Accid</label>
         <link refid="classvrv_1_1_accid"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9">
+      <node id="10">
         <label>vrv::Annot</label>
         <link refid="classvrv_1_1_annot"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="31">
+      <node id="32">
         <label>vrv::Arpeg</label>
         <link refid="classvrv_1_1_arpeg"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="69">
+      <node id="71">
         <label>vrv::Artic</label>
         <link refid="classvrv_1_1_artic"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="102">
+      <node id="104">
         <label>vrv::Stem</label>
         <link refid="classvrv_1_1_stem"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="53">
+      <node id="55">
         <label>vrv::BoundaryEnd</label>
         <link refid="classvrv_1_1_boundary_end"/>
-        <childnode refid="52" relation="public-inheritance">
+        <childnode refid="54" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="75">
+      <node id="77">
         <label>vrv::Chord</label>
         <link refid="classvrv_1_1_chord"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="24">
+      <node id="25">
         <label>vrv::Supplied</label>
         <link refid="classvrv_1_1_supplied"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="106">
+      <node id="110">
         <label>vrv::Tuplet</label>
         <link refid="classvrv_1_1_tuplet"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="112">
+      <node id="116">
         <label>vrv::Page</label>
         <link refid="classvrv_1_1_page"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="39">
+      <node id="40">
         <label>vrv::Hairpin</label>
         <link refid="classvrv_1_1_hairpin"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="32">
+      <node id="33">
         <label>vrv::BracketSpan</label>
         <link refid="classvrv_1_1_bracket_span"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="37">
+      <node id="38">
         <label>vrv::Fing</label>
         <link refid="classvrv_1_1_fing"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="22">
+      <node id="23">
         <label>vrv::Sic</label>
         <link refid="classvrv_1_1_sic"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="73">
+      <node id="75">
         <label>vrv::BeatRpt</label>
         <link refid="classvrv_1_1_beat_rpt"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="114">
+      <node id="118">
         <label>vrv::RunningElement</label>
         <link refid="classvrv_1_1_running_element"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="72">
+      <node id="74">
         <label>vrv::Beam</label>
         <link refid="classvrv_1_1_beam"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="79">
+      <node id="81">
         <label>vrv::Dots</label>
         <link refid="classvrv_1_1_dots"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="134">
+      <node id="138">
         <label>vrv::Num</label>
         <link refid="classvrv_1_1_num"/>
-        <childnode refid="130" relation="public-inheritance">
+        <childnode refid="134" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

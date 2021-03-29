@@ -29,7 +29,8 @@ var hierarchy =
         [ "vrv::Nc", "classvrv_1_1_nc.html", null ],
         [ "vrv::Note", "classvrv_1_1_note.html", null ],
         [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
-        [ "vrv::Space", "classvrv_1_1_space.html", null ]
+        [ "vrv::Space", "classvrv_1_1_space.html", null ],
+        [ "vrv::TabGrp", "classvrv_1_1_tab_grp.html", null ]
       ] ]
     ] ],
     [ "AttBarLineLog", null, [
@@ -121,6 +122,9 @@ var hierarchy =
     [ "AttCoordinated", null, [
       [ "vrv::Surface", "classvrv_1_1_surface.html", null ],
       [ "vrv::Zone", "classvrv_1_1_zone.html", null ]
+    ] ],
+    [ "AttCourseLog", null, [
+      [ "vrv::Tuning", "classvrv_1_1_tuning.html", null ]
     ] ],
     [ "AttCue", null, [
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
@@ -223,6 +227,8 @@ var hierarchy =
           [ "vrv::Stem", "classvrv_1_1_stem.html", null ],
           [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
           [ "vrv::Syllable", "classvrv_1_1_syllable.html", null ],
+          [ "vrv::TabGrp", "classvrv_1_1_tab_grp.html", null ],
+          [ "vrv::TabRhythm", "classvrv_1_1_tab_rhythm.html", null ],
           [ "vrv::TimestampAttr", "classvrv_1_1_timestamp_attr.html", null ],
           [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ],
           [ "vrv::TupletBracket", "classvrv_1_1_tuplet_bracket.html", null ],
@@ -301,6 +307,7 @@ var hierarchy =
         [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
         [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
         [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
+        [ "vrv::PitchInflection", "classvrv_1_1_pitch_inflection.html", null ],
         [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
         [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
         [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ],
@@ -450,6 +457,7 @@ var hierarchy =
     ] ],
     [ "AttNNumberLike", null, [
       [ "vrv::BarLine", "classvrv_1_1_bar_line.html", null ],
+      [ "vrv::Course", "classvrv_1_1_course.html", null ],
       [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
       [ "vrv::Fing", "classvrv_1_1_fing.html", null ],
       [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
@@ -463,6 +471,7 @@ var hierarchy =
       [ "vrv::Sb", "classvrv_1_1_sb.html", null ],
       [ "vrv::Score", "classvrv_1_1_score.html", null ],
       [ "vrv::Section", "classvrv_1_1_section.html", null ],
+      [ "vrv::TabRhythm", "classvrv_1_1_tab_rhythm.html", null ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
     ] ],
     [ "AttNotationType", null, [
@@ -475,6 +484,9 @@ var hierarchy =
         [ "vrv::Nc", "classvrv_1_1_nc.html", null ],
         [ "vrv::Note", "classvrv_1_1_note.html", null ]
       ] ]
+    ] ],
+    [ "AttNoteGesTab", null, [
+      [ "vrv::Note", "classvrv_1_1_note.html", null ]
     ] ],
     [ "AttNoteHeads", null, [
       [ "vrv::Note", "classvrv_1_1_note.html", null ]
@@ -515,8 +527,10 @@ var hierarchy =
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
       [ "vrv::PitchInterface", "classvrv_1_1_pitch_interface.html", null ]
     ] ],
-    [ "AttPlacement", null, [
-      [ "vrv::Artic", "classvrv_1_1_artic.html", null ],
+    [ "AttPlacementRelEvent", null, [
+      [ "vrv::Artic", "classvrv_1_1_artic.html", null ]
+    ] ],
+    [ "AttPlacementRelStaff", null, [
       [ "vrv::Breath", "classvrv_1_1_breath.html", null ],
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
@@ -612,6 +626,7 @@ var hierarchy =
           [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
           [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
           [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
+          [ "vrv::PitchInflection", "classvrv_1_1_pitch_inflection.html", null ],
           [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
           [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
           [ "vrv::Tie", "classvrv_1_1_tie.html", null ],
@@ -761,6 +776,7 @@ var hierarchy =
       [ "vrv::Object", "classvrv_1_1_object.html", [
         [ "vrv::Alignment", "classvrv_1_1_alignment.html", null ],
         [ "vrv::AlignmentReference", "classvrv_1_1_alignment_reference.html", null ],
+        [ "vrv::Course", "classvrv_1_1_course.html", null ],
         [ "vrv::Doc", "classvrv_1_1_doc.html", null ],
         [ "vrv::EditorialElement", "classvrv_1_1_editorial_element.html", null ],
         [ "vrv::Facsimile", "classvrv_1_1_facsimile.html", null ],
@@ -795,6 +811,7 @@ var hierarchy =
         [ "vrv::SystemAligner", "classvrv_1_1_system_aligner.html", null ],
         [ "vrv::TextElement", "classvrv_1_1_text_element.html", null ],
         [ "vrv::TimestampAligner", "classvrv_1_1_timestamp_aligner.html", null ],
+        [ "vrv::Tuning", "classvrv_1_1_tuning.html", null ],
         [ "vrv::Zone", "classvrv_1_1_zone.html", null ]
       ] ]
     ] ],

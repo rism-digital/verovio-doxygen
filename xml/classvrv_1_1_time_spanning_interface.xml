@@ -14,6 +14,7 @@
     <derivedcompoundref refid="classvrv_1_1_harm" prot="public" virt="non-virtual">vrv::Harm</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_octave" prot="public" virt="non-virtual">vrv::Octave</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_pedal" prot="public" virt="non-virtual">vrv::Pedal</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_pitch_inflection" prot="public" virt="non-virtual">vrv::PitchInflection</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_slur" prot="public" virt="non-virtual">vrv::Slur</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_syl" prot="public" virt="non-virtual">vrv::Syl</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_tie" prot="public" virt="non-virtual">vrv::Tie</derivedcompoundref>
@@ -56,6 +57,7 @@
         <name>Reset</name>
         <reimplements refid="classvrv_1_1_time_point_interface_1acb8f68d33465bdd5136466deb2b63d76">Reset</reimplements>
         <reimplementedby refid="classvrv_1_1_phrase_1a4cf2c9d446af6d44f68cbf97a574ff9a">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_pitch_inflection_1a52f617af981b4bbfa15bf096ff83162e">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_f_1a2b01a80ac456149dc4d17a7951ce39ec">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_slur_1ad489e51d4fbd05c4a7b77171979c980d">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_gliss_1afdb61005647e94fb0ea0a45b2fd5941a">Reset</reimplementedby>
@@ -163,6 +165,7 @@
         <definition>virtual TimePointInterface* vrv::TimeSpanningInterface::GetTimePointInterface</definition>
         <argsstring>()</argsstring>
         <name>GetTimePointInterface</name>
+        <reimplementedby refid="classvrv_1_1_pitch_inflection_1a98a021b70fb6367a6f8af8de8107174e">GetTimePointInterface</reimplementedby>
         <reimplementedby refid="classvrv_1_1_f_1ab73341e44e8bc2cb2cbdbcc696dc7518">GetTimePointInterface</reimplementedby>
         <reimplementedby refid="classvrv_1_1_slur_1ae637e2e59d5e7cb88fb96e6dce4c1baf">GetTimePointInterface</reimplementedby>
         <reimplementedby refid="classvrv_1_1_gliss_1a8888bb6e97f9777062a3ac2bddf8331d">GetTimePointInterface</reimplementedby>
@@ -386,10 +389,10 @@
 <para>It is not an abstract class but should not be instantiated directly. </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="19">
+      <node id="20">
         <label>vrv::Phrase</label>
         <link refid="classvrv_1_1_phrase"/>
-        <childnode refid="18" relation="public-inheritance">
+        <childnode refid="19" relation="public-inheritance">
         </childnode>
       </node>
       <node id="17">
@@ -451,7 +454,7 @@
         <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="22">
+      <node id="23">
         <label>vrv::Trill</label>
         <link refid="classvrv_1_1_trill"/>
         <childnode refid="1" relation="public-inheritance">
@@ -478,19 +481,25 @@
       <node id="6">
         <label>AttTimestampLogical</label>
       </node>
-      <node id="21">
+      <node id="22">
         <label>vrv::Tie</label>
         <link refid="classvrv_1_1_tie"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="20">
+      <node id="21">
         <label>vrv::Syl</label>
         <link refid="classvrv_1_1_syl"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
       <node id="18">
+        <label>vrv::PitchInflection</label>
+        <link refid="classvrv_1_1_pitch_inflection"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
         <label>vrv::Slur</label>
         <link refid="classvrv_1_1_slur"/>
         <childnode refid="1" relation="public-inheritance">
@@ -532,7 +541,7 @@
         <childnode refid="21" relation="usage">
           <edgelabel>m_crossStaff</edgelabel>
         </childnode>
-        <childnode refid="39" relation="usage">
+        <childnode refid="41" relation="usage">
           <edgelabel>m_graceAlignment</edgelabel>
           <edgelabel>m_alignment</edgelabel>
         </childnode>
@@ -545,7 +554,7 @@
         <childnode refid="13" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="28">
+      <node id="30">
         <label>AttMultinumMeasures</label>
       </node>
       <node id="2">
@@ -563,17 +572,20 @@
           <edgelabel>m_start</edgelabel>
         </childnode>
       </node>
-      <node id="23">
+      <node id="25">
         <label>vrv::ScoreDefElement</label>
         <link refid="classvrv_1_1_score_def_element"/>
         <childnode refid="8" relation="public-inheritance">
         </childnode>
-        <childnode refid="24" relation="public-inheritance">
+        <childnode refid="26" relation="public-inheritance">
         </childnode>
         <childnode refid="15" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="30">
+      <node id="23">
+        <label>AttCourseLog</label>
+      </node>
+      <node id="32">
         <label>AttSystems</label>
       </node>
       <node id="21">
@@ -590,10 +602,13 @@
         <childnode refid="20" relation="public-inheritance">
         </childnode>
         <childnode refid="22" relation="usage">
+          <edgelabel>m_drawingTuning</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
           <edgelabel>m_drawingStaffDef</edgelabel>
         </childnode>
       </node>
-      <node id="32">
+      <node id="34">
         <label>AttDistances</label>
       </node>
       <node id="15">
@@ -603,14 +618,10 @@
         <label>vrv::BoundingBox</label>
         <link refid="classvrv_1_1_bounding_box"/>
       </node>
-      <node id="24">
+      <node id="26">
         <label>vrv::ScoreDefInterface</label>
         <link refid="classvrv_1_1_score_def_interface"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="25" relation="public-inheritance">
-        </childnode>
-        <childnode refid="26" relation="public-inheritance">
         </childnode>
         <childnode refid="27" relation="public-inheritance">
         </childnode>
@@ -620,6 +631,10 @@
         </childnode>
         <childnode refid="30" relation="public-inheritance">
         </childnode>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="5">
         <label>AttStartId</label>
@@ -628,7 +643,7 @@
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="27">
+      <node id="29">
         <label>AttMidiTempo</label>
       </node>
       <node id="20">
@@ -639,12 +654,12 @@
         <link refid="classvrv_1_1_time_spanning_interface"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="40" relation="public-inheritance">
+        <childnode refid="42" relation="public-inheritance">
         </childnode>
-        <childnode refid="41" relation="public-inheritance">
+        <childnode refid="43" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="36">
+      <node id="38">
         <label>AttStaffDefVis</label>
       </node>
       <node id="19">
@@ -666,7 +681,7 @@
         <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="29">
+      <node id="31">
         <label>AttSpacing</label>
       </node>
       <node id="10">
@@ -677,39 +692,43 @@
         <childnode refid="11" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="33">
+      <node id="35">
         <label>AttNotationType</label>
       </node>
       <node id="17">
         <label>vrv::DrawingListInterface</label>
         <link refid="classvrv_1_1_drawing_list_interface"/>
       </node>
-      <node id="40">
+      <node id="42">
         <label>AttStartEndId</label>
       </node>
-      <node id="31">
+      <node id="22">
+        <label>vrv::Tuning</label>
+        <link refid="classvrv_1_1_tuning"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
         <label>vrv::StaffDefDrawingInterface</label>
         <link refid="classvrv_1_1_staff_def_drawing_interface"/>
       </node>
-      <node id="41">
+      <node id="43">
         <label>AttTimestamp2Logical</label>
       </node>
-      <node id="22">
+      <node id="24">
         <label>vrv::StaffDef</label>
         <link refid="classvrv_1_1_staff_def"/>
-        <childnode refid="23" relation="public-inheritance">
-        </childnode>
-        <childnode refid="31" relation="public-inheritance">
-        </childnode>
-        <childnode refid="32" relation="public-inheritance">
-        </childnode>
-        <childnode refid="14" relation="public-inheritance">
-        </childnode>
-        <childnode refid="19" relation="public-inheritance">
+        <childnode refid="25" relation="public-inheritance">
         </childnode>
         <childnode refid="33" relation="public-inheritance">
         </childnode>
         <childnode refid="34" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="public-inheritance">
         </childnode>
         <childnode refid="35" relation="public-inheritance">
         </childnode>
@@ -719,6 +738,10 @@
         </childnode>
         <childnode refid="38" relation="public-inheritance">
         </childnode>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="6">
         <label>AttTimestampLogical</label>
@@ -726,22 +749,22 @@
       <node id="13">
         <label>AttLinking</label>
       </node>
-      <node id="25">
+      <node id="27">
         <label>AttLyricStyle</label>
       </node>
       <node id="11">
         <label>AttFacsimile</label>
       </node>
-      <node id="38">
+      <node id="40">
         <label>AttTransposition</label>
       </node>
-      <node id="39">
+      <node id="41">
         <label>vrv::Alignment</label>
         <link refid="classvrv_1_1_alignment"/>
         <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="35">
+      <node id="37">
         <label>AttStaffDefLog</label>
       </node>
       <node id="4">
@@ -753,17 +776,17 @@
         <childnode refid="9" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="26">
+      <node id="28">
         <label>AttMeasureNumbers</label>
       </node>
-      <node id="34">
+      <node id="36">
         <label>AttScalable</label>
       </node>
       <node id="18">
         <label>vrv::ObjectListInterface</label>
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
-      <node id="37">
+      <node id="39">
         <label>AttTimeBase</label>
       </node>
       <node id="14">

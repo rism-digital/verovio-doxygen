@@ -604,6 +604,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawOctave</b> (<a cl
 <tr class="memitem:a97d482d2124dcc5e84c0bf697b14fde7"><td class="memItemLeft" align="right" valign="top"><a id="a97d482d2124dcc5e84c0bf697b14fde7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawPedalLine</b> (<a class="el" href="classvrv_1_1_device_context.html">DeviceContext</a> *dc, <a class="el" href="classvrv_1_1_pedal.html">Pedal</a> *pedal, int x1, int x2, <a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff, char spanningType, <a class="el" href="classvrv_1_1_object.html">Object</a> *graphic=NULL)</td></tr>
 <tr class="separator:a97d482d2124dcc5e84c0bf697b14fde7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ce531ef5d76bb05a14293ee86a89b5"><td class="memItemLeft" align="right" valign="top"><a id="af9ce531ef5d76bb05a14293ee86a89b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawPitchInflection</b> (<a class="el" href="classvrv_1_1_device_context.html">DeviceContext</a> *dc, <a class="el" href="classvrv_1_1_pitch_inflection.html">PitchInflection</a> *pitchInflection, int x1, int x2, <a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff, char spanningType, <a class="el" href="classvrv_1_1_object.html">Object</a> *graphic=NULL)</td></tr>
+<tr class="separator:af9ce531ef5d76bb05a14293ee86a89b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68d86b67e466c9d49ca6e3c12a473d33"><td class="memItemLeft" align="right" valign="top"><a id="a68d86b67e466c9d49ca6e3c12a473d33"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawSlur</b> (<a class="el" href="classvrv_1_1_device_context.html">DeviceContext</a> *dc, <a class="el" href="classvrv_1_1_slur.html">Slur</a> *slur, int x1, int x2, <a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff, char spanningType, <a class="el" href="classvrv_1_1_object.html">Object</a> *graphic=NULL)</td></tr>
 <tr class="separator:a68d86b67e466c9d49ca6e3c12a473d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -667,6 +670,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawProportFigures</b
 <tr class="memitem:aa33a36bdc73dc4b73b1e3ccb78fcf4d5"><td class="memItemLeft" align="right" valign="top"><a id="aa33a36bdc73dc4b73b1e3ccb78fcf4d5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawLigatureNote</b> (<a class="el" href="classvrv_1_1_device_context.html">DeviceContext</a> *dc, <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *element, <a class="el" href="classvrv_1_1_layer.html">Layer</a> *layer, <a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff)</td></tr>
 <tr class="separator:aa33a36bdc73dc4b73b1e3ccb78fcf4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Methods for drawing tab LayerElement child classes.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>They are base drawing methods that are called directly from DrawLayerElement.</p>
+<p>Because some elements draw their children recursively (e.g., <a class="el" href="classvrv_1_1_note.html" title="This class models the MEI &lt;note&gt; element.">Note</a>) they must all have the same parameters. Defined in view_tab.cpp </p>
+</div></td></tr>
+<tr class="memitem:a50d694df0190a4ee7c920395cc5d6113"><td class="memItemLeft" align="right" valign="top"><a id="a50d694df0190a4ee7c920395cc5d6113"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTabGrp</b> (<a class="el" href="classvrv_1_1_device_context.html">DeviceContext</a> *dc, <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *element, <a class="el" href="classvrv_1_1_layer.html">Layer</a> *layer, <a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff, <a class="el" href="classvrv_1_1_measure.html">Measure</a> *measure)</td></tr>
+<tr class="separator:a50d694df0190a4ee7c920395cc5d6113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f038eca043f93ab6ce0073c90765f22"><td class="memItemLeft" align="right" valign="top"><a id="a7f038eca043f93ab6ce0073c90765f22"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTabNote</b> (<a class="el" href="classvrv_1_1_device_context.html">DeviceContext</a> *dc, <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *element, <a class="el" href="classvrv_1_1_layer.html">Layer</a> *layer, <a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff, <a class="el" href="classvrv_1_1_measure.html">Measure</a> *measure)</td></tr>
+<tr class="separator:a7f038eca043f93ab6ce0073c90765f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b8b7a4453953a94dbb5921c402424f2"><td class="memItemLeft" align="right" valign="top"><a id="a9b8b7a4453953a94dbb5921c402424f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTabRhythm</b> (<a class="el" href="classvrv_1_1_device_context.html">DeviceContext</a> *dc, <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *element, <a class="el" href="classvrv_1_1_layer.html">Layer</a> *layer, <a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff, <a class="el" href="classvrv_1_1_measure.html">Measure</a> *measure)</td></tr>
+<tr class="separator:a9b8b7a4453953a94dbb5921c402424f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Method for drawing Tuplet.</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Defined in view_tuplet.cpp </p>
 </div></td></tr>
@@ -957,7 +973,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_view.html">View</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 13:57:24 for Verovio by
+    <li class="footer">Generated on Mon Mar 29 2021 20:33:33 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

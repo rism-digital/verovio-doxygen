@@ -53,6 +53,7 @@
         <argsstring>()</argsstring>
         <name>Reset</name>
         <reimplementedby refid="classvrv_1_1_phrase_1a4cf2c9d446af6d44f68cbf97a574ff9a">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_pitch_inflection_1a52f617af981b4bbfa15bf096ff83162e">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_f_1a2b01a80ac456149dc4d17a7951ce39ec">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_breath_1a46922dc1a012ad4e22d387d367076412">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_slur_1ad489e51d4fbd05c4a7b77171979c980d">Reset</reimplementedby>
@@ -364,10 +365,10 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
 <para>It is not an abstract class but should not be instantiated directly. </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="25">
+      <node id="26">
         <label>vrv::Phrase</label>
         <link refid="classvrv_1_1_phrase"/>
-        <childnode refid="24" relation="public-inheritance">
+        <childnode refid="25" relation="public-inheritance">
         </childnode>
       </node>
       <node id="23">
@@ -425,7 +426,7 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="29">
+      <node id="30">
         <label>vrv::Turn</label>
         <link refid="classvrv_1_1_turn"/>
         <childnode refid="1" relation="public-inheritance">
@@ -461,7 +462,7 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="28">
+      <node id="29">
         <label>vrv::Trill</label>
         <link refid="classvrv_1_1_trill"/>
         <childnode refid="14" relation="public-inheritance">
@@ -482,13 +483,13 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
       <node id="5">
         <label>AttTimestampLogical</label>
       </node>
-      <node id="27">
+      <node id="28">
         <label>vrv::Tie</label>
         <link refid="classvrv_1_1_tie"/>
         <childnode refid="14" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="26">
+      <node id="27">
         <label>vrv::Syl</label>
         <link refid="classvrv_1_1_syl"/>
         <childnode refid="14" relation="public-inheritance">
@@ -501,6 +502,12 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         </childnode>
       </node>
       <node id="24">
+        <label>vrv::PitchInflection</label>
+        <link refid="classvrv_1_1_pitch_inflection"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
         <label>vrv::Slur</label>
         <link refid="classvrv_1_1_slur"/>
         <childnode refid="14" relation="public-inheritance">
@@ -554,7 +561,7 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <childnode refid="20" relation="usage">
           <edgelabel>m_crossStaff</edgelabel>
         </childnode>
-        <childnode refid="38" relation="usage">
+        <childnode refid="40" relation="usage">
           <edgelabel>m_graceAlignment</edgelabel>
           <edgelabel>m_alignment</edgelabel>
         </childnode>
@@ -567,7 +574,7 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <childnode refid="12" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="27">
+      <node id="29">
         <label>AttMultinumMeasures</label>
       </node>
       <node id="1">
@@ -585,17 +592,20 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
           <edgelabel>m_start</edgelabel>
         </childnode>
       </node>
-      <node id="22">
+      <node id="24">
         <label>vrv::ScoreDefElement</label>
         <link refid="classvrv_1_1_score_def_element"/>
         <childnode refid="7" relation="public-inheritance">
         </childnode>
-        <childnode refid="23" relation="public-inheritance">
+        <childnode refid="25" relation="public-inheritance">
         </childnode>
         <childnode refid="14" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="29">
+      <node id="22">
+        <label>AttCourseLog</label>
+      </node>
+      <node id="31">
         <label>AttSystems</label>
       </node>
       <node id="20">
@@ -612,10 +622,13 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <childnode refid="19" relation="public-inheritance">
         </childnode>
         <childnode refid="21" relation="usage">
+          <edgelabel>m_drawingTuning</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
           <edgelabel>m_drawingStaffDef</edgelabel>
         </childnode>
       </node>
-      <node id="31">
+      <node id="33">
         <label>AttDistances</label>
       </node>
       <node id="14">
@@ -625,14 +638,10 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <label>vrv::BoundingBox</label>
         <link refid="classvrv_1_1_bounding_box"/>
       </node>
-      <node id="23">
+      <node id="25">
         <label>vrv::ScoreDefInterface</label>
         <link refid="classvrv_1_1_score_def_interface"/>
         <childnode refid="2" relation="public-inheritance">
-        </childnode>
-        <childnode refid="24" relation="public-inheritance">
-        </childnode>
-        <childnode refid="25" relation="public-inheritance">
         </childnode>
         <childnode refid="26" relation="public-inheritance">
         </childnode>
@@ -642,6 +651,10 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         </childnode>
         <childnode refid="29" relation="public-inheritance">
         </childnode>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="4">
         <label>AttStartId</label>
@@ -650,13 +663,13 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="26">
+      <node id="28">
         <label>AttMidiTempo</label>
       </node>
       <node id="19">
         <label>AttVisibility</label>
       </node>
-      <node id="35">
+      <node id="37">
         <label>AttStaffDefVis</label>
       </node>
       <node id="18">
@@ -678,7 +691,7 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <childnode refid="19" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="28">
+      <node id="30">
         <label>AttSpacing</label>
       </node>
       <node id="9">
@@ -689,33 +702,37 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="32">
+      <node id="34">
         <label>AttNotationType</label>
       </node>
       <node id="16">
         <label>vrv::DrawingListInterface</label>
         <link refid="classvrv_1_1_drawing_list_interface"/>
       </node>
-      <node id="30">
+      <node id="21">
+        <label>vrv::Tuning</label>
+        <link refid="classvrv_1_1_tuning"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
         <label>vrv::StaffDefDrawingInterface</label>
         <link refid="classvrv_1_1_staff_def_drawing_interface"/>
       </node>
-      <node id="21">
+      <node id="23">
         <label>vrv::StaffDef</label>
         <link refid="classvrv_1_1_staff_def"/>
-        <childnode refid="22" relation="public-inheritance">
-        </childnode>
-        <childnode refid="30" relation="public-inheritance">
-        </childnode>
-        <childnode refid="31" relation="public-inheritance">
-        </childnode>
-        <childnode refid="13" relation="public-inheritance">
-        </childnode>
-        <childnode refid="18" relation="public-inheritance">
+        <childnode refid="24" relation="public-inheritance">
         </childnode>
         <childnode refid="32" relation="public-inheritance">
         </childnode>
         <childnode refid="33" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="public-inheritance">
         </childnode>
         <childnode refid="34" relation="public-inheritance">
         </childnode>
@@ -725,6 +742,10 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         </childnode>
         <childnode refid="37" relation="public-inheritance">
         </childnode>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="5">
         <label>AttTimestampLogical</label>
@@ -732,22 +753,22 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
       <node id="12">
         <label>AttLinking</label>
       </node>
-      <node id="24">
+      <node id="26">
         <label>AttLyricStyle</label>
       </node>
       <node id="10">
         <label>AttFacsimile</label>
       </node>
-      <node id="37">
+      <node id="39">
         <label>AttTransposition</label>
       </node>
-      <node id="38">
+      <node id="40">
         <label>vrv::Alignment</label>
         <link refid="classvrv_1_1_alignment"/>
         <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="34">
+      <node id="36">
         <label>AttStaffDefLog</label>
       </node>
       <node id="3">
@@ -759,17 +780,17 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="25">
+      <node id="27">
         <label>AttMeasureNumbers</label>
       </node>
-      <node id="33">
+      <node id="35">
         <label>AttScalable</label>
       </node>
       <node id="17">
         <label>vrv::ObjectListInterface</label>
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
-      <node id="36">
+      <node id="38">
         <label>AttTimeBase</label>
       </node>
       <node id="13">

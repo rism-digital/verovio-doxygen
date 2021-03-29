@@ -1,11 +1,14 @@
 var NAVTREEINDEX2 =
 {
-"classvrv_1_1_b_box_device_context.html#ace984ec9c99483969dbd20c27c26ff1f":[1,0,0,46,10],
-"classvrv_1_1_b_box_device_context.html#ad69916e010deb065476034d0552f55bd":[1,0,0,46,7],
-"classvrv_1_1_b_box_device_context.html#adc1dba465d87b817623d46338d1b1df9":[1,0,0,46,19],
-"classvrv_1_1_b_box_device_context.html#af5d89b647cb65d30ab23ff56c41b061c":[1,0,0,46,34],
-"classvrv_1_1_b_box_device_context.html#afb05f6bb12326d266e0af04cc2b9541e":[1,0,0,46,36],
-"classvrv_1_1_b_box_device_context.html#afcbfec089b1f699594d1f0757540595f":[1,0,0,46,38],
+"classvrv_1_1_b_box_device_context.html#abd596362f0605585f2a5b0393245773a":[1,0,0,46,41],
+"classvrv_1_1_b_box_device_context.html#ac08b2830e09a3116517f3b240ca4bbc7":[1,0,0,46,18],
+"classvrv_1_1_b_box_device_context.html#ac59d379aa050ff255d6682a67672adb7":[1,0,0,46,3],
+"classvrv_1_1_b_box_device_context.html#ace984ec9c99483969dbd20c27c26ff1f":[1,0,0,46,11],
+"classvrv_1_1_b_box_device_context.html#ad69916e010deb065476034d0552f55bd":[1,0,0,46,8],
+"classvrv_1_1_b_box_device_context.html#adc1dba465d87b817623d46338d1b1df9":[1,0,0,46,20],
+"classvrv_1_1_b_box_device_context.html#af5d89b647cb65d30ab23ff56c41b061c":[1,0,0,46,35],
+"classvrv_1_1_b_box_device_context.html#afb05f6bb12326d266e0af04cc2b9541e":[1,0,0,46,37],
+"classvrv_1_1_b_box_device_context.html#afcbfec089b1f699594d1f0757540595f":[1,0,0,46,39],
 "classvrv_1_1_b_trem.html":[1,0,0,58],
 "classvrv_1_1_b_trem.html#a40e3dcb4eb672a7aaf44176abe76e63b":[1,0,0,58,3],
 "classvrv_1_1_b_trem.html#a4dc0461f664a02b7205dd777f209213b":[1,0,0,58,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "classvrv_1_1_brush.html#abcd3f3e00bd1b31a9087fcd039569d12":[1,0,0,57,1],
 "classvrv_1_1_brush.html#ac45e400206bdd81da80ba75ca3f9dde2":[1,0,0,57,0],
 "classvrv_1_1_brush.html#ae2b2d9908237fca3e6d054f6638f7272":[1,0,0,57,3],
-"classvrv_1_1_calc_artic_params.html":[1,0,0,59],
-"classvrv_1_1_calc_artic_params.html#a1a33669056ee2a2fa1163e453aad07d0":[1,0,0,59,2],
-"classvrv_1_1_calc_artic_params.html#a53229fa3b18bd14063fb0992f7181861":[1,0,0,59,0],
-"classvrv_1_1_calc_artic_params.html#a9ae652f8f1aaf54a269a0208755c02b4":[1,0,0,59,9]
+"classvrv_1_1_calc_artic_params.html":[1,0,0,59]
 };

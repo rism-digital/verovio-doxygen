@@ -32,8 +32,11 @@ var classvrv_1_1_staff =
     [ "GetLedgerLinesBelowCue", "classvrv_1_1_staff.html#a4773a1ba3e425e3b717f04c79928cfb2", null ],
     [ "GetNearestInterStaffPosition", "classvrv_1_1_staff.html#aef570b1123805d6ee7126ff3aaf5af61", null ],
     [ "GetStaffIdx", "classvrv_1_1_staff.html#a96635013f3b4f9d0b68df8eebbc4b0b2", null ],
+    [ "IsMensural", "classvrv_1_1_staff.html#a79eac77323fbef08aea63636b198670f", null ],
+    [ "IsNeume", "classvrv_1_1_staff.html#a34bb6fc88f3af41943c3ba4e6006f526", null ],
     [ "IsOnStaffLine", "classvrv_1_1_staff.html#a367847939088dc1b31e81f2e66211570", null ],
     [ "IsSupportedChild", "classvrv_1_1_staff.html#acd736f43548230fda02b92158a176ca8", null ],
+    [ "IsTablature", "classvrv_1_1_staff.html#a9dc4603b9cbe7003cd4fb617c186b8d5", null ],
     [ "PrepareRpt", "classvrv_1_1_staff.html#a7d46724555e4ba27339181e17b945a33", null ],
     [ "Reset", "classvrv_1_1_staff.html#aaf72035d9ae4ae883541f3c4e7eab9ad", null ],
     [ "ResetDrawing", "classvrv_1_1_staff.html#af445c1b571a451f7d83ecc8c28d45fde", null ],
@@ -45,6 +48,7 @@ var classvrv_1_1_staff =
     [ "m_drawingNotationType", "classvrv_1_1_staff.html#a51a65ab400013ddc21d125a01aa2256e", null ],
     [ "m_drawingStaffDef", "classvrv_1_1_staff.html#a4fcf7b214a32b47b0a8597d8a69089ec", null ],
     [ "m_drawingStaffSize", "classvrv_1_1_staff.html#af64a2d11ba5b97412094e00d6f908c63", null ],
+    [ "m_drawingTuning", "classvrv_1_1_staff.html#a03ed750f41c544c2a808be4016e910c2", null ],
     [ "m_timeSpanningElements", "classvrv_1_1_staff.html#a172c03af3f8a3beb704f4bb35a751966", null ],
     [ "m_yAbs", "classvrv_1_1_staff.html#abf3552a9fecc27efcc21fae14cf1836f", null ]
 ];

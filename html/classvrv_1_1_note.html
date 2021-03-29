@@ -124,9 +124,17 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a7bcfe9b0dfad97964d0db5c76ebd6169"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a7bcfe9b0dfad97964d0db5c76ebd6169">HasLedgerLines</a> (int &amp;linesAbove, int &amp;linesBelow, <a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff=NULL)</td></tr>
 <tr class="memdesc:a7bcfe9b0dfad97964d0db5c76ebd6169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the note has ledger lines.  <a href="classvrv_1_1_note.html#a7bcfe9b0dfad97964d0db5c76ebd6169">More...</a><br /></td></tr>
 <tr class="separator:a7bcfe9b0dfad97964d0db5c76ebd6169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc5f0ee766bcd84535a60b4cb17144b"><td class="memItemLeft" align="right" valign="top"><a id="afbc5f0ee766bcd84535a60b4cb17144b"></a>
+<a class="el" href="classvrv_1_1_tab_grp.html">TabGrp</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#afbc5f0ee766bcd84535a60b4cb17144b">IsTabGrpNote</a> () const</td></tr>
+<tr class="memdesc:afbc5f0ee766bcd84535a60b4cb17144b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the parent <a class="el" href="classvrv_1_1_tab_grp.html" title="This class models the MEI &lt;tabGrp&gt; element.">TabGrp</a> is the note is part of one. <br /></td></tr>
+<tr class="separator:afbc5f0ee766bcd84535a60b4cb17144b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f569dd14639313902bcdcf1fe6d9f22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a3f569dd14639313902bcdcf1fe6d9f22">IsUnissonWith</a> (<a class="el" href="classvrv_1_1_note.html">Note</a> *note, bool ignoreAccid=false)</td></tr>
 <tr class="memdesc:a3f569dd14639313902bcdcf1fe6d9f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the note is a unisson.  <a href="classvrv_1_1_note.html#a3f569dd14639313902bcdcf1fe6d9f22">More...</a><br /></td></tr>
 <tr class="separator:a3f569dd14639313902bcdcf1fe6d9f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40bd7cfa491712c99ed6d1bb22fe880f"><td class="memItemLeft" align="right" valign="top"><a id="a40bd7cfa491712c99ed6d1bb22fe880f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f">GetDiatonicPitch</a> () const</td></tr>
+<tr class="memdesc:a40bd7cfa491712c99ed6d1bb22fe880f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a single integer representing pitch and octave. <br /></td></tr>
+<tr class="separator:a40bd7cfa491712c99ed6d1bb22fe880f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc7cd90f6528b7ccb1217e9b6a4f7ab1"><td class="memItemLeft" align="right" valign="top"><a id="abc7cd90f6528b7ccb1217e9b6a4f7ab1"></a>
 wchar_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#abc7cd90f6528b7ccb1217e9b6a4f7ab1">GetMensuralNoteheadGlyph</a> ()</td></tr>
 <tr class="memdesc:abc7cd90f6528b7ccb1217e9b6a4f7ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the SMuFL code for a mensural note looking at the staff notation type, the coloration and the duration. <br /></td></tr>
@@ -261,6 +269,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingDur</b> () c
 <tr class="memitem:a1a7d0a9ea9cb70585ce2b438e41dd4a5"><td class="memItemLeft" align="right" valign="top"><a id="a1a7d0a9ea9cb70585ce2b438e41dd4a5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsClusterExtreme</b> () const</td></tr>
 <tr class="separator:a1a7d0a9ea9cb70585ce2b438e41dd4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Return the smufl string to use for a note give the notation type</div></td></tr>
+<tr class="memitem:af43e40a5b25d7a0b5fd406e0dfeb300e"><td class="memItemLeft" align="right" valign="top"><a id="af43e40a5b25d7a0b5fd406e0dfeb300e"></a>
+std::wstring&#160;</td><td class="memItemRight" valign="bottom"><b>GetTabFretString</b> (data_NOTATIONTYPE notationType)</td></tr>
+<tr class="separator:af43e40a5b25d7a0b5fd406e0dfeb300e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Setter and getter for the chord cluster and the position of the note</div></td></tr>
 <tr class="memitem:a5dbdadeb93f4e6cf0f15dabc238b8349"><td class="memItemLeft" align="right" valign="top"><a id="a5dbdadeb93f4e6cf0f15dabc238b8349"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCluster</b> (ChordCluster *cluster, int position)</td></tr>
@@ -269,17 +281,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCluster</b> (Chord
 ChordCluster *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCluster</b> () const</td></tr>
 <tr class="separator:aecc23a1f92c40bb4e4f1dc1da58ab8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Setter and getter for the flipped note head flag</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>} </p>
-</div></td></tr>
 <tr class="memitem:a9bd4ecffc2b79ff14134ca3c4da8ebbe"><td class="memItemLeft" align="right" valign="top"><a id="a9bd4ecffc2b79ff14134ca3c4da8ebbe"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFlippedNotehead</b> (bool flippedNotehead)</td></tr>
 <tr class="separator:a9bd4ecffc2b79ff14134ca3c4da8ebbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a520f34e67cd0e66c90216e942720b646"><td class="memItemLeft" align="right" valign="top"><a id="a520f34e67cd0e66c90216e942720b646"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFlippedNotehead</b> () const</td></tr>
 <tr class="separator:a520f34e67cd0e66c90216e942720b646"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40bd7cfa491712c99ed6d1bb22fe880f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f">GetDiatonicPitch</a> () const</td></tr>
-<tr class="memdesc:a40bd7cfa491712c99ed6d1bb22fe880f"><td class="mdescLeft">&#160;</td><td class="mdescRight">}  <a href="classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f">More...</a><br /></td></tr>
-<tr class="separator:a40bd7cfa491712c99ed6d1bb22fe880f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:afcd31bece9b368a8ab4c426467605faa"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classvrv_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#afcd31bece9b368a8ab4c426467605faa">GetStemUpSE</a> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, int staffSize, bool isCueSize)</td></tr>
 <tr class="memdesc:afcd31bece9b368a8ab4c426467605faa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the stem up / stem down attachment point.  <a href="classvrv_1_1_note.html#afcd31bece9b368a8ab4c426467605faa">More...</a><br /></td></tr>
 <tr class="separator:afcd31bece9b368a8ab4c426467605faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1774,34 +1782,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
-<a id="a40bd7cfa491712c99ed6d1bb22fe880f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40bd7cfa491712c99ed6d1bb22fe880f">&#9670;&nbsp;</a></span>GetDiatonicPitch()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int vrv::Note::GetDiatonicPitch </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>} </p>
-<p>Returns a single integer representing pitch and octave. </p>
-
-</div>
-</div>
 <a id="afcd31bece9b368a8ab4c426467605faa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afcd31bece9b368a8ab4c426467605faa">&#9670;&nbsp;</a></span>GetStemUpSE()</h2>
 
@@ -1987,7 +1967,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_note.html">Note</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 13:57:22 for Verovio by
+    <li class="footer">Generated on Mon Mar 29 2021 20:33:31 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

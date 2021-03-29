@@ -21,6 +21,7 @@
     <derivedcompoundref refid="classvrv_1_1_mordent" prot="public" virt="non-virtual">vrv::Mordent</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_octave" prot="public" virt="non-virtual">vrv::Octave</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_pedal" prot="public" virt="non-virtual">vrv::Pedal</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_pitch_inflection" prot="public" virt="non-virtual">vrv::PitchInflection</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_reh" prot="public" virt="non-virtual">vrv::Reh</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_slur" prot="public" virt="non-virtual">vrv::Slur</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_tempo" prot="public" virt="non-virtual">vrv::Tempo</derivedcompoundref>
@@ -82,6 +83,7 @@
         <name>Reset</name>
         <reimplements refid="classvrv_1_1_floating_object_1a598b5443645caf3544285c9b99bfcdbb">Reset</reimplements>
         <reimplementedby refid="classvrv_1_1_phrase_1a4cf2c9d446af6d44f68cbf97a574ff9a">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_pitch_inflection_1a52f617af981b4bbfa15bf096ff83162e">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_breath_1a46922dc1a012ad4e22d387d367076412">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_slur_1ad489e51d4fbd05c4a7b77171979c980d">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_fing_1ad52aa2d93592433e12041c97a37f2c53">Reset</reimplementedby>
@@ -120,6 +122,7 @@
         <name>GetClassId</name>
         <reimplements refid="classvrv_1_1_floating_object_1ae043bc6c34e3044bd8bf1befa9ad3726">GetClassId</reimplements>
         <reimplementedby refid="classvrv_1_1_phrase_1ad993211a6d271e769d6163d7b560af6e">GetClassId</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_pitch_inflection_1ae003d066ed128651d12ba15edad39620">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_breath_1a7d4f9780bd70df52df3e5d8fe6a50ace">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_slur_1a5fa6aa883d9531cc351d362158127e3f">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_fing_1a73e2219565c97671a89d647c3c629e0f">GetClassId</reimplementedby>
@@ -251,10 +254,10 @@
 <para>It is not an abstract class but should not be instanciated directly. </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="27">
+      <node id="28">
         <label>vrv::Phrase</label>
         <link refid="classvrv_1_1_phrase"/>
-        <childnode refid="26" relation="public-inheritance">
+        <childnode refid="27" relation="public-inheritance">
         </childnode>
       </node>
       <node id="5">
@@ -271,7 +274,7 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="28">
+      <node id="29">
         <label>vrv::Tempo</label>
         <link refid="classvrv_1_1_tempo"/>
         <childnode refid="1" relation="public-inheritance">
@@ -318,13 +321,13 @@
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="31">
+      <node id="32">
         <label>vrv::Turn</label>
         <link refid="classvrv_1_1_turn"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="25">
+      <node id="26">
         <label>vrv::Reh</label>
         <link refid="classvrv_1_1_reh"/>
         <childnode refid="1" relation="public-inheritance">
@@ -354,7 +357,7 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="30">
+      <node id="31">
         <label>vrv::Trill</label>
         <link refid="classvrv_1_1_trill"/>
         <childnode refid="1" relation="public-inheritance">
@@ -369,7 +372,7 @@
       <node id="7">
         <label>AttLinking</label>
       </node>
-      <node id="29">
+      <node id="30">
         <label>vrv::Tie</label>
         <link refid="classvrv_1_1_tie"/>
         <childnode refid="1" relation="public-inheritance">
@@ -381,7 +384,13 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="26">
+      <node id="25">
+        <label>vrv::PitchInflection</label>
+        <link refid="classvrv_1_1_pitch_inflection"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
         <label>vrv::Slur</label>
         <link refid="classvrv_1_1_slur"/>
         <childnode refid="1" relation="public-inheritance">
