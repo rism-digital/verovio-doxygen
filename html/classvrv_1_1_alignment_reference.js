@@ -10,6 +10,7 @@ var classvrv_1_1_alignment_reference =
     [ "AdjustGraceXPos", "classvrv_1_1_alignment_reference.html#a1d1d8ec73574cab1273446e88f72d021", null ],
     [ "AdjustLayers", "classvrv_1_1_alignment_reference.html#a235100af5d136b53d38e75262a8ab901", null ],
     [ "GetClassId", "classvrv_1_1_alignment_reference.html#a62d722004288cf230d54c2b02e4b4619", null ],
+    [ "HasCrossStaffElements", "classvrv_1_1_alignment_reference.html#ae5049f7ae4cf1d11748f309dd1c81bbe", null ],
     [ "HasMultipleLayer", "classvrv_1_1_alignment_reference.html#a9c1895942dd54bf9ac12b788dbf7570c", null ],
     [ "IsSupportedChild", "classvrv_1_1_alignment_reference.html#a5042b74cd1f6292ef8d74dda10c5bfbf", null ],
     [ "Reset", "classvrv_1_1_alignment_reference.html#aadc2d7cae6429e02e91766794b4667a2", null ],
