@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"classvrv_1_1_pitch_inflection.html":[1,0,0,224],
 "classvrv_1_1_pitch_inflection.html#a2587cc1860959894a6fc61fe1b819c1c":[1,0,0,224,4],
 "classvrv_1_1_pitch_inflection.html#a52f617af981b4bbfa15bf096ff83162e":[1,0,0,224,7],
 "classvrv_1_1_pitch_inflection.html#a8026efe22cb4a80d5da9e4d9c8b18c5e":[1,0,0,224,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "classvrv_1_1_save_params.html#a78456573c2d8dbc839de96d779db7b39":[1,0,0,256,0],
 "classvrv_1_1_sb.html":[1,0,0,257],
 "classvrv_1_1_sb.html#a1199063c049c955f5e3a1418a039c7f5":[1,0,0,257,0],
-"classvrv_1_1_sb.html#a28c3b2f4003c0a24e9526767aa2b3948":[1,0,0,257,6],
-"classvrv_1_1_sb.html#a4e2cd79f3b1d415e2de87baa6a90b38b":[1,0,0,257,1]
+"classvrv_1_1_sb.html#a28c3b2f4003c0a24e9526767aa2b3948":[1,0,0,257,6]
 };

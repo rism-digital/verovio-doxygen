@@ -34,6 +34,7 @@ var classvrv_1_1_options =
     [ "m_defaultRightMargin", "classvrv_1_1_options.html#a501b8bf44d6d0d7ea47b8cb8e3be2935", null ],
     [ "m_defaultTopMargin", "classvrv_1_1_options.html#aefc4eff98ae3f05cdd712070aa696040", null ],
     [ "m_deprecated", "classvrv_1_1_options.html#a7c05c180e98edd4f8422bbe61b56b36f", null ],
+    [ "m_dynamDist", "classvrv_1_1_options.html#afa488d5e3725d1f06caf036856e9f0be", null ],
     [ "m_elementMargins", "classvrv_1_1_options.html#a61eb54b3d98171f50a13088b53ee28b0", null ],
     [ "m_engravingDefaults", "classvrv_1_1_options.html#a2f3aedad50e6626c21a4406822440893", null ],
     [ "m_evenNoteSpacing", "classvrv_1_1_options.html#a47a6b8323bcd89b41cfe0c105f4b2855", null ],

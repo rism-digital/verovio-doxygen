@@ -185,6 +185,7 @@ var hierarchy =
       [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
+      [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
       [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
     ] ],
