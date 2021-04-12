@@ -123,7 +123,7 @@ var searchData=
   ['getnoteorchorddur_429',['GetNoteOrChordDur',['../classvrv_1_1_duration_interface.html#aec84ae43f7d2b25df6e3b9f05aa4bea7',1,'vrv::DurationInterface']]],
   ['getnumberoflines_430',['GetNumberOfLines',['../classvrv_1_1_text_dir_interface.html#a9025c812fe7d2f34dd87b74fcaf66c65',1,'vrv::TextDirInterface']]],
   ['getobject_431',['GetObject',['../classvrv_1_1_floating_positioner.html#a4a2d68cb0bedc4e157d87bda473c0afa',1,'vrv::FloatingPositioner']]],
-  ['getoptimallayerlocation_432',['GetOptimalLayerLocation',['../classvrv_1_1_rest.html#a3579490f4b1be6f6f6ca45384000a151',1,'vrv::Rest']]],
+  ['getoptimallayerlocation_432',['GetOptimalLayerLocation',['../classvrv_1_1_m_rest.html#abf035720c4ba14a4ad90df8e16f21af4',1,'vrv::MRest::GetOptimalLayerLocation()'],['../classvrv_1_1_rest.html#a3579490f4b1be6f6f6ca45384000a151',1,'vrv::Rest::GetOptimalLayerLocation()']]],
   ['getoption_433',['GetOption',['../classvrv_1_1_toolkit.html#a68c3c9a776a1ec7e9734bb7540864e49',1,'vrv::Toolkit']]],
   ['getoptions_434',['GetOptions',['../classvrv_1_1_doc.html#a76da40d9080851c199899b30c6c6c9ac',1,'vrv::Doc::GetOptions()'],['../classvrv_1_1_toolkit.html#aebe87c2bdaa8388550be5529a1c72163',1,'vrv::Toolkit::GetOptions(bool defaultValues) const'],['../group__nodoc.html#gaf661135bee3a565fc0606f55ec0981e7',1,'vrv::Toolkit::GetOptions()']]],
   ['getoutput_435',['GetOutput',['../classvrv_1_1_m_e_i_output.html#ac42d95b55efe169cd73773767193d962',1,'vrv::MEIOutput']]],

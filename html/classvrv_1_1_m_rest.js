@@ -6,6 +6,7 @@ var classvrv_1_1_m_rest =
     [ "ConvertMarkupAnalytical", "classvrv_1_1_m_rest.html#a845ac484506e96521355ced8674bca54", null ],
     [ "GetClassId", "classvrv_1_1_m_rest.html#a673c396056144078104a468161c68eb9", null ],
     [ "GetClassName", "classvrv_1_1_m_rest.html#a92c399e5cc8e7d0649f8d0047648ecb8", null ],
+    [ "GetOptimalLayerLocation", "classvrv_1_1_m_rest.html#abf035720c4ba14a4ad90df8e16f21af4", null ],
     [ "GetPositionInterface", "classvrv_1_1_m_rest.html#a7b6b093deffe67282b38a1cd93f1333a", null ],
     [ "Reset", "classvrv_1_1_m_rest.html#a22ac6f8f4a0c036f50a3468b331b9700", null ],
     [ "ResetDrawing", "classvrv_1_1_m_rest.html#ac99114d25defa897af639d2e2fefd850", null ],
