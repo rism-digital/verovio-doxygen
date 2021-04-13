@@ -817,6 +817,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "vrv::Brush", "classvrv_1_1_brush.html", null ],
+    [ "vrv::ClassRegistrar< T >", "classvrv_1_1_class_registrar.html", null ],
     [ "vrv::ClosestBB", "structvrv_1_1_closest_b_b.html", null ],
     [ "vrv::Comparison", "classvrv_1_1_comparison.html", [
       [ "vrv::ClassIdComparison", "classvrv_1_1_class_id_comparison.html", [
@@ -971,6 +972,7 @@ var hierarchy =
     [ "vrv::IntTree", "structvrv_1_1_int_tree.html", null ],
     [ "vrv::LedgerLine", "classvrv_1_1_ledger_line.html", null ],
     [ "vrv::ObjectComparison", "classvrv_1_1_object_comparison.html", null ],
+    [ "vrv::ObjectFactory", "classvrv_1_1_object_factory.html", null ],
     [ "vrv::ObjectListInterface", "classvrv_1_1_object_list_interface.html", [
       [ "vrv::BeamDrawingInterface", "classvrv_1_1_beam_drawing_interface.html", [
         [ "vrv::Beam", "classvrv_1_1_beam.html", null ],

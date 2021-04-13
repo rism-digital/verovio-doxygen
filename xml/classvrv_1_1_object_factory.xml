@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classvrv_1_1_object_factory" kind="class" language="C++" prot="public">
+    <compoundname>vrv::ObjectFactory</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classvrv_1_1_object_factory_1ae5762009efb83b610c4ad33001e3750d" prot="public" static="no" mutable="no">
+        <type>MapOfStrConstructors</type>
+        <definition>MapOfStrConstructors vrv::ObjectFactory::s_registry</definition>
+        <argsstring></argsstring>
+        <name>s_registry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1555" column="26" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1555" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classvrv_1_1_object_factory_1abb4435d1b404de50c98ae24d31520786" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_object_factory" kindref="compound">ObjectFactory</ref> *</type>
+        <definition>static ObjectFactory* vrv::ObjectFactory::GetInstance</definition>
+        <argsstring>()</argsstring>
+        <name>GetInstance</name>
+        <briefdescription>
+<para>A static method returning a static object in order to guarantee initialisation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1542" column="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvrv_1_1_object_factory_1a83da56ce4ef8b890f1e224dfea4e8fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+        <definition>Object* vrv::ObjectFactory::Create</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Create the object by making a lookup in the register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1547" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_object_factory_1ac0428b7d10b4a19cf12b82a99ca47335" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::ObjectFactory::Register</definition>
+        <argsstring>(std::string name, std::function&lt; Object *(void)&gt; function)</argsstring>
+        <name>Register</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::function&lt; <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *(void)&gt;</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classvrv_1_1_add" kindref="compound">Add</ref> the name / constructor map entry to the static register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1552" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1536" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1536" bodyend="1556"/>
+    <listofallmembers>
+      <member refid="classvrv_1_1_object_factory_1a83da56ce4ef8b890f1e224dfea4e8fdc" prot="public" virt="non-virtual"><scope>vrv::ObjectFactory</scope><name>Create</name></member>
+      <member refid="classvrv_1_1_object_factory_1abb4435d1b404de50c98ae24d31520786" prot="public" virt="non-virtual"><scope>vrv::ObjectFactory</scope><name>GetInstance</name></member>
+      <member refid="classvrv_1_1_object_factory_1ac0428b7d10b4a19cf12b82a99ca47335" prot="public" virt="non-virtual"><scope>vrv::ObjectFactory</scope><name>Register</name></member>
+      <member refid="classvrv_1_1_object_factory_1ae5762009efb83b610c4ad33001e3750d" prot="public" virt="non-virtual"><scope>vrv::ObjectFactory</scope><name>s_registry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
