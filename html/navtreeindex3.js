@@ -139,7 +139,7 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_class_ids_comparison.html#aaace2adca6ab9c7f7df0cba4924050c9":[1,0,0,70,2],
 "classvrv_1_1_class_ids_comparison.html#af0f0febc946426305ae03d43d680fb8c":[1,0,0,70,3],
 "classvrv_1_1_class_registrar.html":[1,0,0,71],
-"classvrv_1_1_class_registrar.html#ad4813e7c55072f278286ff449be69f48":[1,0,0,71,0],
+"classvrv_1_1_class_registrar.html#a2a0036d5b5ceecbd2a12ba3ccedb8d91":[1,0,0,71,0],
 "classvrv_1_1_clef.html":[1,0,0,72],
 "classvrv_1_1_clef.html#a154464a65a0fb41ad1ed83552c880fe8":[1,0,0,72,1],
 "classvrv_1_1_clef.html#a1ba48f8992f81f64e0bfd68116b893d0":[1,0,0,72,11],

@@ -1853,27 +1853,30 @@
 <codeline lineno="1543"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1547"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*<ref refid="classvrv_1_1_object_factory_1a83da56ce4ef8b890f1e224dfea4e8fdc" kindref="member">Create</ref>(std::string<sp/>name);</highlight></codeline>
 <codeline lineno="1548"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1552"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_object_factory_1ac0428b7d10b4a19cf12b82a99ca47335" kindref="member">Register</ref>(std::string<sp/>name,<sp/>std::function&lt;<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)&gt;<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1552"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_object_factory_1aa762c621a31dc9ac0759b860e367bea3" kindref="member">Register</ref>(std::string<sp/>name,<sp/>ClassId<sp/>classId,<sp/>std::function&lt;<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)&gt;<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="1553"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1554"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="1555"><highlight class="normal"><sp/><sp/><sp/><sp/>MapOfStrConstructors<sp/>s_registry;</highlight></codeline>
-<codeline lineno="1556"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="1557"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1558"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1559"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ClassRegistrar</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1560"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1561"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1562" refid="classvrv_1_1_class_registrar" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_class_registrar" kindref="compound">ClassRegistrar</ref><sp/>{</highlight></codeline>
-<codeline lineno="1563"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="1567" refid="classvrv_1_1_class_registrar_1ad4813e7c55072f278286ff449be69f48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_class_registrar_1ad4813e7c55072f278286ff449be69f48" kindref="member">ClassRegistrar</ref>(std::string<sp/>name)</highlight></codeline>
-<codeline lineno="1568"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="1569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_object_factory_1abb4435d1b404de50c98ae24d31520786" kindref="member">ObjectFactory::GetInstance</ref>()-&gt;<ref refid="classvrv_1_1_object_factory_1ac0428b7d10b4a19cf12b82a99ca47335" kindref="member">Register</ref>(name,<sp/>[](</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>-&gt;<sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>T();<sp/>});</highlight></codeline>
-<codeline lineno="1570"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="1571"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="1572"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1573"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1574"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1575"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="1557"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_object_factory_1a08d2fbcb1dc6a2d2e8a869729366fd5a" kindref="member">GetClassIds</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>&amp;classStrings,<sp/>std::vector&lt;ClassId&gt;<sp/>&amp;classIds);</highlight></codeline>
+<codeline lineno="1558"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1559"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1560"><highlight class="normal"><sp/><sp/><sp/><sp/>MapOfStrConstructors<sp/>s_ctorsRegistry;</highlight></codeline>
+<codeline lineno="1561"><highlight class="normal"><sp/><sp/><sp/><sp/>MapOfStrClassIds<sp/>s_classIdsRegistry;</highlight></codeline>
+<codeline lineno="1562"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1563"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1564"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1565"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ClassRegistrar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1566"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1567"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1568" refid="classvrv_1_1_class_registrar" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_class_registrar" kindref="compound">ClassRegistrar</ref><sp/>{</highlight></codeline>
+<codeline lineno="1569"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1573" refid="classvrv_1_1_class_registrar_1a2a0036d5b5ceecbd2a12ba3ccedb8d91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_class_registrar_1a2a0036d5b5ceecbd2a12ba3ccedb8d91" kindref="member">ClassRegistrar</ref>(std::string<sp/>name,<sp/>ClassId<sp/>classId)</highlight></codeline>
+<codeline lineno="1574"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_object_factory_1abb4435d1b404de50c98ae24d31520786" kindref="member">ObjectFactory::GetInstance</ref>()-&gt;<ref refid="classvrv_1_1_object_factory_1aa762c621a31dc9ac0759b860e367bea3" kindref="member">Register</ref>(name,<sp/>classId,<sp/>[](</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>-&gt;<sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>T();<sp/>});</highlight></codeline>
+<codeline lineno="1576"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1577"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1578"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1579"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1580"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1581"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/object.h"/>
   </compounddef>

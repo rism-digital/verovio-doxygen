@@ -52,7 +52,7 @@ var searchData=
   ['chord_177',['Chord',['../classvrv_1_1_chord.html',1,'vrv']]],
   ['classidcomparison_178',['ClassIdComparison',['../classvrv_1_1_class_id_comparison.html',1,'vrv']]],
   ['classidscomparison_179',['ClassIdsComparison',['../classvrv_1_1_class_ids_comparison.html',1,'vrv']]],
-  ['classregistrar_180',['ClassRegistrar',['../classvrv_1_1_class_registrar.html',1,'vrv::ClassRegistrar&lt; T &gt;'],['../classvrv_1_1_class_registrar.html#ad4813e7c55072f278286ff449be69f48',1,'vrv::ClassRegistrar::ClassRegistrar()']]],
+  ['classregistrar_180',['ClassRegistrar',['../classvrv_1_1_class_registrar.html',1,'vrv::ClassRegistrar&lt; T &gt;'],['../classvrv_1_1_class_registrar.html#a2a0036d5b5ceecbd2a12ba3ccedb8d91',1,'vrv::ClassRegistrar::ClassRegistrar()']]],
   ['clearchildren_181',['ClearChildren',['../classvrv_1_1_object.html#a0af864d1b64a70d4ec8b62a520114bde',1,'vrv::Object']]],
   ['clearclusters_182',['ClearClusters',['../classvrv_1_1_chord.html#afca94680f94f3e222e231970bc60e2d7',1,'vrv::Chord::ClearClusters()'],['../classvrv_1_1_ligature.html#a4349458debb941bb30c622f2f87e4b19',1,'vrv::Ligature::ClearClusters()']]],
   ['clearcoordrefs_183',['ClearCoordRefs',['../classvrv_1_1_beam_segment.html#a29c1c949f0d813b5ffc8303515bc804f',1,'vrv::BeamSegment']]],
