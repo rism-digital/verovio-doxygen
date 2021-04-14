@@ -23,7 +23,7 @@ var classvrv_1_1_artic =
     [ "ResetDrawing", "classvrv_1_1_artic.html#a852957c29409c4c3f2c0894d1353dd96", null ],
     [ "ResetVerticalAlignment", "classvrv_1_1_artic.html#a96699bdbf8423b7c51e2620fb3b1b83a", null ],
     [ "SplitArtic", "classvrv_1_1_artic.html#ab6b401bb7dfd502eccd21bf9614bc905", null ],
-    [ "SplitMultival", "classvrv_1_1_artic.html#af1dc17f321cdb328a2bfe93c744f7e13", null ],
+    [ "SplitMultival", "classvrv_1_1_artic.html#ac7bf2f16b9558129980adb1c29b6b0c2", null ],
     [ "m_endSlurPositioners", "classvrv_1_1_artic.html#a2b72f25fa8bc491faae7a148faa62d94", null ],
     [ "m_startSlurPositioners", "classvrv_1_1_artic.html#aeb7492d88bdab31de3f09ffb6adbff05", null ]
 ];

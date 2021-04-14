@@ -5,7 +5,6 @@ var classvrv_1_1_editorial_element =
     [ "~EditorialElement", "classvrv_1_1_editorial_element.html#a60f52f19ea76b7e7b89c46338bbabb00", null ],
     [ "CastOffEncoding", "classvrv_1_1_editorial_element.html#a639ec21fae82c03f57cc3f61a4e66362", null ],
     [ "CastOffSystems", "classvrv_1_1_editorial_element.html#a55eb6f409988796198cbcd14a8abafe9", null ],
-    [ "ConvertMarkupArticEnd", "classvrv_1_1_editorial_element.html#acfb1aa8546096d0b7a874af02b876973", null ],
     [ "ConvertToPageBased", "classvrv_1_1_editorial_element.html#a2c4de467927781e48d6c968d2d8bdf3e", null ],
     [ "ConvertToPageBasedEnd", "classvrv_1_1_editorial_element.html#aba5490648183a9e5b757f43b0bebd445", null ],
     [ "GetClassId", "classvrv_1_1_editorial_element.html#a0167c3d81c50f835b90a102ac396c228", null ],

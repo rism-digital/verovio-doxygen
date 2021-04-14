@@ -16,7 +16,6 @@ var classvrv_1_1_chord =
     [ "Clone", "classvrv_1_1_chord.html#a07f9f5a3d2722d9ae7cca4b40722232e", null ],
     [ "ConvertMarkupAnalytical", "classvrv_1_1_chord.html#a58500ef2d78bf38608369f80ec64bf03", null ],
     [ "ConvertMarkupAnalyticalEnd", "classvrv_1_1_chord.html#a8ead5cf51796bffbe369766983605b7a", null ],
-    [ "ConvertMarkupArticEnd", "classvrv_1_1_chord.html#ab02850228c8b03d9a8e0c33e967f4e5c", null ],
     [ "FilterList", "classvrv_1_1_chord.html#adacd4194892235e47a1c6d79259bd824", null ],
     [ "GetBottomNote", "classvrv_1_1_chord.html#a5ff5cc2fe7d98d2d85b3e984b8ea0591", null ],
     [ "GetClassId", "classvrv_1_1_chord.html#a7da1bd0f574ea8beaa2d056d6dc9a6c2", null ],

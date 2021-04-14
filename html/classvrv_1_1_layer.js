@@ -7,6 +7,7 @@ var classvrv_1_1_layer =
     [ "CalcOnsetOffset", "classvrv_1_1_layer.html#aaac00d03690b56d5c5c61cc3765af867", null ],
     [ "Clone", "classvrv_1_1_layer.html#ad6961cffad65b4347639a7bf93d5e409", null ],
     [ "CloneReset", "classvrv_1_1_layer.html#a0dbcfa79324fe3b15905d8ba97f90131", null ],
+    [ "ConvertMarkupArticEnd", "classvrv_1_1_layer.html#ae4714f7955fca2b17211f4592dfaa91c", null ],
     [ "ConvertToCastOffMensural", "classvrv_1_1_layer.html#ad17da9513b74e8fcfd3e8893a54da16d", null ],
     [ "ConvertToUnCastOffMensural", "classvrv_1_1_layer.html#a0c1820fbd11943a83be7d9fc85bd372c", null ],
     [ "DrawCautionKeySigCancel", "classvrv_1_1_layer.html#a4b87456367ee3f8df018532939334e85", null ],
