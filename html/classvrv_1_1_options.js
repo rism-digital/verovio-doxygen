@@ -48,6 +48,7 @@ var classvrv_1_1_options =
     [ "m_graceRightAlign", "classvrv_1_1_options.html#a89d555af121de6d29815f5c4168f1724", null ],
     [ "m_hairpinSize", "classvrv_1_1_options.html#a68368d266873d514eb6c5d7979d349c3", null ],
     [ "m_hairpinThickness", "classvrv_1_1_options.html#aaccf2619ec1667c06b4df8b395b98f14", null ],
+    [ "m_harmDist", "classvrv_1_1_options.html#a23980028d938c3c114c9fb967ca63597", null ],
     [ "m_header", "classvrv_1_1_options.html#aa08a14710d2bb6bda9719aee5ceb721e", null ],
     [ "m_help", "classvrv_1_1_options.html#a117943c7fd1e2d7c59027278fbd11788", null ],
     [ "m_humType", "classvrv_1_1_options.html#a2f7899685445e82ff96770b404cf8410", null ],

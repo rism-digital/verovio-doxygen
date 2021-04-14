@@ -57,6 +57,7 @@ var classvrv_1_1_doc =
     [ "GetPages", "classvrv_1_1_doc.html#abe3b780b5309b75326beac396cc5677c", null ],
     [ "GetRightMargin", "classvrv_1_1_doc.html#a3df63ef3ab0a7aab8959c915413846f3", null ],
     [ "GetScore", "classvrv_1_1_doc.html#a9f36424c62698289922dc1944c81372b", null ],
+    [ "GetStaffDistance", "classvrv_1_1_doc.html#acfd21f56e06c5e0788e2791f8d482093", null ],
     [ "GetTextGlyphAdvX", "classvrv_1_1_doc.html#ad6c11494afb920fc535df2a7a9f3de06", null ],
     [ "GetTextGlyphDescender", "classvrv_1_1_doc.html#a991351c9ef13a9d6c3d957aee2d84292", null ],
     [ "GetTextGlyphHeight", "classvrv_1_1_doc.html#ac5a5b6f36e6dd6cc72a6492602fcc0e1", null ],
