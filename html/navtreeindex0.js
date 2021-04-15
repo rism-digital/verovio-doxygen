@@ -87,10 +87,11 @@ var NAVTREEINDEX0 =
 "classvrv_1_1_adjust_beam_params.html":[1,0,0,9],
 "classvrv_1_1_adjust_beam_params.html#a10af3e2f98510099e04dfaabca32aed5":[1,0,0,9,0],
 "classvrv_1_1_adjust_beam_params.html#a1741889dfc5d1e9aff625898c2967e06":[1,0,0,9,2],
-"classvrv_1_1_adjust_beam_params.html#a1e5583ec7029699e452fbadfb9529f27":[1,0,0,9,4],
-"classvrv_1_1_adjust_beam_params.html#a3501b66f591d69e49e7753b261c2a340":[1,0,0,9,6],
+"classvrv_1_1_adjust_beam_params.html#a1e5583ec7029699e452fbadfb9529f27":[1,0,0,9,5],
+"classvrv_1_1_adjust_beam_params.html#a3501b66f591d69e49e7753b261c2a340":[1,0,0,9,7],
 "classvrv_1_1_adjust_beam_params.html#a56175621e38aa544fa1c927443349bc2":[1,0,0,9,3],
-"classvrv_1_1_adjust_beam_params.html#ab1698f0b6576a4faa89e6dfaf092cdad":[1,0,0,9,5],
+"classvrv_1_1_adjust_beam_params.html#a829b4c7b25dd482b8a7a25466969ce99":[1,0,0,9,4],
+"classvrv_1_1_adjust_beam_params.html#ab1698f0b6576a4faa89e6dfaf092cdad":[1,0,0,9,6],
 "classvrv_1_1_adjust_beam_params.html#acf0a2bf8e8d00a9ae728a0f6e9462eb6":[1,0,0,9,1],
 "classvrv_1_1_adjust_clefs_params.html":[1,0,0,10],
 "classvrv_1_1_adjust_clefs_params.html#a0f5b0782693b5fb777ad4818bb7a69a4":[1,0,0,10,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classvrv_1_1_align_vertically_params.html#a4768981e2e7b392e9c09c47b24f864ce":[1,0,0,32,5],
 "classvrv_1_1_align_vertically_params.html#a4e407dbb28a97b5fd13c25c1efad424b":[1,0,0,32,1],
 "classvrv_1_1_align_vertically_params.html#a4f03b93dfa2b4d45f3f76bd666fdac8e":[1,0,0,32,8],
-"classvrv_1_1_align_vertically_params.html#a56bf3f8f55ebcd38c160d12d1e53e902":[1,0,0,32,2],
-"classvrv_1_1_align_vertically_params.html#a57489f4fb411c547c6b0b02bb2f4e489":[1,0,0,32,0]
+"classvrv_1_1_align_vertically_params.html#a56bf3f8f55ebcd38c160d12d1e53e902":[1,0,0,32,2]
 };
