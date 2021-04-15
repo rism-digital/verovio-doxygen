@@ -7,6 +7,8 @@ var classvrv_1_1_dots =
     [ "GetDotLocsForStaff", "classvrv_1_1_dots.html#a5dd44a19a36163983efa03a8bf3675c3", null ],
     [ "GetMapOfDotLocs", "classvrv_1_1_dots.html#ad0233f8f09f31b39be270f8eab02ed85", null ],
     [ "HasToBeAligned", "classvrv_1_1_dots.html#a429f19ff1649201697ba142bc846001b", null ],
+    [ "IsAdjusted", "classvrv_1_1_dots.html#a676104e1a48bdc30dd6892cac86845fc", null ],
+    [ "IsAdjusted", "classvrv_1_1_dots.html#a33efd48a0e3749e267bda9e4d0a3c09d", null ],
     [ "Reset", "classvrv_1_1_dots.html#aadf21dd52ae09cf3ce97f26bda9ad9c7", null ],
     [ "ResetDrawing", "classvrv_1_1_dots.html#a659d9a38c90bf0d98afbdc83c15702b5", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_dots.html#adfc4ce46f30c6307b3977cddc94aa752", null ],

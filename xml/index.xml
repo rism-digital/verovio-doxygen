@@ -144,6 +144,15 @@
     <member refid="classvrv_1_1_adjust_clefs_params_1a0f5b0782693b5fb777ad4818bb7a69a4" kind="variable"><name>m_doc</name></member>
     <member refid="classvrv_1_1_adjust_clefs_params_1ad600eacd51ea7983149cbace76515904" kind="function"><name>AdjustClefsParams</name></member>
   </compound>
+  <compound refid="classvrv_1_1_adjust_dots_params" kind="class"><name>vrv::AdjustDotsParams</name>
+    <member refid="classvrv_1_1_adjust_dots_params_1aab737227de28a8d1158bb7a8abb034a2" kind="variable"><name>m_staffNs</name></member>
+    <member refid="classvrv_1_1_adjust_dots_params_1a830de0627a8abf8ea416aa31a5cecb03" kind="variable"><name>m_elements</name></member>
+    <member refid="classvrv_1_1_adjust_dots_params_1adf31e5ccb8220849e45d6c7d493c55b5" kind="variable"><name>m_dots</name></member>
+    <member refid="classvrv_1_1_adjust_dots_params_1af630dd47a85e3418dac8a67a81303725" kind="variable"><name>m_doc</name></member>
+    <member refid="classvrv_1_1_adjust_dots_params_1ab6bd9f957d6241fb09b47dc8c570a923" kind="variable"><name>m_functor</name></member>
+    <member refid="classvrv_1_1_adjust_dots_params_1a962699b55e53aadcb84a1477499ea8a7" kind="variable"><name>m_functorEnd</name></member>
+    <member refid="classvrv_1_1_adjust_dots_params_1a895dbcab0bb755ce39611457757e09ab" kind="function"><name>AdjustDotsParams</name></member>
+  </compound>
   <compound refid="classvrv_1_1_adjust_floating_positioner_grps_params" kind="class"><name>vrv::AdjustFloatingPositionerGrpsParams</name>
     <member refid="classvrv_1_1_adjust_floating_positioner_grps_params_1a90d3c105d5cdfc94d6a8ba6ac7d2b333" kind="variable"><name>m_classIds</name></member>
     <member refid="classvrv_1_1_adjust_floating_positioner_grps_params_1aea06ed2e50082692b95bf54f7db1468b" kind="variable"><name>m_place</name></member>
@@ -199,6 +208,7 @@
     <member refid="classvrv_1_1_adjust_layers_params_1ac0051934614a15b34f0b568c53423e7f" kind="variable"><name>m_doc</name></member>
     <member refid="classvrv_1_1_adjust_layers_params_1a60fd208bfef1e9547ed41fde818e6f22" kind="variable"><name>m_functor</name></member>
     <member refid="classvrv_1_1_adjust_layers_params_1a609c7780e04d723bdf7e0d6f73e333c0" kind="variable"><name>m_unison</name></member>
+    <member refid="classvrv_1_1_adjust_layers_params_1a2355551fea9afccf78257d3b65dda7e9" kind="variable"><name>m_ignoreDots</name></member>
     <member refid="classvrv_1_1_adjust_layers_params_1ae37732f1671c96568b5a77fec5b9051e" kind="function"><name>AdjustLayersParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_adjust_slurs_params" kind="class"><name>vrv::AdjustSlursParams</name>
@@ -329,6 +339,7 @@
     <member refid="classvrv_1_1_alignment_1a1b1e214293bf75dfacc6e6dbfc561913" kind="function"><name>JustifyX</name></member>
     <member refid="classvrv_1_1_alignment_1a7a0dad8192abed90b8eedc6b5b224dd5" kind="function"><name>AdjustArpeg</name></member>
     <member refid="classvrv_1_1_alignment_1adaeb0f47b3019237561fcc908d565830" kind="function"><name>AdjustAccidX</name></member>
+    <member refid="classvrv_1_1_alignment_1accd249535f98c56e371409a7c964730f" kind="function"><name>AdjustDotsEnd</name></member>
     <member refid="classvrv_1_1_alignment_1a729bf605a4b3566175a47a087b591f42" kind="function"><name>GetAlignmentReference</name></member>
   </compound>
   <compound refid="classvrv_1_1_alignment_reference" kind="class"><name>vrv::AlignmentReference</name>
@@ -1597,9 +1608,12 @@
     <member refid="classvrv_1_1_dots_1a4454529ca358ddefdf610c417d6d28bc" kind="function"><name>Save</name></member>
     <member refid="classvrv_1_1_dots_1a435160807c159bb5db166095ce73c3ab" kind="function"><name>SaveEnd</name></member>
     <member refid="classvrv_1_1_dots_1a19077631e1446d0a0ebe6b2726db2571" kind="variable"><name>m_dotLocsByStaff</name></member>
+    <member refid="classvrv_1_1_dots_1a78da582766204292ca6f7b91082b0b11" kind="variable"><name>m_isAdjusted</name></member>
     <member refid="classvrv_1_1_dots_1a429f19ff1649201697ba142bc846001b" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_dots_1a5dd44a19a36163983efa03a8bf3675c3" kind="function"><name>GetDotLocsForStaff</name></member>
     <member refid="classvrv_1_1_dots_1ad0233f8f09f31b39be270f8eab02ed85" kind="function"><name>GetMapOfDotLocs</name></member>
+    <member refid="classvrv_1_1_dots_1a33efd48a0e3749e267bda9e4d0a3c09d" kind="function"><name>IsAdjusted</name></member>
+    <member refid="classvrv_1_1_dots_1a676104e1a48bdc30dd6892cac86845fc" kind="function"><name>IsAdjusted</name></member>
     <member refid="classvrv_1_1_dots_1a659d9a38c90bf0d98afbdc83c15702b5" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_dots_1adfc4ce46f30c6307b3977cddc94aa752" kind="function"><name>ResetHorizontalAlignment</name></member>
   </compound>
@@ -2962,7 +2976,9 @@
     <member refid="classvrv_1_1_layer_element_1a86604695335158bffcfb946d494a9746" kind="function"><name>GetContentAlignmentDuration</name></member>
     <member refid="classvrv_1_1_layer_element_1a0dce2be85a425e83b627c8d0a9a5b0f6" kind="function"><name>GenerateZoneBounds</name></member>
     <member refid="classvrv_1_1_layer_element_1ad62fa30c878d862cfe97b33dbaad07d2" kind="function"><name>AdjustOverlappingLayers</name></member>
+    <member refid="classvrv_1_1_layer_element_1a7b95b6e0c95bcddc0a6cae62095b2c9b" kind="function"><name>CalcElementHorizontalOverlap</name></member>
     <member refid="classvrv_1_1_layer_element_1ae490412b5c145adfba5f99fc5c914021" kind="function"><name>AdjustBeams</name></member>
+    <member refid="classvrv_1_1_layer_element_1a971d0cc89a6ddfeabfa1d60362d9121c" kind="function"><name>AdjustDots</name></member>
     <member refid="classvrv_1_1_layer_element_1ad80313afbd3e9a3d22a320cfbc6b5685" kind="function"><name>ResetHorizontalAlignment</name></member>
     <member refid="classvrv_1_1_layer_element_1a1911c3248161c492f5d1fdad9e429ae0" kind="function"><name>ResetVerticalAlignment</name></member>
     <member refid="classvrv_1_1_layer_element_1af9a09348014736c76d46b2ba76ef7feb" kind="function"><name>ApplyPPUFactor</name></member>
@@ -3147,6 +3163,7 @@
     <member refid="classvrv_1_1_measure_1aa57855e655555f27ad52e1d750cf76b5" kind="function"><name>SetAlignmentXPos</name></member>
     <member refid="classvrv_1_1_measure_1a273ae3933bf78d6c3d439dadf059a673" kind="function"><name>AdjustArpegEnd</name></member>
     <member refid="classvrv_1_1_measure_1aea5bec3d597b866fa64555b1b13596c4" kind="function"><name>AdjustClefChanges</name></member>
+    <member refid="classvrv_1_1_measure_1aac3c762c3008a89cfda33dee7d4f3a47" kind="function"><name>AdjustDots</name></member>
     <member refid="classvrv_1_1_measure_1a65d7eae484556ea7e423a516f975060d" kind="function"><name>AdjustLayers</name></member>
     <member refid="classvrv_1_1_measure_1afcfbbf264d2da532a19945d12f9dbe3d" kind="function"><name>AdjustAccidX</name></member>
     <member refid="classvrv_1_1_measure_1aad4e143d91b129999b2cf020925b40b1" kind="function"><name>AdjustGraceXPos</name></member>
@@ -3861,9 +3878,7 @@
     <member refid="classvrv_1_1_note_1abc7cd90f6528b7ccb1217e9b6a4f7ab1" kind="function"><name>GetMensuralNoteheadGlyph</name></member>
     <member refid="classvrv_1_1_note_1a3f66a8f4adf8eb4174b3c1ec388ad05d" kind="function"><name>GetNoteheadGlyph</name></member>
     <member refid="classvrv_1_1_note_1a598f4774d77583117482ada9ef5681e4" kind="function"><name>IsVisible</name></member>
-    <member refid="classvrv_1_1_note_1a60635e7c7542aa20c3dcffdc876930d4" kind="function"><name>CalcNoteHorizontalOverlap</name></member>
     <member refid="classvrv_1_1_note_1afe69c2b593977c61102e764d8330a876" kind="function"><name>CorrectDotsPlacement</name></member>
-    <member refid="classvrv_1_1_note_1a1713de7a7281001b09d910a360496c1e" kind="function"><name>AdjustOverlappingLayers</name></member>
     <member refid="classvrv_1_1_note_1a22bad1957f235e5db6a7baad7650a335" kind="function"><name>AdjustArtic</name></member>
     <member refid="classvrv_1_1_note_1aba95f5cbd284314def2cb1601f5b8887" kind="function"><name>ConvertMarkupAnalytical</name></member>
     <member refid="classvrv_1_1_note_1ab21851eeb8b179874169119643b76b3c" kind="function"><name>CalcArtic</name></member>
@@ -3964,6 +3979,8 @@
     <member refid="classvrv_1_1_object_1ae8638bfdf6291004aa08e84311b6e33d" kind="function"><name>AlignMeasuresEnd</name></member>
     <member refid="classvrv_1_1_object_1a9a7ac871bbd388bc57ad3efbcd5523e4" kind="function"><name>AdjustArpeg</name></member>
     <member refid="classvrv_1_1_object_1adbd52d9a86b0a97174b734269a690048" kind="function"><name>AdjustArpegEnd</name></member>
+    <member refid="classvrv_1_1_object_1a1745790d27bcd5c9b11754ea44fdc376" kind="function"><name>AdjustDots</name></member>
+    <member refid="classvrv_1_1_object_1ae0790c79940de6c0bd58e9022043b493" kind="function"><name>AdjustDotsEnd</name></member>
     <member refid="classvrv_1_1_object_1a7f4019d68ac2206469e1ed0de22610a3" kind="function"><name>AdjustGraceXPos</name></member>
     <member refid="classvrv_1_1_object_1a935fdcf665ba277d9a7879a91b8b6f57" kind="function"><name>AdjustGraceXPosEnd</name></member>
     <member refid="classvrv_1_1_object_1a905f84521c7583c3f1cdaf806ceecdaf" kind="function"><name>AdjustHarmGrpsSpacing</name></member>
@@ -5428,7 +5445,7 @@
     <member refid="classvrv_1_1_stem_1ad49dc4ecf60e202bc475e3853828f7ef" kind="variable"><name>m_isVirtual</name></member>
     <member refid="classvrv_1_1_stem_1a37c6e8854a498b6caf17774615a4d4e9" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_stem_1a1e28dcfc4fc249320e82f62a8ab24af0" kind="function"><name>IsSupportedChild</name></member>
-    <member refid="classvrv_1_1_stem_1a3cb598265e053a9206ce31a2b1d3edcf" kind="function"><name>AdjustOverlappingLayers</name></member>
+    <member refid="classvrv_1_1_stem_1a0ca0abab879b30f9b97222de50873c9c" kind="function"><name>CompareToElementPosition</name></member>
     <member refid="classvrv_1_1_stem_1aae4fef92faa5f1d61b1ecab89d3f8e92" kind="function"><name>CalcStem</name></member>
     <member refid="classvrv_1_1_stem_1afa780134a7876f434ce445f725ccb36e" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_stem_1afdb9fb239289d0a3b33b7fafc0df5482" kind="function"><name>AdjustFlagPlacement</name></member>

@@ -17,6 +17,8 @@ var classvrv_1_1_object =
     [ "AdjustClefChanges", "classvrv_1_1_object.html#a6c19b533f485fd10e5649bb5c441c884", null ],
     [ "AdjustCrossStaffYPos", "classvrv_1_1_object.html#abeee6db6564ff37f1fd686033751d51f", null ],
     [ "AdjustCrossStaffYPosEnd", "classvrv_1_1_object.html#a91e929fac940d876aa172b0b6c160c26", null ],
+    [ "AdjustDots", "classvrv_1_1_object.html#a1745790d27bcd5c9b11754ea44fdc376", null ],
+    [ "AdjustDotsEnd", "classvrv_1_1_object.html#ae0790c79940de6c0bd58e9022043b493", null ],
     [ "AdjustFloatingPositionerGrps", "classvrv_1_1_object.html#a757300b40f61c72a86c66fe9df7f8b5d", null ],
     [ "AdjustFloatingPositioners", "classvrv_1_1_object.html#a3b246662209d352732e6f3018efe7748", null ],
     [ "AdjustFloatingPositionersBetween", "classvrv_1_1_object.html#aa7b805cd96f7dc63c47c640d01dd9954", null ],

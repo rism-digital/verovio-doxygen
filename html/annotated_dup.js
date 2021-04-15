@@ -12,6 +12,7 @@ var annotated_dup =
       [ "AdjustArticParams", "classvrv_1_1_adjust_artic_params.html", "classvrv_1_1_adjust_artic_params" ],
       [ "AdjustBeamParams", "classvrv_1_1_adjust_beam_params.html", "classvrv_1_1_adjust_beam_params" ],
       [ "AdjustClefsParams", "classvrv_1_1_adjust_clefs_params.html", "classvrv_1_1_adjust_clefs_params" ],
+      [ "AdjustDotsParams", "classvrv_1_1_adjust_dots_params.html", "classvrv_1_1_adjust_dots_params" ],
       [ "AdjustFloatingPositionerGrpsParams", "classvrv_1_1_adjust_floating_positioner_grps_params.html", "classvrv_1_1_adjust_floating_positioner_grps_params" ],
       [ "AdjustFloatingPositionersBetweenParams", "classvrv_1_1_adjust_floating_positioners_between_params.html", "classvrv_1_1_adjust_floating_positioners_between_params" ],
       [ "AdjustFloatingPositionersParams", "classvrv_1_1_adjust_floating_positioners_params.html", "classvrv_1_1_adjust_floating_positioners_params" ],

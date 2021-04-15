@@ -7,6 +7,7 @@ var classvrv_1_1_measure =
     [ "AdjustAccidX", "classvrv_1_1_measure.html#afcfbbf264d2da532a19945d12f9dbe3d", null ],
     [ "AdjustArpegEnd", "classvrv_1_1_measure.html#a273ae3933bf78d6c3d439dadf059a673", null ],
     [ "AdjustClefChanges", "classvrv_1_1_measure.html#aea5bec3d597b866fa64555b1b13596c4", null ],
+    [ "AdjustDots", "classvrv_1_1_measure.html#aac3c762c3008a89cfda33dee7d4f3a47", null ],
     [ "AdjustGraceXPos", "classvrv_1_1_measure.html#aad4e143d91b129999b2cf020925b40b1", null ],
     [ "AdjustHarmGrpsSpacingEnd", "classvrv_1_1_measure.html#ae9fc5caf5dd3c333254e72661775fd68", null ],
     [ "AdjustLayers", "classvrv_1_1_measure.html#a65d7eae484556ea7e423a516f975060d", null ],
