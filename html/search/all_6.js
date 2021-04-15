@@ -26,7 +26,7 @@ var searchData=
   ['getattributes_338',['GetAttributes',['../classvrv_1_1_object.html#aeb7e152a62704071901972bbfa06062c',1,'vrv::Object']]],
   ['getattspacing_339',['GetAttSpacing',['../classvrv_1_1_staff_alignment.html#a8df2e2be909bfb617bf1cd3b1b278c2d',1,'vrv::StaffAlignment']]],
   ['getavailableoptions_340',['GetAvailableOptions',['../classvrv_1_1_toolkit.html#a2ca1aa7fcc49d2b8b7717dec136c5e86',1,'vrv::Toolkit']]],
-  ['getbarlineoverlapadjustment_341',['GetBarlineOverlapAdjustment',['../classvrv_1_1_hairpin.html#aeae34a06374287b3be5d4ec70234a251',1,'vrv::Hairpin']]],
+  ['getbarlineoverlapadjustment_341',['GetBarlineOverlapAdjustment',['../classvrv_1_1_hairpin.html#ab4c75250f93898dd4ca03555e533a29c',1,'vrv::Hairpin']]],
   ['getbeatrptalignmentduration_342',['GetBeatRptAlignmentDuration',['../classvrv_1_1_beat_rpt.html#a46d10bc1d9d4d3fae07fc25b08621b10',1,'vrv::BeatRpt']]],
   ['getbezierthicknesscoeficient_343',['GetBezierThicknessCoeficient',['../classvrv_1_1_bounding_box.html#ab7d4cb3332c6a35ec86462b37c300279',1,'vrv::BoundingBox']]],
   ['getbottomalignment_344',['GetBottomAlignment',['../classvrv_1_1_system_aligner.html#af9fa20703a935c4c82106847e1949565',1,'vrv::SystemAligner']]],
