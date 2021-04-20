@@ -9,7 +9,7 @@ var classvrv_1_1_note =
     [ "CalcDots", "classvrv_1_1_note.html#ad31936d93922bf87540780a67d8569eb", null ],
     [ "CalcLedgerLines", "classvrv_1_1_note.html#a67c593777c501900d80826cfcf7ed535", null ],
     [ "CalcStem", "classvrv_1_1_note.html#aa0505ca9921082084eb7aa32e38cda96", null ],
-    [ "CalcStemLenInThirdUnits", "classvrv_1_1_note.html#aaf328e99a702f986ee1bf61936b49b28", null ],
+    [ "CalcStemLenInThirdUnits", "classvrv_1_1_note.html#af622ed1ae1720ac416d8e48504859ea6", null ],
     [ "Clone", "classvrv_1_1_note.html#a4fac2b9a8fb11c0b9b5764535eafd777", null ],
     [ "ConvertMarkupAnalytical", "classvrv_1_1_note.html#aba95f5cbd284314def2cb1601f5b8887", null ],
     [ "CorrectDotsPlacement", "classvrv_1_1_note.html#afe69c2b593977c61102e764d8330a876", null ],

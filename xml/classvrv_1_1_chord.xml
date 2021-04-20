@@ -295,15 +295,19 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/chord.h" line="135" column="19"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_chord_1ae97a58764dea954f2974fed9b4ccc828" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_chord_1ae49e85381a3fb78ce988666788f5a73a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
         <definition>virtual int vrv::Chord::CalcStemLenInThirdUnits</definition>
-        <argsstring>(Staff *staff)</argsstring>
+        <argsstring>(Staff *staff, data_STEMDIRECTION stemDir)</argsstring>
         <name>CalcStemLenInThirdUnits</name>
-        <reimplements refid="classvrv_1_1_stemmed_drawing_interface_1a57be8c92b4190c7c74883509057eb0ad">CalcStemLenInThirdUnits</reimplements>
+        <reimplements refid="classvrv_1_1_stemmed_drawing_interface_1ab518eec8db36e95d691419f557bcf45a">CalcStemLenInThirdUnits</reimplements>
         <param>
           <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
+        </param>
+        <param>
+          <type>data_STEMDIRECTION</type>
+          <declname>stemDir</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1369,7 +1373,7 @@
       <member refid="classvrv_1_1_bounding_box_1a80465f84c7190f8cb0a9765693376be2" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>CalcPositionAfterRotation</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2658cb5ed914d5c435de4a3740bff2e7" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>CalcSlope</name></member>
       <member refid="classvrv_1_1_chord_1a820f37e84596cb5f2810faf19075de14" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>CalcStem</name></member>
-      <member refid="classvrv_1_1_chord_1ae97a58764dea954f2974fed9b4ccc828" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>CalcStemLenInThirdUnits</name></member>
+      <member refid="classvrv_1_1_chord_1ae49e85381a3fb78ce988666788f5a73a" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>CalcStemLenInThirdUnits</name></member>
       <member refid="classvrv_1_1_bounding_box_1ae087d56d7ff270c908e3a723be01f6e7" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>CalcThickBezier</name></member>
       <member refid="classvrv_1_1_chord_1a54b8b84056d58b264fc37ba4dfc0c9db" prot="protected" virt="non-virtual"><scope>vrv::Chord</scope><name>CaltOptimalDots</name></member>
       <member refid="classvrv_1_1_object_1ae1320bf0b5a56f033dcc561147225ba7" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>CastOffEncoding</name></member>

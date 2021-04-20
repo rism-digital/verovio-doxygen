@@ -170,16 +170,20 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="279" column="19"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_stemmed_drawing_interface_1a57be8c92b4190c7c74883509057eb0ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+      <memberdef kind="function" id="classvrv_1_1_stemmed_drawing_interface_1ab518eec8db36e95d691419f557bcf45a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>int</type>
         <definition>virtual int vrv::StemmedDrawingInterface::CalcStemLenInThirdUnits</definition>
-        <argsstring>(Staff *staff)=0</argsstring>
+        <argsstring>(Staff *staff, data_STEMDIRECTION stemDir)=0</argsstring>
         <name>CalcStemLenInThirdUnits</name>
-        <reimplementedby refid="classvrv_1_1_chord_1ae97a58764dea954f2974fed9b4ccc828">CalcStemLenInThirdUnits</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_note_1aaf328e99a702f986ee1bf61936b49b28">CalcStemLenInThirdUnits</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_chord_1ae49e85381a3fb78ce988666788f5a73a">CalcStemLenInThirdUnits</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_note_1af622ed1ae1720ac416d8e48504859ea6">CalcStemLenInThirdUnits</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
+        </param>
+        <param>
+          <type>data_STEMDIRECTION</type>
+          <declname>stemDir</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -560,7 +564,7 @@
     </collaborationgraph>
     <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="246" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="246" bodyend="288"/>
     <listofallmembers>
-      <member refid="classvrv_1_1_stemmed_drawing_interface_1a57be8c92b4190c7c74883509057eb0ad" prot="public" virt="pure-virtual"><scope>vrv::StemmedDrawingInterface</scope><name>CalcStemLenInThirdUnits</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1ab518eec8db36e95d691419f557bcf45a" prot="public" virt="pure-virtual"><scope>vrv::StemmedDrawingInterface</scope><name>CalcStemLenInThirdUnits</name></member>
       <member refid="classvrv_1_1_stemmed_drawing_interface_1a0dd608248567f09598a5bf79502c6df2" prot="public" virt="non-virtual"><scope>vrv::StemmedDrawingInterface</scope><name>GetDrawingStem</name></member>
       <member refid="classvrv_1_1_stemmed_drawing_interface_1a0e66eb68b203977a9f02aa25fd281fc1" prot="public" virt="non-virtual"><scope>vrv::StemmedDrawingInterface</scope><name>GetDrawingStemDir</name></member>
       <member refid="classvrv_1_1_stemmed_drawing_interface_1abb143107baeb30b8a651005be5631482" prot="public" virt="non-virtual"><scope>vrv::StemmedDrawingInterface</scope><name>GetDrawingStemEnd</name></member>
