@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"tabgrp_8h_source.html":[2,0,147],
 "tabrhythm_8h_source.html":[2,0,148],
 "tempo_8h_source.html":[2,0,149],
 "text_8h_source.html":[2,0,150],
