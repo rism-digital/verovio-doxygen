@@ -26,6 +26,7 @@ var classvrv_1_1_doc =
     [ "GetAdjustedDrawingPageWidth", "classvrv_1_1_doc.html#a71b430700d764832659b7aff1f78a8bd", null ],
     [ "GetBottomMargin", "classvrv_1_1_doc.html#a5f09c6986d723456ba22e01f9eaf95f0", null ],
     [ "GetClassId", "classvrv_1_1_doc.html#ab032fe3514cf8bb156c066687e3550c2", null ],
+    [ "GetCueScaling", "classvrv_1_1_doc.html#a396a023e43889afb8c83bc368cada12b", null ],
     [ "GetCueSize", "classvrv_1_1_doc.html#aa31b34923fb0e5b4f062f36f5793a734", null ],
     [ "GetDrawingBarLineWidth", "classvrv_1_1_doc.html#a1a3b982ebffef07e95fdabb6ca473304", null ],
     [ "GetDrawingBeamWhiteWidth", "classvrv_1_1_doc.html#accb8f60809807d85d5fe168fde8e770d", null ],
