@@ -228,8 +228,8 @@ var hierarchy =
           [ "vrv::Stem", "classvrv_1_1_stem.html", null ],
           [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
           [ "vrv::Syllable", "classvrv_1_1_syllable.html", null ],
+          [ "vrv::TabDurSym", "classvrv_1_1_tab_dur_sym.html", null ],
           [ "vrv::TabGrp", "classvrv_1_1_tab_grp.html", null ],
-          [ "vrv::TabRhythm", "classvrv_1_1_tab_rhythm.html", null ],
           [ "vrv::TimestampAttr", "classvrv_1_1_timestamp_attr.html", null ],
           [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ],
           [ "vrv::TupletBracket", "classvrv_1_1_tuplet_bracket.html", null ],
@@ -472,7 +472,7 @@ var hierarchy =
       [ "vrv::Sb", "classvrv_1_1_sb.html", null ],
       [ "vrv::Score", "classvrv_1_1_score.html", null ],
       [ "vrv::Section", "classvrv_1_1_section.html", null ],
-      [ "vrv::TabRhythm", "classvrv_1_1_tab_rhythm.html", null ],
+      [ "vrv::TabDurSym", "classvrv_1_1_tab_dur_sym.html", null ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
     ] ],
     [ "AttNotationType", null, [

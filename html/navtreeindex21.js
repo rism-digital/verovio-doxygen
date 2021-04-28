@@ -2,8 +2,8 @@ var NAVTREEINDEX21 =
 {
 "system_8h_source.html":[2,0,145],
 "systemelement_8h_source.html":[2,0,146],
-"tabgrp_8h_source.html":[2,0,147],
-"tabrhythm_8h_source.html":[2,0,148],
+"tabdursym_8h_source.html":[2,0,147],
+"tabgrp_8h_source.html":[2,0,148],
 "tempo_8h_source.html":[2,0,149],
 "text_8h_source.html":[2,0,150],
 "textdirinterface_8h_source.html":[2,0,151],

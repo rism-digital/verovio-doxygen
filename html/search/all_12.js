@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['tabgrp_982',['TabGrp',['../classvrv_1_1_tab_grp.html',1,'vrv']]],
-  ['tabrhythm_983',['TabRhythm',['../classvrv_1_1_tab_rhythm.html',1,'vrv']]],
+  ['tabdursym_982',['TabDurSym',['../classvrv_1_1_tab_dur_sym.html',1,'vrv']]],
+  ['tabgrp_983',['TabGrp',['../classvrv_1_1_tab_grp.html',1,'vrv']]],
   ['tempo_984',['Tempo',['../classvrv_1_1_tempo.html',1,'vrv']]],
   ['text_985',['Text',['../classvrv_1_1_text.html',1,'vrv']]],
   ['textdirinterface_986',['TextDirInterface',['../classvrv_1_1_text_dir_interface.html',1,'vrv']]],

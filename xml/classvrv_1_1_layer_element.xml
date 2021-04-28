@@ -43,8 +43,8 @@
     <derivedcompoundref refid="classvrv_1_1_stem" prot="public" virt="non-virtual">vrv::Stem</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_syl" prot="public" virt="non-virtual">vrv::Syl</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_syllable" prot="public" virt="non-virtual">vrv::Syllable</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_tab_dur_sym" prot="public" virt="non-virtual">vrv::TabDurSym</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_tab_grp" prot="public" virt="non-virtual">vrv::TabGrp</derivedcompoundref>
-    <derivedcompoundref refid="classvrv_1_1_tab_rhythm" prot="public" virt="non-virtual">vrv::TabRhythm</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_timestamp_attr" prot="public" virt="non-virtual">vrv::TimestampAttr</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_tuplet" prot="public" virt="non-virtual">vrv::Tuplet</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_tuplet_bracket" prot="public" virt="non-virtual">vrv::TupletBracket</derivedcompoundref>
@@ -107,8 +107,8 @@
         <reimplementedby refid="classvrv_1_1_timestamp_attr_1a18518bfeb14edf87293657d25cb5ef30">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_plica_1aa0d31cf6a7bec8c36e3cd7806e32e6cf">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_grace_grp_1a513e21b0cd7a353e6df39c76e4e55e8c">Reset</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_tab_rhythm_1a4409c4d8cc37302e70268147ffed72c7">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_tab_grp_1aec861a67a88f0ea1f0f1333b36da40ba">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tab_dur_sym_1a35e719fd0e6335bc3f56892252db16cd">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_m_space_1aabc8c405d293b80fffc2f8ae5ef90ac8">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_dot_1a573879ea0cb5a2aa550fb99faf7f0a52">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_verse_1a274a32008d98d318d126e70dd812948b">Reset</reimplementedby>
@@ -164,8 +164,8 @@
         <reimplementedby refid="classvrv_1_1_timestamp_attr_1a6669b06b78ccbdfae7e5f98776bdc131">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_plica_1a13fbdad4acb83168e601c1d531a3e758">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_grace_grp_1a62d6db363b7a034da6d8fbcbf41a27fe">GetClassId</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_tab_rhythm_1aa091c3c9f5927612a61a73f74897721b">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_tab_grp_1add808f85d3f7afa207e372d9fba64470">GetClassId</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tab_dur_sym_1a224043358b872bdb1680c80b920629be">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_m_space_1a408a039a39dde604139de50be00e8475">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_dot_1a1bafb9e6824ae5082f44834ad5a15865">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_verse_1a59896421a993ca60e2b16ff90ffbe865">GetClassId</reimplementedby>
@@ -825,7 +825,7 @@
         <definition>virtual bool vrv::LayerElement::HasToBeAligned</definition>
         <argsstring>() const</argsstring>
         <name>HasToBeAligned</name>
-        <reimplementedby refid="classvrv_1_1_tab_rhythm_1acc33b39b919dd9f6107cf70308fc021b">HasToBeAligned</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tab_dur_sym_1a0ebf0b6997a94816ef2e68a05646ca6f">HasToBeAligned</reimplementedby>
         <reimplementedby refid="classvrv_1_1_proport_1a93a3f2259394b5768f11e07a43cfe487">HasToBeAligned</reimplementedby>
         <reimplementedby refid="classvrv_1_1_beat_rpt_1a318b864622eae1817be3a5de65663e2d">HasToBeAligned</reimplementedby>
         <reimplementedby refid="classvrv_1_1_artic_1aa91fcd05ac62367cb95ac5cc7eb19f23">HasToBeAligned</reimplementedby>
@@ -1860,6 +1860,12 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="48">
+        <label>vrv::TabDurSym</label>
+        <link refid="classvrv_1_1_tab_dur_sym"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="28">
         <label>vrv::KeySig</label>
         <link refid="classvrv_1_1_key_sig"/>
@@ -1974,7 +1980,7 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="48">
+      <node id="49">
         <label>vrv::TabGrp</label>
         <link refid="classvrv_1_1_tab_grp"/>
         <childnode refid="1" relation="public-inheritance">
@@ -2001,12 +2007,6 @@
       <node id="46">
         <label>vrv::Syl</label>
         <link refid="classvrv_1_1_syl"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="49">
-        <label>vrv::TabRhythm</label>
-        <link refid="classvrv_1_1_tab_rhythm"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
