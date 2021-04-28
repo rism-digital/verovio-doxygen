@@ -111,7 +111,7 @@ var searchData=
   ['getmaxstaffsize_423',['GetMaxStaffSize',['../classvrv_1_1_score_def.html#a9228bda856401d3115b2f2a0023a390a',1,'vrv::ScoreDef::GetMaxStaffSize()'],['../classvrv_1_1_staff_grp.html#a511a37516b151679be18a3eb13385647',1,'vrv::StaffGrp::GetMaxStaffSize()']]],
   ['getmaxtime_424',['GetMaxTime',['../classvrv_1_1_measure_aligner.html#af9c8e8bed146847a7cfd14db87164ff8',1,'vrv::MeasureAligner']]],
   ['getmeasureidx_425',['GetMeasureIdx',['../classvrv_1_1_measure.html#a576172291cab812579e24126e5151526',1,'vrv::Measure']]],
-  ['getmei_426',['GetMEI',['../classvrv_1_1_toolkit.html#ad6270e2b075118275fc35ea6aa5a9198',1,'vrv::Toolkit']]],
+  ['getmei_426',['GetMEI',['../classvrv_1_1_toolkit.html#a32c3ff9da41c302c83c6f8d52fc11467',1,'vrv::Toolkit']]],
   ['getmensuralnoteheadglyph_427',['GetMensuralNoteheadGlyph',['../classvrv_1_1_note.html#abc7cd90f6528b7ccb1217e9b6a4f7ab1',1,'vrv::Note']]],
   ['getmidiexportdone_428',['GetMidiExportDone',['../classvrv_1_1_doc.html#ab09d1142c97b77fdbb612c787049b907',1,'vrv::Doc']]],
   ['getmidivaluesforelement_429',['GetMIDIValuesForElement',['../classvrv_1_1_toolkit.html#a1b7c6ef82b1ec90af16f8f32da24dd5f',1,'vrv::Toolkit']]],
