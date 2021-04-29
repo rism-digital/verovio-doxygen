@@ -5,5 +5,6 @@ var classvrv_1_1_multi_rest =
     [ "Clone", "classvrv_1_1_multi_rest.html#afe027428df1507780d133d2923891d3d", null ],
     [ "GetClassId", "classvrv_1_1_multi_rest.html#a5626d966235172cca62a2ec49eaa948a", null ],
     [ "GetClassName", "classvrv_1_1_multi_rest.html#ae8ef756ef78bc1f72210ab4a99bd4f89", null ],
-    [ "Reset", "classvrv_1_1_multi_rest.html#ab51f1dff1cdb12d373ed4d42e9b3ab89", null ]
+    [ "Reset", "classvrv_1_1_multi_rest.html#ab51f1dff1cdb12d373ed4d42e9b3ab89", null ],
+    [ "UseBlockStyle", "classvrv_1_1_multi_rest.html#a17707f93b4172945ae25d805f5b09ffc", null ]
 ];

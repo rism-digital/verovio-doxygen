@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"classvrv_1_1data___l_i_n_e_w_i_d_t_h.html#ab6e10db64a13f136a5088bcb1d0350f8":[1,0,0,89,4],
+"classvrv_1_1data___l_i_n_e_w_i_d_t_h.html#aba64e3b25a2161ac3ad13461ef27f01b":[1,0,0,89,0],
 "classvrv_1_1data___l_i_n_e_w_i_d_t_h.html#ac470de90c93268b26569aa861d2dfd24":[1,0,0,89,8],
 "classvrv_1_1data___l_i_n_e_w_i_d_t_h.html#ac692e75afb762fe79ddbaac84d14cdde":[1,0,0,89,11],
 "classvrv_1_1data___l_i_n_e_w_i_d_t_h.html#adcfc7e5713a48e1b97fe374124f23d46":[1,0,0,89,7],
@@ -98,8 +100,8 @@ var NAVTREEINDEX20 =
 "functions_e.html":[1,3,0,4],
 "functions_enum.html":[1,3,4],
 "functions_f.html":[1,3,0,5],
-"functions_func.html":[1,3,1,0],
 "functions_func.html":[1,3,1],
+"functions_func.html":[1,3,1,0],
 "functions_func_c.html":[1,3,1,1],
 "functions_func_d.html":[1,3,1,2],
 "functions_func_e.html":[1,3,1,3],
@@ -143,16 +145,16 @@ var NAVTREEINDEX20 =
 "group__nodoc.html#ga11e13d1850cadf28b00a85fde655e133":[0,0,2],
 "group__nodoc.html#ga409f7f6411678f02d7bc9a73be29c7d6":[0,0,0],
 "group__nodoc.html#ga409f7f6411678f02d7bc9a73be29c7d6":[1,0,0,311,5],
-"group__nodoc.html#ga5ae3fb587d96567263bfebc1261ff4d9":[1,0,0,311,47],
 "group__nodoc.html#ga5ae3fb587d96567263bfebc1261ff4d9":[0,0,6],
+"group__nodoc.html#ga5ae3fb587d96567263bfebc1261ff4d9":[1,0,0,311,47],
 "group__nodoc.html#ga5b3b3c80844a342a465d4887bb599ae0":[1,0,0,311,48],
 "group__nodoc.html#ga602e2e1f79bb73affe064cb9ba7a4f5a":[1,0,0,311,20],
 "group__nodoc.html#ga7d77de8b102acd2f07f0fa23270f82a5":[0,0,5],
 "group__nodoc.html#ga7d77de8b102acd2f07f0fa23270f82a5":[1,0,0,311,46],
 "group__nodoc.html#ga942ab5856517907ea4f2082d9f35f532":[1,0,0,311,10],
 "group__nodoc.html#ga942ab5856517907ea4f2082d9f35f532":[0,0,1],
-"group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d":[0,0,4],
 "group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d":[1,0,0,311,35],
+"group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d":[0,0,4],
 "group__nodoc.html#gaf661135bee3a565fc0606f55ec0981e7":[1,0,0,311,18],
 "group__nodoc.html#gaf661135bee3a565fc0606f55ec0981e7":[0,0,3],
 "grpsym_8h_source.html":[2,0,62],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "subst_8h_source.html":[2,0,138],
 "supplied_8h_source.html":[2,0,139],
 "surface_8h_source.html":[2,0,140],
-"svg_8h_source.html":[2,0,141],
-"svgdevicecontext_8h_source.html":[2,0,142],
-"syl_8h_source.html":[2,0,143]
+"svg_8h_source.html":[2,0,141]
 };
