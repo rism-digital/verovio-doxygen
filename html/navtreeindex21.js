@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"surface_8h_source.html":[2,0,140],
+"svg_8h_source.html":[2,0,141],
 "svgdevicecontext_8h_source.html":[2,0,142],
 "syl_8h_source.html":[2,0,143],
 "syllable_8h_source.html":[2,0,144],
