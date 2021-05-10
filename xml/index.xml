@@ -4364,17 +4364,25 @@
     <member refid="classvrv_1_1_option_int_map_1a5b5a1d8bec7d96ba94bdcb90acd74de2" kind="function"><name>GetStrValuesAsStr</name></member>
   </compound>
   <compound refid="classvrv_1_1_option_json" kind="class"><name>vrv::OptionJson</name>
-    <member refid="classvrv_1_1_option_json_1a1f2388458473973b71734faec8f21e81" kind="typedef"><name>JsonPath</name></member>
-    <member refid="classvrv_1_1_option_json_1acc6d4ec3d80fe3d3cf71e2c250865a7f" kind="variable"><name>m_values</name></member>
-    <member refid="classvrv_1_1_option_json_1a3b7e45f3900aacd0547aa37e4171e9f8" kind="variable"><name>m_defaultValues</name></member>
     <member refid="classvrv_1_1_option_json_1aa24d69161382f7a352d6f5f12c7aa8a0" kind="function"><name>OptionJson</name></member>
     <member refid="classvrv_1_1_option_json_1a62b72c3fda56b2afae608565d54b333a" kind="function"><name>~OptionJson</name></member>
-    <member refid="classvrv_1_1_option_json_1a89c98394002c05e9963e5dc804308c8c" kind="function"><name>Init</name></member>
-    <member refid="classvrv_1_1_option_json_1a741d4a204fe7b3c67b94a492c20e3676" kind="function"><name>SetValue</name></member>
+    <member refid="classvrv_1_1_option_json_1ac28758dc9d61ff7abce305ce40d88803" kind="function"><name>CopyTo</name></member>
+    <member refid="classvrv_1_1_option_json_1a6787572e1ab3606358af0aa341571b14" kind="function"><name>Init</name></member>
+    <member refid="classvrv_1_1_option_json_1abbfe45064b60f80519b5f54528245377" kind="function"><name>SetValue</name></member>
+    <member refid="classvrv_1_1_option_json_1aa02008e4509e62e76704d18e6419983b" kind="function"><name>GetStrValue</name></member>
+    <member refid="classvrv_1_1_option_json_1a3044e945720460b954152a3ffc3affec" kind="function"><name>GetDefaultStrValue</name></member>
+    <member refid="classvrv_1_1_option_json_1aac2951d68e22ec5baf9001501e671604" kind="function"><name>HasValue</name></member>
     <member refid="classvrv_1_1_option_json_1afb806a1149d89680015d6d18e9e24ccf" kind="function"><name>GetIntValue</name></member>
     <member refid="classvrv_1_1_option_json_1a97fdcb0bb957de49ac9d150b724b1381" kind="function"><name>GetDoubleValue</name></member>
     <member refid="classvrv_1_1_option_json_1a4f22e2b79f1e253a43f5d6503f36be0d" kind="function"><name>UpdateNodeValue</name></member>
+    <member refid="classvrv_1_1_option_json_1a1f2388458473973b71734faec8f21e81" kind="typedef"><name>JsonPath</name></member>
+    <member refid="classvrv_1_1_option_json_1a522edd15b44105b3ed5818c2c8a7413d" kind="variable"><name>m_source</name></member>
+    <member refid="classvrv_1_1_option_json_1acc6d4ec3d80fe3d3cf71e2c250865a7f" kind="variable"><name>m_values</name></member>
+    <member refid="classvrv_1_1_option_json_1a3b7e45f3900aacd0547aa37e4171e9f8" kind="variable"><name>m_defaultValues</name></member>
+    <member refid="classvrv_1_1_option_json_1a84f4c87bc0217e8bce496ef9610222ea" kind="function"><name>GetSource</name></member>
+    <member refid="classvrv_1_1_option_json_1a7468c78b4cde7fed6bbc56d4e16bb6e4" kind="function"><name>GetValue</name></member>
     <member refid="classvrv_1_1_option_json_1a8359351bb326cead846919c16f263298" kind="function"><name>StringPath2NodePath</name></member>
+    <member refid="classvrv_1_1_option_json_1a5ff9ad862e7310387519ee222ea335e4" kind="function"><name>ReadJson</name></member>
   </compound>
   <compound refid="classvrv_1_1_options" kind="class"><name>vrv::Options</name>
     <member refid="classvrv_1_1_options_1a35cf54378bce2976a1a8185ef9f88c06" kind="variable"><name>m_baseOptions</name></member>
@@ -4442,6 +4450,7 @@
     <member refid="classvrv_1_1_options_1afa488d5e3725d1f06caf036856e9f0be" kind="variable"><name>m_dynamDist</name></member>
     <member refid="classvrv_1_1_options_1a84f225d15f6a57af8cfbbb251d34687a" kind="variable"><name>m_clefChangeFactor</name></member>
     <member refid="classvrv_1_1_options_1a2f3aedad50e6626c21a4406822440893" kind="variable"><name>m_engravingDefaults</name></member>
+    <member refid="classvrv_1_1_options_1a40e39eada7c773a7ef4a4425c0d3cb59" kind="variable"><name>m_engravingDefaultsFile</name></member>
     <member refid="classvrv_1_1_options_1a02ded0c8e17a9eb4a2abaf311ca5603e" kind="variable"><name>m_font</name></member>
     <member refid="classvrv_1_1_options_1a774df12da8a9067314eb91a4d31bfb42" kind="variable"><name>m_graceFactor</name></member>
     <member refid="classvrv_1_1_options_1a68a4f1007a6e61c01f8b20559f9ebf06" kind="variable"><name>m_graceRhythmAlign</name></member>
@@ -6669,6 +6678,9 @@
     <member refid="options_8h_1acec3439c132d2c7853a87e447fc4a5e0ad5e91ee625a5a91592d700dfc2b74646" kind="enumvalue"><name>SYSTEMDIVIDER_auto</name></member>
     <member refid="options_8h_1acec3439c132d2c7853a87e447fc4a5e0a840c0d0ed60555db18434dd8a200cf61" kind="enumvalue"><name>SYSTEMDIVIDER_left</name></member>
     <member refid="options_8h_1acec3439c132d2c7853a87e447fc4a5e0a2e941ce2620861dbd9395b4eced17f15" kind="enumvalue"><name>SYSTEMDIVIDER_left_right</name></member>
+    <member refid="options_8h_1a348cc6ff82212bad624ca42d05266a5f" kind="enum"><name>JsonSource</name></member>
+    <member refid="options_8h_1a348cc6ff82212bad624ca42d05266a5fa27118326006d3829667a400ad23d5d98" kind="enumvalue"><name>String</name></member>
+    <member refid="options_8h_1a348cc6ff82212bad624ca42d05266a5fa2fb403e71d8ade2ba79af3f6c4695d09" kind="enumvalue"><name>FilePath</name></member>
     <member refid="rest_8h_1a970762153eb1e06a28ae4133c27db029" kind="enum"><name>RestLayer</name></member>
     <member refid="rest_8h_1a970762153eb1e06a28ae4133c27db029ae5931b81aba5a583b13fd49f53e804e2" kind="enumvalue"><name>RL_UNSET</name></member>
     <member refid="rest_8h_1a970762153eb1e06a28ae4133c27db029af6c4cd5c50414dc794c6b898be09264c" kind="enumvalue"><name>RL_sameLayer</name></member>

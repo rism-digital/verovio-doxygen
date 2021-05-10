@@ -1,5 +1,13 @@
 var NAVTREEINDEX21 =
 {
+"structvrv_1_1_closest_b_b.html":[1,0,0,74],
+"structvrv_1_1_closest_b_b.html#a7193448e2d6a3148d7efbac14f337f74":[1,0,0,74,1],
+"structvrv_1_1_closest_b_b.html#acdc0607c597cc92e988e9d9c41173d47":[1,0,0,74,0],
+"structvrv_1_1_closest_b_b.html#acea28781d0d1b123aae14c872a6367eb":[1,0,0,74,3],
+"structvrv_1_1_closest_b_b.html#ae4c15a00f3ead7ec067bf72ce647aa55":[1,0,0,74,2],
+"structvrv_1_1_int_tree.html":[1,0,0,156],
+"structvrv_1_1_int_tree.html#ab527660cdce61cc8ae7521d4933fd6fb":[1,0,0,156,0],
+"structvrv_1_1_m_i_d_i_note.html":[1,0,0,184],
 "structvrv_1_1_m_i_d_i_note.html#a1fc8ba2a9c50ec3db16877def29e1e10":[1,0,0,184,1],
 "structvrv_1_1_m_i_d_i_note.html#a32128781fed4395e451720d0567ccac1":[1,0,0,184,0],
 "structvrv_1_1_staff_sort.html":[1,0,0,285],
