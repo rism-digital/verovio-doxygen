@@ -18,6 +18,7 @@ var classvrv_1_1_staff =
     [ "ConvertToCastOffMensural", "classvrv_1_1_staff.html#aefef81d13f6dddad4edb00ba33e220c9", null ],
     [ "DrawingIsVisible", "classvrv_1_1_staff.html#abb9be0b494c5daf6344dccdbfb657a55", null ],
     [ "FillStaffCurrentTimeSpanning", "classvrv_1_1_staff.html#a0315f172bfa34a1b25afa4a62e77db09", null ],
+    [ "GenerateMIDI", "classvrv_1_1_staff.html#a3ce2c8573bacc56a9ef6d6eed96ad6fb", null ],
     [ "GetAlignment", "classvrv_1_1_staff.html#a7a7f13fe4d00ba35ed03b952535027fb", null ],
     [ "GetChildren", "classvrv_1_1_staff.html#aa4a035cb69c6135b5ca21531aa578382", null ],
     [ "GetClassId", "classvrv_1_1_staff.html#a45ab1dbee2599d16bbdd1184e6f499ff", null ],

@@ -972,6 +972,7 @@ var hierarchy =
     ] ],
     [ "vrv::IntTree", "structvrv_1_1_int_tree.html", null ],
     [ "vrv::LedgerLine", "classvrv_1_1_ledger_line.html", null ],
+    [ "vrv::MIDINote", "structvrv_1_1_m_i_d_i_note.html", null ],
     [ "vrv::ObjectComparison", "classvrv_1_1_object_comparison.html", null ],
     [ "vrv::ObjectFactory", "classvrv_1_1_object_factory.html", null ],
     [ "vrv::ObjectListInterface", "classvrv_1_1_object_list_interface.html", [

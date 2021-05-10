@@ -978,6 +978,8 @@
     <member refid="classvrv_1_1_b_trem_1a734f71d5b174eb977b17e3829406173a" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_b_trem_1a40e3dcb4eb672a7aaf44176abe76e63b" kind="function"><name>GetClassId</name></member>
     <member refid="classvrv_1_1_b_trem_1a4dc0461f664a02b7205dd777f209213b" kind="function"><name>IsSupportedChild</name></member>
+    <member refid="classvrv_1_1_b_trem_1a6e00d9fc4421a51dfb72f4aca40a6798" kind="function"><name>GenerateMIDI</name></member>
+    <member refid="classvrv_1_1_b_trem_1afb13f6bdf17e9147c5e54e8491be9e6f" kind="function"><name>CalcIndividualNoteDuration</name></member>
   </compound>
   <compound refid="classvrv_1_1_calc_artic_params" kind="class"><name>vrv::CalcArticParams</name>
     <member refid="classvrv_1_1_calc_artic_params_1adb091f19add11993458ae30b39dc1d4a" kind="variable"><name>m_parent</name></member>
@@ -2105,6 +2107,7 @@
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1ab0078b3ff3c9bc63cffba4a01a8bb315" kind="variable"><name>m_totalTime</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1acb7602c62aa7f79a2b15a9104bc0f8e3" kind="variable"><name>m_transSemi</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1af51a8e71dfbcc0b7e6998e6d3aab6da6" kind="variable"><name>m_currentTempo</name></member>
+    <member refid="classvrv_1_1_generate_m_i_d_i_params_1a074178c8dc189e48de3e862346012808" kind="variable"><name>m_expandedNotes</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1a099869302dfba354a6c7dc86214977c1" kind="variable"><name>m_functor</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1aca7cbb3730c90a286c78f041dbf8094f" kind="function"><name>GenerateMIDIParams</name></member>
   </compound>
@@ -3603,6 +3606,10 @@
     <member refid="classvrv_1_1_meter_sig_1aad14add6fb4178146d32028905bd02dc" kind="function"><name>IsScoreDefElement</name></member>
     <member refid="classvrv_1_1_meter_sig_1a52ae19681b0e8e94cef2481ce90312bf" kind="function"><name>LayerCountInTimeSpan</name></member>
   </compound>
+  <compound refid="structvrv_1_1_m_i_d_i_note" kind="struct"><name>vrv::MIDINote</name>
+    <member refid="structvrv_1_1_m_i_d_i_note_1a1fc8ba2a9c50ec3db16877def29e1e10" kind="variable"><name>pitch</name></member>
+    <member refid="structvrv_1_1_m_i_d_i_note_1a32128781fed4395e451720d0567ccac1" kind="variable"><name>duration</name></member>
+  </compound>
   <compound refid="classvrv_1_1_m_num" kind="class"><name>vrv::MNum</name>
     <member refid="classvrv_1_1_m_num_1a5a8b28ff432e3761ad13047b11967d12" kind="function"><name>MNum</name></member>
     <member refid="classvrv_1_1_m_num_1a5142b6baaa100bdf5c302ff5872900be" kind="function"><name>~MNum</name></member>
@@ -3856,7 +3863,7 @@
     <member refid="classvrv_1_1_note_1a2a7d88dd8c4f5ff265753e00fa94c574" kind="function"><name>SetScoreTimeOffset</name></member>
     <member refid="classvrv_1_1_note_1af2a5f4d49457dd5ce4e6fed0a4813aec" kind="function"><name>SetRealTimeOffsetSeconds</name></member>
     <member refid="classvrv_1_1_note_1aa2980719a6e9b09b72fc4fc8756d1265" kind="function"><name>SetScoreTimeTiedDuration</name></member>
-    <member refid="classvrv_1_1_note_1a639cff79b58f8bf025c3e6c0d216087b" kind="function"><name>SetMIDIPitch</name></member>
+    <member refid="classvrv_1_1_note_1ae08d685d01125eb507e7bcecbae9e886" kind="function"><name>CalcMIDIPitch</name></member>
     <member refid="classvrv_1_1_note_1a22252d0dd455d2500ab57b2798d158f2" kind="function"><name>GetScoreTimeOnset</name></member>
     <member refid="classvrv_1_1_note_1afa15c4328a96d0b5cc52556adf3c9383" kind="function"><name>GetRealTimeOnsetMilliseconds</name></member>
     <member refid="classvrv_1_1_note_1a0a0b1fca33ffb9eee4f4073e2d4db1da" kind="function"><name>GetScoreTimeOffset</name></member>
@@ -5315,6 +5322,7 @@
     <member refid="classvrv_1_1_staff_1a71c2243c3a8920516443bc45557c5783" kind="function"><name>SetFromFacsimile</name></member>
     <member refid="classvrv_1_1_staff_1abd990f1b0d2dd8abe5864c53be8f3cfa" kind="function"><name>CalcStem</name></member>
     <member refid="classvrv_1_1_staff_1a6790f6311e231fb5898d10c2b5499559" kind="function"><name>AdjustSylSpacing</name></member>
+    <member refid="classvrv_1_1_staff_1a3ce2c8573bacc56a9ef6d6eed96ad6fb" kind="function"><name>GenerateMIDI</name></member>
     <member refid="classvrv_1_1_staff_1a9e2afce8dd14778e13c593a3aa00c535" kind="function"><name>AddLedgerLines</name></member>
   </compound>
   <compound refid="classvrv_1_1_staff_alignment" kind="class"><name>vrv::StaffAlignment</name>
@@ -7364,6 +7372,7 @@
     <member refid="attdef_8h_1a1ee2ee7a57f8a27b9bb660ef88f4862a" kind="typedef"><name>data_PERCENT_LIMITED_SIGNED</name></member>
     <member refid="attdef_8h_1ad9287a721cd0413eda2f733fe25120de" kind="typedef"><name>xsdAnyURI_List</name></member>
     <member refid="attdef_8h_1aa7c7517df9aacc51f8ab0bf6a88df736" kind="typedef"><name>xsdPositiveInteger_List</name></member>
+    <member refid="functorparams_8h_1adcadd51592a37d9843ce533142becb91" kind="typedef"><name>MIDINoteSequence</name></member>
     <member refid="vrvdef_8h_1a88f97c731b140ac861b13be697d11724" kind="typedef"><name>ArrayOfObjects</name></member>
     <member refid="vrvdef_8h_1a06296c176a6acafc46e107e1d6ea2eea" kind="typedef"><name>ListOfObjects</name></member>
     <member refid="vrvdef_8h_1af46efe784888a2fd5bb33979da5145bc" kind="typedef"><name>ArrayOfComparisons</name></member>

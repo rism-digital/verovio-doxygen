@@ -185,6 +185,7 @@ var annotated_dup =
       [ "MEIOutput", "classvrv_1_1_m_e_i_output.html", "classvrv_1_1_m_e_i_output" ],
       [ "Mensur", "classvrv_1_1_mensur.html", "classvrv_1_1_mensur" ],
       [ "MeterSig", "classvrv_1_1_meter_sig.html", "classvrv_1_1_meter_sig" ],
+      [ "MIDINote", "structvrv_1_1_m_i_d_i_note.html", "structvrv_1_1_m_i_d_i_note" ],
       [ "MNum", "classvrv_1_1_m_num.html", "classvrv_1_1_m_num" ],
       [ "Mordent", "classvrv_1_1_mordent.html", "classvrv_1_1_mordent" ],
       [ "MRest", "classvrv_1_1_m_rest.html", "classvrv_1_1_m_rest" ],
