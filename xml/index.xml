@@ -615,6 +615,11 @@
     <member refid="classvrv_1_1_att_n_number_like_comparison_1a1a5f5db6a68cc29e53d437d01d1e66b5" kind="function"><name>SetN</name></member>
     <member refid="classvrv_1_1_att_n_number_like_comparison_1a6870e6348a0a779ec9b0d9c51a572d31" kind="function"><name>operator()</name></member>
   </compound>
+  <compound refid="classvrv_1_1_att_visibility_comparison" kind="class"><name>vrv::AttVisibilityComparison</name>
+    <member refid="classvrv_1_1_att_visibility_comparison_1a966c2e11ba0d811b101eaad37f4af624" kind="variable"><name>m_isVisible</name></member>
+    <member refid="classvrv_1_1_att_visibility_comparison_1a0e4f925f0fd4ecb1cea465e5a0a84934" kind="function"><name>AttVisibilityComparison</name></member>
+    <member refid="classvrv_1_1_att_visibility_comparison_1a623a2de70ec186320a6b1f6f1be7c664" kind="function"><name>operator()</name></member>
+  </compound>
   <compound refid="classvrv_1_1_bar_line" kind="class"><name>vrv::BarLine</name>
     <member refid="classvrv_1_1_bar_line_1a1778321d86ec586c12353b49de330e01" kind="function"><name>BarLine</name></member>
     <member refid="classvrv_1_1_bar_line_1a83331e33eca87896ba18383a9d902db4" kind="function"><name>~BarLine</name></member>
@@ -634,7 +639,9 @@
     <member refid="classvrv_1_1_bar_line_attr_1a15b3c95296bbd8ef19ca525a023a5d5c" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_bar_line_attr_1acf78873ec9e3df67f7f3941690c5b382" kind="function"><name>GetClassId</name></member>
     <member refid="classvrv_1_1_bar_line_attr_1a6865e60701904e06646ee3f235773db6" kind="variable"><name>m_isLeft</name></member>
+    <member refid="classvrv_1_1_bar_line_attr_1add6cc628062d9694d77a251ea209f96b" kind="variable"><name>m_noAttr</name></member>
     <member refid="classvrv_1_1_bar_line_attr_1aacc8741e507a5cae412bd75fee75e7c2" kind="function"><name>SetLeft</name></member>
+    <member refid="classvrv_1_1_bar_line_attr_1a3acfafdeace030be8a3d1828ce596a38" kind="function"><name>SetNoAttr</name></member>
   </compound>
   <compound refid="classvrv_1_1_b_box_device_context" kind="class"><name>vrv::BBoxDeviceContext</name>
     <member refid="classvrv_1_1_b_box_device_context_1a736207289f4cd83b7ffac47f0b73574d" kind="function"><name>BBoxDeviceContext</name></member>
@@ -3103,6 +3110,8 @@
     <member refid="classvrv_1_1_measure_1aef403edaac68db7c30caf13d1f411d31" kind="function"><name>SetDrawingLeftBarLine</name></member>
     <member refid="classvrv_1_1_measure_1afeaf5d0b408d6041981cbd4db110e424" kind="function"><name>GetDrawingRightBarLine</name></member>
     <member refid="classvrv_1_1_measure_1a67120179419d0c8f00c5a39ad87023d9" kind="function"><name>SetDrawingRightBarLine</name></member>
+    <member refid="classvrv_1_1_measure_1af089713031fc4c6a4d41188f68f1f29e" kind="function"><name>GetDrawingLeftBarLineByStaffN</name></member>
+    <member refid="classvrv_1_1_measure_1ab408cda9aa5050f75a36d41f99d7c9d1" kind="function"><name>GetDrawingRightBarLineByStaffN</name></member>
     <member refid="classvrv_1_1_measure_1a88634a443925198303a2ab3b490556e0" kind="function"><name>GetLeftBarLine</name></member>
     <member refid="classvrv_1_1_measure_1a2fa5c27bb65c565c92aab2be7dbe9331" kind="function"><name>GetRightBarLine</name></member>
     <member refid="classvrv_1_1_measure_1a8baffbc20023e7b2c63549ae05c83323" kind="function"><name>GetLeftBarLineXRel</name></member>
@@ -3126,6 +3135,12 @@
     <member refid="classvrv_1_1_measure_1ac8572f7f5fc2b99d09d5f4fc5e3e42e2" kind="variable"><name>m_xAbs2</name></member>
     <member refid="classvrv_1_1_measure_1a1c1d6639b95a9b6d75e5ea535c8de50e" kind="variable"><name>m_leftBarLine</name></member>
     <member refid="classvrv_1_1_measure_1a5b5f0a89b66ddb1ca95a4701b89e7cca" kind="variable"><name>m_rightBarLine</name></member>
+    <member refid="classvrv_1_1_measure_1a489541375d86be65d53f2eafb1c46ff8" kind="enum"><name>BarlineDrawingFlags</name></member>
+    <member refid="classvrv_1_1_measure_1a489541375d86be65d53f2eafb1c46ff8a19e42ad0daf197f06ff621e9856c00da" kind="enumvalue"><name>SYSTEM_BREAK</name></member>
+    <member refid="classvrv_1_1_measure_1a489541375d86be65d53f2eafb1c46ff8aeadfa97bec6fdbe79479d63b55b5331e" kind="enumvalue"><name>SCORE_DEF_INSERT</name></member>
+    <member refid="classvrv_1_1_measure_1a489541375d86be65d53f2eafb1c46ff8a8c4f55b03cedb9339d71fdc85dd5f555" kind="enumvalue"><name>INVISIBLE_MEASURE_CURRENT</name></member>
+    <member refid="classvrv_1_1_measure_1a489541375d86be65d53f2eafb1c46ff8ac4265f6e66e741ad2ddc16594bda0718" kind="enumvalue"><name>INVISIBLE_MEASURE_PREVIOUS</name></member>
+    <member refid="classvrv_1_1_measure_1abbdd1dd92624faea4d1824909504194c" kind="typedef"><name>BarlineRenditionPair</name></member>
     <member refid="classvrv_1_1_measure_1a39f4319275584a57b898dcbfcbed760e" kind="variable"><name>m_measureAligner</name></member>
     <member refid="classvrv_1_1_measure_1a680391bcbb2cbc1cc3859a22194133e5" kind="variable"><name>m_timestampAligner</name></member>
     <member refid="classvrv_1_1_measure_1a0f66f8a9a11ea45c967fbb796b21d91f" kind="variable"><name>m_drawingXRel</name></member>
@@ -3136,6 +3151,7 @@
     <member refid="classvrv_1_1_measure_1a82dd306633529d359ccf0d0ef4513aff" kind="variable"><name>m_scoreTimeOffset</name></member>
     <member refid="classvrv_1_1_measure_1a685f145475c478901e13009451b49b6e" kind="variable"><name>m_realTimeOffsetMilliseconds</name></member>
     <member refid="classvrv_1_1_measure_1af0241b927f85f40e87263ffb0beaf90c" kind="variable"><name>m_currentTempo</name></member>
+    <member refid="classvrv_1_1_measure_1a725ed847ae2fae9757f80e704668d4df" kind="variable"><name>m_invisibleStaffBarlines</name></member>
     <member refid="classvrv_1_1_measure_1a1ba728231a9d00e4ef654fde6bdf6088" kind="function"><name>CloneReset</name></member>
     <member refid="classvrv_1_1_measure_1a53fc4fd98146722a9cc4784f1b9a7498" kind="function"><name>IsMeasuredMusic</name></member>
     <member refid="classvrv_1_1_measure_1aa00165c434ab1ab55478b8cd7c28fc90" kind="function"><name>IsSupportedChild</name></member>
@@ -3144,7 +3160,10 @@
     <member refid="classvrv_1_1_measure_1a7d781ed88cc2163372144e0b14a86158" kind="function"><name>GetDrawingX</name></member>
     <member refid="classvrv_1_1_measure_1ab9a3f0be6d3e66a6fafc27ff5a8b7372" kind="function"><name>ResetCachedDrawingX</name></member>
     <member refid="classvrv_1_1_measure_1a576172291cab812579e24126e5151526" kind="function"><name>GetMeasureIdx</name></member>
-    <member refid="classvrv_1_1_measure_1a3e6d67be8ba77e3cdb621f905d21e0bb" kind="function"><name>SetDrawingBarLines</name></member>
+    <member refid="classvrv_1_1_measure_1ad58b70aabbd1ea6dcfa17e11c3b8ae13" kind="function"><name>HasInvisibleStaffBarlines</name></member>
+    <member refid="classvrv_1_1_measure_1a472f38c2dc957417ff87e35ced2687a2" kind="function"><name>SelectDrawingBarLines</name></member>
+    <member refid="classvrv_1_1_measure_1aca48f477de36086120f4db67a428f1b2" kind="function"><name>SetDrawingBarLines</name></member>
+    <member refid="classvrv_1_1_measure_1a8bfef6d513052a832d80e15494f998f3" kind="function"><name>SetInvisibleStaffBarlines</name></member>
     <member refid="classvrv_1_1_measure_1a4f4172e322a4283c0357b60369469d2a" kind="function"><name>GetNonJustifiableLeftMargin</name></member>
     <member refid="classvrv_1_1_measure_1a1490f0e90320ad4e3d9bc0560854907e" kind="function"><name>GetRightBarLineWidth</name></member>
     <member refid="classvrv_1_1_measure_1aaea9b1238acf043b2ea503ce946080a3" kind="function"><name>GetWidth</name></member>
@@ -5107,6 +5126,7 @@
     <member refid="classvrv_1_1_score_def_1aa7973eba5e5b3cb261bdd47b70d9e637" kind="function"><name>GetPgHead</name></member>
     <member refid="classvrv_1_1_score_def_1a6953b3060cef9dc4cb419743355f62b3" kind="function"><name>GetPgHead2</name></member>
     <member refid="classvrv_1_1_score_def_1a6760d8d9bb94a8f220dddbc769346aeb" kind="variable"><name>m_setAsDrawing</name></member>
+    <member refid="classvrv_1_1_score_def_1af51ff1e8fe16c96cdbf75c2c091282e8" kind="variable"><name>m_insertScoreDef</name></member>
     <member refid="classvrv_1_1_score_def_1ac0ea174bd473162a9fcbe68c1a420092" kind="variable"><name>m_drawLabels</name></member>
     <member refid="classvrv_1_1_score_def_1a7e8f71b1f155a69a325afe0466fc3205" kind="variable"><name>m_drawingWidth</name></member>
     <member refid="classvrv_1_1_score_def_1a37bb21b40890e0788b64879b95d337bb" kind="function"><name>IsSupportedChild</name></member>
@@ -5127,10 +5147,10 @@
     <member refid="classvrv_1_1_score_def_element_1a1e121d95814e70d0123bb7be2e69f634" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_score_def_element_1ac869e0614a1d896bd39da52d7b9c8ed8" kind="function"><name>GetClassId</name></member>
     <member refid="classvrv_1_1_score_def_element_1ae98319158b6db4c30ab5ded9ab765a41" kind="function"><name>GetScoreDefInterface</name></member>
-    <member refid="classvrv_1_1_score_def_element_1aec25764df74472e96649abeb3cdb6535" kind="function"><name>HasClefInfo</name></member>
-    <member refid="classvrv_1_1_score_def_element_1ae3527c225620d309dc3b8af2cb7adfea" kind="function"><name>HasKeySigInfo</name></member>
-    <member refid="classvrv_1_1_score_def_element_1a53ef4e3e5f8e37f408a552bab31f1e61" kind="function"><name>HasMensurInfo</name></member>
-    <member refid="classvrv_1_1_score_def_element_1a370a5fd6303612f2bc0797ef6ebfd043" kind="function"><name>HasMeterSigInfo</name></member>
+    <member refid="classvrv_1_1_score_def_element_1a018c03d00e570945be34ffdc0dbf8d8f" kind="function"><name>HasClefInfo</name></member>
+    <member refid="classvrv_1_1_score_def_element_1a729766f5d766af5cb0bcb0c10d3834fd" kind="function"><name>HasKeySigInfo</name></member>
+    <member refid="classvrv_1_1_score_def_element_1ab00843a9b7af3742eb44f745c9c3d11d" kind="function"><name>HasMensurInfo</name></member>
+    <member refid="classvrv_1_1_score_def_element_1a59889254fc6b5c3c5d10b42e46faffc9" kind="function"><name>HasMeterSigInfo</name></member>
     <member refid="classvrv_1_1_score_def_element_1a41141901b422120df5b8516822c7bdb2" kind="function"><name>GetClef</name></member>
     <member refid="classvrv_1_1_score_def_element_1af2d719526694e483f55ed69505179c36" kind="function"><name>GetClefCopy</name></member>
     <member refid="classvrv_1_1_score_def_element_1ae07d344fa2ba7edc4ba55fdbc6af8890" kind="function"><name>GetKeySig</name></member>
@@ -6282,7 +6302,7 @@
     <member refid="classvrv_1_1_view_1ae01c9e955e07f860b01f151f4bf4ac2c" kind="function"><name>DrawBracketsq</name></member>
     <member refid="classvrv_1_1_view_1a7f73de86e83df589a23be10668fc656b" kind="function"><name>DrawBrace</name></member>
     <member refid="classvrv_1_1_view_1a3f4073d3c49e6c09bd33cd62bc09ae9f" kind="function"><name>DrawBarLines</name></member>
-    <member refid="classvrv_1_1_view_1ad8a95de0deb08ef2fe081cc95037b9c2" kind="function"><name>DrawBarLine</name></member>
+    <member refid="classvrv_1_1_view_1a1d8aeadaa5bf549911d7dc120adbddc6" kind="function"><name>DrawBarLine</name></member>
     <member refid="classvrv_1_1_view_1a2b61d41841e94c885f0415a4e5b519e4" kind="function"><name>DrawBarLineDots</name></member>
     <member refid="classvrv_1_1_view_1a2ad6d68a763473fd74419d6680e181a6" kind="function"><name>DrawLedgerLines</name></member>
     <member refid="classvrv_1_1_view_1a8834997867b9112c8b023c0899963cb4" kind="function"><name>DrawMeasure</name></member>

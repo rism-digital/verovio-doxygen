@@ -46,6 +46,7 @@ var annotated_dup =
       [ "AttNIntegerAnyComparison", "classvrv_1_1_att_n_integer_any_comparison.html", "classvrv_1_1_att_n_integer_any_comparison" ],
       [ "AttNIntegerComparison", "classvrv_1_1_att_n_integer_comparison.html", "classvrv_1_1_att_n_integer_comparison" ],
       [ "AttNNumberLikeComparison", "classvrv_1_1_att_n_number_like_comparison.html", "classvrv_1_1_att_n_number_like_comparison" ],
+      [ "AttVisibilityComparison", "classvrv_1_1_att_visibility_comparison.html", "classvrv_1_1_att_visibility_comparison" ],
       [ "BarLine", "classvrv_1_1_bar_line.html", "classvrv_1_1_bar_line" ],
       [ "BarLineAttr", "classvrv_1_1_bar_line_attr.html", "classvrv_1_1_bar_line_attr" ],
       [ "BBoxDeviceContext", "classvrv_1_1_b_box_device_context.html", "classvrv_1_1_b_box_device_context" ],

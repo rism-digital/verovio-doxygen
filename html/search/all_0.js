@@ -114,5 +114,6 @@ var searchData=
   ['attdurextremecomparison_111',['AttDurExtremeComparison',['../classvrv_1_1_att_dur_extreme_comparison.html',1,'vrv']]],
   ['attnintegeranycomparison_112',['AttNIntegerAnyComparison',['../classvrv_1_1_att_n_integer_any_comparison.html',1,'vrv']]],
   ['attnintegercomparison_113',['AttNIntegerComparison',['../classvrv_1_1_att_n_integer_comparison.html',1,'vrv']]],
-  ['attnnumberlikecomparison_114',['AttNNumberLikeComparison',['../classvrv_1_1_att_n_number_like_comparison.html',1,'vrv']]]
+  ['attnnumberlikecomparison_114',['AttNNumberLikeComparison',['../classvrv_1_1_att_n_number_like_comparison.html',1,'vrv']]],
+  ['attvisibilitycomparison_115',['AttVisibilityComparison',['../classvrv_1_1_att_visibility_comparison.html',1,'vrv']]]
 ];

@@ -12,9 +12,9 @@ var classvrv_1_1_score_def_element =
     [ "GetMeterSig", "classvrv_1_1_score_def_element.html#a164b285418aaace19e6f436fb88ec720", null ],
     [ "GetMeterSigCopy", "classvrv_1_1_score_def_element.html#a9001fe71a5844d6461c8e3a5d459bcb3", null ],
     [ "GetScoreDefInterface", "classvrv_1_1_score_def_element.html#ae98319158b6db4c30ab5ded9ab765a41", null ],
-    [ "HasClefInfo", "classvrv_1_1_score_def_element.html#aec25764df74472e96649abeb3cdb6535", null ],
-    [ "HasKeySigInfo", "classvrv_1_1_score_def_element.html#ae3527c225620d309dc3b8af2cb7adfea", null ],
-    [ "HasMensurInfo", "classvrv_1_1_score_def_element.html#a53ef4e3e5f8e37f408a552bab31f1e61", null ],
-    [ "HasMeterSigInfo", "classvrv_1_1_score_def_element.html#a370a5fd6303612f2bc0797ef6ebfd043", null ],
+    [ "HasClefInfo", "classvrv_1_1_score_def_element.html#a018c03d00e570945be34ffdc0dbf8d8f", null ],
+    [ "HasKeySigInfo", "classvrv_1_1_score_def_element.html#a729766f5d766af5cb0bcb0c10d3834fd", null ],
+    [ "HasMensurInfo", "classvrv_1_1_score_def_element.html#ab00843a9b7af3742eb44f745c9c3d11d", null ],
+    [ "HasMeterSigInfo", "classvrv_1_1_score_def_element.html#a59889254fc6b5c3c5d10b42e46faffc9", null ],
     [ "Reset", "classvrv_1_1_score_def_element.html#a1e121d95814e70d0123bb7be2e69f634", null ]
 ];
