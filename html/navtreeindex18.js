@@ -1,6 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"classvrv_1_1_time_point_interface.html#acf47474d192a6a9c14732c4055605a6d":[1,0,0,309,15],
 "classvrv_1_1_time_point_interface.html#af09ee1866e7e88461f21fae70f267862":[1,0,0,309,1],
 "classvrv_1_1_time_point_interface.html#af12c0fb8fe5605633e3ceeb75806d798":[1,0,0,309,7],
 "classvrv_1_1_time_spanning_interface.html":[1,0,0,310],
@@ -249,5 +248,6 @@ var NAVTREEINDEX18 =
 "classvrv_1_1_tuplet_num.html#a6bee26c00bf3985757d6b26722173020":[1,0,0,321,7],
 "classvrv_1_1_tuplet_num.html#a73ab7787e73c9e1309ce859df454b76c":[1,0,0,321,5],
 "classvrv_1_1_tuplet_num.html#a82c70ac2d18c8a56976342e7c8dcd0be":[1,0,0,321,12],
-"classvrv_1_1_tuplet_num.html#a878c731c260402f7a0e2b0dcfcc9b653":[1,0,0,321,9]
+"classvrv_1_1_tuplet_num.html#a878c731c260402f7a0e2b0dcfcc9b653":[1,0,0,321,9],
+"classvrv_1_1_tuplet_num.html#a9f1077d40af92d6f16f5c85b9ebc16f3":[1,0,0,321,3]
 };
