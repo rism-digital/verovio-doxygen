@@ -1,5 +1,15 @@
 var NAVTREEINDEX19 =
 {
+"classvrv_1_1_tuplet_num.html":[1,0,0,321],
+"classvrv_1_1_tuplet_num.html#a1b8777b182073961ae82249c0c464a65":[1,0,0,321,8],
+"classvrv_1_1_tuplet_num.html#a211e62b53e1595de68c3f4b649c86240":[1,0,0,321,4],
+"classvrv_1_1_tuplet_num.html#a40de91808c7743a5b9c8383f1aea32dd":[1,0,0,321,10],
+"classvrv_1_1_tuplet_num.html#a575b3cf982c10899855aad041c7acd6f":[1,0,0,321,11],
+"classvrv_1_1_tuplet_num.html#a6bee26c00bf3985757d6b26722173020":[1,0,0,321,7],
+"classvrv_1_1_tuplet_num.html#a73ab7787e73c9e1309ce859df454b76c":[1,0,0,321,5],
+"classvrv_1_1_tuplet_num.html#a82c70ac2d18c8a56976342e7c8dcd0be":[1,0,0,321,12],
+"classvrv_1_1_tuplet_num.html#a878c731c260402f7a0e2b0dcfcc9b653":[1,0,0,321,9],
+"classvrv_1_1_tuplet_num.html#a9f1077d40af92d6f16f5c85b9ebc16f3":[1,0,0,321,3],
 "classvrv_1_1_tuplet_num.html#abf45907dcb09a5d28c6c99693c952515":[1,0,0,321,2],
 "classvrv_1_1_tuplet_num.html#acb6417c6c4d4b7e9bcca310be9d789ab":[1,0,0,321,1],
 "classvrv_1_1_tuplet_num.html#acee19c187e2258f0499daf9720a7779d":[1,0,0,321,6],
@@ -239,15 +249,5 @@ var NAVTREEINDEX19 =
 "classvrv_1_1_visible_staff_def_or_grp_object.html":[1,0,0,328],
 "classvrv_1_1_visible_staff_def_or_grp_object.html#a0e870e8c4ec1595d9ca5a12d591d3c0e":[1,0,0,328,3],
 "classvrv_1_1_visible_staff_def_or_grp_object.html#a4261a207ab393148c618b231f80b053d":[1,0,0,328,0],
-"classvrv_1_1_visible_staff_def_or_grp_object.html#a889b236447ae501cebe189233fc5958b":[1,0,0,328,2],
-"classvrv_1_1_visible_staff_def_or_grp_object.html#ae4cb3ed0df77c34e6cc358d92a9a3a5c":[1,0,0,328,1],
-"classvrv_1_1_zone.html":[1,0,0,329],
-"classvrv_1_1_zone.html#a2cbc2715d26308c07275a7fd5e30f8c7":[1,0,0,329,7],
-"classvrv_1_1_zone.html#a48ce69c151bbd947402d95b926ecbbaf":[1,0,0,329,2],
-"classvrv_1_1_zone.html#a4aeaaa9f400e056d7b7a405d33999e98":[1,0,0,329,0],
-"classvrv_1_1_zone.html#a727b3e2785bb8444ae2928320bb57d55":[1,0,0,329,3],
-"classvrv_1_1_zone.html#abc06e94f756870be94953678aeb6e3e9":[1,0,0,329,4],
-"classvrv_1_1_zone.html#abf91c801ad500e8dd47ba0129c417fcb":[1,0,0,329,5],
-"classvrv_1_1_zone.html#ae2fee574556a289458d3707c8ddf7f96":[1,0,0,329,1],
-"classvrv_1_1_zone.html#af7c913653c3a15fda766c961ba08368f":[1,0,0,329,6]
+"classvrv_1_1_visible_staff_def_or_grp_object.html#a889b236447ae501cebe189233fc5958b":[1,0,0,328,2]
 };
