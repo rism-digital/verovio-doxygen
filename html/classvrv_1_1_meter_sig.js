@@ -5,6 +5,7 @@ var classvrv_1_1_meter_sig =
     [ "Clone", "classvrv_1_1_meter_sig.html#af217e14ce28f19664ff88680a37b951a", null ],
     [ "GetClassId", "classvrv_1_1_meter_sig.html#a287508ab8d80be4645d079bfc2ac958f", null ],
     [ "GetClassName", "classvrv_1_1_meter_sig.html#a6ed6b7343b2688e4dd4eb9c8b6ff1ebc", null ],
+    [ "GetTotalCount", "classvrv_1_1_meter_sig.html#a626f1377088f7297de38790d467f927e", null ],
     [ "HasToBeAligned", "classvrv_1_1_meter_sig.html#a4f11053c4d675bf745d2ce0d9da6ed20", null ],
     [ "IsScoreDefElement", "classvrv_1_1_meter_sig.html#aad14add6fb4178146d32028905bd02dc", null ],
     [ "LayerCountInTimeSpan", "classvrv_1_1_meter_sig.html#a52ae19681b0e8e94cef2481ce90312bf", null ],
