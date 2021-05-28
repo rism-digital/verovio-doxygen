@@ -11,7 +11,6 @@ var classvrv_1_1_doc =
     [ "CastOffSmartDoc", "classvrv_1_1_doc.html#aff86b7ca7769957dd5cfb7dfe2936936", null ],
     [ "ConvertFontPoint", "classvrv_1_1_doc.html#a28ad795a0d3439e48b22401c8fe6824d", null ],
     [ "ConvertMarkupDoc", "classvrv_1_1_doc.html#a2bb7a46eafe2a2b41dc4adaec8110b19", null ],
-    [ "ConvertScoreDefMarkupDoc", "classvrv_1_1_doc.html#a4057b6d83d5ee19f3e1a897a535a5081", null ],
     [ "ConvertToCastOffMensuralDoc", "classvrv_1_1_doc.html#a61f5bae93a22f6240087187284dfb3c1", null ],
     [ "ConvertToPageBasedDoc", "classvrv_1_1_doc.html#a1f5b58cd73b6f04ce22ebf231c69db32", null ],
     [ "ConvertToUnCastOffMensuralDoc", "classvrv_1_1_doc.html#a560f44ff928ec391ba5d86a1785c4590", null ],

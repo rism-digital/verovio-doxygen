@@ -71,7 +71,6 @@ var classvrv_1_1_object =
     [ "ConvertMarkupAnalyticalEnd", "classvrv_1_1_object.html#a677194130b19ebd382b4868f9284985b", null ],
     [ "ConvertMarkupArtic", "classvrv_1_1_object.html#a7262b554ba150b54b434fc7c0c93001d", null ],
     [ "ConvertMarkupArticEnd", "classvrv_1_1_object.html#adeeaf95b17b15194260884d306a72214", null ],
-    [ "ConvertScoreDefMarkup", "classvrv_1_1_object.html#a57a8be89100ae588df8152c7db922845", null ],
     [ "ConvertToCastOffMensural", "classvrv_1_1_object.html#ada935f44326f0c4ecfc068694461718b", null ],
     [ "ConvertToPageBased", "classvrv_1_1_object.html#ae930432f04c711ac22a14c66a92feb5e", null ],
     [ "ConvertToPageBasedEnd", "classvrv_1_1_object.html#ada7452f72d022232966a2d5822b8bbc8", null ],

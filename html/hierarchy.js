@@ -901,7 +901,6 @@ var hierarchy =
       [ "vrv::CastOffSystemsParams", "classvrv_1_1_cast_off_systems_params.html", null ],
       [ "vrv::ConvertMarkupAnalyticalParams", "classvrv_1_1_convert_markup_analytical_params.html", null ],
       [ "vrv::ConvertMarkupArticParams", "classvrv_1_1_convert_markup_artic_params.html", null ],
-      [ "vrv::ConvertScoreDefMarkupParams", "classvrv_1_1_convert_score_def_markup_params.html", null ],
       [ "vrv::ConvertToCastOffMensuralParams", "classvrv_1_1_convert_to_cast_off_mensural_params.html", null ],
       [ "vrv::ConvertToPageBasedParams", "classvrv_1_1_convert_to_page_based_params.html", null ],
       [ "vrv::ConvertToUnCastOffMensuralParams", "classvrv_1_1_convert_to_un_cast_off_mensural_params.html", null ],

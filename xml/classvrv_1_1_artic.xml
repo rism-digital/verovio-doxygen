@@ -97,10 +97,10 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classvrv_1_1_artic_1a3e4862feb7692cafec42c70773cd175c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_artic_1ad60930fde904d55bc6b45c022f9a0886" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::Artic::IsInsideArtic</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>IsInsideArtic</name>
         <briefdescription>
 <para>Return the inside and outside part of an artic if any (NULL otherwiser) </para>
@@ -111,10 +111,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/artic.h" line="67" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_artic_1a9b5de95ff7250dfc64f43008cfeaaad7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_artic_1a71697eeca9129013c0fc4cf92ec7ddf6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::Artic::IsOutsideArtic</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>IsOutsideArtic</name>
         <briefdescription>
         </briefdescription>
@@ -229,10 +229,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/artic.h" line="44" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/artic.h" bodystart="44" bodyend="44"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_artic_1a6ca670ded21c502ccb27f31176d90aee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_artic_1aebafe014185c3b1357258d06f358a172" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>data_ARTICULATION</type>
         <definition>data_ARTICULATION vrv::Artic::GetArticFirst</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>GetArticFirst</name>
         <briefdescription>
         </briefdescription>
@@ -353,17 +353,17 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/artic.h" line="78" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/artic.h" bodystart="78" bodyend="78"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_artic_1ada5ab8899327647fa9c2756af5cf7053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_artic_1ad38e2eb6d8be529eb908f7ad29596e3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>wchar_t</type>
         <definition>wchar_t vrv::Artic::GetArticGlyph</definition>
-        <argsstring>(data_ARTICULATION artic, const data_STAFFREL &amp;place)</argsstring>
+        <argsstring>(data_ARTICULATION artic, data_STAFFREL place) const</argsstring>
         <name>GetArticGlyph</name>
         <param>
           <type>data_ARTICULATION</type>
           <declname>artic</declname>
         </param>
         <param>
-          <type>const data_STAFFREL &amp;</type>
+          <type>data_STAFFREL</type>
           <declname>place</declname>
         </param>
         <briefdescription>
@@ -963,7 +963,6 @@
       <member refid="classvrv_1_1_object_1a677194130b19ebd382b4868f9284985b" prot="public" virt="virtual"><scope>vrv::Artic</scope><name>ConvertMarkupAnalyticalEnd</name></member>
       <member refid="classvrv_1_1_artic_1a566d6c721af17c666de8c98089056298" prot="public" virt="virtual"><scope>vrv::Artic</scope><name>ConvertMarkupArtic</name></member>
       <member refid="classvrv_1_1_object_1adeeaf95b17b15194260884d306a72214" prot="public" virt="virtual"><scope>vrv::Artic</scope><name>ConvertMarkupArticEnd</name></member>
-      <member refid="classvrv_1_1_object_1a57a8be89100ae588df8152c7db922845" prot="public" virt="virtual"><scope>vrv::Artic</scope><name>ConvertScoreDefMarkup</name></member>
       <member refid="classvrv_1_1_object_1ada935f44326f0c4ecfc068694461718b" prot="public" virt="virtual"><scope>vrv::Artic</scope><name>ConvertToCastOffMensural</name></member>
       <member refid="classvrv_1_1_object_1ae930432f04c711ac22a14c66a92feb5e" prot="public" virt="virtual"><scope>vrv::Artic</scope><name>ConvertToPageBased</name></member>
       <member refid="classvrv_1_1_object_1ada7452f72d022232966a2d5822b8bbc8" prot="public" virt="virtual"><scope>vrv::Artic</scope><name>ConvertToPageBasedEnd</name></member>
@@ -1003,8 +1002,8 @@
       <member refid="classvrv_1_1_layer_element_1a2fb9126c18e349cefe4a66479c97f17a" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetAlignmentLayerN</name></member>
       <member refid="classvrv_1_1_object_1a3eb3c52e16525ed1a559a825fa85e00e" prot="public" virt="virtual"><scope>vrv::Artic</scope><name>GetAlignmentLeftRight</name></member>
       <member refid="classvrv_1_1_artic_1aeb46e15699edb5d500c44a77ae5d06e5" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetAllArtics</name></member>
-      <member refid="classvrv_1_1_artic_1a6ca670ded21c502ccb27f31176d90aee" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetArticFirst</name></member>
-      <member refid="classvrv_1_1_artic_1ada5ab8899327647fa9c2756af5cf7053" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetArticGlyph</name></member>
+      <member refid="classvrv_1_1_artic_1aebafe014185c3b1357258d06f358a172" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetArticFirst</name></member>
+      <member refid="classvrv_1_1_artic_1ad38e2eb6d8be529eb908f7ad29596e3d" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetArticGlyph</name></member>
       <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual" ambiguityscope="vrv::"><scope>vrv::Artic</scope><name>GetAttClasses</name></member>
       <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual" ambiguityscope="vrv::LinkingInterface::"><scope>vrv::Artic</scope><name>GetAttClasses</name></member>
       <member refid="classvrv_1_1_object_1aeb7e152a62704071901972bbfa06062c" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetAttributes</name></member>
@@ -1024,7 +1023,7 @@
       <member refid="classvrv_1_1_artic_1ac993bfadffd73b30fe6b372399d2d352" prot="public" virt="virtual"><scope>vrv::Artic</scope><name>GetClassName</name></member>
       <member refid="classvrv_1_1_object_1a65066ae5b40a4dc3aab9bf76abc57d36" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetClosingComment</name></member>
       <member refid="classvrv_1_1_object_1aa8a0722010e05e1e2cb04d90a9535cc4" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetComment</name></member>
-      <member refid="classvrv_1_1_layer_element_1a86604695335158bffcfb946d494a9746" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetContentAlignmentDuration</name></member>
+      <member refid="classvrv_1_1_layer_element_1a1c066c80d881a800b529815ce85116c2" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetContentAlignmentDuration</name></member>
       <member refid="classvrv_1_1_bounding_box_1a74fec7caf937bc6892cd0de8c1f29355" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetContentBottom</name></member>
       <member refid="classvrv_1_1_bounding_box_1a9a33f5750af51cfb292ff2a553744e2d" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetContentLeft</name></member>
       <member refid="classvrv_1_1_bounding_box_1a755302fda960358f076a3175783a5d78" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetContentRight</name></member>
@@ -1037,7 +1036,7 @@
       <member refid="classvrv_1_1_layer_element_1a92e6de075ae4c0184adea79307d8eecb" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetCrossStaffRel</name></member>
       <member refid="classvrv_1_1_object_1a318be52d7897d2a16d699374a4b702ed" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetDescendantIndex</name></member>
       <member refid="classvrv_1_1_layer_element_1af4f9224651b8b0e53a4224e259064c0e" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetDrawingBottom</name></member>
-      <member refid="classvrv_1_1_layer_element_1a59337806c3fccb0be89e81e5c7ec5c0b" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetDrawingCueSize</name></member>
+      <member refid="classvrv_1_1_layer_element_1ae0892552c2a0397e84024139a0292f6f" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetDrawingCueSize</name></member>
       <member refid="classvrv_1_1_artic_1a318062fc0b6c2ffbb2986c3f1d90c26a" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetDrawingPlace</name></member>
       <member refid="classvrv_1_1_layer_element_1ac0a98f1ac5226eadda933521399eccb4" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetDrawingRadius</name></member>
       <member refid="classvrv_1_1_facsimile_interface_1a2e3d8694d94a66c6784f844c1f883a90" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetDrawingRotate</name></member>
@@ -1071,7 +1070,7 @@
       <member refid="classvrv_1_1_object_1a26a7c60cdf50a4072927aa671112f1f3" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetPrevious</name></member>
       <member refid="classvrv_1_1_layer_element_1a5772c6ac45d7902e40ebc8fae22b818c" prot="public" virt="virtual"><scope>vrv::Artic</scope><name>GetRelativeLayerElement</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2fe9d4e0cef41c270fe6683e5fbd8223" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetRightBy</name></member>
-      <member refid="classvrv_1_1_layer_element_1afca13dd4f2cba7e1a68e335cbdfc7f16" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetSameAsContentAlignmentDuration</name></member>
+      <member refid="classvrv_1_1_layer_element_1ab0dc6102092c2b081e9d08a8a5353324" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetSameAsContentAlignmentDuration</name></member>
       <member refid="classvrv_1_1_linking_interface_1a7d28feb73827978d12becd95b53e623e" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetSameasLink</name></member>
       <member refid="classvrv_1_1_object_1a36ae3be40fa20c6255a6003e5d56133f" prot="public" virt="virtual"><scope>vrv::Artic</scope><name>GetScoreDefInterface</name></member>
       <member refid="classvrv_1_1_layer_element_1abcd8e1cf9412090b3de520f1119b7196" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>GetScoreDefRole</name></member>
@@ -1144,12 +1143,12 @@
       <member refid="classvrv_1_1_layer_element_1a9e5c50f21c91584a2c11ad154344a1b7" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>IsInBeam</name></member>
       <member refid="classvrv_1_1_layer_element_1a55dbe63eb131c1a1f00da98fe5f08c9b" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>IsInFTrem</name></member>
       <member refid="classvrv_1_1_layer_element_1a6d695a92219be680737010275c9cd282" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>IsInLigature</name></member>
-      <member refid="classvrv_1_1_artic_1a3e4862feb7692cafec42c70773cd175c" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>IsInsideArtic</name></member>
+      <member refid="classvrv_1_1_artic_1ad60930fde904d55bc6b45c022f9a0886" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>IsInsideArtic</name></member>
       <member refid="classvrv_1_1_facsimile_interface_1a05c0b870ad05dbfc6587787d5dedae29" prot="public" virt="virtual" ambiguityscope="vrv::"><scope>vrv::Artic</scope><name>IsInterface</name></member>
       <member refid="classvrv_1_1_linking_interface_1ab262eec19e41662b2873f407b93cab0e" prot="public" virt="virtual" ambiguityscope="vrv::LinkingInterface::"><scope>vrv::Artic</scope><name>IsInterface</name></member>
       <member refid="classvrv_1_1_object_1a311186b3525f994471394fcc38bbcda8" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>IsLayerElement</name></member>
       <member refid="classvrv_1_1_object_1a4eec6780edc930e49d9874c1036735a4" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>IsModified</name></member>
-      <member refid="classvrv_1_1_artic_1a9b5de95ff7250dfc64f43008cfeaaad7" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>IsOutsideArtic</name></member>
+      <member refid="classvrv_1_1_artic_1a71697eeca9129013c0fc4cf92ec7ddf6" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>IsOutsideArtic</name></member>
       <member refid="classvrv_1_1_object_1ad507cfd401ea330cca65a4891b90da80" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>IsReferenceObject</name></member>
       <member refid="classvrv_1_1_artic_1af1cffc264bbd574575aee9a65c7dd032" prot="public" virt="virtual"><scope>vrv::Artic</scope><name>IsRelativeToStaff</name></member>
       <member refid="classvrv_1_1_object_1a5b19179d87ef32147c3d513fa735c07f" prot="public" virt="non-virtual"><scope>vrv::Artic</scope><name>IsRunningElement</name></member>

@@ -13,7 +13,7 @@ var classvrv_1_1_tuplet =
     [ "GetClassName", "classvrv_1_1_tuplet.html#ae62bb3aa3c15a091d8d64a5366671ca8", null ],
     [ "GetDrawingBracketPos", "classvrv_1_1_tuplet.html#ac7e95960a8c653a5c3033f3e5c450f78", null ],
     [ "GetDrawingLeft", "classvrv_1_1_tuplet.html#a8d6fdcff7d4bf182919675a1272fd8e3", null ],
-    [ "GetDrawingLeftRightXRel", "classvrv_1_1_tuplet.html#a3cb7c9445d2e57ba155c39d1ab2ca32f", null ],
+    [ "GetDrawingLeftRightXRel", "classvrv_1_1_tuplet.html#a992bc7279dba5e1d749d17a1ebe59d66", null ],
     [ "GetDrawingNumPos", "classvrv_1_1_tuplet.html#a7c9160499d42ce9383c83fa021eb835c", null ],
     [ "GetDrawingRight", "classvrv_1_1_tuplet.html#af2991ea4152304433e0fade2917442ac", null ],
     [ "GetNumAlignedBeam", "classvrv_1_1_tuplet.html#aa90ff2d1d649aea1f11069c980cbcebc", null ],
