@@ -991,6 +991,15 @@
     <member refid="classvrv_1_1_b_trem_1a6e00d9fc4421a51dfb72f4aca40a6798" kind="function"><name>GenerateMIDI</name></member>
     <member refid="classvrv_1_1_b_trem_1afb13f6bdf17e9147c5e54e8491be9e6f" kind="function"><name>CalcIndividualNoteDuration</name></member>
   </compound>
+  <compound refid="classvrv_1_1_caesura" kind="class"><name>vrv::Caesura</name>
+    <member refid="classvrv_1_1_caesura_1a8b10229de00b2804b0eb17d06e98a08e" kind="function"><name>Caesura</name></member>
+    <member refid="classvrv_1_1_caesura_1a241af9b9b2499962635f7f7d06a31b8f" kind="function"><name>~Caesura</name></member>
+    <member refid="classvrv_1_1_caesura_1a6153b578c3e9fb85b772b225eab2af09" kind="function"><name>Clone</name></member>
+    <member refid="classvrv_1_1_caesura_1aba782d2233f6c6f36d1812a428eda2f8" kind="function"><name>Reset</name></member>
+    <member refid="classvrv_1_1_caesura_1acec40982f8ed7d27d1340a638d46e72a" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_caesura_1ae6064907de8f367126357fcfce730299" kind="function"><name>GetClassId</name></member>
+    <member refid="classvrv_1_1_caesura_1a17467558c176effb1f3da299d8883318" kind="function"><name>GetTimePointInterface</name></member>
+  </compound>
   <compound refid="classvrv_1_1_calc_artic_params" kind="class"><name>vrv::CalcArticParams</name>
     <member refid="classvrv_1_1_calc_artic_params_1adb091f19add11993458ae30b39dc1d4a" kind="variable"><name>m_parent</name></member>
     <member refid="classvrv_1_1_calc_artic_params_1a9ae652f8f1aaf54a269a0208755c02b4" kind="variable"><name>m_stemDir</name></member>
@@ -3344,6 +3353,7 @@
     <member refid="classvrv_1_1_m_e_i_input_1ae0841d64bd56c118c58973ce1d9f9bd4" kind="function"><name>ReadArpeg</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1ac06f49c9d4e41b2472d3e3422d48bc49" kind="function"><name>ReadBracketSpan</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a1fa7a7d6c9c2620a7b018801fda589e7" kind="function"><name>ReadBreath</name></member>
+    <member refid="classvrv_1_1_m_e_i_input_1aa517831996c09d67f75ab96ba72902b1" kind="function"><name>ReadCaesura</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a4ae0cb8f97dfe195db003e5677fd17c6" kind="function"><name>ReadDir</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a576b40f59411b55b0ef3485ca339bdca" kind="function"><name>ReadDynam</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a851a889c164fb77535db02a41f512c93" kind="function"><name>ReadFermata</name></member>
@@ -3520,6 +3530,7 @@
     <member refid="classvrv_1_1_m_e_i_output_1ab34630caa2ea58c25b922e94895df7ec" kind="function"><name>WriteArpeg</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a7397cd1133d6eac28df6cbeefd26bc7f" kind="function"><name>WriteBracketSpan</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1ab742f75bc5629b2bd2a1e0a0c28da826" kind="function"><name>WriteBreath</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1a853d2d3421b590721e5a0e6173b5ef0a" kind="function"><name>WriteCaesura</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a68845796e27f5a47d1b8c072f2a2897f" kind="function"><name>WriteDir</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1af3e23e6190a63065365ec2423ff64b46" kind="function"><name>WriteDynam</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1aff7a8759cb51742f86719fbbd5704b3a" kind="function"><name>WriteFermata</name></member>
@@ -7228,6 +7239,7 @@
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aba2a0a283e0612ad35c12117a34951a6" kind="enumvalue"><name>ARPEG</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a5ac6d401fd55c897cbbef15168c0e97c" kind="enumvalue"><name>BRACKETSPAN</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ae78cf01e8e39f40ebd50e27f4351490f" kind="enumvalue"><name>BREATH</name></member>
+    <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a1eb4c2e5b444414808597455d88c0883" kind="enumvalue"><name>CAESURA</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a67f2113a49586ec728a62df47c57b3ed" kind="enumvalue"><name>DIR</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a7c73603846557c4e56e0a13a58651203" kind="enumvalue"><name>DYNAM</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a940a5780f7ea9d33d5410dc97a408c15" kind="enumvalue"><name>FERMATA</name></member>
@@ -7548,6 +7560,8 @@
   <compound refid="breath_8h" kind="file"><name>breath.h</name>
   </compound>
   <compound refid="btrem_8h" kind="file"><name>btrem.h</name>
+  </compound>
+  <compound refid="caesura_8h" kind="file"><name>caesura.h</name>
   </compound>
   <compound refid="choice_8h" kind="file"><name>choice.h</name>
   </compound>

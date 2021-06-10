@@ -77,6 +77,7 @@ var hierarchy =
       [ "vrv::BeatRpt", "classvrv_1_1_beat_rpt.html", null ],
       [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
       [ "vrv::Breath", "classvrv_1_1_breath.html", null ],
+      [ "vrv::Caesura", "classvrv_1_1_caesura.html", null ],
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
       [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
@@ -297,6 +298,7 @@ var hierarchy =
         [ "vrv::Arpeg", "classvrv_1_1_arpeg.html", null ],
         [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
         [ "vrv::Breath", "classvrv_1_1_breath.html", null ],
+        [ "vrv::Caesura", "classvrv_1_1_caesura.html", null ],
         [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
         [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
         [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
@@ -533,6 +535,7 @@ var hierarchy =
     ] ],
     [ "AttPlacementRelStaff", null, [
       [ "vrv::Breath", "classvrv_1_1_breath.html", null ],
+      [ "vrv::Caesura", "classvrv_1_1_caesura.html", null ],
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
       [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
@@ -611,6 +614,7 @@ var hierarchy =
       [ "vrv::TimePointInterface", "classvrv_1_1_time_point_interface.html", [
         [ "vrv::Arpeg", "classvrv_1_1_arpeg.html", null ],
         [ "vrv::Breath", "classvrv_1_1_breath.html", null ],
+        [ "vrv::Caesura", "classvrv_1_1_caesura.html", null ],
         [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
         [ "vrv::Fing", "classvrv_1_1_fing.html", null ],
         [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],

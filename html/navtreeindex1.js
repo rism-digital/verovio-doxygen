@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"classvrv_1_1_align_vertically_params.html#a56bf3f8f55ebcd38c160d12d1e53e902":[1,0,0,32,2],
 "classvrv_1_1_align_vertically_params.html#a57489f4fb411c547c6b0b02bb2f4e489":[1,0,0,32,0],
 "classvrv_1_1_align_vertically_params.html#a5ac97fa83bcb8ca7290983218f6b5f5b":[1,0,0,32,4],
 "classvrv_1_1_align_vertically_params.html#a6dcb98d05a05c3dc79517a6861e4e9a3":[1,0,0,32,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "classvrv_1_1_b_box_device_context.html#a4aa0be1e430b0cd3c6ee5ad55ae6e4cb":[1,0,0,48,5],
 "classvrv_1_1_b_box_device_context.html#a4daf13fd80c5c30e0d138252b95683f6":[1,0,0,48,1],
 "classvrv_1_1_b_box_device_context.html#a4e0e02d3dd9ea4621aca21e54d078f4d":[1,0,0,48,32],
-"classvrv_1_1_b_box_device_context.html#a5012526492c83ba6b4f6584282284945":[1,0,0,48,26],
-"classvrv_1_1_b_box_device_context.html#a63940b47d7a50da456364ba8de8155e5":[1,0,0,48,30]
+"classvrv_1_1_b_box_device_context.html#a5012526492c83ba6b4f6584282284945":[1,0,0,48,26]
 };

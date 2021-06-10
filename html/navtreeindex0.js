@@ -23,8 +23,9 @@ var NAVTREEINDEX0 =
 "bracketspan_8h_source.html":[2,0,18],
 "breath_8h_source.html":[2,0,19],
 "btrem_8h_source.html":[2,0,20],
-"choice_8h_source.html":[2,0,21],
-"chord_8h_source.html":[2,0,22],
+"caesura_8h_source.html":[2,0,21],
+"choice_8h_source.html":[2,0,22],
+"chord_8h_source.html":[2,0,23],
 "classes.html":[1,1],
 "classvrv_1_1_a_b_c_input.html":[1,0,0,1],
 "classvrv_1_1_a_b_c_input.html#a36231c0dd7097f996cfed4655b322faf":[1,0,0,1,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classvrv_1_1_align_vertically_params.html#a0f9432c7be14a54d6f6798bc22e73643":[1,0,0,32,7],
 "classvrv_1_1_align_vertically_params.html#a4768981e2e7b392e9c09c47b24f864ce":[1,0,0,32,5],
 "classvrv_1_1_align_vertically_params.html#a4e407dbb28a97b5fd13c25c1efad424b":[1,0,0,32,1],
-"classvrv_1_1_align_vertically_params.html#a4f03b93dfa2b4d45f3f76bd666fdac8e":[1,0,0,32,8],
-"classvrv_1_1_align_vertically_params.html#a56bf3f8f55ebcd38c160d12d1e53e902":[1,0,0,32,2]
+"classvrv_1_1_align_vertically_params.html#a4f03b93dfa2b4d45f3f76bd666fdac8e":[1,0,0,32,8]
 };

@@ -21,6 +21,7 @@ var files_dup =
     [ "bracketspan.h", "bracketspan_8h_source.html", null ],
     [ "breath.h", "breath_8h_source.html", null ],
     [ "btrem.h", "btrem_8h_source.html", null ],
+    [ "caesura.h", "caesura_8h_source.html", null ],
     [ "choice.h", "choice_8h_source.html", null ],
     [ "chord.h", "chord_8h_source.html", null ],
     [ "clef.h", "clef_8h_source.html", null ],

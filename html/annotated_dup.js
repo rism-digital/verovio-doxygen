@@ -62,6 +62,7 @@ var annotated_dup =
       [ "Breath", "classvrv_1_1_breath.html", "classvrv_1_1_breath" ],
       [ "Brush", "classvrv_1_1_brush.html", "classvrv_1_1_brush" ],
       [ "BTrem", "classvrv_1_1_b_trem.html", "classvrv_1_1_b_trem" ],
+      [ "Caesura", "classvrv_1_1_caesura.html", "classvrv_1_1_caesura" ],
       [ "CalcArticParams", "classvrv_1_1_calc_artic_params.html", "classvrv_1_1_calc_artic_params" ],
       [ "CalcDotsParams", "classvrv_1_1_calc_dots_params.html", "classvrv_1_1_calc_dots_params" ],
       [ "CalcMaxMeasureDurationParams", "classvrv_1_1_calc_max_measure_duration_params.html", "classvrv_1_1_calc_max_measure_duration_params" ],
