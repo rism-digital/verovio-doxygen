@@ -135,12 +135,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:ad9c8c466adf27ed39d3e4c4829a96acd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer.html#ad9c8c466adf27ed39d3e4c4829a96acd">GetClefLocOffset</a> (<a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *test)</td></tr>
 <tr class="memdesc:ad9c8c466adf27ed39d3e4c4829a96acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the clef offset for the position x.  <a href="classvrv_1_1_layer.html#ad9c8c466adf27ed39d3e4c4829a96acd">More...</a><br /></td></tr>
 <tr class="separator:ad9c8c466adf27ed39d3e4c4829a96acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63a9e22b4ed9ae96df451eadadad1b6b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer.html#a63a9e22b4ed9ae96df451eadadad1b6b">GetLayerCountForTimeSpanOf</a> (<a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *element)</td></tr>
-<tr class="memdesc:a63a9e22b4ed9ae96df451eadadad1b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of layer used for the duration of an element.  <a href="classvrv_1_1_layer.html#a63a9e22b4ed9ae96df451eadadad1b6b">More...</a><br /></td></tr>
-<tr class="separator:a63a9e22b4ed9ae96df451eadadad1b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22ad6d6f1b834a6021071493b857e925"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer.html#a22ad6d6f1b834a6021071493b857e925">GetLayerCountInTimeSpan</a> (double time, double duration, <a class="el" href="classvrv_1_1_measure.html">Measure</a> *measure, int staff)</td></tr>
-<tr class="memdesc:a22ad6d6f1b834a6021071493b857e925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of layer used within a time span.  <a href="classvrv_1_1_layer.html#a22ad6d6f1b834a6021071493b857e925">More...</a><br /></td></tr>
-<tr class="separator:a22ad6d6f1b834a6021071493b857e925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4846e31e65e7ef424a406563a2ce0103"><td class="memItemLeft" align="right" valign="top">ListOfObjects&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer.html#a4846e31e65e7ef424a406563a2ce0103">GetLayerElementsForTimeSpanOf</a> (<a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *element, bool excludeCurrent=false)</td></tr>
 <tr class="memdesc:a4846e31e65e7ef424a406563a2ce0103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of the layer elements for the duration of an element Takes into account cross-staff situations.  <a href="classvrv_1_1_layer.html#a4846e31e65e7ef424a406563a2ce0103">More...</a><br /></td></tr>
 <tr class="separator:a4846e31e65e7ef424a406563a2ce0103"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,6 +282,24 @@ data_STEMDIRECTION&#160;</td><td class="memItemRight" valign="bottom"><b>GetDraw
 <tr class="memitem:a9384a5e86b46e31c7fb07d98d6583107"><td class="memItemLeft" align="right" valign="top"><a id="a9384a5e86b46e31c7fb07d98d6583107"></a>
 data_STEMDIRECTION&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingStemDir</b> (const ArrayOfBeamElementCoords *coords)</td></tr>
 <tr class="separator:a9384a5e86b46e31c7fb07d98d6583107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Get the layers used for the duration of an element.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Takes into account cross-staff situations: cross staff layers have negative N. </p>
+</div></td></tr>
+<tr class="memitem:a2c544567b6c64a2682d4840b02ecc739"><td class="memItemLeft" align="right" valign="top"><a id="a2c544567b6c64a2682d4840b02ecc739"></a>
+std::set&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetLayersNForTimeSpanOf</b> (<a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *element)</td></tr>
+<tr class="separator:a2c544567b6c64a2682d4840b02ecc739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a9e22b4ed9ae96df451eadadad1b6b"><td class="memItemLeft" align="right" valign="top"><a id="a63a9e22b4ed9ae96df451eadadad1b6b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetLayerCountForTimeSpanOf</b> (<a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *element)</td></tr>
+<tr class="separator:a63a9e22b4ed9ae96df451eadadad1b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Get the layers used within a time span.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Takes into account cross-staff situations: cross staff layers have negative N. </p>
+</div></td></tr>
+<tr class="memitem:ae9da152a30209e9266669a433262a84b"><td class="memItemLeft" align="right" valign="top"><a id="ae9da152a30209e9266669a433262a84b"></a>
+std::set&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetLayersNInTimeSpan</b> (double time, double duration, <a class="el" href="classvrv_1_1_measure.html">Measure</a> *measure, int staff)</td></tr>
+<tr class="separator:ae9da152a30209e9266669a433262a84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ad6d6f1b834a6021071493b857e925"><td class="memItemLeft" align="right" valign="top"><a id="a22ad6d6f1b834a6021071493b857e925"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetLayerCountInTimeSpan</b> (double time, double duration, <a class="el" href="classvrv_1_1_measure.html">Measure</a> *measure, int staff)</td></tr>
+<tr class="separator:a22ad6d6f1b834a6021071493b857e925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Setter and getter for the cross-staff flags</div></td></tr>
 <tr class="memitem:af2b6c3163468f34d782e334675d82bb9"><td class="memItemLeft" align="right" valign="top"><a id="af2b6c3163468f34d782e334675d82bb9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCrossStaffFromAbove</b> (bool crossStaff)</td></tr>
@@ -1454,70 +1466,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
-<a id="a63a9e22b4ed9ae96df451eadadad1b6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63a9e22b4ed9ae96df451eadadad1b6b">&#9670;&nbsp;</a></span>GetLayerCountForTimeSpanOf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int vrv::Layer::GetLayerCountForTimeSpanOf </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *&#160;</td>
-          <td class="paramname"><em>element</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the number of layer used for the duration of an element. </p>
-<p>Takes into account cross-staff situations. </p>
-
-</div>
-</div>
-<a id="a22ad6d6f1b834a6021071493b857e925"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22ad6d6f1b834a6021071493b857e925">&#9670;&nbsp;</a></span>GetLayerCountInTimeSpan()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int vrv::Layer::GetLayerCountInTimeSpan </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>time</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>duration</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classvrv_1_1_measure.html">Measure</a> *&#160;</td>
-          <td class="paramname"><em>measure</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>staff</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the number of layer used within a time span. </p>
-<p>Takes into account cross-staff situations. </p>
-
-</div>
-</div>
 <a id="a4846e31e65e7ef424a406563a2ce0103"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4846e31e65e7ef424a406563a2ce0103">&#9670;&nbsp;</a></span>GetLayerElementsForTimeSpanOf()</h2>
 
@@ -1697,7 +1645,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_layer.html">Layer</a></li>
-    <li class="footer">Generated on Thu Jun 10 2021 19:43:40 for Verovio by
+    <li class="footer">Generated on Fri Jun 11 2021 06:30:30 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

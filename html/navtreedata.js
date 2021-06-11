@@ -54,18 +54,18 @@ var NAVTREEINDEX =
 "classvrv_1_1_grp_sym.html#a794b945f61aed2ccdac21eddccb23fd3",
 "classvrv_1_1_humdrum_input.html#a90ffb56498d42fdb7a9097649448612e",
 "classvrv_1_1_key_accid.html#ac7d38a0d440e7bbada7c9fb7a2e7af1c",
-"classvrv_1_1_m_e_i_input.html#ac668411802426b6a920724456bf58221",
-"classvrv_1_1_nc.html",
-"classvrv_1_1_object.html#a9bc335e3bc5405f5dbaae757b5629996",
-"classvrv_1_1_option_staffrel_basic.html#a3056f6cdcc8c8a84b2f955afede54624",
-"classvrv_1_1_page.html#af5028d206f7fb8e8b5c58d5644ca5a29",
-"classvrv_1_1_rend.html#ac4ab791198afe604c835a20cdf6ad796",
-"classvrv_1_1_space.html#a4c0e4916fb72394771df7fc03ffd4272",
-"classvrv_1_1_svg_device_context.html#a8d517fa6a149e98130f99268e660c7a1",
-"classvrv_1_1_tie.html#aac977fbbda6f1ca6fe02604c4842b562",
-"classvrv_1_1_tuplet_bracket.html#a651293a322a5c5fcef24d3c1f2e305ac",
-"classvrv_1_1_view.html#af62a0d79af6e0c2a0da7473dc0baaa83",
-"pages_8h_source.html"
+"classvrv_1_1_m_e_i_input.html",
+"classvrv_1_1_music_xml_input.html#a43c6dfa399db2476b24a9d36134d2edb",
+"classvrv_1_1_object.html#a9a7ac871bbd388bc57ad3efbcd5523e4",
+"classvrv_1_1_option_staffrel_basic.html#a0188c54f37e779cb8622bb2102632ea0",
+"classvrv_1_1_page.html#aee8cf1f81854af6351ef2dd1cf63d4c7",
+"classvrv_1_1_rend.html#a6bef1e2038c500c29432096cf02781ca",
+"classvrv_1_1_space.html#a44d9402bd745eb51ab7469a41a522447",
+"classvrv_1_1_svg_device_context.html#a8ac520672f2f1701645a2fa92784f9ab",
+"classvrv_1_1_tie.html#aa2dcc8217fbcb23238941592457f994d",
+"classvrv_1_1_tuplet_bracket.html#a4f64936729a3ba7303d51eb7da3d0b04",
+"classvrv_1_1_view.html#af43ac12fd9cd41b9dbdc05dc69b91519",
+"page_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

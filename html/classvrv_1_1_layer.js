@@ -33,6 +33,8 @@ var classvrv_1_1_layer =
     [ "GetLayerElementsForTimeSpanOf", "classvrv_1_1_layer.html#a4846e31e65e7ef424a406563a2ce0103", null ],
     [ "GetLayerElementsInTimeSpan", "classvrv_1_1_layer.html#a2351a1bd1a8dac02caf64ce4eb3a38ec", null ],
     [ "GetLayerIdx", "classvrv_1_1_layer.html#adfcf758667726eabfc225acc484fe525", null ],
+    [ "GetLayersNForTimeSpanOf", "classvrv_1_1_layer.html#a2c544567b6c64a2682d4840b02ecc739", null ],
+    [ "GetLayersNInTimeSpan", "classvrv_1_1_layer.html#ae9da152a30209e9266669a433262a84b", null ],
     [ "GetPrevious", "classvrv_1_1_layer.html#a6eec7985e014cbd2764f343c792a8d0f", null ],
     [ "GetStaffDefClef", "classvrv_1_1_layer.html#a3ea553fd0cd0463e81aefe498d4c6253", null ],
     [ "GetStaffDefKeySig", "classvrv_1_1_layer.html#a0c8c98ba2111367eb53e5393cdeec1dd", null ],
