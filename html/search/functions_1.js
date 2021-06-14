@@ -9,7 +9,7 @@ var searchData=
   ['calcdots_1439',['CalcDots',['../classvrv_1_1_chord.html#a4260532e67b95993b013a4d5b63949e2',1,'vrv::Chord::CalcDots()'],['../classvrv_1_1_note.html#ad31936d93922bf87540780a67d8569eb',1,'vrv::Note::CalcDots()'],['../classvrv_1_1_object.html#a30538b76016036369786f42be54482c2',1,'vrv::Object::CalcDots()'],['../classvrv_1_1_rest.html#af19bb53fe6642d20ddb9a66e92f7b163',1,'vrv::Rest::CalcDots()']]],
   ['calcdrawingbracketandnumpos_1440',['CalcDrawingBracketAndNumPos',['../classvrv_1_1_tuplet.html#ac6b04379bb72ad6f90757952cf3bcc81',1,'vrv::Tuplet']]],
   ['calcelementhorizontaloverlap_1441',['CalcElementHorizontalOverlap',['../classvrv_1_1_layer_element.html#a7b95b6e0c95bcddc0a6cae62095b2c9b',1,'vrv::LayerElement']]],
-  ['calclayeroverlap_1442',['CalcLayerOverlap',['../classvrv_1_1_beam.html#acd4027e7b9938dbfe4a56010f7749e81',1,'vrv::Beam']]],
+  ['calclayeroverlap_1442',['CalcLayerOverlap',['../classvrv_1_1_beam.html#a85c7d02459bcfae686c17c861e692c16',1,'vrv::Beam']]],
   ['calcledgerlines_1443',['CalcLedgerLines',['../classvrv_1_1_note.html#a67c593777c501900d80826cfcf7ed535',1,'vrv::Note::CalcLedgerLines()'],['../classvrv_1_1_object.html#aa102c1e31b16c63319763a5fc1c8351c',1,'vrv::Object::CalcLedgerLines()']]],
   ['calcligaturenotepos_1444',['CalcLigatureNotePos',['../classvrv_1_1_ligature.html#a80a0704bc2d5b29e711a89d1a495d71e',1,'vrv::Ligature::CalcLigatureNotePos()'],['../classvrv_1_1_object.html#a5bd96aae8a25cedd2c63ce09b92388a3',1,'vrv::Object::CalcLigatureNotePos()']]],
   ['calclinearinterpolation_1445',['CalcLinearInterpolation',['../classvrv_1_1_bounding_box.html#af5401bb6040fe859bf6b7dc09c3c35b8',1,'vrv::BoundingBox']]],
