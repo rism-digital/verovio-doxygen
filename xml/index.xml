@@ -1126,7 +1126,7 @@
     <member refid="classvrv_1_1_chord_1a15da29444f2bc2ec20cd87f28b012fe5" kind="function"><name>ResetAccidList</name></member>
     <member refid="classvrv_1_1_chord_1a502c5d2649e8a742254db09135446eec" kind="function"><name>IsVisible</name></member>
     <member refid="classvrv_1_1_chord_1a9de31be09e892bc0f2ee30e52e44307c" kind="function"><name>HasNoteWithDots</name></member>
-    <member refid="classvrv_1_1_chord_1aa3856576ee3abbb3478800473af6621c" kind="function"><name>AdjustOverlappingLayers</name></member>
+    <member refid="classvrv_1_1_chord_1ad6602a3b8ecced4d0096d8ab217d5e1c" kind="function"><name>AdjustOverlappingLayers</name></member>
     <member refid="classvrv_1_1_chord_1a68f8accce00e216ba8cf8e74bc7b33f2" kind="function"><name>AdjustCrossStaffYPos</name></member>
     <member refid="classvrv_1_1_chord_1ab545c0a8757da7e284e1785e987be550" kind="function"><name>AdjustArtic</name></member>
     <member refid="classvrv_1_1_chord_1ae165f82cb3826294a8734a546281af38" kind="function"><name>CalcArtic</name></member>
@@ -1135,7 +1135,8 @@
     <member refid="classvrv_1_1_chord_1a18666c327afebb5d2548c01f84ee1de0" kind="function"><name>PrepareLayerElementParts</name></member>
     <member refid="classvrv_1_1_chord_1af50769e5d312c8618af00ff9ba4fdf8f" kind="function"><name>CalcOnsetOffsetEnd</name></member>
     <member refid="classvrv_1_1_chord_1a219f277237156ada2d457903076740c6" kind="function"><name>ResetDrawing</name></member>
-    <member refid="classvrv_1_1_chord_1a54b8b84056d58b264fc37ba4dfc0c9db" kind="function"><name>CaltOptimalDots</name></member>
+    <member refid="classvrv_1_1_chord_1a810aa8ac9bae7e0bcbb15e4da04f1c27" kind="function"><name>CalcNoteLocations</name></member>
+    <member refid="classvrv_1_1_chord_1aaf3ecfb7d8d618367c4192277c62ef8c" kind="function"><name>CalcDotLocations</name></member>
     <member refid="classvrv_1_1_chord_1afca94680f94f3e222e231970bc60e2d7" kind="function"><name>ClearClusters</name></member>
     <member refid="classvrv_1_1_chord_1adacd4194892235e47a1c6d79259bd824" kind="function"><name>FilterList</name></member>
   </compound>
@@ -1631,8 +1632,10 @@
     <member refid="classvrv_1_1_dots_1a19077631e1446d0a0ebe6b2726db2571" kind="variable"><name>m_dotLocsByStaff</name></member>
     <member refid="classvrv_1_1_dots_1a78da582766204292ca6f7b91082b0b11" kind="variable"><name>m_isAdjusted</name></member>
     <member refid="classvrv_1_1_dots_1a429f19ff1649201697ba142bc846001b" kind="function"><name>HasToBeAligned</name></member>
-    <member refid="classvrv_1_1_dots_1a5dd44a19a36163983efa03a8bf3675c3" kind="function"><name>GetDotLocsForStaff</name></member>
-    <member refid="classvrv_1_1_dots_1ad0233f8f09f31b39be270f8eab02ed85" kind="function"><name>GetMapOfDotLocs</name></member>
+    <member refid="classvrv_1_1_dots_1aa0ec6e1d886418f5d1973dbebcb87792" kind="function"><name>GetDotLocsForStaff</name></member>
+    <member refid="classvrv_1_1_dots_1a0ac238b940031ab3e2453396306b8268" kind="function"><name>ModifyDotLocsForStaff</name></member>
+    <member refid="classvrv_1_1_dots_1aa8c78fc442b46a87b1fbddedd0f18de6" kind="function"><name>GetMapOfDotLocs</name></member>
+    <member refid="classvrv_1_1_dots_1a6b805f29f35a6028b0e90414d9f49447" kind="function"><name>SetMapOfDotLocs</name></member>
     <member refid="classvrv_1_1_dots_1a33efd48a0e3749e267bda9e4d0a3c09d" kind="function"><name>IsAdjusted</name></member>
     <member refid="classvrv_1_1_dots_1a676104e1a48bdc30dd6892cac86845fc" kind="function"><name>IsAdjusted</name></member>
     <member refid="classvrv_1_1_dots_1a659d9a38c90bf0d98afbdc83c15702b5" kind="function"><name>ResetDrawing</name></member>
@@ -3009,8 +3012,8 @@
     <member refid="classvrv_1_1_layer_element_1ab0dc6102092c2b081e9d08a8a5353324" kind="function"><name>GetSameAsContentAlignmentDuration</name></member>
     <member refid="classvrv_1_1_layer_element_1a1c066c80d881a800b529815ce85116c2" kind="function"><name>GetContentAlignmentDuration</name></member>
     <member refid="classvrv_1_1_layer_element_1a0dce2be85a425e83b627c8d0a9a5b0f6" kind="function"><name>GenerateZoneBounds</name></member>
-    <member refid="classvrv_1_1_layer_element_1ad62fa30c878d862cfe97b33dbaad07d2" kind="function"><name>AdjustOverlappingLayers</name></member>
-    <member refid="classvrv_1_1_layer_element_1a7b95b6e0c95bcddc0a6cae62095b2c9b" kind="function"><name>CalcElementHorizontalOverlap</name></member>
+    <member refid="classvrv_1_1_layer_element_1a827e5db3f1c5e293dba25678fa4f2f08" kind="function"><name>AdjustOverlappingLayers</name></member>
+    <member refid="classvrv_1_1_layer_element_1a80983838195a9e547294896393ba56a0" kind="function"><name>CalcElementHorizontalOverlap</name></member>
     <member refid="classvrv_1_1_layer_element_1ae490412b5c145adfba5f99fc5c914021" kind="function"><name>AdjustBeams</name></member>
     <member refid="classvrv_1_1_layer_element_1a971d0cc89a6ddfeabfa1d60362d9121c" kind="function"><name>AdjustDots</name></member>
     <member refid="classvrv_1_1_layer_element_1ad80313afbd3e9a3d22a320cfbc6b5685" kind="function"><name>ResetHorizontalAlignment</name></member>
@@ -3032,8 +3035,13 @@
     <member refid="classvrv_1_1_layer_element_1acaa8acf77da1dec85348c36879318e97" kind="function"><name>GenerateTimemap</name></member>
     <member refid="classvrv_1_1_layer_element_1a4e0934ac589bc8c0c3a246c8ec957d6d" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_layer_element_1a5772c6ac45d7902e40ebc8fae22b818c" kind="function"><name>GetRelativeLayerElement</name></member>
-    <member refid="classvrv_1_1_layer_element_1ac7ca9242b3a3c2887c551ea7908856ae" kind="function"><name>GetDrawingArticulationTopOrBottom</name></member>
     <member refid="classvrv_1_1_layer_element_1a3334d5cdd9472146f2db3fc5564b70bf" kind="function"><name>CountElementsInUnison</name></member>
+    <member refid="classvrv_1_1_layer_element_1ac880cd085f86bd38d8483f1c2172e637" kind="function"><name>CalcNoteLocations</name></member>
+    <member refid="classvrv_1_1_layer_element_1af8ea95b9b80e19c4568a2e6da17d4d62" kind="function"><name>CalcDotLocations</name></member>
+    <member refid="classvrv_1_1_layer_element_1a78700de97d76aca246ed070e737f3f20" kind="function"><name>CalcOptimalDotLocations</name></member>
+    <member refid="classvrv_1_1_layer_element_1ae0a0dd99fec2746b5759e15252ab4b4e" kind="function"><name>GetDotCount</name></member>
+    <member refid="classvrv_1_1_layer_element_1afb64a340246bd59bd429c6a2b05f5fae" kind="function"><name>GetCollisionCount</name></member>
+    <member refid="classvrv_1_1_layer_element_1ac7ca9242b3a3c2887c551ea7908856ae" kind="function"><name>GetDrawingArticulationTopOrBottom</name></member>
   </compound>
   <compound refid="classvrv_1_1_layer_elements_in_time_span_params" kind="class"><name>vrv::LayerElementsInTimeSpanParams</name>
     <member refid="classvrv_1_1_layer_elements_in_time_span_params_1a3380b0d633f9680c803cf483c80bad5e" kind="variable"><name>m_time</name></member>
@@ -3929,12 +3937,11 @@
     <member refid="classvrv_1_1_note_1a777cd96f58898204059f5f08dbf2a736" kind="function"><name>AddChild</name></member>
     <member refid="classvrv_1_1_note_1a7bcfe9b0dfad97964d0db5c76ebd6169" kind="function"><name>HasLedgerLines</name></member>
     <member refid="classvrv_1_1_note_1afbc5f0ee766bcd84535a60b4cb17144b" kind="function"><name>IsTabGrpNote</name></member>
-    <member refid="classvrv_1_1_note_1a3f569dd14639313902bcdcf1fe6d9f22" kind="function"><name>IsUnissonWith</name></member>
+    <member refid="classvrv_1_1_note_1a476460180d727c745ab0b74608c44162" kind="function"><name>IsUnisonWith</name></member>
     <member refid="classvrv_1_1_note_1a40bd7cfa491712c99ed6d1bb22fe880f" kind="function"><name>GetDiatonicPitch</name></member>
     <member refid="classvrv_1_1_note_1a91cd1b216fa7a33db3e79699c329a563" kind="function"><name>GetMensuralNoteheadGlyph</name></member>
     <member refid="classvrv_1_1_note_1a3f66a8f4adf8eb4174b3c1ec388ad05d" kind="function"><name>GetNoteheadGlyph</name></member>
     <member refid="classvrv_1_1_note_1a4bbaa20a8cbdc5405f513135cc6117f6" kind="function"><name>IsVisible</name></member>
-    <member refid="classvrv_1_1_note_1afe69c2b593977c61102e764d8330a876" kind="function"><name>CorrectDotsPlacement</name></member>
     <member refid="classvrv_1_1_note_1a22bad1957f235e5db6a7baad7650a335" kind="function"><name>AdjustArtic</name></member>
     <member refid="classvrv_1_1_note_1aba95f5cbd284314def2cb1601f5b8887" kind="function"><name>ConvertMarkupAnalytical</name></member>
     <member refid="classvrv_1_1_note_1ab21851eeb8b179874169119643b76b3c" kind="function"><name>CalcArtic</name></member>
@@ -3949,6 +3956,8 @@
     <member refid="classvrv_1_1_note_1a2bc1140c2a72c564fe0806238d7b8684" kind="function"><name>GenerateMIDI</name></member>
     <member refid="classvrv_1_1_note_1a8f88949434306c66a20ed4d28d6bea85" kind="function"><name>GenerateTimemap</name></member>
     <member refid="classvrv_1_1_note_1a2725dc432a246462217624b556ae36a7" kind="function"><name>Transpose</name></member>
+    <member refid="classvrv_1_1_note_1a0102b070d468daeb1c17d5bfa38b3e64" kind="function"><name>CalcNoteLocations</name></member>
+    <member refid="classvrv_1_1_note_1ad7907ba8df02be1140f2e16672e9e499" kind="function"><name>CalcDotLocations</name></member>
     <member refid="classvrv_1_1_note_1a6dbc938a4cf7f4169436274ad6ea60ac" kind="function"><name>GetChromaticAlteration</name></member>
     <member refid="classvrv_1_1_note_1a2e7ebf8db5d53d987e63cdb2f8407381" kind="function"><name>GetTransPitch</name></member>
     <member refid="classvrv_1_1_note_1a7ca01383e84db4f00a71c734b143b561" kind="function"><name>UpdateFromTransPitch</name></member>
@@ -7452,7 +7461,8 @@
     <member refid="vrvdef_8h_1ad0184df9c199e93253f8d4a6ce297097" kind="typedef"><name>ArrayOfBoundingBoxes</name></member>
     <member refid="vrvdef_8h_1a08796ad3c7e245b32402c2006bf8f5ff" kind="typedef"><name>ArrayOfLedgerLines</name></member>
     <member refid="vrvdef_8h_1a5b385a25b8c7ff4100b1f1301b86a445" kind="typedef"><name>ArrayOfTextElements</name></member>
-    <member refid="vrvdef_8h_1a06ea606a9168e1fab6bfa2dd9ea6a250" kind="typedef"><name>MapOfDotLocs</name></member>
+    <member refid="vrvdef_8h_1af040b44a44ff04c0d5e654146bf3cf7f" kind="typedef"><name>MapOfNoteLocs</name></member>
+    <member refid="vrvdef_8h_1ae636d5f9d9a409b5c1605b5a313553be" kind="typedef"><name>MapOfDotLocs</name></member>
     <member refid="vrvdef_8h_1a8948cd8b27f9cbbbe8a21608b224a47c" kind="typedef"><name>MapOfStrOptions</name></member>
     <member refid="vrvdef_8h_1aa76acf973fc45461e158df49bc08fed7" kind="typedef"><name>MapOfPitchAccid</name></member>
     <member refid="vrvdef_8h_1a9ad8e2dec088a44b2422586ba3227543" kind="typedef"><name>MapOfIntGraceAligners</name></member>

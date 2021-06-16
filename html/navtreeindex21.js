@@ -1,5 +1,12 @@
 var NAVTREEINDEX21 =
 {
+"neume_8h_source.html":[2,0,97],
+"note_8h_source.html":[2,0,98],
+"num_8h_source.html":[2,0,99],
+"object_8h_source.html":[2,0,100],
+"octave_8h_source.html":[2,0,101],
+"options_8h_source.html":[2,0,102],
+"orig_8h_source.html":[2,0,103],
 "page_8h_source.html":[2,0,104],
 "pages.html":[],
 "pages_8h_source.html":[2,0,105],
