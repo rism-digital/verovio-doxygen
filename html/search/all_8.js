@@ -41,7 +41,7 @@ var searchData=
   ['ismeasuredmusic_588',['IsMeasuredMusic',['../classvrv_1_1_measure.html#a53fc4fd98146722a9cc4784f1b9a7498',1,'vrv::Measure']]],
   ['ismensuraldur_589',['IsMensuralDur',['../classvrv_1_1_duration_interface.html#a66a8195b6236d862a2234af1fb5256c1',1,'vrv::DurationInterface']]],
   ['ismodified_590',['IsModified',['../classvrv_1_1_object.html#a4eec6780edc930e49d9874c1036735a4',1,'vrv::Object']]],
-  ['isoftype_591',['IsOfType',['../classvrv_1_1_alignment.html#a678dd6aa50be825965642873ffc5490d',1,'vrv::Alignment']]],
+  ['isoftype_591',['IsOfType',['../classvrv_1_1_alignment.html#abea5738c5b4b494dbda993185dfd0e92',1,'vrv::Alignment']]],
   ['isonstaff_592',['IsOnStaff',['../classvrv_1_1_time_point_interface.html#a11824d7f91a23984c3655671971c3592',1,'vrv::TimePointInterface']]],
   ['isonstaffline_593',['IsOnStaffLine',['../classvrv_1_1_staff.html#a367847939088dc1b31e81f2e66211570',1,'vrv::Staff']]],
   ['isrelativetostaff_594',['IsRelativeToStaff',['../classvrv_1_1_artic.html#af1cffc264bbd574575aee9a65c7dd032',1,'vrv::Artic::IsRelativeToStaff()'],['../classvrv_1_1_layer_element.html#a96557dae7229251dbdadfeb15f0d8b91',1,'vrv::LayerElement::IsRelativeToStaff()'],['../classvrv_1_1_syl.html#a05ccd19d32fd60fa4be0bcd627000345',1,'vrv::Syl::IsRelativeToStaff()']]],
