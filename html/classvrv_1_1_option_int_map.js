@@ -9,7 +9,7 @@ var classvrv_1_1_option_int_map =
     [ "GetStrValues", "classvrv_1_1_option_int_map.html#a695b97aabaa96d9d860b364b9642737f", null ],
     [ "GetStrValuesAsStr", "classvrv_1_1_option_int_map.html#a5b5a1d8bec7d96ba94bdcb90acd74de2", null ],
     [ "GetValue", "classvrv_1_1_option_int_map.html#a3dfdc38e4814226eb25f9e7b1c083387", null ],
-    [ "Init", "classvrv_1_1_option_int_map.html#a2391a2dbcd37fa7cf5e5b06849955417", null ],
+    [ "Init", "classvrv_1_1_option_int_map.html#a7e30fa4745349c664e3a9febcf1353cb", null ],
     [ "SetValue", "classvrv_1_1_option_int_map.html#afac7b8db9e3278a4b11f875a7d153a11", null ],
     [ "SetValue", "classvrv_1_1_option_int_map.html#ae9e57ff77d34a0abb1acd7ab2d4b6b50", null ]
 ];

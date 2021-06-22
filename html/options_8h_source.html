@@ -198,12 +198,12 @@ $(document).ready(function(){initNavTree('options_8h_source.html',''); initResiz
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// Static members //</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">//----------------//</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classvrv_1_1_option.html#a75eb0cf7a34a8bcc36fc56d94623de39">  123</a></span>&#160;    <span class="keyword">static</span> std::map&lt;int, std::string&gt; <a class="code" href="classvrv_1_1_option.html#a75eb0cf7a34a8bcc36fc56d94623de39">s_breaks</a>;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">static</span> std::map&lt;int, std::string&gt; s_condense;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">static</span> std::map&lt;int, std::string&gt; s_footer;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">static</span> std::map&lt;int, std::string&gt; s_header;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keyword">static</span> std::map&lt;int, std::string&gt; s_multiRestStyle;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">static</span> std::map&lt;int, std::string&gt; s_systemDivider;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classvrv_1_1_option.html#a4f1d640dd2b72a23a4987c31e262715f">  123</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::map&lt;int, std::string&gt; <a class="code" href="classvrv_1_1_option.html#a4f1d640dd2b72a23a4987c31e262715f">s_breaks</a>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::map&lt;int, std::string&gt; s_condense;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::map&lt;int, std::string&gt; s_footer;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::map&lt;int, std::string&gt; s_header;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::map&lt;int, std::string&gt; s_multiRestStyle;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::map&lt;int, std::string&gt; s_systemDivider;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    std::string m_title;</div>
@@ -397,7 +397,7 @@ $(document).ready(function(){initNavTree('options_8h_source.html',''); initResiz
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <a class="code" href="classvrv_1_1_option_int_map.html">OptionIntMap</a>();</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_option_int_map.html">OptionIntMap</a>() {}</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> CopyTo(<a class="code" href="classvrv_1_1_option.html">Option</a> *option);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordtype">void</span> Init(<span class="keywordtype">int</span> defaultValue, std::map&lt;int, std::string&gt; *values);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordtype">void</span> Init(<span class="keywordtype">int</span> defaultValue, <span class="keyword">const</span> std::map&lt;int, std::string&gt; *values);</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SetValue(<span class="keyword">const</span> std::string &amp;value);</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keyword">virtual</span> std::string GetStrValue() <span class="keyword">const</span>;</div>
@@ -415,7 +415,7 @@ $(document).ready(function(){initNavTree('options_8h_source.html',''); initResiz
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    std::map&lt;int, std::string&gt; *m_values;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keyword">const</span> std::map&lt;int, std::string&gt; *m_values;</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keywordtype">int</span> m_value;</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keywordtype">int</span> m_defaultValue;</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;};</div>
@@ -783,13 +783,13 @@ $(document).ready(function(){initNavTree('options_8h_source.html',''); initResiz
 <div class="ttc" id="aclassvrv_1_1_option_bool_html"><div class="ttname"><a href="classvrv_1_1_option_bool.html">vrv::OptionBool</a></div><div class="ttdoc">This class is for boolean styling params.</div><div class="ttdef"><b>Definition:</b> options.h:150</div></div>
 <div class="ttc" id="aclassvrv_1_1_option_json_html"><div class="ttname"><a href="classvrv_1_1_option_json.html">vrv::OptionJson</a></div><div class="ttdoc">This class is for Json input params.</div><div class="ttdef"><b>Definition:</b> options.h:440</div></div>
 <div class="ttc" id="aclassvrv_1_1_option_int_html"><div class="ttname"><a href="classvrv_1_1_option_int.html">vrv::OptionInt</a></div><div class="ttdoc">This class is for integer styling params.</div><div class="ttdef"><b>Definition:</b> options.h:226</div></div>
-<div class="ttc" id="aclassvrv_1_1_option_html_a75eb0cf7a34a8bcc36fc56d94623de39"><div class="ttname"><a href="classvrv_1_1_option.html#a75eb0cf7a34a8bcc36fc56d94623de39">vrv::Option::s_breaks</a></div><div class="ttdeci">static std::map&lt; int, std::string &gt; s_breaks</div><div class="ttdoc">Static maps used my OptionIntMap objects.</div><div class="ttdef"><b>Definition:</b> options.h:123</div></div>
 <div class="ttc" id="aclassvrv_1_1_options_html_a61eb54b3d98171f50a13088b53ee28b0"><div class="ttname"><a href="classvrv_1_1_options.html#a61eb54b3d98171f50a13088b53ee28b0">vrv::Options::m_elementMargins</a></div><div class="ttdeci">OptionGrp m_elementMargins</div><div class="ttdoc">Element margins.</div><div class="ttdef"><b>Definition:</b> options.h:706</div></div>
 <div class="ttc" id="aclassvrv_1_1_option_json_html_a84f4c87bc0217e8bce496ef9610222ea"><div class="ttname"><a href="classvrv_1_1_option_json.html#a84f4c87bc0217e8bce496ef9610222ea">vrv::OptionJson::GetSource</a></div><div class="ttdeci">JsonSource GetSource() const</div><div class="ttdoc">Member access.</div></div>
 <div class="ttc" id="aclassvrv_1_1_option_int_map_html"><div class="ttname"><a href="classvrv_1_1_option_int_map.html">vrv::OptionIntMap</a></div><div class="ttdoc">This class is for map break options.</div><div class="ttdef"><b>Definition:</b> options.h:334</div></div>
 <div class="ttc" id="aclassvrv_1_1_option_string_html"><div class="ttname"><a href="classvrv_1_1_option_string.html">vrv::OptionString</a></div><div class="ttdoc">This class is for string styling params.</div><div class="ttdef"><b>Definition:</b> options.h:270</div></div>
 <div class="ttc" id="aclassvrv_1_1_options_html_a2f2ea31f618b0fc45a40a64e637bda68"><div class="ttname"><a href="classvrv_1_1_options.html#a2f2ea31f618b0fc45a40a64e637bda68">vrv::Options::m_generalLayout</a></div><div class="ttdeci">OptionGrp m_generalLayout</div><div class="ttdoc">General layout.</div><div class="ttdef"><b>Definition:</b> options.h:626</div></div>
 <div class="ttc" id="aclassvrv_1_1_option_staffrel_html"><div class="ttname"><a href="classvrv_1_1_option_staffrel.html">vrv::OptionStaffrel</a></div><div class="ttdoc">This class is for map styling params.</div><div class="ttdef"><b>Definition:</b> options.h:370</div></div>
+<div class="ttc" id="aclassvrv_1_1_option_html_a4f1d640dd2b72a23a4987c31e262715f"><div class="ttname"><a href="classvrv_1_1_option.html#a4f1d640dd2b72a23a4987c31e262715f">vrv::Option::s_breaks</a></div><div class="ttdeci">static const std::map&lt; int, std::string &gt; s_breaks</div><div class="ttdoc">Static maps used my OptionIntMap objects.</div><div class="ttdef"><b>Definition:</b> options.h:123</div></div>
 <div class="ttc" id="aclassvrv_1_1_option_html_a8197df949d810a3f12aac223d8593036"><div class="ttname"><a href="classvrv_1_1_option.html#a8197df949d810a3f12aac223d8593036">vrv::Option::ToJson</a></div><div class="ttdeci">jsonxx::Object ToJson() const</div><div class="ttdoc">Return a JSON object for the option.</div></div>
 <div class="ttc" id="aclassvrv_1_1_option_staffrel_basic_html"><div class="ttname"><a href="classvrv_1_1_option_staffrel_basic.html">vrv::OptionStaffrelBasic</a></div><div class="ttdoc">This class is for map styling params.</div><div class="ttdef"><b>Definition:</b> options.h:404</div></div>
 <div class="ttc" id="aclassvrv_1_1_options_html_a39af9494b89df90199d208bd5bd0d73c"><div class="ttname"><a href="classvrv_1_1_options.html#a39af9494b89df90199d208bd5bd0d73c">vrv::Options::m_general</a></div><div class="ttdeci">OptionGrp m_general</div><div class="ttdoc">General.</div><div class="ttdef"><b>Definition:</b> options.h:577</div></div>
@@ -805,7 +805,7 @@ $(document).ready(function(){initNavTree('options_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>options.h</b></li>
-    <li class="footer">Generated on Tue Jun 22 2021 08:10:41 for Verovio by
+    <li class="footer">Generated on Tue Jun 22 2021 08:47:50 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

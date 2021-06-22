@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['s_5fabovestaffartic_877',['s_aboveStaffArtic',['../classvrv_1_1_artic.html#a0d6b92f3ac12b0890dfc98e3b3f93cda',1,'vrv::Artic']]],
-  ['s_5fbreaks_878',['s_breaks',['../classvrv_1_1_option.html#a75eb0cf7a34a8bcc36fc56d94623de39',1,'vrv::Option']]],
-  ['s_5fneumes_879',['s_neumes',['../classvrv_1_1_neume.html#a1e0d3a1fe1294218a6286f0c42e32802',1,'vrv::Neume']]],
-  ['s_5fnum_880',['s_num',['../classvrv_1_1_mensur.html#a55614f0e13b3a2d805aa41cbb646830c',1,'vrv::Mensur']]],
-  ['s_5fnumbase_881',['s_numBase',['../classvrv_1_1_mensur.html#a01c074d466cb310af3cedc0bf574cb2d',1,'vrv::Mensur']]],
-  ['s_5foutstaffartic_882',['s_outStaffArtic',['../classvrv_1_1_artic.html#a8e18feb79b45f9e8aea83b262ef87339',1,'vrv::Artic']]],
+  ['s_5fabovestaffartic_877',['s_aboveStaffArtic',['../classvrv_1_1_artic.html#a825f179de07fb8b912d1c916ba37519a',1,'vrv::Artic']]],
+  ['s_5fbreaks_878',['s_breaks',['../classvrv_1_1_option.html#a4f1d640dd2b72a23a4987c31e262715f',1,'vrv::Option']]],
+  ['s_5fneumes_879',['s_neumes',['../classvrv_1_1_neume.html#a279eba0f83d8dcc4cde34008835c66fd',1,'vrv::Neume']]],
+  ['s_5fnum_880',['s_num',['../classvrv_1_1_mensur.html#a79cd7e935f879da7c7b5376e633cbb70',1,'vrv::Mensur']]],
+  ['s_5fnumbase_881',['s_numBase',['../classvrv_1_1_mensur.html#a44bb3c18cc9a28a7c30e91403b98785b',1,'vrv::Mensur']]],
+  ['s_5foutstaffartic_882',['s_outStaffArtic',['../classvrv_1_1_artic.html#af5632037445cf7c9b45592b11417d13e',1,'vrv::Artic']]],
   ['save_883',['Save',['../classvrv_1_1_dots.html#a4454529ca358ddefdf610c417d6d28bc',1,'vrv::Dots::Save()'],['../classvrv_1_1_flag.html#a82e80def83d663169416ba589fafce81',1,'vrv::Flag::Save()'],['../classvrv_1_1_tuplet_bracket.html#ab4989f09c8e7b778808e713aecb2c991',1,'vrv::TupletBracket::Save()'],['../classvrv_1_1_tuplet_num.html#a40de91808c7743a5b9c8383f1aea32dd',1,'vrv::TupletNum::Save()'],['../classvrv_1_1_stem.html#a85e737a4827ede4cc5621048db5f0b8e',1,'vrv::Stem::Save()'],['../classvrv_1_1_measure.html#a53146c5860c0e95b6510108dbc5493d8',1,'vrv::Measure::Save()'],['../classvrv_1_1_m_num.html#a00abba36e85227ee915fb9f8bde32f68',1,'vrv::MNum::Save()'],['../classvrv_1_1_object.html#a74097c855ed070b02fd06810207d0ac0',1,'vrv::Object::Save(Output *output)'],['../classvrv_1_1_object.html#a8ec6663670b4b6522cb4892babf36742',1,'vrv::Object::Save(FunctorParams *functorParams)'],['../classvrv_1_1_running_element.html#a3d92ee04ae6d9d496dd678aff7a90c71',1,'vrv::RunningElement::Save()']]],
   ['savefile_884',['SaveFile',['../classvrv_1_1_toolkit.html#a0206f317ac7ebe3c61df606c8afcd4ca',1,'vrv::Toolkit']]],
   ['saveparams_885',['SaveParams',['../classvrv_1_1_save_params.html',1,'vrv']]],

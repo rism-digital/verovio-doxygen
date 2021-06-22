@@ -244,10 +244,10 @@ var NAVTREEINDEX12 =
 "classvrv_1_1_option_int.html#afdd254dbe394428f4510cce80a32cf89":[1,0,0,211,0],
 "classvrv_1_1_option_int_map.html":[1,0,0,212],
 "classvrv_1_1_option_int_map.html#a0dab8b8b4b119abf36584e28b624c1e7":[1,0,0,212,0],
-"classvrv_1_1_option_int_map.html#a2391a2dbcd37fa7cf5e5b06849955417":[1,0,0,212,9],
 "classvrv_1_1_option_int_map.html#a3dfdc38e4814226eb25f9e7b1c083387":[1,0,0,212,8],
 "classvrv_1_1_option_int_map.html#a3fa05bd37ccac3b7c48baeb941af7387":[1,0,0,212,4],
 "classvrv_1_1_option_int_map.html#a5621bca61fb9b173511aa464efb436d7":[1,0,0,212,5],
 "classvrv_1_1_option_int_map.html#a5b5a1d8bec7d96ba94bdcb90acd74de2":[1,0,0,212,7],
-"classvrv_1_1_option_int_map.html#a695b97aabaa96d9d860b364b9642737f":[1,0,0,212,6]
+"classvrv_1_1_option_int_map.html#a695b97aabaa96d9d860b364b9642737f":[1,0,0,212,6],
+"classvrv_1_1_option_int_map.html#a7e30fa4745349c664e3a9febcf1353cb":[1,0,0,212,9]
 };
