@@ -263,45 +263,51 @@ $(document).ready(function(){initNavTree('floatingobject_8h_source.html',''); in
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
 <div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="classvrv_1_1_floating_curve_positioner.html#a7b1a4164c095fec32cb5fe488ce5a3fc">  314</a></span>&#160;    <span class="keyword">const</span> ArrayOfCurveSpannedElements *<a class="code" href="classvrv_1_1_floating_curve_positioner.html#a7b1a4164c095fec32cb5fe488ce5a3fc">GetSpannedElements</a>() { <span class="keywordflow">return</span> &amp;m_spannedElements; }</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> m_points[4];</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordtype">float</span> m_angle;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordtype">int</span> m_thickness;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    curvature_CURVEDIR m_dir;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    ArrayOfCurveSpannedElements m_spannedElements;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keywordtype">int</span> m_cachedMinMaxY;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;};</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">// CurveSpannedElement</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordtype">void</span> SetCrossStaff(<a class="code" href="classvrv_1_1_staff.html">Staff</a> *crossStaff) { m_crossStaff = crossStaff; }</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    Staff *GetCrossStaff()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_crossStaff; }</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">bool</span> IsCrossStaff()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_crossStaff != NULL; }</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    Point m_points[4];</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordtype">float</span> m_angle;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">int</span> m_thickness;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    curvature_CURVEDIR m_dir;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    Staff* m_crossStaff;</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
-<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="classvrv_1_1_curve_spanned_element.html">  342</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_curve_spanned_element.html">CurveSpannedElement</a> {</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <a class="code" href="classvrv_1_1_curve_spanned_element.html">CurveSpannedElement</a>()</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    {</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        m_boundingBox = NULL;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        m_discarded = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    }</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_curve_spanned_element.html">CurveSpannedElement</a>(){};</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> m_rotatedPoints[4];</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *m_boundingBox;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordtype">bool</span> m_discarded;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;};</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    ArrayOfCurveSpannedElements m_spannedElements;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordtype">int</span> m_cachedMinMaxY;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;};</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="comment">// CurveSpannedElement</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
+<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="classvrv_1_1_curve_spanned_element.html">  352</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_curve_spanned_element.html">CurveSpannedElement</a> {</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <a class="code" href="classvrv_1_1_curve_spanned_element.html">CurveSpannedElement</a>()</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    {</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        m_boundingBox = NULL;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        m_discarded = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    }</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_curve_spanned_element.html">CurveSpannedElement</a>(){};</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> m_rotatedPoints[4];</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *m_boundingBox;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordtype">bool</span> m_discarded;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;};</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_floating_object_html_a641ed5d645ade83bf5c970d3e5cc02c4"><div class="ttname"><a href="classvrv_1_1_floating_object.html#a641ed5d645ade83bf5c970d3e5cc02c4">vrv::FloatingObject::ResetVerticalAlignment</a></div><div class="ttdeci">virtual int ResetVerticalAlignment(FunctorParams *functorParams)</div><div class="ttdoc">See Object::ResetVerticalAlignment.</div></div>
+<div class="ttc" id="aclassvrv_1_1_staff_html"><div class="ttname"><a href="classvrv_1_1_staff.html">vrv::Staff</a></div><div class="ttdoc">This class represents a staff in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> staff.h:36</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:39</div></div>
 <div class="ttc" id="aclassvrv_1_1_floating_positioner_html_a9f5ccc86f7d5afd5bee395b4d31ccf1e"><div class="ttname"><a href="classvrv_1_1_floating_positioner.html#a9f5ccc86f7d5afd5bee395b4d31ccf1e">vrv::FloatingPositioner::m_spanningType</a></div><div class="ttdeci">char m_spanningType</div><div class="ttdoc">The spanning type of the positionner for spanning control elements.</div><div class="ttdef"><b>Definition:</b> floatingobject.h:242</div></div>
 <div class="ttc" id="aclassvrv_1_1_floating_curve_positioner_html_a27ca3bbbefe52d4b5951e3509e9b1483"><div class="ttname"><a href="classvrv_1_1_floating_curve_positioner.html#a27ca3bbbefe52d4b5951e3509e9b1483">vrv::FloatingCurvePositioner::UpdateCurveParams</a></div><div class="ttdeci">void UpdateCurveParams(const Point points[4], float angle, int thickness, curvature_CURVEDIR curveDir)</div><div class="ttdoc">Update the curve parameters.</div></div>
@@ -317,7 +323,7 @@ $(document).ready(function(){initNavTree('floatingobject_8h_source.html',''); in
 <div class="ttc" id="aclassvrv_1_1_floating_object_html_a2c126764fd8116a54fa94700ef98494f"><div class="ttname"><a href="classvrv_1_1_floating_object.html#a2c126764fd8116a54fa94700ef98494f">vrv::FloatingObject::PrepareTimePointing</a></div><div class="ttdeci">virtual int PrepareTimePointing(FunctorParams *functorParams)</div><div class="ttdoc">See Object::PrepareTimePointing.</div></div>
 <div class="ttc" id="aclassvrv_1_1_floating_object_html_a8bf4262ef0383452bb3666bd1b077a67"><div class="ttname"><a href="classvrv_1_1_floating_object.html#a8bf4262ef0383452bb3666bd1b077a67">vrv::FloatingObject::UnCastOff</a></div><div class="ttdeci">virtual int UnCastOff(FunctorParams *functorParams)</div><div class="ttdoc">See Object::UnCastOff.</div></div>
 <div class="ttc" id="aclassvrv_1_1_floating_positioner_html_a38eda844f3a1146ed42aafe46b7cf86b"><div class="ttname"><a href="classvrv_1_1_floating_positioner.html#a38eda844f3a1146ed42aafe46b7cf86b">vrv::FloatingPositioner::m_drawingXRel</a></div><div class="ttdeci">int m_drawingXRel</div><div class="ttdoc">The X drawing relative position of the object.</div><div class="ttdef"><b>Definition:</b> floatingobject.h:219</div></div>
-<div class="ttc" id="aclassvrv_1_1_curve_spanned_element_html"><div class="ttname"><a href="classvrv_1_1_curve_spanned_element.html">vrv::CurveSpannedElement</a></div><div class="ttdef"><b>Definition:</b> floatingobject.h:342</div></div>
+<div class="ttc" id="aclassvrv_1_1_curve_spanned_element_html"><div class="ttname"><a href="classvrv_1_1_curve_spanned_element.html">vrv::CurveSpannedElement</a></div><div class="ttdef"><b>Definition:</b> floatingobject.h:352</div></div>
 <div class="ttc" id="aclassvrv_1_1_floating_positioner_html_a1bca7057eeaed8bbb766a6ee4d10f84e"><div class="ttname"><a href="classvrv_1_1_floating_positioner.html#a1bca7057eeaed8bbb766a6ee4d10f84e">vrv::FloatingPositioner::m_alignment</a></div><div class="ttdeci">StaffAlignment * m_alignment</div><div class="ttdoc">A pointer to the StaffAlignment that owns it.</div><div class="ttdef"><b>Definition:</b> floatingobject.h:234</div></div>
 <div class="ttc" id="aclassvrv_1_1_floating_object_html"><div class="ttname"><a href="classvrv_1_1_floating_object.html">vrv::FloatingObject</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> floatingobject.h:28</div></div>
 <div class="ttc" id="aclassvrv_1_1_floating_object_html_ad0b4a076b299fc6e9ed32cc51aab1bf7"><div class="ttname"><a href="classvrv_1_1_floating_object.html#ad0b4a076b299fc6e9ed32cc51aab1bf7">vrv::FloatingObject::PrepareTimeSpanning</a></div><div class="ttdeci">virtual int PrepareTimeSpanning(FunctorParams *functorParams)</div><div class="ttdoc">See Object::PrepareTimeSpanning.</div></div>
@@ -326,11 +332,11 @@ $(document).ready(function(){initNavTree('floatingobject_8h_source.html',''); in
 <div class="ttc" id="aclassvrv_1_1_floating_positioner_html_a52d529c02864d41c1b31cad82be18881"><div class="ttname"><a href="classvrv_1_1_floating_positioner.html#a52d529c02864d41c1b31cad82be18881">vrv::FloatingPositioner::m_drawingYRel</a></div><div class="ttdeci">int m_drawingYRel</div><div class="ttdoc">The Y drawing relative position of the object.</div><div class="ttdef"><b>Definition:</b> floatingobject.h:224</div></div>
 <div class="ttc" id="aclassvrv_1_1_floating_positioner_html_acb237747b671faa7e47fa29f005b25ff"><div class="ttname"><a href="classvrv_1_1_floating_positioner.html#acb237747b671faa7e47fa29f005b25ff">vrv::FloatingPositioner::GetSpanningType</a></div><div class="ttdeci">char GetSpanningType()</div><div class="ttdoc">Getter for the spanning type.</div><div class="ttdef"><b>Definition:</b> floatingobject.h:190</div></div>
 <div class="ttc" id="aclassvrv_1_1_floating_positioner_html_acac4eb8ec7d5e7a87eb90aafe9f2f9ad"><div class="ttname"><a href="classvrv_1_1_floating_positioner.html#acac4eb8ec7d5e7a87eb90aafe9f2f9ad">vrv::FloatingPositioner::GetAlignment</a></div><div class="ttdeci">StaffAlignment * GetAlignment() const</div><div class="ttdoc">Getter for the StaffAlignment (asserted, cannot be NULL)</div><div class="ttdef"><b>Definition:</b> floatingobject.h:185</div></div>
-<div class="ttc" id="aclassvrv_1_1_bounding_box_html"><div class="ttname"><a href="classvrv_1_1_bounding_box.html">vrv::BoundingBox</a></div><div class="ttdoc">This class represents a basic object in the layout domain.</div><div class="ttdef"><b>Definition:</b> boundingbox.h:28</div></div>
+<div class="ttc" id="aclassvrv_1_1_bounding_box_html"><div class="ttname"><a href="classvrv_1_1_bounding_box.html">vrv::BoundingBox</a></div><div class="ttdoc">This class represents a basic object in the layout domain.</div><div class="ttdef"><b>Definition:</b> boundingbox.h:30</div></div>
 <div class="ttc" id="aclassvrv_1_1_staff_alignment_html"><div class="ttname"><a href="classvrv_1_1_staff_alignment.html">vrv::StaffAlignment</a></div><div class="ttdoc">This class stores an alignement position staves will point to.</div><div class="ttdef"><b>Definition:</b> verticalaligner.h:142</div></div>
 <div class="ttc" id="aclassvrv_1_1_floating_curve_positioner_html_acf6229982048e963f98e56b66074d33f"><div class="ttname"><a href="classvrv_1_1_floating_curve_positioner.html#acf6229982048e963f98e56b66074d33f">vrv::FloatingCurvePositioner::ClearSpannedElements</a></div><div class="ttdeci">void ClearSpannedElements()</div><div class="ttdoc">Deletes all the CurveSpannedElement objects.</div></div>
 <div class="ttc" id="aclassvrv_1_1_floating_object_html_a7ffe51b2123461f9bc70ae597a24fe0e"><div class="ttname"><a href="classvrv_1_1_floating_object.html#a7ffe51b2123461f9bc70ae597a24fe0e">vrv::FloatingObject::ResetDrawing</a></div><div class="ttdeci">virtual int ResetDrawing(FunctorParams *functorParams)</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
-<div class="ttc" id="aclassvrv_1_1_point_html"><div class="ttname"><a href="classvrv_1_1_point.html">vrv::Point</a></div><div class="ttdoc">Simple class for representing points.</div><div class="ttdef"><b>Definition:</b> devicecontextbase.h:158</div></div>
+<div class="ttc" id="aclassvrv_1_1_point_html"><div class="ttname"><a href="classvrv_1_1_point.html">vrv::Point</a></div><div class="ttdoc">Simple class for representing points.</div><div class="ttdef"><b>Definition:</b> devicecontextbase.h:160</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_params_html"><div class="ttname"><a href="classvrv_1_1_functor_params.html">vrv::FunctorParams</a></div><div class="ttdoc">This is the base class for all MEI att classes.</div><div class="ttdef"><b>Definition:</b> functorparams.h:71</div></div>
 <div class="ttc" id="aclassvrv_1_1_floating_object_html_aef3059c4ebeb1d581e5ce06319d11050"><div class="ttname"><a href="classvrv_1_1_floating_object.html#aef3059c4ebeb1d581e5ce06319d11050">vrv::FloatingObject::GetCorrespFloatingPositioner</a></div><div class="ttdeci">FloatingPositioner * GetCorrespFloatingPositioner(FloatingObject *object)</div><div class="ttdoc">Look for the FloatingPositioner corresponding to the current one but for another object.</div></div>
 <div class="ttc" id="aclassvrv_1_1_floating_curve_positioner_html_a91f91d2639e931d321fae0dc47dd2f07"><div class="ttname"><a href="classvrv_1_1_floating_curve_positioner.html#a91f91d2639e931d321fae0dc47dd2f07">vrv::FloatingCurvePositioner::ResetCurveParams</a></div><div class="ttdeci">void ResetCurveParams()</div><div class="ttdoc">Reset the curve parameters in FloatingCurvePositioner::FloatingCurvePositioner and in FloatingCurvePo...</div></div>
@@ -341,7 +347,7 @@ $(document).ready(function(){initNavTree('floatingobject_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>floatingobject.h</b></li>
-    <li class="footer">Generated on Tue Jun 22 2021 06:54:12 for Verovio by
+    <li class="footer">Generated on Tue Jun 22 2021 08:10:41 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

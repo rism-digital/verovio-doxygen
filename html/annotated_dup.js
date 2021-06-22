@@ -55,6 +55,7 @@ var annotated_dup =
       [ "BeamElementCoord", "classvrv_1_1_beam_element_coord.html", "classvrv_1_1_beam_element_coord" ],
       [ "BeamSegment", "classvrv_1_1_beam_segment.html", "classvrv_1_1_beam_segment" ],
       [ "BeatRpt", "classvrv_1_1_beat_rpt.html", "classvrv_1_1_beat_rpt" ],
+      [ "BezierCurve", "classvrv_1_1_bezier_curve.html", "classvrv_1_1_bezier_curve" ],
       [ "BoundaryEnd", "classvrv_1_1_boundary_end.html", "classvrv_1_1_boundary_end" ],
       [ "BoundaryStartInterface", "classvrv_1_1_boundary_start_interface.html", "classvrv_1_1_boundary_start_interface" ],
       [ "BoundingBox", "classvrv_1_1_bounding_box.html", "classvrv_1_1_bounding_box" ],

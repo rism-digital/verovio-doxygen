@@ -769,6 +769,7 @@ var hierarchy =
     ] ],
     [ "vrv::BeamElementCoord", "classvrv_1_1_beam_element_coord.html", null ],
     [ "vrv::BeamSegment", "classvrv_1_1_beam_segment.html", null ],
+    [ "vrv::BezierCurve", "classvrv_1_1_bezier_curve.html", null ],
     [ "vrv::BoundaryStartInterface", "classvrv_1_1_boundary_start_interface.html", [
       [ "vrv::EditorialElement", "classvrv_1_1_editorial_element.html", null ],
       [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
