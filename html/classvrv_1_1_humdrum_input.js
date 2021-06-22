@@ -4,6 +4,7 @@ var classvrv_1_1_humdrum_input =
     [ "~HumdrumInput", "classvrv_1_1_humdrum_input.html#abb67aed16d8d1fe9ba31d0d1987bacf5", null ],
     [ "addArpeggio", "classvrv_1_1_humdrum_input.html#ab18231c76dd68ab8ceb917d4765fd3d0", null ],
     [ "addArticulations", "classvrv_1_1_humdrum_input.html#a902de02f98825c4f59e4b94ad74dae7a", null ],
+    [ "addBarLineElement", "classvrv_1_1_humdrum_input.html#a83b8312c0e14e9525c5e98a8c0016c2d", null ],
     [ "addBreath", "classvrv_1_1_humdrum_input.html#a35acda4d038a66935620e24c005690e9", null ],
     [ "addCautionaryAccidental", "classvrv_1_1_humdrum_input.html#a37acfc6e81605b316f5a2f0ffe593b9e", null ],
     [ "addChildBackMeasureOrSection", "classvrv_1_1_humdrum_input.html#a7f84e7c8386ec3a054ec5154a8e47f36", null ],

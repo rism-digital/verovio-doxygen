@@ -1,5 +1,12 @@
 var NAVTREEINDEX21 =
 {
+"horizontalaligner_8h_source.html":[2,0,67],
+"index.html":[],
+"instrdef_8h_source.html":[2,0,68],
+"io_8h_source.html":[2,0,69],
+"ioabc_8h_source.html":[2,0,70],
+"iohumdrum_8h_source.html":[2,0,71],
+"iomei_8h_source.html":[2,0,72],
 "iomusxml_8h_source.html":[2,0,73],
 "keyaccid_8h_source.html":[2,0,74],
 "keysig_8h_source.html":[2,0,75],

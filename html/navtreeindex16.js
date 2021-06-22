@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"classvrv_1_1_set_staff_def_redraw_flags_params.html#ac05e8d1ed4a3e392813e10dfa1f51359":[1,0,0,278,3],
 "classvrv_1_1_sic.html":[1,0,0,279],
 "classvrv_1_1_sic.html#a0836f3d61bf7d911eec544b8991eecff":[1,0,0,279,3],
 "classvrv_1_1_sic.html#a2847a2005fd1c3a459a4446187cc45df":[1,0,0,279,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "classvrv_1_1_svg.html#a430146656082945d3d1a3b77666e6d5e":[1,0,0,293,0],
 "classvrv_1_1_svg.html#a69e47858bc4822f9a900dc2575852001":[1,0,0,293,4],
 "classvrv_1_1_svg.html#aa53f518e90f2675c6d82e64026fb5159":[1,0,0,293,7],
-"classvrv_1_1_svg.html#aaea6efabb35bddc3df6efc8661f4ae44":[1,0,0,293,5],
-"classvrv_1_1_svg.html#adcd7bb29fed8a27858509f1bae850192":[1,0,0,293,8]
+"classvrv_1_1_svg.html#aaea6efabb35bddc3df6efc8661f4ae44":[1,0,0,293,5]
 };

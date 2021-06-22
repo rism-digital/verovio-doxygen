@@ -2,6 +2,9 @@ var classvrv_1_1_toolkit =
 [
     [ "Toolkit", "classvrv_1_1_toolkit.html#ad009ed5b8852f67843a34c4b6fd1e3c7", null ],
     [ "~Toolkit", "classvrv_1_1_toolkit.html#a97d14fc376f8532765955015b26a6811", null ],
+    [ "ClearHumdrumBuffer", "group__nodoc.html#gae5a104614acc4edf6794abe71d027210", null ],
+    [ "ConvertHumdrumToHumdrum", "classvrv_1_1_toolkit.html#a8a411c7fe22ffb9df4be52b582af550e", null ],
+    [ "ConvertMEIToHumdrum", "classvrv_1_1_toolkit.html#adf47bbe710d3902f241db376002f55cb", null ],
     [ "Edit", "classvrv_1_1_toolkit.html#a25adbe86763cca1c51603b9e4c4831f3", null ],
     [ "EditInfo", "classvrv_1_1_toolkit.html#a369f22c61679d97bdd05c0689d6f0a44", null ],
     [ "GetAvailableOptions", "classvrv_1_1_toolkit.html#a2ca1aa7fcc49d2b8b7717dec136c5e86", null ],
@@ -13,6 +16,7 @@ var classvrv_1_1_toolkit =
     [ "GetHumdrum", "group__nodoc.html#ga942ab5856517907ea4f2082d9f35f532", null ],
     [ "GetHumdrumBuffer", "group__nodoc.html#ga11e13d1850cadf28b00a85fde655e133", null ],
     [ "GetHumdrumFile", "classvrv_1_1_toolkit.html#ade214f7c4d835643aa13046d8ae000ef", null ],
+    [ "GetInputFrom", "group__nodoc.html#gac0b9bfca70ab200ca3e313611e37cc20", null ],
     [ "GetLog", "classvrv_1_1_toolkit.html#a0dacf26288d829c51737cbca389c7117", null ],
     [ "GetMEI", "classvrv_1_1_toolkit.html#a32c3ff9da41c302c83c6f8d52fc11467", null ],
     [ "GetMIDIValuesForElement", "classvrv_1_1_toolkit.html#a1b7c6ef82b1ec90af16f8f32da24dd5f", null ],
