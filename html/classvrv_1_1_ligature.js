@@ -10,6 +10,8 @@ var classvrv_1_1_ligature =
     [ "GetClassName", "classvrv_1_1_ligature.html#a6d55fd013e98a7f50096ab6209da6810", null ],
     [ "GetDrawingNoteShape", "classvrv_1_1_ligature.html#a47287f0156e0abe2c660372bacd6a887", null ],
     [ "GetDrawingPreviousNoteShape", "classvrv_1_1_ligature.html#a29270e8544f8f0f11f93dcf652eebee5", null ],
+    [ "GetFirstNote", "classvrv_1_1_ligature.html#a1ac3c2386e687ceca3e8adee0e89a7e2", null ],
+    [ "GetLastNote", "classvrv_1_1_ligature.html#a1db3d26a346811010619d9039062aed6", null ],
     [ "HasToBeAligned", "classvrv_1_1_ligature.html#a72d016417fcfecdc5f73283287167b8e", null ],
     [ "IsSupportedChild", "classvrv_1_1_ligature.html#ad2e92ac5e2a2ec5a59d4cf534fe4fa28", null ],
     [ "Reset", "classvrv_1_1_ligature.html#abbbb11eae3514269e4c6ad03b0c52416", null ],
