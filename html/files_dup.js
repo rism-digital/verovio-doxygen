@@ -88,6 +88,7 @@ var files_dup =
     [ "measure.h", "measure_8h_source.html", null ],
     [ "mensur.h", "mensur_8h_source.html", null ],
     [ "metersig.h", "metersig_8h_source.html", null ],
+    [ "metersiggrp.h", "metersiggrp_8h_source.html", null ],
     [ "mnum.h", "mnum_8h_source.html", null ],
     [ "mordent.h", "mordent_8h_source.html", null ],
     [ "mrest.h", "mrest_8h_source.html", null ],

@@ -40,6 +40,7 @@ var classvrv_1_1_layer =
     [ "GetStaffDefKeySig", "classvrv_1_1_layer.html#a0c8c98ba2111367eb53e5393cdeec1dd", null ],
     [ "GetStaffDefMensur", "classvrv_1_1_layer.html#ae5c54fb41592c4c54e60de6a43dc1224", null ],
     [ "GetStaffDefMeterSig", "classvrv_1_1_layer.html#a34b551903615d5b3df57618e2e0214dd", null ],
+    [ "GetStaffDefMeterSigGrp", "classvrv_1_1_layer.html#a1c89735552f109a464a6b3a83323acf6", null ],
     [ "HasCautionStaffDef", "classvrv_1_1_layer.html#a7611e8efaec6d9396d9820673a176890", null ],
     [ "HasCrossStaffFromAbove", "classvrv_1_1_layer.html#adbe990fc7f90739f43103ca3e2805504", null ],
     [ "HasCrossStaffFromBelow", "classvrv_1_1_layer.html#a02e25e8082abddb22bec2cdb8b440ad8", null ],

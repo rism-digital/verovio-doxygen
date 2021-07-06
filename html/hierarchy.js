@@ -42,6 +42,7 @@ var hierarchy =
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ]
     ] ],
     [ "AttBasic", null, [
+      [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
       [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ]
     ] ],
     [ "AttBeamedWith", null, [
@@ -342,6 +343,7 @@ var hierarchy =
       [ "vrv::InstrDef", "classvrv_1_1_instr_def.html", null ],
       [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
       [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
+      [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
       [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
       [ "vrv::Score", "classvrv_1_1_score.html", null ],
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ],
@@ -388,7 +390,8 @@ var hierarchy =
     [ "AttLinking", null, [
       [ "vrv::LinkingInterface", "classvrv_1_1_linking_interface.html", [
         [ "vrv::ControlElement", "classvrv_1_1_control_element.html", null ],
-        [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ]
+        [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
+        [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ]
       ] ]
     ] ],
     [ "AttLyricStyle", null, [
@@ -413,6 +416,9 @@ var hierarchy =
     ] ],
     [ "AttMeterConformanceBar", null, [
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ]
+    ] ],
+    [ "AttMeterSigGrpLog", null, [
+      [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ]
     ] ],
     [ "AttMeterSigLog", null, [
       [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ]
@@ -718,6 +724,7 @@ var hierarchy =
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
+      [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
       [ "vrv::RunningElement", "classvrv_1_1_running_element.html", null ],
       [ "vrv::ScoreDefElement", "classvrv_1_1_score_def_element.html", null ],
       [ "vrv::Staff", "classvrv_1_1_staff.html", null ],
@@ -803,6 +810,7 @@ var hierarchy =
         [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
         [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
         [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
+        [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
         [ "vrv::Page", "classvrv_1_1_page.html", null ],
         [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
         [ "vrv::RunningElement", "classvrv_1_1_running_element.html", null ],
@@ -989,6 +997,7 @@ var hierarchy =
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::Ligature", "classvrv_1_1_ligature.html", null ],
+      [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
       [ "vrv::Neume", "classvrv_1_1_neume.html", null ],
       [ "vrv::RunningElement", "classvrv_1_1_running_element.html", null ],
       [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
