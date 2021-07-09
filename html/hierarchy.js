@@ -109,7 +109,9 @@ var hierarchy =
         [ "vrv::Phrase", "classvrv_1_1_phrase.html", null ]
       ] ],
       [ "vrv::Syllable", "classvrv_1_1_syllable.html", null ],
-      [ "vrv::Tie", "classvrv_1_1_tie.html", null ],
+      [ "vrv::Tie", "classvrv_1_1_tie.html", [
+        [ "vrv::Lv", "classvrv_1_1_lv.html", null ]
+      ] ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
       [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ],
       [ "vrv::Turn", "classvrv_1_1_turn.html", null ],

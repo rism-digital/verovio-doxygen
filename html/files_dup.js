@@ -84,6 +84,7 @@ var files_dup =
     [ "lem.h", "lem_8h_source.html", null ],
     [ "ligature.h", "ligature_8h_source.html", null ],
     [ "linkinginterface.h", "linkinginterface_8h_source.html", null ],
+    [ "lv.h", "lv_8h_source.html", null ],
     [ "mdiv.h", "mdiv_8h_source.html", null ],
     [ "measure.h", "measure_8h_source.html", null ],
     [ "mensur.h", "mensur_8h_source.html", null ],
