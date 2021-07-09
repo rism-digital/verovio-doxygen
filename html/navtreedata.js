@@ -64,7 +64,7 @@ var NAVTREEINDEX =
 "classvrv_1_1_supplied.html",
 "classvrv_1_1_text.html#ac8b56c524e22c536a37c696f22837412",
 "classvrv_1_1_transposer.html#ae6732f685efa05706fc4cd7c1f99c7ff",
-"classvrv_1_1_view.html#aa2e78145592d2b9c39e1d49f87c2b4f6",
+"classvrv_1_1_view.html#aa1e17b2aee2529c58ae7faee1041dff1",
 "group__nodoc.html"
 ];
 
