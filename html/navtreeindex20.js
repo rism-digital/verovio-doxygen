@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"classvrv_1_1_view.html#aa2e78145592d2b9c39e1d49f87c2b4f6":[1,0,0,329,88],
+"classvrv_1_1_view.html#aa33a36bdc73dc4b73b1e3ccb78fcf4d5":[1,0,0,329,71],
 "classvrv_1_1_view.html#aa63e5736efde1198c4ccd95754e484a4":[1,0,0,329,118],
 "classvrv_1_1_view.html#aa745e375702204cffce77b26af9d8fb4":[1,0,0,329,90],
 "classvrv_1_1_view.html#aacd5d6dbe2619b97c2af15fb2b940fef":[1,0,0,329,116],
@@ -200,8 +202,8 @@ var NAVTREEINDEX20 =
 "fing_8h_source.html":[2,0,56],
 "floatingobject_8h_source.html":[2,0,57],
 "ftrem_8h_source.html":[2,0,58],
-"functions.html":[1,3,0],
 "functions.html":[1,3,0,0],
+"functions.html":[1,3,0],
 "functions_b.html":[1,3,0,1],
 "functions_c.html":[1,3,0,2],
 "functions_d.html":[1,3,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "functorparams_8h_source.html":[2,0,59],
 "gliss_8h_source.html":[2,0,60],
 "glyph_8h_source.html":[2,0,61],
-"gracegrp_8h_source.html":[2,0,62],
-"group__nodoc.html":[0,0],
-"group__nodoc.html#ga11e13d1850cadf28b00a85fde655e133":[1,0,0,315,14]
+"gracegrp_8h_source.html":[2,0,62]
 };

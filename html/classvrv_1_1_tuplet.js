@@ -3,6 +3,7 @@ var classvrv_1_1_tuplet =
     [ "Tuplet", "classvrv_1_1_tuplet.html#a7e4042b932922d853616c367f899cb7b", null ],
     [ "~Tuplet", "classvrv_1_1_tuplet.html#a94b7e5adabfb88c71039658b174eabf8", null ],
     [ "AddChild", "classvrv_1_1_tuplet.html#a091eac9913c75a427dca15b7db03b84b", null ],
+    [ "AdjustTupletNumY", "classvrv_1_1_tuplet.html#a2c093566d9c599da36d05fa7607c708d", null ],
     [ "AdjustTupletsX", "classvrv_1_1_tuplet.html#aa3753def5cf71c42591725ca226f9e0e", null ],
     [ "AdjustTupletsY", "classvrv_1_1_tuplet.html#a7ae244f9388019b00ce7c833772633dd", null ],
     [ "CalcDrawingBracketAndNumPos", "classvrv_1_1_tuplet.html#ac6b04379bb72ad6f90757952cf3bcc81", null ],

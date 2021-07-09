@@ -183,11 +183,12 @@ var NAVTREEINDEX0 =
 "classvrv_1_1_adjust_tempo_params.html#a87aaf20b53ba86393b5995125a1d68d3":[1,0,0,21,0],
 "classvrv_1_1_adjust_tempo_params.html#aaccdb0ad6803c7acede4a9dff4e796cc":[1,0,0,21,1],
 "classvrv_1_1_adjust_tuplet_num_overlap_params.html":[1,0,0,22],
-"classvrv_1_1_adjust_tuplet_num_overlap_params.html#a0a6fbcfa679693f5ffc2c48ff9518dcd":[1,0,0,22,5],
+"classvrv_1_1_adjust_tuplet_num_overlap_params.html#a0a6fbcfa679693f5ffc2c48ff9518dcd":[1,0,0,22,6],
 "classvrv_1_1_adjust_tuplet_num_overlap_params.html#a11e14d6ebd3cba59b992cae22b1b7697":[1,0,0,22,1],
-"classvrv_1_1_adjust_tuplet_num_overlap_params.html#a3e65134970e2e10ea7dd2f23569d2df9":[1,0,0,22,3],
-"classvrv_1_1_adjust_tuplet_num_overlap_params.html#a50d684ab370b540c91c6de66c2f07394":[1,0,0,22,2],
-"classvrv_1_1_adjust_tuplet_num_overlap_params.html#a67e8ab8ccd0aacdd309e2d91e5090035":[1,0,0,22,4],
+"classvrv_1_1_adjust_tuplet_num_overlap_params.html#a3e65134970e2e10ea7dd2f23569d2df9":[1,0,0,22,4],
+"classvrv_1_1_adjust_tuplet_num_overlap_params.html#a50d684ab370b540c91c6de66c2f07394":[1,0,0,22,3],
+"classvrv_1_1_adjust_tuplet_num_overlap_params.html#a5f5a08a834f0eb85cf925a76286af298":[1,0,0,22,2],
+"classvrv_1_1_adjust_tuplet_num_overlap_params.html#a67e8ab8ccd0aacdd309e2d91e5090035":[1,0,0,22,5],
 "classvrv_1_1_adjust_tuplet_num_overlap_params.html#a9e9948140648efd0fb661c28fbb9ee36":[1,0,0,22,0],
 "classvrv_1_1_adjust_x_overflow_params.html":[1,0,0,23],
 "classvrv_1_1_adjust_x_overflow_params.html#a5cdce3a36fae6b41b52d847b37440b22":[1,0,0,23,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classvrv_1_1_align_systems_params.html#af044799fa83570e696ce34f47b6937d8":[1,0,0,31,5],
 "classvrv_1_1_align_vertically_params.html":[1,0,0,32],
 "classvrv_1_1_align_vertically_params.html#a0f9432c7be14a54d6f6798bc22e73643":[1,0,0,32,7],
-"classvrv_1_1_align_vertically_params.html#a4768981e2e7b392e9c09c47b24f864ce":[1,0,0,32,5],
-"classvrv_1_1_align_vertically_params.html#a4e407dbb28a97b5fd13c25c1efad424b":[1,0,0,32,1]
+"classvrv_1_1_align_vertically_params.html#a4768981e2e7b392e9c09c47b24f864ce":[1,0,0,32,5]
 };
