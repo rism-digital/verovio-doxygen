@@ -5,7 +5,6 @@ var classvrv_1_1_tie =
     [ "~Tie", "classvrv_1_1_tie.html#a4ef66bfe13023a47286d34913cbcda19", null ],
     [ "CalculatePosition", "classvrv_1_1_tie.html#af5d0e930a2e13e63e0511792d3831152", null ],
     [ "Clone", "classvrv_1_1_tie.html#adfda19f910a88a11cbac436f19e28afb", null ],
-    [ "FindSpannedLayerElements", "classvrv_1_1_tie.html#a885cedbec1dbd2a06778d2a0ac6b42b5", null ],
     [ "GetClassId", "classvrv_1_1_tie.html#a8dc99e4d932100b988b7d640caefde88", null ],
     [ "GetClassName", "classvrv_1_1_tie.html#aaa7b56a76a77bc866a6b49f26ad13fdd", null ],
     [ "GetTimePointInterface", "classvrv_1_1_tie.html#a403d6c9b23874c148167fc487e6bc346", null ],

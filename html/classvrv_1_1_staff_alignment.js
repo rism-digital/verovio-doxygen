@@ -15,6 +15,7 @@ var classvrv_1_1_staff_alignment =
     [ "CalcOverflowAbove", "classvrv_1_1_staff_alignment.html#a361e58e275e77a066a5d34687bb5a59a", null ],
     [ "CalcOverflowBelow", "classvrv_1_1_staff_alignment.html#a6e7c3cc5f9cfebf735403a76a85ebd3a", null ],
     [ "ClearPositioners", "classvrv_1_1_staff_alignment.html#ab0c857aa5a9a585e4107edd6ef102f3e", null ],
+    [ "FindAllFloatingPositioners", "classvrv_1_1_staff_alignment.html#a45c9254734f194b8625f2ecb835d2dbc", null ],
     [ "FindAllIntersectionPoints", "classvrv_1_1_staff_alignment.html#a708209da1e2d295a316091342956f633", null ],
     [ "FindFirstFloatingPositioner", "classvrv_1_1_staff_alignment.html#aebb16e118406ae41bf59ef1730842a78", null ],
     [ "GetAttSpacing", "classvrv_1_1_staff_alignment.html#a8df2e2be909bfb617bf1cd3b1b278c2d", null ],
