@@ -69,7 +69,7 @@ var classvrv_1_1_view =
     [ "DrawLayerElement", "classvrv_1_1_view.html#a79e34f9363ce1cd05205fd3b2a4dff29", null ],
     [ "DrawLayerList", "classvrv_1_1_view.html#af3b10a0cb226363aa10095adbdcafb98", null ],
     [ "DrawLb", "classvrv_1_1_view.html#ae0c64862d1cea951ca2a47a5316acf9e", null ],
-    [ "DrawLedgerLines", "classvrv_1_1_view.html#a2ad6d68a763473fd74419d6680e181a6", null ],
+    [ "DrawLedgerLines", "classvrv_1_1_view.html#a3e601102a8b6fa0df15da96a680a2752", null ],
     [ "DrawLigature", "classvrv_1_1_view.html#a1bbedacd80efd2c9bbd89055a9f9ce81", null ],
     [ "DrawLigatureNote", "classvrv_1_1_view.html#aa33a36bdc73dc4b73b1e3ccb78fcf4d5", null ],
     [ "DrawLyricString", "classvrv_1_1_view.html#a34528d0e5176379202314d9bf3ab85e4", null ],

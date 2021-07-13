@@ -1523,7 +1523,8 @@
     <member refid="classvrv_1_1_doc_1a4bfa514975ebc35a87014187dadca6e3" kind="function"><name>GetDrawingHairpinSize</name></member>
     <member refid="classvrv_1_1_doc_1a70b37a602f3f5473b4f0fe1b8c184b88" kind="function"><name>GetDrawingBeamWidth</name></member>
     <member refid="classvrv_1_1_doc_1accb8f60809807d85d5fe168fde8e770d" kind="function"><name>GetDrawingBeamWhiteWidth</name></member>
-    <member refid="classvrv_1_1_doc_1a90a30d539b557aa50db0d7ad35bc9deb" kind="function"><name>GetDrawingLedgerLineLength</name></member>
+    <member refid="classvrv_1_1_doc_1a0d2d01fdd2d60957707db947078aa36f" kind="function"><name>GetDrawingLedgerLineExtension</name></member>
+    <member refid="classvrv_1_1_doc_1a6ee7c5483e27519feb5cfa930650fab0" kind="function"><name>GetDrawingMinimalLedgerLineExtension</name></member>
     <member refid="classvrv_1_1_doc_1aa31b34923fb0e5b4f062f36f5793a734" kind="function"><name>GetCueSize</name></member>
     <member refid="classvrv_1_1_doc_1a396a023e43889afb8c83bc368cada12b" kind="function"><name>GetCueScaling</name></member>
     <member refid="classvrv_1_1_doc_1ae629c5b374a533aee6e98f1898b9cb67" kind="function"><name>GetDrawingSmuflFont</name></member>
@@ -1565,7 +1566,6 @@
     <member refid="classvrv_1_1_doc_1ab1f93216c0a1c9548f19f985b5834b7c" kind="variable"><name>m_drawingPage</name></member>
     <member refid="classvrv_1_1_doc_1a815ba27ca61098b053d668862df39535" kind="variable"><name>m_drawingBeamWidth</name></member>
     <member refid="classvrv_1_1_doc_1a168eaa12334c4f66e4672285af800d07" kind="variable"><name>m_drawingBeamWhiteWidth</name></member>
-    <member refid="classvrv_1_1_doc_1a1b41211cd5b948759d9113039a585e76" kind="variable"><name>m_drawingLedgerLine</name></member>
     <member refid="classvrv_1_1_doc_1ac5d42645d07612c279ed1cb930dacde2" kind="variable"><name>m_drawingBrevisWidth</name></member>
     <member refid="classvrv_1_1_doc_1a691e4b8154457497dfcadb0a799238f3" kind="variable"><name>m_drawingSmuflFontSize</name></member>
     <member refid="classvrv_1_1_doc_1a7791c004a74422bfc0c16d170584a1f3" kind="variable"><name>m_drawingLyricFontSize</name></member>
@@ -3101,7 +3101,7 @@
     <member refid="classvrv_1_1_ledger_line_1a682e8e17dd97f239b3dbdd8137e37e86" kind="function"><name>~LedgerLine</name></member>
     <member refid="classvrv_1_1_ledger_line_1aa63a9643d55080397cc4d58bdab8e2bf" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_ledger_line_1a1f028b4f8242c566116eecc0313d2618" kind="variable"><name>m_dashes</name></member>
-    <member refid="classvrv_1_1_ledger_line_1a96c78ac54f8a6d82244191574b581072" kind="function"><name>AddDash</name></member>
+    <member refid="classvrv_1_1_ledger_line_1adad6d12d0ee5220059bc573ffe7ec273" kind="function"><name>AddDash</name></member>
   </compound>
   <compound refid="classvrv_1_1_lem" kind="class"><name>vrv::Lem</name>
     <member refid="classvrv_1_1_lem_1a8bdf4eac8ddf365d01276df3202331dd" kind="function"><name>Lem</name></member>
@@ -4133,6 +4133,8 @@
     <member refid="classvrv_1_1_object_1a7456561dbdda3f5d7f47e520c3819cd3" kind="function"><name>AlignVerticallyEnd</name></member>
     <member refid="classvrv_1_1_object_1a1579484058fb14c4c8cdf4ad58249db6" kind="function"><name>ApplyPPUFactor</name></member>
     <member refid="classvrv_1_1_object_1a6bdcb61d424d48a52281eec119128ceb" kind="function"><name>AdjustXRelForTranscription</name></member>
+    <member refid="classvrv_1_1_object_1aa102c1e31b16c63319763a5fc1c8351c" kind="function"><name>CalcLedgerLines</name></member>
+    <member refid="classvrv_1_1_object_1a56b580832eec7871b18371835a61e136" kind="function"><name>CalcLedgerLinesEnd</name></member>
     <member refid="classvrv_1_1_object_1abeee6db6564ff37f1fd686033751d51f" kind="function"><name>AdjustCrossStaffYPos</name></member>
     <member refid="classvrv_1_1_object_1a91e929fac940d876aa172b0b6c160c26" kind="function"><name>AdjustCrossStaffYPosEnd</name></member>
     <member refid="classvrv_1_1_object_1ab07299113bca877d821a79246e887bd2" kind="function"><name>AlignSystems</name></member>
@@ -4273,7 +4275,6 @@
     <member refid="classvrv_1_1_object_1ae04a8386531bae9a2facddc7d293a0ed" kind="function"><name>AdjustTempo</name></member>
     <member refid="classvrv_1_1_object_1a59773566ac731e75fa34166fa1d78aa3" kind="function"><name>AdjustTupletsX</name></member>
     <member refid="classvrv_1_1_object_1a5bd96aae8a25cedd2c63ce09b92388a3" kind="function"><name>CalcLigatureNotePos</name></member>
-    <member refid="classvrv_1_1_object_1aa102c1e31b16c63319763a5fc1c8351c" kind="function"><name>CalcLedgerLines</name></member>
     <member refid="classvrv_1_1_object_1aeafa32ecabeffb9ce6d3e8372ab7160b" kind="function"><name>CalcArtic</name></member>
     <member refid="classvrv_1_1_object_1a0d2579fea0aea8b317a490c1654be52b" kind="function"><name>AdjustBeams</name></member>
     <member refid="classvrv_1_1_object_1a1373589b997e00e6dc811eb3139194e8" kind="function"><name>AdjustBeamsEnd</name></member>
@@ -5413,17 +5414,17 @@
     <member refid="classvrv_1_1_staff_1a79eac77323fbef08aea63636b198670f" kind="function"><name>IsMensural</name></member>
     <member refid="classvrv_1_1_staff_1a34bb6fc88f3af41943c3ba4e6006f526" kind="function"><name>IsNeume</name></member>
     <member refid="classvrv_1_1_staff_1a9dc4603b9cbe7003cd4fb617c186b8d5" kind="function"><name>IsTablature</name></member>
-    <member refid="classvrv_1_1_staff_1a5f0ab356bcfb44c730bf0d52cd060a92" kind="function"><name>GetLedgerLinesAbove</name></member>
-    <member refid="classvrv_1_1_staff_1a94fc7f27ea139a3b37983f383464b18b" kind="function"><name>GetLedgerLinesAboveCue</name></member>
-    <member refid="classvrv_1_1_staff_1ae91c2b2dffa5b7be17298693c96b1d39" kind="function"><name>GetLedgerLinesBelow</name></member>
-    <member refid="classvrv_1_1_staff_1a4773a1ba3e425e3b717f04c79928cfb2" kind="function"><name>GetLedgerLinesBelowCue</name></member>
-    <member refid="classvrv_1_1_staff_1a161dcbe91588b5cb23560162166079f6" kind="function"><name>AddLedgerLineAbove</name></member>
-    <member refid="classvrv_1_1_staff_1a3ff6e40dbafa9509a985a9ae6d93319b" kind="function"><name>AddLedgerLineBelow</name></member>
+    <member refid="classvrv_1_1_staff_1a574fa40f4a5412da8b51679db2e63756" kind="function"><name>GetLedgerLinesAbove</name></member>
+    <member refid="classvrv_1_1_staff_1a58c281c807c9f7df8f9d8bb7f34fd99e" kind="function"><name>GetLedgerLinesAboveCue</name></member>
+    <member refid="classvrv_1_1_staff_1aa6fbec686d74e09f11456d85bf3c6c99" kind="function"><name>GetLedgerLinesBelow</name></member>
+    <member refid="classvrv_1_1_staff_1a6699d0c5b38a86f027957171547124a5" kind="function"><name>GetLedgerLinesBelowCue</name></member>
+    <member refid="classvrv_1_1_staff_1a3a3677c7c69ef7377d08bad3873c37ed" kind="function"><name>AddLedgerLineAbove</name></member>
+    <member refid="classvrv_1_1_staff_1ac2cb32bf535c791783491fe9043765eb" kind="function"><name>AddLedgerLineBelow</name></member>
     <member refid="classvrv_1_1_staff_1a31043856d7ca807142154185f4f1eacd" kind="function"><name>CalcOnsetOffset</name></member>
-    <member refid="classvrv_1_1_staff_1aa86f5b13319804bbfc657a58c1b98eb0" kind="variable"><name>m_ledgerLinesAbove</name></member>
-    <member refid="classvrv_1_1_staff_1a66a40248a362151760a6db96f624f803" kind="variable"><name>m_ledgerLinesBelow</name></member>
-    <member refid="classvrv_1_1_staff_1a838327223454ff9206886a20b01ba7a1" kind="variable"><name>m_ledgerLinesAboveCue</name></member>
-    <member refid="classvrv_1_1_staff_1a625e9186fe6919119ff69b38fdaa6a74" kind="variable"><name>m_ledgerLinesBelowCue</name></member>
+    <member refid="classvrv_1_1_staff_1a0e1a8896de6de00d48bd5534841a8184" kind="variable"><name>m_ledgerLinesAbove</name></member>
+    <member refid="classvrv_1_1_staff_1a2cd4cb6047ea6b4868dbbd6820d3e7f2" kind="variable"><name>m_ledgerLinesBelow</name></member>
+    <member refid="classvrv_1_1_staff_1aff307be048a42a305896fb0c4c90a36c" kind="variable"><name>m_ledgerLinesAboveCue</name></member>
+    <member refid="classvrv_1_1_staff_1af413c90af076da8c91f84b38a12ee497" kind="variable"><name>m_ledgerLinesBelowCue</name></member>
     <member refid="classvrv_1_1_staff_1a983ca678e5969c874a018a2b3587942c" kind="variable"><name>m_drawingLines</name></member>
     <member refid="classvrv_1_1_staff_1a51a65ab400013ddc21d125a01aa2256e" kind="variable"><name>m_drawingNotationType</name></member>
     <member refid="classvrv_1_1_staff_1af64a2d11ba5b97412094e00d6f908c63" kind="variable"><name>m_drawingStaffSize</name></member>
@@ -5443,6 +5444,7 @@
     <member refid="classvrv_1_1_staff_1a7a7f13fe4d00ba35ed03b952535027fb" kind="function"><name>GetAlignment</name></member>
     <member refid="classvrv_1_1_staff_1a367847939088dc1b31e81f2e66211570" kind="function"><name>IsOnStaffLine</name></member>
     <member refid="classvrv_1_1_staff_1aef570b1123805d6ee7126ff3aaf5af61" kind="function"><name>GetNearestInterStaffPosition</name></member>
+    <member refid="classvrv_1_1_staff_1a71c2243c3a8920516443bc45557c5783" kind="function"><name>SetFromFacsimile</name></member>
     <member refid="classvrv_1_1_staff_1aefef81d13f6dddad4edb00ba33e220c9" kind="function"><name>ConvertToCastOffMensural</name></member>
     <member refid="classvrv_1_1_staff_1a0132cbac7c1bf93021984016f4635083" kind="function"><name>ScoreDefUnsetCurrent</name></member>
     <member refid="classvrv_1_1_staff_1a27725920026a027bc04b700c361fe846" kind="function"><name>ScoreDefOptimize</name></member>
@@ -5450,14 +5452,15 @@
     <member refid="classvrv_1_1_staff_1a4da5a3d4db00bc3b2d0fe5da397dc764" kind="function"><name>ApplyPPUFactor</name></member>
     <member refid="classvrv_1_1_staff_1a1a5a6358590d1e40aa6db5111897d955" kind="function"><name>AlignHorizontally</name></member>
     <member refid="classvrv_1_1_staff_1a117c874984f47c04a116e5a369f73b52" kind="function"><name>AlignVertically</name></member>
+    <member refid="classvrv_1_1_staff_1afd87f281f2fdce027cae2ba1594a0372" kind="function"><name>CalcLedgerLinesEnd</name></member>
     <member refid="classvrv_1_1_staff_1a0315f172bfa34a1b25afa4a62e77db09" kind="function"><name>FillStaffCurrentTimeSpanning</name></member>
     <member refid="classvrv_1_1_staff_1af445c1b571a451f7d83ecc8c28d45fde" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_staff_1a7d46724555e4ba27339181e17b945a33" kind="function"><name>PrepareRpt</name></member>
-    <member refid="classvrv_1_1_staff_1a71c2243c3a8920516443bc45557c5783" kind="function"><name>SetFromFacsimile</name></member>
     <member refid="classvrv_1_1_staff_1abd990f1b0d2dd8abe5864c53be8f3cfa" kind="function"><name>CalcStem</name></member>
     <member refid="classvrv_1_1_staff_1a6790f6311e231fb5898d10c2b5499559" kind="function"><name>AdjustSylSpacing</name></member>
     <member refid="classvrv_1_1_staff_1a3ce2c8573bacc56a9ef6d6eed96ad6fb" kind="function"><name>GenerateMIDI</name></member>
-    <member refid="classvrv_1_1_staff_1a9e2afce8dd14778e13c593a3aa00c535" kind="function"><name>AddLedgerLines</name></member>
+    <member refid="classvrv_1_1_staff_1aafcd21e3d5a397b87325803840f8d310" kind="function"><name>AddLedgerLines</name></member>
+    <member refid="classvrv_1_1_staff_1a5782b8eace0d153cb3e6caa88d0884fb" kind="function"><name>AdjustLedgerLines</name></member>
   </compound>
   <compound refid="classvrv_1_1_staff_alignment" kind="class"><name>vrv::StaffAlignment</name>
     <member refid="classvrv_1_1_staff_alignment_1a6c645054e9e14b4cb5427fcf1f306ca4" kind="function"><name>StaffAlignment</name></member>
@@ -6422,7 +6425,7 @@
     <member refid="classvrv_1_1_view_1a3f4073d3c49e6c09bd33cd62bc09ae9f" kind="function"><name>DrawBarLines</name></member>
     <member refid="classvrv_1_1_view_1a1d8aeadaa5bf549911d7dc120adbddc6" kind="function"><name>DrawBarLine</name></member>
     <member refid="classvrv_1_1_view_1a2b61d41841e94c885f0415a4e5b519e4" kind="function"><name>DrawBarLineDots</name></member>
-    <member refid="classvrv_1_1_view_1a2ad6d68a763473fd74419d6680e181a6" kind="function"><name>DrawLedgerLines</name></member>
+    <member refid="classvrv_1_1_view_1a3e601102a8b6fa0df15da96a680a2752" kind="function"><name>DrawLedgerLines</name></member>
     <member refid="classvrv_1_1_view_1a8834997867b9112c8b023c0899963cb4" kind="function"><name>DrawMeasure</name></member>
     <member refid="classvrv_1_1_view_1a18d1f95f6122899368dc5ec2802bb538" kind="function"><name>DrawMeterSigGrp</name></member>
     <member refid="classvrv_1_1_view_1a8c92212ceb7f3acba7bdc565f99f2798" kind="function"><name>DrawMNum</name></member>
