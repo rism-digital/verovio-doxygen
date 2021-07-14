@@ -5,6 +5,6 @@ var classvrv_1_1_calc_onset_offset_params =
     [ "m_currentMeterSig", "classvrv_1_1_calc_onset_offset_params.html#a1cd7208111bbe6a5191630e827d34580", null ],
     [ "m_currentRealTimeSeconds", "classvrv_1_1_calc_onset_offset_params.html#addbd20e7836d91c44dc513547936ab7b", null ],
     [ "m_currentScoreTime", "classvrv_1_1_calc_onset_offset_params.html#ae60d3168bd28e97adf63245097d2a047", null ],
-    [ "m_currentTempo", "classvrv_1_1_calc_onset_offset_params.html#a8c340cef585d33e167166a5694bfea4f", null ],
+    [ "m_currentTempo", "classvrv_1_1_calc_onset_offset_params.html#a875858913df264cb823f6210e38b24c0", null ],
     [ "m_notationType", "classvrv_1_1_calc_onset_offset_params.html#a1b590fbdbe9b0b20cbebc68c0af986ea", null ]
 ];
