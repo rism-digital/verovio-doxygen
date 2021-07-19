@@ -4,6 +4,7 @@ var classvrv_1_1_staff_alignment =
     [ "~StaffAlignment", "classvrv_1_1_staff_alignment.html#aee6f25fca4808c69dd40b1b2419c9a52", null ],
     [ "AddBBoxAbove", "classvrv_1_1_staff_alignment.html#abe912a2607606376bea1a21731c5195d", null ],
     [ "AddBBoxBelow", "classvrv_1_1_staff_alignment.html#aad91647368dc7d03520e0bd3f5139602", null ],
+    [ "AddVerseN", "classvrv_1_1_staff_alignment.html#a7804d94fb3fb3db00ed433a22edea5d6", null ],
     [ "AdjustFloatingPositionerGrps", "classvrv_1_1_staff_alignment.html#a94ea6a0dcdaedbec12fddfd2044504d3", null ],
     [ "AdjustFloatingPositioners", "classvrv_1_1_staff_alignment.html#a322832b50441cfe3be04c02de1d30477", null ],
     [ "AdjustFloatingPositionersBetween", "classvrv_1_1_staff_alignment.html#aa021121f8fcc17cd7725a670bcc1a203", null ],
@@ -30,7 +31,8 @@ var classvrv_1_1_staff_alignment =
     [ "GetStaff", "classvrv_1_1_staff_alignment.html#ad527815e979b4f095ae5132fb5fd7fce", null ],
     [ "GetStaffHeight", "classvrv_1_1_staff_alignment.html#a46bbc916af3129153608f26d68f42f2d", null ],
     [ "GetStaffSize", "classvrv_1_1_staff_alignment.html#a7fa1759557d1353566cfdcd56de6edf7", null ],
-    [ "GetVerseCount", "classvrv_1_1_staff_alignment.html#abb3f2fd560fe0a0aeb316b1869f37e14", null ],
+    [ "GetVerseCount", "classvrv_1_1_staff_alignment.html#ae289d82b696a41fd832abdbf43afefac", null ],
+    [ "GetVersePosition", "classvrv_1_1_staff_alignment.html#a02a6cbdb61d48392778770d372f3c732", null ],
     [ "GetYRel", "classvrv_1_1_staff_alignment.html#a1abdba3b5c8406e42f16e06340a906b5", null ],
     [ "JustifyY", "classvrv_1_1_staff_alignment.html#ac23582a6a1d3a690fdba96d73e7f51dc", null ],
     [ "ReAdjustFloatingPositionersGrps", "classvrv_1_1_staff_alignment.html#a653094335da68f4fc7361f89cee940a1", null ],
@@ -40,6 +42,5 @@ var classvrv_1_1_staff_alignment =
     [ "SetOverlap", "classvrv_1_1_staff_alignment.html#a52f47b3d146de94276e2b29b20cf9bbe", null ],
     [ "SetParentSystem", "classvrv_1_1_staff_alignment.html#a99f275e12e81e39016074ae63fa39c2e", null ],
     [ "SetStaff", "classvrv_1_1_staff_alignment.html#ac5734d8b2d2b6ff3ea7075fd839a3d8e", null ],
-    [ "SetVerseCount", "classvrv_1_1_staff_alignment.html#a7c2d3bdcfc3ba911115e6355d413a09f", null ],
     [ "SetYRel", "classvrv_1_1_staff_alignment.html#a6c9d2d1c71958c112774409638ff501b", null ]
 ];

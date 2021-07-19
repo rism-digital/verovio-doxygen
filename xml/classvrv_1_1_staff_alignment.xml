@@ -83,19 +83,20 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <header>Set and get verse count.</header>
+      <header>Methods for managing verse count with / without the collapse option</header>
       <description><para>When setting a value of 0, then 1 is assumed.</para>
 <para>This occurs Typically with one single verse and no <linebreak/>
- in &lt;verse&gt; </para>
+ in &lt;verse&gt; Without the collapse option, the count is the greatest <linebreak/>
+With the collapse option, the count is number of verses. The position is calculated from the bottom. </para>
 </description>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a7c2d3bdcfc3ba911115e6355d413a09f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a7804d94fb3fb3db00ed433a22edea5d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void vrv::StaffAlignment::SetVerseCount</definition>
-        <argsstring>(int verse_count)</argsstring>
-        <name>SetVerseCount</name>
+        <definition>void vrv::StaffAlignment::AddVerseN</definition>
+        <argsstring>(int verseN)</argsstring>
+        <name>AddVerseN</name>
         <param>
           <type>int</type>
-          <declname>verse_count</declname>
+          <declname>verseN</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -103,21 +104,563 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="166" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="169" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1abb3f2fd560fe0a0aeb316b1869f37e14" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ae289d82b696a41fd832abdbf43afefac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int vrv::StaffAlignment::GetVerseCount</definition>
-        <argsstring>() const</argsstring>
+        <argsstring>(bool collapse) const</argsstring>
         <name>GetVerseCount</name>
+        <param>
+          <type>bool</type>
+          <declname>collapse</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="167" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="167" bodyend="167"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="170" column="9"/>
       </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a02a6cbdb61d48392778770d372f3c732" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::GetVersePosition</definition>
+        <argsstring>(int verseN, bool collapse) const</argsstring>
+        <name>GetVersePosition</name>
+        <param>
+          <type>int</type>
+          <declname>verseN</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>collapse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="171" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Setter and getter of the staff from which the alignment is created alignment.</header>
+      <description><para>Used for accessing the staff <linebreak/>
+, the size, etc. </para>
+</description>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ad527815e979b4f095ae5132fb5fd7fce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+        <definition>Staff* vrv::StaffAlignment::GetStaff</definition>
+        <argsstring>() const</argsstring>
+        <name>GetStaff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="201" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="201" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ac5734d8b2d2b6ff3ea7075fd839a3d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::StaffAlignment::SetStaff</definition>
+        <argsstring>(Staff *staff, Doc *doc, SystemAligner::SpacingType spacingType)</argsstring>
+        <name>SetStaff</name>
+        <param>
+          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <declname>staff</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <declname>doc</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_system_aligner_1a024f36eb64e0d6adf31217b55ba72b8e" kindref="member">SystemAligner::SpacingType</ref></type>
+          <declname>spacingType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="202" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Setter and getter of the system pointer to which the Alignment is belong to.</header>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a95803dcbd25978a29d7ffaaff2dabd59" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
+        <definition>System* vrv::StaffAlignment::GetParentSystem</definition>
+        <argsstring>() const</argsstring>
+        <name>GetParentSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="209" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="209" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a99f275e12e81e39016074ae63fa39c2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::StaffAlignment::SetParentSystem</definition>
+        <argsstring>(System *system)</argsstring>
+        <name>SetParentSystem</name>
+        <param>
+          <type><ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
+          <declname>system</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="210" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a7fa1759557d1353566cfdcd56de6edf7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::GetStaffSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetStaffSize</name>
+        <briefdescription>
+<para>Returns the staff size (100 if no staff object is refered to) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="215" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a8df2e2be909bfb617bf1cd3b1b278c2d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const AttSpacing *</type>
+        <definition>const AttSpacing* vrv::StaffAlignment::GetAttSpacing</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAttSpacing</name>
+        <briefdescription>
+<para>Returns the spacing attribute object of correspond <ref refid="classvrv_1_1_score_def" kindref="compound">ScoreDef</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="220" column="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Calculates the overlow (above or below for the bounding box.</header>
+      <description><para>Looks if the bounding box is a <ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> or not, in which case it we take into account its m_drawingYRel value. </para>
+</description>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a361e58e275e77a066a5d34687bb5a59a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::CalcOverflowAbove</definition>
+        <argsstring>(BoundingBox *box)</argsstring>
+        <name>CalcOverflowAbove</name>
+        <param>
+          <type><ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref> *</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="228" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a6e7c3cc5f9cfebf735403a76a85ebd3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::CalcOverflowBelow</definition>
+        <argsstring>(BoundingBox *box)</argsstring>
+        <name>CalcOverflowBelow</name>
+        <param>
+          <type><ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref> *</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="229" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Set of functions for spacing calculations</header>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a73928620dc8eca951318e23c73041150" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::GetMinimumSpacing</definition>
+        <argsstring>(const Doc *doc) const</argsstring>
+        <name>GetMinimumSpacing</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="236" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a8439d39daad273cdc338e1741a4b45ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::CalcMinimumRequiredSpacing</definition>
+        <argsstring>(const Doc *doc) const</argsstring>
+        <name>CalcMinimumRequiredSpacing</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="237" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Setter and getter for overflow and overlap values</header>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a6a5256bb9500487e025d3a20a0a0cfac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::StaffAlignment::SetOverflowAbove</definition>
+        <argsstring>(int overflowAbove)</argsstring>
+        <name>SetOverflowAbove</name>
+        <param>
+          <type>int</type>
+          <declname>overflowAbove</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="244" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1aa44565764f93a854ea71bc6b63e7227e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::GetOverflowAbove</definition>
+        <argsstring>() const</argsstring>
+        <name>GetOverflowAbove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="245" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="245" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1adebf5d0f38a753d8af894af8ab2b3da6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::StaffAlignment::SetOverflowBelow</definition>
+        <argsstring>(int overflowBottom)</argsstring>
+        <name>SetOverflowBelow</name>
+        <param>
+          <type>int</type>
+          <declname>overflowBottom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="246" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1aca990971e8025a3f499abf7a64c3617c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::GetOverflowBelow</definition>
+        <argsstring>() const</argsstring>
+        <name>GetOverflowBelow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="247" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="247" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a52f47b3d146de94276e2b29b20cf9bbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::StaffAlignment::SetOverlap</definition>
+        <argsstring>(int overlap)</argsstring>
+        <name>SetOverlap</name>
+        <param>
+          <type>int</type>
+          <declname>overlap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="248" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a6ed49d27f75b6f76726db774f91b6005" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::GetOverlap</definition>
+        <argsstring>() const</argsstring>
+        <name>GetOverlap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="249" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="249" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a46bbc916af3129153608f26d68f42f2d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::GetStaffHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>GetStaffHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="250" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="250" bodyend="250"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Returns justification factor based on staff type</header>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1abb406c242d66daf69268cb3b3f3d2cab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double vrv::StaffAlignment::GetJustificationFactor</definition>
+        <argsstring>(const Doc *doc) const</argsstring>
+        <name>GetJustificationFactor</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="257" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Adds a bounding box to the array of overflowing objects above or below</header>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1abe912a2607606376bea1a21731c5195d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::StaffAlignment::AddBBoxAbove</definition>
+        <argsstring>(BoundingBox *box)</argsstring>
+        <name>AddBBoxAbove</name>
+        <param>
+          <type><ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref> *</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="264" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="264" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1aad91647368dc7d03520e0bd3f5139602" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::StaffAlignment::AddBBoxBelow</definition>
+        <argsstring>(BoundingBox *box)</argsstring>
+        <name>AddBBoxBelow</name>
+        <param>
+          <type><ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref> *</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="265" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="265" bodyend="265"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>values for storing the overlow and overlap</header>
+      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a0a842c8286e7f24f48cd06db16ac5e98" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::m_overflowAbove</definition>
+        <argsstring></argsstring>
+        <name>m_overflowAbove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="367" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a582a505deb9284b19f3456f60d149fad" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::m_overflowBelow</definition>
+        <argsstring></argsstring>
+        <name>m_overflowBelow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="368" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a6886768062aec7882ee433c83736fade" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::m_overlap</definition>
+        <argsstring></argsstring>
+        <name>m_overlap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="369" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a9d9c9d575fceeddc4ae4df3c095d16de" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::m_staffHeight</definition>
+        <argsstring></argsstring>
+        <name>m_staffHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="370" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1affeb34e29e6f6775a1285e9297b80f82" prot="private" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_system_aligner_1a024f36eb64e0d6adf31217b55ba72b8e" kindref="member">SystemAligner::SpacingType</ref></type>
+        <definition>SystemAligner::SpacingType vrv::StaffAlignment::m_spacingType</definition>
+        <argsstring></argsstring>
+        <name>m_spacingType</name>
+        <initializer>= SystemAligner::SpacingType::None</initializer>
+        <briefdescription>
+<para>Defines spacing type between current staff and previous one. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="338" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a1c400898e1cbf838dec08429daf9b087" prot="private" static="no" mutable="no">
+        <type>ArrayOfFloatingPositioners</type>
+        <definition>ArrayOfFloatingPositioners vrv::StaffAlignment::m_floatingPositioners</definition>
+        <argsstring></argsstring>
+        <name>m_floatingPositioners</name>
+        <briefdescription>
+<para>The list of <ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> for the staff. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="343" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1aed230042c44c7cd23fe58bc82d08e5d9" prot="private" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+        <definition>Staff* vrv::StaffAlignment::m_staff</definition>
+        <argsstring></argsstring>
+        <name>m_staff</name>
+        <briefdescription>
+<para>Stores a pointer to the staff from which the aligner was created. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is necessary since we don&apos;t always have all the staves. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="348" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a8fbdb29d9fb58c6b6a3de08c03411ed4" prot="private" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
+        <definition>System* vrv::StaffAlignment::m_system</definition>
+        <argsstring></argsstring>
+        <name>m_system</name>
+        <briefdescription>
+<para>Stores a pointer to the system to which the <ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> is belong to This is necessary to reduce amount of dynamic_casts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="353" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a366a4051d7602f053bc7b944d9266f09" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::m_yRel</definition>
+        <argsstring></argsstring>
+        <name>m_yRel</name>
+        <briefdescription>
+<para>Stores the position relative to the system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="357" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a5265a43a6ab421c5be56b5bd1814d1cd" prot="private" static="no" mutable="no">
+        <type>std::set&lt; int &gt;</type>
+        <definition>std::set&lt;int&gt; vrv::StaffAlignment::m_verseNs</definition>
+        <argsstring></argsstring>
+        <name>m_verseNs</name>
+        <briefdescription>
+<para>Stores the verse<linebreak/>
+ of the staves attached to the aligner. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="361" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1acc52496444c1468f9cec6f19c79543c4" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref> * &gt;</type>
+        <definition>std::vector&lt;BoundingBox *&gt; vrv::StaffAlignment::m_overflowAboveBBoxes</definition>
+        <argsstring></argsstring>
+        <name>m_overflowAboveBBoxes</name>
+        <briefdescription>
+<para>The list of overflowing bounding boxes (e.g, <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> or <ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="376" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1ab8a34f621d9951597f35ae9deb4c579d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref> * &gt;</type>
+        <definition>std::vector&lt;BoundingBox *&gt; vrv::StaffAlignment::m_overflowBelowBBoxes</definition>
+        <argsstring></argsstring>
+        <name>m_overflowBelowBBoxes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="377" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a2509f2cdd8ef0e40f10aaca7ec29c814" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::StaffAlignment::SetCurrentFloatingPositioner</definition>
@@ -146,7 +689,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="172" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="177" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1aebb16e118406ae41bf59ef1730842a78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> *</type>
@@ -165,7 +708,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="178" column="24"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="183" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a45c9254734f194b8625f2ecb835d2dbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>ArrayOfFloatingPositioners</type>
@@ -183,7 +726,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="183" column="32"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="188" column="32"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ae46cadae61f249115e75d43ae10b5f4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> *</type>
@@ -202,524 +745,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="189" column="24"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="194" column="24"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="user-defined">
-      <header>Setter and getter of the staff from which the alignment is created alignment.</header>
-      <description><para>Used for accessing the staff <linebreak/>
-, the size, etc. </para>
-</description>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ad527815e979b4f095ae5132fb5fd7fce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
-        <definition>Staff* vrv::StaffAlignment::GetStaff</definition>
-        <argsstring>() const</argsstring>
-        <name>GetStaff</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="196" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="196" bodyend="196"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ac5734d8b2d2b6ff3ea7075fd839a3d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void vrv::StaffAlignment::SetStaff</definition>
-        <argsstring>(Staff *staff, Doc *doc, SystemAligner::SpacingType spacingType)</argsstring>
-        <name>SetStaff</name>
-        <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
-          <declname>staff</declname>
-        </param>
-        <param>
-          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
-          <declname>doc</declname>
-        </param>
-        <param>
-          <type><ref refid="classvrv_1_1_system_aligner_1a024f36eb64e0d6adf31217b55ba72b8e" kindref="member">SystemAligner::SpacingType</ref></type>
-          <declname>spacingType</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="197" column="10"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="user-defined">
-      <header>Setter and getter of the system pointer to which the Alignment is belong to.</header>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a95803dcbd25978a29d7ffaaff2dabd59" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
-        <definition>System* vrv::StaffAlignment::GetParentSystem</definition>
-        <argsstring>() const</argsstring>
-        <name>GetParentSystem</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="204" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="204" bodyend="204"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a99f275e12e81e39016074ae63fa39c2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void vrv::StaffAlignment::SetParentSystem</definition>
-        <argsstring>(System *system)</argsstring>
-        <name>SetParentSystem</name>
-        <param>
-          <type><ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
-          <declname>system</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="205" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a7fa1759557d1353566cfdcd56de6edf7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int vrv::StaffAlignment::GetStaffSize</definition>
-        <argsstring>() const</argsstring>
-        <name>GetStaffSize</name>
-        <briefdescription>
-<para>Returns the staff size (100 if no staff object is refered to) </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="210" column="9"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a8df2e2be909bfb617bf1cd3b1b278c2d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const AttSpacing *</type>
-        <definition>const AttSpacing* vrv::StaffAlignment::GetAttSpacing</definition>
-        <argsstring>() const</argsstring>
-        <name>GetAttSpacing</name>
-        <briefdescription>
-<para>Returns the spacing attribute object of correspond <ref refid="classvrv_1_1_score_def" kindref="compound">ScoreDef</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="215" column="22"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="user-defined">
-      <header>Calculates the overlow (above or below for the bounding box.</header>
-      <description><para>Looks if the bounding box is a <ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> or not, in which case it we take into account its m_drawingYRel value. </para>
-</description>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a361e58e275e77a066a5d34687bb5a59a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int vrv::StaffAlignment::CalcOverflowAbove</definition>
-        <argsstring>(BoundingBox *box)</argsstring>
-        <name>CalcOverflowAbove</name>
-        <param>
-          <type><ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref> *</type>
-          <declname>box</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="223" column="9"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a6e7c3cc5f9cfebf735403a76a85ebd3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int vrv::StaffAlignment::CalcOverflowBelow</definition>
-        <argsstring>(BoundingBox *box)</argsstring>
-        <name>CalcOverflowBelow</name>
-        <param>
-          <type><ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref> *</type>
-          <declname>box</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="224" column="9"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="user-defined">
-      <header>Set of functions for spacing calculations</header>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a73928620dc8eca951318e23c73041150" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int vrv::StaffAlignment::GetMinimumSpacing</definition>
-        <argsstring>(const Doc *doc) const</argsstring>
-        <name>GetMinimumSpacing</name>
-        <param>
-          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
-          <declname>doc</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="231" column="9"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a8439d39daad273cdc338e1741a4b45ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int vrv::StaffAlignment::CalcMinimumRequiredSpacing</definition>
-        <argsstring>(const Doc *doc) const</argsstring>
-        <name>CalcMinimumRequiredSpacing</name>
-        <param>
-          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
-          <declname>doc</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="232" column="9"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="user-defined">
-      <header>Setter and getter for overflow and overlap values</header>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a6a5256bb9500487e025d3a20a0a0cfac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void vrv::StaffAlignment::SetOverflowAbove</definition>
-        <argsstring>(int overflowAbove)</argsstring>
-        <name>SetOverflowAbove</name>
-        <param>
-          <type>int</type>
-          <declname>overflowAbove</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="239" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1aa44565764f93a854ea71bc6b63e7227e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>int vrv::StaffAlignment::GetOverflowAbove</definition>
-        <argsstring>() const</argsstring>
-        <name>GetOverflowAbove</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="240" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="240" bodyend="240"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1adebf5d0f38a753d8af894af8ab2b3da6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void vrv::StaffAlignment::SetOverflowBelow</definition>
-        <argsstring>(int overflowBottom)</argsstring>
-        <name>SetOverflowBelow</name>
-        <param>
-          <type>int</type>
-          <declname>overflowBottom</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="241" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1aca990971e8025a3f499abf7a64c3617c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>int vrv::StaffAlignment::GetOverflowBelow</definition>
-        <argsstring>() const</argsstring>
-        <name>GetOverflowBelow</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="242" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="242" bodyend="242"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a52f47b3d146de94276e2b29b20cf9bbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void vrv::StaffAlignment::SetOverlap</definition>
-        <argsstring>(int overlap)</argsstring>
-        <name>SetOverlap</name>
-        <param>
-          <type>int</type>
-          <declname>overlap</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="243" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a6ed49d27f75b6f76726db774f91b6005" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>int vrv::StaffAlignment::GetOverlap</definition>
-        <argsstring>() const</argsstring>
-        <name>GetOverlap</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="244" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="244" bodyend="244"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a46bbc916af3129153608f26d68f42f2d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>int vrv::StaffAlignment::GetStaffHeight</definition>
-        <argsstring>() const</argsstring>
-        <name>GetStaffHeight</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="245" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="245" bodyend="245"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="user-defined">
-      <header>Returns justification factor based on staff type</header>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1abb406c242d66daf69268cb3b3f3d2cab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double vrv::StaffAlignment::GetJustificationFactor</definition>
-        <argsstring>(const Doc *doc) const</argsstring>
-        <name>GetJustificationFactor</name>
-        <param>
-          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
-          <declname>doc</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="252" column="12"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="user-defined">
-      <header>Adds a bounding box to the array of overflowing objects above or below</header>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1abe912a2607606376bea1a21731c5195d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void vrv::StaffAlignment::AddBBoxAbove</definition>
-        <argsstring>(BoundingBox *box)</argsstring>
-        <name>AddBBoxAbove</name>
-        <param>
-          <type><ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref> *</type>
-          <declname>box</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="259" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="259" bodyend="259"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1aad91647368dc7d03520e0bd3f5139602" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void vrv::StaffAlignment::AddBBoxBelow</definition>
-        <argsstring>(BoundingBox *box)</argsstring>
-        <name>AddBBoxBelow</name>
-        <param>
-          <type><ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref> *</type>
-          <declname>box</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="260" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="260" bodyend="260"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="user-defined">
-      <header>values for storing the overlow and overlap</header>
-      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a0a842c8286e7f24f48cd06db16ac5e98" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int vrv::StaffAlignment::m_overflowAbove</definition>
-        <argsstring></argsstring>
-        <name>m_overflowAbove</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="363" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="363" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a582a505deb9284b19f3456f60d149fad" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int vrv::StaffAlignment::m_overflowBelow</definition>
-        <argsstring></argsstring>
-        <name>m_overflowBelow</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="364" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="364" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a6886768062aec7882ee433c83736fade" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int vrv::StaffAlignment::m_overlap</definition>
-        <argsstring></argsstring>
-        <name>m_overlap</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="365" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="365" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a9d9c9d575fceeddc4ae4df3c095d16de" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int vrv::StaffAlignment::m_staffHeight</definition>
-        <argsstring></argsstring>
-        <name>m_staffHeight</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="366" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="366" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1affeb34e29e6f6775a1285e9297b80f82" prot="private" static="no" mutable="no">
-        <type><ref refid="classvrv_1_1_system_aligner_1a024f36eb64e0d6adf31217b55ba72b8e" kindref="member">SystemAligner::SpacingType</ref></type>
-        <definition>SystemAligner::SpacingType vrv::StaffAlignment::m_spacingType</definition>
-        <argsstring></argsstring>
-        <name>m_spacingType</name>
-        <initializer>= SystemAligner::SpacingType::None</initializer>
-        <briefdescription>
-<para>Defines spacing type between current staff and previous one. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="333" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="333" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a1c400898e1cbf838dec08429daf9b087" prot="private" static="no" mutable="no">
-        <type>ArrayOfFloatingPositioners</type>
-        <definition>ArrayOfFloatingPositioners vrv::StaffAlignment::m_floatingPositioners</definition>
-        <argsstring></argsstring>
-        <name>m_floatingPositioners</name>
-        <briefdescription>
-<para>The list of <ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> for the staff. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="338" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="338" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1aed230042c44c7cd23fe58bc82d08e5d9" prot="private" static="no" mutable="no">
-        <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
-        <definition>Staff* vrv::StaffAlignment::m_staff</definition>
-        <argsstring></argsstring>
-        <name>m_staff</name>
-        <briefdescription>
-<para>Stores a pointer to the staff from which the aligner was created. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>This is necessary since we don&apos;t always have all the staves. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="343" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="343" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a8fbdb29d9fb58c6b6a3de08c03411ed4" prot="private" static="no" mutable="no">
-        <type><ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
-        <definition>System* vrv::StaffAlignment::m_system</definition>
-        <argsstring></argsstring>
-        <name>m_system</name>
-        <briefdescription>
-<para>Stores a pointer to the system to which the <ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> is belong to This is necessary to reduce amount of dynamic_casts. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="348" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="348" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a366a4051d7602f053bc7b944d9266f09" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int vrv::StaffAlignment::m_yRel</definition>
-        <argsstring></argsstring>
-        <name>m_yRel</name>
-        <briefdescription>
-<para>Stores the position relative to the system. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="352" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="352" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1acb602e07590ec51836e0ca2ecb1fb387" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int vrv::StaffAlignment::m_verseCount</definition>
-        <argsstring></argsstring>
-        <name>m_verseCount</name>
-        <briefdescription>
-<para>Stores the number of verse of the staves attached to the aligner. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="357" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="357" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1acc52496444c1468f9cec6f19c79543c4" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref> * &gt;</type>
-        <definition>std::vector&lt;BoundingBox *&gt; vrv::StaffAlignment::m_overflowAboveBBoxes</definition>
-        <argsstring></argsstring>
-        <name>m_overflowAboveBBoxes</name>
-        <briefdescription>
-<para>The list of overflowing bounding boxes (e.g, <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> or <ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref>) </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="372" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="372" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1ab8a34f621d9951597f35ae9deb4c579d" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref> * &gt;</type>
-        <definition>std::vector&lt;BoundingBox *&gt; vrv::StaffAlignment::m_overflowBelowBBoxes</definition>
-        <argsstring></argsstring>
-        <name>m_overflowBelowBBoxes</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="373" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="373" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="public-func">
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ab0c857aa5a9a585e4107edd6ef102f3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::StaffAlignment::ClearPositioners</definition>
@@ -732,7 +759,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="266" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="271" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a708209da1e2d295a316091342956f633" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -762,7 +789,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="271" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="276" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a653094335da68f4fc7361f89cee940a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -787,7 +814,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="274" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="279" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ad298e382b3f7a8037abcda735a656d13" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -806,7 +833,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="284" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="289" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a5cad2210131847da6d015f741c3c5602" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -825,7 +852,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="289" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="294" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a95156ca42aab6edbf29245a8d5c31c66" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -844,7 +871,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="294" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="299" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a322832b50441cfe3be04c02de1d30477" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -863,7 +890,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="299" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="304" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1aa021121f8fcc17cd7725a670bcc1a203" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -882,7 +909,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="304" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="309" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a94ea6a0dcdaedbec12fddfd2044504d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -901,7 +928,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="309" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="314" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a7f008edcf766dbc33c4081bffc7e609b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -920,7 +947,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="314" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="319" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ac23582a6a1d3a690fdba96d73e7f51dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -939,7 +966,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="319" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="324" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -963,7 +990,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="325" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="330" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1007,12 +1034,13 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="142" column="35" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="142" bodyend="374"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="142" column="35" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="142" bodyend="378"/>
     <listofallmembers>
       <member refid="classvrv_1_1_staff_alignment_1abe912a2607606376bea1a21731c5195d" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>AddBBoxAbove</name></member>
       <member refid="classvrv_1_1_staff_alignment_1aad91647368dc7d03520e0bd3f5139602" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>AddBBoxBelow</name></member>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::StaffAlignment</scope><name>AddChild</name></member>
       <member refid="classvrv_1_1_object_1a1af968d5140f79fd056aa5a46d7cad11" prot="public" virt="virtual"><scope>vrv::StaffAlignment</scope><name>AddLayerElementToFlatList</name></member>
+      <member refid="classvrv_1_1_staff_alignment_1a7804d94fb3fb3db00ed433a22edea5d6" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>AddVerseN</name></member>
       <member refid="classvrv_1_1_object_1a08855458e45646f3831f2edf7c8a77e0" prot="public" virt="virtual"><scope>vrv::StaffAlignment</scope><name>AdjustAccidX</name></member>
       <member refid="classvrv_1_1_object_1a9a7ac871bbd388bc57ad3efbcd5523e4" prot="public" virt="virtual"><scope>vrv::StaffAlignment</scope><name>AdjustArpeg</name></member>
       <member refid="classvrv_1_1_object_1adbd52d9a86b0a97174b734269a690048" prot="public" virt="virtual"><scope>vrv::StaffAlignment</scope><name>AdjustArpegEnd</name></member>
@@ -1203,7 +1231,8 @@
       <member refid="classvrv_1_1_object_1a2ac1817c7492a51e6bb550f3002b32de" prot="public" virt="virtual"><scope>vrv::StaffAlignment</scope><name>GetTimeSpanningInterface</name></member>
       <member refid="classvrv_1_1_bounding_box_1a9dae1c4940695c403ba67841512f94f3" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetTopBy</name></member>
       <member refid="classvrv_1_1_object_1a7bcc3062c90aa6f927f8c51f180b585b" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetUuid</name></member>
-      <member refid="classvrv_1_1_staff_alignment_1abb3f2fd560fe0a0aeb316b1869f37e14" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetVerseCount</name></member>
+      <member refid="classvrv_1_1_staff_alignment_1ae289d82b696a41fd832abdbf43afefac" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetVerseCount</name></member>
+      <member refid="classvrv_1_1_staff_alignment_1a02a6cbdb61d48392778770d372f3c732" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetVersePosition</name></member>
       <member refid="classvrv_1_1_bounding_box_1a6f1d1de5ac01ce1fe4cf43ed16b47e11" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetX1By</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3a9666c33d5a4a7d01f4b159c128d6c5" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetX2By</name></member>
       <member refid="classvrv_1_1_bounding_box_1ad906e8632b28b1be81fa374ad2b5292e" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetY1By</name></member>
@@ -1267,7 +1296,7 @@
       <member refid="classvrv_1_1_staff_alignment_1a9d9c9d575fceeddc4ae4df3c095d16de" prot="private" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>m_staffHeight</name></member>
       <member refid="classvrv_1_1_staff_alignment_1a8fbdb29d9fb58c6b6a3de08c03411ed4" prot="private" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>m_system</name></member>
       <member refid="classvrv_1_1_object_1a74ae0995caefb72a71445ba43fce0652" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>m_unsupported</name></member>
-      <member refid="classvrv_1_1_staff_alignment_1acb602e07590ec51836e0ca2ecb1fb387" prot="private" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>m_verseCount</name></member>
+      <member refid="classvrv_1_1_staff_alignment_1a5265a43a6ab421c5be56b5bd1814d1cd" prot="private" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>m_verseNs</name></member>
       <member refid="classvrv_1_1_staff_alignment_1a366a4051d7602f053bc7b944d9266f09" prot="private" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>m_yRel</name></member>
       <member refid="classvrv_1_1_object_1a985728e489aed60707c313327bf7c464" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>Modify</name></member>
       <member refid="classvrv_1_1_object_1aa846e8099e10d6cf427e8255e4a62dd4" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>MoveChildrenFrom</name></member>
@@ -1348,7 +1377,6 @@
       <member refid="classvrv_1_1_staff_alignment_1ac5734d8b2d2b6ff3ea7075fd839a3d8e" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>SetStaff</name></member>
       <member refid="classvrv_1_1_object_1a28b81f899cf3c244799da6f49ae3dd34" prot="public" virt="virtual"><scope>vrv::StaffAlignment</scope><name>SetStaffDefRedrawFlags</name></member>
       <member refid="classvrv_1_1_object_1a190abc310da990f676c931d272bbb434" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>SetUuid</name></member>
-      <member refid="classvrv_1_1_staff_alignment_1a7c2d3bdcfc3ba911115e6355d413a09f" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>SetVerseCount</name></member>
       <member refid="classvrv_1_1_staff_alignment_1a6c9d2d1c71958c112774409638ff501b" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>SetYRel</name></member>
       <member refid="classvrv_1_1_object_1a6c529b9574392b6c2baeaf8470e2a989" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>sortByUlx</name></member>
       <member refid="classvrv_1_1_object_1aa8caf0942b1ff1c02f6f8e879397ca21" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>SortChildren</name></member>
