@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classvrv_1_1_fermata.html',''); initRe
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classvrv_1_1_fermata-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vrv::Fermata Class Reference</div>  </div>
@@ -119,6 +120,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 wchar_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_fermata.html#a0e7e493a0489f36630dc9b87d4bd369e">GetFermataGlyph</a> () const</td></tr>
 <tr class="memdesc:a0e7e493a0489f36630dc9b87d4bd369e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the SMuFL glyph for the fermata based on type, shape or glyph.num. <br /></td></tr>
 <tr class="separator:a0e7e493a0489f36630dc9b87d4bd369e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858d03f3da10174995424b3aecb8fcec"><td class="memItemLeft" align="right" valign="top"><a id="a858d03f3da10174995424b3aecb8fcec"></a>
+wchar_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_fermata.html#a858d03f3da10174995424b3aecb8fcec">GetEnclosingGlyph</a> (bool beforeFermata) const</td></tr>
+<tr class="memdesc:a858d03f3da10174995424b3aecb8fcec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves parentheses / brackets from the enclose attribute. <br /></td></tr>
+<tr class="separator:a858d03f3da10174995424b3aecb8fcec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, and other standard methods</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Reset method reset all attribute classes </p>
 </div></td></tr>
@@ -1265,12 +1270,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStart</b> (<a clas
 <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStart</b> ()</td></tr>
 <tr class="separator:a3cd14634c9ef2903e83a560ba52788a9 inherit pub_methods_classvrv_1_1_time_point_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classvrv_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classvrv_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classvrv_1_1_object.html">vrv::Object</a></td></tr>
-<tr class="memitem:aa63ca849b67044acc38f89a6030b03c2 inherit pub_types_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#aa63ca849b67044acc38f89a6030b03c2">binaryComp</a>) (<a class="el" href="classvrv_1_1_object.html">Object</a> *, <a class="el" href="classvrv_1_1_object.html">Object</a> *)</td></tr>
-<tr class="memdesc:aa63ca849b67044acc38f89a6030b03c2 inherit pub_types_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort children by a function that takes two arguments and returns true if the first argument is less than the second.  <a href="classvrv_1_1_object.html#aa63ca849b67044acc38f89a6030b03c2">More...</a><br /></td></tr>
-<tr class="separator:aa63ca849b67044acc38f89a6030b03c2 inherit pub_types_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aae821e532879adca850bdd17256d65b1"><td class="memItemLeft" align="right" valign="top"><a id="aae821e532879adca850bdd17256d65b1"></a>
+static data_VERTICALALIGNMENT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_fermata.html#aae821e532879adca850bdd17256d65b1">GetVerticalAlignment</a> (wchar_t code)</td></tr>
+<tr class="memdesc:aae821e532879adca850bdd17256d65b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the vertical alignment for the fermata SMuFL code. <br /></td></tr>
+<tr class="separator:aae821e532879adca850bdd17256d65b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classvrv_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classvrv_1_1_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classvrv_1_1_object.html">vrv::Object</a></td></tr>
 <tr class="memitem:a8c269609416ebdb3b948df8aac3134e1 inherit pub_static_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a8c269609416ebdb3b948df8aac3134e1"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>SeedUuid</b> (unsigned int seed=0)</td></tr>
@@ -1340,6 +1345,13 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectTopOverlap<
 <tr class="memitem:a74c28d831f2e14aec44a848a961f8b42 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="a74c28d831f2e14aec44a848a961f8b42"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverlap</b> (const <a class="el" href="classvrv_1_1_point.html">Point</a> rect1[2], const <a class="el" href="classvrv_1_1_point.html">Point</a> rect2[2], int margin, int hMargin)</td></tr>
 <tr class="separator:a74c28d831f2e14aec44a848a961f8b42 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classvrv_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classvrv_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classvrv_1_1_object.html">vrv::Object</a></td></tr>
+<tr class="memitem:aa63ca849b67044acc38f89a6030b03c2 inherit pub_types_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#aa63ca849b67044acc38f89a6030b03c2">binaryComp</a>) (<a class="el" href="classvrv_1_1_object.html">Object</a> *, <a class="el" href="classvrv_1_1_object.html">Object</a> *)</td></tr>
+<tr class="memdesc:aa63ca849b67044acc38f89a6030b03c2 inherit pub_types_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort children by a function that takes two arguments and returns true if the first argument is less than the second.  <a href="classvrv_1_1_object.html#aa63ca849b67044acc38f89a6030b03c2">More...</a><br /></td></tr>
+<tr class="separator:aa63ca849b67044acc38f89a6030b03c2 inherit pub_types_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classvrv_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classvrv_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classvrv_1_1_object.html">vrv::Object</a></td></tr>
 <tr class="memitem:a74ae0995caefb72a71445ba43fce0652 inherit pub_attribs_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">ArrayOfStrAttr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a74ae0995caefb72a71445ba43fce0652">m_unsupported</a></td></tr>
 <tr class="memdesc:a74ae0995caefb72a71445ba43fce0652 inherit pub_attribs_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keep an array of unsupported attributes as pairs.  <a href="classvrv_1_1_object.html#a74ae0995caefb72a71445ba43fce0652">More...</a><br /></td></tr>
@@ -1441,7 +1453,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_startUuid</b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_fermata.html">Fermata</a></li>
-    <li class="footer">Generated on Mon Jul 19 2021 15:57:43 for Verovio by
+    <li class="footer">Generated on Tue Jul 20 2021 07:54:08 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -169,6 +169,8 @@ var hierarchy =
     ] ],
     [ "AttEnclosingChars", null, [
       [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
+      [ "vrv::Artic", "classvrv_1_1_artic.html", null ],
+      [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ]
     ] ],
     [ "AttEndings", null, [

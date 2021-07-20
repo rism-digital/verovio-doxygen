@@ -145,6 +145,10 @@ data_STAFFREL&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingPl
 wchar_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_artic.html#ad38e2eb6d8be529eb908f7ad29596e3d">GetArticGlyph</a> (data_ARTICULATION artic, data_STAFFREL place) const</td></tr>
 <tr class="memdesc:ad38e2eb6d8be529eb908f7ad29596e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the appropriate SMuFL code for a data_ARTICULATION with data_STAFFREL. <br /></td></tr>
 <tr class="separator:ad38e2eb6d8be529eb908f7ad29596e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1fd6078806e981671c7c185f4b2c31f"><td class="memItemLeft" align="right" valign="top"><a id="ae1fd6078806e981671c7c185f4b2c31f"></a>
+wchar_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_artic.html#ae1fd6078806e981671c7c185f4b2c31f">GetEnclosingGlyph</a> (bool beforeArtic) const</td></tr>
+<tr class="memdesc:ae1fd6078806e981671c7c185f4b2c31f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves parentheses / brackets from the enclose attribute. <br /></td></tr>
+<tr class="separator:ae1fd6078806e981671c7c185f4b2c31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a566d6c721af17c666de8c98089056298"><td class="memItemLeft" align="right" valign="top"><a id="a566d6c721af17c666de8c98089056298"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_artic.html#a566d6c721af17c666de8c98089056298">ConvertMarkupArtic</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)</td></tr>
 <tr class="memdesc:a566d6c721af17c666de8c98089056298"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a7262b554ba150b54b434fc7c0c93001d" title="Convert markup of artic@artic multi value into distinct artic elements.">Object::ConvertMarkupArtic</a>. <br /></td></tr>
@@ -1358,9 +1362,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasSameasLink</b> () 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a3e1cdba42fb9e6edcef1bf545ab8d80c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_artic.html#a3e1cdba42fb9e6edcef1bf545ab8d80c">VerticalCorr</a> (wchar_t code, const data_STAFFREL &amp;place)</td></tr>
-<tr class="memdesc:a3e1cdba42fb9e6edcef1bf545ab8d80c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that retrieves the vertical correctoin for a SMuFL code for with data_STAFFREL.  <a href="classvrv_1_1_artic.html#a3e1cdba42fb9e6edcef1bf545ab8d80c">More...</a><br /></td></tr>
-<tr class="separator:a3e1cdba42fb9e6edcef1bf545ab8d80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb868c298d767bba4af4e57d50dbab7f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_artic.html#afb868c298d767bba4af4e57d50dbab7f">VerticalCorr</a> (wchar_t code, data_STAFFREL place)</td></tr>
+<tr class="memdesc:afb868c298d767bba4af4e57d50dbab7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that retrieves the vertical correction for a SMuFL code with data_STAFFREL.  <a href="classvrv_1_1_artic.html#afb868c298d767bba4af4e57d50dbab7f">More...</a><br /></td></tr>
+<tr class="separator:afb868c298d767bba4af4e57d50dbab7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f3c3112f20c06ce5f18d8a97c9ecea7"><td class="memItemLeft" align="right" valign="top"><a id="a0f3c3112f20c06ce5f18d8a97c9ecea7"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_artic.html#a0f3c3112f20c06ce5f18d8a97c9ecea7">IsCentered</a> (data_ARTICULATION artic)</td></tr>
 <tr class="memdesc:a0f3c3112f20c06ce5f18d8a97c9ecea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that returns true if the data_ARTICULATION has to be centered between staff lines. <br /></td></tr>
@@ -1613,8 +1617,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
-<a id="a3e1cdba42fb9e6edcef1bf545ab8d80c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e1cdba42fb9e6edcef1bf545ab8d80c">&#9670;&nbsp;</a></span>VerticalCorr()</h2>
+<a id="afb868c298d767bba4af4e57d50dbab7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb868c298d767bba4af4e57d50dbab7f">&#9670;&nbsp;</a></span>VerticalCorr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1631,7 +1635,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const data_STAFFREL &amp;&#160;</td>
+          <td class="paramtype">data_STAFFREL&#160;</td>
           <td class="paramname"><em>place</em>&#160;</td>
         </tr>
         <tr>
@@ -1647,7 +1651,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 </table>
 </div><div class="memdoc">
 
-<p>Static method that retrieves the vertical correctoin for a SMuFL code for with data_STAFFREL. </p>
+<p>Static method that retrieves the vertical correction for a SMuFL code with data_STAFFREL. </p>
 <p>The reason for this is that SMuFL sometimes has the glyph below the line, sometimes above. See bow indications for an example where is is always above </p>
 
 </div>
@@ -1661,7 +1665,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_artic.html">Artic</a></li>
-    <li class="footer">Generated on Mon Jul 19 2021 15:57:42 for Verovio by
+    <li class="footer">Generated on Tue Jul 20 2021 07:54:07 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
