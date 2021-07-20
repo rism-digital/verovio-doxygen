@@ -4,6 +4,7 @@ var classvrv_1_1_note =
     [ "~Note", "classvrv_1_1_note.html#a63d285601a42d945b7481cb40d2dfa6b", null ],
     [ "AddChild", "classvrv_1_1_note.html#a777cd96f58898204059f5f08dbf2a736", null ],
     [ "AdjustArtic", "classvrv_1_1_note.html#a22bad1957f235e5db6a7baad7650a335", null ],
+    [ "AlignDotsShift", "classvrv_1_1_note.html#a691a0590efb36f06e5b8c7df54ed64d9", null ],
     [ "CalcArtic", "classvrv_1_1_note.html#ab21851eeb8b179874169119643b76b3c", null ],
     [ "CalcChordNoteHeads", "classvrv_1_1_note.html#ad056c8566782223ddbd1f6da4281771d", null ],
     [ "CalcDotLocations", "classvrv_1_1_note.html#ad7907ba8df02be1140f2e16672e9e499", null ],
