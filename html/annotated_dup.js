@@ -219,7 +219,6 @@ var annotated_dup =
       [ "OptionJson", "classvrv_1_1_option_json.html", "classvrv_1_1_option_json" ],
       [ "Options", "classvrv_1_1_options.html", "classvrv_1_1_options" ],
       [ "OptionStaffrel", "classvrv_1_1_option_staffrel.html", "classvrv_1_1_option_staffrel" ],
-      [ "OptionStaffrelBasic", "classvrv_1_1_option_staffrel_basic.html", "classvrv_1_1_option_staffrel_basic" ],
       [ "OptionString", "classvrv_1_1_option_string.html", "classvrv_1_1_option_string" ],
       [ "Orig", "classvrv_1_1_orig.html", "classvrv_1_1_orig" ],
       [ "Output", "classvrv_1_1_output.html", "classvrv_1_1_output" ],

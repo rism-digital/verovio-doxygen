@@ -49,6 +49,7 @@ var classvrv_1_1_toolkit =
     [ "RenderToTimemap", "classvrv_1_1_toolkit.html#a4172ff70b76b47701fdab68c7ee2f12d", null ],
     [ "RenderToTimemapFile", "classvrv_1_1_toolkit.html#ae007856d580be07e60aeb52efb826a40", null ],
     [ "ResetLogBuffer", "classvrv_1_1_toolkit.html#a9621011e0b28c573d62c5412a8c886ec", null ],
+    [ "ResetOptions", "classvrv_1_1_toolkit.html#a96fbf91f6688a0d81886a4a25254dc25", null ],
     [ "SaveFile", "classvrv_1_1_toolkit.html#a0206f317ac7ebe3c61df606c8afcd4ca", null ],
     [ "SetCString", "group__nodoc.html#ga7d77de8b102acd2f07f0fa23270f82a5", null ],
     [ "SetHumdrumBuffer", "group__nodoc.html#ga5ae3fb587d96567263bfebc1261ff4d9", null ],

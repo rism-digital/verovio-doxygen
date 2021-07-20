@@ -1027,7 +1027,6 @@ var hierarchy =
       [ "vrv::OptionIntMap", "classvrv_1_1_option_int_map.html", null ],
       [ "vrv::OptionJson", "classvrv_1_1_option_json.html", null ],
       [ "vrv::OptionStaffrel", "classvrv_1_1_option_staffrel.html", null ],
-      [ "vrv::OptionStaffrelBasic", "classvrv_1_1_option_staffrel_basic.html", null ],
       [ "vrv::OptionString", "classvrv_1_1_option_string.html", null ]
     ] ],
     [ "vrv::OptionGrp", "classvrv_1_1_option_grp.html", null ],

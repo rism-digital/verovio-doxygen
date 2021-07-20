@@ -8,5 +8,6 @@ var classvrv_1_1_option_string =
     [ "GetStrValue", "classvrv_1_1_option_string.html#ad1bf524fccc2a384586a9ada26428c31", null ],
     [ "GetValue", "classvrv_1_1_option_string.html#acc21b5e634fba8be75dc9e0531862418", null ],
     [ "Init", "classvrv_1_1_option_string.html#a0e018d18519808c6d81f23944283e883", null ],
+    [ "Reset", "classvrv_1_1_option_string.html#abd91c18159fe474309acef45875106c6", null ],
     [ "SetValue", "classvrv_1_1_option_string.html#a762e635893a5bb5c086bba58784acee9", null ]
 ];
