@@ -37,6 +37,7 @@ var classvrv_1_1_chord =
     [ "HasToBeAligned", "classvrv_1_1_chord.html#abde63c234417f3bde3d67dc189643ac3", null ],
     [ "IsSupportedChild", "classvrv_1_1_chord.html#a1530256eb902efeb334099f034d6eded", null ],
     [ "IsVisible", "classvrv_1_1_chord.html#a502c5d2649e8a742254db09135446eec", null ],
+    [ "JustifyY", "classvrv_1_1_chord.html#aa98457ec1747c9d715c9053262afb740", null ],
     [ "PositionInChord", "classvrv_1_1_chord.html#ad9046f9798eab922478f13c533e5e22f", null ],
     [ "PrepareLayerElementParts", "classvrv_1_1_chord.html#a18666c327afebb5d2548c01f84ee1de0", null ],
     [ "Reset", "classvrv_1_1_chord.html#a37534ad2cdc258e0b41df2f96ec115df", null ],
