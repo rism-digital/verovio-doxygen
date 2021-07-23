@@ -8,6 +8,7 @@
     <basecompoundref prot="public" virt="non-virtual">AttTimestampLogical</basecompoundref>
     <derivedcompoundref refid="classvrv_1_1_arpeg" prot="public" virt="non-virtual">vrv::Arpeg</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_breath" prot="public" virt="non-virtual">vrv::Breath</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_caesura" prot="public" virt="non-virtual">vrv::Caesura</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_fermata" prot="public" virt="non-virtual">vrv::Fermata</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_fing" prot="public" virt="non-virtual">vrv::Fing</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_m_num" prot="public" virt="non-virtual">vrv::MNum</derivedcompoundref>
@@ -53,18 +54,20 @@
         <argsstring>()</argsstring>
         <name>Reset</name>
         <reimplementedby refid="classvrv_1_1_phrase_1a4cf2c9d446af6d44f68cbf97a574ff9a">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_lv_1a0d1caa85c135d19a1e99cbee75e8c0c0">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_pitch_inflection_1a52f617af981b4bbfa15bf096ff83162e">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_f_1a2b01a80ac456149dc4d17a7951ce39ec">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_caesura_1aba782d2233f6c6f36d1812a428eda2f8">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_breath_1a46922dc1a012ad4e22d387d367076412">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_slur_1ad489e51d4fbd05c4a7b77171979c980d">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_fing_1ad52aa2d93592433e12041c97a37f2c53">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_gliss_1afdb61005647e94fb0ea0a45b2fd5941a">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_bracket_span_1ab95bb9424735e1fc9e5fb91670f4d6c4">Reset</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_tie_1aa2dcc8217fbcb23238941592457f994d">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reh_1aa803b111fcc7fc461cb2f888c802f011">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_hairpin_1acf6ebba6694c86e28faee5c18844bb4d">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_arpeg_1a153c3a0c91d7a8a3ef171d10b70ea933">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_turn_1a9cfcaad7fe3a7f4c3492a2b98449f03b">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tie_1aa2dcc8217fbcb23238941592457f994d">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_tempo_1a3a16d51f3ccb7a68b4c8a6efe01c6718">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_octave_1a229ec2da837f68c480ab55161beb1cb8">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_mordent_1afd27521658395ee7405f3cbbb84ca0d5">Reset</reimplementedby>
@@ -72,9 +75,9 @@
         <reimplementedby refid="classvrv_1_1_harm_1a2edec90bcf59cb039a4341cfd1060050">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_dynam_1a796634a0f186838ef311761060835d05">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_pedal_1a578f94f90ceb7176bb547357536e9bf9">Reset</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_fermata_1aa3caa25c49531e06f69bb0828a629258">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_dir_1ae432921bad571110afc4dc541f657984">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_trill_1a95b44674c5d5ce648a04c3af5e92e9b9">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_fermata_1aa3caa25c49531e06f69bb0828a629258">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_syl_1ad8421ee7c48a1a2810a40cd268613400">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_time_spanning_interface_1ad4411cd8b7d01508c6df18e35c5d2fde">Reset</reimplementedby>
         <briefdescription>
@@ -365,16 +368,16 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
 <para>It is not an abstract class but should not be instantiated directly. </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="26">
+      <node id="27">
         <label>vrv::Phrase</label>
         <link refid="classvrv_1_1_phrase"/>
-        <childnode refid="25" relation="public-inheritance">
+        <childnode refid="26" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="23">
+      <node id="24">
         <label>vrv::Pedal</label>
         <link refid="classvrv_1_1_pedal"/>
-        <childnode refid="14" relation="public-inheritance">
+        <childnode refid="15" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1">
@@ -389,56 +392,56 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13">
+      <node id="14">
         <label>vrv::Tempo</label>
         <link refid="classvrv_1_1_tempo"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="22">
+      <node id="23">
         <label>vrv::Octave</label>
         <link refid="classvrv_1_1_octave"/>
-        <childnode refid="14" relation="public-inheritance">
+        <childnode refid="15" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="16">
+      <node id="17">
         <label>vrv::Dir</label>
         <link refid="classvrv_1_1_dir"/>
-        <childnode refid="14" relation="public-inheritance">
+        <childnode refid="15" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="21">
+      <node id="22">
         <label>vrv::Harm</label>
         <link refid="classvrv_1_1_harm"/>
-        <childnode refid="14" relation="public-inheritance">
+        <childnode refid="15" relation="public-inheritance">
         </childnode>
       </node>
       <node id="4">
         <label>AttStartId</label>
       </node>
-      <node id="19">
+      <node id="20">
         <label>vrv::Gliss</label>
         <link refid="classvrv_1_1_gliss"/>
-        <childnode refid="14" relation="public-inheritance">
+        <childnode refid="15" relation="public-inheritance">
         </childnode>
       </node>
       <node id="2">
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="30">
+      <node id="32">
         <label>vrv::Turn</label>
         <link refid="classvrv_1_1_turn"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12">
+      <node id="13">
         <label>vrv::Reh</label>
         <link refid="classvrv_1_1_reh"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8">
+      <node id="9">
         <label>vrv::Fermata</label>
         <link refid="classvrv_1_1_fermata"/>
         <childnode refid="1" relation="public-inheritance">
@@ -450,67 +453,79 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11">
+      <node id="12">
         <label>vrv::Mordent</label>
         <link refid="classvrv_1_1_mordent"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="14">
+      <node id="15">
         <label>vrv::TimeSpanningInterface</label>
         <link refid="classvrv_1_1_time_spanning_interface"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="29">
+      <node id="31">
         <label>vrv::Trill</label>
         <link refid="classvrv_1_1_trill"/>
-        <childnode refid="14" relation="public-inheritance">
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vrv::Caesura</label>
+        <link refid="classvrv_1_1_caesura"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>vrv::F</label>
+        <link refid="classvrv_1_1_f"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>vrv::Lv</label>
+        <link refid="classvrv_1_1_lv"/>
+        <childnode refid="29" relation="public-inheritance">
         </childnode>
       </node>
       <node id="18">
-        <label>vrv::F</label>
-        <link refid="classvrv_1_1_f"/>
-        <childnode refid="14" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="17">
         <label>vrv::Dynam</label>
         <link refid="classvrv_1_1_dynam"/>
-        <childnode refid="14" relation="public-inheritance">
+        <childnode refid="15" relation="public-inheritance">
         </childnode>
       </node>
       <node id="5">
         <label>AttTimestampLogical</label>
       </node>
-      <node id="28">
+      <node id="29">
         <label>vrv::Tie</label>
         <link refid="classvrv_1_1_tie"/>
-        <childnode refid="14" relation="public-inheritance">
+        <childnode refid="15" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="27">
+      <node id="28">
         <label>vrv::Syl</label>
         <link refid="classvrv_1_1_syl"/>
-        <childnode refid="14" relation="public-inheritance">
+        <childnode refid="15" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10">
+      <node id="11">
         <label>vrv::MNum</label>
         <link refid="classvrv_1_1_m_num"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="24">
+      <node id="25">
         <label>vrv::PitchInflection</label>
         <link refid="classvrv_1_1_pitch_inflection"/>
-        <childnode refid="14" relation="public-inheritance">
+        <childnode refid="15" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="25">
+      <node id="26">
         <label>vrv::Slur</label>
         <link refid="classvrv_1_1_slur"/>
-        <childnode refid="14" relation="public-inheritance">
+        <childnode refid="15" relation="public-inheritance">
         </childnode>
       </node>
       <node id="3">
@@ -522,19 +537,19 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="20">
+      <node id="21">
         <label>vrv::Hairpin</label>
         <link refid="classvrv_1_1_hairpin"/>
-        <childnode refid="14" relation="public-inheritance">
+        <childnode refid="15" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15">
+      <node id="16">
         <label>vrv::BracketSpan</label>
         <link refid="classvrv_1_1_bracket_span"/>
-        <childnode refid="14" relation="public-inheritance">
+        <childnode refid="15" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9">
+      <node id="10">
         <label>vrv::Fing</label>
         <link refid="classvrv_1_1_fing"/>
         <childnode refid="1" relation="public-inheritance">

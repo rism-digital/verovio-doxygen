@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('keysig_8h_source.html',''); initResiza
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    std::wstring <a class="code" href="classvrv_1_1_key_sig.html#a8c89b9d4ea03ac427c1b39aa3f35bb83">GetKeyAccidStrAt</a>(<span class="keywordtype">int</span> pos, data_ACCIDENTAL_WRITTEN &amp;accid, data_PITCHNAME &amp;pname);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">int</span> GetFifthsInt();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">int</span> GetFifthsInt() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//----------------//</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// Static methods //</span></div>
@@ -169,11 +169,11 @@ $(document).ready(function(){initNavTree('keysig_8h_source.html',''); initResiza
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// Static members //</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">//----------------//</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">static</span> data_PITCHNAME s_pnameForFlats[];</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">static</span> data_PITCHNAME s_pnameForSharps[];</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> data_PITCHNAME s_pnameForFlats[];</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> data_PITCHNAME s_pnameForSharps[];</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> octave_map[2][9][7];</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> octave_map[2][9][7];</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;};</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;} <span class="comment">// namespace vrv</span></div>
@@ -192,20 +192,20 @@ $(document).ready(function(){initNavTree('keysig_8h_source.html',''); initResiza
 <div class="ttc" id="aclassvrv_1_1_clef_html"><div class="ttname"><a href="classvrv_1_1_clef.html">vrv::Clef</a></div><div class="ttdoc">This class models the MEI &lt;clef&gt; element.</div><div class="ttdef"><b>Definition:</b> clef.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html_a214d80f16352cda785bdbf1ba3423b68"><div class="ttname"><a href="classvrv_1_1_object.html#a214d80f16352cda785bdbf1ba3423b68">vrv::Object::GetFirstAncestor</a></div><div class="ttdeci">Object * GetFirstAncestor(const ClassId classId, int maxSteps=-1) const</div><div class="ttdoc">Return the first ancestor of the specified type.</div></div>
 <div class="ttc" id="aclassvrv_1_1_key_sig_html_a22cc70d7748a17e80c7950e51857964a"><div class="ttname"><a href="classvrv_1_1_key_sig.html#a22cc70d7748a17e80c7950e51857964a">vrv::KeySig::FilterList</a></div><div class="ttdeci">virtual void FilterList(ArrayOfObjects *childList)</div><div class="ttdoc">Filter the flat list and keep only StaffDef elements.</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_list_interface_html"><div class="ttname"><a href="classvrv_1_1_object_list_interface.html">vrv::ObjectListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1373</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_list_interface_html"><div class="ttname"><a href="classvrv_1_1_object_list_interface.html">vrv::ObjectListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1368</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html_a96ca869c3849c0f108655ad5d900a2c7"><div class="ttname"><a href="classvrv_1_1_object.html#a96ca869c3849c0f108655ad5d900a2c7">vrv::Object::GetParent</a></div><div class="ttdeci">Object * GetParent() const</div><div class="ttdoc">Get the parent of the Object.</div><div class="ttdef"><b>Definition:</b> object.h:308</div></div>
 <div class="ttc" id="aclassvrv_1_1_key_sig_html_a9f21cd54799f9ff5d2e033268bebd2f1"><div class="ttname"><a href="classvrv_1_1_key_sig.html#a9f21cd54799f9ff5d2e033268bebd2f1">vrv::KeySig::Transpose</a></div><div class="ttdeci">virtual int Transpose(FunctorParams *)</div><div class="ttdoc">See Object::Transpose.</div></div>
 <div class="ttc" id="aclassvrv_1_1_key_sig_html_ae862f334460bcf1cbf4311a696f52921"><div class="ttname"><a href="classvrv_1_1_key_sig.html#ae862f334460bcf1cbf4311a696f52921">vrv::KeySig::GetAccidType</a></div><div class="ttdeci">data_ACCIDENTAL_WRITTEN GetAccidType()</div><div class="ttdoc">Accid type getter.</div></div>
 <div class="ttc" id="aclassvrv_1_1_key_sig_html_a258a5338899c3b124d86d913a8ab4790"><div class="ttname"><a href="classvrv_1_1_key_sig.html#a258a5338899c3b124d86d913a8ab4790">vrv::KeySig::IsScoreDefElement</a></div><div class="ttdeci">virtual bool IsScoreDefElement() const</div><div class="ttdoc">Override the method since check is required.</div><div class="ttdef"><b>Definition:</b> keysig.h:54</div></div>
 <div class="ttc" id="aclassvrv_1_1_key_sig_html"><div class="ttname"><a href="classvrv_1_1_key_sig.html">vrv::KeySig</a></div><div class="ttdoc">This class models the MEI &lt;keySig&gt; element.</div><div class="ttdef"><b>Definition:</b> keysig.h:29</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:40</div></div>
-<div class="ttc" id="aclassvrv_1_1_functor_params_html"><div class="ttname"><a href="classvrv_1_1_functor_params.html">vrv::FunctorParams</a></div><div class="ttdoc">This is the base class for all MEI att classes.</div><div class="ttdef"><b>Definition:</b> functorparams.h:71</div></div>
+<div class="ttc" id="aclassvrv_1_1_functor_params_html"><div class="ttname"><a href="classvrv_1_1_functor_params.html">vrv::FunctorParams</a></div><div class="ttdoc">This is the base class for all MEI att classes.</div><div class="ttdef"><b>Definition:</b> functorparams.h:72</div></div>
 <div class="ttc" id="aclassvrv_1_1_key_sig_html_af06c536cacef5aef925b0aad6bb53ff3"><div class="ttname"><a href="classvrv_1_1_key_sig.html#af06c536cacef5aef925b0aad6bb53ff3">vrv::KeySig::IsSupportedChild</a></div><div class="ttdeci">virtual bool IsSupportedChild(Object *object)</div><div class="ttdoc">Add an element (a keyAccid) to a keySig.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>keysig.h</b></li>
-    <li class="footer">Generated on Fri Apr 30 2021 19:01:58 for Verovio by
+    <li class="footer">Generated on Tue Jul 20 2021 17:08:14 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

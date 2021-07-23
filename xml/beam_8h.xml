@@ -17,6 +17,20 @@
       <node id="15">
         <label>list</label>
       </node>
+      <node id="41">
+        <label>metersiggrp.h</label>
+        <link refid="metersiggrp_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
       <node id="36">
         <label>atts_analytical.h</label>
       </node>
@@ -213,6 +227,9 @@
       <node id="21">
         <label>attclasses.h</label>
       </node>
+      <node id="42">
+        <label>atts_mei.h</label>
+      </node>
       <node id="30">
         <label>vrv.h</label>
         <link refid="vrv_8h_source"/>
@@ -255,6 +272,8 @@
         </childnode>
         <childnode refid="40" relation="include">
         </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
@@ -271,6 +290,8 @@
         <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
@@ -406,7 +427,7 @@
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CalcBeam(<ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref><sp/>*layer,<sp/><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref><sp/>*staff,<sp/><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc,<sp/><ref refid="classvrv_1_1_beam_drawing_interface" kindref="compound">BeamDrawingInterface</ref><sp/>*beamInterface,</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data_BEAMPLACE<sp/>place<sp/>=<sp/>BEAMPLACE_NONE,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>init<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ArrayOfBeamElementCoords<sp/>*GetElementCoordRefs();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ArrayOfBeamElementCoords<sp/>*GetElementCoordRefs()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_beam_segment_1aae2d6f202398b11757729b803cad00fd" kindref="member">InitCoordRefs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ArrayOfBeamElementCoords<sp/>*beamElementCoords);</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
@@ -501,7 +522,7 @@
 <codeline lineno="178"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_beam_1ae1196829afda910061e001b95d061091" kindref="member">FilterList</ref>(ArrayOfObjects<sp/>*childList);</highlight></codeline>
 <codeline lineno="184"><highlight class="normal"></highlight></codeline>
-<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_beam_1acd4027e7b9938dbfe4a56010f7749e81" kindref="member">CalcLayerOverlap</ref>(Doc<sp/>*doc,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>directionBias,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y2);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_beam_1a85c7d02459bcfae686c17c861e692c16" kindref="member">CalcLayerOverlap</ref>(Doc<sp/>*doc,<sp/>Object<sp/>*beam,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>directionBias,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y2);</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"></highlight></codeline>
 <codeline lineno="191"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -527,7 +548,7 @@
 <codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_beam_element_coord" kindref="compound">BeamElementCoord</ref>();</highlight></codeline>
 <codeline lineno="219"><highlight class="normal"></highlight></codeline>
-<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>data_STEMDIRECTION<sp/><ref refid="classvrv_1_1_beam_element_coord_1adeaa12ab4464a5908e12961223fe73b3" kindref="member">GetStemDir</ref>();</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>data_STEMDIRECTION<sp/><ref refid="classvrv_1_1_beam_element_coord_1ab840311185d74d49af8357f0d2909db6" kindref="member">GetStemDir</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"></highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetDrawingStemDir(</highlight></codeline>
 <codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data_STEMDIRECTION<sp/>stemDir,<sp/><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref><sp/>*staff,<sp/><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc,<sp/><ref refid="classvrv_1_1_beam_segment" kindref="compound">BeamSegment</ref><sp/>*segment,<sp/><ref refid="classvrv_1_1_beam_drawing_interface" kindref="compound">BeamDrawingInterface</ref><sp/>*interface);</highlight></codeline>

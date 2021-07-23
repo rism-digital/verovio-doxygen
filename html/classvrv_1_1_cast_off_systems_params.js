@@ -5,6 +5,7 @@ var classvrv_1_1_cast_off_systems_params =
     [ "m_currentScoreDefWidth", "classvrv_1_1_cast_off_systems_params.html#a34d1017cd971a927dc36a2f45fa432c4", null ],
     [ "m_currentSystem", "classvrv_1_1_cast_off_systems_params.html#a25e720e30833fc29107db288b2a55f8a", null ],
     [ "m_doc", "classvrv_1_1_cast_off_systems_params.html#a975af3c11817a18593489ab06af4720a", null ],
+    [ "m_leftoverSystem", "classvrv_1_1_cast_off_systems_params.html#af5734499213e9cf4b18961feb892f01e", null ],
     [ "m_page", "classvrv_1_1_cast_off_systems_params.html#aa8092edb93f07086a647ff002b06eb71", null ],
     [ "m_pendingObjects", "classvrv_1_1_cast_off_systems_params.html#ad6ebc3ebdf3f18bf60484de4a781eda0", null ],
     [ "m_shift", "classvrv_1_1_cast_off_systems_params.html#aa3bb532e6551acc2afd418b97e4334fd", null ],

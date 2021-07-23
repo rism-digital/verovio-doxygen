@@ -66,6 +66,7 @@
     <member refid="classvrv_1_1_a_b_c_input_1a0ae68c1b38562f81983404752c629d08" kind="function"><name>readMusicCode</name></member>
     <member refid="classvrv_1_1_a_b_c_input_1a24b6ff6d8669784462094e19df9810e2" kind="function"><name>parseDecoration</name></member>
     <member refid="classvrv_1_1_a_b_c_input_1af28c85b8ac4caaf5d42e337fd2e4c931" kind="function"><name>AddArticulation</name></member>
+    <member refid="classvrv_1_1_a_b_c_input_1afedeaa76bec679305bded62768e4469d" kind="function"><name>AddChordSymbol</name></member>
     <member refid="classvrv_1_1_a_b_c_input_1a1eeed56bde7f49444ce006a8ef9fe480" kind="function"><name>AddDynamic</name></member>
     <member refid="classvrv_1_1_a_b_c_input_1ac5a8b633281d0d40bd863140aab3abc3" kind="function"><name>AddFermata</name></member>
     <member refid="classvrv_1_1_a_b_c_input_1a59db2acaa2a329f0001e9b347e2b6efe" kind="function"><name>AddOrnaments</name></member>
@@ -243,6 +244,7 @@
   <compound refid="classvrv_1_1_adjust_tuplet_num_overlap_params" kind="class"><name>vrv::AdjustTupletNumOverlapParams</name>
     <member refid="classvrv_1_1_adjust_tuplet_num_overlap_params_1a3e65134970e2e10ea7dd2f23569d2df9" kind="variable"><name>m_tupletNum</name></member>
     <member refid="classvrv_1_1_adjust_tuplet_num_overlap_params_1a11e14d6ebd3cba59b992cae22b1b7697" kind="variable"><name>m_drawingNumPos</name></member>
+    <member refid="classvrv_1_1_adjust_tuplet_num_overlap_params_1a5f5a08a834f0eb85cf925a76286af298" kind="variable"><name>m_horizontalMargin</name></member>
     <member refid="classvrv_1_1_adjust_tuplet_num_overlap_params_1a67e8ab8ccd0aacdd309e2d91e5090035" kind="variable"><name>m_verticalMargin</name></member>
     <member refid="classvrv_1_1_adjust_tuplet_num_overlap_params_1a50d684ab370b540c91c6de66c2f07394" kind="variable"><name>m_ignoreCrossStaff</name></member>
     <member refid="classvrv_1_1_adjust_tuplet_num_overlap_params_1a0a6fbcfa679693f5ffc2c48ff9518dcd" kind="variable"><name>m_yRel</name></member>
@@ -267,6 +269,7 @@
     <member refid="classvrv_1_1_adjust_x_pos_params_1ae1df036b12a2398a7c5ac5f094ebe5e6" kind="variable"><name>m_upcomingMinPos</name></member>
     <member refid="classvrv_1_1_adjust_x_pos_params_1a44136181bf4994b3d7602db3c1755aaf" kind="variable"><name>m_cumulatedXShift</name></member>
     <member refid="classvrv_1_1_adjust_x_pos_params_1a033d4d4b6411b99246111feb1cecc27c" kind="variable"><name>m_staffN</name></member>
+    <member refid="classvrv_1_1_adjust_x_pos_params_1afe4e9a3381d8997e616016afeee25f04" kind="variable"><name>m_staffSize</name></member>
     <member refid="classvrv_1_1_adjust_x_pos_params_1ab123de3227e38592a5a37201431f13f4" kind="variable"><name>m_staffNs</name></member>
     <member refid="classvrv_1_1_adjust_x_pos_params_1a8acce513d507f0b8bfa6ef2ed18711bb" kind="variable"><name>m_boundingBoxes</name></member>
     <member refid="classvrv_1_1_adjust_x_pos_params_1a43640a7e6e5756c46b0bd002b9fd585d" kind="variable"><name>m_upcomingBoundingBoxes</name></member>
@@ -326,11 +329,12 @@
     <member refid="classvrv_1_1_alignment_1a69dbbfa23611f87db7df6c03a26e52a9" kind="function"><name>ClearGraceAligners</name></member>
     <member refid="classvrv_1_1_alignment_1adc9b6237ee57e0c98b3b93d8d1edb44e" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_alignment_1ab52c03819037b643b89612716dc4629a" kind="function"><name>AddLayerElementRef</name></member>
-    <member refid="classvrv_1_1_alignment_1a678dd6aa50be825965642873ffc5490d" kind="function"><name>IsOfType</name></member>
+    <member refid="classvrv_1_1_alignment_1abea5738c5b4b494dbda993185dfd0e92" kind="function"><name>IsOfType</name></member>
     <member refid="classvrv_1_1_alignment_1aed80b800a911661778307d8103dc2b68" kind="function"><name>GetLeftRight</name></member>
     <member refid="classvrv_1_1_alignment_1a928eb024f3d003643fe0870c16567c2f" kind="function"><name>GetLeftRight</name></member>
     <member refid="classvrv_1_1_alignment_1ae806f6c44d2251c5adf385d21d22e2be" kind="function"><name>GetGraceAligner</name></member>
     <member refid="classvrv_1_1_alignment_1ae694154976e041cf41059ba6274b3d79" kind="function"><name>HasGraceAligner</name></member>
+    <member refid="classvrv_1_1_alignment_1a6d405618a4cb9f522b09db348437230f" kind="function"><name>PerfomBoundingBoxAlignment</name></member>
     <member refid="classvrv_1_1_alignment_1a4b5535808594d25a33fc7c1315144870" kind="function"><name>GetReferenceWithElement</name></member>
     <member refid="classvrv_1_1_alignment_1a05ceb4703d37ae859db62c634e31f86a" kind="function"><name>GetAlignmentTopBottom</name></member>
     <member refid="classvrv_1_1_alignment_1a54d97c1551306ae4def0e8ceb7be0152" kind="function"><name>AddToAccidSpace</name></member>
@@ -451,31 +455,33 @@
     <member refid="classvrv_1_1_artic_1a111b2fe726683343b7edc43ec7730919" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_artic_1ac993bfadffd73b30fe6b372399d2d352" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_artic_1a4714c7d0a8b6739daa5a84352e953206" kind="function"><name>GetClassId</name></member>
-    <member refid="classvrv_1_1_artic_1a3e4862feb7692cafec42c70773cd175c" kind="function"><name>IsInsideArtic</name></member>
-    <member refid="classvrv_1_1_artic_1a9b5de95ff7250dfc64f43008cfeaaad7" kind="function"><name>IsOutsideArtic</name></member>
+    <member refid="classvrv_1_1_artic_1ad60930fde904d55bc6b45c022f9a0886" kind="function"><name>IsInsideArtic</name></member>
+    <member refid="classvrv_1_1_artic_1a71697eeca9129013c0fc4cf92ec7ddf6" kind="function"><name>IsOutsideArtic</name></member>
     <member refid="classvrv_1_1_artic_1aeb7492d88bdab31de3f09ffb6adbff05" kind="variable"><name>m_startSlurPositioners</name></member>
     <member refid="classvrv_1_1_artic_1a2b72f25fa8bc491faae7a148faa62d94" kind="variable"><name>m_endSlurPositioners</name></member>
-    <member refid="classvrv_1_1_artic_1a8e18feb79b45f9e8aea83b262ef87339" kind="variable"><name>s_outStaffArtic</name></member>
-    <member refid="classvrv_1_1_artic_1a0d6b92f3ac12b0890dfc98e3b3f93cda" kind="variable"><name>s_aboveStaffArtic</name></member>
+    <member refid="classvrv_1_1_artic_1af5632037445cf7c9b45592b11417d13e" kind="variable"><name>s_outStaffArtic</name></member>
+    <member refid="classvrv_1_1_artic_1a825f179de07fb8b912d1c916ba37519a" kind="variable"><name>s_aboveStaffArtic</name></member>
     <member refid="classvrv_1_1_artic_1a1b490c4b317b3d3303c9398393327d56" kind="variable"><name>m_drawingPlace</name></member>
     <member refid="classvrv_1_1_artic_1aa91fcd05ac62367cb95ac5cc7eb19f23" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_artic_1af1cffc264bbd574575aee9a65c7dd032" kind="function"><name>IsRelativeToStaff</name></member>
-    <member refid="classvrv_1_1_artic_1a6ca670ded21c502ccb27f31176d90aee" kind="function"><name>GetArticFirst</name></member>
+    <member refid="classvrv_1_1_artic_1aebafe014185c3b1357258d06f358a172" kind="function"><name>GetArticFirst</name></member>
     <member refid="classvrv_1_1_artic_1ac7bf2f16b9558129980adb1c29b6b0c2" kind="function"><name>SplitMultival</name></member>
     <member refid="classvrv_1_1_artic_1aeb46e15699edb5d500c44a77ae5d06e5" kind="function"><name>GetAllArtics</name></member>
     <member refid="classvrv_1_1_artic_1ab6b401bb7dfd502eccd21bf9614bc905" kind="function"><name>SplitArtic</name></member>
     <member refid="classvrv_1_1_artic_1a2cb3778c0093e1ef4b61e374774f68b6" kind="function"><name>AlwaysAbove</name></member>
     <member refid="classvrv_1_1_artic_1a898c16e5f1bb2d34999f2cf2344167ea" kind="function"><name>AddSlurPositioner</name></member>
     <member refid="classvrv_1_1_artic_1a318062fc0b6c2ffbb2986c3f1d90c26a" kind="function"><name>GetDrawingPlace</name></member>
-    <member refid="classvrv_1_1_artic_1ada5ab8899327647fa9c2756af5cf7053" kind="function"><name>GetArticGlyph</name></member>
+    <member refid="classvrv_1_1_artic_1ad38e2eb6d8be529eb908f7ad29596e3d" kind="function"><name>GetArticGlyph</name></member>
+    <member refid="classvrv_1_1_artic_1ae1fd6078806e981671c7c185f4b2c31f" kind="function"><name>GetEnclosingGlyph</name></member>
     <member refid="classvrv_1_1_artic_1a566d6c721af17c666de8c98089056298" kind="function"><name>ConvertMarkupArtic</name></member>
     <member refid="classvrv_1_1_artic_1ad23ab8262ea35f49b518c661c5078789" kind="function"><name>CalcArtic</name></member>
     <member refid="classvrv_1_1_artic_1adcdab0ebbd513631481f06ace96baaa7" kind="function"><name>AdjustArtic</name></member>
     <member refid="classvrv_1_1_artic_1a4add68432cd13d9cfaaffc578271259a" kind="function"><name>AdjustArticWithSlurs</name></member>
     <member refid="classvrv_1_1_artic_1a96699bdbf8423b7c51e2620fb3b1b83a" kind="function"><name>ResetVerticalAlignment</name></member>
     <member refid="classvrv_1_1_artic_1a852957c29409c4c3f2c0894d1353dd96" kind="function"><name>ResetDrawing</name></member>
-    <member refid="classvrv_1_1_artic_1a3e1cdba42fb9e6edcef1bf545ab8d80c" kind="function"><name>VerticalCorr</name></member>
+    <member refid="classvrv_1_1_artic_1afb868c298d767bba4af4e57d50dbab7f" kind="function"><name>VerticalCorr</name></member>
     <member refid="classvrv_1_1_artic_1a0f3c3112f20c06ce5f18d8a97c9ecea7" kind="function"><name>IsCentered</name></member>
+    <member refid="classvrv_1_1_artic_1a7c77695b959482dea06e8e6c94f3542d" kind="function"><name>IsInsideArtic</name></member>
   </compound>
   <compound refid="classvrv_1_1_att" kind="class"><name>vrv::Att</name>
     <member refid="classvrv_1_1_att_1ab2fe2a045e5d42cc66eb3777b401184a" kind="function"><name>Att</name></member>
@@ -513,75 +519,77 @@
     <member refid="classvrv_1_1_att_1a9fa61e16ecc1c028556035a2e6bb8cfc" kind="function"><name>DblToStr</name></member>
     <member refid="classvrv_1_1_att_1a14e8c8ffb93d479ff7d0836ac6a1c44a" kind="function"><name>IntToStr</name></member>
     <member refid="classvrv_1_1_att_1a3af74326fcd3460d6998377ad82e50e1" kind="function"><name>VUToStr</name></member>
-    <member refid="classvrv_1_1_att_1a6e32955fd18d70ce851b83a4005e3aa8" kind="function"><name>StrToDbl</name></member>
-    <member refid="classvrv_1_1_att_1abcf2ec1ef846c924e20940bfa6e3cd0d" kind="function"><name>StrToInt</name></member>
-    <member refid="classvrv_1_1_att_1a424163c5a2ef2a215eb4191e7e587399" kind="function"><name>StrToVU</name></member>
+    <member refid="classvrv_1_1_att_1a68f718bc899a222be185943d7b35dc2f" kind="function"><name>StrToDbl</name></member>
+    <member refid="classvrv_1_1_att_1a83b831556315e39df82b3b547bd80aa9" kind="function"><name>StrToInt</name></member>
+    <member refid="classvrv_1_1_att_1af5f7cb72d073799a6cb343864c641c9c" kind="function"><name>StrToVU</name></member>
     <member refid="classvrv_1_1_att_1a02671517ecddb5092e5e8e2ebe6fff36" kind="function"><name>ArticulationListToStr</name></member>
-    <member refid="classvrv_1_1_att_1a274480b7914b0770f5034c60ac23a5ea" kind="function"><name>StrToArticulationList</name></member>
+    <member refid="classvrv_1_1_att_1a41c3920bf716c0bf428615b01a17c6d5" kind="function"><name>StrToArticulationList</name></member>
     <member refid="classvrv_1_1_att_1a692efbc561aec0c378d14d3b232d1e1f" kind="function"><name>BeatrptRendToStr</name></member>
-    <member refid="classvrv_1_1_att_1a569a9f4f0bb7e255159b3b3aad1b9486" kind="function"><name>StrToBeatrptRend</name></member>
+    <member refid="classvrv_1_1_att_1a8f24a0dd9d3a52cc71e2289dfdc2753d" kind="function"><name>StrToBeatrptRend</name></member>
     <member refid="classvrv_1_1_att_1a586246d73f9d6870abf3fea849e79d10" kind="function"><name>DurationToStr</name></member>
-    <member refid="classvrv_1_1_att_1a90954abbc43ad4b4922e9ee3eed5c4b7" kind="function"><name>StrToDuration</name></member>
+    <member refid="classvrv_1_1_att_1a465d6dc7fff5a096ad3e0e6a015a5bc5" kind="function"><name>StrToDuration</name></member>
     <member refid="classvrv_1_1_att_1a4cc9e96bad6698a9798c90a84cdf80f9" kind="function"><name>FontsizenumericToStr</name></member>
-    <member refid="classvrv_1_1_att_1ae08e9010600625880aafd5106c107ade" kind="function"><name>StrToFontsizenumeric</name></member>
+    <member refid="classvrv_1_1_att_1a3db1e8c192d58aaea47650041ddff9bf" kind="function"><name>StrToFontsizenumeric</name></member>
     <member refid="classvrv_1_1_att_1acab604f01b60885676ec42b37139ecec" kind="function"><name>HexnumToStr</name></member>
     <member refid="classvrv_1_1_att_1ada0337ed53befc8283b0c66ebc8d9420" kind="function"><name>StrToHexnum</name></member>
     <member refid="classvrv_1_1_att_1a35065deb84e468e67a8f47a5828b7ce8" kind="function"><name>KeysignatureToStr</name></member>
-    <member refid="classvrv_1_1_att_1aeec82d127c3ab94a48cc6d8c9a19c581" kind="function"><name>StrToKeysignature</name></member>
+    <member refid="classvrv_1_1_att_1a04a76d14af7c7c4b9f64bd8044c22a9c" kind="function"><name>StrToKeysignature</name></member>
     <member refid="classvrv_1_1_att_1a39f755f7c1685da0398c1ece93d32042" kind="function"><name>MeasurebeatToStr</name></member>
     <member refid="classvrv_1_1_att_1a944979176027a1a4e1aec0b5352d5afa" kind="function"><name>StrToMeasurebeat</name></member>
     <member refid="classvrv_1_1_att_1a763a7f73d6011901610c76bd764d8653" kind="function"><name>MeasurementabsToStr</name></member>
-    <member refid="classvrv_1_1_att_1af3debf4c09336a29c145d8bf9add9551" kind="function"><name>StrToMeasurementabs</name></member>
+    <member refid="classvrv_1_1_att_1a2c35770dd30f02e2ce175aaa903d8a20" kind="function"><name>StrToMeasurementabs</name></member>
     <member refid="classvrv_1_1_att_1ab5abc4043d39854393118ac467e40704" kind="function"><name>MeasurementrelToStr</name></member>
-    <member refid="classvrv_1_1_att_1ac41660679c411ee81c89a18f24e14656" kind="function"><name>StrToMeasurementrel</name></member>
+    <member refid="classvrv_1_1_att_1a4d1a85dcbe449c084d1f854644f0b102" kind="function"><name>StrToMeasurementrel</name></member>
     <member refid="classvrv_1_1_att_1a3691bbeb43f56c352aa610ffe53fd716" kind="function"><name>ModusmaiorToStr</name></member>
-    <member refid="classvrv_1_1_att_1a511025e8dd715c47062258d5f3354fcc" kind="function"><name>StrToModusmaior</name></member>
+    <member refid="classvrv_1_1_att_1ace662def152ba1e6fc1fb15fe88c5272" kind="function"><name>StrToModusmaior</name></member>
     <member refid="classvrv_1_1_att_1aed8ccb52d6c3e8a5fe029acb6798d921" kind="function"><name>ModusminorToStr</name></member>
-    <member refid="classvrv_1_1_att_1aa72d20715b689c04d69810fa8887ddf5" kind="function"><name>StrToModusminor</name></member>
+    <member refid="classvrv_1_1_att_1ae32bcfbfc1baf3ba29fd29d1ea4a49c5" kind="function"><name>StrToModusminor</name></member>
     <member refid="classvrv_1_1_att_1abe4d3d01536f8349af47e53dcfc9e7df" kind="function"><name>MidibpmToStr</name></member>
-    <member refid="classvrv_1_1_att_1aff84b48136f2d9e7006ef42c3a9c79db" kind="function"><name>StrToMidibpm</name></member>
+    <member refid="classvrv_1_1_att_1a9c498114fa4b3cb2d617e97fb003d4c5" kind="function"><name>StrToMidibpm</name></member>
     <member refid="classvrv_1_1_att_1a0e5da3602dde346c73fe227cbf618ef6" kind="function"><name>MidichannelToStr</name></member>
-    <member refid="classvrv_1_1_att_1ab7c61e28e6f4afa5c9f5f3f2cde135cc" kind="function"><name>StrToMidichannel</name></member>
+    <member refid="classvrv_1_1_att_1a196ea968aaf8e46462d00dfa24c61432" kind="function"><name>StrToMidichannel</name></member>
     <member refid="classvrv_1_1_att_1a7d899fde5fa430a2dc2ffbd2fd8c1c8a" kind="function"><name>MidimspbToStr</name></member>
-    <member refid="classvrv_1_1_att_1a85b70de07ecbdf091eeca1cb8815b93d" kind="function"><name>StrToMidimspb</name></member>
+    <member refid="classvrv_1_1_att_1ac6a1924c168b7f35fff6170810fda2c5" kind="function"><name>StrToMidimspb</name></member>
     <member refid="classvrv_1_1_att_1a6b0e6c27b140395120df17a80b4913b0" kind="function"><name>MidivalueToStr</name></member>
-    <member refid="classvrv_1_1_att_1aced7ef8b583c8441a1ba96c01449995d" kind="function"><name>StrToMidivalue</name></member>
+    <member refid="classvrv_1_1_att_1a296e2608ef7dd486f5119d27aff8400e" kind="function"><name>StrToMidivalue</name></member>
     <member refid="classvrv_1_1_att_1a4f2ebfe13bca4d768f00a845f7a8e3d2" kind="function"><name>NcnameToStr</name></member>
-    <member refid="classvrv_1_1_att_1a503b0869f476170f1c0c86d7edcab592" kind="function"><name>StrToNcname</name></member>
+    <member refid="classvrv_1_1_att_1adebb732b28c0ff19a12113a7bf8b9c0d" kind="function"><name>StrToNcname</name></member>
     <member refid="classvrv_1_1_att_1aad6e93ac6a2f3d4ff7794cf9b64db211" kind="function"><name>OctaveToStr</name></member>
-    <member refid="classvrv_1_1_att_1aabb8abf4a5c2e5491303efc63423ae23" kind="function"><name>StrToOctave</name></member>
+    <member refid="classvrv_1_1_att_1a5bf71550e1181eb8f0475dd1a26f57f8" kind="function"><name>StrToOctave</name></member>
     <member refid="classvrv_1_1_att_1acebdf70beca74a5d3664399f8a330638" kind="function"><name>OctaveDisToStr</name></member>
-    <member refid="classvrv_1_1_att_1a46b39bc5d53b8de8f35e440e21451068" kind="function"><name>StrToOctaveDis</name></member>
+    <member refid="classvrv_1_1_att_1aa8bac736262840df547b1aa1739011b8" kind="function"><name>StrToOctaveDis</name></member>
     <member refid="classvrv_1_1_att_1ad5b764ce047388e8856c26c40e4384d8" kind="function"><name>OrientationToStr</name></member>
-    <member refid="classvrv_1_1_att_1abf89d7bb35964b2fc1b9fc3ada1c324f" kind="function"><name>StrToOrientation</name></member>
+    <member refid="classvrv_1_1_att_1aa23df41ea21ae7e3443e08c8458d6458" kind="function"><name>StrToOrientation</name></member>
     <member refid="classvrv_1_1_att_1ad1a209e96c481ce8f730058a7c6496d9" kind="function"><name>PercentToStr</name></member>
-    <member refid="classvrv_1_1_att_1a6d4f6fd87e80eb7ff1d1f350748634f9" kind="function"><name>StrToPercent</name></member>
+    <member refid="classvrv_1_1_att_1ae0069936c71b66ffe8d1802aab13f5d1" kind="function"><name>StrToPercent</name></member>
     <member refid="classvrv_1_1_att_1a93cad60754abf75cb3365cce036a237d" kind="function"><name>PercentLimitedToStr</name></member>
-    <member refid="classvrv_1_1_att_1a188400d331a4f7521b19be57fa58434f" kind="function"><name>StrToPercentLimited</name></member>
+    <member refid="classvrv_1_1_att_1a0f9d7e8005e7f19aa316b9edfe087eda" kind="function"><name>StrToPercentLimited</name></member>
     <member refid="classvrv_1_1_att_1aba69a3290ed3b0c36d3f8cc218f0c890" kind="function"><name>PercentLimitedSignedToStr</name></member>
-    <member refid="classvrv_1_1_att_1a2a7bc3264cee71d6d01aa568ae339ba4" kind="function"><name>StrToPercentLimitedSigned</name></member>
+    <member refid="classvrv_1_1_att_1a665def7e2af194df61ddfcd5c49bc6dc" kind="function"><name>StrToPercentLimitedSigned</name></member>
     <member refid="classvrv_1_1_att_1a15b81856cdc9ddddfb91c23462f304a1" kind="function"><name>PitchnameToStr</name></member>
-    <member refid="classvrv_1_1_att_1a56396c0f14a97a90a2242f91895d9f08" kind="function"><name>StrToPitchname</name></member>
+    <member refid="classvrv_1_1_att_1a41cdd067e021b172802aaa30f958aa73" kind="function"><name>StrToPitchname</name></member>
     <member refid="classvrv_1_1_att_1a5c0ed50dba2c2ee9b7cb7ba9abdc05b9" kind="function"><name>ProlatioToStr</name></member>
-    <member refid="classvrv_1_1_att_1aae3b0e69b265abc437ce6d1deefcbd27" kind="function"><name>StrToProlatio</name></member>
+    <member refid="classvrv_1_1_att_1add546f7aec49b70ac126cd8251e37d9f" kind="function"><name>StrToProlatio</name></member>
+    <member refid="classvrv_1_1_att_1ab89565cb0ff2a241b3e09fd99dce2f1c" kind="function"><name>SummandListToStr</name></member>
+    <member refid="classvrv_1_1_att_1a4dc16da0f5a0522c6a065bc65bdaed6e" kind="function"><name>StrToSummandList</name></member>
     <member refid="classvrv_1_1_att_1ae4be0cd34067c1fa06ba6c42c509c0fb" kind="function"><name>TempusToStr</name></member>
-    <member refid="classvrv_1_1_att_1aebfd863b8358cdd29ed6d2dfecb92642" kind="function"><name>StrToTempus</name></member>
+    <member refid="classvrv_1_1_att_1a7698f45be8a4df6af654283a25ad263c" kind="function"><name>StrToTempus</name></member>
     <member refid="classvrv_1_1_att_1a7727871af3be50fa99389981620ece4c" kind="function"><name>TieToStr</name></member>
-    <member refid="classvrv_1_1_att_1a431abe756ea097f70c51b3e74456a0d2" kind="function"><name>StrToTie</name></member>
+    <member refid="classvrv_1_1_att_1a8a8878396e3e86cbd642efc33f001bd5" kind="function"><name>StrToTie</name></member>
     <member refid="classvrv_1_1_att_1a1b4d1060d813973eab7628fe12fcbd39" kind="function"><name>XsdAnyURIListToStr</name></member>
-    <member refid="classvrv_1_1_att_1a1b49103419d070b0aa4af67fb3aeb9f4" kind="function"><name>StrToXsdAnyURIList</name></member>
+    <member refid="classvrv_1_1_att_1a151cc74b6e4c79da997d50066c860fff" kind="function"><name>StrToXsdAnyURIList</name></member>
     <member refid="classvrv_1_1_att_1ad450c19fed7c6403375234ba1d97b3a2" kind="function"><name>XsdPositiveIntegerListToStr</name></member>
-    <member refid="classvrv_1_1_att_1aa0f32f35b377efdc6c35b23e2a9a8cfd" kind="function"><name>StrToXsdPositiveIntegerList</name></member>
+    <member refid="classvrv_1_1_att_1aae1ddbc9134d054c09fe7644ae970a6b" kind="function"><name>StrToXsdPositiveIntegerList</name></member>
     <member refid="classvrv_1_1_att_1a035c6f886150c56058a858cc1fe525a9" kind="function"><name>FontsizeToStr</name></member>
-    <member refid="classvrv_1_1_att_1a2ffee015c58864563073680d70bf08f7" kind="function"><name>StrToFontsize</name></member>
+    <member refid="classvrv_1_1_att_1af57bda92e223522df76ba5277d0f8621" kind="function"><name>StrToFontsize</name></member>
     <member refid="classvrv_1_1_att_1a35fa82ba654fa911876d617106b3ef2f" kind="function"><name>LinewidthToStr</name></member>
-    <member refid="classvrv_1_1_att_1a02dfe50896b030e5533aef4782b42f9d" kind="function"><name>StrToLinewidth</name></member>
+    <member refid="classvrv_1_1_att_1a250fadfe5d3c239edb31e4c2befbd9d5" kind="function"><name>StrToLinewidth</name></member>
     <member refid="classvrv_1_1_att_1ae8e90c71a36b7a3de6692a29d41e0741" kind="function"><name>MidivalueNameToStr</name></member>
-    <member refid="classvrv_1_1_att_1a639d4c900c69f70c20e9bd6575649ff4" kind="function"><name>StrToMidivalueName</name></member>
+    <member refid="classvrv_1_1_att_1a983eee4f62051af70280698d855a79a6" kind="function"><name>StrToMidivalueName</name></member>
     <member refid="classvrv_1_1_att_1a17f89035f0a3bf846cce58c17c897344" kind="function"><name>MidivaluePanToStr</name></member>
-    <member refid="classvrv_1_1_att_1a1654dd5f895bd9ed4dfb3fd19a3a6a8a" kind="function"><name>StrToMidivaluePan</name></member>
+    <member refid="classvrv_1_1_att_1a1fa546233fa0f07f86b9f450b823d4c0" kind="function"><name>StrToMidivaluePan</name></member>
     <member refid="classvrv_1_1_att_1acd9fd2a72a16a3fc2c5c851daafc156b" kind="function"><name>PlacementToStr</name></member>
-    <member refid="classvrv_1_1_att_1a7fce7a6ef61a76c522474e7375a00027" kind="function"><name>StrToPlacement</name></member>
+    <member refid="classvrv_1_1_att_1af7d887c4ce4d217d11da81ea65f8ce7a" kind="function"><name>StrToPlacement</name></member>
     <member refid="classvrv_1_1_att_1a65b7bc2210f5f4dad29bac63eafbcf4d" kind="function"><name>StrToStr</name></member>
     <member refid="classvrv_1_1_att_1aca38fbcd4287e54304ed67d16121f828" kind="function"><name>AccidentalGesturalToWritten</name></member>
     <member refid="classvrv_1_1_att_1aba7ac647eb854ca747000ff61b4b4e1c" kind="function"><name>AccidentalWrittenToGestural</name></member>
@@ -601,6 +609,7 @@
     <member refid="classvrv_1_1_att_n_integer_any_comparison_1a7c588e66839c9f1db5bbeaca8941ffc9" kind="variable"><name>m_ns</name></member>
     <member refid="classvrv_1_1_att_n_integer_any_comparison_1a0625da120aaadd9d32ff4fb37e97c1fd" kind="function"><name>AttNIntegerAnyComparison</name></member>
     <member refid="classvrv_1_1_att_n_integer_any_comparison_1ada77fe655ab8bfa1b8ae1b3ebcb4a483" kind="function"><name>SetNs</name></member>
+    <member refid="classvrv_1_1_att_n_integer_any_comparison_1aef610afa78d1653599315c42aa7f210c" kind="function"><name>AppendN</name></member>
     <member refid="classvrv_1_1_att_n_integer_any_comparison_1a9c2eff76fe523eb9504ac93b78d599aa" kind="function"><name>operator()</name></member>
   </compound>
   <compound refid="classvrv_1_1_att_n_integer_comparison" kind="class"><name>vrv::AttNIntegerComparison</name>
@@ -614,6 +623,11 @@
     <member refid="classvrv_1_1_att_n_number_like_comparison_1a444fcc2400fc6fcd461d9658d7276f8b" kind="function"><name>AttNNumberLikeComparison</name></member>
     <member refid="classvrv_1_1_att_n_number_like_comparison_1a1a5f5db6a68cc29e53d437d01d1e66b5" kind="function"><name>SetN</name></member>
     <member refid="classvrv_1_1_att_n_number_like_comparison_1a6870e6348a0a779ec9b0d9c51a572d31" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_att_visibility_comparison" kind="class"><name>vrv::AttVisibilityComparison</name>
+    <member refid="classvrv_1_1_att_visibility_comparison_1a966c2e11ba0d811b101eaad37f4af624" kind="variable"><name>m_isVisible</name></member>
+    <member refid="classvrv_1_1_att_visibility_comparison_1a0e4f925f0fd4ecb1cea465e5a0a84934" kind="function"><name>AttVisibilityComparison</name></member>
+    <member refid="classvrv_1_1_att_visibility_comparison_1a623a2de70ec186320a6b1f6f1be7c664" kind="function"><name>operator()</name></member>
   </compound>
   <compound refid="classvrv_1_1_bar_line" kind="class"><name>vrv::BarLine</name>
     <member refid="classvrv_1_1_bar_line_1a1778321d86ec586c12353b49de330e01" kind="function"><name>BarLine</name></member>
@@ -634,7 +648,9 @@
     <member refid="classvrv_1_1_bar_line_attr_1a15b3c95296bbd8ef19ca525a023a5d5c" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_bar_line_attr_1acf78873ec9e3df67f7f3941690c5b382" kind="function"><name>GetClassId</name></member>
     <member refid="classvrv_1_1_bar_line_attr_1a6865e60701904e06646ee3f235773db6" kind="variable"><name>m_isLeft</name></member>
+    <member refid="classvrv_1_1_bar_line_attr_1add6cc628062d9694d77a251ea209f96b" kind="variable"><name>m_noAttr</name></member>
     <member refid="classvrv_1_1_bar_line_attr_1aacc8741e507a5cae412bd75fee75e7c2" kind="function"><name>SetLeft</name></member>
+    <member refid="classvrv_1_1_bar_line_attr_1a3acfafdeace030be8a3d1828ce596a38" kind="function"><name>SetNoAttr</name></member>
   </compound>
   <compound refid="classvrv_1_1_b_box_device_context" kind="class"><name>vrv::BBoxDeviceContext</name>
     <member refid="classvrv_1_1_b_box_device_context_1a736207289f4cd83b7ffac47f0b73574d" kind="function"><name>BBoxDeviceContext</name></member>
@@ -715,7 +731,7 @@
     <member refid="classvrv_1_1_beam_1a68e2b6e3f79c497e1f9ff3fa6f76af48" kind="function"><name>CalcStem</name></member>
     <member refid="classvrv_1_1_beam_1ae79b6a8ecf851f3d78d6b490ef62a14a" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_beam_1ae1196829afda910061e001b95d061091" kind="function"><name>FilterList</name></member>
-    <member refid="classvrv_1_1_beam_1acd4027e7b9938dbfe4a56010f7749e81" kind="function"><name>CalcLayerOverlap</name></member>
+    <member refid="classvrv_1_1_beam_1a85c7d02459bcfae686c17c861e692c16" kind="function"><name>CalcLayerOverlap</name></member>
   </compound>
   <compound refid="classvrv_1_1_beam_drawing_interface" kind="class"><name>vrv::BeamDrawingInterface</name>
     <member refid="classvrv_1_1_beam_drawing_interface_1acb9893d7a46b9fd187813a3d2fe30d8b" kind="function"><name>BeamDrawingInterface</name></member>
@@ -763,7 +779,7 @@
     <member refid="classvrv_1_1_beam_element_coord_1a7979d8a8efc9eb48ceeab93b051cf9b9" kind="variable"><name>m_stem</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1a3d4c541e6a6640a5a9df1ac50db27bb2" kind="function"><name>BeamElementCoord</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1ad39a98a648db43efa4ae8d382d95d06d" kind="function"><name>~BeamElementCoord</name></member>
-    <member refid="classvrv_1_1_beam_element_coord_1adeaa12ab4464a5908e12961223fe73b3" kind="function"><name>GetStemDir</name></member>
+    <member refid="classvrv_1_1_beam_element_coord_1ab840311185d74d49af8357f0d2909db6" kind="function"><name>GetStemDir</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1a221c845016f2e6e5626a38d1dfeb125e" kind="function"><name>SetDrawingStemDir</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1a0044982fdb6e6ea657fcfbed5ccaa019" kind="function"><name>SetClosestNote</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1a51cc5b54e8c49fdce26253a577fbae88" kind="function"><name>CalculateStemLength</name></member>
@@ -787,7 +803,7 @@
     <member refid="classvrv_1_1_beam_segment_1ad00e25fbdde982ee522286831653b840" kind="function"><name>~BeamSegment</name></member>
     <member refid="classvrv_1_1_beam_segment_1ae45293135277575fd4d828312f1c700c" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_beam_segment_1a53b12029b522b249d6faf0dc8acfe1b8" kind="function"><name>CalcBeam</name></member>
-    <member refid="classvrv_1_1_beam_segment_1ad436a14eb3e9b16228688a8b58f20a47" kind="function"><name>GetElementCoordRefs</name></member>
+    <member refid="classvrv_1_1_beam_segment_1afdd3362ebfc878b981e2f3f8db7ed970" kind="function"><name>GetElementCoordRefs</name></member>
     <member refid="classvrv_1_1_beam_segment_1aae2d6f202398b11757729b803cad00fd" kind="function"><name>InitCoordRefs</name></member>
     <member refid="classvrv_1_1_beam_segment_1a29c1c949f0d813b5ffc8303515bc804f" kind="function"><name>ClearCoordRefs</name></member>
     <member refid="classvrv_1_1_beam_segment_1a3ee5447d7b833cdb668e09d9e0693988" kind="function"><name>CalcBeamInit</name></member>
@@ -811,11 +827,35 @@
     <member refid="classvrv_1_1_beat_rpt_1ae787f3bd2e6b76d2c895be9b329187ad" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_beat_rpt_1aa7fe876f846f9c5f90ae308425950360" kind="function"><name>GetClassId</name></member>
     <member refid="classvrv_1_1_beat_rpt_1aa30a960c5be7e82620ac868a20ea89d4" kind="function"><name>SetScoreTimeOnset</name></member>
-    <member refid="classvrv_1_1_beat_rpt_1a6d27ce12c99ddb7730c3d7bc0216977d" kind="function"><name>GetScoreTimeOnset</name></member>
+    <member refid="classvrv_1_1_beat_rpt_1a801afd02d7d6363c9b8f2057ab032afa" kind="function"><name>GetScoreTimeOnset</name></member>
     <member refid="classvrv_1_1_beat_rpt_1a342926628a5badf0e3c7e85d27be005a" kind="function"><name>GenerateMIDI</name></member>
     <member refid="classvrv_1_1_beat_rpt_1a3e87920d0ed1b4d17652f5a82ac44459" kind="variable"><name>m_scoreTimeOnset</name></member>
     <member refid="classvrv_1_1_beat_rpt_1a318b864622eae1817be3a5de65663e2d" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_beat_rpt_1a46d10bc1d9d4d3fae07fc25b08621b10" kind="function"><name>GetBeatRptAlignmentDuration</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_bezier_curve" kind="class"><name>vrv::BezierCurve</name>
+    <member refid="classvrv_1_1_bezier_curve_1ab8dad28fe081bf163a4c01701ed0b964" kind="function"><name>CalculateControlPointOffset</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1a9bd4a99100b28203a41a424d389193bc" kind="function"><name>SetControlPointOffset</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1acc8da461eae23bccc1147c5f3fd8477f" kind="function"><name>SetLeftControlPointOffset</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1a374e61483bbb25cde4a8254636b8ecad" kind="function"><name>SetRightControlPointOffset</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1a576061a2a9f234bb3ecf9cf7b414e51b" kind="function"><name>GetLeftControlPointOffset</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1a8da1d45d0bc5de7ee6f6981c9969fa8f" kind="function"><name>GetRightControlPointOffset</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1a816aaae549645af9284b18fe9a871c80" kind="function"><name>SetControlHeight</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1ab325025a142a2fa205944fe5ef485a36" kind="function"><name>SetLeftControlHeight</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1af2143b1e47bb6bddb3e12e46bd9be5cc" kind="function"><name>SetRightControlHeight</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1a334a8be61161d3c6ab891b0d90bc8839" kind="function"><name>GetLeftControlHeight</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1a87307271d9f2cbd4e68ea8e6b7292e6a" kind="function"><name>GetRightControlHeight</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1acd5517a36e7478dc0640b112c30523b2" kind="variable"><name>p1</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1a6670a4366facf2e5c3098fe10516835f" kind="variable"><name>c1</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1a494f05dfa2a38e46de956bdbcc6d7a64" kind="variable"><name>c2</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1a3892fd6f34ac6f9c93c371c188ee2d61" kind="variable"><name>p2</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1af09ca6d8709620a806b5316cfcd06b9d" kind="variable"><name>m_leftControlPointOffset</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1a369bb471f52c54de92c69b296cb95f37" kind="variable"><name>m_rightControlPointOffset</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1aa97f43592f3f5a2fad18e9257cd48834" kind="variable"><name>m_leftControlHeight</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1a326eefd6e16ec7711ddf7a4b942381f8" kind="variable"><name>m_rightControlHeight</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1a6abf2d475a66ffb642e13ca7cb40d15b" kind="function"><name>BezierCurve</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1a54e61a2e714720559ef32cfbe2dff428" kind="function"><name>BezierCurve</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1adf1c9ba386a625208e953269cf0e5813" kind="function"><name>Rotate</name></member>
   </compound>
   <compound refid="classvrv_1_1_boundary_end" kind="class"><name>vrv::BoundaryEnd</name>
     <member refid="classvrv_1_1_boundary_end_1a459df0dd4cd102ff8782d587e00417e5" kind="function"><name>BoundaryEnd</name></member>
@@ -911,6 +951,7 @@
     <member refid="classvrv_1_1_bounding_box_1aa2283d42759c18ce84fe53f2e1684849" kind="function"><name>Intersects</name></member>
     <member refid="classvrv_1_1_bounding_box_1a6a5b0a558c2799d3216a62a352eec938" kind="function"><name>Swap</name></member>
     <member refid="classvrv_1_1_bounding_box_1a316a3efda8b19590914f3c4e736d2323" kind="function"><name>SwapPoints</name></member>
+    <member refid="classvrv_1_1_bounding_box_1a3901a5e4a728b8f3450cce0e30f4bd29" kind="function"><name>ApproximateBezierExtrema</name></member>
     <member refid="classvrv_1_1_bounding_box_1a2658cb5ed914d5c435de4a3740bff2e7" kind="function"><name>CalcSlope</name></member>
     <member refid="classvrv_1_1_bounding_box_1a80465f84c7190f8cb0a9765693376be2" kind="function"><name>CalcPositionAfterRotation</name></member>
     <member refid="classvrv_1_1_bounding_box_1a91eb3e2ee9b00bc764283fe1710e199b" kind="function"><name>CalcBezierAtPosition</name></member>
@@ -978,6 +1019,17 @@
     <member refid="classvrv_1_1_b_trem_1a734f71d5b174eb977b17e3829406173a" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_b_trem_1a40e3dcb4eb672a7aaf44176abe76e63b" kind="function"><name>GetClassId</name></member>
     <member refid="classvrv_1_1_b_trem_1a4dc0461f664a02b7205dd777f209213b" kind="function"><name>IsSupportedChild</name></member>
+    <member refid="classvrv_1_1_b_trem_1a6e00d9fc4421a51dfb72f4aca40a6798" kind="function"><name>GenerateMIDI</name></member>
+    <member refid="classvrv_1_1_b_trem_1afb13f6bdf17e9147c5e54e8491be9e6f" kind="function"><name>CalcIndividualNoteDuration</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_caesura" kind="class"><name>vrv::Caesura</name>
+    <member refid="classvrv_1_1_caesura_1a8b10229de00b2804b0eb17d06e98a08e" kind="function"><name>Caesura</name></member>
+    <member refid="classvrv_1_1_caesura_1a241af9b9b2499962635f7f7d06a31b8f" kind="function"><name>~Caesura</name></member>
+    <member refid="classvrv_1_1_caesura_1a6153b578c3e9fb85b772b225eab2af09" kind="function"><name>Clone</name></member>
+    <member refid="classvrv_1_1_caesura_1aba782d2233f6c6f36d1812a428eda2f8" kind="function"><name>Reset</name></member>
+    <member refid="classvrv_1_1_caesura_1acec40982f8ed7d27d1340a638d46e72a" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_caesura_1ae6064907de8f367126357fcfce730299" kind="function"><name>GetClassId</name></member>
+    <member refid="classvrv_1_1_caesura_1a17467558c176effb1f3da299d8883318" kind="function"><name>GetTimePointInterface</name></member>
   </compound>
   <compound refid="classvrv_1_1_calc_artic_params" kind="class"><name>vrv::CalcArticParams</name>
     <member refid="classvrv_1_1_calc_artic_params_1adb091f19add11993458ae30b39dc1d4a" kind="variable"><name>m_parent</name></member>
@@ -1003,7 +1055,7 @@
     <member refid="classvrv_1_1_calc_max_measure_duration_params_1a6bf8c71a3f0434687a147f8ca0a7f12a" kind="variable"><name>m_currentRealTimeSeconds</name></member>
     <member refid="classvrv_1_1_calc_max_measure_duration_params_1a4f070475d2483e268cfba4a50db40415" kind="variable"><name>m_maxCurrentScoreTime</name></member>
     <member refid="classvrv_1_1_calc_max_measure_duration_params_1a86fb81674d83d026f09ac7826160219b" kind="variable"><name>m_maxCurrentRealTimeSeconds</name></member>
-    <member refid="classvrv_1_1_calc_max_measure_duration_params_1a1622fe7289d4ebdffbdd12e568834eff" kind="variable"><name>m_currentTempo</name></member>
+    <member refid="classvrv_1_1_calc_max_measure_duration_params_1a9cee13650474cfa5fff5a185c1577c5c" kind="variable"><name>m_currentTempo</name></member>
     <member refid="classvrv_1_1_calc_max_measure_duration_params_1aa0eecfb9746852390e9290d93423f234" kind="variable"><name>m_tempoAdjustment</name></member>
     <member refid="classvrv_1_1_calc_max_measure_duration_params_1af73b57ab16abd51061bfca59dafb3c57" kind="function"><name>CalcMaxMeasureDurationParams</name></member>
   </compound>
@@ -1013,7 +1065,7 @@
     <member refid="classvrv_1_1_calc_onset_offset_params_1a89325f7b28fb4d8393447c85a119ad91" kind="variable"><name>m_currentMensur</name></member>
     <member refid="classvrv_1_1_calc_onset_offset_params_1a1cd7208111bbe6a5191630e827d34580" kind="variable"><name>m_currentMeterSig</name></member>
     <member refid="classvrv_1_1_calc_onset_offset_params_1a1b590fbdbe9b0b20cbebc68c0af986ea" kind="variable"><name>m_notationType</name></member>
-    <member refid="classvrv_1_1_calc_onset_offset_params_1a8c340cef585d33e167166a5694bfea4f" kind="variable"><name>m_currentTempo</name></member>
+    <member refid="classvrv_1_1_calc_onset_offset_params_1a875858913df264cb823f6210e38b24c0" kind="variable"><name>m_currentTempo</name></member>
     <member refid="classvrv_1_1_calc_onset_offset_params_1a3074158010b93cf94a4f9b16e9675e5d" kind="function"><name>CalcOnsetOffsetParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_calc_stem_params" kind="class"><name>vrv::CalcStemParams</name>
@@ -1045,6 +1097,7 @@
     <member refid="classvrv_1_1_cast_off_pages_params_1abecdb0e307ef90c8e96d4fe55ac62562" kind="variable"><name>m_pgFootHeight</name></member>
     <member refid="classvrv_1_1_cast_off_pages_params_1ab42f2a770c1927e4181f220e076a9404" kind="variable"><name>m_pgHead2Height</name></member>
     <member refid="classvrv_1_1_cast_off_pages_params_1a265dcdd38301808402457c027d4d5ce3" kind="variable"><name>m_pgFoot2Height</name></member>
+    <member refid="classvrv_1_1_cast_off_pages_params_1a492b38f1bfe862203e368627762046e6" kind="variable"><name>m_leftoverSystem</name></member>
     <member refid="classvrv_1_1_cast_off_pages_params_1ac9424c1d8b80bde93b8c7f2ed2c0f656" kind="function"><name>CastOffPagesParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_cast_off_systems_params" kind="class"><name>vrv::CastOffSystemsParams</name>
@@ -1057,6 +1110,7 @@
     <member refid="classvrv_1_1_cast_off_systems_params_1ad6ebc3ebdf3f18bf60484de4a781eda0" kind="variable"><name>m_pendingObjects</name></member>
     <member refid="classvrv_1_1_cast_off_systems_params_1a975af3c11817a18593489ab06af4720a" kind="variable"><name>m_doc</name></member>
     <member refid="classvrv_1_1_cast_off_systems_params_1a785c805b6ebe13584e28bced7297e15b" kind="variable"><name>m_smart</name></member>
+    <member refid="classvrv_1_1_cast_off_systems_params_1af5734499213e9cf4b18961feb892f01e" kind="variable"><name>m_leftoverSystem</name></member>
     <member refid="classvrv_1_1_cast_off_systems_params_1a2778dcb6616d3aed64752865940f0290" kind="function"><name>CastOffSystemsParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_choice" kind="class"><name>vrv::Choice</name>
@@ -1103,7 +1157,7 @@
     <member refid="classvrv_1_1_chord_1a15da29444f2bc2ec20cd87f28b012fe5" kind="function"><name>ResetAccidList</name></member>
     <member refid="classvrv_1_1_chord_1a502c5d2649e8a742254db09135446eec" kind="function"><name>IsVisible</name></member>
     <member refid="classvrv_1_1_chord_1a9de31be09e892bc0f2ee30e52e44307c" kind="function"><name>HasNoteWithDots</name></member>
-    <member refid="classvrv_1_1_chord_1aa3856576ee3abbb3478800473af6621c" kind="function"><name>AdjustOverlappingLayers</name></member>
+    <member refid="classvrv_1_1_chord_1ad6602a3b8ecced4d0096d8ab217d5e1c" kind="function"><name>AdjustOverlappingLayers</name></member>
     <member refid="classvrv_1_1_chord_1a68f8accce00e216ba8cf8e74bc7b33f2" kind="function"><name>AdjustCrossStaffYPos</name></member>
     <member refid="classvrv_1_1_chord_1ab545c0a8757da7e284e1785e987be550" kind="function"><name>AdjustArtic</name></member>
     <member refid="classvrv_1_1_chord_1ae165f82cb3826294a8734a546281af38" kind="function"><name>CalcArtic</name></member>
@@ -1112,7 +1166,9 @@
     <member refid="classvrv_1_1_chord_1a18666c327afebb5d2548c01f84ee1de0" kind="function"><name>PrepareLayerElementParts</name></member>
     <member refid="classvrv_1_1_chord_1af50769e5d312c8618af00ff9ba4fdf8f" kind="function"><name>CalcOnsetOffsetEnd</name></member>
     <member refid="classvrv_1_1_chord_1a219f277237156ada2d457903076740c6" kind="function"><name>ResetDrawing</name></member>
-    <member refid="classvrv_1_1_chord_1a54b8b84056d58b264fc37ba4dfc0c9db" kind="function"><name>CaltOptimalDots</name></member>
+    <member refid="classvrv_1_1_chord_1aa98457ec1747c9d715c9053262afb740" kind="function"><name>JustifyY</name></member>
+    <member refid="classvrv_1_1_chord_1a810aa8ac9bae7e0bcbb15e4da04f1c27" kind="function"><name>CalcNoteLocations</name></member>
+    <member refid="classvrv_1_1_chord_1aaf3ecfb7d8d618367c4192277c62ef8c" kind="function"><name>CalcDotLocations</name></member>
     <member refid="classvrv_1_1_chord_1afca94680f94f3e222e231970bc60e2d7" kind="function"><name>ClearClusters</name></member>
     <member refid="classvrv_1_1_chord_1adacd4194892235e47a1c6d79259bd824" kind="function"><name>FilterList</name></member>
   </compound>
@@ -1182,10 +1238,6 @@
   <compound refid="classvrv_1_1_convert_markup_artic_params" kind="class"><name>vrv::ConvertMarkupArticParams</name>
     <member refid="classvrv_1_1_convert_markup_artic_params_1a9ec3eec3769909b0e232ac641e738754" kind="variable"><name>m_articPairsToConvert</name></member>
     <member refid="classvrv_1_1_convert_markup_artic_params_1a4ad4d10152d7273d291e02e929881ed4" kind="function"><name>ConvertMarkupArticParams</name></member>
-  </compound>
-  <compound refid="classvrv_1_1_convert_score_def_markup_params" kind="class"><name>vrv::ConvertScoreDefMarkupParams</name>
-    <member refid="classvrv_1_1_convert_score_def_markup_params_1ab967eca7a07ce484132a4e1633bd6791" kind="variable"><name>m_permanent</name></member>
-    <member refid="classvrv_1_1_convert_score_def_markup_params_1aa17c7aed1c76aadd81f4cab304c41c2b" kind="function"><name>ConvertScoreDefMarkupParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_convert_to_cast_off_mensural_params" kind="class"><name>vrv::ConvertToCastOffMensuralParams</name>
     <member refid="classvrv_1_1_convert_to_cast_off_mensural_params_1aef04e39212a974d51803c9cb52ca90f7" kind="variable"><name>m_doc</name></member>
@@ -1474,7 +1526,8 @@
     <member refid="classvrv_1_1_doc_1a4bfa514975ebc35a87014187dadca6e3" kind="function"><name>GetDrawingHairpinSize</name></member>
     <member refid="classvrv_1_1_doc_1a70b37a602f3f5473b4f0fe1b8c184b88" kind="function"><name>GetDrawingBeamWidth</name></member>
     <member refid="classvrv_1_1_doc_1accb8f60809807d85d5fe168fde8e770d" kind="function"><name>GetDrawingBeamWhiteWidth</name></member>
-    <member refid="classvrv_1_1_doc_1a90a30d539b557aa50db0d7ad35bc9deb" kind="function"><name>GetDrawingLedgerLineLength</name></member>
+    <member refid="classvrv_1_1_doc_1a0d2d01fdd2d60957707db947078aa36f" kind="function"><name>GetDrawingLedgerLineExtension</name></member>
+    <member refid="classvrv_1_1_doc_1a6ee7c5483e27519feb5cfa930650fab0" kind="function"><name>GetDrawingMinimalLedgerLineExtension</name></member>
     <member refid="classvrv_1_1_doc_1aa31b34923fb0e5b4f062f36f5793a734" kind="function"><name>GetCueSize</name></member>
     <member refid="classvrv_1_1_doc_1a396a023e43889afb8c83bc368cada12b" kind="function"><name>GetCueScaling</name></member>
     <member refid="classvrv_1_1_doc_1ae629c5b374a533aee6e98f1898b9cb67" kind="function"><name>GetDrawingSmuflFont</name></member>
@@ -1516,7 +1569,6 @@
     <member refid="classvrv_1_1_doc_1ab1f93216c0a1c9548f19f985b5834b7c" kind="variable"><name>m_drawingPage</name></member>
     <member refid="classvrv_1_1_doc_1a815ba27ca61098b053d668862df39535" kind="variable"><name>m_drawingBeamWidth</name></member>
     <member refid="classvrv_1_1_doc_1a168eaa12334c4f66e4672285af800d07" kind="variable"><name>m_drawingBeamWhiteWidth</name></member>
-    <member refid="classvrv_1_1_doc_1a1b41211cd5b948759d9113039a585e76" kind="variable"><name>m_drawingLedgerLine</name></member>
     <member refid="classvrv_1_1_doc_1ac5d42645d07612c279ed1cb930dacde2" kind="variable"><name>m_drawingBrevisWidth</name></member>
     <member refid="classvrv_1_1_doc_1a691e4b8154457497dfcadb0a799238f3" kind="variable"><name>m_drawingSmuflFontSize</name></member>
     <member refid="classvrv_1_1_doc_1a7791c004a74422bfc0c16d170584a1f3" kind="variable"><name>m_drawingLyricFontSize</name></member>
@@ -1556,7 +1608,7 @@
     <member refid="classvrv_1_1_doc_1afaf7e1be6f9e7737884383c2e20e1ee6" kind="function"><name>HasMidiTimemap</name></member>
     <member refid="classvrv_1_1_doc_1a4b8be5eebe48afb3668ec97c133148a5" kind="function"><name>ExportMIDI</name></member>
     <member refid="classvrv_1_1_doc_1a770613cbab57a30c515bbc653acf17ee" kind="function"><name>ExportTimemap</name></member>
-    <member refid="classvrv_1_1_doc_1afce10299d6b198b813252cf5b3921441" kind="function"><name>PrepareJsonTimemap</name></member>
+    <member refid="classvrv_1_1_doc_1aaa1e882b542afc47118166afc4c305e8" kind="function"><name>PrepareJsonTimemap</name></member>
     <member refid="classvrv_1_1_doc_1acdae54ac378140e0eeea99e21aabfdf4" kind="function"><name>ScoreDefSetCurrentDoc</name></member>
     <member refid="classvrv_1_1_doc_1a2eb5ac24aeae1c15d93a92adf4d5ceb9" kind="function"><name>ScoreDefNeedsOptimization</name></member>
     <member refid="classvrv_1_1_doc_1a5e9aa400ebeacad2373631dddbdf6baf" kind="function"><name>ScoreDefOptimizeDoc</name></member>
@@ -1572,7 +1624,6 @@
     <member refid="classvrv_1_1_doc_1a1f5b58cd73b6f04ce22ebf231c69db32" kind="function"><name>ConvertToPageBasedDoc</name></member>
     <member refid="classvrv_1_1_doc_1a61f5bae93a22f6240087187284dfb3c1" kind="function"><name>ConvertToCastOffMensuralDoc</name></member>
     <member refid="classvrv_1_1_doc_1a560f44ff928ec391ba5d86a1785c4590" kind="function"><name>ConvertToUnCastOffMensuralDoc</name></member>
-    <member refid="classvrv_1_1_doc_1a4057b6d83d5ee19f3e1a897a535a5081" kind="function"><name>ConvertScoreDefMarkupDoc</name></member>
     <member refid="classvrv_1_1_doc_1a2bb7a46eafe2a2b41dc4adaec8110b19" kind="function"><name>ConvertMarkupDoc</name></member>
     <member refid="classvrv_1_1_doc_1a303c7a587723539a78b83f642111f2a1" kind="function"><name>TransposeDoc</name></member>
     <member refid="classvrv_1_1_doc_1a69237ae834ae8fc6fc6b1255f0b1e2cc" kind="function"><name>ExpandExpansions</name></member>
@@ -1610,11 +1661,16 @@
     <member refid="classvrv_1_1_dots_1ace36ac946510966e683303715be70ca2" kind="function"><name>GetClassId</name></member>
     <member refid="classvrv_1_1_dots_1a4454529ca358ddefdf610c417d6d28bc" kind="function"><name>Save</name></member>
     <member refid="classvrv_1_1_dots_1a435160807c159bb5db166095ce73c3ab" kind="function"><name>SaveEnd</name></member>
+    <member refid="classvrv_1_1_dots_1a51f7cd82e9067473399b0a8e8d21ff45" kind="function"><name>GetFlagShift</name></member>
+    <member refid="classvrv_1_1_dots_1aa6a1a214228d0c53a03056d55bae50db" kind="function"><name>SetFlagShift</name></member>
     <member refid="classvrv_1_1_dots_1a19077631e1446d0a0ebe6b2726db2571" kind="variable"><name>m_dotLocsByStaff</name></member>
     <member refid="classvrv_1_1_dots_1a78da582766204292ca6f7b91082b0b11" kind="variable"><name>m_isAdjusted</name></member>
+    <member refid="classvrv_1_1_dots_1ac75fa9345fc513c6a4d2ea4e8776422e" kind="variable"><name>m_flagShift</name></member>
     <member refid="classvrv_1_1_dots_1a429f19ff1649201697ba142bc846001b" kind="function"><name>HasToBeAligned</name></member>
-    <member refid="classvrv_1_1_dots_1a5dd44a19a36163983efa03a8bf3675c3" kind="function"><name>GetDotLocsForStaff</name></member>
-    <member refid="classvrv_1_1_dots_1ad0233f8f09f31b39be270f8eab02ed85" kind="function"><name>GetMapOfDotLocs</name></member>
+    <member refid="classvrv_1_1_dots_1aa0ec6e1d886418f5d1973dbebcb87792" kind="function"><name>GetDotLocsForStaff</name></member>
+    <member refid="classvrv_1_1_dots_1a0ac238b940031ab3e2453396306b8268" kind="function"><name>ModifyDotLocsForStaff</name></member>
+    <member refid="classvrv_1_1_dots_1aa8c78fc442b46a87b1fbddedd0f18de6" kind="function"><name>GetMapOfDotLocs</name></member>
+    <member refid="classvrv_1_1_dots_1a6b805f29f35a6028b0e90414d9f49447" kind="function"><name>SetMapOfDotLocs</name></member>
     <member refid="classvrv_1_1_dots_1a33efd48a0e3749e267bda9e4d0a3c09d" kind="function"><name>IsAdjusted</name></member>
     <member refid="classvrv_1_1_dots_1a676104e1a48bdc30dd6892cac86845fc" kind="function"><name>IsAdjusted</name></member>
     <member refid="classvrv_1_1_dots_1a659d9a38c90bf0d98afbdc83c15702b5" kind="function"><name>ResetDrawing</name></member>
@@ -1641,7 +1697,7 @@
     <member refid="classvrv_1_1_duration_interface_1ac7abd60beb364ff44323e4e60e11d59f" kind="function"><name>IsFirstInBeam</name></member>
     <member refid="classvrv_1_1_duration_interface_1ae07578a3e138bddc967229f1ee93cb94" kind="function"><name>IsLastInBeam</name></member>
     <member refid="classvrv_1_1_duration_interface_1aec84ae43f7d2b25df6e3b9f05aa4bea7" kind="function"><name>GetNoteOrChordDur</name></member>
-    <member refid="classvrv_1_1_duration_interface_1a187dcf70a92472f9fb5ad3fab5eb6831" kind="function"><name>IsMensuralDur</name></member>
+    <member refid="classvrv_1_1_duration_interface_1a66a8195b6236d862a2234af1fb5256c1" kind="function"><name>IsMensuralDur</name></member>
     <member refid="classvrv_1_1_duration_interface_1a4069af8ecad13f6b29e960cec642b6f5" kind="function"><name>HasIdenticalDurationInterface</name></member>
   </compound>
   <compound refid="classvrv_1_1_dynam" kind="class"><name>vrv::Dynam</name>
@@ -1860,6 +1916,8 @@
     <member refid="classvrv_1_1_fermata_1aa494aa59a8c97fb1385bb1f7ab322948" kind="function"><name>GetTimePointInterface</name></member>
     <member refid="classvrv_1_1_fermata_1a1f9ed88d2936e6ba53bc6a1dcdf80596" kind="function"><name>ConvertFromAnalyticalMarkup</name></member>
     <member refid="classvrv_1_1_fermata_1a0e7e493a0489f36630dc9b87d4bd369e" kind="function"><name>GetFermataGlyph</name></member>
+    <member refid="classvrv_1_1_fermata_1a858d03f3da10174995424b3aecb8fcec" kind="function"><name>GetEnclosingGlyph</name></member>
+    <member refid="classvrv_1_1_fermata_1aae821e532879adca850bdd17256d65b1" kind="function"><name>GetVerticalAlignment</name></member>
   </compound>
   <compound refid="classvrv_1_1_fig" kind="class"><name>vrv::Fig</name>
     <member refid="classvrv_1_1_fig_1a51c60acc3cfc07dacddbdc17c905008e" kind="function"><name>Fig</name></member>
@@ -1919,9 +1977,7 @@
     <member refid="classvrv_1_1_find_spanned_layer_elements_params_1a8d5fb356f6392a611e2e9e7e7a7907ba" kind="variable"><name>m_maxPos</name></member>
     <member refid="classvrv_1_1_find_spanned_layer_elements_params_1a1af78e2f807d339d64136494976aad60" kind="variable"><name>m_interface</name></member>
     <member refid="classvrv_1_1_find_spanned_layer_elements_params_1ac2009d5277834fc21253c860fd5a7673" kind="variable"><name>m_classIds</name></member>
-    <member refid="classvrv_1_1_find_spanned_layer_elements_params_1abba000c205fbd3e00a3a76998715a981" kind="variable"><name>m_slur</name></member>
-    <member refid="classvrv_1_1_find_spanned_layer_elements_params_1a93483151cf77c67199846d9f70ef2f40" kind="variable"><name>m_ties</name></member>
-    <member refid="classvrv_1_1_find_spanned_layer_elements_params_1a80e0db385dc68fa4d30e803feddf1109" kind="function"><name>FindSpannedLayerElementsParams</name></member>
+    <member refid="classvrv_1_1_find_spanned_layer_elements_params_1aef6ccb591ff2f4734908ebbcb63337b9" kind="function"><name>FindSpannedLayerElementsParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_fing" kind="class"><name>vrv::Fing</name>
     <member refid="classvrv_1_1_fing_1ab668c07bbf50598da180deee2c66e660" kind="function"><name>Fing</name></member>
@@ -1944,9 +2000,9 @@
     <member refid="classvrv_1_1_flag_1a8f4b4b5fa187b3b4b9a843756fe00680" kind="function"><name>SaveEnd</name></member>
     <member refid="classvrv_1_1_flag_1a7929130917107698cecb8e3fa6f15466" kind="variable"><name>m_drawingNbFlags</name></member>
     <member refid="classvrv_1_1_flag_1aa46be86df5afe720e5e90abdbb845a16" kind="function"><name>HasToBeAligned</name></member>
-    <member refid="classvrv_1_1_flag_1a4caa8b8fda10b78e693546057ac27dce" kind="function"><name>GetFlagGlyph</name></member>
-    <member refid="classvrv_1_1_flag_1a4c9ab74646fbefe657bed21bd2eaa273" kind="function"><name>GetStemUpSE</name></member>
-    <member refid="classvrv_1_1_flag_1a97690e6e6b2d215ee26852e0365180d2" kind="function"><name>GetStemDownNW</name></member>
+    <member refid="classvrv_1_1_flag_1ab072b2687af4681a061c65447cafb9a8" kind="function"><name>GetFlagGlyph</name></member>
+    <member refid="classvrv_1_1_flag_1a2ceaafb8b8e63d82db85a50b342a6932" kind="function"><name>GetStemUpSE</name></member>
+    <member refid="classvrv_1_1_flag_1ac1ab17c222ae210f3a0caf85dcd5c31f" kind="function"><name>GetStemDownNW</name></member>
     <member refid="classvrv_1_1_flag_1aa1a671e64dccc5fba4a12bc55a88c55a" kind="function"><name>ResetDrawing</name></member>
   </compound>
   <compound refid="classvrv_1_1_floating_curve_positioner" kind="class"><name>vrv::FloatingCurvePositioner</name>
@@ -1954,10 +2010,14 @@
     <member refid="classvrv_1_1_floating_curve_positioner_1ad7b1b6fb4395c622fb37d042f3e1bc91" kind="function"><name>GetAngle</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a8db594a5e3b74fb1f5931263c1a8241d" kind="function"><name>GetThickness</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a5a08bc102f523022b0095cc89a59dcba" kind="function"><name>GetDir</name></member>
+    <member refid="classvrv_1_1_floating_curve_positioner_1a3dad2cda31b4868744e566b3f1adf7b3" kind="function"><name>SetCrossStaff</name></member>
+    <member refid="classvrv_1_1_floating_curve_positioner_1a64e936c29627c4cf8be7930e88f5b441" kind="function"><name>GetCrossStaff</name></member>
+    <member refid="classvrv_1_1_floating_curve_positioner_1a9bf76981377bc2618013786108c229fe" kind="function"><name>IsCrossStaff</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a057de4900390bad492380d8f47490e16" kind="variable"><name>m_points</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1adddc3c5c58e2f3f0c7e819509acc3a74" kind="variable"><name>m_angle</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a7fd7c4d50c20ea735da50fb8cfa2c537" kind="variable"><name>m_thickness</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1ac65fc1077a9fcadb827862045948aa2a" kind="variable"><name>m_dir</name></member>
+    <member refid="classvrv_1_1_floating_curve_positioner_1ac48e64e8464c456478585361755f2110" kind="variable"><name>m_crossStaff</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1afd6a7110c3ea0e1a48065fa80498fb7c" kind="variable"><name>m_spannedElements</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1abd661bee76cc30e190ea15238f90aa16" kind="variable"><name>m_cachedMinMaxY</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a3cbd2dd57e3eb9a687f91c9ba6185bfb" kind="function"><name>FloatingCurvePositioner</name></member>
@@ -1987,7 +2047,7 @@
     <member refid="classvrv_1_1_floating_object_1abb3c371794922b14e5a0265a0bd27bba" kind="function"><name>SetDrawingGrpObject</name></member>
     <member refid="classvrv_1_1_floating_object_1af00cc34cc7a7dc0d743f3f9f076ddb96" kind="variable"><name>m_currentPositioner</name></member>
     <member refid="classvrv_1_1_floating_object_1a61b33006f890e334e0a769f0ca630850" kind="variable"><name>m_drawingGrpId</name></member>
-    <member refid="classvrv_1_1_floating_object_1a30f7d37da0e9bd4ec87be7000fb6c497" kind="variable"><name>s_drawingObjectIds</name></member>
+    <member refid="classvrv_1_1_floating_object_1accd431410f59318000cb255af143ed49" kind="variable"><name>s_drawingObjectIds</name></member>
     <member refid="classvrv_1_1_floating_object_1abbd346830de7211ed94772948f0e9513" kind="function"><name>UpdateContentBBoxX</name></member>
     <member refid="classvrv_1_1_floating_object_1a0f19109398376ce67d8211faa133e7f5" kind="function"><name>UpdateContentBBoxY</name></member>
     <member refid="classvrv_1_1_floating_object_1a78079e4ba538d3e212ba44a79fc32f61" kind="function"><name>UpdateSelfBBoxX</name></member>
@@ -2104,7 +2164,8 @@
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1a437d6363e81b3565106f77d5db868637" kind="variable"><name>m_midiTrack</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1ab0078b3ff3c9bc63cffba4a01a8bb315" kind="variable"><name>m_totalTime</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1acb7602c62aa7f79a2b15a9104bc0f8e3" kind="variable"><name>m_transSemi</name></member>
-    <member refid="classvrv_1_1_generate_m_i_d_i_params_1af51a8e71dfbcc0b7e6998e6d3aab6da6" kind="variable"><name>m_currentTempo</name></member>
+    <member refid="classvrv_1_1_generate_m_i_d_i_params_1a7ca852b307bdfa0085e79ea9004238e0" kind="variable"><name>m_currentTempo</name></member>
+    <member refid="classvrv_1_1_generate_m_i_d_i_params_1a074178c8dc189e48de3e862346012808" kind="variable"><name>m_expandedNotes</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1a099869302dfba354a6c7dc86214977c1" kind="variable"><name>m_functor</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1aca7cbb3730c90a286c78f041dbf8094f" kind="function"><name>GenerateMIDIParams</name></member>
   </compound>
@@ -2112,10 +2173,10 @@
     <member refid="classvrv_1_1_generate_timemap_params_1a66aaac3c9fdbf958e43d95b617d794d6" kind="variable"><name>realTimeToScoreTime</name></member>
     <member refid="classvrv_1_1_generate_timemap_params_1a3abd11a43685b95e8be9b4a2616d1c2d" kind="variable"><name>realTimeToOnElements</name></member>
     <member refid="classvrv_1_1_generate_timemap_params_1af764190b23a658cddc9f5997f1159f6d" kind="variable"><name>realTimeToOffElements</name></member>
-    <member refid="classvrv_1_1_generate_timemap_params_1aac4140d50ff84784b1b6aab699637a1f" kind="variable"><name>realTimeToTempo</name></member>
+    <member refid="classvrv_1_1_generate_timemap_params_1af6741e6bb2f911e3baa4cc797562fee8" kind="variable"><name>realTimeToTempo</name></member>
     <member refid="classvrv_1_1_generate_timemap_params_1a9acab222e46e65e59b1a5de59ba527b5" kind="variable"><name>m_scoreTimeOffset</name></member>
     <member refid="classvrv_1_1_generate_timemap_params_1a02f0f4eab90900ce799ecf30657fc9cc" kind="variable"><name>m_realTimeOffsetMilliseconds</name></member>
-    <member refid="classvrv_1_1_generate_timemap_params_1a1f3017b8c1c7a72323d2b1f2787ae4c1" kind="variable"><name>m_currentTempo</name></member>
+    <member refid="classvrv_1_1_generate_timemap_params_1a22a7b5f14a3744c9a58571ebde257e9a" kind="variable"><name>m_currentTempo</name></member>
     <member refid="classvrv_1_1_generate_timemap_params_1aae012b8624c98644fa6df070f0b2f520" kind="variable"><name>m_functor</name></member>
     <member refid="classvrv_1_1_generate_timemap_params_1a9368083f29090cb143a447d50d6c861c" kind="function"><name>GenerateTimemapParams</name></member>
   </compound>
@@ -2363,7 +2424,7 @@
     <member refid="classvrv_1_1_humdrum_input_1abb813602a2862c8597a9ca3fa1cc7122" kind="function"><name>setDynamicTransposition</name></member>
     <member refid="classvrv_1_1_humdrum_input_1ad4b096b7462fd6ea8dfb79f2d4c67985" kind="function"><name>setTransposition</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a1add7b7aa7923a1162b6a875944aa6b2" kind="function"><name>setTimeSig</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1a5c094e226176e20758273ac5ebe08627" kind="function"><name>fillPartInfo</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1ac24957f737680b8fa740b76a82ac2a2b" kind="function"><name>fillStaffInfo</name></member>
     <member refid="classvrv_1_1_humdrum_input_1ab866f5aef31aa38ff1a58f9401711d9b" kind="function"><name>storeStaffLayerTokensForMeasure</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a9fcbbaa5c0f11d22db481c03854ad737" kind="function"><name>calculateReverseKernIndex</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a3510f6141b234310c267d638894a24bc" kind="function"><name>prepareTimeSigDur</name></member>
@@ -2620,6 +2681,11 @@
     <member refid="classvrv_1_1_humdrum_input_1a18996f1ca21f49169d3bf01a9973b12b" kind="function"><name>hasTempoTextAfter</name></member>
     <member refid="classvrv_1_1_humdrum_input_1afa2a37fbcbc25b87250b0d797c7fe08e" kind="function"><name>isTempoishText</name></member>
     <member refid="classvrv_1_1_humdrum_input_1accd079f6101b7df1fe5f05426f63da7a" kind="function"><name>isLastStaffTempo</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1ac41a77f02a8205786b26938724d176cc" kind="function"><name>addMensuralQuality</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1af87343e7d813f4aa449a1b2fdfb97fb5" kind="function"><name>checkForMens</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a8af863911c302961db286a67471d7829" kind="function"><name>layerOnlyContainsNullStuff</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1ad9700208ae176666539de8a4a9bc71db" kind="function"><name>getNoteStaff</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a83b8312c0e14e9525c5e98a8c0016c2d" kind="function"><name>addBarLineElement</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a966c63e8921aded6ad9d48f54e9a583d" kind="function"><name>createHeader</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a4c0eb71290772178868c723625dffb0d" kind="function"><name>insertTitle</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a5e7c38dab010fd569f7c7c0b7e778586" kind="function"><name>insertExtMeta</name></member>
@@ -2657,14 +2723,16 @@
     <member refid="classvrv_1_1_humdrum_input_1a9e98bba026711cad2c7ded378bf91fe1" kind="function"><name>appendTypeTag</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a2377fb20ca202b06f776bf7552cb3eef" kind="function"><name>setPlaceRelStaff</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a8191d8cab90dc91e98bde2c09fd2e97b" kind="function"><name>setPlaceRelEvent</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1a04c8f3900fcee3e0d2e6fc375896cbae" kind="function"><name>setMeterSymbol</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1a6ac1b6f64cbabab69a68eac8a48a606e" kind="function"><name>setMensurationSymbol</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a8b76336b2e864bc1aacd404b19f0c7b8" kind="function"><name>setMeterSymbol</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1ab55d581149964bdf4f2b6655f0860b51" kind="function"><name>setMensurationSymbol</name></member>
     <member refid="classvrv_1_1_humdrum_input_1acc051a116e1dfd5df9ced05add47c84d" kind="function"><name>setInstrumentName</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a2f80ba6d36a41c0e957fd3c1df72c90e" kind="function"><name>setInstrumentAbbreviation</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a924273ffda75bc3ea30b17e1f9cdff94" kind="function"><name>insertTwoRhythmsAndTextBetween</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a1eaea975a983abcbbdab676e618b6c1d" kind="function"><name>addDurRecip</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a6bd1948be13ee150922204427c954373" kind="function"><name>addFermata</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a4ea33f415c99334941e4266cfbc97886" kind="function"><name>storeExpansionList</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1ad043ee87f582dd0e54c87716b666889e" kind="function"><name>setWrittenAccidentalUpper</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a9595081c91cf81606c160a4b61e18387" kind="function"><name>setWrittenAccidentalLower</name></member>
     <member refid="classvrv_1_1_humdrum_input_1af21104975f26cfd02cae3b2cc6bd2a7c" kind="function"><name>cleanHarmString</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a5fd3b6a1b3f5710ed8124936031c6ecc" kind="function"><name>cleanHarmString2</name></member>
     <member refid="classvrv_1_1_humdrum_input_1ac09593969ca6336677a47f6ba599ca3c" kind="function"><name>cleanHarmString3</name></member>
@@ -2711,9 +2779,13 @@
     <member refid="classvrv_1_1_humdrum_signifiers_1a6b2e9117d9ed6cd66000296f01dcd855" kind="variable"><name>mark</name></member>
     <member refid="classvrv_1_1_humdrum_signifiers_1ab385bb2b31955835302646f2df8ea2a9" kind="variable"><name>mcolor</name></member>
     <member refid="classvrv_1_1_humdrum_signifiers_1a2449a6fbc5727cf3152ab6290a20038e" kind="variable"><name>markdir</name></member>
+    <member refid="classvrv_1_1_humdrum_signifiers_1ae29c404cca51602dbe95b93f516c72a9" kind="variable"><name>mens_mark</name></member>
+    <member refid="classvrv_1_1_humdrum_signifiers_1a9c70aadcb97c15dacb94eed0eb3a46cf" kind="variable"><name>mens_mcolor</name></member>
+    <member refid="classvrv_1_1_humdrum_signifiers_1a56add0bc0d9b7c7a36ee2eb23039abab" kind="variable"><name>mens_markdir</name></member>
     <member refid="classvrv_1_1_humdrum_signifiers_1a3564ce4ddebe648b66cd26c0b5813494" kind="variable"><name>textmark</name></member>
     <member refid="classvrv_1_1_humdrum_signifiers_1a1c4d9de3d67c8432c08a02908ac78c05" kind="variable"><name>textcolor</name></member>
     <member refid="classvrv_1_1_humdrum_signifiers_1ab66a6cbe68a034df07006ba86a8cdd54" kind="variable"><name>hairpinAccent</name></member>
+    <member refid="classvrv_1_1_humdrum_signifiers_1a18e9e7ef36872b1d9952a871e5581e97" kind="variable"><name>verticalStroke</name></member>
   </compound>
   <compound refid="classvrv_1_1_input" kind="class"><name>vrv::Input</name>
     <member refid="classvrv_1_1_input_1a19dccc7ba8689777b0f2558e8b839305" kind="variable"><name>m_doc</name></member>
@@ -2797,9 +2869,9 @@
     <member refid="classvrv_1_1_key_sig_1a51b93077c9b89cf9e09607083114ec0c" kind="variable"><name>m_mixedChildrenAccidType</name></member>
     <member refid="classvrv_1_1_key_sig_1a2c6e3e5fbf89a06398f6061cf991f8bf" kind="variable"><name>m_drawingCancelAccidType</name></member>
     <member refid="classvrv_1_1_key_sig_1a1cee69880edc205bf3e1627e99072cdd" kind="variable"><name>m_drawingCancelAccidCount</name></member>
-    <member refid="classvrv_1_1_key_sig_1a62e50098eddbf198f4d09e3642ad01d9" kind="variable"><name>s_pnameForFlats</name></member>
-    <member refid="classvrv_1_1_key_sig_1a51c77e666acf290f2f4f9c2efa4d2996" kind="variable"><name>s_pnameForSharps</name></member>
-    <member refid="classvrv_1_1_key_sig_1ac896de58cf6c41a8f2f9abc9f5639a9d" kind="variable"><name>octave_map</name></member>
+    <member refid="classvrv_1_1_key_sig_1a737a4431abc44572beee860763036171" kind="variable"><name>s_pnameForFlats</name></member>
+    <member refid="classvrv_1_1_key_sig_1a8b34a56c55096963a15a6016e172efbb" kind="variable"><name>s_pnameForSharps</name></member>
+    <member refid="classvrv_1_1_key_sig_1a7890b5f87acb46a4d376383a9506d4f9" kind="variable"><name>octave_map</name></member>
     <member refid="classvrv_1_1_key_sig_1aa40b13c4f6332ba55ac0d925f6ca0737" kind="function"><name>KeySig</name></member>
     <member refid="classvrv_1_1_key_sig_1a8d11b45861f5d76bdd90f07e38524a07" kind="function"><name>~KeySig</name></member>
     <member refid="classvrv_1_1_key_sig_1a4603d05b2d150b965de3593467370aa3" kind="function"><name>Clone</name></member>
@@ -2813,7 +2885,7 @@
     <member refid="classvrv_1_1_key_sig_1ae862f334460bcf1cbf4311a696f52921" kind="function"><name>GetAccidType</name></member>
     <member refid="classvrv_1_1_key_sig_1a28a387bd776ffa1cdb1438f1e98448f1" kind="function"><name>FillMap</name></member>
     <member refid="classvrv_1_1_key_sig_1a8c89b9d4ea03ac427c1b39aa3f35bb83" kind="function"><name>GetKeyAccidStrAt</name></member>
-    <member refid="classvrv_1_1_key_sig_1a4f5441adc770e0e9eaed39ce3cd1e172" kind="function"><name>GetFifthsInt</name></member>
+    <member refid="classvrv_1_1_key_sig_1a6cbb77f95981d6369d28f3902e452968" kind="function"><name>GetFifthsInt</name></member>
     <member refid="classvrv_1_1_key_sig_1a9f21cd54799f9ff5d2e033268bebd2f1" kind="function"><name>Transpose</name></member>
     <member refid="classvrv_1_1_key_sig_1a02cd5e22517b0651ea6dbec0e0044230" kind="function"><name>GetAccidPnameAt</name></member>
     <member refid="classvrv_1_1_key_sig_1a6593445ab7bb85e92be78339edde03d6" kind="function"><name>GetOctave</name></member>
@@ -2848,6 +2920,10 @@
     <member refid="classvrv_1_1_layer_1a5dcc8411b2ec5d975c0fc1f32ce48d72" kind="function"><name>SetDrawingStemDir</name></member>
     <member refid="classvrv_1_1_layer_1ac9cff14271883d9b18f0e14a4b56a1d8" kind="function"><name>GetDrawingStemDir</name></member>
     <member refid="classvrv_1_1_layer_1a9384a5e86b46e31c7fb07d98d6583107" kind="function"><name>GetDrawingStemDir</name></member>
+    <member refid="classvrv_1_1_layer_1a2c544567b6c64a2682d4840b02ecc739" kind="function"><name>GetLayersNForTimeSpanOf</name></member>
+    <member refid="classvrv_1_1_layer_1a63a9e22b4ed9ae96df451eadadad1b6b" kind="function"><name>GetLayerCountForTimeSpanOf</name></member>
+    <member refid="classvrv_1_1_layer_1ae9da152a30209e9266669a433262a84b" kind="function"><name>GetLayersNInTimeSpan</name></member>
+    <member refid="classvrv_1_1_layer_1a22ad6d6f1b834a6021071493b857e925" kind="function"><name>GetLayerCountInTimeSpan</name></member>
     <member refid="classvrv_1_1_layer_1af2b6c3163468f34d782e334675d82bb9" kind="function"><name>SetCrossStaffFromAbove</name></member>
     <member refid="classvrv_1_1_layer_1adbe990fc7f90739f43103ca3e2805504" kind="function"><name>HasCrossStaffFromAbove</name></member>
     <member refid="classvrv_1_1_layer_1a37ff6e247682992b7fba8137af6eca5a" kind="function"><name>SetCrossStaffFromBelow</name></member>
@@ -2860,6 +2936,7 @@
     <member refid="classvrv_1_1_layer_1a50c50f3929308138a65d418e1d3389a1" kind="variable"><name>m_staffDefKeySig</name></member>
     <member refid="classvrv_1_1_layer_1ace04734f8c408241f29ace53c9e8a46e" kind="variable"><name>m_staffDefMensur</name></member>
     <member refid="classvrv_1_1_layer_1a766b40517bcad4cee19a82e9c1e072e4" kind="variable"><name>m_staffDefMeterSig</name></member>
+    <member refid="classvrv_1_1_layer_1ae728c080d63324e0ab58227cbddccc9b" kind="variable"><name>m_staffDefMeterSigGrp</name></member>
     <member refid="classvrv_1_1_layer_1afd7eea9594a718097fb50220c61039c1" kind="variable"><name>m_drawKeySigCancellation</name></member>
     <member refid="classvrv_1_1_layer_1af6122f2a0e11c36d3307fea364dbd5e7" kind="variable"><name>m_cautionStaffDefClef</name></member>
     <member refid="classvrv_1_1_layer_1a73b5be31d5a84ed0401076d266c48880" kind="variable"><name>m_cautionStaffDefKeySig</name></member>
@@ -2874,8 +2951,6 @@
     <member refid="classvrv_1_1_layer_1a07e4a02152c687549acfd2c5ae3eef62" kind="function"><name>GetClef</name></member>
     <member refid="classvrv_1_1_layer_1a557779c4c164bf5a2a38af0dd4818db4" kind="function"><name>GetClefFacs</name></member>
     <member refid="classvrv_1_1_layer_1ad9c8c466adf27ed39d3e4c4829a96acd" kind="function"><name>GetClefLocOffset</name></member>
-    <member refid="classvrv_1_1_layer_1a63a9e22b4ed9ae96df451eadadad1b6b" kind="function"><name>GetLayerCountForTimeSpanOf</name></member>
-    <member refid="classvrv_1_1_layer_1a22ad6d6f1b834a6021071493b857e925" kind="function"><name>GetLayerCountInTimeSpan</name></member>
     <member refid="classvrv_1_1_layer_1a4846e31e65e7ef424a406563a2ce0103" kind="function"><name>GetLayerElementsForTimeSpanOf</name></member>
     <member refid="classvrv_1_1_layer_1a2351a1bd1a8dac02caf64ce4eb3a38ec" kind="function"><name>GetLayerElementsInTimeSpan</name></member>
     <member refid="classvrv_1_1_layer_1a5ce4b33fecdfeef3b2a1259e2d492300" kind="function"><name>GetCurrentClef</name></member>
@@ -2890,6 +2965,7 @@
     <member refid="classvrv_1_1_layer_1a0c8c98ba2111367eb53e5393cdeec1dd" kind="function"><name>GetStaffDefKeySig</name></member>
     <member refid="classvrv_1_1_layer_1ae5c54fb41592c4c54e60de6a43dc1224" kind="function"><name>GetStaffDefMensur</name></member>
     <member refid="classvrv_1_1_layer_1a34b551903615d5b3df57618e2e0214dd" kind="function"><name>GetStaffDefMeterSig</name></member>
+    <member refid="classvrv_1_1_layer_1a1c89735552f109a464a6b3a83323acf6" kind="function"><name>GetStaffDefMeterSigGrp</name></member>
     <member refid="classvrv_1_1_layer_1afc53eb8da93d5e0dd7762019098a5330" kind="function"><name>HasStaffDef</name></member>
     <member refid="classvrv_1_1_layer_1a5adbee5370bec875186360c8721425cd" kind="function"><name>SetDrawingCautionValues</name></member>
     <member refid="classvrv_1_1_layer_1a4b87456367ee3f8df018532939334e85" kind="function"><name>DrawCautionKeySigCancel</name></member>
@@ -2913,7 +2989,7 @@
   <compound refid="classvrv_1_1_layer_count_in_time_span_params" kind="class"><name>vrv::LayerCountInTimeSpanParams</name>
     <member refid="classvrv_1_1_layer_count_in_time_span_params_1ac45a564a94e27dceee6df7182a4a9716" kind="variable"><name>m_time</name></member>
     <member refid="classvrv_1_1_layer_count_in_time_span_params_1a66c3de4f6fc98e7df40d45f3016cdd16" kind="variable"><name>m_duration</name></member>
-    <member refid="classvrv_1_1_layer_count_in_time_span_params_1adc50d1a88d9e74ec792a787331585ca4" kind="variable"><name>m_layers</name></member>
+    <member refid="classvrv_1_1_layer_count_in_time_span_params_1a5a0d9fe53dbfcd14e7a6db1281b54b3e" kind="variable"><name>m_layers</name></member>
     <member refid="classvrv_1_1_layer_count_in_time_span_params_1ac6c10df1e35191984ef139612a54f7b3" kind="variable"><name>m_meterSig</name></member>
     <member refid="classvrv_1_1_layer_count_in_time_span_params_1adea42c350cab44917cbc143be7b7191d" kind="variable"><name>m_mensur</name></member>
     <member refid="classvrv_1_1_layer_count_in_time_span_params_1afe5af0ba71986d4de08a5999fa79c857" kind="variable"><name>m_functor</name></member>
@@ -2930,7 +3006,7 @@
     <member refid="classvrv_1_1_layer_element_1abcd8e1cf9412090b3de520f1119b7196" kind="function"><name>GetScoreDefRole</name></member>
     <member refid="classvrv_1_1_layer_element_1a4595a64d4bc651cc59928d15bc8c0ff2" kind="function"><name>SetScoreDefRole</name></member>
     <member refid="classvrv_1_1_layer_element_1ab307b4c131fd2560f831e355dc31908d" kind="function"><name>IsGraceNote</name></member>
-    <member refid="classvrv_1_1_layer_element_1a59337806c3fccb0be89e81e5c7ec5c0b" kind="function"><name>GetDrawingCueSize</name></member>
+    <member refid="classvrv_1_1_layer_element_1ae0892552c2a0397e84024139a0292f6f" kind="function"><name>GetDrawingCueSize</name></member>
     <member refid="classvrv_1_1_layer_element_1a6d695a92219be680737010275c9cd282" kind="function"><name>IsInLigature</name></member>
     <member refid="classvrv_1_1_layer_element_1a55dbe63eb131c1a1f00da98fe5f08c9b" kind="function"><name>IsInFTrem</name></member>
     <member refid="classvrv_1_1_layer_element_1a9e5c50f21c91584a2c11ad154344a1b7" kind="function"><name>IsInBeam</name></member>
@@ -2975,11 +3051,11 @@
     <member refid="classvrv_1_1_layer_element_1a92e6de075ae4c0184adea79307d8eecb" kind="function"><name>GetCrossStaffRel</name></member>
     <member refid="classvrv_1_1_layer_element_1a9fbc187f793cf5bd7c8c18661d6f2985" kind="function"><name>GetOverflowStaffAlignments</name></member>
     <member refid="classvrv_1_1_layer_element_1a21200c6f95f9bac5ef98b7cd4c5d7e26" kind="function"><name>GetAlignmentDuration</name></member>
-    <member refid="classvrv_1_1_layer_element_1afca13dd4f2cba7e1a68e335cbdfc7f16" kind="function"><name>GetSameAsContentAlignmentDuration</name></member>
-    <member refid="classvrv_1_1_layer_element_1a86604695335158bffcfb946d494a9746" kind="function"><name>GetContentAlignmentDuration</name></member>
+    <member refid="classvrv_1_1_layer_element_1ab0dc6102092c2b081e9d08a8a5353324" kind="function"><name>GetSameAsContentAlignmentDuration</name></member>
+    <member refid="classvrv_1_1_layer_element_1a1c066c80d881a800b529815ce85116c2" kind="function"><name>GetContentAlignmentDuration</name></member>
     <member refid="classvrv_1_1_layer_element_1a0dce2be85a425e83b627c8d0a9a5b0f6" kind="function"><name>GenerateZoneBounds</name></member>
-    <member refid="classvrv_1_1_layer_element_1ad62fa30c878d862cfe97b33dbaad07d2" kind="function"><name>AdjustOverlappingLayers</name></member>
-    <member refid="classvrv_1_1_layer_element_1a7b95b6e0c95bcddc0a6cae62095b2c9b" kind="function"><name>CalcElementHorizontalOverlap</name></member>
+    <member refid="classvrv_1_1_layer_element_1a827e5db3f1c5e293dba25678fa4f2f08" kind="function"><name>AdjustOverlappingLayers</name></member>
+    <member refid="classvrv_1_1_layer_element_1a80983838195a9e547294896393ba56a0" kind="function"><name>CalcElementHorizontalOverlap</name></member>
     <member refid="classvrv_1_1_layer_element_1ae490412b5c145adfba5f99fc5c914021" kind="function"><name>AdjustBeams</name></member>
     <member refid="classvrv_1_1_layer_element_1a971d0cc89a6ddfeabfa1d60362d9121c" kind="function"><name>AdjustDots</name></member>
     <member refid="classvrv_1_1_layer_element_1ad80313afbd3e9a3d22a320cfbc6b5685" kind="function"><name>ResetHorizontalAlignment</name></member>
@@ -3001,8 +3077,13 @@
     <member refid="classvrv_1_1_layer_element_1acaa8acf77da1dec85348c36879318e97" kind="function"><name>GenerateTimemap</name></member>
     <member refid="classvrv_1_1_layer_element_1a4e0934ac589bc8c0c3a246c8ec957d6d" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_layer_element_1a5772c6ac45d7902e40ebc8fae22b818c" kind="function"><name>GetRelativeLayerElement</name></member>
-    <member refid="classvrv_1_1_layer_element_1ac7ca9242b3a3c2887c551ea7908856ae" kind="function"><name>GetDrawingArticulationTopOrBottom</name></member>
     <member refid="classvrv_1_1_layer_element_1a3334d5cdd9472146f2db3fc5564b70bf" kind="function"><name>CountElementsInUnison</name></member>
+    <member refid="classvrv_1_1_layer_element_1ac880cd085f86bd38d8483f1c2172e637" kind="function"><name>CalcNoteLocations</name></member>
+    <member refid="classvrv_1_1_layer_element_1af8ea95b9b80e19c4568a2e6da17d4d62" kind="function"><name>CalcDotLocations</name></member>
+    <member refid="classvrv_1_1_layer_element_1a78700de97d76aca246ed070e737f3f20" kind="function"><name>CalcOptimalDotLocations</name></member>
+    <member refid="classvrv_1_1_layer_element_1ae0a0dd99fec2746b5759e15252ab4b4e" kind="function"><name>GetDotCount</name></member>
+    <member refid="classvrv_1_1_layer_element_1afb64a340246bd59bd429c6a2b05f5fae" kind="function"><name>GetCollisionCount</name></member>
+    <member refid="classvrv_1_1_layer_element_1ac7ca9242b3a3c2887c551ea7908856ae" kind="function"><name>GetDrawingArticulationTopOrBottom</name></member>
   </compound>
   <compound refid="classvrv_1_1_layer_elements_in_time_span_params" kind="class"><name>vrv::LayerElementsInTimeSpanParams</name>
     <member refid="classvrv_1_1_layer_elements_in_time_span_params_1a3380b0d633f9680c803cf483c80bad5e" kind="variable"><name>m_time</name></member>
@@ -3028,7 +3109,7 @@
     <member refid="classvrv_1_1_ledger_line_1a682e8e17dd97f239b3dbdd8137e37e86" kind="function"><name>~LedgerLine</name></member>
     <member refid="classvrv_1_1_ledger_line_1aa63a9643d55080397cc4d58bdab8e2bf" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_ledger_line_1a1f028b4f8242c566116eecc0313d2618" kind="variable"><name>m_dashes</name></member>
-    <member refid="classvrv_1_1_ledger_line_1a96c78ac54f8a6d82244191574b581072" kind="function"><name>AddDash</name></member>
+    <member refid="classvrv_1_1_ledger_line_1adad6d12d0ee5220059bc573ffe7ec273" kind="function"><name>AddDash</name></member>
   </compound>
   <compound refid="classvrv_1_1_lem" kind="class"><name>vrv::Lem</name>
     <member refid="classvrv_1_1_lem_1a8bdf4eac8ddf365d01276df3202331dd" kind="function"><name>Lem</name></member>
@@ -3045,6 +3126,8 @@
     <member refid="classvrv_1_1_ligature_1abbbb11eae3514269e4c6ad03b0c52416" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_ligature_1a6d55fd013e98a7f50096ab6209da6810" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_ligature_1a3ae9b7786658bd725726f7dc8aef638d" kind="function"><name>GetClassId</name></member>
+    <member refid="classvrv_1_1_ligature_1a1ac3c2386e687ceca3e8adee0e89a7e2" kind="function"><name>GetFirstNote</name></member>
+    <member refid="classvrv_1_1_ligature_1a1db3d26a346811010619d9039062aed6" kind="function"><name>GetLastNote</name></member>
     <member refid="classvrv_1_1_ligature_1a47287f0156e0abe2c660372bacd6a887" kind="function"><name>GetDrawingNoteShape</name></member>
     <member refid="classvrv_1_1_ligature_1a29270e8544f8f0f11f93dcf652eebee5" kind="function"><name>GetDrawingPreviousNoteShape</name></member>
     <member refid="classvrv_1_1_ligature_1a3a19dd9f115ed2bde44093767a27ae0f" kind="variable"><name>m_drawingShapes</name></member>
@@ -3076,6 +3159,15 @@
     <member refid="classvrv_1_1_linking_interface_1af59163d72892c1582eeb6a9df7924b83" kind="function"><name>InterfaceResetDrawing</name></member>
     <member refid="classvrv_1_1_linking_interface_1a0ba4b3ed3ba51bdff6f8ef3305aa1f9b" kind="function"><name>SetUuidStr</name></member>
   </compound>
+  <compound refid="classvrv_1_1_lv" kind="class"><name>vrv::Lv</name>
+    <member refid="classvrv_1_1_lv_1a0b1d1b640c02ebbb4037b227286aeed8" kind="function"><name>Lv</name></member>
+    <member refid="classvrv_1_1_lv_1a3942342b89a08e75e2059e550b47d02e" kind="function"><name>~Lv</name></member>
+    <member refid="classvrv_1_1_lv_1aa4a100dc9163da75915fe9f841d992a5" kind="function"><name>Clone</name></member>
+    <member refid="classvrv_1_1_lv_1a0d1caa85c135d19a1e99cbee75e8c0c0" kind="function"><name>Reset</name></member>
+    <member refid="classvrv_1_1_lv_1add8210807259683af191790db1b3ae26" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_lv_1a6f95178659dba9d452decd5875fb17e5" kind="function"><name>GetClassId</name></member>
+    <member refid="classvrv_1_1_lv_1a1dafa1818a5b90687a08fe2973dbd8d6" kind="function"><name>CalculatePosition</name></member>
+  </compound>
   <compound refid="classvrv_1_1_mdiv" kind="class"><name>vrv::Mdiv</name>
     <member refid="classvrv_1_1_mdiv_1a1ce1b225537bb48242cebe98524bb504" kind="function"><name>Mdiv</name></member>
     <member refid="classvrv_1_1_mdiv_1ae6239d9140cafe322e58fd14fbafad0c" kind="function"><name>~Mdiv</name></member>
@@ -3100,6 +3192,8 @@
     <member refid="classvrv_1_1_measure_1aef403edaac68db7c30caf13d1f411d31" kind="function"><name>SetDrawingLeftBarLine</name></member>
     <member refid="classvrv_1_1_measure_1afeaf5d0b408d6041981cbd4db110e424" kind="function"><name>GetDrawingRightBarLine</name></member>
     <member refid="classvrv_1_1_measure_1a67120179419d0c8f00c5a39ad87023d9" kind="function"><name>SetDrawingRightBarLine</name></member>
+    <member refid="classvrv_1_1_measure_1af089713031fc4c6a4d41188f68f1f29e" kind="function"><name>GetDrawingLeftBarLineByStaffN</name></member>
+    <member refid="classvrv_1_1_measure_1ab408cda9aa5050f75a36d41f99d7c9d1" kind="function"><name>GetDrawingRightBarLineByStaffN</name></member>
     <member refid="classvrv_1_1_measure_1a88634a443925198303a2ab3b490556e0" kind="function"><name>GetLeftBarLine</name></member>
     <member refid="classvrv_1_1_measure_1a2fa5c27bb65c565c92aab2be7dbe9331" kind="function"><name>GetRightBarLine</name></member>
     <member refid="classvrv_1_1_measure_1a8baffbc20023e7b2c63549ae05c83323" kind="function"><name>GetLeftBarLineXRel</name></member>
@@ -3123,6 +3217,12 @@
     <member refid="classvrv_1_1_measure_1ac8572f7f5fc2b99d09d5f4fc5e3e42e2" kind="variable"><name>m_xAbs2</name></member>
     <member refid="classvrv_1_1_measure_1a1c1d6639b95a9b6d75e5ea535c8de50e" kind="variable"><name>m_leftBarLine</name></member>
     <member refid="classvrv_1_1_measure_1a5b5f0a89b66ddb1ca95a4701b89e7cca" kind="variable"><name>m_rightBarLine</name></member>
+    <member refid="classvrv_1_1_measure_1a489541375d86be65d53f2eafb1c46ff8" kind="enum"><name>BarlineDrawingFlags</name></member>
+    <member refid="classvrv_1_1_measure_1a489541375d86be65d53f2eafb1c46ff8a19e42ad0daf197f06ff621e9856c00da" kind="enumvalue"><name>SYSTEM_BREAK</name></member>
+    <member refid="classvrv_1_1_measure_1a489541375d86be65d53f2eafb1c46ff8aeadfa97bec6fdbe79479d63b55b5331e" kind="enumvalue"><name>SCORE_DEF_INSERT</name></member>
+    <member refid="classvrv_1_1_measure_1a489541375d86be65d53f2eafb1c46ff8a8c4f55b03cedb9339d71fdc85dd5f555" kind="enumvalue"><name>INVISIBLE_MEASURE_CURRENT</name></member>
+    <member refid="classvrv_1_1_measure_1a489541375d86be65d53f2eafb1c46ff8ac4265f6e66e741ad2ddc16594bda0718" kind="enumvalue"><name>INVISIBLE_MEASURE_PREVIOUS</name></member>
+    <member refid="classvrv_1_1_measure_1abbdd1dd92624faea4d1824909504194c" kind="typedef"><name>BarlineRenditionPair</name></member>
     <member refid="classvrv_1_1_measure_1a39f4319275584a57b898dcbfcbed760e" kind="variable"><name>m_measureAligner</name></member>
     <member refid="classvrv_1_1_measure_1a680391bcbb2cbc1cc3859a22194133e5" kind="variable"><name>m_timestampAligner</name></member>
     <member refid="classvrv_1_1_measure_1a0f66f8a9a11ea45c967fbb796b21d91f" kind="variable"><name>m_drawingXRel</name></member>
@@ -3132,7 +3232,8 @@
     <member refid="classvrv_1_1_measure_1a16e45bd487f9690aee3dfc8b8e845393" kind="variable"><name>m_hasAlignmentRefWithMultipleLayers</name></member>
     <member refid="classvrv_1_1_measure_1a82dd306633529d359ccf0d0ef4513aff" kind="variable"><name>m_scoreTimeOffset</name></member>
     <member refid="classvrv_1_1_measure_1a685f145475c478901e13009451b49b6e" kind="variable"><name>m_realTimeOffsetMilliseconds</name></member>
-    <member refid="classvrv_1_1_measure_1af0241b927f85f40e87263ffb0beaf90c" kind="variable"><name>m_currentTempo</name></member>
+    <member refid="classvrv_1_1_measure_1adf0d8138e56dc9ca4901a04c4f6943ce" kind="variable"><name>m_currentTempo</name></member>
+    <member refid="classvrv_1_1_measure_1a725ed847ae2fae9757f80e704668d4df" kind="variable"><name>m_invisibleStaffBarlines</name></member>
     <member refid="classvrv_1_1_measure_1a1ba728231a9d00e4ef654fde6bdf6088" kind="function"><name>CloneReset</name></member>
     <member refid="classvrv_1_1_measure_1a53fc4fd98146722a9cc4784f1b9a7498" kind="function"><name>IsMeasuredMusic</name></member>
     <member refid="classvrv_1_1_measure_1aa00165c434ab1ab55478b8cd7c28fc90" kind="function"><name>IsSupportedChild</name></member>
@@ -3141,7 +3242,10 @@
     <member refid="classvrv_1_1_measure_1a7d781ed88cc2163372144e0b14a86158" kind="function"><name>GetDrawingX</name></member>
     <member refid="classvrv_1_1_measure_1ab9a3f0be6d3e66a6fafc27ff5a8b7372" kind="function"><name>ResetCachedDrawingX</name></member>
     <member refid="classvrv_1_1_measure_1a576172291cab812579e24126e5151526" kind="function"><name>GetMeasureIdx</name></member>
-    <member refid="classvrv_1_1_measure_1a3e6d67be8ba77e3cdb621f905d21e0bb" kind="function"><name>SetDrawingBarLines</name></member>
+    <member refid="classvrv_1_1_measure_1ad58b70aabbd1ea6dcfa17e11c3b8ae13" kind="function"><name>HasInvisibleStaffBarlines</name></member>
+    <member refid="classvrv_1_1_measure_1a472f38c2dc957417ff87e35ced2687a2" kind="function"><name>SelectDrawingBarLines</name></member>
+    <member refid="classvrv_1_1_measure_1aca48f477de36086120f4db67a428f1b2" kind="function"><name>SetDrawingBarLines</name></member>
+    <member refid="classvrv_1_1_measure_1a8bfef6d513052a832d80e15494f998f3" kind="function"><name>SetInvisibleStaffBarlines</name></member>
     <member refid="classvrv_1_1_measure_1a4f4172e322a4283c0357b60369469d2a" kind="function"><name>GetNonJustifiableLeftMargin</name></member>
     <member refid="classvrv_1_1_measure_1a1490f0e90320ad4e3d9bc0560854907e" kind="function"><name>GetRightBarLineWidth</name></member>
     <member refid="classvrv_1_1_measure_1aaea9b1238acf043b2ea503ce946080a3" kind="function"><name>GetWidth</name></member>
@@ -3263,6 +3367,8 @@
     <member refid="classvrv_1_1_m_e_i_input_1abc447e8da5e3c23732ab603887a7f2a7" kind="function"><name>ReadCourse</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a0f0edd7fc830fb232dd541098a73ebeb" kind="function"><name>ReadMeasure</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a369ad838fce5da5eb1a1604d393a9c3c" kind="function"><name>ReadMeasureChildren</name></member>
+    <member refid="classvrv_1_1_m_e_i_input_1a9f456367db3e0d1012e0053b720a2f5c" kind="function"><name>ReadMeterSigGrp</name></member>
+    <member refid="classvrv_1_1_m_e_i_input_1ae798470a04203ada0c3bdf1249896195" kind="function"><name>ReadMeterSigGrpChildren</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1af9a1e9732f58d891106e81fa4f6fb4a6" kind="function"><name>ReadFb</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a814f7d4648e774af9667125512e85cc2" kind="function"><name>ReadFbChildren</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a57fa7f8b9217b1443cb70fc2b3c2c33c" kind="function"><name>ReadNum</name></member>
@@ -3312,6 +3418,7 @@
     <member refid="classvrv_1_1_m_e_i_input_1ae0841d64bd56c118c58973ce1d9f9bd4" kind="function"><name>ReadArpeg</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1ac06f49c9d4e41b2472d3e3422d48bc49" kind="function"><name>ReadBracketSpan</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a1fa7a7d6c9c2620a7b018801fda589e7" kind="function"><name>ReadBreath</name></member>
+    <member refid="classvrv_1_1_m_e_i_input_1aa517831996c09d67f75ab96ba72902b1" kind="function"><name>ReadCaesura</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a4ae0cb8f97dfe195db003e5677fd17c6" kind="function"><name>ReadDir</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a576b40f59411b55b0ef3485ca339bdca" kind="function"><name>ReadDynam</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a851a889c164fb77535db02a41f512c93" kind="function"><name>ReadFermata</name></member>
@@ -3319,6 +3426,7 @@
     <member refid="classvrv_1_1_m_e_i_input_1a0f261036a70343e3e22c0a9e3191691b" kind="function"><name>ReadGliss</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1ab418598f19e0716f070c1fbf272ad552" kind="function"><name>ReadHairpin</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a86ac9194f5d960612ba2d33367aba01f" kind="function"><name>ReadHarm</name></member>
+    <member refid="classvrv_1_1_m_e_i_input_1aad27d888ccb2f43943312c644eb4ee25" kind="function"><name>ReadLv</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a4e424b3b56e00590e33787bc26979772" kind="function"><name>ReadMNum</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a223290205a17c40e5210423172b891ae" kind="function"><name>ReadMordent</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a9eff6b8978fd5bf3a5daba2279c38109" kind="function"><name>ReadOctave</name></member>
@@ -3408,7 +3516,7 @@
     <member refid="classvrv_1_1_m_e_i_input_1a89008105bba779e6f4688d88051aad9c" kind="variable"><name>m_selectedMdiv</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a862b440f593415341c4591ee87fc5186" kind="variable"><name>m_useScoreDefForDoc</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a8be56dad4917f370428a21fec539435c" kind="variable"><name>m_comment</name></member>
-    <member refid="classvrv_1_1_m_e_i_input_1a5ab67c22602ae23c8fdd9e73fc07ca83" kind="variable"><name>s_editorialElementNames</name></member>
+    <member refid="classvrv_1_1_m_e_i_input_1a0846ead36ceaaa1744a0c7615c534bc0" kind="variable"><name>s_editorialElementNames</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a864e82c5bf269800bfcdb99774f71db2" kind="function"><name>MEIInput</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1ac668411802426b6a920724456bf58221" kind="function"><name>~MEIInput</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1ace9888962ae12d5527084055e8647751" kind="function"><name>Import</name></member>
@@ -3446,6 +3554,7 @@
     <member refid="classvrv_1_1_m_e_i_output_1ac2d5859c404e427591f1c95482df599f" kind="function"><name>WriteTuning</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a1c8e0942fa40dbc0e90cdaf2620e6ded" kind="function"><name>WriteCourse</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1afab2e9af0aba89cab39d8f031a17d7ac" kind="function"><name>WriteMeasure</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1a02fb0667a34cdc84312e1c2d9893943f" kind="function"><name>WriteMeterSigGrp</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1af83fbf28620bf04721a413a2ae64f668" kind="function"><name>WriteFb</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a3d5458f26f28e4119644f512f2705d3c" kind="function"><name>WriteStaff</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a6f6cb152b9da1b8f539457d3bfc82d60" kind="function"><name>WriteLayer</name></member>
@@ -3488,6 +3597,7 @@
     <member refid="classvrv_1_1_m_e_i_output_1ab34630caa2ea58c25b922e94895df7ec" kind="function"><name>WriteArpeg</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a7397cd1133d6eac28df6cbeefd26bc7f" kind="function"><name>WriteBracketSpan</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1ab742f75bc5629b2bd2a1e0a0c28da826" kind="function"><name>WriteBreath</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1a853d2d3421b590721e5a0e6173b5ef0a" kind="function"><name>WriteCaesura</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a68845796e27f5a47d1b8c072f2a2897f" kind="function"><name>WriteDir</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1af3e23e6190a63065365ec2423ff64b46" kind="function"><name>WriteDynam</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1aff7a8759cb51742f86719fbbd5704b3a" kind="function"><name>WriteFermata</name></member>
@@ -3495,6 +3605,7 @@
     <member refid="classvrv_1_1_m_e_i_output_1a8784775af7819e3d9aaab73c2e577c8b" kind="function"><name>WriteGliss</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a3d452208873d90d3e340e0d6073eafd5" kind="function"><name>WriteHairpin</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a2ad979a6db03f0860afdcea8a91bb8f8" kind="function"><name>WriteHarm</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1a9c2a4eee50c9f4aa1971e2762ea47c97" kind="function"><name>WriteLv</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a8fa0a8db793f7c38d129a6f8ec314132" kind="function"><name>WriteMNum</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1ae925f6146e8719312cea90f25356e6e4" kind="function"><name>WriteMordent</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a7266369c9dbbd72ea7976627a7fb9065" kind="function"><name>WriteOctave</name></member>
@@ -3586,8 +3697,8 @@
     <member refid="classvrv_1_1_mensur_1a2a4d0f5eb80e43876dfa8ab61edc8ad3" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_mensur_1a1e84a5086829f087234f1911f9cdb9fb" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_mensur_1aa87d905b4a48a9d56e3a409113a5a2b3" kind="function"><name>GetClassId</name></member>
-    <member refid="classvrv_1_1_mensur_1a55614f0e13b3a2d805aa41cbb646830c" kind="variable"><name>s_num</name></member>
-    <member refid="classvrv_1_1_mensur_1a01c074d466cb310af3cedc0bf574cb2d" kind="variable"><name>s_numBase</name></member>
+    <member refid="classvrv_1_1_mensur_1a79cd7e935f879da7c7b5376e633cbb70" kind="variable"><name>s_num</name></member>
+    <member refid="classvrv_1_1_mensur_1a44bb3c18cc9a28a7c30e91403b98785b" kind="variable"><name>s_numBase</name></member>
     <member refid="classvrv_1_1_mensur_1a9bc5d52f936998d590fc4b5001004ffd" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_mensur_1afe74f8103ccc4554defb5840a463e69d" kind="function"><name>IsScoreDefElement</name></member>
     <member refid="classvrv_1_1_mensur_1a13788ec7feed5b0312421efbf60e5329" kind="function"><name>LayerCountInTimeSpan</name></member>
@@ -3601,7 +3712,29 @@
     <member refid="classvrv_1_1_meter_sig_1a287508ab8d80be4645d079bfc2ac958f" kind="function"><name>GetClassId</name></member>
     <member refid="classvrv_1_1_meter_sig_1a4f11053c4d675bf745d2ce0d9da6ed20" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_meter_sig_1aad14add6fb4178146d32028905bd02dc" kind="function"><name>IsScoreDefElement</name></member>
+    <member refid="classvrv_1_1_meter_sig_1a626f1377088f7297de38790d467f927e" kind="function"><name>GetTotalCount</name></member>
     <member refid="classvrv_1_1_meter_sig_1a52ae19681b0e8e94cef2481ce90312bf" kind="function"><name>LayerCountInTimeSpan</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_meter_sig_grp" kind="class"><name>vrv::MeterSigGrp</name>
+    <member refid="classvrv_1_1_meter_sig_grp_1a9c2b3dc94afad1a3c4251dd1fddd7e1d" kind="function"><name>MeterSigGrp</name></member>
+    <member refid="classvrv_1_1_meter_sig_grp_1a268cd8a944de2b1b15d3093d66826ad3" kind="function"><name>~MeterSigGrp</name></member>
+    <member refid="classvrv_1_1_meter_sig_grp_1a9cc37d091ca6fe2a27ea1eac34cb06b9" kind="function"><name>Clone</name></member>
+    <member refid="classvrv_1_1_meter_sig_grp_1ab5eeeb9706064d45e1a25d438bf7dce1" kind="function"><name>Reset</name></member>
+    <member refid="classvrv_1_1_meter_sig_grp_1a514deb6dec769caf3e5e3d305c9f2eb9" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_meter_sig_grp_1a92064fc7ddebe6f8e80f333ae7fa4a18" kind="function"><name>GetClassId</name></member>
+    <member refid="classvrv_1_1_meter_sig_grp_1aa70015242e7d24bdbe3e19c89c4dc1a5" kind="function"><name>GetLinkingInterface</name></member>
+    <member refid="classvrv_1_1_meter_sig_grp_1a76795fa19747bc920b1946156b8bc3d6" kind="function"><name>IsSupportedChild</name></member>
+    <member refid="classvrv_1_1_meter_sig_grp_1a8f8fd08e32937a3e6a3596544b137c28" kind="variable"><name>m_alternatingMeasures</name></member>
+    <member refid="classvrv_1_1_meter_sig_grp_1aeb110b64fa81e52df1e279584bbf1a51" kind="variable"><name>m_count</name></member>
+    <member refid="classvrv_1_1_meter_sig_grp_1aec49510933719df2ccfeaedc10325460" kind="function"><name>AddAlternatingMeasureToVector</name></member>
+    <member refid="classvrv_1_1_meter_sig_grp_1a359b84c494020401588605f49a76255e" kind="function"><name>GetSimplifiedMeterSig</name></member>
+    <member refid="classvrv_1_1_meter_sig_grp_1a2c9a00d013797ed6f5ae0396bab90118" kind="function"><name>SetMeasureBasedCount</name></member>
+    <member refid="classvrv_1_1_meter_sig_grp_1a1500fe7f2da3f97147c772d0fd0d24c0" kind="function"><name>AlignHorizontally</name></member>
+    <member refid="classvrv_1_1_meter_sig_grp_1ad661d98f6feabc13c83f0ebdac235a8f" kind="function"><name>FilterList</name></member>
+  </compound>
+  <compound refid="structvrv_1_1_m_i_d_i_note" kind="struct"><name>vrv::MIDINote</name>
+    <member refid="structvrv_1_1_m_i_d_i_note_1a1fc8ba2a9c50ec3db16877def29e1e10" kind="variable"><name>pitch</name></member>
+    <member refid="structvrv_1_1_m_i_d_i_note_1a32128781fed4395e451720d0567ccac1" kind="variable"><name>duration</name></member>
   </compound>
   <compound refid="classvrv_1_1_m_num" kind="class"><name>vrv::MNum</name>
     <member refid="classvrv_1_1_m_num_1a5a8b28ff432e3761ad13047b11967d12" kind="function"><name>MNum</name></member>
@@ -3701,6 +3834,10 @@
     <member refid="classvrv_1_1_music_xml_input_1a8d7e8c441790b0dc8dcca2fef43b78da" kind="function"><name>ReadMusicXmlBeamsAndTuplets</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a434f2cb69c8521e5c9fe843357ec9793" kind="function"><name>ReadMusicXmlTupletStart</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a93d4e8e72021a096f44db602516ec8c6" kind="function"><name>ReadMusicXmlBeamStart</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a8d6b6f8c4e7c1dbc9a735aa25c4857e4" kind="function"><name>ReadMusicXMLMeterSig</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a817f21d5d70c8b392f075c7ca7fbd985" kind="function"><name>ReadMusicXmlTies</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a0deacf511fab7716b8d806270b6f28e6" kind="function"><name>InsertClefIntoObject</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1aa30dd6f547d30452965cb6cc26bfe062" kind="function"><name>InsertClefIntoObject</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a05e65052fe668cdc92b1b724b7d2a31d" kind="function"><name>ConvertClef</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a33cdcfefd455718e535176d316b2a68b" kind="function"><name>ConvertKey</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a76401d3e75b506272e9c73ecf6d436fd" kind="function"><name>HasAttributeWithValue</name></member>
@@ -3713,6 +3850,7 @@
     <member refid="classvrv_1_1_music_xml_input_1a330fc2e506889d23a2b78c7b39b8145f" kind="function"><name>CloseTie</name></member>
     <member refid="classvrv_1_1_music_xml_input_1aef2d6f8c7a6bea106ff6c4d7ae2f6252" kind="function"><name>OpenSlur</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a49508234aa8dcbbbf68cf0a674621e38" kind="function"><name>CloseSlur</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a1723e513370aff33bbd5a08be7ec7e14" kind="function"><name>GetMeterSigGrpValues</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a2511c4232cfe220a0829d566b6669abe" kind="function"><name>GetMrestMeasuresCountBeforeIndex</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a20364c116323dcab9e24858665df79e2" kind="function"><name>IsMultirestMeasure</name></member>
     <member refid="classvrv_1_1_music_xml_input_1aaaa4f3a7c3de4049a3071faa5b7a8c25" kind="function"><name>SetFermataExternalSymbols</name></member>
@@ -3746,7 +3884,7 @@
     <member refid="classvrv_1_1_music_xml_input_1a4253bbebaa6faef7d0c026a11c8dd104" kind="variable"><name>m_ppq</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a8057b506a4d7ec7544906f2ac76ce963" kind="variable"><name>m_durTotal</name></member>
     <member refid="classvrv_1_1_music_xml_input_1aa0a1b37d46759ff15b47fab8c7f612d0" kind="variable"><name>m_durFb</name></member>
-    <member refid="classvrv_1_1_music_xml_input_1a63e746140b2b5aff800500de379f082e" kind="variable"><name>m_meterCount</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1ab9f8fbf7dfaa9465429b99926479b2e4" kind="variable"><name>m_meterCount</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a9f13a0f0ecd663ce3d0ec0dae234a662" kind="variable"><name>m_meterUnit</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a8bd33ebd5f7a23e2e021f923160a49be" kind="variable"><name>m_label</name></member>
     <member refid="classvrv_1_1_music_xml_input_1ab0002125d5d57d40af2cff78783345a3" kind="variable"><name>m_labelAbbr</name></member>
@@ -3754,6 +3892,7 @@
     <member refid="classvrv_1_1_music_xml_input_1a4f79faf67c9c51ca19398212d68b07e7" kind="variable"><name>m_ID</name></member>
     <member refid="classvrv_1_1_music_xml_input_1ae35ffeeeb609dd8a2d29f8ee57c17eb8" kind="variable"><name>m_elementStackMap</name></member>
     <member refid="classvrv_1_1_music_xml_input_1ad54af4a288f725239ec2947673dc66ee" kind="variable"><name>m_layerEndTimes</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a6b4ee5b24d3a32b98254e63cafc7a1b9" kind="variable"><name>m_layerTimes</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a0d752c598856b0674654529acf4bcb96" kind="variable"><name>m_prevLayer</name></member>
     <member refid="classvrv_1_1_music_xml_input_1af53f4780b7bb3864beccedc0e31265ff" kind="variable"><name>m_currentLayer</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a70ed0f8e963db0db174fea4997d16cc1" kind="variable"><name>m_isLayerInitialized</name></member>
@@ -3775,7 +3914,7 @@
     <member refid="classvrv_1_1_music_xml_input_1a6d5452669d83ac4b22ed51370a3dcb10" kind="variable"><name>m_pedalStack</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a8cd3495353f5b1b669845211d070c019" kind="variable"><name>m_tempoStack</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a4663eab885248d0cf41b975def917d3d" kind="variable"><name>m_controlElements</name></member>
-    <member refid="classvrv_1_1_music_xml_input_1acfc31c25245787f407cac955c8bc4cf7" kind="variable"><name>m_clefChangeStack</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a3df71381adfa40014c5368ecb4519ba5" kind="variable"><name>m_clefChangeQueue</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a78aca75c51a3f824db94cf05486c6837" kind="variable"><name>m_ArpeggioStack</name></member>
     <member refid="classvrv_1_1_music_xml_input_1abab1e77a05342059c7dd29dc68a1b8fb" kind="variable"><name>m_measureCounts</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a98b9a1c93635bc5d21fea4b74d7c6f86" kind="variable"><name>m_multiRests</name></member>
@@ -3785,7 +3924,9 @@
     <member refid="classvrv_1_1_music_xml_input_1a874adcde63341fe513be1700cf7c63b9" kind="function"><name>ReadMusicXml</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a50ee5f2b7099feec8e3ebcbfa4af2bca" kind="function"><name>ReadMusicXmlTitle</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a90f51883d9acbea30e439d664e597dba" kind="function"><name>ReadMusicXmlPartAttributesAsStaffDef</name></member>
-    <member refid="classvrv_1_1_music_xml_input_1a83ce44f9b1405e907c966faa8ddf9b42" kind="function"><name>AddClef</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a9271ae23823792da12f8a4d051db7159" kind="function"><name>ProcessClefChangeQueue</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a3831ba95070ce1c18cfc61d7bc588518" kind="function"><name>AddClefs</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a808e161183af06d739a53899af1d30b9" kind="function"><name>InsertClefToLayer</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a20dea6b4f3e55fe60f26728d00731bb3" kind="function"><name>AddMeasure</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a6a6477943252070a302ea05b36868242" kind="function"><name>AddLayerElement</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a9550ddfee9414cfe8861da273562f380" kind="function"><name>SelectLayer</name></member>
@@ -3816,7 +3957,7 @@
     <member refid="classvrv_1_1_neume_1a89401dde8ddf84d0931a4eeddcc96428" kind="function"><name>Clone</name></member>
     <member refid="classvrv_1_1_neume_1acb59b225603532388b96aa777165dda4" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_neume_1a228b98c2affe8cb7679f3e9f52958bbb" kind="function"><name>GetClassId</name></member>
-    <member refid="classvrv_1_1_neume_1a1e0d3a1fe1294218a6286f0c42e32802" kind="variable"><name>s_neumes</name></member>
+    <member refid="classvrv_1_1_neume_1a279eba0f83d8dcc4cde34008835c66fd" kind="variable"><name>s_neumes</name></member>
     <member refid="classvrv_1_1_neume_1a54078846b5d8bf453cdfc9aa0c022ebf" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_neume_1a6e1782681d06194a5f2c5e91ad276b52" kind="function"><name>GetPosition</name></member>
     <member refid="classvrv_1_1_neume_1a3a1aefe2dee1a5f47191f9cb166264d2" kind="function"><name>IsLastInNeume</name></member>
@@ -3843,7 +3984,7 @@
     <member refid="classvrv_1_1_note_1abfcac1365637007ca58537cbae8fa306" kind="function"><name>IsChordTone</name></member>
     <member refid="classvrv_1_1_note_1a67f018e7856c06c8949fcaf8a0ce48cf" kind="function"><name>GetDrawingDur</name></member>
     <member refid="classvrv_1_1_note_1a1a7d0a9ea9cb70585ce2b438e41dd4a5" kind="function"><name>IsClusterExtreme</name></member>
-    <member refid="classvrv_1_1_note_1af43e40a5b25d7a0b5fd406e0dfeb300e" kind="function"><name>GetTabFretString</name></member>
+    <member refid="classvrv_1_1_note_1a365b8e4a7d149acd14975216b2d89341" kind="function"><name>GetTabFretString</name></member>
     <member refid="classvrv_1_1_note_1a5dbdadeb93f4e6cf0f15dabc238b8349" kind="function"><name>SetCluster</name></member>
     <member refid="classvrv_1_1_note_1aecc23a1f92c40bb4e4f1dc1da58ab8aa" kind="function"><name>GetCluster</name></member>
     <member refid="classvrv_1_1_note_1a9bd4ecffc2b79ff14134ca3c4da8ebbe" kind="function"><name>SetFlippedNotehead</name></member>
@@ -3856,14 +3997,14 @@
     <member refid="classvrv_1_1_note_1a2a7d88dd8c4f5ff265753e00fa94c574" kind="function"><name>SetScoreTimeOffset</name></member>
     <member refid="classvrv_1_1_note_1af2a5f4d49457dd5ce4e6fed0a4813aec" kind="function"><name>SetRealTimeOffsetSeconds</name></member>
     <member refid="classvrv_1_1_note_1aa2980719a6e9b09b72fc4fc8756d1265" kind="function"><name>SetScoreTimeTiedDuration</name></member>
-    <member refid="classvrv_1_1_note_1a639cff79b58f8bf025c3e6c0d216087b" kind="function"><name>SetMIDIPitch</name></member>
-    <member refid="classvrv_1_1_note_1a22252d0dd455d2500ab57b2798d158f2" kind="function"><name>GetScoreTimeOnset</name></member>
-    <member refid="classvrv_1_1_note_1afa15c4328a96d0b5cc52556adf3c9383" kind="function"><name>GetRealTimeOnsetMilliseconds</name></member>
-    <member refid="classvrv_1_1_note_1a0a0b1fca33ffb9eee4f4073e2d4db1da" kind="function"><name>GetScoreTimeOffset</name></member>
-    <member refid="classvrv_1_1_note_1ae2f012d55d2e3c53bac97b46b46ed526" kind="function"><name>GetScoreTimeTiedDuration</name></member>
-    <member refid="classvrv_1_1_note_1a4b5121564ec2b6ce0c79f83456595407" kind="function"><name>GetRealTimeOffsetMilliseconds</name></member>
-    <member refid="classvrv_1_1_note_1a04e712065f097601be40f1bd6d86ce06" kind="function"><name>GetScoreTimeDuration</name></member>
-    <member refid="classvrv_1_1_note_1ab3c689500734a8835591d172b6a9d44d" kind="function"><name>GetMIDIPitch</name></member>
+    <member refid="classvrv_1_1_note_1ae08d685d01125eb507e7bcecbae9e886" kind="function"><name>CalcMIDIPitch</name></member>
+    <member refid="classvrv_1_1_note_1ab7cc30aab401ba0be2d2705720eeedc5" kind="function"><name>GetScoreTimeOnset</name></member>
+    <member refid="classvrv_1_1_note_1a103dedd5338c3303df8f4680ebb1b63b" kind="function"><name>GetRealTimeOnsetMilliseconds</name></member>
+    <member refid="classvrv_1_1_note_1a0b40ed36a764703c5b390b911dd7a592" kind="function"><name>GetScoreTimeOffset</name></member>
+    <member refid="classvrv_1_1_note_1a811919524cab46d6ac823109c861f933" kind="function"><name>GetScoreTimeTiedDuration</name></member>
+    <member refid="classvrv_1_1_note_1a89f58f5716c3172278504a5449f1df18" kind="function"><name>GetRealTimeOffsetMilliseconds</name></member>
+    <member refid="classvrv_1_1_note_1a5398bb3a2efd98452dc372210d24b5a2" kind="function"><name>GetScoreTimeDuration</name></member>
+    <member refid="classvrv_1_1_note_1aa0ff835f56ad4a1c07ff99fd0b1ee345" kind="function"><name>GetMIDIPitch</name></member>
     <member refid="classvrv_1_1_note_1abce26caa4bbaf565dac44824d9607fcc" kind="variable"><name>m_drawingLoc</name></member>
     <member refid="classvrv_1_1_note_1ac2be2a06ed546eabd7d5f88a7bd9e9ef" kind="variable"><name>m_flippedNotehead</name></member>
     <member refid="classvrv_1_1_note_1af2c2dbc2bd4daaadd559e1e3e9639449" kind="variable"><name>m_cluster</name></member>
@@ -3877,14 +4018,14 @@
     <member refid="classvrv_1_1_note_1a58b9d65399c6c4483ea27d7fbe1ed692" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_note_1af8978d10060897439846033392758ef6" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_note_1a777cd96f58898204059f5f08dbf2a736" kind="function"><name>AddChild</name></member>
+    <member refid="classvrv_1_1_note_1a691a0590efb36f06e5b8c7df54ed64d9" kind="function"><name>AlignDotsShift</name></member>
     <member refid="classvrv_1_1_note_1a7bcfe9b0dfad97964d0db5c76ebd6169" kind="function"><name>HasLedgerLines</name></member>
     <member refid="classvrv_1_1_note_1afbc5f0ee766bcd84535a60b4cb17144b" kind="function"><name>IsTabGrpNote</name></member>
-    <member refid="classvrv_1_1_note_1a3f569dd14639313902bcdcf1fe6d9f22" kind="function"><name>IsUnissonWith</name></member>
+    <member refid="classvrv_1_1_note_1a476460180d727c745ab0b74608c44162" kind="function"><name>IsUnisonWith</name></member>
     <member refid="classvrv_1_1_note_1a40bd7cfa491712c99ed6d1bb22fe880f" kind="function"><name>GetDiatonicPitch</name></member>
-    <member refid="classvrv_1_1_note_1abc7cd90f6528b7ccb1217e9b6a4f7ab1" kind="function"><name>GetMensuralNoteheadGlyph</name></member>
+    <member refid="classvrv_1_1_note_1a91cd1b216fa7a33db3e79699c329a563" kind="function"><name>GetMensuralNoteheadGlyph</name></member>
     <member refid="classvrv_1_1_note_1a3f66a8f4adf8eb4174b3c1ec388ad05d" kind="function"><name>GetNoteheadGlyph</name></member>
-    <member refid="classvrv_1_1_note_1a598f4774d77583117482ada9ef5681e4" kind="function"><name>IsVisible</name></member>
-    <member refid="classvrv_1_1_note_1afe69c2b593977c61102e764d8330a876" kind="function"><name>CorrectDotsPlacement</name></member>
+    <member refid="classvrv_1_1_note_1a4bbaa20a8cbdc5405f513135cc6117f6" kind="function"><name>IsVisible</name></member>
     <member refid="classvrv_1_1_note_1a22bad1957f235e5db6a7baad7650a335" kind="function"><name>AdjustArtic</name></member>
     <member refid="classvrv_1_1_note_1aba95f5cbd284314def2cb1601f5b8887" kind="function"><name>ConvertMarkupAnalytical</name></member>
     <member refid="classvrv_1_1_note_1ab21851eeb8b179874169119643b76b3c" kind="function"><name>CalcArtic</name></member>
@@ -3899,6 +4040,8 @@
     <member refid="classvrv_1_1_note_1a2bc1140c2a72c564fe0806238d7b8684" kind="function"><name>GenerateMIDI</name></member>
     <member refid="classvrv_1_1_note_1a8f88949434306c66a20ed4d28d6bea85" kind="function"><name>GenerateTimemap</name></member>
     <member refid="classvrv_1_1_note_1a2725dc432a246462217624b556ae36a7" kind="function"><name>Transpose</name></member>
+    <member refid="classvrv_1_1_note_1a0102b070d468daeb1c17d5bfa38b3e64" kind="function"><name>CalcNoteLocations</name></member>
+    <member refid="classvrv_1_1_note_1ad7907ba8df02be1140f2e16672e9e499" kind="function"><name>CalcDotLocations</name></member>
     <member refid="classvrv_1_1_note_1a6dbc938a4cf7f4169436274ad6ea60ac" kind="function"><name>GetChromaticAlteration</name></member>
     <member refid="classvrv_1_1_note_1a2e7ebf8db5d53d987e63cdb2f8407381" kind="function"><name>GetTransPitch</name></member>
     <member refid="classvrv_1_1_note_1a7ca01383e84db4f00a71c734b143b561" kind="function"><name>UpdateFromTransPitch</name></member>
@@ -3975,7 +4118,6 @@
     <member refid="classvrv_1_1_object_1a677194130b19ebd382b4868f9284985b" kind="function"><name>ConvertMarkupAnalyticalEnd</name></member>
     <member refid="classvrv_1_1_object_1a7262b554ba150b54b434fc7c0c93001d" kind="function"><name>ConvertMarkupArtic</name></member>
     <member refid="classvrv_1_1_object_1adeeaf95b17b15194260884d306a72214" kind="function"><name>ConvertMarkupArticEnd</name></member>
-    <member refid="classvrv_1_1_object_1a57a8be89100ae588df8152c7db922845" kind="function"><name>ConvertScoreDefMarkup</name></member>
     <member refid="classvrv_1_1_object_1a8ec6663670b4b6522cb4892babf36742" kind="function"><name>Save</name></member>
     <member refid="classvrv_1_1_object_1ad628dce30da1167aa84313ea7a4f5612" kind="function"><name>SaveEnd</name></member>
     <member refid="classvrv_1_1_object_1acea387d6c12925339a10f94312d9a82f" kind="function"><name>ResetHorizontalAlignment</name></member>
@@ -4002,6 +4144,8 @@
     <member refid="classvrv_1_1_object_1a7456561dbdda3f5d7f47e520c3819cd3" kind="function"><name>AlignVerticallyEnd</name></member>
     <member refid="classvrv_1_1_object_1a1579484058fb14c4c8cdf4ad58249db6" kind="function"><name>ApplyPPUFactor</name></member>
     <member refid="classvrv_1_1_object_1a6bdcb61d424d48a52281eec119128ceb" kind="function"><name>AdjustXRelForTranscription</name></member>
+    <member refid="classvrv_1_1_object_1aa102c1e31b16c63319763a5fc1c8351c" kind="function"><name>CalcLedgerLines</name></member>
+    <member refid="classvrv_1_1_object_1a56b580832eec7871b18371835a61e136" kind="function"><name>CalcLedgerLinesEnd</name></member>
     <member refid="classvrv_1_1_object_1abeee6db6564ff37f1fd686033751d51f" kind="function"><name>AdjustCrossStaffYPos</name></member>
     <member refid="classvrv_1_1_object_1a91e929fac940d876aa172b0b6c160c26" kind="function"><name>AdjustCrossStaffYPosEnd</name></member>
     <member refid="classvrv_1_1_object_1ab07299113bca877d821a79246e887bd2" kind="function"><name>AlignSystems</name></member>
@@ -4053,7 +4197,7 @@
     <member refid="classvrv_1_1_object_1a9a1effd7a4cf9a0017d665726d2a1fed" kind="variable"><name>m_closingComment</name></member>
     <member refid="classvrv_1_1_object_1af06d35e8d5895822a03500585aa7f31a" kind="variable"><name>m_isAttribute</name></member>
     <member refid="classvrv_1_1_object_1a1514c6c11754e70d2f1718049ed319e5" kind="variable"><name>m_isExpansion</name></member>
-    <member refid="classvrv_1_1_object_1a7a41e03357807ba0569f5d50b5cc4fd3" kind="variable"><name>s_objectCounter</name></member>
+    <member refid="classvrv_1_1_object_1a0858d6ed6414c5c4740ca65b773ca7bb" kind="variable"><name>s_objectCounter</name></member>
     <member refid="classvrv_1_1_object_1a3b131f39c868a8a1e9b768bdc0eae811" kind="function"><name>IsFloatingObject</name></member>
     <member refid="classvrv_1_1_object_1a5b1d528341ef806d382cdd1c27911021" kind="function"><name>IsBoundaryElement</name></member>
     <member refid="classvrv_1_1_object_1a60120fd33bf1f7227c4dc2f6a9b265c7" kind="function"><name>GetDurationInterface</name></member>
@@ -4142,7 +4286,6 @@
     <member refid="classvrv_1_1_object_1ae04a8386531bae9a2facddc7d293a0ed" kind="function"><name>AdjustTempo</name></member>
     <member refid="classvrv_1_1_object_1a59773566ac731e75fa34166fa1d78aa3" kind="function"><name>AdjustTupletsX</name></member>
     <member refid="classvrv_1_1_object_1a5bd96aae8a25cedd2c63ce09b92388a3" kind="function"><name>CalcLigatureNotePos</name></member>
-    <member refid="classvrv_1_1_object_1aa102c1e31b16c63319763a5fc1c8351c" kind="function"><name>CalcLedgerLines</name></member>
     <member refid="classvrv_1_1_object_1aeafa32ecabeffb9ce6d3e8372ab7160b" kind="function"><name>CalcArtic</name></member>
     <member refid="classvrv_1_1_object_1a0d2579fea0aea8b317a490c1654be52b" kind="function"><name>AdjustBeams</name></member>
     <member refid="classvrv_1_1_object_1a1373589b997e00e6dc811eb3139194e8" kind="function"><name>AdjustBeamsEnd</name></member>
@@ -4224,12 +4367,12 @@
     <member refid="classvrv_1_1_octave_1a2309ae8ac80729cb41c3384aec9ed015" kind="function"><name>GetTimeSpanningInterface</name></member>
   </compound>
   <compound refid="classvrv_1_1_option" kind="class"><name>vrv::Option</name>
-    <member refid="classvrv_1_1_option_1a75eb0cf7a34a8bcc36fc56d94623de39" kind="variable"><name>s_breaks</name></member>
-    <member refid="classvrv_1_1_option_1a4d407291828d11de042b9b70766f8631" kind="variable"><name>s_condense</name></member>
-    <member refid="classvrv_1_1_option_1a1a5698634db18b1326a305bb1c537663" kind="variable"><name>s_footer</name></member>
-    <member refid="classvrv_1_1_option_1a84e1f4926014a0a19cef485e84de8794" kind="variable"><name>s_header</name></member>
-    <member refid="classvrv_1_1_option_1a0980dcf6e3f742a99522281e6da46e2a" kind="variable"><name>s_multiRestStyle</name></member>
-    <member refid="classvrv_1_1_option_1a695b5b728e773c55486b2cf01fe7723e" kind="variable"><name>s_systemDivider</name></member>
+    <member refid="classvrv_1_1_option_1a4f1d640dd2b72a23a4987c31e262715f" kind="variable"><name>s_breaks</name></member>
+    <member refid="classvrv_1_1_option_1a582a7279f3217fead90a86c0435e05b2" kind="variable"><name>s_condense</name></member>
+    <member refid="classvrv_1_1_option_1a14d07a13838db691bd2884fd910e45b4" kind="variable"><name>s_footer</name></member>
+    <member refid="classvrv_1_1_option_1afa171129fde7a637aabbb619cba40ce6" kind="variable"><name>s_header</name></member>
+    <member refid="classvrv_1_1_option_1ae17478357554bfd6e80851baf602c7f5" kind="variable"><name>s_multiRestStyle</name></member>
+    <member refid="classvrv_1_1_option_1af416be01a9f98071d9721db71745112c" kind="variable"><name>s_systemDivider</name></member>
     <member refid="classvrv_1_1_option_1a743c22feedd51435c853bc5236bae4d8" kind="variable"><name>m_title</name></member>
     <member refid="classvrv_1_1_option_1a605929a76631b73d73b83d8ecf6ed101" kind="variable"><name>m_description</name></member>
     <member refid="classvrv_1_1_option_1a02579df539cbcb709723e84bf47a2fa0" kind="variable"><name>m_isSet</name></member>
@@ -4238,15 +4381,16 @@
     <member refid="classvrv_1_1_option_1a1276e77799ba0d4ba40fe57bf638a6b1" kind="variable"><name>m_isCmdOnly</name></member>
     <member refid="classvrv_1_1_option_1a1dae6d620174225baaf6e7cfeafdcb54" kind="function"><name>Option</name></member>
     <member refid="classvrv_1_1_option_1a95a1b144e58be8c1174c7a03a8198402" kind="function"><name>~Option</name></member>
-    <member refid="classvrv_1_1_option_1aa155480132189834872910b2d4df408f" kind="function"><name>CopyTo</name></member>
+    <member refid="classvrv_1_1_option_1a18a19f230831ad472ccec78cf1090bb4" kind="function"><name>CopyTo</name></member>
     <member refid="classvrv_1_1_option_1a5aa21034e52a16467c9f2a2cba1404fb" kind="function"><name>SetKey</name></member>
     <member refid="classvrv_1_1_option_1a82df76a199d364087a67d8c69402b4d3" kind="function"><name>GetKey</name></member>
     <member refid="classvrv_1_1_option_1a00ab08b7dc9b8d0c03485f9ae93efd55" kind="function"><name>SetValueBool</name></member>
     <member refid="classvrv_1_1_option_1a9561b1a933969e5b274785d977b75539" kind="function"><name>SetValueDbl</name></member>
     <member refid="classvrv_1_1_option_1ad85df9b36f8ea145c77d67c53be1ac06" kind="function"><name>SetValueArray</name></member>
     <member refid="classvrv_1_1_option_1a5511c04b24ab1f69c2461db926467904" kind="function"><name>SetValue</name></member>
-    <member refid="classvrv_1_1_option_1ae426eb0b0ef7021511e88324dc81dd33" kind="function"><name>GetStrValue</name></member>
-    <member refid="classvrv_1_1_option_1afe87fc615d1acb253514886dacc5ebee" kind="function"><name>GetDefaultStrValue</name></member>
+    <member refid="classvrv_1_1_option_1a93f27878278319c656b7351aadcfd789" kind="function"><name>GetStrValue</name></member>
+    <member refid="classvrv_1_1_option_1a730950b3475451da05dbfb9759bfbc59" kind="function"><name>GetDefaultStrValue</name></member>
+    <member refid="classvrv_1_1_option_1a1de81987099330fafa275efd29d68450" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_option_1a3ed6996376e9a2710153cb952fbf11dc" kind="function"><name>SetInfo</name></member>
     <member refid="classvrv_1_1_option_1a00ea4b5fa5b1167de94e5ea3e2b3c755" kind="function"><name>GetTitle</name></member>
     <member refid="classvrv_1_1_option_1a1153f69ba589862993101d8dfd2f7088" kind="function"><name>GetDescription</name></member>
@@ -4270,6 +4414,7 @@
     <member refid="classvrv_1_1_option_array_1ae7c378a750112bbfa4cfa2104a9ee3ec" kind="function"><name>GetValue</name></member>
     <member refid="classvrv_1_1_option_array_1a5e5c0ea8e77e5358b193a664234d7908" kind="function"><name>GetDefault</name></member>
     <member refid="classvrv_1_1_option_array_1a031f74bd77e98d6a63eae88c00dfb7cf" kind="function"><name>SetValue</name></member>
+    <member refid="classvrv_1_1_option_array_1af52c6cfb57d8428f8757c8d73a85896a" kind="function"><name>Reset</name></member>
   </compound>
   <compound refid="classvrv_1_1_option_bool" kind="class"><name>vrv::OptionBool</name>
     <member refid="classvrv_1_1_option_bool_1a613c9ad5cd4fe40ceca9d478d59ed376" kind="variable"><name>m_value</name></member>
@@ -4283,6 +4428,7 @@
     <member refid="classvrv_1_1_option_bool_1a96d6035e34432fe323281420af360e5d" kind="function"><name>SetValue</name></member>
     <member refid="classvrv_1_1_option_bool_1a3dd390c9cb3aa0d36d959ee70e9b0e37" kind="function"><name>GetStrValue</name></member>
     <member refid="classvrv_1_1_option_bool_1afe3ab3a5c703a9d06d2d882cd0d191dc" kind="function"><name>GetDefaultStrValue</name></member>
+    <member refid="classvrv_1_1_option_bool_1ae28098deb696e63779f5245472f1746d" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_option_bool_1a4b3a9c85c5b5c3c640a87f53830d25b7" kind="function"><name>GetValue</name></member>
     <member refid="classvrv_1_1_option_bool_1a2789426f4ab44e973146a2b8c3869873" kind="function"><name>GetDefault</name></member>
     <member refid="classvrv_1_1_option_bool_1a919a3e78c2d54ab324f218e2dcb37665" kind="function"><name>SetValue</name></member>
@@ -4300,6 +4446,7 @@
     <member refid="classvrv_1_1_option_dbl_1a7ed4524cd3242d8abc3e1e2f31a94a00" kind="function"><name>SetValue</name></member>
     <member refid="classvrv_1_1_option_dbl_1a32b51075f821982fac2cbd2a322980ff" kind="function"><name>GetStrValue</name></member>
     <member refid="classvrv_1_1_option_dbl_1a43392ce7f9e77aaf55e7337b8e0caaa3" kind="function"><name>GetDefaultStrValue</name></member>
+    <member refid="classvrv_1_1_option_dbl_1ad9a87dcf756dcac0c9eb3f323f71a3b2" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_option_dbl_1a28f4e3e3168b59bd8b8e970c3e9c321f" kind="function"><name>GetValue</name></member>
     <member refid="classvrv_1_1_option_dbl_1a6eda9cae84e15d1d2786f87588fefb05" kind="function"><name>GetDefault</name></member>
     <member refid="classvrv_1_1_option_dbl_1aa99afec9d3d20fe4980bed4ae3163652" kind="function"><name>GetMin</name></member>
@@ -4332,6 +4479,7 @@
     <member refid="classvrv_1_1_option_int_1a4b1183d9572c231bd8702bb081ce1fc4" kind="function"><name>SetValue</name></member>
     <member refid="classvrv_1_1_option_int_1adc1400b8558bb87aa3974c483b925db8" kind="function"><name>GetStrValue</name></member>
     <member refid="classvrv_1_1_option_int_1ab29176644c36a40efdf0aa09dd88b995" kind="function"><name>GetDefaultStrValue</name></member>
+    <member refid="classvrv_1_1_option_int_1abeee08f77dc217e10974a3a60084c8b3" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_option_int_1a472ea1717d7e595c19f8a44f6fb573a0" kind="function"><name>GetValue</name></member>
     <member refid="classvrv_1_1_option_int_1a047634984c7b467268002f7179ff927c" kind="function"><name>GetUnfactoredValue</name></member>
     <member refid="classvrv_1_1_option_int_1a0ea90706dae504b7e428dbc8d7359cca" kind="function"><name>GetDefault</name></member>
@@ -4340,13 +4488,13 @@
     <member refid="classvrv_1_1_option_int_1a841d690baff7da73be9209fd19d28f61" kind="function"><name>SetValue</name></member>
   </compound>
   <compound refid="classvrv_1_1_option_int_map" kind="class"><name>vrv::OptionIntMap</name>
-    <member refid="classvrv_1_1_option_int_map_1ae24cc584d7dcbbca1d37d74b9a70d838" kind="variable"><name>m_values</name></member>
+    <member refid="classvrv_1_1_option_int_map_1a8993611e1ceffcc767183e194866502f" kind="variable"><name>m_values</name></member>
     <member refid="classvrv_1_1_option_int_map_1a40d3d826e4a255052b5261efe533825a" kind="variable"><name>m_value</name></member>
     <member refid="classvrv_1_1_option_int_map_1adae1f0eef3b9625b6adb52654381d788" kind="variable"><name>m_defaultValue</name></member>
     <member refid="classvrv_1_1_option_int_map_1a0dab8b8b4b119abf36584e28b624c1e7" kind="function"><name>OptionIntMap</name></member>
     <member refid="classvrv_1_1_option_int_map_1acd331bac89070fec50065356b15f4609" kind="function"><name>~OptionIntMap</name></member>
     <member refid="classvrv_1_1_option_int_map_1ae0ade1a0dcbe2a8ef9139f9fbde23865" kind="function"><name>CopyTo</name></member>
-    <member refid="classvrv_1_1_option_int_map_1a2391a2dbcd37fa7cf5e5b06849955417" kind="function"><name>Init</name></member>
+    <member refid="classvrv_1_1_option_int_map_1a7e30fa4745349c664e3a9febcf1353cb" kind="function"><name>Init</name></member>
     <member refid="classvrv_1_1_option_int_map_1afac7b8db9e3278a4b11f875a7d153a11" kind="function"><name>SetValue</name></member>
     <member refid="classvrv_1_1_option_int_map_1a5621bca61fb9b173511aa464efb436d7" kind="function"><name>GetStrValue</name></member>
     <member refid="classvrv_1_1_option_int_map_1a3fa05bd37ccac3b7c48baeb941af7387" kind="function"><name>GetDefaultStrValue</name></member>
@@ -4355,25 +4503,36 @@
     <member refid="classvrv_1_1_option_int_map_1ae9e57ff77d34a0abb1acd7ab2d4b6b50" kind="function"><name>SetValue</name></member>
     <member refid="classvrv_1_1_option_int_map_1a695b97aabaa96d9d860b364b9642737f" kind="function"><name>GetStrValues</name></member>
     <member refid="classvrv_1_1_option_int_map_1a5b5a1d8bec7d96ba94bdcb90acd74de2" kind="function"><name>GetStrValuesAsStr</name></member>
+    <member refid="classvrv_1_1_option_int_map_1ac8f03f1f2468583f26a4ffbcbaccd48b" kind="function"><name>Reset</name></member>
   </compound>
   <compound refid="classvrv_1_1_option_json" kind="class"><name>vrv::OptionJson</name>
-    <member refid="classvrv_1_1_option_json_1a1f2388458473973b71734faec8f21e81" kind="typedef"><name>JsonPath</name></member>
-    <member refid="classvrv_1_1_option_json_1acc6d4ec3d80fe3d3cf71e2c250865a7f" kind="variable"><name>m_values</name></member>
-    <member refid="classvrv_1_1_option_json_1a3b7e45f3900aacd0547aa37e4171e9f8" kind="variable"><name>m_defaultValues</name></member>
     <member refid="classvrv_1_1_option_json_1aa24d69161382f7a352d6f5f12c7aa8a0" kind="function"><name>OptionJson</name></member>
     <member refid="classvrv_1_1_option_json_1a62b72c3fda56b2afae608565d54b333a" kind="function"><name>~OptionJson</name></member>
-    <member refid="classvrv_1_1_option_json_1a89c98394002c05e9963e5dc804308c8c" kind="function"><name>Init</name></member>
-    <member refid="classvrv_1_1_option_json_1a741d4a204fe7b3c67b94a492c20e3676" kind="function"><name>SetValue</name></member>
+    <member refid="classvrv_1_1_option_json_1ac28758dc9d61ff7abce305ce40d88803" kind="function"><name>CopyTo</name></member>
+    <member refid="classvrv_1_1_option_json_1a6787572e1ab3606358af0aa341571b14" kind="function"><name>Init</name></member>
+    <member refid="classvrv_1_1_option_json_1abbfe45064b60f80519b5f54528245377" kind="function"><name>SetValue</name></member>
+    <member refid="classvrv_1_1_option_json_1aa02008e4509e62e76704d18e6419983b" kind="function"><name>GetStrValue</name></member>
+    <member refid="classvrv_1_1_option_json_1a3044e945720460b954152a3ffc3affec" kind="function"><name>GetDefaultStrValue</name></member>
+    <member refid="classvrv_1_1_option_json_1a1292c959936c0e4362c604a36f465e32" kind="function"><name>Reset</name></member>
+    <member refid="classvrv_1_1_option_json_1aac2951d68e22ec5baf9001501e671604" kind="function"><name>HasValue</name></member>
     <member refid="classvrv_1_1_option_json_1afb806a1149d89680015d6d18e9e24ccf" kind="function"><name>GetIntValue</name></member>
     <member refid="classvrv_1_1_option_json_1a97fdcb0bb957de49ac9d150b724b1381" kind="function"><name>GetDoubleValue</name></member>
     <member refid="classvrv_1_1_option_json_1a4f22e2b79f1e253a43f5d6503f36be0d" kind="function"><name>UpdateNodeValue</name></member>
+    <member refid="classvrv_1_1_option_json_1a1f2388458473973b71734faec8f21e81" kind="typedef"><name>JsonPath</name></member>
+    <member refid="classvrv_1_1_option_json_1a522edd15b44105b3ed5818c2c8a7413d" kind="variable"><name>m_source</name></member>
+    <member refid="classvrv_1_1_option_json_1acc6d4ec3d80fe3d3cf71e2c250865a7f" kind="variable"><name>m_values</name></member>
+    <member refid="classvrv_1_1_option_json_1a3b7e45f3900aacd0547aa37e4171e9f8" kind="variable"><name>m_defaultValues</name></member>
+    <member refid="classvrv_1_1_option_json_1a84f4c87bc0217e8bce496ef9610222ea" kind="function"><name>GetSource</name></member>
+    <member refid="classvrv_1_1_option_json_1a7468c78b4cde7fed6bbc56d4e16bb6e4" kind="function"><name>GetValue</name></member>
+    <member refid="classvrv_1_1_option_json_1a24331e37779a4eb4667cbd2d12d606fe" kind="function"><name>GetKeys</name></member>
     <member refid="classvrv_1_1_option_json_1a8359351bb326cead846919c16f263298" kind="function"><name>StringPath2NodePath</name></member>
+    <member refid="classvrv_1_1_option_json_1a5ff9ad862e7310387519ee222ea335e4" kind="function"><name>ReadJson</name></member>
   </compound>
   <compound refid="classvrv_1_1_options" kind="class"><name>vrv::Options</name>
     <member refid="classvrv_1_1_options_1a35cf54378bce2976a1a8185ef9f88c06" kind="variable"><name>m_baseOptions</name></member>
     <member refid="classvrv_1_1_options_1af7a66c62b9f8308b61d99fcfe5899b93" kind="variable"><name>m_standardOutput</name></member>
     <member refid="classvrv_1_1_options_1a117943c7fd1e2d7c59027278fbd11788" kind="variable"><name>m_help</name></member>
-    <member refid="classvrv_1_1_options_1aad22197ba6346c6cb34bdd33e4dba886" kind="variable"><name>m_allPpages</name></member>
+    <member refid="classvrv_1_1_options_1a66320bcae29ec8f5b15980a2b97d63ff" kind="variable"><name>m_allPages</name></member>
     <member refid="classvrv_1_1_options_1a942a5e5df01abfde53e6b09de448d24e" kind="variable"><name>m_inputFrom</name></member>
     <member refid="classvrv_1_1_options_1a8585b511c14a40470002b057fe406daf" kind="variable"><name>m_outfile</name></member>
     <member refid="classvrv_1_1_options_1a79f81d5ccd908726d8938da5cd54d77c" kind="variable"><name>m_page</name></member>
@@ -4395,6 +4554,7 @@
     <member refid="classvrv_1_1_options_1a2f7899685445e82ff96770b404cf8410" kind="variable"><name>m_humType</name></member>
     <member refid="classvrv_1_1_options_1afb68eac71e0886e6458018e63ee94524" kind="variable"><name>m_justifyVertically</name></member>
     <member refid="classvrv_1_1_options_1a0b55be9ed4783e0116172c3836c7c1e3" kind="variable"><name>m_landscape</name></member>
+    <member refid="classvrv_1_1_options_1a1bdbc5c08be3c228c9c617ecbe157b2e" kind="variable"><name>m_ligatureAsBracket</name></member>
     <member refid="classvrv_1_1_options_1ace0da799034ed728698c346b5c604fb3" kind="variable"><name>m_mensuralToMeasure</name></member>
     <member refid="classvrv_1_1_options_1ac5351533fcb3dc839e95adba9cafbf0d" kind="variable"><name>m_midiTempoAdjustment</name></member>
     <member refid="classvrv_1_1_options_1af64ac4b535712ec5fca92a9086a4437f" kind="variable"><name>m_minLastJustification</name></member>
@@ -4435,6 +4595,8 @@
     <member refid="classvrv_1_1_options_1afa488d5e3725d1f06caf036856e9f0be" kind="variable"><name>m_dynamDist</name></member>
     <member refid="classvrv_1_1_options_1a84f225d15f6a57af8cfbbb251d34687a" kind="variable"><name>m_clefChangeFactor</name></member>
     <member refid="classvrv_1_1_options_1a2f3aedad50e6626c21a4406822440893" kind="variable"><name>m_engravingDefaults</name></member>
+    <member refid="classvrv_1_1_options_1a40e39eada7c773a7ef4a4425c0d3cb59" kind="variable"><name>m_engravingDefaultsFile</name></member>
+    <member refid="classvrv_1_1_options_1ab9c22ca4b9b238dbea2d55843f4296bc" kind="variable"><name>m_breaksNoWidow</name></member>
     <member refid="classvrv_1_1_options_1a02ded0c8e17a9eb4a2abaf311ca5603e" kind="variable"><name>m_font</name></member>
     <member refid="classvrv_1_1_options_1a774df12da8a9067314eb91a4d31bfb42" kind="variable"><name>m_graceFactor</name></member>
     <member refid="classvrv_1_1_options_1a68a4f1007a6e61c01f8b20559f9ebf06" kind="variable"><name>m_graceRhythmAlign</name></member>
@@ -4453,12 +4615,14 @@
     <member refid="classvrv_1_1_options_1a7c71920d1b69d857c51a801d942d074e" kind="variable"><name>m_lyricNoStartHyphen</name></member>
     <member refid="classvrv_1_1_options_1ad5caf6faa464e6c6306a8b182dc788a3" kind="variable"><name>m_lyricSize</name></member>
     <member refid="classvrv_1_1_options_1affb7bf4abf275c12e7d05e880536f537" kind="variable"><name>m_lyricTopMinMargin</name></member>
+    <member refid="classvrv_1_1_options_1a6f2a4f3baf8b6fb02e7fa72e2d12c376" kind="variable"><name>m_lyricVerseCollapse</name></member>
     <member refid="classvrv_1_1_options_1a299c0fb2289ecef0156c813cbe12356c" kind="variable"><name>m_lyricWordSpace</name></member>
     <member refid="classvrv_1_1_options_1aa05a631b62399492d3c89c8bc6cbae26" kind="variable"><name>m_measureMinWidth</name></member>
     <member refid="classvrv_1_1_options_1a7d7b0ae2657f39ef6819ed7ec23ce721" kind="variable"><name>m_mnumInterval</name></member>
     <member refid="classvrv_1_1_options_1a3256d1a305bd5936d4fe47843552e4bb" kind="variable"><name>m_multiRestStyle</name></member>
     <member refid="classvrv_1_1_options_1a5e6d1e37a0d2ea2de8b67889f9e13c4b" kind="variable"><name>m_octaveAlternativeSymbols</name></member>
     <member refid="classvrv_1_1_options_1a83da51f210f16af57b50095b2e5def11" kind="variable"><name>m_octaveLineThickness</name></member>
+    <member refid="classvrv_1_1_options_1ae40fdfb331213b0c3209da5e817b8876" kind="variable"><name>m_pedalLineThickness</name></member>
     <member refid="classvrv_1_1_options_1aa7802ef2ba975cf0081f9f4a89126106" kind="variable"><name>m_repeatBarLineDotSeparation</name></member>
     <member refid="classvrv_1_1_options_1abebf9a2faa7f8d20eb04122e92340a4e" kind="variable"><name>m_repeatEndingLineThickness</name></member>
     <member refid="classvrv_1_1_options_1aa92cbe7ceabdd6210e6ae066176a28e8" kind="variable"><name>m_slurControlPoints</name></member>
@@ -4562,22 +4726,9 @@
     <member refid="classvrv_1_1_option_staffrel_1a0669ca31fc72ba10a631e69f9e4a12b6" kind="function"><name>SetValue</name></member>
     <member refid="classvrv_1_1_option_staffrel_1addefa81ca37e9043ebf78b025f05e06b" kind="function"><name>GetStrValue</name></member>
     <member refid="classvrv_1_1_option_staffrel_1a79b18617edd6f1e19b4d9650f13fee4c" kind="function"><name>GetDefaultStrValue</name></member>
+    <member refid="classvrv_1_1_option_staffrel_1a6cf1a37f5e7d5c65ff14d3529d764fbd" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_option_staffrel_1a164254b36a7b3d077250c95269b90b5e" kind="function"><name>GetValueAlternate</name></member>
     <member refid="classvrv_1_1_option_staffrel_1a44d086e1106f604478c70e95744c142c" kind="function"><name>GetDefaultAlernate</name></member>
-  </compound>
-  <compound refid="classvrv_1_1_option_staffrel_basic" kind="class"><name>vrv::OptionStaffrelBasic</name>
-    <member refid="classvrv_1_1_option_staffrel_basic_1a2920b4d636fa9e7c6ff7d1a3889e99a2" kind="variable"><name>m_values</name></member>
-    <member refid="classvrv_1_1_option_staffrel_basic_1a9d2b16b4dbb6974b67c0cf731fa01ed1" kind="variable"><name>m_value</name></member>
-    <member refid="classvrv_1_1_option_staffrel_basic_1ab0917fa101bc777227c610d34561edc6" kind="variable"><name>m_defaultValue</name></member>
-    <member refid="classvrv_1_1_option_staffrel_basic_1a6bf744698add2fb2263729a66c35f2f0" kind="function"><name>OptionStaffrelBasic</name></member>
-    <member refid="classvrv_1_1_option_staffrel_basic_1ad0dbbe1ac1c9e15844863e36010222ec" kind="function"><name>~OptionStaffrelBasic</name></member>
-    <member refid="classvrv_1_1_option_staffrel_basic_1a50076ddbfe26372ffa34358898c61688" kind="function"><name>CopyTo</name></member>
-    <member refid="classvrv_1_1_option_staffrel_basic_1a45796918cc6925fb7b1ec0b234dd61b1" kind="function"><name>Init</name></member>
-    <member refid="classvrv_1_1_option_staffrel_basic_1a7eea6359ca4ec55120277b1a4c2a4b8b" kind="function"><name>SetValue</name></member>
-    <member refid="classvrv_1_1_option_staffrel_basic_1a3056f6cdcc8c8a84b2f955afede54624" kind="function"><name>GetStrValue</name></member>
-    <member refid="classvrv_1_1_option_staffrel_basic_1afc24ac3449898cb7f9ded4dc95f93d5b" kind="function"><name>GetDefaultStrValue</name></member>
-    <member refid="classvrv_1_1_option_staffrel_basic_1a0e7e5d6a8bc13c076f56b48724ca0265" kind="function"><name>GetValue</name></member>
-    <member refid="classvrv_1_1_option_staffrel_basic_1a0188c54f37e779cb8622bb2102632ea0" kind="function"><name>GetDefault</name></member>
   </compound>
   <compound refid="classvrv_1_1_option_string" kind="class"><name>vrv::OptionString</name>
     <member refid="classvrv_1_1_option_string_1acc2424fccff2053eb4387d7a70c79432" kind="variable"><name>m_value</name></member>
@@ -4591,6 +4742,7 @@
     <member refid="classvrv_1_1_option_string_1a0dedf7601ef00649f3ea0aae7d1af0f6" kind="function"><name>GetDefaultStrValue</name></member>
     <member refid="classvrv_1_1_option_string_1acc21b5e634fba8be75dc9e0531862418" kind="function"><name>GetValue</name></member>
     <member refid="classvrv_1_1_option_string_1a6eded02b2ed2cd849451892c3ba18298" kind="function"><name>GetDefault</name></member>
+    <member refid="classvrv_1_1_option_string_1abd91c18159fe474309acef45875106c6" kind="function"><name>Reset</name></member>
   </compound>
   <compound refid="classvrv_1_1_orig" kind="class"><name>vrv::Orig</name>
     <member refid="classvrv_1_1_orig_1af12c0a76d916fcdae9f88829a4ca3e8e" kind="function"><name>Orig</name></member>
@@ -4956,7 +5108,8 @@
     <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_params_1a112bfa9d5285a09baa71929ddbcb36b4" kind="variable"><name>m_keySig</name></member>
     <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_params_1a03db1d9d4a720374d36f46a7d16fd410" kind="variable"><name>m_mensur</name></member>
     <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_params_1af82e4e213522192ac1e18a4e3c5eddcb" kind="variable"><name>m_meterSig</name></member>
-    <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_params_1a7e5a7ad2a65af69c8dbcc3648fd2fe24" kind="function"><name>ReplaceDrawingValuesInStaffDefParams</name></member>
+    <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_params_1a6deb77fa9fd2caafa9d5052f8bee8785" kind="variable"><name>m_meterSigGrp</name></member>
+    <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_params_1a58480b3e330f474a960b791d90ab285c" kind="function"><name>ReplaceDrawingValuesInStaffDefParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_resources" kind="class"><name>vrv::Resources</name>
     <member refid="classvrv_1_1_resources_1ac8a749d1dbdc5b23dc8ee27d23f68261" kind="function"><name>GetPath</name></member>
@@ -4972,10 +5125,10 @@
     <member refid="classvrv_1_1_resources_1a70b43d51304eaa6165edfa5a46e40bcf" kind="typedef"><name>StyleAttributes</name></member>
     <member refid="classvrv_1_1_resources_1aa18f0b0ea21146bd82eb9c019dbfab1d" kind="typedef"><name>GlyphMap</name></member>
     <member refid="classvrv_1_1_resources_1ad769124b0252927a3d1b6e8c109f10b3" kind="typedef"><name>GlyphTextMap</name></member>
-    <member refid="classvrv_1_1_resources_1a9e7bbbc1a9cdb0c3ea5d03a02703efdb" kind="variable"><name>s_path</name></member>
-    <member refid="classvrv_1_1_resources_1a56fb6a19b824751f4e8872e7cb92d810" kind="variable"><name>s_font</name></member>
-    <member refid="classvrv_1_1_resources_1a71ad1d6558a2c98ef4ccdc8128af2ef0" kind="variable"><name>s_textFont</name></member>
-    <member refid="classvrv_1_1_resources_1a06427a40689e51ba4e3c679196214906" kind="variable"><name>s_currentStyle</name></member>
+    <member refid="classvrv_1_1_resources_1ad3d0dccfdb46a9d39290b012e6212d23" kind="variable"><name>s_path</name></member>
+    <member refid="classvrv_1_1_resources_1ae42baccf3c38cfdce385a984c147f10f" kind="variable"><name>s_font</name></member>
+    <member refid="classvrv_1_1_resources_1ab8c7b5e3d945b9a85da4b3362e399ffc" kind="variable"><name>s_textFont</name></member>
+    <member refid="classvrv_1_1_resources_1ae522a99b73dcced37a3131a361329728" kind="variable"><name>s_currentStyle</name></member>
     <member refid="classvrv_1_1_resources_1aff9ebc78f90ff388fbc64a7cad7a5790" kind="variable"><name>k_defaultStyle</name></member>
     <member refid="classvrv_1_1_resources_1af4a246dbf54c224e72aba89499102953" kind="variable"><name>s_smuflNames</name></member>
     <member refid="classvrv_1_1_resources_1acce07da7b518813c4463b6ed41e185ad" kind="function"><name>LoadFont</name></member>
@@ -5005,7 +5158,7 @@
     <member refid="classvrv_1_1_rest_1a0ee80c67515c10f46d02ab4d767c9e0e" kind="function"><name>GetLocationRelativeToOtherLayers</name></member>
     <member refid="classvrv_1_1_rest_1aeb849cc03424527e2d3215d90a7c7712" kind="function"><name>GetLocationRelativeToCurrentLayer</name></member>
     <member refid="classvrv_1_1_rest_1a8cbf80e72d2fef061e05502dd6b8d836" kind="function"><name>GetFirstRelativeElementLocation</name></member>
-    <member refid="classvrv_1_1_rest_1a1b50ff1f4356eded242c0978c5b866f1" kind="function"><name>GetElementLocation</name></member>
+    <member refid="classvrv_1_1_rest_1a671a29b5c735d1de9a27decc04cd886f" kind="function"><name>GetElementLocation</name></member>
     <member refid="classvrv_1_1_rest_1a603d4c6b1727233faed90a676dc58d30" kind="function"><name>GetRestOffsetFromOptions</name></member>
   </compound>
   <compound refid="classvrv_1_1_restore" kind="class"><name>vrv::Restore</name>
@@ -5091,6 +5244,7 @@
     <member refid="classvrv_1_1_score_def_1aa7973eba5e5b3cb261bdd47b70d9e637" kind="function"><name>GetPgHead</name></member>
     <member refid="classvrv_1_1_score_def_1a6953b3060cef9dc4cb419743355f62b3" kind="function"><name>GetPgHead2</name></member>
     <member refid="classvrv_1_1_score_def_1a6760d8d9bb94a8f220dddbc769346aeb" kind="variable"><name>m_setAsDrawing</name></member>
+    <member refid="classvrv_1_1_score_def_1af51ff1e8fe16c96cdbf75c2c091282e8" kind="variable"><name>m_insertScoreDef</name></member>
     <member refid="classvrv_1_1_score_def_1ac0ea174bd473162a9fcbe68c1a420092" kind="variable"><name>m_drawLabels</name></member>
     <member refid="classvrv_1_1_score_def_1a7e8f71b1f155a69a325afe0466fc3205" kind="variable"><name>m_drawingWidth</name></member>
     <member refid="classvrv_1_1_score_def_1a37bb21b40890e0788b64879b95d337bb" kind="function"><name>IsSupportedChild</name></member>
@@ -5098,7 +5252,7 @@
     <member refid="classvrv_1_1_score_def_1a9c783c24225cb3b84f2096cbc727cbca" kind="function"><name>ReplaceDrawingValues</name></member>
     <member refid="classvrv_1_1_score_def_1afd16c952de1b8829f86ee7499bbb1fa6" kind="function"><name>GetStaffDef</name></member>
     <member refid="classvrv_1_1_score_def_1aa914794d578ec1fb7f3327c6be007cd4" kind="function"><name>GetStaffNs</name></member>
-    <member refid="classvrv_1_1_score_def_1a195f7226008f1ab25190bf630de92606" kind="function"><name>SetRedrawFlags</name></member>
+    <member refid="classvrv_1_1_score_def_1a3fd0342289c22892afde358bf48e4738" kind="function"><name>SetRedrawFlags</name></member>
     <member refid="classvrv_1_1_score_def_1a9228bda856401d3115b2f2a0023a390a" kind="function"><name>GetMaxStaffSize</name></member>
     <member refid="classvrv_1_1_score_def_1a682908fdfabf7d58172278157d910e22" kind="function"><name>ConvertToPageBased</name></member>
     <member refid="classvrv_1_1_score_def_1a0201cf78e1a7efbf950650f6105fa0cd" kind="function"><name>CastOffSystems</name></member>
@@ -5111,10 +5265,11 @@
     <member refid="classvrv_1_1_score_def_element_1a1e121d95814e70d0123bb7be2e69f634" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_score_def_element_1ac869e0614a1d896bd39da52d7b9c8ed8" kind="function"><name>GetClassId</name></member>
     <member refid="classvrv_1_1_score_def_element_1ae98319158b6db4c30ab5ded9ab765a41" kind="function"><name>GetScoreDefInterface</name></member>
-    <member refid="classvrv_1_1_score_def_element_1aec25764df74472e96649abeb3cdb6535" kind="function"><name>HasClefInfo</name></member>
-    <member refid="classvrv_1_1_score_def_element_1ae3527c225620d309dc3b8af2cb7adfea" kind="function"><name>HasKeySigInfo</name></member>
-    <member refid="classvrv_1_1_score_def_element_1a53ef4e3e5f8e37f408a552bab31f1e61" kind="function"><name>HasMensurInfo</name></member>
-    <member refid="classvrv_1_1_score_def_element_1a370a5fd6303612f2bc0797ef6ebfd043" kind="function"><name>HasMeterSigInfo</name></member>
+    <member refid="classvrv_1_1_score_def_element_1a018c03d00e570945be34ffdc0dbf8d8f" kind="function"><name>HasClefInfo</name></member>
+    <member refid="classvrv_1_1_score_def_element_1a729766f5d766af5cb0bcb0c10d3834fd" kind="function"><name>HasKeySigInfo</name></member>
+    <member refid="classvrv_1_1_score_def_element_1ab00843a9b7af3742eb44f745c9c3d11d" kind="function"><name>HasMensurInfo</name></member>
+    <member refid="classvrv_1_1_score_def_element_1a59889254fc6b5c3c5d10b42e46faffc9" kind="function"><name>HasMeterSigInfo</name></member>
+    <member refid="classvrv_1_1_score_def_element_1a970fb736d3a2b627081d9822f0880a08" kind="function"><name>HasMeterSigGrpInfo</name></member>
     <member refid="classvrv_1_1_score_def_element_1a41141901b422120df5b8516822c7bdb2" kind="function"><name>GetClef</name></member>
     <member refid="classvrv_1_1_score_def_element_1af2d719526694e483f55ed69505179c36" kind="function"><name>GetClefCopy</name></member>
     <member refid="classvrv_1_1_score_def_element_1ae07d344fa2ba7edc4ba55fdbc6af8890" kind="function"><name>GetKeySig</name></member>
@@ -5123,6 +5278,8 @@
     <member refid="classvrv_1_1_score_def_element_1ae8c18f761038cd99113b481da514fe5c" kind="function"><name>GetMensurCopy</name></member>
     <member refid="classvrv_1_1_score_def_element_1a164b285418aaace19e6f436fb88ec720" kind="function"><name>GetMeterSig</name></member>
     <member refid="classvrv_1_1_score_def_element_1a9001fe71a5844d6461c8e3a5d459bcb3" kind="function"><name>GetMeterSigCopy</name></member>
+    <member refid="classvrv_1_1_score_def_element_1a6536c46fcc832db4f184743f6266f74d" kind="function"><name>GetMeterSigGrp</name></member>
+    <member refid="classvrv_1_1_score_def_element_1a242a33d82c973450f4721e3f08e55340" kind="function"><name>GetMeterSigGrpCopy</name></member>
   </compound>
   <compound refid="classvrv_1_1_score_def_interface" kind="class"><name>vrv::ScoreDefInterface</name>
     <member refid="classvrv_1_1_score_def_interface_1a7f6da3114adfa5ee34db76e383399a02" kind="function"><name>ScoreDefInterface</name></member>
@@ -5209,11 +5366,7 @@
     <member refid="classvrv_1_1_set_overflow_b_boxes_params_1aba055d44d2a9d5d059fafe0c5e0b2900" kind="function"><name>SetOverflowBBoxesParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_set_staff_def_redraw_flags_params" kind="class"><name>vrv::SetStaffDefRedrawFlagsParams</name>
-    <member refid="classvrv_1_1_set_staff_def_redraw_flags_params_1a6918c0f8453ae125cb5430743e386e80" kind="variable"><name>m_clef</name></member>
-    <member refid="classvrv_1_1_set_staff_def_redraw_flags_params_1ac05e8d1ed4a3e392813e10dfa1f51359" kind="variable"><name>m_keySig</name></member>
-    <member refid="classvrv_1_1_set_staff_def_redraw_flags_params_1a28793a0a224d499b3e215e313ca03876" kind="variable"><name>m_mensur</name></member>
-    <member refid="classvrv_1_1_set_staff_def_redraw_flags_params_1ab6c01e92d0dd1632d616d9f86d212b9b" kind="variable"><name>m_meterSig</name></member>
-    <member refid="classvrv_1_1_set_staff_def_redraw_flags_params_1a571793ea2537085e497a83fb2c2926e4" kind="variable"><name>m_applyToAll</name></member>
+    <member refid="classvrv_1_1_set_staff_def_redraw_flags_params_1a410e33f7b9b93c8ee7eb3994c4688662" kind="variable"><name>m_redrawFlags</name></member>
     <member refid="classvrv_1_1_set_staff_def_redraw_flags_params_1a011cae7c9f74c99c6ae027e04547dae4" kind="function"><name>SetStaffDefRedrawFlagsParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_sic" kind="class"><name>vrv::Sic</name>
@@ -5237,15 +5390,13 @@
     <member refid="classvrv_1_1_slur_1afeaac42992c2985ff5dfd8fc4b58dc5b" kind="function"><name>GetDrawingCurvedir</name></member>
     <member refid="classvrv_1_1_slur_1abab16819ba64a14c2dd8ffeefdef696e" kind="function"><name>SetDrawingCurvedir</name></member>
     <member refid="classvrv_1_1_slur_1aebb2e1d5c4efce7392bdd0aaff627573" kind="function"><name>HasDrawingCurvedir</name></member>
-    <member refid="classvrv_1_1_slur_1a638183ccab7930c9e8167affbfb33cad" kind="function"><name>IsCrossStaff</name></member>
-    <member refid="classvrv_1_1_slur_1a6187027874ce353fa3aca3aef490fdd5" kind="function"><name>IsCrossStaff</name></member>
     <member refid="classvrv_1_1_slur_1a3db8c8e9d8787cef6604211abdb075a9" kind="variable"><name>m_drawingCurvedir</name></member>
-    <member refid="classvrv_1_1_slur_1a41ce28657224d089b7f49099b0c4314a" kind="variable"><name>m_isCrossStaff</name></member>
     <member refid="classvrv_1_1_slur_1a4763f0c674829ba0888bb2428a6dac55" kind="function"><name>AdjustSlur</name></member>
-    <member refid="classvrv_1_1_slur_1a93a2b9c018e7320df765f63fa672fd28" kind="function"><name>AdjustSlurCurve</name></member>
-    <member refid="classvrv_1_1_slur_1a973ee735bbca95fd1616e9e7de5494e2" kind="function"><name>AdjustSlurPosition</name></member>
+    <member refid="classvrv_1_1_slur_1acd02985e34874a7d955ed3c0f450ead8" kind="function"><name>AdjustSlurCurve</name></member>
+    <member refid="classvrv_1_1_slur_1ac2c3f626a16b9ce92bf0d9a2c0d816c3" kind="function"><name>AdjustSlurPosition</name></member>
+    <member refid="classvrv_1_1_slur_1a043f6c30f93c2e6b446a5f06744b50c2" kind="function"><name>CalculateAdjustedSlurShift</name></member>
     <member refid="classvrv_1_1_slur_1ada4fc6e4d09380e5a9ccb91e3b00a5c1" kind="function"><name>GetAdjustedSlurAngle</name></member>
-    <member refid="classvrv_1_1_slur_1a53069ee410ac18874547721818de6909" kind="function"><name>GetControlPoints</name></member>
+    <member refid="classvrv_1_1_slur_1a789c62a7630c80e1daeec5a924887515" kind="function"><name>GetControlPoints</name></member>
     <member refid="classvrv_1_1_slur_1a8efa4b34ec36ac60f7ee6992020c63e7" kind="function"><name>GetSpannedPointPositions</name></member>
     <member refid="classvrv_1_1_slur_1ab47be962fd8854013a1e7751140567c1" kind="function"><name>ResetDrawing</name></member>
   </compound>
@@ -5272,17 +5423,17 @@
     <member refid="classvrv_1_1_staff_1a79eac77323fbef08aea63636b198670f" kind="function"><name>IsMensural</name></member>
     <member refid="classvrv_1_1_staff_1a34bb6fc88f3af41943c3ba4e6006f526" kind="function"><name>IsNeume</name></member>
     <member refid="classvrv_1_1_staff_1a9dc4603b9cbe7003cd4fb617c186b8d5" kind="function"><name>IsTablature</name></member>
-    <member refid="classvrv_1_1_staff_1a5f0ab356bcfb44c730bf0d52cd060a92" kind="function"><name>GetLedgerLinesAbove</name></member>
-    <member refid="classvrv_1_1_staff_1a94fc7f27ea139a3b37983f383464b18b" kind="function"><name>GetLedgerLinesAboveCue</name></member>
-    <member refid="classvrv_1_1_staff_1ae91c2b2dffa5b7be17298693c96b1d39" kind="function"><name>GetLedgerLinesBelow</name></member>
-    <member refid="classvrv_1_1_staff_1a4773a1ba3e425e3b717f04c79928cfb2" kind="function"><name>GetLedgerLinesBelowCue</name></member>
-    <member refid="classvrv_1_1_staff_1a161dcbe91588b5cb23560162166079f6" kind="function"><name>AddLedgerLineAbove</name></member>
-    <member refid="classvrv_1_1_staff_1a3ff6e40dbafa9509a985a9ae6d93319b" kind="function"><name>AddLedgerLineBelow</name></member>
+    <member refid="classvrv_1_1_staff_1a574fa40f4a5412da8b51679db2e63756" kind="function"><name>GetLedgerLinesAbove</name></member>
+    <member refid="classvrv_1_1_staff_1a58c281c807c9f7df8f9d8bb7f34fd99e" kind="function"><name>GetLedgerLinesAboveCue</name></member>
+    <member refid="classvrv_1_1_staff_1aa6fbec686d74e09f11456d85bf3c6c99" kind="function"><name>GetLedgerLinesBelow</name></member>
+    <member refid="classvrv_1_1_staff_1a6699d0c5b38a86f027957171547124a5" kind="function"><name>GetLedgerLinesBelowCue</name></member>
+    <member refid="classvrv_1_1_staff_1a3a3677c7c69ef7377d08bad3873c37ed" kind="function"><name>AddLedgerLineAbove</name></member>
+    <member refid="classvrv_1_1_staff_1ac2cb32bf535c791783491fe9043765eb" kind="function"><name>AddLedgerLineBelow</name></member>
     <member refid="classvrv_1_1_staff_1a31043856d7ca807142154185f4f1eacd" kind="function"><name>CalcOnsetOffset</name></member>
-    <member refid="classvrv_1_1_staff_1aa86f5b13319804bbfc657a58c1b98eb0" kind="variable"><name>m_ledgerLinesAbove</name></member>
-    <member refid="classvrv_1_1_staff_1a66a40248a362151760a6db96f624f803" kind="variable"><name>m_ledgerLinesBelow</name></member>
-    <member refid="classvrv_1_1_staff_1a838327223454ff9206886a20b01ba7a1" kind="variable"><name>m_ledgerLinesAboveCue</name></member>
-    <member refid="classvrv_1_1_staff_1a625e9186fe6919119ff69b38fdaa6a74" kind="variable"><name>m_ledgerLinesBelowCue</name></member>
+    <member refid="classvrv_1_1_staff_1a0e1a8896de6de00d48bd5534841a8184" kind="variable"><name>m_ledgerLinesAbove</name></member>
+    <member refid="classvrv_1_1_staff_1a2cd4cb6047ea6b4868dbbd6820d3e7f2" kind="variable"><name>m_ledgerLinesBelow</name></member>
+    <member refid="classvrv_1_1_staff_1aff307be048a42a305896fb0c4c90a36c" kind="variable"><name>m_ledgerLinesAboveCue</name></member>
+    <member refid="classvrv_1_1_staff_1af413c90af076da8c91f84b38a12ee497" kind="variable"><name>m_ledgerLinesBelowCue</name></member>
     <member refid="classvrv_1_1_staff_1a983ca678e5969c874a018a2b3587942c" kind="variable"><name>m_drawingLines</name></member>
     <member refid="classvrv_1_1_staff_1a51a65ab400013ddc21d125a01aa2256e" kind="variable"><name>m_drawingNotationType</name></member>
     <member refid="classvrv_1_1_staff_1af64a2d11ba5b97412094e00d6f908c63" kind="variable"><name>m_drawingStaffSize</name></member>
@@ -5302,6 +5453,7 @@
     <member refid="classvrv_1_1_staff_1a7a7f13fe4d00ba35ed03b952535027fb" kind="function"><name>GetAlignment</name></member>
     <member refid="classvrv_1_1_staff_1a367847939088dc1b31e81f2e66211570" kind="function"><name>IsOnStaffLine</name></member>
     <member refid="classvrv_1_1_staff_1aef570b1123805d6ee7126ff3aaf5af61" kind="function"><name>GetNearestInterStaffPosition</name></member>
+    <member refid="classvrv_1_1_staff_1a71c2243c3a8920516443bc45557c5783" kind="function"><name>SetFromFacsimile</name></member>
     <member refid="classvrv_1_1_staff_1aefef81d13f6dddad4edb00ba33e220c9" kind="function"><name>ConvertToCastOffMensural</name></member>
     <member refid="classvrv_1_1_staff_1a0132cbac7c1bf93021984016f4635083" kind="function"><name>ScoreDefUnsetCurrent</name></member>
     <member refid="classvrv_1_1_staff_1a27725920026a027bc04b700c361fe846" kind="function"><name>ScoreDefOptimize</name></member>
@@ -5309,13 +5461,15 @@
     <member refid="classvrv_1_1_staff_1a4da5a3d4db00bc3b2d0fe5da397dc764" kind="function"><name>ApplyPPUFactor</name></member>
     <member refid="classvrv_1_1_staff_1a1a5a6358590d1e40aa6db5111897d955" kind="function"><name>AlignHorizontally</name></member>
     <member refid="classvrv_1_1_staff_1a117c874984f47c04a116e5a369f73b52" kind="function"><name>AlignVertically</name></member>
+    <member refid="classvrv_1_1_staff_1afd87f281f2fdce027cae2ba1594a0372" kind="function"><name>CalcLedgerLinesEnd</name></member>
     <member refid="classvrv_1_1_staff_1a0315f172bfa34a1b25afa4a62e77db09" kind="function"><name>FillStaffCurrentTimeSpanning</name></member>
     <member refid="classvrv_1_1_staff_1af445c1b571a451f7d83ecc8c28d45fde" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_staff_1a7d46724555e4ba27339181e17b945a33" kind="function"><name>PrepareRpt</name></member>
-    <member refid="classvrv_1_1_staff_1a71c2243c3a8920516443bc45557c5783" kind="function"><name>SetFromFacsimile</name></member>
     <member refid="classvrv_1_1_staff_1abd990f1b0d2dd8abe5864c53be8f3cfa" kind="function"><name>CalcStem</name></member>
     <member refid="classvrv_1_1_staff_1a6790f6311e231fb5898d10c2b5499559" kind="function"><name>AdjustSylSpacing</name></member>
-    <member refid="classvrv_1_1_staff_1a9e2afce8dd14778e13c593a3aa00c535" kind="function"><name>AddLedgerLines</name></member>
+    <member refid="classvrv_1_1_staff_1a3ce2c8573bacc56a9ef6d6eed96ad6fb" kind="function"><name>GenerateMIDI</name></member>
+    <member refid="classvrv_1_1_staff_1aafcd21e3d5a397b87325803840f8d310" kind="function"><name>AddLedgerLines</name></member>
+    <member refid="classvrv_1_1_staff_1a5782b8eace0d153cb3e6caa88d0884fb" kind="function"><name>AdjustLedgerLines</name></member>
   </compound>
   <compound refid="classvrv_1_1_staff_alignment" kind="class"><name>vrv::StaffAlignment</name>
     <member refid="classvrv_1_1_staff_alignment_1a6c645054e9e14b4cb5427fcf1f306ca4" kind="function"><name>StaffAlignment</name></member>
@@ -5323,11 +5477,9 @@
     <member refid="classvrv_1_1_staff_alignment_1a20d7a25eb66364941345cc321f95e99c" kind="function"><name>GetClassId</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a6c9d2d1c71958c112774409638ff501b" kind="function"><name>SetYRel</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a1abdba3b5c8406e42f16e06340a906b5" kind="function"><name>GetYRel</name></member>
-    <member refid="classvrv_1_1_staff_alignment_1a7c2d3bdcfc3ba911115e6355d413a09f" kind="function"><name>SetVerseCount</name></member>
-    <member refid="classvrv_1_1_staff_alignment_1abb3f2fd560fe0a0aeb316b1869f37e14" kind="function"><name>GetVerseCount</name></member>
-    <member refid="classvrv_1_1_staff_alignment_1a2509f2cdd8ef0e40f10aaca7ec29c814" kind="function"><name>SetCurrentFloatingPositioner</name></member>
-    <member refid="classvrv_1_1_staff_alignment_1aebb16e118406ae41bf59ef1730842a78" kind="function"><name>FindFirstFloatingPositioner</name></member>
-    <member refid="classvrv_1_1_staff_alignment_1ae46cadae61f249115e75d43ae10b5f4e" kind="function"><name>GetCorrespFloatingPositioner</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1a7804d94fb3fb3db00ed433a22edea5d6" kind="function"><name>AddVerseN</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1ae289d82b696a41fd832abdbf43afefac" kind="function"><name>GetVerseCount</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1a02a6cbdb61d48392778770d372f3c732" kind="function"><name>GetVersePosition</name></member>
     <member refid="classvrv_1_1_staff_alignment_1ad527815e979b4f095ae5132fb5fd7fce" kind="function"><name>GetStaff</name></member>
     <member refid="classvrv_1_1_staff_alignment_1ac5734d8b2d2b6ff3ea7075fd839a3d8e" kind="function"><name>SetStaff</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a95803dcbd25978a29d7ffaaff2dabd59" kind="function"><name>GetParentSystem</name></member>
@@ -5357,9 +5509,13 @@
     <member refid="classvrv_1_1_staff_alignment_1aed230042c44c7cd23fe58bc82d08e5d9" kind="variable"><name>m_staff</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a8fbdb29d9fb58c6b6a3de08c03411ed4" kind="variable"><name>m_system</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a366a4051d7602f053bc7b944d9266f09" kind="variable"><name>m_yRel</name></member>
-    <member refid="classvrv_1_1_staff_alignment_1acb602e07590ec51836e0ca2ecb1fb387" kind="variable"><name>m_verseCount</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1a5265a43a6ab421c5be56b5bd1814d1cd" kind="variable"><name>m_verseNs</name></member>
     <member refid="classvrv_1_1_staff_alignment_1acc52496444c1468f9cec6f19c79543c4" kind="variable"><name>m_overflowAboveBBoxes</name></member>
     <member refid="classvrv_1_1_staff_alignment_1ab8a34f621d9951597f35ae9deb4c579d" kind="variable"><name>m_overflowBelowBBoxes</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1a2509f2cdd8ef0e40f10aaca7ec29c814" kind="function"><name>SetCurrentFloatingPositioner</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1aebb16e118406ae41bf59ef1730842a78" kind="function"><name>FindFirstFloatingPositioner</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1a45c9254734f194b8625f2ecb835d2dbc" kind="function"><name>FindAllFloatingPositioners</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1ae46cadae61f249115e75d43ae10b5f4e" kind="function"><name>GetCorrespFloatingPositioner</name></member>
     <member refid="classvrv_1_1_staff_alignment_1ab0c857aa5a9a585e4107edd6ef102f3e" kind="function"><name>ClearPositioners</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a708209da1e2d295a316091342956f633" kind="function"><name>FindAllIntersectionPoints</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a653094335da68f4fc7361f89cee940a1" kind="function"><name>ReAdjustFloatingPositionersGrps</name></member>
@@ -5399,22 +5555,29 @@
     <member refid="classvrv_1_1_staff_def_drawing_interface_1a678553669508c8223c840309360bbe3f" kind="function"><name>SetDrawMensur</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1a4a9c0b9e08b106d8183753b06c9f4e75" kind="function"><name>DrawMeterSig</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1ae12b25ab8c18dc93f6c2a343e9d443d5" kind="function"><name>SetDrawMeterSig</name></member>
+    <member refid="classvrv_1_1_staff_def_drawing_interface_1a59d1c972aa0480849dd64cf6199b5a20" kind="function"><name>DrawMeterSigGrp</name></member>
+    <member refid="classvrv_1_1_staff_def_drawing_interface_1ade48e1b3e0296db1e64674a5d793bdeb" kind="function"><name>SetDrawMeterSigGrp</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1a75ec11ac53bc36f8c32ad359005da435" kind="function"><name>SetCurrentClef</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1ae10863e53d23d22e3da475a5630ce926" kind="function"><name>SetCurrentKeySig</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1a64405851105809aebe288dd9cd24ad19" kind="function"><name>SetCurrentMensur</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1a82cbeafa5ea501e202afe5b769c006ff" kind="function"><name>SetCurrentMeterSig</name></member>
+    <member refid="classvrv_1_1_staff_def_drawing_interface_1ac81534e14597d02dc0d606287490b54e" kind="function"><name>SetCurrentMeterSigGrp</name></member>
+    <member refid="classvrv_1_1_staff_def_drawing_interface_1a6631c6e8d886e96361df687fdc88af86" kind="function"><name>AlternateCurrentMeterSig</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1a8a0d101e91cb23c858883624de2c4237" kind="function"><name>GetCurrentClef</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1a189c279fda5b3e2ef3941b49d103cd71" kind="function"><name>GetCurrentKeySig</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1a4eab54ab49ffc228a17a529a106dbef8" kind="function"><name>GetCurrentMensur</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1aed58ecb2cd66f66cf0b83df6492fe3ac" kind="function"><name>GetCurrentMeterSig</name></member>
+    <member refid="classvrv_1_1_staff_def_drawing_interface_1ab218bac9a3c162fd477fda051a2b727a" kind="function"><name>GetCurrentMeterSigGrp</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1ab79d5ff86a4e0b39288828d273327f59" kind="variable"><name>m_drawClef</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1a91314de0eee9c0a3db04a47b3ef475d4" kind="variable"><name>m_drawKeySig</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1a52a87d37bfd52fbd8470b35c47a01c94" kind="variable"><name>m_drawMensur</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1a31e259e2332f1a18cfbe37d214db63dd" kind="variable"><name>m_drawMeterSig</name></member>
+    <member refid="classvrv_1_1_staff_def_drawing_interface_1a77f4f1f41abcab78047e13ef467dece5" kind="variable"><name>m_drawMeterSigGrp</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1ae7235d2f38315fbfc0b7fa14573383a0" kind="variable"><name>m_currentClef</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1acb60bbf114c4ae176b73360cf70bcfa2" kind="variable"><name>m_currentKeySig</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1af0a374851f64e895b7741cb2d2e29b55" kind="variable"><name>m_currentMensur</name></member>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1a181991211c4dd2fc95ffa4b6537f1ea2" kind="variable"><name>m_currentMeterSig</name></member>
+    <member refid="classvrv_1_1_staff_def_drawing_interface_1a07ca642ce3621ef1ce412e684f82f001" kind="variable"><name>m_currentMeterSigGrp</name></member>
   </compound>
   <compound refid="classvrv_1_1_staff_grp" kind="class"><name>vrv::StaffGrp</name>
     <member refid="classvrv_1_1_staff_grp_1acfdee10e6bfbe75ae8521d2f0e76f967" kind="function"><name>StaffGrp</name></member>
@@ -5687,6 +5850,7 @@
     <member refid="classvrv_1_1_system_1a89c0cdfa6d45bb5af1927608ca06cb52" kind="function"><name>GetSystemIdx</name></member>
     <member refid="classvrv_1_1_system_1a3038eabbb2ccc9a8f95538cbc1917ae8" kind="function"><name>SetCurrentFloatingPositioner</name></member>
     <member refid="classvrv_1_1_system_1a78f5b8fa8d7f7043f8547301ae24aee3" kind="function"><name>HasMixedDrawingStemDir</name></member>
+    <member refid="classvrv_1_1_system_1a458d9201f7e5b71f22cf9a180feceff7" kind="function"><name>GetPreferredCurveDirection</name></member>
     <member refid="classvrv_1_1_system_1a10f72720bebe778fecef7633ddbc9c38" kind="function"><name>AddToDrawingListIfNeccessary</name></member>
     <member refid="classvrv_1_1_system_1abc52dda11e11be4ed8d94cfe361b5737" kind="function"><name>ScoreDefUnsetCurrent</name></member>
     <member refid="classvrv_1_1_system_1a79353792971252ba4032f2c170d93528" kind="function"><name>ScoreDefSetGrpSym</name></member>
@@ -5820,7 +5984,6 @@
     <member refid="classvrv_1_1_text_element_1a9152529f016552566fceb6426c4686c5" kind="function"><name>TextElement</name></member>
     <member refid="classvrv_1_1_text_element_1ab922ad557ef315d4a683ec038b6ea6b9" kind="function"><name>~TextElement</name></member>
     <member refid="classvrv_1_1_text_element_1a8ac1eec61d858d477357d64e0b6f1338" kind="function"><name>Reset</name></member>
-    <member refid="classvrv_1_1_text_element_1a1a3cc5bfb13626f97cfacdb5fd9f90e1" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_text_element_1a3a8b1ead506de9c2493014afb156b8dd" kind="function"><name>GetClassId</name></member>
     <member refid="classvrv_1_1_text_element_1a9b49c48f2ac323926ab4fcb33ccbf65f" kind="function"><name>GetDrawingX</name></member>
     <member refid="classvrv_1_1_text_element_1af57d119e49cea8bd91294d09af229bb1" kind="function"><name>GetDrawingY</name></member>
@@ -5850,6 +6013,7 @@
   </compound>
   <compound refid="classvrv_1_1_tie" kind="class"><name>vrv::Tie</name>
     <member refid="classvrv_1_1_tie_1a60640a38d8682c328c0bed21970ca334" kind="function"><name>Tie</name></member>
+    <member refid="classvrv_1_1_tie_1ab56feb51f22ef5f62fcf64e7e3ba26af" kind="function"><name>Tie</name></member>
     <member refid="classvrv_1_1_tie_1a4ef66bfe13023a47286d34913cbcda19" kind="function"><name>~Tie</name></member>
     <member refid="classvrv_1_1_tie_1adfda19f910a88a11cbac436f19e28afb" kind="function"><name>Clone</name></member>
     <member refid="classvrv_1_1_tie_1aa2dcc8217fbcb23238941592457f994d" kind="function"><name>Reset</name></member>
@@ -5858,8 +6022,7 @@
     <member refid="classvrv_1_1_tie_1a403d6c9b23874c148167fc487e6bc346" kind="function"><name>GetTimePointInterface</name></member>
     <member refid="classvrv_1_1_tie_1aac977fbbda6f1ca6fe02604c4842b562" kind="function"><name>GetTimeSpanningInterface</name></member>
     <member refid="classvrv_1_1_tie_1a64255b08d5587d1d97e383d4eea3928c" kind="function"><name>ResolveMIDITies</name></member>
-    <member refid="classvrv_1_1_tie_1abb9c383257e4cb06c2a4116fabdf19c5" kind="function"><name>CalculatePosition</name></member>
-    <member refid="classvrv_1_1_tie_1a885cedbec1dbd2a06778d2a0ac6b42b5" kind="function"><name>FindSpannedLayerElements</name></member>
+    <member refid="classvrv_1_1_tie_1af5d0e930a2e13e63e0511792d3831152" kind="function"><name>CalculatePosition</name></member>
     <member refid="classvrv_1_1_tie_1a49aa4f787ace6b86162b2f1c614b9598" kind="function"><name>CalculateXPosition</name></member>
     <member refid="classvrv_1_1_tie_1a53ab3af669e06b46aebf1ef61ac2b000" kind="function"><name>GetPreferredCurveDirection</name></member>
     <member refid="classvrv_1_1_tie_1a6d35f645b37bdb45796b89d810f7a00b" kind="function"><name>UpdateTiePositioning</name></member>
@@ -5940,6 +6103,7 @@
     <member refid="classvrv_1_1_toolkit_1a09c79a752dd0b9e752506d9bcf583ecd" kind="function"><name>SetOptions</name></member>
     <member refid="classvrv_1_1_toolkit_1a68c3c9a776a1ec7e9734bb7540864e49" kind="function"><name>GetOption</name></member>
     <member refid="classvrv_1_1_toolkit_1a580fc9fe7eb90047c8ebbe576c96697e" kind="function"><name>SetOption</name></member>
+    <member refid="classvrv_1_1_toolkit_1a96fbf91f6688a0d81886a4a25254dc25" kind="function"><name>ResetOptions</name></member>
     <member refid="classvrv_1_1_toolkit_1a53b48c97c58b0da6e6083193ebd966e4" kind="function"><name>SetScale</name></member>
     <member refid="classvrv_1_1_toolkit_1a321e0a62f5f15b1c5cd522fb0e514d3f" kind="function"><name>GetScale</name></member>
     <member refid="classvrv_1_1_toolkit_1abbe738f9285b31845ea71cb322d9a581" kind="function"><name>SetInputFrom</name></member>
@@ -5955,6 +6119,8 @@
     <member refid="classvrv_1_1_toolkit_1a4172ff70b76b47701fdab68c7ee2f12d" kind="function"><name>RenderToTimemap</name></member>
     <member refid="classvrv_1_1_toolkit_1ae007856d580be07e60aeb52efb826a40" kind="function"><name>RenderToTimemapFile</name></member>
     <member refid="classvrv_1_1_toolkit_1a1b23b93998cb39e2016130b01d1db1b3" kind="function"><name>GetHumdrum</name></member>
+    <member refid="classvrv_1_1_toolkit_1adf47bbe710d3902f241db376002f55cb" kind="function"><name>ConvertMEIToHumdrum</name></member>
+    <member refid="classvrv_1_1_toolkit_1a8a411c7fe22ffb9df4be52b582af550e" kind="function"><name>ConvertHumdrumToHumdrum</name></member>
     <member refid="classvrv_1_1_toolkit_1ade214f7c4d835643aa13046d8ae000ef" kind="function"><name>GetHumdrumFile</name></member>
     <member refid="classvrv_1_1_toolkit_1a32c3ff9da41c302c83c6f8d52fc11467" kind="function"><name>GetMEI</name></member>
     <member refid="classvrv_1_1_toolkit_1a0206f317ac7ebe3c61df606c8afcd4ca" kind="function"><name>SaveFile</name></member>
@@ -5975,7 +6141,9 @@
     <member refid="group__nodoc_1ga942ab5856517907ea4f2082d9f35f532" kind="function"><name>GetHumdrum</name></member>
     <member refid="group__nodoc_1ga5ae3fb587d96567263bfebc1261ff4d9" kind="function"><name>SetHumdrumBuffer</name></member>
     <member refid="group__nodoc_1ga11e13d1850cadf28b00a85fde655e133" kind="function"><name>GetHumdrumBuffer</name></member>
+    <member refid="group__nodoc_1gae5a104614acc4edf6794abe71d027210" kind="function"><name>ClearHumdrumBuffer</name></member>
     <member refid="group__nodoc_1ga5b3b3c80844a342a465d4887bb599ae0" kind="function"><name>SetInputFrom</name></member>
+    <member refid="group__nodoc_1gac0b9bfca70ab200ca3e313611e37cc20" kind="function"><name>GetInputFrom</name></member>
     <member refid="group__nodoc_1ga602e2e1f79bb73affe064cb9ba7a4f5a" kind="function"><name>GetOutputTo</name></member>
     <member refid="classvrv_1_1_toolkit_1a5e0a77331e07aefa6f9471a1bc34f185" kind="variable"><name>m_doc</name></member>
     <member refid="classvrv_1_1_toolkit_1a41a694f23fc26f10b27c56dccf0cec68" kind="variable"><name>m_view</name></member>
@@ -6140,8 +6308,9 @@
     <member refid="classvrv_1_1_tuplet_1a6af3590e76f0df30add2b89d7d6d053e" kind="variable"><name>m_numAlignedBeam</name></member>
     <member refid="classvrv_1_1_tuplet_1aec8524e5296e4c15954974723cb2de87" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_tuplet_1a091eac9913c75a427dca15b7db03b84b" kind="function"><name>AddChild</name></member>
+    <member refid="classvrv_1_1_tuplet_1a2c093566d9c599da36d05fa7607c708d" kind="function"><name>AdjustTupletNumY</name></member>
     <member refid="classvrv_1_1_tuplet_1ac6b04379bb72ad6f90757952cf3bcc81" kind="function"><name>CalcDrawingBracketAndNumPos</name></member>
-    <member refid="classvrv_1_1_tuplet_1a3cb7c9445d2e57ba155c39d1ab2ca32f" kind="function"><name>GetDrawingLeftRightXRel</name></member>
+    <member refid="classvrv_1_1_tuplet_1a992bc7279dba5e1d749d17a1ebe59d66" kind="function"><name>GetDrawingLeftRightXRel</name></member>
     <member refid="classvrv_1_1_tuplet_1a3360390edceb87c25e2ecd87cf774ffc" kind="function"><name>PrepareLayerElementParts</name></member>
     <member refid="classvrv_1_1_tuplet_1aa3753def5cf71c42591725ca226f9e0e" kind="function"><name>AdjustTupletsX</name></member>
     <member refid="classvrv_1_1_tuplet_1a7ae244f9388019b00ce7c833772633dd" kind="function"><name>AdjustTupletsY</name></member>
@@ -6265,11 +6434,12 @@
     <member refid="classvrv_1_1_view_1ae01c9e955e07f860b01f151f4bf4ac2c" kind="function"><name>DrawBracketsq</name></member>
     <member refid="classvrv_1_1_view_1a7f73de86e83df589a23be10668fc656b" kind="function"><name>DrawBrace</name></member>
     <member refid="classvrv_1_1_view_1a3f4073d3c49e6c09bd33cd62bc09ae9f" kind="function"><name>DrawBarLines</name></member>
-    <member refid="classvrv_1_1_view_1ad8a95de0deb08ef2fe081cc95037b9c2" kind="function"><name>DrawBarLine</name></member>
+    <member refid="classvrv_1_1_view_1a1d8aeadaa5bf549911d7dc120adbddc6" kind="function"><name>DrawBarLine</name></member>
     <member refid="classvrv_1_1_view_1a2b61d41841e94c885f0415a4e5b519e4" kind="function"><name>DrawBarLineDots</name></member>
-    <member refid="classvrv_1_1_view_1a2ad6d68a763473fd74419d6680e181a6" kind="function"><name>DrawLedgerLines</name></member>
+    <member refid="classvrv_1_1_view_1a3e601102a8b6fa0df15da96a680a2752" kind="function"><name>DrawLedgerLines</name></member>
     <member refid="classvrv_1_1_view_1a8834997867b9112c8b023c0899963cb4" kind="function"><name>DrawMeasure</name></member>
-    <member refid="classvrv_1_1_view_1ab674c82ab62a0634f59b1e99789ecce9" kind="function"><name>DrawMNum</name></member>
+    <member refid="classvrv_1_1_view_1a18d1f95f6122899368dc5ec2802bb538" kind="function"><name>DrawMeterSigGrp</name></member>
+    <member refid="classvrv_1_1_view_1a8c92212ceb7f3acba7bdc565f99f2798" kind="function"><name>DrawMNum</name></member>
     <member refid="classvrv_1_1_view_1a1d43d6f24ff959692ac53f006f4ed3a4" kind="function"><name>DrawStaff</name></member>
     <member refid="classvrv_1_1_view_1a44e0a55904272dff67142ea68937b6b8" kind="function"><name>DrawStaffLines</name></member>
     <member refid="classvrv_1_1_view_1a96264ca40ae9920f5bab7e8e61ed8142" kind="function"><name>DrawLayer</name></member>
@@ -6333,7 +6503,7 @@
     <member refid="classvrv_1_1_view_1a31d1912d4d29519c725039eb1739cac9" kind="function"><name>DrawTextBoxes</name></member>
     <member refid="classvrv_1_1_view_1a40ebbe142ce17e46484b0c907e15d7df" kind="function"><name>DrawAcciaccaturaSlash</name></member>
     <member refid="classvrv_1_1_view_1a4ad1c6e3713eaade221683df44ab8a0e" kind="function"><name>DrawDotsPart</name></member>
-    <member refid="classvrv_1_1_view_1a8c4e13c590404f2a2280d03156ad9199" kind="function"><name>DrawMeterSigFigures</name></member>
+    <member refid="classvrv_1_1_view_1adeed3c0bdab94cbf59325ba6121456f9" kind="function"><name>DrawMeterSigFigures</name></member>
     <member refid="classvrv_1_1_view_1aa05e0576409456496c76a63c7e3e1185" kind="function"><name>DrawMRptPart</name></member>
     <member refid="classvrv_1_1_view_1a92b21a1d1f8f14636eaeed766dd0eebd" kind="function"><name>DrawTextElement</name></member>
     <member refid="classvrv_1_1_view_1a8e6bcaec184c2f069e68c0a126511180" kind="function"><name>DrawFb</name></member>
@@ -6431,9 +6601,9 @@
     <member refid="classvrv_1_1_view_1a10fbb9af42d900ffe40032522ce1b225" kind="variable"><name>m_currentPage</name></member>
     <member refid="classvrv_1_1_view_1af35d4f32dc4aa3709a284d47c00b7338" kind="variable"><name>m_tieThicknessCoeficient</name></member>
     <member refid="classvrv_1_1_view_1a0acf4cf8800097748c7f513a1fc5ba7d" kind="variable"><name>m_slurThicknessCoeficient</name></member>
-    <member refid="classvrv_1_1_view_1a32d91998c0efb5faa9117e2275f83f2a" kind="variable"><name>s_drawingLigX</name></member>
-    <member refid="classvrv_1_1_view_1aadc5898924ffc156815e30fac737f938" kind="variable"><name>s_drawingLigY</name></member>
-    <member refid="classvrv_1_1_view_1ae8fd5b28e63c05f456fe97eb02d4ac79" kind="variable"><name>s_drawingLigObliqua</name></member>
+    <member refid="classvrv_1_1_view_1a18e71a5b8d16826f0f3d243943d6fe96" kind="variable"><name>s_drawingLigX</name></member>
+    <member refid="classvrv_1_1_view_1a1d01243f4662f825735f9a05d5a9c4a5" kind="variable"><name>s_drawingLigY</name></member>
+    <member refid="classvrv_1_1_view_1a5e13b73dec85c2f2ad1507c41bb841d3" kind="variable"><name>s_drawingLigObliqua</name></member>
     <member refid="classvrv_1_1_view_1ae6aac368e2134e991fb7a1a5e93f59df" kind="variable"><name>m_currentColour</name></member>
     <member refid="classvrv_1_1_view_1ab16976e8a08645f3fdb70a658ede2c15" kind="variable"><name>m_drawingScoreDef</name></member>
     <member refid="classvrv_1_1_view_1afe6147dc2aa9a756204fbc2a180ec24c" kind="function"><name>GetNotationMode</name></member>
@@ -6590,6 +6760,14 @@
     <member refid="doc_8h_1a14e6d9b62a1abef0670c1ae963e557d4af6b90e1362ecc33b873eba4c03c04893" kind="enumvalue"><name>Rendering</name></member>
     <member refid="doc_8h_1a14e6d9b62a1abef0670c1ae963e557d4a951dc7b7c9f22f559a96e690ff74c4c8" kind="enumvalue"><name>Transcription</name></member>
     <member refid="doc_8h_1a14e6d9b62a1abef0670c1ae963e557d4a95decc8c45eef89af89645ff2d49645c" kind="enumvalue"><name>Facs</name></member>
+    <member refid="functorparams_8h_1a7b9a4ea681256c54c6bc7c6ef215d758" kind="enum"><name>StaffDefRedrawFlags</name></member>
+    <member refid="functorparams_8h_1a7b9a4ea681256c54c6bc7c6ef215d758ad39636ce0e2acba85feeca2b56b22c91" kind="enumvalue"><name>REDRAW_CLEF</name></member>
+    <member refid="functorparams_8h_1a7b9a4ea681256c54c6bc7c6ef215d758a6468b7a79a79d7327a2619b119d4dc65" kind="enumvalue"><name>REDRAW_KEYSIG</name></member>
+    <member refid="functorparams_8h_1a7b9a4ea681256c54c6bc7c6ef215d758a15a9935056a0b6f3fb14242782be46bc" kind="enumvalue"><name>REDRAW_MENSUR</name></member>
+    <member refid="functorparams_8h_1a7b9a4ea681256c54c6bc7c6ef215d758a54cf0e32e32887c985ae580233fa69d1" kind="enumvalue"><name>REDRAW_METERSIG</name></member>
+    <member refid="functorparams_8h_1a7b9a4ea681256c54c6bc7c6ef215d758a401accfe50f9a8eb86576a7de35d0642" kind="enumvalue"><name>REDRAW_METERSIGGRP</name></member>
+    <member refid="functorparams_8h_1a7b9a4ea681256c54c6bc7c6ef215d758aa2c90a8463df53cbadfd8f8caf05300a" kind="enumvalue"><name>REDRAW_ALL</name></member>
+    <member refid="functorparams_8h_1a7b9a4ea681256c54c6bc7c6ef215d758aa70c15be58689513a13f6f5b62a2e62f" kind="enumvalue"><name>FORCE_REDRAW</name></member>
     <member refid="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922" kind="enum"><name>AlignmentType</name></member>
     <member refid="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922af0dc8862789538b51c38d47aa6d894da" kind="enumvalue"><name>ALIGNMENT_MEASURE_START</name></member>
     <member refid="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922a6a40c4708eb69929b10abd7d44ddc30c" kind="enumvalue"><name>ALIGNMENT_SCOREDEF_CLEF</name></member>
@@ -6661,6 +6839,9 @@
     <member refid="options_8h_1acec3439c132d2c7853a87e447fc4a5e0ad5e91ee625a5a91592d700dfc2b74646" kind="enumvalue"><name>SYSTEMDIVIDER_auto</name></member>
     <member refid="options_8h_1acec3439c132d2c7853a87e447fc4a5e0a840c0d0ed60555db18434dd8a200cf61" kind="enumvalue"><name>SYSTEMDIVIDER_left</name></member>
     <member refid="options_8h_1acec3439c132d2c7853a87e447fc4a5e0a2e941ce2620861dbd9395b4eced17f15" kind="enumvalue"><name>SYSTEMDIVIDER_left_right</name></member>
+    <member refid="options_8h_1a348cc6ff82212bad624ca42d05266a5f" kind="enum"><name>JsonSource</name></member>
+    <member refid="options_8h_1a348cc6ff82212bad624ca42d05266a5fa27118326006d3829667a400ad23d5d98" kind="enumvalue"><name>String</name></member>
+    <member refid="options_8h_1a348cc6ff82212bad624ca42d05266a5fa2fb403e71d8ade2ba79af3f6c4695d09" kind="enumvalue"><name>FilePath</name></member>
     <member refid="rest_8h_1a970762153eb1e06a28ae4133c27db029" kind="enum"><name>RestLayer</name></member>
     <member refid="rest_8h_1a970762153eb1e06a28ae4133c27db029ae5931b81aba5a583b13fd49f53e804e2" kind="enumvalue"><name>RL_UNSET</name></member>
     <member refid="rest_8h_1a970762153eb1e06a28ae4133c27db029af6c4cd5c50414dc794c6b898be09264c" kind="enumvalue"><name>RL_sameLayer</name></member>
@@ -7021,6 +7202,10 @@
     <member refid="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fead0906056a30551bf37d3c02e7aee1b1c" kind="enumvalue"><name>SMUFL_E9BA_chantLigaturaDesc3rd</name></member>
     <member refid="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705feaa0cdbfa9128d8c8918f3bc44f4da4a7c" kind="enumvalue"><name>SMUFL_E9BB_chantLigaturaDesc4th</name></member>
     <member refid="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705feaf429c8a50b3d53fa9cef1d128a91cf03" kind="enumvalue"><name>SMUFL_E9BC_chantLigaturaDesc5th</name></member>
+    <member refid="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea3f0340537a002e0531f7070d003c8985" kind="enumvalue"><name>SMUFL_E9E0_medRenFlatSoftB</name></member>
+    <member refid="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea9124be73a4184893bc452d5a86ef92d7" kind="enumvalue"><name>SMUFL_E9E1_medRenFlatHardB</name></member>
+    <member refid="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea4446482ff0ed8558281f0f9c6c2a91cf" kind="enumvalue"><name>SMUFL_E9E2_medRenNatural</name></member>
+    <member refid="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fead3e8f24122df92b379a5a78f3bce9284" kind="enumvalue"><name>SMUFL_E9E3_medRenSharpCroix</name></member>
     <member refid="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea2fdf999af5dc71af17512017eb5a47a2" kind="enumvalue"><name>SMUFL_E9F0_mensuralRestMaxima</name></member>
     <member refid="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea7d894a22c43ad2d935ba1dea7e77f04b" kind="enumvalue"><name>SMUFL_E9F1_mensuralRestLongaPerfecta</name></member>
     <member refid="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea8d2954049ee5a2d7fe2acf26f5856636" kind="enumvalue"><name>SMUFL_E9F2_mensuralRestLongaImperfecta</name></member>
@@ -7120,6 +7305,7 @@
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ab4948f8b7177a5aa7abf2bad96506ea4" kind="enumvalue"><name>MEASURE_ALIGNER</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a752943c6021bf9d92e8437b33c6c66b1" kind="enumvalue"><name>MENSUR_ATTR</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ab0e41a3c1caf8fcf119b217a66afb4e7" kind="enumvalue"><name>METERSIG_ATTR</name></member>
+    <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aeccc33e1086921e707553fc63f1300d3" kind="enumvalue"><name>METERSIGGRP</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a9d0c8e30ef2f26d72065b07a20d89f05" kind="enumvalue"><name>PAGE</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aa8d7b16976bc414a19b4a24bb820f6e9" kind="enumvalue"><name>PAGES</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a1fdc8b7b336ade04c9a461de426c811b" kind="enumvalue"><name>SCORE</name></member>
@@ -7174,6 +7360,7 @@
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aba2a0a283e0612ad35c12117a34951a6" kind="enumvalue"><name>ARPEG</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a5ac6d401fd55c897cbbef15168c0e97c" kind="enumvalue"><name>BRACKETSPAN</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ae78cf01e8e39f40ebd50e27f4351490f" kind="enumvalue"><name>BREATH</name></member>
+    <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a1eb4c2e5b444414808597455d88c0883" kind="enumvalue"><name>CAESURA</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a67f2113a49586ec728a62df47c57b3ed" kind="enumvalue"><name>DIR</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a7c73603846557c4e56e0a13a58651203" kind="enumvalue"><name>DYNAM</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a940a5780f7ea9d33d5410dc97a408c15" kind="enumvalue"><name>FERMATA</name></member>
@@ -7181,6 +7368,7 @@
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503adbe09766530e4ef5a0d9e91ee95ffd15" kind="enumvalue"><name>GLISS</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a763a752a8fc181dd005b16b874e11396" kind="enumvalue"><name>HAIRPIN</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aff18acec7dbe74299c57839bc71dc0fb" kind="enumvalue"><name>HARM</name></member>
+    <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ab4ceb554802498d50238cfea07a1b3ae" kind="enumvalue"><name>LV</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a2d1ac89494577c2027bf26154e369d85" kind="enumvalue"><name>MORDENT</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a129b9d0934643177e1def8bfbe41c376" kind="enumvalue"><name>MNUM</name></member>
     <member refid="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a8994da4afad14863a8e9118bf7b8d511" kind="enumvalue"><name>OCTAVE</name></member>
@@ -7362,8 +7550,10 @@
     <member refid="attdef_8h_1a284ae096c03bb2bbeb3ec5439f618922" kind="typedef"><name>data_PERCENT</name></member>
     <member refid="attdef_8h_1abb508abb62c9b2dc9a44f745957ebb26" kind="typedef"><name>data_PERCENT_LIMITED</name></member>
     <member refid="attdef_8h_1a1ee2ee7a57f8a27b9bb660ef88f4862a" kind="typedef"><name>data_PERCENT_LIMITED_SIGNED</name></member>
+    <member refid="attdef_8h_1a4bb88652700f3a9cfdc14cde5b40c003" kind="typedef"><name>data_SUMMAND_List</name></member>
     <member refid="attdef_8h_1ad9287a721cd0413eda2f733fe25120de" kind="typedef"><name>xsdAnyURI_List</name></member>
     <member refid="attdef_8h_1aa7c7517df9aacc51f8ab0bf6a88df736" kind="typedef"><name>xsdPositiveInteger_List</name></member>
+    <member refid="functorparams_8h_1adcadd51592a37d9843ce533142becb91" kind="typedef"><name>MIDINoteSequence</name></member>
     <member refid="vrvdef_8h_1a88f97c731b140ac861b13be697d11724" kind="typedef"><name>ArrayOfObjects</name></member>
     <member refid="vrvdef_8h_1a06296c176a6acafc46e107e1d6ea2eea" kind="typedef"><name>ListOfObjects</name></member>
     <member refid="vrvdef_8h_1af46efe784888a2fd5bb33979da5145bc" kind="typedef"><name>ArrayOfComparisons</name></member>
@@ -7382,7 +7572,8 @@
     <member refid="vrvdef_8h_1ad0184df9c199e93253f8d4a6ce297097" kind="typedef"><name>ArrayOfBoundingBoxes</name></member>
     <member refid="vrvdef_8h_1a08796ad3c7e245b32402c2006bf8f5ff" kind="typedef"><name>ArrayOfLedgerLines</name></member>
     <member refid="vrvdef_8h_1a5b385a25b8c7ff4100b1f1301b86a445" kind="typedef"><name>ArrayOfTextElements</name></member>
-    <member refid="vrvdef_8h_1a06ea606a9168e1fab6bfa2dd9ea6a250" kind="typedef"><name>MapOfDotLocs</name></member>
+    <member refid="vrvdef_8h_1a7f193cca649efe4d53777d4f0a8edc28" kind="typedef"><name>MapOfNoteLocs</name></member>
+    <member refid="vrvdef_8h_1ae636d5f9d9a409b5c1605b5a313553be" kind="typedef"><name>MapOfDotLocs</name></member>
     <member refid="vrvdef_8h_1a8948cd8b27f9cbbbe8a21608b224a47c" kind="typedef"><name>MapOfStrOptions</name></member>
     <member refid="vrvdef_8h_1aa76acf973fc45461e158df49bc08fed7" kind="typedef"><name>MapOfPitchAccid</name></member>
     <member refid="vrvdef_8h_1a9ad8e2dec088a44b2422586ba3227543" kind="typedef"><name>MapOfIntGraceAligners</name></member>
@@ -7486,12 +7677,15 @@
   <compound refid="boundary_8h" kind="file"><name>boundary.h</name>
   </compound>
   <compound refid="boundingbox_8h" kind="file"><name>boundingbox.h</name>
+    <member refid="boundingbox_8h_1a856128654859a19408022ae645621e0f" kind="define"><name>BEZIER_APPROXIMATION</name></member>
   </compound>
   <compound refid="bracketspan_8h" kind="file"><name>bracketspan.h</name>
   </compound>
   <compound refid="breath_8h" kind="file"><name>breath.h</name>
   </compound>
   <compound refid="btrem_8h" kind="file"><name>btrem.h</name>
+  </compound>
+  <compound refid="caesura_8h" kind="file"><name>caesura.h</name>
   </compound>
   <compound refid="choice_8h" kind="file"><name>choice.h</name>
   </compound>
@@ -7627,6 +7821,8 @@
   </compound>
   <compound refid="linkinginterface_8h" kind="file"><name>linkinginterface.h</name>
   </compound>
+  <compound refid="lv_8h" kind="file"><name>lv.h</name>
+  </compound>
   <compound refid="mdiv_8h" kind="file"><name>mdiv.h</name>
   </compound>
   <compound refid="measure_8h" kind="file"><name>measure.h</name>
@@ -7634,6 +7830,8 @@
   <compound refid="mensur_8h" kind="file"><name>mensur.h</name>
   </compound>
   <compound refid="metersig_8h" kind="file"><name>metersig.h</name>
+  </compound>
+  <compound refid="metersiggrp_8h" kind="file"><name>metersiggrp.h</name>
   </compound>
   <compound refid="mnum_8h" kind="file"><name>mnum.h</name>
   </compound>
@@ -7853,7 +8051,9 @@
     <member refid="group__nodoc_1ga942ab5856517907ea4f2082d9f35f532" kind="function"><name>GetHumdrum</name></member>
     <member refid="group__nodoc_1ga5ae3fb587d96567263bfebc1261ff4d9" kind="function"><name>SetHumdrumBuffer</name></member>
     <member refid="group__nodoc_1ga11e13d1850cadf28b00a85fde655e133" kind="function"><name>GetHumdrumBuffer</name></member>
+    <member refid="group__nodoc_1gae5a104614acc4edf6794abe71d027210" kind="function"><name>ClearHumdrumBuffer</name></member>
     <member refid="group__nodoc_1ga5b3b3c80844a342a465d4887bb599ae0" kind="function"><name>SetInputFrom</name></member>
+    <member refid="group__nodoc_1gac0b9bfca70ab200ca3e313611e37cc20" kind="function"><name>GetInputFrom</name></member>
     <member refid="group__nodoc_1ga602e2e1f79bb73affe064cb9ba7a4f5a" kind="function"><name>GetOutputTo</name></member>
   </compound>
   <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>

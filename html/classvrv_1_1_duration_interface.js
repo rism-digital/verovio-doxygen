@@ -11,6 +11,6 @@ var classvrv_1_1_duration_interface =
     [ "IsFirstInBeam", "classvrv_1_1_duration_interface.html#ac7abd60beb364ff44323e4e60e11d59f", null ],
     [ "IsInterface", "classvrv_1_1_duration_interface.html#a3c58d1f63c78fb509576ecefce5ea5ab", null ],
     [ "IsLastInBeam", "classvrv_1_1_duration_interface.html#ae07578a3e138bddc967229f1ee93cb94", null ],
-    [ "IsMensuralDur", "classvrv_1_1_duration_interface.html#a187dcf70a92472f9fb5ad3fab5eb6831", null ],
+    [ "IsMensuralDur", "classvrv_1_1_duration_interface.html#a66a8195b6236d862a2234af1fb5256c1", null ],
     [ "Reset", "classvrv_1_1_duration_interface.html#ae9494f82eb00ab3db5c0f0ad5b4b1f2e", null ]
 ];
