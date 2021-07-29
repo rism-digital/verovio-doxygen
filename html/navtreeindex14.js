@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"classvrv_1_1_options.html#aec7f9087afb2abeacb7b92c34db8749e":[1,0,0,216,131],
+"classvrv_1_1_options.html#aed503f37285f97478922ce169640bad7":[1,0,0,216,129],
 "classvrv_1_1_options.html#aeee4defed73cfb5cfbd17428d2b5c696":[1,0,0,216,176],
 "classvrv_1_1_options.html#aefc4eff98ae3f05cdd712070aa696040":[1,0,0,216,33],
 "classvrv_1_1_options.html#af07fdbeb723c5670d21be7b637dfdd47":[1,0,0,216,99],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "classvrv_1_1_prepare_lyrics_params.html#ad295095ed47d19be26241e64ea6f7cf0":[1,0,0,243,3],
 "classvrv_1_1_prepare_plist_params.html":[1,0,0,244],
 "classvrv_1_1_prepare_plist_params.html#a308ee12e349603c67845860c48c4565b":[1,0,0,244,2],
-"classvrv_1_1_prepare_plist_params.html#a5c8d41e37323972c0266fe666e4f9324":[1,0,0,244,0],
-"classvrv_1_1_prepare_plist_params.html#a5efe18cd2a558d878f8e8a20b51363df":[1,0,0,244,1],
-"classvrv_1_1_prepare_pointers_by_layer_params.html":[1,0,0,245]
+"classvrv_1_1_prepare_plist_params.html#a5c8d41e37323972c0266fe666e4f9324":[1,0,0,244,0]
 };

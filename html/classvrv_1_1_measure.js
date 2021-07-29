@@ -54,6 +54,7 @@ var classvrv_1_1_measure =
     [ "GetFirstStaffGrpStaves", "classvrv_1_1_measure.html#a361599317323129d770b37bb2fb88576", null ],
     [ "GetInnerCenterX", "classvrv_1_1_measure.html#a0fefb48a87e3b9ccd5b5f2539cdebee1", null ],
     [ "GetInnerWidth", "classvrv_1_1_measure.html#a5402e44aa3fde09beb9251c738a0ae8c", null ],
+    [ "GetInternalTieEndpoints", "classvrv_1_1_measure.html#a21e59c0fc21d2b1500d84fa527b7d0d1", null ],
     [ "GetLeftBarLine", "classvrv_1_1_measure.html#a88634a443925198303a2ab3b490556e0", null ],
     [ "GetLeftBarLineLeft", "classvrv_1_1_measure.html#a419a8fcbd3697b17d0a7e13893cf956e", null ],
     [ "GetLeftBarLineRight", "classvrv_1_1_measure.html#a2b878b35baafdb08c6b562112d3503ba", null ],
