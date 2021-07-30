@@ -8,6 +8,7 @@ var classvrv_1_1_dir =
     [ "GetTextDirInterface", "classvrv_1_1_dir.html#af6190b09efcc865616870fefe1970ec1", null ],
     [ "GetTimePointInterface", "classvrv_1_1_dir.html#a2364b7032c3e368720db2fdf71a4c618", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_dir.html#a4eb6f92b618b322be4f1d0340deb9005", null ],
+    [ "IsExtenderElement", "classvrv_1_1_dir.html#ae9fc164f9e987b7fda889e14c017427e", null ],
     [ "IsSupportedChild", "classvrv_1_1_dir.html#a589e5bcbb3cc78958fad4cbf39a0b0b9", null ],
     [ "PrepareFloatingGrps", "classvrv_1_1_dir.html#ae0cd9ccfa5b0b12b8ded46fbc96eef6d", null ],
     [ "Reset", "classvrv_1_1_dir.html#ae432921bad571110afc4dc541f657984", null ]

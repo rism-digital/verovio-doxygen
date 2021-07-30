@@ -9,6 +9,7 @@ var classvrv_1_1_dynam =
     [ "GetTextDirInterface", "classvrv_1_1_dynam.html#a94ac71e8b1aa3864c6e6b53432b10a45", null ],
     [ "GetTimePointInterface", "classvrv_1_1_dynam.html#a5305925f82202889890c32f4cb10b78d", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_dynam.html#a14ac04f421eb2b6dcdbc23cfa63772d4", null ],
+    [ "IsExtenderElement", "classvrv_1_1_dynam.html#a44f85c3823f961a72e78aa77607bd56b", null ],
     [ "IsSupportedChild", "classvrv_1_1_dynam.html#ae25aacf2064a19f0f69ec24af9c6b75d", null ],
     [ "IsSymbolOnly", "classvrv_1_1_dynam.html#a240b3048c78b08eb6084c52167574032", null ],
     [ "PrepareFloatingGrps", "classvrv_1_1_dynam.html#a0739a1199a1933b88eb6af34aa352cd5", null ],

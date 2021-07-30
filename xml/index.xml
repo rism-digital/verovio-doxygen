@@ -222,8 +222,9 @@
   </compound>
   <compound refid="classvrv_1_1_adjust_staff_overlap_params" kind="class"><name>vrv::AdjustStaffOverlapParams</name>
     <member refid="classvrv_1_1_adjust_staff_overlap_params_1a40bbf70d04c85dfe29609f522e40fd33" kind="variable"><name>m_previous</name></member>
+    <member refid="classvrv_1_1_adjust_staff_overlap_params_1a6669924f6d02b2053650b7799c45ec98" kind="variable"><name>m_doc</name></member>
     <member refid="classvrv_1_1_adjust_staff_overlap_params_1ae75423ba72878b677c6a60e027c0ff70" kind="variable"><name>m_functor</name></member>
-    <member refid="classvrv_1_1_adjust_staff_overlap_params_1a08c63fbf9ab6c8fb26a6bd7e1718f927" kind="function"><name>AdjustStaffOverlapParams</name></member>
+    <member refid="classvrv_1_1_adjust_staff_overlap_params_1a57c7cbb8ade19af3c52b2602f618ed77" kind="function"><name>AdjustStaffOverlapParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_adjust_syl_spacing_params" kind="class"><name>vrv::AdjustSylSpacingParams</name>
     <member refid="classvrv_1_1_adjust_syl_spacing_params_1ac8d3472ea109205bfd06c526f204e2b6" kind="variable"><name>m_overlapingSyl</name></member>
@@ -1504,6 +1505,7 @@
     <member refid="classvrv_1_1_dir_1a2364b7032c3e368720db2fdf71a4c618" kind="function"><name>GetTimePointInterface</name></member>
     <member refid="classvrv_1_1_dir_1a4eb6f92b618b322be4f1d0340deb9005" kind="function"><name>GetTimeSpanningInterface</name></member>
     <member refid="classvrv_1_1_dir_1a589e5bcbb3cc78958fad4cbf39a0b0b9" kind="function"><name>IsSupportedChild</name></member>
+    <member refid="classvrv_1_1_dir_1ae9fc164f9e987b7fda889e14c017427e" kind="function"><name>IsExtenderElement</name></member>
     <member refid="classvrv_1_1_dir_1ae0cd9ccfa5b0b12b8ded46fbc96eef6d" kind="function"><name>PrepareFloatingGrps</name></member>
   </compound>
   <compound refid="classvrv_1_1_doc" kind="class"><name>vrv::Doc</name>
@@ -1715,6 +1717,7 @@
     <member refid="classvrv_1_1_dynam_1ae25aacf2064a19f0f69ec24af9c6b75d" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_dynam_1a240b3048c78b08eb6084c52167574032" kind="function"><name>IsSymbolOnly</name></member>
     <member refid="classvrv_1_1_dynam_1a0234de69512a615bb0e74f09474cbdd2" kind="function"><name>GetSymbolStr</name></member>
+    <member refid="classvrv_1_1_dynam_1a44f85c3823f961a72e78aa77607bd56b" kind="function"><name>IsExtenderElement</name></member>
     <member refid="classvrv_1_1_dynam_1a0739a1199a1933b88eb6af34aa352cd5" kind="function"><name>PrepareFloatingGrps</name></member>
     <member refid="classvrv_1_1_dynam_1ad54164cf764c40aad9292dd06810c8a3" kind="function"><name>GetSymbolsInStr</name></member>
     <member refid="classvrv_1_1_dynam_1ac2dad3fd8324b00c27279fa23c432b31" kind="function"><name>IsSymbolOnly</name></member>
@@ -2046,8 +2049,11 @@
     <member refid="classvrv_1_1_floating_object_1a67e6ef3b80f122a42bcccd89701bc298" kind="function"><name>GetDrawingGrpId</name></member>
     <member refid="classvrv_1_1_floating_object_1a2a54c03eab79c35ce2030916053bd1d4" kind="function"><name>SetDrawingGrpId</name></member>
     <member refid="classvrv_1_1_floating_object_1abb3c371794922b14e5a0265a0bd27bba" kind="function"><name>SetDrawingGrpObject</name></member>
+    <member refid="classvrv_1_1_floating_object_1a367d3e3b4bfa50bae3e6a59f863199b3" kind="function"><name>SetMaxDrawingYRel</name></member>
+    <member refid="classvrv_1_1_floating_object_1ab6520fb847c3341d60fba34277e011e0" kind="function"><name>GetMaxDrawingYRel</name></member>
     <member refid="classvrv_1_1_floating_object_1af00cc34cc7a7dc0d743f3f9f076ddb96" kind="variable"><name>m_currentPositioner</name></member>
     <member refid="classvrv_1_1_floating_object_1a61b33006f890e334e0a769f0ca630850" kind="variable"><name>m_drawingGrpId</name></member>
+    <member refid="classvrv_1_1_floating_object_1ad919ce6809a044694245c49dce668565" kind="variable"><name>m_maxDrawingYRel</name></member>
     <member refid="classvrv_1_1_floating_object_1accd431410f59318000cb255af143ed49" kind="variable"><name>s_drawingObjectIds</name></member>
     <member refid="classvrv_1_1_floating_object_1abbd346830de7211ed94772948f0e9513" kind="function"><name>UpdateContentBBoxX</name></member>
     <member refid="classvrv_1_1_floating_object_1a0f19109398376ce67d8211faa133e7f5" kind="function"><name>UpdateContentBBoxY</name></member>
@@ -2056,6 +2062,7 @@
     <member refid="classvrv_1_1_floating_object_1a819ad528a043efce1c9a8f860896b603" kind="function"><name>SetCurrentFloatingPositioner</name></member>
     <member refid="classvrv_1_1_floating_object_1aa26df3350328cd96704f766ac3db0615" kind="function"><name>GetCurrentFloatingPositioner</name></member>
     <member refid="classvrv_1_1_floating_object_1aef3059c4ebeb1d581e5ce06319d11050" kind="function"><name>GetCorrespFloatingPositioner</name></member>
+    <member refid="classvrv_1_1_floating_object_1a8781df9fac1bad66c08cdae278be23e4" kind="function"><name>IsExtenderElement</name></member>
     <member refid="classvrv_1_1_floating_object_1a73c7828c73925d4b483c90ea3c45e0a6" kind="function"><name>ResetHorizontalAlignment</name></member>
     <member refid="classvrv_1_1_floating_object_1a641ed5d645ade83bf5c970d3e5cc02c4" kind="function"><name>ResetVerticalAlignment</name></member>
     <member refid="classvrv_1_1_floating_object_1a26acefe41b29aa28c85eb244f624d2c1" kind="function"><name>FillStaffCurrentTimeSpanning</name></member>
