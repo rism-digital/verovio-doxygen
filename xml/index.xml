@@ -5256,16 +5256,25 @@
     <member refid="classvrv_1_1_score_def_1af51ff1e8fe16c96cdbf75c2c091282e8" kind="variable"><name>m_insertScoreDef</name></member>
     <member refid="classvrv_1_1_score_def_1ac0ea174bd473162a9fcbe68c1a420092" kind="variable"><name>m_drawLabels</name></member>
     <member refid="classvrv_1_1_score_def_1a7e8f71b1f155a69a325afe0466fc3205" kind="variable"><name>m_drawingWidth</name></member>
+    <member refid="classvrv_1_1_score_def_1a84f2f55ea03c20bf83d4f315e859b5e3" kind="variable"><name>m_drawingLabelsWidth</name></member>
     <member refid="classvrv_1_1_score_def_1a37bb21b40890e0788b64879b95d337bb" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_score_def_1a1225a27011925b11b208356a11bebdd3" kind="function"><name>ReplaceDrawingValues</name></member>
     <member refid="classvrv_1_1_score_def_1a9c783c24225cb3b84f2096cbc727cbca" kind="function"><name>ReplaceDrawingValues</name></member>
+    <member refid="classvrv_1_1_score_def_1a07288108030c6de09de0cfad0eef5724" kind="function"><name>ReplaceDrawingLabels</name></member>
     <member refid="classvrv_1_1_score_def_1afd16c952de1b8829f86ee7499bbb1fa6" kind="function"><name>GetStaffDef</name></member>
+    <member refid="classvrv_1_1_score_def_1ad4cb8f3acb58e9ab37e8ae19b844513c" kind="function"><name>GetStaffGrp</name></member>
     <member refid="classvrv_1_1_score_def_1aa914794d578ec1fb7f3327c6be007cd4" kind="function"><name>GetStaffNs</name></member>
     <member refid="classvrv_1_1_score_def_1a3fd0342289c22892afde358bf48e4738" kind="function"><name>SetRedrawFlags</name></member>
+    <member refid="classvrv_1_1_score_def_1a3d31e8b536fe875333510f1061d041dc" kind="function"><name>GetDrawingLabelsWidth</name></member>
+    <member refid="classvrv_1_1_score_def_1ae400d4b7d90ed2a72418517976c8a952" kind="function"><name>SetDrawingLabelsWidth</name></member>
     <member refid="classvrv_1_1_score_def_1a9228bda856401d3115b2f2a0023a390a" kind="function"><name>GetMaxStaffSize</name></member>
+    <member refid="classvrv_1_1_score_def_1af88f39cb48aa8df39f4c8de5860a500c" kind="function"><name>IsSectionRestart</name></member>
+    <member refid="classvrv_1_1_score_def_1a5162f9a26dfa55faf566b6e38a79f502" kind="function"><name>ResetHorizontalAlignment</name></member>
     <member refid="classvrv_1_1_score_def_1a682908fdfabf7d58172278157d910e22" kind="function"><name>ConvertToPageBased</name></member>
     <member refid="classvrv_1_1_score_def_1a0201cf78e1a7efbf950650f6105fa0cd" kind="function"><name>CastOffSystems</name></member>
     <member refid="classvrv_1_1_score_def_1ae52790aa45bf26e259bdd4fb923820cc" kind="function"><name>CastOffEncoding</name></member>
+    <member refid="classvrv_1_1_score_def_1a0716608890429faf599ac441151c9540" kind="function"><name>AlignMeasures</name></member>
+    <member refid="classvrv_1_1_score_def_1a9769f1811f4f191af743655e988bbfd7" kind="function"><name>JustifyX</name></member>
     <member refid="classvrv_1_1_score_def_1a3d17257d698cd3670e04ede634d4c0b0" kind="function"><name>FilterList</name></member>
   </compound>
   <compound refid="classvrv_1_1_score_def_element" kind="class"><name>vrv::ScoreDefElement</name>
@@ -5314,6 +5323,8 @@
     <member refid="classvrv_1_1_score_def_set_current_params_1a712231a46d729f5ec346d9fa8b3b7d32" kind="variable"><name>m_previousMeasure</name></member>
     <member refid="classvrv_1_1_score_def_set_current_params_1a20a1be1b03107e50525a5814ecbc6ef2" kind="variable"><name>m_currentSystem</name></member>
     <member refid="classvrv_1_1_score_def_set_current_params_1a1457712111e268c82c59fb9c359a7a23" kind="variable"><name>m_drawLabels</name></member>
+    <member refid="classvrv_1_1_score_def_set_current_params_1a86dc7927a2ffb440886bbd91f03d7860" kind="variable"><name>m_restart</name></member>
+    <member refid="classvrv_1_1_score_def_set_current_params_1a0a16ab75fb3ff5b4f1c9364189c27674" kind="variable"><name>m_hasMeasure</name></member>
     <member refid="classvrv_1_1_score_def_set_current_params_1aa88654ddb4b1d07ac46748902b68743f" kind="variable"><name>m_doc</name></member>
     <member refid="classvrv_1_1_score_def_set_current_params_1af8dc6f5818e29a5790e06e23c7107bac" kind="function"><name>ScoreDefSetCurrentParams</name></member>
   </compound>
@@ -5600,6 +5611,12 @@
     <member refid="classvrv_1_1_staff_grp_1a84b445f6a6c649cd9f35f9fd2adbecaa" kind="function"><name>SetDrawingVisibility</name></member>
     <member refid="classvrv_1_1_staff_grp_1a94713544a37bd12ad3b8aafaff326fd0" kind="function"><name>SetGroupSymbol</name></member>
     <member refid="classvrv_1_1_staff_grp_1ad19d58f46603d24bd12c618ac7f48d36" kind="function"><name>GetGroupSymbol</name></member>
+    <member refid="classvrv_1_1_staff_grp_1acbf00f60e9da8103f3bd83e95045adc3" kind="function"><name>HasLabelInfo</name></member>
+    <member refid="classvrv_1_1_staff_grp_1a600cf5e223f94bcd5383e0b3e727d8ea" kind="function"><name>HasLabelAbbrInfo</name></member>
+    <member refid="classvrv_1_1_staff_grp_1a9b3c8e7fc343e7be633cd3b088346371" kind="function"><name>GetLabel</name></member>
+    <member refid="classvrv_1_1_staff_grp_1a35d4b42350e60297eecf59ca7d816349" kind="function"><name>GetLabelCopy</name></member>
+    <member refid="classvrv_1_1_staff_grp_1a360297d9a877019ea4566ca2c0187a8e" kind="function"><name>GetLabelAbbr</name></member>
+    <member refid="classvrv_1_1_staff_grp_1a11f090a2039c753c09f4c0c743bbebec" kind="function"><name>GetLabelAbbrCopy</name></member>
     <member refid="classvrv_1_1_staff_grp_1a4629bb8321e133fdf5eb564c97714baa" kind="variable"><name>m_drawingVisibility</name></member>
     <member refid="classvrv_1_1_staff_grp_1a82b1472339f9224b56a5c4fbb7b0b431" kind="variable"><name>m_groupSymbol</name></member>
     <member refid="classvrv_1_1_staff_grp_1a3e5fa35120cdeec8f3dc6139a658379e" kind="function"><name>GetFirstLastStaffDef</name></member>
@@ -5848,7 +5865,6 @@
     <member refid="classvrv_1_1_system_1a00b7543c20a944c462b5b8b6ab0a0f13" kind="variable"><name>m_systemRightMar</name></member>
     <member refid="classvrv_1_1_system_1a876d12958421f4a97b13dabd64deeb08" kind="variable"><name>m_yAbs</name></member>
     <member refid="classvrv_1_1_system_1a81e14c9e77b2637c4899c8ce0646ca59" kind="variable"><name>m_xAbs</name></member>
-    <member refid="classvrv_1_1_system_1a968558e99136535da89c65270dc80b3c" kind="variable"><name>m_drawingLabelsWidth</name></member>
     <member refid="classvrv_1_1_system_1a7b772466b57f56986b857cac4c08a018" kind="variable"><name>m_drawingAbbrLabelsWidth</name></member>
     <member refid="classvrv_1_1_system_1ab233f37912d21801c6b4537ea8098fe2" kind="variable"><name>m_drawingXRel</name></member>
     <member refid="classvrv_1_1_system_1ab553279dd8a0432402c4a3b122973b8c" kind="variable"><name>m_drawingYRel</name></member>
@@ -6438,7 +6454,7 @@
     <member refid="classvrv_1_1_view_1a3fa1b793b97e6dc280493bfdbcdcb738" kind="function"><name>DrawStaffDefCautionary</name></member>
     <member refid="classvrv_1_1_view_1add23e8b3aa2cd5befe43d16ad695d230" kind="function"><name>DrawStaffDefLabels</name></member>
     <member refid="classvrv_1_1_view_1a88cca46ca25ecffa69c8a0f76849a58d" kind="function"><name>DrawGrpSym</name></member>
-    <member refid="classvrv_1_1_view_1a67864253f8e320534ef76a3e73ecc627" kind="function"><name>DrawLabels</name></member>
+    <member refid="classvrv_1_1_view_1a87c0d9cac9775c3ecce387e1802eb204" kind="function"><name>DrawLabels</name></member>
     <member refid="classvrv_1_1_view_1a36c099dbaa2678c80e73ceb93ea030f1" kind="function"><name>DrawBracket</name></member>
     <member refid="classvrv_1_1_view_1ae01c9e955e07f860b01f151f4bf4ac2c" kind="function"><name>DrawBracketsq</name></member>
     <member refid="classvrv_1_1_view_1a7f73de86e83df589a23be10668fc656b" kind="function"><name>DrawBrace</name></member>

@@ -62,7 +62,7 @@ var classvrv_1_1_view =
     [ "DrawHorizontalLine", "classvrv_1_1_view.html#af5f16c9130823c44999c0822dc59a815", null ],
     [ "DrawHorizontalSegmentedLine", "classvrv_1_1_view.html#a6c1196dc2138d5223c4868310976409b", null ],
     [ "DrawKeySig", "classvrv_1_1_view.html#ae9b3eb681e1097e9c45cb54aa6d20e73", null ],
-    [ "DrawLabels", "classvrv_1_1_view.html#a67864253f8e320534ef76a3e73ecc627", null ],
+    [ "DrawLabels", "classvrv_1_1_view.html#a87c0d9cac9775c3ecce387e1802eb204", null ],
     [ "DrawLayer", "classvrv_1_1_view.html#a96264ca40ae9920f5bab7e8e61ed8142", null ],
     [ "DrawLayerChildren", "classvrv_1_1_view.html#abdd9b7063751130adf5a424cd59a66b4", null ],
     [ "DrawLayerEditorialElement", "classvrv_1_1_view.html#ac0dee922c65364b7c9b53b126ed40323", null ],

@@ -484,6 +484,7 @@ var hierarchy =
       [ "vrv::Sb", "classvrv_1_1_sb.html", null ],
       [ "vrv::Score", "classvrv_1_1_score.html", null ],
       [ "vrv::Section", "classvrv_1_1_section.html", null ],
+      [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ],
       [ "vrv::TabDurSym", "classvrv_1_1_tab_dur_sym.html", null ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
     ] ],
@@ -581,6 +582,9 @@ var hierarchy =
     ] ],
     [ "AttScalable", null, [
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
+    ] ],
+    [ "AttSectionVis", null, [
+      [ "vrv::Section", "classvrv_1_1_section.html", null ]
     ] ],
     [ "AttSlashCount", null, [
       [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ],

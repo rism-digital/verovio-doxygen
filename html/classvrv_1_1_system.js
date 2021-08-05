@@ -59,7 +59,6 @@ var classvrv_1_1_system =
     [ "UnCastOff", "classvrv_1_1_system.html#a3229696f014d2302f8baea8bb4ef9cc0", null ],
     [ "m_drawingAbbrLabelsWidth", "classvrv_1_1_system.html#a7b772466b57f56986b857cac4c08a018", null ],
     [ "m_drawingJustifiableWidth", "classvrv_1_1_system.html#a81a37b4e788b4507eda62212068673b9", null ],
-    [ "m_drawingLabelsWidth", "classvrv_1_1_system.html#a968558e99136535da89c65270dc80b3c", null ],
     [ "m_drawingTotalWidth", "classvrv_1_1_system.html#a45abb6bf72d83fa52d6d51bba0df3601", null ],
     [ "m_drawingXRel", "classvrv_1_1_system.html#ab233f37912d21801c6b4537ea8098fe2", null ],
     [ "m_drawingYRel", "classvrv_1_1_system.html#ab553279dd8a0432402c4a3b122973b8c", null ],
