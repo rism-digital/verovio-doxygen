@@ -6,6 +6,7 @@ var classvrv_1_1_score_def =
     [ "CastOffEncoding", "classvrv_1_1_score_def.html#ae52790aa45bf26e259bdd4fb923820cc", null ],
     [ "CastOffSystems", "classvrv_1_1_score_def.html#a0201cf78e1a7efbf950650f6105fa0cd", null ],
     [ "Clone", "classvrv_1_1_score_def.html#abe767118fd157ab3c3760a8f17beb52f", null ],
+    [ "ConvertToCastOffMensural", "classvrv_1_1_score_def.html#a2d4ce1e5f6a32ca62d5d5c75e92aa948", null ],
     [ "ConvertToPageBased", "classvrv_1_1_score_def.html#a682908fdfabf7d58172278157d910e22", null ],
     [ "DrawLabels", "classvrv_1_1_score_def.html#a004881a2cfb78869dc4edd96e730344c", null ],
     [ "FilterList", "classvrv_1_1_score_def.html#a3d17257d698cd3670e04ede634d4c0b0", null ],
