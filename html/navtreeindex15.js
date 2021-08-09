@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"classvrv_1_1_prepare_lyrics_params.html":[1,0,0,243],
+"classvrv_1_1_prepare_lyrics_params.html#a1d4cc31595c0cab8162860469853bb1d":[1,0,0,243,0],
 "classvrv_1_1_prepare_lyrics_params.html#a4cda4bd2a1126bda0360f84d5dcb869f":[1,0,0,243,1],
 "classvrv_1_1_prepare_lyrics_params.html#aa9e6572f8233e8e95d3bf94b1207a294":[1,0,0,243,2],
 "classvrv_1_1_prepare_lyrics_params.html#ad295095ed47d19be26241e64ea6f7cf0":[1,0,0,243,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "classvrv_1_1_score_def_set_current_params.html#a0a16ab75fb3ff5b4f1c9364189c27674":[1,0,0,270,6],
 "classvrv_1_1_score_def_set_current_params.html#a1457712111e268c82c59fb9c359a7a23":[1,0,0,270,5],
 "classvrv_1_1_score_def_set_current_params.html#a20a1be1b03107e50525a5814ecbc6ef2":[1,0,0,270,3],
-"classvrv_1_1_score_def_set_current_params.html#a6a5277efd6798ba1ab7e42493d8ea0d2":[1,0,0,270,1],
-"classvrv_1_1_score_def_set_current_params.html#a712231a46d729f5ec346d9fa8b3b7d32":[1,0,0,270,7],
-"classvrv_1_1_score_def_set_current_params.html#a86dc7927a2ffb440886bbd91f03d7860":[1,0,0,270,8]
+"classvrv_1_1_score_def_set_current_params.html#a6a5277efd6798ba1ab7e42493d8ea0d2":[1,0,0,270,1]
 };

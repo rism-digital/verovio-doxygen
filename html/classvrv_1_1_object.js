@@ -27,6 +27,7 @@ var classvrv_1_1_object =
     [ "AdjustHarmGrpsSpacing", "classvrv_1_1_object.html#a905f84521c7583c3f1cdaf806ceecdaf", null ],
     [ "AdjustHarmGrpsSpacingEnd", "classvrv_1_1_object.html#a3feb79622f62f2a9282f3dd1201c3a0c", null ],
     [ "AdjustLayers", "classvrv_1_1_object.html#acd47b579ea43282b32c8c585308d9857", null ],
+    [ "AdjustLayersEnd", "classvrv_1_1_object.html#a665daa8b537723b4c38f61118e027009", null ],
     [ "AdjustSlurs", "classvrv_1_1_object.html#adfa29f3f97c5463c0c0de270636c5e4b", null ],
     [ "AdjustStaffOverlap", "classvrv_1_1_object.html#a56434ce48d536c537485260bec7ef6c2", null ],
     [ "AdjustSylSpacing", "classvrv_1_1_object.html#af1cfac1b1885dea453542d8fccdc4461", null ],

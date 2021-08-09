@@ -415,27 +415,27 @@ $(document).ready(function(){initNavTree('functorparams_8h_source.html',''); ini
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
 <div class="line"><a name="l00438"></a><span class="lineno"><a class="line" href="classvrv_1_1_adjust_layers_params.html">  438</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_adjust_layers_params.html">AdjustLayersParams</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> {</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <a class="code" href="classvrv_1_1_adjust_layers_params.html">AdjustLayersParams</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="code" href="classvrv_1_1_functor.html">Functor</a> *functor, <span class="keyword">const</span> std::vector&lt;int&gt; &amp;staffNs)</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <a class="code" href="classvrv_1_1_adjust_layers_params.html">AdjustLayersParams</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="code" href="classvrv_1_1_functor.html">Functor</a> *functor, <a class="code" href="classvrv_1_1_functor.html">Functor</a> *functorEnd, <span class="keyword">const</span> std::vector&lt;int&gt; &amp;staffNs)</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    {</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        m_currentLayerN = VRV_UNSET;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        m_currentNote = NULL;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        m_currentChord = NULL;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        m_doc = doc;</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        m_functor = functor;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        m_staffNs = staffNs;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        m_unison = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        m_ignoreDots = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        m_doc = doc;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        m_functor = functor;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        m_functorEnd = functorEnd;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        m_staffNs = staffNs;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        m_unison = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        m_ignoreDots = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        m_accumulatedShift = 0;</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    }</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    std::vector&lt;int&gt; m_staffNs;</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <span class="keywordtype">int</span> m_currentLayerN;</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    std::vector&lt;LayerElement *&gt; m_previous;</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    std::vector&lt;LayerElement *&gt; m_current;</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <a class="code" href="classvrv_1_1_note.html">Note</a> *m_currentNote;</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <a class="code" href="classvrv_1_1_chord.html">Chord</a> *m_currentChord;</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <a class="code" href="classvrv_1_1_doc.html">Doc</a> *m_doc;</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <a class="code" href="classvrv_1_1_functor.html">Functor</a> *m_functor;</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    <span class="keywordtype">bool</span> m_unison;</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="keywordtype">bool</span> m_ignoreDots;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <a class="code" href="classvrv_1_1_doc.html">Doc</a> *m_doc;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <a class="code" href="classvrv_1_1_functor.html">Functor</a> *m_functor;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <a class="code" href="classvrv_1_1_functor.html">Functor</a> *m_functorEnd;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keywordtype">bool</span> m_unison;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    <span class="keywordtype">bool</span> m_ignoreDots;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="keywordtype">int</span> m_accumulatedShift;</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;};</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160; </div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
@@ -1844,7 +1844,7 @@ $(document).ready(function(){initNavTree('functorparams_8h_source.html',''); ini
 <div class="ttc" id="astructvrv_1_1_int_tree_html"><div class="ttname"><a href="structvrv_1_1_int_tree.html">vrv::IntTree</a></div><div class="ttdoc">Generic int map recursive structure for storing hierachy of values For example, we want to process al...</div><div class="ttdef"><b>Definition:</b> vrvdef.h:367</div></div>
 <div class="ttc" id="aclassvrv_1_1_align_measures_params_html"><div class="ttname"><a href="classvrv_1_1_align_measures_params.html">vrv::AlignMeasuresParams</a></div><div class="ttdoc">member 0: the cumulated shift member 1: the cumulated justifiable width</div><div class="ttdef"><b>Definition:</b> functorparams.h:779</div></div>
 <div class="ttc" id="aclassvrv_1_1_clef_html"><div class="ttname"><a href="classvrv_1_1_clef.html">vrv::Clef</a></div><div class="ttdoc">This class models the MEI &lt;clef&gt; element.</div><div class="ttdef"><b>Definition:</b> clef.h:26</div></div>
-<div class="ttc" id="aclassvrv_1_1_functor_html"><div class="ttname"><a href="classvrv_1_1_functor.html">vrv::Functor</a></div><div class="ttdoc">This class is an abstact Functor for the object hierarchy.</div><div class="ttdef"><b>Definition:</b> object.h:1472</div></div>
+<div class="ttc" id="aclassvrv_1_1_functor_html"><div class="ttname"><a href="classvrv_1_1_functor.html">vrv::Functor</a></div><div class="ttdoc">This class is an abstact Functor for the object hierarchy.</div><div class="ttdef"><b>Definition:</b> object.h:1475</div></div>
 <div class="ttc" id="aclassvrv_1_1_prepare_timestamps_params_html"><div class="ttname"><a href="classvrv_1_1_prepare_timestamps_params.html">vrv::PrepareTimestampsParams</a></div><div class="ttdoc">member 0: std::vector&lt; Object*&gt;* that holds the current elements to match member 1: ListOfObjectBeatP...</div><div class="ttdef"><b>Definition:</b> functorparams.h:1956</div></div>
 <div class="ttc" id="aclassvrv_1_1_adjust_syl_spacing_params_html"><div class="ttname"><a href="classvrv_1_1_adjust_syl_spacing_params.html">vrv::AdjustSylSpacingParams</a></div><div class="ttdoc">member 0: a vector adjustment tuples (Aligment start, Aligment end, distance) member 1: a pointer to ...</div><div class="ttdef"><b>Definition:</b> functorparams.h:522</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_elements_in_time_span_params_html"><div class="ttname"><a href="classvrv_1_1_layer_elements_in_time_span_params.html">vrv::LayerElementsInTimeSpanParams</a></div><div class="ttdoc">member 0: the time of the event member 1: the duration of the event member 2: the list of layer eleme...</div><div class="ttdef"><b>Definition:</b> functorparams.h:1700</div></div>
@@ -1862,7 +1862,7 @@ $(document).ready(function(){initNavTree('functorparams_8h_source.html',''); ini
 <div class="ttc" id="aclassvrv_1_1_note_html"><div class="ttname"><a href="classvrv_1_1_note.html">vrv::Note</a></div><div class="ttdoc">This class models the MEI &lt;note&gt; element.</div><div class="ttdef"><b>Definition:</b> note.h:46</div></div>
 <div class="ttc" id="aclassvrv_1_1_page_html"><div class="ttname"><a href="classvrv_1_1_page.html">vrv::Page</a></div><div class="ttdoc">This class represents a page in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> page.h:31</div></div>
 <div class="ttc" id="aclassvrv_1_1_apply_p_p_u_factor_params_html"><div class="ttname"><a href="classvrv_1_1_apply_p_p_u_factor_params.html">vrv::ApplyPPUFactorParams</a></div><div class="ttdoc">member 0: the current page</div><div class="ttdef"><b>Definition:</b> functorparams.h:869</div></div>
-<div class="ttc" id="aclassvrv_1_1_measure_aligner_html"><div class="ttname"><a href="classvrv_1_1_measure_aligner.html">vrv::MeasureAligner</a></div><div class="ttdoc">This class aligns the content of a measure It contains a vector of Alignment.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:435</div></div>
+<div class="ttc" id="aclassvrv_1_1_measure_aligner_html"><div class="ttname"><a href="classvrv_1_1_measure_aligner.html">vrv::MeasureAligner</a></div><div class="ttdoc">This class aligns the content of a measure It contains a vector of Alignment.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:436</div></div>
 <div class="ttc" id="aclassvrv_1_1_score_def_set_grp_sym_params_html"><div class="ttname"><a href="classvrv_1_1_score_def_set_grp_sym_params.html">vrv::ScoreDefSetGrpSymParams</a></div><div class="ttdoc">member 0: the functor to be redirected to the System::m_currentScoreDef</div><div class="ttdef"><b>Definition:</b> functorparams.h:2160</div></div>
 <div class="ttc" id="aclassvrv_1_1_facsimile_html"><div class="ttname"><a href="classvrv_1_1_facsimile.html">vrv::Facsimile</a></div><div class="ttdoc">Implements the facsimile element in MEI.</div><div class="ttdef"><b>Definition:</b> facsimile.h:31</div></div>
 <div class="ttc" id="aclassvrv_1_1_prepare_rpt_params_html"><div class="ttname"><a href="classvrv_1_1_prepare_rpt_params.html">vrv::PrepareRptParams</a></div><div class="ttdoc">member 0: a pointer to the current MRpt pointer member 1: a pointer to the data_BOOLEAN indicating if...</div><div class="ttdef"><b>Definition:</b> functorparams.h:1904</div></div>
@@ -1913,7 +1913,7 @@ $(document).ready(function(){initNavTree('functorparams_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>functorparams.h</b></li>
-    <li class="footer">Generated on Mon Aug 9 2021 11:53:06 for Verovio by
+    <li class="footer">Generated on Mon Aug 9 2021 13:43:20 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
