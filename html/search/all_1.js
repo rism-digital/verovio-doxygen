@@ -10,11 +10,9 @@ var searchData=
   ['beatrpt_127',['BeatRpt',['../classvrv_1_1_beat_rpt.html',1,'vrv']]],
   ['beziercurve_128',['BezierCurve',['../classvrv_1_1_bezier_curve.html',1,'vrv']]],
   ['binarycomp_129',['binaryComp',['../classvrv_1_1_object.html#aa63ca849b67044acc38f89a6030b03c2',1,'vrv::Object']]],
-  ['boundaryend_130',['BoundaryEnd',['../classvrv_1_1_boundary_end.html',1,'vrv']]],
-  ['boundarystartinterface_131',['BoundaryStartInterface',['../classvrv_1_1_boundary_start_interface.html',1,'vrv']]],
-  ['boundingbox_132',['BoundingBox',['../classvrv_1_1_bounding_box.html',1,'vrv']]],
-  ['bracketspan_133',['BracketSpan',['../classvrv_1_1_bracket_span.html',1,'vrv']]],
-  ['breath_134',['Breath',['../classvrv_1_1_breath.html',1,'vrv']]],
-  ['brush_135',['Brush',['../classvrv_1_1_brush.html',1,'vrv']]],
-  ['btrem_136',['BTrem',['../classvrv_1_1_b_trem.html',1,'vrv']]]
+  ['boundingbox_130',['BoundingBox',['../classvrv_1_1_bounding_box.html',1,'vrv']]],
+  ['bracketspan_131',['BracketSpan',['../classvrv_1_1_bracket_span.html',1,'vrv']]],
+  ['breath_132',['Breath',['../classvrv_1_1_breath.html',1,'vrv']]],
+  ['brush_133',['Brush',['../classvrv_1_1_brush.html',1,'vrv']]],
+  ['btrem_134',['BTrem',['../classvrv_1_1_b_trem.html',1,'vrv']]]
 ];

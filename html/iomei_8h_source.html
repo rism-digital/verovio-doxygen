@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('iomei_8h_source.html',''); initResizab
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span>BarLine;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span>Beam;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span>BeatRpt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span>BoundaryEnd;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span>SystemElementEnd;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>BracketSpan;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span>Breath;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">class </span>BTrem;</div>
@@ -283,7 +283,7 @@ $(document).ready(function(){initNavTree('iomei_8h_source.html',''); initResizab
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordtype">void</span> WritePage(pugi::xml_node currentNode, <a class="code" href="classvrv_1_1_page.html">Page</a> *page);</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordtype">void</span> WriteSystem(pugi::xml_node currentNode, <a class="code" href="classvrv_1_1_system.html">System</a> *system);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordtype">void</span> WriteBoundaryEnd(pugi::xml_node currentNode, <a class="code" href="classvrv_1_1_boundary_end.html">BoundaryEnd</a> *boundaryEnd);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordtype">void</span> WriteSystemElementEnd(pugi::xml_node currentNode, <a class="code" href="classvrv_1_1_system_element_end.html">SystemElementEnd</a> *elementEnd);</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordtype">void</span> WriteScoreDef(pugi::xml_node currentNode, <a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *scoreDef);</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordtype">void</span> WriteGrpSym(pugi::xml_node currentNode, <a class="code" href="classvrv_1_1_grp_sym.html">GrpSym</a> *grmSym);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordtype">void</span> WritePgFoot(pugi::xml_node currentNode, <a class="code" href="classvrv_1_1_pg_foot.html">PgFoot</a> *pgFoot);</div>
@@ -471,7 +471,7 @@ $(document).ready(function(){initNavTree('iomei_8h_source.html',''); initResizab
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <span class="keywordtype">bool</span> ReadPageChildren(<a class="code" href="classvrv_1_1_object.html">Object</a> *parent, pugi::xml_node parentNode);</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keywordtype">bool</span> ReadSystem(<a class="code" href="classvrv_1_1_object.html">Object</a> *parent, pugi::xml_node system);</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <span class="keywordtype">bool</span> ReadSystemChildren(<a class="code" href="classvrv_1_1_object.html">Object</a> *parent, pugi::xml_node parentNode);</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="keywordtype">bool</span> ReadBoundaryEnd(<a class="code" href="classvrv_1_1_object.html">Object</a> *parent, pugi::xml_node boundaryEnd);</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="keywordtype">bool</span> ReadSystemElementEnd(<a class="code" href="classvrv_1_1_object.html">Object</a> *parent, pugi::xml_node elementEnd);</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    <span class="keywordtype">bool</span> ReadScoreDef(<a class="code" href="classvrv_1_1_object.html">Object</a> *parent, pugi::xml_node scoreDef);</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    <span class="keywordtype">bool</span> ReadScoreDefChildren(<a class="code" href="classvrv_1_1_object.html">Object</a> *parent, pugi::xml_node parentNode);</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <span class="keywordtype">bool</span> ReadGrpSym(<a class="code" href="classvrv_1_1_object.html">Object</a> *parent, pugi::xml_node grpSym);</div>
@@ -733,7 +733,6 @@ $(document).ready(function(){initNavTree('iomei_8h_source.html',''); initResizab
 <div class="ttc" id="aclassvrv_1_1_output_html"><div class="ttname"><a href="classvrv_1_1_output.html">vrv::Output</a></div><div class="ttdoc">This class is a base class for output classes.</div><div class="ttdef"><b>Definition:</b> io.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_tie_html"><div class="ttname"><a href="classvrv_1_1_tie.html">vrv::Tie</a></div><div class="ttdoc">This class models the MEI &lt;tie&gt; element.</div><div class="ttdef"><b>Definition:</b> tie.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_orig_html"><div class="ttname"><a href="classvrv_1_1_orig.html">vrv::Orig</a></div><div class="ttdef"><b>Definition:</b> orig.h:20</div></div>
-<div class="ttc" id="aclassvrv_1_1_boundary_end_html"><div class="ttname"><a href="classvrv_1_1_boundary_end.html">vrv::BoundaryEnd</a></div><div class="ttdoc">This class models an end milestone element and has no MEI equivalent.</div><div class="ttdef"><b>Definition:</b> boundary.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_dir_html"><div class="ttname"><a href="classvrv_1_1_dir.html">vrv::Dir</a></div><div class="ttdoc">This class models the MEI &lt;dir&gt; element.</div><div class="ttdef"><b>Definition:</b> dir.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_instr_def_html"><div class="ttname"><a href="classvrv_1_1_instr_def.html">vrv::InstrDef</a></div><div class="ttdoc">This class models the MEI &lt;instrDef&gt; element.</div><div class="ttdef"><b>Definition:</b> instrdef.h:24</div></div>
 <div class="ttc" id="aclassvrv_1_1_ref_html"><div class="ttname"><a href="classvrv_1_1_ref.html">vrv::Ref</a></div><div class="ttdoc">This class models the MEI &lt;ref&gt; element.</div><div class="ttdef"><b>Definition:</b> ref.h:23</div></div>
@@ -793,6 +792,7 @@ $(document).ready(function(){initNavTree('iomei_8h_source.html',''); initResizab
 <div class="ttc" id="aclassvrv_1_1_label_html"><div class="ttname"><a href="classvrv_1_1_label.html">vrv::Label</a></div><div class="ttdoc">This class models the MEI &lt;label&gt; element.</div><div class="ttdef"><b>Definition:</b> label.h:22</div></div>
 <div class="ttc" id="aclassvrv_1_1_m_e_i_output_html_a2ecd99315ccb1bac894cca2dc4dfa6ec"><div class="ttname"><a href="classvrv_1_1_m_e_i_output.html#a2ecd99315ccb1bac894cca2dc4dfa6ec">vrv::MEIOutput::SetRemoveIds</a></div><div class="ttdeci">void SetRemoveIds(bool removeIds)</div><div class="ttdoc">Setter for remove Ids flag for the MEI output (default is false)</div><div class="ttdef"><b>Definition:</b> iomei.h:209</div></div>
 <div class="ttc" id="aclassvrv_1_1_facsimile_interface_html"><div class="ttname"><a href="classvrv_1_1_facsimile_interface.html">vrv::FacsimileInterface</a></div><div class="ttdef"><b>Definition:</b> facsimileinterface.h:23</div></div>
+<div class="ttc" id="aclassvrv_1_1_system_element_end_html"><div class="ttname"><a href="classvrv_1_1_system_element_end.html">vrv::SystemElementEnd</a></div><div class="ttdoc">This class models an end milestone element and has no MEI equivalent.</div><div class="ttdef"><b>Definition:</b> boundary.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_dot_html"><div class="ttname"><a href="classvrv_1_1_dot.html">vrv::Dot</a></div><div class="ttdef"><b>Definition:</b> dot.h:22</div></div>
 <div class="ttc" id="aclassvrv_1_1_m_e_i_output_html"><div class="ttname"><a href="classvrv_1_1_m_e_i_output.html">vrv::MEIOutput</a></div><div class="ttdoc">This class is a file output stream for writing MEI files.</div><div class="ttdef"><b>Definition:</b> iomei.h:168</div></div>
 <div class="ttc" id="aclassvrv_1_1_fing_html"><div class="ttname"><a href="classvrv_1_1_fing.html">vrv::Fing</a></div><div class="ttdoc">This class models the MEI &lt;fing&gt; element.</div><div class="ttdef"><b>Definition:</b> fing.h:25</div></div>
@@ -839,7 +839,7 @@ $(document).ready(function(){initNavTree('iomei_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>iomei.h</b></li>
-    <li class="footer">Generated on Tue Aug 10 2021 11:35:08 for Verovio by
+    <li class="footer">Generated on Tue Aug 10 2021 11:37:25 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

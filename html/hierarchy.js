@@ -740,12 +740,12 @@ var hierarchy =
       [ "vrv::Surface", "classvrv_1_1_surface.html", null ],
       [ "vrv::System", "classvrv_1_1_system.html", null ],
       [ "vrv::SystemElement", "classvrv_1_1_system_element.html", [
-        [ "vrv::BoundaryEnd", "classvrv_1_1_boundary_end.html", null ],
         [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
         [ "vrv::Expansion", "classvrv_1_1_expansion.html", null ],
         [ "vrv::Pb", "classvrv_1_1_pb.html", null ],
         [ "vrv::Sb", "classvrv_1_1_sb.html", null ],
-        [ "vrv::Section", "classvrv_1_1_section.html", null ]
+        [ "vrv::Section", "classvrv_1_1_section.html", null ],
+        [ "vrv::SystemElementEnd", "classvrv_1_1_system_element_end.html", null ]
       ] ],
       [ "vrv::TextElement", "classvrv_1_1_text_element.html", null ],
       [ "vrv::Zone", "classvrv_1_1_zone.html", null ]
@@ -785,11 +785,6 @@ var hierarchy =
     [ "vrv::BeamElementCoord", "classvrv_1_1_beam_element_coord.html", null ],
     [ "vrv::BeamSegment", "classvrv_1_1_beam_segment.html", null ],
     [ "vrv::BezierCurve", "classvrv_1_1_bezier_curve.html", null ],
-    [ "vrv::BoundaryStartInterface", "classvrv_1_1_boundary_start_interface.html", [
-      [ "vrv::EditorialElement", "classvrv_1_1_editorial_element.html", null ],
-      [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
-      [ "vrv::Section", "classvrv_1_1_section.html", null ]
-    ] ],
     [ "vrv::BoundingBox", "classvrv_1_1_bounding_box.html", [
       [ "vrv::FloatingPositioner", "classvrv_1_1_floating_positioner.html", [
         [ "vrv::FloatingCurvePositioner", "classvrv_1_1_floating_curve_positioner.html", null ]
@@ -1049,6 +1044,11 @@ var hierarchy =
     [ "vrv::StemmedDrawingInterface", "classvrv_1_1_stemmed_drawing_interface.html", [
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ]
+    ] ],
+    [ "vrv::SystemElementStartInterface", "classvrv_1_1_system_element_start_interface.html", [
+      [ "vrv::EditorialElement", "classvrv_1_1_editorial_element.html", null ],
+      [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
+      [ "vrv::Section", "classvrv_1_1_section.html", null ]
     ] ],
     [ "vrv::TextDrawingParams", "classvrv_1_1_text_drawing_params.html", null ],
     [ "vrv::TextExtend", "classvrv_1_1_text_extend.html", null ],

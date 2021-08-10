@@ -4,12 +4,12 @@
     <compoundname>vrv::SystemElement</compoundname>
     <basecompoundref refid="classvrv_1_1_floating_object" prot="public" virt="non-virtual">vrv::FloatingObject</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">AttTyped</basecompoundref>
-    <derivedcompoundref refid="classvrv_1_1_boundary_end" prot="public" virt="non-virtual">vrv::BoundaryEnd</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_ending" prot="public" virt="non-virtual">vrv::Ending</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_expansion" prot="public" virt="non-virtual">vrv::Expansion</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_pb" prot="public" virt="non-virtual">vrv::Pb</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_sb" prot="public" virt="non-virtual">vrv::Sb</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_section" prot="public" virt="non-virtual">vrv::Section</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_system_element_end" prot="public" virt="non-virtual">vrv::SystemElementEnd</derivedcompoundref>
     <includes refid="systemelement_8h" local="no">systemelement.h</includes>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors, reset methods</header>
@@ -66,7 +66,7 @@
         <reimplements refid="classvrv_1_1_floating_object_1a598b5443645caf3544285c9b99bfcdbb">Reset</reimplements>
         <reimplementedby refid="classvrv_1_1_sb_1a551be1cf0301942047b57576508f1134">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_pb_1a7826c28da54c675a9e504fc6b223c5e8">Reset</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_boundary_end_1a810d3a039a5ae97a502f032af3c72b4f">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_system_element_end_1ac13f9107ed456c6daa26dece9a1d36ac">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_expansion_1a5fc93a2c358ef3458ae4eb29e49fefda">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_section_1afcb0ff64a71c4041ad1f64a27af9b2cd">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_ending_1a8c2c8987af55410b2bc755cdeb73e1e0">Reset</reimplementedby>
@@ -88,7 +88,7 @@
         <reimplements refid="classvrv_1_1_floating_object_1ae043bc6c34e3044bd8bf1befa9ad3726">GetClassId</reimplements>
         <reimplementedby refid="classvrv_1_1_sb_1a58e18defc2d478bc7f33f08980ecde8b">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_pb_1aaa968577f649819d10ed3ee53e60ef58">GetClassId</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_boundary_end_1a78ebc275970fdb75d2efbacbca166f01">GetClassId</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_system_element_end_1a48ddf2302fcffd9f4428ba647b91410d">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_expansion_1aa3bc2aa2df8a8ac06fb69f04c161fc65">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_section_1a3a8f93b25f4747a02f151d9acbe21339">GetClassId</reimplementedby>
         <reimplementedby refid="classvrv_1_1_ending_1aa2da16ca00ba71020bf0650e9792bebe">GetClassId</reimplementedby>
@@ -166,7 +166,7 @@
         <name>CastOffSystems</name>
         <reimplements refid="classvrv_1_1_object_1a15c5f866aed95ea5c5b051c5c7e47137">CastOffSystems</reimplements>
         <reimplementedby refid="classvrv_1_1_sb_1ab25617535beabced2e5bb1bf874b9624">CastOffSystems</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_boundary_end_1ae0b4120a6ca6470fca91d69b1c865932">CastOffSystems</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_system_element_end_1a9ebe1d0d45c00a50f792a4ac2cdc04ff">CastOffSystems</reimplementedby>
         <reimplementedby refid="classvrv_1_1_ending_1a90e151ed74273b4ae227d27b3b41c4d8">CastOffSystems</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
@@ -224,31 +224,37 @@
         <label>vrv::BoundingBox</label>
         <link refid="classvrv_1_1_bounding_box"/>
       </node>
-      <node id="11">
+      <node id="10">
         <label>vrv::Section</label>
         <link refid="classvrv_1_1_section"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8">
+      <node id="7">
         <label>vrv::Expansion</label>
         <link refid="classvrv_1_1_expansion"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7">
+      <node id="6">
         <label>vrv::Ending</label>
         <link refid="classvrv_1_1_ending"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9">
+      <node id="8">
         <label>vrv::Pb</label>
         <link refid="classvrv_1_1_pb"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10">
+      <node id="11">
+        <label>vrv::SystemElementEnd</label>
+        <link refid="classvrv_1_1_system_element_end"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
         <label>vrv::Sb</label>
         <link refid="classvrv_1_1_sb"/>
         <childnode refid="1" relation="public-inheritance">
@@ -266,12 +272,6 @@
         <label>vrv::Object</label>
         <link refid="classvrv_1_1_object"/>
         <childnode refid="4" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>vrv::BoundaryEnd</label>
-        <link refid="classvrv_1_1_boundary_end"/>
-        <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

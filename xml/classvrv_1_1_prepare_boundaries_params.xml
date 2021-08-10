@@ -31,9 +31,9 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="1737" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="1737" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_prepare_boundaries_params_1a23fb31f49e7cfd9701a7e7a0a098b4a9" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classvrv_1_1_boundary_start_interface" kindref="compound">BoundaryStartInterface</ref> * &gt;</type>
-        <definition>std::vector&lt;BoundaryStartInterface *&gt; vrv::PrepareBoundariesParams::m_startBoundaries</definition>
+      <memberdef kind="variable" id="classvrv_1_1_prepare_boundaries_params_1ae89f7eeed20f5701906a94c62e422bed" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classvrv_1_1_system_element_start_interface" kindref="compound">SystemElementStartInterface</ref> * &gt;</type>
+        <definition>std::vector&lt;SystemElementStartInterface *&gt; vrv::PrepareBoundariesParams::m_startBoundaries</definition>
         <argsstring></argsstring>
         <name>m_startBoundaries</name>
         <briefdescription>
@@ -161,11 +161,13 @@
         <childnode refid="6" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9">
-        <label>vrv::BoundaryStartInterface</label>
-        <link refid="classvrv_1_1_boundary_start_interface"/>
-        <childnode refid="10" relation="usage">
-          <edgelabel>m_end</edgelabel>
+      <node id="10">
+        <label>vrv::SystemElementEnd</label>
+        <link refid="classvrv_1_1_system_element_end"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>m_start</edgelabel>
         </childnode>
       </node>
       <node id="18">
@@ -191,17 +193,15 @@
         <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10">
-        <label>vrv::BoundaryEnd</label>
-        <link refid="classvrv_1_1_boundary_end"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-        <childnode refid="6" relation="usage">
-          <edgelabel>m_start</edgelabel>
-        </childnode>
-      </node>
       <node id="11">
         <label>AttLineRend</label>
+      </node>
+      <node id="9">
+        <label>vrv::SystemElementStartInterface</label>
+        <link refid="classvrv_1_1_system_element_start_interface"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>m_end</edgelabel>
+        </childnode>
       </node>
       <node id="12">
         <label>AttNNumberLike</label>
@@ -215,7 +215,7 @@
       <member refid="classvrv_1_1_functor_params_1a2ac6c84a04cc3d083441e674f488050e" prot="public" virt="non-virtual"><scope>vrv::PrepareBoundariesParams</scope><name>FunctorParams</name></member>
       <member refid="classvrv_1_1_prepare_boundaries_params_1ae5be9d42a5025a69b5c637268683616a" prot="public" virt="non-virtual"><scope>vrv::PrepareBoundariesParams</scope><name>m_currentEnding</name></member>
       <member refid="classvrv_1_1_prepare_boundaries_params_1a98313f097fd3b8cd507b7525fb505815" prot="public" virt="non-virtual"><scope>vrv::PrepareBoundariesParams</scope><name>m_lastMeasure</name></member>
-      <member refid="classvrv_1_1_prepare_boundaries_params_1a23fb31f49e7cfd9701a7e7a0a098b4a9" prot="public" virt="non-virtual"><scope>vrv::PrepareBoundariesParams</scope><name>m_startBoundaries</name></member>
+      <member refid="classvrv_1_1_prepare_boundaries_params_1ae89f7eeed20f5701906a94c62e422bed" prot="public" virt="non-virtual"><scope>vrv::PrepareBoundariesParams</scope><name>m_startBoundaries</name></member>
       <member refid="classvrv_1_1_prepare_boundaries_params_1a6ca17923fccb2236ff20bc6b2a688a57" prot="public" virt="non-virtual"><scope>vrv::PrepareBoundariesParams</scope><name>PrepareBoundariesParams</name></member>
       <member refid="classvrv_1_1_functor_params_1ae8cb423b21bff493ebdfea2189173191" prot="public" virt="virtual"><scope>vrv::PrepareBoundariesParams</scope><name>~FunctorParams</name></member>
     </listofallmembers>
