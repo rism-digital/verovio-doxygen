@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"classvrv_1_1_view.html#a63a1674d9b36c2b1d1ccb358cc968961":[1,0,0,329,191],
 "classvrv_1_1_view.html#a651558f192674df0282bd069fb7a8e9c":[1,0,0,329,78],
 "classvrv_1_1_view.html#a673da3b81291694b9cc4c54fa48fa993":[1,0,0,329,25],
 "classvrv_1_1_view.html#a67afe613a42dbeb6a91796438bee7a91":[1,0,0,329,75],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "fing_8h_source.html":[2,0,56],
 "floatingobject_8h_source.html":[2,0,57],
 "ftrem_8h_source.html":[2,0,58],
-"functions.html":[1,3,0,0],
-"functions.html":[1,3,0]
+"functions.html":[1,3,0,0]
 };

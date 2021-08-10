@@ -154,6 +154,7 @@ var classvrv_1_1_options =
     [ "m_spacingNonLinear", "classvrv_1_1_options.html#af2e88010e429682b31a80a419a295d05", null ],
     [ "m_spacingStaff", "classvrv_1_1_options.html#a6a940aa9b39509710316b3a0bf414f5f", null ],
     [ "m_spacingSystem", "classvrv_1_1_options.html#a0f1fad5d7d9357190f7642f9836f504d", null ],
+    [ "m_staccatoCenter", "classvrv_1_1_options.html#a7ef932575dd77e6100fb40d8f536a82a", null ],
     [ "m_staffLineWidth", "classvrv_1_1_options.html#abea51a72096d7e1ef5007badca46d2de", null ],
     [ "m_standardOutput", "classvrv_1_1_options.html#af7a66c62b9f8308b61d99fcfe5899b93", null ],
     [ "m_stemWidth", "classvrv_1_1_options.html#a28ef5b887e4b46f0577c82989a668452", null ],
