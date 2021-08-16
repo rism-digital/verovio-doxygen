@@ -203,60 +203,61 @@ $(document).ready(function(){initNavTree('staff_8h_source.html',''); initResizab
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordtype">void</span> AddLedgerLines(ArrayOfLedgerLines &amp;lines, <span class="keywordtype">int</span> count, <span class="keywordtype">int</span> left, <span class="keywordtype">int</span> right, <span class="keywordtype">int</span> extension);</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordtype">void</span> AdjustLedgerLines(ArrayOfLedgerLines &amp;lines, <span class="keywordtype">int</span> extension, <span class="keywordtype">int</span> minExtension);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00254"></a><span class="lineno"><a class="line" href="classvrv_1_1_staff.html#a983ca678e5969c874a018a2b3587942c">  254</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff.html#a983ca678e5969c874a018a2b3587942c">m_drawingLines</a>;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
-<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="classvrv_1_1_staff.html#a51a65ab400013ddc21d125a01aa2256e">  259</a></span>&#160;    data_NOTATIONTYPE <a class="code" href="classvrv_1_1_staff.html#a51a65ab400013ddc21d125a01aa2256e">m_drawingNotationType</a>;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classvrv_1_1_staff.html#af64a2d11ba5b97412094e00d6f908c63">  264</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff.html#af64a2d11ba5b97412094e00d6f908c63">m_drawingStaffSize</a>;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="classvrv_1_1_staff.html#a172c03af3f8a3beb704f4bb35a751966">  269</a></span>&#160;    std::vector&lt;Object *&gt; <a class="code" href="classvrv_1_1_staff.html#a172c03af3f8a3beb704f4bb35a751966">m_timeSpanningElements</a>;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
-<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="classvrv_1_1_staff.html#abf3552a9fecc27efcc21fae14cf1836f">  275</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff.html#abf3552a9fecc27efcc21fae14cf1836f">m_yAbs</a>;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *m_drawingStaffDef;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <a class="code" href="classvrv_1_1_tuning.html">Tuning</a> *m_drawingTuning;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <a class="code" href="classvrv_1_1_staff_alignment.html">StaffAlignment</a> *m_staffAlignment;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    ArrayOfLedgerLines m_ledgerLinesAbove;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    ArrayOfLedgerLines m_ledgerLinesBelow;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    ArrayOfLedgerLines m_ledgerLinesAboveCue;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    ArrayOfLedgerLines m_ledgerLinesBelowCue;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;};</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment">// LedgerLine</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
-<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="classvrv_1_1_ledger_line.html">  307</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_ledger_line.html">LedgerLine</a> {</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <a class="code" href="classvrv_1_1_ledger_line.html">LedgerLine</a>();</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_ledger_line.html">LedgerLine</a>();</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Reset();</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_ledger_line.html#adad6d12d0ee5220059bc573ffe7ec273">AddDash</a>(<span class="keywordtype">int</span> left, <span class="keywordtype">int</span> right, <span class="keywordtype">int</span> extension);</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="classvrv_1_1_ledger_line.html#a1f028b4f8242c566116eecc0313d2618">  333</a></span>&#160;    std::list&lt;std::pair&lt;int, int&gt;&gt; <a class="code" href="classvrv_1_1_ledger_line.html#a1f028b4f8242c566116eecc0313d2618">m_dashes</a>;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;};</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordtype">void</span> AdjustLedgerLines(</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        ArrayOfLedgerLines &amp;lines, ArrayOfLedgerLines &amp;cueLines, <span class="keywordtype">double</span> cueScaling, <span class="keywordtype">int</span> extension, <span class="keywordtype">int</span> minExtension);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="classvrv_1_1_staff.html#a983ca678e5969c874a018a2b3587942c">  255</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff.html#a983ca678e5969c874a018a2b3587942c">m_drawingLines</a>;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="classvrv_1_1_staff.html#a51a65ab400013ddc21d125a01aa2256e">  260</a></span>&#160;    data_NOTATIONTYPE <a class="code" href="classvrv_1_1_staff.html#a51a65ab400013ddc21d125a01aa2256e">m_drawingNotationType</a>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="classvrv_1_1_staff.html#af64a2d11ba5b97412094e00d6f908c63">  265</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff.html#af64a2d11ba5b97412094e00d6f908c63">m_drawingStaffSize</a>;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="classvrv_1_1_staff.html#a172c03af3f8a3beb704f4bb35a751966">  270</a></span>&#160;    std::vector&lt;Object *&gt; <a class="code" href="classvrv_1_1_staff.html#a172c03af3f8a3beb704f4bb35a751966">m_timeSpanningElements</a>;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="classvrv_1_1_staff.html#abf3552a9fecc27efcc21fae14cf1836f">  276</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff.html#abf3552a9fecc27efcc21fae14cf1836f">m_yAbs</a>;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *m_drawingStaffDef;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <a class="code" href="classvrv_1_1_tuning.html">Tuning</a> *m_drawingTuning;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <a class="code" href="classvrv_1_1_staff_alignment.html">StaffAlignment</a> *m_staffAlignment;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    ArrayOfLedgerLines m_ledgerLinesAbove;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    ArrayOfLedgerLines m_ledgerLinesBelow;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    ArrayOfLedgerLines m_ledgerLinesAboveCue;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    ArrayOfLedgerLines m_ledgerLinesBelowCue;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;};</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">// LedgerLine</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="classvrv_1_1_ledger_line.html">  308</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_ledger_line.html">LedgerLine</a> {</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <a class="code" href="classvrv_1_1_ledger_line.html">LedgerLine</a>();</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_ledger_line.html">LedgerLine</a>();</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Reset();</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_ledger_line.html#adad6d12d0ee5220059bc573ffe7ec273">AddDash</a>(<span class="keywordtype">int</span> left, <span class="keywordtype">int</span> right, <span class="keywordtype">int</span> extension);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="classvrv_1_1_ledger_line.html#a1f028b4f8242c566116eecc0313d2618">  334</a></span>&#160;    std::list&lt;std::pair&lt;int, int&gt;&gt; <a class="code" href="classvrv_1_1_ledger_line.html#a1f028b4f8242c566116eecc0313d2618">m_dashes</a>;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;};</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_staff_def_html"><div class="ttname"><a href="classvrv_1_1_staff_def.html">vrv::StaffDef</a></div><div class="ttdoc">This class represents a MEI staffDef.</div><div class="ttdef"><b>Definition:</b> staffdef.h:25</div></div>
@@ -265,24 +266,24 @@ $(document).ready(function(){initNavTree('staff_8h_source.html',''); initResizab
 <div class="ttc" id="aclassvrv_1_1_staff_html"><div class="ttname"><a href="classvrv_1_1_staff.html">vrv::Staff</a></div><div class="ttdoc">This class represents a staff in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> staff.h:36</div></div>
 <div class="ttc" id="aclassvrv_1_1_staff_html_a0132cbac7c1bf93021984016f4635083"><div class="ttname"><a href="classvrv_1_1_staff.html#a0132cbac7c1bf93021984016f4635083">vrv::Staff::ScoreDefUnsetCurrent</a></div><div class="ttdeci">virtual int ScoreDefUnsetCurrent(FunctorParams *functorParams)</div><div class="ttdoc">See Object::UnscoreDefSetCurrent.</div></div>
 <div class="ttc" id="aclassvrv_1_1_staff_html_a31043856d7ca807142154185f4f1eacd"><div class="ttname"><a href="classvrv_1_1_staff.html#a31043856d7ca807142154185f4f1eacd">vrv::Staff::CalcOnsetOffset</a></div><div class="ttdeci">virtual int CalcOnsetOffset(FunctorParams *functorParams)</div><div class="ttdoc">See Object::CalcOnsetOffset.</div></div>
-<div class="ttc" id="aclassvrv_1_1_staff_html_abf3552a9fecc27efcc21fae14cf1836f"><div class="ttname"><a href="classvrv_1_1_staff.html#abf3552a9fecc27efcc21fae14cf1836f">vrv::Staff::m_yAbs</a></div><div class="ttdeci">int m_yAbs</div><div class="ttdoc">The Y absolute position of the staff for facsimile (transcription) encodings.</div><div class="ttdef"><b>Definition:</b> staff.h:275</div></div>
+<div class="ttc" id="aclassvrv_1_1_staff_html_abf3552a9fecc27efcc21fae14cf1836f"><div class="ttname"><a href="classvrv_1_1_staff.html#abf3552a9fecc27efcc21fae14cf1836f">vrv::Staff::m_yAbs</a></div><div class="ttdeci">int m_yAbs</div><div class="ttdoc">The Y absolute position of the staff for facsimile (transcription) encodings.</div><div class="ttdef"><b>Definition:</b> staff.h:276</div></div>
 <div class="ttc" id="aclassvrv_1_1_staff_html_a367847939088dc1b31e81f2e66211570"><div class="ttname"><a href="classvrv_1_1_staff.html#a367847939088dc1b31e81f2e66211570">vrv::Staff::IsOnStaffLine</a></div><div class="ttdeci">bool IsOnStaffLine(int y, Doc *doc)</div><div class="ttdoc">Used for calculating clustered information/dot position.</div></div>
 <div class="ttc" id="aclassvrv_1_1_staff_html_a574fa40f4a5412da8b51679db2e63756"><div class="ttname"><a href="classvrv_1_1_staff.html#a574fa40f4a5412da8b51679db2e63756">vrv::Staff::GetLedgerLinesAbove</a></div><div class="ttdeci">const ArrayOfLedgerLines &amp; GetLedgerLinesAbove()</div><div class="ttdoc">Return the ledger line arrays.</div><div class="ttdef"><b>Definition:</b> staff.h:124</div></div>
-<div class="ttc" id="aclassvrv_1_1_staff_html_a51a65ab400013ddc21d125a01aa2256e"><div class="ttname"><a href="classvrv_1_1_staff.html#a51a65ab400013ddc21d125a01aa2256e">vrv::Staff::m_drawingNotationType</a></div><div class="ttdeci">data_NOTATIONTYPE m_drawingNotationType</div><div class="ttdoc">Notation type (CMN, mensural, black mensural, etc.), from the staffDef.</div><div class="ttdef"><b>Definition:</b> staff.h:259</div></div>
+<div class="ttc" id="aclassvrv_1_1_staff_html_a51a65ab400013ddc21d125a01aa2256e"><div class="ttname"><a href="classvrv_1_1_staff.html#a51a65ab400013ddc21d125a01aa2256e">vrv::Staff::m_drawingNotationType</a></div><div class="ttdeci">data_NOTATIONTYPE m_drawingNotationType</div><div class="ttdoc">Notation type (CMN, mensural, black mensural, etc.), from the staffDef.</div><div class="ttdef"><b>Definition:</b> staff.h:260</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:39</div></div>
-<div class="ttc" id="aclassvrv_1_1_ledger_line_html"><div class="ttname"><a href="classvrv_1_1_ledger_line.html">vrv::LedgerLine</a></div><div class="ttdoc">This is a class with no MEI equivalent for representing legder lines.</div><div class="ttdef"><b>Definition:</b> staff.h:307</div></div>
+<div class="ttc" id="aclassvrv_1_1_ledger_line_html"><div class="ttname"><a href="classvrv_1_1_ledger_line.html">vrv::LedgerLine</a></div><div class="ttdoc">This is a class with no MEI equivalent for representing legder lines.</div><div class="ttdef"><b>Definition:</b> staff.h:308</div></div>
 <div class="ttc" id="aclassvrv_1_1_staff_html_ae194d3de0191a955118338c70e157133"><div class="ttname"><a href="classvrv_1_1_staff.html#ae194d3de0191a955118338c70e157133">vrv::Staff::AdjustDrawingStaffSize</a></div><div class="ttdeci">void AdjustDrawingStaffSize()</div><div class="ttdoc">Adjust drawingStaffSize based on rotate angle.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html_a2bfb8ee92dbd7e805de0aae51d07d534"><div class="ttname"><a href="classvrv_1_1_object.html#a2bfb8ee92dbd7e805de0aae51d07d534">vrv::Object::GetIdx</a></div><div class="ttdeci">int GetIdx() const</div><div class="ttdoc">Return the index position of the object in its parent (-1 if not found)</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
 <div class="ttc" id="aclassvrv_1_1_staff_html_a7a7f13fe4d00ba35ed03b952535027fb"><div class="ttname"><a href="classvrv_1_1_staff.html#a7a7f13fe4d00ba35ed03b952535027fb">vrv::Staff::GetAlignment</a></div><div class="ttdeci">StaffAlignment * GetAlignment() const</div><div class="ttdoc">Getter for the StaffAlignment.</div><div class="ttdef"><b>Definition:</b> staff.h:118</div></div>
-<div class="ttc" id="aclassvrv_1_1_staff_html_af64a2d11ba5b97412094e00d6f908c63"><div class="ttname"><a href="classvrv_1_1_staff.html#af64a2d11ba5b97412094e00d6f908c63">vrv::Staff::m_drawingStaffSize</a></div><div class="ttdeci">int m_drawingStaffSize</div><div class="ttdoc">The drawing staff size (scale), from the staffDef.</div><div class="ttdef"><b>Definition:</b> staff.h:264</div></div>
+<div class="ttc" id="aclassvrv_1_1_staff_html_af64a2d11ba5b97412094e00d6f908c63"><div class="ttname"><a href="classvrv_1_1_staff.html#af64a2d11ba5b97412094e00d6f908c63">vrv::Staff::m_drawingStaffSize</a></div><div class="ttdeci">int m_drawingStaffSize</div><div class="ttdoc">The drawing staff size (scale), from the staffDef.</div><div class="ttdef"><b>Definition:</b> staff.h:265</div></div>
 <div class="ttc" id="aclassvrv_1_1_staff_html_a1441f71be201fc4caee78f13f23b9162"><div class="ttname"><a href="classvrv_1_1_staff.html#a1441f71be201fc4caee78f13f23b9162">vrv::Staff::CloneReset</a></div><div class="ttdeci">virtual void CloneReset()</div><div class="ttdoc">Overriding CloneReset() method to be called after copy / assignment calls.</div></div>
-<div class="ttc" id="aclassvrv_1_1_ledger_line_html_a1f028b4f8242c566116eecc0313d2618"><div class="ttname"><a href="classvrv_1_1_ledger_line.html#a1f028b4f8242c566116eecc0313d2618">vrv::LedgerLine::m_dashes</a></div><div class="ttdeci">std::list&lt; std::pair&lt; int, int &gt; &gt; m_dashes</div><div class="ttdoc">A list of dashes relative to the staff position.</div><div class="ttdef"><b>Definition:</b> staff.h:333</div></div>
-<div class="ttc" id="aclassvrv_1_1_staff_html_a983ca678e5969c874a018a2b3587942c"><div class="ttname"><a href="classvrv_1_1_staff.html#a983ca678e5969c874a018a2b3587942c">vrv::Staff::m_drawingLines</a></div><div class="ttdeci">int m_drawingLines</div><div class="ttdoc">Number of lines copied from the staffDef for fast access when drawing.</div><div class="ttdef"><b>Definition:</b> staff.h:254</div></div>
+<div class="ttc" id="aclassvrv_1_1_ledger_line_html_a1f028b4f8242c566116eecc0313d2618"><div class="ttname"><a href="classvrv_1_1_ledger_line.html#a1f028b4f8242c566116eecc0313d2618">vrv::LedgerLine::m_dashes</a></div><div class="ttdeci">std::list&lt; std::pair&lt; int, int &gt; &gt; m_dashes</div><div class="ttdoc">A list of dashes relative to the staff position.</div><div class="ttdef"><b>Definition:</b> staff.h:334</div></div>
+<div class="ttc" id="aclassvrv_1_1_staff_html_a983ca678e5969c874a018a2b3587942c"><div class="ttname"><a href="classvrv_1_1_staff.html#a983ca678e5969c874a018a2b3587942c">vrv::Staff::m_drawingLines</a></div><div class="ttdeci">int m_drawingLines</div><div class="ttdoc">Number of lines copied from the staffDef for fast access when drawing.</div><div class="ttdef"><b>Definition:</b> staff.h:255</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuning_html"><div class="ttname"><a href="classvrv_1_1_tuning.html">vrv::Tuning</a></div><div class="ttdoc">This class models the MEI &lt;tuning&gt; element.</div><div class="ttdef"><b>Definition:</b> tuning.h:23</div></div>
 <div class="ttc" id="aclassvrv_1_1_staff_html_abd990f1b0d2dd8abe5864c53be8f3cfa"><div class="ttname"><a href="classvrv_1_1_staff.html#abd990f1b0d2dd8abe5864c53be8f3cfa">vrv::Staff::CalcStem</a></div><div class="ttdeci">virtual int CalcStem(FunctorParams *)</div><div class="ttdoc">See Object::CalcStem.</div></div>
 <div class="ttc" id="aclassvrv_1_1_staff_html_acd736f43548230fda02b92158a176ca8"><div class="ttname"><a href="classvrv_1_1_staff.html#acd736f43548230fda02b92158a176ca8">vrv::Staff::IsSupportedChild</a></div><div class="ttdeci">virtual bool IsSupportedChild(Object *object)</div><div class="ttdoc">Base method for checking if a child can be added.</div></div>
-<div class="ttc" id="aclassvrv_1_1_staff_html_a172c03af3f8a3beb704f4bb35a751966"><div class="ttname"><a href="classvrv_1_1_staff.html#a172c03af3f8a3beb704f4bb35a751966">vrv::Staff::m_timeSpanningElements</a></div><div class="ttdeci">std::vector&lt; Object * &gt; m_timeSpanningElements</div><div class="ttdoc">A vector of all the spanning elements overlapping with the previous measure.</div><div class="ttdef"><b>Definition:</b> staff.h:269</div></div>
+<div class="ttc" id="aclassvrv_1_1_staff_html_a172c03af3f8a3beb704f4bb35a751966"><div class="ttname"><a href="classvrv_1_1_staff.html#a172c03af3f8a3beb704f4bb35a751966">vrv::Staff::m_timeSpanningElements</a></div><div class="ttdeci">std::vector&lt; Object * &gt; m_timeSpanningElements</div><div class="ttdoc">A vector of all the spanning elements overlapping with the previous measure.</div><div class="ttdef"><b>Definition:</b> staff.h:270</div></div>
 <div class="ttc" id="aclassvrv_1_1_staff_html_af445c1b571a451f7d83ecc8c28d45fde"><div class="ttname"><a href="classvrv_1_1_staff.html#af445c1b571a451f7d83ecc8c28d45fde">vrv::Staff::ResetDrawing</a></div><div class="ttdeci">virtual int ResetDrawing(FunctorParams *functorParams)</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
 <div class="ttc" id="aclassvrv_1_1_staff_html_a6790f6311e231fb5898d10c2b5499559"><div class="ttname"><a href="classvrv_1_1_staff.html#a6790f6311e231fb5898d10c2b5499559">vrv::Staff::AdjustSylSpacing</a></div><div class="ttdeci">virtual int AdjustSylSpacing(FunctorParams *functorParams)</div><div class="ttdoc">See Object::AdjustSylSpacing.</div></div>
 <div class="ttc" id="aclassvrv_1_1_staff_html_a4da5a3d4db00bc3b2d0fe5da397dc764"><div class="ttname"><a href="classvrv_1_1_staff.html#a4da5a3d4db00bc3b2d0fe5da397dc764">vrv::Staff::ApplyPPUFactor</a></div><div class="ttdeci">virtual int ApplyPPUFactor(FunctorParams *functorParams)</div><div class="ttdoc">See Object::ApplyPPUFactor.</div></div>
@@ -309,7 +310,7 @@ $(document).ready(function(){initNavTree('staff_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>staff.h</b></li>
-    <li class="footer">Generated on Sun Aug 15 2021 08:49:16 for Verovio by
+    <li class="footer">Generated on Mon Aug 16 2021 07:20:20 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
