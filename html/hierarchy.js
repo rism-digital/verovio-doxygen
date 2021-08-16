@@ -887,6 +887,7 @@ var hierarchy =
       [ "vrv::AdjustArticParams", "classvrv_1_1_adjust_artic_params.html", null ],
       [ "vrv::AdjustBeamParams", "classvrv_1_1_adjust_beam_params.html", null ],
       [ "vrv::AdjustClefsParams", "classvrv_1_1_adjust_clefs_params.html", null ],
+      [ "vrv::AdjustCrossStaffContentParams", "classvrv_1_1_adjust_cross_staff_content_params.html", null ],
       [ "vrv::AdjustDotsParams", "classvrv_1_1_adjust_dots_params.html", null ],
       [ "vrv::AdjustFloatingPositionerGrpsParams", "classvrv_1_1_adjust_floating_positioner_grps_params.html", null ],
       [ "vrv::AdjustFloatingPositionersBetweenParams", "classvrv_1_1_adjust_floating_positioners_between_params.html", null ],

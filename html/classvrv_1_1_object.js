@@ -15,6 +15,7 @@ var classvrv_1_1_object =
     [ "AdjustBeams", "classvrv_1_1_object.html#a0d2579fea0aea8b317a490c1654be52b", null ],
     [ "AdjustBeamsEnd", "classvrv_1_1_object.html#a1373589b997e00e6dc811eb3139194e8", null ],
     [ "AdjustClefChanges", "classvrv_1_1_object.html#a6c19b533f485fd10e5649bb5c441c884", null ],
+    [ "AdjustCrossStaffContent", "classvrv_1_1_object.html#acfa149d616638b3935e56e1ee41ce61a", null ],
     [ "AdjustCrossStaffYPos", "classvrv_1_1_object.html#abeee6db6564ff37f1fd686033751d51f", null ],
     [ "AdjustCrossStaffYPosEnd", "classvrv_1_1_object.html#a91e929fac940d876aa172b0b6c160c26", null ],
     [ "AdjustDots", "classvrv_1_1_object.html#a1745790d27bcd5c9b11754ea44fdc376", null ],
