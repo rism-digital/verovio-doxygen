@@ -848,6 +848,7 @@ var hierarchy =
         [ "vrv::MeasureOnsetOffsetComparison", "classvrv_1_1_measure_onset_offset_comparison.html", null ],
         [ "vrv::NoteOnsetOffsetComparison", "classvrv_1_1_note_onset_offset_comparison.html", null ],
         [ "vrv::PointingToComparison", "classvrv_1_1_pointing_to_comparison.html", null ],
+        [ "vrv::SpanningToComparison", "classvrv_1_1_spanning_to_comparison.html", null ],
         [ "vrv::UuidComparison", "classvrv_1_1_uuid_comparison.html", null ]
       ] ],
       [ "vrv::ClassIdsComparison", "classvrv_1_1_class_ids_comparison.html", [
