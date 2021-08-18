@@ -235,14 +235,6 @@
         <childnode refid="24" relation="include">
         </childnode>
       </node>
-      <node id="55">
-        <label>boundary.h</label>
-        <link refid="boundary_8h_source"/>
-        <childnode refid="56" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-      </node>
       <node id="64">
         <label>reh.h</label>
         <link refid="reh_8h_source"/>
@@ -278,6 +270,14 @@
         <childnode refid="19" relation="include">
         </childnode>
         <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>systemboundary.h</label>
+        <link refid="systemboundary_8h_source"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
         </childnode>
       </node>
       <node id="68">
@@ -1196,7 +1196,7 @@
 <codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;hum::HTp&gt;<sp/>&amp;layerdata,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>startindex);</highlight></codeline>
 <codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setTupletLocationId(<ref refid="classvrv_1_1_object" kindref="compound">vrv::Object</ref><sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;humaux::HumdrumBeamAndTuplet&gt;<sp/>&amp;tgs,</highlight></codeline>
 <codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;hum::HTp&gt;<sp/>&amp;layerdata,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>startindex);</highlight></codeline>
-<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addMidiTempo(<ref refid="classvrv_1_1_score_def" kindref="compound">vrv::ScoreDef</ref><sp/>&amp;m_scoreDef,<sp/>hum::HTp<sp/>kernpart,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>top,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bot);</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addMidiTempo(<ref refid="classvrv_1_1_score_def" kindref="compound">vrv::ScoreDef</ref><sp/>*scoreDef,<sp/>hum::HTp<sp/>kernpart,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>top,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bot);</highlight></codeline>
 <codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addInstrumentDefinition(<ref refid="classvrv_1_1_staff_def" kindref="compound">vrv::StaffDef</ref><sp/>*staffdef,<sp/>hum::HTp<sp/>partstart);</highlight></codeline>
 <codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addOrnamentMarkers(hum::HTp<sp/>token);</highlight></codeline>
 <codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setNextLeftBarStyle(data_BARRENDITION<sp/>style);</highlight></codeline>
@@ -1223,7 +1223,7 @@
 <codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>embedPitchInformationInClass(<ref refid="classvrv_1_1_note" kindref="compound">vrv::Note</ref><sp/>*note,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;token);</highlight></codeline>
 <codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>embedTieInformation(<ref refid="classvrv_1_1_note" kindref="compound">Note</ref><sp/>*note,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;token);</highlight></codeline>
 <codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>splitSyllableBySpaces(vector&lt;std::string&gt;<sp/>&amp;vtext,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>spacer<sp/>=<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addDefaultTempo(<ref refid="classvrv_1_1_score_def" kindref="compound">ScoreDef</ref><sp/>&amp;m_scoreDef);</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addDefaultTempo(<ref refid="classvrv_1_1_score_def" kindref="compound">ScoreDef</ref><sp/>*scoreDef);</highlight></codeline>
 <codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getChordNoteCount(hum::HTp<sp/>token);</highlight></codeline>
 <codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isLowestSystemArpeggio(hum::HTp<sp/>token);</highlight></codeline>
 <codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>leftmostStaffArpeggio(hum::HTp<sp/>token);</highlight></codeline>

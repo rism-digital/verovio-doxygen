@@ -5,29 +5,42 @@
     <basecompoundref refid="classvrv_1_1_functor_params" prot="public" virt="non-virtual">vrv::FunctorParams</basecompoundref>
     <includes refid="functorparams_8h" local="no">functorparams.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classvrv_1_1_convert_to_page_based_params_1af114f971c14cc375c61f7a97b11ae7e0" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classvrv_1_1_convert_to_page_based_params_1a88a55e34e42a97d6b5d24b3f27df112e" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
-        <definition>System* vrv::ConvertToPageBasedParams::m_pageBasedSystem</definition>
+        <definition>System* vrv::ConvertToPageBasedParams::m_currentSystem</definition>
         <argsstring></argsstring>
-        <name>m_pageBasedSystem</name>
+        <name>m_currentSystem</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="1278" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="1278" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="1284" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="1284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_convert_to_page_based_params_1a9a5ac3e37a523a7cac8f074628c3d693" prot="public" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_page" kindref="compound">Page</ref> *</type>
+        <definition>Page* vrv::ConvertToPageBasedParams::m_page</definition>
+        <argsstring></argsstring>
+        <name>m_page</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="1285" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="1285" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classvrv_1_1_convert_to_page_based_params_1a9be2a84c9a3a2088f3b21136f14f4a7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_convert_to_page_based_params_1a9b1d1f37b7fa604d81c316d24afe4f5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>vrv::ConvertToPageBasedParams::ConvertToPageBasedParams</definition>
-        <argsstring>(System *pageBasedSystem)</argsstring>
+        <argsstring>(Page *page)</argsstring>
         <name>ConvertToPageBasedParams</name>
         <param>
-          <type><ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
-          <declname>pageBasedSystem</declname>
+          <type><ref refid="classvrv_1_1_page" kindref="compound">Page</ref> *</type>
+          <declname>page</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -35,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="1277" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="1277" bodyend="1277"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="1279" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="1279" bodyend="1283"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -56,39 +69,121 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3">
+      <node id="7">
+        <label>vrv::PageElement</label>
+        <link refid="classvrv_1_1_page_element"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>AttMultinumMeasures</label>
+      </node>
+      <node id="28">
         <label>vrv::System</label>
         <link refid="classvrv_1_1_system"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="29" relation="public-inheritance">
         </childnode>
-        <childnode refid="7" relation="public-inheritance">
+        <childnode refid="8" relation="public-inheritance">
         </childnode>
-        <childnode refid="8" relation="usage">
+        <childnode refid="30" relation="usage">
           <edgelabel>m_systemAligner</edgelabel>
         </childnode>
       </node>
-      <node id="8">
+      <node id="14">
+        <label>vrv::ScoreDefElement</label>
+        <link refid="classvrv_1_1_score_def_element"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
         <label>vrv::SystemAligner</label>
         <link refid="classvrv_1_1_system_aligner"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7">
+      <node id="22">
+        <label>AttSystems</label>
+      </node>
+      <node id="6">
+        <label>vrv::Score</label>
+        <link refid="classvrv_1_1_score"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>AttDistances</label>
+      </node>
+      <node id="8">
         <label>AttTyped</label>
       </node>
       <node id="5">
         <label>vrv::BoundingBox</label>
         <link refid="classvrv_1_1_bounding_box"/>
       </node>
+      <node id="15">
+        <label>vrv::ScoreDefInterface</label>
+        <link refid="classvrv_1_1_score_def_interface"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>vrv::Interface</label>
+        <link refid="classvrv_1_1_interface"/>
+      </node>
       <node id="2">
         <label>vrv::FunctorParams</label>
         <link refid="classvrv_1_1_functor_params"/>
       </node>
-      <node id="6">
+      <node id="10">
+        <label>vrv::PageElementEnd</label>
+        <link refid="classvrv_1_1_page_element_end"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_start</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>AttMidiTempo</label>
+      </node>
+      <node id="25">
+        <label>AttEndings</label>
+      </node>
+      <node id="21">
+        <label>AttSpacing</label>
+      </node>
+      <node id="29">
         <label>vrv::DrawingListInterface</label>
         <link refid="classvrv_1_1_drawing_list_interface"/>
+      </node>
+      <node id="17">
+        <label>AttLyricStyle</label>
       </node>
       <node id="1">
         <label>vrv::ConvertToPageBasedParams</label>
@@ -96,7 +191,36 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
         <childnode refid="3" relation="usage">
-          <edgelabel>m_pageBasedSystem</edgelabel>
+          <edgelabel>m_page</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>m_currentSystem</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>vrv::ScoreDef</label>
+        <link refid="classvrv_1_1_score_def"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>AttOptimization</label>
+      </node>
+      <node id="9">
+        <label>vrv::PageElementStartInterface</label>
+        <link refid="classvrv_1_1_page_element_start_interface"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>m_end</edgelabel>
         </childnode>
       </node>
       <node id="4">
@@ -105,12 +229,42 @@
         <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="18">
+        <label>AttMeasureNumbers</label>
+      </node>
+      <node id="23">
+        <label>vrv::ObjectListInterface</label>
+        <link refid="classvrv_1_1_object_list_interface"/>
+      </node>
+      <node id="3">
+        <label>vrv::Page</label>
+        <link refid="classvrv_1_1_page"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>m_score</edgelabel>
+          <edgelabel>m_scoreEnd</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>m_drawingScoreDef</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>AttTimeBase</label>
+      </node>
+      <node id="12">
+        <label>AttNNumberLike</label>
+      </node>
+      <node id="11">
+        <label>AttLabelled</label>
+      </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="1275" column="52" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="1275" bodyend="1279"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="1277" column="52" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="1277" bodyend="1286"/>
     <listofallmembers>
-      <member refid="classvrv_1_1_convert_to_page_based_params_1a9be2a84c9a3a2088f3b21136f14f4a7d" prot="public" virt="non-virtual"><scope>vrv::ConvertToPageBasedParams</scope><name>ConvertToPageBasedParams</name></member>
+      <member refid="classvrv_1_1_convert_to_page_based_params_1a9b1d1f37b7fa604d81c316d24afe4f5d" prot="public" virt="non-virtual"><scope>vrv::ConvertToPageBasedParams</scope><name>ConvertToPageBasedParams</name></member>
       <member refid="classvrv_1_1_functor_params_1a2ac6c84a04cc3d083441e674f488050e" prot="public" virt="non-virtual"><scope>vrv::ConvertToPageBasedParams</scope><name>FunctorParams</name></member>
-      <member refid="classvrv_1_1_convert_to_page_based_params_1af114f971c14cc375c61f7a97b11ae7e0" prot="public" virt="non-virtual"><scope>vrv::ConvertToPageBasedParams</scope><name>m_pageBasedSystem</name></member>
+      <member refid="classvrv_1_1_convert_to_page_based_params_1a88a55e34e42a97d6b5d24b3f27df112e" prot="public" virt="non-virtual"><scope>vrv::ConvertToPageBasedParams</scope><name>m_currentSystem</name></member>
+      <member refid="classvrv_1_1_convert_to_page_based_params_1a9a5ac3e37a523a7cac8f074628c3d693" prot="public" virt="non-virtual"><scope>vrv::ConvertToPageBasedParams</scope><name>m_page</name></member>
       <member refid="classvrv_1_1_functor_params_1ae8cb423b21bff493ebdfea2189173191" prot="public" virt="virtual"><scope>vrv::ConvertToPageBasedParams</scope><name>~FunctorParams</name></member>
     </listofallmembers>
   </compounddef>

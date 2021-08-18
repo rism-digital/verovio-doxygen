@@ -733,6 +733,11 @@ var hierarchy =
       [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
       [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
+      [ "vrv::PageElement", "classvrv_1_1_page_element.html", [
+        [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
+        [ "vrv::PageElementEnd", "classvrv_1_1_page_element_end.html", null ],
+        [ "vrv::Score", "classvrv_1_1_score.html", null ]
+      ] ],
       [ "vrv::RunningElement", "classvrv_1_1_running_element.html", null ],
       [ "vrv::ScoreDefElement", "classvrv_1_1_score_def_element.html", null ],
       [ "vrv::Staff", "classvrv_1_1_staff.html", null ],
@@ -811,13 +816,12 @@ var hierarchy =
         [ "vrv::LabelAbbr", "classvrv_1_1_label_abbr.html", null ],
         [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
         [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
-        [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
         [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
         [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
         [ "vrv::Page", "classvrv_1_1_page.html", null ],
+        [ "vrv::PageElement", "classvrv_1_1_page_element.html", null ],
         [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
         [ "vrv::RunningElement", "classvrv_1_1_running_element.html", null ],
-        [ "vrv::Score", "classvrv_1_1_score.html", null ],
         [ "vrv::ScoreDefElement", "classvrv_1_1_score_def_element.html", null ],
         [ "vrv::Staff", "classvrv_1_1_staff.html", null ],
         [ "vrv::StaffAlignment", "classvrv_1_1_staff_alignment.html", null ],
@@ -1034,6 +1038,10 @@ var hierarchy =
     [ "vrv::Options", "classvrv_1_1_options.html", null ],
     [ "vrv::Output", "classvrv_1_1_output.html", [
       [ "vrv::MEIOutput", "classvrv_1_1_m_e_i_output.html", null ]
+    ] ],
+    [ "vrv::PageElementStartInterface", "classvrv_1_1_page_element_start_interface.html", [
+      [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
+      [ "vrv::Score", "classvrv_1_1_score.html", null ]
     ] ],
     [ "vrv::Pen", "classvrv_1_1_pen.html", null ],
     [ "vrv::Point", "classvrv_1_1_point.html", null ],

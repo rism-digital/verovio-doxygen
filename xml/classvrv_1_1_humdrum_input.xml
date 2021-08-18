@@ -3405,14 +3405,14 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/iohumdrum.h" line="530" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_humdrum_input_1a060c49ff5d8f57b1abd9841dcf754ec6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_humdrum_input_1ab0b40f080c2385317194dc0146d32484" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::HumdrumInput::addMidiTempo</definition>
-        <argsstring>(vrv::ScoreDef &amp;m_scoreDef, hum::HTp kernpart, int top, int bot)</argsstring>
+        <argsstring>(vrv::ScoreDef *scoreDef, hum::HTp kernpart, int top, int bot)</argsstring>
         <name>addMidiTempo</name>
         <param>
-          <type><ref refid="classvrv_1_1_score_def" kindref="compound">vrv::ScoreDef</ref> &amp;</type>
-          <declname>m_scoreDef</declname>
+          <type><ref refid="classvrv_1_1_score_def" kindref="compound">vrv::ScoreDef</ref> *</type>
+          <declname>scoreDef</declname>
         </param>
         <param>
           <type>hum::HTp</type>
@@ -3977,14 +3977,14 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/iohumdrum.h" line="558" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_humdrum_input_1a8a9637a9cdd7ceaf1121a2c020e5f94d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_humdrum_input_1aa0c96f13f3bcda6f22aecf88503cf5db" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::HumdrumInput::addDefaultTempo</definition>
-        <argsstring>(ScoreDef &amp;m_scoreDef)</argsstring>
+        <argsstring>(ScoreDef *scoreDef)</argsstring>
         <name>addDefaultTempo</name>
         <param>
-          <type><ref refid="classvrv_1_1_score_def" kindref="compound">ScoreDef</ref> &amp;</type>
-          <declname>m_scoreDef</declname>
+          <type><ref refid="classvrv_1_1_score_def" kindref="compound">ScoreDef</ref> *</type>
+          <declname>scoreDef</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -8757,25 +8757,6 @@
         <childnode refid="6" relation="usage">
           <edgelabel>m_expansionMap</edgelabel>
         </childnode>
-        <childnode refid="7" relation="usage">
-          <edgelabel>m_mdivScoreDef</edgelabel>
-        </childnode>
-      </node>
-      <node id="14">
-        <label>AttMultinumMeasures</label>
-      </node>
-      <node id="8">
-        <label>vrv::ScoreDefElement</label>
-        <link refid="classvrv_1_1_score_def_element"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-        <childnode refid="9" relation="public-inheritance">
-        </childnode>
-        <childnode refid="17" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="16">
-        <label>AttSystems</label>
       </node>
       <node id="2">
         <label>vrv::Input</label>
@@ -8784,37 +8765,9 @@
           <edgelabel>m_doc</edgelabel>
         </childnode>
       </node>
-      <node id="19">
-        <label>AttDistances</label>
-      </node>
-      <node id="17">
-        <label>AttTyped</label>
-      </node>
       <node id="5">
         <label>vrv::BoundingBox</label>
         <link refid="classvrv_1_1_bounding_box"/>
-      </node>
-      <node id="9">
-        <label>vrv::ScoreDefInterface</label>
-        <link refid="classvrv_1_1_score_def_interface"/>
-        <childnode refid="10" relation="public-inheritance">
-        </childnode>
-        <childnode refid="11" relation="public-inheritance">
-        </childnode>
-        <childnode refid="12" relation="public-inheritance">
-        </childnode>
-        <childnode refid="13" relation="public-inheritance">
-        </childnode>
-        <childnode refid="14" relation="public-inheritance">
-        </childnode>
-        <childnode refid="15" relation="public-inheritance">
-        </childnode>
-        <childnode refid="16" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>vrv::Interface</label>
-        <link refid="classvrv_1_1_interface"/>
       </node>
       <node id="1">
         <label>vrv::HumdrumInput</label>
@@ -8822,56 +8775,15 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13">
-        <label>AttMidiTempo</label>
-      </node>
-      <node id="20">
-        <label>AttEndings</label>
-      </node>
-      <node id="15">
-        <label>AttSpacing</label>
-      </node>
       <node id="6">
         <label>vrv::ExpansionMap</label>
         <link refid="classvrv_1_1_expansion_map"/>
-      </node>
-      <node id="11">
-        <label>AttLyricStyle</label>
-      </node>
-      <node id="7">
-        <label>vrv::ScoreDef</label>
-        <link refid="classvrv_1_1_score_def"/>
-        <childnode refid="8" relation="public-inheritance">
-        </childnode>
-        <childnode refid="18" relation="public-inheritance">
-        </childnode>
-        <childnode refid="19" relation="public-inheritance">
-        </childnode>
-        <childnode refid="20" relation="public-inheritance">
-        </childnode>
-        <childnode refid="21" relation="public-inheritance">
-        </childnode>
-        <childnode refid="22" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="21">
-        <label>AttOptimization</label>
       </node>
       <node id="4">
         <label>vrv::Object</label>
         <link refid="classvrv_1_1_object"/>
         <childnode refid="5" relation="public-inheritance">
         </childnode>
-      </node>
-      <node id="12">
-        <label>AttMeasureNumbers</label>
-      </node>
-      <node id="18">
-        <label>vrv::ObjectListInterface</label>
-        <link refid="classvrv_1_1_object_list_interface"/>
-      </node>
-      <node id="22">
-        <label>AttTimeBase</label>
       </node>
     </collaborationgraph>
     <location file="/home/runner/work/verovio/verovio/include/vrv/iohumdrum.h" line="388" column="37" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iohumdrum.h" bodystart="388" bodyend="1068"/>
@@ -8883,7 +8795,7 @@
       <member refid="classvrv_1_1_humdrum_input_1a37acfc6e81605b316f5a2f0ffe593b9e" prot="protected" virt="non-virtual"><scope>vrv::HumdrumInput</scope><name>addCautionaryAccidental</name></member>
       <member refid="classvrv_1_1_humdrum_input_1a7f84e7c8386ec3a054ec5154a8e47f36" prot="protected" virt="non-virtual"><scope>vrv::HumdrumInput</scope><name>addChildBackMeasureOrSection</name></member>
       <member refid="classvrv_1_1_humdrum_input_1a3c7e508e5ffc211679d67f87a3a94c80" prot="protected" virt="non-virtual"><scope>vrv::HumdrumInput</scope><name>addChildMeasureOrSection</name></member>
-      <member refid="classvrv_1_1_humdrum_input_1a8a9637a9cdd7ceaf1121a2c020e5f94d" prot="protected" virt="non-virtual"><scope>vrv::HumdrumInput</scope><name>addDefaultTempo</name></member>
+      <member refid="classvrv_1_1_humdrum_input_1aa0c96f13f3bcda6f22aecf88503cf5db" prot="protected" virt="non-virtual"><scope>vrv::HumdrumInput</scope><name>addDefaultTempo</name></member>
       <member refid="classvrv_1_1_humdrum_input_1a18165af361ac09c52b3ec64ad8f10a80" prot="protected" virt="non-virtual"><scope>vrv::HumdrumInput</scope><name>addDirection</name></member>
       <member refid="classvrv_1_1_humdrum_input_1a1eaea975a983abcbbdab676e618b6c1d" prot="protected" virt="non-virtual"><scope>vrv::HumdrumInput</scope><name>addDurRecip</name></member>
       <member refid="classvrv_1_1_humdrum_input_1ac5cbe9ff5438a3a577d099cfcdc53200" prot="protected" virt="non-virtual"><scope>vrv::HumdrumInput</scope><name>addExplicitStemDirection</name></member>
@@ -8897,7 +8809,7 @@
       <member refid="classvrv_1_1_humdrum_input_1a8258a8fa6d3bf4ca3b6f98877e0ffd0c" prot="protected" virt="non-virtual"><scope>vrv::HumdrumInput</scope><name>addHarmFloatsForMeasure</name></member>
       <member refid="classvrv_1_1_humdrum_input_1a1e14b7af054912c41d97830f0ad66aa0" prot="protected" virt="non-virtual"><scope>vrv::HumdrumInput</scope><name>addInstrumentDefinition</name></member>
       <member refid="classvrv_1_1_humdrum_input_1ac41a77f02a8205786b26938724d176cc" prot="protected" virt="non-virtual"><scope>vrv::HumdrumInput</scope><name>addMensuralQuality</name></member>
-      <member refid="classvrv_1_1_humdrum_input_1a060c49ff5d8f57b1abd9841dcf754ec6" prot="protected" virt="non-virtual"><scope>vrv::HumdrumInput</scope><name>addMidiTempo</name></member>
+      <member refid="classvrv_1_1_humdrum_input_1ab0b40f080c2385317194dc0146d32484" prot="protected" virt="non-virtual"><scope>vrv::HumdrumInput</scope><name>addMidiTempo</name></member>
       <member refid="classvrv_1_1_humdrum_input_1af3ffc9b61f1ccb172b48cbc30d435e0e" prot="protected" virt="non-virtual"><scope>vrv::HumdrumInput</scope><name>addMordent</name></member>
       <member refid="classvrv_1_1_humdrum_input_1a5b5795f5d08ead5b6d1dc6db7816b990" prot="protected" virt="non-virtual"><scope>vrv::HumdrumInput</scope><name>addOrnamentMarkers</name></member>
       <member refid="classvrv_1_1_humdrum_input_1ab2685cc18128a8b24c4deb49844cfe8b" prot="protected" virt="non-virtual"><scope>vrv::HumdrumInput</scope><name>addOrnaments</name></member>

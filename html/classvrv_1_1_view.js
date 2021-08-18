@@ -100,6 +100,7 @@ var classvrv_1_1_view =
     [ "DrawNum", "classvrv_1_1_view.html#a1225ad274bb4a5f2ed8ddd7217b279b0", null ],
     [ "DrawObliquePolygon", "classvrv_1_1_view.html#a91c2eb84f422eec8085474a75b9aed82", null ],
     [ "DrawOctave", "classvrv_1_1_view.html#ac0c76bea5f32e2f8074693c14c2e6195", null ],
+    [ "DrawPageElement", "classvrv_1_1_view.html#a145de60dc07293a5a74122ebb76d677a", null ],
     [ "DrawPartFilledRectangle", "classvrv_1_1_view.html#af932b7453ad33f6a3909b68c12b5fef5", null ],
     [ "DrawPedal", "classvrv_1_1_view.html#a5d9f88428c22c67573f7fb56ed086ab3", null ],
     [ "DrawPedalLine", "classvrv_1_1_view.html#a97d482d2124dcc5e84c0bf697b14fde7", null ],

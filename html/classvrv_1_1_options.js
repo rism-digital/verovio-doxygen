@@ -88,6 +88,7 @@ var classvrv_1_1_options =
     [ "m_lyricTopMinMargin", "classvrv_1_1_options.html#affb7bf4abf275c12e7d05e880536f537", null ],
     [ "m_lyricVerseCollapse", "classvrv_1_1_options.html#a6f2a4f3baf8b6fb02e7fa72e2d12c376", null ],
     [ "m_lyricWordSpace", "classvrv_1_1_options.html#a299c0fb2289ecef0156c813cbe12356c", null ],
+    [ "m_mdivAll", "classvrv_1_1_options.html#a8f6a55752ffe6a852c93c67794d5fc35", null ],
     [ "m_mdivXPathQuery", "classvrv_1_1_options.html#ac94939b1b904c41073c45d33a4dbea7f", null ],
     [ "m_measureMinWidth", "classvrv_1_1_options.html#aa05a631b62399492d3c89c8bc6cbae26", null ],
     [ "m_mensuralToMeasure", "classvrv_1_1_options.html#ace0da799034ed728698c346b5c604fb3", null ],
