@@ -1,5 +1,16 @@
 var NAVTREEINDEX22 =
 {
+"structvrv_1_1_closest_b_b.html#a7193448e2d6a3148d7efbac14f337f74":[1,0,0,76,1],
+"structvrv_1_1_closest_b_b.html#acdc0607c597cc92e988e9d9c41173d47":[1,0,0,76,0],
+"structvrv_1_1_closest_b_b.html#acea28781d0d1b123aae14c872a6367eb":[1,0,0,76,3],
+"structvrv_1_1_closest_b_b.html#ae4c15a00f3ead7ec067bf72ce647aa55":[1,0,0,76,2],
+"structvrv_1_1_int_tree.html":[1,0,0,157],
+"structvrv_1_1_int_tree.html#ab527660cdce61cc8ae7521d4933fd6fb":[1,0,0,157,0],
+"structvrv_1_1_m_i_d_i_note.html":[1,0,0,187],
+"structvrv_1_1_m_i_d_i_note.html#a1fc8ba2a9c50ec3db16877def29e1e10":[1,0,0,187,1],
+"structvrv_1_1_m_i_d_i_note.html#a32128781fed4395e451720d0567ccac1":[1,0,0,187,0],
+"structvrv_1_1_staff_sort.html":[1,0,0,292],
+"structvrv_1_1_staff_sort.html#a6bdec7c49db040406f1b91c1504f0529":[1,0,0,292,0],
 "subst_8h_source.html":[2,0,142],
 "supplied_8h_source.html":[2,0,143],
 "surface_8h_source.html":[2,0,144],

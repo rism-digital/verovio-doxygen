@@ -54,19 +54,19 @@ var NAVTREEINDEX =
 "classvrv_1_1_grace_aligner.html#ab5218c0228ef47accbf04d2104936ec1",
 "classvrv_1_1_humdrum_input.html#a8191d8cab90dc91e98bde2c09fd2e97b",
 "classvrv_1_1_justify_x_params.html#a6e1b7cc1da03b0d52efe35ffcfdbcb00",
-"classvrv_1_1_ligature.html#a3a19dd9f115ed2bde44093767a27ae0f",
-"classvrv_1_1_mensur.html#aa87d905b4a48a9d56e3a409113a5a2b3",
-"classvrv_1_1_object.html#a665daa8b537723b4c38f61118e027009",
-"classvrv_1_1_option_grp.html",
-"classvrv_1_1_options.html#aefc4eff98ae3f05cdd712070aa696040",
-"classvrv_1_1_prepare_boundaries_params.html",
-"classvrv_1_1_score_def.html#af88f39cb48aa8df39f4c8de5860a500c",
-"classvrv_1_1_staff_def.html#adce6d45d600288f618295a80674cb19c",
-"classvrv_1_1_system.html#a78f5b8fa8d7f7043f8547301ae24aee3",
-"classvrv_1_1_toolkit.html#a19431c36d29a2301ee946da2cd01946e",
-"classvrv_1_1_verse.html#aa18c85bde310ef1387f164eef3d9301c",
-"classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e.html",
-"subst_8h_source.html"
+"classvrv_1_1_ligature.html#a29270e8544f8f0f11f93dcf652eebee5",
+"classvrv_1_1_mensur.html#a9bc5d52f936998d590fc4b5001004ffd",
+"classvrv_1_1_object.html#a65066ae5b40a4dc3aab9bf76abc57d36",
+"classvrv_1_1_option_dbl.html#ad8356d74c8a6e5e24a065be74e724150",
+"classvrv_1_1_options.html#aed503f37285f97478922ce169640bad7",
+"classvrv_1_1_position_interface.html#ac74c74fcf22d5ae9e9286623353da322",
+"classvrv_1_1_score_def.html#ab7953cd561585a76c37a35410e7c2df8",
+"classvrv_1_1_staff_def.html#a1fe5138bb30bad885747a679f7257dcd",
+"classvrv_1_1_system.html#a5faeee3d7620a9b7953ec59db7d31d01",
+"classvrv_1_1_timestamp_attr.html#a8f4392d33fe27f6275b8e585e4576127",
+"classvrv_1_1_uuid_comparison.html#a0f80c55ecb2b792527a6bc470a174fc3",
+"classvrv_1_1data___l_i_n_e_w_i_d_t_h.html#a3ed7694491e34650345960e8002587d5",
+"structvrv_1_1_closest_b_b.html#a7193448e2d6a3148d7efbac14f337f74"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

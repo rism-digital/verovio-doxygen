@@ -183,6 +183,7 @@ var classvrv_1_1_object =
     [ "PrepareBoundaries", "classvrv_1_1_object.html#a5608529769df462c68433b5f50680969", null ],
     [ "PrepareCrossStaff", "classvrv_1_1_object.html#a873d7c2f7805530e06ebd07885c399b6", null ],
     [ "PrepareCrossStaffEnd", "classvrv_1_1_object.html#a79600c0f5d0d0c68a2501f60ef077126", null ],
+    [ "PrepareDelayedTurns", "classvrv_1_1_object.html#a99e3f49ab3ca845fb0f6d501fb915ff6", null ],
     [ "PrepareDrawingCueSize", "classvrv_1_1_object.html#a392d061080fee243ac4beb6f7e77434d", null ],
     [ "PrepareFacsimile", "classvrv_1_1_object.html#ac75af86dda467af7ae8d928c83b1a7c8", null ],
     [ "PrepareFloatingGrps", "classvrv_1_1_object.html#af6ece837a732f054019b9230c59d8701", null ],

@@ -3058,6 +3058,7 @@
     <member refid="classvrv_1_1_layer_element_1a65d2f6acbf90a39ce5e7b34b8713ddc1" kind="function"><name>AdjustXRelForTranscription</name></member>
     <member refid="classvrv_1_1_layer_element_1acd49ed27e7980afd591351044681401d" kind="function"><name>PrepareDrawingCueSize</name></member>
     <member refid="classvrv_1_1_layer_element_1a4fb0bf46976ed6976cedd7c97f3032f2" kind="function"><name>PreparePointersByLayer</name></member>
+    <member refid="classvrv_1_1_layer_element_1acc0c13d6afe3f9d9fd57028a9fdfc128" kind="function"><name>PrepareDelayedTurns</name></member>
     <member refid="classvrv_1_1_layer_element_1a3be9e2b87933dfacf3e4603d58053282" kind="function"><name>PrepareTimePointing</name></member>
     <member refid="classvrv_1_1_layer_element_1a72dc4f513f06956e474ca0bfca73aeb2" kind="function"><name>PrepareTimeSpanning</name></member>
     <member refid="classvrv_1_1_layer_element_1ab0a34f0dd2758cbbda5dcbf1e800a419" kind="function"><name>SetAlignmentPitchPos</name></member>
@@ -4310,6 +4311,7 @@
     <member refid="classvrv_1_1_object_1a72def6c07065fa48ad7cd844dd4b2ed5" kind="function"><name>PreparePointersByLayer</name></member>
     <member refid="classvrv_1_1_object_1a211bdcbc97d6e6eb1b39266d38fea6ef" kind="function"><name>PrepareLayerElementParts</name></member>
     <member refid="classvrv_1_1_object_1a1512dc40ee5cbcefd3dd463776e24c0c" kind="function"><name>PrepareRpt</name></member>
+    <member refid="classvrv_1_1_object_1a99e3f49ab3ca845fb0f6d501fb915ff6" kind="function"><name>PrepareDelayedTurns</name></member>
     <member refid="classvrv_1_1_object_1a5608529769df462c68433b5f50680969" kind="function"><name>PrepareBoundaries</name></member>
     <member refid="classvrv_1_1_object_1a69ad18810d5249e8bb56be54884d2b50" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_object_1a3d26e4876ee5a38e4c01fae4af747c23" kind="function"><name>GetRelativeLayerElement</name></member>
@@ -5027,6 +5029,13 @@
     <member refid="classvrv_1_1_prepare_cross_staff_params_1afc1dc38142fadeb954efea4b612def6e" kind="variable"><name>m_currentCrossStaff</name></member>
     <member refid="classvrv_1_1_prepare_cross_staff_params_1a84d682bfcbfe852b5dd7ec349483c1f9" kind="variable"><name>m_currentCrossLayer</name></member>
     <member refid="classvrv_1_1_prepare_cross_staff_params_1a7cf5b0f5d996e012dbd33ab67e584377" kind="function"><name>PrepareCrossStaffParams</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_prepare_delayed_turns_params" kind="class"><name>vrv::PrepareDelayedTurnsParams</name>
+    <member refid="classvrv_1_1_prepare_delayed_turns_params_1ad8a978b1a6433bb08cb02cfb3f2c1bcd" kind="variable"><name>m_initMap</name></member>
+    <member refid="classvrv_1_1_prepare_delayed_turns_params_1a5ef66309805f7febdf78451970c50ab9" kind="variable"><name>m_previousElement</name></member>
+    <member refid="classvrv_1_1_prepare_delayed_turns_params_1a3bd362e428152cb89bb7e2fd2387a06e" kind="variable"><name>m_currentTurn</name></member>
+    <member refid="classvrv_1_1_prepare_delayed_turns_params_1aaa7697b72e5e4a5f74c03c92dde8ae26" kind="variable"><name>m_delayedTurns</name></member>
+    <member refid="classvrv_1_1_prepare_delayed_turns_params_1a6bee77c73ca80d2ef36b9b2f265b1776" kind="function"><name>PrepareDelayedTurnsParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_prepare_facsimile_params" kind="class"><name>vrv::PrepareFacsimileParams</name>
     <member refid="classvrv_1_1_prepare_facsimile_params_1a4ad01409621d0ffc48eaf34ffb4643bd" kind="variable"><name>m_facsimile</name></member>
@@ -6492,7 +6501,10 @@
     <member refid="classvrv_1_1_turn_1a4c987b975705e2435348abd1b9872e2a" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_turn_1a5b87b5dcea0a9ef391588d170218365b" kind="function"><name>GetClassId</name></member>
     <member refid="classvrv_1_1_turn_1ace2f5bb2edc7b98f933cb91203a736fe" kind="function"><name>GetTimePointInterface</name></member>
+    <member refid="classvrv_1_1_turn_1a4c6e5adc6de0fc5a7112a8471d2d892f" kind="variable"><name>m_drawingEndElement</name></member>
     <member refid="classvrv_1_1_turn_1a049ad442cab2fd9cf5ef83b027edf5c9" kind="function"><name>GetTurnGlyph</name></member>
+    <member refid="classvrv_1_1_turn_1ab1a435de879849d96f3f1463c37184e7" kind="function"><name>PrepareDelayedTurns</name></member>
+    <member refid="classvrv_1_1_turn_1abd6de5aad6431290b3bb935a81fee3f8" kind="function"><name>ResetDrawing</name></member>
   </compound>
   <compound refid="classvrv_1_1_un_cast_off_params" kind="class"><name>vrv::UnCastOffParams</name>
     <member refid="classvrv_1_1_un_cast_off_params_1ab60256903f9aaaaa6aab84fd39e4c82e" kind="variable"><name>m_page</name></member>

@@ -7,5 +7,8 @@ var classvrv_1_1_turn =
     [ "GetClassName", "classvrv_1_1_turn.html#a4c987b975705e2435348abd1b9872e2a", null ],
     [ "GetTimePointInterface", "classvrv_1_1_turn.html#ace2f5bb2edc7b98f933cb91203a736fe", null ],
     [ "GetTurnGlyph", "classvrv_1_1_turn.html#a049ad442cab2fd9cf5ef83b027edf5c9", null ],
-    [ "Reset", "classvrv_1_1_turn.html#a9cfcaad7fe3a7f4c3492a2b98449f03b", null ]
+    [ "PrepareDelayedTurns", "classvrv_1_1_turn.html#ab1a435de879849d96f3f1463c37184e7", null ],
+    [ "Reset", "classvrv_1_1_turn.html#a9cfcaad7fe3a7f4c3492a2b98449f03b", null ],
+    [ "ResetDrawing", "classvrv_1_1_turn.html#abd6de5aad6431290b3bb935a81fee3f8", null ],
+    [ "m_drawingEndElement", "classvrv_1_1_turn.html#a4c6e5adc6de0fc5a7112a8471d2d892f", null ]
 ];

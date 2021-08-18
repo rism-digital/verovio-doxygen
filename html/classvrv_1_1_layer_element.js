@@ -59,6 +59,7 @@ var classvrv_1_1_layer_element =
     [ "LayerElementsInTimeSpan", "classvrv_1_1_layer_element.html#a14ce747ddac9314656a445974ed2bf8a", null ],
     [ "PrepareCrossStaff", "classvrv_1_1_layer_element.html#a4ffe0fd5c34b338d71c7b0dbe7cf250b", null ],
     [ "PrepareCrossStaffEnd", "classvrv_1_1_layer_element.html#af036ca361bb026bae7290265e5da54d3", null ],
+    [ "PrepareDelayedTurns", "classvrv_1_1_layer_element.html#acc0c13d6afe3f9d9fd57028a9fdfc128", null ],
     [ "PrepareDrawingCueSize", "classvrv_1_1_layer_element.html#acd49ed27e7980afd591351044681401d", null ],
     [ "PreparePointersByLayer", "classvrv_1_1_layer_element.html#a4fb0bf46976ed6976cedd7c97f3032f2", null ],
     [ "PrepareTimePointing", "classvrv_1_1_layer_element.html#a3be9e2b87933dfacf3e4603d58053282", null ],
