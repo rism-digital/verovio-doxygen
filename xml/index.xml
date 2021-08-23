@@ -1597,6 +1597,7 @@
     <member refid="classvrv_1_1_doc_1a4b8be5eebe48afb3668ec97c133148a5" kind="function"><name>ExportMIDI</name></member>
     <member refid="classvrv_1_1_doc_1a770613cbab57a30c515bbc653acf17ee" kind="function"><name>ExportTimemap</name></member>
     <member refid="classvrv_1_1_doc_1aaa1e882b542afc47118166afc4c305e8" kind="function"><name>PrepareJsonTimemap</name></member>
+    <member refid="classvrv_1_1_doc_1a6e47232f8eef26473e867f4d2f96701c" kind="function"><name>ExportFeatures</name></member>
     <member refid="classvrv_1_1_doc_1acdae54ac378140e0eeea99e21aabfdf4" kind="function"><name>ScoreDefSetCurrentDoc</name></member>
     <member refid="classvrv_1_1_doc_1a5e9aa400ebeacad2373631dddbdf6baf" kind="function"><name>ScoreDefOptimizeDoc</name></member>
     <member refid="classvrv_1_1_doc_1a6f04894a3ea7d133ad51571697ac2a4f" kind="function"><name>ScoreDefSetGrpSymDoc</name></member>
@@ -1893,6 +1894,18 @@
     <member refid="classvrv_1_1_fb_1ac7cac97a272bd4c0166ab9b43dec7fda" kind="function"><name>GetClassId</name></member>
     <member refid="classvrv_1_1_fb_1a06248a241f24c2557aeb222d908e752a" kind="function"><name>IsSupportedChild</name></member>
   </compound>
+  <compound refid="classvrv_1_1_feature_extractor" kind="class"><name>vrv::FeatureExtractor</name>
+    <member refid="classvrv_1_1_feature_extractor_1ada4a61133b2ae93777a405b86cdb1958" kind="function"><name>FeatureExtractor</name></member>
+    <member refid="classvrv_1_1_feature_extractor_1afa0e76df7ff107a754d4c8ed25ac5aab" kind="function"><name>~FeatureExtractor</name></member>
+    <member refid="classvrv_1_1_feature_extractor_1a144ead9529606e6845d9d4184e36ceb5" kind="variable"><name>m_previousNote</name></member>
+    <member refid="classvrv_1_1_feature_extractor_1a74629bf48c1ba415e12e364c825d56a4" kind="variable"><name>m_pitches</name></member>
+    <member refid="classvrv_1_1_feature_extractor_1a4f4aa680b7d22087480f5c77331be83f" kind="variable"><name>m_pitchesIds</name></member>
+    <member refid="classvrv_1_1_feature_extractor_1a0426a6f417f09498afcbe5d1dbeae56d" kind="variable"><name>m_intervals</name></member>
+    <member refid="classvrv_1_1_feature_extractor_1a7de149b115c781799fea4d41d7961209" kind="variable"><name>m_intervalsIds</name></member>
+    <member refid="classvrv_1_1_feature_extractor_1a8fbfec460575bd614ca250996afc1759" kind="function"><name>Reset</name></member>
+    <member refid="classvrv_1_1_feature_extractor_1a4423a8c50b18855e5d903c5a357d90f0" kind="function"><name>Extract</name></member>
+    <member refid="classvrv_1_1_feature_extractor_1a088178e8f5cfd6abe00a3070d2f8bbcf" kind="function"><name>ToJson</name></member>
+  </compound>
   <compound refid="classvrv_1_1_fermata" kind="class"><name>vrv::Fermata</name>
     <member refid="classvrv_1_1_fermata_1acb3c8f88bd73f26627fffc29b1df1a99" kind="function"><name>Fermata</name></member>
     <member refid="classvrv_1_1_fermata_1a1bbfc5ccde7134e784cb580cc312a17f" kind="function"><name>~Fermata</name></member>
@@ -2148,6 +2161,11 @@
   <compound refid="classvrv_1_1_functor_params" kind="class"><name>vrv::FunctorParams</name>
     <member refid="classvrv_1_1_functor_params_1a2ac6c84a04cc3d083441e674f488050e" kind="function"><name>FunctorParams</name></member>
     <member refid="classvrv_1_1_functor_params_1ae8cb423b21bff493ebdfea2189173191" kind="function"><name>~FunctorParams</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_generate_features_params" kind="class"><name>vrv::GenerateFeaturesParams</name>
+    <member refid="classvrv_1_1_generate_features_params_1a2e127325db0d65d03442c8f95c26f64f" kind="variable"><name>m_doc</name></member>
+    <member refid="classvrv_1_1_generate_features_params_1aafdcec683f5404ebb10505bf948abfca" kind="variable"><name>m_extractor</name></member>
+    <member refid="classvrv_1_1_generate_features_params_1a5ca6c78bde74891266d6d52fd585fe9c" kind="function"><name>GenerateFeaturesParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_generate_m_i_d_i_params" kind="class"><name>vrv::GenerateMIDIParams</name>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1a3c96b7a8c5c1456f493386eacd69f4eb" kind="variable"><name>m_midiFile</name></member>
@@ -4184,6 +4202,7 @@
     <member refid="classvrv_1_1_object_1a93b5fe054b2d26fe91ff50a5861fe08c" kind="function"><name>ResolveMIDITies</name></member>
     <member refid="classvrv_1_1_object_1a426081ffba31e4251a2c36ceeb2a43ba" kind="function"><name>GenerateMIDI</name></member>
     <member refid="classvrv_1_1_object_1abe889073301d6e1dfe55e725b6532948" kind="function"><name>GenerateTimemap</name></member>
+    <member refid="classvrv_1_1_object_1a7ced59f27507ee81372cc12d7f57c8e0" kind="function"><name>GenerateFeatures</name></member>
     <member refid="classvrv_1_1_object_1aedb15995b4bfd32c033ed7788e09e6e1" kind="variable"><name>m_uuid</name></member>
     <member refid="classvrv_1_1_object_1a1236cb26b1c35eff5e0036827a94ffa2" kind="variable"><name>m_classid</name></member>
     <member refid="classvrv_1_1_object_1a40306fa2a0b5290cb7f57429a9d0a689" kind="variable"><name>m_iteratorEnd</name></member>
@@ -6232,6 +6251,7 @@
     <member refid="classvrv_1_1_toolkit_1aed5c67aae6d92d7c8d1d68edf5a5ae65" kind="function"><name>SetResourcePath</name></member>
     <member refid="classvrv_1_1_toolkit_1a0dacf26288d829c51737cbca389c7117" kind="function"><name>GetLog</name></member>
     <member refid="classvrv_1_1_toolkit_1a293b23b38c10be4da8b38c4b3a769d1d" kind="function"><name>GetVersion</name></member>
+    <member refid="classvrv_1_1_toolkit_1aa851c49e48d4fd83e71f1a457f022366" kind="function"><name>ResetXmlIdSeed</name></member>
     <member refid="classvrv_1_1_toolkit_1a3859f9341d415376b7d8f11a1aa8e352" kind="function"><name>LoadFile</name></member>
     <member refid="classvrv_1_1_toolkit_1a9a08fd8e89da6c2c709eaae69e28b2b1" kind="function"><name>LoadData</name></member>
     <member refid="classvrv_1_1_toolkit_1aeae2ad736af0f0d436c9131745057556" kind="function"><name>LoadZipDataBase64</name></member>
@@ -6263,6 +6283,7 @@
     <member refid="classvrv_1_1_toolkit_1ade214f7c4d835643aa13046d8ae000ef" kind="function"><name>GetHumdrumFile</name></member>
     <member refid="classvrv_1_1_toolkit_1a32c3ff9da41c302c83c6f8d52fc11467" kind="function"><name>GetMEI</name></member>
     <member refid="classvrv_1_1_toolkit_1a0206f317ac7ebe3c61df606c8afcd4ca" kind="function"><name>SaveFile</name></member>
+    <member refid="classvrv_1_1_toolkit_1a8439ca5ca843438243bee27c14b29d6a" kind="function"><name>GetDescriptiveFeatures</name></member>
     <member refid="classvrv_1_1_toolkit_1a4618bafecb91784806f78751ea6b3f42" kind="function"><name>GetElementsAtTime</name></member>
     <member refid="classvrv_1_1_toolkit_1a234616d8b4ab54ec1b7efb79e5ae464d" kind="function"><name>GetPageWithElement</name></member>
     <member refid="classvrv_1_1_toolkit_1acde5671467b4de6cacd55e7e8be87e93" kind="function"><name>GetElementAttr</name></member>
@@ -7914,6 +7935,8 @@
   <compound refid="facsimileinterface_8h" kind="file"><name>facsimileinterface.h</name>
   </compound>
   <compound refid="fb_8h" kind="file"><name>fb.h</name>
+  </compound>
+  <compound refid="featureextractor_8h" kind="file"><name>featureextractor.h</name>
   </compound>
   <compound refid="fermata_8h" kind="file"><name>fermata.h</name>
   </compound>

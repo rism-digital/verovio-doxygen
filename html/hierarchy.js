@@ -883,6 +883,7 @@ var hierarchy =
       [ "vrv::EditorToolkitNeume", "classvrv_1_1_editor_toolkit_neume.html", null ]
     ] ],
     [ "vrv::ExpansionMap", "classvrv_1_1_expansion_map.html", null ],
+    [ "vrv::FeatureExtractor", "classvrv_1_1_feature_extractor.html", null ],
     [ "vrv::FontInfo", "classvrv_1_1_font_info.html", null ],
     [ "vrv::Functor", "classvrv_1_1_functor.html", null ],
     [ "vrv::FunctorParams", "classvrv_1_1_functor_params.html", [
@@ -936,6 +937,7 @@ var hierarchy =
       [ "vrv::FindExtremeByComparisonParams", "classvrv_1_1_find_extreme_by_comparison_params.html", null ],
       [ "vrv::FindSpannedLayerElementsParams", "classvrv_1_1_find_spanned_layer_elements_params.html", null ],
       [ "vrv::FunctorDocParams", "classvrv_1_1_functor_doc_params.html", null ],
+      [ "vrv::GenerateFeaturesParams", "classvrv_1_1_generate_features_params.html", null ],
       [ "vrv::GenerateMIDIParams", "classvrv_1_1_generate_m_i_d_i_params.html", null ],
       [ "vrv::GenerateTimemapParams", "classvrv_1_1_generate_timemap_params.html", null ],
       [ "vrv::GetAlignmentLeftRightParams", "classvrv_1_1_get_alignment_left_right_params.html", null ],

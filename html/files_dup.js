@@ -53,6 +53,7 @@ var files_dup =
     [ "facsimile.h", "facsimile_8h_source.html", null ],
     [ "facsimileinterface.h", "facsimileinterface_8h_source.html", null ],
     [ "fb.h", "fb_8h_source.html", null ],
+    [ "featureextractor.h", "featureextractor_8h_source.html", null ],
     [ "fermata.h", "fermata_8h_source.html", null ],
     [ "fig.h", "fig_8h_source.html", null ],
     [ "fing.h", "fing_8h_source.html", null ],

@@ -16,6 +16,8 @@ var searchData=
   ['expansion_276',['Expansion',['../classvrv_1_1_expansion.html',1,'vrv']]],
   ['expansionmap_277',['ExpansionMap',['../classvrv_1_1_expansion_map.html',1,'vrv']]],
   ['export_278',['Export',['../classvrv_1_1_m_e_i_output.html#a28a5600705fbc7516e46d77b3a7611cb',1,'vrv::MEIOutput']]],
-  ['exportmidi_279',['ExportMIDI',['../classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5',1,'vrv::Doc']]],
-  ['exporttimemap_280',['ExportTimemap',['../classvrv_1_1_doc.html#a770613cbab57a30c515bbc653acf17ee',1,'vrv::Doc']]]
+  ['exportfeatures_279',['ExportFeatures',['../classvrv_1_1_doc.html#a6e47232f8eef26473e867f4d2f96701c',1,'vrv::Doc']]],
+  ['exportmidi_280',['ExportMIDI',['../classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5',1,'vrv::Doc']]],
+  ['exporttimemap_281',['ExportTimemap',['../classvrv_1_1_doc.html#a770613cbab57a30c515bbc653acf17ee',1,'vrv::Doc']]],
+  ['extract_282',['Extract',['../classvrv_1_1_feature_extractor.html#a4423a8c50b18855e5d903c5a357d90f0',1,'vrv::FeatureExtractor']]]
 ];
