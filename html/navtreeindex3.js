@@ -1,5 +1,8 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_bounding_box.html#af90ec4f1a3393d9c89473f5a2b146b5b":[1,0,0,56,52],
+"classvrv_1_1_bounding_box.html#afb681918250b5eceeab06a8752c794a0":[1,0,0,56,13],
+"classvrv_1_1_bracket_span.html":[1,0,0,57],
 "classvrv_1_1_bracket_span.html#a3e00080cfde357365ac95869a2138f52":[1,0,0,57,0],
 "classvrv_1_1_bracket_span.html#a7c448b382f0ae6aa4cbdb199937c8595":[1,0,0,57,5],
 "classvrv_1_1_bracket_span.html#a89b639e159000660ca04c3067419861f":[1,0,0,57,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_corr.html#ae27505c4e4ec450de25ec785401d7941":[1,0,0,84,0],
 "classvrv_1_1_corr.html#aef97d87d64491c58e0b64598e3d36b81":[1,0,0,84,4],
 "classvrv_1_1_course.html":[1,0,0,85],
-"classvrv_1_1_course.html#a02cc7676b68251fdd8dd834723d17851":[1,0,0,85,2],
-"classvrv_1_1_course.html#a097d015db1764fb9f652417a119c6b97":[1,0,0,85,6],
-"classvrv_1_1_course.html#a32efc530e079dd01f07eb507850da100":[1,0,0,85,3],
-"classvrv_1_1_course.html#a8dcf681960de13564e779d99f1037766":[1,0,0,85,4]
+"classvrv_1_1_course.html#a02cc7676b68251fdd8dd834723d17851":[1,0,0,85,2]
 };
