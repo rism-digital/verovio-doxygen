@@ -184,5 +184,6 @@ var classvrv_1_1_options =
     [ "m_usePgFooterForAll", "classvrv_1_1_options.html#af2efa96f02df7235c09c9688d8d528c9", null ],
     [ "m_usePgHeaderForAll", "classvrv_1_1_options.html#ad7e3496eb7c557c2ed05af9fc1d6f899", null ],
     [ "m_version", "classvrv_1_1_options.html#ab840cdbceb6ad9f3e0e700e0f8a6ed6f", null ],
+    [ "m_xmlIdChecksum", "classvrv_1_1_options.html#a4a118dd440c998fdc3d16e87bb1f1758", null ],
     [ "m_xmlIdSeed", "classvrv_1_1_options.html#adf74318d2408d579508ac0c54b90cd62", null ]
 ];

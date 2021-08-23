@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"classvrv_1_1data___l_i_n_e_w_i_d_t_h.html#a3ae8bf5b3b764e33eeff058cc3d2924a":[1,0,0,90,6],
 "classvrv_1_1data___l_i_n_e_w_i_d_t_h.html#a3ed7694491e34650345960e8002587d5":[1,0,0,90,9],
 "classvrv_1_1data___l_i_n_e_w_i_d_t_h.html#a6adda1bd5ffdd57975a7e98fdf39a73b":[1,0,0,90,1],
 "classvrv_1_1data___l_i_n_e_w_i_d_t_h.html#a6c455c4b49d2140c4cb9babcdde6167f":[1,0,0,90,3],
@@ -147,8 +148,8 @@ var NAVTREEINDEX21 =
 "group__nodoc.html":[0,0],
 "group__nodoc.html#ga11e13d1850cadf28b00a85fde655e133":[1,0,0,321,14],
 "group__nodoc.html#ga11e13d1850cadf28b00a85fde655e133":[0,0,3],
-"group__nodoc.html#ga409f7f6411678f02d7bc9a73be29c7d6":[0,0,1],
 "group__nodoc.html#ga409f7f6411678f02d7bc9a73be29c7d6":[1,0,0,321,8],
+"group__nodoc.html#ga409f7f6411678f02d7bc9a73be29c7d6":[0,0,1],
 "group__nodoc.html#ga5ae3fb587d96567263bfebc1261ff4d9":[0,0,8],
 "group__nodoc.html#ga5ae3fb587d96567263bfebc1261ff4d9":[1,0,0,321,52],
 "group__nodoc.html#ga5b3b3c80844a342a465d4887bb599ae0":[1,0,0,321,53],
@@ -161,10 +162,10 @@ var NAVTREEINDEX21 =
 "group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d":[1,0,0,321,39],
 "group__nodoc.html#gac0b9bfca70ab200ca3e313611e37cc20":[1,0,0,321,16],
 "group__nodoc.html#gac0b9bfca70ab200ca3e313611e37cc20":[0,0,4],
-"group__nodoc.html#gae5a104614acc4edf6794abe71d027210":[1,0,0,321,2],
 "group__nodoc.html#gae5a104614acc4edf6794abe71d027210":[0,0,0],
-"group__nodoc.html#gaf661135bee3a565fc0606f55ec0981e7":[0,0,5],
+"group__nodoc.html#gae5a104614acc4edf6794abe71d027210":[1,0,0,321,2],
 "group__nodoc.html#gaf661135bee3a565fc0606f55ec0981e7":[1,0,0,321,22],
+"group__nodoc.html#gaf661135bee3a565fc0606f55ec0981e7":[0,0,5],
 "grpsym_8h_source.html":[2,0,62],
 "hairpin_8h_source.html":[2,0,63],
 "halfmrpt_8h_source.html":[2,0,64],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "space_8h_source.html":[2,0,138],
 "staff_8h_source.html":[2,0,139],
 "staffdef_8h_source.html":[2,0,140],
-"staffgrp_8h_source.html":[2,0,141],
-"structvrv_1_1_closest_b_b.html":[1,0,0,76]
+"staffgrp_8h_source.html":[2,0,141]
 };

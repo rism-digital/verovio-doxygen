@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"classvrv_1_1_position_interface.html#abda3bfd8e411f1e32cf2d3a746772668":[1,0,0,239,0],
 "classvrv_1_1_position_interface.html#ac74c74fcf22d5ae9e9286623353da322":[1,0,0,239,6],
 "classvrv_1_1_position_interface.html#ae5d7e19319bcf359fc2119512e720004":[1,0,0,239,7],
 "classvrv_1_1_prepare_boundaries_params.html":[1,0,0,240],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "classvrv_1_1_score_def.html#a9c783c24225cb3b84f2096cbc727cbca":[1,0,0,269,27],
 "classvrv_1_1_score_def.html#a9cb53f6b4fcae84ac63c8e5ad8b7bb28":[1,0,0,269,13],
 "classvrv_1_1_score_def.html#aa7973eba5e5b3cb261bdd47b70d9e637":[1,0,0,269,17],
-"classvrv_1_1_score_def.html#aa914794d578ec1fb7f3327c6be007cd4":[1,0,0,269,21],
-"classvrv_1_1_score_def.html#ab6536d74aa22516600d0978ef528227e":[1,0,0,269,1]
+"classvrv_1_1_score_def.html#aa914794d578ec1fb7f3327c6be007cd4":[1,0,0,269,21]
 };
