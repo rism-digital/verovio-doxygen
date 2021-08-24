@@ -50,7 +50,6 @@
     <innerclass refid="classvrv_1_1_att_n_number_like_comparison" prot="public">vrv::AttNNumberLikeComparison</innerclass>
     <innerclass refid="classvrv_1_1_att_visibility_comparison" prot="public">vrv::AttVisibilityComparison</innerclass>
     <innerclass refid="classvrv_1_1_bar_line" prot="public">vrv::BarLine</innerclass>
-    <innerclass refid="classvrv_1_1_bar_line_attr" prot="public">vrv::BarLineAttr</innerclass>
     <innerclass refid="classvrv_1_1_b_box_device_context" prot="public">vrv::BBoxDeviceContext</innerclass>
     <innerclass refid="classvrv_1_1_beam" prot="public">vrv::Beam</innerclass>
     <innerclass refid="classvrv_1_1_beam_drawing_interface" prot="public">vrv::BeamDrawingInterface</innerclass>
@@ -1179,6 +1178,38 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/attdef.h" line="272" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/attdef.h" bodystart="272" bodyend="272"/>
       </memberdef>
+      <memberdef kind="enum" id="barline_8h_1a71938a10f8241066753d74c6686394fe" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>BarLinePosition</name>
+        <enumvalue id="barline_8h_1a71938a10f8241066753d74c6686394fea6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="barline_8h_1a71938a10f8241066753d74c6686394fea945d5e233cf7d6240f6b783b36a374ff" prot="public">
+          <name>Left</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="barline_8h_1a71938a10f8241066753d74c6686394fea92b09c7c48c520c3c55e497875da437c" prot="public">
+          <name>Right</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/barline.h" line="16" column="27" bodyfile="/home/runner/work/verovio/verovio/include/vrv/barline.h" bodystart="16" bodyend="16"/>
+      </memberdef>
       <memberdef kind="enum" id="beam_8h_1a9ee361b034ec980cb4d6bb84f3ce7b52" prot="public" static="no" strong="no">
         <type></type>
         <name>@0</name>
@@ -1438,7 +1469,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="2305" column="25" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="2305" bodyend="2315"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="2308" column="25" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="2308" bodyend="2318"/>
       </memberdef>
       <memberdef kind="enum" id="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922" prot="public" static="no" strong="no">
         <type></type>
@@ -5572,10 +5603,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="44" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="44" bodyend="44"/>
       </memberdef>
-      <memberdef kind="enum" id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503" prot="public" static="no" strong="no">
-        <type></type>
+      <memberdef kind="enum" id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5" prot="public" static="no" strong="no">
+        <type>uint16_t</type>
         <name>ClassId</name>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aaa2ece81ff1ccaf9d001feff78d6d483" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aaa2ece81ff1ccaf9d001feff78d6d483" prot="public">
           <name>BOUNDING_BOX</name>
           <initializer>= 0</initializer>
           <briefdescription>
@@ -5583,1169 +5614,1155 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a26a8208a3965980b1084012a65eb33e3" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a26a8208a3965980b1084012a65eb33e3" prot="public">
           <name>OBJECT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a69eca91aa7576fc8cda4059590899a8d" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a69eca91aa7576fc8cda4059590899a8d" prot="public">
           <name>DEVICE_CONTEXT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a8a2ac7b294df3ad0fc75c2859c04d1ac" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a8a2ac7b294df3ad0fc75c2859c04d1ac" prot="public">
           <name>FLOATING_OBJECT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503adcffa629363a4c63352fa6994306904d" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5adcffa629363a4c63352fa6994306904d" prot="public">
           <name>FLOATING_POSITIONER</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ac86b832d5d049b99366164c09c5ca50b" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ac86b832d5d049b99366164c09c5ca50b" prot="public">
           <name>FLOATING_CURVE_POSITIONER</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a9b3a330ccd2c01d91961ff208e4450b6" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a9b3a330ccd2c01d91961ff208e4450b6" prot="public">
           <name>ALIGNMENT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ace564857c4e045e20e01c5a9526b3d4d" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ace564857c4e045e20e01c5a9526b3d4d" prot="public">
           <name>ALIGNMENT_REFERENCE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a8a6925cf74312fa740e6e14dab3a2f6a" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a8a6925cf74312fa740e6e14dab3a2f6a" prot="public">
           <name>CLEF_ATTR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ad5a939baba71546092f007d53164a65a" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ad5a939baba71546092f007d53164a65a" prot="public">
           <name>COURSE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ade33092e14b1ba194f06b99d59a5ee4a" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ade33092e14b1ba194f06b99d59a5ee4a" prot="public">
           <name>DOC</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aaacb4d7fb170f5e9d5cab32b26f2196e" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aaacb4d7fb170f5e9d5cab32b26f2196e" prot="public">
           <name>FACSIMILE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a56941378d982bb477990961a5841f29e" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a56941378d982bb477990961a5841f29e" prot="public">
           <name>FB</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a0615362f1e304b31406bbf4c04984d4e" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a0615362f1e304b31406bbf4c04984d4e" prot="public">
           <name>GRPSYM</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a01d9a38f0f24f754b2a992fb21ecd185" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a01d9a38f0f24f754b2a992fb21ecd185" prot="public">
           <name>GRACE_ALIGNER</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a3f5cec2499d5f49960acdd6a7a3d7ff2" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a3f5cec2499d5f49960acdd6a7a3d7ff2" prot="public">
           <name>INSTRDEF</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a59bb98e036a7c754efb1de9ea5a50ebf" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a59bb98e036a7c754efb1de9ea5a50ebf" prot="public">
           <name>KEYSIG_ATTR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a551ef50ef9f7f44680be6d84ecc28aa1" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a551ef50ef9f7f44680be6d84ecc28aa1" prot="public">
           <name>LABEL</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ac8c070c336f4b697d2a2cdac36190a93" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ac8c070c336f4b697d2a2cdac36190a93" prot="public">
           <name>LABELABBR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a049de5297b7f9fe97f72288aa55ca153" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a049de5297b7f9fe97f72288aa55ca153" prot="public">
           <name>LAYER</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a226724cac79f97fe90080b68c296409b" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a226724cac79f97fe90080b68c296409b" prot="public">
           <name>MEASURE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ab4948f8b7177a5aa7abf2bad96506ea4" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ab4948f8b7177a5aa7abf2bad96506ea4" prot="public">
           <name>MEASURE_ALIGNER</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a752943c6021bf9d92e8437b33c6c66b1" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a752943c6021bf9d92e8437b33c6c66b1" prot="public">
           <name>MENSUR_ATTR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ab0e41a3c1caf8fcf119b217a66afb4e7" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ab0e41a3c1caf8fcf119b217a66afb4e7" prot="public">
           <name>METERSIG_ATTR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aeccc33e1086921e707553fc63f1300d3" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aeccc33e1086921e707553fc63f1300d3" prot="public">
           <name>METERSIGGRP</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a9d0c8e30ef2f26d72065b07a20d89f05" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a9d0c8e30ef2f26d72065b07a20d89f05" prot="public">
           <name>PAGE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aa8d7b16976bc414a19b4a24bb820f6e9" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aa8d7b16976bc414a19b4a24bb820f6e9" prot="public">
           <name>PAGES</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a45c38308dff8b31df0ded2472e46d717" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a45c38308dff8b31df0ded2472e46d717" prot="public">
           <name>STAFF</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503adc5b8d25bf28088feae351d62b0e5ca3" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5adc5b8d25bf28088feae351d62b0e5ca3" prot="public">
           <name>STAFF_ALIGNMENT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a529ddef18c59b3224ad5df6c5d05088b" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a529ddef18c59b3224ad5df6c5d05088b" prot="public">
           <name>STAFFGRP</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ab5471acd57ba8f213e0f24f230bb537c" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ab5471acd57ba8f213e0f24f230bb537c" prot="public">
           <name>SURFACE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ac61c1895fca9ef63cde9175711cb2b52" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ac61c1895fca9ef63cde9175711cb2b52" prot="public">
           <name>SVG</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a178df22c471b562000bb84d7ac5b0131" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a178df22c471b562000bb84d7ac5b0131" prot="public">
           <name>SYSTEM</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a8f04a433605faeaca0ee6c610f8d4c7c" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a8f04a433605faeaca0ee6c610f8d4c7c" prot="public">
           <name>SYSTEM_ALIGNER</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a95aa5824ac3632faa26b998a898c10f2" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a95aa5824ac3632faa26b998a898c10f2" prot="public">
           <name>SYSTEM_ALIGNMENT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a7589ce3b7d610f416c9fd2f96cc1a05f" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a7589ce3b7d610f416c9fd2f96cc1a05f" prot="public">
           <name>TIMESTAMP_ALIGNER</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503abc0d673e10a30acc2921e49c37caf2b6" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5abc0d673e10a30acc2921e49c37caf2b6" prot="public">
           <name>TUNING</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a537d6b2fa37a30b97d26450121c5a337" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a537d6b2fa37a30b97d26450121c5a337" prot="public">
           <name>ZONE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503abec6f0071f9685d4cbd4ac2efb8870eb" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5abec6f0071f9685d4cbd4ac2efb8870eb" prot="public">
           <name>EDITORIAL_ELEMENT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ab435085554ac35dea1444e8ea9570b61" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ab435085554ac35dea1444e8ea9570b61" prot="public">
           <name>ABBR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a367947f45059c617136d52d1f65c65a4" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a367947f45059c617136d52d1f65c65a4" prot="public">
           <name>ADD</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a2782a4cb5dd6ac1c72b51dd8ce402dcc" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a2782a4cb5dd6ac1c72b51dd8ce402dcc" prot="public">
           <name>ANNOT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a5e0167700376db1163d3c0dc9bf7ef9e" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a5e0167700376db1163d3c0dc9bf7ef9e" prot="public">
           <name>APP</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a873a062f9d8bedac699dea3cafc2e3bc" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a873a062f9d8bedac699dea3cafc2e3bc" prot="public">
           <name>CHOICE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ab2c4482e76f7fb7245a1077e82bfdd31" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ab2c4482e76f7fb7245a1077e82bfdd31" prot="public">
           <name>CORR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a069188092d89d19f93b62ad3d27ec797" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a069188092d89d19f93b62ad3d27ec797" prot="public">
           <name>DAMAGE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503af9871bd0970f75de620ab8dffc588b30" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5af9871bd0970f75de620ab8dffc588b30" prot="public">
           <name>DEL</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ab8d5be143fbbfaecb423202e5599e900" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ab8d5be143fbbfaecb423202e5599e900" prot="public">
           <name>EXPAN</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a58ad3dad07093f1fbf4e658d0e20fcf9" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a58ad3dad07093f1fbf4e658d0e20fcf9" prot="public">
           <name>LEM</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a77a302d5c1ed2fcef39f46eb9f690487" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a77a302d5c1ed2fcef39f46eb9f690487" prot="public">
           <name>ORIG</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ae8398528e08f48e615af6a6e86350ab4" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ae8398528e08f48e615af6a6e86350ab4" prot="public">
           <name>RDG</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a816246387ba5683dde19e40d70e5d608" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a816246387ba5683dde19e40d70e5d608" prot="public">
           <name>REF</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a82a2c065614e479ad8cc95aa83b6a21a" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a82a2c065614e479ad8cc95aa83b6a21a" prot="public">
           <name>REG</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a93da38ef66bcde77940375ebd774a556" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a93da38ef66bcde77940375ebd774a556" prot="public">
           <name>RESTORE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ac14e10cf771aea8163b6bc2f59011e3e" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ac14e10cf771aea8163b6bc2f59011e3e" prot="public">
           <name>SIC</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a6f1363a07cac626c2e603bb1f6e27fd5" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a6f1363a07cac626c2e603bb1f6e27fd5" prot="public">
           <name>SUBST</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a996a1a5c0d22d91c034a5bf285611cb5" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a996a1a5c0d22d91c034a5bf285611cb5" prot="public">
           <name>SUPPLIED</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a0b8e66d05a70a5589f0710a9822fd8ea" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a0b8e66d05a70a5589f0710a9822fd8ea" prot="public">
           <name>UNCLEAR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a29ba05129513a0d99a3ff4319fe854ca" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a29ba05129513a0d99a3ff4319fe854ca" prot="public">
           <name>EDITORIAL_ELEMENT_max</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a5ea084d9c8ceff4cfe801eedbd4d0b59" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a5ea084d9c8ceff4cfe801eedbd4d0b59" prot="public">
           <name>RUNNING_ELEMENT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a5e4db54c7fd3278cc9aa5fd69f812f89" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a5e4db54c7fd3278cc9aa5fd69f812f89" prot="public">
           <name>PGFOOT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a9988e90162da4051101a758e1a967017" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a9988e90162da4051101a758e1a967017" prot="public">
           <name>PGFOOT2</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a317df259242450e7b52d56d9738a6a5f" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a317df259242450e7b52d56d9738a6a5f" prot="public">
           <name>PGHEAD</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a7868c8304a160a27ed88cc9272d8f79e" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a7868c8304a160a27ed88cc9272d8f79e" prot="public">
           <name>PGHEAD2</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a289608372400f54e29afd992d804493a" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a289608372400f54e29afd992d804493a" prot="public">
           <name>RUNNING_ELEMENT_max</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aae8f54bc78b9439e6c987edd912484e2" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aae8f54bc78b9439e6c987edd912484e2" prot="public">
           <name>PAGE_ELEMENT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a586ec30155e9d85fac7f58f7951881ea" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a586ec30155e9d85fac7f58f7951881ea" prot="public">
           <name>PAGE_ELEMENT_END</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a4cb370152ff47908392bb96f714b7e35" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a4cb370152ff47908392bb96f714b7e35" prot="public">
           <name>MDIV</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a1fdc8b7b336ade04c9a461de426c811b" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a1fdc8b7b336ade04c9a461de426c811b" prot="public">
           <name>SCORE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a40d815795d03d100a66f426e51140e54" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a40d815795d03d100a66f426e51140e54" prot="public">
           <name>PAGE_ELEMENT_max</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aaa917c73862a67ecf2d2a37b9e9f45aa" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aaa917c73862a67ecf2d2a37b9e9f45aa" prot="public">
           <name>SYSTEM_ELEMENT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a07b9ab9826dc07f7bd46d205258e21ba" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a07b9ab9826dc07f7bd46d205258e21ba" prot="public">
           <name>SYSTEM_ELEMENT_END</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ae6d22b42da00cde213249f9133df55fd" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ae6d22b42da00cde213249f9133df55fd" prot="public">
           <name>ENDING</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a6dd5663ebed37079d7a1250e0a372936" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a6dd5663ebed37079d7a1250e0a372936" prot="public">
           <name>EXPANSION</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a9adea64b4ee5e7b5ef7f76642ba4e067" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a9adea64b4ee5e7b5ef7f76642ba4e067" prot="public">
           <name>PB</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ace23b61f5fc72500597def4dd1a4327b" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ace23b61f5fc72500597def4dd1a4327b" prot="public">
           <name>SB</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503afda1a10a89735bcf935b63ad4ce84953" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5afda1a10a89735bcf935b63ad4ce84953" prot="public">
           <name>SECTION</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a016014354bb49ed3a8f007545b5d359e" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a016014354bb49ed3a8f007545b5d359e" prot="public">
           <name>SYSTEM_ELEMENT_max</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a9490b97773a28fddbd8dfc10ea0e6b2c" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a9490b97773a28fddbd8dfc10ea0e6b2c" prot="public">
           <name>CONTROL_ELEMENT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a0709f3310ae8847ec72c1747997d91d1" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a0709f3310ae8847ec72c1747997d91d1" prot="public">
           <name>ANCHOREDTEXT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aba2a0a283e0612ad35c12117a34951a6" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aba2a0a283e0612ad35c12117a34951a6" prot="public">
           <name>ARPEG</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a5ac6d401fd55c897cbbef15168c0e97c" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a5ac6d401fd55c897cbbef15168c0e97c" prot="public">
           <name>BRACKETSPAN</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ae78cf01e8e39f40ebd50e27f4351490f" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ae78cf01e8e39f40ebd50e27f4351490f" prot="public">
           <name>BREATH</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a1eb4c2e5b444414808597455d88c0883" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a1eb4c2e5b444414808597455d88c0883" prot="public">
           <name>CAESURA</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a67f2113a49586ec728a62df47c57b3ed" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a67f2113a49586ec728a62df47c57b3ed" prot="public">
           <name>DIR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a7c73603846557c4e56e0a13a58651203" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a7c73603846557c4e56e0a13a58651203" prot="public">
           <name>DYNAM</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a940a5780f7ea9d33d5410dc97a408c15" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a940a5780f7ea9d33d5410dc97a408c15" prot="public">
           <name>FERMATA</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aba85fe9f02d8dd46548eef91c8f8a8aa" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aba85fe9f02d8dd46548eef91c8f8a8aa" prot="public">
           <name>FING</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503adbe09766530e4ef5a0d9e91ee95ffd15" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5adbe09766530e4ef5a0d9e91ee95ffd15" prot="public">
           <name>GLISS</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a763a752a8fc181dd005b16b874e11396" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a763a752a8fc181dd005b16b874e11396" prot="public">
           <name>HAIRPIN</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aff18acec7dbe74299c57839bc71dc0fb" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aff18acec7dbe74299c57839bc71dc0fb" prot="public">
           <name>HARM</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ab4ceb554802498d50238cfea07a1b3ae" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ab4ceb554802498d50238cfea07a1b3ae" prot="public">
           <name>LV</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a2d1ac89494577c2027bf26154e369d85" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a2d1ac89494577c2027bf26154e369d85" prot="public">
           <name>MORDENT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a129b9d0934643177e1def8bfbe41c376" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a129b9d0934643177e1def8bfbe41c376" prot="public">
           <name>MNUM</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a8994da4afad14863a8e9118bf7b8d511" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a8994da4afad14863a8e9118bf7b8d511" prot="public">
           <name>OCTAVE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503acc2f43573786fbc05f8d77e2e0ce51f4" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5acc2f43573786fbc05f8d77e2e0ce51f4" prot="public">
           <name>PEDAL</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a9a3038bb95bd33f8a78c6798ec30417f" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a9a3038bb95bd33f8a78c6798ec30417f" prot="public">
           <name>PHRASE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ab0c2516185a669e575c8e2230d2fce6b" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ab0c2516185a669e575c8e2230d2fce6b" prot="public">
           <name>PITCHINFLECTION</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a28555e7fad0c0861bbcc053a2150b1f0" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a28555e7fad0c0861bbcc053a2150b1f0" prot="public">
           <name>REH</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ab7234c6391fee2937643be7ffbdbe169" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ab7234c6391fee2937643be7ffbdbe169" prot="public">
           <name>SLUR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ad018b8d1b7589f956a635e43dcf357c8" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ad018b8d1b7589f956a635e43dcf357c8" prot="public">
           <name>TEMPO</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a2a7f237b3bbcc0932f066739cb94caef" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a2a7f237b3bbcc0932f066739cb94caef" prot="public">
           <name>TIE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a64de56dc6371990e227c30914ecb342f" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a64de56dc6371990e227c30914ecb342f" prot="public">
           <name>TRILL</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a9f10368ab2ee0cfb880d0e8b78fdd577" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a9f10368ab2ee0cfb880d0e8b78fdd577" prot="public">
           <name>TURN</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503afdd729217693e3f3b3b3881b88c33c39" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5afdd729217693e3f3b3b3881b88c33c39" prot="public">
           <name>CONTROL_ELEMENT_max</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a28566140f8ac5bb44f65ec22f94b38e5" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a28566140f8ac5bb44f65ec22f94b38e5" prot="public">
           <name>LAYER_ELEMENT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ad70091f1e2b0d89be54e3fa06c12f111" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ad70091f1e2b0d89be54e3fa06c12f111" prot="public">
           <name>ACCID</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a7c41c3d46e7097587e7147f324b591b2" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a7c41c3d46e7097587e7147f324b591b2" prot="public">
           <name>ARTIC</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a3386c3cc665e4ee3ecda464bc02b0c92" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a3386c3cc665e4ee3ecda464bc02b0c92" prot="public">
           <name>BARLINE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a116d8047eb25196ce4799116c285744e" prot="public">
-          <name>BARLINE_ATTR_LEFT</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a1349c7fe17f1af0a4d5d56e7056bec4e" prot="public">
-          <name>BARLINE_ATTR_RIGHT</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503abab3395586bead789e24edf55a92bda1" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5abab3395586bead789e24edf55a92bda1" prot="public">
           <name>BEAM</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a32d8035c28bed0e9050b1e25cd22f828" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a32d8035c28bed0e9050b1e25cd22f828" prot="public">
           <name>BEATRPT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503afedb1c8906f9467779266f73b9bfbb5f" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5afedb1c8906f9467779266f73b9bfbb5f" prot="public">
           <name>BTREM</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ac9cb0818f2dad0149a8c4552c9bd96ec" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ac9cb0818f2dad0149a8c4552c9bd96ec" prot="public">
           <name>CHORD</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a2dc8e1bec5aec38286304f56efa0c0f7" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a2dc8e1bec5aec38286304f56efa0c0f7" prot="public">
           <name>CLEF</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a9ebaf142ecb51942dbd6bb8997a8a260" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a9ebaf142ecb51942dbd6bb8997a8a260" prot="public">
           <name>CUSTOS</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a2c243c6e3ac392f7a7f064c9fe7d1197" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a2c243c6e3ac392f7a7f064c9fe7d1197" prot="public">
           <name>DOT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a1af05e49b4e40d85da750d80f6906820" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a1af05e49b4e40d85da750d80f6906820" prot="public">
           <name>DOTS</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a0a33048e8bdefff23d638a0dc1198596" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a0a33048e8bdefff23d638a0dc1198596" prot="public">
           <name>FLAG</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a6deb8cdb9d5252838e1a049d724a0c44" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a6deb8cdb9d5252838e1a049d724a0c44" prot="public">
           <name>FTREM</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a78ea55a75b35d4a2e7192220e4439a33" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a78ea55a75b35d4a2e7192220e4439a33" prot="public">
           <name>GRACEGRP</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503affca184a7c6ac786aeaa7910fbceeddb" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5affca184a7c6ac786aeaa7910fbceeddb" prot="public">
           <name>HALFMRPT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a7ebd4ec98508e79d0fc8b3208afb652a" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a7ebd4ec98508e79d0fc8b3208afb652a" prot="public">
           <name>KEYSIG</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a9c25139dee6c43b943ae02c88dbde3a5" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a9c25139dee6c43b943ae02c88dbde3a5" prot="public">
           <name>KEYACCID</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a89fb97468ce0392e86af8b6fa8080ae6" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a89fb97468ce0392e86af8b6fa8080ae6" prot="public">
           <name>LIGATURE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aef57cd721ea2ae33d048ec704209ddb3" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aef57cd721ea2ae33d048ec704209ddb3" prot="public">
           <name>MENSUR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a13b0aff35e505787b1f7c7b6e21d35a7" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a13b0aff35e505787b1f7c7b6e21d35a7" prot="public">
           <name>METERSIG</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a3848db28cea3ca8ba2c7154501e37774" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a3848db28cea3ca8ba2c7154501e37774" prot="public">
           <name>MREST</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a187dfb00be4e9cb12a41c3855f322aec" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a187dfb00be4e9cb12a41c3855f322aec" prot="public">
           <name>MRPT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a8eb73a211442ee7a07a7ce095538b6aa" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a8eb73a211442ee7a07a7ce095538b6aa" prot="public">
           <name>MRPT2</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a02952348379f21c0c07c19972d343d2f" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a02952348379f21c0c07c19972d343d2f" prot="public">
           <name>MSPACE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ab1164954095661da451676ca28392cf9" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ab1164954095661da451676ca28392cf9" prot="public">
           <name>MULTIREST</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a196f6df847c1936c9522957ece2c5ac7" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a196f6df847c1936c9522957ece2c5ac7" prot="public">
           <name>MULTIRPT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503af5f77ccb2ab4ee10d875734463398dca" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5af5f77ccb2ab4ee10d875734463398dca" prot="public">
           <name>NC</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a9bc5ef848a12eefce6744eb5cf871cf9" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a9bc5ef848a12eefce6744eb5cf871cf9" prot="public">
           <name>NOTE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aa79fb1fd5996797a7aab273ff8c6f956" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aa79fb1fd5996797a7aab273ff8c6f956" prot="public">
           <name>NEUME</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a38d61f7d68f8009f63661150b5c1888b" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a38d61f7d68f8009f63661150b5c1888b" prot="public">
           <name>PLICA</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a109a2220286295195da1f6039cd8b40a" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a109a2220286295195da1f6039cd8b40a" prot="public">
           <name>PROPORT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ab4ba193bef625e030aa64bcb875602d7" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ab4ba193bef625e030aa64bcb875602d7" prot="public">
           <name>REST</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ad0b3bbbc944977224a42b3782f04e43b" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ad0b3bbbc944977224a42b3782f04e43b" prot="public">
           <name>SPACE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a75bbca1996f695f31421f87a55c39488" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a75bbca1996f695f31421f87a55c39488" prot="public">
           <name>STEM</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a28ec1af78fc46768b610a9c6a4c49319" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a28ec1af78fc46768b610a9c6a4c49319" prot="public">
           <name>SYL</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a9da8b926482028e74322c036bcb6afce" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a9da8b926482028e74322c036bcb6afce" prot="public">
           <name>SYLLABLE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a523fc0d01a03ead2ff5f632298ab0113" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a523fc0d01a03ead2ff5f632298ab0113" prot="public">
           <name>TABGRP</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aee77de17bf0da053eccd51bb4d460b80" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aee77de17bf0da053eccd51bb4d460b80" prot="public">
           <name>TABDURSYM</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aef3ed54e51ee72ea8c690273858bcd94" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aef3ed54e51ee72ea8c690273858bcd94" prot="public">
           <name>TIMESTAMP_ATTR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a36d058bb54e90880346523e5dd887739" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a36d058bb54e90880346523e5dd887739" prot="public">
           <name>TUPLET</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a20f58c23f856353ab2d3bdffea7eb1f5" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a20f58c23f856353ab2d3bdffea7eb1f5" prot="public">
           <name>TUPLET_BRACKET</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a44b3f2e6820c35ffc9c2b7bd0daab3fc" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a44b3f2e6820c35ffc9c2b7bd0daab3fc" prot="public">
           <name>TUPLET_NUM</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aa9db9494a9ce58d61608fb926f7d9073" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aa9db9494a9ce58d61608fb926f7d9073" prot="public">
           <name>VERSE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a1b9783ad31ffb8bacaa85f6c7b854156" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a1b9783ad31ffb8bacaa85f6c7b854156" prot="public">
           <name>LAYER_ELEMENT_max</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aee57573824184e30879f6e7cf8d832b8" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aee57573824184e30879f6e7cf8d832b8" prot="public">
           <name>SCOREDEF_ELEMENT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a1ad483ca3d7052cdf5d1239eebf8897d" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a1ad483ca3d7052cdf5d1239eebf8897d" prot="public">
           <name>SCOREDEF</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a9f6d23dab393c4faf39ca178ef375063" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a9f6d23dab393c4faf39ca178ef375063" prot="public">
           <name>STAFFDEF</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aff6377c90a88942db2d3dba76606205a" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aff6377c90a88942db2d3dba76606205a" prot="public">
           <name>SCOREDEF_ELEMENT_max</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aa4c14f7755c4ddc17204dcef2fa80236" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aa4c14f7755c4ddc17204dcef2fa80236" prot="public">
           <name>TEXT_ELEMENT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a49fa0e5a824749f1c43877506b65c1ff" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a49fa0e5a824749f1c43877506b65c1ff" prot="public">
           <name>FIG</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a8415777376e24a5f48eb97869be4a9e2" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a8415777376e24a5f48eb97869be4a9e2" prot="public">
           <name>FIGURE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a016209d9e466fdc4eb28a01d060330ae" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a016209d9e466fdc4eb28a01d060330ae" prot="public">
           <name>LB</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503aac13e350408d7450b0ce951769216a08" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5aac13e350408d7450b0ce951769216a08" prot="public">
           <name>NUM</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a305eca5afcf457566fa533ac32d6bc87" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a305eca5afcf457566fa533ac32d6bc87" prot="public">
           <name>REND</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a3fc79b81b97b19cdccb25b8aecc3eb78" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a3fc79b81b97b19cdccb25b8aecc3eb78" prot="public">
           <name>TEXT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a61272a1ec1203b5a112464e9c55311f8" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a61272a1ec1203b5a112464e9c55311f8" prot="public">
           <name>TEXT_ELEMENT_max</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503ad89980b8732f1c3d12cae754eb86bf63" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ad89980b8732f1c3d12cae754eb86bf63" prot="public">
           <name>BBOX_DEVICE_CONTEXT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503acbc0f4b46f0ca28cd20989658dfa1452" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5acbc0f4b46f0ca28cd20989658dfa1452" prot="public">
           <name>SVG_DEVICE_CONTEXT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a438099a3938aa65f4e826aa05c176c9e" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a438099a3938aa65f4e826aa05c176c9e" prot="public">
           <name>CUSTOM_DEVICE_CONTEXT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="vrvdef_8h_1ac52752b1ad781c0dca8517a36d07f503a530a63fd92d889b91d735ee73ff574e1" prot="public">
+        <enumvalue id="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a530a63fd92d889b91d735ee73ff574e1" prot="public">
           <name>UNSPECIFIED</name>
           <briefdescription>
           </briefdescription>
@@ -6756,11 +6773,11 @@
 <para>The ClassIds are used to identify <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> child classes through the Object::Is virtual method. </para>
         </briefdescription>
         <detaileddescription>
-<para>Each <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> child class has to have its own id and has to override the GetClassId() method. Base classes (e.g., <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref>) that are never instanciated have boundary ids used for checking if an <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> is child of a base class. See for example Object::IsLayerElement. </para>
+<para>Each <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> child class has to have its own id which is stored in the member variable m_classId. Base classes (e.g., <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref>) that are never instanciated have boundary ids used for checking if an <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> is child of a base class. See for example Object::IsLayerElement. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="79" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="79" bodyend="259"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="79" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="79" bodyend="257"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1ac7221611975ee29efd00f36d5f3241ed" prot="public" static="no" strong="no">
         <type></type>
@@ -6864,7 +6881,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="265" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="265" bodyend="279"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="263" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="263" bodyend="277"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1ae8fb2cd7bb3532da2d4f5722aad959ff" prot="public" static="no" strong="no">
         <type></type>
@@ -6899,7 +6916,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="403" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="403" bodyend="403"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="401" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="401" bodyend="401"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a54d6ff49d033c0285b31e17f6d937de5" prot="public" static="no" strong="no">
         <type></type>
@@ -6988,7 +7005,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="480" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="480" bodyend="492"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="478" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="478" bodyend="490"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a8542ec96e3466cd51668ce173874c518" prot="public" static="no" strong="no">
         <type></type>
@@ -7014,7 +7031,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="498" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="498" bodyend="498"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="496" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="496" bodyend="496"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a1de60d9586102fb282d982e15c85484b" prot="public" static="no" strong="no">
         <type></type>
@@ -7068,7 +7085,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="504" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="504" bodyend="511"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="502" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="502" bodyend="509"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a6e3c7b5a84ebcdfeeca4461ff16ef24c" prot="public" static="no" strong="no">
         <type></type>
@@ -7108,7 +7125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="517" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="517" bodyend="517"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="515" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="515" bodyend="515"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1af7a49f055e59c4a0af01a6014b67f577" prot="public" static="no" strong="no">
         <type></type>
@@ -7149,7 +7166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="528" column="25" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="528" bodyend="528"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="526" column="25" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="526" bodyend="526"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a1113434a7ab786e4503267dbb0eb8dfa" prot="public" static="no" strong="no">
         <type></type>
@@ -7175,7 +7192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="534" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="534" bodyend="534"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="532" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="532" bodyend="532"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a36c286f79e83330f0e55437071221317" prot="public" static="no" strong="no">
         <type></type>
@@ -7208,7 +7225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="540" column="28" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="540" bodyend="540"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="538" column="28" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="538" bodyend="538"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a03fd8fbbc4dc75a77e44a3e511de884e" prot="public" static="no" strong="no">
         <type></type>
@@ -7241,7 +7258,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="546" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="546" bodyend="550"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="544" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="544" bodyend="548"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a88ade1c60e4eca489899e0a04d7adaf7" prot="public" static="no" strong="no">
         <type></type>
@@ -7276,7 +7293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="552" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="552" bodyend="556"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="550" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="550" bodyend="554"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a84d68545ab583dea8bac85b3a855ab5c" prot="public" static="no" strong="no">
         <type></type>
@@ -7343,7 +7360,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="562" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="562" bodyend="570"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="560" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="560" bodyend="568"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a8df6f04a3949cde243aaaa7ab4c81411" prot="public" static="no" strong="no">
         <type></type>
@@ -7394,7 +7411,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="576" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="576" bodyend="582"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="574" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="574" bodyend="580"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a1e32c19da13a9a672780c6c5e48ca8f5" prot="public" static="no" strong="no">
         <type></type>
@@ -7420,7 +7437,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="588" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="588" bodyend="588"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="586" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="586" bodyend="586"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a0559ff28e79761ea07a1ee0ed60ac3a7" prot="public" static="no" strong="no">
         <type></type>
@@ -7463,7 +7480,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="594" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="594" bodyend="594"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="592" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="592" bodyend="592"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -7774,7 +7791,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="1513" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="1513" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="1516" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="1516" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a88f97c731b140ac861b13be697d11724" prot="public" static="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> * &gt;</type>
@@ -7787,7 +7804,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="310" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="308" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="308" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="306" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a06296c176a6acafc46e107e1d6ea2eea" prot="public" static="no">
         <type>std::list&lt; <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> * &gt;</type>
@@ -7800,7 +7817,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="312" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="312" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="310" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="310" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1af46efe784888a2fd5bb33979da5145bc" prot="public" static="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_comparison" kindref="compound">Comparison</ref> * &gt;</type>
@@ -7813,7 +7830,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="314" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="314" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="312" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="312" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a617953d1d68ec925a02ac797447ee193" prot="public" static="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> * &gt;</type>
@@ -7826,7 +7843,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="316" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="316" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="314" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="314" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a6dab135252948e12a443fa9e1033e6d2" prot="public" static="no">
         <type>std::vector&lt; std::tuple&lt; <ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> *, <ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> *, int &gt; &gt;</type>
@@ -7839,7 +7856,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="318" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="318" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="316" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="316" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1abc75429c56ee35fd40e71dbbe38d2f1f" prot="public" static="no">
         <type>std::vector&lt; std::tuple&lt; <ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> *, <ref refid="classvrv_1_1_arpeg" kindref="compound">Arpeg</ref> *, int, bool &gt; &gt;</type>
@@ -7852,7 +7869,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="320" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="320" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="318" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="318" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1acf607a7144a50999f70e8aeec257df1e" prot="public" static="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_beam_element_coord" kindref="compound">BeamElementCoord</ref> * &gt;</type>
@@ -7865,7 +7882,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="322" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="322" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="320" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="320" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a989c0fd1f2e159613d02239cbfd33b9e" prot="public" static="no">
         <type>std::vector&lt; std::pair&lt; int, int &gt; &gt;</type>
@@ -7878,7 +7895,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="324" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="324" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="322" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="322" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1aba74349ddea75116985c2b8e81265227" prot="public" static="no">
         <type>std::multimap&lt; std::string, <ref refid="classvrv_1_1_linking_interface" kindref="compound">LinkingInterface</ref> * &gt;</type>
@@ -7891,7 +7908,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="326" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="326" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="324" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="324" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1aafc0423f92b6b42f14aed4ef50d27ffd" prot="public" static="no">
         <type>std::vector&lt; std::pair&lt; <ref refid="classvrv_1_1_plist_interface" kindref="compound">PlistInterface</ref> *, std::string &gt; &gt;</type>
@@ -7904,7 +7921,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="328" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="328" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="326" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="326" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a0d9c798cb14ab9e1a7f3ca228778b930" prot="public" static="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_curve_spanned_element" kindref="compound">CurveSpannedElement</ref> * &gt;</type>
@@ -7917,7 +7934,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="330" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="330" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="328" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="328" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1ac4ff1b2216efd00adc595fd0e37c024f" prot="public" static="no">
         <type>std::list&lt; std::pair&lt; <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *, data_MEASUREBEAT &gt; &gt;</type>
@@ -7930,7 +7947,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="332" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="332" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="330" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="330" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a30fbf8804592f051a046c1ae0a5adaca" prot="public" static="no">
         <type>std::list&lt; std::pair&lt; <ref refid="classvrv_1_1_time_point_interface" kindref="compound">TimePointInterface</ref> *, ClassId &gt; &gt;</type>
@@ -7943,7 +7960,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="334" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="334" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="332" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="332" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a5da6a8ad23418c815f95a7b14afc1711" prot="public" static="no">
         <type>std::list&lt; std::pair&lt; <ref refid="classvrv_1_1_time_spanning_interface" kindref="compound">TimeSpanningInterface</ref> *, ClassId &gt; &gt;</type>
@@ -7956,7 +7973,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="336" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="336" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="334" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="334" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a9639afbd0da92deff42340ca26cc9806" prot="public" static="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> * &gt;</type>
@@ -7969,7 +7986,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="338" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="338" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="336" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="336" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1ad0184df9c199e93253f8d4a6ce297097" prot="public" static="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref> * &gt;</type>
@@ -7982,7 +7999,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="340" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="340" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="338" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="338" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a08796ad3c7e245b32402c2006bf8f5ff" prot="public" static="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_ledger_line" kindref="compound">LedgerLine</ref> &gt;</type>
@@ -7995,7 +8012,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="342" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="342" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="340" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="340" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a5b385a25b8c7ff4100b1f1301b86a445" prot="public" static="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_text_element" kindref="compound">TextElement</ref> * &gt;</type>
@@ -8008,7 +8025,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="344" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="344" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="342" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="342" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a7f193cca649efe4d53777d4f0a8edc28" prot="public" static="no">
         <type>std::map&lt; <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *, std::multiset&lt; int &gt; &gt;</type>
@@ -8021,7 +8038,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="346" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="346" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="344" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="344" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1ae636d5f9d9a409b5c1605b5a313553be" prot="public" static="no">
         <type>std::map&lt; <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *, std::set&lt; int &gt; &gt;</type>
@@ -8034,7 +8051,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="348" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="348" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="346" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="346" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a8948cd8b27f9cbbbe8a21608b224a47c" prot="public" static="no">
         <type>std::map&lt; std::string, <ref refid="classvrv_1_1_option" kindref="compound">Option</ref> * &gt;</type>
@@ -8047,7 +8064,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="350" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="350" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="348" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="348" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1aa76acf973fc45461e158df49bc08fed7" prot="public" static="no">
         <type>std::map&lt; data_PITCHNAME, data_ACCIDENTAL_WRITTEN &gt;</type>
@@ -8060,7 +8077,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="352" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="352" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="350" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="350" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a9ad8e2dec088a44b2422586ba3227543" prot="public" static="no">
         <type>std::map&lt; int, <ref refid="classvrv_1_1_grace_aligner" kindref="compound">GraceAligner</ref> * &gt;</type>
@@ -8073,7 +8090,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="354" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="354" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="352" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="352" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1ae6a38cddb2c77a7d441cd1660a938194" prot="public" static="no">
         <type>std::vector&lt; std::pair&lt; std::wstring, bool &gt; &gt;</type>
@@ -8086,7 +8103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="356" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="356" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="354" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="354" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a5257655c4b12f7a0ca7deddedffd0384" prot="public" static="no">
         <type>std::map&lt; std::string, std::function&lt; <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *(void)&gt; &gt;</type>
@@ -8099,7 +8116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="358" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="358" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="356" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="356" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a6734b082828b7dd744510bae2314b18a" prot="public" static="no">
         <type>std::map&lt; std::string, ClassId &gt;</type>
@@ -8112,7 +8129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="360" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="360" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="358" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="358" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1aae26a3e0b176be3d0be44eb8aa2c7430" prot="public" static="no">
         <type>std::map&lt; int, <ref refid="structvrv_1_1_int_tree" kindref="compound">IntTree</ref> &gt;</type>
@@ -8125,7 +8142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="375" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="375" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="373" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="373" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a98564baedb31f125d372dc98acfe65ce" prot="public" static="no">
         <type>std::map&lt; int, bool &gt;</type>
@@ -8140,7 +8157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="383" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="383" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="381" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="381" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1ad164214cb7b0fa4191153b64a57bfdb0" prot="public" static="no">
         <type>std::map&lt; int, VerseN_t &gt;</type>
@@ -8153,7 +8170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="384" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="384" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="382" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="382" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a92c49c3fc4142fda9a953227dec612be" prot="public" static="no">
         <type>std::map&lt; int, LayerN_VerserN_t &gt;</type>
@@ -8166,7 +8183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="385" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="385" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="383" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="383" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">

@@ -1,10 +1,10 @@
 var classvrv_1_1_floating_object =
 [
     [ "FloatingObject", "classvrv_1_1_floating_object.html#a881e66e4ba71468555b7a8abae6a346e", null ],
-    [ "FloatingObject", "classvrv_1_1_floating_object.html#a7179e38e7df88898283c62d28c8921db", null ],
+    [ "FloatingObject", "classvrv_1_1_floating_object.html#a0988447a69fd83a982391248f4a19944", null ],
+    [ "FloatingObject", "classvrv_1_1_floating_object.html#a41170245f10c43785287cacb6e34013b", null ],
     [ "~FloatingObject", "classvrv_1_1_floating_object.html#ac09ff8994cb1d0119fdd67d25d12f410", null ],
     [ "FillStaffCurrentTimeSpanning", "classvrv_1_1_floating_object.html#a26acefe41b29aa28c85eb244f624d2c1", null ],
-    [ "GetClassId", "classvrv_1_1_floating_object.html#ae043bc6c34e3044bd8bf1befa9ad3726", null ],
     [ "GetCorrespFloatingPositioner", "classvrv_1_1_floating_object.html#aef3059c4ebeb1d581e5ce06319d11050", null ],
     [ "GetCurrentFloatingPositioner", "classvrv_1_1_floating_object.html#aa26df3350328cd96704f766ac3db0615", null ],
     [ "GetDrawingGrpId", "classvrv_1_1_floating_object.html#a67e6ef3b80f122a42bcccd89701bc298", null ],

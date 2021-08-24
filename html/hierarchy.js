@@ -34,9 +34,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "AttBarLineLog", null, [
-      [ "vrv::BarLine", "classvrv_1_1_bar_line.html", [
-        [ "vrv::BarLineAttr", "classvrv_1_1_bar_line_attr.html", null ]
-      ] ]
+      [ "vrv::BarLine", "classvrv_1_1_bar_line.html", null ]
     ] ],
     [ "AttBarring", null, [
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ]

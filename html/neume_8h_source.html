@@ -147,52 +147,51 @@ $(document).ready(function(){initNavTree('neume_8h_source.html',''); initResizab
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Reset();</div>
 <div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classvrv_1_1_neume.html#a89401dde8ddf84d0931a4eeddcc96428">   70</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_neume.html#a89401dde8ddf84d0931a4eeddcc96428">Clone</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_neume.html">Neume</a>(*<span class="keyword">this</span>); }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> std::string GetClassName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Neume&quot;</span>; }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> ClassId GetClassId()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> NEUME; }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_neume.html#a54078846b5d8bf453cdfc9aa0c022ebf">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetPosition(LayerElement *element);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsLastInNeume(LayerElement *element);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">bool</span> GenerateChildMelodic();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    NeumeGroup GetNeumeGroup();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::vector&lt;int&gt; GetPitchDifferences();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    PitchInterface *GetHighestPitch();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    PitchInterface *GetLowestPitch();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// Static members //</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classvrv_1_1_neume.html#a279eba0f83d8dcc4cde34008835c66fd">  103</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::map&lt;std::string, NeumeGroup&gt; <a class="code" href="classvrv_1_1_neume.html#a279eba0f83d8dcc4cde34008835c66fd">s_neumes</a>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">static</span> std::string NeumeGroupToString(NeumeGroup group);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;};</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_neume.html#a54078846b5d8bf453cdfc9aa0c022ebf">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetPosition(LayerElement *element);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsLastInNeume(LayerElement *element);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">bool</span> GenerateChildMelodic();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    NeumeGroup GetNeumeGroup();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::vector&lt;int&gt; GetPitchDifferences();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    PitchInterface *GetHighestPitch();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    PitchInterface *GetLowestPitch();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// Static members //</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classvrv_1_1_neume.html#a279eba0f83d8dcc4cde34008835c66fd">  102</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::map&lt;std::string, NeumeGroup&gt; <a class="code" href="classvrv_1_1_neume.html#a279eba0f83d8dcc4cde34008835c66fd">s_neumes</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">static</span> std::string NeumeGroupToString(NeumeGroup group);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_neume_html_a54078846b5d8bf453cdfc9aa0c022ebf"><div class="ttname"><a href="classvrv_1_1_neume.html#a54078846b5d8bf453cdfc9aa0c022ebf">vrv::Neume::IsSupportedChild</a></div><div class="ttdeci">virtual bool IsSupportedChild(Object *object)</div><div class="ttdoc">Add an element (a note or a rest) to a syllable.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
 <div class="ttc" id="aclassvrv_1_1_neume_html"><div class="ttname"><a href="classvrv_1_1_neume.html">vrv::Neume</a></div><div class="ttdoc">This class models the MEI &lt;neume&gt; element.</div><div class="ttdef"><b>Definition:</b> neume.h:60</div></div>
 <div class="ttc" id="aclassvrv_1_1_neume_html_a89401dde8ddf84d0931a4eeddcc96428"><div class="ttname"><a href="classvrv_1_1_neume.html#a89401dde8ddf84d0931a4eeddcc96428">vrv::Neume::Clone</a></div><div class="ttdeci">virtual Object * Clone() const</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> neume.h:70</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_list_interface_html"><div class="ttname"><a href="classvrv_1_1_object_list_interface.html">vrv::ObjectListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1400</div></div>
-<div class="ttc" id="aclassvrv_1_1_neume_html_a279eba0f83d8dcc4cde34008835c66fd"><div class="ttname"><a href="classvrv_1_1_neume.html#a279eba0f83d8dcc4cde34008835c66fd">vrv::Neume::s_neumes</a></div><div class="ttdeci">static const std::map&lt; std::string, NeumeGroup &gt; s_neumes</div><div class="ttdoc">String keys come from the contours of neume groupings as defined in MEI4.</div><div class="ttdef"><b>Definition:</b> neume.h:103</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_list_interface_html"><div class="ttname"><a href="classvrv_1_1_object_list_interface.html">vrv::ObjectListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1386</div></div>
+<div class="ttc" id="aclassvrv_1_1_neume_html_a279eba0f83d8dcc4cde34008835c66fd"><div class="ttname"><a href="classvrv_1_1_neume.html#a279eba0f83d8dcc4cde34008835c66fd">vrv::Neume::s_neumes</a></div><div class="ttdeci">static const std::map&lt; std::string, NeumeGroup &gt; s_neumes</div><div class="ttdoc">String keys come from the contours of neume groupings as defined in MEI4.</div><div class="ttdef"><b>Definition:</b> neume.h:102</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:40</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>neume.h</b></li>
-    <li class="footer">Generated on Mon Aug 23 2021 18:50:27 for Verovio by
+    <li class="footer">Generated on Tue Aug 24 2021 06:49:20 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

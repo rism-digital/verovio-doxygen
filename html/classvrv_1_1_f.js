@@ -4,7 +4,6 @@ var classvrv_1_1_f =
     [ "~F", "classvrv_1_1_f.html#aadd071e8ccc8f7ecfac5dbd4869954a4", null ],
     [ "Clone", "classvrv_1_1_f.html#af787c8f1949a30a260edf99a951d0afd", null ],
     [ "FillStaffCurrentTimeSpanning", "classvrv_1_1_f.html#a52eb7173a2889ce5fca5907f13a5d8c7", null ],
-    [ "GetClassId", "classvrv_1_1_f.html#a5ff39529bba8fe102c31923a12b5162f", null ],
     [ "GetClassName", "classvrv_1_1_f.html#adcd33d7962e8b28ba1266b4a59bfe2c9", null ],
     [ "GetTimePointInterface", "classvrv_1_1_f.html#ab73341e44e8bc2cb2cbdbcc696dc7518", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_f.html#a13ebf084cd43c63c6f8b4dbbe3f3ac70", null ],

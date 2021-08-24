@@ -4,7 +4,6 @@ var classvrv_1_1_neume =
     [ "~Neume", "classvrv_1_1_neume.html#aa01b75b6514a606f567459c710a89753", null ],
     [ "Clone", "classvrv_1_1_neume.html#a89401dde8ddf84d0931a4eeddcc96428", null ],
     [ "GenerateChildMelodic", "classvrv_1_1_neume.html#acbf3e102b8872d17abfa71bf67faa87c", null ],
-    [ "GetClassId", "classvrv_1_1_neume.html#a228b98c2affe8cb7679f3e9f52958bbb", null ],
     [ "GetClassName", "classvrv_1_1_neume.html#acb59b225603532388b96aa777165dda4", null ],
     [ "GetHighestPitch", "classvrv_1_1_neume.html#aab282c046c77511a725c6da629341910", null ],
     [ "GetLowestPitch", "classvrv_1_1_neume.html#af47bcdf0360357ebe69e8185ad210e99", null ],

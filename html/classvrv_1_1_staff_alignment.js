@@ -20,7 +20,6 @@ var classvrv_1_1_staff_alignment =
     [ "FindAllIntersectionPoints", "classvrv_1_1_staff_alignment.html#a708209da1e2d295a316091342956f633", null ],
     [ "FindFirstFloatingPositioner", "classvrv_1_1_staff_alignment.html#aebb16e118406ae41bf59ef1730842a78", null ],
     [ "GetAttSpacing", "classvrv_1_1_staff_alignment.html#a8df2e2be909bfb617bf1cd3b1b278c2d", null ],
-    [ "GetClassId", "classvrv_1_1_staff_alignment.html#a20d7a25eb66364941345cc321f95e99c", null ],
     [ "GetCorrespFloatingPositioner", "classvrv_1_1_staff_alignment.html#ae46cadae61f249115e75d43ae10b5f4e", null ],
     [ "GetJustificationFactor", "classvrv_1_1_staff_alignment.html#abb406c242d66daf69268cb3b3f3d2cab", null ],
     [ "GetMinimumSpacing", "classvrv_1_1_staff_alignment.html#a73928620dc8eca951318e23c73041150", null ],

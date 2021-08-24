@@ -12,6 +12,7 @@ var classvrv_1_1_adjust_x_pos_params =
     [ "m_measureTieEndpoints", "classvrv_1_1_adjust_x_pos_params.html#aa4360a6292483d1b9c1e8c58bdc695c2", null ],
     [ "m_minPos", "classvrv_1_1_adjust_x_pos_params.html#a1c798e487ade70aae22cbc6e6f8c02fb", null ],
     [ "m_previousAlignment", "classvrv_1_1_adjust_x_pos_params.html#ae8c8edae2c6b9aae49c33c5216c8f080", null ],
+    [ "m_rightBarLinesOnly", "classvrv_1_1_adjust_x_pos_params.html#a76595f7479809bde4c75394b10513df9", null ],
     [ "m_staffN", "classvrv_1_1_adjust_x_pos_params.html#a033d4d4b6411b99246111feb1cecc27c", null ],
     [ "m_staffNs", "classvrv_1_1_adjust_x_pos_params.html#ab123de3227e38592a5a37201431f13f4", null ],
     [ "m_staffSize", "classvrv_1_1_adjust_x_pos_params.html#afe4e9a3381d8997e616016afeee25f04", null ],

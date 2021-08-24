@@ -3,7 +3,6 @@ var classvrv_1_1_dynam =
     [ "Dynam", "classvrv_1_1_dynam.html#a00505b726586f56cdbb2c9fd6f29beeb", null ],
     [ "~Dynam", "classvrv_1_1_dynam.html#aa3ba2f9cfb9ef3b639444d508d32239e", null ],
     [ "Clone", "classvrv_1_1_dynam.html#aa9d45f07e2bc85cc4fb99a334fcf2472", null ],
-    [ "GetClassId", "classvrv_1_1_dynam.html#a53536fbd5d750b799e76f64826d381c0", null ],
     [ "GetClassName", "classvrv_1_1_dynam.html#a577bdd14c6d28306dc57cf187b50fb2e", null ],
     [ "GetSymbolStr", "classvrv_1_1_dynam.html#a0234de69512a615bb0e74f09474cbdd2", null ],
     [ "GetTextDirInterface", "classvrv_1_1_dynam.html#a94ac71e8b1aa3864c6e6b53432b10a45", null ],

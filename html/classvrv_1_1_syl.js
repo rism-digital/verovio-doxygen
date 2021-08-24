@@ -6,7 +6,6 @@ var classvrv_1_1_syl =
     [ "Clone", "classvrv_1_1_syl.html#a5e69117c04b4db86874de66f0c5d8270", null ],
     [ "CreateDefaultZone", "classvrv_1_1_syl.html#a61983aa1e78d32047fffe5f3c083c09f", null ],
     [ "FillStaffCurrentTimeSpanning", "classvrv_1_1_syl.html#a97f982b99f0becd3d207dcb7c621636a", null ],
-    [ "GetClassId", "classvrv_1_1_syl.html#a10371013889039451c45b6240282ba30", null ],
     [ "GetClassName", "classvrv_1_1_syl.html#a7438acbc222b7cf550e1cc791c123af2", null ],
     [ "GetDrawingHeight", "classvrv_1_1_syl.html#a71acabc60c670d31993618d795d396b7", null ],
     [ "GetDrawingWidth", "classvrv_1_1_syl.html#a927dd56459671262c408f9ce1e9ae0e2", null ],

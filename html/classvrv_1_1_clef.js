@@ -5,7 +5,6 @@ var classvrv_1_1_clef =
     [ "AdjustBeams", "classvrv_1_1_clef.html#a285e82c9651d90fbaacee005d3597ecd", null ],
     [ "AdjustClefChanges", "classvrv_1_1_clef.html#a7f2986dfd0e5ffdb594a2fd64905decd", null ],
     [ "Clone", "classvrv_1_1_clef.html#af4329c1d512e1df1af7c73ae86ca1c0f", null ],
-    [ "GetClassId", "classvrv_1_1_clef.html#a6361ba106dbac7eac2baaa84345bbcf1", null ],
     [ "GetClassName", "classvrv_1_1_clef.html#a6d73d3bcf05d8a99e58bd094e734f93e", null ],
     [ "GetClefGlyph", "classvrv_1_1_clef.html#a7226cff74124e8229a852520ee4f9708", null ],
     [ "GetClefLocOffset", "classvrv_1_1_clef.html#a3024936525419403269c083ac4332940", null ],

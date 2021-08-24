@@ -10,7 +10,6 @@ var classvrv_1_1_score =
     [ "CastOffPages", "classvrv_1_1_score.html#a90c8ae85fe22cf05d83431c4d8608a7a", null ],
     [ "ConvertToPageBased", "classvrv_1_1_score.html#a22d16c762f0cd756f0931d7e423a2d6e", null ],
     [ "ConvertToPageBasedEnd", "classvrv_1_1_score.html#ab5c021aca6b816f9bc4e99559895935e", null ],
-    [ "GetClassId", "classvrv_1_1_score.html#aac48120aea3bf86661bd2fbbdb4ac257", null ],
     [ "GetClassName", "classvrv_1_1_score.html#a59a9ccc5f7848360dde90eb1ec8cd6f6", null ],
     [ "GetScoreDef", "classvrv_1_1_score.html#ae9f5589c307428d5957b1bc3a682c216", null ],
     [ "IsSupportedChild", "classvrv_1_1_score.html#a892eb5ad48f37d495b4fe93930ebbd55", null ],

@@ -10,7 +10,6 @@ var classvrv_1_1_score_def =
     [ "ConvertToPageBased", "classvrv_1_1_score_def.html#a682908fdfabf7d58172278157d910e22", null ],
     [ "DrawLabels", "classvrv_1_1_score_def.html#a004881a2cfb78869dc4edd96e730344c", null ],
     [ "FilterList", "classvrv_1_1_score_def.html#a3d17257d698cd3670e04ede634d4c0b0", null ],
-    [ "GetClassId", "classvrv_1_1_score_def.html#acc5db7ff7fdb0f593d4de90bbcddf30a", null ],
     [ "GetClassName", "classvrv_1_1_score_def.html#a0eb1eacbcf4060a8ec958d73a8d5f65e", null ],
     [ "GetDrawingLabelsWidth", "classvrv_1_1_score_def.html#a3d31e8b536fe875333510f1061d041dc", null ],
     [ "GetDrawingWidth", "classvrv_1_1_score_def.html#a9cb53f6b4fcae84ac63c8e5ad8b7bb28", null ],

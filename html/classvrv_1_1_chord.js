@@ -20,7 +20,6 @@ var classvrv_1_1_chord =
     [ "ConvertMarkupAnalyticalEnd", "classvrv_1_1_chord.html#a8ead5cf51796bffbe369766983605b7a", null ],
     [ "FilterList", "classvrv_1_1_chord.html#adacd4194892235e47a1c6d79259bd824", null ],
     [ "GetBottomNote", "classvrv_1_1_chord.html#a5ff5cc2fe7d98d2d85b3e984b8ea0591", null ],
-    [ "GetClassId", "classvrv_1_1_chord.html#a7da1bd0f574ea8beaa2d056d6dc9a6c2", null ],
     [ "GetClassName", "classvrv_1_1_chord.html#a023099b099b09a829f1a120b7cf0b1c2", null ],
     [ "GetCrossStaffExtremes", "classvrv_1_1_chord.html#a3b2b2ff96d3d5afae9ea28553f613a0f", null ],
     [ "GetDurationInterface", "classvrv_1_1_chord.html#a17e0bd6b6cb3c44f3b904958634aed83", null ],

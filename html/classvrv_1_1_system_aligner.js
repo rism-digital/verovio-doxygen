@@ -13,7 +13,6 @@ var classvrv_1_1_system_aligner =
     [ "FindAllIntersectionPoints", "classvrv_1_1_system_aligner.html#a6b1062f8939a64e6fd43ab3922006a6c", null ],
     [ "FindAllPositionerPointingTo", "classvrv_1_1_system_aligner.html#ad9a0c88c2a3bf95eee7feb4cc7dfad9f", null ],
     [ "GetBottomAlignment", "classvrv_1_1_system_aligner.html#af9fa20703a935c4c82106847e1949565", null ],
-    [ "GetClassId", "classvrv_1_1_system_aligner.html#a6aaada146129d7e4c727bb471aa8ad96", null ],
     [ "GetJustificationSum", "classvrv_1_1_system_aligner.html#a32f679e2e06155cf335d6118b234a3ce", null ],
     [ "GetOverflowAbove", "classvrv_1_1_system_aligner.html#a19f9ce9ac7717d27c1ba6bed118de35a", null ],
     [ "GetOverflowBelow", "classvrv_1_1_system_aligner.html#ab40985940913afb19165390f4392d778", null ],

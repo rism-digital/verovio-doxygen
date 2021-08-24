@@ -1,7 +1,8 @@
 var classvrv_1_1_running_element =
 [
     [ "RunningElement", "classvrv_1_1_running_element.html#abf3503469f6676f1fed21d88bb8c7334", null ],
-    [ "RunningElement", "classvrv_1_1_running_element.html#aef89b12f0995e77757604e21ab7c59bb", null ],
+    [ "RunningElement", "classvrv_1_1_running_element.html#ad72120452b33134d7e92522e88864984", null ],
+    [ "RunningElement", "classvrv_1_1_running_element.html#aceb986ba6979779917322bf9cec5b925", null ],
     [ "~RunningElement", "classvrv_1_1_running_element.html#a4f519acbbf0e778dac71089bb71ab7ab", null ],
     [ "AddPageNum", "classvrv_1_1_running_element.html#ad54c3f73d54d0d5b51eb993d7c0dd80d", null ],
     [ "AdjustDrawingScaling", "classvrv_1_1_running_element.html#a57a0db80266fb422961749454e4f35e1", null ],
@@ -10,7 +11,6 @@ var classvrv_1_1_running_element =
     [ "Clone", "classvrv_1_1_running_element.html#a04ba4d5006ebb734329b199bed29dfba", null ],
     [ "FilterList", "classvrv_1_1_running_element.html#a81aa6ccde5bfd9863e28b097a667370c", null ],
     [ "GetCellHeight", "classvrv_1_1_running_element.html#a72615f0ef616081ba1b268d35cf5d98f", null ],
-    [ "GetClassId", "classvrv_1_1_running_element.html#a095daae7e2dff3c25631779f380a96ad", null ],
     [ "GetColHeight", "classvrv_1_1_running_element.html#a2d4ed9fdba62957bf02465d72b28c1fb", null ],
     [ "GetDrawingPage", "classvrv_1_1_running_element.html#a2d6e14c44591a620a4439b7966eb6d32", null ],
     [ "GetDrawingX", "classvrv_1_1_running_element.html#a114aaaa3b66641995e6d29597eeb951b", null ],

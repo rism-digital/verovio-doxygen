@@ -5,7 +5,6 @@ var classvrv_1_1_beat_rpt =
     [ "Clone", "classvrv_1_1_beat_rpt.html#a120a95fbe727ae63e9dbcc37156b3f8e", null ],
     [ "GenerateMIDI", "classvrv_1_1_beat_rpt.html#a342926628a5badf0e3c7e85d27be005a", null ],
     [ "GetBeatRptAlignmentDuration", "classvrv_1_1_beat_rpt.html#a46d10bc1d9d4d3fae07fc25b08621b10", null ],
-    [ "GetClassId", "classvrv_1_1_beat_rpt.html#aa7fe876f846f9c5f90ae308425950360", null ],
     [ "GetClassName", "classvrv_1_1_beat_rpt.html#ae787f3bd2e6b76d2c895be9b329187ad", null ],
     [ "GetScoreTimeOnset", "classvrv_1_1_beat_rpt.html#a801afd02d7d6363c9b8f2057ab032afa", null ],
     [ "HasToBeAligned", "classvrv_1_1_beat_rpt.html#a318b864622eae1817be3a5de65663e2d", null ],

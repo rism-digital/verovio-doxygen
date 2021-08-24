@@ -7,7 +7,6 @@ var classvrv_1_1_page =
     [ "AlignVerticallyEnd", "classvrv_1_1_page.html#a878519b8c9d6f053b62ef525c38430c2", null ],
     [ "ApplyPPUFactor", "classvrv_1_1_page.html#aee8cf1f81854af6351ef2dd1cf63d4c7", null ],
     [ "CastOffPagesEnd", "classvrv_1_1_page.html#aa346bfd165c083ca7e6488bad752d1d3", null ],
-    [ "GetClassId", "classvrv_1_1_page.html#aa791ea73a455a4c528fead15b09116e9", null ],
     [ "GetClassName", "classvrv_1_1_page.html#a2654a81e9c2b64be38c3da1ee6c38f2d", null ],
     [ "GetContentHeight", "classvrv_1_1_page.html#af5028d206f7fb8e8b5c58d5644ca5a29", null ],
     [ "GetContentWidth", "classvrv_1_1_page.html#a0608a60a03878f6c8223d103c3765cec", null ],

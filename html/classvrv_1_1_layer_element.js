@@ -1,7 +1,8 @@
 var classvrv_1_1_layer_element =
 [
     [ "LayerElement", "classvrv_1_1_layer_element.html#a6294e2662280f0cf6f48bbf9855cf28c", null ],
-    [ "LayerElement", "classvrv_1_1_layer_element.html#a7390b1dd3524dff7f1a3240eb9fa9926", null ],
+    [ "LayerElement", "classvrv_1_1_layer_element.html#a26721461ae7b348cc9893106fffc7b01", null ],
+    [ "LayerElement", "classvrv_1_1_layer_element.html#add03013020c062950b4d10526c812698", null ],
     [ "~LayerElement", "classvrv_1_1_layer_element.html#a7bd87c91c7e394f0299a6b9a3b6d6d9a", null ],
     [ "AdjustBeams", "classvrv_1_1_layer_element.html#ae490412b5c145adfba5f99fc5c914021", null ],
     [ "AdjustDots", "classvrv_1_1_layer_element.html#a971d0cc89a6ddfeabfa1d60362d9121c", null ],
@@ -28,7 +29,6 @@ var classvrv_1_1_layer_element =
     [ "GetAlignment", "classvrv_1_1_layer_element.html#aa86e897a30a465eb14823ff0b7d6c32c", null ],
     [ "GetAlignmentDuration", "classvrv_1_1_layer_element.html#a21200c6f95f9bac5ef98b7cd4c5d7e26", null ],
     [ "GetAlignmentLayerN", "classvrv_1_1_layer_element.html#a2fb9126c18e349cefe4a66479c97f17a", null ],
-    [ "GetClassId", "classvrv_1_1_layer_element.html#adfd6e9c10d495f6763d0e92823337a83", null ],
     [ "GetContentAlignmentDuration", "classvrv_1_1_layer_element.html#a1c066c80d881a800b529815ce85116c2", null ],
     [ "GetCrossStaff", "classvrv_1_1_layer_element.html#af90812923cb1a9046f4287e855f64dc2", null ],
     [ "GetCrossStaffRel", "classvrv_1_1_layer_element.html#a92e6de075ae4c0184adea79307d8eecb", null ],
