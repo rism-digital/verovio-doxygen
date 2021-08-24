@@ -6,7 +6,6 @@ var classvrv_1_1_verse =
     [ "AdjustSylSpacing", "classvrv_1_1_verse.html#ae078d8962d502e9eff9db1185eb3bc25", null ],
     [ "AlignVertically", "classvrv_1_1_verse.html#ab0782d026d9a53cd1c20d31a356c7dca", null ],
     [ "Clone", "classvrv_1_1_verse.html#a4d1595e500c8141c72e001dd43e7e1a7", null ],
-    [ "GetClassId", "classvrv_1_1_verse.html#a59896421a993ca60e2b16ff90ffbe865", null ],
     [ "GetClassName", "classvrv_1_1_verse.html#a37836f552f298a3b22d8614b4386ad4e", null ],
     [ "IsSupportedChild", "classvrv_1_1_verse.html#af9058fe62a08ee9f21386980ad5ceeba", null ],
     [ "PrepareProcessingLists", "classvrv_1_1_verse.html#affe8ae62b3b29ee06d9ce10a30ddfd82", null ],

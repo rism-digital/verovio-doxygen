@@ -24,7 +24,6 @@ var classvrv_1_1_b_box_device_context =
     [ "EndPage", "classvrv_1_1_b_box_device_context.html#a0dc95a379d74f6404bb7395dfb5e7433", null ],
     [ "EndResumedGraphic", "classvrv_1_1_b_box_device_context.html#aba9a073664281f51aa42cacf9337d7bc", null ],
     [ "EndText", "classvrv_1_1_b_box_device_context.html#a9e2fcb606f5e1140dea62fbf65b29fd8", null ],
-    [ "GetClassId", "classvrv_1_1_b_box_device_context.html#a454d72bceb9f90680e41ffdafb740b4a", null ],
     [ "GetLogicalOrigin", "classvrv_1_1_b_box_device_context.html#a8e94ceef1d83ddac03e54f44069c80f8", null ],
     [ "MoveTextTo", "classvrv_1_1_b_box_device_context.html#a5012526492c83ba6b4f6584282284945", null ],
     [ "MoveTextVerticallyTo", "classvrv_1_1_b_box_device_context.html#ab083a6ff4e4f0138102a206c0344403f", null ],

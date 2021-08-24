@@ -26,7 +26,6 @@ var classvrv_1_1_svg_device_context =
     [ "EndResumedGraphic", "classvrv_1_1_svg_device_context.html#a77fd186d55c84dc8035bca75782a8ed5", null ],
     [ "EndText", "classvrv_1_1_svg_device_context.html#a707fdca95a1025c22936bf1ec5a2137b", null ],
     [ "EndTextGraphic", "classvrv_1_1_svg_device_context.html#a6d5928dfdfc8287f2d736343a3fc445d", null ],
-    [ "GetClassId", "classvrv_1_1_svg_device_context.html#a0d56409641c3fbf7ae0aca34767aed8e", null ],
     [ "GetFacsimile", "classvrv_1_1_svg_device_context.html#aa924b39defc555046d658c2abe70d0d9", null ],
     [ "GetLogicalOrigin", "classvrv_1_1_svg_device_context.html#ac6a3d1d79db9edb601ea6186ba0dc9bc", null ],
     [ "GetStringSVG", "classvrv_1_1_svg_device_context.html#a49eb15ae209f1ab05b072c5fb9589d3a", null ],

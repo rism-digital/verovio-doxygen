@@ -113,6 +113,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Toolkit</b> ()</t
 <tr class="memitem:a293b23b38c10be4da8b38c4b3a769d1d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#a293b23b38c10be4da8b38c4b3a769d1d">GetVersion</a> ()</td></tr>
 <tr class="memdesc:a293b23b38c10be4da8b38c4b3a769d1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the version number.  <a href="classvrv_1_1_toolkit.html#a293b23b38c10be4da8b38c4b3a769d1d">More...</a><br /></td></tr>
 <tr class="separator:a293b23b38c10be4da8b38c4b3a769d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa851c49e48d4fd83e71f1a457f022366"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#aa851c49e48d4fd83e71f1a457f022366">ResetXmlIdSeed</a> (int seed)</td></tr>
+<tr class="memdesc:aa851c49e48d4fd83e71f1a457f022366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the @xml:id seed.  <a href="classvrv_1_1_toolkit.html#aa851c49e48d4fd83e71f1a457f022366">More...</a><br /></td></tr>
+<tr class="separator:aa851c49e48d4fd83e71f1a457f022366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Loading methods</div></td></tr>
 <tr class="memitem:a3859f9341d415376b7d8f11a1aa8e352"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#a3859f9341d415376b7d8f11a1aa8e352">LoadFile</a> (const std::string &amp;filename)</td></tr>
 <tr class="memdesc:a3859f9341d415376b7d8f11a1aa8e352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a file from the file system.  <a href="classvrv_1_1_toolkit.html#a3859f9341d415376b7d8f11a1aa8e352">More...</a><br /></td></tr>
@@ -214,6 +217,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a0206f317ac7ebe3c61df606c8afcd4ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the MEI and save it to the file.  <a href="classvrv_1_1_toolkit.html#a0206f317ac7ebe3c61df606c8afcd4ca">More...</a><br /></td></tr>
 <tr class="separator:a0206f317ac7ebe3c61df606c8afcd4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Data access methods</div></td></tr>
+<tr class="memitem:a8439ca5ca843438243bee27c14b29d6a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#a8439ca5ca843438243bee27c14b29d6a">GetDescriptiveFeatures</a> (const std::string &amp;options)</td></tr>
+<tr class="memdesc:a8439ca5ca843438243bee27c14b29d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return descriptive features as a JSON string.  <a href="classvrv_1_1_toolkit.html#a8439ca5ca843438243bee27c14b29d6a">More...</a><br /></td></tr>
+<tr class="separator:a8439ca5ca843438243bee27c14b29d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4618bafecb91784806f78751ea6b3f42"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#a4618bafecb91784806f78751ea6b3f42">GetElementsAtTime</a> (int millisec)</td></tr>
 <tr class="memdesc:a4618bafecb91784806f78751ea6b3f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns array of IDs of elements being currently played.  <a href="classvrv_1_1_toolkit.html#a4618bafecb91784806f78751ea6b3f42">More...</a><br /></td></tr>
 <tr class="separator:a4618bafecb91784806f78751ea6b3f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -431,6 +437,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Return all available options grouped by category. </p>
 <p>For each option, returns the type, the default value, and the minimum and maximum value (when available)</p>
 <dl class="section return"><dt>Returns</dt><dd>A stringified JSON object </dd></dl>
+
+</div>
+</div>
+<a id="a8439ca5ca843438243bee27c14b29d6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8439ca5ca843438243bee27c14b29d6a">&#9670;&nbsp;</a></span>GetDescriptiveFeatures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vrv::Toolkit::GetDescriptiveFeatures </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return descriptive features as a JSON string. </p>
+<p>The features are tailored for implementing incipit search</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">options</td><td>A stringified JSON object with the feature extraction options </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A stringified JSON object with the requested features </dd></dl>
 
 </div>
 </div>
@@ -1288,6 +1322,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="aa851c49e48d4fd83e71f1a457f022366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa851c49e48d4fd83e71f1a457f022366">&#9670;&nbsp;</a></span>ResetXmlIdSeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vrv::Toolkit::ResetXmlIdSeed </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>seed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset the @xml:id seed. </p>
+<p>This method should be called only if the &ndash;xmlIdSeed parameter was set when creating the <a class="el" href="classvrv_1_1_toolkit.html">Toolkit</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seed</td><td>The seed value for generating the xml:id values (0 for a time-based random seed) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a0206f317ac7ebe3c61df606c8afcd4ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0206f317ac7ebe3c61df606c8afcd4ca">&#9670;&nbsp;</a></span>SaveFile()</h2>
 
@@ -1511,7 +1572,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_toolkit.html">Toolkit</a></li>
-    <li class="footer">Generated on Tue Jul 20 2021 17:08:19 for Verovio by
+    <li class="footer">Generated on Tue Aug 24 2021 06:49:24 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -5,7 +5,6 @@ var classvrv_1_1_harm =
     [ "AdjustHarmGrpsSpacing", "classvrv_1_1_harm.html#a916874198ae12c2140dfee6eea802958", null ],
     [ "Clone", "classvrv_1_1_harm.html#a25542ab84d0d139b6382ed79e55a5276", null ],
     [ "GetBassPitch", "classvrv_1_1_harm.html#adc64a0178eade47d3008ff3a7e5933e7", null ],
-    [ "GetClassId", "classvrv_1_1_harm.html#a0e70b0540ba17fcab90ce11044237215", null ],
     [ "GetClassName", "classvrv_1_1_harm.html#a8f59154cf70725cf9630c6bc7fa92a6d", null ],
     [ "GetRootPitch", "classvrv_1_1_harm.html#abfcb9c5e0fbb7149ea6267660c15cf66", null ],
     [ "GetTextDirInterface", "classvrv_1_1_harm.html#aeb213f52b78957210645243166ae4953", null ],

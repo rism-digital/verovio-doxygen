@@ -7,7 +7,6 @@ var classvrv_1_1_key_sig =
     [ "FilterList", "classvrv_1_1_key_sig.html#a22cc70d7748a17e80c7950e51857964a", null ],
     [ "GetAccidCount", "classvrv_1_1_key_sig.html#ad4b4f7de43afe0ce8d66e4a2944ab5e8", null ],
     [ "GetAccidType", "classvrv_1_1_key_sig.html#ae862f334460bcf1cbf4311a696f52921", null ],
-    [ "GetClassId", "classvrv_1_1_key_sig.html#ac721f136d36dae83f351d24e36895519", null ],
     [ "GetClassName", "classvrv_1_1_key_sig.html#a02524e3562b11cd590f785d9e957143f", null ],
     [ "GetFifthsInt", "classvrv_1_1_key_sig.html#a6cbb77f95981d6369d28f3902e452968", null ],
     [ "GetKeyAccidStrAt", "classvrv_1_1_key_sig.html#a8c89b9d4ea03ac427c1b39aa3f35bb83", null ],

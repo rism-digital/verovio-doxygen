@@ -120,42 +120,41 @@ $(document).ready(function(){initNavTree('harm_8h_source.html',''); initResizabl
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classvrv_1_1_harm.html#a25542ab84d0d139b6382ed79e55a5276">   41</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_harm.html#a25542ab84d0d139b6382ed79e55a5276">Clone</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_harm.html">Harm</a>(*<span class="keyword">this</span>); }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_harm.html#a2edec90bcf59cb039a4341cfd1060050">Reset</a>();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> std::string GetClassName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Harm&quot;</span>; }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> ClassId GetClassId()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> HARM; }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> TextDirInterface *GetTextDirInterface() { <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TextDirInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> TimePointInterface *GetTimePointInterface() { <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TimePointInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> TimeSpanningInterface *GetTimeSpanningInterface() { <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TimeSpanningInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_harm.html#a17ceaaefab60b5f294218cf6f536776b">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_harm.html#abfcb9c5e0fbb7149ea6267660c15cf66">GetRootPitch</a>(TransPitch &amp;pitch, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp;pos);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> SetRootPitch(<span class="keyword">const</span> TransPitch &amp;pitch, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> endPos);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> GetBassPitch(TransPitch &amp;pitch);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> SetBassPitch(<span class="keyword">const</span> TransPitch &amp;pitch);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_harm.html#add368fade92218f154a2d285976d310f">PrepareFloatingGrps</a>(FunctorParams *functoParams);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_harm.html#a916874198ae12c2140dfee6eea802958">AdjustHarmGrpsSpacing</a>(FunctorParams *functorParams);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_harm.html#a6ac43659d7834cedd0da9cfaff393200">Transpose</a>(FunctorParams *functorParams);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> TextDirInterface *GetTextDirInterface() { <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TextDirInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> TimePointInterface *GetTimePointInterface() { <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TimePointInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> TimeSpanningInterface *GetTimeSpanningInterface() { <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TimeSpanningInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_harm.html#a17ceaaefab60b5f294218cf6f536776b">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_harm.html#abfcb9c5e0fbb7149ea6267660c15cf66">GetRootPitch</a>(TransPitch &amp;pitch, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp;pos);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> SetRootPitch(<span class="keyword">const</span> TransPitch &amp;pitch, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> endPos);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> GetBassPitch(TransPitch &amp;pitch);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> SetBassPitch(<span class="keyword">const</span> TransPitch &amp;pitch);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_harm.html#add368fade92218f154a2d285976d310f">PrepareFloatingGrps</a>(FunctorParams *functoParams);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_harm.html#a916874198ae12c2140dfee6eea802958">AdjustHarmGrpsSpacing</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_harm.html#a6ac43659d7834cedd0da9cfaff393200">Transpose</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_harm_html_abfcb9c5e0fbb7149ea6267660c15cf66"><div class="ttname"><a href="classvrv_1_1_harm.html#abfcb9c5e0fbb7149ea6267660c15cf66">vrv::Harm::GetRootPitch</a></div><div class="ttdeci">bool GetRootPitch(TransPitch &amp;pitch, unsigned int &amp;pos)</div><div class="ttdoc">Transposition related.</div></div>
@@ -164,7 +163,7 @@ $(document).ready(function(){initNavTree('harm_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
 <div class="ttc" id="aclassvrv_1_1_harm_html_a25542ab84d0d139b6382ed79e55a5276"><div class="ttname"><a href="classvrv_1_1_harm.html#a25542ab84d0d139b6382ed79e55a5276">vrv::Harm::Clone</a></div><div class="ttdeci">virtual Object * Clone() const</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> harm.h:41</div></div>
 <div class="ttc" id="aclassvrv_1_1_harm_html_a6ac43659d7834cedd0da9cfaff393200"><div class="ttname"><a href="classvrv_1_1_harm.html#a6ac43659d7834cedd0da9cfaff393200">vrv::Harm::Transpose</a></div><div class="ttdeci">virtual int Transpose(FunctorParams *functorParams)</div><div class="ttdoc">See Object::Transpose.</div></div>
-<div class="ttc" id="aclassvrv_1_1_text_list_interface_html"><div class="ttname"><a href="classvrv_1_1_text_list_interface.html">vrv::TextListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1434</div></div>
+<div class="ttc" id="aclassvrv_1_1_text_list_interface_html"><div class="ttname"><a href="classvrv_1_1_text_list_interface.html">vrv::TextListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1452</div></div>
 <div class="ttc" id="aclassvrv_1_1_text_dir_interface_html"><div class="ttname"><a href="classvrv_1_1_text_dir_interface.html">vrv::TextDirInterface</a></div><div class="ttdoc">This class is an interface for elements implementing a text directive, such as &lt;dir&gt;,...</div><div class="ttdef"><b>Definition:</b> textdirinterface.h:25</div></div>
 <div class="ttc" id="aclassvrv_1_1_harm_html_a17ceaaefab60b5f294218cf6f536776b"><div class="ttname"><a href="classvrv_1_1_harm.html#a17ceaaefab60b5f294218cf6f536776b">vrv::Harm::IsSupportedChild</a></div><div class="ttdeci">virtual bool IsSupportedChild(Object *object)</div><div class="ttdoc">Add an element (text, rend.</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:26</div></div>
@@ -175,7 +174,7 @@ $(document).ready(function(){initNavTree('harm_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>harm.h</b></li>
-    <li class="footer">Generated on Tue Jul 20 2021 17:08:14 for Verovio by
+    <li class="footer">Generated on Tue Aug 24 2021 06:49:20 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

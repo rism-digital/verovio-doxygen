@@ -18,7 +18,6 @@ var classvrv_1_1_note =
     [ "ConvertMarkupAnalytical", "classvrv_1_1_note.html#aba95f5cbd284314def2cb1601f5b8887", null ],
     [ "GenerateMIDI", "classvrv_1_1_note.html#a2bc1140c2a72c564fe0806238d7b8684", null ],
     [ "GenerateTimemap", "classvrv_1_1_note.html#a8f88949434306c66a20ed4d28d6bea85", null ],
-    [ "GetClassId", "classvrv_1_1_note.html#a88b7a68ecd32a24add5288d9e883730a", null ],
     [ "GetClassName", "classvrv_1_1_note.html#aae29d17ca525e7bc9c258d5697ae20de", null ],
     [ "GetCluster", "classvrv_1_1_note.html#aecc23a1f92c40bb4e4f1dc1da58ab8aa", null ],
     [ "GetDiatonicPitch", "classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f", null ],

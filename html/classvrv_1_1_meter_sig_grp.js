@@ -6,7 +6,6 @@ var classvrv_1_1_meter_sig_grp =
     [ "AlignHorizontally", "classvrv_1_1_meter_sig_grp.html#a1500fe7f2da3f97147c772d0fd0d24c0", null ],
     [ "Clone", "classvrv_1_1_meter_sig_grp.html#a9cc37d091ca6fe2a27ea1eac34cb06b9", null ],
     [ "FilterList", "classvrv_1_1_meter_sig_grp.html#ad661d98f6feabc13c83f0ebdac235a8f", null ],
-    [ "GetClassId", "classvrv_1_1_meter_sig_grp.html#a92064fc7ddebe6f8e80f333ae7fa4a18", null ],
     [ "GetClassName", "classvrv_1_1_meter_sig_grp.html#a514deb6dec769caf3e5e3d305c9f2eb9", null ],
     [ "GetLinkingInterface", "classvrv_1_1_meter_sig_grp.html#aa70015242e7d24bdbe3e19c89c4dc1a5", null ],
     [ "GetSimplifiedMeterSig", "classvrv_1_1_meter_sig_grp.html#a359b84c494020401588605f49a76255e", null ],

@@ -5,7 +5,6 @@ var classvrv_1_1_measure_aligner =
     [ "AdjustGraceNoteSpacing", "classvrv_1_1_measure_aligner.html#a7809a8a625f3cfe74492e294f4f5d518", null ],
     [ "AdjustProportionally", "classvrv_1_1_measure_aligner.html#ae6a64b2c27e8f75b9bf6071b10fd2e07", null ],
     [ "GetAlignmentAtTime", "classvrv_1_1_measure_aligner.html#aeac4bcbe00b4bd1b05cae495b8dbb977", null ],
-    [ "GetClassId", "classvrv_1_1_measure_aligner.html#aed6055de2a0f45d8cdc5a524e491d5fa", null ],
     [ "GetInitialTstampDur", "classvrv_1_1_measure_aligner.html#a70c73263b1a8a7d11482a73351b43a75", null ],
     [ "GetLeftAlignment", "classvrv_1_1_measure_aligner.html#a91340c51c57dcfb68de9e1436f002959", null ],
     [ "GetLeftBarLineAlignment", "classvrv_1_1_measure_aligner.html#a14e6976b09aaefe1364a8f5f632dbd19", null ],

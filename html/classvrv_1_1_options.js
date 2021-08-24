@@ -88,6 +88,7 @@ var classvrv_1_1_options =
     [ "m_lyricTopMinMargin", "classvrv_1_1_options.html#affb7bf4abf275c12e7d05e880536f537", null ],
     [ "m_lyricVerseCollapse", "classvrv_1_1_options.html#a6f2a4f3baf8b6fb02e7fa72e2d12c376", null ],
     [ "m_lyricWordSpace", "classvrv_1_1_options.html#a299c0fb2289ecef0156c813cbe12356c", null ],
+    [ "m_mdivAll", "classvrv_1_1_options.html#a8f6a55752ffe6a852c93c67794d5fc35", null ],
     [ "m_mdivXPathQuery", "classvrv_1_1_options.html#ac94939b1b904c41073c45d33a4dbea7f", null ],
     [ "m_measureMinWidth", "classvrv_1_1_options.html#aa05a631b62399492d3c89c8bc6cbae26", null ],
     [ "m_mensuralToMeasure", "classvrv_1_1_options.html#ace0da799034ed728698c346b5c604fb3", null ],
@@ -154,6 +155,7 @@ var classvrv_1_1_options =
     [ "m_spacingNonLinear", "classvrv_1_1_options.html#af2e88010e429682b31a80a419a295d05", null ],
     [ "m_spacingStaff", "classvrv_1_1_options.html#a6a940aa9b39509710316b3a0bf414f5f", null ],
     [ "m_spacingSystem", "classvrv_1_1_options.html#a0f1fad5d7d9357190f7642f9836f504d", null ],
+    [ "m_staccatoCenter", "classvrv_1_1_options.html#a7ef932575dd77e6100fb40d8f536a82a", null ],
     [ "m_staffLineWidth", "classvrv_1_1_options.html#abea51a72096d7e1ef5007badca46d2de", null ],
     [ "m_standardOutput", "classvrv_1_1_options.html#af7a66c62b9f8308b61d99fcfe5899b93", null ],
     [ "m_stemWidth", "classvrv_1_1_options.html#a28ef5b887e4b46f0577c82989a668452", null ],
@@ -182,5 +184,6 @@ var classvrv_1_1_options =
     [ "m_usePgFooterForAll", "classvrv_1_1_options.html#af2efa96f02df7235c09c9688d8d528c9", null ],
     [ "m_usePgHeaderForAll", "classvrv_1_1_options.html#ad7e3496eb7c557c2ed05af9fc1d6f899", null ],
     [ "m_version", "classvrv_1_1_options.html#ab840cdbceb6ad9f3e0e700e0f8a6ed6f", null ],
+    [ "m_xmlIdChecksum", "classvrv_1_1_options.html#a4a118dd440c998fdc3d16e87bb1f1758", null ],
     [ "m_xmlIdSeed", "classvrv_1_1_options.html#adf74318d2408d579508ac0c54b90cd62", null ]
 ];

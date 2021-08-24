@@ -6,7 +6,6 @@ var classvrv_1_1_ligature =
     [ "ClearClusters", "classvrv_1_1_ligature.html#a4349458debb941bb30c622f2f87e4b19", null ],
     [ "Clone", "classvrv_1_1_ligature.html#ad3b3189bad93536136d5e56733a368c4", null ],
     [ "FilterList", "classvrv_1_1_ligature.html#a0ec465b435e561ca78df919bbb743251", null ],
-    [ "GetClassId", "classvrv_1_1_ligature.html#a3ae9b7786658bd725726f7dc8aef638d", null ],
     [ "GetClassName", "classvrv_1_1_ligature.html#a6d55fd013e98a7f50096ab6209da6810", null ],
     [ "GetDrawingNoteShape", "classvrv_1_1_ligature.html#a47287f0156e0abe2c660372bacd6a887", null ],
     [ "GetDrawingPreviousNoteShape", "classvrv_1_1_ligature.html#a29270e8544f8f0f11f93dcf652eebee5", null ],

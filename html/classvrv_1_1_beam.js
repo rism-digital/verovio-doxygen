@@ -8,7 +8,6 @@ var classvrv_1_1_beam =
     [ "CalcStem", "classvrv_1_1_beam.html#a68e2b6e3f79c497e1f9ff3fa6f76af48", null ],
     [ "Clone", "classvrv_1_1_beam.html#aefb179940f5416e7be8297c6869643e5", null ],
     [ "FilterList", "classvrv_1_1_beam.html#ae1196829afda910061e001b95d061091", null ],
-    [ "GetClassId", "classvrv_1_1_beam.html#ab71aee85c2aa5a40f3108de7cf6d4b5f", null ],
     [ "GetClassName", "classvrv_1_1_beam.html#a5c43590b54de49afaa058cd8efe96851", null ],
     [ "GetElementCoords", "classvrv_1_1_beam.html#a1bbd297104dd527dbf817a71e5129599", null ],
     [ "GetNoteCount", "classvrv_1_1_beam.html#a57682a7262276b450a4b2b295d4729a9", null ],

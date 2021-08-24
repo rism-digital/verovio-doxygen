@@ -6,7 +6,6 @@ var classvrv_1_1_pedal =
     [ "EndsWithBounce", "classvrv_1_1_pedal.html#a494fad59b2cb35cba023a5c0a4f88cc0", null ],
     [ "EndsWithBounce", "classvrv_1_1_pedal.html#a06e5a67b00c9c8f8e560d174c36fb309", null ],
     [ "GenerateMIDI", "classvrv_1_1_pedal.html#a1f4162a8567c8f86e71c158cb1344aec", null ],
-    [ "GetClassId", "classvrv_1_1_pedal.html#a5d860f4dfd461b76d92c9fd6baf9bdae", null ],
     [ "GetClassName", "classvrv_1_1_pedal.html#a64e9f16f7a62fd02d6d7491d052754c5", null ],
     [ "GetPedalGlyph", "classvrv_1_1_pedal.html#a68b550860ce390cecc9d04441256a950", null ],
     [ "GetTimePointInterface", "classvrv_1_1_pedal.html#a88f63173566ab3c5e897f7edf30e3b6d", null ],

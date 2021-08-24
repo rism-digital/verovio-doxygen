@@ -6,7 +6,7 @@ var classvrv_1_1_bounding_box =
     [ "GetBottomBy", "classvrv_1_1_bounding_box.html#a91a7bb36d11f909e84caab997fb49c0c", null ],
     [ "GetBoundingBoxGlyph", "classvrv_1_1_bounding_box.html#aa3fc5bcc7d25b6e975fad50b11edd781", null ],
     [ "GetBoundingBoxGlyphFontSize", "classvrv_1_1_bounding_box.html#a2b025880f04cefa1cb37b7e6f8bfb8f1", null ],
-    [ "GetClassId", "classvrv_1_1_bounding_box.html#a1431e0fc3dcee6aa1dc4451ffb3b6080", null ],
+    [ "GetClassId", "classvrv_1_1_bounding_box.html#ad8f7fed05b5a690cbcce0c3929503eb0", null ],
     [ "GetContentBottom", "classvrv_1_1_bounding_box.html#a74fec7caf937bc6892cd0de8c1f29355", null ],
     [ "GetContentLeft", "classvrv_1_1_bounding_box.html#a9a33f5750af51cfb292ff2a553744e2d", null ],
     [ "GetContentRight", "classvrv_1_1_bounding_box.html#a755302fda960358f076a3175783a5d78", null ],

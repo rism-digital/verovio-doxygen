@@ -7,7 +7,6 @@ var classvrv_1_1_ending =
     [ "Clone", "classvrv_1_1_ending.html#a35fc37132c747f6d3521c68bc19d096c", null ],
     [ "ConvertToPageBased", "classvrv_1_1_ending.html#ad02f22cea7a4925749540248da475e26", null ],
     [ "ConvertToPageBasedEnd", "classvrv_1_1_ending.html#a9dcb8acc92d09f15876bbd170ea5b026", null ],
-    [ "GetClassId", "classvrv_1_1_ending.html#aa2da16ca00ba71020bf0650e9792bebe", null ],
     [ "GetClassName", "classvrv_1_1_ending.html#a5bb919f72e9a70848f1984fd709bf547", null ],
     [ "IsSupportedChild", "classvrv_1_1_ending.html#a97d92533b4c47e3fbc6e403c286a854b", null ],
     [ "PrepareBoundaries", "classvrv_1_1_ending.html#a1704ee591ae157f7e7f553e176d8aab6", null ],

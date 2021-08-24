@@ -22,7 +22,6 @@ var classvrv_1_1_staff =
     [ "GenerateMIDI", "classvrv_1_1_staff.html#a3ce2c8573bacc56a9ef6d6eed96ad6fb", null ],
     [ "GetAlignment", "classvrv_1_1_staff.html#a7a7f13fe4d00ba35ed03b952535027fb", null ],
     [ "GetChildren", "classvrv_1_1_staff.html#aa4a035cb69c6135b5ca21531aa578382", null ],
-    [ "GetClassId", "classvrv_1_1_staff.html#a45ab1dbee2599d16bbdd1184e6f499ff", null ],
     [ "GetClassName", "classvrv_1_1_staff.html#a80895a7014216eebfbe9d25887f5f256", null ],
     [ "GetDrawingRotate", "classvrv_1_1_staff.html#a323086f2690b72d00ea11c53751fb8ce", null ],
     [ "GetDrawingX", "classvrv_1_1_staff.html#aaf9d5cd441fed66414ec7165c1fa4d10", null ],

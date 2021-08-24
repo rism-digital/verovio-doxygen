@@ -6,7 +6,6 @@ var classvrv_1_1_section =
     [ "ConvertToPageBased", "classvrv_1_1_section.html#acdd7e18394d27f6b6772e54906db980c", null ],
     [ "ConvertToPageBasedEnd", "classvrv_1_1_section.html#aad5c117f568a40b961f32149ec187661", null ],
     [ "ConvertToUnCastOffMensural", "classvrv_1_1_section.html#a40e9dad5539e0a06760cfc518956f4a5", null ],
-    [ "GetClassId", "classvrv_1_1_section.html#a3a8f93b25f4747a02f151d9acbe21339", null ],
     [ "GetClassName", "classvrv_1_1_section.html#ad58f3e2338a0c69d60712ee4a15a9f6d", null ],
     [ "IsSupportedChild", "classvrv_1_1_section.html#a707be137fa9c0cd02c44e0290005445a", null ],
     [ "PrepareBoundaries", "classvrv_1_1_section.html#a8908d7a3629b999b424bdf2c6d894143", null ],

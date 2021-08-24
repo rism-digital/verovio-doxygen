@@ -6,7 +6,7 @@ var classvrv_1_1_page =
     [ "AlignSystemsEnd", "classvrv_1_1_page.html#acaf7f9335da4f1cb6df7d0b33a9bd372", null ],
     [ "AlignVerticallyEnd", "classvrv_1_1_page.html#a878519b8c9d6f053b62ef525c38430c2", null ],
     [ "ApplyPPUFactor", "classvrv_1_1_page.html#aee8cf1f81854af6351ef2dd1cf63d4c7", null ],
-    [ "GetClassId", "classvrv_1_1_page.html#aa791ea73a455a4c528fead15b09116e9", null ],
+    [ "CastOffPagesEnd", "classvrv_1_1_page.html#aa346bfd165c083ca7e6488bad752d1d3", null ],
     [ "GetClassName", "classvrv_1_1_page.html#a2654a81e9c2b64be38c3da1ee6c38f2d", null ],
     [ "GetContentHeight", "classvrv_1_1_page.html#af5028d206f7fb8e8b5c58d5644ca5a29", null ],
     [ "GetContentWidth", "classvrv_1_1_page.html#a0608a60a03878f6c8223d103c3765cec", null ],
@@ -26,6 +26,8 @@ var classvrv_1_1_page =
     [ "LayOutVertically", "classvrv_1_1_page.html#ab16b3f4c2bcc87738e77032c393d638d", null ],
     [ "Reset", "classvrv_1_1_page.html#ac858909c078a4a4c7c3879aad83e45d7", null ],
     [ "ResetVerticalAlignment", "classvrv_1_1_page.html#a61012e25938fbe0a4e6d29faf9f77ba3", null ],
+    [ "ScoreDefSetCurrentPageEnd", "classvrv_1_1_page.html#afe396ef1011e6bf401d5028830db8f97", null ],
+    [ "ScoreDefUnsetCurrent", "classvrv_1_1_page.html#ae5530fa93b2815123860a7cbfdaae3b0", null ],
     [ "SetPPUFactor", "classvrv_1_1_page.html#a5efc6e77de212aeaadf46f93c11c4d75", null ],
     [ "m_drawingJustifiableHeight", "classvrv_1_1_page.html#a9f9973481f71fb5308a29eb0930b0dbc", null ],
     [ "m_drawingScoreDef", "classvrv_1_1_page.html#a93ad65400a74b61fa5ab692018038361", null ],
@@ -37,5 +39,7 @@ var classvrv_1_1_page =
     [ "m_pageMarginTop", "classvrv_1_1_page.html#a561c8c529d822cbd5eda0f03866f33d6", null ],
     [ "m_pageWidth", "classvrv_1_1_page.html#a7915248836b2e53973c22840963fc8a9", null ],
     [ "m_PPUFactor", "classvrv_1_1_page.html#aec718fc1ac6ba74b3cadba551753f8c1", null ],
+    [ "m_score", "classvrv_1_1_page.html#adbcbc8b6a54d8f5eb9f96e2d8bc33b64", null ],
+    [ "m_scoreEnd", "classvrv_1_1_page.html#a80b0dd81ded5e68fc5a56052d794d875", null ],
     [ "m_surface", "classvrv_1_1_page.html#a2f188b167ed93af6d53128faa4b3dc90", null ]
 ];

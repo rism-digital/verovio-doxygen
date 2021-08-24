@@ -1,6 +1,7 @@
 var classvrv_1_1_device_context =
 [
     [ "DeviceContext", "classvrv_1_1_device_context.html#ac93a258491871eefffa02697159f432f", null ],
+    [ "DeviceContext", "classvrv_1_1_device_context.html#a2d49308e19bd27524ef0b26427853cfb", null ],
     [ "~DeviceContext", "classvrv_1_1_device_context.html#ae3758acb41e34d14ba0ec760648776b4", null ],
     [ "AddDescription", "classvrv_1_1_device_context.html#aededb30ba44efb6c40ff3b2570d7868c", null ],
     [ "DeactivateGraphic", "classvrv_1_1_device_context.html#a48b74c4a9ba8bb520dab35be4b7e2ff3", null ],
@@ -29,7 +30,7 @@ var classvrv_1_1_device_context =
     [ "EndResumedGraphic", "classvrv_1_1_device_context.html#a9aad87bed3410036d7ad35e556f4aa69", null ],
     [ "EndText", "classvrv_1_1_device_context.html#aa977011b286f098f24371f3c598bcfc8", null ],
     [ "EndTextGraphic", "classvrv_1_1_device_context.html#a00aa64395ad2f5854f87dca59db6a9ef", null ],
-    [ "GetClassId", "classvrv_1_1_device_context.html#a7f0d89e94574e6247ef9c4489e8461f8", null ],
+    [ "GetClassId", "classvrv_1_1_device_context.html#ae75546b4b0f092e4ccf2f38c6f095647", null ],
     [ "GetContentHeight", "classvrv_1_1_device_context.html#acdebf9a4d984c79b202251461b51262f", null ],
     [ "GetFont", "classvrv_1_1_device_context.html#acd0ad30e8097f77c67038758a14bd45e", null ],
     [ "GetHeight", "classvrv_1_1_device_context.html#a88705a2a673cfaf4e7ab3b40e0a9bdab", null ],

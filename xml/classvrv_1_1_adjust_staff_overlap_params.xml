@@ -16,7 +16,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="505" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="505" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="537" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="537" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_adjust_staff_overlap_params_1a6669924f6d02b2053650b7799c45ec98" prot="public" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+        <definition>Doc* vrv::AdjustStaffOverlapParams::m_doc</definition>
+        <argsstring></argsstring>
+        <name>m_doc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="538" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="538" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_adjust_staff_overlap_params_1ae75423ba72878b677c6a60e027c0ff70" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref> *</type>
@@ -29,15 +42,19 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="506" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="506" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="539" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="539" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classvrv_1_1_adjust_staff_overlap_params_1a08c63fbf9ab6c8fb26a6bd7e1718f927" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_adjust_staff_overlap_params_1a57c7cbb8ade19af3c52b2602f618ed77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>vrv::AdjustStaffOverlapParams::AdjustStaffOverlapParams</definition>
-        <argsstring>(Functor *functor)</argsstring>
+        <argsstring>(Doc *doc, Functor *functor)</argsstring>
         <name>AdjustStaffOverlapParams</name>
+        <param>
+          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <declname>doc</declname>
+        </param>
         <param>
           <type><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref> *</type>
           <declname>functor</declname>
@@ -48,11 +65,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="500" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="500" bodyend="504"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="531" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="531" bodyend="536"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>member 0: a pointer to the previous staff alignment member 1: a pointer to the functor for passing it to the system aligner </para>
+<para>member 0: a pointer to the previous staff alignment member 1: the doc member 2: a pointer to the functor for passing it to the system aligner </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -69,7 +86,16 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6">
+      <node id="3">
+        <label>vrv::Doc</label>
+        <link refid="classvrv_1_1_doc"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>m_expansionMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
         <label>vrv::BoundingBox</label>
         <link refid="classvrv_1_1_bounding_box"/>
       </node>
@@ -83,33 +109,41 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
         <childnode refid="3" relation="usage">
+          <edgelabel>m_doc</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
           <edgelabel>m_functor</edgelabel>
         </childnode>
-        <childnode refid="4" relation="usage">
+        <childnode refid="8" relation="usage">
           <edgelabel>m_previous</edgelabel>
         </childnode>
       </node>
-      <node id="4">
+      <node id="8">
         <label>vrv::StaffAlignment</label>
         <link refid="classvrv_1_1_staff_alignment"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vrv::ExpansionMap</label>
+        <link refid="classvrv_1_1_expansion_map"/>
+      </node>
+      <node id="4">
+        <label>vrv::Object</label>
+        <link refid="classvrv_1_1_object"/>
         <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5">
-        <label>vrv::Object</label>
-        <link refid="classvrv_1_1_object"/>
-        <childnode refid="6" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="3">
+      <node id="7">
         <label>vrv::Functor</label>
         <link refid="classvrv_1_1_functor"/>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="498" column="52" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="498" bodyend="507"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="529" column="52" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="529" bodyend="540"/>
     <listofallmembers>
-      <member refid="classvrv_1_1_adjust_staff_overlap_params_1a08c63fbf9ab6c8fb26a6bd7e1718f927" prot="public" virt="non-virtual"><scope>vrv::AdjustStaffOverlapParams</scope><name>AdjustStaffOverlapParams</name></member>
+      <member refid="classvrv_1_1_adjust_staff_overlap_params_1a57c7cbb8ade19af3c52b2602f618ed77" prot="public" virt="non-virtual"><scope>vrv::AdjustStaffOverlapParams</scope><name>AdjustStaffOverlapParams</name></member>
       <member refid="classvrv_1_1_functor_params_1a2ac6c84a04cc3d083441e674f488050e" prot="public" virt="non-virtual"><scope>vrv::AdjustStaffOverlapParams</scope><name>FunctorParams</name></member>
+      <member refid="classvrv_1_1_adjust_staff_overlap_params_1a6669924f6d02b2053650b7799c45ec98" prot="public" virt="non-virtual"><scope>vrv::AdjustStaffOverlapParams</scope><name>m_doc</name></member>
       <member refid="classvrv_1_1_adjust_staff_overlap_params_1ae75423ba72878b677c6a60e027c0ff70" prot="public" virt="non-virtual"><scope>vrv::AdjustStaffOverlapParams</scope><name>m_functor</name></member>
       <member refid="classvrv_1_1_adjust_staff_overlap_params_1a40bbf70d04c85dfe29609f522e40fd33" prot="public" virt="non-virtual"><scope>vrv::AdjustStaffOverlapParams</scope><name>m_previous</name></member>
       <member refid="classvrv_1_1_functor_params_1ae8cb423b21bff493ebdfea2189173191" prot="public" virt="virtual"><scope>vrv::AdjustStaffOverlapParams</scope><name>~FunctorParams</name></member>

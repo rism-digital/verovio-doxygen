@@ -5,6 +5,19 @@
     <basecompoundref refid="classvrv_1_1_functor_params" prot="public" virt="non-virtual">vrv::FunctorParams</basecompoundref>
     <includes refid="functorparams_8h" local="no">functorparams.h</includes>
       <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classvrv_1_1_un_cast_off_params_1ab60256903f9aaaaa6aab84fd39e4c82e" prot="public" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_page" kindref="compound">Page</ref> *</type>
+        <definition>Page* vrv::UnCastOffParams::m_page</definition>
+        <argsstring></argsstring>
+        <name>m_page</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="2362" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="2362" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_un_cast_off_params_1a9039e624a488a41e82ac915b7fd036a5" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
         <definition>System* vrv::UnCastOffParams::m_currentSystem</definition>
@@ -16,18 +29,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="2247" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="2247" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="2363" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="2363" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classvrv_1_1_un_cast_off_params_1aaea663f1627310ae807ce26f9a2a814a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_un_cast_off_params_1a8a7790041ccd188cb254b577831242b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>vrv::UnCastOffParams::UnCastOffParams</definition>
-        <argsstring>(System *currentSystem)</argsstring>
+        <argsstring>(Page *page)</argsstring>
         <name>UnCastOffParams</name>
         <param>
-          <type><ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
-          <declname>currentSystem</declname>
+          <type><ref refid="classvrv_1_1_page" kindref="compound">Page</ref> *</type>
+          <declname>page</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -35,11 +48,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="2246" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="2246" bodyend="2246"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="2357" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="2357" bodyend="2361"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>member 0: a pointer to the system we are adding system to </para>
+<para>member 0: a pointer to the page we are adding system to member 1: a pointer to the system we are adding content to </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -56,6 +69,27 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="11">
+        <label>vrv::PageElement</label>
+        <link refid="classvrv_1_1_page_element"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>AttMultinumMeasures</label>
+      </node>
+      <node id="17">
+        <label>vrv::ScoreDefElement</label>
+        <link refid="classvrv_1_1_score_def_element"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="3">
         <label>vrv::System</label>
         <link refid="classvrv_1_1_system"/>
@@ -75,12 +109,48 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="25">
+        <label>AttSystems</label>
+      </node>
+      <node id="10">
+        <label>vrv::Score</label>
+        <link refid="classvrv_1_1_score"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>AttDistances</label>
+      </node>
       <node id="7">
         <label>AttTyped</label>
       </node>
       <node id="5">
         <label>vrv::BoundingBox</label>
         <link refid="classvrv_1_1_bounding_box"/>
+      </node>
+      <node id="18">
+        <label>vrv::ScoreDefInterface</label>
+        <link refid="classvrv_1_1_score_def_interface"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="1">
         <label>vrv::UnCastOffParams</label>
@@ -90,14 +160,68 @@
         <childnode refid="3" relation="usage">
           <edgelabel>m_currentSystem</edgelabel>
         </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>m_page</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>vrv::Interface</label>
+        <link refid="classvrv_1_1_interface"/>
       </node>
       <node id="2">
         <label>vrv::FunctorParams</label>
         <link refid="classvrv_1_1_functor_params"/>
       </node>
+      <node id="13">
+        <label>vrv::PageElementEnd</label>
+        <link refid="classvrv_1_1_page_element_end"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_start</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>AttMidiTempo</label>
+      </node>
+      <node id="28">
+        <label>AttEndings</label>
+      </node>
+      <node id="24">
+        <label>AttSpacing</label>
+      </node>
       <node id="6">
         <label>vrv::DrawingListInterface</label>
         <link refid="classvrv_1_1_drawing_list_interface"/>
+      </node>
+      <node id="20">
+        <label>AttLyricStyle</label>
+      </node>
+      <node id="16">
+        <label>vrv::ScoreDef</label>
+        <link refid="classvrv_1_1_score_def"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>AttOptimization</label>
+      </node>
+      <node id="12">
+        <label>vrv::PageElementStartInterface</label>
+        <link refid="classvrv_1_1_page_element_start_interface"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>m_end</edgelabel>
+        </childnode>
       </node>
       <node id="4">
         <label>vrv::Object</label>
@@ -105,12 +229,42 @@
         <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="21">
+        <label>AttMeasureNumbers</label>
+      </node>
+      <node id="26">
+        <label>vrv::ObjectListInterface</label>
+        <link refid="classvrv_1_1_object_list_interface"/>
+      </node>
+      <node id="9">
+        <label>vrv::Page</label>
+        <link refid="classvrv_1_1_page"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>m_score</edgelabel>
+          <edgelabel>m_scoreEnd</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>m_drawingScoreDef</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>AttTimeBase</label>
+      </node>
+      <node id="15">
+        <label>AttNNumberLike</label>
+      </node>
+      <node id="14">
+        <label>AttLabelled</label>
+      </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="2244" column="43" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="2244" bodyend="2248"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="2355" column="43" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="2355" bodyend="2364"/>
     <listofallmembers>
       <member refid="classvrv_1_1_functor_params_1a2ac6c84a04cc3d083441e674f488050e" prot="public" virt="non-virtual"><scope>vrv::UnCastOffParams</scope><name>FunctorParams</name></member>
       <member refid="classvrv_1_1_un_cast_off_params_1a9039e624a488a41e82ac915b7fd036a5" prot="public" virt="non-virtual"><scope>vrv::UnCastOffParams</scope><name>m_currentSystem</name></member>
-      <member refid="classvrv_1_1_un_cast_off_params_1aaea663f1627310ae807ce26f9a2a814a" prot="public" virt="non-virtual"><scope>vrv::UnCastOffParams</scope><name>UnCastOffParams</name></member>
+      <member refid="classvrv_1_1_un_cast_off_params_1ab60256903f9aaaaa6aab84fd39e4c82e" prot="public" virt="non-virtual"><scope>vrv::UnCastOffParams</scope><name>m_page</name></member>
+      <member refid="classvrv_1_1_un_cast_off_params_1a8a7790041ccd188cb254b577831242b1" prot="public" virt="non-virtual"><scope>vrv::UnCastOffParams</scope><name>UnCastOffParams</name></member>
       <member refid="classvrv_1_1_functor_params_1ae8cb423b21bff493ebdfea2189173191" prot="public" virt="virtual"><scope>vrv::UnCastOffParams</scope><name>~FunctorParams</name></member>
     </listofallmembers>
   </compounddef>
