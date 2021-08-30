@@ -58,14 +58,14 @@ var NAVTREEINDEX =
 "classvrv_1_1_music_xml_input.html#a43c6dfa399db2476b24a9d36134d2edb",
 "classvrv_1_1_object.html#a95acdd9f46d55cf067b567ef11526b68",
 "classvrv_1_1_option_json.html#abbfe45064b60f80519b5f54528245377",
-"classvrv_1_1_page.html#a93ad65400a74b61fa5ab692018038361",
-"classvrv_1_1_proport.html#a93a3f2259394b5768f11e07a43cfe487",
-"classvrv_1_1_segmented_line.html#a46c3c3ea976b246b62d5357592d8ee2c",
-"classvrv_1_1_stemmed_drawing_interface.html#ab55442afdb100573dc6b84d7563edf00",
-"classvrv_1_1_system_element_start_interface.html#a9d7ccba3040472a3b9a4c479d472349f",
-"classvrv_1_1_transposer.html#a5fab0f84ce081770ff68417aa7c72233",
-"classvrv_1_1_view.html#a761b0f017e09396ebb6e1166dd587209",
-"functions_func_g.html"
+"classvrv_1_1_page.html#a8d0b481d1f2ee288d54cea70b2f18570",
+"classvrv_1_1_proport.html#a5655e9edaba74e66bbba0da1a8b9e3c5",
+"classvrv_1_1_segmented_line.html#a181fb19bdd3fbf969eb236118315e065",
+"classvrv_1_1_stemmed_drawing_interface.html#ab518eec8db36e95d691419f557bcf45a",
+"classvrv_1_1_system_element_start_interface.html#a936d003235f558a528a04509c7583d17",
+"classvrv_1_1_transposer.html#a5f474c012c6225ea98b1c5f18ff14a1b",
+"classvrv_1_1_view.html#a7442e45070c6074a07194549e5166d68",
+"functions_func_f.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

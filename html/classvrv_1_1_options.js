@@ -172,6 +172,7 @@ var classvrv_1_1_options =
     [ "m_thickBarlineThickness", "classvrv_1_1_options.html#ace1220d21b70fa177059184c753d2cbc", null ],
     [ "m_tieEndpointThickness", "classvrv_1_1_options.html#a440ab10e7afc1b9f482472b3cfccfc75", null ],
     [ "m_tieMidpointThickness", "classvrv_1_1_options.html#a2befb7a4762b48618c575091853089a5", null ],
+    [ "m_tieMinLength", "classvrv_1_1_options.html#a66da628f3e5f8f9a44271337c2247d05", null ],
     [ "m_topMarginArtic", "classvrv_1_1_options.html#a2f6b32078b92991f5f576d7d4fb02051", null ],
     [ "m_topMarginHarm", "classvrv_1_1_options.html#a67a343d8c1dfe4c5432f1b49ae6ef67d", null ],
     [ "m_transpose", "classvrv_1_1_options.html#a33ea0b9feff99e830b71dcba0e3e0255", null ],
