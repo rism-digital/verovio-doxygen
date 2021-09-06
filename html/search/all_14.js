@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['verse_1077',['Verse',['../classvrv_1_1_verse.html',1,'vrv']]],
-  ['verticalcorr_1078',['VerticalCorr',['../classvrv_1_1_artic.html#afb868c298d767bba4af4e57d50dbab7f',1,'vrv::Artic']]],
-  ['verticalrest_1079',['verticalRest',['../classvrv_1_1_humdrum_input.html#aeab1fa55b027b749bece352ef47b8ed3',1,'vrv::HumdrumInput']]],
-  ['view_1080',['View',['../classvrv_1_1_view.html',1,'vrv::View'],['../classvrv_1_1_view.html#a721ff64f1ce15ac64a4e0b78308e84bd',1,'vrv::View::View()']]],
-  ['visiblestaffdeforgrpobject_1081',['VisibleStaffDefOrGrpObject',['../classvrv_1_1_visible_staff_def_or_grp_object.html',1,'vrv']]]
+  ['verse_1079',['Verse',['../classvrv_1_1_verse.html',1,'vrv']]],
+  ['verticalcorr_1080',['VerticalCorr',['../classvrv_1_1_artic.html#afb868c298d767bba4af4e57d50dbab7f',1,'vrv::Artic']]],
+  ['verticalrest_1081',['verticalRest',['../classvrv_1_1_humdrum_input.html#aeab1fa55b027b749bece352ef47b8ed3',1,'vrv::HumdrumInput']]],
+  ['view_1082',['View',['../classvrv_1_1_view.html',1,'vrv::View'],['../classvrv_1_1_view.html#a721ff64f1ce15ac64a4e0b78308e84bd',1,'vrv::View::View()']]],
+  ['visiblestaffdeforgrpobject_1083',['VisibleStaffDefOrGrpObject',['../classvrv_1_1_visible_staff_def_or_grp_object.html',1,'vrv']]]
 ];

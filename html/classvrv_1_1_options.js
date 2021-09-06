@@ -161,6 +161,7 @@ var classvrv_1_1_options =
     [ "m_stemWidth", "classvrv_1_1_options.html#a28ef5b887e4b46f0577c82989a668452", null ],
     [ "m_subBracketThickness", "classvrv_1_1_options.html#a8450005f110249d68b045286a9aad732", null ],
     [ "m_substXPathQuery", "classvrv_1_1_options.html#a6f72efbd2c67add68717901a20fd51c7", null ],
+    [ "m_svgAdditionalAttribute", "classvrv_1_1_options.html#acc1b97bd777c33453e4d83a0c0c882e3", null ],
     [ "m_svgBoundingBoxes", "classvrv_1_1_options.html#a533ba481ca7a089c930e8bf427941e88", null ],
     [ "m_svgFormatRaw", "classvrv_1_1_options.html#a178b799184bfe27ef6fb8ab1aea375e2", null ],
     [ "m_svgHtml5", "classvrv_1_1_options.html#ae7d9f64725573315b601a5548197f624", null ],
