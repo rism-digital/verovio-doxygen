@@ -19,7 +19,8 @@ var searchData=
   ['drawcurrentpage_257',['DrawCurrentPage',['../classvrv_1_1_view.html#a1ab1a369039358ad7b6440c62b442ceb',1,'vrv::View']]],
   ['drawingisvisible_258',['DrawingIsVisible',['../classvrv_1_1_staff.html#abb9be0b494c5daf6344dccdbfb657a55',1,'vrv::Staff']]],
   ['drawinglistinterface_259',['DrawingListInterface',['../classvrv_1_1_drawing_list_interface.html',1,'vrv']]],
-  ['drawplaceholder_260',['DrawPlaceholder',['../classvrv_1_1_b_box_device_context.html#ace984ec9c99483969dbd20c27c26ff1f',1,'vrv::BBoxDeviceContext::DrawPlaceholder()'],['../classvrv_1_1_device_context.html#a98b03a16d2a3ead9ac3d7e3bafe2490d',1,'vrv::DeviceContext::DrawPlaceholder()']]],
-  ['durationinterface_261',['DurationInterface',['../classvrv_1_1_duration_interface.html',1,'vrv']]],
-  ['dynam_262',['Dynam',['../classvrv_1_1_dynam.html',1,'vrv']]]
+  ['drawmetersigfigures_260',['DrawMeterSigFigures',['../classvrv_1_1_view.html#aa655040c3577f02e209269f860437c7d',1,'vrv::View']]],
+  ['drawplaceholder_261',['DrawPlaceholder',['../classvrv_1_1_b_box_device_context.html#ace984ec9c99483969dbd20c27c26ff1f',1,'vrv::BBoxDeviceContext::DrawPlaceholder()'],['../classvrv_1_1_device_context.html#a98b03a16d2a3ead9ac3d7e3bafe2490d',1,'vrv::DeviceContext::DrawPlaceholder()']]],
+  ['durationinterface_262',['DurationInterface',['../classvrv_1_1_duration_interface.html',1,'vrv']]],
+  ['dynam_263',['Dynam',['../classvrv_1_1_dynam.html',1,'vrv']]]
 ];

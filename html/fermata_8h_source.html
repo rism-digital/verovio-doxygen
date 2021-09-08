@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('fermata_8h_source.html',''); initResiz
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">wchar_t</span> <a class="code" href="classvrv_1_1_fermata.html#a0e7e493a0489f36630dc9b87d4bd369e">GetFermataGlyph</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">wchar_t</span> <a class="code" href="classvrv_1_1_fermata.html#a858d03f3da10174995424b3aecb8fcec">GetEnclosingGlyph</a>(<span class="keywordtype">bool</span> beforeFermata) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    std::pair&lt;wchar_t, wchar_t&gt; <a class="code" href="classvrv_1_1_fermata.html#a501ce1338df913386be0e31e07290fe6">GetEnclosingGlyphs</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//----------------//</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// Static methods //</span></div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('fermata_8h_source.html',''); initResiz
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
 <div class="ttc" id="aclassvrv_1_1_fermata_html_a1f9ed88d2936e6ba53bc6a1dcdf80596"><div class="ttname"><a href="classvrv_1_1_fermata.html#a1f9ed88d2936e6ba53bc6a1dcdf80596">vrv::Fermata::ConvertFromAnalyticalMarkup</a></div><div class="ttdeci">void ConvertFromAnalyticalMarkup(AttFermataPresent *fermataPresent, const std::string &amp;uuid, ConvertMarkupAnalyticalParams *params)</div><div class="ttdoc">Helpler for converting markup (from Note, Chord, Rest, MRest)</div></div>
 <div class="ttc" id="aclassvrv_1_1_fermata_html_aa3caa25c49531e06f69bb0828a629258"><div class="ttname"><a href="classvrv_1_1_fermata.html#aa3caa25c49531e06f69bb0828a629258">vrv::Fermata::Reset</a></div><div class="ttdeci">virtual void Reset()</div><div class="ttdoc">Reset the object, that is 1) removing all childs and 2) resetting all attributes.</div></div>
-<div class="ttc" id="aclassvrv_1_1_fermata_html_a858d03f3da10174995424b3aecb8fcec"><div class="ttname"><a href="classvrv_1_1_fermata.html#a858d03f3da10174995424b3aecb8fcec">vrv::Fermata::GetEnclosingGlyph</a></div><div class="ttdeci">wchar_t GetEnclosingGlyph(bool beforeFermata) const</div><div class="ttdoc">Retrieves parentheses / brackets from the enclose attribute.</div></div>
+<div class="ttc" id="aclassvrv_1_1_fermata_html_a501ce1338df913386be0e31e07290fe6"><div class="ttname"><a href="classvrv_1_1_fermata.html#a501ce1338df913386be0e31e07290fe6">vrv::Fermata::GetEnclosingGlyphs</a></div><div class="ttdeci">std::pair&lt; wchar_t, wchar_t &gt; GetEnclosingGlyphs() const</div><div class="ttdoc">Retrieve parentheses / brackets from the enclose attribute.</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_fermata_html_ad24103e5d24e542fa2cedf31d10b1c9e"><div class="ttname"><a href="classvrv_1_1_fermata.html#ad24103e5d24e542fa2cedf31d10b1c9e">vrv::Fermata::Clone</a></div><div class="ttdeci">virtual Object * Clone() const</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> fermata.h:43</div></div>
 <div class="ttc" id="aclassvrv_1_1_fermata_html_aae821e532879adca850bdd17256d65b1"><div class="ttname"><a href="classvrv_1_1_fermata.html#aae821e532879adca850bdd17256d65b1">vrv::Fermata::GetVerticalAlignment</a></div><div class="ttdeci">static data_VERTICALALIGNMENT GetVerticalAlignment(wchar_t code)</div><div class="ttdoc">Retrieves the vertical alignment for the fermata SMuFL code.</div></div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('fermata_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>fermata.h</b></li>
-    <li class="footer">Generated on Wed Sep 8 2021 06:48:16 for Verovio by
+    <li class="footer">Generated on Wed Sep 8 2021 06:59:41 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

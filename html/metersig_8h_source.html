@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('metersig_8h_source.html',''); initResi
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// MeterSig</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classvrv_1_1_meter_sig.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>, <span class="keyword">public</span> AttMeterSigLog, <span class="keyword">public</span> AttMeterSigVis {</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classvrv_1_1_meter_sig.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>, <span class="keyword">public</span> AttEnclosingChars, <span class="keyword">public</span> AttMeterSigLog, <span class="keyword">public</span> AttMeterSigVis {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a>();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a>();</div>
@@ -121,25 +121,30 @@ $(document).ready(function(){initNavTree('metersig_8h_source.html',''); initResi
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_meter_sig.html#a626f1377088f7297de38790d467f927e">GetTotalCount</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_meter_sig.html#a52ae19681b0e8e94cef2481ce90312bf">LayerCountInTimeSpan</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">wchar_t</span> <a class="code" href="classvrv_1_1_meter_sig.html#ae658760bc6abd922a8e8f4c07ec373be">GetSymbolGlyph</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::pair&lt;wchar_t, wchar_t&gt; <a class="code" href="classvrv_1_1_meter_sig.html#aa4d0712da770d7eeace38e551e332f3a">GetEnclosingGlyphs</a>(<span class="keywordtype">bool</span> small) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_meter_sig.html#a52ae19681b0e8e94cef2481ce90312bf">LayerCountInTimeSpan</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_meter_sig_html_a4f11053c4d675bf745d2ce0d9da6ed20"><div class="ttname"><a href="classvrv_1_1_meter_sig.html#a4f11053c4d675bf745d2ce0d9da6ed20">vrv::MeterSig::HasToBeAligned</a></div><div class="ttdeci">virtual bool HasToBeAligned() const</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> metersig.h:41</div></div>
+<div class="ttc" id="aclassvrv_1_1_meter_sig_html_aa4d0712da770d7eeace38e551e332f3a"><div class="ttname"><a href="classvrv_1_1_meter_sig.html#aa4d0712da770d7eeace38e551e332f3a">vrv::MeterSig::GetEnclosingGlyphs</a></div><div class="ttdeci">std::pair&lt; wchar_t, wchar_t &gt; GetEnclosingGlyphs(bool small) const</div><div class="ttdoc">Retrieve parentheses from the enclose attribute.</div></div>
 <div class="ttc" id="aclassvrv_1_1_meter_sig_html"><div class="ttname"><a href="classvrv_1_1_meter_sig.html">vrv::MeterSig</a></div><div class="ttdoc">This class models the MEI &lt;meterSig&gt; element.</div><div class="ttdef"><b>Definition:</b> metersig.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
 <div class="ttc" id="aclassvrv_1_1_meter_sig_html_a626f1377088f7297de38790d467f927e"><div class="ttname"><a href="classvrv_1_1_meter_sig.html#a626f1377088f7297de38790d467f927e">vrv::MeterSig::GetTotalCount</a></div><div class="ttdeci">int GetTotalCount() const</div><div class="ttdoc">Evaluate additive meter counts.</div></div>
@@ -147,6 +152,7 @@ $(document).ready(function(){initNavTree('metersig_8h_source.html',''); initResi
 <div class="ttc" id="aclassvrv_1_1_meter_sig_html_a52ae19681b0e8e94cef2481ce90312bf"><div class="ttname"><a href="classvrv_1_1_meter_sig.html#a52ae19681b0e8e94cef2481ce90312bf">vrv::MeterSig::LayerCountInTimeSpan</a></div><div class="ttdeci">virtual int LayerCountInTimeSpan(FunctorParams *functorParams)</div><div class="ttdoc">See Object::LayerCountInTimeSpan.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html_a214d80f16352cda785bdbf1ba3423b68"><div class="ttname"><a href="classvrv_1_1_object.html#a214d80f16352cda785bdbf1ba3423b68">vrv::Object::GetFirstAncestor</a></div><div class="ttdeci">Object * GetFirstAncestor(const ClassId classId, int maxSteps=-1) const</div><div class="ttdoc">Return the first ancestor of the specified type.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html_a96ca869c3849c0f108655ad5d900a2c7"><div class="ttname"><a href="classvrv_1_1_object.html#a96ca869c3849c0f108655ad5d900a2c7">vrv::Object::GetParent</a></div><div class="ttdeci">Object * GetParent() const</div><div class="ttdoc">Get the parent of the Object.</div><div class="ttdef"><b>Definition:</b> object.h:292</div></div>
+<div class="ttc" id="aclassvrv_1_1_meter_sig_html_ae658760bc6abd922a8e8f4c07ec373be"><div class="ttname"><a href="classvrv_1_1_meter_sig.html#ae658760bc6abd922a8e8f4c07ec373be">vrv::MeterSig::GetSymbolGlyph</a></div><div class="ttdeci">wchar_t GetSymbolGlyph() const</div><div class="ttdoc">Retrieves the symbol glyph.</div></div>
 <div class="ttc" id="aclassvrv_1_1_meter_sig_html_aad14add6fb4178146d32028905bd02dc"><div class="ttname"><a href="classvrv_1_1_meter_sig.html#aad14add6fb4178146d32028905bd02dc">vrv::MeterSig::IsScoreDefElement</a></div><div class="ttdeci">virtual bool IsScoreDefElement() const</div><div class="ttdoc">Override the method since check is required.</div><div class="ttdef"><b>Definition:</b> metersig.h:44</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:40</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_params_html"><div class="ttname"><a href="classvrv_1_1_functor_params.html">vrv::FunctorParams</a></div><div class="ttdoc">This is the base class for all MEI att classes.</div><div class="ttdef"><b>Definition:</b> functorparams.h:75</div></div>
@@ -154,7 +160,7 @@ $(document).ready(function(){initNavTree('metersig_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>metersig.h</b></li>
-    <li class="footer">Generated on Wed Sep 8 2021 06:48:16 for Verovio by
+    <li class="footer">Generated on Wed Sep 8 2021 06:59:42 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

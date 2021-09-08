@@ -14,7 +14,7 @@ var classvrv_1_1_artic =
     [ "GetArticGlyph", "classvrv_1_1_artic.html#ad38e2eb6d8be529eb908f7ad29596e3d", null ],
     [ "GetClassName", "classvrv_1_1_artic.html#ac993bfadffd73b30fe6b372399d2d352", null ],
     [ "GetDrawingPlace", "classvrv_1_1_artic.html#a318062fc0b6c2ffbb2986c3f1d90c26a", null ],
-    [ "GetEnclosingGlyph", "classvrv_1_1_artic.html#ae1fd6078806e981671c7c185f4b2c31f", null ],
+    [ "GetEnclosingGlyphs", "classvrv_1_1_artic.html#a721d2e2e9787e1d9a15be93248b31dab", null ],
     [ "HasToBeAligned", "classvrv_1_1_artic.html#aa91fcd05ac62367cb95ac5cc7eb19f23", null ],
     [ "IsInsideArtic", "classvrv_1_1_artic.html#ad60930fde904d55bc6b45c022f9a0886", null ],
     [ "IsOutsideArtic", "classvrv_1_1_artic.html#a71697eeca9129013c0fc4cf92ec7ddf6", null ],

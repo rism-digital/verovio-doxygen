@@ -3,6 +3,7 @@
   <compounddef id="classvrv_1_1_meter_sig" kind="class" language="C++" prot="public">
     <compoundname>vrv::MeterSig</compoundname>
     <basecompoundref refid="classvrv_1_1_layer_element" prot="public" virt="non-virtual">vrv::LayerElement</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">AttEnclosingChars</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">AttMeterSigLog</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">AttMeterSigVis</basecompoundref>
     <includes refid="metersig_8h" local="no">metersig.h</includes>
@@ -126,6 +127,38 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/metersig.h" line="47" column="9"/>
       </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_meter_sig_1ae658760bc6abd922a8e8f4c07ec373be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>wchar_t</type>
+        <definition>wchar_t vrv::MeterSig::GetSymbolGlyph</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSymbolGlyph</name>
+        <briefdescription>
+<para>Retrieves the symbol glyph. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/metersig.h" line="50" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_meter_sig_1aa4d0712da770d7eeace38e551e332f3a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; wchar_t, wchar_t &gt;</type>
+        <definition>std::pair&lt;wchar_t, wchar_t&gt; vrv::MeterSig::GetEnclosingGlyphs</definition>
+        <argsstring>(bool small) const</argsstring>
+        <name>GetEnclosingGlyphs</name>
+        <param>
+          <type>bool</type>
+          <declname>small</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve parentheses from the enclose attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/metersig.h" line="53" column="15"/>
+      </memberdef>
       <memberdef kind="function" id="classvrv_1_1_meter_sig_1a52ae19681b0e8e94cef2481ce90312bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
         <definition>virtual int vrv::MeterSig::LayerCountInTimeSpan</definition>
@@ -143,7 +176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/metersig.h" line="56" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/metersig.h" line="62" column="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -174,10 +207,10 @@
         <childnode refid="9" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12">
+      <node id="13">
         <label>AttMeterSigLog</label>
       </node>
-      <node id="13">
+      <node id="14">
         <label>AttMeterSigVis</label>
       </node>
       <node id="11">
@@ -200,6 +233,8 @@
         </childnode>
         <childnode refid="13" relation="public-inheritance">
         </childnode>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="5">
         <label>vrv::FacsimileInterface</label>
@@ -214,6 +249,9 @@
       </node>
       <node id="7">
         <label>AttFacsimile</label>
+      </node>
+      <node id="12">
+        <label>AttEnclosingChars</label>
       </node>
       <node id="3">
         <label>vrv::Object</label>
@@ -258,7 +296,7 @@
         <childnode refid="9" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="38">
+      <node id="39">
         <label>AttMeterSigLog</label>
       </node>
       <node id="26">
@@ -274,7 +312,7 @@
         <childnode refid="11" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="39">
+      <node id="40">
         <label>AttMeterSigVis</label>
       </node>
       <node id="19">
@@ -343,6 +381,8 @@
         <childnode refid="38" relation="public-inheritance">
         </childnode>
         <childnode refid="39" relation="public-inheritance">
+        </childnode>
+        <childnode refid="40" relation="public-inheritance">
         </childnode>
       </node>
       <node id="25">
@@ -438,6 +478,9 @@
       <node id="7">
         <label>AttFacsimile</label>
       </node>
+      <node id="38">
+        <label>AttEnclosingChars</label>
+      </node>
       <node id="36">
         <label>AttTransposition</label>
       </node>
@@ -473,7 +516,7 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/metersig.h" line="26" column="81" bodyfile="/home/runner/work/verovio/verovio/include/vrv/metersig.h" bodystart="26" bodyend="63"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/metersig.h" line="26" column="107" bodyfile="/home/runner/work/verovio/verovio/include/vrv/metersig.h" bodystart="26" bodyend="69"/>
     <listofallmembers>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::MeterSig</scope><name>AddChild</name></member>
       <member refid="classvrv_1_1_object_1a1af968d5140f79fd056aa5a46d7cad11" prot="public" virt="virtual"><scope>vrv::MeterSig</scope><name>AddLayerElementToFlatList</name></member>
@@ -643,6 +686,7 @@
       <member refid="classvrv_1_1_layer_element_1a19ea22c5c2f0cbd87cf19430d1cedefe" prot="public" virt="virtual"><scope>vrv::MeterSig</scope><name>GetDrawingY</name></member>
       <member refid="classvrv_1_1_layer_element_1a4e488b36c98c828a39acab21f28cb5c9" prot="public" virt="non-virtual"><scope>vrv::MeterSig</scope><name>GetDrawingYRel</name></member>
       <member refid="classvrv_1_1_object_1a60120fd33bf1f7227c4dc2f6a9b265c7" prot="public" virt="virtual"><scope>vrv::MeterSig</scope><name>GetDurationInterface</name></member>
+      <member refid="classvrv_1_1_meter_sig_1aa4d0712da770d7eeace38e551e332f3a" prot="public" virt="non-virtual"><scope>vrv::MeterSig</scope><name>GetEnclosingGlyphs</name></member>
       <member refid="classvrv_1_1_layer_element_1a2d2ab0942a3ca7398e8966ca7934d8f6" prot="public" virt="virtual"><scope>vrv::MeterSig</scope><name>GetFacsimileInterface</name></member>
       <member refid="classvrv_1_1_object_1a4f539160a7684d67d0c4e01e5dd06c36" prot="public" virt="non-virtual"><scope>vrv::MeterSig</scope><name>GetFirst</name></member>
       <member refid="classvrv_1_1_object_1a214d80f16352cda785bdbf1ba3423b68" prot="public" virt="non-virtual"><scope>vrv::MeterSig</scope><name>GetFirstAncestor</name></member>
@@ -681,6 +725,7 @@
       <member refid="classvrv_1_1_bounding_box_1a7ba0ddf13040f3747a7421232c9bc21d" prot="public" virt="non-virtual"><scope>vrv::MeterSig</scope><name>GetSelfY2</name></member>
       <member refid="classvrv_1_1_object_1a8f790811faa78e214ba76d2a728fa8e5" prot="public" virt="virtual"><scope>vrv::MeterSig</scope><name>GetStemmedDrawingInterface</name></member>
       <member refid="classvrv_1_1_facsimile_interface_1af64a523941de42e832c352d6a50124d5" prot="public" virt="non-virtual"><scope>vrv::MeterSig</scope><name>GetSurfaceY</name></member>
+      <member refid="classvrv_1_1_meter_sig_1ae658760bc6abd922a8e8f4c07ec373be" prot="public" virt="non-virtual"><scope>vrv::MeterSig</scope><name>GetSymbolGlyph</name></member>
       <member refid="classvrv_1_1_object_1ac2308546f247b47d6fdaaf0e90490fa5" prot="public" virt="virtual"><scope>vrv::MeterSig</scope><name>GetTextDirInterface</name></member>
       <member refid="classvrv_1_1_object_1a738ca662cfaa09bb0122966cb29b43c6" prot="public" virt="virtual"><scope>vrv::MeterSig</scope><name>GetTimePointInterface</name></member>
       <member refid="classvrv_1_1_object_1a2ac1817c7492a51e6bb550f3002b32de" prot="public" virt="virtual"><scope>vrv::MeterSig</scope><name>GetTimeSpanningInterface</name></member>
