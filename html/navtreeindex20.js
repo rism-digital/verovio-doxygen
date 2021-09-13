@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"classvrv_1_1_view.html#a5de4c855adb5fbae6923e3f6bdd2b69c":[1,0,0,336,158],
 "classvrv_1_1_view.html#a63a1674d9b36c2b1d1ccb358cc968961":[1,0,0,336,197],
 "classvrv_1_1_view.html#a651558f192674df0282bd069fb7a8e9c":[1,0,0,336,81],
 "classvrv_1_1_view.html#a673da3b81291694b9cc4c54fa48fa993":[1,0,0,336,27],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "fermata_8h_source.html":[2,0,54],
 "fig_8h_source.html":[2,0,55],
 "files.html":[2,0],
-"fing_8h_source.html":[2,0,56],
-"floatingobject_8h_source.html":[2,0,57]
+"fing_8h_source.html":[2,0,56]
 };

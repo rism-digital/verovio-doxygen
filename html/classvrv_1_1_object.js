@@ -107,6 +107,7 @@ var classvrv_1_1_object =
     [ "GenerateTimemap", "classvrv_1_1_object.html#abe889073301d6e1dfe55e725b6532948", null ],
     [ "GetAlignmentLeftRight", "classvrv_1_1_object.html#a3eb3c52e16525ed1a559a825fa85e00e", null ],
     [ "GetAttributes", "classvrv_1_1_object.html#aeb7e152a62704071901972bbfa06062c", null ],
+    [ "GetBoundaryEnd", "classvrv_1_1_object.html#afc0d45ecd9bef7d010a33efe25f8878c", null ],
     [ "GetChild", "classvrv_1_1_object.html#a6bd78730c9d5f0302710213488708adb", null ],
     [ "GetChild", "classvrv_1_1_object.html#a889936363e6eb4b03172c86219c275fc", null ],
     [ "GetChildCount", "classvrv_1_1_object.html#a96ae60d000961398754d5b22de89cc4e", null ],
