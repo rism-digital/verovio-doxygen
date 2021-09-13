@@ -129,6 +129,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Toolkit</b> ()</t
 <tr class="memitem:abf4167617faed8347a7da3291e927e05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#abf4167617faed8347a7da3291e927e05">LoadZipDataBuffer</a> (const unsigned char *data, int length)</td></tr>
 <tr class="memdesc:abf4167617faed8347a7da3291e927e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a MusicXML compressed file passed as a buffer of bytes.  <a href="classvrv_1_1_toolkit.html#abf4167617faed8347a7da3291e927e05">More...</a><br /></td></tr>
 <tr class="separator:abf4167617faed8347a7da3291e927e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00a6268261b17ac90ba802ea9780e2df"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#a00a6268261b17ac90ba802ea9780e2df">ValidatePAEFile</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a00a6268261b17ac90ba802ea9780e2df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate the Plaine and Easie file from the file system.  <a href="classvrv_1_1_toolkit.html#a00a6268261b17ac90ba802ea9780e2df">More...</a><br /></td></tr>
+<tr class="separator:a00a6268261b17ac90ba802ea9780e2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7311cd71df650b10f1ce75e037b49268"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#a7311cd71df650b10f1ce75e037b49268">ValidatePAE</a> (const std::string &amp;data)</td></tr>
+<tr class="memdesc:a7311cd71df650b10f1ce75e037b49268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate the Plaine and Easie code passed in the string data.  <a href="classvrv_1_1_toolkit.html#a7311cd71df650b10f1ce75e037b49268">More...</a><br /></td></tr>
+<tr class="separator:a7311cd71df650b10f1ce75e037b49268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af24ccae4968a35e71b5fd82b70ee086c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#af24ccae4968a35e71b5fd82b70ee086c">GetPageCount</a> ()</td></tr>
 <tr class="memdesc:af24ccae4968a35e71b5fd82b70ee086c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of pages in the loaded document.  <a href="classvrv_1_1_toolkit.html#af24ccae4968a35e71b5fd82b70ee086c">More...</a><br /></td></tr>
 <tr class="separator:af24ccae4968a35e71b5fd82b70ee086c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1563,6 +1569,62 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="a7311cd71df650b10f1ce75e037b49268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7311cd71df650b10f1ce75e037b49268">&#9670;&nbsp;</a></span>ValidatePAE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vrv::Toolkit::ValidatePAE </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validate the Plaine and Easie code passed in the string data. </p>
+<p>A single JSON object is returned when there is a global input error. When reading the input succeeds, validation is grouped by input keys. The methods always returns errors in PAE pedantic mode. No data remains loaded after the validation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>A string with the data in JSON or with PAE <code>@</code> keys </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A stringified JSON object with the validation warnings or errors </dd></dl>
+
+</div>
+</div>
+<a id="a00a6268261b17ac90ba802ea9780e2df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00a6268261b17ac90ba802ea9780e2df">&#9670;&nbsp;</a></span>ValidatePAEFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vrv::Toolkit::ValidatePAEFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validate the Plaine and Easie file from the file system. </p>
+<p>The method calls <a class="el" href="classvrv_1_1_toolkit.html#a7311cd71df650b10f1ce75e037b49268" title="Validate the Plaine and Easie code passed in the string data.">Toolkit::ValidatePAE</a>. This methods is not available in the JavaScript version of the toolkit.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>The filename to be validated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A stringified JSON object with the validation warnings or errors </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="toolkit_8h_source.html">toolkit.h</a></li>
 </ul>
@@ -1572,7 +1634,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_toolkit.html">Toolkit</a></li>
-    <li class="footer">Generated on Mon Sep 13 2021 07:29:06 for Verovio by
+    <li class="footer">Generated on Mon Sep 13 2021 11:44:38 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
