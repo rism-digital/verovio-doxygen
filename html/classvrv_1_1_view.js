@@ -153,7 +153,7 @@ var classvrv_1_1_view =
     [ "DrawTabNote", "classvrv_1_1_view.html#a7f038eca043f93ab6ce0073c90765f22", null ],
     [ "DrawTempo", "classvrv_1_1_view.html#a56da13bc73f007bf819c4d11a99af67d", null ],
     [ "DrawText", "classvrv_1_1_view.html#a8d5f6bd0fbe1fce9f9eed48b4ae688b6", null ],
-    [ "DrawTextBoxes", "classvrv_1_1_view.html#a31d1912d4d29519c725039eb1739cac9", null ],
+    [ "DrawTextBox", "classvrv_1_1_view.html#a77297de4cb529d00f0346f55912e3df5", null ],
     [ "DrawTextChildren", "classvrv_1_1_view.html#a8f597af61661e6f0f782954dcaea634e", null ],
     [ "DrawTextEditorialElement", "classvrv_1_1_view.html#a7ba6dd131553da5091e3d4004eb2299a", null ],
     [ "DrawTextElement", "classvrv_1_1_view.html#a92b21a1d1f8f14636eaeed766dd0eebd", null ],
