@@ -7,5 +7,6 @@ var classvrv_1_1_reh =
     [ "GetTextDirInterface", "classvrv_1_1_reh.html#a9732a6a77ff4a618637cca1f79b47e56", null ],
     [ "GetTimePointInterface", "classvrv_1_1_reh.html#ace5e9654d44c474e1b6dfdcd860170d6", null ],
     [ "IsSupportedChild", "classvrv_1_1_reh.html#a968a2f231ef4ba2e3305e843e7ac4f28", null ],
-    [ "Reset", "classvrv_1_1_reh.html#aa803b111fcc7fc461cb2f888c802f011", null ]
+    [ "Reset", "classvrv_1_1_reh.html#aa803b111fcc7fc461cb2f888c802f011", null ],
+    [ "ResolveRehPosition", "classvrv_1_1_reh.html#aa7914daa7e16a74f573b51963622a2a1", null ]
 ];

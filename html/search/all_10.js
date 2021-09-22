@@ -46,9 +46,10 @@ var searchData=
   ['resetverticalalignment_911',['ResetVerticalAlignment',['../classvrv_1_1_artic.html#a96699bdbf8423b7c51e2620fb3b1b83a',1,'vrv::Artic::ResetVerticalAlignment()'],['../classvrv_1_1_tuplet_bracket.html#ab0f87012efb4af420cf11c25fc12e744',1,'vrv::TupletBracket::ResetVerticalAlignment()'],['../classvrv_1_1_tuplet_num.html#a878c731c260402f7a0e2b0dcfcc9b653',1,'vrv::TupletNum::ResetVerticalAlignment()'],['../classvrv_1_1_floating_object.html#a641ed5d645ade83bf5c970d3e5cc02c4',1,'vrv::FloatingObject::ResetVerticalAlignment()'],['../classvrv_1_1_layer_element.html#a1911c3248161c492f5d1fdad9e429ae0',1,'vrv::LayerElement::ResetVerticalAlignment()'],['../classvrv_1_1_object.html#ab5f42b79ff1721982121a8a9c493a8c1',1,'vrv::Object::ResetVerticalAlignment()'],['../classvrv_1_1_page.html#a61012e25938fbe0a4e6d29faf9f77ba3',1,'vrv::Page::ResetVerticalAlignment()'],['../classvrv_1_1_staff.html#adbd0ace09326958de6ddde0b709ab727',1,'vrv::Staff::ResetVerticalAlignment()'],['../classvrv_1_1_system.html#a42ce9e0d7c04ddd4c0f3318c4a899485',1,'vrv::System::ResetVerticalAlignment()'],['../classvrv_1_1_text_element.html#a0951e85f2d524582b37d2dfac38e3883',1,'vrv::TextElement::ResetVerticalAlignment()']]],
   ['resetxmlidseed_912',['ResetXmlIdSeed',['../classvrv_1_1_toolkit.html#aa851c49e48d4fd83e71f1a457f022366',1,'vrv::Toolkit']]],
   ['resolvemidities_913',['ResolveMIDITies',['../classvrv_1_1_layer_element.html#a75e5001ec1a419764ece5141bf00726c',1,'vrv::LayerElement::ResolveMIDITies()'],['../classvrv_1_1_object.html#a93b5fe054b2d26fe91ff50a5861fe08c',1,'vrv::Object::ResolveMIDITies()'],['../classvrv_1_1_tie.html#a64255b08d5587d1d97e383d4eea3928c',1,'vrv::Tie::ResolveMIDITies()']]],
-  ['resources_914',['Resources',['../classvrv_1_1_resources.html',1,'vrv']]],
-  ['rest_915',['Rest',['../classvrv_1_1_rest.html',1,'vrv']]],
-  ['restore_916',['Restore',['../classvrv_1_1_restore.html',1,'vrv']]],
-  ['rgb2int_917',['RGB2Int',['../classvrv_1_1_device_context.html#a73f8ff83665f5699325367b3a3743bae',1,'vrv::DeviceContext']]],
-  ['runningelement_918',['RunningElement',['../classvrv_1_1_running_element.html',1,'vrv']]]
+  ['resolverehposition_914',['ResolveRehPosition',['../classvrv_1_1_object.html#a973a6ee5f5504cfdad58a940a95c313e',1,'vrv::Object::ResolveRehPosition()'],['../classvrv_1_1_reh.html#aa7914daa7e16a74f573b51963622a2a1',1,'vrv::Reh::ResolveRehPosition()']]],
+  ['resources_915',['Resources',['../classvrv_1_1_resources.html',1,'vrv']]],
+  ['rest_916',['Rest',['../classvrv_1_1_rest.html',1,'vrv']]],
+  ['restore_917',['Restore',['../classvrv_1_1_restore.html',1,'vrv']]],
+  ['rgb2int_918',['RGB2Int',['../classvrv_1_1_device_context.html#a73f8ff83665f5699325367b3a3743bae',1,'vrv::DeviceContext']]],
+  ['runningelement_919',['RunningElement',['../classvrv_1_1_running_element.html',1,'vrv']]]
 ];
