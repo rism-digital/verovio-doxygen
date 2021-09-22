@@ -1,5 +1,9 @@
 var NAVTREEINDEX20 =
 {
+"classvrv_1_1_view.html#a578b7e223344dce694d64c2fc9f0f5d5":[1,0,0,336,141],
+"classvrv_1_1_view.html#a592f312dd1b5f9c0bda28ab7346c7b88":[1,0,0,336,172],
+"classvrv_1_1_view.html#a5b3def8315a74daebf0c2a202cf1ab38":[1,0,0,336,168],
+"classvrv_1_1_view.html#a5d7fe1e4eeaaecd22a796703ee9c630f":[1,0,0,336,50],
 "classvrv_1_1_view.html#a5d9f88428c22c67573f7fb56ed086ab3":[1,0,0,336,106],
 "classvrv_1_1_view.html#a5de4c855adb5fbae6923e3f6bdd2b69c":[1,0,0,336,158],
 "classvrv_1_1_view.html#a63a1674d9b36c2b1d1ccb358cc968961":[1,0,0,336,197],
@@ -245,9 +249,5 @@ var NAVTREEINDEX20 =
 "expansionmap_8h_source.html":[2,0,48],
 "f_8h_source.html":[2,0,49],
 "facsimile_8h_source.html":[2,0,50],
-"facsimileinterface_8h_source.html":[2,0,51],
-"fb_8h_source.html":[2,0,52],
-"featureextractor_8h_source.html":[2,0,53],
-"fermata_8h_source.html":[2,0,54],
-"fig_8h_source.html":[2,0,55]
+"facsimileinterface_8h_source.html":[2,0,51]
 };
