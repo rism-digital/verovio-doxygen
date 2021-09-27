@@ -514,6 +514,7 @@ var hierarchy =
       [ "vrv::MultiRpt", "classvrv_1_1_multi_rpt.html", null ]
     ] ],
     [ "AttNumberPlacement", null, [
+      [ "vrv::MultiRest", "classvrv_1_1_multi_rest.html", null ],
       [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ],
       [ "vrv::TupletNum", "classvrv_1_1_tuplet_num.html", null ]
     ] ],
