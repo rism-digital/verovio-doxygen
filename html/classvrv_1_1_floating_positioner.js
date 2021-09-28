@@ -19,7 +19,7 @@ var classvrv_1_1_floating_positioner =
     [ "ResetCachedDrawingY", "classvrv_1_1_floating_positioner.html#a1ae7919ef2dc65c0f4a2c9c616c188c6", null ],
     [ "ResetPositioner", "classvrv_1_1_floating_positioner.html#a99e8532f6ab38b81a39c5625b5955539", null ],
     [ "SetDrawingXRel", "classvrv_1_1_floating_positioner.html#a52db3a09535f020728804c4b559403f3", null ],
-    [ "SetDrawingYRel", "classvrv_1_1_floating_positioner.html#a002454438057c1451a5e152e39304b57", null ],
+    [ "SetDrawingYRel", "classvrv_1_1_floating_positioner.html#a6d2324321eb6fad1030f0b5f2a14d13e", null ],
     [ "SetObjectXY", "classvrv_1_1_floating_positioner.html#aeb49f3289c5a6f5561728dc61e41dfaf", null ],
     [ "m_alignment", "classvrv_1_1_floating_positioner.html#a1bca7057eeaed8bbb766a6ee4d10f84e", null ],
     [ "m_drawingXRel", "classvrv_1_1_floating_positioner.html#a38eda844f3a1146ed42aafe46b7cf86b", null ],

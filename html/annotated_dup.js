@@ -79,6 +79,7 @@ var annotated_dup =
       [ "ClosestBB", "structvrv_1_1_closest_b_b.html", "structvrv_1_1_closest_b_b" ],
       [ "Comparison", "classvrv_1_1_comparison.html", "classvrv_1_1_comparison" ],
       [ "ControlElement", "classvrv_1_1_control_element.html", "classvrv_1_1_control_element" ],
+      [ "ControlPointConstraint", "structvrv_1_1_control_point_constraint.html", "structvrv_1_1_control_point_constraint" ],
       [ "ConvertMarkupAnalyticalParams", "classvrv_1_1_convert_markup_analytical_params.html", "classvrv_1_1_convert_markup_analytical_params" ],
       [ "ConvertMarkupArticParams", "classvrv_1_1_convert_markup_artic_params.html", "classvrv_1_1_convert_markup_artic_params" ],
       [ "ConvertToCastOffMensuralParams", "classvrv_1_1_convert_to_cast_off_mensural_params.html", "classvrv_1_1_convert_to_cast_off_mensural_params" ],

@@ -866,6 +866,7 @@ var hierarchy =
       [ "vrv::InterfaceComparison", "classvrv_1_1_interface_comparison.html", null ],
       [ "vrv::IsEditorialElementComparison", "classvrv_1_1_is_editorial_element_comparison.html", null ]
     ] ],
+    [ "vrv::ControlPointConstraint", "structvrv_1_1_control_point_constraint.html", null ],
     [ "vrv::CurveSpannedElement", "classvrv_1_1_curve_spanned_element.html", null ],
     [ "vrv::data_FONTSIZE", "classvrv_1_1data___f_o_n_t_s_i_z_e.html", null ],
     [ "vrv::data_LINEWIDTH", "classvrv_1_1data___l_i_n_e_w_i_d_t_h.html", null ],

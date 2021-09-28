@@ -5,8 +5,9 @@ var searchData=
   ['uncastoffparams_1076',['UnCastOffParams',['../classvrv_1_1_un_cast_off_params.html',1,'vrv']]],
   ['unclear_1077',['Unclear',['../classvrv_1_1_unclear.html',1,'vrv']]],
   ['unescapehtmlentities_1078',['unescapeHtmlEntities',['../classvrv_1_1_humdrum_input.html#a3a9cb0e5cf601ccbe32c261cd96b5ab0',1,'vrv::HumdrumInput']]],
-  ['updatecurveparams_1079',['UpdateCurveParams',['../classvrv_1_1_floating_curve_positioner.html#a27ca3bbbefe52d4b5951e3509e9b1483',1,'vrv::FloatingCurvePositioner']]],
-  ['useblockstyle_1080',['UseBlockStyle',['../classvrv_1_1_multi_rest.html#a17707f93b4172945ae25d805f5b09ffc',1,'vrv::MultiRest']]],
-  ['useglobalstyling_1081',['UseGlobalStyling',['../classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b',1,'vrv::DeviceContext::UseGlobalStyling()'],['../classvrv_1_1_svg_device_context.html#a6f4aa56187a3cde13540946a67f50cbc',1,'vrv::SvgDeviceContext::UseGlobalStyling()']]],
-  ['uuidcomparison_1082',['UuidComparison',['../classvrv_1_1_uuid_comparison.html',1,'vrv']]]
+  ['updatecontrolpointparams_1079',['UpdateControlPointParams',['../classvrv_1_1_bezier_curve.html#a5a8f7416aa473cbc44d67d0628d22e62',1,'vrv::BezierCurve']]],
+  ['updatecurveparams_1080',['UpdateCurveParams',['../classvrv_1_1_floating_curve_positioner.html#a27ca3bbbefe52d4b5951e3509e9b1483',1,'vrv::FloatingCurvePositioner']]],
+  ['useblockstyle_1081',['UseBlockStyle',['../classvrv_1_1_multi_rest.html#a17707f93b4172945ae25d805f5b09ffc',1,'vrv::MultiRest']]],
+  ['useglobalstyling_1082',['UseGlobalStyling',['../classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b',1,'vrv::DeviceContext::UseGlobalStyling()'],['../classvrv_1_1_svg_device_context.html#a6f4aa56187a3cde13540946a67f50cbc',1,'vrv::SvgDeviceContext::UseGlobalStyling()']]],
+  ['uuidcomparison_1083',['UuidComparison',['../classvrv_1_1_uuid_comparison.html',1,'vrv']]]
 ];

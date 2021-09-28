@@ -296,49 +296,52 @@ $(document).ready(function(){initNavTree('devicecontextbase_8h_source.html','');
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="comment">// Helper to rotate all points within bezier curve around @rotationPoint by @angle</span></div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordtype">void</span> Rotate(<span class="keywordtype">float</span> angle, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_point.html">Point</a> &amp;rotationPoint);</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordtype">void</span> CalculateControlPointOffset(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> staffSize);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordtype">void</span> SetControlPointOffset(<span class="keywordtype">int</span> controlPointOffset)</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    {</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        m_leftControlPointOffset = m_rightControlPointOffset = controlPointOffset;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    };</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordtype">void</span> SetLeftControlPointOffset(<span class="keywordtype">int</span> height) { m_leftControlPointOffset = height; }</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordtype">void</span> SetRightControlPointOffset(<span class="keywordtype">int</span> height) { m_rightControlPointOffset = height; }</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordtype">int</span> GetLeftControlPointOffset()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_leftControlPointOffset; }</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordtype">int</span> GetRightControlPointOffset()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_rightControlPointOffset; }</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordtype">void</span> SetControlHeight(<span class="keywordtype">int</span> height) { m_leftControlHeight = m_rightControlHeight = height; }</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordtype">void</span> SetLeftControlHeight(<span class="keywordtype">int</span> height) { m_leftControlHeight = height; }</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordtype">void</span> SetRightControlHeight(<span class="keywordtype">int</span> height) { m_rightControlHeight = height; }</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordtype">int</span> GetLeftControlHeight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_leftControlHeight; }</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordtype">int</span> GetRightControlHeight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_rightControlHeight; }</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="comment">// Control point X-axis offset for both start/end points</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="comment">// In future, when more complex shapes are required, this should probably be changed to left/right offsets</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordtype">int</span> m_leftControlPointOffset = 0;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordtype">int</span> m_rightControlPointOffset = 0;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordtype">int</span> m_leftControlHeight = 0;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">int</span> m_rightControlHeight = 0;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="comment">// no copy ctor or assignment operator - the defaults are ok</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;};</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">// ---------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">// TextExtend</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">// ---------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00274"></a><span class="lineno"><a class="line" href="classvrv_1_1_text_extend.html">  274</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_text_extend.html">TextExtend</a> {</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordtype">int</span> m_width, m_height, m_leftBearing, m_ascent, m_descent, m_advX;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <a class="code" href="classvrv_1_1_text_extend.html">TextExtend</a>() : m_width(0), m_height(0), m_leftBearing(0), m_ascent(0), m_descent(0), m_advX(0) {}</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="comment">// no copy ctor or assignment operator - the defaults are ok</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;};</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor">#endif // __AX_DC_BASE_H__</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordtype">void</span> SetControlPointOffset(<span class="keywordtype">int</span> controlPointOffset)</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        m_leftControlPointOffset = m_rightControlPointOffset = controlPointOffset;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    };</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordtype">void</span> SetLeftControlPointOffset(<span class="keywordtype">int</span> height) { m_leftControlPointOffset = height; }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordtype">void</span> SetRightControlPointOffset(<span class="keywordtype">int</span> height) { m_rightControlPointOffset = height; }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordtype">int</span> GetLeftControlPointOffset()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_leftControlPointOffset; }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordtype">int</span> GetRightControlPointOffset()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_rightControlPointOffset; }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordtype">void</span> SetControlHeight(<span class="keywordtype">int</span> height) { m_leftControlHeight = m_rightControlHeight = height; }</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordtype">void</span> SetLeftControlHeight(<span class="keywordtype">int</span> height) { m_leftControlHeight = height; }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordtype">void</span> SetRightControlHeight(<span class="keywordtype">int</span> height) { m_rightControlHeight = height; }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordtype">int</span> GetLeftControlHeight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_leftControlHeight; }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordtype">int</span> GetRightControlHeight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_rightControlHeight; }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordtype">void</span> CalcInitialControlPointParams(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">float</span> angle, <span class="keywordtype">int</span> staffSize);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_bezier_curve.html#a5a8f7416aa473cbc44d67d0628d22e62">UpdateControlPointParams</a>(curvature_CURVEDIR dir);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordtype">void</span> UpdateControlPoints(curvature_CURVEDIR dir);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="comment">// Control point X-axis offset for both start/end points</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordtype">int</span> m_leftControlPointOffset = 0;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordtype">int</span> m_rightControlPointOffset = 0;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordtype">int</span> m_leftControlHeight = 0;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordtype">int</span> m_rightControlHeight = 0;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="comment">// no copy ctor or assignment operator - the defaults are ok</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;};</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment">// TextExtend</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno"><a class="line" href="classvrv_1_1_text_extend.html">  285</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_text_extend.html">TextExtend</a> {</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordtype">int</span> m_width, m_height, m_leftBearing, m_ascent, m_descent, m_advX;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <a class="code" href="classvrv_1_1_text_extend.html">TextExtend</a>() : m_width(0), m_height(0), m_leftBearing(0), m_ascent(0), m_descent(0), m_advX(0) {}</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="comment">// no copy ctor or assignment operator - the defaults are ok</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;};</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor">#endif // __AX_DC_BASE_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:39</div></div>
@@ -346,13 +349,14 @@ $(document).ready(function(){initNavTree('devicecontextbase_8h_source.html','');
 <div class="ttc" id="aclassvrv_1_1_font_info_html"><div class="ttname"><a href="classvrv_1_1_font_info.html">vrv::FontInfo</a></div><div class="ttdoc">This class is store font properties.</div><div class="ttdef"><b>Definition:</b> devicecontextbase.h:103</div></div>
 <div class="ttc" id="aclassvrv_1_1_bezier_curve_html"><div class="ttname"><a href="classvrv_1_1_bezier_curve.html">vrv::BezierCurve</a></div><div class="ttdoc">Simple class for representing bezier cCurve.</div><div class="ttdef"><b>Definition:</b> devicecontextbase.h:215</div></div>
 <div class="ttc" id="aclassvrv_1_1_brush_html"><div class="ttname"><a href="classvrv_1_1_brush.html">vrv::Brush</a></div><div class="ttdef"><b>Definition:</b> devicecontextbase.h:80</div></div>
+<div class="ttc" id="aclassvrv_1_1_bezier_curve_html_a5a8f7416aa473cbc44d67d0628d22e62"><div class="ttname"><a href="classvrv_1_1_bezier_curve.html#a5a8f7416aa473cbc44d67d0628d22e62">vrv::BezierCurve::UpdateControlPointParams</a></div><div class="ttdeci">void UpdateControlPointParams(curvature_CURVEDIR dir)</div><div class="ttdoc">Calculate control point offset and height from points or vice versa.</div></div>
 <div class="ttc" id="aclassvrv_1_1_point_html"><div class="ttname"><a href="classvrv_1_1_point.html">vrv::Point</a></div><div class="ttdoc">Simple class for representing points.</div><div class="ttdef"><b>Definition:</b> devicecontextbase.h:160</div></div>
-<div class="ttc" id="aclassvrv_1_1_text_extend_html"><div class="ttname"><a href="classvrv_1_1_text_extend.html">vrv::TextExtend</a></div><div class="ttdoc">Simple class for representing text extends.</div><div class="ttdef"><b>Definition:</b> devicecontextbase.h:274</div></div>
+<div class="ttc" id="aclassvrv_1_1_text_extend_html"><div class="ttname"><a href="classvrv_1_1_text_extend.html">vrv::TextExtend</a></div><div class="ttdoc">Simple class for representing text extends.</div><div class="ttdef"><b>Definition:</b> devicecontextbase.h:285</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>devicecontextbase.h</b></li>
-    <li class="footer">Generated on Mon Sep 27 2021 17:50:17 for Verovio by
+    <li class="footer">Generated on Tue Sep 28 2021 07:41:17 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

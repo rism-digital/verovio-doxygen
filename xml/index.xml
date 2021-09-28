@@ -221,7 +221,6 @@
     <member refid="classvrv_1_1_adjust_layers_params_1a1b9fe2939eb21b8a5e6ae6eafd435952" kind="function"><name>AdjustLayersParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_adjust_slurs_params" kind="class"><name>vrv::AdjustSlursParams</name>
-    <member refid="classvrv_1_1_adjust_slurs_params_1ac97b9f80eed8a09633d747cbbcefe066" kind="variable"><name>m_adjusted</name></member>
     <member refid="classvrv_1_1_adjust_slurs_params_1ab65ab97bbdf8f0bce23ee2da603df6fa" kind="variable"><name>m_crossStaffSlurs</name></member>
     <member refid="classvrv_1_1_adjust_slurs_params_1acb171d3235fd430cb920fcff56c703e1" kind="variable"><name>m_doc</name></member>
     <member refid="classvrv_1_1_adjust_slurs_params_1a9f297f31508839f545f9ccb17ac6781b" kind="variable"><name>m_functor</name></member>
@@ -829,7 +828,6 @@
     <member refid="classvrv_1_1_beat_rpt_1a46d10bc1d9d4d3fae07fc25b08621b10" kind="function"><name>GetBeatRptAlignmentDuration</name></member>
   </compound>
   <compound refid="classvrv_1_1_bezier_curve" kind="class"><name>vrv::BezierCurve</name>
-    <member refid="classvrv_1_1_bezier_curve_1ab8dad28fe081bf163a4c01701ed0b964" kind="function"><name>CalculateControlPointOffset</name></member>
     <member refid="classvrv_1_1_bezier_curve_1a9bd4a99100b28203a41a424d389193bc" kind="function"><name>SetControlPointOffset</name></member>
     <member refid="classvrv_1_1_bezier_curve_1acc8da461eae23bccc1147c5f3fd8477f" kind="function"><name>SetLeftControlPointOffset</name></member>
     <member refid="classvrv_1_1_bezier_curve_1a374e61483bbb25cde4a8254636b8ecad" kind="function"><name>SetRightControlPointOffset</name></member>
@@ -840,6 +838,9 @@
     <member refid="classvrv_1_1_bezier_curve_1af2143b1e47bb6bddb3e12e46bd9be5cc" kind="function"><name>SetRightControlHeight</name></member>
     <member refid="classvrv_1_1_bezier_curve_1a334a8be61161d3c6ab891b0d90bc8839" kind="function"><name>GetLeftControlHeight</name></member>
     <member refid="classvrv_1_1_bezier_curve_1a87307271d9f2cbd4e68ea8e6b7292e6a" kind="function"><name>GetRightControlHeight</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1adf4d62afd9f95e86acd1378b4461911d" kind="function"><name>CalcInitialControlPointParams</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1a5a8f7416aa473cbc44d67d0628d22e62" kind="function"><name>UpdateControlPointParams</name></member>
+    <member refid="classvrv_1_1_bezier_curve_1a2ab4318a121f9ed1650e2d2499894640" kind="function"><name>UpdateControlPoints</name></member>
     <member refid="classvrv_1_1_bezier_curve_1acd5517a36e7478dc0640b112c30523b2" kind="variable"><name>p1</name></member>
     <member refid="classvrv_1_1_bezier_curve_1a6670a4366facf2e5c3098fe10516835f" kind="variable"><name>c1</name></member>
     <member refid="classvrv_1_1_bezier_curve_1a494f05dfa2a38e46de956bdbcc6d7a64" kind="variable"><name>c2</name></member>
@@ -916,6 +917,7 @@
     <member refid="classvrv_1_1_bounding_box_1a3901a5e4a728b8f3450cce0e30f4bd29" kind="function"><name>ApproximateBezierExtrema</name></member>
     <member refid="classvrv_1_1_bounding_box_1a2658cb5ed914d5c435de4a3740bff2e7" kind="function"><name>CalcSlope</name></member>
     <member refid="classvrv_1_1_bounding_box_1a80465f84c7190f8cb0a9765693376be2" kind="function"><name>CalcPositionAfterRotation</name></member>
+    <member refid="classvrv_1_1_bounding_box_1af1fdd065b198aafe35dcc7e5a35477ee" kind="function"><name>CalcBezierParamAtPosition</name></member>
     <member refid="classvrv_1_1_bounding_box_1a91eb3e2ee9b00bc764283fe1710e199b" kind="function"><name>CalcBezierAtPosition</name></member>
     <member refid="classvrv_1_1_bounding_box_1af5401bb6040fe859bf6b7dc09c3c35b8" kind="function"><name>CalcLinearInterpolation</name></member>
     <member refid="classvrv_1_1_bounding_box_1acf2951ebea74c27b024916a4c96480a5" kind="function"><name>CalcPointAtBezier</name></member>
@@ -1183,6 +1185,11 @@
     <member refid="classvrv_1_1_control_element_1a6958cd8e98487b05df80adf872de0353" kind="function"><name>GetLayerPlace</name></member>
     <member refid="classvrv_1_1_control_element_1aea71378f75a3c731e87e23494a2b1acc" kind="function"><name>AdjustXOverflow</name></member>
     <member refid="classvrv_1_1_control_element_1ae06ab6dbac9fdbbf4efb3343e11ca91d" kind="function"><name>ResetDrawing</name></member>
+  </compound>
+  <compound refid="structvrv_1_1_control_point_constraint" kind="struct"><name>vrv::ControlPointConstraint</name>
+    <member refid="structvrv_1_1_control_point_constraint_1a84f062ff2c159b679a6ac0d5356b919a" kind="variable"><name>a</name></member>
+    <member refid="structvrv_1_1_control_point_constraint_1a9a6bae03bd6c110a3aaeae2a95a23e49" kind="variable"><name>b</name></member>
+    <member refid="structvrv_1_1_control_point_constraint_1acd18743a312ee12e7171bdcdedc5d5ce" kind="variable"><name>c</name></member>
   </compound>
   <compound refid="classvrv_1_1_convert_markup_analytical_params" kind="class"><name>vrv::ConvertMarkupAnalyticalParams</name>
     <member refid="classvrv_1_1_convert_markup_analytical_params_1a05e64d3178d204d27e4ff53a8b0e9241" kind="variable"><name>m_currentNotes</name></member>
@@ -1966,6 +1973,10 @@
     <member refid="classvrv_1_1_flag_1aa1a671e64dccc5fba4a12bc55a88c55a" kind="function"><name>ResetDrawing</name></member>
   </compound>
   <compound refid="classvrv_1_1_floating_curve_positioner" kind="class"><name>vrv::FloatingCurvePositioner</name>
+    <member refid="classvrv_1_1_floating_curve_positioner_1a27ca3bbbefe52d4b5951e3509e9b1483" kind="function"><name>UpdateCurveParams</name></member>
+    <member refid="classvrv_1_1_floating_curve_positioner_1a22ee3747f66c1d04e614ecd3504cd98a" kind="function"><name>UpdatePoints</name></member>
+    <member refid="classvrv_1_1_floating_curve_positioner_1ae59d41e4b80818f2a43206ed6ac41b5e" kind="function"><name>CalcAdjustment</name></member>
+    <member refid="classvrv_1_1_floating_curve_positioner_1a877dedf0b775fafcddaca949ee92d8af" kind="function"><name>CalcLeftRightAdjustment</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a47a0eae43c8c6149f17c343b0b1ab13a" kind="function"><name>GetPoints</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1ad7b1b6fb4395c622fb37d042f3e1bc91" kind="function"><name>GetAngle</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a8db594a5e3b74fb1f5931263c1a8241d" kind="function"><name>GetThickness</name></member>
@@ -1985,11 +1996,9 @@
     <member refid="classvrv_1_1_floating_curve_positioner_1adbce44f464adf557e8b485c68b6453f9" kind="function"><name>GetClassId</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1ae953487d8b8f20705350d90bbb1f6ed3" kind="function"><name>ResetPositioner</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a91f91d2639e931d321fae0dc47dd2f07" kind="function"><name>ResetCurveParams</name></member>
-    <member refid="classvrv_1_1_floating_curve_positioner_1a27ca3bbbefe52d4b5951e3509e9b1483" kind="function"><name>UpdateCurveParams</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1acabb8e7619f73abd41833951e65f0f59" kind="function"><name>MoveFrontVertical</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a66f7a86bcff0367ff5adf5567badb78d" kind="function"><name>MoveBackVertical</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a4e46a7462444bb57b0a67d7c4f06ff1d" kind="function"><name>CalcMinMaxY</name></member>
-    <member refid="classvrv_1_1_floating_curve_positioner_1ae59d41e4b80818f2a43206ed6ac41b5e" kind="function"><name>CalcAdjustment</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1acf6229982048e963f98e56b66074d33f" kind="function"><name>ClearSpannedElements</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a77060e0dbc69dc9a839497fba690acab" kind="function"><name>AddSpannedElement</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a7b1a4164c095fec32cb5fe488ce5a3fc" kind="function"><name>GetSpannedElements</name></member>
@@ -2035,7 +2044,7 @@
     <member refid="classvrv_1_1_floating_positioner_1a8d7e6ef43868940eae8b4f2d374f85ff" kind="function"><name>GetObjectX</name></member>
     <member refid="classvrv_1_1_floating_positioner_1a511ffadd2852a892fbdda97233ea15f9" kind="function"><name>GetObjectY</name></member>
     <member refid="classvrv_1_1_floating_positioner_1a7b6fbe7862b608feb1319eeccc0129fc" kind="function"><name>GetDrawingYRel</name></member>
-    <member refid="classvrv_1_1_floating_positioner_1a002454438057c1451a5e152e39304b57" kind="function"><name>SetDrawingYRel</name></member>
+    <member refid="classvrv_1_1_floating_positioner_1a6d2324321eb6fad1030f0b5f2a14d13e" kind="function"><name>SetDrawingYRel</name></member>
     <member refid="classvrv_1_1_floating_positioner_1ad0274e75f43e0d222ec91eb2ba78f85b" kind="function"><name>GetDrawingXRel</name></member>
     <member refid="classvrv_1_1_floating_positioner_1a52db3a09535f020728804c4b559403f3" kind="function"><name>SetDrawingXRel</name></member>
     <member refid="classvrv_1_1_floating_positioner_1a58f444967904b30c85e0885828e6b0ab" kind="variable"><name>m_objectX</name></member>
@@ -5411,15 +5420,19 @@
     <member refid="classvrv_1_1_slur_1afeaac42992c2985ff5dfd8fc4b58dc5b" kind="function"><name>GetDrawingCurvedir</name></member>
     <member refid="classvrv_1_1_slur_1abab16819ba64a14c2dd8ffeefdef696e" kind="function"><name>SetDrawingCurvedir</name></member>
     <member refid="classvrv_1_1_slur_1aebb2e1d5c4efce7392bdd0aaff627573" kind="function"><name>HasDrawingCurvedir</name></member>
+    <member refid="classvrv_1_1_slur_1ad020b6ee80fdcca7d42d66a1d67dd4eb" kind="function"><name>FilterSpannedElements</name></member>
+    <member refid="classvrv_1_1_slur_1acd646c36489e638579325d8c4748e4d0" kind="function"><name>CalcEndPointShift</name></member>
+    <member refid="classvrv_1_1_slur_1a652ca54f30e9b820c662bdacae0f426f" kind="function"><name>CalcControlPointOffset</name></member>
+    <member refid="classvrv_1_1_slur_1a3af1df4daa10611b33bc31e90444ba8c" kind="function"><name>CalcControlPointVerticalShift</name></member>
+    <member refid="classvrv_1_1_slur_1aaa5adc4929267ac385ff74823e165135" kind="function"><name>SolveControlPointConstraints</name></member>
+    <member refid="classvrv_1_1_slur_1a4d31a268f44b474f47091fc158b8b02d" kind="function"><name>AdjustSlurShape</name></member>
+    <member refid="classvrv_1_1_slur_1ad45f3a476ad832d9a0c5efc8c1973223" kind="function"><name>ShiftEndPoints</name></member>
+    <member refid="classvrv_1_1_slur_1a37ed6f07966aaec7b66d5abb76f1c417" kind="function"><name>RotateSlope</name></member>
     <member refid="classvrv_1_1_slur_1a3db8c8e9d8787cef6604211abdb075a9" kind="variable"><name>m_drawingCurvedir</name></member>
-    <member refid="classvrv_1_1_slur_1a4763f0c674829ba0888bb2428a6dac55" kind="function"><name>AdjustSlur</name></member>
-    <member refid="classvrv_1_1_slur_1acd02985e34874a7d955ed3c0f450ead8" kind="function"><name>AdjustSlurCurve</name></member>
-    <member refid="classvrv_1_1_slur_1ac2c3f626a16b9ce92bf0d9a2c0d816c3" kind="function"><name>AdjustSlurPosition</name></member>
-    <member refid="classvrv_1_1_slur_1a043f6c30f93c2e6b446a5f06744b50c2" kind="function"><name>CalculateAdjustedSlurShift</name></member>
-    <member refid="classvrv_1_1_slur_1ada4fc6e4d09380e5a9ccb91e3b00a5c1" kind="function"><name>GetAdjustedSlurAngle</name></member>
-    <member refid="classvrv_1_1_slur_1a789c62a7630c80e1daeec5a924887515" kind="function"><name>GetControlPoints</name></member>
-    <member refid="classvrv_1_1_slur_1a8efa4b34ec36ac60f7ee6992020c63e7" kind="function"><name>GetSpannedPointPositions</name></member>
+    <member refid="classvrv_1_1_slur_1a054686027f7672ea9c8d2789490a2e18" kind="function"><name>AdjustSlur</name></member>
+    <member refid="classvrv_1_1_slur_1af9f7ea0dd157317dfcbbcb787793726e" kind="function"><name>GetAdjustedSlurAngle</name></member>
     <member refid="classvrv_1_1_slur_1ab47be962fd8854013a1e7751140567c1" kind="function"><name>ResetDrawing</name></member>
+    <member refid="classvrv_1_1_slur_1acc9641b6bf8c0cd463a1466f291a0075" kind="function"><name>AdjustCrossStaffContent</name></member>
   </compound>
   <compound refid="classvrv_1_1_space" kind="class"><name>vrv::Space</name>
     <member refid="classvrv_1_1_space_1a44d9402bd745eb51ab7469a41a522447" kind="function"><name>Space</name></member>
