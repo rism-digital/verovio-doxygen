@@ -9,5 +9,7 @@ var classvrv_1_1_mdiv =
     [ "IsSupportedChild", "classvrv_1_1_mdiv.html#a8a4814991a589decdb5af38d6d07f556", null ],
     [ "MakeVisible", "classvrv_1_1_mdiv.html#aed76997a32ca68f9ca9f2c1dc614bca6", null ],
     [ "Reset", "classvrv_1_1_mdiv.html#a5c5020b2bc33951b1ef83c106b6a035f", null ],
+    [ "Save", "classvrv_1_1_mdiv.html#a4d897d454cccf1943b27470634f6ee49", null ],
+    [ "SaveEnd", "classvrv_1_1_mdiv.html#ada31f16e0c840497269417563b6e3528", null ],
     [ "m_visibility", "classvrv_1_1_mdiv.html#a2feff2dd52fe229fb3346921ef6610d9", null ]
 ];

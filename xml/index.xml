@@ -3138,6 +3138,8 @@
     <member refid="classvrv_1_1_mdiv_1a5c5020b2bc33951b1ef83c106b6a035f" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_mdiv_1a104654f21bd69ec37d12794e3c56ed96" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_mdiv_1a8a4814991a589decdb5af38d6d07f556" kind="function"><name>IsSupportedChild</name></member>
+    <member refid="classvrv_1_1_mdiv_1a4d897d454cccf1943b27470634f6ee49" kind="function"><name>Save</name></member>
+    <member refid="classvrv_1_1_mdiv_1ada31f16e0c840497269417563b6e3528" kind="function"><name>SaveEnd</name></member>
     <member refid="classvrv_1_1_mdiv_1a55edaee9d9962cd9291153c1a141f1d4" kind="function"><name>ConvertToPageBased</name></member>
     <member refid="classvrv_1_1_mdiv_1abd2c7d09e2788dac6d45b1fa501b7e18" kind="function"><name>ConvertToPageBasedEnd</name></member>
     <member refid="classvrv_1_1_mdiv_1a2feff2dd52fe229fb3346921ef6610d9" kind="variable"><name>m_visibility</name></member>
@@ -3491,6 +3493,10 @@
   <compound refid="classvrv_1_1_m_e_i_output" kind="class"><name>vrv::MEIOutput</name>
     <member refid="classvrv_1_1_m_e_i_output_1abcbfdbba42ecd1741b64a255ab505c84" kind="function"><name>MEIOutput</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a0fdf610034d25168589b7cb88729e205" kind="function"><name>~MEIOutput</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1ada785a9d7f36e7f2eb8e5d9b2e4bdba4" kind="function"><name>SetScoreBasedMEI</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1ab56053b83581735a44cde5ce33e05e22" kind="function"><name>GetScoreBasedMEI</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1a75e07d1c2588f004fcf9429b893f2dbe" kind="function"><name>IsScoreBasedMEI</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1ae4d7d30ebf3c00b9e30de9d48282329b" kind="function"><name>IsPageBasedMEI</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1aa673c000af3853b637c0dd6ededbe6c2" kind="function"><name>WriteMdiv</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1afb53289f6cda969b5c77742a79070993" kind="function"><name>WritePages</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a0465c4d548b8ddd92010c02b72779e0c" kind="function"><name>WriteScore</name></member>
@@ -3647,7 +3653,7 @@
     <member refid="classvrv_1_1_m_e_i_output_1a411c82a8c15e23378a0088111548faff" kind="function"><name>WriteObject</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a65f7704c66919e1c03c486505d4d25f4" kind="function"><name>WriteObjectEnd</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1ac42d95b55efe169cd73773767193d962" kind="function"><name>GetOutput</name></member>
-    <member refid="classvrv_1_1_m_e_i_output_1ada785a9d7f36e7f2eb8e5d9b2e4bdba4" kind="function"><name>SetScoreBasedMEI</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1a880930cb780b9f0f85ad710c7d9c6e7e" kind="function"><name>IsSavingSinglePage</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a4633a24c057d8a068a514c9efcccdb1a" kind="function"><name>SetIndent</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a2ecd99315ccb1bac894cca2dc4dfa6ec" kind="function"><name>SetRemoveIds</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a19398f1caaa5c03d5f610ca5c6e1d361" kind="function"><name>WriteDoc</name></member>
@@ -4136,6 +4142,8 @@
     <member refid="classvrv_1_1_object_1acfa149d616638b3935e56e1ee41ce61a" kind="function"><name>AdjustCrossStaffContent</name></member>
     <member refid="classvrv_1_1_object_1a15c5f866aed95ea5c5b051c5c7e47137" kind="function"><name>CastOffSystems</name></member>
     <member refid="classvrv_1_1_object_1aee6f8abfde8d2fe26b067f97b6ba9f0b" kind="function"><name>CastOffSystemsEnd</name></member>
+    <member refid="classvrv_1_1_object_1af4bdf6d63a5fbf43a21a5c18d3c49a10" kind="function"><name>CastOffPages</name></member>
+    <member refid="classvrv_1_1_object_1ad2a435d1dd9a270785fca7cab265adba" kind="function"><name>CastOffPagesEnd</name></member>
     <member refid="classvrv_1_1_object_1a1e1336770fd1b687628ef53b207d29f2" kind="function"><name>CalcOnsetOffset</name></member>
     <member refid="classvrv_1_1_object_1ae8d2bbd8c168fd6904c864f297b3deeb" kind="function"><name>CalcOnsetOffsetEnd</name></member>
     <member refid="classvrv_1_1_object_1a93b5fe054b2d26fe91ff50a5861fe08c" kind="function"><name>ResolveMIDITies</name></member>
@@ -4277,7 +4285,6 @@
     <member refid="classvrv_1_1_object_1a69ad18810d5249e8bb56be54884d2b50" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_object_1a973a6ee5f5504cfdad58a940a95c313e" kind="function"><name>ResolveRehPosition</name></member>
     <member refid="classvrv_1_1_object_1a3d26e4876ee5a38e4c01fae4af747c23" kind="function"><name>GetRelativeLayerElement</name></member>
-    <member refid="classvrv_1_1_object_1af4bdf6d63a5fbf43a21a5c18d3c49a10" kind="function"><name>CastOffPages</name></member>
     <member refid="classvrv_1_1_object_1ae1320bf0b5a56f033dcc561147225ba7" kind="function"><name>CastOffEncoding</name></member>
     <member refid="classvrv_1_1_object_1a84120019fd68f6d7015f6765d7114a7b" kind="function"><name>UnCastOff</name></member>
     <member refid="classvrv_1_1_object_1ade83951cbefb443049938380b46df228" kind="function"><name>CalcMaxMeasureDuration</name></member>

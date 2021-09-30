@@ -1036,8 +1036,8 @@
         <reimplementedby refid="classvrv_1_1_system_element_1a40e18f5218b411bfe4caf158138b97e2">ConvertToPageBased</reimplementedby>
         <reimplementedby refid="classvrv_1_1_section_1acdd7e18394d27f6b6772e54906db980c">ConvertToPageBased</reimplementedby>
         <reimplementedby refid="classvrv_1_1_ending_1ad02f22cea7a4925749540248da475e26">ConvertToPageBased</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_mdiv_1a55edaee9d9962cd9291153c1a141f1d4">ConvertToPageBased</reimplementedby>
         <reimplementedby refid="classvrv_1_1_editorial_element_1a2c4de467927781e48d6c968d2d8bdf3e">ConvertToPageBased</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_mdiv_1a55edaee9d9962cd9291153c1a141f1d4">ConvertToPageBased</reimplementedby>
         <reimplementedby refid="classvrv_1_1_score_1a22d16c762f0cd756f0931d7e423a2d6e">ConvertToPageBased</reimplementedby>
         <reimplementedby refid="classvrv_1_1_score_def_1a682908fdfabf7d58172278157d910e22">ConvertToPageBased</reimplementedby>
         <reimplementedby refid="classvrv_1_1_measure_1ad7f854dba4cbe22e81661f7acf10e56c">ConvertToPageBased</reimplementedby>
@@ -1060,8 +1060,8 @@
         <name>ConvertToPageBasedEnd</name>
         <reimplementedby refid="classvrv_1_1_section_1aad5c117f568a40b961f32149ec187661">ConvertToPageBasedEnd</reimplementedby>
         <reimplementedby refid="classvrv_1_1_ending_1a9dcb8acc92d09f15876bbd170ea5b026">ConvertToPageBasedEnd</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_mdiv_1abd2c7d09e2788dac6d45b1fa501b7e18">ConvertToPageBasedEnd</reimplementedby>
         <reimplementedby refid="classvrv_1_1_editorial_element_1aba5490648183a9e5b757f43b0bebd445">ConvertToPageBasedEnd</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_mdiv_1abd2c7d09e2788dac6d45b1fa501b7e18">ConvertToPageBasedEnd</reimplementedby>
         <reimplementedby refid="classvrv_1_1_score_1ab5c021aca6b816f9bc4e99559895935e">ConvertToPageBasedEnd</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
@@ -1212,6 +1212,7 @@
         <reimplementedby refid="classvrv_1_1_tuplet_bracket_1ab4989f09c8e7b778808e713aecb2c991">Save</reimplementedby>
         <reimplementedby refid="classvrv_1_1_tuplet_num_1a40de91808c7743a5b9c8383f1aea32dd">Save</reimplementedby>
         <reimplementedby refid="classvrv_1_1_stem_1a85e737a4827ede4cc5621048db5f0b8e">Save</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_mdiv_1a4d897d454cccf1943b27470634f6ee49">Save</reimplementedby>
         <reimplementedby refid="classvrv_1_1_m_num_1a00abba36e85227ee915fb9f8bde32f68">Save</reimplementedby>
         <reimplementedby refid="classvrv_1_1_running_element_1a3d92ee04ae6d9d496dd678aff7a90c71">Save</reimplementedby>
         <reimplementedby refid="classvrv_1_1_measure_1a53146c5860c0e95b6510108dbc5493d8">Save</reimplementedby>
@@ -1238,6 +1239,7 @@
         <reimplementedby refid="classvrv_1_1_tuplet_bracket_1a437d58d44cad85d3e4a75ffd5dde1cb5">SaveEnd</reimplementedby>
         <reimplementedby refid="classvrv_1_1_tuplet_num_1a575b3cf982c10899855aad041c7acd6f">SaveEnd</reimplementedby>
         <reimplementedby refid="classvrv_1_1_stem_1a1fce85e741b0c8266c25c4ad09b6553a">SaveEnd</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_mdiv_1ada31f16e0c840497269417563b6e3528">SaveEnd</reimplementedby>
         <reimplementedby refid="classvrv_1_1_m_num_1a422110e5b3cb160b43038ef48b681f86">SaveEnd</reimplementedby>
         <reimplementedby refid="classvrv_1_1_running_element_1a8a84599f9400c228af119dcb7c5c22a1">SaveEnd</reimplementedby>
         <reimplementedby refid="classvrv_1_1_measure_1af731c117b6225ac76b540a9946a7a105">SaveEnd</reimplementedby>
@@ -2427,7 +2429,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <header>Functors for calculating the layout of a document.</header>
+      <header>Fill a page by adding systems with the appropriate length.</header>
+      <description><para>At the end, add all the pending objects where reaching the end </para>
+</description>
       <memberdef kind="function" id="classvrv_1_1_object_1a15c5f866aed95ea5c5b051c5c7e47137" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>int</type>
         <definition>virtual int vrv::Object::CastOffSystems</definition>
@@ -2447,10 +2451,8 @@
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
         </param>
         <briefdescription>
-<para>Fill a page by adding systems with the appropriate length. </para>
         </briefdescription>
         <detaileddescription>
-<para>At the end, add all the pending objects where reaching the end </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -2475,6 +2477,46 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
+      <header>Fill a doc by adding pages with the appropriate length.</header>
+      <memberdef kind="function" id="classvrv_1_1_object_1af4bdf6d63a5fbf43a21a5c18d3c49a10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int vrv::Object::CastOffPages</definition>
+        <argsstring>(FunctorParams *)</argsstring>
+        <name>CastOffPages</name>
+        <reimplementedby refid="classvrv_1_1_page_element_1aadee26d6d2f72a9175b4775b325c2c77">CastOffPages</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_page_element_end_1a061d92a9e87f0610a5b44184ea1d32c5">CastOffPages</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_score_1a90c8ae85fe22cf05d83431c4d8608a7a">CastOffPages</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_system_1a0a1d6d1610b618fb1879e991c46b49c9">CastOffPages</reimplementedby>
+        <param>
+          <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1199" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1199" bodyend="1199"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_object_1ad2a435d1dd9a270785fca7cab265adba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int vrv::Object::CastOffPagesEnd</definition>
+        <argsstring>(FunctorParams *)</argsstring>
+        <name>CastOffPagesEnd</name>
+        <reimplementedby refid="classvrv_1_1_page_1aa346bfd165c083ca7e6488bad752d1d3">CastOffPagesEnd</reimplementedby>
+        <param>
+          <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1200" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1200" bodyend="1200"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
       <header>Functors for generating MIDI output.</header>
       <memberdef kind="function" id="classvrv_1_1_object_1a1e1336770fd1b687628ef53b207d29f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>int</type>
@@ -2495,7 +2537,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1222" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1222" bodyend="1222"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1225" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1225" bodyend="1225"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_object_1ae8d2bbd8c168fd6904c864f297b3deeb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>int</type>
@@ -2512,7 +2554,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1223" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1223" bodyend="1223"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1226" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1226" bodyend="1226"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -2533,7 +2575,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1230" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1230" bodyend="1230"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1233" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1233" bodyend="1233"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -2562,7 +2604,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1237" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1237" bodyend="1237"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1240" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1240" bodyend="1240"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -2584,7 +2626,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1244" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1244" bodyend="1244"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1247" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1247" bodyend="1247"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -2604,7 +2646,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1251" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1254" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -2620,7 +2662,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1316" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1316" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1319" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1319" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_object_1aa74938be8fa107675351cb68fa795878" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -2633,7 +2675,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1317" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1317" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1320" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1320" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -2650,7 +2692,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1340" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1340" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1343" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1343" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_object_1a78cfd4b7fb317a899662ffa890500766" prot="private" static="no" mutable="no">
         <type>ArrayOfObjects::iterator</type>
@@ -2663,7 +2705,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1340" column="44" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1340" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1343" column="44" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1343" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_object_1a67b5776a98fe63578a3c17868e72de59" prot="private" static="no" mutable="no">
         <type>ClassId</type>
@@ -2676,7 +2718,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1341" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1341" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1344" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1344" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-type">
@@ -2710,7 +2752,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1291" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1291" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1294" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1294" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -2727,7 +2769,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1300" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1300" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1303" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1303" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_object_1ae64179a13e2edae80b712cc726867ad4" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
@@ -2741,7 +2783,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1305" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1305" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1308" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1308" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_object_1a17efeb57425670cb172b9061a7aebde4" prot="private" static="no" mutable="no">
         <type>ClassId</type>
@@ -2755,7 +2797,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1310" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1310" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1313" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1313" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_object_1aaaab3c4888b5cf47362c260a0829aca4" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -2770,7 +2812,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1324" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1324" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1327" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1327" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_object_1a49f9e52d30df777fc8eb8cdbdfb7c7e9" prot="private" static="no" mutable="yes">
         <type>bool</type>
@@ -2785,7 +2827,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1332" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1332" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1335" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1335" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_object_1aa864e5826f181dfc783aa98517152e32" prot="private" static="no" mutable="no">
         <type>std::vector&lt; AttClassId &gt;</type>
@@ -2799,7 +2841,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1347" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1347" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1350" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1350" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_object_1a2d2e5ea3946a8673faa67d08cf0acee2" prot="private" static="no" mutable="no">
         <type>std::vector&lt; InterfaceId &gt;</type>
@@ -2813,7 +2855,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1352" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1352" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1355" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1355" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_object_1a0426badbb9f00a508881a1862274715c" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -2828,7 +2870,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1359" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1359" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1362" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1362" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_object_1a9a1effd7a4cf9a0017d665726d2a1fed" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -2841,7 +2883,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1360" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1360" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1363" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1363" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_object_1af06d35e8d5895822a03500585aa7f31a" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -2856,7 +2898,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1367" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1367" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1370" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1370" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_object_1a1514c6c11754e70d2f1718049ed319e5" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -2870,7 +2912,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1372" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1372" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1375" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1375" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-attrib">
@@ -2886,7 +2928,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1381" column="39" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1381" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1384" column="39" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1384" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -5504,26 +5546,6 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1155" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1155" bodyend="1155"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_object_1af4bdf6d63a5fbf43a21a5c18d3c49a10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>int</type>
-        <definition>virtual int vrv::Object::CastOffPages</definition>
-        <argsstring>(FunctorParams *)</argsstring>
-        <name>CastOffPages</name>
-        <reimplementedby refid="classvrv_1_1_page_element_1aadee26d6d2f72a9175b4775b325c2c77">CastOffPages</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_page_element_end_1a061d92a9e87f0610a5b44184ea1d32c5">CastOffPages</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_score_1a90c8ae85fe22cf05d83431c4d8608a7a">CastOffPages</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_system_1a0a1d6d1610b618fb1879e991c46b49c9">CastOffPages</reimplementedby>
-        <param>
-          <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1198" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1198" bodyend="1198"/>
-      </memberdef>
       <memberdef kind="function" id="classvrv_1_1_object_1ae1320bf0b5a56f033dcc561147225ba7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>int</type>
         <definition>virtual int vrv::Object::CastOffEncoding</definition>
@@ -5549,7 +5571,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1203" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1203" bodyend="1203"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1206" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1206" bodyend="1206"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_object_1a84120019fd68f6d7015f6765d7114a7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>int</type>
@@ -5572,7 +5594,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1209" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1209" bodyend="1209"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1212" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1212" bodyend="1212"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_object_1ade83951cbefb443049938380b46df228" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>int</type>
@@ -5590,7 +5612,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1257" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1257" bodyend="1257"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1260" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1260" bodyend="1260"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_object_1a4a7cd0786cfd3119a6dd128c25b67a33" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -5607,7 +5629,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1264" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1267" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_object_1ae1a47a27a677aa68ba14e324b0a17e00" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -5623,7 +5645,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1266" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1269" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_object_1a7c792936ed7e04d00172c7b0017b85a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -5639,7 +5661,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1268" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1271" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_object_1a0ee02f42628df9898a57349899c1ba3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>int</type>
@@ -5660,7 +5682,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1273" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1273" bodyend="1273"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1276" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1276" bodyend="1276"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -5730,7 +5752,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1279" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1282" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_object_1a7960b65741be7a1c50a8deff2dc14afb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5752,7 +5774,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1284" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1287" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -6654,7 +6676,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="54" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="54" bodyend="1382"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="54" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="54" bodyend="1385"/>
     <listofallmembers>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::Object</scope><name>AddChild</name></member>
       <member refid="classvrv_1_1_object_1a1af968d5140f79fd056aa5a46d7cad11" prot="public" virt="virtual"><scope>vrv::Object</scope><name>AddLayerElementToFlatList</name></member>
@@ -6727,6 +6749,7 @@
       <member refid="classvrv_1_1_bounding_box_1ae087d56d7ff270c908e3a723be01f6e7" prot="public" virt="non-virtual"><scope>vrv::Object</scope><name>CalcThickBezier</name></member>
       <member refid="classvrv_1_1_object_1ae1320bf0b5a56f033dcc561147225ba7" prot="public" virt="virtual"><scope>vrv::Object</scope><name>CastOffEncoding</name></member>
       <member refid="classvrv_1_1_object_1af4bdf6d63a5fbf43a21a5c18d3c49a10" prot="public" virt="virtual"><scope>vrv::Object</scope><name>CastOffPages</name></member>
+      <member refid="classvrv_1_1_object_1ad2a435d1dd9a270785fca7cab265adba" prot="public" virt="virtual"><scope>vrv::Object</scope><name>CastOffPagesEnd</name></member>
       <member refid="classvrv_1_1_object_1a15c5f866aed95ea5c5b051c5c7e47137" prot="public" virt="virtual"><scope>vrv::Object</scope><name>CastOffSystems</name></member>
       <member refid="classvrv_1_1_object_1aee6f8abfde8d2fe26b067f97b6ba9f0b" prot="public" virt="virtual"><scope>vrv::Object</scope><name>CastOffSystemsEnd</name></member>
       <member refid="classvrv_1_1_object_1a0af864d1b64a70d4ec8b62a520114bde" prot="public" virt="non-virtual"><scope>vrv::Object</scope><name>ClearChildren</name></member>

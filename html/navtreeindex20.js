@@ -1,5 +1,12 @@
 var NAVTREEINDEX20 =
 {
+"classvrv_1_1_view.html#a4c150fc51a54dfc1cb83a0ee4f590f87":[1,0,0,337,131],
+"classvrv_1_1_view.html#a4cad4e627eaa84b4567adefa6983045e":[1,0,0,337,134],
+"classvrv_1_1_view.html#a4d6494db9a0b808907982e79fce1a566":[1,0,0,337,179],
+"classvrv_1_1_view.html#a4de06c0e43482a358b9ca232d095e689":[1,0,0,337,43],
+"classvrv_1_1_view.html#a5012b077ef799dbbc711144b6c15eea9":[1,0,0,337,199],
+"classvrv_1_1_view.html#a5088a2cb8271699acd882696663bd4f6":[1,0,0,337,89],
+"classvrv_1_1_view.html#a50d694df0190a4ee7c920395cc5d6113":[1,0,0,337,150],
 "classvrv_1_1_view.html#a5442d39b30587eeea850cef2b4601ca7":[1,0,0,337,35],
 "classvrv_1_1_view.html#a558ddfe856c5aa32afe8bc9e61d9a9a9":[1,0,0,337,135],
 "classvrv_1_1_view.html#a56da13bc73f007bf819c4d11a99af67d":[1,0,0,337,152],
@@ -242,12 +249,5 @@ var NAVTREEINDEX20 =
 "dynam_8h_source.html":[2,0,38],
 "editorial_8h_source.html":[2,0,39],
 "editortoolkit_8h_source.html":[2,0,40],
-"editortoolkit__cmn_8h_source.html":[2,0,41],
-"editortoolkit__mensural_8h_source.html":[2,0,42],
-"editortoolkit__neume_8h_source.html":[2,0,43],
-"elementpart_8h_source.html":[2,0,44],
-"ending_8h_source.html":[2,0,45],
-"expan_8h_source.html":[2,0,46],
-"expansion_8h_source.html":[2,0,47],
-"expansionmap_8h_source.html":[2,0,48]
+"editortoolkit__cmn_8h_source.html":[2,0,41]
 };

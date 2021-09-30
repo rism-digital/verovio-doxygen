@@ -65,6 +65,7 @@ var classvrv_1_1_object =
     [ "CalcStem", "classvrv_1_1_object.html#a0b93f8b6e02c8ba98a03db67fe5d5d10", null ],
     [ "CastOffEncoding", "classvrv_1_1_object.html#ae1320bf0b5a56f033dcc561147225ba7", null ],
     [ "CastOffPages", "classvrv_1_1_object.html#af4bdf6d63a5fbf43a21a5c18d3c49a10", null ],
+    [ "CastOffPagesEnd", "classvrv_1_1_object.html#ad2a435d1dd9a270785fca7cab265adba", null ],
     [ "CastOffSystems", "classvrv_1_1_object.html#a15c5f866aed95ea5c5b051c5c7e47137", null ],
     [ "CastOffSystemsEnd", "classvrv_1_1_object.html#aee6f8abfde8d2fe26b067f97b6ba9f0b", null ],
     [ "ClearChildren", "classvrv_1_1_object.html#a0af864d1b64a70d4ec8b62a520114bde", null ],
