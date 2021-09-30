@@ -1055,6 +1055,7 @@ var hierarchy =
     [ "vrv::Pen", "classvrv_1_1_pen.html", null ],
     [ "vrv::Point", "classvrv_1_1_point.html", null ],
     [ "vrv::Resources", "classvrv_1_1_resources.html", null ],
+    [ "vrv::RuntimeClock", "classvrv_1_1_runtime_clock.html", null ],
     [ "vrv::SegmentedLine", "classvrv_1_1_segmented_line.html", null ],
     [ "vrv::StaffDefDrawingInterface", "classvrv_1_1_staff_def_drawing_interface.html", [
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]

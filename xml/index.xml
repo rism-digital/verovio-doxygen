@@ -4548,6 +4548,7 @@
     <member refid="classvrv_1_1_options_1a21dc68c68d9ac04aeaa00a0a0456f9fe" kind="variable"><name>m_pedalStyle</name></member>
     <member refid="classvrv_1_1_options_1a68f639357c0a5e439e81bad3a2e07f09" kind="variable"><name>m_preserveAnalyticalMarkup</name></member>
     <member refid="classvrv_1_1_options_1a90c42c497b2adcd4486a8db5f8a3dc8b" kind="variable"><name>m_removeIds</name></member>
+    <member refid="classvrv_1_1_options_1afceec4fdb9cfd908bd3f27994e3bb027" kind="variable"><name>m_showRuntime</name></member>
     <member refid="classvrv_1_1_options_1a26335379e5d001bcf4014f3d9b25eb60" kind="variable"><name>m_shrinkToFit</name></member>
     <member refid="classvrv_1_1_options_1a7ef932575dd77e6100fb40d8f536a82a" kind="variable"><name>m_staccatoCenter</name></member>
     <member refid="classvrv_1_1_options_1a533ba481ca7a089c930e8bf427941e88" kind="variable"><name>m_svgBoundingBoxes</name></member>
@@ -5214,6 +5215,12 @@
     <member refid="classvrv_1_1_running_element_1ad54c3f73d54d0d5b51eb993d7c0dd80d" kind="function"><name>AddPageNum</name></member>
     <member refid="classvrv_1_1_running_element_1a81aa6ccde5bfd9863e28b097a667370c" kind="function"><name>FilterList</name></member>
     <member refid="classvrv_1_1_running_element_1abd677b683ce80d41265e1a0581c9b377" kind="function"><name>GetAlignmentPos</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_runtime_clock" kind="class"><name>vrv::RuntimeClock</name>
+    <member refid="classvrv_1_1_runtime_clock_1a8c6365bbafa39e7273d529a7c9d062dc" kind="function"><name>RuntimeClock</name></member>
+    <member refid="classvrv_1_1_runtime_clock_1ab6603e4a33aeb36f7580adb50d8f9659" kind="variable"><name>m_start</name></member>
+    <member refid="classvrv_1_1_runtime_clock_1a10e34de3652b3c9afbb6a5ce4b4cd469" kind="function"><name>Reset</name></member>
+    <member refid="classvrv_1_1_runtime_clock_1a434391b93ba7dadaac053fa7c25c4700" kind="function"><name>GetSeconds</name></member>
   </compound>
   <compound refid="classvrv_1_1_save_params" kind="class"><name>vrv::SaveParams</name>
     <member refid="classvrv_1_1_save_params_1a0003e2377d8fa7c6907cb90dc28be440" kind="variable"><name>m_output</name></member>
@@ -6223,6 +6230,10 @@
     <member refid="group__nodoc_1ga5b3b3c80844a342a465d4887bb599ae0" kind="function"><name>SetInputFrom</name></member>
     <member refid="group__nodoc_1gac0b9bfca70ab200ca3e313611e37cc20" kind="function"><name>GetInputFrom</name></member>
     <member refid="group__nodoc_1ga602e2e1f79bb73affe064cb9ba7a4f5a" kind="function"><name>GetOutputTo</name></member>
+    <member refid="group__nodoc_1ga3eb22488f8037f75c5d950271e0d9ad3" kind="function"><name>InitClock</name></member>
+    <member refid="group__nodoc_1ga4dc4ddc728a00b02e5bacac33e1769e2" kind="function"><name>ResetClock</name></member>
+    <member refid="group__nodoc_1gaff331abcba4d70c7e6ecc17d08df382c" kind="function"><name>GetRuntimeInSeconds</name></member>
+    <member refid="group__nodoc_1gabd5f684704d8e4736ea416e43cdc5827" kind="function"><name>LogRuntime</name></member>
     <member refid="classvrv_1_1_toolkit_1a5e0a77331e07aefa6f9471a1bc34f185" kind="variable"><name>m_doc</name></member>
     <member refid="classvrv_1_1_toolkit_1a41a694f23fc26f10b27c56dccf0cec68" kind="variable"><name>m_view</name></member>
     <member refid="classvrv_1_1_toolkit_1a4c0d66ae08c2a5e24af9e0ac137f3433" kind="variable"><name>m_inputFrom</name></member>
@@ -6230,6 +6241,7 @@
     <member refid="classvrv_1_1_toolkit_1a8f5060c2fec413147a6bde2fcd672565" kind="variable"><name>m_options</name></member>
     <member refid="classvrv_1_1_toolkit_1ac0bd285a5155dd9737032d26edba729d" kind="variable"><name>m_cString</name></member>
     <member refid="classvrv_1_1_toolkit_1a27512885b4cd196fd47cc4430fffeb76" kind="variable"><name>m_editorToolkit</name></member>
+    <member refid="classvrv_1_1_toolkit_1a95517ce80380b990a5e37c8e5bde8018" kind="variable"><name>m_runtimeClock</name></member>
     <member refid="classvrv_1_1_toolkit_1af139b70cab7a8189edeec53a0093e93d" kind="variable"><name>m_humdrumBuffer</name></member>
     <member refid="classvrv_1_1_toolkit_1a05feed813407bca32d82d34319f5185a" kind="function"><name>IdentifyInputFrom</name></member>
     <member refid="classvrv_1_1_toolkit_1a9621011e0b28c573d62c5412a8c886ec" kind="function"><name>ResetLogBuffer</name></member>
@@ -8027,6 +8039,8 @@
   </compound>
   <compound refid="runningelement_8h" kind="file"><name>runningelement.h</name>
   </compound>
+  <compound refid="runtimeclock_8h" kind="file"><name>runtimeclock.h</name>
+  </compound>
   <compound refid="sb_8h" kind="file"><name>sb.h</name>
   </compound>
   <compound refid="score_8h" kind="file"><name>score.h</name>
@@ -8164,6 +8178,10 @@
     <member refid="group__nodoc_1ga5b3b3c80844a342a465d4887bb599ae0" kind="function"><name>SetInputFrom</name></member>
     <member refid="group__nodoc_1gac0b9bfca70ab200ca3e313611e37cc20" kind="function"><name>GetInputFrom</name></member>
     <member refid="group__nodoc_1ga602e2e1f79bb73affe064cb9ba7a4f5a" kind="function"><name>GetOutputTo</name></member>
+    <member refid="group__nodoc_1ga3eb22488f8037f75c5d950271e0d9ad3" kind="function"><name>InitClock</name></member>
+    <member refid="group__nodoc_1ga4dc4ddc728a00b02e5bacac33e1769e2" kind="function"><name>ResetClock</name></member>
+    <member refid="group__nodoc_1gaff331abcba4d70c7e6ecc17d08df382c" kind="function"><name>GetRuntimeInSeconds</name></member>
+    <member refid="group__nodoc_1gabd5f684704d8e4736ea416e43cdc5827" kind="function"><name>LogRuntime</name></member>
   </compound>
   <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
   </compound>

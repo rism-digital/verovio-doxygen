@@ -141,6 +141,7 @@ var classvrv_1_1_options =
     [ "m_rightMarginTabDurSym", "classvrv_1_1_options.html#a7c7ec1fc3fcf91210b81a7daec14deb9", null ],
     [ "m_scale", "classvrv_1_1_options.html#a0803ac5fc1a56fea47ba279ae760f71f", null ],
     [ "m_selectors", "classvrv_1_1_options.html#ad197649417d09e309b4e38f26fa8c21a", null ],
+    [ "m_showRuntime", "classvrv_1_1_options.html#afceec4fdb9cfd908bd3f27994e3bb027", null ],
     [ "m_shrinkToFit", "classvrv_1_1_options.html#a26335379e5d001bcf4014f3d9b25eb60", null ],
     [ "m_slurControlPoints", "classvrv_1_1_options.html#aa92cbe7ceabdd6210e6ae066176a28e8", null ],
     [ "m_slurCurveFactor", "classvrv_1_1_options.html#a514004f22db6cd842d6a38bce4e184ac", null ],

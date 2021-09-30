@@ -269,6 +269,7 @@ var annotated_dup =
       [ "Rest", "classvrv_1_1_rest.html", "classvrv_1_1_rest" ],
       [ "Restore", "classvrv_1_1_restore.html", "classvrv_1_1_restore" ],
       [ "RunningElement", "classvrv_1_1_running_element.html", "classvrv_1_1_running_element" ],
+      [ "RuntimeClock", "classvrv_1_1_runtime_clock.html", "classvrv_1_1_runtime_clock" ],
       [ "SaveParams", "classvrv_1_1_save_params.html", "classvrv_1_1_save_params" ],
       [ "Sb", "classvrv_1_1_sb.html", "classvrv_1_1_sb" ],
       [ "Score", "classvrv_1_1_score.html", "classvrv_1_1_score" ],
