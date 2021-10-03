@@ -53,19 +53,19 @@ var NAVTREEINDEX =
 "classvrv_1_1_find_all_by_comparison_params.html#aede145810d54d341a460120fc1b7acf3",
 "classvrv_1_1_grp_sym.html#a81b289aff852ac04b2b8cc2e6e096c97",
 "classvrv_1_1_humdrum_input.html#a948ce102b004e614967ad72823d1b9c7",
-"classvrv_1_1_key_sig.html#a1cee69880edc205bf3e1627e99072cdd",
-"classvrv_1_1_lv.html#a3942342b89a08e75e2059e550b47d02e",
-"classvrv_1_1_multi_rest.html#a17707f93b4172945ae25d805f5b09ffc",
-"classvrv_1_1_object.html#a8aaf88c9ab32e7cc92a6d39189031caa",
-"classvrv_1_1_option_int_map.html#ae128d67c5d39e30b475ff71434a37458",
-"classvrv_1_1_page.html#a01e27bb8082d59453406dd7848a8d1b2",
-"classvrv_1_1_prepare_pointers_by_layer_params.html#a77405b331bc5e94a8094ad26e5ac6920",
-"classvrv_1_1_score_def_set_current_params.html#a20a1be1b03107e50525a5814ecbc6ef2",
-"classvrv_1_1_stem.html#a1fce85e741b0c8266c25c4ad09b6553a",
-"classvrv_1_1_system_element.html#aa7a18d72a6a41165b2025a441789076b",
-"classvrv_1_1_trans_pitch.html#ae58a8d67e3eab12e4e833bac8d9998b2",
-"classvrv_1_1_view.html#a44e0a55904272dff67142ea68937b6b8",
-"durationinterface_8h_source.html"
+"classvrv_1_1_key_sig.html#a02524e3562b11cd590f785d9e957143f",
+"classvrv_1_1_lv.html#a1dafa1818a5b90687a08fe2973dbd8d6",
+"classvrv_1_1_multi_rest.html",
+"classvrv_1_1_object.html#a889936363e6eb4b03172c86219c275fc",
+"classvrv_1_1_option_int_map.html#ae0ade1a0dcbe2a8ef9139f9fbde23865",
+"classvrv_1_1_page.html",
+"classvrv_1_1_prepare_pointers_by_layer_params.html#a46f005825c8b23a6c2df252301c7f466",
+"classvrv_1_1_score_def_set_current_params.html#a1457712111e268c82c59fb9c359a7a23",
+"classvrv_1_1_stem.html#a1e28dcfc4fc249320e82f62a8ab24af0",
+"classvrv_1_1_system_element.html#a8bde0f7535211864ea3d298c32ff1ab2",
+"classvrv_1_1_trans_pitch.html#ae4866fb25859217c5009eefc72f3a4c8",
+"classvrv_1_1_view.html#a424a26bcf7b2d53fed9446f4d3231581",
+"drawinginterface_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

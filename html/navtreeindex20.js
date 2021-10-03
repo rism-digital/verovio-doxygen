@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"classvrv_1_1_view.html#a424a26bcf7b2d53fed9446f4d3231581":[1,0,0,338,186],
 "classvrv_1_1_view.html#a44e0a55904272dff67142ea68937b6b8":[1,0,0,338,136],
 "classvrv_1_1_view.html#a467521c9dfcfa1f3963a0fd6cba5f1b6":[1,0,0,338,101],
 "classvrv_1_1_view.html#a46cc2f53f9476d25cc85c2cbede0a1a8":[1,0,0,338,95],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "devicecontextbase_8h_source.html":[2,0,32],
 "dir_8h_source.html":[2,0,33],
 "doc_8h_source.html":[2,0,34],
-"dot_8h_source.html":[2,0,35],
-"drawinginterface_8h_source.html":[2,0,36]
+"dot_8h_source.html":[2,0,35]
 };
