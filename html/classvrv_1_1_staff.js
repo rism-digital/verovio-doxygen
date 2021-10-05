@@ -13,6 +13,7 @@ var classvrv_1_1_staff =
     [ "CalcOnsetOffset", "classvrv_1_1_staff.html#a31043856d7ca807142154185f4f1eacd", null ],
     [ "CalcPitchPosYRel", "classvrv_1_1_staff.html#a807cc990002cfb0f520cf43b72a893e8", null ],
     [ "CalcStem", "classvrv_1_1_staff.html#abd990f1b0d2dd8abe5864c53be8f3cfa", null ],
+    [ "CastOffEncoding", "classvrv_1_1_staff.html#aaf1cf7b9a905dc59cf1d21c56ce08a41", null ],
     [ "ClearLedgerLines", "classvrv_1_1_staff.html#a5981a4796f897d0f70600c0594bba6fa", null ],
     [ "Clone", "classvrv_1_1_staff.html#a49f589ba0558922e1a2e0e9c22b172ac", null ],
     [ "CloneReset", "classvrv_1_1_staff.html#a1441f71be201fc4caee78f13f23b9162", null ],
