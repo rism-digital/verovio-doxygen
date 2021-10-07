@@ -2,7 +2,8 @@ var classvrv_1_1_accid =
 [
     [ "Accid", "classvrv_1_1_accid.html#a385ef85fbb09ef0fb17791e154ce1c3b", null ],
     [ "~Accid", "classvrv_1_1_accid.html#a3014327e53837ca3afae02ebd1766006", null ],
-    [ "AdjustX", "classvrv_1_1_accid.html#a1bca3119eb86f13c9aca55ae6f510339", null ],
+    [ "AdjustToLedgerLines", "classvrv_1_1_accid.html#a42b98e9a8411e45f4d73a5fb50138a00", null ],
+    [ "AdjustX", "classvrv_1_1_accid.html#a62e276e12a361558ce7edf0e869f3ea8", null ],
     [ "Clone", "classvrv_1_1_accid.html#a93a65794738d7589660518832e5d22bc", null ],
     [ "GetClassName", "classvrv_1_1_accid.html#a818f5a0b5822e8231f33898bce3f07ac", null ],
     [ "GetDrawingOctave", "classvrv_1_1_accid.html#a16e0c153da4da6a7c2267a247fe5b851", null ],
