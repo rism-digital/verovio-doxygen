@@ -200,6 +200,6 @@ var classvrv_1_1_view =
     [ "m_drawingScoreDef", "classvrv_1_1_view.html#ab16976e8a08645f3fdb70a658ede2c15", null ],
     [ "m_options", "classvrv_1_1_view.html#a63a1674d9b36c2b1d1ccb358cc968961", null ],
     [ "m_pageIdx", "classvrv_1_1_view.html#a5012b077ef799dbbc711144b6c15eea9", null ],
-    [ "m_slurThicknessCoeficient", "classvrv_1_1_view.html#a0acf4cf8800097748c7f513a1fc5ba7d", null ],
-    [ "m_tieThicknessCoeficient", "classvrv_1_1_view.html#af35d4f32dc4aa3709a284d47c00b7338", null ]
+    [ "m_slurThicknessCoefficient", "classvrv_1_1_view.html#af327cf8906ebddbc695f22db50ee5186", null ],
+    [ "m_tieThicknessCoefficient", "classvrv_1_1_view.html#a2c447f5bd0fd7101c0626b723c7b7578", null ]
 ];

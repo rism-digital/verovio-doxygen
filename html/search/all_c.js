@@ -74,7 +74,7 @@ var searchData=
   ['m_5fsystemleftmar_749',['m_systemLeftMar',['../classvrv_1_1_system.html#af19a983bddd62ef8f3eb0000add766ec',1,'vrv::System']]],
   ['m_5fsystemrightmar_750',['m_systemRightMar',['../classvrv_1_1_system.html#a00b7543c20a944c462b5b8b6ab0a0f13',1,'vrv::System']]],
   ['m_5ftext_751',['m_text',['../classvrv_1_1_text.html#ac8b56c524e22c536a37c696f22837412',1,'vrv::Text']]],
-  ['m_5ftiethicknesscoeficient_752',['m_tieThicknessCoeficient',['../classvrv_1_1_view.html#af35d4f32dc4aa3709a284d47c00b7338',1,'vrv::View']]],
+  ['m_5ftiethicknesscoefficient_752',['m_tieThicknessCoefficient',['../classvrv_1_1_view.html#a2c447f5bd0fd7101c0626b723c7b7578',1,'vrv::View']]],
   ['m_5ftimespanningelements_753',['m_timeSpanningElements',['../classvrv_1_1_staff.html#a172c03af3f8a3beb704f4bb35a751966',1,'vrv::Staff']]],
   ['m_5funsupported_754',['m_unsupported',['../classvrv_1_1_object.html#a74ae0995caefb72a71445ba43fce0652',1,'vrv::Object']]],
   ['m_5fvisibility_755',['m_visibility',['../classvrv_1_1_editorial_element.html#aeac215256d1fb1a8bb10a813be1c0eea',1,'vrv::EditorialElement::m_visibility()'],['../classvrv_1_1_mdiv.html#a2feff2dd52fe229fb3346921ef6610d9',1,'vrv::Mdiv::m_visibility()'],['../classvrv_1_1_system_element.html#ad69627f50c22cf7349d3d304ce3b550d',1,'vrv::SystemElement::m_visibility()']]],
