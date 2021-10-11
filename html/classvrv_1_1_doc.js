@@ -47,6 +47,7 @@ var classvrv_1_1_doc =
     [ "GetDrawingStemWidth", "classvrv_1_1_doc.html#a61315fc07401c27bc2102a11fdb84850", null ],
     [ "GetDrawingUnit", "classvrv_1_1_doc.html#a36d5ba0194d0ea33c2f146b45553a7bb", null ],
     [ "GetFacsimile", "classvrv_1_1_doc.html#a1b34235ac83320b5abdaef5d1c4fb3c8", null ],
+    [ "GetFingeringFont", "classvrv_1_1_doc.html#ae1578cf95c2a7b3af232dd717f02e831", null ],
     [ "GetGlyphAdvX", "classvrv_1_1_doc.html#abb1863ea6db1de03222b153439e84237", null ],
     [ "GetGlyphBottom", "classvrv_1_1_doc.html#aeb948ce7b7a8aafd90d473ad925c3704", null ],
     [ "GetGlyphHeight", "classvrv_1_1_doc.html#a059b599126531fd3a4ce7b11396e3a57", null ],

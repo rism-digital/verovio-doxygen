@@ -41,6 +41,7 @@ var classvrv_1_1_options =
     [ "m_engravingDefaultsFile", "classvrv_1_1_options.html#a40e39eada7c773a7ef4a4425c0d3cb59", null ],
     [ "m_evenNoteSpacing", "classvrv_1_1_options.html#a47a6b8323bcd89b41cfe0c105f4b2855", null ],
     [ "m_expand", "classvrv_1_1_options.html#a8b723e65a35248961c4778eb630ede91", null ],
+    [ "m_fingeringScale", "classvrv_1_1_options.html#a9a57d4867ee3e463e348edb770fb26af", null ],
     [ "m_font", "classvrv_1_1_options.html#a02ded0c8e17a9eb4a2abaf311ca5603e", null ],
     [ "m_footer", "classvrv_1_1_options.html#a3f6b2b692977ecc6c6e30e50f704712e", null ],
     [ "m_general", "classvrv_1_1_options.html#a39af9494b89df90199d208bd5bd0d73c", null ],
