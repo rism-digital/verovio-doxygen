@@ -2,6 +2,7 @@ var classvrv_1_1_view =
 [
     [ "View", "classvrv_1_1_view.html#a721ff64f1ce15ac64a4e0b78308e84bd", null ],
     [ "~View", "classvrv_1_1_view.html#af301e8e99bc2946c263bf0ec66827a7d", null ],
+    [ "ActivateSlurInitialization", "classvrv_1_1_view.html#a771a5184eef86aff3f43df63a41e6123", null ],
     [ "CalculatePitchCode", "classvrv_1_1_view.html#a2112e69dbe8de940f486983ebfcdd21c", null ],
     [ "DoRefresh", "classvrv_1_1_view.html#ae14823561b1b9dfdae0711e77ac7dcb6", null ],
     [ "DoReset", "classvrv_1_1_view.html#a26c6f8d15d1397a68c848307974ea63c", null ],
@@ -198,6 +199,7 @@ var classvrv_1_1_view =
     [ "m_currentSystem", "classvrv_1_1_view.html#ade9b0251ef2551af69d53a220fa239c3", null ],
     [ "m_doc", "classvrv_1_1_view.html#a922bb7e5bab67bd8e28206bd6e4f8c8e", null ],
     [ "m_drawingScoreDef", "classvrv_1_1_view.html#ab16976e8a08645f3fdb70a658ede2c15", null ],
+    [ "m_initializeSlurs", "classvrv_1_1_view.html#a05b24ea0d52218f63a3524cd26008050", null ],
     [ "m_options", "classvrv_1_1_view.html#a63a1674d9b36c2b1d1ccb358cc968961", null ],
     [ "m_pageIdx", "classvrv_1_1_view.html#a5012b077ef799dbbc711144b6c15eea9", null ],
     [ "m_slurThicknessCoefficient", "classvrv_1_1_view.html#af327cf8906ebddbc695f22db50ee5186", null ],

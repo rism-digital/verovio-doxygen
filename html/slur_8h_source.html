@@ -141,20 +141,20 @@ $(document).ready(function(){initNavTree('slur_8h_source.html',''); initResizabl
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    std::pair&lt;Point, Point&gt; <a class="code" href="classvrv_1_1_slur.html#a3d8f95dd4c091e8c3efb01aead7d1925">AdjustCoordinates</a>(</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        Doc *doc, Staff *staff, std::pair&lt;Point, Point&gt; points, <span class="keywordtype">int</span> spanningType, curvature_CURVEDIR drawingCurveDir);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> AdjustSlur(Doc *doc, FloatingCurvePositioner *curve, Staff *staff);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">float</span> GetAdjustedSlurAngle(Doc *doc, Point &amp;p1, Point &amp;p2, curvature_CURVEDIR curveDir);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    curvature_CURVEDIR <a class="code" href="classvrv_1_1_slur.html#ad0677990365f508cb89a70766367cd89">GetPreferredCurveDirection</a>(</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        Doc *doc, Layer *layer, LayerElement *layerElement, data_STEMDIRECTION noteStemDir, <span class="keywordtype">bool</span> isAboveStaffCenter);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_slur.html#ab47be962fd8854013a1e7751140567c1">ResetDrawing</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::vector&lt;LayerElement *&gt; <a class="code" href="classvrv_1_1_slur.html#ab792e14d23e9ebf8b5f72592ce4bd32a">CollectSpannedElements</a>(Staff *staff, <span class="keywordtype">int</span> xMin, <span class="keywordtype">int</span> xMax);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> AdjustSlur(Doc *doc, FloatingCurvePositioner *curve, Staff *staff);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">float</span> GetAdjustedSlurAngle(Doc *doc, Point &amp;p1, Point &amp;p2, curvature_CURVEDIR curveDir);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    curvature_CURVEDIR <a class="code" href="classvrv_1_1_slur.html#ad0677990365f508cb89a70766367cd89">GetPreferredCurveDirection</a>(</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        Doc *doc, Layer *layer, LayerElement *layerElement, data_STEMDIRECTION noteStemDir, <span class="keywordtype">bool</span> isAboveStaffCenter);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">//----------//</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_slur.html#acc9641b6bf8c0cd463a1466f291a0075">AdjustCrossStaffContent</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_slur.html#ab47be962fd8854013a1e7751140567c1">ResetDrawing</a>(FunctorParams *functorParams);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// Discard certain spanned elements</span></div>
@@ -207,14 +207,14 @@ $(document).ready(function(){initNavTree('slur_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassvrv_1_1_slur_html"><div class="ttname"><a href="classvrv_1_1_slur.html">vrv::Slur</a></div><div class="ttdef"><b>Definition:</b> slur.h:37</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html_ab47be962fd8854013a1e7751140567c1"><div class="ttname"><a href="classvrv_1_1_slur.html#ab47be962fd8854013a1e7751140567c1">vrv::Slur::ResetDrawing</a></div><div class="ttdeci">virtual int ResetDrawing(FunctorParams *functorParams)</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
 <div class="ttc" id="astructvrv_1_1_control_point_constraint_html"><div class="ttname"><a href="structvrv_1_1_control_point_constraint.html">vrv::ControlPointConstraint</a></div><div class="ttdoc">This represents a constraint ax + by &gt;= c where x and y are vertical control point adjustments.</div><div class="ttdef"><b>Definition:</b> slur.h:27</div></div>
-<div class="ttc" id="aclassvrv_1_1_slur_html_acc9641b6bf8c0cd463a1466f291a0075"><div class="ttname"><a href="classvrv_1_1_slur.html#acc9641b6bf8c0cd463a1466f291a0075">vrv::Slur::AdjustCrossStaffContent</a></div><div class="ttdeci">virtual int AdjustCrossStaffContent(FunctorParams *functorParams)</div><div class="ttdoc">See Object::AdjustCrossStaffContent.</div></div>
+<div class="ttc" id="aclassvrv_1_1_slur_html_ab792e14d23e9ebf8b5f72592ce4bd32a"><div class="ttname"><a href="classvrv_1_1_slur.html#ab792e14d23e9ebf8b5f72592ce4bd32a">vrv::Slur::CollectSpannedElements</a></div><div class="ttdeci">std::vector&lt; LayerElement * &gt; CollectSpannedElements(Staff *staff, int xMin, int xMax)</div><div class="ttdoc">Determine layer elements spanned by the slur.</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html">vrv::TimeSpanningInterface</a></div><div class="ttdoc">This class is an interface for spanning elements, such as slur, hairpin, etc.</div><div class="ttdef"><b>Definition:</b> timeinterface.h:134</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>slur.h</b></li>
-    <li class="footer">Generated on Tue Oct 12 2021 09:00:24 for Verovio by
+    <li class="footer">Generated on Tue Oct 12 2021 10:06:51 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
