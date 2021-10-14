@@ -19,22 +19,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="87" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/io.h" bodystart="87" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="91" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/io.h" bodystart="91" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_input_1ae5b786823e4fef5ca80a48530513919c" prot="protected" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool vrv::Input::m_hasLayoutInformation</definition>
+      <memberdef kind="variable" id="classvrv_1_1_input_1a4682cae07963c3646b22850447bf9120" prot="protected" static="no" mutable="no">
+        <type>LayoutInformation</type>
+        <definition>LayoutInformation vrv::Input::m_layoutInformation</definition>
         <argsstring></argsstring>
-        <name>m_hasLayoutInformation</name>
+        <name>m_layoutInformation</name>
         <briefdescription>
-<para>Becomes true if layout information is found during the import. </para>
+<para>Indicates if we have layout information in the file loaded. </para>
         </briefdescription>
         <detaileddescription>
-<para>This will be true if the file is page-based MEI or if the MEI file contains &lt;pb&gt; and &lt;sb&gt;. This will stay wrong with PAE import </para>
+<para>The value will be LAYOUT_ENCODED if we have &lt;pb&gt; or &lt;sb&gt; elements and LAYOUT_DONE for page-based MEI. This value remains LAYOUT_NONE with PAE import </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="94" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/io.h" bodystart="94" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="98" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/io.h" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_input_1a12d911b9d747f92ef5b6e57253c06b3d" prot="protected" static="no" mutable="no">
         <type>std::string</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="96" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/io.h" bodystart="96" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="100" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/io.h" bodystart="100" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="62" column="5"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="66" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_input_1ad97e045cb680e5d79ffb593da1def219" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="63" column="13"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="67" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_input_1ad6290a083918bae0c62dac7795a9771d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="65" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/io.h" bodystart="65" bodyend="65"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="69" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/io.h" bodystart="69" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_input_1a1b05f76bf7cb69133dff8178b0b25b59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="66" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/io.h" bodystart="66" bodyend="66"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="70" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/io.h" bodystart="70" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_input_1a7a19750d81786d0a71ab4665a16b78e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -131,13 +131,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="69" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/io.h" bodystart="69" bodyend="69"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="73" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/io.h" bodystart="73" bodyend="73"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_input_1ab983f3a606f7a2675d4c002260439123" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool vrv::Input::HasLayoutInformation</definition>
+      <memberdef kind="function" id="classvrv_1_1_input_1a762b1b42c1fba541b913b0569896b05b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LayoutInformation</type>
+        <definition>LayoutInformation vrv::Input::GetLayoutInformation</definition>
         <argsstring>()</argsstring>
-        <name>HasLayoutInformation</name>
+        <name>GetLayoutInformation</name>
         <briefdescription>
 <para>Getter for layoutInformation flag that is set to true during import if layout information is found (and not to be ignored). </para>
         </briefdescription>
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="75" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/io.h" bodystart="75" bodyend="75"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="79" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/io.h" bodystart="79" bodyend="79"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -161,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="81" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="85" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -232,15 +232,15 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="59" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/io.h" bodystart="59" bodyend="97"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/io.h" line="63" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/io.h" bodystart="63" bodyend="101"/>
     <listofallmembers>
+      <member refid="classvrv_1_1_input_1a762b1b42c1fba541b913b0569896b05b" prot="public" virt="non-virtual"><scope>vrv::Input</scope><name>GetLayoutInformation</name></member>
       <member refid="classvrv_1_1_input_1a1b05f76bf7cb69133dff8178b0b25b59" prot="public" virt="non-virtual"><scope>vrv::Input</scope><name>GetOutputFormat</name></member>
-      <member refid="classvrv_1_1_input_1ab983f3a606f7a2675d4c002260439123" prot="public" virt="non-virtual"><scope>vrv::Input</scope><name>HasLayoutInformation</name></member>
       <member refid="classvrv_1_1_input_1a7a19750d81786d0a71ab4665a16b78e1" prot="public" virt="virtual"><scope>vrv::Input</scope><name>Import</name></member>
       <member refid="classvrv_1_1_input_1a8dc6431a40e2d1d954df560c4378ecdd" prot="private" virt="non-virtual"><scope>vrv::Input</scope><name>Init</name></member>
       <member refid="classvrv_1_1_input_1ae8b21e281d8a92b924c4276b2b89c8b1" prot="public" virt="non-virtual"><scope>vrv::Input</scope><name>Input</name></member>
       <member refid="classvrv_1_1_input_1a19dccc7ba8689777b0f2558e8b839305" prot="protected" virt="non-virtual"><scope>vrv::Input</scope><name>m_doc</name></member>
-      <member refid="classvrv_1_1_input_1ae5b786823e4fef5ca80a48530513919c" prot="protected" virt="non-virtual"><scope>vrv::Input</scope><name>m_hasLayoutInformation</name></member>
+      <member refid="classvrv_1_1_input_1a4682cae07963c3646b22850447bf9120" prot="protected" virt="non-virtual"><scope>vrv::Input</scope><name>m_layoutInformation</name></member>
       <member refid="classvrv_1_1_input_1a12d911b9d747f92ef5b6e57253c06b3d" prot="protected" virt="non-virtual"><scope>vrv::Input</scope><name>m_outformat</name></member>
       <member refid="classvrv_1_1_input_1ad6290a083918bae0c62dac7795a9771d" prot="public" virt="non-virtual"><scope>vrv::Input</scope><name>SetOutputFormat</name></member>
       <member refid="classvrv_1_1_input_1ad97e045cb680e5d79ffb593da1def219" prot="public" virt="virtual"><scope>vrv::Input</scope><name>~Input</name></member>
