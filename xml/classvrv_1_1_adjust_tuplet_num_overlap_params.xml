@@ -57,18 +57,18 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="618" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="618" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_adjust_tuplet_num_overlap_params_1a50d684ab370b540c91c6de66c2f07394" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool vrv::AdjustTupletNumOverlapParams::m_ignoreCrossStaff</definition>
+      <memberdef kind="variable" id="classvrv_1_1_adjust_tuplet_num_overlap_params_1ad5bf9cc50729e00950e702010c77b006" prot="public" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+        <definition>Staff* vrv::AdjustTupletNumOverlapParams::m_staff</definition>
         <argsstring></argsstring>
-        <name>m_ignoreCrossStaff</name>
+        <name>m_staff</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="619" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="619" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="619" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="619" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_adjust_tuplet_num_overlap_params_1a0a6fbcfa679693f5ffc2c48ff9518dcd" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -85,14 +85,18 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classvrv_1_1_adjust_tuplet_num_overlap_params_1a9e9948140648efd0fb661c28fbb9ee36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_adjust_tuplet_num_overlap_params_1afdc008ae0d4b3aea02285ba6c2131583" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>vrv::AdjustTupletNumOverlapParams::AdjustTupletNumOverlapParams</definition>
-        <argsstring>(TupletNum *tupletNum)</argsstring>
+        <argsstring>(TupletNum *tupletNum, Staff *staff)</argsstring>
         <name>AdjustTupletNumOverlapParams</name>
         <param>
           <type><ref refid="classvrv_1_1_tuplet_num" kindref="compound">TupletNum</ref> *</type>
           <declname>tupletNum</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <declname>staff</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -104,7 +108,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>member 0: tupletNum relative position for which is being calculatied member 1: drawing position of tupletNum member 2: margin for tupletNum vertical overlap member 3: flag to indicate whether cross-staff elements should be considered member 4: resulting relative Y for the tupletNum </para>
+<para>member 0: tupletNum relative position for which is being calculatied member 1: drawing position of tupletNum member 2: margin for tupletNum vertical overlap member 3: staff relevant to positioning of tuplet member 4: resulting relative Y for the tupletNum </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -121,23 +125,23 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4">
+      <node id="34">
         <label>vrv::LayerElement</label>
         <link refid="classvrv_1_1_layer_element"/>
-        <childnode refid="5" relation="public-inheritance">
+        <childnode refid="4" relation="public-inheritance">
         </childnode>
-        <childnode refid="7" relation="public-inheritance">
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+        <childnode refid="26" relation="public-inheritance">
         </childnode>
         <childnode refid="10" relation="public-inheritance">
         </childnode>
-        <childnode refid="12" relation="public-inheritance">
-        </childnode>
-        <childnode refid="13" relation="public-inheritance">
-        </childnode>
-        <childnode refid="14" relation="usage">
+        <childnode refid="37" relation="usage">
           <edgelabel>m_crossLayer</edgelabel>
         </childnode>
-        <childnode refid="19" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>m_crossStaff</edgelabel>
         </childnode>
         <childnode refid="40" relation="usage">
@@ -145,71 +149,174 @@
           <edgelabel>m_alignment</edgelabel>
         </childnode>
       </node>
-      <node id="10">
+      <node id="35">
         <label>vrv::LinkingInterface</label>
         <link refid="classvrv_1_1_linking_interface"/>
-        <childnode refid="8" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>AttMultinumMeasures</label>
+      </node>
+      <node id="15">
+        <label>vrv::ScoreDefElement</label>
+        <link refid="classvrv_1_1_score_def_element"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>AttCourseLog</label>
+      </node>
+      <node id="23">
+        <label>AttSystems</label>
+      </node>
+      <node id="3">
+        <label>vrv::Staff</label>
+        <link refid="classvrv_1_1_staff"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
         </childnode>
         <childnode refid="11" relation="public-inheritance">
         </childnode>
-      </node>
-      <node id="28">
-        <label>AttMultinumMeasures</label>
-      </node>
-      <node id="23">
-        <label>vrv::ScoreDefElement</label>
-        <link refid="classvrv_1_1_score_def_element"/>
-        <childnode refid="5" relation="public-inheritance">
+        <childnode refid="12" relation="usage">
+          <edgelabel>m_drawingTuning</edgelabel>
         </childnode>
-        <childnode refid="24" relation="public-inheritance">
-        </childnode>
-        <childnode refid="13" relation="public-inheritance">
+        <childnode refid="14" relation="usage">
+          <edgelabel>m_drawingStaffDef</edgelabel>
         </childnode>
       </node>
-      <node id="21">
-        <label>AttCourseLog</label>
+      <node id="25">
+        <label>AttDistances</label>
       </node>
-      <node id="31">
-        <label>AttSystems</label>
+      <node id="10">
+        <label>AttTyped</label>
       </node>
-      <node id="19">
-        <label>vrv::Staff</label>
-        <link refid="classvrv_1_1_staff"/>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
+      <node id="5">
+        <label>vrv::BoundingBox</label>
+        <link refid="classvrv_1_1_bounding_box"/>
+      </node>
+      <node id="16">
+        <label>vrv::ScoreDefInterface</label>
+        <link refid="classvrv_1_1_score_def_interface"/>
         <childnode refid="7" relation="public-inheritance">
         </childnode>
         <childnode refid="17" relation="public-inheritance">
         </childnode>
-        <childnode refid="13" relation="public-inheritance">
-        </childnode>
         <childnode refid="18" relation="public-inheritance">
         </childnode>
-        <childnode refid="20" relation="usage">
-          <edgelabel>m_drawingTuning</edgelabel>
+        <childnode refid="19" relation="public-inheritance">
         </childnode>
-        <childnode refid="22" relation="usage">
-          <edgelabel>m_drawingStaffDef</edgelabel>
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vrv::Interface</label>
+        <link refid="classvrv_1_1_interface"/>
+      </node>
+      <node id="2">
+        <label>vrv::FunctorParams</label>
+        <link refid="classvrv_1_1_functor_params"/>
       </node>
       <node id="33">
-        <label>AttDistances</label>
+        <label>vrv::TupletNum</label>
+        <link refid="classvrv_1_1_tuplet_num"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="13">
-        <label>AttTyped</label>
+      <node id="19">
+        <label>AttMidiTempo</label>
+      </node>
+      <node id="11">
+        <label>AttVisibility</label>
+      </node>
+      <node id="30">
+        <label>AttStaffDefVis</label>
+      </node>
+      <node id="9">
+        <label>AttNInteger</label>
+      </node>
+      <node id="37">
+        <label>vrv::Layer</label>
+        <link refid="classvrv_1_1_layer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>AttNumberPlacement</label>
+      </node>
+      <node id="22">
+        <label>AttSpacing</label>
       </node>
       <node id="6">
-        <label>vrv::BoundingBox</label>
-        <link refid="classvrv_1_1_bounding_box"/>
+        <label>vrv::FacsimileInterface</label>
+        <link refid="classvrv_1_1_facsimile_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>AttNotationType</label>
+      </node>
+      <node id="38">
+        <label>vrv::DrawingListInterface</label>
+        <link refid="classvrv_1_1_drawing_list_interface"/>
+      </node>
+      <node id="12">
+        <label>vrv::Tuning</label>
+        <link refid="classvrv_1_1_tuning"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="24">
-        <label>vrv::ScoreDefInterface</label>
-        <link refid="classvrv_1_1_score_def_interface"/>
-        <childnode refid="8" relation="public-inheritance">
+        <label>vrv::StaffDefDrawingInterface</label>
+        <link refid="classvrv_1_1_staff_def_drawing_interface"/>
+      </node>
+      <node id="14">
+        <label>vrv::StaffDef</label>
+        <link refid="classvrv_1_1_staff_def"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="public-inheritance">
         </childnode>
         <childnode refid="25" relation="public-inheritance">
         </childnode>
         <childnode refid="26" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
         </childnode>
         <childnode refid="27" relation="public-inheritance">
         </childnode>
@@ -221,156 +328,53 @@
         </childnode>
         <childnode refid="31" relation="public-inheritance">
         </childnode>
-      </node>
-      <node id="8">
-        <label>vrv::Interface</label>
-        <link refid="classvrv_1_1_interface"/>
-      </node>
-      <node id="2">
-        <label>vrv::FunctorParams</label>
-        <link refid="classvrv_1_1_functor_params"/>
-      </node>
-      <node id="3">
-        <label>vrv::TupletNum</label>
-        <link refid="classvrv_1_1_tuplet_num"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-        <childnode refid="41" relation="public-inheritance">
-        </childnode>
-        <childnode refid="42" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="27">
-        <label>AttMidiTempo</label>
-      </node>
-      <node id="18">
-        <label>AttVisibility</label>
-      </node>
-      <node id="37">
-        <label>AttStaffDefVis</label>
-      </node>
-      <node id="17">
-        <label>AttNInteger</label>
-      </node>
-      <node id="14">
-        <label>vrv::Layer</label>
-        <link refid="classvrv_1_1_layer"/>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-        <childnode refid="15" relation="public-inheritance">
-        </childnode>
-        <childnode refid="16" relation="public-inheritance">
-        </childnode>
-        <childnode refid="17" relation="public-inheritance">
-        </childnode>
-        <childnode refid="13" relation="public-inheritance">
-        </childnode>
-        <childnode refid="18" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="41">
-        <label>AttNumberPlacement</label>
-      </node>
-      <node id="30">
-        <label>AttSpacing</label>
-      </node>
-      <node id="7">
-        <label>vrv::FacsimileInterface</label>
-        <link refid="classvrv_1_1_facsimile_interface"/>
-        <childnode refid="8" relation="public-inheritance">
-        </childnode>
-        <childnode refid="9" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="34">
-        <label>AttNotationType</label>
-      </node>
-      <node id="15">
-        <label>vrv::DrawingListInterface</label>
-        <link refid="classvrv_1_1_drawing_list_interface"/>
-      </node>
-      <node id="20">
-        <label>vrv::Tuning</label>
-        <link refid="classvrv_1_1_tuning"/>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-        <childnode refid="21" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="32">
-        <label>vrv::StaffDefDrawingInterface</label>
-        <link refid="classvrv_1_1_staff_def_drawing_interface"/>
-      </node>
-      <node id="22">
-        <label>vrv::StaffDef</label>
-        <link refid="classvrv_1_1_staff_def"/>
-        <childnode refid="23" relation="public-inheritance">
-        </childnode>
         <childnode refid="32" relation="public-inheritance">
         </childnode>
-        <childnode refid="33" relation="public-inheritance">
-        </childnode>
-        <childnode refid="12" relation="public-inheritance">
-        </childnode>
-        <childnode refid="17" relation="public-inheritance">
-        </childnode>
-        <childnode refid="34" relation="public-inheritance">
-        </childnode>
-        <childnode refid="35" relation="public-inheritance">
-        </childnode>
-        <childnode refid="36" relation="public-inheritance">
-        </childnode>
-        <childnode refid="37" relation="public-inheritance">
-        </childnode>
-        <childnode refid="38" relation="public-inheritance">
-        </childnode>
-        <childnode refid="39" relation="public-inheritance">
-        </childnode>
       </node>
-      <node id="11">
+      <node id="36">
         <label>AttLinking</label>
       </node>
-      <node id="25">
+      <node id="17">
         <label>AttLyricStyle</label>
       </node>
-      <node id="9">
+      <node id="8">
         <label>AttFacsimile</label>
       </node>
-      <node id="39">
+      <node id="32">
         <label>AttTransposition</label>
       </node>
       <node id="40">
         <label>vrv::Alignment</label>
         <link refid="classvrv_1_1_alignment"/>
-        <childnode refid="5" relation="public-inheritance">
+        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="29">
+      <node id="21">
         <label>AttPianoPedals</label>
       </node>
-      <node id="36">
+      <node id="29">
         <label>AttStaffDefLog</label>
       </node>
       <node id="42">
         <label>AttTupletVis</label>
       </node>
-      <node id="5">
+      <node id="4">
         <label>vrv::Object</label>
         <link refid="classvrv_1_1_object"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="26">
+      <node id="18">
         <label>AttMeasureNumbers</label>
       </node>
-      <node id="35">
+      <node id="28">
         <label>AttScalable</label>
       </node>
-      <node id="16">
+      <node id="39">
         <label>vrv::ObjectListInterface</label>
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
-      <node id="38">
+      <node id="31">
         <label>AttTimeBase</label>
       </node>
       <node id="1">
@@ -379,20 +383,23 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
         <childnode refid="3" relation="usage">
+          <edgelabel>m_staff</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
           <edgelabel>m_tupletNum</edgelabel>
         </childnode>
       </node>
-      <node id="12">
+      <node id="26">
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
     <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="603" column="56" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="603" bodyend="621"/>
     <listofallmembers>
-      <member refid="classvrv_1_1_adjust_tuplet_num_overlap_params_1a9e9948140648efd0fb661c28fbb9ee36" prot="public" virt="non-virtual"><scope>vrv::AdjustTupletNumOverlapParams</scope><name>AdjustTupletNumOverlapParams</name></member>
+      <member refid="classvrv_1_1_adjust_tuplet_num_overlap_params_1afdc008ae0d4b3aea02285ba6c2131583" prot="public" virt="non-virtual"><scope>vrv::AdjustTupletNumOverlapParams</scope><name>AdjustTupletNumOverlapParams</name></member>
       <member refid="classvrv_1_1_functor_params_1a2ac6c84a04cc3d083441e674f488050e" prot="public" virt="non-virtual"><scope>vrv::AdjustTupletNumOverlapParams</scope><name>FunctorParams</name></member>
       <member refid="classvrv_1_1_adjust_tuplet_num_overlap_params_1a11e14d6ebd3cba59b992cae22b1b7697" prot="public" virt="non-virtual"><scope>vrv::AdjustTupletNumOverlapParams</scope><name>m_drawingNumPos</name></member>
       <member refid="classvrv_1_1_adjust_tuplet_num_overlap_params_1a5f5a08a834f0eb85cf925a76286af298" prot="public" virt="non-virtual"><scope>vrv::AdjustTupletNumOverlapParams</scope><name>m_horizontalMargin</name></member>
-      <member refid="classvrv_1_1_adjust_tuplet_num_overlap_params_1a50d684ab370b540c91c6de66c2f07394" prot="public" virt="non-virtual"><scope>vrv::AdjustTupletNumOverlapParams</scope><name>m_ignoreCrossStaff</name></member>
+      <member refid="classvrv_1_1_adjust_tuplet_num_overlap_params_1ad5bf9cc50729e00950e702010c77b006" prot="public" virt="non-virtual"><scope>vrv::AdjustTupletNumOverlapParams</scope><name>m_staff</name></member>
       <member refid="classvrv_1_1_adjust_tuplet_num_overlap_params_1a3e65134970e2e10ea7dd2f23569d2df9" prot="public" virt="non-virtual"><scope>vrv::AdjustTupletNumOverlapParams</scope><name>m_tupletNum</name></member>
       <member refid="classvrv_1_1_adjust_tuplet_num_overlap_params_1a67e8ab8ccd0aacdd309e2d91e5090035" prot="public" virt="non-virtual"><scope>vrv::AdjustTupletNumOverlapParams</scope><name>m_verticalMargin</name></member>
       <member refid="classvrv_1_1_adjust_tuplet_num_overlap_params_1a0a6fbcfa679693f5ffc2c48ff9518dcd" prot="public" virt="non-virtual"><scope>vrv::AdjustTupletNumOverlapParams</scope><name>m_yRel</name></member>
