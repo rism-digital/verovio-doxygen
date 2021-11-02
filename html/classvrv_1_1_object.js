@@ -103,6 +103,7 @@ var classvrv_1_1_object =
     [ "FindPreviousChild", "classvrv_1_1_object.html#a4750585ae6b8737aba3408fcc863dfeb", null ],
     [ "FindPreviousChildByComparison", "classvrv_1_1_object.html#a7c792936ed7e04d00172c7b0017b85a1", null ],
     [ "FindSpannedLayerElements", "classvrv_1_1_object.html#adf698716d3820efeb5d1af9bfd24a187", null ],
+    [ "FindSpannedLayerElementsEnd", "classvrv_1_1_object.html#a640fefc0f8ed8697bca36c19d6daf940", null ],
     [ "GenerateFeatures", "classvrv_1_1_object.html#a7ced59f27507ee81372cc12d7f57c8e0", null ],
     [ "GenerateMIDI", "classvrv_1_1_object.html#a426081ffba31e4251a2c36ceeb2a43ba", null ],
     [ "GenerateTimemap", "classvrv_1_1_object.html#abe889073301d6e1dfe55e725b6532948", null ],

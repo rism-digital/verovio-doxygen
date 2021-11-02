@@ -21,5 +21,5 @@ var searchData=
   ['finddescendantextremebycomparison_1640',['FindDescendantExtremeByComparison',['../classvrv_1_1_object.html#a95acdd9f46d55cf067b567ef11526b68',1,'vrv::Object']]],
   ['findextremebycomparison_1641',['FindExtremeByComparison',['../classvrv_1_1_object.html#ae21b1881fd8e810d784efd2b3327ce9d',1,'vrv::Object']]],
   ['findfirstfloatingpositioner_1642',['FindFirstFloatingPositioner',['../classvrv_1_1_staff_alignment.html#aebb16e118406ae41bf59ef1730842a78',1,'vrv::StaffAlignment']]],
-  ['findspannedlayerelements_1643',['FindSpannedLayerElements',['../classvrv_1_1_layer_element.html#a5333826e9fc9e8438f4852208113e418',1,'vrv::LayerElement::FindSpannedLayerElements()'],['../classvrv_1_1_object.html#adf698716d3820efeb5d1af9bfd24a187',1,'vrv::Object::FindSpannedLayerElements()']]]
+  ['findspannedlayerelements_1643',['FindSpannedLayerElements',['../classvrv_1_1_layer_element.html#a5333826e9fc9e8438f4852208113e418',1,'vrv::LayerElement::FindSpannedLayerElements()'],['../classvrv_1_1_measure.html#a0ea5efa53fad6ab717fcd2815de8d35a',1,'vrv::Measure::FindSpannedLayerElements()'],['../classvrv_1_1_object.html#adf698716d3820efeb5d1af9bfd24a187',1,'vrv::Object::FindSpannedLayerElements()']]]
 ];

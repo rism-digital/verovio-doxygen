@@ -37,6 +37,8 @@ var classvrv_1_1_measure =
     [ "ConvertToUnCastOffMensural", "classvrv_1_1_measure.html#af84b21d4ad5d2220833b830d5b2721aa", null ],
     [ "EnclosesTime", "classvrv_1_1_measure.html#a7fe08d9e1f4a7ee4f783b2b389553b83", null ],
     [ "FillStaffCurrentTimeSpanningEnd", "classvrv_1_1_measure.html#a10521d415e6f5270a6f26c67cf5b3427", null ],
+    [ "FindSpannedLayerElements", "classvrv_1_1_measure.html#a0ea5efa53fad6ab717fcd2815de8d35a", null ],
+    [ "FindSpannedLayerElementsEnd", "classvrv_1_1_measure.html#a27b062eee914d45d752e37b42a9c8ee1", null ],
     [ "GenerateMIDI", "classvrv_1_1_measure.html#af0a102d6699c8d6949f3ee9a3390859b", null ],
     [ "GenerateTimemap", "classvrv_1_1_measure.html#a950524d9d7199aea4a2848c128893ac3", null ],
     [ "GetBottomVisibleStaff", "classvrv_1_1_measure.html#aebb30d801973e472dade538e89a1ee93", null ],

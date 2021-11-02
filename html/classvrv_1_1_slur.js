@@ -7,7 +7,7 @@ var classvrv_1_1_slur =
     [ "AdjustCoordinates", "classvrv_1_1_slur.html#a3d8f95dd4c091e8c3efb01aead7d1925", null ],
     [ "AdjustSlur", "classvrv_1_1_slur.html#a054686027f7672ea9c8d2789490a2e18", null ],
     [ "Clone", "classvrv_1_1_slur.html#a952ccc695fffeea63dfa92910bc4177f", null ],
-    [ "CollectSpannedElements", "classvrv_1_1_slur.html#ab792e14d23e9ebf8b5f72592ce4bd32a", null ],
+    [ "CollectSpannedElements", "classvrv_1_1_slur.html#a1d7fffff92e4bc291a51d532c62e4d0f", null ],
     [ "GetAdjustedSlurAngle", "classvrv_1_1_slur.html#af9f7ea0dd157317dfcbbcb787793726e", null ],
     [ "GetClassName", "classvrv_1_1_slur.html#ab39993d37ee0c8444785c9d1fc52749c", null ],
     [ "GetDrawingCurvedir", "classvrv_1_1_slur.html#afeaac42992c2985ff5dfd8fc4b58dc5b", null ],

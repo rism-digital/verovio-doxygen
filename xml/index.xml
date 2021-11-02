@@ -1951,6 +1951,8 @@
     <member refid="classvrv_1_1_find_spanned_layer_elements_params_1ade2697d970a729b5be9efb9b6596c4bb" kind="variable"><name>m_elements</name></member>
     <member refid="classvrv_1_1_find_spanned_layer_elements_params_1ab045206d3d5a56a2d7a4f17690ca0f53" kind="variable"><name>m_minPos</name></member>
     <member refid="classvrv_1_1_find_spanned_layer_elements_params_1a8d5fb356f6392a611e2e9e7e7a7907ba" kind="variable"><name>m_maxPos</name></member>
+    <member refid="classvrv_1_1_find_spanned_layer_elements_params_1a2ad423587b3c34b765f623a7d8350979" kind="variable"><name>m_staffNs</name></member>
+    <member refid="classvrv_1_1_find_spanned_layer_elements_params_1a29cdf066659d3c6cbe499d7f38a3336c" kind="variable"><name>m_inMeasureRange</name></member>
     <member refid="classvrv_1_1_find_spanned_layer_elements_params_1a1af78e2f807d339d64136494976aad60" kind="variable"><name>m_interface</name></member>
     <member refid="classvrv_1_1_find_spanned_layer_elements_params_1ac2009d5277834fc21253c860fd5a7673" kind="variable"><name>m_classIds</name></member>
     <member refid="classvrv_1_1_find_spanned_layer_elements_params_1aef6ccb591ff2f4734908ebbcb63337b9" kind="function"><name>FindSpannedLayerElementsParams</name></member>
@@ -3179,6 +3181,8 @@
     <member refid="classvrv_1_1_measure_1adbc43e12593eafc198d44f7eaf7fda55" kind="function"><name>SetDrawingScoreDef</name></member>
     <member refid="classvrv_1_1_measure_1ac8bf69134a3e11c216cd9f712d51a090" kind="function"><name>GetDrawingEnding</name></member>
     <member refid="classvrv_1_1_measure_1a0c9b3e0e99beeff662e42637b8ece850" kind="function"><name>SetDrawingEnding</name></member>
+    <member refid="classvrv_1_1_measure_1a0ea5efa53fad6ab717fcd2815de8d35a" kind="function"><name>FindSpannedLayerElements</name></member>
+    <member refid="classvrv_1_1_measure_1a27b062eee914d45d752e37b42a9c8ee1" kind="function"><name>FindSpannedLayerElementsEnd</name></member>
     <member refid="classvrv_1_1_measure_1a53146c5860c0e95b6510108dbc5493d8" kind="function"><name>Save</name></member>
     <member refid="classvrv_1_1_measure_1af731c117b6225ac76b540a9946a7a105" kind="function"><name>SaveEnd</name></member>
     <member refid="classvrv_1_1_measure_1aa9f379a505dfb64bf467d99e83e57f5e" kind="function"><name>PrepareFloatingGrps</name></member>
@@ -4083,7 +4087,7 @@
     <member refid="classvrv_1_1_object_1a9af0cce7b5db85a68ed87c274176aa66" kind="function"><name>LayerCountInTimeSpan</name></member>
     <member refid="classvrv_1_1_object_1add866a8144bcb528808a3e9d6a8f9d45" kind="function"><name>LayerElementsInTimeSpan</name></member>
     <member refid="classvrv_1_1_object_1adf698716d3820efeb5d1af9bfd24a187" kind="function"><name>FindSpannedLayerElements</name></member>
-    <member refid="classvrv_1_1_object_1a3eb3c52e16525ed1a559a825fa85e00e" kind="function"><name>GetAlignmentLeftRight</name></member>
+    <member refid="classvrv_1_1_object_1a640fefc0f8ed8697bca36c19d6daf940" kind="function"><name>FindSpannedLayerElementsEnd</name></member>
     <member refid="classvrv_1_1_object_1ae930432f04c711ac22a14c66a92feb5e" kind="function"><name>ConvertToPageBased</name></member>
     <member refid="classvrv_1_1_object_1ada7452f72d022232966a2d5822b8bbc8" kind="function"><name>ConvertToPageBasedEnd</name></member>
     <member refid="classvrv_1_1_object_1ada935f44326f0c4ecfc068694461718b" kind="function"><name>ConvertToCastOffMensural</name></member>
@@ -4256,6 +4260,7 @@
     <member refid="classvrv_1_1_object_1a4750585ae6b8737aba3408fcc863dfeb" kind="function"><name>FindPreviousChild</name></member>
     <member refid="classvrv_1_1_object_1a22908db94736af382a1c905b2c648210" kind="function"><name>Process</name></member>
     <member refid="classvrv_1_1_object_1a1af968d5140f79fd056aa5a46d7cad11" kind="function"><name>AddLayerElementToFlatList</name></member>
+    <member refid="classvrv_1_1_object_1a3eb3c52e16525ed1a559a825fa85e00e" kind="function"><name>GetAlignmentLeftRight</name></member>
     <member refid="classvrv_1_1_object_1a3a00186419e955ee211440092e955f14" kind="function"><name>SetAlignmentXPos</name></member>
     <member refid="classvrv_1_1_object_1a1009aeee85e83052adcbcd8dc2af050d" kind="function"><name>SetAlignmentPitchPos</name></member>
     <member refid="classvrv_1_1_object_1a0b93f8b6e02c8ba98a03db67fe5d5d10" kind="function"><name>CalcStem</name></member>
@@ -5454,7 +5459,7 @@
     <member refid="classvrv_1_1_slur_1a37ed6f07966aaec7b66d5abb76f1c417" kind="function"><name>RotateSlope</name></member>
     <member refid="classvrv_1_1_slur_1a3db8c8e9d8787cef6604211abdb075a9" kind="variable"><name>m_drawingCurvedir</name></member>
     <member refid="classvrv_1_1_slur_1a3d8f95dd4c091e8c3efb01aead7d1925" kind="function"><name>AdjustCoordinates</name></member>
-    <member refid="classvrv_1_1_slur_1ab792e14d23e9ebf8b5f72592ce4bd32a" kind="function"><name>CollectSpannedElements</name></member>
+    <member refid="classvrv_1_1_slur_1a1d7fffff92e4bc291a51d532c62e4d0f" kind="function"><name>CollectSpannedElements</name></member>
     <member refid="classvrv_1_1_slur_1a054686027f7672ea9c8d2789490a2e18" kind="function"><name>AdjustSlur</name></member>
     <member refid="classvrv_1_1_slur_1af9f7ea0dd157317dfcbbcb787793726e" kind="function"><name>GetAdjustedSlurAngle</name></member>
     <member refid="classvrv_1_1_slur_1ad0677990365f508cb89a70766367cd89" kind="function"><name>GetPreferredCurveDirection</name></member>
