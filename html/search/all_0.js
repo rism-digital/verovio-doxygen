@@ -117,12 +117,13 @@ var searchData=
   ['applyppufactorparams_114',['ApplyPPUFactorParams',['../classvrv_1_1_apply_p_p_u_factor_params.html',1,'vrv']]],
   ['approximatebezierboundingbox_115',['ApproximateBezierBoundingBox',['../classvrv_1_1_bounding_box.html#ae9a22cf5d306abb22ff5f557e81bd9af',1,'vrv::BoundingBox']]],
   ['areaposinterface_116',['AreaPosInterface',['../classvrv_1_1_area_pos_interface.html',1,'vrv']]],
-  ['arpeg_117',['Arpeg',['../classvrv_1_1_arpeg.html',1,'vrv']]],
-  ['artic_118',['Artic',['../classvrv_1_1_artic.html',1,'vrv']]],
-  ['att_119',['Att',['../classvrv_1_1_att.html',1,'vrv']]],
-  ['attdurextremecomparison_120',['AttDurExtremeComparison',['../classvrv_1_1_att_dur_extreme_comparison.html',1,'vrv']]],
-  ['attnintegeranycomparison_121',['AttNIntegerAnyComparison',['../classvrv_1_1_att_n_integer_any_comparison.html',1,'vrv']]],
-  ['attnintegercomparison_122',['AttNIntegerComparison',['../classvrv_1_1_att_n_integer_comparison.html',1,'vrv']]],
-  ['attnnumberlikecomparison_123',['AttNNumberLikeComparison',['../classvrv_1_1_att_n_number_like_comparison.html',1,'vrv']]],
-  ['attvisibilitycomparison_124',['AttVisibilityComparison',['../classvrv_1_1_att_visibility_comparison.html',1,'vrv']]]
+  ['arechildrenalignedto_117',['AreChildrenAlignedTo',['../classvrv_1_1_dir.html#a25fc59a356e110c4b87676f735526bb9',1,'vrv::Dir']]],
+  ['arpeg_118',['Arpeg',['../classvrv_1_1_arpeg.html',1,'vrv']]],
+  ['artic_119',['Artic',['../classvrv_1_1_artic.html',1,'vrv']]],
+  ['att_120',['Att',['../classvrv_1_1_att.html',1,'vrv']]],
+  ['attdurextremecomparison_121',['AttDurExtremeComparison',['../classvrv_1_1_att_dur_extreme_comparison.html',1,'vrv']]],
+  ['attnintegeranycomparison_122',['AttNIntegerAnyComparison',['../classvrv_1_1_att_n_integer_any_comparison.html',1,'vrv']]],
+  ['attnintegercomparison_123',['AttNIntegerComparison',['../classvrv_1_1_att_n_integer_comparison.html',1,'vrv']]],
+  ['attnnumberlikecomparison_124',['AttNNumberLikeComparison',['../classvrv_1_1_att_n_number_like_comparison.html',1,'vrv']]],
+  ['attvisibilitycomparison_125',['AttVisibilityComparison',['../classvrv_1_1_att_visibility_comparison.html',1,'vrv']]]
 ];

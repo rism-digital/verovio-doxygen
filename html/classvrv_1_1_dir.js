@@ -2,6 +2,7 @@ var classvrv_1_1_dir =
 [
     [ "Dir", "classvrv_1_1_dir.html#a80bb28a453db077203b6f75307446464", null ],
     [ "~Dir", "classvrv_1_1_dir.html#a71210ff94d9fc48732efa32704f26dad", null ],
+    [ "AreChildrenAlignedTo", "classvrv_1_1_dir.html#a25fc59a356e110c4b87676f735526bb9", null ],
     [ "Clone", "classvrv_1_1_dir.html#acc4cb5664e448ae9b42c2a119d845bff", null ],
     [ "GetClassName", "classvrv_1_1_dir.html#afc284a6a1c4a5176ec8a80f2873156f4", null ],
     [ "GetTextDirInterface", "classvrv_1_1_dir.html#af6190b09efcc865616870fefe1970ec1", null ],
