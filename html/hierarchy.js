@@ -129,6 +129,7 @@ var hierarchy =
       [ "vrv::Tuning", "classvrv_1_1_tuning.html", null ]
     ] ],
     [ "AttCue", null, [
+      [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
       [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ],
       [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
