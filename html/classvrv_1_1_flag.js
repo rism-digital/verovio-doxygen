@@ -2,14 +2,14 @@ var classvrv_1_1_flag =
 [
     [ "Flag", "classvrv_1_1_flag.html#a5320c21a7ddcda9df49a3031f52db59c", null ],
     [ "~Flag", "classvrv_1_1_flag.html#a9b969b6f72638671d836b42c8af20af0", null ],
-    [ "GetClassName", "classvrv_1_1_flag.html#a8e1b942f4c24d383ab8c5a9e71a6a02a", null ],
+    [ "GetClassName", "classvrv_1_1_flag.html#a152ab620ee8ea5123e58932e7ded2d13", null ],
     [ "GetFlagGlyph", "classvrv_1_1_flag.html#ab072b2687af4681a061c65447cafb9a8", null ],
     [ "GetStemDownNW", "classvrv_1_1_flag.html#ac1ab17c222ae210f3a0caf85dcd5c31f", null ],
     [ "GetStemUpSE", "classvrv_1_1_flag.html#a2ceaafb8b8e63d82db85a50b342a6932", null ],
-    [ "HasToBeAligned", "classvrv_1_1_flag.html#aa46be86df5afe720e5e90abdbb845a16", null ],
-    [ "Reset", "classvrv_1_1_flag.html#ab80b6e5b40e3e33230e0c3671cfc1af5", null ],
-    [ "ResetDrawing", "classvrv_1_1_flag.html#aa1a671e64dccc5fba4a12bc55a88c55a", null ],
-    [ "Save", "classvrv_1_1_flag.html#a82e80def83d663169416ba589fafce81", null ],
-    [ "SaveEnd", "classvrv_1_1_flag.html#a8f4b4b5fa187b3b4b9a843756fe00680", null ],
+    [ "HasToBeAligned", "classvrv_1_1_flag.html#abe0be0e6bd36433fcb1ff6d29ebbc78f", null ],
+    [ "Reset", "classvrv_1_1_flag.html#af4bab954d7c6a7923ec089c982f8e0a3", null ],
+    [ "ResetDrawing", "classvrv_1_1_flag.html#acbc0407bc465a50bffda5960dd4bf2e2", null ],
+    [ "Save", "classvrv_1_1_flag.html#a97d3d73006c4dfde14fd871de9bae93e", null ],
+    [ "SaveEnd", "classvrv_1_1_flag.html#ade3296639430630b1f5a463cdf5f50fa", null ],
     [ "m_drawingNbFlags", "classvrv_1_1_flag.html#a7929130917107698cecb8e3fa6f15466", null ]
 ];

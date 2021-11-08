@@ -213,7 +213,7 @@ var classvrv_1_1_humdrum_input =
     [ "hasTempoTextAfter", "classvrv_1_1_humdrum_input.html#a18996f1ca21f49169d3bf01a9973b12b", null ],
     [ "hideBarlinesInTiedGroup", "classvrv_1_1_humdrum_input.html#a921901aaff7c054a7217b90a9a8205de", null ],
     [ "hideTerminalBarlines", "classvrv_1_1_humdrum_input.html#aee25692fbac4ef8c4dd21da81e815b98", null ],
-    [ "Import", "classvrv_1_1_humdrum_input.html#a3a67f681e9a3f1da8e5ef0f8c02a9c7a", null ],
+    [ "Import", "classvrv_1_1_humdrum_input.html#aae692fe223e347d93baefe26b1ef7e0f", null ],
     [ "importVerovioOptions", "classvrv_1_1_humdrum_input.html#adfbe4c999074bcff08acc0fc7d180672", null ],
     [ "inDifferentEndings", "classvrv_1_1_humdrum_input.html#a2994fa04a6a3dbdb6b21085f8bf54443", null ],
     [ "initializeIgnoreVector", "classvrv_1_1_humdrum_input.html#aafa817cf0f910dfc7e6e48b73c3b7f57", null ],

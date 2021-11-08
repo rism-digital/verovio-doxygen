@@ -40,10 +40,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/fermata.h" line="42" column="13"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_fermata_1ad24103e5d24e542fa2cedf31d10b1c9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_fermata_1ae4015a263194111dabdd34e0e6a781a6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
-        <definition>virtual Object* vrv::Fermata::Clone</definition>
-        <argsstring>() const</argsstring>
+        <definition>Object* vrv::Fermata::Clone</definition>
+        <argsstring>() const override</argsstring>
         <name>Clone</name>
         <reimplements refid="classvrv_1_1_object_1ab2d363effa62d58a65f8aba1330c1379">Clone</reimplements>
         <briefdescription>
@@ -54,28 +54,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/fermata.h" line="43" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/fermata.h" bodystart="43" bodyend="43"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/fermata.h" line="43" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/fermata.h" bodystart="43" bodyend="43"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_fermata_1aa3caa25c49531e06f69bb0828a629258" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_fermata_1afb7670f0139028cd80c08d6a7801f9be" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>virtual void vrv::Fermata::Reset</definition>
-        <argsstring>()</argsstring>
+        <definition>void vrv::Fermata::Reset</definition>
+        <argsstring>() override</argsstring>
         <name>Reset</name>
-        <reimplements refid="classvrv_1_1_control_element_1a4798e8da3af4e07b1b4d95d7df515416">Reset</reimplements>
+        <reimplements refid="classvrv_1_1_control_element_1ada5a97dab22c9ea6f7eff3dbfc4cd7ea">Reset</reimplements>
         <briefdescription>
-<para>Reset the object, that is 1) removing all childs and 2) resetting all attributes. </para>
+<para>Virtual reset method. </para>
         </briefdescription>
         <detaileddescription>
-<para>The method is virtual, so <emphasis>always</emphasis> call the parent in the method overriding it. </para>
+<para>Needs to be overridden in child classes. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/fermata.h" line="44" column="18"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/fermata.h" line="44" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_fermata_1a63abb14ee6e2bbc2e2af07a9a7337e1b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_fermata_1a01d1ea40f44ee5585fa9d29deae202db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
-        <definition>virtual std::string vrv::Fermata::GetClassName</definition>
-        <argsstring>() const</argsstring>
+        <definition>std::string vrv::Fermata::GetClassName</definition>
+        <argsstring>() const override</argsstring>
         <name>GetClassName</name>
         <reimplements refid="classvrv_1_1_object_1a85f5f4c2c61b31f3e0cfafccf6893dd3">GetClassName</reimplements>
         <briefdescription>
@@ -84,15 +84,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/fermata.h" line="45" column="25" bodyfile="/home/runner/work/verovio/verovio/include/vrv/fermata.h" bodystart="45" bodyend="45"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/fermata.h" line="45" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/fermata.h" bodystart="45" bodyend="45"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Getter to interfaces</header>
-      <memberdef kind="function" id="classvrv_1_1_fermata_1aa494aa59a8c97fb1385bb1f7ab322948" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_fermata_1af92473b20eb996dd62399775fd9cbdb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classvrv_1_1_time_point_interface" kindref="compound">TimePointInterface</ref> *</type>
-        <definition>virtual TimePointInterface* vrv::Fermata::GetTimePointInterface</definition>
-        <argsstring>()</argsstring>
+        <definition>TimePointInterface* vrv::Fermata::GetTimePointInterface</definition>
+        <argsstring>() override</argsstring>
         <name>GetTimePointInterface</name>
         <reimplements refid="classvrv_1_1_object_1a738ca662cfaa09bb0122966cb29b43c6">GetTimePointInterface</reimplements>
         <briefdescription>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/fermata.h" line="52" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/fermata.h" bodystart="52" bodyend="52"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/fermata.h" line="52" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/fermata.h" bodystart="52" bodyend="52"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -617,7 +617,6 @@
       <member refid="classvrv_1_1_object_1a6c19b533f485fd10e5649bb5c441c884" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>AdjustClefChanges</name></member>
       <member refid="classvrv_1_1_object_1acfa149d616638b3935e56e1ee41ce61a" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>AdjustCrossStaffContent</name></member>
       <member refid="classvrv_1_1_object_1abeee6db6564ff37f1fd686033751d51f" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>AdjustCrossStaffYPos</name></member>
-      <member refid="classvrv_1_1_object_1a91e929fac940d876aa172b0b6c160c26" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>AdjustCrossStaffYPosEnd</name></member>
       <member refid="classvrv_1_1_object_1a1745790d27bcd5c9b11754ea44fdc376" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>AdjustDots</name></member>
       <member refid="classvrv_1_1_object_1ae0790c79940de6c0bd58e9022043b493" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>AdjustDotsEnd</name></member>
       <member refid="classvrv_1_1_object_1a757300b40f61c72a86c66fe9df7f8b5d" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>AdjustFloatingPositionerGrps</name></member>
@@ -637,7 +636,7 @@
       <member refid="classvrv_1_1_object_1a8aaf88c9ab32e7cc92a6d39189031caa" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>AdjustTupletNumOverlap</name></member>
       <member refid="classvrv_1_1_object_1a59773566ac731e75fa34166fa1d78aa3" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>AdjustTupletsX</name></member>
       <member refid="classvrv_1_1_object_1a80bc658bb972eabcee2d0aa536386cfc" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>AdjustTupletsY</name></member>
-      <member refid="classvrv_1_1_control_element_1aea71378f75a3c731e87e23494a2b1acc" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>AdjustXOverflow</name></member>
+      <member refid="classvrv_1_1_control_element_1aac6e4a89487d479670c8db760c720073" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>AdjustXOverflow</name></member>
       <member refid="classvrv_1_1_object_1ae373581b24540ce6c308bd86ccca6e93" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>AdjustXOverflowEnd</name></member>
       <member refid="classvrv_1_1_object_1adacbf7e25c213d82303c739fec53828a" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>AdjustXPos</name></member>
       <member refid="classvrv_1_1_object_1aa328ebfcfc62471e4fb0ed19523bcc1c" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>AdjustXPosEnd</name></member>
@@ -681,7 +680,7 @@
       <member refid="classvrv_1_1_object_1aee6f8abfde8d2fe26b067f97b6ba9f0b" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>CastOffSystemsEnd</name></member>
       <member refid="classvrv_1_1_object_1a0af864d1b64a70d4ec8b62a520114bde" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>ClearChildren</name></member>
       <member refid="classvrv_1_1_object_1a667b4432b8f9d9e92bfd34fe5c885099" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>ClearRelinquishedChildren</name></member>
-      <member refid="classvrv_1_1_fermata_1ad24103e5d24e542fa2cedf31d10b1c9e" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>Clone</name></member>
+      <member refid="classvrv_1_1_fermata_1ae4015a263194111dabdd34e0e6a781a6" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>Clone</name></member>
       <member refid="classvrv_1_1_object_1a2a1c4d0ed1a15f33637b03670c9aa98f" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>CloneReset</name></member>
       <member refid="classvrv_1_1_control_element_1a85bf4f12a52a3484bd10a638b4b3fbe8" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>ControlElement</name></member>
       <member refid="classvrv_1_1_control_element_1aa9be5bc11d51b4d8c0be3ccc93baf6bf" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>ControlElement</name></member>
@@ -701,7 +700,7 @@
       <member refid="classvrv_1_1_bounding_box_1a52ac837dc797c5f292c98ddb3f43a098" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>Encloses</name></member>
       <member refid="classvrv_1_1_fermata_1acb3c8f88bd73f26627fffc29b1df1a99" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>Fermata</name></member>
       <member refid="classvrv_1_1_object_1a3749f83f36adfc8748438ca17b1e5f91" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>FillFlatList</name></member>
-      <member refid="classvrv_1_1_floating_object_1a26acefe41b29aa28c85eb244f624d2c1" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>FillStaffCurrentTimeSpanning</name></member>
+      <member refid="classvrv_1_1_floating_object_1a63b8dc8ca0b4943fe59552e75bd88347" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>FillStaffCurrentTimeSpanning</name></member>
       <member refid="classvrv_1_1_object_1aa35be27cc82fd95f7a353a705721778b" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>FillStaffCurrentTimeSpanningEnd</name></member>
       <member refid="classvrv_1_1_object_1afe64fa5f9df4e735ed7f1e9a5935a339" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>FindAllBetween</name></member>
       <member refid="classvrv_1_1_object_1aa5fd51861abce2d3237ef9d115d32ba6" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>FindAllByComparison</name></member>
@@ -747,7 +746,7 @@
       <member refid="classvrv_1_1_control_element_1a22f1eb1bb3c79301295a80e054804fa8" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetChildRendAlignment</name></member>
       <member refid="classvrv_1_1_object_1a36a7f108361c29dae9b92078359ca105" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetChildrenForModification</name></member>
       <member refid="classvrv_1_1_object_1aab95929358aad8730f586319a3417264" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>GetClassId</name></member>
-      <member refid="classvrv_1_1_fermata_1a63abb14ee6e2bbc2e2af07a9a7337e1b" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>GetClassName</name></member>
+      <member refid="classvrv_1_1_fermata_1a01d1ea40f44ee5585fa9d29deae202db" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>GetClassName</name></member>
       <member refid="classvrv_1_1_object_1a65066ae5b40a4dc3aab9bf76abc57d36" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetClosingComment</name></member>
       <member refid="classvrv_1_1_object_1aa8a0722010e05e1e2cb04d90a9535cc4" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetComment</name></member>
       <member refid="classvrv_1_1_bounding_box_1a74fec7caf937bc6892cd0de8c1f29355" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetContentBottom</name></member>
@@ -762,8 +761,8 @@
       <member refid="classvrv_1_1_floating_object_1aa26df3350328cd96704f766ac3db0615" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetCurrentFloatingPositioner</name></member>
       <member refid="classvrv_1_1_object_1a318be52d7897d2a16d699374a4b702ed" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetDescendantIndex</name></member>
       <member refid="classvrv_1_1_floating_object_1a67e6ef3b80f122a42bcccd89701bc298" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetDrawingGrpId</name></member>
-      <member refid="classvrv_1_1_floating_object_1a9173ddc12fab3e823f592b4688cec8e0" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>GetDrawingX</name></member>
-      <member refid="classvrv_1_1_floating_object_1a44a902421018e125f191dfcb31d8c50a" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>GetDrawingY</name></member>
+      <member refid="classvrv_1_1_floating_object_1a5c6d15419321ce64bde495eb3b6b9039" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>GetDrawingX</name></member>
+      <member refid="classvrv_1_1_floating_object_1a87db0b64d7840dcfd006f6af2b32e4bb" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>GetDrawingY</name></member>
       <member refid="classvrv_1_1_object_1a60120fd33bf1f7227c4dc2f6a9b265c7" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>GetDurationInterface</name></member>
       <member refid="classvrv_1_1_fermata_1a501ce1338df913386be0e31e07290fe6" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetEnclosingGlyphs</name></member>
       <member refid="classvrv_1_1_object_1a12c0e976636a155de9c58ead6cd743f8" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>GetFacsimileInterface</name></member>
@@ -777,7 +776,7 @@
       <member refid="classvrv_1_1_object_1a908d56fef5a5dd9b9808555ab4ea4daf" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetLastAncestorNot</name></member>
       <member refid="classvrv_1_1_control_element_1a6958cd8e98487b05df80adf872de0353" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetLayerPlace</name></member>
       <member refid="classvrv_1_1_bounding_box_1af329372204a34520779e6b0d0596e8b9" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetLeftBy</name></member>
-      <member refid="classvrv_1_1_control_element_1a5f10fa01845e54916a8cc68a29ee96a6" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>GetLinkingInterface</name></member>
+      <member refid="classvrv_1_1_control_element_1a1ab03ccd8e1610d29508e9e0bb7bc7c5" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>GetLinkingInterface</name></member>
       <member refid="classvrv_1_1_floating_object_1ab6520fb847c3341d60fba34277e011e0" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetMaxDrawingYRel</name></member>
       <member refid="classvrv_1_1_object_1ab2e351247e616a3f30eaf2e3d125f054" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetNext</name></member>
       <member refid="classvrv_1_1_object_1a3fda6549b288e139959f2e50355792e7" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetNext</name></member>
@@ -804,7 +803,7 @@
       <member refid="classvrv_1_1_time_point_interface_1a54007f47ab2054a75b29618b8b47dd4f" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetStartMeasure</name></member>
       <member refid="classvrv_1_1_object_1a8f790811faa78e214ba76d2a728fa8e5" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>GetStemmedDrawingInterface</name></member>
       <member refid="classvrv_1_1_object_1ac2308546f247b47d6fdaaf0e90490fa5" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>GetTextDirInterface</name></member>
-      <member refid="classvrv_1_1_fermata_1aa494aa59a8c97fb1385bb1f7ab322948" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>GetTimePointInterface</name></member>
+      <member refid="classvrv_1_1_fermata_1af92473b20eb996dd62399775fd9cbdb9" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>GetTimePointInterface</name></member>
       <member refid="classvrv_1_1_object_1a2ac1817c7492a51e6bb550f3002b32de" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>GetTimeSpanningInterface</name></member>
       <member refid="classvrv_1_1_bounding_box_1a9dae1c4940695c403ba67841512f94f3" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetTopBy</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a27a48797d818dd92d3f7ff82f0678a17" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>GetTstampStaves</name></member>
@@ -859,8 +858,8 @@
       <member refid="classvrv_1_1_object_1a07dfe3de52f16cff12eefabe11c6cd96" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>IsExpansion</name></member>
       <member refid="classvrv_1_1_floating_object_1a8781df9fac1bad66c08cdae278be23e4" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>IsExtenderElement</name></member>
       <member refid="classvrv_1_1_object_1a3b131f39c868a8a1e9b768bdc0eae811" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>IsFloatingObject</name></member>
-      <member refid="classvrv_1_1_linking_interface_1ab262eec19e41662b2873f407b93cab0e" prot="public" virt="virtual" ambiguityscope="vrv::"><scope>vrv::Fermata</scope><name>IsInterface</name></member>
-      <member refid="classvrv_1_1_time_point_interface_1a37f500cfc23ea2606a9dd7bfd64f202a" prot="public" virt="virtual" ambiguityscope="vrv::TimePointInterface::"><scope>vrv::Fermata</scope><name>IsInterface</name></member>
+      <member refid="classvrv_1_1_linking_interface_1ad1a3839eaa143c325b741151e7f9b084" prot="public" virt="virtual" ambiguityscope="vrv::"><scope>vrv::Fermata</scope><name>IsInterface</name></member>
+      <member refid="classvrv_1_1_time_point_interface_1a48095974fd4c595c478be793c0d9a5aa" prot="public" virt="virtual" ambiguityscope="vrv::TimePointInterface::"><scope>vrv::Fermata</scope><name>IsInterface</name></member>
       <member refid="classvrv_1_1_object_1a311186b3525f994471394fcc38bbcda8" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>IsLayerElement</name></member>
       <member refid="classvrv_1_1_object_1a4eec6780edc930e49d9874c1036735a4" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>IsModified</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a11824d7f91a23984c3655671971c3592" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>IsOnStaff</name></member>
@@ -905,11 +904,11 @@
       <member refid="classvrv_1_1_object_1a72def6c07065fa48ad7cd844dd4b2ed5" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>PreparePointersByLayer</name></member>
       <member refid="classvrv_1_1_object_1a4d2903e69118df1b627cb99ecd036948" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>PrepareProcessingLists</name></member>
       <member refid="classvrv_1_1_object_1a1512dc40ee5cbcefd3dd463776e24c0c" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>PrepareRpt</name></member>
-      <member refid="classvrv_1_1_floating_object_1a2c126764fd8116a54fa94700ef98494f" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>PrepareTimePointing</name></member>
+      <member refid="classvrv_1_1_floating_object_1a6bc20d3cca7e15e9b1f3c77fb682d3ad" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>PrepareTimePointing</name></member>
       <member refid="classvrv_1_1_object_1a5ea18a2c77fc31c9a0eee2a948660d5b" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>PrepareTimePointingEnd</name></member>
-      <member refid="classvrv_1_1_floating_object_1ad0b4a076b299fc6e9ed32cc51aab1bf7" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>PrepareTimeSpanning</name></member>
+      <member refid="classvrv_1_1_floating_object_1aa06caf3b3d926aeb0cca580a357bb074" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>PrepareTimeSpanning</name></member>
       <member refid="classvrv_1_1_object_1a8049b8c19d504912d3eb535b8aba95e0" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>PrepareTimeSpanningEnd</name></member>
-      <member refid="classvrv_1_1_floating_object_1ada6846dddeb271c4eb74a753ed763ed7" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>PrepareTimestamps</name></member>
+      <member refid="classvrv_1_1_floating_object_1af97233f871331ab970d0b2b48dd7ecf1" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>PrepareTimestamps</name></member>
       <member refid="classvrv_1_1_object_1a9cf511bc173faafb24b5a87149acb897" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>PrepareTimestampsEnd</name></member>
       <member refid="classvrv_1_1_object_1a22908db94736af382a1c905b2c648210" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>Process</name></member>
       <member refid="classvrv_1_1_bounding_box_1a74c28d831f2e14aec44a848a961f8b42" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>RectBottomOverlap</name></member>
@@ -925,15 +924,15 @@
       <member refid="classvrv_1_1_object_1a4a7cd0786cfd3119a6dd128c25b67a33" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>ReorderByXPos</name></member>
       <member refid="classvrv_1_1_object_1aba32b01b87b8f31455e68c77a3d8ee40" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>ReplaceChild</name></member>
       <member refid="classvrv_1_1_object_1aa1c070a008b1db58a5036c27c2fb8307" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>ReplaceDrawingValuesInStaffDef</name></member>
-      <member refid="classvrv_1_1_fermata_1aa3caa25c49531e06f69bb0828a629258" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>Reset</name></member>
+      <member refid="classvrv_1_1_fermata_1afb7670f0139028cd80c08d6a7801f9be" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>Reset</name></member>
       <member refid="classvrv_1_1_bounding_box_1ae79b9324168608f36cb71c8ca4174220" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>ResetBoundingBox</name></member>
-      <member refid="classvrv_1_1_object_1a7cd2ff14f4324ac8fdb54739fac93532" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>ResetCachedDrawingX</name></member>
-      <member refid="classvrv_1_1_object_1acdcf2a3a18e5b0451d902720ef1408ac" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>ResetCachedDrawingY</name></member>
-      <member refid="classvrv_1_1_control_element_1ae06ab6dbac9fdbbf4efb3343e11ca91d" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>ResetDrawing</name></member>
-      <member refid="classvrv_1_1_floating_object_1a73c7828c73925d4b483c90ea3c45e0a6" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>ResetHorizontalAlignment</name></member>
+      <member refid="classvrv_1_1_object_1a859aecc00ab75fc7ed2f2780bc0a6a51" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>ResetCachedDrawingX</name></member>
+      <member refid="classvrv_1_1_object_1ac5b28a8625980d057d6cad83dbd52e26" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>ResetCachedDrawingY</name></member>
+      <member refid="classvrv_1_1_control_element_1a140abaf59998bdcc8f4a20edc4a1d566" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>ResetDrawing</name></member>
+      <member refid="classvrv_1_1_floating_object_1aca4747e3c2a91341b053520e4da715ef" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>ResetHorizontalAlignment</name></member>
       <member refid="classvrv_1_1_object_1a5d22ebda01e0b254c13d558f5ffdb098" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>ResetParent</name></member>
       <member refid="classvrv_1_1_object_1aadeb99ea27241a64bf942e469a04445e" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>ResetUuid</name></member>
-      <member refid="classvrv_1_1_floating_object_1a641ed5d645ade83bf5c970d3e5cc02c4" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>ResetVerticalAlignment</name></member>
+      <member refid="classvrv_1_1_floating_object_1a9a9271ae963c1406e733365a4ac860d8" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>ResetVerticalAlignment</name></member>
       <member refid="classvrv_1_1_object_1a93b5fe054b2d26fe91ff50a5861fe08c" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>ResolveMIDITies</name></member>
       <member refid="classvrv_1_1_object_1a973a6ee5f5504cfdad58a940a95c313e" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>ResolveRehPosition</name></member>
       <member refid="classvrv_1_1_object_1a74097c855ed070b02fd06810207d0ac0" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>Save</name></member>
@@ -979,11 +978,11 @@
       <member refid="classvrv_1_1_object_1af4f98c391b356cf51597e4777bf31185" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>SwapUuid</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a470841fa6a90f560e791882bd0d7ff3d" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>TimePointInterface</name></member>
       <member refid="classvrv_1_1_object_1a0ee02f42628df9898a57349899c1ba3e" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>Transpose</name></member>
-      <member refid="classvrv_1_1_floating_object_1a8bf4262ef0383452bb3666bd1b077a67" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>UnCastOff</name></member>
-      <member refid="classvrv_1_1_floating_object_1abbd346830de7211ed94772948f0e9513" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>UpdateContentBBoxX</name></member>
-      <member refid="classvrv_1_1_floating_object_1a0f19109398376ce67d8211faa133e7f5" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>UpdateContentBBoxY</name></member>
-      <member refid="classvrv_1_1_floating_object_1a78079e4ba538d3e212ba44a79fc32f61" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>UpdateSelfBBoxX</name></member>
-      <member refid="classvrv_1_1_floating_object_1a1dec773ac9a13ce9abb0b750488061e7" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>UpdateSelfBBoxY</name></member>
+      <member refid="classvrv_1_1_floating_object_1ad76285ff372a1a1c5eca6fb7e9923afe" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>UnCastOff</name></member>
+      <member refid="classvrv_1_1_floating_object_1a79c7af4267643b1bc2a783be841975c2" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>UpdateContentBBoxX</name></member>
+      <member refid="classvrv_1_1_floating_object_1a88f281e9a6394157894a57b546346017" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>UpdateContentBBoxY</name></member>
+      <member refid="classvrv_1_1_floating_object_1a29ef524752d056b1f60cab88e77a32ee" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>UpdateSelfBBoxX</name></member>
+      <member refid="classvrv_1_1_floating_object_1a1868c149ca8ff416b6275e1637eaa626" prot="public" virt="virtual"><scope>vrv::Fermata</scope><name>UpdateSelfBBoxY</name></member>
       <member refid="classvrv_1_1_bounding_box_1aa10dbbf04b3707900490d1ced0ea0418" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>VerticalBottomOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1acdb36f4007fc88d79a81eed3b440c536" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>VerticalContentOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1ab9bbe1447c1e512c9154825086f34aef" prot="public" virt="non-virtual"><scope>vrv::Fermata</scope><name>VerticalSelfOverlap</name></member>

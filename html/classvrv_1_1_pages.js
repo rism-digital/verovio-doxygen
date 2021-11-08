@@ -3,7 +3,7 @@ var classvrv_1_1_pages =
     [ "Pages", "classvrv_1_1_pages.html#aa2115da64bd22c25290374b2736bd853", null ],
     [ "~Pages", "classvrv_1_1_pages.html#a5743bce59ada64c53a5fba4c4923b4e3", null ],
     [ "ConvertFrom", "classvrv_1_1_pages.html#a9933244934e7661f6d830088a51b8169", null ],
-    [ "GetClassName", "classvrv_1_1_pages.html#ad3f3236ac1f36516613e8d3e057b4712", null ],
-    [ "IsSupportedChild", "classvrv_1_1_pages.html#a528a2d9aa5a7f1c49b1b9ad09a0491f1", null ],
-    [ "Reset", "classvrv_1_1_pages.html#a3f334f0863e2e38f5bd2144bc86df19a", null ]
+    [ "GetClassName", "classvrv_1_1_pages.html#ac11726537e8e20b8460b5a14feb4e95e", null ],
+    [ "IsSupportedChild", "classvrv_1_1_pages.html#a8a17f0b25f6099dde7d2ee3238b1a196", null ],
+    [ "Reset", "classvrv_1_1_pages.html#a51f82d6c1aa03f5ce8427ff81921c06b", null ]
 ];

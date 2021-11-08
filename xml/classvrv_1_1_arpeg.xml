@@ -40,10 +40,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="40" column="13"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_arpeg_1ab774c9c55fb6b881f101d15b077276ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_arpeg_1afe45574f26ac977fffa6606eebd77cf4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
-        <definition>virtual Object* vrv::Arpeg::Clone</definition>
-        <argsstring>() const</argsstring>
+        <definition>Object* vrv::Arpeg::Clone</definition>
+        <argsstring>() const override</argsstring>
         <name>Clone</name>
         <reimplements refid="classvrv_1_1_object_1ab2d363effa62d58a65f8aba1330c1379">Clone</reimplements>
         <briefdescription>
@@ -54,28 +54,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="41" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" bodystart="41" bodyend="41"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="41" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" bodystart="41" bodyend="41"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_arpeg_1a153c3a0c91d7a8a3ef171d10b70ea933" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_arpeg_1a647b7b96ece5fba2d339f1c0487cd601" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>virtual void vrv::Arpeg::Reset</definition>
-        <argsstring>()</argsstring>
+        <definition>void vrv::Arpeg::Reset</definition>
+        <argsstring>() override</argsstring>
         <name>Reset</name>
-        <reimplements refid="classvrv_1_1_control_element_1a4798e8da3af4e07b1b4d95d7df515416">Reset</reimplements>
+        <reimplements refid="classvrv_1_1_interface_1a5dac3707db3650101729ff5610bb6200">Reset</reimplements>
         <briefdescription>
-<para>Reset the object, that is 1) removing all childs and 2) resetting all attributes. </para>
+<para>Virtual reset method. </para>
         </briefdescription>
         <detaileddescription>
-<para>The method is virtual, so <emphasis>always</emphasis> call the parent in the method overriding it. </para>
+<para>Needs to be overridden in child classes. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="42" column="18"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="42" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_arpeg_1a80bcbb96849f494a87db04dae4a6c6a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_arpeg_1a17e42f22b656e63343988de7d35c83b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
-        <definition>virtual std::string vrv::Arpeg::GetClassName</definition>
-        <argsstring>() const</argsstring>
+        <definition>std::string vrv::Arpeg::GetClassName</definition>
+        <argsstring>() const override</argsstring>
         <name>GetClassName</name>
         <reimplements refid="classvrv_1_1_object_1a85f5f4c2c61b31f3e0cfafccf6893dd3">GetClassName</reimplements>
         <briefdescription>
@@ -84,32 +84,32 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="43" column="25" bodyfile="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" bodystart="43" bodyend="43"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="43" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" bodystart="43" bodyend="43"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Get the X drawing position (relative to the top note)</header>
-      <memberdef kind="function" id="classvrv_1_1_arpeg_1acc23d06529c683a70382d3388e95fce2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_arpeg_1ade898fda0b1c2c40f71f9cbd3db29468" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>int</type>
-        <definition>virtual int vrv::Arpeg::GetDrawingX</definition>
-        <argsstring>() const</argsstring>
+        <definition>int vrv::Arpeg::GetDrawingX</definition>
+        <argsstring>() const override</argsstring>
         <name>GetDrawingX</name>
-        <reimplements refid="classvrv_1_1_floating_object_1a9173ddc12fab3e823f592b4688cec8e0">GetDrawingX</reimplements>
+        <reimplements refid="classvrv_1_1_bounding_box_1a97b2b5920eb6e08b8bdf8d791c853dce">GetDrawingX</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="50" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="50" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Getter to interfaces</header>
-      <memberdef kind="function" id="classvrv_1_1_arpeg_1a955f2163f0bd80878193db1abfbebea3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_arpeg_1aed082a24fccd557c428f7352ed07c25d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classvrv_1_1_plist_interface" kindref="compound">PlistInterface</ref> *</type>
-        <definition>virtual PlistInterface* vrv::Arpeg::GetPlistInterface</definition>
-        <argsstring>()</argsstring>
+        <definition>PlistInterface* vrv::Arpeg::GetPlistInterface</definition>
+        <argsstring>() override</argsstring>
         <name>GetPlistInterface</name>
         <reimplements refid="classvrv_1_1_object_1a32a7bc21b1323f31cb9d9e68686ce345">GetPlistInterface</reimplements>
         <briefdescription>
@@ -118,12 +118,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="68" column="28" bodyfile="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" bodystart="68" bodyend="68"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="68" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" bodystart="68" bodyend="68"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_arpeg_1ac0555a056f010e504f5942e6ea8440fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_arpeg_1ab7560deb538af4eb83471f4b1c961195" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classvrv_1_1_time_point_interface" kindref="compound">TimePointInterface</ref> *</type>
-        <definition>virtual TimePointInterface* vrv::Arpeg::GetTimePointInterface</definition>
-        <argsstring>()</argsstring>
+        <definition>TimePointInterface* vrv::Arpeg::GetTimePointInterface</definition>
+        <argsstring>() override</argsstring>
         <name>GetTimePointInterface</name>
         <reimplements refid="classvrv_1_1_object_1a738ca662cfaa09bb0122966cb29b43c6">GetTimePointInterface</reimplements>
         <briefdescription>
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="69" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" bodystart="69" bodyend="69"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="69" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" bodystart="69" bodyend="69"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -169,10 +169,10 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classvrv_1_1_arpeg_1a5dd32e1801e6fd0b203ac40b5e99c3a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_arpeg_1a6f38ec62caaa443acae4c3eb3a67ca55" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
-        <definition>virtual int vrv::Arpeg::AdjustArpeg</definition>
-        <argsstring>(FunctorParams *functorParams)</argsstring>
+        <definition>int vrv::Arpeg::AdjustArpeg</definition>
+        <argsstring>(FunctorParams *functorParams) override</argsstring>
         <name>AdjustArpeg</name>
         <reimplements refid="classvrv_1_1_object_1a9a7ac871bbd388bc57ad3efbcd5523e4">AdjustArpeg</reimplements>
         <param>
@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="98" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="98" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -244,12 +244,12 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="62" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_arpeg_1a3fc3e103a514919ab04b862eeb4a3cfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_arpeg_1abd0f1f222639caacbefa8c5bb8dbadbf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
-        <definition>virtual bool vrv::Arpeg::IsValidRef</definition>
-        <argsstring>(Object *ref)</argsstring>
+        <definition>bool vrv::Arpeg::IsValidRef</definition>
+        <argsstring>(Object *ref) const override</argsstring>
         <name>IsValidRef</name>
-        <reimplements refid="classvrv_1_1_plist_interface_1ab77a229a4b86768589a86c988851f447">IsValidRef</reimplements>
+        <reimplements refid="classvrv_1_1_plist_interface_1a41696d546a3fbe6d889db2c100b7bebb">IsValidRef</reimplements>
         <param>
           <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
           <declname>ref</declname>
@@ -261,14 +261,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="83" column="18"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="83" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_arpeg_1afe4fc5c1345b90506ebe58d2f30dfaba" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_arpeg_1a8e007b23c0fb1dc5ddd24e2ec4ce72df" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
-        <definition>virtual int vrv::Arpeg::ResetHorizontalAlignment</definition>
-        <argsstring>(FunctorParams *functorParams)</argsstring>
+        <definition>int vrv::Arpeg::ResetHorizontalAlignment</definition>
+        <argsstring>(FunctorParams *functorParams) override</argsstring>
         <name>ResetHorizontalAlignment</name>
-        <reimplements refid="classvrv_1_1_floating_object_1a73c7828c73925d4b483c90ea3c45e0a6">ResetHorizontalAlignment</reimplements>
+        <reimplements refid="classvrv_1_1_object_1acea387d6c12925339a10f94312d9a82f">ResetHorizontalAlignment</reimplements>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
           <declname>functorParams</declname>
@@ -280,14 +280,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="92" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="92" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_arpeg_1a90a11373c1862998e957cc4d4d8ba8b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_arpeg_1a0e27c4e0866b5a988f8c8eca5512c2ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
-        <definition>virtual int vrv::Arpeg::ResetDrawing</definition>
-        <argsstring>(FunctorParams *functorParams)</argsstring>
+        <definition>int vrv::Arpeg::ResetDrawing</definition>
+        <argsstring>(FunctorParams *functorParams) override</argsstring>
         <name>ResetDrawing</name>
-        <reimplements refid="classvrv_1_1_control_element_1ae06ab6dbac9fdbbf4efb3343e11ca91d">ResetDrawing</reimplements>
+        <reimplements refid="classvrv_1_1_object_1a69ad18810d5249e8bb56be54884d2b50">ResetDrawing</reimplements>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
           <declname>functorParams</declname>
@@ -299,7 +299,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="104" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/arpeg.h" line="104" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -748,7 +748,7 @@
       <member refid="classvrv_1_1_plist_interface_1abf9d04ad183281727a87426c82c3c8d1" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>AddRefAllowDuplicate</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a67678cf06ae06579a830344df5c5598a" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>AddStaff</name></member>
       <member refid="classvrv_1_1_object_1a08855458e45646f3831f2edf7c8a77e0" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustAccidX</name></member>
-      <member refid="classvrv_1_1_arpeg_1a5dd32e1801e6fd0b203ac40b5e99c3a3" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustArpeg</name></member>
+      <member refid="classvrv_1_1_arpeg_1a6f38ec62caaa443acae4c3eb3a67ca55" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustArpeg</name></member>
       <member refid="classvrv_1_1_object_1adbd52d9a86b0a97174b734269a690048" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustArpegEnd</name></member>
       <member refid="classvrv_1_1_object_1a6b400f3d27479c0a45865bb97d21a879" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustArtic</name></member>
       <member refid="classvrv_1_1_object_1a0f7c68b80209c30180004962bff3c8f0" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustArticWithSlurs</name></member>
@@ -757,7 +757,6 @@
       <member refid="classvrv_1_1_object_1a6c19b533f485fd10e5649bb5c441c884" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustClefChanges</name></member>
       <member refid="classvrv_1_1_object_1acfa149d616638b3935e56e1ee41ce61a" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustCrossStaffContent</name></member>
       <member refid="classvrv_1_1_object_1abeee6db6564ff37f1fd686033751d51f" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustCrossStaffYPos</name></member>
-      <member refid="classvrv_1_1_object_1a91e929fac940d876aa172b0b6c160c26" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustCrossStaffYPosEnd</name></member>
       <member refid="classvrv_1_1_object_1a1745790d27bcd5c9b11754ea44fdc376" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustDots</name></member>
       <member refid="classvrv_1_1_object_1ae0790c79940de6c0bd58e9022043b493" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustDotsEnd</name></member>
       <member refid="classvrv_1_1_object_1a757300b40f61c72a86c66fe9df7f8b5d" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustFloatingPositionerGrps</name></member>
@@ -777,7 +776,7 @@
       <member refid="classvrv_1_1_object_1a8aaf88c9ab32e7cc92a6d39189031caa" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustTupletNumOverlap</name></member>
       <member refid="classvrv_1_1_object_1a59773566ac731e75fa34166fa1d78aa3" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustTupletsX</name></member>
       <member refid="classvrv_1_1_object_1a80bc658bb972eabcee2d0aa536386cfc" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustTupletsY</name></member>
-      <member refid="classvrv_1_1_control_element_1aea71378f75a3c731e87e23494a2b1acc" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustXOverflow</name></member>
+      <member refid="classvrv_1_1_control_element_1aac6e4a89487d479670c8db760c720073" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustXOverflow</name></member>
       <member refid="classvrv_1_1_object_1ae373581b24540ce6c308bd86ccca6e93" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustXOverflowEnd</name></member>
       <member refid="classvrv_1_1_object_1adacbf7e25c213d82303c739fec53828a" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustXPos</name></member>
       <member refid="classvrv_1_1_object_1aa328ebfcfc62471e4fb0ed19523bcc1c" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>AdjustXPosEnd</name></member>
@@ -822,7 +821,7 @@
       <member refid="classvrv_1_1_object_1aee6f8abfde8d2fe26b067f97b6ba9f0b" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>CastOffSystemsEnd</name></member>
       <member refid="classvrv_1_1_object_1a0af864d1b64a70d4ec8b62a520114bde" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>ClearChildren</name></member>
       <member refid="classvrv_1_1_object_1a667b4432b8f9d9e92bfd34fe5c885099" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>ClearRelinquishedChildren</name></member>
-      <member refid="classvrv_1_1_arpeg_1ab774c9c55fb6b881f101d15b077276ee" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>Clone</name></member>
+      <member refid="classvrv_1_1_arpeg_1afe45574f26ac977fffa6606eebd77cf4" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>Clone</name></member>
       <member refid="classvrv_1_1_object_1a2a1c4d0ed1a15f33637b03670c9aa98f" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>CloneReset</name></member>
       <member refid="classvrv_1_1_control_element_1a85bf4f12a52a3484bd10a638b4b3fbe8" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>ControlElement</name></member>
       <member refid="classvrv_1_1_control_element_1aa9be5bc11d51b4d8c0be3ccc93baf6bf" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>ControlElement</name></member>
@@ -840,7 +839,7 @@
       <member refid="classvrv_1_1_object_1ac846569894fc8b08083e5a8526ba5834" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>DetachChild</name></member>
       <member refid="classvrv_1_1_bounding_box_1a52ac837dc797c5f292c98ddb3f43a098" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>Encloses</name></member>
       <member refid="classvrv_1_1_object_1a3749f83f36adfc8748438ca17b1e5f91" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>FillFlatList</name></member>
-      <member refid="classvrv_1_1_floating_object_1a26acefe41b29aa28c85eb244f624d2c1" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>FillStaffCurrentTimeSpanning</name></member>
+      <member refid="classvrv_1_1_floating_object_1a63b8dc8ca0b4943fe59552e75bd88347" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>FillStaffCurrentTimeSpanning</name></member>
       <member refid="classvrv_1_1_object_1aa35be27cc82fd95f7a353a705721778b" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>FillStaffCurrentTimeSpanningEnd</name></member>
       <member refid="classvrv_1_1_object_1afe64fa5f9df4e735ed7f1e9a5935a339" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>FindAllBetween</name></member>
       <member refid="classvrv_1_1_object_1aa5fd51861abce2d3237ef9d115d32ba6" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>FindAllByComparison</name></member>
@@ -887,7 +886,7 @@
       <member refid="classvrv_1_1_control_element_1a22f1eb1bb3c79301295a80e054804fa8" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetChildRendAlignment</name></member>
       <member refid="classvrv_1_1_object_1a36a7f108361c29dae9b92078359ca105" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetChildrenForModification</name></member>
       <member refid="classvrv_1_1_object_1aab95929358aad8730f586319a3417264" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetClassId</name></member>
-      <member refid="classvrv_1_1_arpeg_1a80bcbb96849f494a87db04dae4a6c6a0" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetClassName</name></member>
+      <member refid="classvrv_1_1_arpeg_1a17e42f22b656e63343988de7d35c83b9" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetClassName</name></member>
       <member refid="classvrv_1_1_object_1a65066ae5b40a4dc3aab9bf76abc57d36" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetClosingComment</name></member>
       <member refid="classvrv_1_1_object_1aa8a0722010e05e1e2cb04d90a9535cc4" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetComment</name></member>
       <member refid="classvrv_1_1_bounding_box_1a74fec7caf937bc6892cd0de8c1f29355" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetContentBottom</name></member>
@@ -904,9 +903,9 @@
       <member refid="classvrv_1_1_object_1a318be52d7897d2a16d699374a4b702ed" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetDescendantIndex</name></member>
       <member refid="classvrv_1_1_floating_object_1a67e6ef3b80f122a42bcccd89701bc298" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetDrawingGrpId</name></member>
       <member refid="classvrv_1_1_arpeg_1a5f238eed6fd2aded2572ee35c07509be" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetDrawingTopBottomNotes</name></member>
-      <member refid="classvrv_1_1_arpeg_1acc23d06529c683a70382d3388e95fce2" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetDrawingX</name></member>
+      <member refid="classvrv_1_1_arpeg_1ade898fda0b1c2c40f71f9cbd3db29468" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetDrawingX</name></member>
       <member refid="classvrv_1_1_arpeg_1ae90124eac70122805a217f580a19c19d" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetDrawingXRel</name></member>
-      <member refid="classvrv_1_1_floating_object_1a44a902421018e125f191dfcb31d8c50a" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetDrawingY</name></member>
+      <member refid="classvrv_1_1_floating_object_1a87db0b64d7840dcfd006f6af2b32e4bb" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetDrawingY</name></member>
       <member refid="classvrv_1_1_object_1a60120fd33bf1f7227c4dc2f6a9b265c7" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetDurationInterface</name></member>
       <member refid="classvrv_1_1_object_1a12c0e976636a155de9c58ead6cd743f8" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetFacsimileInterface</name></member>
       <member refid="classvrv_1_1_object_1a4f539160a7684d67d0c4e01e5dd06c36" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetFirst</name></member>
@@ -918,7 +917,7 @@
       <member refid="classvrv_1_1_object_1a908d56fef5a5dd9b9808555ab4ea4daf" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetLastAncestorNot</name></member>
       <member refid="classvrv_1_1_control_element_1a6958cd8e98487b05df80adf872de0353" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetLayerPlace</name></member>
       <member refid="classvrv_1_1_bounding_box_1af329372204a34520779e6b0d0596e8b9" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetLeftBy</name></member>
-      <member refid="classvrv_1_1_control_element_1a5f10fa01845e54916a8cc68a29ee96a6" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetLinkingInterface</name></member>
+      <member refid="classvrv_1_1_control_element_1a1ab03ccd8e1610d29508e9e0bb7bc7c5" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetLinkingInterface</name></member>
       <member refid="classvrv_1_1_floating_object_1ab6520fb847c3341d60fba34277e011e0" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetMaxDrawingYRel</name></member>
       <member refid="classvrv_1_1_object_1ab2e351247e616a3f30eaf2e3d125f054" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetNext</name></member>
       <member refid="classvrv_1_1_object_1a3fda6549b288e139959f2e50355792e7" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetNext</name></member>
@@ -926,7 +925,7 @@
       <member refid="classvrv_1_1_linking_interface_1adf9d13147005f947251ada4a02c71257" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetNextMeasure</name></member>
       <member refid="classvrv_1_1_object_1a96ca869c3849c0f108655ad5d900a2c7" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetParent</name></member>
       <member refid="classvrv_1_1_object_1aace2a15227fa3db1f20b5acbb7f2b4d2" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetPitchInterface</name></member>
-      <member refid="classvrv_1_1_arpeg_1a955f2163f0bd80878193db1abfbebea3" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetPlistInterface</name></member>
+      <member refid="classvrv_1_1_arpeg_1aed082a24fccd557c428f7352ed07c25d" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetPlistInterface</name></member>
       <member refid="classvrv_1_1_object_1a68eb08599ac194e3dfc2c149e96db67a" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetPositionInterface</name></member>
       <member refid="classvrv_1_1_object_1a26a7c60cdf50a4072927aa671112f1f3" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetPrevious</name></member>
       <member refid="classvrv_1_1_plist_interface_1a39c3b83292bbcb3b6b2f10ba7a74188f" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetRefs</name></member>
@@ -946,7 +945,7 @@
       <member refid="classvrv_1_1_time_point_interface_1a54007f47ab2054a75b29618b8b47dd4f" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetStartMeasure</name></member>
       <member refid="classvrv_1_1_object_1a8f790811faa78e214ba76d2a728fa8e5" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetStemmedDrawingInterface</name></member>
       <member refid="classvrv_1_1_object_1ac2308546f247b47d6fdaaf0e90490fa5" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetTextDirInterface</name></member>
-      <member refid="classvrv_1_1_arpeg_1ac0555a056f010e504f5942e6ea8440fe" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetTimePointInterface</name></member>
+      <member refid="classvrv_1_1_arpeg_1ab7560deb538af4eb83471f4b1c961195" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetTimePointInterface</name></member>
       <member refid="classvrv_1_1_object_1a2ac1817c7492a51e6bb550f3002b32de" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>GetTimeSpanningInterface</name></member>
       <member refid="classvrv_1_1_bounding_box_1a9dae1c4940695c403ba67841512f94f3" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetTopBy</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a27a48797d818dd92d3f7ff82f0678a17" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>GetTstampStaves</name></member>
@@ -1003,9 +1002,9 @@
       <member refid="classvrv_1_1_object_1a07dfe3de52f16cff12eefabe11c6cd96" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>IsExpansion</name></member>
       <member refid="classvrv_1_1_floating_object_1a8781df9fac1bad66c08cdae278be23e4" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>IsExtenderElement</name></member>
       <member refid="classvrv_1_1_object_1a3b131f39c868a8a1e9b768bdc0eae811" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>IsFloatingObject</name></member>
-      <member refid="classvrv_1_1_linking_interface_1ab262eec19e41662b2873f407b93cab0e" prot="public" virt="virtual" ambiguityscope="vrv::"><scope>vrv::Arpeg</scope><name>IsInterface</name></member>
-      <member refid="classvrv_1_1_plist_interface_1a023fd81e924659fbfac3ba4e60fafebe" prot="public" virt="virtual" ambiguityscope="vrv::PlistInterface::"><scope>vrv::Arpeg</scope><name>IsInterface</name></member>
-      <member refid="classvrv_1_1_time_point_interface_1a37f500cfc23ea2606a9dd7bfd64f202a" prot="public" virt="virtual" ambiguityscope="vrv::TimePointInterface::"><scope>vrv::Arpeg</scope><name>IsInterface</name></member>
+      <member refid="classvrv_1_1_linking_interface_1ad1a3839eaa143c325b741151e7f9b084" prot="public" virt="virtual" ambiguityscope="vrv::"><scope>vrv::Arpeg</scope><name>IsInterface</name></member>
+      <member refid="classvrv_1_1_plist_interface_1a1c9412527898b4ebb0c807d2666b88e3" prot="public" virt="virtual" ambiguityscope="vrv::PlistInterface::"><scope>vrv::Arpeg</scope><name>IsInterface</name></member>
+      <member refid="classvrv_1_1_time_point_interface_1a48095974fd4c595c478be793c0d9a5aa" prot="public" virt="virtual" ambiguityscope="vrv::TimePointInterface::"><scope>vrv::Arpeg</scope><name>IsInterface</name></member>
       <member refid="classvrv_1_1_object_1a311186b3525f994471394fcc38bbcda8" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>IsLayerElement</name></member>
       <member refid="classvrv_1_1_object_1a4eec6780edc930e49d9874c1036735a4" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>IsModified</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a11824d7f91a23984c3655671971c3592" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>IsOnStaff</name></member>
@@ -1016,7 +1015,7 @@
       <member refid="classvrv_1_1_object_1a06ffb8f7f251aeea862abe1f76b5599d" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>IsSupportedChild</name></member>
       <member refid="classvrv_1_1_object_1a334a7956ff32ade0704f4afdd74f37a6" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>IsSystemElement</name></member>
       <member refid="classvrv_1_1_object_1a958bf53eb4117b0438aa5ddb9264c1c8" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>IsTextElement</name></member>
-      <member refid="classvrv_1_1_arpeg_1a3fc3e103a514919ab04b862eeb4a3cfa" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>IsValidRef</name></member>
+      <member refid="classvrv_1_1_arpeg_1abd0f1f222639caacbefa8c5bb8dbadbf" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>IsValidRef</name></member>
       <member refid="classvrv_1_1_object_1af644f5ed4600bb29ca03ded3f95b3467" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>JustifyX</name></member>
       <member refid="classvrv_1_1_object_1afc5a347cc3aa0a158036cdabc32157da" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>JustifyY</name></member>
       <member refid="classvrv_1_1_object_1a9af0cce7b5db85a68ed87c274176aa66" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>LayerCountInTimeSpan</name></member>
@@ -1053,11 +1052,11 @@
       <member refid="classvrv_1_1_object_1a72def6c07065fa48ad7cd844dd4b2ed5" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>PreparePointersByLayer</name></member>
       <member refid="classvrv_1_1_object_1a4d2903e69118df1b627cb99ecd036948" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>PrepareProcessingLists</name></member>
       <member refid="classvrv_1_1_object_1a1512dc40ee5cbcefd3dd463776e24c0c" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>PrepareRpt</name></member>
-      <member refid="classvrv_1_1_floating_object_1a2c126764fd8116a54fa94700ef98494f" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>PrepareTimePointing</name></member>
+      <member refid="classvrv_1_1_floating_object_1a6bc20d3cca7e15e9b1f3c77fb682d3ad" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>PrepareTimePointing</name></member>
       <member refid="classvrv_1_1_object_1a5ea18a2c77fc31c9a0eee2a948660d5b" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>PrepareTimePointingEnd</name></member>
-      <member refid="classvrv_1_1_floating_object_1ad0b4a076b299fc6e9ed32cc51aab1bf7" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>PrepareTimeSpanning</name></member>
+      <member refid="classvrv_1_1_floating_object_1aa06caf3b3d926aeb0cca580a357bb074" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>PrepareTimeSpanning</name></member>
       <member refid="classvrv_1_1_object_1a8049b8c19d504912d3eb535b8aba95e0" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>PrepareTimeSpanningEnd</name></member>
-      <member refid="classvrv_1_1_floating_object_1ada6846dddeb271c4eb74a753ed763ed7" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>PrepareTimestamps</name></member>
+      <member refid="classvrv_1_1_floating_object_1af97233f871331ab970d0b2b48dd7ecf1" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>PrepareTimestamps</name></member>
       <member refid="classvrv_1_1_object_1a9cf511bc173faafb24b5a87149acb897" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>PrepareTimestampsEnd</name></member>
       <member refid="classvrv_1_1_object_1a22908db94736af382a1c905b2c648210" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>Process</name></member>
       <member refid="classvrv_1_1_bounding_box_1a74c28d831f2e14aec44a848a961f8b42" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>RectBottomOverlap</name></member>
@@ -1074,15 +1073,15 @@
       <member refid="classvrv_1_1_object_1a4a7cd0786cfd3119a6dd128c25b67a33" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>ReorderByXPos</name></member>
       <member refid="classvrv_1_1_object_1aba32b01b87b8f31455e68c77a3d8ee40" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>ReplaceChild</name></member>
       <member refid="classvrv_1_1_object_1aa1c070a008b1db58a5036c27c2fb8307" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>ReplaceDrawingValuesInStaffDef</name></member>
-      <member refid="classvrv_1_1_arpeg_1a153c3a0c91d7a8a3ef171d10b70ea933" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>Reset</name></member>
+      <member refid="classvrv_1_1_arpeg_1a647b7b96ece5fba2d339f1c0487cd601" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>Reset</name></member>
       <member refid="classvrv_1_1_bounding_box_1ae79b9324168608f36cb71c8ca4174220" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>ResetBoundingBox</name></member>
-      <member refid="classvrv_1_1_object_1a7cd2ff14f4324ac8fdb54739fac93532" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>ResetCachedDrawingX</name></member>
-      <member refid="classvrv_1_1_object_1acdcf2a3a18e5b0451d902720ef1408ac" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>ResetCachedDrawingY</name></member>
-      <member refid="classvrv_1_1_arpeg_1a90a11373c1862998e957cc4d4d8ba8b3" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>ResetDrawing</name></member>
-      <member refid="classvrv_1_1_arpeg_1afe4fc5c1345b90506ebe58d2f30dfaba" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>ResetHorizontalAlignment</name></member>
+      <member refid="classvrv_1_1_object_1a859aecc00ab75fc7ed2f2780bc0a6a51" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>ResetCachedDrawingX</name></member>
+      <member refid="classvrv_1_1_object_1ac5b28a8625980d057d6cad83dbd52e26" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>ResetCachedDrawingY</name></member>
+      <member refid="classvrv_1_1_arpeg_1a0e27c4e0866b5a988f8c8eca5512c2ea" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>ResetDrawing</name></member>
+      <member refid="classvrv_1_1_arpeg_1a8e007b23c0fb1dc5ddd24e2ec4ce72df" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>ResetHorizontalAlignment</name></member>
       <member refid="classvrv_1_1_object_1a5d22ebda01e0b254c13d558f5ffdb098" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>ResetParent</name></member>
       <member refid="classvrv_1_1_object_1aadeb99ea27241a64bf942e469a04445e" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>ResetUuid</name></member>
-      <member refid="classvrv_1_1_floating_object_1a641ed5d645ade83bf5c970d3e5cc02c4" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>ResetVerticalAlignment</name></member>
+      <member refid="classvrv_1_1_floating_object_1a9a9271ae963c1406e733365a4ac860d8" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>ResetVerticalAlignment</name></member>
       <member refid="classvrv_1_1_object_1a93b5fe054b2d26fe91ff50a5861fe08c" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>ResolveMIDITies</name></member>
       <member refid="classvrv_1_1_object_1a973a6ee5f5504cfdad58a940a95c313e" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>ResolveRehPosition</name></member>
       <member refid="classvrv_1_1_object_1a74097c855ed070b02fd06810207d0ac0" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>Save</name></member>
@@ -1131,11 +1130,11 @@
       <member refid="classvrv_1_1_object_1af4f98c391b356cf51597e4777bf31185" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>SwapUuid</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a470841fa6a90f560e791882bd0d7ff3d" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>TimePointInterface</name></member>
       <member refid="classvrv_1_1_object_1a0ee02f42628df9898a57349899c1ba3e" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>Transpose</name></member>
-      <member refid="classvrv_1_1_floating_object_1a8bf4262ef0383452bb3666bd1b077a67" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>UnCastOff</name></member>
-      <member refid="classvrv_1_1_floating_object_1abbd346830de7211ed94772948f0e9513" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>UpdateContentBBoxX</name></member>
-      <member refid="classvrv_1_1_floating_object_1a0f19109398376ce67d8211faa133e7f5" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>UpdateContentBBoxY</name></member>
-      <member refid="classvrv_1_1_floating_object_1a78079e4ba538d3e212ba44a79fc32f61" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>UpdateSelfBBoxX</name></member>
-      <member refid="classvrv_1_1_floating_object_1a1dec773ac9a13ce9abb0b750488061e7" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>UpdateSelfBBoxY</name></member>
+      <member refid="classvrv_1_1_floating_object_1ad76285ff372a1a1c5eca6fb7e9923afe" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>UnCastOff</name></member>
+      <member refid="classvrv_1_1_floating_object_1a79c7af4267643b1bc2a783be841975c2" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>UpdateContentBBoxX</name></member>
+      <member refid="classvrv_1_1_floating_object_1a88f281e9a6394157894a57b546346017" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>UpdateContentBBoxY</name></member>
+      <member refid="classvrv_1_1_floating_object_1a29ef524752d056b1f60cab88e77a32ee" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>UpdateSelfBBoxX</name></member>
+      <member refid="classvrv_1_1_floating_object_1a1868c149ca8ff416b6275e1637eaa626" prot="public" virt="virtual"><scope>vrv::Arpeg</scope><name>UpdateSelfBBoxY</name></member>
       <member refid="classvrv_1_1_bounding_box_1aa10dbbf04b3707900490d1ced0ea0418" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>VerticalBottomOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1acdb36f4007fc88d79a81eed3b440c536" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>VerticalContentOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1ab9bbe1447c1e512c9154825086f34aef" prot="public" virt="non-virtual"><scope>vrv::Arpeg</scope><name>VerticalSelfOverlap</name></member>

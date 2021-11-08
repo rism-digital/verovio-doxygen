@@ -2,8 +2,8 @@ var classvrv_1_1_tab_dur_sym =
 [
     [ "TabDurSym", "classvrv_1_1_tab_dur_sym.html#a966da7f1e2e14f69f3f2c33a890bc479", null ],
     [ "~TabDurSym", "classvrv_1_1_tab_dur_sym.html#aecf7bfb050098a92f34dc22c8fbd075c", null ],
-    [ "GetClassName", "classvrv_1_1_tab_dur_sym.html#ac9ebcdb95e02b71a3efd0ce61d6b6d56", null ],
-    [ "HasToBeAligned", "classvrv_1_1_tab_dur_sym.html#a0ebf0b6997a94816ef2e68a05646ca6f", null ],
-    [ "IsSupportedChild", "classvrv_1_1_tab_dur_sym.html#af430b2d6ba6fc6d94ba50fed5b898f49", null ],
-    [ "Reset", "classvrv_1_1_tab_dur_sym.html#a35e719fd0e6335bc3f56892252db16cd", null ]
+    [ "GetClassName", "classvrv_1_1_tab_dur_sym.html#a46660090388ff3a6a2236a13b08ad638", null ],
+    [ "HasToBeAligned", "classvrv_1_1_tab_dur_sym.html#a1e85bce43dc9ad280471f7ef5f147da0", null ],
+    [ "IsSupportedChild", "classvrv_1_1_tab_dur_sym.html#a2d7ba2c667df361c9dcda9df8b75093a", null ],
+    [ "Reset", "classvrv_1_1_tab_dur_sym.html#adbcbfec64d9b682d161c8448f0ecfde1", null ]
 ];

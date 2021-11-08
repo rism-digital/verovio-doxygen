@@ -23,7 +23,7 @@ var classvrv_1_1_device_context =
     [ "DrawRoundedRectangle", "classvrv_1_1_device_context.html#af2b653a984a2da914664f19376e1e706", null ],
     [ "DrawSpline", "classvrv_1_1_device_context.html#a610036a7413ea52b0ce8905d04ecb23d", null ],
     [ "DrawSvgShape", "classvrv_1_1_device_context.html#ac3574c9b1f29fc5ca9cd9f0450ec0ac6", null ],
-    [ "DrawText", "classvrv_1_1_device_context.html#a32d79de07f2a19bc209f2534534b1039", null ],
+    [ "DrawText", "classvrv_1_1_device_context.html#acbea195840911ab3648a35fa95afb4d5", null ],
     [ "EndCustomGraphic", "classvrv_1_1_device_context.html#a5aa27f5f2cfae5422eeffd5c9b18b102", null ],
     [ "EndGraphic", "classvrv_1_1_device_context.html#af40102f26edf1fd7386c6aa8ade0a0df", null ],
     [ "EndPage", "classvrv_1_1_device_context.html#abc900bbc5f67f4a122eea48a80d17673", null ],

@@ -6,5 +6,5 @@ var searchData=
   ['drawcurrentpage_1608',['DrawCurrentPage',['../classvrv_1_1_view.html#a1ab1a369039358ad7b6440c62b442ceb',1,'vrv::View']]],
   ['drawingisvisible_1609',['DrawingIsVisible',['../classvrv_1_1_staff.html#abb9be0b494c5daf6344dccdbfb657a55',1,'vrv::Staff']]],
   ['drawmetersigfigures_1610',['DrawMeterSigFigures',['../classvrv_1_1_view.html#aa655040c3577f02e209269f860437c7d',1,'vrv::View']]],
-  ['drawplaceholder_1611',['DrawPlaceholder',['../classvrv_1_1_b_box_device_context.html#ace984ec9c99483969dbd20c27c26ff1f',1,'vrv::BBoxDeviceContext::DrawPlaceholder()'],['../classvrv_1_1_device_context.html#a98b03a16d2a3ead9ac3d7e3bafe2490d',1,'vrv::DeviceContext::DrawPlaceholder()']]]
+  ['drawplaceholder_1611',['DrawPlaceholder',['../classvrv_1_1_b_box_device_context.html#aecb9534cc060d29f5ce315ce6c252ad4',1,'vrv::BBoxDeviceContext::DrawPlaceholder()'],['../classvrv_1_1_device_context.html#a98b03a16d2a3ead9ac3d7e3bafe2490d',1,'vrv::DeviceContext::DrawPlaceholder()']]]
 ];
