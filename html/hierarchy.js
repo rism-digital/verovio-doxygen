@@ -373,6 +373,9 @@ var hierarchy =
       [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ],
       [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
     ] ],
+    [ "AttLayerIdent", null, [
+      [ "vrv::Slur", "classvrv_1_1_slur.html", null ]
+    ] ],
     [ "AttLigatureVis", null, [
       [ "vrv::Ligature", "classvrv_1_1_ligature.html", null ]
     ] ],

@@ -105,7 +105,7 @@ Inheritance diagram for vrv::Slur:</div>
 <area href="classvrv_1_1_interface.html" title="This is a base class for regrouping MEI att classes." alt="vrv::Interface" shape="rect" coords="176,56,342,80"/>
 <area href="classvrv_1_1_interface.html" title="This is a base class for regrouping MEI att classes." alt="vrv::Interface" shape="rect" coords="528,56,694,80"/>
 <area href="classvrv_1_1_bounding_box.html" title="This class represents a basic object in the layout domain." alt="vrv::BoundingBox" shape="rect" coords="0,0,166,24"/>
-<area href="classvrv_1_1_phrase.html" alt="vrv::Phrase" shape="rect" coords="1144,280,1310,304"/>
+<area href="classvrv_1_1_phrase.html" alt="vrv::Phrase" shape="rect" coords="1232,280,1398,304"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -119,12 +119,10 @@ std::pair&lt; <a class="el" href="classvrv_1_1_point.html">Point</a>, <a class="
 std::vector&lt; <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_slur.html#a1d7fffff92e4bc291a51d532c62e4d0f">CollectSpannedElements</a> (<a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff, int xMin, int xMax, char spanningType)</td></tr>
 <tr class="memdesc:a1d7fffff92e4bc291a51d532c62e4d0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine layer elements spanned by the slur. <br /></td></tr>
 <tr class="separator:a1d7fffff92e4bc291a51d532c62e4d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a054686027f7672ea9c8d2789490a2e18"><td class="memItemLeft" align="right" valign="top"><a id="a054686027f7672ea9c8d2789490a2e18"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AdjustSlur</b> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="el" href="classvrv_1_1_floating_curve_positioner.html">FloatingCurvePositioner</a> *curve, <a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff)</td></tr>
-<tr class="separator:a054686027f7672ea9c8d2789490a2e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9f7ea0dd157317dfcbbcb787793726e"><td class="memItemLeft" align="right" valign="top"><a id="af9f7ea0dd157317dfcbbcb787793726e"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetAdjustedSlurAngle</b> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="el" href="classvrv_1_1_point.html">Point</a> &amp;p1, <a class="el" href="classvrv_1_1_point.html">Point</a> &amp;p2, curvature_CURVEDIR curveDir)</td></tr>
-<tr class="separator:af9f7ea0dd157317dfcbbcb787793726e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf4c1de0dbc2f1b2d36702dfd24f9353"><td class="memItemLeft" align="right" valign="top"><a id="aaf4c1de0dbc2f1b2d36702dfd24f9353"></a>
+<a class="el" href="classvrv_1_1_staff.html">Staff</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_slur.html#aaf4c1de0dbc2f1b2d36702dfd24f9353">CalculateExtremalStaff</a> (<a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff, int xMin, int xMax, char spanningType)</td></tr>
+<tr class="memdesc:aaf4c1de0dbc2f1b2d36702dfd24f9353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the staff where the slur's floating curve positioner lives. <br /></td></tr>
+<tr class="separator:aaf4c1de0dbc2f1b2d36702dfd24f9353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0677990365f508cb89a70766367cd89"><td class="memItemLeft" align="right" valign="top"><a id="ad0677990365f508cb89a70766367cd89"></a>
 curvature_CURVEDIR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_slur.html#ad0677990365f508cb89a70766367cd89">GetPreferredCurveDirection</a> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="el" href="classvrv_1_1_layer.html">Layer</a> *layer, <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *layerElement, data_STEMDIRECTION noteStemDir, bool isAboveStaffCenter)</td></tr>
 <tr class="memdesc:ad0677990365f508cb89a70766367cd89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get preferred curve direction based on number of conditions: presence of other layers, stem direction, etc. <br /></td></tr>
@@ -174,6 +172,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDrawingCurvedir</b
 <tr class="memitem:aebb2e1d5c4efce7392bdd0aaff627573"><td class="memItemLeft" align="right" valign="top"><a id="aebb2e1d5c4efce7392bdd0aaff627573"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasDrawingCurvedir</b> () const</td></tr>
 <tr class="separator:aebb2e1d5c4efce7392bdd0aaff627573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a054686027f7672ea9c8d2789490a2e18"><td class="memItemLeft" align="right" valign="top"><a id="a054686027f7672ea9c8d2789490a2e18"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_slur.html#a054686027f7672ea9c8d2789490a2e18">AdjustSlur</a> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="el" href="classvrv_1_1_floating_curve_positioner.html">FloatingCurvePositioner</a> *curve, <a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff)</td></tr>
+<tr class="memdesc:a054686027f7672ea9c8d2789490a2e18"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_slur.html">Slur</a> adjustment. <br /></td></tr>
+<tr class="separator:a054686027f7672ea9c8d2789490a2e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f7ea0dd157317dfcbbcb787793726e"><td class="memItemLeft" align="right" valign="top"><a id="af9f7ea0dd157317dfcbbcb787793726e"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetAdjustedSlurAngle</b> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="el" href="classvrv_1_1_point.html">Point</a> &amp;p1, <a class="el" href="classvrv_1_1_point.html">Point</a> &amp;p2, curvature_CURVEDIR curveDir)</td></tr>
+<tr class="separator:af9f7ea0dd157317dfcbbcb787793726e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvrv_1_1_control_element"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_control_element')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_control_element.html">vrv::ControlElement</a></td></tr>
 <tr class="memitem:a22f1eb1bb3c79301295a80e054804fa8 inherit pub_methods_classvrv_1_1_control_element"><td class="memItemLeft" align="right" valign="top"><a id="a22f1eb1bb3c79301295a80e054804fa8"></a>
 data_HORIZONTALALIGNMENT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_control_element.html#a22f1eb1bb3c79301295a80e054804fa8">GetChildRendAlignment</a> ()</td></tr>
@@ -1575,7 +1581,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_startUuid</b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_slur.html">Slur</a></li>
-    <li class="footer">Generated on Wed Nov 10 2021 14:43:13 for Verovio by
+    <li class="footer">Generated on Wed Nov 10 2021 15:57:06 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

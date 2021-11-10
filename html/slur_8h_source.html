@@ -121,82 +121,85 @@ $(document).ready(function(){initNavTree('slur_8h_source.html',''); initResizabl
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;             <span class="keyword">public</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html">TimeSpanningInterface</a>,</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;             <span class="keyword">public</span> AttColor,</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;             <span class="keyword">public</span> AttCurvature,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;             <span class="keyword">public</span> AttCurveRend {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>(ClassId classId);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>(ClassId classId, <span class="keyword">const</span> std::string &amp;classIdStr);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_slur.html">Slur</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classvrv_1_1_slur.html#a9e7812ed9bc701150792295d4e277802">   52</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_slur.html#a9e7812ed9bc701150792295d4e277802">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_slur.html">Slur</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_slur.html#a44edee9624d0cf10b0e35bd772aca3a5">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Slur&quot;</span>; }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    TimePointInterface *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TimePointInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    TimeSpanningInterface *GetTimeSpanningInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TimeSpanningInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    curvature_CURVEDIR GetDrawingCurvedir()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingCurvedir; }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> SetDrawingCurvedir(curvature_CURVEDIR curvedir) { m_drawingCurvedir = curvedir; }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> HasDrawingCurvedir()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_drawingCurvedir != curvature_CURVEDIR_NONE); }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    std::pair&lt;Point, Point&gt; <a class="code" href="classvrv_1_1_slur.html#a3d8f95dd4c091e8c3efb01aead7d1925">AdjustCoordinates</a>(</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        Doc *doc, Staff *staff, std::pair&lt;Point, Point&gt; points, <span class="keywordtype">int</span> spanningType, curvature_CURVEDIR drawingCurveDir);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::vector&lt;LayerElement *&gt; <a class="code" href="classvrv_1_1_slur.html#a1d7fffff92e4bc291a51d532c62e4d0f">CollectSpannedElements</a>(Staff *staff, <span class="keywordtype">int</span> xMin, <span class="keywordtype">int</span> xMax, <span class="keywordtype">char</span> spanningType);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> AdjustSlur(Doc *doc, FloatingCurvePositioner *curve, Staff *staff);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">float</span> GetAdjustedSlurAngle(Doc *doc, Point &amp;p1, Point &amp;p2, curvature_CURVEDIR curveDir);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    curvature_CURVEDIR <a class="code" href="classvrv_1_1_slur.html#ad0677990365f508cb89a70766367cd89">GetPreferredCurveDirection</a>(</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        Doc *doc, Layer *layer, LayerElement *layerElement, data_STEMDIRECTION noteStemDir, <span class="keywordtype">bool</span> isAboveStaffCenter);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_slur.html#a37fa49f3e56c2b97c6989e7136711baf">ResetDrawing</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// Discard certain spanned elements</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> FilterSpannedElements(FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> margin);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// Calculate the vertical shift of the slur end points</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    std::pair&lt;int, int&gt; CalcEndPointShift(FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> margin);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;             <span class="keyword">public</span> AttCurveRend,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;             <span class="keyword">public</span> AttLayerIdent {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>(ClassId classId);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>(ClassId classId, <span class="keyword">const</span> std::string &amp;classIdStr);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_slur.html">Slur</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classvrv_1_1_slur.html#a9e7812ed9bc701150792295d4e277802">   53</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_slur.html#a9e7812ed9bc701150792295d4e277802">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_slur.html">Slur</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_slur.html#a44edee9624d0cf10b0e35bd772aca3a5">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Slur&quot;</span>; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    TimePointInterface *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TimePointInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    TimeSpanningInterface *GetTimeSpanningInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TimeSpanningInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    curvature_CURVEDIR GetDrawingCurvedir()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingCurvedir; }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> SetDrawingCurvedir(curvature_CURVEDIR curvedir) { m_drawingCurvedir = curvedir; }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> HasDrawingCurvedir()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_drawingCurvedir != curvature_CURVEDIR_NONE); }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    std::pair&lt;Point, Point&gt; <a class="code" href="classvrv_1_1_slur.html#a3d8f95dd4c091e8c3efb01aead7d1925">AdjustCoordinates</a>(</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        Doc *doc, Staff *staff, std::pair&lt;Point, Point&gt; points, <span class="keywordtype">int</span> spanningType, curvature_CURVEDIR drawingCurveDir);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    std::vector&lt;LayerElement *&gt; <a class="code" href="classvrv_1_1_slur.html#a1d7fffff92e4bc291a51d532c62e4d0f">CollectSpannedElements</a>(Staff *staff, <span class="keywordtype">int</span> xMin, <span class="keywordtype">int</span> xMax, <span class="keywordtype">char</span> spanningType);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    Staff *<a class="code" href="classvrv_1_1_slur.html#aaf4c1de0dbc2f1b2d36702dfd24f9353">CalculateExtremalStaff</a>(Staff *staff, <span class="keywordtype">int</span> xMin, <span class="keywordtype">int</span> xMax, <span class="keywordtype">char</span> spanningType);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_slur.html#a054686027f7672ea9c8d2789490a2e18">AdjustSlur</a>(Doc *doc, FloatingCurvePositioner *curve, Staff *staff);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">float</span> GetAdjustedSlurAngle(Doc *doc, Point &amp;p1, Point &amp;p2, curvature_CURVEDIR curveDir);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    curvature_CURVEDIR <a class="code" href="classvrv_1_1_slur.html#ad0677990365f508cb89a70766367cd89">GetPreferredCurveDirection</a>(</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        Doc *doc, Layer *layer, LayerElement *layerElement, data_STEMDIRECTION noteStemDir, <span class="keywordtype">bool</span> isAboveStaffCenter);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_slur.html#a37fa49f3e56c2b97c6989e7136711baf">ResetDrawing</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// Calculate the horizontal control point offset</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    std::tuple&lt;bool, int, int&gt; CalcControlPointOffset(</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> margin);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// Calculate the vertical control point shift</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    std::pair&lt;int, int&gt; CalcControlPointVerticalShift(</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> margin);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// Discard certain spanned elements</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> FilterSpannedElements(FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> margin);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// Helper function to determine curve direction for the slurs that start at grace note</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    curvature_CURVEDIR GetGraceCurveDirection(Doc *doc);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// Calculate the vertical shift of the slur end points</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    std::pair&lt;int, int&gt; CalcEndPointShift(FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> margin);</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// Solve the constraints for vertical control point adjustment</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    std::pair&lt;int, int&gt; SolveControlPointConstraints(<span class="keyword">const</span> std::list&lt;ControlPointConstraint&gt; &amp;constraints);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="comment">// Improve the slur shape by adjusting the control point heights</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">void</span> AdjustSlurShape(BezierCurve &amp;bezierCurve, curvature_CURVEDIR dir, <span class="keywordtype">int</span> unit);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">// Shift end points for collisions nearby</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">void</span> ShiftEndPoints(<span class="keywordtype">int</span> &amp;shiftLeft, <span class="keywordtype">int</span> &amp;shiftRight, <span class="keywordtype">double</span> ratio, <span class="keywordtype">int</span> intersection) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// Calculate the horizontal control point offset</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    std::tuple&lt;bool, int, int&gt; CalcControlPointOffset(</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> margin);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// Calculate the vertical control point shift</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    std::pair&lt;int, int&gt; CalcControlPointVerticalShift(</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> margin);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">// Helper function to determine curve direction for the slurs that start at grace note</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    curvature_CURVEDIR GetGraceCurveDirection(Doc *doc);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">// Solve the constraints for vertical control point adjustment</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    std::pair&lt;int, int&gt; SolveControlPointConstraints(<span class="keyword">const</span> std::list&lt;ControlPointConstraint&gt; &amp;constraints);</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">// Rotate the slope by a given number of degrees, but choose smaller angles if already close to the vertical axis</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">// Choose doublingBound as the positive slope value where doubling has the same effect as rotating:</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="comment">// tan(atan(doublingBound) + degrees * PI / 180.0) ≈ 2.0 * doublingBound</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">double</span> RotateSlope(<span class="keywordtype">double</span> slope, <span class="keywordtype">double</span> degrees, <span class="keywordtype">double</span> doublingBound, <span class="keywordtype">bool</span> upwards) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    curvature_CURVEDIR m_drawingCurvedir;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;};</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">// Improve the slur shape by adjusting the control point heights</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordtype">void</span> AdjustSlurShape(BezierCurve &amp;bezierCurve, curvature_CURVEDIR dir, <span class="keywordtype">int</span> unit);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="comment">// Shift end points for collisions nearby</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">void</span> ShiftEndPoints(<span class="keywordtype">int</span> &amp;shiftLeft, <span class="keywordtype">int</span> &amp;shiftRight, <span class="keywordtype">double</span> ratio, <span class="keywordtype">int</span> intersection) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">// Rotate the slope by a given number of degrees, but choose smaller angles if already close to the vertical axis</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">// Choose doublingBound as the positive slope value where doubling has the same effect as rotating:</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">// tan(atan(doublingBound) + degrees * PI / 180.0) ≈ 2.0 * doublingBound</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">double</span> RotateSlope(<span class="keywordtype">double</span> slope, <span class="keywordtype">double</span> degrees, <span class="keywordtype">double</span> doublingBound, <span class="keywordtype">bool</span> upwards) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    curvature_CURVEDIR m_drawingCurvedir;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;};</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_slur_html_a37fa49f3e56c2b97c6989e7136711baf"><div class="ttname"><a href="classvrv_1_1_slur.html#a37fa49f3e56c2b97c6989e7136711baf">vrv::Slur::ResetDrawing</a></div><div class="ttdeci">int ResetDrawing(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
@@ -204,9 +207,11 @@ $(document).ready(function(){initNavTree('slur_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassvrv_1_1_slur_html_a3d8f95dd4c091e8c3efb01aead7d1925"><div class="ttname"><a href="classvrv_1_1_slur.html#a3d8f95dd4c091e8c3efb01aead7d1925">vrv::Slur::AdjustCoordinates</a></div><div class="ttdeci">std::pair&lt; Point, Point &gt; AdjustCoordinates(Doc *doc, Staff *staff, std::pair&lt; Point, Point &gt; points, int spanningType, curvature_CURVEDIR drawingCurveDir)</div><div class="ttdoc">Adjust starting coordinates for the slurs depending on the curve direction and spanning type of the s...</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html"><div class="ttname"><a href="classvrv_1_1_slur.html">vrv::Slur</a></div><div class="ttdef"><b>Definition:</b> slur.h:37</div></div>
+<div class="ttc" id="aclassvrv_1_1_slur_html_aaf4c1de0dbc2f1b2d36702dfd24f9353"><div class="ttname"><a href="classvrv_1_1_slur.html#aaf4c1de0dbc2f1b2d36702dfd24f9353">vrv::Slur::CalculateExtremalStaff</a></div><div class="ttdeci">Staff * CalculateExtremalStaff(Staff *staff, int xMin, int xMax, char spanningType)</div><div class="ttdoc">Calculate the staff where the slur's floating curve positioner lives.</div></div>
 <div class="ttc" id="astructvrv_1_1_control_point_constraint_html"><div class="ttname"><a href="structvrv_1_1_control_point_constraint.html">vrv::ControlPointConstraint</a></div><div class="ttdoc">This represents a constraint ax + by &gt;= c where x and y are vertical control point adjustments.</div><div class="ttdef"><b>Definition:</b> slur.h:27</div></div>
-<div class="ttc" id="aclassvrv_1_1_slur_html_a9e7812ed9bc701150792295d4e277802"><div class="ttname"><a href="classvrv_1_1_slur.html#a9e7812ed9bc701150792295d4e277802">vrv::Slur::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> slur.h:52</div></div>
+<div class="ttc" id="aclassvrv_1_1_slur_html_a9e7812ed9bc701150792295d4e277802"><div class="ttname"><a href="classvrv_1_1_slur.html#a9e7812ed9bc701150792295d4e277802">vrv::Slur::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> slur.h:53</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html_a44edee9624d0cf10b0e35bd772aca3a5"><div class="ttname"><a href="classvrv_1_1_slur.html#a44edee9624d0cf10b0e35bd772aca3a5">vrv::Slur::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
+<div class="ttc" id="aclassvrv_1_1_slur_html_a054686027f7672ea9c8d2789490a2e18"><div class="ttname"><a href="classvrv_1_1_slur.html#a054686027f7672ea9c8d2789490a2e18">vrv::Slur::AdjustSlur</a></div><div class="ttdeci">void AdjustSlur(Doc *doc, FloatingCurvePositioner *curve, Staff *staff)</div><div class="ttdoc">Slur adjustment.</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html">vrv::TimeSpanningInterface</a></div><div class="ttdoc">This class is an interface for spanning elements, such as slur, hairpin, etc.</div><div class="ttdef"><b>Definition:</b> timeinterface.h:134</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html_a1d7fffff92e4bc291a51d532c62e4d0f"><div class="ttname"><a href="classvrv_1_1_slur.html#a1d7fffff92e4bc291a51d532c62e4d0f">vrv::Slur::CollectSpannedElements</a></div><div class="ttdeci">std::vector&lt; LayerElement * &gt; CollectSpannedElements(Staff *staff, int xMin, int xMax, char spanningType)</div><div class="ttdoc">Determine layer elements spanned by the slur.</div></div>
@@ -214,7 +219,7 @@ $(document).ready(function(){initNavTree('slur_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>slur.h</b></li>
-    <li class="footer">Generated on Wed Nov 10 2021 14:43:08 for Verovio by
+    <li class="footer">Generated on Wed Nov 10 2021 15:57:02 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

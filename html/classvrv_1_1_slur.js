@@ -6,6 +6,7 @@ var classvrv_1_1_slur =
     [ "~Slur", "classvrv_1_1_slur.html#a6487bbaf1c4a31323a85f7309853d82c", null ],
     [ "AdjustCoordinates", "classvrv_1_1_slur.html#a3d8f95dd4c091e8c3efb01aead7d1925", null ],
     [ "AdjustSlur", "classvrv_1_1_slur.html#a054686027f7672ea9c8d2789490a2e18", null ],
+    [ "CalculateExtremalStaff", "classvrv_1_1_slur.html#aaf4c1de0dbc2f1b2d36702dfd24f9353", null ],
     [ "Clone", "classvrv_1_1_slur.html#a9e7812ed9bc701150792295d4e277802", null ],
     [ "CollectSpannedElements", "classvrv_1_1_slur.html#a1d7fffff92e4bc291a51d532c62e4d0f", null ],
     [ "GetAdjustedSlurAngle", "classvrv_1_1_slur.html#af9f7ea0dd157317dfcbbcb787793726e", null ],

@@ -2,7 +2,6 @@ var classvrv_1_1_view =
 [
     [ "View", "classvrv_1_1_view.html#a721ff64f1ce15ac64a4e0b78308e84bd", null ],
     [ "~View", "classvrv_1_1_view.html#af301e8e99bc2946c263bf0ec66827a7d", null ],
-    [ "ActivateSlurInitialization", "classvrv_1_1_view.html#a771a5184eef86aff3f43df63a41e6123", null ],
     [ "CalculatePitchCode", "classvrv_1_1_view.html#a2112e69dbe8de940f486983ebfcdd21c", null ],
     [ "DoRefresh", "classvrv_1_1_view.html#ae14823561b1b9dfdae0711e77ac7dcb6", null ],
     [ "DoReset", "classvrv_1_1_view.html#a26c6f8d15d1397a68c848307974ea63c", null ],
@@ -174,6 +173,7 @@ var classvrv_1_1_view =
     [ "DrawVerticalSegmentedLine", "classvrv_1_1_view.html#acdd6c2f38b4fe9a7162b38bce75c76cb", null ],
     [ "GetNotationMode", "classvrv_1_1_view.html#afe6147dc2aa9a756204fbc2a180ec24c", null ],
     [ "GetPPUFactor", "classvrv_1_1_view.html#ae71d5dd5d3791d6ffb25dfde2b37a26f", null ],
+    [ "GetSlurHandling", "classvrv_1_1_view.html#ab488f428b7b24eb44a121308ba628efb", null ],
     [ "HasNext", "classvrv_1_1_view.html#a592f312dd1b5f9c0bda28ab7346c7b88", null ],
     [ "Next", "classvrv_1_1_view.html#ada95a25d4195465eff4652b9d7ff9e30", null ],
     [ "OnBeginEdition", "classvrv_1_1_view.html#ad1535ec16df1684ceac1d9daf05fe2be", null ],
@@ -184,6 +184,7 @@ var classvrv_1_1_view =
     [ "SetDoc", "classvrv_1_1_view.html#a851d75c2d465a1c90b7d97082b961a1b", null ],
     [ "SetPage", "classvrv_1_1_view.html#aafac411031b669991917681ad56660b2", null ],
     [ "SetScoreDefDrawingWidth", "classvrv_1_1_view.html#a303f43f2ba8d9098e6391efc79711fbf", null ],
+    [ "SetSlurHandling", "classvrv_1_1_view.html#a468ebad3111e0aeac2897840cc029f38", null ],
     [ "ToDeviceContext", "classvrv_1_1_view.html#a3847668818a6ab7867786708b43f34d8", null ],
     [ "ToDeviceContextX", "classvrv_1_1_view.html#afe9a057654a48943b239e032265aa35c", null ],
     [ "ToDeviceContextY", "classvrv_1_1_view.html#a3bd9c64e228101079a731e338f5f5060", null ],
@@ -199,9 +200,9 @@ var classvrv_1_1_view =
     [ "m_currentSystem", "classvrv_1_1_view.html#ade9b0251ef2551af69d53a220fa239c3", null ],
     [ "m_doc", "classvrv_1_1_view.html#a922bb7e5bab67bd8e28206bd6e4f8c8e", null ],
     [ "m_drawingScoreDef", "classvrv_1_1_view.html#ab16976e8a08645f3fdb70a658ede2c15", null ],
-    [ "m_initializeSlurs", "classvrv_1_1_view.html#a05b24ea0d52218f63a3524cd26008050", null ],
     [ "m_options", "classvrv_1_1_view.html#a63a1674d9b36c2b1d1ccb358cc968961", null ],
     [ "m_pageIdx", "classvrv_1_1_view.html#a5012b077ef799dbbc711144b6c15eea9", null ],
+    [ "m_slurHandling", "classvrv_1_1_view.html#af1ad1da56835eef701839b9f04a8cd36", null ],
     [ "m_slurThicknessCoefficient", "classvrv_1_1_view.html#af327cf8906ebddbc695f22db50ee5186", null ],
     [ "m_tieThicknessCoefficient", "classvrv_1_1_view.html#a2c447f5bd0fd7101c0626b723c7b7578", null ]
 ];
