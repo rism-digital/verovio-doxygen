@@ -12,6 +12,7 @@ var classvrv_1_1_accid =
     [ "GetPositionInterface", "classvrv_1_1_accid.html#ac75a911c016ddfb3984d1e7d988d9b2c", null ],
     [ "GetSymbolStr", "classvrv_1_1_accid.html#a5cc5d4c6956dff578e41c78e71d0acc1", null ],
     [ "HasToBeAligned", "classvrv_1_1_accid.html#a540367368be706aabb5722e8933e3fdc", null ],
+    [ "IsRelativeToStaff", "classvrv_1_1_accid.html#ae2550b09c4f89c0b902b8e81130a8df0", null ],
     [ "Reset", "classvrv_1_1_accid.html#a7999212141783ba58dee1b18585c54fe", null ],
     [ "ResetDrawing", "classvrv_1_1_accid.html#a03f0ed73ecd983529d2e660d4286abaa", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_accid.html#a718aba950d2c110af324f9356ab1ec4a", null ],
