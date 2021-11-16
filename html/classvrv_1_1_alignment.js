@@ -21,6 +21,7 @@ var classvrv_1_1_alignment =
     [ "GetTime", "classvrv_1_1_alignment.html#aa23ca5d6feda8b0c8d61d6d74c4d39f4", null ],
     [ "GetType", "classvrv_1_1_alignment.html#ace5b196a887793320b1461e32d721bb9", null ],
     [ "GetXRel", "classvrv_1_1_alignment.html#a7c472c8d3a8acf0a5dbf48aca473655e", null ],
+    [ "HasAccidVerticalOverlap", "classvrv_1_1_alignment.html#aea36a7b4329422432d7f07027f8d355c", null ],
     [ "HasAlignmentReference", "classvrv_1_1_alignment.html#ad28501c0afe0c8d567fcead6c756eb3f", null ],
     [ "HasGraceAligner", "classvrv_1_1_alignment.html#ae694154976e041cf41059ba6274b3d79", null ],
     [ "HasTimestampOnly", "classvrv_1_1_alignment.html#ac3940d3320063bc8c8190c396bf766db", null ],
