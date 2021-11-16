@@ -11,6 +11,7 @@ var classvrv_1_1_dynam =
     [ "IsExtenderElement", "classvrv_1_1_dynam.html#a4385439841413bc58bbb7d607fa4a234", null ],
     [ "IsSupportedChild", "classvrv_1_1_dynam.html#a8e0e3979ed3e8c5452ac858399237220", null ],
     [ "IsSymbolOnly", "classvrv_1_1_dynam.html#a240b3048c78b08eb6084c52167574032", null ],
+    [ "PrepareDynamEnclosure", "classvrv_1_1_dynam.html#a2bd884bd240ccb99f09b874dd3b342a8", null ],
     [ "PrepareFloatingGrps", "classvrv_1_1_dynam.html#ad774e03080ab6f88333de0ee2495224f", null ],
     [ "Reset", "classvrv_1_1_dynam.html#a5626f443c23d944dc4eb0c503944d0f0", null ]
 ];
