@@ -6,7 +6,7 @@ var classvrv_1_1_clef =
     [ "AdjustClefChanges", "classvrv_1_1_clef.html#add4985b14425dd6a67f0d14f9b2a5f6b", null ],
     [ "Clone", "classvrv_1_1_clef.html#abb9d12cbce277d50a99e9681a5f0f7b6", null ],
     [ "GetClassName", "classvrv_1_1_clef.html#a23a6a1a7b1a71bfc7920a6f19cbd248e", null ],
-    [ "GetClefGlyph", "classvrv_1_1_clef.html#a7226cff74124e8229a852520ee4f9708", null ],
+    [ "GetClefGlyph", "classvrv_1_1_clef.html#a2149614fb6169d8a9ab06e7556108c04", null ],
     [ "GetClefLocOffset", "classvrv_1_1_clef.html#a3024936525419403269c083ac4332940", null ],
     [ "HasToBeAligned", "classvrv_1_1_clef.html#af8a09e042f0969d9264aec72059694df", null ],
     [ "IsScoreDefElement", "classvrv_1_1_clef.html#ac3d9be304c4eaf15f129a55771cbc30f", null ],

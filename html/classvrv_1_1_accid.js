@@ -10,7 +10,7 @@ var classvrv_1_1_accid =
     [ "GetDrawingOctaveAccid", "classvrv_1_1_accid.html#afe737192e10eb924a99d93a8773a9b31", null ],
     [ "GetDrawingUnisonAccid", "classvrv_1_1_accid.html#a6bb7acaacd66d3bafb8099b493f6f5b5", null ],
     [ "GetPositionInterface", "classvrv_1_1_accid.html#ac75a911c016ddfb3984d1e7d988d9b2c", null ],
-    [ "GetSymbolStr", "classvrv_1_1_accid.html#a5cc5d4c6956dff578e41c78e71d0acc1", null ],
+    [ "GetSymbolStr", "classvrv_1_1_accid.html#a30dcb0a80535a91bc440d48448e23fc8", null ],
     [ "HasToBeAligned", "classvrv_1_1_accid.html#a540367368be706aabb5722e8933e3fdc", null ],
     [ "IsRelativeToStaff", "classvrv_1_1_accid.html#ae2550b09c4f89c0b902b8e81130a8df0", null ],
     [ "Reset", "classvrv_1_1_accid.html#a7999212141783ba58dee1b18585c54fe", null ],

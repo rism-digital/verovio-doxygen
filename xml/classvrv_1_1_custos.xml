@@ -6,6 +6,7 @@
     <basecompoundref refid="classvrv_1_1_pitch_interface" prot="public" virt="non-virtual">vrv::PitchInterface</basecompoundref>
     <basecompoundref refid="classvrv_1_1_position_interface" prot="public" virt="non-virtual">vrv::PositionInterface</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">AttColor</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">AttExtSym</basecompoundref>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors, and other standard methods</header>
       <description><para>Reset method resets all attribute classes </para>
@@ -135,6 +136,24 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/custos.h" line="51" column="10"/>
       </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_custos_1abf81681839cb1a2ca10130a725e10040" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>wchar_t</type>
+        <definition>wchar_t vrv::Custos::GetCustosGlyph</definition>
+        <argsstring>(const data_NOTATIONTYPE notationType) const</argsstring>
+        <name>GetCustosGlyph</name>
+        <param>
+          <type>const data_NOTATIONTYPE</type>
+          <declname>notationType</declname>
+        </param>
+        <briefdescription>
+<para>Return a SMuFL code for the custos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/custos.h" line="56" column="13"/>
+      </memberdef>
       <memberdef kind="function" id="classvrv_1_1_custos_1afbe2419925712e31d45c6ce3f13ba989" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
         <definition>int vrv::Custos::ResetDrawing</definition>
@@ -152,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/custos.h" line="60" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/custos.h" line="65" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_custos_1a79ba4ff35cc1c91441e33f30545628f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -171,7 +190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/custos.h" line="65" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/custos.h" line="70" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -214,6 +233,8 @@
         <childnode refid="16" relation="public-inheritance">
         </childnode>
         <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
       <node id="11">
@@ -280,6 +301,9 @@
         <link refid="classvrv_1_1_object"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="20">
+        <label>AttExtSym</label>
       </node>
       <node id="19">
         <label>AttColor</label>
@@ -373,6 +397,8 @@
         <childnode refid="43" relation="public-inheritance">
         </childnode>
         <childnode refid="46" relation="public-inheritance">
+        </childnode>
+        <childnode refid="47" relation="public-inheritance">
         </childnode>
       </node>
       <node id="31">
@@ -557,6 +583,9 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="47">
+        <label>AttExtSym</label>
+      </node>
       <node id="46">
         <label>AttColor</label>
       </node>
@@ -577,7 +606,7 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/custos.h" line="24" column="99" bodyfile="/home/runner/work/verovio/verovio/include/vrv/custos.h" bodystart="24" bodyend="72"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/custos.h" line="24" column="117" bodyfile="/home/runner/work/verovio/verovio/include/vrv/custos.h" bodystart="24" bodyend="77"/>
     <listofallmembers>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::Custos</scope><name>AddChild</name></member>
       <member refid="classvrv_1_1_object_1a1af968d5140f79fd056aa5a46d7cad11" prot="public" virt="virtual"><scope>vrv::Custos</scope><name>AddLayerElementToFlatList</name></member>
@@ -747,6 +776,7 @@
       <member refid="classvrv_1_1_bounding_box_1a7d8f116f3c72430801e43fc9f1fb1e95" prot="public" virt="non-virtual"><scope>vrv::Custos</scope><name>GetContentY2</name></member>
       <member refid="classvrv_1_1_layer_element_1af90812923cb1a9046f4287e855f64dc2" prot="public" virt="non-virtual"><scope>vrv::Custos</scope><name>GetCrossStaff</name></member>
       <member refid="classvrv_1_1_layer_element_1a92e6de075ae4c0184adea79307d8eecb" prot="public" virt="non-virtual"><scope>vrv::Custos</scope><name>GetCrossStaffRel</name></member>
+      <member refid="classvrv_1_1_custos_1abf81681839cb1a2ca10130a725e10040" prot="public" virt="non-virtual"><scope>vrv::Custos</scope><name>GetCustosGlyph</name></member>
       <member refid="classvrv_1_1_object_1a318be52d7897d2a16d699374a4b702ed" prot="public" virt="non-virtual"><scope>vrv::Custos</scope><name>GetDescendantIndex</name></member>
       <member refid="classvrv_1_1_layer_element_1ae0a0dd99fec2746b5759e15252ab4b4e" prot="protected" virt="non-virtual"><scope>vrv::Custos</scope><name>GetDotCount</name></member>
       <member refid="classvrv_1_1_layer_element_1af4f9224651b8b0e53a4224e259064c0e" prot="public" virt="non-virtual"><scope>vrv::Custos</scope><name>GetDrawingBottom</name></member>

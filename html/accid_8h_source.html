@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('accid_8h_source.html',''); initResizab
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> SetDrawingUnisonAccid(Accid *drawingUnison) { m_drawingUnison = drawingUnison; }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    Accid *GetDrawingUnisonAccid()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingUnison; }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    std::wstring <a class="code" href="classvrv_1_1_accid.html#a5cc5d4c6956dff578e41c78e71d0acc1">GetSymbolStr</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    std::wstring <a class="code" href="classvrv_1_1_accid.html#a30dcb0a80535a91bc440d48448e23fc8">GetSymbolStr</a>(<span class="keyword">const</span> data_NOTATIONTYPE notationType) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_accid.html#af252181203eaf97e6fa385e76bfb0f0d">AdjustX</a>(LayerElement *element, Doc *doc, <span class="keywordtype">int</span> staffSize, std::vector&lt;Accid *&gt; &amp;leftAccids,</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        std::vector&lt;Accid *&gt; &amp;adjustedAccids);</div>
@@ -207,8 +207,8 @@ $(document).ready(function(){initNavTree('accid_8h_source.html',''); initResizab
 <div class="ttc" id="aclassvrv_1_1_accid_html_a03f0ed73ecd983529d2e660d4286abaa"><div class="ttname"><a href="classvrv_1_1_accid.html#a03f0ed73ecd983529d2e660d4286abaa">vrv::Accid::ResetDrawing</a></div><div class="ttdeci">int ResetDrawing(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
 <div class="ttc" id="aclassvrv_1_1_accid_html_a718aba950d2c110af324f9356ab1ec4a"><div class="ttname"><a href="classvrv_1_1_accid.html#a718aba950d2c110af324f9356ab1ec4a">vrv::Accid::ResetHorizontalAlignment</a></div><div class="ttdeci">int ResetHorizontalAlignment(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetHorizontalAlignment.</div></div>
 <div class="ttc" id="aclassvrv_1_1_accid_html"><div class="ttname"><a href="classvrv_1_1_accid.html">vrv::Accid</a></div><div class="ttdoc">This class models the MEI &lt;accid&gt; element.</div><div class="ttdef"><b>Definition:</b> accid.h:27</div></div>
+<div class="ttc" id="aclassvrv_1_1_accid_html_a30dcb0a80535a91bc440d48448e23fc8"><div class="ttname"><a href="classvrv_1_1_accid.html#a30dcb0a80535a91bc440d48448e23fc8">vrv::Accid::GetSymbolStr</a></div><div class="ttdeci">std::wstring GetSymbolStr(const data_NOTATIONTYPE notationType) const</div><div class="ttdoc">Retrieve SMuFL string for the accidental.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
-<div class="ttc" id="aclassvrv_1_1_accid_html_a5cc5d4c6956dff578e41c78e71d0acc1"><div class="ttname"><a href="classvrv_1_1_accid.html#a5cc5d4c6956dff578e41c78e71d0acc1">vrv::Accid::GetSymbolStr</a></div><div class="ttdeci">std::wstring GetSymbolStr() const</div><div class="ttdoc">Retrieve SMuFL string for the accidental.</div></div>
 <div class="ttc" id="aclassvrv_1_1_accid_html_aa23814fce06c244b5a2b940fc6b06457"><div class="ttname"><a href="classvrv_1_1_accid.html#aa23814fce06c244b5a2b940fc6b06457">vrv::Accid::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> accid.h:43</div></div>
 <div class="ttc" id="aclassvrv_1_1_accid_space_sort_html"><div class="ttname"><a href="classvrv_1_1_accid_space_sort.html">vrv::AccidSpaceSort</a></div><div class="ttdoc">Sort Object by drawing Y value or by layerN.</div><div class="ttdef"><b>Definition:</b> accid.h:131</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:40</div></div>
@@ -218,7 +218,7 @@ $(document).ready(function(){initNavTree('accid_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>accid.h</b></li>
-    <li class="footer">Generated on Tue Nov 16 2021 08:47:53 for Verovio by
+    <li class="footer">Generated on Tue Nov 16 2021 10:00:30 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

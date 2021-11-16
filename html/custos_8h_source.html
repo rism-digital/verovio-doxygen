@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('custos_8h_source.html',''); initResiza
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// Custos</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classvrv_1_1_custos.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_custos.html">Custos</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>, <span class="keyword">public</span> <a class="code" href="classvrv_1_1_pitch_interface.html">PitchInterface</a>, <span class="keyword">public</span> <a class="code" href="classvrv_1_1_position_interface.html">PositionInterface</a>, <span class="keyword">public</span> AttColor {</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classvrv_1_1_custos.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_custos.html">Custos</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>, <span class="keyword">public</span> <a class="code" href="classvrv_1_1_pitch_interface.html">PitchInterface</a>, <span class="keyword">public</span> <a class="code" href="classvrv_1_1_position_interface.html">PositionInterface</a>, <span class="keyword">public</span> AttColor, <span class="keyword">public</span> AttExtSym {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classvrv_1_1_custos.html">Custos</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_custos.html">Custos</a>();</div>
@@ -122,26 +122,29 @@ $(document).ready(function(){initNavTree('custos_8h_source.html',''); initResiza
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_custos.html#a4436311935cefa3da14017a6e03166b7">IsSupportedChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_custos.html#afbe2419925712e31d45c6ce3f13ba989">ResetDrawing</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">wchar_t</span> <a class="code" href="classvrv_1_1_custos.html#abf81681839cb1a2ca10130a725e10040">GetCustosGlyph</a>(<span class="keyword">const</span> data_NOTATIONTYPE notationType) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//----------//</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_custos.html#a79ba4ff35cc1c91441e33f30545628f2">ResetHorizontalAlignment</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_custos.html#afbe2419925712e31d45c6ce3f13ba989">ResetDrawing</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_custos.html#a79ba4ff35cc1c91441e33f30545628f2">ResetHorizontalAlignment</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassvrv_1_1_custos_html_abf81681839cb1a2ca10130a725e10040"><div class="ttname"><a href="classvrv_1_1_custos.html#abf81681839cb1a2ca10130a725e10040">vrv::Custos::GetCustosGlyph</a></div><div class="ttdeci">wchar_t GetCustosGlyph(const data_NOTATIONTYPE notationType) const</div><div class="ttdoc">Return a SMuFL code for the custos.</div></div>
 <div class="ttc" id="aclassvrv_1_1_position_interface_html"><div class="ttname"><a href="classvrv_1_1_position_interface.html">vrv::PositionInterface</a></div><div class="ttdoc">This class is an interface for elements with a position on the staff, such as rests.</div><div class="ttdef"><b>Definition:</b> positioninterface.h:28</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
 <div class="ttc" id="aclassvrv_1_1_custos_html_a6bfa3e27b29e13b40e346adb3dcbaacf"><div class="ttname"><a href="classvrv_1_1_custos.html#a6bfa3e27b29e13b40e346adb3dcbaacf">vrv::Custos::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> custos.h:46</div></div>
@@ -158,7 +161,7 @@ $(document).ready(function(){initNavTree('custos_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>custos.h</b></li>
-    <li class="footer">Generated on Tue Nov 16 2021 08:47:53 for Verovio by
+    <li class="footer">Generated on Tue Nov 16 2021 10:00:30 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
