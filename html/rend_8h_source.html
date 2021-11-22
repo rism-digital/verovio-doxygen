@@ -115,19 +115,19 @@ $(document).ready(function(){initNavTree('rend_8h_source.html',''); initResizabl
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classvrv_1_1_rend.html">Rend</a>();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_rend.html">Rend</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classvrv_1_1_rend.html#a1ed2be34a1f4bd3086b67e6c91f30b09">   39</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_rend.html#a1ed2be34a1f4bd3086b67e6c91f30b09">Clone</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_rend.html">Rend</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Reset();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> std::string GetClassName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Rend&quot;</span>; }</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classvrv_1_1_rend.html#a9bfa5c6c915b185fa609dd7bb65aa1d2">   39</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_rend.html#a9bfa5c6c915b185fa609dd7bb65aa1d2">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_rend.html">Rend</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_rend.html#a90b90ee331c5173ba0a5e9e6b8122c3e">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Rend&quot;</span>; }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> AreaPosInterface *GetAreaPosInterface() { <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>AreaPosInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_rend.html#a112f5141174e5ae8a4dd70482dcd7a43">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_rend.html#a70916b87437664d19d48843882e20de6">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//----------//</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// Functors //</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//----------//</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_rend.html#afdd5efc85bd23787d48ed9ddd4aedb4d">AlignVertically</a>(FunctorParams *functorParams);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_rend.html#ae92b843d1d86f64fa76b1dc57705fcaf">AlignVertically</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//</span></div>
@@ -141,18 +141,19 @@ $(document).ready(function(){initNavTree('rend_8h_source.html',''); initResizabl
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_rend_html_afdd5efc85bd23787d48ed9ddd4aedb4d"><div class="ttname"><a href="classvrv_1_1_rend.html#afdd5efc85bd23787d48ed9ddd4aedb4d">vrv::Rend::AlignVertically</a></div><div class="ttdeci">virtual int AlignVertically(FunctorParams *functorParams)</div><div class="ttdoc">See Object::AlignVertically.</div></div>
-<div class="ttc" id="aclassvrv_1_1_rend_html_a112f5141174e5ae8a4dd70482dcd7a43"><div class="ttname"><a href="classvrv_1_1_rend.html#a112f5141174e5ae8a4dd70482dcd7a43">vrv::Rend::IsSupportedChild</a></div><div class="ttdeci">virtual bool IsSupportedChild(Object *object)</div><div class="ttdoc">Add an element (text, rend.</div></div>
+<div class="ttc" id="aclassvrv_1_1_rend_html_a70916b87437664d19d48843882e20de6"><div class="ttname"><a href="classvrv_1_1_rend.html#a70916b87437664d19d48843882e20de6">vrv::Rend::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Add an element (text, rend.</div></div>
 <div class="ttc" id="aclassvrv_1_1_text_element_html"><div class="ttname"><a href="classvrv_1_1_text_element.html">vrv::TextElement</a></div><div class="ttdef"><b>Definition:</b> textelement.h:22</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
-<div class="ttc" id="aclassvrv_1_1_rend_html_a1ed2be34a1f4bd3086b67e6c91f30b09"><div class="ttname"><a href="classvrv_1_1_rend.html#a1ed2be34a1f4bd3086b67e6c91f30b09">vrv::Rend::Clone</a></div><div class="ttdeci">virtual Object * Clone() const</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> rend.h:39</div></div>
+<div class="ttc" id="aclassvrv_1_1_rend_html_ae92b843d1d86f64fa76b1dc57705fcaf"><div class="ttname"><a href="classvrv_1_1_rend.html#ae92b843d1d86f64fa76b1dc57705fcaf">vrv::Rend::AlignVertically</a></div><div class="ttdeci">int AlignVertically(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::AlignVertically.</div></div>
+<div class="ttc" id="aclassvrv_1_1_rend_html_a90b90ee331c5173ba0a5e9e6b8122c3e"><div class="ttname"><a href="classvrv_1_1_rend.html#a90b90ee331c5173ba0a5e9e6b8122c3e">vrv::Rend::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_area_pos_interface_html"><div class="ttname"><a href="classvrv_1_1_area_pos_interface.html">vrv::AreaPosInterface</a></div><div class="ttdoc">This class is an interface for elements implementing vertically and horizontally positionned elements...</div><div class="ttdef"><b>Definition:</b> areaposinterface.h:25</div></div>
+<div class="ttc" id="aclassvrv_1_1_rend_html_a9bfa5c6c915b185fa609dd7bb65aa1d2"><div class="ttname"><a href="classvrv_1_1_rend.html#a9bfa5c6c915b185fa609dd7bb65aa1d2">vrv::Rend::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> rend.h:39</div></div>
 <div class="ttc" id="aclassvrv_1_1_rend_html"><div class="ttname"><a href="classvrv_1_1_rend.html">vrv::Rend</a></div><div class="ttdoc">This class models the MEI &lt;rend&gt; element.</div><div class="ttdef"><b>Definition:</b> rend.h:24</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>rend.h</b></li>
-    <li class="footer">Generated on Tue Aug 24 2021 06:49:20 for Verovio by
+    <li class="footer">Generated on Mon Nov 22 2021 13:26:56 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

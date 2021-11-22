@@ -108,11 +108,11 @@ $(document).ready(function(){initNavTree('text_8h_source.html',''); initResizabl
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classvrv_1_1_text.html">Text</a>();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_text.html">Text</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classvrv_1_1_text.html#aa7e711c41836402f619f5fba0e45402d">   32</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_text.html#aa7e711c41836402f619f5fba0e45402d">Clone</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_text.html">Text</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_text.html#a0f10976c135be6c5b73c2f6eecd8a4c3">Reset</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> std::string GetClassName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Text&quot;</span>; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classvrv_1_1_text.html#a5f1bfd8ddc03027709b6bb9e7d5ef367">   32</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_text.html#a5f1bfd8ddc03027709b6bb9e7d5ef367">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_text.html">Text</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_text.html#a3f2023d5d325a5da86b252c47a7ae481">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Text&quot;</span>; }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> SetText(std::wstring text) { <a class="code" href="classvrv_1_1_text.html#ac8b56c524e22c536a37c696f22837412">m_text</a> = text; }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> SetText(<span class="keyword">const</span> std::wstring &amp;text) { <a class="code" href="classvrv_1_1_text.html#ac8b56c524e22c536a37c696f22837412">m_text</a> = text; }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::wstring GetText()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classvrv_1_1_text.html#ac8b56c524e22c536a37c696f22837412">m_text</a>; }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
@@ -131,16 +131,16 @@ $(document).ready(function(){initNavTree('text_8h_source.html',''); initResizabl
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_text_html_ac8b56c524e22c536a37c696f22837412"><div class="ttname"><a href="classvrv_1_1_text.html#ac8b56c524e22c536a37c696f22837412">vrv::Text::m_text</a></div><div class="ttdeci">std::wstring m_text</div><div class="ttdoc">The text content.</div><div class="ttdef"><b>Definition:</b> text.h:53</div></div>
+<div class="ttc" id="aclassvrv_1_1_text_html_a3f2023d5d325a5da86b252c47a7ae481"><div class="ttname"><a href="classvrv_1_1_text.html#a3f2023d5d325a5da86b252c47a7ae481">vrv::Text::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Reset the object, that is 1) removing all childs and 2) resetting all attributes.</div></div>
 <div class="ttc" id="aclassvrv_1_1_text_html"><div class="ttname"><a href="classvrv_1_1_text.html">vrv::Text</a></div><div class="ttdoc">This class models CDATA (text)</div><div class="ttdef"><b>Definition:</b> text.h:23</div></div>
 <div class="ttc" id="aclassvrv_1_1_text_element_html"><div class="ttname"><a href="classvrv_1_1_text_element.html">vrv::TextElement</a></div><div class="ttdef"><b>Definition:</b> textelement.h:22</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
-<div class="ttc" id="aclassvrv_1_1_text_html_a0f10976c135be6c5b73c2f6eecd8a4c3"><div class="ttname"><a href="classvrv_1_1_text.html#a0f10976c135be6c5b73c2f6eecd8a4c3">vrv::Text::Reset</a></div><div class="ttdeci">virtual void Reset()</div><div class="ttdoc">Reset the object, that is 1) removing all childs and 2) resetting all attributes.</div></div>
-<div class="ttc" id="aclassvrv_1_1_text_html_aa7e711c41836402f619f5fba0e45402d"><div class="ttname"><a href="classvrv_1_1_text.html#aa7e711c41836402f619f5fba0e45402d">vrv::Text::Clone</a></div><div class="ttdeci">virtual Object * Clone() const</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> text.h:32</div></div>
+<div class="ttc" id="aclassvrv_1_1_text_html_a5f1bfd8ddc03027709b6bb9e7d5ef367"><div class="ttname"><a href="classvrv_1_1_text.html#a5f1bfd8ddc03027709b6bb9e7d5ef367">vrv::Text::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> text.h:32</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>text.h</b></li>
-    <li class="footer">Generated on Tue Aug 24 2021 06:49:20 for Verovio by
+    <li class="footer">Generated on Mon Nov 22 2021 13:26:56 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -112,10 +112,10 @@ $(document).ready(function(){initNavTree('textelement_8h_source.html',''); initR
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classvrv_1_1_text_element.html">TextElement</a>(ClassId classId);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classvrv_1_1_text_element.html">TextElement</a>(ClassId classId, <span class="keyword">const</span> std::string &amp;classIdStr);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_text_element.html">TextElement</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_text_element.html#a8ac1eec61d858d477357d64e0b6f1338">Reset</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_text_element.html#abc051089f67b9d85955390828593bada">Reset</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetDrawingX() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetDrawingY() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> GetDrawingX() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> GetDrawingY() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> GetDrawingXRel()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingXRel; }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetDrawingXRel(<span class="keywordtype">int</span> drawingXRel);</div>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('textelement_8h_source.html',''); initR
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// Functors //</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//----------//</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_text_element.html#a0951e85f2d524582b37d2dfac38e3883">ResetVerticalAlignment</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_text_element.html#aa1b93e07a8e5b8b6a6ae2217fec1ffe9">ResetVerticalAlignment</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//</span></div>
@@ -156,40 +156,42 @@ $(document).ready(function(){initNavTree('textelement_8h_source.html',''); initR
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        m_alignment = HORIZONTALALIGNMENT_left;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        m_pointSize = 0;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        m_actualWidth = 0;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_text_drawing_params.html">TextDrawingParams</a>(){};</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">int</span> m_x;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">int</span> m_y;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">int</span> m_width;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">int</span> m_height;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">int</span> m_actualWidth;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">bool</span> m_laidOut;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// used when X and Y has been changed manually or otherwise (e.g. newline &lt;lb/&gt; shift or shift for</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// boxed enclosure for rend)</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">bool</span> m_explicitPosition;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">bool</span> m_verticalShift;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    data_HORIZONTALALIGNMENT m_alignment;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">int</span> m_pointSize;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    std::vector&lt;TextElement *&gt; m_boxedRend;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        m_enclose = TEXTRENDITION_NONE;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_text_drawing_params.html">TextDrawingParams</a>(){};</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">int</span> m_x;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">int</span> m_y;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">int</span> m_width;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">int</span> m_height;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">int</span> m_actualWidth;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">bool</span> m_laidOut;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// used when X and Y has been changed manually or otherwise (e.g. newline &lt;lb/&gt; shift or shift for</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// boxed enclosure for rend)</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">bool</span> m_explicitPosition;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">bool</span> m_verticalShift;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    data_HORIZONTALALIGNMENT m_alignment;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">int</span> m_pointSize;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    std::vector&lt;TextElement *&gt; m_enclosedRend;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    data_TEXTRENDITION m_enclose;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_text_drawing_params_html"><div class="ttname"><a href="classvrv_1_1_text_drawing_params.html">vrv::TextDrawingParams</a></div><div class="ttdoc">This class stores current drawing parameters for text.</div><div class="ttdef"><b>Definition:</b> textelement.h:86</div></div>
 <div class="ttc" id="aclassvrv_1_1_text_element_html"><div class="ttname"><a href="classvrv_1_1_text_element.html">vrv::TextElement</a></div><div class="ttdef"><b>Definition:</b> textelement.h:22</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
-<div class="ttc" id="aclassvrv_1_1_text_element_html_a0951e85f2d524582b37d2dfac38e3883"><div class="ttname"><a href="classvrv_1_1_text_element.html#a0951e85f2d524582b37d2dfac38e3883">vrv::TextElement::ResetVerticalAlignment</a></div><div class="ttdeci">virtual int ResetVerticalAlignment(FunctorParams *functorParams)</div><div class="ttdoc">See Object::ResetVerticalAlignment.</div></div>
-<div class="ttc" id="aclassvrv_1_1_text_element_html_a8ac1eec61d858d477357d64e0b6f1338"><div class="ttname"><a href="classvrv_1_1_text_element.html#a8ac1eec61d858d477357d64e0b6f1338">vrv::TextElement::Reset</a></div><div class="ttdeci">virtual void Reset()</div><div class="ttdoc">Reset the object, that is 1) removing all childs and 2) resetting all attributes.</div></div>
+<div class="ttc" id="aclassvrv_1_1_text_element_html_abc051089f67b9d85955390828593bada"><div class="ttname"><a href="classvrv_1_1_text_element.html#abc051089f67b9d85955390828593bada">vrv::TextElement::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Reset the object, that is 1) removing all childs and 2) resetting all attributes.</div></div>
+<div class="ttc" id="aclassvrv_1_1_text_element_html_aa1b93e07a8e5b8b6a6ae2217fec1ffe9"><div class="ttname"><a href="classvrv_1_1_text_element.html#aa1b93e07a8e5b8b6a6ae2217fec1ffe9">vrv::TextElement::ResetVerticalAlignment</a></div><div class="ttdeci">int ResetVerticalAlignment(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetVerticalAlignment.</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_params_html"><div class="ttname"><a href="classvrv_1_1_functor_params.html">vrv::FunctorParams</a></div><div class="ttdoc">This is the base class for all MEI att classes.</div><div class="ttdef"><b>Definition:</b> functorparams.h:75</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>textelement.h</b></li>
-    <li class="footer">Generated on Tue Aug 24 2021 06:49:20 for Verovio by
+    <li class="footer">Generated on Mon Nov 22 2021 13:26:56 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

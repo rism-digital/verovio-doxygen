@@ -107,11 +107,11 @@ $(document).ready(function(){initNavTree('lv_8h_source.html',''); initResizable(
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classvrv_1_1_lv.html">Lv</a>();</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_lv.html">Lv</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classvrv_1_1_lv.html#aa4a100dc9163da75915fe9f841d992a5">   31</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_lv.html#aa4a100dc9163da75915fe9f841d992a5">Clone</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_lv.html">Lv</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_lv.html#a0d1caa85c135d19a1e99cbee75e8c0c0">Reset</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> std::string GetClassName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Lv&quot;</span>; }</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classvrv_1_1_lv.html#a9351137f90ba83ba2d5a6b8c6b19e037">   31</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_lv.html#a9351137f90ba83ba2d5a6b8c6b19e037">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_lv.html">Lv</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_lv.html#abebb39e59a9a487a6a77aaab2dacc79d">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Lv&quot;</span>; }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CalculatePosition(Doc *doc, Staff *staff, <span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> spanningType, Point bezier[4]);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> CalculatePosition(Doc *doc, Staff *staff, <span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> spanningType, Point bezier[4]) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//----------//</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// Functors //</span></div>
@@ -129,16 +129,16 @@ $(document).ready(function(){initNavTree('lv_8h_source.html',''); initResizable(
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif // __VRV_LV_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassvrv_1_1_lv_html_a9351137f90ba83ba2d5a6b8c6b19e037"><div class="ttname"><a href="classvrv_1_1_lv.html#a9351137f90ba83ba2d5a6b8c6b19e037">vrv::Lv::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> lv.h:31</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
-<div class="ttc" id="aclassvrv_1_1_lv_html_aa4a100dc9163da75915fe9f841d992a5"><div class="ttname"><a href="classvrv_1_1_lv.html#aa4a100dc9163da75915fe9f841d992a5">vrv::Lv::Clone</a></div><div class="ttdeci">virtual Object * Clone() const</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> lv.h:31</div></div>
 <div class="ttc" id="aclassvrv_1_1_tie_html"><div class="ttname"><a href="classvrv_1_1_tie.html">vrv::Tie</a></div><div class="ttdoc">This class models the MEI &lt;tie&gt; element.</div><div class="ttdef"><b>Definition:</b> tie.h:27</div></div>
-<div class="ttc" id="aclassvrv_1_1_lv_html_a0d1caa85c135d19a1e99cbee75e8c0c0"><div class="ttname"><a href="classvrv_1_1_lv.html#a0d1caa85c135d19a1e99cbee75e8c0c0">vrv::Lv::Reset</a></div><div class="ttdeci">virtual void Reset()</div><div class="ttdoc">Reset the object, that is 1) removing all childs and 2) resetting all attributes.</div></div>
+<div class="ttc" id="aclassvrv_1_1_lv_html_abebb39e59a9a487a6a77aaab2dacc79d"><div class="ttname"><a href="classvrv_1_1_lv.html#abebb39e59a9a487a6a77aaab2dacc79d">vrv::Lv::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_lv_html"><div class="ttname"><a href="classvrv_1_1_lv.html">vrv::Lv</a></div><div class="ttdoc">This class models the MEI &lt;lv&gt; element.</div><div class="ttdef"><b>Definition:</b> lv.h:22</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>lv.h</b></li>
-    <li class="footer">Generated on Tue Aug 24 2021 06:49:20 for Verovio by
+    <li class="footer">Generated on Mon Nov 22 2021 13:26:56 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

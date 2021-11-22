@@ -131,6 +131,7 @@ var files_dup =
     [ "rest.h", "rest_8h_source.html", null ],
     [ "restore.h", "restore_8h_source.html", null ],
     [ "runningelement.h", "runningelement_8h_source.html", null ],
+    [ "runtimeclock.h", "runtimeclock_8h_source.html", null ],
     [ "sb.h", "sb_8h_source.html", null ],
     [ "score.h", "score_8h_source.html", null ],
     [ "scoredef.h", "scoredef_8h_source.html", null ],

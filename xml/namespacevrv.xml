@@ -80,6 +80,7 @@
     <innerclass refid="structvrv_1_1_closest_b_b" prot="public">vrv::ClosestBB</innerclass>
     <innerclass refid="classvrv_1_1_comparison" prot="public">vrv::Comparison</innerclass>
     <innerclass refid="classvrv_1_1_control_element" prot="public">vrv::ControlElement</innerclass>
+    <innerclass refid="structvrv_1_1_control_point_constraint" prot="public">vrv::ControlPointConstraint</innerclass>
     <innerclass refid="classvrv_1_1_convert_markup_analytical_params" prot="public">vrv::ConvertMarkupAnalyticalParams</innerclass>
     <innerclass refid="classvrv_1_1_convert_markup_artic_params" prot="public">vrv::ConvertMarkupArticParams</innerclass>
     <innerclass refid="classvrv_1_1_convert_to_cast_off_mensural_params" prot="public">vrv::ConvertToCastOffMensuralParams</innerclass>
@@ -254,6 +255,7 @@
     <innerclass refid="classvrv_1_1_prepare_pointers_by_layer_params" prot="public">vrv::PreparePointersByLayerParams</innerclass>
     <innerclass refid="classvrv_1_1_prepare_processing_lists_params" prot="public">vrv::PrepareProcessingListsParams</innerclass>
     <innerclass refid="classvrv_1_1_prepare_rpt_params" prot="public">vrv::PrepareRptParams</innerclass>
+    <innerclass refid="classvrv_1_1_prepare_slurs_params" prot="public">vrv::PrepareSlursParams</innerclass>
     <innerclass refid="classvrv_1_1_prepare_time_pointing_params" prot="public">vrv::PrepareTimePointingParams</innerclass>
     <innerclass refid="classvrv_1_1_prepare_time_spanning_params" prot="public">vrv::PrepareTimeSpanningParams</innerclass>
     <innerclass refid="classvrv_1_1_prepare_timestamps_params" prot="public">vrv::PrepareTimestampsParams</innerclass>
@@ -269,6 +271,7 @@
     <innerclass refid="classvrv_1_1_rest" prot="public">vrv::Rest</innerclass>
     <innerclass refid="classvrv_1_1_restore" prot="public">vrv::Restore</innerclass>
     <innerclass refid="classvrv_1_1_running_element" prot="public">vrv::RunningElement</innerclass>
+    <innerclass refid="classvrv_1_1_runtime_clock" prot="public">vrv::RuntimeClock</innerclass>
     <innerclass refid="classvrv_1_1_save_params" prot="public">vrv::SaveParams</innerclass>
     <innerclass refid="classvrv_1_1_sb" prot="public">vrv::Sb</innerclass>
     <innerclass refid="classvrv_1_1_score" prot="public">vrv::Score</innerclass>
@@ -1248,7 +1251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="23" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="23" bodyend="23"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="24" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="24" bodyend="24"/>
       </memberdef>
       <memberdef kind="enum" id="comparison_8h_1a4ac474fae0d0fe91e6e19c5eb98d0d55" prot="public" static="no" strong="no">
         <type></type>
@@ -1469,7 +1472,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="2308" column="25" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="2308" bodyend="2318"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="2320" column="25" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="2320" bodyend="2330"/>
       </memberdef>
       <memberdef kind="enum" id="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922" prot="public" static="no" strong="no">
         <type></type>
@@ -1970,6 +1973,46 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="62" column="27" bodyfile="/home/runner/work/verovio/verovio/include/vrv/options.h" bodystart="62" bodyend="67"/>
       </memberdef>
+      <memberdef kind="enum" id="options_8h_1a0470f11d27178b17789e2d8363d494b1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>option_PEDALSTYLE</name>
+        <enumvalue id="options_8h_1a0470f11d27178b17789e2d8363d494b1a054c0c5886f6007f37c18094570b2f85" prot="public">
+          <name>PEDALSTYLE_auto</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="options_8h_1a0470f11d27178b17789e2d8363d494b1acd63753b3b8aa15cd8bfd50528bb4def" prot="public">
+          <name>PEDALSTYLE_line</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="options_8h_1a0470f11d27178b17789e2d8363d494b1a2f8de891900ccf1e8e5e2f18864d169a" prot="public">
+          <name>PEDALSTYLE_pedstar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="options_8h_1a0470f11d27178b17789e2d8363d494b1ad61c052bd746c4fc403e3d4e6c8cba4a" prot="public">
+          <name>PEDALSTYLE_altpedstar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="69" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/options.h" bodystart="69" bodyend="69"/>
+      </memberdef>
       <memberdef kind="enum" id="options_8h_1acec3439c132d2c7853a87e447fc4a5e0" prot="public" static="no" strong="no">
         <type></type>
         <name>option_SYSTEMDIVIDER</name>
@@ -2008,7 +2051,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="69" column="26" bodyfile="/home/runner/work/verovio/verovio/include/vrv/options.h" bodystart="69" bodyend="69"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="71" column="26" bodyfile="/home/runner/work/verovio/verovio/include/vrv/options.h" bodystart="71" bodyend="71"/>
       </memberdef>
       <memberdef kind="enum" id="options_8h_1a348cc6ff82212bad624ca42d05266a5f" prot="public" static="no" strong="yes">
         <type></type>
@@ -2034,7 +2077,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="418" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/options.h" bodystart="418" bodyend="418"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/options.h" line="421" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/options.h" bodystart="421" bodyend="421"/>
       </memberdef>
       <memberdef kind="enum" id="rest_8h_1a970762153eb1e06a28ae4133c27db029" prot="public" static="no" strong="no">
         <type></type>
@@ -2189,6 +2232,38 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/rest.h" line="27" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/rest.h" bodystart="27" bodyend="27"/>
       </memberdef>
+      <memberdef kind="enum" id="slur_8h_1aebaced40e47a7396b45ca5fe1dcbdee7" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>PortatoSlurType</name>
+        <enumvalue id="slur_8h_1aebaced40e47a7396b45ca5fe1dcbdee7a6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="slur_8h_1aebaced40e47a7396b45ca5fe1dcbdee7a418289e6b37941d17e803d641bdd21c1" prot="public">
+          <name>StemSide</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="slur_8h_1aebaced40e47a7396b45ca5fe1dcbdee7adc5ffc2b720501ba00de3be1477b435d" prot="public">
+          <name>Centered</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="36" column="27" bodyfile="/home/runner/work/verovio/verovio/include/vrv/slur.h" bodystart="36" bodyend="36"/>
+      </memberdef>
       <memberdef kind="enum" id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fe" prot="public" static="no" strong="no">
         <type></type>
         <name>@3</name>
@@ -2211,6 +2286,22 @@
         <enumvalue id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705feaee6320d68262ecebf386bd75974eea8b" prot="public">
           <name>SMUFL_E004_bracketBottom</name>
           <initializer>= 0xE004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fead99d03b33e7f3cfbb4b5dd92b888840e" prot="public">
+          <name>SMUFL_E043_repeatDots</name>
+          <initializer>= 0xE043</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea614b37b6001a4fd1d18a5749eb316b75" prot="public">
+          <name>SMUFL_E044_repeatDot</name>
+          <initializer>= 0xE044</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -2243,6 +2334,14 @@
         <enumvalue id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705feaf4eb28645380f2dc2cb3f06926c82b55" prot="public">
           <name>SMUFL_E048_coda</name>
           <initializer>= 0xE048</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705feaf614d0048361199c69192b0eb48b72d0" prot="public">
+          <name>SMUFL_E049_codaSquare</name>
+          <initializer>= 0xE049</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -2595,6 +2694,22 @@
         <enumvalue id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea1d7ae77eb8492298a24592dd278c73ca" prot="public">
           <name>SMUFL_E095_timeSigParensRight</name>
           <initializer>= 0xE095</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea558633da17d9325e53c28cd433e344df" prot="public">
+          <name>SMUFL_E0A0_noteheadDoubleWhole</name>
+          <initializer>= 0xE0A0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea3327acbec9d514f59a892b2214d9cb6a" prot="public">
+          <name>SMUFL_E0A1_noteheadDoubleWholeSquare</name>
+          <initializer>= 0xE0A1</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -4352,6 +4467,30 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea97a10ffdf438a2203f360f28bfbcc621" prot="public">
+          <name>SMUFL_E5E5_brassMuteClosed</name>
+          <initializer>= 0xE5E5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea7746f386ef78a91790bcf08a6c3a6fee" prot="public">
+          <name>SMUFL_E5E6_brassMuteHalfClosed</name>
+          <initializer>= 0xE5E6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea56d5fa4f131dcd7204378c0e8d24e7bf" prot="public">
+          <name>SMUFL_E5E7_brassMuteOpen</name>
+          <initializer>= 0xE5E7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <enumvalue id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea8588d2570dbf368b135990693409142f" prot="public">
           <name>SMUFL_E610_stringsDownBow</name>
           <initializer>= 0xE610</initializer>
@@ -5096,6 +5235,14 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705feaf23f6b9b300d1ce5f5ea395a6cfac41f" prot="public">
+          <name>SMUFL_EAA4_wiggleTrill</name>
+          <initializer>= 0xEAA4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <enumvalue id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea1254019f0a56d70b5ac93421176dcf16" prot="public">
           <name>SMUFL_EAA9_wiggleArpeggiatoUp</name>
           <initializer>= 0xEAA9</initializer>
@@ -5123,6 +5270,14 @@
         <enumvalue id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea6a1412a1bbb6cd6da8245f8502f0c3e3" prot="public">
           <name>SMUFL_EAAE_wiggleArpeggiatoDownArrow</name>
           <initializer>= 0xEAAE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smufl_8h_1acac89bd28c90d0fa91f0fb73dfe705fea67e5a381b9e46ac3154379e1a9bede39" prot="public">
+          <name>SMUFL_EAAF_wiggleGlissando</name>
+          <initializer>= 0xEAAF</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -5382,7 +5537,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/smufl.h" line="24" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/smufl.h" bodystart="24" bodyend="423"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/smufl.h" line="24" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/smufl.h" bodystart="24" bodyend="433"/>
       </memberdef>
       <memberdef kind="enum" id="toolkit_8h_1a6feb6bdf079a5bd110d39bf405870a8d" prot="public" static="no" strong="no">
         <type></type>
@@ -5499,7 +5654,39 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="24" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="24" bodyend="40"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="25" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="25" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="enum" id="view_8h_1a0df80c5935046e1a441fa302e10b6e47" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>SlurHandling</name>
+        <enumvalue id="view_8h_1a0df80c5935046e1a441fa302e10b6e47afd038fc7f319e48f3115d92bf5bdbef9" prot="public">
+          <name>Ignore</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="view_8h_1a0df80c5935046e1a441fa302e10b6e47a223e06f5cb15fc701ea1e686f7934f4f" prot="public">
+          <name>Initialize</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="view_8h_1a0df80c5935046e1a441fa302e10b6e47a681d72abce5de4f856e71bfb1856796b" prot="public">
+          <name>Drawing</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="87" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="87" bodyend="87"/>
       </memberdef>
       <memberdef kind="enum" id="vrv_8h_1af952e677fccb1ebad42e8bb91403c0f2" prot="public" static="no" strong="no">
         <type></type>
@@ -6874,7 +7061,7 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
-<para>The InterfaceIds are used to identify <ref refid="classvrv_1_1_interface" kindref="compound">Interface</ref> child classes through the <ref refid="classvrv_1_1_interface_1a5a6818097ffc4a990e6e6e004cf1aaa3" kindref="member">Interface::IsInterface</ref> virtual method. </para>
+<para>The InterfaceIds are used to identify <ref refid="classvrv_1_1_interface" kindref="compound">Interface</ref> child classes through the <ref refid="classvrv_1_1_interface_1a00a809d1924fd17cfdb6327179148f4d" kindref="member">Interface::IsInterface</ref> virtual method. </para>
         </briefdescription>
         <detaileddescription>
 <para>Each <ref refid="classvrv_1_1_interface" kindref="compound">Interface</ref> child class has to have its own id and has to override the IsInterface() method. </para>
@@ -6916,7 +7103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="401" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="401" bodyend="401"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="403" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="403" bodyend="403"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a54d6ff49d033c0285b31e17f6d937de5" prot="public" static="no" strong="no">
         <type></type>
@@ -7005,7 +7192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="478" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="478" bodyend="490"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="480" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="480" bodyend="492"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a8542ec96e3466cd51668ce173874c518" prot="public" static="no" strong="no">
         <type></type>
@@ -7031,7 +7218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="496" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="496" bodyend="496"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="498" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="498" bodyend="498"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a1de60d9586102fb282d982e15c85484b" prot="public" static="no" strong="no">
         <type></type>
@@ -7085,7 +7272,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="502" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="502" bodyend="509"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="504" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="504" bodyend="511"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a6e3c7b5a84ebcdfeeca4461ff16ef24c" prot="public" static="no" strong="no">
         <type></type>
@@ -7125,7 +7312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="515" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="515" bodyend="515"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="517" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="517" bodyend="517"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1af7a49f055e59c4a0af01a6014b67f577" prot="public" static="no" strong="no">
         <type></type>
@@ -7166,7 +7353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="526" column="25" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="526" bodyend="526"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="528" column="25" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="528" bodyend="528"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a1113434a7ab786e4503267dbb0eb8dfa" prot="public" static="no" strong="no">
         <type></type>
@@ -7192,7 +7379,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="532" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="532" bodyend="532"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="534" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="534" bodyend="534"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a36c286f79e83330f0e55437071221317" prot="public" static="no" strong="no">
         <type></type>
@@ -7225,7 +7412,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="538" column="28" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="538" bodyend="538"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="540" column="28" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="540" bodyend="540"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a03fd8fbbc4dc75a77e44a3e511de884e" prot="public" static="no" strong="no">
         <type></type>
@@ -7258,7 +7445,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="544" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="544" bodyend="548"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="546" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="546" bodyend="550"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a88ade1c60e4eca489899e0a04d7adaf7" prot="public" static="no" strong="no">
         <type></type>
@@ -7293,7 +7480,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="550" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="550" bodyend="554"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="552" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="552" bodyend="556"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a84d68545ab583dea8bac85b3a855ab5c" prot="public" static="no" strong="no">
         <type></type>
@@ -7360,7 +7547,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="560" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="560" bodyend="568"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="562" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="562" bodyend="570"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a8df6f04a3949cde243aaaa7ab4c81411" prot="public" static="no" strong="no">
         <type></type>
@@ -7411,7 +7598,40 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="574" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="574" bodyend="580"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="576" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="576" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="enum" id="vrvdef_8h_1adfa4e6edda5fb25875a1221d81658165" prot="public" static="no" strong="no">
+        <type></type>
+        <name>LayoutInformation</name>
+        <enumvalue id="vrvdef_8h_1adfa4e6edda5fb25875a1221d81658165ae0948cac4cba0e4e649177feffc4ba5a" prot="public">
+          <name>LAYOUT_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vrvdef_8h_1adfa4e6edda5fb25875a1221d81658165a7b496a9050cf6f899ecfbee86bef59a5" prot="public">
+          <name>LAYOUT_ENCODED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vrvdef_8h_1adfa4e6edda5fb25875a1221d81658165a53906a8fe44dfc5cc41f1be31ac5fb28" prot="public">
+          <name>LAYOUT_DONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="588" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="588" bodyend="588"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a1e32c19da13a9a672780c6c5e48ca8f5" prot="public" static="no" strong="no">
         <type></type>
@@ -7437,7 +7657,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="586" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="586" bodyend="586"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="594" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="594" bodyend="594"/>
       </memberdef>
       <memberdef kind="enum" id="vrvdef_8h_1a0559ff28e79761ea07a1ee0ed60ac3a7" prot="public" static="no" strong="no">
         <type></type>
@@ -7480,7 +7700,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="592" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="592" bodyend="592"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="600" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="600" bodyend="600"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -7791,7 +8011,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="1516" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="1516" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="1526" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="1526" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a88f97c731b140ac861b13be697d11724" prot="public" static="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> * &gt;</type>
@@ -7858,11 +8078,11 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="316" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="316" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="vrvdef_8h_1abc75429c56ee35fd40e71dbbe38d2f1f" prot="public" static="no">
+      <memberdef kind="typedef" id="vrvdef_8h_1a50b86b7f0f312b91b0ea7647434f32ae" prot="public" static="no">
         <type>std::vector&lt; std::tuple&lt; <ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> *, <ref refid="classvrv_1_1_arpeg" kindref="compound">Arpeg</ref> *, int, bool &gt; &gt;</type>
-        <definition>typedef std::vector&lt;std::tuple&lt;Alignment *, Arpeg *, int, bool&gt; &gt; vrv::ArrayOfAligmentArpegTuples</definition>
+        <definition>typedef std::vector&lt;std::tuple&lt;Alignment *, Arpeg *, int, bool&gt; &gt; vrv::ArrayOfAlignmentArpegTuples</definition>
         <argsstring></argsstring>
-        <name>ArrayOfAligmentArpegTuples</name>
+        <name>ArrayOfAlignmentArpegTuples</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -8131,6 +8351,19 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="358" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="358" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="typedef" id="vrvdef_8h_1af3bb94f15565a7c0149cef1aca234312" prot="public" static="no">
+        <type>bool(*</type>
+        <definition>typedef bool(* vrv::NotePredicate) (Note *)</definition>
+        <argsstring>)(Note *)</argsstring>
+        <name>NotePredicate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="360" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1aae26a3e0b176be3d0be44eb8aa2c7430" prot="public" static="no">
         <type>std::map&lt; int, <ref refid="structvrv_1_1_int_tree" kindref="compound">IntTree</ref> &gt;</type>
         <definition>typedef std::map&lt;int, IntTree&gt; vrv::IntTree_t</definition>
@@ -8142,7 +8375,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="373" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="373" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="375" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="375" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a98564baedb31f125d372dc98acfe65ce" prot="public" static="no">
         <type>std::map&lt; int, bool &gt;</type>
@@ -8157,7 +8390,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="381" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="381" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="383" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="383" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1ad164214cb7b0fa4191153b64a57bfdb0" prot="public" static="no">
         <type>std::map&lt; int, VerseN_t &gt;</type>
@@ -8170,7 +8403,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="382" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="382" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="384" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="384" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="vrvdef_8h_1a92c49c3fc4142fda9a953227dec612be" prot="public" static="no">
         <type>std::map&lt; int, LayerN_VerserN_t &gt;</type>
@@ -8183,7 +8416,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="383" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="383" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="385" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="385" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -8294,7 +8527,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="42" column="6" declfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" declline="42" declcolumn="6"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="43" column="6" declfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" declline="43" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="toolkit_8h_1ab6cce8089a6c01f1b176d6eda47d9387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8311,7 +8544,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="45" column="6" declfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" declline="45" declcolumn="6"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="46" column="6" declfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" declline="46" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="toolkit_8h_1ae63e2395c0d566cf02732297325bfebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8328,7 +8561,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="46" column="6" declfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" declline="46" declcolumn="6"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="47" column="6" declfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" declline="47" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="transposition_8h_1ac55228c00ac980fafbf7384e55999522" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>

@@ -4,11 +4,21 @@
     <compoundname>io.h</compoundname>
     <includes local="no">string</includes>
     <includes local="no">vector</includes>
+    <includes refid="vrvdef_8h" local="yes">vrvdef.h</includes>
     <includedby refid="ioabc_8h" local="yes">ioabc.h</includedby>
     <includedby refid="iohumdrum_8h" local="yes">iohumdrum.h</includedby>
     <includedby refid="iomei_8h" local="yes">iomei.h</includedby>
     <includedby refid="iomusxml_8h" local="yes">iomusxml.h</includedby>
     <incdepgraph>
+      <node id="7">
+        <label>list</label>
+      </node>
+      <node id="6">
+        <label>functional</label>
+      </node>
+      <node id="13">
+        <label>atttypes.h</label>
+      </node>
       <node id="1">
         <label>io.h</label>
         <link refid="io_8h"/>
@@ -16,12 +26,66 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
       <node id="2">
         <label>string</label>
       </node>
+      <node id="8">
+        <label>map</label>
+      </node>
+      <node id="10">
+        <label>attdef.h</label>
+        <link refid="attdef_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
       <node id="3">
         <label>vector</label>
+      </node>
+      <node id="11">
+        <label>utility</label>
+      </node>
+      <node id="14">
+        <label>math.h</label>
+      </node>
+      <node id="12">
+        <label>attclasses.h</label>
+      </node>
+      <node id="9">
+        <label>set</label>
+      </node>
+      <node id="5">
+        <label>algorithm</label>
+      </node>
+      <node id="4">
+        <label>vrvdef.h</label>
+        <link refid="vrvdef_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
@@ -73,68 +137,72 @@
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vrv<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Doc;</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Object;</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Output</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vrvdef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vrv<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Doc;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Object;</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27" refid="classvrv_1_1_output" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_output" kindref="compound">Output</ref><sp/>{</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors<sp/>and<sp/>destructors</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_output" kindref="compound">Output</ref>(<ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc,<sp/>std::string<sp/>filename);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_output" kindref="compound">Output</ref>(<ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc);</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_output" kindref="compound">Output</ref>(){};</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_output" kindref="compound">Output</ref>();</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38" refid="classvrv_1_1_output_1a2f9a229fd8899ee37bb3575f1c769a1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_output_1a2f9a229fd8899ee37bb3575f1c769a1c" kindref="member">WriteObject</ref>(<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43" refid="classvrv_1_1_output_1aae4a87a3b59a0de4e1d73ac366639802" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_output_1aae4a87a3b59a0de4e1d73ac366639802" kindref="member">WriteObjectEnd</ref>(<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*m_doc;</highlight></codeline>
-<codeline lineno="49"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Input</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classvrv_1_1_output" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_output" kindref="compound">Output</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors<sp/>and<sp/>destructors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_output" kindref="compound">Output</ref>(<ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc,<sp/>std::string<sp/>filename);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_output" kindref="compound">Output</ref>(<ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_output" kindref="compound">Output</ref>(){};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_output" kindref="compound">Output</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classvrv_1_1_output_1a2f9a229fd8899ee37bb3575f1c769a1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_output_1a2f9a229fd8899ee37bb3575f1c769a1c" kindref="member">WriteObject</ref>(<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classvrv_1_1_output_1aae4a87a3b59a0de4e1d73ac366639802" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_output_1aae4a87a3b59a0de4e1d73ac366639802" kindref="member">WriteObjectEnd</ref>(<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*m_doc;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59" refid="classvrv_1_1_input" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_input" kindref="compound">Input</ref><sp/>{</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors<sp/>and<sp/>destructors</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_input" kindref="compound">Input</ref>(<ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc);</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_input" kindref="compound">Input</ref>();</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetOutputFormat(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;format)<sp/>{<sp/>m_outformat<sp/>=<sp/>format;<sp/>}</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>GetOutputFormat()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_outformat;<sp/>}</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>read</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Import(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;data)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="75" refid="classvrv_1_1_input_1ab983f3a606f7a2675d4c002260439123" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_input_1ab983f3a606f7a2675d4c002260439123" kindref="member">HasLayoutInformation</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_input_1ae5b786823e4fef5ca80a48530513919c" kindref="member">m_hasLayoutInformation</ref>;<sp/>}</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Init();</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*m_doc;</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94" refid="classvrv_1_1_input_1ae5b786823e4fef5ca80a48530513919c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_input_1ae5b786823e4fef5ca80a48530513919c" kindref="member">m_hasLayoutInformation</ref>;</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_outformat<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;mei&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="97"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classvrv_1_1_input" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_input" kindref="compound">Input</ref><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors<sp/>and<sp/>destructors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_input" kindref="compound">Input</ref>(<ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_input" kindref="compound">Input</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetOutputFormat(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;format)<sp/>{<sp/>m_outformat<sp/>=<sp/>format;<sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>GetOutputFormat()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_outformat;<sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>read</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Import(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;data)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classvrv_1_1_input_1a762b1b42c1fba541b913b0569896b05b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>LayoutInformation<sp/><ref refid="classvrv_1_1_input_1a762b1b42c1fba541b913b0569896b05b" kindref="member">GetLayoutInformation</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_input_1a4682cae07963c3646b22850447bf9120" kindref="member">m_layoutInformation</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Init();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*m_doc;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="classvrv_1_1_input_1a4682cae07963c3646b22850447bf9120" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>LayoutInformation<sp/><ref refid="classvrv_1_1_input_1a4682cae07963c3646b22850447bf9120" kindref="member">m_layoutInformation</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_outformat<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;mei&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/io.h"/>
   </compounddef>

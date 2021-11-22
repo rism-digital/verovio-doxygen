@@ -79,18 +79,12 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/systemelement.h" line="35" column="13"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_system_element_1ae1759cdc3693ad2f404cb0cf5cfe327a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_system_element_1a052b062bad0d78113a1067212a24c816" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>virtual void vrv::SystemElement::Reset</definition>
-        <argsstring>()</argsstring>
+        <definition>void vrv::SystemElement::Reset</definition>
+        <argsstring>() override</argsstring>
         <name>Reset</name>
-        <reimplements refid="classvrv_1_1_floating_object_1a598b5443645caf3544285c9b99bfcdbb">Reset</reimplements>
-        <reimplementedby refid="classvrv_1_1_sb_1a551be1cf0301942047b57576508f1134">Reset</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_pb_1a7826c28da54c675a9e504fc6b223c5e8">Reset</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_system_element_end_1ac13f9107ed456c6daa26dece9a1d36ac">Reset</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_expansion_1a5fc93a2c358ef3458ae4eb29e49fefda">Reset</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_section_1afcb0ff64a71c4041ad1f64a27af9b2cd">Reset</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_ending_1a8c2c8987af55410b2bc755cdeb73e1e0">Reset</reimplementedby>
+        <reimplements refid="classvrv_1_1_floating_object_1a268bb28f158e0a74e306c08683406fe3">Reset</reimplements>
         <briefdescription>
 <para>Reset the object, that is 1) removing all childs and 2) resetting all attributes. </para>
         </briefdescription>
@@ -99,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/systemelement.h" line="36" column="18"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/systemelement.h" line="36" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -120,14 +114,12 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classvrv_1_1_system_element_1a40e18f5218b411bfe4caf158138b97e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_system_element_1ad6ddb7b3273585c63dc5ffabc78b8527" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
-        <definition>virtual int vrv::SystemElement::ConvertToPageBased</definition>
-        <argsstring>(FunctorParams *functorParams)</argsstring>
+        <definition>int vrv::SystemElement::ConvertToPageBased</definition>
+        <argsstring>(FunctorParams *functorParams) override</argsstring>
         <name>ConvertToPageBased</name>
         <reimplements refid="classvrv_1_1_object_1ae930432f04c711ac22a14c66a92feb5e">ConvertToPageBased</reimplements>
-        <reimplementedby refid="classvrv_1_1_section_1acdd7e18394d27f6b6772e54906db980c">ConvertToPageBased</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_ending_1ad02f22cea7a4925749540248da475e26">ConvertToPageBased</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
           <declname>functorParams</declname>
@@ -139,17 +131,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/systemelement.h" line="46" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/systemelement.h" line="46" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_system_element_1ae63697014c36d8fdb42b33bb304712ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_system_element_1a8e83c5ad5476cd653397ec74112532ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
-        <definition>virtual int vrv::SystemElement::ConvertToCastOffMensural</definition>
-        <argsstring>(FunctorParams *params)</argsstring>
+        <definition>int vrv::SystemElement::ConvertToCastOffMensural</definition>
+        <argsstring>(FunctorParams *functorParams) override</argsstring>
         <name>ConvertToCastOffMensural</name>
         <reimplements refid="classvrv_1_1_object_1ada935f44326f0c4ecfc068694461718b">ConvertToCastOffMensural</reimplements>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
-          <declname>params</declname>
+          <declname>functorParams</declname>
         </param>
         <briefdescription>
 <para>See <ref refid="classvrv_1_1_object_1ada935f44326f0c4ecfc068694461718b" kindref="member">Object::ConvertToCastOffMensural</ref>. </para>
@@ -158,39 +150,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/systemelement.h" line="51" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/systemelement.h" line="51" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_system_element_1a4035bbb129d06c9c4f3f60e42f72490c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_system_element_1a17d947a62f84e74d4af850851ca4f058" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
-        <definition>virtual int vrv::SystemElement::CastOffSystems</definition>
-        <argsstring>(FunctorParams *functorParams)</argsstring>
+        <definition>int vrv::SystemElement::CastOffSystems</definition>
+        <argsstring>(FunctorParams *functorParams) override</argsstring>
         <name>CastOffSystems</name>
         <reimplements refid="classvrv_1_1_object_1a15c5f866aed95ea5c5b051c5c7e47137">CastOffSystems</reimplements>
-        <reimplementedby refid="classvrv_1_1_sb_1ab25617535beabced2e5bb1bf874b9624">CastOffSystems</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_system_element_end_1a9ebe1d0d45c00a50f792a4ac2cdc04ff">CastOffSystems</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_ending_1a90e151ed74273b4ae227d27b3b41c4d8">CastOffSystems</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
           <declname>functorParams</declname>
         </param>
         <briefdescription>
-<para>See <ref refid="classvrv_1_1_object_1a15c5f866aed95ea5c5b051c5c7e47137" kindref="member">Object::CastOffSystems</ref>. </para>
+<para>See Object::CastOffSystems. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/systemelement.h" line="56" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/systemelement.h" line="56" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_system_element_1a8bde0f7535211864ea3d298c32ff1ab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_system_element_1a05f7db61b9e9958376bdfe89b2d2f6a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
-        <definition>virtual int vrv::SystemElement::CastOffEncoding</definition>
-        <argsstring>(FunctorParams *functorParams)</argsstring>
+        <definition>int vrv::SystemElement::CastOffEncoding</definition>
+        <argsstring>(FunctorParams *functorParams) override</argsstring>
         <name>CastOffEncoding</name>
         <reimplements refid="classvrv_1_1_object_1ae1320bf0b5a56f033dcc561147225ba7">CastOffEncoding</reimplements>
-        <reimplementedby refid="classvrv_1_1_sb_1afc89859f4b7333bb04bde88d995c4732">CastOffEncoding</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_pb_1a7fda5cd00884f531269370f5609793c5">CastOffEncoding</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_ending_1a337f773d94d752ac4cf20eb2e87cb4f2">CastOffEncoding</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
           <declname>functorParams</declname>
@@ -202,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/systemelement.h" line="61" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/systemelement.h" line="61" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -319,7 +305,6 @@
       <member refid="classvrv_1_1_object_1a6c19b533f485fd10e5649bb5c441c884" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>AdjustClefChanges</name></member>
       <member refid="classvrv_1_1_object_1acfa149d616638b3935e56e1ee41ce61a" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>AdjustCrossStaffContent</name></member>
       <member refid="classvrv_1_1_object_1abeee6db6564ff37f1fd686033751d51f" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>AdjustCrossStaffYPos</name></member>
-      <member refid="classvrv_1_1_object_1a91e929fac940d876aa172b0b6c160c26" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>AdjustCrossStaffYPosEnd</name></member>
       <member refid="classvrv_1_1_object_1a1745790d27bcd5c9b11754ea44fdc376" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>AdjustDots</name></member>
       <member refid="classvrv_1_1_object_1ae0790c79940de6c0bd58e9022043b493" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>AdjustDotsEnd</name></member>
       <member refid="classvrv_1_1_object_1a757300b40f61c72a86c66fe9df7f8b5d" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>AdjustFloatingPositionerGrps</name></member>
@@ -360,6 +345,7 @@
       <member refid="classvrv_1_1_bounding_box_1a5601855899250709d9fa94f3c280aa72" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>BoundingBox</name></member>
       <member refid="classvrv_1_1_object_1aeafa32ecabeffb9ce6d3e8372ab7160b" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>CalcArtic</name></member>
       <member refid="classvrv_1_1_bounding_box_1a91eb3e2ee9b00bc764283fe1710e199b" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>CalcBezierAtPosition</name></member>
+      <member refid="classvrv_1_1_bounding_box_1af1fdd065b198aafe35dcc7e5a35477ee" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>CalcBezierParamAtPosition</name></member>
       <member refid="classvrv_1_1_object_1a277607c9a525f437a721e8c526963d44" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>CalcChordNoteHeads</name></member>
       <member refid="classvrv_1_1_bounding_box_1ac09f7239af89a7e19ca235761589e150" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>CalcDeCasteljau</name></member>
       <member refid="classvrv_1_1_object_1a30538b76016036369786f42be54482c2" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>CalcDots</name></member>
@@ -375,9 +361,10 @@
       <member refid="classvrv_1_1_bounding_box_1a2658cb5ed914d5c435de4a3740bff2e7" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>CalcSlope</name></member>
       <member refid="classvrv_1_1_object_1a0b93f8b6e02c8ba98a03db67fe5d5d10" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>CalcStem</name></member>
       <member refid="classvrv_1_1_bounding_box_1ae087d56d7ff270c908e3a723be01f6e7" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>CalcThickBezier</name></member>
-      <member refid="classvrv_1_1_system_element_1a8bde0f7535211864ea3d298c32ff1ab2" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>CastOffEncoding</name></member>
+      <member refid="classvrv_1_1_system_element_1a05f7db61b9e9958376bdfe89b2d2f6a5" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>CastOffEncoding</name></member>
       <member refid="classvrv_1_1_object_1af4bdf6d63a5fbf43a21a5c18d3c49a10" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>CastOffPages</name></member>
-      <member refid="classvrv_1_1_system_element_1a4035bbb129d06c9c4f3f60e42f72490c" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>CastOffSystems</name></member>
+      <member refid="classvrv_1_1_object_1ad2a435d1dd9a270785fca7cab265adba" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>CastOffPagesEnd</name></member>
+      <member refid="classvrv_1_1_system_element_1a17d947a62f84e74d4af850851ca4f058" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>CastOffSystems</name></member>
       <member refid="classvrv_1_1_object_1aee6f8abfde8d2fe26b067f97b6ba9f0b" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>CastOffSystemsEnd</name></member>
       <member refid="classvrv_1_1_object_1a0af864d1b64a70d4ec8b62a520114bde" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>ClearChildren</name></member>
       <member refid="classvrv_1_1_object_1a667b4432b8f9d9e92bfd34fe5c885099" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>ClearRelinquishedChildren</name></member>
@@ -387,8 +374,8 @@
       <member refid="classvrv_1_1_object_1a677194130b19ebd382b4868f9284985b" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ConvertMarkupAnalyticalEnd</name></member>
       <member refid="classvrv_1_1_object_1a7262b554ba150b54b434fc7c0c93001d" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ConvertMarkupArtic</name></member>
       <member refid="classvrv_1_1_object_1adeeaf95b17b15194260884d306a72214" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ConvertMarkupArticEnd</name></member>
-      <member refid="classvrv_1_1_system_element_1ae63697014c36d8fdb42b33bb304712ad" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ConvertToCastOffMensural</name></member>
-      <member refid="classvrv_1_1_system_element_1a40e18f5218b411bfe4caf158138b97e2" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ConvertToPageBased</name></member>
+      <member refid="classvrv_1_1_system_element_1a8e83c5ad5476cd653397ec74112532ac" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ConvertToCastOffMensural</name></member>
+      <member refid="classvrv_1_1_system_element_1ad6ddb7b3273585c63dc5ffabc78b8527" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ConvertToPageBased</name></member>
       <member refid="classvrv_1_1_object_1ada7452f72d022232966a2d5822b8bbc8" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ConvertToPageBasedEnd</name></member>
       <member refid="classvrv_1_1_object_1a4dc4ba189667de40dfbb15b88adb5b0e" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ConvertToUnCastOffMensural</name></member>
       <member refid="classvrv_1_1_object_1a4bf38f527d70161c92062a2347b7c11e" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>CopyChildren</name></member>
@@ -396,7 +383,7 @@
       <member refid="classvrv_1_1_object_1ac846569894fc8b08083e5a8526ba5834" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>DetachChild</name></member>
       <member refid="classvrv_1_1_bounding_box_1a52ac837dc797c5f292c98ddb3f43a098" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>Encloses</name></member>
       <member refid="classvrv_1_1_object_1a3749f83f36adfc8748438ca17b1e5f91" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>FillFlatList</name></member>
-      <member refid="classvrv_1_1_floating_object_1a26acefe41b29aa28c85eb244f624d2c1" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>FillStaffCurrentTimeSpanning</name></member>
+      <member refid="classvrv_1_1_floating_object_1a63b8dc8ca0b4943fe59552e75bd88347" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>FillStaffCurrentTimeSpanning</name></member>
       <member refid="classvrv_1_1_object_1aa35be27cc82fd95f7a353a705721778b" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>FillStaffCurrentTimeSpanningEnd</name></member>
       <member refid="classvrv_1_1_object_1afe64fa5f9df4e735ed7f1e9a5935a339" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>FindAllBetween</name></member>
       <member refid="classvrv_1_1_object_1aa5fd51861abce2d3237ef9d115d32ba6" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>FindAllByComparison</name></member>
@@ -415,6 +402,7 @@
       <member refid="classvrv_1_1_object_1a4750585ae6b8737aba3408fcc863dfeb" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>FindPreviousChild</name></member>
       <member refid="classvrv_1_1_object_1a7c792936ed7e04d00172c7b0017b85a1" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>FindPreviousChildByComparison</name></member>
       <member refid="classvrv_1_1_object_1adf698716d3820efeb5d1af9bfd24a187" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>FindSpannedLayerElements</name></member>
+      <member refid="classvrv_1_1_object_1a640fefc0f8ed8697bca36c19d6daf940" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>FindSpannedLayerElementsEnd</name></member>
       <member refid="classvrv_1_1_floating_object_1a881e66e4ba71468555b7a8abae6a346e" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>FloatingObject</name></member>
       <member refid="classvrv_1_1_floating_object_1a0988447a69fd83a982391248f4a19944" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>FloatingObject</name></member>
       <member refid="classvrv_1_1_floating_object_1a41170245f10c43785287cacb6e34013b" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>FloatingObject</name></member>
@@ -424,8 +412,9 @@
       <member refid="classvrv_1_1_object_1abe889073301d6e1dfe55e725b6532948" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>GenerateTimemap</name></member>
       <member refid="classvrv_1_1_object_1a3eb3c52e16525ed1a559a825fa85e00e" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>GetAlignmentLeftRight</name></member>
       <member refid="classvrv_1_1_object_1aeb7e152a62704071901972bbfa06062c" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>GetAttributes</name></member>
-      <member refid="classvrv_1_1_bounding_box_1ab7d4cb3332c6a35ec86462b37c300279" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>GetBezierThicknessCoeficient</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a0771c6326e6a7123268f433bfdc903f6" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>GetBezierThicknessCoefficient</name></member>
       <member refid="classvrv_1_1_bounding_box_1a91a7bb36d11f909e84caab997fb49c0c" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>GetBottomBy</name></member>
+      <member refid="classvrv_1_1_object_1afc0d45ecd9bef7d010a33efe25f8878c" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>GetBoundaryEnd</name></member>
       <member refid="classvrv_1_1_bounding_box_1aa3fc5bcc7d25b6e975fad50b11edd781" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>GetBoundingBoxGlyph</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2b025880f04cefa1cb37b7e6f8bfb8f1" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>GetBoundingBoxGlyphFontSize</name></member>
       <member refid="classvrv_1_1_object_1a6bd78730c9d5f0302710213488708adb" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>GetChild</name></member>
@@ -452,8 +441,8 @@
       <member refid="classvrv_1_1_floating_object_1aa26df3350328cd96704f766ac3db0615" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>GetCurrentFloatingPositioner</name></member>
       <member refid="classvrv_1_1_object_1a318be52d7897d2a16d699374a4b702ed" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>GetDescendantIndex</name></member>
       <member refid="classvrv_1_1_floating_object_1a67e6ef3b80f122a42bcccd89701bc298" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>GetDrawingGrpId</name></member>
-      <member refid="classvrv_1_1_floating_object_1a9173ddc12fab3e823f592b4688cec8e0" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>GetDrawingX</name></member>
-      <member refid="classvrv_1_1_floating_object_1a44a902421018e125f191dfcb31d8c50a" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>GetDrawingY</name></member>
+      <member refid="classvrv_1_1_floating_object_1a5c6d15419321ce64bde495eb3b6b9039" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>GetDrawingX</name></member>
+      <member refid="classvrv_1_1_floating_object_1a87db0b64d7840dcfd006f6af2b32e4bb" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>GetDrawingY</name></member>
       <member refid="classvrv_1_1_object_1a60120fd33bf1f7227c4dc2f6a9b265c7" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>GetDurationInterface</name></member>
       <member refid="classvrv_1_1_object_1a12c0e976636a155de9c58ead6cd743f8" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>GetFacsimileInterface</name></member>
       <member refid="classvrv_1_1_object_1a4f539160a7684d67d0c4e01e5dd06c36" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>GetFirst</name></member>
@@ -558,6 +547,7 @@
       <member refid="classvrv_1_1_object_1a79600c0f5d0d0c68a2501f60ef077126" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareCrossStaffEnd</name></member>
       <member refid="classvrv_1_1_object_1a99e3f49ab3ca845fb0f6d501fb915ff6" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareDelayedTurns</name></member>
       <member refid="classvrv_1_1_object_1a392d061080fee243ac4beb6f7e77434d" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareDrawingCueSize</name></member>
+      <member refid="classvrv_1_1_object_1a519bb69210ec0597d37345f5395e943b" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareDynamEnclosure</name></member>
       <member refid="classvrv_1_1_object_1ac75af86dda467af7ae8d928c83b1a7c8" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareFacsimile</name></member>
       <member refid="classvrv_1_1_object_1af6ece837a732f054019b9230c59d8701" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareFloatingGrps</name></member>
       <member refid="classvrv_1_1_object_1ac9850da37f019eae12da8c42776e67b8" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareFloatingGrpsEnd</name></member>
@@ -569,11 +559,12 @@
       <member refid="classvrv_1_1_object_1a72def6c07065fa48ad7cd844dd4b2ed5" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PreparePointersByLayer</name></member>
       <member refid="classvrv_1_1_object_1a4d2903e69118df1b627cb99ecd036948" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareProcessingLists</name></member>
       <member refid="classvrv_1_1_object_1a1512dc40ee5cbcefd3dd463776e24c0c" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareRpt</name></member>
-      <member refid="classvrv_1_1_floating_object_1a2c126764fd8116a54fa94700ef98494f" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareTimePointing</name></member>
+      <member refid="classvrv_1_1_object_1a64c45a113ca154eaa33d322abb473415" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareSlurs</name></member>
+      <member refid="classvrv_1_1_floating_object_1a6bc20d3cca7e15e9b1f3c77fb682d3ad" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareTimePointing</name></member>
       <member refid="classvrv_1_1_object_1a5ea18a2c77fc31c9a0eee2a948660d5b" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareTimePointingEnd</name></member>
-      <member refid="classvrv_1_1_floating_object_1ad0b4a076b299fc6e9ed32cc51aab1bf7" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareTimeSpanning</name></member>
+      <member refid="classvrv_1_1_floating_object_1aa06caf3b3d926aeb0cca580a357bb074" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareTimeSpanning</name></member>
       <member refid="classvrv_1_1_object_1a8049b8c19d504912d3eb535b8aba95e0" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareTimeSpanningEnd</name></member>
-      <member refid="classvrv_1_1_floating_object_1ada6846dddeb271c4eb74a753ed763ed7" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareTimestamps</name></member>
+      <member refid="classvrv_1_1_floating_object_1af97233f871331ab970d0b2b48dd7ecf1" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareTimestamps</name></member>
       <member refid="classvrv_1_1_object_1a9cf511bc173faafb24b5a87149acb897" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>PrepareTimestampsEnd</name></member>
       <member refid="classvrv_1_1_object_1a22908db94736af382a1c905b2c648210" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>Process</name></member>
       <member refid="classvrv_1_1_bounding_box_1a74c28d831f2e14aec44a848a961f8b42" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>RectBottomOverlap</name></member>
@@ -587,16 +578,17 @@
       <member refid="classvrv_1_1_object_1a4a7cd0786cfd3119a6dd128c25b67a33" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ReorderByXPos</name></member>
       <member refid="classvrv_1_1_object_1aba32b01b87b8f31455e68c77a3d8ee40" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>ReplaceChild</name></member>
       <member refid="classvrv_1_1_object_1aa1c070a008b1db58a5036c27c2fb8307" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ReplaceDrawingValuesInStaffDef</name></member>
-      <member refid="classvrv_1_1_system_element_1ae1759cdc3693ad2f404cb0cf5cfe327a" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>Reset</name></member>
+      <member refid="classvrv_1_1_system_element_1a052b062bad0d78113a1067212a24c816" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>Reset</name></member>
       <member refid="classvrv_1_1_bounding_box_1ae79b9324168608f36cb71c8ca4174220" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ResetBoundingBox</name></member>
-      <member refid="classvrv_1_1_object_1a7cd2ff14f4324ac8fdb54739fac93532" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ResetCachedDrawingX</name></member>
-      <member refid="classvrv_1_1_object_1acdcf2a3a18e5b0451d902720ef1408ac" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ResetCachedDrawingY</name></member>
-      <member refid="classvrv_1_1_floating_object_1a7ffe51b2123461f9bc70ae597a24fe0e" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ResetDrawing</name></member>
-      <member refid="classvrv_1_1_floating_object_1a73c7828c73925d4b483c90ea3c45e0a6" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ResetHorizontalAlignment</name></member>
+      <member refid="classvrv_1_1_object_1a859aecc00ab75fc7ed2f2780bc0a6a51" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ResetCachedDrawingX</name></member>
+      <member refid="classvrv_1_1_object_1ac5b28a8625980d057d6cad83dbd52e26" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ResetCachedDrawingY</name></member>
+      <member refid="classvrv_1_1_floating_object_1a0cd8465b315ee522827181f973944713" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ResetDrawing</name></member>
+      <member refid="classvrv_1_1_floating_object_1aca4747e3c2a91341b053520e4da715ef" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ResetHorizontalAlignment</name></member>
       <member refid="classvrv_1_1_object_1a5d22ebda01e0b254c13d558f5ffdb098" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>ResetParent</name></member>
       <member refid="classvrv_1_1_object_1aadeb99ea27241a64bf942e469a04445e" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>ResetUuid</name></member>
-      <member refid="classvrv_1_1_floating_object_1a641ed5d645ade83bf5c970d3e5cc02c4" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ResetVerticalAlignment</name></member>
+      <member refid="classvrv_1_1_floating_object_1a9a9271ae963c1406e733365a4ac860d8" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ResetVerticalAlignment</name></member>
       <member refid="classvrv_1_1_object_1a93b5fe054b2d26fe91ff50a5861fe08c" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ResolveMIDITies</name></member>
+      <member refid="classvrv_1_1_object_1a973a6ee5f5504cfdad58a940a95c313e" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>ResolveRehPosition</name></member>
       <member refid="classvrv_1_1_object_1a74097c855ed070b02fd06810207d0ac0" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>Save</name></member>
       <member refid="classvrv_1_1_object_1a8ec6663670b4b6522cb4892babf36742" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>Save</name></member>
       <member refid="classvrv_1_1_object_1ad628dce30da1167aa84313ea7a4f5612" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>SaveEnd</name></member>
@@ -625,6 +617,7 @@
       <member refid="classvrv_1_1_object_1a9f30aa6a8185b260943003a08980d376" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>SetParent</name></member>
       <member refid="classvrv_1_1_object_1a28b81f899cf3c244799da6f49ae3dd34" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>SetStaffDefRedrawFlags</name></member>
       <member refid="classvrv_1_1_object_1a190abc310da990f676c931d272bbb434" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>SetUuid</name></member>
+      <member refid="classvrv_1_1_bounding_box_1ab4d1764142c6881678dbfcaee124e38f" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>SolveCubicPolynomial</name></member>
       <member refid="classvrv_1_1_object_1a6c529b9574392b6c2baeaf8470e2a989" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>sortByUlx</name></member>
       <member refid="classvrv_1_1_object_1aa8caf0942b1ff1c02f6f8e879397ca21" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>SortChildren</name></member>
       <member refid="classvrv_1_1_object_1ac97807a0dabfdf0d1d483f7f3e9427f9" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>StableSort</name></member>
@@ -635,11 +628,11 @@
       <member refid="classvrv_1_1_system_element_1ae908caadafe663ed9611976e92457720" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>SystemElement</name></member>
       <member refid="classvrv_1_1_system_element_1a4ac3ad16b29d3fc709cf803fdb73dae9" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>SystemElement</name></member>
       <member refid="classvrv_1_1_object_1a0ee02f42628df9898a57349899c1ba3e" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>Transpose</name></member>
-      <member refid="classvrv_1_1_floating_object_1a8bf4262ef0383452bb3666bd1b077a67" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>UnCastOff</name></member>
-      <member refid="classvrv_1_1_floating_object_1abbd346830de7211ed94772948f0e9513" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>UpdateContentBBoxX</name></member>
-      <member refid="classvrv_1_1_floating_object_1a0f19109398376ce67d8211faa133e7f5" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>UpdateContentBBoxY</name></member>
-      <member refid="classvrv_1_1_floating_object_1a78079e4ba538d3e212ba44a79fc32f61" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>UpdateSelfBBoxX</name></member>
-      <member refid="classvrv_1_1_floating_object_1a1dec773ac9a13ce9abb0b750488061e7" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>UpdateSelfBBoxY</name></member>
+      <member refid="classvrv_1_1_floating_object_1ad76285ff372a1a1c5eca6fb7e9923afe" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>UnCastOff</name></member>
+      <member refid="classvrv_1_1_floating_object_1a79c7af4267643b1bc2a783be841975c2" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>UpdateContentBBoxX</name></member>
+      <member refid="classvrv_1_1_floating_object_1a88f281e9a6394157894a57b546346017" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>UpdateContentBBoxY</name></member>
+      <member refid="classvrv_1_1_floating_object_1a29ef524752d056b1f60cab88e77a32ee" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>UpdateSelfBBoxX</name></member>
+      <member refid="classvrv_1_1_floating_object_1a1868c149ca8ff416b6275e1637eaa626" prot="public" virt="virtual"><scope>vrv::SystemElement</scope><name>UpdateSelfBBoxY</name></member>
       <member refid="classvrv_1_1_bounding_box_1aa10dbbf04b3707900490d1ced0ea0418" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>VerticalBottomOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1acdb36f4007fc88d79a81eed3b440c536" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>VerticalContentOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1ab9bbe1447c1e512c9154825086f34aef" prot="public" virt="non-virtual"><scope>vrv::SystemElement</scope><name>VerticalSelfOverlap</name></member>

@@ -2,7 +2,7 @@ var classvrv_1_1_del =
 [
     [ "Del", "classvrv_1_1_del.html#a8391a93580602c2c45dce67924c0ac5c", null ],
     [ "~Del", "classvrv_1_1_del.html#aa2206b8f526cb17850cba368b48a9aaf", null ],
-    [ "Clone", "classvrv_1_1_del.html#a87af93dceaaadd228c9e7741f97cd9a4", null ],
-    [ "GetClassName", "classvrv_1_1_del.html#a202e885866ba149c00f17fb8a5b24afd", null ],
-    [ "Reset", "classvrv_1_1_del.html#a26bbb25b17b1332e0a4d7a9d37e4900b", null ]
+    [ "Clone", "classvrv_1_1_del.html#afc6b41ccaf5d6fc4567446f8ad613ce2", null ],
+    [ "GetClassName", "classvrv_1_1_del.html#af327ff43127b87b691f313f5a926e168", null ],
+    [ "Reset", "classvrv_1_1_del.html#ab5b7b40083784cc520df0f39c447f7a1", null ]
 ];

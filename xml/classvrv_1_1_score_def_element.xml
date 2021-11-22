@@ -74,14 +74,14 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/scoredef.h" line="52" column="13"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_score_def_element_1a1e121d95814e70d0123bb7be2e69f634" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_score_def_element_1ad8a42619dcc112149b342b6ae17c51b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>virtual void vrv::ScoreDefElement::Reset</definition>
-        <argsstring>()</argsstring>
+        <definition>void vrv::ScoreDefElement::Reset</definition>
+        <argsstring>() override</argsstring>
         <name>Reset</name>
         <reimplements refid="classvrv_1_1_object_1acdbfa3602b2a05ed4c7ba41c77f92b7e">Reset</reimplements>
-        <reimplementedby refid="classvrv_1_1_staff_def_1a9ad4b6e622c59afd708421d253ffd21d">Reset</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_score_def_1ab7953cd561585a76c37a35410e7c2df8">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_staff_def_1a5b130da96f4e9bf269dc12fd2c5f1952">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_score_def_1a4a424b883a7d1a5c6de2baf2b9557852">Reset</reimplementedby>
         <briefdescription>
 <para>Reset the object, that is 1) removing all childs and 2) resetting all attributes. </para>
         </briefdescription>
@@ -90,15 +90,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/scoredef.h" line="53" column="18"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/scoredef.h" line="53" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Getter to interfaces</header>
-      <memberdef kind="function" id="classvrv_1_1_score_def_element_1ae98319158b6db4c30ab5ded9ab765a41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_score_def_element_1ac73bb732115fdffcb19e0dff161fd7ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classvrv_1_1_score_def_interface" kindref="compound">ScoreDefInterface</ref> *</type>
-        <definition>virtual ScoreDefInterface* vrv::ScoreDefElement::GetScoreDefInterface</definition>
-        <argsstring>()</argsstring>
+        <definition>ScoreDefInterface* vrv::ScoreDefElement::GetScoreDefInterface</definition>
+        <argsstring>() override</argsstring>
         <name>GetScoreDefInterface</name>
         <reimplements refid="classvrv_1_1_object_1a36ae3be40fa20c6255a6003e5d56133f">GetScoreDefInterface</reimplements>
         <briefdescription>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/scoredef.h" line="60" column="31" bodyfile="/home/runner/work/verovio/verovio/include/vrv/scoredef.h" bodystart="60" bodyend="60"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/scoredef.h" line="60" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/scoredef.h" bodystart="60" bodyend="60"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -356,13 +356,13 @@
         </childnode>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
-        <childnode refid="12" relation="public-inheritance">
+        <childnode refid="13" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11">
+      <node id="12">
         <label>AttSystems</label>
       </node>
-      <node id="12">
+      <node id="13">
         <label>AttTyped</label>
       </node>
       <node id="3">
@@ -386,6 +386,8 @@
         </childnode>
         <childnode refid="11" relation="public-inheritance">
         </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="5">
         <label>vrv::Interface</label>
@@ -394,10 +396,10 @@
       <node id="8">
         <label>AttMidiTempo</label>
       </node>
-      <node id="10">
+      <node id="11">
         <label>AttSpacing</label>
       </node>
-      <node id="14">
+      <node id="15">
         <label>vrv::StaffDef</label>
         <link refid="classvrv_1_1_staff_def"/>
         <childnode refid="1" relation="public-inheritance">
@@ -406,11 +408,14 @@
       <node id="6">
         <label>AttLyricStyle</label>
       </node>
-      <node id="13">
+      <node id="14">
         <label>vrv::ScoreDef</label>
         <link refid="classvrv_1_1_score_def"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="10">
+        <label>AttPianoPedals</label>
       </node>
       <node id="2">
         <label>vrv::Object</label>
@@ -433,13 +438,13 @@
         </childnode>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
-        <childnode refid="12" relation="public-inheritance">
+        <childnode refid="13" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11">
+      <node id="12">
         <label>AttSystems</label>
       </node>
-      <node id="12">
+      <node id="13">
         <label>AttTyped</label>
       </node>
       <node id="3">
@@ -463,6 +468,8 @@
         </childnode>
         <childnode refid="11" relation="public-inheritance">
         </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="5">
         <label>vrv::Interface</label>
@@ -471,11 +478,14 @@
       <node id="8">
         <label>AttMidiTempo</label>
       </node>
-      <node id="10">
+      <node id="11">
         <label>AttSpacing</label>
       </node>
       <node id="6">
         <label>AttLyricStyle</label>
+      </node>
+      <node id="10">
+        <label>AttPianoPedals</label>
       </node>
       <node id="2">
         <label>vrv::Object</label>
@@ -501,7 +511,6 @@
       <member refid="classvrv_1_1_object_1a6c19b533f485fd10e5649bb5c441c884" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>AdjustClefChanges</name></member>
       <member refid="classvrv_1_1_object_1acfa149d616638b3935e56e1ee41ce61a" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>AdjustCrossStaffContent</name></member>
       <member refid="classvrv_1_1_object_1abeee6db6564ff37f1fd686033751d51f" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>AdjustCrossStaffYPos</name></member>
-      <member refid="classvrv_1_1_object_1a91e929fac940d876aa172b0b6c160c26" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>AdjustCrossStaffYPosEnd</name></member>
       <member refid="classvrv_1_1_object_1a1745790d27bcd5c9b11754ea44fdc376" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>AdjustDots</name></member>
       <member refid="classvrv_1_1_object_1ae0790c79940de6c0bd58e9022043b493" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>AdjustDotsEnd</name></member>
       <member refid="classvrv_1_1_object_1a757300b40f61c72a86c66fe9df7f8b5d" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>AdjustFloatingPositionerGrps</name></member>
@@ -542,6 +551,7 @@
       <member refid="classvrv_1_1_bounding_box_1a5601855899250709d9fa94f3c280aa72" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>BoundingBox</name></member>
       <member refid="classvrv_1_1_object_1aeafa32ecabeffb9ce6d3e8372ab7160b" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>CalcArtic</name></member>
       <member refid="classvrv_1_1_bounding_box_1a91eb3e2ee9b00bc764283fe1710e199b" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>CalcBezierAtPosition</name></member>
+      <member refid="classvrv_1_1_bounding_box_1af1fdd065b198aafe35dcc7e5a35477ee" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>CalcBezierParamAtPosition</name></member>
       <member refid="classvrv_1_1_object_1a277607c9a525f437a721e8c526963d44" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>CalcChordNoteHeads</name></member>
       <member refid="classvrv_1_1_bounding_box_1ac09f7239af89a7e19ca235761589e150" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>CalcDeCasteljau</name></member>
       <member refid="classvrv_1_1_object_1a30538b76016036369786f42be54482c2" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>CalcDots</name></member>
@@ -559,6 +569,7 @@
       <member refid="classvrv_1_1_bounding_box_1ae087d56d7ff270c908e3a723be01f6e7" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>CalcThickBezier</name></member>
       <member refid="classvrv_1_1_object_1ae1320bf0b5a56f033dcc561147225ba7" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>CastOffEncoding</name></member>
       <member refid="classvrv_1_1_object_1af4bdf6d63a5fbf43a21a5c18d3c49a10" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>CastOffPages</name></member>
+      <member refid="classvrv_1_1_object_1ad2a435d1dd9a270785fca7cab265adba" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>CastOffPagesEnd</name></member>
       <member refid="classvrv_1_1_object_1a15c5f866aed95ea5c5b051c5c7e47137" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>CastOffSystems</name></member>
       <member refid="classvrv_1_1_object_1aee6f8abfde8d2fe26b067f97b6ba9f0b" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>CastOffSystemsEnd</name></member>
       <member refid="classvrv_1_1_object_1a0af864d1b64a70d4ec8b62a520114bde" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>ClearChildren</name></member>
@@ -597,6 +608,7 @@
       <member refid="classvrv_1_1_object_1a4750585ae6b8737aba3408fcc863dfeb" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>FindPreviousChild</name></member>
       <member refid="classvrv_1_1_object_1a7c792936ed7e04d00172c7b0017b85a1" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>FindPreviousChildByComparison</name></member>
       <member refid="classvrv_1_1_object_1adf698716d3820efeb5d1af9bfd24a187" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>FindSpannedLayerElements</name></member>
+      <member refid="classvrv_1_1_object_1a640fefc0f8ed8697bca36c19d6daf940" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>FindSpannedLayerElementsEnd</name></member>
       <member refid="classvrv_1_1_object_1a7ced59f27507ee81372cc12d7f57c8e0" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>GenerateFeatures</name></member>
       <member refid="classvrv_1_1_object_1a426081ffba31e4251a2c36ceeb2a43ba" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>GenerateMIDI</name></member>
       <member refid="classvrv_1_1_object_1a2ea4b50e70a3a0d43293df7607a6901b" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GenerateRandUuid</name></member>
@@ -604,8 +616,9 @@
       <member refid="classvrv_1_1_object_1a3eb3c52e16525ed1a559a825fa85e00e" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>GetAlignmentLeftRight</name></member>
       <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetAttClasses</name></member>
       <member refid="classvrv_1_1_object_1aeb7e152a62704071901972bbfa06062c" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetAttributes</name></member>
-      <member refid="classvrv_1_1_bounding_box_1ab7d4cb3332c6a35ec86462b37c300279" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetBezierThicknessCoeficient</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a0771c6326e6a7123268f433bfdc903f6" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetBezierThicknessCoefficient</name></member>
       <member refid="classvrv_1_1_bounding_box_1a91a7bb36d11f909e84caab997fb49c0c" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetBottomBy</name></member>
+      <member refid="classvrv_1_1_object_1afc0d45ecd9bef7d010a33efe25f8878c" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetBoundaryEnd</name></member>
       <member refid="classvrv_1_1_bounding_box_1aa3fc5bcc7d25b6e975fad50b11edd781" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetBoundingBoxGlyph</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2b025880f04cefa1cb37b7e6f8bfb8f1" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetBoundingBoxGlyphFontSize</name></member>
       <member refid="classvrv_1_1_object_1a6bd78730c9d5f0302710213488708adb" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetChild</name></member>
@@ -631,8 +644,8 @@
       <member refid="classvrv_1_1_bounding_box_1afb681918250b5eceeab06a8752c794a0" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetContentY1</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7d8f116f3c72430801e43fc9f1fb1e95" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetContentY2</name></member>
       <member refid="classvrv_1_1_object_1a318be52d7897d2a16d699374a4b702ed" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetDescendantIndex</name></member>
-      <member refid="classvrv_1_1_object_1af17afdb1b9eba2df2d2f9b14bf98a8b0" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>GetDrawingX</name></member>
-      <member refid="classvrv_1_1_object_1a93703095a714be5684eb0968475a87c9" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>GetDrawingY</name></member>
+      <member refid="classvrv_1_1_object_1ac707920ee385b0c7bb52d4b0184e7e54" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>GetDrawingX</name></member>
+      <member refid="classvrv_1_1_object_1a2b30e0834719af6134364237c5f78940" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>GetDrawingY</name></member>
       <member refid="classvrv_1_1_object_1a60120fd33bf1f7227c4dc2f6a9b265c7" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>GetDurationInterface</name></member>
       <member refid="classvrv_1_1_object_1a12c0e976636a155de9c58ead6cd743f8" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>GetFacsimileInterface</name></member>
       <member refid="classvrv_1_1_object_1a4f539160a7684d67d0c4e01e5dd06c36" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetFirst</name></member>
@@ -661,7 +674,7 @@
       <member refid="classvrv_1_1_object_1a26a7c60cdf50a4072927aa671112f1f3" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetPrevious</name></member>
       <member refid="classvrv_1_1_object_1a3d26e4876ee5a38e4c01fae4af747c23" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>GetRelativeLayerElement</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2fe9d4e0cef41c270fe6683e5fbd8223" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetRightBy</name></member>
-      <member refid="classvrv_1_1_score_def_element_1ae98319158b6db4c30ab5ded9ab765a41" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>GetScoreDefInterface</name></member>
+      <member refid="classvrv_1_1_score_def_element_1ac73bb732115fdffcb19e0dff161fd7ff" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>GetScoreDefInterface</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7e55bc05f8dc9b3ff7768fe48c791d83" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetSelfBottom</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2fb7e4b83e390c3cd436e3a73ddfa269" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetSelfLeft</name></member>
       <member refid="classvrv_1_1_bounding_box_1aaae2c8d3d80e7203585052862288f2d5" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>GetSelfRight</name></member>
@@ -719,7 +732,7 @@
       <member refid="classvrv_1_1_object_1a76f4663d1b09c5fe2b0c771eeb3f7d0e" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>IsExpansion</name></member>
       <member refid="classvrv_1_1_object_1a07dfe3de52f16cff12eefabe11c6cd96" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>IsExpansion</name></member>
       <member refid="classvrv_1_1_object_1a3b131f39c868a8a1e9b768bdc0eae811" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>IsFloatingObject</name></member>
-      <member refid="classvrv_1_1_score_def_interface_1a8508fdc45f34b3126fa1afa7fcadf35a" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>IsInterface</name></member>
+      <member refid="classvrv_1_1_score_def_interface_1aaa4843bcd84822b7401990c55d6735d2" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>IsInterface</name></member>
       <member refid="classvrv_1_1_object_1a311186b3525f994471394fcc38bbcda8" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>IsLayerElement</name></member>
       <member refid="classvrv_1_1_object_1a4eec6780edc930e49d9874c1036735a4" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>IsModified</name></member>
       <member refid="classvrv_1_1_object_1a6fe6d0adbd0341a514fc3645039559fd" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>IsPageElement</name></member>
@@ -749,6 +762,7 @@
       <member refid="classvrv_1_1_object_1a79600c0f5d0d0c68a2501f60ef077126" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>PrepareCrossStaffEnd</name></member>
       <member refid="classvrv_1_1_object_1a99e3f49ab3ca845fb0f6d501fb915ff6" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>PrepareDelayedTurns</name></member>
       <member refid="classvrv_1_1_object_1a392d061080fee243ac4beb6f7e77434d" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>PrepareDrawingCueSize</name></member>
+      <member refid="classvrv_1_1_object_1a519bb69210ec0597d37345f5395e943b" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>PrepareDynamEnclosure</name></member>
       <member refid="classvrv_1_1_object_1ac75af86dda467af7ae8d928c83b1a7c8" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>PrepareFacsimile</name></member>
       <member refid="classvrv_1_1_object_1af6ece837a732f054019b9230c59d8701" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>PrepareFloatingGrps</name></member>
       <member refid="classvrv_1_1_object_1ac9850da37f019eae12da8c42776e67b8" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>PrepareFloatingGrpsEnd</name></member>
@@ -760,6 +774,7 @@
       <member refid="classvrv_1_1_object_1a72def6c07065fa48ad7cd844dd4b2ed5" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>PreparePointersByLayer</name></member>
       <member refid="classvrv_1_1_object_1a4d2903e69118df1b627cb99ecd036948" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>PrepareProcessingLists</name></member>
       <member refid="classvrv_1_1_object_1a1512dc40ee5cbcefd3dd463776e24c0c" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>PrepareRpt</name></member>
+      <member refid="classvrv_1_1_object_1a64c45a113ca154eaa33d322abb473415" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>PrepareSlurs</name></member>
       <member refid="classvrv_1_1_object_1a70fc6206cd0d6608724d91d03e64d767" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>PrepareTimePointing</name></member>
       <member refid="classvrv_1_1_object_1a5ea18a2c77fc31c9a0eee2a948660d5b" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>PrepareTimePointingEnd</name></member>
       <member refid="classvrv_1_1_object_1ac052d42c0d724ca5f16192d7398193d3" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>PrepareTimeSpanning</name></member>
@@ -779,16 +794,17 @@
       <member refid="classvrv_1_1_object_1a4a7cd0786cfd3119a6dd128c25b67a33" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>ReorderByXPos</name></member>
       <member refid="classvrv_1_1_object_1aba32b01b87b8f31455e68c77a3d8ee40" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>ReplaceChild</name></member>
       <member refid="classvrv_1_1_object_1aa1c070a008b1db58a5036c27c2fb8307" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>ReplaceDrawingValuesInStaffDef</name></member>
-      <member refid="classvrv_1_1_score_def_element_1a1e121d95814e70d0123bb7be2e69f634" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>Reset</name></member>
+      <member refid="classvrv_1_1_score_def_element_1ad8a42619dcc112149b342b6ae17c51b7" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>Reset</name></member>
       <member refid="classvrv_1_1_bounding_box_1ae79b9324168608f36cb71c8ca4174220" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>ResetBoundingBox</name></member>
-      <member refid="classvrv_1_1_object_1a7cd2ff14f4324ac8fdb54739fac93532" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>ResetCachedDrawingX</name></member>
-      <member refid="classvrv_1_1_object_1acdcf2a3a18e5b0451d902720ef1408ac" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>ResetCachedDrawingY</name></member>
+      <member refid="classvrv_1_1_object_1a859aecc00ab75fc7ed2f2780bc0a6a51" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>ResetCachedDrawingX</name></member>
+      <member refid="classvrv_1_1_object_1ac5b28a8625980d057d6cad83dbd52e26" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>ResetCachedDrawingY</name></member>
       <member refid="classvrv_1_1_object_1a69ad18810d5249e8bb56be54884d2b50" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>ResetDrawing</name></member>
       <member refid="classvrv_1_1_object_1acea387d6c12925339a10f94312d9a82f" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>ResetHorizontalAlignment</name></member>
       <member refid="classvrv_1_1_object_1a5d22ebda01e0b254c13d558f5ffdb098" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>ResetParent</name></member>
       <member refid="classvrv_1_1_object_1aadeb99ea27241a64bf942e469a04445e" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>ResetUuid</name></member>
       <member refid="classvrv_1_1_object_1ab5f42b79ff1721982121a8a9c493a8c1" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>ResetVerticalAlignment</name></member>
       <member refid="classvrv_1_1_object_1a93b5fe054b2d26fe91ff50a5861fe08c" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>ResolveMIDITies</name></member>
+      <member refid="classvrv_1_1_object_1a973a6ee5f5504cfdad58a940a95c313e" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>ResolveRehPosition</name></member>
       <member refid="classvrv_1_1_object_1a74097c855ed070b02fd06810207d0ac0" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>Save</name></member>
       <member refid="classvrv_1_1_object_1a8ec6663670b4b6522cb4892babf36742" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>Save</name></member>
       <member refid="classvrv_1_1_object_1ad628dce30da1167aa84313ea7a4f5612" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>SaveEnd</name></member>
@@ -817,6 +833,7 @@
       <member refid="classvrv_1_1_object_1a9f30aa6a8185b260943003a08980d376" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>SetParent</name></member>
       <member refid="classvrv_1_1_object_1a28b81f899cf3c244799da6f49ae3dd34" prot="public" virt="virtual"><scope>vrv::ScoreDefElement</scope><name>SetStaffDefRedrawFlags</name></member>
       <member refid="classvrv_1_1_object_1a190abc310da990f676c931d272bbb434" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>SetUuid</name></member>
+      <member refid="classvrv_1_1_bounding_box_1ab4d1764142c6881678dbfcaee124e38f" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>SolveCubicPolynomial</name></member>
       <member refid="classvrv_1_1_object_1a6c529b9574392b6c2baeaf8470e2a989" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>sortByUlx</name></member>
       <member refid="classvrv_1_1_object_1aa8caf0942b1ff1c02f6f8e879397ca21" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>SortChildren</name></member>
       <member refid="classvrv_1_1_object_1ac97807a0dabfdf0d1d483f7f3e9427f9" prot="public" virt="non-virtual"><scope>vrv::ScoreDefElement</scope><name>StableSort</name></member>

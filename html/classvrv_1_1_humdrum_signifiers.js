@@ -13,6 +13,7 @@ var classvrv_1_1_humdrum_signifiers =
     [ "hairpinAccent", "classvrv_1_1_humdrum_signifiers.html#ab66a6cbe68a034df07006ba86a8cdd54", null ],
     [ "irest_color", "classvrv_1_1_humdrum_signifiers.html#acefc2f4cf69633e05ac5f5515de03552", null ],
     [ "ispace_color", "classvrv_1_1_humdrum_signifiers.html#a4d74a91b5405881760ac46d83ce5ad38", null ],
+    [ "lhpizz", "classvrv_1_1_humdrum_signifiers.html#a4dc5c09ebc91b8cbfcdeb054671437ad", null ],
     [ "mark", "classvrv_1_1_humdrum_signifiers.html#a6b2e9117d9ed6cd66000296f01dcd855", null ],
     [ "markdir", "classvrv_1_1_humdrum_signifiers.html#a2449a6fbc5727cf3152ab6290a20038e", null ],
     [ "mcolor", "classvrv_1_1_humdrum_signifiers.html#ab385bb2b31955835302646f2df8ea2a9", null ],

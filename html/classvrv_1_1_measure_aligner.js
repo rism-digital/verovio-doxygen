@@ -12,10 +12,10 @@ var classvrv_1_1_measure_aligner =
     [ "GetNonJustifiableMargin", "classvrv_1_1_measure_aligner.html#a7532c4d14f839f6227cba5ca14ccf8f8", null ],
     [ "GetRightAlignment", "classvrv_1_1_measure_aligner.html#aa46abc4ed23893053af6638052db07a4", null ],
     [ "GetRightBarLineAlignment", "classvrv_1_1_measure_aligner.html#a1aa205416a72aadb6634396cc19ca1e3", null ],
-    [ "JustifyX", "classvrv_1_1_measure_aligner.html#afff0b187b72ed77654718681ab8f5c19", null ],
+    [ "JustifyX", "classvrv_1_1_measure_aligner.html#ac5ceecc0ee55fca4f2a1096e6eff97d3", null ],
     [ "PushAlignmentsRight", "classvrv_1_1_measure_aligner.html#a2ea7245b5f0cf0bb1bc4fc144f29e8af", null ],
-    [ "Reset", "classvrv_1_1_measure_aligner.html#a5a533dcbe8644f3c92975643210a0341", null ],
-    [ "SetAlignmentXPos", "classvrv_1_1_measure_aligner.html#ab727c9924c45bddee7ddf241d91299c6", null ],
+    [ "Reset", "classvrv_1_1_measure_aligner.html#a8c1fa7cdc214b01b2804f7a6b3b2c30d", null ],
+    [ "SetAlignmentXPos", "classvrv_1_1_measure_aligner.html#a761b151a62014d67ffb4eff60cda6968", null ],
     [ "SetInitialTstamp", "classvrv_1_1_measure_aligner.html#a49a407aaec5b22bfa71116770b3746a8", null ],
     [ "SetMaxTime", "classvrv_1_1_measure_aligner.html#aab4edf29c88be6e12e726668af041d9d", null ]
 ];

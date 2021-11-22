@@ -7,7 +7,7 @@ var classvrv_1_1_grace_aligner =
     [ "GetGraceGroupLeft", "classvrv_1_1_grace_aligner.html#af3e0ed2ee2441e6ef0f7c1d375ae2015", null ],
     [ "GetGraceGroupRight", "classvrv_1_1_grace_aligner.html#a529ab1bd973ace3f7e720a710aa607fc", null ],
     [ "GetWidth", "classvrv_1_1_grace_aligner.html#a91da0cb356e1cfcdcfa06e8e028db7f8", null ],
-    [ "Reset", "classvrv_1_1_grace_aligner.html#a84a6f582c3cc58b12bcfdd14686f0a84", null ],
+    [ "Reset", "classvrv_1_1_grace_aligner.html#a3365834414a59b88baa68bba24edc4a6", null ],
     [ "SetGraceAligmentXPos", "classvrv_1_1_grace_aligner.html#aae43f582f69b1634c2f2eb5387c1125a", null ],
     [ "SetWidth", "classvrv_1_1_grace_aligner.html#a88ace1b1640a7151be8274eee8fcbaa6", null ],
     [ "StackGraceElement", "classvrv_1_1_grace_aligner.html#adafd1105e2839665f24976d256653ad8", null ]

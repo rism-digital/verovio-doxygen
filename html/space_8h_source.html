@@ -108,11 +108,11 @@ $(document).ready(function(){initNavTree('space_8h_source.html',''); initResizab
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classvrv_1_1_space.html">Space</a>();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_space.html">Space</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classvrv_1_1_space.html#a7d54a6eeca3904f4a31790227e5a2346">   32</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_space.html#a7d54a6eeca3904f4a31790227e5a2346">Clone</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_space.html">Space</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Reset();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> std::string GetClassName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Space&quot;</span>; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classvrv_1_1_space.html#ad7d5b3da0c9a31a17891805e799a4229">   32</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_space.html#ad7d5b3da0c9a31a17891805e799a4229">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_space.html">Space</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_space.html#a6d0c11896962bfd3fb7bc07cbd7af6f6">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Space&quot;</span>; }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> DurationInterface *GetDurationInterface() { <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>DurationInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    DurationInterface *GetDurationInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>DurationInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//----------//</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// Functors //</span></div>
@@ -131,15 +131,16 @@ $(document).ready(function(){initNavTree('space_8h_source.html',''); initResizab
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
-<div class="ttc" id="aclassvrv_1_1_space_html_a7d54a6eeca3904f4a31790227e5a2346"><div class="ttname"><a href="classvrv_1_1_space.html#a7d54a6eeca3904f4a31790227e5a2346">vrv::Space::Clone</a></div><div class="ttdeci">virtual Object * Clone() const</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> space.h:32</div></div>
 <div class="ttc" id="aclassvrv_1_1_space_html"><div class="ttname"><a href="classvrv_1_1_space.html">vrv::Space</a></div><div class="ttdoc">This class models the MEI &lt;space&gt; element.</div><div class="ttdef"><b>Definition:</b> space.h:23</div></div>
+<div class="ttc" id="aclassvrv_1_1_space_html_a6d0c11896962bfd3fb7bc07cbd7af6f6"><div class="ttname"><a href="classvrv_1_1_space.html#a6d0c11896962bfd3fb7bc07cbd7af6f6">vrv::Space::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
+<div class="ttc" id="aclassvrv_1_1_space_html_ad7d5b3da0c9a31a17891805e799a4229"><div class="ttname"><a href="classvrv_1_1_space.html#ad7d5b3da0c9a31a17891805e799a4229">vrv::Space::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> space.h:32</div></div>
 <div class="ttc" id="aclassvrv_1_1_duration_interface_html"><div class="ttname"><a href="classvrv_1_1_duration_interface.html">vrv::DurationInterface</a></div><div class="ttdoc">This class is an interface for elements with duration, such as notes and rests.</div><div class="ttdef"><b>Definition:</b> durationinterface.h:29</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:40</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>space.h</b></li>
-    <li class="footer">Generated on Tue Aug 24 2021 06:49:20 for Verovio by
+    <li class="footer">Generated on Mon Nov 22 2021 13:26:56 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
