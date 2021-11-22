@@ -16,7 +16,7 @@ var classvrv_1_1_layer_element =
     [ "ApplyPPUFactor", "classvrv_1_1_layer_element.html#afaa8567cca80a4f2769468ffd546a2be", null ],
     [ "CalcDotLocations", "classvrv_1_1_layer_element.html#af8ea95b9b80e19c4568a2e6da17d4d62", null ],
     [ "CalcElementHorizontalOverlap", "classvrv_1_1_layer_element.html#a80983838195a9e547294896393ba56a0", null ],
-    [ "CalcNoteLocations", "classvrv_1_1_layer_element.html#ac880cd085f86bd38d8483f1c2172e637", null ],
+    [ "CalcNoteLocations", "classvrv_1_1_layer_element.html#af71a2b085606189023ba9c8dda0d0bc6", null ],
     [ "CalcOnsetOffset", "classvrv_1_1_layer_element.html#a6756148b9bf1653c7c8ba2c3223aceba", null ],
     [ "CalcOptimalDotLocations", "classvrv_1_1_layer_element.html#a78700de97d76aca246ed070e737f3f20", null ],
     [ "CenterDrawingX", "classvrv_1_1_layer_element.html#a9119ab77c4eb82a8ad74cb8a20f7784d", null ],

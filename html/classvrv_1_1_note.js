@@ -11,7 +11,7 @@ var classvrv_1_1_note =
     [ "CalcDots", "classvrv_1_1_note.html#ac0ab23d2259972c017dade3db958f0a0", null ],
     [ "CalcLedgerLines", "classvrv_1_1_note.html#ae4212d3d2bb03c033bb751c5137d265e", null ],
     [ "CalcMIDIPitch", "classvrv_1_1_note.html#ae08d685d01125eb507e7bcecbae9e886", null ],
-    [ "CalcNoteLocations", "classvrv_1_1_note.html#a68f8cb412ad3250ef365ec0830c08a5d", null ],
+    [ "CalcNoteLocations", "classvrv_1_1_note.html#a4ed352a3aa79d5fe62095c0dc2418495", null ],
     [ "CalcStem", "classvrv_1_1_note.html#aac544df65fa58a853952072f33fb5fb3", null ],
     [ "CalcStemLenInThirdUnits", "classvrv_1_1_note.html#afe4bad9d0e38826cefbf537b4c1a69f3", null ],
     [ "Clone", "classvrv_1_1_note.html#a782b20876bae1c1f01fc871774312860", null ],

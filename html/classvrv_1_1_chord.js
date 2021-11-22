@@ -10,7 +10,7 @@ var classvrv_1_1_chord =
     [ "CalcArtic", "classvrv_1_1_chord.html#a781ed2e62b1ea64accaeb9d7a3469b32", null ],
     [ "CalcDotLocations", "classvrv_1_1_chord.html#ac661746d9397c1251d9b27d7e97689a9", null ],
     [ "CalcDots", "classvrv_1_1_chord.html#a042d0aec5abab93dfae235c8a394ce1e", null ],
-    [ "CalcNoteLocations", "classvrv_1_1_chord.html#a2ce88d0b07b69ee0a7a6f90934800ddd", null ],
+    [ "CalcNoteLocations", "classvrv_1_1_chord.html#a3450ad50f0e9c1852c51c69a9fa3e896", null ],
     [ "CalcOnsetOffsetEnd", "classvrv_1_1_chord.html#af54a296b017c5c4084b8b3e481798430", null ],
     [ "CalcStem", "classvrv_1_1_chord.html#a71e3234e8cd1ac5ae75cff06e3429f02", null ],
     [ "CalcStemLenInThirdUnits", "classvrv_1_1_chord.html#ae3e0dbfff7dc77c2a0f70cc1bc6cb401", null ],
