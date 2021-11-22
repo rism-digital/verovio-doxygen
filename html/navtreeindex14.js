@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"classvrv_1_1_options.html#afc24ddffb25350e041b0ca133a24bac4":[1,0,0,217,68],
+"classvrv_1_1_options.html#afceec4fdb9cfd908bd3f27994e3bb027":[1,0,0,217,142],
 "classvrv_1_1_options.html#afe6da1534d915f47eeab6724901777ff":[1,0,0,217,3],
 "classvrv_1_1_options.html#affb7bf4abf275c12e7d05e880536f537":[1,0,0,217,87],
 "classvrv_1_1_orig.html":[1,0,0,220],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "classvrv_1_1_prepare_floating_grps_params.html#a09d851b4a9ceac94fb4d7a7c5ad4cdce":[1,0,0,246,5],
 "classvrv_1_1_prepare_floating_grps_params.html#a23cc1495b4dd2b9cb4274eacaa732ef7":[1,0,0,246,0],
 "classvrv_1_1_prepare_floating_grps_params.html#a25836d255b1612407c9a48637b615a3a":[1,0,0,246,1],
-"classvrv_1_1_prepare_floating_grps_params.html#a41a0620a891fcba6297562797a2ee74d":[1,0,0,246,6],
-"classvrv_1_1_prepare_floating_grps_params.html#aa1c96da5f03b6c34c60f5e7d5e415ee8":[1,0,0,246,3],
-"classvrv_1_1_prepare_floating_grps_params.html#aaf07195751e607e361ed41e24680f8db":[1,0,0,246,2]
+"classvrv_1_1_prepare_floating_grps_params.html#a41a0620a891fcba6297562797a2ee74d":[1,0,0,246,6]
 };

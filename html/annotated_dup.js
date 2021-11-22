@@ -254,6 +254,7 @@ var annotated_dup =
       [ "PreparePointersByLayerParams", "classvrv_1_1_prepare_pointers_by_layer_params.html", "classvrv_1_1_prepare_pointers_by_layer_params" ],
       [ "PrepareProcessingListsParams", "classvrv_1_1_prepare_processing_lists_params.html", "classvrv_1_1_prepare_processing_lists_params" ],
       [ "PrepareRptParams", "classvrv_1_1_prepare_rpt_params.html", "classvrv_1_1_prepare_rpt_params" ],
+      [ "PrepareSlursParams", "classvrv_1_1_prepare_slurs_params.html", "classvrv_1_1_prepare_slurs_params" ],
       [ "PrepareTimePointingParams", "classvrv_1_1_prepare_time_pointing_params.html", "classvrv_1_1_prepare_time_pointing_params" ],
       [ "PrepareTimeSpanningParams", "classvrv_1_1_prepare_time_spanning_params.html", "classvrv_1_1_prepare_time_spanning_params" ],
       [ "PrepareTimestampsParams", "classvrv_1_1_prepare_timestamps_params.html", "classvrv_1_1_prepare_timestamps_params" ],

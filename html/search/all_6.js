@@ -155,7 +155,7 @@ var searchData=
   ['getpedalglyph_490',['GetPedalGlyph',['../classvrv_1_1_pedal.html#a68b550860ce390cecc9d04441256a950',1,'vrv::Pedal']]],
   ['getposition_491',['GetPosition',['../classvrv_1_1_beam_drawing_interface.html#a9571c5f0332590bffb23d5a85d32416b',1,'vrv::BeamDrawingInterface']]],
   ['getppufactor_492',['GetPPUFactor',['../classvrv_1_1_view.html#ae71d5dd5d3791d6ffb25dfde2b37a26f',1,'vrv::View']]],
-  ['getpreferredcurvedirection_493',['GetPreferredCurveDirection',['../classvrv_1_1_slur.html#ad0677990365f508cb89a70766367cd89',1,'vrv::Slur::GetPreferredCurveDirection()'],['../classvrv_1_1_system.html#a458d9201f7e5b71f22cf9a180feceff7',1,'vrv::System::GetPreferredCurveDirection()']]],
+  ['getpreferredcurvedirection_493',['GetPreferredCurveDirection',['../classvrv_1_1_system.html#a458d9201f7e5b71f22cf9a180feceff7',1,'vrv::System']]],
   ['getrealtimeoffsetmilliseconds_494',['GetRealTimeOffsetMilliseconds',['../classvrv_1_1_measure.html#a2e0a2e000a3f00933d117d2257503425',1,'vrv::Measure']]],
   ['getreferencewithelement_495',['GetReferenceWithElement',['../classvrv_1_1_alignment.html#a4b5535808594d25a33fc7c1315144870',1,'vrv::Alignment']]],
   ['getrelativelayerelement_496',['GetRelativeLayerElement',['../classvrv_1_1_layer_element.html#acd1848663fabc6a21aead9999e07d21f',1,'vrv::LayerElement::GetRelativeLayerElement()'],['../classvrv_1_1_object.html#a3d26e4876ee5a38e4c01fae4af747c23',1,'vrv::Object::GetRelativeLayerElement()']]],

@@ -12,10 +12,10 @@ var classvrv_1_1_slur =
     [ "GetAdjustedSlurAngle", "classvrv_1_1_slur.html#af9f7ea0dd157317dfcbbcb787793726e", null ],
     [ "GetClassName", "classvrv_1_1_slur.html#a0a61fc1769b931320ae12a269fd6dfef", null ],
     [ "GetDrawingCurvedir", "classvrv_1_1_slur.html#afeaac42992c2985ff5dfd8fc4b58dc5b", null ],
-    [ "GetPreferredCurveDirection", "classvrv_1_1_slur.html#ad0677990365f508cb89a70766367cd89", null ],
     [ "GetTimePointInterface", "classvrv_1_1_slur.html#af4fa12654548c380dd0eb52f6c746c55", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_slur.html#ae8bdb13e89832e0c2394cc6d77f513dd", null ],
     [ "HasDrawingCurvedir", "classvrv_1_1_slur.html#aebb2e1d5c4efce7392bdd0aaff627573", null ],
+    [ "PrepareSlurs", "classvrv_1_1_slur.html#a6b617c54aa61903ed2b6186a575c0170", null ],
     [ "Reset", "classvrv_1_1_slur.html#a44edee9624d0cf10b0e35bd772aca3a5", null ],
     [ "ResetDrawing", "classvrv_1_1_slur.html#a37fa49f3e56c2b97c6989e7136711baf", null ],
     [ "SetDrawingCurvedir", "classvrv_1_1_slur.html#abab16819ba64a14c2dd8ffeefdef696e", null ]

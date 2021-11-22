@@ -201,6 +201,7 @@ var classvrv_1_1_object =
     [ "PreparePointersByLayer", "classvrv_1_1_object.html#a72def6c07065fa48ad7cd844dd4b2ed5", null ],
     [ "PrepareProcessingLists", "classvrv_1_1_object.html#a4d2903e69118df1b627cb99ecd036948", null ],
     [ "PrepareRpt", "classvrv_1_1_object.html#a1512dc40ee5cbcefd3dd463776e24c0c", null ],
+    [ "PrepareSlurs", "classvrv_1_1_object.html#a64c45a113ca154eaa33d322abb473415", null ],
     [ "PrepareTimePointing", "classvrv_1_1_object.html#a70fc6206cd0d6608724d91d03e64d767", null ],
     [ "PrepareTimePointingEnd", "classvrv_1_1_object.html#a5ea18a2c77fc31c9a0eee2a948660d5b", null ],
     [ "PrepareTimeSpanning", "classvrv_1_1_object.html#ac052d42c0d724ca5f16192d7398193d3", null ],

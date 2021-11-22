@@ -969,6 +969,7 @@ var hierarchy =
       [ "vrv::PreparePointersByLayerParams", "classvrv_1_1_prepare_pointers_by_layer_params.html", null ],
       [ "vrv::PrepareProcessingListsParams", "classvrv_1_1_prepare_processing_lists_params.html", null ],
       [ "vrv::PrepareRptParams", "classvrv_1_1_prepare_rpt_params.html", null ],
+      [ "vrv::PrepareSlursParams", "classvrv_1_1_prepare_slurs_params.html", null ],
       [ "vrv::PrepareTimePointingParams", "classvrv_1_1_prepare_time_pointing_params.html", null ],
       [ "vrv::PrepareTimeSpanningParams", "classvrv_1_1_prepare_time_spanning_params.html", null ],
       [ "vrv::PrepareTimestampsParams", "classvrv_1_1_prepare_timestamps_params.html", null ],
