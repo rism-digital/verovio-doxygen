@@ -44,6 +44,7 @@ var classvrv_1_1_note =
     [ "HasToBeAligned", "classvrv_1_1_note.html#a68a34dc4606c694c61020104860daa78", null ],
     [ "IsChordTone", "classvrv_1_1_note.html#abfcac1365637007ca58537cbae8fa306", null ],
     [ "IsClusterExtreme", "classvrv_1_1_note.html#a1a7d0a9ea9cb70585ce2b438e41dd4a5", null ],
+    [ "IsEnharmonicWith", "classvrv_1_1_note.html#a2a984db0827252cd46b7ed9799c098ce", null ],
     [ "IsSupportedChild", "classvrv_1_1_note.html#ab67af4d9db93c3538d61271730ed3750", null ],
     [ "IsTabGrpNote", "classvrv_1_1_note.html#afbc5f0ee766bcd84535a60b4cb17144b", null ],
     [ "IsUnisonWith", "classvrv_1_1_note.html#a476460180d727c745ab0b74608c44162", null ],
