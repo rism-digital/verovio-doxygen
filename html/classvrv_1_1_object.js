@@ -107,6 +107,7 @@ var classvrv_1_1_object =
     [ "GenerateMIDI", "classvrv_1_1_object.html#a426081ffba31e4251a2c36ceeb2a43ba", null ],
     [ "GenerateTimemap", "classvrv_1_1_object.html#abe889073301d6e1dfe55e725b6532948", null ],
     [ "GetAlignmentLeftRight", "classvrv_1_1_object.html#a3eb3c52e16525ed1a559a825fa85e00e", null ],
+    [ "GetAncestors", "classvrv_1_1_object.html#a5c7c401a72026eef3181e1aa576b0b6c", null ],
     [ "GetAttributes", "classvrv_1_1_object.html#aeb7e152a62704071901972bbfa06062c", null ],
     [ "GetBoundaryEnd", "classvrv_1_1_object.html#afc0d45ecd9bef7d010a33efe25f8878c", null ],
     [ "GetChild", "classvrv_1_1_object.html#a6bd78730c9d5f0302710213488708adb", null ],

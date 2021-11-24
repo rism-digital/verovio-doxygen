@@ -180,43 +180,46 @@ $(document).ready(function(){initNavTree('timeinterface_8h_source.html',''); ini
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordtype">void</span> SetUuidStr();</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html#a963916dd83f823c3ae6ea5bfdfd6248d">GetCrossStaffOverflows</a>(</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        StaffAlignment *alignment, curvature_CURVEDIR cuvreDir, <span class="keywordtype">bool</span> &amp;skipAbove, <span class="keywordtype">bool</span> &amp;skipBelow);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="comment">//-----------------//</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="comment">// Pseudo functors //</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="comment">//-----------------//</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html#a7eb9ec4141167667a95edb3e91b72c6a">InterfaceFillStaffCurrentTimeSpanning</a>(FunctorParams *functorParams, Object *<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html#afdd5ee6c76457751a32e0f26310331d0">InterfacePrepareTimeSpanning</a>(FunctorParams *functorParams, Object *<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html#a968d95a2a61a0b39edcb043d6a2e8c66">InterfacePrepareTimestamps</a>(FunctorParams *functorParams, Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html#a8d0cf15ea86bb003ba8de5a2f9138fd7">InterfaceResetDrawing</a>(FunctorParams *functorParams, Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    LayerElement *m_end;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    std::string m_endUuid;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;};</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html#abd58fe3d42369038ea1c5dcfc302a07a">IsOrdered</a>();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html#abd58fe3d42369038ea1c5dcfc302a07a">IsOrdered</a>(LayerElement *start, LayerElement *end);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html#a41a52a993d10feeb4e09551b69c5ccf0">GetCrossStaffOverflows</a>(</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        StaffAlignment *alignment, curvature_CURVEDIR curveDir, <span class="keywordtype">bool</span> &amp;skipAbove, <span class="keywordtype">bool</span> &amp;skipBelow);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">//-----------------//</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="comment">// Pseudo functors //</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="comment">//-----------------//</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html#a7eb9ec4141167667a95edb3e91b72c6a">InterfaceFillStaffCurrentTimeSpanning</a>(FunctorParams *functorParams, Object *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html#afdd5ee6c76457751a32e0f26310331d0">InterfacePrepareTimeSpanning</a>(FunctorParams *functorParams, Object *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html#a968d95a2a61a0b39edcb043d6a2e8c66">InterfacePrepareTimestamps</a>(FunctorParams *functorParams, Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html#a8d0cf15ea86bb003ba8de5a2f9138fd7">InterfaceResetDrawing</a>(FunctorParams *functorParams, Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    LayerElement *m_end;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    std::string m_endUuid;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;};</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_measure_html"><div class="ttname"><a href="classvrv_1_1_measure.html">vrv::Measure</a></div><div class="ttdoc">This class represents a measure in a page-based score (Doc).</div><div class="ttdef"><b>Definition:</b> measure.h:36</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_point_interface_html_a54007f47ab2054a75b29618b8b47dd4f"><div class="ttname"><a href="classvrv_1_1_time_point_interface.html#a54007f47ab2054a75b29618b8b47dd4f">vrv::TimePointInterface::GetStartMeasure</a></div><div class="ttdeci">Measure * GetStartMeasure()</div><div class="ttdoc">Return the start measure of the TimePointInterface.</div></div>
+<div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html_a41a52a993d10feeb4e09551b69c5ccf0"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html#a41a52a993d10feeb4e09551b69c5ccf0">vrv::TimeSpanningInterface::GetCrossStaffOverflows</a></div><div class="ttdeci">void GetCrossStaffOverflows(StaffAlignment *alignment, curvature_CURVEDIR curveDir, bool &amp;skipAbove, bool &amp;skipBelow)</div><div class="ttdoc">Check if the slur or tie needs to be taken into account as overflow above or below in case of cross-s...</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_point_interface_html_a28c0d2e97af7e3b9a28898175dff2867"><div class="ttname"><a href="classvrv_1_1_time_point_interface.html#a28c0d2e97af7e3b9a28898175dff2867">vrv::TimePointInterface::InterfaceResetDrawing</a></div><div class="ttdeci">virtual int InterfaceResetDrawing(FunctorParams *functorParams, Object *object)</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html_a968d95a2a61a0b39edcb043d6a2e8c66"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html#a968d95a2a61a0b39edcb043d6a2e8c66">vrv::TimeSpanningInterface::InterfacePrepareTimestamps</a></div><div class="ttdeci">int InterfacePrepareTimestamps(FunctorParams *functorParams, Object *object) override</div><div class="ttdoc">See Object::PrepareTimestamps.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
 <div class="ttc" id="aclassvrv_1_1_interface_html"><div class="ttname"><a href="classvrv_1_1_interface.html">vrv::Interface</a></div><div class="ttdoc">This is a base class for regrouping MEI att classes.</div><div class="ttdef"><b>Definition:</b> att.h:256</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html_a7eb9ec4141167667a95edb3e91b72c6a"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html#a7eb9ec4141167667a95edb3e91b72c6a">vrv::TimeSpanningInterface::InterfaceFillStaffCurrentTimeSpanning</a></div><div class="ttdeci">virtual int InterfaceFillStaffCurrentTimeSpanning(FunctorParams *functorParams, Object *object)</div><div class="ttdoc">We have functors in the interface for avoiding code duplication in each implementation class.</div></div>
-<div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html_a963916dd83f823c3ae6ea5bfdfd6248d"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html#a963916dd83f823c3ae6ea5bfdfd6248d">vrv::TimeSpanningInterface::GetCrossStaffOverflows</a></div><div class="ttdeci">void GetCrossStaffOverflows(StaffAlignment *alignment, curvature_CURVEDIR cuvreDir, bool &amp;skipAbove, bool &amp;skipBelow)</div><div class="ttdoc">Check if the slur or tie needs to be taken into account as overflow above or below in case of cross-s...</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_point_interface_html_aad4fd22f92288ae7c9f8a7b2500ee6a5"><div class="ttname"><a href="classvrv_1_1_time_point_interface.html#aad4fd22f92288ae7c9f8a7b2500ee6a5">vrv::TimePointInterface::InterfacePrepareTimestamps</a></div><div class="ttdeci">virtual int InterfacePrepareTimestamps(FunctorParams *functorParams, Object *object)</div><div class="ttdoc">See Object::PrepareTimestamps.</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_point_interface_html_af12c0fb8fe5605633e3ceeb75806d798"><div class="ttname"><a href="classvrv_1_1_time_point_interface.html#af12c0fb8fe5605633e3ceeb75806d798">vrv::TimePointInterface::InterfacePrepareTimePointing</a></div><div class="ttdeci">virtual int InterfacePrepareTimePointing(FunctorParams *functorParams, Object *object)</div><div class="ttdoc">We have functor in the interface for avoiding code duplication in each implementation class.</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html_afdd5ee6c76457751a32e0f26310331d0"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html#afdd5ee6c76457751a32e0f26310331d0">vrv::TimeSpanningInterface::InterfacePrepareTimeSpanning</a></div><div class="ttdeci">virtual int InterfacePrepareTimeSpanning(FunctorParams *functorParams, Object *object)</div><div class="ttdoc">See Object::PrepareTimeSpanning.</div></div>
@@ -234,6 +237,7 @@ $(document).ready(function(){initNavTree('timeinterface_8h_source.html',''); ini
 <div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html">vrv::TimeSpanningInterface</a></div><div class="ttdoc">This class is an interface for spanning elements, such as slur, hairpin, etc.</div><div class="ttdef"><b>Definition:</b> timeinterface.h:134</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:40</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_point_interface_html_a48095974fd4c595c478be793c0d9a5aa"><div class="ttname"><a href="classvrv_1_1_time_point_interface.html#a48095974fd4c595c478be793c0d9a5aa">vrv::TimePointInterface::IsInterface</a></div><div class="ttdeci">InterfaceId IsInterface() const override</div><div class="ttdoc">Virtual method returning the InterfaceId of the interface.</div><div class="ttdef"><b>Definition:</b> timeinterface.h:40</div></div>
+<div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html_abd58fe3d42369038ea1c5dcfc302a07a"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html#abd58fe3d42369038ea1c5dcfc302a07a">vrv::TimeSpanningInterface::IsOrdered</a></div><div class="ttdeci">bool IsOrdered()</div><div class="ttdoc">Check if the end points are temporally ordered @Return true if end temporally occurs after start.</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_params_html"><div class="ttname"><a href="classvrv_1_1_functor_params.html">vrv::FunctorParams</a></div><div class="ttdoc">This is the base class for all MEI att classes.</div><div class="ttdef"><b>Definition:</b> functorparams.h:75</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_point_interface_html_aa1c20e4df6aa79d7f30ea46b73b902bc"><div class="ttname"><a href="classvrv_1_1_time_point_interface.html#aa1c20e4df6aa79d7f30ea46b73b902bc">vrv::TimePointInterface::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_point_interface_html"><div class="ttname"><a href="classvrv_1_1_time_point_interface.html">vrv::TimePointInterface</a></div><div class="ttdoc">This class is an interface for elements having a single time point, such as tempo,...</div><div class="ttdef"><b>Definition:</b> timeinterface.h:30</div></div>
@@ -241,7 +245,7 @@ $(document).ready(function(){initNavTree('timeinterface_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>timeinterface.h</b></li>
-    <li class="footer">Generated on Tue Nov 23 2021 13:24:37 for Verovio by
+    <li class="footer">Generated on Wed Nov 24 2021 08:37:54 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
