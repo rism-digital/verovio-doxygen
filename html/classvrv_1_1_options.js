@@ -99,6 +99,7 @@ var classvrv_1_1_options =
     [ "m_mmOutput", "classvrv_1_1_options.html#af6b86f9f5c11eb1ce187ce7b90143c3f", null ],
     [ "m_mnumInterval", "classvrv_1_1_options.html#a7d7b0ae2657f39ef6819ed7ec23ce721", null ],
     [ "m_multiRestStyle", "classvrv_1_1_options.html#a3256d1a305bd5936d4fe47843552e4bb", null ],
+    [ "m_multiRestThickness", "classvrv_1_1_options.html#a5ded106a1115fde217014cbf2826a0e9", null ],
     [ "m_noJustification", "classvrv_1_1_options.html#a69dd05fc3c0518b6397c408802493b2c", null ],
     [ "m_octaveAlternativeSymbols", "classvrv_1_1_options.html#a5e6d1e37a0d2ea2de8b67889f9e13c4b", null ],
     [ "m_octaveLineThickness", "classvrv_1_1_options.html#a83da51f210f16af57b50095b2e5def11", null ],
