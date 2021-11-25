@@ -43,6 +43,7 @@ var classvrv_1_1_layer_element =
     [ "GetFacsimileInterface", "classvrv_1_1_layer_element.html#a3cdd0f340d30d9a665b7ab21990c0c7d", null ],
     [ "GetGraceAlignment", "classvrv_1_1_layer_element.html#aca8dd46568873a81f46b1cbcc1c5944a", null ],
     [ "GetLinkingInterface", "classvrv_1_1_layer_element.html#a53c9a4d1ab100c4c18f24b2d8563989c", null ],
+    [ "GetOriginalLayerN", "classvrv_1_1_layer_element.html#a9e855465bb53c232a915a68d90d3b828", null ],
     [ "GetOverflowStaffAlignments", "classvrv_1_1_layer_element.html#a9fbc187f793cf5bd7c8c18661d6f2985", null ],
     [ "GetRelativeLayerElement", "classvrv_1_1_layer_element.html#acd1848663fabc6a21aead9999e07d21f", null ],
     [ "GetSameAsContentAlignmentDuration", "classvrv_1_1_layer_element.html#ab0dc6102092c2b081e9d08a8a5353324", null ],
