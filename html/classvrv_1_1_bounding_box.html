@@ -357,8 +357,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a52ac837dc797c5f292c98ddb3f43a098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the bounding box encloses the point. <br /></td></tr>
 <tr class="separator:a52ac837dc797c5f292c98ddb3f43a098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2283d42759c18ce84fe53f2e1684849"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#aa2283d42759c18ce84fe53f2e1684849">Intersects</a> (<a class="el" href="classvrv_1_1_floating_curve_positioner.html">FloatingCurvePositioner</a> *curve, Accessor type, int margin=0) const</td></tr>
-<tr class="memdesc:aa2283d42759c18ce84fe53f2e1684849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the bounding box intersects with the curve represented by the <a class="el" href="classvrv_1_1_floating_positioner.html" title="This class represents a basic object in the layout domain.">FloatingPositioner</a>.  <a href="classvrv_1_1_bounding_box.html#aa2283d42759c18ce84fe53f2e1684849">More...</a><br /></td></tr>
+<tr class="memdesc:aa2283d42759c18ce84fe53f2e1684849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return intersection between the bounding box and the curve represented by the <a class="el" href="classvrv_1_1_floating_positioner.html" title="This class represents a basic object in the layout domain.">FloatingPositioner</a>.  <a href="classvrv_1_1_bounding_box.html#aa2283d42759c18ce84fe53f2e1684849">More...</a><br /></td></tr>
 <tr class="separator:aa2283d42759c18ce84fe53f2e1684849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e1edacf88da58d088363d4ce4e8fc2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a17e1edacf88da58d088363d4ce4e8fc2">Intersects</a> (<a class="el" href="classvrv_1_1_beam_drawing_interface.html">BeamDrawingInterface</a> *beamInterface, Accessor type, int additionalOffset=0) const</td></tr>
+<tr class="memdesc:a17e1edacf88da58d088363d4ce4e8fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return intersection between the bounding box and the beam represented by the <a class="el" href="classvrv_1_1_beam_drawing_interface.html" title="This class is an interface for MEI beam elements (beam, beamSpan).">BeamDrawingInterface</a>.  <a href="classvrv_1_1_bounding_box.html#a17e1edacf88da58d088363d4ce4e8fc2">More...</a><br /></td></tr>
+<tr class="separator:a17e1edacf88da58d088363d4ce4e8fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a5b0a558c2799d3216a62a352eec938"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a6a5b0a558c2799d3216a62a352eec938">Swap</a> (int &amp;v1, int &amp;v2)</td></tr>
 <tr class="memdesc:a6a5b0a558c2799d3216a62a352eec938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap values.  <a href="classvrv_1_1_bounding_box.html#a6a5b0a558c2799d3216a62a352eec938">More...</a><br /></td></tr>
 <tr class="separator:a6a5b0a558c2799d3216a62a352eec938"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -425,8 +428,45 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverl
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represents a basic object in the layout domain. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a17e1edacf88da58d088363d4ce4e8fc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17e1edacf88da58d088363d4ce4e8fc2">&#9670;&nbsp;</a></span>Intersects() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vrv::BoundingBox::Intersects </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_beam_drawing_interface.html">BeamDrawingInterface</a> *&#160;</td>
+          <td class="paramname"><em>beamInterface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Accessor&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>additionalOffset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return intersection between the bounding box and the beam represented by the <a class="el" href="classvrv_1_1_beam_drawing_interface.html" title="This class is an interface for MEI beam elements (beam, beamSpan).">BeamDrawingInterface</a>. </p>
+<p>A segment of the beam that matches horizontal position of the bounding box is taken to find whether there is intersection. </p>
+
+</div>
+</div>
 <a id="aa2283d42759c18ce84fe53f2e1684849"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2283d42759c18ce84fe53f2e1684849">&#9670;&nbsp;</a></span>Intersects()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2283d42759c18ce84fe53f2e1684849">&#9670;&nbsp;</a></span>Intersects() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -457,7 +497,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverl
       </table>
 </div><div class="memdoc">
 
-<p>Return true if the bounding box intersects with the curve represented by the <a class="el" href="classvrv_1_1_floating_positioner.html" title="This class represents a basic object in the layout domain.">FloatingPositioner</a>. </p>
+<p>Return intersection between the bounding box and the curve represented by the <a class="el" href="classvrv_1_1_floating_positioner.html" title="This class represents a basic object in the layout domain.">FloatingPositioner</a>. </p>
 <p>The <a class="el" href="classvrv_1_1_object.html" title="This class represents a basic object.">Object</a> pointed by the <a class="el" href="classvrv_1_1_floating_positioner.html" title="This class represents a basic object in the layout domain.">FloatingPositioner</a> is expected to be a SLUR or a TIE </p>
 
 </div>
@@ -575,7 +615,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_bounding_box.html">BoundingBox</a></li>
-    <li class="footer">Generated on Fri Nov 26 2021 07:26:24 for Verovio by
+    <li class="footer">Generated on Fri Nov 26 2021 11:01:48 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
