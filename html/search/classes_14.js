@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['verse_1456',['Verse',['../classvrv_1_1_verse.html',1,'vrv']]],
-  ['view_1457',['View',['../classvrv_1_1_view.html',1,'vrv']]],
-  ['visiblestaffdeforgrpobject_1458',['VisibleStaffDefOrGrpObject',['../classvrv_1_1_visible_staff_def_or_grp_object.html',1,'vrv']]]
+  ['verse_1457',['Verse',['../classvrv_1_1_verse.html',1,'vrv']]],
+  ['view_1458',['View',['../classvrv_1_1_view.html',1,'vrv']]],
+  ['visiblestaffdeforgrpobject_1459',['VisibleStaffDefOrGrpObject',['../classvrv_1_1_visible_staff_def_or_grp_object.html',1,'vrv']]]
 ];
