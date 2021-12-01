@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"classvrv_1_1_ligature.html#af16a9b33f0a2d0da72acf05630cd715c":[1,0,0,176,6],
+"classvrv_1_1_ligature.html#af24a36fc912659a135479b36e205edb6":[1,0,0,176,0],
 "classvrv_1_1_linking_interface.html":[1,0,0,177],
 "classvrv_1_1_linking_interface.html#a05da99de05024b8ff9287f1027aa55db":[1,0,0,177,8],
 "classvrv_1_1_linking_interface.html#a0ba4b3ed3ba51bdff6f8ef3305aa1f9b":[1,0,0,177,14],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "classvrv_1_1_meter_sig.html#ab0dad49ff9a7ea71bd52396e0e118edc":[1,0,0,187,0],
 "classvrv_1_1_meter_sig.html#ac01c415936d616f3620690b15258d028":[1,0,0,187,3],
 "classvrv_1_1_meter_sig.html#acbaf621881ed37671bf13784f515cf7c":[1,0,0,187,4],
-"classvrv_1_1_meter_sig.html#ae658760bc6abd922a8e8f4c07ec373be":[1,0,0,187,5],
-"classvrv_1_1_meter_sig.html#aeae06cc8509a4b237f24018f38284e78":[1,0,0,187,2],
-"classvrv_1_1_meter_sig.html#aeb8bbe358329d11186dcfa2458b2b988":[1,0,0,187,10]
+"classvrv_1_1_meter_sig.html#ae658760bc6abd922a8e8f4c07ec373be":[1,0,0,187,5]
 };
