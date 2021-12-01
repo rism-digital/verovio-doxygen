@@ -203,19 +203,21 @@ $(document).ready(function(){initNavTree('chord_8h_source.html',''); initResizab
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    MapOfDotLocs <a class="code" href="classvrv_1_1_chord.html#ac661746d9397c1251d9b27d7e97689a9">CalcDotLocations</a>(<span class="keywordtype">int</span> layerCount, <span class="keywordtype">bool</span> primary) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_chord.html#afca94680f94f3e222e231970bc60e2d7">ClearClusters</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_chord.html#afb38718c1eb633af14694402c9819fcf">FilterList</a>(ArrayOfObjects *childList) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keyword">mutable</span> std::list&lt;ChordCluster *&gt; m_clusters;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="classvrv_1_1_chord.html#a715914acbf21fbd7c67d0589315f94de">  246</a></span>&#160;    std::list&lt;int&gt; <a class="code" href="classvrv_1_1_chord.html#a715914acbf21fbd7c67d0589315f94de">m_dots</a>;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;};</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    data_STEMDIRECTION <a class="code" href="classvrv_1_1_chord.html#a2959fc77a51f47eee777b9a8cd54a959">CalcStemDirection</a>(<span class="keywordtype">int</span> verticalCenter);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_chord.html#afca94680f94f3e222e231970bc60e2d7">ClearClusters</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_chord.html#afb38718c1eb633af14694402c9819fcf">FilterList</a>(ArrayOfObjects *childList) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keyword">mutable</span> std::list&lt;ChordCluster *&gt; m_clusters;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="classvrv_1_1_chord.html#a715914acbf21fbd7c67d0589315f94de">  252</a></span>&#160;    std::list&lt;int&gt; <a class="code" href="classvrv_1_1_chord.html#a715914acbf21fbd7c67d0589315f94de">m_dots</a>;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;};</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_chord_html_afca94680f94f3e222e231970bc60e2d7"><div class="ttname"><a href="classvrv_1_1_chord.html#afca94680f94f3e222e231970bc60e2d7">vrv::Chord::ClearClusters</a></div><div class="ttdeci">void ClearClusters() const</div><div class="ttdoc">Clear the m_clusters vector and delete all the objects.</div></div>
@@ -236,6 +238,7 @@ $(document).ready(function(){initNavTree('chord_8h_source.html',''); initResizab
 <div class="ttc" id="aclassvrv_1_1_chord_html_a71e3234e8cd1ac5ae75cff06e3429f02"><div class="ttname"><a href="classvrv_1_1_chord.html#a71e3234e8cd1ac5ae75cff06e3429f02">vrv::Chord::CalcStem</a></div><div class="ttdeci">int CalcStem(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CalcStem.</div></div>
 <div class="ttc" id="aclassvrv_1_1_chord_html_ae2f4e2f0d9f12957dddd6e523b4a4092"><div class="ttname"><a href="classvrv_1_1_chord.html#ae2f4e2f0d9f12957dddd6e523b4a4092">vrv::Chord::AddChild</a></div><div class="ttdeci">void AddChild(Object *object) override</div><div class="ttdoc">Overwritten method for chord.</div></div>
 <div class="ttc" id="aclassvrv_1_1_chord_html_aa20aa8139c016d66af66fcc48001ee23"><div class="ttname"><a href="classvrv_1_1_chord.html#aa20aa8139c016d66af66fcc48001ee23">vrv::Chord::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Add an element (only note supported) to a chord.</div></div>
+<div class="ttc" id="aclassvrv_1_1_chord_html_a2959fc77a51f47eee777b9a8cd54a959"><div class="ttname"><a href="classvrv_1_1_chord.html#a2959fc77a51f47eee777b9a8cd54a959">vrv::Chord::CalcStemDirection</a></div><div class="ttdeci">data_STEMDIRECTION CalcStemDirection(int verticalCenter)</div><div class="ttdoc">Calculate stem direction based on the position of the notes in chord.</div></div>
 <div class="ttc" id="aclassvrv_1_1_chord_html_a7c8586b878bf041aab186f0c23622531"><div class="ttname"><a href="classvrv_1_1_chord.html#a7c8586b878bf041aab186f0c23622531">vrv::Chord::AdjustOverlappingLayers</a></div><div class="ttdeci">int AdjustOverlappingLayers(Doc *doc, const std::vector&lt; LayerElement * &gt; &amp;otherElements, bool areDotsAdjusted, bool &amp;isUnison) override</div><div class="ttdoc">Helper to adjust overlapping layers for chords Returns the shift of the adjustment.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_list_interface_html"><div class="ttname"><a href="classvrv_1_1_object_list_interface.html">vrv::ObjectListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1423</div></div>
 <div class="ttc" id="aclassvrv_1_1_chord_html_a1a69e37fbee2584124bb0276f23354fd"><div class="ttname"><a href="classvrv_1_1_chord.html#a1a69e37fbee2584124bb0276f23354fd">vrv::Chord::AdjustCrossStaffYPos</a></div><div class="ttdeci">int AdjustCrossStaffYPos(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::AdjustCrossStaffYPos.</div></div>
@@ -250,7 +253,7 @@ $(document).ready(function(){initNavTree('chord_8h_source.html',''); initResizab
 <div class="ttc" id="aclassvrv_1_1_chord_html_a3450ad50f0e9c1852c51c69a9fa3e896"><div class="ttname"><a href="classvrv_1_1_chord.html#a3450ad50f0e9c1852c51c69a9fa3e896">vrv::Chord::CalcNoteLocations</a></div><div class="ttdeci">MapOfNoteLocs CalcNoteLocations(NotePredicate predicate=NULL) override</div><div class="ttdoc">The note locations w.r.t.</div></div>
 <div class="ttc" id="aclassvrv_1_1_chord_html_a781ed2e62b1ea64accaeb9d7a3469b32"><div class="ttname"><a href="classvrv_1_1_chord.html#a781ed2e62b1ea64accaeb9d7a3469b32">vrv::Chord::CalcArtic</a></div><div class="ttdeci">int CalcArtic(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CalcArtic.</div></div>
 <div class="ttc" id="aclassvrv_1_1_chord_html_a9de31be09e892bc0f2ee30e52e44307c"><div class="ttname"><a href="classvrv_1_1_chord.html#a9de31be09e892bc0f2ee30e52e44307c">vrv::Chord::HasNoteWithDots</a></div><div class="ttdeci">bool HasNoteWithDots()</div><div class="ttdoc">Return true if the chord has at least one note with a @dots &gt; 0.</div></div>
-<div class="ttc" id="aclassvrv_1_1_chord_html_a715914acbf21fbd7c67d0589315f94de"><div class="ttname"><a href="classvrv_1_1_chord.html#a715914acbf21fbd7c67d0589315f94de">vrv::Chord::m_dots</a></div><div class="ttdeci">std::list&lt; int &gt; m_dots</div><div class="ttdoc">Positions of dots in the chord to avoid overlapping.</div><div class="ttdef"><b>Definition:</b> chord.h:246</div></div>
+<div class="ttc" id="aclassvrv_1_1_chord_html_a715914acbf21fbd7c67d0589315f94de"><div class="ttname"><a href="classvrv_1_1_chord.html#a715914acbf21fbd7c67d0589315f94de">vrv::Chord::m_dots</a></div><div class="ttdeci">std::list&lt; int &gt; m_dots</div><div class="ttdoc">Positions of dots in the chord to avoid overlapping.</div><div class="ttdef"><b>Definition:</b> chord.h:252</div></div>
 <div class="ttc" id="aclassvrv_1_1_chord_html_a817274133e13ef710a089fd19881e8d0"><div class="ttname"><a href="classvrv_1_1_chord.html#a817274133e13ef710a089fd19881e8d0">vrv::Chord::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> chord.h:69</div></div>
 <div class="ttc" id="aclassvrv_1_1_stemmed_drawing_interface_html"><div class="ttname"><a href="classvrv_1_1_stemmed_drawing_interface.html">vrv::StemmedDrawingInterface</a></div><div class="ttdoc">This class is an interface for MEI stemmed element.</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:261</div></div>
 <div class="ttc" id="aclassvrv_1_1_chord_html_accc42d972b31a8c1678f70ef5b40c46f"><div class="ttname"><a href="classvrv_1_1_chord.html#accc42d972b31a8c1678f70ef5b40c46f">vrv::Chord::AdjustCrossStaffContent</a></div><div class="ttdeci">int AdjustCrossStaffContent(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::AdjustCrossStaffContent.</div></div>
@@ -266,7 +269,7 @@ $(document).ready(function(){initNavTree('chord_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>chord.h</b></li>
-    <li class="footer">Generated on Wed Dec 1 2021 12:51:54 for Verovio by
+    <li class="footer">Generated on Wed Dec 1 2021 15:14:35 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
