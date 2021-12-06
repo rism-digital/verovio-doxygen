@@ -157,6 +157,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_chord.html#a7c8586b878bf041aab186f0c23622531">AdjustOverlappingLayers</a> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, const std::vector&lt; <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> * &gt; &amp;otherElements, bool areDotsAdjusted, bool &amp;isUnison) override</td></tr>
 <tr class="memdesc:a7c8586b878bf041aab186f0c23622531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to adjust overlapping layers for chords Returns the shift of the adjustment. <br /></td></tr>
 <tr class="separator:a7c8586b878bf041aab186f0c23622531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f6381720ce433e279650af6cf9cb88e"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="classvrv_1_1_note.html">Note</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_chord.html#a3f6381720ce433e279650af6cf9cb88e">GetAdjacentNotesList</a> (<a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff, int loc)</td></tr>
+<tr class="memdesc:a3f6381720ce433e279650af6cf9cb88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to get list of notes that are adjacent to the specified location.  <a href="classvrv_1_1_chord.html#a3f6381720ce433e279650af6cf9cb88e">More...</a><br /></td></tr>
+<tr class="separator:a3f6381720ce433e279650af6cf9cb88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a69e37fbee2584124bb0276f23354fd"><td class="memItemLeft" align="right" valign="top"><a id="a1a69e37fbee2584124bb0276f23354fd"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_chord.html#a1a69e37fbee2584124bb0276f23354fd">AdjustCrossStaffYPos</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) override</td></tr>
 <tr class="memdesc:a1a69e37fbee2584124bb0276f23354fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#abeee6db6564ff37f1fd686033751d51f" title="Adjust the position of cross-staff elements after the adjustment of the staves.">Object::AdjustCrossStaffYPos</a>. <br /></td></tr>
@@ -1916,6 +1919,37 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
+<a id="a3f6381720ce433e279650af6cf9cb88e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f6381720ce433e279650af6cf9cb88e">&#9670;&nbsp;</a></span>GetAdjacentNotesList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;<a class="el" href="classvrv_1_1_note.html">Note</a> *&gt; vrv::Chord::GetAdjacentNotesList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_staff.html">Staff</a> *&#160;</td>
+          <td class="paramname"><em>staff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>loc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper to get list of notes that are adjacent to the specified location. </p>
+<p>Diatonic step difference is take up to 2 points, so <a class="el" href="classvrv_1_1_chord.html#a97612e7dbc1589c45b0f56d337a20174" title="Return true if the chord has two notes with 1 diatonic step difference in the specific staff.">HasAdjacentNotesInStaff()</a> needs to be called first, to make sure there actually are adjacent notes. </p>
+
+</div>
+</div>
 <a id="a2921ff920a26a095d97cfdf2ed2150b3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2921ff920a26a095d97cfdf2ed2150b3">&#9670;&nbsp;</a></span>GetStemUpSE()</h2>
 
@@ -1993,7 +2027,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_chord.html">Chord</a></li>
-    <li class="footer">Generated on Thu Dec 2 2021 13:33:42 for Verovio by
+    <li class="footer">Generated on Mon Dec 6 2021 14:23:25 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
