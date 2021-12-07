@@ -17,7 +17,6 @@ var classvrv_1_1_beam_element_coord =
     [ "m_overlapMargin", "classvrv_1_1_beam_element_coord.html#a0e6c6a71cb6bb0dc5cd0e299c8ecd7a3", null ],
     [ "m_partialFlagPlace", "classvrv_1_1_beam_element_coord.html#a960a8da7d590eb5ea152a25a92bbd54d", null ],
     [ "m_partialFlags", "classvrv_1_1_beam_element_coord.html#a3024e5d8ba924a0f4e9bccfdaf5f41f8", null ],
-    [ "m_shortened", "classvrv_1_1_beam_element_coord.html#a311467215d2756888e136060f7a30870", null ],
     [ "m_stem", "classvrv_1_1_beam_element_coord.html#a7979d8a8efc9eb48ceeab93b051cf9b9", null ],
     [ "m_x", "classvrv_1_1_beam_element_coord.html#aa7af1b2008fb449209dbbca38e22de34", null ],
     [ "m_yBeam", "classvrv_1_1_beam_element_coord.html#a1f7fd630af091c0b6f6e1ac0509af9cb", null ]

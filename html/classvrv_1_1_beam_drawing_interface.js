@@ -4,6 +4,7 @@ var classvrv_1_1_beam_drawing_interface =
     [ "~BeamDrawingInterface", "classvrv_1_1_beam_drawing_interface.html#af4984f690e63ca428e230eb258ea0729", null ],
     [ "ClearCoords", "classvrv_1_1_beam_drawing_interface.html#ace5c4c0657c94d8de99b933c75eb3e8f", null ],
     [ "GetPosition", "classvrv_1_1_beam_drawing_interface.html#a9571c5f0332590bffb23d5a85d32416b", null ],
+    [ "GetTotalBeamWidth", "classvrv_1_1_beam_drawing_interface.html#adaec7fb532d7ee8f2d8b5f06e7eb79aa", null ],
     [ "HasOneStepHeight", "classvrv_1_1_beam_drawing_interface.html#a27b26a0d44fd5c94247aa1fe081ae239", null ],
     [ "InitCoords", "classvrv_1_1_beam_drawing_interface.html#a77537490027ed7685e9a711caa8a5300", null ],
     [ "InitCue", "classvrv_1_1_beam_drawing_interface.html#af5aa6e1d0fd35b213dc1b8114c87cd58", null ],
