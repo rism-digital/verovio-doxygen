@@ -4814,6 +4814,7 @@
     <member refid="classvrv_1_1_p_a_e_input_1a7bae1c696838b8e8ecc309c27768048c" kind="function"><name>ParseMensur</name></member>
     <member refid="classvrv_1_1_p_a_e_input_1a48781616db4a9629df37ebda64a43150" kind="function"><name>ParseMeasure</name></member>
     <member refid="classvrv_1_1_p_a_e_input_1a062258d4f4c704b89074ae50751f3d65" kind="function"><name>ParseDuration</name></member>
+    <member refid="classvrv_1_1_p_a_e_input_1a4453be6a9c60ad3e3f64378b1a190613" kind="function"><name>CheckPAEChars</name></member>
     <member refid="classvrv_1_1_p_a_e_input_1af209e47fe44194d3d81d19ef57ee77cf" kind="function"><name>LogPAE</name></member>
     <member refid="classvrv_1_1_p_a_e_input_1a35563bd061cb0d83dfb21d0d34559e3a" kind="function"><name>LogDebugTokens</name></member>
     <member refid="classvrv_1_1_p_a_e_input_1afecb804b6ad54e47661c387cc42c50e3" kind="variable"><name>m_clef</name></member>
@@ -4844,7 +4845,7 @@
     <member refid="classvrv_1_1_p_a_e_input_1ad4efc8077b3f020ff9ec418ee9ca8f8b" kind="function"><name>PrepareInsertion</name></member>
     <member refid="classvrv_1_1_p_a_e_input_1aae97d9c93cf1967faedaa3b1d311dc8d" kind="function"><name>CheckHierarchy</name></member>
     <member refid="classvrv_1_1_p_a_e_input_1abaaf0f2cdfe7e660f198eeeff5a9e5aa" kind="function"><name>CheckContent</name></member>
-    <member refid="classvrv_1_1_p_a_e_input_1afd5888698343a7d2e1a3091a8e595dec" kind="function"><name>RemoveContainerToken</name></member>
+    <member refid="classvrv_1_1_p_a_e_input_1ad545842abae4d74b69ff819c4c416e35" kind="function"><name>RemoveContainerToken</name></member>
     <member refid="classvrv_1_1_p_a_e_input_1ac37fa08dbe2b2893ad478d50c98a111d" kind="function"><name>ClearTokenObjects</name></member>
   </compound>
   <compound refid="classvrv_1_1_p_a_e_output" kind="class"><name>vrv::PAEOutput</name>
@@ -7901,7 +7902,7 @@
     <member refid="namespacevrv_1ab4f2799cb3c97580ecf3d95850f10a25a80c1d5d83877d79c9f5d8e841b92563f" kind="enumvalue"><name>ERR_047_TIMESIG_INCOMPLETE</name></member>
     <member refid="namespacevrv_1ab4f2799cb3c97580ecf3d95850f10a25ac26db24ee83003f90a438d1a785add74" kind="enumvalue"><name>ERR_048_TIMESIG_INVALID</name></member>
     <member refid="namespacevrv_1ab4f2799cb3c97580ecf3d95850f10a25a2fe8dc0efb865e0d03705b7ea57bb0ff" kind="enumvalue"><name>ERR_049_TIMESIG_MENS</name></member>
-    <member refid="namespacevrv_1ab4f2799cb3c97580ecf3d95850f10a25a5c3bdad7d438e52874b431bc5bacbc13" kind="enumvalue"><name>ERR_050_</name></member>
+    <member refid="namespacevrv_1ab4f2799cb3c97580ecf3d95850f10a25a2dc14be14412570b14c6980d295b61a3" kind="enumvalue"><name>ERR_050_INVALID_CHAR</name></member>
     <member refid="namespacevrv_1ab4f2799cb3c97580ecf3d95850f10a25a3304c2946151974530bdd981c0590a8b" kind="enumvalue"><name>ERR_051_BARLINE</name></member>
     <member refid="namespacevrv_1ab4f2799cb3c97580ecf3d95850f10a25a03ef1af7bfbad847f8ee26df63e5ffbb" kind="enumvalue"><name>ERR_052_DURATION</name></member>
     <member refid="namespacevrv_1ab4f2799cb3c97580ecf3d95850f10a25a9bcb6669a99a7b204078dc2170bf789f" kind="enumvalue"><name>ERR_053_DURATION_MENS3</name></member>
@@ -8015,6 +8016,7 @@
     <member refid="iopae_8cpp_1af17769217e4955b1e9af7408d213e0edad3328266b7292694caad2c695ef14d7b" kind="enumvalue"><name>CLEF_POS</name></member>
     <member refid="iopae_8cpp_1af17769217e4955b1e9af7408d213e0eda982a8989fb9a3f024a588e58dc1ea54e" kind="enumvalue"><name>TIMESIG_POS</name></member>
     <member refid="iopae_8cpp_1af17769217e4955b1e9af7408d213e0edafe867dc9a51494d627982d7bec7b9f67" kind="enumvalue"><name>INPUT_POS</name></member>
+    <member refid="iopae_8cpp_1aa93239bbff1f2ca95e60aa59fc32cb3c" kind="variable"><name>PAEChars</name></member>
     <member refid="iopae_8cpp_1a510e2887c1d7cdd1c7600fd37d95b497" kind="variable"><name>CONTAINER_END</name></member>
     <member refid="iopae_8cpp_1a1b0c6a9ad965cba5cad7b05ff977b37a" kind="variable"><name>VOID</name></member>
     <member refid="iopae_8cpp_1af40cde85a1faf5bd935279a24b25b0fe" kind="variable"><name>INTERNAL_CHARS</name></member>
