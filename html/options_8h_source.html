@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('options_8h_source.html',''); initResiz
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>vrv {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>OptionGrp;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
@@ -474,7 +474,7 @@ $(document).ready(function(){initNavTree('options_8h_source.html',''); initResiz
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment">// OptionJson</span></div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="keyword">enum class</span> JsonSource { String, FilePath };</div>
+<div class="line"><a name="l00421"></a><span class="lineno"><a class="line" href="namespacevrv.html#a348cc6ff82212bad624ca42d05266a5f">  421</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="namespacevrv.html#a348cc6ff82212bad624ca42d05266a5f">JsonSource</a> { String, FilePath };</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160; </div>
 <div class="line"><a name="l00427"></a><span class="lineno"><a class="line" href="classvrv_1_1_option_json.html">  427</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_option_json.html">OptionJson</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_option.html">Option</a> {</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keyword">using</span> JsonPath = std::vector&lt;std::reference_wrapper&lt;jsonxx::Value&gt;&gt;;</div>
@@ -483,9 +483,9 @@ $(document).ready(function(){initNavTree('options_8h_source.html',''); initResiz
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <a class="code" href="classvrv_1_1_option_json.html">OptionJson</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_option_json.html">OptionJson</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keywordtype">void</span> CopyTo(<a class="code" href="classvrv_1_1_option.html">Option</a> *option) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordtype">void</span> Init(JsonSource source, <span class="keyword">const</span> std::string &amp;defaultValue);</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordtype">void</span> Init(<a class="code" href="namespacevrv.html#a348cc6ff82212bad624ca42d05266a5f">JsonSource</a> source, <span class="keyword">const</span> std::string &amp;defaultValue);</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160; </div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    JsonSource <a class="code" href="classvrv_1_1_option_json.html#a84f4c87bc0217e8bce496ef9610222ea">GetSource</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    <a class="code" href="namespacevrv.html#a348cc6ff82212bad624ca42d05266a5f">JsonSource</a> <a class="code" href="classvrv_1_1_option_json.html#a84f4c87bc0217e8bce496ef9610222ea">GetSource</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    jsonxx::Object GetValue(<span class="keywordtype">bool</span> getDefault = <span class="keyword">false</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160; </div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_option_json.html#abbfe45064b60f80519b5f54528245377">SetValue</a>(<span class="keyword">const</span> std::string &amp;value) <span class="keyword">override</span>;</div>
@@ -512,7 +512,7 @@ $(document).ready(function(){initNavTree('options_8h_source.html',''); initResiz
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_option_json.html#a5ff9ad862e7310387519ee222ea335e4">ReadJson</a>(jsonxx::Object &amp;output, <span class="keyword">const</span> std::string &amp;input) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160; </div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    JsonSource m_source = JsonSource::String;</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <a class="code" href="namespacevrv.html#a348cc6ff82212bad624ca42d05266a5f">JsonSource</a> m_source = JsonSource::String;</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160; </div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    jsonxx::Object m_values;</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    jsonxx::Object m_defaultValues;</div>
@@ -788,6 +788,7 @@ $(document).ready(function(){initNavTree('options_8h_source.html',''); initResiz
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_option_json_html_aac2951d68e22ec5baf9001501e671604"><div class="ttname"><a href="classvrv_1_1_option_json.html#aac2951d68e22ec5baf9001501e671604">vrv::OptionJson::HasValue</a></div><div class="ttdeci">bool HasValue(const std::vector&lt; std::string &gt; &amp;jsonNodePath) const</div><div class="ttdoc">Accessing values as json node path.</div></div>
+<div class="ttc" id="anamespacevrv_html_a348cc6ff82212bad624ca42d05266a5f"><div class="ttname"><a href="namespacevrv.html#a348cc6ff82212bad624ca42d05266a5f">vrv::JsonSource</a></div><div class="ttdeci">JsonSource</div><div class="ttdoc">Distinguish whether Json is passed directly or should be read from file.</div><div class="ttdef"><b>Definition:</b> options.h:421</div></div>
 <div class="ttc" id="aclassvrv_1_1_options_html_a7c05c180e98edd4f8422bbe61b56b36f"><div class="ttname"><a href="classvrv_1_1_options.html#a7c05c180e98edd4f8422bbe61b56b36f">vrv::Options::m_deprecated</a></div><div class="ttdeci">OptionGrp m_deprecated</div><div class="ttdoc">Deprecated options.</div><div class="ttdef"><b>Definition:</b> options.h:771</div></div>
 <div class="ttc" id="aclassvrv_1_1_option_json_html_a5ff9ad862e7310387519ee222ea335e4"><div class="ttname"><a href="classvrv_1_1_option_json.html#a5ff9ad862e7310387519ee222ea335e4">vrv::OptionJson::ReadJson</a></div><div class="ttdeci">bool ReadJson(jsonxx::Object &amp;output, const std::string &amp;input) const</div><div class="ttdoc">Read json from string or file.</div></div>
 <div class="ttc" id="aclassvrv_1_1_option_bool_html"><div class="ttname"><a href="classvrv_1_1_option_bool.html">vrv::OptionBool</a></div><div class="ttdoc">This class is for boolean styling params.</div><div class="ttdef"><b>Definition:</b> options.h:155</div></div>
@@ -801,6 +802,7 @@ $(document).ready(function(){initNavTree('options_8h_source.html',''); initResiz
 <div class="ttc" id="aclassvrv_1_1_option_staffrel_html"><div class="ttname"><a href="classvrv_1_1_option_staffrel.html">vrv::OptionStaffrel</a></div><div class="ttdoc">This class is for map styling params.</div><div class="ttdef"><b>Definition:</b> options.h:387</div></div>
 <div class="ttc" id="aclassvrv_1_1_option_html_a4f1d640dd2b72a23a4987c31e262715f"><div class="ttname"><a href="classvrv_1_1_option.html#a4f1d640dd2b72a23a4987c31e262715f">vrv::Option::s_breaks</a></div><div class="ttdeci">static const std::map&lt; int, std::string &gt; s_breaks</div><div class="ttdoc">Static maps used my OptionIntMap objects.</div><div class="ttdef"><b>Definition:</b> options.h:127</div></div>
 <div class="ttc" id="aclassvrv_1_1_option_html_a8197df949d810a3f12aac223d8593036"><div class="ttname"><a href="classvrv_1_1_option.html#a8197df949d810a3f12aac223d8593036">vrv::Option::ToJson</a></div><div class="ttdeci">jsonxx::Object ToJson() const</div><div class="ttdoc">Return a JSON object for the option.</div></div>
+<div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
 <div class="ttc" id="aclassvrv_1_1_options_html_a39af9494b89df90199d208bd5bd0d73c"><div class="ttname"><a href="classvrv_1_1_options.html#a39af9494b89df90199d208bd5bd0d73c">vrv::Options::m_general</a></div><div class="ttdeci">OptionGrp m_general</div><div class="ttdoc">General.</div><div class="ttdef"><b>Definition:</b> options.h:579</div></div>
 <div class="ttc" id="aclassvrv_1_1_option_grp_html"><div class="ttname"><a href="classvrv_1_1_option_grp.html">vrv::OptionGrp</a></div><div class="ttdoc">This class is a base class of each styling parameter.</div><div class="ttdef"><b>Definition:</b> options.h:500</div></div>
 <div class="ttc" id="aclassvrv_1_1_option_json_html_a24331e37779a4eb4667cbd2d12d606fe"><div class="ttname"><a href="classvrv_1_1_option_json.html#a24331e37779a4eb4667cbd2d12d606fe">vrv::OptionJson::GetKeys</a></div><div class="ttdeci">std::set&lt; std::string &gt; GetKeys() const</div><div class="ttdoc">Accessing all keys.</div></div>
@@ -815,7 +817,7 @@ $(document).ready(function(){initNavTree('options_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>options.h</b></li>
-    <li class="footer">Generated on Tue Dec 7 2021 20:54:56 for Verovio by
+    <li class="footer">Generated on Thu Dec 9 2021 12:26:23 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['uncastoff_2150',['UnCastOff',['../classvrv_1_1_floating_object.html#ad76285ff372a1a1c5eca6fb7e9923afe',1,'vrv::FloatingObject::UnCastOff()'],['../classvrv_1_1_object.html#a84120019fd68f6d7015f6765d7114a7b',1,'vrv::Object::UnCastOff()'],['../classvrv_1_1_page_element_end.html#af50575c6360e85ac904596f04262871c',1,'vrv::PageElementEnd::UnCastOff()'],['../classvrv_1_1_page_element.html#a3743d57739d59d686a641c7c381ff635',1,'vrv::PageElement::UnCastOff()'],['../classvrv_1_1_score.html#a225502c03b1a4ec590c817501b3715d4',1,'vrv::Score::UnCastOff()'],['../classvrv_1_1_system.html#abeb9438077fb1d41b129ef00df97d803',1,'vrv::System::UnCastOff()']]],
-  ['uncastoffdoc_2151',['UnCastOffDoc',['../classvrv_1_1_doc.html#a60ec7810abc3f73ed1bb41e521289693',1,'vrv::Doc']]],
-  ['unescapehtmlentities_2152',['unescapeHtmlEntities',['../classvrv_1_1_humdrum_input.html#a3a9cb0e5cf601ccbe32c261cd96b5ab0',1,'vrv::HumdrumInput']]],
-  ['updatecontrolpointparams_2153',['UpdateControlPointParams',['../classvrv_1_1_bezier_curve.html#a5a8f7416aa473cbc44d67d0628d22e62',1,'vrv::BezierCurve']]],
-  ['updatecurveparams_2154',['UpdateCurveParams',['../classvrv_1_1_floating_curve_positioner.html#a27ca3bbbefe52d4b5951e3509e9b1483',1,'vrv::FloatingCurvePositioner']]],
-  ['useblockstyle_2155',['UseBlockStyle',['../classvrv_1_1_multi_rest.html#a17707f93b4172945ae25d805f5b09ffc',1,'vrv::MultiRest']]],
-  ['useglobalstyling_2156',['UseGlobalStyling',['../classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b',1,'vrv::DeviceContext::UseGlobalStyling()'],['../classvrv_1_1_svg_device_context.html#a9982cebfe646f247292b295840b7bb94',1,'vrv::SvgDeviceContext::UseGlobalStyling()']]]
+  ['thisorsameasaslink_2217',['ThisOrSameasAsLink',['../classvrv_1_1_layer_element.html#a4aec9410afe12afe4a47f742dda300ac',1,'vrv::LayerElement']]],
+  ['tojson_2218',['ToJson',['../classvrv_1_1_feature_extractor.html#a088178e8f5cfd6abe00a3070d2f8bbcf',1,'vrv::FeatureExtractor::ToJson()'],['../classvrv_1_1_option.html#a8197df949d810a3f12aac223d8593036',1,'vrv::Option::ToJson()']]],
+  ['toolkit_2219',['Toolkit',['../classvrv_1_1_toolkit.html#ad009ed5b8852f67843a34c4b6fd1e3c7',1,'vrv::Toolkit']]],
+  ['transpose_2220',['Transpose',['../classvrv_1_1_harm.html#a02dff5809f1781cb4cae796a7630cc66',1,'vrv::Harm::Transpose()'],['../classvrv_1_1_key_sig.html#a0a2a2afe1a3f9aef0cb0bd8c542bd79b',1,'vrv::KeySig::Transpose()'],['../classvrv_1_1_note.html#a541f31357236a4ff865c00da04c31c16',1,'vrv::Note::Transpose()'],['../classvrv_1_1_object.html#a0ee02f42628df9898a57349899c1ba3e',1,'vrv::Object::Transpose()'],['../classvrv_1_1_rest.html#a740e6d9dd93f4cbeec21aaeed6eed18d',1,'vrv::Rest::Transpose()']]],
+  ['transposedoc_2221',['TransposeDoc',['../classvrv_1_1_doc.html#a303c7a587723539a78b83f642111f2a1',1,'vrv::Doc']]]
 ];

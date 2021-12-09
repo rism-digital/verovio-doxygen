@@ -994,7 +994,8 @@ var hierarchy =
       [ "vrv::ABCInput", "classvrv_1_1_a_b_c_input.html", null ],
       [ "vrv::HumdrumInput", "classvrv_1_1_humdrum_input.html", null ],
       [ "vrv::MEIInput", "classvrv_1_1_m_e_i_input.html", null ],
-      [ "vrv::MusicXmlInput", "classvrv_1_1_music_xml_input.html", null ]
+      [ "vrv::MusicXmlInput", "classvrv_1_1_music_xml_input.html", null ],
+      [ "vrv::PAEInput", "classvrv_1_1_p_a_e_input.html", null ]
     ] ],
     [ "vrv::Interface", "classvrv_1_1_interface.html", [
       [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", null ],
@@ -1053,7 +1054,8 @@ var hierarchy =
     [ "vrv::OptionGrp", "classvrv_1_1_option_grp.html", null ],
     [ "vrv::Options", "classvrv_1_1_options.html", null ],
     [ "vrv::Output", "classvrv_1_1_output.html", [
-      [ "vrv::MEIOutput", "classvrv_1_1_m_e_i_output.html", null ]
+      [ "vrv::MEIOutput", "classvrv_1_1_m_e_i_output.html", null ],
+      [ "vrv::PAEOutput", "classvrv_1_1_p_a_e_output.html", null ]
     ] ],
     [ "vrv::PageElementStartInterface", "classvrv_1_1_page_element_start_interface.html", [
       [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],

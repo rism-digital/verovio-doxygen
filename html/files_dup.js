@@ -74,6 +74,7 @@ var files_dup =
     [ "iohumdrum.h", "iohumdrum_8h_source.html", null ],
     [ "iomei.h", "iomei_8h_source.html", null ],
     [ "iomusxml.h", "iomusxml_8h_source.html", null ],
+    [ "iopae.h", "iopae_8h_source.html", null ],
     [ "keyaccid.h", "keyaccid_8h_source.html", null ],
     [ "keysig.h", "keysig_8h_source.html", null ],
     [ "label.h", "label_8h_source.html", null ],

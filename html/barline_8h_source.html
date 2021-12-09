@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('barline_8h_source.html',''); initResiz
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;atts_shared.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;layerelement.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>vrv {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">enum class</span> BarLinePosition { None, Left, Right };</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('barline_8h_source.html',''); initResiz
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keyword">public</span> AttVisibility {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classvrv_1_1_bar_line.html">BarLine</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classvrv_1_1_bar_line.html">BarLine</a>(ClassId classId);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classvrv_1_1_bar_line.html">BarLine</a>(<a class="code" href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">ClassId</a> classId);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_bar_line.html">BarLine</a>();</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classvrv_1_1_bar_line.html#aa83586073b3ab541016f2d257663d9a3">   39</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_bar_line.html#aa83586073b3ab541016f2d257663d9a3">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_bar_line.html">BarLine</a>(*<span class="keyword">this</span>); }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_bar_line.html#a6c4a47ee50d413d142202c00f4ee4441">Reset</a>() <span class="keyword">override</span>;</div>
@@ -153,17 +153,19 @@ $(document).ready(function(){initNavTree('barline_8h_source.html',''); initResiz
 <div class="ttc" id="aclassvrv_1_1_bar_line_html_a6c4a47ee50d413d142202c00f4ee4441"><div class="ttname"><a href="classvrv_1_1_bar_line.html#a6c4a47ee50d413d142202c00f4ee4441">vrv::BarLine::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Reset the object, that is 1) removing all childs and 2) resetting all attributes.</div></div>
 <div class="ttc" id="aclassvrv_1_1_bar_line_html_aa83586073b3ab541016f2d257663d9a3"><div class="ttname"><a href="classvrv_1_1_bar_line.html#aa83586073b3ab541016f2d257663d9a3">vrv::BarLine::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> barline.h:39</div></div>
 <div class="ttc" id="aclassvrv_1_1_bar_line_html_a9b25f3c724cbe2f6ca61609a6f835aff"><div class="ttname"><a href="classvrv_1_1_bar_line.html#a9b25f3c724cbe2f6ca61609a6f835aff">vrv::BarLine::SetAlignment</a></div><div class="ttdeci">bool SetAlignment(Alignment *alignment)</div><div class="ttdoc">Use to set the alignment for the Measure BarLine members.</div></div>
+<div class="ttc" id="anamespacevrv_html_add6b61c8ada3f79dc1f540fbead73ca5"><div class="ttname"><a href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">vrv::ClassId</a></div><div class="ttdeci">ClassId</div><div class="ttdoc">The ClassIds are used to identify Object child classes through the Object::Is virtual method.</div><div class="ttdef"><b>Definition:</b> vrvdef.h:79</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
 <div class="ttc" id="aclassvrv_1_1_bar_line_html_acd6c2f3ce05f5f90cc2365cafe3cf4c0"><div class="ttname"><a href="classvrv_1_1_bar_line.html#acd6c2f3ce05f5f90cc2365cafe3cf4c0">vrv::BarLine::ConvertToCastOffMensural</a></div><div class="ttdeci">int ConvertToCastOffMensural(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ConvertToCastOffMensural.</div></div>
 <div class="ttc" id="aclassvrv_1_1_bar_line_html"><div class="ttname"><a href="classvrv_1_1_bar_line.html">vrv::BarLine</a></div><div class="ttdoc">This class models the MEI &lt;barLine&gt; element.</div><div class="ttdef"><b>Definition:</b> barline.h:25</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_html"><div class="ttname"><a href="classvrv_1_1_alignment.html">vrv::Alignment</a></div><div class="ttdoc">This class stores an alignment position elements will point to.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:68</div></div>
 <div class="ttc" id="aclassvrv_1_1_bar_line_html_a2af2b9313add7bd2c7ff82f4a026fcdb"><div class="ttname"><a href="classvrv_1_1_bar_line.html#a2af2b9313add7bd2c7ff82f4a026fcdb">vrv::BarLine::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> barline.h:45</div></div>
+<div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:40</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>barline.h</b></li>
-    <li class="footer">Generated on Tue Dec 7 2021 20:54:56 for Verovio by
+    <li class="footer">Generated on Thu Dec 9 2021 12:26:23 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

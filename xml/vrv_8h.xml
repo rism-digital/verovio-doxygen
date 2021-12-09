@@ -11,6 +11,7 @@
     <includes local="no">sys/time.h</includes>
     <includes local="yes">atttypes.h</includes>
     <includedby refid="devicecontextbase_8h" local="yes">devicecontextbase.h</includedby>
+    <includedby refid="iopae_8cpp" local="yes">iopae.cpp</includedby>
     <incdepgraph>
       <node id="4">
         <label>stdarg.h</label>
@@ -733,49 +734,49 @@
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atttypes.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vrv<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacevrv" kindref="compound">vrv</ref><sp/>{</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Glyph;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Object;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogDebug(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
+<codeline lineno="36"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacevrv_1ac07e25f036e46ee309a7114a529bfedb" kindref="member">LogDebug</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogError(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMessage(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogWarning(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>consoleLogLevel<sp/>{<sp/>CONSOLE_LOG<sp/>=<sp/>0,<sp/>CONSOLE_INFO,<sp/>CONSOLE_WARN,<sp/>CONSOLE_ERROR,<sp/>CONSOLE_DEBUG<sp/>};</highlight></codeline>
+<codeline lineno="44" refid="namespacevrv_1af952e677fccb1ebad42e8bb91403c0f2" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacevrv_1af952e677fccb1ebad42e8bb91403c0f2" kindref="member">consoleLogLevel</ref><sp/>{<sp/>CONSOLE_LOG<sp/>=<sp/>0,<sp/>CONSOLE_INFO,<sp/>CONSOLE_WARN,<sp/>CONSOLE_ERROR,<sp/>CONSOLE_DEBUG<sp/>};</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>logBuffer;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>LogBufferContains(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;s);</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogString(std::string<sp/>message,<sp/>consoleLogLevel<sp/>level);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogString(std::string<sp/>message,<sp/><ref refid="namespacevrv_1af952e677fccb1ebad42e8bb91403c0f2" kindref="member">consoleLogLevel</ref><sp/>level);</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>AreEqual(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dFirstVal,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dSecondVal);</highlight></codeline>
+<codeline lineno="52"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacevrv_1a769f503eaae290945c3486de7dbfe595" kindref="member">AreEqual</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dFirstVal,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dSecondVal);</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal">std::string<sp/>ExtractUuidFragment(std::string<sp/>refUuid);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">std::string<sp/><ref refid="namespacevrv_1af06d8551b7845ce4ece8ac8b34d8bd84" kindref="member">ExtractUuidFragment</ref>(std::string<sp/>refUuid);</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal">std::string<sp/>UTF16to8(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::wstring<sp/>&amp;in);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">std::string<sp/><ref refid="namespacevrv_1acadebe2dda6acc7655502baf505b35ba" kindref="member">UTF16to8</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::wstring<sp/>&amp;in);</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal">std::wstring<sp/>UTF8to16(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;in);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">std::wstring<sp/><ref refid="namespacevrv_1a29eb77b8fb17042895d31b9b6d6a9b23" kindref="member">UTF8to16</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;in);</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal">std::string<sp/>StringFormat(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">std::string<sp/><ref refid="namespacevrv_1afb28f1cb6fe160aa83b82dc3392e2ea3" kindref="member">StringFormat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>the<sp/>implementation<sp/>callable<sp/>with<sp/>variable<sp/>arguments</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="75"><highlight class="normal">std::string<sp/>StringFormatVariable(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>va_list<sp/>arg);</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal">std::string<sp/>GetFileVersion(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vmaj,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vmin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vrev);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">std::string<sp/><ref refid="namespacevrv_1a3298102d2e367b920709324d045da4a6" kindref="member">GetFileVersion</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vmaj,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vmin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vrev);</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal">std::string<sp/>GetFilename(std::string<sp/>fullpath);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">std::string<sp/><ref refid="namespacevrv_1ab593a2e8f5de418d6a39505cf263849a" kindref="member">GetFilename</ref>(std::string<sp/>fullpath);</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal">std::string<sp/>GetVersion();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">std::string<sp/><ref refid="namespacevrv_1ad819a4f72e3a97d046b0ce6b9ee85806" kindref="member">GetVersion</ref>();</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal">std::string<sp/>BaseEncodeInt(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>base);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">std::string<sp/><ref refid="namespacevrv_1a914f33085908fce97f5daf711f8a4c79" kindref="member">BaseEncodeInt</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>base);</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight></codeline>
 <codeline lineno="102"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>logging;</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>loggingToBuffer;</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">timeval<sp/>start;</highlight></codeline>
+<codeline lineno="116"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">timeval<sp/><ref refid="namespacevrv_1a6d72123cd6ebf618e20b2b5d4a77c48a" kindref="member">start</ref>;</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogElapsedTimeStart();</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogElapsedTimeEnd(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;unspecified<sp/>operation&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Check(Object<sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacevrv_1ae585b9e67059d642dd9eb752689f8b17" kindref="member">Check</ref>(Object<sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight></codeline>
 <codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Resources</highlight><highlight class="normal"></highlight></codeline>

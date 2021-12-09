@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('slur_8h_source.html',''); initResizabl
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;controlelement.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;timeinterface.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>vrv {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>Chord;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>Doc;</div>
@@ -130,8 +130,8 @@ $(document).ready(function(){initNavTree('slur_8h_source.html',''); initResizabl
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;             <span class="keyword">public</span> AttLayerIdent {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>(ClassId classId);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>(ClassId classId, <span class="keyword">const</span> std::string &amp;classIdStr);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>(<a class="code" href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">ClassId</a> classId);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>(<a class="code" href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">ClassId</a> classId, <span class="keyword">const</span> std::string &amp;classIdStr);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_slur.html">Slur</a>();</div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classvrv_1_1_slur.html#a9e7812ed9bc701150792295d4e277802">   58</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_slur.html#a9e7812ed9bc701150792295d4e277802">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_slur.html">Slur</a>(*<span class="keyword">this</span>); }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_slur.html#a44edee9624d0cf10b0e35bd772aca3a5">Reset</a>() <span class="keyword">override</span>;</div>
@@ -222,12 +222,14 @@ $(document).ready(function(){initNavTree('slur_8h_source.html',''); initResizabl
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_slur_html_a37fa49f3e56c2b97c6989e7136711baf"><div class="ttname"><a href="classvrv_1_1_slur.html#a37fa49f3e56c2b97c6989e7136711baf">vrv::Slur::ResetDrawing</a></div><div class="ttdeci">int ResetDrawing(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
+<div class="ttc" id="anamespacevrv_html_add6b61c8ada3f79dc1f540fbead73ca5"><div class="ttname"><a href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">vrv::ClassId</a></div><div class="ttdeci">ClassId</div><div class="ttdoc">The ClassIds are used to identify Object child classes through the Object::Is virtual method.</div><div class="ttdef"><b>Definition:</b> vrvdef.h:79</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html_a3d8f95dd4c091e8c3efb01aead7d1925"><div class="ttname"><a href="classvrv_1_1_slur.html#a3d8f95dd4c091e8c3efb01aead7d1925">vrv::Slur::AdjustCoordinates</a></div><div class="ttdeci">std::pair&lt; Point, Point &gt; AdjustCoordinates(Doc *doc, Staff *staff, std::pair&lt; Point, Point &gt; points, int spanningType, curvature_CURVEDIR drawingCurveDir)</div><div class="ttdoc">Adjust starting coordinates for the slurs depending on the curve direction and spanning type of the s...</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html"><div class="ttname"><a href="classvrv_1_1_slur.html">vrv::Slur</a></div><div class="ttdef"><b>Definition:</b> slur.h:42</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html_aaf4c1de0dbc2f1b2d36702dfd24f9353"><div class="ttname"><a href="classvrv_1_1_slur.html#aaf4c1de0dbc2f1b2d36702dfd24f9353">vrv::Slur::CalculateExtremalStaff</a></div><div class="ttdeci">Staff * CalculateExtremalStaff(Staff *staff, int xMin, int xMax, char spanningType)</div><div class="ttdoc">Calculate the staff where the slur's floating curve positioner lives.</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html_a6b617c54aa61903ed2b6186a575c0170"><div class="ttname"><a href="classvrv_1_1_slur.html#a6b617c54aa61903ed2b6186a575c0170">vrv::Slur::PrepareSlurs</a></div><div class="ttdeci">int PrepareSlurs(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::PrepareSlurs.</div></div>
 <div class="ttc" id="astructvrv_1_1_control_point_constraint_html"><div class="ttname"><a href="structvrv_1_1_control_point_constraint.html">vrv::ControlPointConstraint</a></div><div class="ttdoc">This represents a constraint ax + by &gt;= c where x and y are vertical control point adjustments.</div><div class="ttdef"><b>Definition:</b> slur.h:29</div></div>
+<div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html_a9e7812ed9bc701150792295d4e277802"><div class="ttname"><a href="classvrv_1_1_slur.html#a9e7812ed9bc701150792295d4e277802">vrv::Slur::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> slur.h:58</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html_a44edee9624d0cf10b0e35bd772aca3a5"><div class="ttname"><a href="classvrv_1_1_slur.html#a44edee9624d0cf10b0e35bd772aca3a5">vrv::Slur::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html_a054686027f7672ea9c8d2789490a2e18"><div class="ttname"><a href="classvrv_1_1_slur.html#a054686027f7672ea9c8d2789490a2e18">vrv::Slur::AdjustSlur</a></div><div class="ttdeci">void AdjustSlur(Doc *doc, FloatingCurvePositioner *curve, Staff *staff)</div><div class="ttdoc">Slur adjustment.</div></div>
@@ -238,7 +240,7 @@ $(document).ready(function(){initNavTree('slur_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>slur.h</b></li>
-    <li class="footer">Generated on Tue Dec 7 2021 20:54:56 for Verovio by
+    <li class="footer">Generated on Thu Dec 9 2021 12:26:23 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
