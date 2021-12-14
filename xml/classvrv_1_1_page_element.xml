@@ -5,7 +5,7 @@
     <basecompoundref refid="classvrv_1_1_object" prot="public" virt="non-virtual">vrv::Object</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">AttTyped</basecompoundref>
     <derivedcompoundref refid="classvrv_1_1_mdiv" prot="public" virt="non-virtual">vrv::Mdiv</derivedcompoundref>
-    <derivedcompoundref refid="classvrv_1_1_page_element_end" prot="public" virt="non-virtual">vrv::PageElementEnd</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_page_milestone_end" prot="public" virt="non-virtual">vrv::PageMilestoneEnd</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_score" prot="public" virt="non-virtual">vrv::Score</derivedcompoundref>
     <includes refid="pageelement_8h" local="no">pageelement.h</includes>
       <sectiondef kind="user-defined">
@@ -82,6 +82,7 @@
         <argsstring>() override</argsstring>
         <name>Reset</name>
         <reimplements refid="classvrv_1_1_object_1acdbfa3602b2a05ed4c7ba41c77f92b7e">Reset</reimplements>
+        <reimplementedby refid="classvrv_1_1_page_milestone_end_1a69d56c283ddc6ff36d1980fef1684bc7">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_score_1a4edefe15e3054f89b5db69f3a92eee15">Reset</reimplementedby>
         <briefdescription>
 <para>Reset the object, that is 1) removing all childs and 2) resetting all attributes. </para>
@@ -101,6 +102,7 @@
         <argsstring>(FunctorParams *functorParams) override</argsstring>
         <name>CastOffSystems</name>
         <reimplements refid="classvrv_1_1_object_1a15c5f866aed95ea5c5b051c5c7e47137">CastOffSystems</reimplements>
+        <reimplementedby refid="classvrv_1_1_page_milestone_end_1a44429d421a21fc672042a359fcede354">CastOffSystems</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
           <declname>functorParams</declname>
@@ -120,6 +122,7 @@
         <argsstring>(FunctorParams *functorParams) override</argsstring>
         <name>CastOffPages</name>
         <reimplements refid="classvrv_1_1_object_1af4bdf6d63a5fbf43a21a5c18d3c49a10">CastOffPages</reimplements>
+        <reimplementedby refid="classvrv_1_1_page_milestone_end_1afd0591b4de24c75042d8e85c9c77fe9e">CastOffPages</reimplementedby>
         <reimplementedby refid="classvrv_1_1_score_1ac1cf276cd1356af20cb8321e30ba0896">CastOffPages</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
@@ -140,6 +143,7 @@
         <argsstring>(FunctorParams *functorParams) override</argsstring>
         <name>CastOffEncoding</name>
         <reimplements refid="classvrv_1_1_object_1ae1320bf0b5a56f033dcc561147225ba7">CastOffEncoding</reimplements>
+        <reimplementedby refid="classvrv_1_1_page_milestone_end_1a30d25dee3f6859fb8dfbc0c13794ad75">CastOffEncoding</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
           <declname>functorParams</declname>
@@ -159,6 +163,7 @@
         <argsstring>(FunctorParams *functorParams) override</argsstring>
         <name>UnCastOff</name>
         <reimplements refid="classvrv_1_1_object_1a84120019fd68f6d7015f6765d7114a7b">UnCastOff</reimplements>
+        <reimplementedby refid="classvrv_1_1_page_milestone_end_1a872ac48ccdfd28437da87a9ef53ebc0b">UnCastOff</reimplementedby>
         <reimplementedby refid="classvrv_1_1_score_1a225502c03b1a4ec590c817501b3715d4">UnCastOff</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
@@ -203,8 +208,8 @@
         <link refid="classvrv_1_1_bounding_box"/>
       </node>
       <node id="6">
-        <label>vrv::PageElementEnd</label>
-        <link refid="classvrv_1_1_page_element_end"/>
+        <label>vrv::PageMilestoneEnd</label>
+        <link refid="classvrv_1_1_page_milestone_end"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
@@ -367,7 +372,6 @@
       <member refid="classvrv_1_1_object_1aeb7e152a62704071901972bbfa06062c" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>GetAttributes</name></member>
       <member refid="classvrv_1_1_bounding_box_1a0771c6326e6a7123268f433bfdc903f6" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>GetBezierThicknessCoefficient</name></member>
       <member refid="classvrv_1_1_bounding_box_1a91a7bb36d11f909e84caab997fb49c0c" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>GetBottomBy</name></member>
-      <member refid="classvrv_1_1_object_1afc0d45ecd9bef7d010a33efe25f8878c" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>GetBoundaryEnd</name></member>
       <member refid="classvrv_1_1_bounding_box_1aa3fc5bcc7d25b6e975fad50b11edd781" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>GetBoundingBoxGlyph</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2b025880f04cefa1cb37b7e6f8bfb8f1" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>GetBoundingBoxGlyphFontSize</name></member>
       <member refid="classvrv_1_1_object_1a6bd78730c9d5f0302710213488708adb" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>GetChild</name></member>
@@ -404,6 +408,7 @@
       <member refid="classvrv_1_1_object_1a908d56fef5a5dd9b9808555ab4ea4daf" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>GetLastAncestorNot</name></member>
       <member refid="classvrv_1_1_bounding_box_1af329372204a34520779e6b0d0596e8b9" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>GetLeftBy</name></member>
       <member refid="classvrv_1_1_object_1a817a55b73b4356214fecf01d9da87d26" prot="public" virt="virtual"><scope>vrv::PageElement</scope><name>GetLinkingInterface</name></member>
+      <member refid="classvrv_1_1_object_1a776dc4f75ec176b5189ce8818a221bcf" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>GetMilestoneEnd</name></member>
       <member refid="classvrv_1_1_object_1ab2e351247e616a3f30eaf2e3d125f054" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>GetNext</name></member>
       <member refid="classvrv_1_1_object_1a3fda6549b288e139959f2e50355792e7" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>GetNext</name></member>
       <member refid="classvrv_1_1_object_1a96ca869c3849c0f108655ad5d900a2c7" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>GetParent</name></member>
@@ -460,13 +465,13 @@
       <member refid="classvrv_1_1_bounding_box_1aaeb23e9d3064f863ef3857efef570a8f" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>Is</name></member>
       <member refid="classvrv_1_1_object_1af8ee73eca8e0a08ae535318c4462fad1" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>IsAttribute</name></member>
       <member refid="classvrv_1_1_object_1a24ff4e053bb15d8d893c9a1a6b2f9639" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>IsAttribute</name></member>
-      <member refid="classvrv_1_1_object_1a5b1d528341ef806d382cdd1c27911021" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>IsBoundaryElement</name></member>
       <member refid="classvrv_1_1_object_1aab9a49af1e67891dcfd1b929a6d64aa9" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>IsControlElement</name></member>
       <member refid="classvrv_1_1_object_1a46776dd312ff3631580f9e0ff293d52e" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>IsEditorialElement</name></member>
       <member refid="classvrv_1_1_object_1a76f4663d1b09c5fe2b0c771eeb3f7d0e" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>IsExpansion</name></member>
       <member refid="classvrv_1_1_object_1a07dfe3de52f16cff12eefabe11c6cd96" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>IsExpansion</name></member>
       <member refid="classvrv_1_1_object_1a3b131f39c868a8a1e9b768bdc0eae811" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>IsFloatingObject</name></member>
       <member refid="classvrv_1_1_object_1a311186b3525f994471394fcc38bbcda8" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>IsLayerElement</name></member>
+      <member refid="classvrv_1_1_object_1aa9ad841690ea5c7b3326d8863140a7f8" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>IsMilestoneElement</name></member>
       <member refid="classvrv_1_1_object_1a4eec6780edc930e49d9874c1036735a4" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>IsModified</name></member>
       <member refid="classvrv_1_1_object_1a6fe6d0adbd0341a514fc3645039559fd" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>IsPageElement</name></member>
       <member refid="classvrv_1_1_object_1a345d2fd0ac1706cb8f986dbe7eae9a88" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>IsPreOrdered</name></member>
@@ -494,7 +499,6 @@
       <member refid="classvrv_1_1_page_element_1a832ade6323acaf77d439b9c7c8699ee4" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>PageElement</name></member>
       <member refid="classvrv_1_1_page_element_1a4e4ec91b60194d7b1baa5386c4499a10" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>PageElement</name></member>
       <member refid="classvrv_1_1_page_element_1a410852aa2c02b421ac8a89fdf4bb3a03" prot="public" virt="non-virtual"><scope>vrv::PageElement</scope><name>PageElement</name></member>
-      <member refid="classvrv_1_1_object_1a5608529769df462c68433b5f50680969" prot="public" virt="virtual"><scope>vrv::PageElement</scope><name>PrepareBoundaries</name></member>
       <member refid="classvrv_1_1_object_1a873d7c2f7805530e06ebd07885c399b6" prot="public" virt="virtual"><scope>vrv::PageElement</scope><name>PrepareCrossStaff</name></member>
       <member refid="classvrv_1_1_object_1a79600c0f5d0d0c68a2501f60ef077126" prot="public" virt="virtual"><scope>vrv::PageElement</scope><name>PrepareCrossStaffEnd</name></member>
       <member refid="classvrv_1_1_object_1a99e3f49ab3ca845fb0f6d501fb915ff6" prot="public" virt="virtual"><scope>vrv::PageElement</scope><name>PrepareDelayedTurns</name></member>
@@ -507,6 +511,7 @@
       <member refid="classvrv_1_1_object_1a506499857fa99ad918b7c236670acaf2" prot="public" virt="virtual"><scope>vrv::PageElement</scope><name>PrepareLinking</name></member>
       <member refid="classvrv_1_1_object_1a1bda4d7b151d3ceb49e8dcf2a6b4474e" prot="public" virt="virtual"><scope>vrv::PageElement</scope><name>PrepareLyrics</name></member>
       <member refid="classvrv_1_1_object_1a93eb8a93ec7ea199f54a59b8139e1a38" prot="public" virt="virtual"><scope>vrv::PageElement</scope><name>PrepareLyricsEnd</name></member>
+      <member refid="classvrv_1_1_object_1a88e94d36441a1b11bfaa6681b0ac1bdf" prot="public" virt="virtual"><scope>vrv::PageElement</scope><name>PrepareMilestones</name></member>
       <member refid="classvrv_1_1_object_1af10db2b195d5667b53c982409ecb9500" prot="public" virt="virtual"><scope>vrv::PageElement</scope><name>PreparePlist</name></member>
       <member refid="classvrv_1_1_object_1a72def6c07065fa48ad7cd844dd4b2ed5" prot="public" virt="virtual"><scope>vrv::PageElement</scope><name>PreparePointersByLayer</name></member>
       <member refid="classvrv_1_1_object_1a4d2903e69118df1b627cb99ecd036948" prot="public" virt="virtual"><scope>vrv::PageElement</scope><name>PrepareProcessingLists</name></member>

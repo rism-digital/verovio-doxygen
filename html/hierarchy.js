@@ -746,7 +746,7 @@ var hierarchy =
       [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
       [ "vrv::PageElement", "classvrv_1_1_page_element.html", [
         [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
-        [ "vrv::PageElementEnd", "classvrv_1_1_page_element_end.html", null ],
+        [ "vrv::PageMilestoneEnd", "classvrv_1_1_page_milestone_end.html", null ],
         [ "vrv::Score", "classvrv_1_1_score.html", null ]
       ] ],
       [ "vrv::RunningElement", "classvrv_1_1_running_element.html", null ],
@@ -761,7 +761,7 @@ var hierarchy =
         [ "vrv::Pb", "classvrv_1_1_pb.html", null ],
         [ "vrv::Sb", "classvrv_1_1_sb.html", null ],
         [ "vrv::Section", "classvrv_1_1_section.html", null ],
-        [ "vrv::SystemElementEnd", "classvrv_1_1_system_element_end.html", null ]
+        [ "vrv::SystemMilestoneEnd", "classvrv_1_1_system_milestone_end.html", null ]
       ] ],
       [ "vrv::TextElement", "classvrv_1_1_text_element.html", null ],
       [ "vrv::Zone", "classvrv_1_1_zone.html", null ]
@@ -958,13 +958,13 @@ var hierarchy =
       [ "vrv::JustifyYParams", "classvrv_1_1_justify_y_params.html", null ],
       [ "vrv::LayerCountInTimeSpanParams", "classvrv_1_1_layer_count_in_time_span_params.html", null ],
       [ "vrv::LayerElementsInTimeSpanParams", "classvrv_1_1_layer_elements_in_time_span_params.html", null ],
-      [ "vrv::PrepareBoundariesParams", "classvrv_1_1_prepare_boundaries_params.html", null ],
       [ "vrv::PrepareCrossStaffParams", "classvrv_1_1_prepare_cross_staff_params.html", null ],
       [ "vrv::PrepareDelayedTurnsParams", "classvrv_1_1_prepare_delayed_turns_params.html", null ],
       [ "vrv::PrepareFacsimileParams", "classvrv_1_1_prepare_facsimile_params.html", null ],
       [ "vrv::PrepareFloatingGrpsParams", "classvrv_1_1_prepare_floating_grps_params.html", null ],
       [ "vrv::PrepareLinkingParams", "classvrv_1_1_prepare_linking_params.html", null ],
       [ "vrv::PrepareLyricsParams", "classvrv_1_1_prepare_lyrics_params.html", null ],
+      [ "vrv::PrepareMilestonesParams", "classvrv_1_1_prepare_milestones_params.html", null ],
       [ "vrv::PreparePlistParams", "classvrv_1_1_prepare_plist_params.html", null ],
       [ "vrv::PreparePointersByLayerParams", "classvrv_1_1_prepare_pointers_by_layer_params.html", null ],
       [ "vrv::PrepareProcessingListsParams", "classvrv_1_1_prepare_processing_lists_params.html", null ],
@@ -1057,7 +1057,7 @@ var hierarchy =
       [ "vrv::MEIOutput", "classvrv_1_1_m_e_i_output.html", null ],
       [ "vrv::PAEOutput", "classvrv_1_1_p_a_e_output.html", null ]
     ] ],
-    [ "vrv::PageElementStartInterface", "classvrv_1_1_page_element_start_interface.html", [
+    [ "vrv::PageMilestoneInterface", "classvrv_1_1_page_milestone_interface.html", [
       [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
       [ "vrv::Score", "classvrv_1_1_score.html", null ]
     ] ],
@@ -1074,7 +1074,7 @@ var hierarchy =
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ]
     ] ],
-    [ "vrv::SystemElementStartInterface", "classvrv_1_1_system_element_start_interface.html", [
+    [ "vrv::SystemMilestoneInterface", "classvrv_1_1_system_milestone_interface.html", [
       [ "vrv::EditorialElement", "classvrv_1_1_editorial_element.html", null ],
       [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
       [ "vrv::Section", "classvrv_1_1_section.html", null ]

@@ -9,7 +9,7 @@ var classvrv_1_1_editorial_element =
     [ "ConvertToPageBased", "classvrv_1_1_editorial_element.html#a7bb93abab05009107a6e5bcdc33b956f", null ],
     [ "ConvertToPageBasedEnd", "classvrv_1_1_editorial_element.html#a8634a6a00814d2172a280b3e358dff37", null ],
     [ "IsSupportedChild", "classvrv_1_1_editorial_element.html#ade4760c8902b5bbbac7288417efaf697", null ],
-    [ "PrepareBoundaries", "classvrv_1_1_editorial_element.html#a631367e4f6609b68332d8fdfee441e8f", null ],
+    [ "PrepareMilestones", "classvrv_1_1_editorial_element.html#a6aa989d9b3b91548795c3748c1be6888", null ],
     [ "Reset", "classvrv_1_1_editorial_element.html#a7ef9e3e924fb5881ae60a67956eeb497", null ],
     [ "ResetDrawing", "classvrv_1_1_editorial_element.html#a4b28a106672663f40df9a15a2318b2e0", null ],
     [ "m_visibility", "classvrv_1_1_editorial_element.html#aeac215256d1fb1a8bb10a813be1c0eea", null ]

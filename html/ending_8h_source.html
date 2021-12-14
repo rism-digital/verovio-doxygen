@@ -96,8 +96,8 @@ $(document).ready(function(){initNavTree('ending_8h_source.html',''); initResiza
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __VRV_ENDING_H__</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;atts_shared.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;systemboundary.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;systemelement.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;systemelement.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;systemmilestone.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('ending_8h_source.html',''); initResiza
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// Ending</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classvrv_1_1_ending.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_ending.html">Ending</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_system_element.html">SystemElement</a>, <span class="keyword">public</span> <a class="code" href="classvrv_1_1_system_element_start_interface.html">SystemElementStartInterface</a>, <span class="keyword">public</span> AttLineRend, <span class="keyword">public</span> AttNNumberLike {</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classvrv_1_1_ending.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_ending.html">Ending</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_system_element.html">SystemElement</a>, <span class="keyword">public</span> <a class="code" href="classvrv_1_1_system_milestone_interface.html">SystemMilestoneInterface</a>, <span class="keyword">public</span> AttLineRend, <span class="keyword">public</span> AttNNumberLike {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classvrv_1_1_ending.html">Ending</a>();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_ending.html">Ending</a>();</div>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('ending_8h_source.html',''); initResiza
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_ending.html#a54759d92890407ec28b39cb08a63501c">ConvertToPageBased</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">int</span> ConvertToPageBasedEnd(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_ending.html#a388b55723f33f33609e95dc145caef1f">PrepareBoundaries</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_ending.html#a3d113ea9d8eb9c0c5545e93c53fe4a46">PrepareMilestones</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_ending.html#abdaec93e76521c5c8cbfd07d09af3e94">ResetDrawing</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
@@ -147,24 +147,24 @@ $(document).ready(function(){initNavTree('ending_8h_source.html',''); initResiza
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassvrv_1_1_ending_html_a3d113ea9d8eb9c0c5545e93c53fe4a46"><div class="ttname"><a href="classvrv_1_1_ending.html#a3d113ea9d8eb9c0c5545e93c53fe4a46">vrv::Ending::PrepareMilestones</a></div><div class="ttdeci">int PrepareMilestones(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::PrepareMilestones.</div></div>
+<div class="ttc" id="aclassvrv_1_1_system_milestone_interface_html"><div class="ttname"><a href="classvrv_1_1_system_milestone_interface.html">vrv::SystemMilestoneInterface</a></div><div class="ttdoc">This class is an interface for container elements that have to be turned to milestones in a page-base...</div><div class="ttdef"><b>Definition:</b> systemmilestone.h:97</div></div>
 <div class="ttc" id="aclassvrv_1_1_system_element_html"><div class="ttname"><a href="classvrv_1_1_system_element.html">vrv::SystemElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> systemelement.h:25</div></div>
 <div class="ttc" id="aclassvrv_1_1_ending_html"><div class="ttname"><a href="classvrv_1_1_ending.html">vrv::Ending</a></div><div class="ttdoc">This class represents a MEI ending.</div><div class="ttdef"><b>Definition:</b> ending.h:28</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
 <div class="ttc" id="aclassvrv_1_1_ending_html_a54759d92890407ec28b39cb08a63501c"><div class="ttname"><a href="classvrv_1_1_ending.html#a54759d92890407ec28b39cb08a63501c">vrv::Ending::ConvertToPageBased</a></div><div class="ttdeci">int ConvertToPageBased(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ConvertToPageBased.</div></div>
 <div class="ttc" id="aclassvrv_1_1_ending_html_a029c45da2ec5fb79932a1c8d8e4fb367"><div class="ttname"><a href="classvrv_1_1_ending.html#a029c45da2ec5fb79932a1c8d8e4fb367">vrv::Ending::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Method for adding allowed content.</div></div>
-<div class="ttc" id="aclassvrv_1_1_system_element_start_interface_html"><div class="ttname"><a href="classvrv_1_1_system_element_start_interface.html">vrv::SystemElementStartInterface</a></div><div class="ttdoc">This class is an interface for container elements that have to be turned to milestones in a page-base...</div><div class="ttdef"><b>Definition:</b> systemboundary.h:97</div></div>
 <div class="ttc" id="aclassvrv_1_1_ending_html_abdaec93e76521c5c8cbfd07d09af3e94"><div class="ttname"><a href="classvrv_1_1_ending.html#abdaec93e76521c5c8cbfd07d09af3e94">vrv::Ending::ResetDrawing</a></div><div class="ttdeci">int ResetDrawing(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
 <div class="ttc" id="aclassvrv_1_1_ending_html_a741d2447c7a59bd8a15cd45d0b04e54e"><div class="ttname"><a href="classvrv_1_1_ending.html#a741d2447c7a59bd8a15cd45d0b04e54e">vrv::Ending::CastOffEncoding</a></div><div class="ttdeci">int CastOffEncoding(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CastOffEncoding.</div></div>
 <div class="ttc" id="aclassvrv_1_1_ending_html_ab8ed4625a2bfd1fae5b6159aaba33197"><div class="ttname"><a href="classvrv_1_1_ending.html#ab8ed4625a2bfd1fae5b6159aaba33197">vrv::Ending::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> ending.h:37</div></div>
 <div class="ttc" id="aclassvrv_1_1_ending_html_a2dfe22b6f524ea2e820ad76348bcadc8"><div class="ttname"><a href="classvrv_1_1_ending.html#a2dfe22b6f524ea2e820ad76348bcadc8">vrv::Ending::PrepareFloatingGrps</a></div><div class="ttdeci">int PrepareFloatingGrps(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::PrepareFloatingGrps.</div></div>
 <div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
-<div class="ttc" id="aclassvrv_1_1_ending_html_a388b55723f33f33609e95dc145caef1f"><div class="ttname"><a href="classvrv_1_1_ending.html#a388b55723f33f33609e95dc145caef1f">vrv::Ending::PrepareBoundaries</a></div><div class="ttdeci">int PrepareBoundaries(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::PrepareBoundaries.</div></div>
 <div class="ttc" id="aclassvrv_1_1_ending_html_a371f79d23675e2563c4f6e5d61ab6dbe"><div class="ttname"><a href="classvrv_1_1_ending.html#a371f79d23675e2563c4f6e5d61ab6dbe">vrv::Ending::CastOffSystems</a></div><div class="ttdeci">int CastOffSystems(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CastOffSystems.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>ending.h</b></li>
-    <li class="footer">Generated on Mon Dec 13 2021 15:04:50 for Verovio by
+    <li class="footer">Generated on Tue Dec 14 2021 19:38:07 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

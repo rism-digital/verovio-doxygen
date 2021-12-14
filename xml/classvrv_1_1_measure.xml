@@ -792,7 +792,7 @@
 <para>A pointer to the ending to which the measure belongs. </para>
         </briefdescription>
         <detaileddescription>
-<para>Set by PrepareBoundaries and passed to the <ref refid="classvrv_1_1_system" kindref="compound">System</ref> drawing list in DrawMeasure </para>
+<para>Set by PrepareMilestones and passed to the <ref refid="classvrv_1_1_system" kindref="compound">System</ref> drawing list in DrawMeasure </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -1857,18 +1857,18 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/measure.h" line="430" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_measure_1abf1ccf9ff910a028acb4ec8667f608da" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_measure_1a88cb1e014e6f325fadc007ca2cdd7052" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
-        <definition>int vrv::Measure::PrepareBoundaries</definition>
+        <definition>int vrv::Measure::PrepareMilestones</definition>
         <argsstring>(FunctorParams *functorParams) override</argsstring>
-        <name>PrepareBoundaries</name>
-        <reimplements refid="classvrv_1_1_object_1a5608529769df462c68433b5f50680969">PrepareBoundaries</reimplements>
+        <name>PrepareMilestones</name>
+        <reimplements refid="classvrv_1_1_object_1a88e94d36441a1b11bfaa6681b0ac1bdf">PrepareMilestones</reimplements>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
           <declname>functorParams</declname>
         </param>
         <briefdescription>
-<para>See <ref refid="classvrv_1_1_object_1a5608529769df462c68433b5f50680969" kindref="member">Object::PrepareBoundaries</ref>. </para>
+<para>See <ref refid="classvrv_1_1_object_1a88e94d36441a1b11bfaa6681b0ac1bdf" kindref="member">Object::PrepareMilestones</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -2170,7 +2170,6 @@
       <member refid="classvrv_1_1_bounding_box_1a0771c6326e6a7123268f433bfdc903f6" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetBezierThicknessCoefficient</name></member>
       <member refid="classvrv_1_1_bounding_box_1a91a7bb36d11f909e84caab997fb49c0c" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetBottomBy</name></member>
       <member refid="classvrv_1_1_measure_1aebb30d801973e472dade538e89a1ee93" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetBottomVisibleStaff</name></member>
-      <member refid="classvrv_1_1_object_1afc0d45ecd9bef7d010a33efe25f8878c" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetBoundaryEnd</name></member>
       <member refid="classvrv_1_1_bounding_box_1aa3fc5bcc7d25b6e975fad50b11edd781" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetBoundingBoxGlyph</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2b025880f04cefa1cb37b7e6f8bfb8f1" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetBoundingBoxGlyphFontSize</name></member>
       <member refid="classvrv_1_1_object_1a6bd78730c9d5f0302710213488708adb" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetChild</name></member>
@@ -2224,6 +2223,7 @@
       <member refid="classvrv_1_1_bounding_box_1af329372204a34520779e6b0d0596e8b9" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetLeftBy</name></member>
       <member refid="classvrv_1_1_object_1a817a55b73b4356214fecf01d9da87d26" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>GetLinkingInterface</name></member>
       <member refid="classvrv_1_1_measure_1a576172291cab812579e24126e5151526" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetMeasureIdx</name></member>
+      <member refid="classvrv_1_1_object_1a776dc4f75ec176b5189ce8818a221bcf" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetMilestoneEnd</name></member>
       <member refid="classvrv_1_1_object_1ab2e351247e616a3f30eaf2e3d125f054" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetNext</name></member>
       <member refid="classvrv_1_1_object_1a3fda6549b288e139959f2e50355792e7" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetNext</name></member>
       <member refid="classvrv_1_1_measure_1a4f4172e322a4283c0357b60369469d2a" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetNonJustifiableLeftMargin</name></member>
@@ -2292,7 +2292,6 @@
       <member refid="classvrv_1_1_bounding_box_1aaeb23e9d3064f863ef3857efef570a8f" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>Is</name></member>
       <member refid="classvrv_1_1_object_1af8ee73eca8e0a08ae535318c4462fad1" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>IsAttribute</name></member>
       <member refid="classvrv_1_1_object_1a24ff4e053bb15d8d893c9a1a6b2f9639" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>IsAttribute</name></member>
-      <member refid="classvrv_1_1_object_1a5b1d528341ef806d382cdd1c27911021" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>IsBoundaryElement</name></member>
       <member refid="classvrv_1_1_object_1aab9a49af1e67891dcfd1b929a6d64aa9" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>IsControlElement</name></member>
       <member refid="classvrv_1_1_object_1a46776dd312ff3631580f9e0ff293d52e" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>IsEditorialElement</name></member>
       <member refid="classvrv_1_1_object_1a76f4663d1b09c5fe2b0c771eeb3f7d0e" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>IsExpansion</name></member>
@@ -2300,6 +2299,7 @@
       <member refid="classvrv_1_1_object_1a3b131f39c868a8a1e9b768bdc0eae811" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>IsFloatingObject</name></member>
       <member refid="classvrv_1_1_object_1a311186b3525f994471394fcc38bbcda8" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>IsLayerElement</name></member>
       <member refid="classvrv_1_1_measure_1a53fc4fd98146722a9cc4784f1b9a7498" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>IsMeasuredMusic</name></member>
+      <member refid="classvrv_1_1_object_1aa9ad841690ea5c7b3326d8863140a7f8" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>IsMilestoneElement</name></member>
       <member refid="classvrv_1_1_object_1a4eec6780edc930e49d9874c1036735a4" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>IsModified</name></member>
       <member refid="classvrv_1_1_object_1a6fe6d0adbd0341a514fc3645039559fd" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>IsPageElement</name></member>
       <member refid="classvrv_1_1_object_1a345d2fd0ac1706cb8f986dbe7eae9a88" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>IsPreOrdered</name></member>
@@ -2340,7 +2340,6 @@
       <member refid="classvrv_1_1_object_1a79f4f653686b4f612283302ab443c1c8" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>Object</name></member>
       <member refid="classvrv_1_1_object_1a8be4ecf7908559751e728551718a8bfc" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>Object</name></member>
       <member refid="classvrv_1_1_object_1a6ad51ecc97faf69c8fa8432a780aed44" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>operator=</name></member>
-      <member refid="classvrv_1_1_measure_1abf1ccf9ff910a028acb4ec8667f608da" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>PrepareBoundaries</name></member>
       <member refid="classvrv_1_1_measure_1af5d31684e551148383fc1a5bcebda580" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>PrepareCrossStaff</name></member>
       <member refid="classvrv_1_1_object_1a79600c0f5d0d0c68a2501f60ef077126" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>PrepareCrossStaffEnd</name></member>
       <member refid="classvrv_1_1_object_1a99e3f49ab3ca845fb0f6d501fb915ff6" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>PrepareDelayedTurns</name></member>
@@ -2353,6 +2352,7 @@
       <member refid="classvrv_1_1_object_1a506499857fa99ad918b7c236670acaf2" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>PrepareLinking</name></member>
       <member refid="classvrv_1_1_object_1a1bda4d7b151d3ceb49e8dcf2a6b4474e" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>PrepareLyrics</name></member>
       <member refid="classvrv_1_1_object_1a93eb8a93ec7ea199f54a59b8139e1a38" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>PrepareLyricsEnd</name></member>
+      <member refid="classvrv_1_1_measure_1a88cb1e014e6f325fadc007ca2cdd7052" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>PrepareMilestones</name></member>
       <member refid="classvrv_1_1_object_1af10db2b195d5667b53c982409ecb9500" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>PreparePlist</name></member>
       <member refid="classvrv_1_1_object_1a72def6c07065fa48ad7cd844dd4b2ed5" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>PreparePointersByLayer</name></member>
       <member refid="classvrv_1_1_object_1a4d2903e69118df1b627cb99ecd036948" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>PrepareProcessingLists</name></member>

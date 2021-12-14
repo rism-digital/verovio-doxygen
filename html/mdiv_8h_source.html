@@ -96,8 +96,8 @@ $(document).ready(function(){initNavTree('mdiv_8h_source.html',''); initResizabl
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __VRV_MDIV_H__</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;atts_shared.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;pageboundary.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;pageelement.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;pageelement.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;pagemilestone.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('mdiv_8h_source.html',''); initResizabl
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// Mdiv</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classvrv_1_1_mdiv.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_mdiv.html">Mdiv</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_page_element.html">PageElement</a>, <span class="keyword">public</span> <a class="code" href="classvrv_1_1_page_element_start_interface.html">PageElementStartInterface</a>, <span class="keyword">public</span> AttLabelled, <span class="keyword">public</span> AttNNumberLike {</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classvrv_1_1_mdiv.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_mdiv.html">Mdiv</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_page_element.html">PageElement</a>, <span class="keyword">public</span> <a class="code" href="classvrv_1_1_page_milestone_interface.html">PageMilestoneInterface</a>, <span class="keyword">public</span> AttLabelled, <span class="keyword">public</span> AttNNumberLike {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classvrv_1_1_mdiv.html">Mdiv</a>();</div>
@@ -144,6 +144,7 @@ $(document).ready(function(){initNavTree('mdiv_8h_source.html',''); initResizabl
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_mdiv_html_aed76997a32ca68f9ca9f2c1dc614bca6"><div class="ttname"><a href="classvrv_1_1_mdiv.html#aed76997a32ca68f9ca9f2c1dc614bca6">vrv::Mdiv::MakeVisible</a></div><div class="ttdeci">void MakeVisible()</div><div class="ttdoc">Make the mdiv and its parent (recursively) visible.</div></div>
 <div class="ttc" id="aclassvrv_1_1_mdiv_html_a2feff2dd52fe229fb3346921ef6610d9"><div class="ttname"><a href="classvrv_1_1_mdiv.html#a2feff2dd52fe229fb3346921ef6610d9">vrv::Mdiv::m_visibility</a></div><div class="ttdeci">VisibilityType m_visibility</div><div class="ttdoc">Holds the visibility (hidden or visible) for an mdiv element.</div><div class="ttdef"><b>Definition:</b> mdiv.h:80</div></div>
+<div class="ttc" id="aclassvrv_1_1_page_milestone_interface_html"><div class="ttname"><a href="classvrv_1_1_page_milestone_interface.html">vrv::PageMilestoneInterface</a></div><div class="ttdoc">This class is an interface for container elements that have to be turned to milestones in a page-base...</div><div class="ttdef"><b>Definition:</b> pagemilestone.h:95</div></div>
 <div class="ttc" id="aclassvrv_1_1_mdiv_html_af7775d6aa1de70f83a6432ca4c3a39bd"><div class="ttname"><a href="classvrv_1_1_mdiv.html#af7775d6aa1de70f83a6432ca4c3a39bd">vrv::Mdiv::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> mdiv.h:34</div></div>
 <div class="ttc" id="aclassvrv_1_1_page_element_html"><div class="ttname"><a href="classvrv_1_1_page_element.html">vrv::PageElement</a></div><div class="ttdoc">This class represents elements appearing within a page.</div><div class="ttdef"><b>Definition:</b> pageelement.h:25</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
@@ -152,12 +153,11 @@ $(document).ready(function(){initNavTree('mdiv_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassvrv_1_1_mdiv_html"><div class="ttname"><a href="classvrv_1_1_mdiv.html">vrv::Mdiv</a></div><div class="ttdoc">This class represent a &lt;mdiv&gt; in page-based MEI.</div><div class="ttdef"><b>Definition:</b> mdiv.h:24</div></div>
 <div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
 <div class="ttc" id="aclassvrv_1_1_mdiv_html_a61630b918f187093a38782ebe1c23dec"><div class="ttname"><a href="classvrv_1_1_mdiv.html#a61630b918f187093a38782ebe1c23dec">vrv::Mdiv::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Base method for checking if a child can be added.</div></div>
-<div class="ttc" id="aclassvrv_1_1_page_element_start_interface_html"><div class="ttname"><a href="classvrv_1_1_page_element_start_interface.html">vrv::PageElementStartInterface</a></div><div class="ttdoc">This class is an interface for container elements that have to be turned to milestones in a page-base...</div><div class="ttdef"><b>Definition:</b> pageboundary.h:95</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>mdiv.h</b></li>
-    <li class="footer">Generated on Mon Dec 13 2021 15:04:51 for Verovio by
+    <li class="footer">Generated on Tue Dec 14 2021 19:38:07 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

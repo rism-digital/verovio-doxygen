@@ -8,7 +8,7 @@ var classvrv_1_1_section =
     [ "ConvertToUnCastOffMensural", "classvrv_1_1_section.html#a42aec18987fab11797c73252ffc1b0be", null ],
     [ "GetClassName", "classvrv_1_1_section.html#a2c8ef4863c0510d9ab4797ff06427ea6", null ],
     [ "IsSupportedChild", "classvrv_1_1_section.html#aa2d84459764b4292821e8b677a49564e", null ],
-    [ "PrepareBoundaries", "classvrv_1_1_section.html#aefafa3a8f31d037fd00d1731967df531", null ],
+    [ "PrepareMilestones", "classvrv_1_1_section.html#a8e763f6053f8a172d45ae2cd283d9027", null ],
     [ "Reset", "classvrv_1_1_section.html#a5c2ea4ecbc1331e7270dbc481ce0ac4e", null ],
     [ "ResetDrawing", "classvrv_1_1_section.html#a124117e3280d72876028e8237424bda5", null ]
 ];
