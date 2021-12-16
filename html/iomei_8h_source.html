@@ -653,49 +653,52 @@ $(document).ready(function(){initNavTree('iomei_8h_source.html',''); initResizab
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160; </div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    <span class="comment">// to MEI 5.0.0</span></div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    <span class="keywordtype">void</span> UpgradePageTo_5_0_0(<a class="code" href="classvrv_1_1_page.html">Page</a> *page);</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <span class="comment">// to MEI 4.0.0</span></div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <span class="keywordtype">void</span> UpgradeBeatRptTo_4_0_0(pugi::xml_node beatRpt, <a class="code" href="classvrv_1_1_beat_rpt.html">BeatRpt</a> *vrvBeatRpt);</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    <span class="keywordtype">void</span> UpgradeDurGesTo_4_0_0(pugi::xml_node element, <a class="code" href="classvrv_1_1_duration_interface.html">DurationInterface</a> *interface);</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    <span class="keywordtype">void</span> UpgradeFTremTo_4_0_0(pugi::xml_node fTrem, <a class="code" href="classvrv_1_1_f_trem.html">FTrem</a> *vrvFTrem);</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    <span class="keywordtype">void</span> UpgradeMensurTo_5_0_0(pugi::xml_node mensur, <a class="code" href="classvrv_1_1_mensur.html">Mensur</a> *vrvMensur);</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    <span class="keywordtype">void</span> UpgradeMordentTo_4_0_0(pugi::xml_node mordent, <a class="code" href="classvrv_1_1_mordent.html">Mordent</a> *vrvMordent);</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    <span class="keywordtype">void</span> UpgradeScoreDefElementTo_4_0_0(pugi::xml_node scoreDefElement, <a class="code" href="classvrv_1_1_score_def_element.html">ScoreDefElement</a> *vrvScoreDefElement);</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    <span class="keywordtype">void</span> UpgradeStaffDefTo_4_0_0(pugi::xml_node staffDef, <a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *vrvStaffDef);</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    <span class="keywordtype">void</span> UpgradeStaffGrpTo_4_0_0(pugi::xml_node staffGrp, <a class="code" href="classvrv_1_1_staff_grp.html">StaffGrp</a> *vrvStaffGrp);</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    <span class="keywordtype">void</span> UpgradeTurnTo_4_0_0(pugi::xml_node turn, <a class="code" href="classvrv_1_1_turn.html">Turn</a> *vrvTurn);</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;    <span class="comment">// to MEI 3.0.0 (Page-Based MEI only)</span></div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    <span class="keywordtype">void</span> UpgradeMeasureTo_3_0_0(<a class="code" href="classvrv_1_1_measure.html">Measure</a> *measure, <a class="code" href="classvrv_1_1_system.html">System</a> *system);</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    <span class="keywordtype">void</span> UpgradePageTo_3_0_0(<a class="code" href="classvrv_1_1_page.html">Page</a> *page, <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc);</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160; </div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;    <span class="keywordtype">void</span> ReadAccidAttr(pugi::xml_node node, <a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160; </div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;    std::string m_filename;</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160; </div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;    MEIVersion m_version;</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160; </div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;    <span class="keywordtype">bool</span> m_readingScoreBased;</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160; </div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    <span class="keywordtype">bool</span> m_hasScoreDef;</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160; </div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;    <span class="keywordtype">bool</span> IsAllowed(std::string element, <a class="code" href="classvrv_1_1_object.html">Object</a> *filterParent);</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160; </div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;    pugi::xml_node m_selectedMdiv;</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160; </div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;    std::string m_comment;</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160; </div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    <span class="comment">// Static members //</span></div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160; </div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;std::string&gt; s_editorialElementNames;</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;};</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160; </div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160; </div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <span class="keywordtype">void</span> UpgradeMeasureTo_5_0_0(pugi::xml_node measure);</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <span class="keywordtype">void</span> UpgradeStaffTo_5_0_0(pugi::xml_node staff);</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    <span class="keywordtype">void</span> UpgradeLayerElementTo_5_0_0(pugi::xml_node element);</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    <span class="comment">// to MEI 4.0.0</span></div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    <span class="keywordtype">void</span> UpgradeBeatRptTo_4_0_0(pugi::xml_node beatRpt, <a class="code" href="classvrv_1_1_beat_rpt.html">BeatRpt</a> *vrvBeatRpt);</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    <span class="keywordtype">void</span> UpgradeDurGesTo_4_0_0(pugi::xml_node element, <a class="code" href="classvrv_1_1_duration_interface.html">DurationInterface</a> *interface);</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    <span class="keywordtype">void</span> UpgradeFTremTo_4_0_0(pugi::xml_node fTrem, <a class="code" href="classvrv_1_1_f_trem.html">FTrem</a> *vrvFTrem);</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    <span class="keywordtype">void</span> UpgradeMensurTo_5_0_0(pugi::xml_node mensur, <a class="code" href="classvrv_1_1_mensur.html">Mensur</a> *vrvMensur);</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    <span class="keywordtype">void</span> UpgradeMordentTo_4_0_0(pugi::xml_node mordent, <a class="code" href="classvrv_1_1_mordent.html">Mordent</a> *vrvMordent);</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    <span class="keywordtype">void</span> UpgradeScoreDefElementTo_4_0_0(pugi::xml_node scoreDefElement, <a class="code" href="classvrv_1_1_score_def_element.html">ScoreDefElement</a> *vrvScoreDefElement);</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;    <span class="keywordtype">void</span> UpgradeStaffDefTo_4_0_0(pugi::xml_node staffDef, <a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *vrvStaffDef);</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    <span class="keywordtype">void</span> UpgradeStaffGrpTo_4_0_0(pugi::xml_node staffGrp, <a class="code" href="classvrv_1_1_staff_grp.html">StaffGrp</a> *vrvStaffGrp);</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    <span class="keywordtype">void</span> UpgradeTurnTo_4_0_0(pugi::xml_node turn, <a class="code" href="classvrv_1_1_turn.html">Turn</a> *vrvTurn);</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;    <span class="comment">// to MEI 3.0.0 (Page-Based MEI only)</span></div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;    <span class="keywordtype">void</span> UpgradeMeasureTo_3_0_0(<a class="code" href="classvrv_1_1_measure.html">Measure</a> *measure, <a class="code" href="classvrv_1_1_system.html">System</a> *system);</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    <span class="keywordtype">void</span> UpgradePageTo_3_0_0(<a class="code" href="classvrv_1_1_page.html">Page</a> *page, <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc);</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160; </div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    <span class="keywordtype">void</span> ReadAccidAttr(pugi::xml_node node, <a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160; </div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;    std::string m_filename;</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160; </div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;    MEIVersion m_version;</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160; </div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    <span class="keywordtype">bool</span> m_readingScoreBased;</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160; </div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    <span class="keywordtype">bool</span> m_hasScoreDef;</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160; </div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;    <span class="keywordtype">bool</span> IsAllowed(std::string element, <a class="code" href="classvrv_1_1_object.html">Object</a> *filterParent);</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160; </div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    pugi::xml_node m_selectedMdiv;</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160; </div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    std::string m_comment;</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160; </div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;    <span class="comment">// Static members //</span></div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160; </div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;std::string&gt; s_editorialElementNames;</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;};</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160; </div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160; </div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_staff_def_html"><div class="ttname"><a href="classvrv_1_1_staff_def.html">vrv::StaffDef</a></div><div class="ttdoc">This class represents a MEI staffDef.</div><div class="ttdef"><b>Definition:</b> staffdef.h:25</div></div>
@@ -856,7 +859,7 @@ $(document).ready(function(){initNavTree('iomei_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>iomei.h</b></li>
-    <li class="footer">Generated on Wed Dec 15 2021 10:32:50 for Verovio by
+    <li class="footer">Generated on Thu Dec 16 2021 07:42:07 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
