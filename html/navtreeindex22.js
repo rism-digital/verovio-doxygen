@@ -1,5 +1,12 @@
 var NAVTREEINDEX22 =
 {
+"staffdef_8h_source.html":[3,0,143],
+"staffgrp_8h_source.html":[3,0,144],
+"structvrv_1_1_closest_b_b.html":[2,0,0,75],
+"structvrv_1_1_closest_b_b.html#a7193448e2d6a3148d7efbac14f337f74":[2,0,0,75,1],
+"structvrv_1_1_closest_b_b.html#acdc0607c597cc92e988e9d9c41173d47":[2,0,0,75,0],
+"structvrv_1_1_closest_b_b.html#acea28781d0d1b123aae14c872a6367eb":[2,0,0,75,3],
+"structvrv_1_1_closest_b_b.html#ae4c15a00f3ead7ec067bf72ce647aa55":[2,0,0,75,2],
 "structvrv_1_1_control_point_constraint.html":[2,0,0,78],
 "structvrv_1_1_control_point_constraint.html#a84f062ff2c159b679a6ac0d5356b919a":[2,0,0,78,0],
 "structvrv_1_1_control_point_constraint.html#a9a6bae03bd6c110a3aaeae2a95a23e49":[2,0,0,78,1],
