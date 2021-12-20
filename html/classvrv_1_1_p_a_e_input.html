@@ -187,64 +187,64 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_outformat</b
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">    { ERR_001_EMPTY, <span class="stringliteral">&quot;Input is empty&quot;</span> },</div>
-<div class="line">    { ERR_002_JSON_PARSE, <span class="stringliteral">&quot;Cannot parse the JSON input&quot;</span> },</div>
-<div class="line">    { ERR_003_JSON_KEY, <span class="stringliteral">&quot;No &#39;data&#39; key in the JSON input&quot;</span> },</div>
-<div class="line">    { ERR_004_KEY_SPACE, <span class="stringliteral">&quot;Missing space character after a key signature change&quot;</span> },</div>
-<div class="line">    { ERR_005_CLEF_SPACE, <span class="stringliteral">&quot;Missing space character after a clef change&quot;</span> },</div>
-<div class="line">    { ERR_006_TIMESIG_SPACE, <span class="stringliteral">&quot;Missing space character after a meter signature change&quot;</span> },</div>
-<div class="line">    { ERR_007_REP_EMPTY, <span class="stringliteral">&quot;Empty repeated figure&quot;</span> },</div>
-<div class="line">    { ERR_008_REP_MARKER, <span class="stringliteral">&quot;New repetition marker &#39;f&#39; occurs within an open repetition group&quot;</span> },</div>
-<div class="line">    { ERR_009_REP_OPEN, <span class="stringliteral">&quot;Unclosed repetition figure at the end of a measure&quot;</span> },</div>
-<div class="line">    { ERR_010_REP_UNUSED, <span class="stringliteral">&quot;Repeated figure never repeated&quot;</span> },</div>
-<div class="line">    { ERR_011_REP_NO_FIGURE, <span class="stringliteral">&quot;Repetition marker &#39;f&#39; not after a figure end&quot;</span> },</div>
-<div class="line">    { ERR_012_REP_NOT_BEGIN, <span class="stringliteral">&quot;Repetition marker &#39;i&#39; is not at the beginning of a measure&quot;</span> },</div>
-<div class="line">    { ERR_013_REP_NO_CONTENT, <span class="stringliteral">&quot;Repetition marker &#39;i&#39; encountered with no content to repeat&quot;</span> },</div>
-<div class="line">    { ERR_014_REP_NO_BARLINE, <span class="stringliteral">&quot;Repetition marker &#39;i&#39; is not followed by a barline&quot;</span> },</div>
-<div class="line">    { ERR_015_MREST_INVALID, <span class="stringliteral">&quot;Invalid (multi) measure rest &#39;=&#39; after a &#39;=&#39;&quot;</span> },</div>
-<div class="line">    { ERR_016_MREST_NUMBER, <span class="stringliteral">&quot;Invalid (multi) measure rest number starting with 0&quot;</span> },</div>
-<div class="line">    { ERR_017_TRILL_INVALID, <span class="stringliteral">&quot;Invalid &#39;t&#39; not after a note&quot;</span> },</div>
-<div class="line">    { ERR_018_FERMATA_NESTED, <span class="stringliteral">&quot;Invalid nested fermata character &#39;(&#39; after a &#39;(&#39;&quot;</span> },</div>
-<div class="line">    { ERR_019_ACCID_NO_NOTE, <span class="stringliteral">&quot;Missing note after an accidental&quot;</span> },</div>
-<div class="line">    { ERR_020_CHORD_NOTE_BEFORE, <span class="stringliteral">&quot;A chord marker &#39;^&#39; should be preceded by a note&quot;</span> },</div>
-<div class="line">    { ERR_021_CHORD_NOTE_AFTER, <span class="stringliteral">&quot;A chord marker &#39;^&#39; should be followed by a note&quot;</span> },</div>
-<div class="line">    { ERR_022_BEAM_MENSURAL, <span class="stringliteral">&quot;Beams are not supported with mensural notation&quot;</span> },</div>
-<div class="line">    { ERR_023_BEAM_NESTED, <span class="stringliteral">&quot;Nested beams are not supported&quot;</span> },</div>
-<div class="line">    { ERR_024_BEAM_CLOSING, <span class="stringliteral">&quot;Extraneous closing beam character&quot;</span> },</div>
-<div class="line">    { ERR_025_BEAM_OPEN, <span class="stringliteral">&quot;Beam is not closed at the end of a measure&quot;</span> },</div>
-<div class="line">    { ERR_026_GRACE_NESTED, <span class="stringliteral">&quot;Nested grace groups are not supported&quot;</span> },</div>
-<div class="line">    { ERR_027_GRACE_CLOSING, <span class="stringliteral">&quot;Extraneous closing grace group&quot;</span> },</div>
-<div class="line">    { ERR_028_GRACE_OPEN, <span class="stringliteral">&quot;Grace group is not closed at the end of a measure&quot;</span> },</div>
-<div class="line">    { ERR_029_GRACE_UNRESOLVED, <span class="stringliteral">&quot;Invalid &#39;q&#39; after an unresolved &#39;q&#39;&quot;</span> },</div>
-<div class="line">    { ERR_030_GRACE_DURATION, <span class="stringliteral">&quot;Duration should not be specified for acciaccatura &#39;g&#39;&quot;</span> },</div>
-<div class="line">    { ERR_031_GRACE_NO_NOTE, <span class="stringliteral">&quot;Grace note &#39;q&#39; or &#39;g&#39; is not followed by a note&quot;</span> },</div>
-<div class="line">    { ERR_032_TUPLET_NESTED, <span class="stringliteral">&quot;Nested tuplets are not supported&quot;</span> },</div>
-<div class="line">    { ERR_033_TUPLET_CLOSING, <span class="stringliteral">&quot;Extraneous closing tuplet &#39;)&#39;&quot;</span> },</div>
-<div class="line">    { ERR_034_TUPLET_NUM, <span class="stringliteral">&quot;Extraneous tuplet numerator marker &#39;;&#39;&quot;</span> },</div>
-<div class="line">    { ERR_035_TUPLET_OPEN, <span class="stringliteral">&quot;Tuplet is not closed at the end of a measure&quot;</span> },</div>
-<div class="line">    { ERR_036_TUPLET_NUM_NUMBER, <span class="stringliteral">&quot;Invalid number within tuplet numerator&quot;</span> },</div>
-<div class="line">    { ERR_037_TIE_PITCH, <span class="stringliteral">&quot;Invalid tie between two notes with mismatched octave and/or pitch&quot;</span> },</div>
-<div class="line">    { ERR_038_TIE_OPEN, <span class="stringliteral">&quot;Invalid tie &#39;+&#39; sign occuring when previous tie has not been closed&quot;</span> },</div>
-<div class="line">    { ERR_039_TIE_NO_NOTE, <span class="stringliteral">&quot;Tie &#39;+&#39; must be preceded by a note&quot;</span> },</div>
-<div class="line">    { ERR_040_HIERARCHY_INVALID, <span class="stringliteral">&quot;Invalid hierachy of elements &#39;%s&#39;&quot;</span> },</div>
-<div class="line">    { ERR_041_NESTING_INVALID, <span class="stringliteral">&quot;Invalid nesting of opening and closing tags &#39;%s&#39;&quot;</span> },</div>
-<div class="line">    { ERR_042_CLEF_INCOMPLETE, <span class="stringliteral">&quot;Incomplete clef cannot be parsed (Setting to G-2 if running in non-pedantic mode)&quot;</span> },</div>
-<div class="line">    { ERR_043_CLEF_INVALID_2ND, <span class="stringliteral">&quot;Unexpected second character in clef sign; must be either &#39;+&#39; or &#39;-&#39;&quot;</span> },</div>
-<div class="line">    { ERR_044_CLEF_MENS, <span class="stringliteral">&quot;Mixing mensural and non-mensural clefs&quot;</span> },</div>
-<div class="line">    { ERR_045_CLEF_INVALID_3RD, <span class="stringliteral">&quot;Unexpected third character in clef sign; must be a digit&quot;</span> },</div>
-<div class="line">    { ERR_046_CLEF_INVALID, <span class="stringliteral">&quot;Undefined clef: &#39;%s&#39;&quot;</span> },</div>
-<div class="line">    { ERR_047_TIMESIG_INCOMPLETE, <span class="stringliteral">&quot;Incomplete time signature cannot be parsed (Setting to 4/4 if running in non-pedantic mode)&quot;</span> },</div>
-<div class="line">    { ERR_048_TIMESIG_INVALID, <span class="stringliteral">&quot;Unsupported time signature: &#39;%s&#39;&quot;</span> },</div>
-<div class="line">    { ERR_049_TIMESIG_MENS, <span class="stringliteral">&quot;Mensuration content cannot be parsed (Setting to &#39;O&#39; if running in non-pedantic mode)&quot;</span> },</div>
-<div class="line">    { ERR_050_INVALID_CHAR, <span class="stringliteral">&quot;Invalid character(s) &#39;%s&#39;&quot;</span> },</div>
-<div class="line">    { ERR_051_BARLINE, <span class="stringliteral">&quot;Unsupported barline: &#39;%s&#39;&quot;</span> },</div>
-<div class="line">    { ERR_052_DURATION, <span class="stringliteral">&quot;Duration content cannot be parsed (Setting to quarter note if running in non-pedantic mode)&quot;</span> },</div>
-<div class="line">    { ERR_053_DURATION_MENS3, <span class="stringliteral">&quot;Duration &#39;3&#39; unsupported with mensural notation&quot;</span> },</div>
-<div class="line">    { ERR_054_DURATION_MENS5, <span class="stringliteral">&quot;Duration &#39;5&#39; unsupported with mensural notation&quot;</span> },</div>
-<div class="line">    { ERR_055_KEYSIG_CHANGE, <span class="stringliteral">&quot;Key signature change cannot occur more than once in a measure&quot;</span> },</div>
-<div class="line">    { ERR_056_TIMESIG_CHANGE, <span class="stringliteral">&quot;Time signature change cannot occur more than once in a measure&quot;</span> },</div>
-<div class="line">    { ERR_057_MENSUR_CHANGE, <span class="stringliteral">&quot;Mensur change cannot occur more than once in a measure&quot;</span> },</div>
-<div class="line">    { ERR_058_FERMATA_MREST, <span class="stringliteral">&quot;Fermata on measure rest with extraneous content &#39;%s&#39;&quot;</span> }</div>
+<div class="line">    { ERR_001_EMPTY, <span class="stringliteral">&quot;The input is empty&quot;</span> },</div>
+<div class="line">    { ERR_002_JSON_PARSE, <span class="stringliteral">&quot;The JSON input cannot be parsed.&quot;</span> },</div>
+<div class="line">    { ERR_003_JSON_KEY, <span class="stringliteral">&quot;There is no &#39;data&#39; key in the JSON input.&quot;</span> },</div>
+<div class="line">    { ERR_004_KEY_SPACE, <span class="stringliteral">&quot;A key signature change must be followed by a space.&quot;</span> },</div>
+<div class="line">    { ERR_005_CLEF_SPACE, <span class="stringliteral">&quot;A clef change must be followed by a space.&quot;</span> },</div>
+<div class="line">    { ERR_006_TIMESIG_SPACE, <span class="stringliteral">&quot;A time signature change must be followed by a space.&quot;</span> },</div>
+<div class="line">    { ERR_007_REP_EMPTY, <span class="stringliteral">&quot;The content of the repeated figure is missing.&quot;</span> },</div>
+<div class="line">    { ERR_008_REP_MARKER, <span class="stringliteral">&quot;The end of the repeated figure must be indicated with &#39;!&#39; before the &#39;f&#39;.&quot;</span> },</div>
+<div class="line">    { ERR_009_REP_OPEN, <span class="stringliteral">&quot;The repeated figure with &#39;!&#39; must be closed before the end of the measure.&quot;</span> },</div>
+<div class="line">    { ERR_010_REP_UNUSED, <span class="stringliteral">&quot;The figure marked for repetition has not been repeated.&quot;</span> },</div>
+<div class="line">    { ERR_011_REP_NO_FIGURE, <span class="stringliteral">&quot;The &#39;f&#39; must follow &#39;!&#39; for the figure to repeat.&quot;</span> },</div>
+<div class="line">    { ERR_012_REP_NOT_BEGIN, <span class="stringliteral">&quot;To repeat the bar, &#39;i&#39; must follow a bar line.&quot;</span> },</div>
+<div class="line">    { ERR_013_REP_NO_CONTENT, <span class="stringliteral">&quot;A repetition marker &#39;i&#39; is present with no content to repeat.&quot;</span> },</div>
+<div class="line">    { ERR_014_REP_NO_BARLINE, <span class="stringliteral">&quot;To repeat the bar, &#39;i&#39; must be followed by a bar line.&quot;</span> },</div>
+<div class="line">    { ERR_015_MREST_INVALID, <span class="stringliteral">&quot;A rest using &#39;=&#39; cannot be directly followed by another &#39;=&#39;.&quot;</span> },</div>
+<div class="line">    { ERR_016_MREST_NUMBER, <span class="stringliteral">&quot;A rest using &#39;=&#39; must be followed by a bar line or a number greater than 0.&quot;</span> },</div>
+<div class="line">    { ERR_017_TRILL_INVALID, <span class="stringliteral">&quot;A trill using &#39;t&#39; must directly follow the note it belongs to.&quot;</span> },</div>
+<div class="line">    { ERR_018_FERMATA_NESTED, <span class="stringliteral">&quot;A fermata &#39;(&#39; cannot be directly followed by another &#39;(&#39;.&quot;</span> },</div>
+<div class="line">    { ERR_019_ACCID_NO_NOTE, <span class="stringliteral">&quot;An accidental must be directly followed by a note.&quot;</span> },</div>
+<div class="line">    { ERR_020_CHORD_NOTE_BEFORE, <span class="stringliteral">&quot;To indicate a chord, a &#39;^&#39; must be preceded by a note.&quot;</span> },</div>
+<div class="line">    { ERR_021_CHORD_NOTE_AFTER, <span class="stringliteral">&quot;To indicate a chord, a &#39;^&#39; must be followed by a note.&quot;</span> },</div>
+<div class="line">    { ERR_022_BEAM_MENSURAL, <span class="stringliteral">&quot;Beams cannot be used with mensural notation.&quot;</span> },</div>
+<div class="line">    { ERR_023_BEAM_NESTED, <span class="stringliteral">&quot;A beam cannot be started with &#39;{&#39; before closing the previous one.&quot;</span> },</div>
+<div class="line">    { ERR_024_BEAM_CLOSING, <span class="stringliteral">&quot;An extra &#39;}&#39; to close a beam is present.&quot;</span> },</div>
+<div class="line">    { ERR_025_BEAM_OPEN, <span class="stringliteral">&quot;The beam must be closed with &#39;}&#39; before the end of the measure.&quot;</span> },</div>
+<div class="line">    { ERR_026_GRACE_NESTED, <span class="stringliteral">&quot;The appoggiatura must be closed with &#39;r&#39; before starting a new one.&quot;</span> },</div>
+<div class="line">    { ERR_027_GRACE_CLOSING, <span class="stringliteral">&quot;An extra &#39;r&#39; is present to close an appoggiatura&quot;</span> },</div>
+<div class="line">    { ERR_028_GRACE_OPEN, <span class="stringliteral">&quot;The appoggiatura must be closed with &#39;r&#39; before the end of the measure.&quot;</span> },</div>
+<div class="line">    { ERR_029_GRACE_UNRESOLVED, <span class="stringliteral">&quot;An appoggiatura cannot be started using &#39;q&#39; before completing the previous one.&quot;</span> },</div>
+<div class="line">    { ERR_030_GRACE_DURATION, <span class="stringliteral">&quot;No rhythmic value can be entered when using an acciaccatura with &#39;g&#39;.&quot;</span> },</div>
+<div class="line">    { ERR_031_GRACE_NO_NOTE, <span class="stringliteral">&quot;A grace note using &#39;g&#39; or &#39;q&#39; must be followed by a note.&quot;</span> },</div>
+<div class="line">    { ERR_032_TUPLET_NESTED, <span class="stringliteral">&quot;A special rhythm group cannot be started with &#39;(&#39; before closing the previous one.&quot;</span> },</div>
+<div class="line">    { ERR_033_TUPLET_CLOSING, <span class="stringliteral">&quot;An extra &#39;)&#39; to close a special rhythm group is present.&quot;</span> },</div>
+<div class="line">    { ERR_034_TUPLET_NUM, <span class="stringliteral">&quot;A &#39;;&#39; is present outside of a special rhythm group.&quot;</span> },</div>
+<div class="line">    { ERR_035_TUPLET_OPEN, <span class="stringliteral">&quot;The special rhythm group or fermata must be closed with &#39;)&#39; before the end of the measure.&quot;</span> },</div>
+<div class="line">    { ERR_036_TUPLET_NUM_NUMBER, <span class="stringliteral">&quot;A number must appear between the &#39;;&#39; and &#39;)&#39; in the special rhythm group.&quot;</span> },</div>
+<div class="line">    { ERR_037_TIE_PITCH, <span class="stringliteral">&quot;A tie using &#39;+&#39; can only connect two notes of the same octave and pitch.&quot;</span> },</div>
+<div class="line">    { ERR_038_TIE_OPEN, <span class="stringliteral">&quot;A tie using &#39;+&#39; must be follow by a note.&quot;</span> },</div>
+<div class="line">    { ERR_039_TIE_NO_NOTE, <span class="stringliteral">&quot;A tie using &#39;+&#39; must be preceded by a note.&quot;</span> },</div>
+<div class="line">    { ERR_040_HIERARCHY_INVALID, <span class="stringliteral">&quot;The resulting hierachy of elements for &#39;%s&#39; is invalid.&quot;</span> },</div>
+<div class="line">    { ERR_041_NESTING_INVALID, <span class="stringliteral">&quot;The nesting of opening and closing tags for &#39;%s&#39; is invalid.&quot;</span> },</div>
+<div class="line">    { ERR_042_CLEF_INCOMPLETE, <span class="stringliteral">&quot;The clef is not complete (Setting to G-2 if running in non-pedantic mode).&quot;</span> },</div>
+<div class="line">    { ERR_043_CLEF_INVALID_2ND, <span class="stringliteral">&quot;The second character in the clef sign must be either &#39;+&#39; or &#39;-&#39;.&quot;</span> },</div>
+<div class="line">    { ERR_044_CLEF_MENS, <span class="stringliteral">&quot;Mensural and non-mensural clefs cannot be mixed.&quot;</span> },</div>
+<div class="line">    { ERR_045_CLEF_INVALID_3RD, <span class="stringliteral">&quot;The third character in the clef sign must be a digit.&quot;</span> },</div>
+<div class="line">    { ERR_046_CLEF_INVALID, <span class="stringliteral">&quot;The clef &#39;%s&#39; is invalid.&quot;</span> },</div>
+<div class="line">    { ERR_047_TIMESIG_INCOMPLETE, <span class="stringliteral">&quot;The time signature cannot be parsed (Setting to 4/4 if running in non-pedantic mode).&quot;</span> },</div>
+<div class="line">    { ERR_048_TIMESIG_INVALID, <span class="stringliteral">&quot;The time signature &#39;%s&#39; is invalid.&quot;</span> },</div>
+<div class="line">    { ERR_049_TIMESIG_MENS, <span class="stringliteral">&quot;The mensur sign content cannot be parsed (Setting to &#39;O&#39; if running in non-pedantic mode).&quot;</span> },</div>
+<div class="line">    { ERR_050_INVALID_CHAR, <span class="stringliteral">&quot;The character(s) &#39;%s&#39; are invalid.&quot;</span> },</div>
+<div class="line">    { ERR_051_BARLINE, <span class="stringliteral">&quot;The barline &#39;%s&#39; is invalid.&quot;</span> },</div>
+<div class="line">    { ERR_052_DURATION, <span class="stringliteral">&quot;The duration content cannot be parsed (Setting to quarter note if running in non-pedantic mode).&quot;</span> },</div>
+<div class="line">    { ERR_053_DURATION_MENS3, <span class="stringliteral">&quot;The duration cannot be &#39;3&#39; with mensural notation.&quot;</span> },</div>
+<div class="line">    { ERR_054_DURATION_MENS5, <span class="stringliteral">&quot;The duration cannot be &#39;5&#39; with mensural notation.&quot;</span> },</div>
+<div class="line">    { ERR_055_KEYSIG_CHANGE, <span class="stringliteral">&quot;The key signature cannot be changed more than once in a measure.&quot;</span> },</div>
+<div class="line">    { ERR_056_TIMESIG_CHANGE, <span class="stringliteral">&quot;The time signature cannot be changed more than once in a measure.&quot;</span> },</div>
+<div class="line">    { ERR_057_MENSUR_CHANGE, <span class="stringliteral">&quot;The mensur sign cannot be changed more than once in a measure.&quot;</span> },</div>
+<div class="line">    { ERR_058_FERMATA_MREST, <span class="stringliteral">&quot;A fermata on measure with extra &#39;%s&#39; is invalid.&quot;</span> }</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -259,7 +259,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_outformat</b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_p_a_e_input.html">PAEInput</a></li>
-    <li class="footer">Generated on Thu Dec 16 2021 17:12:45 for Verovio by
+    <li class="footer">Generated on Mon Dec 20 2021 10:49:20 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
