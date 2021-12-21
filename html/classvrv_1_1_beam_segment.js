@@ -6,6 +6,8 @@ var classvrv_1_1_beam_segment =
     [ "ClearCoordRefs", "classvrv_1_1_beam_segment.html#a29c1c949f0d813b5ffc8303515bc804f", null ],
     [ "GetAdjacentElementsDuration", "classvrv_1_1_beam_segment.html#af13e9a7dcfa6b57fd10e31f68b0384ec", null ],
     [ "GetElementCoordRefs", "classvrv_1_1_beam_segment.html#afdd3362ebfc878b981e2f3f8db7ed970", null ],
+    [ "GetStartingX", "classvrv_1_1_beam_segment.html#aa43df64644702d318671474f55b0b964", null ],
+    [ "GetStartingY", "classvrv_1_1_beam_segment.html#ae5a38316d6505c452c70d045f67c60d0", null ],
     [ "InitCoordRefs", "classvrv_1_1_beam_segment.html#aae2d6f202398b11757729b803cad00fd", null ],
     [ "Reset", "classvrv_1_1_beam_segment.html#ae45293135277575fd4d828312f1c700c", null ],
     [ "m_beamElementCoordRefs", "classvrv_1_1_beam_segment.html#a2f8cd54b0cdac4e3db644a8c3bd22e19", null ],
@@ -16,8 +18,6 @@ var classvrv_1_1_beam_segment =
     [ "m_ledgerLinesAbove", "classvrv_1_1_beam_segment.html#a2e6c17db9df3871dfc055565e062353f", null ],
     [ "m_ledgerLinesBelow", "classvrv_1_1_beam_segment.html#ac9d89a751d2ffd923a6d9435770f6935", null ],
     [ "m_nbNotesOrChords", "classvrv_1_1_beam_segment.html#ac8f157a7767baa24cd20744e8aef70e5", null ],
-    [ "m_startingX", "classvrv_1_1_beam_segment.html#aa1f250180ef6b9763fcbd4abf4ab3931", null ],
-    [ "m_startingY", "classvrv_1_1_beam_segment.html#a1f63d1613a1a68aab6c2988b016b4980", null ],
     [ "m_uniformStemLength", "classvrv_1_1_beam_segment.html#a1787d8320f76e0afe1a7ae84c90c174c", null ],
     [ "m_verticalCenter", "classvrv_1_1_beam_segment.html#a15b467b4275e576f076ee509beac817d", null ],
     [ "m_weightedPlace", "classvrv_1_1_beam_segment.html#a4a6999bc33982a005f771ac051ad60de", null ]
