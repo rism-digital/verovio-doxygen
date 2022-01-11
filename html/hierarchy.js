@@ -52,6 +52,9 @@ var hierarchy =
     [ "AttBeamSecondary", null, [
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ]
     ] ],
+    [ "AttBeatRptLog", null, [
+      [ "vrv::BeatRpt", "classvrv_1_1_beat_rpt.html", null ]
+    ] ],
     [ "AttBeatRptVis", null, [
       [ "vrv::BeatRpt", "classvrv_1_1_beat_rpt.html", null ]
     ] ],
