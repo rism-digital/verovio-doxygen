@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"staff_8h_source.html":[3,0,142],
 "staffdef_8h_source.html":[3,0,143],
 "staffgrp_8h_source.html":[3,0,144],
 "structvrv_1_1_closest_b_b.html":[2,0,0,75],

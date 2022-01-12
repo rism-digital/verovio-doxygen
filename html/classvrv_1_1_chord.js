@@ -42,6 +42,7 @@ var classvrv_1_1_chord =
     [ "IsVisible", "classvrv_1_1_chord.html#a502c5d2649e8a742254db09135446eec", null ],
     [ "PositionInChord", "classvrv_1_1_chord.html#ad9046f9798eab922478f13c533e5e22f", null ],
     [ "PrepareLayerElementParts", "classvrv_1_1_chord.html#a15242ceeb9c93c0580f91e113b1b7995", null ],
+    [ "PrepareLyrics", "classvrv_1_1_chord.html#a36150519804262324dbbc0e2a297b292", null ],
     [ "Reset", "classvrv_1_1_chord.html#a4b05be56b85202f76ab861836f8c04c2", null ],
     [ "ResetAccidList", "classvrv_1_1_chord.html#a15da29444f2bc2ec20cd87f28b012fe5", null ],
     [ "ResetDrawing", "classvrv_1_1_chord.html#ae425da90c5b322462d29beb9c5723f68", null ],
