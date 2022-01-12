@@ -4,10 +4,10 @@
     <compoundname>vrv::MusicXmlInput</compoundname>
     <basecompoundref refid="classvrv_1_1_input" prot="public" virt="non-virtual">vrv::Input</basecompoundref>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a46b8f8c24e987e316fb6b9821a5e2331" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a3e25b87b088d43f3d380d769ce3b71ff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::MusicXmlInput::ReadMusicXmlPart</definition>
-        <argsstring>(pugi::xml_node node, Section *section, int nbStaves, int staffOffset)</argsstring>
+        <argsstring>(pugi::xml_node node, Section *section, short int nbStaves, const short int staffOffset)</argsstring>
         <name>ReadMusicXmlPart</name>
         <param>
           <type>pugi::xml_node</type>
@@ -18,11 +18,11 @@
           <declname>section</declname>
         </param>
         <param>
-          <type>int</type>
+          <type>short int</type>
           <declname>nbStaves</declname>
         </param>
         <param>
-          <type>int</type>
+          <type>const short int</type>
           <declname>staffOffset</declname>
         </param>
         <briefdescription>
@@ -33,10 +33,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="194" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a32c0eaa3bd0264ec29988235d4969fef" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1ac7eb7f0a24453bc32f3ea64d88294378" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::MusicXmlInput::ReadMusicXmlMeasure</definition>
-        <argsstring>(pugi::xml_node node, Section *section, Measure *measure, int nbStaves, int staffOffset, int index)</argsstring>
+        <argsstring>(pugi::xml_node node, Section *section, Measure *measure, short int nbStaves, const short int staffOffset, int index)</argsstring>
         <name>ReadMusicXmlMeasure</name>
         <param>
           <type>pugi::xml_node</type>
@@ -51,11 +51,11 @@
           <declname>measure</declname>
         </param>
         <param>
-          <type>int</type>
+          <type>short int</type>
           <declname>nbStaves</declname>
         </param>
         <param>
-          <type>int</type>
+          <type>const short int</type>
           <declname>staffOffset</declname>
         </param>
         <param>
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="209" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="210" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a224e1f6def5159db23f69db7fdbc19fa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="210" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="211" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a3e5a353c3cb462ee87372957f077ba0c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -146,12 +146,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="211" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="212" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a3be4a93d5706507d88e3e1f150a50bdf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a7490838ee89e3993d2fdf149e7f33f2d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::MusicXmlInput::ReadMusicXmlDirection</definition>
-        <argsstring>(pugi::xml_node, Measure *measure, const std::string &amp;measureNum, const int staffOffset)</argsstring>
+        <argsstring>(pugi::xml_node, Measure *measure, const std::string &amp;measureNum, const short int staffOffset)</argsstring>
         <name>ReadMusicXmlDirection</name>
         <param>
           <type>pugi::xml_node</type>
@@ -165,7 +165,7 @@
           <declname>measureNum</declname>
         </param>
         <param>
-          <type>const int</type>
+          <type>const short int</type>
           <declname>staffOffset</declname>
         </param>
         <briefdescription>
@@ -174,7 +174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="212" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="213" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a3fd3306147f32be7f03953e3f247a463" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="213" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="215" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a0a1fcff59c478d9dde27e1c2c6ecc66a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -222,7 +222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="214" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="216" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a36d0dc466de976a70e82dd28b3b2579d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -246,12 +246,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="215" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="217" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1afa1759eadd036edd1cfc41368cbcc71a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a6b22037cea47c1a24d75c1dc37516906" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::MusicXmlInput::ReadMusicXmlNote</definition>
-        <argsstring>(pugi::xml_node, Measure *measure, const std::string &amp;measureNum, const int staffOffset, Section *section)</argsstring>
+        <argsstring>(pugi::xml_node, Measure *measure, const std::string &amp;measureNum, const short int staffOffset, Section *section)</argsstring>
         <name>ReadMusicXmlNote</name>
         <param>
           <type>pugi::xml_node</type>
@@ -265,7 +265,7 @@
           <declname>measureNum</declname>
         </param>
         <param>
-          <type>const int</type>
+          <type>const short int</type>
           <declname>staffOffset</declname>
         </param>
         <param>
@@ -278,7 +278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="216" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="218" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a396019a3ffda20c80ca434f31da1cfeb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -298,7 +298,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="218" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="220" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a8d7e8c441790b0dc8dcca2fef43b78da" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -323,7 +323,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="219" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="221" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a434f2cb69c8521e5c9fe843357ec9793" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -348,7 +348,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="220" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="222" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a93d4e8e72021a096f44db602516ec8c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -373,7 +373,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="221" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="223" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a8d6b6f8c4e7c1dbc9a735aa25c4857e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -394,7 +394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="222" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="224" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a817f21d5d70c8b392f075c7ca7fbd985" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -423,7 +423,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="223" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="225" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -458,7 +458,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="246" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="248" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1aa30dd6f547d30452965cb6cc26bfe062" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -487,7 +487,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="247" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="249" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -506,7 +506,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="282" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="284" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a33cdcfefd455718e535176d316b2a68b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classvrv_1_1_key_sig" kindref="compound">KeySig</ref> *</type>
@@ -523,7 +523,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="283" column="12"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="285" column="12"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -550,7 +550,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="297" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="299" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a6a6a01a263e0092c0b7a1630cf65da91" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -571,7 +571,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="298" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="300" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a9c345cec8d3675856c380ea0c9022379" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -592,7 +592,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="299" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="301" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -611,7 +611,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="306" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="308" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -630,7 +630,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="313" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="315" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a100fea4bd408f879de6007423ec96b24" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -651,7 +651,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="314" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="316" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -674,7 +674,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="324" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="326" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a330fc2e506889d23a2b78c7b39b8145f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -691,19 +691,19 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="325" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="327" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1aef2d6f8c7a6bea106ff6c4d7ae2f6252" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1ae0d34d87629c035478eb8dddaec5330d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::MusicXmlInput::OpenSlur</definition>
-        <argsstring>(Measure *measure, int number, Slur *slur)</argsstring>
+        <argsstring>(Measure *measure, short int number, Slur *slur)</argsstring>
         <name>OpenSlur</name>
         <param>
           <type><ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
           <declname>measure</declname>
         </param>
         <param>
-          <type>int</type>
+          <type>short int</type>
           <declname>number</declname>
         </param>
         <param>
@@ -716,19 +716,19 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="326" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="328" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a49508234aa8dcbbbf68cf0a674621e38" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a81b7271cfef7f74dcbfb1860ebcef6bf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::MusicXmlInput::CloseSlur</definition>
-        <argsstring>(Measure *measure, int number, LayerElement *element)</argsstring>
+        <argsstring>(Measure *measure, short int number, LayerElement *element)</argsstring>
         <name>CloseSlur</name>
         <param>
           <type><ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
           <declname>measure</declname>
         </param>
         <param>
-          <type>int</type>
+          <type>short int</type>
           <declname>number</declname>
         </param>
         <param>
@@ -741,7 +741,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="327" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="329" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -764,7 +764,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="359" column="15"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="361" column="15"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -783,7 +783,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="367" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="369" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -802,7 +802,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="374" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="376" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -825,7 +825,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="381" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="383" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a93d8c0a917cf3be62cabd78f0db44690" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -846,7 +846,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="382" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="384" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -865,7 +865,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="389" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="391" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -884,7 +884,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="396" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="398" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -907,7 +907,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="403" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="405" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -926,7 +926,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="410" column="36"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="412" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a3b06ca4fa145f821d9138bfb5e376034" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>data_ACCIDENTAL_GESTURAL</type>
@@ -943,7 +943,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="411" column="37"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="413" column="37"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1ae6924513006b133ebb87c72dc785a111" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>data_ARTICULATION</type>
@@ -960,7 +960,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="412" column="30"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="414" column="30"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a63ad04d9c43850bbbf4ef6d092e5bae3" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>data_BARRENDITION</type>
@@ -981,7 +981,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="413" column="30"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="415" column="30"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a9f1300a933b5b531234f0be02e0a8426" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>data_BOOLEAN</type>
@@ -998,7 +998,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="414" column="25"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="416" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a2858379b11eefe50c9da252ed1ffc43c" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacevrv_1a2bd8f760fccdf76e2f41894ca0431d4e" kindref="member">data_DURATION</ref></type>
@@ -1015,7 +1015,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="415" column="26"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="417" column="26"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a0e7241f442f5718ab98dc30a6fce5448" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>data_HEADSHAPE</type>
@@ -1032,7 +1032,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="416" column="27"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="418" column="27"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1aa261287e35c392aa20b3c743836609f7" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>data_LINESTARTENDSYMBOL</type>
@@ -1049,7 +1049,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="417" column="36"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="419" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a46d5b77231d1326b213099e8bc98942c" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacevrv_1a67e112c2e04934448a03c3c57dd46c69" kindref="member">data_MIDIVALUE</ref></type>
@@ -1066,7 +1066,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="418" column="27"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="420" column="27"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a7952b96bd43e2e91dd12c2ae1313bd46" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacevrv_1a8a19df71e38b10ca359d0052d1fdba70" kindref="member">data_PITCHNAME</ref></type>
@@ -1083,7 +1083,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="419" column="27"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="421" column="27"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1ad719befd86f06abd376e3ffe9dd49a06" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>data_TEXTRENDITION</type>
@@ -1100,7 +1100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="420" column="31"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="422" column="31"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a978f8ec1281a4820300215672d3a3a7a" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>curvature_CURVEDIR</type>
@@ -1117,7 +1117,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="421" column="31"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="423" column="31"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a865d89f94fe45219364e7bef94414e3b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>fermataVis_SHAPE</type>
@@ -1134,7 +1134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="422" column="29"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="424" column="29"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a9104f53db17fabcb5036c5593afd3344" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>pedalLog_DIR</type>
@@ -1151,7 +1151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="423" column="25"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="425" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a6ea5938027ad28bb016ef12693075d09" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>tupletVis_NUMFORMAT</type>
@@ -1168,7 +1168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="424" column="32"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="426" column="32"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1abec993b4e28fdb7d7321592745857818" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::wstring</type>
@@ -1185,7 +1185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="425" column="25"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="427" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1ab1f724ca533564462038616e06b30361" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1207,7 +1207,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="426" column="24"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="428" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1aa81ea592262d045a34fa0b889c523fa5" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1224,7 +1224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="427" column="24"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="429" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1ab21ca10e23b37dfed8860be571fbf70d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1241,7 +1241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="428" column="24"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="430" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1af2e1a5c2c54312350ad3f6d4f1a18873" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1258,7 +1258,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="429" column="24"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="431" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a8062abef0fad9b19399e64c2d16fc61d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1275,7 +1275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="430" column="24"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="432" column="24"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -1290,7 +1290,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="435" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="435" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="437" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="437" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a0c03c0e5920800dbc6f32de6c264d8e9" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -1304,7 +1304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="437" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="437" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="439" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="439" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a70af98ef677e3cbf0c2060fefdfcb0fe" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -1318,7 +1318,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="439" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="439" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="441" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="441" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a4253bbebaa6faef7d0c026a11c8dd104" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -1332,7 +1332,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="441" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="441" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="443" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="443" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a8057b506a4d7ec7544906f2ac76ce963" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -1346,7 +1346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="443" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="443" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="445" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="445" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1aa0a1b37d46759ff15b47fab8c7f612d0" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -1360,7 +1360,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="445" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="445" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="447" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="447" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1ab9f8fbf7dfaa9465429b99926479b2e4" prot="private" static="no" mutable="no">
         <type>std::vector&lt; int &gt;</type>
@@ -1374,7 +1374,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="447" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="447" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="449" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="449" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a9f13a0f0ecd663ce3d0ec0dae234a662" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -1388,7 +1388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="448" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="448" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="450" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="450" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a8bd33ebd5f7a23e2e021f923160a49be" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_label" kindref="compound">Label</ref> *</type>
@@ -1402,7 +1402,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="450" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="450" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="452" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="452" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1ab0002125d5d57d40af2cff78783345a3" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_label_abbr" kindref="compound">LabelAbbr</ref> *</type>
@@ -1416,7 +1416,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="451" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="451" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="453" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="453" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1abc6ef9c3ef0c75a5a96172063fb1cf5b" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_instr_def" kindref="compound">InstrDef</ref> *</type>
@@ -1430,7 +1430,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="452" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="452" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="454" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="454" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a4f79faf67c9c51ca19398212d68b07e7" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -1443,7 +1443,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="454" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="454" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="456" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="456" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1ae35ffeeeb609dd8a2d29f8ee57c17eb8" prot="private" static="no" mutable="no">
         <type>std::map&lt; <ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *, std::vector&lt; <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> * &gt; &gt;</type>
@@ -1456,7 +1456,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="456" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="456" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="458" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="458" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1ad54af4a288f725239ec2947673dc66ee" prot="private" static="no" mutable="no">
         <type>std::map&lt; <ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *, int &gt;</type>
@@ -1469,7 +1469,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="458" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="458" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="460" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="460" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a6b4ee5b24d3a32b98254e63cafc7a1b9" prot="private" static="no" mutable="no">
         <type>std::map&lt; <ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *, std::multimap&lt; int, <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> * &gt; &gt;</type>
@@ -1482,7 +1482,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="459" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="459" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="461" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="461" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a0d752c598856b0674654529acf4bcb96" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
@@ -1496,7 +1496,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="461" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="461" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="463" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="463" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1af53f4780b7bb3864beccedc0e31265ff" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
@@ -1510,7 +1510,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="463" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="463" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="465" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="465" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a70ed0f8e963db0db174fea4997d16cc1" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -1524,7 +1524,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="464" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="464" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="466" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="466" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a0524e91f0263b5f3a383866ee3c3ce4c" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::pair&lt; <ref refid="classvrv_1_1_slur" kindref="compound">Slur</ref> *, musicxml::OpenSlur &gt; &gt;</type>
@@ -1537,7 +1537,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="466" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="466" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="468" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="468" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1abba02d303cceff3dd6a1e3eb3b9c98de" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::pair&lt; <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *, musicxml::CloseSlur &gt; &gt;</type>
@@ -1550,7 +1550,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="468" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="468" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="470" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="470" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1af49d1e0cb9a47642b9deafbd6a6b97d4" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::pair&lt; <ref refid="classvrv_1_1_tie" kindref="compound">Tie</ref> *, <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> * &gt; &gt;</type>
@@ -1563,7 +1563,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="470" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="470" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="472" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="472" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a7b477b35471784c8f0265511beac7bf8" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> * &gt;</type>
@@ -1576,7 +1576,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="472" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="472" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="474" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="474" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1aaac2c3c3c83b808c85fa0dc20110bf8a" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::pair&lt; <ref refid="classvrv_1_1_hairpin" kindref="compound">Hairpin</ref> *, musicxml::OpenSpanner &gt; &gt;</type>
@@ -1589,7 +1589,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="474" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="474" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="476" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="476" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a23eddf8dbce523cce1ff126c9ed2f856" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::tuple&lt; int, double, musicxml::OpenSpanner &gt; &gt;</type>
@@ -1602,7 +1602,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="477" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="477" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="479" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="479" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1ae81a21d760894ccf3806d0858f220ba1" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::pair&lt; <ref refid="classvrv_1_1_bracket_span" kindref="compound">BracketSpan</ref> *, musicxml::OpenSpanner &gt; &gt;</type>
@@ -1615,7 +1615,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="478" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="478" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="480" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="480" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a9488e25e70515cb064b889ae9a35ecc4" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::pair&lt; <ref refid="classvrv_1_1_trill" kindref="compound">Trill</ref> *, musicxml::OpenSpanner &gt; &gt;</type>
@@ -1628,7 +1628,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="479" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="479" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="481" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="481" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a905c022904e56d30fdbba8972f196900" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::pair&lt; std::vector&lt; <ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> * &gt;, musicxml::EndingInfo &gt; &gt;</type>
@@ -1641,7 +1641,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="481" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="481" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="483" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="483" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a43b065c93eb2c401cb781a69ff503dcb" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::pair&lt; <ref refid="classvrv_1_1_control_element" kindref="compound">ControlElement</ref> *, musicxml::OpenDashes &gt; &gt;</type>
@@ -1654,7 +1654,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="483" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="483" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="485" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="485" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1ad649056fe80cda91233967e0a7f4c831" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_dir" kindref="compound">Dir</ref> * &gt;</type>
@@ -1667,7 +1667,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="485" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="485" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="487" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="487" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a496d6f5300f269f61e07b6badbac31b5" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_dynam" kindref="compound">Dynam</ref> * &gt;</type>
@@ -1680,7 +1680,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="486" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="486" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="488" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="488" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a47bd4af6b0d6512866662cb991106703" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_gliss" kindref="compound">Gliss</ref> * &gt;</type>
@@ -1693,7 +1693,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="487" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="487" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="489" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="489" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a85f4fa488f5c69ce064290feb1a8b7eb" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_harm" kindref="compound">Harm</ref> * &gt;</type>
@@ -1706,7 +1706,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="488" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="488" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="490" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="490" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1aac6ef17822e9a6114812268a2716c39b" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_octave" kindref="compound">Octave</ref> * &gt;</type>
@@ -1719,7 +1719,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="489" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="489" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="491" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="491" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a6d5452669d83ac4b22ed51370a3dcb10" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_pedal" kindref="compound">Pedal</ref> * &gt;</type>
@@ -1732,7 +1732,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="490" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="490" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="492" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="492" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a8cd3495353f5b1b669845211d070c019" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_tempo" kindref="compound">Tempo</ref> * &gt;</type>
@@ -1745,7 +1745,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="491" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="491" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="493" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="493" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a4663eab885248d0cf41b975def917d3d" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::pair&lt; std::string, <ref refid="classvrv_1_1_control_element" kindref="compound">ControlElement</ref> * &gt; &gt;</type>
@@ -1758,7 +1758,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="496" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="496" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="498" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="498" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a3df71381adfa40014c5368ecb4519ba5" prot="private" static="no" mutable="no">
         <type>std::queue&lt; musicxml::ClefChange &gt;</type>
@@ -1771,7 +1771,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="498" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="498" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="500" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="500" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a78aca75c51a3f824db94cf05486c6837" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::pair&lt; <ref refid="classvrv_1_1_arpeg" kindref="compound">Arpeg</ref> *, musicxml::OpenArpeggio &gt; &gt;</type>
@@ -1784,7 +1784,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="500" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="500" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="502" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="502" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1abab1e77a05342059c7dd29dc68a1b8fb" prot="private" static="no" mutable="no">
         <type>std::map&lt; <ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *, int &gt;</type>
@@ -1797,7 +1797,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="502" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="502" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="504" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="504" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a98b9a1c93635bc5d21fea4b74d7c6f86" prot="private" static="no" mutable="no">
         <type>std::map&lt; int, int &gt;</type>
@@ -1810,7 +1810,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="504" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="504" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="506" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="506" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -1898,10 +1898,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="188" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a90f51883d9acbea30e439d664e597dba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int vrv::MusicXmlInput::ReadMusicXmlPartAttributesAsStaffDef</definition>
-        <argsstring>(pugi::xml_node node, StaffGrp *staffGrp, int staffOffset)</argsstring>
+      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a92673e0a981d6e848f6b000327f5b8e9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>short int</type>
+        <definition>short int vrv::MusicXmlInput::ReadMusicXmlPartAttributesAsStaffDef</definition>
+        <argsstring>(pugi::xml_node node, StaffGrp *staffGrp, const short int staffOffset)</argsstring>
         <name>ReadMusicXmlPartAttributesAsStaffDef</name>
         <param>
           <type>pugi::xml_node</type>
@@ -1912,7 +1912,7 @@
           <declname>staffGrp</declname>
         </param>
         <param>
-          <type>int</type>
+          <type>const short int</type>
           <declname>staffOffset</declname>
         </param>
         <briefdescription>
@@ -1921,7 +1921,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="203" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="203" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a9271ae23823792da12f8a4d051db7159" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1939,7 +1939,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="229" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="231" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a3831ba95070ce1c18cfc61d7bc588518" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1961,7 +1961,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="234" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="236" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a808e161183af06d739a53899af1d30b9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1991,7 +1991,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="239" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="241" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a20dea6b4f3e55fe60f26728d00731bb3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2016,7 +2016,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="255" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="257" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a6a6477943252070a302ea05b36868242" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2042,7 +2042,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="260" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="262" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a9550ddfee9414cfe8861da273562f380" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
@@ -2063,15 +2063,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="265" column="11"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="267" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a2de52a9c304e7377fdfdbcb434c048c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a71d3de045b3930ce9725caf1cfbdd6c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
         <definition>Layer* vrv::MusicXmlInput::SelectLayer</definition>
-        <argsstring>(int staffNb, Measure *measure)</argsstring>
+        <argsstring>(short int staffNb, Measure *measure)</argsstring>
         <name>SelectLayer</name>
         <param>
-          <type>int</type>
+          <type>short int</type>
           <declname>staffNb</declname>
         </param>
         <param>
@@ -2084,15 +2084,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="270" column="11"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="272" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1aedb8f18c3b08e22ea6281fc70ab25abb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1ace8326bce372093e12c51bb734e0cd98" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
         <definition>Layer* vrv::MusicXmlInput::SelectLayer</definition>
-        <argsstring>(int layerNb, Staff *staff)</argsstring>
+        <argsstring>(short int layerNb, Staff *staff)</argsstring>
         <name>SelectLayer</name>
         <param>
-          <type>int</type>
+          <type>short int</type>
           <declname>layerNb</declname>
         </param>
         <param>
@@ -2105,7 +2105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="276" column="11"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="278" column="11"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a5fbe5273544a47af5f1d5ddddb3ed2c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2126,7 +2126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="291" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="293" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1af4533a1322673a39fd0b14414cf6baa3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -2143,7 +2143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="335" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="337" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1af6f715e94a7b6af283630fa6cd660438" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2164,7 +2164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="336" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="338" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a7c5b01443404c494ec846d9f3e48966f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -2181,7 +2181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="337" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="339" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a9fde4961d07a159bbc847f0008c94505" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2202,7 +2202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="338" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="340" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1af444dbcd16ec5e8b54f45d54f87e581b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2223,7 +2223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="345" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="347" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a9078623e6e2d245160cc7eb4aced6c63" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2240,7 +2240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="352" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="354" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -2297,12 +2297,12 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="170" column="33" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="170" bodyend="507"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="170" column="33" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="170" bodyend="509"/>
     <listofallmembers>
       <member refid="classvrv_1_1_music_xml_input_1a3831ba95070ce1c18cfc61d7bc588518" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>AddClefs</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a6a6477943252070a302ea05b36868242" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>AddLayerElement</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a20dea6b4f3e55fe60f26728d00731bb3" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>AddMeasure</name></member>
-      <member refid="classvrv_1_1_music_xml_input_1a49508234aa8dcbbbf68cf0a674621e38" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>CloseSlur</name></member>
+      <member refid="classvrv_1_1_music_xml_input_1a81b7271cfef7f74dcbfb1860ebcef6bf" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>CloseSlur</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a330fc2e506889d23a2b78c7b39b8145f" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>CloseTie</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a346610d34ac7217aad1ddfdcd5b7e6a7" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ConvertAccidentalToAccid</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a3b06ca4fa145f821d9138bfb5e376034" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ConvertAlterToAccid</name></member>
@@ -2392,7 +2392,7 @@
       <member refid="classvrv_1_1_music_xml_input_1a9488e25e70515cb064b889ae9a35ecc4" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>m_trillStack</name></member>
       <member refid="classvrv_1_1_music_xml_input_1aceb2632ff8c6a962087f8f768f20f355" prot="public" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>MusicXmlInput</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a1e821b4981055c6e6cac4c17b6bcdf55" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>NotInEndingStack</name></member>
-      <member refid="classvrv_1_1_music_xml_input_1aef2d6f8c7a6bea106ff6c4d7ae2f6252" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>OpenSlur</name></member>
+      <member refid="classvrv_1_1_music_xml_input_1ae0d34d87629c035478eb8dddaec5330d" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>OpenSlur</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a5ad86def603d6695716b1bac13187184" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>OpenTie</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a9fde4961d07a159bbc847f0008c94505" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>PrintMetronome</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a9271ae23823792da12f8a4d051db7159" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ProcessClefChangeQueue</name></member>
@@ -2402,23 +2402,23 @@
       <member refid="classvrv_1_1_music_xml_input_1a3e5a353c3cb462ee87372957f077ba0c" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlBarLine</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a8d7e8c441790b0dc8dcca2fef43b78da" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlBeamsAndTuplets</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a93d4e8e72021a096f44db602516ec8c6" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlBeamStart</name></member>
-      <member refid="classvrv_1_1_music_xml_input_1a3be4a93d5706507d88e3e1f150a50bdf" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlDirection</name></member>
+      <member refid="classvrv_1_1_music_xml_input_1a7490838ee89e3993d2fdf149e7f33f2d" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlDirection</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a3fd3306147f32be7f03953e3f247a463" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlFigures</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a0a1fcff59c478d9dde27e1c2c6ecc66a" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlForward</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a36d0dc466de976a70e82dd28b3b2579d" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlHarmony</name></member>
-      <member refid="classvrv_1_1_music_xml_input_1a32c0eaa3bd0264ec29988235d4969fef" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlMeasure</name></member>
+      <member refid="classvrv_1_1_music_xml_input_1ac7eb7f0a24453bc32f3ea64d88294378" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlMeasure</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a8d6b6f8c4e7c1dbc9a735aa25c4857e4" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXMLMeterSig</name></member>
-      <member refid="classvrv_1_1_music_xml_input_1afa1759eadd036edd1cfc41368cbcc71a" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlNote</name></member>
-      <member refid="classvrv_1_1_music_xml_input_1a46b8f8c24e987e316fb6b9821a5e2331" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlPart</name></member>
-      <member refid="classvrv_1_1_music_xml_input_1a90f51883d9acbea30e439d664e597dba" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlPartAttributesAsStaffDef</name></member>
+      <member refid="classvrv_1_1_music_xml_input_1a6b22037cea47c1a24d75c1dc37516906" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlNote</name></member>
+      <member refid="classvrv_1_1_music_xml_input_1a3e25b87b088d43f3d380d769ce3b71ff" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlPart</name></member>
+      <member refid="classvrv_1_1_music_xml_input_1a92673e0a981d6e848f6b000327f5b8e9" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlPartAttributesAsStaffDef</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a396019a3ffda20c80ca434f31da1cfeb" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlPrint</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a817f21d5d70c8b392f075c7ca7fbd985" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlTies</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a50ee5f2b7099feec8e3ebcbfa4af2bca" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlTitle</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a434f2cb69c8521e5c9fe843357ec9793" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ReadMusicXmlTupletStart</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a5fbe5273544a47af5f1d5ddddb3ed2c6" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>RemoveLastFromStack</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a9550ddfee9414cfe8861da273562f380" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>SelectLayer</name></member>
-      <member refid="classvrv_1_1_music_xml_input_1a2de52a9c304e7377fdfdbcb434c048c8" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>SelectLayer</name></member>
-      <member refid="classvrv_1_1_music_xml_input_1aedb8f18c3b08e22ea6281fc70ab25abb" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>SelectLayer</name></member>
+      <member refid="classvrv_1_1_music_xml_input_1a71d3de045b3930ce9725caf1cfbdd6c1" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>SelectLayer</name></member>
+      <member refid="classvrv_1_1_music_xml_input_1ace8326bce372093e12c51bb734e0cd98" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>SelectLayer</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a42d543e19376698def9265b35db34593" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>SetChordStaff</name></member>
       <member refid="classvrv_1_1_music_xml_input_1aaaa4f3a7c3de4049a3071faa5b7a8c25" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>SetFermataExternalSymbols</name></member>
       <member refid="classvrv_1_1_input_1ad6290a083918bae0c62dac7795a9771d" prot="public" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>SetOutputFormat</name></member>
