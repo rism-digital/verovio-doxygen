@@ -116,6 +116,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_tuning.html#abcf3466eb2c54987c2325b09d54d487f">CalcPitchPos</a> (int course, data_NOTATIONTYPE notationType, int lines)</td></tr>
 <tr class="memdesc:abcf3466eb2c54987c2325b09d54d487f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the line for a the tuning and a given course and a notation type. <br /></td></tr>
 <tr class="separator:abcf3466eb2c54987c2325b09d54d487f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a576bd3309de1a5b91d8ff2a4365f26f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_tuning.html#a576bd3309de1a5b91d8ff2a4365f26f6">CalcPitchNumber</a> (int course, int fret, data_NOTATIONTYPE notationType)</td></tr>
+<tr class="memdesc:a576bd3309de1a5b91d8ff2a4365f26f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calclate the MIDI pitch number for course/fret.  <a href="classvrv_1_1_tuning.html#a576bd3309de1a5b91d8ff2a4365f26f6">More...</a><br /></td></tr>
+<tr class="separator:a576bd3309de1a5b91d8ff2a4365f26f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, and other standard methods</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Reset method reset all attribute classes </p>
 </div></td></tr>
@@ -1257,6 +1260,51 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class models the MEI &lt;tuning&gt; element. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a576bd3309de1a5b91d8ff2a4365f26f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a576bd3309de1a5b91d8ff2a4365f26f6">&#9670;&nbsp;</a></span>CalcPitchNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vrv::Tuning::CalcPitchNumber </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>course</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">data_NOTATIONTYPE&#160;</td>
+          <td class="paramname"><em>notationType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calclate the MIDI pitch number for course/fret. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">course</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fret</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">notationType,used</td><td>to default tuning if not otherwise specified</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>MIDI pitch </dd></dl>
+
+</div>
+</div>
 <a id="a554c7b662fe5f1532eb2b345ffb644e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a554c7b662fe5f1532eb2b345ffb644e9">&#9670;&nbsp;</a></span>Clone()</h2>
 
@@ -1326,7 +1374,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_tuning.html">Tuning</a></li>
-    <li class="footer">Generated on Wed Jan 12 2022 14:18:09 for Verovio by
+    <li class="footer">Generated on Fri Jan 14 2022 07:08:38 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

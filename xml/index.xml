@@ -725,6 +725,7 @@
     <member refid="classvrv_1_1_beam_1a57682a7262276b450a4b2b295d4729a9" kind="function"><name>GetNoteCount</name></member>
     <member refid="classvrv_1_1_beam_1a2222ff99c31c7384fc4e3c6dff08b47a" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_beam_1a1bbd297104dd527dbf817a71e5129599" kind="function"><name>GetElementCoords</name></member>
+    <member refid="classvrv_1_1_beam_1a23c843f2c54f531b08458d4156f81bbe" kind="function"><name>IsTabBeam</name></member>
     <member refid="classvrv_1_1_beam_1a5330f0f47fa15e055193519f35a7d8b0" kind="function"><name>AdjustBeams</name></member>
     <member refid="classvrv_1_1_beam_1adf973ec376fc00891cf66584cbce298f" kind="function"><name>AdjustBeamsEnd</name></member>
     <member refid="classvrv_1_1_beam_1ac64aae8acb03de44fef47888894e6b0e" kind="function"><name>CalcStem</name></member>
@@ -751,6 +752,7 @@
     <member refid="classvrv_1_1_beam_drawing_interface_1a7a0799a72030f287c5a744187d925f13" kind="variable"><name>m_beamWidth</name></member>
     <member refid="classvrv_1_1_beam_drawing_interface_1acf38f791d7a096f56495dfe6e5a04b18" kind="variable"><name>m_beamWidthBlack</name></member>
     <member refid="classvrv_1_1_beam_drawing_interface_1acfd33633ca8a8f4a03ca2035d19596b4" kind="variable"><name>m_beamWidthWhite</name></member>
+    <member refid="classvrv_1_1_beam_drawing_interface_1ac63922b8c8e3e1a5b219124eb38c7394" kind="variable"><name>m_fractionSize</name></member>
     <member refid="classvrv_1_1_beam_drawing_interface_1afa46fe4952aa3b0dae44c4c38e79e744" kind="variable"><name>m_stemXAbove</name></member>
     <member refid="classvrv_1_1_beam_drawing_interface_1aa9c704f00a29480d6510cb792c350911" kind="variable"><name>m_stemXBelow</name></member>
     <member refid="classvrv_1_1_beam_drawing_interface_1a8cea0232f11aa62bc020f19757dd526c" kind="variable"><name>m_beamElementCoords</name></member>
@@ -790,6 +792,7 @@
     <member refid="classvrv_1_1_beam_segment_1ad00e25fbdde982ee522286831653b840" kind="function"><name>~BeamSegment</name></member>
     <member refid="classvrv_1_1_beam_segment_1ae45293135277575fd4d828312f1c700c" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_beam_segment_1a53b12029b522b249d6faf0dc8acfe1b8" kind="function"><name>CalcBeam</name></member>
+    <member refid="classvrv_1_1_beam_segment_1a0b9492fd5294745446b4e0dae0f8ff65" kind="function"><name>CalcTabBeam</name></member>
     <member refid="classvrv_1_1_beam_segment_1afdd3362ebfc878b981e2f3f8db7ed970" kind="function"><name>GetElementCoordRefs</name></member>
     <member refid="classvrv_1_1_beam_segment_1aae2d6f202398b11757729b803cad00fd" kind="function"><name>InitCoordRefs</name></member>
     <member refid="classvrv_1_1_beam_segment_1a29c1c949f0d813b5ffc8303515bc804f" kind="function"><name>ClearCoordRefs</name></member>
@@ -3916,6 +3919,8 @@
     <member refid="classvrv_1_1_music_xml_input_1ab21ca10e23b37dfed8860be571fbf70d" kind="function"><name>ConvertKindToText</name></member>
     <member refid="classvrv_1_1_music_xml_input_1af2e1a5c2c54312350ad3f6d4f1a18873" kind="function"><name>ConvertDegreeToText</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a8062abef0fad9b19399e64c2d16fc61d" kind="function"><name>ConvertFigureGlyph</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1af910c54d975c65ae5d8d66b0f5c12096" kind="function"><name>PitchToMidi</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a9c676923d419e3da53597c6f8b7be9f0" kind="function"><name>MidiToPitch</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a09bee8c1b4cc55fa50994ae27e02284d" kind="variable"><name>m_octDis</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a0c03c0e5920800dbc6f32de6c264d8e9" kind="variable"><name>m_mRpt</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a70af98ef677e3cbf0c2060fefdfcb0fe" kind="variable"><name>m_slash</name></member>
@@ -6228,6 +6233,7 @@
     <member refid="classvrv_1_1_tab_grp_1a0c3377390a0ad28b2e2a0fc0cc10e98c" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_tab_grp_1a1aed8cc5fe4e59e8a9196b4d6463f952" kind="function"><name>GetDurationInterface</name></member>
     <member refid="classvrv_1_1_tab_grp_1a4d88df1eeb835725c99b618aebaa4e5f" kind="function"><name>IsSupportedChild</name></member>
+    <member refid="classvrv_1_1_tab_grp_1a168bb90abeec8aa0378aa4e187371109" kind="function"><name>CalcOnsetOffsetEnd</name></member>
   </compound>
   <compound refid="classvrv_1_1_tempo" kind="class"><name>vrv::Tempo</name>
     <member refid="classvrv_1_1_tempo_1a4031ccfa745354263263e964a1323254" kind="function"><name>Tempo</name></member>
@@ -6589,6 +6595,7 @@
     <member refid="classvrv_1_1_tuning_1a7258606a9496e39419181ff6919bb492" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_tuning_1ac1a9a7216be86af817baa6aa00c9556f" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_tuning_1abcf3466eb2c54987c2325b09d54d487f" kind="function"><name>CalcPitchPos</name></member>
+    <member refid="classvrv_1_1_tuning_1a576bd3309de1a5b91d8ff2a4365f26f6" kind="function"><name>CalcPitchNumber</name></member>
   </compound>
   <compound refid="classvrv_1_1_tuplet" kind="class"><name>vrv::Tuplet</name>
     <member refid="classvrv_1_1_tuplet_1a7e4042b932922d853616c367f899cb7b" kind="function"><name>Tuplet</name></member>

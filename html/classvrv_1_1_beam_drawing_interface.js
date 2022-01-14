@@ -24,6 +24,7 @@ var classvrv_1_1_beam_drawing_interface =
     [ "m_crossStaffRel", "classvrv_1_1_beam_drawing_interface.html#afa2c759f832f6e426f6b24fb7d877180", null ],
     [ "m_cueSize", "classvrv_1_1_beam_drawing_interface.html#ac07dedfd9d18a30205ec9cff9ca131ee", null ],
     [ "m_drawingPlace", "classvrv_1_1_beam_drawing_interface.html#aaff507977c3e0bf620f4c7e9517c0462", null ],
+    [ "m_fractionSize", "classvrv_1_1_beam_drawing_interface.html#ac63922b8c8e3e1a5b219124eb38c7394", null ],
     [ "m_hasMultipleStemDir", "classvrv_1_1_beam_drawing_interface.html#a6cbca6b6d786644d7ccca3699c2260c1", null ],
     [ "m_notesStemDir", "classvrv_1_1_beam_drawing_interface.html#a2f05babb11c16401012d41d811bec77d", null ],
     [ "m_shortestDur", "classvrv_1_1_beam_drawing_interface.html#a1c2a86d493efd23de86b5473dffd1d58", null ],

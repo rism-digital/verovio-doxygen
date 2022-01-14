@@ -121,6 +121,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetNoteCount</b> () co
 <tr class="memitem:a1bbd297104dd527dbf817a71e5129599"><td class="memItemLeft" align="right" valign="top"><a id="a1bbd297104dd527dbf817a71e5129599"></a>
 const ArrayOfBeamElementCoords *&#160;</td><td class="memItemRight" valign="bottom"><b>GetElementCoords</b> ()</td></tr>
 <tr class="separator:a1bbd297104dd527dbf817a71e5129599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c843f2c54f531b08458d4156f81bbe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beam.html#a23c843f2c54f531b08458d4156f81bbe">IsTabBeam</a> ()</td></tr>
+<tr class="memdesc:a23c843f2c54f531b08458d4156f81bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the beam has a tabGrp child.  <a href="classvrv_1_1_beam.html#a23c843f2c54f531b08458d4156f81bbe">More...</a><br /></td></tr>
+<tr class="separator:a23c843f2c54f531b08458d4156f81bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5330f0f47fa15e055193519f35a7d8b0"><td class="memItemLeft" align="right" valign="top"><a id="a5330f0f47fa15e055193519f35a7d8b0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beam.html#a5330f0f47fa15e055193519f35a7d8b0">AdjustBeams</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) override</td></tr>
 <tr class="memdesc:a5330f0f47fa15e055193519f35a7d8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a0d2579fea0aea8b317a490c1654be52b" title="Calculate the vertical position adjustment for the beam if it overlaps with layer elements.">Object::AdjustBeams</a>. <br /></td></tr>
@@ -1537,6 +1540,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_beamWidthBlack</b></
 <tr class="memitem:acfd33633ca8a8f4a03ca2035d19596b4 inherit pub_attribs_classvrv_1_1_beam_drawing_interface"><td class="memItemLeft" align="right" valign="top"><a id="acfd33633ca8a8f4a03ca2035d19596b4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_beamWidthWhite</b></td></tr>
 <tr class="separator:acfd33633ca8a8f4a03ca2035d19596b4 inherit pub_attribs_classvrv_1_1_beam_drawing_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63922b8c8e3e1a5b219124eb38c7394 inherit pub_attribs_classvrv_1_1_beam_drawing_interface"><td class="memItemLeft" align="right" valign="top"><a id="ac63922b8c8e3e1a5b219124eb38c7394"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_fractionSize</b></td></tr>
+<tr class="separator:ac63922b8c8e3e1a5b219124eb38c7394 inherit pub_attribs_classvrv_1_1_beam_drawing_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa46fe4952aa3b0dae44c4c38e79e744 inherit pub_attribs_classvrv_1_1_beam_drawing_interface"><td class="memItemLeft" align="right" valign="top"><a id="afa46fe4952aa3b0dae44c4c38e79e744"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_stemXAbove</b> [2]</td></tr>
 <tr class="separator:afa46fe4952aa3b0dae44c4c38e79e744 inherit pub_attribs_classvrv_1_1_beam_drawing_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1798,6 +1804,26 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
+<a id="a23c843f2c54f531b08458d4156f81bbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23c843f2c54f531b08458d4156f81bbe">&#9670;&nbsp;</a></span>IsTabBeam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vrv::Beam::IsTabBeam </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if the beam has a tabGrp child. </p>
+<p>In that case, the ObjectList will only have tabGrp elements. See <a class="el" href="classvrv_1_1_beam.html#ae1273dd0789d15ec82ee70ef82bf3e95" title="Filter the flat list and keep only Note and Chords elements.">Beam::FilterList</a> </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="beam_8h_source.html">beam.h</a></li>
 </ul>
@@ -1807,7 +1833,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_beam.html">Beam</a></li>
-    <li class="footer">Generated on Wed Jan 12 2022 14:18:04 for Verovio by
+    <li class="footer">Generated on Fri Jan 14 2022 07:08:33 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

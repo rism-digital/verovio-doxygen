@@ -4,6 +4,7 @@ var hierarchy =
     [ "vrv::AdjustXPosAlignmentOffset", "classvrv_1_1_adjust_x_pos_alignment_offset.html", null ],
     [ "AttAccidental", null, [
       [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
+      [ "vrv::Course", "classvrv_1_1_course.html", null ],
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ]
     ] ],
@@ -538,6 +539,7 @@ var hierarchy =
       [ "vrv::TupletNum", "classvrv_1_1_tuplet_num.html", null ]
     ] ],
     [ "AttOctave", null, [
+      [ "vrv::Course", "classvrv_1_1_course.html", null ],
       [ "vrv::PitchInterface", "classvrv_1_1_pitch_interface.html", null ]
     ] ],
     [ "AttOctaveDisplacement", null, [
@@ -562,6 +564,7 @@ var hierarchy =
       [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ]
     ] ],
     [ "AttPitch", null, [
+      [ "vrv::Course", "classvrv_1_1_course.html", null ],
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
       [ "vrv::PitchInterface", "classvrv_1_1_pitch_interface.html", null ]
     ] ],

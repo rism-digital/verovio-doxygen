@@ -12,6 +12,7 @@ var classvrv_1_1_beam =
     [ "GetElementCoords", "classvrv_1_1_beam.html#a1bbd297104dd527dbf817a71e5129599", null ],
     [ "GetNoteCount", "classvrv_1_1_beam.html#a57682a7262276b450a4b2b295d4729a9", null ],
     [ "IsSupportedChild", "classvrv_1_1_beam.html#a2222ff99c31c7384fc4e3c6dff08b47a", null ],
+    [ "IsTabBeam", "classvrv_1_1_beam.html#a23c843f2c54f531b08458d4156f81bbe", null ],
     [ "Reset", "classvrv_1_1_beam.html#a8e2ee9ef2db29335c50410da804a5fe2", null ],
     [ "ResetDrawing", "classvrv_1_1_beam.html#a502a5b8ca0fadc648a3f017a19310cc9", null ],
     [ "m_beamSegment", "classvrv_1_1_beam.html#a522873ab5d186e4d7036d6a00a408f83", null ]
