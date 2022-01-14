@@ -13,6 +13,7 @@ var classvrv_1_1_score =
     [ "GetClassName", "classvrv_1_1_score.html#a4bdc6ff45b630792df0902dafb3f8eb4", null ],
     [ "GetScoreDef", "classvrv_1_1_score.html#ae9f5589c307428d5957b1bc3a682c216", null ],
     [ "IsSupportedChild", "classvrv_1_1_score.html#af3a729806cc822784e21a8b38649aba6", null ],
+    [ "PrepareDuration", "classvrv_1_1_score.html#ac7dfa5c4768e0fb61d20e54f08276c5b", null ],
     [ "Reset", "classvrv_1_1_score.html#a4edefe15e3054f89b5db69f3a92eee15", null ],
     [ "ScoreDefNeedsOptimization", "classvrv_1_1_score.html#a926d106d95e5dc5c4a6d0f425729dd34", null ],
     [ "ScoreDefOptimize", "classvrv_1_1_score.html#a3c23c17c02d816b98a4b257180e3f677", null ],

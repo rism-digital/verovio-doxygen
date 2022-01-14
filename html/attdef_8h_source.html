@@ -118,185 +118,186 @@ $(document).ready(function(){initNavTree('attdef_8h_source.html',''); initResiza
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// Durations</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define DUR_MX -1 // maxima</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#define DUR_LG 0 // longa</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#define DUR_BR 1 // brevis</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#define DUR_1 2 // whole note (semibrevis)</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#define DUR_2 3 // half note (minima)</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define DUR_4 4 // ...</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#define DUR_8 5</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#define DUR_16 6</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#define DUR_32 7</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#define DUR_64 8</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#define DUR_128 9</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#define DUR_256 10</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#define DUR_512 11</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#define DUR_1024 12 // this is it for now</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">// used for alignement</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#define DUR_MAX 1024</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">// mensural duration</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define DUR_MENSURAL_OFFSET (2 * DUR_MAX)</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#define DUR_MENSURAL_MASK (2 * DUR_MAX - 1)</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">// used for mensural alignment</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#define DUR_MENSURAL_REF 1728</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// MEI data defines</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="namespacevrv.html#a763b3dc2bc4762f44b62b766ef571d4a">   80</a></span>&#160;<span class="keyword">typedef</span> std::vector&lt;data_ARTICULATION&gt; <a class="code" href="namespacevrv.html#a763b3dc2bc4762f44b62b766ef571d4a">data_ARTICULATION_List</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="namespacevrv.html#a3d7cd8ac330cc53fddc7429738c8bc9d">   85</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#a3d7cd8ac330cc53fddc7429738c8bc9d">data_BEATRPT_REND</a> {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    BEATRPT_REND_NONE = 0,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    BEATRPT_REND_1,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    BEATRPT_REND_2,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    BEATRPT_REND_3,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    BEATRPT_REND_4,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    BEATRPT_REND_5,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    BEATRPT_REND_mixed</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="namespacevrv.html#a2bd8f760fccdf76e2f41894ca0431d4e">   98</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#a2bd8f760fccdf76e2f41894ca0431d4e">data_DURATION</a> {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    DURATION_NONE = VRV_UNSET,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    DURATION_long = DUR_LG,</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    DURATION_breve,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    DURATION_1,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    DURATION_2,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    DURATION_4,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    DURATION_8,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    DURATION_16,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    DURATION_32,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    DURATION_64,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    DURATION_128,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    DURATION_256,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    DURATION_512,</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    DURATION_1024,</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    DURATION_2048,</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    DURATION_maxima = DUR_MX,</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    DURATION_longa = DUR_MENSURAL_OFFSET + DUR_LG,</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    DURATION_brevis,</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    DURATION_semibrevis,</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    DURATION_minima,</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    DURATION_semiminima,</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    DURATION_fusa,</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    DURATION_semifusa</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="namespacevrv.html#a188ba92f38a2d40af57aa0029ffc37f5">  127</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">double</span> <a class="code" href="namespacevrv.html#a188ba92f38a2d40af57aa0029ffc37f5">data_FONTSIZENUMERIC</a>;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="namespacevrv.html#ab08bdf7d616704e08e1ef36454402a21">  132</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">wchar_t</span> <a class="code" href="namespacevrv.html#ab08bdf7d616704e08e1ef36454402a21">data_HEXNUM</a>;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="namespacevrv.html#a99f7d030378fcc11eea0d17d4f31394d">  139</a></span>&#160;<span class="keyword">typedef</span> std::pair&lt;int, data_ACCIDENTAL_WRITTEN&gt; <a class="code" href="namespacevrv.html#a99f7d030378fcc11eea0d17d4f31394d">data_KEYSIGNATURE</a>;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="namespacevrv.html#a6f058bbad901321f6994737c7aa1f87b">  144</a></span>&#160;<span class="keyword">typedef</span> std::pair&lt;int, double&gt; <a class="code" href="namespacevrv.html#a6f058bbad901321f6994737c7aa1f87b">data_MEASUREBEAT</a>;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="namespacevrv.html#a3df7e8419a61cb7e2aa14b0d2cf4b1f9">  149</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="namespacevrv.html#a5e51c22c19455203527c31048ac51d29">data_VU</a> <a class="code" href="namespacevrv.html#a3df7e8419a61cb7e2aa14b0d2cf4b1f9">data_MEASUREMENTABS</a>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="namespacevrv.html#a219b927251d537b63d3d0ddb80a5dfdf">  154</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="namespacevrv.html#a5e51c22c19455203527c31048ac51d29">data_VU</a> <a class="code" href="namespacevrv.html#a219b927251d537b63d3d0ddb80a5dfdf">data_MEASUREMENTREL</a>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="namespacevrv.html#a5ea92f0d2c7022d066158cda68265c8e">  159</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="namespacevrv.html#a5ea92f0d2c7022d066158cda68265c8e">data_MIDIBPM</a>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="namespacevrv.html#a3b153aa4aecd6e24386aa8c24816f5f2">  164</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="namespacevrv.html#a3b153aa4aecd6e24386aa8c24816f5f2">data_MIDICHANNEL</a>;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="namespacevrv.html#add58cfe5380deee743ac6b040b7997d8">  169</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="namespacevrv.html#add58cfe5380deee743ac6b040b7997d8">data_MIDIMSPB</a>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="namespacevrv.html#a67e112c2e04934448a03c3c57dd46c69">  174</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="namespacevrv.html#a67e112c2e04934448a03c3c57dd46c69">data_MIDIVALUE</a>;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="namespacevrv.html#a7a53db34337e2748e3f1d945017bfbce">  180</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#a7a53db34337e2748e3f1d945017bfbce">data_MODUSMAIOR</a> { MODUSMAIOR_NONE = -3, MODUSMAIOR_2 = 2, MODUSMAIOR_3 };</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="namespacevrv.html#ad5d35b0f189ce219a69f21048528546d">  186</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#ad5d35b0f189ce219a69f21048528546d">data_MODUSMINOR</a> { MODUSMINOR_NONE = -3, MODUSMINOR_2 = 2, MODUSMINOR_3 };</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="namespacevrv.html#a3221b377d300bfdf48e6b965f2e4ef0a">  191</a></span>&#160;<span class="keyword">typedef</span> std::string <a class="code" href="namespacevrv.html#a3221b377d300bfdf48e6b965f2e4ef0a">data_NCNAME</a>;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="namespacevrv.html#ad31acf463f93ef80761f5bb8f656deee">  196</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#ad31acf463f93ef80761f5bb8f656deee">data_OCTAVE_DIS</a> { OCTAVE_DIS_NONE = 0, OCTAVE_DIS_8 = 8, OCTAVE_DIS_15 = 15, OCTAVE_DIS_22 = 22 };</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="namespacevrv.html#ad11a81d64d9f3981b070f830ccff8093">  201</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">signed</span> <span class="keywordtype">char</span> <a class="code" href="namespacevrv.html#ad11a81d64d9f3981b070f830ccff8093">data_OCTAVE</a>;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="namespacevrv.html#aee5a6e009b802f47125befc3a2a93da8">  206</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#aee5a6e009b802f47125befc3a2a93da8">data_ORIENTATION</a> { ORIENTATION_NONE = 0, ORIENTATION_reversed, ORIENTATION_90CW, ORIENTATION_90CCW };</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
-<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="namespacevrv.html#a284ae096c03bb2bbeb3ec5439f618922">  211</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">double</span> <a class="code" href="namespacevrv.html#a284ae096c03bb2bbeb3ec5439f618922">data_PERCENT</a>;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
-<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="namespacevrv.html#abb508abb62c9b2dc9a44f745957ebb26">  216</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">double</span> <a class="code" href="namespacevrv.html#abb508abb62c9b2dc9a44f745957ebb26">data_PERCENT_LIMITED</a>;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="namespacevrv.html#a1ee2ee7a57f8a27b9bb660ef88f4862a">  221</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">double</span> <a class="code" href="namespacevrv.html#a1ee2ee7a57f8a27b9bb660ef88f4862a">data_PERCENT_LIMITED_SIGNED</a>;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="namespacevrv.html#a8a19df71e38b10ca359d0052d1fdba70">  226</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#a8a19df71e38b10ca359d0052d1fdba70">data_PITCHNAME</a> {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    PITCHNAME_NONE = 0,</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    PITCHNAME_c,</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    PITCHNAME_d,</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    PITCHNAME_e,</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    PITCHNAME_f,</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    PITCHNAME_g,</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    PITCHNAME_a,</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    PITCHNAME_b,</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;};</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
-<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="namespacevrv.html#a8e8a28ecfcd7db8a3be6fdc1ae4150d2">  240</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#a8e8a28ecfcd7db8a3be6fdc1ae4150d2">data_PITCHNAME_GES</a> {</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    PITCHNAME_GES_NONE = 0,</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    PITCHNAME_GES_c,</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    PITCHNAME_GES_d,</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    PITCHNAME_GES_e,</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    PITCHNAME_GES_f,</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    PITCHNAME_GES_g,</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    PITCHNAME_GES_a,</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    PITCHNAME_GES_b,</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    PITCHNAME_GES_none</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;};</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
-<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="namespacevrv.html#a2ec8e657399181f2f8cad74dfd46293a">  256</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#a2ec8e657399181f2f8cad74dfd46293a">data_PROLATIO</a> { PROLATIO_NONE = -3, PROLATIO_2 = 2, PROLATIO_3 };</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="namespacevrv.html#a4bb88652700f3a9cfdc14cde5b40c003">  261</a></span>&#160;<span class="keyword">typedef</span> std::vector&lt;int&gt; <a class="code" href="namespacevrv.html#a4bb88652700f3a9cfdc14cde5b40c003">data_SUMMAND_List</a>;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="namespacevrv.html#a8db369e1cc861dfd36f7534cfb354ea9">  266</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#a8db369e1cc861dfd36f7534cfb354ea9">data_TIE</a> { TIE_NONE = 0, TIE_i, TIE_m, TIE_t };</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
-<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="namespacevrv.html#a5e7157052cf13dc0f22d4c5141737507">  272</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#a5e7157052cf13dc0f22d4c5141737507">data_TEMPUS</a> { TEMPUS_NONE = -3, TEMPUS_2 = 2, TEMPUS_3 };</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00278"></a><span class="lineno"><a class="line" href="namespacevrv.html#ad9287a721cd0413eda2f733fe25120de">  278</a></span>&#160;<span class="keyword">typedef</span> std::vector&lt;std::string&gt; <a class="code" href="namespacevrv.html#ad9287a721cd0413eda2f733fe25120de">xsdAnyURI_List</a>;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
-<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="namespacevrv.html#aa7c7517df9aacc51f8ab0bf6a88df736">  284</a></span>&#160;<span class="keyword">typedef</span> std::vector&lt;int&gt; <a class="code" href="namespacevrv.html#aa7c7517df9aacc51f8ab0bf6a88df736">xsdPositiveInteger_List</a>;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor">#endif // __VRV_ATT_DEF_H__</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define DUR_NONE -32</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#define DUR_MX -1 // maxima</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#define DUR_LG 0 // longa</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#define DUR_BR 1 // brevis</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#define DUR_1 2 // whole note (semibrevis)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define DUR_2 3 // half note (minima)</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#define DUR_4 4 // ...</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#define DUR_8 5</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#define DUR_16 6</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#define DUR_32 7</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#define DUR_64 8</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#define DUR_128 9</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#define DUR_256 10</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#define DUR_512 11</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#define DUR_1024 12 // this is it for now</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// used for alignement</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#define DUR_MAX 1024</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">// mensural duration</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#define DUR_MENSURAL_OFFSET (2 * DUR_MAX)</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#define DUR_MENSURAL_MASK (2 * DUR_MAX - 1)</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// used for mensural alignment</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#define DUR_MENSURAL_REF 1728</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// MEI data defines</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="namespacevrv.html#a763b3dc2bc4762f44b62b766ef571d4a">   81</a></span>&#160;<span class="keyword">typedef</span> std::vector&lt;data_ARTICULATION&gt; <a class="code" href="namespacevrv.html#a763b3dc2bc4762f44b62b766ef571d4a">data_ARTICULATION_List</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="namespacevrv.html#a3d7cd8ac330cc53fddc7429738c8bc9d">   86</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#a3d7cd8ac330cc53fddc7429738c8bc9d">data_BEATRPT_REND</a> {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    BEATRPT_REND_NONE = 0,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    BEATRPT_REND_1,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    BEATRPT_REND_2,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    BEATRPT_REND_3,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    BEATRPT_REND_4,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    BEATRPT_REND_5,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    BEATRPT_REND_mixed</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="namespacevrv.html#a2bd8f760fccdf76e2f41894ca0431d4e">   99</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#a2bd8f760fccdf76e2f41894ca0431d4e">data_DURATION</a> {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    DURATION_NONE = DUR_NONE,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    DURATION_long = DUR_LG,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    DURATION_breve,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    DURATION_1,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    DURATION_2,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    DURATION_4,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    DURATION_8,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    DURATION_16,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    DURATION_32,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    DURATION_64,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    DURATION_128,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    DURATION_256,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    DURATION_512,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    DURATION_1024,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    DURATION_2048,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    DURATION_maxima = DUR_MX,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    DURATION_longa = DUR_MENSURAL_OFFSET + DUR_LG,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    DURATION_brevis,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    DURATION_semibrevis,</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    DURATION_minima,</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    DURATION_semiminima,</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    DURATION_fusa,</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    DURATION_semifusa</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;};</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="namespacevrv.html#a188ba92f38a2d40af57aa0029ffc37f5">  128</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">double</span> <a class="code" href="namespacevrv.html#a188ba92f38a2d40af57aa0029ffc37f5">data_FONTSIZENUMERIC</a>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="namespacevrv.html#ab08bdf7d616704e08e1ef36454402a21">  133</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">wchar_t</span> <a class="code" href="namespacevrv.html#ab08bdf7d616704e08e1ef36454402a21">data_HEXNUM</a>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="namespacevrv.html#a99f7d030378fcc11eea0d17d4f31394d">  140</a></span>&#160;<span class="keyword">typedef</span> std::pair&lt;int, data_ACCIDENTAL_WRITTEN&gt; <a class="code" href="namespacevrv.html#a99f7d030378fcc11eea0d17d4f31394d">data_KEYSIGNATURE</a>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="namespacevrv.html#a6f058bbad901321f6994737c7aa1f87b">  145</a></span>&#160;<span class="keyword">typedef</span> std::pair&lt;int, double&gt; <a class="code" href="namespacevrv.html#a6f058bbad901321f6994737c7aa1f87b">data_MEASUREBEAT</a>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="namespacevrv.html#a3df7e8419a61cb7e2aa14b0d2cf4b1f9">  150</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="namespacevrv.html#a5e51c22c19455203527c31048ac51d29">data_VU</a> <a class="code" href="namespacevrv.html#a3df7e8419a61cb7e2aa14b0d2cf4b1f9">data_MEASUREMENTABS</a>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="namespacevrv.html#a219b927251d537b63d3d0ddb80a5dfdf">  155</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="namespacevrv.html#a5e51c22c19455203527c31048ac51d29">data_VU</a> <a class="code" href="namespacevrv.html#a219b927251d537b63d3d0ddb80a5dfdf">data_MEASUREMENTREL</a>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="namespacevrv.html#a5ea92f0d2c7022d066158cda68265c8e">  160</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="namespacevrv.html#a5ea92f0d2c7022d066158cda68265c8e">data_MIDIBPM</a>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="namespacevrv.html#a3b153aa4aecd6e24386aa8c24816f5f2">  165</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="namespacevrv.html#a3b153aa4aecd6e24386aa8c24816f5f2">data_MIDICHANNEL</a>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="namespacevrv.html#add58cfe5380deee743ac6b040b7997d8">  170</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="namespacevrv.html#add58cfe5380deee743ac6b040b7997d8">data_MIDIMSPB</a>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="namespacevrv.html#a67e112c2e04934448a03c3c57dd46c69">  175</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="namespacevrv.html#a67e112c2e04934448a03c3c57dd46c69">data_MIDIVALUE</a>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="namespacevrv.html#a7a53db34337e2748e3f1d945017bfbce">  181</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#a7a53db34337e2748e3f1d945017bfbce">data_MODUSMAIOR</a> { MODUSMAIOR_NONE = -3, MODUSMAIOR_2 = 2, MODUSMAIOR_3 };</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="namespacevrv.html#ad5d35b0f189ce219a69f21048528546d">  187</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#ad5d35b0f189ce219a69f21048528546d">data_MODUSMINOR</a> { MODUSMINOR_NONE = -3, MODUSMINOR_2 = 2, MODUSMINOR_3 };</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="namespacevrv.html#a3221b377d300bfdf48e6b965f2e4ef0a">  192</a></span>&#160;<span class="keyword">typedef</span> std::string <a class="code" href="namespacevrv.html#a3221b377d300bfdf48e6b965f2e4ef0a">data_NCNAME</a>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="namespacevrv.html#ad31acf463f93ef80761f5bb8f656deee">  197</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#ad31acf463f93ef80761f5bb8f656deee">data_OCTAVE_DIS</a> { OCTAVE_DIS_NONE = 0, OCTAVE_DIS_8 = 8, OCTAVE_DIS_15 = 15, OCTAVE_DIS_22 = 22 };</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="namespacevrv.html#ad11a81d64d9f3981b070f830ccff8093">  202</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">signed</span> <span class="keywordtype">char</span> <a class="code" href="namespacevrv.html#ad11a81d64d9f3981b070f830ccff8093">data_OCTAVE</a>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="namespacevrv.html#aee5a6e009b802f47125befc3a2a93da8">  207</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#aee5a6e009b802f47125befc3a2a93da8">data_ORIENTATION</a> { ORIENTATION_NONE = 0, ORIENTATION_reversed, ORIENTATION_90CW, ORIENTATION_90CCW };</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="namespacevrv.html#a284ae096c03bb2bbeb3ec5439f618922">  212</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">double</span> <a class="code" href="namespacevrv.html#a284ae096c03bb2bbeb3ec5439f618922">data_PERCENT</a>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="namespacevrv.html#abb508abb62c9b2dc9a44f745957ebb26">  217</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">double</span> <a class="code" href="namespacevrv.html#abb508abb62c9b2dc9a44f745957ebb26">data_PERCENT_LIMITED</a>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="namespacevrv.html#a1ee2ee7a57f8a27b9bb660ef88f4862a">  222</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">double</span> <a class="code" href="namespacevrv.html#a1ee2ee7a57f8a27b9bb660ef88f4862a">data_PERCENT_LIMITED_SIGNED</a>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="namespacevrv.html#a8a19df71e38b10ca359d0052d1fdba70">  227</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#a8a19df71e38b10ca359d0052d1fdba70">data_PITCHNAME</a> {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    PITCHNAME_NONE = 0,</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    PITCHNAME_c,</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    PITCHNAME_d,</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    PITCHNAME_e,</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    PITCHNAME_f,</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    PITCHNAME_g,</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    PITCHNAME_a,</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    PITCHNAME_b,</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;};</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="namespacevrv.html#a8e8a28ecfcd7db8a3be6fdc1ae4150d2">  241</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#a8e8a28ecfcd7db8a3be6fdc1ae4150d2">data_PITCHNAME_GES</a> {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    PITCHNAME_GES_NONE = 0,</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    PITCHNAME_GES_c,</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    PITCHNAME_GES_d,</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    PITCHNAME_GES_e,</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    PITCHNAME_GES_f,</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    PITCHNAME_GES_g,</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    PITCHNAME_GES_a,</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    PITCHNAME_GES_b,</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    PITCHNAME_GES_none</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;};</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="namespacevrv.html#a2ec8e657399181f2f8cad74dfd46293a">  257</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#a2ec8e657399181f2f8cad74dfd46293a">data_PROLATIO</a> { PROLATIO_NONE = -3, PROLATIO_2 = 2, PROLATIO_3 };</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="namespacevrv.html#a4bb88652700f3a9cfdc14cde5b40c003">  262</a></span>&#160;<span class="keyword">typedef</span> std::vector&lt;int&gt; <a class="code" href="namespacevrv.html#a4bb88652700f3a9cfdc14cde5b40c003">data_SUMMAND_List</a>;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno"><a class="line" href="namespacevrv.html#a8db369e1cc861dfd36f7534cfb354ea9">  267</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#a8db369e1cc861dfd36f7534cfb354ea9">data_TIE</a> { TIE_NONE = 0, TIE_i, TIE_m, TIE_t };</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="namespacevrv.html#a5e7157052cf13dc0f22d4c5141737507">  273</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacevrv.html#a5e7157052cf13dc0f22d4c5141737507">data_TEMPUS</a> { TEMPUS_NONE = -3, TEMPUS_2 = 2, TEMPUS_3 };</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="namespacevrv.html#ad9287a721cd0413eda2f733fe25120de">  279</a></span>&#160;<span class="keyword">typedef</span> std::vector&lt;std::string&gt; <a class="code" href="namespacevrv.html#ad9287a721cd0413eda2f733fe25120de">xsdAnyURI_List</a>;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno"><a class="line" href="namespacevrv.html#aa7c7517df9aacc51f8ab0bf6a88df736">  285</a></span>&#160;<span class="keyword">typedef</span> std::vector&lt;int&gt; <a class="code" href="namespacevrv.html#aa7c7517df9aacc51f8ab0bf6a88df736">xsdPositiveInteger_List</a>;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="preprocessor">#endif // __VRV_ATT_DEF_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacevrv_html_a2ec8e657399181f2f8cad74dfd46293a"><div class="ttname"><a href="namespacevrv.html#a2ec8e657399181f2f8cad74dfd46293a">vrv::data_PROLATIO</a></div><div class="ttdeci">data_PROLATIO</div><div class="ttdoc">MEI data.PROLATIO NONE is -3 for perfect value (abs) by default.</div><div class="ttdef"><b>Definition:</b> attdef.h:256</div></div>
-<div class="ttc" id="anamespacevrv_html_ad31acf463f93ef80761f5bb8f656deee"><div class="ttname"><a href="namespacevrv.html#ad31acf463f93ef80761f5bb8f656deee">vrv::data_OCTAVE_DIS</a></div><div class="ttdeci">data_OCTAVE_DIS</div><div class="ttdoc">MEI data.OCTAVE.DIS.</div><div class="ttdef"><b>Definition:</b> attdef.h:196</div></div>
-<div class="ttc" id="anamespacevrv_html_a219b927251d537b63d3d0ddb80a5dfdf"><div class="ttname"><a href="namespacevrv.html#a219b927251d537b63d3d0ddb80a5dfdf">vrv::data_MEASUREMENTREL</a></div><div class="ttdeci">data_VU data_MEASUREMENTREL</div><div class="ttdoc">MEI data.MEASUREMENTREL.</div><div class="ttdef"><b>Definition:</b> attdef.h:154</div></div>
-<div class="ttc" id="anamespacevrv_html_aee5a6e009b802f47125befc3a2a93da8"><div class="ttname"><a href="namespacevrv.html#aee5a6e009b802f47125befc3a2a93da8">vrv::data_ORIENTATION</a></div><div class="ttdeci">data_ORIENTATION</div><div class="ttdoc">MEI data.ORIENTATION.</div><div class="ttdef"><b>Definition:</b> attdef.h:206</div></div>
-<div class="ttc" id="anamespacevrv_html_a3d7cd8ac330cc53fddc7429738c8bc9d"><div class="ttname"><a href="namespacevrv.html#a3d7cd8ac330cc53fddc7429738c8bc9d">vrv::data_BEATRPT_REND</a></div><div class="ttdeci">data_BEATRPT_REND</div><div class="ttdoc">MEI data.BEATRPT_REND.</div><div class="ttdef"><b>Definition:</b> attdef.h:85</div></div>
-<div class="ttc" id="anamespacevrv_html_a188ba92f38a2d40af57aa0029ffc37f5"><div class="ttname"><a href="namespacevrv.html#a188ba92f38a2d40af57aa0029ffc37f5">vrv::data_FONTSIZENUMERIC</a></div><div class="ttdeci">double data_FONTSIZENUMERIC</div><div class="ttdoc">MEI data.FONTSIZENUMERIC.</div><div class="ttdef"><b>Definition:</b> attdef.h:127</div></div>
+<div class="ttc" id="anamespacevrv_html_a2ec8e657399181f2f8cad74dfd46293a"><div class="ttname"><a href="namespacevrv.html#a2ec8e657399181f2f8cad74dfd46293a">vrv::data_PROLATIO</a></div><div class="ttdeci">data_PROLATIO</div><div class="ttdoc">MEI data.PROLATIO NONE is -3 for perfect value (abs) by default.</div><div class="ttdef"><b>Definition:</b> attdef.h:257</div></div>
+<div class="ttc" id="anamespacevrv_html_ad31acf463f93ef80761f5bb8f656deee"><div class="ttname"><a href="namespacevrv.html#ad31acf463f93ef80761f5bb8f656deee">vrv::data_OCTAVE_DIS</a></div><div class="ttdeci">data_OCTAVE_DIS</div><div class="ttdoc">MEI data.OCTAVE.DIS.</div><div class="ttdef"><b>Definition:</b> attdef.h:197</div></div>
+<div class="ttc" id="anamespacevrv_html_a219b927251d537b63d3d0ddb80a5dfdf"><div class="ttname"><a href="namespacevrv.html#a219b927251d537b63d3d0ddb80a5dfdf">vrv::data_MEASUREMENTREL</a></div><div class="ttdeci">data_VU data_MEASUREMENTREL</div><div class="ttdoc">MEI data.MEASUREMENTREL.</div><div class="ttdef"><b>Definition:</b> attdef.h:155</div></div>
+<div class="ttc" id="anamespacevrv_html_aee5a6e009b802f47125befc3a2a93da8"><div class="ttname"><a href="namespacevrv.html#aee5a6e009b802f47125befc3a2a93da8">vrv::data_ORIENTATION</a></div><div class="ttdeci">data_ORIENTATION</div><div class="ttdoc">MEI data.ORIENTATION.</div><div class="ttdef"><b>Definition:</b> attdef.h:207</div></div>
+<div class="ttc" id="anamespacevrv_html_a3d7cd8ac330cc53fddc7429738c8bc9d"><div class="ttname"><a href="namespacevrv.html#a3d7cd8ac330cc53fddc7429738c8bc9d">vrv::data_BEATRPT_REND</a></div><div class="ttdeci">data_BEATRPT_REND</div><div class="ttdoc">MEI data.BEATRPT_REND.</div><div class="ttdef"><b>Definition:</b> attdef.h:86</div></div>
+<div class="ttc" id="anamespacevrv_html_a188ba92f38a2d40af57aa0029ffc37f5"><div class="ttname"><a href="namespacevrv.html#a188ba92f38a2d40af57aa0029ffc37f5">vrv::data_FONTSIZENUMERIC</a></div><div class="ttdeci">double data_FONTSIZENUMERIC</div><div class="ttdoc">MEI data.FONTSIZENUMERIC.</div><div class="ttdef"><b>Definition:</b> attdef.h:128</div></div>
 <div class="ttc" id="anamespacevrv_html_a5e51c22c19455203527c31048ac51d29"><div class="ttname"><a href="namespacevrv.html#a5e51c22c19455203527c31048ac51d29">vrv::data_VU</a></div><div class="ttdeci">double data_VU</div><div class="ttdoc">MEI virtual unit;.</div><div class="ttdef"><b>Definition:</b> attdef.h:31</div></div>
-<div class="ttc" id="anamespacevrv_html_a8e8a28ecfcd7db8a3be6fdc1ae4150d2"><div class="ttname"><a href="namespacevrv.html#a8e8a28ecfcd7db8a3be6fdc1ae4150d2">vrv::data_PITCHNAME_GES</a></div><div class="ttdeci">data_PITCHNAME_GES</div><div class="ttdoc">MEI data.PITCHNAME.GES.</div><div class="ttdef"><b>Definition:</b> attdef.h:240</div></div>
-<div class="ttc" id="anamespacevrv_html_a5e7157052cf13dc0f22d4c5141737507"><div class="ttname"><a href="namespacevrv.html#a5e7157052cf13dc0f22d4c5141737507">vrv::data_TEMPUS</a></div><div class="ttdeci">data_TEMPUS</div><div class="ttdoc">MEI data.TEMPUS NONE is -3 for perfect value (abs) by default.</div><div class="ttdef"><b>Definition:</b> attdef.h:272</div></div>
-<div class="ttc" id="anamespacevrv_html_a284ae096c03bb2bbeb3ec5439f618922"><div class="ttname"><a href="namespacevrv.html#a284ae096c03bb2bbeb3ec5439f618922">vrv::data_PERCENT</a></div><div class="ttdeci">double data_PERCENT</div><div class="ttdoc">MEI data.PERCENT.</div><div class="ttdef"><b>Definition:</b> attdef.h:211</div></div>
-<div class="ttc" id="anamespacevrv_html_a1ee2ee7a57f8a27b9bb660ef88f4862a"><div class="ttname"><a href="namespacevrv.html#a1ee2ee7a57f8a27b9bb660ef88f4862a">vrv::data_PERCENT_LIMITED_SIGNED</a></div><div class="ttdeci">double data_PERCENT_LIMITED_SIGNED</div><div class="ttdoc">MEI data.PERCENT.</div><div class="ttdef"><b>Definition:</b> attdef.h:221</div></div>
-<div class="ttc" id="anamespacevrv_html_a5ea92f0d2c7022d066158cda68265c8e"><div class="ttname"><a href="namespacevrv.html#a5ea92f0d2c7022d066158cda68265c8e">vrv::data_MIDIBPM</a></div><div class="ttdeci">int data_MIDIBPM</div><div class="ttdoc">MEI data.MIDIBPM.</div><div class="ttdef"><b>Definition:</b> attdef.h:159</div></div>
-<div class="ttc" id="anamespacevrv_html_add58cfe5380deee743ac6b040b7997d8"><div class="ttname"><a href="namespacevrv.html#add58cfe5380deee743ac6b040b7997d8">vrv::data_MIDIMSPB</a></div><div class="ttdeci">int data_MIDIMSPB</div><div class="ttdoc">MEI data.MIDIMSPB.</div><div class="ttdef"><b>Definition:</b> attdef.h:169</div></div>
-<div class="ttc" id="anamespacevrv_html_ab08bdf7d616704e08e1ef36454402a21"><div class="ttname"><a href="namespacevrv.html#ab08bdf7d616704e08e1ef36454402a21">vrv::data_HEXNUM</a></div><div class="ttdeci">wchar_t data_HEXNUM</div><div class="ttdoc">MEI data.HEXNUM.</div><div class="ttdef"><b>Definition:</b> attdef.h:132</div></div>
-<div class="ttc" id="anamespacevrv_html_aa7c7517df9aacc51f8ab0bf6a88df736"><div class="ttname"><a href="namespacevrv.html#aa7c7517df9aacc51f8ab0bf6a88df736">vrv::xsdPositiveInteger_List</a></div><div class="ttdeci">std::vector&lt; int &gt; xsdPositiveInteger_List</div><div class="ttdoc">A typedef for a list of positive integer.</div><div class="ttdef"><b>Definition:</b> attdef.h:284</div></div>
-<div class="ttc" id="anamespacevrv_html_a3221b377d300bfdf48e6b965f2e4ef0a"><div class="ttname"><a href="namespacevrv.html#a3221b377d300bfdf48e6b965f2e4ef0a">vrv::data_NCNAME</a></div><div class="ttdeci">std::string data_NCNAME</div><div class="ttdoc">MEI data.MIDIVALUE.</div><div class="ttdef"><b>Definition:</b> attdef.h:191</div></div>
-<div class="ttc" id="anamespacevrv_html_ad11a81d64d9f3981b070f830ccff8093"><div class="ttname"><a href="namespacevrv.html#ad11a81d64d9f3981b070f830ccff8093">vrv::data_OCTAVE</a></div><div class="ttdeci">signed char data_OCTAVE</div><div class="ttdoc">MEI data.OCTAVE.</div><div class="ttdef"><b>Definition:</b> attdef.h:201</div></div>
-<div class="ttc" id="anamespacevrv_html_abb508abb62c9b2dc9a44f745957ebb26"><div class="ttname"><a href="namespacevrv.html#abb508abb62c9b2dc9a44f745957ebb26">vrv::data_PERCENT_LIMITED</a></div><div class="ttdeci">double data_PERCENT_LIMITED</div><div class="ttdoc">MEI data.PERCENT.</div><div class="ttdef"><b>Definition:</b> attdef.h:216</div></div>
-<div class="ttc" id="anamespacevrv_html_a4bb88652700f3a9cfdc14cde5b40c003"><div class="ttname"><a href="namespacevrv.html#a4bb88652700f3a9cfdc14cde5b40c003">vrv::data_SUMMAND_List</a></div><div class="ttdeci">std::vector&lt; int &gt; data_SUMMAND_List</div><div class="ttdoc">A typedef for a list of integer summands.</div><div class="ttdef"><b>Definition:</b> attdef.h:261</div></div>
-<div class="ttc" id="anamespacevrv_html_a8db369e1cc861dfd36f7534cfb354ea9"><div class="ttname"><a href="namespacevrv.html#a8db369e1cc861dfd36f7534cfb354ea9">vrv::data_TIE</a></div><div class="ttdeci">data_TIE</div><div class="ttdoc">MEI data.TIE.</div><div class="ttdef"><b>Definition:</b> attdef.h:266</div></div>
-<div class="ttc" id="anamespacevrv_html_a3df7e8419a61cb7e2aa14b0d2cf4b1f9"><div class="ttname"><a href="namespacevrv.html#a3df7e8419a61cb7e2aa14b0d2cf4b1f9">vrv::data_MEASUREMENTABS</a></div><div class="ttdeci">data_VU data_MEASUREMENTABS</div><div class="ttdoc">MEI data.MEASUREMENTABS.</div><div class="ttdef"><b>Definition:</b> attdef.h:149</div></div>
-<div class="ttc" id="anamespacevrv_html_a7a53db34337e2748e3f1d945017bfbce"><div class="ttname"><a href="namespacevrv.html#a7a53db34337e2748e3f1d945017bfbce">vrv::data_MODUSMAIOR</a></div><div class="ttdeci">data_MODUSMAIOR</div><div class="ttdoc">MEI data.MODUSMAIOR NONE is -3 for perfect value (abs) by default.</div><div class="ttdef"><b>Definition:</b> attdef.h:180</div></div>
-<div class="ttc" id="anamespacevrv_html_a2bd8f760fccdf76e2f41894ca0431d4e"><div class="ttname"><a href="namespacevrv.html#a2bd8f760fccdf76e2f41894ca0431d4e">vrv::data_DURATION</a></div><div class="ttdeci">data_DURATION</div><div class="ttdoc">MEI data.DURATION.</div><div class="ttdef"><b>Definition:</b> attdef.h:98</div></div>
+<div class="ttc" id="anamespacevrv_html_a8e8a28ecfcd7db8a3be6fdc1ae4150d2"><div class="ttname"><a href="namespacevrv.html#a8e8a28ecfcd7db8a3be6fdc1ae4150d2">vrv::data_PITCHNAME_GES</a></div><div class="ttdeci">data_PITCHNAME_GES</div><div class="ttdoc">MEI data.PITCHNAME.GES.</div><div class="ttdef"><b>Definition:</b> attdef.h:241</div></div>
+<div class="ttc" id="anamespacevrv_html_a5e7157052cf13dc0f22d4c5141737507"><div class="ttname"><a href="namespacevrv.html#a5e7157052cf13dc0f22d4c5141737507">vrv::data_TEMPUS</a></div><div class="ttdeci">data_TEMPUS</div><div class="ttdoc">MEI data.TEMPUS NONE is -3 for perfect value (abs) by default.</div><div class="ttdef"><b>Definition:</b> attdef.h:273</div></div>
+<div class="ttc" id="anamespacevrv_html_a284ae096c03bb2bbeb3ec5439f618922"><div class="ttname"><a href="namespacevrv.html#a284ae096c03bb2bbeb3ec5439f618922">vrv::data_PERCENT</a></div><div class="ttdeci">double data_PERCENT</div><div class="ttdoc">MEI data.PERCENT.</div><div class="ttdef"><b>Definition:</b> attdef.h:212</div></div>
+<div class="ttc" id="anamespacevrv_html_a1ee2ee7a57f8a27b9bb660ef88f4862a"><div class="ttname"><a href="namespacevrv.html#a1ee2ee7a57f8a27b9bb660ef88f4862a">vrv::data_PERCENT_LIMITED_SIGNED</a></div><div class="ttdeci">double data_PERCENT_LIMITED_SIGNED</div><div class="ttdoc">MEI data.PERCENT.</div><div class="ttdef"><b>Definition:</b> attdef.h:222</div></div>
+<div class="ttc" id="anamespacevrv_html_a5ea92f0d2c7022d066158cda68265c8e"><div class="ttname"><a href="namespacevrv.html#a5ea92f0d2c7022d066158cda68265c8e">vrv::data_MIDIBPM</a></div><div class="ttdeci">int data_MIDIBPM</div><div class="ttdoc">MEI data.MIDIBPM.</div><div class="ttdef"><b>Definition:</b> attdef.h:160</div></div>
+<div class="ttc" id="anamespacevrv_html_add58cfe5380deee743ac6b040b7997d8"><div class="ttname"><a href="namespacevrv.html#add58cfe5380deee743ac6b040b7997d8">vrv::data_MIDIMSPB</a></div><div class="ttdeci">int data_MIDIMSPB</div><div class="ttdoc">MEI data.MIDIMSPB.</div><div class="ttdef"><b>Definition:</b> attdef.h:170</div></div>
+<div class="ttc" id="anamespacevrv_html_ab08bdf7d616704e08e1ef36454402a21"><div class="ttname"><a href="namespacevrv.html#ab08bdf7d616704e08e1ef36454402a21">vrv::data_HEXNUM</a></div><div class="ttdeci">wchar_t data_HEXNUM</div><div class="ttdoc">MEI data.HEXNUM.</div><div class="ttdef"><b>Definition:</b> attdef.h:133</div></div>
+<div class="ttc" id="anamespacevrv_html_aa7c7517df9aacc51f8ab0bf6a88df736"><div class="ttname"><a href="namespacevrv.html#aa7c7517df9aacc51f8ab0bf6a88df736">vrv::xsdPositiveInteger_List</a></div><div class="ttdeci">std::vector&lt; int &gt; xsdPositiveInteger_List</div><div class="ttdoc">A typedef for a list of positive integer.</div><div class="ttdef"><b>Definition:</b> attdef.h:285</div></div>
+<div class="ttc" id="anamespacevrv_html_a3221b377d300bfdf48e6b965f2e4ef0a"><div class="ttname"><a href="namespacevrv.html#a3221b377d300bfdf48e6b965f2e4ef0a">vrv::data_NCNAME</a></div><div class="ttdeci">std::string data_NCNAME</div><div class="ttdoc">MEI data.MIDIVALUE.</div><div class="ttdef"><b>Definition:</b> attdef.h:192</div></div>
+<div class="ttc" id="anamespacevrv_html_ad11a81d64d9f3981b070f830ccff8093"><div class="ttname"><a href="namespacevrv.html#ad11a81d64d9f3981b070f830ccff8093">vrv::data_OCTAVE</a></div><div class="ttdeci">signed char data_OCTAVE</div><div class="ttdoc">MEI data.OCTAVE.</div><div class="ttdef"><b>Definition:</b> attdef.h:202</div></div>
+<div class="ttc" id="anamespacevrv_html_abb508abb62c9b2dc9a44f745957ebb26"><div class="ttname"><a href="namespacevrv.html#abb508abb62c9b2dc9a44f745957ebb26">vrv::data_PERCENT_LIMITED</a></div><div class="ttdeci">double data_PERCENT_LIMITED</div><div class="ttdoc">MEI data.PERCENT.</div><div class="ttdef"><b>Definition:</b> attdef.h:217</div></div>
+<div class="ttc" id="anamespacevrv_html_a4bb88652700f3a9cfdc14cde5b40c003"><div class="ttname"><a href="namespacevrv.html#a4bb88652700f3a9cfdc14cde5b40c003">vrv::data_SUMMAND_List</a></div><div class="ttdeci">std::vector&lt; int &gt; data_SUMMAND_List</div><div class="ttdoc">A typedef for a list of integer summands.</div><div class="ttdef"><b>Definition:</b> attdef.h:262</div></div>
+<div class="ttc" id="anamespacevrv_html_a8db369e1cc861dfd36f7534cfb354ea9"><div class="ttname"><a href="namespacevrv.html#a8db369e1cc861dfd36f7534cfb354ea9">vrv::data_TIE</a></div><div class="ttdeci">data_TIE</div><div class="ttdoc">MEI data.TIE.</div><div class="ttdef"><b>Definition:</b> attdef.h:267</div></div>
+<div class="ttc" id="anamespacevrv_html_a3df7e8419a61cb7e2aa14b0d2cf4b1f9"><div class="ttname"><a href="namespacevrv.html#a3df7e8419a61cb7e2aa14b0d2cf4b1f9">vrv::data_MEASUREMENTABS</a></div><div class="ttdeci">data_VU data_MEASUREMENTABS</div><div class="ttdoc">MEI data.MEASUREMENTABS.</div><div class="ttdef"><b>Definition:</b> attdef.h:150</div></div>
+<div class="ttc" id="anamespacevrv_html_a7a53db34337e2748e3f1d945017bfbce"><div class="ttname"><a href="namespacevrv.html#a7a53db34337e2748e3f1d945017bfbce">vrv::data_MODUSMAIOR</a></div><div class="ttdeci">data_MODUSMAIOR</div><div class="ttdoc">MEI data.MODUSMAIOR NONE is -3 for perfect value (abs) by default.</div><div class="ttdef"><b>Definition:</b> attdef.h:181</div></div>
+<div class="ttc" id="anamespacevrv_html_a2bd8f760fccdf76e2f41894ca0431d4e"><div class="ttname"><a href="namespacevrv.html#a2bd8f760fccdf76e2f41894ca0431d4e">vrv::data_DURATION</a></div><div class="ttdeci">data_DURATION</div><div class="ttdoc">MEI data.DURATION.</div><div class="ttdef"><b>Definition:</b> attdef.h:99</div></div>
 <div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
-<div class="ttc" id="anamespacevrv_html_a6f058bbad901321f6994737c7aa1f87b"><div class="ttname"><a href="namespacevrv.html#a6f058bbad901321f6994737c7aa1f87b">vrv::data_MEASUREBEAT</a></div><div class="ttdeci">std::pair&lt; int, double &gt; data_MEASUREBEAT</div><div class="ttdoc">MEI data.MEASUREBEAT.</div><div class="ttdef"><b>Definition:</b> attdef.h:144</div></div>
-<div class="ttc" id="anamespacevrv_html_ad9287a721cd0413eda2f733fe25120de"><div class="ttname"><a href="namespacevrv.html#ad9287a721cd0413eda2f733fe25120de">vrv::xsdAnyURI_List</a></div><div class="ttdeci">std::vector&lt; std::string &gt; xsdAnyURI_List</div><div class="ttdoc">A typedef for a list of data.URI integer.</div><div class="ttdef"><b>Definition:</b> attdef.h:278</div></div>
-<div class="ttc" id="anamespacevrv_html_a67e112c2e04934448a03c3c57dd46c69"><div class="ttname"><a href="namespacevrv.html#a67e112c2e04934448a03c3c57dd46c69">vrv::data_MIDIVALUE</a></div><div class="ttdeci">int data_MIDIVALUE</div><div class="ttdoc">MEI data.MIDIVALUE.</div><div class="ttdef"><b>Definition:</b> attdef.h:174</div></div>
-<div class="ttc" id="anamespacevrv_html_a99f7d030378fcc11eea0d17d4f31394d"><div class="ttname"><a href="namespacevrv.html#a99f7d030378fcc11eea0d17d4f31394d">vrv::data_KEYSIGNATURE</a></div><div class="ttdeci">std::pair&lt; int, data_ACCIDENTAL_WRITTEN &gt; data_KEYSIGNATURE</div><div class="ttdoc">MEI data.KEYSIGNATURE default (unset) is -1; ACCIDENTAL_WRITTEN_NONE &quot;mixed&quot; is VRV_UNSET; ACCITENTDA...</div><div class="ttdef"><b>Definition:</b> attdef.h:139</div></div>
-<div class="ttc" id="anamespacevrv_html_a763b3dc2bc4762f44b62b766ef571d4a"><div class="ttname"><a href="namespacevrv.html#a763b3dc2bc4762f44b62b766ef571d4a">vrv::data_ARTICULATION_List</a></div><div class="ttdeci">std::vector&lt; data_ARTICULATION &gt; data_ARTICULATION_List</div><div class="ttdoc">The following defines are hand-coded and were not generated by libmei as the ones in .</div><div class="ttdef"><b>Definition:</b> attdef.h:80</div></div>
-<div class="ttc" id="anamespacevrv_html_ad5d35b0f189ce219a69f21048528546d"><div class="ttname"><a href="namespacevrv.html#ad5d35b0f189ce219a69f21048528546d">vrv::data_MODUSMINOR</a></div><div class="ttdeci">data_MODUSMINOR</div><div class="ttdoc">MEI data.MODUSMINOR NONE is -3 for perfect value (abs) by default.</div><div class="ttdef"><b>Definition:</b> attdef.h:186</div></div>
-<div class="ttc" id="anamespacevrv_html_a8a19df71e38b10ca359d0052d1fdba70"><div class="ttname"><a href="namespacevrv.html#a8a19df71e38b10ca359d0052d1fdba70">vrv::data_PITCHNAME</a></div><div class="ttdeci">data_PITCHNAME</div><div class="ttdoc">MEI data.PITCHNAME.</div><div class="ttdef"><b>Definition:</b> attdef.h:226</div></div>
-<div class="ttc" id="anamespacevrv_html_a3b153aa4aecd6e24386aa8c24816f5f2"><div class="ttname"><a href="namespacevrv.html#a3b153aa4aecd6e24386aa8c24816f5f2">vrv::data_MIDICHANNEL</a></div><div class="ttdeci">int data_MIDICHANNEL</div><div class="ttdoc">MEI data.MIDICHANNEL.</div><div class="ttdef"><b>Definition:</b> attdef.h:164</div></div>
+<div class="ttc" id="anamespacevrv_html_a6f058bbad901321f6994737c7aa1f87b"><div class="ttname"><a href="namespacevrv.html#a6f058bbad901321f6994737c7aa1f87b">vrv::data_MEASUREBEAT</a></div><div class="ttdeci">std::pair&lt; int, double &gt; data_MEASUREBEAT</div><div class="ttdoc">MEI data.MEASUREBEAT.</div><div class="ttdef"><b>Definition:</b> attdef.h:145</div></div>
+<div class="ttc" id="anamespacevrv_html_ad9287a721cd0413eda2f733fe25120de"><div class="ttname"><a href="namespacevrv.html#ad9287a721cd0413eda2f733fe25120de">vrv::xsdAnyURI_List</a></div><div class="ttdeci">std::vector&lt; std::string &gt; xsdAnyURI_List</div><div class="ttdoc">A typedef for a list of data.URI integer.</div><div class="ttdef"><b>Definition:</b> attdef.h:279</div></div>
+<div class="ttc" id="anamespacevrv_html_a67e112c2e04934448a03c3c57dd46c69"><div class="ttname"><a href="namespacevrv.html#a67e112c2e04934448a03c3c57dd46c69">vrv::data_MIDIVALUE</a></div><div class="ttdeci">int data_MIDIVALUE</div><div class="ttdoc">MEI data.MIDIVALUE.</div><div class="ttdef"><b>Definition:</b> attdef.h:175</div></div>
+<div class="ttc" id="anamespacevrv_html_a99f7d030378fcc11eea0d17d4f31394d"><div class="ttname"><a href="namespacevrv.html#a99f7d030378fcc11eea0d17d4f31394d">vrv::data_KEYSIGNATURE</a></div><div class="ttdeci">std::pair&lt; int, data_ACCIDENTAL_WRITTEN &gt; data_KEYSIGNATURE</div><div class="ttdoc">MEI data.KEYSIGNATURE default (unset) is -1; ACCIDENTAL_WRITTEN_NONE &quot;mixed&quot; is VRV_UNSET; ACCITENTDA...</div><div class="ttdef"><b>Definition:</b> attdef.h:140</div></div>
+<div class="ttc" id="anamespacevrv_html_a763b3dc2bc4762f44b62b766ef571d4a"><div class="ttname"><a href="namespacevrv.html#a763b3dc2bc4762f44b62b766ef571d4a">vrv::data_ARTICULATION_List</a></div><div class="ttdeci">std::vector&lt; data_ARTICULATION &gt; data_ARTICULATION_List</div><div class="ttdoc">The following defines are hand-coded and were not generated by libmei as the ones in .</div><div class="ttdef"><b>Definition:</b> attdef.h:81</div></div>
+<div class="ttc" id="anamespacevrv_html_ad5d35b0f189ce219a69f21048528546d"><div class="ttname"><a href="namespacevrv.html#ad5d35b0f189ce219a69f21048528546d">vrv::data_MODUSMINOR</a></div><div class="ttdeci">data_MODUSMINOR</div><div class="ttdoc">MEI data.MODUSMINOR NONE is -3 for perfect value (abs) by default.</div><div class="ttdef"><b>Definition:</b> attdef.h:187</div></div>
+<div class="ttc" id="anamespacevrv_html_a8a19df71e38b10ca359d0052d1fdba70"><div class="ttname"><a href="namespacevrv.html#a8a19df71e38b10ca359d0052d1fdba70">vrv::data_PITCHNAME</a></div><div class="ttdeci">data_PITCHNAME</div><div class="ttdoc">MEI data.PITCHNAME.</div><div class="ttdef"><b>Definition:</b> attdef.h:227</div></div>
+<div class="ttc" id="anamespacevrv_html_a3b153aa4aecd6e24386aa8c24816f5f2"><div class="ttname"><a href="namespacevrv.html#a3b153aa4aecd6e24386aa8c24816f5f2">vrv::data_MIDICHANNEL</a></div><div class="ttdeci">int data_MIDICHANNEL</div><div class="ttdoc">MEI data.MIDICHANNEL.</div><div class="ttdef"><b>Definition:</b> attdef.h:165</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>attdef.h</b></li>
-    <li class="footer">Generated on Fri Jan 14 2022 07:08:32 for Verovio by
+    <li class="footer">Generated on Fri Jan 14 2022 08:56:35 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

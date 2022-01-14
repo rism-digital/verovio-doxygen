@@ -6,6 +6,7 @@ var classvrv_1_1_staff_def =
     [ "GetClassName", "classvrv_1_1_staff_def.html#a98c17585c4d7ee0877e9794d6b73e0c2", null ],
     [ "GetDrawingVisibility", "classvrv_1_1_staff_def.html#ac00775b16a0b570eb727442fd181852d", null ],
     [ "IsSupportedChild", "classvrv_1_1_staff_def.html#af1ecece5715ab0974b7d33407e566166", null ],
+    [ "PrepareDuration", "classvrv_1_1_staff_def.html#a038e2f30c55de4451a60772969678129", null ],
     [ "ReplaceDrawingValuesInStaffDef", "classvrv_1_1_staff_def.html#a1e0b6c30f24d640efdcee7d9a6f868aa", null ],
     [ "Reset", "classvrv_1_1_staff_def.html#a5b130da96f4e9bf269dc12fd2c5f1952", null ],
     [ "SetDrawingVisibility", "classvrv_1_1_staff_def.html#a150107fdc8ac0951b9b506b208a75fd5", null ],

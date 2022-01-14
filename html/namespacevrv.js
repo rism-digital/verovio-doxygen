@@ -246,6 +246,7 @@ var namespacevrv =
     [ "PositionInterface", "classvrv_1_1_position_interface.html", "classvrv_1_1_position_interface" ],
     [ "PrepareCrossStaffParams", "classvrv_1_1_prepare_cross_staff_params.html", "classvrv_1_1_prepare_cross_staff_params" ],
     [ "PrepareDelayedTurnsParams", "classvrv_1_1_prepare_delayed_turns_params.html", "classvrv_1_1_prepare_delayed_turns_params" ],
+    [ "PrepareDurationParams", "classvrv_1_1_prepare_duration_params.html", "classvrv_1_1_prepare_duration_params" ],
     [ "PrepareFacsimileParams", "classvrv_1_1_prepare_facsimile_params.html", "classvrv_1_1_prepare_facsimile_params" ],
     [ "PrepareFloatingGrpsParams", "classvrv_1_1_prepare_floating_grps_params.html", "classvrv_1_1_prepare_floating_grps_params" ],
     [ "PrepareLinkingParams", "classvrv_1_1_prepare_linking_params.html", "classvrv_1_1_prepare_linking_params" ],

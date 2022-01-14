@@ -209,6 +209,14 @@ var hierarchy =
     [ "AttDotLog", null, [
       [ "vrv::Dot", "classvrv_1_1_dot.html", null ]
     ] ],
+    [ "AttDurationDefault", null, [
+      [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", [
+        [ "vrv::ScoreDefElement", "classvrv_1_1_score_def_element.html", [
+          [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
+          [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "AttDurationGestural", null, [
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ]
     ] ],
@@ -420,12 +428,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "AttLyricStyle", null, [
-      [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", [
-        [ "vrv::ScoreDefElement", "classvrv_1_1_score_def_element.html", [
-          [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
-          [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
-        ] ]
-      ] ]
+      [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ]
     ] ],
     [ "AttMeasureLog", null, [
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ]
@@ -976,6 +979,7 @@ var hierarchy =
       [ "vrv::LayerElementsInTimeSpanParams", "classvrv_1_1_layer_elements_in_time_span_params.html", null ],
       [ "vrv::PrepareCrossStaffParams", "classvrv_1_1_prepare_cross_staff_params.html", null ],
       [ "vrv::PrepareDelayedTurnsParams", "classvrv_1_1_prepare_delayed_turns_params.html", null ],
+      [ "vrv::PrepareDurationParams", "classvrv_1_1_prepare_duration_params.html", null ],
       [ "vrv::PrepareFacsimileParams", "classvrv_1_1_prepare_facsimile_params.html", null ],
       [ "vrv::PrepareFloatingGrpsParams", "classvrv_1_1_prepare_floating_grps_params.html", null ],
       [ "vrv::PrepareLinkingParams", "classvrv_1_1_prepare_linking_params.html", null ],

@@ -62,6 +62,7 @@ var classvrv_1_1_layer_element =
     [ "PrepareCrossStaffEnd", "classvrv_1_1_layer_element.html#a55dc696b80e010d43afc80ab50188be7", null ],
     [ "PrepareDelayedTurns", "classvrv_1_1_layer_element.html#aa93e89c2df59f5c6c8d345d680fce3ae", null ],
     [ "PrepareDrawingCueSize", "classvrv_1_1_layer_element.html#a3ab05c1403c251827faeb3cc3e833bd9", null ],
+    [ "PrepareDuration", "classvrv_1_1_layer_element.html#a65909f1b435e1059b76f60ab9f5d274e", null ],
     [ "PreparePointersByLayer", "classvrv_1_1_layer_element.html#a3961a12ae3b3bc042019786854fc9daf", null ],
     [ "PrepareSlurs", "classvrv_1_1_layer_element.html#ab810c9858f5a32391639521b9b93116c", null ],
     [ "PrepareTimePointing", "classvrv_1_1_layer_element.html#a2481d8e3ecfedc3ae4b24b3f9745b009", null ],

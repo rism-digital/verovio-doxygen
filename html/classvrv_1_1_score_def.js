@@ -24,6 +24,7 @@ var classvrv_1_1_score_def =
     [ "IsSectionRestart", "classvrv_1_1_score_def.html#af88f39cb48aa8df39f4c8de5860a500c", null ],
     [ "IsSupportedChild", "classvrv_1_1_score_def.html#aacaaa2222c639bbff720298403b3e9da", null ],
     [ "JustifyX", "classvrv_1_1_score_def.html#a6ec6aed367b28a407b914d2f9773d8ce", null ],
+    [ "PrepareDuration", "classvrv_1_1_score_def.html#aa73d435a0c9fef071d83fdb0da136cbb", null ],
     [ "ReplaceDrawingLabels", "classvrv_1_1_score_def.html#a07288108030c6de09de0cfad0eef5724", null ],
     [ "ReplaceDrawingValues", "classvrv_1_1_score_def.html#a1225a27011925b11b208356a11bebdd3", null ],
     [ "ReplaceDrawingValues", "classvrv_1_1_score_def.html#a9c783c24225cb3b84f2096cbc727cbca", null ],

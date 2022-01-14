@@ -74,6 +74,7 @@ var classvrv_1_1_doc =
     [ "GetTextXHeight", "classvrv_1_1_doc.html#a3429ee3432a4058ae34ae9eccfe9d0fd", null ],
     [ "GetTopMargin", "classvrv_1_1_doc.html#ace174d712f8281af1ef91a51f67acad9", null ],
     [ "GetType", "classvrv_1_1_doc.html#a213c6fa5fa357db062f4b86665689e44", null ],
+    [ "HasCurrentScore", "classvrv_1_1_doc.html#a2b019b663fb7916ddf5874df67bd28e5", null ],
     [ "HasFacsimile", "classvrv_1_1_doc.html#a047c911499ccc787cb9288792ead88b9", null ],
     [ "HasMidiTimemap", "classvrv_1_1_doc.html#afaf7e1be6f9e7737884383c2e20e1ee6", null ],
     [ "HasPage", "classvrv_1_1_doc.html#a7629eb7f06402cbd2d1ca31fbd122941", null ],

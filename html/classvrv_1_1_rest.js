@@ -12,6 +12,7 @@ var classvrv_1_1_rest =
     [ "GetOptimalLayerLocation", "classvrv_1_1_rest.html#a3579490f4b1be6f6f6ca45384000a151", null ],
     [ "GetPositionInterface", "classvrv_1_1_rest.html#ac7bf04a331feb93bdd02d4b477776304", null ],
     [ "GetRestGlyph", "classvrv_1_1_rest.html#a8fef749e4b295396a681d123634a926d", null ],
+    [ "GetRestGlyph", "classvrv_1_1_rest.html#a32bb8c72bb48a71f4d7c7c24d83dbc6b", null ],
     [ "HasToBeAligned", "classvrv_1_1_rest.html#a80065d5795046cf1ebaf9c01b80cd897", null ],
     [ "IsSupportedChild", "classvrv_1_1_rest.html#a440179df00a09ea5e7892e0c5eff5695", null ],
     [ "PrepareLayerElementParts", "classvrv_1_1_rest.html#a0c50fc33ac92d7010f620b1a9e16aa64", null ],
