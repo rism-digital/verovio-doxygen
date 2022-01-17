@@ -1,5 +1,11 @@
 var NAVTREEINDEX8 =
 {
+"classvrv_1_1_humdrum_input.html#a77e9abee7e5765851e333acdea1f6e0c":[2,0,0,153,199],
+"classvrv_1_1_humdrum_input.html#a789990da73831fe3fa775dc306a994b8":[2,0,0,153,289],
+"classvrv_1_1_humdrum_input.html#a79def1f5f3a8b3400cd70586995cd14a":[2,0,0,153,183],
+"classvrv_1_1_humdrum_input.html#a7aab99b94990c6919aa36afd71897ad5":[2,0,0,153,343],
+"classvrv_1_1_humdrum_input.html#a7f84e7c8386ec3a054ec5154a8e47f36":[2,0,0,153,7],
+"classvrv_1_1_humdrum_input.html#a808bbc6c0962f30e1694f13b4cf33389":[2,0,0,153,70],
 "classvrv_1_1_humdrum_input.html#a8191d8cab90dc91e98bde2c09fd2e97b":[2,0,0,153,313],
 "classvrv_1_1_humdrum_input.html#a823c8ec47d1b6f588865efbe992e07be":[2,0,0,153,328],
 "classvrv_1_1_humdrum_input.html#a8258a8fa6d3bf4ca3b6f98877e0ffd0c":[2,0,0,153,20],
@@ -243,11 +249,5 @@ var NAVTREEINDEX8 =
 "classvrv_1_1_is_attribute_comparison.html":[2,0,0,160],
 "classvrv_1_1_is_attribute_comparison.html#a5b86383480a34b9988a2d68617b96c59":[2,0,0,160,1],
 "classvrv_1_1_is_attribute_comparison.html#aab4a1e6104d78373de7106f7762f0836":[2,0,0,160,0],
-"classvrv_1_1_is_editorial_element_comparison.html":[2,0,0,161],
-"classvrv_1_1_is_editorial_element_comparison.html#a7753db9bbfa95c25e94e80e94eb03fb0":[2,0,0,161,0],
-"classvrv_1_1_is_editorial_element_comparison.html#a800c5c4e2bb92d280529c85995996d61":[2,0,0,161,1],
-"classvrv_1_1_is_editorial_element_comparison.html#aa6500110ef9423f9d4c457d8dd5cda5e":[2,0,0,161,2],
-"classvrv_1_1_is_empty_comparison.html":[2,0,0,162],
-"classvrv_1_1_is_empty_comparison.html#a1f39746a5c83c665fbc48e58f594838b":[2,0,0,162,0],
-"classvrv_1_1_is_empty_comparison.html#ab02a8a192b03a2e9c8bfaec76c178f94":[2,0,0,162,1]
+"classvrv_1_1_is_editorial_element_comparison.html":[2,0,0,161]
 };

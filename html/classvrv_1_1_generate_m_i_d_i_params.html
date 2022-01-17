@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('classvrv_1_1_generate_m_i_d_i_params.h
 </div><!--header-->
 <div class="contents">
 
-<p>member 0: MidiFile*: the MidiFile we are writing to member 1: int: the midi track number member 3: double: the score time from the start of the music to the start of the current measure member 4: int: the semi tone transposition for the current track member 5: double with the current tempo member 6: expanded notes due to ornaments and tremolandi  
+<p>member 0: MidiFile*: the MidiFile we are writing to member 1: int: the midi track number member 3: double: the score time from the start of the music to the start of the current measure member 4: int: the semi tone transposition for the current track member 5: double with the current tempo member 6: the last (non grace) note that was performed member 7: expanded notes due to ornaments and tremolandi member 8: deferred notes which start slightly later member 9: grace note sequence member 10: flag indicating whether the last grace note/chord was accented member 11: the functor  
  <a href="classvrv_1_1_generate_m_i_d_i_params.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="functorparams_8h_source.html">functorparams.h</a>&gt;</code></p>
@@ -132,15 +132,27 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_transSemi</b></td></
 <tr class="memitem:a7ca852b307bdfa0085e79ea9004238e0"><td class="memItemLeft" align="right" valign="top"><a id="a7ca852b307bdfa0085e79ea9004238e0"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentTempo</b></td></tr>
 <tr class="separator:a7ca852b307bdfa0085e79ea9004238e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90f0275f47df6d8872b275954b988bf"><td class="memItemLeft" align="right" valign="top"><a id="aa90f0275f47df6d8872b275954b988bf"></a>
+<a class="el" href="classvrv_1_1_note.html">Note</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastNote</b></td></tr>
+<tr class="separator:aa90f0275f47df6d8872b275954b988bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a074178c8dc189e48de3e862346012808"><td class="memItemLeft" align="right" valign="top"><a id="a074178c8dc189e48de3e862346012808"></a>
 std::map&lt; <a class="el" href="classvrv_1_1_note.html">Note</a> *, MIDINoteSequence &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_expandedNotes</b></td></tr>
 <tr class="separator:a074178c8dc189e48de3e862346012808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92b29a93fa4f2b3914d6eef22f1b0075"><td class="memItemLeft" align="right" valign="top"><a id="a92b29a93fa4f2b3914d6eef22f1b0075"></a>
+std::map&lt; <a class="el" href="classvrv_1_1_note.html">Note</a> *, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_deferredNotes</b></td></tr>
+<tr class="separator:a92b29a93fa4f2b3914d6eef22f1b0075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e72e1397d5975beea57644d9d40801"><td class="memItemLeft" align="right" valign="top"><a id="a90e72e1397d5975beea57644d9d40801"></a>
+MIDIChordSequence&#160;</td><td class="memItemRight" valign="bottom"><b>m_graceNotes</b></td></tr>
+<tr class="separator:a90e72e1397d5975beea57644d9d40801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd25715766f83579f964dde56d219d8"><td class="memItemLeft" align="right" valign="top"><a id="a8cd25715766f83579f964dde56d219d8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_accentedGraceNote</b></td></tr>
+<tr class="separator:a8cd25715766f83579f964dde56d219d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a099869302dfba354a6c7dc86214977c1"><td class="memItemLeft" align="right" valign="top"><a id="a099869302dfba354a6c7dc86214977c1"></a>
 <a class="el" href="classvrv_1_1_functor.html">Functor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_functor</b></td></tr>
 <tr class="separator:a099869302dfba354a6c7dc86214977c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>member 0: MidiFile*: the MidiFile we are writing to member 1: int: the midi track number member 3: double: the score time from the start of the music to the start of the current measure member 4: int: the semi tone transposition for the current track member 5: double with the current tempo member 6: expanded notes due to ornaments and tremolandi </p>
+<div class="textblock"><p>member 0: MidiFile*: the MidiFile we are writing to member 1: int: the midi track number member 3: double: the score time from the start of the music to the start of the current measure member 4: int: the semi tone transposition for the current track member 5: double with the current tempo member 6: the last (non grace) note that was performed member 7: expanded notes due to ornaments and tremolandi member 8: deferred notes which start slightly later member 9: grace note sequence member 10: flag indicating whether the last grace note/chord was accented member 11: the functor </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="functorparams_8h_source.html">functorparams.h</a></li>
 </ul>
@@ -150,7 +162,7 @@ std::map&lt; <a class="el" href="classvrv_1_1_note.html">Note</a> *, MIDINoteSeq
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_generate_m_i_d_i_params.html">GenerateMIDIParams</a></li>
-    <li class="footer">Generated on Fri Jan 14 2022 08:56:37 for Verovio by
+    <li class="footer">Generated on Mon Jan 17 2022 12:28:42 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

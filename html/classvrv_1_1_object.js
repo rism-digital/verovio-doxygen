@@ -106,6 +106,7 @@ var classvrv_1_1_object =
     [ "FindSpannedLayerElementsEnd", "classvrv_1_1_object.html#a640fefc0f8ed8697bca36c19d6daf940", null ],
     [ "GenerateFeatures", "classvrv_1_1_object.html#a7ced59f27507ee81372cc12d7f57c8e0", null ],
     [ "GenerateMIDI", "classvrv_1_1_object.html#a426081ffba31e4251a2c36ceeb2a43ba", null ],
+    [ "GenerateMIDIEnd", "classvrv_1_1_object.html#a7c0a63c225e76daa84e102b7d531d645", null ],
     [ "GenerateTimemap", "classvrv_1_1_object.html#abe889073301d6e1dfe55e725b6532948", null ],
     [ "GetAlignmentLeftRight", "classvrv_1_1_object.html#a3eb3c52e16525ed1a559a825fa85e00e", null ],
     [ "GetAncestors", "classvrv_1_1_object.html#a5c7c401a72026eef3181e1aa576b0b6c", null ],

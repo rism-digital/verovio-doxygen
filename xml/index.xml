@@ -1142,6 +1142,7 @@
     <member refid="classvrv_1_1_chord_1af54a296b017c5c4084b8b3e481798430" kind="function"><name>CalcOnsetOffsetEnd</name></member>
     <member refid="classvrv_1_1_chord_1ae425da90c5b322462d29beb9c5723f68" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_chord_1accc42d972b31a8c1678f70ef5b40c46f" kind="function"><name>AdjustCrossStaffContent</name></member>
+    <member refid="classvrv_1_1_chord_1aaf36b83279aee349e173113516cef3bd" kind="function"><name>GenerateMIDI</name></member>
     <member refid="classvrv_1_1_chord_1a3450ad50f0e9c1852c51c69a9fa3e896" kind="function"><name>CalcNoteLocations</name></member>
     <member refid="classvrv_1_1_chord_1ac661746d9397c1251d9b27d7e97689a9" kind="function"><name>CalcDotLocations</name></member>
     <member refid="classvrv_1_1_chord_1a2959fc77a51f47eee777b9a8cd54a959" kind="function"><name>CalcStemDirection</name></member>
@@ -2179,7 +2180,11 @@
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1ab0078b3ff3c9bc63cffba4a01a8bb315" kind="variable"><name>m_totalTime</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1acb7602c62aa7f79a2b15a9104bc0f8e3" kind="variable"><name>m_transSemi</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1a7ca852b307bdfa0085e79ea9004238e0" kind="variable"><name>m_currentTempo</name></member>
+    <member refid="classvrv_1_1_generate_m_i_d_i_params_1aa90f0275f47df6d8872b275954b988bf" kind="variable"><name>m_lastNote</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1a074178c8dc189e48de3e862346012808" kind="variable"><name>m_expandedNotes</name></member>
+    <member refid="classvrv_1_1_generate_m_i_d_i_params_1a92b29a93fa4f2b3914d6eef22f1b0075" kind="variable"><name>m_deferredNotes</name></member>
+    <member refid="classvrv_1_1_generate_m_i_d_i_params_1a90e72e1397d5975beea57644d9d40801" kind="variable"><name>m_graceNotes</name></member>
+    <member refid="classvrv_1_1_generate_m_i_d_i_params_1a8cd25715766f83579f964dde56d219d8" kind="variable"><name>m_accentedGraceNote</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1a099869302dfba354a6c7dc86214977c1" kind="variable"><name>m_functor</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1aca7cbb3730c90a286c78f041dbf8094f" kind="function"><name>GenerateMIDIParams</name></member>
   </compound>
@@ -2263,6 +2268,7 @@
     <member refid="classvrv_1_1_grace_grp_1aa73da189a01c4ed6e5b665b4c0d1431e" kind="function"><name>Clone</name></member>
     <member refid="classvrv_1_1_grace_grp_1a2a4d197e81270af5747371079c4fec7b" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_grace_grp_1ad90052ab336ab589fa7247a8b1b18bf3" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_grace_grp_1aa449526009b43534833ee073009bd5e7" kind="function"><name>GenerateMIDIEnd</name></member>
     <member refid="classvrv_1_1_grace_grp_1a81889cf240d1ee6ab83f2b28d6d267f5" kind="function"><name>IsSupportedChild</name></member>
   </compound>
   <compound refid="classvrv_1_1_grp_sym" kind="class"><name>vrv::GrpSym</name>
@@ -3786,8 +3792,12 @@
     <member refid="classvrv_1_1_meter_sig_grp_1af13279ddd5c9f7810b3c28c448e497d2" kind="function"><name>AlignHorizontally</name></member>
     <member refid="classvrv_1_1_meter_sig_grp_1a30799efa03d8f7a7e5a31a6983a52673" kind="function"><name>FilterList</name></member>
   </compound>
+  <compound refid="structvrv_1_1_m_i_d_i_chord" kind="struct"><name>vrv::MIDIChord</name>
+    <member refid="structvrv_1_1_m_i_d_i_chord_1a5cf3c77c21b83b33489c9f8fb69d2dae" kind="variable"><name>pitches</name></member>
+    <member refid="structvrv_1_1_m_i_d_i_chord_1af4eb3a2b50f0c45f938fec365f5bae97" kind="variable"><name>duration</name></member>
+  </compound>
   <compound refid="structvrv_1_1_m_i_d_i_note" kind="struct"><name>vrv::MIDINote</name>
-    <member refid="structvrv_1_1_m_i_d_i_note_1a1fc8ba2a9c50ec3db16877def29e1e10" kind="variable"><name>pitch</name></member>
+    <member refid="structvrv_1_1_m_i_d_i_note_1ad116154282fde8e30c39fbc0085bbf5a" kind="variable"><name>pitch</name></member>
     <member refid="structvrv_1_1_m_i_d_i_note_1a32128781fed4395e451720d0567ccac1" kind="variable"><name>duration</name></member>
   </compound>
   <compound refid="classvrv_1_1_m_num" kind="class"><name>vrv::MNum</name>
@@ -4043,14 +4053,12 @@
     <member refid="classvrv_1_1_note_1a2a7d88dd8c4f5ff265753e00fa94c574" kind="function"><name>SetScoreTimeOffset</name></member>
     <member refid="classvrv_1_1_note_1af2a5f4d49457dd5ce4e6fed0a4813aec" kind="function"><name>SetRealTimeOffsetSeconds</name></member>
     <member refid="classvrv_1_1_note_1aa2980719a6e9b09b72fc4fc8756d1265" kind="function"><name>SetScoreTimeTiedDuration</name></member>
-    <member refid="classvrv_1_1_note_1ae08d685d01125eb507e7bcecbae9e886" kind="function"><name>CalcMIDIPitch</name></member>
     <member refid="classvrv_1_1_note_1ab7cc30aab401ba0be2d2705720eeedc5" kind="function"><name>GetScoreTimeOnset</name></member>
     <member refid="classvrv_1_1_note_1a103dedd5338c3303df8f4680ebb1b63b" kind="function"><name>GetRealTimeOnsetMilliseconds</name></member>
     <member refid="classvrv_1_1_note_1a0b40ed36a764703c5b390b911dd7a592" kind="function"><name>GetScoreTimeOffset</name></member>
     <member refid="classvrv_1_1_note_1a811919524cab46d6ac823109c861f933" kind="function"><name>GetScoreTimeTiedDuration</name></member>
     <member refid="classvrv_1_1_note_1a89f58f5716c3172278504a5449f1df18" kind="function"><name>GetRealTimeOffsetMilliseconds</name></member>
     <member refid="classvrv_1_1_note_1a5398bb3a2efd98452dc372210d24b5a2" kind="function"><name>GetScoreTimeDuration</name></member>
-    <member refid="classvrv_1_1_note_1aa0ff835f56ad4a1c07ff99fd0b1ee345" kind="function"><name>GetMIDIPitch</name></member>
     <member refid="classvrv_1_1_note_1abce26caa4bbaf565dac44824d9607fcc" kind="variable"><name>m_drawingLoc</name></member>
     <member refid="classvrv_1_1_note_1ac2be2a06ed546eabd7d5f88a7bd9e9ef" kind="variable"><name>m_flippedNotehead</name></member>
     <member refid="classvrv_1_1_note_1af2c2dbc2bd4daaadd559e1e3e9639449" kind="variable"><name>m_cluster</name></member>
@@ -4060,7 +4068,6 @@
     <member refid="classvrv_1_1_note_1a1664d5d12ec17657d76d9b3bd46742a2" kind="variable"><name>m_realTimeOnsetMilliseconds</name></member>
     <member refid="classvrv_1_1_note_1a922304a2f5187cc07b5a3fdca48e6425" kind="variable"><name>m_realTimeOffsetMilliseconds</name></member>
     <member refid="classvrv_1_1_note_1ad5ca1b081a0898c3a5cf27993265c23a" kind="variable"><name>m_scoreTimeTiedDuration</name></member>
-    <member refid="classvrv_1_1_note_1a89f86e24818e5a272112f32ccec3a72c" kind="variable"><name>m_MIDIPitch</name></member>
     <member refid="classvrv_1_1_note_1a68a34dc4606c694c61020104860daa78" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_note_1ab67af4d9db93c3538d61271730ed3750" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_note_1aefb4a2097eb88c3cefd73cbc72222bb0" kind="function"><name>AddChild</name></member>
@@ -4073,6 +4080,7 @@
     <member refid="classvrv_1_1_note_1a3f66a8f4adf8eb4174b3c1ec388ad05d" kind="function"><name>GetNoteheadGlyph</name></member>
     <member refid="classvrv_1_1_note_1a2a984db0827252cd46b7ed9799c098ce" kind="function"><name>IsEnharmonicWith</name></member>
     <member refid="classvrv_1_1_note_1a4bbaa20a8cbdc5405f513135cc6117f6" kind="function"><name>IsVisible</name></member>
+    <member refid="classvrv_1_1_note_1aa49a73ba8e3825027379d80588bd5759" kind="function"><name>GetMIDIPitch</name></member>
     <member refid="classvrv_1_1_note_1a1c9054a1bbdbfbae8a22fcc5fca4f6b9" kind="function"><name>AdjustArtic</name></member>
     <member refid="classvrv_1_1_note_1adbea2481115dec839f5a86aa56f4c792" kind="function"><name>ConvertMarkupAnalytical</name></member>
     <member refid="classvrv_1_1_note_1a9c93a6e0955e4e9541d6e025c8adebc8" kind="function"><name>CalcArtic</name></member>
@@ -4094,6 +4102,8 @@
     <member refid="classvrv_1_1_note_1a2e7ebf8db5d53d987e63cdb2f8407381" kind="function"><name>GetTransPitch</name></member>
     <member refid="classvrv_1_1_note_1a7ca01383e84db4f00a71c734b143b561" kind="function"><name>UpdateFromTransPitch</name></member>
     <member refid="classvrv_1_1_note_1ac05a442899ea51a450bfb09950ef0c26" kind="function"><name>IsDotOverlappingWithFlag</name></member>
+    <member refid="classvrv_1_1_note_1a28492b16495d73a5ca9f8e3010f8c6c3" kind="function"><name>DeferMIDINote</name></member>
+    <member refid="classvrv_1_1_note_1ae531fddd081533c4c2acb5df822e87a3" kind="function"><name>GenerateGraceNoteMIDI</name></member>
   </compound>
   <compound refid="classvrv_1_1_note_onset_offset_comparison" kind="class"><name>vrv::NoteOnsetOffsetComparison</name>
     <member refid="classvrv_1_1_note_onset_offset_comparison_1af4e03a16cc188528ad3392af8498e764" kind="variable"><name>m_time</name></member>
@@ -4234,6 +4244,7 @@
     <member refid="classvrv_1_1_object_1ae8d2bbd8c168fd6904c864f297b3deeb" kind="function"><name>CalcOnsetOffsetEnd</name></member>
     <member refid="classvrv_1_1_object_1a93b5fe054b2d26fe91ff50a5861fe08c" kind="function"><name>ResolveMIDITies</name></member>
     <member refid="classvrv_1_1_object_1a426081ffba31e4251a2c36ceeb2a43ba" kind="function"><name>GenerateMIDI</name></member>
+    <member refid="classvrv_1_1_object_1a7c0a63c225e76daa84e102b7d531d645" kind="function"><name>GenerateMIDIEnd</name></member>
     <member refid="classvrv_1_1_object_1abe889073301d6e1dfe55e725b6532948" kind="function"><name>GenerateTimemap</name></member>
     <member refid="classvrv_1_1_object_1a7ced59f27507ee81372cc12d7f57c8e0" kind="function"><name>GenerateFeatures</name></member>
     <member refid="classvrv_1_1_object_1aedb15995b4bfd32c033ed7788e09e6e1" kind="variable"><name>m_uuid</name></member>
@@ -8007,6 +8018,7 @@
     <member refid="namespacevrv_1ad9287a721cd0413eda2f733fe25120de" kind="typedef"><name>xsdAnyURI_List</name></member>
     <member refid="namespacevrv_1aa7c7517df9aacc51f8ab0bf6a88df736" kind="typedef"><name>xsdPositiveInteger_List</name></member>
     <member refid="namespacevrv_1adcadd51592a37d9843ce533142becb91" kind="typedef"><name>MIDINoteSequence</name></member>
+    <member refid="namespacevrv_1ae9d9596dc30d66e8af319ba697cbe8e5" kind="typedef"><name>MIDIChordSequence</name></member>
     <member refid="namespacevrv_1a88f97c731b140ac861b13be697d11724" kind="typedef"><name>ArrayOfObjects</name></member>
     <member refid="namespacevrv_1a06296c176a6acafc46e107e1d6ea2eea" kind="typedef"><name>ListOfObjects</name></member>
     <member refid="namespacevrv_1af46efe784888a2fd5bb33979da5145bc" kind="typedef"><name>ArrayOfComparisons</name></member>
@@ -8518,6 +8530,7 @@
     <member refid="vrvdef_8h_1a5c64ee16c0094a99f7aa55f29b80a3e1" kind="define"><name>vrv_params_cast</name></member>
     <member refid="vrvdef_8h_1a30d53f4e99013f0287e9abec9503efa0" kind="define"><name>MIDI_VELOCITY</name></member>
     <member refid="vrvdef_8h_1a3af7f472271add85b7c49f464cd7b3f3" kind="define"><name>MIDI_TEMPO</name></member>
+    <member refid="vrvdef_8h_1a099e275fc3d5dde0dd5dbf6777a5241a" kind="define"><name>UNACC_GRACENOTE_DUR</name></member>
     <member refid="vrvdef_8h_1aa4a95a12a283b1a8c978431af4fd20b6" kind="define"><name>DEFINITION_FACTOR</name></member>
     <member refid="vrvdef_8h_1a39737d11b9f2f9cff052729598c08834" kind="define"><name>isIn</name></member>
     <member refid="vrvdef_8h_1a3dcfdede1c226b3e97a974e7971897b2" kind="define"><name>durRound</name></member>
