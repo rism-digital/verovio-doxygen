@@ -7,6 +7,7 @@ var classvrv_1_1_generate_m_i_d_i_params =
     [ "m_expandedNotes", "classvrv_1_1_generate_m_i_d_i_params.html#a074178c8dc189e48de3e862346012808", null ],
     [ "m_functor", "classvrv_1_1_generate_m_i_d_i_params.html#a099869302dfba354a6c7dc86214977c1", null ],
     [ "m_graceNotes", "classvrv_1_1_generate_m_i_d_i_params.html#a90e72e1397d5975beea57644d9d40801", null ],
+    [ "m_heldNotes", "classvrv_1_1_generate_m_i_d_i_params.html#ac60df3ad3c1eb7338e9b7d9395373433", null ],
     [ "m_lastNote", "classvrv_1_1_generate_m_i_d_i_params.html#aa90f0275f47df6d8872b275954b988bf", null ],
     [ "m_midiChannel", "classvrv_1_1_generate_m_i_d_i_params.html#ae1a49482f921ef130ef998dcd6df1a86", null ],
     [ "m_midiFile", "classvrv_1_1_generate_m_i_d_i_params.html#a3c96b7a8c5c1456f493386eacd69f4eb", null ],

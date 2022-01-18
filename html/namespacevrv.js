@@ -190,6 +190,7 @@ var namespacevrv =
     [ "MeterSig", "classvrv_1_1_meter_sig.html", "classvrv_1_1_meter_sig" ],
     [ "MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", "classvrv_1_1_meter_sig_grp" ],
     [ "MIDIChord", "structvrv_1_1_m_i_d_i_chord.html", "structvrv_1_1_m_i_d_i_chord" ],
+    [ "MIDIHeldNote", "structvrv_1_1_m_i_d_i_held_note.html", "structvrv_1_1_m_i_d_i_held_note" ],
     [ "MIDINote", "structvrv_1_1_m_i_d_i_note.html", "structvrv_1_1_m_i_d_i_note" ],
     [ "MNum", "classvrv_1_1_m_num.html", "classvrv_1_1_m_num" ],
     [ "Mordent", "classvrv_1_1_mordent.html", "classvrv_1_1_mordent" ],

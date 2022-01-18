@@ -12,6 +12,7 @@ var classvrv_1_1_layer =
     [ "ConvertToUnCastOffMensural", "classvrv_1_1_layer.html#aaf89a9d26b64458fbe3c3535c67a100c", null ],
     [ "DrawCautionKeySigCancel", "classvrv_1_1_layer.html#a4b87456367ee3f8df018532939334e85", null ],
     [ "DrawKeySigCancellation", "classvrv_1_1_layer.html#a1f78b3afb187a7617918d35bd204c01d", null ],
+    [ "GenerateMIDIEnd", "classvrv_1_1_layer.html#a983baa94f22d6dde6e5a4155d962edf7", null ],
     [ "GetAtPos", "classvrv_1_1_layer.html#ae4ab5665285cd18a1784d83cf7fb41c5", null ],
     [ "GetCautionStaffDefClef", "classvrv_1_1_layer.html#a7db376fca793628d68589e71ce3e0c09", null ],
     [ "GetCautionStaffDefKeySig", "classvrv_1_1_layer.html#ab7ac55d1854043715efff4bdd66b9257", null ],

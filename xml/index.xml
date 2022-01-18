@@ -2185,6 +2185,7 @@
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1a90e72e1397d5975beea57644d9d40801" kind="variable"><name>m_graceNotes</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1a8cd25715766f83579f964dde56d219d8" kind="variable"><name>m_accentedGraceNote</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1a099869302dfba354a6c7dc86214977c1" kind="variable"><name>m_functor</name></member>
+    <member refid="classvrv_1_1_generate_m_i_d_i_params_1ac60df3ad3c1eb7338e9b7d9395373433" kind="variable"><name>m_heldNotes</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1aca7cbb3730c90a286c78f041dbf8094f" kind="function"><name>GenerateMIDIParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_generate_timemap_params" kind="class"><name>vrv::GenerateTimemapParams</name>
@@ -2995,6 +2996,7 @@
     <member refid="classvrv_1_1_layer_1a4cdd14ff746bb0a8ede92e0c816f392b" kind="function"><name>PrepareProcessingLists</name></member>
     <member refid="classvrv_1_1_layer_1a23a6e091854b5209b3322684542fb1c3" kind="function"><name>PrepareRpt</name></member>
     <member refid="classvrv_1_1_layer_1a2b67907257ee22f62f47658c52d7cf9c" kind="function"><name>ResetDrawing</name></member>
+    <member refid="classvrv_1_1_layer_1a983baa94f22d6dde6e5a4155d962edf7" kind="function"><name>GenerateMIDIEnd</name></member>
   </compound>
   <compound refid="classvrv_1_1_layer_count_in_time_span_params" kind="class"><name>vrv::LayerCountInTimeSpanParams</name>
     <member refid="classvrv_1_1_layer_count_in_time_span_params_1ac45a564a94e27dceee6df7182a4a9716" kind="variable"><name>m_time</name></member>
@@ -3794,6 +3796,10 @@
   <compound refid="structvrv_1_1_m_i_d_i_chord" kind="struct"><name>vrv::MIDIChord</name>
     <member refid="structvrv_1_1_m_i_d_i_chord_1a5cf3c77c21b83b33489c9f8fb69d2dae" kind="variable"><name>pitches</name></member>
     <member refid="structvrv_1_1_m_i_d_i_chord_1af4eb3a2b50f0c45f938fec365f5bae97" kind="variable"><name>duration</name></member>
+  </compound>
+  <compound refid="structvrv_1_1_m_i_d_i_held_note" kind="struct"><name>vrv::MIDIHeldNote</name>
+    <member refid="structvrv_1_1_m_i_d_i_held_note_1a8caee921924918efc2ebd079e2f0293b" kind="variable"><name>m_pitch</name></member>
+    <member refid="structvrv_1_1_m_i_d_i_held_note_1aeb200ab2694f4564a121b63a62eb6391" kind="variable"><name>m_stopTime</name></member>
   </compound>
   <compound refid="structvrv_1_1_m_i_d_i_note" kind="struct"><name>vrv::MIDINote</name>
     <member refid="structvrv_1_1_m_i_d_i_note_1ad116154282fde8e30c39fbc0085bbf5a" kind="variable"><name>pitch</name></member>
@@ -5712,6 +5718,9 @@
     <member refid="classvrv_1_1_staff_1a79eac77323fbef08aea63636b198670f" kind="function"><name>IsMensural</name></member>
     <member refid="classvrv_1_1_staff_1a34bb6fc88f3af41943c3ba4e6006f526" kind="function"><name>IsNeume</name></member>
     <member refid="classvrv_1_1_staff_1a9dc4603b9cbe7003cd4fb617c186b8d5" kind="function"><name>IsTablature</name></member>
+    <member refid="classvrv_1_1_staff_1ac6290b41b34eee3dbe941d48ab6d2831" kind="function"><name>IsTabLuteFrench</name></member>
+    <member refid="classvrv_1_1_staff_1a20490887a8cc2af738e1a55e82e6438e" kind="function"><name>IsTabLuteGerman</name></member>
+    <member refid="classvrv_1_1_staff_1a527874b273615ffbf49dfe8e80f99b6d" kind="function"><name>IsTabLuteItalian</name></member>
     <member refid="classvrv_1_1_staff_1a574fa40f4a5412da8b51679db2e63756" kind="function"><name>GetLedgerLinesAbove</name></member>
     <member refid="classvrv_1_1_staff_1a58c281c807c9f7df8f9d8bb7f34fd99e" kind="function"><name>GetLedgerLinesAboveCue</name></member>
     <member refid="classvrv_1_1_staff_1aa6fbec686d74e09f11456d85bf3c6c99" kind="function"><name>GetLedgerLinesBelow</name></member>
@@ -5736,6 +5745,7 @@
     <member refid="classvrv_1_1_staff_1a2eabbf5c9d623f30a124113c2a54fae3" kind="function"><name>GetChildren</name></member>
     <member refid="classvrv_1_1_staff_1a5981a4796f897d0f70600c0594bba6fa" kind="function"><name>ClearLedgerLines</name></member>
     <member refid="classvrv_1_1_staff_1ae194d3de0191a955118338c70e157133" kind="function"><name>AdjustDrawingStaffSize</name></member>
+    <member refid="classvrv_1_1_staff_1acaa44acf2a92dca969477d8134753774" kind="function"><name>GetDrawingStaffNotationSize</name></member>
     <member refid="classvrv_1_1_staff_1abb9be0b494c5daf6344dccdbfb657a55" kind="function"><name>DrawingIsVisible</name></member>
     <member refid="classvrv_1_1_staff_1a96635013f3b4f9d0b68df8eebbc4b0b2" kind="function"><name>GetStaffIdx</name></member>
     <member refid="classvrv_1_1_staff_1a807cc990002cfb0f520cf43b72a893e8" kind="function"><name>CalcPitchPosYRel</name></member>
