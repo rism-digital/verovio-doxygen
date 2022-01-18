@@ -13,7 +13,6 @@ var classvrv_1_1_beam_segment =
     [ "Reset", "classvrv_1_1_beam_segment.html#ae45293135277575fd4d828312f1c700c", null ],
     [ "m_beamElementCoordRefs", "classvrv_1_1_beam_segment.html#a2f8cd54b0cdac4e3db644a8c3bd22e19", null ],
     [ "m_beamSlope", "classvrv_1_1_beam_segment.html#aa0e86a5077d8c137969485dc69150fb5", null ],
-    [ "m_extendedToCenter", "classvrv_1_1_beam_segment.html#a5a5aa1116d056c4887018b6a4eb62c66", null ],
     [ "m_firstNoteOrChord", "classvrv_1_1_beam_segment.html#ad767ec99e5feff772b50047e3892ddb2", null ],
     [ "m_lastNoteOrChord", "classvrv_1_1_beam_segment.html#a74b42d249066e9ecd4c2ecf44dc35d32", null ],
     [ "m_ledgerLinesAbove", "classvrv_1_1_beam_segment.html#a2e6c17db9df3871dfc055565e062353f", null ],

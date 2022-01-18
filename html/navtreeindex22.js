@@ -1,6 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"phrase_8h_source.html":[3,0,117],
 "pitchinflection_8h_source.html":[3,0,118],
 "pitchinterface_8h_source.html":[3,0,119],
 "plica_8h_source.html":[3,0,120],
