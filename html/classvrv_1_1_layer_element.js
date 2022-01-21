@@ -29,6 +29,7 @@ var classvrv_1_1_layer_element =
     [ "GetAlignment", "classvrv_1_1_layer_element.html#aa86e897a30a465eb14823ff0b7d6c32c", null ],
     [ "GetAlignmentDuration", "classvrv_1_1_layer_element.html#a21200c6f95f9bac5ef98b7cd4c5d7e26", null ],
     [ "GetAlignmentLayerN", "classvrv_1_1_layer_element.html#a2fb9126c18e349cefe4a66479c97f17a", null ],
+    [ "GetAncestorStaff", "classvrv_1_1_layer_element.html#a8c5a88b4f6d4e289f2b06d1651f3fdb4", null ],
     [ "GetContentAlignmentDuration", "classvrv_1_1_layer_element.html#a1c066c80d881a800b529815ce85116c2", null ],
     [ "GetCrossStaff", "classvrv_1_1_layer_element.html#af90812923cb1a9046f4287e855f64dc2", null ],
     [ "GetCrossStaffRel", "classvrv_1_1_layer_element.html#a92e6de075ae4c0184adea79307d8eecb", null ],
