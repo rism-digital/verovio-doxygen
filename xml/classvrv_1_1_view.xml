@@ -3326,10 +3326,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="409" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_view_1a229730b700b9e34cf020921827eab201" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_view_1a6c1c3fbe86d5373ff52c465107efcbea" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::View::DrawTimeSpanningElement</definition>
-        <argsstring>(DeviceContext *dc, Object *object, System *system)</argsstring>
+        <argsstring>(DeviceContext *dc, Object *element, System *system)</argsstring>
         <name>DrawTimeSpanningElement</name>
         <param>
           <type><ref refid="classvrv_1_1_device_context" kindref="compound">DeviceContext</ref> *</type>
@@ -3337,7 +3337,7 @@
         </param>
         <param>
           <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
-          <declname>object</declname>
+          <declname>element</declname>
         </param>
         <param>
           <type><ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
@@ -6018,7 +6018,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="607" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="607" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="612" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="612" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1a63a1674d9b36c2b1d1ccb358cc968961" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_options" kindref="compound">Options</ref> *</type>
@@ -6032,7 +6032,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="609" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="609" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="614" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="614" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1a5012b077ef799dbbc711144b6c15eea9" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -6046,7 +6046,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="611" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="611" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="616" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="616" bodyend="-1"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_view_1a0151299a3395da27a27021ffd9650068" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -6175,6 +6175,36 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="602" column="10"/>
       </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_view_1a1b0bcfe4162c325a98cb8114dcbd8f61" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::View::HasValidTimeSpanningOrder</definition>
+        <argsstring>(DeviceContext *dc, Object *element, LayerElement *start, LayerElement *end) const</argsstring>
+        <name>HasValidTimeSpanningOrder</name>
+        <param>
+          <type><ref refid="classvrv_1_1_device_context" kindref="compound">DeviceContext</ref> *</type>
+          <declname>dc</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Internal methods for drawing time spanning elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="608" column="10"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>The objects currently selected.</header>
@@ -6191,7 +6221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="619" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="619" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="624" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="624" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1abc6c98adea6459f04ed99de19ca71416" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
@@ -6204,7 +6234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="620" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="620" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="625" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="625" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1a18111f756d522b30e1dd68c5533bd3af" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
@@ -6217,7 +6247,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="621" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="621" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="626" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="626" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1a31a22bd719b9d52ae5588375b3ef4e32" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
@@ -6230,7 +6260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="622" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="622" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="627" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="627" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1ade9b0251ef2551af69d53a220fa239c3" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
@@ -6243,7 +6273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="623" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="623" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="628" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="628" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1a10fbb9af42d900ffe40032522ce1b225" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_page" kindref="compound">Page</ref> *</type>
@@ -6256,7 +6286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="624" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="624" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="629" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="629" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -6272,7 +6302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="638" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="638" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="643" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="643" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1af327cf8906ebddbc695f22db50ee5186" prot="protected" static="no" mutable="no">
         <type>double</type>
@@ -6285,7 +6315,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="639" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="639" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="644" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="644" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -6301,7 +6331,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="661" column="29" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="661" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="666" column="29" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="666" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1a1d01243f4662f825735f9a05d5a9c4a5" prot="private" static="yes" mutable="no">
         <type>thread_local int</type>
@@ -6314,7 +6344,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="661" column="43" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="661" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="666" column="43" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="666" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1a5e13b73dec85c2f2ad1507c41bb841d3" prot="private" static="yes" mutable="no">
         <type>thread_local bool</type>
@@ -6327,7 +6357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="662" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="662" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="667" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="667" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -6344,7 +6374,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="632" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="632" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="637" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="637" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1af1ad1da56835eef701839b9f04a8cd36" prot="protected" static="no" mutable="no">
         <type>SlurHandling</type>
@@ -6358,7 +6388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="645" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="645" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="650" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="650" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1ab16976e8a08645f3fdb70a658ede2c15" prot="protected" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_score_def" kindref="compound">ScoreDef</ref></type>
@@ -6373,7 +6403,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="652" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="652" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="657" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="657" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -7084,7 +7114,7 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="96" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="96" bodyend="664"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="96" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="96" bodyend="669"/>
     <listofallmembers>
       <member refid="classvrv_1_1_view_1a0151299a3395da27a27021ffd9650068" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>CalcBrevisPoints</name></member>
       <member refid="classvrv_1_1_view_1a0369bbcd2f4e1b6cfd0d6032dc3517b1" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>CalcInitialSlur</name></member>
@@ -7250,7 +7280,7 @@
       <member refid="classvrv_1_1_view_1af8ec1658067d523478044b721c3ea199" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawTextString</name></member>
       <member refid="classvrv_1_1_view_1a5de4c855adb5fbae6923e3f6bdd2b69c" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawThickBezierCurve</name></member>
       <member refid="classvrv_1_1_view_1ac132015c7b5900dcf0faba08d6d7546a" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawTie</name></member>
-      <member refid="classvrv_1_1_view_1a229730b700b9e34cf020921827eab201" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawTimeSpanningElement</name></member>
+      <member refid="classvrv_1_1_view_1a6c1c3fbe86d5373ff52c465107efcbea" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawTimeSpanningElement</name></member>
       <member refid="classvrv_1_1_view_1a2e140d152975ad26ac7787045ecb007b" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawTrill</name></member>
       <member refid="classvrv_1_1_view_1a2e0fb80f376a32296550ef32c3da26e6" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawTrillExtension</name></member>
       <member refid="classvrv_1_1_view_1a67dc7ea641540b19649dbdeadbc66e07" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawTuplet</name></member>
@@ -7267,6 +7297,7 @@
       <member refid="classvrv_1_1_view_1a9bdee020b09491bd61e84a8d6d33be6e" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>GetSylYRel</name></member>
       <member refid="classvrv_1_1_view_1ab9382c1b50537957271e270dd0ea6991" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>GetTupletCoordinates</name></member>
       <member refid="classvrv_1_1_view_1a592f312dd1b5f9c0bda28ab7346c7b88" prot="public" virt="non-virtual"><scope>vrv::View</scope><name>HasNext</name></member>
+      <member refid="classvrv_1_1_view_1a1b0bcfe4162c325a98cb8114dcbd8f61" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>HasValidTimeSpanningOrder</name></member>
       <member refid="classvrv_1_1_view_1a230ca2197b9c78bd9774327ca4678be7" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>IntToSmuflFigures</name></member>
       <member refid="classvrv_1_1_view_1a0a15839d2efd2a55ef86b1d1fc680308" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>IntToTimeSigFigures</name></member>
       <member refid="classvrv_1_1_view_1af9f0b32d6577353061a63d228a40389f" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>IntToTupletFigures</name></member>

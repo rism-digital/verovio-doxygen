@@ -161,7 +161,7 @@ var classvrv_1_1_view =
     [ "DrawTextString", "classvrv_1_1_view.html#af8ec1658067d523478044b721c3ea199", null ],
     [ "DrawThickBezierCurve", "classvrv_1_1_view.html#a5de4c855adb5fbae6923e3f6bdd2b69c", null ],
     [ "DrawTie", "classvrv_1_1_view.html#ac132015c7b5900dcf0faba08d6d7546a", null ],
-    [ "DrawTimeSpanningElement", "classvrv_1_1_view.html#a229730b700b9e34cf020921827eab201", null ],
+    [ "DrawTimeSpanningElement", "classvrv_1_1_view.html#a6c1c3fbe86d5373ff52c465107efcbea", null ],
     [ "DrawTrill", "classvrv_1_1_view.html#a2e140d152975ad26ac7787045ecb007b", null ],
     [ "DrawTrillExtension", "classvrv_1_1_view.html#a2e0fb80f376a32296550ef32c3da26e6", null ],
     [ "DrawTuplet", "classvrv_1_1_view.html#a67dc7ea641540b19649dbdeadbc66e07", null ],
