@@ -68,6 +68,7 @@ var classvrv_1_1_measure =
     [ "GetRightBarLineRight", "classvrv_1_1_measure.html#ac302be4e65ce4567b86806ed257002d7", null ],
     [ "GetRightBarLineWidth", "classvrv_1_1_measure.html#a1490f0e90320ad4e3d9bc0560854907e", null ],
     [ "GetRightBarLineXRel", "classvrv_1_1_measure.html#ac1bb604df97282f84e038010d1ce3fb0", null ],
+    [ "GetSectionRestartShift", "classvrv_1_1_measure.html#a69b11eb7c3a8243a18e6f801e4eb1eb2", null ],
     [ "GetTopVisibleStaff", "classvrv_1_1_measure.html#a763effb0962a66b89e7b083f1e2a10f2", null ],
     [ "GetWidth", "classvrv_1_1_measure.html#aaea9b1238acf043b2ea503ce946080a3", null ],
     [ "HasInvisibleStaffBarlines", "classvrv_1_1_measure.html#ad58b70aabbd1ea6dcfa17e11c3b8ae13", null ],

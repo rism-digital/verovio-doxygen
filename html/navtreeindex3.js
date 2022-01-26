@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_bracket_span.html#ae78d35df6eae407012195ef2b65acf5c":[2,0,0,56,1],
 "classvrv_1_1_breath.html":[2,0,0,57],
 "classvrv_1_1_breath.html#a1880dba5ba97873ff9ae9c3340e45451":[2,0,0,57,2],
 "classvrv_1_1_breath.html#a2d6fab856ac0f3e74fa0655560b9421b":[2,0,0,57,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_curve_spanned_element.html#aacfad62466497ae38c2be571094b0df1":[2,0,0,86,4],
 "classvrv_1_1_curve_spanned_element.html#ab59522ae17221d8aa4e028c72822d86b":[2,0,0,86,2],
 "classvrv_1_1_curve_spanned_element.html#abff3cc23fe78b3524bc43777cb8ac57c":[2,0,0,86,0],
-"classvrv_1_1_curve_spanned_element.html#ac1c3d7ec47c10a87c0a4598efa222a0c":[2,0,0,86,3],
-"classvrv_1_1_custos.html":[2,0,0,87]
+"classvrv_1_1_curve_spanned_element.html#ac1c3d7ec47c10a87c0a4598efa222a0c":[2,0,0,86,3]
 };
