@@ -186,88 +186,91 @@ $(document).ready(function(){initNavTree('drawinginterface_8h_source.html',''); 
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">int</span> m_stemXBelow[2];</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
 <div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="classvrv_1_1_beam_drawing_interface.html#a8cea0232f11aa62bc020f19757dd526c">  168</a></span>&#160;    ArrayOfBeamElementCoords <a class="code" href="classvrv_1_1_beam_drawing_interface.html#a8cea0232f11aa62bc020f19757dd526c">m_beamElementCoords</a>;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;};</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">// StaffDefDrawingInterface</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classvrv_1_1_staff_def_drawing_interface.html">  183</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_staff_def_drawing_interface.html">StaffDefDrawingInterface</a> {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <a class="code" href="classvrv_1_1_staff_def_drawing_interface.html">StaffDefDrawingInterface</a>();</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_staff_def_drawing_interface.html">StaffDefDrawingInterface</a>();</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Reset();</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">bool</span> DrawClef() { <span class="keywordflow">return</span> (m_drawClef &amp;&amp; m_currentClef.HasShape()); }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">void</span> SetDrawClef(<span class="keywordtype">bool</span> drawClef) { m_drawClef = drawClef; }</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">bool</span> DrawKeySig() { <span class="keywordflow">return</span> (m_drawKeySig); }</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordtype">void</span> SetDrawKeySig(<span class="keywordtype">bool</span> drawKeySig) { m_drawKeySig = drawKeySig; }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">bool</span> DrawMensur() { <span class="keywordflow">return</span> (m_drawMensur &amp;&amp; m_currentMensur.HasSign()); }</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordtype">void</span> SetDrawMensur(<span class="keywordtype">bool</span> drawMensur) { m_drawMensur = drawMensur; }</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">bool</span> DrawMeterSig() { <span class="keywordflow">return</span> (m_drawMeterSig &amp;&amp; (m_currentMeterSig.HasUnit() || m_currentMeterSig.HasSym())); }</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">void</span> SetDrawMeterSig(<span class="keywordtype">bool</span> drawMeterSig) { m_drawMeterSig = drawMeterSig; }</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordtype">bool</span> DrawMeterSigGrp();</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordtype">void</span> SetDrawMeterSigGrp(<span class="keywordtype">bool</span> drawMeterSigGrp) { m_drawMeterSigGrp = drawMeterSigGrp; }</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordtype">void</span> SetCurrentClef(<a class="code" href="classvrv_1_1_clef.html">Clef</a> <span class="keyword">const</span> *clef);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordtype">void</span> SetCurrentKeySig(<a class="code" href="classvrv_1_1_key_sig.html">KeySig</a> <span class="keyword">const</span> *keySig);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordtype">void</span> SetCurrentMensur(<a class="code" href="classvrv_1_1_mensur.html">Mensur</a> <span class="keyword">const</span> *mensur);</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordtype">void</span> SetCurrentMeterSig(<a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a> <span class="keyword">const</span> *meterSig);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">void</span> SetCurrentMeterSigGrp(<a class="code" href="classvrv_1_1_meter_sig_grp.html">MeterSigGrp</a> <span class="keyword">const</span> *meterSig);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">void</span> AlternateCurrentMeterSig(<a class="code" href="classvrv_1_1_measure.html">Measure</a> *measure);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="classvrv_1_1_clef.html">Clef</a> *GetCurrentClef() { <span class="keywordflow">return</span> &amp;m_currentClef; }</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <a class="code" href="classvrv_1_1_key_sig.html">KeySig</a> *GetCurrentKeySig() { <span class="keywordflow">return</span> &amp;m_currentKeySig; }</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <a class="code" href="classvrv_1_1_mensur.html">Mensur</a> *GetCurrentMensur() { <span class="keywordflow">return</span> &amp;m_currentMensur; }</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a> *GetCurrentMeterSig() { <span class="keywordflow">return</span> &amp;m_currentMeterSig; }</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="code" href="classvrv_1_1_meter_sig_grp.html">MeterSigGrp</a> *GetCurrentMeterSigGrp() { <span class="keywordflow">return</span> &amp;m_currentMeterSigGrp; }</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <a class="code" href="classvrv_1_1_clef.html">Clef</a> m_currentClef;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <a class="code" href="classvrv_1_1_key_sig.html">KeySig</a> m_currentKeySig;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <a class="code" href="classvrv_1_1_mensur.html">Mensur</a> m_currentMensur;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a> m_currentMeterSig;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <a class="code" href="classvrv_1_1_meter_sig_grp.html">MeterSigGrp</a> m_currentMeterSigGrp;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordtype">bool</span> m_drawClef;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordtype">bool</span> m_drawKeySig;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordtype">bool</span> m_drawMensur;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordtype">bool</span> m_drawMeterSig;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordtype">bool</span> m_drawMeterSigGrp;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;};</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">// StemmedDrawingInterface</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="classvrv_1_1_stemmed_drawing_interface.html">  268</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_stemmed_drawing_interface.html">StemmedDrawingInterface</a> {</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <a class="code" href="classvrv_1_1_stemmed_drawing_interface.html">StemmedDrawingInterface</a>();</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_stemmed_drawing_interface.html">StemmedDrawingInterface</a>();</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Reset();</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordtype">void</span> SetDrawingStem(<a class="code" href="classvrv_1_1_stem.html">Stem</a> *stem);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <a class="code" href="classvrv_1_1_stem.html">Stem</a> *GetDrawingStem()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classvrv_1_1_stemmed_drawing_interface.html#ab55442afdb100573dc6b84d7563edf00">m_drawingStem</a>; }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;};</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">// StaffDefDrawingInterface</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="classvrv_1_1_staff_def_drawing_interface.html">  186</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_staff_def_drawing_interface.html">StaffDefDrawingInterface</a> {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="classvrv_1_1_staff_def_drawing_interface.html">StaffDefDrawingInterface</a>();</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_staff_def_drawing_interface.html">StaffDefDrawingInterface</a>();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Reset();</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">bool</span> DrawClef() { <span class="keywordflow">return</span> (m_drawClef &amp;&amp; m_currentClef.HasShape()); }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">void</span> SetDrawClef(<span class="keywordtype">bool</span> drawClef) { m_drawClef = drawClef; }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordtype">bool</span> DrawKeySig() { <span class="keywordflow">return</span> (m_drawKeySig); }</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">void</span> SetDrawKeySig(<span class="keywordtype">bool</span> drawKeySig) { m_drawKeySig = drawKeySig; }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">bool</span> DrawMensur() { <span class="keywordflow">return</span> (m_drawMensur &amp;&amp; m_currentMensur.HasSign()); }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordtype">void</span> SetDrawMensur(<span class="keywordtype">bool</span> drawMensur) { m_drawMensur = drawMensur; }</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordtype">bool</span> DrawMeterSig() { <span class="keywordflow">return</span> (m_drawMeterSig &amp;&amp; (m_currentMeterSig.HasUnit() || m_currentMeterSig.HasSym())); }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">void</span> SetDrawMeterSig(<span class="keywordtype">bool</span> drawMeterSig) { m_drawMeterSig = drawMeterSig; }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordtype">bool</span> DrawMeterSigGrp();</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordtype">void</span> SetDrawMeterSigGrp(<span class="keywordtype">bool</span> drawMeterSigGrp) { m_drawMeterSigGrp = drawMeterSigGrp; }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordtype">void</span> SetCurrentClef(<a class="code" href="classvrv_1_1_clef.html">Clef</a> <span class="keyword">const</span> *clef);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">void</span> SetCurrentKeySig(<a class="code" href="classvrv_1_1_key_sig.html">KeySig</a> <span class="keyword">const</span> *keySig);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">void</span> SetCurrentMensur(<a class="code" href="classvrv_1_1_mensur.html">Mensur</a> <span class="keyword">const</span> *mensur);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">void</span> SetCurrentMeterSig(<a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a> <span class="keyword">const</span> *meterSig);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">void</span> SetCurrentMeterSigGrp(<a class="code" href="classvrv_1_1_meter_sig_grp.html">MeterSigGrp</a> <span class="keyword">const</span> *meterSig);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordtype">void</span> AlternateCurrentMeterSig(<a class="code" href="classvrv_1_1_measure.html">Measure</a> *measure);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <a class="code" href="classvrv_1_1_clef.html">Clef</a> *GetCurrentClef() { <span class="keywordflow">return</span> &amp;m_currentClef; }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="code" href="classvrv_1_1_key_sig.html">KeySig</a> *GetCurrentKeySig() { <span class="keywordflow">return</span> &amp;m_currentKeySig; }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="code" href="classvrv_1_1_mensur.html">Mensur</a> *GetCurrentMensur() { <span class="keywordflow">return</span> &amp;m_currentMensur; }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a> *GetCurrentMeterSig() { <span class="keywordflow">return</span> &amp;m_currentMeterSig; }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <a class="code" href="classvrv_1_1_meter_sig_grp.html">MeterSigGrp</a> *GetCurrentMeterSigGrp() { <span class="keywordflow">return</span> &amp;m_currentMeterSigGrp; }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <a class="code" href="classvrv_1_1_clef.html">Clef</a> m_currentClef;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <a class="code" href="classvrv_1_1_key_sig.html">KeySig</a> m_currentKeySig;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <a class="code" href="classvrv_1_1_mensur.html">Mensur</a> m_currentMensur;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a> m_currentMeterSig;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <a class="code" href="classvrv_1_1_meter_sig_grp.html">MeterSigGrp</a> m_currentMeterSigGrp;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordtype">bool</span> m_drawClef;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordtype">bool</span> m_drawKeySig;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordtype">bool</span> m_drawMensur;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordtype">bool</span> m_drawMeterSig;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordtype">bool</span> m_drawMeterSigGrp;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;};</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="comment">// StemmedDrawingInterface</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="classvrv_1_1_stemmed_drawing_interface.html">  271</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_stemmed_drawing_interface.html">StemmedDrawingInterface</a> {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <a class="code" href="classvrv_1_1_stemmed_drawing_interface.html">StemmedDrawingInterface</a>();</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_stemmed_drawing_interface.html">StemmedDrawingInterface</a>();</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Reset();</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordtype">void</span> SetDrawingStemDir(data_STEMDIRECTION stemDir);</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    data_STEMDIRECTION GetDrawingStemDir();</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordtype">void</span> SetDrawingStemLen(<span class="keywordtype">int</span> drawingStemLen);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordtype">int</span> GetDrawingStemLen();</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> GetDrawingStemStart(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span> = NULL);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> GetDrawingStemEnd(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span> = NULL);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordtype">void</span> SetDrawingStem(<a class="code" href="classvrv_1_1_stem.html">Stem</a> *stem);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <a class="code" href="classvrv_1_1_stem.html">Stem</a> *GetDrawingStem()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classvrv_1_1_stemmed_drawing_interface.html#ab55442afdb100573dc6b84d7563edf00">m_drawingStem</a>; }</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordtype">void</span> SetDrawingStemDir(data_STEMDIRECTION stemDir);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    data_STEMDIRECTION GetDrawingStemDir();</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordtype">void</span> SetDrawingStemLen(<span class="keywordtype">int</span> drawingStemLen);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">int</span> GetDrawingStemLen();</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classvrv_1_1_point.html">Point</a> GetStemUpSE(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">bool</span> graceSize) = 0;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classvrv_1_1_point.html">Point</a> GetStemDownNW(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">bool</span> graceSize) = 0;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> CalcStemLenInThirdUnits(<a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff, data_STEMDIRECTION stemDir) = 0;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00309"></a><span class="lineno"><a class="line" href="classvrv_1_1_stemmed_drawing_interface.html#ab55442afdb100573dc6b84d7563edf00">  309</a></span>&#160;    <a class="code" href="classvrv_1_1_stem.html">Stem</a> *<a class="code" href="classvrv_1_1_stemmed_drawing_interface.html#ab55442afdb100573dc6b84d7563edf00">m_drawingStem</a>;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;};</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> GetDrawingStemStart(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span> = NULL);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> GetDrawingStemEnd(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span> = NULL);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classvrv_1_1_point.html">Point</a> GetStemUpSE(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">bool</span> graceSize) = 0;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classvrv_1_1_point.html">Point</a> GetStemDownNW(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">bool</span> graceSize) = 0;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> CalcStemLenInThirdUnits(<a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff, data_STEMDIRECTION stemDir) = 0;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="classvrv_1_1_stemmed_drawing_interface.html#ab55442afdb100573dc6b84d7563edf00">  312</a></span>&#160;    <a class="code" href="classvrv_1_1_stem.html">Stem</a> *<a class="code" href="classvrv_1_1_stemmed_drawing_interface.html#ab55442afdb100573dc6b84d7563edf00">m_drawingStem</a>;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;};</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_staff_html"><div class="ttname"><a href="classvrv_1_1_staff.html">vrv::Staff</a></div><div class="ttdoc">This class represents a staff in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> staff.h:36</div></div>
@@ -283,15 +286,15 @@ $(document).ready(function(){initNavTree('drawinginterface_8h_source.html',''); 
 <div class="ttc" id="aclassvrv_1_1_meter_sig_grp_html"><div class="ttname"><a href="classvrv_1_1_meter_sig_grp.html">vrv::MeterSigGrp</a></div><div class="ttdoc">This class represents a MEI meterSigGrp.</div><div class="ttdef"><b>Definition:</b> metersiggrp.h:30</div></div>
 <div class="ttc" id="aclassvrv_1_1_mensur_html"><div class="ttname"><a href="classvrv_1_1_mensur.html">vrv::Mensur</a></div><div class="ttdoc">This class models the MEI &lt;mensur&gt; element.</div><div class="ttdef"><b>Definition:</b> mensur.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_drawing_interface_html_adaec7fb532d7ee8f2d8b5f06e7eb79aa"><div class="ttname"><a href="classvrv_1_1_beam_drawing_interface.html#adaec7fb532d7ee8f2d8b5f06e7eb79aa">vrv::BeamDrawingInterface::GetTotalBeamWidth</a></div><div class="ttdeci">int GetTotalBeamWidth() const</div><div class="ttdoc">Get total beam width with regards to the shortest duration of the beam (counting both beams and white...</div></div>
-<div class="ttc" id="aclassvrv_1_1_stemmed_drawing_interface_html_ab55442afdb100573dc6b84d7563edf00"><div class="ttname"><a href="classvrv_1_1_stemmed_drawing_interface.html#ab55442afdb100573dc6b84d7563edf00">vrv::StemmedDrawingInterface::m_drawingStem</a></div><div class="ttdeci">Stem * m_drawingStem</div><div class="ttdoc">A pointer to the child Stem set by PrepareLayerElementParts.</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:309</div></div>
+<div class="ttc" id="aclassvrv_1_1_stemmed_drawing_interface_html_ab55442afdb100573dc6b84d7563edf00"><div class="ttname"><a href="classvrv_1_1_stemmed_drawing_interface.html#ab55442afdb100573dc6b84d7563edf00">vrv::StemmedDrawingInterface::m_drawingStem</a></div><div class="ttdeci">Stem * m_drawingStem</div><div class="ttdoc">A pointer to the child Stem set by PrepareLayerElementParts.</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:312</div></div>
 <div class="ttc" id="aclassvrv_1_1_clef_html"><div class="ttname"><a href="classvrv_1_1_clef.html">vrv::Clef</a></div><div class="ttdoc">This class models the MEI &lt;clef&gt; element.</div><div class="ttdef"><b>Definition:</b> clef.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_drawing_interface_html_a9571c5f0332590bffb23d5a85d32416b"><div class="ttname"><a href="classvrv_1_1_beam_drawing_interface.html#a9571c5f0332590bffb23d5a85d32416b">vrv::BeamDrawingInterface::GetPosition</a></div><div class="ttdeci">int GetPosition(Object *object, LayerElement *element)</div><div class="ttdoc">Return the position of the element in the beam.</div></div>
-<div class="ttc" id="aclassvrv_1_1_staff_def_drawing_interface_html"><div class="ttname"><a href="classvrv_1_1_staff_def_drawing_interface.html">vrv::StaffDefDrawingInterface</a></div><div class="ttdoc">This class is an interface for MEI scoreDef or staffDef attributes clef, keysig and mensur.</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:183</div></div>
+<div class="ttc" id="aclassvrv_1_1_staff_def_drawing_interface_html"><div class="ttname"><a href="classvrv_1_1_staff_def_drawing_interface.html">vrv::StaffDefDrawingInterface</a></div><div class="ttdoc">This class is an interface for MEI scoreDef or staffDef attributes clef, keysig and mensur.</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:186</div></div>
 <div class="ttc" id="aclassvrv_1_1_drawing_list_interface_html_a4b20a831da972d0a05fa42be7c6eb5e9"><div class="ttname"><a href="classvrv_1_1_drawing_list_interface.html#a4b20a831da972d0a05fa42be7c6eb5e9">vrv::DrawingListInterface::ResetDrawingList</a></div><div class="ttdeci">void ResetDrawingList()</div><div class="ttdoc">Reset the drawing list.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_list_interface_html"><div class="ttname"><a href="classvrv_1_1_object_list_interface.html">vrv::ObjectListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1429</div></div>
 <div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_drawing_interface_html"><div class="ttname"><a href="classvrv_1_1_beam_drawing_interface.html">vrv::BeamDrawingInterface</a></div><div class="ttdoc">This class is an interface for MEI beam elements (beam, beamSpan).</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:82</div></div>
-<div class="ttc" id="aclassvrv_1_1_stemmed_drawing_interface_html"><div class="ttname"><a href="classvrv_1_1_stemmed_drawing_interface.html">vrv::StemmedDrawingInterface</a></div><div class="ttdoc">This class is an interface for MEI stemmed element.</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:268</div></div>
+<div class="ttc" id="aclassvrv_1_1_stemmed_drawing_interface_html"><div class="ttname"><a href="classvrv_1_1_stemmed_drawing_interface.html">vrv::StemmedDrawingInterface</a></div><div class="ttdoc">This class is an interface for MEI stemmed element.</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:271</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_drawing_interface_html_a6ec2fd42b46e10a975fbb44010a51549"><div class="ttname"><a href="classvrv_1_1_beam_drawing_interface.html#a6ec2fd42b46e10a975fbb44010a51549">vrv::BeamDrawingInterface::IsFirstIn</a></div><div class="ttdeci">bool IsFirstIn(Object *object, LayerElement *element)</div><div class="ttdoc">Return information about the position in the beam.</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_drawing_interface_html_a77537490027ed7685e9a711caa8a5300"><div class="ttname"><a href="classvrv_1_1_beam_drawing_interface.html#a77537490027ed7685e9a711caa8a5300">vrv::BeamDrawingInterface::InitCoords</a></div><div class="ttdeci">void InitCoords(ArrayOfObjects *childList, Staff *staff, data_BEAMPLACE place)</div><div class="ttdoc">Initializes the m_beamElementCoords vector objects.</div></div>
 <div class="ttc" id="aclassvrv_1_1_drawing_list_interface_html_a1d255ea3d329ebbd6d7cd32fbe88646d"><div class="ttname"><a href="classvrv_1_1_drawing_list_interface.html#a1d255ea3d329ebbd6d7cd32fbe88646d">vrv::DrawingListInterface::AddToDrawingList</a></div><div class="ttdeci">void AddToDrawingList(Object *element)</div><div class="ttdoc">Add an element to the drawing list.</div></div>
@@ -304,7 +307,7 @@ $(document).ready(function(){initNavTree('drawinginterface_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>drawinginterface.h</b></li>
-    <li class="footer">Generated on Thu Jan 27 2022 14:02:46 for Verovio by
+    <li class="footer">Generated on Fri Jan 28 2022 07:07:02 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

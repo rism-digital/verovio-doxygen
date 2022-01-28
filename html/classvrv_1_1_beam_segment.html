@@ -135,6 +135,29 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetStartingX</b> () co
 <tr class="memitem:ae5a38316d6505c452c70d045f67c60d0"><td class="memItemLeft" align="right" valign="top"><a id="ae5a38316d6505c452c70d045f67c60d0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>GetStartingY</b> () const</td></tr>
 <tr class="separator:ae5a38316d6505c452c70d045f67c60d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Getters for the stem same as role.</div></td></tr>
+<tr class="memitem:a676eb0a3128edf20f01a8f64e76efdd5"><td class="memItemLeft" align="right" valign="top"><a id="a676eb0a3128edf20f01a8f64e76efdd5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>StemSameas</b> () const</td></tr>
+<tr class="separator:a676eb0a3128edf20f01a8f64e76efdd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0437a8d0eeddefe926e4d133c66386"><td class="memItemLeft" align="right" valign="top"><a id="a0c0437a8d0eeddefe926e4d133c66386"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>StemSameasIsUnset</b> () const</td></tr>
+<tr class="separator:a0c0437a8d0eeddefe926e4d133c66386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d49d2f1fba6f75e38f7d69cf9c11c8"><td class="memItemLeft" align="right" valign="top"><a id="a14d49d2f1fba6f75e38f7d69cf9c11c8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>StemSameasIsPrimary</b> () const</td></tr>
+<tr class="separator:a14d49d2f1fba6f75e38f7d69cf9c11c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd268f50caa3624500f82b1c09918b0f"><td class="memItemLeft" align="right" valign="top"><a id="abd268f50caa3624500f82b1c09918b0f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>StemSameasIsSecondary</b> () const</td></tr>
+<tr class="separator:abd268f50caa3624500f82b1c09918b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Methods to intialize and update the role for stem.sameas context</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Before the drawing beam place has been calculated, the role is marked as unset.</p>
+<p>Then it is marked as primary or secondary depending on the beam place. </p>
+</div></td></tr>
+<tr class="memitem:acfe45e16f7394be35573eb5bbc235929"><td class="memItemLeft" align="right" valign="top"><a id="acfe45e16f7394be35573eb5bbc235929"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitSameasRoles</b> (<a class="el" href="classvrv_1_1_beam.html">Beam</a> *sameasBeam, data_BEAMPLACE &amp;drawingPlace)</td></tr>
+<tr class="separator:acfe45e16f7394be35573eb5bbc235929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e3c0e971fefdc2d2b69cfe958c386e"><td class="memItemLeft" align="right" valign="top"><a id="a76e3c0e971fefdc2d2b69cfe958c386e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateSameasRoles</b> (data_BEAMPLACE place)</td></tr>
+<tr class="separator:a76e3c0e971fefdc2d2b69cfe958c386e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -169,6 +192,16 @@ data_BEAMPLACE&#160;</td><td class="memItemRight" valign="bottom"><b>m_weightedP
 ArrayOfBeamElementCoords&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beam_segment.html#a2f8cd54b0cdac4e3db644a8c3bd22e19">m_beamElementCoordRefs</a></td></tr>
 <tr class="memdesc:a2f8cd54b0cdac4e3db644a8c3bd22e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of coordinates for each element. <br /></td></tr>
 <tr class="separator:a2f8cd54b0cdac4e3db644a8c3bd22e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">The role in a stem.sameas situation.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Set in BeamSegment::InitSameasRoles and then in UpdateSameasRoles Used to determine if the beam is the primary one (normal stems and beams) or the secondary one (linking both notes).</p>
+<p>This depends on the drawing beam place, which can be encoded but otherwise calculated by CalcBeamPlace. The pointer to the other beam m_stemSameasReverseRole is set only for the first of the two beams and is not bi-directional. Is is set in InitSameasRoles. </p>
+</div></td></tr>
+<tr class="memitem:ab09b2aa639b5863612d01bfdf75f4d1a"><td class="memItemLeft" align="right" valign="top"><a id="ab09b2aa639b5863612d01bfdf75f4d1a"></a>
+StemSameasDrawingRole&#160;</td><td class="memItemRight" valign="bottom"><b>m_stemSameasRole</b></td></tr>
+<tr class="separator:ab09b2aa639b5863612d01bfdf75f4d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4713706066f9cbd831207a623d28e26"><td class="memItemLeft" align="right" valign="top"><a id="ad4713706066f9cbd831207a623d28e26"></a>
+StemSameasDrawingRole *&#160;</td><td class="memItemRight" valign="bottom"><b>m_stemSameasReverseRole</b></td></tr>
+<tr class="separator:ad4713706066f9cbd831207a623d28e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for storing drawing parameters when calculating beams. </p>
@@ -204,7 +237,7 @@ ArrayOfBeamElementCoords&#160;</td><td class="memItemRight" valign="bottom"><a c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_beam_segment.html">BeamSegment</a></li>
-    <li class="footer">Generated on Thu Jan 27 2022 14:02:46 for Verovio by
+    <li class="footer">Generated on Fri Jan 28 2022 07:07:02 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

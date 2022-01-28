@@ -160,6 +160,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#aa49a73ba8e3825027379d80588bd5759">GetMIDIPitch</a> (int shift=0)</td></tr>
 <tr class="memdesc:aa49a73ba8e3825027379d80588bd5759"><td class="mdescLeft">&#160;</td><td class="mdescRight">MIDI pitch. <br /></td></tr>
 <tr class="separator:aa49a73ba8e3825027379d80588bd5759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac78d6b4e920d6bce9f77f1fd99fe7faf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#ac78d6b4e920d6bce9f77f1fd99fe7faf">ResolveStemSameas</a> (<a class="el" href="classvrv_1_1_prepare_linking_params.html">PrepareLinkingParams</a> *params)</td></tr>
+<tr class="memdesc:ac78d6b4e920d6bce9f77f1fd99fe7faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resovle @stem.sameas links by instanciating Note::m_stemSameas (*Note).  <a href="classvrv_1_1_note.html#ac78d6b4e920d6bce9f77f1fd99fe7faf">More...</a><br /></td></tr>
+<tr class="separator:ac78d6b4e920d6bce9f77f1fd99fe7faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f88ce0675e674e63fc42e3fca18fdc4"><td class="memItemLeft" align="right" valign="top">data_STEMDIRECTION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a6f88ce0675e674e63fc42e3fca18fdc4">CalcStemDirForSameasNote</a> (int verticalCenter)</td></tr>
+<tr class="memdesc:a6f88ce0675e674e63fc42e3fca18fdc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the stem direction of the pair of notes.  <a href="classvrv_1_1_note.html#a6f88ce0675e674e63fc42e3fca18fdc4">More...</a><br /></td></tr>
+<tr class="separator:a6f88ce0675e674e63fc42e3fca18fdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c9054a1bbdbfbae8a22fcc5fca4f6b9"><td class="memItemLeft" align="right" valign="top"><a id="a1c9054a1bbdbfbae8a22fcc5fca4f6b9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a1c9054a1bbdbfbae8a22fcc5fca4f6b9">AdjustArtic</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) override</td></tr>
 <tr class="memdesc:a1c9054a1bbdbfbae8a22fcc5fca4f6b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a6b400f3d27479c0a45865bb97d21a879" title="Adjust the position the articulations.">Object::AdjustArtic</a>. <br /></td></tr>
@@ -331,6 +337,16 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>GetRealTimeOffsetMi
 <tr class="memitem:a5398bb3a2efd98452dc372210d24b5a2"><td class="memItemLeft" align="right" valign="top"><a id="a5398bb3a2efd98452dc372210d24b5a2"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>GetScoreTimeDuration</b> () const</td></tr>
 <tr class="separator:a5398bb3a2efd98452dc372210d24b5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Checker, getter and setter for a note with which the stem is shared</div></td></tr>
+<tr class="memitem:a929e7011bc7c7e187ad0ae4973c80b35"><td class="memItemLeft" align="right" valign="top"><a id="a929e7011bc7c7e187ad0ae4973c80b35"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasStemSameasNote</b> () const</td></tr>
+<tr class="separator:a929e7011bc7c7e187ad0ae4973c80b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e3d7044475c72873fab3c6026e0f6e"><td class="memItemLeft" align="right" valign="top"><a id="aa8e3d7044475c72873fab3c6026e0f6e"></a>
+<a class="el" href="classvrv_1_1_note.html">Note</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStemSameasNote</b> () const</td></tr>
+<tr class="separator:aa8e3d7044475c72873fab3c6026e0f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5800384e2a83f7946c0226b8743fddd5"><td class="memItemLeft" align="right" valign="top"><a id="a5800384e2a83f7946c0226b8743fddd5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStemSameasNote</b> (<a class="el" href="classvrv_1_1_note.html">Note</a> *stemSameas)</td></tr>
+<tr class="separator:a5800384e2a83f7946c0226b8743fddd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvrv_1_1_layer_element"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_layer_element')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></td></tr>
 <tr class="memitem:a0ed3a40420a298b9cea1d354bbbd1f9d inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a0ed3a40420a298b9cea1d354bbbd1f9d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a0ed3a40420a298b9cea1d354bbbd1f9d">CloneReset</a> () override</td></tr>
@@ -394,9 +410,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>GetContentAlignment
 <tr class="memitem:a0dce2be85a425e83b627c8d0a9a5b0f6 inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a0dce2be85a425e83b627c8d0a9a5b0f6">GenerateZoneBounds</a> (int *ulx, int *uly, int *lrx, int *lry)</td></tr>
 <tr class="memdesc:a0dce2be85a425e83b627c8d0a9a5b0f6 inherit pub_methods_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get zone bounds using child elements with facsimile information.  <a href="classvrv_1_1_layer_element.html#a0dce2be85a425e83b627c8d0a9a5b0f6">More...</a><br /></td></tr>
 <tr class="separator:a0dce2be85a425e83b627c8d0a9a5b0f6 inherit pub_methods_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9d15ac8323e8ee145e868ab5ac63cbb inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#ac9d15ac8323e8ee145e868ab5ac63cbb">AdjustOverlappingLayers</a> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, const std::vector&lt; <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> * &gt; &amp;otherElements, bool areDotsAdjusted, bool &amp;isUnison)</td></tr>
-<tr class="memdesc:ac9d15ac8323e8ee145e868ab5ac63cbb inherit pub_methods_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to adjust overlapping layers for notes, chords, stems, etc.  <a href="classvrv_1_1_layer_element.html#ac9d15ac8323e8ee145e868ab5ac63cbb">More...</a><br /></td></tr>
-<tr class="separator:ac9d15ac8323e8ee145e868ab5ac63cbb inherit pub_methods_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db7d2cf40b7138dc7a0099af0b99666 inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a0db7d2cf40b7138dc7a0099af0b99666">AdjustOverlappingLayers</a> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, const std::vector&lt; <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> * &gt; &amp;otherElements, bool areDotsAdjusted, bool &amp;isUnison, bool &amp;stemSameAs)</td></tr>
+<tr class="memdesc:a0db7d2cf40b7138dc7a0099af0b99666 inherit pub_methods_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to adjust overlapping layers for notes, chords, stems, etc.  <a href="classvrv_1_1_layer_element.html#a0db7d2cf40b7138dc7a0099af0b99666">More...</a><br /></td></tr>
+<tr class="separator:a0db7d2cf40b7138dc7a0099af0b99666 inherit pub_methods_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80983838195a9e547294896393ba56a0 inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a80983838195a9e547294896393ba56a0">CalcElementHorizontalOverlap</a> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, const std::vector&lt; <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> * &gt; &amp;otherElements, bool areDotsAdjusted, bool isChordElement, bool isLowerElement=false, bool unison=true)</td></tr>
 <tr class="memdesc:a80983838195a9e547294896393ba56a0 inherit pub_methods_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate note horizontal overlap with elemenents from another layers.  <a href="classvrv_1_1_layer_element.html#a80983838195a9e547294896393ba56a0">More...</a><br /></td></tr>
 <tr class="separator:a80983838195a9e547294896393ba56a0 inherit pub_methods_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1944,6 +1960,27 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
+<a id="a6f88ce0675e674e63fc42e3fca18fdc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f88ce0675e674e63fc42e3fca18fdc4">&#9670;&nbsp;</a></span>CalcStemDirForSameasNote()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">data_STEMDIRECTION vrv::Note::CalcStemDirForSameasNote </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>verticalCenter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate the stem direction of the pair of notes. </p>
+<p>The presence of a StemSameasNote() needs to be check before calling it. Encoded stem direction on the calling note is taken into account. Called from <a class="el" href="classvrv_1_1_note.html#aac544df65fa58a853952072f33fb5fb3" title="See Object::CalcStem.">Note::CalcStem</a> </p>
+
+</div>
+</div>
 <a id="a782b20876bae1c1f01fc871774312860"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a782b20876bae1c1f01fc871774312860">&#9670;&nbsp;</a></span>Clone()</h2>
 
@@ -2150,6 +2187,27 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
+<a id="ac78d6b4e920d6bce9f77f1fd99fe7faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac78d6b4e920d6bce9f77f1fd99fe7faf">&#9670;&nbsp;</a></span>ResolveStemSameas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vrv::Note::ResolveStemSameas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_prepare_linking_params.html">PrepareLinkingParams</a> *&#160;</td>
+          <td class="paramname"><em>params</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resovle @stem.sameas links by instanciating Note::m_stemSameas (*Note). </p>
+<p>Called twice from Object::PrepareLinks. Once to fill uuid / note pairs, and once to resolve the link. The link is bi-directional, which means that both notes have their m_stemSameas pointer instanciated. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="note_8h_source.html">note.h</a></li>
 </ul>
@@ -2159,7 +2217,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_note.html">Note</a></li>
-    <li class="footer">Generated on Thu Jan 27 2022 14:02:49 for Verovio by
+    <li class="footer">Generated on Fri Jan 28 2022 07:07:05 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

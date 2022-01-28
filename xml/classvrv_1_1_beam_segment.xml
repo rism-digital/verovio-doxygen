@@ -210,6 +210,137 @@
         <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="77" column="9"/>
       </memberdef>
       </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Getters for the stem same as role.</header>
+      <memberdef kind="function" id="classvrv_1_1_beam_segment_1a676eb0a3128edf20f01a8f64e76efdd5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::BeamSegment::StemSameas</definition>
+        <argsstring>() const</argsstring>
+        <name>StemSameas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="84" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_beam_segment_1a0c0437a8d0eeddefe926e4d133c66386" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::BeamSegment::StemSameasIsUnset</definition>
+        <argsstring>() const</argsstring>
+        <name>StemSameasIsUnset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="85" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_beam_segment_1a14d49d2f1fba6f75e38f7d69cf9c11c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::BeamSegment::StemSameasIsPrimary</definition>
+        <argsstring>() const</argsstring>
+        <name>StemSameasIsPrimary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="86" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_beam_segment_1abd268f50caa3624500f82b1c09918b0f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::BeamSegment::StemSameasIsSecondary</definition>
+        <argsstring>() const</argsstring>
+        <name>StemSameasIsSecondary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="87" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Methods to intialize and update the role for stem.sameas context</header>
+      <description><para>Before the drawing beam place has been calculated, the role is marked as unset.</para>
+<para>Then it is marked as primary or secondary depending on the beam place. </para>
+</description>
+      <memberdef kind="function" id="classvrv_1_1_beam_segment_1acfe45e16f7394be35573eb5bbc235929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::BeamSegment::InitSameasRoles</definition>
+        <argsstring>(Beam *sameasBeam, data_BEAMPLACE &amp;drawingPlace)</argsstring>
+        <name>InitSameasRoles</name>
+        <param>
+          <type><ref refid="classvrv_1_1_beam" kindref="compound">Beam</ref> *</type>
+          <declname>sameasBeam</declname>
+        </param>
+        <param>
+          <type>data_BEAMPLACE &amp;</type>
+          <declname>drawingPlace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="96" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_beam_segment_1a76e3c0e971fefdc2d2b69cfe958c386e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::BeamSegment::UpdateSameasRoles</definition>
+        <argsstring>(data_BEAMPLACE place)</argsstring>
+        <name>UpdateSameasRoles</name>
+        <param>
+          <type>data_BEAMPLACE</type>
+          <declname>place</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="97" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>The role in a stem.sameas situation.</header>
+      <description><para>Set in BeamSegment::InitSameasRoles and then in UpdateSameasRoles Used to determine if the beam is the primary one (normal stems and beams) or the secondary one (linking both notes).</para>
+<para>This depends on the drawing beam place, which can be encoded but otherwise calculated by CalcBeamPlace. The pointer to the other beam m_stemSameasReverseRole is set only for the first of the two beams and is not bi-directional. Is is set in InitSameasRoles. </para>
+</description>
+      <memberdef kind="variable" id="classvrv_1_1_beam_segment_1ab09b2aa639b5863612d01bfdf75f4d1a" prot="public" static="no" mutable="no">
+        <type>StemSameasDrawingRole</type>
+        <definition>StemSameasDrawingRole vrv::BeamSegment::m_stemSameasRole</definition>
+        <argsstring></argsstring>
+        <name>m_stemSameasRole</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="166" column="27" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_beam_segment_1ad4713706066f9cbd831207a623d28e26" prot="public" static="no" mutable="no">
+        <type>StemSameasDrawingRole *</type>
+        <definition>StemSameasDrawingRole* vrv::BeamSegment::m_stemSameasReverseRole</definition>
+        <argsstring></argsstring>
+        <name>m_stemSameasReverseRole</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="167" column="27" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1ac8f157a7767baa24cd20744e8aef70e5" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -222,7 +353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="118" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="118" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="140" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="140" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1aa0e86a5077d8c137969485dc69150fb5" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -235,7 +366,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="119" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="119" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="141" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="141" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1a15b467b4275e576f076ee509beac817d" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -248,7 +379,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="120" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="120" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="142" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="142" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1a2e6c17db9df3871dfc055565e062353f" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -261,7 +392,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="121" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="121" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="143" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="143" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1ac9d89a751d2ffd923a6d9435770f6935" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -274,7 +405,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="122" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="122" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="144" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1a1787d8320f76e0afe1a7ae84c90c174c" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -287,7 +418,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="123" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="123" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="145" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="145" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1a4a6999bc33982a005f771ac051ad60de" prot="public" static="no" mutable="no">
         <type>data_BEAMPLACE</type>
@@ -300,7 +431,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="124" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="124" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="146" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="146" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1ad767ec99e5feff772b50047e3892ddb2" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_beam_element_coord" kindref="compound">BeamElementCoord</ref> *</type>
@@ -313,7 +444,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="126" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="126" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="148" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="148" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1a74b42d249066e9ecd4c2ecf44dc35d32" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_beam_element_coord" kindref="compound">BeamElementCoord</ref> *</type>
@@ -326,7 +457,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="127" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="127" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="149" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="149" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1a2f8cd54b0cdac4e3db644a8c3bd22e19" prot="public" static="no" mutable="no">
         <type>ArrayOfBeamElementCoords</type>
@@ -340,7 +471,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="132" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="132" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="154" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="154" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -367,7 +498,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="82" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="102" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a3ee5447d7b833cdb668e09d9e0693988" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -400,7 +531,40 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="84" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="104" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_beam_segment_1a88fc89737f982bfb2cf7dbdd3295ca80" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::BeamSegment::CalcBeamInitForNotePair</definition>
+        <argsstring>(Note *note1, Note *note2, Staff *staff, int &amp;yMax, int &amp;yMin)</argsstring>
+        <name>CalcBeamInitForNotePair</name>
+        <param>
+          <type><ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
+          <declname>note1</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
+          <declname>note2</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <declname>staff</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>yMax</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>yMin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="106" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a0e4cf8f57fe086cdac675a5d10a3a0fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -437,7 +601,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="86" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="108" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a2893725bde95f12e2eaaa0aba049d4f3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -470,7 +634,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="89" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="111" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1aba985d7e3fe7dca58e2dcbbf8f9a2e9c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -503,7 +667,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="91" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="113" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a766ee58b945c0938d1ca41a466f1bc95" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -528,7 +692,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="94" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="116" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a63b1cecc6192ef7550e693e1a57641bb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -553,7 +717,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="96" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="118" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a96cc3ca1c2b3e95d89777010242e2cfc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -578,7 +742,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="99" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="121" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1abacc5fb4f16826b89655f9407c9128aa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -595,7 +759,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="102" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="124" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1aa6fdf47946952970d83932065f7b68c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -608,7 +772,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="105" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="127" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1acc2bb920c9ea28583155aba6246c9ae3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -621,7 +785,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="108" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="130" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a489aadd5bc4deb8dc7ddee5bacc48c94" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -650,7 +814,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="111" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="133" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a542190354a639f04ed027e3b3bd8a91e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -675,7 +839,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="114" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="136" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1135,7 +1299,7 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="35" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="35" bodyend="133"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="35" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="35" bodyend="169"/>
     <listofallmembers>
       <member refid="classvrv_1_1_beam_segment_1a6dda4097ff16df34a86388787329cf6c" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>AdjustBeamToLedgerLines</name></member>
       <member refid="classvrv_1_1_beam_segment_1affb5c3ee3c4310bc60db4c3880c8fb19" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>BeamSegment</name></member>
@@ -1143,6 +1307,7 @@
       <member refid="classvrv_1_1_beam_segment_1aba985d7e3fe7dca58e2dcbbf8f9a2e9c" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>CalcAdjustSlope</name></member>
       <member refid="classvrv_1_1_beam_segment_1a53b12029b522b249d6faf0dc8acfe1b8" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>CalcBeam</name></member>
       <member refid="classvrv_1_1_beam_segment_1a3ee5447d7b833cdb668e09d9e0693988" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>CalcBeamInit</name></member>
+      <member refid="classvrv_1_1_beam_segment_1a88fc89737f982bfb2cf7dbdd3295ca80" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>CalcBeamInitForNotePair</name></member>
       <member refid="classvrv_1_1_beam_segment_1a63b1cecc6192ef7550e693e1a57641bb" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>CalcBeamPlace</name></member>
       <member refid="classvrv_1_1_beam_segment_1a2893725bde95f12e2eaaa0aba049d4f3" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>CalcBeamPosition</name></member>
       <member refid="classvrv_1_1_beam_segment_1a0e4cf8f57fe086cdac675a5d10a3a0fe" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>CalcBeamSlope</name></member>
@@ -1158,6 +1323,7 @@
       <member refid="classvrv_1_1_beam_segment_1aa43df64644702d318671474f55b0b964" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>GetStartingX</name></member>
       <member refid="classvrv_1_1_beam_segment_1ae5a38316d6505c452c70d045f67c60d0" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>GetStartingY</name></member>
       <member refid="classvrv_1_1_beam_segment_1aae2d6f202398b11757729b803cad00fd" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>InitCoordRefs</name></member>
+      <member refid="classvrv_1_1_beam_segment_1acfe45e16f7394be35573eb5bbc235929" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>InitSameasRoles</name></member>
       <member refid="classvrv_1_1_beam_segment_1a2f8cd54b0cdac4e3db644a8c3bd22e19" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>m_beamElementCoordRefs</name></member>
       <member refid="classvrv_1_1_beam_segment_1aa0e86a5077d8c137969485dc69150fb5" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>m_beamSlope</name></member>
       <member refid="classvrv_1_1_beam_segment_1ad767ec99e5feff772b50047e3892ddb2" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>m_firstNoteOrChord</name></member>
@@ -1165,11 +1331,18 @@
       <member refid="classvrv_1_1_beam_segment_1a2e6c17db9df3871dfc055565e062353f" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>m_ledgerLinesAbove</name></member>
       <member refid="classvrv_1_1_beam_segment_1ac9d89a751d2ffd923a6d9435770f6935" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>m_ledgerLinesBelow</name></member>
       <member refid="classvrv_1_1_beam_segment_1ac8f157a7767baa24cd20744e8aef70e5" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>m_nbNotesOrChords</name></member>
+      <member refid="classvrv_1_1_beam_segment_1ad4713706066f9cbd831207a623d28e26" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>m_stemSameasReverseRole</name></member>
+      <member refid="classvrv_1_1_beam_segment_1ab09b2aa639b5863612d01bfdf75f4d1a" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>m_stemSameasRole</name></member>
       <member refid="classvrv_1_1_beam_segment_1a1787d8320f76e0afe1a7ae84c90c174c" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>m_uniformStemLength</name></member>
       <member refid="classvrv_1_1_beam_segment_1a15b467b4275e576f076ee509beac817d" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>m_verticalCenter</name></member>
       <member refid="classvrv_1_1_beam_segment_1a4a6999bc33982a005f771ac051ad60de" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>m_weightedPlace</name></member>
       <member refid="classvrv_1_1_beam_segment_1a542190354a639f04ed027e3b3bd8a91e" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>NeedToResetPosition</name></member>
       <member refid="classvrv_1_1_beam_segment_1ae45293135277575fd4d828312f1c700c" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>Reset</name></member>
+      <member refid="classvrv_1_1_beam_segment_1a676eb0a3128edf20f01a8f64e76efdd5" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>StemSameas</name></member>
+      <member refid="classvrv_1_1_beam_segment_1a14d49d2f1fba6f75e38f7d69cf9c11c8" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>StemSameasIsPrimary</name></member>
+      <member refid="classvrv_1_1_beam_segment_1abd268f50caa3624500f82b1c09918b0f" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>StemSameasIsSecondary</name></member>
+      <member refid="classvrv_1_1_beam_segment_1a0c0437a8d0eeddefe926e4d133c66386" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>StemSameasIsUnset</name></member>
+      <member refid="classvrv_1_1_beam_segment_1a76e3c0e971fefdc2d2b69cfe958c386e" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>UpdateSameasRoles</name></member>
       <member refid="classvrv_1_1_beam_segment_1ad00e25fbdde982ee522286831653b840" prot="public" virt="virtual"><scope>vrv::BeamSegment</scope><name>~BeamSegment</name></member>
     </listofallmembers>
   </compounddef>

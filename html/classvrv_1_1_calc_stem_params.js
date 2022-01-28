@@ -8,5 +8,6 @@ var classvrv_1_1_calc_stem_params =
     [ "m_isGraceNote", "classvrv_1_1_calc_stem_params.html#af2f83e5fbea1511f10afda9b1987616e", null ],
     [ "m_layer", "classvrv_1_1_calc_stem_params.html#aa08713416a5885b60e8d316f2ba48434", null ],
     [ "m_staff", "classvrv_1_1_calc_stem_params.html#aae4707dc65ba0c6f674ac6e23fe4e9af", null ],
+    [ "m_stemSameas", "classvrv_1_1_calc_stem_params.html#af4038c8e47ae8b3efa7754bc54e94002", null ],
     [ "m_verticalCenter", "classvrv_1_1_calc_stem_params.html#a6b86386e29ad9f3f97e269c4c25addd8", null ]
 ];

@@ -219,6 +219,7 @@
     <member refid="classvrv_1_1_adjust_layers_params_1ab80e0e306210584992e0c7f345467df4" kind="variable"><name>m_functorEnd</name></member>
     <member refid="classvrv_1_1_adjust_layers_params_1a609c7780e04d723bdf7e0d6f73e333c0" kind="variable"><name>m_unison</name></member>
     <member refid="classvrv_1_1_adjust_layers_params_1a2355551fea9afccf78257d3b65dda7e9" kind="variable"><name>m_ignoreDots</name></member>
+    <member refid="classvrv_1_1_adjust_layers_params_1ac3a12d455ad9c035d2232db67143eebc" kind="variable"><name>m_stemSameas</name></member>
     <member refid="classvrv_1_1_adjust_layers_params_1a88527f33ec08201cf1b645655add1f76" kind="variable"><name>m_accumulatedShift</name></member>
     <member refid="classvrv_1_1_adjust_layers_params_1a1b9fe2939eb21b8a5e6ae6eafd435952" kind="function"><name>AdjustLayersParams</name></member>
   </compound>
@@ -722,6 +723,10 @@
     <member refid="classvrv_1_1_beam_1ac0e454de096901edf2da61d1d07c80b0" kind="function"><name>Clone</name></member>
     <member refid="classvrv_1_1_beam_1a8e2ee9ef2db29335c50410da804a5fe2" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_beam_1a9cfa9116610446a4d1dac12e691c11fe" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_beam_1a64ddb8b7f8273cf4fed260255ad1da95" kind="function"><name>HasStemSameasBeam</name></member>
+    <member refid="classvrv_1_1_beam_1ad64e3ffa51bd2c7392c8a91692eceaaf" kind="function"><name>GetStemSameasBeam</name></member>
+    <member refid="classvrv_1_1_beam_1a5b4cdbe83e08d709c5202e222e5090bf" kind="function"><name>SetStemSameasBeam</name></member>
+    <member refid="classvrv_1_1_beam_1a138802ffa9c80ac3ce3db4ad487c1aca" kind="variable"><name>m_stemSameas</name></member>
     <member refid="classvrv_1_1_beam_1a522873ab5d186e4d7036d6a00a408f83" kind="variable"><name>m_beamSegment</name></member>
     <member refid="classvrv_1_1_beam_1a57682a7262276b450a4b2b295d4729a9" kind="function"><name>GetNoteCount</name></member>
     <member refid="classvrv_1_1_beam_1a2222ff99c31c7384fc4e3c6dff08b47a" kind="function"><name>IsSupportedChild</name></member>
@@ -730,6 +735,7 @@
     <member refid="classvrv_1_1_beam_1a5330f0f47fa15e055193519f35a7d8b0" kind="function"><name>AdjustBeams</name></member>
     <member refid="classvrv_1_1_beam_1adf973ec376fc00891cf66584cbce298f" kind="function"><name>AdjustBeamsEnd</name></member>
     <member refid="classvrv_1_1_beam_1ac64aae8acb03de44fef47888894e6b0e" kind="function"><name>CalcStem</name></member>
+    <member refid="classvrv_1_1_beam_1a0b5295a70f7c90a356219bef2dd87d7b" kind="function"><name>ResetHorizontalAlignment</name></member>
     <member refid="classvrv_1_1_beam_1a502a5b8ca0fadc648a3f017a19310cc9" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_beam_1ae1273dd0789d15ec82ee70ef82bf3e95" kind="function"><name>FilterList</name></member>
     <member refid="classvrv_1_1_beam_1a85c7d02459bcfae686c17c861e692c16" kind="function"><name>CalcLayerOverlap</name></member>
@@ -800,6 +806,14 @@
     <member refid="classvrv_1_1_beam_segment_1af13e9a7dcfa6b57fd10e31f68b0384ec" kind="function"><name>GetAdjacentElementsDuration</name></member>
     <member refid="classvrv_1_1_beam_segment_1aa43df64644702d318671474f55b0b964" kind="function"><name>GetStartingX</name></member>
     <member refid="classvrv_1_1_beam_segment_1ae5a38316d6505c452c70d045f67c60d0" kind="function"><name>GetStartingY</name></member>
+    <member refid="classvrv_1_1_beam_segment_1a676eb0a3128edf20f01a8f64e76efdd5" kind="function"><name>StemSameas</name></member>
+    <member refid="classvrv_1_1_beam_segment_1a0c0437a8d0eeddefe926e4d133c66386" kind="function"><name>StemSameasIsUnset</name></member>
+    <member refid="classvrv_1_1_beam_segment_1a14d49d2f1fba6f75e38f7d69cf9c11c8" kind="function"><name>StemSameasIsPrimary</name></member>
+    <member refid="classvrv_1_1_beam_segment_1abd268f50caa3624500f82b1c09918b0f" kind="function"><name>StemSameasIsSecondary</name></member>
+    <member refid="classvrv_1_1_beam_segment_1acfe45e16f7394be35573eb5bbc235929" kind="function"><name>InitSameasRoles</name></member>
+    <member refid="classvrv_1_1_beam_segment_1a76e3c0e971fefdc2d2b69cfe958c386e" kind="function"><name>UpdateSameasRoles</name></member>
+    <member refid="classvrv_1_1_beam_segment_1ab09b2aa639b5863612d01bfdf75f4d1a" kind="variable"><name>m_stemSameasRole</name></member>
+    <member refid="classvrv_1_1_beam_segment_1ad4713706066f9cbd831207a623d28e26" kind="variable"><name>m_stemSameasReverseRole</name></member>
     <member refid="classvrv_1_1_beam_segment_1ac8f157a7767baa24cd20744e8aef70e5" kind="variable"><name>m_nbNotesOrChords</name></member>
     <member refid="classvrv_1_1_beam_segment_1aa0e86a5077d8c137969485dc69150fb5" kind="variable"><name>m_beamSlope</name></member>
     <member refid="classvrv_1_1_beam_segment_1a15b467b4275e576f076ee509beac817d" kind="variable"><name>m_verticalCenter</name></member>
@@ -812,6 +826,7 @@
     <member refid="classvrv_1_1_beam_segment_1a2f8cd54b0cdac4e3db644a8c3bd22e19" kind="variable"><name>m_beamElementCoordRefs</name></member>
     <member refid="classvrv_1_1_beam_segment_1a6dda4097ff16df34a86388787329cf6c" kind="function"><name>AdjustBeamToLedgerLines</name></member>
     <member refid="classvrv_1_1_beam_segment_1a3ee5447d7b833cdb668e09d9e0693988" kind="function"><name>CalcBeamInit</name></member>
+    <member refid="classvrv_1_1_beam_segment_1a88fc89737f982bfb2cf7dbdd3295ca80" kind="function"><name>CalcBeamInitForNotePair</name></member>
     <member refid="classvrv_1_1_beam_segment_1a0e4cf8f57fe086cdac675a5d10a3a0fe" kind="function"><name>CalcBeamSlope</name></member>
     <member refid="classvrv_1_1_beam_segment_1a2893725bde95f12e2eaaa0aba049d4f3" kind="function"><name>CalcBeamPosition</name></member>
     <member refid="classvrv_1_1_beam_segment_1aba985d7e3fe7dca58e2dcbbf8f9a2e9c" kind="function"><name>CalcAdjustSlope</name></member>
@@ -1046,6 +1061,7 @@
     <member refid="classvrv_1_1_calc_stem_params_1a6b86386e29ad9f3f97e269c4c25addd8" kind="variable"><name>m_verticalCenter</name></member>
     <member refid="classvrv_1_1_calc_stem_params_1a34687d23c98f5d4fa46fbeedfb5a9f50" kind="variable"><name>m_dur</name></member>
     <member refid="classvrv_1_1_calc_stem_params_1af2f83e5fbea1511f10afda9b1987616e" kind="variable"><name>m_isGraceNote</name></member>
+    <member refid="classvrv_1_1_calc_stem_params_1af4038c8e47ae8b3efa7754bc54e94002" kind="variable"><name>m_stemSameas</name></member>
     <member refid="classvrv_1_1_calc_stem_params_1aae4707dc65ba0c6f674ac6e23fe4e9af" kind="variable"><name>m_staff</name></member>
     <member refid="classvrv_1_1_calc_stem_params_1aa08713416a5885b60e8d316f2ba48434" kind="variable"><name>m_layer</name></member>
     <member refid="classvrv_1_1_calc_stem_params_1a8e5a571e8d22130d16c519808e30818f" kind="variable"><name>m_interface</name></member>
@@ -1130,7 +1146,7 @@
     <member refid="classvrv_1_1_chord_1a502c5d2649e8a742254db09135446eec" kind="function"><name>IsVisible</name></member>
     <member refid="classvrv_1_1_chord_1a97612e7dbc1589c45b0f56d337a20174" kind="function"><name>HasAdjacentNotesInStaff</name></member>
     <member refid="classvrv_1_1_chord_1a9de31be09e892bc0f2ee30e52e44307c" kind="function"><name>HasNoteWithDots</name></member>
-    <member refid="classvrv_1_1_chord_1a7c8586b878bf041aab186f0c23622531" kind="function"><name>AdjustOverlappingLayers</name></member>
+    <member refid="classvrv_1_1_chord_1aabb33f7121680e288d9c9cb28b8f019f" kind="function"><name>AdjustOverlappingLayers</name></member>
     <member refid="classvrv_1_1_chord_1a3f6381720ce433e279650af6cf9cb88e" kind="function"><name>GetAdjacentNotesList</name></member>
     <member refid="classvrv_1_1_chord_1a1a69e37fbee2584124bb0276f23354fd" kind="function"><name>AdjustCrossStaffYPos</name></member>
     <member refid="classvrv_1_1_chord_1aae29fa623ec2c53b382e3acbb841ebc6" kind="function"><name>AdjustArtic</name></member>
@@ -3070,7 +3086,7 @@
     <member refid="classvrv_1_1_layer_element_1ab0dc6102092c2b081e9d08a8a5353324" kind="function"><name>GetSameAsContentAlignmentDuration</name></member>
     <member refid="classvrv_1_1_layer_element_1a1c066c80d881a800b529815ce85116c2" kind="function"><name>GetContentAlignmentDuration</name></member>
     <member refid="classvrv_1_1_layer_element_1a0dce2be85a425e83b627c8d0a9a5b0f6" kind="function"><name>GenerateZoneBounds</name></member>
-    <member refid="classvrv_1_1_layer_element_1ac9d15ac8323e8ee145e868ab5ac63cbb" kind="function"><name>AdjustOverlappingLayers</name></member>
+    <member refid="classvrv_1_1_layer_element_1a0db7d2cf40b7138dc7a0099af0b99666" kind="function"><name>AdjustOverlappingLayers</name></member>
     <member refid="classvrv_1_1_layer_element_1a80983838195a9e547294896393ba56a0" kind="function"><name>CalcElementHorizontalOverlap</name></member>
     <member refid="classvrv_1_1_layer_element_1a741266397c30ac32c6ee763e5e668a3b" kind="function"><name>AdjustBeams</name></member>
     <member refid="classvrv_1_1_layer_element_1a2e366143db259d1c17bc966d8f1a3254" kind="function"><name>AdjustDots</name></member>
@@ -4068,6 +4084,9 @@
     <member refid="classvrv_1_1_note_1a811919524cab46d6ac823109c861f933" kind="function"><name>GetScoreTimeTiedDuration</name></member>
     <member refid="classvrv_1_1_note_1a89f58f5716c3172278504a5449f1df18" kind="function"><name>GetRealTimeOffsetMilliseconds</name></member>
     <member refid="classvrv_1_1_note_1a5398bb3a2efd98452dc372210d24b5a2" kind="function"><name>GetScoreTimeDuration</name></member>
+    <member refid="classvrv_1_1_note_1a929e7011bc7c7e187ad0ae4973c80b35" kind="function"><name>HasStemSameasNote</name></member>
+    <member refid="classvrv_1_1_note_1aa8e3d7044475c72873fab3c6026e0f6e" kind="function"><name>GetStemSameasNote</name></member>
+    <member refid="classvrv_1_1_note_1a5800384e2a83f7946c0226b8743fddd5" kind="function"><name>SetStemSameasNote</name></member>
     <member refid="classvrv_1_1_note_1abce26caa4bbaf565dac44824d9607fcc" kind="variable"><name>m_drawingLoc</name></member>
     <member refid="classvrv_1_1_note_1ac2be2a06ed546eabd7d5f88a7bd9e9ef" kind="variable"><name>m_flippedNotehead</name></member>
     <member refid="classvrv_1_1_note_1af2c2dbc2bd4daaadd559e1e3e9639449" kind="variable"><name>m_cluster</name></member>
@@ -4077,6 +4096,8 @@
     <member refid="classvrv_1_1_note_1a1664d5d12ec17657d76d9b3bd46742a2" kind="variable"><name>m_realTimeOnsetMilliseconds</name></member>
     <member refid="classvrv_1_1_note_1a922304a2f5187cc07b5a3fdca48e6425" kind="variable"><name>m_realTimeOffsetMilliseconds</name></member>
     <member refid="classvrv_1_1_note_1ad5ca1b081a0898c3a5cf27993265c23a" kind="variable"><name>m_scoreTimeTiedDuration</name></member>
+    <member refid="classvrv_1_1_note_1a95ecc0899100084dfd0fd37859d4cb1f" kind="variable"><name>m_stemSameas</name></member>
+    <member refid="classvrv_1_1_note_1a6c2a769f7c103ebc94d68c147184df08" kind="variable"><name>m_stemSameasRole</name></member>
     <member refid="classvrv_1_1_note_1a68a34dc4606c694c61020104860daa78" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_note_1ab67af4d9db93c3538d61271730ed3750" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_note_1aefb4a2097eb88c3cefd73cbc72222bb0" kind="function"><name>AddChild</name></member>
@@ -4090,6 +4111,8 @@
     <member refid="classvrv_1_1_note_1a2a984db0827252cd46b7ed9799c098ce" kind="function"><name>IsEnharmonicWith</name></member>
     <member refid="classvrv_1_1_note_1a4bbaa20a8cbdc5405f513135cc6117f6" kind="function"><name>IsVisible</name></member>
     <member refid="classvrv_1_1_note_1aa49a73ba8e3825027379d80588bd5759" kind="function"><name>GetMIDIPitch</name></member>
+    <member refid="classvrv_1_1_note_1ac78d6b4e920d6bce9f77f1fd99fe7faf" kind="function"><name>ResolveStemSameas</name></member>
+    <member refid="classvrv_1_1_note_1a6f88ce0675e674e63fc42e3fca18fdc4" kind="function"><name>CalcStemDirForSameasNote</name></member>
     <member refid="classvrv_1_1_note_1a1c9054a1bbdbfbae8a22fcc5fca4f6b9" kind="function"><name>AdjustArtic</name></member>
     <member refid="classvrv_1_1_note_1adbea2481115dec839f5a86aa56f4c792" kind="function"><name>ConvertMarkupAnalytical</name></member>
     <member refid="classvrv_1_1_note_1a9c93a6e0955e4e9541d6e025c8adebc8" kind="function"><name>CalcArtic</name></member>
@@ -5243,6 +5266,7 @@
   <compound refid="classvrv_1_1_prepare_linking_params" kind="class"><name>vrv::PrepareLinkingParams</name>
     <member refid="classvrv_1_1_prepare_linking_params_1a90501f532c6e46e41f5ca87f84c3b23f" kind="variable"><name>m_nextUuidPairs</name></member>
     <member refid="classvrv_1_1_prepare_linking_params_1a5a1bdab38736ee3cbcddde378e4796d4" kind="variable"><name>m_sameasUuidPairs</name></member>
+    <member refid="classvrv_1_1_prepare_linking_params_1af3b93454f5bd3d1ed18503bfd1a53a14" kind="variable"><name>m_stemSameasUuidPairs</name></member>
     <member refid="classvrv_1_1_prepare_linking_params_1ac2955cb91541cb24f87b409f66f0c33d" kind="variable"><name>m_fillList</name></member>
     <member refid="classvrv_1_1_prepare_linking_params_1a4abcea630da02b421d5e4c53735c5634" kind="function"><name>PrepareLinkingParams</name></member>
   </compound>
@@ -7961,6 +7985,11 @@
     <member refid="namespacevrv_1a0559ff28e79761ea07a1ee0ed60ac3a7af7ffae42f9bc713a4ea57dc53f4dac3c" kind="enumvalue"><name>KEY_UP</name></member>
     <member refid="namespacevrv_1a0559ff28e79761ea07a1ee0ed60ac3a7a17cc8a1e29b1deaaa2d632fe23a08a35" kind="enumvalue"><name>KEY_RIGHT</name></member>
     <member refid="namespacevrv_1a0559ff28e79761ea07a1ee0ed60ac3a7aea27025ab40e477e12aac100310e0c3f" kind="enumvalue"><name>KEY_DOWN</name></member>
+    <member refid="namespacevrv_1a123e9c6f32414bfcfb7831da7a3b9534" kind="enum"><name>StemSameasDrawingRole</name></member>
+    <member refid="namespacevrv_1a123e9c6f32414bfcfb7831da7a3b9534a5b44f7234111e9b3b49aa9df04435c83" kind="enumvalue"><name>SAMEAS_NONE</name></member>
+    <member refid="namespacevrv_1a123e9c6f32414bfcfb7831da7a3b9534accc7e9e3f11f42dc7de883e9faec4ebb" kind="enumvalue"><name>SAMEAS_UNSET</name></member>
+    <member refid="namespacevrv_1a123e9c6f32414bfcfb7831da7a3b9534a5cb20d49ee4fbec0f4dac27311c6721f" kind="enumvalue"><name>SAMEAS_PRIMARY</name></member>
+    <member refid="namespacevrv_1a123e9c6f32414bfcfb7831da7a3b9534a50544dc3071f0bf7e1715a364baccf51" kind="enumvalue"><name>SAMEAS_SECONDARY</name></member>
     <member refid="namespacevrv_1ab4f2799cb3c97580ecf3d95850f10a25" kind="enum"><name>@10</name></member>
     <member refid="namespacevrv_1ab4f2799cb3c97580ecf3d95850f10a25aeadc723ebb2d15026e71a224cae22382" kind="enumvalue"><name>ERR_001_EMPTY</name></member>
     <member refid="namespacevrv_1ab4f2799cb3c97580ecf3d95850f10a25accdb02bee56de3d1c26418e93f4ebcef" kind="enumvalue"><name>ERR_002_JSON_PARSE</name></member>
@@ -8052,6 +8081,7 @@
     <member refid="namespacevrv_1acf607a7144a50999f70e8aeec257df1e" kind="typedef"><name>ArrayOfBeamElementCoords</name></member>
     <member refid="namespacevrv_1a989c0fd1f2e159613d02239cbfd33b9e" kind="typedef"><name>ArrayOfIntPairs</name></member>
     <member refid="namespacevrv_1aba74349ddea75116985c2b8e81265227" kind="typedef"><name>MapOfLinkingInterfaceUuidPairs</name></member>
+    <member refid="namespacevrv_1aac46cdb76c7ffd80c8d38e5e1d25df66" kind="typedef"><name>MapOfNoteUuidPairs</name></member>
     <member refid="namespacevrv_1aafc0423f92b6b42f14aed4ef50d27ffd" kind="typedef"><name>ArrayOfPlistInterfaceUuidPairs</name></member>
     <member refid="namespacevrv_1a0d9c798cb14ab9e1a7f3ca228778b930" kind="typedef"><name>ArrayOfCurveSpannedElements</name></member>
     <member refid="namespacevrv_1ac4ff1b2216efd00adc595fd0e37c024f" kind="typedef"><name>ListOfObjectBeatPairs</name></member>

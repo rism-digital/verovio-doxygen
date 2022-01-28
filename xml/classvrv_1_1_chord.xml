@@ -554,12 +554,12 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/chord.h" line="151" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_chord_1a7c8586b878bf041aab186f0c23622531" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_chord_1aabb33f7121680e288d9c9cb28b8f019f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
         <definition>int vrv::Chord::AdjustOverlappingLayers</definition>
-        <argsstring>(Doc *doc, const std::vector&lt; LayerElement * &gt; &amp;otherElements, bool areDotsAdjusted, bool &amp;isUnison) override</argsstring>
+        <argsstring>(Doc *doc, const std::vector&lt; LayerElement * &gt; &amp;otherElements, bool areDotsAdjusted, bool &amp;isUnison, bool &amp;stemSameas) override</argsstring>
         <name>AdjustOverlappingLayers</name>
-        <reimplements refid="classvrv_1_1_layer_element_1ac9d15ac8323e8ee145e868ab5ac63cbb">AdjustOverlappingLayers</reimplements>
+        <reimplements refid="classvrv_1_1_layer_element_1a0db7d2cf40b7138dc7a0099af0b99666">AdjustOverlappingLayers</reimplements>
         <param>
           <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
@@ -575,6 +575,10 @@
         <param>
           <type>bool &amp;</type>
           <declname>isUnison</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>stemSameas</declname>
         </param>
         <briefdescription>
 <para>Helper to adjust overlapping layers for chords Returns the shift of the adjustment. </para>
@@ -1482,7 +1486,7 @@
       <member refid="classvrv_1_1_object_1a3feb79622f62f2a9282f3dd1201c3a0c" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>AdjustHarmGrpsSpacingEnd</name></member>
       <member refid="classvrv_1_1_layer_element_1a43d358b3779b288027271c549ad6db39" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>AdjustLayers</name></member>
       <member refid="classvrv_1_1_object_1a665daa8b537723b4c38f61118e027009" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>AdjustLayersEnd</name></member>
-      <member refid="classvrv_1_1_chord_1a7c8586b878bf041aab186f0c23622531" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>AdjustOverlappingLayers</name></member>
+      <member refid="classvrv_1_1_chord_1aabb33f7121680e288d9c9cb28b8f019f" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>AdjustOverlappingLayers</name></member>
       <member refid="classvrv_1_1_object_1adfa29f3f97c5463c0c0de270636c5e4b" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>AdjustSlurs</name></member>
       <member refid="classvrv_1_1_object_1a56434ce48d536c537485260bec7ef6c2" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>AdjustStaffOverlap</name></member>
       <member refid="classvrv_1_1_object_1af1cfac1b1885dea453542d8fccdc4461" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>AdjustSylSpacing</name></member>

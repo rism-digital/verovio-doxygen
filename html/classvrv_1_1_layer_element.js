@@ -8,7 +8,7 @@ var classvrv_1_1_layer_element =
     [ "AdjustDots", "classvrv_1_1_layer_element.html#a2e366143db259d1c17bc966d8f1a3254", null ],
     [ "AdjustGraceXPos", "classvrv_1_1_layer_element.html#a0cfcca679f913436983fd6198923a604", null ],
     [ "AdjustLayers", "classvrv_1_1_layer_element.html#a43d358b3779b288027271c549ad6db39", null ],
-    [ "AdjustOverlappingLayers", "classvrv_1_1_layer_element.html#ac9d15ac8323e8ee145e868ab5ac63cbb", null ],
+    [ "AdjustOverlappingLayers", "classvrv_1_1_layer_element.html#a0db7d2cf40b7138dc7a0099af0b99666", null ],
     [ "AdjustTupletNumOverlap", "classvrv_1_1_layer_element.html#a3e192d786c6407dc4e863835219f34ad", null ],
     [ "AdjustXPos", "classvrv_1_1_layer_element.html#a6cac383d2dd8d18847d453043f6e8284", null ],
     [ "AdjustXRelForTranscription", "classvrv_1_1_layer_element.html#a6d34ad95ecb65ff66d2487230ba91ec9", null ],

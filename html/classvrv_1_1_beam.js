@@ -11,9 +11,13 @@ var classvrv_1_1_beam =
     [ "GetClassName", "classvrv_1_1_beam.html#a9cfa9116610446a4d1dac12e691c11fe", null ],
     [ "GetElementCoords", "classvrv_1_1_beam.html#a1bbd297104dd527dbf817a71e5129599", null ],
     [ "GetNoteCount", "classvrv_1_1_beam.html#a57682a7262276b450a4b2b295d4729a9", null ],
+    [ "GetStemSameasBeam", "classvrv_1_1_beam.html#ad64e3ffa51bd2c7392c8a91692eceaaf", null ],
+    [ "HasStemSameasBeam", "classvrv_1_1_beam.html#a64ddb8b7f8273cf4fed260255ad1da95", null ],
     [ "IsSupportedChild", "classvrv_1_1_beam.html#a2222ff99c31c7384fc4e3c6dff08b47a", null ],
     [ "IsTabBeam", "classvrv_1_1_beam.html#a23c843f2c54f531b08458d4156f81bbe", null ],
     [ "Reset", "classvrv_1_1_beam.html#a8e2ee9ef2db29335c50410da804a5fe2", null ],
     [ "ResetDrawing", "classvrv_1_1_beam.html#a502a5b8ca0fadc648a3f017a19310cc9", null ],
+    [ "ResetHorizontalAlignment", "classvrv_1_1_beam.html#a0b5295a70f7c90a356219bef2dd87d7b", null ],
+    [ "SetStemSameasBeam", "classvrv_1_1_beam.html#a5b4cdbe83e08d709c5202e222e5090bf", null ],
     [ "m_beamSegment", "classvrv_1_1_beam.html#a522873ab5d186e4d7036d6a00a408f83", null ]
 ];
