@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"classvrv_1_1_options.html#aadd9a7eba2d6b83437f0f863794b1542":[2,0,0,219,30],
+"classvrv_1_1_options.html#ab0db9f0842b16c5b483d1014d45e4513":[2,0,0,219,137],
 "classvrv_1_1_options.html#ab12a0e2c44d483d51bccc3a9c1e77f0a":[2,0,0,219,147],
 "classvrv_1_1_options.html#ab1792a43850eb5d6bee9a18a23597e93":[2,0,0,219,1],
 "classvrv_1_1_options.html#ab44b3ef50863dbef676f0989a15cef20":[2,0,0,219,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "classvrv_1_1_pitch_interface.html#af3c44934cc0cd821bacad09edb86aa6b":[2,0,0,240,3],
 "classvrv_1_1_plica.html":[2,0,0,241],
 "classvrv_1_1_plica.html#a1aa053a5dd755c374d9c6f3117814ae6":[2,0,0,241,0],
-"classvrv_1_1_plica.html#a7275e05785af097a3d782d9114710f0c":[2,0,0,241,3],
-"classvrv_1_1_plica.html#a9d95ce105836a539d0da0035224f9925":[2,0,0,241,4],
-"classvrv_1_1_plica.html#ab7ffe4d2f763d0ad545ee392a2e622d9":[2,0,0,241,1]
+"classvrv_1_1_plica.html#a7275e05785af097a3d782d9114710f0c":[2,0,0,241,3]
 };

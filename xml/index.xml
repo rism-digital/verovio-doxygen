@@ -1041,10 +1041,9 @@
   <compound refid="classvrv_1_1_calc_max_measure_duration_params" kind="class"><name>vrv::CalcMaxMeasureDurationParams</name>
     <member refid="classvrv_1_1_calc_max_measure_duration_params_1a8408efc55000c267707dff317cdbb547" kind="variable"><name>m_currentScoreTime</name></member>
     <member refid="classvrv_1_1_calc_max_measure_duration_params_1a6bf8c71a3f0434687a147f8ca0a7f12a" kind="variable"><name>m_currentRealTimeSeconds</name></member>
-    <member refid="classvrv_1_1_calc_max_measure_duration_params_1a4f070475d2483e268cfba4a50db40415" kind="variable"><name>m_maxCurrentScoreTime</name></member>
-    <member refid="classvrv_1_1_calc_max_measure_duration_params_1a86fb81674d83d026f09ac7826160219b" kind="variable"><name>m_maxCurrentRealTimeSeconds</name></member>
     <member refid="classvrv_1_1_calc_max_measure_duration_params_1a9cee13650474cfa5fff5a185c1577c5c" kind="variable"><name>m_currentTempo</name></member>
     <member refid="classvrv_1_1_calc_max_measure_duration_params_1aa0eecfb9746852390e9290d93423f234" kind="variable"><name>m_tempoAdjustment</name></member>
+    <member refid="classvrv_1_1_calc_max_measure_duration_params_1a6dd9f010741867102fb4678d59047723" kind="variable"><name>m_multiRestFactor</name></member>
     <member refid="classvrv_1_1_calc_max_measure_duration_params_1af73b57ab16abd51061bfca59dafb3c57" kind="function"><name>CalcMaxMeasureDurationParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_calc_onset_offset_params" kind="class"><name>vrv::CalcOnsetOffsetParams</name>
@@ -3108,6 +3107,7 @@
     <member refid="classvrv_1_1_layer_element_1a05ebf5c8e1a67ac49d11528254a1c819" kind="function"><name>LayerCountInTimeSpan</name></member>
     <member refid="classvrv_1_1_layer_element_1a176d422b2d2113a8fa945695028c521b" kind="function"><name>LayerElementsInTimeSpan</name></member>
     <member refid="classvrv_1_1_layer_element_1a1c108f5965cbe23970c215ea66d19efd" kind="function"><name>GenerateTimemap</name></member>
+    <member refid="classvrv_1_1_layer_element_1ae5048854b7ea265da24246731fccde3c" kind="function"><name>CalcMaxMeasureDuration</name></member>
     <member refid="classvrv_1_1_layer_element_1a3b2b4adef231d2ab871ad026eb2a113c" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_layer_element_1acd1848663fabc6a21aead9999e07d21f" kind="function"><name>GetRelativeLayerElement</name></member>
     <member refid="classvrv_1_1_layer_element_1ab810c9858f5a32391639521b9b93116c" kind="function"><name>PrepareSlurs</name></member>
@@ -3247,6 +3247,8 @@
     <member refid="classvrv_1_1_measure_1aa718d46c804cd9b279dabb2e69b9bb83" kind="function"><name>PrepareFloatingGrpsEnd</name></member>
     <member refid="classvrv_1_1_measure_1a5947d2e09adb3e9b23850c1b84a50b94" kind="function"><name>GenerateMIDI</name></member>
     <member refid="classvrv_1_1_measure_1a0403180f17b62775fbf85df2a92fe62a" kind="function"><name>GenerateTimemap</name></member>
+    <member refid="classvrv_1_1_measure_1ab53070413955a64d0c0f0c4596ddbe36" kind="function"><name>CalcMaxMeasureDuration</name></member>
+    <member refid="classvrv_1_1_measure_1a24d635382ca51319331a24bc3013600d" kind="function"><name>CalcMaxMeasureDurationEnd</name></member>
     <member refid="classvrv_1_1_measure_1a4e1219261a510f2b7e2abeae928177e6" kind="function"><name>CalcOnsetOffset</name></member>
     <member refid="classvrv_1_1_measure_1a01d1317a4566fcddf833550820277d91" kind="variable"><name>m_xAbs</name></member>
     <member refid="classvrv_1_1_measure_1ac8572f7f5fc2b99d09d5f4fc5e3e42e2" kind="variable"><name>m_xAbs2</name></member>
@@ -3326,7 +3328,6 @@
     <member refid="classvrv_1_1_measure_1a2d20bf8c74ca9b15c088d559fecdb3e8" kind="function"><name>PrepareTimePointingEnd</name></member>
     <member refid="classvrv_1_1_measure_1aac0232b6aef0f2b13985518ed33e48ce" kind="function"><name>PrepareTimeSpanningEnd</name></member>
     <member refid="classvrv_1_1_measure_1a88cb1e014e6f325fadc007ca2cdd7052" kind="function"><name>PrepareMilestones</name></member>
-    <member refid="classvrv_1_1_measure_1ab53070413955a64d0c0f0c4596ddbe36" kind="function"><name>CalcMaxMeasureDuration</name></member>
     <member refid="classvrv_1_1_measure_1a22094600d4a94087b92e5662ef4db4de" kind="function"><name>PrepareTimestampsEnd</name></member>
   </compound>
   <compound refid="classvrv_1_1_measure_aligner" kind="class"><name>vrv::MeasureAligner</name>
@@ -4279,6 +4280,8 @@
     <member refid="classvrv_1_1_object_1a7c0a63c225e76daa84e102b7d531d645" kind="function"><name>GenerateMIDIEnd</name></member>
     <member refid="classvrv_1_1_object_1abe889073301d6e1dfe55e725b6532948" kind="function"><name>GenerateTimemap</name></member>
     <member refid="classvrv_1_1_object_1a7ced59f27507ee81372cc12d7f57c8e0" kind="function"><name>GenerateFeatures</name></member>
+    <member refid="classvrv_1_1_object_1ade83951cbefb443049938380b46df228" kind="function"><name>CalcMaxMeasureDuration</name></member>
+    <member refid="classvrv_1_1_object_1a915ed48bcfb8420959cdc84ff2b70d98" kind="function"><name>CalcMaxMeasureDurationEnd</name></member>
     <member refid="classvrv_1_1_object_1aedb15995b4bfd32c033ed7788e09e6e1" kind="variable"><name>m_uuid</name></member>
     <member refid="classvrv_1_1_object_1aa74938be8fa107675351cb68fa795878" kind="variable"><name>m_classIdStr</name></member>
     <member refid="classvrv_1_1_object_1a40306fa2a0b5290cb7f57429a9d0a689" kind="variable"><name>m_iteratorEnd</name></member>
@@ -4423,7 +4426,6 @@
     <member refid="classvrv_1_1_object_1a3d26e4876ee5a38e4c01fae4af747c23" kind="function"><name>GetRelativeLayerElement</name></member>
     <member refid="classvrv_1_1_object_1ae1320bf0b5a56f033dcc561147225ba7" kind="function"><name>CastOffEncoding</name></member>
     <member refid="classvrv_1_1_object_1a84120019fd68f6d7015f6765d7114a7b" kind="function"><name>UnCastOff</name></member>
-    <member refid="classvrv_1_1_object_1ade83951cbefb443049938380b46df228" kind="function"><name>CalcMaxMeasureDuration</name></member>
     <member refid="classvrv_1_1_object_1a4a7cd0786cfd3119a6dd128c25b67a33" kind="function"><name>ReorderByXPos</name></member>
     <member refid="classvrv_1_1_object_1ae1a47a27a677aa68ba14e324b0a17e00" kind="function"><name>FindNextChildByComparison</name></member>
     <member refid="classvrv_1_1_object_1a7c792936ed7e04d00172c7b0017b85a1" kind="function"><name>FindPreviousChildByComparison</name></member>
@@ -6315,6 +6317,7 @@
     <member refid="classvrv_1_1_tempo_1a435959dfc71532125e556e23bdbea1fb" kind="function"><name>GetDrawingXRelativeToStaff</name></member>
     <member refid="classvrv_1_1_tempo_1af6b33973a7461ea800ac9027c2f98b34" kind="function"><name>AdjustTempo</name></member>
     <member refid="classvrv_1_1_tempo_1af3cfd36262cd70af0e8043fea9c2d802" kind="function"><name>ResetDrawing</name></member>
+    <member refid="classvrv_1_1_tempo_1ab4225e913a2ca3a1796371af07abf930" kind="function"><name>CalcMaxMeasureDuration</name></member>
     <member refid="classvrv_1_1_tempo_1a1e23fec90d73196e73601756ee43b3e9" kind="function"><name>IsSupportedChild</name></member>
   </compound>
   <compound refid="classvrv_1_1_text" kind="class"><name>vrv::Text</name>

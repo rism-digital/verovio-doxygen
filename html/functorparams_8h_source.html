@@ -839,23 +839,21 @@ $(document).ready(function(){initNavTree('functorparams_8h_source.html',''); ini
 <div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;<span class="comment">// CalcMaxMeasureDurationParams</span></div>
 <div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160; </div>
-<div class="line"><a name="l00999"></a><span class="lineno"><a class="line" href="classvrv_1_1_calc_max_measure_duration_params.html">  999</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_calc_max_measure_duration_params.html">CalcMaxMeasureDurationParams</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> {</div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;    <a class="code" href="classvrv_1_1_calc_max_measure_duration_params.html">CalcMaxMeasureDurationParams</a>()</div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;    {</div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;        m_currentScoreTime = 0.0;</div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;        m_currentRealTimeSeconds = 0.0;</div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;        m_maxCurrentScoreTime = 0.0;</div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;        m_maxCurrentRealTimeSeconds = 0.0;</div>
+<div class="line"><a name="l01001"></a><span class="lineno"><a class="line" href="classvrv_1_1_calc_max_measure_duration_params.html"> 1001</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_calc_max_measure_duration_params.html">CalcMaxMeasureDurationParams</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> {</div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;    <a class="code" href="classvrv_1_1_calc_max_measure_duration_params.html">CalcMaxMeasureDurationParams</a>()</div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;    {</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;        m_currentScoreTime = 0.0;</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;        m_currentRealTimeSeconds = 0.0;</div>
 <div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;        m_currentTempo = 120.0;</div>
 <div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;        m_tempoAdjustment = 1.0;</div>
-<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;    }</div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;    <span class="keywordtype">double</span> m_currentScoreTime;</div>
-<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;    <span class="keywordtype">double</span> m_currentRealTimeSeconds;</div>
-<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;    <span class="keywordtype">double</span> m_maxCurrentScoreTime;</div>
-<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;    <span class="keywordtype">double</span> m_maxCurrentRealTimeSeconds;</div>
-<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;    <span class="keywordtype">double</span> m_currentTempo;</div>
-<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;    <span class="keywordtype">double</span> m_tempoAdjustment;</div>
+<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;        m_multiRestFactor = 1;</div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;    }</div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;    <span class="keywordtype">double</span> m_currentScoreTime;</div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;    <span class="keywordtype">double</span> m_currentRealTimeSeconds;</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;    <span class="keywordtype">double</span> m_currentTempo;</div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;    <span class="keywordtype">double</span> m_tempoAdjustment;</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;    <span class="keywordtype">int</span> m_multiRestFactor;</div>
 <div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;};</div>
 <div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160; </div>
 <div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
@@ -1974,7 +1972,7 @@ $(document).ready(function(){initNavTree('functorparams_8h_source.html',''); ini
 <div class="ttc" id="aclassvrv_1_1_generate_m_i_d_i_params_html"><div class="ttname"><a href="classvrv_1_1_generate_m_i_d_i_params.html">vrv::GenerateMIDIParams</a></div><div class="ttdoc">member 0: MidiFile*: the MidiFile we are writing to member 1: int: the midi track number member 2: in...</div><div class="ttdef"><b>Definition:</b> functorparams.h:1601</div></div>
 <div class="ttc" id="astructvrv_1_1_m_i_d_i_chord_html"><div class="ttname"><a href="structvrv_1_1_m_i_d_i_chord.html">vrv::MIDIChord</a></div><div class="ttdoc">Helper struct to store chord sequences in MIDI output due to grace notes.</div><div class="ttdef"><b>Definition:</b> functorparams.h:1578</div></div>
 <div class="ttc" id="aclassvrv_1_1_score_def_unset_current_params_html"><div class="ttname"><a href="classvrv_1_1_score_def_unset_current_params.html">vrv::ScoreDefUnsetCurrentParams</a></div><div class="ttdoc">member 0: the functor to be redirected to Aligner</div><div class="ttdef"><b>Definition:</b> functorparams.h:2390</div></div>
-<div class="ttc" id="aclassvrv_1_1_calc_max_measure_duration_params_html"><div class="ttname"><a href="classvrv_1_1_calc_max_measure_duration_params.html">vrv::CalcMaxMeasureDurationParams</a></div><div class="ttdoc">member 0: std::vector&lt;double&gt;: a stack of maximum duration filled by the functor member 1: double: th...</div><div class="ttdef"><b>Definition:</b> functorparams.h:999</div></div>
+<div class="ttc" id="aclassvrv_1_1_calc_max_measure_duration_params_html"><div class="ttname"><a href="classvrv_1_1_calc_max_measure_duration_params.html">vrv::CalcMaxMeasureDurationParams</a></div><div class="ttdoc">member 0: the current score time member 1: the current time in seconds member 2: the current tempo me...</div><div class="ttdef"><b>Definition:</b> functorparams.h:1001</div></div>
 <div class="ttc" id="aclassvrv_1_1_calc_artic_params_html"><div class="ttname"><a href="classvrv_1_1_calc_artic_params.html">vrv::CalcArticParams</a></div><div class="ttdoc">member 0: the chord dots object when processing chord notes member 7: the doc</div><div class="ttdef"><b>Definition:</b> functorparams.h:923</div></div>
 <div class="ttc" id="aclassvrv_1_1_mensur_html"><div class="ttname"><a href="classvrv_1_1_mensur.html">vrv::Mensur</a></div><div class="ttdoc">This class models the MEI &lt;mensur&gt; element.</div><div class="ttdef"><b>Definition:</b> mensur.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_set_alignment_x_pos_params_html"><div class="ttname"><a href="classvrv_1_1_set_alignment_x_pos_params.html">vrv::SetAlignmentXPosParams</a></div><div class="ttdoc">member 0: the previous time position member 1: the previous x rel position member 2: duration of the ...</div><div class="ttdef"><b>Definition:</b> functorparams.h:2245</div></div>
@@ -1994,7 +1992,7 @@ $(document).ready(function(){initNavTree('functorparams_8h_source.html',''); ini
 <div class="ttc" id="astructvrv_1_1_int_tree_html"><div class="ttname"><a href="structvrv_1_1_int_tree.html">vrv::IntTree</a></div><div class="ttdoc">Generic int map recursive structure for storing hierachy of values For example, we want to process al...</div><div class="ttdef"><b>Definition:</b> vrvdef.h:375</div></div>
 <div class="ttc" id="aclassvrv_1_1_align_measures_params_html"><div class="ttname"><a href="classvrv_1_1_align_measures_params.html">vrv::AlignMeasuresParams</a></div><div class="ttdoc">member 0: the cumulated shift member 1: the cumulated justifiable width member 2: shift next measure ...</div><div class="ttdef"><b>Definition:</b> functorparams.h:814</div></div>
 <div class="ttc" id="aclassvrv_1_1_clef_html"><div class="ttname"><a href="classvrv_1_1_clef.html">vrv::Clef</a></div><div class="ttdoc">This class models the MEI &lt;clef&gt; element.</div><div class="ttdef"><b>Definition:</b> clef.h:26</div></div>
-<div class="ttc" id="aclassvrv_1_1_functor_html"><div class="ttname"><a href="classvrv_1_1_functor.html">vrv::Functor</a></div><div class="ttdef"><b>Definition:</b> object.h:1529</div></div>
+<div class="ttc" id="aclassvrv_1_1_functor_html"><div class="ttname"><a href="classvrv_1_1_functor.html">vrv::Functor</a></div><div class="ttdef"><b>Definition:</b> object.h:1530</div></div>
 <div class="ttc" id="aclassvrv_1_1_prepare_timestamps_params_html"><div class="ttname"><a href="classvrv_1_1_prepare_timestamps_params.html">vrv::PrepareTimestampsParams</a></div><div class="ttdoc">member 0: std::vector&lt; Object*&gt;* that holds the current elements to match member 1: ListOfObjectBeatP...</div><div class="ttdef"><b>Definition:</b> functorparams.h:2154</div></div>
 <div class="ttc" id="aclassvrv_1_1_adjust_syl_spacing_params_html"><div class="ttname"><a href="classvrv_1_1_adjust_syl_spacing_params.html">vrv::AdjustSylSpacingParams</a></div><div class="ttdoc">member 0: a vector adjustment tuples (Aligment start, Aligment end, distance) member 1: a pointer to ...</div><div class="ttdef"><b>Definition:</b> functorparams.h:552</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_elements_in_time_span_params_html"><div class="ttname"><a href="classvrv_1_1_layer_elements_in_time_span_params.html">vrv::LayerElementsInTimeSpanParams</a></div><div class="ttdoc">member 0: the time of the event member 1: the duration of the event member 2: the list of layer eleme...</div><div class="ttdef"><b>Definition:</b> functorparams.h:1830</div></div>
@@ -2069,7 +2067,7 @@ $(document).ready(function(){initNavTree('functorparams_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>functorparams.h</b></li>
-    <li class="footer">Generated on Fri Jan 28 2022 07:07:02 for Verovio by
+    <li class="footer">Generated on Fri Jan 28 2022 07:24:51 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

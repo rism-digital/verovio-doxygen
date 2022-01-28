@@ -294,51 +294,52 @@ $(document).ready(function(){initNavTree('measure_8h_source.html',''); initResiz
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_measure.html#a0403180f17b62775fbf85df2a92fe62a">GenerateTimemap</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_measure.html#ab53070413955a64d0c0f0c4596ddbe36">CalcMaxMeasureDuration</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160; </div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_measure.html#a4e1219261a510f2b7e2abeae928177e6">CalcOnsetOffset</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160; </div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_measure.html#a22094600d4a94087b92e5662ef4db4de">PrepareTimestampsEnd</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160; </div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <span class="comment">// flags for drawing measure barline based on visibility or other conditions</span></div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    <span class="keyword">enum</span> BarlineDrawingFlags {</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        SYSTEM_BREAK = 0x1,</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;        SCORE_DEF_INSERT = 0x2,</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        INVISIBLE_MEASURE_CURRENT = 0x4,</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;        INVISIBLE_MEASURE_PREVIOUS = 0x8</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    };</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_measure.html#a01d1317a4566fcddf833550820277d91">m_xAbs</a>;</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    <span class="keywordtype">int</span> m_xAbs2;</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160; </div>
-<div class="line"><a name="l00495"></a><span class="lineno"><a class="line" href="classvrv_1_1_measure.html#a39f4319275584a57b898dcbfcbed760e">  495</a></span>&#160;    <span class="keyword">mutable</span> <a class="code" href="classvrv_1_1_measure_aligner.html">MeasureAligner</a> <a class="code" href="classvrv_1_1_measure.html#a39f4319275584a57b898dcbfcbed760e">m_measureAligner</a>;</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160; </div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <a class="code" href="classvrv_1_1_timestamp_aligner.html">TimestampAligner</a> m_timestampAligner;</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160; </div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00504"></a><span class="lineno"><a class="line" href="classvrv_1_1_measure.html#a0f66f8a9a11ea45c967fbb796b21d91f">  504</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_measure.html#a0f66f8a9a11ea45c967fbb796b21d91f">m_drawingXRel</a>;</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160; </div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <span class="keywordtype">bool</span> m_measuredMusic;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <span class="keywordtype">int</span> CalcMaxMeasureDurationEnd(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160; </div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_measure.html#a4e1219261a510f2b7e2abeae928177e6">CalcOnsetOffset</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160; </div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_measure.html#a22094600d4a94087b92e5662ef4db4de">PrepareTimestampsEnd</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160; </div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    <span class="comment">// flags for drawing measure barline based on visibility or other conditions</span></div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    <span class="keyword">enum</span> BarlineDrawingFlags {</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;        SYSTEM_BREAK = 0x1,</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        SCORE_DEF_INSERT = 0x2,</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        INVISIBLE_MEASURE_CURRENT = 0x4,</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        INVISIBLE_MEASURE_PREVIOUS = 0x8</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    };</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_measure.html#a01d1317a4566fcddf833550820277d91">m_xAbs</a>;</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keywordtype">int</span> m_xAbs2;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160; </div>
+<div class="line"><a name="l00498"></a><span class="lineno"><a class="line" href="classvrv_1_1_measure.html#a39f4319275584a57b898dcbfcbed760e">  498</a></span>&#160;    <span class="keyword">mutable</span> <a class="code" href="classvrv_1_1_measure_aligner.html">MeasureAligner</a> <a class="code" href="classvrv_1_1_measure.html#a39f4319275584a57b898dcbfcbed760e">m_measureAligner</a>;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160; </div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    <a class="code" href="classvrv_1_1_timestamp_aligner.html">TimestampAligner</a> m_timestampAligner;</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160; </div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00507"></a><span class="lineno"><a class="line" href="classvrv_1_1_measure.html#a0f66f8a9a11ea45c967fbb796b21d91f">  507</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_measure.html#a0f66f8a9a11ea45c967fbb796b21d91f">m_drawingXRel</a>;</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160; </div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <a class="code" href="classvrv_1_1_bar_line.html">BarLine</a> m_leftBarLine;</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    <a class="code" href="classvrv_1_1_bar_line.html">BarLine</a> m_rightBarLine;</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160; </div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *m_drawingScoreDef;</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160; </div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    <a class="code" href="classvrv_1_1_ending.html">Ending</a> *m_drawingEnding;</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160; </div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    <span class="keywordtype">bool</span> m_hasAlignmentRefWithMultipleLayers;</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160; </div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    std::vector&lt;double&gt; m_scoreTimeOffset;</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    std::vector&lt;double&gt; m_realTimeOffsetMilliseconds;</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <span class="keywordtype">double</span> m_currentTempo;</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160; </div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    std::map&lt;int, BarlineRenditionPair&gt; m_invisibleStaffBarlines;</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;};</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="keywordtype">bool</span> m_measuredMusic;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160; </div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    <a class="code" href="classvrv_1_1_bar_line.html">BarLine</a> m_leftBarLine;</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    <a class="code" href="classvrv_1_1_bar_line.html">BarLine</a> m_rightBarLine;</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160; </div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *m_drawingScoreDef;</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160; </div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <a class="code" href="classvrv_1_1_ending.html">Ending</a> *m_drawingEnding;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160; </div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    <span class="keywordtype">bool</span> m_hasAlignmentRefWithMultipleLayers;</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160; </div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    std::vector&lt;double&gt; m_scoreTimeOffset;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    std::vector&lt;double&gt; m_realTimeOffsetMilliseconds;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    <span class="keywordtype">double</span> m_currentTempo;</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160; </div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160; </div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    std::map&lt;int, BarlineRenditionPair&gt; m_invisibleStaffBarlines;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;};</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160; </div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160; </div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_measure_html_aebb30d801973e472dade538e89a1ee93"><div class="ttname"><a href="classvrv_1_1_measure.html#aebb30d801973e472dade538e89a1ee93">vrv::Measure::GetBottomVisibleStaff</a></div><div class="ttdeci">Staff * GetBottomVisibleStaff()</div><div class="ttdoc">Return the botoom (last) visible staff in the measure (if any).</div></div>
@@ -359,7 +360,7 @@ $(document).ready(function(){initNavTree('measure_8h_source.html',''); initResiz
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html_ac4084dc35d764d95e805b6dffc03f448"><div class="ttname"><a href="classvrv_1_1_measure.html#ac4084dc35d764d95e805b6dffc03f448">vrv::Measure::AdjustXOverflow</a></div><div class="ttdeci">int AdjustXOverflow(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::AdjustXOverflow.</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html_a1490f0e90320ad4e3d9bc0560854907e"><div class="ttname"><a href="classvrv_1_1_measure.html#a1490f0e90320ad4e3d9bc0560854907e">vrv::Measure::GetRightBarLineWidth</a></div><div class="ttdeci">int GetRightBarLineWidth(Doc *doc)</div><div class="ttdoc">Return the width of the right barline based on the barline form.</div></div>
-<div class="ttc" id="aclassvrv_1_1_measure_html_a01d1317a4566fcddf833550820277d91"><div class="ttname"><a href="classvrv_1_1_measure.html#a01d1317a4566fcddf833550820277d91">vrv::Measure::m_xAbs</a></div><div class="ttdeci">int m_xAbs</div><div class="ttdoc">The X absolute position of the measure for facsimile (transcription) encodings.</div><div class="ttdef"><b>Definition:</b> measure.h:488</div></div>
+<div class="ttc" id="aclassvrv_1_1_measure_html_a01d1317a4566fcddf833550820277d91"><div class="ttname"><a href="classvrv_1_1_measure.html#a01d1317a4566fcddf833550820277d91">vrv::Measure::m_xAbs</a></div><div class="ttdeci">int m_xAbs</div><div class="ttdoc">The X absolute position of the measure for facsimile (transcription) encodings.</div><div class="ttdef"><b>Definition:</b> measure.h:491</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html_a6f43dc071bc473cad84f75d5bfa13c32"><div class="ttname"><a href="classvrv_1_1_measure.html#a6f43dc071bc473cad84f75d5bfa13c32">vrv::Measure::ScoreDefUnsetCurrent</a></div><div class="ttdeci">int ScoreDefUnsetCurrent(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::UnscoreDefSetCurrent.</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html_af5d31684e551148383fc1a5bcebda580"><div class="ttname"><a href="classvrv_1_1_measure.html#af5d31684e551148383fc1a5bcebda580">vrv::Measure::PrepareCrossStaff</a></div><div class="ttdeci">int PrepareCrossStaff(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::PrepareCrossStaff.</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html_a4f4172e322a4283c0357b60369469d2a"><div class="ttname"><a href="classvrv_1_1_measure.html#a4f4172e322a4283c0357b60369469d2a">vrv::Measure::GetNonJustifiableLeftMargin</a></div><div class="ttdeci">int GetNonJustifiableLeftMargin() const</div><div class="ttdoc">Return the non-justifiable left margin for the measure.</div><div class="ttdef"><b>Definition:</b> measure.h:166</div></div>
@@ -406,12 +407,12 @@ $(document).ready(function(){initNavTree('measure_8h_source.html',''); initResiz
 <div class="ttc" id="aclassvrv_1_1_measure_html_af3027299dfe86873e5c6eb9fc1f62d5d"><div class="ttname"><a href="classvrv_1_1_measure.html#af3027299dfe86873e5c6eb9fc1f62d5d">vrv::Measure::ResetDrawing</a></div><div class="ttdeci">int ResetDrawing(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html_a5c84bc1bbbe0b26f359af5fa906159ce"><div class="ttname"><a href="classvrv_1_1_measure.html#a5c84bc1bbbe0b26f359af5fa906159ce">vrv::Measure::AdjustSylSpacingEnd</a></div><div class="ttdeci">int AdjustSylSpacingEnd(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::AdjustSylSpacing.</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html_a7544fc94ceb6e854d98f1edea0c6aa02"><div class="ttname"><a href="classvrv_1_1_measure.html#a7544fc94ceb6e854d98f1edea0c6aa02">vrv::Measure::ScoreDefOptimize</a></div><div class="ttdeci">int ScoreDefOptimize(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ScoreDefOptimize.</div></div>
-<div class="ttc" id="aclassvrv_1_1_measure_html_a0f66f8a9a11ea45c967fbb796b21d91f"><div class="ttname"><a href="classvrv_1_1_measure.html#a0f66f8a9a11ea45c967fbb796b21d91f">vrv::Measure::m_drawingXRel</a></div><div class="ttdeci">int m_drawingXRel</div><div class="ttdoc">The X relative position of the measure.</div><div class="ttdef"><b>Definition:</b> measure.h:504</div></div>
+<div class="ttc" id="aclassvrv_1_1_measure_html_a0f66f8a9a11ea45c967fbb796b21d91f"><div class="ttname"><a href="classvrv_1_1_measure.html#a0f66f8a9a11ea45c967fbb796b21d91f">vrv::Measure::m_drawingXRel</a></div><div class="ttdeci">int m_drawingXRel</div><div class="ttdoc">The X relative position of the measure.</div><div class="ttdef"><b>Definition:</b> measure.h:507</div></div>
 <div class="ttc" id="aclassvrv_1_1_score_def_html"><div class="ttname"><a href="classvrv_1_1_score_def.html">vrv::ScoreDef</a></div><div class="ttdoc">This class represents a MEI scoreDef.</div><div class="ttdef"><b>Definition:</b> scoredef.h:115</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html_a3663f77d327118f868fb08ba06a5e64d"><div class="ttname"><a href="classvrv_1_1_measure.html#a3663f77d327118f868fb08ba06a5e64d">vrv::Measure::AlignHorizontally</a></div><div class="ttdeci">int AlignHorizontally(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::AlignHorizontally.</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html_a821ee8d6671af2c92007173d6c79be1e"><div class="ttname"><a href="classvrv_1_1_measure.html#a821ee8d6671af2c92007173d6c79be1e">vrv::Measure::AlignMeasures</a></div><div class="ttdeci">int AlignMeasures(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::AlignMeasures.</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html_a2047d6b9134715bae2adac5821aef630"><div class="ttname"><a href="classvrv_1_1_measure.html#a2047d6b9134715bae2adac5821aef630">vrv::Measure::ApplyPPUFactor</a></div><div class="ttdeci">int ApplyPPUFactor(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ApplyPPUFactor.</div></div>
-<div class="ttc" id="aclassvrv_1_1_measure_html_a39f4319275584a57b898dcbfcbed760e"><div class="ttname"><a href="classvrv_1_1_measure.html#a39f4319275584a57b898dcbfcbed760e">vrv::Measure::m_measureAligner</a></div><div class="ttdeci">MeasureAligner m_measureAligner</div><div class="ttdoc">The measure aligner that holds the x positions of the content of the measure.</div><div class="ttdef"><b>Definition:</b> measure.h:495</div></div>
+<div class="ttc" id="aclassvrv_1_1_measure_html_a39f4319275584a57b898dcbfcbed760e"><div class="ttname"><a href="classvrv_1_1_measure.html#a39f4319275584a57b898dcbfcbed760e">vrv::Measure::m_measureAligner</a></div><div class="ttdeci">MeasureAligner m_measureAligner</div><div class="ttdoc">The measure aligner that holds the x positions of the content of the measure.</div><div class="ttdef"><b>Definition:</b> measure.h:498</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html_aaea9b1238acf043b2ea503ce946080a3"><div class="ttname"><a href="classvrv_1_1_measure.html#aaea9b1238acf043b2ea503ce946080a3">vrv::Measure::GetWidth</a></div><div class="ttdeci">int GetWidth() const</div><div class="ttdoc">Return the width of the measure, including the barLine width.</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html_ad58b70aabbd1ea6dcfa17e11c3b8ae13"><div class="ttname"><a href="classvrv_1_1_measure.html#ad58b70aabbd1ea6dcfa17e11c3b8ae13">vrv::Measure::HasInvisibleStaffBarlines</a></div><div class="ttdeci">bool HasInvisibleStaffBarlines() const</div><div class="ttdoc">Return whether there is mapping of barline values to invisible staves present in measure.</div><div class="ttdef"><b>Definition:</b> measure.h:131</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html_ae242c6fd5ff6027932ec9d39193110f2"><div class="ttname"><a href="classvrv_1_1_measure.html#ae242c6fd5ff6027932ec9d39193110f2">vrv::Measure::AdjustAccidX</a></div><div class="ttdeci">int AdjustAccidX(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::AjustAccidX.</div></div>
@@ -423,7 +424,7 @@ $(document).ready(function(){initNavTree('measure_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>measure.h</b></li>
-    <li class="footer">Generated on Fri Jan 28 2022 07:07:02 for Verovio by
+    <li class="footer">Generated on Fri Jan 28 2022 07:24:51 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -26,6 +26,7 @@ var classvrv_1_1_measure =
     [ "AlignVertically", "classvrv_1_1_measure.html#af604f09d6c3a7d3b8f68044f3c57ff60", null ],
     [ "ApplyPPUFactor", "classvrv_1_1_measure.html#a2047d6b9134715bae2adac5821aef630", null ],
     [ "CalcMaxMeasureDuration", "classvrv_1_1_measure.html#ab53070413955a64d0c0f0c4596ddbe36", null ],
+    [ "CalcMaxMeasureDurationEnd", "classvrv_1_1_measure.html#a24d635382ca51319331a24bc3013600d", null ],
     [ "CalcOnsetOffset", "classvrv_1_1_measure.html#a4e1219261a510f2b7e2abeae928177e6", null ],
     [ "CastOffEncoding", "classvrv_1_1_measure.html#a4c793218b22e82d580df2b74b04dfdf4", null ],
     [ "CastOffSystems", "classvrv_1_1_measure.html#a2c7399596ea49621b63a2c0e1af814f2", null ],
