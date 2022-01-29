@@ -880,12 +880,12 @@ var hierarchy =
         [ "vrv::IsEmptyComparison", "classvrv_1_1_is_empty_comparison.html", null ],
         [ "vrv::MeasureAlignerTypeComparison", "classvrv_1_1_measure_aligner_type_comparison.html", null ],
         [ "vrv::MeasureOnsetOffsetComparison", "classvrv_1_1_measure_onset_offset_comparison.html", null ],
-        [ "vrv::NoteOnsetOffsetComparison", "classvrv_1_1_note_onset_offset_comparison.html", null ],
         [ "vrv::PointingToComparison", "classvrv_1_1_pointing_to_comparison.html", null ],
         [ "vrv::SpanningToComparison", "classvrv_1_1_spanning_to_comparison.html", null ],
         [ "vrv::UuidComparison", "classvrv_1_1_uuid_comparison.html", null ]
       ] ],
       [ "vrv::ClassIdsComparison", "classvrv_1_1_class_ids_comparison.html", [
+        [ "vrv::NoteOrRestOnsetOffsetComparison", "classvrv_1_1_note_or_rest_onset_offset_comparison.html", null ],
         [ "vrv::VisibleStaffDefOrGrpObject", "classvrv_1_1_visible_staff_def_or_grp_object.html", null ]
       ] ],
       [ "vrv::InterfaceComparison", "classvrv_1_1_interface_comparison.html", null ],

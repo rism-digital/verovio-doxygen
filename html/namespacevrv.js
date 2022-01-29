@@ -205,7 +205,7 @@ var namespacevrv =
     [ "Nc", "classvrv_1_1_nc.html", "classvrv_1_1_nc" ],
     [ "Neume", "classvrv_1_1_neume.html", "classvrv_1_1_neume" ],
     [ "Note", "classvrv_1_1_note.html", "classvrv_1_1_note" ],
-    [ "NoteOnsetOffsetComparison", "classvrv_1_1_note_onset_offset_comparison.html", "classvrv_1_1_note_onset_offset_comparison" ],
+    [ "NoteOrRestOnsetOffsetComparison", "classvrv_1_1_note_or_rest_onset_offset_comparison.html", "classvrv_1_1_note_or_rest_onset_offset_comparison" ],
     [ "Num", "classvrv_1_1_num.html", "classvrv_1_1_num" ],
     [ "Object", "classvrv_1_1_object.html", "classvrv_1_1_object" ],
     [ "ObjectComparison", "classvrv_1_1_object_comparison.html", "classvrv_1_1_object_comparison" ],
