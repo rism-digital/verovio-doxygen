@@ -8,11 +8,22 @@ var classvrv_1_1_duration_interface =
     [ "GetInterfaceAlignmentDuration", "classvrv_1_1_duration_interface.html#afad06581db0bae7afde58b8a0e7c7c7e", null ],
     [ "GetInterfaceAlignmentMensuralDuration", "classvrv_1_1_duration_interface.html#add30f3702afccc9b0dafc55bcf33c965", null ],
     [ "GetNoteOrChordDur", "classvrv_1_1_duration_interface.html#aec84ae43f7d2b25df6e3b9f05aa4bea7", null ],
+    [ "GetRealTimeOffsetMilliseconds", "classvrv_1_1_duration_interface.html#ae37688db2032d291d2b673343775c8e4", null ],
+    [ "GetRealTimeOnsetMilliseconds", "classvrv_1_1_duration_interface.html#aec4ff1cc30f1f5e7729489f2ed76b12f", null ],
+    [ "GetScoreTimeDuration", "classvrv_1_1_duration_interface.html#adc39d50da7f0a0dea1369a1aec1ecfbc", null ],
+    [ "GetScoreTimeOffset", "classvrv_1_1_duration_interface.html#a6c9cfd95823772f9956300ab0b7cfd19", null ],
+    [ "GetScoreTimeOnset", "classvrv_1_1_duration_interface.html#a50766852c90c7f220f1e719583238408", null ],
+    [ "GetScoreTimeTiedDuration", "classvrv_1_1_duration_interface.html#a754f593d0bd16d06fdff151a2da33a3f", null ],
     [ "HasIdenticalDurationInterface", "classvrv_1_1_duration_interface.html#a4069af8ecad13f6b29e960cec642b6f5", null ],
     [ "IsFirstInBeam", "classvrv_1_1_duration_interface.html#ac7abd60beb364ff44323e4e60e11d59f", null ],
     [ "IsInterface", "classvrv_1_1_duration_interface.html#aa95bb6fba812c2b05620c3b862e0f6e5", null ],
     [ "IsLastInBeam", "classvrv_1_1_duration_interface.html#ae07578a3e138bddc967229f1ee93cb94", null ],
     [ "IsMensuralDur", "classvrv_1_1_duration_interface.html#a66a8195b6236d862a2234af1fb5256c1", null ],
     [ "Reset", "classvrv_1_1_duration_interface.html#ab614c92b0802cbba7b41d89def33e9a2", null ],
-    [ "SetDurDefault", "classvrv_1_1_duration_interface.html#abacec4efd7744748f4c0d40a87fd2784", null ]
+    [ "SetDurDefault", "classvrv_1_1_duration_interface.html#abacec4efd7744748f4c0d40a87fd2784", null ],
+    [ "SetRealTimeOffsetSeconds", "classvrv_1_1_duration_interface.html#abfc9967983eae285202ba238c7b6e018", null ],
+    [ "SetRealTimeOnsetSeconds", "classvrv_1_1_duration_interface.html#a328faf68d235b814c5a8226d2575368b", null ],
+    [ "SetScoreTimeOffset", "classvrv_1_1_duration_interface.html#a80945c2f53c212b5e0ae6cf53180330a", null ],
+    [ "SetScoreTimeOnset", "classvrv_1_1_duration_interface.html#a0bee1f64b04b02e1126446701a6532aa", null ],
+    [ "SetScoreTimeTiedDuration", "classvrv_1_1_duration_interface.html#af7cbe3eb3255d7bdd5361e77d027f999", null ]
 ];

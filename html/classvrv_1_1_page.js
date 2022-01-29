@@ -16,6 +16,7 @@ var classvrv_1_1_page =
     [ "GetPPUFactor", "classvrv_1_1_page.html#a8490304e26cdf6b0ab0b9bf342d956be", null ],
     [ "GetStaffPosOnPage", "classvrv_1_1_page.html#a8d0b481d1f2ee288d54cea70b2f18570", null ],
     [ "GetSystemCount", "classvrv_1_1_page.html#ad61c7e4e46e6c81a2da83f9737aa08e5", null ],
+    [ "HorizontalLayoutCachePage", "classvrv_1_1_page.html#a307be18c2415caa8b7d0889eb76aa972", null ],
     [ "IsSupportedChild", "classvrv_1_1_page.html#a8914102e927cd858174b52fbe638f8fe", null ],
     [ "JustifyHorizontally", "classvrv_1_1_page.html#a01e27bb8082d59453406dd7848a8d1b2", null ],
     [ "JustifyVertically", "classvrv_1_1_page.html#a677cbec6a571326d624fe812a0c432fa", null ],

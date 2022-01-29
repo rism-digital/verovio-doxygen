@@ -160,6 +160,7 @@ var classvrv_1_1_object =
     [ "HasEditorialContent", "classvrv_1_1_object.html#ac9dd387934b8960b47b96a0c05bb1b84", null ],
     [ "HasInterface", "classvrv_1_1_object.html#a1639642ba9433617ec04608f2d2570bb", null ],
     [ "HasNonEditorialContent", "classvrv_1_1_object.html#ae0d0368a66d1c4b590b311a1a94eb717", null ],
+    [ "HorizontalLayoutCache", "classvrv_1_1_object.html#a4e7525f44aa7c13e45caf42aaa60ae55", null ],
     [ "InsertAfter", "classvrv_1_1_object.html#aaf1ba626f7c0d6be44373b6cfe29855f", null ],
     [ "InsertBefore", "classvrv_1_1_object.html#a26dd6389f8b6ce5ff1cf9f0b779a0d14", null ],
     [ "InsertChild", "classvrv_1_1_object.html#ac14929dac6e5b5e699d16ba7fc258d9d", null ],

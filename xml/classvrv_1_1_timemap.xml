@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classvrv_1_1_timemap" kind="class" language="C++" prot="public">
+    <compoundname>vrv::Timemap</compoundname>
+    <includes refid="timemap_8h" local="no">timemap.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Constructors, destructors, and other standard methods</header>
+      <memberdef kind="function" id="classvrv_1_1_timemap_1a5bdedb009ea1ab046f307d6592eb63d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vrv::Timemap::Timemap</definition>
+        <argsstring>()</argsstring>
+        <name>Timemap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="53" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_timemap_1a69594da797809527113bef5d332c5317" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual vrv::Timemap::~Timemap</definition>
+        <argsstring>()</argsstring>
+        <name>~Timemap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="54" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvrv_1_1_timemap_1a542515798df4324a1bbca3c176d2ea79" prot="private" static="no" mutable="no">
+        <type>std::map&lt; double, <ref refid="structvrv_1_1_timemap_entry" kindref="compound">TimemapEntry</ref> &gt;</type>
+        <definition>std::map&lt;double, TimemapEntry&gt; vrv::Timemap::m_map</definition>
+        <argsstring></argsstring>
+        <name>m_map</name>
+        <briefdescription>
+<para>The map with time values as keys. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="77" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/timemap.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvrv_1_1_timemap_1ae6718bde249d9ef72ee8b0e6fe927381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Timemap::Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+<para>Resets the timemap. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_timemap_1a46cf6888a5c559d1275ec2bf88a2b484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Timemap::AddEntry</definition>
+        <argsstring>(Object *object, GenerateTimemapParams *params)</argsstring>
+        <name>AddEntry</name>
+        <param>
+          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_generate_timemap_params" kindref="compound">GenerateTimemapParams</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classvrv_1_1_add" kindref="compound">Add</ref> an entry to the timemap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Currently support note and rest (duration interfaces) and measure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="64" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_timemap_1aebe2bdffcabe29d3d335effbfb727d60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Timemap::ToJson</definition>
+        <argsstring>(std::string &amp;output, bool includetRests, bool includetMeasures)</argsstring>
+        <name>ToJson</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includetRests</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includetMeasures</declname>
+        </param>
+        <briefdescription>
+<para>Write the current timemap to a JSON string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="69" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class holds a timemap for exporting onset / offset values. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="47" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/timemap.h" bodystart="47" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classvrv_1_1_timemap_1a46cf6888a5c559d1275ec2bf88a2b484" prot="public" virt="non-virtual"><scope>vrv::Timemap</scope><name>AddEntry</name></member>
+      <member refid="classvrv_1_1_timemap_1a542515798df4324a1bbca3c176d2ea79" prot="private" virt="non-virtual"><scope>vrv::Timemap</scope><name>m_map</name></member>
+      <member refid="classvrv_1_1_timemap_1ae6718bde249d9ef72ee8b0e6fe927381" prot="public" virt="non-virtual"><scope>vrv::Timemap</scope><name>Reset</name></member>
+      <member refid="classvrv_1_1_timemap_1a5bdedb009ea1ab046f307d6592eb63d7" prot="public" virt="non-virtual"><scope>vrv::Timemap</scope><name>Timemap</name></member>
+      <member refid="classvrv_1_1_timemap_1aebe2bdffcabe29d3d335effbfb727d60" prot="public" virt="non-virtual"><scope>vrv::Timemap</scope><name>ToJson</name></member>
+      <member refid="classvrv_1_1_timemap_1a69594da797809527113bef5d332c5317" prot="public" virt="virtual"><scope>vrv::Timemap</scope><name>~Timemap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

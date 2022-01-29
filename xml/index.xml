@@ -453,11 +453,13 @@
     <member refid="classvrv_1_1_arpeg_1af1ab8eccb2a91fd27ce901e4577f942b" kind="function"><name>SetDrawingXRel</name></member>
     <member refid="classvrv_1_1_arpeg_1a6f38ec62caaa443acae4c3eb3a67ca55" kind="function"><name>AdjustArpeg</name></member>
     <member refid="classvrv_1_1_arpeg_1a58b96d67e743bb9f5ddbeb8cc276d1d4" kind="variable"><name>m_drawingXRel</name></member>
+    <member refid="classvrv_1_1_arpeg_1aad8c4342eb3b5b50c88f7b35be45fd96" kind="variable"><name>m_cachedXRel</name></member>
     <member refid="classvrv_1_1_arpeg_1a5f238eed6fd2aded2572ee35c07509be" kind="function"><name>GetDrawingTopBottomNotes</name></member>
     <member refid="classvrv_1_1_arpeg_1aaab2107a9ec1a6c51018674da16ba32c" kind="function"><name>GetCrossStaff</name></member>
     <member refid="classvrv_1_1_arpeg_1abd0f1f222639caacbefa8c5bb8dbadbf" kind="function"><name>IsValidRef</name></member>
     <member refid="classvrv_1_1_arpeg_1a8e007b23c0fb1dc5ddd24e2ec4ce72df" kind="function"><name>ResetHorizontalAlignment</name></member>
     <member refid="classvrv_1_1_arpeg_1a0e27c4e0866b5a988f8c8eca5512c2ea" kind="function"><name>ResetDrawing</name></member>
+    <member refid="classvrv_1_1_arpeg_1a2a66500ca5b65be33deef1bcd5b98607" kind="function"><name>HorizontalLayoutCache</name></member>
   </compound>
   <compound refid="classvrv_1_1_artic" kind="class"><name>vrv::Artic</name>
     <member refid="classvrv_1_1_artic_1aaa00075555eb6279bf17ef2bfa967f98" kind="function"><name>Artic</name></member>
@@ -1614,8 +1616,7 @@
     <member refid="classvrv_1_1_doc_1a064d5e554df56f41a487a42e89056343" kind="function"><name>CalculateMidiTimemap</name></member>
     <member refid="classvrv_1_1_doc_1afaf7e1be6f9e7737884383c2e20e1ee6" kind="function"><name>HasMidiTimemap</name></member>
     <member refid="classvrv_1_1_doc_1a4b8be5eebe48afb3668ec97c133148a5" kind="function"><name>ExportMIDI</name></member>
-    <member refid="classvrv_1_1_doc_1a770613cbab57a30c515bbc653acf17ee" kind="function"><name>ExportTimemap</name></member>
-    <member refid="classvrv_1_1_doc_1aaa1e882b542afc47118166afc4c305e8" kind="function"><name>PrepareJsonTimemap</name></member>
+    <member refid="classvrv_1_1_doc_1aa8808429c70b8fd2756dd9634671789c" kind="function"><name>ExportTimemap</name></member>
     <member refid="classvrv_1_1_doc_1a6e47232f8eef26473e867f4d2f96701c" kind="function"><name>ExportFeatures</name></member>
     <member refid="classvrv_1_1_doc_1acdae54ac378140e0eeea99e21aabfdf4" kind="function"><name>ScoreDefSetCurrentDoc</name></member>
     <member refid="classvrv_1_1_doc_1a5e9aa400ebeacad2373631dddbdf6baf" kind="function"><name>ScoreDefOptimizeDoc</name></member>
@@ -1626,7 +1627,7 @@
     <member refid="classvrv_1_1_doc_1a4676652a2b466a52a0b5462f6bd19031" kind="function"><name>CastOffLineDoc</name></member>
     <member refid="classvrv_1_1_doc_1a60d959e4f877248e087e2a945e0f9f31" kind="function"><name>CastOffDocBase</name></member>
     <member refid="classvrv_1_1_doc_1ab50a46ae81caf105c0884f38ee88502e" kind="function"><name>CastOffRunningElements</name></member>
-    <member refid="classvrv_1_1_doc_1a60ec7810abc3f73ed1bb41e521289693" kind="function"><name>UnCastOffDoc</name></member>
+    <member refid="classvrv_1_1_doc_1a7cb1b2f4b17d550ec69fae48d0eb065f" kind="function"><name>UnCastOffDoc</name></member>
     <member refid="classvrv_1_1_doc_1a1f4801d2f14675afd7a372f525cbed2d" kind="function"><name>CastOffEncodingDoc</name></member>
     <member refid="classvrv_1_1_doc_1a1f5b58cd73b6f04ce22ebf231c69db32" kind="function"><name>ConvertToPageBasedDoc</name></member>
     <member refid="classvrv_1_1_doc_1a4dbe6bc0e603e609a9ff44138e84f3e1" kind="function"><name>ConvertToCastOffMensuralDoc</name></member>
@@ -1698,6 +1699,22 @@
     <member refid="classvrv_1_1_duration_interface_1afd39c3b41049378b5a4baa86faf68cae" kind="function"><name>GetDurDefault</name></member>
     <member refid="classvrv_1_1_duration_interface_1a74149eeb70f90f1f6414a10720fb328a" kind="function"><name>GetActualDur</name></member>
     <member refid="classvrv_1_1_duration_interface_1a633cc6377cbb770438eacc87fdb1622f" kind="function"><name>GetActualDurGes</name></member>
+    <member refid="classvrv_1_1_duration_interface_1a0bee1f64b04b02e1126446701a6532aa" kind="function"><name>SetScoreTimeOnset</name></member>
+    <member refid="classvrv_1_1_duration_interface_1a328faf68d235b814c5a8226d2575368b" kind="function"><name>SetRealTimeOnsetSeconds</name></member>
+    <member refid="classvrv_1_1_duration_interface_1a80945c2f53c212b5e0ae6cf53180330a" kind="function"><name>SetScoreTimeOffset</name></member>
+    <member refid="classvrv_1_1_duration_interface_1abfc9967983eae285202ba238c7b6e018" kind="function"><name>SetRealTimeOffsetSeconds</name></member>
+    <member refid="classvrv_1_1_duration_interface_1af7cbe3eb3255d7bdd5361e77d027f999" kind="function"><name>SetScoreTimeTiedDuration</name></member>
+    <member refid="classvrv_1_1_duration_interface_1a50766852c90c7f220f1e719583238408" kind="function"><name>GetScoreTimeOnset</name></member>
+    <member refid="classvrv_1_1_duration_interface_1aec4ff1cc30f1f5e7729489f2ed76b12f" kind="function"><name>GetRealTimeOnsetMilliseconds</name></member>
+    <member refid="classvrv_1_1_duration_interface_1a6c9cfd95823772f9956300ab0b7cfd19" kind="function"><name>GetScoreTimeOffset</name></member>
+    <member refid="classvrv_1_1_duration_interface_1a754f593d0bd16d06fdff151a2da33a3f" kind="function"><name>GetScoreTimeTiedDuration</name></member>
+    <member refid="classvrv_1_1_duration_interface_1ae37688db2032d291d2b673343775c8e4" kind="function"><name>GetRealTimeOffsetMilliseconds</name></member>
+    <member refid="classvrv_1_1_duration_interface_1adc39d50da7f0a0dea1369a1aec1ecfbc" kind="function"><name>GetScoreTimeDuration</name></member>
+    <member refid="classvrv_1_1_duration_interface_1a26f356ee4fcdb9e48c860d8fac8d4090" kind="variable"><name>m_scoreTimeOnset</name></member>
+    <member refid="classvrv_1_1_duration_interface_1a5c99d2a0fa1d3cb354bb34b055575e9c" kind="variable"><name>m_scoreTimeOffset</name></member>
+    <member refid="classvrv_1_1_duration_interface_1a01e90f9b6bcffccd07bc7f4ad2b2f745" kind="variable"><name>m_realTimeOnsetMilliseconds</name></member>
+    <member refid="classvrv_1_1_duration_interface_1a01b006181c60c9cc295d070bee7e09dc" kind="variable"><name>m_realTimeOffsetMilliseconds</name></member>
+    <member refid="classvrv_1_1_duration_interface_1a27ed1d79807aed8975704c1b518b678a" kind="variable"><name>m_scoreTimeTiedDuration</name></member>
     <member refid="classvrv_1_1_duration_interface_1abde0dcbc837ae74f91551819a1978db9" kind="variable"><name>m_durDefault</name></member>
     <member refid="classvrv_1_1_duration_interface_1afad06581db0bae7afde58b8a0e7c7c7e" kind="function"><name>GetInterfaceAlignmentDuration</name></member>
     <member refid="classvrv_1_1_duration_interface_1add30f3702afccc9b0dafc55bcf33c965" kind="function"><name>GetInterfaceAlignmentMensuralDuration</name></member>
@@ -2205,15 +2222,12 @@
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1aca7cbb3730c90a286c78f041dbf8094f" kind="function"><name>GenerateMIDIParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_generate_timemap_params" kind="class"><name>vrv::GenerateTimemapParams</name>
-    <member refid="classvrv_1_1_generate_timemap_params_1a66aaac3c9fdbf958e43d95b617d794d6" kind="variable"><name>realTimeToScoreTime</name></member>
-    <member refid="classvrv_1_1_generate_timemap_params_1a3abd11a43685b95e8be9b4a2616d1c2d" kind="variable"><name>realTimeToOnElements</name></member>
-    <member refid="classvrv_1_1_generate_timemap_params_1af764190b23a658cddc9f5997f1159f6d" kind="variable"><name>realTimeToOffElements</name></member>
-    <member refid="classvrv_1_1_generate_timemap_params_1af6741e6bb2f911e3baa4cc797562fee8" kind="variable"><name>realTimeToTempo</name></member>
     <member refid="classvrv_1_1_generate_timemap_params_1a9acab222e46e65e59b1a5de59ba527b5" kind="variable"><name>m_scoreTimeOffset</name></member>
     <member refid="classvrv_1_1_generate_timemap_params_1a02f0f4eab90900ce799ecf30657fc9cc" kind="variable"><name>m_realTimeOffsetMilliseconds</name></member>
     <member refid="classvrv_1_1_generate_timemap_params_1a22a7b5f14a3744c9a58571ebde257e9a" kind="variable"><name>m_currentTempo</name></member>
+    <member refid="classvrv_1_1_generate_timemap_params_1a7d5b904d4f750cb5d549aeda8b5f7d50" kind="variable"><name>m_timemap</name></member>
     <member refid="classvrv_1_1_generate_timemap_params_1aae012b8624c98644fa6df070f0b2f520" kind="variable"><name>m_functor</name></member>
-    <member refid="classvrv_1_1_generate_timemap_params_1a9368083f29090cb143a447d50d6c861c" kind="function"><name>GenerateTimemapParams</name></member>
+    <member refid="classvrv_1_1_generate_timemap_params_1a0f6eba24b4af7438b027375da2d6bba4" kind="function"><name>GenerateTimemapParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_get_alignment_left_right_params" kind="class"><name>vrv::GetAlignmentLeftRightParams</name>
     <member refid="classvrv_1_1_get_alignment_left_right_params_1af27523d799fe0fb36d1e15112e1d4159" kind="variable"><name>m_minLeft</name></member>
@@ -2362,6 +2376,11 @@
     <member refid="classvrv_1_1_horizontal_aligner_1a17563d5f8fd0073caef0fdc4016292ff" kind="function"><name>GetAlignmentCount</name></member>
     <member refid="classvrv_1_1_horizontal_aligner_1a1b3764dfcb51917eca727e2e55c402b2" kind="function"><name>SearchAlignmentAtTime</name></member>
     <member refid="classvrv_1_1_horizontal_aligner_1ae93eb41d1c2ad2a6cb3f42e3ac523cde" kind="function"><name>AddAlignment</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_horizontal_layout_cache_params" kind="class"><name>vrv::HorizontalLayoutCacheParams</name>
+    <member refid="classvrv_1_1_horizontal_layout_cache_params_1af698579ec270ff11c1478b7dcef76851" kind="variable"><name>m_restore</name></member>
+    <member refid="classvrv_1_1_horizontal_layout_cache_params_1aba5e4ac36f84bd23fe6382d6da87e4bf" kind="variable"><name>m_doc</name></member>
+    <member refid="classvrv_1_1_horizontal_layout_cache_params_1a387b14510a35e0f23fcdbebd2375cfe8" kind="function"><name>HorizontalLayoutCacheParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_humdrum_input" kind="class"><name>vrv::HumdrumInput</name>
     <member refid="classvrv_1_1_humdrum_input_1add29b46c744beda8109f7baa5435fd72" kind="variable"><name>m_filename</name></member>
@@ -3062,7 +3081,9 @@
     <member refid="classvrv_1_1_layer_element_1aad5569b5dbc43a1fcfba069c58e18ada" kind="variable"><name>m_alignment</name></member>
     <member refid="classvrv_1_1_layer_element_1a6ee0bb4018d8ba684437586512ff4136" kind="variable"><name>m_graceAlignment</name></member>
     <member refid="classvrv_1_1_layer_element_1a33f69b421d5fbe77c6e89e2da3e46b3b" kind="variable"><name>m_drawingYRel</name></member>
+    <member refid="classvrv_1_1_layer_element_1ac4b9a899709b36b64228c263e4990d13" kind="variable"><name>m_cachedYRel</name></member>
     <member refid="classvrv_1_1_layer_element_1a592cebc1769e23ff79403a675a923c65" kind="variable"><name>m_drawingXRel</name></member>
+    <member refid="classvrv_1_1_layer_element_1a29f3a9d4472de2ece86abce25c87139c" kind="variable"><name>m_cachedXRel</name></member>
     <member refid="classvrv_1_1_layer_element_1a98868bde8bc6d40dbfc9b0fb5632354f" kind="variable"><name>m_drawingCueSize</name></member>
     <member refid="classvrv_1_1_layer_element_1a07b8fc28436b001ee372fb970829aa06" kind="variable"><name>m_scoreDefRole</name></member>
     <member refid="classvrv_1_1_layer_element_1a02cc36b79a7b7e0b588d960a9f3df79a" kind="variable"><name>m_alignmentLayerN</name></member>
@@ -3112,6 +3133,7 @@
     <member refid="classvrv_1_1_layer_element_1acd1848663fabc6a21aead9999e07d21f" kind="function"><name>GetRelativeLayerElement</name></member>
     <member refid="classvrv_1_1_layer_element_1ab810c9858f5a32391639521b9b93116c" kind="function"><name>PrepareSlurs</name></member>
     <member refid="classvrv_1_1_layer_element_1a65909f1b435e1059b76f60ab9f5d274e" kind="function"><name>PrepareDuration</name></member>
+    <member refid="classvrv_1_1_layer_element_1a7b67eb50cac027a4187f75b4afd7ed87" kind="function"><name>HorizontalLayoutCache</name></member>
     <member refid="classvrv_1_1_layer_element_1a3334d5cdd9472146f2db3fc5564b70bf" kind="function"><name>CountElementsInUnison</name></member>
     <member refid="classvrv_1_1_layer_element_1af71a2b085606189023ba9c8dda0d0bc6" kind="function"><name>CalcNoteLocations</name></member>
     <member refid="classvrv_1_1_layer_element_1af8ea95b9b80e19c4568a2e6da17d4d62" kind="function"><name>CalcDotLocations</name></member>
@@ -3252,6 +3274,8 @@
     <member refid="classvrv_1_1_measure_1a4e1219261a510f2b7e2abeae928177e6" kind="function"><name>CalcOnsetOffset</name></member>
     <member refid="classvrv_1_1_measure_1a01d1317a4566fcddf833550820277d91" kind="variable"><name>m_xAbs</name></member>
     <member refid="classvrv_1_1_measure_1ac8572f7f5fc2b99d09d5f4fc5e3e42e2" kind="variable"><name>m_xAbs2</name></member>
+    <member refid="classvrv_1_1_measure_1a0e9b8f947c5c738f51e30de4d7bf94bf" kind="variable"><name>m_cachedOverflow</name></member>
+    <member refid="classvrv_1_1_measure_1a26a94118f64e123ae7d15800b0b128bf" kind="variable"><name>m_cachedWidth</name></member>
     <member refid="classvrv_1_1_measure_1af78ac7ac33707d073e4355dea1a6097f" kind="variable"><name>m_leftBarLine</name></member>
     <member refid="classvrv_1_1_measure_1a9abdf3a7e0d0df57dfab42e661d89fa2" kind="variable"><name>m_rightBarLine</name></member>
     <member refid="classvrv_1_1_measure_1a489541375d86be65d53f2eafb1c46ff8" kind="enum"><name>BarlineDrawingFlags</name></member>
@@ -3263,6 +3287,7 @@
     <member refid="classvrv_1_1_measure_1a39f4319275584a57b898dcbfcbed760e" kind="variable"><name>m_measureAligner</name></member>
     <member refid="classvrv_1_1_measure_1a680391bcbb2cbc1cc3859a22194133e5" kind="variable"><name>m_timestampAligner</name></member>
     <member refid="classvrv_1_1_measure_1a0f66f8a9a11ea45c967fbb796b21d91f" kind="variable"><name>m_drawingXRel</name></member>
+    <member refid="classvrv_1_1_measure_1a665f3d9783f81d741ffa3a140bd61485" kind="variable"><name>m_cachedXRel</name></member>
     <member refid="classvrv_1_1_measure_1afb57c3c106f4768caccb8400ce3d1be2" kind="variable"><name>m_measuredMusic</name></member>
     <member refid="classvrv_1_1_measure_1ac1f791c8055a37be1f1e5cbc1f32bd4f" kind="variable"><name>m_drawingScoreDef</name></member>
     <member refid="classvrv_1_1_measure_1a713428fa909f3a88dc7df063b803f802" kind="variable"><name>m_drawingEnding</name></member>
@@ -3276,6 +3301,7 @@
     <member refid="classvrv_1_1_measure_1a9757eaa14e314e66fc650836870a7fc3" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_measure_1afbaab874c0a2b37b3f2bbd175756f4aa" kind="function"><name>AddChildBack</name></member>
     <member refid="classvrv_1_1_measure_1a67df4d10c89fedc0a403cb7169170d0a" kind="function"><name>AddTimestamp</name></member>
+    <member refid="classvrv_1_1_measure_1a5a45b03920fff1323cfca86c78f58db6" kind="function"><name>HasCachedHorizontalLayout</name></member>
     <member refid="classvrv_1_1_measure_1a2d8b2d4baeea0f3c888a25804d8145ba" kind="function"><name>GetDrawingX</name></member>
     <member refid="classvrv_1_1_measure_1abb732e601d47f3dfe7f409d303e0bb8a" kind="function"><name>ResetCachedDrawingX</name></member>
     <member refid="classvrv_1_1_measure_1a576172291cab812579e24126e5151526" kind="function"><name>GetMeasureIdx</name></member>
@@ -3329,6 +3355,8 @@
     <member refid="classvrv_1_1_measure_1aac0232b6aef0f2b13985518ed33e48ce" kind="function"><name>PrepareTimeSpanningEnd</name></member>
     <member refid="classvrv_1_1_measure_1a88cb1e014e6f325fadc007ca2cdd7052" kind="function"><name>PrepareMilestones</name></member>
     <member refid="classvrv_1_1_measure_1a22094600d4a94087b92e5662ef4db4de" kind="function"><name>PrepareTimestampsEnd</name></member>
+    <member refid="classvrv_1_1_measure_1a3df4668a6f232074e0161f832f10e29b" kind="function"><name>UnCastOff</name></member>
+    <member refid="classvrv_1_1_measure_1a9ce00468ec75a511b3a8f65de90bdd9d" kind="function"><name>HorizontalLayoutCache</name></member>
   </compound>
   <compound refid="classvrv_1_1_measure_aligner" kind="class"><name>vrv::MeasureAligner</name>
     <member refid="classvrv_1_1_measure_aligner_1ad32c2551ae190f29ae458fbe5185a025" kind="function"><name>MeasureAligner</name></member>
@@ -4074,17 +4102,6 @@
     <member refid="classvrv_1_1_note_1a6254802daf2625dc5fb1b82ada63a3aa" kind="function"><name>GetStemUpSE</name></member>
     <member refid="classvrv_1_1_note_1a6eb7ccf07fa72ce293410d2f58ac047a" kind="function"><name>GetStemDownNW</name></member>
     <member refid="classvrv_1_1_note_1afe4bad9d0e38826cefbf537b4c1a69f3" kind="function"><name>CalcStemLenInThirdUnits</name></member>
-    <member refid="classvrv_1_1_note_1a0c518a751b415b97dbf5649daec5bc8a" kind="function"><name>SetScoreTimeOnset</name></member>
-    <member refid="classvrv_1_1_note_1ababdf198d9f4cadb001802731f1bc79f" kind="function"><name>SetRealTimeOnsetSeconds</name></member>
-    <member refid="classvrv_1_1_note_1a2a7d88dd8c4f5ff265753e00fa94c574" kind="function"><name>SetScoreTimeOffset</name></member>
-    <member refid="classvrv_1_1_note_1af2a5f4d49457dd5ce4e6fed0a4813aec" kind="function"><name>SetRealTimeOffsetSeconds</name></member>
-    <member refid="classvrv_1_1_note_1aa2980719a6e9b09b72fc4fc8756d1265" kind="function"><name>SetScoreTimeTiedDuration</name></member>
-    <member refid="classvrv_1_1_note_1ab7cc30aab401ba0be2d2705720eeedc5" kind="function"><name>GetScoreTimeOnset</name></member>
-    <member refid="classvrv_1_1_note_1a103dedd5338c3303df8f4680ebb1b63b" kind="function"><name>GetRealTimeOnsetMilliseconds</name></member>
-    <member refid="classvrv_1_1_note_1a0b40ed36a764703c5b390b911dd7a592" kind="function"><name>GetScoreTimeOffset</name></member>
-    <member refid="classvrv_1_1_note_1a811919524cab46d6ac823109c861f933" kind="function"><name>GetScoreTimeTiedDuration</name></member>
-    <member refid="classvrv_1_1_note_1a89f58f5716c3172278504a5449f1df18" kind="function"><name>GetRealTimeOffsetMilliseconds</name></member>
-    <member refid="classvrv_1_1_note_1a5398bb3a2efd98452dc372210d24b5a2" kind="function"><name>GetScoreTimeDuration</name></member>
     <member refid="classvrv_1_1_note_1a929e7011bc7c7e187ad0ae4973c80b35" kind="function"><name>HasStemSameasNote</name></member>
     <member refid="classvrv_1_1_note_1aa8e3d7044475c72873fab3c6026e0f6e" kind="function"><name>GetStemSameasNote</name></member>
     <member refid="classvrv_1_1_note_1a5800384e2a83f7946c0226b8743fddd5" kind="function"><name>SetStemSameasNote</name></member>
@@ -4092,11 +4109,6 @@
     <member refid="classvrv_1_1_note_1ac2be2a06ed546eabd7d5f88a7bd9e9ef" kind="variable"><name>m_flippedNotehead</name></member>
     <member refid="classvrv_1_1_note_1af2c2dbc2bd4daaadd559e1e3e9639449" kind="variable"><name>m_cluster</name></member>
     <member refid="classvrv_1_1_note_1a59c0210d052cd5c327101ed6d50c2ec1" kind="variable"><name>m_clusterPosition</name></member>
-    <member refid="classvrv_1_1_note_1ad47bbc0faa4ed6fdb7ed8f095a865945" kind="variable"><name>m_scoreTimeOnset</name></member>
-    <member refid="classvrv_1_1_note_1ad4c128ff83c4d81357d7d25e24d65176" kind="variable"><name>m_scoreTimeOffset</name></member>
-    <member refid="classvrv_1_1_note_1a1664d5d12ec17657d76d9b3bd46742a2" kind="variable"><name>m_realTimeOnsetMilliseconds</name></member>
-    <member refid="classvrv_1_1_note_1a922304a2f5187cc07b5a3fdca48e6425" kind="variable"><name>m_realTimeOffsetMilliseconds</name></member>
-    <member refid="classvrv_1_1_note_1ad5ca1b081a0898c3a5cf27993265c23a" kind="variable"><name>m_scoreTimeTiedDuration</name></member>
     <member refid="classvrv_1_1_note_1a95ecc0899100084dfd0fd37859d4cb1f" kind="variable"><name>m_stemSameas</name></member>
     <member refid="classvrv_1_1_note_1a6c2a769f7c103ebc94d68c147184df08" kind="variable"><name>m_stemSameasRole</name></member>
     <member refid="classvrv_1_1_note_1a68a34dc4606c694c61020104860daa78" kind="function"><name>HasToBeAligned</name></member>
@@ -4275,6 +4287,7 @@
     <member refid="classvrv_1_1_object_1ad2a435d1dd9a270785fca7cab265adba" kind="function"><name>CastOffPagesEnd</name></member>
     <member refid="classvrv_1_1_object_1a1e1336770fd1b687628ef53b207d29f2" kind="function"><name>CalcOnsetOffset</name></member>
     <member refid="classvrv_1_1_object_1ae8d2bbd8c168fd6904c864f297b3deeb" kind="function"><name>CalcOnsetOffsetEnd</name></member>
+    <member refid="classvrv_1_1_object_1a4e7525f44aa7c13e45caf42aaa60ae55" kind="function"><name>HorizontalLayoutCache</name></member>
     <member refid="classvrv_1_1_object_1a93b5fe054b2d26fe91ff50a5861fe08c" kind="function"><name>ResolveMIDITies</name></member>
     <member refid="classvrv_1_1_object_1a426081ffba31e4251a2c36ceeb2a43ba" kind="function"><name>GenerateMIDI</name></member>
     <member refid="classvrv_1_1_object_1a7c0a63c225e76daa84e102b7d531d645" kind="function"><name>GenerateMIDIEnd</name></member>
@@ -5023,6 +5036,7 @@
     <member refid="classvrv_1_1_page_1a29a3f02e9620a674f4f1f1ebdf818089" kind="function"><name>LayOut</name></member>
     <member refid="classvrv_1_1_page_1a0c2dafbc00b0f3185a4ee416f019498f" kind="function"><name>LayOutTranscription</name></member>
     <member refid="classvrv_1_1_page_1a81afdc28b7093b3c034b30b9d2177d7a" kind="function"><name>LayOutHorizontally</name></member>
+    <member refid="classvrv_1_1_page_1a307be18c2415caa8b7d0889eb76aa972" kind="function"><name>HorizontalLayoutCachePage</name></member>
     <member refid="classvrv_1_1_page_1a01e27bb8082d59453406dd7848a8d1b2" kind="function"><name>JustifyHorizontally</name></member>
     <member refid="classvrv_1_1_page_1ab16b3f4c2bcc87738e77032c393d638d" kind="function"><name>LayOutVertically</name></member>
     <member refid="classvrv_1_1_page_1a677cbec6a571326d624fe812a0c432fa" kind="function"><name>JustifyVertically</name></member>
@@ -5419,6 +5433,7 @@
     <member refid="classvrv_1_1_rest_1a440179df00a09ea5e7892e0c5eff5695" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_rest_1a9423bd9fbe08e1d3dd011226121a8900" kind="function"><name>AddChild</name></member>
     <member refid="classvrv_1_1_rest_1a80065d5795046cf1ebaf9c01b80cd897" kind="function"><name>HasToBeAligned</name></member>
+    <member refid="classvrv_1_1_rest_1a3579490f4b1be6f6f6ca45384000a151" kind="function"><name>GetOptimalLayerLocation</name></member>
     <member refid="classvrv_1_1_rest_1a091054e7185d3d91a43b1b6684008fe9" kind="function"><name>AdjustBeams</name></member>
     <member refid="classvrv_1_1_rest_1af28c1188a8d8390f383828d6dbfd58e1" kind="function"><name>ConvertMarkupAnalytical</name></member>
     <member refid="classvrv_1_1_rest_1adf0ac37b2a794923caa18de4b65d0e04" kind="function"><name>CalcDots</name></member>
@@ -5426,7 +5441,7 @@
     <member refid="classvrv_1_1_rest_1ad88f904d0b2d59152fa555e3e5a2cab5" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_rest_1a1bf0280c30f15c09920b7a83e15a0e23" kind="function"><name>ResetHorizontalAlignment</name></member>
     <member refid="classvrv_1_1_rest_1a740e6d9dd93f4cbeec21aaeed6eed18d" kind="function"><name>Transpose</name></member>
-    <member refid="classvrv_1_1_rest_1a3579490f4b1be6f6f6ca45384000a151" kind="function"><name>GetOptimalLayerLocation</name></member>
+    <member refid="classvrv_1_1_rest_1a085059b60202ac4b366e6f2d59861a75" kind="function"><name>GenerateTimemap</name></member>
     <member refid="classvrv_1_1_rest_1a2abfa9a01f57ac36187c78ebe7a30b9a" kind="function"><name>UpdateFromTransLoc</name></member>
     <member refid="classvrv_1_1_rest_1a0ee80c67515c10f46d02ab4d767c9e0e" kind="function"><name>GetLocationRelativeToOtherLayers</name></member>
     <member refid="classvrv_1_1_rest_1aeb849cc03424527e2d3215d90a7c7712" kind="function"><name>GetLocationRelativeToCurrentLayer</name></member>
@@ -6403,6 +6418,23 @@
     <member refid="classvrv_1_1_tie_1a53ab3af669e06b46aebf1ef61ac2b000" kind="function"><name>GetPreferredCurveDirection</name></member>
     <member refid="classvrv_1_1_tie_1a6d35f645b37bdb45796b89d810f7a00b" kind="function"><name>UpdateTiePositioning</name></member>
   </compound>
+  <compound refid="classvrv_1_1_timemap" kind="class"><name>vrv::Timemap</name>
+    <member refid="classvrv_1_1_timemap_1a5bdedb009ea1ab046f307d6592eb63d7" kind="function"><name>Timemap</name></member>
+    <member refid="classvrv_1_1_timemap_1a69594da797809527113bef5d332c5317" kind="function"><name>~Timemap</name></member>
+    <member refid="classvrv_1_1_timemap_1a542515798df4324a1bbca3c176d2ea79" kind="variable"><name>m_map</name></member>
+    <member refid="classvrv_1_1_timemap_1ae6718bde249d9ef72ee8b0e6fe927381" kind="function"><name>Reset</name></member>
+    <member refid="classvrv_1_1_timemap_1a46cf6888a5c559d1275ec2bf88a2b484" kind="function"><name>AddEntry</name></member>
+    <member refid="classvrv_1_1_timemap_1aebe2bdffcabe29d3d335effbfb727d60" kind="function"><name>ToJson</name></member>
+  </compound>
+  <compound refid="structvrv_1_1_timemap_entry" kind="struct"><name>vrv::TimemapEntry</name>
+    <member refid="structvrv_1_1_timemap_entry_1a4248bf8a78007f4617028ac796f7860e" kind="variable"><name>tempo</name></member>
+    <member refid="structvrv_1_1_timemap_entry_1a0c9c13192e26a753be02ff334dee281d" kind="variable"><name>qstamp</name></member>
+    <member refid="structvrv_1_1_timemap_entry_1aa741b90b2f555a44962211ad2f089ac5" kind="variable"><name>notesOn</name></member>
+    <member refid="structvrv_1_1_timemap_entry_1aaf171174b824b774211dc72783deef68" kind="variable"><name>notesOff</name></member>
+    <member refid="structvrv_1_1_timemap_entry_1aa901ddab1e5d6505c983c88531551a9d" kind="variable"><name>restsOn</name></member>
+    <member refid="structvrv_1_1_timemap_entry_1a19d6e6cc9035a8d6e68081fcb8843af3" kind="variable"><name>restsOff</name></member>
+    <member refid="structvrv_1_1_timemap_entry_1a0213dd1284cf3cf4cf38024952c9054d" kind="variable"><name>measureOn</name></member>
+  </compound>
   <compound refid="classvrv_1_1_time_point_interface" kind="class"><name>vrv::TimePointInterface</name>
     <member refid="classvrv_1_1_time_point_interface_1a470841fa6a90f560e791882bd0d7ff3d" kind="function"><name>TimePointInterface</name></member>
     <member refid="classvrv_1_1_time_point_interface_1af09ee1866e7e88461f21fae70f267862" kind="function"><name>~TimePointInterface</name></member>
@@ -6494,8 +6526,8 @@
     <member refid="classvrv_1_1_toolkit_1a298894afff860e0675f2ca3b199fda98" kind="function"><name>RenderToMIDIFile</name></member>
     <member refid="classvrv_1_1_toolkit_1a572174dc1e44773a2ab83a0ac79b479c" kind="function"><name>RenderToPAE</name></member>
     <member refid="classvrv_1_1_toolkit_1a4360e00f3093a9360bf231e3d7f48c5f" kind="function"><name>RenderToPAEFile</name></member>
-    <member refid="classvrv_1_1_toolkit_1a4172ff70b76b47701fdab68c7ee2f12d" kind="function"><name>RenderToTimemap</name></member>
-    <member refid="classvrv_1_1_toolkit_1ae007856d580be07e60aeb52efb826a40" kind="function"><name>RenderToTimemapFile</name></member>
+    <member refid="classvrv_1_1_toolkit_1aa0005de91225b21a57bf09ef28ad5498" kind="function"><name>RenderToTimemap</name></member>
+    <member refid="classvrv_1_1_toolkit_1a9b4d838a1d7256322a4f842877794905" kind="function"><name>RenderToTimemapFile</name></member>
     <member refid="classvrv_1_1_toolkit_1a1b23b93998cb39e2016130b01d1db1b3" kind="function"><name>GetHumdrum</name></member>
     <member refid="classvrv_1_1_toolkit_1adf47bbe710d3902f241db376002f55cb" kind="function"><name>ConvertMEIToHumdrum</name></member>
     <member refid="classvrv_1_1_toolkit_1a8a411c7fe22ffb9df4be52b582af550e" kind="function"><name>ConvertHumdrumToHumdrum</name></member>
@@ -6511,7 +6543,7 @@
     <member refid="classvrv_1_1_toolkit_1ab29688374542c0d3fb3cf5007bd23ab2" kind="function"><name>GetTimeForElement</name></member>
     <member refid="classvrv_1_1_toolkit_1a1b7c6ef82b1ec90af16f8f32da24dd5f" kind="function"><name>GetMIDIValuesForElement</name></member>
     <member refid="classvrv_1_1_toolkit_1ad79d6ace65df36810f0d84e774aee05d" kind="function"><name>GetTimesForElement</name></member>
-    <member refid="classvrv_1_1_toolkit_1a19431c36d29a2301ee946da2cd01946e" kind="function"><name>RedoLayout</name></member>
+    <member refid="classvrv_1_1_toolkit_1acd2477cdd946bbc98936c00347ddf3af" kind="function"><name>RedoLayout</name></member>
     <member refid="classvrv_1_1_toolkit_1aff4b4b830b5859bf07d19e8ca63d2335" kind="function"><name>RedoPagePitchPosLayout</name></member>
     <member refid="group__nodoc_1gaa6f27919ec3642d4da89408f8143f51d" kind="function"><name>RenderToDeviceContext</name></member>
     <member refid="group__nodoc_1gaf661135bee3a565fc0606f55ec0981e7" kind="function"><name>GetOptions</name></member>
@@ -6756,6 +6788,7 @@
   <compound refid="classvrv_1_1_un_cast_off_params" kind="class"><name>vrv::UnCastOffParams</name>
     <member refid="classvrv_1_1_un_cast_off_params_1ab60256903f9aaaaa6aab84fd39e4c82e" kind="variable"><name>m_page</name></member>
     <member refid="classvrv_1_1_un_cast_off_params_1a9039e624a488a41e82ac915b7fd036a5" kind="variable"><name>m_currentSystem</name></member>
+    <member refid="classvrv_1_1_un_cast_off_params_1a4b06b08d79840f8ae8f9c768bd85c98a" kind="variable"><name>m_resetCache</name></member>
     <member refid="classvrv_1_1_un_cast_off_params_1a8a7790041ccd188cb254b577831242b1" kind="function"><name>UnCastOffParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_unclear" kind="class"><name>vrv::Unclear</name>
@@ -8550,6 +8583,8 @@
   <compound refid="tie_8h" kind="file"><name>tie.h</name>
   </compound>
   <compound refid="timeinterface_8h" kind="file"><name>timeinterface.h</name>
+  </compound>
+  <compound refid="timemap_8h" kind="file"><name>timemap.h</name>
   </compound>
   <compound refid="timestamp_8h" kind="file"><name>timestamp.h</name>
   </compound>

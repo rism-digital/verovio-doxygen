@@ -492,7 +492,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">member 0: MidiFile*: the MidiFile we are writing to member 1: int: the midi track number member 2: int: the midi channel number member 3: double: the score time from the start of the music to the start of the current measure member 4: int: the semi tone transposition for the current track member 5: double with the current tempo member 6: the last (non grace) note that was performed member 7: expanded notes due to ornaments and tremolandi member 8: deferred notes which start slightly later member 9: grace note sequence member 10: flag indicating whether the last grace note/chord was accented member 11: the functor member 12: Tablature held notes indexed by (course - 1)  <a href="classvrv_1_1_generate_m_i_d_i_params.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_generate_timemap_params.html">GenerateTimemapParams</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">member 0: mapping of real times to score times member 1: mapping of real times to elements which should be highlighted at time member 2: mapping of real times to elements which should be unhighlighted at time member 3: mapping of real times to tempos member 4: <a class="el" href="classvrv_1_1_score.html" title="This class represent a &lt;score&gt; in MEI.">Score</a> time from the start of the piece to previous barline in quarter notes member 5: Real time from the start of the piece to previous barline in ms member 6: Currently active tempo  <a href="classvrv_1_1_generate_timemap_params.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">member 0: <a class="el" href="classvrv_1_1_score.html" title="This class represent a &lt;score&gt; in MEI.">Score</a> time from the start of the piece to previous barline in quarter notes member 1: Real time from the start of the piece to previous barline in ms member 2: Currently active tempo member 3: A pointer to the <a class="el" href="classvrv_1_1_timemap.html" title="This class holds a timemap for exporting onset / offset values.">Timemap</a> member 4: The functor for redirection  <a href="classvrv_1_1_generate_timemap_params.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_get_alignment_left_right_params.html">GetAlignmentLeftRightParams</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">member 0: the min left member 1: the max right  <a href="classvrv_1_1_get_alignment_left_right_params.html#details">More...</a><br /></td></tr>
@@ -525,6 +525,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_horizontal_aligner.html">HorizontalAligner</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class aligns the content horizontally It contains a vector of <a class="el" href="classvrv_1_1_alignment.html" title="This class stores an alignment position elements will point to.">Alignment</a>.  <a href="classvrv_1_1_horizontal_aligner.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_horizontal_layout_cache_params.html">HorizontalLayoutCacheParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">member 0: a flag indicating if the cache should be stored (default) or restored member 1: a pointer to the <a class="el" href="classvrv_1_1_doc.html" title="This class is a hold the data and corresponds to the model of a MVC design pattern.">Doc</a>  <a href="classvrv_1_1_horizontal_layout_cache_params.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_humdrum_input.html">HumdrumInput</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1022,6 +1025,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_tie.html">Tie</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class models the MEI &lt;tie&gt; element.  <a href="classvrv_1_1_tie.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_timemap.html">Timemap</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class holds a timemap for exporting onset / offset values.  <a href="classvrv_1_1_timemap.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvrv_1_1_timemap_entry.html">TimemapEntry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper struct to store timemap entries.  <a href="structvrv_1_1_timemap_entry.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_time_point_interface.html">TimePointInterface</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is an interface for elements having a single time point, such as tempo, reh, etc.  <a href="classvrv_1_1_time_point_interface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1060,7 +1069,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class models the MEI &lt;turn&gt; element.  <a href="classvrv_1_1_turn.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_un_cast_off_params.html">UnCastOffParams</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">member 0: a pointer to the page we are adding system to member 1: a pointer to the system we are adding content to  <a href="classvrv_1_1_un_cast_off_params.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">member 0: a pointer to the page we are adding system to member 1: a pointer to the system we are adding content to member 2: a flag indicating if we need to reset the horizontal layout cache  <a href="classvrv_1_1_un_cast_off_params.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_unclear.html">Unclear</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2972,7 +2981,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>loggingToBuffer</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li>
-    <li class="footer">Generated on Fri Jan 28 2022 11:46:15 for Verovio by
+    <li class="footer">Generated on Sat Jan 29 2022 16:24:48 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

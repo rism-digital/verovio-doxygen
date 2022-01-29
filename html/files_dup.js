@@ -163,6 +163,7 @@ var files_dup =
     [ "textelement.h", "textelement_8h_source.html", null ],
     [ "tie.h", "tie_8h_source.html", null ],
     [ "timeinterface.h", "timeinterface_8h_source.html", null ],
+    [ "timemap.h", "timemap_8h_source.html", null ],
     [ "timestamp.h", "timestamp_8h_source.html", null ],
     [ "toolkit.h", "toolkit_8h_source.html", null ],
     [ "transposition.h", "transposition_8h_source.html", null ],

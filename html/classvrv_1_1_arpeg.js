@@ -11,6 +11,7 @@ var classvrv_1_1_arpeg =
     [ "GetDrawingXRel", "classvrv_1_1_arpeg.html#ae90124eac70122805a217f580a19c19d", null ],
     [ "GetPlistInterface", "classvrv_1_1_arpeg.html#aed082a24fccd557c428f7352ed07c25d", null ],
     [ "GetTimePointInterface", "classvrv_1_1_arpeg.html#ab7560deb538af4eb83471f4b1c961195", null ],
+    [ "HorizontalLayoutCache", "classvrv_1_1_arpeg.html#a2a66500ca5b65be33deef1bcd5b98607", null ],
     [ "IsValidRef", "classvrv_1_1_arpeg.html#abd0f1f222639caacbefa8c5bb8dbadbf", null ],
     [ "Reset", "classvrv_1_1_arpeg.html#a647b7b96ece5fba2d339f1c0487cd601", null ],
     [ "ResetDrawing", "classvrv_1_1_arpeg.html#a0e27c4e0866b5a988f8c8eca5512c2ea", null ],

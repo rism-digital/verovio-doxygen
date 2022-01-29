@@ -142,6 +142,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a67df4d10c89fedc0a403cb7169170d0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a67df4d10c89fedc0a403cb7169170d0a">AddTimestamp</a> (<a class="el" href="classvrv_1_1_timestamp_attr.html">TimestampAttr</a> *timestampAttr)</td></tr>
 <tr class="memdesc:a67df4d10c89fedc0a403cb7169170d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_add.html">Add</a> a <a class="el" href="classvrv_1_1_timestamp_attr.html">TimestampAttr</a> to the measure.  <a href="classvrv_1_1_measure.html#a67df4d10c89fedc0a403cb7169170d0a">More...</a><br /></td></tr>
 <tr class="separator:a67df4d10c89fedc0a403cb7169170d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a45b03920fff1323cfca86c78f58db6"><td class="memItemLeft" align="right" valign="top"><a id="a5a45b03920fff1323cfca86c78f58db6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a5a45b03920fff1323cfca86c78f58db6">HasCachedHorizontalLayout</a> () const</td></tr>
+<tr class="memdesc:a5a45b03920fff1323cfca86c78f58db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the <a class="el" href="classvrv_1_1_measure.html" title="This class represents a measure in a page-based score (Doc).">Measure</a> has cached values for the horizontal layout. <br /></td></tr>
+<tr class="separator:a5a45b03920fff1323cfca86c78f58db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d8b2d4baeea0f3c888a25804d8145ba"><td class="memItemLeft" align="right" valign="top"><a id="a2d8b2d4baeea0f3c888a25804d8145ba"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a2d8b2d4baeea0f3c888a25804d8145ba">GetDrawingX</a> () const override</td></tr>
 <tr class="memdesc:a2d8b2d4baeea0f3c888a25804d8145ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the X drawing position. <br /></td></tr>
@@ -346,6 +350,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a22094600d4a94087b92e5662ef4db4de">PrepareTimestampsEnd</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) override</td></tr>
 <tr class="memdesc:a22094600d4a94087b92e5662ef4db4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a52209d31a076ecb09fa2081bddea0311" title="Match start and end for TimeSpanningInterface elements with tstamp(2) attributes.">Object::PrepareTimestamps</a>. <br /></td></tr>
 <tr class="separator:a22094600d4a94087b92e5662ef4db4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df4668a6f232074e0161f832f10e29b"><td class="memItemLeft" align="right" valign="top"><a id="a3df4668a6f232074e0161f832f10e29b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a3df4668a6f232074e0161f832f10e29b">UnCastOff</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) override</td></tr>
+<tr class="memdesc:a3df4668a6f232074e0161f832f10e29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a84120019fd68f6d7015f6765d7114a7b" title="Undo the cast of both pages and system.">Object::UnCastOff</a>. <br /></td></tr>
+<tr class="separator:a3df4668a6f232074e0161f832f10e29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce00468ec75a511b3a8f65de90bdd9d"><td class="memItemLeft" align="right" valign="top"><a id="a9ce00468ec75a511b3a8f65de90bdd9d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a9ce00468ec75a511b3a8f65de90bdd9d">HorizontalLayoutCache</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) override</td></tr>
+<tr class="memdesc:a9ce00468ec75a511b3a8f65de90bdd9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a4e7525f44aa7c13e45caf42aaa60ae55" title="Cache or restore cached horizontal layout for faster layout redoing.">Object::HorizontalLayoutCache</a>. <br /></td></tr>
+<tr class="separator:a9ce00468ec75a511b3a8f65de90bdd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, and other standard methods</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Reset method resets all attribute classes </p>
 </div></td></tr>
@@ -883,9 +895,6 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:a3d26e4876ee5a38e4c01fae4af747c23 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a3d26e4876ee5a38e4c01fae4af747c23">GetRelativeLayerElement</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
 <tr class="memdesc:a3d26e4876ee5a38e4c01fae4af747c23 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Go through all layer elements of the layer and return next/previous element relative to the specified layer element.  <a href="classvrv_1_1_object.html#a3d26e4876ee5a38e4c01fae4af747c23">More...</a><br /></td></tr>
 <tr class="separator:a3d26e4876ee5a38e4c01fae4af747c23 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84120019fd68f6d7015f6765d7114a7b inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a84120019fd68f6d7015f6765d7114a7b">UnCastOff</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
-<tr class="memdesc:a84120019fd68f6d7015f6765d7114a7b inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undo the cast of both pages and system.  <a href="classvrv_1_1_object.html#a84120019fd68f6d7015f6765d7114a7b">More...</a><br /></td></tr>
-<tr class="separator:a84120019fd68f6d7015f6765d7114a7b inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a7cd0786cfd3119a6dd128c25b67a33 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a4a7cd0786cfd3119a6dd128c25b67a33"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a4a7cd0786cfd3119a6dd128c25b67a33">ReorderByXPos</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
 <tr class="memdesc:a4a7cd0786cfd3119a6dd128c25b67a33 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reorder elements by x-position. <br /></td></tr>
@@ -1383,6 +1392,17 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a0f66f8a9a11ea45c967fbb796b21d91f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a0f66f8a9a11ea45c967fbb796b21d91f">m_drawingXRel</a></td></tr>
 <tr class="memdesc:a0f66f8a9a11ea45c967fbb796b21d91f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The X relative position of the measure.  <a href="classvrv_1_1_measure.html#a0f66f8a9a11ea45c967fbb796b21d91f">More...</a><br /></td></tr>
 <tr class="separator:a0f66f8a9a11ea45c967fbb796b21d91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a665f3d9783f81d741ffa3a140bd61485"><td class="memItemLeft" align="right" valign="top"><a id="a665f3d9783f81d741ffa3a140bd61485"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a665f3d9783f81d741ffa3a140bd61485">m_cachedXRel</a></td></tr>
+<tr class="memdesc:a665f3d9783f81d741ffa3a140bd61485"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cached value for m_drawingXRel for caching horizontal layout. <br /></td></tr>
+<tr class="separator:a665f3d9783f81d741ffa3a140bd61485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Cached values of overflow and width for caching the horizontal layout</div></td></tr>
+<tr class="memitem:a0e9b8f947c5c738f51e30de4d7bf94bf"><td class="memItemLeft" align="right" valign="top"><a id="a0e9b8f947c5c738f51e30de4d7bf94bf"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedOverflow</b></td></tr>
+<tr class="separator:a0e9b8f947c5c738f51e30de4d7bf94bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a94118f64e123ae7d15800b0b128bf"><td class="memItemLeft" align="right" valign="top"><a id="a26a94118f64e123ae7d15800b0b128bf"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedWidth</b></td></tr>
+<tr class="separator:a26a94118f64e123ae7d15800b0b128bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classvrv_1_1_bounding_box"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classvrv_1_1_bounding_box')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classvrv_1_1_bounding_box.html">vrv::BoundingBox</a></td></tr>
 <tr class="memitem:a4961ebaf8f99abe31ee894345cd84a16 inherit pro_attribs_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a4961ebaf8f99abe31ee894345cd84a16">m_cachedDrawingX</a></td></tr>
 <tr class="memdesc:a4961ebaf8f99abe31ee894345cd84a16 inherit pro_attribs_classvrv_1_1_bounding_box"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cached version of the drawingX and drawingY values.  <a href="classvrv_1_1_bounding_box.html#a4961ebaf8f99abe31ee894345cd84a16">More...</a><br /></td></tr>
@@ -1769,7 +1789,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_measure.html">Measure</a></li>
-    <li class="footer">Generated on Fri Jan 28 2022 11:46:17 for Verovio by
+    <li class="footer">Generated on Sat Jan 29 2022 16:24:50 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

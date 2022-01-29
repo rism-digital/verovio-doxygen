@@ -184,12 +184,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr class="memitem:a4b8be5eebe48afb3668ec97c133148a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5">ExportMIDI</a> (smf::MidiFile *midiFile)</td></tr>
 <tr class="memdesc:a4b8be5eebe48afb3668ec97c133148a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the document to a MIDI file.  <a href="classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5">More...</a><br /></td></tr>
 <tr class="separator:a4b8be5eebe48afb3668ec97c133148a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a770613cbab57a30c515bbc653acf17ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_doc.html#a770613cbab57a30c515bbc653acf17ee">ExportTimemap</a> (std::string &amp;output)</td></tr>
-<tr class="memdesc:a770613cbab57a30c515bbc653acf17ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract a timemap from the document to a JSON string.  <a href="classvrv_1_1_doc.html#a770613cbab57a30c515bbc653acf17ee">More...</a><br /></td></tr>
-<tr class="separator:a770613cbab57a30c515bbc653acf17ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa1e882b542afc47118166afc4c305e8"><td class="memItemLeft" align="right" valign="top"><a id="aaa1e882b542afc47118166afc4c305e8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareJsonTimemap</b> (std::string &amp;output, std::map&lt; double, double &gt; &amp;realTimeToScoreTime, std::map&lt; double, std::vector&lt; std::string &gt;&gt; &amp;realTimeToOnElements, std::map&lt; double, std::vector&lt; std::string &gt;&gt; &amp;realTimeToOffElements, std::map&lt; double, double &gt; &amp;realTimeToTempo)</td></tr>
-<tr class="separator:aaa1e882b542afc47118166afc4c305e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8808429c70b8fd2756dd9634671789c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_doc.html#aa8808429c70b8fd2756dd9634671789c">ExportTimemap</a> (std::string &amp;output, bool includeRests, bool includeMeasures)</td></tr>
+<tr class="memdesc:aa8808429c70b8fd2756dd9634671789c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract a timemap from the document to a JSON string.  <a href="classvrv_1_1_doc.html#aa8808429c70b8fd2756dd9634671789c">More...</a><br /></td></tr>
+<tr class="separator:aa8808429c70b8fd2756dd9634671789c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e47232f8eef26473e867f4d2f96701c"><td class="memItemLeft" align="right" valign="top"><a id="a6e47232f8eef26473e867f4d2f96701c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_doc.html#a6e47232f8eef26473e867f4d2f96701c">ExportFeatures</a> (std::string &amp;output, const std::string &amp;options)</td></tr>
 <tr class="memdesc:a6e47232f8eef26473e867f4d2f96701c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract music features to JSON string. <br /></td></tr>
@@ -225,9 +222,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ab50a46ae81caf105c0884f38ee88502e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_doc.html#ab50a46ae81caf105c0884f38ee88502e">CastOffRunningElements</a> (<a class="el" href="classvrv_1_1_cast_off_pages_params.html">CastOffPagesParams</a> *params)</td></tr>
 <tr class="memdesc:ab50a46ae81caf105c0884f38ee88502e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts off the running elements (headers and footer) Called from <a class="el" href="classvrv_1_1_doc.html#a931f9cb5bb89b797564b30d35f10e0cc" title="Casts off the entire document.">Doc::CastOffDoc</a> The doc needs to be empty, the methods adds two empty pages to calculate the size of the header and footer of the page one and two.  <a href="classvrv_1_1_doc.html#ab50a46ae81caf105c0884f38ee88502e">More...</a><br /></td></tr>
 <tr class="separator:ab50a46ae81caf105c0884f38ee88502e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60ec7810abc3f73ed1bb41e521289693"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_doc.html#a60ec7810abc3f73ed1bb41e521289693">UnCastOffDoc</a> ()</td></tr>
-<tr class="memdesc:a60ec7810abc3f73ed1bb41e521289693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undo the cast off of the entire document.  <a href="classvrv_1_1_doc.html#a60ec7810abc3f73ed1bb41e521289693">More...</a><br /></td></tr>
-<tr class="separator:a60ec7810abc3f73ed1bb41e521289693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb1b2f4b17d550ec69fae48d0eb065f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_doc.html#a7cb1b2f4b17d550ec69fae48d0eb065f">UnCastOffDoc</a> (bool resetCache=true)</td></tr>
+<tr class="memdesc:a7cb1b2f4b17d550ec69fae48d0eb065f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undo the cast off of the entire document.  <a href="classvrv_1_1_doc.html#a7cb1b2f4b17d550ec69fae48d0eb065f">More...</a><br /></td></tr>
+<tr class="separator:a7cb1b2f4b17d550ec69fae48d0eb065f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f4801d2f14675afd7a372f525cbed2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_doc.html#a1f4801d2f14675afd7a372f525cbed2d">CastOffEncodingDoc</a> ()</td></tr>
 <tr class="memdesc:a1f4801d2f14675afd7a372f525cbed2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast off of the entire document according to the encoded data (pb and sb).  <a href="classvrv_1_1_doc.html#a1f4801d2f14675afd7a372f525cbed2d">More...</a><br /></td></tr>
 <tr class="separator:a1f4801d2f14675afd7a372f525cbed2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1283,6 +1280,10 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:ae8d2bbd8c168fd6904c864f297b3deeb inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="ae8d2bbd8c168fd6904c864f297b3deeb"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>CalcOnsetOffsetEnd</b> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
 <tr class="separator:ae8d2bbd8c168fd6904c864f297b3deeb inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7525f44aa7c13e45caf42aaa60ae55 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a4e7525f44aa7c13e45caf42aaa60ae55"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a4e7525f44aa7c13e45caf42aaa60ae55">HorizontalLayoutCache</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
+<tr class="memdesc:a4e7525f44aa7c13e45caf42aaa60ae55 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache or restore cached horizontal layout for faster layout redoing. <br /></td></tr>
+<tr class="separator:a4e7525f44aa7c13e45caf42aaa60ae55 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93b5fe054b2d26fe91ff50a5861fe08c inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a93b5fe054b2d26fe91ff50a5861fe08c"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a93b5fe054b2d26fe91ff50a5861fe08c">ResolveMIDITies</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *)</td></tr>
 <tr class="memdesc:a93b5fe054b2d26fe91ff50a5861fe08c inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust note timings based on ties. <br /></td></tr>
@@ -1833,8 +1834,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
-<a id="a770613cbab57a30c515bbc653acf17ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a770613cbab57a30c515bbc653acf17ee">&#9670;&nbsp;</a></span>ExportTimemap()</h2>
+<a id="aa8808429c70b8fd2756dd9634671789c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8808429c70b8fd2756dd9634671789c">&#9670;&nbsp;</a></span>ExportTimemap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1843,8 +1844,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
           <td class="memname">bool vrv::Doc::ExportTimemap </td>
           <td>(</td>
           <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>output</em></td><td>)</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeRests</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeMeasures</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2006,7 +2023,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 </div><div class="memdoc">
 
 <p>Check to see if the MIDI timemap has already been calculated. </p>
-<p>This needs to return true before <a class="el" href="classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5" title="Export the document to a MIDI file.">ExportMIDI()</a> or <a class="el" href="classvrv_1_1_doc.html#a770613cbab57a30c515bbc653acf17ee" title="Extract a timemap from the document to a JSON string.">ExportTimemap()</a> can export anything (These two functions will automatically run <a class="el" href="classvrv_1_1_doc.html#a064d5e554df56f41a487a42e89056343" title="Prepare the MIDI timemap for MIDI and timemap file export.">CalculateMidiTimemap()</a> if <a class="el" href="classvrv_1_1_doc.html#afaf7e1be6f9e7737884383c2e20e1ee6" title="Check to see if the MIDI timemap has already been calculated.">HasMidiTimemap()</a> return false. </p>
+<p>This needs to return true before <a class="el" href="classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5" title="Export the document to a MIDI file.">ExportMIDI()</a> or <a class="el" href="classvrv_1_1_doc.html#aa8808429c70b8fd2756dd9634671789c" title="Extract a timemap from the document to a JSON string.">ExportTimemap()</a> can export anything (These two functions will automatically run <a class="el" href="classvrv_1_1_doc.html#a064d5e554df56f41a487a42e89056343" title="Prepare the MIDI timemap for MIDI and timemap file export.">CalculateMidiTimemap()</a> if <a class="el" href="classvrv_1_1_doc.html#afaf7e1be6f9e7737884383c2e20e1ee6" title="Check to see if the MIDI timemap has already been calculated.">HasMidiTimemap()</a> return false. </p>
 
 </div>
 </div>
@@ -2129,8 +2146,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
-<a id="a60ec7810abc3f73ed1bb41e521289693"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60ec7810abc3f73ed1bb41e521289693">&#9670;&nbsp;</a></span>UnCastOffDoc()</h2>
+<a id="a7cb1b2f4b17d550ec69fae48d0eb065f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cb1b2f4b17d550ec69fae48d0eb065f">&#9670;&nbsp;</a></span>UnCastOffDoc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2138,7 +2155,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
         <tr>
           <td class="memname">void vrv::Doc::UnCastOffDoc </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>resetCache</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2176,7 +2194,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_doc.html">Doc</a></li>
-    <li class="footer">Generated on Fri Jan 28 2022 11:46:16 for Verovio by
+    <li class="footer">Generated on Sat Jan 29 2022 16:24:49 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
