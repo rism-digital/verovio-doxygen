@@ -1,8 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"iohumdrum_8h_source.html":[3,0,71],
-"iomei_8h_source.html":[3,0,72],
-"iomusxml_8h_source.html":[3,0,73],
 "iopae_8h_source.html":[3,0,74],
 "keyaccid_8h_source.html":[3,0,75],
 "keysig_8h_source.html":[3,0,76],
