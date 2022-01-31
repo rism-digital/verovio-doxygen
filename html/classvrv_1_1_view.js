@@ -149,6 +149,7 @@ var classvrv_1_1_view =
     [ "DrawSystemEditorialElement", "classvrv_1_1_view.html#ac951fa41a3708f23d8c08b4b3b727aac", null ],
     [ "DrawSystemElement", "classvrv_1_1_view.html#ad83326a59ee81da6e7c872f2972651d1", null ],
     [ "DrawSystemList", "classvrv_1_1_view.html#a15a0eaf99cb4c8464853acb924eb8650", null ],
+    [ "DrawTabClef", "classvrv_1_1_view.html#aea7b7db9b27c0e522a6f15eb152efab0", null ],
     [ "DrawTabDurSym", "classvrv_1_1_view.html#a7442e45070c6074a07194549e5166d68", null ],
     [ "DrawTabGrp", "classvrv_1_1_view.html#a50d694df0190a4ee7c920395cc5d6113", null ],
     [ "DrawTabNote", "classvrv_1_1_view.html#a7f038eca043f93ab6ce0073c90765f22", null ],
