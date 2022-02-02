@@ -202,6 +202,7 @@ var classvrv_1_1_object =
     [ "PrepareLinking", "classvrv_1_1_object.html#a506499857fa99ad918b7c236670acaf2", null ],
     [ "PrepareLyrics", "classvrv_1_1_object.html#a1bda4d7b151d3ceb49e8dcf2a6b4474e", null ],
     [ "PrepareLyricsEnd", "classvrv_1_1_object.html#a93eb8a93ec7ea199f54a59b8139e1a38", null ],
+    [ "PrepareMIDI", "classvrv_1_1_object.html#a77d3f2330b109e34f0eff0013aa9eddd", null ],
     [ "PrepareMilestones", "classvrv_1_1_object.html#a88e94d36441a1b11bfaa6681b0ac1bdf", null ],
     [ "PreparePlist", "classvrv_1_1_object.html#af10db2b195d5667b53c982409ecb9500", null ],
     [ "PreparePointersByLayer", "classvrv_1_1_object.html#a72def6c07065fa48ad7cd844dd4b2ed5", null ],

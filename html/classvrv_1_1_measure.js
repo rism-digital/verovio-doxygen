@@ -81,6 +81,7 @@ var classvrv_1_1_measure =
     [ "PrepareCrossStaff", "classvrv_1_1_measure.html#af5d31684e551148383fc1a5bcebda580", null ],
     [ "PrepareFloatingGrps", "classvrv_1_1_measure.html#a2305bc3c36388f1c0943565322a1426e", null ],
     [ "PrepareFloatingGrpsEnd", "classvrv_1_1_measure.html#aa718d46c804cd9b279dabb2e69b9bb83", null ],
+    [ "PrepareMIDI", "classvrv_1_1_measure.html#a6a7c6f8c24d48b2c72351eaae00549ae", null ],
     [ "PrepareMilestones", "classvrv_1_1_measure.html#a88cb1e014e6f325fadc007ca2cdd7052", null ],
     [ "PrepareTimePointingEnd", "classvrv_1_1_measure.html#a2d20bf8c74ca9b15c088d559fecdb3e8", null ],
     [ "PrepareTimeSpanningEnd", "classvrv_1_1_measure.html#aac0232b6aef0f2b13985518ed33e48ce", null ],

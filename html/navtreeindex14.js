@@ -1,5 +1,9 @@
 var NAVTREEINDEX14 =
 {
+"classvrv_1_1_options.html#a942a5e5df01abfde53e6b09de448d24e":[2,0,0,220,56],
+"classvrv_1_1_options.html#a997a3eb6a8adbf43345346c8b5fd64f6":[2,0,0,220,8],
+"classvrv_1_1_options.html#a9a57d4867ee3e463e348edb770fb26af":[2,0,0,220,41],
+"classvrv_1_1_options.html#a9b4ab8b155a5eb683b012109ef5c8813":[2,0,0,220,76],
 "classvrv_1_1_options.html#a9cdac963bd39f24d084b5cb515d61d35":[2,0,0,220,127],
 "classvrv_1_1_options.html#aa05a631b62399492d3c89c8bc6cbae26":[2,0,0,220,92],
 "classvrv_1_1_options.html#aa08a14710d2bb6bda9719aee5ceb721e":[2,0,0,220,53],
@@ -245,9 +249,5 @@ var NAVTREEINDEX14 =
 "classvrv_1_1_pitch_inflection.html#a36358ab9483482f993b1990241ed250e":[2,0,0,240,4],
 "classvrv_1_1_pitch_inflection.html#a8026efe22cb4a80d5da9e4d9c8b18c5e":[2,0,0,240,1],
 "classvrv_1_1_pitch_inflection.html#a96920d7a7b8b4fd2726763c386224abf":[2,0,0,240,0],
-"classvrv_1_1_pitch_inflection.html#ac678407670186bb46291e60fd4465ef0":[2,0,0,240,3],
-"classvrv_1_1_pitch_inflection.html#acaa21c0cd709c7c17969cd4b15831ee9":[2,0,0,240,6],
-"classvrv_1_1_pitch_interface.html":[2,0,0,241],
-"classvrv_1_1_pitch_interface.html#a2851d8a28d8129f3301f2367a3302f1a":[2,0,0,241,4],
-"classvrv_1_1_pitch_interface.html#a4e00c45beb10eba31d98b5325151d8f5":[2,0,0,241,0]
+"classvrv_1_1_pitch_inflection.html#ac678407670186bb46291e60fd4465ef0":[2,0,0,240,3]
 };

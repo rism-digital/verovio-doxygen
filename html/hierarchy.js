@@ -985,6 +985,7 @@ var hierarchy =
       [ "vrv::PrepareFloatingGrpsParams", "classvrv_1_1_prepare_floating_grps_params.html", null ],
       [ "vrv::PrepareLinkingParams", "classvrv_1_1_prepare_linking_params.html", null ],
       [ "vrv::PrepareLyricsParams", "classvrv_1_1_prepare_lyrics_params.html", null ],
+      [ "vrv::PrepareMIDIParams", "classvrv_1_1_prepare_m_i_d_i_params.html", null ],
       [ "vrv::PrepareMilestonesParams", "classvrv_1_1_prepare_milestones_params.html", null ],
       [ "vrv::PreparePlistParams", "classvrv_1_1_prepare_plist_params.html", null ],
       [ "vrv::PreparePointersByLayerParams", "classvrv_1_1_prepare_pointers_by_layer_params.html", null ],

@@ -254,6 +254,7 @@ var namespacevrv =
     [ "PrepareFloatingGrpsParams", "classvrv_1_1_prepare_floating_grps_params.html", "classvrv_1_1_prepare_floating_grps_params" ],
     [ "PrepareLinkingParams", "classvrv_1_1_prepare_linking_params.html", "classvrv_1_1_prepare_linking_params" ],
     [ "PrepareLyricsParams", "classvrv_1_1_prepare_lyrics_params.html", "classvrv_1_1_prepare_lyrics_params" ],
+    [ "PrepareMIDIParams", "classvrv_1_1_prepare_m_i_d_i_params.html", "classvrv_1_1_prepare_m_i_d_i_params" ],
     [ "PrepareMilestonesParams", "classvrv_1_1_prepare_milestones_params.html", "classvrv_1_1_prepare_milestones_params" ],
     [ "PreparePlistParams", "classvrv_1_1_prepare_plist_params.html", "classvrv_1_1_prepare_plist_params" ],
     [ "PreparePointersByLayerParams", "classvrv_1_1_prepare_pointers_by_layer_params.html", "classvrv_1_1_prepare_pointers_by_layer_params" ],
