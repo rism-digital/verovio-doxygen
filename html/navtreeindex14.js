@@ -1,5 +1,10 @@
 var NAVTREEINDEX14 =
 {
+"classvrv_1_1_options.html#a9079f2d91e591e1803a88ad21b80abdf":[2,0,0,220,10],
+"classvrv_1_1_options.html#a90ab0c45f92f6b9f9d8750de62ff4b16":[2,0,0,220,77],
+"classvrv_1_1_options.html#a90c42c497b2adcd4486a8db5f8a3dc8b":[2,0,0,220,120],
+"classvrv_1_1_options.html#a90c8856d6cd154decfc1688f16f406fd":[2,0,0,220,115],
+"classvrv_1_1_options.html#a929c9bc5f87773b745299d46ee298083":[2,0,0,220,57],
 "classvrv_1_1_options.html#a942a5e5df01abfde53e6b09de448d24e":[2,0,0,220,56],
 "classvrv_1_1_options.html#a997a3eb6a8adbf43345346c8b5fd64f6":[2,0,0,220,8],
 "classvrv_1_1_options.html#a9a57d4867ee3e463e348edb770fb26af":[2,0,0,220,41],
@@ -244,10 +249,5 @@ var NAVTREEINDEX14 =
 "classvrv_1_1_phrase.html#ab64e689bec01f5b27bdee2df0f005668":[2,0,0,239,2],
 "classvrv_1_1_phrase.html#aceaeb06568d7f04c59ac4e4d6fe7f7de":[2,0,0,239,0],
 "classvrv_1_1_pitch_inflection.html":[2,0,0,240],
-"classvrv_1_1_pitch_inflection.html#a08fd982295bded9e502cac20e59990f3":[2,0,0,240,5],
-"classvrv_1_1_pitch_inflection.html#a2b46bcce3c80ec446f77810bb4ced1fd":[2,0,0,240,2],
-"classvrv_1_1_pitch_inflection.html#a36358ab9483482f993b1990241ed250e":[2,0,0,240,4],
-"classvrv_1_1_pitch_inflection.html#a8026efe22cb4a80d5da9e4d9c8b18c5e":[2,0,0,240,1],
-"classvrv_1_1_pitch_inflection.html#a96920d7a7b8b4fd2726763c386224abf":[2,0,0,240,0],
-"classvrv_1_1_pitch_inflection.html#ac678407670186bb46291e60fd4465ef0":[2,0,0,240,3]
+"classvrv_1_1_pitch_inflection.html#a08fd982295bded9e502cac20e59990f3":[2,0,0,240,5]
 };

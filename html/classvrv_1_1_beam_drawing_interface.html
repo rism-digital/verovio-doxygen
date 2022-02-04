@@ -136,6 +136,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beam_drawing_interface.html#ace5c4c0657c94d8de99b933c75eb3e8f">ClearCoords</a> ()</td></tr>
 <tr class="memdesc:ace5c4c0657c94d8de99b933c75eb3e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the m_beamElementCoords vector and delete all the objects. <br /></td></tr>
 <tr class="separator:ace5c4c0657c94d8de99b933c75eb3e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f1a8faaf27320e5e09452dbab2315f"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beam_drawing_interface.html#aa1f1a8faaf27320e5e09452dbab2315f">GetAdditionalBeamCount</a> () const</td></tr>
+<tr class="memdesc:aa1f1a8faaf27320e5e09452dbab2315f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to find number of additional beams.  <a href="classvrv_1_1_beam_drawing_interface.html#aa1f1a8faaf27320e5e09452dbab2315f">More...</a><br /></td></tr>
+<tr class="separator:aa1f1a8faaf27320e5e09452dbab2315f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab194e91dbf4351e4f695ab7e6edf1935"><td class="memItemLeft" align="right" valign="top"><a id="ab194e91dbf4351e4f695ab7e6edf1935"></a>
+virtual std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beam_drawing_interface.html#ab194e91dbf4351e4f695ab7e6edf1935">GetFloatingBeamCount</a> () const</td></tr>
+<tr class="memdesc:ab194e91dbf4351e4f695ab7e6edf1935"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to get number of beams represented by attributes @beam and @beam.float. <br /></td></tr>
+<tr class="separator:ab194e91dbf4351e4f695ab7e6edf1935"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, and other standard methods</div></td></tr>
 <tr class="memitem:acb9893d7a46b9fd187813a3d2fe30d8b"><td class="memItemLeft" align="right" valign="top"><a id="acb9893d7a46b9fd187813a3d2fe30d8b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>BeamDrawingInterface</b> ()</td></tr>
@@ -255,6 +262,36 @@ Protected Member Functions</h2></td></tr>
 <div class="textblock"><p>This class is an interface for MEI beam elements (beam, beamSpan). </p>
 <p>It stores stem drawing values. It is also an <a class="el" href="classvrv_1_1_object_list_interface.html" title="This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...">ObjectListInterface</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa1f1a8faaf27320e5e09452dbab2315f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f1a8faaf27320e5e09452dbab2315f">&#9670;&nbsp;</a></span>GetAdditionalBeamCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::pair&lt;int, int&gt; vrv::BeamDrawingInterface::GetAdditionalBeamCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper to find number of additional beams. </p>
+<p>Return { additional beams above main beam, additional beams below } </p>
+
+<p>Reimplemented in <a class="el" href="classvrv_1_1_beam.html#a091ac4c2fb6cdd046b679e61069f638d">vrv::Beam</a>, and <a class="el" href="classvrv_1_1_f_trem.html#a270a3423f2b04333eb277f23fec99046">vrv::FTrem</a>.</p>
+
+</div>
+</div>
 <a id="a9571c5f0332590bffb23d5a85d32416b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9571c5f0332590bffb23d5a85d32416b">&#9670;&nbsp;</a></span>GetPosition()</h2>
 
@@ -371,7 +408,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_beam_drawing_interface.html">BeamDrawingInterface</a></li>
-    <li class="footer">Generated on Fri Feb 4 2022 07:40:49 for Verovio by
+    <li class="footer">Generated on Fri Feb 4 2022 15:12:36 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

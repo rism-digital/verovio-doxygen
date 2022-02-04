@@ -1,5 +1,13 @@
 var NAVTREEINDEX18 =
 {
+"classvrv_1_1_svg_device_context.html#adc3f1ba3ed171d9eb388f268bc8c1f4a":[2,0,0,310,33],
+"classvrv_1_1_svg_device_context.html#adc6379479221d18e869b45fe29c563fe":[2,0,0,310,40],
+"classvrv_1_1_svg_device_context.html#adf0cfb4b86c681315b017c97a1a0d7c1":[2,0,0,310,48],
+"classvrv_1_1_svg_device_context.html#ae59f5620c868167fef4915c0dfe30618":[2,0,0,310,45],
+"classvrv_1_1_svg_device_context.html#ae98a10b8fcf777a91cf6f5cc33465c6e":[2,0,0,310,13],
+"classvrv_1_1_svg_device_context.html#af1898bfdc5d179afcbec9456634c932d":[2,0,0,310,8],
+"classvrv_1_1_svg_device_context.html#af9072105a173067e25cbced52921f9e6":[2,0,0,310,19],
+"classvrv_1_1_svg_device_context.html#afa2ec47ec28c1a161d090de6e0fc6165":[2,0,0,310,5],
 "classvrv_1_1_svg_device_context.html#afa69899094b909d493b56bbf4f8c00c6":[2,0,0,310,37],
 "classvrv_1_1_svg_device_context.html#afdf294bacaf62dc2ddde11f07204d645":[2,0,0,310,20],
 "classvrv_1_1_svg_device_context.html#afef3eca51c26e35fe3f72d12e2d43840":[2,0,0,310,23],
@@ -241,13 +249,5 @@ var NAVTREEINDEX18 =
 "classvrv_1_1_text_extend.html#a11403d36ee6e4618b95df70317c72b2d":[2,0,0,325,3],
 "classvrv_1_1_text_extend.html#a1b04bcdce8696674fd962c56a40eee1f":[2,0,0,325,2],
 "classvrv_1_1_text_extend.html#a893a4130a85807799faf7e2d583a85b2":[2,0,0,325,4],
-"classvrv_1_1_text_extend.html#a8dfbf5ba55ca4de5eea686f1db10a8f5":[2,0,0,325,6],
-"classvrv_1_1_text_extend.html#a920d9930331ec74e6d89b7122849b0b3":[2,0,0,325,5],
-"classvrv_1_1_text_extend.html#a9c09851502960903a26c61476c31257b":[2,0,0,325,0],
-"classvrv_1_1_text_extend.html#ad2bd03b978d0bed2f2e768f0da9653d6":[2,0,0,325,1],
-"classvrv_1_1_text_list_interface.html":[2,0,0,326],
-"classvrv_1_1_text_list_interface.html#a4f40103720e2c0206f6d104d79506221":[2,0,0,326,3],
-"classvrv_1_1_text_list_interface.html#a75a243aa296eed9964247ab2c4e49aaa":[2,0,0,326,1],
-"classvrv_1_1_text_list_interface.html#aa82a9d2703cf6ee067a185b595977d21":[2,0,0,326,4],
-"classvrv_1_1_text_list_interface.html#acb757fbdb8625d2559adb88bf7d9871a":[2,0,0,326,0]
+"classvrv_1_1_text_extend.html#a8dfbf5ba55ca4de5eea686f1db10a8f5":[2,0,0,325,6]
 };

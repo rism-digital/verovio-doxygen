@@ -118,39 +118,45 @@ $(document).ready(function(){initNavTree('ftrem_8h_source.html',''); initResizab
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">const</span> ArrayOfBeamElementCoords *GetElementCoords();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_f_trem.html#a82002722009cc554c6353f5ae1097b97">CalcStem</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_f_trem.html#aa7e1f7ac06d00f04e06b7c0628be10f0">ResetDrawing</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::pair&lt;int, int&gt; <a class="code" href="classvrv_1_1_f_trem.html#a270a3423f2b04333eb277f23fec99046">GetAdditionalBeamCount</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::pair&lt;int, int&gt; <a class="code" href="classvrv_1_1_f_trem.html#acd5a1a4e0505f99639607998d30ed30d">GetFloatingBeamCount</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//----------//</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_f_trem.html#a31ddc5adafbf6ae26007ee9edb9f9388">GenerateMIDI</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_f_trem.html#a82002722009cc554c6353f5ae1097b97">CalcStem</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_f_trem.html#ab7c626552b23b3ced99baad34a5a31e4">FilterList</a>(ArrayOfObjects *childList) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    BeamSegment m_beamSegment;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_f_trem.html#aa7e1f7ac06d00f04e06b7c0628be10f0">ResetDrawing</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_f_trem.html#a31ddc5adafbf6ae26007ee9edb9f9388">GenerateMIDI</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_f_trem.html#ab7c626552b23b3ced99baad34a5a31e4">FilterList</a>(ArrayOfObjects *childList) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    BeamSegment m_beamSegment;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_f_trem_html_a7056acec088c63ea655f91e440c7ed18"><div class="ttname"><a href="classvrv_1_1_f_trem.html#a7056acec088c63ea655f91e440c7ed18">vrv::FTrem::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> ftrem.h:34</div></div>
 <div class="ttc" id="aclassvrv_1_1_f_trem_html"><div class="ttname"><a href="classvrv_1_1_f_trem.html">vrv::FTrem</a></div><div class="ttdoc">This class models the MEI &lt;fTrem&gt; element.</div><div class="ttdef"><b>Definition:</b> ftrem.h:25</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
 <div class="ttc" id="aclassvrv_1_1_f_trem_html_a31ddc5adafbf6ae26007ee9edb9f9388"><div class="ttname"><a href="classvrv_1_1_f_trem.html#a31ddc5adafbf6ae26007ee9edb9f9388">vrv::FTrem::GenerateMIDI</a></div><div class="ttdeci">int GenerateMIDI(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::GenerateMIDI.</div></div>
+<div class="ttc" id="aclassvrv_1_1_f_trem_html_a270a3423f2b04333eb277f23fec99046"><div class="ttname"><a href="classvrv_1_1_f_trem.html#a270a3423f2b04333eb277f23fec99046">vrv::FTrem::GetAdditionalBeamCount</a></div><div class="ttdeci">std::pair&lt; int, int &gt; GetAdditionalBeamCount() const override</div><div class="ttdoc">See DrawingInterface::GetAdditionalBeamCount.</div></div>
 <div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_drawing_interface_html"><div class="ttname"><a href="classvrv_1_1_beam_drawing_interface.html">vrv::BeamDrawingInterface</a></div><div class="ttdoc">This class is an interface for MEI beam elements (beam, beamSpan).</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:82</div></div>
 <div class="ttc" id="aclassvrv_1_1_f_trem_html_aa7e1f7ac06d00f04e06b7c0628be10f0"><div class="ttname"><a href="classvrv_1_1_f_trem.html#aa7e1f7ac06d00f04e06b7c0628be10f0">vrv::FTrem::ResetDrawing</a></div><div class="ttdeci">int ResetDrawing(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
+<div class="ttc" id="aclassvrv_1_1_f_trem_html_acd5a1a4e0505f99639607998d30ed30d"><div class="ttname"><a href="classvrv_1_1_f_trem.html#acd5a1a4e0505f99639607998d30ed30d">vrv::FTrem::GetFloatingBeamCount</a></div><div class="ttdeci">std::pair&lt; int, int &gt; GetFloatingBeamCount() const override</div><div class="ttdoc">See DrawingInterface::GetFloatingBeamCount.</div></div>
 <div class="ttc" id="aclassvrv_1_1_f_trem_html_ab7c626552b23b3ced99baad34a5a31e4"><div class="ttname"><a href="classvrv_1_1_f_trem.html#ab7c626552b23b3ced99baad34a5a31e4">vrv::FTrem::FilterList</a></div><div class="ttdeci">void FilterList(ArrayOfObjects *childList) override</div><div class="ttdoc">Filter the flat list and keep only Note or Chords elements.</div></div>
 <div class="ttc" id="aclassvrv_1_1_f_trem_html_a82002722009cc554c6353f5ae1097b97"><div class="ttname"><a href="classvrv_1_1_f_trem.html#a82002722009cc554c6353f5ae1097b97">vrv::FTrem::CalcStem</a></div><div class="ttdeci">int CalcStem(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CalcStem.</div></div>
 <div class="ttc" id="aclassvrv_1_1_f_trem_html_a0b6824def2f272ae4b6efe6211ee8584"><div class="ttname"><a href="classvrv_1_1_f_trem.html#a0b6824def2f272ae4b6efe6211ee8584">vrv::FTrem::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Add an element (a note or a chord) to a fTrem.</div></div>
@@ -159,7 +165,7 @@ $(document).ready(function(){initNavTree('ftrem_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>ftrem.h</b></li>
-    <li class="footer">Generated on Fri Feb 4 2022 07:40:48 for Verovio by
+    <li class="footer">Generated on Fri Feb 4 2022 15:12:35 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
