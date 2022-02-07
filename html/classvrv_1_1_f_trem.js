@@ -7,6 +7,7 @@ var classvrv_1_1_f_trem =
     [ "FilterList", "classvrv_1_1_f_trem.html#ab7c626552b23b3ced99baad34a5a31e4", null ],
     [ "GenerateMIDI", "classvrv_1_1_f_trem.html#a31ddc5adafbf6ae26007ee9edb9f9388", null ],
     [ "GetAdditionalBeamCount", "classvrv_1_1_f_trem.html#a270a3423f2b04333eb277f23fec99046", null ],
+    [ "GetBeamDrawingInterface", "classvrv_1_1_f_trem.html#a91ffc3abac21dff662a99434eaa8264d", null ],
     [ "GetClassName", "classvrv_1_1_f_trem.html#a6acfbd5f9e4ae5b3e15a86b541c4e3e8", null ],
     [ "GetElementCoords", "classvrv_1_1_f_trem.html#abe34526b692174e71058933cbd6a13f7", null ],
     [ "GetFloatingBeamCount", "classvrv_1_1_f_trem.html#acd5a1a4e0505f99639607998d30ed30d", null ],

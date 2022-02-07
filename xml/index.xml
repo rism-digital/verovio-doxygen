@@ -731,6 +731,7 @@
     <member refid="classvrv_1_1_beam_1ac0e454de096901edf2da61d1d07c80b0" kind="function"><name>Clone</name></member>
     <member refid="classvrv_1_1_beam_1a8e2ee9ef2db29335c50410da804a5fe2" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_beam_1a9cfa9116610446a4d1dac12e691c11fe" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_beam_1aea2dbf22048c56831aad736c815b83b5" kind="function"><name>GetBeamDrawingInterface</name></member>
     <member refid="classvrv_1_1_beam_1a64ddb8b7f8273cf4fed260255ad1da95" kind="function"><name>HasStemSameasBeam</name></member>
     <member refid="classvrv_1_1_beam_1ad64e3ffa51bd2c7392c8a91692eceaaf" kind="function"><name>GetStemSameasBeam</name></member>
     <member refid="classvrv_1_1_beam_1a5b4cdbe83e08d709c5202e222e5090bf" kind="function"><name>SetStemSameasBeam</name></member>
@@ -781,6 +782,8 @@
     <member refid="classvrv_1_1_beam_drawing_interface_1ace5c4c0657c94d8de99b933c75eb3e8f" kind="function"><name>ClearCoords</name></member>
     <member refid="classvrv_1_1_beam_drawing_interface_1aa1f1a8faaf27320e5e09452dbab2315f" kind="function"><name>GetAdditionalBeamCount</name></member>
     <member refid="classvrv_1_1_beam_drawing_interface_1ab194e91dbf4351e4f695ab7e6edf1935" kind="function"><name>GetFloatingBeamCount</name></member>
+    <member refid="classvrv_1_1_beam_drawing_interface_1a401c73629d89bafa67923589c82c5f91" kind="function"><name>GetBeamOverflow</name></member>
+    <member refid="classvrv_1_1_beam_drawing_interface_1a2e1efdfd95278a07f699070feef940aa" kind="function"><name>GetBeamChildOverflow</name></member>
     <member refid="classvrv_1_1_beam_drawing_interface_1a9571c5f0332590bffb23d5a85d32416b" kind="function"><name>GetPosition</name></member>
     <member refid="classvrv_1_1_beam_drawing_interface_1af3f94e533afab1ad343cd3b3a0c1f378" kind="function"><name>IsHorizontalMixedBeam</name></member>
   </compound>
@@ -2192,6 +2195,7 @@
     <member refid="classvrv_1_1_f_trem_1a7056acec088c63ea655f91e440c7ed18" kind="function"><name>Clone</name></member>
     <member refid="classvrv_1_1_f_trem_1a1c3715067dc8befc17b4172c76d3d3dc" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_f_trem_1a6acfbd5f9e4ae5b3e15a86b541c4e3e8" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_f_trem_1a91ffc3abac21dff662a99434eaa8264d" kind="function"><name>GetBeamDrawingInterface</name></member>
     <member refid="classvrv_1_1_f_trem_1a2d92c62158abae23f39aa4656b20a509" kind="variable"><name>m_beamSegment</name></member>
     <member refid="classvrv_1_1_f_trem_1a0b6824def2f272ae4b6efe6211ee8584" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_f_trem_1abe34526b692174e71058933cbd6a13f7" kind="function"><name>GetElementCoords</name></member>
@@ -3158,8 +3162,6 @@
     <member refid="classvrv_1_1_layer_element_1ae0a0dd99fec2746b5759e15252ab4b4e" kind="function"><name>GetDotCount</name></member>
     <member refid="classvrv_1_1_layer_element_1afb64a340246bd59bd429c6a2b05f5fae" kind="function"><name>GetCollisionCount</name></member>
     <member refid="classvrv_1_1_layer_element_1ac7ca9242b3a3c2887c551ea7908856ae" kind="function"><name>GetDrawingArticulationTopOrBottom</name></member>
-    <member refid="classvrv_1_1_layer_element_1acec23828592deed2e4bc8aaf6efd0a9d" kind="function"><name>GetBeamOverflow</name></member>
-    <member refid="classvrv_1_1_layer_element_1ad7473cefabe2cd3d24ca8aa61ccb7254" kind="function"><name>GetBeamChildOverflow</name></member>
     <member refid="classvrv_1_1_layer_element_1a985a0cc98d36f8a7522fb255e6413bab" kind="function"><name>GetChordOverflow</name></member>
   </compound>
   <compound refid="classvrv_1_1_layer_elements_in_time_span_params" kind="class"><name>vrv::LayerElementsInTimeSpanParams</name>
@@ -4337,6 +4339,7 @@
     <member refid="classvrv_1_1_object_1a1514c6c11754e70d2f1718049ed319e5" kind="variable"><name>m_isExpansion</name></member>
     <member refid="classvrv_1_1_object_1a0858d6ed6414c5c4740ca65b773ca7bb" kind="variable"><name>s_objectCounter</name></member>
     <member refid="classvrv_1_1_object_1a3b131f39c868a8a1e9b768bdc0eae811" kind="function"><name>IsFloatingObject</name></member>
+    <member refid="classvrv_1_1_object_1a6d9d3ae387831fac891f903349348310" kind="function"><name>GetBeamDrawingInterface</name></member>
     <member refid="classvrv_1_1_object_1a60120fd33bf1f7227c4dc2f6a9b265c7" kind="function"><name>GetDurationInterface</name></member>
     <member refid="classvrv_1_1_object_1a817a55b73b4356214fecf01d9da87d26" kind="function"><name>GetLinkingInterface</name></member>
     <member refid="classvrv_1_1_object_1a12c0e976636a155de9c58ead6cd743f8" kind="function"><name>GetFacsimileInterface</name></member>
