@@ -2280,6 +2280,10 @@
     <member refid="classvrv_1_1_glyph_1a5dc94fdc1e02a5160b4592857494efe5" kind="function"><name>Glyph</name></member>
     <member refid="classvrv_1_1_glyph_1a01b0c469a9de1943c2e4379645ea1317" kind="function"><name>Glyph</name></member>
     <member refid="classvrv_1_1_glyph_1a614386b61204b49e28a369d51c6431d3" kind="function"><name>~Glyph</name></member>
+    <member refid="classvrv_1_1_glyph_1a9e5796c79d1e0231a409cfe7bb17606e" kind="function"><name>GetUnitsPerEm</name></member>
+    <member refid="classvrv_1_1_glyph_1a5091ce2971805dbf9d19d9844868df81" kind="function"><name>SetUnitsPerEm</name></member>
+    <member refid="classvrv_1_1_glyph_1a9b2879e91a774ec78623387d6192b555" kind="function"><name>GetCodeStr</name></member>
+    <member refid="classvrv_1_1_glyph_1a6ca2bc4e19257a8fcb8d0e578b180a0d" kind="function"><name>SetCodeStr</name></member>
     <member refid="classvrv_1_1_glyph_1ad7a4bed8780d5a024574853975040084" kind="function"><name>GetHorizAdvX</name></member>
     <member refid="classvrv_1_1_glyph_1ab4462f3d4439c83d47ff3d6799a49c35" kind="function"><name>SetHorizAdvX</name></member>
     <member refid="classvrv_1_1_glyph_1a342b2bb94cf88017e3658514827b50ff" kind="variable"><name>m_x</name></member>
@@ -2288,14 +2292,10 @@
     <member refid="classvrv_1_1_glyph_1a223bd97b045345e9f855616bd6643b34" kind="variable"><name>m_height</name></member>
     <member refid="classvrv_1_1_glyph_1afcd5c1e7a531d61a1a8b8035f4f2796a" kind="variable"><name>m_horizAdvX</name></member>
     <member refid="classvrv_1_1_glyph_1a486a6e8362446d94f4250951e62b5a69" kind="variable"><name>m_unitsPerEm</name></member>
-    <member refid="classvrv_1_1_glyph_1a2f557d7e7985276f26a07a387e4b7c07" kind="variable"><name>m_path</name></member>
     <member refid="classvrv_1_1_glyph_1a9856bc34c62eba64fb7b2fb33d26f6b9" kind="variable"><name>m_codeStr</name></member>
     <member refid="classvrv_1_1_glyph_1a5c7c0faf34c490c2af271dfc17ab4d15" kind="variable"><name>m_anchors</name></member>
     <member refid="classvrv_1_1_glyph_1aa1680eb7e1403b16a86a9b2d4b4585f4" kind="function"><name>GetBoundingBox</name></member>
     <member refid="classvrv_1_1_glyph_1a3191a35305471ae3312c883944eba295" kind="function"><name>SetBoundingBox</name></member>
-    <member refid="classvrv_1_1_glyph_1a9e5796c79d1e0231a409cfe7bb17606e" kind="function"><name>GetUnitsPerEm</name></member>
-    <member refid="classvrv_1_1_glyph_1a73c308789e1a3b282783597060ff01db" kind="function"><name>GetPath</name></member>
-    <member refid="classvrv_1_1_glyph_1a9b2879e91a774ec78623387d6192b555" kind="function"><name>GetCodeStr</name></member>
     <member refid="classvrv_1_1_glyph_1a009d8cbbd328a087d26cec6c411de075" kind="function"><name>SetAnchor</name></member>
     <member refid="classvrv_1_1_glyph_1a750cef767d991834f93391bb5f33ae6e" kind="function"><name>HasAnchor</name></member>
     <member refid="classvrv_1_1_glyph_1a162dab467a0210110400eefe1412ce45" kind="function"><name>GetAnchor</name></member>
@@ -5431,6 +5431,7 @@
   <compound refid="classvrv_1_1_resources" kind="class"><name>vrv::Resources</name>
     <member refid="classvrv_1_1_resources_1ac8a749d1dbdc5b23dc8ee27d23f68261" kind="function"><name>GetPath</name></member>
     <member refid="classvrv_1_1_resources_1af26724bc66dd31aaee94c6c63f1395ff" kind="function"><name>SetPath</name></member>
+    <member refid="classvrv_1_1_resources_1a54560bfd70c0df8e180eb08dfff98f14" kind="function"><name>GetSmuflFontName</name></member>
     <member refid="classvrv_1_1_resources_1adf153b2fb62a2d1e2e45d566d13eaae7" kind="function"><name>InitFonts</name></member>
     <member refid="classvrv_1_1_resources_1ac523bb268e6b9261362a9332746d881e" kind="function"><name>InitTextFont</name></member>
     <member refid="classvrv_1_1_resources_1af1c1624d4f36cdc04ad0d3181dae856b" kind="function"><name>SetFont</name></member>
@@ -5440,14 +5441,16 @@
     <member refid="classvrv_1_1_resources_1a7ef43348354b19edc94e6e5eb8b88e63" kind="function"><name>SelectTextFont</name></member>
     <member refid="classvrv_1_1_resources_1a0cf24359c1fb426a72123df53925384a" kind="function"><name>GetTextGlyph</name></member>
     <member refid="classvrv_1_1_resources_1a70b43d51304eaa6165edfa5a46e40bcf" kind="typedef"><name>StyleAttributes</name></member>
-    <member refid="classvrv_1_1_resources_1aa18f0b0ea21146bd82eb9c019dbfab1d" kind="typedef"><name>GlyphMap</name></member>
-    <member refid="classvrv_1_1_resources_1ad769124b0252927a3d1b6e8c109f10b3" kind="typedef"><name>GlyphTextMap</name></member>
+    <member refid="classvrv_1_1_resources_1a7f3e5ebaf55c937030ef9437d2d0680e" kind="typedef"><name>GlyphTable</name></member>
+    <member refid="classvrv_1_1_resources_1a1a7530ff7bc4d58d8f026e26d5fe8b04" kind="typedef"><name>GlyphNameTable</name></member>
+    <member refid="classvrv_1_1_resources_1a6b12162a60479843638aeb9f2ce939b4" kind="typedef"><name>GlyphTextMap</name></member>
     <member refid="classvrv_1_1_resources_1ad3d0dccfdb46a9d39290b012e6212d23" kind="variable"><name>s_path</name></member>
-    <member refid="classvrv_1_1_resources_1ae42baccf3c38cfdce385a984c147f10f" kind="variable"><name>s_font</name></member>
+    <member refid="classvrv_1_1_resources_1a780add97f8b5c675f879af70c1e19055" kind="variable"><name>s_smuflFontName</name></member>
+    <member refid="classvrv_1_1_resources_1abc98c0aec6ea87e0a3a9f01d826056cf" kind="variable"><name>s_fontGlyphTable</name></member>
     <member refid="classvrv_1_1_resources_1ab8c7b5e3d945b9a85da4b3362e399ffc" kind="variable"><name>s_textFont</name></member>
     <member refid="classvrv_1_1_resources_1ae522a99b73dcced37a3131a361329728" kind="variable"><name>s_currentStyle</name></member>
     <member refid="classvrv_1_1_resources_1aff9ebc78f90ff388fbc64a7cad7a5790" kind="variable"><name>k_defaultStyle</name></member>
-    <member refid="classvrv_1_1_resources_1af4a246dbf54c224e72aba89499102953" kind="variable"><name>s_smuflNames</name></member>
+    <member refid="classvrv_1_1_resources_1affc26866c68845a31a36fd61721ece1a" kind="variable"><name>s_glyphNameTable</name></member>
     <member refid="classvrv_1_1_resources_1acce07da7b518813c4463b6ed41e185ad" kind="function"><name>LoadFont</name></member>
   </compound>
   <compound refid="classvrv_1_1_rest" kind="class"><name>vrv::Rest</name>

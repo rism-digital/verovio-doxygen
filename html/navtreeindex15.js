@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"classvrv_1_1_phrase.html#a36b1cd2220c66943455904b5901ca420":[2,0,0,239,3],
 "classvrv_1_1_phrase.html#a4fcd76890ca606b8c40a5a94610ee62b":[2,0,0,239,1],
 "classvrv_1_1_phrase.html#ab64e689bec01f5b27bdee2df0f005668":[2,0,0,239,2],
 "classvrv_1_1_phrase.html#aceaeb06568d7f04c59ac4e4d6fe7f7de":[2,0,0,239,0],
@@ -201,9 +202,10 @@ var NAVTREEINDEX15 =
 "classvrv_1_1_replace_drawing_values_in_staff_def_params.html#aa61933736e2a8d41ab0c41a2f706f0f0":[2,0,0,271,1],
 "classvrv_1_1_replace_drawing_values_in_staff_def_params.html#af82e4e213522192ac1e18a4e3c5eddcb":[2,0,0,271,4],
 "classvrv_1_1_resources.html":[2,0,0,272],
-"classvrv_1_1_resources.html#a70b43d51304eaa6165edfa5a46e40bcf":[2,0,0,272,2],
-"classvrv_1_1_resources.html#aa18f0b0ea21146bd82eb9c019dbfab1d":[2,0,0,272,0],
-"classvrv_1_1_resources.html#ad769124b0252927a3d1b6e8c109f10b3":[2,0,0,272,1],
+"classvrv_1_1_resources.html#a1a7530ff7bc4d58d8f026e26d5fe8b04":[2,0,0,272,0],
+"classvrv_1_1_resources.html#a6b12162a60479843638aeb9f2ce939b4":[2,0,0,272,2],
+"classvrv_1_1_resources.html#a70b43d51304eaa6165edfa5a46e40bcf":[2,0,0,272,3],
+"classvrv_1_1_resources.html#a7f3e5ebaf55c937030ef9437d2d0680e":[2,0,0,272,1],
 "classvrv_1_1_rest.html":[2,0,0,273],
 "classvrv_1_1_rest.html#a085059b60202ac4b366e6f2d59861a75":[2,0,0,273,7],
 "classvrv_1_1_rest.html#a091054e7185d3d91a43b1b6684008fe9":[2,0,0,273,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "classvrv_1_1_running_element.html#a57a0db80266fb422961749454e4f35e1":[2,0,0,275,5],
 "classvrv_1_1_running_element.html#a61156fe440b86ccd278b6152f4874250":[2,0,0,275,20],
 "classvrv_1_1_running_element.html#a62d9d7bed355057e7a96c1fb2edb13b4":[2,0,0,275,17],
-"classvrv_1_1_running_element.html#a6e7b3828ab10391643324100dcf3717e":[2,0,0,275,24],
-"classvrv_1_1_running_element.html#a72615f0ef616081ba1b268d35cf5d98f":[2,0,0,275,10],
-"classvrv_1_1_running_element.html#a79506b46add9f740c57c0afe5ecb0af3":[2,0,0,275,13]
+"classvrv_1_1_running_element.html#a6e7b3828ab10391643324100dcf3717e":[2,0,0,275,24]
 };

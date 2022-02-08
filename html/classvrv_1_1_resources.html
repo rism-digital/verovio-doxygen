@@ -101,12 +101,15 @@ Public Types</h2></td></tr>
 <tr class="memitem:a70b43d51304eaa6165edfa5a46e40bcf"><td class="memItemLeft" align="right" valign="top"><a id="a70b43d51304eaa6165edfa5a46e40bcf"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>StyleAttributes</b> = std::pair&lt; data_FONTWEIGHT, data_FONTSTYLE &gt;</td></tr>
 <tr class="separator:a70b43d51304eaa6165edfa5a46e40bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa18f0b0ea21146bd82eb9c019dbfab1d"><td class="memItemLeft" align="right" valign="top"><a id="aa18f0b0ea21146bd82eb9c019dbfab1d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>GlyphMap</b> = std::map&lt; wchar_t, <a class="el" href="classvrv_1_1_glyph.html">Glyph</a> &gt;</td></tr>
-<tr class="separator:aa18f0b0ea21146bd82eb9c019dbfab1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad769124b0252927a3d1b6e8c109f10b3"><td class="memItemLeft" align="right" valign="top"><a id="ad769124b0252927a3d1b6e8c109f10b3"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>GlyphTextMap</b> = std::map&lt; StyleAttributes, GlyphMap &gt;</td></tr>
-<tr class="separator:ad769124b0252927a3d1b6e8c109f10b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3e5ebaf55c937030ef9437d2d0680e"><td class="memItemLeft" align="right" valign="top"><a id="a7f3e5ebaf55c937030ef9437d2d0680e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>GlyphTable</b> = std::unordered_map&lt; wchar_t, <a class="el" href="classvrv_1_1_glyph.html">Glyph</a> &gt;</td></tr>
+<tr class="separator:a7f3e5ebaf55c937030ef9437d2d0680e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7530ff7bc4d58d8f026e26d5fe8b04"><td class="memItemLeft" align="right" valign="top"><a id="a1a7530ff7bc4d58d8f026e26d5fe8b04"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>GlyphNameTable</b> = std::unordered_map&lt; std::string, wchar_t &gt;</td></tr>
+<tr class="separator:a1a7530ff7bc4d58d8f026e26d5fe8b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b12162a60479843638aeb9f2ce939b4"><td class="memItemLeft" align="right" valign="top"><a id="a6b12162a60479843638aeb9f2ce939b4"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>GlyphTextMap</b> = std::map&lt; StyleAttributes, GlyphTable &gt;</td></tr>
+<tr class="separator:a6b12162a60479843638aeb9f2ce939b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -118,6 +121,10 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="
 <tr class="memitem:af26724bc66dd31aaee94c6c63f1395ff"><td class="memItemLeft" align="right" valign="top"><a id="af26724bc66dd31aaee94c6c63f1395ff"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPath</b> (const std::string &amp;path)</td></tr>
 <tr class="separator:af26724bc66dd31aaee94c6c63f1395ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54560bfd70c0df8e180eb08dfff98f14"><td class="memItemLeft" align="right" valign="top"><a id="a54560bfd70c0df8e180eb08dfff98f14"></a>
+static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_resources.html#a54560bfd70c0df8e180eb08dfff98f14">GetSmuflFontName</a> ()</td></tr>
+<tr class="memdesc:a54560bfd70c0df8e180eb08dfff98f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Font name. <br /></td></tr>
+<tr class="separator:a54560bfd70c0df8e180eb08dfff98f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf153b2fb62a2d1e2e45d566d13eaae7"><td class="memItemLeft" align="right" valign="top"><a id="adf153b2fb62a2d1e2e45d566d13eaae7"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_resources.html#adf153b2fb62a2d1e2e45d566d13eaae7">InitFonts</a> ()</td></tr>
 <tr class="memdesc:adf153b2fb62a2d1e2e45d566d13eaae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init the SMufL music and text fonts. <br /></td></tr>
@@ -163,7 +170,7 @@ static <a class="el" href="classvrv_1_1_glyph.html">Glyph</a> *&#160;</td><td cl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_resources.html">Resources</a></li>
-    <li class="footer">Generated on Mon Feb 7 2022 16:10:48 for Verovio by
+    <li class="footer">Generated on Tue Feb 8 2022 14:02:45 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
