@@ -30,6 +30,8 @@ var classvrv_1_1_staff_alignment =
     [ "GetOverflowBelow", "classvrv_1_1_staff_alignment.html#aca990971e8025a3f499abf7a64c3617c", null ],
     [ "GetOverlap", "classvrv_1_1_staff_alignment.html#a6ed49d27f75b6f76726db774f91b6005", null ],
     [ "GetParentSystem", "classvrv_1_1_staff_alignment.html#a95803dcbd25978a29d7ffaaff2dabd59", null ],
+    [ "GetScoreDefClefOverflowAbove", "classvrv_1_1_staff_alignment.html#a2d87d3d047765e77135b7112c57684b2", null ],
+    [ "GetScoreDefClefOverflowBelow", "classvrv_1_1_staff_alignment.html#a27ad8ec54b8e0ebb742a535184ae7fee", null ],
     [ "GetStaff", "classvrv_1_1_staff_alignment.html#ad527815e979b4f095ae5132fb5fd7fce", null ],
     [ "GetStaffHeight", "classvrv_1_1_staff_alignment.html#a46bbc916af3129153608f26d68f42f2d", null ],
     [ "GetStaffSize", "classvrv_1_1_staff_alignment.html#a7fa1759557d1353566cfdcd56de6edf7", null ],
@@ -46,6 +48,8 @@ var classvrv_1_1_staff_alignment =
     [ "SetOverflowBelow", "classvrv_1_1_staff_alignment.html#adebf5d0f38a753d8af894af8ab2b3da6", null ],
     [ "SetOverlap", "classvrv_1_1_staff_alignment.html#a52f47b3d146de94276e2b29b20cf9bbe", null ],
     [ "SetParentSystem", "classvrv_1_1_staff_alignment.html#a99f275e12e81e39016074ae63fa39c2e", null ],
+    [ "SetScoreDefClefOverflowAbove", "classvrv_1_1_staff_alignment.html#a4bf0e7cbd5d6a5ee25e3e226983b483e", null ],
+    [ "SetScoreDefClefOverflowBelow", "classvrv_1_1_staff_alignment.html#a71fa593b159a4b1d259efd7d38a27957", null ],
     [ "SetStaff", "classvrv_1_1_staff_alignment.html#ac5734d8b2d2b6ff3ea7075fd839a3d8e", null ],
     [ "SetYRel", "classvrv_1_1_staff_alignment.html#a6c9d2d1c71958c112774409638ff501b", null ]
 ];
