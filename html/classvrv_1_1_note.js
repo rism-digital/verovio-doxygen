@@ -33,6 +33,7 @@ var classvrv_1_1_note =
     [ "GetStemDownNW", "classvrv_1_1_note.html#a6eb7ccf07fa72ce293410d2f58ac047a", null ],
     [ "GetStemmedDrawingInterface", "classvrv_1_1_note.html#a93d3f20b63580552e78097143ce5dbe7", null ],
     [ "GetStemSameasNote", "classvrv_1_1_note.html#aa8e3d7044475c72873fab3c6026e0f6e", null ],
+    [ "GetStemSameasRole", "classvrv_1_1_note.html#a38d525195436f5a32fe144c9c1cfdfc3", null ],
     [ "GetStemUpSE", "classvrv_1_1_note.html#a6254802daf2625dc5fb1b82ada63a3aa", null ],
     [ "GetTabFretString", "classvrv_1_1_note.html#a365b8e4a7d149acd14975216b2d89341", null ],
     [ "HasLedgerLines", "classvrv_1_1_note.html#a7bcfe9b0dfad97964d0db5c76ebd6169", null ],
