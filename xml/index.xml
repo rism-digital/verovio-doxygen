@@ -391,8 +391,9 @@
   </compound>
   <compound refid="classvrv_1_1_align_systems_params" kind="class"><name>vrv::AlignSystemsParams</name>
     <member refid="classvrv_1_1_align_systems_params_1a0a50f0bc2add9dbea4b57dd4e20d4aed" kind="variable"><name>m_shift</name></member>
-    <member refid="classvrv_1_1_align_systems_params_1af044799fa83570e696ce34f47b6937d8" kind="variable"><name>m_systemMargin</name></member>
+    <member refid="classvrv_1_1_align_systems_params_1a491a093116ff88b9c97ec3e790f2f1e1" kind="variable"><name>m_systemSpacing</name></member>
     <member refid="classvrv_1_1_align_systems_params_1a48a17ac87903484fa6cd76cd94f2a609" kind="variable"><name>m_prevBottomOverflow</name></member>
+    <member refid="classvrv_1_1_align_systems_params_1a9b0a56f41a889eb630aaae0d402cf3ad" kind="variable"><name>m_prevBottomClefOverflow</name></member>
     <member refid="classvrv_1_1_align_systems_params_1a3f62a29427b704b2ea7088a63d482650" kind="variable"><name>m_justificationSum</name></member>
     <member refid="classvrv_1_1_align_systems_params_1a799795d2908b80a3c922260f6ece3d8f" kind="variable"><name>m_doc</name></member>
     <member refid="classvrv_1_1_align_systems_params_1a59908675f923bf89b55afd7df8e19aec" kind="function"><name>AlignSystemsParams</name></member>
@@ -4863,6 +4864,7 @@
     <member refid="classvrv_1_1_options_1a7c7ec1fc3fcf91210b81a7daec14deb9" kind="variable"><name>m_rightMarginTabDurSym</name></member>
     <member refid="classvrv_1_1_options_1a2f6b32078b92991f5f576d7d4fb02051" kind="variable"><name>m_topMarginArtic</name></member>
     <member refid="classvrv_1_1_options_1a67a343d8c1dfe4c5432f1b49ae6ef67d" kind="variable"><name>m_topMarginHarm</name></member>
+    <member refid="classvrv_1_1_options_1ab323f9472d1744b2bc527506545b31b2" kind="variable"><name>m_topMarginPgFooter</name></member>
     <member refid="classvrv_1_1_options_1a7c05c180e98edd4f8422bbe61b56b36f" kind="variable"><name>m_deprecated</name></member>
     <member refid="classvrv_1_1_options_1aadf88269daffc3562d9155e940b17b70" kind="variable"><name>m_items</name></member>
     <member refid="classvrv_1_1_options_1aec1f17d837779dbf93a2e06516f28f6f" kind="variable"><name>m_grps</name></member>
@@ -5169,18 +5171,21 @@
     <member refid="classvrv_1_1_pg_foot_1a959a185dac32a48416d6e91fbde15f43" kind="function"><name>~PgFoot</name></member>
     <member refid="classvrv_1_1_pg_foot_1aff0072ff43e0950fdc80bae497b22ba7" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_pg_foot_1a608253b47e2228e9eeb256cd70cf12d5" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_pg_foot_1aa8b701b3db3f1c692dd26afe7d892543" kind="function"><name>GetTotalHeight</name></member>
   </compound>
   <compound refid="classvrv_1_1_pg_foot2" kind="class"><name>vrv::PgFoot2</name>
     <member refid="classvrv_1_1_pg_foot2_1a3ec6c45ccbc8f36f8cb3735d25f1bae1" kind="function"><name>PgFoot2</name></member>
     <member refid="classvrv_1_1_pg_foot2_1a45c388cb89e9ce47fe69c261a419c78d" kind="function"><name>~PgFoot2</name></member>
     <member refid="classvrv_1_1_pg_foot2_1a45addc3c352b0b23edf1d0de37231d59" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_pg_foot2_1a17e011ec24965a506dc7289709fb87c3" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_pg_foot2_1a77ae19f0b5499be684a2c1c47da67909" kind="function"><name>GetTotalHeight</name></member>
   </compound>
   <compound refid="classvrv_1_1_pg_head" kind="class"><name>vrv::PgHead</name>
     <member refid="classvrv_1_1_pg_head_1a69c92f2ebefea1fb07124cf7e0de2a21" kind="function"><name>PgHead</name></member>
     <member refid="classvrv_1_1_pg_head_1a467bfb124db2dfb322e0b285c7ebb196" kind="function"><name>~PgHead</name></member>
     <member refid="classvrv_1_1_pg_head_1a12a4b8a93889a9a790cb0a74c4ba6fc4" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_pg_head_1a25c4046281a76bae00a42fa29b511be3" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_pg_head_1a0f59b6ae36b053226e85a78f015128a2" kind="function"><name>GetTotalHeight</name></member>
     <member refid="classvrv_1_1_pg_head_1ac08406f9b5d7600820fc2e9a299c07b3" kind="function"><name>GenerateFromMEIHeader</name></member>
   </compound>
   <compound refid="classvrv_1_1_pg_head2" kind="class"><name>vrv::PgHead2</name>
@@ -5188,6 +5193,7 @@
     <member refid="classvrv_1_1_pg_head2_1afbab6059e66f752540bd6ceb775b8fea" kind="function"><name>~PgHead2</name></member>
     <member refid="classvrv_1_1_pg_head2_1ab94b6b744294cf36e0d911876364c87e" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_pg_head2_1a4b4cc6be40b66af40bd3746b59a4a0a0" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_pg_head2_1aea46254e7856fb16397483dd331eff3a" kind="function"><name>GetTotalHeight</name></member>
   </compound>
   <compound refid="classvrv_1_1_phrase" kind="class"><name>vrv::Phrase</name>
     <member refid="classvrv_1_1_phrase_1aceaeb06568d7f04c59ac4e4d6fe7f7de" kind="function"><name>Phrase</name></member>
@@ -5507,7 +5513,8 @@
     <member refid="classvrv_1_1_running_element_1a2d6e14c44591a620a4439b7966eb6d32" kind="function"><name>GetDrawingPage</name></member>
     <member refid="classvrv_1_1_running_element_1a15732cf67a3883d9f0433af6aab7e975" kind="function"><name>GetDrawingYRel</name></member>
     <member refid="classvrv_1_1_running_element_1a212de9d05319398c856b6a065bfa203e" kind="function"><name>SetDrawingYRel</name></member>
-    <member refid="classvrv_1_1_running_element_1a62d9d7bed355057e7a96c1fb2edb13b4" kind="function"><name>GetTotalHeight</name></member>
+    <member refid="classvrv_1_1_running_element_1a2fa8f8fb83ce4806ac62fc92d90214b7" kind="function"><name>GetTotalHeight</name></member>
+    <member refid="classvrv_1_1_running_element_1abe230791691bbd8e6903eeb2e47ad2b4" kind="function"><name>GetContentHeight</name></member>
     <member refid="classvrv_1_1_running_element_1a11700a4dce46ddfea311b38b9636be16" kind="function"><name>GetRowHeight</name></member>
     <member refid="classvrv_1_1_running_element_1a2d4ed9fdba62957bf02465d72b28c1fb" kind="function"><name>GetColHeight</name></member>
     <member refid="classvrv_1_1_running_element_1a72615f0ef616081ba1b268d35cf5d98f" kind="function"><name>GetCellHeight</name></member>
@@ -6303,8 +6310,8 @@
     <member refid="classvrv_1_1_system_aligner_1a5c916b5e3799ce149199694090b2f1ce" kind="function"><name>GetSystem</name></member>
     <member refid="classvrv_1_1_system_aligner_1ad9a0c88c2a3bf95eee7feb4cc7dfad9f" kind="function"><name>FindAllPositionerPointingTo</name></member>
     <member refid="classvrv_1_1_system_aligner_1a6b1062f8939a64e6fd43ab3922006a6c" kind="function"><name>FindAllIntersectionPoints</name></member>
-    <member refid="classvrv_1_1_system_aligner_1a19f9ce9ac7717d27c1ba6bed118de35a" kind="function"><name>GetOverflowAbove</name></member>
-    <member refid="classvrv_1_1_system_aligner_1ab40985940913afb19165390f4392d778" kind="function"><name>GetOverflowBelow</name></member>
+    <member refid="classvrv_1_1_system_aligner_1ac94f769510d0d5fa8b6228f13fc5cc58" kind="function"><name>GetOverflowAbove</name></member>
+    <member refid="classvrv_1_1_system_aligner_1a3ae801665859afebf83e8a0551189f93" kind="function"><name>GetOverflowBelow</name></member>
     <member refid="classvrv_1_1_system_aligner_1a32f679e2e06155cf335d6118b234a3ce" kind="function"><name>GetJustificationSum</name></member>
     <member refid="classvrv_1_1_system_aligner_1a4ae91b3e9e2bfeda965f9a4370e7bc41" kind="function"><name>SetSpacing</name></member>
     <member refid="classvrv_1_1_system_aligner_1a0de2e81863af4a55d821fe89099fe859" kind="function"><name>GetAboveSpacingType</name></member>
