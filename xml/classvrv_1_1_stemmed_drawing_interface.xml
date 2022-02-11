@@ -4,6 +4,7 @@
     <compoundname>vrv::StemmedDrawingInterface</compoundname>
     <derivedcompoundref refid="classvrv_1_1_chord" prot="public" virt="non-virtual">vrv::Chord</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_note" prot="public" virt="non-virtual">vrv::Note</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_tab_dur_sym" prot="public" virt="non-virtual">vrv::TabDurSym</derivedcompoundref>
     <includes refid="drawinginterface_8h" local="no">drawinginterface.h</includes>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors, and other standard methods</header>
@@ -38,6 +39,7 @@
         <definition>virtual void vrv::StemmedDrawingInterface::Reset</definition>
         <argsstring>()</argsstring>
         <name>Reset</name>
+        <reimplementedby refid="classvrv_1_1_tab_dur_sym_1adbcbfec64d9b682d161c8448f0ecfde1">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_chord_1a4b05be56b85202f76ab861836f8c04c2">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_note_1abca9669b833294866e46d310a4ce1ec0">Reset</reimplementedby>
         <briefdescription>
@@ -121,6 +123,7 @@
         <definition>virtual Point vrv::StemmedDrawingInterface::GetStemUpSE</definition>
         <argsstring>(Doc *doc, int staffSize, bool graceSize)=0</argsstring>
         <name>GetStemUpSE</name>
+        <reimplementedby refid="classvrv_1_1_tab_dur_sym_1ae0bb480d7bdcaf4d1f201b20df103254">GetStemUpSE</reimplementedby>
         <reimplementedby refid="classvrv_1_1_chord_1a2921ff920a26a095d97cfdf2ed2150b3">GetStemUpSE</reimplementedby>
         <reimplementedby refid="classvrv_1_1_note_1a6254802daf2625dc5fb1b82ada63a3aa">GetStemUpSE</reimplementedby>
         <param>
@@ -148,6 +151,7 @@
         <definition>virtual Point vrv::StemmedDrawingInterface::GetStemDownNW</definition>
         <argsstring>(Doc *doc, int staffSize, bool graceSize)=0</argsstring>
         <name>GetStemDownNW</name>
+        <reimplementedby refid="classvrv_1_1_tab_dur_sym_1a681fe8fa273d34b9717afd3362ad31ba">GetStemDownNW</reimplementedby>
         <reimplementedby refid="classvrv_1_1_chord_1ad41c83c09c0e09b9a151190e80f58851">GetStemDownNW</reimplementedby>
         <reimplementedby refid="classvrv_1_1_note_1a6eb7ccf07fa72ce293410d2f58ac047a">GetStemDownNW</reimplementedby>
         <param>
@@ -175,6 +179,7 @@
         <definition>virtual int vrv::StemmedDrawingInterface::CalcStemLenInThirdUnits</definition>
         <argsstring>(Staff *staff, data_STEMDIRECTION stemDir)=0</argsstring>
         <name>CalcStemLenInThirdUnits</name>
+        <reimplementedby refid="classvrv_1_1_tab_dur_sym_1a91f06b010e2c2479196e2007a66d2898">CalcStemLenInThirdUnits</reimplementedby>
         <reimplementedby refid="classvrv_1_1_chord_1ae3e0dbfff7dc77c2a0f70cc1bc6cb401">CalcStemLenInThirdUnits</reimplementedby>
         <reimplementedby refid="classvrv_1_1_note_1afe4bad9d0e38826cefbf537b4c1a69f3">CalcStemLenInThirdUnits</reimplementedby>
         <param>
@@ -288,6 +293,12 @@
       <node id="1">
         <label>vrv::StemmedDrawingInterface</label>
         <link refid="classvrv_1_1_stemmed_drawing_interface"/>
+      </node>
+      <node id="4">
+        <label>vrv::TabDurSym</label>
+        <link refid="classvrv_1_1_tab_dur_sym"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="3">
         <label>vrv::Note</label>

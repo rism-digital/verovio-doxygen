@@ -13,6 +13,7 @@
     <derivedcompoundref refid="classvrv_1_1_score_def" prot="public" virt="non-virtual">vrv::ScoreDef</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_staff_grp" prot="public" virt="non-virtual">vrv::StaffGrp</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_syllable" prot="public" virt="non-virtual">vrv::Syllable</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_tab_grp" prot="public" virt="non-virtual">vrv::TabGrp</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_text_list_interface" prot="public" virt="non-virtual">vrv::TextListInterface</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_tuplet" prot="public" virt="non-virtual">vrv::Tuplet</derivedcompoundref>
     <includes refid="object_8h" local="no">object.h</includes>
@@ -250,6 +251,7 @@
         <argsstring>(ArrayOfObjects *childList)</argsstring>
         <name>FilterList</name>
         <reimplementedby refid="classvrv_1_1_text_list_interface_1ad1ffabcb24a774a5d45da6b76f58f523">FilterList</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_tab_grp_1aadaf95ab8968daf6b69d10bb0ad6c985">FilterList</reimplementedby>
         <reimplementedby refid="classvrv_1_1_ligature_1a4455eb80d23433587bccc647478eb14e">FilterList</reimplementedby>
         <reimplementedby refid="classvrv_1_1_meter_sig_grp_1a30799efa03d8f7a7e5a31a6983a52673">FilterList</reimplementedby>
         <reimplementedby refid="classvrv_1_1_f_trem_1ab7c626552b23b3ced99baad34a5a31e4">FilterList</reimplementedby>
@@ -282,16 +284,16 @@
 <para>The list is a flatten list of pointers to children elements. It is not an abstract class but should not be instanciated directly. </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="21">
+      <node id="22">
         <label>vrv::Dir</label>
         <link refid="classvrv_1_1_dir"/>
-        <childnode refid="19" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="23">
+      <node id="24">
         <label>vrv::Harm</label>
         <link refid="classvrv_1_1_harm"/>
-        <childnode refid="19" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
       <node id="6">
@@ -324,10 +326,10 @@
         <childnode refid="11" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="24">
+      <node id="25">
         <label>vrv::Label</label>
         <link refid="classvrv_1_1_label"/>
-        <childnode refid="19" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
       <node id="7">
@@ -336,13 +338,13 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="25">
+      <node id="26">
         <label>vrv::LabelAbbr</label>
         <link refid="classvrv_1_1_label_abbr"/>
-        <childnode refid="19" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="19">
+      <node id="20">
         <label>vrv::TextListInterface</label>
         <link refid="classvrv_1_1_text_list_interface"/>
         <childnode refid="1" relation="public-inheritance">
@@ -378,10 +380,16 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="22">
+      <node id="23">
         <label>vrv::Dynam</label>
         <link refid="classvrv_1_1_dynam"/>
-        <childnode refid="19" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>vrv::TabGrp</label>
+        <link refid="classvrv_1_1_tab_grp"/>
+        <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
       <node id="18">
@@ -390,10 +398,10 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="27">
+      <node id="28">
         <label>vrv::Syl</label>
         <link refid="classvrv_1_1_syl"/>
-        <childnode refid="19" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
       <node id="16">
@@ -402,10 +410,10 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="26">
+      <node id="27">
         <label>vrv::MNum</label>
         <link refid="classvrv_1_1_m_num"/>
-        <childnode refid="19" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
       <node id="2">
@@ -414,10 +422,10 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="20">
+      <node id="21">
         <label>vrv::Annot</label>
         <link refid="classvrv_1_1_annot"/>
-        <childnode refid="19" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
       <node id="5">
@@ -426,7 +434,7 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="28">
+      <node id="29">
         <label>vrv::Tuplet</label>
         <link refid="classvrv_1_1_tuplet"/>
         <childnode refid="1" relation="public-inheritance">

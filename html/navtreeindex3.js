@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_bounding_box.html#aaeb23e9d3064f863ef3857efef570a8f":[2,0,0,55,46],
+"classvrv_1_1_bounding_box.html#ab9bbe1447c1e512c9154825086f34aef":[2,0,0,55,58],
 "classvrv_1_1_bounding_box.html#abc4feb5675ff672b2e3a94b4a65403b5":[2,0,0,55,50],
 "classvrv_1_1_bounding_box.html#abe8bb676a5c670242888d9034daa5a22":[2,0,0,55,34],
 "classvrv_1_1_bounding_box.html#ac2b3dff1054fee47d8d22c2183c4c346":[2,0,0,55,11],
@@ -82,8 +84,9 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_calc_stem_params.html#a154836558e4297bf9b962f185f0210a8":[2,0,0,65,1],
 "classvrv_1_1_calc_stem_params.html#a34687d23c98f5d4fa46fbeedfb5a9f50":[2,0,0,65,3],
 "classvrv_1_1_calc_stem_params.html#a4e9c61e0f61025c267f82f6ac32f506e":[2,0,0,65,2],
+"classvrv_1_1_calc_stem_params.html#a5203c83d5dda1c491f4b26d7b7c426aa":[2,0,0,65,9],
 "classvrv_1_1_calc_stem_params.html#a5fe1f835fa0ec822c06a83ab8df5634d":[2,0,0,65,0],
-"classvrv_1_1_calc_stem_params.html#a6b86386e29ad9f3f97e269c4c25addd8":[2,0,0,65,9],
+"classvrv_1_1_calc_stem_params.html#a6b86386e29ad9f3f97e269c4c25addd8":[2,0,0,65,10],
 "classvrv_1_1_calc_stem_params.html#a8e5a571e8d22130d16c519808e30818f":[2,0,0,65,4],
 "classvrv_1_1_calc_stem_params.html#aa08713416a5885b60e8d316f2ba48434":[2,0,0,65,6],
 "classvrv_1_1_calc_stem_params.html#aae4707dc65ba0c6f674ac6e23fe4e9af":[2,0,0,65,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_convert_to_cast_off_mensural_params.html#afc1a80999dfa11413d73564b2d6fb73e":[2,0,0,81,5],
 "classvrv_1_1_convert_to_page_based_params.html":[2,0,0,82],
 "classvrv_1_1_convert_to_page_based_params.html#a88a55e34e42a97d6b5d24b3f27df112e":[2,0,0,82,1],
-"classvrv_1_1_convert_to_page_based_params.html#a9a5ac3e37a523a7cac8f074628c3d693":[2,0,0,82,2],
-"classvrv_1_1_convert_to_page_based_params.html#a9b1d1f37b7fa604d81c316d24afe4f5d":[2,0,0,82,0],
-"classvrv_1_1_convert_to_un_cast_off_mensural_params.html":[2,0,0,83],
-"classvrv_1_1_convert_to_un_cast_off_mensural_params.html#a26789216164c268bcfb98877ceca78f4":[2,0,0,83,2]
+"classvrv_1_1_convert_to_page_based_params.html#a9a5ac3e37a523a7cac8f074628c3d693":[2,0,0,82,2]
 };

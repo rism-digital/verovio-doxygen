@@ -804,21 +804,23 @@
     <member refid="classvrv_1_1_beam_element_coord_1a960a8da7d590eb5ea152a25a92bbd54d" kind="variable"><name>m_partialFlagPlace</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1a1978586c632e48599f36d1cbd484e669" kind="variable"><name>m_element</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1ac90293b4815f8f90c2c46f7d8d9c53ad" kind="variable"><name>m_closestNote</name></member>
+    <member refid="classvrv_1_1_beam_element_coord_1a87b8c722e99d658486232481f61979c2" kind="variable"><name>m_tabDurSym</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1a7979d8a8efc9eb48ceeab93b051cf9b9" kind="variable"><name>m_stem</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1a3d4c541e6a6640a5a9df1ac50db27bb2" kind="function"><name>BeamElementCoord</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1ad39a98a648db43efa4ae8d382d95d06d" kind="function"><name>~BeamElementCoord</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1ab840311185d74d49af8357f0d2909db6" kind="function"><name>GetStemDir</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1a221c845016f2e6e5626a38d1dfeb125e" kind="function"><name>SetDrawingStemDir</name></member>
-    <member refid="classvrv_1_1_beam_element_coord_1a0044982fdb6e6ea657fcfbed5ccaa019" kind="function"><name>SetClosestNote</name></member>
+    <member refid="classvrv_1_1_beam_element_coord_1abd402f9d51ce8ecc55ab130c148e3c27" kind="function"><name>SetClosestNoteOrTabDurSym</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1a15a0938f038bf759f9cd441dbd574c50" kind="function"><name>CalculateStemLength</name></member>
+    <member refid="classvrv_1_1_beam_element_coord_1af99dadbfe0fbde5689c2ff2c4d5d2260" kind="function"><name>CalculateStemLengthTab</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1ab617877f2f3d15895b19ea2e3e6d4516" kind="function"><name>CalculateStemModAdjustment</name></member>
+    <member refid="classvrv_1_1_beam_element_coord_1a93940155d8a91b590cc29bcda00ec8ec" kind="function"><name>GetStemHolderInterface</name></member>
   </compound>
   <compound refid="classvrv_1_1_beam_segment" kind="class"><name>vrv::BeamSegment</name>
     <member refid="classvrv_1_1_beam_segment_1affb5c3ee3c4310bc60db4c3880c8fb19" kind="function"><name>BeamSegment</name></member>
     <member refid="classvrv_1_1_beam_segment_1ad00e25fbdde982ee522286831653b840" kind="function"><name>~BeamSegment</name></member>
     <member refid="classvrv_1_1_beam_segment_1ae45293135277575fd4d828312f1c700c" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_beam_segment_1a53b12029b522b249d6faf0dc8acfe1b8" kind="function"><name>CalcBeam</name></member>
-    <member refid="classvrv_1_1_beam_segment_1a0b9492fd5294745446b4e0dae0f8ff65" kind="function"><name>CalcTabBeam</name></member>
     <member refid="classvrv_1_1_beam_segment_1afdd3362ebfc878b981e2f3f8db7ed970" kind="function"><name>GetElementCoordRefs</name></member>
     <member refid="classvrv_1_1_beam_segment_1aae2d6f202398b11757729b803cad00fd" kind="function"><name>InitCoordRefs</name></member>
     <member refid="classvrv_1_1_beam_segment_1a29c1c949f0d813b5ffc8303515bc804f" kind="function"><name>ClearCoordRefs</name></member>
@@ -852,7 +854,10 @@
     <member refid="classvrv_1_1_beam_segment_1aba985d7e3fe7dca58e2dcbbf8f9a2e9c" kind="function"><name>CalcAdjustSlope</name></member>
     <member refid="classvrv_1_1_beam_segment_1a766ee58b945c0938d1ca41a466f1bc95" kind="function"><name>CalcAdjustPosition</name></member>
     <member refid="classvrv_1_1_beam_segment_1a63b1cecc6192ef7550e693e1a57641bb" kind="function"><name>CalcBeamPlace</name></member>
+    <member refid="classvrv_1_1_beam_segment_1aa40ae4d1e40c6faf7eae0987d54c4bab" kind="function"><name>CalcBeamPlaceTab</name></member>
     <member refid="classvrv_1_1_beam_segment_1a96cc3ca1c2b3e95d89777010242e2cfc" kind="function"><name>CalcBeamStemLength</name></member>
+    <member refid="classvrv_1_1_beam_segment_1a75e530522ca989a2bfae255ec801f521" kind="function"><name>CalcSetStemValues</name></member>
+    <member refid="classvrv_1_1_beam_segment_1ad2060bb0b1275ec0dc93ab3e23129f99" kind="function"><name>CalcSetStemValuesTab</name></member>
     <member refid="classvrv_1_1_beam_segment_1af3d5cc9ca6f5c199180707d4fc66d633" kind="function"><name>CalcBeamRelativeMinMax</name></member>
     <member refid="classvrv_1_1_beam_segment_1aa25c61e9f41f6653513ea9e4d70ee854" kind="function"><name>CalcHorizontalBeam</name></member>
     <member refid="classvrv_1_1_beam_segment_1abacc5fb4f16826b89655f9407c9128aa" kind="function"><name>CalcMixedBeamPlace</name></member>
@@ -1083,6 +1088,7 @@
     <member refid="classvrv_1_1_calc_stem_params_1a34687d23c98f5d4fa46fbeedfb5a9f50" kind="variable"><name>m_dur</name></member>
     <member refid="classvrv_1_1_calc_stem_params_1af2f83e5fbea1511f10afda9b1987616e" kind="variable"><name>m_isGraceNote</name></member>
     <member refid="classvrv_1_1_calc_stem_params_1af4038c8e47ae8b3efa7754bc54e94002" kind="variable"><name>m_stemSameas</name></member>
+    <member refid="classvrv_1_1_calc_stem_params_1a5203c83d5dda1c491f4b26d7b7c426aa" kind="variable"><name>m_tabGrpWithNoNote</name></member>
     <member refid="classvrv_1_1_calc_stem_params_1aae4707dc65ba0c6f674ac6e23fe4e9af" kind="variable"><name>m_staff</name></member>
     <member refid="classvrv_1_1_calc_stem_params_1aa08713416a5885b60e8d316f2ba48434" kind="variable"><name>m_layer</name></member>
     <member refid="classvrv_1_1_calc_stem_params_1a8e5a571e8d22130d16c519808e30818f" kind="variable"><name>m_interface</name></member>
@@ -2992,6 +2998,7 @@
     <member refid="classvrv_1_1_layer_1a5dcc8411b2ec5d975c0fc1f32ce48d72" kind="function"><name>SetDrawingStemDir</name></member>
     <member refid="classvrv_1_1_layer_1ac9cff14271883d9b18f0e14a4b56a1d8" kind="function"><name>GetDrawingStemDir</name></member>
     <member refid="classvrv_1_1_layer_1a9384a5e86b46e31c7fb07d98d6583107" kind="function"><name>GetDrawingStemDir</name></member>
+    <member refid="classvrv_1_1_layer_1af71aa62ee9cde4f16a1d2a504c8845c7" kind="function"><name>GetDrawingStemDir</name></member>
     <member refid="classvrv_1_1_layer_1a2c544567b6c64a2682d4840b02ecc739" kind="function"><name>GetLayersNForTimeSpanOf</name></member>
     <member refid="classvrv_1_1_layer_1a63a9e22b4ed9ae96df451eadadad1b6b" kind="function"><name>GetLayerCountForTimeSpanOf</name></member>
     <member refid="classvrv_1_1_layer_1ae9da152a30209e9266669a433262a84b" kind="function"><name>GetLayersNInTimeSpan</name></member>
@@ -5810,9 +5817,11 @@
     <member refid="classvrv_1_1_staff_1a79eac77323fbef08aea63636b198670f" kind="function"><name>IsMensural</name></member>
     <member refid="classvrv_1_1_staff_1a34bb6fc88f3af41943c3ba4e6006f526" kind="function"><name>IsNeume</name></member>
     <member refid="classvrv_1_1_staff_1a9dc4603b9cbe7003cd4fb617c186b8d5" kind="function"><name>IsTablature</name></member>
+    <member refid="classvrv_1_1_staff_1af5eacce1dbfe397922d301d3742e5c0f" kind="function"><name>IsTabGuitar</name></member>
     <member refid="classvrv_1_1_staff_1ac6290b41b34eee3dbe941d48ab6d2831" kind="function"><name>IsTabLuteFrench</name></member>
     <member refid="classvrv_1_1_staff_1a20490887a8cc2af738e1a55e82e6438e" kind="function"><name>IsTabLuteGerman</name></member>
     <member refid="classvrv_1_1_staff_1a527874b273615ffbf49dfe8e80f99b6d" kind="function"><name>IsTabLuteItalian</name></member>
+    <member refid="classvrv_1_1_staff_1af85496b792d45af4127039aa5a35a1ba" kind="function"><name>IsTabWithStemsOutside</name></member>
     <member refid="classvrv_1_1_staff_1a574fa40f4a5412da8b51679db2e63756" kind="function"><name>GetLedgerLinesAbove</name></member>
     <member refid="classvrv_1_1_staff_1a58c281c807c9f7df8f9d8bb7f34fd99e" kind="function"><name>GetLedgerLinesAboveCue</name></member>
     <member refid="classvrv_1_1_staff_1aa6fbec686d74e09f11456d85bf3c6c99" kind="function"><name>GetLedgerLinesBelow</name></member>
@@ -6361,13 +6370,25 @@
     <member refid="classvrv_1_1_system_milestone_interface_1aa342acdd8ea3201de75cff61440bb591" kind="function"><name>InterfacePrepareMilestones</name></member>
     <member refid="classvrv_1_1_system_milestone_interface_1ac335d06aa809a5f17755a115f84610cb" kind="function"><name>InterfaceResetDrawing</name></member>
   </compound>
+  <compound refid="classvrv_1_1_tab_course_sort" kind="class"><name>vrv::TabCourseSort</name>
+    <member refid="classvrv_1_1_tab_course_sort_1a3e2370dd51357afdbf928964d8817810" kind="function"><name>TabCourseSort</name></member>
+    <member refid="classvrv_1_1_tab_course_sort_1a62322c821b29ee5b1c64b5bcad60822c" kind="function"><name>operator()</name></member>
+  </compound>
   <compound refid="classvrv_1_1_tab_dur_sym" kind="class"><name>vrv::TabDurSym</name>
     <member refid="classvrv_1_1_tab_dur_sym_1a966da7f1e2e14f69f3f2c33a890bc479" kind="function"><name>TabDurSym</name></member>
     <member refid="classvrv_1_1_tab_dur_sym_1aecf7bfb050098a92f34dc22c8fbd075c" kind="function"><name>~TabDurSym</name></member>
     <member refid="classvrv_1_1_tab_dur_sym_1adbcbfec64d9b682d161c8448f0ecfde1" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_tab_dur_sym_1a46660090388ff3a6a2236a13b08ad638" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_tab_dur_sym_1a6a846a4d4e931838c6781bc8979410d2" kind="function"><name>GetStemmedDrawingInterface</name></member>
+    <member refid="classvrv_1_1_tab_dur_sym_1ae0bb480d7bdcaf4d1f201b20df103254" kind="function"><name>GetStemUpSE</name></member>
+    <member refid="classvrv_1_1_tab_dur_sym_1a681fe8fa273d34b9717afd3362ad31ba" kind="function"><name>GetStemDownNW</name></member>
+    <member refid="classvrv_1_1_tab_dur_sym_1a91f06b010e2c2479196e2007a66d2898" kind="function"><name>CalcStemLenInThirdUnits</name></member>
     <member refid="classvrv_1_1_tab_dur_sym_1a1e85bce43dc9ad280471f7ef5f147da0" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_tab_dur_sym_1a2d7ba2c667df361c9dcda9df8b75093a" kind="function"><name>IsSupportedChild</name></member>
+    <member refid="classvrv_1_1_tab_dur_sym_1a3d84edc997ae622affddd9f02ae1ce3c" kind="function"><name>AddChild</name></member>
+    <member refid="classvrv_1_1_tab_dur_sym_1acd0f9d33daea15aaf81b195c245835d5" kind="function"><name>AdjustDrawingYRel</name></member>
+    <member refid="classvrv_1_1_tab_dur_sym_1aae099410ce22b4f784bb9d22a6502b57" kind="function"><name>PrepareLayerElementParts</name></member>
+    <member refid="classvrv_1_1_tab_dur_sym_1a00e3d8e47dc0f378f028b6e46fd7dcdb" kind="function"><name>CalcStem</name></member>
   </compound>
   <compound refid="classvrv_1_1_tab_grp" kind="class"><name>vrv::TabGrp</name>
     <member refid="classvrv_1_1_tab_grp_1a3f93da161d7d3efd6fd38b111c854523" kind="function"><name>TabGrp</name></member>
@@ -6375,8 +6396,14 @@
     <member refid="classvrv_1_1_tab_grp_1a9b2fd5cbad6e65977c31711ff82c70e0" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_tab_grp_1a0c3377390a0ad28b2e2a0fc0cc10e98c" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_tab_grp_1a1aed8cc5fe4e59e8a9196b4d6463f952" kind="function"><name>GetDurationInterface</name></member>
+    <member refid="classvrv_1_1_tab_grp_1af93f0a5fe85cacaf6ba6e1371097ca15" kind="function"><name>GetTopNote</name></member>
+    <member refid="classvrv_1_1_tab_grp_1a8486feba49453626e1b31820889c2c02" kind="function"><name>GetBottomNote</name></member>
+    <member refid="classvrv_1_1_tab_grp_1a26945cd77a78e7ea5b6d4358e55c9e48" kind="function"><name>GetYTop</name></member>
+    <member refid="classvrv_1_1_tab_grp_1aa7a4729189d921c33ec83be8bbdf5824" kind="function"><name>GetYBottom</name></member>
     <member refid="classvrv_1_1_tab_grp_1a4d88df1eeb835725c99b618aebaa4e5f" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_tab_grp_1a168bb90abeec8aa0378aa4e187371109" kind="function"><name>CalcOnsetOffsetEnd</name></member>
+    <member refid="classvrv_1_1_tab_grp_1a3f1407ac41f5dd20076558863048799d" kind="function"><name>CalcStem</name></member>
+    <member refid="classvrv_1_1_tab_grp_1aadaf95ab8968daf6b69d10bb0ad6c985" kind="function"><name>FilterList</name></member>
   </compound>
   <compound refid="classvrv_1_1_tempo" kind="class"><name>vrv::Tempo</name>
     <member refid="classvrv_1_1_tempo_1a4031ccfa745354263263e964a1323254" kind="function"><name>Tempo</name></member>
@@ -8706,6 +8733,7 @@
     <member refid="vrvdef_8h_1aeb08e9bbf52113894121dff32eb2d886" kind="define"><name>LINEWIDTHTERM_factor_wide</name></member>
     <member refid="vrvdef_8h_1a8e48086ec95b10d9c33a4bd2b21892c9" kind="define"><name>OCTAVE_OFFSET</name></member>
     <member refid="vrvdef_8h_1a599046fa688f5cc8168b94f1be04e519" kind="define"><name>STANDARD_STEMLENGTH</name></member>
+    <member refid="vrvdef_8h_1a94397e0a7d77d0c6834022aee41165bc" kind="define"><name>STANDARD_STEMLENGTH_TAB</name></member>
     <member refid="vrvdef_8h_1ad35db7305eb2f8d15b26db93e6528be5" kind="define"><name>TABLATURE_STAFF_RATIO</name></member>
     <member refid="vrvdef_8h_1a2a9b31173cc8deb9368efce6b1d1c238" kind="define"><name>SUPER_SCRIPT_FACTOR</name></member>
     <member refid="vrvdef_8h_1a82ca896ab33563e9aba0bb7b43686065" kind="define"><name>SUPER_SCRIPT_POSITION</name></member>

@@ -3,9 +3,11 @@ var classvrv_1_1_beam_element_coord =
     [ "BeamElementCoord", "classvrv_1_1_beam_element_coord.html#a3d4c541e6a6640a5a9df1ac50db27bb2", null ],
     [ "~BeamElementCoord", "classvrv_1_1_beam_element_coord.html#ad39a98a648db43efa4ae8d382d95d06d", null ],
     [ "CalculateStemLength", "classvrv_1_1_beam_element_coord.html#a15a0938f038bf759f9cd441dbd574c50", null ],
+    [ "CalculateStemLengthTab", "classvrv_1_1_beam_element_coord.html#af99dadbfe0fbde5689c2ff2c4d5d2260", null ],
     [ "CalculateStemModAdjustment", "classvrv_1_1_beam_element_coord.html#ab617877f2f3d15895b19ea2e3e6d4516", null ],
     [ "GetStemDir", "classvrv_1_1_beam_element_coord.html#ab840311185d74d49af8357f0d2909db6", null ],
-    [ "SetClosestNote", "classvrv_1_1_beam_element_coord.html#a0044982fdb6e6ea657fcfbed5ccaa019", null ],
+    [ "GetStemHolderInterface", "classvrv_1_1_beam_element_coord.html#a93940155d8a91b590cc29bcda00ec8ec", null ],
+    [ "SetClosestNoteOrTabDurSym", "classvrv_1_1_beam_element_coord.html#abd402f9d51ce8ecc55ab130c148e3c27", null ],
     [ "SetDrawingStemDir", "classvrv_1_1_beam_element_coord.html#a221c845016f2e6e5626a38d1dfeb125e", null ],
     [ "m_beamRelativePlace", "classvrv_1_1_beam_element_coord.html#a0b6ef6f8b84ee38d9811e3860b0e408f", null ],
     [ "m_breaksec", "classvrv_1_1_beam_element_coord.html#ae86c87990d1a0fd3a79f340aafe31d6e", null ],
@@ -18,6 +20,7 @@ var classvrv_1_1_beam_element_coord =
     [ "m_partialFlagPlace", "classvrv_1_1_beam_element_coord.html#a960a8da7d590eb5ea152a25a92bbd54d", null ],
     [ "m_partialFlags", "classvrv_1_1_beam_element_coord.html#a3024e5d8ba924a0f4e9bccfdaf5f41f8", null ],
     [ "m_stem", "classvrv_1_1_beam_element_coord.html#a7979d8a8efc9eb48ceeab93b051cf9b9", null ],
+    [ "m_tabDurSym", "classvrv_1_1_beam_element_coord.html#a87b8c722e99d658486232481f61979c2", null ],
     [ "m_x", "classvrv_1_1_beam_element_coord.html#aa7af1b2008fb449209dbbca38e22de34", null ],
     [ "m_yBeam", "classvrv_1_1_beam_element_coord.html#a1f7fd630af091c0b6f6e1ac0509af9cb", null ]
 ];

@@ -3,6 +3,7 @@
   <compounddef id="classvrv_1_1_tab_grp" kind="class" language="C++" prot="public">
     <compoundname>vrv::TabGrp</compoundname>
     <basecompoundref refid="classvrv_1_1_layer_element" prot="public" virt="non-virtual">vrv::LayerElement</basecompoundref>
+    <basecompoundref refid="classvrv_1_1_object_list_interface" prot="public" virt="non-virtual">vrv::ObjectListInterface</basecompoundref>
     <basecompoundref refid="classvrv_1_1_duration_interface" prot="public" virt="non-virtual">vrv::DurationInterface</basecompoundref>
     <includes refid="tabgrp_8h" local="no">tabgrp.h</includes>
       <sectiondef kind="user-defined">
@@ -83,6 +84,61 @@
         <location file="/home/runner/work/verovio/verovio/include/vrv/tabgrp.h" line="40" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/tabgrp.h" bodystart="40" bodyend="40"/>
       </memberdef>
       </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_tab_grp_1af93f0a5fe85cacaf6ba6e1371097ca15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
+        <definition>Note* vrv::TabGrp::GetTopNote</definition>
+        <argsstring>()</argsstring>
+        <name>GetTopNote</name>
+        <briefdescription>
+<para>Return the top or bottom note or their Y position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabgrp.h" line="52" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_tab_grp_1a8486feba49453626e1b31820889c2c02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
+        <definition>Note* vrv::TabGrp::GetBottomNote</definition>
+        <argsstring>()</argsstring>
+        <name>GetBottomNote</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabgrp.h" line="53" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_tab_grp_1a26945cd77a78e7ea5b6d4358e55c9e48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::TabGrp::GetYTop</definition>
+        <argsstring>()</argsstring>
+        <name>GetYTop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabgrp.h" line="54" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_tab_grp_1aa7a4729189d921c33ec83be8bbdf5824" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::TabGrp::GetYBottom</definition>
+        <argsstring>()</argsstring>
+        <name>GetYBottom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabgrp.h" line="55" column="9"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classvrv_1_1_tab_grp_1a4d88df1eeb835725c99b618aebaa4e5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -120,7 +176,47 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tabgrp.h" line="55" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabgrp.h" line="65" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_tab_grp_1a3f1407ac41f5dd20076558863048799d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int vrv::TabGrp::CalcStem</definition>
+        <argsstring>(FunctorParams *functorParams) override</argsstring>
+        <name>CalcStem</name>
+        <reimplements refid="classvrv_1_1_object_1a0b93f8b6e02c8ba98a03db67fe5d5d10">CalcStem</reimplements>
+        <param>
+          <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
+          <declname>functorParams</declname>
+        </param>
+        <briefdescription>
+<para>See <ref refid="classvrv_1_1_object_1a0b93f8b6e02c8ba98a03db67fe5d5d10" kindref="member">Object::CalcStem</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabgrp.h" line="70" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classvrv_1_1_tab_grp_1aadaf95ab8968daf6b69d10bb0ad6c985" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void vrv::TabGrp::FilterList</definition>
+        <argsstring>(ArrayOfObjects *childList) override</argsstring>
+        <name>FilterList</name>
+        <reimplements refid="classvrv_1_1_object_list_interface_1af290e139fe7cdfd07e614fb5d604e98f">FilterList</reimplements>
+        <param>
+          <type>ArrayOfObjects *</type>
+          <declname>childList</declname>
+        </param>
+        <briefdescription>
+<para>Filter the flat list and keep only <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabgrp.h" line="76" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -153,13 +249,13 @@
         <childnode refid="9" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="19">
+      <node id="20">
         <label>AttDurationRatio</label>
       </node>
-      <node id="17">
+      <node id="18">
         <label>AttDurationLogical</label>
       </node>
-      <node id="15">
+      <node id="16">
         <label>AttBeamSecondary</label>
       </node>
       <node id="12">
@@ -173,7 +269,7 @@
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="20">
+      <node id="21">
         <label>AttFermataPresent</label>
       </node>
       <node id="5">
@@ -187,12 +283,10 @@
       <node id="10">
         <label>AttCoordX1</label>
       </node>
-      <node id="13">
+      <node id="14">
         <label>vrv::DurationInterface</label>
         <link refid="classvrv_1_1_duration_interface"/>
         <childnode refid="6" relation="public-inheritance">
-        </childnode>
-        <childnode refid="14" relation="public-inheritance">
         </childnode>
         <childnode refid="15" relation="public-inheritance">
         </childnode>
@@ -208,8 +302,10 @@
         </childnode>
         <childnode refid="21" relation="public-inheritance">
         </childnode>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="14">
+      <node id="15">
         <label>AttAugmentDots</label>
       </node>
       <node id="1">
@@ -219,6 +315,8 @@
         </childnode>
         <childnode refid="13" relation="public-inheritance">
         </childnode>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="9">
         <label>AttLinking</label>
@@ -226,7 +324,7 @@
       <node id="7">
         <label>AttFacsimile</label>
       </node>
-      <node id="21">
+      <node id="22">
         <label>AttStaffIdent</label>
       </node>
       <node id="3">
@@ -235,10 +333,14 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="18">
+      <node id="19">
         <label>AttDurationQuality</label>
       </node>
-      <node id="16">
+      <node id="13">
+        <label>vrv::ObjectListInterface</label>
+        <link refid="classvrv_1_1_object_list_interface"/>
+      </node>
+      <node id="17">
         <label>AttDurationGestural</label>
       </node>
       <node id="11">
@@ -489,6 +591,8 @@
         <link refid="classvrv_1_1_tab_grp"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
         <childnode refid="42" relation="public-inheritance">
         </childnode>
       </node>
@@ -551,7 +655,7 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/tabgrp.h" line="23" column="59" bodyfile="/home/runner/work/verovio/verovio/include/vrv/tabgrp.h" bodystart="23" bodyend="65"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/tabgrp.h" line="23" column="87" bodyfile="/home/runner/work/verovio/verovio/include/vrv/tabgrp.h" bodystart="23" bodyend="84"/>
     <listofallmembers>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>AddChild</name></member>
       <member refid="classvrv_1_1_object_1a1af968d5140f79fd056aa5a46d7cad11" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>AddLayerElementToFlatList</name></member>
@@ -626,7 +730,7 @@
       <member refid="classvrv_1_1_bounding_box_1acf2951ebea74c27b024916a4c96480a5" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>CalcPointAtBezier</name></member>
       <member refid="classvrv_1_1_bounding_box_1a80465f84c7190f8cb0a9765693376be2" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>CalcPositionAfterRotation</name></member>
       <member refid="classvrv_1_1_bounding_box_1a98f3d30610a0063965fcac7ec265ef27" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>CalcSlope</name></member>
-      <member refid="classvrv_1_1_object_1a0b93f8b6e02c8ba98a03db67fe5d5d10" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>CalcStem</name></member>
+      <member refid="classvrv_1_1_tab_grp_1a3f1407ac41f5dd20076558863048799d" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>CalcStem</name></member>
       <member refid="classvrv_1_1_bounding_box_1ae087d56d7ff270c908e3a723be01f6e7" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>CalcThickBezier</name></member>
       <member refid="classvrv_1_1_object_1ae1320bf0b5a56f033dcc561147225ba7" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>CastOffEncoding</name></member>
       <member refid="classvrv_1_1_object_1af4bdf6d63a5fbf43a21a5c18d3c49a10" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>CastOffPages</name></member>
@@ -656,6 +760,7 @@
       <member refid="classvrv_1_1_object_1a3749f83f36adfc8748438ca17b1e5f91" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>FillFlatList</name></member>
       <member refid="classvrv_1_1_object_1a75266bd3b8cdd0db529367a5f9f16450" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>FillStaffCurrentTimeSpanning</name></member>
       <member refid="classvrv_1_1_object_1aa35be27cc82fd95f7a353a705721778b" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>FillStaffCurrentTimeSpanningEnd</name></member>
+      <member refid="classvrv_1_1_tab_grp_1aadaf95ab8968daf6b69d10bb0ad6c985" prot="protected" virt="virtual"><scope>vrv::TabGrp</scope><name>FilterList</name></member>
       <member refid="classvrv_1_1_object_1afe64fa5f9df4e735ed7f1e9a5935a339" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>FindAllBetween</name></member>
       <member refid="classvrv_1_1_object_1aa5fd51861abce2d3237ef9d115d32ba6" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>FindAllByComparison</name></member>
       <member refid="classvrv_1_1_object_1afb04eac4ba10905eeebed4794a8c1dd2" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>FindAllDescendantsBetween</name></member>
@@ -696,6 +801,7 @@
       <member refid="classvrv_1_1_object_1a6d9d3ae387831fac891f903349348310" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>GetBeamDrawingInterface</name></member>
       <member refid="classvrv_1_1_bounding_box_1a0771c6326e6a7123268f433bfdc903f6" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetBezierThicknessCoefficient</name></member>
       <member refid="classvrv_1_1_bounding_box_1a91a7bb36d11f909e84caab997fb49c0c" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetBottomBy</name></member>
+      <member refid="classvrv_1_1_tab_grp_1a8486feba49453626e1b31820889c2c02" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetBottomNote</name></member>
       <member refid="classvrv_1_1_bounding_box_1aa3fc5bcc7d25b6e975fad50b11edd781" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetBoundingBoxGlyph</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2b025880f04cefa1cb37b7e6f8bfb8f1" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetBoundingBoxGlyphFontSize</name></member>
       <member refid="classvrv_1_1_object_1a6bd78730c9d5f0302710213488708adb" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetChild</name></member>
@@ -749,6 +855,12 @@
       <member refid="classvrv_1_1_object_1a908d56fef5a5dd9b9808555ab4ea4daf" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetLastAncestorNot</name></member>
       <member refid="classvrv_1_1_bounding_box_1af329372204a34520779e6b0d0596e8b9" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetLeftBy</name></member>
       <member refid="classvrv_1_1_layer_element_1a53c9a4d1ab100c4c18f24b2d8563989c" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>GetLinkingInterface</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a891d06e93b23593760353347702e2f26" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetList</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a1dd620b5a71dbbc985d19972d404b04c" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetListFirst</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1aa7011af7543f539acd4cf68ca9ab7f8b" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetListFirstBackward</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a3bdaaa1533dc4c5c662562db54a23146" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetListIndex</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1ae111de575ca76e7718a6a9298629d505" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetListNext</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a7be9e4e97f020eb673aae4407ded65fc" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetListPrevious</name></member>
       <member refid="classvrv_1_1_object_1a776dc4f75ec176b5189ce8818a221bcf" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetMilestoneEnd</name></member>
       <member refid="classvrv_1_1_object_1ab2e351247e616a3f30eaf2e3d125f054" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetNext</name></member>
       <member refid="classvrv_1_1_object_1a3fda6549b288e139959f2e50355792e7" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetNext</name></member>
@@ -788,12 +900,15 @@
       <member refid="classvrv_1_1_object_1a738ca662cfaa09bb0122966cb29b43c6" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>GetTimePointInterface</name></member>
       <member refid="classvrv_1_1_object_1a2ac1817c7492a51e6bb550f3002b32de" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>GetTimeSpanningInterface</name></member>
       <member refid="classvrv_1_1_bounding_box_1a9dae1c4940695c403ba67841512f94f3" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetTopBy</name></member>
+      <member refid="classvrv_1_1_tab_grp_1af93f0a5fe85cacaf6ba6e1371097ca15" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetTopNote</name></member>
       <member refid="classvrv_1_1_object_1a7bcc3062c90aa6f927f8c51f180b585b" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetUuid</name></member>
       <member refid="classvrv_1_1_facsimile_interface_1a980c5d6d8bc03897efdd86bdb94fd593" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetWidth</name></member>
       <member refid="classvrv_1_1_bounding_box_1a6f1d1de5ac01ce1fe4cf43ed16b47e11" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetX1By</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3a9666c33d5a4a7d01f4b159c128d6c5" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetX2By</name></member>
       <member refid="classvrv_1_1_bounding_box_1ad906e8632b28b1be81fa374ad2b5292e" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetY1By</name></member>
       <member refid="classvrv_1_1_bounding_box_1a242e2a41a61fb347b526a08fef162cdf" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetY2By</name></member>
+      <member refid="classvrv_1_1_tab_grp_1aa7a4729189d921c33ec83be8bbdf5824" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetYBottom</name></member>
+      <member refid="classvrv_1_1_tab_grp_1a26945cd77a78e7ea5b6d4358e55c9e48" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetYTop</name></member>
       <member refid="classvrv_1_1_facsimile_interface_1a3ca53c1bfe956ae1bfbb0a77f3c672b0" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>GetZone</name></member>
       <member refid="classvrv_1_1_object_1a9020ecbd4da7cb50ed8ffa686eeae8e5" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>HasAttClass</name></member>
       <member refid="classvrv_1_1_object_1a07880f4ad709e37ca6b5483110905383" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>HasAttribute</name></member>
@@ -891,7 +1006,10 @@
       <member refid="classvrv_1_1_object_1a98c0701bde5924c064607250d567883a" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>Object</name></member>
       <member refid="classvrv_1_1_object_1a79f4f653686b4f612283302ab443c1c8" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>Object</name></member>
       <member refid="classvrv_1_1_object_1a8be4ecf7908559751e728551718a8bfc" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>Object</name></member>
-      <member refid="classvrv_1_1_object_1a6ad51ecc97faf69c8fa8432a780aed44" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>operator=</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a29f1291f341cd2fd6b4d3351d0db3330" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>ObjectListInterface</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1abd871c40f32f79e61d3001dce73277b2" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>ObjectListInterface</name></member>
+      <member refid="classvrv_1_1_object_1a6ad51ecc97faf69c8fa8432a780aed44" prot="public" virt="non-virtual" ambiguityscope="vrv::"><scope>vrv::TabGrp</scope><name>operator=</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1ac286d029a9ee5021f0f40c8bec72fce0" prot="public" virt="non-virtual" ambiguityscope="vrv::ObjectListInterface::"><scope>vrv::TabGrp</scope><name>operator=</name></member>
       <member refid="classvrv_1_1_layer_element_1ac6ff2d83bca4e2a69820fb9edd2e8b6e" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>PrepareCrossStaff</name></member>
       <member refid="classvrv_1_1_layer_element_1a55dc696b80e010d43afc80ab50188be7" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>PrepareCrossStaffEnd</name></member>
       <member refid="classvrv_1_1_layer_element_1aa93e89c2df59f5c6c8d345d680fce3ae" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>PrepareDelayedTurns</name></member>
@@ -939,6 +1057,7 @@
       <member refid="classvrv_1_1_object_1ac5b28a8625980d057d6cad83dbd52e26" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>ResetCachedDrawingY</name></member>
       <member refid="classvrv_1_1_layer_element_1a3b2b4adef231d2ab871ad026eb2a113c" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>ResetDrawing</name></member>
       <member refid="classvrv_1_1_layer_element_1a62ee63787cce3a0f9fee037d3dde4e3a" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>ResetHorizontalAlignment</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1ab5637423219e7de94ef81b7169a8ace1" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>ResetList</name></member>
       <member refid="classvrv_1_1_object_1a5d22ebda01e0b254c13d558f5ffdb098" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>ResetParent</name></member>
       <member refid="classvrv_1_1_object_1aadeb99ea27241a64bf942e469a04445e" prot="public" virt="non-virtual"><scope>vrv::TabGrp</scope><name>ResetUuid</name></member>
       <member refid="classvrv_1_1_layer_element_1a2113b58c7c7565cd38c7e9260e7ee041" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>ResetVerticalAlignment</name></member>
@@ -1009,6 +1128,7 @@
       <member refid="classvrv_1_1_layer_element_1a7bd87c91c7e394f0299a6b9a3b6d6d9a" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>~LayerElement</name></member>
       <member refid="classvrv_1_1_linking_interface_1a228d75ecb1fef240f421b1fad7c45a64" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>~LinkingInterface</name></member>
       <member refid="classvrv_1_1_object_1a350424e9cf31d3b7d1bb5f5754944401" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>~Object</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a44118ef8dc2eeb97fff1a68127bd55f4" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>~ObjectListInterface</name></member>
       <member refid="classvrv_1_1_tab_grp_1a7dd4d52ae860d55b27b0fb2098eecf60" prot="public" virt="virtual"><scope>vrv::TabGrp</scope><name>~TabGrp</name></member>
     </listofallmembers>
   </compounddef>

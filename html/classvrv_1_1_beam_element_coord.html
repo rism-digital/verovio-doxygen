@@ -128,6 +128,9 @@ data_BEAMPLACE&#160;</td><td class="memItemRight" valign="bottom"><b>m_partialFl
 <tr class="memitem:ac90293b4815f8f90c2c46f7d8d9c53ad"><td class="memItemLeft" align="right" valign="top"><a id="ac90293b4815f8f90c2c46f7d8d9c53ad"></a>
 <a class="el" href="classvrv_1_1_note.html">Note</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_closestNote</b></td></tr>
 <tr class="separator:ac90293b4815f8f90c2c46f7d8d9c53ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87b8c722e99d658486232481f61979c2"><td class="memItemLeft" align="right" valign="top"><a id="a87b8c722e99d658486232481f61979c2"></a>
+<a class="el" href="classvrv_1_1_tab_dur_sym.html">TabDurSym</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_tabDurSym</b></td></tr>
+<tr class="separator:a87b8c722e99d658486232481f61979c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7979d8a8efc9eb48ceeab93b051cf9b9"><td class="memItemLeft" align="right" valign="top"><a id="a7979d8a8efc9eb48ceeab93b051cf9b9"></a>
 <a class="el" href="classvrv_1_1_stem.html">Stem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_stem</b></td></tr>
 <tr class="separator:a7979d8a8efc9eb48ceeab93b051cf9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,16 +146,25 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BeamElementCoord<
 <tr class="memitem:a221c845016f2e6e5626a38d1dfeb125e"><td class="memItemLeft" align="right" valign="top"><a id="a221c845016f2e6e5626a38d1dfeb125e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDrawingStemDir</b> (data_STEMDIRECTION stemDir, <a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff, <a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="el" href="classvrv_1_1_beam_segment.html">BeamSegment</a> *segment, <a class="el" href="classvrv_1_1_beam_drawing_interface.html">BeamDrawingInterface</a> *interface)</td></tr>
 <tr class="separator:a221c845016f2e6e5626a38d1dfeb125e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0044982fdb6e6ea657fcfbed5ccaa019"><td class="memItemLeft" align="right" valign="top"><a id="a0044982fdb6e6ea657fcfbed5ccaa019"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetClosestNote</b> (data_STEMDIRECTION stemDir)</td></tr>
-<tr class="separator:a0044982fdb6e6ea657fcfbed5ccaa019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd402f9d51ce8ecc55ab130c148e3c27"><td class="memItemLeft" align="right" valign="top"><a id="abd402f9d51ce8ecc55ab130c148e3c27"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beam_element_coord.html#abd402f9d51ce8ecc55ab130c148e3c27">SetClosestNoteOrTabDurSym</a> (data_STEMDIRECTION stemDir, bool outsideStaff)</td></tr>
+<tr class="memdesc:abd402f9d51ce8ecc55ab130c148e3c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the note or closest note for chord or tabdursym for tablature beams placed outside the staff. <br /></td></tr>
+<tr class="separator:abd402f9d51ce8ecc55ab130c148e3c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15a0938f038bf759f9cd441dbd574c50"><td class="memItemLeft" align="right" valign="top"><a id="a15a0938f038bf759f9cd441dbd574c50"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateStemLength</b> (<a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff, data_STEMDIRECTION stemDir, bool isHorizontal)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beam_element_coord.html#a15a0938f038bf759f9cd441dbd574c50">CalculateStemLength</a> (<a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff, data_STEMDIRECTION stemDir, bool isHorizontal)</td></tr>
+<tr class="memdesc:a15a0938f038bf759f9cd441dbd574c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Heleper for calculating the stem length for staff notation and tablature beams within the staff. <br /></td></tr>
 <tr class="separator:a15a0938f038bf759f9cd441dbd574c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af99dadbfe0fbde5689c2ff2c4d5d2260"><td class="memItemLeft" align="right" valign="top"><a id="af99dadbfe0fbde5689c2ff2c4d5d2260"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beam_element_coord.html#af99dadbfe0fbde5689c2ff2c4d5d2260">CalculateStemLengthTab</a> (<a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff, data_STEMDIRECTION stemDir)</td></tr>
+<tr class="memdesc:af99dadbfe0fbde5689c2ff2c4d5d2260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for calculating the stem length for tablature beam placed outside the staff. <br /></td></tr>
+<tr class="separator:af99dadbfe0fbde5689c2ff2c4d5d2260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab617877f2f3d15895b19ea2e3e6d4516"><td class="memItemLeft" align="right" valign="top"><a id="ab617877f2f3d15895b19ea2e3e6d4516"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beam_element_coord.html#ab617877f2f3d15895b19ea2e3e6d4516">CalculateStemModAdjustment</a> (int stemLength, int directionBias)</td></tr>
 <tr class="memdesc:ab617877f2f3d15895b19ea2e3e6d4516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return stem length adjustment in half units, depending on the @stem.mode attribute. <br /></td></tr>
 <tr class="separator:ab617877f2f3d15895b19ea2e3e6d4516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93940155d8a91b590cc29bcda00ec8ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvrv_1_1_stemmed_drawing_interface.html">StemmedDrawingInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beam_element_coord.html#a93940155d8a91b590cc29bcda00ec8ec">GetStemHolderInterface</a> ()</td></tr>
+<tr class="memdesc:a93940155d8a91b590cc29bcda00ec8ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to get the <a class="el" href="classvrv_1_1_stemmed_drawing_interface.html" title="This class is an interface for MEI stemmed element.">StemmedDrawingInterface</a> associated with the m_element (if any) Return the <a class="el" href="classvrv_1_1_chord.html" title="This class represents a collection of notes in the same layer with the same onset time.">Chord</a> or <a class="el" href="classvrv_1_1_note.html" title="This class models the MEI &lt;note&gt; element.">Note</a> interface if the element if of that type.  <a href="classvrv_1_1_beam_element_coord.html#a93940155d8a91b590cc29bcda00ec8ec">More...</a><br /></td></tr>
+<tr class="separator:a93940155d8a91b590cc29bcda00ec8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab840311185d74d49af8357f0d2909db6"></a>
@@ -175,6 +187,26 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 
 </div>
 </div>
+<a id="a93940155d8a91b590cc29bcda00ec8ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93940155d8a91b590cc29bcda00ec8ec">&#9670;&nbsp;</a></span>GetStemHolderInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvrv_1_1_stemmed_drawing_interface.html">StemmedDrawingInterface</a>* vrv::BeamElementCoord::GetStemHolderInterface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper to get the <a class="el" href="classvrv_1_1_stemmed_drawing_interface.html" title="This class is an interface for MEI stemmed element.">StemmedDrawingInterface</a> associated with the m_element (if any) Return the <a class="el" href="classvrv_1_1_chord.html" title="This class represents a collection of notes in the same layer with the same onset time.">Chord</a> or <a class="el" href="classvrv_1_1_note.html" title="This class models the MEI &lt;note&gt; element.">Note</a> interface if the element if of that type. </p>
+<p>Return the <a class="el" href="classvrv_1_1_tab_dur_sym.html" title="This class models the MEI &lt;tabDurSym&gt; element.">TabDurSym</a> interface if the element is TabDurGrp and has a <a class="el" href="classvrv_1_1_tab_dur_sym.html" title="This class models the MEI &lt;tabDurSym&gt; element.">TabDurSym</a> descendant. Return NULL otherwise. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="beam_8h_source.html">beam.h</a></li>
 </ul>
@@ -184,7 +216,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_beam_element_coord.html">BeamElementCoord</a></li>
-    <li class="footer">Generated on Fri Feb 11 2022 08:52:14 for Verovio by
+    <li class="footer">Generated on Fri Feb 11 2022 09:04:55 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

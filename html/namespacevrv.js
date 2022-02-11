@@ -318,6 +318,7 @@ var namespacevrv =
     [ "SystemElement", "classvrv_1_1_system_element.html", "classvrv_1_1_system_element" ],
     [ "SystemMilestoneEnd", "classvrv_1_1_system_milestone_end.html", "classvrv_1_1_system_milestone_end" ],
     [ "SystemMilestoneInterface", "classvrv_1_1_system_milestone_interface.html", "classvrv_1_1_system_milestone_interface" ],
+    [ "TabCourseSort", "classvrv_1_1_tab_course_sort.html", "classvrv_1_1_tab_course_sort" ],
     [ "TabDurSym", "classvrv_1_1_tab_dur_sym.html", "classvrv_1_1_tab_dur_sym" ],
     [ "TabGrp", "classvrv_1_1_tab_grp.html", "classvrv_1_1_tab_grp" ],
     [ "Tempo", "classvrv_1_1_tempo.html", "classvrv_1_1_tempo" ],

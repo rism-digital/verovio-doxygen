@@ -3,6 +3,7 @@
   <compounddef id="classvrv_1_1_tab_dur_sym" kind="class" language="C++" prot="public">
     <compoundname>vrv::TabDurSym</compoundname>
     <basecompoundref refid="classvrv_1_1_layer_element" prot="public" virt="non-virtual">vrv::LayerElement</basecompoundref>
+    <basecompoundref refid="classvrv_1_1_stemmed_drawing_interface" prot="public" virt="non-virtual">vrv::StemmedDrawingInterface</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">AttNNumberLike</basecompoundref>
     <includes refid="tabdursym_8h" local="no">tabdursym.h</includes>
       <sectiondef kind="user-defined">
@@ -20,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="30" column="5"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="31" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_tab_dur_sym_1aecf7bfb050098a92f34dc22c8fbd075c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -33,23 +34,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="31" column="13"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="32" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_tab_dur_sym_1adbcbfec64d9b682d161c8448f0ecfde1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
         <definition>void vrv::TabDurSym::Reset</definition>
         <argsstring>() override</argsstring>
         <name>Reset</name>
-        <reimplements refid="classvrv_1_1_layer_element_1a6cc22ea81270327ac7b87a5a3c20216e">Reset</reimplements>
+        <reimplements refid="classvrv_1_1_stemmed_drawing_interface_1a43de0958ac09bc7ca279377ad7dd490e">Reset</reimplements>
         <briefdescription>
-<para>Virtual reset method. </para>
         </briefdescription>
         <detaileddescription>
-<para>Needs to be overridden in child classes. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="32" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="33" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_tab_dur_sym_1a46660090388ff3a6a2236a13b08ad638" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
@@ -63,7 +62,102 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="33" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" bodystart="33" bodyend="33"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="34" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Getter to interfaces</header>
+      <memberdef kind="function" id="classvrv_1_1_tab_dur_sym_1a6a846a4d4e931838c6781bc8979410d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classvrv_1_1_stemmed_drawing_interface" kindref="compound">StemmedDrawingInterface</ref> *</type>
+        <definition>StemmedDrawingInterface* vrv::TabDurSym::GetStemmedDrawingInterface</definition>
+        <argsstring>() override</argsstring>
+        <name>GetStemmedDrawingInterface</name>
+        <reimplements refid="classvrv_1_1_object_1a8f790811faa78e214ba76d2a728fa8e5">GetStemmedDrawingInterface</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="41" column="29" bodyfile="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" bodystart="41" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_tab_dur_sym_1ae0bb480d7bdcaf4d1f201b20df103254" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classvrv_1_1_point" kindref="compound">Point</ref></type>
+        <definition>Point vrv::TabDurSym::GetStemUpSE</definition>
+        <argsstring>(Doc *doc, int staffSize, bool isCueSize) override</argsstring>
+        <name>GetStemUpSE</name>
+        <reimplements refid="classvrv_1_1_stemmed_drawing_interface_1afed6feb80c4e66444c201f5f210efd5d">GetStemUpSE</reimplements>
+        <param>
+          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <declname>doc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>staffSize</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isCueSize</declname>
+        </param>
+        <briefdescription>
+<para>Get the stem up / stem down attachment point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If necessary look at the glyph anchor (if any). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="65" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_tab_dur_sym_1a681fe8fa273d34b9717afd3362ad31ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classvrv_1_1_point" kindref="compound">Point</ref></type>
+        <definition>Point vrv::TabDurSym::GetStemDownNW</definition>
+        <argsstring>(Doc *doc, int staffSize, bool isCueSize) override</argsstring>
+        <name>GetStemDownNW</name>
+        <reimplements refid="classvrv_1_1_stemmed_drawing_interface_1aa0f48d7eae7644a8fd4734f6652d65e7">GetStemDownNW</reimplements>
+        <param>
+          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <declname>doc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>staffSize</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isCueSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="66" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_tab_dur_sym_1a91f06b010e2c2479196e2007a66d2898" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int vrv::TabDurSym::CalcStemLenInThirdUnits</definition>
+        <argsstring>(Staff *staff, data_STEMDIRECTION stemDir) override</argsstring>
+        <name>CalcStemLenInThirdUnits</name>
+        <reimplements refid="classvrv_1_1_stemmed_drawing_interface_1ab518eec8db36e95d691419f557bcf45a">CalcStemLenInThirdUnits</reimplements>
+        <param>
+          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <declname>staff</declname>
+        </param>
+        <param>
+          <type>data_STEMDIRECTION</type>
+          <declname>stemDir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="67" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -80,7 +174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="37" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" bodystart="37" bodyend="37"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="48" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" bodystart="48" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_tab_dur_sym_1a2d7ba2c667df361c9dcda9df8b75093a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -99,7 +193,87 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="42" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="53" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_tab_dur_sym_1a3d84edc997ae622affddd9f02ae1ce3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void vrv::TabDurSym::AddChild</definition>
+        <argsstring>(Object *object) override</argsstring>
+        <name>AddChild</name>
+        <reimplements refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948">AddChild</reimplements>
+        <param>
+          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>Overwritten method for note. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_tab_dur_sym_1acd0f9d33daea15aaf81b195c245835d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::TabDurSym::AdjustDrawingYRel</definition>
+        <argsstring>(Staff *staff, Doc *doc)</argsstring>
+        <name>AdjustDrawingYRel</name>
+        <param>
+          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <declname>staff</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Adjust the drawing y relative value for <ref refid="classvrv_1_1_tab_dur_sym" kindref="compound">TabDurSym</ref> placed below the staff. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The value is originally set in LayerElement::SetAlignmentPosPitch. However, setting it below the staff for a <ref refid="classvrv_1_1_tab_dur_sym" kindref="compound">TabDurSym</ref> can be done only once the stem direction has been determined. This is why we have this method called from Beam::CalcTabBeamPlace </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="77" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_tab_dur_sym_1aae099410ce22b4f784bb9d22a6502b57" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int vrv::TabDurSym::PrepareLayerElementParts</definition>
+        <argsstring>(FunctorParams *functorParams) override</argsstring>
+        <name>PrepareLayerElementParts</name>
+        <reimplements refid="classvrv_1_1_object_1a211bdcbc97d6e6eb1b39266d38fea6ef">PrepareLayerElementParts</reimplements>
+        <param>
+          <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
+          <declname>functorParams</declname>
+        </param>
+        <briefdescription>
+<para>See <ref refid="classvrv_1_1_object_1a211bdcbc97d6e6eb1b39266d38fea6ef" kindref="member">Object::PrepareLayerElementParts</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="86" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_tab_dur_sym_1a00e3d8e47dc0f378f028b6e46fd7dcdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int vrv::TabDurSym::CalcStem</definition>
+        <argsstring>(FunctorParams *functorParams) override</argsstring>
+        <name>CalcStem</name>
+        <reimplements refid="classvrv_1_1_object_1a0b93f8b6e02c8ba98a03db67fe5d5d10">CalcStem</reimplements>
+        <param>
+          <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
+          <declname>functorParams</declname>
+        </param>
+        <briefdescription>
+<para>See <ref refid="classvrv_1_1_object_1a0b93f8b6e02c8ba98a03db67fe5d5d10" kindref="member">Object::CalcStem</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="91" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -132,6 +306,10 @@
         <childnode refid="9" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="13">
+        <label>vrv::StemmedDrawingInterface</label>
+        <link refid="classvrv_1_1_stemmed_drawing_interface"/>
+      </node>
       <node id="12">
         <label>AttTyped</label>
       </node>
@@ -145,6 +323,8 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
         <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="public-inheritance">
         </childnode>
       </node>
       <node id="6">
@@ -174,7 +354,7 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13">
+      <node id="14">
         <label>AttNNumberLike</label>
       </node>
       <node id="11">
@@ -227,6 +407,13 @@
         <childnode refid="24" relation="public-inheritance">
         </childnode>
         <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>vrv::StemmedDrawingInterface</label>
+        <link refid="classvrv_1_1_stemmed_drawing_interface"/>
+        <childnode refid="43" relation="usage">
+          <edgelabel>m_drawingStem</edgelabel>
         </childnode>
       </node>
       <node id="21">
@@ -295,6 +482,8 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
         <childnode refid="42" relation="public-inheritance">
+        </childnode>
+        <childnode refid="47" relation="public-inheritance">
         </childnode>
       </node>
       <node id="6">
@@ -365,6 +554,9 @@
         <label>vrv::StaffDefDrawingInterface</label>
         <link refid="classvrv_1_1_staff_def_drawing_interface"/>
       </node>
+      <node id="45">
+        <label>AttStems</label>
+      </node>
       <node id="22">
         <label>vrv::StaffDef</label>
         <link refid="classvrv_1_1_staff_def"/>
@@ -406,6 +598,9 @@
       <node id="25">
         <label>AttDurationDefault</label>
       </node>
+      <node id="44">
+        <label>AttGraced</label>
+      </node>
       <node id="41">
         <label>vrv::Alignment</label>
         <link refid="classvrv_1_1_alignment"/>
@@ -418,10 +613,25 @@
       <node id="37">
         <label>AttStaffDefLog</label>
       </node>
+      <node id="46">
+        <label>AttStemsCmn</label>
+      </node>
       <node id="3">
         <label>vrv::Object</label>
         <link refid="classvrv_1_1_object"/>
         <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>vrv::Stem</label>
+        <link refid="classvrv_1_1_stem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+        <childnode refid="46" relation="public-inheritance">
         </childnode>
       </node>
       <node id="27">
@@ -437,16 +647,16 @@
       <node id="39">
         <label>AttTimeBase</label>
       </node>
-      <node id="42">
+      <node id="47">
         <label>AttNNumberLike</label>
       </node>
       <node id="11">
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="23" column="59" bodyfile="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" bodystart="23" bodyend="56"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" line="24" column="91" bodyfile="/home/runner/work/verovio/verovio/include/vrv/tabdursym.h" bodystart="24" bodyend="101"/>
     <listofallmembers>
-      <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>AddChild</name></member>
+      <member refid="classvrv_1_1_tab_dur_sym_1a3d84edc997ae622affddd9f02ae1ce3c" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>AddChild</name></member>
       <member refid="classvrv_1_1_object_1a1af968d5140f79fd056aa5a46d7cad11" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>AddLayerElementToFlatList</name></member>
       <member refid="classvrv_1_1_object_1a08855458e45646f3831f2edf7c8a77e0" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>AdjustAccidX</name></member>
       <member refid="classvrv_1_1_object_1a9a7ac871bbd388bc57ad3efbcd5523e4" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>AdjustArpeg</name></member>
@@ -460,6 +670,7 @@
       <member refid="classvrv_1_1_object_1abeee6db6564ff37f1fd686033751d51f" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>AdjustCrossStaffYPos</name></member>
       <member refid="classvrv_1_1_layer_element_1a2e366143db259d1c17bc966d8f1a3254" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>AdjustDots</name></member>
       <member refid="classvrv_1_1_object_1ae0790c79940de6c0bd58e9022043b493" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>AdjustDotsEnd</name></member>
+      <member refid="classvrv_1_1_tab_dur_sym_1acd0f9d33daea15aaf81b195c245835d5" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>AdjustDrawingYRel</name></member>
       <member refid="classvrv_1_1_object_1a757300b40f61c72a86c66fe9df7f8b5d" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>AdjustFloatingPositionerGrps</name></member>
       <member refid="classvrv_1_1_object_1a3b246662209d352732e6f3018efe7748" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>AdjustFloatingPositioners</name></member>
       <member refid="classvrv_1_1_object_1aa7b805cd96f7dc63c47c640d01dd9954" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>AdjustFloatingPositionersBetween</name></member>
@@ -519,7 +730,8 @@
       <member refid="classvrv_1_1_bounding_box_1acf2951ebea74c27b024916a4c96480a5" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>CalcPointAtBezier</name></member>
       <member refid="classvrv_1_1_bounding_box_1a80465f84c7190f8cb0a9765693376be2" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>CalcPositionAfterRotation</name></member>
       <member refid="classvrv_1_1_bounding_box_1a98f3d30610a0063965fcac7ec265ef27" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>CalcSlope</name></member>
-      <member refid="classvrv_1_1_object_1a0b93f8b6e02c8ba98a03db67fe5d5d10" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>CalcStem</name></member>
+      <member refid="classvrv_1_1_tab_dur_sym_1a00e3d8e47dc0f378f028b6e46fd7dcdb" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>CalcStem</name></member>
+      <member refid="classvrv_1_1_tab_dur_sym_1a91f06b010e2c2479196e2007a66d2898" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>CalcStemLenInThirdUnits</name></member>
       <member refid="classvrv_1_1_bounding_box_1ae087d56d7ff270c908e3a723be01f6e7" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>CalcThickBezier</name></member>
       <member refid="classvrv_1_1_object_1ae1320bf0b5a56f033dcc561147225ba7" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>CastOffEncoding</name></member>
       <member refid="classvrv_1_1_object_1af4bdf6d63a5fbf43a21a5c18d3c49a10" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>CastOffPages</name></member>
@@ -617,6 +829,11 @@
       <member refid="classvrv_1_1_layer_element_1ae0892552c2a0397e84024139a0292f6f" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>GetDrawingCueSize</name></member>
       <member refid="classvrv_1_1_layer_element_1ac0a98f1ac5226eadda933521399eccb4" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>GetDrawingRadius</name></member>
       <member refid="classvrv_1_1_facsimile_interface_1a2e3d8694d94a66c6784f844c1f883a90" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>GetDrawingRotate</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1a0dd608248567f09598a5bf79502c6df2" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>GetDrawingStem</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1a0e66eb68b203977a9f02aa25fd281fc1" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>GetDrawingStemDir</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1abb143107baeb30b8a651005be5631482" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>GetDrawingStemEnd</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1aa990dc55c67926e2b841b858667a46d2" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>GetDrawingStemLen</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1a1f7c5905a415b9b1e59766d2fe04479c" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>GetDrawingStemStart</name></member>
       <member refid="classvrv_1_1_layer_element_1a53b2786e42e0bd66c8ac5eb04258c88a" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>GetDrawingTop</name></member>
       <member refid="classvrv_1_1_layer_element_1a18ae9ace02986235dfe89b03d1e2ebf4" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>GetDrawingX</name></member>
       <member refid="classvrv_1_1_layer_element_1a0587b46544f84d658158e7e521e6ae45" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>GetDrawingXRel</name></member>
@@ -661,7 +878,9 @@
       <member refid="classvrv_1_1_bounding_box_1a025b101dd81de0a3802ba5ac2a86f9c5" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>GetSelfX2</name></member>
       <member refid="classvrv_1_1_bounding_box_1ad958652328dd6762612727f064f56b3c" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>GetSelfY1</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7ba0ddf13040f3747a7421232c9bc21d" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>GetSelfY2</name></member>
-      <member refid="classvrv_1_1_object_1a8f790811faa78e214ba76d2a728fa8e5" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>GetStemmedDrawingInterface</name></member>
+      <member refid="classvrv_1_1_tab_dur_sym_1a681fe8fa273d34b9717afd3362ad31ba" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>GetStemDownNW</name></member>
+      <member refid="classvrv_1_1_tab_dur_sym_1a6a846a4d4e931838c6781bc8979410d2" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>GetStemmedDrawingInterface</name></member>
+      <member refid="classvrv_1_1_tab_dur_sym_1ae0bb480d7bdcaf4d1f201b20df103254" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>GetStemUpSE</name></member>
       <member refid="classvrv_1_1_facsimile_interface_1af64a523941de42e832c352d6a50124d5" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>GetSurfaceY</name></member>
       <member refid="classvrv_1_1_object_1ac2308546f247b47d6fdaaf0e90490fa5" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>GetTextDirInterface</name></member>
       <member refid="classvrv_1_1_object_1a738ca662cfaa09bb0122966cb29b43c6" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>GetTimePointInterface</name></member>
@@ -752,6 +971,7 @@
       <member refid="classvrv_1_1_layer_element_1a93464f5da77d7acbf8565d6a70b47e91" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>m_crossLayer</name></member>
       <member refid="classvrv_1_1_layer_element_1af61467813ceb6c74c05b55484007c48b" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>m_crossStaff</name></member>
       <member refid="classvrv_1_1_layer_element_1a98868bde8bc6d40dbfc9b0fb5632354f" prot="protected" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>m_drawingCueSize</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1ab55442afdb100573dc6b84d7563edf00" prot="protected" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>m_drawingStem</name></member>
       <member refid="classvrv_1_1_layer_element_1a592cebc1769e23ff79403a675a923c65" prot="protected" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>m_drawingXRel</name></member>
       <member refid="classvrv_1_1_layer_element_1a33f69b421d5fbe77c6e89e2da3e46b3b" prot="protected" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>m_drawingYRel</name></member>
       <member refid="classvrv_1_1_layer_element_1a6ee0bb4018d8ba684437586512ff4136" prot="protected" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>m_graceAlignment</name></member>
@@ -774,7 +994,7 @@
       <member refid="classvrv_1_1_object_1ac75af86dda467af7ae8d928c83b1a7c8" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>PrepareFacsimile</name></member>
       <member refid="classvrv_1_1_object_1af6ece837a732f054019b9230c59d8701" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>PrepareFloatingGrps</name></member>
       <member refid="classvrv_1_1_object_1ac9850da37f019eae12da8c42776e67b8" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>PrepareFloatingGrpsEnd</name></member>
-      <member refid="classvrv_1_1_object_1a211bdcbc97d6e6eb1b39266d38fea6ef" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>PrepareLayerElementParts</name></member>
+      <member refid="classvrv_1_1_tab_dur_sym_1aae099410ce22b4f784bb9d22a6502b57" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>PrepareLayerElementParts</name></member>
       <member refid="classvrv_1_1_object_1a506499857fa99ad918b7c236670acaf2" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>PrepareLinking</name></member>
       <member refid="classvrv_1_1_object_1a1bda4d7b151d3ceb49e8dcf2a6b4474e" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>PrepareLyrics</name></member>
       <member refid="classvrv_1_1_object_1a93eb8a93ec7ea199f54a59b8139e1a38" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>PrepareLyricsEnd</name></member>
@@ -835,6 +1055,9 @@
       <member refid="classvrv_1_1_object_1a3a95154b135f78a323dafdfec2a76e2d" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>SetCautionaryScoreDef</name></member>
       <member refid="classvrv_1_1_object_1af0db1dd88b7d2f6c9068934312ce86c8" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>SetClosingComment</name></member>
       <member refid="classvrv_1_1_object_1a3b47aa3445a48e681db41607cedcd4b4" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>SetComment</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1a9ca145a07c1cfbaebe601f1308c591e8" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>SetDrawingStem</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1aa6ca072d56e6db65adf4ea7ef1600fa5" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>SetDrawingStemDir</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1ad3647b086385d8f6586a6d140c1198c1" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>SetDrawingStemLen</name></member>
       <member refid="classvrv_1_1_layer_element_1af14973423c50d4a301799acafee56877" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>SetDrawingXRel</name></member>
       <member refid="classvrv_1_1_layer_element_1adb18b12c6bfd3cc96d9b310a89b9e9bf" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>SetDrawingYRel</name></member>
       <member refid="classvrv_1_1_bounding_box_1ade8f7ad2283b156a2c7934c4055bd8bf" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>SetEmptyBB</name></member>
@@ -853,6 +1076,7 @@
       <member refid="classvrv_1_1_object_1a6c529b9574392b6c2baeaf8470e2a989" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>sortByUlx</name></member>
       <member refid="classvrv_1_1_object_1aa8caf0942b1ff1c02f6f8e879397ca21" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>SortChildren</name></member>
       <member refid="classvrv_1_1_object_1ac97807a0dabfdf0d1d483f7f3e9427f9" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>StableSort</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1a4783f03287943c8c371446d5a833f378" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>StemmedDrawingInterface</name></member>
       <member refid="classvrv_1_1_bounding_box_1a6a5b0a558c2799d3216a62a352eec938" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>Swap</name></member>
       <member refid="classvrv_1_1_bounding_box_1a316a3efda8b19590914f3c4e736d2323" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>SwapPoints</name></member>
       <member refid="classvrv_1_1_object_1af4f98c391b356cf51597e4777bf31185" prot="public" virt="non-virtual"><scope>vrv::TabDurSym</scope><name>SwapUuid</name></member>
@@ -874,6 +1098,7 @@
       <member refid="classvrv_1_1_layer_element_1a7bd87c91c7e394f0299a6b9a3b6d6d9a" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>~LayerElement</name></member>
       <member refid="classvrv_1_1_linking_interface_1a228d75ecb1fef240f421b1fad7c45a64" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>~LinkingInterface</name></member>
       <member refid="classvrv_1_1_object_1a350424e9cf31d3b7d1bb5f5754944401" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>~Object</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1a846549fb2b39c08115223645a8cf1a6f" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>~StemmedDrawingInterface</name></member>
       <member refid="classvrv_1_1_tab_dur_sym_1aecf7bfb050098a92f34dc22c8fbd075c" prot="public" virt="virtual"><scope>vrv::TabDurSym</scope><name>~TabDurSym</name></member>
     </listofallmembers>
   </compounddef>

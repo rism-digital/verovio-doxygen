@@ -26,6 +26,7 @@ var classvrv_1_1_layer =
     [ "GetCurrentKeySig", "classvrv_1_1_layer.html#a804534748739a79629bea8aad2fb0a7d", null ],
     [ "GetCurrentMensur", "classvrv_1_1_layer.html#ab38c334c5c2992d3ec0a7c28d30c9769", null ],
     [ "GetCurrentMeterSig", "classvrv_1_1_layer.html#a2c1b9c6a1db1dde1688fc668afeb4306", null ],
+    [ "GetDrawingStemDir", "classvrv_1_1_layer.html#af71aa62ee9cde4f16a1d2a504c8845c7", null ],
     [ "GetDrawingStemDir", "classvrv_1_1_layer.html#a9384a5e86b46e31c7fb07d98d6583107", null ],
     [ "GetDrawingStemDir", "classvrv_1_1_layer.html#ac9cff14271883d9b18f0e14a4b56a1d8", null ],
     [ "GetLayerCountForTimeSpanOf", "classvrv_1_1_layer.html#a63a9e22b4ed9ae96df451eadadad1b6b", null ],
