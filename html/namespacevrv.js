@@ -53,6 +53,8 @@ var namespacevrv =
     [ "BeamDrawingInterface", "classvrv_1_1_beam_drawing_interface.html", "classvrv_1_1_beam_drawing_interface" ],
     [ "BeamElementCoord", "classvrv_1_1_beam_element_coord.html", "classvrv_1_1_beam_element_coord" ],
     [ "BeamSegment", "classvrv_1_1_beam_segment.html", "classvrv_1_1_beam_segment" ],
+    [ "BeamSpan", "classvrv_1_1_beam_span.html", "classvrv_1_1_beam_span" ],
+    [ "BeamSpanSegment", "classvrv_1_1_beam_span_segment.html", "classvrv_1_1_beam_span_segment" ],
     [ "BeatRpt", "classvrv_1_1_beat_rpt.html", "classvrv_1_1_beat_rpt" ],
     [ "BezierCurve", "classvrv_1_1_bezier_curve.html", "classvrv_1_1_bezier_curve" ],
     [ "BoundingBox", "classvrv_1_1_bounding_box.html", "classvrv_1_1_bounding_box" ],

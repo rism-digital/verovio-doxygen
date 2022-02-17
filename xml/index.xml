@@ -769,6 +769,7 @@
     <member refid="classvrv_1_1_beam_drawing_interface_1ac07dedfd9d18a30205ec9cff9ca131ee" kind="variable"><name>m_cueSize</name></member>
     <member refid="classvrv_1_1_beam_drawing_interface_1a2fd80104c32344a1204ec44af858d879" kind="variable"><name>m_crossStaffContent</name></member>
     <member refid="classvrv_1_1_beam_drawing_interface_1afa2c759f832f6e426f6b24fb7d877180" kind="variable"><name>m_crossStaffRel</name></member>
+    <member refid="classvrv_1_1_beam_drawing_interface_1a9da5d57f4094873d109ca24005fb2ee4" kind="variable"><name>m_isSpanningElement</name></member>
     <member refid="classvrv_1_1_beam_drawing_interface_1a1c2a86d493efd23de86b5473dffd1d58" kind="variable"><name>m_shortestDur</name></member>
     <member refid="classvrv_1_1_beam_drawing_interface_1a2f05babb11c16401012d41d811bec77d" kind="variable"><name>m_notesStemDir</name></member>
     <member refid="classvrv_1_1_beam_drawing_interface_1aaff507977c3e0bf620f4c7e9517c0462" kind="variable"><name>m_drawingPlace</name></member>
@@ -868,6 +869,49 @@
     <member refid="classvrv_1_1_beam_segment_1acc2bb920c9ea28583155aba6246c9ae3" kind="function"><name>CalcSetValues</name></member>
     <member refid="classvrv_1_1_beam_segment_1a053b29bb6d141fef48bb7850550d9b7e" kind="function"><name>DoesBeamOverlap</name></member>
     <member refid="classvrv_1_1_beam_segment_1a542190354a639f04ed027e3b3bd8a91e" kind="function"><name>NeedToResetPosition</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_beam_span" kind="class"><name>vrv::BeamSpan</name>
+    <member refid="classvrv_1_1_beam_span_1a1370d4cfffab0fe9a8e8672527fb1476" kind="function"><name>BeamSpan</name></member>
+    <member refid="classvrv_1_1_beam_span_1a90fb9935bc624b4e65313413d98b1abc" kind="function"><name>~BeamSpan</name></member>
+    <member refid="classvrv_1_1_beam_span_1a517b985b3f088f8694392afde8f48d00" kind="function"><name>Clone</name></member>
+    <member refid="classvrv_1_1_beam_span_1ac5726b38ecf3bfd2a8a09ad484cfaa9a" kind="function"><name>Reset</name></member>
+    <member refid="classvrv_1_1_beam_span_1a66e5f24e85ce62d3f04454faa07928ed" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_beam_span_1ae4db293365f649f96d7c47f4efd50075" kind="function"><name>GetPlistInterface</name></member>
+    <member refid="classvrv_1_1_beam_span_1a91b17f1a50690705eeab44c3b4d1cfdb" kind="function"><name>GetTimePointInterface</name></member>
+    <member refid="classvrv_1_1_beam_span_1a7e780ffc204871932f9930394c488c25" kind="function"><name>GetTimeSpanningInterface</name></member>
+    <member refid="classvrv_1_1_beam_span_1a2053121282e970662e8ebc6015af9553" kind="variable"><name>m_beamSegments</name></member>
+    <member refid="classvrv_1_1_beam_span_1a3a5d031737b706b249aa14cdf8c1bc95" kind="variable"><name>m_beamedElements</name></member>
+    <member refid="classvrv_1_1_beam_span_1a13c01b5ae8d057afb4be0513a5afecf6" kind="function"><name>InitBeamSegments</name></member>
+    <member refid="classvrv_1_1_beam_span_1ab2ed5da83b69d9d07dfe84f561debb83" kind="function"><name>ClearBeamSegments</name></member>
+    <member refid="classvrv_1_1_beam_span_1a06352e0c8471427a87c54c26ef3f3367" kind="function"><name>CalcStem</name></member>
+    <member refid="classvrv_1_1_beam_span_1a0d3fa27a54aa9603719145966f6415d1" kind="function"><name>ResolveBeamSpanElements</name></member>
+    <member refid="classvrv_1_1_beam_span_1a648f1e5b1086cb7628962b800dbd19e7" kind="function"><name>ResolveSpanningBeamSpans</name></member>
+    <member refid="classvrv_1_1_beam_span_1affef67d34b6fc874945854937821b80b" kind="function"><name>AddSpanningSegment</name></member>
+    <member refid="classvrv_1_1_beam_span_1aa60295798aee6fade795bcf30ea9630b" kind="function"><name>GetBeamSpanElementList</name></member>
+    <member refid="classvrv_1_1_beam_span_1acdfbfa734609995c2a4041fc2f34bfbc" kind="typedef"><name>SpanIndexVector</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_beam_span_segment" kind="class"><name>vrv::BeamSpanSegment</name>
+    <member refid="classvrv_1_1_beam_span_segment_1aafcea10bb66141ab64681d4d94191adc" kind="function"><name>GetMeasure</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1a4e84b7a56ec2855f07917d57042a1313" kind="function"><name>SetMeasure</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1afa1c8213040dd0aaa867a5d56c41e997" kind="function"><name>GetStaff</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1a5beed131f974663d89eb34d8d5ff9eec" kind="function"><name>SetStaff</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1a1e3992c6a7ea47078a7e87621c23c680" kind="function"><name>GetLayer</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1a3092cedf4f5d9348ccc736b6192975a2" kind="function"><name>SetLayer</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1a31e74866189458afbf7fe7dd130ea6e4" kind="function"><name>GetBeginCoord</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1a0face43198c2e3eaef5678e4f9c9f52c" kind="function"><name>SetBeginCoord</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1a5d031c3ecf5e941455b026dc822399bb" kind="function"><name>GetEndCoord</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1adc3f7ae7212b8cb1584f6a777c7d0702" kind="function"><name>SetEndCoord</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1aeb452897f9114b72fbe690e5da506355" kind="function"><name>SetSpanningType</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1a02a8641c4d06a4db458690da14bdbbc4" kind="function"><name>GetSpanningType</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1a28dd6798ba732504cbdbfd39588d3b29" kind="variable"><name>m_measure</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1a03570828239d41dd1686ea96b30cd579" kind="variable"><name>m_staff</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1ac7e0fde91be2504270a10b0e875bcaff" kind="variable"><name>m_layer</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1a6138c781721dc5d50ddab844ccc33d97" kind="variable"><name>m_begin</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1a2dba215a419dc2d4baeb4092e25bb4d1" kind="variable"><name>m_end</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1abbbc09fa98981c3b91a231fa4b291e5d" kind="variable"><name>m_spanningType</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1a778bb823ddd431ef3d024daa5ff5138c" kind="function"><name>BeamSpanSegment</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1a029a26e03aed683f9cdbad425c2bf4cb" kind="function"><name>~BeamSpanSegment</name></member>
+    <member refid="classvrv_1_1_beam_span_segment_1adda4ff1731fba4c6842144279e70d905" kind="function"><name>AppendSpanningCoordinates</name></member>
   </compound>
   <compound refid="classvrv_1_1_beat_rpt" kind="class"><name>vrv::BeatRpt</name>
     <member refid="classvrv_1_1_beat_rpt_1a829bfa1b73afb255900e51abfef3cc85" kind="function"><name>BeatRpt</name></member>
@@ -3093,6 +3137,7 @@
     <member refid="classvrv_1_1_layer_element_1a6d695a92219be680737010275c9cd282" kind="function"><name>IsInLigature</name></member>
     <member refid="classvrv_1_1_layer_element_1a55dbe63eb131c1a1f00da98fe5f08c9b" kind="function"><name>IsInFTrem</name></member>
     <member refid="classvrv_1_1_layer_element_1a9e5c50f21c91584a2c11ad154344a1b7" kind="function"><name>IsInBeam</name></member>
+    <member refid="classvrv_1_1_layer_element_1a18a441b994205fe34cd9d03a56cda578" kind="function"><name>IsInBeamSpan</name></member>
     <member refid="classvrv_1_1_layer_element_1a2fb9126c18e349cefe4a66479c97f17a" kind="function"><name>GetAlignmentLayerN</name></member>
     <member refid="classvrv_1_1_layer_element_1a3b8755f52f0d0a2758a7bf66bab388b0" kind="function"><name>SetAlignmentLayerN</name></member>
     <member refid="classvrv_1_1_layer_element_1a18ae9ace02986235dfe89b03d1e2ebf4" kind="function"><name>GetDrawingX</name></member>
@@ -3113,6 +3158,7 @@
     <member refid="classvrv_1_1_layer_element_1a66bf79ef721a113ab2e5ff354313fe2e" kind="variable"><name>m_xAbs</name></member>
     <member refid="classvrv_1_1_layer_element_1af61467813ceb6c74c05b55484007c48b" kind="variable"><name>m_crossStaff</name></member>
     <member refid="classvrv_1_1_layer_element_1a93464f5da77d7acbf8565d6a70b47e91" kind="variable"><name>m_crossLayer</name></member>
+    <member refid="classvrv_1_1_layer_element_1a551d3554b1625dfd63d8861c1871068d" kind="variable"><name>m_isInBeamspan</name></member>
     <member refid="classvrv_1_1_layer_element_1aad5569b5dbc43a1fcfba069c58e18ada" kind="variable"><name>m_alignment</name></member>
     <member refid="classvrv_1_1_layer_element_1a6ee0bb4018d8ba684437586512ff4136" kind="variable"><name>m_graceAlignment</name></member>
     <member refid="classvrv_1_1_layer_element_1a33f69b421d5fbe77c6e89e2da3e46b3b" kind="variable"><name>m_drawingYRel</name></member>
@@ -3519,6 +3565,7 @@
     <member refid="classvrv_1_1_m_e_i_input_1a8466dda9e0aeffd982d2280f2d93f99e" kind="function"><name>ReadVerse</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1af8ff59af9c7511fb6044606df30d2aab" kind="function"><name>ReadAnchoredText</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1ae0841d64bd56c118c58973ce1d9f9bd4" kind="function"><name>ReadArpeg</name></member>
+    <member refid="classvrv_1_1_m_e_i_input_1a2df4b7371554e52ffa21d63cf89768c8" kind="function"><name>ReadBeamSpan</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1ac06f49c9d4e41b2472d3e3422d48bc49" kind="function"><name>ReadBracketSpan</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a1fa7a7d6c9c2620a7b018801fda589e7" kind="function"><name>ReadBreath</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1aa517831996c09d67f75ab96ba72902b1" kind="function"><name>ReadCaesura</name></member>
@@ -3592,7 +3639,6 @@
     <member refid="classvrv_1_1_m_e_i_input_1a7711b00f5c7fc0d75734a26be26f7050" kind="function"><name>ReadTimeSpanningInterface</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1aa78bdaf90d3b3d7bad2979b18391ce81" kind="function"><name>ReadFacsimile</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a18bfdca82b94b776259446ab967340cb" kind="function"><name>ReadSurface</name></member>
-    <member refid="classvrv_1_1_m_e_i_input_1a4cb7c74912797c9bb764fc3937de53d0" kind="function"><name>ReadBeamSpanAsBeam</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a86d08afff15842cac17d521ff6ad93b4" kind="function"><name>ReadTupletSpanAsTuplet</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a94900981361d21bf5759ea6dc5c5d912" kind="function"><name>ReadZone</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1aa7148535961e7d8fb89821dde378564c" kind="function"><name>SetMeiUuid</name></member>
@@ -3731,6 +3777,7 @@
     <member refid="classvrv_1_1_m_e_i_output_1a2fe0238c4ab2675b983b655d3e77c1f1" kind="function"><name>WriteTuplet</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a2965157bdc03e52d3f950020e1bc05a2" kind="function"><name>WriteAnchoredText</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1ab34630caa2ea58c25b922e94895df7ec" kind="function"><name>WriteArpeg</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1a2a6f5fdf24b36842069b27cdeda5ff0c" kind="function"><name>WriteBeamSpan</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a7397cd1133d6eac28df6cbeefd26bc7f" kind="function"><name>WriteBracketSpan</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1ab742f75bc5629b2bd2a1e0a0c28da826" kind="function"><name>WriteBreath</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a853d2d3421b590721e5a0e6173b5ef0a" kind="function"><name>WriteCaesura</name></member>
@@ -3978,7 +4025,7 @@
     <member refid="classvrv_1_1_music_xml_input_1a36d0dc466de976a70e82dd28b3b2579d" kind="function"><name>ReadMusicXmlHarmony</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a6b22037cea47c1a24d75c1dc37516906" kind="function"><name>ReadMusicXmlNote</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a396019a3ffda20c80ca434f31da1cfeb" kind="function"><name>ReadMusicXmlPrint</name></member>
-    <member refid="classvrv_1_1_music_xml_input_1a8d7e8c441790b0dc8dcca2fef43b78da" kind="function"><name>ReadMusicXmlBeamsAndTuplets</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1aa1ece3337e7822dd9ff5920bd823fa11" kind="function"><name>ReadMusicXmlBeamsAndTuplets</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a434f2cb69c8521e5c9fe843357ec9793" kind="function"><name>ReadMusicXmlTupletStart</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a93d4e8e72021a096f44db602516ec8c6" kind="function"><name>ReadMusicXmlBeamStart</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a8d6b6f8c4e7c1dbc9a735aa25c4857e4" kind="function"><name>ReadMusicXMLMeterSig</name></member>
@@ -3997,6 +4044,7 @@
     <member refid="classvrv_1_1_music_xml_input_1a330fc2e506889d23a2b78c7b39b8145f" kind="function"><name>CloseTie</name></member>
     <member refid="classvrv_1_1_music_xml_input_1ae0d34d87629c035478eb8dddaec5330d" kind="function"><name>OpenSlur</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a81b7271cfef7f74dcbfb1860ebcef6bf" kind="function"><name>CloseSlur</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a1206dab9e83d936cbd0ed14787eed7d2" kind="function"><name>CloseBeamSpan</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a1723e513370aff33bbd5a08be7ec7e14" kind="function"><name>GetMeterSigGrpValues</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a2511c4232cfe220a0829d566b6669abe" kind="function"><name>GetMrestMeasuresCountBeforeIndex</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a20364c116323dcab9e24858665df79e2" kind="function"><name>IsMultirestMeasure</name></member>
@@ -4052,6 +4100,7 @@
     <member refid="classvrv_1_1_music_xml_input_1a7b477b35471784c8f0265511beac7bf8" kind="variable"><name>m_tieStopStack</name></member>
     <member refid="classvrv_1_1_music_xml_input_1aaac2c3c3c83b808c85fa0dc20110bf8a" kind="variable"><name>m_hairpinStack</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a23eddf8dbce523cce1ff126c9ed2f856" kind="variable"><name>m_hairpinStopStack</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a0504466e0eccc212ba3d671279dc5f29" kind="variable"><name>m_beamspanStack</name></member>
     <member refid="classvrv_1_1_music_xml_input_1ae81a21d760894ccf3806d0858f220ba1" kind="variable"><name>m_bracketStack</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a9488e25e70515cb064b889ae9a35ecc4" kind="variable"><name>m_trillStack</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a905c022904e56d30fdbba8972f196900" kind="variable"><name>m_endingStack</name></member>
@@ -4083,6 +4132,7 @@
     <member refid="classvrv_1_1_music_xml_input_1a71d3de045b3930ce9725caf1cfbdd6c1" kind="function"><name>SelectLayer</name></member>
     <member refid="classvrv_1_1_music_xml_input_1ace8326bce372093e12c51bb734e0cd98" kind="function"><name>SelectLayer</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a5fbe5273544a47af5f1d5ddddb3ed2c6" kind="function"><name>RemoveLastFromStack</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1ad0c5f2883148f310edb73a66b1488380" kind="function"><name>IsInStack</name></member>
     <member refid="classvrv_1_1_music_xml_input_1af4533a1322673a39fd0b14414cf6baa3" kind="function"><name>GetWordsOrDynamicsText</name></member>
     <member refid="classvrv_1_1_music_xml_input_1af6f715e94a7b6af283630fa6cd660438" kind="function"><name>TextRendition</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a7c5b01443404c494ec846d9f3e48966f" kind="function"><name>StyleLabel</name></member>
@@ -4328,6 +4378,8 @@
     <member refid="classvrv_1_1_object_1a4e7525f44aa7c13e45caf42aaa60ae55" kind="function"><name>HorizontalLayoutCache</name></member>
     <member refid="classvrv_1_1_object_1a93b5fe054b2d26fe91ff50a5861fe08c" kind="function"><name>ResolveMIDITies</name></member>
     <member refid="classvrv_1_1_object_1a77d3f2330b109e34f0eff0013aa9eddd" kind="function"><name>PrepareMIDI</name></member>
+    <member refid="classvrv_1_1_object_1af90726fa7efc00d187deae109e55c496" kind="function"><name>ResolveBeamSpanElements</name></member>
+    <member refid="classvrv_1_1_object_1a111fc38e9bf9b8d0c1c672503b82d8b0" kind="function"><name>ResolveSpanningBeamSpans</name></member>
     <member refid="classvrv_1_1_object_1a426081ffba31e4251a2c36ceeb2a43ba" kind="function"><name>GenerateMIDI</name></member>
     <member refid="classvrv_1_1_object_1a7c0a63c225e76daa84e102b7d531d645" kind="function"><name>GenerateMIDIEnd</name></member>
     <member refid="classvrv_1_1_object_1abe889073301d6e1dfe55e725b6532948" kind="function"><name>GenerateTimemap</name></member>
@@ -4410,7 +4462,7 @@
     <member refid="classvrv_1_1_object_1a95acdd9f46d55cf067b567ef11526b68" kind="function"><name>FindDescendantExtremeByComparison</name></member>
     <member refid="classvrv_1_1_object_1a56b1782e737b97f3e3145cbe08296b19" kind="function"><name>FindAllDescendantsByType</name></member>
     <member refid="classvrv_1_1_object_1a02c322a63d089b388e6b122598e88077" kind="function"><name>FindAllDescendantsByComparison</name></member>
-    <member refid="classvrv_1_1_object_1afb04eac4ba10905eeebed4794a8c1dd2" kind="function"><name>FindAllDescendantsBetween</name></member>
+    <member refid="classvrv_1_1_object_1a5c8391e7b1d6d89e26071781184b173d" kind="function"><name>FindAllDescendantsBetween</name></member>
     <member refid="classvrv_1_1_object_1a48ea7a78dfbdf0195235b56679924c76" kind="function"><name>Relinquish</name></member>
     <member refid="classvrv_1_1_object_1a667b4432b8f9d9e92bfd34fe5c885099" kind="function"><name>ClearRelinquishedChildren</name></member>
     <member refid="classvrv_1_1_object_1a0af864d1b64a70d4ec8b62a520114bde" kind="function"><name>ClearChildren</name></member>
@@ -4467,6 +4519,7 @@
     <member refid="classvrv_1_1_object_1a71c3367e232d634a71c2d346dfd9f3d1" kind="function"><name>ScoreDefSetGrpSym</name></member>
     <member refid="classvrv_1_1_object_1ac75af86dda467af7ae8d928c83b1a7c8" kind="function"><name>PrepareFacsimile</name></member>
     <member refid="classvrv_1_1_object_1a4d2903e69118df1b627cb99ecd036948" kind="function"><name>PrepareProcessingLists</name></member>
+    <member refid="classvrv_1_1_object_1a4b0b7354d9d0edaee6df57b40da81f3a" kind="function"><name>ProcessPlist</name></member>
     <member refid="classvrv_1_1_object_1a970e994920769896f253ef174d60a15c" kind="function"><name>PrepareDuration</name></member>
     <member refid="classvrv_1_1_object_1a72def6c07065fa48ad7cd844dd4b2ed5" kind="function"><name>PreparePointersByLayer</name></member>
     <member refid="classvrv_1_1_object_1a211bdcbc97d6e6eb1b39266d38fea6ef" kind="function"><name>PrepareLayerElementParts</name></member>
@@ -5349,7 +5402,7 @@
     <member refid="classvrv_1_1_prepare_milestones_params_1ab8f20dbdcc25e179b1ea73781641e4fc" kind="function"><name>PrepareMilestonesParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_prepare_plist_params" kind="class"><name>vrv::PreparePlistParams</name>
-    <member refid="classvrv_1_1_prepare_plist_params_1a308ee12e349603c67845860c48c4565b" kind="variable"><name>m_interfaceUuidPairs</name></member>
+    <member refid="classvrv_1_1_prepare_plist_params_1a69569db7849f6b243104ace56f300571" kind="variable"><name>m_interfaceUuidTuples</name></member>
     <member refid="classvrv_1_1_prepare_plist_params_1a5efe18cd2a558d878f8e8a20b51363df" kind="variable"><name>m_fillList</name></member>
     <member refid="classvrv_1_1_prepare_plist_params_1a5c8d41e37323972c0266fe666e4f9324" kind="function"><name>PreparePlistParams</name></member>
   </compound>
@@ -7021,6 +7074,7 @@
     <member refid="classvrv_1_1_view_1a4de06c0e43482a358b9ca232d095e689" kind="function"><name>DrawF</name></member>
     <member refid="classvrv_1_1_view_1a0220af899cfe64232a2257afbf9f30cc" kind="function"><name>DrawBeam</name></member>
     <member refid="classvrv_1_1_view_1a2cc270dfd01f43d976d0b9dfe8ee7dd2" kind="function"><name>DrawFTrem</name></member>
+    <member refid="classvrv_1_1_view_1a39c6e83a8d8593fcfd9a6f9083ccfd3a" kind="function"><name>DrawBeamSpan</name></member>
     <member refid="classvrv_1_1_view_1a578b7e223344dce694d64c2fc9f0f5d5" kind="function"><name>DrawSyllable</name></member>
     <member refid="classvrv_1_1_view_1a9ace0083ad59fc48cc9ded56c63d5fb5" kind="function"><name>DrawNc</name></member>
     <member refid="classvrv_1_1_view_1acc3b98f5763865e62aaa97b2ed2f291d" kind="function"><name>DrawNeume</name></member>
@@ -7108,7 +7162,7 @@
     <member refid="classvrv_1_1_view_1a5012b077ef799dbbc711144b6c15eea9" kind="variable"><name>m_pageIdx</name></member>
     <member refid="classvrv_1_1_view_1a0151299a3395da27a27021ffd9650068" kind="function"><name>CalcBrevisPoints</name></member>
     <member refid="classvrv_1_1_view_1a370fc586549b14db6754bb78de7d03f6" kind="function"><name>CalcObliquePoints</name></member>
-    <member refid="classvrv_1_1_view_1a81248345df92a1a187cfea40d0f36496" kind="function"><name>DrawBeamSegment</name></member>
+    <member refid="classvrv_1_1_view_1a122726cbe7d8e4200c3c8fd80209c8ad" kind="function"><name>DrawBeamSegment</name></member>
     <member refid="classvrv_1_1_view_1a1b0bcfe4162c325a98cb8114dcbd8f61" kind="function"><name>HasValidTimeSpanningOrder</name></member>
     <member refid="classvrv_1_1_view_1a7b338585e0439435ea519a4e81129f79" kind="variable"><name>m_currentElement</name></member>
     <member refid="classvrv_1_1_view_1abc6c98adea6459f04ed99de19ca71416" kind="variable"><name>m_currentLayer</name></member>
@@ -7937,6 +7991,7 @@
     <member refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5a9490b97773a28fddbd8dfc10ea0e6b2c" kind="enumvalue"><name>CONTROL_ELEMENT</name></member>
     <member refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5a0709f3310ae8847ec72c1747997d91d1" kind="enumvalue"><name>ANCHOREDTEXT</name></member>
     <member refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5aba2a0a283e0612ad35c12117a34951a6" kind="enumvalue"><name>ARPEG</name></member>
+    <member refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5af100e8034a87473885f0f6cc6302d3d1" kind="enumvalue"><name>BEAMSPAN</name></member>
     <member refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5a5ac6d401fd55c897cbbef15168c0e97c" kind="enumvalue"><name>BRACKETSPAN</name></member>
     <member refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5ae78cf01e8e39f40ebd50e27f4351490f" kind="enumvalue"><name>BREATH</name></member>
     <member refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5a1eb4c2e5b444414808597455d88c0883" kind="enumvalue"><name>CAESURA</name></member>
@@ -8211,7 +8266,7 @@
     <member refid="namespacevrv_1a989c0fd1f2e159613d02239cbfd33b9e" kind="typedef"><name>ArrayOfIntPairs</name></member>
     <member refid="namespacevrv_1aba74349ddea75116985c2b8e81265227" kind="typedef"><name>MapOfLinkingInterfaceUuidPairs</name></member>
     <member refid="namespacevrv_1aac46cdb76c7ffd80c8d38e5e1d25df66" kind="typedef"><name>MapOfNoteUuidPairs</name></member>
-    <member refid="namespacevrv_1aafc0423f92b6b42f14aed4ef50d27ffd" kind="typedef"><name>ArrayOfPlistInterfaceUuidPairs</name></member>
+    <member refid="namespacevrv_1a5fed6f8fb5b988006b6d3ee9f7adfe33" kind="typedef"><name>ArrayOfPlistInterfaceUuidTuples</name></member>
     <member refid="namespacevrv_1a0d9c798cb14ab9e1a7f3ca228778b930" kind="typedef"><name>ArrayOfCurveSpannedElements</name></member>
     <member refid="namespacevrv_1ac4ff1b2216efd00adc595fd0e37c024f" kind="typedef"><name>ListOfObjectBeatPairs</name></member>
     <member refid="namespacevrv_1a30fbf8804592f051a046c1ae0a5adaca" kind="typedef"><name>ListOfPointingInterClassIdPairs</name></member>
@@ -8357,6 +8412,8 @@
   </compound>
   <compound refid="beam_8h" kind="file"><name>beam.h</name>
     <member refid="beam_8h_1a9db8b51189e727bf40aac9fb8808d469" kind="define"><name>MAX_DURATION_PARTIALS</name></member>
+  </compound>
+  <compound refid="beamspan_8h" kind="file"><name>beamspan.h</name>
   </compound>
   <compound refid="beatrpt_8h" kind="file"><name>beatrpt.h</name>
   </compound>

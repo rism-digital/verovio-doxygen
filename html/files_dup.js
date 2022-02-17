@@ -15,6 +15,7 @@ var files_dup =
     [ "barline.h", "barline_8h_source.html", null ],
     [ "bboxdevicecontext.h", "bboxdevicecontext_8h_source.html", null ],
     [ "beam.h", "beam_8h_source.html", null ],
+    [ "beamspan.h", "beamspan_8h_source.html", null ],
     [ "beatrpt.h", "beatrpt_8h_source.html", null ],
     [ "boundingbox.h", "boundingbox_8h_source.html", null ],
     [ "bracketspan.h", "bracketspan_8h_source.html", null ],

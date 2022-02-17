@@ -45,10 +45,12 @@ var hierarchy =
       [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ]
     ] ],
     [ "AttBeamedWith", null, [
-      [ "vrv::Beam", "classvrv_1_1_beam.html", null ]
+      [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
+      [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ]
     ] ],
     [ "AttBeamRend", null, [
-      [ "vrv::Beam", "classvrv_1_1_beam.html", null ]
+      [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
+      [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ]
     ] ],
     [ "AttBeamSecondary", null, [
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ]
@@ -77,6 +79,7 @@ var hierarchy =
       [ "vrv::Artic", "classvrv_1_1_artic.html", null ],
       [ "vrv::BarLine", "classvrv_1_1_bar_line.html", null ],
       [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
+      [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ],
       [ "vrv::BeatRpt", "classvrv_1_1_beat_rpt.html", null ],
       [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
       [ "vrv::Breath", "classvrv_1_1_breath.html", null ],
@@ -327,6 +330,7 @@ var hierarchy =
       [ "vrv::ControlElement", "classvrv_1_1_control_element.html", [
         [ "vrv::AnchoredText", "classvrv_1_1_anchored_text.html", null ],
         [ "vrv::Arpeg", "classvrv_1_1_arpeg.html", null ],
+        [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ],
         [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
         [ "vrv::Breath", "classvrv_1_1_breath.html", null ],
         [ "vrv::Caesura", "classvrv_1_1_caesura.html", null ],
@@ -601,6 +605,7 @@ var hierarchy =
       [ "vrv::Annot", "classvrv_1_1_annot.html", null ],
       [ "vrv::PlistInterface", "classvrv_1_1_plist_interface.html", [
         [ "vrv::Arpeg", "classvrv_1_1_arpeg.html", null ],
+        [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ],
         [ "vrv::Expansion", "classvrv_1_1_expansion.html", null ]
       ] ]
     ] ],
@@ -666,6 +671,7 @@ var hierarchy =
         [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
         [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ],
         [ "vrv::TimeSpanningInterface", "classvrv_1_1_time_spanning_interface.html", [
+          [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ],
           [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
           [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
           [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
@@ -818,7 +824,9 @@ var hierarchy =
       [ "vrv::MultiRest", "classvrv_1_1_multi_rest.html", null ]
     ] ],
     [ "vrv::BeamElementCoord", "classvrv_1_1_beam_element_coord.html", null ],
-    [ "vrv::BeamSegment", "classvrv_1_1_beam_segment.html", null ],
+    [ "vrv::BeamSegment", "classvrv_1_1_beam_segment.html", [
+      [ "vrv::BeamSpanSegment", "classvrv_1_1_beam_span_segment.html", null ]
+    ] ],
     [ "vrv::BezierCurve", "classvrv_1_1_bezier_curve.html", null ],
     [ "vrv::BoundingBox", "classvrv_1_1_bounding_box.html", [
       [ "vrv::FloatingPositioner", "classvrv_1_1_floating_positioner.html", [
@@ -1041,6 +1049,7 @@ var hierarchy =
     [ "vrv::ObjectListInterface", "classvrv_1_1_object_list_interface.html", [
       [ "vrv::BeamDrawingInterface", "classvrv_1_1_beam_drawing_interface.html", [
         [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
+        [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ],
         [ "vrv::FTrem", "classvrv_1_1_f_trem.html", null ]
       ] ],
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],

@@ -254,6 +254,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beam_segment.html">BeamSegment</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for storing drawing parameters when calculating beams.  <a href="classvrv_1_1_beam_segment.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beam_span.html">BeamSpan</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class models the MEI &lt;beamSpan&gt; element.  <a href="classvrv_1_1_beam_span.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beam_span_segment.html">BeamSpanSegment</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_beat_rpt.html">BeatRpt</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class models the MEI &lt;beatRpt&gt; element.  <a href="classvrv_1_1_beat_rpt.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1212,9 +1217,9 @@ typedef std::multimap&lt; std::string, <a class="el" href="classvrv_1_1_linking_
 <tr class="memitem:aac46cdb76c7ffd80c8d38e5e1d25df66"><td class="memItemLeft" align="right" valign="top"><a id="aac46cdb76c7ffd80c8d38e5e1d25df66"></a>
 typedef std::map&lt; std::string, <a class="el" href="classvrv_1_1_note.html">Note</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MapOfNoteUuidPairs</b></td></tr>
 <tr class="separator:aac46cdb76c7ffd80c8d38e5e1d25df66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafc0423f92b6b42f14aed4ef50d27ffd"><td class="memItemLeft" align="right" valign="top"><a id="aafc0423f92b6b42f14aed4ef50d27ffd"></a>
-typedef std::vector&lt; std::pair&lt; <a class="el" href="classvrv_1_1_plist_interface.html">PlistInterface</a> *, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ArrayOfPlistInterfaceUuidPairs</b></td></tr>
-<tr class="separator:aafc0423f92b6b42f14aed4ef50d27ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fed6f8fb5b988006b6d3ee9f7adfe33"><td class="memItemLeft" align="right" valign="top"><a id="a5fed6f8fb5b988006b6d3ee9f7adfe33"></a>
+typedef std::vector&lt; std::tuple&lt; <a class="el" href="classvrv_1_1_plist_interface.html">PlistInterface</a> *, std::string, <a class="el" href="classvrv_1_1_object.html">Object</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ArrayOfPlistInterfaceUuidTuples</b></td></tr>
+<tr class="separator:a5fed6f8fb5b988006b6d3ee9f7adfe33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d9c798cb14ab9e1a7f3ca228778b930"><td class="memItemLeft" align="right" valign="top"><a id="a0d9c798cb14ab9e1a7f3ca228778b930"></a>
 typedef std::vector&lt; <a class="el" href="classvrv_1_1_curve_spanned_element.html">CurveSpannedElement</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ArrayOfCurveSpannedElements</b></td></tr>
 <tr class="separator:a0d9c798cb14ab9e1a7f3ca228778b930"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2301,111 +2306,112 @@ Enumerations</h2></td></tr>
 <b>ANCHOREDTEXT</b>, 
 <br />
 &#160;&#160;<b>ARPEG</b>, 
+<b>BEAMSPAN</b>, 
 <b>BRACKETSPAN</b>, 
 <b>BREATH</b>, 
-<b>CAESURA</b>, 
 <br />
-&#160;&#160;<b>DIR</b>, 
+&#160;&#160;<b>CAESURA</b>, 
+<b>DIR</b>, 
 <b>DYNAM</b>, 
 <b>FERMATA</b>, 
-<b>FING</b>, 
 <br />
-&#160;&#160;<b>GLISS</b>, 
+&#160;&#160;<b>FING</b>, 
+<b>GLISS</b>, 
 <b>HAIRPIN</b>, 
 <b>HARM</b>, 
-<b>LV</b>, 
 <br />
-&#160;&#160;<b>MORDENT</b>, 
+&#160;&#160;<b>LV</b>, 
+<b>MORDENT</b>, 
 <b>MNUM</b>, 
 <b>OCTAVE</b>, 
-<b>PEDAL</b>, 
 <br />
-&#160;&#160;<b>PHRASE</b>, 
+&#160;&#160;<b>PEDAL</b>, 
+<b>PHRASE</b>, 
 <b>PITCHINFLECTION</b>, 
 <b>REH</b>, 
-<b>SLUR</b>, 
 <br />
-&#160;&#160;<b>TEMPO</b>, 
+&#160;&#160;<b>SLUR</b>, 
+<b>TEMPO</b>, 
 <b>TIE</b>, 
 <b>TRILL</b>, 
-<b>TURN</b>, 
 <br />
-&#160;&#160;<b>CONTROL_ELEMENT_max</b>, 
+&#160;&#160;<b>TURN</b>, 
+<b>CONTROL_ELEMENT_max</b>, 
 <b>LAYER_ELEMENT</b>, 
 <b>ACCID</b>, 
-<b>ARTIC</b>, 
 <br />
-&#160;&#160;<b>BARLINE</b>, 
+&#160;&#160;<b>ARTIC</b>, 
+<b>BARLINE</b>, 
 <b>BEAM</b>, 
 <b>BEATRPT</b>, 
-<b>BTREM</b>, 
 <br />
-&#160;&#160;<b>CHORD</b>, 
+&#160;&#160;<b>BTREM</b>, 
+<b>CHORD</b>, 
 <b>CLEF</b>, 
 <b>CUSTOS</b>, 
-<b>DOT</b>, 
 <br />
-&#160;&#160;<b>DOTS</b>, 
+&#160;&#160;<b>DOT</b>, 
+<b>DOTS</b>, 
 <b>FLAG</b>, 
 <b>FTREM</b>, 
-<b>GRACEGRP</b>, 
 <br />
-&#160;&#160;<b>HALFMRPT</b>, 
+&#160;&#160;<b>GRACEGRP</b>, 
+<b>HALFMRPT</b>, 
 <b>KEYSIG</b>, 
 <b>KEYACCID</b>, 
-<b>LIGATURE</b>, 
 <br />
-&#160;&#160;<b>MENSUR</b>, 
+&#160;&#160;<b>LIGATURE</b>, 
+<b>MENSUR</b>, 
 <b>METERSIG</b>, 
 <b>MREST</b>, 
-<b>MRPT</b>, 
 <br />
-&#160;&#160;<b>MRPT2</b>, 
+&#160;&#160;<b>MRPT</b>, 
+<b>MRPT2</b>, 
 <b>MSPACE</b>, 
 <b>MULTIREST</b>, 
-<b>MULTIRPT</b>, 
 <br />
-&#160;&#160;<b>NC</b>, 
+&#160;&#160;<b>MULTIRPT</b>, 
+<b>NC</b>, 
 <b>NOTE</b>, 
 <b>NEUME</b>, 
-<b>PLICA</b>, 
 <br />
-&#160;&#160;<b>PROPORT</b>, 
+&#160;&#160;<b>PLICA</b>, 
+<b>PROPORT</b>, 
 <b>REST</b>, 
 <b>SPACE</b>, 
-<b>STEM</b>, 
 <br />
-&#160;&#160;<b>SYL</b>, 
+&#160;&#160;<b>STEM</b>, 
+<b>SYL</b>, 
 <b>SYLLABLE</b>, 
 <b>TABGRP</b>, 
-<b>TABDURSYM</b>, 
 <br />
-&#160;&#160;<b>TIMESTAMP_ATTR</b>, 
+&#160;&#160;<b>TABDURSYM</b>, 
+<b>TIMESTAMP_ATTR</b>, 
 <b>TUPLET</b>, 
 <b>TUPLET_BRACKET</b>, 
-<b>TUPLET_NUM</b>, 
 <br />
-&#160;&#160;<b>VERSE</b>, 
+&#160;&#160;<b>TUPLET_NUM</b>, 
+<b>VERSE</b>, 
 <b>LAYER_ELEMENT_max</b>, 
 <b>SCOREDEF_ELEMENT</b>, 
-<b>SCOREDEF</b>, 
 <br />
-&#160;&#160;<b>STAFFDEF</b>, 
+&#160;&#160;<b>SCOREDEF</b>, 
+<b>STAFFDEF</b>, 
 <b>SCOREDEF_ELEMENT_max</b>, 
 <b>TEXT_ELEMENT</b>, 
-<b>FIG</b>, 
 <br />
-&#160;&#160;<b>FIGURE</b>, 
+&#160;&#160;<b>FIG</b>, 
+<b>FIGURE</b>, 
 <b>LB</b>, 
 <b>NUM</b>, 
-<b>REND</b>, 
 <br />
-&#160;&#160;<b>TEXT</b>, 
+&#160;&#160;<b>REND</b>, 
+<b>TEXT</b>, 
 <b>TEXT_ELEMENT_max</b>, 
 <b>BBOX_DEVICE_CONTEXT</b>, 
-<b>SVG_DEVICE_CONTEXT</b>, 
 <br />
-&#160;&#160;<b>CUSTOM_DEVICE_CONTEXT</b>, 
+&#160;&#160;<b>SVG_DEVICE_CONTEXT</b>, 
+<b>CUSTOM_DEVICE_CONTEXT</b>, 
 <b>UNSPECIFIED</b>
 <br />
  }</td></tr>
@@ -2991,7 +2997,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>loggingToBuffer</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li>
-    <li class="footer">Generated on Wed Feb 16 2022 16:01:06 for Verovio by
+    <li class="footer">Generated on Thu Feb 17 2022 11:09:16 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

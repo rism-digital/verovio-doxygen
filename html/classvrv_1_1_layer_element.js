@@ -55,6 +55,7 @@ var classvrv_1_1_layer_element =
     [ "HorizontalLayoutCache", "classvrv_1_1_layer_element.html#a7b67eb50cac027a4187f75b4afd7ed87", null ],
     [ "IsGraceNote", "classvrv_1_1_layer_element.html#ab307b4c131fd2560f831e355dc31908d", null ],
     [ "IsInBeam", "classvrv_1_1_layer_element.html#a9e5c50f21c91584a2c11ad154344a1b7", null ],
+    [ "IsInBeamSpan", "classvrv_1_1_layer_element.html#a18a441b994205fe34cd9d03a56cda578", null ],
     [ "IsInFTrem", "classvrv_1_1_layer_element.html#a55dbe63eb131c1a1f00da98fe5f08c9b", null ],
     [ "IsInLigature", "classvrv_1_1_layer_element.html#a6d695a92219be680737010275c9cd282", null ],
     [ "IsRelativeToStaff", "classvrv_1_1_layer_element.html#a96557dae7229251dbdadfeb15f0d8b91", null ],
@@ -91,5 +92,6 @@ var classvrv_1_1_layer_element =
     [ "m_drawingXRel", "classvrv_1_1_layer_element.html#a592cebc1769e23ff79403a675a923c65", null ],
     [ "m_drawingYRel", "classvrv_1_1_layer_element.html#a33f69b421d5fbe77c6e89e2da3e46b3b", null ],
     [ "m_graceAlignment", "classvrv_1_1_layer_element.html#a6ee0bb4018d8ba684437586512ff4136", null ],
+    [ "m_isInBeamspan", "classvrv_1_1_layer_element.html#a551d3554b1625dfd63d8861c1871068d", null ],
     [ "m_xAbs", "classvrv_1_1_layer_element.html#a66bf79ef721a113ab2e5ff354313fe2e", null ]
 ];

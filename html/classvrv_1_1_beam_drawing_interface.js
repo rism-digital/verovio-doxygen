@@ -30,6 +30,7 @@ var classvrv_1_1_beam_drawing_interface =
     [ "m_drawingPlace", "classvrv_1_1_beam_drawing_interface.html#aaff507977c3e0bf620f4c7e9517c0462", null ],
     [ "m_fractionSize", "classvrv_1_1_beam_drawing_interface.html#ac63922b8c8e3e1a5b219124eb38c7394", null ],
     [ "m_hasMultipleStemDir", "classvrv_1_1_beam_drawing_interface.html#a6cbca6b6d786644d7ccca3699c2260c1", null ],
+    [ "m_isSpanningElement", "classvrv_1_1_beam_drawing_interface.html#a9da5d57f4094873d109ca24005fb2ee4", null ],
     [ "m_notesStemDir", "classvrv_1_1_beam_drawing_interface.html#a2f05babb11c16401012d41d811bec77d", null ],
     [ "m_shortestDur", "classvrv_1_1_beam_drawing_interface.html#a1c2a86d493efd23de86b5473dffd1d58", null ],
     [ "m_stemXAbove", "classvrv_1_1_beam_drawing_interface.html#afa46fe4952aa3b0dae44c4c38e79e744", null ],

@@ -17,6 +17,7 @@ var classvrv_1_1_view =
     [ "DrawBarLineDots", "classvrv_1_1_view.html#a2b61d41841e94c885f0415a4e5b519e4", null ],
     [ "DrawBarLines", "classvrv_1_1_view.html#a3f4073d3c49e6c09bd33cd62bc09ae9f", null ],
     [ "DrawBeam", "classvrv_1_1_view.html#a0220af899cfe64232a2257afbf9f30cc", null ],
+    [ "DrawBeamSpan", "classvrv_1_1_view.html#a39c6e83a8d8593fcfd9a6f9083ccfd3a", null ],
     [ "DrawBeatRpt", "classvrv_1_1_view.html#a36bad20e7ec3ff717a67852ef9ee99da", null ],
     [ "DrawBrace", "classvrv_1_1_view.html#a7f73de86e83df589a23be10668fc656b", null ],
     [ "DrawBracket", "classvrv_1_1_view.html#a36c099dbaa2678c80e73ceb93ea030f1", null ],
