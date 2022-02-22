@@ -13,13 +13,9 @@ var classvrv_1_1_humdrum_signifiers =
     [ "hairpinAccent", "classvrv_1_1_humdrum_signifiers.html#ab66a6cbe68a034df07006ba86a8cdd54", null ],
     [ "irest_color", "classvrv_1_1_humdrum_signifiers.html#acefc2f4cf69633e05ac5f5515de03552", null ],
     [ "ispace_color", "classvrv_1_1_humdrum_signifiers.html#a4d74a91b5405881760ac46d83ce5ad38", null ],
-    [ "lhpizz", "classvrv_1_1_humdrum_signifiers.html#a4dc5c09ebc91b8cbfcdeb054671437ad", null ],
     [ "mark", "classvrv_1_1_humdrum_signifiers.html#a6b2e9117d9ed6cd66000296f01dcd855", null ],
     [ "markdir", "classvrv_1_1_humdrum_signifiers.html#a2449a6fbc5727cf3152ab6290a20038e", null ],
     [ "mcolor", "classvrv_1_1_humdrum_signifiers.html#ab385bb2b31955835302646f2df8ea2a9", null ],
-    [ "mens_mark", "classvrv_1_1_humdrum_signifiers.html#ae29c404cca51602dbe95b93f516c72a9", null ],
-    [ "mens_markdir", "classvrv_1_1_humdrum_signifiers.html#a56add0bc0d9b7c7a36ee2eb23039abab", null ],
-    [ "mens_mcolor", "classvrv_1_1_humdrum_signifiers.html#a9c70aadcb97c15dacb94eed0eb3a46cf", null ],
     [ "nostem", "classvrv_1_1_humdrum_signifiers.html#a9663155015794ed2e35ab42e7dd25313", null ],
     [ "phrase_color", "classvrv_1_1_humdrum_signifiers.html#a38568974a1d61520b80ee40a19e38a4f", null ],
     [ "phrase_slur", "classvrv_1_1_humdrum_signifiers.html#a8ec31c6985e540be736af3b7abe790e4", null ],
@@ -28,6 +24,5 @@ var classvrv_1_1_humdrum_signifiers =
     [ "space_color", "classvrv_1_1_humdrum_signifiers.html#a17efb2f70761d86d9dd2acf4f4ea04ee", null ],
     [ "terminallong", "classvrv_1_1_humdrum_signifiers.html#a05c92d3bb8004e71a0fe159faca257c6", null ],
     [ "textcolor", "classvrv_1_1_humdrum_signifiers.html#a1c4d9de3d67c8432c08a02908ac78c05", null ],
-    [ "textmark", "classvrv_1_1_humdrum_signifiers.html#a3564ce4ddebe648b66cd26c0b5813494", null ],
-    [ "verticalStroke", "classvrv_1_1_humdrum_signifiers.html#a18e9e7ef36872b1d9952a871e5581e97", null ]
+    [ "textmark", "classvrv_1_1_humdrum_signifiers.html#a3564ce4ddebe648b66cd26c0b5813494", null ]
 ];

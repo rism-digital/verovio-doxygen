@@ -5,6 +5,5 @@ var classvrv_1_1_bar_line_attr =
     [ "Clone", "classvrv_1_1_bar_line_attr.html#a8ef81ad6367eae8c94f72512be252f7d", null ],
     [ "GetClassId", "classvrv_1_1_bar_line_attr.html#acf78873ec9e3df67f7f3941690c5b382", null ],
     [ "GetClassName", "classvrv_1_1_bar_line_attr.html#a15b3c95296bbd8ef19ca525a023a5d5c", null ],
-    [ "SetLeft", "classvrv_1_1_bar_line_attr.html#aacc8741e507a5cae412bd75fee75e7c2", null ],
-    [ "SetNoAttr", "classvrv_1_1_bar_line_attr.html#a3acfafdeace030be8a3d1828ce596a38", null ]
+    [ "SetLeft", "classvrv_1_1_bar_line_attr.html#aacc8741e507a5cae412bd75fee75e7c2", null ]
 ];

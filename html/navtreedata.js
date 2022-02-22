@@ -1,29 +1,30 @@
 /*
-@licstart  The following is the entire license notice for the
-JavaScript code in this file.
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
 
-Copyright (C) 1997-2019 by Dimitri van Heesch
+ The MIT License (MIT)
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of version 2 of the GNU General Public License as published by
-the Free Software Foundation
+ Copyright (C) 1997-2020 by Dimitri van Heesch
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
 
-@licend  The above is the entire license notice
-for the JavaScript code in this file
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "Verovio", "index.html", [
-    [ "Modules", "modules.html", "modules" ],
+  [ "My Project", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -44,29 +45,27 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html",
-"classvrv_1_1_align_systems_params.html#a0a50f0bc2add9dbea4b57dd4e20d4aed",
-"classvrv_1_1_b_box_device_context.html#a28fb63c5d751b05c4044f4119f24a144",
-"classvrv_1_1_breath.html#a2d6fab856ac0f3e74fa0655560b9421b",
-"classvrv_1_1_custos.html#aad3fba7ef3383aae40325c7ffad630f8",
-"classvrv_1_1_dots.html#aa82a81c202f048562fb0da44d080c84e",
-"classvrv_1_1_find_all_between_params.html",
-"classvrv_1_1_grace_grp.html#a2a4d197e81270af5747371079c4fec7b",
-"classvrv_1_1_humdrum_input.html#a8af863911c302961db286a67471d7829",
-"classvrv_1_1_justify_y_params.html#a764383fcc00849e8a78c0922a5b5ee71",
-"classvrv_1_1_linking_interface.html#a228d75ecb1fef240f421b1fad7c45a64",
-"classvrv_1_1_meter_sig_grp.html#a30799efa03d8f7a7e5a31a6983a52673",
-"classvrv_1_1_object.html#a757300b40f61c72a86c66fe9df7f8b5d",
-"classvrv_1_1_option_int.html#a841d690baff7da73be9209fd19d28f61",
-"classvrv_1_1_options.html#afc24ddffb25350e041b0ca133a24bac4",
-"classvrv_1_1_prepare_floating_grps_params.html#aa1c96da5f03b6c34c60f5e7d5e415ee8",
-"classvrv_1_1_score_def_element.html#ae1196d9264a4c7ca2fe02d6946b49fb7",
-"classvrv_1_1_staff_def_drawing_interface.html#ade48e1b3e0296db1e64674a5d793bdeb",
-"classvrv_1_1_system.html#af4e71448eddcb0097b4492b52f216e6d",
-"classvrv_1_1_toolkit.html#ad009ed5b8852f67843a34c4b6fd1e3c7",
-"classvrv_1_1_view.html#a2c447f5bd0fd7101c0626b723c7b7578",
-"classvrv_1_1data___p_l_a_c_e_m_e_n_t.html#a19b561a564fed1179a8a33afe323d523",
-"trill_8h_source.html"
+"abbr_8h_source.html",
+"classvrv_1_1_alignment.html#ace45fe11ad8e9befcdaea18ecc2cf5ca",
+"classvrv_1_1_bar_line.html#a83331e33eca87896ba18383a9d902db4",
+"classvrv_1_1_calc_onset_offset_params.html#a1b590fbdbe9b0b20cbebc68c0af986ea",
+"classvrv_1_1_device_context.html#a9843522526eee72a9db4cc5ab566f943",
+"classvrv_1_1_editor_toolkit_neume.html#a03f19235626c5060c2f43a5044827779",
+"classvrv_1_1_floating_curve_positioner.html#a91f91d2639e931d321fae0dc47dd2f07",
+"classvrv_1_1_humdrum_input.html#a0c09cfad5c79b97e9dd3301e4c9925d6",
+"classvrv_1_1_humdrum_input.html#ac98af05229a51a05b1cfc6b6d0842ce5",
+"classvrv_1_1_layer.html#ac9cff14271883d9b18f0e14a4b56a1d8",
+"classvrv_1_1_measure.html#a361599317323129d770b37bb2fb88576",
+"classvrv_1_1_object.html#a07dfe3de52f16cff12eefabe11c6cd96",
+"classvrv_1_1_octave.html#a229ec2da837f68c480ab55161beb1cb8",
+"classvrv_1_1_options.html#aa44b3323247f238b51105a92f1e5d214",
+"classvrv_1_1_prepare_cross_staff_params.html#a7cf5b0f5d996e012dbd33ab67e584377",
+"classvrv_1_1_section.html#ad58f3e2338a0c69d60712ee4a15a9f6d",
+"classvrv_1_1_stemmed_drawing_interface.html#aa990dc55c67926e2b841b858667a46d2",
+"classvrv_1_1_text_drawing_params.html",
+"classvrv_1_1_transposer.html#afb8d93888f4debdbd880cfad554f62af",
+"classvrv_1_1_view.html#abc6d0a996e82ac4c0cebf76e88132446",
+"labelabbr_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

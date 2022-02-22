@@ -2,7 +2,8 @@ var classvrv_1_1_abbr =
 [
     [ "Abbr", "classvrv_1_1_abbr.html#a95cf5334cb59898aa4910ede5cbf43f0", null ],
     [ "~Abbr", "classvrv_1_1_abbr.html#aaf0b6d661e912b33d2d5c13857ae8b88", null ],
-    [ "Clone", "classvrv_1_1_abbr.html#a8b8e3f609c91bf96446d86ba33594b5a", null ],
-    [ "GetClassName", "classvrv_1_1_abbr.html#a574e0057f36c53761c796399377c8d28", null ],
-    [ "Reset", "classvrv_1_1_abbr.html#a0f4e839a8d10f14369b2d51ece7475b4", null ]
+    [ "Clone", "classvrv_1_1_abbr.html#a2ee39ba18ad78caead86c74ea521668b", null ],
+    [ "GetClassId", "classvrv_1_1_abbr.html#aeb504b70b1dd5f516c495a6b58f34017", null ],
+    [ "GetClassName", "classvrv_1_1_abbr.html#a4e1e79b7a106cd95a8c07002476bad33", null ],
+    [ "Reset", "classvrv_1_1_abbr.html#ac7d315b6903e06a22126c42a7141e82d", null ]
 ];

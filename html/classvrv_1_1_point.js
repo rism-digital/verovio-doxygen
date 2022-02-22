@@ -2,8 +2,6 @@ var classvrv_1_1_point =
 [
     [ "Point", "classvrv_1_1_point.html#ae96941b8edd7d2fc2671963b7d9e4613", null ],
     [ "Point", "classvrv_1_1_point.html#a127b55a050c41fb5625b312b82b5852a", null ],
-    [ "max", "classvrv_1_1_point.html#a1942df9afd6d613d79f4b68b639f65d8", null ],
-    [ "min", "classvrv_1_1_point.html#a644cbbcb60b2f0b04756399f1cf55f31", null ],
     [ "operator!=", "classvrv_1_1_point.html#af46fa881fdc3a40f7ab22a74a8079506", null ],
     [ "operator+", "classvrv_1_1_point.html#aee20d8904701ece11bfdfe53a96166ff", null ],
     [ "operator+=", "classvrv_1_1_point.html#a0ddb95a7dab4b28a1bd4095e9851ac7c", null ],

@@ -10,8 +10,8 @@ var classvrv_1_1_linking_interface =
     [ "InterfaceFillStaffCurrentTimeSpanning", "classvrv_1_1_linking_interface.html#aee68cd0a552aa59e75868977acadc660", null ],
     [ "InterfacePrepareLinking", "classvrv_1_1_linking_interface.html#a05da99de05024b8ff9287f1027aa55db", null ],
     [ "InterfaceResetDrawing", "classvrv_1_1_linking_interface.html#af59163d72892c1582eeb6a9df7924b83", null ],
-    [ "IsInterface", "classvrv_1_1_linking_interface.html#ad1a3839eaa143c325b741151e7f9b084", null ],
-    [ "Reset", "classvrv_1_1_linking_interface.html#aa0e9e42e21b344c363a530424f661066", null ],
+    [ "IsInterface", "classvrv_1_1_linking_interface.html#ab262eec19e41662b2873f407b93cab0e", null ],
+    [ "Reset", "classvrv_1_1_linking_interface.html#a1f6eb5b20f11b1e4ef6447222aa2a2d6", null ],
     [ "SetNextLink", "classvrv_1_1_linking_interface.html#aa954c8b863b3372c10ec07e7c8a48087", null ],
     [ "SetSameasLink", "classvrv_1_1_linking_interface.html#a3670fb648c0d3c6958544c5cfc6f6868", null ],
     [ "SetUuidStr", "classvrv_1_1_linking_interface.html#a0ba4b3ed3ba51bdff6f8ef3305aa1f9b", null ]

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['s_5fabovestaffartic_2224',['s_aboveStaffArtic',['../classvrv_1_1_artic.html#a825f179de07fb8b912d1c916ba37519a',1,'vrv::Artic']]],
-  ['s_5fbreaks_2225',['s_breaks',['../classvrv_1_1_option.html#a4f1d640dd2b72a23a4987c31e262715f',1,'vrv::Option']]],
-  ['s_5fneumes_2226',['s_neumes',['../classvrv_1_1_neume.html#a279eba0f83d8dcc4cde34008835c66fd',1,'vrv::Neume']]],
-  ['s_5fnum_2227',['s_num',['../classvrv_1_1_mensur.html#a79cd7e935f879da7c7b5376e633cbb70',1,'vrv::Mensur']]],
-  ['s_5fnumbase_2228',['s_numBase',['../classvrv_1_1_mensur.html#a44bb3c18cc9a28a7c30e91403b98785b',1,'vrv::Mensur']]],
-  ['s_5foutstaffartic_2229',['s_outStaffArtic',['../classvrv_1_1_artic.html#af5632037445cf7c9b45592b11417d13e',1,'vrv::Artic']]]
+  ['s_5fabovestaffartic_1934',['s_aboveStaffArtic',['../classvrv_1_1_artic.html#a0d6b92f3ac12b0890dfc98e3b3f93cda',1,'vrv::Artic']]],
+  ['s_5fbreaks_1935',['s_breaks',['../classvrv_1_1_option.html#a75eb0cf7a34a8bcc36fc56d94623de39',1,'vrv::Option']]],
+  ['s_5fneumes_1936',['s_neumes',['../classvrv_1_1_neume.html#a1e0d3a1fe1294218a6286f0c42e32802',1,'vrv::Neume']]],
+  ['s_5fnum_1937',['s_num',['../classvrv_1_1_mensur.html#a55614f0e13b3a2d805aa41cbb646830c',1,'vrv::Mensur']]],
+  ['s_5fnumbase_1938',['s_numBase',['../classvrv_1_1_mensur.html#a01c074d466cb310af3cedc0bf574cb2d',1,'vrv::Mensur']]],
+  ['s_5foutstaffartic_1939',['s_outStaffArtic',['../classvrv_1_1_artic.html#a8e18feb79b45f9e8aea83b262ef87339',1,'vrv::Artic']]]
 ];

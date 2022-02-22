@@ -7,7 +7,7 @@ var classvrv_1_1_position_interface =
     [ "HasIdenticalPositionInterface", "classvrv_1_1_position_interface.html#a932d3221b8cd285116ffde54bc7a17e8", null ],
     [ "InterfaceResetDrawing", "classvrv_1_1_position_interface.html#a1aab8fb785b348dcf88714338863bc78", null ],
     [ "InterfaceResetHorizontalAlignment", "classvrv_1_1_position_interface.html#ac74c74fcf22d5ae9e9286623353da322", null ],
-    [ "IsInterface", "classvrv_1_1_position_interface.html#aca64be02a7dd6b30f996cf4151858a58", null ],
-    [ "Reset", "classvrv_1_1_position_interface.html#a424403dca3376b2892efd8989b3ce3c5", null ],
+    [ "IsInterface", "classvrv_1_1_position_interface.html#ae5d7e19319bcf359fc2119512e720004", null ],
+    [ "Reset", "classvrv_1_1_position_interface.html#a182b63fbcc1eb3663e5fa0af8f2dc864", null ],
     [ "SetDrawingLoc", "classvrv_1_1_position_interface.html#a3bdb6437c6e8739beea47e4bb978493f", null ]
 ];
