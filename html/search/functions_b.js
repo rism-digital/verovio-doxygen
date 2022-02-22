@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['object_1718',['Object',['../classvrv_1_1_object.html#a8be4ecf7908559751e728551718a8bfc',1,'vrv::Object']]],
-  ['operator_3d_1719',['operator=',['../classvrv_1_1_object.html#a6ad51ecc97faf69c8fa8432a780aed44',1,'vrv::Object']]],
-  ['optimizescoredef_1720',['OptimizeScoreDef',['../classvrv_1_1_measure.html#a63fafdb1d58882fc47c68f701d7cd2ba',1,'vrv::Measure::OptimizeScoreDef()'],['../classvrv_1_1_object.html#a822a05921a0e5ee3d61fc578f4daad2e',1,'vrv::Object::OptimizeScoreDef()'],['../classvrv_1_1_staff.html#ab8980fe9ea3f010412b481ff39e0959e',1,'vrv::Staff::OptimizeScoreDef()'],['../classvrv_1_1_system.html#a5875510824a744cc494a7be247ce6aef',1,'vrv::System::OptimizeScoreDef()']]],
-  ['optimizescoredefdoc_1721',['OptimizeScoreDefDoc',['../classvrv_1_1_doc.html#a0199c08ac7ad1ae97cf29bf891a05177',1,'vrv::Doc']]],
-  ['optimizescoredefend_1722',['OptimizeScoreDefEnd',['../classvrv_1_1_staff_grp.html#a9f1bc73b52b11a9f05678a56a7c3f4e1',1,'vrv::StaffGrp']]]
+  ['makevisible_2137',['MakeVisible',['../classvrv_1_1_mdiv.html#aed76997a32ca68f9ca9f2c1dc614bca6',1,'vrv::Mdiv']]],
+  ['markupaddsyl_2138',['MarkupAddSyl',['../classvrv_1_1_syllable.html#a380ee2dac242e43806ceb337600ea36f',1,'vrv::Syllable']]],
+  ['measurealigner_2139',['MeasureAligner',['../classvrv_1_1_measure_aligner.html#ad32c2551ae190f29ae458fbe5185a025',1,'vrv::MeasureAligner']]],
+  ['modify_2140',['Modify',['../classvrv_1_1_object.html#a985728e489aed60707c313327bf7c464',1,'vrv::Object']]],
+  ['movechildrenfrom_2141',['MoveChildrenFrom',['../classvrv_1_1_object.html#aa846e8099e10d6cf427e8255e4a62dd4',1,'vrv::Object']]],
+  ['movefronthorizontal_2142',['MoveFrontHorizontal',['../classvrv_1_1_floating_curve_positioner.html#a4fbc85ac14f92d9d51fe346f56a5a574',1,'vrv::FloatingCurvePositioner']]],
+  ['moveitselfto_2143',['MoveItselfTo',['../classvrv_1_1_object.html#ac7063ea155c08f4e39e5c59b735f1d9e',1,'vrv::Object']]]
 ];

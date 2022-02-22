@@ -6,7 +6,9 @@ var classvrv_1_1_calc_stem_params =
     [ "m_dur", "classvrv_1_1_calc_stem_params.html#a34687d23c98f5d4fa46fbeedfb5a9f50", null ],
     [ "m_interface", "classvrv_1_1_calc_stem_params.html#a8e5a571e8d22130d16c519808e30818f", null ],
     [ "m_isGraceNote", "classvrv_1_1_calc_stem_params.html#af2f83e5fbea1511f10afda9b1987616e", null ],
+    [ "m_isStemSameasSecondary", "classvrv_1_1_calc_stem_params.html#abd6cc977c1c57c9d0e4a5494969565a4", null ],
     [ "m_layer", "classvrv_1_1_calc_stem_params.html#aa08713416a5885b60e8d316f2ba48434", null ],
     [ "m_staff", "classvrv_1_1_calc_stem_params.html#aae4707dc65ba0c6f674ac6e23fe4e9af", null ],
+    [ "m_tabGrpWithNoNote", "classvrv_1_1_calc_stem_params.html#a5203c83d5dda1c491f4b26d7b7c426aa", null ],
     [ "m_verticalCenter", "classvrv_1_1_calc_stem_params.html#a6b86386e29ad9f3f97e269c4c25addd8", null ]
 ];

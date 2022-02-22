@@ -22,7 +22,7 @@
       <node id="7">
         <label>iterator</label>
       </node>
-      <node id="19">
+      <node id="20">
         <label>atttypes.h</label>
       </node>
       <node id="9">
@@ -39,30 +39,33 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="17">
+      <node id="18">
         <label>attdef.h</label>
         <link refid="attdef_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
       </node>
       <node id="2">
         <label>atts_shared.h</label>
       </node>
+      <node id="16">
+        <label>tuple</label>
+      </node>
       <node id="5">
         <label>ctime</label>
       </node>
-      <node id="16">
+      <node id="17">
         <label>vector</label>
       </node>
-      <node id="18">
+      <node id="19">
         <label>utility</label>
       </node>
       <node id="3">
@@ -87,7 +90,7 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="21">
         <label>math.h</label>
       </node>
       <node id="4">
@@ -119,7 +122,9 @@
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -190,7 +195,7 @@
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atts_shared.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;object.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vrv<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacevrv" kindref="compound">vrv</ref><sp/>{</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Accid;</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">AlignmentReference;</highlight></codeline>
@@ -201,7 +206,7 @@
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Note;</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TimestampAttr;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>AlignmentType<sp/>{</highlight></codeline>
+<codeline lineno="29" refid="namespacevrv_1acbf6eb578110ee61906ad288b5803922" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacevrv_1acbf6eb578110ee61906ad288b5803922" kindref="member">AlignmentType</ref><sp/>{</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>ALIGNMENT_MEASURE_START<sp/>=<sp/>0,</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Non-justifiable</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>ALIGNMENT_SCOREDEF_CLEF,</highlight></codeline>
@@ -240,7 +245,7 @@
 <codeline lineno="68" refid="classvrv_1_1_alignment" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>{</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref>();</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>time,<sp/>AlignmentType<sp/>type<sp/>=<sp/>ALIGNMENT_DEFAULT);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>time,<sp/><ref refid="namespacevrv_1acbf6eb578110ee61906ad288b5803922" kindref="member">AlignmentType</ref><sp/>type<sp/>=<sp/>ALIGNMENT_DEFAULT);</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref>();</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_alignment_1ad43591d11620170af7123f2e6ccc18e2" kindref="member">Reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="80"></codeline>
@@ -256,8 +261,8 @@
 <codeline lineno="106"></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_alignment_1ab52c03819037b643b89612716dc4629a" kindref="member">AddLayerElementRef</ref>(<ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref><sp/>*element);</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetType(AlignmentType<sp/>type)<sp/>{<sp/>m_type<sp/>=<sp/>type;<sp/>}</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>AlignmentType<sp/>GetType()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_type;<sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetType(<ref refid="namespacevrv_1acbf6eb578110ee61906ad288b5803922" kindref="member">AlignmentType</ref><sp/>type)<sp/>{<sp/>m_type<sp/>=<sp/>type;<sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1acbf6eb578110ee61906ad288b5803922" kindref="member">AlignmentType</ref><sp/>GetType()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_type;<sp/>}</highlight></codeline>
 <codeline lineno="121"></codeline>
 <codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_alignment_1abea5738c5b4b494dbda993185dfd0e92" kindref="member">IsOfType</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;AlignmentType&gt;<sp/>&amp;types)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"></highlight></codeline>
@@ -314,7 +319,7 @@
 <codeline lineno="258"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_xRel;</highlight></codeline>
 <codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_time;</highlight></codeline>
-<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>AlignmentType<sp/>m_type;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1acbf6eb578110ee61906ad288b5803922" kindref="member">AlignmentType</ref><sp/>m_type;</highlight></codeline>
 <codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>MapOfIntGraceAligners<sp/>m_graceAligners;</highlight></codeline>
 <codeline lineno="284"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="285"><highlight class="normal"></highlight></codeline>
@@ -372,7 +377,7 @@
 <codeline lineno="388"><highlight class="normal"></highlight></codeline>
 <codeline lineno="394" refid="classvrv_1_1_horizontal_aligner" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_horizontal_aligner" kindref="compound">HorizontalAligner</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>{</highlight></codeline>
 <codeline lineno="395"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_horizontal_aligner_1a714d158a6d3ef8e8b1f9198ec61985db" kindref="member">HorizontalAligner</ref>(ClassId<sp/>classId);</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_horizontal_aligner_1a714d158a6d3ef8e8b1f9198ec61985db" kindref="member">HorizontalAligner</ref>(<ref refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5" kindref="member">ClassId</ref><sp/>classId);</highlight></codeline>
 <codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_horizontal_aligner" kindref="compound">HorizontalAligner</ref>();</highlight></codeline>
 <codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_horizontal_aligner_1a7d32f8b15fd9718940f8d7b08bf5107e" kindref="member">Reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="405"></codeline>
@@ -385,7 +390,7 @@
 <codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="416"><highlight class="normal"></highlight></codeline>
 <codeline lineno="417"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/>Alignment<sp/>*<ref refid="classvrv_1_1_horizontal_aligner_1a1b3764dfcb51917eca727e2e55c402b2" kindref="member">SearchAlignmentAtTime</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>time,<sp/>AlignmentType<sp/>type,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;idx);</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/>Alignment<sp/>*<ref refid="classvrv_1_1_horizontal_aligner_1a1b3764dfcb51917eca727e2e55c402b2" kindref="member">SearchAlignmentAtTime</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>time,<sp/><ref refid="namespacevrv_1acbf6eb578110ee61906ad288b5803922" kindref="member">AlignmentType</ref><sp/>type,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;idx);</highlight></codeline>
 <codeline lineno="423"><highlight class="normal"></highlight></codeline>
 <codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_horizontal_aligner_1ae93eb41d1c2ad2a6cb3f42e3ac523cde" kindref="member">AddAlignment</ref>(Alignment<sp/>*alignment,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>-1);</highlight></codeline>
 <codeline lineno="428"><highlight class="normal"></highlight></codeline>
@@ -406,7 +411,7 @@
 <codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_measure_aligner" kindref="compound">MeasureAligner</ref>();</highlight></codeline>
 <codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_measure_aligner_1a8c1fa7cdc214b01b2804f7a6b3b2c30d" kindref="member">Reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="455"></codeline>
-<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref><sp/>*<ref refid="classvrv_1_1_measure_aligner_1aeac4bcbe00b4bd1b05cae495b8dbb977" kindref="member">GetAlignmentAtTime</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>time,<sp/>AlignmentType<sp/>type);</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref><sp/>*<ref refid="classvrv_1_1_measure_aligner_1aeac4bcbe00b4bd1b05cae495b8dbb977" kindref="member">GetAlignmentAtTime</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>time,<sp/><ref refid="namespacevrv_1acbf6eb578110ee61906ad288b5803922" kindref="member">AlignmentType</ref><sp/>type);</highlight></codeline>
 <codeline lineno="462"><highlight class="normal"></highlight></codeline>
 <codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_measure_aligner_1aab4edf29c88be6e12e726668af041d9d" kindref="member">SetMaxTime</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>time);</highlight></codeline>
 <codeline lineno="469"><highlight class="normal"></highlight></codeline>
@@ -463,7 +468,7 @@
 <codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_grace_aligner" kindref="compound">GraceAligner</ref>();</highlight></codeline>
 <codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_grace_aligner_1a3365834414a59b88baa68bba24edc4a6" kindref="member">Reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="591"></codeline>
-<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref><sp/>*<ref refid="classvrv_1_1_grace_aligner_1afff40942e24be63eaf06455af86fba16" kindref="member">GetAlignmentAtTime</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>time,<sp/>AlignmentType<sp/>type);</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref><sp/>*<ref refid="classvrv_1_1_grace_aligner_1afff40942e24be63eaf06455af86fba16" kindref="member">GetAlignmentAtTime</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>time,<sp/><ref refid="namespacevrv_1acbf6eb578110ee61906ad288b5803922" kindref="member">AlignmentType</ref><sp/>type);</highlight></codeline>
 <codeline lineno="597"><highlight class="normal"></highlight></codeline>
 <codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_grace_aligner_1adafd1105e2839665f24976d256653ad8" kindref="member">StackGraceElement</ref>(<ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref><sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="605"><highlight class="normal"></highlight></codeline>

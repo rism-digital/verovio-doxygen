@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['writeobject_1852',['WriteObject',['../classvrv_1_1_output.html#a2f9a229fd8899ee37bb3575f1c769a1c',1,'vrv::Output::WriteObject()'],['../classvrv_1_1_m_e_i_output.html#a411c82a8c15e23378a0088111548faff',1,'vrv::MEIOutput::WriteObject()']]],
-  ['writeobjectend_1853',['WriteObjectEnd',['../classvrv_1_1_output.html#aae4a87a3b59a0de4e1d73ac366639802',1,'vrv::Output::WriteObjectEnd()'],['../classvrv_1_1_m_e_i_output.html#a65f7704c66919e1c03c486505d4d25f4',1,'vrv::MEIOutput::WriteObjectEnd()']]]
+  ['validatepae_2321',['ValidatePAE',['../classvrv_1_1_toolkit.html#a7311cd71df650b10f1ce75e037b49268',1,'vrv::Toolkit']]],
+  ['validatepaefile_2322',['ValidatePAEFile',['../classvrv_1_1_toolkit.html#a00a6268261b17ac90ba802ea9780e2df',1,'vrv::Toolkit']]],
+  ['verticalcorr_2323',['VerticalCorr',['../classvrv_1_1_artic.html#afb868c298d767bba4af4e57d50dbab7f',1,'vrv::Artic']]],
+  ['verticalrest_2324',['verticalRest',['../classvrv_1_1_humdrum_input.html#aeab1fa55b027b749bece352ef47b8ed3',1,'vrv::HumdrumInput']]],
+  ['view_2325',['View',['../classvrv_1_1_view.html#a721ff64f1ce15ac64a4e0b78308e84bd',1,'vrv::View']]]
 ];

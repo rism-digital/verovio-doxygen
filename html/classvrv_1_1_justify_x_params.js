@@ -1,6 +1,7 @@
 var classvrv_1_1_justify_x_params =
 [
     [ "JustifyXParams", "classvrv_1_1_justify_x_params.html#a10a548791d7db1ab112f7c3887b9bcfc", null ],
+    [ "m_applySectionRestartShift", "classvrv_1_1_justify_x_params.html#a871731f6d0c53979ce8c19e6f1dd1da5", null ],
     [ "m_doc", "classvrv_1_1_justify_x_params.html#a6e1b7cc1da03b0d52efe35ffcfdbcb00", null ],
     [ "m_functor", "classvrv_1_1_justify_x_params.html#a9b395161e9121d1244e065293061d212", null ],
     [ "m_justifiableRatio", "classvrv_1_1_justify_x_params.html#a91cd90d6a26cfaf6007e7736baad789c", null ],

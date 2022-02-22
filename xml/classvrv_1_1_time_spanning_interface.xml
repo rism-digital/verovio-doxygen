@@ -5,6 +5,7 @@
     <basecompoundref refid="classvrv_1_1_time_point_interface" prot="public" virt="non-virtual">vrv::TimePointInterface</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">AttStartEndId</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">AttTimestamp2Logical</basecompoundref>
+    <derivedcompoundref refid="classvrv_1_1_beam_span" prot="public" virt="non-virtual">vrv::BeamSpan</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_bracket_span" prot="public" virt="non-virtual">vrv::BracketSpan</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_dir" prot="public" virt="non-virtual">vrv::Dir</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_dynam" prot="public" virt="non-virtual">vrv::Dynam</derivedcompoundref>
@@ -68,7 +69,7 @@
         <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="143" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_time_spanning_interface_1a24093d53e5d2b33603322e16cfafb666" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type>InterfaceId</type>
+        <type><ref refid="namespacevrv_1ac7221611975ee29efd00f36d5f3241ed" kindref="member">InterfaceId</ref></type>
         <definition>InterfaceId vrv::TimeSpanningInterface::IsInterface</definition>
         <argsstring>() const override</argsstring>
         <name>IsInterface</name>
@@ -119,6 +120,43 @@
         <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="153" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" bodystart="153" bodyend="153"/>
       </memberdef>
       </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_time_spanning_interface_1abd58fe3d42369038ea1c5dcfc302a07a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::TimeSpanningInterface::IsOrdered</definition>
+        <argsstring>()</argsstring>
+        <name>IsOrdered</name>
+        <briefdescription>
+<para>Check if the end points are temporally ordered @Return true if end temporally occurs after start. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="186" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_time_spanning_interface_1a5067f794704ad642bc9e6ff5aa33ac66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::TimeSpanningInterface::IsOrdered</definition>
+        <argsstring>(LayerElement *start, LayerElement *end)</argsstring>
+        <name>IsOrdered</name>
+        <param>
+          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="187" column="10"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classvrv_1_1_time_spanning_interface_1a2221eddab68a105b279057c7402ed35e" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
@@ -131,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="225" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" bodystart="225" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="234" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" bodystart="234" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_time_spanning_interface_1a808d790edec25381f57d22bbbdca0c2d" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -144,7 +182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="226" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" bodystart="226" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="235" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" bodystart="235" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -219,10 +257,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="179" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_time_spanning_interface_1a963916dd83f823c3ae6ea5bfdfd6248d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_time_spanning_interface_1a41a52a993d10feeb4e09551b69c5ccf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::TimeSpanningInterface::GetCrossStaffOverflows</definition>
-        <argsstring>(StaffAlignment *alignment, curvature_CURVEDIR cuvreDir, bool &amp;skipAbove, bool &amp;skipBelow)</argsstring>
+        <argsstring>(StaffAlignment *alignment, curvature_CURVEDIR curveDir, bool &amp;skipAbove, bool &amp;skipBelow)</argsstring>
         <name>GetCrossStaffOverflows</name>
         <param>
           <type><ref refid="classvrv_1_1_staff_alignment" kindref="compound">StaffAlignment</ref> *</type>
@@ -230,7 +268,7 @@
         </param>
         <param>
           <type>curvature_CURVEDIR</type>
-          <declname>cuvreDir</declname>
+          <declname>curveDir</declname>
         </param>
         <param>
           <type>bool &amp;</type>
@@ -249,7 +287,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="186" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="195" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_time_spanning_interface_1a7eb9ec4141167667a95edb3e91b72c6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -272,7 +310,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="203" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="212" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_time_spanning_interface_1afdd5ee6c76457751a32e0f26310331d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -294,7 +332,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="208" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="217" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_time_spanning_interface_1a968d95a2a61a0b39edcb043d6a2e8c66" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -317,7 +355,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="213" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="222" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_time_spanning_interface_1a8d0cf15ea86bb003ba8de5a2f9138fd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -340,7 +378,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="218" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="227" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -350,13 +388,13 @@
 <para>It is not an abstract class but should not be instantiated directly. </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="20">
+      <node id="21">
         <label>vrv::Phrase</label>
         <link refid="classvrv_1_1_phrase"/>
-        <childnode refid="19" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="17">
+      <node id="18">
         <label>vrv::Pedal</label>
         <link refid="classvrv_1_1_pedal"/>
         <childnode refid="1" relation="public-inheritance">
@@ -374,19 +412,19 @@
         <childnode refid="6" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="16">
+      <node id="17">
         <label>vrv::Octave</label>
         <link refid="classvrv_1_1_octave"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10">
+      <node id="11">
         <label>vrv::Dir</label>
         <link refid="classvrv_1_1_dir"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15">
+      <node id="16">
         <label>vrv::Harm</label>
         <link refid="classvrv_1_1_harm"/>
         <childnode refid="1" relation="public-inheritance">
@@ -395,7 +433,7 @@
       <node id="5">
         <label>AttStartId</label>
       </node>
-      <node id="13">
+      <node id="14">
         <label>vrv::Gliss</label>
         <link refid="classvrv_1_1_gliss"/>
         <childnode refid="1" relation="public-inheritance">
@@ -415,7 +453,7 @@
         <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="24">
+      <node id="25">
         <label>vrv::Trill</label>
         <link refid="classvrv_1_1_trill"/>
         <childnode refid="1" relation="public-inheritance">
@@ -424,19 +462,19 @@
       <node id="7">
         <label>AttStartEndId</label>
       </node>
-      <node id="12">
+      <node id="13">
         <label>vrv::F</label>
         <link refid="classvrv_1_1_f"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="23">
+      <node id="24">
         <label>vrv::Lv</label>
         <link refid="classvrv_1_1_lv"/>
-        <childnode refid="22" relation="public-inheritance">
+        <childnode refid="23" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11">
+      <node id="12">
         <label>vrv::Dynam</label>
         <link refid="classvrv_1_1_dynam"/>
         <childnode refid="1" relation="public-inheritance">
@@ -448,25 +486,31 @@
       <node id="6">
         <label>AttTimestampLogical</label>
       </node>
-      <node id="22">
+      <node id="23">
         <label>vrv::Tie</label>
         <link refid="classvrv_1_1_tie"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="21">
+      <node id="22">
         <label>vrv::Syl</label>
         <link refid="classvrv_1_1_syl"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="18">
+      <node id="19">
         <label>vrv::PitchInflection</label>
         <link refid="classvrv_1_1_pitch_inflection"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="19">
+      <node id="9">
+        <label>vrv::BeamSpan</label>
+        <link refid="classvrv_1_1_beam_span"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
         <label>vrv::Slur</label>
         <link refid="classvrv_1_1_slur"/>
         <childnode refid="1" relation="public-inheritance">
@@ -475,13 +519,13 @@
       <node id="4">
         <label>AttStaffIdent</label>
       </node>
-      <node id="14">
+      <node id="15">
         <label>vrv::Hairpin</label>
         <link refid="classvrv_1_1_hairpin"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9">
+      <node id="10">
         <label>vrv::BracketSpan</label>
         <link refid="classvrv_1_1_bracket_span"/>
         <childnode refid="1" relation="public-inheritance">
@@ -502,13 +546,15 @@
         </childnode>
         <childnode refid="15" relation="public-inheritance">
         </childnode>
-        <childnode refid="16" relation="usage">
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="usage">
           <edgelabel>m_crossLayer</edgelabel>
         </childnode>
-        <childnode refid="21" relation="usage">
+        <childnode refid="22" relation="usage">
           <edgelabel>m_crossStaff</edgelabel>
         </childnode>
-        <childnode refid="42" relation="usage">
+        <childnode refid="45" relation="usage">
           <edgelabel>m_graceAlignment</edgelabel>
           <edgelabel>m_alignment</edgelabel>
         </childnode>
@@ -521,7 +567,7 @@
         <childnode refid="13" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="30">
+      <node id="33">
         <label>AttMultinumMeasures</label>
       </node>
       <node id="2">
@@ -539,60 +585,58 @@
           <edgelabel>m_start</edgelabel>
         </childnode>
       </node>
-      <node id="25">
+      <node id="27">
         <label>vrv::ScoreDefElement</label>
         <link refid="classvrv_1_1_score_def_element"/>
         <childnode refid="8" relation="public-inheritance">
         </childnode>
-        <childnode refid="26" relation="public-inheritance">
+        <childnode refid="28" relation="public-inheritance">
         </childnode>
-        <childnode refid="15" relation="public-inheritance">
+        <childnode refid="16" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="23">
+      <node id="25">
         <label>AttCourseLog</label>
       </node>
-      <node id="33">
+      <node id="36">
         <label>AttSystems</label>
       </node>
-      <node id="21">
+      <node id="22">
         <label>vrv::Staff</label>
         <link refid="classvrv_1_1_staff"/>
         <childnode refid="8" relation="public-inheritance">
         </childnode>
         <childnode refid="10" relation="public-inheritance">
         </childnode>
-        <childnode refid="19" relation="public-inheritance">
-        </childnode>
-        <childnode refid="15" relation="public-inheritance">
+        <childnode refid="23" relation="public-inheritance">
         </childnode>
         <childnode refid="20" relation="public-inheritance">
         </childnode>
-        <childnode refid="22" relation="usage">
-          <edgelabel>m_drawingTuning</edgelabel>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
         </childnode>
         <childnode refid="24" relation="usage">
+          <edgelabel>m_drawingTuning</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
           <edgelabel>m_drawingStaffDef</edgelabel>
         </childnode>
       </node>
-      <node id="35">
+      <node id="38">
         <label>AttDistances</label>
       </node>
-      <node id="15">
+      <node id="16">
         <label>AttTyped</label>
       </node>
       <node id="9">
         <label>vrv::BoundingBox</label>
         <link refid="classvrv_1_1_bounding_box"/>
       </node>
-      <node id="26">
+      <node id="28">
         <label>vrv::ScoreDefInterface</label>
         <link refid="classvrv_1_1_score_def_interface"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="27" relation="public-inheritance">
-        </childnode>
-        <childnode refid="28" relation="public-inheritance">
         </childnode>
         <childnode refid="29" relation="public-inheritance">
         </childnode>
@@ -604,6 +648,12 @@
         </childnode>
         <childnode refid="33" relation="public-inheritance">
         </childnode>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="5">
         <label>AttStartId</label>
@@ -612,10 +662,10 @@
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="29">
+      <node id="32">
         <label>AttMidiTempo</label>
       </node>
-      <node id="20">
+      <node id="21">
         <label>AttVisibility</label>
       </node>
       <node id="1">
@@ -623,34 +673,34 @@
         <link refid="classvrv_1_1_time_spanning_interface"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="43" relation="public-inheritance">
+        <childnode refid="46" relation="public-inheritance">
         </childnode>
-        <childnode refid="44" relation="public-inheritance">
+        <childnode refid="47" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="39">
+      <node id="42">
         <label>AttStaffDefVis</label>
       </node>
-      <node id="19">
+      <node id="20">
         <label>AttNInteger</label>
       </node>
-      <node id="16">
+      <node id="17">
         <label>vrv::Layer</label>
         <link refid="classvrv_1_1_layer"/>
         <childnode refid="8" relation="public-inheritance">
-        </childnode>
-        <childnode refid="17" relation="public-inheritance">
         </childnode>
         <childnode refid="18" relation="public-inheritance">
         </childnode>
         <childnode refid="19" relation="public-inheritance">
         </childnode>
-        <childnode refid="15" relation="public-inheritance">
-        </childnode>
         <childnode refid="20" relation="public-inheritance">
         </childnode>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="32">
+      <node id="35">
         <label>AttSpacing</label>
       </node>
       <node id="10">
@@ -661,55 +711,61 @@
         <childnode refid="11" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="36">
+      <node id="39">
         <label>AttNotationType</label>
       </node>
-      <node id="17">
+      <node id="14">
+        <label>AttCoordX1</label>
+      </node>
+      <node id="18">
         <label>vrv::DrawingListInterface</label>
         <link refid="classvrv_1_1_drawing_list_interface"/>
       </node>
-      <node id="43">
+      <node id="46">
         <label>AttStartEndId</label>
       </node>
-      <node id="22">
+      <node id="23">
+        <label>AttCoordY1</label>
+      </node>
+      <node id="24">
         <label>vrv::Tuning</label>
         <link refid="classvrv_1_1_tuning"/>
         <childnode refid="8" relation="public-inheritance">
         </childnode>
-        <childnode refid="23" relation="public-inheritance">
+        <childnode refid="25" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="34">
+      <node id="37">
         <label>vrv::StaffDefDrawingInterface</label>
         <link refid="classvrv_1_1_staff_def_drawing_interface"/>
       </node>
-      <node id="44">
+      <node id="47">
         <label>AttTimestamp2Logical</label>
       </node>
-      <node id="24">
+      <node id="26">
         <label>vrv::StaffDef</label>
         <link refid="classvrv_1_1_staff_def"/>
-        <childnode refid="25" relation="public-inheritance">
-        </childnode>
-        <childnode refid="34" relation="public-inheritance">
-        </childnode>
-        <childnode refid="35" relation="public-inheritance">
-        </childnode>
-        <childnode refid="14" relation="public-inheritance">
-        </childnode>
-        <childnode refid="19" relation="public-inheritance">
-        </childnode>
-        <childnode refid="36" relation="public-inheritance">
+        <childnode refid="27" relation="public-inheritance">
         </childnode>
         <childnode refid="37" relation="public-inheritance">
         </childnode>
         <childnode refid="38" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
         <childnode refid="39" relation="public-inheritance">
         </childnode>
         <childnode refid="40" relation="public-inheritance">
         </childnode>
         <childnode refid="41" relation="public-inheritance">
+        </childnode>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+        <childnode refid="44" relation="public-inheritance">
         </childnode>
       </node>
       <node id="6">
@@ -718,25 +774,28 @@
       <node id="13">
         <label>AttLinking</label>
       </node>
-      <node id="27">
+      <node id="30">
         <label>AttLyricStyle</label>
       </node>
       <node id="11">
         <label>AttFacsimile</label>
       </node>
-      <node id="41">
+      <node id="44">
         <label>AttTransposition</label>
       </node>
-      <node id="42">
+      <node id="29">
+        <label>AttDurationDefault</label>
+      </node>
+      <node id="45">
         <label>vrv::Alignment</label>
         <link refid="classvrv_1_1_alignment"/>
         <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="31">
+      <node id="34">
         <label>AttPianoPedals</label>
       </node>
-      <node id="38">
+      <node id="41">
         <label>AttStaffDefLog</label>
       </node>
       <node id="4">
@@ -748,28 +807,28 @@
         <childnode refid="9" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="28">
+      <node id="31">
         <label>AttMeasureNumbers</label>
       </node>
-      <node id="37">
+      <node id="40">
         <label>AttScalable</label>
       </node>
-      <node id="18">
+      <node id="19">
         <label>vrv::ObjectListInterface</label>
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
-      <node id="40">
+      <node id="43">
         <label>AttTimeBase</label>
       </node>
-      <node id="14">
+      <node id="15">
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="134" column="105" bodyfile="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" bodystart="134" bodyend="227"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="134" column="105" bodyfile="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" bodystart="134" bodyend="236"/>
     <listofallmembers>
       <member refid="classvrv_1_1_time_point_interface_1a67678cf06ae06579a830344df5c5598a" prot="public" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>AddStaff</name></member>
       <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>GetAttClasses</name></member>
-      <member refid="classvrv_1_1_time_spanning_interface_1a963916dd83f823c3ae6ea5bfdfd6248d" prot="public" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>GetCrossStaffOverflows</name></member>
+      <member refid="classvrv_1_1_time_spanning_interface_1a41a52a993d10feeb4e09551b69c5ccf0" prot="public" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>GetCrossStaffOverflows</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1ae3bf35a85b17a514c8559bf5e8385fc2" prot="public" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>GetEnd</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1ab1286ca2a24e646753e7ffcc6ff3394d" prot="public" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>GetEndMeasure</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a3cd14634c9ef2903e83a560ba52788a9" prot="public" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>GetStart</name></member>
@@ -785,6 +844,8 @@
       <member refid="classvrv_1_1_time_spanning_interface_1a8d0cf15ea86bb003ba8de5a2f9138fd7" prot="public" virt="virtual"><scope>vrv::TimeSpanningInterface</scope><name>InterfaceResetDrawing</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a24093d53e5d2b33603322e16cfafb666" prot="public" virt="virtual"><scope>vrv::TimeSpanningInterface</scope><name>IsInterface</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a11824d7f91a23984c3655671971c3592" prot="public" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>IsOnStaff</name></member>
+      <member refid="classvrv_1_1_time_spanning_interface_1abd58fe3d42369038ea1c5dcfc302a07a" prot="public" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>IsOrdered</name></member>
+      <member refid="classvrv_1_1_time_spanning_interface_1a5067f794704ad642bc9e6ff5aa33ac66" prot="public" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>IsOrdered</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a8889df0c70dd8ad214c556b776aa0511" prot="public" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>IsSpanningMeasures</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a2221eddab68a105b279057c7402ed35e" prot="private" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>m_end</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a808d790edec25381f57d22bbbdca0c2d" prot="private" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>m_endUuid</name></member>

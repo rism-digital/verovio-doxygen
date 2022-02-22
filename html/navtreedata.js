@@ -1,30 +1,36 @@
 /*
- @licstart  The following is the entire license notice for the JavaScript code in this file.
+@licstart  The following is the entire license notice for the
+JavaScript code in this file.
 
- The MIT License (MIT)
+Copyright (C) 1997-2019 by Dimitri van Heesch
 
- Copyright (C) 1997-2020 by Dimitri van Heesch
+This program is free software; you can redistribute it and/or modify
+it under the terms of version 2 of the GNU General Public License as published by
+the Free Software Foundation
 
- Permission is hereby granted, free of charge, to any person obtaining a copy of this software
- and associated documentation files (the "Software"), to deal in the Software without restriction,
- including without limitation the rights to use, copy, modify, merge, publish, distribute,
- sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
 
- The above copyright notice and this permission notice shall be included in all copies or
- substantial portions of the Software.
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
- BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
- DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
- @licend  The above is the entire license notice for the JavaScript code in this file
+@licend  The above is the entire license notice
+for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "My Project", "index.html", [
+  [ "Verovio", "index.html", [
+    [ "Modules", "modules.html", "modules" ],
+    [ "Namespace Members", "namespacemembers.html", [
+      [ "All", "namespacemembers.html", null ],
+      [ "Functions", "namespacemembers_func.html", null ],
+      [ "Variables", "namespacemembers_vars.html", null ],
+      [ "Typedefs", "namespacemembers_type.html", null ],
+      [ "Enumerations", "namespacemembers_enum.html", null ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -46,26 +52,28 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "abbr_8h_source.html",
-"classvrv_1_1_alignment.html#ace45fe11ad8e9befcdaea18ecc2cf5ca",
-"classvrv_1_1_bar_line.html#a83331e33eca87896ba18383a9d902db4",
-"classvrv_1_1_calc_onset_offset_params.html#a1b590fbdbe9b0b20cbebc68c0af986ea",
-"classvrv_1_1_device_context.html#a9843522526eee72a9db4cc5ab566f943",
-"classvrv_1_1_editor_toolkit_neume.html#a03f19235626c5060c2f43a5044827779",
-"classvrv_1_1_floating_curve_positioner.html#a91f91d2639e931d321fae0dc47dd2f07",
-"classvrv_1_1_humdrum_input.html#a0c09cfad5c79b97e9dd3301e4c9925d6",
-"classvrv_1_1_humdrum_input.html#ac98af05229a51a05b1cfc6b6d0842ce5",
-"classvrv_1_1_layer.html#ac9cff14271883d9b18f0e14a4b56a1d8",
-"classvrv_1_1_measure.html#a361599317323129d770b37bb2fb88576",
-"classvrv_1_1_object.html#a07dfe3de52f16cff12eefabe11c6cd96",
-"classvrv_1_1_octave.html#a229ec2da837f68c480ab55161beb1cb8",
-"classvrv_1_1_options.html#aa44b3323247f238b51105a92f1e5d214",
-"classvrv_1_1_prepare_cross_staff_params.html#a7cf5b0f5d996e012dbd33ab67e584377",
-"classvrv_1_1_section.html#ad58f3e2338a0c69d60712ee4a15a9f6d",
-"classvrv_1_1_stemmed_drawing_interface.html#aa990dc55c67926e2b841b858667a46d2",
-"classvrv_1_1_text_drawing_params.html",
-"classvrv_1_1_transposer.html#afb8d93888f4debdbd880cfad554f62af",
-"classvrv_1_1_view.html#abc6d0a996e82ac4c0cebf76e88132446",
-"labelabbr_8h_source.html"
+"classvrv_1_1_align_measures_params.html#a734d6612957596ed339ffe5a3236d76f",
+"classvrv_1_1_att_visibility_comparison.html#a8753160d428fd9216a6e23625a3f6b82",
+"classvrv_1_1_bounding_box.html#a363e14e29dcb72d6539a832921c538f9",
+"classvrv_1_1_control_element.html#a22f1eb1bb3c79301295a80e054804fa8",
+"classvrv_1_1_doc.html#a9cea4dcc5865c9d8a5381da45f6d20ab",
+"classvrv_1_1_f.html#ae2df627f5b98b03575c2d8bd23b24fd9",
+"classvrv_1_1_functor.html",
+"classvrv_1_1_humdrum_input.html#a3a459374bc6abf82df87b359c00782d4",
+"classvrv_1_1_humdrum_input.html#af6f30cc5fc0a573613902fc396686ad7",
+"classvrv_1_1_layer_element.html#a551d3554b1625dfd63d8861c1871068d",
+"classvrv_1_1_measure.html#a4e1219261a510f2b7e2abeae928177e6",
+"classvrv_1_1_object.html#a07880f4ad709e37ca6b5483110905383",
+"classvrv_1_1_object.html#af10db2b195d5667b53c982409ecb9500",
+"classvrv_1_1_options.html#a5ded106a1115fde217014cbf2826a0e9",
+"classvrv_1_1_pedal.html#a06e5a67b00c9c8f8e560d174c36fb309",
+"classvrv_1_1_replace_drawing_values_in_staff_def_params.html#a58480b3e330f474a960b791d90ab285c",
+"classvrv_1_1_sic.html#a94e38aa61e59c91b03b7c23b8a028985",
+"classvrv_1_1_supplied.html",
+"classvrv_1_1_tab_dur_sym.html",
+"classvrv_1_1_transposer.html#a00956cebd10dacb13328318c683acdb7",
+"classvrv_1_1_view.html#a4d6494db9a0b808907982e79fce1a566",
+"editorial_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

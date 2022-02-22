@@ -3,10 +3,11 @@
   <compounddef id="classvrv_1_1_class_ids_comparison" kind="class" language="C++" prot="public">
     <compoundname>vrv::ClassIdsComparison</compoundname>
     <basecompoundref refid="classvrv_1_1_comparison" prot="public" virt="non-virtual">vrv::Comparison</basecompoundref>
+    <derivedcompoundref refid="classvrv_1_1_note_or_rest_onset_offset_comparison" prot="public" virt="non-virtual">vrv::NoteOrRestOnsetOffsetComparison</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_visible_staff_def_or_grp_object" prot="public" virt="non-virtual">vrv::VisibleStaffDefOrGrpObject</derivedcompoundref>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classvrv_1_1_class_ids_comparison_1af0f0febc946426305ae03d43d680fb8c" prot="protected" static="no" mutable="no">
-        <type>std::vector&lt; ClassId &gt;</type>
+        <type>std::vector&lt; <ref refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5" kindref="member">ClassId</ref> &gt;</type>
         <definition>std::vector&lt;ClassId&gt; vrv::ClassIdsComparison::m_classIds</definition>
         <argsstring></argsstring>
         <name>m_classIds</name>
@@ -16,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/comparison.h" line="109" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/comparison.h" bodystart="109" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/comparison.h" line="90" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/comparison.h" bodystart="90" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -26,7 +27,7 @@
         <argsstring>(const std::vector&lt; ClassId &gt; &amp;classIds)</argsstring>
         <name>ClassIdsComparison</name>
         <param>
-          <type>const std::vector&lt; ClassId &gt; &amp;</type>
+          <type>const std::vector&lt; <ref refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5" kindref="member">ClassId</ref> &gt; &amp;</type>
           <declname>classIds</declname>
         </param>
         <briefdescription>
@@ -35,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/comparison.h" line="92" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/comparison.h" bodystart="92" bodyend="96"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/comparison.h" line="79" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/comparison.h" bodystart="79" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_class_ids_comparison_1a615762aff497e6aadd642e39b1c74b62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -43,6 +44,7 @@
         <argsstring>(Object *object) override</argsstring>
         <name>operator()</name>
         <reimplements refid="classvrv_1_1_comparison_1a7475c6f175d151734e27030596229c38">operator()</reimplements>
+        <reimplementedby refid="classvrv_1_1_note_or_rest_onset_offset_comparison_1a79041ed465435bc34d8d45b95816d69d">operator()</reimplementedby>
         <reimplementedby refid="classvrv_1_1_visible_staff_def_or_grp_object_1a761be012007a1d4e73a40deb5de03d8f">operator()</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
@@ -54,14 +56,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/comparison.h" line="98" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/comparison.h" bodystart="98" bodyend="104"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/comparison.h" line="85" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/comparison.h" bodystart="85" bodyend="85"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_class_ids_comparison_1aba31042d7737dccb565b829ebf213505" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_class_ids_comparison_1a54251f91aa78f2792c1c17465a7ceecb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::ClassIdsComparison::MatchesType</definition>
-        <argsstring>(Object *object) override</argsstring>
+        <argsstring>(Object *object)</argsstring>
         <name>MatchesType</name>
-        <reimplements refid="classvrv_1_1_comparison_1a7bfa626596bfb256d03a1d55c77e8f64">MatchesType</reimplements>
         <param>
           <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
           <declname>object</declname>
@@ -72,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/comparison.h" line="106" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/comparison.h" bodystart="106" bodyend="106"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/comparison.h" line="87" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/comparison.h" bodystart="87" bodyend="87"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -80,6 +81,12 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
+      <node id="3">
+        <label>vrv::NoteOrRestOnsetOffsetComparison</label>
+        <link refid="classvrv_1_1_note_or_rest_onset_offset_comparison"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="1">
         <label>vrv::ClassIdsComparison</label>
         <link refid="classvrv_1_1_class_ids_comparison"/>
@@ -90,7 +97,7 @@
         <label>vrv::Comparison</label>
         <link refid="classvrv_1_1_comparison"/>
       </node>
-      <node id="3">
+      <node id="4">
         <label>vrv::VisibleStaffDefOrGrpObject</label>
         <link refid="classvrv_1_1_visible_staff_def_or_grp_object"/>
         <childnode refid="1" relation="public-inheritance">
@@ -109,12 +116,12 @@
         <link refid="classvrv_1_1_comparison"/>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/comparison.h" line="89" column="43" bodyfile="/home/runner/work/verovio/verovio/include/vrv/comparison.h" bodystart="89" bodyend="110"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/comparison.h" line="76" column="43" bodyfile="/home/runner/work/verovio/verovio/include/vrv/comparison.h" bodystart="76" bodyend="91"/>
     <listofallmembers>
       <member refid="classvrv_1_1_class_ids_comparison_1a20654d270f899524c6f4994e0a91557c" prot="public" virt="non-virtual"><scope>vrv::ClassIdsComparison</scope><name>ClassIdsComparison</name></member>
       <member refid="classvrv_1_1_class_ids_comparison_1af0f0febc946426305ae03d43d680fb8c" prot="protected" virt="non-virtual"><scope>vrv::ClassIdsComparison</scope><name>m_classIds</name></member>
       <member refid="classvrv_1_1_comparison_1a92988e2685626527724dc49a0ec8f871" prot="protected" virt="non-virtual"><scope>vrv::ClassIdsComparison</scope><name>m_supportReverse</name></member>
-      <member refid="classvrv_1_1_class_ids_comparison_1aba31042d7737dccb565b829ebf213505" prot="public" virt="virtual"><scope>vrv::ClassIdsComparison</scope><name>MatchesType</name></member>
+      <member refid="classvrv_1_1_class_ids_comparison_1a54251f91aa78f2792c1c17465a7ceecb" prot="public" virt="non-virtual"><scope>vrv::ClassIdsComparison</scope><name>MatchesType</name></member>
       <member refid="classvrv_1_1_class_ids_comparison_1a615762aff497e6aadd642e39b1c74b62" prot="public" virt="virtual"><scope>vrv::ClassIdsComparison</scope><name>operator()</name></member>
       <member refid="classvrv_1_1_comparison_1a37942706c6e3b456614918d7e7f7fe98" prot="public" virt="non-virtual"><scope>vrv::ClassIdsComparison</scope><name>Result</name></member>
       <member refid="classvrv_1_1_comparison_1a929ae60ab691c8f16b8d7b4fd07f3fc1" prot="public" virt="non-virtual"><scope>vrv::ClassIdsComparison</scope><name>ReverseComparison</name></member>

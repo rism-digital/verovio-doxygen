@@ -4,6 +4,7 @@
     <compoundname>vrv::StemmedDrawingInterface</compoundname>
     <derivedcompoundref refid="classvrv_1_1_chord" prot="public" virt="non-virtual">vrv::Chord</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_note" prot="public" virt="non-virtual">vrv::Note</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_tab_dur_sym" prot="public" virt="non-virtual">vrv::TabDurSym</derivedcompoundref>
     <includes refid="drawinginterface_8h" local="no">drawinginterface.h</includes>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors, and other standard methods</header>
@@ -18,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="267" column="5"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="306" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stemmed_drawing_interface_1a846549fb2b39c08115223645a8cf1a6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -31,13 +32,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="268" column="13"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="307" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stemmed_drawing_interface_1a43de0958ac09bc7ca279377ad7dd490e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
         <definition>virtual void vrv::StemmedDrawingInterface::Reset</definition>
         <argsstring>()</argsstring>
         <name>Reset</name>
+        <reimplementedby refid="classvrv_1_1_tab_dur_sym_1adbcbfec64d9b682d161c8448f0ecfde1">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_chord_1a4b05be56b85202f76ab861836f8c04c2">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_note_1abca9669b833294866e46d310a4ce1ec0">Reset</reimplementedby>
         <briefdescription>
@@ -46,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="269" column="18"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="308" column="18"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -68,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="280" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="319" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stemmed_drawing_interface_1a0e66eb68b203977a9f02aa25fd281fc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>data_STEMDIRECTION</type>
@@ -81,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="281" column="24"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="320" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stemmed_drawing_interface_1ad3647b086385d8f6586a6d140c1198c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -98,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="282" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="321" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stemmed_drawing_interface_1aa990dc55c67926e2b841b858667a46d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -111,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="283" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="322" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -121,6 +123,7 @@
         <definition>virtual Point vrv::StemmedDrawingInterface::GetStemUpSE</definition>
         <argsstring>(Doc *doc, int staffSize, bool graceSize)=0</argsstring>
         <name>GetStemUpSE</name>
+        <reimplementedby refid="classvrv_1_1_tab_dur_sym_1ae0bb480d7bdcaf4d1f201b20df103254">GetStemUpSE</reimplementedby>
         <reimplementedby refid="classvrv_1_1_chord_1a2921ff920a26a095d97cfdf2ed2150b3">GetStemUpSE</reimplementedby>
         <reimplementedby refid="classvrv_1_1_note_1a6254802daf2625dc5fb1b82ada63a3aa">GetStemUpSE</reimplementedby>
         <param>
@@ -141,13 +144,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="293" column="19"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="332" column="19"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stemmed_drawing_interface_1aa0f48d7eae7644a8fd4734f6652d65e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="classvrv_1_1_point" kindref="compound">Point</ref></type>
         <definition>virtual Point vrv::StemmedDrawingInterface::GetStemDownNW</definition>
         <argsstring>(Doc *doc, int staffSize, bool graceSize)=0</argsstring>
         <name>GetStemDownNW</name>
+        <reimplementedby refid="classvrv_1_1_tab_dur_sym_1a681fe8fa273d34b9717afd3362ad31ba">GetStemDownNW</reimplementedby>
         <reimplementedby refid="classvrv_1_1_chord_1ad41c83c09c0e09b9a151190e80f58851">GetStemDownNW</reimplementedby>
         <reimplementedby refid="classvrv_1_1_note_1a6eb7ccf07fa72ce293410d2f58ac047a">GetStemDownNW</reimplementedby>
         <param>
@@ -168,13 +172,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="294" column="19"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="333" column="19"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stemmed_drawing_interface_1ab518eec8db36e95d691419f557bcf45a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>int</type>
         <definition>virtual int vrv::StemmedDrawingInterface::CalcStemLenInThirdUnits</definition>
         <argsstring>(Staff *staff, data_STEMDIRECTION stemDir)=0</argsstring>
         <name>CalcStemLenInThirdUnits</name>
+        <reimplementedby refid="classvrv_1_1_tab_dur_sym_1a91f06b010e2c2479196e2007a66d2898">CalcStemLenInThirdUnits</reimplementedby>
         <reimplementedby refid="classvrv_1_1_chord_1ae3e0dbfff7dc77c2a0f70cc1bc6cb401">CalcStemLenInThirdUnits</reimplementedby>
         <reimplementedby refid="classvrv_1_1_note_1afe4bad9d0e38826cefbf537b4c1a69f3">CalcStemLenInThirdUnits</reimplementedby>
         <param>
@@ -191,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="295" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="334" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -207,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="302" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="302" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="341" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="341" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -226,7 +231,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="272" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="311" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stemmed_drawing_interface_1a0dd608248567f09598a5bf79502c6df2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classvrv_1_1_stem" kindref="compound">Stem</ref> *</type>
@@ -239,7 +244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="273" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="273" bodyend="273"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="312" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="312" bodyend="312"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stemmed_drawing_interface_1a1f7c5905a415b9b1e59766d2fe04479c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classvrv_1_1_point" kindref="compound">Point</ref></type>
@@ -257,7 +262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="286" column="11"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="325" column="11"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stemmed_drawing_interface_1abb143107baeb30b8a651005be5631482" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classvrv_1_1_point" kindref="compound">Point</ref></type>
@@ -275,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="287" column="11"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="326" column="11"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -288,6 +293,12 @@
       <node id="1">
         <label>vrv::StemmedDrawingInterface</label>
         <link refid="classvrv_1_1_stemmed_drawing_interface"/>
+      </node>
+      <node id="4">
+        <label>vrv::TabDurSym</label>
+        <link refid="classvrv_1_1_tab_dur_sym"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="3">
         <label>vrv::Note</label>
@@ -316,13 +327,15 @@
         </childnode>
         <childnode refid="12" relation="public-inheritance">
         </childnode>
-        <childnode refid="13" relation="usage">
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
           <edgelabel>m_crossLayer</edgelabel>
         </childnode>
-        <childnode refid="18" relation="usage">
+        <childnode refid="19" relation="usage">
           <edgelabel>m_crossStaff</edgelabel>
         </childnode>
-        <childnode refid="39" relation="usage">
+        <childnode refid="42" relation="usage">
           <edgelabel>m_graceAlignment</edgelabel>
           <edgelabel>m_alignment</edgelabel>
         </childnode>
@@ -335,17 +348,17 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="27">
+      <node id="30">
         <label>AttMultinumMeasures</label>
       </node>
-      <node id="22">
+      <node id="24">
         <label>vrv::ScoreDefElement</label>
         <link refid="classvrv_1_1_score_def_element"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
-        <childnode refid="23" relation="public-inheritance">
+        <childnode refid="25" relation="public-inheritance">
         </childnode>
-        <childnode refid="12" relation="public-inheritance">
+        <childnode refid="13" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1">
@@ -355,50 +368,48 @@
           <edgelabel>m_drawingStem</edgelabel>
         </childnode>
       </node>
-      <node id="20">
+      <node id="22">
         <label>AttCourseLog</label>
       </node>
-      <node id="30">
+      <node id="33">
         <label>AttSystems</label>
       </node>
-      <node id="18">
+      <node id="19">
         <label>vrv::Staff</label>
         <link refid="classvrv_1_1_staff"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
         <childnode refid="6" relation="public-inheritance">
         </childnode>
-        <childnode refid="16" relation="public-inheritance">
-        </childnode>
-        <childnode refid="12" relation="public-inheritance">
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
         <childnode refid="17" relation="public-inheritance">
         </childnode>
-        <childnode refid="19" relation="usage">
-          <edgelabel>m_drawingTuning</edgelabel>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="public-inheritance">
         </childnode>
         <childnode refid="21" relation="usage">
+          <edgelabel>m_drawingTuning</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
           <edgelabel>m_drawingStaffDef</edgelabel>
         </childnode>
       </node>
-      <node id="32">
+      <node id="35">
         <label>AttDistances</label>
       </node>
-      <node id="12">
+      <node id="13">
         <label>AttTyped</label>
       </node>
       <node id="5">
         <label>vrv::BoundingBox</label>
         <link refid="classvrv_1_1_bounding_box"/>
       </node>
-      <node id="23">
+      <node id="25">
         <label>vrv::ScoreDefInterface</label>
         <link refid="classvrv_1_1_score_def_interface"/>
         <childnode refid="7" relation="public-inheritance">
-        </childnode>
-        <childnode refid="24" relation="public-inheritance">
-        </childnode>
-        <childnode refid="25" relation="public-inheritance">
         </childnode>
         <childnode refid="26" relation="public-inheritance">
         </childnode>
@@ -410,40 +421,46 @@
         </childnode>
         <childnode refid="30" relation="public-inheritance">
         </childnode>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="7">
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="26">
+      <node id="29">
         <label>AttMidiTempo</label>
       </node>
-      <node id="17">
+      <node id="18">
         <label>AttVisibility</label>
       </node>
-      <node id="36">
+      <node id="39">
         <label>AttStaffDefVis</label>
       </node>
-      <node id="16">
+      <node id="17">
         <label>AttNInteger</label>
       </node>
-      <node id="13">
+      <node id="14">
         <label>vrv::Layer</label>
         <link refid="classvrv_1_1_layer"/>
         <childnode refid="4" relation="public-inheritance">
-        </childnode>
-        <childnode refid="14" relation="public-inheritance">
         </childnode>
         <childnode refid="15" relation="public-inheritance">
         </childnode>
         <childnode refid="16" relation="public-inheritance">
         </childnode>
-        <childnode refid="12" relation="public-inheritance">
-        </childnode>
         <childnode refid="17" relation="public-inheritance">
         </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="29">
+      <node id="32">
         <label>AttSpacing</label>
       </node>
       <node id="6">
@@ -454,46 +471,46 @@
         <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="33">
+      <node id="36">
         <label>AttNotationType</label>
       </node>
-      <node id="14">
+      <node id="11">
+        <label>AttCoordX1</label>
+      </node>
+      <node id="15">
         <label>vrv::DrawingListInterface</label>
         <link refid="classvrv_1_1_drawing_list_interface"/>
       </node>
-      <node id="19">
+      <node id="20">
+        <label>AttCoordY1</label>
+      </node>
+      <node id="21">
         <label>vrv::Tuning</label>
         <link refid="classvrv_1_1_tuning"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
-        <childnode refid="20" relation="public-inheritance">
+        <childnode refid="22" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="31">
+      <node id="34">
         <label>vrv::StaffDefDrawingInterface</label>
         <link refid="classvrv_1_1_staff_def_drawing_interface"/>
       </node>
-      <node id="41">
+      <node id="44">
         <label>AttStems</label>
       </node>
-      <node id="21">
+      <node id="23">
         <label>vrv::StaffDef</label>
         <link refid="classvrv_1_1_staff_def"/>
-        <childnode refid="22" relation="public-inheritance">
-        </childnode>
-        <childnode refid="31" relation="public-inheritance">
-        </childnode>
-        <childnode refid="32" relation="public-inheritance">
-        </childnode>
-        <childnode refid="11" relation="public-inheritance">
-        </childnode>
-        <childnode refid="16" relation="public-inheritance">
-        </childnode>
-        <childnode refid="33" relation="public-inheritance">
+        <childnode refid="24" relation="public-inheritance">
         </childnode>
         <childnode refid="34" relation="public-inheritance">
         </childnode>
         <childnode refid="35" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="public-inheritance">
         </childnode>
         <childnode refid="36" relation="public-inheritance">
         </childnode>
@@ -501,35 +518,44 @@
         </childnode>
         <childnode refid="38" relation="public-inheritance">
         </childnode>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="10">
         <label>AttLinking</label>
       </node>
-      <node id="24">
+      <node id="27">
         <label>AttLyricStyle</label>
       </node>
       <node id="8">
         <label>AttFacsimile</label>
       </node>
-      <node id="38">
+      <node id="41">
         <label>AttTransposition</label>
       </node>
-      <node id="40">
+      <node id="26">
+        <label>AttDurationDefault</label>
+      </node>
+      <node id="43">
         <label>AttGraced</label>
       </node>
-      <node id="39">
+      <node id="42">
         <label>vrv::Alignment</label>
         <link refid="classvrv_1_1_alignment"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="28">
+      <node id="31">
         <label>AttPianoPedals</label>
       </node>
-      <node id="35">
+      <node id="38">
         <label>AttStaffDefLog</label>
       </node>
-      <node id="42">
+      <node id="45">
         <label>AttStemsCmn</label>
       </node>
       <node id="4">
@@ -543,31 +569,31 @@
         <link refid="classvrv_1_1_stem"/>
         <childnode refid="3" relation="public-inheritance">
         </childnode>
-        <childnode refid="40" relation="public-inheritance">
+        <childnode refid="43" relation="public-inheritance">
         </childnode>
-        <childnode refid="41" relation="public-inheritance">
+        <childnode refid="44" relation="public-inheritance">
         </childnode>
-        <childnode refid="42" relation="public-inheritance">
+        <childnode refid="45" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="25">
+      <node id="28">
         <label>AttMeasureNumbers</label>
       </node>
-      <node id="34">
+      <node id="37">
         <label>AttScalable</label>
       </node>
-      <node id="15">
+      <node id="16">
         <label>vrv::ObjectListInterface</label>
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
-      <node id="37">
+      <node id="40">
         <label>AttTimeBase</label>
       </node>
-      <node id="11">
+      <node id="12">
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="261" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="261" bodyend="303"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="300" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="300" bodyend="342"/>
     <listofallmembers>
       <member refid="classvrv_1_1_stemmed_drawing_interface_1ab518eec8db36e95d691419f557bcf45a" prot="public" virt="pure-virtual"><scope>vrv::StemmedDrawingInterface</scope><name>CalcStemLenInThirdUnits</name></member>
       <member refid="classvrv_1_1_stemmed_drawing_interface_1a0dd608248567f09598a5bf79502c6df2" prot="public" virt="non-virtual"><scope>vrv::StemmedDrawingInterface</scope><name>GetDrawingStem</name></member>

@@ -23,27 +23,30 @@
       <node id="8">
         <label>map</label>
       </node>
-      <node id="11">
+      <node id="12">
         <label>attdef.h</label>
         <link refid="attdef_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
         <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
       <node id="10">
+        <label>tuple</label>
+      </node>
+      <node id="11">
         <label>vector</label>
       </node>
-      <node id="12">
+      <node id="13">
         <label>utility</label>
       </node>
-      <node id="14">
+      <node id="15">
         <label>math.h</label>
       </node>
       <node id="1">
@@ -56,7 +59,7 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="13">
+      <node id="14">
         <label>attclasses.h</label>
       </node>
       <node id="9">
@@ -82,7 +85,9 @@
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -212,20 +217,20 @@
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atttypes.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vrvdef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vrv<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacevrv" kindref="compound">vrv</ref><sp/>{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Alternate<sp/>data<sp/>types<sp/>not<sp/>generated<sp/>by<sp/>LibMEI</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>FontSizeType<sp/>{<sp/>FONTSIZE_NONE<sp/>=<sp/>0,<sp/>FONTSIZE_fontSizeNumeric,<sp/>FONTSIZE_term,<sp/>FONTSIZE_percent<sp/>};</highlight></codeline>
+<codeline lineno="29" refid="namespacevrv_1a29a5b69d4248bcb56829333e3045a0eb" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacevrv_1a29a5b69d4248bcb56829333e3045a0eb" kindref="member">FontSizeType</ref><sp/>{<sp/>FONTSIZE_NONE<sp/>=<sp/>0,<sp/>FONTSIZE_fontSizeNumeric,<sp/>FONTSIZE_term,<sp/>FONTSIZE_percent<sp/>};</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31" refid="classvrv_1_1data___f_o_n_t_s_i_z_e" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1data___f_o_n_t_s_i_z_e" kindref="compound">data_FONTSIZE</ref><sp/>{</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1data___f_o_n_t_s_i_z_e" kindref="compound">data_FONTSIZE</ref>()<sp/>{<sp/>Reset(FONTSIZE_NONE);<sp/>}</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1data___f_o_n_t_s_i_z_e" kindref="compound">data_FONTSIZE</ref>()<sp/>{}</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset(FontSizeType<sp/>type)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset(<ref refid="namespacevrv_1a29a5b69d4248bcb56829333e3045a0eb" kindref="member">FontSizeType</ref><sp/>type)</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_type<sp/>=<sp/>type;</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_fontSizeNumeric<sp/>=<sp/>VRV_UNSET;</highlight></codeline>
@@ -233,10 +238,10 @@
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_percent<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>FontSizeType<sp/>GetType()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_type;<sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a29a5b69d4248bcb56829333e3045a0eb" kindref="member">FontSizeType</ref><sp/>GetType()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_type;<sp/>}</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>data_FONTSIZENUMERIC<sp/>GetFontSizeNumeric()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_fontSizeNumeric;<sp/>}</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetFontSizeNumeric(data_FONTSIZENUMERIC<sp/>value)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a188ba92f38a2d40af57aa0029ffc37f5" kindref="member">data_FONTSIZENUMERIC</ref><sp/>GetFontSizeNumeric()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_fontSizeNumeric;<sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetFontSizeNumeric(<ref refid="namespacevrv_1a188ba92f38a2d40af57aa0029ffc37f5" kindref="member">data_FONTSIZENUMERIC</ref><sp/>value)</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Reset(FONTSIZE_fontSizeNumeric);</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_fontSizeNumeric<sp/>=<sp/>value;</highlight></codeline>
@@ -249,8 +254,8 @@
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_term<sp/>=<sp/>value;</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>data_PERCENT<sp/>GetPercent()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_percent;<sp/>}</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetPercent(data_PERCENT<sp/>value)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a284ae096c03bb2bbeb3ec5439f618922" kindref="member">data_PERCENT</ref><sp/>GetPercent()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_percent;<sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetPercent(<ref refid="namespacevrv_1a284ae096c03bb2bbeb3ec5439f618922" kindref="member">data_PERCENT</ref><sp/>value)</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Reset(FONTSIZE_percent);</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_percent<sp/>=<sp/>value;</highlight></codeline>
@@ -291,27 +296,27 @@
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1data___f_o_n_t_s_i_z_e" kindref="compound">data_FONTSIZE</ref><sp/>&amp;val)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>val);<sp/>}</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>FontSizeType<sp/>m_type;</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>data_FONTSIZENUMERIC<sp/>m_fontSizeNumeric;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a29a5b69d4248bcb56829333e3045a0eb" kindref="member">FontSizeType</ref><sp/>m_type;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a188ba92f38a2d40af57aa0029ffc37f5" kindref="member">data_FONTSIZENUMERIC</ref><sp/>m_fontSizeNumeric;</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>data_FONTSIZETERM<sp/>m_term;</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>data_PERCENT<sp/>m_percent;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a284ae096c03bb2bbeb3ec5439f618922" kindref="member">data_PERCENT</ref><sp/>m_percent;</highlight></codeline>
 <codeline lineno="106"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>LinewidthType<sp/>{<sp/>LINEWIDTHTYPE_NONE<sp/>=<sp/>0,<sp/>LINEWIDTHTYPE_lineWidthTerm,<sp/>LINEWIDTHTYPE_measurementAbs<sp/>};</highlight></codeline>
+<codeline lineno="113" refid="namespacevrv_1aa246e8e502be0a359410a5b25c43f664" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacevrv_1aa246e8e502be0a359410a5b25c43f664" kindref="member">LinewidthType</ref><sp/>{<sp/>LINEWIDTHTYPE_NONE<sp/>=<sp/>0,<sp/>LINEWIDTHTYPE_lineWidthTerm,<sp/>LINEWIDTHTYPE_measurementAbs<sp/>};</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight></codeline>
 <codeline lineno="115" refid="classvrv_1_1data___l_i_n_e_w_i_d_t_h" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1data___l_i_n_e_w_i_d_t_h" kindref="compound">data_LINEWIDTH</ref><sp/>{</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1data___l_i_n_e_w_i_d_t_h" kindref="compound">data_LINEWIDTH</ref>()<sp/>{<sp/>Reset(LINEWIDTHTYPE_NONE);<sp/>}</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1data___l_i_n_e_w_i_d_t_h" kindref="compound">data_LINEWIDTH</ref>()<sp/>{}</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset(LinewidthType<sp/>type)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset(<ref refid="namespacevrv_1aa246e8e502be0a359410a5b25c43f664" kindref="member">LinewidthType</ref><sp/>type)</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_type<sp/>=<sp/>type;</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_lineWidthTerm<sp/>=<sp/>LINEWIDTHTERM_NONE;</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_measurementAbs<sp/>=<sp/>VRV_UNSET;</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"></highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>LinewidthType<sp/>GetType()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_type;<sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1aa246e8e502be0a359410a5b25c43f664" kindref="member">LinewidthType</ref><sp/>GetType()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_type;<sp/>}</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"></highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>data_LINEWIDTHTERM<sp/>GetLineWithTerm()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_lineWidthTerm;<sp/>}</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetLineWidthTerm(data_LINEWIDTHTERM<sp/>value)</highlight></codeline>
@@ -320,8 +325,8 @@
 <codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_lineWidthTerm<sp/>=<sp/>value;</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>data_MEASUREMENTABS<sp/>GetMeasurementAbs()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_measurementAbs;<sp/>}</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetMeasurementAbs(data_MEASUREMENTABS<sp/>value)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a3df7e8419a61cb7e2aa14b0d2cf4b1f9" kindref="member">data_MEASUREMENTABS</ref><sp/>GetMeasurementAbs()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_measurementAbs;<sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetMeasurementAbs(<ref refid="namespacevrv_1a3df7e8419a61cb7e2aa14b0d2cf4b1f9" kindref="member">data_MEASUREMENTABS</ref><sp/>value)</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Reset(LINEWIDTHTYPE_measurementAbs);</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_measurementAbs<sp/>=<sp/>value;</highlight></codeline>
@@ -345,36 +350,36 @@
 <codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1data___l_i_n_e_w_i_d_t_h" kindref="compound">data_LINEWIDTH</ref><sp/>&amp;val)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>val);<sp/>}</highlight></codeline>
 <codeline lineno="159"><highlight class="normal"></highlight></codeline>
 <codeline lineno="160"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>LinewidthType<sp/>m_type;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1aa246e8e502be0a359410a5b25c43f664" kindref="member">LinewidthType</ref><sp/>m_type;</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>data_LINEWIDTHTERM<sp/>m_lineWidthTerm;</highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>data_MEASUREMENTABS<sp/>m_measurementAbs;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a3df7e8419a61cb7e2aa14b0d2cf4b1f9" kindref="member">data_MEASUREMENTABS</ref><sp/>m_measurementAbs;</highlight></codeline>
 <codeline lineno="164"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"></highlight></codeline>
-<codeline lineno="171"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>MidivalueNameType<sp/>{<sp/>MIDIVALUENAMETYPE_NONE<sp/>=<sp/>0,<sp/>MIDIVALUENAMETYPE_midivalue,<sp/>MIDIVALUENAMETYPE_mcname<sp/>};</highlight></codeline>
+<codeline lineno="171" refid="namespacevrv_1a8ef16f635409ed03079b18d27c976fa5" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacevrv_1a8ef16f635409ed03079b18d27c976fa5" kindref="member">MidivalueNameType</ref><sp/>{<sp/>MIDIVALUENAMETYPE_NONE<sp/>=<sp/>0,<sp/>MIDIVALUENAMETYPE_midivalue,<sp/>MIDIVALUENAMETYPE_mcname<sp/>};</highlight></codeline>
 <codeline lineno="172"><highlight class="normal"></highlight></codeline>
 <codeline lineno="173" refid="classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e" kindref="compound">data_MIDIVALUE_NAME</ref><sp/>{</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e" kindref="compound">data_MIDIVALUE_NAME</ref>()<sp/>{<sp/>Reset(MIDIVALUENAMETYPE_NONE);<sp/>}</highlight></codeline>
 <codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e" kindref="compound">data_MIDIVALUE_NAME</ref>()<sp/>{}</highlight></codeline>
 <codeline lineno="177"><highlight class="normal"></highlight></codeline>
-<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset(MidivalueNameType<sp/>type)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset(<ref refid="namespacevrv_1a8ef16f635409ed03079b18d27c976fa5" kindref="member">MidivalueNameType</ref><sp/>type)</highlight></codeline>
 <codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_type<sp/>=<sp/>type;</highlight></codeline>
 <codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_midivalue<sp/>=<sp/>-1;</highlight></codeline>
 <codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ncname<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="184"><highlight class="normal"></highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>MidivalueNameType<sp/>GetType()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_type;<sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a8ef16f635409ed03079b18d27c976fa5" kindref="member">MidivalueNameType</ref><sp/>GetType()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_type;<sp/>}</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"></highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>data_MIDIVALUE<sp/>GetMidivalue()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_midivalue;<sp/>}</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetMidivalue(data_MIDIVALUE<sp/>value)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a67e112c2e04934448a03c3c57dd46c69" kindref="member">data_MIDIVALUE</ref><sp/>GetMidivalue()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_midivalue;<sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetMidivalue(<ref refid="namespacevrv_1a67e112c2e04934448a03c3c57dd46c69" kindref="member">data_MIDIVALUE</ref><sp/>value)</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Reset(MIDIVALUENAMETYPE_midivalue);</highlight></codeline>
 <codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_midivalue<sp/>=<sp/>value;</highlight></codeline>
 <codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="193"><highlight class="normal"></highlight></codeline>
-<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>data_NCNAME<sp/>GetNcname()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_ncname;<sp/>}</highlight></codeline>
-<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetNcname(data_NCNAME<sp/>value)</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a3221b377d300bfdf48e6b965f2e4ef0a" kindref="member">data_NCNAME</ref><sp/>GetNcname()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_ncname;<sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetNcname(<ref refid="namespacevrv_1a3221b377d300bfdf48e6b965f2e4ef0a" kindref="member">data_NCNAME</ref><sp/>value)</highlight></codeline>
 <codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Reset(MIDIVALUENAMETYPE_mcname);</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ncname<sp/>=<sp/>value;</highlight></codeline>
@@ -398,36 +403,36 @@
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e" kindref="compound">data_MIDIVALUE_NAME</ref><sp/>&amp;val)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>val);<sp/>}</highlight></codeline>
 <codeline lineno="217"><highlight class="normal"></highlight></codeline>
 <codeline lineno="218"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>MidivalueNameType<sp/>m_type;</highlight></codeline>
-<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>data_MIDIVALUE<sp/>m_midivalue;</highlight></codeline>
-<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>data_NCNAME<sp/>m_ncname;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a8ef16f635409ed03079b18d27c976fa5" kindref="member">MidivalueNameType</ref><sp/>m_type;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a67e112c2e04934448a03c3c57dd46c69" kindref="member">data_MIDIVALUE</ref><sp/>m_midivalue;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a3221b377d300bfdf48e6b965f2e4ef0a" kindref="member">data_NCNAME</ref><sp/>m_ncname;</highlight></codeline>
 <codeline lineno="222"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="223"><highlight class="normal"></highlight></codeline>
-<codeline lineno="229"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>MidivaluePanType<sp/>{<sp/>MIDIVALUEPANTYPE_NONE<sp/>=<sp/>0,<sp/>MIDIVALUEPANTYPE_midivalue,<sp/>MIDIVALUEPANTYPE_percentLimitedSigned<sp/>};</highlight></codeline>
+<codeline lineno="229" refid="namespacevrv_1a9b3bb91c17f3b683d457dbab419d9555" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacevrv_1a9b3bb91c17f3b683d457dbab419d9555" kindref="member">MidivaluePanType</ref><sp/>{<sp/>MIDIVALUEPANTYPE_NONE<sp/>=<sp/>0,<sp/>MIDIVALUEPANTYPE_midivalue,<sp/>MIDIVALUEPANTYPE_percentLimitedSigned<sp/>};</highlight></codeline>
 <codeline lineno="230"><highlight class="normal"></highlight></codeline>
 <codeline lineno="231" refid="classvrv_1_1data___m_i_d_i_v_a_l_u_e___p_a_n" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1data___m_i_d_i_v_a_l_u_e___p_a_n" kindref="compound">data_MIDIVALUE_PAN</ref><sp/>{</highlight></codeline>
 <codeline lineno="232"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1data___m_i_d_i_v_a_l_u_e___p_a_n" kindref="compound">data_MIDIVALUE_PAN</ref>()<sp/>{<sp/>Reset(MIDIVALUEPANTYPE_NONE);<sp/>}</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1data___m_i_d_i_v_a_l_u_e___p_a_n" kindref="compound">data_MIDIVALUE_PAN</ref>()<sp/>{}</highlight></codeline>
 <codeline lineno="235"><highlight class="normal"></highlight></codeline>
-<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset(MidivaluePanType<sp/>type)</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset(<ref refid="namespacevrv_1a9b3bb91c17f3b683d457dbab419d9555" kindref="member">MidivaluePanType</ref><sp/>type)</highlight></codeline>
 <codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_type<sp/>=<sp/>type;</highlight></codeline>
 <codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_midivalue<sp/>=<sp/>-1;</highlight></codeline>
 <codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_percentLimitedSigned<sp/>=<sp/>VRV_UNSET;</highlight></codeline>
 <codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="242"><highlight class="normal"></highlight></codeline>
-<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>MidivaluePanType<sp/>GetType()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_type;<sp/>}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a9b3bb91c17f3b683d457dbab419d9555" kindref="member">MidivaluePanType</ref><sp/>GetType()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_type;<sp/>}</highlight></codeline>
 <codeline lineno="244"><highlight class="normal"></highlight></codeline>
-<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>data_MIDIVALUE<sp/>GetMidivalue()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_midivalue;<sp/>}</highlight></codeline>
-<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetMidivalue(data_MIDIVALUE<sp/>value)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a67e112c2e04934448a03c3c57dd46c69" kindref="member">data_MIDIVALUE</ref><sp/>GetMidivalue()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_midivalue;<sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetMidivalue(<ref refid="namespacevrv_1a67e112c2e04934448a03c3c57dd46c69" kindref="member">data_MIDIVALUE</ref><sp/>value)</highlight></codeline>
 <codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Reset(MIDIVALUEPANTYPE_midivalue);</highlight></codeline>
 <codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_midivalue<sp/>=<sp/>value;</highlight></codeline>
 <codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="251"><highlight class="normal"></highlight></codeline>
-<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>data_PERCENT_LIMITED_SIGNED<sp/>GetPercentLimitedSigned()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_percentLimitedSigned;<sp/>}</highlight></codeline>
-<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetPercentLimitedSigned(data_PERCENT_LIMITED_SIGNED<sp/>value)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a1ee2ee7a57f8a27b9bb660ef88f4862a" kindref="member">data_PERCENT_LIMITED_SIGNED</ref><sp/>GetPercentLimitedSigned()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_percentLimitedSigned;<sp/>}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetPercentLimitedSigned(<ref refid="namespacevrv_1a1ee2ee7a57f8a27b9bb660ef88f4862a" kindref="member">data_PERCENT_LIMITED_SIGNED</ref><sp/>value)</highlight></codeline>
 <codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Reset(MIDIVALUEPANTYPE_percentLimitedSigned);</highlight></codeline>
 <codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_percentLimitedSigned<sp/>=<sp/>value;</highlight></codeline>
@@ -451,23 +456,23 @@
 <codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1data___m_i_d_i_v_a_l_u_e___p_a_n" kindref="compound">data_MIDIVALUE_PAN</ref><sp/>&amp;val)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>val);<sp/>}</highlight></codeline>
 <codeline lineno="275"><highlight class="normal"></highlight></codeline>
 <codeline lineno="276"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>MidivaluePanType<sp/>m_type;</highlight></codeline>
-<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>data_MIDIVALUE<sp/>m_midivalue;</highlight></codeline>
-<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>data_PERCENT_LIMITED_SIGNED<sp/>m_percentLimitedSigned;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a9b3bb91c17f3b683d457dbab419d9555" kindref="member">MidivaluePanType</ref><sp/>m_type;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a67e112c2e04934448a03c3c57dd46c69" kindref="member">data_MIDIVALUE</ref><sp/>m_midivalue;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1a1ee2ee7a57f8a27b9bb660ef88f4862a" kindref="member">data_PERCENT_LIMITED_SIGNED</ref><sp/>m_percentLimitedSigned;</highlight></codeline>
 <codeline lineno="280"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="281"><highlight class="normal"></highlight></codeline>
 <codeline lineno="282"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="283"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Alternate<sp/>data<sp/>types<sp/>unsing<sp/>other<sp/>alternate<sp/>data<sp/>types<sp/>(above)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="284"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="285"><highlight class="normal"></highlight></codeline>
-<codeline lineno="291"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>PlacementType<sp/>{<sp/>PLACEMENT_NONE<sp/>=<sp/>0,<sp/>PLACEMENT_staffRel,<sp/>PLACEMENT_nonStaffPlace,<sp/>PLACEMENT_nmtoken<sp/>};</highlight></codeline>
+<codeline lineno="291" refid="namespacevrv_1aad3630d3db4d9235c4619be39b78ee3a" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacevrv_1aad3630d3db4d9235c4619be39b78ee3a" kindref="member">PlacementType</ref><sp/>{<sp/>PLACEMENT_NONE<sp/>=<sp/>0,<sp/>PLACEMENT_staffRel,<sp/>PLACEMENT_nonStaffPlace,<sp/>PLACEMENT_nmtoken<sp/>};</highlight></codeline>
 <codeline lineno="292"><highlight class="normal"></highlight></codeline>
 <codeline lineno="293" refid="classvrv_1_1data___p_l_a_c_e_m_e_n_t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1data___p_l_a_c_e_m_e_n_t" kindref="compound">data_PLACEMENT</ref><sp/>{</highlight></codeline>
 <codeline lineno="294"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1data___p_l_a_c_e_m_e_n_t" kindref="compound">data_PLACEMENT</ref>()<sp/>{<sp/>Reset(PLACEMENT_NONE);<sp/>}</highlight></codeline>
 <codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1data___p_l_a_c_e_m_e_n_t" kindref="compound">data_PLACEMENT</ref>()<sp/>{}</highlight></codeline>
 <codeline lineno="297"><highlight class="normal"></highlight></codeline>
-<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset(PlacementType<sp/>type)</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset(<ref refid="namespacevrv_1aad3630d3db4d9235c4619be39b78ee3a" kindref="member">PlacementType</ref><sp/>type)</highlight></codeline>
 <codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_type<sp/>=<sp/>type;</highlight></codeline>
 <codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_staffRel<sp/>=<sp/>data_STAFFREL();</highlight></codeline>
@@ -475,7 +480,7 @@
 <codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_nmtoken<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="305"><highlight class="normal"></highlight></codeline>
-<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>PlacementType<sp/>GetType()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_type;<sp/>}</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1aad3630d3db4d9235c4619be39b78ee3a" kindref="member">PlacementType</ref><sp/>GetType()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_type;<sp/>}</highlight></codeline>
 <codeline lineno="307"><highlight class="normal"></highlight></codeline>
 <codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>data_STAFFREL<sp/>GetStaffRel()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_staffRel;<sp/>}</highlight></codeline>
 <codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetStaffRel(data_STAFFREL<sp/>value)</highlight></codeline>
@@ -519,7 +524,7 @@
 <codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1data___p_l_a_c_e_m_e_n_t" kindref="compound">data_PLACEMENT</ref><sp/>&amp;val)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>val);<sp/>}</highlight></codeline>
 <codeline lineno="348"><highlight class="normal"></highlight></codeline>
 <codeline lineno="349"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>PlacementType<sp/>m_type;</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1aad3630d3db4d9235c4619be39b78ee3a" kindref="member">PlacementType</ref><sp/>m_type;</highlight></codeline>
 <codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>data_STAFFREL<sp/>m_staffRel;</highlight></codeline>
 <codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>data_NONSTAFFPLACE<sp/>m_nonStaffPlace;</highlight></codeline>
 <codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_nmtoken;</highlight></codeline>

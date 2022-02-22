@@ -13,5 +13,8 @@ var classvrv_1_1_glyph =
     [ "HasAnchor", "classvrv_1_1_glyph.html#a750cef767d991834f93391bb5f33ae6e", null ],
     [ "SetAnchor", "classvrv_1_1_glyph.html#a009d8cbbd328a087d26cec6c411de075", null ],
     [ "SetBoundingBox", "classvrv_1_1_glyph.html#a3191a35305471ae3312c883944eba295", null ],
-    [ "SetHorizAdvX", "classvrv_1_1_glyph.html#ab4462f3d4439c83d47ff3d6799a49c35", null ]
+    [ "SetCodeStr", "classvrv_1_1_glyph.html#a6ca2bc4e19257a8fcb8d0e578b180a0d", null ],
+    [ "SetHorizAdvX", "classvrv_1_1_glyph.html#ab4462f3d4439c83d47ff3d6799a49c35", null ],
+    [ "SetPath", "classvrv_1_1_glyph.html#ac8856cf1d77ee68a646a86c4c12673fa", null ],
+    [ "SetUnitsPerEm", "classvrv_1_1_glyph.html#a5091ce2971805dbf9d19d9844868df81", null ]
 ];
