@@ -5,6 +5,7 @@ var classvrv_1_1_staff_alignment =
     [ "AddBBoxAbove", "classvrv_1_1_staff_alignment.html#abe912a2607606376bea1a21731c5195d", null ],
     [ "AddBBoxBelow", "classvrv_1_1_staff_alignment.html#aad91647368dc7d03520e0bd3f5139602", null ],
     [ "AddVerseN", "classvrv_1_1_staff_alignment.html#a7804d94fb3fb3db00ed433a22edea5d6", null ],
+    [ "AdjustBracketGroupSpacing", "classvrv_1_1_staff_alignment.html#a1ffa4ba5373057ac34c88c093983831c", null ],
     [ "AdjustFloatingPositionerGrps", "classvrv_1_1_staff_alignment.html#ada30a6a055ec4a7fc2af92a9f27f72a5", null ],
     [ "AdjustFloatingPositioners", "classvrv_1_1_staff_alignment.html#aedeeab7f1282f8679790189c44384889", null ],
     [ "AdjustFloatingPositionersBetween", "classvrv_1_1_staff_alignment.html#a73a6584cdc6e127670bda38fa8c40514", null ],

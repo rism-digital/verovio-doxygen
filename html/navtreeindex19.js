@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"classvrv_1_1_tab_course_sort.html#a62322c821b29ee5b1c64b5bcad60822c":[2,0,0,320,1],
 "classvrv_1_1_tab_dur_sym.html":[2,0,0,321],
 "classvrv_1_1_tab_dur_sym.html#a00e3d8e47dc0f378f028b6e46fd7dcdb":[2,0,0,321,4],
 "classvrv_1_1_tab_dur_sym.html#a1e85bce43dc9ad280471f7ef5f147da0":[2,0,0,321,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "classvrv_1_1_transpose_params.html#a08e385a7cac546b3cbc82357ff2cdd00":[2,0,0,339,2],
 "classvrv_1_1_transpose_params.html#abddab49817ec3065381fb7dd45cdb76c":[2,0,0,339,0],
 "classvrv_1_1_transpose_params.html#ac840bf81851c316772323edbdadc7270":[2,0,0,339,1],
-"classvrv_1_1_transposer.html":[2,0,0,340],
-"classvrv_1_1_transposer.html#a00840ff4a5d601f01288c00a4cbaff7c":[2,0,0,340,60]
+"classvrv_1_1_transposer.html":[2,0,0,340]
 };
