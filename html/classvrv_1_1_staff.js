@@ -22,7 +22,6 @@ var classvrv_1_1_staff =
     [ "FillStaffCurrentTimeSpanning", "classvrv_1_1_staff.html#aaee2d5586d4b5fe77569cff9b5ee02a7", null ],
     [ "GenerateMIDI", "classvrv_1_1_staff.html#a32fa5298456f5c6bf0918292ac75607c", null ],
     [ "GetAlignment", "classvrv_1_1_staff.html#a7a7f13fe4d00ba35ed03b952535027fb", null ],
-    [ "GetChildren", "classvrv_1_1_staff.html#a2eabbf5c9d623f30a124113c2a54fae3", null ],
     [ "GetClassName", "classvrv_1_1_staff.html#a299790be0cd06202e6d638649f2d791b", null ],
     [ "GetDrawingRotate", "classvrv_1_1_staff.html#a323086f2690b72d00ea11c53751fb8ce", null ],
     [ "GetDrawingStaffNotationSize", "classvrv_1_1_staff.html#acaa44acf2a92dca969477d8134753774", null ],

@@ -15,7 +15,7 @@ var classvrv_1_1_score =
     [ "IsSupportedChild", "classvrv_1_1_score.html#af3a729806cc822784e21a8b38649aba6", null ],
     [ "PrepareDuration", "classvrv_1_1_score.html#ac7dfa5c4768e0fb61d20e54f08276c5b", null ],
     [ "Reset", "classvrv_1_1_score.html#a4edefe15e3054f89b5db69f3a92eee15", null ],
-    [ "ScoreDefNeedsOptimization", "classvrv_1_1_score.html#a926d106d95e5dc5c4a6d0f425729dd34", null ],
+    [ "ScoreDefNeedsOptimization", "classvrv_1_1_score.html#a3a2637750d08541d340b1f6055995e32", null ],
     [ "ScoreDefOptimize", "classvrv_1_1_score.html#a3c23c17c02d816b98a4b257180e3f677", null ],
     [ "SetAsCurrent", "classvrv_1_1_score.html#ac1074a91c1f31fa6d78e177dc152e4fe", null ],
     [ "UnCastOff", "classvrv_1_1_score.html#a225502c03b1a4ec590c817501b3715d4", null ],
