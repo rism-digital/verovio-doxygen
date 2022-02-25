@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"structvrv_1_1_closest_b_b.html#ae4c15a00f3ead7ec067bf72ce647aa55":[2,0,0,77,2],
 "structvrv_1_1_control_point_constraint.html":[2,0,0,80],
 "structvrv_1_1_control_point_constraint.html#a84f062ff2c159b679a6ac0d5356b919a":[2,0,0,80,0],
 "structvrv_1_1_control_point_constraint.html#a9a6bae03bd6c110a3aaeae2a95a23e49":[2,0,0,80,1],
