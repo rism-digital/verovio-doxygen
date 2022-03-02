@@ -4,6 +4,7 @@ var classvrv_1_1_toolkit =
     [ "~Toolkit", "classvrv_1_1_toolkit.html#a97d14fc376f8532765955015b26a6811", null ],
     [ "ClearHumdrumBuffer", "group__nodoc.html#gae5a104614acc4edf6794abe71d027210", null ],
     [ "ConvertHumdrumToHumdrum", "classvrv_1_1_toolkit.html#a8a411c7fe22ffb9df4be52b582af550e", null ],
+    [ "ConvertHumdrumToMIDI", "classvrv_1_1_toolkit.html#a450b3242b1d69a50ea92dea935e5037f", null ],
     [ "ConvertMEIToHumdrum", "classvrv_1_1_toolkit.html#adf47bbe710d3902f241db376002f55cb", null ],
     [ "Edit", "classvrv_1_1_toolkit.html#a25adbe86763cca1c51603b9e4c4831f3", null ],
     [ "EditInfo", "classvrv_1_1_toolkit.html#a369f22c61679d97bdd05c0689d6f0a44", null ],
