@@ -14,7 +14,7 @@ var searchData=
   ['calcdotsparams_160',['CalcDotsParams',['../classvrv_1_1_calc_dots_params.html',1,'vrv']]],
   ['calcdrawingbracketandnumpos_161',['CalcDrawingBracketAndNumPos',['../classvrv_1_1_tuplet.html#ac6b04379bb72ad6f90757952cf3bcc81',1,'vrv::Tuplet']]],
   ['calcelementhorizontaloverlap_162',['CalcElementHorizontalOverlap',['../classvrv_1_1_layer_element.html#a80983838195a9e547294896393ba56a0',1,'vrv::LayerElement']]],
-  ['calclayeroverlap_163',['CalcLayerOverlap',['../classvrv_1_1_beam.html#a85c7d02459bcfae686c17c861e692c16',1,'vrv::Beam']]],
+  ['calclayeroverlap_163',['CalcLayerOverlap',['../classvrv_1_1_layer_element.html#a648ad4c41c1634f4310657f9ca2a2ed9',1,'vrv::LayerElement']]],
   ['calcledgerlines_164',['CalcLedgerLines',['../classvrv_1_1_note.html#ae4212d3d2bb03c033bb751c5137d265e',1,'vrv::Note::CalcLedgerLines()'],['../classvrv_1_1_object.html#aa102c1e31b16c63319763a5fc1c8351c',1,'vrv::Object::CalcLedgerLines()']]],
   ['calcledgerlinesend_165',['CalcLedgerLinesEnd',['../classvrv_1_1_staff.html#a8a2ddd4ca856c1082dc9d0f073b76393',1,'vrv::Staff']]],
   ['calcligaturenotepos_166',['CalcLigatureNotePos',['../classvrv_1_1_ligature.html#aa92ecc2562a54bb335f7c3e7414373eb',1,'vrv::Ligature::CalcLigatureNotePos()'],['../classvrv_1_1_object.html#a5bd96aae8a25cedd2c63ce09b92388a3',1,'vrv::Object::CalcLigatureNotePos()']]],
