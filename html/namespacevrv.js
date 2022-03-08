@@ -176,6 +176,7 @@ var namespacevrv =
     [ "LabelAbbr", "classvrv_1_1_label_abbr.html", "classvrv_1_1_label_abbr" ],
     [ "Layer", "classvrv_1_1_layer.html", "classvrv_1_1_layer" ],
     [ "LayerCountInTimeSpanParams", "classvrv_1_1_layer_count_in_time_span_params.html", "classvrv_1_1_layer_count_in_time_span_params" ],
+    [ "LayerDef", "classvrv_1_1_layer_def.html", "classvrv_1_1_layer_def" ],
     [ "LayerElement", "classvrv_1_1_layer_element.html", "classvrv_1_1_layer_element" ],
     [ "LayerElementsInTimeSpanParams", "classvrv_1_1_layer_elements_in_time_span_params.html", "classvrv_1_1_layer_elements_in_time_span_params" ],
     [ "Lb", "classvrv_1_1_lb.html", "classvrv_1_1_lb" ],

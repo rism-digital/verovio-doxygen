@@ -81,6 +81,7 @@ var files_dup =
     [ "label.h", "label_8h_source.html", null ],
     [ "labelabbr.h", "labelabbr_8h_source.html", null ],
     [ "layer.h", "layer_8h_source.html", null ],
+    [ "layerdef.h", "layerdef_8h_source.html", null ],
     [ "layerelement.h", "layerelement_8h_source.html", null ],
     [ "lb.h", "lb_8h_source.html", null ],
     [ "lem.h", "lem_8h_source.html", null ],

@@ -69,6 +69,7 @@ var classvrv_1_1_view =
     [ "DrawLabels", "classvrv_1_1_view.html#a87c0d9cac9775c3ecce387e1802eb204", null ],
     [ "DrawLayer", "classvrv_1_1_view.html#a96264ca40ae9920f5bab7e8e61ed8142", null ],
     [ "DrawLayerChildren", "classvrv_1_1_view.html#abdd9b7063751130adf5a424cd59a66b4", null ],
+    [ "DrawLayerDefLabels", "classvrv_1_1_view.html#ae6fcc2a57ed669f1c2745ca0c02070db", null ],
     [ "DrawLayerEditorialElement", "classvrv_1_1_view.html#ac0dee922c65364b7c9b53b126ed40323", null ],
     [ "DrawLayerElement", "classvrv_1_1_view.html#a79e34f9363ce1cd05205fd3b2a4dff29", null ],
     [ "DrawLayerList", "classvrv_1_1_view.html#af3b10a0cb226363aa10095adbdcafb98", null ],

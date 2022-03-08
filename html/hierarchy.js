@@ -375,6 +375,7 @@ var hierarchy =
         [ "vrv::Unclear", "classvrv_1_1_unclear.html", null ]
       ] ],
       [ "vrv::InstrDef", "classvrv_1_1_instr_def.html", null ],
+      [ "vrv::LayerDef", "classvrv_1_1_layer_def.html", null ],
       [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
       [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
       [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
@@ -492,6 +493,7 @@ var hierarchy =
     [ "AttNInteger", null, [
       [ "vrv::AlignmentReference", "classvrv_1_1_alignment_reference.html", null ],
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
+      [ "vrv::LayerDef", "classvrv_1_1_layer_def.html", null ],
       [ "vrv::Staff", "classvrv_1_1_staff.html", null ],
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ],
       [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
@@ -766,6 +768,7 @@ var hierarchy =
       [ "vrv::ControlElement", "classvrv_1_1_control_element.html", null ],
       [ "vrv::EditorialElement", "classvrv_1_1_editorial_element.html", null ],
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
+      [ "vrv::LayerDef", "classvrv_1_1_layer_def.html", null ],
       [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
       [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
@@ -853,6 +856,7 @@ var hierarchy =
         [ "vrv::Label", "classvrv_1_1_label.html", null ],
         [ "vrv::LabelAbbr", "classvrv_1_1_label_abbr.html", null ],
         [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
+        [ "vrv::LayerDef", "classvrv_1_1_layer_def.html", null ],
         [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
         [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
         [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
