@@ -140,6 +140,7 @@ var classvrv_1_1_view =
     [ "DrawStaffGrp", "classvrv_1_1_view.html#a558ddfe856c5aa32afe8bc9e61d9a9a9", null ],
     [ "DrawStaffLines", "classvrv_1_1_view.html#a44e0a55904272dff67142ea68937b6b8", null ],
     [ "DrawStem", "classvrv_1_1_view.html#a2cec524c77a81e17a402520c25c0b86d", null ],
+    [ "DrawStemMod", "classvrv_1_1_view.html#a183aeafe10d9f37cfeb90714875438fe", null ],
     [ "DrawSvg", "classvrv_1_1_view.html#a18d3386f39e732c9d72c7f3df799899f", null ],
     [ "DrawSyl", "classvrv_1_1_view.html#adf8825b5af36f771f628feda84800f39", null ],
     [ "DrawSylConnector", "classvrv_1_1_view.html#ad3415becdea672c00a2f206f4e1be194", null ],

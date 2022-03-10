@@ -116,6 +116,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a43f095b5d502660e15075ebeb70207ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_b_trem.html#a43f095b5d502660e15075ebeb70207ed">IsSupportedChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object) override</td></tr>
 <tr class="memdesc:a43f095b5d502660e15075ebeb70207ed"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_add.html">Add</a> an element (a note or a chord) to a fTrem.  <a href="classvrv_1_1_b_trem.html#a43f095b5d502660e15075ebeb70207ed">More...</a><br /></td></tr>
 <tr class="separator:a43f095b5d502660e15075ebeb70207ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98bfea5ea3ea48ed6172f22a3f60d0d"><td class="memItemLeft" align="right" valign="top"><a id="ad98bfea5ea3ea48ed6172f22a3f60d0d"></a>
+data_STEMMODIFIER&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_b_trem.html#ad98bfea5ea3ea48ed6172f22a3f60d0d">GetDrawingStemMod</a> () const override</td></tr>
+<tr class="memdesc:ad98bfea5ea3ea48ed6172f22a3f60d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get stem mod if encoded explicitly, or determine based on duration of bTrem and underlying elements. <br /></td></tr>
+<tr class="separator:ad98bfea5ea3ea48ed6172f22a3f60d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3622d59fe6ef0786399836527c4bf23"><td class="memItemLeft" align="right" valign="top"><a id="ac3622d59fe6ef0786399836527c4bf23"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_b_trem.html#ac3622d59fe6ef0786399836527c4bf23">GenerateMIDI</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) override</td></tr>
 <tr class="memdesc:ac3622d59fe6ef0786399836527c4bf23"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a426081ffba31e4251a2c36ceeb2a43ba" title="Export the object to a MidiFile.">Object::GenerateMIDI</a>. <br /></td></tr>
@@ -208,6 +212,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>GetContentAlignment
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#ae89f22d40bd5303aea5eb58f0d84d149">SetElementShortening</a> (int shortening)</td></tr>
 <tr class="memdesc:ae89f22d40bd5303aea5eb58f0d84d149 inherit pub_methods_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to set shortening for elements with beam interface. <br /></td></tr>
 <tr class="separator:ae89f22d40bd5303aea5eb58f0d84d149 inherit pub_methods_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42028faa4ea287cbfffb858e7bb370a1 inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a42028faa4ea287cbfffb858e7bb370a1"></a>
+wchar_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a42028faa4ea287cbfffb858e7bb370a1">StemModToGlyph</a> (data_STEMMODIFIER stemMod) const</td></tr>
+<tr class="memdesc:a42028faa4ea287cbfffb858e7bb370a1 inherit pub_methods_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert stem mode to corresponding glyph code. <br /></td></tr>
+<tr class="separator:a42028faa4ea287cbfffb858e7bb370a1 inherit pub_methods_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a741266397c30ac32c6ee763e5e668a3b inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a741266397c30ac32c6ee763e5e668a3b"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a741266397c30ac32c6ee763e5e668a3b">AdjustBeams</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) override</td></tr>
 <tr class="memdesc:a741266397c30ac32c6ee763e5e668a3b inherit pub_methods_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a0d2579fea0aea8b317a490c1654be52b" title="Calculate the vertical position adjustment for the beam if it overlaps with layer elements.">Object::AdjustBeams</a>. <br /></td></tr>
@@ -1791,7 +1799,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_b_trem.html">BTrem</a></li>
-    <li class="footer">Generated on Tue Mar 8 2022 13:34:25 for Verovio by
+    <li class="footer">Generated on Thu Mar 10 2022 09:37:02 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
