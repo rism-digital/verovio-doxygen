@@ -15,5 +15,6 @@ var classvrv_1_1_alignment_reference =
     [ "HasMultipleLayer", "classvrv_1_1_alignment_reference.html#a9c1895942dd54bf9ac12b788dbf7570c", null ],
     [ "IsSupportedChild", "classvrv_1_1_alignment_reference.html#ab1145409381d64fa25d3b506c14872da", null ],
     [ "Reset", "classvrv_1_1_alignment_reference.html#a084e3418ace027cbfa49a29e889186a4", null ],
-    [ "ScoreDefUnsetCurrent", "classvrv_1_1_alignment_reference.html#a73376b877e7d980086d14c75d13d022e", null ]
+    [ "ScoreDefUnsetCurrent", "classvrv_1_1_alignment_reference.html#a73376b877e7d980086d14c75d13d022e", null ],
+    [ "SetAccidLayerAlignment", "classvrv_1_1_alignment_reference.html#a79052a2a82326ac2cced8721b27da0c2", null ]
 ];

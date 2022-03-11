@@ -1594,9 +1594,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isInBeamspan</b></t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a3334d5cdd9472146f2db3fc5564b70bf"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a3334d5cdd9472146f2db3fc5564b70bf">CountElementsInUnison</a> (const std::set&lt; int &gt; &amp;firstChord, const std::set&lt; int &gt; &amp;secondChord, data_STEMDIRECTION stemDirection)</td></tr>
-<tr class="memdesc:a3334d5cdd9472146f2db3fc5564b70bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to figure whether two chords are in fully in unison based on the locations of the notes.  <a href="classvrv_1_1_layer_element.html#a3334d5cdd9472146f2db3fc5564b70bf">More...</a><br /></td></tr>
-<tr class="separator:a3334d5cdd9472146f2db3fc5564b70bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7828e102ed3fd103b7d2f6695195c15"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#af7828e102ed3fd103b7d2f6695195c15">GetElementsInUnison</a> (const std::set&lt; int &gt; &amp;firstChord, const std::set&lt; int &gt; &amp;secondChord, data_STEMDIRECTION stemDirection)</td></tr>
+<tr class="memdesc:af7828e102ed3fd103b7d2f6695195c15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to figure whether two chords are in fully in unison based on the locations of the notes.  <a href="classvrv_1_1_layer_element.html#af7828e102ed3fd103b7d2f6695195c15">More...</a><br /></td></tr>
+<tr class="separator:af7828e102ed3fd103b7d2f6695195c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af71a2b085606189023ba9c8dda0d0bc6"><td class="memItemLeft" align="right" valign="top">virtual MapOfNoteLocs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#af71a2b085606189023ba9c8dda0d0bc6">CalcNoteLocations</a> (NotePredicate predicate=NULL)</td></tr>
 <tr class="memdesc:af71a2b085606189023ba9c8dda0d0bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The note locations w.r.t.  <a href="classvrv_1_1_layer_element.html#af71a2b085606189023ba9c8dda0d0bc6">More...</a><br /></td></tr>
 <tr class="separator:af71a2b085606189023ba9c8dda0d0bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1943,51 +1943,6 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverl
 
 </div>
 </div>
-<a id="a3334d5cdd9472146f2db3fc5564b70bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3334d5cdd9472146f2db3fc5564b70bf">&#9670;&nbsp;</a></span>CountElementsInUnison()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int vrv::LayerElement::CountElementsInUnison </td>
-          <td>(</td>
-          <td class="paramtype">const std::set&lt; int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>firstChord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::set&lt; int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>secondChord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">data_STEMDIRECTION&#160;</td>
-          <td class="paramname"><em>stemDirection</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Helper to figure whether two chords are in fully in unison based on the locations of the notes. </p>
-<p>This function assumes that two chords are already in unison and checks whether chords can overlap with their unison notes or if they should be placed separately. Returns true if all elements can safely overlap. </p>
-
-</div>
-</div>
 <a id="a0dce2be85a425e83b627c8d0a9a5b0f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0dce2be85a425e83b627c8d0a9a5b0f6">&#9670;&nbsp;</a></span>GenerateZoneBounds()</h2>
 
@@ -2092,6 +2047,51 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverl
 
 <p>Returns the drawing top and bottom taking into accound stem, etc. </p>
 <p>We pass the doc as parameter in order to have access to the current drawing parameters. withArtic specifies if the articulation sign needs to be taken into account or not. articType indicates if the inside or outside artic part has to be taken into account (inside is taken into account in any case) </p>
+
+</div>
+</div>
+<a id="af7828e102ed3fd103b7d2f6695195c15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7828e102ed3fd103b7d2f6695195c15">&#9670;&nbsp;</a></span>GetElementsInUnison()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; vrv::LayerElement::GetElementsInUnison </td>
+          <td>(</td>
+          <td class="paramtype">const std::set&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>firstChord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>secondChord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">data_STEMDIRECTION&#160;</td>
+          <td class="paramname"><em>stemDirection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper to figure whether two chords are in fully in unison based on the locations of the notes. </p>
+<p>This function assumes that two chords are already in unison and checks whether chords can overlap with their unison notes or if they should be placed separately. Returns vector with all locations of elements in unison. </p>
 
 </div>
 </div>
@@ -2346,7 +2346,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a></li>
-    <li class="footer">Generated on Fri Mar 11 2022 10:29:45 for Verovio by
+    <li class="footer">Generated on Fri Mar 11 2022 13:38:28 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
