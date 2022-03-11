@@ -134,8 +134,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a77060e0dbc69dc9a839497fba690acab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b1a4164c095fec32cb5fe488ce5a3fc"><td class="memItemLeft" align="right" valign="top"><a id="a7b1a4164c095fec32cb5fe488ce5a3fc"></a>
 const ArrayOfCurveSpannedElements *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_floating_curve_positioner.html#a7b1a4164c095fec32cb5fe488ce5a3fc">GetSpannedElements</a> ()</td></tr>
-<tr class="memdesc:a7b1a4164c095fec32cb5fe488ce5a3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a cont pointer to the spanned elements. <br /></td></tr>
+<tr class="memdesc:a7b1a4164c095fec32cb5fe488ce5a3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const pointer to the spanned elements. <br /></td></tr>
 <tr class="separator:a7b1a4164c095fec32cb5fe488ce5a3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773ce154a0e2c876ad6f2f18f2b80201"><td class="memItemLeft" align="right" valign="top"><a id="a773ce154a0e2c876ad6f2f18f2b80201"></a>
+std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_floating_curve_positioner.html#a773ce154a0e2c876ad6f2f18f2b80201">CalcRequestedStaffSpace</a> (<a class="el" href="classvrv_1_1_staff_alignment.html">StaffAlignment</a> *alignment)</td></tr>
+<tr class="memdesc:a773ce154a0e2c876ad6f2f18f2b80201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the requested staff space above and below. <br /></td></tr>
+<tr class="separator:a773ce154a0e2c876ad6f2f18f2b80201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a27ca3bbbefe52d4b5951e3509e9b1483"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_floating_curve_positioner.html#a27ca3bbbefe52d4b5951e3509e9b1483">UpdateCurveParams</a> (const <a class="el" href="classvrv_1_1_point.html">Point</a> points[4], float angle, int thickness, curvature_CURVEDIR curveDir)</td></tr>
 <tr class="memdesc:a27ca3bbbefe52d4b5951e3509e9b1483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the curve parameters.  <a href="classvrv_1_1_floating_curve_positioner.html#a27ca3bbbefe52d4b5951e3509e9b1483">More...</a><br /></td></tr>
@@ -161,9 +165,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>MoveBackVertical</b> 
 <tr class="memitem:ae59d41e4b80818f2a43206ed6ac41b5e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_floating_curve_positioner.html#ae59d41e4b80818f2a43206ed6ac41b5e">CalcAdjustment</a> (<a class="el" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *boundingBox, bool &amp;discard, int margin=0, bool horizontalOverlap=true)</td></tr>
 <tr class="memdesc:ae59d41e4b80818f2a43206ed6ac41b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the adjustment needed for an element for the curve not to overlap with it.  <a href="classvrv_1_1_floating_curve_positioner.html#ae59d41e4b80818f2a43206ed6ac41b5e">More...</a><br /></td></tr>
 <tr class="separator:ae59d41e4b80818f2a43206ed6ac41b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0710dd01fb0ae908e326db0641aba0c"><td class="memItemLeft" align="right" valign="top"><a id="ad0710dd01fb0ae908e326db0641aba0c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>CalcDirectionalAdjustment</b> (<a class="el" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *boundingBox, bool isCurveAbove, bool &amp;discard, int margin=0, bool horizontalOverlap=true)</td></tr>
+<tr class="separator:ad0710dd01fb0ae908e326db0641aba0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a877dedf0b775fafcddaca949ee92d8af"><td class="memItemLeft" align="right" valign="top"><a id="a877dedf0b775fafcddaca949ee92d8af"></a>
 std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CalcLeftRightAdjustment</b> (<a class="el" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *boundingBox, bool &amp;discard, int margin=0, bool horizontalOverlap=true)</td></tr>
 <tr class="separator:a877dedf0b775fafcddaca949ee92d8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa138e62e3536c1016354b2ec83e151"><td class="memItemLeft" align="right" valign="top"><a id="a5fa138e62e3536c1016354b2ec83e151"></a>
+std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CalcDirectionalLeftRightAdjustment</b> (<a class="el" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *boundingBox, bool isCurveAbove, bool &amp;discard, int margin=0, bool horizontalOverlap=true)</td></tr>
+<tr class="separator:a5fa138e62e3536c1016354b2ec83e151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Getters for the current parameters</div></td></tr>
 <tr class="memitem:a47a0eae43c8c6149f17c343b0b1ab13a"><td class="memItemLeft" align="right" valign="top"><a id="a47a0eae43c8c6149f17c343b0b1ab13a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>GetPoints</b> (<a class="el" href="classvrv_1_1_point.html">Point</a> points[4]) const</td></tr>
@@ -187,6 +197,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCrossStaff</b> (<a
 <tr class="memitem:a9bf76981377bc2618013786108c229fe"><td class="memItemLeft" align="right" valign="top"><a id="a9bf76981377bc2618013786108c229fe"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsCrossStaff</b> () const</td></tr>
 <tr class="separator:a9bf76981377bc2618013786108c229fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Getter, setter for the requested staff space</div></td></tr>
+<tr class="memitem:a82e15efa70454fb643ad5727f2014243"><td class="memItemLeft" align="right" valign="top"><a id="a82e15efa70454fb643ad5727f2014243"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRequestedStaffSpace</b> (int space)</td></tr>
+<tr class="separator:a82e15efa70454fb643ad5727f2014243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58e5cba5f93a511a0cceef8fe4094a7"><td class="memItemLeft" align="right" valign="top"><a id="aa58e5cba5f93a511a0cceef8fe4094a7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequestedStaffSpace</b> () const</td></tr>
+<tr class="separator:aa58e5cba5f93a511a0cceef8fe4094a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvrv_1_1_floating_positioner"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_floating_positioner')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_floating_positioner.html">vrv::FloatingPositioner</a></td></tr>
 <tr class="memitem:a2e725efff149c8687d7f35595f23da16 inherit pub_methods_classvrv_1_1_floating_positioner"><td class="memItemLeft" align="right" valign="top"><a id="a2e725efff149c8687d7f35595f23da16"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>FloatingPositioner</b> (<a class="el" href="classvrv_1_1_floating_object.html">FloatingObject</a> *object, <a class="el" href="classvrv_1_1_staff_alignment.html">StaffAlignment</a> *alignment, char spanningType)</td></tr>
@@ -644,7 +661,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_floating_curve_positioner.html">FloatingCurvePositioner</a></li>
-    <li class="footer">Generated on Thu Mar 10 2022 16:56:44 for Verovio by
+    <li class="footer">Generated on Fri Mar 11 2022 07:17:36 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

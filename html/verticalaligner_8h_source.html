@@ -201,89 +201,95 @@ $(document).ready(function(){initNavTree('verticalaligner_8h_source.html',''); i
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordtype">int</span> GetOverflowBelow()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_overflowBelow; }</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordtype">void</span> SetOverlap(<span class="keywordtype">int</span> overlap);</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordtype">int</span> GetOverlap()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_overlap; }</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordtype">int</span> GetStaffHeight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_staffHeight; }</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordtype">void</span> SetOverflowBBoxAbove(<a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *bboxAbove, <span class="keywordtype">int</span> overflowAbove);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *GetOverflowBBoxAbove()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_overflowBBoxAbove; }</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordtype">void</span> SetOverflowBBoxBelow(<a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *bboxBelow, <span class="keywordtype">int</span> overflowBottom);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *GetOverflowBBoxBelow()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_overflowBBoxBelow; }</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordtype">void</span> SetScoreDefClefOverflowAbove(<span class="keywordtype">int</span> overflowAbove) { m_scoreDefClefOverflowAbove = overflowAbove; }</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordtype">int</span> GetScoreDefClefOverflowAbove()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_scoreDefClefOverflowAbove; }</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordtype">void</span> SetScoreDefClefOverflowBelow(<span class="keywordtype">int</span> overflowBelow) { m_scoreDefClefOverflowBelow = overflowBelow; }</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordtype">int</span> GetScoreDefClefOverflowBelow()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_scoreDefClefOverflowBelow; }</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordtype">double</span> GetJustificationFactor(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordtype">void</span> AddBBoxAbove(<a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *box) { m_overflowAboveBBoxes.push_back(box); }</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordtype">void</span> AddBBoxBelow(<a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *box) { m_overflowBelowBBoxes.push_back(box); }</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_staff_alignment.html#ab0c857aa5a9a585e4107edd6ef102f3e">ClearPositioners</a>();</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_staff_alignment.html#a708209da1e2d295a316091342956f633">FindAllIntersectionPoints</a>(</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <a class="code" href="classvrv_1_1_segmented_line.html">SegmentedLine</a> &amp;line, <a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> &amp;boundingBox, <span class="keyword">const</span> std::vector&lt;ClassId&gt; &amp;classIds, <span class="keywordtype">int</span> margin);</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordtype">void</span> ReAdjustFloatingPositionersGrps(<a class="code" href="classvrv_1_1_adjust_floating_positioner_grps_params.html">AdjustFloatingPositionerGrpsParams</a> *params,</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keyword">const</span> ArrayOfFloatingPositioners &amp;positioners, ArrayOfIntPairs &amp;grpIdYRel);</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordtype">void</span> SetBeamAdjust(<span class="keywordtype">int</span> beamAdjust) { m_beamAdjust = beamAdjust; }</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">int</span> GetBeamAdjust()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_beamAdjust; }</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_staff_alignment.html#a1ffa4ba5373057ac34c88c093983831c">AdjustBracketGroupSpacing</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="code" href="classvrv_1_1_staff_alignment.html">StaffAlignment</a> *previous, <span class="keywordtype">int</span> spacing);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordtype">void</span> SetRequestedSpaceAbove(<span class="keywordtype">int</span> space);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordtype">int</span> GetRequestedSpaceAbove()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_requestedSpaceAbove; }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordtype">void</span> SetRequestedSpaceBelow(<span class="keywordtype">int</span> space);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordtype">int</span> GetRequestedSpaceBelow()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_requestedSpaceBelow; }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordtype">int</span> GetStaffHeight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_staffHeight; }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordtype">void</span> SetOverflowBBoxAbove(<a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *bboxAbove, <span class="keywordtype">int</span> overflowAbove);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *GetOverflowBBoxAbove()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_overflowBBoxAbove; }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordtype">void</span> SetOverflowBBoxBelow(<a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *bboxBelow, <span class="keywordtype">int</span> overflowBottom);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *GetOverflowBBoxBelow()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_overflowBBoxBelow; }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordtype">void</span> SetScoreDefClefOverflowAbove(<span class="keywordtype">int</span> overflowAbove) { m_scoreDefClefOverflowAbove = overflowAbove; }</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordtype">int</span> GetScoreDefClefOverflowAbove()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_scoreDefClefOverflowAbove; }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordtype">void</span> SetScoreDefClefOverflowBelow(<span class="keywordtype">int</span> overflowBelow) { m_scoreDefClefOverflowBelow = overflowBelow; }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordtype">int</span> GetScoreDefClefOverflowBelow()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_scoreDefClefOverflowBelow; }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordtype">double</span> GetJustificationFactor(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordtype">void</span> AddBBoxAbove(<a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *box) { m_overflowAboveBBoxes.push_back(box); }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordtype">void</span> AddBBoxBelow(<a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *box) { m_overflowBelowBBoxes.push_back(box); }</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_staff_alignment.html#ab0c857aa5a9a585e4107edd6ef102f3e">ClearPositioners</a>();</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_staff_alignment.html#a708209da1e2d295a316091342956f633">FindAllIntersectionPoints</a>(</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <a class="code" href="classvrv_1_1_segmented_line.html">SegmentedLine</a> &amp;line, <a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> &amp;boundingBox, <span class="keyword">const</span> std::vector&lt;ClassId&gt; &amp;classIds, <span class="keywordtype">int</span> margin);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordtype">void</span> ReAdjustFloatingPositionersGrps(<a class="code" href="classvrv_1_1_adjust_floating_positioner_grps_params.html">AdjustFloatingPositionerGrpsParams</a> *params,</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keyword">const</span> ArrayOfFloatingPositioners &amp;positioners, ArrayOfIntPairs &amp;grpIdYRel);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordtype">void</span> SetBeamAdjust(<span class="keywordtype">int</span> beamAdjust) { m_beamAdjust = beamAdjust; }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordtype">int</span> GetBeamAdjust()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_beamAdjust; }</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_staff_alignment.html#a1ffa4ba5373057ac34c88c093983831c">AdjustBracketGroupSpacing</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="code" href="classvrv_1_1_staff_alignment.html">StaffAlignment</a> *previous, <span class="keywordtype">int</span> spacing);</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff_alignment.html#a6c37fa8409197bdebebde359623aabe5">AlignVerticallyEnd</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff_alignment.html#a8aa566a7cb7aacfeb01962e8697a1047">AdjustYPos</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff_alignment.html#a6714c8217c981eb983c801b1e4b7ce98">AdjustStaffOverlap</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff_alignment.html#aedeeab7f1282f8679790189c44384889">AdjustFloatingPositioners</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff_alignment.html#a73a6584cdc6e127670bda38fa8c40514">AdjustFloatingPositionersBetween</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff_alignment.html#ada30a6a055ec4a7fc2af92a9f27f72a5">AdjustFloatingPositionerGrps</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff_alignment.html#a1a6ab7d4245f460943dfb79f3fc1f6ee">AdjustSlurs</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff_alignment.html#a29be369444edba27ec48659a1ddf68e3">JustifyY</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordtype">int</span> GetMinimumStaffSpacing(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keyword">const</span> AttSpacing *attSpacing) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="keywordtype">bool</span> IsInBracketGroup(<span class="keywordtype">bool</span> isFirst) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <a class="code" href="classvrv_1_1_system_aligner.html#a024f36eb64e0d6adf31217b55ba72b8e">SystemAligner::SpacingType</a> m_spacingType = SystemAligner::SpacingType::None;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    ArrayOfFloatingPositioners m_floatingPositioners;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <a class="code" href="classvrv_1_1_staff.html">Staff</a> *m_staff;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <a class="code" href="classvrv_1_1_system.html">System</a> *m_system;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordtype">int</span> m_yRel;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    std::set&lt;int&gt; m_verseNs;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordtype">int</span> m_overflowAbove;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordtype">int</span> m_overflowBelow;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keywordtype">int</span> m_overlap;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordtype">int</span> m_staffHeight;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *m_overflowBBoxAbove;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *m_overflowBBoxBelow;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="keywordtype">int</span> m_scoreDefClefOverflowAbove;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordtype">int</span> m_scoreDefClefOverflowBelow;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="comment">// Value to store required beam adjustment for cross-staff beams</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordtype">int</span> m_beamAdjust = 0;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160; </div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    std::vector&lt;BoundingBox *&gt; m_overflowAboveBBoxes;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    std::vector&lt;BoundingBox *&gt; m_overflowBelowBBoxes;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;};</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff_alignment.html#a6c37fa8409197bdebebde359623aabe5">AlignVerticallyEnd</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff_alignment.html#a8aa566a7cb7aacfeb01962e8697a1047">AdjustYPos</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff_alignment.html#a6714c8217c981eb983c801b1e4b7ce98">AdjustStaffOverlap</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff_alignment.html#aedeeab7f1282f8679790189c44384889">AdjustFloatingPositioners</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff_alignment.html#a73a6584cdc6e127670bda38fa8c40514">AdjustFloatingPositionersBetween</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff_alignment.html#ada30a6a055ec4a7fc2af92a9f27f72a5">AdjustFloatingPositionerGrps</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff_alignment.html#a1a6ab7d4245f460943dfb79f3fc1f6ee">AdjustSlurs</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_staff_alignment.html#a29be369444edba27ec48659a1ddf68e3">JustifyY</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keywordtype">int</span> GetMinimumStaffSpacing(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keyword">const</span> AttSpacing *attSpacing) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordtype">bool</span> IsInBracketGroup(<span class="keywordtype">bool</span> isFirst) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <a class="code" href="classvrv_1_1_system_aligner.html#a024f36eb64e0d6adf31217b55ba72b8e">SystemAligner::SpacingType</a> m_spacingType = SystemAligner::SpacingType::None;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    ArrayOfFloatingPositioners m_floatingPositioners;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <a class="code" href="classvrv_1_1_staff.html">Staff</a> *m_staff;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <a class="code" href="classvrv_1_1_system.html">System</a> *m_system;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keywordtype">int</span> m_yRel;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    std::set&lt;int&gt; m_verseNs;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordtype">int</span> m_overflowAbove;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keywordtype">int</span> m_overflowBelow;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="keywordtype">int</span> m_overlap;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordtype">int</span> m_requestedSpaceAbove;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordtype">int</span> m_requestedSpaceBelow;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keywordtype">int</span> m_staffHeight;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *m_overflowBBoxAbove;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <a class="code" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *m_overflowBBoxBelow;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keywordtype">int</span> m_scoreDefClefOverflowAbove;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keywordtype">int</span> m_scoreDefClefOverflowBelow;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="comment">// Value to store required beam adjustment for cross-staff beams</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keywordtype">int</span> m_beamAdjust = 0;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    std::vector&lt;BoundingBox *&gt; m_overflowAboveBBoxes;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    std::vector&lt;BoundingBox *&gt; m_overflowBelowBBoxes;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;};</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160; </div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_staff_def_html"><div class="ttname"><a href="classvrv_1_1_staff_def.html">vrv::StaffDef</a></div><div class="ttdoc">This class represents a MEI staffDef.</div><div class="ttdef"><b>Definition:</b> staffdef.h:25</div></div>
@@ -335,7 +341,7 @@ $(document).ready(function(){initNavTree('verticalaligner_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>verticalaligner.h</b></li>
-    <li class="footer">Generated on Thu Mar 10 2022 16:56:43 for Verovio by
+    <li class="footer">Generated on Fri Mar 11 2022 07:17:35 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

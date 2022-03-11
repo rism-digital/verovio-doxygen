@@ -40,7 +40,7 @@ var searchData=
   ['adjustbracketgroupspacing_37',['AdjustBracketGroupSpacing',['../classvrv_1_1_staff_alignment.html#a1ffa4ba5373057ac34c88c093983831c',1,'vrv::StaffAlignment']]],
   ['adjustclefchanges_38',['AdjustClefChanges',['../classvrv_1_1_clef.html#add4985b14425dd6a67f0d14f9b2a5f6b',1,'vrv::Clef::AdjustClefChanges()'],['../classvrv_1_1_measure.html#abaa6a7e0fee0883671963cbea682b484',1,'vrv::Measure::AdjustClefChanges()'],['../classvrv_1_1_object.html#a6c19b533f485fd10e5649bb5c441c884',1,'vrv::Object::AdjustClefChanges()']]],
   ['adjustclefsparams_39',['AdjustClefsParams',['../classvrv_1_1_adjust_clefs_params.html',1,'vrv']]],
-  ['adjustcoordinates_40',['AdjustCoordinates',['../classvrv_1_1_slur.html#a3d8f95dd4c091e8c3efb01aead7d1925',1,'vrv::Slur']]],
+  ['adjustcoordinates_40',['AdjustCoordinates',['../classvrv_1_1_slur.html#ad114d98b96232bb50f5b08652f7eb565',1,'vrv::Slur']]],
   ['adjustcrossstaffcontent_41',['AdjustCrossStaffContent',['../classvrv_1_1_chord.html#accc42d972b31a8c1678f70ef5b40c46f',1,'vrv::Chord::AdjustCrossStaffContent()'],['../classvrv_1_1_object.html#acfa149d616638b3935e56e1ee41ce61a',1,'vrv::Object::AdjustCrossStaffContent()']]],
   ['adjustcrossstaffcontentparams_42',['AdjustCrossStaffContentParams',['../classvrv_1_1_adjust_cross_staff_content_params.html',1,'vrv']]],
   ['adjustcrossstaffypos_43',['AdjustCrossStaffYPos',['../classvrv_1_1_chord.html#a1a69e37fbee2584124bb0276f23354fd',1,'vrv::Chord::AdjustCrossStaffYPos()'],['../classvrv_1_1_object.html#abeee6db6564ff37f1fd686033751d51f',1,'vrv::Object::AdjustCrossStaffYPos()']]],

@@ -80,6 +80,7 @@ var namespacevrv =
     [ "ClosestBB", "structvrv_1_1_closest_b_b.html", "structvrv_1_1_closest_b_b" ],
     [ "Comparison", "classvrv_1_1_comparison.html", "classvrv_1_1_comparison" ],
     [ "ControlElement", "classvrv_1_1_control_element.html", "classvrv_1_1_control_element" ],
+    [ "ControlPointAdjustment", "structvrv_1_1_control_point_adjustment.html", "structvrv_1_1_control_point_adjustment" ],
     [ "ControlPointConstraint", "structvrv_1_1_control_point_constraint.html", "structvrv_1_1_control_point_constraint" ],
     [ "ConvertMarkupAnalyticalParams", "classvrv_1_1_convert_markup_analytical_params.html", "classvrv_1_1_convert_markup_analytical_params" ],
     [ "ConvertMarkupArticParams", "classvrv_1_1_convert_markup_artic_params.html", "classvrv_1_1_convert_markup_artic_params" ],
