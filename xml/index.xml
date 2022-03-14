@@ -2342,7 +2342,8 @@
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1a8cd25715766f83579f964dde56d219d8" kind="variable"><name>m_accentedGraceNote</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1a099869302dfba354a6c7dc86214977c1" kind="variable"><name>m_functor</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1ac60df3ad3c1eb7338e9b7d9395373433" kind="variable"><name>m_heldNotes</name></member>
-    <member refid="classvrv_1_1_generate_m_i_d_i_params_1aca7cbb3730c90a286c78f041dbf8094f" kind="function"><name>GenerateMIDIParams</name></member>
+    <member refid="classvrv_1_1_generate_m_i_d_i_params_1a853bef9d73c54452bacda55710b62907" kind="variable"><name>m_doc</name></member>
+    <member refid="classvrv_1_1_generate_m_i_d_i_params_1a7c0d9e0ebe0e03fe9e1350a9b4a45594" kind="function"><name>GenerateMIDIParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_generate_timemap_params" kind="class"><name>vrv::GenerateTimemapParams</name>
     <member refid="classvrv_1_1_generate_timemap_params_1a9acab222e46e65e59b1a5de59ba527b5" kind="variable"><name>m_scoreTimeOffset</name></member>
@@ -3116,6 +3117,7 @@
     <member refid="classvrv_1_1_layer_1a37ff6e247682992b7fba8137af6eca5a" kind="function"><name>SetCrossStaffFromBelow</name></member>
     <member refid="classvrv_1_1_layer_1a02e25e8082abddb22bec2cdb8b440ad8" kind="function"><name>HasCrossStaffFromBelow</name></member>
     <member refid="classvrv_1_1_layer_1afbcea48c495eed9803a24d70b344e03d" kind="function"><name>CalcOnsetOffset</name></member>
+    <member refid="classvrv_1_1_layer_1ae6954d60aaa59e9dfaea4a60589f78ae" kind="function"><name>GenerateMIDI</name></member>
     <member refid="classvrv_1_1_layer_1ad752ceb76503d1623eaef66d11c88197" kind="variable"><name>m_drawingStemDir</name></member>
     <member refid="classvrv_1_1_layer_1a94355b0d2646202ec101969ea050dcf4" kind="variable"><name>m_crossStaffFromBelow</name></member>
     <member refid="classvrv_1_1_layer_1adc4f612602ab0ba517154040e128d17f" kind="variable"><name>m_crossStaffFromAbove</name></member>
@@ -4882,6 +4884,7 @@
     <member refid="classvrv_1_1_options_1a0b55be9ed4783e0116172c3836c7c1e3" kind="variable"><name>m_landscape</name></member>
     <member refid="classvrv_1_1_options_1a1bdbc5c08be3c228c9c617ecbe157b2e" kind="variable"><name>m_ligatureAsBracket</name></member>
     <member refid="classvrv_1_1_options_1ace0da799034ed728698c346b5c604fb3" kind="variable"><name>m_mensuralToMeasure</name></member>
+    <member refid="classvrv_1_1_options_1a8f4846d524263f9e851c03582532b001" kind="variable"><name>m_midiNoCue</name></member>
     <member refid="classvrv_1_1_options_1ac5351533fcb3dc839e95adba9cafbf0d" kind="variable"><name>m_midiTempoAdjustment</name></member>
     <member refid="classvrv_1_1_options_1af64ac4b535712ec5fca92a9086a4437f" kind="variable"><name>m_minLastJustification</name></member>
     <member refid="classvrv_1_1_options_1af6b86f9f5c11eb1ce187ce7b90143c3f" kind="variable"><name>m_mmOutput</name></member>
@@ -7210,7 +7213,7 @@
     <member refid="classvrv_1_1_view_1a3a60de1e948bd0e591ee2971457737ae" kind="function"><name>DrawTextEnclosure</name></member>
     <member refid="classvrv_1_1_view_1a40ebbe142ce17e46484b0c907e15d7df" kind="function"><name>DrawAcciaccaturaSlash</name></member>
     <member refid="classvrv_1_1_view_1a0b759a763ff0f1c97fe498f191e0a0fc" kind="function"><name>DrawClefEnclosing</name></member>
-    <member refid="classvrv_1_1_view_1a4ad1c6e3713eaade221683df44ab8a0e" kind="function"><name>DrawDotsPart</name></member>
+    <member refid="classvrv_1_1_view_1a23d87ccdbfffada9e716da57e406b865" kind="function"><name>DrawDotsPart</name></member>
     <member refid="classvrv_1_1_view_1aadbc6b836c9ad925a6bfd757d9efa02c" kind="function"><name>DrawMeterSig</name></member>
     <member refid="classvrv_1_1_view_1aa655040c3577f02e209269f860437c7d" kind="function"><name>DrawMeterSigFigures</name></member>
     <member refid="classvrv_1_1_view_1aa05e0576409456496c76a63c7e3e1185" kind="function"><name>DrawMRptPart</name></member>
@@ -7290,7 +7293,7 @@
     <member refid="classvrv_1_1_view_1a1237c4e9e5b7fd25787933eca04e9372" kind="function"><name>DrawFilledRoundedRectangle</name></member>
     <member refid="classvrv_1_1_view_1a91c2eb84f422eec8085474a75b9aed82" kind="function"><name>DrawObliquePolygon</name></member>
     <member refid="classvrv_1_1_view_1a92d7d53a19088ce4bf4192bb1c79785f" kind="function"><name>DrawDiamond</name></member>
-    <member refid="classvrv_1_1_view_1a784d025847a1a702695bba8bd704e176" kind="function"><name>DrawDot</name></member>
+    <member refid="classvrv_1_1_view_1af2ab2f89a0b92ae877969133573b32ad" kind="function"><name>DrawDot</name></member>
     <member refid="classvrv_1_1_view_1a10a5f844ac299bc92820e64a62ae0a89" kind="function"><name>DrawSquareBracket</name></member>
     <member refid="classvrv_1_1_view_1a9fddb730ffdbd943413244594704cd6d" kind="function"><name>DrawEnclosingBrackets</name></member>
     <member refid="classvrv_1_1_view_1ab9382c1b50537957271e270dd0ea6991" kind="function"><name>GetTupletCoordinates</name></member>

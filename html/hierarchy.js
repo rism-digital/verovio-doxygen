@@ -192,6 +192,7 @@ var hierarchy =
     [ "AttCue", null, [
       [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
+      [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ],
       [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
