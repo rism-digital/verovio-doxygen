@@ -75,6 +75,8 @@ var classvrv_1_1_measure =
     [ "HasCachedHorizontalLayout", "classvrv_1_1_measure.html#a5a45b03920fff1323cfca86c78f58db6", null ],
     [ "HasInvisibleStaffBarlines", "classvrv_1_1_measure.html#ad58b70aabbd1ea6dcfa17e11c3b8ae13", null ],
     [ "HorizontalLayoutCache", "classvrv_1_1_measure.html#a9ce00468ec75a511b3a8f65de90bdd9d", null ],
+    [ "IsFirstInSystem", "classvrv_1_1_measure.html#adf8577b487347935b6890e5b67042b5c", null ],
+    [ "IsLastInSystem", "classvrv_1_1_measure.html#abdfb4aa56b83ab6a1769646f7f5b052a", null ],
     [ "IsMeasuredMusic", "classvrv_1_1_measure.html#a53fc4fd98146722a9cc4784f1b9a7498", null ],
     [ "IsSupportedChild", "classvrv_1_1_measure.html#a9757eaa14e314e66fc650836870a7fc3", null ],
     [ "JustifyX", "classvrv_1_1_measure.html#aa7d3eca3ec1dfa1aad41d28764615867", null ],
