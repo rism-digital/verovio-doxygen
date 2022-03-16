@@ -218,120 +218,122 @@ $(document).ready(function(){initNavTree('note_8h_source.html',''); initResizabl
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_note.html#ac78d6b4e920d6bce9f77f1fd99fe7faf">ResolveStemSameas</a>(<a class="code" href="classvrv_1_1_prepare_linking_params.html">PrepareLinkingParams</a> *params);</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    data_STEMDIRECTION <a class="code" href="classvrv_1_1_note.html#a6f88ce0675e674e63fc42e3fca18fdc4">CalcStemDirForSameasNote</a>(<span class="keywordtype">int</span> verticalCenter);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    data_STEMDIRECTION <a class="code" href="classvrv_1_1_note.html#aa7a762e5de0133a66194a4f9175d3d1e">CalcStemDirForSameasNote</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> verticalCenter);</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="comment">// Static methods //</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordtype">void</span> CalcNoteHeadShiftForSameasNote(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="code" href="classvrv_1_1_note.html">Note</a> *stemSameas, data_STEMDIRECTION stemDir);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_note.html#a2f0823657fc3300f9cf1193231883ea4">HandleLedgerLineStemCollision</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff, <a class="code" href="classvrv_1_1_note.html">Note</a> *note1, <a class="code" href="classvrv_1_1_note.html">Note</a> *note2);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="comment">// Static methods //</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_note.html#a2f0823657fc3300f9cf1193231883ea4">HandleLedgerLineStemCollision</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff, <a class="code" href="classvrv_1_1_note.html">Note</a> *note1, <a class="code" href="classvrv_1_1_note.html">Note</a> *note2);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a1c9054a1bbdbfbae8a22fcc5fca4f6b9">AdjustArtic</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#adbea2481115dec839f5a86aa56f4c792">ConvertMarkupAnalytical</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a9c93a6e0955e4e9541d6e025c8adebc8">CalcArtic</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#aac544df65fa58a853952072f33fb5fb3">CalcStem</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a8196c489c06ff4d98161bad885658605">CalcChordNoteHeads</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#ac0ab23d2259972c017dade3db958f0a0">CalcDots</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#ae4212d3d2bb03c033bb751c5137d265e">CalcLedgerLines</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a60ae934c0ca1e35baa938b26f572e086">PrepareLayerElementParts</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a8cfc2508a920faad80159badd7a9efa0">PrepareLyrics</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#ac12fbf9f831f079d8d48eb0fef06d4a2">ResetDrawing</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a98676025b889012c0101223a5693f46c">ResetHorizontalAlignment</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a012e8bbeb3f7c669654284ff4e3d9b5b">GenerateMIDI</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a9f6c57951cfc08541da10e767c878ea4">GenerateTimemap</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a541f31357236a4ff865c00da04c31c16">Transpose</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    MapOfNoteLocs <a class="code" href="classvrv_1_1_note.html#a4ed352a3aa79d5fe62095c0dc2418495">CalcNoteLocations</a>(NotePredicate predicate = NULL) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    MapOfDotLocs <a class="code" href="classvrv_1_1_note.html#abd118643387bdac8092d88e2b6a9030f">CalcDotLocations</a>(<span class="keywordtype">int</span> layerCount, <span class="keywordtype">bool</span> primary) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordtype">int</span> GetChromaticAlteration();</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <a class="code" href="classvrv_1_1_trans_pitch.html">TransPitch</a> GetTransPitch();</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a1c9054a1bbdbfbae8a22fcc5fca4f6b9">AdjustArtic</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#adbea2481115dec839f5a86aa56f4c792">ConvertMarkupAnalytical</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a9c93a6e0955e4e9541d6e025c8adebc8">CalcArtic</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#aac544df65fa58a853952072f33fb5fb3">CalcStem</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a8196c489c06ff4d98161bad885658605">CalcChordNoteHeads</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#ac0ab23d2259972c017dade3db958f0a0">CalcDots</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#ae4212d3d2bb03c033bb751c5137d265e">CalcLedgerLines</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a60ae934c0ca1e35baa938b26f572e086">PrepareLayerElementParts</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a8cfc2508a920faad80159badd7a9efa0">PrepareLyrics</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#ac12fbf9f831f079d8d48eb0fef06d4a2">ResetDrawing</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a98676025b889012c0101223a5693f46c">ResetHorizontalAlignment</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a012e8bbeb3f7c669654284ff4e3d9b5b">GenerateMIDI</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a9f6c57951cfc08541da10e767c878ea4">GenerateTimemap</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_note.html#a541f31357236a4ff865c00da04c31c16">Transpose</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    MapOfNoteLocs <a class="code" href="classvrv_1_1_note.html#a4ed352a3aa79d5fe62095c0dc2418495">CalcNoteLocations</a>(NotePredicate predicate = NULL) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    MapOfDotLocs <a class="code" href="classvrv_1_1_note.html#abd118643387bdac8092d88e2b6a9030f">CalcDotLocations</a>(<span class="keywordtype">int</span> layerCount, <span class="keywordtype">bool</span> primary) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordtype">int</span> GetChromaticAlteration();</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keywordtype">void</span> UpdateFromTransPitch(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_trans_pitch.html">TransPitch</a> &amp;tp);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <a class="code" href="classvrv_1_1_trans_pitch.html">TransPitch</a> GetTransPitch();</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="keywordtype">bool</span> IsDotOverlappingWithFlag(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keyword">const</span> <span class="keywordtype">int</span> staffSize, <span class="keywordtype">int</span> dotLocShift);</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordtype">void</span> DeferMIDINote(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams, <span class="keywordtype">double</span> shift, <span class="keywordtype">bool</span> includeChordSiblings);</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordtype">void</span> GenerateGraceNoteMIDI(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams, <span class="keywordtype">double</span> startTime, <span class="keywordtype">int</span> tpq, <span class="keywordtype">int</span> channel, <span class="keywordtype">int</span> velocity);</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keywordtype">int</span> m_drawingLoc;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordtype">bool</span> m_flippedNotehead;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    ChordCluster *m_cluster;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordtype">int</span> m_clusterPosition;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <a class="code" href="classvrv_1_1_note.html">Note</a> *m_stemSameas;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    StemSameasDrawingRole m_stemSameasRole;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;};</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment">// DiatonicSort</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordtype">void</span> UpdateFromTransPitch(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_trans_pitch.html">TransPitch</a> &amp;tp);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordtype">bool</span> IsDotOverlappingWithFlag(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keyword">const</span> <span class="keywordtype">int</span> staffSize, <span class="keywordtype">int</span> dotLocShift);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keywordtype">void</span> DeferMIDINote(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams, <span class="keywordtype">double</span> shift, <span class="keywordtype">bool</span> includeChordSiblings);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordtype">void</span> GenerateGraceNoteMIDI(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams, <span class="keywordtype">double</span> startTime, <span class="keywordtype">int</span> tpq, <span class="keywordtype">int</span> channel, <span class="keywordtype">int</span> velocity);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160; </div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordtype">int</span> m_drawingLoc;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keywordtype">bool</span> m_flippedNotehead;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    ChordCluster *m_cluster;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="keywordtype">int</span> m_clusterPosition;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <a class="code" href="classvrv_1_1_note.html">Note</a> *m_stemSameas;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    StemSameasDrawingRole m_stemSameasRole;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;};</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
-<div class="line"><a name="l00425"></a><span class="lineno"><a class="line" href="classvrv_1_1_diatonic_sort.html">  425</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_diatonic_sort.html">DiatonicSort</a> {</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <a class="code" href="classvrv_1_1_diatonic_sort.html">DiatonicSort</a>() {}</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160; </div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *first, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *second)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvrv_1_1_note.html">Note</a> *n1 = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="classvrv_1_1_note.html">Note</a> *<span class="keyword">&gt;</span>(first);</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvrv_1_1_note.html">Note</a> *n2 = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="classvrv_1_1_note.html">Note</a> *<span class="keyword">&gt;</span>(second);</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        assert(n1 &amp;&amp; n2);</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <span class="keywordflow">return</span> (n1-&gt;<a class="code" href="classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f">GetDiatonicPitch</a>() &lt; n2-&gt;<a class="code" href="classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f">GetDiatonicPitch</a>());</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    }</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;};</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160; </div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="comment">// TabCourseSort</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="comment">// DiatonicSort</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
+<div class="line"><a name="l00427"></a><span class="lineno"><a class="line" href="classvrv_1_1_diatonic_sort.html">  427</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_diatonic_sort.html">DiatonicSort</a> {</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <a class="code" href="classvrv_1_1_diatonic_sort.html">DiatonicSort</a>() {}</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *first, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *second)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvrv_1_1_note.html">Note</a> *n1 = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="classvrv_1_1_note.html">Note</a> *<span class="keyword">&gt;</span>(first);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvrv_1_1_note.html">Note</a> *n2 = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="classvrv_1_1_note.html">Note</a> *<span class="keyword">&gt;</span>(second);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        assert(n1 &amp;&amp; n2);</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="keywordflow">return</span> (n1-&gt;<a class="code" href="classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f">GetDiatonicPitch</a>() &lt; n2-&gt;<a class="code" href="classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f">GetDiatonicPitch</a>());</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    }</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;};</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160; </div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160; </div>
-<div class="line"><a name="l00446"></a><span class="lineno"><a class="line" href="classvrv_1_1_tab_course_sort.html">  446</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_tab_course_sort.html">TabCourseSort</a> {</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160; </div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <a class="code" href="classvrv_1_1_tab_course_sort.html">TabCourseSort</a>() {}</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *first, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *second)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvrv_1_1_note.html">Note</a> *n1 = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="classvrv_1_1_note.html">Note</a> *<span class="keyword">&gt;</span>(first);</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvrv_1_1_note.html">Note</a> *n2 = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="classvrv_1_1_note.html">Note</a> *<span class="keyword">&gt;</span>(second);</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        assert(n1 &amp;&amp; n2);</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordflow">return</span> (n1-&gt;GetTabCourse() &gt; n2-&gt;GetTabCourse());</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    }</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;};</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160; </div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="comment">// TabCourseSort</span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160; </div>
+<div class="line"><a name="l00448"></a><span class="lineno"><a class="line" href="classvrv_1_1_tab_course_sort.html">  448</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_tab_course_sort.html">TabCourseSort</a> {</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160; </div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <a class="code" href="classvrv_1_1_tab_course_sort.html">TabCourseSort</a>() {}</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160; </div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *first, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *second)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvrv_1_1_note.html">Note</a> *n1 = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="classvrv_1_1_note.html">Note</a> *<span class="keyword">&gt;</span>(first);</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvrv_1_1_note.html">Note</a> *n2 = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="classvrv_1_1_note.html">Note</a> *<span class="keyword">&gt;</span>(second);</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        assert(n1 &amp;&amp; n2);</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        <span class="keywordflow">return</span> (n1-&gt;GetTabCourse() &gt; n2-&gt;GetTabCourse());</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    }</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;};</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160; </div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160; </div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_note_html_afa3895e8b0aacf42f2675fdde8a30c8d"><div class="ttname"><a href="classvrv_1_1_note.html#afa3895e8b0aacf42f2675fdde8a30c8d">vrv::Note::HasLedgerLines</a></div><div class="ttdeci">bool HasLedgerLines(int &amp;linesAbove, int &amp;linesBelow, const Staff *staff=NULL) const</div><div class="ttdoc">Check if the note has ledger lines.</div></div>
@@ -346,13 +348,13 @@ $(document).ready(function(){initNavTree('note_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassvrv_1_1_accid_html"><div class="ttname"><a href="classvrv_1_1_accid.html">vrv::Accid</a></div><div class="ttdoc">This class models the MEI &lt;accid&gt; element.</div><div class="ttdef"><b>Definition:</b> accid.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a33d2ecc1b1027f9f6c4a978b6f268073"><div class="ttname"><a href="classvrv_1_1_note.html#a33d2ecc1b1027f9f6c4a978b6f268073">vrv::Note::IsTabGrpNote</a></div><div class="ttdeci">TabGrp * IsTabGrpNote()</div><div class="ttdoc">Return the parent TabGrp is the note is part of one.</div></div>
-<div class="ttc" id="aclassvrv_1_1_note_html_a6f88ce0675e674e63fc42e3fca18fdc4"><div class="ttname"><a href="classvrv_1_1_note.html#a6f88ce0675e674e63fc42e3fca18fdc4">vrv::Note::CalcStemDirForSameasNote</a></div><div class="ttdeci">data_STEMDIRECTION CalcStemDirForSameasNote(int verticalCenter)</div><div class="ttdoc">Calculate the stem direction of the pair of notes.</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a8fac70447933b92e2615280b6909e351"><div class="ttname"><a href="classvrv_1_1_note.html#a8fac70447933b92e2615280b6909e351">vrv::Note::IsChordTone</a></div><div class="ttdeci">Chord * IsChordTone()</div><div class="ttdoc">Overriding functions to return information from chord parent if any.</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a1c9054a1bbdbfbae8a22fcc5fca4f6b9"><div class="ttname"><a href="classvrv_1_1_note.html#a1c9054a1bbdbfbae8a22fcc5fca4f6b9">vrv::Note::AdjustArtic</a></div><div class="ttdeci">int AdjustArtic(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::AdjustArtic.</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_ac78d6b4e920d6bce9f77f1fd99fe7faf"><div class="ttname"><a href="classvrv_1_1_note.html#ac78d6b4e920d6bce9f77f1fd99fe7faf">vrv::Note::ResolveStemSameas</a></div><div class="ttdeci">void ResolveStemSameas(PrepareLinkingParams *params)</div><div class="ttdoc">Resovle @stem.sameas links by instanciating Note::m_stemSameas (*Note).</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a9c93a6e0955e4e9541d6e025c8adebc8"><div class="ttname"><a href="classvrv_1_1_note.html#a9c93a6e0955e4e9541d6e025c8adebc8">vrv::Note::CalcArtic</a></div><div class="ttdeci">int CalcArtic(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CalcArtic.</div></div>
-<div class="ttc" id="aclassvrv_1_1_tab_course_sort_html"><div class="ttname"><a href="classvrv_1_1_tab_course_sort.html">vrv::TabCourseSort</a></div><div class="ttdoc">Unary predicate for sorting notes by course number.</div><div class="ttdef"><b>Definition:</b> note.h:446</div></div>
+<div class="ttc" id="aclassvrv_1_1_tab_course_sort_html"><div class="ttname"><a href="classvrv_1_1_tab_course_sort.html">vrv::TabCourseSort</a></div><div class="ttdoc">Unary predicate for sorting notes by course number.</div><div class="ttdef"><b>Definition:</b> note.h:448</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_ac0ab23d2259972c017dade3db958f0a0"><div class="ttname"><a href="classvrv_1_1_note.html#ac0ab23d2259972c017dade3db958f0a0">vrv::Note::CalcDots</a></div><div class="ttdeci">int CalcDots(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CalcDots.</div></div>
+<div class="ttc" id="aclassvrv_1_1_note_html_aa7a762e5de0133a66194a4f9175d3d1e"><div class="ttname"><a href="classvrv_1_1_note.html#aa7a762e5de0133a66194a4f9175d3d1e">vrv::Note::CalcStemDirForSameasNote</a></div><div class="ttdeci">data_STEMDIRECTION CalcStemDirForSameasNote(Doc *doc, int verticalCenter)</div><div class="ttdoc">Calculate the stem direction of the pair of notes.</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a9f6c57951cfc08541da10e767c878ea4"><div class="ttname"><a href="classvrv_1_1_note.html#a9f6c57951cfc08541da10e767c878ea4">vrv::Note::GenerateTimemap</a></div><div class="ttdeci">int GenerateTimemap(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::GenerateTimemap.</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a2f0823657fc3300f9cf1193231883ea4"><div class="ttname"><a href="classvrv_1_1_note.html#a2f0823657fc3300f9cf1193231883ea4">vrv::Note::HandleLedgerLineStemCollision</a></div><div class="ttdeci">static bool HandleLedgerLineStemCollision(Doc *doc, Staff *staff, Note *note1, Note *note2)</div><div class="ttdoc">Assume that two notes from different layers are given occuring at the same time Returns true if one n...</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a68a34dc4606c694c61020104860daa78"><div class="ttname"><a href="classvrv_1_1_note.html#a68a34dc4606c694c61020104860daa78">vrv::Note::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> note.h:94</div></div>
@@ -366,7 +368,7 @@ $(document).ready(function(){initNavTree('note_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassvrv_1_1_note_html_a4ed352a3aa79d5fe62095c0dc2418495"><div class="ttname"><a href="classvrv_1_1_note.html#a4ed352a3aa79d5fe62095c0dc2418495">vrv::Note::CalcNoteLocations</a></div><div class="ttdeci">MapOfNoteLocs CalcNoteLocations(NotePredicate predicate=NULL) override</div><div class="ttdoc">The note locations w.r.t.</div></div>
 <div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a782b20876bae1c1f01fc871774312860"><div class="ttname"><a href="classvrv_1_1_note.html#a782b20876bae1c1f01fc871774312860">vrv::Note::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> note.h:73</div></div>
-<div class="ttc" id="aclassvrv_1_1_diatonic_sort_html"><div class="ttname"><a href="classvrv_1_1_diatonic_sort.html">vrv::DiatonicSort</a></div><div class="ttdoc">Unary predicate for sorting notes by diatonic pitch.</div><div class="ttdef"><b>Definition:</b> note.h:425</div></div>
+<div class="ttc" id="aclassvrv_1_1_diatonic_sort_html"><div class="ttname"><a href="classvrv_1_1_diatonic_sort.html">vrv::DiatonicSort</a></div><div class="ttdoc">Unary predicate for sorting notes by diatonic pitch.</div><div class="ttdef"><b>Definition:</b> note.h:427</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_aefb4a2097eb88c3cefd73cbc72222bb0"><div class="ttname"><a href="classvrv_1_1_note.html#aefb4a2097eb88c3cefd73cbc72222bb0">vrv::Note::AddChild</a></div><div class="ttdeci">void AddChild(Object *object) override</div><div class="ttdoc">Overwritten method for note.</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_abd118643387bdac8092d88e2b6a9030f"><div class="ttname"><a href="classvrv_1_1_note.html#abd118643387bdac8092d88e2b6a9030f">vrv::Note::CalcDotLocations</a></div><div class="ttdeci">MapOfDotLocs CalcDotLocations(int layerCount, bool primary) override</div><div class="ttdoc">The dot locations w.r.t.</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html_a8196c489c06ff4d98161bad885658605"><div class="ttname"><a href="classvrv_1_1_note.html#a8196c489c06ff4d98161bad885658605">vrv::Note::CalcChordNoteHeads</a></div><div class="ttdeci">int CalcChordNoteHeads(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CalcChordNoteHeads.</div></div>
@@ -391,7 +393,7 @@ $(document).ready(function(){initNavTree('note_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>note.h</b></li>
-    <li class="footer">Generated on Tue Mar 15 2022 15:07:15 for Verovio by
+    <li class="footer">Generated on Wed Mar 16 2022 14:35:58 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
