@@ -18,6 +18,7 @@ var classvrv_1_1_score =
     [ "ScoreDefNeedsOptimization", "classvrv_1_1_score.html#a3a2637750d08541d340b1f6055995e32", null ],
     [ "ScoreDefOptimize", "classvrv_1_1_score.html#a3c23c17c02d816b98a4b257180e3f677", null ],
     [ "SetAsCurrent", "classvrv_1_1_score.html#ac1074a91c1f31fa6d78e177dc152e4fe", null ],
+    [ "Transpose", "classvrv_1_1_score.html#aef6fa2f4cfe4ccb51777368afe963a74", null ],
     [ "UnCastOff", "classvrv_1_1_score.html#a225502c03b1a4ec590c817501b3715d4", null ],
     [ "m_drawingPgFoot2Height", "classvrv_1_1_score.html#a9b66adafb9c792e27e8a3e7c4cd071f5", null ],
     [ "m_drawingPgFootHeight", "classvrv_1_1_score.html#a1ba70d8aabe2c138467c4f333c4364eb", null ],
