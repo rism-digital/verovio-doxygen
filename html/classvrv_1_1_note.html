@@ -166,8 +166,8 @@ StemSameasDrawingRole&#160;</td><td class="memItemRight" valign="bottom"><a clas
 <tr class="memitem:aa7a762e5de0133a66194a4f9175d3d1e"><td class="memItemLeft" align="right" valign="top">data_STEMDIRECTION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#aa7a762e5de0133a66194a4f9175d3d1e">CalcStemDirForSameasNote</a> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, int verticalCenter)</td></tr>
 <tr class="memdesc:aa7a762e5de0133a66194a4f9175d3d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the stem direction of the pair of notes.  <a href="classvrv_1_1_note.html#aa7a762e5de0133a66194a4f9175d3d1e">More...</a><br /></td></tr>
 <tr class="separator:aa7a762e5de0133a66194a4f9175d3d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73c6bae2566603f0f367d5d33aa7b77d"><td class="memItemLeft" align="right" valign="top"><a id="a73c6bae2566603f0f367d5d33aa7b77d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CalcNoteHeadShiftForSameasNote</b> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="el" href="classvrv_1_1_note.html">Note</a> *stemSameas, data_STEMDIRECTION stemDir)</td></tr>
+<tr class="memitem:a73c6bae2566603f0f367d5d33aa7b77d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a73c6bae2566603f0f367d5d33aa7b77d">CalcNoteHeadShiftForSameasNote</a> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="el" href="classvrv_1_1_note.html">Note</a> *stemSameas, data_STEMDIRECTION stemDir)</td></tr>
+<tr class="memdesc:a73c6bae2566603f0f367d5d33aa7b77d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Note::m_flippedNotehead flag if one of the two notes needs to be placed on the side.  <a href="classvrv_1_1_note.html#a73c6bae2566603f0f367d5d33aa7b77d">More...</a><br /></td></tr>
 <tr class="separator:a73c6bae2566603f0f367d5d33aa7b77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c9054a1bbdbfbae8a22fcc5fca4f6b9"><td class="memItemLeft" align="right" valign="top"><a id="a1c9054a1bbdbfbae8a22fcc5fca4f6b9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a1c9054a1bbdbfbae8a22fcc5fca4f6b9">AdjustArtic</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) override</td></tr>
@@ -2074,6 +2074,43 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
+<a id="a73c6bae2566603f0f367d5d33aa7b77d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c6bae2566603f0f367d5d33aa7b77d">&#9670;&nbsp;</a></span>CalcNoteHeadShiftForSameasNote()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vrv::Note::CalcNoteHeadShiftForSameasNote </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_doc.html">Doc</a> *&#160;</td>
+          <td class="paramname"><em>doc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_note.html">Note</a> *&#160;</td>
+          <td class="paramname"><em>stemSameas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">data_STEMDIRECTION&#160;</td>
+          <td class="paramname"><em>stemDir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Note::m_flippedNotehead flag if one of the two notes needs to be placed on the side. </p>
+<p>The note X relative position remains untouched because we do not want the stem position to be changed. This is different than with chords. It means the the X position is actually corrected when drawing the note. </p>
+
+</div>
+</div>
 <a id="a4ed352a3aa79d5fe62095c0dc2418495"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ed352a3aa79d5fe62095c0dc2418495">&#9670;&nbsp;</a></span>CalcNoteLocations()</h2>
 
@@ -2372,7 +2409,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_note.html">Note</a></li>
-    <li class="footer">Generated on Wed Mar 16 2022 14:36:01 for Verovio by
+    <li class="footer">Generated on Mon Mar 21 2022 07:47:54 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
