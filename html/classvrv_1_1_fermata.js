@@ -7,6 +7,7 @@ var classvrv_1_1_fermata =
     [ "GetClassName", "classvrv_1_1_fermata.html#a01d1ea40f44ee5585fa9d29deae202db", null ],
     [ "GetEnclosingGlyphs", "classvrv_1_1_fermata.html#a501ce1338df913386be0e31e07290fe6", null ],
     [ "GetFermataGlyph", "classvrv_1_1_fermata.html#a0e7e493a0489f36630dc9b87d4bd369e", null ],
+    [ "GetTimePointInterface", "classvrv_1_1_fermata.html#a7b6470caa28f846940fde77eb5473bc5", null ],
     [ "GetTimePointInterface", "classvrv_1_1_fermata.html#af92473b20eb996dd62399775fd9cbdb9", null ],
     [ "Reset", "classvrv_1_1_fermata.html#afb7670f0139028cd80c08d6a7801f9be", null ]
 ];

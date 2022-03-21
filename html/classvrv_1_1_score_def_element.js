@@ -19,6 +19,7 @@ var classvrv_1_1_score_def_element =
     [ "GetMeterSigGrp", "classvrv_1_1_score_def_element.html#a6536c46fcc832db4f184743f6266f74d", null ],
     [ "GetMeterSigGrp", "classvrv_1_1_score_def_element.html#a8b1bc565f4580e7796b5d6460eb16266", null ],
     [ "GetMeterSigGrpCopy", "classvrv_1_1_score_def_element.html#a213a1ba52ee4b10fb00ec110bd7f37fe", null ],
+    [ "GetScoreDefInterface", "classvrv_1_1_score_def_element.html#a938545d3926850ec13bb21186d6e2489", null ],
     [ "GetScoreDefInterface", "classvrv_1_1_score_def_element.html#ac73bb732115fdffcb19e0dff161fd7ff", null ],
     [ "HasClefInfo", "classvrv_1_1_score_def_element.html#abcbf2b4557fa9f051efa3b13d99b7aa7", null ],
     [ "HasKeySigInfo", "classvrv_1_1_score_def_element.html#ae2a6767fc87cd4f1b6d2e061af175406", null ],

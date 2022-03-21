@@ -9,7 +9,9 @@ var classvrv_1_1_pedal =
     [ "GetClassName", "classvrv_1_1_pedal.html#af24a83a273daf5c3ab0e72e0a5127505", null ],
     [ "GetPedalForm", "classvrv_1_1_pedal.html#acb1e2a8f83b5dbd06e09bad8266237b9", null ],
     [ "GetPedalGlyph", "classvrv_1_1_pedal.html#a68b550860ce390cecc9d04441256a950", null ],
+    [ "GetTimePointInterface", "classvrv_1_1_pedal.html#ab243eb990a388a5259ea2c1e2d90fc0d", null ],
     [ "GetTimePointInterface", "classvrv_1_1_pedal.html#a737339b0c5f99d825e422af863105482", null ],
+    [ "GetTimeSpanningInterface", "classvrv_1_1_pedal.html#a8e8433ff619574bfdd28d77105e64110", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_pedal.html#a94793761ed37668ea956bc78d8e0c703", null ],
     [ "PrepareFloatingGrps", "classvrv_1_1_pedal.html#ad1e32c0f75395a87be003b83035593e3", null ],
     [ "Reset", "classvrv_1_1_pedal.html#a2261ebf8824e419224c376fa42b1db70", null ]

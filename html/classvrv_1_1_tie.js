@@ -8,7 +8,9 @@ var classvrv_1_1_tie =
     [ "CalculatePosition", "classvrv_1_1_tie.html#af5d0e930a2e13e63e0511792d3831152", null ],
     [ "Clone", "classvrv_1_1_tie.html#a538f07744e778a68aaa0a796f6b614e7", null ],
     [ "GetClassName", "classvrv_1_1_tie.html#aba9d6af19636774abab7d33a0ccb22b2", null ],
+    [ "GetTimePointInterface", "classvrv_1_1_tie.html#a9b08452c4b14ce1685d1b410f9c8199c", null ],
     [ "GetTimePointInterface", "classvrv_1_1_tie.html#aa8e25b0f4a327cae2dbb70aa16ea2707", null ],
+    [ "GetTimeSpanningInterface", "classvrv_1_1_tie.html#af63958a21766012a24ec0a1b37514a39", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_tie.html#ad628ff99b5abb3b242c45351b306c046", null ],
     [ "Reset", "classvrv_1_1_tie.html#af42e8dac1dedeb43a1202e2cc058f12b", null ],
     [ "ResolveMIDITies", "classvrv_1_1_tie.html#aac714a86e292b8fc3d2d8edf7b1b6afa", null ]

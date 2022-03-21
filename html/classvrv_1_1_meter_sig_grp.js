@@ -7,6 +7,7 @@ var classvrv_1_1_meter_sig_grp =
     [ "Clone", "classvrv_1_1_meter_sig_grp.html#a3b6d5d3b956d5ce9513480f5d1588722", null ],
     [ "FilterList", "classvrv_1_1_meter_sig_grp.html#a30799efa03d8f7a7e5a31a6983a52673", null ],
     [ "GetClassName", "classvrv_1_1_meter_sig_grp.html#a6b38e7cd4637a582508271c60c701143", null ],
+    [ "GetLinkingInterface", "classvrv_1_1_meter_sig_grp.html#a8742ba03cb21cd70372dae05302da18a", null ],
     [ "GetLinkingInterface", "classvrv_1_1_meter_sig_grp.html#a0642892ce29f5ab782a0c04325cebd1d", null ],
     [ "GetSimplifiedMeterSig", "classvrv_1_1_meter_sig_grp.html#a359b84c494020401588605f49a76255e", null ],
     [ "IsSupportedChild", "classvrv_1_1_meter_sig_grp.html#aad2431fb308c4b005add881ace1a58b0", null ],

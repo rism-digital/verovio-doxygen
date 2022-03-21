@@ -7,6 +7,7 @@ var classvrv_1_1_control_element =
     [ "AdjustXOverflow", "classvrv_1_1_control_element.html#aac6e4a89487d479670c8db760c720073", null ],
     [ "GetChildRendAlignment", "classvrv_1_1_control_element.html#a3443f80d111438969ac10e169fc412ea", null ],
     [ "GetLayerPlace", "classvrv_1_1_control_element.html#a6958cd8e98487b05df80adf872de0353", null ],
+    [ "GetLinkingInterface", "classvrv_1_1_control_element.html#aeb6ccac7f45774c4f7bb78f3b878eafd", null ],
     [ "GetLinkingInterface", "classvrv_1_1_control_element.html#a1ab03ccd8e1610d29508e9e0bb7bc7c5", null ],
     [ "Reset", "classvrv_1_1_control_element.html#ada5a97dab22c9ea6f7eff3dbfc4cd7ea", null ],
     [ "ResetDrawing", "classvrv_1_1_control_element.html#a140abaf59998bdcc8f4a20edc4a1d566", null ]

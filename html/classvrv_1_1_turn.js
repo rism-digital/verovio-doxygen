@@ -4,6 +4,7 @@ var classvrv_1_1_turn =
     [ "~Turn", "classvrv_1_1_turn.html#ae1cf4a47127d7088b5139de1d19ff94b", null ],
     [ "Clone", "classvrv_1_1_turn.html#a5e2698b079969dd31bd01140e4064561", null ],
     [ "GetClassName", "classvrv_1_1_turn.html#ae332097a4e999a127f4a9f12ee8bec80", null ],
+    [ "GetTimePointInterface", "classvrv_1_1_turn.html#a4a09c4e43294dff8dbd2909f02d8573a", null ],
     [ "GetTimePointInterface", "classvrv_1_1_turn.html#aed612d9f9f63b40196aa2d1a98808841", null ],
     [ "GetTurnGlyph", "classvrv_1_1_turn.html#a049ad442cab2fd9cf5ef83b027edf5c9", null ],
     [ "PrepareDelayedTurns", "classvrv_1_1_turn.html#a77354821d6499ba3d951cf681b60e156", null ],

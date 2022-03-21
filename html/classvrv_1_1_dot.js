@@ -4,6 +4,7 @@ var classvrv_1_1_dot =
     [ "~Dot", "classvrv_1_1_dot.html#a54795d47f0c2347dcfe988610dc0b569", null ],
     [ "Clone", "classvrv_1_1_dot.html#af02dc52ea7b62b411661617819f654b2", null ],
     [ "GetClassName", "classvrv_1_1_dot.html#a5238956c7fa43b8515e8e6bc583b6bec", null ],
+    [ "GetPositionInterface", "classvrv_1_1_dot.html#ae141cbc449380118fb0a370536b40c68", null ],
     [ "GetPositionInterface", "classvrv_1_1_dot.html#a21645bd7a5998a54b69c4ebe061a6506", null ],
     [ "HasToBeAligned", "classvrv_1_1_dot.html#aed33dfbb9942927d9e935d656533c88b", null ],
     [ "PreparePointersByLayer", "classvrv_1_1_dot.html#a41decafa6cf262e7a0eec5d980c1f132", null ],

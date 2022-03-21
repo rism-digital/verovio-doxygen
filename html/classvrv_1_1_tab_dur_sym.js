@@ -8,6 +8,7 @@ var classvrv_1_1_tab_dur_sym =
     [ "CalcStemLenInThirdUnits", "classvrv_1_1_tab_dur_sym.html#a91f06b010e2c2479196e2007a66d2898", null ],
     [ "GetClassName", "classvrv_1_1_tab_dur_sym.html#a46660090388ff3a6a2236a13b08ad638", null ],
     [ "GetStemDownNW", "classvrv_1_1_tab_dur_sym.html#a681fe8fa273d34b9717afd3362ad31ba", null ],
+    [ "GetStemmedDrawingInterface", "classvrv_1_1_tab_dur_sym.html#a9786cb1e4811a1aff74a6ba37d984d35", null ],
     [ "GetStemmedDrawingInterface", "classvrv_1_1_tab_dur_sym.html#a6a846a4d4e931838c6781bc8979410d2", null ],
     [ "GetStemUpSE", "classvrv_1_1_tab_dur_sym.html#ae0bb480d7bdcaf4d1f201b20df103254", null ],
     [ "HasToBeAligned", "classvrv_1_1_tab_dur_sym.html#a1e85bce43dc9ad280471f7ef5f147da0", null ],

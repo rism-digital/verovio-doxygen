@@ -7,6 +7,7 @@ var classvrv_1_1_tab_grp =
     [ "FilterList", "classvrv_1_1_tab_grp.html#aadaf95ab8968daf6b69d10bb0ad6c985", null ],
     [ "GetBottomNote", "classvrv_1_1_tab_grp.html#a8486feba49453626e1b31820889c2c02", null ],
     [ "GetClassName", "classvrv_1_1_tab_grp.html#a0c3377390a0ad28b2e2a0fc0cc10e98c", null ],
+    [ "GetDurationInterface", "classvrv_1_1_tab_grp.html#accc1964b234ebbe58640f1a679797796", null ],
     [ "GetDurationInterface", "classvrv_1_1_tab_grp.html#a1aed8cc5fe4e59e8a9196b4d6463f952", null ],
     [ "GetTopNote", "classvrv_1_1_tab_grp.html#af93f0a5fe85cacaf6ba6e1371097ca15", null ],
     [ "GetYBottom", "classvrv_1_1_tab_grp.html#aa7a4729189d921c33ec83be8bbdf5824", null ],
