@@ -405,10 +405,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/rest.h" line="140" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_rest_1a0ee80c67515c10f46d02ab4d767c9e0e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_rest_1a4d60f2489e7f4154f3f8b21490986de6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; int, RestAccidental &gt;</type>
         <definition>std::pair&lt;int, RestAccidental&gt; vrv::Rest::GetLocationRelativeToOtherLayers</definition>
-        <argsstring>(const ListOfObjects &amp;layersList, Layer *currentLayer, bool isTopLayer)</argsstring>
+        <argsstring>(const ListOfObjects &amp;layersList, Layer *currentLayer, bool isTopLayer, bool &amp;restOverlap)</argsstring>
         <name>GetLocationRelativeToOtherLayers</name>
         <param>
           <type>const ListOfObjects &amp;</type>
@@ -421,6 +421,10 @@
         <param>
           <type>bool</type>
           <declname>isTopLayer</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>restOverlap</declname>
         </param>
         <briefdescription>
 <para>Get the rest vertical location relative to location of elements placed on other layers. </para>
@@ -1272,7 +1276,7 @@
       <member refid="classvrv_1_1_bounding_box_1af329372204a34520779e6b0d0596e8b9" prot="public" virt="non-virtual"><scope>vrv::Rest</scope><name>GetLeftBy</name></member>
       <member refid="classvrv_1_1_layer_element_1a53c9a4d1ab100c4c18f24b2d8563989c" prot="public" virt="virtual"><scope>vrv::Rest</scope><name>GetLinkingInterface</name></member>
       <member refid="classvrv_1_1_rest_1aeb849cc03424527e2d3215d90a7c7712" prot="private" virt="non-virtual"><scope>vrv::Rest</scope><name>GetLocationRelativeToCurrentLayer</name></member>
-      <member refid="classvrv_1_1_rest_1a0ee80c67515c10f46d02ab4d767c9e0e" prot="private" virt="non-virtual"><scope>vrv::Rest</scope><name>GetLocationRelativeToOtherLayers</name></member>
+      <member refid="classvrv_1_1_rest_1a4d60f2489e7f4154f3f8b21490986de6" prot="private" virt="non-virtual"><scope>vrv::Rest</scope><name>GetLocationRelativeToOtherLayers</name></member>
       <member refid="classvrv_1_1_object_1a776dc4f75ec176b5189ce8818a221bcf" prot="public" virt="non-virtual"><scope>vrv::Rest</scope><name>GetMilestoneEnd</name></member>
       <member refid="classvrv_1_1_object_1ab2e351247e616a3f30eaf2e3d125f054" prot="public" virt="non-virtual"><scope>vrv::Rest</scope><name>GetNext</name></member>
       <member refid="classvrv_1_1_object_1a0db530be167ba91d886764f066e63c2b" prot="public" virt="non-virtual"><scope>vrv::Rest</scope><name>GetNext</name></member>
