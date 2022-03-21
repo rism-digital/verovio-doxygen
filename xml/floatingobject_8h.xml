@@ -736,7 +736,7 @@
 <codeline lineno="276"><highlight class="normal"></highlight></codeline>
 <codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_floating_curve_positioner_1a91f91d2639e931d321fae0dc47dd2f07" kindref="member">ResetCurveParams</ref>();</highlight></codeline>
 <codeline lineno="282"><highlight class="normal"></highlight></codeline>
-<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_floating_curve_positioner_1a27ca3bbbefe52d4b5951e3509e9b1483" kindref="member">UpdateCurveParams</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>points[4],<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>thickness,<sp/>curvature_CURVEDIR<sp/>curveDir);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_floating_curve_positioner_1a30ccff64031b6f8e36666e5ff1890223" kindref="member">UpdateCurveParams</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>points[4],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>thickness,<sp/>curvature_CURVEDIR<sp/>curveDir);</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdatePoints(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref><sp/>&amp;bezier);</highlight></codeline>
 <codeline lineno="291"></codeline>
 <codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_floating_curve_positioner_1a4fbc85ac14f92d9d51fe346f56a5a574" kindref="member">MoveFrontHorizontal</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>distance);</highlight></codeline>
@@ -756,66 +756,64 @@
 <codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref><sp/>*boundingBox,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isCurveAbove,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;discard,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>margin<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>horizontalOverlap<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="321"></codeline>
 <codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetPoints(<ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>points[4])<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>GetAngle()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_angle;<sp/>}</highlight></codeline>
-<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetThickness()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_thickness;<sp/>}</highlight></codeline>
-<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/>curvature_CURVEDIR<sp/>GetDir()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_dir;<sp/>}</highlight></codeline>
-<codeline lineno="331"></codeline>
-<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_floating_curve_positioner_1acf6229982048e963f98e56b66074d33f" kindref="member">ClearSpannedElements</ref>();</highlight></codeline>
-<codeline lineno="336"><highlight class="normal"></highlight></codeline>
-<codeline lineno="341" refid="classvrv_1_1_floating_curve_positioner_1a77060e0dbc69dc9a839497fba690acab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_floating_curve_positioner_1a77060e0dbc69dc9a839497fba690acab" kindref="member">AddSpannedElement</ref>(<ref refid="classvrv_1_1_curve_spanned_element" kindref="compound">CurveSpannedElement</ref><sp/>*spannedElement)<sp/>{<sp/>m_spannedElements.push_back(spannedElement);<sp/>}</highlight></codeline>
-<codeline lineno="342"><highlight class="normal"></highlight></codeline>
-<codeline lineno="346" refid="classvrv_1_1_floating_curve_positioner_1a7b1a4164c095fec32cb5fe488ce5a3fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ArrayOfCurveSpannedElements<sp/>*<ref refid="classvrv_1_1_floating_curve_positioner_1a7b1a4164c095fec32cb5fe488ce5a3fc" kindref="member">GetSpannedElements</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;m_spannedElements;<sp/>}</highlight></codeline>
-<codeline lineno="347"><highlight class="normal"></highlight></codeline>
-<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetCrossStaff(<ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref><sp/>*crossStaff)<sp/>{<sp/>m_crossStaff<sp/>=<sp/>crossStaff;<sp/>}</highlight></codeline>
-<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>Staff<sp/>*GetCrossStaff()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_crossStaff;<sp/>}</highlight></codeline>
-<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsCrossStaff()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_crossStaff<sp/>!=<sp/>NULL;<sp/>}</highlight></codeline>
-<codeline lineno="356"></codeline>
-<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetRequestedStaffSpace(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>space)<sp/>{<sp/>m_requestedStaffSpace<sp/>=<sp/>space;<sp/>}</highlight></codeline>
-<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetRequestedStaffSpace()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_requestedStaffSpace;<sp/>}</highlight></codeline>
-<codeline lineno="364"></codeline>
-<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/>std::pair&lt;int,<sp/>int&gt;<sp/><ref refid="classvrv_1_1_floating_curve_positioner_1a773ce154a0e2c876ad6f2f18f2b80201" kindref="member">CalcRequestedStaffSpace</ref>(StaffAlignment<sp/>*alignment);</highlight></codeline>
-<codeline lineno="369"><highlight class="normal"></highlight></codeline>
-<codeline lineno="370"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="372"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="374"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/>Point<sp/>m_points[4];</highlight></codeline>
-<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m_angle;</highlight></codeline>
-<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_thickness;</highlight></codeline>
-<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/>curvature_CURVEDIR<sp/>m_dir;</highlight></codeline>
-<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/>Staff<sp/>*m_crossStaff;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetThickness()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_thickness;<sp/>}</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>curvature_CURVEDIR<sp/>GetDir()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_dir;<sp/>}</highlight></codeline>
+<codeline lineno="330"></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_floating_curve_positioner_1acf6229982048e963f98e56b66074d33f" kindref="member">ClearSpannedElements</ref>();</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340" refid="classvrv_1_1_floating_curve_positioner_1a77060e0dbc69dc9a839497fba690acab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_floating_curve_positioner_1a77060e0dbc69dc9a839497fba690acab" kindref="member">AddSpannedElement</ref>(<ref refid="classvrv_1_1_curve_spanned_element" kindref="compound">CurveSpannedElement</ref><sp/>*spannedElement)<sp/>{<sp/>m_spannedElements.push_back(spannedElement);<sp/>}</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345" refid="classvrv_1_1_floating_curve_positioner_1a7b1a4164c095fec32cb5fe488ce5a3fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ArrayOfCurveSpannedElements<sp/>*<ref refid="classvrv_1_1_floating_curve_positioner_1a7b1a4164c095fec32cb5fe488ce5a3fc" kindref="member">GetSpannedElements</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;m_spannedElements;<sp/>}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetCrossStaff(<ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref><sp/>*crossStaff)<sp/>{<sp/>m_crossStaff<sp/>=<sp/>crossStaff;<sp/>}</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>Staff<sp/>*GetCrossStaff()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_crossStaff;<sp/>}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsCrossStaff()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_crossStaff<sp/>!=<sp/>NULL;<sp/>}</highlight></codeline>
+<codeline lineno="355"></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetRequestedStaffSpace(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>space)<sp/>{<sp/>m_requestedStaffSpace<sp/>=<sp/>space;<sp/>}</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetRequestedStaffSpace()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_requestedStaffSpace;<sp/>}</highlight></codeline>
+<codeline lineno="363"></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>std::pair&lt;int,<sp/>int&gt;<sp/><ref refid="classvrv_1_1_floating_curve_positioner_1a773ce154a0e2c876ad6f2f18f2b80201" kindref="member">CalcRequestedStaffSpace</ref>(StaffAlignment<sp/>*alignment);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/>Point<sp/>m_points[4];</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_thickness;</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/>curvature_CURVEDIR<sp/>m_dir;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/>Staff<sp/>*m_crossStaff;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/>ArrayOfCurveSpannedElements<sp/>m_spannedElements;</highlight></codeline>
 <codeline lineno="386"><highlight class="normal"></highlight></codeline>
-<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/>ArrayOfCurveSpannedElements<sp/>m_spannedElements;</highlight></codeline>
-<codeline lineno="388"><highlight class="normal"></highlight></codeline>
-<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_cachedMinMaxY;</highlight></codeline>
-<codeline lineno="391"><highlight class="normal"></highlight></codeline>
-<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_requestedStaffSpace;</highlight></codeline>
-<codeline lineno="396"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_cachedMinMaxY;</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_requestedStaffSpace;</highlight></codeline>
+<codeline lineno="394"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CurveSpannedElement</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="398"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="399"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CurveSpannedElement</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="400"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="401"><highlight class="normal"></highlight></codeline>
-<codeline lineno="402" refid="classvrv_1_1_curve_spanned_element" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_curve_spanned_element" kindref="compound">CurveSpannedElement</ref><sp/>{</highlight></codeline>
-<codeline lineno="403"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_curve_spanned_element" kindref="compound">CurveSpannedElement</ref>()</highlight></codeline>
-<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox<sp/>=<sp/>NULL;</highlight></codeline>
-<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_discarded<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_isBelow<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_curve_spanned_element" kindref="compound">CurveSpannedElement</ref>(){};</highlight></codeline>
-<codeline lineno="415"><highlight class="normal"></highlight></codeline>
-<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>m_rotatedPoints[4];</highlight></codeline>
-<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref><sp/>*m_boundingBox;</highlight></codeline>
-<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_discarded;</highlight></codeline>
-<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_isBelow;</highlight></codeline>
-<codeline lineno="420"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400" refid="classvrv_1_1_curve_spanned_element" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_curve_spanned_element" kindref="compound">CurveSpannedElement</ref><sp/>{</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_curve_spanned_element" kindref="compound">CurveSpannedElement</ref>()</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_discarded<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_isBelow<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_curve_spanned_element" kindref="compound">CurveSpannedElement</ref>(){};</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>m_rotatedPoints[4];</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref><sp/>*m_boundingBox;</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_discarded;</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_isBelow;</highlight></codeline>
+<codeline lineno="418"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="421"><highlight class="normal"></highlight></codeline>
-<codeline lineno="422"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="423"><highlight class="normal"></highlight></codeline>
-<codeline lineno="424"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h"/>
   </compounddef>

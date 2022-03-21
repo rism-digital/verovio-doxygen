@@ -41,7 +41,7 @@ var searchData=
   ['calcstemdirection_187',['CalcStemDirection',['../classvrv_1_1_chord.html#a2959fc77a51f47eee777b9a8cd54a959',1,'vrv::Chord']]],
   ['calcstemdirforsameasnote_188',['CalcStemDirForSameasNote',['../classvrv_1_1_note.html#aa7a762e5de0133a66194a4f9175d3d1e',1,'vrv::Note']]],
   ['calcstemparams_189',['CalcStemParams',['../classvrv_1_1_calc_stem_params.html',1,'vrv']]],
-  ['calcthickbezier_190',['CalcThickBezier',['../classvrv_1_1_bounding_box.html#ae087d56d7ff270c908e3a723be01f6e7',1,'vrv::BoundingBox']]],
+  ['calcthickbezier_190',['CalcThickBezier',['../classvrv_1_1_bounding_box.html#a8fdd811aefcb373533b9cc2795aa04dd',1,'vrv::BoundingBox']]],
   ['calculateadjacentchordxoffset_191',['CalculateAdjacentChordXOffset',['../classvrv_1_1_tie.html#ac4744ba3209d0faea4c9eea00b21b384',1,'vrv::Tie']]],
   ['calculateextremalstaff_192',['CalculateExtremalStaff',['../classvrv_1_1_slur.html#aaf4c1de0dbc2f1b2d36702dfd24f9353',1,'vrv::Slur']]],
   ['calculatemiditimemap_193',['CalculateMidiTimemap',['../classvrv_1_1_doc.html#a064d5e554df56f41a487a42e89056343',1,'vrv::Doc']]],

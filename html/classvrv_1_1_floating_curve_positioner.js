@@ -10,7 +10,6 @@ var classvrv_1_1_floating_curve_positioner =
     [ "CalcMinMaxY", "classvrv_1_1_floating_curve_positioner.html#a4e46a7462444bb57b0a67d7c4f06ff1d", null ],
     [ "CalcRequestedStaffSpace", "classvrv_1_1_floating_curve_positioner.html#a773ce154a0e2c876ad6f2f18f2b80201", null ],
     [ "ClearSpannedElements", "classvrv_1_1_floating_curve_positioner.html#acf6229982048e963f98e56b66074d33f", null ],
-    [ "GetAngle", "classvrv_1_1_floating_curve_positioner.html#ad7b1b6fb4395c622fb37d042f3e1bc91", null ],
     [ "GetClassId", "classvrv_1_1_floating_curve_positioner.html#a87d564dc3efc0f9525ae4e6dcbad1a76", null ],
     [ "GetCrossStaff", "classvrv_1_1_floating_curve_positioner.html#a64e936c29627c4cf8be7930e88f5b441", null ],
     [ "GetDir", "classvrv_1_1_floating_curve_positioner.html#a5a08bc102f523022b0095cc89a59dcba", null ],
@@ -27,6 +26,6 @@ var classvrv_1_1_floating_curve_positioner =
     [ "ResetPositioner", "classvrv_1_1_floating_curve_positioner.html#a66473a5fe9ced560e279ceb749ba3bd2", null ],
     [ "SetCrossStaff", "classvrv_1_1_floating_curve_positioner.html#a3dad2cda31b4868744e566b3f1adf7b3", null ],
     [ "SetRequestedStaffSpace", "classvrv_1_1_floating_curve_positioner.html#a82e15efa70454fb643ad5727f2014243", null ],
-    [ "UpdateCurveParams", "classvrv_1_1_floating_curve_positioner.html#a27ca3bbbefe52d4b5951e3509e9b1483", null ],
+    [ "UpdateCurveParams", "classvrv_1_1_floating_curve_positioner.html#a30ccff64031b6f8e36666e5ff1890223", null ],
     [ "UpdatePoints", "classvrv_1_1_floating_curve_positioner.html#a22ee3747f66c1d04e614ecd3504cd98a", null ]
 ];

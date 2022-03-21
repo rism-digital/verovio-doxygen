@@ -39,7 +39,7 @@ var searchData=
   ['getbeamchildoverflow_432',['GetBeamChildOverflow',['../classvrv_1_1_beam_drawing_interface.html#a2e1efdfd95278a07f699070feef940aa',1,'vrv::BeamDrawingInterface']]],
   ['getbeamoverflow_433',['GetBeamOverflow',['../classvrv_1_1_beam_drawing_interface.html#a401c73629d89bafa67923589c82c5f91',1,'vrv::BeamDrawingInterface']]],
   ['getbeatrptalignmentduration_434',['GetBeatRptAlignmentDuration',['../classvrv_1_1_beat_rpt.html#a46d10bc1d9d4d3fae07fc25b08621b10',1,'vrv::BeatRpt']]],
-  ['getbezierthicknesscoefficient_435',['GetBezierThicknessCoefficient',['../classvrv_1_1_bounding_box.html#a0771c6326e6a7123268f433bfdc903f6',1,'vrv::BoundingBox']]],
+  ['getbezierthicknesscoefficient_435',['GetBezierThicknessCoefficient',['../classvrv_1_1_bounding_box.html#a3dbe5a481e20ab4d0d9fdd47708d1c2f',1,'vrv::BoundingBox']]],
   ['getbottomalignment_436',['GetBottomAlignment',['../classvrv_1_1_system_aligner.html#af9fa20703a935c4c82106847e1949565',1,'vrv::SystemAligner']]],
   ['getbottomvisiblestaff_437',['GetBottomVisibleStaff',['../classvrv_1_1_measure.html#aebb30d801973e472dade538e89a1ee93',1,'vrv::Measure']]],
   ['getboundingbox_438',['GetBoundingBox',['../classvrv_1_1_glyph.html#aa1680eb7e1403b16a86a9b2d4b4585f4',1,'vrv::Glyph']]],
