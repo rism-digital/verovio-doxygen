@@ -9,5 +9,5 @@ var classvrv_1_1_feature_extractor =
     [ "m_intervalsIds", "classvrv_1_1_feature_extractor.html#a7de149b115c781799fea4d41d7961209", null ],
     [ "m_pitches", "classvrv_1_1_feature_extractor.html#a74629bf48c1ba415e12e364c825d56a4", null ],
     [ "m_pitchesIds", "classvrv_1_1_feature_extractor.html#a4f4aa680b7d22087480f5c77331be83f", null ],
-    [ "m_previousNote", "classvrv_1_1_feature_extractor.html#a144ead9529606e6845d9d4184e36ceb5", null ]
+    [ "m_previousNotes", "classvrv_1_1_feature_extractor.html#a1306554a428a7a40acac7a9195c1fe6e", null ]
 ];
