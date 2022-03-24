@@ -3437,6 +3437,7 @@
     <member refid="classvrv_1_1_mdiv_1aedec07580735cb8d4db61912204fd644" kind="function"><name>ConvertToPageBasedEnd</name></member>
     <member refid="classvrv_1_1_mdiv_1a2feff2dd52fe229fb3346921ef6610d9" kind="variable"><name>m_visibility</name></member>
     <member refid="classvrv_1_1_mdiv_1aed76997a32ca68f9ca9f2c1dc614bca6" kind="function"><name>MakeVisible</name></member>
+    <member refid="classvrv_1_1_mdiv_1ac7fd09a66621f2bf139ec65ec8825aaa" kind="function"><name>Transpose</name></member>
   </compound>
   <compound refid="classvrv_1_1_measure" kind="class"><name>vrv::Measure</name>
     <member refid="classvrv_1_1_measure_1a61646aedd32264c9b5c2f812dde7f402" kind="function"><name>Measure</name></member>
@@ -4914,7 +4915,8 @@
     <member refid="classvrv_1_1_option_json_1a1292c959936c0e4362c604a36f465e32" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_option_json_1aac2951d68e22ec5baf9001501e671604" kind="function"><name>HasValue</name></member>
     <member refid="classvrv_1_1_option_json_1afb806a1149d89680015d6d18e9e24ccf" kind="function"><name>GetIntValue</name></member>
-    <member refid="classvrv_1_1_option_json_1a97fdcb0bb957de49ac9d150b724b1381" kind="function"><name>GetDoubleValue</name></member>
+    <member refid="classvrv_1_1_option_json_1ae8d6fe18f990186e1bbf64cf374efd3f" kind="function"><name>GetDblValue</name></member>
+    <member refid="classvrv_1_1_option_json_1ac09ee860ced72e329ab15a795607ae62" kind="function"><name>GetStrValue</name></member>
     <member refid="classvrv_1_1_option_json_1a4f22e2b79f1e253a43f5d6503f36be0d" kind="function"><name>UpdateNodeValue</name></member>
     <member refid="classvrv_1_1_option_json_1a24331e37779a4eb4667cbd2d12d606fe" kind="function"><name>GetKeys</name></member>
     <member refid="classvrv_1_1_option_json_1a357cc9dfcc28185a7e60b763dffa5ea8" kind="function"><name>GetKeysByNode</name></member>
@@ -5067,6 +5069,7 @@
     <member refid="classvrv_1_1_options_1ac94939b1b904c41073c45d33a4dbea7f" kind="variable"><name>m_mdivXPathQuery</name></member>
     <member refid="classvrv_1_1_options_1a6f72efbd2c67add68717901a20fd51c7" kind="variable"><name>m_substXPathQuery</name></member>
     <member refid="classvrv_1_1_options_1a33ea0b9feff99e830b71dcba0e3e0255" kind="variable"><name>m_transpose</name></member>
+    <member refid="classvrv_1_1_options_1af0cdcb2701236379416ef620eca25fb4" kind="variable"><name>m_transposeMdiv</name></member>
     <member refid="classvrv_1_1_options_1a57839601f0ca3a92fa9f48526f77502a" kind="variable"><name>m_transposeSelectedOnly</name></member>
     <member refid="classvrv_1_1_options_1a61eb54b3d98171f50a13088b53ee28b0" kind="variable"><name>m_elementMargins</name></member>
     <member refid="classvrv_1_1_options_1aadd9a7eba2d6b83437f0f863794b1542" kind="variable"><name>m_defaultBottomMargin</name></member>
@@ -5355,6 +5358,7 @@
     <member refid="classvrv_1_1_page_milestone_end_1afd0591b4de24c75042d8e85c9c77fe9e" kind="function"><name>CastOffPages</name></member>
     <member refid="classvrv_1_1_page_milestone_end_1a30d25dee3f6859fb8dfbc0c13794ad75" kind="function"><name>CastOffEncoding</name></member>
     <member refid="classvrv_1_1_page_milestone_end_1a872ac48ccdfd28437da87a9ef53ebc0b" kind="function"><name>UnCastOff</name></member>
+    <member refid="classvrv_1_1_page_milestone_end_1ad696deb6b0c8bda443ba91a6de3ea22a" kind="function"><name>Transpose</name></member>
   </compound>
   <compound refid="classvrv_1_1_page_milestone_interface" kind="class"><name>vrv::PageMilestoneInterface</name>
     <member refid="classvrv_1_1_page_milestone_interface_1afb1a66104b2e9f35ccaa47fe727bc8e0" kind="function"><name>PageMilestoneInterface</name></member>
@@ -6588,6 +6592,7 @@
     <member refid="classvrv_1_1_system_1a7fb95db0fed8b359db0c020bc5877cd3" kind="function"><name>CastOffPages</name></member>
     <member refid="classvrv_1_1_system_1af4e71448eddcb0097b4492b52f216e6d" kind="function"><name>CastOffEncoding</name></member>
     <member refid="classvrv_1_1_system_1abeb9438077fb1d41b129ef00df97d803" kind="function"><name>UnCastOff</name></member>
+    <member refid="classvrv_1_1_system_1a4f8a3229123bafe6e08fa1a4bea69597" kind="function"><name>Transpose</name></member>
   </compound>
   <compound refid="classvrv_1_1_system_aligner" kind="class"><name>vrv::SystemAligner</name>
     <member refid="classvrv_1_1_system_aligner_1a024f36eb64e0d6adf31217b55ba72b8e" kind="enum"><name>SpacingType</name></member>
@@ -6986,9 +6991,12 @@
     <member refid="classvrv_1_1_trans_pitch_1a45f27067dbe3a03fd9232fe2f010238f" kind="function"><name>GetChromaticAlteration</name></member>
   </compound>
   <compound refid="classvrv_1_1_transpose_params" kind="class"><name>vrv::TransposeParams</name>
-    <member refid="classvrv_1_1_transpose_params_1a08e385a7cac546b3cbc82357ff2cdd00" kind="variable"><name>m_transposer</name></member>
     <member refid="classvrv_1_1_transpose_params_1ac840bf81851c316772323edbdadc7270" kind="variable"><name>m_doc</name></member>
     <member refid="classvrv_1_1_transpose_params_1aa8161505a101b1df51eba809407d6ae2" kind="variable"><name>m_functor</name></member>
+    <member refid="classvrv_1_1_transpose_params_1a08e385a7cac546b3cbc82357ff2cdd00" kind="variable"><name>m_transposer</name></member>
+    <member refid="classvrv_1_1_transpose_params_1a898c74f0251c0e3c969959a6c0a69723" kind="variable"><name>m_transposition</name></member>
+    <member refid="classvrv_1_1_transpose_params_1ab632cce58757aa8265b1a738a3a90290" kind="variable"><name>m_selectedMdivUuid</name></member>
+    <member refid="classvrv_1_1_transpose_params_1a6e6ba5425a0ed7f004be78b1d5f4b669" kind="variable"><name>m_currentMdivUuids</name></member>
     <member refid="classvrv_1_1_transpose_params_1a0c390a2436912705dfc04d57b7e575bd" kind="function"><name>TransposeParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_transposer" kind="class"><name>vrv::Transposer</name>

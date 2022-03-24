@@ -183,6 +183,7 @@ var classvrv_1_1_options =
     [ "m_topMarginHarm", "classvrv_1_1_options.html#a67a343d8c1dfe4c5432f1b49ae6ef67d", null ],
     [ "m_topMarginPgFooter", "classvrv_1_1_options.html#ab323f9472d1744b2bc527506545b31b2", null ],
     [ "m_transpose", "classvrv_1_1_options.html#a33ea0b9feff99e830b71dcba0e3e0255", null ],
+    [ "m_transposeMdiv", "classvrv_1_1_options.html#af0cdcb2701236379416ef620eca25fb4", null ],
     [ "m_transposeSelectedOnly", "classvrv_1_1_options.html#a57839601f0ca3a92fa9f48526f77502a", null ],
     [ "m_tupletBracketThickness", "classvrv_1_1_options.html#ae94e29f524be4460ad2c913ff8429a8a", null ],
     [ "m_tupletNumHead", "classvrv_1_1_options.html#a7676d295e3cb82fd728cef409e2b3706", null ],

@@ -66,6 +66,7 @@ var classvrv_1_1_system =
     [ "SetDrawingScoreDef", "classvrv_1_1_system.html#a5faeee3d7620a9b7953ec59db7d31d01", null ],
     [ "SetDrawingXRel", "classvrv_1_1_system.html#a6c38d1388825c65b9fbfd93b096798c5", null ],
     [ "SetDrawingYRel", "classvrv_1_1_system.html#a757fb470eefdf9c851a4ece205c7b1b3", null ],
+    [ "Transpose", "classvrv_1_1_system.html#a4f8a3229123bafe6e08fa1a4bea69597", null ],
     [ "UnCastOff", "classvrv_1_1_system.html#abeb9438077fb1d41b129ef00df97d803", null ],
     [ "m_castOffJustifiableWidth", "classvrv_1_1_system.html#acbb9ef065078db1c6a8598d22757766a", null ],
     [ "m_castOffTotalWidth", "classvrv_1_1_system.html#a66d0eeb21e5749e2589a422df637e2f5", null ],

@@ -11,5 +11,6 @@ var classvrv_1_1_mdiv =
     [ "Reset", "classvrv_1_1_mdiv.html#a0402d6c78f71a1657fcc7e56573c0cff", null ],
     [ "Save", "classvrv_1_1_mdiv.html#a860750262ee1f94a9645db443479764f", null ],
     [ "SaveEnd", "classvrv_1_1_mdiv.html#a99b746a7048bc8f065cbe9065907827e", null ],
+    [ "Transpose", "classvrv_1_1_mdiv.html#ac7fd09a66621f2bf139ec65ec8825aaa", null ],
     [ "m_visibility", "classvrv_1_1_mdiv.html#a2feff2dd52fe229fb3346921ef6610d9", null ]
 ];
