@@ -857,13 +857,13 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">member 0: the doc  <a href="classvrv_1_1_prepare_slurs_params.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_prepare_time_pointing_params.html">PrepareTimePointingParams</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">member 0: std::vector&lt; Object*&gt;* that holds the current elements to match  <a href="classvrv_1_1_prepare_time_pointing_params.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">member 0: interface list that holds the current elements to match  <a href="classvrv_1_1_prepare_time_pointing_params.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_prepare_time_spanning_params.html">PrepareTimeSpanningParams</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">member 0: std::vector&lt; Object*&gt;* that holds the current elements to match member 1: bool* fillList for indicating whether the elements have to be stacked or not  <a href="classvrv_1_1_prepare_time_spanning_params.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">member 0: interface list that holds the current elements to match member 1: bool fillList for indicating whether the elements have to be stacked or not  <a href="classvrv_1_1_prepare_time_spanning_params.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_prepare_timestamps_params.html">PrepareTimestampsParams</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">member 0: std::vector&lt; Object*&gt;* that holds the current elements to match member 1: ListOfObjectBeatPairs* that holds the tstamp2 elements for attach to the end measure  <a href="classvrv_1_1_prepare_timestamps_params.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">member 0: interface list that holds the current elements to match member 1: ListOfObjectBeatPairs that holds the tstamp2 elements for attach to the end measure  <a href="classvrv_1_1_prepare_timestamps_params.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_proport.html">Proport</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class models the MEI &lt;proport&gt; element.  <a href="classvrv_1_1_proport.html#details">More...</a><br /></td></tr>
@@ -1249,6 +1249,9 @@ typedef std::list&lt; std::pair&lt; <a class="el" href="classvrv_1_1_time_point_
 <tr class="memitem:a5da6a8ad23418c815f95a7b14afc1711"><td class="memItemLeft" align="right" valign="top"><a id="a5da6a8ad23418c815f95a7b14afc1711"></a>
 typedef std::list&lt; std::pair&lt; <a class="el" href="classvrv_1_1_time_spanning_interface.html">TimeSpanningInterface</a> *, <a class="el" href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">ClassId</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ListOfSpanningInterClassIdPairs</b></td></tr>
 <tr class="separator:a5da6a8ad23418c815f95a7b14afc1711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d4f2b036780e8b73daa81a0695decb"><td class="memItemLeft" align="right" valign="top"><a id="ad8d4f2b036780e8b73daa81a0695decb"></a>
+typedef std::list&lt; std::pair&lt; <a class="el" href="classvrv_1_1_time_spanning_interface.html">TimeSpanningInterface</a> *, <a class="el" href="classvrv_1_1_object.html">Object</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ListOfSpanningInterOwnerPairs</b></td></tr>
+<tr class="separator:ad8d4f2b036780e8b73daa81a0695decb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9639afbd0da92deff42340ca26cc9806"><td class="memItemLeft" align="right" valign="top"><a id="a9639afbd0da92deff42340ca26cc9806"></a>
 typedef std::vector&lt; <a class="el" href="classvrv_1_1_floating_positioner.html">FloatingPositioner</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ArrayOfFloatingPositioners</b></td></tr>
 <tr class="separator:a9639afbd0da92deff42340ca26cc9806"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3027,7 +3030,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>loggingToBuffer</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li>
-    <li class="footer">Generated on Thu Mar 24 2022 14:42:43 for Verovio by
+    <li class="footer">Generated on Fri Mar 25 2022 08:43:07 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

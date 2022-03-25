@@ -17,6 +17,7 @@ var classvrv_1_1_time_point_interface =
     [ "SetStart", "classvrv_1_1_time_point_interface.html#a657ad24cb9280451b4a5f2b914be0644", null ],
     [ "SetStartOnly", "classvrv_1_1_time_point_interface.html#a4c3a7f2c3fd21358c4c25dbae8443f4a", null ],
     [ "SetUuidStr", "classvrv_1_1_time_point_interface.html#acf47474d192a6a9c14732c4055605a6d", null ],
+    [ "VerifyMeasure", "classvrv_1_1_time_point_interface.html#a9a73a142a875f91c3e1649bc46251914", null ],
     [ "m_start", "classvrv_1_1_time_point_interface.html#a0acc50cd71a220b0142a0ec22377c88a", null ],
     [ "m_startUuid", "classvrv_1_1_time_point_interface.html#a47eee38f4a8b1420cf041e74b171d7a9", null ]
 ];
