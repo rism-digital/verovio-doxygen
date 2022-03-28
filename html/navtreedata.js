@@ -69,12 +69,12 @@ var NAVTREEINDEX =
 "classvrv_1_1_options.html#ac94939b1b904c41073c45d33a4dbea7f",
 "classvrv_1_1_plist_interface.html#a07adf9a3dde70b4d3e4cf7ab2d221580",
 "classvrv_1_1_sb.html#a4c1e504295c595132beb348ef1e540e2",
-"classvrv_1_1_staff.html#a527874b273615ffbf49dfe8e80f99b6d",
-"classvrv_1_1_svg_device_context.html#a8136fc784d6fb5ae5d1006f55800ee3a",
-"classvrv_1_1_tempo.html#ab4225e913a2ca3a1796371af07abf930",
-"classvrv_1_1_transposer.html#a727158b0187dbf0c070b39a2f970281a",
-"classvrv_1_1_view.html#a703a4f8e82214c2625a3dc11780fc86a",
-"functions_c.html"
+"classvrv_1_1_staff.html#a51a65ab400013ddc21d125a01aa2256e",
+"classvrv_1_1_svg_device_context.html#a6906aaca37890d3807c1ade7084a21fe",
+"classvrv_1_1_tempo.html#aa38e41c56cae88acab5750a2734c0fd3",
+"classvrv_1_1_transposer.html#a6f77c46c393982a606f1cde1f9b8b68a",
+"classvrv_1_1_view.html#a6d706ccd9a5a99171e7606d97cf3f207",
+"functions_b.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

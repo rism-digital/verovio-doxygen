@@ -29,7 +29,7 @@ var classvrv_1_1_alignment =
     [ "IsOfType", "classvrv_1_1_alignment.html#abea5738c5b4b494dbda993185dfd0e92", null ],
     [ "IsSupportedChild", "classvrv_1_1_alignment.html#afe1dce241b823edc3a32d57d159dd636", null ],
     [ "JustifyX", "classvrv_1_1_alignment.html#a2215302c810f28dda3a2e7fafeeb1531", null ],
-    [ "PerfomBoundingBoxAlignment", "classvrv_1_1_alignment.html#a6d405618a4cb9f522b09db348437230f", null ],
+    [ "PerformBoundingBoxAlignment", "classvrv_1_1_alignment.html#afb339241a9493a380e64c673f8adca84", null ],
     [ "Reset", "classvrv_1_1_alignment.html#ad43591d11620170af7123f2e6ccc18e2", null ],
     [ "SetAlignmentXPos", "classvrv_1_1_alignment.html#aa9f7556be32981c38246d17c2b45a07b", null ],
     [ "SetTime", "classvrv_1_1_alignment.html#a51972727e9ef02059b5d6aa4718de290", null ],

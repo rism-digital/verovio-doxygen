@@ -25,6 +25,7 @@ var classvrv_1_1_score_def =
     [ "GetStaffDef", "classvrv_1_1_score_def.html#afd16c952de1b8829f86ee7499bbb1fa6", null ],
     [ "GetStaffGrp", "classvrv_1_1_score_def.html#ad4cb8f3acb58e9ab37e8ae19b844513c", null ],
     [ "GetStaffNs", "classvrv_1_1_score_def.html#aa914794d578ec1fb7f3327c6be007cd4", null ],
+    [ "HasSystemStartLine", "classvrv_1_1_score_def.html#acd30ce7babab6f790484bea2594964a7", null ],
     [ "IsSectionRestart", "classvrv_1_1_score_def.html#a979f8b9413e94322cdd648354e86203a", null ],
     [ "IsSupportedChild", "classvrv_1_1_score_def.html#aacaaa2222c639bbff720298403b3e9da", null ],
     [ "JustifyX", "classvrv_1_1_score_def.html#a6ec6aed367b28a407b914d2f9773d8ce", null ],
