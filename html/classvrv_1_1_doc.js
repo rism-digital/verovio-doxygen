@@ -79,6 +79,7 @@ var classvrv_1_1_doc =
     [ "HasFacsimile", "classvrv_1_1_doc.html#a047c911499ccc787cb9288792ead88b9", null ],
     [ "HasMidiTimemap", "classvrv_1_1_doc.html#a1d37c6eb07d53a08c5d83c2ea906a98b", null ],
     [ "HasPage", "classvrv_1_1_doc.html#a7629eb7f06402cbd2d1ca31fbd122941", null ],
+    [ "IsCastOff", "classvrv_1_1_doc.html#a570380aa9593a124ac2d85b5238a62e8", null ],
     [ "IsMensuralMusicOnly", "classvrv_1_1_doc.html#aa9fb208cd70f668767cd70d0f742baca", null ],
     [ "IsSupportedChild", "classvrv_1_1_doc.html#a1729e3b10e832cace0a5d262f49540c1", null ],
     [ "PrepareDrawing", "classvrv_1_1_doc.html#a957061578a058f9ddeabb0a66cf80cd8", null ],

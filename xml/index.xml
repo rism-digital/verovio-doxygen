@@ -859,6 +859,7 @@
     <member refid="classvrv_1_1_beam_segment_1ad767ec99e5feff772b50047e3892ddb2" kind="variable"><name>m_firstNoteOrChord</name></member>
     <member refid="classvrv_1_1_beam_segment_1a74b42d249066e9ecd4c2ecf44dc35d32" kind="variable"><name>m_lastNoteOrChord</name></member>
     <member refid="classvrv_1_1_beam_segment_1a2f8cd54b0cdac4e3db644a8c3bd22e19" kind="variable"><name>m_beamElementCoordRefs</name></member>
+    <member refid="classvrv_1_1_beam_segment_1acb49b27f1240e2710ee957a6a2031e18" kind="function"><name>AdjustBeamToFrenchStyle</name></member>
     <member refid="classvrv_1_1_beam_segment_1a6dda4097ff16df34a86388787329cf6c" kind="function"><name>AdjustBeamToLedgerLines</name></member>
     <member refid="classvrv_1_1_beam_segment_1a3ee5447d7b833cdb668e09d9e0693988" kind="function"><name>CalcBeamInit</name></member>
     <member refid="classvrv_1_1_beam_segment_1a88fc89737f982bfb2cf7dbdd3295ca80" kind="function"><name>CalcBeamInitForNotePair</name></member>
@@ -870,8 +871,8 @@
     <member refid="classvrv_1_1_beam_segment_1a63b1cecc6192ef7550e693e1a57641bb" kind="function"><name>CalcBeamPlace</name></member>
     <member refid="classvrv_1_1_beam_segment_1aa40ae4d1e40c6faf7eae0987d54c4bab" kind="function"><name>CalcBeamPlaceTab</name></member>
     <member refid="classvrv_1_1_beam_segment_1a96cc3ca1c2b3e95d89777010242e2cfc" kind="function"><name>CalcBeamStemLength</name></member>
-    <member refid="classvrv_1_1_beam_segment_1a75e530522ca989a2bfae255ec801f521" kind="function"><name>CalcSetStemValues</name></member>
-    <member refid="classvrv_1_1_beam_segment_1ad2060bb0b1275ec0dc93ab3e23129f99" kind="function"><name>CalcSetStemValuesTab</name></member>
+    <member refid="classvrv_1_1_beam_segment_1a8dac658a5e76a89c559abf8c2c7a69b1" kind="function"><name>CalcSetStemValues</name></member>
+    <member refid="classvrv_1_1_beam_segment_1a0500ce5eb7521b4ca60a8ae70af3738d" kind="function"><name>CalcSetStemValuesTab</name></member>
     <member refid="classvrv_1_1_beam_segment_1af3d5cc9ca6f5c199180707d4fc66d633" kind="function"><name>CalcBeamRelativeMinMax</name></member>
     <member refid="classvrv_1_1_beam_segment_1a585e669b9e5aa2f727d36a0e5ad03248" kind="function"><name>CalcStemDefiningNote</name></member>
     <member refid="classvrv_1_1_beam_segment_1aa25c61e9f41f6653513ea9e4d70ee854" kind="function"><name>CalcHorizontalBeam</name></member>
@@ -1692,6 +1693,7 @@
     <member refid="classvrv_1_1_doc_1a7b7051375f9a3ed2e35f33957687a56e" kind="variable"><name>m_expansionMap</name></member>
     <member refid="classvrv_1_1_doc_1a2d9d5bcbc74573393d92860992760d1e" kind="variable"><name>m_type</name></member>
     <member refid="classvrv_1_1_doc_1a91957055a4ab1bf8edb2ab2716ef2d8c" kind="variable"><name>m_options</name></member>
+    <member refid="classvrv_1_1_doc_1ac55dd2b657b6f3ee8b5e8f13a2169ddf" kind="variable"><name>m_isCastOff</name></member>
     <member refid="classvrv_1_1_doc_1ab1f93216c0a1c9548f19f985b5834b7c" kind="variable"><name>m_drawingPage</name></member>
     <member refid="classvrv_1_1_doc_1a815ba27ca61098b053d668862df39535" kind="variable"><name>m_drawingBeamWidth</name></member>
     <member refid="classvrv_1_1_doc_1a168eaa12334c4f66e4672285af800d07" kind="variable"><name>m_drawingBeamWhiteWidth</name></member>
@@ -1759,6 +1761,7 @@
     <member refid="classvrv_1_1_doc_1a71b430700d764832659b7aff1f78a8bd" kind="function"><name>GetAdjustedDrawingPageWidth</name></member>
     <member refid="classvrv_1_1_doc_1a301056a989b90a286ec1f3e745226744" kind="function"><name>GetAdjustedDrawingPageHeight</name></member>
     <member refid="classvrv_1_1_doc_1af000e1f2d2f79967f09122f6e94760b7" kind="function"><name>SetMarkup</name></member>
+    <member refid="classvrv_1_1_doc_1a570380aa9593a124ac2d85b5238a62e8" kind="function"><name>IsCastOff</name></member>
     <member refid="classvrv_1_1_doc_1ad150550934e3d0c921b1c8b8425b6226" kind="function"><name>PrepareLyricsEnd</name></member>
     <member refid="classvrv_1_1_doc_1a0aefb72ffc89da14cf2acecc4ba059ac" kind="function"><name>PrepareTimestampsEnd</name></member>
     <member refid="classvrv_1_1_doc_1a47ba988110ca11b0d677e07f99d2d07d" kind="function"><name>CalcMusicFontSize</name></member>
@@ -5000,6 +5003,7 @@
     <member refid="classvrv_1_1_options_1ac449a9605b18639f8cd80919af8de323" kind="variable"><name>m_barLineWidth</name></member>
     <member refid="classvrv_1_1_options_1acb34a2439c346557d99368a878510357" kind="variable"><name>m_beamMaxSlope</name></member>
     <member refid="classvrv_1_1_options_1af54a9973eae907c92bfb5d1e285449f2" kind="variable"><name>m_beamMinSlope</name></member>
+    <member refid="classvrv_1_1_options_1a423468d2ff9f44be586125dde9bc75eb" kind="variable"><name>m_beamFrenchStyle</name></member>
     <member refid="classvrv_1_1_options_1a4311cad04890bfe936addfdf3251de25" kind="variable"><name>m_bracketThickness</name></member>
     <member refid="classvrv_1_1_options_1afa488d5e3725d1f06caf036856e9f0be" kind="variable"><name>m_dynamDist</name></member>
     <member refid="classvrv_1_1_options_1a84f225d15f6a57af8cfbbb251d34687a" kind="variable"><name>m_clefChangeFactor</name></member>

@@ -16,6 +16,7 @@ var classvrv_1_1_options =
     [ "m_barLineSeparation", "classvrv_1_1_options.html#a758a741af685ddac02e633e9ece78c19", null ],
     [ "m_barLineWidth", "classvrv_1_1_options.html#ac449a9605b18639f8cd80919af8de323", null ],
     [ "m_baseOptions", "classvrv_1_1_options.html#a35cf54378bce2976a1a8185ef9f88c06", null ],
+    [ "m_beamFrenchStyle", "classvrv_1_1_options.html#a423468d2ff9f44be586125dde9bc75eb", null ],
     [ "m_beamMaxSlope", "classvrv_1_1_options.html#acb34a2439c346557d99368a878510357", null ],
     [ "m_beamMinSlope", "classvrv_1_1_options.html#af54a9973eae907c92bfb5d1e285449f2", null ],
     [ "m_bottomMarginArtic", "classvrv_1_1_options.html#a8637f433f0645dea49d98ae36f3d9dcf", null ],
