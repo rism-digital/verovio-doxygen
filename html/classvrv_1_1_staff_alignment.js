@@ -56,5 +56,6 @@ var classvrv_1_1_staff_alignment =
     [ "SetScoreDefClefOverflowAbove", "classvrv_1_1_staff_alignment.html#a4bf0e7cbd5d6a5ee25e3e226983b483e", null ],
     [ "SetScoreDefClefOverflowBelow", "classvrv_1_1_staff_alignment.html#a71fa593b159a4b1d259efd7d38a27957", null ],
     [ "SetStaff", "classvrv_1_1_staff_alignment.html#ac5734d8b2d2b6ff3ea7075fd839a3d8e", null ],
-    [ "SetYRel", "classvrv_1_1_staff_alignment.html#a6c9d2d1c71958c112774409638ff501b", null ]
+    [ "SetYRel", "classvrv_1_1_staff_alignment.html#a6c9d2d1c71958c112774409638ff501b", null ],
+    [ "SortPositioners", "classvrv_1_1_staff_alignment.html#ae760f3785a9a3cdaa22a693272adfaee", null ]
 ];

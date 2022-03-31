@@ -184,7 +184,7 @@
     <member refid="classvrv_1_1_adjust_floating_positioner_grps_params_1a09d698c81e69a647922e915949cea5a4" kind="function"><name>AdjustFloatingPositionerGrpsParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_adjust_floating_positioners_between_params" kind="class"><name>vrv::AdjustFloatingPositionersBetweenParams</name>
-    <member refid="classvrv_1_1_adjust_floating_positioners_between_params_1aeb7c40d267edbf82e0f90b0422de3dda" kind="variable"><name>m_previousStaffPositioners</name></member>
+    <member refid="classvrv_1_1_adjust_floating_positioners_between_params_1ad99ff26289d871241f23af163f27c9f2" kind="variable"><name>m_previousStaffPositioners</name></member>
     <member refid="classvrv_1_1_adjust_floating_positioners_between_params_1acfe15ab7e153f4128bcc285c8fd86aed" kind="variable"><name>m_previousStaffAlignment</name></member>
     <member refid="classvrv_1_1_adjust_floating_positioners_between_params_1aa9d876ee1fac0d5457cb78e29543ebea" kind="variable"><name>m_doc</name></member>
     <member refid="classvrv_1_1_adjust_floating_positioners_between_params_1a151e80c2ce944a8aa134929351977312" kind="variable"><name>m_functor</name></member>
@@ -2171,6 +2171,7 @@
     <member refid="classvrv_1_1_fing_1abf17709c72d4991f0c9674af4edc8f38" kind="function"><name>GetTimePointInterface</name></member>
     <member refid="classvrv_1_1_fing_1acddc3e4c0f2853fa439ce825cbef9bbd" kind="function"><name>GetTimePointInterface</name></member>
     <member refid="classvrv_1_1_fing_1a5ba04198e85d0661373ee4f787622b16" kind="function"><name>IsSupportedChild</name></member>
+    <member refid="classvrv_1_1_fing_1a7211238932fbf4fc20c94e97c7dbc9ca" kind="function"><name>IsCloserToStaffThan</name></member>
   </compound>
   <compound refid="classvrv_1_1_flag" kind="class"><name>vrv::Flag</name>
     <member refid="classvrv_1_1_flag_1a5320c21a7ddcda9df49a3031f52db59c" kind="function"><name>Flag</name></member>
@@ -2248,6 +2249,7 @@
     <member refid="classvrv_1_1_floating_object_1aa26df3350328cd96704f766ac3db0615" kind="function"><name>GetCurrentFloatingPositioner</name></member>
     <member refid="classvrv_1_1_floating_object_1aef3059c4ebeb1d581e5ce06319d11050" kind="function"><name>GetCorrespFloatingPositioner</name></member>
     <member refid="classvrv_1_1_floating_object_1a8781df9fac1bad66c08cdae278be23e4" kind="function"><name>IsExtenderElement</name></member>
+    <member refid="classvrv_1_1_floating_object_1a33e63919403a78ab01c46e22ff264d4c" kind="function"><name>IsCloserToStaffThan</name></member>
     <member refid="classvrv_1_1_floating_object_1aca4747e3c2a91341b053520e4da715ef" kind="function"><name>ResetHorizontalAlignment</name></member>
     <member refid="classvrv_1_1_floating_object_1a9a9271ae963c1406e733365a4ac860d8" kind="function"><name>ResetVerticalAlignment</name></member>
     <member refid="classvrv_1_1_floating_object_1a63b8dc8ca0b4943fe59552e75bd88347" kind="function"><name>FillStaffCurrentTimeSpanning</name></member>
@@ -6212,6 +6214,7 @@
     <member refid="classvrv_1_1_staff_alignment_1a940c8f079c41f13917c1d874d8288a4b" kind="variable"><name>m_scoreDefClefOverflowBelow</name></member>
     <member refid="classvrv_1_1_staff_alignment_1affeb34e29e6f6775a1285e9297b80f82" kind="variable"><name>m_spacingType</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a1c400898e1cbf838dec08429daf9b087" kind="variable"><name>m_floatingPositioners</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1a2b1ed36e2eb2085a5ca4137356f5d787" kind="variable"><name>m_floatingPositionersSorted</name></member>
     <member refid="classvrv_1_1_staff_alignment_1aed230042c44c7cd23fe58bc82d08e5d9" kind="variable"><name>m_staff</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a8fbdb29d9fb58c6b6a3de08c03411ed4" kind="variable"><name>m_system</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a366a4051d7602f053bc7b944d9266f09" kind="variable"><name>m_yRel</name></member>
@@ -6224,6 +6227,7 @@
     <member refid="classvrv_1_1_staff_alignment_1a45c9254734f194b8625f2ecb835d2dbc" kind="function"><name>FindAllFloatingPositioners</name></member>
     <member refid="classvrv_1_1_staff_alignment_1ae46cadae61f249115e75d43ae10b5f4e" kind="function"><name>GetCorrespFloatingPositioner</name></member>
     <member refid="classvrv_1_1_staff_alignment_1ab0c857aa5a9a585e4107edd6ef102f3e" kind="function"><name>ClearPositioners</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1ae760f3785a9a3cdaa22a693272adfaee" kind="function"><name>SortPositioners</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a708209da1e2d295a316091342956f633" kind="function"><name>FindAllIntersectionPoints</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a653094335da68f4fc7361f89cee940a1" kind="function"><name>ReAdjustFloatingPositionersGrps</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a1ffa4ba5373057ac34c88c093983831c" kind="function"><name>AdjustBracketGroupSpacing</name></member>
