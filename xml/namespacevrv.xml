@@ -69,6 +69,7 @@
     <innerclass refid="classvrv_1_1_calc_dots_params" prot="public">vrv::CalcDotsParams</innerclass>
     <innerclass refid="classvrv_1_1_calc_max_measure_duration_params" prot="public">vrv::CalcMaxMeasureDurationParams</innerclass>
     <innerclass refid="classvrv_1_1_calc_onset_offset_params" prot="public">vrv::CalcOnsetOffsetParams</innerclass>
+    <innerclass refid="classvrv_1_1_calc_slur_direction_params" prot="public">vrv::CalcSlurDirectionParams</innerclass>
     <innerclass refid="classvrv_1_1_calc_stem_params" prot="public">vrv::CalcStemParams</innerclass>
     <innerclass refid="classvrv_1_1_cast_off_encoding_params" prot="public">vrv::CastOffEncodingParams</innerclass>
     <innerclass refid="classvrv_1_1_cast_off_pages_params" prot="public">vrv::CastOffPagesParams</innerclass>
@@ -104,6 +105,7 @@
     <innerclass refid="classvrv_1_1_diatonic_sort" prot="public">vrv::DiatonicSort</innerclass>
     <innerclass refid="classvrv_1_1_dir" prot="public">vrv::Dir</innerclass>
     <innerclass refid="classvrv_1_1_doc" prot="public">vrv::Doc</innerclass>
+    <innerclass refid="classvrv_1_1_doc_selection" prot="public">vrv::DocSelection</innerclass>
     <innerclass refid="classvrv_1_1_dot" prot="public">vrv::Dot</innerclass>
     <innerclass refid="classvrv_1_1_dots" prot="public">vrv::Dots</innerclass>
     <innerclass refid="classvrv_1_1_drawing_list_interface" prot="public">vrv::DrawingListInterface</innerclass>
@@ -163,6 +165,7 @@
     <innerclass refid="classvrv_1_1_horizontal_layout_cache_params" prot="public">vrv::HorizontalLayoutCacheParams</innerclass>
     <innerclass refid="classvrv_1_1_humdrum_input" prot="public">vrv::HumdrumInput</innerclass>
     <innerclass refid="classvrv_1_1_humdrum_signifiers" prot="public">vrv::HumdrumSignifiers</innerclass>
+    <innerclass refid="classvrv_1_1_init_selection_params" prot="public">vrv::InitSelectionParams</innerclass>
     <innerclass refid="classvrv_1_1_input" prot="public">vrv::Input</innerclass>
     <innerclass refid="classvrv_1_1_instr_def" prot="public">vrv::InstrDef</innerclass>
     <innerclass refid="classvrv_1_1_interface" prot="public">vrv::Interface</innerclass>
@@ -268,7 +271,6 @@
     <innerclass refid="classvrv_1_1_prepare_pointers_by_layer_params" prot="public">vrv::PreparePointersByLayerParams</innerclass>
     <innerclass refid="classvrv_1_1_prepare_processing_lists_params" prot="public">vrv::PrepareProcessingListsParams</innerclass>
     <innerclass refid="classvrv_1_1_prepare_rpt_params" prot="public">vrv::PrepareRptParams</innerclass>
-    <innerclass refid="classvrv_1_1_prepare_slurs_params" prot="public">vrv::PrepareSlursParams</innerclass>
     <innerclass refid="classvrv_1_1_prepare_time_pointing_params" prot="public">vrv::PrepareTimePointingParams</innerclass>
     <innerclass refid="classvrv_1_1_prepare_time_spanning_params" prot="public">vrv::PrepareTimeSpanningParams</innerclass>
     <innerclass refid="classvrv_1_1_prepare_timestamps_params" prot="public">vrv::PrepareTimestampsParams</innerclass>
@@ -1501,7 +1503,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/doc.h" line="30" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/doc.h" bodystart="30" bodyend="30"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/doc.h" line="31" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/doc.h" bodystart="31" bodyend="31"/>
       </memberdef>
       <memberdef kind="enum" id="namespacevrv_1a7b9a4ea681256c54c6bc7c6ef215d758" prot="public" static="no" strong="no">
         <type></type>
@@ -1569,7 +1571,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="2524" column="25" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="2524" bodyend="2534"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="2556" column="25" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="2556" bodyend="2566"/>
       </memberdef>
       <memberdef kind="enum" id="namespacevrv_1acbf6eb578110ee61906ad288b5803922" prot="public" static="no" strong="no">
         <type></type>
@@ -5902,7 +5904,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="25" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="25" bodyend="42"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="26" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="26" bodyend="43"/>
       </memberdef>
       <memberdef kind="enum" id="namespacevrv_1a0df80c5935046e1a441fa302e10b6e47" prot="public" static="no" strong="yes">
         <type></type>
@@ -8780,7 +8782,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="1644" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="1644" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="1658" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="1658" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacevrv_1ae9d9596dc30d66e8af319ba697cbe8e5" prot="public" static="no">
         <type>std::list&lt; <ref refid="structvrv_1_1_m_i_d_i_chord" kindref="compound">MIDIChord</ref> &gt;</type>
@@ -8793,7 +8795,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="1662" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="1662" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" line="1676" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/functorparams.h" bodystart="1676" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacevrv_1a88f97c731b140ac861b13be697d11724" prot="public" static="no">
         <type>std::vector&lt; <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> * &gt;</type>
@@ -9361,7 +9363,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="44" column="6" declfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" declline="44" declcolumn="6"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="45" column="6" declfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" declline="45" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacevrv_1ab6cce8089a6c01f1b176d6eda47d9387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9378,7 +9380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="47" column="6" declfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" declline="47" declcolumn="6"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="48" column="6" declfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" declline="48" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacevrv_1ae63e2395c0d566cf02732297325bfebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -9395,7 +9397,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="48" column="6" declfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" declline="48" declcolumn="6"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="49" column="6" declfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" declline="49" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacevrv_1ac55228c00ac980fafbf7384e55999522" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>

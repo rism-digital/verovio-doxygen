@@ -1156,6 +1156,10 @@
     <member refid="classvrv_1_1_calc_onset_offset_params_1a875858913df264cb823f6210e38b24c0" kind="variable"><name>m_currentTempo</name></member>
     <member refid="classvrv_1_1_calc_onset_offset_params_1a3074158010b93cf94a4f9b16e9675e5d" kind="function"><name>CalcOnsetOffsetParams</name></member>
   </compound>
+  <compound refid="classvrv_1_1_calc_slur_direction_params" kind="class"><name>vrv::CalcSlurDirectionParams</name>
+    <member refid="classvrv_1_1_calc_slur_direction_params_1a508eb5e6c34020bc16978af389c2d0a5" kind="variable"><name>m_doc</name></member>
+    <member refid="classvrv_1_1_calc_slur_direction_params_1a011dda758401f05d8d7667807515b6bc" kind="function"><name>CalcSlurDirectionParams</name></member>
+  </compound>
   <compound refid="classvrv_1_1_calc_stem_params" kind="class"><name>vrv::CalcStemParams</name>
     <member refid="classvrv_1_1_calc_stem_params_1a154836558e4297bf9b962f185f0210a8" kind="variable"><name>m_chordStemLength</name></member>
     <member refid="classvrv_1_1_calc_stem_params_1a6b86386e29ad9f3f97e269c4c25addd8" kind="variable"><name>m_verticalCenter</name></member>
@@ -1675,7 +1679,16 @@
     <member refid="classvrv_1_1_doc_1a9cea4dcc5865c9d8a5381da45f6d20ab" kind="function"><name>GetCurrentScoreDef</name></member>
     <member refid="classvrv_1_1_doc_1a5d9f3644bfc9ff57ae5d832329c45041" kind="function"><name>SetCurrentScore</name></member>
     <member refid="classvrv_1_1_doc_1a2b019b663fb7916ddf5874df67bd28e5" kind="function"><name>HasCurrentScore</name></member>
+    <member refid="classvrv_1_1_doc_1a30bfdcba22ec584c3ba946a312bb2035" kind="function"><name>InitSelectionDoc</name></member>
+    <member refid="classvrv_1_1_doc_1aea047fcb782253d6a81450f00e8362b9" kind="function"><name>ResetSelectionDoc</name></member>
+    <member refid="classvrv_1_1_doc_1aa67199b00f932064061a957a6200f362" kind="function"><name>HasSelection</name></member>
+    <member refid="classvrv_1_1_doc_1ae0ebee5a808c3397d3f111c6f4a2ac4d" kind="function"><name>DeactiveateSelection</name></member>
+    <member refid="classvrv_1_1_doc_1af9bdb401ee225620c35623035b7e046e" kind="function"><name>ReactivateSelection</name></member>
     <member refid="classvrv_1_1_doc_1a37a1e27953869ca3f265e61f066d8682" kind="variable"><name>m_currentScore</name></member>
+    <member refid="classvrv_1_1_doc_1adf834cb92ca7e8c484fb77053abc7568" kind="variable"><name>m_selectionPreceeding</name></member>
+    <member refid="classvrv_1_1_doc_1a89c7ad2d30217a5fe090be0488471b5e" kind="variable"><name>m_selectionFollowing</name></member>
+    <member refid="classvrv_1_1_doc_1a7bc36256d5c168301dd36501963747cc" kind="variable"><name>m_selectionStart</name></member>
+    <member refid="classvrv_1_1_doc_1a09204779df852c2945adbdd6ba53da3c" kind="variable"><name>m_selectionEnd</name></member>
     <member refid="classvrv_1_1_doc_1a316c65ece6773370792d689e832ffe50" kind="variable"><name>m_header</name></member>
     <member refid="classvrv_1_1_doc_1af7116b1917f0a7cf8ed2b9b617496082" kind="variable"><name>m_front</name></member>
     <member refid="classvrv_1_1_doc_1ab96acb5023fb2cdbe88b648ac7065293" kind="variable"><name>m_back</name></member>
@@ -1718,6 +1731,7 @@
     <member refid="classvrv_1_1_doc_1a4f1df3b8603c6034b67b3ef2610bbd68" kind="variable"><name>m_facsimile</name></member>
     <member refid="classvrv_1_1_doc_1a1729e3b10e832cace0a5d262f49540c1" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_doc_1a8e5d2a994915fb93f56ca86dc4ae5e6e" kind="function"><name>Reset</name></member>
+    <member refid="classvrv_1_1_doc_1a7cf6f055c8c7cdad2d1e652554f43f97" kind="function"><name>ClearSelectionPages</name></member>
     <member refid="classvrv_1_1_doc_1a37ae1bd5555e06b5d5b6771f0fd95c46" kind="function"><name>Refresh</name></member>
     <member refid="classvrv_1_1_doc_1a76da40d9080851c199899b30c6c6c9ac" kind="function"><name>GetOptions</name></member>
     <member refid="classvrv_1_1_doc_1a737120e0423e4dcdfbab9fa19ae6a284" kind="function"><name>SetOptions</name></member>
@@ -1765,6 +1779,18 @@
     <member refid="classvrv_1_1_doc_1ad150550934e3d0c921b1c8b8425b6226" kind="function"><name>PrepareLyricsEnd</name></member>
     <member refid="classvrv_1_1_doc_1a0aefb72ffc89da14cf2acecc4ba059ac" kind="function"><name>PrepareTimestampsEnd</name></member>
     <member refid="classvrv_1_1_doc_1a47ba988110ca11b0d677e07f99d2d07d" kind="function"><name>CalcMusicFontSize</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_doc_selection" kind="class"><name>vrv::DocSelection</name>
+    <member refid="classvrv_1_1_doc_selection_1a1b1839dcccdfab0b51ca427c70e0fcfb" kind="function"><name>DocSelection</name></member>
+    <member refid="classvrv_1_1_doc_selection_1a55e9c2aa46019e805ea7115fa8b91fb1" kind="function"><name>~DocSelection</name></member>
+    <member refid="classvrv_1_1_doc_selection_1ac4d7e927dcb3b3e77839990b6b6d5327" kind="variable"><name>m_selectionStart</name></member>
+    <member refid="classvrv_1_1_doc_selection_1a292539c060ee460b3cb1d2c8e9488a13" kind="variable"><name>m_selectionEnd</name></member>
+    <member refid="classvrv_1_1_doc_selection_1aa66d15dc238c633c5e971499f01f31ef" kind="variable"><name>m_selectionRangeStart</name></member>
+    <member refid="classvrv_1_1_doc_selection_1a94901e7b5538e269c7738935f47c2f34" kind="variable"><name>m_selectionRangeEnd</name></member>
+    <member refid="classvrv_1_1_doc_selection_1a253f97a7a89715009d37a35ce9cc49f1" kind="variable"><name>m_measureRange</name></member>
+    <member refid="classvrv_1_1_doc_selection_1ada162dd2e5cbb6fe23e72509a14e70b7" kind="variable"><name>m_isPending</name></member>
+    <member refid="classvrv_1_1_doc_selection_1af0b386df41afb9e204b4776c13976a9b" kind="function"><name>Parse</name></member>
+    <member refid="classvrv_1_1_doc_selection_1a64f0eec4684f74accb692ddd3f8dc228" kind="function"><name>Set</name></member>
   </compound>
   <compound refid="classvrv_1_1_dot" kind="class"><name>vrv::Dot</name>
     <member refid="classvrv_1_1_dot_1acf153e1cd0b95951c2ae99a3bd083032" kind="function"><name>Dot</name></member>
@@ -1884,6 +1910,7 @@
     <member refid="classvrv_1_1_editorial_element_1a4b28a106672663f40df9a15a2318b2e0" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_editorial_element_1a19e455feae17ad78902dbb7dc1f9e60d" kind="function"><name>CastOffSystems</name></member>
     <member refid="classvrv_1_1_editorial_element_1ad201295244b149d859a26c7b50145c22" kind="function"><name>CastOffEncoding</name></member>
+    <member refid="classvrv_1_1_editorial_element_1a2ae68a142a37a7ab0f49fa4b24eaa7df" kind="function"><name>InitSelection</name></member>
   </compound>
   <compound refid="classvrv_1_1_editor_toolkit" kind="class"><name>vrv::EditorToolkit</name>
     <member refid="classvrv_1_1_editor_toolkit_1a7f13a9e3501c89738646d52704854230" kind="variable"><name>m_doc</name></member>
@@ -3024,6 +3051,16 @@
     <member refid="classvrv_1_1_humdrum_signifiers_1a18e9e7ef36872b1d9952a871e5581e97" kind="variable"><name>verticalStroke</name></member>
     <member refid="classvrv_1_1_humdrum_signifiers_1a4dc5c09ebc91b8cbfcdeb054671437ad" kind="variable"><name>lhpizz</name></member>
   </compound>
+  <compound refid="classvrv_1_1_init_selection_params" kind="class"><name>vrv::InitSelectionParams</name>
+    <member refid="classvrv_1_1_init_selection_params_1a55602a94e64506f32473559f5e8715da" kind="variable"><name>m_contentSystem</name></member>
+    <member refid="classvrv_1_1_init_selection_params_1a4da06b32664b8e2912b603abd9f0f747" kind="variable"><name>m_page</name></member>
+    <member refid="classvrv_1_1_init_selection_params_1a63e8a4cd33edf8c87cb592cd4df53a1d" kind="variable"><name>m_currentSystem</name></member>
+    <member refid="classvrv_1_1_init_selection_params_1ab3b834bd9273bf16d9a5e63f3ab3ad9b" kind="variable"><name>m_start</name></member>
+    <member refid="classvrv_1_1_init_selection_params_1af4c725bcb50612f4d9a771e0b0350757" kind="variable"><name>m_end</name></member>
+    <member refid="classvrv_1_1_init_selection_params_1a132c2cf1d0069181cf354072cf2c0f38" kind="variable"><name>m_isSelection</name></member>
+    <member refid="classvrv_1_1_init_selection_params_1a9b68b10619cb8c3e81d27002aff80a9c" kind="variable"><name>m_doc</name></member>
+    <member refid="classvrv_1_1_init_selection_params_1aac6c93680d9a23e8f19a3ba2591a1133" kind="function"><name>InitSelectionParams</name></member>
+  </compound>
   <compound refid="classvrv_1_1_input" kind="class"><name>vrv::Input</name>
     <member refid="classvrv_1_1_input_1a19dccc7ba8689777b0f2558e8b839305" kind="variable"><name>m_doc</name></member>
     <member refid="classvrv_1_1_input_1a4682cae07963c3646b22850447bf9120" kind="variable"><name>m_layoutInformation</name></member>
@@ -3337,7 +3374,7 @@
     <member refid="classvrv_1_1_layer_element_1ae5048854b7ea265da24246731fccde3c" kind="function"><name>CalcMaxMeasureDuration</name></member>
     <member refid="classvrv_1_1_layer_element_1a3b2b4adef231d2ab871ad026eb2a113c" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_layer_element_1acd1848663fabc6a21aead9999e07d21f" kind="function"><name>GetRelativeLayerElement</name></member>
-    <member refid="classvrv_1_1_layer_element_1ab810c9858f5a32391639521b9b93116c" kind="function"><name>PrepareSlurs</name></member>
+    <member refid="classvrv_1_1_layer_element_1a242cb3b3b2e0809a8ef12b3f9dca5fdd" kind="function"><name>CalcSlurDirection</name></member>
     <member refid="classvrv_1_1_layer_element_1a65909f1b435e1059b76f60ab9f5d274e" kind="function"><name>PrepareDuration</name></member>
     <member refid="classvrv_1_1_layer_element_1a7b67eb50cac027a4187f75b4afd7ed87" kind="function"><name>HorizontalLayoutCache</name></member>
     <member refid="classvrv_1_1_layer_element_1af7828e102ed3fd103b7d2f6695195c15" kind="function"><name>GetElementsInUnison</name></member>
@@ -3556,6 +3593,7 @@
     <member refid="classvrv_1_1_measure_1aa7d3eca3ec1dfa1aad41d28764615867" kind="function"><name>JustifyX</name></member>
     <member refid="classvrv_1_1_measure_1a2c7399596ea49621b63a2c0e1af814f2" kind="function"><name>CastOffSystems</name></member>
     <member refid="classvrv_1_1_measure_1a4c793218b22e82d580df2b74b04dfdf4" kind="function"><name>CastOffEncoding</name></member>
+    <member refid="classvrv_1_1_measure_1ab65f38c5d2d341f4d8cb0bd24dd8d8b6" kind="function"><name>InitSelection</name></member>
     <member refid="classvrv_1_1_measure_1af3027299dfe86873e5c6eb9fc1f62d5d" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_measure_1aa332b0b6a571ccea41e88ce42da500c4" kind="function"><name>FillStaffCurrentTimeSpanningEnd</name></member>
     <member refid="classvrv_1_1_measure_1af5d31684e551148383fc1a5bcebda580" kind="function"><name>PrepareCrossStaff</name></member>
@@ -4680,7 +4718,7 @@
     <member refid="classvrv_1_1_object_1a08855458e45646f3831f2edf7c8a77e0" kind="function"><name>AdjustAccidX</name></member>
     <member refid="classvrv_1_1_object_1ae04a8386531bae9a2facddc7d293a0ed" kind="function"><name>AdjustTempo</name></member>
     <member refid="classvrv_1_1_object_1a59773566ac731e75fa34166fa1d78aa3" kind="function"><name>AdjustTupletsX</name></member>
-    <member refid="classvrv_1_1_object_1a64c45a113ca154eaa33d322abb473415" kind="function"><name>PrepareSlurs</name></member>
+    <member refid="classvrv_1_1_object_1acbdf07b70a4743fc0aa119237b1e7968" kind="function"><name>CalcSlurDirection</name></member>
     <member refid="classvrv_1_1_object_1a5bd96aae8a25cedd2c63ce09b92388a3" kind="function"><name>CalcLigatureNotePos</name></member>
     <member refid="classvrv_1_1_object_1aeafa32ecabeffb9ce6d3e8372ab7160b" kind="function"><name>CalcArtic</name></member>
     <member refid="classvrv_1_1_object_1a0d2579fea0aea8b317a490c1654be52b" kind="function"><name>AdjustBeams</name></member>
@@ -4722,6 +4760,7 @@
     <member refid="classvrv_1_1_object_1ae1a47a27a677aa68ba14e324b0a17e00" kind="function"><name>FindNextChildByComparison</name></member>
     <member refid="classvrv_1_1_object_1a7c792936ed7e04d00172c7b0017b85a1" kind="function"><name>FindPreviousChildByComparison</name></member>
     <member refid="classvrv_1_1_object_1a0ee02f42628df9898a57349899c1ba3e" kind="function"><name>Transpose</name></member>
+    <member refid="classvrv_1_1_object_1a01e7e2ea430e59cec4df8364c0503899" kind="function"><name>InitSelection</name></member>
     <member refid="classvrv_1_1_object_1a8c269609416ebdb3b948df8aac3134e1" kind="function"><name>SeedUuid</name></member>
     <member refid="classvrv_1_1_object_1a2ea4b50e70a3a0d43293df7607a6901b" kind="function"><name>GenerateRandUuid</name></member>
     <member refid="classvrv_1_1_object_1a6c529b9574392b6c2baeaf8470e2a989" kind="function"><name>sortByUlx</name></member>
@@ -5301,6 +5340,8 @@
     <member refid="classvrv_1_1_page_1a8914102e927cd858174b52fbe638f8fe" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_page_1a8490304e26cdf6b0ab0b9bf342d956be" kind="function"><name>GetPPUFactor</name></member>
     <member refid="classvrv_1_1_page_1a5efc6e77de212aeaadf46f93c11c4d75" kind="function"><name>SetPPUFactor</name></member>
+    <member refid="classvrv_1_1_page_1af0dfbf8e757e682983cffcfb6594644d" kind="function"><name>IsFirstOfSelection</name></member>
+    <member refid="classvrv_1_1_page_1a175f527d428106897c13fe43176bfc8c" kind="function"><name>IsLastOfSelection</name></member>
     <member refid="classvrv_1_1_page_1a9a73b39f1a47ee0047cdba2386afff82" kind="function"><name>GetHeader</name></member>
     <member refid="classvrv_1_1_page_1aa31da89dc249435aaa4cee662aa68361" kind="function"><name>GetHeader</name></member>
     <member refid="classvrv_1_1_page_1ae2f7ed21addf22b4ab18ef4ebaafa5d3" kind="function"><name>GetFooter</name></member>
@@ -5332,6 +5373,7 @@
     <member refid="classvrv_1_1_page_1a01e27bb8082d59453406dd7848a8d1b2" kind="function"><name>JustifyHorizontally</name></member>
     <member refid="classvrv_1_1_page_1ab16b3f4c2bcc87738e77032c393d638d" kind="function"><name>LayOutVertically</name></member>
     <member refid="classvrv_1_1_page_1a677cbec6a571326d624fe812a0c432fa" kind="function"><name>JustifyVertically</name></member>
+    <member refid="classvrv_1_1_page_1a1961ef25e7007de65fd7d68f37c78af5" kind="function"><name>ResetAligners</name></member>
     <member refid="classvrv_1_1_page_1a801f4b7752db01eb9201e355fe4aa000" kind="function"><name>LayOutPitchPos</name></member>
     <member refid="classvrv_1_1_page_1af5028d206f7fb8e8b5c58d5644ca5a29" kind="function"><name>GetContentHeight</name></member>
     <member refid="classvrv_1_1_page_1a0608a60a03878f6c8223d103c3765cec" kind="function"><name>GetContentWidth</name></member>
@@ -5352,6 +5394,7 @@
     <member refid="classvrv_1_1_page_element_1ad3bb1497ac43c1464a80ca0c9cf5f2dc" kind="function"><name>CastOffSystems</name></member>
     <member refid="classvrv_1_1_page_element_1af4208ecf2de3eaab07cfea7a3f936c2f" kind="function"><name>CastOffPages</name></member>
     <member refid="classvrv_1_1_page_element_1a2d8f71bd541e1d347be9a9a350c2c0e6" kind="function"><name>CastOffEncoding</name></member>
+    <member refid="classvrv_1_1_page_element_1a3097298115c86b74b7fe3215b0c0d408" kind="function"><name>InitSelection</name></member>
     <member refid="classvrv_1_1_page_element_1a3743d57739d59d686a641c7c381ff635" kind="function"><name>UnCastOff</name></member>
   </compound>
   <compound refid="classvrv_1_1_page_milestone_end" kind="class"><name>vrv::PageMilestoneEnd</name>
@@ -5366,6 +5409,7 @@
     <member refid="classvrv_1_1_page_milestone_end_1a44429d421a21fc672042a359fcede354" kind="function"><name>CastOffSystems</name></member>
     <member refid="classvrv_1_1_page_milestone_end_1afd0591b4de24c75042d8e85c9c77fe9e" kind="function"><name>CastOffPages</name></member>
     <member refid="classvrv_1_1_page_milestone_end_1a30d25dee3f6859fb8dfbc0c13794ad75" kind="function"><name>CastOffEncoding</name></member>
+    <member refid="classvrv_1_1_page_milestone_end_1a07b622db30ce0098b1e3212c2db3aade" kind="function"><name>InitSelection</name></member>
     <member refid="classvrv_1_1_page_milestone_end_1a872ac48ccdfd28437da87a9ef53ebc0b" kind="function"><name>UnCastOff</name></member>
     <member refid="classvrv_1_1_page_milestone_end_1ad696deb6b0c8bda443ba91a6de3ea22a" kind="function"><name>Transpose</name></member>
   </compound>
@@ -5626,10 +5670,6 @@
     <member refid="classvrv_1_1_prepare_rpt_params_1a0faa253dae3f46623abfb87c561577e5" kind="variable"><name>m_doc</name></member>
     <member refid="classvrv_1_1_prepare_rpt_params_1ab264f2bfd8fd2aff2f2b5aeb47ea2bf1" kind="function"><name>PrepareRptParams</name></member>
   </compound>
-  <compound refid="classvrv_1_1_prepare_slurs_params" kind="class"><name>vrv::PrepareSlursParams</name>
-    <member refid="classvrv_1_1_prepare_slurs_params_1a27eaa7e1b451caba4ce0d4b85a4ecd70" kind="variable"><name>m_doc</name></member>
-    <member refid="classvrv_1_1_prepare_slurs_params_1a148da0c94893320217a3e37acb608500" kind="function"><name>PrepareSlursParams</name></member>
-  </compound>
   <compound refid="classvrv_1_1_prepare_time_pointing_params" kind="class"><name>vrv::PrepareTimePointingParams</name>
     <member refid="classvrv_1_1_prepare_time_pointing_params_1a94a352a9dd9f811d3898f8aa46183115" kind="variable"><name>m_timePointingInterfaces</name></member>
     <member refid="classvrv_1_1_prepare_time_pointing_params_1a70d37f773a1187857bdd99427c0dde0c" kind="function"><name>PrepareTimePointingParams</name></member>
@@ -5879,6 +5919,7 @@
     <member refid="classvrv_1_1_score_def_1a1225a27011925b11b208356a11bebdd3" kind="function"><name>ReplaceDrawingValues</name></member>
     <member refid="classvrv_1_1_score_def_1a9c783c24225cb3b84f2096cbc727cbca" kind="function"><name>ReplaceDrawingValues</name></member>
     <member refid="classvrv_1_1_score_def_1a07288108030c6de09de0cfad0eef5724" kind="function"><name>ReplaceDrawingLabels</name></member>
+    <member refid="classvrv_1_1_score_def_1a48b0a905d78958321c6b45d4365b2130" kind="function"><name>ResetFromDrawingValues</name></member>
     <member refid="classvrv_1_1_score_def_1afd16c952de1b8829f86ee7499bbb1fa6" kind="function"><name>GetStaffDef</name></member>
     <member refid="classvrv_1_1_score_def_1ad4cb8f3acb58e9ab37e8ae19b844513c" kind="function"><name>GetStaffGrp</name></member>
     <member refid="classvrv_1_1_score_def_1aa914794d578ec1fb7f3327c6be007cd4" kind="function"><name>GetStaffNs</name></member>
@@ -5893,6 +5934,7 @@
     <member refid="classvrv_1_1_score_def_1a477220ebfcffcd0faa1dcb0e82a0a582" kind="function"><name>ConvertToCastOffMensural</name></member>
     <member refid="classvrv_1_1_score_def_1ac84b949edcd655a8ab748e2102531931" kind="function"><name>CastOffSystems</name></member>
     <member refid="classvrv_1_1_score_def_1a34a82cf34ebba5196d5a35484e82a245" kind="function"><name>CastOffEncoding</name></member>
+    <member refid="classvrv_1_1_score_def_1a8be7c45c1c363e4f5608d4e3f53769ba" kind="function"><name>InitSelection</name></member>
     <member refid="classvrv_1_1_score_def_1a37b63c676b68b34e10fad1108a3b10d7" kind="function"><name>AlignMeasures</name></member>
     <member refid="classvrv_1_1_score_def_1a6ec6aed367b28a407b914d2f9773d8ce" kind="function"><name>JustifyX</name></member>
     <member refid="classvrv_1_1_score_def_1aa73d435a0c9fef071d83fdb0da136cbb" kind="function"><name>PrepareDuration</name></member>
@@ -6076,7 +6118,7 @@
     <member refid="classvrv_1_1_slur_1aaf4c1de0dbc2f1b2d36702dfd24f9353" kind="function"><name>CalculateExtremalStaff</name></member>
     <member refid="classvrv_1_1_slur_1a48b731aec93e5ea7ba9513fcdcc0f60e" kind="function"><name>InitBezierControlSides</name></member>
     <member refid="classvrv_1_1_slur_1a37fa49f3e56c2b97c6989e7136711baf" kind="function"><name>ResetDrawing</name></member>
-    <member refid="classvrv_1_1_slur_1a6b617c54aa61903ed2b6186a575c0170" kind="function"><name>PrepareSlurs</name></member>
+    <member refid="classvrv_1_1_slur_1a5bb775a96504e61b844efccbccd8ae78" kind="function"><name>CalcSlurDirection</name></member>
   </compound>
   <compound refid="classvrv_1_1_space" kind="class"><name>vrv::Space</name>
     <member refid="classvrv_1_1_space_1a44d9402bd745eb51ab7469a41a522447" kind="function"><name>Space</name></member>
@@ -6547,6 +6589,8 @@
     <member refid="classvrv_1_1_system_1ad0f189c699553709b1715d4d5742b971" kind="function"><name>IsLastInPage</name></member>
     <member refid="classvrv_1_1_system_1a12623cd2721efd9acd4867c83ffe8d75" kind="function"><name>IsFirstOfMdiv</name></member>
     <member refid="classvrv_1_1_system_1a2df3679536e019b6c2d946b74bf7aa00" kind="function"><name>IsLastOfMdiv</name></member>
+    <member refid="classvrv_1_1_system_1a0f0153e4051e3399f98a053f8f609112" kind="function"><name>IsFirstOfSelection</name></member>
+    <member refid="classvrv_1_1_system_1a220f7282ee87726486d3d10da9004e81" kind="function"><name>IsLastOfSelection</name></member>
     <member refid="classvrv_1_1_system_1a9270c77724f384b919758a2544be284d" kind="function"><name>ScoreDefOptimize</name></member>
     <member refid="classvrv_1_1_system_1a96163114852e75632978ff57b7f42045" kind="function"><name>ScoreDefOptimizeEnd</name></member>
     <member refid="classvrv_1_1_system_1a3b8cd22e818df58ee91bf6e004837c21" kind="function"><name>AdjustXOverflow</name></member>
@@ -6604,6 +6648,7 @@
     <member refid="classvrv_1_1_system_1a951d5fbdc9bfa963e1c4123e551dfabe" kind="function"><name>AdjustSlurs</name></member>
     <member refid="classvrv_1_1_system_1a7fb95db0fed8b359db0c020bc5877cd3" kind="function"><name>CastOffPages</name></member>
     <member refid="classvrv_1_1_system_1af4e71448eddcb0097b4492b52f216e6d" kind="function"><name>CastOffEncoding</name></member>
+    <member refid="classvrv_1_1_system_1add66df266788e66bba33e3a1439e544e" kind="function"><name>InitSelection</name></member>
     <member refid="classvrv_1_1_system_1abeb9438077fb1d41b129ef00df97d803" kind="function"><name>UnCastOff</name></member>
     <member refid="classvrv_1_1_system_1a4f8a3229123bafe6e08fa1a4bea69597" kind="function"><name>Transpose</name></member>
   </compound>
@@ -6645,6 +6690,7 @@
     <member refid="classvrv_1_1_system_element_1a8e83c5ad5476cd653397ec74112532ac" kind="function"><name>ConvertToCastOffMensural</name></member>
     <member refid="classvrv_1_1_system_element_1a17d947a62f84e74d4af850851ca4f058" kind="function"><name>CastOffSystems</name></member>
     <member refid="classvrv_1_1_system_element_1a05f7db61b9e9958376bdfe89b2d2f6a5" kind="function"><name>CastOffEncoding</name></member>
+    <member refid="classvrv_1_1_system_element_1aadaa8df170d1f09f44f8ff71221037f6" kind="function"><name>InitSelection</name></member>
   </compound>
   <compound refid="classvrv_1_1_system_milestone_end" kind="class"><name>vrv::SystemMilestoneEnd</name>
     <member refid="classvrv_1_1_system_milestone_end_1a53ad67013ab659e71d9e7a045ddef8ea" kind="function"><name>SystemMilestoneEnd</name></member>
@@ -6662,6 +6708,7 @@
     <member refid="classvrv_1_1_system_milestone_end_1aeee6366b9829f53c6dc87832f931b163" kind="function"><name>ResetDrawing</name></member>
     <member refid="classvrv_1_1_system_milestone_end_1ab6a8f38e19d5d169132b6d7292765ee2" kind="function"><name>CastOffSystems</name></member>
     <member refid="classvrv_1_1_system_milestone_end_1a6f9e60dcc653c7977d735333b402fc25" kind="function"><name>PrepareFloatingGrps</name></member>
+    <member refid="classvrv_1_1_system_milestone_end_1ac3927838679cf64a53f013863c8d9b89" kind="function"><name>InitSelection</name></member>
   </compound>
   <compound refid="classvrv_1_1_system_milestone_interface" kind="class"><name>vrv::SystemMilestoneInterface</name>
     <member refid="classvrv_1_1_system_milestone_interface_1ac6faab8192f1acf706056470dd968604" kind="function"><name>SystemMilestoneInterface</name></member>
@@ -6920,6 +6967,7 @@
     <member refid="classvrv_1_1_toolkit_1a321e0a62f5f15b1c5cd522fb0e514d3f" kind="function"><name>GetScale</name></member>
     <member refid="classvrv_1_1_toolkit_1abbe738f9285b31845ea71cb322d9a581" kind="function"><name>SetInputFrom</name></member>
     <member refid="classvrv_1_1_toolkit_1a765716f5361637b41914ee6b74e39ac7" kind="function"><name>SetOutputTo</name></member>
+    <member refid="classvrv_1_1_toolkit_1acd94a639c138408298c34bb41562ee6a" kind="function"><name>Select</name></member>
     <member refid="classvrv_1_1_toolkit_1a25adbe86763cca1c51603b9e4c4831f3" kind="function"><name>Edit</name></member>
     <member refid="classvrv_1_1_toolkit_1a369f22c61679d97bdd05c0689d6f0a44" kind="function"><name>EditInfo</name></member>
     <member refid="classvrv_1_1_toolkit_1a07da382b8c69698f19ff7e3136fd0813" kind="function"><name>RenderToSVG</name></member>
@@ -6964,6 +7012,7 @@
     <member refid="group__nodoc_1gaff331abcba4d70c7e6ecc17d08df382c" kind="function"><name>GetRuntimeInSeconds</name></member>
     <member refid="group__nodoc_1gabd5f684704d8e4736ea416e43cdc5827" kind="function"><name>LogRuntime</name></member>
     <member refid="classvrv_1_1_toolkit_1a5e0a77331e07aefa6f9471a1bc34f185" kind="variable"><name>m_doc</name></member>
+    <member refid="classvrv_1_1_toolkit_1a308a98315c470e7f7466c8c5e9439911" kind="variable"><name>m_docSelection</name></member>
     <member refid="classvrv_1_1_toolkit_1a41a694f23fc26f10b27c56dccf0cec68" kind="variable"><name>m_view</name></member>
     <member refid="classvrv_1_1_toolkit_1a4c0d66ae08c2a5e24af9e0ac137f3433" kind="variable"><name>m_inputFrom</name></member>
     <member refid="classvrv_1_1_toolkit_1ab3948b7bb4d42e1a2770a0701ee01dc2" kind="variable"><name>m_outputTo</name></member>
@@ -8754,6 +8803,8 @@
   <compound refid="dir_8h" kind="file"><name>dir.h</name>
   </compound>
   <compound refid="doc_8h" kind="file"><name>doc.h</name>
+  </compound>
+  <compound refid="docselection_8h" kind="file"><name>docselection.h</name>
   </compound>
   <compound refid="dot_8h" kind="file"><name>dot.h</name>
   </compound>

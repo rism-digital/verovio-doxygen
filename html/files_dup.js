@@ -36,6 +36,7 @@ var files_dup =
     [ "devicecontextbase.h", "devicecontextbase_8h_source.html", null ],
     [ "dir.h", "dir_8h_source.html", null ],
     [ "doc.h", "doc_8h_source.html", null ],
+    [ "docselection.h", "docselection_8h_source.html", null ],
     [ "dot.h", "dot_8h_source.html", null ],
     [ "drawinginterface.h", "drawinginterface_8h_source.html", null ],
     [ "durationinterface.h", "durationinterface_8h_source.html", null ],

@@ -852,7 +852,7 @@
         <argsstring></argsstring>
         <name>m_drawingCurveDir</name>
         <briefdescription>
-<para>The drawing curve direction This is calculated in the PrepareSlurs functor and contains an additional distinction for s-shaped slurs / mixed direction. </para>
+<para>The drawing curve direction This is calculated in the CalcSlurDirection functor and contains an additional distinction for s-shaped slurs / mixed direction. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -993,18 +993,18 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="179" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1a6b617c54aa61903ed2b6186a575c0170" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a5bb775a96504e61b844efccbccd8ae78" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
-        <definition>int vrv::Slur::PrepareSlurs</definition>
+        <definition>int vrv::Slur::CalcSlurDirection</definition>
         <argsstring>(FunctorParams *functorParams) override</argsstring>
-        <name>PrepareSlurs</name>
-        <reimplements refid="classvrv_1_1_object_1a64c45a113ca154eaa33d322abb473415">PrepareSlurs</reimplements>
+        <name>CalcSlurDirection</name>
+        <reimplements refid="classvrv_1_1_object_1acbdf07b70a4743fc0aa119237b1e7968">CalcSlurDirection</reimplements>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
           <declname>functorParams</declname>
         </param>
         <briefdescription>
-<para>See <ref refid="classvrv_1_1_object_1a64c45a113ca154eaa33d322abb473415" kindref="member">Object::PrepareSlurs</ref>. </para>
+<para>See <ref refid="classvrv_1_1_object_1acbdf07b70a4743fc0aa119237b1e7968" kindref="member">Object::CalcSlurDirection</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -1561,6 +1561,7 @@
       <member refid="classvrv_1_1_bounding_box_1acf2951ebea74c27b024916a4c96480a5" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcPointAtBezier</name></member>
       <member refid="classvrv_1_1_bounding_box_1a80465f84c7190f8cb0a9765693376be2" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcPositionAfterRotation</name></member>
       <member refid="classvrv_1_1_bounding_box_1a98f3d30610a0063965fcac7ec265ef27" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcSlope</name></member>
+      <member refid="classvrv_1_1_slur_1a5bb775a96504e61b844efccbccd8ae78" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CalcSlurDirection</name></member>
       <member refid="classvrv_1_1_object_1a0b93f8b6e02c8ba98a03db67fe5d5d10" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CalcStem</name></member>
       <member refid="classvrv_1_1_bounding_box_1a8fdd811aefcb373533b9cc2795aa04dd" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcThickBezier</name></member>
       <member refid="classvrv_1_1_slur_1aaf4c1de0dbc2f1b2d36702dfd24f9353" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalculateExtremalStaff</name></member>
@@ -1783,6 +1784,7 @@
       <member refid="classvrv_1_1_bounding_box_1ac4af18c7aeda842527a70954b409f54b" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>HorizontalRightOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1a363e14e29dcb72d6539a832921c538f9" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>HorizontalSelfOverlap</name></member>
       <member refid="classvrv_1_1_slur_1a48b731aec93e5ea7ba9513fcdcc0f60e" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>InitBezierControlSides</name></member>
+      <member refid="classvrv_1_1_object_1a01e7e2ea430e59cec4df8364c0503899" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>InitSelection</name></member>
       <member refid="classvrv_1_1_object_1aaf1ba626f7c0d6be44373b6cfe29855f" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>InsertAfter</name></member>
       <member refid="classvrv_1_1_object_1a26dd6389f8b6ce5ff1cf9f0b779a0d14" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>InsertBefore</name></member>
       <member refid="classvrv_1_1_object_1ac14929dac6e5b5e699d16ba7fc258d9d" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>InsertChild</name></member>
@@ -1867,7 +1869,6 @@
       <member refid="classvrv_1_1_object_1a72def6c07065fa48ad7cd844dd4b2ed5" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>PreparePointersByLayer</name></member>
       <member refid="classvrv_1_1_object_1a4d2903e69118df1b627cb99ecd036948" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>PrepareProcessingLists</name></member>
       <member refid="classvrv_1_1_object_1a1512dc40ee5cbcefd3dd463776e24c0c" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>PrepareRpt</name></member>
-      <member refid="classvrv_1_1_slur_1a6b617c54aa61903ed2b6186a575c0170" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>PrepareSlurs</name></member>
       <member refid="classvrv_1_1_floating_object_1a6bc20d3cca7e15e9b1f3c77fb682d3ad" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>PrepareTimePointing</name></member>
       <member refid="classvrv_1_1_object_1a5ea18a2c77fc31c9a0eee2a948660d5b" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>PrepareTimePointingEnd</name></member>
       <member refid="classvrv_1_1_floating_object_1aa06caf3b3d926aeb0cca580a357bb074" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>PrepareTimeSpanning</name></member>

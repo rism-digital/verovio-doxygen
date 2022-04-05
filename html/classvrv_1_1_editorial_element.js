@@ -8,6 +8,7 @@ var classvrv_1_1_editorial_element =
     [ "CastOffSystems", "classvrv_1_1_editorial_element.html#a19e455feae17ad78902dbb7dc1f9e60d", null ],
     [ "ConvertToPageBased", "classvrv_1_1_editorial_element.html#a7bb93abab05009107a6e5bcdc33b956f", null ],
     [ "ConvertToPageBasedEnd", "classvrv_1_1_editorial_element.html#a8634a6a00814d2172a280b3e358dff37", null ],
+    [ "InitSelection", "classvrv_1_1_editorial_element.html#a2ae68a142a37a7ab0f49fa4b24eaa7df", null ],
     [ "IsSupportedChild", "classvrv_1_1_editorial_element.html#ade4760c8902b5bbbac7288417efaf697", null ],
     [ "PrepareMilestones", "classvrv_1_1_editorial_element.html#a6aa989d9b3b91548795c3748c1be6888", null ],
     [ "Reset", "classvrv_1_1_editorial_element.html#a7ef9e3e924fb5881ae60a67956eeb497", null ],

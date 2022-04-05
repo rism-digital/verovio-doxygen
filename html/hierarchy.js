@@ -917,6 +917,7 @@ var hierarchy =
       [ "vrv::SvgDeviceContext", "classvrv_1_1_svg_device_context.html", null ]
     ] ],
     [ "vrv::DiatonicSort", "classvrv_1_1_diatonic_sort.html", null ],
+    [ "vrv::DocSelection", "classvrv_1_1_doc_selection.html", null ],
     [ "vrv::DrawingListInterface", "classvrv_1_1_drawing_list_interface.html", [
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
@@ -963,6 +964,7 @@ var hierarchy =
       [ "vrv::CalcDotsParams", "classvrv_1_1_calc_dots_params.html", null ],
       [ "vrv::CalcMaxMeasureDurationParams", "classvrv_1_1_calc_max_measure_duration_params.html", null ],
       [ "vrv::CalcOnsetOffsetParams", "classvrv_1_1_calc_onset_offset_params.html", null ],
+      [ "vrv::CalcSlurDirectionParams", "classvrv_1_1_calc_slur_direction_params.html", null ],
       [ "vrv::CalcStemParams", "classvrv_1_1_calc_stem_params.html", null ],
       [ "vrv::CastOffEncodingParams", "classvrv_1_1_cast_off_encoding_params.html", null ],
       [ "vrv::CastOffPagesParams", "classvrv_1_1_cast_off_pages_params.html", null ],
@@ -990,6 +992,7 @@ var hierarchy =
       [ "vrv::GetAlignmentLeftRightParams", "classvrv_1_1_get_alignment_left_right_params.html", null ],
       [ "vrv::GetRelativeLayerElementParams", "classvrv_1_1_get_relative_layer_element_params.html", null ],
       [ "vrv::HorizontalLayoutCacheParams", "classvrv_1_1_horizontal_layout_cache_params.html", null ],
+      [ "vrv::InitSelectionParams", "classvrv_1_1_init_selection_params.html", null ],
       [ "vrv::JustifyXParams", "classvrv_1_1_justify_x_params.html", null ],
       [ "vrv::JustifyYParams", "classvrv_1_1_justify_y_params.html", null ],
       [ "vrv::LayerCountInTimeSpanParams", "classvrv_1_1_layer_count_in_time_span_params.html", null ],
@@ -1007,7 +1010,6 @@ var hierarchy =
       [ "vrv::PreparePointersByLayerParams", "classvrv_1_1_prepare_pointers_by_layer_params.html", null ],
       [ "vrv::PrepareProcessingListsParams", "classvrv_1_1_prepare_processing_lists_params.html", null ],
       [ "vrv::PrepareRptParams", "classvrv_1_1_prepare_rpt_params.html", null ],
-      [ "vrv::PrepareSlursParams", "classvrv_1_1_prepare_slurs_params.html", null ],
       [ "vrv::PrepareTimePointingParams", "classvrv_1_1_prepare_time_pointing_params.html", null ],
       [ "vrv::PrepareTimeSpanningParams", "classvrv_1_1_prepare_time_spanning_params.html", null ],
       [ "vrv::PrepareTimestampsParams", "classvrv_1_1_prepare_timestamps_params.html", null ],

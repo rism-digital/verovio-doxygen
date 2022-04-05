@@ -58,6 +58,7 @@ var classvrv_1_1_toolkit =
     [ "ResetOptions", "classvrv_1_1_toolkit.html#a96fbf91f6688a0d81886a4a25254dc25", null ],
     [ "ResetXmlIdSeed", "classvrv_1_1_toolkit.html#aa851c49e48d4fd83e71f1a457f022366", null ],
     [ "SaveFile", "classvrv_1_1_toolkit.html#a0206f317ac7ebe3c61df606c8afcd4ca", null ],
+    [ "Select", "classvrv_1_1_toolkit.html#acd94a639c138408298c34bb41562ee6a", null ],
     [ "SetCString", "group__nodoc.html#ga7d77de8b102acd2f07f0fa23270f82a5", null ],
     [ "SetHumdrumBuffer", "group__nodoc.html#ga5ae3fb587d96567263bfebc1261ff4d9", null ],
     [ "SetInputFrom", "group__nodoc.html#ga5b3b3c80844a342a465d4887bb599ae0", null ],

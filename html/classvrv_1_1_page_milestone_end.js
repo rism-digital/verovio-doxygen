@@ -8,6 +8,7 @@ var classvrv_1_1_page_milestone_end =
     [ "GetClassName", "classvrv_1_1_page_milestone_end.html#a9aee969c978b9c3ebe58baa561fe28f3", null ],
     [ "GetStart", "classvrv_1_1_page_milestone_end.html#a41db9eaf00e6510afad1de2ff154e477", null ],
     [ "GetStartClassName", "classvrv_1_1_page_milestone_end.html#ac3644abe1f46ebf4e778563ffbdfa234", null ],
+    [ "InitSelection", "classvrv_1_1_page_milestone_end.html#a07b622db30ce0098b1e3212c2db3aade", null ],
     [ "Reset", "classvrv_1_1_page_milestone_end.html#a69d56c283ddc6ff36d1980fef1684bc7", null ],
     [ "Transpose", "classvrv_1_1_page_milestone_end.html#ad696deb6b0c8bda443ba91a6de3ea22a", null ],
     [ "UnCastOff", "classvrv_1_1_page_milestone_end.html#a872ac48ccdfd28437da87a9ef53ebc0b", null ],

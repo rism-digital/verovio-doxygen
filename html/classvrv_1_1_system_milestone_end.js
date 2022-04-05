@@ -7,6 +7,7 @@ var classvrv_1_1_system_milestone_end =
     [ "GetMeasure", "classvrv_1_1_system_milestone_end.html#a5b25263ed5bb9b54d345f5504bf35b87", null ],
     [ "GetStart", "classvrv_1_1_system_milestone_end.html#a3efff5fa3c3f6541cb956e7121c9cd95", null ],
     [ "GetStartClassName", "classvrv_1_1_system_milestone_end.html#a343e52f915e99be444a7b94418a4ee17", null ],
+    [ "InitSelection", "classvrv_1_1_system_milestone_end.html#ac3927838679cf64a53f013863c8d9b89", null ],
     [ "PrepareFloatingGrps", "classvrv_1_1_system_milestone_end.html#a6f9e60dcc653c7977d735333b402fc25", null ],
     [ "PrepareMilestones", "classvrv_1_1_system_milestone_end.html#add1dcfb6f1489621d59b8e07df51b42d", null ],
     [ "Reset", "classvrv_1_1_system_milestone_end.html#ad04048593f74e1399bbcc2d0f9b031bb", null ],
