@@ -86,7 +86,7 @@ var searchData=
   ['getelementattr_460',['GetElementAttr',['../classvrv_1_1_toolkit.html#acde5671467b4de6cacd55e7e8be87e93',1,'vrv::Toolkit']]],
   ['getelementsattime_461',['GetElementsAtTime',['../classvrv_1_1_toolkit.html#a4618bafecb91784806f78751ea6b3f42',1,'vrv::Toolkit']]],
   ['getelementsinunison_462',['GetElementsInUnison',['../classvrv_1_1_layer_element.html#af7828e102ed3fd103b7d2f6695195c15',1,'vrv::LayerElement']]],
-  ['getenclosingglyphs_463',['GetEnclosingGlyphs',['../classvrv_1_1_artic.html#a721d2e2e9787e1d9a15be93248b31dab',1,'vrv::Artic::GetEnclosingGlyphs()'],['../classvrv_1_1_fermata.html#a501ce1338df913386be0e31e07290fe6',1,'vrv::Fermata::GetEnclosingGlyphs()'],['../classvrv_1_1_meter_sig.html#acbaf621881ed37671bf13784f515cf7c',1,'vrv::MeterSig::GetEnclosingGlyphs()']]],
+  ['getenclosingglyphs_463',['GetEnclosingGlyphs',['../classvrv_1_1_artic.html#a721d2e2e9787e1d9a15be93248b31dab',1,'vrv::Artic::GetEnclosingGlyphs()'],['../classvrv_1_1_dynam.html#a288561c0fb46ccc2392f5f830a84dec6',1,'vrv::Dynam::GetEnclosingGlyphs()'],['../classvrv_1_1_fermata.html#a501ce1338df913386be0e31e07290fe6',1,'vrv::Fermata::GetEnclosingGlyphs()'],['../classvrv_1_1_meter_sig.html#acbaf621881ed37671bf13784f515cf7c',1,'vrv::MeterSig::GetEnclosingGlyphs()']]],
   ['getendmeasure_464',['GetEndMeasure',['../classvrv_1_1_time_spanning_interface.html#ab1286ca2a24e646753e7ffcc6ff3394d',1,'vrv::TimeSpanningInterface']]],
   ['getexpansionidsforelement_465',['GetExpansionIdsForElement',['../classvrv_1_1_toolkit.html#acbd4bf8bb87e10aa286034d8fe204469',1,'vrv::Toolkit']]],
   ['getfermataglyph_466',['GetFermataGlyph',['../classvrv_1_1_fermata.html#a0e7e493a0489f36630dc9b87d4bd369e',1,'vrv::Fermata']]],

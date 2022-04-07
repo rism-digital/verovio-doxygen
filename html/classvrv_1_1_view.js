@@ -42,6 +42,7 @@ var classvrv_1_1_view =
     [ "DrawDurationElement", "classvrv_1_1_view.html#a34c710188868cba6cfb43733b0304180", null ],
     [ "DrawDynam", "classvrv_1_1_view.html#af3d784a5dec18db724d2f6bd62e81f79", null ],
     [ "DrawDynamString", "classvrv_1_1_view.html#a81f15f5b35e9cf3a36473310002e60c4", null ],
+    [ "DrawDynamSymbolOnly", "classvrv_1_1_view.html#afccfa8ac79e7d9930f858f85a0e862fc", null ],
     [ "DrawEnclosingBrackets", "classvrv_1_1_view.html#a9fddb730ffdbd943413244594704cd6d", null ],
     [ "DrawEnding", "classvrv_1_1_view.html#acc532452a05e2e979e7600ea137ac639", null ],
     [ "DrawF", "classvrv_1_1_view.html#a4de06c0e43482a358b9ca232d095e689", null ],

@@ -237,7 +237,6 @@ var classvrv_1_1_object =
     [ "PrepareCueSize", "classvrv_1_1_object.html#a1d7673851f5410881c1e7547dd6c7149", null ],
     [ "PrepareDelayedTurns", "classvrv_1_1_object.html#a99e3f49ab3ca845fb0f6d501fb915ff6", null ],
     [ "PrepareDuration", "classvrv_1_1_object.html#a970e994920769896f253ef174d60a15c", null ],
-    [ "PrepareDynamEnclosure", "classvrv_1_1_object.html#a519bb69210ec0597d37345f5395e943b", null ],
     [ "PrepareFacsimile", "classvrv_1_1_object.html#ac75af86dda467af7ae8d928c83b1a7c8", null ],
     [ "PrepareFloatingGrps", "classvrv_1_1_object.html#af6ece837a732f054019b9230c59d8701", null ],
     [ "PrepareFloatingGrpsEnd", "classvrv_1_1_object.html#ac9850da37f019eae12da8c42776e67b8", null ],
