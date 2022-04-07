@@ -95,6 +95,11 @@ $(document).ready(function(){initNavTree('iopae_8h_source.html',''); initResizab
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __VRV_IOPAE_H__</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __VRV_IOPAE_H__</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * There are two implementation of the Plaine and Easie parser.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * The new one was introduced in Verovio 3.7.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * In order to build with the old parser, the following define needs to be uncommented</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//#define USE_PAE_OLD_PARSER</span></div>
@@ -119,7 +124,7 @@ $(document).ready(function(){initNavTree('iopae_8h_source.html',''); initResizab
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;jsonxx.h&quot;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">class </span>Beam;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">class </span>Chord;</div>
@@ -331,8 +336,8 @@ $(document).ready(function(){initNavTree('iopae_8h_source.html',''); initResizab
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keywordtype">char</span> octave;</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> beam;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <a class="code" href="namespacevrv.html#a8a19df71e38b10ca359d0052d1fdba70">data_PITCHNAME</a> pitch;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <a class="code" href="namespacevrv.html#a2bd8f760fccdf76e2f41894ca0431d4e">data_DURATION</a> duration;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        data_PITCHNAME pitch;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        data_DURATION duration;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        data_ACCIDENTAL_WRITTEN accidental;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordtype">bool</span> accidGes;</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> dots;</div>
@@ -445,7 +450,7 @@ $(document).ready(function(){initNavTree('iopae_8h_source.html',''); initResizab
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keywordtype">int</span> getAccidental(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, data_ACCIDENTAL_WRITTEN *accident, <span class="keywordtype">int</span> index = 0);</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="keywordtype">int</span> getOctave(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, <span class="keywordtype">char</span> *octave, <span class="keywordtype">int</span> index = 0);</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keywordtype">int</span> getDurations(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, pae::Measure *measure, <span class="keywordtype">int</span> index = 0);</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordtype">int</span> getDuration(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, <a class="code" href="namespacevrv.html#a2bd8f760fccdf76e2f41894ca0431d4e">data_DURATION</a> *duration, <span class="keywordtype">int</span> *dot, <span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordtype">int</span> getDuration(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, data_DURATION *duration, <span class="keywordtype">int</span> *dot, <span class="keywordtype">int</span> index);</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordtype">int</span> getTupletFermata(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, pae::Note *note, <span class="keywordtype">int</span> index = 0);</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordtype">int</span> getTupletFermataEnd(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, pae::Note *note, <span class="keywordtype">int</span> index = 0);</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="keywordtype">int</span> getGraceNote(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, pae::Note *note, <span class="keywordtype">int</span> index = 0);</div>
@@ -453,7 +458,7 @@ $(document).ready(function(){initNavTree('iopae_8h_source.html',''); initResizab
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordtype">int</span> getAbbreviation(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, pae::Measure *measure, <span class="keywordtype">int</span> index = 0);</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keywordtype">int</span> getNote(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, pae::Note *note, pae::Measure *measure, <span class="keywordtype">int</span> index = 0);</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <a class="code" href="namespacevrv.html#a8a19df71e38b10ca359d0052d1fdba70">data_PITCHNAME</a> getPitch(<span class="keywordtype">char</span> c_note);</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    data_PITCHNAME getPitch(<span class="keywordtype">char</span> c_note);</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160; </div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="comment">// output functions</span></div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keywordtype">void</span> addLayerElement(LayerElement *element);</div>
@@ -501,7 +506,7 @@ $(document).ready(function(){initNavTree('iopae_8h_source.html',''); initResizab
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        Token(<span class="keywordtype">char</span> c, <span class="keywordtype">int</span> position, Object *<span class="keywordtype">object</span> = NULL);</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="keyword">virtual</span> ~Token();</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160; </div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="keywordtype">bool</span> Is(<a class="code" href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">ClassId</a>);</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="keywordtype">bool</span> Is(ClassId);</div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        <span class="keywordtype">bool</span> IsContainerEnd();</div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        <span class="keywordtype">bool</span> IsEnd();</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        <span class="keywordtype">bool</span> IsSpace();</div>
@@ -636,7 +641,6 @@ $(document).ready(function(){initNavTree('iopae_8h_source.html',''); initResizab
 <div class="ttc" id="aclassvrv_1_1_measure_html"><div class="ttname"><a href="classvrv_1_1_measure.html">vrv::Measure</a></div><div class="ttdoc">This class represents a measure in a page-based score (Doc).</div><div class="ttdef"><b>Definition:</b> measure.h:36</div></div>
 <div class="ttc" id="aclassvrv_1_1_p_a_e_output_html"><div class="ttname"><a href="classvrv_1_1_p_a_e_output.html">vrv::PAEOutput</a></div><div class="ttdoc">This class is a file output stream for writing PAE files.</div><div class="ttdef"><b>Definition:</b> iopae.h:71</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:40</div></div>
-<div class="ttc" id="anamespacevrv_html_add6b61c8ada3f79dc1f540fbead73ca5"><div class="ttname"><a href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">vrv::ClassId</a></div><div class="ttdeci">ClassId</div><div class="ttdoc">The ClassIds are used to identify Object child classes through the Object::Is virtual method.</div><div class="ttdef"><b>Definition:</b> vrvdef.h:82</div></div>
 <div class="ttc" id="aclassvrv_1_1_p_a_e_input_html"><div class="ttname"><a href="classvrv_1_1_p_a_e_input.html">vrv::PAEInput</a></div><div class="ttdef"><b>Definition:</b> iopae.h:507</div></div>
 <div class="ttc" id="aclassvrv_1_1_meter_sig_html"><div class="ttname"><a href="classvrv_1_1_meter_sig.html">vrv::MeterSig</a></div><div class="ttdoc">This class models the MEI &lt;meterSig&gt; element.</div><div class="ttdef"><b>Definition:</b> metersig.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_chord_html"><div class="ttname"><a href="classvrv_1_1_chord.html">vrv::Chord</a></div><div class="ttdoc">This class represents a collection of notes in the same layer with the same onset time.</div><div class="ttdef"><b>Definition:</b> chord.h:32</div></div>
@@ -651,8 +655,6 @@ $(document).ready(function(){initNavTree('iopae_8h_source.html',''); initResizab
 <div class="ttc" id="aclassvrv_1_1_beam_html"><div class="ttname"><a href="classvrv_1_1_beam.html">vrv::Beam</a></div><div class="ttdef"><b>Definition:</b> beam.h:253</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html"><div class="ttname"><a href="classvrv_1_1_note.html">vrv::Note</a></div><div class="ttdoc">This class models the MEI &lt;note&gt; element.</div><div class="ttdef"><b>Definition:</b> note.h:47</div></div>
 <div class="ttc" id="aclassvrv_1_1_mdiv_html"><div class="ttname"><a href="classvrv_1_1_mdiv.html">vrv::Mdiv</a></div><div class="ttdoc">This class represent a &lt;mdiv&gt; in page-based MEI.</div><div class="ttdef"><b>Definition:</b> mdiv.h:24</div></div>
-<div class="ttc" id="anamespacevrv_html_a2bd8f760fccdf76e2f41894ca0431d4e"><div class="ttname"><a href="namespacevrv.html#a2bd8f760fccdf76e2f41894ca0431d4e">vrv::data_DURATION</a></div><div class="ttdeci">data_DURATION</div><div class="ttdoc">MEI data.DURATION.</div><div class="ttdef"><b>Definition:</b> attdef.h:99</div></div>
-<div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
 <div class="ttc" id="aclassvrv_1_1_p_a_e_output_html_a85a3ed4250131dece8de13f1938b88d2"><div class="ttname"><a href="classvrv_1_1_p_a_e_output.html#a85a3ed4250131dece8de13f1938b88d2">vrv::PAEOutput::WriteObject</a></div><div class="ttdeci">bool WriteObject(Object *object) override</div><div class="ttdoc">The main method for write objects.</div><div class="ttdef"><b>Definition:</b> iopae.cpp:87</div></div>
 <div class="ttc" id="aclassvrv_1_1_key_accid_html"><div class="ttname"><a href="classvrv_1_1_key_accid.html">vrv::KeyAccid</a></div><div class="ttdoc">This class models the MEI &lt;keyAccid&gt; element.</div><div class="ttdef"><b>Definition:</b> keyaccid.h:24</div></div>
 <div class="ttc" id="aclassvrv_1_1_multi_rest_html"><div class="ttname"><a href="classvrv_1_1_multi_rest.html">vrv::MultiRest</a></div><div class="ttdoc">This class models the MEI &lt;multiRest&gt; element.</div><div class="ttdef"><b>Definition:</b> multirest.h:26</div></div>
@@ -665,12 +667,11 @@ $(document).ready(function(){initNavTree('iopae_8h_source.html',''); initResizab
 <div class="ttc" id="aclassvrv_1_1_duration_interface_html"><div class="ttname"><a href="classvrv_1_1_duration_interface.html">vrv::DurationInterface</a></div><div class="ttdoc">This class is an interface for elements with duration, such as notes and rests.</div><div class="ttdef"><b>Definition:</b> durationinterface.h:30</div></div>
 <div class="ttc" id="aclassvrv_1_1_key_sig_html"><div class="ttname"><a href="classvrv_1_1_key_sig.html">vrv::KeySig</a></div><div class="ttdoc">This class models the MEI &lt;keySig&gt; element.</div><div class="ttdef"><b>Definition:</b> keysig.h:29</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html"><div class="ttname"><a href="classvrv_1_1_layer.html">vrv::Layer</a></div><div class="ttdoc">This class represents a layer in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> layer.h:33</div></div>
-<div class="ttc" id="anamespacevrv_html_a8a19df71e38b10ca359d0052d1fdba70"><div class="ttname"><a href="namespacevrv.html#a8a19df71e38b10ca359d0052d1fdba70">vrv::data_PITCHNAME</a></div><div class="ttdeci">data_PITCHNAME</div><div class="ttdoc">MEI data.PITCHNAME.</div><div class="ttdef"><b>Definition:</b> attdef.h:227</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>iopae.h</b></li>
-    <li class="footer">Generated on Thu Apr 7 2022 05:47:20 for Verovio by
+    <li class="footer">Generated on Thu Apr 7 2022 07:17:10 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

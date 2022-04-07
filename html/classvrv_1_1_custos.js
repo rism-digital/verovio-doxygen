@@ -10,6 +10,6 @@ var classvrv_1_1_custos =
     [ "HasToBeAligned", "classvrv_1_1_custos.html#a6bfa3e27b29e13b40e346adb3dcbaacf", null ],
     [ "IsSupportedChild", "classvrv_1_1_custos.html#a4436311935cefa3da14017a6e03166b7", null ],
     [ "Reset", "classvrv_1_1_custos.html#ac349d697333ee8966b9a8dc845b772b5", null ],
-    [ "ResetDrawing", "classvrv_1_1_custos.html#afbe2419925712e31d45c6ce3f13ba989", null ],
+    [ "ResetData", "classvrv_1_1_custos.html#a760353af4f01a888ac2b42c7292cd634", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_custos.html#a79ba4ff35cc1c91441e33f30545628f2", null ]
 ];

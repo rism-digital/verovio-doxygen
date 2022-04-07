@@ -12,7 +12,7 @@ var classvrv_1_1_stem =
     [ "IsVirtual", "classvrv_1_1_stem.html#a0c1e564f8d08832e092a7536d3399b78", null ],
     [ "IsVirtual", "classvrv_1_1_stem.html#a465d5e56923679f5c7d328c19327062c", null ],
     [ "Reset", "classvrv_1_1_stem.html#a0ae2602ead12893022b5e9a4596978b5", null ],
-    [ "ResetDrawing", "classvrv_1_1_stem.html#a1fa7aa6e5b0bd6f2f1ac750150c9e596", null ],
+    [ "ResetData", "classvrv_1_1_stem.html#acb5836a988eec7848d91a49d4197eb7d", null ],
     [ "Save", "classvrv_1_1_stem.html#a057001d064ae5f4487a5f70aee9fbc4b", null ],
     [ "SaveEnd", "classvrv_1_1_stem.html#a1c927bad9b24656f1ffc62609f3cc426", null ],
     [ "SetDrawingStemDir", "classvrv_1_1_stem.html#a471a6f88cb845e4c82a36c1f7d478c52", null ],

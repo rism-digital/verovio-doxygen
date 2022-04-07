@@ -69,7 +69,7 @@
         <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="150" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_time_spanning_interface_1a24093d53e5d2b33603322e16cfafb666" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="namespacevrv_1ac7221611975ee29efd00f36d5f3241ed" kindref="member">InterfaceId</ref></type>
+        <type>InterfaceId</type>
         <definition>InterfaceId vrv::TimeSpanningInterface::IsInterface</definition>
         <argsstring>() const override</argsstring>
         <name>IsInterface</name>
@@ -302,11 +302,11 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="203" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_time_spanning_interface_1a7eb9ec4141167667a95edb3e91b72c6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_time_spanning_interface_1a08a8f73cceb371fe7bbf226b5aac8aa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
-        <definition>virtual int vrv::TimeSpanningInterface::InterfaceFillStaffCurrentTimeSpanning</definition>
+        <definition>virtual int vrv::TimeSpanningInterface::InterfacePrepareStaffCurrentTimeSpanning</definition>
         <argsstring>(FunctorParams *functorParams, Object *object)</argsstring>
-        <name>InterfaceFillStaffCurrentTimeSpanning</name>
+        <name>InterfacePrepareStaffCurrentTimeSpanning</name>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
           <declname>functorParams</declname>
@@ -319,7 +319,7 @@
 <para>We have functors in the interface for avoiding code duplication in each implementation class. </para>
         </briefdescription>
         <detaileddescription>
-<para>Since we are in an interface, we need to pass the <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> (implementation) to the functor methods. These are not called by the Process/Call loop but by the implementation classes explicitely. See <ref refid="classvrv_1_1_floating_object_1a63b8dc8ca0b4943fe59552e75bd88347" kindref="member">FloatingObject::FillStaffCurrentTimeSpanning</ref> for an example. See <ref refid="classvrv_1_1_object_1a75266bd3b8cdd0db529367a5f9f16450" kindref="member">Object::FillStaffCurrentTimeSpanning</ref> </para>
+<para>Since we are in an interface, we need to pass the <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> (implementation) to the functor methods. These are not called by the Process/Call loop but by the implementation classes explicitely. See <ref refid="classvrv_1_1_floating_object_1ae538ce4c774260f2e1a5bbb302e26fc3" kindref="member">FloatingObject::PrepareStaffCurrentTimeSpanning</ref> for an example. See <ref refid="classvrv_1_1_object_1af318c3c89b9f41e392b18fca68656546" kindref="member">Object::PrepareStaffCurrentTimeSpanning</ref> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -370,12 +370,12 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="230" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_time_spanning_interface_1a8d0cf15ea86bb003ba8de5a2f9138fd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_time_spanning_interface_1aa51c9f9de1cb4a42194fd085fced59c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
-        <definition>int vrv::TimeSpanningInterface::InterfaceResetDrawing</definition>
+        <definition>int vrv::TimeSpanningInterface::InterfaceResetData</definition>
         <argsstring>(FunctorParams *functorParams, Object *object) override</argsstring>
-        <name>InterfaceResetDrawing</name>
-        <reimplements refid="classvrv_1_1_time_point_interface_1a28c0d2e97af7e3b9a28898175dff2867">InterfaceResetDrawing</reimplements>
+        <name>InterfaceResetData</name>
+        <reimplements refid="classvrv_1_1_time_point_interface_1a52deb80ed3d08fe1f91f4dbf5d689eac">InterfaceResetData</reimplements>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
           <declname>functorParams</declname>
@@ -385,7 +385,7 @@
           <declname>object</declname>
         </param>
         <briefdescription>
-<para>See <ref refid="classvrv_1_1_object_1a69ad18810d5249e8bb56be54884d2b50" kindref="member">Object::ResetDrawing</ref>. </para>
+<para>See <ref refid="classvrv_1_1_object_1a810bab1b8cdb43737577d2d4aa9f00cb" kindref="member">Object::ResetData</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -857,11 +857,11 @@
       <member refid="classvrv_1_1_time_point_interface_1a32c10ebc5af582117f680bbf37878ba2" prot="public" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>HasStart</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a72115fec5c8b177f926e2b5dc1f4bb01" prot="public" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>HasStartAndEnd</name></member>
       <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>Interface</name></member>
-      <member refid="classvrv_1_1_time_spanning_interface_1a7eb9ec4141167667a95edb3e91b72c6a" prot="public" virt="virtual"><scope>vrv::TimeSpanningInterface</scope><name>InterfaceFillStaffCurrentTimeSpanning</name></member>
+      <member refid="classvrv_1_1_time_spanning_interface_1a08a8f73cceb371fe7bbf226b5aac8aa3" prot="public" virt="virtual"><scope>vrv::TimeSpanningInterface</scope><name>InterfacePrepareStaffCurrentTimeSpanning</name></member>
       <member refid="classvrv_1_1_time_point_interface_1af12c0fb8fe5605633e3ceeb75806d798" prot="public" virt="virtual"><scope>vrv::TimeSpanningInterface</scope><name>InterfacePrepareTimePointing</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1afdd5ee6c76457751a32e0f26310331d0" prot="public" virt="virtual"><scope>vrv::TimeSpanningInterface</scope><name>InterfacePrepareTimeSpanning</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a968d95a2a61a0b39edcb043d6a2e8c66" prot="public" virt="virtual"><scope>vrv::TimeSpanningInterface</scope><name>InterfacePrepareTimestamps</name></member>
-      <member refid="classvrv_1_1_time_spanning_interface_1a8d0cf15ea86bb003ba8de5a2f9138fd7" prot="public" virt="virtual"><scope>vrv::TimeSpanningInterface</scope><name>InterfaceResetDrawing</name></member>
+      <member refid="classvrv_1_1_time_spanning_interface_1aa51c9f9de1cb4a42194fd085fced59c7" prot="public" virt="virtual"><scope>vrv::TimeSpanningInterface</scope><name>InterfaceResetData</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a24093d53e5d2b33603322e16cfafb666" prot="public" virt="virtual"><scope>vrv::TimeSpanningInterface</scope><name>IsInterface</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a11824d7f91a23984c3655671971c3592" prot="public" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>IsOnStaff</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1abd58fe3d42369038ea1c5dcfc302a07a" prot="public" virt="non-virtual"><scope>vrv::TimeSpanningInterface</scope><name>IsOrdered</name></member>

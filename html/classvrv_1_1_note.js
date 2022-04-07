@@ -56,7 +56,7 @@ var classvrv_1_1_note =
     [ "PrepareLayerElementParts", "classvrv_1_1_note.html#a60ae934c0ca1e35baa938b26f572e086", null ],
     [ "PrepareLyrics", "classvrv_1_1_note.html#a8cfc2508a920faad80159badd7a9efa0", null ],
     [ "Reset", "classvrv_1_1_note.html#abca9669b833294866e46d310a4ce1ec0", null ],
-    [ "ResetDrawing", "classvrv_1_1_note.html#ac12fbf9f831f079d8d48eb0fef06d4a2", null ],
+    [ "ResetData", "classvrv_1_1_note.html#ad6a296713e5f8703f443e1cc1f3e16ff", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_note.html#a98676025b889012c0101223a5693f46c", null ],
     [ "ResolveStemSameas", "classvrv_1_1_note.html#ac78d6b4e920d6bce9f77f1fd99fe7faf", null ],
     [ "SetCluster", "classvrv_1_1_note.html#a5dbdadeb93f4e6cf0f15dabc238b8349", null ],

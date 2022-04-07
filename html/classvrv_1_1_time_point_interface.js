@@ -10,7 +10,7 @@ var classvrv_1_1_time_point_interface =
     [ "HasStart", "classvrv_1_1_time_point_interface.html#a32c10ebc5af582117f680bbf37878ba2", null ],
     [ "InterfacePrepareTimePointing", "classvrv_1_1_time_point_interface.html#af12c0fb8fe5605633e3ceeb75806d798", null ],
     [ "InterfacePrepareTimestamps", "classvrv_1_1_time_point_interface.html#aad4fd22f92288ae7c9f8a7b2500ee6a5", null ],
-    [ "InterfaceResetDrawing", "classvrv_1_1_time_point_interface.html#a28c0d2e97af7e3b9a28898175dff2867", null ],
+    [ "InterfaceResetData", "classvrv_1_1_time_point_interface.html#a52deb80ed3d08fe1f91f4dbf5d689eac", null ],
     [ "IsInterface", "classvrv_1_1_time_point_interface.html#a48095974fd4c595c478be793c0d9a5aa", null ],
     [ "IsOnStaff", "classvrv_1_1_time_point_interface.html#a11824d7f91a23984c3655671971c3592", null ],
     [ "Reset", "classvrv_1_1_time_point_interface.html#aa1c20e4df6aa79d7f30ea46b73b902bc", null ],

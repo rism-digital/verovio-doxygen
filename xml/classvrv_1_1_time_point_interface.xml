@@ -68,7 +68,7 @@
         <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="39" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_time_point_interface_1a48095974fd4c595c478be793c0d9a5aa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="namespacevrv_1ac7221611975ee29efd00f36d5f3241ed" kindref="member">InterfaceId</ref></type>
+        <type>InterfaceId</type>
         <definition>InterfaceId vrv::TimePointInterface::IsInterface</definition>
         <argsstring>() const override</argsstring>
         <name>IsInterface</name>
@@ -302,7 +302,7 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
 <para>We have functor in the interface for avoiding code duplication in each implementation class. </para>
         </briefdescription>
         <detaileddescription>
-<para>Since we are in an interface, we need to pass the <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> (implementation) to the functor method. These not called by the Process/Call loop but by the implementaion classes explicitely. See <ref refid="classvrv_1_1_floating_object_1a63b8dc8ca0b4943fe59552e75bd88347" kindref="member">FloatingObject::FillStaffCurrentTimeSpanning</ref> for an example. See <ref refid="classvrv_1_1_object_1ac052d42c0d724ca5f16192d7398193d3" kindref="member">Object::PrepareTimeSpanning</ref> </para>
+<para>Since we are in an interface, we need to pass the <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> (implementation) to the functor method. These not called by the Process/Call loop but by the implementaion classes explicitely. See <ref refid="classvrv_1_1_floating_object_1ae538ce4c774260f2e1a5bbb302e26fc3" kindref="member">FloatingObject::PrepareStaffCurrentTimeSpanning</ref> for an example. See <ref refid="classvrv_1_1_object_1ac052d42c0d724ca5f16192d7398193d3" kindref="member">Object::PrepareTimeSpanning</ref> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -331,12 +331,12 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="109" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_time_point_interface_1a28c0d2e97af7e3b9a28898175dff2867" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_time_point_interface_1a52deb80ed3d08fe1f91f4dbf5d689eac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
-        <definition>virtual int vrv::TimePointInterface::InterfaceResetDrawing</definition>
+        <definition>virtual int vrv::TimePointInterface::InterfaceResetData</definition>
         <argsstring>(FunctorParams *functorParams, Object *object)</argsstring>
-        <name>InterfaceResetDrawing</name>
-        <reimplementedby refid="classvrv_1_1_time_spanning_interface_1a8d0cf15ea86bb003ba8de5a2f9138fd7">InterfaceResetDrawing</reimplementedby>
+        <name>InterfaceResetData</name>
+        <reimplementedby refid="classvrv_1_1_time_spanning_interface_1aa51c9f9de1cb4a42194fd085fced59c7">InterfaceResetData</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
           <declname>functorParams</declname>
@@ -346,7 +346,7 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
           <declname>object</declname>
         </param>
         <briefdescription>
-<para>See <ref refid="classvrv_1_1_object_1a69ad18810d5249e8bb56be54884d2b50" kindref="member">Object::ResetDrawing</ref>. </para>
+<para>See <ref refid="classvrv_1_1_object_1a810bab1b8cdb43737577d2d4aa9f00cb" kindref="member">Object::ResetData</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -865,7 +865,7 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
       <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual"><scope>vrv::TimePointInterface</scope><name>Interface</name></member>
       <member refid="classvrv_1_1_time_point_interface_1af12c0fb8fe5605633e3ceeb75806d798" prot="public" virt="virtual"><scope>vrv::TimePointInterface</scope><name>InterfacePrepareTimePointing</name></member>
       <member refid="classvrv_1_1_time_point_interface_1aad4fd22f92288ae7c9f8a7b2500ee6a5" prot="public" virt="virtual"><scope>vrv::TimePointInterface</scope><name>InterfacePrepareTimestamps</name></member>
-      <member refid="classvrv_1_1_time_point_interface_1a28c0d2e97af7e3b9a28898175dff2867" prot="public" virt="virtual"><scope>vrv::TimePointInterface</scope><name>InterfaceResetDrawing</name></member>
+      <member refid="classvrv_1_1_time_point_interface_1a52deb80ed3d08fe1f91f4dbf5d689eac" prot="public" virt="virtual"><scope>vrv::TimePointInterface</scope><name>InterfaceResetData</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a48095974fd4c595c478be793c0d9a5aa" prot="public" virt="virtual"><scope>vrv::TimePointInterface</scope><name>IsInterface</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a11824d7f91a23984c3655671971c3592" prot="public" virt="non-virtual"><scope>vrv::TimePointInterface</scope><name>IsOnStaff</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a0acc50cd71a220b0142a0ec22377c88a" prot="protected" virt="non-virtual"><scope>vrv::TimePointInterface</scope><name>m_start</name></member>

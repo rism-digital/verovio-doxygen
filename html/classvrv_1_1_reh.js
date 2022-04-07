@@ -9,6 +9,6 @@ var classvrv_1_1_reh =
     [ "GetTimePointInterface", "classvrv_1_1_reh.html#a04f9f10ddb2efefd3aed7b8fe915b9cc", null ],
     [ "GetTimePointInterface", "classvrv_1_1_reh.html#aa9a524c74b828af1502757633bfa0e67", null ],
     [ "IsSupportedChild", "classvrv_1_1_reh.html#a01328b5f518e7c9f45f080308cf6eb3d", null ],
-    [ "Reset", "classvrv_1_1_reh.html#a572abcfe5c0c90d6a1ffeb630e1582e6", null ],
-    [ "ResolveRehPosition", "classvrv_1_1_reh.html#a132363e0fc07984fbfadf00d9883270d", null ]
+    [ "PrepareRehPosition", "classvrv_1_1_reh.html#ac88f074aef3fbd6e8513844e5870102b", null ],
+    [ "Reset", "classvrv_1_1_reh.html#a572abcfe5c0c90d6a1ffeb630e1582e6", null ]
 ];

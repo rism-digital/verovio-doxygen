@@ -770,7 +770,7 @@
         <argsstring>(const ClassId classId) const</argsstring>
         <name>GetLeftMargin</name>
         <param>
-          <type>const <ref refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5" kindref="member">ClassId</ref></type>
+          <type>const ClassId</type>
           <declname>classId</declname>
         </param>
         <briefdescription>
@@ -804,7 +804,7 @@
         <argsstring>(const ClassId classId) const</argsstring>
         <name>GetRightMargin</name>
         <param>
-          <type>const <ref refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5" kindref="member">ClassId</ref></type>
+          <type>const ClassId</type>
           <declname>classId</declname>
         </param>
         <briefdescription>
@@ -851,7 +851,7 @@
         <argsstring>(const ClassId classId) const</argsstring>
         <name>GetBottomMargin</name>
         <param>
-          <type>const <ref refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5" kindref="member">ClassId</ref></type>
+          <type>const ClassId</type>
           <declname>classId</declname>
         </param>
         <briefdescription>
@@ -868,7 +868,7 @@
         <argsstring>(const ClassId classId) const</argsstring>
         <name>GetTopMargin</name>
         <param>
-          <type>const <ref refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5" kindref="member">ClassId</ref></type>
+          <type>const ClassId</type>
           <declname>classId</declname>
         </param>
         <briefdescription>
@@ -1592,28 +1592,28 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/doc.h" line="575" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/doc.h" bodystart="575" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_doc_1a0fc74d4722e4d09133d97439d7a08984" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classvrv_1_1_doc_1acce33f1dc0f2db0158059d1449f4a7b4" prot="private" static="no" mutable="no">
         <type>bool</type>
-        <definition>bool vrv::Doc::m_drawingPreparationDone</definition>
+        <definition>bool vrv::Doc::m_dataPreparationDone</definition>
         <argsstring></argsstring>
-        <name>m_drawingPreparationDone</name>
+        <name>m_dataPreparationDone</name>
         <briefdescription>
-<para>A flag to indicate if the drawing preparation has been done. </para>
+<para>A flag to indicate if the data preparation has been done. </para>
         </briefdescription>
         <detaileddescription>
-<para>If yes, drawing preparation will be reset before being done again. </para>
+<para>If yes, data preparation will be reset before being done again. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/doc.h" line="581" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/doc.h" bodystart="581" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_doc_1a8e4287f3aef5d2e37b9d4fc8f3f1db6c" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classvrv_1_1_doc_1aab3b31c873d2f6eee7e563b03f82e046" prot="private" static="no" mutable="no">
         <type>double</type>
-        <definition>double vrv::Doc::m_MIDITimemapTempo</definition>
+        <definition>double vrv::Doc::m_timemapTempo</definition>
         <argsstring></argsstring>
-        <name>m_MIDITimemapTempo</name>
+        <name>m_timemapTempo</name>
         <briefdescription>
-<para>A flag to indicate that the MIDI timemap has been calculated. </para>
+<para>A flag to indicate that the timemap has been calculated. </para>
         </briefdescription>
         <detaileddescription>
 <para>The timemap needs to be prepared before MIDI files or timemap JSON files are generated. Value is 0.0 when no timemap has been generated. </para>
@@ -2029,7 +2029,7 @@
         <argsstring>(const ClassId classId, int staffIndex, data_STAFFREL staffPosition)</argsstring>
         <name>GetStaffDistance</name>
         <param>
-          <type>const <ref refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5" kindref="member">ClassId</ref></type>
+          <type>const ClassId</type>
           <declname>classId</declname>
         </param>
         <param>
@@ -2049,13 +2049,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/doc.h" line="209" column="12"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_doc_1a064d5e554df56f41a487a42e89056343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_doc_1a162e05164bbd41fefa38c12639f91c44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void vrv::Doc::CalculateMidiTimemap</definition>
+        <definition>void vrv::Doc::CalculateTimemap</definition>
         <argsstring>()</argsstring>
-        <name>CalculateMidiTimemap</name>
+        <name>CalculateTimemap</name>
         <briefdescription>
-<para>Prepare the MIDI timemap for MIDI and timemap file export. </para>
+<para>Prepare the timemap for MIDI and timemap file export. </para>
         </briefdescription>
         <detaileddescription>
 <para>Run trough all the layers and fill the score-time and performance timing variables. </para>
@@ -2064,16 +2064,16 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/doc.h" line="215" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_doc_1a1d37c6eb07d53a08c5d83c2ea906a98b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_doc_1ae0d680385b78c8ba2e1b84452ad27889" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool vrv::Doc::HasMidiTimemap</definition>
+        <definition>bool vrv::Doc::HasTimemap</definition>
         <argsstring>() const</argsstring>
-        <name>HasMidiTimemap</name>
+        <name>HasTimemap</name>
         <briefdescription>
-<para>Check to see if the MIDI timemap has already been calculated. </para>
+<para>Check to see if the timemap has already been calculated. </para>
         </briefdescription>
         <detaileddescription>
-<para>This needs to return true before <ref refid="classvrv_1_1_doc_1a4b8be5eebe48afb3668ec97c133148a5" kindref="member">ExportMIDI()</ref> or <ref refid="classvrv_1_1_doc_1aa8808429c70b8fd2756dd9634671789c" kindref="member">ExportTimemap()</ref> can export anything (These two functions will automatically run <ref refid="classvrv_1_1_doc_1a064d5e554df56f41a487a42e89056343" kindref="member">CalculateMidiTimemap()</ref> if <ref refid="classvrv_1_1_doc_1a1d37c6eb07d53a08c5d83c2ea906a98b" kindref="member">HasMidiTimemap()</ref> return false. </para>
+<para>This needs to return true before <ref refid="classvrv_1_1_doc_1a4b8be5eebe48afb3668ec97c133148a5" kindref="member">ExportMIDI()</ref> or <ref refid="classvrv_1_1_doc_1aa8808429c70b8fd2756dd9634671789c" kindref="member">ExportTimemap()</ref> can export anything (These two functions will automatically run <ref refid="classvrv_1_1_doc_1a162e05164bbd41fefa38c12639f91c44" kindref="member">CalculateTimemap()</ref> if <ref refid="classvrv_1_1_doc_1ae0d680385b78c8ba2e1b84452ad27889" kindref="member">HasTimemap()</ref> return false. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -2195,16 +2195,16 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/doc.h" line="257" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_doc_1a957061578a058f9ddeabb0a66cf80cd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_doc_1a863c2bb1a0b28c6f52adb5ce662a14e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void vrv::Doc::PrepareDrawing</definition>
+        <definition>void vrv::Doc::PrepareData</definition>
         <argsstring>()</argsstring>
-        <name>PrepareDrawing</name>
+        <name>PrepareData</name>
         <briefdescription>
-<para>Prepare the document for drawing. </para>
+<para>Prepare the document data. </para>
         </briefdescription>
         <detaileddescription>
-<para>This sets drawing pointers and value and needs to be done after loading and any editing. For example, it sets the approriate values for the lyrics connectors </para>
+<para>This sets pointers and value and needs to be done after loading and any editing. For example, it sets the approriate values for the lyrics connectors </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -2474,11 +2474,11 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/doc.h" line="354" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_doc_1a6ab38682780ec861437404767df45732" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_doc_1a05086f8905312e8fa756236931155a9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void vrv::Doc::ResetDrawingPage</definition>
+        <definition>void vrv::Doc::ResetDataPage</definition>
         <argsstring>()</argsstring>
-        <name>ResetDrawingPage</name>
+        <name>ResetDataPage</name>
         <briefdescription>
 <para>Reset drawing page to NULL. </para>
         </briefdescription>
@@ -2578,7 +2578,7 @@
           <declname>functorParams</declname>
         </param>
         <briefdescription>
-<para>See Object::PrepareLyricsEnd. </para>
+<para>See <ref refid="classvrv_1_1_object_1a93eb8a93ec7ea199f54a59b8139e1a38" kindref="member">Object::PrepareLyricsEnd</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -2597,7 +2597,7 @@
           <declname>functorParams</declname>
         </param>
         <briefdescription>
-<para>See Object::PrepareTimestampsEnd. </para>
+<para>See <ref refid="classvrv_1_1_object_1a9cf511bc173faafb24b5a87149acb897" kindref="member">Object::PrepareTimestampsEnd</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -2836,7 +2836,6 @@
       <member refid="classvrv_1_1_object_1a0d2579fea0aea8b317a490c1654be52b" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>AdjustBeams</name></member>
       <member refid="classvrv_1_1_object_1a1373589b997e00e6dc811eb3139194e8" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>AdjustBeamsEnd</name></member>
       <member refid="classvrv_1_1_object_1a6c19b533f485fd10e5649bb5c441c884" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>AdjustClefChanges</name></member>
-      <member refid="classvrv_1_1_object_1acfa149d616638b3935e56e1ee41ce61a" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>AdjustCrossStaffContent</name></member>
       <member refid="classvrv_1_1_object_1abeee6db6564ff37f1fd686033751d51f" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>AdjustCrossStaffYPos</name></member>
       <member refid="classvrv_1_1_object_1a1745790d27bcd5c9b11754ea44fdc376" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>AdjustDots</name></member>
       <member refid="classvrv_1_1_object_1ae0790c79940de6c0bd58e9022043b493" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>AdjustDotsEnd</name></member>
@@ -2877,7 +2876,12 @@
       <member refid="classvrv_1_1_bounding_box_1aa466757865d8f747cbaaf232e3051177" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ArePointsClose</name></member>
       <member refid="classvrv_1_1_object_1aa63ca849b67044acc38f89a6030b03c2" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>binaryComp</name></member>
       <member refid="classvrv_1_1_bounding_box_1a5601855899250709d9fa94f3c280aa72" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>BoundingBox</name></member>
+      <member refid="classvrv_1_1_object_1ac4a8b28e5570fe15ce98ecdf9c5f47ef" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CacheHorizontalLayout</name></member>
+      <member refid="classvrv_1_1_object_1a45e6bdf7d677db82e02fa05af908e2f0" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CalcAlignmentPitchPos</name></member>
+      <member refid="classvrv_1_1_object_1a533510d12307018a82fbe715a8ba5fda" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CalcAlignmentXPos</name></member>
       <member refid="classvrv_1_1_object_1aeafa32ecabeffb9ce6d3e8372ab7160b" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CalcArtic</name></member>
+      <member refid="classvrv_1_1_object_1a01481f7a69cf86540c1cf4efaab8e75b" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CalcBBoxOverflows</name></member>
+      <member refid="classvrv_1_1_object_1aafe409b501956ce98e33be6e9e5d0eee" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CalcBBoxOverflowsEnd</name></member>
       <member refid="classvrv_1_1_bounding_box_1a91eb3e2ee9b00bc764283fe1710e199b" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>CalcBezierAtPosition</name></member>
       <member refid="classvrv_1_1_bounding_box_1af1fdd065b198aafe35dcc7e5a35477ee" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>CalcBezierParamAtPosition</name></member>
       <member refid="classvrv_1_1_object_1a277607c9a525f437a721e8c526963d44" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CalcChordNoteHeads</name></member>
@@ -2887,18 +2891,15 @@
       <member refid="classvrv_1_1_object_1a56b580832eec7871b18371835a61e136" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CalcLedgerLinesEnd</name></member>
       <member refid="classvrv_1_1_object_1a5bd96aae8a25cedd2c63ce09b92388a3" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CalcLigatureNotePos</name></member>
       <member refid="classvrv_1_1_bounding_box_1af5401bb6040fe859bf6b7dc09c3c35b8" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>CalcLinearInterpolation</name></member>
-      <member refid="classvrv_1_1_object_1ade83951cbefb443049938380b46df228" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CalcMaxMeasureDuration</name></member>
-      <member refid="classvrv_1_1_object_1a915ed48bcfb8420959cdc84ff2b70d98" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CalcMaxMeasureDurationEnd</name></member>
       <member refid="classvrv_1_1_doc_1a47ba988110ca11b0d677e07f99d2d07d" prot="private" virt="non-virtual"><scope>vrv::Doc</scope><name>CalcMusicFontSize</name></member>
-      <member refid="classvrv_1_1_object_1a1e1336770fd1b687628ef53b207d29f2" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CalcOnsetOffset</name></member>
-      <member refid="classvrv_1_1_object_1ae8d2bbd8c168fd6904c864f297b3deeb" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CalcOnsetOffsetEnd</name></member>
       <member refid="classvrv_1_1_bounding_box_1acf2951ebea74c27b024916a4c96480a5" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>CalcPointAtBezier</name></member>
       <member refid="classvrv_1_1_bounding_box_1a80465f84c7190f8cb0a9765693376be2" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>CalcPositionAfterRotation</name></member>
       <member refid="classvrv_1_1_bounding_box_1a98f3d30610a0063965fcac7ec265ef27" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>CalcSlope</name></member>
       <member refid="classvrv_1_1_object_1acbdf07b70a4743fc0aa119237b1e7968" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CalcSlurDirection</name></member>
+      <member refid="classvrv_1_1_object_1a3e00929935e3c3a646767efa319b5c2c" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CalcSpanningBeamSpans</name></member>
       <member refid="classvrv_1_1_object_1a0b93f8b6e02c8ba98a03db67fe5d5d10" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CalcStem</name></member>
       <member refid="classvrv_1_1_bounding_box_1a8fdd811aefcb373533b9cc2795aa04dd" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>CalcThickBezier</name></member>
-      <member refid="classvrv_1_1_doc_1a064d5e554df56f41a487a42e89056343" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>CalculateMidiTimemap</name></member>
+      <member refid="classvrv_1_1_doc_1a162e05164bbd41fefa38c12639f91c44" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>CalculateTimemap</name></member>
       <member refid="classvrv_1_1_doc_1a931f9cb5bb89b797564b30d35f10e0cc" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>CastOffDoc</name></member>
       <member refid="classvrv_1_1_doc_1a60d959e4f877248e087e2a945e0f9f31" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>CastOffDocBase</name></member>
       <member refid="classvrv_1_1_object_1ae1320bf0b5a56f033dcc561147225ba7" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CastOffEncoding</name></member>
@@ -2910,6 +2911,7 @@
       <member refid="classvrv_1_1_doc_1aff86b7ca7769957dd5cfb7dfe2936936" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>CastOffSmartDoc</name></member>
       <member refid="classvrv_1_1_object_1a15c5f866aed95ea5c5b051c5c7e47137" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CastOffSystems</name></member>
       <member refid="classvrv_1_1_object_1aee6f8abfde8d2fe26b067f97b6ba9f0b" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CastOffSystemsEnd</name></member>
+      <member refid="classvrv_1_1_object_1a2823f9e038c5ce606061a60b13af8ae0" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>CastOffToSelection</name></member>
       <member refid="classvrv_1_1_object_1a0af864d1b64a70d4ec8b62a520114bde" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ClearChildren</name></member>
       <member refid="classvrv_1_1_object_1a667b4432b8f9d9e92bfd34fe5c885099" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ClearRelinquishedChildren</name></member>
       <member refid="classvrv_1_1_doc_1a7cf6f055c8c7cdad2d1e652554f43f97" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ClearSelectionPages</name></member>
@@ -2938,8 +2940,6 @@
       <member refid="classvrv_1_1_doc_1a4b8be5eebe48afb3668ec97c133148a5" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ExportMIDI</name></member>
       <member refid="classvrv_1_1_doc_1aa8808429c70b8fd2756dd9634671789c" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ExportTimemap</name></member>
       <member refid="classvrv_1_1_object_1a3749f83f36adfc8748438ca17b1e5f91" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>FillFlatList</name></member>
-      <member refid="classvrv_1_1_object_1a75266bd3b8cdd0db529367a5f9f16450" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>FillStaffCurrentTimeSpanning</name></member>
-      <member refid="classvrv_1_1_object_1aa35be27cc82fd95f7a353a705721778b" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>FillStaffCurrentTimeSpanningEnd</name></member>
       <member refid="classvrv_1_1_object_1afe64fa5f9df4e735ed7f1e9a5935a339" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>FindAllBetween</name></member>
       <member refid="classvrv_1_1_object_1aa5fd51861abce2d3237ef9d115d32ba6" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>FindAllByComparison</name></member>
       <member refid="classvrv_1_1_object_1a8c7c629ec574046f6e6078da821361c5" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>FindAllConstBetween</name></member>
@@ -3139,20 +3139,25 @@
       <member refid="classvrv_1_1_bounding_box_1a1dfd7207c5f8431bcb56c88b5c469992" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>HasEmptyBB</name></member>
       <member refid="classvrv_1_1_doc_1a047c911499ccc787cb9288792ead88b9" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>HasFacsimile</name></member>
       <member refid="classvrv_1_1_object_1a1639642ba9433617ec04608f2d2570bb" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>HasInterface</name></member>
-      <member refid="classvrv_1_1_doc_1a1d37c6eb07d53a08c5d83c2ea906a98b" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>HasMidiTimemap</name></member>
       <member refid="classvrv_1_1_object_1ae0d0368a66d1c4b590b311a1a94eb717" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>HasNonEditorialContent</name></member>
       <member refid="classvrv_1_1_doc_1a7629eb7f06402cbd2d1ca31fbd122941" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>HasPage</name></member>
       <member refid="classvrv_1_1_doc_1aa67199b00f932064061a957a6200f362" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>HasSelection</name></member>
       <member refid="classvrv_1_1_bounding_box_1a72744aa255a0d861577275366e711729" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>HasSelfBB</name></member>
       <member refid="classvrv_1_1_bounding_box_1a33e2d9c410be02f476ca19e0f063284c" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>HasSelfHorizontalBB</name></member>
       <member refid="classvrv_1_1_bounding_box_1a20afc38171ff613053a28a3530a66a05" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>HasSelfVerticalBB</name></member>
+      <member refid="classvrv_1_1_doc_1ae0d680385b78c8ba2e1b84452ad27889" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>HasTimemap</name></member>
       <member refid="classvrv_1_1_bounding_box_1aee28c8f38335a02d395f132eac3174a2" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>HorizontalContentOverlap</name></member>
-      <member refid="classvrv_1_1_object_1a4e7525f44aa7c13e45caf42aaa60ae55" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>HorizontalLayoutCache</name></member>
       <member refid="classvrv_1_1_bounding_box_1a505bfcdcaff3d551fdbd3a74ed3375f0" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>HorizontalLeftOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1ac4af18c7aeda842527a70954b409f54b" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>HorizontalRightOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1a363e14e29dcb72d6539a832921c538f9" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>HorizontalSelfOverlap</name></member>
-      <member refid="classvrv_1_1_object_1a01e7e2ea430e59cec4df8364c0503899" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>InitSelection</name></member>
+      <member refid="classvrv_1_1_object_1a792600840b16b4343650cceecf8db29b" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>InitMaxMeasureDuration</name></member>
+      <member refid="classvrv_1_1_object_1a0d88bb9d11b811425e26d2770a1444dd" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>InitMaxMeasureDurationEnd</name></member>
+      <member refid="classvrv_1_1_object_1a4dbed0a4c644599d09e9bedaae92b006" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>InitMIDI</name></member>
+      <member refid="classvrv_1_1_object_1a57ec5e8c7c81239b0522a339a499e8b0" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>InitOnsetOffset</name></member>
+      <member refid="classvrv_1_1_object_1a4811922ce5044857b05cebc8c161d74e" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>InitOnsetOffsetEnd</name></member>
+      <member refid="classvrv_1_1_object_1a0712f513111041dd786e3c59eca63636" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>InitProcessingLists</name></member>
       <member refid="classvrv_1_1_doc_1a30bfdcba22ec584c3ba946a312bb2035" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>InitSelectionDoc</name></member>
+      <member refid="classvrv_1_1_object_1a4b4eb2d375b2e0de164272912857d135" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>InitTimemapTies</name></member>
       <member refid="classvrv_1_1_object_1aaf1ba626f7c0d6be44373b6cfe29855f" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>InsertAfter</name></member>
       <member refid="classvrv_1_1_object_1a26dd6389f8b6ce5ff1cf9f0b779a0d14" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>InsertBefore</name></member>
       <member refid="classvrv_1_1_object_1ac14929dac6e5b5e699d16ba7fc258d9d" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>InsertChild</name></member>
@@ -3182,6 +3187,7 @@
       <member refid="classvrv_1_1_object_1a958bf53eb4117b0438aa5ddb9264c1c8" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>IsTextElement</name></member>
       <member refid="classvrv_1_1_object_1af644f5ed4600bb29ca03ded3f95b3467" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>JustifyX</name></member>
       <member refid="classvrv_1_1_object_1afc5a347cc3aa0a158036cdabc32157da" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>JustifyY</name></member>
+      <member refid="classvrv_1_1_object_1ab65875db006b1e1207a8ee70de7095b2" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>JustifyYAdjustCrossStaff</name></member>
       <member refid="classvrv_1_1_object_1a9af0cce7b5db85a68ed87c274176aa66" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>LayerCountInTimeSpan</name></member>
       <member refid="classvrv_1_1_object_1add866a8144bcb528808a3e9d6a8f9d45" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>LayerElementsInTimeSpan</name></member>
       <member refid="classvrv_1_1_doc_1ab96acb5023fb2cdbe88b648ac7065293" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>m_back</name></member>
@@ -3189,6 +3195,7 @@
       <member refid="classvrv_1_1_bounding_box_1a548baf7b854ef877313302670da5d0b8" prot="protected" virt="non-virtual"><scope>vrv::Doc</scope><name>m_cachedDrawingY</name></member>
       <member refid="classvrv_1_1_doc_1a37a1e27953869ca3f265e61f066d8682" prot="private" virt="non-virtual"><scope>vrv::Doc</scope><name>m_currentScore</name></member>
       <member refid="classvrv_1_1_doc_1acd915480e3af6681269b0aaeb2f0b538" prot="private" virt="non-virtual"><scope>vrv::Doc</scope><name>m_currentScoreDefDone</name></member>
+      <member refid="classvrv_1_1_doc_1acce33f1dc0f2db0158059d1449f4a7b4" prot="private" virt="non-virtual"><scope>vrv::Doc</scope><name>m_dataPreparationDone</name></member>
       <member refid="classvrv_1_1_doc_1a0acd9a295cb0a8364f55a44081197ef5" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>m_drawingBeamMaxSlope</name></member>
       <member refid="classvrv_1_1_doc_1a673c48b796b9e7d6283ea15b9fd9de05" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>m_drawingBeamMinSlope</name></member>
       <member refid="classvrv_1_1_doc_1a168eaa12334c4f66e4672285af800d07" prot="private" virt="non-virtual"><scope>vrv::Doc</scope><name>m_drawingBeamWhiteWidth</name></member>
@@ -3205,7 +3212,6 @@
       <member refid="classvrv_1_1_doc_1a88836d316e96b0768e4554474647484d" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>m_drawingPageMarginRight</name></member>
       <member refid="classvrv_1_1_doc_1a026209f9be82af99d6b6b76019134033" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>m_drawingPageMarginTop</name></member>
       <member refid="classvrv_1_1_doc_1a5b9bd5a0e1d35561ab36f37093e219a0" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>m_drawingPageWidth</name></member>
-      <member refid="classvrv_1_1_doc_1a0fc74d4722e4d09133d97439d7a08984" prot="private" virt="non-virtual"><scope>vrv::Doc</scope><name>m_drawingPreparationDone</name></member>
       <member refid="classvrv_1_1_doc_1a4b80a180c6e5d2d482e6ed58ebedfb92" prot="private" virt="non-virtual"><scope>vrv::Doc</scope><name>m_drawingSmuflFont</name></member>
       <member refid="classvrv_1_1_doc_1a691e4b8154457497dfcadb0a799238f3" prot="private" virt="non-virtual"><scope>vrv::Doc</scope><name>m_drawingSmuflFontSize</name></member>
       <member refid="classvrv_1_1_doc_1a7b7051375f9a3ed2e35f33957687a56e" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>m_expansionMap</name></member>
@@ -3217,7 +3223,6 @@
       <member refid="classvrv_1_1_doc_1ac55dd2b657b6f3ee8b5e8f13a2169ddf" prot="private" virt="non-virtual"><scope>vrv::Doc</scope><name>m_isCastOff</name></member>
       <member refid="classvrv_1_1_doc_1aedab591458e4309da45e1e0e271fdd51" prot="private" virt="non-virtual"><scope>vrv::Doc</scope><name>m_isMensuralMusicOnly</name></member>
       <member refid="classvrv_1_1_doc_1aa01c87dbef00d6bef969e49cb69ba3da" prot="private" virt="non-virtual"><scope>vrv::Doc</scope><name>m_markup</name></member>
-      <member refid="classvrv_1_1_doc_1a8e4287f3aef5d2e37b9d4fc8f3f1db6c" prot="private" virt="non-virtual"><scope>vrv::Doc</scope><name>m_MIDITimemapTempo</name></member>
       <member refid="classvrv_1_1_doc_1ac8c03d319f5980f42db9faba0253cb6f" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>m_notationType</name></member>
       <member refid="classvrv_1_1_doc_1a91957055a4ab1bf8edb2ab2716ef2d8c" prot="private" virt="non-virtual"><scope>vrv::Doc</scope><name>m_options</name></member>
       <member refid="classvrv_1_1_doc_1a51e94b496de90680c6fb9be09841a4f1" prot="private" virt="non-virtual"><scope>vrv::Doc</scope><name>m_pageHeight</name></member>
@@ -3230,6 +3235,7 @@
       <member refid="classvrv_1_1_doc_1a89c7ad2d30217a5fe090be0488471b5e" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>m_selectionFollowing</name></member>
       <member refid="classvrv_1_1_doc_1adf834cb92ca7e8c484fb77053abc7568" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>m_selectionPreceeding</name></member>
       <member refid="classvrv_1_1_doc_1a7bc36256d5c168301dd36501963747cc" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>m_selectionStart</name></member>
+      <member refid="classvrv_1_1_doc_1aab3b31c873d2f6eee7e563b03f82e046" prot="private" virt="non-virtual"><scope>vrv::Doc</scope><name>m_timemapTempo</name></member>
       <member refid="classvrv_1_1_doc_1a2d9d5bcbc74573393d92860992760d1e" prot="private" virt="non-virtual"><scope>vrv::Doc</scope><name>m_type</name></member>
       <member refid="classvrv_1_1_object_1a74ae0995caefb72a71445ba43fce0652" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>m_unsupported</name></member>
       <member refid="classvrv_1_1_object_1a985728e489aed60707c313327bf7c464" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>Modify</name></member>
@@ -3240,11 +3246,12 @@
       <member refid="classvrv_1_1_object_1a79f4f653686b4f612283302ab443c1c8" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>Object</name></member>
       <member refid="classvrv_1_1_object_1a8be4ecf7908559751e728551718a8bfc" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>Object</name></member>
       <member refid="classvrv_1_1_object_1a6ad51ecc97faf69c8fa8432a780aed44" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>operator=</name></member>
+      <member refid="classvrv_1_1_object_1aded479344601d210f9283ef231d79b4a" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareBeamSpanElements</name></member>
       <member refid="classvrv_1_1_object_1a873d7c2f7805530e06ebd07885c399b6" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareCrossStaff</name></member>
       <member refid="classvrv_1_1_object_1a79600c0f5d0d0c68a2501f60ef077126" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareCrossStaffEnd</name></member>
+      <member refid="classvrv_1_1_object_1a1d7673851f5410881c1e7547dd6c7149" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareCueSize</name></member>
+      <member refid="classvrv_1_1_doc_1a863c2bb1a0b28c6f52adb5ce662a14e8" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>PrepareData</name></member>
       <member refid="classvrv_1_1_object_1a99e3f49ab3ca845fb0f6d501fb915ff6" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareDelayedTurns</name></member>
-      <member refid="classvrv_1_1_doc_1a957061578a058f9ddeabb0a66cf80cd8" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>PrepareDrawing</name></member>
-      <member refid="classvrv_1_1_object_1a392d061080fee243ac4beb6f7e77434d" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareDrawingCueSize</name></member>
       <member refid="classvrv_1_1_object_1a970e994920769896f253ef174d60a15c" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareDuration</name></member>
       <member refid="classvrv_1_1_object_1a519bb69210ec0597d37345f5395e943b" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareDynamEnclosure</name></member>
       <member refid="classvrv_1_1_object_1ac75af86dda467af7ae8d928c83b1a7c8" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareFacsimile</name></member>
@@ -3254,12 +3261,14 @@
       <member refid="classvrv_1_1_object_1a506499857fa99ad918b7c236670acaf2" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareLinking</name></member>
       <member refid="classvrv_1_1_object_1a1bda4d7b151d3ceb49e8dcf2a6b4474e" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareLyrics</name></member>
       <member refid="classvrv_1_1_doc_1ad150550934e3d0c921b1c8b8425b6226" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareLyricsEnd</name></member>
-      <member refid="classvrv_1_1_object_1a77d3f2330b109e34f0eff0013aa9eddd" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareMIDI</name></member>
       <member refid="classvrv_1_1_object_1a88e94d36441a1b11bfaa6681b0ac1bdf" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareMilestones</name></member>
       <member refid="classvrv_1_1_object_1af10db2b195d5667b53c982409ecb9500" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PreparePlist</name></member>
       <member refid="classvrv_1_1_object_1a72def6c07065fa48ad7cd844dd4b2ed5" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PreparePointersByLayer</name></member>
-      <member refid="classvrv_1_1_object_1a4d2903e69118df1b627cb99ecd036948" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareProcessingLists</name></member>
+      <member refid="classvrv_1_1_object_1a590d63a492766e9af436bcde48315c8e" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareProcessPlist</name></member>
+      <member refid="classvrv_1_1_object_1aa30a908e4b7dda657df2c685fb8231db" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareRehPosition</name></member>
       <member refid="classvrv_1_1_object_1a1512dc40ee5cbcefd3dd463776e24c0c" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareRpt</name></member>
+      <member refid="classvrv_1_1_object_1af318c3c89b9f41e392b18fca68656546" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareStaffCurrentTimeSpanning</name></member>
+      <member refid="classvrv_1_1_object_1a86d2fb686d26adc4587b31c4b55a02eb" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareStaffCurrentTimeSpanningEnd</name></member>
       <member refid="classvrv_1_1_object_1a70fc6206cd0d6608724d91d03e64d767" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareTimePointing</name></member>
       <member refid="classvrv_1_1_object_1a5ea18a2c77fc31c9a0eee2a948660d5b" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareTimePointingEnd</name></member>
       <member refid="classvrv_1_1_object_1ac052d42c0d724ca5f16192d7398193d3" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareTimeSpanning</name></member>
@@ -3268,7 +3277,6 @@
       <member refid="classvrv_1_1_doc_1a0aefb72ffc89da14cf2acecc4ba059ac" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>PrepareTimestampsEnd</name></member>
       <member refid="classvrv_1_1_object_1a22908db94736af382a1c905b2c648210" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>Process</name></member>
       <member refid="classvrv_1_1_object_1accaa63582357d29f7b9c3d2b9e7bb4a8" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>Process</name></member>
-      <member refid="classvrv_1_1_object_1a4b0b7354d9d0edaee6df57b40da81f3a" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>ProcessPlist</name></member>
       <member refid="classvrv_1_1_doc_1af9bdb401ee225620c35623035b7e046e" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ReactivateSelection</name></member>
       <member refid="classvrv_1_1_bounding_box_1a74c28d831f2e14aec44a848a961f8b42" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>RectBottomOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1a414f972e6f1e4231d61acdd7329eb414" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>RectLeftOverlap</name></member>
@@ -3287,17 +3295,13 @@
       <member refid="classvrv_1_1_bounding_box_1ae79b9324168608f36cb71c8ca4174220" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>ResetBoundingBox</name></member>
       <member refid="classvrv_1_1_object_1a859aecc00ab75fc7ed2f2780bc0a6a51" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>ResetCachedDrawingX</name></member>
       <member refid="classvrv_1_1_object_1ac5b28a8625980d057d6cad83dbd52e26" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>ResetCachedDrawingY</name></member>
-      <member refid="classvrv_1_1_object_1a69ad18810d5249e8bb56be54884d2b50" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>ResetDrawing</name></member>
-      <member refid="classvrv_1_1_doc_1a6ab38682780ec861437404767df45732" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ResetDrawingPage</name></member>
+      <member refid="classvrv_1_1_object_1a810bab1b8cdb43737577d2d4aa9f00cb" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>ResetData</name></member>
+      <member refid="classvrv_1_1_doc_1a05086f8905312e8fa756236931155a9e" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ResetDataPage</name></member>
       <member refid="classvrv_1_1_object_1acea387d6c12925339a10f94312d9a82f" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>ResetHorizontalAlignment</name></member>
       <member refid="classvrv_1_1_object_1a5d22ebda01e0b254c13d558f5ffdb098" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ResetParent</name></member>
       <member refid="classvrv_1_1_doc_1aea047fcb782253d6a81450f00e8362b9" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ResetSelectionDoc</name></member>
       <member refid="classvrv_1_1_object_1aadeb99ea27241a64bf942e469a04445e" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ResetUuid</name></member>
       <member refid="classvrv_1_1_object_1ab5f42b79ff1721982121a8a9c493a8c1" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>ResetVerticalAlignment</name></member>
-      <member refid="classvrv_1_1_object_1af90726fa7efc00d187deae109e55c496" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>ResolveBeamSpanElements</name></member>
-      <member refid="classvrv_1_1_object_1a93b5fe054b2d26fe91ff50a5861fe08c" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>ResolveMIDITies</name></member>
-      <member refid="classvrv_1_1_object_1a973a6ee5f5504cfdad58a940a95c313e" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>ResolveRehPosition</name></member>
-      <member refid="classvrv_1_1_object_1a111fc38e9bf9b8d0c1c672503b82d8b0" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>ResolveSpanningBeamSpans</name></member>
       <member refid="classvrv_1_1_object_1a74097c855ed070b02fd06810207d0ac0" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>Save</name></member>
       <member refid="classvrv_1_1_object_1a8ec6663670b4b6522cb4892babf36742" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>Save</name></member>
       <member refid="classvrv_1_1_object_1ad628dce30da1167aa84313ea7a4f5612" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>SaveEnd</name></member>
@@ -3312,8 +3316,6 @@
       <member refid="classvrv_1_1_doc_1a6f04894a3ea7d133ad51571697ac2a4f" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ScoreDefSetGrpSymDoc</name></member>
       <member refid="classvrv_1_1_object_1ac063e5c113b30453f094ba3589a534ca" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>ScoreDefUnsetCurrent</name></member>
       <member refid="classvrv_1_1_object_1a8c269609416ebdb3b948df8aac3134e1" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>SeedUuid</name></member>
-      <member refid="classvrv_1_1_object_1a1009aeee85e83052adcbcd8dc2af050d" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>SetAlignmentPitchPos</name></member>
-      <member refid="classvrv_1_1_object_1a3a00186419e955ee211440092e955f14" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>SetAlignmentXPos</name></member>
       <member refid="classvrv_1_1_object_1a9bc335e3bc5405f5dbaae757b5629996" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>SetAsReferenceObject</name></member>
       <member refid="classvrv_1_1_bounding_box_1abc4feb5675ff672b2e3a94b4a65403b5" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>SetBoundingBoxGlyph</name></member>
       <member refid="classvrv_1_1_object_1a3a95154b135f78a323dafdfec2a76e2d" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>SetCautionaryScoreDef</name></member>
@@ -3326,8 +3328,6 @@
       <member refid="classvrv_1_1_doc_1af000e1f2d2f79967f09122f6e94760b7" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>SetMarkup</name></member>
       <member refid="classvrv_1_1_doc_1a8441cb0b67a44650505421ce5bc13bb5" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>SetMensuralMusicOnly</name></member>
       <member refid="classvrv_1_1_doc_1a737120e0423e4dcdfbab9fa19ae6a284" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>SetOptions</name></member>
-      <member refid="classvrv_1_1_object_1a45993175bb6a94cbbd0a5b69251e25eb" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>SetOverflowBBoxes</name></member>
-      <member refid="classvrv_1_1_object_1a70161897776b5acbaf0dddaa1ddd9def" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>SetOverflowBBoxesEnd</name></member>
       <member refid="classvrv_1_1_object_1a9f30aa6a8185b260943003a08980d376" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>SetParent</name></member>
       <member refid="classvrv_1_1_object_1a28b81f899cf3c244799da6f49ae3dd34" prot="public" virt="virtual"><scope>vrv::Doc</scope><name>SetStaffDefRedrawFlags</name></member>
       <member refid="classvrv_1_1_doc_1a37e132213aabf855ee05e8c64488f474" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>SetType</name></member>

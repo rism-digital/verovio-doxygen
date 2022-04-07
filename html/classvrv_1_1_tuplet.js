@@ -19,7 +19,7 @@ var classvrv_1_1_tuplet =
     [ "IsSupportedChild", "classvrv_1_1_tuplet.html#a895dd98a22b0024d37b1f4fbbc5ec6ca", null ],
     [ "PrepareLayerElementParts", "classvrv_1_1_tuplet.html#aa16224b3753d223c2864d5343986534c", null ],
     [ "Reset", "classvrv_1_1_tuplet.html#aad4c98481dc0f4dc718b9f5ed7bd4b99", null ],
-    [ "ResetDrawing", "classvrv_1_1_tuplet.html#ad1dae33b112fb0f646bdc7acfcfad500", null ],
+    [ "ResetData", "classvrv_1_1_tuplet.html#ad40db781233d1b68bf74f965e39aa79c", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_tuplet.html#a6c56e4cdd6c928c51b10e9d6d8cde2f8", null ],
     [ "SetDrawingLeft", "classvrv_1_1_tuplet.html#a2d050b80a40b44ccd524438154666e7a", null ],
     [ "SetDrawingRight", "classvrv_1_1_tuplet.html#aaf98b85f95bd676d7076195991cee839", null ]

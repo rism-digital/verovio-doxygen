@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('iomusxml_8h_source.html',''); initResi
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;pugixml.hpp&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span>Arpeg;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>BeamSpan;</div>
@@ -365,9 +365,9 @@ $(document).ready(function(){initNavTree('iomusxml_8h_source.html',''); initResi
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment">     * For example, when closing a beam, we need to remove it from the stack, but it is not</span></div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">     * necessary the top one (for example we can have an opened chord there).</span></div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">void</span> RemoveLastFromStack(<a class="code" href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">ClassId</a> classId, <a class="code" href="classvrv_1_1_layer.html">Layer</a> *layer);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">void</span> RemoveLastFromStack(ClassId classId, <a class="code" href="classvrv_1_1_layer.html">Layer</a> *layer);</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordtype">bool</span> IsInStack(<a class="code" href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">ClassId</a> classId, <a class="code" href="classvrv_1_1_layer.html">Layer</a> *layer);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordtype">bool</span> IsInStack(ClassId classId, <a class="code" href="classvrv_1_1_layer.html">Layer</a> *layer);</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">     * @name Helper methods for checking presence of values of attributes or elements</span></div>
@@ -468,11 +468,11 @@ $(document).ready(function(){initNavTree('iomusxml_8h_source.html',''); initResi
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="keyword">static</span> data_ARTICULATION ConvertArticulations(<span class="keyword">const</span> std::string &amp;value);</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="keyword">static</span> data_BARRENDITION ConvertStyleToRend(<span class="keyword">const</span> std::string &amp;value, <span class="keyword">const</span> <span class="keywordtype">bool</span> repeat);</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keyword">static</span> data_BOOLEAN ConvertWordToBool(<span class="keyword">const</span> std::string &amp;value);</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keyword">static</span> <a class="code" href="namespacevrv.html#a2bd8f760fccdf76e2f41894ca0431d4e">data_DURATION</a> ConvertTypeToDur(<span class="keyword">const</span> std::string &amp;value);</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keyword">static</span> data_DURATION ConvertTypeToDur(<span class="keyword">const</span> std::string &amp;value);</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keyword">static</span> data_HEADSHAPE ConvertNotehead(<span class="keyword">const</span> std::string &amp;value);</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="keyword">static</span> data_LINESTARTENDSYMBOL ConvertLineEndSymbol(<span class="keyword">const</span> std::string &amp;value);</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keyword">static</span> <a class="code" href="namespacevrv.html#a67e112c2e04934448a03c3c57dd46c69">data_MIDIVALUE</a> ConvertDynamicsToMidiVal(<span class="keyword">const</span> <span class="keywordtype">float</span> dynamics);</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keyword">static</span> <a class="code" href="namespacevrv.html#a8a19df71e38b10ca359d0052d1fdba70">data_PITCHNAME</a> ConvertStepToPitchName(<span class="keyword">const</span> std::string &amp;value);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keyword">static</span> data_MIDIVALUE ConvertDynamicsToMidiVal(<span class="keyword">const</span> <span class="keywordtype">float</span> dynamics);</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keyword">static</span> data_PITCHNAME ConvertStepToPitchName(<span class="keyword">const</span> std::string &amp;value);</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keyword">static</span> data_TEXTRENDITION ConvertEnclosure(<span class="keyword">const</span> std::string &amp;value);</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keyword">static</span> curvature_CURVEDIR InferCurvedir(<span class="keyword">const</span> pugi::xml_node slurOrTie);</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keyword">static</span> fermataVis_SHAPE ConvertFermataShape(<span class="keyword">const</span> std::string &amp;value);</div>
@@ -578,7 +578,6 @@ $(document).ready(function(){initNavTree('iomusxml_8h_source.html',''); initResi
 <div class="ttc" id="aclassvrv_1_1_staff_html"><div class="ttname"><a href="classvrv_1_1_staff.html">vrv::Staff</a></div><div class="ttdoc">This class represents a staff in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> staff.h:36</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html"><div class="ttname"><a href="classvrv_1_1_measure.html">vrv::Measure</a></div><div class="ttdoc">This class represents a measure in a page-based score (Doc).</div><div class="ttdef"><b>Definition:</b> measure.h:36</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:40</div></div>
-<div class="ttc" id="anamespacevrv_html_add6b61c8ada3f79dc1f540fbead73ca5"><div class="ttname"><a href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">vrv::ClassId</a></div><div class="ttdeci">ClassId</div><div class="ttdoc">The ClassIds are used to identify Object child classes through the Object::Is virtual method.</div><div class="ttdef"><b>Definition:</b> vrvdef.h:82</div></div>
 <div class="ttc" id="aclassvrv_1_1_tempo_html"><div class="ttname"><a href="classvrv_1_1_tempo.html">vrv::Tempo</a></div><div class="ttdoc">This class is an interface for &lt;tempo&gt; elements at the measure level.</div><div class="ttdef"><b>Definition:</b> tempo.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_section_html"><div class="ttname"><a href="classvrv_1_1_section.html">vrv::Section</a></div><div class="ttdoc">This class represents a MEI section.</div><div class="ttdef"><b>Definition:</b> section.h:28</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
@@ -589,22 +588,18 @@ $(document).ready(function(){initNavTree('iomusxml_8h_source.html',''); initResi
 <div class="ttc" id="aclassvrv_1_1_clef_html"><div class="ttname"><a href="classvrv_1_1_clef.html">vrv::Clef</a></div><div class="ttdoc">This class models the MEI &lt;clef&gt; element.</div><div class="ttdef"><b>Definition:</b> clef.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_input_html"><div class="ttname"><a href="classvrv_1_1_input.html">vrv::Input</a></div><div class="ttdoc">This class is a base class for input classes.</div><div class="ttdef"><b>Definition:</b> io.h:63</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html"><div class="ttname"><a href="classvrv_1_1_note.html">vrv::Note</a></div><div class="ttdoc">This class models the MEI &lt;note&gt; element.</div><div class="ttdef"><b>Definition:</b> note.h:47</div></div>
-<div class="ttc" id="anamespacevrv_html_a2bd8f760fccdf76e2f41894ca0431d4e"><div class="ttname"><a href="namespacevrv.html#a2bd8f760fccdf76e2f41894ca0431d4e">vrv::data_DURATION</a></div><div class="ttdeci">data_DURATION</div><div class="ttdoc">MEI data.DURATION.</div><div class="ttdef"><b>Definition:</b> attdef.h:99</div></div>
-<div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
 <div class="ttc" id="aclassvrv_1_1_label_html"><div class="ttname"><a href="classvrv_1_1_label.html">vrv::Label</a></div><div class="ttdoc">This class models the MEI &lt;label&gt; element.</div><div class="ttdef"><b>Definition:</b> label.h:22</div></div>
-<div class="ttc" id="anamespacevrv_html_a67e112c2e04934448a03c3c57dd46c69"><div class="ttname"><a href="namespacevrv.html#a67e112c2e04934448a03c3c57dd46c69">vrv::data_MIDIVALUE</a></div><div class="ttdeci">int data_MIDIVALUE</div><div class="ttdoc">MEI data.MIDIVALUE.</div><div class="ttdef"><b>Definition:</b> attdef.h:175</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_key_sig_html"><div class="ttname"><a href="classvrv_1_1_key_sig.html">vrv::KeySig</a></div><div class="ttdoc">This class models the MEI &lt;keySig&gt; element.</div><div class="ttdef"><b>Definition:</b> keysig.h:29</div></div>
 <div class="ttc" id="aclassvrv_1_1_staff_grp_html"><div class="ttname"><a href="classvrv_1_1_staff_grp.html">vrv::StaffGrp</a></div><div class="ttdoc">This class represents a MEI staffGrp.</div><div class="ttdef"><b>Definition:</b> staffgrp.h:31</div></div>
 <div class="ttc" id="aclassvrv_1_1_fermata_html"><div class="ttname"><a href="classvrv_1_1_fermata.html">vrv::Fermata</a></div><div class="ttdoc">This class models the MEI &lt;fermata&gt; element.</div><div class="ttdef"><b>Definition:</b> fermata.h:28</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:43</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html"><div class="ttname"><a href="classvrv_1_1_layer.html">vrv::Layer</a></div><div class="ttdoc">This class represents a layer in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> layer.h:33</div></div>
-<div class="ttc" id="anamespacevrv_html_a8a19df71e38b10ca359d0052d1fdba70"><div class="ttname"><a href="namespacevrv.html#a8a19df71e38b10ca359d0052d1fdba70">vrv::data_PITCHNAME</a></div><div class="ttdeci">data_PITCHNAME</div><div class="ttdoc">MEI data.PITCHNAME.</div><div class="ttdef"><b>Definition:</b> attdef.h:227</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>iomusxml.h</b></li>
-    <li class="footer">Generated on Thu Apr 7 2022 05:47:20 for Verovio by
+    <li class="footer">Generated on Thu Apr 7 2022 07:17:10 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

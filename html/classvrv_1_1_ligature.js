@@ -14,6 +14,6 @@ var classvrv_1_1_ligature =
     [ "HasToBeAligned", "classvrv_1_1_ligature.html#a15f9a61e96129d0a6b8009ee9df62bad", null ],
     [ "IsSupportedChild", "classvrv_1_1_ligature.html#a1c55450510e851184811ea55831f9d49", null ],
     [ "Reset", "classvrv_1_1_ligature.html#a43486ca3783c707d30a22c7403a91d08", null ],
-    [ "ResetDrawing", "classvrv_1_1_ligature.html#aa6c5b80168bf0dd568c226d31828ec51", null ],
+    [ "ResetData", "classvrv_1_1_ligature.html#af977ca7bc1ef0cc54fb7b19666ded037", null ],
     [ "m_drawingShapes", "classvrv_1_1_ligature.html#a3a19dd9f115ed2bde44093767a27ae0f", null ]
 ];

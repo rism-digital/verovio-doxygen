@@ -29,6 +29,6 @@ var classvrv_1_1_slur =
     [ "IsElementBelow", "classvrv_1_1_slur.html#a7fbfc979567160c6269d469cf34e9a57", null ],
     [ "IsElementBelow", "classvrv_1_1_slur.html#af985dd149add242a1d45e5ef3a0c32fa", null ],
     [ "Reset", "classvrv_1_1_slur.html#a44edee9624d0cf10b0e35bd772aca3a5", null ],
-    [ "ResetDrawing", "classvrv_1_1_slur.html#a37fa49f3e56c2b97c6989e7136711baf", null ],
+    [ "ResetData", "classvrv_1_1_slur.html#ae0ece8ff52f33bb4ab86ce72e05807e4", null ],
     [ "SetDrawingCurveDir", "classvrv_1_1_slur.html#aa678637a8f168dce40f8aba74296bbdd", null ]
 ];

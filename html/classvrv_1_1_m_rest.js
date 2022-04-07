@@ -9,6 +9,6 @@ var classvrv_1_1_m_rest =
     [ "GetPositionInterface", "classvrv_1_1_m_rest.html#af78e4b659b7424b0aa8aab7cf9cd870a", null ],
     [ "GetPositionInterface", "classvrv_1_1_m_rest.html#a662dd95ebd8ae31020322902d35014af", null ],
     [ "Reset", "classvrv_1_1_m_rest.html#a0c6e334f7522a021091db8412d0c25c5", null ],
-    [ "ResetDrawing", "classvrv_1_1_m_rest.html#a4d9387deb216ebab33d6c50eb6adb371", null ],
+    [ "ResetData", "classvrv_1_1_m_rest.html#ae6e7db4944eb83dd41eff6b566b19b68", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_m_rest.html#aab189a63aff67bcf552e9d6b5de61e3a", null ]
 ];

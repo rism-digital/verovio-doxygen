@@ -5,7 +5,7 @@ var classvrv_1_1_position_interface =
     [ "CalcDrawingLoc", "classvrv_1_1_position_interface.html#aab1a8c7f3f3fa7fb5680db989030b1db", null ],
     [ "GetDrawingLoc", "classvrv_1_1_position_interface.html#a48e070408ebae29ba2e89806fe4b5ff8", null ],
     [ "HasIdenticalPositionInterface", "classvrv_1_1_position_interface.html#a932d3221b8cd285116ffde54bc7a17e8", null ],
-    [ "InterfaceResetDrawing", "classvrv_1_1_position_interface.html#a1aab8fb785b348dcf88714338863bc78", null ],
+    [ "InterfaceResetData", "classvrv_1_1_position_interface.html#aa9e4cb8b0ec7e2e411efec7f1e634205", null ],
     [ "InterfaceResetHorizontalAlignment", "classvrv_1_1_position_interface.html#ac74c74fcf22d5ae9e9286623353da322", null ],
     [ "IsInterface", "classvrv_1_1_position_interface.html#aca64be02a7dd6b30f996cf4151858a58", null ],
     [ "Reset", "classvrv_1_1_position_interface.html#a424403dca3376b2892efd8989b3ce3c5", null ],

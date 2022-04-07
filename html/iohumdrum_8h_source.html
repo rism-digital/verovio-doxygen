@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('iohumdrum_8h_source.html',''); initRes
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#ifndef NO_HUMDRUM_SUPPORT</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
@@ -721,7 +721,7 @@ $(document).ready(function(){initNavTree('iohumdrum_8h_source.html',''); initRes
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <span class="keywordtype">void</span> setGroupSymbol(<a class="code" href="classvrv_1_1_staff_grp.html">StaffGrp</a> *sg, staffGroupingSym_SYMBOL symbol);</div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    std::string getInstrumentName(<a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *sd);</div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    std::string getInstrumentAbbreviation(<a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *sd);</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    std::string getInstrumentClass(hum::HTp <a class="code" href="namespacevrv.html#a6d72123cd6ebf618e20b2b5d4a77c48a">start</a>);</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    std::string getInstrumentClass(hum::HTp start);</div>
 <div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <span class="keywordtype">void</span> removeInstrumentName(<a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *sd);</div>
 <div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="keywordtype">void</span> removeInstrumentAbbreviation(<a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *sd);</div>
 <div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    std::string getEndIdForOttava(hum::HTp token);</div>
@@ -757,8 +757,8 @@ $(document).ready(function(){initNavTree('iohumdrum_8h_source.html',''); initRes
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    hum::HumNum getLeftNoteDuration(hum::HTp token);</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;    <span class="keywordtype">void</span> checkClefBufferForSameAs();</div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    <span class="keywordtype">void</span> suppressBufferedClef(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    <span class="keywordtype">void</span> addExplicitStemDirection(<a class="code" href="classvrv_1_1_f_trem.html">FTrem</a> *ftrem, hum::HTp <a class="code" href="namespacevrv.html#a6d72123cd6ebf618e20b2b5d4a77c48a">start</a>);</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    <span class="keywordtype">void</span> addSlur(<a class="code" href="classvrv_1_1_f_trem.html">FTrem</a> *ftrem, hum::HTp <a class="code" href="namespacevrv.html#a6d72123cd6ebf618e20b2b5d4a77c48a">start</a>, hum::HTp ending);</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    <span class="keywordtype">void</span> addExplicitStemDirection(<a class="code" href="classvrv_1_1_f_trem.html">FTrem</a> *ftrem, hum::HTp start);</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    <span class="keywordtype">void</span> addSlur(<a class="code" href="classvrv_1_1_f_trem.html">FTrem</a> *ftrem, hum::HTp start, hum::HTp ending);</div>
 <div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <span class="keywordtype">void</span> addFTremSlurs();</div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    std::vector&lt;int&gt; getStaffNumbers(std::string &amp;deco);</div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    <span class="keywordtype">int</span> insertRepetitionElement(</div>
@@ -1220,9 +1220,7 @@ $(document).ready(function(){initNavTree('iohumdrum_8h_source.html',''); initRes
 <div class="ttc" id="aclassvrv_1_1_beam_html"><div class="ttname"><a href="classvrv_1_1_beam.html">vrv::Beam</a></div><div class="ttdef"><b>Definition:</b> beam.h:253</div></div>
 <div class="ttc" id="aclassvrv_1_1_humdrum_input_html_aeab1fa55b027b749bece352ef47b8ed3"><div class="ttname"><a href="classvrv_1_1_humdrum_input.html#aeab1fa55b027b749bece352ef47b8ed3">vrv::HumdrumInput::verticalRest</a></div><div class="ttdeci">void verticalRest(ELEMENT rest, const std::string &amp;token)</div><div class="ttdoc">Templates ///////////////////////////////////////////////////////////.</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html"><div class="ttname"><a href="classvrv_1_1_note.html">vrv::Note</a></div><div class="ttdoc">This class models the MEI &lt;note&gt; element.</div><div class="ttdef"><b>Definition:</b> note.h:47</div></div>
-<div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
 <div class="ttc" id="aclassvrv_1_1_label_html"><div class="ttname"><a href="classvrv_1_1_label.html">vrv::Label</a></div><div class="ttdoc">This class models the MEI &lt;label&gt; element.</div><div class="ttdef"><b>Definition:</b> label.h:22</div></div>
-<div class="ttc" id="anamespacevrv_html_a6d72123cd6ebf618e20b2b5d4a77c48a"><div class="ttname"><a href="namespacevrv.html#a6d72123cd6ebf618e20b2b5d4a77c48a">vrv::start</a></div><div class="ttdeci">struct timeval start</div><div class="ttdoc">Functions for logging in milliseconds the elapsed time of an operation (for debugging purposes).</div></div>
 <div class="ttc" id="aclassvrv_1_1_beat_rpt_html"><div class="ttname"><a href="classvrv_1_1_beat_rpt.html">vrv::BeatRpt</a></div><div class="ttdoc">This class models the MEI &lt;beatRpt&gt; element.</div><div class="ttdef"><b>Definition:</b> beatrpt.h:25</div></div>
 <div class="ttc" id="aclassvrv_1_1_humdrum_input_html_a3a9cb0e5cf601ccbe32c261cd96b5ab0"><div class="ttname"><a href="classvrv_1_1_humdrum_input.html#a3a9cb0e5cf601ccbe32c261cd96b5ab0">vrv::HumdrumInput::unescapeHtmlEntities</a></div><div class="ttdeci">static std::string unescapeHtmlEntities(const std::string &amp;input)</div><div class="ttdoc">Static functions ////////////////////////////////////////////////////.</div></div>
 <div class="ttc" id="aclassvrv_1_1_score_def_html"><div class="ttname"><a href="classvrv_1_1_score_def.html">vrv::ScoreDef</a></div><div class="ttdoc">This class represents a MEI scoreDef.</div><div class="ttdef"><b>Definition:</b> scoredef.h:121</div></div>
@@ -1237,7 +1235,7 @@ $(document).ready(function(){initNavTree('iohumdrum_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>iohumdrum.h</b></li>
-    <li class="footer">Generated on Thu Apr 7 2022 05:47:20 for Verovio by
+    <li class="footer">Generated on Thu Apr 7 2022 07:17:10 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

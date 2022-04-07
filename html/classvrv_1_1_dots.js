@@ -11,7 +11,7 @@ var classvrv_1_1_dots =
     [ "IsAdjusted", "classvrv_1_1_dots.html#a33efd48a0e3749e267bda9e4d0a3c09d", null ],
     [ "ModifyDotLocsForStaff", "classvrv_1_1_dots.html#a0ac238b940031ab3e2453396306b8268", null ],
     [ "Reset", "classvrv_1_1_dots.html#ae6d3d7af0586a8741c9af93c6f65b62b", null ],
-    [ "ResetDrawing", "classvrv_1_1_dots.html#a06fe2b43ff27cf920902fe752ddc558d", null ],
+    [ "ResetData", "classvrv_1_1_dots.html#a2ebf5265ade1750fa6eb58634e2ad764", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_dots.html#ac01e36acda521a911904f3c2d96d5d28", null ],
     [ "Save", "classvrv_1_1_dots.html#a2d29e04a070b61455c3d615ca6e94855", null ],
     [ "SaveEnd", "classvrv_1_1_dots.html#a55b7ec936f65d9e33f9e0d9cece3dddb", null ],

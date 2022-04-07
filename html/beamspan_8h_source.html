@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('beamspan_8h_source.html',''); initResi
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;plistinterface.h&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;timeinterface.h&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>Layer;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>Staff;</div>
@@ -155,9 +155,9 @@ $(document).ready(function(){initNavTree('beamspan_8h_source.html',''); initResi
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_span.html#a06352e0c8471427a87c54c26ef3f3367">CalcStem</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_span.html#a0d3fa27a54aa9603719145966f6415d1">ResolveBeamSpanElements</a>(FunctorParams *) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_span.html#a07aba3ae9755917d937d59f87637ca87">PrepareBeamSpanElements</a>(FunctorParams *) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_span.html#a648f1e5b1086cb7628962b800dbd19e7">ResolveSpanningBeamSpans</a>(FunctorParams *) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_span.html#a1401b8046896552abf622d146293532e">CalcSpanningBeamSpans</a>(FunctorParams *) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">// Helper for breaking one big spanning beamSpan into smaller beamSpans</span></div>
@@ -182,22 +182,21 @@ $(document).ready(function(){initNavTree('beamspan_8h_source.html',''); initResi
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_beam_span_html"><div class="ttname"><a href="classvrv_1_1_beam_span.html">vrv::BeamSpan</a></div><div class="ttdoc">This class models the MEI &lt;beamSpan&gt; element.</div><div class="ttdef"><b>Definition:</b> beamspan.h:31</div></div>
-<div class="ttc" id="aclassvrv_1_1_beam_span_html_a0d3fa27a54aa9603719145966f6415d1"><div class="ttname"><a href="classvrv_1_1_beam_span.html#a0d3fa27a54aa9603719145966f6415d1">vrv::BeamSpan::ResolveBeamSpanElements</a></div><div class="ttdeci">int ResolveBeamSpanElements(FunctorParams *) override</div><div class="ttdoc">See Object::ResolveBeamSpanElements.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
+<div class="ttc" id="aclassvrv_1_1_beam_span_html_a07aba3ae9755917d937d59f87637ca87"><div class="ttname"><a href="classvrv_1_1_beam_span.html#a07aba3ae9755917d937d59f87637ca87">vrv::BeamSpan::PrepareBeamSpanElements</a></div><div class="ttdeci">int PrepareBeamSpanElements(FunctorParams *) override</div><div class="ttdoc">See Object::PrepareBeamSpanElements.</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_span_html_a517b985b3f088f8694392afde8f48d00"><div class="ttname"><a href="classvrv_1_1_beam_span.html#a517b985b3f088f8694392afde8f48d00">vrv::BeamSpan::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> beamspan.h:49</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_span_html_a06352e0c8471427a87c54c26ef3f3367"><div class="ttname"><a href="classvrv_1_1_beam_span.html#a06352e0c8471427a87c54c26ef3f3367">vrv::BeamSpan::CalcStem</a></div><div class="ttdeci">int CalcStem(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CalcStem.</div></div>
-<div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_drawing_interface_html"><div class="ttname"><a href="classvrv_1_1_beam_drawing_interface.html">vrv::BeamDrawingInterface</a></div><div class="ttdoc">This class is an interface for MEI beam elements (beam, beamSpan).</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:85</div></div>
-<div class="ttc" id="aclassvrv_1_1_beam_span_html_a648f1e5b1086cb7628962b800dbd19e7"><div class="ttname"><a href="classvrv_1_1_beam_span.html#a648f1e5b1086cb7628962b800dbd19e7">vrv::BeamSpan::ResolveSpanningBeamSpans</a></div><div class="ttdeci">int ResolveSpanningBeamSpans(FunctorParams *) override</div><div class="ttdoc">See Object::ResolveSpanningBeamSpans.</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_span_html_a908f6fced35e8798d9b229d8fe08f5e3"><div class="ttname"><a href="classvrv_1_1_beam_span.html#a908f6fced35e8798d9b229d8fe08f5e3">vrv::BeamSpan::ResetHorizontalAlignment</a></div><div class="ttdeci">int ResetHorizontalAlignment(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetHorizontalAlignment.</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_plist_interface_html"><div class="ttname"><a href="classvrv_1_1_plist_interface.html">vrv::PlistInterface</a></div><div class="ttdoc">This class is an interface for elements having a single time point, such as tempo,...</div><div class="ttdef"><b>Definition:</b> plistinterface.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html">vrv::TimeSpanningInterface</a></div><div class="ttdoc">This class is an interface for spanning elements, such as slur, hairpin, etc.</div><div class="ttdef"><b>Definition:</b> timeinterface.h:141</div></div>
+<div class="ttc" id="aclassvrv_1_1_beam_span_html_a1401b8046896552abf622d146293532e"><div class="ttname"><a href="classvrv_1_1_beam_span.html#a1401b8046896552abf622d146293532e">vrv::BeamSpan::CalcSpanningBeamSpans</a></div><div class="ttdeci">int CalcSpanningBeamSpans(FunctorParams *) override</div><div class="ttdoc">See Object::CalcSpanningBeamSpans.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>beamspan.h</b></li>
-    <li class="footer">Generated on Thu Apr 7 2022 05:47:19 for Verovio by
+    <li class="footer">Generated on Thu Apr 7 2022 07:17:10 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

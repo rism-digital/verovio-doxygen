@@ -91,7 +91,7 @@
         <location file="/home/runner/work/verovio/verovio/include/vrv/linkinginterface.h" line="37" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_linking_interface_1ad1a3839eaa143c325b741151e7f9b084" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="namespacevrv_1ac7221611975ee29efd00f36d5f3241ed" kindref="member">InterfaceId</ref></type>
+        <type>InterfaceId</type>
         <definition>InterfaceId vrv::LinkingInterface::IsInterface</definition>
         <argsstring>() const override</argsstring>
         <name>IsInterface</name>
@@ -270,11 +270,11 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/linkinginterface.h" line="63" column="13"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_linking_interface_1aee68cd0a552aa59e75868977acadc660" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_linking_interface_1ae2cf862874c1822f6d53ddb2de573c02" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
-        <definition>virtual int vrv::LinkingInterface::InterfaceFillStaffCurrentTimeSpanning</definition>
+        <definition>virtual int vrv::LinkingInterface::InterfacePrepareStaffCurrentTimeSpanning</definition>
         <argsstring>(FunctorParams *functorParams, Object *object)</argsstring>
-        <name>InterfaceFillStaffCurrentTimeSpanning</name>
+        <name>InterfacePrepareStaffCurrentTimeSpanning</name>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
           <declname>functorParams</declname>
@@ -287,7 +287,7 @@
 <para>We have functor in the interface for avoiding code duplication in each implementation class. </para>
         </briefdescription>
         <detaileddescription>
-<para>Since we are in an interface, we need to pass the <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> (implementation) to the functor method. These not called by the Process/Call loop but by the implementaion classes explicitely. See <ref refid="classvrv_1_1_floating_object_1a63b8dc8ca0b4943fe59552e75bd88347" kindref="member">FloatingObject::FillStaffCurrentTimeSpanning</ref> for an example. See <ref refid="classvrv_1_1_object_1a75266bd3b8cdd0db529367a5f9f16450" kindref="member">Object::FillStaffCurrentTimeSpanning</ref> </para>
+<para>Since we are in an interface, we need to pass the <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> (implementation) to the functor method. These not called by the Process/Call loop but by the implementaion classes explicitely. See <ref refid="classvrv_1_1_floating_object_1ae538ce4c774260f2e1a5bbb302e26fc3" kindref="member">FloatingObject::PrepareStaffCurrentTimeSpanning</ref> for an example. See <ref refid="classvrv_1_1_object_1af318c3c89b9f41e392b18fca68656546" kindref="member">Object::PrepareStaffCurrentTimeSpanning</ref> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -315,11 +315,11 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/linkinginterface.h" line="84" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_linking_interface_1af59163d72892c1582eeb6a9df7924b83" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_linking_interface_1a844644245db209bd156e09b4a22e2726" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
-        <definition>virtual int vrv::LinkingInterface::InterfaceResetDrawing</definition>
+        <definition>virtual int vrv::LinkingInterface::InterfaceResetData</definition>
         <argsstring>(FunctorParams *functorParams, Object *object)</argsstring>
-        <name>InterfaceResetDrawing</name>
+        <name>InterfaceResetData</name>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
           <declname>functorParams</declname>
@@ -329,7 +329,7 @@
           <declname>object</declname>
         </param>
         <briefdescription>
-<para>See <ref refid="classvrv_1_1_object_1a69ad18810d5249e8bb56be54884d2b50" kindref="member">Object::ResetDrawing</ref>. </para>
+<para>See <ref refid="classvrv_1_1_object_1a810bab1b8cdb43737577d2d4aa9f00cb" kindref="member">Object::ResetData</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -834,9 +834,9 @@
       <member refid="classvrv_1_1_linking_interface_1a634bea817c5bf3e1c4e537a9d3165a63" prot="public" virt="non-virtual"><scope>vrv::LinkingInterface</scope><name>HasNextLink</name></member>
       <member refid="classvrv_1_1_linking_interface_1adf9fe3c7fa532723cd218c5258597c4e" prot="public" virt="non-virtual"><scope>vrv::LinkingInterface</scope><name>HasSameasLink</name></member>
       <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual"><scope>vrv::LinkingInterface</scope><name>Interface</name></member>
-      <member refid="classvrv_1_1_linking_interface_1aee68cd0a552aa59e75868977acadc660" prot="public" virt="virtual"><scope>vrv::LinkingInterface</scope><name>InterfaceFillStaffCurrentTimeSpanning</name></member>
       <member refid="classvrv_1_1_linking_interface_1a05da99de05024b8ff9287f1027aa55db" prot="public" virt="virtual"><scope>vrv::LinkingInterface</scope><name>InterfacePrepareLinking</name></member>
-      <member refid="classvrv_1_1_linking_interface_1af59163d72892c1582eeb6a9df7924b83" prot="public" virt="virtual"><scope>vrv::LinkingInterface</scope><name>InterfaceResetDrawing</name></member>
+      <member refid="classvrv_1_1_linking_interface_1ae2cf862874c1822f6d53ddb2de573c02" prot="public" virt="virtual"><scope>vrv::LinkingInterface</scope><name>InterfacePrepareStaffCurrentTimeSpanning</name></member>
+      <member refid="classvrv_1_1_linking_interface_1a844644245db209bd156e09b4a22e2726" prot="public" virt="virtual"><scope>vrv::LinkingInterface</scope><name>InterfaceResetData</name></member>
       <member refid="classvrv_1_1_linking_interface_1ad1a3839eaa143c325b741151e7f9b084" prot="public" virt="virtual"><scope>vrv::LinkingInterface</scope><name>IsInterface</name></member>
       <member refid="classvrv_1_1_linking_interface_1ab0344fae147aef801bfca24e6dd1f016" prot="public" virt="non-virtual"><scope>vrv::LinkingInterface</scope><name>LinkingInterface</name></member>
       <member refid="classvrv_1_1_linking_interface_1a9bd6902a9bc2ae8152ffa3c79155617b" prot="private" virt="non-virtual"><scope>vrv::LinkingInterface</scope><name>m_next</name></member>

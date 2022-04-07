@@ -17,7 +17,7 @@ var classvrv_1_1_accid =
     [ "IsAlignedWithSameLayer", "classvrv_1_1_accid.html#a9bee4011667bfd5ff22541ca7151573c", null ],
     [ "IsRelativeToStaff", "classvrv_1_1_accid.html#ae2550b09c4f89c0b902b8e81130a8df0", null ],
     [ "Reset", "classvrv_1_1_accid.html#a7999212141783ba58dee1b18585c54fe", null ],
-    [ "ResetDrawing", "classvrv_1_1_accid.html#a03f0ed73ecd983529d2e660d4286abaa", null ],
+    [ "ResetData", "classvrv_1_1_accid.html#a2d5d4b4d7130b639bb2bdc2e50d33b46", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_accid.html#a718aba950d2c110af324f9356ab1ec4a", null ],
     [ "SetDrawingOctave", "classvrv_1_1_accid.html#a4cb3352991cd14e4289e0a4c71c247ee", null ],
     [ "SetDrawingOctaveAccid", "classvrv_1_1_accid.html#a7f576b52c610c48fbe26aeb7fa5c86e1", null ],

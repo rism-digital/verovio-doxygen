@@ -16,7 +16,7 @@ var classvrv_1_1_hairpin =
     [ "HasDrawingLength", "classvrv_1_1_hairpin.html#a87330b6512ff1919650f5806a9ecc25e", null ],
     [ "PrepareFloatingGrps", "classvrv_1_1_hairpin.html#ac72b184ba2e260f5cba66f27644a40c6", null ],
     [ "Reset", "classvrv_1_1_hairpin.html#aa99fa27d4b30d321a5747ca1775a0fa0", null ],
-    [ "ResetDrawing", "classvrv_1_1_hairpin.html#aaaa9b6da7da785772e9716d6efb8fcc0", null ],
+    [ "ResetData", "classvrv_1_1_hairpin.html#a2241571dc5eda208b8ec99c65bf3717a", null ],
     [ "SetDrawingLength", "classvrv_1_1_hairpin.html#ae477fc0bfa9959649302af9a5ca8e6f4", null ],
     [ "SetLeftLink", "classvrv_1_1_hairpin.html#a2faa176a3935b0de87496ca408ee5739", null ],
     [ "SetRightLink", "classvrv_1_1_hairpin.html#a0cc26c17205efeaf7d4e01a93bbbb7f2", null ]

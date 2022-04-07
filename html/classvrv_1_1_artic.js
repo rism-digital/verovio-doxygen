@@ -20,7 +20,7 @@ var classvrv_1_1_artic =
     [ "IsOutsideArtic", "classvrv_1_1_artic.html#a71697eeca9129013c0fc4cf92ec7ddf6", null ],
     [ "IsRelativeToStaff", "classvrv_1_1_artic.html#a7d98b5d8964b7b768cc3627b0860c276", null ],
     [ "Reset", "classvrv_1_1_artic.html#aa81d87ff6bc9f849b4c695340c488ad3", null ],
-    [ "ResetDrawing", "classvrv_1_1_artic.html#a2d3d8e19fc2cd8f7f5f5265f5c429508", null ],
+    [ "ResetData", "classvrv_1_1_artic.html#a1165af25fc2b6f9296cd31d353b50523", null ],
     [ "ResetVerticalAlignment", "classvrv_1_1_artic.html#a775b0d8742be325b3619d78ea91b26fe", null ],
     [ "SplitArtic", "classvrv_1_1_artic.html#ab6b401bb7dfd502eccd21bf9614bc905", null ],
     [ "SplitMultival", "classvrv_1_1_artic.html#ac7bf2f16b9558129980adb1c29b6b0c2", null ],

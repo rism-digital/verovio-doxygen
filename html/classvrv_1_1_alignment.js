@@ -12,6 +12,7 @@ var classvrv_1_1_alignment =
     [ "AdjustGraceXPosEnd", "classvrv_1_1_alignment.html#a5e4f7bbe65ffc7f45ddee4234bc50fb6", null ],
     [ "AdjustXPos", "classvrv_1_1_alignment.html#acb04477511fbe245df895f010bb6dd5e", null ],
     [ "AdjustXPosEnd", "classvrv_1_1_alignment.html#ac45d33fe6354e482173d5daddd3f4b44", null ],
+    [ "CalcAlignmentXPos", "classvrv_1_1_alignment.html#a1c8be8cafb2f9d374ad855c224f54113", null ],
     [ "ClearGraceAligners", "classvrv_1_1_alignment.html#a69dbbfa23611f87db7df6c03a26e52a9", null ],
     [ "GetAlignmentTopBottom", "classvrv_1_1_alignment.html#a0d0a0f0b03ae0a91009f7964b2b1d0ea", null ],
     [ "GetGraceAligner", "classvrv_1_1_alignment.html#ae806f6c44d2251c5adf385d21d22e2be", null ],
@@ -31,7 +32,6 @@ var classvrv_1_1_alignment =
     [ "JustifyX", "classvrv_1_1_alignment.html#a2215302c810f28dda3a2e7fafeeb1531", null ],
     [ "PerformBoundingBoxAlignment", "classvrv_1_1_alignment.html#afb339241a9493a380e64c673f8adca84", null ],
     [ "Reset", "classvrv_1_1_alignment.html#ad43591d11620170af7123f2e6ccc18e2", null ],
-    [ "SetAlignmentXPos", "classvrv_1_1_alignment.html#aa9f7556be32981c38246d17c2b45a07b", null ],
     [ "SetTime", "classvrv_1_1_alignment.html#a51972727e9ef02059b5d6aa4718de290", null ],
     [ "SetType", "classvrv_1_1_alignment.html#aa5ca7ecc63865e44151b4331faf43a05", null ],
     [ "SetXRel", "classvrv_1_1_alignment.html#ace45fe11ad8e9befcdaea18ecc2cf5ca", null ]

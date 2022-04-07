@@ -20,7 +20,7 @@ var classvrv_1_1_rest =
     [ "IsSupportedChild", "classvrv_1_1_rest.html#a440179df00a09ea5e7892e0c5eff5695", null ],
     [ "PrepareLayerElementParts", "classvrv_1_1_rest.html#a0c50fc33ac92d7010f620b1a9e16aa64", null ],
     [ "Reset", "classvrv_1_1_rest.html#a5ecc39383af3006f31d2bcb0d7b09fac", null ],
-    [ "ResetDrawing", "classvrv_1_1_rest.html#ad88f904d0b2d59152fa555e3e5a2cab5", null ],
+    [ "ResetData", "classvrv_1_1_rest.html#a467cb2ae236cebcb5f57c3a244dce142", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_rest.html#a1bf0280c30f15c09920b7a83e15a0e23", null ],
     [ "Transpose", "classvrv_1_1_rest.html#a740e6d9dd93f4cbeec21aaeed6eed18d", null ]
 ];

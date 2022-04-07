@@ -16,7 +16,7 @@ var classvrv_1_1_f_trem =
     [ "GetFloatingBeamCount", "classvrv_1_1_f_trem.html#acd5a1a4e0505f99639607998d30ed30d", null ],
     [ "IsSupportedChild", "classvrv_1_1_f_trem.html#a0b6824def2f272ae4b6efe6211ee8584", null ],
     [ "Reset", "classvrv_1_1_f_trem.html#a1c3715067dc8befc17b4172c76d3d3dc", null ],
-    [ "ResetDrawing", "classvrv_1_1_f_trem.html#aa7e1f7ac06d00f04e06b7c0628be10f0", null ],
+    [ "ResetData", "classvrv_1_1_f_trem.html#a0a037e0b0579cf212d7c2fcafd9d82bd", null ],
     [ "SetElementShortening", "classvrv_1_1_f_trem.html#a00d6684b07e0ea53867fb915a77a1a41", null ],
     [ "m_beamSegment", "classvrv_1_1_f_trem.html#a2d92c62158abae23f39aa4656b20a509", null ]
 ];

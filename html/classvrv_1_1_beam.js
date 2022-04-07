@@ -18,7 +18,7 @@ var classvrv_1_1_beam =
     [ "IsSupportedChild", "classvrv_1_1_beam.html#a2222ff99c31c7384fc4e3c6dff08b47a", null ],
     [ "IsTabBeam", "classvrv_1_1_beam.html#a26f7b2d176314772a13b06ec15d23758", null ],
     [ "Reset", "classvrv_1_1_beam.html#a8e2ee9ef2db29335c50410da804a5fe2", null ],
-    [ "ResetDrawing", "classvrv_1_1_beam.html#a502a5b8ca0fadc648a3f017a19310cc9", null ],
+    [ "ResetData", "classvrv_1_1_beam.html#a3d37072cbcaf7ee26ecac413f6538530", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_beam.html#a0b5295a70f7c90a356219bef2dd87d7b", null ],
     [ "SetElementShortening", "classvrv_1_1_beam.html#ace52578a0183bd8725abe2c07e92d77a", null ],
     [ "SetStemSameasBeam", "classvrv_1_1_beam.html#a5b4cdbe83e08d709c5202e222e5090bf", null ],

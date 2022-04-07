@@ -1,11 +1,15 @@
 var searchData=
 [
-  ['deactiveateselection_1803',['DeactiveateSelection',['../classvrv_1_1_doc.html#ae0ebee5a808c3397d3f111c6f4a2ac4d',1,'vrv::Doc']]],
-  ['delete_1804',['Delete',['../classvrv_1_1_editor_toolkit_c_m_n.html#a0e3b26992317a6ce3168dee3849ab9e8',1,'vrv::EditorToolkitCMN']]],
-  ['deletechild_1805',['DeleteChild',['../classvrv_1_1_object.html#aa24fba8bae1f0876567f564f98020966',1,'vrv::Object']]],
-  ['detachchild_1806',['DetachChild',['../classvrv_1_1_object.html#ac846569894fc8b08083e5a8526ba5834',1,'vrv::Object']]],
-  ['drawcurrentpage_1807',['DrawCurrentPage',['../classvrv_1_1_view.html#a1ab1a369039358ad7b6440c62b442ceb',1,'vrv::View']]],
-  ['drawingisvisible_1808',['DrawingIsVisible',['../classvrv_1_1_staff.html#abb9be0b494c5daf6344dccdbfb657a55',1,'vrv::Staff']]],
-  ['drawmetersigfigures_1809',['DrawMeterSigFigures',['../classvrv_1_1_view.html#aa655040c3577f02e209269f860437c7d',1,'vrv::View']]],
-  ['drawplaceholder_1810',['DrawPlaceholder',['../classvrv_1_1_b_box_device_context.html#aecb9534cc060d29f5ce315ce6c252ad4',1,'vrv::BBoxDeviceContext::DrawPlaceholder()'],['../classvrv_1_1_device_context.html#a98b03a16d2a3ead9ac3d7e3bafe2490d',1,'vrv::DeviceContext::DrawPlaceholder()']]]
+  ['edit_1778',['Edit',['../classvrv_1_1_toolkit.html#a25adbe86763cca1c51603b9e4c4831f3',1,'vrv::Toolkit']]],
+  ['editinfo_1779',['EditInfo',['../classvrv_1_1_editor_toolkit.html#a1be064ecb6ffea1b27712648a19e1312',1,'vrv::EditorToolkit::EditInfo()'],['../classvrv_1_1_editor_toolkit_c_m_n.html#a8cfefe067438281e92d6e4a3fe92b851',1,'vrv::EditorToolkitCMN::EditInfo()'],['../classvrv_1_1_editor_toolkit_neume.html#af12a007a759c5fbc0d4308d384cf3545',1,'vrv::EditorToolkitNeume::EditInfo()'],['../classvrv_1_1_toolkit.html#a369f22c61679d97bdd05c0689d6f0a44',1,'vrv::Toolkit::EditInfo()']]],
+  ['encloses_1780',['Encloses',['../classvrv_1_1_bounding_box.html#a52ac837dc797c5f292c98ddb3f43a098',1,'vrv::BoundingBox']]],
+  ['enclosestime_1781',['EnclosesTime',['../classvrv_1_1_measure.html#a7fe08d9e1f4a7ee4f783b2b389553b83',1,'vrv::Measure']]],
+  ['estimatejustificationratio_1782',['EstimateJustificationRatio',['../classvrv_1_1_system.html#a0a4b3490953e74ee2bc3e716a1ab6fb2',1,'vrv::System']]],
+  ['expand_1783',['Expand',['../classvrv_1_1_expansion_map.html#a6d7e1ba46f890038bb1094b0a4e5620b',1,'vrv::ExpansionMap']]],
+  ['expandexpansions_1784',['ExpandExpansions',['../classvrv_1_1_doc.html#a69237ae834ae8fc6fc6b1255f0b1e2cc',1,'vrv::Doc']]],
+  ['export_1785',['Export',['../classvrv_1_1_m_e_i_output.html#a28a5600705fbc7516e46d77b3a7611cb',1,'vrv::MEIOutput::Export()'],['../classvrv_1_1_p_a_e_output.html#a77feed5ebe37df0bedfc96632f15712d',1,'vrv::PAEOutput::Export()']]],
+  ['exportfeatures_1786',['ExportFeatures',['../classvrv_1_1_doc.html#a6e47232f8eef26473e867f4d2f96701c',1,'vrv::Doc']]],
+  ['exportmidi_1787',['ExportMIDI',['../classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5',1,'vrv::Doc']]],
+  ['exporttimemap_1788',['ExportTimemap',['../classvrv_1_1_doc.html#aa8808429c70b8fd2756dd9634671789c',1,'vrv::Doc']]],
+  ['extract_1789',['Extract',['../classvrv_1_1_feature_extractor.html#a4423a8c50b18855e5d903c5a357d90f0',1,'vrv::FeatureExtractor']]]
 ];
