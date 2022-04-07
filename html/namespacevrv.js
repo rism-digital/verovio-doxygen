@@ -305,6 +305,7 @@ var namespacevrv =
     [ "Sic", "classvrv_1_1_sic.html", "classvrv_1_1_sic" ],
     [ "Slur", "classvrv_1_1_slur.html", "classvrv_1_1_slur" ],
     [ "Space", "classvrv_1_1_space.html", "classvrv_1_1_space" ],
+    [ "SpannedElements", "structvrv_1_1_spanned_elements.html", "structvrv_1_1_spanned_elements" ],
     [ "SpanningToComparison", "classvrv_1_1_spanning_to_comparison.html", "classvrv_1_1_spanning_to_comparison" ],
     [ "Staff", "classvrv_1_1_staff.html", "classvrv_1_1_staff" ],
     [ "StaffAlignment", "classvrv_1_1_staff_alignment.html", "classvrv_1_1_staff_alignment" ],

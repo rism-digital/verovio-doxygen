@@ -39,7 +39,6 @@ var classvrv_1_1_measure =
     [ "EnclosesTime", "classvrv_1_1_measure.html#a7fe08d9e1f4a7ee4f783b2b389553b83", null ],
     [ "FillStaffCurrentTimeSpanningEnd", "classvrv_1_1_measure.html#aa332b0b6a571ccea41e88ce42da500c4", null ],
     [ "FindSpannedLayerElements", "classvrv_1_1_measure.html#afa41f7d6ed2d7a483b2d4fe024ecdf26", null ],
-    [ "FindSpannedLayerElementsEnd", "classvrv_1_1_measure.html#a4c664129f8a08e59e1fee48dd7e1beb2", null ],
     [ "GenerateMIDI", "classvrv_1_1_measure.html#a5947d2e09adb3e9b23850c1b84a50b94", null ],
     [ "GenerateTimemap", "classvrv_1_1_measure.html#a0403180f17b62775fbf85df2a92fe62a", null ],
     [ "GetBottomVisibleStaff", "classvrv_1_1_measure.html#aebb30d801973e472dade538e89a1ee93", null ],
