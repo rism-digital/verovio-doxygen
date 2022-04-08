@@ -36,7 +36,7 @@ var classvrv_1_1_chord =
     [ "GetYExtremes", "classvrv_1_1_chord.html#aa2eb098db501191ccbc5aa530c6b486b", null ],
     [ "GetYTop", "classvrv_1_1_chord.html#acdeba8547ecd0d921bcfe7c603deae00", null ],
     [ "HasAdjacentNotesInStaff", "classvrv_1_1_chord.html#a97612e7dbc1589c45b0f56d337a20174", null ],
-    [ "HasCrossStaff", "classvrv_1_1_chord.html#a53c3538256b587ed7471a977f9091a05", null ],
+    [ "HasCrossStaff", "classvrv_1_1_chord.html#a98098fbad2f5db6d24719b07e1d2e62e", null ],
     [ "HasNoteWithDots", "classvrv_1_1_chord.html#a9de31be09e892bc0f2ee30e52e44307c", null ],
     [ "HasToBeAligned", "classvrv_1_1_chord.html#a817274133e13ef710a089fd19881e8d0", null ],
     [ "InitOnsetOffsetEnd", "classvrv_1_1_chord.html#affae3a2ed2ea400e7e8588eed23878db", null ],

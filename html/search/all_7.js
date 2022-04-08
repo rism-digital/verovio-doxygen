@@ -10,7 +10,7 @@ var searchData=
   ['hasanchor_626',['HasAnchor',['../classvrv_1_1_glyph.html#a750cef767d991834f93391bb5f33ae6e',1,'vrv::Glyph']]],
   ['hasattribute_627',['HasAttribute',['../classvrv_1_1_object.html#a07880f4ad709e37ca6b5483110905383',1,'vrv::Object']]],
   ['hascachedhorizontallayout_628',['HasCachedHorizontalLayout',['../classvrv_1_1_measure.html#a5a45b03920fff1323cfca86c78f58db6',1,'vrv::Measure']]],
-  ['hascrossstaff_629',['HasCrossStaff',['../classvrv_1_1_chord.html#a53c3538256b587ed7471a977f9091a05',1,'vrv::Chord']]],
+  ['hascrossstaff_629',['HasCrossStaff',['../classvrv_1_1_chord.html#a98098fbad2f5db6d24719b07e1d2e62e',1,'vrv::Chord::HasCrossStaff()'],['../classvrv_1_1_layer_element.html#a465be94711974a0588ded199e22f3ac9',1,'vrv::LayerElement::HasCrossStaff()']]],
   ['hascrossstaffelements_630',['HasCrossStaffElements',['../classvrv_1_1_alignment_reference.html#ae5049f7ae4cf1d11748f309dd1c81bbe',1,'vrv::AlignmentReference']]],
   ['hasdescendant_631',['HasDescendant',['../classvrv_1_1_object.html#a32d88cd25d424a5c15b014efe736ee20',1,'vrv::Object']]],
   ['haseditorialcontent_632',['HasEditorialContent',['../classvrv_1_1_object.html#ac9dd387934b8960b47b96a0c05bb1b84',1,'vrv::Object']]],
