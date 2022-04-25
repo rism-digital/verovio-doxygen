@@ -1,9 +1,10 @@
 var NAVTREEINDEX3 =
 {
 "classvrv_1_1_bezier_curve.html#adf4d62afd9f95e86acd1378b4461911d":[1,0,0,55,2],
-"classvrv_1_1_bezier_curve.html#af2143b1e47bb6bddb3e12e46bd9be5cc":[1,0,0,55,15],
-"classvrv_1_1_bezier_curve.html#af6115bc02a6de431f2464c07b7451940":[1,0,0,55,4],
-"classvrv_1_1_bezier_curve.html#af6342bca1de3582ad422da961d1824d0":[1,0,0,55,12],
+"classvrv_1_1_bezier_curve.html#af2143b1e47bb6bddb3e12e46bd9be5cc":[1,0,0,55,16],
+"classvrv_1_1_bezier_curve.html#af4300b38b4151de20a8a733db8a36a6c":[1,0,0,55,3],
+"classvrv_1_1_bezier_curve.html#af6115bc02a6de431f2464c07b7451940":[1,0,0,55,5],
+"classvrv_1_1_bezier_curve.html#af6342bca1de3582ad422da961d1824d0":[1,0,0,55,13],
 "classvrv_1_1_bounding_box.html":[1,0,0,56],
 "classvrv_1_1_bounding_box.html#a025b101dd81de0a3802ba5ac2a86f9c5":[1,0,0,56,24],
 "classvrv_1_1_bounding_box.html#a029f007d1150f88d906b318b17ecdccc":[1,0,0,56,55],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_chord.html#ad9046f9798eab922478f13c533e5e22f":[1,0,0,75,43],
 "classvrv_1_1_chord.html#add9d8dde3f255b542d5b0e3f453ca045":[1,0,0,75,14],
 "classvrv_1_1_chord.html#ade2ce8d25c8d108b4dfbbd014e019866":[1,0,0,75,42],
-"classvrv_1_1_chord.html#ae2f4e2f0d9f12957dddd6e523b4a4092":[1,0,0,75,2],
-"classvrv_1_1_chord.html#ae3e0dbfff7dc77c2a0f70cc1bc6cb401":[1,0,0,75,12]
+"classvrv_1_1_chord.html#ae2f4e2f0d9f12957dddd6e523b4a4092":[1,0,0,75,2]
 };
