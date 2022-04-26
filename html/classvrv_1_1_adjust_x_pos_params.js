@@ -9,7 +9,7 @@ var classvrv_1_1_adjust_x_pos_params =
     [ "m_functor", "classvrv_1_1_adjust_x_pos_params.html#a7607d489e8092af2aa657a82d6fd0a9d", null ],
     [ "m_functorEnd", "classvrv_1_1_adjust_x_pos_params.html#a82c25017cba48208eee0de1d1102c37a", null ],
     [ "m_includes", "classvrv_1_1_adjust_x_pos_params.html#a02cb65542e3760f9f79b9452655b2bc9", null ],
-    [ "m_measureTieEndpoints", "classvrv_1_1_adjust_x_pos_params.html#aa4360a6292483d1b9c1e8c58bdc695c2", null ],
+    [ "m_measureTieEndpoints", "classvrv_1_1_adjust_x_pos_params.html#a69c1cd73226be89551573622a693be68", null ],
     [ "m_minPos", "classvrv_1_1_adjust_x_pos_params.html#a1c798e487ade70aae22cbc6e6f8c02fb", null ],
     [ "m_previousAlignment", "classvrv_1_1_adjust_x_pos_params.html#ae8c8edae2c6b9aae49c33c5216c8f080", null ],
     [ "m_rightBarLinesOnly", "classvrv_1_1_adjust_x_pos_params.html#a76595f7479809bde4c75394b10513df9", null ],
