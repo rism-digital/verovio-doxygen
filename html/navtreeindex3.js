@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_bezier_curve.html#ad9e70474d8b7d6d31910079ff9fb621a":[1,0,0,55,12],
 "classvrv_1_1_bezier_curve.html#adf1c9ba386a625208e953269cf0e5813":[1,0,0,55,10],
 "classvrv_1_1_bezier_curve.html#adf4d62afd9f95e86acd1378b4461911d":[1,0,0,55,2],
 "classvrv_1_1_bezier_curve.html#af2143b1e47bb6bddb3e12e46bd9be5cc":[1,0,0,55,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_chord.html#acdeba8547ecd0d921bcfe7c603deae00":[1,0,0,75,34],
 "classvrv_1_1_chord.html#ad41c83c09c0e09b9a151190e80f58851":[1,0,0,75,25],
 "classvrv_1_1_chord.html#ad9046f9798eab922478f13c533e5e22f":[1,0,0,75,43],
-"classvrv_1_1_chord.html#add9d8dde3f255b542d5b0e3f453ca045":[1,0,0,75,14],
-"classvrv_1_1_chord.html#ade2ce8d25c8d108b4dfbbd014e019866":[1,0,0,75,42]
+"classvrv_1_1_chord.html#add9d8dde3f255b542d5b0e3f453ca045":[1,0,0,75,14]
 };

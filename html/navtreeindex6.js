@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classvrv_1_1_editor_toolkit_neume.html#a8e122365fe556945a2781d7d67555b61":[1,0,0,115,28],
 "classvrv_1_1_editor_toolkit_neume.html#a94f83f980d832c7cca7c9471f67a3079":[1,0,0,115,23],
 "classvrv_1_1_editor_toolkit_neume.html#a9f7bd667fcec3c23690bd5833b29ada1":[1,0,0,115,35],
 "classvrv_1_1_editor_toolkit_neume.html#aa32bf021d3d31ec9ecb894a12a2ea729":[1,0,0,115,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classvrv_1_1_floating_curve_positioner.html#a182a06641e3574eb9c7b4b43baf5c4df":[1,0,0,139,1],
 "classvrv_1_1_floating_curve_positioner.html#a22ee3747f66c1d04e614ecd3504cd98a":[1,0,0,139,27],
 "classvrv_1_1_floating_curve_positioner.html#a30ccff64031b6f8e36666e5ff1890223":[1,0,0,139,26],
-"classvrv_1_1_floating_curve_positioner.html#a3cbd2dd57e3eb9a687f91c9ba6185bfb":[1,0,0,139,0],
-"classvrv_1_1_floating_curve_positioner.html#a3dad2cda31b4868744e566b3f1adf7b3":[1,0,0,139,24]
+"classvrv_1_1_floating_curve_positioner.html#a3cbd2dd57e3eb9a687f91c9ba6185bfb":[1,0,0,139,0]
 };
