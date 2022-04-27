@@ -540,10 +540,12 @@ var hierarchy =
       [ "vrv::Note", "classvrv_1_1_note.html", null ]
     ] ],
     [ "AttNumbered", null, [
+      [ "vrv::MRpt", "classvrv_1_1_m_rpt.html", null ],
       [ "vrv::MultiRest", "classvrv_1_1_multi_rest.html", null ],
       [ "vrv::MultiRpt", "classvrv_1_1_multi_rpt.html", null ]
     ] ],
     [ "AttNumberPlacement", null, [
+      [ "vrv::MRpt", "classvrv_1_1_m_rpt.html", null ],
       [ "vrv::MultiRest", "classvrv_1_1_multi_rest.html", null ],
       [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ],
       [ "vrv::TupletNum", "classvrv_1_1_tuplet_num.html", null ]
