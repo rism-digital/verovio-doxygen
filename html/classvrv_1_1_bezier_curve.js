@@ -2,6 +2,7 @@ var classvrv_1_1_bezier_curve =
 [
     [ "BezierCurve", "classvrv_1_1_bezier_curve.html#a6abf2d475a66ffb642e13ca7cb40d15b", null ],
     [ "BezierCurve", "classvrv_1_1_bezier_curve.html#a54e61a2e714720559ef32cfbe2dff428", null ],
+    [ "CalcInitialControlPointParams", "classvrv_1_1_bezier_curve.html#a79c70d5f23ad8d337f8c89d2b7d0205f", null ],
     [ "CalcInitialControlPointParams", "classvrv_1_1_bezier_curve.html#adf4d62afd9f95e86acd1378b4461911d", null ],
     [ "EstimateCurveParamForControlPoints", "classvrv_1_1_bezier_curve.html#af4300b38b4151de20a8a733db8a36a6c", null ],
     [ "GetLeftControlHeight", "classvrv_1_1_bezier_curve.html#a334a8be61161d3c6ab891b0d90bc8839", null ],
