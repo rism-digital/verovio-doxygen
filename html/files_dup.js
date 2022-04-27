@@ -132,6 +132,7 @@ var files_dup =
     [ "reg.h", "reg_8h_source.html", null ],
     [ "reh.h", "reh_8h_source.html", null ],
     [ "rend.h", "rend_8h_source.html", null ],
+    [ "resources.h", "resources_8h_source.html", null ],
     [ "rest.h", "rest_8h_source.html", null ],
     [ "restore.h", "restore_8h_source.html", null ],
     [ "runningelement.h", "runningelement_8h_source.html", null ],

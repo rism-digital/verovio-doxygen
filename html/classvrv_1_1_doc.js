@@ -65,6 +65,8 @@ var classvrv_1_1_doc =
     [ "GetPageCount", "classvrv_1_1_doc.html#a2375896e4a43e3a23c798c48fd5a8f70", null ],
     [ "GetPages", "classvrv_1_1_doc.html#abe3b780b5309b75326beac396cc5677c", null ],
     [ "GetPages", "classvrv_1_1_doc.html#ab4055d376f01510632673d6e71046717", null ],
+    [ "GetResources", "classvrv_1_1_doc.html#a4972e18528807396094ffb1ba9e029ea", null ],
+    [ "GetResourcesForModification", "classvrv_1_1_doc.html#abd23ea24fb7fe91e7646599b2e2fc0ec", null ],
     [ "GetRightMargin", "classvrv_1_1_doc.html#a3df63ef3ab0a7aab8959c915413846f3", null ],
     [ "GetRightMargin", "classvrv_1_1_doc.html#a11f07dec193633ac3c24c6816455d1ea", null ],
     [ "GetScores", "classvrv_1_1_doc.html#ab0e9c2a56689059b6b315b91a0c7ec72", null ],

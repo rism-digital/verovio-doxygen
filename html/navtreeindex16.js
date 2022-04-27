@@ -1,5 +1,12 @@
 var NAVTREEINDEX16 =
 {
+"classvrv_1_1_pedal.html#a94793761ed37668ea956bc78d8e0c703":[1,0,0,246,12],
+"classvrv_1_1_pedal.html#ab243eb990a388a5259ea2c1e2d90fc0d":[1,0,0,246,9],
+"classvrv_1_1_pedal.html#acb1e2a8f83b5dbd06e09bad8266237b9":[1,0,0,246,7],
+"classvrv_1_1_pedal.html#ad1e32c0f75395a87be003b83035593e3":[1,0,0,246,13],
+"classvrv_1_1_pedal.html#adddbe6b752e5e3268e3b818768fa57d0":[1,0,0,246,1],
+"classvrv_1_1_pedal.html#af24a83a273daf5c3ab0e72e0a5127505":[1,0,0,246,6],
+"classvrv_1_1_pen.html":[1,0,0,247],
 "classvrv_1_1_pen.html#a10043f772eccede199f3fb9c97732559":[1,0,0,247,2],
 "classvrv_1_1_pen.html#a2cce3ba29698b6a00ec6ff11f059b250":[1,0,0,247,3],
 "classvrv_1_1_pen.html#a2d3f0c36ddea91d25790dae20b56364f":[1,0,0,247,10],
@@ -237,17 +244,10 @@ var NAVTREEINDEX16 =
 "classvrv_1_1_replace_drawing_values_in_staff_def_params.html#aa61933736e2a8d41ab0c41a2f706f0f0":[1,0,0,282,1],
 "classvrv_1_1_replace_drawing_values_in_staff_def_params.html#af82e4e213522192ac1e18a4e3c5eddcb":[1,0,0,282,4],
 "classvrv_1_1_resources.html":[1,0,0,283],
+"classvrv_1_1_resources.html#a112c2087e61d477c8d0dece3165f0e74":[1,0,0,283,14],
 "classvrv_1_1_resources.html#a1a7530ff7bc4d58d8f026e26d5fe8b04":[1,0,0,283,0],
+"classvrv_1_1_resources.html#a3b9565f79dbeb5e9dc2e0085cc8706ef":[1,0,0,283,7],
+"classvrv_1_1_resources.html#a55f11b88af8053043a0b94b6b3a48cc2":[1,0,0,283,8],
 "classvrv_1_1_resources.html#a6b12162a60479843638aeb9f2ce939b4":[1,0,0,283,2],
-"classvrv_1_1_resources.html#a70b43d51304eaa6165edfa5a46e40bcf":[1,0,0,283,3],
-"classvrv_1_1_resources.html#a7f3e5ebaf55c937030ef9437d2d0680e":[1,0,0,283,1],
-"classvrv_1_1_rest.html":[1,0,0,284],
-"classvrv_1_1_rest.html#a085059b60202ac4b366e6f2d59861a75":[1,0,0,284,7],
-"classvrv_1_1_rest.html#a091054e7185d3d91a43b1b6684008fe9":[1,0,0,284,3],
-"classvrv_1_1_rest.html#a0c50fc33ac92d7010f620b1a9e16aa64":[1,0,0,284,18],
-"classvrv_1_1_rest.html#a1bf0280c30f15c09920b7a83e15a0e23":[1,0,0,284,21],
-"classvrv_1_1_rest.html#a2dfcf0969db9808e3454c6012ced7d8f":[1,0,0,284,8],
-"classvrv_1_1_rest.html#a32bb8c72bb48a71f4d7c7c24d83dbc6b":[1,0,0,284,15],
-"classvrv_1_1_rest.html#a3579490f4b1be6f6f6ca45384000a151":[1,0,0,284,11],
-"classvrv_1_1_rest.html#a440179df00a09ea5e7892e0c5eff5695":[1,0,0,284,17]
+"classvrv_1_1_resources.html#a6ef49babf9c905abf67e9476570a9ba3":[1,0,0,283,12]
 };

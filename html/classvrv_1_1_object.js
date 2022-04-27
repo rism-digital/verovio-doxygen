@@ -141,6 +141,7 @@ var classvrv_1_1_object =
     [ "GetComment", "classvrv_1_1_object.html#aa8a0722010e05e1e2cb04d90a9535cc4", null ],
     [ "GetDescendantCount", "classvrv_1_1_object.html#a469db24aaa4907f5437576cb989fcdad", null ],
     [ "GetDescendantIndex", "classvrv_1_1_object.html#a6baacbb5e659f71a051d569b2c34ac07", null ],
+    [ "GetDocResources", "classvrv_1_1_object.html#a4479cf2a953546ff59428752c479ec31", null ],
     [ "GetDrawingX", "classvrv_1_1_object.html#ac707920ee385b0c7bb52d4b0184e7e54", null ],
     [ "GetDrawingY", "classvrv_1_1_object.html#a2b30e0834719af6134364237c5f78940", null ],
     [ "GetDurationInterface", "classvrv_1_1_object.html#a60120fd33bf1f7227c4dc2f6a9b265c7", null ],
