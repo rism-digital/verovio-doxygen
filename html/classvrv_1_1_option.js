@@ -10,7 +10,7 @@ var classvrv_1_1_option =
     [ "GetStrValue", "classvrv_1_1_option.html#a93f27878278319c656b7351aadcfd789", null ],
     [ "GetTitle", "classvrv_1_1_option.html#a00ea4b5fa5b1167de94e5ea3e2b3c755", null ],
     [ "IsCmdOnly", "classvrv_1_1_option.html#aa68765042bdfb08c28904a21fb72e48e", null ],
-    [ "IsSet", "classvrv_1_1_option.html#a06a7eba77f58463cb282ba050803d883", null ],
+    [ "IsSet", "classvrv_1_1_option.html#a33d5cd86bdc6a5cb307a106d1301817d", null ],
     [ "Reset", "classvrv_1_1_option.html#a1de81987099330fafa275efd29d68450", null ],
     [ "SetInfo", "classvrv_1_1_option.html#a3ed6996376e9a2710153cb952fbf11dc", null ],
     [ "SetKey", "classvrv_1_1_option.html#a5aa21034e52a16467c9f2a2cba1404fb", null ],
@@ -21,6 +21,5 @@ var classvrv_1_1_option =
     [ "SetValueDbl", "classvrv_1_1_option.html#a9561b1a933969e5b274785d977b75539", null ],
     [ "ToJson", "classvrv_1_1_option.html#a8197df949d810a3f12aac223d8593036", null ],
     [ "m_description", "classvrv_1_1_option.html#a605929a76631b73d73b83d8ecf6ed101", null ],
-    [ "m_isSet", "classvrv_1_1_option.html#a02579df539cbcb709723e84bf47a2fa0", null ],
     [ "m_title", "classvrv_1_1_option.html#a743c22feedd51435c853bc5236bae4d8", null ]
 ];

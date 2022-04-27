@@ -15,6 +15,7 @@ var classvrv_1_1_option_json =
     [ "GetValue", "classvrv_1_1_option_json.html#a7468c78b4cde7fed6bbc56d4e16bb6e4", null ],
     [ "HasValue", "classvrv_1_1_option_json.html#aac2951d68e22ec5baf9001501e671604", null ],
     [ "Init", "classvrv_1_1_option_json.html#a6787572e1ab3606358af0aa341571b14", null ],
+    [ "IsSet", "classvrv_1_1_option_json.html#ad0c77124b17f2e4718676286609061cb", null ],
     [ "ReadJson", "classvrv_1_1_option_json.html#a5ff9ad862e7310387519ee222ea335e4", null ],
     [ "Reset", "classvrv_1_1_option_json.html#a1292c959936c0e4362c604a36f465e32", null ],
     [ "SetValue", "classvrv_1_1_option_json.html#abbfe45064b60f80519b5f54528245377", null ],

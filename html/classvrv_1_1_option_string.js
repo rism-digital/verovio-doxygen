@@ -8,6 +8,7 @@ var classvrv_1_1_option_string =
     [ "GetStrValue", "classvrv_1_1_option_string.html#ab82be0d8a25ae670a686e728606db660", null ],
     [ "GetValue", "classvrv_1_1_option_string.html#acc21b5e634fba8be75dc9e0531862418", null ],
     [ "Init", "classvrv_1_1_option_string.html#a0e018d18519808c6d81f23944283e883", null ],
+    [ "IsSet", "classvrv_1_1_option_string.html#a838ce984c37cc6ffaeb89c991ecd434e", null ],
     [ "Reset", "classvrv_1_1_option_string.html#a5098736f5cee196c2461663de39e6815", null ],
     [ "SetValue", "classvrv_1_1_option_string.html#a87ae87a193e2f041fdc45d0c95a2c397", null ]
 ];

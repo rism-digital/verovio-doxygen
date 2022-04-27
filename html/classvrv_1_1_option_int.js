@@ -11,6 +11,7 @@ var classvrv_1_1_option_int =
     [ "GetUnfactoredValue", "classvrv_1_1_option_int.html#a047634984c7b467268002f7179ff927c", null ],
     [ "GetValue", "classvrv_1_1_option_int.html#a472ea1717d7e595c19f8a44f6fb573a0", null ],
     [ "Init", "classvrv_1_1_option_int.html#a37e7e6af414971fc70f2b836c2059017", null ],
+    [ "IsSet", "classvrv_1_1_option_int.html#aaeca52cc8847998f8f2cdf15eaa926dd", null ],
     [ "Reset", "classvrv_1_1_option_int.html#aeb9250c94d216801f27a6c045589e902", null ],
     [ "SetValue", "classvrv_1_1_option_int.html#abd9bf086eb464d50a955e92a51398714", null ],
     [ "SetValue", "classvrv_1_1_option_int.html#a841d690baff7da73be9209fd19d28f61", null ],

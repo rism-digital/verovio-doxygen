@@ -59,16 +59,16 @@ var NAVTREEINDEX =
 "classvrv_1_1_measure.html#afa41f7d6ed2d7a483b2d4fe024ecdf26",
 "classvrv_1_1_object.html#a3749f83f36adfc8748438ca17b1e5f91",
 "classvrv_1_1_object_factory.html#ab360ea84e102826890f160cdb07b41c4",
-"classvrv_1_1_options.html#a6f72efbd2c67add68717901a20fd51c7",
-"classvrv_1_1_pedal.html#a783922b5b45c613b5a3c344a9d6dda69",
-"classvrv_1_1_resources.html#a55f11b88af8053043a0b94b6b3a48cc2",
-"classvrv_1_1_sic.html#a350341d74fe737ce5cf94745b03d51ce",
-"classvrv_1_1_stemmed_drawing_interface.html#a0e66eb68b203977a9f02aa25fd281fc1",
-"classvrv_1_1_system_element.html#ad6ddb7b3273585c63dc5ffabc78b8527",
-"classvrv_1_1_toolkit.html#aa851c49e48d4fd83e71f1a457f022366",
-"classvrv_1_1_view.html#a1251c367eabd429570531db7482d2199",
-"classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e.html#a9bb11e24222f8bbd65be5bf7ae0585a6",
-"structvrv_1_1_control_point_constraint.html"
+"classvrv_1_1_options.html#a68a4f1007a6e61c01f8b20559f9ebf06",
+"classvrv_1_1_pedal.html",
+"classvrv_1_1_replace_drawing_values_in_staff_def_params.html#a6deb77fa9fd2caafa9d5052f8bee8785",
+"classvrv_1_1_set_cautionary_score_def_params.html#a413225adc6cf5926a51eaeb1a11eff5a",
+"classvrv_1_1_stem.html#a8feba57af3b9b967512d2cb39895d9cd",
+"classvrv_1_1_system_element.html#a17d947a62f84e74d4af850851ca4f058",
+"classvrv_1_1_toolkit.html#a8a411c7fe22ffb9df4be52b582af550e",
+"classvrv_1_1_view.html#a0bbce1fc7c6f6cd943da83e8866a1a7b",
+"classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e.html#a461b0b6f9fb8c5242c9bb78a044b0e87",
+"structvrv_1_1_closest_b_b.html#acea28781d0d1b123aae14c872a6367eb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

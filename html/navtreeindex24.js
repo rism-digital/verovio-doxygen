@@ -1,5 +1,12 @@
 var NAVTREEINDEX24 =
 {
+"structvrv_1_1_closest_b_b.html#acea28781d0d1b123aae14c872a6367eb":[1,0,0,80,3],
+"structvrv_1_1_closest_b_b.html#ae4c15a00f3ead7ec067bf72ce647aa55":[1,0,0,80,2],
+"structvrv_1_1_control_point_adjustment.html":[1,0,0,83],
+"structvrv_1_1_control_point_adjustment.html#a04a3162e77c69022f40b5e67936dec36":[1,0,0,83,0],
+"structvrv_1_1_control_point_adjustment.html#a676633e2c08759e3d48495a4a367255f":[1,0,0,83,2],
+"structvrv_1_1_control_point_adjustment.html#aaf5604ef167ddc7c57013a421ebc12bd":[1,0,0,83,3],
+"structvrv_1_1_control_point_adjustment.html#aeba6d12ef7c0048f6e5759adce4ff302":[1,0,0,83,1],
 "structvrv_1_1_control_point_constraint.html":[1,0,0,84],
 "structvrv_1_1_control_point_constraint.html#a84f062ff2c159b679a6ac0d5356b919a":[1,0,0,84,0],
 "structvrv_1_1_control_point_constraint.html#a9a6bae03bd6c110a3aaeae2a95a23e49":[1,0,0,84,1],
