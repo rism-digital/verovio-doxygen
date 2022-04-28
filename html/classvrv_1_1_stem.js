@@ -5,6 +5,7 @@ var classvrv_1_1_stem =
     [ "CalcStem", "classvrv_1_1_stem.html#aaa339fb5324212edf1663b4273f30483", null ],
     [ "CompareToElementPosition", "classvrv_1_1_stem.html#a0ca0abab879b30f9b97222de50873c9c", null ],
     [ "GetClassName", "classvrv_1_1_stem.html#a0ad0c677151ec3134871632aecab85cc", null ],
+    [ "GetDrawingStemAdjust", "classvrv_1_1_stem.html#a345131fdc2cd453f330f691168ad78f2", null ],
     [ "GetDrawingStemDir", "classvrv_1_1_stem.html#a7308248beae22f5fc81b748eb23e54ad", null ],
     [ "GetDrawingStemLen", "classvrv_1_1_stem.html#a06628e536a1d6fafed73e0791a569ac6", null ],
     [ "HasToBeAligned", "classvrv_1_1_stem.html#a5bef255e73057dfd6d8719cfbaca268e", null ],
@@ -15,6 +16,7 @@ var classvrv_1_1_stem =
     [ "ResetData", "classvrv_1_1_stem.html#acb5836a988eec7848d91a49d4197eb7d", null ],
     [ "Save", "classvrv_1_1_stem.html#a057001d064ae5f4487a5f70aee9fbc4b", null ],
     [ "SaveEnd", "classvrv_1_1_stem.html#a1c927bad9b24656f1ffc62609f3cc426", null ],
+    [ "SetDrawingStemAdjust", "classvrv_1_1_stem.html#a999c1ff2cd8ee4f8e126ecaaa8f0244d", null ],
     [ "SetDrawingStemDir", "classvrv_1_1_stem.html#a471a6f88cb845e4c82a36c1f7d478c52", null ],
     [ "SetDrawingStemLen", "classvrv_1_1_stem.html#a40bf932a0daf783d36b478f64dfd6b12", null ]
 ];

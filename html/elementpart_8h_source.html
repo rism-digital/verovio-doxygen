@@ -286,39 +286,42 @@ $(document).ready(function(){initNavTree('elementpart_8h_source.html',''); initR
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordtype">void</span> SetDrawingStemDir(data_STEMDIRECTION drawingStemDir) { m_drawingStemDir = drawingStemDir; }</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordtype">int</span> GetDrawingStemLen()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingStemLen; }</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordtype">void</span> SetDrawingStemLen(<span class="keywordtype">int</span> drawingStemLen) { m_drawingStemLen = drawingStemLen; }</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordtype">bool</span> IsVirtual()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_isVirtual; }</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordtype">void</span> IsVirtual(<span class="keywordtype">bool</span> isVirtual) { m_isVirtual = isVirtual; }</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_stem.html#a0ca0abab879b30f9b97222de50873c9c">CompareToElementPosition</a>(Doc *doc, LayerElement *otherElement, <span class="keywordtype">int</span> margin);</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordtype">int</span> GetDrawingStemAdjust() { <span class="keywordflow">return</span> m_drawingStemAdjust; }</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordtype">void</span> SetDrawingStemAdjust(<span class="keywordtype">int</span> drawingStemAdjust) { m_drawingStemAdjust = drawingStemAdjust; }</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordtype">bool</span> IsVirtual()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_isVirtual; }</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keywordtype">void</span> IsVirtual(<span class="keywordtype">bool</span> isVirtual) { m_isVirtual = isVirtual; }</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_stem.html#a0ca0abab879b30f9b97222de50873c9c">CompareToElementPosition</a>(Doc *doc, LayerElement *otherElement, <span class="keywordtype">int</span> margin);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_stem.html#aaa339fb5324212edf1663b4273f30483">CalcStem</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_stem.html#a057001d064ae5f4487a5f70aee9fbc4b">Save</a>(FunctorParams *functorParams)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> FUNCTOR_CONTINUE; }</div>
-<div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="classvrv_1_1_stem.html#a1c927bad9b24656f1ffc62609f3cc426">  380</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_stem.html#a1c927bad9b24656f1ffc62609f3cc426">SaveEnd</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> FUNCTOR_CONTINUE; }</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_stem.html#acb5836a988eec7848d91a49d4197eb7d">ResetData</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordtype">void</span> AdjustFlagPlacement(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="code" href="classvrv_1_1_flag.html">Flag</a> *flag, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">int</span> verticalCenter, <span class="keywordtype">int</span> duration);</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="keywordtype">void</span> AdjustSlashes(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">int</span> flagOffset, <span class="keywordtype">bool</span> isSameAs);</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    data_STEMDIRECTION m_drawingStemDir;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordtype">int</span> m_drawingStemLen;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordtype">bool</span> m_isVirtual;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;};</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_stem.html#aaa339fb5324212edf1663b4273f30483">CalcStem</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_stem.html#a057001d064ae5f4487a5f70aee9fbc4b">Save</a>(FunctorParams *functorParams)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> FUNCTOR_CONTINUE; }</div>
+<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="classvrv_1_1_stem.html#a1c927bad9b24656f1ffc62609f3cc426">  382</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_stem.html#a1c927bad9b24656f1ffc62609f3cc426">SaveEnd</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> FUNCTOR_CONTINUE; }</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_stem.html#acb5836a988eec7848d91a49d4197eb7d">ResetData</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordtype">void</span> AdjustFlagPlacement(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="code" href="classvrv_1_1_flag.html">Flag</a> *flag, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">int</span> verticalCenter, <span class="keywordtype">int</span> duration);</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordtype">void</span> AdjustSlashes(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">int</span> flagOffset, <span class="keywordtype">bool</span> isSameAs);</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    data_STEMDIRECTION m_drawingStemDir;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordtype">int</span> m_drawingStemLen;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordtype">int</span> m_drawingStemAdjust;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="keywordtype">bool</span> m_isVirtual;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;};</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_dots_html_a51f7cd82e9067473399b0a8e8d21ff45"><div class="ttname"><a href="classvrv_1_1_dots.html#a51f7cd82e9067473399b0a8e8d21ff45">vrv::Dots::GetFlagShift</a></div><div class="ttdeci">int GetFlagShift() const</div><div class="ttdoc">Set/get methods for the flagShift.</div><div class="ttdef"><b>Definition:</b> elementpart.h:68</div></div>
@@ -338,10 +341,10 @@ $(document).ready(function(){initNavTree('elementpart_8h_source.html',''); initR
 <div class="ttc" id="aclassvrv_1_1_flag_html"><div class="ttname"><a href="classvrv_1_1_flag.html">vrv::Flag</a></div><div class="ttdoc">This class models a stem as a layer element part and has not direct MEI equivlatent.</div><div class="ttdef"><b>Definition:</b> elementpart.h:103</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuplet_bracket_html_aa9b57feea622f5946d8f613cf5c5e291"><div class="ttname"><a href="classvrv_1_1_tuplet_bracket.html#aa9b57feea622f5946d8f613cf5c5e291">vrv::TupletBracket::SaveEnd</a></div><div class="ttdeci">int SaveEnd(FunctorParams *functorParams) override</div><div class="ttdoc">End Functor for Object::Save.</div><div class="ttdef"><b>Definition:</b> elementpart.h:211</div></div>
 <div class="ttc" id="aclassvrv_1_1_stem_html_ada6f97bae35bbcbe9cd4b30cf14f27f3"><div class="ttname"><a href="classvrv_1_1_stem.html#ada6f97bae35bbcbe9cd4b30cf14f27f3">vrv::Stem::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Add an element (only flag supported) to a stem.</div></div>
-<div class="ttc" id="aclassvrv_1_1_stem_html_a1c927bad9b24656f1ffc62609f3cc426"><div class="ttname"><a href="classvrv_1_1_stem.html#a1c927bad9b24656f1ffc62609f3cc426">vrv::Stem::SaveEnd</a></div><div class="ttdeci">int SaveEnd(FunctorParams *functorParams) override</div><div class="ttdoc">End Functor for Object::Save.</div><div class="ttdef"><b>Definition:</b> elementpart.h:380</div></div>
+<div class="ttc" id="aclassvrv_1_1_stem_html_a1c927bad9b24656f1ffc62609f3cc426"><div class="ttname"><a href="classvrv_1_1_stem.html#a1c927bad9b24656f1ffc62609f3cc426">vrv::Stem::SaveEnd</a></div><div class="ttdeci">int SaveEnd(FunctorParams *functorParams) override</div><div class="ttdoc">End Functor for Object::Save.</div><div class="ttdef"><b>Definition:</b> elementpart.h:382</div></div>
 <div class="ttc" id="aclassvrv_1_1_stem_html_aaa339fb5324212edf1663b4273f30483"><div class="ttname"><a href="classvrv_1_1_stem.html#aaa339fb5324212edf1663b4273f30483">vrv::Stem::CalcStem</a></div><div class="ttdeci">int CalcStem(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CalcStem.</div></div>
 <div class="ttc" id="aclassvrv_1_1_flag_html_a97d3d73006c4dfde14fd871de9bae93e"><div class="ttname"><a href="classvrv_1_1_flag.html#a97d3d73006c4dfde14fd871de9bae93e">vrv::Flag::Save</a></div><div class="ttdeci">int Save(FunctorParams *functorParams) override</div><div class="ttdoc">Overwritten version of Save that avoids anything to be written.</div><div class="ttdef"><b>Definition:</b> elementpart.h:132</div></div>
-<div class="ttc" id="aclassvrv_1_1_stem_html_a057001d064ae5f4487a5f70aee9fbc4b"><div class="ttname"><a href="classvrv_1_1_stem.html#a057001d064ae5f4487a5f70aee9fbc4b">vrv::Stem::Save</a></div><div class="ttdeci">int Save(FunctorParams *functorParams) override</div><div class="ttdoc">Overwritten version of Save that avoids anything to be written.</div><div class="ttdef"><b>Definition:</b> elementpart.h:379</div></div>
+<div class="ttc" id="aclassvrv_1_1_stem_html_a057001d064ae5f4487a5f70aee9fbc4b"><div class="ttname"><a href="classvrv_1_1_stem.html#a057001d064ae5f4487a5f70aee9fbc4b">vrv::Stem::Save</a></div><div class="ttdeci">int Save(FunctorParams *functorParams) override</div><div class="ttdoc">Overwritten version of Save that avoids anything to be written.</div><div class="ttdef"><b>Definition:</b> elementpart.h:381</div></div>
 <div class="ttc" id="aclassvrv_1_1_dots_html_a2d29e04a070b61455c3d615ca6e94855"><div class="ttname"><a href="classvrv_1_1_dots.html#a2d29e04a070b61455c3d615ca6e94855">vrv::Dots::Save</a></div><div class="ttdeci">int Save(FunctorParams *functorParams) override</div><div class="ttdoc">Overwritten version of Save that avoids anything to be written.</div><div class="ttdef"><b>Definition:</b> elementpart.h:60</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuplet_num_html"><div class="ttname"><a href="classvrv_1_1_tuplet_num.html">vrv::TupletNum</a></div><div class="ttdoc">This class models a tuplet num as a layer element part and has not direct MEI equivlatent.</div><div class="ttdef"><b>Definition:</b> elementpart.h:251</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuplet_num_html_a336989c35bcd8f7e265fa718f9941be1"><div class="ttname"><a href="classvrv_1_1_tuplet_num.html#a336989c35bcd8f7e265fa718f9941be1">vrv::TupletNum::ResetVerticalAlignment</a></div><div class="ttdeci">int ResetVerticalAlignment(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetVerticalAlignment.</div></div>
@@ -367,7 +370,7 @@ $(document).ready(function(){initNavTree('elementpart_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>elementpart.h</b></li>
-    <li class="footer">Generated on Thu Apr 28 2022 10:10:39 for Verovio by
+    <li class="footer">Generated on Thu Apr 28 2022 12:55:13 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
