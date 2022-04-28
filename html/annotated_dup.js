@@ -128,6 +128,7 @@ var annotated_dup =
       [ "FeatureExtractor", "classvrv_1_1_feature_extractor.html", "classvrv_1_1_feature_extractor" ],
       [ "Fermata", "classvrv_1_1_fermata.html", "classvrv_1_1_fermata" ],
       [ "Fig", "classvrv_1_1_fig.html", "classvrv_1_1_fig" ],
+      [ "Filters", "classvrv_1_1_filters.html", "classvrv_1_1_filters" ],
       [ "FindAllBetweenParams", "classvrv_1_1_find_all_between_params.html", "classvrv_1_1_find_all_between_params" ],
       [ "FindAllByComparisonParams", "classvrv_1_1_find_all_by_comparison_params.html", "classvrv_1_1_find_all_by_comparison_params" ],
       [ "FindAllConstBetweenParams", "classvrv_1_1_find_all_const_between_params.html", "classvrv_1_1_find_all_const_between_params" ],

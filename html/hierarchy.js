@@ -932,6 +932,7 @@ var hierarchy =
     ] ],
     [ "vrv::ExpansionMap", "classvrv_1_1_expansion_map.html", null ],
     [ "vrv::FeatureExtractor", "classvrv_1_1_feature_extractor.html", null ],
+    [ "vrv::Filters", "classvrv_1_1_filters.html", null ],
     [ "vrv::FontInfo", "classvrv_1_1_font_info.html", null ],
     [ "vrv::Functor", "classvrv_1_1_functor.html", null ],
     [ "vrv::FunctorParams", "classvrv_1_1_functor_params.html", [
