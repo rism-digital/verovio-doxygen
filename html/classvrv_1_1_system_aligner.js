@@ -20,5 +20,5 @@ var classvrv_1_1_system_aligner =
     [ "GetStaffAlignmentForStaffN", "classvrv_1_1_system_aligner.html#a4c9fd8a96d8c6a1eaac690739c2c733b", null ],
     [ "GetSystem", "classvrv_1_1_system_aligner.html#a5c916b5e3799ce149199694090b2f1ce", null ],
     [ "Reset", "classvrv_1_1_system_aligner.html#aa5961fa9bf6c71d9871c33f263d5faa8", null ],
-    [ "SetSpacing", "classvrv_1_1_system_aligner.html#a4ae91b3e9e2bfeda965f9a4370e7bc41", null ]
+    [ "SetSpacing", "classvrv_1_1_system_aligner.html#a118f13b660eb1e8ccd5dc4b59a4045d4", null ]
 ];

@@ -262,6 +262,7 @@ var annotated_dup =
       [ "PointingToComparison", "classvrv_1_1_pointing_to_comparison.html", "classvrv_1_1_pointing_to_comparison" ],
       [ "PositionInterface", "classvrv_1_1_position_interface.html", "classvrv_1_1_position_interface" ],
       [ "PrepareCrossStaffParams", "classvrv_1_1_prepare_cross_staff_params.html", "classvrv_1_1_prepare_cross_staff_params" ],
+      [ "PrepareDataInitializationParams", "classvrv_1_1_prepare_data_initialization_params.html", "classvrv_1_1_prepare_data_initialization_params" ],
       [ "PrepareDelayedTurnsParams", "classvrv_1_1_prepare_delayed_turns_params.html", "classvrv_1_1_prepare_delayed_turns_params" ],
       [ "PrepareDurationParams", "classvrv_1_1_prepare_duration_params.html", "classvrv_1_1_prepare_duration_params" ],
       [ "PrepareFacsimileParams", "classvrv_1_1_prepare_facsimile_params.html", "classvrv_1_1_prepare_facsimile_params" ],

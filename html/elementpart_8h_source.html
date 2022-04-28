@@ -166,8 +166,8 @@ $(document).ready(function(){initNavTree('elementpart_8h_source.html',''); initR
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">wchar_t</span> GetFlagGlyph(data_STEMDIRECTION stemDir) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> GetStemUpSE(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">bool</span> graceSize, <span class="keywordtype">wchar_t</span> &amp;code) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> GetStemDownNW(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">bool</span> graceSize, <span class="keywordtype">wchar_t</span> &amp;code) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> GetStemUpSE(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">bool</span> graceSize) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> GetStemDownNW(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">bool</span> graceSize) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">//----------//</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">// Functors //</span></div>
@@ -282,9 +282,9 @@ $(document).ready(function(){initNavTree('elementpart_8h_source.html',''); initR
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_stem.html#ada6f97bae35bbcbe9cd4b30cf14f27f3">IsSupportedChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    data_STEMDIRECTION GetDrawingStemDir() { <span class="keywordflow">return</span> m_drawingStemDir; }</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    data_STEMDIRECTION GetDrawingStemDir()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingStemDir; }</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordtype">void</span> SetDrawingStemDir(data_STEMDIRECTION drawingStemDir) { m_drawingStemDir = drawingStemDir; }</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordtype">int</span> GetDrawingStemLen() { <span class="keywordflow">return</span> m_drawingStemLen; }</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordtype">int</span> GetDrawingStemLen()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingStemLen; }</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordtype">void</span> SetDrawingStemLen(<span class="keywordtype">int</span> drawingStemLen) { m_drawingStemLen = drawingStemLen; }</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordtype">bool</span> IsVirtual()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_isVirtual; }</div>
@@ -367,7 +367,7 @@ $(document).ready(function(){initNavTree('elementpart_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>elementpart.h</b></li>
-    <li class="footer">Generated on Wed Apr 27 2022 14:30:51 for Verovio by
+    <li class="footer">Generated on Thu Apr 28 2022 07:55:23 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

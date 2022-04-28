@@ -422,14 +422,14 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classvrv_1_1_note_1a6254802daf2625dc5fb1b82ada63a3aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_note_1a7e01dacdaeffa510453c93250c59b77b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classvrv_1_1_point" kindref="compound">Point</ref></type>
         <definition>Point vrv::Note::GetStemUpSE</definition>
-        <argsstring>(Doc *doc, int staffSize, bool isCueSize) override</argsstring>
+        <argsstring>(const Doc *doc, int staffSize, bool isCueSize) const override</argsstring>
         <name>GetStemUpSE</name>
-        <reimplements refid="classvrv_1_1_stemmed_drawing_interface_1afed6feb80c4e66444c201f5f210efd5d">GetStemUpSE</reimplements>
+        <reimplements refid="classvrv_1_1_stemmed_drawing_interface_1aebe78def2e8367329ee1ad24f8e5dac9">GetStemUpSE</reimplements>
         <param>
-          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
         </param>
         <param>
@@ -450,14 +450,14 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/note.h" line="197" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_note_1a6eb7ccf07fa72ce293410d2f58ac047a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_note_1ac6e442fe010db664b7fcd4dfd4bc45f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classvrv_1_1_point" kindref="compound">Point</ref></type>
         <definition>Point vrv::Note::GetStemDownNW</definition>
-        <argsstring>(Doc *doc, int staffSize, bool isCueSize) override</argsstring>
+        <argsstring>(const Doc *doc, int staffSize, bool isCueSize) const override</argsstring>
         <name>GetStemDownNW</name>
-        <reimplements refid="classvrv_1_1_stemmed_drawing_interface_1aa0f48d7eae7644a8fd4734f6652d65e7">GetStemDownNW</reimplements>
+        <reimplements refid="classvrv_1_1_stemmed_drawing_interface_1aaa95e55e23d3bcadb56eb3094305d580">GetStemDownNW</reimplements>
         <param>
-          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
         </param>
         <param>
@@ -476,14 +476,14 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/note.h" line="198" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_note_1afe4bad9d0e38826cefbf537b4c1a69f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_note_1a105ed49c9fe5687f372a9aa49dd5cfc2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>int</type>
         <definition>int vrv::Note::CalcStemLenInThirdUnits</definition>
-        <argsstring>(Staff *staff, data_STEMDIRECTION stemDir) override</argsstring>
+        <argsstring>(const Staff *staff, data_STEMDIRECTION stemDir) const override</argsstring>
         <name>CalcStemLenInThirdUnits</name>
-        <reimplements refid="classvrv_1_1_stemmed_drawing_interface_1ab518eec8db36e95d691419f557bcf45a">CalcStemLenInThirdUnits</reimplements>
+        <reimplements refid="classvrv_1_1_stemmed_drawing_interface_1a328ba0ceb390cffb9ecacc582cd8d510">CalcStemLenInThirdUnits</reimplements>
         <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
         </param>
         <param>
@@ -824,10 +824,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/note.h" line="215" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_note_1a598f4774d77583117482ada9ef5681e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_note_1a4bbaa20a8cbdc5405f513135cc6117f6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::Note::IsVisible</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>IsVisible</name>
         <briefdescription>
 <para>Check if a note or its parent chord are visible. </para>
@@ -2088,7 +2088,7 @@
     <location file="/home/runner/work/verovio/verovio/include/vrv/note.h" line="64" column="34" bodyfile="/home/runner/work/verovio/verovio/include/vrv/note.h" bodystart="47" bodyend="426"/>
     <listofallmembers>
       <member refid="classvrv_1_1_note_1aefb4a2097eb88c3cefd73cbc72222bb0" prot="public" virt="virtual"><scope>vrv::Note</scope><name>AddChild</name></member>
-      <member refid="classvrv_1_1_object_1a1af968d5140f79fd056aa5a46d7cad11" prot="public" virt="virtual"><scope>vrv::Note</scope><name>AddLayerElementToFlatList</name></member>
+      <member refid="classvrv_1_1_object_1a5f617820a2163b5fa9d80d884bf69999" prot="public" virt="virtual"><scope>vrv::Note</scope><name>AddLayerElementToFlatList</name></member>
       <member refid="classvrv_1_1_object_1a08855458e45646f3831f2edf7c8a77e0" prot="public" virt="virtual"><scope>vrv::Note</scope><name>AdjustAccidX</name></member>
       <member refid="classvrv_1_1_object_1a9a7ac871bbd388bc57ad3efbcd5523e4" prot="public" virt="virtual"><scope>vrv::Note</scope><name>AdjustArpeg</name></member>
       <member refid="classvrv_1_1_object_1adbd52d9a86b0a97174b734269a690048" prot="public" virt="virtual"><scope>vrv::Note</scope><name>AdjustArpegEnd</name></member>
@@ -2174,7 +2174,7 @@
       <member refid="classvrv_1_1_object_1a3e00929935e3c3a646767efa319b5c2c" prot="public" virt="virtual"><scope>vrv::Note</scope><name>CalcSpanningBeamSpans</name></member>
       <member refid="classvrv_1_1_note_1aac544df65fa58a853952072f33fb5fb3" prot="public" virt="virtual"><scope>vrv::Note</scope><name>CalcStem</name></member>
       <member refid="classvrv_1_1_note_1aa7a762e5de0133a66194a4f9175d3d1e" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>CalcStemDirForSameasNote</name></member>
-      <member refid="classvrv_1_1_note_1afe4bad9d0e38826cefbf537b4c1a69f3" prot="public" virt="virtual"><scope>vrv::Note</scope><name>CalcStemLenInThirdUnits</name></member>
+      <member refid="classvrv_1_1_note_1a105ed49c9fe5687f372a9aa49dd5cfc2" prot="public" virt="virtual"><scope>vrv::Note</scope><name>CalcStemLenInThirdUnits</name></member>
       <member refid="classvrv_1_1_bounding_box_1a8fdd811aefcb373533b9cc2795aa04dd" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>CalcThickBezier</name></member>
       <member refid="classvrv_1_1_object_1ae1320bf0b5a56f033dcc561147225ba7" prot="public" virt="virtual"><scope>vrv::Note</scope><name>CastOffEncoding</name></member>
       <member refid="classvrv_1_1_object_1af4bdf6d63a5fbf43a21a5c18d3c49a10" prot="public" virt="virtual"><scope>vrv::Note</scope><name>CastOffPages</name></member>
@@ -2202,7 +2202,7 @@
       <member refid="classvrv_1_1_duration_interface_1abcb2f792eeb999beb3a5f247c812d274" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>DurationInterface</name></member>
       <member refid="classvrv_1_1_bounding_box_1a52ac837dc797c5f292c98ddb3f43a098" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>Encloses</name></member>
       <member refid="classvrv_1_1_facsimile_interface_1ae681c0fa1158e116060f15c9796c782c" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>FacsimileInterface</name></member>
-      <member refid="classvrv_1_1_object_1a3749f83f36adfc8748438ca17b1e5f91" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>FillFlatList</name></member>
+      <member refid="classvrv_1_1_object_1a24dd9389c537dda7046c097132ae9a9a" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>FillFlatList</name></member>
       <member refid="classvrv_1_1_object_1afe64fa5f9df4e735ed7f1e9a5935a339" prot="public" virt="virtual"><scope>vrv::Note</scope><name>FindAllBetween</name></member>
       <member refid="classvrv_1_1_object_1aa5fd51861abce2d3237ef9d115d32ba6" prot="public" virt="virtual"><scope>vrv::Note</scope><name>FindAllByComparison</name></member>
       <member refid="classvrv_1_1_object_1a8c7c629ec574046f6e6078da821361c5" prot="public" virt="virtual"><scope>vrv::Note</scope><name>FindAllConstBetween</name></member>
@@ -2303,9 +2303,9 @@
       <member refid="classvrv_1_1_layer_element_1ac0a98f1ac5226eadda933521399eccb4" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetDrawingRadius</name></member>
       <member refid="classvrv_1_1_facsimile_interface_1a2e3d8694d94a66c6784f844c1f883a90" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetDrawingRotate</name></member>
       <member refid="classvrv_1_1_stemmed_drawing_interface_1a0dd608248567f09598a5bf79502c6df2" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetDrawingStem</name></member>
-      <member refid="classvrv_1_1_stemmed_drawing_interface_1a0e66eb68b203977a9f02aa25fd281fc1" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetDrawingStemDir</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1adc1a6d0b12c9c93b2664ce797af5d458" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetDrawingStemDir</name></member>
       <member refid="classvrv_1_1_stemmed_drawing_interface_1abb143107baeb30b8a651005be5631482" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetDrawingStemEnd</name></member>
-      <member refid="classvrv_1_1_stemmed_drawing_interface_1aa990dc55c67926e2b841b858667a46d2" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetDrawingStemLen</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1a6f1751b26b5e23aeff170b744a20a09e" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetDrawingStemLen</name></member>
       <member refid="classvrv_1_1_layer_element_1a5cc66a12312b10a25f9bd0a1c4a857cd" prot="public" virt="virtual"><scope>vrv::Note</scope><name>GetDrawingStemMod</name></member>
       <member refid="classvrv_1_1_stemmed_drawing_interface_1a1f7c5905a415b9b1e59766d2fe04479c" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetDrawingStemStart</name></member>
       <member refid="classvrv_1_1_layer_element_1a53b2786e42e0bd66c8ac5eb04258c88a" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetDrawingTop</name></member>
@@ -2382,12 +2382,12 @@
       <member refid="classvrv_1_1_bounding_box_1a025b101dd81de0a3802ba5ac2a86f9c5" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetSelfX2</name></member>
       <member refid="classvrv_1_1_bounding_box_1ad958652328dd6762612727f064f56b3c" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetSelfY1</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7ba0ddf13040f3747a7421232c9bc21d" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetSelfY2</name></member>
-      <member refid="classvrv_1_1_note_1a6eb7ccf07fa72ce293410d2f58ac047a" prot="public" virt="virtual"><scope>vrv::Note</scope><name>GetStemDownNW</name></member>
+      <member refid="classvrv_1_1_note_1ac6e442fe010db664b7fcd4dfd4bc45f2" prot="public" virt="virtual"><scope>vrv::Note</scope><name>GetStemDownNW</name></member>
       <member refid="classvrv_1_1_note_1a93d3f20b63580552e78097143ce5dbe7" prot="public" virt="virtual"><scope>vrv::Note</scope><name>GetStemmedDrawingInterface</name></member>
       <member refid="classvrv_1_1_note_1ad5a3d098ac78d4c81e33f5738a33c26f" prot="public" virt="virtual"><scope>vrv::Note</scope><name>GetStemmedDrawingInterface</name></member>
       <member refid="classvrv_1_1_note_1aa8e3d7044475c72873fab3c6026e0f6e" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetStemSameasNote</name></member>
       <member refid="classvrv_1_1_note_1a38d525195436f5a32fe144c9c1cfdfc3" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetStemSameasRole</name></member>
-      <member refid="classvrv_1_1_note_1a6254802daf2625dc5fb1b82ada63a3aa" prot="public" virt="virtual"><scope>vrv::Note</scope><name>GetStemUpSE</name></member>
+      <member refid="classvrv_1_1_note_1a7e01dacdaeffa510453c93250c59b77b" prot="public" virt="virtual"><scope>vrv::Note</scope><name>GetStemUpSE</name></member>
       <member refid="classvrv_1_1_facsimile_interface_1af64a523941de42e832c352d6a50124d5" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetSurfaceY</name></member>
       <member refid="classvrv_1_1_note_1a365b8e4a7d149acd14975216b2d89341" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetTabFretString</name></member>
       <member refid="classvrv_1_1_object_1ac2308546f247b47d6fdaaf0e90490fa5" prot="public" virt="virtual"><scope>vrv::Note</scope><name>GetTextDirInterface</name></member>
@@ -2471,19 +2471,21 @@
       <member refid="classvrv_1_1_note_1a2a984db0827252cd46b7ed9799c098ce" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsEnharmonicWith</name></member>
       <member refid="classvrv_1_1_object_1a76f4663d1b09c5fe2b0c771eeb3f7d0e" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsExpansion</name></member>
       <member refid="classvrv_1_1_object_1a07dfe3de52f16cff12eefabe11c6cd96" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsExpansion</name></member>
-      <member refid="classvrv_1_1_duration_interface_1ac7abd60beb364ff44323e4e60e11d59f" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsFirstInBeam</name></member>
+      <member refid="classvrv_1_1_duration_interface_1ad14ac28eed0c0fbc93bf4b104abb1c2e" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsFirstInBeam</name></member>
       <member refid="classvrv_1_1_object_1a3b131f39c868a8a1e9b768bdc0eae811" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsFloatingObject</name></member>
       <member refid="classvrv_1_1_layer_element_1aaa6b5701f29f87fa028d448a7f54409f" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsGraceNote</name></member>
       <member refid="classvrv_1_1_layer_element_1a9e5c50f21c91584a2c11ad154344a1b7" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsInBeam</name></member>
+      <member refid="classvrv_1_1_layer_element_1aea991d58f5392b8433bcfb17054c8bd0" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsInBeam</name></member>
       <member refid="classvrv_1_1_layer_element_1a18a441b994205fe34cd9d03a56cda578" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsInBeamSpan</name></member>
       <member refid="classvrv_1_1_layer_element_1a55dbe63eb131c1a1f00da98fe5f08c9b" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsInFTrem</name></member>
+      <member refid="classvrv_1_1_layer_element_1a1a3fd90f3d076ad8e0623cd72cb168a7" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsInFTrem</name></member>
       <member refid="classvrv_1_1_layer_element_1a6d695a92219be680737010275c9cd282" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsInLigature</name></member>
       <member refid="classvrv_1_1_facsimile_interface_1abdcdd8ff1cefaa17fab33ee7c78a2ec2" prot="public" virt="virtual" ambiguityscope="vrv::"><scope>vrv::Note</scope><name>IsInterface</name></member>
       <member refid="classvrv_1_1_linking_interface_1ad1a3839eaa143c325b741151e7f9b084" prot="public" virt="virtual" ambiguityscope="vrv::LinkingInterface::"><scope>vrv::Note</scope><name>IsInterface</name></member>
       <member refid="classvrv_1_1_duration_interface_1aa95bb6fba812c2b05620c3b862e0f6e5" prot="public" virt="virtual" ambiguityscope="vrv::DurationInterface::"><scope>vrv::Note</scope><name>IsInterface</name></member>
       <member refid="classvrv_1_1_pitch_interface_1ad5eb2bfb6682e72699fe4fb140a47350" prot="public" virt="virtual" ambiguityscope="vrv::PitchInterface::"><scope>vrv::Note</scope><name>IsInterface</name></member>
       <member refid="classvrv_1_1_position_interface_1aca64be02a7dd6b30f996cf4151858a58" prot="public" virt="virtual" ambiguityscope="vrv::PositionInterface::"><scope>vrv::Note</scope><name>IsInterface</name></member>
-      <member refid="classvrv_1_1_duration_interface_1ae07578a3e138bddc967229f1ee93cb94" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsLastInBeam</name></member>
+      <member refid="classvrv_1_1_duration_interface_1ab7a23457945d43056b01fde4cc1d8b46" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsLastInBeam</name></member>
       <member refid="classvrv_1_1_object_1a311186b3525f994471394fcc38bbcda8" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsLayerElement</name></member>
       <member refid="classvrv_1_1_duration_interface_1a66a8195b6236d862a2234af1fb5256c1" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsMensuralDur</name></member>
       <member refid="classvrv_1_1_object_1aa9ad841690ea5c7b3326d8863140a7f8" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsMilestoneElement</name></member>
@@ -2500,7 +2502,7 @@
       <member refid="classvrv_1_1_note_1ac26e2929345acac8005ff5c3c7117069" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsTabGrpNote</name></member>
       <member refid="classvrv_1_1_object_1a958bf53eb4117b0438aa5ddb9264c1c8" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsTextElement</name></member>
       <member refid="classvrv_1_1_note_1a476460180d727c745ab0b74608c44162" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsUnisonWith</name></member>
-      <member refid="classvrv_1_1_note_1a598f4774d77583117482ada9ef5681e4" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsVisible</name></member>
+      <member refid="classvrv_1_1_note_1a4bbaa20a8cbdc5405f513135cc6117f6" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsVisible</name></member>
       <member refid="classvrv_1_1_object_1af644f5ed4600bb29ca03ded3f95b3467" prot="public" virt="virtual"><scope>vrv::Note</scope><name>JustifyX</name></member>
       <member refid="classvrv_1_1_object_1afc5a347cc3aa0a158036cdabc32157da" prot="public" virt="virtual"><scope>vrv::Note</scope><name>JustifyY</name></member>
       <member refid="classvrv_1_1_object_1ab65875db006b1e1207a8ee70de7095b2" prot="public" virt="virtual"><scope>vrv::Note</scope><name>JustifyYAdjustCrossStaff</name></member>
@@ -2531,7 +2533,7 @@
       <member refid="classvrv_1_1_note_1a6c2a769f7c103ebc94d68c147184df08" prot="private" virt="non-virtual"><scope>vrv::Note</scope><name>m_stemSameasRole</name></member>
       <member refid="classvrv_1_1_object_1a74ae0995caefb72a71445ba43fce0652" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>m_unsupported</name></member>
       <member refid="classvrv_1_1_layer_element_1a66bf79ef721a113ab2e5ff354313fe2e" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>m_xAbs</name></member>
-      <member refid="classvrv_1_1_object_1a985728e489aed60707c313327bf7c464" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>Modify</name></member>
+      <member refid="classvrv_1_1_object_1a30996d1e8460f2110900b490425c16ec" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>Modify</name></member>
       <member refid="classvrv_1_1_object_1aa846e8099e10d6cf427e8255e4a62dd4" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>MoveChildrenFrom</name></member>
       <member refid="classvrv_1_1_object_1ac7063ea155c08f4e39e5c59b735f1d9e" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>MoveItselfTo</name></member>
       <member refid="classvrv_1_1_note_1aec35e5f742e883b3c8bbd7d4a7ecc5c2" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>Note</name></member>
@@ -2547,6 +2549,7 @@
       <member refid="classvrv_1_1_layer_element_1ac6ff2d83bca4e2a69820fb9edd2e8b6e" prot="public" virt="virtual"><scope>vrv::Note</scope><name>PrepareCrossStaff</name></member>
       <member refid="classvrv_1_1_layer_element_1a55dc696b80e010d43afc80ab50188be7" prot="public" virt="virtual"><scope>vrv::Note</scope><name>PrepareCrossStaffEnd</name></member>
       <member refid="classvrv_1_1_layer_element_1a531f63735ec8806daf157d56c632ae20" prot="public" virt="virtual"><scope>vrv::Note</scope><name>PrepareCueSize</name></member>
+      <member refid="classvrv_1_1_object_1a98d146eef64e8225c9b6d18c3bbb615c" prot="public" virt="virtual"><scope>vrv::Note</scope><name>PrepareDataInitialization</name></member>
       <member refid="classvrv_1_1_layer_element_1aa93e89c2df59f5c6c8d345d680fce3ae" prot="public" virt="virtual"><scope>vrv::Note</scope><name>PrepareDelayedTurns</name></member>
       <member refid="classvrv_1_1_layer_element_1a65909f1b435e1059b76f60ab9f5d274e" prot="public" virt="virtual"><scope>vrv::Note</scope><name>PrepareDuration</name></member>
       <member refid="classvrv_1_1_object_1ac75af86dda467af7ae8d928c83b1a7c8" prot="public" virt="virtual"><scope>vrv::Note</scope><name>PrepareFacsimile</name></member>

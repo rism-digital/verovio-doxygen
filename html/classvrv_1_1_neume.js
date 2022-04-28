@@ -9,7 +9,7 @@ var classvrv_1_1_neume =
     [ "GetLowestPitch", "classvrv_1_1_neume.html#af47bcdf0360357ebe69e8185ad210e99", null ],
     [ "GetNeumeGroup", "classvrv_1_1_neume.html#a481c55b8281aef7bbb87737b75fcc1d5", null ],
     [ "GetPitchDifferences", "classvrv_1_1_neume.html#ae5b28d67395ab6013e98cce077b71046", null ],
-    [ "IsLastInNeume", "classvrv_1_1_neume.html#ad0d60f0b4e577a2c2e0e80ec4454fe85", null ],
+    [ "IsLastInNeume", "classvrv_1_1_neume.html#a3f71d0aca884aed34f54144a5c5c952f", null ],
     [ "IsSupportedChild", "classvrv_1_1_neume.html#a607d4c6dca62704277776f8662690cd6", null ],
     [ "Reset", "classvrv_1_1_neume.html#a5dfd315007c50750489cd2b4a6afc3b2", null ]
 ];

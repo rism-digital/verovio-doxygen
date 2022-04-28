@@ -1004,6 +1004,7 @@ var hierarchy =
       [ "vrv::LayerCountInTimeSpanParams", "classvrv_1_1_layer_count_in_time_span_params.html", null ],
       [ "vrv::LayerElementsInTimeSpanParams", "classvrv_1_1_layer_elements_in_time_span_params.html", null ],
       [ "vrv::PrepareCrossStaffParams", "classvrv_1_1_prepare_cross_staff_params.html", null ],
+      [ "vrv::PrepareDataInitializationParams", "classvrv_1_1_prepare_data_initialization_params.html", null ],
       [ "vrv::PrepareDelayedTurnsParams", "classvrv_1_1_prepare_delayed_turns_params.html", null ],
       [ "vrv::PrepareDurationParams", "classvrv_1_1_prepare_duration_params.html", null ],
       [ "vrv::PrepareFacsimileParams", "classvrv_1_1_prepare_facsimile_params.html", null ],

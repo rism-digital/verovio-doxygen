@@ -7,7 +7,7 @@ var classvrv_1_1_staff_def_drawing_interface =
     [ "DrawKeySig", "classvrv_1_1_staff_def_drawing_interface.html#ac0952e8be7f77c790e11bb5614312737", null ],
     [ "DrawMensur", "classvrv_1_1_staff_def_drawing_interface.html#aaac1940882febdca988dd88db5b40ce7", null ],
     [ "DrawMeterSig", "classvrv_1_1_staff_def_drawing_interface.html#a4a9c0b9e08b106d8183753b06c9f4e75", null ],
-    [ "DrawMeterSigGrp", "classvrv_1_1_staff_def_drawing_interface.html#a59d1c972aa0480849dd64cf6199b5a20", null ],
+    [ "DrawMeterSigGrp", "classvrv_1_1_staff_def_drawing_interface.html#a0a35361f243af208d266bb80d1471fa3", null ],
     [ "GetCurrentClef", "classvrv_1_1_staff_def_drawing_interface.html#a8a0d101e91cb23c858883624de2c4237", null ],
     [ "GetCurrentKeySig", "classvrv_1_1_staff_def_drawing_interface.html#a189c279fda5b3e2ef3941b49d103cd71", null ],
     [ "GetCurrentMensur", "classvrv_1_1_staff_def_drawing_interface.html#a4eab54ab49ffc228a17a529a106dbef8", null ],
