@@ -47,7 +47,7 @@ var classvrv_1_1_chord =
     [ "IsVisible", "classvrv_1_1_chord.html#a513eb215a397a4995e8b261df9740198", null ],
     [ "JustifyYAdjustCrossStaff", "classvrv_1_1_chord.html#ade2ce8d25c8d108b4dfbbd014e019866", null ],
     [ "PositionInChord", "classvrv_1_1_chord.html#aad7e7092366522e7bb388afb98a215e2", null ],
-    [ "PrepareDataInitialization", "classvrv_1_1_chord.html#ab1f4a983b94a388e7ba3a5b3abb40ba6", null ],
+    [ "PrepareDataInitialization", "classvrv_1_1_chord.html#aa5e392deeac9836a1068249c715610dd", null ],
     [ "PrepareLayerElementParts", "classvrv_1_1_chord.html#a15242ceeb9c93c0580f91e113b1b7995", null ],
     [ "PrepareLyrics", "classvrv_1_1_chord.html#a36150519804262324dbbc0e2a297b292", null ],
     [ "Reset", "classvrv_1_1_chord.html#a4b05be56b85202f76ab861836f8c04c2", null ],

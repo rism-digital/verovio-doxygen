@@ -13,7 +13,7 @@ var classvrv_1_1_key_sig =
     [ "HasToBeAligned", "classvrv_1_1_key_sig.html#aeb3ee65a123ae63db5bf5c92d1ad4d46", null ],
     [ "IsScoreDefElement", "classvrv_1_1_key_sig.html#a96e2e5cd2d46c34128359086e75ee16d", null ],
     [ "IsSupportedChild", "classvrv_1_1_key_sig.html#a8a07b810a84d60112492a6a9840fb8a6", null ],
-    [ "PrepareDataInitialization", "classvrv_1_1_key_sig.html#aa7d3496c2538675ededab159a31f474a", null ],
+    [ "PrepareDataInitialization", "classvrv_1_1_key_sig.html#a04457a4d48101e02cf3ccd0decb3afa0", null ],
     [ "Reset", "classvrv_1_1_key_sig.html#ae7a01caa6e8ea3a37521ff4db39415e6", null ],
     [ "Transpose", "classvrv_1_1_key_sig.html#a0a2a2afe1a3f9aef0cb0bd8c542bd79b", null ],
     [ "m_drawingCancelAccidCount", "classvrv_1_1_key_sig.html#a1cee69880edc205bf3e1627e99072cdd", null ],

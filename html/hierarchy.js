@@ -891,6 +891,7 @@ var hierarchy =
         [ "vrv::AttNIntegerComparison", "classvrv_1_1_att_n_integer_comparison.html", null ],
         [ "vrv::AttNNumberLikeComparison", "classvrv_1_1_att_n_number_like_comparison.html", null ],
         [ "vrv::AttVisibilityComparison", "classvrv_1_1_att_visibility_comparison.html", null ],
+        [ "vrv::CrossAlignmentReferenceComparison", "classvrv_1_1_cross_alignment_reference_comparison.html", null ],
         [ "vrv::IsAttributeComparison", "classvrv_1_1_is_attribute_comparison.html", null ],
         [ "vrv::IsEmptyComparison", "classvrv_1_1_is_empty_comparison.html", null ],
         [ "vrv::MeasureAlignerTypeComparison", "classvrv_1_1_measure_aligner_type_comparison.html", null ],

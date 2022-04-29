@@ -11,7 +11,7 @@ var classvrv_1_1_alignment_reference =
     [ "AdjustLayers", "classvrv_1_1_alignment_reference.html#aa22509f78b405b63a5a6c51b6c289ffd", null ],
     [ "AdjustLayersEnd", "classvrv_1_1_alignment_reference.html#a42fc6c5a57eaec449d5b88ccf84de371", null ],
     [ "HasAccidVerticalOverlap", "classvrv_1_1_alignment_reference.html#a07f81e388a3e9c7851b9adb9d59d0194", null ],
-    [ "HasCrossStaffElements", "classvrv_1_1_alignment_reference.html#ae5049f7ae4cf1d11748f309dd1c81bbe", null ],
+    [ "HasCrossStaffElements", "classvrv_1_1_alignment_reference.html#ad88dbf946e0441c77075ae5d6e43320b", null ],
     [ "HasMultipleLayer", "classvrv_1_1_alignment_reference.html#a9c1895942dd54bf9ac12b788dbf7570c", null ],
     [ "IsSupportedChild", "classvrv_1_1_alignment_reference.html#ab1145409381d64fa25d3b506c14872da", null ],
     [ "Reset", "classvrv_1_1_alignment_reference.html#a084e3418ace027cbfa49a29e889186a4", null ],

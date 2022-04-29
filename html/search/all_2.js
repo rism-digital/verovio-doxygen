@@ -128,6 +128,7 @@ var searchData=
   ['course_277',['Course',['../classvrv_1_1_course.html',1,'vrv']]],
   ['create_278',['Create',['../classvrv_1_1_object_factory.html#a83da56ce4ef8b890f1e224dfea4e8fdc',1,'vrv::ObjectFactory']]],
   ['createdefaultzone_279',['CreateDefaultZone',['../classvrv_1_1_syl.html#a61983aa1e78d32047fffe5f3c083c09f',1,'vrv::Syl']]],
-  ['curvespannedelement_280',['CurveSpannedElement',['../classvrv_1_1_curve_spanned_element.html',1,'vrv']]],
-  ['custos_281',['Custos',['../classvrv_1_1_custos.html',1,'vrv']]]
+  ['crossalignmentreferencecomparison_280',['CrossAlignmentReferenceComparison',['../classvrv_1_1_cross_alignment_reference_comparison.html',1,'vrv']]],
+  ['curvespannedelement_281',['CurveSpannedElement',['../classvrv_1_1_curve_spanned_element.html',1,'vrv']]],
+  ['custos_282',['Custos',['../classvrv_1_1_custos.html',1,'vrv']]]
 ];

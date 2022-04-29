@@ -93,6 +93,7 @@ var annotated_dup =
       [ "ConvertToUnCastOffMensuralParams", "classvrv_1_1_convert_to_un_cast_off_mensural_params.html", "classvrv_1_1_convert_to_un_cast_off_mensural_params" ],
       [ "Corr", "classvrv_1_1_corr.html", "classvrv_1_1_corr" ],
       [ "Course", "classvrv_1_1_course.html", "classvrv_1_1_course" ],
+      [ "CrossAlignmentReferenceComparison", "classvrv_1_1_cross_alignment_reference_comparison.html", "classvrv_1_1_cross_alignment_reference_comparison" ],
       [ "CurveSpannedElement", "classvrv_1_1_curve_spanned_element.html", "classvrv_1_1_curve_spanned_element" ],
       [ "Custos", "classvrv_1_1_custos.html", "classvrv_1_1_custos" ],
       [ "Damage", "classvrv_1_1_damage.html", "classvrv_1_1_damage" ],
