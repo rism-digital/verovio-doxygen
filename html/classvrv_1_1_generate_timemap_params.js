@@ -1,6 +1,7 @@
 var classvrv_1_1_generate_timemap_params =
 [
     [ "GenerateTimemapParams", "classvrv_1_1_generate_timemap_params.html#a0f6eba24b4af7438b027375da2d6bba4", null ],
+    [ "m_cueExclusion", "classvrv_1_1_generate_timemap_params.html#aa90997f4dcf65cbd2a5472e05684c111", null ],
     [ "m_currentTempo", "classvrv_1_1_generate_timemap_params.html#a22a7b5f14a3744c9a58571ebde257e9a", null ],
     [ "m_functor", "classvrv_1_1_generate_timemap_params.html#aae012b8624c98644fa6df070f0b2f520", null ],
     [ "m_realTimeOffsetMilliseconds", "classvrv_1_1_generate_timemap_params.html#a02f0f4eab90900ce799ecf30657fc9cc", null ],
