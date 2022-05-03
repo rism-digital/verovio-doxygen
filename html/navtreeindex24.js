@@ -1,9 +1,5 @@
 var NAVTREEINDEX24 =
 {
-"num_8h_source.html":[2,0,105],
-"object_8h_source.html":[2,0,106],
-"octave_8h_source.html":[2,0,107],
-"options_8h_source.html":[2,0,108],
 "orig_8h_source.html":[2,0,109],
 "page_8h_source.html":[2,0,110],
 "pageelement_8h_source.html":[2,0,111],
