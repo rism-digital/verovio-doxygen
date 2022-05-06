@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"classvrv_1_1_is_attribute_comparison.html#a9800f56501c69407aad6d757169f6634":[1,0,0,174,1],
 "classvrv_1_1_is_attribute_comparison.html#aab4a1e6104d78373de7106f7762f0836":[1,0,0,174,0],
 "classvrv_1_1_is_editorial_element_comparison.html":[1,0,0,175],
 "classvrv_1_1_is_editorial_element_comparison.html#a7753db9bbfa95c25e94e80e94eb03fb0":[1,0,0,175,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "classvrv_1_1_layer_element.html#ae0892552c2a0397e84024139a0292f6f":[1,0,0,187,38],
 "classvrv_1_1_layer_element.html#ae89f22d40bd5303aea5eb58f0d84d149":[1,0,0,187,89],
 "classvrv_1_1_layer_element.html#aea991d58f5392b8433bcfb17054c8bd0":[1,0,0,187,65],
-"classvrv_1_1_layer_element.html#aefcc06a0ea9b6e51f228464ce33a7385":[1,0,0,187,81],
-"classvrv_1_1_layer_element.html#af14973423c50d4a301799acafee56877":[1,0,0,187,87]
+"classvrv_1_1_layer_element.html#aefcc06a0ea9b6e51f228464ce33a7385":[1,0,0,187,81]
 };

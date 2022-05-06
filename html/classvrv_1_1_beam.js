@@ -11,6 +11,7 @@ var classvrv_1_1_beam =
     [ "GetBeamDrawingInterface", "classvrv_1_1_beam.html#a30b0869084e93fa6f7b3b63120f2aae2", null ],
     [ "GetBeamDrawingInterface", "classvrv_1_1_beam.html#aea2dbf22048c56831aad736c815b83b5", null ],
     [ "GetBeamPartDuration", "classvrv_1_1_beam.html#ae23cb7f5a6c8f24996e13a6e2e12ffe6", null ],
+    [ "GetBeamPartDuration", "classvrv_1_1_beam.html#aae048e4914c8102653e0252f4aac46ad", null ],
     [ "GetClassName", "classvrv_1_1_beam.html#a9cfa9116610446a4d1dac12e691c11fe", null ],
     [ "GetElementCoords", "classvrv_1_1_beam.html#a1bbd297104dd527dbf817a71e5129599", null ],
     [ "GetNoteCount", "classvrv_1_1_beam.html#a57682a7262276b450a4b2b295d4729a9", null ],
