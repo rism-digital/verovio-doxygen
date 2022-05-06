@@ -104,38 +104,42 @@ $(document).ready(function(){initNavTree('btrem_8h_source.html',''); initResizab
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// BTrem (bowed tremolo)</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classvrv_1_1_b_trem.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_b_trem.html">BTrem</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>, <span class="keyword">public</span> AttBTremLog, <span class="keyword">public</span> AttTremMeasured {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classvrv_1_1_b_trem.html">BTrem</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_b_trem.html">BTrem</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classvrv_1_1_b_trem.html#a6e41b6981c22fe7b5931ad0dbc0cc622">   32</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_b_trem.html#a6e41b6981c22fe7b5931ad0dbc0cc622">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_b_trem.html">BTrem</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_b_trem.html#a67902297106b8a1a948e8e1adf74d0ff">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;BTrem&quot;</span>; }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_b_trem.html#a43f095b5d502660e15075ebeb70207ed">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    data_STEMMODIFIER <a class="code" href="classvrv_1_1_b_trem.html#ad98bfea5ea3ea48ed6172f22a3f60d0d">GetDrawingStemMod</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classvrv_1_1_b_trem.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_b_trem.html">BTrem</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;              <span class="keyword">public</span> AttBTremLog,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;              <span class="keyword">public</span> AttNumbered,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;              <span class="keyword">public</span> AttNumberPlacement,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;              <span class="keyword">public</span> AttTremMeasured {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classvrv_1_1_b_trem.html">BTrem</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_b_trem.html">BTrem</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classvrv_1_1_b_trem.html#a6e41b6981c22fe7b5931ad0dbc0cc622">   36</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_b_trem.html#a6e41b6981c22fe7b5931ad0dbc0cc622">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_b_trem.html">BTrem</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_b_trem.html#a67902297106b8a1a948e8e1adf74d0ff">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;BTrem&quot;</span>; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_b_trem.html#a43f095b5d502660e15075ebeb70207ed">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    data_STEMMODIFIER <a class="code" href="classvrv_1_1_b_trem.html#ad98bfea5ea3ea48ed6172f22a3f60d0d">GetDrawingStemMod</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_b_trem.html#ac3622d59fe6ef0786399836527c4bf23">GenerateMIDI</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    data_DURATION CalcIndividualNoteDuration() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_b_trem.html#ac3622d59fe6ef0786399836527c4bf23">GenerateMIDI</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    data_DURATION CalcIndividualNoteDuration() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_b_trem_html_a6e41b6981c22fe7b5931ad0dbc0cc622"><div class="ttname"><a href="classvrv_1_1_b_trem.html#a6e41b6981c22fe7b5931ad0dbc0cc622">vrv::BTrem::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> btrem.h:32</div></div>
+<div class="ttc" id="aclassvrv_1_1_b_trem_html_a6e41b6981c22fe7b5931ad0dbc0cc622"><div class="ttname"><a href="classvrv_1_1_b_trem.html#a6e41b6981c22fe7b5931ad0dbc0cc622">vrv::BTrem::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> btrem.h:36</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:56</div></div>
 <div class="ttc" id="aclassvrv_1_1_b_trem_html"><div class="ttname"><a href="classvrv_1_1_b_trem.html">vrv::BTrem</a></div><div class="ttdoc">This class models the MEI &lt;bTrem&gt; element.</div><div class="ttdef"><b>Definition:</b> btrem.h:23</div></div>
 <div class="ttc" id="aclassvrv_1_1_b_trem_html_a67902297106b8a1a948e8e1adf74d0ff"><div class="ttname"><a href="classvrv_1_1_b_trem.html#a67902297106b8a1a948e8e1adf74d0ff">vrv::BTrem::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Reset the object, that is 1) removing all childs and 2) resetting all attributes.</div></div>
@@ -147,7 +151,7 @@ $(document).ready(function(){initNavTree('btrem_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>btrem.h</b></li>
-    <li class="footer">Generated on Tue May 3 2022 13:08:45 for Verovio by
+    <li class="footer">Generated on Fri May 6 2022 07:53:02 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
