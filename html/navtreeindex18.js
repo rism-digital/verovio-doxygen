@@ -1,5 +1,15 @@
 var NAVTREEINDEX18 =
 {
+"classvrv_1_1_score_def_element.html#ae2a6767fc87cd4f1b6d2e061af175406":[1,0,0,295,22],
+"classvrv_1_1_score_def_element.html#ae34d1d7484e6f0a48bc49c45446397e0":[1,0,0,295,5],
+"classvrv_1_1_score_def_element.html#ae6f9fdfa2d2a13c5ec9d4dbb3affcc79":[1,0,0,295,23],
+"classvrv_1_1_score_def_interface.html":[1,0,0,296],
+"classvrv_1_1_score_def_interface.html#a18894cce558b97f738253e4dd05cf3c2":[1,0,0,296,3],
+"classvrv_1_1_score_def_interface.html#a7f6da3114adfa5ee34db76e383399a02":[1,0,0,296,0],
+"classvrv_1_1_score_def_interface.html#aaa4843bcd84822b7401990c55d6735d2":[1,0,0,296,2],
+"classvrv_1_1_score_def_interface.html#add4e6386611b3820c1ab122e0295f6e3":[1,0,0,296,1],
+"classvrv_1_1_score_def_optimize_params.html":[1,0,0,297],
+"classvrv_1_1_score_def_optimize_params.html#a009b036c0a32bd6abdf55819e3aafbe7":[1,0,0,297,8],
 "classvrv_1_1_score_def_optimize_params.html#a3f69f36d9ddfdea3a91480b4f5cfbd3e":[1,0,0,297,4],
 "classvrv_1_1_score_def_optimize_params.html#a4a048cd2ff4cd35fa1f2e4284885be24":[1,0,0,297,3],
 "classvrv_1_1_score_def_optimize_params.html#a6332078797d5d2a155b074b324fe2da0":[1,0,0,297,5],
@@ -237,17 +247,7 @@ var NAVTREEINDEX18 =
 "classvrv_1_1_staff_def.html#af1ecece5715ab0974b7d33407e566166":[1,0,0,312,6],
 "classvrv_1_1_staff_def_drawing_interface.html":[1,0,0,313],
 "classvrv_1_1_staff_def_drawing_interface.html#a0a35361f243af208d266bb80d1471fa3":[1,0,0,313,7],
+"classvrv_1_1_staff_def_drawing_interface.html#a1302666a5050778986fb321f95159b50":[1,0,0,313,5],
 "classvrv_1_1_staff_def_drawing_interface.html#a182bfa04d47d929c9bbba966bee632f4":[1,0,0,313,0],
-"classvrv_1_1_staff_def_drawing_interface.html#a189c279fda5b3e2ef3941b49d103cd71":[1,0,0,313,9],
-"classvrv_1_1_staff_def_drawing_interface.html#a1c2e114513254f455cb0e19282dc9156":[1,0,0,313,1],
-"classvrv_1_1_staff_def_drawing_interface.html#a486eafb72d60c7d68b7781fb8fb7aa3c":[1,0,0,313,19],
-"classvrv_1_1_staff_def_drawing_interface.html#a4a9c0b9e08b106d8183753b06c9f4e75":[1,0,0,313,6],
-"classvrv_1_1_staff_def_drawing_interface.html#a4eab54ab49ffc228a17a529a106dbef8":[1,0,0,313,10],
-"classvrv_1_1_staff_def_drawing_interface.html#a5a48e5d4eddd28d3c2cdb33d6cf1cca1":[1,0,0,313,20],
-"classvrv_1_1_staff_def_drawing_interface.html#a64405851105809aebe288dd9cd24ad19":[1,0,0,313,16],
-"classvrv_1_1_staff_def_drawing_interface.html#a6631c6e8d886e96361df687fdc88af86":[1,0,0,313,2],
-"classvrv_1_1_staff_def_drawing_interface.html#a678553669508c8223c840309360bbe3f":[1,0,0,313,21],
-"classvrv_1_1_staff_def_drawing_interface.html#a75ec11ac53bc36f8c32ad359005da435":[1,0,0,313,14],
-"classvrv_1_1_staff_def_drawing_interface.html#a82cbeafa5ea501e202afe5b769c006ff":[1,0,0,313,17],
-"classvrv_1_1_staff_def_drawing_interface.html#a8a0d101e91cb23c858883624de2c4237":[1,0,0,313,8]
+"classvrv_1_1_staff_def_drawing_interface.html#a189c279fda5b3e2ef3941b49d103cd71":[1,0,0,313,10]
 };

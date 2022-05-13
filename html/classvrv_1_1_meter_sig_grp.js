@@ -12,5 +12,5 @@ var classvrv_1_1_meter_sig_grp =
     [ "GetSimplifiedMeterSig", "classvrv_1_1_meter_sig_grp.html#a9db79270ec429a057032a2679735a424", null ],
     [ "IsSupportedChild", "classvrv_1_1_meter_sig_grp.html#aad2431fb308c4b005add881ace1a58b0", null ],
     [ "Reset", "classvrv_1_1_meter_sig_grp.html#a45467b999047fb76dd5f686749c13f5f", null ],
-    [ "SetMeasureBasedCount", "classvrv_1_1_meter_sig_grp.html#a2c9a00d013797ed6f5ae0396bab90118", null ]
+    [ "SetMeasureBasedCount", "classvrv_1_1_meter_sig_grp.html#ae4b3efdb4c54180a133fd082147682ba", null ]
 ];
