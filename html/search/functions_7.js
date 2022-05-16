@@ -30,7 +30,7 @@ var searchData=
   ['ischordtone_2137',['IsChordTone',['../classvrv_1_1_note.html#a8fac70447933b92e2615280b6909e351',1,'vrv::Note']]],
   ['isclosertostaffthan_2138',['IsCloserToStaffThan',['../classvrv_1_1_fing.html#a7211238932fbf4fc20c94e97c7dbc9ca',1,'vrv::Fing::IsCloserToStaffThan()'],['../classvrv_1_1_floating_object.html#a33e63919403a78ab01c46e22ff264d4c',1,'vrv::FloatingObject::IsCloserToStaffThan()']]],
   ['iselementbelow_2139',['IsElementBelow',['../classvrv_1_1_slur.html#af985dd149add242a1d45e5ef3a0c32fa',1,'vrv::Slur']]],
-  ['isempty_2140',['IsEmpty',['../classvrv_1_1_segmented_line.html#aa996c2ce49be02747886a79b45e030d3',1,'vrv::SegmentedLine']]],
+  ['isempty_2140',['IsEmpty',['../classvrv_1_1_segmented_line.html#a2661b5e6e82eba98319d505b3e931582',1,'vrv::SegmentedLine']]],
   ['isenharmonicwith_2141',['IsEnharmonicWith',['../classvrv_1_1_note.html#a2a984db0827252cd46b7ed9799c098ce',1,'vrv::Note']]],
   ['isextenderelement_2142',['IsExtenderElement',['../classvrv_1_1_dir.html#a3bc39e827b43b1431f9dc97c51bda5a4',1,'vrv::Dir::IsExtenderElement()'],['../classvrv_1_1_dynam.html#a4385439841413bc58bbb7d607fa4a234',1,'vrv::Dynam::IsExtenderElement()'],['../classvrv_1_1_floating_object.html#a8781df9fac1bad66c08cdae278be23e4',1,'vrv::FloatingObject::IsExtenderElement()']]],
   ['isfirstin_2143',['IsFirstIn',['../classvrv_1_1_beam_drawing_interface.html#ac4293802ae5a0f7d45cc6b106fb33032',1,'vrv::BeamDrawingInterface']]],
@@ -60,7 +60,7 @@ var searchData=
   ['istabbeam_2167',['IsTabBeam',['../classvrv_1_1_beam.html#a26f7b2d176314772a13b06ec15d23758',1,'vrv::Beam']]],
   ['istabgrpnote_2168',['IsTabGrpNote',['../classvrv_1_1_note.html#a33d2ecc1b1027f9f6c4a978b6f268073',1,'vrv::Note']]],
   ['isunisonwith_2169',['IsUnisonWith',['../classvrv_1_1_note.html#a476460180d727c745ab0b74608c44162',1,'vrv::Note']]],
-  ['isunsegmented_2170',['IsUnsegmented',['../classvrv_1_1_segmented_line.html#a181fb19bdd3fbf969eb236118315e065',1,'vrv::SegmentedLine']]],
+  ['isunsegmented_2170',['IsUnsegmented',['../classvrv_1_1_segmented_line.html#ad35db1a66c9a506813ce1b0bec2aae79',1,'vrv::SegmentedLine']]],
   ['isvalidref_2171',['IsValidRef',['../classvrv_1_1_arpeg.html#ae17abbb42c15c08e953b014032ba6203',1,'vrv::Arpeg::IsValidRef()'],['../classvrv_1_1_plist_interface.html#ad0394329ca5d2c32c1bf302c6d8a0223',1,'vrv::PlistInterface::IsValidRef()']]],
   ['isvisible_2172',['IsVisible',['../classvrv_1_1_chord.html#a513eb215a397a4995e8b261df9740198',1,'vrv::Chord::IsVisible()'],['../classvrv_1_1_note.html#a4bbaa20a8cbdc5405f513135cc6117f6',1,'vrv::Note::IsVisible()']]]
 ];
