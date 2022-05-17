@@ -1061,6 +1061,7 @@ var hierarchy =
     [ "vrv::MIDIChord", "structvrv_1_1_m_i_d_i_chord.html", null ],
     [ "vrv::MIDIHeldNote", "structvrv_1_1_m_i_d_i_held_note.html", null ],
     [ "vrv::MIDINote", "structvrv_1_1_m_i_d_i_note.html", null ],
+    [ "vrv::NearEndCollision", "structvrv_1_1_near_end_collision.html", null ],
     [ "vrv::ObjectComparison", "classvrv_1_1_object_comparison.html", null ],
     [ "vrv::ObjectFactory", "classvrv_1_1_object_factory.html", null ],
     [ "vrv::ObjectListInterface", "classvrv_1_1_object_list_interface.html", [

@@ -219,6 +219,7 @@ var annotated_dup =
       [ "MultiRpt", "classvrv_1_1_multi_rpt.html", "classvrv_1_1_multi_rpt" ],
       [ "MusicXmlInput", "classvrv_1_1_music_xml_input.html", "classvrv_1_1_music_xml_input" ],
       [ "Nc", "classvrv_1_1_nc.html", "classvrv_1_1_nc" ],
+      [ "NearEndCollision", "structvrv_1_1_near_end_collision.html", "structvrv_1_1_near_end_collision" ],
       [ "Neume", "classvrv_1_1_neume.html", "classvrv_1_1_neume" ],
       [ "Note", "classvrv_1_1_note.html", "classvrv_1_1_note" ],
       [ "NoteOrRestOnsetOffsetComparison", "classvrv_1_1_note_or_rest_onset_offset_comparison.html", "classvrv_1_1_note_or_rest_onset_offset_comparison" ],

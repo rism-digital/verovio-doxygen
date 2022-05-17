@@ -2281,6 +2281,9 @@
     <member refid="classvrv_1_1_floating_curve_positioner_1a47a0eae43c8c6149f17c343b0b1ab13a" kind="function"><name>GetPoints</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a8db594a5e3b74fb1f5931263c1a8241d" kind="function"><name>GetThickness</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a5a08bc102f523022b0095cc89a59dcba" kind="function"><name>GetDir</name></member>
+    <member refid="classvrv_1_1_floating_curve_positioner_1a2d755ae11d8cdcefbef9162839fb8e90" kind="function"><name>HasCachedX12</name></member>
+    <member refid="classvrv_1_1_floating_curve_positioner_1af0dc224ad0601b5ec5e646baa7e04b95" kind="function"><name>GetCachedX12</name></member>
+    <member refid="classvrv_1_1_floating_curve_positioner_1a1d64753fa1d7681ab9b164d6fb8549eb" kind="function"><name>SetCachedX12</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a3dad2cda31b4868744e566b3f1adf7b3" kind="function"><name>SetCrossStaff</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a64e936c29627c4cf8be7930e88f5b441" kind="function"><name>GetCrossStaff</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a9bf76981377bc2618013786108c229fe" kind="function"><name>IsCrossStaff</name></member>
@@ -2292,6 +2295,7 @@
     <member refid="classvrv_1_1_floating_curve_positioner_1ac48e64e8464c456478585361755f2110" kind="variable"><name>m_crossStaff</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1afd6a7110c3ea0e1a48065fa80498fb7c" kind="variable"><name>m_spannedElements</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1abd661bee76cc30e190ea15238f90aa16" kind="variable"><name>m_cachedMinMaxY</name></member>
+    <member refid="classvrv_1_1_floating_curve_positioner_1a7c5239c078a190edb1a5a7b93efb78df" kind="variable"><name>m_cachedX12</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a18970d9e72beff35adf0d459a73634ec" kind="variable"><name>m_requestedStaffSpace</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a3cbd2dd57e3eb9a687f91c9ba6185bfb" kind="function"><name>FloatingCurvePositioner</name></member>
     <member refid="classvrv_1_1_floating_curve_positioner_1a182a06641e3574eb9c7b4b43baf5c4df" kind="function"><name>~FloatingCurvePositioner</name></member>
@@ -4409,6 +4413,11 @@
     <member refid="classvrv_1_1_nc_1a6bcc4c30d15a1b757a8a5ac93c15f09c" kind="function"><name>GetPitchInterface</name></member>
     <member refid="classvrv_1_1_nc_1adbc6d6fa3a17d0746f1b95ecc4ed74e1" kind="function"><name>GetPitchInterface</name></member>
   </compound>
+  <compound refid="structvrv_1_1_near_end_collision" kind="struct"><name>vrv::NearEndCollision</name>
+    <member refid="structvrv_1_1_near_end_collision_1aeef6d186fc72dac1316fdc305f4dea6a" kind="variable"><name>metricAtStart</name></member>
+    <member refid="structvrv_1_1_near_end_collision_1a31560c558c0358b24fa8ab7aedf16e61" kind="variable"><name>metricAtEnd</name></member>
+    <member refid="structvrv_1_1_near_end_collision_1a84cb4fb1addcd8a4f1a1cec64f759302" kind="variable"><name>endPointsAdjusted</name></member>
+  </compound>
   <compound refid="classvrv_1_1_neume" kind="class"><name>vrv::Neume</name>
     <member refid="classvrv_1_1_neume_1a7ef37c29a357205c1140f08f890f8476" kind="function"><name>Neume</name></member>
     <member refid="classvrv_1_1_neume_1aa01b75b6514a606f567459c710a89753" kind="function"><name>~Neume</name></member>
@@ -6182,18 +6191,22 @@
     <member refid="classvrv_1_1_slur_1a38661bbed546a998f76716077bffeb48" kind="function"><name>HasEndpointBelowStart</name></member>
     <member refid="classvrv_1_1_slur_1ace6b566010648118388c07ea991988fa" kind="function"><name>HasEndpointAboveEnd</name></member>
     <member refid="classvrv_1_1_slur_1a2692e973bd07581652583080bd59b73a" kind="function"><name>HasEndpointBelowEnd</name></member>
-    <member refid="classvrv_1_1_slur_1af985dd149add242a1d45e5ef3a0c32fa" kind="function"><name>IsElementBelow</name></member>
-    <member refid="classvrv_1_1_slur_1a7fbfc979567160c6269d469cf34e9a57" kind="function"><name>IsElementBelow</name></member>
     <member refid="classvrv_1_1_slur_1a054686027f7672ea9c8d2789490a2e18" kind="function"><name>AdjustSlur</name></member>
     <member refid="classvrv_1_1_slur_1af9f7ea0dd157317dfcbbcb787793726e" kind="function"><name>GetAdjustedSlurAngle</name></member>
     <member refid="classvrv_1_1_slur_1af1e431fe4cbddf6d102a7f1d33878605" kind="function"><name>GetBoundaryLayer</name></member>
     <member refid="classvrv_1_1_slur_1aa478f349c132321ec2a0fbc21d23d0ee" kind="function"><name>GetBoundaryCrossStaff</name></member>
     <member refid="classvrv_1_1_slur_1acd0956910ff11d2e1873178bf04363a7" kind="function"><name>GetGraceCurveDirection</name></member>
     <member refid="classvrv_1_1_slur_1a04e89d0e8ca821a973bdb37fedc49fb9" kind="function"><name>GetPreferredCurveDirection</name></member>
+    <member refid="classvrv_1_1_slur_1a78ed73295aad7e721c412d0ec14fe175" kind="function"><name>CollectSpannedElements</name></member>
+    <member refid="classvrv_1_1_slur_1a172a683e43f5efc07b7df01e79fe8e83" kind="function"><name>AddSpannedElements</name></member>
+    <member refid="classvrv_1_1_slur_1af985dd149add242a1d45e5ef3a0c32fa" kind="function"><name>IsElementBelow</name></member>
+    <member refid="classvrv_1_1_slur_1a7fbfc979567160c6269d469cf34e9a57" kind="function"><name>IsElementBelow</name></member>
+    <member refid="classvrv_1_1_slur_1afa9a7391188bcf435c8b3945c700965a" kind="function"><name>CalcEndPoints</name></member>
     <member refid="classvrv_1_1_slur_1adc703f04c0d76b0e01181b231e4712f6" kind="function"><name>GetStartEndLocs</name></member>
     <member refid="classvrv_1_1_slur_1a6271c60a35d2cdea5cb2d15c1c093547" kind="function"><name>CalcBrokenLoc</name></member>
     <member refid="classvrv_1_1_slur_1a8ec96f9b1852c46db904ee1f80234adf" kind="function"><name>IsPortatoSlur</name></member>
     <member refid="classvrv_1_1_slur_1ad020b6ee80fdcca7d42d66a1d67dd4eb" kind="function"><name>FilterSpannedElements</name></member>
+    <member refid="classvrv_1_1_slur_1a3edef2a42b791866b101a905a79d7a8f" kind="function"><name>DetectCollisionsNearEnd</name></member>
     <member refid="classvrv_1_1_slur_1acd646c36489e638579325d8c4748e4d0" kind="function"><name>CalcEndPointShift</name></member>
     <member refid="classvrv_1_1_slur_1a3b04761decc472a19549ae446f1b42a4" kind="function"><name>AdjustSlurFromBulge</name></member>
     <member refid="classvrv_1_1_slur_1a652ca54f30e9b820c662bdacae0f426f" kind="function"><name>CalcControlPointOffset</name></member>
@@ -6204,9 +6217,9 @@
     <member refid="classvrv_1_1_slur_1a37ed6f07966aaec7b66d5abb76f1c417" kind="function"><name>RotateSlope</name></member>
     <member refid="classvrv_1_1_slur_1a938bab0c49f226d7bed912890d9dd245" kind="function"><name>GetMinControlPointAngle</name></member>
     <member refid="classvrv_1_1_slur_1a7d99192c481e7202eef63242d3c5947d" kind="variable"><name>m_drawingCurveDir</name></member>
-    <member refid="classvrv_1_1_slur_1ad114d98b96232bb50f5b08652f7eb565" kind="function"><name>AdjustCoordinates</name></member>
-    <member refid="classvrv_1_1_slur_1a78ed73295aad7e721c412d0ec14fe175" kind="function"><name>CollectSpannedElements</name></member>
-    <member refid="classvrv_1_1_slur_1a172a683e43f5efc07b7df01e79fe8e83" kind="function"><name>AddSpannedElements</name></member>
+    <member refid="classvrv_1_1_slur_1ad477212bf1638b065055d8b4b6da1b13" kind="function"><name>CalcInitialCurve</name></member>
+    <member refid="classvrv_1_1_slur_1ac1b0ad6940cdd79b1d418080cdabaa5f" kind="function"><name>CalcSpannedElements</name></member>
+    <member refid="classvrv_1_1_slur_1a479f96c0f063d497932d474bcd693871" kind="function"><name>AddPositionerToArticulations</name></member>
     <member refid="classvrv_1_1_slur_1a0c00d9c25f71e1a7101c9b45aebdbd04" kind="function"><name>CalculateExtremalStaff</name></member>
     <member refid="classvrv_1_1_slur_1a48b731aec93e5ea7ba9513fcdcc0f60e" kind="function"><name>InitBezierControlSides</name></member>
     <member refid="classvrv_1_1_slur_1ae0ece8ff52f33bb4ab86ce72e05807e4" kind="function"><name>ResetData</name></member>
@@ -7583,8 +7596,7 @@
     <member refid="classvrv_1_1_view_1a8cfa3a4db8f61f1056203e73cff20a1a" kind="function"><name>NestedTuplets</name></member>
     <member refid="classvrv_1_1_view_1a9bdee020b09491bd61e84a8d6d33be6e" kind="function"><name>GetSylYRel</name></member>
     <member refid="classvrv_1_1_view_1ab9f22b52c5f715977bca0a0c27b2a17b" kind="function"><name>GetFYRel</name></member>
-    <member refid="classvrv_1_1_view_1a91881de8acfc2837814f2d861a67b380" kind="function"><name>DrawSlurInitial</name></member>
-    <member refid="classvrv_1_1_view_1a5977f2b600b35681a10c07fffbeefb75" kind="function"><name>CalcInitialSlur</name></member>
+    <member refid="classvrv_1_1_view_1a2f7ac3ab4cfb71bb4fbc809648f27ec7" kind="function"><name>CalcInitialSlur</name></member>
     <member refid="classvrv_1_1_view_1a0151299a3395da27a27021ffd9650068" kind="function"><name>CalcBrevisPoints</name></member>
     <member refid="classvrv_1_1_view_1a370fc586549b14db6754bb78de7d03f6" kind="function"><name>CalcObliquePoints</name></member>
     <member refid="classvrv_1_1_view_1a122726cbe7d8e4200c3c8fd80209c8ad" kind="function"><name>DrawBeamSegment</name></member>
