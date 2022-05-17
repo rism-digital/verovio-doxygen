@@ -21,5 +21,6 @@ var classvrv_1_1_staff_grp =
     [ "Reset", "classvrv_1_1_staff_grp.html#a3a45f6fd7726cee3546740b28d6cbd4a", null ],
     [ "ScoreDefOptimizeEnd", "classvrv_1_1_staff_grp.html#ac45d8be3ad15e6403888ba77ec0e3e30", null ],
     [ "SetDrawingVisibility", "classvrv_1_1_staff_grp.html#a84b445f6a6c649cd9f35f9fd2adbecaa", null ],
+    [ "SetEverythingVisible", "classvrv_1_1_staff_grp.html#acc4b1b907f5839789cbae943bd133987", null ],
     [ "SetGroupSymbol", "classvrv_1_1_staff_grp.html#a94713544a37bd12ad3b8aafaff326fd0", null ]
 ];
