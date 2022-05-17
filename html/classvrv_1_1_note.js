@@ -34,6 +34,8 @@ var classvrv_1_1_note =
     [ "GetNoteheadGlyph", "classvrv_1_1_note.html#a3f66a8f4adf8eb4174b3c1ec388ad05d", null ],
     [ "GetPitchInterface", "classvrv_1_1_note.html#a9041eca0a9cf4aeb6536a96c797a46a3", null ],
     [ "GetPitchInterface", "classvrv_1_1_note.html#ab310c26ef7aa9313660a2ad90a930c96", null ],
+    [ "GetPositionInterface", "classvrv_1_1_note.html#a04d615c8dc3eb8bcdd6718897f65d6b5", null ],
+    [ "GetPositionInterface", "classvrv_1_1_note.html#a3641b3ece80086ac7dc6cc4324a84337", null ],
     [ "GetStemDownNW", "classvrv_1_1_note.html#ac6e442fe010db664b7fcd4dfd4bc45f2", null ],
     [ "GetStemmedDrawingInterface", "classvrv_1_1_note.html#ad5a3d098ac78d4c81e33f5738a33c26f", null ],
     [ "GetStemmedDrawingInterface", "classvrv_1_1_note.html#a93d3f20b63580552e78097143ce5dbe7", null ],

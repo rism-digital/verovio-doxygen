@@ -703,6 +703,7 @@ var hierarchy =
         [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
         [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
         [ "vrv::Dot", "classvrv_1_1_dot.html", null ],
+        [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
         [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
         [ "vrv::MultiRest", "classvrv_1_1_multi_rest.html", null ],
         [ "vrv::Nc", "classvrv_1_1_nc.html", null ],
@@ -1057,6 +1058,7 @@ var hierarchy =
       [ "vrv::TimePointInterface", "classvrv_1_1_time_point_interface.html", null ]
     ] ],
     [ "vrv::IntTree", "structvrv_1_1_int_tree.html", null ],
+    [ "vrv::KeyAccidInfo", "structvrv_1_1_key_accid_info.html", null ],
     [ "vrv::LedgerLine", "classvrv_1_1_ledger_line.html", null ],
     [ "vrv::MIDIChord", "structvrv_1_1_m_i_d_i_chord.html", null ],
     [ "vrv::MIDIHeldNote", "structvrv_1_1_m_i_d_i_held_note.html", null ],

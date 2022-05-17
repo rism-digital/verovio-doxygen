@@ -182,6 +182,7 @@ var annotated_dup =
       [ "JustifyYAdjustCrossStaffParams", "classvrv_1_1_justify_y_adjust_cross_staff_params.html", "classvrv_1_1_justify_y_adjust_cross_staff_params" ],
       [ "JustifyYParams", "classvrv_1_1_justify_y_params.html", "classvrv_1_1_justify_y_params" ],
       [ "KeyAccid", "classvrv_1_1_key_accid.html", "classvrv_1_1_key_accid" ],
+      [ "KeyAccidInfo", "structvrv_1_1_key_accid_info.html", "structvrv_1_1_key_accid_info" ],
       [ "KeySig", "classvrv_1_1_key_sig.html", "classvrv_1_1_key_sig" ],
       [ "Label", "classvrv_1_1_label.html", "classvrv_1_1_label" ],
       [ "LabelAbbr", "classvrv_1_1_label_abbr.html", "classvrv_1_1_label_abbr" ],
