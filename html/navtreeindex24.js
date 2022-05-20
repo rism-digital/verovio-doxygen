@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"index.html":[],
+"instrdef_8h_source.html":[2,0,70],
 "io_8h_source.html":[2,0,71],
 "ioabc_8h_source.html":[2,0,72],
 "iohumdrum_8h_source.html":[2,0,73],

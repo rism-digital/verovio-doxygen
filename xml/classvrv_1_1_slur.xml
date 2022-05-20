@@ -724,10 +724,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="258" column="22"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1acd646c36489e638579325d8c4748e4d0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1adc738e558ad5154f3325ca49698d2dd0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; int, int &gt;</type>
         <definition>std::pair&lt;int, int&gt; vrv::Slur::CalcEndPointShift</definition>
-        <argsstring>(FloatingCurvePositioner *curve, const BezierCurve &amp;bezierCurve, int margin)</argsstring>
+        <argsstring>(FloatingCurvePositioner *curve, const BezierCurve &amp;bezierCurve, double flexibility, int margin)</argsstring>
         <name>CalcEndPointShift</name>
         <param>
           <type><ref refid="classvrv_1_1_floating_curve_positioner" kindref="compound">FloatingCurvePositioner</ref> *</type>
@@ -736,6 +736,10 @@
         <param>
           <type>const <ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
           <declname>bezierCurve</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>flexibility</declname>
         </param>
         <param>
           <type>int</type>
@@ -772,7 +776,32 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="265" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="266" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_slur_1a06424c1c48e96ec65f7aef9252471a7b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Slur::AllowControlOffsetAdjustment</definition>
+        <argsstring>(const BezierCurve &amp;bezierCurve, double symmetry, int unit) const</argsstring>
+        <name>AllowControlOffsetAdjustment</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>bezierCurve</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>symmetry</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="269" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1a652ca54f30e9b820c662bdacae0f426f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::tuple&lt; bool, int, int &gt;</type>
@@ -797,12 +826,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="268" column="16"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="272" column="16"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1a39e9342f6816f211a3b1b0ef6bfcf27c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a280d7c3b7e35b88a287d036b66dbd266" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structvrv_1_1_control_point_adjustment" kindref="compound">ControlPointAdjustment</ref></type>
         <definition>ControlPointAdjustment vrv::Slur::CalcControlPointVerticalShift</definition>
-        <argsstring>(FloatingCurvePositioner *curve, const BezierCurve &amp;bezierCurve, int margin)</argsstring>
+        <argsstring>(FloatingCurvePositioner *curve, const BezierCurve &amp;bezierCurve, double symmetry, int margin)</argsstring>
         <name>CalcControlPointVerticalShift</name>
         <param>
           <type><ref refid="classvrv_1_1_floating_curve_positioner" kindref="compound">FloatingCurvePositioner</ref> *</type>
@@ -811,6 +840,10 @@
         <param>
           <type>const <ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
           <declname>bezierCurve</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>symmetry</declname>
         </param>
         <param>
           <type>int</type>
@@ -822,16 +855,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="272" column="28"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="276" column="28"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1aaa5adc4929267ac385ff74823e165135" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1ab568eea3c913de3193c69b0211d63974" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; int, int &gt;</type>
         <definition>std::pair&lt;int, int&gt; vrv::Slur::SolveControlPointConstraints</definition>
-        <argsstring>(const std::list&lt; ControlPointConstraint &gt; &amp;constraints)</argsstring>
+        <argsstring>(const std::list&lt; ControlPointConstraint &gt; &amp;constraints, double symmetry=0.0)</argsstring>
         <name>SolveControlPointConstraints</name>
         <param>
           <type>const std::list&lt; <ref refid="structvrv_1_1_control_point_constraint" kindref="compound">ControlPointConstraint</ref> &gt; &amp;</type>
           <declname>constraints</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>symmetry</declname>
+          <defval>0.0</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -839,7 +877,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="276" column="15"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="280" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1a4d31a268f44b474f47091fc158b8b02d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -864,14 +902,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="279" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="284" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classvrv_1_1_slur_1a3c51c1fd49b6cde4954f443f379d5e5c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a6188cff23177793f8930912fabd0d04a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::Slur::ShiftEndPoints</definition>
-        <argsstring>(int &amp;shiftLeft, int &amp;shiftRight, double ratio, int intersection, bool isBelow) const</argsstring>
+        <argsstring>(int &amp;shiftLeft, int &amp;shiftRight, double ratio, int intersection, double flexibility, bool isBelow) const</argsstring>
         <name>ShiftEndPoints</name>
         <param>
           <type>int &amp;</type>
@@ -890,6 +928,10 @@
           <declname>intersection</declname>
         </param>
         <param>
+          <type>double</type>
+          <declname>flexibility</declname>
+        </param>
+        <param>
           <type>bool</type>
           <declname>isBelow</declname>
         </param>
@@ -900,7 +942,32 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="287" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="292" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_slur_1ac772cdc6ab913b3ae4cc7fc4c241e8eb" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double vrv::Slur::CalcQuadraticInterpolation</definition>
+        <argsstring>(double zeroAt, double oneAt, double arg) const</argsstring>
+        <name>CalcQuadraticInterpolation</name>
+        <param>
+          <type>double</type>
+          <declname>zeroAt</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>oneAt</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="296" column="12"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1a37ed6f07966aaec7b66d5abb76f1c417" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -929,7 +996,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="292" column="12"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="301" column="12"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1a938bab0c49f226d7bed912890d9dd245" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -954,7 +1021,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="295" column="11"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="304" column="11"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -970,7 +1037,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="306" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/slur.h" bodystart="306" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="315" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/slur.h" bodystart="315" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -1593,7 +1660,7 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="84" column="34" bodyfile="/home/runner/work/verovio/verovio/include/vrv/slur.h" bodystart="79" bodyend="307"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="84" column="34" bodyfile="/home/runner/work/verovio/verovio/include/vrv/slur.h" bodystart="79" bodyend="316"/>
     <listofallmembers>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>AddChild</name></member>
       <member refid="classvrv_1_1_object_1a5f617820a2163b5fa9d80d884bf69999" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>AddLayerElementToFlatList</name></member>
@@ -1645,6 +1712,7 @@
       <member refid="classvrv_1_1_object_1a5e3a70072c31ed3ddf96fca1d40b4241" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>AlignSystemsEnd</name></member>
       <member refid="classvrv_1_1_object_1a318b62923fa869781ad0effd2ff40648" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>AlignVertically</name></member>
       <member refid="classvrv_1_1_object_1a7456561dbdda3f5d7f47e520c3819cd3" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>AlignVerticallyEnd</name></member>
+      <member refid="classvrv_1_1_slur_1a06424c1c48e96ec65f7aef9252471a7b" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>AllowControlOffsetAdjustment</name></member>
       <member refid="classvrv_1_1_object_1a1579484058fb14c4c8cdf4ad58249db6" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>ApplyPPUFactor</name></member>
       <member refid="classvrv_1_1_bounding_box_1ae9a22cf5d306abb22ff5f557e81bd9af" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>ApproximateBezierBoundingBox</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3901a5e4a728b8f3450cce0e30f4bd29" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>ApproximateBezierExtrema</name></member>
@@ -1662,13 +1730,13 @@
       <member refid="classvrv_1_1_slur_1a6271c60a35d2cdea5cb2d15c1c093547" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcBrokenLoc</name></member>
       <member refid="classvrv_1_1_object_1a277607c9a525f437a721e8c526963d44" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CalcChordNoteHeads</name></member>
       <member refid="classvrv_1_1_slur_1a652ca54f30e9b820c662bdacae0f426f" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcControlPointOffset</name></member>
-      <member refid="classvrv_1_1_slur_1a39e9342f6816f211a3b1b0ef6bfcf27c" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcControlPointVerticalShift</name></member>
+      <member refid="classvrv_1_1_slur_1a280d7c3b7e35b88a287d036b66dbd266" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcControlPointVerticalShift</name></member>
       <member refid="classvrv_1_1_bounding_box_1ac09f7239af89a7e19ca235761589e150" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcDeCasteljau</name></member>
       <member refid="classvrv_1_1_bounding_box_1a8008673c300accccc6dd7f10a2f12d45" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcDistance</name></member>
       <member refid="classvrv_1_1_object_1a30538b76016036369786f42be54482c2" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CalcDots</name></member>
       <member refid="classvrv_1_1_slur_1a61fd32fb1c0a5842551a6736a9fde016" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcDrawingCurveDir</name></member>
       <member refid="classvrv_1_1_slur_1afa9a7391188bcf435c8b3945c700965a" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcEndPoints</name></member>
-      <member refid="classvrv_1_1_slur_1acd646c36489e638579325d8c4748e4d0" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcEndPointShift</name></member>
+      <member refid="classvrv_1_1_slur_1adc738e558ad5154f3325ca49698d2dd0" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcEndPointShift</name></member>
       <member refid="classvrv_1_1_slur_1ad477212bf1638b065055d8b4b6da1b13" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcInitialCurve</name></member>
       <member refid="classvrv_1_1_object_1aa102c1e31b16c63319763a5fc1c8351c" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CalcLedgerLines</name></member>
       <member refid="classvrv_1_1_object_1a56b580832eec7871b18371835a61e136" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CalcLedgerLinesEnd</name></member>
@@ -1676,6 +1744,7 @@
       <member refid="classvrv_1_1_bounding_box_1af5401bb6040fe859bf6b7dc09c3c35b8" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcLinearInterpolation</name></member>
       <member refid="classvrv_1_1_bounding_box_1acf2951ebea74c27b024916a4c96480a5" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcPointAtBezier</name></member>
       <member refid="classvrv_1_1_bounding_box_1a80465f84c7190f8cb0a9765693376be2" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcPositionAfterRotation</name></member>
+      <member refid="classvrv_1_1_slur_1ac772cdc6ab913b3ae4cc7fc4c241e8eb" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcQuadraticInterpolation</name></member>
       <member refid="classvrv_1_1_bounding_box_1a98f3d30610a0063965fcac7ec265ef27" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcSlope</name></member>
       <member refid="classvrv_1_1_slur_1a5bb775a96504e61b844efccbccd8ae78" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CalcSlurDirection</name></member>
       <member refid="classvrv_1_1_slur_1ac1b0ad6940cdd79b1d418080cdabaa5f" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcSpannedElements</name></member>
@@ -2065,11 +2134,11 @@
       <member refid="classvrv_1_1_object_1a190abc310da990f676c931d272bbb434" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>SetUuid</name></member>
       <member refid="classvrv_1_1_linking_interface_1a0ba4b3ed3ba51bdff6f8ef3305aa1f9b" prot="protected" virt="non-virtual" ambiguityscope="vrv::"><scope>vrv::Slur</scope><name>SetUuidStr</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a494562ad8f3d38e0b358a9cdcfd5c93f" prot="public" virt="non-virtual" ambiguityscope="vrv::TimeSpanningInterface::"><scope>vrv::Slur</scope><name>SetUuidStr</name></member>
-      <member refid="classvrv_1_1_slur_1a3c51c1fd49b6cde4954f443f379d5e5c" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>ShiftEndPoints</name></member>
+      <member refid="classvrv_1_1_slur_1a6188cff23177793f8930912fabd0d04a" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>ShiftEndPoints</name></member>
       <member refid="classvrv_1_1_slur_1a1ec0689cb00d78dde080ab663e172b67" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>Slur</name></member>
       <member refid="classvrv_1_1_slur_1af0c39251d4b580a4199b43135f6acd5d" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>Slur</name></member>
       <member refid="classvrv_1_1_slur_1a0e5b41a997c099a63129346c542b9a9b" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>Slur</name></member>
-      <member refid="classvrv_1_1_slur_1aaa5adc4929267ac385ff74823e165135" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>SolveControlPointConstraints</name></member>
+      <member refid="classvrv_1_1_slur_1ab568eea3c913de3193c69b0211d63974" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>SolveControlPointConstraints</name></member>
       <member refid="classvrv_1_1_bounding_box_1ab4d1764142c6881678dbfcaee124e38f" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>SolveCubicPolynomial</name></member>
       <member refid="classvrv_1_1_object_1a6c529b9574392b6c2baeaf8470e2a989" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>sortByUlx</name></member>
       <member refid="classvrv_1_1_object_1aa8caf0942b1ff1c02f6f8e879397ca21" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>SortChildren</name></member>
