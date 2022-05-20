@@ -666,6 +666,7 @@ var hierarchy =
       [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ]
     ] ],
     [ "AttStaffIdent", null, [
+      [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ],
       [ "vrv::TimePointInterface", "classvrv_1_1_time_point_interface.html", [
         [ "vrv::Arpeg", "classvrv_1_1_arpeg.html", null ],

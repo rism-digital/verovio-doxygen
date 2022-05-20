@@ -24,6 +24,7 @@ var classvrv_1_1_layer =
     [ "GetClefFacs", "classvrv_1_1_layer.html#af8422974b527c1d8cdaf139f713ebb30", null ],
     [ "GetClefFacs", "classvrv_1_1_layer.html#a557779c4c164bf5a2a38af0dd4818db4", null ],
     [ "GetClefLocOffset", "classvrv_1_1_layer.html#a6795308b758c849f8f87b6db477c323e", null ],
+    [ "GetCrossStaffClefLocOffset", "classvrv_1_1_layer.html#a035da33d9afb127c05050f1e95c3e760", null ],
     [ "GetCurrentClef", "classvrv_1_1_layer.html#ab80f5a46622fce2bfdefcca4b24b85d1", null ],
     [ "GetCurrentClef", "classvrv_1_1_layer.html#a18fb994e3cefe9810cd5e30a05a50c58", null ],
     [ "GetCurrentKeySig", "classvrv_1_1_layer.html#aaf94ea21e64888e8c3ec6500f314b389", null ],
