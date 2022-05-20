@@ -2,6 +2,7 @@ var classvrv_1_1_flag =
 [
     [ "Flag", "classvrv_1_1_flag.html#a5320c21a7ddcda9df49a3031f52db59c", null ],
     [ "~Flag", "classvrv_1_1_flag.html#a9b969b6f72638671d836b42c8af20af0", null ],
+    [ "Clone", "classvrv_1_1_flag.html#a02940234cabfc4b351f861eb202d4524", null ],
     [ "GetClassName", "classvrv_1_1_flag.html#a152ab620ee8ea5123e58932e7ded2d13", null ],
     [ "GetFlagGlyph", "classvrv_1_1_flag.html#ab072b2687af4681a061c65447cafb9a8", null ],
     [ "GetStemDownNW", "classvrv_1_1_flag.html#adf9ec924ca1697c2d23f5227ed8811da", null ],

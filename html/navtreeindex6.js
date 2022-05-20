@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classvrv_1_1_editor_toolkit_mensural.html#aa78a02e5cad8f859edc5bb99aa8ed62d":[1,0,0,115,1],
 "classvrv_1_1_editor_toolkit_neume.html":[1,0,0,116],
 "classvrv_1_1_editor_toolkit_neume.html#a03f19235626c5060c2f43a5044827779":[1,0,0,116,31],
 "classvrv_1_1_editor_toolkit_neume.html#a0b73aa2dee1a259468501b2b2da92999":[1,0,0,116,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classvrv_1_1_find_spanned_layer_elements_params.html#a2ad423587b3c34b765f623a7d8350979":[1,0,0,138,8],
 "classvrv_1_1_find_spanned_layer_elements_params.html#a8d5fb356f6392a611e2e9e7e7a7907ba":[1,0,0,138,5],
 "classvrv_1_1_find_spanned_layer_elements_params.html#aa30ebab84f1b95f2d7437bcbe707499b":[1,0,0,138,6],
-"classvrv_1_1_find_spanned_layer_elements_params.html#ab045206d3d5a56a2d7a4f17690ca0f53":[1,0,0,138,7],
-"classvrv_1_1_find_spanned_layer_elements_params.html#abfd8bd3af5a4a83680414dae866a8fe7":[1,0,0,138,4]
+"classvrv_1_1_find_spanned_layer_elements_params.html#ab045206d3d5a56a2d7a4f17690ca0f53":[1,0,0,138,7]
 };

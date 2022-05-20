@@ -3,6 +3,7 @@ var classvrv_1_1_stem =
     [ "Stem", "classvrv_1_1_stem.html#a46360b09214d81f4d130e99757632ee8", null ],
     [ "~Stem", "classvrv_1_1_stem.html#a8feba57af3b9b967512d2cb39895d9cd", null ],
     [ "CalcStem", "classvrv_1_1_stem.html#aaa339fb5324212edf1663b4273f30483", null ],
+    [ "Clone", "classvrv_1_1_stem.html#a77a7d07b9d90c3cdde502260d8b00e1a", null ],
     [ "CompareToElementPosition", "classvrv_1_1_stem.html#a0ca0abab879b30f9b97222de50873c9c", null ],
     [ "GetClassName", "classvrv_1_1_stem.html#a0ad0c677151ec3134871632aecab85cc", null ],
     [ "GetDrawingStemAdjust", "classvrv_1_1_stem.html#a345131fdc2cd453f330f691168ad78f2", null ],
