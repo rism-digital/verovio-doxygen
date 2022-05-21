@@ -298,9 +298,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>prepareBeamAndTupletG
 <tr class="memitem:a6cb77e7b26f83492c0557ec3466f35bf"><td class="memItemLeft" align="right" valign="top"><a id="a6cb77e7b26f83492c0557ec3466f35bf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>assignScalingToTupletGroup</b> (std::vector&lt; humaux::HumdrumBeamAndTuplet * &gt; &amp;tggroup)</td></tr>
 <tr class="separator:a6cb77e7b26f83492c0557ec3466f35bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12982a3dd3f8a9db302f0474a722523f"><td class="memItemLeft" align="right" valign="top"><a id="a12982a3dd3f8a9db302f0474a722523f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>printGroupInfo</b> (std::vector&lt; humaux::HumdrumBeamAndTuplet &gt; &amp;tg)</td></tr>
-<tr class="separator:a12982a3dd3f8a9db302f0474a722523f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab981f28145af5b8ec64cab9c4e736173"><td class="memItemLeft" align="right" valign="top"><a id="ab981f28145af5b8ec64cab9c4e736173"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>printGroupInfo</b> (const std::vector&lt; humaux::HumdrumBeamAndTuplet &gt; &amp;tg)</td></tr>
+<tr class="separator:ab981f28145af5b8ec64cab9c4e736173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2785a73ce76149a6a00b087a6b439303"><td class="memItemLeft" align="right" valign="top"><a id="a2785a73ce76149a6a00b087a6b439303"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>insertTuplet</b> (std::vector&lt; std::string &gt; &amp;elements, std::vector&lt; void * &gt; &amp;pointers, const std::vector&lt; humaux::HumdrumBeamAndTuplet &gt; &amp;tgs, std::vector&lt; hum::HTp &gt; layerdata, int layerindex, bool suppressTupletNumber, bool suppressBracketTuplet)</td></tr>
 <tr class="separator:a2785a73ce76149a6a00b087a6b439303"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -421,12 +421,15 @@ hum::HTp&#160;</td><td class="memItemRight" valign="bottom"><b>getCrescendoEnd</
 <tr class="memitem:a4768fe9f4c156aec1b00a968f7070b8e"><td class="memItemLeft" align="right" valign="top"><a id="a4768fe9f4c156aec1b00a968f7070b8e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getMeasureDifference</b> (hum::HTp starttok, hum::HTp endtok)</td></tr>
 <tr class="separator:a4768fe9f4c156aec1b00a968f7070b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96bc6ed7f6195d0c9347a8d6914a6200"><td class="memItemLeft" align="right" valign="top"><a id="a96bc6ed7f6195d0c9347a8d6914a6200"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getMeasureDifference</b> (hum::HTp starttok, hum::HumNum meterunit, hum::HumNum tieduration, hum::HumNum &amp;tstamp)</td></tr>
+<tr class="separator:a96bc6ed7f6195d0c9347a8d6914a6200"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a2f593b7c5dbcd844d3303810704d51"><td class="memItemLeft" align="right" valign="top"><a id="a3a2f593b7c5dbcd844d3303810704d51"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>storeOriginalClefMensurationKeyApp</b> ()</td></tr>
 <tr class="separator:a3a2f593b7c5dbcd844d3303810704d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74728e3c767603cdb637cd8da88bbc59"><td class="memItemLeft" align="right" valign="top"><a id="a74728e3c767603cdb637cd8da88bbc59"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addSpace</b> (std::vector&lt; std::string &gt; &amp;elements, std::vector&lt; void * &gt; &amp;pointers, hum::HumNum duration)</td></tr>
-<tr class="separator:a74728e3c767603cdb637cd8da88bbc59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93191f1cdbfeb240c08eaa5aa50242cd"><td class="memItemLeft" align="right" valign="top"><a id="a93191f1cdbfeb240c08eaa5aa50242cd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addSpace</b> (std::vector&lt; std::string &gt; &amp;elements, std::vector&lt; void * &gt; &amp;pointers, hum::HumNum duration, const std::string &amp;typestring=&quot;&quot;)</td></tr>
+<tr class="separator:a93191f1cdbfeb240c08eaa5aa50242cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a7dbfa6242ac066e0a68650d43f9a89"><td class="memItemLeft" align="right" valign="top"><a id="a8a7dbfa6242ac066e0a68650d43f9a89"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setLocationId</b> (<a class="el" href="classvrv_1_1_object.html">vrv::Object</a> *object, hum::HTp token, int subtoken=-1)</td></tr>
 <tr class="separator:a8a7dbfa6242ac066e0a68650d43f9a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -499,9 +502,9 @@ std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>a
 <tr class="memitem:a1c4d6944725ca8c1f5b8bb6428eb84dc"><td class="memItemLeft" align="right" valign="top"><a id="a1c4d6944725ca8c1f5b8bb6428eb84dc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>analyzeBreaks</b> (hum::HumdrumFile &amp;infile)</td></tr>
 <tr class="separator:a1c4d6944725ca8c1f5b8bb6428eb84dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5811f018d555151696c48ea9c16d10c7"><td class="memItemLeft" align="right" valign="top"><a id="a5811f018d555151696c48ea9c16d10c7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addSystemKeyTimeChange</b> (int startline, int endline)</td></tr>
-<tr class="separator:a5811f018d555151696c48ea9c16d10c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af404ac75c30356e29aa895f752a90aaf"><td class="memItemLeft" align="right" valign="top"><a id="af404ac75c30356e29aa895f752a90aaf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addSystemClefKeyTimeChange</b> (int startline, int endline)</td></tr>
+<tr class="separator:af404ac75c30356e29aa895f752a90aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2761c5d66bc0a9678ef515593aef6c66"><td class="memItemLeft" align="right" valign="top"><a id="a2761c5d66bc0a9678ef515593aef6c66"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>prepareSections</b> ()</td></tr>
 <tr class="separator:a2761c5d66bc0a9678ef515593aef6c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -856,9 +859,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>atEndingBoundaryEnd</
 <tr class="memitem:a2994fa04a6a3dbdb6b21085f8bf54443"><td class="memItemLeft" align="right" valign="top"><a id="a2994fa04a6a3dbdb6b21085f8bf54443"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>inDifferentEndings</b> (hum::HTp token1, hum::HTp token2)</td></tr>
 <tr class="separator:a2994fa04a6a3dbdb6b21085f8bf54443"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a613cf467a8f8a1b085d98d7104c141f1"><td class="memItemLeft" align="right" valign="top"><a id="a613cf467a8f8a1b085d98d7104c141f1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkIfSlurIsInvisible</b> (hum::HTp token, int number)</td></tr>
-<tr class="separator:a613cf467a8f8a1b085d98d7104c141f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8917057c92397287645f19ff758c6eb2"><td class="memItemLeft" align="right" valign="top"><a id="a8917057c92397287645f19ff758c6eb2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkIfSlurIsInvisible</b> (hum::HTp stoken, int snumber, hum::HTp etoken, int enumber)</td></tr>
+<tr class="separator:a8917057c92397287645f19ff758c6eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca26cf3e46d532b0368a991174d65810"><td class="memItemLeft" align="right" valign="top"><a id="aca26cf3e46d532b0368a991174d65810"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>checkForTupletMergesAndSplits</b> (std::vector&lt; int &gt; &amp;tupletgroups, std::vector&lt; hum::HTp &gt; &amp;duritems, std::vector&lt; hum::HumNum &gt; &amp;durations, std::vector&lt; bool &gt; &amp;durforce)</td></tr>
 <tr class="separator:aca26cf3e46d532b0368a991174d65810"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1018,6 +1021,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>insertBeamSpan</b> (h
 <tr class="memitem:a6738bc3d00240783715ba076ea546055"><td class="memItemLeft" align="right" valign="top"><a id="a6738bc3d00240783715ba076ea546055"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getDataTokenId</b> (hum::HTp token)</td></tr>
 <tr class="separator:a6738bc3d00240783715ba076ea546055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af677a5e2baa8dc0e4a83d171a4d280dd"><td class="memItemLeft" align="right" valign="top"><a id="af677a5e2baa8dc0e4a83d171a4d280dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>checkForFingeredHarmonic</b> (<a class="el" href="classvrv_1_1_chord.html">Chord</a> *chord, hum::HTp token)</td></tr>
+<tr class="separator:af677a5e2baa8dc0e4a83d171a4d280dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848b44aede481ec41df2338ff72ccb1f"><td class="memItemLeft" align="right" valign="top"><a id="a848b44aede481ec41df2338ff72ccb1f"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>getTempoScaling</b> (hum::HumdrumFile &amp;infile)</td></tr>
+<tr class="separator:a848b44aede481ec41df2338ff72ccb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9692d225fb45bce337559b7cb88d52b"><td class="memItemLeft" align="right" valign="top"><a id="ac9692d225fb45bce337559b7cb88d52b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isTacet</b> (hum::HTp spinestart)</td></tr>
+<tr class="separator:ac9692d225fb45bce337559b7cb88d52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c1cde1b4af8a1379f3a76f931c5f1c"><td class="memItemLeft" align="right" valign="top"><a id="a09c1cde1b4af8a1379f3a76f931c5f1c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>storeBeamSpansInStartingMeasure</b> ()</td></tr>
+<tr class="separator:a09c1cde1b4af8a1379f3a76f931c5f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43cd7d23c5bd47cc0dc80b1d04305f94"><td class="memItemLeft" align="right" valign="top"><a id="a43cd7d23c5bd47cc0dc80b1d04305f94"></a>
+hum::HTp&#160;</td><td class="memItemRight" valign="bottom"><b>getNextNonNullDataOrMeasureToken</b> (hum::HTp tok)</td></tr>
+<tr class="separator:a43cd7d23c5bd47cc0dc80b1d04305f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef4d08adaaa2d8e8b0e2697ce88454c"><td class="memItemLeft" align="right" valign="top"><a id="afef4d08adaaa2d8e8b0e2697ce88454c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBeamSpanPlist</b> (<a class="el" href="classvrv_1_1_beam_span.html">BeamSpan</a> *beamspan, hum::HTp starttok, hum::HTp etok)</td></tr>
+<tr class="separator:afef4d08adaaa2d8e8b0e2697ce88454c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea1491592f82736ea52e92407460d927"><td class="memItemLeft" align="right" valign="top"><a id="aea1491592f82736ea52e92407460d927"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>checkMeterSigParameters</b> (<a class="el" href="classvrv_1_1_meter_sig.html">MeterSig</a> *msig, hum::HTp timesigtok)</td></tr>
+<tr class="separator:aea1491592f82736ea52e92407460d927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8de57917dded06a79bb3697f4591bf4"><td class="memItemLeft" align="right" valign="top"><a id="aa8de57917dded06a79bb3697f4591bf4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkForJoin</b> (<a class="el" href="classvrv_1_1_note.html">Note</a> *note, hum::HTp token)</td></tr>
+<tr class="separator:aa8de57917dded06a79bb3697f4591bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6496ec9fb28a8b85baa3463e23ac2165"><td class="memItemLeft" align="right" valign="top"><a id="a6496ec9fb28a8b85baa3463e23ac2165"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkForLayerJoin</b> (int staffindex, int layerindex)</td></tr>
+<tr class="separator:a6496ec9fb28a8b85baa3463e23ac2165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab81e9c2a689312dcf8c69d3ed8738197"><td class="memItemLeft" align="right" valign="top"><a id="ab81e9c2a689312dcf8c69d3ed8738197"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>storeTupletAndBeamInfoInTokens</b> (std::vector&lt; humaux::HumdrumBeamAndTuplet &gt; &amp;tgs)</td></tr>
+<tr class="separator:ab81e9c2a689312dcf8c69d3ed8738197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1435896e0d04015f905f12c6f50de60a"><td class="memItemLeft" align="right" valign="top"><a id="a1435896e0d04015f905f12c6f50de60a"></a>
+std::vector&lt; hum::HTp &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getBeamNotes</b> (hum::HTp token, int beamstart)</td></tr>
+<tr class="separator:a1435896e0d04015f905f12c6f50de60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0948f7ee2712a575591905756018a463"><td class="memItemLeft" align="right" valign="top"><a id="a0948f7ee2712a575591905756018a463"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkForBeamSameas</b> (<a class="el" href="classvrv_1_1_beam.html">Beam</a> *beam, std::vector&lt; hum::HTp &gt; &amp;layerdata, int layerindex)</td></tr>
+<tr class="separator:a0948f7ee2712a575591905756018a463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a783ced98c098795b7cee3f882c8c2f37"><td class="memItemLeft" align="right" valign="top"><a id="a783ced98c098795b7cee3f882c8c2f37"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkForBeamStemSameas</b> (std::vector&lt; hum::HTp &gt; &amp;layerdata, int layerindex)</td></tr>
+<tr class="separator:a783ced98c098795b7cee3f882c8c2f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a966c63e8921aded6ad9d48f54e9a583d"><td class="memItemLeft" align="right" valign="top"><a id="a966c63e8921aded6ad9d48f54e9a583d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>createHeader</b> ()</td></tr>
 <tr class="separator:a966c63e8921aded6ad9d48f54e9a583d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1151,14 +1193,14 @@ template&lt;class ELEMENT &gt; </td></tr>
 template&lt;class ELEMENT &gt; </td></tr>
 <tr class="memitem:a9e98bba026711cad2c7ded378bf91fe1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>appendTypeTag</b> (ELEMENT *element, const std::string &amp;tag)</td></tr>
 <tr class="separator:a9e98bba026711cad2c7ded378bf91fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2377fb20ca202b06f776bf7552cb3eef"><td class="memTemplParams" colspan="2"><a id="a2377fb20ca202b06f776bf7552cb3eef"></a>
+<tr class="memitem:a957dc012b811ba4a67112882a6ed1e43"><td class="memTemplParams" colspan="2"><a id="a957dc012b811ba4a67112882a6ed1e43"></a>
 template&lt;class ELEMENT &gt; </td></tr>
-<tr class="memitem:a2377fb20ca202b06f776bf7552cb3eef"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setPlaceRelStaff</b> (ELEMENT *element, const std::string &amp;place, bool showplace)</td></tr>
-<tr class="separator:a2377fb20ca202b06f776bf7552cb3eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8191d8cab90dc91e98bde2c09fd2e97b"><td class="memTemplParams" colspan="2"><a id="a8191d8cab90dc91e98bde2c09fd2e97b"></a>
+<tr class="memitem:a957dc012b811ba4a67112882a6ed1e43"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setPlaceRelStaff</b> (ELEMENT *element, const std::string &amp;place, bool showplace=false)</td></tr>
+<tr class="separator:a957dc012b811ba4a67112882a6ed1e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b432094c7d6f360487bfc8ee62e73ed"><td class="memTemplParams" colspan="2"><a id="a7b432094c7d6f360487bfc8ee62e73ed"></a>
 template&lt;class ELEMENT &gt; </td></tr>
-<tr class="memitem:a8191d8cab90dc91e98bde2c09fd2e97b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setPlaceRelEvent</b> (ELEMENT *element, const std::string &amp;place, bool showplace)</td></tr>
-<tr class="separator:a8191d8cab90dc91e98bde2c09fd2e97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b432094c7d6f360487bfc8ee62e73ed"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setPlaceRelEvent</b> (ELEMENT *element, const std::string &amp;place, bool showplace=false)</td></tr>
+<tr class="separator:a7b432094c7d6f360487bfc8ee62e73ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b76336b2e864bc1aacd404b19f0c7b8"><td class="memTemplParams" colspan="2"><a id="a8b76336b2e864bc1aacd404b19f0c7b8"></a>
 template&lt;class ELEMENT &gt; </td></tr>
 <tr class="memitem:a8b76336b2e864bc1aacd404b19f0c7b8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setMeterSymbol</b> (ELEMENT *element, const std::string &amp;metersig, int staffindex, hum::HTp partstart=NULL, hum::HTp metertok=NULL)</td></tr>
@@ -1199,6 +1241,14 @@ template&lt;class ELEMENT &gt; </td></tr>
 template&lt;class ELEMENT &gt; </td></tr>
 <tr class="memitem:a9595081c91cf81606c160a4b61e18387"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setWrittenAccidentalLower</b> (ELEMENT element, const string &amp;value)</td></tr>
 <tr class="separator:a9595081c91cf81606c160a4b61e18387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9b32b25f2b8c302264c80dce6655dc"><td class="memTemplParams" colspan="2"><a id="a5c9b32b25f2b8c302264c80dce6655dc"></a>
+template&lt;class ELEMENT &gt; </td></tr>
+<tr class="memitem:a5c9b32b25f2b8c302264c80dce6655dc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>attachToToken</b> (ELEMENT *element, hum::HTp token)</td></tr>
+<tr class="separator:a5c9b32b25f2b8c302264c80dce6655dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3819f602a01d3fafffd9b1214a265971"><td class="memTemplParams" colspan="2"><a id="a3819f602a01d3fafffd9b1214a265971"></a>
+template&lt;class ELEMENT &gt; </td></tr>
+<tr class="memitem:a3819f602a01d3fafffd9b1214a265971"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setAttachmentType</b> (ELEMENT *element, hum::HTp token)</td></tr>
+<tr class="separator:a3819f602a01d3fafffd9b1214a265971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af21104975f26cfd02cae3b2cc6bd2a7c"><td class="memItemLeft" align="right" valign="top"><a id="af21104975f26cfd02cae3b2cc6bd2a7c"></a>
 std::wstring&#160;</td><td class="memItemRight" valign="bottom"><b>cleanHarmString</b> (const std::string &amp;content)</td></tr>
 <tr class="separator:af21104975f26cfd02cae3b2cc6bd2a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1292,7 +1342,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_outformat</b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_humdrum_input.html">HumdrumInput</a></li>
-    <li class="footer">Generated on Sat May 21 2022 16:30:05 for Verovio by
+    <li class="footer">Generated on Sat May 21 2022 19:38:49 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -30,5 +30,6 @@ var classvrv_1_1_humdrum_signifiers =
     [ "terminallong", "classvrv_1_1_humdrum_signifiers.html#a05c92d3bb8004e71a0fe159faca257c6", null ],
     [ "textcolor", "classvrv_1_1_humdrum_signifiers.html#a1c4d9de3d67c8432c08a02908ac78c05", null ],
     [ "textmark", "classvrv_1_1_humdrum_signifiers.html#a3564ce4ddebe648b66cd26c0b5813494", null ],
+    [ "tremolo", "classvrv_1_1_humdrum_signifiers.html#aefa426286e38175279e0c37f8d5b7a1c", null ],
     [ "verticalStroke", "classvrv_1_1_humdrum_signifiers.html#a18e9e7ef36872b1d9952a871e5581e97", null ]
 ];
