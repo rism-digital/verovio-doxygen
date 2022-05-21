@@ -582,7 +582,11 @@ var hierarchy =
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
       [ "vrv::PitchInterface", "classvrv_1_1_pitch_interface.html", null ]
     ] ],
+    [ "AttPlacementOnStaff", null, [
+      [ "vrv::Accid", "classvrv_1_1_accid.html", null ]
+    ] ],
     [ "AttPlacementRelEvent", null, [
+      [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
       [ "vrv::Artic", "classvrv_1_1_artic.html", null ]
     ] ],
     [ "AttPlacementRelStaff", null, [
