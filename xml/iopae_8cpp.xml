@@ -2471,11 +2471,11 @@
 <codeline lineno="1390"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cmatch<sp/>matches;</highlight></codeline>
 <codeline lineno="1391"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(meter)<sp/>{</highlight></codeline>
 <codeline lineno="1392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(regex_match(timesig_str,<sp/>matches,<sp/>std::regex(</highlight><highlight class="stringliteral">&quot;(\\d+)/(\\d+)&quot;</highlight><highlight class="normal">)))<sp/>{</highlight></codeline>
-<codeline lineno="1393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meter-&gt;SetCount({<sp/>std::stoi(matches[1])<sp/>});</highlight></codeline>
+<codeline lineno="1393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meter-&gt;SetCount({<sp/>{<sp/>std::stoi(matches[1])<sp/>},<sp/>MeterCountSign::None<sp/>});</highlight></codeline>
 <codeline lineno="1394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meter-&gt;SetUnit(std::stoi(matches[2]));</highlight></codeline>
 <codeline lineno="1395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(regex_match(timesig_str,<sp/>matches,<sp/>std::regex(</highlight><highlight class="stringliteral">&quot;\\d+&quot;</highlight><highlight class="normal">)))<sp/>{</highlight></codeline>
-<codeline lineno="1397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meter-&gt;SetCount({<sp/>std::stoi(timesig_str)<sp/>});</highlight></codeline>
+<codeline lineno="1397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meter-&gt;SetCount({<sp/>{<sp/>std::stoi(timesig_str)<sp/>},<sp/>MeterCountSign::None<sp/>});</highlight></codeline>
 <codeline lineno="1398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meter-&gt;SetUnit(1);</highlight></codeline>
 <codeline lineno="1399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meter-&gt;SetForm(METERFORM_num);</highlight></codeline>
 <codeline lineno="1400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -2490,12 +2490,12 @@
 <codeline lineno="1409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(timesig_str,<sp/></highlight><highlight class="stringliteral">&quot;c3&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
 <codeline lineno="1410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>C3</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meter-&gt;SetSym(METERSIGN_common);</highlight></codeline>
-<codeline lineno="1412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meter-&gt;SetCount({<sp/>3<sp/>});</highlight></codeline>
+<codeline lineno="1412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meter-&gt;SetCount({<sp/>{<sp/>3<sp/>},<sp/>MeterCountSign::None<sp/>});</highlight></codeline>
 <codeline lineno="1413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(timesig_str,<sp/></highlight><highlight class="stringliteral">&quot;c3/2&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
 <codeline lineno="1415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>C3/2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meter-&gt;SetSym(METERSIGN_common);<sp/></highlight><highlight class="comment">//<sp/>??</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meter-&gt;SetCount({<sp/>3<sp/>});</highlight></codeline>
+<codeline lineno="1417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meter-&gt;SetCount({<sp/>{<sp/>2<sp/>},<sp/>MeterCountSign::None<sp/>});</highlight></codeline>
 <codeline lineno="1418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meter-&gt;SetUnit(2);</highlight></codeline>
 <codeline lineno="1419"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
@@ -5770,18 +5770,18 @@
 <codeline lineno="4696"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(paeStr.size()<sp/>&lt;<sp/>1)<sp/>{</highlight></codeline>
 <codeline lineno="4697"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LogPAE(ERR_047_TIMESIG_INCOMPLETE,<sp/>token);</highlight></codeline>
 <codeline lineno="4698"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_pedanticMode)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="4699"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetCount({<sp/>4<sp/>});</highlight></codeline>
+<codeline lineno="4699"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetCount({<sp/>{<sp/>4<sp/>},<sp/>MeterCountSign::None<sp/>});</highlight></codeline>
 <codeline lineno="4700"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetUnit(4);</highlight></codeline>
 <codeline lineno="4701"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="4702"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="4703"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4704"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cmatch<sp/>matches;</highlight></codeline>
 <codeline lineno="4705"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(regex_match(paeStr.c_str(),<sp/>matches,<sp/>std::regex(</highlight><highlight class="stringliteral">&quot;(\\d+)/(\\d+)&quot;</highlight><highlight class="normal">)))<sp/>{</highlight></codeline>
-<codeline lineno="4706"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetCount({<sp/>std::stoi(matches[1])<sp/>});</highlight></codeline>
+<codeline lineno="4706"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetCount({<sp/>{<sp/>std::stoi(matches[1])<sp/>},<sp/>MeterCountSign::None<sp/>});</highlight></codeline>
 <codeline lineno="4707"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetUnit(std::stoi(matches[2]));</highlight></codeline>
 <codeline lineno="4708"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="4709"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(regex_match(paeStr.c_str(),<sp/>matches,<sp/>std::regex(</highlight><highlight class="stringliteral">&quot;\\d+&quot;</highlight><highlight class="normal">)))<sp/>{</highlight></codeline>
-<codeline lineno="4710"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetCount({<sp/>std::stoi(paeStr.c_str())<sp/>});</highlight></codeline>
+<codeline lineno="4710"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetCount({<sp/>{<sp/>std::stoi(paeStr)<sp/>},<sp/>MeterCountSign::None<sp/>});</highlight></codeline>
 <codeline lineno="4711"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetUnit(1);</highlight></codeline>
 <codeline lineno="4712"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetForm(METERFORM_num);</highlight></codeline>
 <codeline lineno="4713"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -5796,12 +5796,12 @@
 <codeline lineno="4722"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(paeStr<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;c3&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
 <codeline lineno="4723"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>C3</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4724"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetSym(METERSIGN_common);</highlight></codeline>
-<codeline lineno="4725"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetCount({<sp/>3<sp/>});</highlight></codeline>
+<codeline lineno="4725"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetCount({<sp/>{<sp/>3<sp/>},<sp/>MeterCountSign::None<sp/>});</highlight></codeline>
 <codeline lineno="4726"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="4727"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(paeStr<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;c3/2&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
 <codeline lineno="4728"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>C3/2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4729"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetSym(METERSIGN_common);<sp/></highlight><highlight class="comment">//<sp/>??</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4730"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetCount({<sp/>3<sp/>});</highlight></codeline>
+<codeline lineno="4730"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetCount({<sp/>{<sp/>3<sp/>},<sp/>MeterCountSign::None<sp/>});</highlight></codeline>
 <codeline lineno="4731"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meterSig-&gt;SetUnit(2);</highlight></codeline>
 <codeline lineno="4732"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="4733"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
