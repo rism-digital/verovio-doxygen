@@ -290,6 +290,7 @@ var classvrv_1_1_humdrum_input =
     [ "processHangingTieEnds", "classvrv_1_1_humdrum_input.html#a6fe7eded99e66e5687462c82f6e3fa10", null ],
     [ "processHangingTieStart", "classvrv_1_1_humdrum_input.html#aa749fb3aeca421cd27010ef4c8ea6faf", null ],
     [ "processHangingTieStarts", "classvrv_1_1_humdrum_input.html#a6a97400ed4594b4008bf92e3d1907175", null ],
+    [ "processInterpretationStuff", "classvrv_1_1_humdrum_input.html#a29ec8e8c74f1f6d6c7da1fa50ba560f3", null ],
     [ "processLinkedDirection", "classvrv_1_1_humdrum_input.html#a105930b1df1629165ea655934d09682e", null ],
     [ "processOverfillingNotes", "classvrv_1_1_humdrum_input.html#a2fcb039a76cff438623906f6d98af304", null ],
     [ "processPhrases", "classvrv_1_1_humdrum_input.html#a25dcd9e669eccb1894a8a1b1b1fea766", null ],
