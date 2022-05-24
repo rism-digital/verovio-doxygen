@@ -27,7 +27,6 @@ var classvrv_1_1_options =
     [ "m_breaksNoWidow", "classvrv_1_1_options.html#ab9c22ca4b9b238dbea2d55843f4296bc", null ],
     [ "m_breaksSmartSb", "classvrv_1_1_options.html#a7e663d4cb8135cd27eef37dcc926d28d", null ],
     [ "m_choiceXPathQuery", "classvrv_1_1_options.html#a3b9c987a4dcdf48c94e242f5f46c77ff", null ],
-    [ "m_clefChangeFactor", "classvrv_1_1_options.html#a84f225d15f6a57af8cfbbb251d34687a", null ],
     [ "m_condense", "classvrv_1_1_options.html#a71e85a428c98b12c11fa8dde3e28c62e", null ],
     [ "m_condenseFirstPage", "classvrv_1_1_options.html#a0eb09fa44d2bc12cfa028d42eccaa855", null ],
     [ "m_condenseTempoPages", "classvrv_1_1_options.html#a13f3eb429b22f8a683946fd452de830a", null ],
