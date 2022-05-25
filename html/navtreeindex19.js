@@ -1,5 +1,10 @@
 var NAVTREEINDEX19 =
 {
+"classvrv_1_1_staff_alignment.html#aad91647368dc7d03520e0bd3f5139602":[1,0,0,313,3],
+"classvrv_1_1_staff_alignment.html#ab0c857aa5a9a585e4107edd6ef102f3e":[1,0,0,313,16],
+"classvrv_1_1_staff_alignment.html#abb406c242d66daf69268cb3b3f3d2cab":[1,0,0,313,23],
+"classvrv_1_1_staff_alignment.html#abe912a2607606376bea1a21731c5195d":[1,0,0,313,2],
+"classvrv_1_1_staff_alignment.html#ac5734d8b2d2b6ff3ea7075fd839a3d8e":[1,0,0,313,51],
 "classvrv_1_1_staff_alignment.html#aca990971e8025a3f499abf7a64c3617c":[1,0,0,313,26],
 "classvrv_1_1_staff_alignment.html#ad527815e979b4f095ae5132fb5fd7fce":[1,0,0,313,33],
 "classvrv_1_1_staff_alignment.html#ada30a6a055ec4a7fc2af92a9f27f72a5":[1,0,0,313,6],
@@ -14,6 +19,7 @@ var NAVTREEINDEX19 =
 "classvrv_1_1_staff_alignment.html#af5dd6dd03fef752384150686b821ec09":[1,0,0,313,41],
 "classvrv_1_1_staff_def.html":[1,0,0,314],
 "classvrv_1_1_staff_def.html#a038e2f30c55de4451a60772969678129":[1,0,0,314,7],
+"classvrv_1_1_staff_def.html#a1123be347427f14748194056b274e7b0":[1,0,0,314,12],
 "classvrv_1_1_staff_def.html#a1223238d63db9b0f81bb9a3095c11b6f":[1,0,0,314,5],
 "classvrv_1_1_staff_def.html#a150107fdc8ac0951b9b506b208a75fd5":[1,0,0,314,10],
 "classvrv_1_1_staff_def.html#a1e0b6c30f24d640efdcee7d9a6f868aa":[1,0,0,314,8],
@@ -243,11 +249,5 @@ var NAVTREEINDEX19 =
 "classvrv_1_1_syllable.html#acbd56162a29b970948a4f0bd597dc535":[1,0,0,326,8],
 "classvrv_1_1_system.html":[1,0,0,327],
 "classvrv_1_1_system.html#a00b7543c20a944c462b5b8b6ab0a0f13":[1,0,0,327,80],
-"classvrv_1_1_system.html#a013d2c2212ad9b65b509d581d4ce7946":[1,0,0,327,10],
-"classvrv_1_1_system.html#a043b4d514fde9d7c430ffb9ca0dba889":[1,0,0,327,37],
-"classvrv_1_1_system.html#a05db1f7309cad81bb474ea6ba535162d":[1,0,0,327,9],
-"classvrv_1_1_system.html#a060b80619621bf26c076b69e7a4bd0c7":[1,0,0,327,46],
-"classvrv_1_1_system.html#a0a4b3490953e74ee2bc3e716a1ab6fb2":[1,0,0,327,31],
-"classvrv_1_1_system.html#a0f0153e4051e3399f98a053f8f609112":[1,0,0,327,49],
-"classvrv_1_1_system.html#a10f72720bebe778fecef7633ddbc9c38":[1,0,0,327,2]
+"classvrv_1_1_system.html#a013d2c2212ad9b65b509d581d4ce7946":[1,0,0,327,10]
 };

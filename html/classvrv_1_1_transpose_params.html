@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('classvrv_1_1_transpose_params.html',''
 </div><!--header-->
 <div class="contents">
 
-<p>member 0: a pointer to the document member 1: the functor for redirection member 2: a pointer to the transposer member 3: the transposition to be applied member 4: the mdiv selected for transposition member 5: the list of current (nested) mdivs  
+<p>member 0: a pointer to the document member 1: the functor for redirection member 2: the end functor for redirection member 3: a pointer to the transposer member 4: the transposition to be applied member 5: the mdiv selected for transposition member 6: the list of current (nested) mdivs member 7: transpose to sounding pitch by evaluating @trans.semi member 8: true if the current scoreDef contains a <a class="el" href="classvrv_1_1_key_sig.html" title="This class models the MEI &lt;keySig&gt; element.">KeySig</a> (direct child or attribute) member 9: transposition interval for staff  
  <a href="classvrv_1_1_transpose_params.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="functorparams_8h_source.html">functorparams.h</a>&gt;</code></p>
@@ -108,9 +108,9 @@ Inheritance diagram for vrv::TransposeParams:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0c390a2436912705dfc04d57b7e575bd"><td class="memItemLeft" align="right" valign="top"><a id="a0c390a2436912705dfc04d57b7e575bd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TransposeParams</b> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="el" href="classvrv_1_1_functor.html">Functor</a> *functor, <a class="el" href="classvrv_1_1_transposer.html">Transposer</a> *transposer)</td></tr>
-<tr class="separator:a0c390a2436912705dfc04d57b7e575bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad40c3744a6c09221f963e1302d2c99c"><td class="memItemLeft" align="right" valign="top"><a id="aad40c3744a6c09221f963e1302d2c99c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TransposeParams</b> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="el" href="classvrv_1_1_functor.html">Functor</a> *functor, <a class="el" href="classvrv_1_1_functor.html">Functor</a> *functorEnd, <a class="el" href="classvrv_1_1_transposer.html">Transposer</a> *transposer)</td></tr>
+<tr class="separator:aad40c3744a6c09221f963e1302d2c99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -120,6 +120,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aa8161505a101b1df51eba809407d6ae2"><td class="memItemLeft" align="right" valign="top"><a id="aa8161505a101b1df51eba809407d6ae2"></a>
 <a class="el" href="classvrv_1_1_functor.html">Functor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_functor</b></td></tr>
 <tr class="separator:aa8161505a101b1df51eba809407d6ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab60cd8d3bd52360b19e713f25d9a53cc"><td class="memItemLeft" align="right" valign="top"><a id="ab60cd8d3bd52360b19e713f25d9a53cc"></a>
+<a class="el" href="classvrv_1_1_functor.html">Functor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_functorEnd</b></td></tr>
+<tr class="separator:ab60cd8d3bd52360b19e713f25d9a53cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08e385a7cac546b3cbc82357ff2cdd00"><td class="memItemLeft" align="right" valign="top"><a id="a08e385a7cac546b3cbc82357ff2cdd00"></a>
 <a class="el" href="classvrv_1_1_transposer.html">Transposer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_transposer</b></td></tr>
 <tr class="separator:a08e385a7cac546b3cbc82357ff2cdd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,9 +135,18 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_selectedMdiv
 <tr class="memitem:a6e6ba5425a0ed7f004be78b1d5f4b669"><td class="memItemLeft" align="right" valign="top"><a id="a6e6ba5425a0ed7f004be78b1d5f4b669"></a>
 std::list&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentMdivUuids</b></td></tr>
 <tr class="separator:a6e6ba5425a0ed7f004be78b1d5f4b669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a437a5140ef9bd52ab5bb724e01df1b14"><td class="memItemLeft" align="right" valign="top"><a id="a437a5140ef9bd52ab5bb724e01df1b14"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_transposeToSoundingPitch</b></td></tr>
+<tr class="separator:a437a5140ef9bd52ab5bb724e01df1b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a866d557fd3071bbfe024eb1b86f07bac"><td class="memItemLeft" align="right" valign="top"><a id="a866d557fd3071bbfe024eb1b86f07bac"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_hasScoreDefKeySig</b></td></tr>
+<tr class="separator:a866d557fd3071bbfe024eb1b86f07bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa9d81a3500d72663ecdc97a59a6fb95"><td class="memItemLeft" align="right" valign="top"><a id="aaa9d81a3500d72663ecdc97a59a6fb95"></a>
+std::map&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_transposeIntervalForStaffN</b></td></tr>
+<tr class="separator:aaa9d81a3500d72663ecdc97a59a6fb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>member 0: a pointer to the document member 1: the functor for redirection member 2: a pointer to the transposer member 3: the transposition to be applied member 4: the mdiv selected for transposition member 5: the list of current (nested) mdivs </p>
+<div class="textblock"><p>member 0: a pointer to the document member 1: the functor for redirection member 2: the end functor for redirection member 3: a pointer to the transposer member 4: the transposition to be applied member 5: the mdiv selected for transposition member 6: the list of current (nested) mdivs member 7: transpose to sounding pitch by evaluating @trans.semi member 8: true if the current scoreDef contains a <a class="el" href="classvrv_1_1_key_sig.html" title="This class models the MEI &lt;keySig&gt; element.">KeySig</a> (direct child or attribute) member 9: transposition interval for staff </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="functorparams_8h_source.html">functorparams.h</a></li>
 </ul>
@@ -144,7 +156,7 @@ std::list&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_transpose_params.html">TransposeParams</a></li>
-    <li class="footer">Generated on Wed May 25 2022 10:17:13 for Verovio by
+    <li class="footer">Generated on Wed May 25 2022 10:54:24 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

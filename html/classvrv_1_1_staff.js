@@ -53,6 +53,7 @@ var classvrv_1_1_staff =
     [ "ScoreDefUnsetCurrent", "classvrv_1_1_staff.html#a974087807e1425d61d74e854759eb3c0", null ],
     [ "SetAlignmentBeamAdjustment", "classvrv_1_1_staff.html#ad2020ab9b6c203645f99d3c64f1ddfcc", null ],
     [ "SetFromFacsimile", "classvrv_1_1_staff.html#a71c2243c3a8920516443bc45557c5783", null ],
+    [ "Transpose", "classvrv_1_1_staff.html#a40c37709f13b209bc84fc7ebd66418ab", null ],
     [ "m_drawingLines", "classvrv_1_1_staff.html#a983ca678e5969c874a018a2b3587942c", null ],
     [ "m_drawingNotationType", "classvrv_1_1_staff.html#a51a65ab400013ddc21d125a01aa2256e", null ],
     [ "m_drawingStaffDef", "classvrv_1_1_staff.html#a4fcf7b214a32b47b0a8597d8a69089ec", null ],

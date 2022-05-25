@@ -298,6 +298,7 @@ var classvrv_1_1_object =
     [ "StableSort", "classvrv_1_1_object.html#ac97807a0dabfdf0d1d483f7f3e9427f9", null ],
     [ "SwapUuid", "classvrv_1_1_object.html#af4f98c391b356cf51597e4777bf31185", null ],
     [ "Transpose", "classvrv_1_1_object.html#a0ee02f42628df9898a57349899c1ba3e", null ],
+    [ "TransposeEnd", "classvrv_1_1_object.html#a32d4bf7c744166174339c2d90958092b", null ],
     [ "UnCastOff", "classvrv_1_1_object.html#a84120019fd68f6d7015f6765d7114a7b", null ],
     [ "m_unsupported", "classvrv_1_1_object.html#a74ae0995caefb72a71445ba43fce0652", null ]
 ];

@@ -4890,6 +4890,7 @@
     <member refid="classvrv_1_1_object_1a0712f513111041dd786e3c59eca63636" kind="function"><name>InitProcessingLists</name></member>
     <member refid="classvrv_1_1_object_1a4a7cd0786cfd3119a6dd128c25b67a33" kind="function"><name>ReorderByXPos</name></member>
     <member refid="classvrv_1_1_object_1a0ee02f42628df9898a57349899c1ba3e" kind="function"><name>Transpose</name></member>
+    <member refid="classvrv_1_1_object_1a32d4bf7c744166174339c2d90958092b" kind="function"><name>TransposeEnd</name></member>
     <member refid="classvrv_1_1_object_1a8c269609416ebdb3b948df8aac3134e1" kind="function"><name>SeedUuid</name></member>
     <member refid="classvrv_1_1_object_1a2ea4b50e70a3a0d43293df7607a6901b" kind="function"><name>GenerateRandUuid</name></member>
     <member refid="classvrv_1_1_object_1a6c529b9574392b6c2baeaf8470e2a989" kind="function"><name>sortByUlx</name></member>
@@ -5263,6 +5264,7 @@
     <member refid="classvrv_1_1_options_1a33ea0b9feff99e830b71dcba0e3e0255" kind="variable"><name>m_transpose</name></member>
     <member refid="classvrv_1_1_options_1af0cdcb2701236379416ef620eca25fb4" kind="variable"><name>m_transposeMdiv</name></member>
     <member refid="classvrv_1_1_options_1a57839601f0ca3a92fa9f48526f77502a" kind="variable"><name>m_transposeSelectedOnly</name></member>
+    <member refid="classvrv_1_1_options_1acb7cc9136494029fe105866022b65b06" kind="variable"><name>m_transposeToSoundingPitch</name></member>
     <member refid="classvrv_1_1_options_1a61eb54b3d98171f50a13088b53ee28b0" kind="variable"><name>m_elementMargins</name></member>
     <member refid="classvrv_1_1_options_1aadd9a7eba2d6b83437f0f863794b1542" kind="variable"><name>m_defaultBottomMargin</name></member>
     <member refid="classvrv_1_1_options_1ad31a07abbb88b19be6ddf0271943334b" kind="variable"><name>m_defaultLeftMargin</name></member>
@@ -6073,6 +6075,8 @@
     <member refid="classvrv_1_1_score_def_1afc2ffb6ac08f6fb4d19271003cf91e45" kind="function"><name>GetPgHead</name></member>
     <member refid="classvrv_1_1_score_def_1a6953b3060cef9dc4cb419743355f62b3" kind="function"><name>GetPgHead2</name></member>
     <member refid="classvrv_1_1_score_def_1adf64dcc28536fa5f14f7b7a911290d20" kind="function"><name>GetPgHead2</name></member>
+    <member refid="classvrv_1_1_score_def_1a7deed7634a868c8b4fef569263fb6332" kind="function"><name>Transpose</name></member>
+    <member refid="classvrv_1_1_score_def_1aa7b358f7ca195eebb2d4e80ced305544" kind="function"><name>TransposeEnd</name></member>
     <member refid="classvrv_1_1_score_def_1a6760d8d9bb94a8f220dddbc769346aeb" kind="variable"><name>m_setAsDrawing</name></member>
     <member refid="classvrv_1_1_score_def_1af51ff1e8fe16c96cdbf75c2c091282e8" kind="variable"><name>m_insertScoreDef</name></member>
     <member refid="classvrv_1_1_score_def_1ac0ea174bd473162a9fcbe68c1a420092" kind="variable"><name>m_drawLabels</name></member>
@@ -6351,6 +6355,7 @@
     <member refid="classvrv_1_1_staff_1a627514a4617e770860c94bb988bdced7" kind="function"><name>CalcStem</name></member>
     <member refid="classvrv_1_1_staff_1a7fc9a5c0d9e7acfcc325d5854a32217f" kind="function"><name>AdjustSylSpacing</name></member>
     <member refid="classvrv_1_1_staff_1a32fa5298456f5c6bf0918292ac75607c" kind="function"><name>GenerateMIDI</name></member>
+    <member refid="classvrv_1_1_staff_1a40c37709f13b209bc84fc7ebd66418ab" kind="function"><name>Transpose</name></member>
     <member refid="classvrv_1_1_staff_1aafcd21e3d5a397b87325803840f8d310" kind="function"><name>AddLedgerLines</name></member>
     <member refid="classvrv_1_1_staff_1a5134be325c97025f1c50003cd1a4a8af" kind="function"><name>AdjustLedgerLines</name></member>
   </compound>
@@ -6444,6 +6449,7 @@
     <member refid="classvrv_1_1_staff_def_1a1e0b6c30f24d640efdcee7d9a6f868aa" kind="function"><name>ReplaceDrawingValuesInStaffDef</name></member>
     <member refid="classvrv_1_1_staff_def_1a614058d092ccca27cbff9ee8668e0991" kind="function"><name>SetStaffDefRedrawFlags</name></member>
     <member refid="classvrv_1_1_staff_def_1a038e2f30c55de4451a60772969678129" kind="function"><name>PrepareDuration</name></member>
+    <member refid="classvrv_1_1_staff_def_1a1123be347427f14748194056b274e7b0" kind="function"><name>Transpose</name></member>
   </compound>
   <compound refid="classvrv_1_1_staff_def_drawing_interface" kind="class"><name>vrv::StaffDefDrawingInterface</name>
     <member refid="classvrv_1_1_staff_def_drawing_interface_1a182bfa04d47d929c9bbba966bee632f4" kind="function"><name>StaffDefDrawingInterface</name></member>
@@ -7224,11 +7230,15 @@
   <compound refid="classvrv_1_1_transpose_params" kind="class"><name>vrv::TransposeParams</name>
     <member refid="classvrv_1_1_transpose_params_1ac840bf81851c316772323edbdadc7270" kind="variable"><name>m_doc</name></member>
     <member refid="classvrv_1_1_transpose_params_1aa8161505a101b1df51eba809407d6ae2" kind="variable"><name>m_functor</name></member>
+    <member refid="classvrv_1_1_transpose_params_1ab60cd8d3bd52360b19e713f25d9a53cc" kind="variable"><name>m_functorEnd</name></member>
     <member refid="classvrv_1_1_transpose_params_1a08e385a7cac546b3cbc82357ff2cdd00" kind="variable"><name>m_transposer</name></member>
     <member refid="classvrv_1_1_transpose_params_1a898c74f0251c0e3c969959a6c0a69723" kind="variable"><name>m_transposition</name></member>
     <member refid="classvrv_1_1_transpose_params_1ab632cce58757aa8265b1a738a3a90290" kind="variable"><name>m_selectedMdivUuid</name></member>
     <member refid="classvrv_1_1_transpose_params_1a6e6ba5425a0ed7f004be78b1d5f4b669" kind="variable"><name>m_currentMdivUuids</name></member>
-    <member refid="classvrv_1_1_transpose_params_1a0c390a2436912705dfc04d57b7e575bd" kind="function"><name>TransposeParams</name></member>
+    <member refid="classvrv_1_1_transpose_params_1a437a5140ef9bd52ab5bb724e01df1b14" kind="variable"><name>m_transposeToSoundingPitch</name></member>
+    <member refid="classvrv_1_1_transpose_params_1a866d557fd3071bbfe024eb1b86f07bac" kind="variable"><name>m_hasScoreDefKeySig</name></member>
+    <member refid="classvrv_1_1_transpose_params_1aaa9d81a3500d72663ecdc97a59a6fb95" kind="variable"><name>m_transposeIntervalForStaffN</name></member>
+    <member refid="classvrv_1_1_transpose_params_1aad40c3744a6c09221f963e1302d2c99c" kind="function"><name>TransposeParams</name></member>
   </compound>
   <compound refid="classvrv_1_1_transposer" kind="class"><name>vrv::Transposer</name>
     <member refid="classvrv_1_1_transposer_1a63cbf34cbc6fd2fc60cf3027e91b901e" kind="variable"><name>m_base</name></member>

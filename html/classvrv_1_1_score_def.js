@@ -43,6 +43,8 @@ var classvrv_1_1_score_def =
     [ "SetDrawingWidth", "classvrv_1_1_score_def.html#a24599b07e4ea1e57697cf91c71e273c7", null ],
     [ "SetDrawLabels", "classvrv_1_1_score_def.html#a49017e0016bda64cdc7751ee191b931e", null ],
     [ "SetRedrawFlags", "classvrv_1_1_score_def.html#a3fd0342289c22892afde358bf48e4738", null ],
+    [ "Transpose", "classvrv_1_1_score_def.html#a7deed7634a868c8b4fef569263fb6332", null ],
+    [ "TransposeEnd", "classvrv_1_1_score_def.html#aa7b358f7ca195eebb2d4e80ced305544", null ],
     [ "m_insertScoreDef", "classvrv_1_1_score_def.html#af51ff1e8fe16c96cdbf75c2c091282e8", null ],
     [ "m_setAsDrawing", "classvrv_1_1_score_def.html#a6760d8d9bb94a8f220dddbc769346aeb", null ]
 ];
