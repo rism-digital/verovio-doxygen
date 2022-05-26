@@ -1109,9 +1109,9 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="290" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="290" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a042f624ee7c7caa1ace487dd3656349b" prot="private" static="no" mutable="no">
-        <type>std::set&lt; <ref refid="classvrv_1_1_glyph" kindref="compound">Glyph</ref> * &gt;</type>
-        <definition>std::set&lt;Glyph *&gt; vrv::SvgDeviceContext::m_smuflGlyphs</definition>
+      <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a7ad99118b49df39db821c7c8589e889c" prot="private" static="no" mutable="no">
+        <type>std::set&lt; const <ref refid="classvrv_1_1_glyph" kindref="compound">Glyph</ref> * &gt;</type>
+        <definition>std::set&lt;const Glyph *&gt; vrv::SvgDeviceContext::m_smuflGlyphs</definition>
         <argsstring></argsstring>
         <name>m_smuflGlyphs</name>
         <briefdescription>
@@ -1266,7 +1266,7 @@
         <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="313" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="313" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a1f6ffea4b845e159ade0bee1128efae2" prot="private" static="no" mutable="no">
-        <type>std::multimap&lt; <ref refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5" kindref="member">ClassId</ref>, std::string &gt;</type>
+        <type>std::multimap&lt; ClassId, std::string &gt;</type>
         <definition>std::multimap&lt;ClassId, std::string&gt; vrv::SvgDeviceContext::m_svgAdditionalAttributes</definition>
         <argsstring></argsstring>
         <name>m_svgAdditionalAttributes</name>
@@ -1853,6 +1853,7 @@
       <member refid="classvrv_1_1_device_context_1acd0ad30e8097f77c67038758a14bd45e" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>GetFont</name></member>
       <member refid="classvrv_1_1_device_context_1a88705a2a673cfaf4e7ab3b40e0a9bdab" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>GetHeight</name></member>
       <member refid="classvrv_1_1_svg_device_context_1abfd6840cd5d0da3d098847a5640ac5f7" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>GetLogicalOrigin</name></member>
+      <member refid="classvrv_1_1_device_context_1a0b80390c8eef092e088b652a045576ab" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>GetResources</name></member>
       <member refid="classvrv_1_1_device_context_1a040d1e041b19959224366c7ae057ab41" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>GetSmuflTextExtent</name></member>
       <member refid="classvrv_1_1_svg_device_context_1a49eb15ae209f1ab05b072c5fb9589d3a" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>GetStringSVG</name></member>
       <member refid="classvrv_1_1_device_context_1a7e4be7f3e0c8fded20dfdb6dd8a06467" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>GetTextExtent</name></member>
@@ -1860,6 +1861,7 @@
       <member refid="classvrv_1_1_device_context_1a12bc02f99e26e673278dce400693a8f6" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>GetUserScaleX</name></member>
       <member refid="classvrv_1_1_device_context_1ac192682e11cb0258024b1c3a19c8a65e" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>GetUserScaleY</name></member>
       <member refid="classvrv_1_1_device_context_1aaaa955faca44e2c5f870b3aa08a66ee0" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>GetWidth</name></member>
+      <member refid="classvrv_1_1_device_context_1afbe4b0353109d59def684327743a32f8" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>HasResources</name></member>
       <member refid="classvrv_1_1_device_context_1aecf9ed01e0d0c5e6f64f8b90c3e4bedd" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>Is</name></member>
       <member refid="classvrv_1_1_device_context_1a2bedf53d6716b9a0a095eab4d36c2ec1" prot="protected" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>m_brushStack</name></member>
       <member refid="classvrv_1_1_svg_device_context_1ab1fab10d547c9871ec5dbf3cf769cf3a" prot="private" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>m_committed</name></member>
@@ -1880,7 +1882,7 @@
       <member refid="classvrv_1_1_svg_device_context_1a9b82e2625b53dcd637d53b0b8a397a96" prot="private" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>m_pageNode</name></member>
       <member refid="classvrv_1_1_device_context_1a927b9ea7ce42075fcbfc5d9d90acda13" prot="protected" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>m_penStack</name></member>
       <member refid="classvrv_1_1_svg_device_context_1ac4284235e0e28ed932cfb8a7bd7fc9e9" prot="private" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>m_removeXlink</name></member>
-      <member refid="classvrv_1_1_svg_device_context_1a042f624ee7c7caa1ace487dd3656349b" prot="private" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>m_smuflGlyphs</name></member>
+      <member refid="classvrv_1_1_svg_device_context_1a7ad99118b49df39db821c7c8589e889c" prot="private" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>m_smuflGlyphs</name></member>
       <member refid="classvrv_1_1_svg_device_context_1a1f6ffea4b845e159ade0bee1128efae2" prot="private" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>m_svgAdditionalAttributes</name></member>
       <member refid="classvrv_1_1_svg_device_context_1aeecbb65f37519370932e63cd3bfffe4b" prot="private" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>m_svgBoundingBoxes</name></member>
       <member refid="classvrv_1_1_svg_device_context_1ab1774bf1ce232d707d57432cf32a552c" prot="private" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>m_svgDoc</name></member>
@@ -1894,6 +1896,7 @@
       <member refid="classvrv_1_1_device_context_1aec24567fc3eb0d2b50e3a3104f0caf1c" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>ResetBrush</name></member>
       <member refid="classvrv_1_1_device_context_1a23962774a3aa1c288e8cc3365a521aed" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>ResetFont</name></member>
       <member refid="classvrv_1_1_device_context_1a106e653911674d054288534c8113550b" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>ResetPen</name></member>
+      <member refid="classvrv_1_1_device_context_1a71fea5d7ac64e00989df226b9db7d93a" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>ResetResources</name></member>
       <member refid="classvrv_1_1_svg_device_context_1a15e6d5ffe8946ec3371c5e363b06fe3c" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>ResumeGraphic</name></member>
       <member refid="classvrv_1_1_device_context_1a73f8ff83665f5699325367b3a3743bae" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>RGB2Int</name></member>
       <member refid="classvrv_1_1_svg_device_context_1adc3f1ba3ed171d9eb388f268bc8c1f4a" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>RotateGraphic</name></member>
@@ -1914,6 +1917,7 @@
       <member refid="classvrv_1_1_svg_device_context_1a57ff509fb8c71c3fd48092ba269cc159" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SetMMOutput</name></member>
       <member refid="classvrv_1_1_device_context_1a30b9a8d7523d4fbe3dd8eda656633693" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SetPen</name></member>
       <member refid="classvrv_1_1_svg_device_context_1aabe3f920bbeacd0463372165d9f6a7e2" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SetRemoveXlink</name></member>
+      <member refid="classvrv_1_1_device_context_1ae8f2a1bbb614dd755c278cc2ecac4ef0" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SetResources</name></member>
       <member refid="classvrv_1_1_svg_device_context_1ae59f5620c868167fef4915c0dfe30618" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SetSvgBoundingBoxes</name></member>
       <member refid="classvrv_1_1_svg_device_context_1a257b967c96a5cb94022707269a92e2f4" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SetSvgViewBox</name></member>
       <member refid="classvrv_1_1_svg_device_context_1a3e5366869d38c78f875294fea37318bd" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>SetTextBackground</name></member>

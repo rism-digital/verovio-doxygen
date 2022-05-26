@@ -114,7 +114,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>FloatingPositioner</b> (<a class="el" href="classvrv_1_1_floating_object.html">FloatingObject</a> *object, <a class="el" href="classvrv_1_1_staff_alignment.html">StaffAlignment</a> *alignment, char spanningType)</td></tr>
 <tr class="separator:a2e725efff149c8687d7f35595f23da16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08ebe8e8f9adc406db0a07d2964dc7f9"><td class="memItemLeft" align="right" valign="top"><a id="a08ebe8e8f9adc406db0a07d2964dc7f9"></a>
-<a class="el" href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">ClassId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetClassId</b> () const override</td></tr>
+ClassId&#160;</td><td class="memItemRight" valign="bottom"><b>GetClassId</b> () const override</td></tr>
 <tr class="separator:a08ebe8e8f9adc406db0a07d2964dc7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99e8532f6ab38b81a39c5625b5955539"><td class="memItemLeft" align="right" valign="top"><a id="a99e8532f6ab38b81a39c5625b5955539"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetPositioner</b> ()</td></tr>
@@ -190,10 +190,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BoundingBox</b> ()</td></tr>
 <tr class="separator:a9f87f4407c2c8d88ab5e4eacfe1ac1f0 inherit pub_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af366b55a8e449a12d689acd9d35ae782 inherit pub_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="af366b55a8e449a12d689acd9d35ae782"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Is</b> (<a class="el" href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">ClassId</a> classId) const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Is</b> (ClassId classId) const</td></tr>
 <tr class="separator:af366b55a8e449a12d689acd9d35ae782 inherit pub_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeb23e9d3064f863ef3857efef570a8f inherit pub_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="aaeb23e9d3064f863ef3857efef570a8f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Is</b> (const std::vector&lt; <a class="el" href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">ClassId</a> &gt; &amp;classIds) const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Is</b> (const std::vector&lt; ClassId &gt; &amp;classIds) const</td></tr>
 <tr class="separator:aaeb23e9d3064f863ef3857efef570a8f inherit pub_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cc083afb0d6f3a68d60fae9569645b8 inherit pub_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="a8cc083afb0d6f3a68d60fae9569645b8"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateContentBBoxX</b> (int x1, int x2)</td></tr>
@@ -398,6 +398,10 @@ static std::set&lt; double &gt;&#160;</td><td class="memItemRight" valign="botto
 <tr class="memitem:a3901a5e4a728b8f3450cce0e30f4bd29 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="a3901a5e4a728b8f3450cce0e30f4bd29"></a>
 static std::pair&lt; double, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ApproximateBezierExtrema</b> (const <a class="el" href="classvrv_1_1_point.html">Point</a> bezier[4], bool isMaxExtrema, int approximationSteps=BEZIER_APPROXIMATION)</td></tr>
 <tr class="separator:a3901a5e4a728b8f3450cce0e30f4bd29 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8008673c300accccc6dd7f10a2f12d45 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="a8008673c300accccc6dd7f10a2f12d45"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a8008673c300accccc6dd7f10a2f12d45">CalcDistance</a> (const <a class="el" href="classvrv_1_1_point.html">Point</a> &amp;p1, const <a class="el" href="classvrv_1_1_point.html">Point</a> &amp;p2)</td></tr>
+<tr class="memdesc:a8008673c300accccc6dd7f10a2f12d45 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the euclidean distance between two points. <br /></td></tr>
+<tr class="separator:a8008673c300accccc6dd7f10a2f12d45 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa466757865d8f747cbaaf232e3051177 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#aa466757865d8f747cbaaf232e3051177">ArePointsClose</a> (const <a class="el" href="classvrv_1_1_point.html">Point</a> &amp;p1, const <a class="el" href="classvrv_1_1_point.html">Point</a> &amp;p2, int margin)</td></tr>
 <tr class="separator:aa466757865d8f747cbaaf232e3051177 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98f3d30610a0063965fcac7ec265ef27 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="a98f3d30610a0063965fcac7ec265ef27"></a>
@@ -424,18 +428,18 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static <a class="el" href="classvrv_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#acf2951ebea74c27b024916a4c96480a5">CalcPointAtBezier</a> (const <a class="el" href="classvrv_1_1_point.html">Point</a> bezier[4], double t)</td></tr>
 <tr class="memdesc:acf2951ebea74c27b024916a4c96480a5 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate point (X,Y) coordinaties on the bezier curve. <br /></td></tr>
 <tr class="separator:acf2951ebea74c27b024916a4c96480a5 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0771c6326e6a7123268f433bfdc903f6 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="a0771c6326e6a7123268f433bfdc903f6"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a0771c6326e6a7123268f433bfdc903f6">GetBezierThicknessCoefficient</a> (const <a class="el" href="classvrv_1_1_point.html">Point</a> bezier[4], int currentThickness, double angle, int penWidth)</td></tr>
-<tr class="memdesc:a0771c6326e6a7123268f433bfdc903f6 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate thickness coefficient to be applient for bezier curve to fit MEI units thickness. <br /></td></tr>
-<tr class="separator:a0771c6326e6a7123268f433bfdc903f6 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dbe5a481e20ab4d0d9fdd47708d1c2f inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="a3dbe5a481e20ab4d0d9fdd47708d1c2f"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a3dbe5a481e20ab4d0d9fdd47708d1c2f">GetBezierThicknessCoefficient</a> (const <a class="el" href="classvrv_1_1_point.html">Point</a> bezier[4], int currentThickness, int penWidth)</td></tr>
+<tr class="memdesc:a3dbe5a481e20ab4d0d9fdd47708d1c2f inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate thickness coefficient to be applient for bezier curve to fit MEI units thickness. <br /></td></tr>
+<tr class="separator:a3dbe5a481e20ab4d0d9fdd47708d1c2f inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac09f7239af89a7e19ca235761589e150 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="ac09f7239af89a7e19ca235761589e150"></a>
 static <a class="el" href="classvrv_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#ac09f7239af89a7e19ca235761589e150">CalcDeCasteljau</a> (const <a class="el" href="classvrv_1_1_point.html">Point</a> bezier[4], double t)</td></tr>
 <tr class="memdesc:ac09f7239af89a7e19ca235761589e150 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the point bezier point position for a t between 0.0 and 1.0. <br /></td></tr>
 <tr class="separator:ac09f7239af89a7e19ca235761589e150 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae087d56d7ff270c908e3a723be01f6e7 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="ae087d56d7ff270c908e3a723be01f6e7"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#ae087d56d7ff270c908e3a723be01f6e7">CalcThickBezier</a> (const <a class="el" href="classvrv_1_1_point.html">Point</a> bezier[4], int thickness, float angle, <a class="el" href="classvrv_1_1_point.html">Point</a> *topBezier, <a class="el" href="classvrv_1_1_point.html">Point</a> *bottomBezier)</td></tr>
-<tr class="memdesc:ae087d56d7ff270c908e3a723be01f6e7 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the position of the bezier above and below for a thick bezier. <br /></td></tr>
-<tr class="separator:ae087d56d7ff270c908e3a723be01f6e7 inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fdd811aefcb373533b9cc2795aa04dd inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="a8fdd811aefcb373533b9cc2795aa04dd"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a8fdd811aefcb373533b9cc2795aa04dd">CalcThickBezier</a> (const <a class="el" href="classvrv_1_1_point.html">Point</a> bezier[4], int thickness, <a class="el" href="classvrv_1_1_point.html">Point</a> topBezier[4], <a class="el" href="classvrv_1_1_point.html">Point</a> bottomBezier[4])</td></tr>
+<tr class="memdesc:a8fdd811aefcb373533b9cc2795aa04dd inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the position of the bezier above and below for a thick bezier. <br /></td></tr>
+<tr class="separator:a8fdd811aefcb373533b9cc2795aa04dd inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9a22cf5d306abb22ff5f557e81bd9af inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="ae9a22cf5d306abb22ff5f557e81bd9af"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#ae9a22cf5d306abb22ff5f557e81bd9af">ApproximateBezierBoundingBox</a> (const <a class="el" href="classvrv_1_1_point.html">Point</a> bezier[4], <a class="el" href="classvrv_1_1_point.html">Point</a> &amp;pos, int &amp;width, int &amp;height, int &amp;minYPos, int &amp;maxYPos)</td></tr>
 <tr class="memdesc:ae9a22cf5d306abb22ff5f557e81bd9af inherit pub_static_methods_classvrv_1_1_bounding_box"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate the bounding box of a bezier taking into accound the height and the width. <br /></td></tr>
@@ -515,8 +519,8 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_floating_positioner.html">FloatingPositioner</a></li>
-    <li class="footer">Generated on Tue Feb 22 2022 11:32:36 for Verovio by
+    <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_floating_positioner.html">FloatingPositioner</a></li>
+    <li class="footer">Generated on Wed May 25 2022 14:36:09 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

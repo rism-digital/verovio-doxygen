@@ -109,7 +109,7 @@ Inheritance diagram for vrv::OptionJson:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a84f4c87bc0217e8bce496ef9610222ea"><td class="memItemLeft" align="right" valign="top"><a id="a84f4c87bc0217e8bce496ef9610222ea"></a>
-<a class="el" href="namespacevrv.html#a348cc6ff82212bad624ca42d05266a5f">JsonSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_option_json.html#a84f4c87bc0217e8bce496ef9610222ea">GetSource</a> () const</td></tr>
+JsonSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_option_json.html#a84f4c87bc0217e8bce496ef9610222ea">GetSource</a> () const</td></tr>
 <tr class="memdesc:a84f4c87bc0217e8bce496ef9610222ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Member access. <br /></td></tr>
 <tr class="separator:a84f4c87bc0217e8bce496ef9610222ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7468c78b4cde7fed6bbc56d4e16bb6e4"><td class="memItemLeft" align="right" valign="top"><a id="a7468c78b4cde7fed6bbc56d4e16bb6e4"></a>
@@ -126,7 +126,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~OptionJson</b> ()
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyTo</b> (<a class="el" href="classvrv_1_1_option.html">Option</a> *option) override</td></tr>
 <tr class="separator:ac28758dc9d61ff7abce305ce40d88803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6787572e1ab3606358af0aa341571b14"><td class="memItemLeft" align="right" valign="top"><a id="a6787572e1ab3606358af0aa341571b14"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> (<a class="el" href="namespacevrv.html#a348cc6ff82212bad624ca42d05266a5f">JsonSource</a> source, const std::string &amp;defaultValue)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> (JsonSource source, const std::string &amp;defaultValue)</td></tr>
 <tr class="separator:a6787572e1ab3606358af0aa341571b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:abbfe45064b60f80519b5f54528245377"><td class="memItemLeft" align="right" valign="top"><a id="abbfe45064b60f80519b5f54528245377"></a>
@@ -142,6 +142,9 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultStrV
 <tr class="memitem:a1292c959936c0e4362c604a36f465e32"><td class="memItemLeft" align="right" valign="top"><a id="a1292c959936c0e4362c604a36f465e32"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> () override</td></tr>
 <tr class="separator:a1292c959936c0e4362c604a36f465e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c77124b17f2e4718676286609061cb"><td class="memItemLeft" align="right" valign="top"><a id="ad0c77124b17f2e4718676286609061cb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSet</b> () const override</td></tr>
+<tr class="separator:ad0c77124b17f2e4718676286609061cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:aac2951d68e22ec5baf9001501e671604"><td class="memItemLeft" align="right" valign="top"><a id="aac2951d68e22ec5baf9001501e671604"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_option_json.html#aac2951d68e22ec5baf9001501e671604">HasValue</a> (const std::vector&lt; std::string &gt; &amp;jsonNodePath) const</td></tr>
@@ -150,9 +153,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:afb806a1149d89680015d6d18e9e24ccf"><td class="memItemLeft" align="right" valign="top"><a id="afb806a1149d89680015d6d18e9e24ccf"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>GetIntValue</b> (const std::vector&lt; std::string &gt; &amp;jsonNodePath, bool getDefault=false) const</td></tr>
 <tr class="separator:afb806a1149d89680015d6d18e9e24ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97fdcb0bb957de49ac9d150b724b1381"><td class="memItemLeft" align="right" valign="top"><a id="a97fdcb0bb957de49ac9d150b724b1381"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>GetDoubleValue</b> (const std::vector&lt; std::string &gt; &amp;jsonNodePath, bool getDefault=false) const</td></tr>
-<tr class="separator:a97fdcb0bb957de49ac9d150b724b1381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d6fe18f990186e1bbf64cf374efd3f"><td class="memItemLeft" align="right" valign="top"><a id="ae8d6fe18f990186e1bbf64cf374efd3f"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>GetDblValue</b> (const std::vector&lt; std::string &gt; &amp;jsonNodePath, bool getDefault=false) const</td></tr>
+<tr class="separator:ae8d6fe18f990186e1bbf64cf374efd3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09ee860ced72e329ab15a795607ae62"><td class="memItemLeft" align="right" valign="top"><a id="ac09ee860ced72e329ab15a795607ae62"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetStrValue</b> (const std::vector&lt; std::string &gt; &amp;jsonNodePath, bool getDefault=false) const</td></tr>
+<tr class="separator:ac09ee860ced72e329ab15a795607ae62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f22e2b79f1e253a43f5d6503f36be0d"><td class="memItemLeft" align="right" valign="top"><a id="a4f22e2b79f1e253a43f5d6503f36be0d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateNodeValue</b> (const std::vector&lt; std::string &gt; &amp;jsonNodePath, const std::string &amp;value)</td></tr>
 <tr class="separator:a4f22e2b79f1e253a43f5d6503f36be0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,9 +195,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetTitle</b> (
 <tr class="memitem:a1153f69ba589862993101d8dfd2f7088 inherit pub_methods_classvrv_1_1_option"><td class="memItemLeft" align="right" valign="top"><a id="a1153f69ba589862993101d8dfd2f7088"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescription</b> () const</td></tr>
 <tr class="separator:a1153f69ba589862993101d8dfd2f7088 inherit pub_methods_classvrv_1_1_option"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06a7eba77f58463cb282ba050803d883 inherit pub_methods_classvrv_1_1_option"><td class="memItemLeft" align="right" valign="top"><a id="a06a7eba77f58463cb282ba050803d883"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSet</b> () const</td></tr>
-<tr class="separator:a06a7eba77f58463cb282ba050803d883 inherit pub_methods_classvrv_1_1_option"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a823e50c6b88c0ce63e44f228b3f97dcd inherit pub_methods_classvrv_1_1_option"><td class="memItemLeft" align="right" valign="top"><a id="a823e50c6b88c0ce63e44f228b3f97dcd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetShortOption</b> (char shortOption, bool isCmdOnly)</td></tr>
 <tr class="separator:a823e50c6b88c0ce63e44f228b3f97dcd inherit pub_methods_classvrv_1_1_option"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,9 +253,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_title</b></t
 <tr class="memitem:a605929a76631b73d73b83d8ecf6ed101 inherit pro_attribs_classvrv_1_1_option"><td class="memItemLeft" align="right" valign="top"><a id="a605929a76631b73d73b83d8ecf6ed101"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_description</b></td></tr>
 <tr class="separator:a605929a76631b73d73b83d8ecf6ed101 inherit pro_attribs_classvrv_1_1_option"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02579df539cbcb709723e84bf47a2fa0 inherit pro_attribs_classvrv_1_1_option"><td class="memItemLeft" align="right" valign="top"><a id="a02579df539cbcb709723e84bf47a2fa0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isSet</b></td></tr>
-<tr class="separator:a02579df539cbcb709723e84bf47a2fa0 inherit pro_attribs_classvrv_1_1_option"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is for Json input params. </p>
@@ -264,8 +264,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isSet</b></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_option_json.html">OptionJson</a></li>
-    <li class="footer">Generated on Tue Feb 22 2022 11:32:37 for Verovio by
+    <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_option_json.html">OptionJson</a></li>
+    <li class="footer">Generated on Wed May 25 2022 14:36:11 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

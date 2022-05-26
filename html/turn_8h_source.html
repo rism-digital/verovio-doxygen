@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('turn_8h_source.html',''); initResizabl
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;controlelement.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;timeinterface.h&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// Turn</span></div>
@@ -121,43 +121,49 @@ $(document).ready(function(){initNavTree('turn_8h_source.html',''); initResizabl
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_turn.html#add84fc966b8610b6fc73a25c90a21e30">Reset</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Turn&quot;</span>; }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    TimePointInterface *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TimePointInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">wchar_t</span> <a class="code" href="classvrv_1_1_turn.html#a049ad442cab2fd9cf5ef83b027edf5c9">GetTurnGlyph</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    TimePointInterface *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimePointInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">const</span> TimePointInterface *GetTimePointInterface()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimePointInterface *&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">wchar_t</span> <a class="code" href="classvrv_1_1_turn.html#a049ad442cab2fd9cf5ef83b027edf5c9">GetTurnGlyph</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_turn.html#a77354821d6499ba3d951cf681b60e156">PrepareDelayedTurns</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_turn.html#ac060a09b30c0ff9b6f9f36eff6b254ad">GetTurnHeight</a>(Doc *doc, <span class="keywordtype">int</span> staffSize) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_turn.html#a56e3003c90f1a9d88002f416f1c9d66d">ResetDrawing</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classvrv_1_1_turn.html#a4c6e5adc6de0fc5a7112a8471d2d892f">   80</a></span>&#160;    <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *<a class="code" href="classvrv_1_1_turn.html#a4c6e5adc6de0fc5a7112a8471d2d892f">m_drawingEndElement</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_turn.html#a77354821d6499ba3d951cf681b60e156">PrepareDelayedTurns</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_turn.html#a8df689df6cba579b3889a26c306925b9">ResetData</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classvrv_1_1_turn.html#a4c6e5adc6de0fc5a7112a8471d2d892f">   89</a></span>&#160;    <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *<a class="code" href="classvrv_1_1_turn.html#a4c6e5adc6de0fc5a7112a8471d2d892f">m_drawingEndElement</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassvrv_1_1_turn_html_ac060a09b30c0ff9b6f9f36eff6b254ad"><div class="ttname"><a href="classvrv_1_1_turn.html#ac060a09b30c0ff9b6f9f36eff6b254ad">vrv::Turn::GetTurnHeight</a></div><div class="ttdeci">int GetTurnHeight(Doc *doc, int staffSize) const</div><div class="ttdoc">Get the turn height ignoring slash.</div></div>
 <div class="ttc" id="aclassvrv_1_1_turn_html"><div class="ttname"><a href="classvrv_1_1_turn.html">vrv::Turn</a></div><div class="ttdoc">This class models the MEI &lt;turn&gt; element.</div><div class="ttdef"><b>Definition:</b> turn.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_turn_html_a77354821d6499ba3d951cf681b60e156"><div class="ttname"><a href="classvrv_1_1_turn.html#a77354821d6499ba3d951cf681b60e156">vrv::Turn::PrepareDelayedTurns</a></div><div class="ttdeci">int PrepareDelayedTurns(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::PrepareDelayedTurns.</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
-<div class="ttc" id="aclassvrv_1_1_turn_html_a56e3003c90f1a9d88002f416f1c9d66d"><div class="ttname"><a href="classvrv_1_1_turn.html#a56e3003c90f1a9d88002f416f1c9d66d">vrv::Turn::ResetDrawing</a></div><div class="ttdeci">int ResetDrawing(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:56</div></div>
 <div class="ttc" id="aclassvrv_1_1_turn_html_add84fc966b8610b6fc73a25c90a21e30"><div class="ttname"><a href="classvrv_1_1_turn.html#add84fc966b8610b6fc73a25c90a21e30">vrv::Turn::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_turn_html_a5e2698b079969dd31bd01140e4064561"><div class="ttname"><a href="classvrv_1_1_turn.html#a5e2698b079969dd31bd01140e4064561">vrv::Turn::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> turn.h:41</div></div>
-<div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
-<div class="ttc" id="aclassvrv_1_1_turn_html_a4c6e5adc6de0fc5a7112a8471d2d892f"><div class="ttname"><a href="classvrv_1_1_turn.html#a4c6e5adc6de0fc5a7112a8471d2d892f">vrv::Turn::m_drawingEndElement</a></div><div class="ttdeci">LayerElement * m_drawingEndElement</div><div class="ttdoc">The end point of a delayed turn when @startid is used.</div><div class="ttdef"><b>Definition:</b> turn.h:80</div></div>
+<div class="ttc" id="aclassvrv_1_1_turn_html_a4c6e5adc6de0fc5a7112a8471d2d892f"><div class="ttname"><a href="classvrv_1_1_turn.html#a4c6e5adc6de0fc5a7112a8471d2d892f">vrv::Turn::m_drawingEndElement</a></div><div class="ttdeci">LayerElement * m_drawingEndElement</div><div class="ttdoc">The end point of a delayed turn when @startid is used.</div><div class="ttdef"><b>Definition:</b> turn.h:89</div></div>
 <div class="ttc" id="aclassvrv_1_1_turn_html_a049ad442cab2fd9cf5ef83b027edf5c9"><div class="ttname"><a href="classvrv_1_1_turn.html#a049ad442cab2fd9cf5ef83b027edf5c9">vrv::Turn::GetTurnGlyph</a></div><div class="ttdeci">wchar_t GetTurnGlyph() const</div><div class="ttdoc">Get the SMuFL glyph for the turn based on form or glyph.num.</div></div>
+<div class="ttc" id="aclassvrv_1_1_turn_html_a8df689df6cba579b3889a26c306925b9"><div class="ttname"><a href="classvrv_1_1_turn.html#a8df689df6cba579b3889a26c306925b9">vrv::Turn::ResetData</a></div><div class="ttdeci">int ResetData(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetData.</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:43</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_point_interface_html"><div class="ttname"><a href="classvrv_1_1_time_point_interface.html">vrv::TimePointInterface</a></div><div class="ttdoc">This class is an interface for elements having a single time point, such as tempo,...</div><div class="ttdef"><b>Definition:</b> timeinterface.h:30</div></div>
@@ -165,7 +171,7 @@ $(document).ready(function(){initNavTree('turn_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>turn.h</b></li>
-    <li class="footer">Generated on Tue Feb 22 2022 11:32:34 for Verovio by
+    <li class="footer">Generated on Wed May 25 2022 14:36:07 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

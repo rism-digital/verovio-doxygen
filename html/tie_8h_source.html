@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('tie_8h_source.html',''); initResizable
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;controlelement.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;timeinterface.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>Chord;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>Layer;</div>
@@ -115,70 +115,76 @@ $(document).ready(function(){initNavTree('tie_8h_source.html',''); initResizable
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keyword">public</span> AttCurveRend {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classvrv_1_1_tie.html">Tie</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classvrv_1_1_tie.html">Tie</a>(<a class="code" href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">ClassId</a> classId);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classvrv_1_1_tie.html">Tie</a>(<a class="code" href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">ClassId</a> classId, <span class="keyword">const</span> std::string &amp;classIdStr);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classvrv_1_1_tie.html">Tie</a>(ClassId classId);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classvrv_1_1_tie.html">Tie</a>(ClassId classId, <span class="keyword">const</span> std::string &amp;classIdStr);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_tie.html">Tie</a>();</div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classvrv_1_1_tie.html#a538f07744e778a68aaa0a796f6b614e7">   42</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_tie.html#a538f07744e778a68aaa0a796f6b614e7">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_tie.html">Tie</a>(*<span class="keyword">this</span>); }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tie.html#af42e8dac1dedeb43a1202e2cc058f12b">Reset</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Tie&quot;</span>; }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    TimePointInterface *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TimePointInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    TimeSpanningInterface *GetTimeSpanningInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TimeSpanningInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CalculatePosition(Doc *doc, Staff *staff, <span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> spanningType, Point bezier[4]);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tie.html#ac4744ba3209d0faea4c9eea00b21b384">CalculateAdjacentChordXOffset</a>(Doc *doc, Staff *staff, Chord *parentChord, Note *note,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        curvature_CURVEDIR drawingCurveDir, <span class="keywordtype">int</span> initialX, <span class="keywordtype">bool</span> isStartPoint);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    TimePointInterface *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimePointInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">const</span> TimePointInterface *GetTimePointInterface()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimePointInterface *&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    TimeSpanningInterface *GetTimeSpanningInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimeSpanningInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">const</span> TimeSpanningInterface *GetTimeSpanningInterface()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimeSpanningInterface *&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tie.html#aac714a86e292b8fc3d2d8edf7b1b6afa">ResolveMIDITies</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// Update tie positioning based overlaps with accidentals in cases with enharmonic ties</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">bool</span> AdjustEnharmonicTies(Doc *doc, FloatingCurvePositioner *curve, Point bezier[4], Note *startNote, Note *endNote,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        curvature_CURVEDIR drawingCurveDir);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// Calculate initial position X position and return stem direction of the startNote</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> CalculateXPosition(Doc *doc, Staff *staff, Chord *startParentChord, Chord *endParentChord, <span class="keywordtype">int</span> spanningType,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">bool</span> isOuterChordNote, Point &amp;startPoint, Point &amp;endPoint, curvature_CURVEDIR drawingCurveDir);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// Helper function to get preferred curve direction based on the number of conditions (like note direction, position</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// on the staff, etc.)</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    curvature_CURVEDIR GetPreferredCurveDirection(</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        Layer *layer, Note *note, Chord *startParentChord, data_STEMDIRECTION noteStemDir, <span class="keywordtype">bool</span> isAboveStaffCenter);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// Update tie positioning based on the overlaps with possible layerElements such as dots/flags</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> UpdateTiePositioning(FloatingCurvePositioner *curve, Point bezier[4], LayerElement *durElement,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        Note *startNote, <span class="keywordtype">int</span> height, curvature_CURVEDIR drawingCurveDir);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CalculatePosition(Doc *doc, Staff *staff, <span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> spanningType, Point bezier[4]);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tie.html#ac4744ba3209d0faea4c9eea00b21b384">CalculateAdjacentChordXOffset</a>(Doc *doc, Staff *staff, Chord *parentChord, Note *note,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        curvature_CURVEDIR drawingCurveDir, <span class="keywordtype">int</span> initialX, <span class="keywordtype">bool</span> isStartPoint);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tie.html#a040480601ebeb4604fc94facf8372277">InitTimemapTies</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// Update tie positioning based overlaps with accidentals in cases with enharmonic ties</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">bool</span> AdjustEnharmonicTies(Doc *doc, FloatingCurvePositioner *curve, Point bezier[4], Note *startNote, Note *endNote,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        curvature_CURVEDIR drawingCurveDir);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// Calculate initial position X position and return stem direction of the startNote</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> CalculateXPosition(Doc *doc, Staff *staff, Chord *startParentChord, Chord *endParentChord, <span class="keywordtype">int</span> spanningType,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">bool</span> isOuterChordNote, Point &amp;startPoint, Point &amp;endPoint, curvature_CURVEDIR drawingCurveDir);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// Helper function to get preferred curve direction based on the number of conditions (like note direction, position</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// on the staff, etc.)</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    curvature_CURVEDIR GetPreferredCurveDirection(</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        Layer *layer, Note *note, Chord *startParentChord, data_STEMDIRECTION noteStemDir, <span class="keywordtype">bool</span> isAboveStaffCenter);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// Update tie positioning based on the overlaps with possible layerElements such as dots/flags</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> UpdateTiePositioning(FloatingCurvePositioner *curve, Point bezier[4], LayerElement *durElement,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        Note *startNote, <span class="keywordtype">int</span> height, curvature_CURVEDIR drawingCurveDir);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_tie_html_aac714a86e292b8fc3d2d8edf7b1b6afa"><div class="ttname"><a href="classvrv_1_1_tie.html#aac714a86e292b8fc3d2d8edf7b1b6afa">vrv::Tie::ResolveMIDITies</a></div><div class="ttdeci">int ResolveMIDITies(FunctorParams *functorParams) override</div><div class="ttdoc">see Object::ResolveMIDITies</div></div>
-<div class="ttc" id="anamespacevrv_html_add6b61c8ada3f79dc1f540fbead73ca5"><div class="ttname"><a href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">vrv::ClassId</a></div><div class="ttdeci">ClassId</div><div class="ttdoc">The ClassIds are used to identify Object child classes through the Object::Is virtual method.</div><div class="ttdef"><b>Definition:</b> vrvdef.h:82</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:56</div></div>
 <div class="ttc" id="aclassvrv_1_1_tie_html"><div class="ttname"><a href="classvrv_1_1_tie.html">vrv::Tie</a></div><div class="ttdoc">This class models the MEI &lt;tie&gt; element.</div><div class="ttdef"><b>Definition:</b> tie.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_tie_html_a538f07744e778a68aaa0a796f6b614e7"><div class="ttname"><a href="classvrv_1_1_tie.html#a538f07744e778a68aaa0a796f6b614e7">vrv::Tie::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> tie.h:42</div></div>
 <div class="ttc" id="aclassvrv_1_1_tie_html_ac4744ba3209d0faea4c9eea00b21b384"><div class="ttname"><a href="classvrv_1_1_tie.html#ac4744ba3209d0faea4c9eea00b21b384">vrv::Tie::CalculateAdjacentChordXOffset</a></div><div class="ttdeci">int CalculateAdjacentChordXOffset(Doc *doc, Staff *staff, Chord *parentChord, Note *note, curvature_CURVEDIR drawingCurveDir, int initialX, bool isStartPoint)</div><div class="ttdoc">Calculate starting/ending point for the ties in the chords with adjacent notes.</div></div>
+<div class="ttc" id="aclassvrv_1_1_tie_html_a040480601ebeb4604fc94facf8372277"><div class="ttname"><a href="classvrv_1_1_tie.html#a040480601ebeb4604fc94facf8372277">vrv::Tie::InitTimemapTies</a></div><div class="ttdeci">int InitTimemapTies(FunctorParams *functorParams) override</div><div class="ttdoc">see Object::InitTimemapTies</div></div>
 <div class="ttc" id="aclassvrv_1_1_tie_html_af42e8dac1dedeb43a1202e2cc058f12b"><div class="ttname"><a href="classvrv_1_1_tie.html#af42e8dac1dedeb43a1202e2cc058f12b">vrv::Tie::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
-<div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:26</div></div>
-<div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html">vrv::TimeSpanningInterface</a></div><div class="ttdoc">This class is an interface for spanning elements, such as slur, hairpin, etc.</div><div class="ttdef"><b>Definition:</b> timeinterface.h:134</div></div>
+<div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html">vrv::TimeSpanningInterface</a></div><div class="ttdoc">This class is an interface for spanning elements, such as slur, hairpin, etc.</div><div class="ttdef"><b>Definition:</b> timeinterface.h:144</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>tie.h</b></li>
-    <li class="footer">Generated on Tue Feb 22 2022 11:32:34 for Verovio by
+    <li class="footer">Generated on Wed May 25 2022 14:36:07 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

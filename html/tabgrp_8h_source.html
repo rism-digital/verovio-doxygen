@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('tabgrp_8h_source.html',''); initResiza
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;durationinterface.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;layerelement.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// TabGrp</span></div>
@@ -111,58 +111,60 @@ $(document).ready(function(){initNavTree('tabgrp_8h_source.html',''); initResiza
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tab_grp.html#a9b2fd5cbad6e65977c31711ff82c70e0">Reset</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;TabGrp&quot;</span>; }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classvrv_1_1_duration_interface.html">DurationInterface</a> *GetDurationInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classvrv_1_1_duration_interface.html">DurationInterface</a> *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_tab_grp.html#a4d88df1eeb835725c99b618aebaa4e5f">IsSupportedChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classvrv_1_1_note.html">Note</a> *<a class="code" href="classvrv_1_1_tab_grp.html#af93f0a5fe85cacaf6ba6e1371097ca15">GetTopNote</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classvrv_1_1_note.html">Note</a> *GetBottomNote();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> GetYTop();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">int</span> GetYBottom();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tab_grp.html#a168bb90abeec8aa0378aa4e187371109">CalcOnsetOffsetEnd</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tab_grp.html#a3f1407ac41f5dd20076558863048799d">CalcStem</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tab_grp.html#aadaf95ab8968daf6b69d10bb0ad6c985">FilterList</a>(ArrayOfObjects *childList) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classvrv_1_1_duration_interface.html">DurationInterface</a> *GetDurationInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;DurationInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_duration_interface.html">DurationInterface</a> *GetDurationInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const DurationInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_tab_grp.html#a4d88df1eeb835725c99b618aebaa4e5f">IsSupportedChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classvrv_1_1_note.html">Note</a> *<a class="code" href="classvrv_1_1_tab_grp.html#af93f0a5fe85cacaf6ba6e1371097ca15">GetTopNote</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_note.html">Note</a> *<a class="code" href="classvrv_1_1_tab_grp.html#af93f0a5fe85cacaf6ba6e1371097ca15">GetTopNote</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classvrv_1_1_note.html">Note</a> *GetBottomNote();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_note.html">Note</a> *GetBottomNote() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> GetYTop() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> GetYBottom() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tab_grp.html#a0966190f066e1f1e34ebb6eb0b945918">InitOnsetOffsetEnd</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tab_grp.html#a3f1407ac41f5dd20076558863048799d">CalcStem</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tab_grp.html#a04acee72bd2fed1bd113497fbe99dc6e">FilterList</a>(ListOfConstObjects &amp;childList) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:56</div></div>
 <div class="ttc" id="aclassvrv_1_1_tab_grp_html"><div class="ttname"><a href="classvrv_1_1_tab_grp.html">vrv::TabGrp</a></div><div class="ttdoc">This class models the MEI &lt;tabGrp&gt; element.</div><div class="ttdef"><b>Definition:</b> tabgrp.h:23</div></div>
 <div class="ttc" id="aclassvrv_1_1_tab_grp_html_a4d88df1eeb835725c99b618aebaa4e5f"><div class="ttname"><a href="classvrv_1_1_tab_grp.html#a4d88df1eeb835725c99b618aebaa4e5f">vrv::TabGrp::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Add an element to a element.</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_list_interface_html"><div class="ttname"><a href="classvrv_1_1_object_list_interface.html">vrv::ObjectListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1470</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_list_interface_html"><div class="ttname"><a href="classvrv_1_1_object_list_interface.html">vrv::ObjectListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1637</div></div>
 <div class="ttc" id="aclassvrv_1_1_tab_grp_html_af93f0a5fe85cacaf6ba6e1371097ca15"><div class="ttname"><a href="classvrv_1_1_tab_grp.html#af93f0a5fe85cacaf6ba6e1371097ca15">vrv::TabGrp::GetTopNote</a></div><div class="ttdeci">Note * GetTopNote()</div><div class="ttdoc">Return the top or bottom note or their Y position.</div></div>
 <div class="ttc" id="aclassvrv_1_1_tab_grp_html_a3f1407ac41f5dd20076558863048799d"><div class="ttname"><a href="classvrv_1_1_tab_grp.html#a3f1407ac41f5dd20076558863048799d">vrv::TabGrp::CalcStem</a></div><div class="ttdeci">int CalcStem(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CalcStem.</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html"><div class="ttname"><a href="classvrv_1_1_note.html">vrv::Note</a></div><div class="ttdoc">This class models the MEI &lt;note&gt; element.</div><div class="ttdef"><b>Definition:</b> note.h:47</div></div>
-<div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
-<div class="ttc" id="aclassvrv_1_1_tab_grp_html_aadaf95ab8968daf6b69d10bb0ad6c985"><div class="ttname"><a href="classvrv_1_1_tab_grp.html#aadaf95ab8968daf6b69d10bb0ad6c985">vrv::TabGrp::FilterList</a></div><div class="ttdeci">void FilterList(ArrayOfObjects *childList) override</div><div class="ttdoc">Filter the flat list and keep only Note elements.</div></div>
+<div class="ttc" id="aclassvrv_1_1_tab_grp_html_a04acee72bd2fed1bd113497fbe99dc6e"><div class="ttname"><a href="classvrv_1_1_tab_grp.html#a04acee72bd2fed1bd113497fbe99dc6e">vrv::TabGrp::FilterList</a></div><div class="ttdeci">void FilterList(ListOfConstObjects &amp;childList) const override</div><div class="ttdoc">Filter the flat list and keep only Note elements.</div></div>
+<div class="ttc" id="aclassvrv_1_1_tab_grp_html_a0966190f066e1f1e34ebb6eb0b945918"><div class="ttname"><a href="classvrv_1_1_tab_grp.html#a0966190f066e1f1e34ebb6eb0b945918">vrv::TabGrp::InitOnsetOffsetEnd</a></div><div class="ttdeci">virtual int InitOnsetOffsetEnd(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::InitOnsetOffsetEnd.</div></div>
 <div class="ttc" id="aclassvrv_1_1_duration_interface_html"><div class="ttname"><a href="classvrv_1_1_duration_interface.html">vrv::DurationInterface</a></div><div class="ttdoc">This class is an interface for elements with duration, such as notes and rests.</div><div class="ttdef"><b>Definition:</b> durationinterface.h:30</div></div>
 <div class="ttc" id="aclassvrv_1_1_tab_grp_html_a9b2fd5cbad6e65977c31711ff82c70e0"><div class="ttname"><a href="classvrv_1_1_tab_grp.html#a9b2fd5cbad6e65977c31711ff82c70e0">vrv::TabGrp::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:43</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_params_html"><div class="ttname"><a href="classvrv_1_1_functor_params.html">vrv::FunctorParams</a></div><div class="ttdoc">This is the base class for all MEI att classes.</div><div class="ttdef"><b>Definition:</b> functorparams.h:76</div></div>
-<div class="ttc" id="aclassvrv_1_1_tab_grp_html_a168bb90abeec8aa0378aa4e187371109"><div class="ttname"><a href="classvrv_1_1_tab_grp.html#a168bb90abeec8aa0378aa4e187371109">vrv::TabGrp::CalcOnsetOffsetEnd</a></div><div class="ttdeci">virtual int CalcOnsetOffsetEnd(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CalcOnsetOffsetEnd.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>tabgrp.h</b></li>
-    <li class="footer">Generated on Tue Feb 22 2022 11:32:34 for Verovio by
+    <li class="footer">Generated on Wed May 25 2022 14:36:07 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

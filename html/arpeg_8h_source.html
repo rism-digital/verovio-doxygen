@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('arpeg_8h_source.html',''); initResizab
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;plistinterface.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;timeinterface.h&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// Arpeg</span></div>
@@ -124,72 +124,78 @@ $(document).ready(function(){initNavTree('arpeg_8h_source.html',''); initResizab
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span> GetDrawingX() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::set&lt;Note *&gt; <a class="code" href="classvrv_1_1_arpeg.html#a185034ba6ab76a5fc1396b0723e14f9c">GetNotes</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_arpeg.html#a5f238eed6fd2aded2572ee35c07509be">GetDrawingTopBottomNotes</a>(Note *&amp;top, Note *&amp;bottom);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    Staff *<a class="code" href="classvrv_1_1_arpeg.html#aaab2107a9ec1a6c51018674da16ba32c">GetCrossStaff</a>();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    PlistInterface *GetPlistInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>PlistInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    TimePointInterface *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TimePointInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">int</span> GetDrawingXRel()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingXRel; }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetDrawingXRel(<span class="keywordtype">int</span> drawingXRel);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_arpeg.html#abd0f1f222639caacbefa8c5bb8dbadbf">IsValidRef</a>(Object *ref) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_arpeg.html#a8e007b23c0fb1dc5ddd24e2ec4ce72df">ResetHorizontalAlignment</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_arpeg.html#a6f38ec62caaa443acae4c3eb3a67ca55">AdjustArpeg</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_arpeg.html#a0e27c4e0866b5a988f8c8eca5512c2ea">ResetDrawing</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_arpeg.html#a2a66500ca5b65be33deef1bcd5b98607">HorizontalLayoutCache</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_arpeg.html#a0ee61ab4625d63e903e0e0c50d7c16ae">PrepareMIDI</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">int</span> m_drawingXRel;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">int</span> m_cachedXRel;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;};</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::set&lt;const Note *&gt; <a class="code" href="classvrv_1_1_arpeg.html#a185034ba6ab76a5fc1396b0723e14f9c">GetNotes</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_arpeg.html#a5f238eed6fd2aded2572ee35c07509be">GetDrawingTopBottomNotes</a>(Note *&amp;top, Note *&amp;bottom);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    Staff *<a class="code" href="classvrv_1_1_arpeg.html#aaab2107a9ec1a6c51018674da16ba32c">GetCrossStaff</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">const</span> Staff *<a class="code" href="classvrv_1_1_arpeg.html#aaab2107a9ec1a6c51018674da16ba32c">GetCrossStaff</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    PlistInterface *GetPlistInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;PlistInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">const</span> PlistInterface *GetPlistInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const PlistInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    TimePointInterface *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimePointInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">const</span> TimePointInterface *GetTimePointInterface()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimePointInterface *&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">int</span> GetDrawingXRel()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingXRel; }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetDrawingXRel(<span class="keywordtype">int</span> drawingXRel);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_arpeg.html#ae17abbb42c15c08e953b014032ba6203">IsValidRef</a>(<span class="keyword">const</span> Object *ref) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_arpeg.html#a8e007b23c0fb1dc5ddd24e2ec4ce72df">ResetHorizontalAlignment</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_arpeg.html#a6f38ec62caaa443acae4c3eb3a67ca55">AdjustArpeg</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_arpeg.html#aa2a731c8679d1766a3582b8375b15f28">ResetData</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_arpeg.html#a707b9c9d38d731e82cd982bc153f7d93">CacheHorizontalLayout</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_arpeg.html#ae5dcc37bde57cb069b38ca292aed4d76">InitMIDI</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">int</span> m_drawingXRel;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">int</span> m_cachedXRel;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;};</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_arpeg_html_a0e27c4e0866b5a988f8c8eca5512c2ea"><div class="ttname"><a href="classvrv_1_1_arpeg.html#a0e27c4e0866b5a988f8c8eca5512c2ea">vrv::Arpeg::ResetDrawing</a></div><div class="ttdeci">int ResetDrawing(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
-<div class="ttc" id="aclassvrv_1_1_arpeg_html_abd0f1f222639caacbefa8c5bb8dbadbf"><div class="ttname"><a href="classvrv_1_1_arpeg.html#abd0f1f222639caacbefa8c5bb8dbadbf">vrv::Arpeg::IsValidRef</a></div><div class="ttdeci">bool IsValidRef(Object *ref) const override</div><div class="ttdoc">Custom method for @plist validation.</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:56</div></div>
+<div class="ttc" id="aclassvrv_1_1_arpeg_html_ae17abbb42c15c08e953b014032ba6203"><div class="ttname"><a href="classvrv_1_1_arpeg.html#ae17abbb42c15c08e953b014032ba6203">vrv::Arpeg::IsValidRef</a></div><div class="ttdeci">bool IsValidRef(const Object *ref) const override</div><div class="ttdoc">Custom method for @plist validation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_arpeg_html_a6f38ec62caaa443acae4c3eb3a67ca55"><div class="ttname"><a href="classvrv_1_1_arpeg.html#a6f38ec62caaa443acae4c3eb3a67ca55">vrv::Arpeg::AdjustArpeg</a></div><div class="ttdeci">int AdjustArpeg(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::AdjustArpeg.</div></div>
+<div class="ttc" id="aclassvrv_1_1_arpeg_html_ae5dcc37bde57cb069b38ca292aed4d76"><div class="ttname"><a href="classvrv_1_1_arpeg.html#ae5dcc37bde57cb069b38ca292aed4d76">vrv::Arpeg::InitMIDI</a></div><div class="ttdeci">int InitMIDI(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::InitMIDI.</div></div>
+<div class="ttc" id="aclassvrv_1_1_arpeg_html_aa2a731c8679d1766a3582b8375b15f28"><div class="ttname"><a href="classvrv_1_1_arpeg.html#aa2a731c8679d1766a3582b8375b15f28">vrv::Arpeg::ResetData</a></div><div class="ttdeci">int ResetData(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetData.</div></div>
+<div class="ttc" id="aclassvrv_1_1_arpeg_html_a707b9c9d38d731e82cd982bc153f7d93"><div class="ttname"><a href="classvrv_1_1_arpeg.html#a707b9c9d38d731e82cd982bc153f7d93">vrv::Arpeg::CacheHorizontalLayout</a></div><div class="ttdeci">int CacheHorizontalLayout(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CacheHorizontalLayout.</div></div>
 <div class="ttc" id="aclassvrv_1_1_arpeg_html"><div class="ttname"><a href="classvrv_1_1_arpeg.html">vrv::Arpeg</a></div><div class="ttdoc">This class models the MEI &lt;arpeg&gt; element.</div><div class="ttdef"><b>Definition:</b> arpeg.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_arpeg_html_aaab2107a9ec1a6c51018674da16ba32c"><div class="ttname"><a href="classvrv_1_1_arpeg.html#aaab2107a9ec1a6c51018674da16ba32c">vrv::Arpeg::GetCrossStaff</a></div><div class="ttdeci">Staff * GetCrossStaff()</div><div class="ttdoc">Get cross staff of the front element if all elements of arpeggio are cross-staff.</div></div>
-<div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
 <div class="ttc" id="aclassvrv_1_1_arpeg_html_afe45574f26ac977fffa6606eebd77cf4"><div class="ttname"><a href="classvrv_1_1_arpeg.html#afe45574f26ac977fffa6606eebd77cf4">vrv::Arpeg::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> arpeg.h:41</div></div>
-<div class="ttc" id="aclassvrv_1_1_arpeg_html_a0ee61ab4625d63e903e0e0c50d7c16ae"><div class="ttname"><a href="classvrv_1_1_arpeg.html#a0ee61ab4625d63e903e0e0c50d7c16ae">vrv::Arpeg::PrepareMIDI</a></div><div class="ttdeci">int PrepareMIDI(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::PrepareMIDI.</div></div>
 <div class="ttc" id="aclassvrv_1_1_arpeg_html_a185034ba6ab76a5fc1396b0723e14f9c"><div class="ttname"><a href="classvrv_1_1_arpeg.html#a185034ba6ab76a5fc1396b0723e14f9c">vrv::Arpeg::GetNotes</a></div><div class="ttdeci">std::set&lt; Note * &gt; GetNotes()</div><div class="ttdoc">Get all notes of the arpeggio.</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_plist_interface_html"><div class="ttname"><a href="classvrv_1_1_plist_interface.html">vrv::PlistInterface</a></div><div class="ttdoc">This class is an interface for elements having a single time point, such as tempo,...</div><div class="ttdef"><b>Definition:</b> plistinterface.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_arpeg_html_a8e007b23c0fb1dc5ddd24e2ec4ce72df"><div class="ttname"><a href="classvrv_1_1_arpeg.html#a8e007b23c0fb1dc5ddd24e2ec4ce72df">vrv::Arpeg::ResetHorizontalAlignment</a></div><div class="ttdeci">int ResetHorizontalAlignment(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetHorizontalAlignment.</div></div>
 <div class="ttc" id="aclassvrv_1_1_arpeg_html_a647b7b96ece5fba2d339f1c0487cd601"><div class="ttname"><a href="classvrv_1_1_arpeg.html#a647b7b96ece5fba2d339f1c0487cd601">vrv::Arpeg::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
-<div class="ttc" id="aclassvrv_1_1_arpeg_html_a2a66500ca5b65be33deef1bcd5b98607"><div class="ttname"><a href="classvrv_1_1_arpeg.html#a2a66500ca5b65be33deef1bcd5b98607">vrv::Arpeg::HorizontalLayoutCache</a></div><div class="ttdeci">int HorizontalLayoutCache(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::HorizontalLayoutCache.</div></div>
 <div class="ttc" id="aclassvrv_1_1_arpeg_html_a5f238eed6fd2aded2572ee35c07509be"><div class="ttname"><a href="classvrv_1_1_arpeg.html#a5f238eed6fd2aded2572ee35c07509be">vrv::Arpeg::GetDrawingTopBottomNotes</a></div><div class="ttdeci">void GetDrawingTopBottomNotes(Note *&amp;top, Note *&amp;bottom)</div><div class="ttdoc">Set the top and bottom note of the arpeg.</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_point_interface_html"><div class="ttname"><a href="classvrv_1_1_time_point_interface.html">vrv::TimePointInterface</a></div><div class="ttdoc">This class is an interface for elements having a single time point, such as tempo,...</div><div class="ttdef"><b>Definition:</b> timeinterface.h:30</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>arpeg.h</b></li>
-    <li class="footer">Generated on Tue Feb 22 2022 11:32:34 for Verovio by
+    <li class="footer">Generated on Wed May 25 2022 14:36:06 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

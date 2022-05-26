@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('classvrv_1_1_adjust_grace_x_pos_params
 </div><!--header-->
 <div class="contents">
 
-<p>member 0: the maximum position member 1: the upcoming maximum position (i.e., the min pos for the next element) member 2: the cumulated shift on the previous aligners member 3: the list of staffN in the top-level scoreDef member 4: the flag indicating whereas the alignment is in a <a class="el" href="classvrv_1_1_measure.html" title="This class represents a measure in a page-based score (Doc).">Measure</a> or in a Grace member 5: the pointer to the right ALIGNMENT_DEFAULT (if any) member 6: the <a class="el" href="classvrv_1_1_doc.html" title="This class is a hold the data and corresponds to the model of a MVC design pattern.">Doc</a> member 7: the <a class="el" href="classvrv_1_1_functor.html">Functor</a> to be redirected to <a class="el" href="classvrv_1_1_measure_aligner.html" title="This class aligns the content of a measure It contains a vector of Alignment.">MeasureAligner</a> and <a class="el" href="classvrv_1_1_grace_aligner.html" title="This class aligns the content of a grace note group It contains a vector of Alignment.">GraceAligner</a> member 8: the end <a class="el" href="classvrv_1_1_functor.html">Functor</a> for redirection  
+<p>member 0: the maximum position member 1: the upcoming maximum position (i.e., the min pos for the next element) member 2: the cumulated shift on the previous aligners member 3: the list of staffN in the top-level scoreDef member 4: the flag indicating whereas the alignment is in a <a class="el" href="classvrv_1_1_measure.html" title="This class represents a measure in a page-based score (Doc).">Measure</a> or in a Grace member 5: list of tie endpoints for the current measure member 6: the pointer to the right ALIGNMENT_DEFAULT (if any) member 7: the <a class="el" href="classvrv_1_1_doc.html" title="This class is a hold the data and corresponds to the model of a MVC design pattern.">Doc</a> member 8: the <a class="el" href="classvrv_1_1_functor.html">Functor</a> to be redirected to <a class="el" href="classvrv_1_1_measure_aligner.html" title="This class aligns the content of a measure It contains a vector of Alignment.">MeasureAligner</a> and <a class="el" href="classvrv_1_1_grace_aligner.html" title="This class aligns the content of a grace note group It contains a vector of Alignment.">GraceAligner</a> member 9: the end <a class="el" href="classvrv_1_1_functor.html">Functor</a> for redirection  
  <a href="classvrv_1_1_adjust_grace_x_pos_params.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="functorparams_8h_source.html">functorparams.h</a>&gt;</code></p>
@@ -129,6 +129,9 @@ std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m
 <tr class="memitem:a53bf45cd035594b70be96f5c7d73669e"><td class="memItemLeft" align="right" valign="top"><a id="a53bf45cd035594b70be96f5c7d73669e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGraceAlignment</b></td></tr>
 <tr class="separator:a53bf45cd035594b70be96f5c7d73669e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad000115282ef51605e81210f0d916514"><td class="memItemLeft" align="right" valign="top"><a id="ad000115282ef51605e81210f0d916514"></a>
+MeasureTieEndpoints&#160;</td><td class="memItemRight" valign="bottom"><b>m_measureTieEndpoints</b></td></tr>
+<tr class="separator:ad000115282ef51605e81210f0d916514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a818391346cc100f1d83d7b111972bb1b"><td class="memItemLeft" align="right" valign="top"><a id="a818391346cc100f1d83d7b111972bb1b"></a>
 <a class="el" href="classvrv_1_1_alignment.html">Alignment</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_rightDefaultAlignment</b></td></tr>
 <tr class="separator:a818391346cc100f1d83d7b111972bb1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,7 +146,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGraceAlignment</b
 <tr class="separator:aa60b0298d64278aa794a4a9876ccc34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>member 0: the maximum position member 1: the upcoming maximum position (i.e., the min pos for the next element) member 2: the cumulated shift on the previous aligners member 3: the list of staffN in the top-level scoreDef member 4: the flag indicating whereas the alignment is in a <a class="el" href="classvrv_1_1_measure.html" title="This class represents a measure in a page-based score (Doc).">Measure</a> or in a Grace member 5: the pointer to the right ALIGNMENT_DEFAULT (if any) member 6: the <a class="el" href="classvrv_1_1_doc.html" title="This class is a hold the data and corresponds to the model of a MVC design pattern.">Doc</a> member 7: the <a class="el" href="classvrv_1_1_functor.html">Functor</a> to be redirected to <a class="el" href="classvrv_1_1_measure_aligner.html" title="This class aligns the content of a measure It contains a vector of Alignment.">MeasureAligner</a> and <a class="el" href="classvrv_1_1_grace_aligner.html" title="This class aligns the content of a grace note group It contains a vector of Alignment.">GraceAligner</a> member 8: the end <a class="el" href="classvrv_1_1_functor.html">Functor</a> for redirection </p>
+<div class="textblock"><p>member 0: the maximum position member 1: the upcoming maximum position (i.e., the min pos for the next element) member 2: the cumulated shift on the previous aligners member 3: the list of staffN in the top-level scoreDef member 4: the flag indicating whereas the alignment is in a <a class="el" href="classvrv_1_1_measure.html" title="This class represents a measure in a page-based score (Doc).">Measure</a> or in a Grace member 5: list of tie endpoints for the current measure member 6: the pointer to the right ALIGNMENT_DEFAULT (if any) member 7: the <a class="el" href="classvrv_1_1_doc.html" title="This class is a hold the data and corresponds to the model of a MVC design pattern.">Doc</a> member 8: the <a class="el" href="classvrv_1_1_functor.html">Functor</a> to be redirected to <a class="el" href="classvrv_1_1_measure_aligner.html" title="This class aligns the content of a measure It contains a vector of Alignment.">MeasureAligner</a> and <a class="el" href="classvrv_1_1_grace_aligner.html" title="This class aligns the content of a grace note group It contains a vector of Alignment.">GraceAligner</a> member 9: the end <a class="el" href="classvrv_1_1_functor.html">Functor</a> for redirection </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="functorparams_8h_source.html">functorparams.h</a></li>
 </ul>
@@ -152,8 +155,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGraceAlignment</b
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_adjust_grace_x_pos_params.html">AdjustGraceXPosParams</a></li>
-    <li class="footer">Generated on Tue Feb 22 2022 11:32:34 for Verovio by
+    <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_adjust_grace_x_pos_params.html">AdjustGraceXPosParams</a></li>
+    <li class="footer">Generated on Wed May 25 2022 14:36:07 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

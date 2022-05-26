@@ -95,6 +95,11 @@ $(document).ready(function(){initNavTree('iopae_8h_source.html',''); initResizab
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __VRV_IOPAE_H__</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __VRV_IOPAE_H__</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * There are two implementation of the Plaine and Easie parser.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * The new one was introduced in Verovio 3.7.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * In order to build with the old parser, the following define needs to be uncommented</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//#define USE_PAE_OLD_PARSER</span></div>
@@ -119,7 +124,7 @@ $(document).ready(function(){initNavTree('iopae_8h_source.html',''); initResizab
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;jsonxx.h&quot;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">class </span>Beam;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">class </span>Chord;</div>
@@ -331,8 +336,8 @@ $(document).ready(function(){initNavTree('iopae_8h_source.html',''); initResizab
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keywordtype">char</span> octave;</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> beam;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <a class="code" href="namespacevrv.html#a8a19df71e38b10ca359d0052d1fdba70">data_PITCHNAME</a> pitch;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <a class="code" href="namespacevrv.html#a2bd8f760fccdf76e2f41894ca0431d4e">data_DURATION</a> duration;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        data_PITCHNAME pitch;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        data_DURATION duration;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        data_ACCIDENTAL_WRITTEN accidental;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordtype">bool</span> accidGes;</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> dots;</div>
@@ -445,7 +450,7 @@ $(document).ready(function(){initNavTree('iopae_8h_source.html',''); initResizab
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keywordtype">int</span> getAccidental(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, data_ACCIDENTAL_WRITTEN *accident, <span class="keywordtype">int</span> index = 0);</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="keywordtype">int</span> getOctave(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, <span class="keywordtype">char</span> *octave, <span class="keywordtype">int</span> index = 0);</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keywordtype">int</span> getDurations(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, pae::Measure *measure, <span class="keywordtype">int</span> index = 0);</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordtype">int</span> getDuration(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, <a class="code" href="namespacevrv.html#a2bd8f760fccdf76e2f41894ca0431d4e">data_DURATION</a> *duration, <span class="keywordtype">int</span> *dot, <span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordtype">int</span> getDuration(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, data_DURATION *duration, <span class="keywordtype">int</span> *dot, <span class="keywordtype">int</span> index);</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordtype">int</span> getTupletFermata(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, pae::Note *note, <span class="keywordtype">int</span> index = 0);</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordtype">int</span> getTupletFermataEnd(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, pae::Note *note, <span class="keywordtype">int</span> index = 0);</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="keywordtype">int</span> getGraceNote(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, pae::Note *note, <span class="keywordtype">int</span> index = 0);</div>
@@ -453,7 +458,7 @@ $(document).ready(function(){initNavTree('iopae_8h_source.html',''); initResizab
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordtype">int</span> getAbbreviation(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, pae::Measure *measure, <span class="keywordtype">int</span> index = 0);</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keywordtype">int</span> getNote(<span class="keyword">const</span> <span class="keywordtype">char</span> *incipit, pae::Note *note, pae::Measure *measure, <span class="keywordtype">int</span> index = 0);</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <a class="code" href="namespacevrv.html#a8a19df71e38b10ca359d0052d1fdba70">data_PITCHNAME</a> getPitch(<span class="keywordtype">char</span> c_note);</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    data_PITCHNAME getPitch(<span class="keywordtype">char</span> c_note);</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160; </div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="comment">// output functions</span></div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keywordtype">void</span> addLayerElement(LayerElement *element);</div>
@@ -501,7 +506,7 @@ $(document).ready(function(){initNavTree('iopae_8h_source.html',''); initResizab
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        Token(<span class="keywordtype">char</span> c, <span class="keywordtype">int</span> position, Object *<span class="keywordtype">object</span> = NULL);</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="keyword">virtual</span> ~Token();</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160; </div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="keywordtype">bool</span> Is(<a class="code" href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">ClassId</a>);</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="keywordtype">bool</span> Is(ClassId);</div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        <span class="keywordtype">bool</span> IsContainerEnd();</div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        <span class="keywordtype">bool</span> IsEnd();</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        <span class="keywordtype">bool</span> IsSpace();</div>
@@ -557,117 +562,116 @@ $(document).ready(function(){initNavTree('iopae_8h_source.html',''); initResizab
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    <span class="keywordtype">bool</span> ConvertTuplet();</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <span class="keywordtype">bool</span> ConvertDuration();</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    <span class="keywordtype">bool</span> ConvertTie();</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="keywordtype">bool</span> ConvertAccidGes();</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160; </div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    <span class="keywordtype">bool</span> Is(pae::Token &amp;token, <span class="keyword">const</span> std::string &amp;map);</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    <span class="keywordtype">bool</span> Was(pae::Token &amp;token, <span class="keyword">const</span> std::string &amp;map);</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    <span class="keywordtype">bool</span> HasInput(<span class="keywordtype">char</span> inputChar);</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160; </div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    <span class="keywordtype">bool</span> ParseKeySig(<a class="code" href="classvrv_1_1_key_sig.html">KeySig</a> *keySig, <span class="keyword">const</span> std::string &amp;paeStr, pae::Token &amp;token);</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    <span class="keywordtype">bool</span> ParseClef(<a class="code" href="classvrv_1_1_clef.html">Clef</a> *clef, <span class="keyword">const</span> std::string &amp;paeStr, pae::Token &amp;token, <span class="keywordtype">bool</span> *mensuralScoreDef = NULL);</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    <span class="keywordtype">bool</span> ParseMeterSig(<a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a> *meterSig, <span class="keyword">const</span> std::string &amp;paeStr, pae::Token &amp;token);</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    <span class="keywordtype">bool</span> ParseMensur(<a class="code" href="classvrv_1_1_mensur.html">Mensur</a> *mensur, <span class="keyword">const</span> std::string &amp;paeStr, pae::Token &amp;token);</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="keywordtype">bool</span> ParseMeasure(<a class="code" href="classvrv_1_1_measure.html">Measure</a> *measure, <span class="keyword">const</span> std::string &amp;paeStr, pae::Token &amp;token);</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    <span class="keywordtype">bool</span> ParseDuration(</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        std::list&lt;std::pair&lt;data_DURATION, int&gt;&gt; &amp;durations, <span class="keyword">const</span> std::string &amp;paeStr, pae::Token &amp;token);</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160; </div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    <span class="keywordtype">bool</span> CheckPAEChars(<span class="keyword">const</span> std::string &amp;input, std::string &amp;invalidChars, <span class="keyword">const</span> std::string &amp;validChars = <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160; </div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    <span class="keywordtype">void</span> PrepareInsertion(<span class="keywordtype">int</span> position, std::list&lt;pae::Token&gt; &amp;insertion);</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160; </div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    <span class="keywordtype">bool</span> CheckHierarchy();</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160; </div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <span class="keywordtype">bool</span> CheckContent();</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160; </div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <span class="keywordtype">void</span> RemoveContainerToken(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160; </div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <span class="keywordtype">void</span> LogPAE(<span class="keywordtype">int</span> errCode, pae::Token &amp;token, std::string value = <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="keywordtype">void</span> LogDebugTokens(<span class="keywordtype">bool</span> vertical = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160; </div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;<span class="preprocessor">#endif // NO_PAE_SUPPORT</span></div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160; </div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    <span class="keywordtype">void</span> ClearTokenObjects();</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160; </div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::map&lt;int, std::string&gt; s_errCodes;</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160; </div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    std::list&lt;pae::Token&gt; m_pae;</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160; </div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    <span class="keywordtype">bool</span> m_isMensural;</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160; </div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    <span class="keywordtype">bool</span> m_pedanticMode;</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="keywordtype">bool</span> ConvertLigature();</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    <span class="keywordtype">bool</span> ConvertAccidGes();</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160; </div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    <span class="keywordtype">bool</span> Is(pae::Token &amp;token, <span class="keyword">const</span> std::string &amp;map);</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    <span class="keywordtype">bool</span> Was(pae::Token &amp;token, <span class="keyword">const</span> std::string &amp;map);</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    <span class="keywordtype">bool</span> HasInput(<span class="keywordtype">char</span> inputChar);</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160; </div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;    <span class="keywordtype">bool</span> ParseKeySig(<a class="code" href="classvrv_1_1_key_sig.html">KeySig</a> *keySig, <span class="keyword">const</span> std::string &amp;paeStr, pae::Token &amp;token);</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    <span class="keywordtype">bool</span> ParseClef(<a class="code" href="classvrv_1_1_clef.html">Clef</a> *clef, <span class="keyword">const</span> std::string &amp;paeStr, pae::Token &amp;token, <span class="keywordtype">bool</span> *mensuralScoreDef = NULL);</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    <span class="keywordtype">bool</span> ParseMeterSig(<a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a> *meterSig, <span class="keyword">const</span> std::string &amp;paeStr, pae::Token &amp;token);</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="keywordtype">bool</span> ParseMensur(<a class="code" href="classvrv_1_1_mensur.html">Mensur</a> *mensur, <span class="keyword">const</span> std::string &amp;paeStr, pae::Token &amp;token);</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    <span class="keywordtype">bool</span> ParseMeasure(<a class="code" href="classvrv_1_1_measure.html">Measure</a> *measure, <span class="keyword">const</span> std::string &amp;paeStr, pae::Token &amp;token);</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    <span class="keywordtype">bool</span> ParseDuration(</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;        std::list&lt;std::pair&lt;data_DURATION, int&gt;&gt; &amp;durations, <span class="keyword">const</span> std::string &amp;paeStr, pae::Token &amp;token);</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160; </div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    <span class="keywordtype">bool</span> CheckPAEChars(<span class="keyword">const</span> std::string &amp;input, std::string &amp;invalidChars, <span class="keyword">const</span> std::string &amp;validChars = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160; </div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    <span class="keywordtype">void</span> PrepareInsertion(<span class="keywordtype">int</span> position, std::list&lt;pae::Token&gt; &amp;insertion);</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160; </div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    <span class="keywordtype">bool</span> CheckHierarchy();</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160; </div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="keywordtype">bool</span> CheckContentPreBuild();</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160; </div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <span class="keywordtype">bool</span> CheckContentPostBuild();</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160; </div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="keywordtype">void</span> RemoveContainerToken(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160; </div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    <span class="keywordtype">void</span> LogPAE(<span class="keywordtype">int</span> errCode, pae::Token &amp;token, std::string value = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    <span class="keywordtype">void</span> LogDebugTokens(<span class="keywordtype">bool</span> vertical = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160; </div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;<span class="preprocessor">#endif // NO_PAE_SUPPORT</span></div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160; </div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;    <span class="keywordtype">void</span> ClearTokenObjects();</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160; </div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::map&lt;int, std::string&gt; s_errCodes;</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160; </div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    std::list&lt;pae::Token&gt; m_pae;</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160; </div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    <span class="keywordtype">bool</span> m_isMensural;</div>
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160; </div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    <span class="keywordtype">bool</span> m_hasErrors;</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160; </div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    <a class="code" href="classvrv_1_1_clef.html">Clef</a> m_clef;</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    <a class="code" href="classvrv_1_1_key_sig.html">KeySig</a> m_keySig;</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    <a class="code" href="classvrv_1_1_mensur.html">Mensur</a> m_mensur;</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;    <a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a> m_meterSig;</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    <span class="keywordtype">bool</span> m_hasClef;</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    <span class="keywordtype">bool</span> m_hasKeySig;</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <span class="keywordtype">bool</span> m_hasMeterSig;</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    <span class="keywordtype">bool</span> m_hasMensur;</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160; </div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;    jsonxx::Object m_clefLog;</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    jsonxx::Object m_keysigLog;</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    jsonxx::Object m_timesigLog;</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    jsonxx::Object m_inputLog;</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    jsonxx::Array m_dataLog;</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;};</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160; </div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<span class="preprocessor">#endif // USE_PAE_OLD_PARSER</span></div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160; </div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160; </div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    <span class="keywordtype">bool</span> m_pedanticMode;</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160; </div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    <span class="keywordtype">bool</span> m_hasErrors;</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160; </div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <a class="code" href="classvrv_1_1_clef.html">Clef</a> m_clef;</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;    <a class="code" href="classvrv_1_1_key_sig.html">KeySig</a> m_keySig;</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <a class="code" href="classvrv_1_1_mensur.html">Mensur</a> m_mensur;</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    <a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a> m_meterSig;</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    <span class="keywordtype">bool</span> m_hasClef;</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    <span class="keywordtype">bool</span> m_hasKeySig;</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    <span class="keywordtype">bool</span> m_hasMeterSig;</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;    <span class="keywordtype">bool</span> m_hasMensur;</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160; </div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    jsonxx::Object m_clefLog;</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    jsonxx::Object m_keysigLog;</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    jsonxx::Object m_timesigLog;</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    jsonxx::Object m_inputLog;</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    jsonxx::Array m_dataLog;</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;};</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160; </div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="preprocessor">#endif // USE_PAE_OLD_PARSER</span></div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160; </div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160; </div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_staff_def_html"><div class="ttname"><a href="classvrv_1_1_staff_def.html">vrv::StaffDef</a></div><div class="ttdoc">This class represents a MEI staffDef.</div><div class="ttdef"><b>Definition:</b> staffdef.h:25</div></div>
-<div class="ttc" id="aclassvrv_1_1_p_a_e_input_html_a2c7eb5002ee302d228c2fc307de055fe"><div class="ttname"><a href="classvrv_1_1_p_a_e_input.html#a2c7eb5002ee302d228c2fc307de055fe">vrv::PAEInput::GetValidationLog</a></div><div class="ttdeci">jsonxx::Object GetValidationLog()</div><div class="ttdoc">Return a JSON object with the validation log It is a single object when an input error is encountered...</div><div class="ttdef"><b>Definition:</b> iopae.cpp:2421</div></div>
+<div class="ttc" id="aclassvrv_1_1_p_a_e_input_html_a2c7eb5002ee302d228c2fc307de055fe"><div class="ttname"><a href="classvrv_1_1_p_a_e_input.html#a2c7eb5002ee302d228c2fc307de055fe">vrv::PAEInput::GetValidationLog</a></div><div class="ttdeci">jsonxx::Object GetValidationLog()</div><div class="ttdoc">Return a JSON object with the validation log It is a single object when an input error is encountered...</div><div class="ttdef"><b>Definition:</b> iopae.cpp:2435</div></div>
 <div class="ttc" id="aclassvrv_1_1_staff_html"><div class="ttname"><a href="classvrv_1_1_staff.html">vrv::Staff</a></div><div class="ttdoc">This class represents a staff in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> staff.h:36</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html"><div class="ttname"><a href="classvrv_1_1_measure.html">vrv::Measure</a></div><div class="ttdoc">This class represents a measure in a page-based score (Doc).</div><div class="ttdef"><b>Definition:</b> measure.h:36</div></div>
 <div class="ttc" id="aclassvrv_1_1_p_a_e_output_html"><div class="ttname"><a href="classvrv_1_1_p_a_e_output.html">vrv::PAEOutput</a></div><div class="ttdoc">This class is a file output stream for writing PAE files.</div><div class="ttdef"><b>Definition:</b> iopae.h:71</div></div>
-<div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:39</div></div>
-<div class="ttc" id="anamespacevrv_html_add6b61c8ada3f79dc1f540fbead73ca5"><div class="ttname"><a href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">vrv::ClassId</a></div><div class="ttdeci">ClassId</div><div class="ttdoc">The ClassIds are used to identify Object child classes through the Object::Is virtual method.</div><div class="ttdef"><b>Definition:</b> vrvdef.h:82</div></div>
+<div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:41</div></div>
 <div class="ttc" id="aclassvrv_1_1_p_a_e_input_html"><div class="ttname"><a href="classvrv_1_1_p_a_e_input.html">vrv::PAEInput</a></div><div class="ttdef"><b>Definition:</b> iopae.h:507</div></div>
 <div class="ttc" id="aclassvrv_1_1_meter_sig_html"><div class="ttname"><a href="classvrv_1_1_meter_sig.html">vrv::MeterSig</a></div><div class="ttdoc">This class models the MEI &lt;meterSig&gt; element.</div><div class="ttdef"><b>Definition:</b> metersig.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_chord_html"><div class="ttname"><a href="classvrv_1_1_chord.html">vrv::Chord</a></div><div class="ttdoc">This class represents a collection of notes in the same layer with the same onset time.</div><div class="ttdef"><b>Definition:</b> chord.h:32</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:56</div></div>
 <div class="ttc" id="aclassvrv_1_1_output_html"><div class="ttname"><a href="classvrv_1_1_output.html">vrv::Output</a></div><div class="ttdoc">This class is a base class for output classes.</div><div class="ttdef"><b>Definition:</b> io.h:31</div></div>
 <div class="ttc" id="aclassvrv_1_1_mensur_html"><div class="ttname"><a href="classvrv_1_1_mensur.html">vrv::Mensur</a></div><div class="ttdoc">This class models the MEI &lt;mensur&gt; element.</div><div class="ttdef"><b>Definition:</b> mensur.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_bar_line_html"><div class="ttname"><a href="classvrv_1_1_bar_line.html">vrv::BarLine</a></div><div class="ttdoc">This class models the MEI &lt;barLine&gt; element.</div><div class="ttdef"><b>Definition:</b> barline.h:25</div></div>
 <div class="ttc" id="aclassvrv_1_1_space_html"><div class="ttname"><a href="classvrv_1_1_space.html">vrv::Space</a></div><div class="ttdoc">This class models the MEI &lt;space&gt; element.</div><div class="ttdef"><b>Definition:</b> space.h:23</div></div>
 <div class="ttc" id="aclassvrv_1_1_clef_html"><div class="ttname"><a href="classvrv_1_1_clef.html">vrv::Clef</a></div><div class="ttdoc">This class models the MEI &lt;clef&gt; element.</div><div class="ttdef"><b>Definition:</b> clef.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_input_html"><div class="ttname"><a href="classvrv_1_1_input.html">vrv::Input</a></div><div class="ttdoc">This class is a base class for input classes.</div><div class="ttdef"><b>Definition:</b> io.h:63</div></div>
-<div class="ttc" id="aclassvrv_1_1_p_a_e_output_html_a77feed5ebe37df0bedfc96632f15712d"><div class="ttname"><a href="classvrv_1_1_p_a_e_output.html#a77feed5ebe37df0bedfc96632f15712d">vrv::PAEOutput::Export</a></div><div class="ttdeci">bool Export(std::string &amp;output)</div><div class="ttdoc">The main method for exporting to PAE.</div><div class="ttdef"><b>Definition:</b> iopae.cpp:63</div></div>
-<div class="ttc" id="aclassvrv_1_1_beam_html"><div class="ttname"><a href="classvrv_1_1_beam.html">vrv::Beam</a></div><div class="ttdef"><b>Definition:</b> beam.h:246</div></div>
+<div class="ttc" id="aclassvrv_1_1_p_a_e_output_html_a77feed5ebe37df0bedfc96632f15712d"><div class="ttname"><a href="classvrv_1_1_p_a_e_output.html#a77feed5ebe37df0bedfc96632f15712d">vrv::PAEOutput::Export</a></div><div class="ttdeci">bool Export(std::string &amp;output)</div><div class="ttdoc">The main method for exporting to PAE.</div><div class="ttdef"><b>Definition:</b> iopae.cpp:64</div></div>
+<div class="ttc" id="aclassvrv_1_1_beam_html"><div class="ttname"><a href="classvrv_1_1_beam.html">vrv::Beam</a></div><div class="ttdef"><b>Definition:</b> beam.h:260</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html"><div class="ttname"><a href="classvrv_1_1_note.html">vrv::Note</a></div><div class="ttdoc">This class models the MEI &lt;note&gt; element.</div><div class="ttdef"><b>Definition:</b> note.h:47</div></div>
 <div class="ttc" id="aclassvrv_1_1_mdiv_html"><div class="ttname"><a href="classvrv_1_1_mdiv.html">vrv::Mdiv</a></div><div class="ttdoc">This class represent a &lt;mdiv&gt; in page-based MEI.</div><div class="ttdef"><b>Definition:</b> mdiv.h:24</div></div>
-<div class="ttc" id="anamespacevrv_html_a2bd8f760fccdf76e2f41894ca0431d4e"><div class="ttname"><a href="namespacevrv.html#a2bd8f760fccdf76e2f41894ca0431d4e">vrv::data_DURATION</a></div><div class="ttdeci">data_DURATION</div><div class="ttdoc">MEI data.DURATION.</div><div class="ttdef"><b>Definition:</b> attdef.h:99</div></div>
-<div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
-<div class="ttc" id="aclassvrv_1_1_p_a_e_output_html_a85a3ed4250131dece8de13f1938b88d2"><div class="ttname"><a href="classvrv_1_1_p_a_e_output.html#a85a3ed4250131dece8de13f1938b88d2">vrv::PAEOutput::WriteObject</a></div><div class="ttdeci">bool WriteObject(Object *object) override</div><div class="ttdoc">The main method for write objects.</div><div class="ttdef"><b>Definition:</b> iopae.cpp:86</div></div>
-<div class="ttc" id="aclassvrv_1_1_key_accid_html"><div class="ttname"><a href="classvrv_1_1_key_accid.html">vrv::KeyAccid</a></div><div class="ttdoc">This class models the MEI &lt;keyAccid&gt; element.</div><div class="ttdef"><b>Definition:</b> keyaccid.h:24</div></div>
+<div class="ttc" id="aclassvrv_1_1_p_a_e_output_html_a85a3ed4250131dece8de13f1938b88d2"><div class="ttname"><a href="classvrv_1_1_p_a_e_output.html#a85a3ed4250131dece8de13f1938b88d2">vrv::PAEOutput::WriteObject</a></div><div class="ttdeci">bool WriteObject(Object *object) override</div><div class="ttdoc">The main method for write objects.</div><div class="ttdef"><b>Definition:</b> iopae.cpp:87</div></div>
+<div class="ttc" id="aclassvrv_1_1_key_accid_html"><div class="ttname"><a href="classvrv_1_1_key_accid.html">vrv::KeyAccid</a></div><div class="ttdoc">This class models the MEI &lt;keyAccid&gt; element.</div><div class="ttdef"><b>Definition:</b> keyaccid.h:25</div></div>
 <div class="ttc" id="aclassvrv_1_1_multi_rest_html"><div class="ttname"><a href="classvrv_1_1_multi_rest.html">vrv::MultiRest</a></div><div class="ttdoc">This class models the MEI &lt;multiRest&gt; element.</div><div class="ttdef"><b>Definition:</b> multirest.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_grace_grp_html"><div class="ttname"><a href="classvrv_1_1_grace_grp.html">vrv::GraceGrp</a></div><div class="ttdef"><b>Definition:</b> gracegrp.h:20</div></div>
-<div class="ttc" id="aclassvrv_1_1_score_def_html"><div class="ttname"><a href="classvrv_1_1_score_def.html">vrv::ScoreDef</a></div><div class="ttdoc">This class represents a MEI scoreDef.</div><div class="ttdef"><b>Definition:</b> scoredef.h:115</div></div>
-<div class="ttc" id="aclassvrv_1_1_p_a_e_output_html_adc640487c78a0f99726aa04b245e9ad3"><div class="ttname"><a href="classvrv_1_1_p_a_e_output.html#adc640487c78a0f99726aa04b245e9ad3">vrv::PAEOutput::WriteObjectEnd</a></div><div class="ttdeci">bool WriteObjectEnd(Object *object) override</div><div class="ttdoc">Writing object method that must be overridden in the child class.</div><div class="ttdef"><b>Definition:</b> iopae.cpp:162</div></div>
-<div class="ttc" id="aclassvrv_1_1_tuplet_html"><div class="ttname"><a href="classvrv_1_1_tuplet.html">vrv::Tuplet</a></div><div class="ttdef"><b>Definition:</b> tuplet.h:24</div></div>
+<div class="ttc" id="aclassvrv_1_1_score_def_html"><div class="ttname"><a href="classvrv_1_1_score_def.html">vrv::ScoreDef</a></div><div class="ttdoc">This class represents a MEI scoreDef.</div><div class="ttdef"><b>Definition:</b> scoredef.h:121</div></div>
+<div class="ttc" id="aclassvrv_1_1_p_a_e_output_html_adc640487c78a0f99726aa04b245e9ad3"><div class="ttname"><a href="classvrv_1_1_p_a_e_output.html#adc640487c78a0f99726aa04b245e9ad3">vrv::PAEOutput::WriteObjectEnd</a></div><div class="ttdeci">bool WriteObjectEnd(Object *object) override</div><div class="ttdoc">Writing object method that must be overridden in the child class.</div><div class="ttdef"><b>Definition:</b> iopae.cpp:163</div></div>
+<div class="ttc" id="aclassvrv_1_1_tuplet_html"><div class="ttname"><a href="classvrv_1_1_tuplet.html">vrv::Tuplet</a></div><div class="ttdef"><b>Definition:</b> tuplet.h:25</div></div>
 <div class="ttc" id="aclassvrv_1_1_m_rest_html"><div class="ttname"><a href="classvrv_1_1_m_rest.html">vrv::MRest</a></div><div class="ttdoc">This class models the MEI &lt;mRest&gt; element.</div><div class="ttdef"><b>Definition:</b> mrest.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_rest_html"><div class="ttname"><a href="classvrv_1_1_rest.html">vrv::Rest</a></div><div class="ttdoc">This class models the MEI &lt;rest&gt; element.</div><div class="ttdef"><b>Definition:</b> rest.h:36</div></div>
 <div class="ttc" id="aclassvrv_1_1_duration_interface_html"><div class="ttname"><a href="classvrv_1_1_duration_interface.html">vrv::DurationInterface</a></div><div class="ttdoc">This class is an interface for elements with duration, such as notes and rests.</div><div class="ttdef"><b>Definition:</b> durationinterface.h:30</div></div>
-<div class="ttc" id="aclassvrv_1_1_key_sig_html"><div class="ttname"><a href="classvrv_1_1_key_sig.html">vrv::KeySig</a></div><div class="ttdoc">This class models the MEI &lt;keySig&gt; element.</div><div class="ttdef"><b>Definition:</b> keysig.h:29</div></div>
+<div class="ttc" id="aclassvrv_1_1_key_sig_html"><div class="ttname"><a href="classvrv_1_1_key_sig.html">vrv::KeySig</a></div><div class="ttdoc">This class models the MEI &lt;keySig&gt; element.</div><div class="ttdef"><b>Definition:</b> keysig.h:44</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html"><div class="ttname"><a href="classvrv_1_1_layer.html">vrv::Layer</a></div><div class="ttdoc">This class represents a layer in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> layer.h:33</div></div>
-<div class="ttc" id="anamespacevrv_html_a8a19df71e38b10ca359d0052d1fdba70"><div class="ttname"><a href="namespacevrv.html#a8a19df71e38b10ca359d0052d1fdba70">vrv::data_PITCHNAME</a></div><div class="ttdeci">data_PITCHNAME</div><div class="ttdoc">MEI data.PITCHNAME.</div><div class="ttdef"><b>Definition:</b> attdef.h:227</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>iopae.h</b></li>
-    <li class="footer">Generated on Tue Feb 22 2022 11:32:34 for Verovio by
+    <li class="footer">Generated on Wed May 25 2022 14:36:07 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

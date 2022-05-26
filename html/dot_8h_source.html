@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('dot_8h_source.html',''); initResizable
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;layerelement.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;positioninterface.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>Note;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
@@ -114,54 +114,54 @@ $(document).ready(function(){initNavTree('dot_8h_source.html',''); initResizable
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_dot.html#ac4cae3b2c715e9da73a7d21a4eed2e5d">Reset</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Dot&quot;</span>; }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    PositionInterface *GetPositionInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>PositionInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classvrv_1_1_dot.html#aed33dfbb9942927d9e935d656533c88b">   44</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_dot.html#aed33dfbb9942927d9e935d656533c88b">HasToBeAligned</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_dot.html#a41decafa6cf262e7a0eec5d980c1f132">PreparePointersByLayer</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_dot.html#a21d84ff65a68b53cea2da9bf80048069">ResetDrawing</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_dot.html#a4d60d534804baf021b03ff6b573fb1d1">ResetHorizontalAlignment</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classvrv_1_1_dot.html#a41b57f2786b272be8c2f512afe40d0e2">   71</a></span>&#160;    <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *<a class="code" href="classvrv_1_1_dot.html#a41b57f2786b272be8c2f512afe40d0e2">m_drawingPreviousElement</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classvrv_1_1_dot.html#aae4b4b6d9e460978fdf9a127ab102c14">   76</a></span>&#160;    <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *<a class="code" href="classvrv_1_1_dot.html#aae4b4b6d9e460978fdf9a127ab102c14">m_drawingNextElement</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    PositionInterface *GetPositionInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;PositionInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">const</span> PositionInterface *GetPositionInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const PositionInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classvrv_1_1_dot.html#aed33dfbb9942927d9e935d656533c88b">   45</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_dot.html#aed33dfbb9942927d9e935d656533c88b">HasToBeAligned</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_dot.html#a41decafa6cf262e7a0eec5d980c1f132">PreparePointersByLayer</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_dot.html#a9ae896cd2f39daf67a81e77a2f94c584">ResetData</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_dot.html#a4d60d534804baf021b03ff6b573fb1d1">ResetHorizontalAlignment</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classvrv_1_1_dot.html#a41b57f2786b272be8c2f512afe40d0e2">   72</a></span>&#160;    <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *<a class="code" href="classvrv_1_1_dot.html#a41b57f2786b272be8c2f512afe40d0e2">m_drawingPreviousElement</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classvrv_1_1_dot.html#aae4b4b6d9e460978fdf9a127ab102c14">   77</a></span>&#160;    <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *<a class="code" href="classvrv_1_1_dot.html#aae4b4b6d9e460978fdf9a127ab102c14">m_drawingNextElement</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_dot_html_aae4b4b6d9e460978fdf9a127ab102c14"><div class="ttname"><a href="classvrv_1_1_dot.html#aae4b4b6d9e460978fdf9a127ab102c14">vrv::Dot::m_drawingNextElement</a></div><div class="ttdeci">LayerElement * m_drawingNextElement</div><div class="ttdoc">A pointer to the next LayerElement (note, barLine, etc.)</div><div class="ttdef"><b>Definition:</b> dot.h:76</div></div>
-<div class="ttc" id="aclassvrv_1_1_dot_html_aed33dfbb9942927d9e935d656533c88b"><div class="ttname"><a href="classvrv_1_1_dot.html#aed33dfbb9942927d9e935d656533c88b">vrv::Dot::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> dot.h:44</div></div>
+<div class="ttc" id="aclassvrv_1_1_dot_html_aae4b4b6d9e460978fdf9a127ab102c14"><div class="ttname"><a href="classvrv_1_1_dot.html#aae4b4b6d9e460978fdf9a127ab102c14">vrv::Dot::m_drawingNextElement</a></div><div class="ttdeci">LayerElement * m_drawingNextElement</div><div class="ttdoc">A pointer to the next LayerElement (note, barLine, etc.)</div><div class="ttdef"><b>Definition:</b> dot.h:77</div></div>
+<div class="ttc" id="aclassvrv_1_1_dot_html_aed33dfbb9942927d9e935d656533c88b"><div class="ttname"><a href="classvrv_1_1_dot.html#aed33dfbb9942927d9e935d656533c88b">vrv::Dot::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> dot.h:45</div></div>
 <div class="ttc" id="aclassvrv_1_1_position_interface_html"><div class="ttname"><a href="classvrv_1_1_position_interface.html">vrv::PositionInterface</a></div><div class="ttdoc">This class is an interface for elements with a position on the staff, such as rests.</div><div class="ttdef"><b>Definition:</b> positioninterface.h:28</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
-<div class="ttc" id="aclassvrv_1_1_dot_html_a21d84ff65a68b53cea2da9bf80048069"><div class="ttname"><a href="classvrv_1_1_dot.html#a21d84ff65a68b53cea2da9bf80048069">vrv::Dot::ResetDrawing</a></div><div class="ttdeci">int ResetDrawing(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:56</div></div>
 <div class="ttc" id="aclassvrv_1_1_dot_html_af02dc52ea7b62b411661617819f654b2"><div class="ttname"><a href="classvrv_1_1_dot.html#af02dc52ea7b62b411661617819f654b2">vrv::Dot::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> dot.h:31</div></div>
 <div class="ttc" id="aclassvrv_1_1_dot_html_a41decafa6cf262e7a0eec5d980c1f132"><div class="ttname"><a href="classvrv_1_1_dot.html#a41decafa6cf262e7a0eec5d980c1f132">vrv::Dot::PreparePointersByLayer</a></div><div class="ttdeci">int PreparePointersByLayer(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::PreparePointersByLayer.</div></div>
-<div class="ttc" id="aclassvrv_1_1_dot_html_a41b57f2786b272be8c2f512afe40d0e2"><div class="ttname"><a href="classvrv_1_1_dot.html#a41b57f2786b272be8c2f512afe40d0e2">vrv::Dot::m_drawingPreviousElement</a></div><div class="ttdeci">LayerElement * m_drawingPreviousElement</div><div class="ttdoc">A pointer to the previous LayerElement it relates to.</div><div class="ttdef"><b>Definition:</b> dot.h:71</div></div>
-<div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
+<div class="ttc" id="aclassvrv_1_1_dot_html_a41b57f2786b272be8c2f512afe40d0e2"><div class="ttname"><a href="classvrv_1_1_dot.html#a41b57f2786b272be8c2f512afe40d0e2">vrv::Dot::m_drawingPreviousElement</a></div><div class="ttdeci">LayerElement * m_drawingPreviousElement</div><div class="ttdoc">A pointer to the previous LayerElement it relates to.</div><div class="ttdef"><b>Definition:</b> dot.h:72</div></div>
 <div class="ttc" id="aclassvrv_1_1_dot_html"><div class="ttname"><a href="classvrv_1_1_dot.html">vrv::Dot</a></div><div class="ttdef"><b>Definition:</b> dot.h:22</div></div>
 <div class="ttc" id="aclassvrv_1_1_dot_html_a4d60d534804baf021b03ff6b573fb1d1"><div class="ttname"><a href="classvrv_1_1_dot.html#a4d60d534804baf021b03ff6b573fb1d1">vrv::Dot::ResetHorizontalAlignment</a></div><div class="ttdeci">int ResetHorizontalAlignment(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetHorizontalAlignment.</div></div>
 <div class="ttc" id="aclassvrv_1_1_dot_html_ac4cae3b2c715e9da73a7d21a4eed2e5d"><div class="ttname"><a href="classvrv_1_1_dot.html#ac4cae3b2c715e9da73a7d21a4eed2e5d">vrv::Dot::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:43</div></div>
+<div class="ttc" id="aclassvrv_1_1_dot_html_a9ae896cd2f39daf67a81e77a2f94c584"><div class="ttname"><a href="classvrv_1_1_dot.html#a9ae896cd2f39daf67a81e77a2f94c584">vrv::Dot::ResetData</a></div><div class="ttdeci">int ResetData(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetData.</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_params_html"><div class="ttname"><a href="classvrv_1_1_functor_params.html">vrv::FunctorParams</a></div><div class="ttdoc">This is the base class for all MEI att classes.</div><div class="ttdef"><b>Definition:</b> functorparams.h:76</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>dot.h</b></li>
-    <li class="footer">Generated on Tue Feb 22 2022 11:32:34 for Verovio by
+    <li class="footer">Generated on Wed May 25 2022 14:36:06 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

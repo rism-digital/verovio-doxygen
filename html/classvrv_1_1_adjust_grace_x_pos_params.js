@@ -8,6 +8,7 @@ var classvrv_1_1_adjust_grace_x_pos_params =
     [ "m_graceMaxPos", "classvrv_1_1_adjust_grace_x_pos_params.html#af10e02fd22a4215304acd693ca407895", null ],
     [ "m_graceUpcomingMaxPos", "classvrv_1_1_adjust_grace_x_pos_params.html#ae643020577b1579c3bd4827b411e991a", null ],
     [ "m_isGraceAlignment", "classvrv_1_1_adjust_grace_x_pos_params.html#a53bf45cd035594b70be96f5c7d73669e", null ],
+    [ "m_measureTieEndpoints", "classvrv_1_1_adjust_grace_x_pos_params.html#ad000115282ef51605e81210f0d916514", null ],
     [ "m_rightDefaultAlignment", "classvrv_1_1_adjust_grace_x_pos_params.html#a818391346cc100f1d83d7b111972bb1b", null ],
     [ "m_staffNs", "classvrv_1_1_adjust_grace_x_pos_params.html#a312ba2720d2e7042398c830e231145f3", null ]
 ];

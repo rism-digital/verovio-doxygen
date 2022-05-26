@@ -7,6 +7,7 @@
     <includes refid="layerelement_8h" local="yes">layerelement.h</includes>
     <includedby refid="drawinginterface_8h" local="yes">drawinginterface.h</includedby>
     <includedby refid="iohumdrum_8h" local="yes">iohumdrum.h</includedby>
+    <includedby refid="iomusxml_8h" local="yes">iomusxml.h</includedby>
     <includedby refid="iopae_8h" local="yes">iopae.h</includedby>
     <includedby refid="iopae_8cpp" local="yes">iopae.cpp</includedby>
     <incdepgraph>
@@ -180,10 +181,10 @@
         <childnode refid="19" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="6">
         <label>beatrpt.h</label>
         <link refid="beatrpt_8h_source"/>
-        <childnode refid="6" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="16">
@@ -243,12 +244,14 @@
         <link refid="metersig_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="37" relation="include">
         </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
       </node>
-      <node id="37">
+      <node id="38">
         <label>iopae.h</label>
         <link refid="iopae_8h_source"/>
       </node>
@@ -275,6 +278,8 @@
       <node id="4">
         <label>beamspan.h</label>
         <link refid="beamspan_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
       <node id="12">
         <label>mrpt2.h</label>
@@ -293,7 +298,7 @@
         <link refid="beam_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
@@ -313,6 +318,10 @@
       <node id="36">
         <label>tabdursym.h</label>
         <link refid="tabdursym_8h_source"/>
+      </node>
+      <node id="37">
+        <label>iomusxml.h</label>
+        <link refid="iomusxml_8h_source"/>
       </node>
       <node id="33">
         <label>layer.h</label>
@@ -340,7 +349,7 @@
         <label>page.h</label>
         <link refid="page_8h_source"/>
       </node>
-      <node id="6">
+      <node id="5">
         <label>iohumdrum.h</label>
         <link refid="iohumdrum_8h_source"/>
       </node>
@@ -359,7 +368,7 @@
       <node id="9">
         <label>ftrem.h</label>
         <link refid="ftrem_8h_source"/>
-        <childnode refid="6" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="22">
@@ -444,7 +453,7 @@
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atts_visual.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;layerelement.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacevrv" kindref="compound">vrv</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vrv<sp/>{</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ScoreDefInterface;</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
@@ -462,7 +471,7 @@
 <codeline lineno="39"></codeline>
 <codeline lineno="41" refid="classvrv_1_1_meter_sig_1aa96ecc888ef0a5d0d7807e492bd71039" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_meter_sig_1aa96ecc888ef0a5d0d7807e492bd71039" kindref="member">HasToBeAligned</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44" refid="classvrv_1_1_meter_sig_1a910ddd796467a20c9be8b77c9de10322" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_meter_sig_1a910ddd796467a20c9be8b77c9de10322" kindref="member">IsScoreDefElement</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="classvrv_1_1_object_1a96ca869c3849c0f108655ad5d900a2c7" kindref="member">GetParent</ref>()<sp/>&amp;&amp;<sp/>this-&gt;<ref refid="classvrv_1_1_object_1a214d80f16352cda785bdbf1ba3423b68" kindref="member">GetFirstAncestor</ref>(SCOREDEF));<sp/>}</highlight></codeline>
+<codeline lineno="44" refid="classvrv_1_1_meter_sig_1a910ddd796467a20c9be8b77c9de10322" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_meter_sig_1a910ddd796467a20c9be8b77c9de10322" kindref="member">IsScoreDefElement</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="classvrv_1_1_object_1ad2f81f683e9a94713b451395ff781627" kindref="member">GetParent</ref>()<sp/>&amp;&amp;<sp/>this-&gt;<ref refid="classvrv_1_1_object_1a4124844dc62f3a263b5f2480a7c4a105" kindref="member">GetFirstAncestor</ref>(SCOREDEF));<sp/>}</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_meter_sig_1a626f1377088f7297de38790d467f927e" kindref="member">GetTotalCount</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
@@ -481,11 +490,12 @@
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/metersig.h"/>
   </compounddef>

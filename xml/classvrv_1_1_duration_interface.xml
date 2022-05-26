@@ -70,7 +70,7 @@
         <location file="/home/runner/work/verovio/verovio/include/vrv/durationinterface.h" line="47" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_duration_interface_1aa95bb6fba812c2b05620c3b862e0f6e5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="namespacevrv_1ac7221611975ee29efd00f36d5f3241ed" kindref="member">InterfaceId</ref></type>
+        <type>InterfaceId</type>
         <definition>InterfaceId vrv::DurationInterface::IsInterface</definition>
         <argsstring>() const override</argsstring>
         <name>IsInterface</name>
@@ -94,7 +94,7 @@
         <argsstring>(data_DURATION dur)</argsstring>
         <name>SetDurDefault</name>
         <param>
-          <type><ref refid="namespacevrv_1a2bd8f760fccdf76e2f41894ca0431d4e" kindref="member">data_DURATION</ref></type>
+          <type>data_DURATION</type>
           <declname>dur</declname>
         </param>
         <briefdescription>
@@ -106,7 +106,7 @@
         <location file="/home/runner/work/verovio/verovio/include/vrv/durationinterface.h" line="55" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/durationinterface.h" bodystart="55" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_duration_interface_1afd39c3b41049378b5a4baa86faf68cae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="namespacevrv_1a2bd8f760fccdf76e2f41894ca0431d4e" kindref="member">data_DURATION</ref></type>
+        <type>data_DURATION</type>
         <definition>data_DURATION vrv::DurationInterface::GetDurDefault</definition>
         <argsstring>() const</argsstring>
         <name>GetDurDefault</name>
@@ -391,7 +391,7 @@
         <location file="/home/runner/work/verovio/verovio/include/vrv/durationinterface.h" line="183" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/durationinterface.h" bodystart="183" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_duration_interface_1abde0dcbc837ae74f91551819a1978db9" prot="private" static="no" mutable="no">
-        <type><ref refid="namespacevrv_1a2bd8f760fccdf76e2f41894ca0431d4e" kindref="member">data_DURATION</ref></type>
+        <type>data_DURATION</type>
         <definition>data_DURATION vrv::DurationInterface::m_durDefault</definition>
         <argsstring></argsstring>
         <name>m_durDefault</name>
@@ -406,10 +406,10 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classvrv_1_1_duration_interface_1afad06581db0bae7afde58b8a0e7c7c7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_duration_interface_1ab2a1d68a148ae1f515e711fff40941c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
         <definition>double vrv::DurationInterface::GetInterfaceAlignmentDuration</definition>
-        <argsstring>(int num, int numBase)</argsstring>
+        <argsstring>(int num, int numBase) const</argsstring>
         <name>GetInterfaceAlignmentDuration</name>
         <param>
           <type>int</type>
@@ -429,10 +429,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/durationinterface.h" line="65" column="12"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_duration_interface_1add30f3702afccc9b0dafc55bcf33c965" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_duration_interface_1a1220b22b42b63e3632fe49149d3a17f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
         <definition>double vrv::DurationInterface::GetInterfaceAlignmentMensuralDuration</definition>
-        <argsstring>(int num, int numBase, Mensur *currentMensur)</argsstring>
+        <argsstring>(int num, int numBase, const Mensur *currentMensur) const</argsstring>
         <name>GetInterfaceAlignmentMensuralDuration</name>
         <param>
           <type>int</type>
@@ -443,7 +443,7 @@
           <declname>numBase</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_mensur" kindref="compound">Mensur</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_mensur" kindref="compound">Mensur</ref> *</type>
           <declname>currentMensur</declname>
         </param>
         <briefdescription>
@@ -455,13 +455,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/durationinterface.h" line="72" column="12"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_duration_interface_1ac7abd60beb364ff44323e4e60e11d59f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_duration_interface_1ad14ac28eed0c0fbc93bf4b104abb1c2e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::DurationInterface::IsFirstInBeam</definition>
-        <argsstring>(LayerElement *noteOrRest)</argsstring>
+        <argsstring>(const LayerElement *noteOrRest) const</argsstring>
         <name>IsFirstInBeam</name>
         <param>
-          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
           <declname>noteOrRest</declname>
         </param>
         <briefdescription>
@@ -473,13 +473,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/durationinterface.h" line="77" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_duration_interface_1ae07578a3e138bddc967229f1ee93cb94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_duration_interface_1ab7a23457945d43056b01fde4cc1d8b46" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::DurationInterface::IsLastInBeam</definition>
-        <argsstring>(LayerElement *noteOrRest)</argsstring>
+        <argsstring>(const LayerElement *noteOrRest) const</argsstring>
         <name>IsLastInBeam</name>
         <param>
-          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
           <declname>noteOrRest</declname>
         </param>
         <briefdescription>
@@ -491,13 +491,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/durationinterface.h" line="82" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_duration_interface_1aec84ae43f7d2b25df6e3b9f05aa4bea7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_duration_interface_1aa6d43066a4932c02ecdde2ade384257d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int vrv::DurationInterface::GetNoteOrChordDur</definition>
-        <argsstring>(LayerElement *element)</argsstring>
+        <argsstring>(const LayerElement *element) const</argsstring>
         <name>GetNoteOrChordDur</name>
         <param>
-          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
           <declname>element</declname>
         </param>
         <briefdescription>
@@ -524,13 +524,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/durationinterface.h" line="104" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_duration_interface_1a4069af8ecad13f6b29e960cec642b6f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_duration_interface_1a550d47c959ecccc53c488685fea3177c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::DurationInterface::HasIdenticalDurationInterface</definition>
-        <argsstring>(DurationInterface *otherDurationInterface)</argsstring>
+        <argsstring>(const DurationInterface *otherDurationInterface) const</argsstring>
         <name>HasIdenticalDurationInterface</name>
         <param>
-          <type><ref refid="classvrv_1_1_duration_interface" kindref="compound">DurationInterface</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_duration_interface" kindref="compound">DurationInterface</ref> *</type>
           <declname>otherDurationInterface</declname>
         </param>
         <briefdescription>
@@ -551,14 +551,14 @@
         <argsstring>(data_DURATION dur) const</argsstring>
         <name>CalcActualDur</name>
         <param>
-          <type><ref refid="namespacevrv_1a2bd8f760fccdf76e2f41894ca0431d4e" kindref="member">data_DURATION</ref></type>
+          <type>data_DURATION</type>
           <declname>dur</declname>
         </param>
         <briefdescription>
 <para>We have functors in the interface for avoiding code duplication in each implementation class. </para>
         </briefdescription>
         <detaileddescription>
-<para>Since we are in an interface, we need to pass the <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> (implementation) to the functor methods. These are not called by the Process/Call loop but by the implementation classes explicitely. See <ref refid="classvrv_1_1_floating_object_1a63b8dc8ca0b4943fe59552e75bd88347" kindref="member">FloatingObject::FillStaffCurrentTimeSpanning</ref> for an example. Calculate the actual duration =&gt; translate mensural values </para>
+<para>Since we are in an interface, we need to pass the <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> (implementation) to the functor methods. These are not called by the Process/Call loop but by the implementation classes explicitely. See <ref refid="classvrv_1_1_floating_object_1ae538ce4c774260f2e1a5bbb302e26fc3" kindref="member">FloatingObject::PrepareStaffCurrentTimeSpanning</ref> for an example. Calculate the actual duration =&gt; translate mensural values </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -719,20 +719,20 @@
       <member refid="classvrv_1_1_duration_interface_1a633cc6377cbb770438eacc87fdb1622f" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>GetActualDurGes</name></member>
       <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>GetAttClasses</name></member>
       <member refid="classvrv_1_1_duration_interface_1afd39c3b41049378b5a4baa86faf68cae" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>GetDurDefault</name></member>
-      <member refid="classvrv_1_1_duration_interface_1afad06581db0bae7afde58b8a0e7c7c7e" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>GetInterfaceAlignmentDuration</name></member>
-      <member refid="classvrv_1_1_duration_interface_1add30f3702afccc9b0dafc55bcf33c965" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>GetInterfaceAlignmentMensuralDuration</name></member>
-      <member refid="classvrv_1_1_duration_interface_1aec84ae43f7d2b25df6e3b9f05aa4bea7" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>GetNoteOrChordDur</name></member>
+      <member refid="classvrv_1_1_duration_interface_1ab2a1d68a148ae1f515e711fff40941c9" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>GetInterfaceAlignmentDuration</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a1220b22b42b63e3632fe49149d3a17f5" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>GetInterfaceAlignmentMensuralDuration</name></member>
+      <member refid="classvrv_1_1_duration_interface_1aa6d43066a4932c02ecdde2ade384257d" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>GetNoteOrChordDur</name></member>
       <member refid="classvrv_1_1_duration_interface_1ae37688db2032d291d2b673343775c8e4" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>GetRealTimeOffsetMilliseconds</name></member>
       <member refid="classvrv_1_1_duration_interface_1aec4ff1cc30f1f5e7729489f2ed76b12f" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>GetRealTimeOnsetMilliseconds</name></member>
       <member refid="classvrv_1_1_duration_interface_1adc39d50da7f0a0dea1369a1aec1ecfbc" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>GetScoreTimeDuration</name></member>
       <member refid="classvrv_1_1_duration_interface_1a6c9cfd95823772f9956300ab0b7cfd19" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>GetScoreTimeOffset</name></member>
       <member refid="classvrv_1_1_duration_interface_1a50766852c90c7f220f1e719583238408" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>GetScoreTimeOnset</name></member>
       <member refid="classvrv_1_1_duration_interface_1a754f593d0bd16d06fdff151a2da33a3f" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>GetScoreTimeTiedDuration</name></member>
-      <member refid="classvrv_1_1_duration_interface_1a4069af8ecad13f6b29e960cec642b6f5" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>HasIdenticalDurationInterface</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a550d47c959ecccc53c488685fea3177c" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>HasIdenticalDurationInterface</name></member>
       <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>Interface</name></member>
-      <member refid="classvrv_1_1_duration_interface_1ac7abd60beb364ff44323e4e60e11d59f" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>IsFirstInBeam</name></member>
+      <member refid="classvrv_1_1_duration_interface_1ad14ac28eed0c0fbc93bf4b104abb1c2e" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>IsFirstInBeam</name></member>
       <member refid="classvrv_1_1_duration_interface_1aa95bb6fba812c2b05620c3b862e0f6e5" prot="public" virt="virtual"><scope>vrv::DurationInterface</scope><name>IsInterface</name></member>
-      <member refid="classvrv_1_1_duration_interface_1ae07578a3e138bddc967229f1ee93cb94" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>IsLastInBeam</name></member>
+      <member refid="classvrv_1_1_duration_interface_1ab7a23457945d43056b01fde4cc1d8b46" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>IsLastInBeam</name></member>
       <member refid="classvrv_1_1_duration_interface_1a66a8195b6236d862a2234af1fb5256c1" prot="public" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>IsMensuralDur</name></member>
       <member refid="classvrv_1_1_duration_interface_1abde0dcbc837ae74f91551819a1978db9" prot="private" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>m_durDefault</name></member>
       <member refid="classvrv_1_1_duration_interface_1a01b006181c60c9cc295d070bee7e09dc" prot="private" virt="non-virtual"><scope>vrv::DurationInterface</scope><name>m_realTimeOffsetMilliseconds</name></member>

@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1539" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1539" bodyend="1539"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1731" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1731" bodyend="1731"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_text_list_interface_1a75a243aa296eed9964247ab2c4e49aaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
@@ -37,15 +37,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1540" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1540" bodyend="1540"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1732" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1732" bodyend="1732"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_text_list_interface_1a4f40103720e2c0206f6d104d79506221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_text_list_interface_1a675609c6cf086e3d3fc881d741cf6042" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::wstring</type>
         <definition>std::wstring vrv::TextListInterface::GetText</definition>
-        <argsstring>(Object *node)</argsstring>
+        <argsstring>(const Object *node) const</argsstring>
         <name>GetText</name>
         <param>
-          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
           <declname>node</declname>
         </param>
         <briefdescription>
@@ -55,15 +55,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1545" column="18"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1737" column="18"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_text_list_interface_1aa82a9d2703cf6ee067a185b595977d21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_text_list_interface_1a9ecf746443b23c676793d25ef91956ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::TextListInterface::GetTextLines</definition>
-        <argsstring>(Object *node, std::vector&lt; std::wstring &gt; &amp;lines)</argsstring>
+        <argsstring>(const Object *node, std::vector&lt; std::wstring &gt; &amp;lines) const</argsstring>
         <name>GetTextLines</name>
         <param>
-          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
           <declname>node</declname>
         </param>
         <param>
@@ -77,18 +77,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1550" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1742" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
-      <memberdef kind="function" id="classvrv_1_1_text_list_interface_1ad1ffabcb24a774a5d45da6b76f58f523" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_text_list_interface_1a7e29d9c44942099b33a088e56509a697" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>virtual void vrv::TextListInterface::FilterList</definition>
-        <argsstring>(ArrayOfObjects *childList)</argsstring>
+        <definition>void vrv::TextListInterface::FilterList</definition>
+        <argsstring>(ListOfConstObjects &amp;childList) const override</argsstring>
         <name>FilterList</name>
-        <reimplements refid="classvrv_1_1_object_list_interface_1af290e139fe7cdfd07e614fb5d604e98f">FilterList</reimplements>
+        <reimplements refid="classvrv_1_1_object_list_interface_1afcdb6796d84a327e46ac2b6e3f8bd243">FilterList</reimplements>
         <param>
-          <type>ArrayOfObjects *</type>
+          <type>ListOfConstObjects &amp;</type>
           <declname>childList</declname>
         </param>
         <briefdescription>
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1557" column="18"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1749" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -180,21 +180,32 @@
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1536" column="51" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1536" bodyend="1564"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="1728" column="51" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="1728" bodyend="1756"/>
     <listofallmembers>
-      <member refid="classvrv_1_1_text_list_interface_1ad1ffabcb24a774a5d45da6b76f58f523" prot="protected" virt="virtual"><scope>vrv::TextListInterface</scope><name>FilterList</name></member>
-      <member refid="classvrv_1_1_object_list_interface_1a891d06e93b23593760353347702e2f26" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetList</name></member>
+      <member refid="classvrv_1_1_text_list_interface_1a7e29d9c44942099b33a088e56509a697" prot="protected" virt="virtual"><scope>vrv::TextListInterface</scope><name>FilterList</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1aec88d6b46b54ccbcd95426f7f55c4b59" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetList</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a3f40197858105969649c5ae29b5a44f7" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetList</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a568111a07cfdbbbc3017ff0de5863754" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListBack</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a233aae7f38ba7ac8a2c9f1339ab60921" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListBack</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1ab95aaf8f363f9229cc5ea15fe38f0b89" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListFirst</name></member>
       <member refid="classvrv_1_1_object_list_interface_1a1dd620b5a71dbbc985d19972d404b04c" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListFirst</name></member>
-      <member refid="classvrv_1_1_object_list_interface_1aa7011af7543f539acd4cf68ca9ab7f8b" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListFirstBackward</name></member>
-      <member refid="classvrv_1_1_object_list_interface_1a3bdaaa1533dc4c5c662562db54a23146" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListIndex</name></member>
-      <member refid="classvrv_1_1_object_list_interface_1ae111de575ca76e7718a6a9298629d505" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListNext</name></member>
-      <member refid="classvrv_1_1_object_list_interface_1a7be9e4e97f020eb673aae4407ded65fc" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListPrevious</name></member>
-      <member refid="classvrv_1_1_text_list_interface_1a4f40103720e2c0206f6d104d79506221" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetText</name></member>
-      <member refid="classvrv_1_1_text_list_interface_1aa82a9d2703cf6ee067a185b595977d21" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetTextLines</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1aebf49146dc5792275d39546a08f95608" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListFirstBackward</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a4d0adf01cac8d4e2ca9ad676b6842f33" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListFirstBackward</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1acea3c015b450ae8f3d0c64cea8772eaf" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListFront</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a80fd9a3f5662e50e6d78886009bcfa73" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListFront</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a1858b93f447366ddfbdeb011845e3f25" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListIndex</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a30e4fc57355193bb9f9db195a1ff5afb" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListNext</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1aa390767e556fa0acfbf39dfd97476200" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListNext</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a2c9f803e6cca17417584290ff938bc0d" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListPrevious</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a5262feebeeb70f9a2583c6750daa6e54" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListPrevious</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1ae6c1369f614fddc849cf1744906160ee" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetListSize</name></member>
+      <member refid="classvrv_1_1_text_list_interface_1a675609c6cf086e3d3fc881d741cf6042" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetText</name></member>
+      <member refid="classvrv_1_1_text_list_interface_1a9ecf746443b23c676793d25ef91956ee" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>GetTextLines</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a6fa4993dc2bcb87049c3bdab6a32056b" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>HasEmptyList</name></member>
       <member refid="classvrv_1_1_object_list_interface_1a29f1291f341cd2fd6b4d3351d0db3330" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>ObjectListInterface</name></member>
       <member refid="classvrv_1_1_object_list_interface_1abd871c40f32f79e61d3001dce73277b2" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>ObjectListInterface</name></member>
       <member refid="classvrv_1_1_object_list_interface_1ac286d029a9ee5021f0f40c8bec72fce0" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>operator=</name></member>
-      <member refid="classvrv_1_1_object_list_interface_1ab5637423219e7de94ef81b7169a8ace1" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>ResetList</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1ad840a3d0c9fa550f980534426eb9b076" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>ResetList</name></member>
       <member refid="classvrv_1_1_text_list_interface_1acb757fbdb8625d2559adb88bf7d9871a" prot="public" virt="non-virtual"><scope>vrv::TextListInterface</scope><name>TextListInterface</name></member>
       <member refid="classvrv_1_1_object_list_interface_1a44118ef8dc2eeb97fff1a68127bd55f4" prot="public" virt="virtual"><scope>vrv::TextListInterface</scope><name>~ObjectListInterface</name></member>
       <member refid="classvrv_1_1_text_list_interface_1a75a243aa296eed9964247ab2c4e49aaa" prot="public" virt="virtual"><scope>vrv::TextListInterface</scope><name>~TextListInterface</name></member>

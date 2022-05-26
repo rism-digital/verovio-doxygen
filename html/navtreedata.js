@@ -24,13 +24,6 @@ var NAVTREE =
 [
   [ "Verovio", "index.html", [
     [ "Modules", "modules.html", "modules" ],
-    [ "Namespace Members", "namespacemembers.html", [
-      [ "All", "namespacemembers.html", null ],
-      [ "Functions", "namespacemembers_func.html", null ],
-      [ "Variables", "namespacemembers_vars.html", null ],
-      [ "Typedefs", "namespacemembers_type.html", null ],
-      [ "Enumerations", "namespacemembers_enum.html", null ]
-    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -51,29 +44,31 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"abbr_8h_source.html",
-"classvrv_1_1_align_measures_params.html#a734d6612957596ed339ffe5a3236d76f",
-"classvrv_1_1_att_visibility_comparison.html#a8753160d428fd9216a6e23625a3f6b82",
-"classvrv_1_1_bounding_box.html#a363e14e29dcb72d6539a832921c538f9",
-"classvrv_1_1_control_element.html#a22f1eb1bb3c79301295a80e054804fa8",
-"classvrv_1_1_doc.html#a9cea4dcc5865c9d8a5381da45f6d20ab",
-"classvrv_1_1_f.html#ae2df627f5b98b03575c2d8bd23b24fd9",
-"classvrv_1_1_functor.html",
-"classvrv_1_1_humdrum_input.html#a3a459374bc6abf82df87b359c00782d4",
-"classvrv_1_1_humdrum_input.html#af6f30cc5fc0a573613902fc396686ad7",
-"classvrv_1_1_layer_element.html#a551d3554b1625dfd63d8861c1871068d",
-"classvrv_1_1_measure.html#a4e1219261a510f2b7e2abeae928177e6",
-"classvrv_1_1_object.html#a07880f4ad709e37ca6b5483110905383",
-"classvrv_1_1_object.html#af10db2b195d5667b53c982409ecb9500",
-"classvrv_1_1_options.html#a5ded106a1115fde217014cbf2826a0e9",
-"classvrv_1_1_pedal.html#a06e5a67b00c9c8f8e560d174c36fb309",
-"classvrv_1_1_replace_drawing_values_in_staff_def_params.html#a58480b3e330f474a960b791d90ab285c",
-"classvrv_1_1_sic.html#a94e38aa61e59c91b03b7c23b8a028985",
-"classvrv_1_1_supplied.html",
-"classvrv_1_1_tab_dur_sym.html",
-"classvrv_1_1_transposer.html#a00956cebd10dacb13328318c683acdb7",
-"classvrv_1_1_view.html#a4d6494db9a0b808907982e79fce1a566",
-"editorial_8h_source.html"
+".html",
+"classvrv_1_1_align_measures_params.html#a6497251edb32f85db1e5570c5ad887cc",
+"classvrv_1_1_att_n_integer_comparison.html#a01fdd5311386b7a8e8c94020d57061c0",
+"classvrv_1_1_bezier_curve.html#a71c3b1de71626f69c87d960c60f4b2d8",
+"classvrv_1_1_chord.html#aad7e7092366522e7bb388afb98a215e2",
+"classvrv_1_1_doc.html#a075934a9b82d0c88b949848f04d28aef",
+"classvrv_1_1_editor_toolkit_mensural.html#aa78a02e5cad8f859edc5bb99aa8ed62d",
+"classvrv_1_1_find_spanned_layer_elements_params.html#abfd8bd3af5a4a83680414dae866a8fe7",
+"classvrv_1_1_grp_sym.html#aa8fab8653abf99903679ce4d296a65a0",
+"classvrv_1_1_humdrum_input.html#a874fc6baeceb3788419bc34643932510",
+"classvrv_1_1_input.html#a19dccc7ba8689777b0f2558e8b839305",
+"classvrv_1_1_layer_element.html#a80983838195a9e547294896393ba56a0",
+"classvrv_1_1_measure.html#a61646aedd32264c9b5c2f812dde7f402",
+"classvrv_1_1_num.html#a49bd29d00e6f166063aad90bfe5e44d7",
+"classvrv_1_1_object.html#ac75af86dda467af7ae8d928c83b1a7c8",
+"classvrv_1_1_option_staffrel.html#af2860ee6f4df9e5ad72aa991ffe67af9",
+"classvrv_1_1_page.html#a55d88d7f78119d3d358b697867f1aa9c",
+"classvrv_1_1_prepare_linking_params.html#af3b93454f5bd3d1ed18503bfd1a53a14",
+"classvrv_1_1_score_def.html#ac84b949edcd655a8ab748e2102531931",
+"classvrv_1_1_staff_alignment.html#aad91647368dc7d03520e0bd3f5139602",
+"classvrv_1_1_system.html#a043b4d514fde9d7c430ffb9ca0dba889",
+"classvrv_1_1_text_list_interface.html#acb757fbdb8625d2559adb88bf7d9871a",
+"classvrv_1_1_tuning.html#a091413f1d79444bb57b83cb7e8ed9e9c",
+"classvrv_1_1_view.html#aaf5052cad9689944b8fd74ddcd9cfdc2",
+"glyph_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

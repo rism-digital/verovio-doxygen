@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['thisorsameasaslink_2307',['ThisOrSameasAsLink',['../classvrv_1_1_layer_element.html#a4aec9410afe12afe4a47f742dda300ac',1,'vrv::LayerElement']]],
-  ['tojson_2308',['ToJson',['../classvrv_1_1_feature_extractor.html#a088178e8f5cfd6abe00a3070d2f8bbcf',1,'vrv::FeatureExtractor::ToJson()'],['../classvrv_1_1_option.html#a8197df949d810a3f12aac223d8593036',1,'vrv::Option::ToJson()'],['../classvrv_1_1_timemap.html#aebe2bdffcabe29d3d335effbfb727d60',1,'vrv::Timemap::ToJson()']]],
-  ['toolkit_2309',['Toolkit',['../classvrv_1_1_toolkit.html#ad009ed5b8852f67843a34c4b6fd1e3c7',1,'vrv::Toolkit']]],
-  ['transpose_2310',['Transpose',['../classvrv_1_1_harm.html#a02dff5809f1781cb4cae796a7630cc66',1,'vrv::Harm::Transpose()'],['../classvrv_1_1_key_sig.html#a0a2a2afe1a3f9aef0cb0bd8c542bd79b',1,'vrv::KeySig::Transpose()'],['../classvrv_1_1_note.html#a541f31357236a4ff865c00da04c31c16',1,'vrv::Note::Transpose()'],['../classvrv_1_1_object.html#a0ee02f42628df9898a57349899c1ba3e',1,'vrv::Object::Transpose()'],['../classvrv_1_1_rest.html#a740e6d9dd93f4cbeec21aaeed6eed18d',1,'vrv::Rest::Transpose()']]],
-  ['transposedoc_2311',['TransposeDoc',['../classvrv_1_1_doc.html#a303c7a587723539a78b83f642111f2a1',1,'vrv::Doc']]]
+  ['uncastoff_2380',['UnCastOff',['../classvrv_1_1_floating_object.html#ad76285ff372a1a1c5eca6fb7e9923afe',1,'vrv::FloatingObject::UnCastOff()'],['../classvrv_1_1_measure.html#a3df4668a6f232074e0161f832f10e29b',1,'vrv::Measure::UnCastOff()'],['../classvrv_1_1_object.html#a84120019fd68f6d7015f6765d7114a7b',1,'vrv::Object::UnCastOff()'],['../classvrv_1_1_page_element.html#a3743d57739d59d686a641c7c381ff635',1,'vrv::PageElement::UnCastOff()'],['../classvrv_1_1_page_milestone_end.html#a872ac48ccdfd28437da87a9ef53ebc0b',1,'vrv::PageMilestoneEnd::UnCastOff()'],['../classvrv_1_1_score.html#a225502c03b1a4ec590c817501b3715d4',1,'vrv::Score::UnCastOff()'],['../classvrv_1_1_system.html#abeb9438077fb1d41b129ef00df97d803',1,'vrv::System::UnCastOff()']]],
+  ['uncastoffdoc_2381',['UnCastOffDoc',['../classvrv_1_1_doc.html#a7cb1b2f4b17d550ec69fae48d0eb065f',1,'vrv::Doc']]],
+  ['unescapehtmlentities_2382',['unescapeHtmlEntities',['../classvrv_1_1_humdrum_input.html#a3a9cb0e5cf601ccbe32c261cd96b5ab0',1,'vrv::HumdrumInput']]],
+  ['updatecontrolpointparams_2383',['UpdateControlPointParams',['../classvrv_1_1_bezier_curve.html#ac67345936404ebba9295358c35a6c562',1,'vrv::BezierCurve']]],
+  ['updatecurveparams_2384',['UpdateCurveParams',['../classvrv_1_1_floating_curve_positioner.html#a30ccff64031b6f8e36666e5ff1890223',1,'vrv::FloatingCurvePositioner']]],
+  ['useblockstyle_2385',['UseBlockStyle',['../classvrv_1_1_multi_rest.html#a17707f93b4172945ae25d805f5b09ffc',1,'vrv::MultiRest']]],
+  ['useglobalstyling_2386',['UseGlobalStyling',['../classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b',1,'vrv::DeviceContext::UseGlobalStyling()'],['../classvrv_1_1_svg_device_context.html#a9982cebfe646f247292b295840b7bb94',1,'vrv::SvgDeviceContext::UseGlobalStyling()']]]
 ];

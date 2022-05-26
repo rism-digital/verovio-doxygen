@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="88" column="5"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="91" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1af4984f690e63ca428e230eb258ea0729" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="89" column="13"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="92" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1a5bfe4930a0357dad21b1cbb6f4da7bf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -49,21 +49,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="90" column="18"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="93" column="18"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1a6ec2fd42b46e10a975fbb44010a51549" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1ac4293802ae5a0f7d45cc6b106fb33032" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::BeamDrawingInterface::IsFirstIn</definition>
-        <argsstring>(Object *object, LayerElement *element)</argsstring>
+        <argsstring>(const Object *object, const LayerElement *element) const</argsstring>
         <name>IsFirstIn</name>
         <param>
-          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
           <declname>object</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
           <declname>element</declname>
         </param>
         <briefdescription>
@@ -74,19 +74,19 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="99" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="102" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1a8834516c05a9a5418d2378bd53ae4e12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1ab7696b785c90a6691a67d3bde5f5edd9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::BeamDrawingInterface::IsLastIn</definition>
-        <argsstring>(Object *object, LayerElement *element)</argsstring>
+        <argsstring>(const Object *object, const LayerElement *element) const</argsstring>
         <name>IsLastIn</name>
         <param>
-          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
           <declname>object</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
           <declname>element</declname>
         </param>
         <briefdescription>
@@ -95,7 +95,73 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="100" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="103" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1ab2375a61b834b355a669a1490913fb04" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::BeamDrawingInterface::HasCoords</definition>
+        <argsstring>() const</argsstring>
+        <name>HasCoords</name>
+        <briefdescription>
+<para>Initializes the m_beamElementCoords vector objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="110" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1a2c3f488b0a0f80f4954127de67e6ee72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::BeamDrawingInterface::InitCoords</definition>
+        <argsstring>(const ArrayOfObjects &amp;childList, Staff *staff, data_BEAMPLACE place)</argsstring>
+        <name>InitCoords</name>
+        <param>
+          <type>const ArrayOfObjects &amp;</type>
+          <declname>childList</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <declname>staff</declname>
+        </param>
+        <param>
+          <type>data_BEAMPLACE</type>
+          <declname>place</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="111" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1a93af1921113f5427a78398d175be022d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::BeamDrawingInterface::InitCoords</definition>
+        <argsstring>(const ListOfObjects &amp;childList, Staff *staff, data_BEAMPLACE place)</argsstring>
+        <name>InitCoords</name>
+        <param>
+          <type>const ListOfObjects &amp;</type>
+          <declname>childList</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <declname>staff</declname>
+        </param>
+        <param>
+          <type>data_BEAMPLACE</type>
+          <declname>place</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="112" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -110,7 +176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="172" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="172" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="178" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="178" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1a128e11484993f199540e117545e49716" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -123,7 +189,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="173" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="173" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="179" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1a6cbca6b6d786644d7ccca3699c2260c1" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -136,7 +202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="174" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="174" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="180" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="180" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1ac07dedfd9d18a30205ec9cff9ca131ee" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -149,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="175" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="175" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="181" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1a2fd80104c32344a1204ec44af858d879" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
@@ -162,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="176" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="176" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="182" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="182" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1afa2c759f832f6e426f6b24fb7d877180" prot="public" static="no" mutable="no">
         <type>data_STAFFREL_basic</type>
@@ -175,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="177" column="25" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="177" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="183" column="25" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="183" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1a9da5d57f4094873d109ca24005fb2ee4" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -188,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="178" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="178" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="184" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="184" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1a1c2a86d493efd23de86b5473dffd1d58" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -201,7 +267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="179" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="179" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="185" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="185" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1a2f05babb11c16401012d41d811bec77d" prot="public" static="no" mutable="no">
         <type>data_STEMDIRECTION</type>
@@ -214,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="180" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="180" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="186" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="186" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1aaff507977c3e0bf620f4c7e9517c0462" prot="public" static="no" mutable="no">
         <type>data_BEAMPLACE</type>
@@ -227,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="181" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="181" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="187" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="187" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1ad23fa5f2cc106630f3efd54db40f8f5d" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
@@ -240,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="182" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="182" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="188" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="188" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1a7a0799a72030f287c5a744187d925f13" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -253,7 +319,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="185" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="185" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="191" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="191" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1acf38f791d7a096f56495dfe6e5a04b18" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -266,7 +332,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="186" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="186" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="192" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="192" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1acfd33633ca8a8f4a03ca2035d19596b4" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -279,7 +345,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="187" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="187" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="193" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="193" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1ac63922b8c8e3e1a5b219124eb38c7394" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -292,7 +358,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="188" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="188" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="194" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="194" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1afa46fe4952aa3b0dae44c4c38e79e744" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -305,7 +371,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="191" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="191" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="197" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="197" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1aa9c704f00a29480d6510cb792c350911" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -318,7 +384,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="192" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="192" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="198" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="198" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_drawing_interface_1a8cea0232f11aa62bc020f19757dd526c" prot="public" static="no" mutable="no">
         <type>ArrayOfBeamElementCoords</type>
@@ -332,37 +398,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="197" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="197" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="203" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="203" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1a77537490027ed7685e9a711caa8a5300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void vrv::BeamDrawingInterface::InitCoords</definition>
-        <argsstring>(ArrayOfObjects *childList, Staff *staff, data_BEAMPLACE place)</argsstring>
-        <name>InitCoords</name>
-        <param>
-          <type>ArrayOfObjects *</type>
-          <declname>childList</declname>
-        </param>
-        <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
-          <declname>staff</declname>
-        </param>
-        <param>
-          <type>data_BEAMPLACE</type>
-          <declname>place</declname>
-        </param>
-        <briefdescription>
-<para>Initializes the m_beamElementCoords vector objects. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>This is called by <ref refid="classvrv_1_1_beam_1ae1273dd0789d15ec82ee70ef82bf3e95" kindref="member">Beam::FilterList</ref> </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="107" column="10"/>
-      </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1af5aa6e1d0fd35b213dc1b8114c87cd58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamDrawingInterface::InitCue</definition>
@@ -379,12 +418,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="113" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="119" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1a9ca7786f8dcc6da0a686874d7450c2de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1a97c459ebe3802fafd2c4b80ef95bca7c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::BeamDrawingInterface::IsHorizontal</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>IsHorizontal</name>
         <briefdescription>
         </briefdescription>
@@ -392,12 +431,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="115" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="121" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1a1e7c79928699365968ced58c949003a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1a551babef94f9965b77a85b3001cf749d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::BeamDrawingInterface::IsRepeatedPattern</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>IsRepeatedPattern</name>
         <briefdescription>
         </briefdescription>
@@ -405,12 +444,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="117" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="123" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1a27b26a0d44fd5c94247aa1fe081ae239" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1af88f485aa614298dd128073705ab67dd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::BeamDrawingInterface::HasOneStepHeight</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>HasOneStepHeight</name>
         <briefdescription>
 <para>Checks whether difference between highest and lowest notes of the beam is just one step. </para>
@@ -419,7 +458,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="122" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="128" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1adaec7fb532d7ee8f2d8b5f06e7eb79aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -433,7 +472,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="128" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="134" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1ace5c4c0657c94d8de99b933c75eb3e8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -447,7 +486,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="133" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="139" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1aa1f1a8faaf27320e5e09452dbab2315f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>std::pair&lt; int, int &gt;</type>
@@ -464,7 +503,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="138" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="138" bodyend="138"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="144" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="144" bodyend="144"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1ab194e91dbf4351e4f695ab7e6edf1935" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>std::pair&lt; int, int &gt;</type>
@@ -479,12 +518,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="143" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="143" bodyend="143"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="149" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="149" bodyend="149"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1a401c73629d89bafa67923589c82c5f91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1acc72272b8e6226e5016687b9b8f3c056" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamDrawingInterface::GetBeamOverflow</definition>
-        <argsstring>(StaffAlignment *&amp;above, StaffAlignment *&amp;below)</argsstring>
+        <argsstring>(StaffAlignment *&amp;above, StaffAlignment *&amp;below) const</argsstring>
         <name>GetBeamOverflow</name>
         <param>
           <type><ref refid="classvrv_1_1_staff_alignment" kindref="compound">StaffAlignment</ref> *&amp;</type>
@@ -501,12 +540,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="148" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="154" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1a2e1efdfd95278a07f699070feef940aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1aa029bc2b21fc35d756c4278b04a6e47d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamDrawingInterface::GetBeamChildOverflow</definition>
-        <argsstring>(StaffAlignment *&amp;above, StaffAlignment *&amp;below)</argsstring>
+        <argsstring>(StaffAlignment *&amp;above, StaffAlignment *&amp;below) const</argsstring>
         <name>GetBeamChildOverflow</name>
         <param>
           <type><ref refid="classvrv_1_1_staff_alignment" kindref="compound">StaffAlignment</ref> *&amp;</type>
@@ -523,21 +562,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="153" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="159" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
-      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1a9571c5f0332590bffb23d5a85d32416b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_drawing_interface_1a1c8290b1b628b5ddc11c330ebea2ba87" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int vrv::BeamDrawingInterface::GetPosition</definition>
-        <argsstring>(Object *object, LayerElement *element)</argsstring>
+        <argsstring>(const Object *object, const LayerElement *element) const</argsstring>
         <name>GetPosition</name>
         <param>
-          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
           <declname>object</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
           <declname>element</declname>
         </param>
         <briefdescription>
@@ -548,7 +587,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="160" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="166" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -573,7 +612,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="168" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="174" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -808,31 +847,44 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="82" column="54" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="82" bodyend="201"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="85" column="54" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="85" bodyend="207"/>
     <listofallmembers>
       <member refid="classvrv_1_1_beam_drawing_interface_1acb9893d7a46b9fd187813a3d2fe30d8b" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>BeamDrawingInterface</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1ace5c4c0657c94d8de99b933c75eb3e8f" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>ClearCoords</name></member>
-      <member refid="classvrv_1_1_object_list_interface_1af290e139fe7cdfd07e614fb5d604e98f" prot="protected" virt="virtual"><scope>vrv::BeamDrawingInterface</scope><name>FilterList</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1afcdb6796d84a327e46ac2b6e3f8bd243" prot="protected" virt="virtual"><scope>vrv::BeamDrawingInterface</scope><name>FilterList</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1aa1f1a8faaf27320e5e09452dbab2315f" prot="public" virt="virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetAdditionalBeamCount</name></member>
-      <member refid="classvrv_1_1_beam_drawing_interface_1a2e1efdfd95278a07f699070feef940aa" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetBeamChildOverflow</name></member>
-      <member refid="classvrv_1_1_beam_drawing_interface_1a401c73629d89bafa67923589c82c5f91" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetBeamOverflow</name></member>
+      <member refid="classvrv_1_1_beam_drawing_interface_1aa029bc2b21fc35d756c4278b04a6e47d" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetBeamChildOverflow</name></member>
+      <member refid="classvrv_1_1_beam_drawing_interface_1acc72272b8e6226e5016687b9b8f3c056" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetBeamOverflow</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1ab194e91dbf4351e4f695ab7e6edf1935" prot="public" virt="virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetFloatingBeamCount</name></member>
-      <member refid="classvrv_1_1_object_list_interface_1a891d06e93b23593760353347702e2f26" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetList</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1aec88d6b46b54ccbcd95426f7f55c4b59" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetList</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a3f40197858105969649c5ae29b5a44f7" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetList</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a568111a07cfdbbbc3017ff0de5863754" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListBack</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a233aae7f38ba7ac8a2c9f1339ab60921" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListBack</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1ab95aaf8f363f9229cc5ea15fe38f0b89" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListFirst</name></member>
       <member refid="classvrv_1_1_object_list_interface_1a1dd620b5a71dbbc985d19972d404b04c" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListFirst</name></member>
-      <member refid="classvrv_1_1_object_list_interface_1aa7011af7543f539acd4cf68ca9ab7f8b" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListFirstBackward</name></member>
-      <member refid="classvrv_1_1_object_list_interface_1a3bdaaa1533dc4c5c662562db54a23146" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListIndex</name></member>
-      <member refid="classvrv_1_1_object_list_interface_1ae111de575ca76e7718a6a9298629d505" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListNext</name></member>
-      <member refid="classvrv_1_1_object_list_interface_1a7be9e4e97f020eb673aae4407ded65fc" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListPrevious</name></member>
-      <member refid="classvrv_1_1_beam_drawing_interface_1a9571c5f0332590bffb23d5a85d32416b" prot="protected" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetPosition</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1aebf49146dc5792275d39546a08f95608" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListFirstBackward</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a4d0adf01cac8d4e2ca9ad676b6842f33" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListFirstBackward</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1acea3c015b450ae8f3d0c64cea8772eaf" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListFront</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a80fd9a3f5662e50e6d78886009bcfa73" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListFront</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a1858b93f447366ddfbdeb011845e3f25" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListIndex</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a30e4fc57355193bb9f9db195a1ff5afb" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListNext</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1aa390767e556fa0acfbf39dfd97476200" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListNext</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a2c9f803e6cca17417584290ff938bc0d" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListPrevious</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a5262feebeeb70f9a2583c6750daa6e54" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListPrevious</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1ae6c1369f614fddc849cf1744906160ee" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetListSize</name></member>
+      <member refid="classvrv_1_1_beam_drawing_interface_1a1c8290b1b628b5ddc11c330ebea2ba87" prot="protected" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetPosition</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1adaec7fb532d7ee8f2d8b5f06e7eb79aa" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>GetTotalBeamWidth</name></member>
-      <member refid="classvrv_1_1_beam_drawing_interface_1a27b26a0d44fd5c94247aa1fe081ae239" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>HasOneStepHeight</name></member>
-      <member refid="classvrv_1_1_beam_drawing_interface_1a77537490027ed7685e9a711caa8a5300" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>InitCoords</name></member>
+      <member refid="classvrv_1_1_beam_drawing_interface_1ab2375a61b834b355a669a1490913fb04" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>HasCoords</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1a6fa4993dc2bcb87049c3bdab6a32056b" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>HasEmptyList</name></member>
+      <member refid="classvrv_1_1_beam_drawing_interface_1af88f485aa614298dd128073705ab67dd" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>HasOneStepHeight</name></member>
+      <member refid="classvrv_1_1_beam_drawing_interface_1a2c3f488b0a0f80f4954127de67e6ee72" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>InitCoords</name></member>
+      <member refid="classvrv_1_1_beam_drawing_interface_1a93af1921113f5427a78398d175be022d" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>InitCoords</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1af5aa6e1d0fd35b213dc1b8114c87cd58" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>InitCue</name></member>
-      <member refid="classvrv_1_1_beam_drawing_interface_1a6ec2fd42b46e10a975fbb44010a51549" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>IsFirstIn</name></member>
-      <member refid="classvrv_1_1_beam_drawing_interface_1a9ca7786f8dcc6da0a686874d7450c2de" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>IsHorizontal</name></member>
+      <member refid="classvrv_1_1_beam_drawing_interface_1ac4293802ae5a0f7d45cc6b106fb33032" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>IsFirstIn</name></member>
+      <member refid="classvrv_1_1_beam_drawing_interface_1a97c459ebe3802fafd2c4b80ef95bca7c" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>IsHorizontal</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1af3f94e533afab1ad343cd3b3a0c1f378" prot="private" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>IsHorizontalMixedBeam</name></member>
-      <member refid="classvrv_1_1_beam_drawing_interface_1a8834516c05a9a5418d2378bd53ae4e12" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>IsLastIn</name></member>
-      <member refid="classvrv_1_1_beam_drawing_interface_1a1e7c79928699365968ced58c949003a1" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>IsRepeatedPattern</name></member>
+      <member refid="classvrv_1_1_beam_drawing_interface_1ab7696b785c90a6691a67d3bde5f5edd9" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>IsLastIn</name></member>
+      <member refid="classvrv_1_1_beam_drawing_interface_1a551babef94f9965b77a85b3001cf749d" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>IsRepeatedPattern</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1a8cea0232f11aa62bc020f19757dd526c" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>m_beamElementCoords</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1a128e11484993f199540e117545e49716" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>m_beamHasChord</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1ad23fa5f2cc106630f3efd54db40f8f5d" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>m_beamStaff</name></member>
@@ -855,7 +907,7 @@
       <member refid="classvrv_1_1_object_list_interface_1abd871c40f32f79e61d3001dce73277b2" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>ObjectListInterface</name></member>
       <member refid="classvrv_1_1_object_list_interface_1ac286d029a9ee5021f0f40c8bec72fce0" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>operator=</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1a5bfe4930a0357dad21b1cbb6f4da7bf8" prot="public" virt="virtual"><scope>vrv::BeamDrawingInterface</scope><name>Reset</name></member>
-      <member refid="classvrv_1_1_object_list_interface_1ab5637423219e7de94ef81b7169a8ace1" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>ResetList</name></member>
+      <member refid="classvrv_1_1_object_list_interface_1ad840a3d0c9fa550f980534426eb9b076" prot="public" virt="non-virtual"><scope>vrv::BeamDrawingInterface</scope><name>ResetList</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1af4984f690e63ca428e230eb258ea0729" prot="public" virt="virtual"><scope>vrv::BeamDrawingInterface</scope><name>~BeamDrawingInterface</name></member>
       <member refid="classvrv_1_1_object_list_interface_1a44118ef8dc2eeb97fff1a68127bd55f4" prot="public" virt="virtual"><scope>vrv::BeamDrawingInterface</scope><name>~ObjectListInterface</name></member>
     </listofallmembers>

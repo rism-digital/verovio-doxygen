@@ -12,5 +12,5 @@ var classvrv_1_1_section =
     [ "JustifyX", "classvrv_1_1_section.html#a753ff496840a43f0699dc4e9f663d649", null ],
     [ "PrepareMilestones", "classvrv_1_1_section.html#a8e763f6053f8a172d45ae2cd283d9027", null ],
     [ "Reset", "classvrv_1_1_section.html#a5c2ea4ecbc1331e7270dbc481ce0ac4e", null ],
-    [ "ResetDrawing", "classvrv_1_1_section.html#a124117e3280d72876028e8237424bda5", null ]
+    [ "ResetData", "classvrv_1_1_section.html#a3bee662970bc918cfedc82ae5b59ab31", null ]
 ];

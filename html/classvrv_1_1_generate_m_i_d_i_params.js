@@ -2,6 +2,7 @@ var classvrv_1_1_generate_m_i_d_i_params =
 [
     [ "GenerateMIDIParams", "classvrv_1_1_generate_m_i_d_i_params.html#aca7cbb3730c90a286c78f041dbf8094f", null ],
     [ "m_accentedGraceNote", "classvrv_1_1_generate_m_i_d_i_params.html#a8cd25715766f83579f964dde56d219d8", null ],
+    [ "m_cueExclusion", "classvrv_1_1_generate_m_i_d_i_params.html#af13283eff7018d218b4d4c802b8022c6", null ],
     [ "m_currentTempo", "classvrv_1_1_generate_m_i_d_i_params.html#a7ca852b307bdfa0085e79ea9004238e0", null ],
     [ "m_deferredNotes", "classvrv_1_1_generate_m_i_d_i_params.html#a92b29a93fa4f2b3914d6eef22f1b0075", null ],
     [ "m_expandedNotes", "classvrv_1_1_generate_m_i_d_i_params.html#a074178c8dc189e48de3e862346012808", null ],

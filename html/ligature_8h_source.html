@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('ligature_8h_source.html',''); initResi
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;drawinginterface.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;layerelement.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// Ligature</span></div>
@@ -118,54 +118,52 @@ $(document).ready(function(){initNavTree('ligature_8h_source.html',''); initResi
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_ligature.html#a1c55450510e851184811ea55831f9d49">IsSupportedChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classvrv_1_1_note.html">Note</a> *<a class="code" href="classvrv_1_1_ligature.html#a1ac3c2386e687ceca3e8adee0e89a7e2">GetFirstNote</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classvrv_1_1_note.html">Note</a> *GetLastNote();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> GetDrawingNoteShape(<a class="code" href="classvrv_1_1_note.html">Note</a> *note);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> GetDrawingPreviousNoteShape(<a class="code" href="classvrv_1_1_note.html">Note</a> *note);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_note.html">Note</a> *<a class="code" href="classvrv_1_1_ligature.html#a1ac3c2386e687ceca3e8adee0e89a7e2">GetFirstNote</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classvrv_1_1_note.html">Note</a> *GetLastNote();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_note.html">Note</a> *GetLastNote() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> GetDrawingNoteShape(<a class="code" href="classvrv_1_1_note.html">Note</a> *note);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> GetDrawingPreviousNoteShape(<a class="code" href="classvrv_1_1_note.html">Note</a> *note);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_ligature.html#aa92ecc2562a54bb335f7c3e7414373eb">CalcLigatureNotePos</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_ligature.html#aa6c5b80168bf0dd568c226d31828ec51">ResetDrawing</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_ligature.html#a4349458debb941bb30c622f2f87e4b19">ClearClusters</a>();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_ligature.html#a4455eb80d23433587bccc647478eb14e">FilterList</a>(ArrayOfObjects *childList) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    std::vector&lt;int&gt; m_drawingShapes;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_ligature.html#aa92ecc2562a54bb335f7c3e7414373eb">CalcLigatureNotePos</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_ligature.html#af977ca7bc1ef0cc54fb7b19666ded037">ResetData</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_ligature.html#a9280081f90f16d50797f57cef7d73304">FilterList</a>(ListOfConstObjects &amp;childList) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    std::vector&lt;int&gt; m_drawingShapes;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_ligature_html_a15f9a61e96129d0a6b8009ee9df62bad"><div class="ttname"><a href="classvrv_1_1_ligature.html#a15f9a61e96129d0a6b8009ee9df62bad">vrv::Ligature::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> ligature.h:43</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:54</div></div>
-<div class="ttc" id="aclassvrv_1_1_ligature_html_a4349458debb941bb30c622f2f87e4b19"><div class="ttname"><a href="classvrv_1_1_ligature.html#a4349458debb941bb30c622f2f87e4b19">vrv::Ligature::ClearClusters</a></div><div class="ttdeci">void ClearClusters()</div><div class="ttdoc">Clear the m_clusters vector and delete all the objects.</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:56</div></div>
+<div class="ttc" id="aclassvrv_1_1_ligature_html_af977ca7bc1ef0cc54fb7b19666ded037"><div class="ttname"><a href="classvrv_1_1_ligature.html#af977ca7bc1ef0cc54fb7b19666ded037">vrv::Ligature::ResetData</a></div><div class="ttdeci">int ResetData(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetData.</div></div>
 <div class="ttc" id="aclassvrv_1_1_ligature_html_a43486ca3783c707d30a22c7403a91d08"><div class="ttname"><a href="classvrv_1_1_ligature.html#a43486ca3783c707d30a22c7403a91d08">vrv::Ligature::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_ligature_html"><div class="ttname"><a href="classvrv_1_1_ligature.html">vrv::Ligature</a></div><div class="ttdoc">This class represents a collection of notes in the same layer with successive onset times,...</div><div class="ttdef"><b>Definition:</b> ligature.h:28</div></div>
 <div class="ttc" id="aclassvrv_1_1_ligature_html_a224ba002fb856c749e278fa6074f78d5"><div class="ttname"><a href="classvrv_1_1_ligature.html#a224ba002fb856c749e278fa6074f78d5">vrv::Ligature::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> ligature.h:37</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_list_interface_html"><div class="ttname"><a href="classvrv_1_1_object_list_interface.html">vrv::ObjectListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1470</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_list_interface_html"><div class="ttname"><a href="classvrv_1_1_object_list_interface.html">vrv::ObjectListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1637</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html"><div class="ttname"><a href="classvrv_1_1_note.html">vrv::Note</a></div><div class="ttdoc">This class models the MEI &lt;note&gt; element.</div><div class="ttdef"><b>Definition:</b> note.h:47</div></div>
-<div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
+<div class="ttc" id="aclassvrv_1_1_ligature_html_a9280081f90f16d50797f57cef7d73304"><div class="ttname"><a href="classvrv_1_1_ligature.html#a9280081f90f16d50797f57cef7d73304">vrv::Ligature::FilterList</a></div><div class="ttdeci">void FilterList(ListOfConstObjects &amp;childList) const override</div><div class="ttdoc">Filter the flat list and keep only Note elements.</div></div>
 <div class="ttc" id="aclassvrv_1_1_ligature_html_a1c55450510e851184811ea55831f9d49"><div class="ttname"><a href="classvrv_1_1_ligature.html#a1c55450510e851184811ea55831f9d49">vrv::Ligature::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Add children (notes or editorial markup)</div></div>
-<div class="ttc" id="aclassvrv_1_1_ligature_html_aa6c5b80168bf0dd568c226d31828ec51"><div class="ttname"><a href="classvrv_1_1_ligature.html#aa6c5b80168bf0dd568c226d31828ec51">vrv::Ligature::ResetDrawing</a></div><div class="ttdeci">int ResetDrawing(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
 <div class="ttc" id="aclassvrv_1_1_ligature_html_aa92ecc2562a54bb335f7c3e7414373eb"><div class="ttname"><a href="classvrv_1_1_ligature.html#aa92ecc2562a54bb335f7c3e7414373eb">vrv::Ligature::CalcLigatureNotePos</a></div><div class="ttdeci">int CalcLigatureNotePos(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CalcLigatureNotePos.</div></div>
 <div class="ttc" id="aclassvrv_1_1_ligature_html_a1ac3c2386e687ceca3e8adee0e89a7e2"><div class="ttname"><a href="classvrv_1_1_ligature.html#a1ac3c2386e687ceca3e8adee0e89a7e2">vrv::Ligature::GetFirstNote</a></div><div class="ttdeci">Note * GetFirstNote()</div><div class="ttdoc">Return the first or last note.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:43</div></div>
-<div class="ttc" id="aclassvrv_1_1_ligature_html_a4455eb80d23433587bccc647478eb14e"><div class="ttname"><a href="classvrv_1_1_ligature.html#a4455eb80d23433587bccc647478eb14e">vrv::Ligature::FilterList</a></div><div class="ttdeci">void FilterList(ArrayOfObjects *childList) override</div><div class="ttdoc">Filter the flat list and keep only Note elements.</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_params_html"><div class="ttname"><a href="classvrv_1_1_functor_params.html">vrv::FunctorParams</a></div><div class="ttdoc">This is the base class for all MEI att classes.</div><div class="ttdef"><b>Definition:</b> functorparams.h:76</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>ligature.h</b></li>
-    <li class="footer">Generated on Tue Feb 22 2022 11:32:34 for Verovio by
+    <li class="footer">Generated on Wed May 25 2022 14:36:07 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

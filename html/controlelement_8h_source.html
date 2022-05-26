@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('controlelement_8h_source.html',''); in
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;floatingobject.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;linkinginterface.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevrv.html">vrv</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// ControlElement</span></div>
@@ -109,46 +109,45 @@ $(document).ready(function(){initNavTree('controlelement_8h_source.html',''); in
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classvrv_1_1_control_element.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_control_element.html">ControlElement</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_floating_object.html">FloatingObject</a>, <span class="keyword">public</span> <a class="code" href="classvrv_1_1_linking_interface.html">LinkingInterface</a>, <span class="keyword">public</span> AttLabelled, <span class="keyword">public</span> AttTyped {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classvrv_1_1_control_element.html">ControlElement</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classvrv_1_1_control_element.html">ControlElement</a>(<a class="code" href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">ClassId</a> classId);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classvrv_1_1_control_element.html">ControlElement</a>(<a class="code" href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">ClassId</a> classId, <span class="keyword">const</span> std::string &amp;classIdStr);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classvrv_1_1_control_element.html">ControlElement</a>(ClassId classId);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classvrv_1_1_control_element.html">ControlElement</a>(ClassId classId, <span class="keyword">const</span> std::string &amp;classIdStr);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_control_element.html">ControlElement</a>();</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_control_element.html#ada5a97dab22c9ea6f7eff3dbfc4cd7ea">Reset</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classvrv_1_1_linking_interface.html">LinkingInterface</a> *GetLinkingInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classvrv_1_1_linking_interface.html">LinkingInterface</a> *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    data_HORIZONTALALIGNMENT <a class="code" href="classvrv_1_1_control_element.html#a22f1eb1bb3c79301295a80e054804fa8">GetChildRendAlignment</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    data_STAFFREL <a class="code" href="classvrv_1_1_control_element.html#a6958cd8e98487b05df80adf872de0353">GetLayerPlace</a>(data_STAFFREL defaultValue);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_control_element.html#aac6e4a89487d479670c8db760c720073">AdjustXOverflow</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_control_element.html#a140abaf59998bdcc8f4a20edc4a1d566">ResetDrawing</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classvrv_1_1_linking_interface.html">LinkingInterface</a> *GetLinkingInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;LinkingInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_linking_interface.html">LinkingInterface</a> *GetLinkingInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const LinkingInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    data_HORIZONTALALIGNMENT <a class="code" href="classvrv_1_1_control_element.html#a3443f80d111438969ac10e169fc412ea">GetChildRendAlignment</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    data_STAFFREL <a class="code" href="classvrv_1_1_control_element.html#a6958cd8e98487b05df80adf872de0353">GetLayerPlace</a>(data_STAFFREL defaultValue);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_control_element.html#aac6e4a89487d479670c8db760c720073">AdjustXOverflow</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_control_element.html#ac6c234c1060330df08eee2ce4d7626da">ResetData</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacevrv_html_add6b61c8ada3f79dc1f540fbead73ca5"><div class="ttname"><a href="namespacevrv.html#add6b61c8ada3f79dc1f540fbead73ca5">vrv::ClassId</a></div><div class="ttdeci">ClassId</div><div class="ttdoc">The ClassIds are used to identify Object child classes through the Object::Is virtual method.</div><div class="ttdef"><b>Definition:</b> vrvdef.h:82</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html_a6958cd8e98487b05df80adf872de0353"><div class="ttname"><a href="classvrv_1_1_control_element.html#a6958cd8e98487b05df80adf872de0353">vrv::ControlElement::GetLayerPlace</a></div><div class="ttdeci">data_STAFFREL GetLayerPlace(data_STAFFREL defaultValue)</div><div class="ttdoc">Check if the ControlElement applies at a point where there is more than on layer.</div></div>
 <div class="ttc" id="aclassvrv_1_1_linking_interface_html"><div class="ttname"><a href="classvrv_1_1_linking_interface.html">vrv::LinkingInterface</a></div><div class="ttdoc">This class is an interface for elements having a link It is not an abstract class but should not be i...</div><div class="ttdef"><b>Definition:</b> linkinginterface.h:28</div></div>
-<div class="ttc" id="aclassvrv_1_1_control_element_html_a22f1eb1bb3c79301295a80e054804fa8"><div class="ttname"><a href="classvrv_1_1_control_element.html#a22f1eb1bb3c79301295a80e054804fa8">vrv::ControlElement::GetChildRendAlignment</a></div><div class="ttdeci">data_HORIZONTALALIGNMENT GetChildRendAlignment()</div><div class="ttdoc">Check if the ControlElement has a Rend child and return its @halign equivalent (if any)</div></div>
+<div class="ttc" id="aclassvrv_1_1_control_element_html_ac6c234c1060330df08eee2ce4d7626da"><div class="ttname"><a href="classvrv_1_1_control_element.html#ac6c234c1060330df08eee2ce4d7626da">vrv::ControlElement::ResetData</a></div><div class="ttdeci">int ResetData(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetData.</div></div>
 <div class="ttc" id="aclassvrv_1_1_floating_object_html"><div class="ttname"><a href="classvrv_1_1_floating_object.html">vrv::FloatingObject</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> floatingobject.h:28</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html_ada5a97dab22c9ea6f7eff3dbfc4cd7ea"><div class="ttname"><a href="classvrv_1_1_control_element.html#ada5a97dab22c9ea6f7eff3dbfc4cd7ea">vrv::ControlElement::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
-<div class="ttc" id="aclassvrv_1_1_control_element_html_a140abaf59998bdcc8f4a20edc4a1d566"><div class="ttname"><a href="classvrv_1_1_control_element.html#a140abaf59998bdcc8f4a20edc4a1d566">vrv::ControlElement::ResetDrawing</a></div><div class="ttdeci">int ResetDrawing(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetDrawing.</div></div>
-<div class="ttc" id="anamespacevrv_html"><div class="ttname"><a href="namespacevrv.html">vrv</a></div><div class="ttdoc">There are two implementation of the Plaine and Easie parser.</div><div class="ttdef"><b>Definition:</b> abbr.h:14</div></div>
+<div class="ttc" id="aclassvrv_1_1_control_element_html_a3443f80d111438969ac10e169fc412ea"><div class="ttname"><a href="classvrv_1_1_control_element.html#a3443f80d111438969ac10e169fc412ea">vrv::ControlElement::GetChildRendAlignment</a></div><div class="ttdeci">data_HORIZONTALALIGNMENT GetChildRendAlignment() const</div><div class="ttdoc">Check if the ControlElement has a Rend child and return its @halign equivalent (if any)</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html_aac6e4a89487d479670c8db760c720073"><div class="ttname"><a href="classvrv_1_1_control_element.html#aac6e4a89487d479670c8db760c720073">vrv::ControlElement::AdjustXOverflow</a></div><div class="ttdeci">int AdjustXOverflow(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::AdjustXOverflow.</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_params_html"><div class="ttname"><a href="classvrv_1_1_functor_params.html">vrv::FunctorParams</a></div><div class="ttdoc">This is the base class for all MEI att classes.</div><div class="ttdef"><b>Definition:</b> functorparams.h:76</div></div>
@@ -156,7 +155,7 @@ $(document).ready(function(){initNavTree('controlelement_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>controlelement.h</b></li>
-    <li class="footer">Generated on Tue Feb 22 2022 11:32:34 for Verovio by
+    <li class="footer">Generated on Wed May 25 2022 14:36:06 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

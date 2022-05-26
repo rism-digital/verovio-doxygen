@@ -38,31 +38,46 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classvrv_1_1_feature_extractor_1a144ead9529606e6845d9d4184e36ceb5" prot="public" static="no" mutable="no">
-        <type><ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
-        <definition>Note* vrv::FeatureExtractor::m_previousNote</definition>
+      <memberdef kind="variable" id="classvrv_1_1_feature_extractor_1a1306554a428a7a40acac7a9195c1fe6e" prot="public" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> * &gt;</type>
+        <definition>std::list&lt;Note *&gt; vrv::FeatureExtractor::m_previousNotes</definition>
         <argsstring></argsstring>
-        <name>m_previousNote</name>
+        <name>m_previousNotes</name>
         <briefdescription>
+<para>A list of previous notes for interval calculation. </para>
         </briefdescription>
         <detaileddescription>
+<para>Usually one note, but sometimes more than one with tied notes. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" line="52" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" bodystart="52" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" line="56" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" bodystart="56" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_feature_extractor_1a74629bf48c1ba415e12e364c825d56a4" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classvrv_1_1_feature_extractor_1a4069b9e470028273fd00d3e55581ea06" prot="public" static="no" mutable="no">
         <type>jsonxx::Array</type>
-        <definition>jsonxx::Array vrv::FeatureExtractor::m_pitches</definition>
+        <definition>jsonxx::Array vrv::FeatureExtractor::m_pitchesChromatic</definition>
         <argsstring></argsstring>
-        <name>m_pitches</name>
+        <name>m_pitchesChromatic</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" line="53" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" bodystart="53" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" line="58" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_feature_extractor_1aa4c644b5a1a87be4722d4ea1eaf73224" prot="public" static="no" mutable="no">
+        <type>jsonxx::Array</type>
+        <definition>jsonxx::Array vrv::FeatureExtractor::m_pitchesDiatonic</definition>
+        <argsstring></argsstring>
+        <name>m_pitchesDiatonic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" line="59" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_feature_extractor_1a4f4aa680b7d22087480f5c77331be83f" prot="public" static="no" mutable="no">
         <type>jsonxx::Array</type>
@@ -75,20 +90,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" line="54" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" bodystart="54" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" line="60" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" bodystart="60" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_feature_extractor_1a0426a6f417f09498afcbe5d1dbeae56d" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classvrv_1_1_feature_extractor_1a45abbea6747994583ed3dce49d14d68b" prot="public" static="no" mutable="no">
         <type>jsonxx::Array</type>
-        <definition>jsonxx::Array vrv::FeatureExtractor::m_intervals</definition>
+        <definition>jsonxx::Array vrv::FeatureExtractor::m_intervalsChromatic</definition>
         <argsstring></argsstring>
-        <name>m_intervals</name>
+        <name>m_intervalsChromatic</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" line="55" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" bodystart="55" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" line="62" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_feature_extractor_1a18563d68c83f16d2d2bed2a73dbeda54" prot="public" static="no" mutable="no">
+        <type>jsonxx::Array</type>
+        <definition>jsonxx::Array vrv::FeatureExtractor::m_intervalsDiatonic</definition>
+        <argsstring></argsstring>
+        <name>m_intervalsDiatonic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" line="63" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_feature_extractor_1a7de149b115c781799fea4d41d7961209" prot="public" static="no" mutable="no">
         <type>jsonxx::Array</type>
@@ -101,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" line="56" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" bodystart="56" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" line="64" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" bodystart="64" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -163,452 +191,17 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="3">
-        <label>vrv::LayerElement</label>
-        <link refid="classvrv_1_1_layer_element"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-        <childnode refid="6" relation="public-inheritance">
-        </childnode>
-        <childnode refid="9" relation="public-inheritance">
-        </childnode>
-        <childnode refid="11" relation="public-inheritance">
-        </childnode>
-        <childnode refid="12" relation="public-inheritance">
-        </childnode>
-        <childnode refid="13" relation="public-inheritance">
-        </childnode>
-        <childnode refid="14" relation="usage">
-          <edgelabel>m_crossLayer</edgelabel>
-        </childnode>
-        <childnode refid="19" relation="usage">
-          <edgelabel>m_crossStaff</edgelabel>
-        </childnode>
-        <childnode refid="42" relation="usage">
-          <edgelabel>m_graceAlignment</edgelabel>
-          <edgelabel>m_alignment</edgelabel>
-        </childnode>
-      </node>
-      <node id="71">
-        <label>AttNoteVisMensural</label>
-      </node>
-      <node id="9">
-        <label>vrv::LinkingInterface</label>
-        <link refid="classvrv_1_1_linking_interface"/>
-        <childnode refid="7" relation="public-inheritance">
-        </childnode>
-        <childnode refid="10" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="30">
-        <label>AttMultinumMeasures</label>
-      </node>
-      <node id="24">
-        <label>vrv::ScoreDefElement</label>
-        <link refid="classvrv_1_1_score_def_element"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-        <childnode refid="25" relation="public-inheritance">
-        </childnode>
-        <childnode refid="13" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="54">
-        <label>AttDurationRatio</label>
-      </node>
-      <node id="43">
-        <label>vrv::StemmedDrawingInterface</label>
-        <link refid="classvrv_1_1_stemmed_drawing_interface"/>
-        <childnode refid="44" relation="usage">
-          <edgelabel>m_drawingStem</edgelabel>
-        </childnode>
-      </node>
-      <node id="22">
-        <label>AttCourseLog</label>
-      </node>
-      <node id="52">
-        <label>AttDurationLogical</label>
-      </node>
-      <node id="33">
-        <label>AttSystems</label>
-      </node>
-      <node id="19">
-        <label>vrv::Staff</label>
-        <link refid="classvrv_1_1_staff"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-        <childnode refid="6" relation="public-inheritance">
-        </childnode>
-        <childnode refid="20" relation="public-inheritance">
-        </childnode>
-        <childnode refid="17" relation="public-inheritance">
-        </childnode>
-        <childnode refid="13" relation="public-inheritance">
-        </childnode>
-        <childnode refid="18" relation="public-inheritance">
-        </childnode>
-        <childnode refid="21" relation="usage">
-          <edgelabel>m_drawingTuning</edgelabel>
-        </childnode>
-        <childnode refid="23" relation="usage">
-          <edgelabel>m_drawingStaffDef</edgelabel>
-        </childnode>
-      </node>
-      <node id="58">
-        <label>AttNoteGes</label>
-      </node>
-      <node id="35">
-        <label>AttDistances</label>
-      </node>
-      <node id="50">
-        <label>AttBeamSecondary</label>
-      </node>
-      <node id="65">
-        <label>AttColoration</label>
-      </node>
-      <node id="13">
-        <label>AttTyped</label>
-      </node>
-      <node id="5">
-        <label>vrv::BoundingBox</label>
-        <link refid="classvrv_1_1_bounding_box"/>
-      </node>
-      <node id="25">
-        <label>vrv::ScoreDefInterface</label>
-        <link refid="classvrv_1_1_score_def_interface"/>
-        <childnode refid="7" relation="public-inheritance">
-        </childnode>
-        <childnode refid="26" relation="public-inheritance">
-        </childnode>
-        <childnode refid="27" relation="public-inheritance">
-        </childnode>
-        <childnode refid="28" relation="public-inheritance">
-        </childnode>
-        <childnode refid="29" relation="public-inheritance">
-        </childnode>
-        <childnode refid="30" relation="public-inheritance">
-        </childnode>
-        <childnode refid="31" relation="public-inheritance">
-        </childnode>
-        <childnode refid="32" relation="public-inheritance">
-        </childnode>
-        <childnode refid="33" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>vrv::Interface</label>
-        <link refid="classvrv_1_1_interface"/>
-      </node>
-      <node id="29">
-        <label>AttMidiTempo</label>
-      </node>
-      <node id="18">
-        <label>AttVisibility</label>
-      </node>
-      <node id="2">
-        <label>vrv::Note</label>
-        <link refid="classvrv_1_1_note"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="43" relation="public-inheritance">
-        </childnode>
-        <childnode refid="48" relation="public-inheritance">
-        </childnode>
-        <childnode refid="57" relation="public-inheritance">
-        </childnode>
-        <childnode refid="61" relation="public-inheritance">
-        </childnode>
-        <childnode refid="64" relation="public-inheritance">
-        </childnode>
-        <childnode refid="65" relation="public-inheritance">
-        </childnode>
-        <childnode refid="66" relation="public-inheritance">
-        </childnode>
-        <childnode refid="67" relation="public-inheritance">
-        </childnode>
-        <childnode refid="45" relation="public-inheritance">
-        </childnode>
-        <childnode refid="68" relation="public-inheritance">
-        </childnode>
-        <childnode refid="69" relation="public-inheritance">
-        </childnode>
-        <childnode refid="70" relation="public-inheritance">
-        </childnode>
-        <childnode refid="71" relation="public-inheritance">
-        </childnode>
-        <childnode refid="46" relation="public-inheritance">
-        </childnode>
-        <childnode refid="47" relation="public-inheritance">
-        </childnode>
-        <childnode refid="72" relation="public-inheritance">
-        </childnode>
-        <childnode refid="18" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="39">
-        <label>AttStaffDefVis</label>
-      </node>
-      <node id="17">
-        <label>AttNInteger</label>
-      </node>
-      <node id="14">
-        <label>vrv::Layer</label>
-        <link refid="classvrv_1_1_layer"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-        <childnode refid="15" relation="public-inheritance">
-        </childnode>
-        <childnode refid="16" relation="public-inheritance">
-        </childnode>
-        <childnode refid="17" relation="public-inheritance">
-        </childnode>
-        <childnode refid="13" relation="public-inheritance">
-        </childnode>
-        <childnode refid="18" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="55">
-        <label>AttFermataPresent</label>
-      </node>
-      <node id="32">
-        <label>AttSpacing</label>
-      </node>
-      <node id="6">
-        <label>vrv::FacsimileInterface</label>
-        <link refid="classvrv_1_1_facsimile_interface"/>
-        <childnode refid="7" relation="public-inheritance">
-        </childnode>
-        <childnode refid="8" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="36">
-        <label>AttNotationType</label>
-      </node>
-      <node id="57">
-        <label>vrv::PitchInterface</label>
-        <link refid="classvrv_1_1_pitch_interface"/>
-        <childnode refid="7" relation="public-inheritance">
-        </childnode>
-        <childnode refid="58" relation="public-inheritance">
-        </childnode>
-        <childnode refid="59" relation="public-inheritance">
-        </childnode>
-        <childnode refid="60" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="11">
-        <label>AttCoordX1</label>
-      </node>
-      <node id="15">
-        <label>vrv::DrawingListInterface</label>
-        <link refid="classvrv_1_1_drawing_list_interface"/>
-      </node>
-      <node id="60">
-        <label>AttPitch</label>
-      </node>
-      <node id="20">
-        <label>AttCoordY1</label>
-      </node>
-      <node id="48">
-        <label>vrv::DurationInterface</label>
-        <link refid="classvrv_1_1_duration_interface"/>
-        <childnode refid="7" relation="public-inheritance">
-        </childnode>
-        <childnode refid="49" relation="public-inheritance">
-        </childnode>
-        <childnode refid="50" relation="public-inheritance">
-        </childnode>
-        <childnode refid="51" relation="public-inheritance">
-        </childnode>
-        <childnode refid="52" relation="public-inheritance">
-        </childnode>
-        <childnode refid="53" relation="public-inheritance">
-        </childnode>
-        <childnode refid="54" relation="public-inheritance">
-        </childnode>
-        <childnode refid="55" relation="public-inheritance">
-        </childnode>
-        <childnode refid="56" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="21">
-        <label>vrv::Tuning</label>
-        <link refid="classvrv_1_1_tuning"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-        <childnode refid="22" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="62">
-        <label>AttStaffLoc</label>
-      </node>
-      <node id="72">
-        <label>AttTiePresent</label>
-      </node>
-      <node id="63">
-        <label>AttStaffLocPitched</label>
-      </node>
-      <node id="34">
-        <label>vrv::StaffDefDrawingInterface</label>
-        <link refid="classvrv_1_1_staff_def_drawing_interface"/>
-      </node>
-      <node id="46">
-        <label>AttStems</label>
-      </node>
-      <node id="69">
-        <label>AttNoteGesTab</label>
-      </node>
-      <node id="49">
-        <label>AttAugmentDots</label>
-      </node>
-      <node id="23">
-        <label>vrv::StaffDef</label>
-        <link refid="classvrv_1_1_staff_def"/>
-        <childnode refid="24" relation="public-inheritance">
-        </childnode>
-        <childnode refid="34" relation="public-inheritance">
-        </childnode>
-        <childnode refid="35" relation="public-inheritance">
-        </childnode>
-        <childnode refid="12" relation="public-inheritance">
-        </childnode>
-        <childnode refid="17" relation="public-inheritance">
-        </childnode>
-        <childnode refid="36" relation="public-inheritance">
-        </childnode>
-        <childnode refid="37" relation="public-inheritance">
-        </childnode>
-        <childnode refid="38" relation="public-inheritance">
-        </childnode>
-        <childnode refid="39" relation="public-inheritance">
-        </childnode>
-        <childnode refid="40" relation="public-inheritance">
-        </childnode>
-        <childnode refid="41" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>AttLinking</label>
-      </node>
-      <node id="27">
-        <label>AttLyricStyle</label>
-      </node>
-      <node id="8">
-        <label>AttFacsimile</label>
-      </node>
-      <node id="59">
-        <label>AttOctave</label>
-      </node>
-      <node id="61">
-        <label>vrv::PositionInterface</label>
-        <link refid="classvrv_1_1_position_interface"/>
-        <childnode refid="7" relation="public-inheritance">
-        </childnode>
-        <childnode refid="62" relation="public-inheritance">
-        </childnode>
-        <childnode refid="63" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="41">
-        <label>AttTransposition</label>
-      </node>
-      <node id="26">
-        <label>AttDurationDefault</label>
-      </node>
-      <node id="45">
-        <label>AttGraced</label>
-      </node>
-      <node id="66">
-        <label>AttCue</label>
-      </node>
-      <node id="42">
-        <label>vrv::Alignment</label>
-        <link refid="classvrv_1_1_alignment"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="70">
-        <label>AttNoteHeads</label>
-      </node>
-      <node id="31">
-        <label>AttPianoPedals</label>
-      </node>
-      <node id="38">
-        <label>AttStaffDefLog</label>
-      </node>
-      <node id="47">
-        <label>AttStemsCmn</label>
-      </node>
-      <node id="56">
-        <label>AttStaffIdent</label>
-      </node>
-      <node id="4">
-        <label>vrv::Object</label>
-        <link refid="classvrv_1_1_object"/>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="67">
-        <label>AttExtSym</label>
-      </node>
-      <node id="68">
-        <label>AttMidiVelocity</label>
-      </node>
-      <node id="44">
-        <label>vrv::Stem</label>
-        <link refid="classvrv_1_1_stem"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="45" relation="public-inheritance">
-        </childnode>
-        <childnode refid="46" relation="public-inheritance">
-        </childnode>
-        <childnode refid="47" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="64">
-        <label>AttColor</label>
-      </node>
-      <node id="28">
-        <label>AttMeasureNumbers</label>
-      </node>
-      <node id="53">
-        <label>AttDurationQuality</label>
-      </node>
-      <node id="37">
-        <label>AttScalable</label>
-      </node>
-      <node id="16">
-        <label>vrv::ObjectListInterface</label>
-        <link refid="classvrv_1_1_object_list_interface"/>
-      </node>
-      <node id="1">
-        <label>vrv::FeatureExtractor</label>
-        <link refid="classvrv_1_1_feature_extractor"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>m_previousNote</edgelabel>
-        </childnode>
-      </node>
-      <node id="51">
-        <label>AttDurationGestural</label>
-      </node>
-      <node id="40">
-        <label>AttTimeBase</label>
-      </node>
-      <node id="12">
-        <label>AttLabelled</label>
-      </node>
-    </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" line="22" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" bodystart="22" bodyend="59"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" line="22" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/featureextractor.h" bodystart="22" bodyend="67"/>
     <listofallmembers>
       <member refid="classvrv_1_1_feature_extractor_1a4423a8c50b18855e5d903c5a357d90f0" prot="public" virt="non-virtual"><scope>vrv::FeatureExtractor</scope><name>Extract</name></member>
       <member refid="classvrv_1_1_feature_extractor_1ada4a61133b2ae93777a405b86cdb1958" prot="public" virt="non-virtual"><scope>vrv::FeatureExtractor</scope><name>FeatureExtractor</name></member>
-      <member refid="classvrv_1_1_feature_extractor_1a0426a6f417f09498afcbe5d1dbeae56d" prot="public" virt="non-virtual"><scope>vrv::FeatureExtractor</scope><name>m_intervals</name></member>
+      <member refid="classvrv_1_1_feature_extractor_1a45abbea6747994583ed3dce49d14d68b" prot="public" virt="non-virtual"><scope>vrv::FeatureExtractor</scope><name>m_intervalsChromatic</name></member>
+      <member refid="classvrv_1_1_feature_extractor_1a18563d68c83f16d2d2bed2a73dbeda54" prot="public" virt="non-virtual"><scope>vrv::FeatureExtractor</scope><name>m_intervalsDiatonic</name></member>
       <member refid="classvrv_1_1_feature_extractor_1a7de149b115c781799fea4d41d7961209" prot="public" virt="non-virtual"><scope>vrv::FeatureExtractor</scope><name>m_intervalsIds</name></member>
-      <member refid="classvrv_1_1_feature_extractor_1a74629bf48c1ba415e12e364c825d56a4" prot="public" virt="non-virtual"><scope>vrv::FeatureExtractor</scope><name>m_pitches</name></member>
+      <member refid="classvrv_1_1_feature_extractor_1a4069b9e470028273fd00d3e55581ea06" prot="public" virt="non-virtual"><scope>vrv::FeatureExtractor</scope><name>m_pitchesChromatic</name></member>
+      <member refid="classvrv_1_1_feature_extractor_1aa4c644b5a1a87be4722d4ea1eaf73224" prot="public" virt="non-virtual"><scope>vrv::FeatureExtractor</scope><name>m_pitchesDiatonic</name></member>
       <member refid="classvrv_1_1_feature_extractor_1a4f4aa680b7d22087480f5c77331be83f" prot="public" virt="non-virtual"><scope>vrv::FeatureExtractor</scope><name>m_pitchesIds</name></member>
-      <member refid="classvrv_1_1_feature_extractor_1a144ead9529606e6845d9d4184e36ceb5" prot="public" virt="non-virtual"><scope>vrv::FeatureExtractor</scope><name>m_previousNote</name></member>
+      <member refid="classvrv_1_1_feature_extractor_1a1306554a428a7a40acac7a9195c1fe6e" prot="public" virt="non-virtual"><scope>vrv::FeatureExtractor</scope><name>m_previousNotes</name></member>
       <member refid="classvrv_1_1_feature_extractor_1a8fbfec460575bd614ca250996afc1759" prot="public" virt="virtual"><scope>vrv::FeatureExtractor</scope><name>Reset</name></member>
       <member refid="classvrv_1_1_feature_extractor_1a088178e8f5cfd6abe00a3070d2f8bbcf" prot="public" virt="non-virtual"><scope>vrv::FeatureExtractor</scope><name>ToJson</name></member>
       <member refid="classvrv_1_1_feature_extractor_1afa0e76df7ff107a754d4c8ed25ac5aab" prot="public" virt="virtual"><scope>vrv::FeatureExtractor</scope><name>~FeatureExtractor</name></member>

@@ -6,6 +6,7 @@
     <includedby refid="accid_8h" local="yes">accid.h</includedby>
     <includedby refid="custos_8h" local="yes">custos.h</includedby>
     <includedby refid="dot_8h" local="yes">dot.h</includedby>
+    <includedby refid="keyaccid_8h" local="yes">keyaccid.h</includedby>
     <includedby refid="mrest_8h" local="yes">mrest.h</includedby>
     <includedby refid="multirest_8h" local="yes">multirest.h</includedby>
     <includedby refid="nc_8h" local="yes">nc.h</includedby>
@@ -39,6 +40,8 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
       </node>
       <node id="2">
         <label>accid.h</label>
@@ -52,7 +55,7 @@
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="12">
+      <node id="13">
         <label>rest.h</label>
         <link refid="rest_8h_source"/>
       </node>
@@ -82,17 +85,21 @@
         <label>iohumdrum.h</label>
         <link refid="iohumdrum_8h_source"/>
       </node>
-      <node id="11">
+      <node id="12">
         <label>nc.h</label>
         <link refid="nc_8h_source"/>
       </node>
-      <node id="9">
+      <node id="10">
         <label>mrest.h</label>
         <link refid="mrest_8h_source"/>
       </node>
-      <node id="10">
+      <node id="11">
         <label>multirest.h</label>
         <link refid="multirest_8h_source"/>
+      </node>
+      <node id="9">
+        <label>keyaccid.h</label>
+        <link refid="keyaccid_8h_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classvrv_1_1_position_interface" prot="public">vrv::PositionInterface</innerclass>
@@ -112,7 +119,7 @@
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atts_shared.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacevrv" kindref="compound">vrv</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vrv<sp/>{</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">FunctorParams;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Layer;</highlight></codeline>
@@ -127,20 +134,20 @@
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_position_interface" kindref="compound">PositionInterface</ref>();</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_position_interface" kindref="compound">PositionInterface</ref>();</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_position_interface_1a424403dca3376b2892efd8989b3ce3c5" kindref="member">Reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="38" refid="classvrv_1_1_position_interface_1aca64be02a7dd6b30f996cf4151858a58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacevrv_1ac7221611975ee29efd00f36d5f3241ed" kindref="member">InterfaceId</ref><sp/><ref refid="classvrv_1_1_position_interface_1aca64be02a7dd6b30f996cf4151858a58" kindref="member">IsInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>INTERFACE_POSITION;<sp/>}</highlight></codeline>
+<codeline lineno="38" refid="classvrv_1_1_position_interface_1aca64be02a7dd6b30f996cf4151858a58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>InterfaceId<sp/><ref refid="classvrv_1_1_position_interface_1aca64be02a7dd6b30f996cf4151858a58" kindref="member">IsInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>INTERFACE_POSITION;<sp/>}</highlight></codeline>
 <codeline lineno="40"></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetDrawingLoc(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drawingLoc)<sp/>{<sp/>m_drawingLoc<sp/>=<sp/>drawingLoc;<sp/>}</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingLoc()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_drawingLoc;<sp/>}</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CalcDrawingLoc(Layer<sp/>*layer,<sp/>LayerElement<sp/>*element);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CalcDrawingLoc(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Layer<sp/>*layer,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LayerElement<sp/>*element);</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_position_interface_1a932d3221b8cd285116ffde54bc7a17e8" kindref="member">HasIdenticalPositionInterface</ref>(PositionInterface<sp/>*otherPitchInterface);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_position_interface_1a3312dbe1415b5eafb2762ffe2e612d54" kindref="member">HasIdenticalPositionInterface</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PositionInterface<sp/>*otherPositionInterface)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-----------------//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pseudo<sp/>functors<sp/>//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-----------------//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_position_interface_1a1aab8fb785b348dcf88714338863bc78" kindref="member">InterfaceResetDrawing</ref>(FunctorParams<sp/>*functorParams,<sp/>Object<sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_position_interface_1aa9e4cb8b0ec7e2e411efec7f1e634205" kindref="member">InterfaceResetData</ref>(FunctorParams<sp/>*functorParams,<sp/>Object<sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_position_interface_1ac74c74fcf22d5ae9e9286623353da322" kindref="member">InterfaceResetHorizontalAlignment</ref>(FunctorParams<sp/>*functorParams,<sp/>Object<sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>

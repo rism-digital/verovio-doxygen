@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('classvrv_1_1_generate_m_i_d_i_params.h
 </div><!--header-->
 <div class="contents">
 
-<p>member 0: MidiFile*: the MidiFile we are writing to member 1: int: the midi track number member 2: int: the midi channel number member 3: double: the score time from the start of the music to the start of the current measure member 4: int: the semi tone transposition for the current track member 5: double with the current tempo member 6: the last (non grace) note that was performed member 7: expanded notes due to ornaments and tremolandi member 8: deferred notes which start slightly later member 9: grace note sequence member 10: flag indicating whether the last grace note/chord was accented member 11: the functor member 12: Tablature held notes indexed by (course - 1)  
+<p>member 0: MidiFile*: the MidiFile we are writing to member 1: int: the midi track number member 2: int: the midi channel number member 3: double: the score time from the start of the music to the start of the current measure member 4: int: the semi tone transposition for the current track member 5: double with the current tempo member 6: the last (non grace) note that was performed member 7: expanded notes due to ornaments and tremolandi member 8: deferred notes which start slightly later member 9: grace note sequence member 10: flag indicating whether the last grace note/chord was accented member 11: flag indicating whether cue notes should be included member 12: the functor member 13: Tablature held notes indexed by (course - 1)  
  <a href="classvrv_1_1_generate_m_i_d_i_params.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="functorparams_8h_source.html">functorparams.h</a>&gt;</code></p>
@@ -117,12 +117,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a3c96b7a8c5c1456f493386eacd69f4eb"><td class="memItemLeft" align="right" valign="top"><a id="a3c96b7a8c5c1456f493386eacd69f4eb"></a>
 smf::MidiFile *&#160;</td><td class="memItemRight" valign="bottom"><b>m_midiFile</b></td></tr>
 <tr class="separator:a3c96b7a8c5c1456f493386eacd69f4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1a49482f921ef130ef998dcd6df1a86"><td class="memItemLeft" align="right" valign="top"><a id="ae1a49482f921ef130ef998dcd6df1a86"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_midiChannel</b></td></tr>
-<tr class="separator:ae1a49482f921ef130ef998dcd6df1a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a437d6363e81b3565106f77d5db868637"><td class="memItemLeft" align="right" valign="top"><a id="a437d6363e81b3565106f77d5db868637"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_midiTrack</b></td></tr>
 <tr class="separator:a437d6363e81b3565106f77d5db868637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a49482f921ef130ef998dcd6df1a86"><td class="memItemLeft" align="right" valign="top"><a id="ae1a49482f921ef130ef998dcd6df1a86"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_midiChannel</b></td></tr>
+<tr class="separator:ae1a49482f921ef130ef998dcd6df1a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0078b3ff3c9bc63cffba4a01a8bb315"><td class="memItemLeft" align="right" valign="top"><a id="ab0078b3ff3c9bc63cffba4a01a8bb315"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>m_totalTime</b></td></tr>
 <tr class="separator:ab0078b3ff3c9bc63cffba4a01a8bb315"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,6 +147,9 @@ MIDIChordSequence&#160;</td><td class="memItemRight" valign="bottom"><b>m_graceN
 <tr class="memitem:a8cd25715766f83579f964dde56d219d8"><td class="memItemLeft" align="right" valign="top"><a id="a8cd25715766f83579f964dde56d219d8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_accentedGraceNote</b></td></tr>
 <tr class="separator:a8cd25715766f83579f964dde56d219d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13283eff7018d218b4d4c802b8022c6"><td class="memItemLeft" align="right" valign="top"><a id="af13283eff7018d218b4d4c802b8022c6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_cueExclusion</b></td></tr>
+<tr class="separator:af13283eff7018d218b4d4c802b8022c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a099869302dfba354a6c7dc86214977c1"><td class="memItemLeft" align="right" valign="top"><a id="a099869302dfba354a6c7dc86214977c1"></a>
 <a class="el" href="classvrv_1_1_functor.html">Functor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_functor</b></td></tr>
 <tr class="separator:a099869302dfba354a6c7dc86214977c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,7 +158,7 @@ std::vector&lt; <a class="el" href="structvrv_1_1_m_i_d_i_held_note.html">MIDIHe
 <tr class="separator:ac60df3ad3c1eb7338e9b7d9395373433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>member 0: MidiFile*: the MidiFile we are writing to member 1: int: the midi track number member 2: int: the midi channel number member 3: double: the score time from the start of the music to the start of the current measure member 4: int: the semi tone transposition for the current track member 5: double with the current tempo member 6: the last (non grace) note that was performed member 7: expanded notes due to ornaments and tremolandi member 8: deferred notes which start slightly later member 9: grace note sequence member 10: flag indicating whether the last grace note/chord was accented member 11: the functor member 12: Tablature held notes indexed by (course - 1) </p>
+<div class="textblock"><p>member 0: MidiFile*: the MidiFile we are writing to member 1: int: the midi track number member 2: int: the midi channel number member 3: double: the score time from the start of the music to the start of the current measure member 4: int: the semi tone transposition for the current track member 5: double with the current tempo member 6: the last (non grace) note that was performed member 7: expanded notes due to ornaments and tremolandi member 8: deferred notes which start slightly later member 9: grace note sequence member 10: flag indicating whether the last grace note/chord was accented member 11: flag indicating whether cue notes should be included member 12: the functor member 13: Tablature held notes indexed by (course - 1) </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="functorparams_8h_source.html">functorparams.h</a></li>
 </ul>
@@ -164,8 +167,8 @@ std::vector&lt; <a class="el" href="structvrv_1_1_m_i_d_i_held_note.html">MIDIHe
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacevrv.html">vrv</a></li><li class="navelem"><a class="el" href="classvrv_1_1_generate_m_i_d_i_params.html">GenerateMIDIParams</a></li>
-    <li class="footer">Generated on Tue Feb 22 2022 11:32:36 for Verovio by
+    <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_generate_m_i_d_i_params.html">GenerateMIDIParams</a></li>
+    <li class="footer">Generated on Wed May 25 2022 14:36:09 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -2,13 +2,14 @@ var classvrv_1_1_custos =
 [
     [ "Custos", "classvrv_1_1_custos.html#a192760d5684ff93273c023d8f768ca06", null ],
     [ "~Custos", "classvrv_1_1_custos.html#a74190b9123f77367b106921680d71a6b", null ],
-    [ "Clone", "classvrv_1_1_custos.html#a3d64c576ca5154a564de6249f6352a9c", null ],
-    [ "GetClassId", "classvrv_1_1_custos.html#a09aa8de289e4ad804464cee76956b7a2", null ],
-    [ "GetClassName", "classvrv_1_1_custos.html#ae1d9ed3b8898b4ccef02bedf933c052d", null ],
-    [ "GetPitchInterface", "classvrv_1_1_custos.html#a078de34fc81fc732137fb4ffd13986e1", null ],
-    [ "HasToBeAligned", "classvrv_1_1_custos.html#a4414edc48b8ec7dbc04f78560b368be5", null ],
-    [ "IsSupportedChild", "classvrv_1_1_custos.html#aef459ff92dd4fc94100ed4a9ac33c3ee", null ],
-    [ "Reset", "classvrv_1_1_custos.html#a32c4ea04b40a718aabdd6199f8ed4423", null ],
-    [ "ResetDrawing", "classvrv_1_1_custos.html#a7f671bc4914ec75b5642e64b997ba1b3", null ],
-    [ "ResetHorizontalAlignment", "classvrv_1_1_custos.html#a7b61ca3e20e31a1a89ce896f46e31c79", null ]
+    [ "Clone", "classvrv_1_1_custos.html#ad1b464b129fae013c6d18bea00917610", null ],
+    [ "GetClassName", "classvrv_1_1_custos.html#aad3fba7ef3383aae40325c7ffad630f8", null ],
+    [ "GetCustosGlyph", "classvrv_1_1_custos.html#abf81681839cb1a2ca10130a725e10040", null ],
+    [ "GetPitchInterface", "classvrv_1_1_custos.html#a90dfd0fb598e68f2f39a7e96f618440e", null ],
+    [ "GetPitchInterface", "classvrv_1_1_custos.html#a7c0e3a01af3e2a957993128301cc8f84", null ],
+    [ "HasToBeAligned", "classvrv_1_1_custos.html#a6bfa3e27b29e13b40e346adb3dcbaacf", null ],
+    [ "IsSupportedChild", "classvrv_1_1_custos.html#a4436311935cefa3da14017a6e03166b7", null ],
+    [ "Reset", "classvrv_1_1_custos.html#ac349d697333ee8966b9a8dc845b772b5", null ],
+    [ "ResetData", "classvrv_1_1_custos.html#a760353af4f01a888ac2b42c7292cd634", null ],
+    [ "ResetHorizontalAlignment", "classvrv_1_1_custos.html#a79ba4ff35cc1c91441e33f30545628f2", null ]
 ];

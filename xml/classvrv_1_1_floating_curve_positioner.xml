@@ -5,19 +5,15 @@
     <basecompoundref refid="classvrv_1_1_floating_positioner" prot="public" virt="non-virtual">vrv::FloatingPositioner</basecompoundref>
     <includes refid="floatingobject_8h" local="no">floatingobject.h</includes>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a27ca3bbbefe52d4b5951e3509e9b1483" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a30ccff64031b6f8e36666e5ff1890223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::FloatingCurvePositioner::UpdateCurveParams</definition>
-        <argsstring>(const Point points[4], float angle, int thickness, curvature_CURVEDIR curveDir)</argsstring>
+        <argsstring>(const Point points[4], int thickness, curvature_CURVEDIR curveDir)</argsstring>
         <name>UpdateCurveParams</name>
         <param>
           <type>const <ref refid="classvrv_1_1_point" kindref="compound">Point</ref></type>
           <declname>points</declname>
           <array>[4]</array>
-        </param>
-        <param>
-          <type>float</type>
-          <declname>angle</declname>
         </param>
         <param>
           <type>int</type>
@@ -35,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="288" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="293" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a22ee3747f66c1d04e614ecd3504cd98a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -52,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="289" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="294" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -72,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="296" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="301" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a8d4476965d072b7ddc771764905428ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -89,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="297" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="302" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1acabb8e7619f73abd41833951e65f0f59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -106,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="298" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="303" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a66f7a86bcff0367ff5adf5567badb78d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -123,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="299" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="304" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -158,7 +154,42 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="312" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="317" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1ad0710dd01fb0ae908e326db0641aba0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::FloatingCurvePositioner::CalcDirectionalAdjustment</definition>
+        <argsstring>(BoundingBox *boundingBox, bool isCurveAbove, bool &amp;discard, int margin=0, bool horizontalOverlap=true)</argsstring>
+        <name>CalcDirectionalAdjustment</name>
+        <param>
+          <type><ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref> *</type>
+          <declname>boundingBox</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isCurveAbove</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>discard</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>margin</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>horizontalOverlap</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="318" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a877dedf0b775fafcddaca949ee92d8af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; int, int &gt;</type>
@@ -189,7 +220,42 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="314" column="15"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="321" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a5fa138e62e3536c1016354b2ec83e151" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; int, int &gt;</type>
+        <definition>std::pair&lt;int, int&gt; vrv::FloatingCurvePositioner::CalcDirectionalLeftRightAdjustment</definition>
+        <argsstring>(BoundingBox *boundingBox, bool isCurveAbove, bool &amp;discard, int margin=0, bool horizontalOverlap=true)</argsstring>
+        <name>CalcDirectionalLeftRightAdjustment</name>
+        <param>
+          <type><ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref> *</type>
+          <declname>boundingBox</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isCurveAbove</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>discard</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>margin</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>horizontalOverlap</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="323" column="15"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -210,20 +276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="322" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1ad7b1b6fb4395c622fb37d042f3e1bc91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>float</type>
-        <definition>float vrv::FloatingCurvePositioner::GetAngle</definition>
-        <argsstring>()</argsstring>
-        <name>GetAngle</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="323" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="323" bodyend="323"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="331" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a8db594a5e3b74fb1f5931263c1a8241d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -236,7 +289,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="324" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="324" bodyend="324"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="332" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="332" bodyend="332"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a5a08bc102f523022b0095cc89a59dcba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>curvature_CURVEDIR</type>
@@ -249,7 +302,53 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="325" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="325" bodyend="325"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="333" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="333" bodyend="333"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Getter and setter for cached x1 and x2</header>
+      <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a2d755ae11d8cdcefbef9162839fb8e90" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::FloatingCurvePositioner::HasCachedX12</definition>
+        <argsstring>() const</argsstring>
+        <name>HasCachedX12</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="340" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1af0dc224ad0601b5ec5e646baa7e04b95" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; int, int &gt;</type>
+        <definition>std::pair&lt;int, int&gt; vrv::FloatingCurvePositioner::GetCachedX12</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCachedX12</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="341" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="341" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a1d64753fa1d7681ab9b164d6fb8549eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::FloatingCurvePositioner::SetCachedX12</definition>
+        <argsstring>(const std::pair&lt; int, int &gt; &amp;cachedX12)</argsstring>
+        <name>SetCachedX12</name>
+        <param>
+          <type>const std::pair&lt; int, int &gt; &amp;</type>
+          <declname>cachedX12</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="342" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="342" bodyend="342"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -269,7 +368,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="348" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="348" bodyend="348"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="365" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="365" bodyend="365"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a64e936c29627c4cf8be7930e88f5b441" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
@@ -282,7 +381,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="349" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="349" bodyend="349"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="366" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="366" bodyend="366"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a9bf76981377bc2618013786108c229fe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -295,7 +394,40 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="350" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="350" bodyend="350"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="367" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="367" bodyend="367"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Getter, setter for the requested staff space</header>
+      <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a82e15efa70454fb643ad5727f2014243" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::FloatingCurvePositioner::SetRequestedStaffSpace</definition>
+        <argsstring>(int space)</argsstring>
+        <name>SetRequestedStaffSpace</name>
+        <param>
+          <type>int</type>
+          <declname>space</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="374" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="374" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1aa58e5cba5f93a511a0cceef8fe4094a7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::FloatingCurvePositioner::GetRequestedStaffSpace</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRequestedStaffSpace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="375" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="375" bodyend="375"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -313,20 +445,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="363" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="363" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_floating_curve_positioner_1adddc3c5c58e2f3f0c7e819509acc3a74" prot="private" static="no" mutable="no">
-        <type>float</type>
-        <definition>float vrv::FloatingCurvePositioner::m_angle</definition>
-        <argsstring></argsstring>
-        <name>m_angle</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="364" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="364" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="393" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="393" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_floating_curve_positioner_1a7fd7c4d50c20ea735da50fb8cfa2c537" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -339,7 +458,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="365" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="365" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="394" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="394" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_floating_curve_positioner_1ac65fc1077a9fcadb827862045948aa2a" prot="private" static="no" mutable="no">
         <type>curvature_CURVEDIR</type>
@@ -352,7 +471,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="366" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="366" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="395" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="395" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_floating_curve_positioner_1ac48e64e8464c456478585361755f2110" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
@@ -365,7 +484,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="367" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="367" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="396" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="396" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -380,7 +499,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="370" column="33" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="370" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="399" column="33" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="399" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_floating_curve_positioner_1abd661bee76cc30e190ea15238f90aa16" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -394,7 +513,35 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="373" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="373" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="402" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_floating_curve_positioner_1a7c5239c078a190edb1a5a7b93efb78df" prot="private" static="no" mutable="no">
+        <type>std::pair&lt; int, int &gt;</type>
+        <definition>std::pair&lt;int, int&gt; vrv::FloatingCurvePositioner::m_cachedX12</definition>
+        <argsstring></argsstring>
+        <name>m_cachedX12</name>
+        <briefdescription>
+<para>The cached values for x1 and x2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="405" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_floating_curve_positioner_1a18970d9e72beff35adf0d459a73634ec" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vrv::FloatingCurvePositioner::m_requestedStaffSpace</definition>
+        <argsstring></argsstring>
+        <name>m_requestedStaffSpace</name>
+        <briefdescription>
+<para>Some curves (S-shaped slurs) can request staff space to prevent collisions from two sides. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="410" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="410" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -421,7 +568,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="271" column="5"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="276" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a182a06641e3574eb9c7b4b43baf5c4df" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -434,10 +581,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="272" column="13"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="277" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a87d564dc3efc0f9525ae4e6dcbad1a76" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="namespacevrv_1add6b61c8ada3f79dc1f540fbead73ca5" kindref="member">ClassId</ref></type>
+        <type>ClassId</type>
         <definition>ClassId vrv::FloatingCurvePositioner::GetClassId</definition>
         <argsstring>() const override</argsstring>
         <name>GetClassId</name>
@@ -448,7 +595,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="273" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="273" bodyend="273"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="278" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="278" bodyend="278"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a66473a5fe9ced560e279ceb749ba3bd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -462,7 +609,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="275" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="280" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a91f91d2639e931d321fae0dc47dd2f07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -476,7 +623,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="281" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="286" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a4e46a7462444bb57b0a67d7c4f06ff1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -495,7 +642,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="305" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="310" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1acf6229982048e963f98e56b66074d33f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -509,7 +656,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="331" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="348" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a77060e0dbc69dc9a839497fba690acab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -528,7 +675,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="337" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="337" bodyend="337"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="354" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="354" bodyend="354"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a7b1a4164c095fec32cb5fe488ce5a3fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const ArrayOfCurveSpannedElements *</type>
@@ -536,13 +683,31 @@
         <argsstring>()</argsstring>
         <name>GetSpannedElements</name>
         <briefdescription>
-<para>Return a cont pointer to the spanned elements. </para>
+<para>Return a const pointer to the spanned elements. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="342" column="39" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="342" bodyend="342"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="359" column="39" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="359" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_floating_curve_positioner_1a773ce154a0e2c876ad6f2f18f2b80201" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; int, int &gt;</type>
+        <definition>std::pair&lt;int, int&gt; vrv::FloatingCurvePositioner::CalcRequestedStaffSpace</definition>
+        <argsstring>(StaffAlignment *alignment)</argsstring>
+        <name>CalcRequestedStaffSpace</name>
+        <param>
+          <type><ref refid="classvrv_1_1_staff_alignment" kindref="compound">StaffAlignment</ref> *</type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the requested staff space above and below. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="381" column="15"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -610,7 +775,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="268" column="56" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="268" bodyend="374"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="273" column="56" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="273" bodyend="411"/>
     <listofallmembers>
       <member refid="classvrv_1_1_floating_curve_positioner_1a77060e0dbc69dc9a839497fba690acab" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>AddSpannedElement</name></member>
       <member refid="classvrv_1_1_bounding_box_1ae9a22cf5d306abb22ff5f557e81bd9af" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>ApproximateBezierBoundingBox</name></member>
@@ -621,24 +786,28 @@
       <member refid="classvrv_1_1_bounding_box_1a91eb3e2ee9b00bc764283fe1710e199b" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>CalcBezierAtPosition</name></member>
       <member refid="classvrv_1_1_bounding_box_1af1fdd065b198aafe35dcc7e5a35477ee" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>CalcBezierParamAtPosition</name></member>
       <member refid="classvrv_1_1_bounding_box_1ac09f7239af89a7e19ca235761589e150" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>CalcDeCasteljau</name></member>
+      <member refid="classvrv_1_1_floating_curve_positioner_1ad0710dd01fb0ae908e326db0641aba0c" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>CalcDirectionalAdjustment</name></member>
+      <member refid="classvrv_1_1_floating_curve_positioner_1a5fa138e62e3536c1016354b2ec83e151" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>CalcDirectionalLeftRightAdjustment</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a8008673c300accccc6dd7f10a2f12d45" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>CalcDistance</name></member>
       <member refid="classvrv_1_1_floating_positioner_1a610bffb3224668e17473bd16ba7d6b2a" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>CalcDrawingYRel</name></member>
       <member refid="classvrv_1_1_floating_curve_positioner_1a877dedf0b775fafcddaca949ee92d8af" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>CalcLeftRightAdjustment</name></member>
       <member refid="classvrv_1_1_bounding_box_1af5401bb6040fe859bf6b7dc09c3c35b8" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>CalcLinearInterpolation</name></member>
       <member refid="classvrv_1_1_floating_curve_positioner_1a4e46a7462444bb57b0a67d7c4f06ff1d" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>CalcMinMaxY</name></member>
       <member refid="classvrv_1_1_bounding_box_1acf2951ebea74c27b024916a4c96480a5" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>CalcPointAtBezier</name></member>
       <member refid="classvrv_1_1_bounding_box_1a80465f84c7190f8cb0a9765693376be2" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>CalcPositionAfterRotation</name></member>
+      <member refid="classvrv_1_1_floating_curve_positioner_1a773ce154a0e2c876ad6f2f18f2b80201" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>CalcRequestedStaffSpace</name></member>
       <member refid="classvrv_1_1_bounding_box_1a98f3d30610a0063965fcac7ec265ef27" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>CalcSlope</name></member>
-      <member refid="classvrv_1_1_bounding_box_1ae087d56d7ff270c908e3a723be01f6e7" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>CalcThickBezier</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a8fdd811aefcb373533b9cc2795aa04dd" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>CalcThickBezier</name></member>
       <member refid="classvrv_1_1_floating_curve_positioner_1acf6229982048e963f98e56b66074d33f" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>ClearSpannedElements</name></member>
       <member refid="classvrv_1_1_bounding_box_1a52ac837dc797c5f292c98ddb3f43a098" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>Encloses</name></member>
       <member refid="classvrv_1_1_floating_curve_positioner_1a3cbd2dd57e3eb9a687f91c9ba6185bfb" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>FloatingCurvePositioner</name></member>
       <member refid="classvrv_1_1_floating_positioner_1a2e725efff149c8687d7f35595f23da16" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>FloatingPositioner</name></member>
       <member refid="classvrv_1_1_floating_positioner_1acac4eb8ec7d5e7a87eb90aafe9f2f9ad" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetAlignment</name></member>
-      <member refid="classvrv_1_1_floating_curve_positioner_1ad7b1b6fb4395c622fb37d042f3e1bc91" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetAngle</name></member>
-      <member refid="classvrv_1_1_bounding_box_1a0771c6326e6a7123268f433bfdc903f6" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetBezierThicknessCoefficient</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a3dbe5a481e20ab4d0d9fdd47708d1c2f" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetBezierThicknessCoefficient</name></member>
       <member refid="classvrv_1_1_bounding_box_1a91a7bb36d11f909e84caab997fb49c0c" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetBottomBy</name></member>
       <member refid="classvrv_1_1_bounding_box_1aa3fc5bcc7d25b6e975fad50b11edd781" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetBoundingBoxGlyph</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2b025880f04cefa1cb37b7e6f8bfb8f1" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetBoundingBoxGlyphFontSize</name></member>
+      <member refid="classvrv_1_1_floating_curve_positioner_1af0dc224ad0601b5ec5e646baa7e04b95" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetCachedX12</name></member>
       <member refid="classvrv_1_1_floating_curve_positioner_1a87d564dc3efc0f9525ae4e6dcbad1a76" prot="public" virt="virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetClassId</name></member>
       <member refid="classvrv_1_1_bounding_box_1a74fec7caf937bc6892cd0de8c1f29355" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetContentBottom</name></member>
       <member refid="classvrv_1_1_bounding_box_1a9a33f5750af51cfb292ff2a553744e2d" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetContentLeft</name></member>
@@ -660,6 +829,7 @@
       <member refid="classvrv_1_1_floating_positioner_1a8d7e6ef43868940eae8b4f2d374f85ff" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetObjectX</name></member>
       <member refid="classvrv_1_1_floating_positioner_1a511ffadd2852a892fbdda97233ea15f9" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetObjectY</name></member>
       <member refid="classvrv_1_1_floating_curve_positioner_1a47a0eae43c8c6149f17c343b0b1ab13a" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetPoints</name></member>
+      <member refid="classvrv_1_1_floating_curve_positioner_1aa58e5cba5f93a511a0cceef8fe4094a7" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetRequestedStaffSpace</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2fe9d4e0cef41c270fe6683e5fbd8223" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetRightBy</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7e55bc05f8dc9b3ff7768fe48c791d83" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetSelfBottom</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2fb7e4b83e390c3cd436e3a73ddfa269" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetSelfLeft</name></member>
@@ -678,6 +848,7 @@
       <member refid="classvrv_1_1_bounding_box_1a3a9666c33d5a4a7d01f4b159c128d6c5" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetX2By</name></member>
       <member refid="classvrv_1_1_bounding_box_1ad906e8632b28b1be81fa374ad2b5292e" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetY1By</name></member>
       <member refid="classvrv_1_1_bounding_box_1a242e2a41a61fb347b526a08fef162cdf" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>GetY2By</name></member>
+      <member refid="classvrv_1_1_floating_curve_positioner_1a2d755ae11d8cdcefbef9162839fb8e90" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>HasCachedX12</name></member>
       <member refid="classvrv_1_1_bounding_box_1a6cac2a9e7c863969d8e856807936574f" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>HasContentBB</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3bde41712d93b9badf88b35ac1974503" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>HasContentHorizontalBB</name></member>
       <member refid="classvrv_1_1_bounding_box_1abe8bb676a5c670242888d9034daa5a22" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>HasContentVerticalBB</name></member>
@@ -695,10 +866,10 @@
       <member refid="classvrv_1_1_bounding_box_1aaeb23e9d3064f863ef3857efef570a8f" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>Is</name></member>
       <member refid="classvrv_1_1_floating_curve_positioner_1a9bf76981377bc2618013786108c229fe" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>IsCrossStaff</name></member>
       <member refid="classvrv_1_1_floating_positioner_1a1bca7057eeaed8bbb766a6ee4d10f84e" prot="protected" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>m_alignment</name></member>
-      <member refid="classvrv_1_1_floating_curve_positioner_1adddc3c5c58e2f3f0c7e819509acc3a74" prot="private" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>m_angle</name></member>
       <member refid="classvrv_1_1_bounding_box_1a4961ebaf8f99abe31ee894345cd84a16" prot="protected" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>m_cachedDrawingX</name></member>
       <member refid="classvrv_1_1_bounding_box_1a548baf7b854ef877313302670da5d0b8" prot="protected" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>m_cachedDrawingY</name></member>
       <member refid="classvrv_1_1_floating_curve_positioner_1abd661bee76cc30e190ea15238f90aa16" prot="private" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>m_cachedMinMaxY</name></member>
+      <member refid="classvrv_1_1_floating_curve_positioner_1a7c5239c078a190edb1a5a7b93efb78df" prot="private" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>m_cachedX12</name></member>
       <member refid="classvrv_1_1_floating_curve_positioner_1ac48e64e8464c456478585361755f2110" prot="private" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>m_crossStaff</name></member>
       <member refid="classvrv_1_1_floating_curve_positioner_1ac65fc1077a9fcadb827862045948aa2a" prot="private" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>m_dir</name></member>
       <member refid="classvrv_1_1_floating_positioner_1a38eda844f3a1146ed42aafe46b7cf86b" prot="protected" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>m_drawingXRel</name></member>
@@ -706,6 +877,7 @@
       <member refid="classvrv_1_1_floating_positioner_1a37c2446744eb4ae4149628468b066c5e" prot="protected" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>m_object</name></member>
       <member refid="classvrv_1_1_floating_positioner_1a230809600834d92bdbe3258fc931f172" prot="protected" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>m_place</name></member>
       <member refid="classvrv_1_1_floating_curve_positioner_1a057de4900390bad492380d8f47490e16" prot="private" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>m_points</name></member>
+      <member refid="classvrv_1_1_floating_curve_positioner_1a18970d9e72beff35adf0d459a73634ec" prot="private" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>m_requestedStaffSpace</name></member>
       <member refid="classvrv_1_1_floating_curve_positioner_1afd6a7110c3ea0e1a48065fa80498fb7c" prot="private" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>m_spannedElements</name></member>
       <member refid="classvrv_1_1_floating_positioner_1a9f5ccc86f7d5afd5bee395b4d31ccf1e" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>m_spanningType</name></member>
       <member refid="classvrv_1_1_floating_curve_positioner_1a7fd7c4d50c20ea735da50fb8cfa2c537" prot="private" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>m_thickness</name></member>
@@ -723,17 +895,19 @@
       <member refid="classvrv_1_1_floating_curve_positioner_1a91f91d2639e931d321fae0dc47dd2f07" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>ResetCurveParams</name></member>
       <member refid="classvrv_1_1_floating_curve_positioner_1a66473a5fe9ced560e279ceb749ba3bd2" prot="public" virt="virtual"><scope>vrv::FloatingCurvePositioner</scope><name>ResetPositioner</name></member>
       <member refid="classvrv_1_1_bounding_box_1abc4feb5675ff672b2e3a94b4a65403b5" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>SetBoundingBoxGlyph</name></member>
+      <member refid="classvrv_1_1_floating_curve_positioner_1a1d64753fa1d7681ab9b164d6fb8549eb" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>SetCachedX12</name></member>
       <member refid="classvrv_1_1_floating_curve_positioner_1a3dad2cda31b4868744e566b3f1adf7b3" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>SetCrossStaff</name></member>
       <member refid="classvrv_1_1_floating_positioner_1a52db3a09535f020728804c4b559403f3" prot="public" virt="virtual"><scope>vrv::FloatingCurvePositioner</scope><name>SetDrawingXRel</name></member>
       <member refid="classvrv_1_1_floating_positioner_1a6d2324321eb6fad1030f0b5f2a14d13e" prot="public" virt="virtual"><scope>vrv::FloatingCurvePositioner</scope><name>SetDrawingYRel</name></member>
       <member refid="classvrv_1_1_bounding_box_1ade8f7ad2283b156a2c7934c4055bd8bf" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>SetEmptyBB</name></member>
       <member refid="classvrv_1_1_floating_positioner_1aeb49f3289c5a6f5561728dc61e41dfaf" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>SetObjectXY</name></member>
+      <member refid="classvrv_1_1_floating_curve_positioner_1a82e15efa70454fb643ad5727f2014243" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>SetRequestedStaffSpace</name></member>
       <member refid="classvrv_1_1_bounding_box_1ab4d1764142c6881678dbfcaee124e38f" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>SolveCubicPolynomial</name></member>
       <member refid="classvrv_1_1_bounding_box_1a6a5b0a558c2799d3216a62a352eec938" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>Swap</name></member>
       <member refid="classvrv_1_1_bounding_box_1a316a3efda8b19590914f3c4e736d2323" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>SwapPoints</name></member>
       <member refid="classvrv_1_1_bounding_box_1a8cc083afb0d6f3a68d60fae9569645b8" prot="public" virt="virtual"><scope>vrv::FloatingCurvePositioner</scope><name>UpdateContentBBoxX</name></member>
       <member refid="classvrv_1_1_bounding_box_1af90ec4f1a3393d9c89473f5a2b146b5b" prot="public" virt="virtual"><scope>vrv::FloatingCurvePositioner</scope><name>UpdateContentBBoxY</name></member>
-      <member refid="classvrv_1_1_floating_curve_positioner_1a27ca3bbbefe52d4b5951e3509e9b1483" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>UpdateCurveParams</name></member>
+      <member refid="classvrv_1_1_floating_curve_positioner_1a30ccff64031b6f8e36666e5ff1890223" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>UpdateCurveParams</name></member>
       <member refid="classvrv_1_1_floating_curve_positioner_1a22ee3747f66c1d04e614ecd3504cd98a" prot="public" virt="non-virtual"><scope>vrv::FloatingCurvePositioner</scope><name>UpdatePoints</name></member>
       <member refid="classvrv_1_1_bounding_box_1a5b5db30b70a0c954d37ae58e523dbead" prot="public" virt="virtual"><scope>vrv::FloatingCurvePositioner</scope><name>UpdateSelfBBoxX</name></member>
       <member refid="classvrv_1_1_bounding_box_1a029f007d1150f88d906b318b17ecdccc" prot="public" virt="virtual"><scope>vrv::FloatingCurvePositioner</scope><name>UpdateSelfBBoxY</name></member>

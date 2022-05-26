@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['alignmenttype_2441',['AlignmentType',['../namespacevrv.html#acbf6eb578110ee61906ad288b5803922',1,'vrv']]]
+  ['spacingtype_2488',['SpacingType',['../classvrv_1_1_system_aligner.html#a024f36eb64e0d6adf31217b55ba72b8e',1,'vrv::SystemAligner']]]
 ];

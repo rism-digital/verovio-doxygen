@@ -12,5 +12,5 @@ var classvrv_1_1_ending =
     [ "PrepareFloatingGrps", "classvrv_1_1_ending.html#a2dfe22b6f524ea2e820ad76348bcadc8", null ],
     [ "PrepareMilestones", "classvrv_1_1_ending.html#a3d113ea9d8eb9c0c5545e93c53fe4a46", null ],
     [ "Reset", "classvrv_1_1_ending.html#a81e7184e2e44236c84b5491b2edf1048", null ],
-    [ "ResetDrawing", "classvrv_1_1_ending.html#abdaec93e76521c5c8cbfd07d09af3e94", null ]
+    [ "ResetData", "classvrv_1_1_ending.html#ab0d5e8b78fecfa6bc1dcbc0d0a64ef48", null ]
 ];
