@@ -2,6 +2,7 @@ var classvrv_1_1_linking_interface =
 [
     [ "LinkingInterface", "classvrv_1_1_linking_interface.html#ab0344fae147aef801bfca24e6dd1f016", null ],
     [ "~LinkingInterface", "classvrv_1_1_linking_interface.html#a228d75ecb1fef240f421b1fad7c45a64", null ],
+    [ "AddBackLink", "classvrv_1_1_linking_interface.html#aaa4632e05d5d887b26dbf1789c84f573", null ],
     [ "GetNextLink", "classvrv_1_1_linking_interface.html#a4002e13d005d2e6eafb7ec2efef4a080", null ],
     [ "GetNextLink", "classvrv_1_1_linking_interface.html#aad381d647fdfb76e556661d255333053", null ],
     [ "GetNextMeasure", "classvrv_1_1_linking_interface.html#adf9d13147005f947251ada4a02c71257", null ],

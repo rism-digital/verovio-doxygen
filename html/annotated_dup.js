@@ -139,6 +139,7 @@ var annotated_dup =
       [ "FindByUuidParams", "classvrv_1_1_find_by_uuid_params.html", "classvrv_1_1_find_by_uuid_params" ],
       [ "FindChildByComparisonParams", "classvrv_1_1_find_child_by_comparison_params.html", "classvrv_1_1_find_child_by_comparison_params" ],
       [ "FindExtremeByComparisonParams", "classvrv_1_1_find_extreme_by_comparison_params.html", "classvrv_1_1_find_extreme_by_comparison_params" ],
+      [ "FindLayerUuidWithinStaffDefParams", "classvrv_1_1_find_layer_uuid_within_staff_def_params.html", "classvrv_1_1_find_layer_uuid_within_staff_def_params" ],
       [ "FindSpannedLayerElementsParams", "classvrv_1_1_find_spanned_layer_elements_params.html", "classvrv_1_1_find_spanned_layer_elements_params" ],
       [ "Fing", "classvrv_1_1_fing.html", "classvrv_1_1_fing" ],
       [ "Flag", "classvrv_1_1_flag.html", "classvrv_1_1_flag" ],

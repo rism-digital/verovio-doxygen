@@ -108,6 +108,7 @@ var classvrv_1_1_object =
     [ "FindDescendantByUuid", "classvrv_1_1_object.html#a556eac03e05d970ae850e199993c59f6", null ],
     [ "FindDescendantExtremeByComparison", "classvrv_1_1_object.html#a95acdd9f46d55cf067b567ef11526b68", null ],
     [ "FindDescendantExtremeByComparison", "classvrv_1_1_object.html#af9c8c3326a8eb6745bb1a94da8d76627", null ],
+    [ "FindElementInLayerStaffDefsByUUID", "classvrv_1_1_object.html#a63b4b5137b38f7feda871d81ff1aacd5", null ],
     [ "FindExtremeByComparison", "classvrv_1_1_object.html#acfa9ea76fcafd0009231c3ac3c73702e", null ],
     [ "FindNextChild", "classvrv_1_1_object.html#a5783461a8f5bee6d95391b86e0004ff4", null ],
     [ "FindNextChildByComparison", "classvrv_1_1_object.html#ae1a47a27a677aa68ba14e324b0a17e00", null ],

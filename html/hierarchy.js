@@ -997,6 +997,7 @@ var hierarchy =
       [ "vrv::FindByUuidParams", "classvrv_1_1_find_by_uuid_params.html", null ],
       [ "vrv::FindChildByComparisonParams", "classvrv_1_1_find_child_by_comparison_params.html", null ],
       [ "vrv::FindExtremeByComparisonParams", "classvrv_1_1_find_extreme_by_comparison_params.html", null ],
+      [ "vrv::FindLayerUuidWithinStaffDefParams", "classvrv_1_1_find_layer_uuid_within_staff_def_params.html", null ],
       [ "vrv::FindSpannedLayerElementsParams", "classvrv_1_1_find_spanned_layer_elements_params.html", null ],
       [ "vrv::FunctorDocParams", "classvrv_1_1_functor_doc_params.html", null ],
       [ "vrv::GenerateFeaturesParams", "classvrv_1_1_generate_features_params.html", null ],
