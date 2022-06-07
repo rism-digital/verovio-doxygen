@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"classvrv_1_1_editor_toolkit_mensural.html#aa78a02e5cad8f859edc5bb99aa8ed62d":[1,0,0,115,1],
+"classvrv_1_1_editor_toolkit_neume.html":[1,0,0,116],
 "classvrv_1_1_editor_toolkit_neume.html#a03f19235626c5060c2f43a5044827779":[1,0,0,116,31],
 "classvrv_1_1_editor_toolkit_neume.html#a0b73aa2dee1a259468501b2b2da92999":[1,0,0,116,6],
 "classvrv_1_1_editor_toolkit_neume.html#a0dc0418f8ff7675285b0548e9054d65c":[1,0,0,116,25],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "classvrv_1_1_find_layer_uuid_within_staff_def_params.html#aa709e648d331c9229745c7823392ca6b":[1,0,0,138,1],
 "classvrv_1_1_find_layer_uuid_within_staff_def_params.html#ad24e98ae1caf19e02f0a52b440d2234d":[1,0,0,138,0],
 "classvrv_1_1_find_spanned_layer_elements_params.html":[1,0,0,139],
-"classvrv_1_1_find_spanned_layer_elements_params.html#a1af78e2f807d339d64136494976aad60":[1,0,0,139,3],
-"classvrv_1_1_find_spanned_layer_elements_params.html#a2ad423587b3c34b765f623a7d8350979":[1,0,0,139,8],
-"classvrv_1_1_find_spanned_layer_elements_params.html#a8d5fb356f6392a611e2e9e7e7a7907ba":[1,0,0,139,5]
+"classvrv_1_1_find_spanned_layer_elements_params.html#a1af78e2f807d339d64136494976aad60":[1,0,0,139,3]
 };
