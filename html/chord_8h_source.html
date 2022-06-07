@@ -224,9 +224,9 @@ $(document).ready(function(){initNavTree('chord_8h_source.html',''); initResizab
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_chord.html#a19b0fa01d54e8866e615fd2a7b621d59">FilterList</a>(ListOfConstObjects &amp;childList) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keyword">mutable</span> std::list&lt;ChordCluster *&gt; m_clusters;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
-<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="classvrv_1_1_chord.html#a715914acbf21fbd7c67d0589315f94de">  283</a></span>&#160;    std::list&lt;int&gt; <a class="code" href="classvrv_1_1_chord.html#a715914acbf21fbd7c67d0589315f94de">m_dots</a>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keyword">mutable</span> std::list&lt;ChordCluster *&gt; m_clusters;</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;};</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;} <span class="comment">// namespace vrv</span></div>
@@ -270,7 +270,6 @@ $(document).ready(function(){initNavTree('chord_8h_source.html',''); initResizab
 <div class="ttc" id="aclassvrv_1_1_chord_html_a7defe40705bd6e2e1e3f3fa420593b59"><div class="ttname"><a href="classvrv_1_1_chord.html#a7defe40705bd6e2e1e3f3fa420593b59">vrv::Chord::ConvertMarkupAnalyticalEnd</a></div><div class="ttdeci">int ConvertMarkupAnalyticalEnd(FunctorParams *functorParams) override</div><div class="ttdoc">End Functor for Object::ConvertMarkupAnalytical.</div></div>
 <div class="ttc" id="aclassvrv_1_1_chord_html_a781ed2e62b1ea64accaeb9d7a3469b32"><div class="ttname"><a href="classvrv_1_1_chord.html#a781ed2e62b1ea64accaeb9d7a3469b32">vrv::Chord::CalcArtic</a></div><div class="ttdeci">int CalcArtic(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CalcArtic.</div></div>
 <div class="ttc" id="aclassvrv_1_1_chord_html_a36150519804262324dbbc0e2a297b292"><div class="ttname"><a href="classvrv_1_1_chord.html#a36150519804262324dbbc0e2a297b292">vrv::Chord::PrepareLyrics</a></div><div class="ttdeci">int PrepareLyrics(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::PrepareLyrics.</div></div>
-<div class="ttc" id="aclassvrv_1_1_chord_html_a715914acbf21fbd7c67d0589315f94de"><div class="ttname"><a href="classvrv_1_1_chord.html#a715914acbf21fbd7c67d0589315f94de">vrv::Chord::m_dots</a></div><div class="ttdeci">std::list&lt; int &gt; m_dots</div><div class="ttdoc">Positions of dots in the chord to avoid overlapping.</div><div class="ttdef"><b>Definition:</b> chord.h:283</div></div>
 <div class="ttc" id="aclassvrv_1_1_chord_html_a817274133e13ef710a089fd19881e8d0"><div class="ttname"><a href="classvrv_1_1_chord.html#a817274133e13ef710a089fd19881e8d0">vrv::Chord::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> chord.h:71</div></div>
 <div class="ttc" id="aclassvrv_1_1_chord_html_a3f6381720ce433e279650af6cf9cb88e"><div class="ttname"><a href="classvrv_1_1_chord.html#a3f6381720ce433e279650af6cf9cb88e">vrv::Chord::GetAdjacentNotesList</a></div><div class="ttdeci">std::list&lt; Note * &gt; GetAdjacentNotesList(Staff *staff, int loc)</div><div class="ttdoc">Helper to get list of notes that are adjacent to the specified location.</div></div>
 <div class="ttc" id="aclassvrv_1_1_stemmed_drawing_interface_html"><div class="ttname"><a href="classvrv_1_1_stemmed_drawing_interface.html">vrv::StemmedDrawingInterface</a></div><div class="ttdoc">This class is an interface for MEI stemmed element.</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:314</div></div>
@@ -289,7 +288,7 @@ $(document).ready(function(){initNavTree('chord_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>chord.h</b></li>
-    <li class="footer">Generated on Tue Jun 7 2022 10:19:53 for Verovio by
+    <li class="footer">Generated on Tue Jun 7 2022 11:17:30 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,7 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"classvrv_1_1_staff_alignment.html#a7fa1759557d1353566cfdcd56de6edf7":[1,0,0,314,35],
-"classvrv_1_1_staff_alignment.html#a8439d39daad273cdc338e1741a4b45ec":[1,0,0,314,13],
 "classvrv_1_1_staff_alignment.html#a86ff178b860b027bd8379c9a69088ad0":[1,0,0,314,30],
 "classvrv_1_1_staff_alignment.html#a8aa566a7cb7aacfeb01962e8697a1047":[1,0,0,314,11],
 "classvrv_1_1_staff_alignment.html#a8d01f0ae9658c247f3a155070eb8de02":[1,0,0,314,47],
@@ -249,5 +247,7 @@ var NAVTREEINDEX19 =
 "classvrv_1_1_syllable.html":[1,0,0,327],
 "classvrv_1_1_syllable.html#a008823fc2bbf56a428456e996682b449":[1,0,0,327,2],
 "classvrv_1_1_syllable.html#a380ee2dac242e43806ceb337600ea36f":[1,0,0,327,7],
-"classvrv_1_1_syllable.html#a47a59b53a7248b99a06089d684d7200b":[1,0,0,327,4]
+"classvrv_1_1_syllable.html#a47a59b53a7248b99a06089d684d7200b":[1,0,0,327,4],
+"classvrv_1_1_syllable.html#a4d96cdc9d30d5dca1f4b1c1c05925450":[1,0,0,327,0],
+"classvrv_1_1_syllable.html#a821a1929e0cdb8e6323d17ecfbeac9ea":[1,0,0,327,5]
 };

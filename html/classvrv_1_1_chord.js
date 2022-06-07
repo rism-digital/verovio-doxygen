@@ -52,7 +52,5 @@ var classvrv_1_1_chord =
     [ "PrepareLyrics", "classvrv_1_1_chord.html#a36150519804262324dbbc0e2a297b292", null ],
     [ "Reset", "classvrv_1_1_chord.html#a4b05be56b85202f76ab861836f8c04c2", null ],
     [ "ResetAccidList", "classvrv_1_1_chord.html#a15da29444f2bc2ec20cd87f28b012fe5", null ],
-    [ "ResetData", "classvrv_1_1_chord.html#afb085215765307888bd87c6d82c2878a", null ],
-    [ "m_clusters", "classvrv_1_1_chord.html#ab6a3d07bd7a51b21d6300bdf5e0ebcef", null ],
-    [ "m_dots", "classvrv_1_1_chord.html#a715914acbf21fbd7c67d0589315f94de", null ]
+    [ "ResetData", "classvrv_1_1_chord.html#afb085215765307888bd87c6d82c2878a", null ]
 ];
