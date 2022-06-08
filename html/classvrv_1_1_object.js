@@ -85,6 +85,7 @@ var classvrv_1_1_object =
     [ "ConvertToUnCastOffMensural", "classvrv_1_1_object.html#a4dc4ba189667de40dfbb15b88adb5b0e", null ],
     [ "CopyChildren", "classvrv_1_1_object.html#a4bf38f527d70161c92062a2347b7c11e", null ],
     [ "DeleteChild", "classvrv_1_1_object.html#aa24fba8bae1f0876567f564f98020966", null ],
+    [ "DeleteChildrenByComparison", "classvrv_1_1_object.html#acbb7a83e4ae3f1ba54bcd408dce066ee", null ],
     [ "DetachChild", "classvrv_1_1_object.html#ac846569894fc8b08083e5a8526ba5834", null ],
     [ "FillFlatList", "classvrv_1_1_object.html#a24dd9389c537dda7046c097132ae9a9a", null ],
     [ "FindAllBetween", "classvrv_1_1_object.html#afe64fa5f9df4e735ed7f1e9a5935a339", null ],

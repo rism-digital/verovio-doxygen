@@ -246,8 +246,8 @@ var NAVTREEINDEX23 =
 "fing_8h_source.html":[2,0,58],
 "floatingobject_8h_source.html":[2,0,59],
 "ftrem_8h_source.html":[2,0,60],
-"functions.html":[1,3,0],
 "functions.html":[1,3,0,0],
+"functions.html":[1,3,0],
 "functions_b.html":[1,3,0,1],
 "functions_c.html":[1,3,0,2]
 };
