@@ -2212,9 +2212,9 @@
 <codeline lineno="355"><highlight class="normal"></highlight></codeline>
 <codeline lineno="356"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;TextElement<sp/>*&gt;<sp/>ArrayOfTextElements;</highlight></codeline>
 <codeline lineno="357"><highlight class="normal"></highlight></codeline>
-<codeline lineno="358"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;Staff<sp/>*,<sp/>std::multiset&lt;int&gt;&gt;<sp/>MapOfNoteLocs;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;const<sp/>Staff<sp/>*,<sp/>std::multiset&lt;int&gt;&gt;<sp/>MapOfNoteLocs;</highlight></codeline>
 <codeline lineno="359"><highlight class="normal"></highlight></codeline>
-<codeline lineno="360"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;Staff<sp/>*,<sp/>std::set&lt;int&gt;&gt;<sp/>MapOfDotLocs;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;const<sp/>Staff<sp/>*,<sp/>std::set&lt;int&gt;&gt;<sp/>MapOfDotLocs;</highlight></codeline>
 <codeline lineno="361"><highlight class="normal"></highlight></codeline>
 <codeline lineno="362"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>Option<sp/>*&gt;<sp/>MapOfStrOptions;</highlight></codeline>
 <codeline lineno="363"><highlight class="normal"></highlight></codeline>
@@ -2230,7 +2230,7 @@
 <codeline lineno="373"><highlight class="normal"></highlight></codeline>
 <codeline lineno="374"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;std::pair&lt;LayerElement<sp/>*,<sp/>LayerElement<sp/>*&gt;&gt;<sp/>MeasureTieEndpoints;</highlight></codeline>
 <codeline lineno="375"><highlight class="normal"></highlight></codeline>
-<codeline lineno="376"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>bool<sp/>(*NotePredicate)(Note<sp/>*);</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>bool<sp/>(*NotePredicate)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Note<sp/>*);</highlight></codeline>
 <codeline lineno="377"><highlight class="normal"></highlight></codeline>
 <codeline lineno="387" refid="structvrv_1_1_int_tree" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvrv_1_1_int_tree" kindref="compound">IntTree</ref><sp/>{</highlight></codeline>
 <codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;int,<sp/>IntTree&gt;<sp/>child;</highlight></codeline>

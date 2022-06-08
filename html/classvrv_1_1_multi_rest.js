@@ -5,5 +5,5 @@ var classvrv_1_1_multi_rest =
     [ "Clone", "classvrv_1_1_multi_rest.html#a4d678547521a0a3f19f30a3bff644010", null ],
     [ "GetClassName", "classvrv_1_1_multi_rest.html#abaef53580d04bbdb350f3fe6ee18a1bf", null ],
     [ "Reset", "classvrv_1_1_multi_rest.html#a9134659bfa9bd5a244a2b39551f3beea", null ],
-    [ "UseBlockStyle", "classvrv_1_1_multi_rest.html#a17707f93b4172945ae25d805f5b09ffc", null ]
+    [ "UseBlockStyle", "classvrv_1_1_multi_rest.html#a6373ae6443b859e81d2acd04aa549cc7", null ]
 ];

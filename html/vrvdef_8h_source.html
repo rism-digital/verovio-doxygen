@@ -431,9 +431,9 @@ $(document).ready(function(){initNavTree('vrvdef_8h_source.html',''); initResiza
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keyword">typedef</span> std::vector&lt;TextElement *&gt; ArrayOfTextElements;</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="keyword">typedef</span> std::map&lt;Staff *, std::multiset&lt;int&gt;&gt; MapOfNoteLocs;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="keyword">typedef</span> std::map&lt;const Staff *, std::multiset&lt;int&gt;&gt; MapOfNoteLocs;</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="keyword">typedef</span> std::map&lt;Staff *, std::set&lt;int&gt;&gt; MapOfDotLocs;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="keyword">typedef</span> std::map&lt;const Staff *, std::set&lt;int&gt;&gt; MapOfDotLocs;</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="keyword">typedef</span> std::map&lt;std::string, Option *&gt; MapOfStrOptions;</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
@@ -449,7 +449,7 @@ $(document).ready(function(){initNavTree('vrvdef_8h_source.html',''); initResiza
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160; </div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="keyword">typedef</span> std::vector&lt;std::pair&lt;LayerElement *, LayerElement *&gt;&gt; MeasureTieEndpoints;</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="keyword">typedef</span> bool (*NotePredicate)(Note *);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="keyword">typedef</span> bool (*NotePredicate)(<span class="keyword">const</span> Note *);</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
 <div class="line"><a name="l00387"></a><span class="lineno"><a class="line" href="structvrv_1_1_int_tree.html">  387</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvrv_1_1_int_tree.html">IntTree</a> {</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    std::map&lt;int, IntTree&gt; child;</div>
@@ -676,7 +676,7 @@ $(document).ready(function(){initNavTree('vrvdef_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>vrvdef.h</b></li>
-    <li class="footer">Generated on Wed Jun 8 2022 07:03:13 for Verovio by
+    <li class="footer">Generated on Wed Jun 8 2022 09:06:31 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

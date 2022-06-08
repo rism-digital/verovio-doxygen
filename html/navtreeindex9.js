@@ -1,5 +1,13 @@
 var NAVTREEINDEX9 =
 {
+"classvrv_1_1_humdrum_input.html#a79def1f5f3a8b3400cd70586995cd14a":[1,0,0,164,198],
+"classvrv_1_1_humdrum_input.html#a7aab99b94990c6919aa36afd71897ad5":[1,0,0,164,372],
+"classvrv_1_1_humdrum_input.html#a7b432094c7d6f360487bfc8ee62e73ed":[1,0,0,164,340],
+"classvrv_1_1_humdrum_input.html#a7f84e7c8386ec3a054ec5154a8e47f36":[1,0,0,164,7],
+"classvrv_1_1_humdrum_input.html#a808bbc6c0962f30e1694f13b4cf33389":[1,0,0,164,75],
+"classvrv_1_1_humdrum_input.html#a823c8ec47d1b6f588865efbe992e07be":[1,0,0,164,355],
+"classvrv_1_1_humdrum_input.html#a8258a8fa6d3bf4ca3b6f98877e0ffd0c":[1,0,0,164,20],
+"classvrv_1_1_humdrum_input.html#a83514e05e714e77817ac90f8856c89f3":[1,0,0,164,223],
 "classvrv_1_1_humdrum_input.html#a8364bd9c4995fe72e0ace785904d6578":[1,0,0,164,118],
 "classvrv_1_1_humdrum_input.html#a83b8312c0e14e9525c5e98a8c0016c2d":[1,0,0,164,4],
 "classvrv_1_1_humdrum_input.html#a83edf342b36add0dde92684588d032d1":[1,0,0,164,294],
@@ -241,13 +249,5 @@ var NAVTREEINDEX9 =
 "classvrv_1_1_init_max_measure_duration_params.html#aa51ab0d589a4cc57768283081d919928":[1,0,0,166,0],
 "classvrv_1_1_init_max_measure_duration_params.html#afc8720a865bc062ff3a6e4ac4544caa2":[1,0,0,166,3],
 "classvrv_1_1_init_onset_offset_params.html":[1,0,0,168],
-"classvrv_1_1_init_onset_offset_params.html#a2c1048b7bae85c6e84b8937675ed6bc7":[1,0,0,168,5],
-"classvrv_1_1_init_onset_offset_params.html#a58be82610c43d8aa0a0fb1fee549c0a3":[1,0,0,168,0],
-"classvrv_1_1_init_onset_offset_params.html#a5c2e9afac69d2fca63a85aa363a92af2":[1,0,0,168,2],
-"classvrv_1_1_init_onset_offset_params.html#a6d225106bde74c5044eef76e57f46399":[1,0,0,168,3],
-"classvrv_1_1_init_onset_offset_params.html#ad19ab8005c81a440b34ee98776acb2b1":[1,0,0,168,1],
-"classvrv_1_1_init_onset_offset_params.html#adfabe3c02aefab060a365b250b527209":[1,0,0,168,6],
-"classvrv_1_1_init_onset_offset_params.html#ae0749cc16065fbc26958f4945cd117ec":[1,0,0,168,4],
-"classvrv_1_1_init_processing_lists_params.html":[1,0,0,169],
-"classvrv_1_1_init_processing_lists_params.html#a2f2a7e5bfffdca2728fdcc8dad6768bb":[1,0,0,169,2]
+"classvrv_1_1_init_onset_offset_params.html#a2c1048b7bae85c6e84b8937675ed6bc7":[1,0,0,168,5]
 };

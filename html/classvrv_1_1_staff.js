@@ -36,7 +36,7 @@ var classvrv_1_1_staff =
     [ "InitOnsetOffset", "classvrv_1_1_staff.html#a6e2c51118dc1cd47ff45310930d68648", null ],
     [ "IsMensural", "classvrv_1_1_staff.html#aee928f1f471b78c2e81dd9bef04ef431", null ],
     [ "IsNeume", "classvrv_1_1_staff.html#a9dfbc55cb4c635e29a31212b48a83064", null ],
-    [ "IsOnStaffLine", "classvrv_1_1_staff.html#a367847939088dc1b31e81f2e66211570", null ],
+    [ "IsOnStaffLine", "classvrv_1_1_staff.html#af93e0b0832633be44cdac73069cc4445", null ],
     [ "IsSupportedChild", "classvrv_1_1_staff.html#a7a83940db7e0a8e41a581ea4ed7e3d67", null ],
     [ "IsTabGuitar", "classvrv_1_1_staff.html#a84bcb3fad2d06d2ca4b898e860b14814", null ],
     [ "IsTablature", "classvrv_1_1_staff.html#a40dfb929f83bc138e5922ffc3ec90057", null ],

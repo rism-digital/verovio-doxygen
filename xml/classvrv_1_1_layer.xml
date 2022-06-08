@@ -205,13 +205,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="112" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="112" bodyend="112"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_layer_1ac9cff14271883d9b18f0e14a4b56a1d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_layer_1a623ad5792f12b635fa48d5726163fd05" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>data_STEMDIRECTION</type>
         <definition>data_STEMDIRECTION vrv::Layer::GetDrawingStemDir</definition>
-        <argsstring>(LayerElement *element)</argsstring>
+        <argsstring>(const LayerElement *element) const</argsstring>
         <name>GetDrawingStemDir</name>
         <param>
-          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
           <declname>element</declname>
         </param>
         <briefdescription>
@@ -222,10 +222,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="113" column="24"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_layer_1a9384a5e86b46e31c7fb07d98d6583107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_layer_1af31d2667e99331aef1ae8d477d117cec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>data_STEMDIRECTION</type>
         <definition>data_STEMDIRECTION vrv::Layer::GetDrawingStemDir</definition>
-        <argsstring>(const ArrayOfBeamElementCoords *coords)</argsstring>
+        <argsstring>(const ArrayOfBeamElementCoords *coords) const</argsstring>
         <name>GetDrawingStemDir</name>
         <param>
           <type>const ArrayOfBeamElementCoords *</type>
@@ -257,13 +257,13 @@
       <header>Get the layers used for the duration of an element.</header>
       <description><para>Takes into account cross-staff situations: cross staff layers have negative N. </para>
 </description>
-      <memberdef kind="function" id="classvrv_1_1_layer_1a2c544567b6c64a2682d4840b02ecc739" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_layer_1a946e7de2f328770fa0de24705861aa5d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::set&lt; int &gt;</type>
         <definition>std::set&lt;int&gt; vrv::Layer::GetLayersNForTimeSpanOf</definition>
-        <argsstring>(LayerElement *element)</argsstring>
+        <argsstring>(const LayerElement *element) const</argsstring>
         <name>GetLayersNForTimeSpanOf</name>
         <param>
-          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
           <declname>element</declname>
         </param>
         <briefdescription>
@@ -274,13 +274,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="123" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_layer_1a63a9e22b4ed9ae96df451eadadad1b6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_layer_1a7edfc09b5442d5a2420f4aa47fd67d82" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int vrv::Layer::GetLayerCountForTimeSpanOf</definition>
-        <argsstring>(LayerElement *element)</argsstring>
+        <argsstring>(const LayerElement *element) const</argsstring>
         <name>GetLayerCountForTimeSpanOf</name>
         <param>
-          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
           <declname>element</declname>
         </param>
         <briefdescription>
@@ -296,10 +296,10 @@
       <header>Get the layers used within a time span.</header>
       <description><para>Takes into account cross-staff situations: cross staff layers have negative N. </para>
 </description>
-      <memberdef kind="function" id="classvrv_1_1_layer_1ae9da152a30209e9266669a433262a84b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_layer_1a0c1dfbb1de646f32a0f967f1173b9601" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::set&lt; int &gt;</type>
         <definition>std::set&lt;int&gt; vrv::Layer::GetLayersNInTimeSpan</definition>
-        <argsstring>(double time, double duration, Measure *measure, int staff)</argsstring>
+        <argsstring>(double time, double duration, const Measure *measure, int staff) const</argsstring>
         <name>GetLayersNInTimeSpan</name>
         <param>
           <type>double</type>
@@ -310,7 +310,7 @@
           <declname>duration</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
           <declname>measure</declname>
         </param>
         <param>
@@ -325,10 +325,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="132" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_layer_1a22ad6d6f1b834a6021071493b857e925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_layer_1ae8c30a4f93142a3270c2adb2345e6069" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int vrv::Layer::GetLayerCountInTimeSpan</definition>
-        <argsstring>(double time, double duration, Measure *measure, int staff)</argsstring>
+        <argsstring>(double time, double duration, const Measure *measure, int staff) const</argsstring>
         <name>GetLayerCountInTimeSpan</name>
         <param>
           <type>double</type>
@@ -339,7 +339,7 @@
           <declname>duration</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
           <declname>measure</declname>
         </param>
         <param>
@@ -353,6 +353,231 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="133" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_layer_1a8d832b0116452b440a07f7aa693e506b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ListOfObjects</type>
+        <definition>ListOfObjects vrv::Layer::GetLayerElementsForTimeSpanOf</definition>
+        <argsstring>(const LayerElement *element, bool excludeCurrent=false)</argsstring>
+        <name>GetLayerElementsForTimeSpanOf</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>excludeCurrent</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Get the list of the layer elements for the duration of an element Takes into account cross-staff situations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If excludeCurrent is specified, gets the list of layer elements for all layers except current </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="142" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_layer_1a4d5720a2e9ff2fd4988e19fb18f5550b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ListOfConstObjects</type>
+        <definition>ListOfConstObjects vrv::Layer::GetLayerElementsForTimeSpanOf</definition>
+        <argsstring>(const LayerElement *element, bool excludeCurrent=false) const</argsstring>
+        <name>GetLayerElementsForTimeSpanOf</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>excludeCurrent</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="143" column="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_layer_1aee6de888c37d676dece5da69241f3330" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ListOfObjects</type>
+        <definition>ListOfObjects vrv::Layer::GetLayerElementsInTimeSpan</definition>
+        <argsstring>(double time, double duration, const Measure *measure, int staff, bool excludeCurrent)</argsstring>
+        <name>GetLayerElementsInTimeSpan</name>
+        <param>
+          <type>double</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
+          <declname>measure</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>staff</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>excludeCurrent</declname>
+        </param>
+        <briefdescription>
+<para>Get the list of the layer elements used within a time span. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Takes into account cross-staff situations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="151" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_layer_1a7999f3d9d7a7d878aaf95fb34090aa30" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ListOfConstObjects</type>
+        <definition>ListOfConstObjects vrv::Layer::GetLayerElementsInTimeSpan</definition>
+        <argsstring>(double time, double duration, const Measure *measure, int staff, bool excludeCurrent) const</argsstring>
+        <name>GetLayerElementsInTimeSpan</name>
+        <param>
+          <type>double</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
+          <declname>measure</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>staff</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>excludeCurrent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="153" column="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_layer_1ab80f5a46622fce2bfdefcca4b24b85d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref> *</type>
+        <definition>Clef* vrv::Layer::GetCurrentClef</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentClef</name>
+        <briefdescription>
+<para>Get the current clef, keysig, mensur and meterSig. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="161" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_layer_1a18fb994e3cefe9810cd5e30a05a50c58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref> *</type>
+        <definition>const Clef* vrv::Layer::GetCurrentClef</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCurrentClef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="162" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_layer_1aaf94ea21e64888e8c3ec6500f314b389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_key_sig" kindref="compound">KeySig</ref> *</type>
+        <definition>KeySig* vrv::Layer::GetCurrentKeySig</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentKeySig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="163" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_layer_1abb43e24482183136dd8328a5d57f7bfd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classvrv_1_1_key_sig" kindref="compound">KeySig</ref> *</type>
+        <definition>const KeySig* vrv::Layer::GetCurrentKeySig</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCurrentKeySig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="164" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_layer_1a1ff32db9c2d5623f194aa5d9075c5ea5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_mensur" kindref="compound">Mensur</ref> *</type>
+        <definition>Mensur* vrv::Layer::GetCurrentMensur</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentMensur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="165" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_layer_1a0927bc3c786f827c9eed73fd61ff1572" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classvrv_1_1_mensur" kindref="compound">Mensur</ref> *</type>
+        <definition>const Mensur* vrv::Layer::GetCurrentMensur</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCurrentMensur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="166" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_layer_1a9ecb7ca00e9d18b067775dd2158cb65d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_meter_sig" kindref="compound">MeterSig</ref> *</type>
+        <definition>MeterSig* vrv::Layer::GetCurrentMeterSig</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentMeterSig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="167" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_layer_1a99756b9aab949875a7230926736b4111" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classvrv_1_1_meter_sig" kindref="compound">MeterSig</ref> *</type>
+        <definition>const MeterSig* vrv::Layer::GetCurrentMeterSig</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCurrentMeterSig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="168" column="20"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -372,7 +597,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="196" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="196" bodyend="196"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="211" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="211" bodyend="211"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1adbe990fc7f90739f43103ca3e2805504" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -385,7 +610,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="197" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="197" bodyend="197"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="212" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="212" bodyend="212"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a37ff6e247682992b7fba8137af6eca5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -402,7 +627,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="198" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="198" bodyend="198"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="213" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="213" bodyend="213"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a02e25e8082abddb22bec2cdb8b440ad8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -415,7 +640,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="199" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="199" bodyend="199"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="214" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="214" bodyend="214"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -436,7 +661,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="255" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="270" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -457,7 +682,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="272" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="287" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -473,7 +698,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="288" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="288" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="303" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="303" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_layer_1a94355b0d2646202ec101969ea050dcf4" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -487,7 +712,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="293" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="293" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="308" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="308" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_layer_1adc4f612602ab0ba517154040e128d17f" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -500,7 +725,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="294" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="294" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="309" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="309" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_layer_1a1a362aabec287683cc3d0e267464fc31" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref> *</type>
@@ -513,7 +738,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="297" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="297" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="312" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="312" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_layer_1a50c50f3929308138a65d418e1d3389a1" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_key_sig" kindref="compound">KeySig</ref> *</type>
@@ -526,7 +751,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="298" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="298" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="313" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="313" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_layer_1ace04734f8c408241f29ace53c9e8a46e" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_mensur" kindref="compound">Mensur</ref> *</type>
@@ -539,7 +764,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="299" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="299" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="314" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="314" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_layer_1a766b40517bcad4cee19a82e9c1e072e4" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_meter_sig" kindref="compound">MeterSig</ref> *</type>
@@ -552,7 +777,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="300" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="300" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="315" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="315" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_layer_1ae728c080d63324e0ab58227cbddccc9b" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_meter_sig_grp" kindref="compound">MeterSigGrp</ref> *</type>
@@ -565,7 +790,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="301" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="301" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="316" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="316" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_layer_1afd7eea9594a718097fb50220c61039c1" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -578,7 +803,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="302" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="302" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="317" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="317" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_layer_1af6122f2a0e11c36d3307fea364dbd5e7" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref> *</type>
@@ -591,7 +816,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="305" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="305" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="320" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="320" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_layer_1a73b5be31d5a84ed0401076d266c48880" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_key_sig" kindref="compound">KeySig</ref> *</type>
@@ -604,7 +829,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="306" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="306" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="321" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="321" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_layer_1aee1b2c77c75fbcd074ffdf33365e1c04" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_mensur" kindref="compound">Mensur</ref> *</type>
@@ -617,7 +842,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="307" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="307" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="322" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="322" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_layer_1a3fd4dbf4989dd0b96d36ea9ea4d355f6" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_meter_sig" kindref="compound">MeterSig</ref> *</type>
@@ -630,7 +855,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="308" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="308" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="323" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="323" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_layer_1a5614758a16c65e080ddc8405f8875262" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -643,7 +868,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="309" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="309" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="324" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="324" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -773,130 +998,6 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="105" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_layer_1a4846e31e65e7ef424a406563a2ce0103" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>ListOfObjects</type>
-        <definition>ListOfObjects vrv::Layer::GetLayerElementsForTimeSpanOf</definition>
-        <argsstring>(LayerElement *element, bool excludeCurrent=false)</argsstring>
-        <name>GetLayerElementsForTimeSpanOf</name>
-        <param>
-          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
-          <declname>element</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>excludeCurrent</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-<para>Get the list of the layer elements for the duration of an element Takes into account cross-staff situations. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>If excludeCurrent is specified, gets the list of layer elements for all layers except current </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="141" column="19"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_layer_1a2351a1bd1a8dac02caf64ce4eb3a38ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>ListOfObjects</type>
-        <definition>ListOfObjects vrv::Layer::GetLayerElementsInTimeSpan</definition>
-        <argsstring>(double time, double duration, Measure *measure, int staff, bool excludeCurrent)</argsstring>
-        <name>GetLayerElementsInTimeSpan</name>
-        <param>
-          <type>double</type>
-          <declname>time</declname>
-        </param>
-        <param>
-          <type>double</type>
-          <declname>duration</declname>
-        </param>
-        <param>
-          <type><ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
-          <declname>measure</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>staff</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>excludeCurrent</declname>
-        </param>
-        <briefdescription>
-<para>Get the list of the layer elements used within a time span. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Takes into account cross-staff situations. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="147" column="19"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_layer_1ab80f5a46622fce2bfdefcca4b24b85d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref> *</type>
-        <definition>Clef* vrv::Layer::GetCurrentClef</definition>
-        <argsstring>()</argsstring>
-        <name>GetCurrentClef</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="150" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_layer_1a18fb994e3cefe9810cd5e30a05a50c58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const <ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref> *</type>
-        <definition>const Clef* vrv::Layer::GetCurrentClef</definition>
-        <argsstring>() const</argsstring>
-        <name>GetCurrentClef</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="151" column="16"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_layer_1aaf94ea21e64888e8c3ec6500f314b389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classvrv_1_1_key_sig" kindref="compound">KeySig</ref> *</type>
-        <definition>KeySig* vrv::Layer::GetCurrentKeySig</definition>
-        <argsstring>()</argsstring>
-        <name>GetCurrentKeySig</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="152" column="12"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_layer_1a1ff32db9c2d5623f194aa5d9075c5ea5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classvrv_1_1_mensur" kindref="compound">Mensur</ref> *</type>
-        <definition>Mensur* vrv::Layer::GetCurrentMensur</definition>
-        <argsstring>()</argsstring>
-        <name>GetCurrentMensur</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="153" column="12"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_layer_1a9ecb7ca00e9d18b067775dd2158cb65d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classvrv_1_1_meter_sig" kindref="compound">MeterSig</ref> *</type>
-        <definition>MeterSig* vrv::Layer::GetCurrentMeterSig</definition>
-        <argsstring>()</argsstring>
-        <name>GetCurrentMeterSig</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="154" column="14"/>
-      </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a973a56164bfe4785b69e9b44ce65489c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::Layer::ResetStaffDefObjects</definition>
@@ -908,7 +1009,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="156" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="171" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a421c1c5be200da96251d817767f13f3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -926,7 +1027,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="161" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="176" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a1f78b3afb187a7617918d35bd204c01d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -939,7 +1040,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="163" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="163" bodyend="163"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="178" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="178" bodyend="178"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a6451d65100ffa53da3f46f173f3e98cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -956,7 +1057,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="164" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="164" bodyend="164"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="179" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="179" bodyend="179"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1ad288a8b0354af60ded06aac0f721cc5b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref> *</type>
@@ -969,7 +1070,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="165" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="165" bodyend="165"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="180" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="180" bodyend="180"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a32f0249d584d2a2c6e4d1d626c61bbe8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classvrv_1_1_key_sig" kindref="compound">KeySig</ref> *</type>
@@ -982,7 +1083,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="166" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="166" bodyend="166"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="181" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="181" bodyend="181"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a86108ba3fcba3bd3f205c79d17176292" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classvrv_1_1_mensur" kindref="compound">Mensur</ref> *</type>
@@ -995,7 +1096,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="167" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="167" bodyend="167"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="182" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="182" bodyend="182"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a99e705335191226ab025d858241ccd43" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classvrv_1_1_meter_sig" kindref="compound">MeterSig</ref> *</type>
@@ -1008,7 +1109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="168" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="168" bodyend="168"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="183" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="183" bodyend="183"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1ab4045ec2927664ca126d609bebe6e752" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classvrv_1_1_meter_sig_grp" kindref="compound">MeterSigGrp</ref> *</type>
@@ -1021,7 +1122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="169" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="169" bodyend="169"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="184" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="184" bodyend="184"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1adccd73277fa97e64979b7782f51f1d8f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -1034,7 +1135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="170" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="170" bodyend="173"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="185" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="185" bodyend="188"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a5adbee5370bec875186360c8721425cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1052,7 +1153,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="178" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="193" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a4b87456367ee3f8df018532939334e85" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -1065,7 +1166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="180" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="180" bodyend="180"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="195" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="195" bodyend="195"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a101eb115a5917af374c4eac04ca7a645" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1082,7 +1183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="181" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="181" bodyend="181"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="196" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="196" bodyend="196"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a7db376fca793628d68589e71ce3e0c09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref> *</type>
@@ -1095,7 +1196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="182" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="182" bodyend="182"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="197" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="197" bodyend="197"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1ab7ac55d1854043715efff4bdd66b9257" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classvrv_1_1_key_sig" kindref="compound">KeySig</ref> *</type>
@@ -1108,7 +1209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="183" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="183" bodyend="183"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="198" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="198" bodyend="198"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a7753063e135d96d5f71f89c12192b89c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classvrv_1_1_mensur" kindref="compound">Mensur</ref> *</type>
@@ -1121,7 +1222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="184" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="184" bodyend="184"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="199" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="199" bodyend="199"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a5f43eed1b06df4c0fee1ce97fb3598b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classvrv_1_1_meter_sig" kindref="compound">MeterSig</ref> *</type>
@@ -1134,7 +1235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="185" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="185" bodyend="185"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="200" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="200" bodyend="200"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a7611e8efaec6d9396d9820673a176890" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -1147,7 +1248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="186" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="186" bodyend="190"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="201" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="201" bodyend="205"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a6136147f6de13201325d1531fc73f593" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -1166,7 +1267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="209" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="224" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a3ec0ef3941f1830f0617e943db32725e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -1185,7 +1286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="214" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="229" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1aaf89a9d26b64458fbe3c3535c67a100c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -1204,7 +1305,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="219" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="234" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a581c4fbf06748e51dad3516c0467f630" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -1223,7 +1324,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="224" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="239" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a9ef050714620ccb5b456c0b85e57d8e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -1242,7 +1343,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="229" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="244" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a13cdf860ad5ff95446c2300afb64b040" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -1261,7 +1362,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="234" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="249" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a412603dfaf75956bd8275a29e6215b0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -1280,7 +1381,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="239" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="254" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a56a95f4c13e8f49dd249d8790916098a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -1299,7 +1400,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="244" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="259" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a23a6e091854b5209b3322684542fb1c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -1318,7 +1419,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="249" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="264" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a210f68470f5a0766b1ae4c2b0340b815" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -1337,7 +1438,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="261" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="276" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1aaf74313495052801949213a9cbfa2e44" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -1355,7 +1456,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="266" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="281" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_layer_1a983baa94f22d6dde6e5a4155d962edf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -1374,7 +1475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="278" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="293" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1483,7 +1584,7 @@
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="39" column="35" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="33" bodyend="310"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/layer.h" line="39" column="35" bodyfile="/home/runner/work/verovio/verovio/include/vrv/layer.h" bodystart="33" bodyend="325"/>
     <listofallmembers>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>AddChild</name></member>
       <member refid="classvrv_1_1_object_1a5f617820a2163b5fa9d80d884bf69999" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>AddLayerElementToFlatList</name></member>
@@ -1513,7 +1614,7 @@
       <member refid="classvrv_1_1_object_1af1cfac1b1885dea453542d8fccdc4461" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>AdjustSylSpacing</name></member>
       <member refid="classvrv_1_1_object_1ada977235c88371e047043642cb5ff3bb" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>AdjustSylSpacingEnd</name></member>
       <member refid="classvrv_1_1_object_1ae04a8386531bae9a2facddc7d293a0ed" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>AdjustTempo</name></member>
-      <member refid="classvrv_1_1_object_1a8aaf88c9ab32e7cc92a6d39189031caa" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>AdjustTupletNumOverlap</name></member>
+      <member refid="classvrv_1_1_object_1ad431f1654f303456e7c8f2d285e4f650" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>AdjustTupletNumOverlap</name></member>
       <member refid="classvrv_1_1_object_1a59773566ac731e75fa34166fa1d78aa3" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>AdjustTupletsX</name></member>
       <member refid="classvrv_1_1_object_1a80bc658bb972eabcee2d0aa536386cfc" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>AdjustTupletsY</name></member>
       <member refid="classvrv_1_1_object_1af18e010dd5e84c10b4c10cfa0636db08" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>AdjustXOverflow</name></member>
@@ -1666,14 +1767,17 @@
       <member refid="classvrv_1_1_layer_1ab80f5a46622fce2bfdefcca4b24b85d1" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetCurrentClef</name></member>
       <member refid="classvrv_1_1_layer_1a18fb994e3cefe9810cd5e30a05a50c58" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetCurrentClef</name></member>
       <member refid="classvrv_1_1_layer_1aaf94ea21e64888e8c3ec6500f314b389" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetCurrentKeySig</name></member>
+      <member refid="classvrv_1_1_layer_1abb43e24482183136dd8328a5d57f7bfd" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetCurrentKeySig</name></member>
       <member refid="classvrv_1_1_layer_1a1ff32db9c2d5623f194aa5d9075c5ea5" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetCurrentMensur</name></member>
+      <member refid="classvrv_1_1_layer_1a0927bc3c786f827c9eed73fd61ff1572" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetCurrentMensur</name></member>
       <member refid="classvrv_1_1_layer_1a9ecb7ca00e9d18b067775dd2158cb65d" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetCurrentMeterSig</name></member>
+      <member refid="classvrv_1_1_layer_1a99756b9aab949875a7230926736b4111" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetCurrentMeterSig</name></member>
       <member refid="classvrv_1_1_object_1a469db24aaa4907f5437576cb989fcdad" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetDescendantCount</name></member>
       <member refid="classvrv_1_1_object_1a6baacbb5e659f71a051d569b2c34ac07" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetDescendantIndex</name></member>
       <member refid="classvrv_1_1_object_1a4479cf2a953546ff59428752c479ec31" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetDocResources</name></member>
       <member refid="classvrv_1_1_drawing_list_interface_1acffbc6780719ad0f0342be03a3aa2a3e" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetDrawingList</name></member>
-      <member refid="classvrv_1_1_layer_1ac9cff14271883d9b18f0e14a4b56a1d8" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetDrawingStemDir</name></member>
-      <member refid="classvrv_1_1_layer_1a9384a5e86b46e31c7fb07d98d6583107" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetDrawingStemDir</name></member>
+      <member refid="classvrv_1_1_layer_1a623ad5792f12b635fa48d5726163fd05" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetDrawingStemDir</name></member>
+      <member refid="classvrv_1_1_layer_1af31d2667e99331aef1ae8d477d117cec" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetDrawingStemDir</name></member>
       <member refid="classvrv_1_1_layer_1af71aa62ee9cde4f16a1d2a504c8845c7" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetDrawingStemDir</name></member>
       <member refid="classvrv_1_1_object_1ac707920ee385b0c7bb52d4b0184e7e54" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>GetDrawingX</name></member>
       <member refid="classvrv_1_1_object_1a2b30e0834719af6134364237c5f78940" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>GetDrawingY</name></member>
@@ -1688,17 +1792,21 @@
       <member refid="classvrv_1_1_object_1a5ec4736caa32bf31168fd2ce62f21d0d" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetFirstAncestorInRange</name></member>
       <member refid="classvrv_1_1_object_1a4e9a608419295411e4f3cf4ea7fbf19f" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetFirstAncestorInRange</name></member>
       <member refid="classvrv_1_1_object_1a10fe05578ee7f669ca3591c5a2a3a428" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetFirstChildNot</name></member>
+      <member refid="classvrv_1_1_object_1a7cde888c2a3a0af025cd706540d7333a" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetFirstChildNot</name></member>
       <member refid="classvrv_1_1_object_1a2bfb8ee92dbd7e805de0aae51d07d534" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetIdx</name></member>
       <member refid="classvrv_1_1_object_1aa7382f9b787c517cf76a6ece195f7766" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLast</name></member>
       <member refid="classvrv_1_1_object_1a31f762f07969b77792891fdbbc5176e4" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLast</name></member>
       <member refid="classvrv_1_1_object_1a908d56fef5a5dd9b9808555ab4ea4daf" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLastAncestorNot</name></member>
-      <member refid="classvrv_1_1_layer_1a63a9e22b4ed9ae96df451eadadad1b6b" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLayerCountForTimeSpanOf</name></member>
-      <member refid="classvrv_1_1_layer_1a22ad6d6f1b834a6021071493b857e925" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLayerCountInTimeSpan</name></member>
-      <member refid="classvrv_1_1_layer_1a4846e31e65e7ef424a406563a2ce0103" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLayerElementsForTimeSpanOf</name></member>
-      <member refid="classvrv_1_1_layer_1a2351a1bd1a8dac02caf64ce4eb3a38ec" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLayerElementsInTimeSpan</name></member>
+      <member refid="classvrv_1_1_object_1a7a014abead37ca3e27f827a5c3ae7434" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLastAncestorNot</name></member>
+      <member refid="classvrv_1_1_layer_1a7edfc09b5442d5a2420f4aa47fd67d82" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLayerCountForTimeSpanOf</name></member>
+      <member refid="classvrv_1_1_layer_1ae8c30a4f93142a3270c2adb2345e6069" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLayerCountInTimeSpan</name></member>
+      <member refid="classvrv_1_1_layer_1a8d832b0116452b440a07f7aa693e506b" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLayerElementsForTimeSpanOf</name></member>
+      <member refid="classvrv_1_1_layer_1a4d5720a2e9ff2fd4988e19fb18f5550b" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLayerElementsForTimeSpanOf</name></member>
+      <member refid="classvrv_1_1_layer_1aee6de888c37d676dece5da69241f3330" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLayerElementsInTimeSpan</name></member>
+      <member refid="classvrv_1_1_layer_1a7999f3d9d7a7d878aaf95fb34090aa30" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLayerElementsInTimeSpan</name></member>
       <member refid="classvrv_1_1_layer_1adfcf758667726eabfc225acc484fe525" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLayerIdx</name></member>
-      <member refid="classvrv_1_1_layer_1a2c544567b6c64a2682d4840b02ecc739" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLayersNForTimeSpanOf</name></member>
-      <member refid="classvrv_1_1_layer_1ae9da152a30209e9266669a433262a84b" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLayersNInTimeSpan</name></member>
+      <member refid="classvrv_1_1_layer_1a946e7de2f328770fa0de24705861aa5d" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLayersNForTimeSpanOf</name></member>
+      <member refid="classvrv_1_1_layer_1a0c1dfbb1de646f32a0f967f1173b9601" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLayersNInTimeSpan</name></member>
       <member refid="classvrv_1_1_bounding_box_1af329372204a34520779e6b0d0596e8b9" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetLeftBy</name></member>
       <member refid="classvrv_1_1_object_1a817a55b73b4356214fecf01d9da87d26" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>GetLinkingInterface</name></member>
       <member refid="classvrv_1_1_object_1a71f584e3103c93a150d3a3f95a8cd6b6" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>GetLinkingInterface</name></member>
@@ -1734,7 +1842,7 @@
       <member refid="classvrv_1_1_layer_1a6eec7985e014cbd2764f343c792a8d0f" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetPrevious</name></member>
       <member refid="classvrv_1_1_object_1a26a7c60cdf50a4072927aa671112f1f3" prot="public" virt="non-virtual" ambiguityscope="vrv::Object::"><scope>vrv::Layer</scope><name>GetPrevious</name></member>
       <member refid="classvrv_1_1_object_1ad3b827c4f53d81386c192ce462f09b3e" prot="public" virt="non-virtual" ambiguityscope="vrv::Object::"><scope>vrv::Layer</scope><name>GetPrevious</name></member>
-      <member refid="classvrv_1_1_object_1a3d26e4876ee5a38e4c01fae4af747c23" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>GetRelativeLayerElement</name></member>
+      <member refid="classvrv_1_1_object_1a507b026d60921d1d418f3054b3bb68da" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>GetRelativeLayerElement</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2fe9d4e0cef41c270fe6683e5fbd8223" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>GetRightBy</name></member>
       <member refid="classvrv_1_1_object_1a36ae3be40fa20c6255a6003e5d56133f" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>GetScoreDefInterface</name></member>
       <member refid="classvrv_1_1_object_1af26b539ef3e271bc568bebff37c01a33" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>GetScoreDefInterface</name></member>
@@ -1786,8 +1894,8 @@
       <member refid="classvrv_1_1_bounding_box_1a20afc38171ff613053a28a3530a66a05" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>HasSelfVerticalBB</name></member>
       <member refid="classvrv_1_1_layer_1adccd73277fa97e64979b7782f51f1d8f" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>HasStaffDef</name></member>
       <member refid="classvrv_1_1_bounding_box_1aee28c8f38335a02d395f132eac3174a2" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>HorizontalContentOverlap</name></member>
-      <member refid="classvrv_1_1_bounding_box_1a505bfcdcaff3d551fdbd3a74ed3375f0" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>HorizontalLeftOverlap</name></member>
-      <member refid="classvrv_1_1_bounding_box_1ac4af18c7aeda842527a70954b409f54b" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>HorizontalRightOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a0fdfa000c449d4c9b1de755dd1efff55" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>HorizontalLeftOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a7265ddc2845db5bc543200b037048a2e" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>HorizontalRightOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1a363e14e29dcb72d6539a832921c538f9" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>HorizontalSelfOverlap</name></member>
       <member refid="classvrv_1_1_object_1a792600840b16b4343650cceecf8db29b" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>InitMaxMeasureDuration</name></member>
       <member refid="classvrv_1_1_object_1a0d88bb9d11b811425e26d2770a1444dd" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>InitMaxMeasureDurationEnd</name></member>
@@ -1826,8 +1934,8 @@
       <member refid="classvrv_1_1_object_1afc5a347cc3aa0a158036cdabc32157da" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>JustifyY</name></member>
       <member refid="classvrv_1_1_object_1ab65875db006b1e1207a8ee70de7095b2" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>JustifyYAdjustCrossStaff</name></member>
       <member refid="classvrv_1_1_layer_1a94f520db1538d93e05919a56e77fd1ea" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>Layer</name></member>
-      <member refid="classvrv_1_1_object_1a9af0cce7b5db85a68ed87c274176aa66" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>LayerCountInTimeSpan</name></member>
-      <member refid="classvrv_1_1_object_1add866a8144bcb528808a3e9d6a8f9d45" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>LayerElementsInTimeSpan</name></member>
+      <member refid="classvrv_1_1_object_1afb1e47b8ed7258fa48fe60ac89258841" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>LayerCountInTimeSpan</name></member>
+      <member refid="classvrv_1_1_object_1a5715df1798b7140cee929ec32c8f30a3" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>LayerElementsInTimeSpan</name></member>
       <member refid="classvrv_1_1_bounding_box_1a4961ebaf8f99abe31ee894345cd84a16" prot="protected" virt="non-virtual"><scope>vrv::Layer</scope><name>m_cachedDrawingX</name></member>
       <member refid="classvrv_1_1_bounding_box_1a548baf7b854ef877313302670da5d0b8" prot="protected" virt="non-virtual"><scope>vrv::Layer</scope><name>m_cachedDrawingY</name></member>
       <member refid="classvrv_1_1_layer_1af6122f2a0e11c36d3307fea364dbd5e7" prot="private" virt="non-virtual"><scope>vrv::Layer</scope><name>m_cautionStaffDefClef</name></member>
@@ -1951,10 +2059,10 @@
       <member refid="classvrv_1_1_bounding_box_1af90ec4f1a3393d9c89473f5a2b146b5b" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>UpdateContentBBoxY</name></member>
       <member refid="classvrv_1_1_bounding_box_1a5b5db30b70a0c954d37ae58e523dbead" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>UpdateSelfBBoxX</name></member>
       <member refid="classvrv_1_1_bounding_box_1a029f007d1150f88d906b318b17ecdccc" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>UpdateSelfBBoxY</name></member>
-      <member refid="classvrv_1_1_bounding_box_1aa10dbbf04b3707900490d1ced0ea0418" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>VerticalBottomOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1aeff55f50ac7cae031dfa289d422b77c0" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>VerticalBottomOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1acdb36f4007fc88d79a81eed3b440c536" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>VerticalContentOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1ab9bbe1447c1e512c9154825086f34aef" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>VerticalSelfOverlap</name></member>
-      <member refid="classvrv_1_1_bounding_box_1a85b3cd46765c07b3d16ed7933feaddff" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>VerticalTopOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1aa4dda490e649a5c4817ef99853e0a3da" prot="public" virt="non-virtual"><scope>vrv::Layer</scope><name>VerticalTopOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1a9f87f4407c2c8d88ab5e4eacfe1ac1f0" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>~BoundingBox</name></member>
       <member refid="classvrv_1_1_drawing_list_interface_1a92cab20a8ca65a588e6acd0facca43c9" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>~DrawingListInterface</name></member>
       <member refid="classvrv_1_1_layer_1a3efb36570915aba509ae375a610699a9" prot="public" virt="virtual"><scope>vrv::Layer</scope><name>~Layer</name></member>

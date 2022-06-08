@@ -80,12 +80,11 @@ var searchData=
   ['setzone_2368',['SetZone',['../classvrv_1_1_facsimile_interface.html#aa9304a762355424080183c9f30f8fe00',1,'vrv::FacsimileInterface']]],
   ['solvecubicpolynomial_2369',['SolveCubicPolynomial',['../classvrv_1_1_bounding_box.html#ab4d1764142c6881678dbfcaee124e38f',1,'vrv::BoundingBox']]],
   ['sortpositioners_2370',['SortPositioners',['../classvrv_1_1_staff_alignment.html#ae760f3785a9a3cdaa22a693272adfaee',1,'vrv::StaffAlignment']]],
-  ['splitartic_2371',['SplitArtic',['../classvrv_1_1_artic.html#ab6b401bb7dfd502eccd21bf9614bc905',1,'vrv::Artic']]],
-  ['splitmultival_2372',['SplitMultival',['../classvrv_1_1_artic.html#ac7bf2f16b9558129980adb1c29b6b0c2',1,'vrv::Artic']]],
-  ['stablesort_2373',['StableSort',['../classvrv_1_1_object.html#ac97807a0dabfdf0d1d483f7f3e9427f9',1,'vrv::Object']]],
-  ['stackgraceelement_2374',['StackGraceElement',['../classvrv_1_1_grace_aligner.html#adafd1105e2839665f24976d256653ad8',1,'vrv::GraceAligner']]],
-  ['stemmodtoglyph_2375',['StemModToGlyph',['../classvrv_1_1_layer_element.html#a42028faa4ea287cbfffb858e7bb370a1',1,'vrv::LayerElement']]],
-  ['strtostr_2376',['StrToStr',['../classvrv_1_1_att.html#a65b7bc2210f5f4dad29bac63eafbcf4d',1,'vrv::Att']]],
-  ['swap_2377',['Swap',['../classvrv_1_1_bounding_box.html#a6a5b0a558c2799d3216a62a352eec938',1,'vrv::BoundingBox']]],
-  ['swappoints_2378',['SwapPoints',['../classvrv_1_1_bounding_box.html#a316a3efda8b19590914f3c4e736d2323',1,'vrv::BoundingBox']]]
+  ['splitmultival_2371',['SplitMultival',['../classvrv_1_1_artic.html#ac7bf2f16b9558129980adb1c29b6b0c2',1,'vrv::Artic']]],
+  ['stablesort_2372',['StableSort',['../classvrv_1_1_object.html#ac97807a0dabfdf0d1d483f7f3e9427f9',1,'vrv::Object']]],
+  ['stackgraceelement_2373',['StackGraceElement',['../classvrv_1_1_grace_aligner.html#adafd1105e2839665f24976d256653ad8',1,'vrv::GraceAligner']]],
+  ['stemmodtoglyph_2374',['StemModToGlyph',['../classvrv_1_1_layer_element.html#a42028faa4ea287cbfffb858e7bb370a1',1,'vrv::LayerElement']]],
+  ['strtostr_2375',['StrToStr',['../classvrv_1_1_att.html#a65b7bc2210f5f4dad29bac63eafbcf4d',1,'vrv::Att']]],
+  ['swap_2376',['Swap',['../classvrv_1_1_bounding_box.html#a6a5b0a558c2799d3216a62a352eec938',1,'vrv::BoundingBox']]],
+  ['swappoints_2377',['SwapPoints',['../classvrv_1_1_bounding_box.html#a316a3efda8b19590914f3c4e736d2323',1,'vrv::BoundingBox']]]
 ];

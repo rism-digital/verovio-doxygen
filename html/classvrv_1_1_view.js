@@ -38,7 +38,7 @@ var classvrv_1_1_view =
     [ "DrawDot", "classvrv_1_1_view.html#a85a2b586e641814ad20f2bd520e773f2", null ],
     [ "DrawDotInLigature", "classvrv_1_1_view.html#a5442d39b30587eeea850cef2b4601ca7", null ],
     [ "DrawDots", "classvrv_1_1_view.html#a703a4f8e82214c2625a3dc11780fc86a", null ],
-    [ "DrawDotsPart", "classvrv_1_1_view.html#a23d87ccdbfffada9e716da57e406b865", null ],
+    [ "DrawDotsPart", "classvrv_1_1_view.html#a70387b92c5fe4cabd2e91c3060949007", null ],
     [ "DrawDurationElement", "classvrv_1_1_view.html#a34c710188868cba6cfb43733b0304180", null ],
     [ "DrawDynam", "classvrv_1_1_view.html#af3d784a5dec18db724d2f6bd62e81f79", null ],
     [ "DrawDynamString", "classvrv_1_1_view.html#a81f15f5b35e9cf3a36473310002e60c4", null ],

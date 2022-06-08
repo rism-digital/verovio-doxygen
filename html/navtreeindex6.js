@@ -1,5 +1,13 @@
 var NAVTREEINDEX6 =
 {
+"classvrv_1_1_editor_toolkit_c_m_n.html#ac869f4e09a2cf6f235934f2d1088aff6":[1,0,0,114,7],
+"classvrv_1_1_editor_toolkit_c_m_n.html#ad9c4d17f1ff3882521adc42848634f0d":[1,0,0,114,17],
+"classvrv_1_1_editor_toolkit_c_m_n.html#adb2dc6b05317dba04b698499d7655d56":[1,0,0,114,11],
+"classvrv_1_1_editor_toolkit_c_m_n.html#aeb8a59e5f10e9448c8fa0e3a747a02bf":[1,0,0,114,13],
+"classvrv_1_1_editor_toolkit_c_m_n.html#aec51f93c00b6b229bde68e9ceea667b1":[1,0,0,114,0],
+"classvrv_1_1_editor_toolkit_c_m_n.html#aff288b5f00929f2d28ea8c8d39909222":[1,0,0,114,9],
+"classvrv_1_1_editor_toolkit_mensural.html":[1,0,0,115],
+"classvrv_1_1_editor_toolkit_mensural.html#a933d6f85afde75723a6c1a0354fc0c61":[1,0,0,115,0],
 "classvrv_1_1_editor_toolkit_mensural.html#aa78a02e5cad8f859edc5bb99aa8ed62d":[1,0,0,115,1],
 "classvrv_1_1_editor_toolkit_neume.html":[1,0,0,116],
 "classvrv_1_1_editor_toolkit_neume.html#a03f19235626c5060c2f43a5044827779":[1,0,0,116,31],
@@ -241,13 +249,5 @@ var NAVTREEINDEX6 =
 "classvrv_1_1_find_child_by_comparison_params.html#a9c929496d61bf092ee2f831c9d341c59":[1,0,0,136,3],
 "classvrv_1_1_find_child_by_comparison_params.html#ae5f0f82a4e5cce64f2c796d62c5c537b":[1,0,0,136,0],
 "classvrv_1_1_find_extreme_by_comparison_params.html":[1,0,0,137],
-"classvrv_1_1_find_extreme_by_comparison_params.html#a187f30ce10e5e1c19becf50683bfd37d":[1,0,0,137,2],
-"classvrv_1_1_find_extreme_by_comparison_params.html#a32e672fe91fca506a9b33b6ab00e548b":[1,0,0,137,0],
-"classvrv_1_1_find_extreme_by_comparison_params.html#a7aff30e79f9efa3cce037ca6e7a318ec":[1,0,0,137,1],
-"classvrv_1_1_find_layer_uuid_within_staff_def_params.html":[1,0,0,138],
-"classvrv_1_1_find_layer_uuid_within_staff_def_params.html#a437fa6212fa0525137113e4642c3f94f":[1,0,0,138,2],
-"classvrv_1_1_find_layer_uuid_within_staff_def_params.html#aa709e648d331c9229745c7823392ca6b":[1,0,0,138,1],
-"classvrv_1_1_find_layer_uuid_within_staff_def_params.html#ad24e98ae1caf19e02f0a52b440d2234d":[1,0,0,138,0],
-"classvrv_1_1_find_spanned_layer_elements_params.html":[1,0,0,139],
-"classvrv_1_1_find_spanned_layer_elements_params.html#a1af78e2f807d339d64136494976aad60":[1,0,0,139,3]
+"classvrv_1_1_find_extreme_by_comparison_params.html#a187f30ce10e5e1c19becf50683bfd37d":[1,0,0,137,2]
 };

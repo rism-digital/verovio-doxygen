@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['handleledgerlinestemcollision_2085',['HandleLedgerLineStemCollision',['../classvrv_1_1_note.html#a2f0823657fc3300f9cf1193231883ea4',1,'vrv::Note']]],
+  ['handleledgerlinestemcollision_2085',['HandleLedgerLineStemCollision',['../classvrv_1_1_note.html#a439ad8bb358267fa18e92f60549e03ff',1,'vrv::Note']]],
   ['hasaccidverticaloverlap_2086',['HasAccidVerticalOverlap',['../classvrv_1_1_alignment.html#aea36a7b4329422432d7f07027f8d355c',1,'vrv::Alignment::HasAccidVerticalOverlap()'],['../classvrv_1_1_alignment_reference.html#a07f81e388a3e9c7851b9adb9d59d0194',1,'vrv::AlignmentReference::HasAccidVerticalOverlap()']]],
-  ['hasadjacentnotesinstaff_2087',['HasAdjacentNotesInStaff',['../classvrv_1_1_chord.html#a97612e7dbc1589c45b0f56d337a20174',1,'vrv::Chord']]],
+  ['hasadjacentnotesinstaff_2087',['HasAdjacentNotesInStaff',['../classvrv_1_1_chord.html#aae40a5a6138745adfca188b90886f488',1,'vrv::Chord']]],
   ['hasalignmentreference_2088',['HasAlignmentReference',['../classvrv_1_1_alignment.html#ad026c49cccdf5a3437d24c359ea8a4e5',1,'vrv::Alignment']]],
   ['hasanchor_2089',['HasAnchor',['../classvrv_1_1_glyph.html#ad90069e264e474965231a37472d0aaf3',1,'vrv::Glyph']]],
   ['hasattribute_2090',['HasAttribute',['../classvrv_1_1_object.html#a07880f4ad709e37ca6b5483110905383',1,'vrv::Object']]],
   ['hascachedhorizontallayout_2091',['HasCachedHorizontalLayout',['../classvrv_1_1_measure.html#a5a45b03920fff1323cfca86c78f58db6',1,'vrv::Measure']]],
   ['hascoords_2092',['HasCoords',['../classvrv_1_1_beam_drawing_interface.html#ab2375a61b834b355a669a1490913fb04',1,'vrv::BeamDrawingInterface']]],
-  ['hascrossstaff_2093',['HasCrossStaff',['../classvrv_1_1_chord.html#a98098fbad2f5db6d24719b07e1d2e62e',1,'vrv::Chord::HasCrossStaff()'],['../classvrv_1_1_layer_element.html#a465be94711974a0588ded199e22f3ac9',1,'vrv::LayerElement::HasCrossStaff()']]],
+  ['hascrossstaff_2093',['HasCrossStaff',['../classvrv_1_1_chord.html#a10b9babfd1099c156e19a49ffc7eaaec',1,'vrv::Chord::HasCrossStaff()'],['../classvrv_1_1_layer_element.html#a88c53380f669585365356b17cbeaedb2',1,'vrv::LayerElement::HasCrossStaff()']]],
   ['hascrossstaffelements_2094',['HasCrossStaffElements',['../classvrv_1_1_alignment_reference.html#ad88dbf946e0441c77075ae5d6e43320b',1,'vrv::AlignmentReference']]],
   ['hasdescendant_2095',['HasDescendant',['../classvrv_1_1_object.html#a32d88cd25d424a5c15b014efe736ee20',1,'vrv::Object']]],
   ['haseditorialcontent_2096',['HasEditorialContent',['../classvrv_1_1_object.html#ac9dd387934b8960b47b96a0c05bb1b84',1,'vrv::Object']]],

@@ -40,8 +40,8 @@ var classvrv_1_1_bounding_box =
     [ "HasSelfHorizontalBB", "classvrv_1_1_bounding_box.html#a33e2d9c410be02f476ca19e0f063284c", null ],
     [ "HasSelfVerticalBB", "classvrv_1_1_bounding_box.html#a20afc38171ff613053a28a3530a66a05", null ],
     [ "HorizontalContentOverlap", "classvrv_1_1_bounding_box.html#aee28c8f38335a02d395f132eac3174a2", null ],
-    [ "HorizontalLeftOverlap", "classvrv_1_1_bounding_box.html#a505bfcdcaff3d551fdbd3a74ed3375f0", null ],
-    [ "HorizontalRightOverlap", "classvrv_1_1_bounding_box.html#ac4af18c7aeda842527a70954b409f54b", null ],
+    [ "HorizontalLeftOverlap", "classvrv_1_1_bounding_box.html#a0fdfa000c449d4c9b1de755dd1efff55", null ],
+    [ "HorizontalRightOverlap", "classvrv_1_1_bounding_box.html#a7265ddc2845db5bc543200b037048a2e", null ],
     [ "HorizontalSelfOverlap", "classvrv_1_1_bounding_box.html#a363e14e29dcb72d6539a832921c538f9", null ],
     [ "Intersects", "classvrv_1_1_bounding_box.html#ae73507464b47d2ccadbbf2a8231c643e", null ],
     [ "Intersects", "classvrv_1_1_bounding_box.html#aa2283d42759c18ce84fe53f2e1684849", null ],
@@ -56,10 +56,10 @@ var classvrv_1_1_bounding_box =
     [ "UpdateContentBBoxY", "classvrv_1_1_bounding_box.html#af90ec4f1a3393d9c89473f5a2b146b5b", null ],
     [ "UpdateSelfBBoxX", "classvrv_1_1_bounding_box.html#a5b5db30b70a0c954d37ae58e523dbead", null ],
     [ "UpdateSelfBBoxY", "classvrv_1_1_bounding_box.html#a029f007d1150f88d906b318b17ecdccc", null ],
-    [ "VerticalBottomOverlap", "classvrv_1_1_bounding_box.html#aa10dbbf04b3707900490d1ced0ea0418", null ],
+    [ "VerticalBottomOverlap", "classvrv_1_1_bounding_box.html#aeff55f50ac7cae031dfa289d422b77c0", null ],
     [ "VerticalContentOverlap", "classvrv_1_1_bounding_box.html#acdb36f4007fc88d79a81eed3b440c536", null ],
     [ "VerticalSelfOverlap", "classvrv_1_1_bounding_box.html#ab9bbe1447c1e512c9154825086f34aef", null ],
-    [ "VerticalTopOverlap", "classvrv_1_1_bounding_box.html#a85b3cd46765c07b3d16ed7933feaddff", null ],
+    [ "VerticalTopOverlap", "classvrv_1_1_bounding_box.html#aa4dda490e649a5c4817ef99853e0a3da", null ],
     [ "m_cachedDrawingX", "classvrv_1_1_bounding_box.html#a4961ebaf8f99abe31ee894345cd84a16", null ],
     [ "m_cachedDrawingY", "classvrv_1_1_bounding_box.html#a548baf7b854ef877313302670da5d0b8", null ]
 ];
