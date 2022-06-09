@@ -12,7 +12,7 @@ var classvrv_1_1_view =
     [ "DrawArpeg", "classvrv_1_1_view.html#a97a1829d5bbc7e84a9f89559b35a0fa5", null ],
     [ "DrawArpegEnclosing", "classvrv_1_1_view.html#a2274b4e1df5d9408884fe21b2fa6b517", null ],
     [ "DrawArtic", "classvrv_1_1_view.html#a0566695d628047766ec499dbcd3ace09", null ],
-    [ "DrawBarLine", "classvrv_1_1_view.html#ab03c14bfffe34dfc83e80745abc708e6", null ],
+    [ "DrawBarLine", "classvrv_1_1_view.html#acc09fdd6533ef7ce9c28e29738cf3fe5", null ],
     [ "DrawBarLine", "classvrv_1_1_view.html#a1cecb17af00b13cd9cfb74b5983c082d", null ],
     [ "DrawBarLineDots", "classvrv_1_1_view.html#a2b61d41841e94c885f0415a4e5b519e4", null ],
     [ "DrawBarLines", "classvrv_1_1_view.html#a3f4073d3c49e6c09bd33cd62bc09ae9f", null ],
