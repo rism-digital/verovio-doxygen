@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classvrv_1_1_editor_toolkit_c_m_n.html#ac147d71491a65338af6d57055eec95f3":[1,0,0,114,18],
 "classvrv_1_1_editor_toolkit_c_m_n.html#ac869f4e09a2cf6f235934f2d1088aff6":[1,0,0,114,7],
 "classvrv_1_1_editor_toolkit_c_m_n.html#ad9c4d17f1ff3882521adc42848634f0d":[1,0,0,114,17],
 "classvrv_1_1_editor_toolkit_c_m_n.html#adb2dc6b05317dba04b698499d7655d56":[1,0,0,114,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classvrv_1_1_find_child_by_comparison_params.html#a9334241fd934f53a91b3a550e3f4b242":[1,0,0,136,1],
 "classvrv_1_1_find_child_by_comparison_params.html#a9c929496d61bf092ee2f831c9d341c59":[1,0,0,136,3],
 "classvrv_1_1_find_child_by_comparison_params.html#ae5f0f82a4e5cce64f2c796d62c5c537b":[1,0,0,136,0],
-"classvrv_1_1_find_extreme_by_comparison_params.html":[1,0,0,137],
-"classvrv_1_1_find_extreme_by_comparison_params.html#a187f30ce10e5e1c19becf50683bfd37d":[1,0,0,137,2]
+"classvrv_1_1_find_extreme_by_comparison_params.html":[1,0,0,137]
 };

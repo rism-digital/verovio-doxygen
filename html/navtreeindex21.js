@@ -1,5 +1,8 @@
 var NAVTREEINDEX21 =
 {
+"classvrv_1_1_text_drawing_params.html#a3984fb69e4003edb277849326bb18384":[1,0,0,339,1],
+"classvrv_1_1_text_drawing_params.html#a4b7fc848edb16cdd7a5097f9428eaf5d":[1,0,0,339,4],
+"classvrv_1_1_text_drawing_params.html#a4c1bb2c4bc4d9b04971f544b51e44104":[1,0,0,339,8],
 "classvrv_1_1_text_drawing_params.html#a5559ee485fafc9f8d2afd7a2ea524084":[1,0,0,339,3],
 "classvrv_1_1_text_drawing_params.html#a572160298d4ba44a31fb053a51338b9f":[1,0,0,339,9],
 "classvrv_1_1_text_drawing_params.html#a69f55af21b9cd7fe7d26c406c875a8bb":[1,0,0,339,12],
@@ -195,9 +198,9 @@ var NAVTREEINDEX21 =
 "classvrv_1_1_trans_pitch.html#aebe0169a0e3f20bc4841b81ca6cf809c":[1,0,0,351,10],
 "classvrv_1_1_transpose_params.html":[1,0,0,352],
 "classvrv_1_1_transpose_params.html#a08e385a7cac546b3cbc82357ff2cdd00":[1,0,0,352,8],
+"classvrv_1_1_transpose_params.html#a26eef7ebe4f0e58d366b2e524f972cf1":[1,0,0,352,5],
 "classvrv_1_1_transpose_params.html#a437a5140ef9bd52ab5bb724e01df1b14":[1,0,0,352,9],
 "classvrv_1_1_transpose_params.html#a6e6ba5425a0ed7f004be78b1d5f4b669":[1,0,0,352,1],
-"classvrv_1_1_transpose_params.html#a866d557fd3071bbfe024eb1b86f07bac":[1,0,0,352,5],
 "classvrv_1_1_transpose_params.html#a898c74f0251c0e3c969959a6c0a69723":[1,0,0,352,10],
 "classvrv_1_1_transpose_params.html#aa8161505a101b1df51eba809407d6ae2":[1,0,0,352,3],
 "classvrv_1_1_transpose_params.html#aaa9d81a3500d72663ecdc97a59a6fb95":[1,0,0,352,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX21 =
 "classvrv_1_1_transposer.html#a9be59470393e0ac25f4bbfdbbad3e484":[1,0,0,353,40],
 "classvrv_1_1_transposer.html#a9c511dbbfe0d04cfeb9f7fa5471e1684":[1,0,0,353,30],
 "classvrv_1_1_transposer.html#aa075b42662562b8ef25c696d06c4934e":[1,0,0,353,48],
-"classvrv_1_1_transposer.html#aa1bff668a1475dcf14c942da6ed3f362":[1,0,0,353,20],
-"classvrv_1_1_transposer.html#aa20b36474c5b328a69754d899c921c12":[1,0,0,353,54],
-"classvrv_1_1_transposer.html#aa3b503054e4ed21d23338d3cf8fc6f6c":[1,0,0,353,9],
-"classvrv_1_1_transposer.html#aa610162af45cfd4e759a01b3e2046c31":[1,0,0,353,27]
+"classvrv_1_1_transposer.html#aa1bff668a1475dcf14c942da6ed3f362":[1,0,0,353,20]
 };

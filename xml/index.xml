@@ -835,6 +835,7 @@
     <member refid="classvrv_1_1_beam_element_coord_1a027f4c152d623e5cd81c3f659d15ac05" kind="function"><name>CalculateStemLengthTab</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1ae2413c9f9e24d8829395823ffa2ed51c" kind="function"><name>CalculateStemModAdjustment</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1a93940155d8a91b590cc29bcda00ec8ec" kind="function"><name>GetStemHolderInterface</name></member>
+    <member refid="classvrv_1_1_beam_element_coord_1a599f3e4fefc635f86a348e8313452706" kind="function"><name>UpdateStemLength</name></member>
   </compound>
   <compound refid="classvrv_1_1_beam_segment" kind="class"><name>vrv::BeamSegment</name>
     <member refid="classvrv_1_1_beam_segment_1affb5c3ee3c4310bc60db4c3880c8fb19" kind="function"><name>BeamSegment</name></member>
@@ -2473,6 +2474,7 @@
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1a437d6363e81b3565106f77d5db868637" kind="variable"><name>m_midiTrack</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1ae1a49482f921ef130ef998dcd6df1a86" kind="variable"><name>m_midiChannel</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1ab0078b3ff3c9bc63cffba4a01a8bb315" kind="variable"><name>m_totalTime</name></member>
+    <member refid="classvrv_1_1_generate_m_i_d_i_params_1aee7fbed127ae27bcc1db03116ec74c20" kind="variable"><name>m_staffN</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1acb7602c62aa7f79a2b15a9104bc0f8e3" kind="variable"><name>m_transSemi</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1a7ca852b307bdfa0085e79ea9004238e0" kind="variable"><name>m_currentTempo</name></member>
     <member refid="classvrv_1_1_generate_m_i_d_i_params_1aa90f0275f47df6d8872b275954b988bf" kind="variable"><name>m_lastNote</name></member>
@@ -4576,7 +4578,7 @@
     <member refid="classvrv_1_1_note_1a19e1747b8c15b47581048795066212aa" kind="function"><name>CalcDotLocations</name></member>
     <member refid="classvrv_1_1_note_1a3b6623d00c81c7344f837171373c956b" kind="function"><name>GetChromaticAlteration</name></member>
     <member refid="classvrv_1_1_note_1a475be4c24b3429a6c797c23f53608a54" kind="function"><name>GetTransPitch</name></member>
-    <member refid="classvrv_1_1_note_1a7ca01383e84db4f00a71c734b143b561" kind="function"><name>UpdateFromTransPitch</name></member>
+    <member refid="classvrv_1_1_note_1afa43708acf2f9ca9543997e89e4aac20" kind="function"><name>UpdateFromTransPitch</name></member>
     <member refid="classvrv_1_1_note_1a38bb856e1946cdc4a0b5bb7f8ceb8f7b" kind="function"><name>IsDotOverlappingWithFlag</name></member>
     <member refid="classvrv_1_1_note_1a28492b16495d73a5ca9f8e3010f8c6c3" kind="function"><name>DeferMIDINote</name></member>
     <member refid="classvrv_1_1_note_1ae531fddd081533c4c2acb5df822e87a3" kind="function"><name>GenerateGraceNoteMIDI</name></member>
@@ -6492,6 +6494,7 @@
     <member refid="classvrv_1_1_staff_def_1a1e0b6c30f24d640efdcee7d9a6f868aa" kind="function"><name>ReplaceDrawingValuesInStaffDef</name></member>
     <member refid="classvrv_1_1_staff_def_1a614058d092ccca27cbff9ee8668e0991" kind="function"><name>SetStaffDefRedrawFlags</name></member>
     <member refid="classvrv_1_1_staff_def_1a038e2f30c55de4451a60772969678129" kind="function"><name>PrepareDuration</name></member>
+    <member refid="classvrv_1_1_staff_def_1ad8ca3dbbd63cbc2b47bd235060582c6f" kind="function"><name>GenerateMIDI</name></member>
     <member refid="classvrv_1_1_staff_def_1a1123be347427f14748194056b274e7b0" kind="function"><name>Transpose</name></member>
   </compound>
   <compound refid="classvrv_1_1_staff_def_drawing_interface" kind="class"><name>vrv::StaffDefDrawingInterface</name>
@@ -7284,7 +7287,7 @@
     <member refid="classvrv_1_1_transpose_params_1ab632cce58757aa8265b1a738a3a90290" kind="variable"><name>m_selectedMdivUuid</name></member>
     <member refid="classvrv_1_1_transpose_params_1a6e6ba5425a0ed7f004be78b1d5f4b669" kind="variable"><name>m_currentMdivUuids</name></member>
     <member refid="classvrv_1_1_transpose_params_1a437a5140ef9bd52ab5bb724e01df1b14" kind="variable"><name>m_transposeToSoundingPitch</name></member>
-    <member refid="classvrv_1_1_transpose_params_1a866d557fd3071bbfe024eb1b86f07bac" kind="variable"><name>m_hasScoreDefKeySig</name></member>
+    <member refid="classvrv_1_1_transpose_params_1a26eef7ebe4f0e58d366b2e524f972cf1" kind="variable"><name>m_keySigForStaffN</name></member>
     <member refid="classvrv_1_1_transpose_params_1aaa9d81a3500d72663ecdc97a59a6fb95" kind="variable"><name>m_transposeIntervalForStaffN</name></member>
     <member refid="classvrv_1_1_transpose_params_1aad40c3744a6c09221f963e1302d2c99c" kind="function"><name>TransposeParams</name></member>
   </compound>

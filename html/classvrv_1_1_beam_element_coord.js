@@ -9,6 +9,7 @@ var classvrv_1_1_beam_element_coord =
     [ "GetStemHolderInterface", "classvrv_1_1_beam_element_coord.html#a93940155d8a91b590cc29bcda00ec8ec", null ],
     [ "SetClosestNoteOrTabDurSym", "classvrv_1_1_beam_element_coord.html#abd402f9d51ce8ecc55ab130c148e3c27", null ],
     [ "SetDrawingStemDir", "classvrv_1_1_beam_element_coord.html#acaf8f97534d8146d3032133e4372e504", null ],
+    [ "UpdateStemLength", "classvrv_1_1_beam_element_coord.html#a599f3e4fefc635f86a348e8313452706", null ],
     [ "m_beamRelativePlace", "classvrv_1_1_beam_element_coord.html#a0b6ef6f8b84ee38d9811e3860b0e408f", null ],
     [ "m_breaksec", "classvrv_1_1_beam_element_coord.html#ae86c87990d1a0fd3a79f340aafe31d6e", null ],
     [ "m_centered", "classvrv_1_1_beam_element_coord.html#a722f671cf181576d13b9ad96e8a14e53", null ],
