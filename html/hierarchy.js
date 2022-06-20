@@ -976,6 +976,7 @@ var hierarchy =
       [ "vrv::CalcAlignmentXPosParams", "classvrv_1_1_calc_alignment_x_pos_params.html", null ],
       [ "vrv::CalcArticParams", "classvrv_1_1_calc_artic_params.html", null ],
       [ "vrv::CalcBBoxOverflowsParams", "classvrv_1_1_calc_b_box_overflows_params.html", null ],
+      [ "vrv::CalcChordNoteHeadsParams", "classvrv_1_1_calc_chord_note_heads_params.html", null ],
       [ "vrv::CalcDotsParams", "classvrv_1_1_calc_dots_params.html", null ],
       [ "vrv::CalcSlurDirectionParams", "classvrv_1_1_calc_slur_direction_params.html", null ],
       [ "vrv::CalcStemParams", "classvrv_1_1_calc_stem_params.html", null ],

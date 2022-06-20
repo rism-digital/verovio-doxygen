@@ -68,6 +68,7 @@ var annotated_dup =
       [ "CalcAlignmentXPosParams", "classvrv_1_1_calc_alignment_x_pos_params.html", "classvrv_1_1_calc_alignment_x_pos_params" ],
       [ "CalcArticParams", "classvrv_1_1_calc_artic_params.html", "classvrv_1_1_calc_artic_params" ],
       [ "CalcBBoxOverflowsParams", "classvrv_1_1_calc_b_box_overflows_params.html", "classvrv_1_1_calc_b_box_overflows_params" ],
+      [ "CalcChordNoteHeadsParams", "classvrv_1_1_calc_chord_note_heads_params.html", "classvrv_1_1_calc_chord_note_heads_params" ],
       [ "CalcDotsParams", "classvrv_1_1_calc_dots_params.html", "classvrv_1_1_calc_dots_params" ],
       [ "CalcSlurDirectionParams", "classvrv_1_1_calc_slur_direction_params.html", "classvrv_1_1_calc_slur_direction_params" ],
       [ "CalcStemParams", "classvrv_1_1_calc_stem_params.html", "classvrv_1_1_calc_stem_params" ],
