@@ -1,5 +1,9 @@
 var NAVTREEINDEX9 =
 {
+"classvrv_1_1_humdrum_input.html#a753a2c3f3171d62739375714b3fd6da8":[1,0,0,164,37],
+"classvrv_1_1_humdrum_input.html#a762a62853506ed4922d7ce0cf2627504":[1,0,0,164,33],
+"classvrv_1_1_humdrum_input.html#a77e38a7839c1b60f0412309c8a68f64a":[1,0,0,164,319],
+"classvrv_1_1_humdrum_input.html#a77e9abee7e5765851e333acdea1f6e0c":[1,0,0,164,216],
 "classvrv_1_1_humdrum_input.html#a783ced98c098795b7cee3f882c8c2f37":[1,0,0,164,74],
 "classvrv_1_1_humdrum_input.html#a789990da73831fe3fa775dc306a994b8":[1,0,0,164,314],
 "classvrv_1_1_humdrum_input.html#a79def1f5f3a8b3400cd70586995cd14a":[1,0,0,164,198],
@@ -239,15 +243,11 @@ var NAVTREEINDEX9 =
 "classvrv_1_1_humdrum_signifiers.html#ae29c404cca51602dbe95b93f516c72a9":[1,0,0,165,17],
 "classvrv_1_1_humdrum_signifiers.html#ae73f7d3b23e354d51d65bcf338dca54a":[1,0,0,165,5],
 "classvrv_1_1_humdrum_signifiers.html#aefa426286e38175279e0c37f8d5b7a1c":[1,0,0,165,30],
-"classvrv_1_1_init_m_i_d_i_params.html":[1,0,0,167],
-"classvrv_1_1_init_m_i_d_i_params.html#a6e48be345a554d097db12a6d25c881b1":[1,0,0,167,2],
-"classvrv_1_1_init_m_i_d_i_params.html#a93e8a353e3ae39c24ac96ff4f99149f1":[1,0,0,167,1],
-"classvrv_1_1_init_m_i_d_i_params.html#ab4a3400b0bdd590bad5207c3f087763a":[1,0,0,167,0],
-"classvrv_1_1_init_max_measure_duration_params.html":[1,0,0,166],
-"classvrv_1_1_init_max_measure_duration_params.html#a281d9b227b65b23b68b7d8428ad9e033":[1,0,0,166,1],
-"classvrv_1_1_init_max_measure_duration_params.html#a30d3c3514456be9979fd5ef837e46b2f":[1,0,0,166,4],
-"classvrv_1_1_init_max_measure_duration_params.html#a58f5749febfa13ec6de7345930c63f9b":[1,0,0,166,2],
-"classvrv_1_1_init_max_measure_duration_params.html#aa2e43e8d1f55b15097cfefc190aff11d":[1,0,0,166,5],
-"classvrv_1_1_init_max_measure_duration_params.html#aa51ab0d589a4cc57768283081d919928":[1,0,0,166,0],
-"classvrv_1_1_init_max_measure_duration_params.html#afc8720a865bc062ff3a6e4ac4544caa2":[1,0,0,166,3]
+"classvrv_1_1_i_d_comparison.html":[1,0,0,166],
+"classvrv_1_1_i_d_comparison.html#a4a47fbd4eaee395e9695a33886382dcc":[1,0,0,166,2],
+"classvrv_1_1_i_d_comparison.html#a5517be9bad667a61d326026a2464a937":[1,0,0,166,1],
+"classvrv_1_1_i_d_comparison.html#a95e537011d3e3031d383c968074a35ee":[1,0,0,166,0],
+"classvrv_1_1_init_m_i_d_i_params.html":[1,0,0,168],
+"classvrv_1_1_init_m_i_d_i_params.html#a6e48be345a554d097db12a6d25c881b1":[1,0,0,168,2],
+"classvrv_1_1_init_m_i_d_i_params.html#a93e8a353e3ae39c24ac96ff4f99149f1":[1,0,0,168,1]
 };

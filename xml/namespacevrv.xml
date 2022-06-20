@@ -137,10 +137,10 @@
     <innerclass refid="classvrv_1_1_find_all_const_by_comparison_params" prot="public">vrv::FindAllConstByComparisonParams</innerclass>
     <innerclass refid="classvrv_1_1_find_all_referenced_objects_params" prot="public">vrv::FindAllReferencedObjectsParams</innerclass>
     <innerclass refid="classvrv_1_1_find_by_comparison_params" prot="public">vrv::FindByComparisonParams</innerclass>
-    <innerclass refid="classvrv_1_1_find_by_uuid_params" prot="public">vrv::FindByUuidParams</innerclass>
+    <innerclass refid="classvrv_1_1_find_by_i_d_params" prot="public">vrv::FindByIDParams</innerclass>
     <innerclass refid="classvrv_1_1_find_child_by_comparison_params" prot="public">vrv::FindChildByComparisonParams</innerclass>
     <innerclass refid="classvrv_1_1_find_extreme_by_comparison_params" prot="public">vrv::FindExtremeByComparisonParams</innerclass>
-    <innerclass refid="classvrv_1_1_find_layer_uuid_within_staff_def_params" prot="public">vrv::FindLayerUuidWithinStaffDefParams</innerclass>
+    <innerclass refid="classvrv_1_1_find_layer_i_d_within_staff_def_params" prot="public">vrv::FindLayerIDWithinStaffDefParams</innerclass>
     <innerclass refid="classvrv_1_1_find_spanned_layer_elements_params" prot="public">vrv::FindSpannedLayerElementsParams</innerclass>
     <innerclass refid="classvrv_1_1_fing" prot="public">vrv::Fing</innerclass>
     <innerclass refid="classvrv_1_1_flag" prot="public">vrv::Flag</innerclass>
@@ -168,6 +168,7 @@
     <innerclass refid="classvrv_1_1_horizontal_aligner" prot="public">vrv::HorizontalAligner</innerclass>
     <innerclass refid="classvrv_1_1_humdrum_input" prot="public">vrv::HumdrumInput</innerclass>
     <innerclass refid="classvrv_1_1_humdrum_signifiers" prot="public">vrv::HumdrumSignifiers</innerclass>
+    <innerclass refid="classvrv_1_1_i_d_comparison" prot="public">vrv::IDComparison</innerclass>
     <innerclass refid="classvrv_1_1_init_max_measure_duration_params" prot="public">vrv::InitMaxMeasureDurationParams</innerclass>
     <innerclass refid="classvrv_1_1_init_m_i_d_i_params" prot="public">vrv::InitMIDIParams</innerclass>
     <innerclass refid="classvrv_1_1_init_onset_offset_params" prot="public">vrv::InitOnsetOffsetParams</innerclass>
@@ -364,7 +365,6 @@
     <innerclass refid="classvrv_1_1_turn" prot="public">vrv::Turn</innerclass>
     <innerclass refid="classvrv_1_1_un_cast_off_params" prot="public">vrv::UnCastOffParams</innerclass>
     <innerclass refid="classvrv_1_1_unclear" prot="public">vrv::Unclear</innerclass>
-    <innerclass refid="classvrv_1_1_uuid_comparison" prot="public">vrv::UuidComparison</innerclass>
     <innerclass refid="classvrv_1_1_verse" prot="public">vrv::Verse</innerclass>
     <innerclass refid="classvrv_1_1_view" prot="public">vrv::View</innerclass>
     <innerclass refid="classvrv_1_1_visible_staff_def_or_grp_object" prot="public">vrv::VisibleStaffDefOrGrpObject</innerclass>
@@ -9317,11 +9317,11 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="330" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="330" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="vrvdef_8h_1aba74349ddea75116985c2b8e81265227" prot="public" static="no">
+      <memberdef kind="typedef" id="vrvdef_8h_1aa7e6011fec530997a25874e4630276ba" prot="public" static="no">
         <type>std::multimap&lt; std::string, <ref refid="classvrv_1_1_linking_interface" kindref="compound">LinkingInterface</ref> * &gt;</type>
-        <definition>typedef std::multimap&lt;std::string, LinkingInterface *&gt; vrv::MapOfLinkingInterfaceUuidPairs</definition>
+        <definition>typedef std::multimap&lt;std::string, LinkingInterface *&gt; vrv::MapOfLinkingInterfaceIDPairs</definition>
         <argsstring></argsstring>
-        <name>MapOfLinkingInterfaceUuidPairs</name>
+        <name>MapOfLinkingInterfaceIDPairs</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -9330,11 +9330,11 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="332" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="332" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="vrvdef_8h_1aac46cdb76c7ffd80c8d38e5e1d25df66" prot="public" static="no">
+      <memberdef kind="typedef" id="vrvdef_8h_1ab3049c688e7e57991c205a5eb006ce69" prot="public" static="no">
         <type>std::map&lt; std::string, <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> * &gt;</type>
-        <definition>typedef std::map&lt;std::string, Note *&gt; vrv::MapOfNoteUuidPairs</definition>
+        <definition>typedef std::map&lt;std::string, Note *&gt; vrv::MapOfNoteIDPairs</definition>
         <argsstring></argsstring>
-        <name>MapOfNoteUuidPairs</name>
+        <name>MapOfNoteIDPairs</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -9343,11 +9343,11 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" line="334" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/vrvdef.h" bodystart="334" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="vrvdef_8h_1a5fed6f8fb5b988006b6d3ee9f7adfe33" prot="public" static="no">
+      <memberdef kind="typedef" id="vrvdef_8h_1a3752de812dd78309de4fc095c9ccd3e7" prot="public" static="no">
         <type>std::vector&lt; std::tuple&lt; <ref refid="classvrv_1_1_plist_interface" kindref="compound">PlistInterface</ref> *, std::string, <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> * &gt; &gt;</type>
-        <definition>typedef std::vector&lt;std::tuple&lt;PlistInterface *, std::string, Object *&gt; &gt; vrv::ArrayOfPlistInterfaceUuidTuples</definition>
+        <definition>typedef std::vector&lt;std::tuple&lt;PlistInterface *, std::string, Object *&gt; &gt; vrv::ArrayOfPlistInterfaceIDTuples</definition>
         <argsstring></argsstring>
-        <name>ArrayOfPlistInterfaceUuidTuples</name>
+        <name>ArrayOfPlistInterfaceIDTuples</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -9978,17 +9978,17 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/vrv.h" line="52" column="6" declfile="/home/runner/work/verovio/verovio/include/vrv/vrv.h" declline="52" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="vrv_8h_1af06d8551b7845ce4ece8ac8b34d8bd84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="vrv_8h_1a9d466c2c98be49916f1662a04edb9c25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
-        <definition>std::string vrv::ExtractUuidFragment</definition>
-        <argsstring>(std::string refUuid)</argsstring>
-        <name>ExtractUuidFragment</name>
+        <definition>std::string vrv::ExtractIDFragment</definition>
+        <argsstring>(std::string refID)</argsstring>
+        <name>ExtractIDFragment</name>
         <param>
           <type>std::string</type>
-          <declname>refUuid</declname>
+          <declname>refID</declname>
         </param>
         <briefdescription>
-<para>Extract the uuid from a any uri string. </para>
+<para>Extract the ID from any URI. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>

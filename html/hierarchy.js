@@ -900,13 +900,13 @@ var hierarchy =
         [ "vrv::AttNNumberLikeComparison", "classvrv_1_1_att_n_number_like_comparison.html", null ],
         [ "vrv::AttVisibilityComparison", "classvrv_1_1_att_visibility_comparison.html", null ],
         [ "vrv::CrossAlignmentReferenceComparison", "classvrv_1_1_cross_alignment_reference_comparison.html", null ],
+        [ "vrv::IDComparison", "classvrv_1_1_i_d_comparison.html", null ],
         [ "vrv::IsAttributeComparison", "classvrv_1_1_is_attribute_comparison.html", null ],
         [ "vrv::IsEmptyComparison", "classvrv_1_1_is_empty_comparison.html", null ],
         [ "vrv::MeasureAlignerTypeComparison", "classvrv_1_1_measure_aligner_type_comparison.html", null ],
         [ "vrv::MeasureOnsetOffsetComparison", "classvrv_1_1_measure_onset_offset_comparison.html", null ],
         [ "vrv::PointingToComparison", "classvrv_1_1_pointing_to_comparison.html", null ],
-        [ "vrv::SpanningToComparison", "classvrv_1_1_spanning_to_comparison.html", null ],
-        [ "vrv::UuidComparison", "classvrv_1_1_uuid_comparison.html", null ]
+        [ "vrv::SpanningToComparison", "classvrv_1_1_spanning_to_comparison.html", null ]
       ] ],
       [ "vrv::ClassIdsComparison", "classvrv_1_1_class_ids_comparison.html", [
         [ "vrv::NoteOrRestOnsetOffsetComparison", "classvrv_1_1_note_or_rest_onset_offset_comparison.html", null ],
@@ -994,10 +994,10 @@ var hierarchy =
       [ "vrv::FindAllConstByComparisonParams", "classvrv_1_1_find_all_const_by_comparison_params.html", null ],
       [ "vrv::FindAllReferencedObjectsParams", "classvrv_1_1_find_all_referenced_objects_params.html", null ],
       [ "vrv::FindByComparisonParams", "classvrv_1_1_find_by_comparison_params.html", null ],
-      [ "vrv::FindByUuidParams", "classvrv_1_1_find_by_uuid_params.html", null ],
+      [ "vrv::FindByIDParams", "classvrv_1_1_find_by_i_d_params.html", null ],
       [ "vrv::FindChildByComparisonParams", "classvrv_1_1_find_child_by_comparison_params.html", null ],
       [ "vrv::FindExtremeByComparisonParams", "classvrv_1_1_find_extreme_by_comparison_params.html", null ],
-      [ "vrv::FindLayerUuidWithinStaffDefParams", "classvrv_1_1_find_layer_uuid_within_staff_def_params.html", null ],
+      [ "vrv::FindLayerIDWithinStaffDefParams", "classvrv_1_1_find_layer_i_d_within_staff_def_params.html", null ],
       [ "vrv::FindSpannedLayerElementsParams", "classvrv_1_1_find_spanned_layer_elements_params.html", null ],
       [ "vrv::FunctorDocParams", "classvrv_1_1_functor_doc_params.html", null ],
       [ "vrv::GenerateFeaturesParams", "classvrv_1_1_generate_features_params.html", null ],

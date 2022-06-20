@@ -274,9 +274,9 @@ $(document).ready(function(){initNavTree('iomei_8h_source.html',''); initResizab
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_m_e_i_output.html#ad9ceb7e54aba4517bbf303aa9ab2c56a">HasFilter</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordtype">void</span> SetFirstPage(<span class="keywordtype">int</span> page);</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordtype">void</span> SetLastPage(<span class="keywordtype">int</span> page);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">void</span> SetFirstMeasure(<span class="keyword">const</span> std::string &amp;uuid);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">void</span> SetLastMeasure(<span class="keyword">const</span> std::string &amp;uuid);</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">void</span> SetMdiv(<span class="keyword">const</span> std::string &amp;uuid);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">void</span> SetFirstMeasure(<span class="keyword">const</span> std::string &amp;<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">void</span> SetLastMeasure(<span class="keyword">const</span> std::string &amp;<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">void</span> SetMdiv(<span class="keyword">const</span> std::string &amp;<span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">void</span> ResetFilter();</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordtype">bool</span> IsScoreBasedMEI()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_scoreBasedMEI; }</div>
@@ -471,7 +471,7 @@ $(document).ready(function(){initNavTree('iomei_8h_source.html',''); initResizab
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160; </div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    std::wstring EscapeSMuFL(std::wstring data);</div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160; </div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    std::string UuidToMeiStr(<a class="code" href="classvrv_1_1_object.html">Object</a> *element);</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    std::string IDToMeiStr(<a class="code" href="classvrv_1_1_object.html">Object</a> *element);</div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    std::string DocTypeToStr(DocType type);</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160; </div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;<span class="keyword">public</span>:</div>
@@ -493,10 +493,10 @@ $(document).ready(function(){initNavTree('iomei_8h_source.html',''); initResizab
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <span class="keywordtype">int</span> m_firstPage;</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    <span class="keywordtype">int</span> m_currentPage;</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    <span class="keywordtype">int</span> m_lastPage;</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    std::string m_firstMeasureUuid;</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    std::string m_lastMeasureUuid;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    std::string m_firstMeasureID;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    std::string m_lastMeasureID;</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    RangeMatchLocation m_measureFilterMatchLocation;</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    std::string m_mdivUuid;</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    std::string m_mdivID;</div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    MatchLocation m_mdivFilterMatchLocation;</div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160; </div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    <span class="keywordtype">bool</span> m_ignoreHeader;</div>
@@ -701,7 +701,7 @@ $(document).ready(function(){initNavTree('iomei_8h_source.html',''); initResizab
 <div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160; </div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    <span class="keywordtype">bool</span> ReadScoreBasedMei(pugi::xml_node element, <a class="code" href="classvrv_1_1_score.html">Score</a> *parent);</div>
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160; </div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    <span class="keywordtype">void</span> SetMeiUuid(pugi::xml_node element, <a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    <span class="keywordtype">void</span> SetMeiID(pugi::xml_node element, <a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    DocType StrToDocType(std::string type);</div>
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    std::wstring LeftTrim(std::wstring str);</div>
 <div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    std::wstring RightTrim(std::wstring str);</div>
@@ -917,7 +917,7 @@ $(document).ready(function(){initNavTree('iomei_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>iomei.h</b></li>
-    <li class="footer">Generated on Fri Jun 17 2022 08:56:47 for Verovio by
+    <li class="footer">Generated on Mon Jun 20 2022 08:01:21 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

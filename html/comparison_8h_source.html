@@ -527,24 +527,24 @@ $(document).ready(function(){initNavTree('comparison_8h_source.html',''); initRe
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;};</div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160; </div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;<span class="comment">// UuidComparison</span></div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;<span class="comment">// IDComparison</span></div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160; </div>
-<div class="line"><a name="l00487"></a><span class="lineno"><a class="line" href="classvrv_1_1_uuid_comparison.html">  487</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_uuid_comparison.html">UuidComparison</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_class_id_comparison.html">ClassIdComparison</a> {</div>
+<div class="line"><a name="l00487"></a><span class="lineno"><a class="line" href="classvrv_1_1_i_d_comparison.html">  487</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_i_d_comparison.html">IDComparison</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_class_id_comparison.html">ClassIdComparison</a> {</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160; </div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <a class="code" href="classvrv_1_1_uuid_comparison.html">UuidComparison</a>(ClassId classId, <span class="keyword">const</span> std::string &amp;uuid) : <a class="code" href="classvrv_1_1_class_id_comparison.html">ClassIdComparison</a>(classId) { m_uuid = uuid; }</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <a class="code" href="classvrv_1_1_i_d_comparison.html">IDComparison</a>(ClassId classId, <span class="keyword">const</span> std::string &amp;<span class="keywordtype">id</span>) : <a class="code" href="classvrv_1_1_class_id_comparison.html">ClassIdComparison</a>(classId) { m_id = id; }</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160; </div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keywordtype">void</span> SetUuid(<span class="keyword">const</span> std::string &amp;uuid) { m_uuid = uuid; }</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keywordtype">void</span> SetID(<span class="keyword">const</span> std::string &amp;<span class="keywordtype">id</span>) { m_id = id; }</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160; </div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        <span class="keywordflow">if</span> (!MatchesType(<span class="keywordtype">object</span>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        <span class="keywordflow">return</span> <span class="keywordtype">object</span>-&gt;GetUuid() == m_uuid;</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        <span class="keywordflow">return</span> (object-&gt;GetID() == m_id);</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    }</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160; </div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    std::string m_uuid;</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    std::string m_id;</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;};</div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160; </div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
@@ -648,13 +648,13 @@ $(document).ready(function(){initNavTree('comparison_8h_source.html',''); initRe
 <div class="ttc" id="aclassvrv_1_1_spanning_to_comparison_html"><div class="ttname"><a href="classvrv_1_1_spanning_to_comparison.html">vrv::SpanningToComparison</a></div><div class="ttdef"><b>Definition:</b> comparison.h:142</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_onset_offset_comparison_html"><div class="ttname"><a href="classvrv_1_1_measure_onset_offset_comparison.html">vrv::MeasureOnsetOffsetComparison</a></div><div class="ttdoc">This class evaluates if the object is a measure enclosing the given time.</div><div class="ttdef"><b>Definition:</b> comparison.h:434</div></div>
 <div class="ttc" id="aclassvrv_1_1_visible_staff_def_or_grp_object_html"><div class="ttname"><a href="classvrv_1_1_visible_staff_def_or_grp_object.html">vrv::VisibleStaffDefOrGrpObject</a></div><div class="ttdoc">This class evaluates if the object is a visible StaffDef or StaffGrp.</div><div class="ttdef"><b>Definition:</b> comparison.h:511</div></div>
-<div class="ttc" id="aclassvrv_1_1_uuid_comparison_html"><div class="ttname"><a href="classvrv_1_1_uuid_comparison.html">vrv::UuidComparison</a></div><div class="ttdoc">This class evaluates if the object is of a certain ClassId has a certain Uuid.</div><div class="ttdef"><b>Definition:</b> comparison.h:487</div></div>
 <div class="ttc" id="aclassvrv_1_1_att_n_integer_any_comparison_html"><div class="ttname"><a href="classvrv_1_1_att_n_integer_any_comparison.html">vrv::AttNIntegerAnyComparison</a></div><div class="ttdoc">This class evaluates if the object is of a certain ClassId and has a   of value n.</div><div class="ttdef"><b>Definition:</b> comparison.h:260</div></div>
 <div class="ttc" id="aclassvrv_1_1_is_editorial_element_comparison_html"><div class="ttname"><a href="classvrv_1_1_is_editorial_element_comparison.html">vrv::IsEditorialElementComparison</a></div><div class="ttdoc">This class evaluates if the object is an editorial element.</div><div class="ttdef"><b>Definition:</b> comparison.h:169</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_html"><div class="ttname"><a href="classvrv_1_1_alignment.html">vrv::Alignment</a></div><div class="ttdoc">This class stores an alignment position elements will point to.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:68</div></div>
 <div class="ttc" id="aclassvrv_1_1_pointing_to_comparison_html"><div class="ttname"><a href="classvrv_1_1_pointing_to_comparison.html">vrv::PointingToComparison</a></div><div class="ttdef"><b>Definition:</b> comparison.h:118</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_reference_html_ad88dbf946e0441c77075ae5d6e43320b"><div class="ttname"><a href="classvrv_1_1_alignment_reference.html#ad88dbf946e0441c77075ae5d6e43320b">vrv::AlignmentReference::HasCrossStaffElements</a></div><div class="ttdeci">bool HasCrossStaffElements() const</div><div class="ttdoc">Return true if the reference has elements from cross-staff.</div></div>
 <div class="ttc" id="aclassvrv_1_1_att_visibility_comparison_html"><div class="ttname"><a href="classvrv_1_1_att_visibility_comparison.html">vrv::AttVisibilityComparison</a></div><div class="ttdoc">This class evaluates if the object is visible.</div><div class="ttdef"><b>Definition:</b> comparison.h:360</div></div>
+<div class="ttc" id="aclassvrv_1_1_i_d_comparison_html"><div class="ttname"><a href="classvrv_1_1_i_d_comparison.html">vrv::IDComparison</a></div><div class="ttdoc">This class evaluates if the object is of a certain ClassId has a certain ID.</div><div class="ttdef"><b>Definition:</b> comparison.h:487</div></div>
 <div class="ttc" id="aclassvrv_1_1_att_dur_extreme_comparison_html"><div class="ttname"><a href="classvrv_1_1_att_dur_extreme_comparison.html">vrv::AttDurExtremeComparison</a></div><div class="ttdoc">This class evaluates if the object the extreme duration so far The object has to have a DurationInter...</div><div class="ttdef"><b>Definition:</b> comparison.h:319</div></div>
 <div class="ttc" id="aclassvrv_1_1_cross_alignment_reference_comparison_html"><div class="ttname"><a href="classvrv_1_1_cross_alignment_reference_comparison.html">vrv::CrossAlignmentReferenceComparison</a></div><div class="ttdoc">This class evaluates if alignment reference contains cross-staff elements.</div><div class="ttdef"><b>Definition:</b> comparison.h:388</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_or_rest_onset_offset_comparison_html"><div class="ttname"><a href="classvrv_1_1_note_or_rest_onset_offset_comparison.html">vrv::NoteOrRestOnsetOffsetComparison</a></div><div class="ttdoc">This class evaluates if the object is a note being played at the given time.</div><div class="ttdef"><b>Definition:</b> comparison.h:460</div></div>
@@ -669,7 +669,7 @@ $(document).ready(function(){initNavTree('comparison_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>comparison.h</b></li>
-    <li class="footer">Generated on Fri Jun 17 2022 08:56:47 for Verovio by
+    <li class="footer">Generated on Mon Jun 20 2022 08:01:21 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

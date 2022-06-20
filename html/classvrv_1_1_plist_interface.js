@@ -11,6 +11,6 @@ var classvrv_1_1_plist_interface =
     [ "IsInterface", "classvrv_1_1_plist_interface.html#a1c9412527898b4ebb0c807d2666b88e3", null ],
     [ "IsValidRef", "classvrv_1_1_plist_interface.html#ad0394329ca5d2c32c1bf302c6d8a0223", null ],
     [ "Reset", "classvrv_1_1_plist_interface.html#a40ccf57ce37762425b8f243950f23d9e", null ],
-    [ "SetRef", "classvrv_1_1_plist_interface.html#af35e5f54f1954edac45545c5079684f4", null ],
-    [ "SetUuidStrs", "classvrv_1_1_plist_interface.html#a38c6c2162becabf7f6f061de2c2c7b62", null ]
+    [ "SetIDStrs", "classvrv_1_1_plist_interface.html#af991caffd615b96f9cd74f9b662570cc", null ],
+    [ "SetRef", "classvrv_1_1_plist_interface.html#af35e5f54f1954edac45545c5079684f4", null ]
 ];

@@ -148,6 +148,16 @@ Public Member Functions</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#ae79b9324168608f36cb71c8ca4174220">ResetBoundingBox</a> ()</td></tr>
 <tr class="memdesc:ae79b9324168608f36cb71c8ca4174220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the bounding box values. <br /></td></tr>
 <tr class="separator:ae79b9324168608f36cb71c8ca4174220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ac837dc797c5f292c98ddb3f43a098"><td class="memItemLeft" align="right" valign="top"><a id="a52ac837dc797c5f292c98ddb3f43a098"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a52ac837dc797c5f292c98ddb3f43a098">Encloses</a> (const <a class="el" href="classvrv_1_1_point.html">Point</a> point) const</td></tr>
+<tr class="memdesc:a52ac837dc797c5f292c98ddb3f43a098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the bounding box encloses the point. <br /></td></tr>
+<tr class="separator:a52ac837dc797c5f292c98ddb3f43a098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2283d42759c18ce84fe53f2e1684849"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#aa2283d42759c18ce84fe53f2e1684849">Intersects</a> (<a class="el" href="classvrv_1_1_floating_curve_positioner.html">FloatingCurvePositioner</a> *curve, Accessor type, int margin=0) const</td></tr>
+<tr class="memdesc:aa2283d42759c18ce84fe53f2e1684849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return intersection between the bounding box and the curve represented by the <a class="el" href="classvrv_1_1_floating_positioner.html" title="This class represents a basic object in the layout domain.">FloatingPositioner</a>.  <a href="classvrv_1_1_bounding_box.html#aa2283d42759c18ce84fe53f2e1684849">More...</a><br /></td></tr>
+<tr class="separator:aa2283d42759c18ce84fe53f2e1684849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73507464b47d2ccadbbf2a8231c643e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#ae73507464b47d2ccadbbf2a8231c643e">Intersects</a> (<a class="el" href="classvrv_1_1_beam_drawing_interface.html">BeamDrawingInterface</a> *beamInterface, Accessor type, int margin=0) const</td></tr>
+<tr class="memdesc:ae73507464b47d2ccadbbf2a8231c643e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return intersection between the bounding box and the beam represented by the <a class="el" href="classvrv_1_1_beam_drawing_interface.html" title="This class is an interface for MEI beam elements (beam, beamSpan).">BeamDrawingInterface</a>.  <a href="classvrv_1_1_bounding_box.html#ae73507464b47d2ccadbbf2a8231c643e">More...</a><br /></td></tr>
+<tr class="separator:ae73507464b47d2ccadbbf2a8231c643e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, reset methods</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Reset method resets all attribute classes </p>
 </div></td></tr>
@@ -321,26 +331,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>HorizontalSelfOverlap
 <tr class="memitem:ab9bbe1447c1e512c9154825086f34aef"><td class="memItemLeft" align="right" valign="top"><a id="ab9bbe1447c1e512c9154825086f34aef"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>VerticalSelfOverlap</b> (const <a class="el" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *other, int margin=0) const</td></tr>
 <tr class="separator:ab9bbe1447c1e512c9154825086f34aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab4d1764142c6881678dbfcaee124e38f"><td class="memItemLeft" align="right" valign="top"><a id="ab4d1764142c6881678dbfcaee124e38f"></a>
-static std::set&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#ab4d1764142c6881678dbfcaee124e38f">SolveCubicPolynomial</a> (double a, double b, double c, double d)</td></tr>
-<tr class="memdesc:ab4d1764142c6881678dbfcaee124e38f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve the cubic equation ax^3 + bx^2 + cx + d = 0 Returns up to three real roots. <br /></td></tr>
-<tr class="separator:ab4d1764142c6881678dbfcaee124e38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a4961ebaf8f99abe31ee894345cd84a16"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a4961ebaf8f99abe31ee894345cd84a16">m_cachedDrawingX</a></td></tr>
-<tr class="memdesc:a4961ebaf8f99abe31ee894345cd84a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cached version of the drawingX and drawingY values.  <a href="classvrv_1_1_bounding_box.html#a4961ebaf8f99abe31ee894345cd84a16">More...</a><br /></td></tr>
-<tr class="separator:a4961ebaf8f99abe31ee894345cd84a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a548baf7b854ef877313302670da5d0b8"><td class="memItemLeft" align="right" valign="top"><a id="a548baf7b854ef877313302670da5d0b8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></td></tr>
-<tr class="separator:a548baf7b854ef877313302670da5d0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
-Return the overlap on the left / right / top / bottom looking at bounding box anchor points</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Return the overlap on the left / right / top / bottom looking at bounding box anchor points</div></td></tr>
 <tr class="memitem:a0fdfa000c449d4c9b1de755dd1efff55"><td class="memItemLeft" align="right" valign="top"><a id="a0fdfa000c449d4c9b1de755dd1efff55"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>HorizontalLeftOverlap</b> (const <a class="el" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *other, const <a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, int margin=0, int vMargin=0) const</td></tr>
 <tr class="separator:a0fdfa000c449d4c9b1de755dd1efff55"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -353,16 +344,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>VerticalTopOverlap</b>
 <tr class="memitem:aeff55f50ac7cae031dfa289d422b77c0"><td class="memItemLeft" align="right" valign="top"><a id="aeff55f50ac7cae031dfa289d422b77c0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>VerticalBottomOverlap</b> (const <a class="el" href="classvrv_1_1_bounding_box.html">BoundingBox</a> *other, const <a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, int margin=0, int hMargin=0) const</td></tr>
 <tr class="separator:aeff55f50ac7cae031dfa289d422b77c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52ac837dc797c5f292c98ddb3f43a098"><td class="memItemLeft" align="right" valign="top"><a id="a52ac837dc797c5f292c98ddb3f43a098"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a52ac837dc797c5f292c98ddb3f43a098">Encloses</a> (const <a class="el" href="classvrv_1_1_point.html">Point</a> point) const</td></tr>
-<tr class="memdesc:a52ac837dc797c5f292c98ddb3f43a098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the bounding box encloses the point. <br /></td></tr>
-<tr class="separator:a52ac837dc797c5f292c98ddb3f43a098"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2283d42759c18ce84fe53f2e1684849"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#aa2283d42759c18ce84fe53f2e1684849">Intersects</a> (<a class="el" href="classvrv_1_1_floating_curve_positioner.html">FloatingCurvePositioner</a> *curve, Accessor type, int margin=0) const</td></tr>
-<tr class="memdesc:aa2283d42759c18ce84fe53f2e1684849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return intersection between the bounding box and the curve represented by the <a class="el" href="classvrv_1_1_floating_positioner.html" title="This class represents a basic object in the layout domain.">FloatingPositioner</a>.  <a href="classvrv_1_1_bounding_box.html#aa2283d42759c18ce84fe53f2e1684849">More...</a><br /></td></tr>
-<tr class="separator:aa2283d42759c18ce84fe53f2e1684849"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae73507464b47d2ccadbbf2a8231c643e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#ae73507464b47d2ccadbbf2a8231c643e">Intersects</a> (<a class="el" href="classvrv_1_1_beam_drawing_interface.html">BeamDrawingInterface</a> *beamInterface, Accessor type, int margin=0) const</td></tr>
-<tr class="memdesc:ae73507464b47d2ccadbbf2a8231c643e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return intersection between the bounding box and the beam represented by the <a class="el" href="classvrv_1_1_beam_drawing_interface.html" title="This class is an interface for MEI beam elements (beam, beamSpan).">BeamDrawingInterface</a>.  <a href="classvrv_1_1_bounding_box.html#ae73507464b47d2ccadbbf2a8231c643e">More...</a><br /></td></tr>
-<tr class="separator:ae73507464b47d2ccadbbf2a8231c643e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Return the left / right / top / bottom of the cut out rectangles (and use self bounding rect if there are</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>none) </p>
+</div></td></tr>
+<tr class="memitem:a81256810cab77e0d9fedf64fa858690f"><td class="memItemLeft" align="right" valign="top"><a id="a81256810cab77e0d9fedf64fa858690f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetCutOutTop</b> (const <a class="el" href="classvrv_1_1_resources.html">Resources</a> &amp;resources) const</td></tr>
+<tr class="separator:a81256810cab77e0d9fedf64fa858690f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26bfbd087c59e094696d2c0ff1fd89ea"><td class="memItemLeft" align="right" valign="top"><a id="a26bfbd087c59e094696d2c0ff1fd89ea"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetCutOutBottom</b> (const <a class="el" href="classvrv_1_1_resources.html">Resources</a> &amp;resources) const</td></tr>
+<tr class="separator:a26bfbd087c59e094696d2c0ff1fd89ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a341aeebe2fdd010ebf72aaf1c8760df3"><td class="memItemLeft" align="right" valign="top"><a id="a341aeebe2fdd010ebf72aaf1c8760df3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetCutOutLeft</b> (const <a class="el" href="classvrv_1_1_resources.html">Resources</a> &amp;resources) const</td></tr>
+<tr class="separator:a341aeebe2fdd010ebf72aaf1c8760df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3f8eacafe2bfb2becd732507f259ae"><td class="memItemLeft" align="right" valign="top"><a id="abc3f8eacafe2bfb2becd732507f259ae"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetCutOutRight</b> (const <a class="el" href="classvrv_1_1_resources.html">Resources</a> &amp;resources) const</td></tr>
+<tr class="separator:abc3f8eacafe2bfb2becd732507f259ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6a5b0a558c2799d3216a62a352eec938"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a6a5b0a558c2799d3216a62a352eec938">Swap</a> (int &amp;v1, int &amp;v2)</td></tr>
 <tr class="memdesc:a6a5b0a558c2799d3216a62a352eec938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap values.  <a href="classvrv_1_1_bounding_box.html#a6a5b0a558c2799d3216a62a352eec938">More...</a><br /></td></tr>
 <tr class="separator:a6a5b0a558c2799d3216a62a352eec938"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -418,6 +417,11 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#ae9a22cf5d306abb22ff5f557e81bd9af">ApproximateBezierBoundingBox</a> (const <a class="el" href="classvrv_1_1_point.html">Point</a> bezier[4], <a class="el" href="classvrv_1_1_point.html">Point</a> &amp;pos, int &amp;width, int &amp;height, int &amp;minYPos, int &amp;maxYPos)</td></tr>
 <tr class="memdesc:ae9a22cf5d306abb22ff5f557e81bd9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate the bounding box of a bezier taking into accound the height and the width. <br /></td></tr>
 <tr class="separator:ae9a22cf5d306abb22ff5f557e81bd9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d1764142c6881678dbfcaee124e38f"><td class="memItemLeft" align="right" valign="top"><a id="ab4d1764142c6881678dbfcaee124e38f"></a>
+static std::set&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#ab4d1764142c6881678dbfcaee124e38f">SolveCubicPolynomial</a> (double a, double b, double c, double d)</td></tr>
+<tr class="memdesc:ab4d1764142c6881678dbfcaee124e38f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve the cubic equation ax^3 + bx^2 + cx + d = 0 Returns up to three real roots. <br /></td></tr>
+<tr class="separator:ab4d1764142c6881678dbfcaee124e38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a414f972e6f1e4231d61acdd7329eb414"><td class="memItemLeft" align="right" valign="top"><a id="a414f972e6f1e4231d61acdd7329eb414"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a414f972e6f1e4231d61acdd7329eb414">RectLeftOverlap</a> (const <a class="el" href="classvrv_1_1_point.html">Point</a> rect1[2], const <a class="el" href="classvrv_1_1_point.html">Point</a> rect2[2], int margin, int vMargin)</td></tr>
 <tr class="memdesc:a414f972e6f1e4231d61acdd7329eb414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the left / right / top / bottom overlap of two rectangle taking into account the margin / v-h-Margins. <br /></td></tr>
@@ -431,6 +435,16 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectTopOverlap<
 <tr class="memitem:a74c28d831f2e14aec44a848a961f8b42"><td class="memItemLeft" align="right" valign="top"><a id="a74c28d831f2e14aec44a848a961f8b42"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverlap</b> (const <a class="el" href="classvrv_1_1_point.html">Point</a> rect1[2], const <a class="el" href="classvrv_1_1_point.html">Point</a> rect2[2], int margin, int hMargin)</td></tr>
 <tr class="separator:a74c28d831f2e14aec44a848a961f8b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a4961ebaf8f99abe31ee894345cd84a16"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a4961ebaf8f99abe31ee894345cd84a16">m_cachedDrawingX</a></td></tr>
+<tr class="memdesc:a4961ebaf8f99abe31ee894345cd84a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cached version of the drawingX and drawingY values.  <a href="classvrv_1_1_bounding_box.html#a4961ebaf8f99abe31ee894345cd84a16">More...</a><br /></td></tr>
+<tr class="separator:a4961ebaf8f99abe31ee894345cd84a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a548baf7b854ef877313302670da5d0b8"><td class="memItemLeft" align="right" valign="top"><a id="a548baf7b854ef877313302670da5d0b8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></td></tr>
+<tr class="separator:a548baf7b854ef877313302670da5d0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represents a basic object in the layout domain. </p>
@@ -665,7 +679,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_bounding_box.html">BoundingBox</a></li>
-    <li class="footer">Generated on Fri Jun 17 2022 08:56:48 for Verovio by
+    <li class="footer">Generated on Mon Jun 20 2022 08:01:22 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -18,6 +18,7 @@ var classvrv_1_1_toolkit =
     [ "GetHumdrum", "group__nodoc.html#ga942ab5856517907ea4f2082d9f35f532", null ],
     [ "GetHumdrumBuffer", "group__nodoc.html#ga11e13d1850cadf28b00a85fde655e133", null ],
     [ "GetHumdrumFile", "classvrv_1_1_toolkit.html#ade214f7c4d835643aa13046d8ae000ef", null ],
+    [ "GetID", "classvrv_1_1_toolkit.html#a86dae67d6cae81d8026da6968e665e99", null ],
     [ "GetInputFrom", "group__nodoc.html#gac0b9bfca70ab200ca3e313611e37cc20", null ],
     [ "GetLog", "classvrv_1_1_toolkit.html#a0dacf26288d829c51737cbca389c7117", null ],
     [ "GetMEI", "classvrv_1_1_toolkit.html#a32c3ff9da41c302c83c6f8d52fc11467", null ],

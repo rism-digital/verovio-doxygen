@@ -681,9 +681,9 @@
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_m_e_i_output_1ad9ceb7e54aba4517bbf303aa9ab2c56a" kindref="member">HasFilter</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetFirstPage(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>page);</highlight></codeline>
 <codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetLastPage(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>page);</highlight></codeline>
-<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetFirstMeasure(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;uuid);</highlight></codeline>
-<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetLastMeasure(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;uuid);</highlight></codeline>
-<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetMdiv(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;uuid);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetFirstMeasure(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetLastMeasure(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetMdiv(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ResetFilter();</highlight></codeline>
 <codeline lineno="225"></codeline>
 <codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsScoreBasedMEI()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_scoreBasedMEI;<sp/>}</highlight></codeline>
@@ -878,7 +878,7 @@
 <codeline lineno="506"></codeline>
 <codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/>std::wstring<sp/>EscapeSMuFL(std::wstring<sp/>data);</highlight></codeline>
 <codeline lineno="513"><highlight class="normal"></highlight></codeline>
-<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>UuidToMeiStr(<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*element);</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>IDToMeiStr(<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*element);</highlight></codeline>
 <codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>DocTypeToStr(DocType<sp/>type);</highlight></codeline>
 <codeline lineno="519"><highlight class="normal"></highlight></codeline>
 <codeline lineno="520"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
@@ -900,10 +900,10 @@
 <codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_firstPage;</highlight></codeline>
 <codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_currentPage;</highlight></codeline>
 <codeline lineno="544"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_lastPage;</highlight></codeline>
-<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_firstMeasureUuid;</highlight></codeline>
-<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_lastMeasureUuid;</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_firstMeasureID;</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_lastMeasureID;</highlight></codeline>
 <codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/>RangeMatchLocation<sp/>m_measureFilterMatchLocation;</highlight></codeline>
-<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_mdivUuid;</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_mdivID;</highlight></codeline>
 <codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/>MatchLocation<sp/>m_mdivFilterMatchLocation;</highlight></codeline>
 <codeline lineno="551"><highlight class="normal"></highlight></codeline>
 <codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_ignoreHeader;</highlight></codeline>
@@ -1108,7 +1108,7 @@
 <codeline lineno="818"><highlight class="normal"></highlight></codeline>
 <codeline lineno="824"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ReadScoreBasedMei(pugi::xml_node<sp/>element,<sp/><ref refid="classvrv_1_1_score" kindref="compound">Score</ref><sp/>*parent);</highlight></codeline>
 <codeline lineno="825"><highlight class="normal"></highlight></codeline>
-<codeline lineno="829"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetMeiUuid(pugi::xml_node<sp/>element,<sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="829"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetMeiID(pugi::xml_node<sp/>element,<sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="831"><highlight class="normal"><sp/><sp/><sp/><sp/>DocType<sp/>StrToDocType(std::string<sp/>type);</highlight></codeline>
 <codeline lineno="832"><highlight class="normal"><sp/><sp/><sp/><sp/>std::wstring<sp/>LeftTrim(std::wstring<sp/>str);</highlight></codeline>
 <codeline lineno="833"><highlight class="normal"><sp/><sp/><sp/><sp/>std::wstring<sp/>RightTrim(std::wstring<sp/>str);</highlight></codeline>

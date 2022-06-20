@@ -589,7 +589,7 @@
     <innerclass refid="classvrv_1_1_measure_aligner_type_comparison" prot="public">vrv::MeasureAlignerTypeComparison</innerclass>
     <innerclass refid="classvrv_1_1_measure_onset_offset_comparison" prot="public">vrv::MeasureOnsetOffsetComparison</innerclass>
     <innerclass refid="classvrv_1_1_note_or_rest_onset_offset_comparison" prot="public">vrv::NoteOrRestOnsetOffsetComparison</innerclass>
-    <innerclass refid="classvrv_1_1_uuid_comparison" prot="public">vrv::UuidComparison</innerclass>
+    <innerclass refid="classvrv_1_1_i_d_comparison" prot="public">vrv::IDComparison</innerclass>
     <innerclass refid="classvrv_1_1_visible_staff_def_or_grp_object" prot="public">vrv::VisibleStaffDefOrGrpObject</innerclass>
     <innerclass refid="classvrv_1_1_filters" prot="public">vrv::Filters</innerclass>
     <innernamespace refid="namespacevrv">vrv</innernamespace>
@@ -1038,24 +1038,24 @@
 <codeline lineno="478"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="479"><highlight class="normal"></highlight></codeline>
 <codeline lineno="480"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="481"><highlight class="normal"></highlight><highlight class="comment">//<sp/>UuidComparison</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IDComparison</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="482"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="483"><highlight class="normal"></highlight></codeline>
-<codeline lineno="487" refid="classvrv_1_1_uuid_comparison" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_uuid_comparison" kindref="compound">UuidComparison</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_class_id_comparison" kindref="compound">ClassIdComparison</ref><sp/>{</highlight></codeline>
+<codeline lineno="487" refid="classvrv_1_1_i_d_comparison" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_i_d_comparison" kindref="compound">IDComparison</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_class_id_comparison" kindref="compound">ClassIdComparison</ref><sp/>{</highlight></codeline>
 <codeline lineno="488"><highlight class="normal"></highlight></codeline>
 <codeline lineno="489"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_uuid_comparison" kindref="compound">UuidComparison</ref>(ClassId<sp/>classId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;uuid)<sp/>:<sp/><ref refid="classvrv_1_1_class_id_comparison" kindref="compound">ClassIdComparison</ref>(classId)<sp/>{<sp/>m_uuid<sp/>=<sp/>uuid;<sp/>}</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_i_d_comparison" kindref="compound">IDComparison</ref>(ClassId<sp/>classId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>:<sp/><ref refid="classvrv_1_1_class_id_comparison" kindref="compound">ClassIdComparison</ref>(classId)<sp/>{<sp/>m_id<sp/>=<sp/>id;<sp/>}</highlight></codeline>
 <codeline lineno="491"><highlight class="normal"></highlight></codeline>
-<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetUuid(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;uuid)<sp/>{<sp/>m_uuid<sp/>=<sp/>uuid;<sp/>}</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetID(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{<sp/>m_id<sp/>=<sp/>id;<sp/>}</highlight></codeline>
 <codeline lineno="493"><highlight class="normal"></highlight></codeline>
 <codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
 <codeline lineno="495"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!MatchesType(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">-&gt;GetUuid()<sp/>==<sp/>m_uuid;</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(object-&gt;GetID()<sp/>==<sp/>m_id);</highlight></codeline>
 <codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="499"><highlight class="normal"></highlight></codeline>
 <codeline lineno="500"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_uuid;</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_id;</highlight></codeline>
 <codeline lineno="502"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="503"><highlight class="normal"></highlight></codeline>
 <codeline lineno="504"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>

@@ -11,7 +11,7 @@ var classvrv_1_1_layer =
     [ "ConvertToUnCastOffMensural", "classvrv_1_1_layer.html#aaf89a9d26b64458fbe3c3535c67a100c", null ],
     [ "DrawCautionKeySigCancel", "classvrv_1_1_layer.html#a4b87456367ee3f8df018532939334e85", null ],
     [ "DrawKeySigCancellation", "classvrv_1_1_layer.html#a1f78b3afb187a7617918d35bd204c01d", null ],
-    [ "FindElementInLayerStaffDefsByUUID", "classvrv_1_1_layer.html#aaf74313495052801949213a9cbfa2e44", null ],
+    [ "FindElementInLayerStaffDefsByID", "classvrv_1_1_layer.html#a2f5e619f101f3b6fb679c8db17777364", null ],
     [ "GenerateMIDI", "classvrv_1_1_layer.html#ae6954d60aaa59e9dfaea4a60589f78ae", null ],
     [ "GenerateMIDIEnd", "classvrv_1_1_layer.html#a983baa94f22d6dde6e5a4155d962edf7", null ],
     [ "GetAtPos", "classvrv_1_1_layer.html#ae4ab5665285cd18a1784d83cf7fb41c5", null ],
