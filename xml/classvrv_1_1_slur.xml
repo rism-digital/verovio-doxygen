@@ -333,13 +333,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="160" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1ad477212bf1638b065055d8b4b6da1b13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a8e4388d4a78c7ca42d4b0a97dc33c755" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::Slur::CalcInitialCurve</definition>
-        <argsstring>(Doc *doc, FloatingCurvePositioner *curve, NearEndCollision *nearEndCollision=NULL)</argsstring>
+        <argsstring>(const Doc *doc, FloatingCurvePositioner *curve, NearEndCollision *nearEndCollision=NULL)</argsstring>
         <name>CalcInitialCurve</name>
         <param>
-          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
         </param>
         <param>
@@ -396,13 +396,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="175" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1a0c00d9c25f71e1a7101c9b45aebdbd04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a0b6a473f6cbea7cf14ef2ae593fdadbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
         <definition>Staff* vrv::Slur::CalculateExtremalStaff</definition>
-        <argsstring>(Staff *staff, int xMin, int xMax)</argsstring>
+        <argsstring>(const Staff *staff, int xMin, int xMax)</argsstring>
         <name>CalculateExtremalStaff</name>
         <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
         </param>
         <param>
@@ -420,37 +420,42 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="180" column="11"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="181" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1a48b731aec93e5ea7ba9513fcdcc0f60e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void vrv::Slur::InitBezierControlSides</definition>
-        <argsstring>(BezierCurve &amp;bezier, curvature_CURVEDIR curveDir) const</argsstring>
-        <name>InitBezierControlSides</name>
+      <memberdef kind="function" id="classvrv_1_1_slur_1a31bceee0027f6435c47b955d1be94987" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+        <definition>const Staff* vrv::Slur::CalculateExtremalStaff</definition>
+        <argsstring>(const Staff *staff, int xMin, int xMax) const</argsstring>
+        <name>CalculateExtremalStaff</name>
         <param>
-          <type><ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
-          <declname>bezier</declname>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <declname>staff</declname>
         </param>
         <param>
-          <type>curvature_CURVEDIR</type>
-          <declname>curveDir</declname>
+          <type>int</type>
+          <declname>xMin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xMax</declname>
         </param>
         <briefdescription>
-<para>Set the bezier control sides depending on the curve direction. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="185" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="182" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1afd815cba8ad4cffced409407fcff2564" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a435e30e4f2700e05bf8100ce95451c86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::Slur::AdjustSlur</definition>
-        <argsstring>(Doc *doc, FloatingCurvePositioner *curve, int unit)</argsstring>
+        <argsstring>(const Doc *doc, FloatingCurvePositioner *curve, int unit)</argsstring>
         <name>AdjustSlur</name>
         <param>
-          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
         </param>
         <param>
@@ -468,15 +473,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="191" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="194" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1a58e12bda70e19f4390b6ea965bc311cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1abb3261895833f825208070d230fc69b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::Slur::AdjustOuterSlur</definition>
-        <argsstring>(Doc *doc, FloatingCurvePositioner *curve, const ArrayOfFloatingCurvePositioners &amp;innerCurves, int unit)</argsstring>
+        <argsstring>(const Doc *doc, FloatingCurvePositioner *curve, const ArrayOfFloatingCurvePositioners &amp;innerCurves, int unit)</argsstring>
         <name>AdjustOuterSlur</name>
         <param>
-          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
         </param>
         <param>
@@ -497,15 +502,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="193" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="196" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1af9f7ea0dd157317dfcbbcb787793726e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a8b8c1b7a6809dc269c02c9c80d7d9b97" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
         <definition>float vrv::Slur::GetAdjustedSlurAngle</definition>
-        <argsstring>(Doc *doc, Point &amp;p1, Point &amp;p2, curvature_CURVEDIR curveDir)</argsstring>
+        <argsstring>(const Doc *doc, Point &amp;p1, Point &amp;p2, curvature_CURVEDIR curveDir) const</argsstring>
         <name>GetAdjustedSlurAngle</name>
         <param>
-          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
         </param>
         <param>
@@ -526,14 +531,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="196" column="11"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="199" column="11"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classvrv_1_1_slur_1af1e431fe4cbddf6d102a7f1d33878605" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::pair&lt; <ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *, <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> * &gt;</type>
-        <definition>std::pair&lt;Layer *, LayerElement *&gt; vrv::Slur::GetBoundaryLayer</definition>
-        <argsstring>()</argsstring>
+      <memberdef kind="function" id="classvrv_1_1_slur_1ac91b83f8f14d2227eb227763f7557cec" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; const <ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *, const <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> * &gt;</type>
+        <definition>std::pair&lt;const Layer *, const LayerElement *&gt; vrv::Slur::GetBoundaryLayer</definition>
+        <argsstring>() const</argsstring>
         <name>GetBoundaryLayer</name>
         <briefdescription>
 <para>Helper for calculating the slur direction. </para>
@@ -542,12 +547,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="219" column="15"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="222" column="15"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1aa478f349c132321ec2a0fbc21d23d0ee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
-        <definition>Staff* vrv::Slur::GetBoundaryCrossStaff</definition>
-        <argsstring>()</argsstring>
+      <memberdef kind="function" id="classvrv_1_1_slur_1af1d3cfea2fd85f61fe7b2504076a20f9" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+        <definition>const Staff* vrv::Slur::GetBoundaryCrossStaff</definition>
+        <argsstring>() const</argsstring>
         <name>GetBoundaryCrossStaff</name>
         <briefdescription>
         </briefdescription>
@@ -555,7 +560,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="221" column="11"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="224" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1acd0956910ff11d2e1873178bf04363a7" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>curvature_CURVEDIR</type>
@@ -568,12 +573,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="223" column="24"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="226" column="24"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1a04e89d0e8ca821a973bdb37fedc49fb9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a3112c764f007ce7b7c1465b9332a768d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>curvature_CURVEDIR</type>
         <definition>curvature_CURVEDIR vrv::Slur::GetPreferredCurveDirection</definition>
-        <argsstring>(data_STEMDIRECTION noteStemDir, bool isAboveStaffCenter, bool isGraceToNoteSlur)</argsstring>
+        <argsstring>(data_STEMDIRECTION noteStemDir, bool isAboveStaffCenter, bool isGraceToNoteSlur) const</argsstring>
         <name>GetPreferredCurveDirection</name>
         <param>
           <type>data_STEMDIRECTION</type>
@@ -593,17 +598,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="225" column="24"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="228" column="24"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classvrv_1_1_slur_1a78ed73295aad7e721c412d0ec14fe175" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a1fa3ae7ffa4072755bce165103e1ef6e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structvrv_1_1_spanned_elements" kindref="compound">SpannedElements</ref></type>
         <definition>SpannedElements vrv::Slur::CollectSpannedElements</definition>
-        <argsstring>(Staff *staff, int xMin, int xMax)</argsstring>
+        <argsstring>(const Staff *staff, int xMin, int xMax) const</argsstring>
         <name>CollectSpannedElements</name>
         <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
         </param>
         <param>
@@ -621,12 +626,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="234" column="21"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="237" column="21"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1a172a683e43f5efc07b7df01e79fe8e83" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a9f36e0d0d63450546e43e8ea128f2b97" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::Slur::AddSpannedElements</definition>
-        <argsstring>(FloatingCurvePositioner *curve, const SpannedElements &amp;elements, Staff *staff, int xMin, int xMax)</argsstring>
+        <argsstring>(FloatingCurvePositioner *curve, const SpannedElements &amp;elements, const Staff *staff, int xMin, int xMax)</argsstring>
         <name>AddSpannedElements</name>
         <param>
           <type><ref refid="classvrv_1_1_floating_curve_positioner" kindref="compound">FloatingCurvePositioner</ref> *</type>
@@ -637,7 +642,7 @@
           <declname>elements</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
         </param>
         <param>
@@ -654,23 +659,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="236" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="239" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1af985dd149add242a1d45e5ef3a0c32fa" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a9933e8e2f9c92a75e6800d0f2b4d2d58" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::Slur::IsElementBelow</definition>
-        <argsstring>(LayerElement *element, Staff *startStaff, Staff *endStaff) const</argsstring>
+        <argsstring>(const LayerElement *element, const Staff *startStaff, const Staff *endStaff) const</argsstring>
         <name>IsElementBelow</name>
         <param>
-          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
           <declname>element</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>startStaff</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>endStaff</declname>
         </param>
         <briefdescription>
@@ -679,23 +684,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="239" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="242" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1a7fbfc979567160c6269d469cf34e9a57" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a042af0fd53b535540d41b8922eace073" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::Slur::IsElementBelow</definition>
-        <argsstring>(FloatingPositioner *positioner, Staff *startStaff, Staff *endStaff) const</argsstring>
+        <argsstring>(const FloatingPositioner *positioner, const Staff *startStaff, const Staff *endStaff) const</argsstring>
         <name>IsElementBelow</name>
         <param>
-          <type><ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> *</type>
           <declname>positioner</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>startStaff</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>endStaff</declname>
         </param>
         <briefdescription>
@@ -704,21 +709,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="240" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="243" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classvrv_1_1_slur_1afa9a7391188bcf435c8b3945c700965a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1aac3d86a03edf3a035d0f24f22437ebec" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; <ref refid="classvrv_1_1_point" kindref="compound">Point</ref>, <ref refid="classvrv_1_1_point" kindref="compound">Point</ref> &gt;</type>
         <definition>std::pair&lt;Point, Point&gt; vrv::Slur::CalcEndPoints</definition>
-        <argsstring>(Doc *doc, Staff *staff, NearEndCollision *nearEndCollision, int x1, int x2, curvature_CURVEDIR drawingCurveDir, char spanningType)</argsstring>
+        <argsstring>(const Doc *doc, const Staff *staff, NearEndCollision *nearEndCollision, int x1, int x2, curvature_CURVEDIR drawingCurveDir, char spanningType) const</argsstring>
         <name>CalcEndPoints</name>
         <param>
-          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
         </param>
         <param>
@@ -748,27 +753,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="248" column="15"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="251" column="15"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1adc703f04c0d76b0e01181b231e4712f6" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a10771d5591c5792a08145be896782b6f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; int, int &gt;</type>
         <definition>std::pair&lt;int, int&gt; vrv::Slur::GetStartEndLocs</definition>
-        <argsstring>(Note *startNote, Chord *startChord, Note *endNote, Chord *endChord) const</argsstring>
+        <argsstring>(const Note *startNote, const Chord *startChord, const Note *endNote, const Chord *endChord) const</argsstring>
         <name>GetStartEndLocs</name>
         <param>
-          <type><ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
           <declname>startNote</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_chord" kindref="compound">Chord</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_chord" kindref="compound">Chord</ref> *</type>
           <declname>startChord</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
           <declname>endNote</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_chord" kindref="compound">Chord</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_chord" kindref="compound">Chord</ref> *</type>
           <declname>endChord</declname>
         </param>
         <briefdescription>
@@ -777,15 +782,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="251" column="15"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="254" column="15"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1a6271c60a35d2cdea5cb2d15c1c093547" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a8218536bebd972da0b2669a0357ecb49" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; int, int &gt;</type>
         <definition>std::pair&lt;int, int&gt; vrv::Slur::CalcBrokenLoc</definition>
-        <argsstring>(Staff *staff, int startLoc, int endLoc) const</argsstring>
+        <argsstring>(const Staff *staff, int startLoc, int endLoc) const</argsstring>
         <name>CalcBrokenLoc</name>
         <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
         </param>
         <param>
@@ -802,23 +807,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="253" column="15"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="257" column="15"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1a8ec96f9b1852c46db904ee1f80234adf" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a562b4b55746824b34a6424d2cbfd898c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>PortatoSlurType</type>
         <definition>PortatoSlurType vrv::Slur::IsPortatoSlur</definition>
-        <argsstring>(Doc *doc, Note *startNote, Chord *startChord) const</argsstring>
+        <argsstring>(const Doc *doc, const Note *startNote, const Chord *startChord) const</argsstring>
         <name>IsPortatoSlur</name>
         <param>
-          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
           <declname>startNote</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_chord" kindref="compound">Chord</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_chord" kindref="compound">Chord</ref> *</type>
           <declname>startChord</declname>
         </param>
         <briefdescription>
@@ -827,7 +832,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="255" column="21"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="259" column="21"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -855,7 +860,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="263" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="267" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1a3edef2a42b791866b101a905a79d7a8f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structvrv_1_1_near_end_collision" kindref="compound">NearEndCollision</ref></type>
@@ -880,7 +885,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="266" column="22"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="270" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1adc738e558ad5154f3325ca49698d2dd0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; int, int &gt;</type>
@@ -909,7 +914,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="270" column="15"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="274" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1a8ae7260dabedeffaefc0a4b447047d4c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -938,7 +943,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="274" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="278" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1a3b04761decc472a19549ae446f1b42a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -963,7 +968,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="278" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="282" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1a06424c1c48e96ec65f7aef9252471a7b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -988,7 +993,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="281" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="285" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1a652ca54f30e9b820c662bdacae0f426f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::tuple&lt; bool, int, int &gt;</type>
@@ -1013,7 +1018,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="284" column="16"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="288" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1a280d7c3b7e35b88a287d036b66dbd266" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structvrv_1_1_control_point_adjustment" kindref="compound">ControlPointAdjustment</ref></type>
@@ -1042,12 +1047,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="288" column="28"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="292" column="28"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_slur_1ab568eea3c913de3193c69b0211d63974" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a71c1405941d5d4dc69b75fbe7a70908d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; int, int &gt;</type>
         <definition>std::pair&lt;int, int&gt; vrv::Slur::SolveControlPointConstraints</definition>
-        <argsstring>(const std::list&lt; ControlPointConstraint &gt; &amp;constraints, double symmetry=0.0)</argsstring>
+        <argsstring>(const std::list&lt; ControlPointConstraint &gt; &amp;constraints, double symmetry=0.0) const</argsstring>
         <name>SolveControlPointConstraints</name>
         <param>
           <type>const std::list&lt; <ref refid="structvrv_1_1_control_point_constraint" kindref="compound">ControlPointConstraint</ref> &gt; &amp;</type>
@@ -1064,7 +1069,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="292" column="15"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="296" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1a4d31a268f44b474f47091fc158b8b02d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1089,7 +1094,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="296" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="300" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1125,7 +1130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="304" column="28"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="308" column="28"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1ab81dedae2d1ff31e656c9745d3f6e58a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; int, int &gt;</type>
@@ -1158,7 +1163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="308" column="15"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="312" column="15"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1198,7 +1203,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="317" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="321" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1ac772cdc6ab913b3ae4cc7fc4c241e8eb" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1223,7 +1228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="321" column="12"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="325" column="12"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1a37ed6f07966aaec7b66d5abb76f1c417" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1252,7 +1257,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="326" column="12"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="330" column="12"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1a938bab0c49f226d7bed912890d9dd245" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -1277,7 +1282,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="329" column="11"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="333" column="11"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -1293,10 +1298,32 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="340" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/slur.h" bodystart="340" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="344" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/slur.h" bodystart="344" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvrv_1_1_slur_1a48b731aec93e5ea7ba9513fcdcc0f60e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Slur::InitBezierControlSides</definition>
+        <argsstring>(BezierCurve &amp;bezier, curvature_CURVEDIR curveDir) const</argsstring>
+        <name>InitBezierControlSides</name>
+        <param>
+          <type><ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>bezier</declname>
+        </param>
+        <param>
+          <type>curvature_CURVEDIR</type>
+          <declname>curveDir</declname>
+        </param>
+        <briefdescription>
+<para>Set the bezier control sides depending on the curve direction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="188" column="10"/>
+      </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1ae0ece8ff52f33bb4ab86ce72e05807e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
         <definition>int vrv::Slur::ResetData</definition>
@@ -1314,7 +1341,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="206" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="209" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_slur_1a5bb775a96504e61b844efccbccd8ae78" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -1333,7 +1360,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="211" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="214" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1805,13 +1832,13 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="84" column="34" bodyfile="/home/runner/work/verovio/verovio/include/vrv/slur.h" bodystart="79" bodyend="341"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/slur.h" line="84" column="34" bodyfile="/home/runner/work/verovio/verovio/include/vrv/slur.h" bodystart="79" bodyend="345"/>
     <listofallmembers>
       <member refid="classvrv_1_1_linking_interface_1aaa4632e05d5d887b26dbf1789c84f573" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>AddBackLink</name></member>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>AddChild</name></member>
       <member refid="classvrv_1_1_object_1a5f617820a2163b5fa9d80d884bf69999" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>AddLayerElementToFlatList</name></member>
       <member refid="classvrv_1_1_slur_1a479f96c0f063d497932d474bcd693871" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>AddPositionerToArticulations</name></member>
-      <member refid="classvrv_1_1_slur_1a172a683e43f5efc07b7df01e79fe8e83" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>AddSpannedElements</name></member>
+      <member refid="classvrv_1_1_slur_1a9f36e0d0d63450546e43e8ea128f2b97" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>AddSpannedElements</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a67678cf06ae06579a830344df5c5598a" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>AddStaff</name></member>
       <member refid="classvrv_1_1_object_1a08855458e45646f3831f2edf7c8a77e0" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>AdjustAccidX</name></member>
       <member refid="classvrv_1_1_object_1a9a7ac871bbd388bc57ad3efbcd5523e4" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>AdjustArpeg</name></member>
@@ -1833,8 +1860,8 @@
       <member refid="classvrv_1_1_object_1a3feb79622f62f2a9282f3dd1201c3a0c" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>AdjustHarmGrpsSpacingEnd</name></member>
       <member refid="classvrv_1_1_object_1acd47b579ea43282b32c8c585308d9857" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>AdjustLayers</name></member>
       <member refid="classvrv_1_1_object_1a665daa8b537723b4c38f61118e027009" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>AdjustLayersEnd</name></member>
-      <member refid="classvrv_1_1_slur_1a58e12bda70e19f4390b6ea965bc311cd" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>AdjustOuterSlur</name></member>
-      <member refid="classvrv_1_1_slur_1afd815cba8ad4cffced409407fcff2564" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>AdjustSlur</name></member>
+      <member refid="classvrv_1_1_slur_1abb3261895833f825208070d230fc69b5" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>AdjustOuterSlur</name></member>
+      <member refid="classvrv_1_1_slur_1a435e30e4f2700e05bf8100ce95451c86" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>AdjustSlur</name></member>
       <member refid="classvrv_1_1_slur_1a3b04761decc472a19549ae446f1b42a4" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>AdjustSlurFromBulge</name></member>
       <member refid="classvrv_1_1_object_1adfa29f3f97c5463c0c0de270636c5e4b" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>AdjustSlurs</name></member>
       <member refid="classvrv_1_1_slur_1a4d31a268f44b474f47091fc158b8b02d" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>AdjustSlurShape</name></member>
@@ -1875,7 +1902,7 @@
       <member refid="classvrv_1_1_object_1aafe409b501956ce98e33be6e9e5d0eee" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CalcBBoxOverflowsEnd</name></member>
       <member refid="classvrv_1_1_bounding_box_1a91eb3e2ee9b00bc764283fe1710e199b" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcBezierAtPosition</name></member>
       <member refid="classvrv_1_1_bounding_box_1af1fdd065b198aafe35dcc7e5a35477ee" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcBezierParamAtPosition</name></member>
-      <member refid="classvrv_1_1_slur_1a6271c60a35d2cdea5cb2d15c1c093547" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcBrokenLoc</name></member>
+      <member refid="classvrv_1_1_slur_1a8218536bebd972da0b2669a0357ecb49" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcBrokenLoc</name></member>
       <member refid="classvrv_1_1_object_1a277607c9a525f437a721e8c526963d44" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CalcChordNoteHeads</name></member>
       <member refid="classvrv_1_1_slur_1a652ca54f30e9b820c662bdacae0f426f" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcControlPointOffset</name></member>
       <member refid="classvrv_1_1_slur_1add43c791df75b2d6b38e8ba5dec468c1" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcControlPointShift</name></member>
@@ -1884,10 +1911,10 @@
       <member refid="classvrv_1_1_bounding_box_1a8008673c300accccc6dd7f10a2f12d45" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcDistance</name></member>
       <member refid="classvrv_1_1_object_1a30538b76016036369786f42be54482c2" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CalcDots</name></member>
       <member refid="classvrv_1_1_slur_1a61fd32fb1c0a5842551a6736a9fde016" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcDrawingCurveDir</name></member>
-      <member refid="classvrv_1_1_slur_1afa9a7391188bcf435c8b3945c700965a" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcEndPoints</name></member>
+      <member refid="classvrv_1_1_slur_1aac3d86a03edf3a035d0f24f22437ebec" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcEndPoints</name></member>
       <member refid="classvrv_1_1_slur_1adc738e558ad5154f3325ca49698d2dd0" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcEndPointShift</name></member>
       <member refid="classvrv_1_1_slur_1ab81dedae2d1ff31e656c9745d3f6e58a" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcEndPointShift</name></member>
-      <member refid="classvrv_1_1_slur_1ad477212bf1638b065055d8b4b6da1b13" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcInitialCurve</name></member>
+      <member refid="classvrv_1_1_slur_1a8e4388d4a78c7ca42d4b0a97dc33c755" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcInitialCurve</name></member>
       <member refid="classvrv_1_1_object_1aa102c1e31b16c63319763a5fc1c8351c" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CalcLedgerLines</name></member>
       <member refid="classvrv_1_1_object_1a56b580832eec7871b18371835a61e136" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CalcLedgerLinesEnd</name></member>
       <member refid="classvrv_1_1_object_1a5bd96aae8a25cedd2c63ce09b92388a3" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CalcLigatureNotePos</name></member>
@@ -1901,7 +1928,8 @@
       <member refid="classvrv_1_1_object_1a3e00929935e3c3a646767efa319b5c2c" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CalcSpanningBeamSpans</name></member>
       <member refid="classvrv_1_1_object_1a0b93f8b6e02c8ba98a03db67fe5d5d10" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CalcStem</name></member>
       <member refid="classvrv_1_1_bounding_box_1a8fdd811aefcb373533b9cc2795aa04dd" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalcThickBezier</name></member>
-      <member refid="classvrv_1_1_slur_1a0c00d9c25f71e1a7101c9b45aebdbd04" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalculateExtremalStaff</name></member>
+      <member refid="classvrv_1_1_slur_1a0b6a473f6cbea7cf14ef2ae593fdadbb" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalculateExtremalStaff</name></member>
+      <member refid="classvrv_1_1_slur_1a31bceee0027f6435c47b955d1be94987" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>CalculateExtremalStaff</name></member>
       <member refid="classvrv_1_1_object_1ae1320bf0b5a56f033dcc561147225ba7" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CastOffEncoding</name></member>
       <member refid="classvrv_1_1_object_1af4bdf6d63a5fbf43a21a5c18d3c49a10" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CastOffPages</name></member>
       <member refid="classvrv_1_1_object_1ad2a435d1dd9a270785fca7cab265adba" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CastOffPagesEnd</name></member>
@@ -1912,7 +1940,7 @@
       <member refid="classvrv_1_1_object_1a667b4432b8f9d9e92bfd34fe5c885099" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>ClearRelinquishedChildren</name></member>
       <member refid="classvrv_1_1_slur_1a9e7812ed9bc701150792295d4e277802" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>Clone</name></member>
       <member refid="classvrv_1_1_object_1a2a1c4d0ed1a15f33637b03670c9aa98f" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>CloneReset</name></member>
-      <member refid="classvrv_1_1_slur_1a78ed73295aad7e721c412d0ec14fe175" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CollectSpannedElements</name></member>
+      <member refid="classvrv_1_1_slur_1a1fa3ae7ffa4072755bce165103e1ef6e" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>CollectSpannedElements</name></member>
       <member refid="classvrv_1_1_control_element_1a85bf4f12a52a3484bd10a638b4b3fbe8" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>ControlElement</name></member>
       <member refid="classvrv_1_1_control_element_1aa9be5bc11d51b4d8c0be3ccc93baf6bf" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>ControlElement</name></member>
       <member refid="classvrv_1_1_control_element_1a3609eb955915e4f36e0be4262f34176b" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>ControlElement</name></member>
@@ -1959,7 +1987,7 @@
       <member refid="classvrv_1_1_object_1ae1a47a27a677aa68ba14e324b0a17e00" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>FindNextChildByComparison</name></member>
       <member refid="classvrv_1_1_object_1a4750585ae6b8737aba3408fcc863dfeb" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>FindPreviousChild</name></member>
       <member refid="classvrv_1_1_object_1a7c792936ed7e04d00172c7b0017b85a1" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>FindPreviousChildByComparison</name></member>
-      <member refid="classvrv_1_1_object_1adf698716d3820efeb5d1af9bfd24a187" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>FindSpannedLayerElements</name></member>
+      <member refid="classvrv_1_1_object_1af8ed551298a2052adaa8c7fb1af31dc2" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>FindSpannedLayerElements</name></member>
       <member refid="classvrv_1_1_floating_object_1a881e66e4ba71468555b7a8abae6a346e" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>FloatingObject</name></member>
       <member refid="classvrv_1_1_floating_object_1a0988447a69fd83a982391248f4a19944" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>FloatingObject</name></member>
       <member refid="classvrv_1_1_floating_object_1a41170245f10c43785287cacb6e34013b" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>FloatingObject</name></member>
@@ -1968,7 +1996,7 @@
       <member refid="classvrv_1_1_object_1a7c0a63c225e76daa84e102b7d531d645" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>GenerateMIDIEnd</name></member>
       <member refid="classvrv_1_1_object_1adef7d8ebf6bbb0b9bea78a608c161791" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GenerateRandID</name></member>
       <member refid="classvrv_1_1_object_1abe889073301d6e1dfe55e725b6532948" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>GenerateTimemap</name></member>
-      <member refid="classvrv_1_1_slur_1af9f7ea0dd157317dfcbbcb787793726e" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetAdjustedSlurAngle</name></member>
+      <member refid="classvrv_1_1_slur_1a8b8c1b7a6809dc269c02c9c80d7d9b97" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetAdjustedSlurAngle</name></member>
       <member refid="classvrv_1_1_object_1a3eb3c52e16525ed1a559a825fa85e00e" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>GetAlignmentLeftRight</name></member>
       <member refid="classvrv_1_1_object_1a9520082549d438647a7fc8b1126675b4" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetAncestors</name></member>
       <member refid="classvrv_1_1_object_1a323a71a1cb0b2a956e37c4e3da49a0fb" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetAncestors</name></member>
@@ -1979,8 +2007,8 @@
       <member refid="classvrv_1_1_object_1ab136df3273e12a93e3699ae62e9d2514" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>GetBeamDrawingInterface</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3dbe5a481e20ab4d0d9fdd47708d1c2f" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetBezierThicknessCoefficient</name></member>
       <member refid="classvrv_1_1_bounding_box_1a91a7bb36d11f909e84caab997fb49c0c" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetBottomBy</name></member>
-      <member refid="classvrv_1_1_slur_1aa478f349c132321ec2a0fbc21d23d0ee" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>GetBoundaryCrossStaff</name></member>
-      <member refid="classvrv_1_1_slur_1af1e431fe4cbddf6d102a7f1d33878605" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>GetBoundaryLayer</name></member>
+      <member refid="classvrv_1_1_slur_1af1d3cfea2fd85f61fe7b2504076a20f9" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>GetBoundaryCrossStaff</name></member>
+      <member refid="classvrv_1_1_slur_1ac91b83f8f14d2227eb227763f7557cec" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>GetBoundaryLayer</name></member>
       <member refid="classvrv_1_1_bounding_box_1aa3fc5bcc7d25b6e975fad50b11edd781" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetBoundingBoxGlyph</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2b025880f04cefa1cb37b7e6f8bfb8f1" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetBoundingBoxGlyphFontSize</name></member>
       <member refid="classvrv_1_1_object_1a41604299ea07255f348600609ef90c8b" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetChild</name></member>
@@ -2007,9 +2035,11 @@
       <member refid="classvrv_1_1_bounding_box_1aca490fbb8d4d5c0179e05f790e0e2951" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetContentX2</name></member>
       <member refid="classvrv_1_1_bounding_box_1afb681918250b5eceeab06a8752c794a0" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetContentY1</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7d8f116f3c72430801e43fc9f1fb1e95" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetContentY2</name></member>
-      <member refid="classvrv_1_1_floating_object_1aef3059c4ebeb1d581e5ce06319d11050" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetCorrespFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a248177357c942919e76c7aa438aeb6a0" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetCorrespFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a670ba7a497b9ebdc58d9a62a1027f71f" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetCorrespFloatingPositioner</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a41a52a993d10feeb4e09551b69c5ccf0" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetCrossStaffOverflows</name></member>
-      <member refid="classvrv_1_1_floating_object_1aa26df3350328cd96704f766ac3db0615" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetCurrentFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a4d92135a6f8a1967fb53ac60e3cbb0c7" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetCurrentFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a4aac146641f1aa60551a927f7eb4d297" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetCurrentFloatingPositioner</name></member>
       <member refid="classvrv_1_1_bounding_box_1a26bfbd087c59e094696d2c0ff1fd89ea" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetCutOutBottom</name></member>
       <member refid="classvrv_1_1_bounding_box_1a341aeebe2fdd010ebf72aaf1c8760df3" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetCutOutLeft</name></member>
       <member refid="classvrv_1_1_bounding_box_1abc3f8eacafe2bfb2becd732507f259ae" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetCutOutRight</name></member>
@@ -2044,7 +2074,7 @@
       <member refid="classvrv_1_1_object_1a31f762f07969b77792891fdbbc5176e4" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetLast</name></member>
       <member refid="classvrv_1_1_object_1a908d56fef5a5dd9b9808555ab4ea4daf" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetLastAncestorNot</name></member>
       <member refid="classvrv_1_1_object_1a7a014abead37ca3e27f827a5c3ae7434" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetLastAncestorNot</name></member>
-      <member refid="classvrv_1_1_control_element_1a6958cd8e98487b05df80adf872de0353" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetLayerPlace</name></member>
+      <member refid="classvrv_1_1_control_element_1a21757f229d95373c0d53c4ac94cdcaf2" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetLayerPlace</name></member>
       <member refid="classvrv_1_1_bounding_box_1af329372204a34520779e6b0d0596e8b9" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetLeftBy</name></member>
       <member refid="classvrv_1_1_control_element_1a1ab03ccd8e1610d29508e9e0bb7bc7c5" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>GetLinkingInterface</name></member>
       <member refid="classvrv_1_1_control_element_1aeb6ccac7f45774c4f7bb78f3b878eafd" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>GetLinkingInterface</name></member>
@@ -2067,7 +2097,7 @@
       <member refid="classvrv_1_1_object_1aa246db2175561352dd71e7d2925697bf" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>GetPlistInterface</name></member>
       <member refid="classvrv_1_1_object_1a68eb08599ac194e3dfc2c149e96db67a" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>GetPositionInterface</name></member>
       <member refid="classvrv_1_1_object_1a1125eeb9dfc51655c68758107cd616fe" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>GetPositionInterface</name></member>
-      <member refid="classvrv_1_1_slur_1a04e89d0e8ca821a973bdb37fedc49fb9" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>GetPreferredCurveDirection</name></member>
+      <member refid="classvrv_1_1_slur_1a3112c764f007ce7b7c1465b9332a768d" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>GetPreferredCurveDirection</name></member>
       <member refid="classvrv_1_1_object_1a26a7c60cdf50a4072927aa671112f1f3" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetPrevious</name></member>
       <member refid="classvrv_1_1_object_1ad3b827c4f53d81386c192ce462f09b3e" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetPrevious</name></member>
       <member refid="classvrv_1_1_object_1a507b026d60921d1d418f3054b3bb68da" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>GetRelativeLayerElement</name></member>
@@ -2086,7 +2116,7 @@
       <member refid="classvrv_1_1_bounding_box_1a7ba0ddf13040f3747a7421232c9bc21d" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetSelfY2</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a3cd14634c9ef2903e83a560ba52788a9" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetStart</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a298a2ef9e43a61c8682134ac890b2b0e" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetStart</name></member>
-      <member refid="classvrv_1_1_slur_1adc703f04c0d76b0e01181b231e4712f6" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>GetStartEndLocs</name></member>
+      <member refid="classvrv_1_1_slur_1a10771d5591c5792a08145be896782b6f" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>GetStartEndLocs</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a54007f47ab2054a75b29618b8b47dd4f" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetStartMeasure</name></member>
       <member refid="classvrv_1_1_time_point_interface_1ac1222d78b3eb4fefc697eaabb564c368" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>GetStartMeasure</name></member>
       <member refid="classvrv_1_1_object_1a8f790811faa78e214ba76d2a728fa8e5" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>GetStemmedDrawingInterface</name></member>
@@ -2154,8 +2184,8 @@
       <member refid="classvrv_1_1_time_spanning_interface_1a968d95a2a61a0b39edcb043d6a2e8c66" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>InterfacePrepareTimestamps</name></member>
       <member refid="classvrv_1_1_linking_interface_1a844644245db209bd156e09b4a22e2726" prot="public" virt="virtual" ambiguityscope="vrv::"><scope>vrv::Slur</scope><name>InterfaceResetData</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1aa51c9f9de1cb4a42194fd085fced59c7" prot="public" virt="virtual" ambiguityscope="vrv::TimeSpanningInterface::"><scope>vrv::Slur</scope><name>InterfaceResetData</name></member>
-      <member refid="classvrv_1_1_bounding_box_1aa2283d42759c18ce84fe53f2e1684849" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>Intersects</name></member>
-      <member refid="classvrv_1_1_bounding_box_1ae73507464b47d2ccadbbf2a8231c643e" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>Intersects</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a29d29a9aaa350b53bcf58dc32978b7f8" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>Intersects</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a89d4ebda89785d624cb43d1c45dbbbb2" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>Intersects</name></member>
       <member refid="classvrv_1_1_bounding_box_1af366b55a8e449a12d689acd9d35ae782" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>Is</name></member>
       <member refid="classvrv_1_1_bounding_box_1aaeb23e9d3064f863ef3857efef570a8f" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>Is</name></member>
       <member refid="classvrv_1_1_object_1af8ee73eca8e0a08ae535318c4462fad1" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>IsAttribute</name></member>
@@ -2163,8 +2193,8 @@
       <member refid="classvrv_1_1_floating_object_1a33e63919403a78ab01c46e22ff264d4c" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>IsCloserToStaffThan</name></member>
       <member refid="classvrv_1_1_object_1aab9a49af1e67891dcfd1b929a6d64aa9" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>IsControlElement</name></member>
       <member refid="classvrv_1_1_object_1a46776dd312ff3631580f9e0ff293d52e" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>IsEditorialElement</name></member>
-      <member refid="classvrv_1_1_slur_1af985dd149add242a1d45e5ef3a0c32fa" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>IsElementBelow</name></member>
-      <member refid="classvrv_1_1_slur_1a7fbfc979567160c6269d469cf34e9a57" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>IsElementBelow</name></member>
+      <member refid="classvrv_1_1_slur_1a9933e8e2f9c92a75e6800d0f2b4d2d58" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>IsElementBelow</name></member>
+      <member refid="classvrv_1_1_slur_1a042af0fd53b535540d41b8922eace073" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>IsElementBelow</name></member>
       <member refid="classvrv_1_1_object_1a76f4663d1b09c5fe2b0c771eeb3f7d0e" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>IsExpansion</name></member>
       <member refid="classvrv_1_1_object_1a07dfe3de52f16cff12eefabe11c6cd96" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>IsExpansion</name></member>
       <member refid="classvrv_1_1_floating_object_1a8781df9fac1bad66c08cdae278be23e4" prot="public" virt="virtual"><scope>vrv::Slur</scope><name>IsExtenderElement</name></member>
@@ -2178,7 +2208,7 @@
       <member refid="classvrv_1_1_time_spanning_interface_1a0b129d8417f345a548ced98fd4254390" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>IsOrdered</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a3366edb934abb270587158a16bb85fbf" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>IsOrdered</name></member>
       <member refid="classvrv_1_1_object_1a6fe6d0adbd0341a514fc3645039559fd" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>IsPageElement</name></member>
-      <member refid="classvrv_1_1_slur_1a8ec96f9b1852c46db904ee1f80234adf" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>IsPortatoSlur</name></member>
+      <member refid="classvrv_1_1_slur_1a562b4b55746824b34a6424d2cbfd898c" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>IsPortatoSlur</name></member>
       <member refid="classvrv_1_1_object_1af8dd22cf22d58a6c606591b9fe14597d" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>IsPreOrdered</name></member>
       <member refid="classvrv_1_1_object_1ad507cfd401ea330cca65a4891b90da80" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>IsReferenceObject</name></member>
       <member refid="classvrv_1_1_object_1a5b19179d87ef32147c3d513fa735c07f" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>IsRunningElement</name></member>
@@ -2297,7 +2327,7 @@
       <member refid="classvrv_1_1_slur_1a1ec0689cb00d78dde080ab663e172b67" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>Slur</name></member>
       <member refid="classvrv_1_1_slur_1af0c39251d4b580a4199b43135f6acd5d" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>Slur</name></member>
       <member refid="classvrv_1_1_slur_1a0e5b41a997c099a63129346c542b9a9b" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>Slur</name></member>
-      <member refid="classvrv_1_1_slur_1ab568eea3c913de3193c69b0211d63974" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>SolveControlPointConstraints</name></member>
+      <member refid="classvrv_1_1_slur_1a71c1405941d5d4dc69b75fbe7a70908d" prot="private" virt="non-virtual"><scope>vrv::Slur</scope><name>SolveControlPointConstraints</name></member>
       <member refid="classvrv_1_1_bounding_box_1ab4d1764142c6881678dbfcaee124e38f" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>SolveCubicPolynomial</name></member>
       <member refid="classvrv_1_1_object_1a6c529b9574392b6c2baeaf8470e2a989" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>sortByUlx</name></member>
       <member refid="classvrv_1_1_object_1aa8caf0942b1ff1c02f6f8e879397ca21" prot="public" virt="non-virtual"><scope>vrv::Slur</scope><name>SortChildren</name></member>

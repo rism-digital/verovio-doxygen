@@ -664,10 +664,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/chord.h" line="165" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_chord_1a2f4bf048bb734e1a503803e86940b237" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::list&lt; <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> * &gt;</type>
-        <definition>std::list&lt;Note *&gt; vrv::Chord::GetAdjacentNotesList</definition>
-        <argsstring>(const Staff *staff, int loc)</argsstring>
+      <memberdef kind="function" id="classvrv_1_1_chord_1accc9d11678e5311a7fcf0752540291a9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; const <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> * &gt;</type>
+        <definition>std::list&lt;const Note *&gt; vrv::Chord::GetAdjacentNotesList</definition>
+        <argsstring>(const Staff *staff, int loc) const</argsstring>
         <name>GetAdjacentNotesList</name>
         <param>
           <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
@@ -1732,7 +1732,7 @@
       <member refid="classvrv_1_1_object_1ae1a47a27a677aa68ba14e324b0a17e00" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>FindNextChildByComparison</name></member>
       <member refid="classvrv_1_1_object_1a4750585ae6b8737aba3408fcc863dfeb" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>FindPreviousChild</name></member>
       <member refid="classvrv_1_1_object_1a7c792936ed7e04d00172c7b0017b85a1" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>FindPreviousChildByComparison</name></member>
-      <member refid="classvrv_1_1_layer_element_1a1886335465aec51bcc87548c2365dce1" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>FindSpannedLayerElements</name></member>
+      <member refid="classvrv_1_1_layer_element_1a5ef4a8ffde4444b0ae8ea906f696b3d2" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>FindSpannedLayerElements</name></member>
       <member refid="classvrv_1_1_object_1a7ced59f27507ee81372cc12d7f57c8e0" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>GenerateFeatures</name></member>
       <member refid="classvrv_1_1_chord_1aaf36b83279aee349e173113516cef3bd" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>GenerateMIDI</name></member>
       <member refid="classvrv_1_1_object_1a7c0a63c225e76daa84e102b7d531d645" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>GenerateMIDIEnd</name></member>
@@ -1741,7 +1741,7 @@
       <member refid="classvrv_1_1_layer_element_1a39adc1a3bb53a8836b1dc8bf375d15a1" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>GenerateZoneBounds</name></member>
       <member refid="classvrv_1_1_duration_interface_1a74149eeb70f90f1f6414a10720fb328a" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>GetActualDur</name></member>
       <member refid="classvrv_1_1_duration_interface_1a633cc6377cbb770438eacc87fdb1622f" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>GetActualDurGes</name></member>
-      <member refid="classvrv_1_1_chord_1a2f4bf048bb734e1a503803e86940b237" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>GetAdjacentNotesList</name></member>
+      <member refid="classvrv_1_1_chord_1accc9d11678e5311a7fcf0752540291a9" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>GetAdjacentNotesList</name></member>
       <member refid="classvrv_1_1_layer_element_1aaf37de33bde75ed90873dead9d515860" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>GetAlignment</name></member>
       <member refid="classvrv_1_1_layer_element_1a5d22f797b37bd60c3571dda3b91bebc2" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>GetAlignment</name></member>
       <member refid="classvrv_1_1_layer_element_1a3b4902898ea009daf4242585c329d39b" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>GetAlignmentDuration</name></member>
@@ -1983,8 +1983,8 @@
       <member refid="classvrv_1_1_linking_interface_1a05da99de05024b8ff9287f1027aa55db" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>InterfacePrepareLinking</name></member>
       <member refid="classvrv_1_1_linking_interface_1ae2cf862874c1822f6d53ddb2de573c02" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>InterfacePrepareStaffCurrentTimeSpanning</name></member>
       <member refid="classvrv_1_1_linking_interface_1a844644245db209bd156e09b4a22e2726" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>InterfaceResetData</name></member>
-      <member refid="classvrv_1_1_bounding_box_1aa2283d42759c18ce84fe53f2e1684849" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>Intersects</name></member>
-      <member refid="classvrv_1_1_bounding_box_1ae73507464b47d2ccadbbf2a8231c643e" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>Intersects</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a29d29a9aaa350b53bcf58dc32978b7f8" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>Intersects</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a89d4ebda89785d624cb43d1c45dbbbb2" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>Intersects</name></member>
       <member refid="classvrv_1_1_bounding_box_1af366b55a8e449a12d689acd9d35ae782" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>Is</name></member>
       <member refid="classvrv_1_1_bounding_box_1aaeb23e9d3064f863ef3857efef570a8f" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>Is</name></member>
       <member refid="classvrv_1_1_object_1af8ee73eca8e0a08ae535318c4462fad1" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>IsAttribute</name></member>

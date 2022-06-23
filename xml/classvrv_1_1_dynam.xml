@@ -177,19 +177,19 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classvrv_1_1_dynam_1a5e1fb95336d835a576dff576a5070945" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classvrv_1_1_dynam_1a5e1fb95336d835a576dff576a5070945" prot="private" static="no" mutable="yes">
         <type>std::wstring</type>
         <definition>std::wstring vrv::Dynam::m_symbolStr</definition>
         <argsstring></argsstring>
         <name>m_symbolStr</name>
         <briefdescription>
-<para>A cached version of the symbol str instanciated by <ref refid="classvrv_1_1_dynam_1a240b3048c78b08eb6084c52167574032" kindref="member">IsSymbolOnly()</ref> </para>
+<para>A cached version of the symbol str instanciated by <ref refid="classvrv_1_1_dynam_1a9ff7746e6f963b16fdcf9a64c2414d0b" kindref="member">IsSymbolOnly()</ref> </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/dynam.h" line="119" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/dynam.h" bodystart="119" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/dynam.h" line="119" column="26" bodyfile="/home/runner/work/verovio/verovio/include/vrv/dynam.h" bodystart="119" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -213,10 +213,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/dynam.h" line="69" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_dynam_1a240b3048c78b08eb6084c52167574032" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_dynam_1a9ff7746e6f963b16fdcf9a64c2414d0b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::Dynam::IsSymbolOnly</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>IsSymbolOnly</name>
         <briefdescription>
 <para>Return true if the dynam text is only composed of f, p, r, z, etc. </para>
@@ -293,13 +293,13 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="classvrv_1_1_dynam_1ad54164cf764c40aad9292dd06810c8a3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_dynam_1af6c0df785d387af9e7f353a50d15b3fd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>static bool vrv::Dynam::GetSymbolsInStr</definition>
-        <argsstring>(std::wstring &amp;str, ArrayOfStringDynamTypePairs &amp;tokens)</argsstring>
+        <argsstring>(const std::wstring &amp;str, ArrayOfStringDynamTypePairs &amp;tokens)</argsstring>
         <name>GetSymbolsInStr</name>
         <param>
-          <type>std::wstring &amp;</type>
+          <type>const std::wstring &amp;</type>
           <declname>str</declname>
         </param>
         <param>
@@ -1011,7 +1011,7 @@
       <member refid="classvrv_1_1_object_1ae1a47a27a677aa68ba14e324b0a17e00" prot="public" virt="virtual"><scope>vrv::Dynam</scope><name>FindNextChildByComparison</name></member>
       <member refid="classvrv_1_1_object_1a4750585ae6b8737aba3408fcc863dfeb" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>FindPreviousChild</name></member>
       <member refid="classvrv_1_1_object_1a7c792936ed7e04d00172c7b0017b85a1" prot="public" virt="virtual"><scope>vrv::Dynam</scope><name>FindPreviousChildByComparison</name></member>
-      <member refid="classvrv_1_1_object_1adf698716d3820efeb5d1af9bfd24a187" prot="public" virt="virtual"><scope>vrv::Dynam</scope><name>FindSpannedLayerElements</name></member>
+      <member refid="classvrv_1_1_object_1af8ed551298a2052adaa8c7fb1af31dc2" prot="public" virt="virtual"><scope>vrv::Dynam</scope><name>FindSpannedLayerElements</name></member>
       <member refid="classvrv_1_1_floating_object_1a881e66e4ba71468555b7a8abae6a346e" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>FloatingObject</name></member>
       <member refid="classvrv_1_1_floating_object_1a0988447a69fd83a982391248f4a19944" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>FloatingObject</name></member>
       <member refid="classvrv_1_1_floating_object_1a41170245f10c43785287cacb6e34013b" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>FloatingObject</name></member>
@@ -1057,9 +1057,11 @@
       <member refid="classvrv_1_1_bounding_box_1aca490fbb8d4d5c0179e05f790e0e2951" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetContentX2</name></member>
       <member refid="classvrv_1_1_bounding_box_1afb681918250b5eceeab06a8752c794a0" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetContentY1</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7d8f116f3c72430801e43fc9f1fb1e95" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetContentY2</name></member>
-      <member refid="classvrv_1_1_floating_object_1aef3059c4ebeb1d581e5ce06319d11050" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetCorrespFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a248177357c942919e76c7aa438aeb6a0" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetCorrespFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a670ba7a497b9ebdc58d9a62a1027f71f" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetCorrespFloatingPositioner</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a41a52a993d10feeb4e09551b69c5ccf0" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetCrossStaffOverflows</name></member>
-      <member refid="classvrv_1_1_floating_object_1aa26df3350328cd96704f766ac3db0615" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetCurrentFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a4d92135a6f8a1967fb53ac60e3cbb0c7" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetCurrentFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a4aac146641f1aa60551a927f7eb4d297" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetCurrentFloatingPositioner</name></member>
       <member refid="classvrv_1_1_bounding_box_1a26bfbd087c59e094696d2c0ff1fd89ea" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetCutOutBottom</name></member>
       <member refid="classvrv_1_1_bounding_box_1a341aeebe2fdd010ebf72aaf1c8760df3" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetCutOutLeft</name></member>
       <member refid="classvrv_1_1_bounding_box_1abc3f8eacafe2bfb2becd732507f259ae" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetCutOutRight</name></member>
@@ -1093,7 +1095,7 @@
       <member refid="classvrv_1_1_object_1a31f762f07969b77792891fdbbc5176e4" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetLast</name></member>
       <member refid="classvrv_1_1_object_1a908d56fef5a5dd9b9808555ab4ea4daf" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetLastAncestorNot</name></member>
       <member refid="classvrv_1_1_object_1a7a014abead37ca3e27f827a5c3ae7434" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetLastAncestorNot</name></member>
-      <member refid="classvrv_1_1_control_element_1a6958cd8e98487b05df80adf872de0353" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetLayerPlace</name></member>
+      <member refid="classvrv_1_1_control_element_1a21757f229d95373c0d53c4ac94cdcaf2" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetLayerPlace</name></member>
       <member refid="classvrv_1_1_bounding_box_1af329372204a34520779e6b0d0596e8b9" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetLeftBy</name></member>
       <member refid="classvrv_1_1_control_element_1a1ab03ccd8e1610d29508e9e0bb7bc7c5" prot="public" virt="virtual"><scope>vrv::Dynam</scope><name>GetLinkingInterface</name></member>
       <member refid="classvrv_1_1_control_element_1aeb6ccac7f45774c4f7bb78f3b878eafd" prot="public" virt="virtual"><scope>vrv::Dynam</scope><name>GetLinkingInterface</name></member>
@@ -1154,7 +1156,7 @@
       <member refid="classvrv_1_1_time_point_interface_1ac1222d78b3eb4fefc697eaabb564c368" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetStartMeasure</name></member>
       <member refid="classvrv_1_1_object_1a8f790811faa78e214ba76d2a728fa8e5" prot="public" virt="virtual"><scope>vrv::Dynam</scope><name>GetStemmedDrawingInterface</name></member>
       <member refid="classvrv_1_1_object_1ab7545a6790428020dc60d6f65f50edb0" prot="public" virt="virtual"><scope>vrv::Dynam</scope><name>GetStemmedDrawingInterface</name></member>
-      <member refid="classvrv_1_1_dynam_1ad54164cf764c40aad9292dd06810c8a3" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetSymbolsInStr</name></member>
+      <member refid="classvrv_1_1_dynam_1af6c0df785d387af9e7f353a50d15b3fd" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetSymbolsInStr</name></member>
       <member refid="classvrv_1_1_dynam_1a0234de69512a615bb0e74f09474cbdd2" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetSymbolStr</name></member>
       <member refid="classvrv_1_1_dynam_1a75be44ce463e9c442d1e83ac223baa86" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetSymbolStr</name></member>
       <member refid="classvrv_1_1_text_list_interface_1a675609c6cf086e3d3fc881d741cf6042" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>GetText</name></member>
@@ -1216,8 +1218,8 @@
       <member refid="classvrv_1_1_time_spanning_interface_1a968d95a2a61a0b39edcb043d6a2e8c66" prot="public" virt="virtual"><scope>vrv::Dynam</scope><name>InterfacePrepareTimestamps</name></member>
       <member refid="classvrv_1_1_linking_interface_1a844644245db209bd156e09b4a22e2726" prot="public" virt="virtual" ambiguityscope="vrv::"><scope>vrv::Dynam</scope><name>InterfaceResetData</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1aa51c9f9de1cb4a42194fd085fced59c7" prot="public" virt="virtual" ambiguityscope="vrv::TimeSpanningInterface::"><scope>vrv::Dynam</scope><name>InterfaceResetData</name></member>
-      <member refid="classvrv_1_1_bounding_box_1aa2283d42759c18ce84fe53f2e1684849" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>Intersects</name></member>
-      <member refid="classvrv_1_1_bounding_box_1ae73507464b47d2ccadbbf2a8231c643e" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>Intersects</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a29d29a9aaa350b53bcf58dc32978b7f8" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>Intersects</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a89d4ebda89785d624cb43d1c45dbbbb2" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>Intersects</name></member>
       <member refid="classvrv_1_1_bounding_box_1af366b55a8e449a12d689acd9d35ae782" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>Is</name></member>
       <member refid="classvrv_1_1_bounding_box_1aaeb23e9d3064f863ef3857efef570a8f" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>Is</name></member>
       <member refid="classvrv_1_1_object_1af8ee73eca8e0a08ae535318c4462fad1" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>IsAttribute</name></member>
@@ -1245,7 +1247,7 @@
       <member refid="classvrv_1_1_object_1a774acf3d4a93bd2e94451eeb1b883273" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>IsScoreDefElement</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a239665f006283e9749b3b4e5099887fb" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>IsSpanningMeasures</name></member>
       <member refid="classvrv_1_1_dynam_1a8e0e3979ed3e8c5452ac858399237220" prot="public" virt="virtual"><scope>vrv::Dynam</scope><name>IsSupportedChild</name></member>
-      <member refid="classvrv_1_1_dynam_1a240b3048c78b08eb6084c52167574032" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>IsSymbolOnly</name></member>
+      <member refid="classvrv_1_1_dynam_1a9ff7746e6f963b16fdcf9a64c2414d0b" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>IsSymbolOnly</name></member>
       <member refid="classvrv_1_1_dynam_1ac2dad3fd8324b00c27279fa23c432b31" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>IsSymbolOnly</name></member>
       <member refid="classvrv_1_1_object_1a334a7956ff32ade0704f4afdd74f37a6" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>IsSystemElement</name></member>
       <member refid="classvrv_1_1_object_1a958bf53eb4117b0438aa5ddb9264c1c8" prot="public" virt="non-virtual"><scope>vrv::Dynam</scope><name>IsTextElement</name></member>

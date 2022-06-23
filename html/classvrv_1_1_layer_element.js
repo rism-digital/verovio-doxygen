@@ -24,7 +24,7 @@ var classvrv_1_1_layer_element =
     [ "CalcSlurDirection", "classvrv_1_1_layer_element.html#a242cb3b3b2e0809a8ef12b3f9dca5fdd", null ],
     [ "CenterDrawingX", "classvrv_1_1_layer_element.html#a9119ab77c4eb82a8ad74cb8a20f7784d", null ],
     [ "CloneReset", "classvrv_1_1_layer_element.html#a0ed3a40420a298b9cea1d354bbbd1f9d", null ],
-    [ "FindSpannedLayerElements", "classvrv_1_1_layer_element.html#a1886335465aec51bcc87548c2365dce1", null ],
+    [ "FindSpannedLayerElements", "classvrv_1_1_layer_element.html#a5ef4a8ffde4444b0ae8ea906f696b3d2", null ],
     [ "GenerateMIDI", "classvrv_1_1_layer_element.html#a49c1399d3d6a392b123ff906d33ea5b2", null ],
     [ "GenerateTimemap", "classvrv_1_1_layer_element.html#a1c108f5965cbe23970c215ea66d19efd", null ],
     [ "GenerateZoneBounds", "classvrv_1_1_layer_element.html#a39adc1a3bb53a8836b1dc8bf375d15a1", null ],

@@ -1,5 +1,14 @@
 var NAVTREEINDEX9 =
 {
+"classvrv_1_1_humdrum_input.html#a6b8b68248a413079bb91b59099cfaecc":[1,0,0,165,304],
+"classvrv_1_1_humdrum_input.html#a6bd1948be13ee150922204427c954373":[1,0,0,165,13],
+"classvrv_1_1_humdrum_input.html#a6c2c242677525679b19ba59522fc943b":[1,0,0,165,264],
+"classvrv_1_1_humdrum_input.html#a6cb77e7b26f83492c0557ec3466f35bf":[1,0,0,165,54],
+"classvrv_1_1_humdrum_input.html#a6d7851d8e16b75df04ccc1938eefb41e":[1,0,0,165,342],
+"classvrv_1_1_humdrum_input.html#a6e7147c80a9147012d4e736dc175ac4d":[1,0,0,165,346],
+"classvrv_1_1_humdrum_input.html#a6fe7eded99e66e5687462c82f6e3fa10":[1,0,0,165,287],
+"classvrv_1_1_humdrum_input.html#a70261418efb68fd075809d287d9907c9":[1,0,0,165,60],
+"classvrv_1_1_humdrum_input.html#a7309e6fbd84cae4f76ddc420cbcdcbac":[1,0,0,165,205],
 "classvrv_1_1_humdrum_input.html#a7332593c7955c707aad04da2bb708d03":[1,0,0,165,299],
 "classvrv_1_1_humdrum_input.html#a73857f02db1e0196b45ea0245dab77ed":[1,0,0,165,147],
 "classvrv_1_1_humdrum_input.html#a74672d2abfc5eeb6ed1d3ce5d9ac8280":[1,0,0,165,47],
@@ -240,14 +249,5 @@ var NAVTREEINDEX9 =
 "classvrv_1_1_humdrum_signifiers.html#ab385bb2b31955835302646f2df8ea2a9":[1,0,0,166,16],
 "classvrv_1_1_humdrum_signifiers.html#ab66a6cbe68a034df07006ba86a8cdd54":[1,0,0,166,10],
 "classvrv_1_1_humdrum_signifiers.html#ab6a27aaf9e2edb967b0c879f69058253":[1,0,0,166,6],
-"classvrv_1_1_humdrum_signifiers.html#ac1747d137abc3a4e5035105c99f5dafd":[1,0,0,166,2],
-"classvrv_1_1_humdrum_signifiers.html#acce72f59a903acfc1766a75960269715":[1,0,0,166,1],
-"classvrv_1_1_humdrum_signifiers.html#acefc2f4cf69633e05ac5f5515de03552":[1,0,0,166,11],
-"classvrv_1_1_humdrum_signifiers.html#ae29c404cca51602dbe95b93f516c72a9":[1,0,0,166,17],
-"classvrv_1_1_humdrum_signifiers.html#ae73f7d3b23e354d51d65bcf338dca54a":[1,0,0,166,5],
-"classvrv_1_1_humdrum_signifiers.html#aefa426286e38175279e0c37f8d5b7a1c":[1,0,0,166,30],
-"classvrv_1_1_i_d_comparison.html":[1,0,0,167],
-"classvrv_1_1_i_d_comparison.html#a4a47fbd4eaee395e9695a33886382dcc":[1,0,0,167,2],
-"classvrv_1_1_i_d_comparison.html#a5517be9bad667a61d326026a2464a937":[1,0,0,167,1],
-"classvrv_1_1_i_d_comparison.html#a95e537011d3e3031d383c968074a35ee":[1,0,0,167,0]
+"classvrv_1_1_humdrum_signifiers.html#ac1747d137abc3a4e5035105c99f5dafd":[1,0,0,166,2]
 };

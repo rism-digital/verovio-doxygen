@@ -37,7 +37,7 @@ var classvrv_1_1_measure =
     [ "ConvertToPageBased", "classvrv_1_1_measure.html#abf1e618a291c7a62426284cb9ab3191a", null ],
     [ "ConvertToUnCastOffMensural", "classvrv_1_1_measure.html#a3703f90b41ea8ce53fb92d2f758db6a6", null ],
     [ "EnclosesTime", "classvrv_1_1_measure.html#a7fe08d9e1f4a7ee4f783b2b389553b83", null ],
-    [ "FindSpannedLayerElements", "classvrv_1_1_measure.html#afa41f7d6ed2d7a483b2d4fe024ecdf26", null ],
+    [ "FindSpannedLayerElements", "classvrv_1_1_measure.html#a95de9c344cc5bc87366ffe3565eb716d", null ],
     [ "GenerateMIDI", "classvrv_1_1_measure.html#a5947d2e09adb3e9b23850c1b84a50b94", null ],
     [ "GenerateTimemap", "classvrv_1_1_measure.html#a0403180f17b62775fbf85df2a92fe62a", null ],
     [ "GetBottomVisibleStaff", "classvrv_1_1_measure.html#aebb30d801973e472dade538e89a1ee93", null ],

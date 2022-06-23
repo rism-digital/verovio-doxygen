@@ -21,7 +21,7 @@ var classvrv_1_1_chord =
     [ "ConvertMarkupAnalyticalEnd", "classvrv_1_1_chord.html#a7defe40705bd6e2e1e3f3fa420593b59", null ],
     [ "FilterList", "classvrv_1_1_chord.html#a19b0fa01d54e8866e615fd2a7b621d59", null ],
     [ "GenerateMIDI", "classvrv_1_1_chord.html#aaf36b83279aee349e173113516cef3bd", null ],
-    [ "GetAdjacentNotesList", "classvrv_1_1_chord.html#a2f4bf048bb734e1a503803e86940b237", null ],
+    [ "GetAdjacentNotesList", "classvrv_1_1_chord.html#accc9d11678e5311a7fcf0752540291a9", null ],
     [ "GetBottomNote", "classvrv_1_1_chord.html#a5ff5cc2fe7d98d2d85b3e984b8ea0591", null ],
     [ "GetBottomNote", "classvrv_1_1_chord.html#a8686173fa5dcea7aee11fcfff2dc7084", null ],
     [ "GetClassName", "classvrv_1_1_chord.html#af4757132e935c04be38aba8296ae3046", null ],

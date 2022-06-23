@@ -9,7 +9,8 @@ var classvrv_1_1_beam_span =
     [ "GetClassName", "classvrv_1_1_beam_span.html#a66e5f24e85ce62d3f04454faa07928ed", null ],
     [ "GetPlistInterface", "classvrv_1_1_beam_span.html#a8e8949725dad8fc03ba193cf7d899c08", null ],
     [ "GetPlistInterface", "classvrv_1_1_beam_span.html#ae4db293365f649f96d7c47f4efd50075", null ],
-    [ "GetSegmentForSystem", "classvrv_1_1_beam_span.html#afbbe35e40ed9ed6d4c4727881034572e", null ],
+    [ "GetSegmentForSystem", "classvrv_1_1_beam_span.html#ac0968b6a6cb8217e95ffb87e3dcb52eb", null ],
+    [ "GetSegmentForSystem", "classvrv_1_1_beam_span.html#a6b36d0cc5075fde046789643a3ace068", null ],
     [ "GetTimePointInterface", "classvrv_1_1_beam_span.html#a2f6717a25685404f6e46ee8dd1b3524e", null ],
     [ "GetTimePointInterface", "classvrv_1_1_beam_span.html#a91b17f1a50690705eeab44c3b4d1cfdb", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_beam_span.html#ab183baa7b14a1071ff50433673e3efd3", null ],
@@ -17,6 +18,5 @@ var classvrv_1_1_beam_span =
     [ "InitBeamSegments", "classvrv_1_1_beam_span.html#a13c01b5ae8d057afb4be0513a5afecf6", null ],
     [ "PrepareBeamSpanElements", "classvrv_1_1_beam_span.html#a07aba3ae9755917d937d59f87637ca87", null ],
     [ "Reset", "classvrv_1_1_beam_span.html#ac5726b38ecf3bfd2a8a09ad484cfaa9a", null ],
-    [ "ResetHorizontalAlignment", "classvrv_1_1_beam_span.html#a908f6fced35e8798d9b229d8fe08f5e3", null ],
-    [ "m_beamSegments", "classvrv_1_1_beam_span.html#a2053121282e970662e8ebc6015af9553", null ]
+    [ "ResetHorizontalAlignment", "classvrv_1_1_beam_span.html#a908f6fced35e8798d9b229d8fe08f5e3", null ]
 ];

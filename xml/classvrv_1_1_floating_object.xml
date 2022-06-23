@@ -144,6 +144,90 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
+      <header>Get and set the current positioner</header>
+      <memberdef kind="function" id="classvrv_1_1_floating_object_1a819ad528a043efce1c9a8f860896b603" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::FloatingObject::SetCurrentFloatingPositioner</definition>
+        <argsstring>(FloatingPositioner *boundingBox)</argsstring>
+        <name>SetCurrentFloatingPositioner</name>
+        <param>
+          <type><ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> *</type>
+          <declname>boundingBox</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="59" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_floating_object_1a4d92135a6f8a1967fb53ac60e3cbb0c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> *</type>
+        <definition>FloatingPositioner* vrv::FloatingObject::GetCurrentFloatingPositioner</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentFloatingPositioner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="60" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_floating_object_1a4aac146641f1aa60551a927f7eb4d297" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> *</type>
+        <definition>const FloatingPositioner* vrv::FloatingObject::GetCurrentFloatingPositioner</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCurrentFloatingPositioner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="61" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_floating_object_1a248177357c942919e76c7aa438aeb6a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> *</type>
+        <definition>FloatingPositioner* vrv::FloatingObject::GetCorrespFloatingPositioner</definition>
+        <argsstring>(const FloatingObject *object)</argsstring>
+        <name>GetCorrespFloatingPositioner</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_floating_object" kindref="compound">FloatingObject</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>Look for the <ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> corresponding to the current one but for another object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return NULL if no current positioner or nothing found. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="69" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_floating_object_1a670ba7a497b9ebdc58d9a62a1027f71f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> *</type>
+        <definition>const FloatingPositioner* vrv::FloatingObject::GetCorrespFloatingPositioner</definition>
+        <argsstring>(const FloatingObject *object) const</argsstring>
+        <name>GetCorrespFloatingPositioner</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_floating_object" kindref="compound">FloatingObject</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="70" column="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
       <header>Get and set the drawing group for linking floating element horizontally.</header>
       <description><para>When setting it with an object, the corresponding id is returned (found or created) </para>
 </description>
@@ -158,7 +242,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="69" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="69" bodyend="69"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="78" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="78" bodyend="78"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_object_1a2a54c03eab79c35ce2030916053bd1d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -175,7 +259,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="70" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="70" bodyend="70"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="79" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="79" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_object_1abb3c371794922b14e5a0265a0bd27bba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -192,7 +276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="71" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="80" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -214,7 +298,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="79" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="88" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_object_1ab6520fb847c3341d60fba34277e011e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -227,7 +311,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="80" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="80" bodyend="80"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="89" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="89" bodyend="89"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -242,7 +326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="142" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="142" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="151" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="151" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_floating_object_1a61b33006f890e334e0a769f0ca630850" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -255,7 +339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="145" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="145" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="154" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="154" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_floating_object_1ad919ce6809a044694245c49dce668565" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -268,7 +352,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="147" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="147" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="156" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="156" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-attrib">
@@ -285,7 +369,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="159" column="37" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="159" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="168" column="37" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="168" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -377,55 +461,6 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="45" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_floating_object_1a819ad528a043efce1c9a8f860896b603" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void vrv::FloatingObject::SetCurrentFloatingPositioner</definition>
-        <argsstring>(FloatingPositioner *boundingBox)</argsstring>
-        <name>SetCurrentFloatingPositioner</name>
-        <param>
-          <type><ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> *</type>
-          <declname>boundingBox</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="55" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_floating_object_1aa26df3350328cd96704f766ac3db0615" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> *</type>
-        <definition>FloatingPositioner* vrv::FloatingObject::GetCurrentFloatingPositioner</definition>
-        <argsstring>() const</argsstring>
-        <name>GetCurrentFloatingPositioner</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="56" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="56" bodyend="56"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_floating_object_1aef3059c4ebeb1d581e5ce06319d11050" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> *</type>
-        <definition>FloatingPositioner* vrv::FloatingObject::GetCorrespFloatingPositioner</definition>
-        <argsstring>(FloatingObject *object)</argsstring>
-        <name>GetCorrespFloatingPositioner</name>
-        <param>
-          <type><ref refid="classvrv_1_1_floating_object" kindref="compound">FloatingObject</ref> *</type>
-          <declname>object</declname>
-        </param>
-        <briefdescription>
-<para>Look for the <ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> corresponding to the current one but for another object. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Return NULL if no current positioner or nothing found. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="62" column="24"/>
-      </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_object_1a8781df9fac1bad66c08cdae278be23e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
         <definition>virtual bool vrv::FloatingObject::IsExtenderElement</definition>
@@ -440,7 +475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="86" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="86" bodyend="86"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="95" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="95" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_object_1a33e63919403a78ab01c46e22ff264d4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -463,7 +498,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="91" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="91" bodyend="91"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="100" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="100" bodyend="100"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_object_1aca4747e3c2a91341b053520e4da715ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -482,7 +517,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="100" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="109" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_object_1a9a9271ae963c1406e733365a4ac860d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -501,7 +536,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="105" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="114" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_object_1ae538ce4c774260f2e1a5bbb302e26fc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -520,7 +555,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="110" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="119" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_object_1a6bc20d3cca7e15e9b1f3c77fb682d3ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -539,7 +574,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="115" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="124" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_object_1aa06caf3b3d926aeb0cca580a357bb074" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -558,7 +593,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="120" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="129" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_object_1af97233f871331ab970d0b2b48dd7ecf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -577,7 +612,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="125" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="134" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_object_1a428986dbd1f8481c8717f10ca43ce31d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -602,7 +637,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="130" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="139" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_floating_object_1ad76285ff372a1a1c5eca6fb7e9923afe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -621,7 +656,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="135" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="144" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -870,7 +905,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="28" column="35" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="28" bodyend="160"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" line="28" column="35" bodyfile="/home/runner/work/verovio/verovio/include/vrv/floatingobject.h" bodystart="28" bodyend="169"/>
     <listofallmembers>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::FloatingObject</scope><name>AddChild</name></member>
       <member refid="classvrv_1_1_object_1a5f617820a2163b5fa9d80d884bf69999" prot="public" virt="virtual"><scope>vrv::FloatingObject</scope><name>AddLayerElementToFlatList</name></member>
@@ -996,7 +1031,7 @@
       <member refid="classvrv_1_1_object_1ae1a47a27a677aa68ba14e324b0a17e00" prot="public" virt="virtual"><scope>vrv::FloatingObject</scope><name>FindNextChildByComparison</name></member>
       <member refid="classvrv_1_1_object_1a4750585ae6b8737aba3408fcc863dfeb" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>FindPreviousChild</name></member>
       <member refid="classvrv_1_1_object_1a7c792936ed7e04d00172c7b0017b85a1" prot="public" virt="virtual"><scope>vrv::FloatingObject</scope><name>FindPreviousChildByComparison</name></member>
-      <member refid="classvrv_1_1_object_1adf698716d3820efeb5d1af9bfd24a187" prot="public" virt="virtual"><scope>vrv::FloatingObject</scope><name>FindSpannedLayerElements</name></member>
+      <member refid="classvrv_1_1_object_1af8ed551298a2052adaa8c7fb1af31dc2" prot="public" virt="virtual"><scope>vrv::FloatingObject</scope><name>FindSpannedLayerElements</name></member>
       <member refid="classvrv_1_1_floating_object_1a881e66e4ba71468555b7a8abae6a346e" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>FloatingObject</name></member>
       <member refid="classvrv_1_1_floating_object_1a0988447a69fd83a982391248f4a19944" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>FloatingObject</name></member>
       <member refid="classvrv_1_1_floating_object_1a41170245f10c43785287cacb6e34013b" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>FloatingObject</name></member>
@@ -1038,8 +1073,10 @@
       <member refid="classvrv_1_1_bounding_box_1aca490fbb8d4d5c0179e05f790e0e2951" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>GetContentX2</name></member>
       <member refid="classvrv_1_1_bounding_box_1afb681918250b5eceeab06a8752c794a0" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>GetContentY1</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7d8f116f3c72430801e43fc9f1fb1e95" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>GetContentY2</name></member>
-      <member refid="classvrv_1_1_floating_object_1aef3059c4ebeb1d581e5ce06319d11050" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>GetCorrespFloatingPositioner</name></member>
-      <member refid="classvrv_1_1_floating_object_1aa26df3350328cd96704f766ac3db0615" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>GetCurrentFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a248177357c942919e76c7aa438aeb6a0" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>GetCorrespFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a670ba7a497b9ebdc58d9a62a1027f71f" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>GetCorrespFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a4d92135a6f8a1967fb53ac60e3cbb0c7" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>GetCurrentFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a4aac146641f1aa60551a927f7eb4d297" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>GetCurrentFloatingPositioner</name></member>
       <member refid="classvrv_1_1_bounding_box_1a26bfbd087c59e094696d2c0ff1fd89ea" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>GetCutOutBottom</name></member>
       <member refid="classvrv_1_1_bounding_box_1a341aeebe2fdd010ebf72aaf1c8760df3" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>GetCutOutLeft</name></member>
       <member refid="classvrv_1_1_bounding_box_1abc3f8eacafe2bfb2becd732507f259ae" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>GetCutOutRight</name></member>
@@ -1141,8 +1178,8 @@
       <member refid="classvrv_1_1_object_1aaf1ba626f7c0d6be44373b6cfe29855f" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>InsertAfter</name></member>
       <member refid="classvrv_1_1_object_1a26dd6389f8b6ce5ff1cf9f0b779a0d14" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>InsertBefore</name></member>
       <member refid="classvrv_1_1_object_1ac14929dac6e5b5e699d16ba7fc258d9d" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>InsertChild</name></member>
-      <member refid="classvrv_1_1_bounding_box_1aa2283d42759c18ce84fe53f2e1684849" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>Intersects</name></member>
-      <member refid="classvrv_1_1_bounding_box_1ae73507464b47d2ccadbbf2a8231c643e" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>Intersects</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a29d29a9aaa350b53bcf58dc32978b7f8" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>Intersects</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a89d4ebda89785d624cb43d1c45dbbbb2" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>Intersects</name></member>
       <member refid="classvrv_1_1_bounding_box_1af366b55a8e449a12d689acd9d35ae782" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>Is</name></member>
       <member refid="classvrv_1_1_bounding_box_1aaeb23e9d3064f863ef3857efef570a8f" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>Is</name></member>
       <member refid="classvrv_1_1_object_1af8ee73eca8e0a08ae535318c4462fad1" prot="public" virt="non-virtual"><scope>vrv::FloatingObject</scope><name>IsAttribute</name></member>

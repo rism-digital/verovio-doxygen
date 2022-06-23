@@ -201,22 +201,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tie.h" line="79" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tie.h" line="80" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classvrv_1_1_tie_1af5d0e930a2e13e63e0511792d3831152" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_tie_1abb48e36013d0206558dc43d05975df2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
         <definition>virtual bool vrv::Tie::CalculatePosition</definition>
-        <argsstring>(Doc *doc, Staff *staff, int x1, int x2, int spanningType, Point bezier[4])</argsstring>
+        <argsstring>(const Doc *doc, const Staff *staff, int x1, int x2, int spanningType, Point bezier[4])</argsstring>
         <name>CalculatePosition</name>
-        <reimplementedby refid="classvrv_1_1_lv_1aa99ae0622e14a63da47094a101c9f59f">CalculatePosition</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_lv_1adb5b9121e62eab1165e514c051053b17">CalculatePosition</reimplementedby>
         <param>
-          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
         </param>
         <param>
@@ -244,25 +244,25 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/tie.h" line="63" column="18"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_tie_1ac4744ba3209d0faea4c9eea00b21b384" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_tie_1aee480e43d8666849185cc70819bb4499" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int vrv::Tie::CalculateAdjacentChordXOffset</definition>
-        <argsstring>(Doc *doc, Staff *staff, Chord *parentChord, Note *note, curvature_CURVEDIR drawingCurveDir, int initialX, bool isStartPoint)</argsstring>
+        <argsstring>(const Doc *doc, const Staff *staff, const Chord *parentChord, const Note *note, curvature_CURVEDIR drawingCurveDir, int initialX, bool isStartPoint) const</argsstring>
         <name>CalculateAdjacentChordXOffset</name>
         <param>
-          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_chord" kindref="compound">Chord</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_chord" kindref="compound">Chord</ref> *</type>
           <declname>parentChord</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
           <declname>note</declname>
         </param>
         <param>
@@ -284,21 +284,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tie.h" line="68" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tie.h" line="69" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
-      <memberdef kind="function" id="classvrv_1_1_tie_1a38733a5dd2ee98326a6051d5c6c1259a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_tie_1af861f8faef91db5da5114df0b076d9d4" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::Tie::AdjustEnharmonicTies</definition>
-        <argsstring>(Doc *doc, FloatingCurvePositioner *curve, Point bezier[4], Note *startNote, Note *endNote, curvature_CURVEDIR drawingCurveDir)</argsstring>
+        <argsstring>(const Doc *doc, const FloatingCurvePositioner *curve, Point bezier[4], const Note *startNote, const Note *endNote, curvature_CURVEDIR drawingCurveDir) const</argsstring>
         <name>AdjustEnharmonicTies</name>
         <param>
-          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_floating_curve_positioner" kindref="compound">FloatingCurvePositioner</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_floating_curve_positioner" kindref="compound">FloatingCurvePositioner</ref> *</type>
           <declname>curve</declname>
         </param>
         <param>
@@ -307,11 +307,11 @@
           <array>[4]</array>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
           <declname>startNote</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
           <declname>endNote</declname>
         </param>
         <param>
@@ -324,27 +324,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tie.h" line="84" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tie.h" line="85" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_tie_1a2febf8997f1819705615dd70ec2d47b1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_tie_1a3c92bff8fdb2822f3570ade9871a369f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::Tie::CalculateXPosition</definition>
-        <argsstring>(Doc *doc, Staff *staff, Chord *startParentChord, Chord *endParentChord, int spanningType, bool isOuterChordNote, Point &amp;startPoint, Point &amp;endPoint, curvature_CURVEDIR drawingCurveDir)</argsstring>
+        <argsstring>(const Doc *doc, const Staff *staff, const Chord *startParentChord, const Chord *endParentChord, int spanningType, bool isOuterChordNote, Point &amp;startPoint, Point &amp;endPoint, curvature_CURVEDIR drawingCurveDir) const</argsstring>
         <name>CalculateXPosition</name>
         <param>
-          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_chord" kindref="compound">Chord</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_chord" kindref="compound">Chord</ref> *</type>
           <declname>startParentChord</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_chord" kindref="compound">Chord</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_chord" kindref="compound">Chord</ref> *</type>
           <declname>endParentChord</declname>
         </param>
         <param>
@@ -373,23 +373,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tie.h" line="88" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tie.h" line="89" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_tie_1a53ab3af669e06b46aebf1ef61ac2b000" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_tie_1aa8ec58f0f97f2cd2e1b234221e0c36b0" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>curvature_CURVEDIR</type>
         <definition>curvature_CURVEDIR vrv::Tie::GetPreferredCurveDirection</definition>
-        <argsstring>(Layer *layer, Note *note, Chord *startParentChord, data_STEMDIRECTION noteStemDir, bool isAboveStaffCenter)</argsstring>
+        <argsstring>(const Layer *layer, const Note *note, const Chord *startParentChord, data_STEMDIRECTION noteStemDir, bool isAboveStaffCenter) const</argsstring>
         <name>GetPreferredCurveDirection</name>
         <param>
-          <type><ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
           <declname>layer</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
           <declname>note</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_chord" kindref="compound">Chord</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_chord" kindref="compound">Chord</ref> *</type>
           <declname>startParentChord</declname>
         </param>
         <param>
@@ -406,15 +406,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tie.h" line="93" column="24"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tie.h" line="95" column="24"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_tie_1a6d35f645b37bdb45796b89d810f7a00b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_tie_1a96b17059b3e3cf78bf3ac16cca2de1b8" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::Tie::UpdateTiePositioning</definition>
-        <argsstring>(FloatingCurvePositioner *curve, Point bezier[4], LayerElement *durElement, Note *startNote, int height, curvature_CURVEDIR drawingCurveDir)</argsstring>
+        <argsstring>(const FloatingCurvePositioner *curve, Point bezier[4], const LayerElement *durElement, const Note *startNote, int height, curvature_CURVEDIR drawingCurveDir) const</argsstring>
         <name>UpdateTiePositioning</name>
         <param>
-          <type><ref refid="classvrv_1_1_floating_curve_positioner" kindref="compound">FloatingCurvePositioner</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_floating_curve_positioner" kindref="compound">FloatingCurvePositioner</ref> *</type>
           <declname>curve</declname>
         </param>
         <param>
@@ -423,11 +423,11 @@
           <array>[4]</array>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
           <declname>durElement</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
           <declname>startNote</declname>
         </param>
         <param>
@@ -444,7 +444,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tie.h" line="97" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tie.h" line="99" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -907,7 +907,7 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/tie.h" line="31" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/tie.h" bodystart="27" bodyend="103"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/tie.h" line="31" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/tie.h" bodystart="27" bodyend="105"/>
     <listofallmembers>
       <member refid="classvrv_1_1_linking_interface_1aaa4632e05d5d887b26dbf1789c84f573" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>AddBackLink</name></member>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>AddChild</name></member>
@@ -924,7 +924,7 @@
       <member refid="classvrv_1_1_object_1abeee6db6564ff37f1fd686033751d51f" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>AdjustCrossStaffYPos</name></member>
       <member refid="classvrv_1_1_object_1a1745790d27bcd5c9b11754ea44fdc376" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>AdjustDots</name></member>
       <member refid="classvrv_1_1_object_1ae0790c79940de6c0bd58e9022043b493" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>AdjustDotsEnd</name></member>
-      <member refid="classvrv_1_1_tie_1a38733a5dd2ee98326a6051d5c6c1259a" prot="private" virt="non-virtual"><scope>vrv::Tie</scope><name>AdjustEnharmonicTies</name></member>
+      <member refid="classvrv_1_1_tie_1af861f8faef91db5da5114df0b076d9d4" prot="private" virt="non-virtual"><scope>vrv::Tie</scope><name>AdjustEnharmonicTies</name></member>
       <member refid="classvrv_1_1_object_1a757300b40f61c72a86c66fe9df7f8b5d" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>AdjustFloatingPositionerGrps</name></member>
       <member refid="classvrv_1_1_object_1a3b246662209d352732e6f3018efe7748" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>AdjustFloatingPositioners</name></member>
       <member refid="classvrv_1_1_object_1aa7b805cd96f7dc63c47c640d01dd9954" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>AdjustFloatingPositionersBetween</name></member>
@@ -985,9 +985,9 @@
       <member refid="classvrv_1_1_object_1a3e00929935e3c3a646767efa319b5c2c" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>CalcSpanningBeamSpans</name></member>
       <member refid="classvrv_1_1_object_1a0b93f8b6e02c8ba98a03db67fe5d5d10" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>CalcStem</name></member>
       <member refid="classvrv_1_1_bounding_box_1a8fdd811aefcb373533b9cc2795aa04dd" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>CalcThickBezier</name></member>
-      <member refid="classvrv_1_1_tie_1ac4744ba3209d0faea4c9eea00b21b384" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>CalculateAdjacentChordXOffset</name></member>
-      <member refid="classvrv_1_1_tie_1af5d0e930a2e13e63e0511792d3831152" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>CalculatePosition</name></member>
-      <member refid="classvrv_1_1_tie_1a2febf8997f1819705615dd70ec2d47b1" prot="private" virt="non-virtual"><scope>vrv::Tie</scope><name>CalculateXPosition</name></member>
+      <member refid="classvrv_1_1_tie_1aee480e43d8666849185cc70819bb4499" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>CalculateAdjacentChordXOffset</name></member>
+      <member refid="classvrv_1_1_tie_1abb48e36013d0206558dc43d05975df2f" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>CalculatePosition</name></member>
+      <member refid="classvrv_1_1_tie_1a3c92bff8fdb2822f3570ade9871a369f" prot="private" virt="non-virtual"><scope>vrv::Tie</scope><name>CalculateXPosition</name></member>
       <member refid="classvrv_1_1_object_1ae1320bf0b5a56f033dcc561147225ba7" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>CastOffEncoding</name></member>
       <member refid="classvrv_1_1_object_1af4bdf6d63a5fbf43a21a5c18d3c49a10" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>CastOffPages</name></member>
       <member refid="classvrv_1_1_object_1ad2a435d1dd9a270785fca7cab265adba" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>CastOffPagesEnd</name></member>
@@ -1042,7 +1042,7 @@
       <member refid="classvrv_1_1_object_1ae1a47a27a677aa68ba14e324b0a17e00" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>FindNextChildByComparison</name></member>
       <member refid="classvrv_1_1_object_1a4750585ae6b8737aba3408fcc863dfeb" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>FindPreviousChild</name></member>
       <member refid="classvrv_1_1_object_1a7c792936ed7e04d00172c7b0017b85a1" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>FindPreviousChildByComparison</name></member>
-      <member refid="classvrv_1_1_object_1adf698716d3820efeb5d1af9bfd24a187" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>FindSpannedLayerElements</name></member>
+      <member refid="classvrv_1_1_object_1af8ed551298a2052adaa8c7fb1af31dc2" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>FindSpannedLayerElements</name></member>
       <member refid="classvrv_1_1_floating_object_1a881e66e4ba71468555b7a8abae6a346e" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>FloatingObject</name></member>
       <member refid="classvrv_1_1_floating_object_1a0988447a69fd83a982391248f4a19944" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>FloatingObject</name></member>
       <member refid="classvrv_1_1_floating_object_1a41170245f10c43785287cacb6e34013b" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>FloatingObject</name></member>
@@ -1087,9 +1087,11 @@
       <member refid="classvrv_1_1_bounding_box_1aca490fbb8d4d5c0179e05f790e0e2951" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetContentX2</name></member>
       <member refid="classvrv_1_1_bounding_box_1afb681918250b5eceeab06a8752c794a0" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetContentY1</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7d8f116f3c72430801e43fc9f1fb1e95" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetContentY2</name></member>
-      <member refid="classvrv_1_1_floating_object_1aef3059c4ebeb1d581e5ce06319d11050" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetCorrespFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a248177357c942919e76c7aa438aeb6a0" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetCorrespFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a670ba7a497b9ebdc58d9a62a1027f71f" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetCorrespFloatingPositioner</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a41a52a993d10feeb4e09551b69c5ccf0" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetCrossStaffOverflows</name></member>
-      <member refid="classvrv_1_1_floating_object_1aa26df3350328cd96704f766ac3db0615" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetCurrentFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a4d92135a6f8a1967fb53ac60e3cbb0c7" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetCurrentFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a4aac146641f1aa60551a927f7eb4d297" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetCurrentFloatingPositioner</name></member>
       <member refid="classvrv_1_1_bounding_box_1a26bfbd087c59e094696d2c0ff1fd89ea" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetCutOutBottom</name></member>
       <member refid="classvrv_1_1_bounding_box_1a341aeebe2fdd010ebf72aaf1c8760df3" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetCutOutLeft</name></member>
       <member refid="classvrv_1_1_bounding_box_1abc3f8eacafe2bfb2becd732507f259ae" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetCutOutRight</name></member>
@@ -1122,7 +1124,7 @@
       <member refid="classvrv_1_1_object_1a31f762f07969b77792891fdbbc5176e4" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetLast</name></member>
       <member refid="classvrv_1_1_object_1a908d56fef5a5dd9b9808555ab4ea4daf" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetLastAncestorNot</name></member>
       <member refid="classvrv_1_1_object_1a7a014abead37ca3e27f827a5c3ae7434" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetLastAncestorNot</name></member>
-      <member refid="classvrv_1_1_control_element_1a6958cd8e98487b05df80adf872de0353" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetLayerPlace</name></member>
+      <member refid="classvrv_1_1_control_element_1a21757f229d95373c0d53c4ac94cdcaf2" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetLayerPlace</name></member>
       <member refid="classvrv_1_1_bounding_box_1af329372204a34520779e6b0d0596e8b9" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetLeftBy</name></member>
       <member refid="classvrv_1_1_control_element_1a1ab03ccd8e1610d29508e9e0bb7bc7c5" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>GetLinkingInterface</name></member>
       <member refid="classvrv_1_1_control_element_1aeb6ccac7f45774c4f7bb78f3b878eafd" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>GetLinkingInterface</name></member>
@@ -1144,7 +1146,7 @@
       <member refid="classvrv_1_1_object_1aa246db2175561352dd71e7d2925697bf" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>GetPlistInterface</name></member>
       <member refid="classvrv_1_1_object_1a68eb08599ac194e3dfc2c149e96db67a" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>GetPositionInterface</name></member>
       <member refid="classvrv_1_1_object_1a1125eeb9dfc51655c68758107cd616fe" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>GetPositionInterface</name></member>
-      <member refid="classvrv_1_1_tie_1a53ab3af669e06b46aebf1ef61ac2b000" prot="private" virt="non-virtual"><scope>vrv::Tie</scope><name>GetPreferredCurveDirection</name></member>
+      <member refid="classvrv_1_1_tie_1aa8ec58f0f97f2cd2e1b234221e0c36b0" prot="private" virt="non-virtual"><scope>vrv::Tie</scope><name>GetPreferredCurveDirection</name></member>
       <member refid="classvrv_1_1_object_1a26a7c60cdf50a4072927aa671112f1f3" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetPrevious</name></member>
       <member refid="classvrv_1_1_object_1ad3b827c4f53d81386c192ce462f09b3e" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>GetPrevious</name></member>
       <member refid="classvrv_1_1_object_1a507b026d60921d1d418f3054b3bb68da" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>GetRelativeLayerElement</name></member>
@@ -1222,8 +1224,8 @@
       <member refid="classvrv_1_1_time_spanning_interface_1a968d95a2a61a0b39edcb043d6a2e8c66" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>InterfacePrepareTimestamps</name></member>
       <member refid="classvrv_1_1_linking_interface_1a844644245db209bd156e09b4a22e2726" prot="public" virt="virtual" ambiguityscope="vrv::"><scope>vrv::Tie</scope><name>InterfaceResetData</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1aa51c9f9de1cb4a42194fd085fced59c7" prot="public" virt="virtual" ambiguityscope="vrv::TimeSpanningInterface::"><scope>vrv::Tie</scope><name>InterfaceResetData</name></member>
-      <member refid="classvrv_1_1_bounding_box_1aa2283d42759c18ce84fe53f2e1684849" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>Intersects</name></member>
-      <member refid="classvrv_1_1_bounding_box_1ae73507464b47d2ccadbbf2a8231c643e" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>Intersects</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a29d29a9aaa350b53bcf58dc32978b7f8" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>Intersects</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a89d4ebda89785d624cb43d1c45dbbbb2" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>Intersects</name></member>
       <member refid="classvrv_1_1_bounding_box_1af366b55a8e449a12d689acd9d35ae782" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>Is</name></member>
       <member refid="classvrv_1_1_bounding_box_1aaeb23e9d3064f863ef3857efef570a8f" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>Is</name></member>
       <member refid="classvrv_1_1_object_1af8ee73eca8e0a08ae535318c4462fad1" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>IsAttribute</name></member>
@@ -1374,7 +1376,7 @@
       <member refid="classvrv_1_1_floating_object_1a88f281e9a6394157894a57b546346017" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>UpdateContentBBoxY</name></member>
       <member refid="classvrv_1_1_floating_object_1a29ef524752d056b1f60cab88e77a32ee" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>UpdateSelfBBoxX</name></member>
       <member refid="classvrv_1_1_floating_object_1a1868c149ca8ff416b6275e1637eaa626" prot="public" virt="virtual"><scope>vrv::Tie</scope><name>UpdateSelfBBoxY</name></member>
-      <member refid="classvrv_1_1_tie_1a6d35f645b37bdb45796b89d810f7a00b" prot="private" virt="non-virtual"><scope>vrv::Tie</scope><name>UpdateTiePositioning</name></member>
+      <member refid="classvrv_1_1_tie_1a96b17059b3e3cf78bf3ac16cca2de1b8" prot="private" virt="non-virtual"><scope>vrv::Tie</scope><name>UpdateTiePositioning</name></member>
       <member refid="classvrv_1_1_time_point_interface_1ae039ba772895c597f23b01cc8f0105ab" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>VerifyMeasure</name></member>
       <member refid="classvrv_1_1_bounding_box_1aeff55f50ac7cae031dfa289d422b77c0" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>VerticalBottomOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1acdb36f4007fc88d79a81eed3b440c536" prot="public" virt="non-virtual"><scope>vrv::Tie</scope><name>VerticalContentOverlap</name></member>

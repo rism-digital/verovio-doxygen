@@ -135,44 +135,45 @@ $(document).ready(function(){initNavTree('hairpin_8h_source.html',''); initResiz
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> SetDrawingLength(<span class="keywordtype">int</span> length) { m_drawingLength = length; }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> HasDrawingLength()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_drawingLength &gt; 0); }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span> CalcHeight(</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        Doc *doc, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">char</span> spanningType, FloatingPositioner *leftHairpin, FloatingPositioner *rightHaipin);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span> CalcHeight(<span class="keyword">const</span> Doc *doc, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">char</span> spanningType, <span class="keyword">const</span> FloatingPositioner *leftHairpin,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">const</span> FloatingPositioner *rightHaipin) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> SetLeftLink(ControlElement *leftLink);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    ControlElement *GetLeftLink() { <span class="keywordflow">return</span> m_leftLink; }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> SetRightLink(ControlElement *rightLink);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    ControlElement *GetRightLink() { <span class="keywordflow">return</span> m_rightLink; }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::pair&lt;int, int&gt; <a class="code" href="classvrv_1_1_hairpin.html#ab4c75250f93898dd4ca03555e533a29c">GetBarlineOverlapAdjustment</a>(<span class="keywordtype">int</span> doubleUnit, <span class="keywordtype">int</span> leftX, <span class="keywordtype">int</span> rightX, <span class="keywordtype">int</span> spanningType);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">const</span> ControlElement *GetLeftLink()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_leftLink; }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> SetRightLink(ControlElement *rightLink);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    ControlElement *GetRightLink() { <span class="keywordflow">return</span> m_rightLink; }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">const</span> ControlElement *GetRightLink()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_rightLink; }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::pair&lt;int, int&gt; <a class="code" href="classvrv_1_1_hairpin.html#af2977762c4e0c015fb669eb3dad77301">GetBarlineOverlapAdjustment</a>(<span class="keywordtype">int</span> doubleUnit, <span class="keywordtype">int</span> leftX, <span class="keywordtype">int</span> rightX, <span class="keywordtype">int</span> spanningType) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_hairpin.html#ac72b184ba2e260f5cba66f27644a40c6">PrepareFloatingGrps</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_hairpin.html#a2241571dc5eda208b8ec99c65bf3717a">ResetData</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_hairpin.html#ac72b184ba2e260f5cba66f27644a40c6">PrepareFloatingGrps</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_hairpin.html#a2241571dc5eda208b8ec99c65bf3717a">ResetData</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    ControlElement *m_leftLink;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    ControlElement *m_rightLink;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">int</span> m_drawingLength;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;};</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    ControlElement *m_leftLink;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    ControlElement *m_rightLink;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">int</span> m_drawingLength;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;};</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_hairpin_html_ab4c75250f93898dd4ca03555e533a29c"><div class="ttname"><a href="classvrv_1_1_hairpin.html#ab4c75250f93898dd4ca03555e533a29c">vrv::Hairpin::GetBarlineOverlapAdjustment</a></div><div class="ttdeci">std::pair&lt; int, int &gt; GetBarlineOverlapAdjustment(int doubleUnit, int leftX, int rightX, int spanningType)</div><div class="ttdoc">Get left/right adjustments that needs to be done to the hairpin with set coordinates (leftX,...</div></div>
 <div class="ttc" id="aclassvrv_1_1_hairpin_html_ac72b184ba2e260f5cba66f27644a40c6"><div class="ttname"><a href="classvrv_1_1_hairpin.html#ac72b184ba2e260f5cba66f27644a40c6">vrv::Hairpin::PrepareFloatingGrps</a></div><div class="ttdeci">int PrepareFloatingGrps(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::PrepareFloatingGrps.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:56</div></div>
 <div class="ttc" id="aclassvrv_1_1_hairpin_html_aad801da1020dff1d4233453b023b2389"><div class="ttname"><a href="classvrv_1_1_hairpin.html#aad801da1020dff1d4233453b023b2389">vrv::Hairpin::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> hairpin.h:40</div></div>
@@ -180,12 +181,13 @@ $(document).ready(function(){initNavTree('hairpin_8h_source.html',''); initResiz
 <div class="ttc" id="aclassvrv_1_1_hairpin_html_a2241571dc5eda208b8ec99c65bf3717a"><div class="ttname"><a href="classvrv_1_1_hairpin.html#a2241571dc5eda208b8ec99c65bf3717a">vrv::Hairpin::ResetData</a></div><div class="ttdeci">int ResetData(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetData.</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html">vrv::TimeSpanningInterface</a></div><div class="ttdoc">This class is an interface for spanning elements, such as slur, hairpin, etc.</div><div class="ttdef"><b>Definition:</b> timeinterface.h:144</div></div>
+<div class="ttc" id="aclassvrv_1_1_hairpin_html_af2977762c4e0c015fb669eb3dad77301"><div class="ttname"><a href="classvrv_1_1_hairpin.html#af2977762c4e0c015fb669eb3dad77301">vrv::Hairpin::GetBarlineOverlapAdjustment</a></div><div class="ttdeci">std::pair&lt; int, int &gt; GetBarlineOverlapAdjustment(int doubleUnit, int leftX, int rightX, int spanningType) const</div><div class="ttdoc">Get left/right adjustments that needs to be done to the hairpin with set coordinates (leftX,...</div></div>
 <div class="ttc" id="aclassvrv_1_1_hairpin_html"><div class="ttname"><a href="classvrv_1_1_hairpin.html">vrv::Hairpin</a></div><div class="ttdoc">This class models the MEI &lt;hairpin&gt; element.</div><div class="ttdef"><b>Definition:</b> hairpin.h:25</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>hairpin.h</b></li>
-    <li class="footer">Generated on Thu Jun 23 2022 08:28:21 for Verovio by
+    <li class="footer">Generated on Thu Jun 23 2022 09:30:09 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

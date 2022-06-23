@@ -145,40 +145,39 @@ $(document).ready(function(){initNavTree('beamspan_8h_source.html',''); initResi
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> InitBeamSegments();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> ClearBeamSegments();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    BeamSpanSegment *GetSegmentForSystem(System *system);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_span.html#a908f6fced35e8798d9b229d8fe08f5e3">ResetHorizontalAlignment</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_span.html#a06352e0c8471427a87c54c26ef3f3367">CalcStem</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_span.html#a07aba3ae9755917d937d59f87637ca87">PrepareBeamSpanElements</a>(FunctorParams *) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_span.html#a1401b8046896552abf622d146293532e">CalcSpanningBeamSpans</a>(FunctorParams *) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">// Helper for breaking one big spanning beamSpan into smaller beamSpans</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">bool</span> AddSpanningSegment(Doc *doc, <span class="keyword">const</span> SpanIndexVector &amp;elements, <span class="keywordtype">int</span> index, <span class="keywordtype">bool</span> newSegment = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// Helper to get element list for the beamSpan - elements are acquired from all layerElements that are located</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// in between start and end of the beamSpan</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    ArrayOfObjects GetBeamSpanElementList(Layer *layer, Staff *staff);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    std::vector&lt;BeamSpanSegment *&gt; m_beamSegments;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    ArrayOfObjects m_beamedElements;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif //__VRV_BEAMSPAN_H__</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    BeamSpanSegment *<a class="code" href="classvrv_1_1_beam_span.html#ac0968b6a6cb8217e95ffb87e3dcb52eb">GetSegmentForSystem</a>(<span class="keyword">const</span> System *system);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">const</span> BeamSpanSegment *<a class="code" href="classvrv_1_1_beam_span.html#ac0968b6a6cb8217e95ffb87e3dcb52eb">GetSegmentForSystem</a>(<span class="keyword">const</span> System *system) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_span.html#a908f6fced35e8798d9b229d8fe08f5e3">ResetHorizontalAlignment</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_span.html#a06352e0c8471427a87c54c26ef3f3367">CalcStem</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_span.html#a07aba3ae9755917d937d59f87637ca87">PrepareBeamSpanElements</a>(FunctorParams *) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_span.html#a1401b8046896552abf622d146293532e">CalcSpanningBeamSpans</a>(FunctorParams *) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// Helper for breaking one big spanning beamSpan into smaller beamSpans</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">bool</span> AddSpanningSegment(<span class="keyword">const</span> Doc *doc, <span class="keyword">const</span> SpanIndexVector &amp;elements, <span class="keywordtype">int</span> index, <span class="keywordtype">bool</span> newSegment = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// Helper to get element list for the beamSpan - elements are acquired from all layerElements that are located</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// in between start and end of the beamSpan</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    ArrayOfObjects GetBeamSpanElementList(Layer *layer, <span class="keyword">const</span> Staff *staff);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    std::vector&lt;BeamSpanSegment *&gt; m_beamSegments;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    ArrayOfObjects m_beamedElements;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif //__VRV_BEAMSPAN_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_beam_span_html"><div class="ttname"><a href="classvrv_1_1_beam_span.html">vrv::BeamSpan</a></div><div class="ttdoc">This class models the MEI &lt;beamSpan&gt; element.</div><div class="ttdef"><b>Definition:</b> beamspan.h:31</div></div>
@@ -187,6 +186,7 @@ $(document).ready(function(){initNavTree('beamspan_8h_source.html',''); initResi
 <div class="ttc" id="aclassvrv_1_1_beam_span_html_a517b985b3f088f8694392afde8f48d00"><div class="ttname"><a href="classvrv_1_1_beam_span.html#a517b985b3f088f8694392afde8f48d00">vrv::BeamSpan::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> beamspan.h:49</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_span_html_a06352e0c8471427a87c54c26ef3f3367"><div class="ttname"><a href="classvrv_1_1_beam_span.html#a06352e0c8471427a87c54c26ef3f3367">vrv::BeamSpan::CalcStem</a></div><div class="ttdeci">int CalcStem(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CalcStem.</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_drawing_interface_html"><div class="ttname"><a href="classvrv_1_1_beam_drawing_interface.html">vrv::BeamDrawingInterface</a></div><div class="ttdoc">This class is an interface for MEI beam elements (beam, beamSpan).</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:85</div></div>
+<div class="ttc" id="aclassvrv_1_1_beam_span_html_ac0968b6a6cb8217e95ffb87e3dcb52eb"><div class="ttname"><a href="classvrv_1_1_beam_span.html#ac0968b6a6cb8217e95ffb87e3dcb52eb">vrv::BeamSpan::GetSegmentForSystem</a></div><div class="ttdeci">BeamSpanSegment * GetSegmentForSystem(const System *system)</div><div class="ttdoc">Access the beam segments.</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_span_html_a908f6fced35e8798d9b229d8fe08f5e3"><div class="ttname"><a href="classvrv_1_1_beam_span.html#a908f6fced35e8798d9b229d8fe08f5e3">vrv::BeamSpan::ResetHorizontalAlignment</a></div><div class="ttdeci">int ResetHorizontalAlignment(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetHorizontalAlignment.</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_plist_interface_html"><div class="ttname"><a href="classvrv_1_1_plist_interface.html">vrv::PlistInterface</a></div><div class="ttdoc">This class is an interface for elements having a single time point, such as tempo,...</div><div class="ttdef"><b>Definition:</b> plistinterface.h:27</div></div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('beamspan_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>beamspan.h</b></li>
-    <li class="footer">Generated on Thu Jun 23 2022 08:28:21 for Verovio by
+    <li class="footer">Generated on Thu Jun 23 2022 09:30:08 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
