@@ -23,6 +23,9 @@ var hierarchy =
     [ "AttArticulation", null, [
       [ "vrv::Artic", "classvrv_1_1_artic.html", null ]
     ] ],
+    [ "AttArticulationGestural", null, [
+      [ "vrv::Artic", "classvrv_1_1_artic.html", null ]
+    ] ],
     [ "AttAugmentDots", null, [
       [ "vrv::Dots", "classvrv_1_1_dots.html", null ],
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", [
