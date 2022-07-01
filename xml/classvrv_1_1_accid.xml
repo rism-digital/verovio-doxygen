@@ -289,7 +289,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="137" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/accid.h" bodystart="137" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="144" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/accid.h" bodystart="144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_accid_1aacc4d9aa3b1d302c8e98004b2d875f75" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_accid" kindref="compound">Accid</ref> *</type>
@@ -302,7 +302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="138" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/accid.h" bodystart="138" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="145" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/accid.h" bodystart="145" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_accid_1a9c61a5f3af4c0f8779b81c58ce5cef25" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -315,7 +315,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="139" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/accid.h" bodystart="139" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="146" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/accid.h" bodystart="146" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_accid_1af46e5c69ea07da8b232ff1afd6b37979" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -328,7 +328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="140" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/accid.h" bodystart="140" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="147" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/accid.h" bodystart="147" bodyend="-1"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_accid_1a2d5d4b4d7130b639bb2bdc2e50d33b46" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -347,7 +347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="125" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="132" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_accid_1a718aba950d2c110af324f9356ab1ec4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -366,15 +366,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="130" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="137" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_accid_1ae220f3fe4936cdbb975430971f76644e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_accid_1a9094edfc3b5502a68f08dec75b9face3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>wchar_t</type>
         <definition>static wchar_t vrv::Accid::GetAccidGlyph</definition>
-        <argsstring>(data_ACCIDENTAL_WRITTEN)</argsstring>
+        <argsstring>(data_ACCIDENTAL_WRITTEN accid)</argsstring>
         <name>GetAccidGlyph</name>
         <param>
           <type>data_ACCIDENTAL_WRITTEN</type>
+          <declname>accid</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -383,6 +384,49 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="116" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_accid_1a132cc5a59669c5a72eb211f28ec44481" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::wstring</type>
+        <definition>static std::wstring vrv::Accid::CreateSymbolStr</definition>
+        <argsstring>(data_ACCIDENTAL_WRITTEN accid, data_ENCLOSURE enclosure=ENCLOSURE_NONE, data_NOTATIONTYPE notationType=NOTATIONTYPE_NONE, const Resources *resources=NULL, data_HEXNUM glyphNum=0, std::string glyphName=&quot;&quot;)</argsstring>
+        <name>CreateSymbolStr</name>
+        <param>
+          <type>data_ACCIDENTAL_WRITTEN</type>
+          <declname>accid</declname>
+        </param>
+        <param>
+          <type>data_ENCLOSURE</type>
+          <declname>enclosure</declname>
+          <defval>ENCLOSURE_NONE</defval>
+        </param>
+        <param>
+          <type>data_NOTATIONTYPE</type>
+          <declname>notationType</declname>
+          <defval>NOTATIONTYPE_NONE</defval>
+        </param>
+        <param>
+          <type>const <ref refid="classvrv_1_1_resources" kindref="compound">Resources</ref> *</type>
+          <declname>resources</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>data_HEXNUM</type>
+          <declname>glyphNum</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>glyphName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Create the SMuFL string based on various properties. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="121" column="25"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -416,13 +460,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="62" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/accid.h" bodystart="62" bodyend="62"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_accid_1a30dcb0a80535a91bc440d48448e23fc8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_accid_1a45efde3c703b252065c1cc76598af2df" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::wstring</type>
         <definition>std::wstring vrv::Accid::GetSymbolStr</definition>
-        <argsstring>(const data_NOTATIONTYPE notationType) const</argsstring>
+        <argsstring>(data_NOTATIONTYPE notationType) const</argsstring>
         <name>GetSymbolStr</name>
         <param>
-          <type>const data_NOTATIONTYPE</type>
+          <type>data_NOTATIONTYPE</type>
           <declname>notationType</declname>
         </param>
         <briefdescription>
@@ -949,7 +993,7 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="36" column="42" bodyfile="/home/runner/work/verovio/verovio/include/vrv/accid.h" bodystart="27" bodyend="141"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/accid.h" line="36" column="42" bodyfile="/home/runner/work/verovio/verovio/include/vrv/accid.h" bodystart="27" bodyend="148"/>
     <listofallmembers>
       <member refid="classvrv_1_1_accid_1a385ef85fbb09ef0fb17791e154ce1c3b" prot="public" virt="non-virtual"><scope>vrv::Accid</scope><name>Accid</name></member>
       <member refid="classvrv_1_1_linking_interface_1aaa4632e05d5d887b26dbf1789c84f573" prot="public" virt="non-virtual"><scope>vrv::Accid</scope><name>AddBackLink</name></member>
@@ -1055,6 +1099,7 @@
       <member refid="classvrv_1_1_object_1ada7452f72d022232966a2d5822b8bbc8" prot="public" virt="virtual"><scope>vrv::Accid</scope><name>ConvertToPageBasedEnd</name></member>
       <member refid="classvrv_1_1_object_1a4dc4ba189667de40dfbb15b88adb5b0e" prot="public" virt="virtual"><scope>vrv::Accid</scope><name>ConvertToUnCastOffMensural</name></member>
       <member refid="classvrv_1_1_object_1a4bf38f527d70161c92062a2347b7c11e" prot="public" virt="virtual"><scope>vrv::Accid</scope><name>CopyChildren</name></member>
+      <member refid="classvrv_1_1_accid_1a132cc5a59669c5a72eb211f28ec44481" prot="public" virt="non-virtual"><scope>vrv::Accid</scope><name>CreateSymbolStr</name></member>
       <member refid="classvrv_1_1_object_1aa24fba8bae1f0876567f564f98020966" prot="public" virt="non-virtual"><scope>vrv::Accid</scope><name>DeleteChild</name></member>
       <member refid="classvrv_1_1_object_1acbb7a83e4ae3f1ba54bcd408dce066ee" prot="public" virt="non-virtual"><scope>vrv::Accid</scope><name>DeleteChildrenByComparison</name></member>
       <member refid="classvrv_1_1_object_1ac846569894fc8b08083e5a8526ba5834" prot="public" virt="non-virtual"><scope>vrv::Accid</scope><name>DetachChild</name></member>
@@ -1095,7 +1140,7 @@
       <member refid="classvrv_1_1_object_1adef7d8ebf6bbb0b9bea78a608c161791" prot="public" virt="non-virtual"><scope>vrv::Accid</scope><name>GenerateRandID</name></member>
       <member refid="classvrv_1_1_layer_element_1a1c108f5965cbe23970c215ea66d19efd" prot="public" virt="virtual"><scope>vrv::Accid</scope><name>GenerateTimemap</name></member>
       <member refid="classvrv_1_1_layer_element_1a39adc1a3bb53a8836b1dc8bf375d15a1" prot="public" virt="non-virtual"><scope>vrv::Accid</scope><name>GenerateZoneBounds</name></member>
-      <member refid="classvrv_1_1_accid_1ae220f3fe4936cdbb975430971f76644e" prot="public" virt="non-virtual"><scope>vrv::Accid</scope><name>GetAccidGlyph</name></member>
+      <member refid="classvrv_1_1_accid_1a9094edfc3b5502a68f08dec75b9face3" prot="public" virt="non-virtual"><scope>vrv::Accid</scope><name>GetAccidGlyph</name></member>
       <member refid="classvrv_1_1_layer_element_1aaf37de33bde75ed90873dead9d515860" prot="public" virt="non-virtual"><scope>vrv::Accid</scope><name>GetAlignment</name></member>
       <member refid="classvrv_1_1_layer_element_1a5d22f797b37bd60c3571dda3b91bebc2" prot="public" virt="non-virtual"><scope>vrv::Accid</scope><name>GetAlignment</name></member>
       <member refid="classvrv_1_1_layer_element_1a3b4902898ea009daf4242585c329d39b" prot="public" virt="non-virtual"><scope>vrv::Accid</scope><name>GetAlignmentDuration</name></member>
@@ -1237,7 +1282,7 @@
       <member refid="classvrv_1_1_object_1a8f790811faa78e214ba76d2a728fa8e5" prot="public" virt="virtual"><scope>vrv::Accid</scope><name>GetStemmedDrawingInterface</name></member>
       <member refid="classvrv_1_1_object_1ab7545a6790428020dc60d6f65f50edb0" prot="public" virt="virtual"><scope>vrv::Accid</scope><name>GetStemmedDrawingInterface</name></member>
       <member refid="classvrv_1_1_facsimile_interface_1af64a523941de42e832c352d6a50124d5" prot="public" virt="non-virtual"><scope>vrv::Accid</scope><name>GetSurfaceY</name></member>
-      <member refid="classvrv_1_1_accid_1a30dcb0a80535a91bc440d48448e23fc8" prot="public" virt="non-virtual"><scope>vrv::Accid</scope><name>GetSymbolStr</name></member>
+      <member refid="classvrv_1_1_accid_1a45efde3c703b252065c1cc76598af2df" prot="public" virt="non-virtual"><scope>vrv::Accid</scope><name>GetSymbolStr</name></member>
       <member refid="classvrv_1_1_object_1ac2308546f247b47d6fdaaf0e90490fa5" prot="public" virt="virtual"><scope>vrv::Accid</scope><name>GetTextDirInterface</name></member>
       <member refid="classvrv_1_1_object_1a3524d9d7b5a93fed82ad1a90812cfcdd" prot="public" virt="virtual"><scope>vrv::Accid</scope><name>GetTextDirInterface</name></member>
       <member refid="classvrv_1_1_object_1a738ca662cfaa09bb0122966cb29b43c6" prot="public" virt="virtual"><scope>vrv::Accid</scope><name>GetTimePointInterface</name></member>

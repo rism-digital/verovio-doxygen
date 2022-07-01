@@ -265,6 +265,7 @@ var hierarchy =
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
       [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
+      [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
       [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],

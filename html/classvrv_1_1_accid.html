@@ -116,9 +116,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_accid.html#a540367368be706aabb5722e8933e3fdc">HasToBeAligned</a> () const override</td></tr>
 <tr class="memdesc:a540367368be706aabb5722e8933e3fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the method since alignment is required. <br /></td></tr>
 <tr class="separator:a540367368be706aabb5722e8933e3fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30dcb0a80535a91bc440d48448e23fc8"><td class="memItemLeft" align="right" valign="top">std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_accid.html#a30dcb0a80535a91bc440d48448e23fc8">GetSymbolStr</a> (const data_NOTATIONTYPE notationType) const</td></tr>
-<tr class="memdesc:a30dcb0a80535a91bc440d48448e23fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve SMuFL string for the accidental.  <a href="classvrv_1_1_accid.html#a30dcb0a80535a91bc440d48448e23fc8">More...</a><br /></td></tr>
-<tr class="separator:a30dcb0a80535a91bc440d48448e23fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45efde3c703b252065c1cc76598af2df"><td class="memItemLeft" align="right" valign="top">std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_accid.html#a45efde3c703b252065c1cc76598af2df">GetSymbolStr</a> (data_NOTATIONTYPE notationType) const</td></tr>
+<tr class="memdesc:a45efde3c703b252065c1cc76598af2df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve SMuFL string for the accidental.  <a href="classvrv_1_1_accid.html#a45efde3c703b252065c1cc76598af2df">More...</a><br /></td></tr>
+<tr class="separator:a45efde3c703b252065c1cc76598af2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefabfa88f91592f0877541df777713cf"><td class="memItemLeft" align="right" valign="top"><a id="aefabfa88f91592f0877541df777713cf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_accid.html#aefabfa88f91592f0877541df777713cf">AdjustX</a> (<a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *element, const <a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, int staffSize, std::vector&lt; <a class="el" href="classvrv_1_1_accid.html">Accid</a> * &gt; &amp;leftAccids, std::vector&lt; <a class="el" href="classvrv_1_1_accid.html">Accid</a> * &gt; &amp;adjustedAccids)</td></tr>
 <tr class="memdesc:aefabfa88f91592f0877541df777713cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust X position of accid in relation to other element. <br /></td></tr>
@@ -1756,9 +1756,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_accid.html#a718aba950d2c110af324f9356ab1ec4a">ResetHorizontalAlignment</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) override</td></tr>
 <tr class="memdesc:a718aba950d2c110af324f9356ab1ec4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#acea387d6c12925339a10f94312d9a82f" title="Reset the horizontal alignment environment for various types for object.">Object::ResetHorizontalAlignment</a>. <br /></td></tr>
 <tr class="separator:a718aba950d2c110af324f9356ab1ec4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae220f3fe4936cdbb975430971f76644e"><td class="memItemLeft" align="right" valign="top"><a id="ae220f3fe4936cdbb975430971f76644e"></a>
-static wchar_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetAccidGlyph</b> (data_ACCIDENTAL_WRITTEN)</td></tr>
-<tr class="separator:ae220f3fe4936cdbb975430971f76644e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9094edfc3b5502a68f08dec75b9face3"><td class="memItemLeft" align="right" valign="top"><a id="a9094edfc3b5502a68f08dec75b9face3"></a>
+static wchar_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetAccidGlyph</b> (data_ACCIDENTAL_WRITTEN accid)</td></tr>
+<tr class="separator:a9094edfc3b5502a68f08dec75b9face3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132cc5a59669c5a72eb211f28ec44481"><td class="memItemLeft" align="right" valign="top"><a id="a132cc5a59669c5a72eb211f28ec44481"></a>
+static std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_accid.html#a132cc5a59669c5a72eb211f28ec44481">CreateSymbolStr</a> (data_ACCIDENTAL_WRITTEN accid, data_ENCLOSURE enclosure=ENCLOSURE_NONE, data_NOTATIONTYPE notationType=NOTATIONTYPE_NONE, const <a class="el" href="classvrv_1_1_resources.html">Resources</a> *resources=NULL, data_HEXNUM glyphNum=0, std::string glyphName=&quot;&quot;)</td></tr>
+<tr class="memdesc:a132cc5a59669c5a72eb211f28ec44481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the SMuFL string based on various properties. <br /></td></tr>
+<tr class="separator:a132cc5a59669c5a72eb211f28ec44481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -1967,8 +1971,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
-<a id="a30dcb0a80535a91bc440d48448e23fc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30dcb0a80535a91bc440d48448e23fc8">&#9670;&nbsp;</a></span>GetSymbolStr()</h2>
+<a id="a45efde3c703b252065c1cc76598af2df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45efde3c703b252065c1cc76598af2df">&#9670;&nbsp;</a></span>GetSymbolStr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1976,7 +1980,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
         <tr>
           <td class="memname">std::wstring vrv::Accid::GetSymbolStr </td>
           <td>(</td>
-          <td class="paramtype">const data_NOTATIONTYPE&#160;</td>
+          <td class="paramtype">data_NOTATIONTYPE&#160;</td>
           <td class="paramname"><em>notationType</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -2027,7 +2031,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_accid.html">Accid</a></li>
-    <li class="footer">Generated on Thu Jun 30 2022 17:18:08 for Verovio by
+    <li class="footer">Generated on Fri Jul 1 2022 06:03:50 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
