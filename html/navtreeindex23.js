@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"classvrv_1_1_view.html#a56da13bc73f007bf819c4d11a99af67d":[1,0,0,365,158],
 "classvrv_1_1_view.html#a578b7e223344dce694d64c2fc9f0f5d5":[1,0,0,365,147],
 "classvrv_1_1_view.html#a592f312dd1b5f9c0bda28ab7346c7b88":[1,0,0,365,181],
 "classvrv_1_1_view.html#a5b3def8315a74daebf0c2a202cf1ab38":[1,0,0,365,176],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "drawinginterface_8h_source.html":[2,0,38],
 "durationinterface_8h_source.html":[2,0,39],
 "dynam_8h_source.html":[2,0,40],
-"editorial_8h_source.html":[2,0,41],
-"editortoolkit_8h_source.html":[2,0,42]
+"editorial_8h_source.html":[2,0,41]
 };

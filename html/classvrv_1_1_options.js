@@ -29,6 +29,7 @@ var classvrv_1_1_options =
     [ "m_choiceXPathQuery", "classvrv_1_1_options.html#a3b9c987a4dcdf48c94e242f5f46c77ff", null ],
     [ "m_condense", "classvrv_1_1_options.html#a71e85a428c98b12c11fa8dde3e28c62e", null ],
     [ "m_condenseFirstPage", "classvrv_1_1_options.html#a0eb09fa44d2bc12cfa028d42eccaa855", null ],
+    [ "m_condenseNotLastSystem", "classvrv_1_1_options.html#af1d9d4177bc006d8ef52395090e679ce", null ],
     [ "m_condenseTempoPages", "classvrv_1_1_options.html#a13f3eb429b22f8a683946fd452de830a", null ],
     [ "m_defaultBottomMargin", "classvrv_1_1_options.html#aadd9a7eba2d6b83437f0f863794b1542", null ],
     [ "m_defaultLeftMargin", "classvrv_1_1_options.html#ad31a07abbb88b19be6ddf0271943334b", null ],
