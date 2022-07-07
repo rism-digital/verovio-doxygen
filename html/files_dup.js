@@ -149,6 +149,7 @@ var files_dup =
     [ "staff.h", "staff_8h_source.html", null ],
     [ "staffdef.h", "staffdef_8h_source.html", null ],
     [ "staffgrp.h", "staffgrp_8h_source.html", null ],
+    [ "stem.h", "stem_8h_source.html", null ],
     [ "subst.h", "subst_8h_source.html", null ],
     [ "supplied.h", "supplied_8h_source.html", null ],
     [ "surface.h", "surface_8h_source.html", null ],

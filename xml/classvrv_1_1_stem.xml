@@ -6,7 +6,7 @@
     <basecompoundref prot="public" virt="non-virtual">AttGraced</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">AttStems</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">AttStemsCmn</basecompoundref>
-    <includes refid="elementpart_8h" local="no">elementpart.h</includes>
+    <includes refid="stem_8h" local="no">stem.h</includes>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors, reset and class name methods</header>
       <description><para>Reset method resets all attribute classes </para>
@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="346" column="5"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="34" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1a8feba57af3b9b967512d2cb39895d9cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -35,37 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="347" column="13"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_stem_1a0ae2602ead12893022b5e9a4596978b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
-        <definition>void vrv::Stem::Reset</definition>
-        <argsstring>() override</argsstring>
-        <name>Reset</name>
-        <reimplements refid="classvrv_1_1_object_1acdbfa3602b2a05ed4c7ba41c77f92b7e">Reset</reimplements>
-        <briefdescription>
-<para>Reset the object, that is 1) removing all childs and 2) resetting all attributes. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>The method is virtual, so <emphasis>always</emphasis> call the parent in the method overriding it. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="348" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_stem_1a0ad0c677151ec3134871632aecab85cc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type>std::string</type>
-        <definition>std::string vrv::Stem::GetClassName</definition>
-        <argsstring>() const override</argsstring>
-        <name>GetClassName</name>
-        <reimplements refid="classvrv_1_1_object_1a85f5f4c2c61b31f3e0cfafccf6893dd3">GetClassName</reimplements>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="349" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="349" bodyend="349"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="35" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1a77a7d07b9d90c3cdde502260d8b00e1a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
@@ -81,7 +51,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="350" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="350" bodyend="350"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="36" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_stem_1a0ae2602ead12893022b5e9a4596978b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void vrv::Stem::Reset</definition>
+        <argsstring>() override</argsstring>
+        <name>Reset</name>
+        <reimplements refid="classvrv_1_1_layer_element_1a6cc22ea81270327ac7b87a5a3c20216e">Reset</reimplements>
+        <briefdescription>
+<para>Virtual reset method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Needs to be overridden in child classes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="37" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_stem_1a0ad0c677151ec3134871632aecab85cc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string vrv::Stem::GetClassName</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetClassName</name>
+        <reimplements refid="classvrv_1_1_object_1a85f5f4c2c61b31f3e0cfafccf6893dd3">GetClassName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="38" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="38" bodyend="38"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="365" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="365" bodyend="365"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="53" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="53" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1a471a6f88cb845e4c82a36c1f7d478c52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="366" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="366" bodyend="366"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="54" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="54" bodyend="54"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1a06628e536a1d6fafed73e0791a569ac6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="367" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="367" bodyend="367"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="55" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="55" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1a40bf932a0daf783d36b478f64dfd6b12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="368" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="368" bodyend="368"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="56" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="56" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1a1f95e0c9b29d6df218ba9cc07e8be0e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -157,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="369" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="369" bodyend="369"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="57" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="57" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1a999c1ff2cd8ee4f8e126ecaaa8f0244d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -174,7 +174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="370" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="370" bodyend="370"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="58" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="58" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1acf1624788185582d3fb738aed6a5b9ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -187,7 +187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="371" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="371" bodyend="371"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="59" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="59" bodyend="59"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -203,7 +203,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="378" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="378" bodyend="378"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="66" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="66" bodyend="66"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1a465d5e56923679f5c7d328c19327062c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -220,7 +220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="379" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="379" bodyend="379"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="67" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="67" bodyend="67"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -241,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="405" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="405" bodyend="405"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="93" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="93" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1a1c927bad9b24656f1ffc62609f3cc426" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>int</type>
@@ -260,7 +260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="406" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="406" bodyend="406"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="94" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="94" bodyend="94"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -276,7 +276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="436" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="436" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="124" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="124" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_stem_1a9fe05e7a8d4d76f7891f981d3f81a7ed" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -290,7 +290,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="440" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="440" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="128" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="128" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_stem_1a7ceb70d808229ba3cd7a925e25d2812c" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -304,7 +304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="444" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="444" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="132" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="132" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_stem_1a1a70ec0d37c3159001f4da99ca338392" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -318,7 +318,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="448" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="448" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="136" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_stem_1ad49dc4ecf60e202bc475e3853828f7ef" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -333,7 +333,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="454" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="454" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="142" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="142" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -350,7 +350,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="354" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="354" bodyend="354"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="42" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="42" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1ada6f97bae35bbcbe9cd4b30cf14f27f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -369,7 +369,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="359" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="47" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1ab6c256a8b5e413413dfa9de0be5a318e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -395,7 +395,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="385" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="73" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1a9b3e4dbc926470d30d5a54040b008daf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -422,7 +422,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="390" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="78" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1aaa339fb5324212edf1663b4273f30483" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -441,14 +441,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="399" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="87" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1acb5836a988eec7848d91a49d4197eb7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
         <definition>int vrv::Stem::ResetData</definition>
         <argsstring>(FunctorParams *functorParams) override</argsstring>
         <name>ResetData</name>
-        <reimplements refid="classvrv_1_1_object_1a810bab1b8cdb43737577d2d4aa9f00cb">ResetData</reimplements>
+        <reimplements refid="classvrv_1_1_layer_element_1acdf116b9dfb1b77cd8d7695fd7432b0b">ResetData</reimplements>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
           <declname>functorParams</declname>
@@ -460,7 +460,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="412" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="100" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -496,7 +496,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="418" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="106" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1aaaecac5db5ff4484bb4b43b9b0dc84fd" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -522,7 +522,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="423" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="111" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_stem_1a3674705285d4dbda92f6384c204b3851" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -544,7 +544,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="428" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="116" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -914,7 +914,7 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" line="339" column="86" bodyfile="/home/runner/work/verovio/verovio/include/vrv/elementpart.h" bodystart="339" bodyend="455"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/stem.h" line="27" column="86" bodyfile="/home/runner/work/verovio/verovio/include/vrv/stem.h" bodystart="27" bodyend="143"/>
     <listofallmembers>
       <member refid="classvrv_1_1_linking_interface_1aaa4632e05d5d887b26dbf1789c84f573" prot="public" virt="non-virtual"><scope>vrv::Stem</scope><name>AddBackLink</name></member>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::Stem</scope><name>AddChild</name></member>

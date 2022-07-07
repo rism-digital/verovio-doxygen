@@ -69,7 +69,7 @@ var NAVTREEINDEX =
 "classvrv_1_1_transposer.html#a488140f39a1c8c1e6f83251dfa1735d5",
 "classvrv_1_1_view.html#a56da13bc73f007bf819c4d11a99af67d",
 "editortoolkit_8h_source.html",
-"transposition_8h_source.html"
+"toolkit_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
