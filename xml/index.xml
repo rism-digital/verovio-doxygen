@@ -866,6 +866,7 @@
     <member refid="classvrv_1_1_beam_segment_1ad767ec99e5feff772b50047e3892ddb2" kind="variable"><name>m_firstNoteOrChord</name></member>
     <member refid="classvrv_1_1_beam_segment_1a74b42d249066e9ecd4c2ecf44dc35d32" kind="variable"><name>m_lastNoteOrChord</name></member>
     <member refid="classvrv_1_1_beam_segment_1a2f8cd54b0cdac4e3db644a8c3bd22e19" kind="variable"><name>m_beamElementCoordRefs</name></member>
+    <member refid="classvrv_1_1_beam_segment_1a1650d7d3d85c0a06a2bc642a00024254" kind="function"><name>RequestStaffSpace</name></member>
     <member refid="classvrv_1_1_beam_segment_1ac05b7937c4f2ae18ed7122b7f0d43f43" kind="function"><name>AdjustBeamToFrenchStyle</name></member>
     <member refid="classvrv_1_1_beam_segment_1ae556404fb4191334cbe20ac02985d61f" kind="function"><name>AdjustBeamToLedgerLines</name></member>
     <member refid="classvrv_1_1_beam_segment_1af2d0bf9e5065bcdd215a1aa9cd3c6cf2" kind="function"><name>AdjustBeamToTremolos</name></member>
@@ -873,7 +874,7 @@
     <member refid="classvrv_1_1_beam_segment_1a1cd897efebf10ced69f0f22ba29fe7e2" kind="function"><name>CalcBeamInitForNotePair</name></member>
     <member refid="classvrv_1_1_beam_segment_1a58ae7cd58b7d6a67f4d1697c23c1acc4" kind="function"><name>CalcBeamSlope</name></member>
     <member refid="classvrv_1_1_beam_segment_1a7ca240410f9e66656b43bd1f0e3b1537" kind="function"><name>CalcBeamSlopeStep</name></member>
-    <member refid="classvrv_1_1_beam_segment_1af0c14196211f5b3e28b9b8e09980d965" kind="function"><name>CalcMixedBeamStem</name></member>
+    <member refid="classvrv_1_1_beam_segment_1afdd4fdc5547a2f506a833a497da831bd" kind="function"><name>CalcMixedBeamPosition</name></member>
     <member refid="classvrv_1_1_beam_segment_1a54a2631a86122fb192d182fde67993f0" kind="function"><name>CalcBeamPosition</name></member>
     <member refid="classvrv_1_1_beam_segment_1af0627f26025842bc1e8aa0c44e38c5e4" kind="function"><name>CalcAdjustSlope</name></member>
     <member refid="classvrv_1_1_beam_segment_1a9b21a6321a1e0a7a5e110d43c5debd92" kind="function"><name>CalcAdjustPosition</name></member>
@@ -882,13 +883,15 @@
     <member refid="classvrv_1_1_beam_segment_1aadf7dbd07baa1d5084c0f3b631a4b80c" kind="function"><name>CalcBeamStemLength</name></member>
     <member refid="classvrv_1_1_beam_segment_1aac0d198f42a0b3b2754784bb2e352064" kind="function"><name>CalcSetStemValues</name></member>
     <member refid="classvrv_1_1_beam_segment_1ac1d07868290eaf5f105cc90e0d95e65c" kind="function"><name>CalcSetStemValuesTab</name></member>
-    <member refid="classvrv_1_1_beam_segment_1af3d5cc9ca6f5c199180707d4fc66d633" kind="function"><name>CalcBeamRelativeMinMax</name></member>
+    <member refid="classvrv_1_1_beam_segment_1a4dcd310e97b146b6f58dfad0d7d246da" kind="function"><name>CalcMixedBeamCenterY</name></member>
     <member refid="classvrv_1_1_beam_segment_1aa47c3f17b156359c2dbe1a8505806948" kind="function"><name>CalcStemDefiningNote</name></member>
     <member refid="classvrv_1_1_beam_segment_1a00eebbb6c67b9bcb39146e4864dcabf6" kind="function"><name>CalcHorizontalBeam</name></member>
     <member refid="classvrv_1_1_beam_segment_1a22e4ded63ba24fcba6b2c51415045459" kind="function"><name>CalcMixedBeamPlace</name></member>
     <member refid="classvrv_1_1_beam_segment_1aa6fdf47946952970d83932065f7b68c1" kind="function"><name>CalcPartialFlagPlace</name></member>
     <member refid="classvrv_1_1_beam_segment_1acc2bb920c9ea28583155aba6246c9ae3" kind="function"><name>CalcSetValues</name></member>
-    <member refid="classvrv_1_1_beam_segment_1aededc03b7f7edc8f4c4b1d9714103440" kind="function"><name>DoesBeamOverlap</name></member>
+    <member refid="classvrv_1_1_beam_segment_1acb24624ed2cfe5cd65c8a47cf05dfd98" kind="function"><name>DoesBeamOverlap</name></member>
+    <member refid="classvrv_1_1_beam_segment_1a79857401915df7b579cab42c8e6c4834" kind="function"><name>GetVerticalOffset</name></member>
+    <member refid="classvrv_1_1_beam_segment_1a8f0ef8bebd67e58dddb50cc8232aa641" kind="function"><name>GetMinimalStemLength</name></member>
     <member refid="classvrv_1_1_beam_segment_1a9f53be7248347381f6276a6dac565ef3" kind="function"><name>NeedToResetPosition</name></member>
   </compound>
   <compound refid="classvrv_1_1_beam_span" kind="class"><name>vrv::BeamSpan</name>
@@ -5253,9 +5256,11 @@
     <member refid="classvrv_1_1_options_1a2f2ea31f618b0fc45a40a64e637bda68" kind="variable"><name>m_generalLayout</name></member>
     <member refid="classvrv_1_1_options_1a758a741af685ddac02e633e9ece78c19" kind="variable"><name>m_barLineSeparation</name></member>
     <member refid="classvrv_1_1_options_1ac449a9605b18639f8cd80919af8de323" kind="variable"><name>m_barLineWidth</name></member>
+    <member refid="classvrv_1_1_options_1a423468d2ff9f44be586125dde9bc75eb" kind="variable"><name>m_beamFrenchStyle</name></member>
     <member refid="classvrv_1_1_options_1acb34a2439c346557d99368a878510357" kind="variable"><name>m_beamMaxSlope</name></member>
     <member refid="classvrv_1_1_options_1af54a9973eae907c92bfb5d1e285449f2" kind="variable"><name>m_beamMinSlope</name></member>
-    <member refid="classvrv_1_1_options_1a423468d2ff9f44be586125dde9bc75eb" kind="variable"><name>m_beamFrenchStyle</name></member>
+    <member refid="classvrv_1_1_options_1a3536dccba278856e8be643994e47bef3" kind="variable"><name>m_beamMixedPreserve</name></member>
+    <member refid="classvrv_1_1_options_1a308e1293398611385edb59298035db1f" kind="variable"><name>m_beamMixedStemMin</name></member>
     <member refid="classvrv_1_1_options_1a4311cad04890bfe936addfdf3251de25" kind="variable"><name>m_bracketThickness</name></member>
     <member refid="classvrv_1_1_options_1ab9c22ca4b9b238dbea2d55843f4296bc" kind="variable"><name>m_breaksNoWidow</name></member>
     <member refid="classvrv_1_1_options_1a3543c66ee373c1b144eda117720bfa33" kind="variable"><name>m_dashedBarLineDashLength</name></member>
@@ -6418,7 +6423,6 @@
     <member refid="classvrv_1_1_staff_1af93e0b0832633be44cdac73069cc4445" kind="function"><name>IsOnStaffLine</name></member>
     <member refid="classvrv_1_1_staff_1aef570b1123805d6ee7126ff3aaf5af61" kind="function"><name>GetNearestInterStaffPosition</name></member>
     <member refid="classvrv_1_1_staff_1a71c2243c3a8920516443bc45557c5783" kind="function"><name>SetFromFacsimile</name></member>
-    <member refid="classvrv_1_1_staff_1ad2020ab9b6c203645f99d3c64f1ddfcc" kind="function"><name>SetAlignmentBeamAdjustment</name></member>
     <member refid="classvrv_1_1_staff_1a3177865b38908077322abc8a1e4ecec3" kind="function"><name>ConvertToCastOffMensural</name></member>
     <member refid="classvrv_1_1_staff_1a974087807e1425d61d74e854759eb3c0" kind="function"><name>ScoreDefUnsetCurrent</name></member>
     <member refid="classvrv_1_1_staff_1ae4161cf2c72880b91265fb22fced890e" kind="function"><name>ScoreDefOptimize</name></member>
@@ -6468,6 +6472,8 @@
     <member refid="classvrv_1_1_staff_alignment_1a03bf3b0ec9c3970afd742b4f19d00a6d" kind="function"><name>GetRequestedSpaceAbove</name></member>
     <member refid="classvrv_1_1_staff_alignment_1aee15d3f9cfe8f6e2351463397fc95b70" kind="function"><name>SetRequestedSpaceBelow</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a86ff178b860b027bd8379c9a69088ad0" kind="function"><name>GetRequestedSpaceBelow</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1a19752789b923277bf26235ace4d30fd0" kind="function"><name>SetRequestedSpacing</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1ac94e5464a192043896b00182fb401b71" kind="function"><name>GetRequestedSpacing</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a46bbc916af3129153608f26d68f42f2d" kind="function"><name>GetStaffHeight</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a4bf0e7cbd5d6a5ee25e3e226983b483e" kind="function"><name>SetScoreDefClefOverflowAbove</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a2d87d3d047765e77135b7112c57684b2" kind="function"><name>GetScoreDefClefOverflowAbove</name></member>
@@ -6476,13 +6482,12 @@
     <member refid="classvrv_1_1_staff_alignment_1abb406c242d66daf69268cb3b3f3d2cab" kind="function"><name>GetJustificationFactor</name></member>
     <member refid="classvrv_1_1_staff_alignment_1abe912a2607606376bea1a21731c5195d" kind="function"><name>AddBBoxAbove</name></member>
     <member refid="classvrv_1_1_staff_alignment_1aad91647368dc7d03520e0bd3f5139602" kind="function"><name>AddBBoxBelow</name></member>
-    <member refid="classvrv_1_1_staff_alignment_1af5dd6dd03fef752384150686b821ec09" kind="function"><name>SetBeamAdjust</name></member>
-    <member refid="classvrv_1_1_staff_alignment_1a7d0470ac3697580076e875e1a2a09f56" kind="function"><name>GetBeamAdjust</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a0a842c8286e7f24f48cd06db16ac5e98" kind="variable"><name>m_overflowAbove</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a582a505deb9284b19f3456f60d149fad" kind="variable"><name>m_overflowBelow</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a6886768062aec7882ee433c83736fade" kind="variable"><name>m_overlap</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a04c5bf1b1f044f387059aa281fb43b9d" kind="variable"><name>m_requestedSpaceAbove</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a29ed7dbb0cce4fb861e2c20371bd794b" kind="variable"><name>m_requestedSpaceBelow</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1afd84589b4e2d1d68dcc3d89375ef131d" kind="variable"><name>m_requestedSpacing</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a9d9c9d575fceeddc4ae4df3c095d16de" kind="variable"><name>m_staffHeight</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a5aa57d1b79407a837e2e846c385fa9d9" kind="variable"><name>m_scoreDefClefOverflowAbove</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a940c8f079c41f13917c1d874d8288a4b" kind="variable"><name>m_scoreDefClefOverflowBelow</name></member>
@@ -6493,7 +6498,6 @@
     <member refid="classvrv_1_1_staff_alignment_1a8fbdb29d9fb58c6b6a3de08c03411ed4" kind="variable"><name>m_system</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a366a4051d7602f053bc7b944d9266f09" kind="variable"><name>m_yRel</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a5265a43a6ab421c5be56b5bd1814d1cd" kind="variable"><name>m_verseNs</name></member>
-    <member refid="classvrv_1_1_staff_alignment_1adc6d5d457d871615f72b49688d0be569" kind="variable"><name>m_beamAdjust</name></member>
     <member refid="classvrv_1_1_staff_alignment_1acc52496444c1468f9cec6f19c79543c4" kind="variable"><name>m_overflowAboveBBoxes</name></member>
     <member refid="classvrv_1_1_staff_alignment_1ab8a34f621d9951597f35ae9deb4c579d" kind="variable"><name>m_overflowBelowBBoxes</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a2509f2cdd8ef0e40f10aaca7ec29c814" kind="function"><name>SetCurrentFloatingPositioner</name></member>

@@ -11,6 +11,7 @@ var classvrv_1_1_beam_segment =
     [ "GetStartingY", "classvrv_1_1_beam_segment.html#ae5a38316d6505c452c70d045f67c60d0", null ],
     [ "InitCoordRefs", "classvrv_1_1_beam_segment.html#aae2d6f202398b11757729b803cad00fd", null ],
     [ "InitSameasRoles", "classvrv_1_1_beam_segment.html#acfe45e16f7394be35573eb5bbc235929", null ],
+    [ "RequestStaffSpace", "classvrv_1_1_beam_segment.html#a1650d7d3d85c0a06a2bc642a00024254", null ],
     [ "Reset", "classvrv_1_1_beam_segment.html#ae45293135277575fd4d828312f1c700c", null ],
     [ "StemSameas", "classvrv_1_1_beam_segment.html#a676eb0a3128edf20f01a8f64e76efdd5", null ],
     [ "StemSameasIsPrimary", "classvrv_1_1_beam_segment.html#a14d49d2f1fba6f75e38f7d69cf9c11c8", null ],
