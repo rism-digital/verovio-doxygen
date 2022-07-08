@@ -11,6 +11,7 @@ var classvrv_1_1_score_def =
     [ "ConvertToPageBased", "classvrv_1_1_score_def.html#a1754ccca97f4999e35087cda72b87400", null ],
     [ "DrawLabels", "classvrv_1_1_score_def.html#a004881a2cfb78869dc4edd96e730344c", null ],
     [ "FilterList", "classvrv_1_1_score_def.html#a85ad8d7d1c133cbab2d7d5b02b6cc21c", null ],
+    [ "GenerateMIDI", "classvrv_1_1_score_def.html#a059489f5eed56cf466021e2204886682", null ],
     [ "GetClassName", "classvrv_1_1_score_def.html#ad720e9f3cb567df7caa5f5f54c8c0e11", null ],
     [ "GetDrawingLabelsWidth", "classvrv_1_1_score_def.html#a3d31e8b536fe875333510f1061d041dc", null ],
     [ "GetDrawingWidth", "classvrv_1_1_score_def.html#a9cb53f6b4fcae84ac63c8e5ad8b7bb28", null ],

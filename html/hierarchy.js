@@ -633,6 +633,9 @@ var hierarchy =
     [ "AttScalable", null, [
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
     ] ],
+    [ "AttScoreDefGes", null, [
+      [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ]
+    ] ],
     [ "AttSectionVis", null, [
       [ "vrv::Section", "classvrv_1_1_section.html", null ]
     ] ],

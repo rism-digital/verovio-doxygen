@@ -32,6 +32,7 @@ var classvrv_1_1_note =
     [ "GetMensuralNoteheadGlyph", "classvrv_1_1_note.html#a91cd1b216fa7a33db3e79699c329a563", null ],
     [ "GetMIDIPitch", "classvrv_1_1_note.html#a98a495b0db9b39996f2eb2c2ad286753", null ],
     [ "GetNoteheadGlyph", "classvrv_1_1_note.html#a3f66a8f4adf8eb4174b3c1ec388ad05d", null ],
+    [ "GetPitchClass", "classvrv_1_1_note.html#a4dd530526f7cbf5f8433976479fbc3ee", null ],
     [ "GetPitchInterface", "classvrv_1_1_note.html#a9041eca0a9cf4aeb6536a96c797a46a3", null ],
     [ "GetPitchInterface", "classvrv_1_1_note.html#ab310c26ef7aa9313660a2ad90a930c96", null ],
     [ "GetPositionInterface", "classvrv_1_1_note.html#a04d615c8dc3eb8bcdd6718897f65d6b5", null ],

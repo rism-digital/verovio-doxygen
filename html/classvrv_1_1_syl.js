@@ -5,6 +5,7 @@ var classvrv_1_1_syl =
     [ "CalcConnectorSpacing", "classvrv_1_1_syl.html#a66d380bb93bb0abd4afd78b21251bfc9", null ],
     [ "Clone", "classvrv_1_1_syl.html#a49723265ec79b247fa9bf1b4a4f48195", null ],
     [ "CreateDefaultZone", "classvrv_1_1_syl.html#a61983aa1e78d32047fffe5f3c083c09f", null ],
+    [ "GenerateMIDI", "classvrv_1_1_syl.html#aaddb1fd37cf48bda08d0cdb30e4260a6", null ],
     [ "GetClassName", "classvrv_1_1_syl.html#a0e306a177e586acba88026833a9fcc04", null ],
     [ "GetDrawingHeight", "classvrv_1_1_syl.html#a71acabc60c670d31993618d795d396b7", null ],
     [ "GetDrawingWidth", "classvrv_1_1_syl.html#a927dd56459671262c408f9ce1e9ae0e2", null ],

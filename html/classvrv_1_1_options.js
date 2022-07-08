@@ -31,6 +31,8 @@ var classvrv_1_1_options =
     [ "m_condenseFirstPage", "classvrv_1_1_options.html#a0eb09fa44d2bc12cfa028d42eccaa855", null ],
     [ "m_condenseNotLastSystem", "classvrv_1_1_options.html#af1d9d4177bc006d8ef52395090e679ce", null ],
     [ "m_condenseTempoPages", "classvrv_1_1_options.html#a13f3eb429b22f8a683946fd452de830a", null ],
+    [ "m_dashedBarLineDashLength", "classvrv_1_1_options.html#a3543c66ee373c1b144eda117720bfa33", null ],
+    [ "m_dashedBarLineGapLength", "classvrv_1_1_options.html#af08f15554a00f0ad460d2504705a0fc8", null ],
     [ "m_defaultBottomMargin", "classvrv_1_1_options.html#aadd9a7eba2d6b83437f0f863794b1542", null ],
     [ "m_defaultLeftMargin", "classvrv_1_1_options.html#ad31a07abbb88b19be6ddf0271943334b", null ],
     [ "m_defaultRightMargin", "classvrv_1_1_options.html#a501b8bf44d6d0d7ea47b8cb8e3be2935", null ],

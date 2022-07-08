@@ -3739,6 +3739,7 @@
     <member refid="classvrv_1_1_measure_1a7fe08d9e1f4a7ee4f783b2b389553b83" kind="function"><name>EnclosesTime</name></member>
     <member refid="classvrv_1_1_measure_1a2e0a2e000a3f00933d117d2257503425" kind="function"><name>GetRealTimeOffsetMilliseconds</name></member>
     <member refid="classvrv_1_1_measure_1a21e59c0fc21d2b1500d84fa527b7d0d1" kind="function"><name>GetInternalTieEndpoints</name></member>
+    <member refid="classvrv_1_1_measure_1ac1eb4e15d4433d0d44dd3cae7f28c5bc" kind="function"><name>GetLastTimeOffset</name></member>
     <member refid="classvrv_1_1_measure_1a95de9c344cc5bc87366ffe3565eb716d" kind="function"><name>FindSpannedLayerElements</name></member>
     <member refid="classvrv_1_1_measure_1a939ef8b3977e9b468f439d2b53537682" kind="function"><name>ConvertMarkupAnalyticalEnd</name></member>
     <member refid="classvrv_1_1_measure_1abf1e618a291c7a62426284cb9ab3191a" kind="function"><name>ConvertToPageBased</name></member>
@@ -4580,6 +4581,7 @@
     <member refid="classvrv_1_1_note_1a8ed755dba1d936d881bb4d3267db6fd9" kind="function"><name>IsEnharmonicWith</name></member>
     <member refid="classvrv_1_1_note_1a4bbaa20a8cbdc5405f513135cc6117f6" kind="function"><name>IsVisible</name></member>
     <member refid="classvrv_1_1_note_1a98a495b0db9b39996f2eb2c2ad286753" kind="function"><name>GetMIDIPitch</name></member>
+    <member refid="classvrv_1_1_note_1a4dd530526f7cbf5f8433976479fbc3ee" kind="function"><name>GetPitchClass</name></member>
     <member refid="classvrv_1_1_note_1a38d525195436f5a32fe144c9c1cfdfc3" kind="function"><name>GetStemSameasRole</name></member>
     <member refid="classvrv_1_1_note_1ac78d6b4e920d6bce9f77f1fd99fe7faf" kind="function"><name>ResolveStemSameas</name></member>
     <member refid="classvrv_1_1_note_1a6f88ce0675e674e63fc42e3fca18fdc4" kind="function"><name>CalcStemDirForSameasNote</name></member>
@@ -4599,6 +4601,7 @@
     <member refid="classvrv_1_1_note_1a9f6c57951cfc08541da10e767c878ea4" kind="function"><name>GenerateTimemap</name></member>
     <member refid="classvrv_1_1_note_1a541f31357236a4ff865c00da04c31c16" kind="function"><name>Transpose</name></member>
     <member refid="classvrv_1_1_note_1a439ad8bb358267fa18e92f60549e03ff" kind="function"><name>HandleLedgerLineStemCollision</name></member>
+    <member refid="classvrv_1_1_note_1ab9dc5dff1a2e11c5e182dd72208c587d" kind="function"><name>PnameToPclass</name></member>
     <member refid="classvrv_1_1_note_1a82d1612019d3e768f54337c985a82bd9" kind="function"><name>CalcNoteLocations</name></member>
     <member refid="classvrv_1_1_note_1a19e1747b8c15b47581048795066212aa" kind="function"><name>CalcDotLocations</name></member>
     <member refid="classvrv_1_1_note_1a3b6623d00c81c7344f837171373c956b" kind="function"><name>GetChromaticAlteration</name></member>
@@ -5255,6 +5258,8 @@
     <member refid="classvrv_1_1_options_1a423468d2ff9f44be586125dde9bc75eb" kind="variable"><name>m_beamFrenchStyle</name></member>
     <member refid="classvrv_1_1_options_1a4311cad04890bfe936addfdf3251de25" kind="variable"><name>m_bracketThickness</name></member>
     <member refid="classvrv_1_1_options_1ab9c22ca4b9b238dbea2d55843f4296bc" kind="variable"><name>m_breaksNoWidow</name></member>
+    <member refid="classvrv_1_1_options_1a3543c66ee373c1b144eda117720bfa33" kind="variable"><name>m_dashedBarLineDashLength</name></member>
+    <member refid="classvrv_1_1_options_1af08f15554a00f0ad460d2504705a0fc8" kind="variable"><name>m_dashedBarLineGapLength</name></member>
     <member refid="classvrv_1_1_options_1afa488d5e3725d1f06caf036856e9f0be" kind="variable"><name>m_dynamDist</name></member>
     <member refid="classvrv_1_1_options_1a2f3aedad50e6626c21a4406822440893" kind="variable"><name>m_engravingDefaults</name></member>
     <member refid="classvrv_1_1_options_1a40e39eada7c773a7ef4a4425c0d3cb59" kind="variable"><name>m_engravingDefaultsFile</name></member>
@@ -6168,6 +6173,7 @@
     <member refid="classvrv_1_1_score_def_1a34a82cf34ebba5196d5a35484e82a245" kind="function"><name>CastOffEncoding</name></member>
     <member refid="classvrv_1_1_score_def_1a65f6f3154f45bc79c6f3058375ca7cd2" kind="function"><name>CastOffToSelection</name></member>
     <member refid="classvrv_1_1_score_def_1a37b63c676b68b34e10fad1108a3b10d7" kind="function"><name>AlignMeasures</name></member>
+    <member refid="classvrv_1_1_score_def_1a059489f5eed56cf466021e2204886682" kind="function"><name>GenerateMIDI</name></member>
     <member refid="classvrv_1_1_score_def_1a6ec6aed367b28a407b914d2f9773d8ce" kind="function"><name>JustifyX</name></member>
     <member refid="classvrv_1_1_score_def_1aa73d435a0c9fef071d83fdb0da136cbb" kind="function"><name>PrepareDuration</name></member>
     <member refid="classvrv_1_1_score_def_1a85ad8d7d1c133cbab2d7d5b02b6cc21c" kind="function"><name>FilterList</name></member>
@@ -6797,6 +6803,7 @@
     <member refid="classvrv_1_1_syl_1a71acabc60c670d31993618d795d396b7" kind="function"><name>GetDrawingHeight</name></member>
     <member refid="classvrv_1_1_syl_1a1badd5c259029647bf2cbc5dca79e7b8" kind="function"><name>PrepareLyrics</name></member>
     <member refid="classvrv_1_1_syl_1afb7362ba6329690bb427b0b791cc4a08" kind="function"><name>PrepareStaffCurrentTimeSpanning</name></member>
+    <member refid="classvrv_1_1_syl_1aaddb1fd37cf48bda08d0cdb30e4260a6" kind="function"><name>GenerateMIDI</name></member>
     <member refid="classvrv_1_1_syl_1af1deb17e0aa430e11f160d9277930aab" kind="function"><name>ResetData</name></member>
     <member refid="classvrv_1_1_syl_1a61983aa1e78d32047fffe5f3c083c09f" kind="function"><name>CreateDefaultZone</name></member>
   </compound>
@@ -7546,6 +7553,7 @@
     <member refid="classvrv_1_1_verse_1a8aaab73ded924d96eb2a0e317698df55" kind="function"><name>AlignVertically</name></member>
     <member refid="classvrv_1_1_verse_1a66b12e3c5a1dfb67684bc51a23a16ce1" kind="function"><name>AdjustSylSpacing</name></member>
     <member refid="classvrv_1_1_verse_1aa6cb6114b24d4e3b7a5a314e5790ebb4" kind="function"><name>InitProcessingLists</name></member>
+    <member refid="classvrv_1_1_verse_1a700f0a491448e2b3e052111bcc57aa83" kind="function"><name>GenerateMIDI</name></member>
     <member refid="classvrv_1_1_verse_1a8e0cd914779658f1d61a052a92e4d0ca" kind="function"><name>ResetData</name></member>
   </compound>
   <compound refid="classvrv_1_1_view" kind="class"><name>vrv::View</name>
@@ -7717,11 +7725,11 @@
     <member refid="classvrv_1_1_view_1a7f038eca043f93ab6ce0073c90765f22" kind="function"><name>DrawTabNote</name></member>
     <member refid="classvrv_1_1_view_1af62a0d79af6e0c2a0da7473dc0baaa83" kind="function"><name>DrawTupletBracket</name></member>
     <member refid="classvrv_1_1_view_1ac66efa372dabd00670cf240f5e1b2af8" kind="function"><name>DrawTupletNum</name></member>
-    <member refid="classvrv_1_1_view_1a5b3def8315a74daebf0c2a202cf1ab38" kind="function"><name>DrawVerticalLine</name></member>
-    <member refid="classvrv_1_1_view_1af5f16c9130823c44999c0822dc59a815" kind="function"><name>DrawHorizontalLine</name></member>
+    <member refid="classvrv_1_1_view_1a5f538ab501c4e9c232c76852e1a5dfb2" kind="function"><name>DrawVerticalLine</name></member>
+    <member refid="classvrv_1_1_view_1ac99cf27a977dc039cf0493c46c2c4ec5" kind="function"><name>DrawHorizontalLine</name></member>
     <member refid="classvrv_1_1_view_1ae1b2bd8525e769cd2053d61dd32e0562" kind="function"><name>DrawRoundedLine</name></member>
-    <member refid="classvrv_1_1_view_1acdd6c2f38b4fe9a7162b38bce75c76cb" kind="function"><name>DrawVerticalSegmentedLine</name></member>
-    <member refid="classvrv_1_1_view_1a6c1196dc2138d5223c4868310976409b" kind="function"><name>DrawHorizontalSegmentedLine</name></member>
+    <member refid="classvrv_1_1_view_1a5cc9023c0c2a89c3f6f568e6b2dfdf47" kind="function"><name>DrawVerticalSegmentedLine</name></member>
+    <member refid="classvrv_1_1_view_1a1030a9c20338a0079f17aabf135cdf23" kind="function"><name>DrawHorizontalSegmentedLine</name></member>
     <member refid="classvrv_1_1_view_1aa63e5736efde1198c4ccd95754e484a4" kind="function"><name>DrawSmuflCode</name></member>
     <member refid="classvrv_1_1_view_1ac83bc57f249ff1c71ea1aae32da4680d" kind="function"><name>DrawThickBezierCurve</name></member>
     <member refid="classvrv_1_1_view_1af932b7453ad33f6a3909b68c12b5fef5" kind="function"><name>DrawPartFilledRectangle</name></member>
