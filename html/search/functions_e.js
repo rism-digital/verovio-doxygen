@@ -84,7 +84,5 @@ var searchData=
   ['stablesort_2389',['StableSort',['../classvrv_1_1_object.html#ac97807a0dabfdf0d1d483f7f3e9427f9',1,'vrv::Object']]],
   ['stackgraceelement_2390',['StackGraceElement',['../classvrv_1_1_grace_aligner.html#adafd1105e2839665f24976d256653ad8',1,'vrv::GraceAligner']]],
   ['stemmodtoglyph_2391',['StemModToGlyph',['../classvrv_1_1_layer_element.html#a42028faa4ea287cbfffb858e7bb370a1',1,'vrv::LayerElement']]],
-  ['strtostr_2392',['StrToStr',['../classvrv_1_1_att.html#a65b7bc2210f5f4dad29bac63eafbcf4d',1,'vrv::Att']]],
-  ['swap_2393',['Swap',['../classvrv_1_1_bounding_box.html#a6a5b0a558c2799d3216a62a352eec938',1,'vrv::BoundingBox']]],
-  ['swappoints_2394',['SwapPoints',['../classvrv_1_1_bounding_box.html#a316a3efda8b19590914f3c4e736d2323',1,'vrv::BoundingBox']]]
+  ['strtostr_2392',['StrToStr',['../classvrv_1_1_att.html#a65b7bc2210f5f4dad29bac63eafbcf4d',1,'vrv::Att']]]
 ];

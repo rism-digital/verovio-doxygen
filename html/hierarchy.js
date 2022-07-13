@@ -41,7 +41,14 @@ var hierarchy =
       [ "vrv::BarLine", "classvrv_1_1_bar_line.html", null ]
     ] ],
     [ "AttBarring", null, [
-      [ "vrv::Measure", "classvrv_1_1_measure.html", null ]
+      [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
+      [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", [
+        [ "vrv::ScoreDefElement", "classvrv_1_1_score_def_element.html", [
+          [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
+          [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
+        ] ]
+      ] ],
+      [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ]
     ] ],
     [ "AttBasic", null, [
       [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
@@ -217,12 +224,7 @@ var hierarchy =
       [ "vrv::Dot", "classvrv_1_1_dot.html", null ]
     ] ],
     [ "AttDurationDefault", null, [
-      [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", [
-        [ "vrv::ScoreDefElement", "classvrv_1_1_score_def_element.html", [
-          [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
-          [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
-        ] ]
-      ] ]
+      [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ]
     ] ],
     [ "AttDurationGestural", null, [
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ]
