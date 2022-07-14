@@ -6,7 +6,7 @@ var classvrv_1_1_verse =
     [ "AdjustSylSpacing", "classvrv_1_1_verse.html#a66b12e3c5a1dfb67684bc51a23a16ce1", null ],
     [ "AlignVertically", "classvrv_1_1_verse.html#a8aaab73ded924d96eb2a0e317698df55", null ],
     [ "Clone", "classvrv_1_1_verse.html#a7dfc1446f007ac16a49f632746cfe437", null ],
-    [ "GenerateMIDI", "classvrv_1_1_verse.html#a700f0a491448e2b3e052111bcc57aa83", null ],
+    [ "GenerateMIDI", "classvrv_1_1_verse.html#a869e42adc000457c316e506be0bf8d3a", null ],
     [ "GetClassName", "classvrv_1_1_verse.html#a46b08a02ca8f530f7369585f9a6b9b59", null ],
     [ "GetDrawingLabelAbbr", "classvrv_1_1_verse.html#af887e92f12d0c54fead6db48366942a6", null ],
     [ "GetDrawingLabelAbbr", "classvrv_1_1_verse.html#a813a2a13932fd8f7fc4756b85cbe4707", null ],
