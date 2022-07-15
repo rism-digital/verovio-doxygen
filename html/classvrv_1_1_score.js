@@ -8,6 +8,7 @@ var classvrv_1_1_score =
     [ "AdjustXPos", "classvrv_1_1_score.html#ab717b425da4da40700f7ba494d0a335d", null ],
     [ "CalcRunningElementHeight", "classvrv_1_1_score.html#acd59d1d7b84c0b8efa3c63646f7c8388", null ],
     [ "CastOffPages", "classvrv_1_1_score.html#ac1cf276cd1356af20cb8321e30ba0896", null ],
+    [ "ConvertMarkupScoreDef", "classvrv_1_1_score.html#abebe64e970d72c47d3da398cc32481b7", null ],
     [ "ConvertToPageBased", "classvrv_1_1_score.html#a19396c594a11fa7681745dffd96b0de0", null ],
     [ "ConvertToPageBasedEnd", "classvrv_1_1_score.html#a165faf4dbf40f99a5a839ac1d2aedd88", null ],
     [ "GetClassName", "classvrv_1_1_score.html#a4bdc6ff45b630792df0902dafb3f8eb4", null ],

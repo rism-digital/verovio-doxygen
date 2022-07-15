@@ -5,7 +5,7 @@ var classvrv_1_1_artic =
     [ "AddSlurPositioner", "classvrv_1_1_artic.html#a898c16e5f1bb2d34999f2cf2344167ea", null ],
     [ "AdjustArtic", "classvrv_1_1_artic.html#a92fd3e822f6a12abf5c5cc5b9b47f0eb", null ],
     [ "AdjustArticWithSlurs", "classvrv_1_1_artic.html#a90d488bfbdfbcad4d55dc1aad59e7b9c", null ],
-    [ "AlwaysAbove", "classvrv_1_1_artic.html#a2cb3778c0093e1ef4b61e374774f68b6", null ],
+    [ "AlwaysAbove", "classvrv_1_1_artic.html#abf36f6c00ec9ce1ecac1374327ef94a4", null ],
     [ "CalcArtic", "classvrv_1_1_artic.html#a4d57a4ac189da6563d32bd7d31fe0d68", null ],
     [ "Clone", "classvrv_1_1_artic.html#a7bc5e4dd59701e7d8c3ea8fb24a3ceb4", null ],
     [ "ConvertMarkupArtic", "classvrv_1_1_artic.html#a2cac8079f77d9c0c25e3171790b00560", null ],
@@ -22,7 +22,6 @@ var classvrv_1_1_artic =
     [ "Reset", "classvrv_1_1_artic.html#aa81d87ff6bc9f849b4c695340c488ad3", null ],
     [ "ResetData", "classvrv_1_1_artic.html#a1165af25fc2b6f9296cd31d353b50523", null ],
     [ "ResetVerticalAlignment", "classvrv_1_1_artic.html#a775b0d8742be325b3619d78ea91b26fe", null ],
-    [ "SplitArtic", "classvrv_1_1_artic.html#ab6b401bb7dfd502eccd21bf9614bc905", null ],
     [ "SplitMultival", "classvrv_1_1_artic.html#ac7bf2f16b9558129980adb1c29b6b0c2", null ],
     [ "m_endSlurPositioners", "classvrv_1_1_artic.html#a2b72f25fa8bc491faae7a148faa62d94", null ],
     [ "m_startSlurPositioners", "classvrv_1_1_artic.html#aeb7492d88bdab31de3f09ffb6adbff05", null ]

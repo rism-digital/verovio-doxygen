@@ -18,6 +18,6 @@ var classvrv_1_1_time_spanning_interface =
     [ "IsSpanningMeasures", "classvrv_1_1_time_spanning_interface.html#a239665f006283e9749b3b4e5099887fb", null ],
     [ "Reset", "classvrv_1_1_time_spanning_interface.html#a78270c18cb7fb79b28816a62fbed5176", null ],
     [ "SetEnd", "classvrv_1_1_time_spanning_interface.html#a2c3289cd6592a1ea9280b21e41382576", null ],
-    [ "SetStartAndEnd", "classvrv_1_1_time_spanning_interface.html#a26f9c358bc5081656fde4774506a0293", null ],
-    [ "SetUuidStr", "classvrv_1_1_time_spanning_interface.html#a494562ad8f3d38e0b358a9cdcfd5c93f", null ]
+    [ "SetIDStr", "classvrv_1_1_time_spanning_interface.html#a065e23ac386fa542f2f94cd3d42ddaec", null ],
+    [ "SetStartAndEnd", "classvrv_1_1_time_spanning_interface.html#a26f9c358bc5081656fde4774506a0293", null ]
 ];

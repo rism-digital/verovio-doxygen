@@ -23,6 +23,9 @@ var hierarchy =
     [ "AttArticulation", null, [
       [ "vrv::Artic", "classvrv_1_1_artic.html", null ]
     ] ],
+    [ "AttArticulationGestural", null, [
+      [ "vrv::Artic", "classvrv_1_1_artic.html", null ]
+    ] ],
     [ "AttAugmentDots", null, [
       [ "vrv::Dots", "classvrv_1_1_dots.html", null ],
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", [
@@ -38,7 +41,14 @@ var hierarchy =
       [ "vrv::BarLine", "classvrv_1_1_bar_line.html", null ]
     ] ],
     [ "AttBarring", null, [
-      [ "vrv::Measure", "classvrv_1_1_measure.html", null ]
+      [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
+      [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", [
+        [ "vrv::ScoreDefElement", "classvrv_1_1_score_def_element.html", [
+          [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
+          [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
+        ] ]
+      ] ],
+      [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ]
     ] ],
     [ "AttBasic", null, [
       [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
@@ -214,12 +224,7 @@ var hierarchy =
       [ "vrv::Dot", "classvrv_1_1_dot.html", null ]
     ] ],
     [ "AttDurationDefault", null, [
-      [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", [
-        [ "vrv::ScoreDefElement", "classvrv_1_1_score_def_element.html", [
-          [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
-          [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
-        ] ]
-      ] ]
+      [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ]
     ] ],
     [ "AttDurationGestural", null, [
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ]
@@ -262,6 +267,7 @@ var hierarchy =
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
       [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
+      [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
       [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
@@ -629,6 +635,9 @@ var hierarchy =
     [ "AttScalable", null, [
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
     ] ],
+    [ "AttScoreDefGes", null, [
+      [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ]
+    ] ],
     [ "AttSectionVis", null, [
       [ "vrv::Section", "classvrv_1_1_section.html", null ]
     ] ],
@@ -900,13 +909,13 @@ var hierarchy =
         [ "vrv::AttNNumberLikeComparison", "classvrv_1_1_att_n_number_like_comparison.html", null ],
         [ "vrv::AttVisibilityComparison", "classvrv_1_1_att_visibility_comparison.html", null ],
         [ "vrv::CrossAlignmentReferenceComparison", "classvrv_1_1_cross_alignment_reference_comparison.html", null ],
+        [ "vrv::IDComparison", "classvrv_1_1_i_d_comparison.html", null ],
         [ "vrv::IsAttributeComparison", "classvrv_1_1_is_attribute_comparison.html", null ],
         [ "vrv::IsEmptyComparison", "classvrv_1_1_is_empty_comparison.html", null ],
         [ "vrv::MeasureAlignerTypeComparison", "classvrv_1_1_measure_aligner_type_comparison.html", null ],
         [ "vrv::MeasureOnsetOffsetComparison", "classvrv_1_1_measure_onset_offset_comparison.html", null ],
         [ "vrv::PointingToComparison", "classvrv_1_1_pointing_to_comparison.html", null ],
-        [ "vrv::SpanningToComparison", "classvrv_1_1_spanning_to_comparison.html", null ],
-        [ "vrv::UuidComparison", "classvrv_1_1_uuid_comparison.html", null ]
+        [ "vrv::SpanningToComparison", "classvrv_1_1_spanning_to_comparison.html", null ]
       ] ],
       [ "vrv::ClassIdsComparison", "classvrv_1_1_class_ids_comparison.html", [
         [ "vrv::NoteOrRestOnsetOffsetComparison", "classvrv_1_1_note_or_rest_onset_offset_comparison.html", null ],
@@ -976,6 +985,7 @@ var hierarchy =
       [ "vrv::CalcAlignmentXPosParams", "classvrv_1_1_calc_alignment_x_pos_params.html", null ],
       [ "vrv::CalcArticParams", "classvrv_1_1_calc_artic_params.html", null ],
       [ "vrv::CalcBBoxOverflowsParams", "classvrv_1_1_calc_b_box_overflows_params.html", null ],
+      [ "vrv::CalcChordNoteHeadsParams", "classvrv_1_1_calc_chord_note_heads_params.html", null ],
       [ "vrv::CalcDotsParams", "classvrv_1_1_calc_dots_params.html", null ],
       [ "vrv::CalcSlurDirectionParams", "classvrv_1_1_calc_slur_direction_params.html", null ],
       [ "vrv::CalcStemParams", "classvrv_1_1_calc_stem_params.html", null ],
@@ -985,6 +995,7 @@ var hierarchy =
       [ "vrv::CastOffToSelectionParams", "classvrv_1_1_cast_off_to_selection_params.html", null ],
       [ "vrv::ConvertMarkupAnalyticalParams", "classvrv_1_1_convert_markup_analytical_params.html", null ],
       [ "vrv::ConvertMarkupArticParams", "classvrv_1_1_convert_markup_artic_params.html", null ],
+      [ "vrv::ConvertMarkupScoreDefParams", "classvrv_1_1_convert_markup_score_def_params.html", null ],
       [ "vrv::ConvertToCastOffMensuralParams", "classvrv_1_1_convert_to_cast_off_mensural_params.html", null ],
       [ "vrv::ConvertToPageBasedParams", "classvrv_1_1_convert_to_page_based_params.html", null ],
       [ "vrv::ConvertToUnCastOffMensuralParams", "classvrv_1_1_convert_to_un_cast_off_mensural_params.html", null ],
@@ -994,9 +1005,10 @@ var hierarchy =
       [ "vrv::FindAllConstByComparisonParams", "classvrv_1_1_find_all_const_by_comparison_params.html", null ],
       [ "vrv::FindAllReferencedObjectsParams", "classvrv_1_1_find_all_referenced_objects_params.html", null ],
       [ "vrv::FindByComparisonParams", "classvrv_1_1_find_by_comparison_params.html", null ],
-      [ "vrv::FindByUuidParams", "classvrv_1_1_find_by_uuid_params.html", null ],
+      [ "vrv::FindByIDParams", "classvrv_1_1_find_by_i_d_params.html", null ],
       [ "vrv::FindChildByComparisonParams", "classvrv_1_1_find_child_by_comparison_params.html", null ],
       [ "vrv::FindExtremeByComparisonParams", "classvrv_1_1_find_extreme_by_comparison_params.html", null ],
+      [ "vrv::FindLayerIDWithinStaffDefParams", "classvrv_1_1_find_layer_i_d_within_staff_def_params.html", null ],
       [ "vrv::FindSpannedLayerElementsParams", "classvrv_1_1_find_spanned_layer_elements_params.html", null ],
       [ "vrv::FunctorDocParams", "classvrv_1_1_functor_doc_params.html", null ],
       [ "vrv::GenerateFeaturesParams", "classvrv_1_1_generate_features_params.html", null ],

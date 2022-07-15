@@ -127,84 +127,88 @@ $(document).ready(function(){initNavTree('tuplet_8h_source.html',''); initResiza
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tuplet.html#a203b018c52090608a28871ed5917c75d">AddChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    LayerElement *GetDrawingLeft() { <span class="keywordflow">return</span> m_drawingLeft; }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> SetDrawingLeft(LayerElement *drawingLeft) { m_drawingLeft = drawingLeft; }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    LayerElement *GetDrawingRight() { <span class="keywordflow">return</span> m_drawingRight; }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> SetDrawingRight(LayerElement *drawingRight) { m_drawingRight = drawingRight; }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    data_STAFFREL_basic GetDrawingBracketPos() { <span class="keywordflow">return</span> m_drawingBracketPos; }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    data_STAFFREL_basic GetDrawingNumPos() { <span class="keywordflow">return</span> m_drawingNumPos; }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    Beam *GetBracketAlignedBeam() { <span class="keywordflow">return</span> m_bracketAlignedBeam; }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    Beam *GetNumAlignedBeam() { <span class="keywordflow">return</span> m_numAlignedBeam; }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tuplet.html#ac6b04379bb72ad6f90757952cf3bcc81">CalcDrawingBracketAndNumPos</a>(<span class="keywordtype">bool</span> tupletNumHead);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tuplet.html#a992bc7279dba5e1d749d17a1ebe59d66">GetDrawingLeftRightXRel</a>(<span class="keywordtype">int</span> &amp;XRelLeft, <span class="keywordtype">int</span> &amp;XRelRight, Doc *doc) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">const</span> LayerElement *GetDrawingLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingLeft; }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> SetDrawingLeft(LayerElement *drawingLeft) { m_drawingLeft = drawingLeft; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    LayerElement *GetDrawingRight() { <span class="keywordflow">return</span> m_drawingRight; }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">const</span> LayerElement *GetDrawingRight()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingRight; }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> SetDrawingRight(LayerElement *drawingRight) { m_drawingRight = drawingRight; }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    data_STAFFREL_basic GetDrawingBracketPos()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingBracketPos; }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    data_STAFFREL_basic GetDrawingNumPos()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingNumPos; }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    Beam *GetBracketAlignedBeam() { <span class="keywordflow">return</span> m_bracketAlignedBeam; }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">const</span> Beam *GetBracketAlignedBeam()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_bracketAlignedBeam; }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    Beam *GetNumAlignedBeam() { <span class="keywordflow">return</span> m_numAlignedBeam; }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">const</span> Beam *GetNumAlignedBeam()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_numAlignedBeam; }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tuplet.html#ac6b04379bb72ad6f90757952cf3bcc81">CalcDrawingBracketAndNumPos</a>(<span class="keywordtype">bool</span> tupletNumHead);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tuplet.html#a1df9d269326828fec5d714a1fd495fca">GetDrawingLeftRightXRel</a>(<span class="keywordtype">int</span> &amp;xRelLeft, <span class="keywordtype">int</span> &amp;xRelRight, <span class="keyword">const</span> Doc *doc) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet.html#aa16224b3753d223c2864d5343986534c">PrepareLayerElementParts</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet.html#a57571265d0c90723978ef2963b58765e">AdjustTupletsX</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet.html#acddade8d5567569047033c9fa7d49294">AdjustTupletsY</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet.html#a6c56e4cdd6c928c51b10e9d6d8cde2f8">ResetHorizontalAlignment</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet.html#ad40db781233d1b68bf74f965e39aa79c">ResetData</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tuplet.html#a4fc681cc5988aac3eb351d356b2b2fe4">FilterList</a>(ListOfConstObjects &amp;childList) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> AdjustTupletBracketY(Doc *doc, Staff *staff);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">void</span> AdjustTupletBracketBeamY(Doc *doc, Staff *staff, TupletBracket *bracket, Beam *beam);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> AdjustTupletNumY(Doc *doc, Staff *staff);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">void</span> CalculateTupletNumCrossStaff(LayerElement *layerElement);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">bool</span> HasValidTupletNumPosition(Staff *preferredStaff, Staff *otherStaff);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    LayerElement *m_drawingLeft;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    LayerElement *m_drawingRight;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    data_STAFFREL_basic m_drawingBracketPos;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    data_STAFFREL_basic m_drawingNumPos;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    Beam *m_bracketAlignedBeam;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    Beam *m_numAlignedBeam;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;};</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet.html#aa16224b3753d223c2864d5343986534c">PrepareLayerElementParts</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet.html#a57571265d0c90723978ef2963b58765e">AdjustTupletsX</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet.html#acddade8d5567569047033c9fa7d49294">AdjustTupletsY</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet.html#a6c56e4cdd6c928c51b10e9d6d8cde2f8">ResetHorizontalAlignment</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet.html#ad40db781233d1b68bf74f965e39aa79c">ResetData</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tuplet.html#a4fc681cc5988aac3eb351d356b2b2fe4">FilterList</a>(ListOfConstObjects &amp;childList) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">void</span> AdjustTupletBracketY(<span class="keyword">const</span> Doc *doc, <span class="keyword">const</span> Staff *staff);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">void</span> AdjustTupletBracketBeamY(<span class="keyword">const</span> Doc *doc, <span class="keyword">const</span> Staff *staff, TupletBracket *bracket, <span class="keyword">const</span> Beam *beam);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">void</span> AdjustTupletNumY(<span class="keyword">const</span> Doc *doc, <span class="keyword">const</span> Staff *staff);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">void</span> CalculateTupletNumCrossStaff(LayerElement *layerElement);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">bool</span> HasValidTupletNumPosition(<span class="keyword">const</span> Staff *preferredStaff, <span class="keyword">const</span> Staff *otherStaff) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    LayerElement *m_drawingLeft;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    LayerElement *m_drawingRight;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    data_STAFFREL_basic m_drawingBracketPos;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    data_STAFFREL_basic m_drawingNumPos;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    Beam *m_bracketAlignedBeam;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    Beam *m_numAlignedBeam;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;};</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_tuplet_html_a0fdf7f43a776f3ffe1d8c185ed139271"><div class="ttname"><a href="classvrv_1_1_tuplet.html#a0fdf7f43a776f3ffe1d8c185ed139271">vrv::Tuplet::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> tuplet.h:39</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:56</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:57</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuplet_html_a203b018c52090608a28871ed5917c75d"><div class="ttname"><a href="classvrv_1_1_tuplet.html#a203b018c52090608a28871ed5917c75d">vrv::Tuplet::AddChild</a></div><div class="ttdeci">void AddChild(Object *object) override</div><div class="ttdoc">Overwritten method for tuplet.</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuplet_html_a895dd98a22b0024d37b1f4fbbc5ec6ca"><div class="ttname"><a href="classvrv_1_1_tuplet.html#a895dd98a22b0024d37b1f4fbbc5ec6ca">vrv::Tuplet::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Add an element (a note or a rest) to a tuplet.</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuplet_html_ac6b04379bb72ad6f90757952cf3bcc81"><div class="ttname"><a href="classvrv_1_1_tuplet.html#ac6b04379bb72ad6f90757952cf3bcc81">vrv::Tuplet::CalcDrawingBracketAndNumPos</a></div><div class="ttdeci">void CalcDrawingBracketAndNumPos(bool tupletNumHead)</div><div class="ttdoc">Calculate the position of the bracket and the num looking at the stem direction or at the encoded val...</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuplet_html_ad40db781233d1b68bf74f965e39aa79c"><div class="ttname"><a href="classvrv_1_1_tuplet.html#ad40db781233d1b68bf74f965e39aa79c">vrv::Tuplet::ResetData</a></div><div class="ttdeci">int ResetData(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetData.</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_list_interface_html"><div class="ttname"><a href="classvrv_1_1_object_list_interface.html">vrv::ObjectListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1637</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_list_interface_html"><div class="ttname"><a href="classvrv_1_1_object_list_interface.html">vrv::ObjectListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1671</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuplet_html_a57571265d0c90723978ef2963b58765e"><div class="ttname"><a href="classvrv_1_1_tuplet.html#a57571265d0c90723978ef2963b58765e">vrv::Tuplet::AdjustTupletsX</a></div><div class="ttdeci">int AdjustTupletsX(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::AdjustTupletsX.</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuplet_html_acddade8d5567569047033c9fa7d49294"><div class="ttname"><a href="classvrv_1_1_tuplet.html#acddade8d5567569047033c9fa7d49294">vrv::Tuplet::AdjustTupletsY</a></div><div class="ttdeci">int AdjustTupletsY(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::AdjustTupletsY.</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuplet_html_a4fc681cc5988aac3eb351d356b2b2fe4"><div class="ttname"><a href="classvrv_1_1_tuplet.html#a4fc681cc5988aac3eb351d356b2b2fe4">vrv::Tuplet::FilterList</a></div><div class="ttdeci">void FilterList(ListOfConstObjects &amp;childList) const override</div><div class="ttdoc">Filter the flat list and keep only Note elements.</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuplet_html"><div class="ttname"><a href="classvrv_1_1_tuplet.html">vrv::Tuplet</a></div><div class="ttdef"><b>Definition:</b> tuplet.h:25</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuplet_html_aad4c98481dc0f4dc718b9f5ed7bd4b99"><div class="ttname"><a href="classvrv_1_1_tuplet.html#aad4c98481dc0f4dc718b9f5ed7bd4b99">vrv::Tuplet::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuplet_html_a6c56e4cdd6c928c51b10e9d6d8cde2f8"><div class="ttname"><a href="classvrv_1_1_tuplet.html#a6c56e4cdd6c928c51b10e9d6d8cde2f8">vrv::Tuplet::ResetHorizontalAlignment</a></div><div class="ttdeci">int ResetHorizontalAlignment(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetHorizontalAlignment.</div></div>
+<div class="ttc" id="aclassvrv_1_1_tuplet_html_a1df9d269326828fec5d714a1fd495fca"><div class="ttname"><a href="classvrv_1_1_tuplet.html#a1df9d269326828fec5d714a1fd495fca">vrv::Tuplet::GetDrawingLeftRightXRel</a></div><div class="ttdeci">void GetDrawingLeftRightXRel(int &amp;xRelLeft, int &amp;xRelRight, const Doc *doc) const</div><div class="ttdoc">Return the maximum and minimum X positions of the notes in the tuplets.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:43</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuplet_html_aa16224b3753d223c2864d5343986534c"><div class="ttname"><a href="classvrv_1_1_tuplet.html#aa16224b3753d223c2864d5343986534c">vrv::Tuplet::PrepareLayerElementParts</a></div><div class="ttdeci">int PrepareLayerElementParts(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::PrepareLayerElementParts.</div></div>
-<div class="ttc" id="aclassvrv_1_1_tuplet_html_a992bc7279dba5e1d749d17a1ebe59d66"><div class="ttname"><a href="classvrv_1_1_tuplet.html#a992bc7279dba5e1d749d17a1ebe59d66">vrv::Tuplet::GetDrawingLeftRightXRel</a></div><div class="ttdeci">void GetDrawingLeftRightXRel(int &amp;XRelLeft, int &amp;XRelRight, Doc *doc) const</div><div class="ttdoc">Return the maximum and minimum X positions of the notes in the tuplets.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>tuplet.h</b></li>
-    <li class="footer">Generated on Wed May 25 2022 14:36:07 for Verovio by
+    <li class="footer">Generated on Fri Jul 15 2022 11:59:38 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

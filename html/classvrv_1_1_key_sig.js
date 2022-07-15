@@ -2,8 +2,8 @@ var classvrv_1_1_key_sig =
 [
     [ "KeySig", "classvrv_1_1_key_sig.html#aa40b13c4f6332ba55ac0d925f6ca0737", null ],
     [ "~KeySig", "classvrv_1_1_key_sig.html#a8d11b45861f5d76bdd90f07e38524a07", null ],
-    [ "ClearKeyAccidAttribChildren", "classvrv_1_1_key_sig.html#a318de32524a20c7849f63338bc62e572", null ],
     [ "Clone", "classvrv_1_1_key_sig.html#aa602f4a016a1548a905bbbb19fc014ca", null ],
+    [ "ConvertToSig", "classvrv_1_1_key_sig.html#aa63dd7d23c99397cce79dcd5051853b0", null ],
     [ "FillMap", "classvrv_1_1_key_sig.html#a6d6ad08f332d436cb0d46ef29c788ebd", null ],
     [ "FilterList", "classvrv_1_1_key_sig.html#a3774b986c83dba4c6f0b442ceef90451", null ],
     [ "GenerateKeyAccidAttribChildren", "classvrv_1_1_key_sig.html#a35e19b1fba819c9a59219b5433e11a9a", null ],

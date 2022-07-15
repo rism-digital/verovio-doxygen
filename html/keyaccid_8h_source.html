@@ -95,70 +95,72 @@ $(document).ready(function(){initNavTree('keyaccid_8h_source.html',''); initResi
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __VRV_KEYACCID_H__</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __VRV_KEYACCID_H__</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;atts_gestural.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;layerelement.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;pitchinterface.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;positioninterface.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>vrv {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// KeyAccid</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classvrv_1_1_key_accid.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_key_accid.html">KeyAccid</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                 <span class="keyword">public</span> <a class="code" href="classvrv_1_1_pitch_interface.html">PitchInterface</a>,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                 <span class="keyword">public</span> <a class="code" href="classvrv_1_1_position_interface.html">PositionInterface</a>,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                 <span class="keyword">public</span> AttAccidental,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                 <span class="keyword">public</span> AttColor,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                 <span class="keyword">public</span> AttEnclosingChars {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classvrv_1_1_key_accid.html">KeyAccid</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_key_accid.html">KeyAccid</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classvrv_1_1_key_accid.html#abeaa9f0fa25cf21bfcc8b27557b6bf1d">   39</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_key_accid.html#abeaa9f0fa25cf21bfcc8b27557b6bf1d">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_key_accid.html">KeyAccid</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_key_accid.html#a81b36a30c9c41a417b238b8edbefd55e">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;KeyAccid&quot;</span>; }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    PitchInterface *GetPitchInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;PitchInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">const</span> PitchInterface *GetPitchInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const PitchInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    PositionInterface *GetPositionInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;PositionInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">const</span> PositionInterface *GetPositionInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const PositionInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::wstring <a class="code" href="classvrv_1_1_key_accid.html#a9a052dc64b40a2b6a8a67aabc1c7e62a">GetSymbolStr</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_key_accid.html#a3740a218a4fcbb19d3c91090b9208edd">CalcStaffLoc</a>(Clef *clef, <span class="keywordtype">int</span> clefLocOffset) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;atts_externalsymbols.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;atts_gestural.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;layerelement.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;pitchinterface.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;positioninterface.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>vrv {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// KeyAccid</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classvrv_1_1_key_accid.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_key_accid.html">KeyAccid</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                 <span class="keyword">public</span> <a class="code" href="classvrv_1_1_pitch_interface.html">PitchInterface</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                 <span class="keyword">public</span> <a class="code" href="classvrv_1_1_position_interface.html">PositionInterface</a>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                 <span class="keyword">public</span> AttAccidental,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                 <span class="keyword">public</span> AttColor,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                 <span class="keyword">public</span> AttEnclosingChars,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                 <span class="keyword">public</span> AttExtSym {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classvrv_1_1_key_accid.html">KeyAccid</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_key_accid.html">KeyAccid</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classvrv_1_1_key_accid.html#abeaa9f0fa25cf21bfcc8b27557b6bf1d">   41</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_key_accid.html#abeaa9f0fa25cf21bfcc8b27557b6bf1d">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_key_accid.html">KeyAccid</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_key_accid.html#a81b36a30c9c41a417b238b8edbefd55e">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;KeyAccid&quot;</span>; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    PitchInterface *GetPitchInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;PitchInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">const</span> PitchInterface *GetPitchInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const PitchInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    PositionInterface *GetPositionInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;PositionInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">const</span> PositionInterface *GetPositionInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const PositionInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::wstring <a class="code" href="classvrv_1_1_key_accid.html#a6b670523c468836d640faab95a006148">GetSymbolStr</a>(data_NOTATIONTYPE notationType) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_key_accid.html#a3740a218a4fcbb19d3c91090b9208edd">CalcStaffLoc</a>(Clef *clef, <span class="keywordtype">int</span> clefLocOffset) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_key_accid_html_a9a052dc64b40a2b6a8a67aabc1c7e62a"><div class="ttname"><a href="classvrv_1_1_key_accid.html#a9a052dc64b40a2b6a8a67aabc1c7e62a">vrv::KeyAccid::GetSymbolStr</a></div><div class="ttdeci">std::wstring GetSymbolStr() const</div><div class="ttdoc">Retrieve SMuFL string for the accidental.</div></div>
 <div class="ttc" id="aclassvrv_1_1_position_interface_html"><div class="ttname"><a href="classvrv_1_1_position_interface.html">vrv::PositionInterface</a></div><div class="ttdoc">This class is an interface for elements with a position on the staff, such as rests.</div><div class="ttdef"><b>Definition:</b> positioninterface.h:28</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:56</div></div>
-<div class="ttc" id="aclassvrv_1_1_key_accid_html_abeaa9f0fa25cf21bfcc8b27557b6bf1d"><div class="ttname"><a href="classvrv_1_1_key_accid.html#abeaa9f0fa25cf21bfcc8b27557b6bf1d">vrv::KeyAccid::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> keyaccid.h:39</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:57</div></div>
+<div class="ttc" id="aclassvrv_1_1_key_accid_html_abeaa9f0fa25cf21bfcc8b27557b6bf1d"><div class="ttname"><a href="classvrv_1_1_key_accid.html#abeaa9f0fa25cf21bfcc8b27557b6bf1d">vrv::KeyAccid::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> keyaccid.h:41</div></div>
 <div class="ttc" id="aclassvrv_1_1_key_accid_html_a3740a218a4fcbb19d3c91090b9208edd"><div class="ttname"><a href="classvrv_1_1_key_accid.html#a3740a218a4fcbb19d3c91090b9208edd">vrv::KeyAccid::CalcStaffLoc</a></div><div class="ttdeci">int CalcStaffLoc(Clef *clef, int clefLocOffset) const</div><div class="ttdoc">Determine the staff location.</div></div>
+<div class="ttc" id="aclassvrv_1_1_key_accid_html_a6b670523c468836d640faab95a006148"><div class="ttname"><a href="classvrv_1_1_key_accid.html#a6b670523c468836d640faab95a006148">vrv::KeyAccid::GetSymbolStr</a></div><div class="ttdeci">std::wstring GetSymbolStr(data_NOTATIONTYPE notationType) const</div><div class="ttdoc">Retrieve SMuFL string for the accidental.</div></div>
 <div class="ttc" id="aclassvrv_1_1_key_accid_html_a81b36a30c9c41a417b238b8edbefd55e"><div class="ttname"><a href="classvrv_1_1_key_accid.html#a81b36a30c9c41a417b238b8edbefd55e">vrv::KeyAccid::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
-<div class="ttc" id="aclassvrv_1_1_key_accid_html"><div class="ttname"><a href="classvrv_1_1_key_accid.html">vrv::KeyAccid</a></div><div class="ttdoc">This class models the MEI &lt;keyAccid&gt; element.</div><div class="ttdef"><b>Definition:</b> keyaccid.h:25</div></div>
+<div class="ttc" id="aclassvrv_1_1_key_accid_html"><div class="ttname"><a href="classvrv_1_1_key_accid.html">vrv::KeyAccid</a></div><div class="ttdoc">This class models the MEI &lt;keyAccid&gt; element.</div><div class="ttdef"><b>Definition:</b> keyaccid.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_pitch_interface_html"><div class="ttname"><a href="classvrv_1_1_pitch_interface.html">vrv::PitchInterface</a></div><div class="ttdoc">This class is an interface for elements with pitch, such as notes and neumes.</div><div class="ttdef"><b>Definition:</b> pitchinterface.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:43</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>keyaccid.h</b></li>
-    <li class="footer">Generated on Wed May 25 2022 14:36:07 for Verovio by
+    <li class="footer">Generated on Fri Jul 15 2022 11:59:38 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

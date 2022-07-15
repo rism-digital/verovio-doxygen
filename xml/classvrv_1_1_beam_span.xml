@@ -174,32 +174,6 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Initialize and clear beam segments</header>
-      <memberdef kind="variable" id="classvrv_1_1_beam_span_1a2053121282e970662e8ebc6015af9553" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classvrv_1_1_beam_span_segment" kindref="compound">BeamSpanSegment</ref> * &gt;</type>
-        <definition>std::vector&lt;BeamSpanSegment *&gt; vrv::BeamSpan::m_beamSegments</definition>
-        <argsstring></argsstring>
-        <name>m_beamSegments</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="116" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" bodystart="116" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_beam_span_1a3a5d031737b706b249aa14cdf8c1bc95" prot="private" static="no" mutable="no">
-        <type>ArrayOfObjects</type>
-        <definition>ArrayOfObjects vrv::BeamSpan::m_beamedElements</definition>
-        <argsstring></argsstring>
-        <name>m_beamedElements</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="120" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" bodystart="120" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_span_1a13c01b5ae8d057afb4be0513a5afecf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSpan::InitBeamSegments</definition>
@@ -226,13 +200,31 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="77" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_span_1afbbe35e40ed9ed6d4c4727881034572e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_span_1ac0968b6a6cb8217e95ffb87e3dcb52eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classvrv_1_1_beam_span_segment" kindref="compound">BeamSpanSegment</ref> *</type>
         <definition>BeamSpanSegment* vrv::BeamSpan::GetSegmentForSystem</definition>
-        <argsstring>(System *system)</argsstring>
+        <argsstring>(const System *system)</argsstring>
         <name>GetSegmentForSystem</name>
         <param>
-          <type><ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
+          <declname>system</declname>
+        </param>
+        <briefdescription>
+<para>Access the beam segments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="84" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_beam_span_1a6b36d0cc5075fde046789643a3ace068" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classvrv_1_1_beam_span_segment" kindref="compound">BeamSpanSegment</ref> *</type>
+        <definition>const BeamSpanSegment* vrv::BeamSpan::GetSegmentForSystem</definition>
+        <argsstring>(const System *system) const</argsstring>
+        <name>GetSegmentForSystem</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
           <declname>system</declname>
         </param>
         <briefdescription>
@@ -241,8 +233,55 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="80" column="21"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="85" column="27"/>
       </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classvrv_1_1_beam_span_1acdfbfa734609995c2a4041fc2f34bfbc" prot="private" static="no">
+        <type>std::vector&lt; std::pair&lt; vrv::ArrayOfObjects::iterator, <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> * &gt; &gt;</type>
+        <definition>using vrv::BeamSpan::SpanIndexVector =  std::vector&lt;std::pair&lt;vrv::ArrayOfObjects::iterator, Object *&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>SpanIndexVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="39" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvrv_1_1_beam_span_1a2053121282e970662e8ebc6015af9553" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classvrv_1_1_beam_span_segment" kindref="compound">BeamSpanSegment</ref> * &gt;</type>
+        <definition>std::vector&lt;BeamSpanSegment *&gt; vrv::BeamSpan::m_beamSegments</definition>
+        <argsstring></argsstring>
+        <name>m_beamSegments</name>
+        <briefdescription>
+<para>Array of beam segments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="126" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_beam_span_1a3a5d031737b706b249aa14cdf8c1bc95" prot="private" static="no" mutable="no">
+        <type>ArrayOfObjects</type>
+        <definition>ArrayOfObjects vrv::BeamSpan::m_beamedElements</definition>
+        <argsstring></argsstring>
+        <name>m_beamedElements</name>
+        <briefdescription>
+<para>Array of beamed elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="130" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
       <memberdef kind="function" id="classvrv_1_1_beam_span_1a908f6fced35e8798d9b229d8fe08f5e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
         <definition>int vrv::BeamSpan::ResetHorizontalAlignment</definition>
@@ -260,7 +299,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="89" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="95" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_span_1a06352e0c8471427a87c54c26ef3f3367" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -279,7 +318,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="94" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="100" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_span_1a07aba3ae9755917d937d59f87637ca87" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -297,7 +336,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="99" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="105" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_span_1a1401b8046896552abf622d146293532e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -315,15 +354,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="104" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="110" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_span_1affef67d34b6fc874945854937821b80b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classvrv_1_1_beam_span_1a07172e8f13f4577611883be10ed74ac0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::BeamSpan::AddSpanningSegment</definition>
-        <argsstring>(Doc *doc, const SpanIndexVector &amp;elements, int index, bool newSegment=true)</argsstring>
+        <argsstring>(const Doc *doc, const SpanIndexVector &amp;elements, int index, bool newSegment=true)</argsstring>
         <name>AddSpanningSegment</name>
         <param>
-          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
         </param>
         <param>
@@ -345,19 +386,19 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="108" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="114" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_span_1aa60295798aee6fade795bcf30ea9630b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_span_1aca668f1b74a6600cdbadcf000e093946" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>ArrayOfObjects</type>
         <definition>ArrayOfObjects vrv::BeamSpan::GetBeamSpanElementList</definition>
-        <argsstring>(Layer *layer, Staff *staff)</argsstring>
+        <argsstring>(Layer *layer, const Staff *staff)</argsstring>
         <name>GetBeamSpanElementList</name>
         <param>
           <type><ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
           <declname>layer</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
         </param>
         <briefdescription>
@@ -366,22 +407,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="112" column="20"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="private-type">
-      <memberdef kind="typedef" id="classvrv_1_1_beam_span_1acdfbfa734609995c2a4041fc2f34bfbc" prot="private" static="no">
-        <type>std::vector&lt; std::pair&lt; vrv::ArrayOfObjects::iterator, <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> * &gt; &gt;</type>
-        <definition>using vrv::BeamSpan::SpanIndexVector =  std::vector&lt;std::pair&lt;vrv::ArrayOfObjects::iterator, Object *&gt; &gt;</definition>
-        <argsstring></argsstring>
-        <name>SpanIndexVector</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="39" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" bodystart="39" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="118" column="20"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -526,7 +552,7 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="47">
+      <node id="48">
         <label>vrv::LayerElement</label>
         <link refid="classvrv_1_1_layer_element"/>
         <childnode refid="4" relation="public-inheritance">
@@ -535,19 +561,19 @@
         </childnode>
         <childnode refid="6" relation="public-inheritance">
         </childnode>
-        <childnode refid="48" relation="public-inheritance">
+        <childnode refid="49" relation="public-inheritance">
         </childnode>
         <childnode refid="9" relation="public-inheritance">
         </childnode>
         <childnode refid="10" relation="public-inheritance">
         </childnode>
-        <childnode refid="49" relation="usage">
+        <childnode refid="50" relation="usage">
           <edgelabel>m_crossLayer</edgelabel>
         </childnode>
         <childnode refid="13" relation="usage">
           <edgelabel>m_crossStaff</edgelabel>
         </childnode>
-        <childnode refid="52" relation="usage">
+        <childnode refid="53" relation="usage">
           <edgelabel>m_graceAlignment</edgelabel>
           <edgelabel>m_alignment</edgelabel>
         </childnode>
@@ -560,25 +586,25 @@
         <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="28">
+      <node id="29">
         <label>AttMultinumMeasures</label>
       </node>
-      <node id="43">
+      <node id="44">
         <label>vrv::TimePointInterface</label>
         <link refid="classvrv_1_1_time_point_interface"/>
         <childnode refid="7" relation="public-inheritance">
-        </childnode>
-        <childnode refid="44" relation="public-inheritance">
         </childnode>
         <childnode refid="45" relation="public-inheritance">
         </childnode>
         <childnode refid="46" relation="public-inheritance">
         </childnode>
-        <childnode refid="47" relation="usage">
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+        <childnode refid="48" relation="usage">
           <edgelabel>m_start</edgelabel>
         </childnode>
       </node>
-      <node id="56">
+      <node id="57">
         <label>AttBeamRend</label>
       </node>
       <node id="22">
@@ -600,10 +626,10 @@
       <node id="20">
         <label>AttCourseLog</label>
       </node>
-      <node id="41">
+      <node id="42">
         <label>AttPlist</label>
       </node>
-      <node id="31">
+      <node id="32">
         <label>AttSystems</label>
       </node>
       <node id="13">
@@ -628,7 +654,10 @@
           <edgelabel>m_drawingStaffDef</edgelabel>
         </childnode>
       </node>
-      <node id="33">
+      <node id="24">
+        <label>AttBarring</label>
+      </node>
+      <node id="34">
         <label>AttDistances</label>
       </node>
       <node id="10">
@@ -659,46 +688,48 @@
         </childnode>
         <childnode refid="31" relation="public-inheritance">
         </childnode>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="45">
+      <node id="46">
         <label>AttStartId</label>
       </node>
       <node id="7">
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="27">
+      <node id="28">
         <label>AttMidiTempo</label>
       </node>
       <node id="18">
         <label>AttVisibility</label>
       </node>
-      <node id="42">
+      <node id="43">
         <label>vrv::TimeSpanningInterface</label>
         <link refid="classvrv_1_1_time_spanning_interface"/>
-        <childnode refid="43" relation="public-inheritance">
-        </childnode>
-        <childnode refid="53" relation="public-inheritance">
+        <childnode refid="44" relation="public-inheritance">
         </childnode>
         <childnode refid="54" relation="public-inheritance">
         </childnode>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="37">
+      <node id="38">
         <label>AttStaffDefVis</label>
       </node>
       <node id="17">
         <label>AttNInteger</label>
       </node>
-      <node id="49">
+      <node id="50">
         <label>vrv::Layer</label>
         <link refid="classvrv_1_1_layer"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
-        <childnode refid="50" relation="public-inheritance">
+        <childnode refid="51" relation="public-inheritance">
         </childnode>
         <childnode refid="12" relation="public-inheritance">
         </childnode>
-        <childnode refid="51" relation="public-inheritance">
+        <childnode refid="52" relation="public-inheritance">
         </childnode>
         <childnode refid="17" relation="public-inheritance">
         </childnode>
@@ -707,7 +738,7 @@
         <childnode refid="18" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="30">
+      <node id="31">
         <label>AttSpacing</label>
       </node>
       <node id="14">
@@ -718,17 +749,17 @@
         <childnode refid="15" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="34">
+      <node id="35">
         <label>AttNotationType</label>
       </node>
-      <node id="48">
+      <node id="49">
         <label>AttCoordX1</label>
       </node>
-      <node id="50">
+      <node id="51">
         <label>vrv::DrawingListInterface</label>
         <link refid="classvrv_1_1_drawing_list_interface"/>
       </node>
-      <node id="53">
+      <node id="54">
         <label>AttStartEndId</label>
       </node>
       <node id="16">
@@ -742,22 +773,22 @@
         <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="40">
+      <node id="41">
         <label>vrv::PlistInterface</label>
         <link refid="classvrv_1_1_plist_interface"/>
         <childnode refid="7" relation="public-inheritance">
         </childnode>
-        <childnode refid="41" relation="public-inheritance">
+        <childnode refid="42" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="55">
+      <node id="56">
         <label>AttBeamedWith</label>
       </node>
-      <node id="32">
+      <node id="33">
         <label>vrv::StaffDefDrawingInterface</label>
         <link refid="classvrv_1_1_staff_def_drawing_interface"/>
       </node>
-      <node id="54">
+      <node id="55">
         <label>AttTimestamp2Logical</label>
       </node>
       <node id="21">
@@ -765,15 +796,13 @@
         <link refid="classvrv_1_1_staff_def"/>
         <childnode refid="22" relation="public-inheritance">
         </childnode>
-        <childnode refid="32" relation="public-inheritance">
-        </childnode>
         <childnode refid="33" relation="public-inheritance">
+        </childnode>
+        <childnode refid="34" relation="public-inheritance">
         </childnode>
         <childnode refid="9" relation="public-inheritance">
         </childnode>
         <childnode refid="17" relation="public-inheritance">
-        </childnode>
-        <childnode refid="34" relation="public-inheritance">
         </childnode>
         <childnode refid="35" relation="public-inheritance">
         </childnode>
@@ -785,38 +814,40 @@
         </childnode>
         <childnode refid="39" relation="public-inheritance">
         </childnode>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="46">
+      <node id="47">
         <label>AttTimestampLogical</label>
       </node>
       <node id="8">
         <label>AttLinking</label>
       </node>
-      <node id="25">
+      <node id="26">
         <label>AttLyricStyle</label>
       </node>
       <node id="15">
         <label>AttFacsimile</label>
       </node>
-      <node id="39">
+      <node id="40">
         <label>AttTransposition</label>
       </node>
-      <node id="24">
+      <node id="25">
         <label>AttDurationDefault</label>
       </node>
-      <node id="51">
+      <node id="52">
         <label>AttCue</label>
       </node>
-      <node id="52">
+      <node id="53">
         <label>vrv::Alignment</label>
         <link refid="classvrv_1_1_alignment"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="29">
+      <node id="30">
         <label>AttPianoPedals</label>
       </node>
-      <node id="36">
+      <node id="37">
         <label>AttStaffDefLog</label>
       </node>
       <node id="1">
@@ -826,18 +857,18 @@
         </childnode>
         <childnode refid="11" relation="public-inheritance">
         </childnode>
-        <childnode refid="40" relation="public-inheritance">
+        <childnode refid="41" relation="public-inheritance">
         </childnode>
-        <childnode refid="42" relation="public-inheritance">
-        </childnode>
-        <childnode refid="55" relation="public-inheritance">
+        <childnode refid="43" relation="public-inheritance">
         </childnode>
         <childnode refid="56" relation="public-inheritance">
         </childnode>
         <childnode refid="57" relation="public-inheritance">
         </childnode>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="44">
+      <node id="45">
         <label>AttStaffIdent</label>
       </node>
       <node id="11">
@@ -868,33 +899,34 @@
         <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="57">
+      <node id="58">
         <label>AttColor</label>
       </node>
-      <node id="26">
+      <node id="27">
         <label>AttMeasureNumbers</label>
       </node>
-      <node id="35">
+      <node id="36">
         <label>AttScalable</label>
       </node>
       <node id="12">
         <label>vrv::ObjectListInterface</label>
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
-      <node id="38">
+      <node id="39">
         <label>AttTimeBase</label>
       </node>
       <node id="9">
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="37" column="33" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" bodystart="31" bodyend="121"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" line="37" column="33" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beamspan.h" bodystart="31" bodyend="131"/>
     <listofallmembers>
+      <member refid="classvrv_1_1_linking_interface_1aaa4632e05d5d887b26dbf1789c84f573" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>AddBackLink</name></member>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>AddChild</name></member>
       <member refid="classvrv_1_1_object_1a5f617820a2163b5fa9d80d884bf69999" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>AddLayerElementToFlatList</name></member>
       <member refid="classvrv_1_1_plist_interface_1a20766650e1240b81811bdcddf84dcfa7" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>AddRef</name></member>
       <member refid="classvrv_1_1_plist_interface_1abf9d04ad183281727a87426c82c3c8d1" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>AddRefAllowDuplicate</name></member>
-      <member refid="classvrv_1_1_beam_span_1affef67d34b6fc874945854937821b80b" prot="private" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>AddSpanningSegment</name></member>
+      <member refid="classvrv_1_1_beam_span_1a07172e8f13f4577611883be10ed74ac0" prot="private" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>AddSpanningSegment</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a67678cf06ae06579a830344df5c5598a" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>AddStaff</name></member>
       <member refid="classvrv_1_1_object_1a08855458e45646f3831f2edf7c8a77e0" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>AdjustAccidX</name></member>
       <member refid="classvrv_1_1_object_1a9a7ac871bbd388bc57ad3efbcd5523e4" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>AdjustArpeg</name></member>
@@ -921,7 +953,7 @@
       <member refid="classvrv_1_1_object_1af1cfac1b1885dea453542d8fccdc4461" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>AdjustSylSpacing</name></member>
       <member refid="classvrv_1_1_object_1ada977235c88371e047043642cb5ff3bb" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>AdjustSylSpacingEnd</name></member>
       <member refid="classvrv_1_1_object_1ae04a8386531bae9a2facddc7d293a0ed" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>AdjustTempo</name></member>
-      <member refid="classvrv_1_1_object_1a8aaf88c9ab32e7cc92a6d39189031caa" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>AdjustTupletNumOverlap</name></member>
+      <member refid="classvrv_1_1_object_1ad431f1654f303456e7c8f2d285e4f650" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>AdjustTupletNumOverlap</name></member>
       <member refid="classvrv_1_1_object_1a59773566ac731e75fa34166fa1d78aa3" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>AdjustTupletsX</name></member>
       <member refid="classvrv_1_1_object_1a80bc658bb972eabcee2d0aa536386cfc" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>AdjustTupletsY</name></member>
       <member refid="classvrv_1_1_control_element_1aac6e4a89487d479670c8db760c720073" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>AdjustXOverflow</name></member>
@@ -988,12 +1020,15 @@
       <member refid="classvrv_1_1_object_1a677194130b19ebd382b4868f9284985b" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ConvertMarkupAnalyticalEnd</name></member>
       <member refid="classvrv_1_1_object_1a7262b554ba150b54b434fc7c0c93001d" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ConvertMarkupArtic</name></member>
       <member refid="classvrv_1_1_object_1adeeaf95b17b15194260884d306a72214" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ConvertMarkupArticEnd</name></member>
+      <member refid="classvrv_1_1_object_1a354f7ad3f6f2830e4553ccd74c12b705" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ConvertMarkupScoreDef</name></member>
+      <member refid="classvrv_1_1_object_1a0455df6f8a7aaa3777228f95d32b5fc8" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ConvertMarkupScoreDefEnd</name></member>
       <member refid="classvrv_1_1_object_1ada935f44326f0c4ecfc068694461718b" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ConvertToCastOffMensural</name></member>
       <member refid="classvrv_1_1_object_1ae930432f04c711ac22a14c66a92feb5e" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ConvertToPageBased</name></member>
       <member refid="classvrv_1_1_object_1ada7452f72d022232966a2d5822b8bbc8" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ConvertToPageBasedEnd</name></member>
       <member refid="classvrv_1_1_object_1a4dc4ba189667de40dfbb15b88adb5b0e" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ConvertToUnCastOffMensural</name></member>
       <member refid="classvrv_1_1_object_1a4bf38f527d70161c92062a2347b7c11e" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>CopyChildren</name></member>
       <member refid="classvrv_1_1_object_1aa24fba8bae1f0876567f564f98020966" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>DeleteChild</name></member>
+      <member refid="classvrv_1_1_object_1acbb7a83e4ae3f1ba54bcd408dce066ee" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>DeleteChildrenByComparison</name></member>
       <member refid="classvrv_1_1_object_1ac846569894fc8b08083e5a8526ba5834" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>DetachChild</name></member>
       <member refid="classvrv_1_1_bounding_box_1a52ac837dc797c5f292c98ddb3f43a098" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>Encloses</name></member>
       <member refid="classvrv_1_1_object_1a24dd9389c537dda7046c097132ae9a9a" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FillFlatList</name></member>
@@ -1010,28 +1045,29 @@
       <member refid="classvrv_1_1_object_1a41ee471e72e60d72b177f9f97264fab3" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FindAllDescendantsByType</name></member>
       <member refid="classvrv_1_1_object_1acd19a93751c317da1c6a0873e606f882" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>FindAllReferencedObjects</name></member>
       <member refid="classvrv_1_1_object_1a78b139bddb6e0d696ff451ce60128eba" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>FindByComparison</name></member>
-      <member refid="classvrv_1_1_object_1a58a83fb9004fb481cbec9d456cdabd3d" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>FindByUuid</name></member>
+      <member refid="classvrv_1_1_object_1a1bc9eec8d253587de8284c1f50afcaea" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>FindByID</name></member>
       <member refid="classvrv_1_1_object_1a75077fdacaa928e36fe20b90eaca7a7a" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FindDescendantByComparison</name></member>
       <member refid="classvrv_1_1_object_1a948e6633d515f523bb38dad79af046b2" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FindDescendantByComparison</name></member>
+      <member refid="classvrv_1_1_object_1a00d5ad76400a768dd634806998166ab7" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FindDescendantByID</name></member>
+      <member refid="classvrv_1_1_object_1a71f296d277f77a37c45687f97a73bf83" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FindDescendantByID</name></member>
       <member refid="classvrv_1_1_object_1a2c65f3e559db5add1055a45e60d44536" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FindDescendantByType</name></member>
       <member refid="classvrv_1_1_object_1a6765a4a8d789472f5c0b1598440d675f" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FindDescendantByType</name></member>
-      <member refid="classvrv_1_1_object_1a94dc59d4c3c856ac4f143b2fa1457db8" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FindDescendantByUuid</name></member>
-      <member refid="classvrv_1_1_object_1a556eac03e05d970ae850e199993c59f6" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FindDescendantByUuid</name></member>
       <member refid="classvrv_1_1_object_1a95acdd9f46d55cf067b567ef11526b68" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FindDescendantExtremeByComparison</name></member>
       <member refid="classvrv_1_1_object_1af9c8c3326a8eb6745bb1a94da8d76627" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FindDescendantExtremeByComparison</name></member>
+      <member refid="classvrv_1_1_object_1a3c835b26514761906d7b75a9271f7660" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>FindElementInLayerStaffDefsByID</name></member>
       <member refid="classvrv_1_1_object_1acfa9ea76fcafd0009231c3ac3c73702e" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>FindExtremeByComparison</name></member>
       <member refid="classvrv_1_1_object_1a5783461a8f5bee6d95391b86e0004ff4" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FindNextChild</name></member>
       <member refid="classvrv_1_1_object_1ae1a47a27a677aa68ba14e324b0a17e00" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>FindNextChildByComparison</name></member>
       <member refid="classvrv_1_1_object_1a4750585ae6b8737aba3408fcc863dfeb" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FindPreviousChild</name></member>
       <member refid="classvrv_1_1_object_1a7c792936ed7e04d00172c7b0017b85a1" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>FindPreviousChildByComparison</name></member>
-      <member refid="classvrv_1_1_object_1adf698716d3820efeb5d1af9bfd24a187" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>FindSpannedLayerElements</name></member>
+      <member refid="classvrv_1_1_object_1af8ed551298a2052adaa8c7fb1af31dc2" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>FindSpannedLayerElements</name></member>
       <member refid="classvrv_1_1_floating_object_1a881e66e4ba71468555b7a8abae6a346e" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FloatingObject</name></member>
       <member refid="classvrv_1_1_floating_object_1a0988447a69fd83a982391248f4a19944" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FloatingObject</name></member>
       <member refid="classvrv_1_1_floating_object_1a41170245f10c43785287cacb6e34013b" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>FloatingObject</name></member>
       <member refid="classvrv_1_1_object_1a7ced59f27507ee81372cc12d7f57c8e0" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>GenerateFeatures</name></member>
       <member refid="classvrv_1_1_object_1a426081ffba31e4251a2c36ceeb2a43ba" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>GenerateMIDI</name></member>
       <member refid="classvrv_1_1_object_1a7c0a63c225e76daa84e102b7d531d645" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>GenerateMIDIEnd</name></member>
-      <member refid="classvrv_1_1_object_1a2ea4b50e70a3a0d43293df7607a6901b" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GenerateRandUuid</name></member>
+      <member refid="classvrv_1_1_object_1adef7d8ebf6bbb0b9bea78a608c161791" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GenerateRandID</name></member>
       <member refid="classvrv_1_1_object_1abe889073301d6e1dfe55e725b6532948" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>GenerateTimemap</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1aa1f1a8faaf27320e5e09452dbab2315f" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>GetAdditionalBeamCount</name></member>
       <member refid="classvrv_1_1_object_1a3eb3c52e16525ed1a559a825fa85e00e" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>GetAlignmentLeftRight</name></member>
@@ -1045,7 +1081,7 @@
       <member refid="classvrv_1_1_object_1a6d9d3ae387831fac891f903349348310" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>GetBeamDrawingInterface</name></member>
       <member refid="classvrv_1_1_object_1ab136df3273e12a93e3699ae62e9d2514" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>GetBeamDrawingInterface</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1acc72272b8e6226e5016687b9b8f3c056" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetBeamOverflow</name></member>
-      <member refid="classvrv_1_1_beam_span_1aa60295798aee6fade795bcf30ea9630b" prot="private" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetBeamSpanElementList</name></member>
+      <member refid="classvrv_1_1_beam_span_1aca668f1b74a6600cdbadcf000e093946" prot="private" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetBeamSpanElementList</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3dbe5a481e20ab4d0d9fdd47708d1c2f" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetBezierThicknessCoefficient</name></member>
       <member refid="classvrv_1_1_bounding_box_1a91a7bb36d11f909e84caab997fb49c0c" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetBottomBy</name></member>
       <member refid="classvrv_1_1_bounding_box_1aa3fc5bcc7d25b6e975fad50b11edd781" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetBoundingBoxGlyph</name></member>
@@ -1074,9 +1110,15 @@
       <member refid="classvrv_1_1_bounding_box_1aca490fbb8d4d5c0179e05f790e0e2951" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetContentX2</name></member>
       <member refid="classvrv_1_1_bounding_box_1afb681918250b5eceeab06a8752c794a0" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetContentY1</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7d8f116f3c72430801e43fc9f1fb1e95" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetContentY2</name></member>
-      <member refid="classvrv_1_1_floating_object_1aef3059c4ebeb1d581e5ce06319d11050" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetCorrespFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a248177357c942919e76c7aa438aeb6a0" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetCorrespFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a670ba7a497b9ebdc58d9a62a1027f71f" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetCorrespFloatingPositioner</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a41a52a993d10feeb4e09551b69c5ccf0" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetCrossStaffOverflows</name></member>
-      <member refid="classvrv_1_1_floating_object_1aa26df3350328cd96704f766ac3db0615" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetCurrentFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a4d92135a6f8a1967fb53ac60e3cbb0c7" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetCurrentFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_floating_object_1a4aac146641f1aa60551a927f7eb4d297" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetCurrentFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a26bfbd087c59e094696d2c0ff1fd89ea" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetCutOutBottom</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a341aeebe2fdd010ebf72aaf1c8760df3" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetCutOutLeft</name></member>
+      <member refid="classvrv_1_1_bounding_box_1abc3f8eacafe2bfb2becd732507f259ae" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetCutOutRight</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a81256810cab77e0d9fedf64fa858690f" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetCutOutTop</name></member>
       <member refid="classvrv_1_1_object_1a469db24aaa4907f5437576cb989fcdad" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetDescendantCount</name></member>
       <member refid="classvrv_1_1_object_1a6baacbb5e659f71a051d569b2c34ac07" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetDescendantIndex</name></member>
       <member refid="classvrv_1_1_object_1a4479cf2a953546ff59428752c479ec31" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetDocResources</name></member>
@@ -1098,12 +1140,15 @@
       <member refid="classvrv_1_1_object_1a5ec4736caa32bf31168fd2ce62f21d0d" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetFirstAncestorInRange</name></member>
       <member refid="classvrv_1_1_object_1a4e9a608419295411e4f3cf4ea7fbf19f" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetFirstAncestorInRange</name></member>
       <member refid="classvrv_1_1_object_1a10fe05578ee7f669ca3591c5a2a3a428" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetFirstChildNot</name></member>
+      <member refid="classvrv_1_1_object_1a7cde888c2a3a0af025cd706540d7333a" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetFirstChildNot</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1ab194e91dbf4351e4f695ab7e6edf1935" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>GetFloatingBeamCount</name></member>
+      <member refid="classvrv_1_1_object_1aef1d784524c2d3c60d0c0142d1a8ab53" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetID</name></member>
       <member refid="classvrv_1_1_object_1a2bfb8ee92dbd7e805de0aae51d07d534" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetIdx</name></member>
       <member refid="classvrv_1_1_object_1aa7382f9b787c517cf76a6ece195f7766" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetLast</name></member>
       <member refid="classvrv_1_1_object_1a31f762f07969b77792891fdbbc5176e4" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetLast</name></member>
       <member refid="classvrv_1_1_object_1a908d56fef5a5dd9b9808555ab4ea4daf" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetLastAncestorNot</name></member>
-      <member refid="classvrv_1_1_control_element_1a6958cd8e98487b05df80adf872de0353" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetLayerPlace</name></member>
+      <member refid="classvrv_1_1_object_1a7a014abead37ca3e27f827a5c3ae7434" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetLastAncestorNot</name></member>
+      <member refid="classvrv_1_1_control_element_1a21757f229d95373c0d53c4ac94cdcaf2" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetLayerPlace</name></member>
       <member refid="classvrv_1_1_bounding_box_1af329372204a34520779e6b0d0596e8b9" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetLeftBy</name></member>
       <member refid="classvrv_1_1_control_element_1a1ab03ccd8e1610d29508e9e0bb7bc7c5" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>GetLinkingInterface</name></member>
       <member refid="classvrv_1_1_control_element_1aeb6ccac7f45774c4f7bb78f3b878eafd" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>GetLinkingInterface</name></member>
@@ -1146,13 +1191,14 @@
       <member refid="classvrv_1_1_object_1ad3b827c4f53d81386c192ce462f09b3e" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetPrevious</name></member>
       <member refid="classvrv_1_1_plist_interface_1acb4801411e03aa0fba1b2839830fc666" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetRefs</name></member>
       <member refid="classvrv_1_1_plist_interface_1a3c745f83ef65b92da34a0579d02cad23" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetRefs</name></member>
-      <member refid="classvrv_1_1_object_1a3d26e4876ee5a38e4c01fae4af747c23" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>GetRelativeLayerElement</name></member>
+      <member refid="classvrv_1_1_object_1a507b026d60921d1d418f3054b3bb68da" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>GetRelativeLayerElement</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2fe9d4e0cef41c270fe6683e5fbd8223" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetRightBy</name></member>
       <member refid="classvrv_1_1_linking_interface_1ab531ee1a9df9e2edc5413a967fbce53f" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetSameasLink</name></member>
       <member refid="classvrv_1_1_linking_interface_1a16e98894fa7294f7d2032466dde3c2ce" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetSameasLink</name></member>
       <member refid="classvrv_1_1_object_1a36ae3be40fa20c6255a6003e5d56133f" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>GetScoreDefInterface</name></member>
       <member refid="classvrv_1_1_object_1af26b539ef3e271bc568bebff37c01a33" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>GetScoreDefInterface</name></member>
-      <member refid="classvrv_1_1_beam_span_1afbbe35e40ed9ed6d4c4727881034572e" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetSegmentForSystem</name></member>
+      <member refid="classvrv_1_1_beam_span_1ac0968b6a6cb8217e95ffb87e3dcb52eb" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetSegmentForSystem</name></member>
+      <member refid="classvrv_1_1_beam_span_1a6b36d0cc5075fde046789643a3ace068" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetSegmentForSystem</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7e55bc05f8dc9b3ff7768fe48c791d83" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetSelfBottom</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2fb7e4b83e390c3cd436e3a73ddfa269" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetSelfLeft</name></member>
       <member refid="classvrv_1_1_bounding_box_1aaae2c8d3d80e7203585052862288f2d5" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetSelfRight</name></member>
@@ -1176,7 +1222,6 @@
       <member refid="classvrv_1_1_bounding_box_1a9dae1c4940695c403ba67841512f94f3" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetTopBy</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1adaec7fb532d7ee8f2d8b5f06e7eb79aa" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetTotalBeamWidth</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a27a48797d818dd92d3f7ff82f0678a17" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetTstampStaves</name></member>
-      <member refid="classvrv_1_1_object_1a7bcc3062c90aa6f927f8c51f180b585b" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetUuid</name></member>
       <member refid="classvrv_1_1_bounding_box_1a6f1d1de5ac01ce1fe4cf43ed16b47e11" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetX1By</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3a9666c33d5a4a7d01f4b159c128d6c5" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetX2By</name></member>
       <member refid="classvrv_1_1_bounding_box_1ad906e8632b28b1be81fa374ad2b5292e" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>GetY1By</name></member>
@@ -1204,8 +1249,8 @@
       <member refid="classvrv_1_1_time_point_interface_1a32c10ebc5af582117f680bbf37878ba2" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>HasStart</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a72115fec5c8b177f926e2b5dc1f4bb01" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>HasStartAndEnd</name></member>
       <member refid="classvrv_1_1_bounding_box_1aee28c8f38335a02d395f132eac3174a2" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>HorizontalContentOverlap</name></member>
-      <member refid="classvrv_1_1_bounding_box_1a505bfcdcaff3d551fdbd3a74ed3375f0" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>HorizontalLeftOverlap</name></member>
-      <member refid="classvrv_1_1_bounding_box_1ac4af18c7aeda842527a70954b409f54b" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>HorizontalRightOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a0fdfa000c449d4c9b1de755dd1efff55" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>HorizontalLeftOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a7265ddc2845db5bc543200b037048a2e" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>HorizontalRightOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1a363e14e29dcb72d6539a832921c538f9" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>HorizontalSelfOverlap</name></member>
       <member refid="classvrv_1_1_beam_span_1a13c01b5ae8d057afb4be0513a5afecf6" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>InitBeamSegments</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1a2c3f488b0a0f80f4954127de67e6ee72" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>InitCoords</name></member>
@@ -1234,8 +1279,8 @@
       <member refid="classvrv_1_1_linking_interface_1a844644245db209bd156e09b4a22e2726" prot="public" virt="virtual" ambiguityscope="vrv::"><scope>vrv::BeamSpan</scope><name>InterfaceResetData</name></member>
       <member refid="classvrv_1_1_plist_interface_1afedff354179b993e785609793c036b8c" prot="public" virt="virtual" ambiguityscope="vrv::PlistInterface::"><scope>vrv::BeamSpan</scope><name>InterfaceResetData</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1aa51c9f9de1cb4a42194fd085fced59c7" prot="public" virt="virtual" ambiguityscope="vrv::TimeSpanningInterface::"><scope>vrv::BeamSpan</scope><name>InterfaceResetData</name></member>
-      <member refid="classvrv_1_1_bounding_box_1aa2283d42759c18ce84fe53f2e1684849" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>Intersects</name></member>
-      <member refid="classvrv_1_1_bounding_box_1ae73507464b47d2ccadbbf2a8231c643e" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>Intersects</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a29d29a9aaa350b53bcf58dc32978b7f8" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>Intersects</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a89d4ebda89785d624cb43d1c45dbbbb2" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>Intersects</name></member>
       <member refid="classvrv_1_1_bounding_box_1af366b55a8e449a12d689acd9d35ae782" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>Is</name></member>
       <member refid="classvrv_1_1_bounding_box_1aaeb23e9d3064f863ef3857efef570a8f" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>Is</name></member>
       <member refid="classvrv_1_1_object_1af8ee73eca8e0a08ae535318c4462fad1" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>IsAttribute</name></member>
@@ -1273,13 +1318,13 @@
       <member refid="classvrv_1_1_object_1af644f5ed4600bb29ca03ded3f95b3467" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>JustifyX</name></member>
       <member refid="classvrv_1_1_object_1afc5a347cc3aa0a158036cdabc32157da" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>JustifyY</name></member>
       <member refid="classvrv_1_1_object_1ab65875db006b1e1207a8ee70de7095b2" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>JustifyYAdjustCrossStaff</name></member>
-      <member refid="classvrv_1_1_object_1a9af0cce7b5db85a68ed87c274176aa66" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>LayerCountInTimeSpan</name></member>
-      <member refid="classvrv_1_1_object_1add866a8144bcb528808a3e9d6a8f9d45" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>LayerElementsInTimeSpan</name></member>
+      <member refid="classvrv_1_1_object_1afb1e47b8ed7258fa48fe60ac89258841" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>LayerCountInTimeSpan</name></member>
+      <member refid="classvrv_1_1_object_1a5715df1798b7140cee929ec32c8f30a3" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>LayerElementsInTimeSpan</name></member>
       <member refid="classvrv_1_1_linking_interface_1ab0344fae147aef801bfca24e6dd1f016" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>LinkingInterface</name></member>
       <member refid="classvrv_1_1_beam_span_1a3a5d031737b706b249aa14cdf8c1bc95" prot="private" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>m_beamedElements</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1a8cea0232f11aa62bc020f19757dd526c" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>m_beamElementCoords</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1a128e11484993f199540e117545e49716" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>m_beamHasChord</name></member>
-      <member refid="classvrv_1_1_beam_span_1a2053121282e970662e8ebc6015af9553" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>m_beamSegments</name></member>
+      <member refid="classvrv_1_1_beam_span_1a2053121282e970662e8ebc6015af9553" prot="private" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>m_beamSegments</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1ad23fa5f2cc106630f3efd54db40f8f5d" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>m_beamStaff</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1a7a0799a72030f287c5a744187d925f13" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>m_beamWidth</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1acf38f791d7a096f56495dfe6e5a04b18" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>m_beamWidthBlack</name></member>
@@ -1297,9 +1342,7 @@
       <member refid="classvrv_1_1_beam_drawing_interface_1a2f05babb11c16401012d41d811bec77d" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>m_notesStemDir</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1a1c2a86d493efd23de86b5473dffd1d58" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>m_shortestDur</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a0acc50cd71a220b0142a0ec22377c88a" prot="protected" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>m_start</name></member>
-      <member refid="classvrv_1_1_time_point_interface_1a47eee38f4a8b1420cf041e74b171d7a9" prot="protected" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>m_startUuid</name></member>
-      <member refid="classvrv_1_1_beam_drawing_interface_1afa46fe4952aa3b0dae44c4c38e79e744" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>m_stemXAbove</name></member>
-      <member refid="classvrv_1_1_beam_drawing_interface_1aa9c704f00a29480d6510cb792c350911" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>m_stemXBelow</name></member>
+      <member refid="classvrv_1_1_time_point_interface_1ac504cb97f324c80f11378f21b9870e38" prot="protected" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>m_startID</name></member>
       <member refid="classvrv_1_1_object_1a74ae0995caefb72a71445ba43fce0652" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>m_unsupported</name></member>
       <member refid="classvrv_1_1_object_1a30996d1e8460f2110900b490425c16ec" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>Modify</name></member>
       <member refid="classvrv_1_1_object_1aa846e8099e10d6cf427e8255e4a62dd4" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>MoveChildrenFrom</name></member>
@@ -1363,13 +1406,13 @@
       <member refid="classvrv_1_1_object_1ac5b28a8625980d057d6cad83dbd52e26" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ResetCachedDrawingY</name></member>
       <member refid="classvrv_1_1_control_element_1ac6c234c1060330df08eee2ce4d7626da" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ResetData</name></member>
       <member refid="classvrv_1_1_beam_span_1a908f6fced35e8798d9b229d8fe08f5e3" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ResetHorizontalAlignment</name></member>
+      <member refid="classvrv_1_1_object_1a6a40859719b200dae8d65ee9d597bccd" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>ResetID</name></member>
       <member refid="classvrv_1_1_object_list_interface_1ad840a3d0c9fa550f980534426eb9b076" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>ResetList</name></member>
       <member refid="classvrv_1_1_object_1a5d22ebda01e0b254c13d558f5ffdb098" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>ResetParent</name></member>
-      <member refid="classvrv_1_1_object_1aadeb99ea27241a64bf942e469a04445e" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>ResetUuid</name></member>
       <member refid="classvrv_1_1_floating_object_1a9a9271ae963c1406e733365a4ac860d8" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ResetVerticalAlignment</name></member>
-      <member refid="classvrv_1_1_object_1a74097c855ed070b02fd06810207d0ac0" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>Save</name></member>
       <member refid="classvrv_1_1_object_1a8ec6663670b4b6522cb4892babf36742" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>Save</name></member>
       <member refid="classvrv_1_1_object_1ad628dce30da1167aa84313ea7a4f5612" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>SaveEnd</name></member>
+      <member refid="classvrv_1_1_object_1a109c1a6b01e78fb7978caa0577b5df6f" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SaveObject</name></member>
       <member refid="classvrv_1_1_object_1ac45facd18e6a4ac0b8ea7483e228aa0f" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ScoreDefOptimize</name></member>
       <member refid="classvrv_1_1_object_1a286c8a894a3743271f63924da2f610e7" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ScoreDefOptimizeEnd</name></member>
       <member refid="classvrv_1_1_object_1a0b4cf8509ee8d9876d163b309e7da1a1" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ScoreDefSetCurrent</name></member>
@@ -1377,7 +1420,7 @@
       <member refid="classvrv_1_1_object_1a87d360889455b91b9979b6866d499767" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ScoreDefSetCurrentPageEnd</name></member>
       <member refid="classvrv_1_1_object_1a71c3367e232d634a71c2d346dfd9f3d1" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ScoreDefSetGrpSym</name></member>
       <member refid="classvrv_1_1_object_1ac063e5c113b30453f094ba3589a534ca" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>ScoreDefUnsetCurrent</name></member>
-      <member refid="classvrv_1_1_object_1a8c269609416ebdb3b948df8aac3134e1" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SeedUuid</name></member>
+      <member refid="classvrv_1_1_object_1a9aad68e2f4f0edf8bf413a2a5f727f1b" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SeedID</name></member>
       <member refid="classvrv_1_1_object_1a9bc335e3bc5405f5dbaae757b5629996" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SetAsReferenceObject</name></member>
       <member refid="classvrv_1_1_bounding_box_1abc4feb5675ff672b2e3a94b4a65403b5" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SetBoundingBoxGlyph</name></member>
       <member refid="classvrv_1_1_object_1a3a95154b135f78a323dafdfec2a76e2d" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>SetCautionaryScoreDef</name></member>
@@ -1388,6 +1431,10 @@
       <member refid="classvrv_1_1_floating_object_1abb3c371794922b14e5a0265a0bd27bba" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SetDrawingGrpObject</name></member>
       <member refid="classvrv_1_1_bounding_box_1ade8f7ad2283b156a2c7934c4055bd8bf" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SetEmptyBB</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a2c3289cd6592a1ea9280b21e41382576" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SetEnd</name></member>
+      <member refid="classvrv_1_1_object_1aa34da3a7092c0b6753c91459b52648b9" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SetID</name></member>
+      <member refid="classvrv_1_1_linking_interface_1a26bd7ff2e4a7048c03aeb56bb8f598d8" prot="protected" virt="non-virtual" ambiguityscope="vrv::"><scope>vrv::BeamSpan</scope><name>SetIDStr</name></member>
+      <member refid="classvrv_1_1_time_spanning_interface_1a065e23ac386fa542f2f94cd3d42ddaec" prot="public" virt="non-virtual" ambiguityscope="vrv::TimeSpanningInterface::"><scope>vrv::BeamSpan</scope><name>SetIDStr</name></member>
+      <member refid="classvrv_1_1_plist_interface_1af991caffd615b96f9cd74f9b662570cc" prot="protected" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SetIDStrs</name></member>
       <member refid="classvrv_1_1_floating_object_1a367d3e3b4bfa50bae3e6a59f863199b3" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SetMaxDrawingYRel</name></member>
       <member refid="classvrv_1_1_linking_interface_1aa954c8b863b3372c10ec07e7c8a48087" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SetNextLink</name></member>
       <member refid="classvrv_1_1_object_1a9f30aa6a8185b260943003a08980d376" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SetParent</name></member>
@@ -1397,18 +1444,12 @@
       <member refid="classvrv_1_1_time_point_interface_1a657ad24cb9280451b4a5f2b914be0644" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SetStart</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a26f9c358bc5081656fde4774506a0293" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SetStartAndEnd</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a4c3a7f2c3fd21358c4c25dbae8443f4a" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SetStartOnly</name></member>
-      <member refid="classvrv_1_1_object_1a190abc310da990f676c931d272bbb434" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SetUuid</name></member>
-      <member refid="classvrv_1_1_linking_interface_1a0ba4b3ed3ba51bdff6f8ef3305aa1f9b" prot="protected" virt="non-virtual" ambiguityscope="vrv::"><scope>vrv::BeamSpan</scope><name>SetUuidStr</name></member>
-      <member refid="classvrv_1_1_time_spanning_interface_1a494562ad8f3d38e0b358a9cdcfd5c93f" prot="public" virt="non-virtual" ambiguityscope="vrv::TimeSpanningInterface::"><scope>vrv::BeamSpan</scope><name>SetUuidStr</name></member>
-      <member refid="classvrv_1_1_plist_interface_1a38c6c2162becabf7f6f061de2c2c7b62" prot="protected" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SetUuidStrs</name></member>
       <member refid="classvrv_1_1_bounding_box_1ab4d1764142c6881678dbfcaee124e38f" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SolveCubicPolynomial</name></member>
       <member refid="classvrv_1_1_object_1a6c529b9574392b6c2baeaf8470e2a989" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>sortByUlx</name></member>
       <member refid="classvrv_1_1_object_1aa8caf0942b1ff1c02f6f8e879397ca21" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SortChildren</name></member>
       <member refid="classvrv_1_1_beam_span_1acdfbfa734609995c2a4041fc2f34bfbc" prot="private" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SpanIndexVector</name></member>
       <member refid="classvrv_1_1_object_1ac97807a0dabfdf0d1d483f7f3e9427f9" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>StableSort</name></member>
-      <member refid="classvrv_1_1_bounding_box_1a6a5b0a558c2799d3216a62a352eec938" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>Swap</name></member>
-      <member refid="classvrv_1_1_bounding_box_1a316a3efda8b19590914f3c4e736d2323" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SwapPoints</name></member>
-      <member refid="classvrv_1_1_object_1af4f98c391b356cf51597e4777bf31185" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SwapUuid</name></member>
+      <member refid="classvrv_1_1_object_1a3c91cd86fa79d2b64ae677f2b2a64e9d" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>SwapID</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a470841fa6a90f560e791882bd0d7ff3d" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>TimePointInterface</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1ac94e8747e0ea08969523467586f59717" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>TimeSpanningInterface</name></member>
       <member refid="classvrv_1_1_object_1a0ee02f42628df9898a57349899c1ba3e" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>Transpose</name></member>
@@ -1419,10 +1460,10 @@
       <member refid="classvrv_1_1_floating_object_1a29ef524752d056b1f60cab88e77a32ee" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>UpdateSelfBBoxX</name></member>
       <member refid="classvrv_1_1_floating_object_1a1868c149ca8ff416b6275e1637eaa626" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>UpdateSelfBBoxY</name></member>
       <member refid="classvrv_1_1_time_point_interface_1ae039ba772895c597f23b01cc8f0105ab" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>VerifyMeasure</name></member>
-      <member refid="classvrv_1_1_bounding_box_1aa10dbbf04b3707900490d1ced0ea0418" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>VerticalBottomOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1aeff55f50ac7cae031dfa289d422b77c0" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>VerticalBottomOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1acdb36f4007fc88d79a81eed3b440c536" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>VerticalContentOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1ab9bbe1447c1e512c9154825086f34aef" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>VerticalSelfOverlap</name></member>
-      <member refid="classvrv_1_1_bounding_box_1a85b3cd46765c07b3d16ed7933feaddff" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>VerticalTopOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1aa4dda490e649a5c4817ef99853e0a3da" prot="public" virt="non-virtual"><scope>vrv::BeamSpan</scope><name>VerticalTopOverlap</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1af4984f690e63ca428e230eb258ea0729" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>~BeamDrawingInterface</name></member>
       <member refid="classvrv_1_1_beam_span_1a90fb9935bc624b4e65313413d98b1abc" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>~BeamSpan</name></member>
       <member refid="classvrv_1_1_bounding_box_1a9f87f4407c2c8d88ab5e4eacfe1ac1f0" prot="public" virt="virtual"><scope>vrv::BeamSpan</scope><name>~BoundingBox</name></member>

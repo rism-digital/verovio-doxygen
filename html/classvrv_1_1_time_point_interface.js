@@ -15,10 +15,10 @@ var classvrv_1_1_time_point_interface =
     [ "IsInterface", "classvrv_1_1_time_point_interface.html#a48095974fd4c595c478be793c0d9a5aa", null ],
     [ "IsOnStaff", "classvrv_1_1_time_point_interface.html#aedd9182fd1cd2cc1bcfdf5b9de955ab7", null ],
     [ "Reset", "classvrv_1_1_time_point_interface.html#aa1c20e4df6aa79d7f30ea46b73b902bc", null ],
+    [ "SetIDStr", "classvrv_1_1_time_point_interface.html#a9f18f4208c3ffecce88778d4a391e81a", null ],
     [ "SetStart", "classvrv_1_1_time_point_interface.html#a657ad24cb9280451b4a5f2b914be0644", null ],
     [ "SetStartOnly", "classvrv_1_1_time_point_interface.html#a4c3a7f2c3fd21358c4c25dbae8443f4a", null ],
-    [ "SetUuidStr", "classvrv_1_1_time_point_interface.html#acf47474d192a6a9c14732c4055605a6d", null ],
     [ "VerifyMeasure", "classvrv_1_1_time_point_interface.html#ae039ba772895c597f23b01cc8f0105ab", null ],
     [ "m_start", "classvrv_1_1_time_point_interface.html#a0acc50cd71a220b0142a0ec22377c88a", null ],
-    [ "m_startUuid", "classvrv_1_1_time_point_interface.html#a47eee38f4a8b1420cf041e74b171d7a9", null ]
+    [ "m_startID", "classvrv_1_1_time_point_interface.html#ac504cb97f324c80f11378f21b9870e38", null ]
 ];

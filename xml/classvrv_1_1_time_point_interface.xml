@@ -176,11 +176,11 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" line="130" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/timeinterface.h" bodystart="130" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_time_point_interface_1a47eee38f4a8b1420cf041e74b171d7a9" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classvrv_1_1_time_point_interface_1ac504cb97f324c80f11378f21b9870e38" prot="protected" static="no" mutable="no">
         <type>std::string</type>
-        <definition>std::string vrv::TimePointInterface::m_startUuid</definition>
+        <definition>std::string vrv::TimePointInterface::m_startID</definition>
         <argsstring></argsstring>
-        <name>m_startUuid</name>
+        <name>m_startID</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -371,11 +371,11 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
-      <memberdef kind="function" id="classvrv_1_1_time_point_interface_1acf47474d192a6a9c14732c4055605a6d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_time_point_interface_1a9f18f4208c3ffecce88778d4a391e81a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void vrv::TimePointInterface::SetUuidStr</definition>
+        <definition>void vrv::TimePointInterface::SetIDStr</definition>
         <argsstring>()</argsstring>
-        <name>SetUuidStr</name>
+        <name>SetIDStr</name>
         <briefdescription>
 <para>Extract the fragment of the start or end @xml:id if given. </para>
         </briefdescription>
@@ -609,7 +609,7 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <childnode refid="22" relation="usage">
           <edgelabel>m_crossStaff</edgelabel>
         </childnode>
-        <childnode refid="45" relation="usage">
+        <childnode refid="46" relation="usage">
           <edgelabel>m_graceAlignment</edgelabel>
           <edgelabel>m_alignment</edgelabel>
         </childnode>
@@ -622,7 +622,7 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <childnode refid="12" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="33">
+      <node id="34">
         <label>AttMultinumMeasures</label>
       </node>
       <node id="1">
@@ -653,7 +653,7 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
       <node id="25">
         <label>AttCourseLog</label>
       </node>
-      <node id="36">
+      <node id="37">
         <label>AttSystems</label>
       </node>
       <node id="22">
@@ -678,7 +678,10 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
           <edgelabel>m_drawingStaffDef</edgelabel>
         </childnode>
       </node>
-      <node id="38">
+      <node id="29">
+        <label>AttBarring</label>
+      </node>
+      <node id="39">
         <label>AttDistances</label>
       </node>
       <node id="15">
@@ -709,6 +712,8 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         </childnode>
         <childnode refid="36" relation="public-inheritance">
         </childnode>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="4">
         <label>AttStartId</label>
@@ -717,13 +722,13 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="32">
+      <node id="33">
         <label>AttMidiTempo</label>
       </node>
       <node id="21">
         <label>AttVisibility</label>
       </node>
-      <node id="42">
+      <node id="43">
         <label>AttStaffDefVis</label>
       </node>
       <node id="20">
@@ -747,7 +752,7 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <childnode refid="21" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="35">
+      <node id="36">
         <label>AttSpacing</label>
       </node>
       <node id="9">
@@ -758,7 +763,7 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="39">
+      <node id="40">
         <label>AttNotationType</label>
       </node>
       <node id="13">
@@ -779,7 +784,7 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <childnode refid="25" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="37">
+      <node id="38">
         <label>vrv::StaffDefDrawingInterface</label>
         <link refid="classvrv_1_1_staff_def_drawing_interface"/>
       </node>
@@ -788,15 +793,13 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <link refid="classvrv_1_1_staff_def"/>
         <childnode refid="27" relation="public-inheritance">
         </childnode>
-        <childnode refid="37" relation="public-inheritance">
-        </childnode>
         <childnode refid="38" relation="public-inheritance">
+        </childnode>
+        <childnode refid="39" relation="public-inheritance">
         </childnode>
         <childnode refid="14" relation="public-inheritance">
         </childnode>
         <childnode refid="20" relation="public-inheritance">
-        </childnode>
-        <childnode refid="39" relation="public-inheritance">
         </childnode>
         <childnode refid="40" relation="public-inheritance">
         </childnode>
@@ -808,6 +811,8 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         </childnode>
         <childnode refid="44" relation="public-inheritance">
         </childnode>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="5">
         <label>AttTimestampLogical</label>
@@ -815,31 +820,31 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
       <node id="12">
         <label>AttLinking</label>
       </node>
-      <node id="30">
+      <node id="31">
         <label>AttLyricStyle</label>
       </node>
       <node id="10">
         <label>AttFacsimile</label>
       </node>
-      <node id="44">
+      <node id="45">
         <label>AttTransposition</label>
       </node>
-      <node id="29">
+      <node id="30">
         <label>AttDurationDefault</label>
       </node>
       <node id="19">
         <label>AttCue</label>
       </node>
-      <node id="45">
+      <node id="46">
         <label>vrv::Alignment</label>
         <link refid="classvrv_1_1_alignment"/>
         <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="34">
+      <node id="35">
         <label>AttPianoPedals</label>
       </node>
-      <node id="41">
+      <node id="42">
         <label>AttStaffDefLog</label>
       </node>
       <node id="3">
@@ -851,17 +856,17 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
         <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="31">
+      <node id="32">
         <label>AttMeasureNumbers</label>
       </node>
-      <node id="40">
+      <node id="41">
         <label>AttScalable</label>
       </node>
       <node id="18">
         <label>vrv::ObjectListInterface</label>
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
-      <node id="43">
+      <node id="44">
         <label>AttTimeBase</label>
       </node>
       <node id="14">
@@ -885,12 +890,12 @@ Looks that the parent staff if the using @stardid or at the @staff values. </par
       <member refid="classvrv_1_1_time_point_interface_1a48095974fd4c595c478be793c0d9a5aa" prot="public" virt="virtual"><scope>vrv::TimePointInterface</scope><name>IsInterface</name></member>
       <member refid="classvrv_1_1_time_point_interface_1aedd9182fd1cd2cc1bcfdf5b9de955ab7" prot="public" virt="non-virtual"><scope>vrv::TimePointInterface</scope><name>IsOnStaff</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a0acc50cd71a220b0142a0ec22377c88a" prot="protected" virt="non-virtual"><scope>vrv::TimePointInterface</scope><name>m_start</name></member>
-      <member refid="classvrv_1_1_time_point_interface_1a47eee38f4a8b1420cf041e74b171d7a9" prot="protected" virt="non-virtual"><scope>vrv::TimePointInterface</scope><name>m_startUuid</name></member>
+      <member refid="classvrv_1_1_time_point_interface_1ac504cb97f324c80f11378f21b9870e38" prot="protected" virt="non-virtual"><scope>vrv::TimePointInterface</scope><name>m_startID</name></member>
       <member refid="classvrv_1_1_interface_1a57c9a4f18b81a07ef0d14dc040f84257" prot="public" virt="non-virtual"><scope>vrv::TimePointInterface</scope><name>RegisterInterfaceAttClass</name></member>
       <member refid="classvrv_1_1_time_point_interface_1aa1c20e4df6aa79d7f30ea46b73b902bc" prot="public" virt="virtual"><scope>vrv::TimePointInterface</scope><name>Reset</name></member>
+      <member refid="classvrv_1_1_time_point_interface_1a9f18f4208c3ffecce88778d4a391e81a" prot="protected" virt="non-virtual"><scope>vrv::TimePointInterface</scope><name>SetIDStr</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a657ad24cb9280451b4a5f2b914be0644" prot="public" virt="non-virtual"><scope>vrv::TimePointInterface</scope><name>SetStart</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a4c3a7f2c3fd21358c4c25dbae8443f4a" prot="public" virt="non-virtual"><scope>vrv::TimePointInterface</scope><name>SetStartOnly</name></member>
-      <member refid="classvrv_1_1_time_point_interface_1acf47474d192a6a9c14732c4055605a6d" prot="protected" virt="non-virtual"><scope>vrv::TimePointInterface</scope><name>SetUuidStr</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a470841fa6a90f560e791882bd0d7ff3d" prot="public" virt="non-virtual"><scope>vrv::TimePointInterface</scope><name>TimePointInterface</name></member>
       <member refid="classvrv_1_1_time_point_interface_1ae039ba772895c597f23b01cc8f0105ab" prot="public" virt="non-virtual"><scope>vrv::TimePointInterface</scope><name>VerifyMeasure</name></member>
       <member refid="classvrv_1_1_interface_1a1fbabd3b506190dc2f1b4584a49a85ea" prot="public" virt="virtual"><scope>vrv::TimePointInterface</scope><name>~Interface</name></member>

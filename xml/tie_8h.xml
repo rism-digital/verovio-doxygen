@@ -20,7 +20,7 @@
       <node id="14">
         <label>stdarg.h</label>
       </node>
-      <node id="22">
+      <node id="21">
         <label>functional</label>
       </node>
       <node id="32">
@@ -31,7 +31,7 @@
         <childnode refid="25" relation="include">
         </childnode>
       </node>
-      <node id="23">
+      <node id="22">
         <label>iterator</label>
       </node>
       <node id="10">
@@ -86,6 +86,9 @@
       <node id="3">
         <label>atts_shared.h</label>
       </node>
+      <node id="23">
+        <label>random</label>
+      </node>
       <node id="31">
         <label>linkinginterface.h</label>
         <link refid="linkinginterface_8h_source"/>
@@ -96,9 +99,6 @@
       </node>
       <node id="29">
         <label>tuple</label>
-      </node>
-      <node id="21">
-        <label>ctime</label>
       </node>
       <node id="8">
         <label>vector</label>
@@ -127,9 +127,9 @@
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
         <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
@@ -194,7 +194,7 @@
         <link refid="vrvdef_8h_source"/>
         <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="27" relation="include">
         </childnode>
@@ -283,43 +283,45 @@
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vrv_cast&lt;const<sp/>TimeSpanningInterface<sp/>*&gt;(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CalculatePosition(Doc<sp/>*doc,<sp/>Staff<sp/>*staff,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spanningType,<sp/>Point<sp/>bezier[4]);</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_tie_1ac4744ba3209d0faea4c9eea00b21b384" kindref="member">CalculateAdjacentChordXOffset</ref>(Doc<sp/>*doc,<sp/>Staff<sp/>*staff,<sp/>Chord<sp/>*parentChord,<sp/>Note<sp/>*note,</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curvature_CURVEDIR<sp/>drawingCurveDir,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>initialX,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isStartPoint);</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_tie_1a040480601ebeb4604fc94facf8372277" kindref="member">InitTimemapTies</ref>(FunctorParams<sp/>*functorParams)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>tie<sp/>positioning<sp/>based<sp/>overlaps<sp/>with<sp/>accidentals<sp/>in<sp/>cases<sp/>with<sp/>enharmonic<sp/>ties</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>AdjustEnharmonicTies(Doc<sp/>*doc,<sp/>FloatingCurvePositioner<sp/>*curve,<sp/>Point<sp/>bezier[4],<sp/>Note<sp/>*startNote,<sp/>Note<sp/>*endNote,</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curvature_CURVEDIR<sp/>drawingCurveDir);</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>initial<sp/>position<sp/>X<sp/>position<sp/>and<sp/>return<sp/>stem<sp/>direction<sp/>of<sp/>the<sp/>startNote</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CalculateXPosition(Doc<sp/>*doc,<sp/>Staff<sp/>*staff,<sp/>Chord<sp/>*startParentChord,<sp/>Chord<sp/>*endParentChord,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spanningType,</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isOuterChordNote,<sp/>Point<sp/>&amp;startPoint,<sp/>Point<sp/>&amp;endPoint,<sp/>curvature_CURVEDIR<sp/>drawingCurveDir);</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Helper<sp/>function<sp/>to<sp/>get<sp/>preferred<sp/>curve<sp/>direction<sp/>based<sp/>on<sp/>the<sp/>number<sp/>of<sp/>conditions<sp/>(like<sp/>note<sp/>direction,<sp/>position</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>on<sp/>the<sp/>staff,<sp/>etc.)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>curvature_CURVEDIR<sp/>GetPreferredCurveDirection(</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Layer<sp/>*layer,<sp/>Note<sp/>*note,<sp/>Chord<sp/>*startParentChord,<sp/>data_STEMDIRECTION<sp/>noteStemDir,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isAboveStaffCenter);</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>tie<sp/>positioning<sp/>based<sp/>on<sp/>the<sp/>overlaps<sp/>with<sp/>possible<sp/>layerElements<sp/>such<sp/>as<sp/>dots/flags</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateTiePositioning(FloatingCurvePositioner<sp/>*curve,<sp/>Point<sp/>bezier[4],<sp/>LayerElement<sp/>*durElement,</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Note<sp/>*startNote,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/>curvature_CURVEDIR<sp/>drawingCurveDir);</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="103"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CalculatePosition(</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Doc<sp/>*doc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Staff<sp/>*staff,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spanningType,<sp/>Point<sp/>bezier[4]);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_tie_1aee480e43d8666849185cc70819bb4499" kindref="member">CalculateAdjacentChordXOffset</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Doc<sp/>*doc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Staff<sp/>*staff,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Chord<sp/>*parentChord,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Note<sp/>*note,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curvature_CURVEDIR<sp/>drawingCurveDir,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>initialX,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isStartPoint)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_tie_1a040480601ebeb4604fc94facf8372277" kindref="member">InitTimemapTies</ref>(FunctorParams<sp/>*functorParams)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>tie<sp/>positioning<sp/>based<sp/>overlaps<sp/>with<sp/>accidentals<sp/>in<sp/>cases<sp/>with<sp/>enharmonic<sp/>ties</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>AdjustEnharmonicTies(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Doc<sp/>*doc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FloatingCurvePositioner<sp/>*curve,<sp/>Point<sp/>bezier[4],</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Note<sp/>*startNote,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Note<sp/>*endNote,<sp/>curvature_CURVEDIR<sp/>drawingCurveDir)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>initial<sp/>position<sp/>X<sp/>position<sp/>and<sp/>return<sp/>stem<sp/>direction<sp/>of<sp/>the<sp/>startNote</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CalculateXPosition(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Doc<sp/>*doc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Staff<sp/>*staff,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Chord<sp/>*startParentChord,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Chord<sp/>*endParentChord,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spanningType,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isOuterChordNote,<sp/>Point<sp/>&amp;startPoint,<sp/>Point<sp/>&amp;endPoint,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curvature_CURVEDIR<sp/>drawingCurveDir)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Helper<sp/>function<sp/>to<sp/>get<sp/>preferred<sp/>curve<sp/>direction<sp/>based<sp/>on<sp/>the<sp/>number<sp/>of<sp/>conditions<sp/>(like<sp/>note<sp/>direction,<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>on<sp/>the<sp/>staff,<sp/>etc.)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>curvature_CURVEDIR<sp/>GetPreferredCurveDirection(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Layer<sp/>*layer,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Note<sp/>*note,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Chord<sp/>*startParentChord,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data_STEMDIRECTION<sp/>noteStemDir,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isAboveStaffCenter)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>tie<sp/>positioning<sp/>based<sp/>on<sp/>the<sp/>overlaps<sp/>with<sp/>possible<sp/>layerElements<sp/>such<sp/>as<sp/>dots/flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateTiePositioning(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FloatingCurvePositioner<sp/>*curve,<sp/>Point<sp/>bezier[4],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LayerElement<sp/>*durElement,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Note<sp/>*startNote,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/>curvature_CURVEDIR<sp/>drawingCurveDir)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/tie.h"/>
   </compounddef>

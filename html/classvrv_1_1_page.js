@@ -16,7 +16,6 @@ var classvrv_1_1_page =
     [ "GetHeader", "classvrv_1_1_page.html#aa31da89dc249435aaa4cee662aa68361", null ],
     [ "GetPageIdx", "classvrv_1_1_page.html#ac2c454a5c9a14e6a8f24debe2b438dd1", null ],
     [ "GetPPUFactor", "classvrv_1_1_page.html#a8490304e26cdf6b0ab0b9bf342d956be", null ],
-    [ "GetStaffPosOnPage", "classvrv_1_1_page.html#a8d0b481d1f2ee288d54cea70b2f18570", null ],
     [ "GetSystemCount", "classvrv_1_1_page.html#ad61c7e4e46e6c81a2da83f9737aa08e5", null ],
     [ "IsFirstOfSelection", "classvrv_1_1_page.html#af0dfbf8e757e682983cffcfb6594644d", null ],
     [ "IsLastOfSelection", "classvrv_1_1_page.html#a175f527d428106897c13fe43176bfc8c", null ],
