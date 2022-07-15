@@ -106,6 +106,7 @@ var classvrv_1_1_options =
     [ "m_minLastJustification", "classvrv_1_1_options.html#af64ac4b535712ec5fca92a9086a4437f", null ],
     [ "m_mmOutput", "classvrv_1_1_options.html#af6b86f9f5c11eb1ce187ce7b90143c3f", null ],
     [ "m_mnumInterval", "classvrv_1_1_options.html#a7d7b0ae2657f39ef6819ed7ec23ce721", null ],
+    [ "m_moveScoreDefinitionToStaff", "classvrv_1_1_options.html#aa59aade30d6aba8f4ee6c4a6bf40cba4", null ],
     [ "m_multiRestStyle", "classvrv_1_1_options.html#a3256d1a305bd5936d4fe47843552e4bb", null ],
     [ "m_multiRestThickness", "classvrv_1_1_options.html#a5ded106a1115fde217014cbf2826a0e9", null ],
     [ "m_noJustification", "classvrv_1_1_options.html#a69dd05fc3c0518b6397c408802493b2c", null ],

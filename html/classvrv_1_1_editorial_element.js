@@ -13,5 +13,7 @@ var classvrv_1_1_editorial_element =
     [ "PrepareMilestones", "classvrv_1_1_editorial_element.html#a6aa989d9b3b91548795c3748c1be6888", null ],
     [ "Reset", "classvrv_1_1_editorial_element.html#a7ef9e3e924fb5881ae60a67956eeb497", null ],
     [ "ResetData", "classvrv_1_1_editorial_element.html#ad742d982c89593e46b7cd02dbec902c5", null ],
+    [ "Save", "classvrv_1_1_editorial_element.html#ade8575de019fe9aaa19006d2e798dbfc", null ],
+    [ "SaveEnd", "classvrv_1_1_editorial_element.html#ae792d4bb04a6fd54135210d75e31fc3d", null ],
     [ "m_visibility", "classvrv_1_1_editorial_element.html#aeac215256d1fb1a8bb10a813be1c0eea", null ]
 ];

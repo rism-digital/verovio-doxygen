@@ -4,6 +4,8 @@ var classvrv_1_1_score_def_element =
     [ "ScoreDefElement", "classvrv_1_1_score_def_element.html#ab55bea4f5777547ab4ab5df958549f53", null ],
     [ "ScoreDefElement", "classvrv_1_1_score_def_element.html#ae1196d9264a4c7ca2fe02d6946b49fb7", null ],
     [ "~ScoreDefElement", "classvrv_1_1_score_def_element.html#ae0fc9475af23e50d5128282fa8482a1c", null ],
+    [ "ConvertMarkupScoreDef", "classvrv_1_1_score_def_element.html#a798d8dee431ff642d2b2f68d7ac398b4", null ],
+    [ "ConvertMarkupScoreDefEnd", "classvrv_1_1_score_def_element.html#addf10f3d1abf4c1e10063accf0878929", null ],
     [ "GetClef", "classvrv_1_1_score_def_element.html#a41141901b422120df5b8516822c7bdb2", null ],
     [ "GetClef", "classvrv_1_1_score_def_element.html#ae34d1d7484e6f0a48bc49c45446397e0", null ],
     [ "GetClefCopy", "classvrv_1_1_score_def_element.html#ada57a8a22a807014e03c836aec7ed47a", null ],

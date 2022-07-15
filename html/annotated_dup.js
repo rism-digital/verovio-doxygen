@@ -89,6 +89,7 @@ var annotated_dup =
       [ "ControlPointConstraint", "structvrv_1_1_control_point_constraint.html", "structvrv_1_1_control_point_constraint" ],
       [ "ConvertMarkupAnalyticalParams", "classvrv_1_1_convert_markup_analytical_params.html", "classvrv_1_1_convert_markup_analytical_params" ],
       [ "ConvertMarkupArticParams", "classvrv_1_1_convert_markup_artic_params.html", "classvrv_1_1_convert_markup_artic_params" ],
+      [ "ConvertMarkupScoreDefParams", "classvrv_1_1_convert_markup_score_def_params.html", "classvrv_1_1_convert_markup_score_def_params" ],
       [ "ConvertToCastOffMensuralParams", "classvrv_1_1_convert_to_cast_off_mensural_params.html", "classvrv_1_1_convert_to_cast_off_mensural_params" ],
       [ "ConvertToPageBasedParams", "classvrv_1_1_convert_to_page_based_params.html", "classvrv_1_1_convert_to_page_based_params" ],
       [ "ConvertToUnCastOffMensuralParams", "classvrv_1_1_convert_to_un_cast_off_mensural_params.html", "classvrv_1_1_convert_to_un_cast_off_mensural_params" ],
