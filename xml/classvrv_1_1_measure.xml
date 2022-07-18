@@ -1217,14 +1217,18 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/measure.h" line="175" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/measure.h" bodystart="175" bodyend="175"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_measure_1a2d484d3510aedba91cd257471032c40c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_measure_1adef8072094be1a59d9cec910d74a2945" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
-        <definition>int vrv::Measure::GetRightBarLineWidth</definition>
-        <argsstring>(const Doc *doc) const</argsstring>
-        <name>GetRightBarLineWidth</name>
+        <definition>int vrv::Measure::CalculateRightBarLineWidth</definition>
+        <argsstring>(Doc *doc, int staffSize)</argsstring>
+        <name>CalculateRightBarLineWidth</name>
         <param>
-          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>staffSize</declname>
         </param>
         <briefdescription>
 <para>Return the width of the right barline based on the barline form. </para>
@@ -2393,6 +2397,7 @@
       <member refid="classvrv_1_1_object_1a3e00929935e3c3a646767efa319b5c2c" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>CalcSpanningBeamSpans</name></member>
       <member refid="classvrv_1_1_object_1a0b93f8b6e02c8ba98a03db67fe5d5d10" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>CalcStem</name></member>
       <member refid="classvrv_1_1_bounding_box_1a8fdd811aefcb373533b9cc2795aa04dd" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>CalcThickBezier</name></member>
+      <member refid="classvrv_1_1_measure_1adef8072094be1a59d9cec910d74a2945" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>CalculateRightBarLineWidth</name></member>
       <member refid="classvrv_1_1_measure_1a4c793218b22e82d580df2b74b04dfdf4" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>CastOffEncoding</name></member>
       <member refid="classvrv_1_1_object_1af4bdf6d63a5fbf43a21a5c18d3c49a10" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>CastOffPages</name></member>
       <member refid="classvrv_1_1_object_1ad2a435d1dd9a270785fca7cab265adba" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>CastOffPagesEnd</name></member>
@@ -2561,7 +2566,6 @@
       <member refid="classvrv_1_1_measure_1ad7618b8d6d4b5a1bb4fddad63e97290a" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetRightBarLine</name></member>
       <member refid="classvrv_1_1_measure_1abc2883e3de8cf8bfd5c2210a7ea0ccc5" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetRightBarLineLeft</name></member>
       <member refid="classvrv_1_1_measure_1ac302be4e65ce4567b86806ed257002d7" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetRightBarLineRight</name></member>
-      <member refid="classvrv_1_1_measure_1a2d484d3510aedba91cd257471032c40c" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetRightBarLineWidth</name></member>
       <member refid="classvrv_1_1_measure_1ac1bb604df97282f84e038010d1ce3fb0" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetRightBarLineXRel</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2fe9d4e0cef41c270fe6683e5fbd8223" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GetRightBy</name></member>
       <member refid="classvrv_1_1_object_1a36ae3be40fa20c6255a6003e5d56133f" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>GetScoreDefInterface</name></member>
