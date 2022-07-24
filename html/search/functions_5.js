@@ -36,7 +36,7 @@ var searchData=
   ['getbarlineoverlapadjustment_1898',['GetBarlineOverlapAdjustment',['../classvrv_1_1_hairpin.html#af2977762c4e0c015fb669eb3dad77301',1,'vrv::Hairpin']]],
   ['getbeamchildoverflow_1899',['GetBeamChildOverflow',['../classvrv_1_1_beam_drawing_interface.html#aa029bc2b21fc35d756c4278b04a6e47d',1,'vrv::BeamDrawingInterface']]],
   ['getbeamoverflow_1900',['GetBeamOverflow',['../classvrv_1_1_beam_drawing_interface.html#acc72272b8e6226e5016687b9b8f3c056',1,'vrv::BeamDrawingInterface']]],
-  ['getbeampartduration_1901',['GetBeamPartDuration',['../classvrv_1_1_beam.html#abc6706d4a84ab68b431208a791f7ca02',1,'vrv::Beam::GetBeamPartDuration(const Object *object) const'],['../classvrv_1_1_beam.html#ae23cb7f5a6c8f24996e13a6e2e12ffe6',1,'vrv::Beam::GetBeamPartDuration(int x) const']]],
+  ['getbeampartduration_1901',['GetBeamPartDuration',['../classvrv_1_1_beam.html#a059978a0881d8fb74f163808c9186b47',1,'vrv::Beam::GetBeamPartDuration(const Object *object, bool includeRests=true) const'],['../classvrv_1_1_beam.html#ac9348763f6a1dec01f260884674ca79a',1,'vrv::Beam::GetBeamPartDuration(int x, bool includeRests=true) const']]],
   ['getbeatrptalignmentduration_1902',['GetBeatRptAlignmentDuration',['../classvrv_1_1_beat_rpt.html#a46d10bc1d9d4d3fae07fc25b08621b10',1,'vrv::BeatRpt']]],
   ['getbezierthicknesscoefficient_1903',['GetBezierThicknessCoefficient',['../classvrv_1_1_bounding_box.html#a3dbe5a481e20ab4d0d9fdd47708d1c2f',1,'vrv::BoundingBox']]],
   ['getbottomalignment_1904',['GetBottomAlignment',['../classvrv_1_1_system_aligner.html#af9fa20703a935c4c82106847e1949565',1,'vrv::SystemAligner']]],
