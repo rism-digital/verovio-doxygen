@@ -738,12 +738,13 @@ var hierarchy =
     ] ],
     [ "AttStems", null, [
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
-      [ "vrv::Note", "classvrv_1_1_note.html", null ],
-      [ "vrv::Stem", "classvrv_1_1_stem.html", null ]
+      [ "vrv::Note", "classvrv_1_1_note.html", null ]
     ] ],
     [ "AttStemsCmn", null, [
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
-      [ "vrv::Note", "classvrv_1_1_note.html", null ],
+      [ "vrv::Note", "classvrv_1_1_note.html", null ]
+    ] ],
+    [ "AttStemVis", null, [
       [ "vrv::Stem", "classvrv_1_1_stem.html", null ]
     ] ],
     [ "AttSylLog", null, [
@@ -838,7 +839,8 @@ var hierarchy =
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
-      [ "vrv::Staff", "classvrv_1_1_staff.html", null ]
+      [ "vrv::Staff", "classvrv_1_1_staff.html", null ],
+      [ "vrv::Stem", "classvrv_1_1_stem.html", null ]
     ] ],
     [ "AttWhitespace", null, [
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ]
