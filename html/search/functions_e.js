@@ -33,7 +33,7 @@ var searchData=
   ['setcss_2345',['SetCss',['../classvrv_1_1_svg_device_context.html#aa908539e4a0e5fe193b3aa47d639cda7',1,'vrv::SvgDeviceContext']]],
   ['setcstring_2346',['SetCString',['../group__nodoc.html#ga7d77de8b102acd2f07f0fa23270f82a5',1,'vrv::Toolkit']]],
   ['setcurrentfloatingpositioner_2347',['SetCurrentFloatingPositioner',['../classvrv_1_1_staff_alignment.html#a2509f2cdd8ef0e40f10aaca7ec29c814',1,'vrv::StaffAlignment']]],
-  ['setcurrentpagenum_2348',['SetCurrentPageNum',['../classvrv_1_1_running_element.html#a1fb0858c1b662b2c96b33c66b055b69a',1,'vrv::RunningElement']]],
+  ['setcurrentpagenum_2348',['SetCurrentPageNum',['../classvrv_1_1_running_element.html#a9715a70dc4ff18c6599ae8cfc2f7e31f',1,'vrv::RunningElement']]],
   ['setdoc_2349',['SetDoc',['../classvrv_1_1_view.html#a851d75c2d465a1c90b7d97082b961a1b',1,'vrv::View']]],
   ['setdrawingbarlines_2350',['SetDrawingBarLines',['../classvrv_1_1_measure.html#aca48f477de36086120f4db67a428f1b2',1,'vrv::Measure']]],
   ['setdrawingcautionvalues_2351',['SetDrawingCautionValues',['../classvrv_1_1_layer.html#a5adbee5370bec875186360c8721425cd',1,'vrv::Layer']]],

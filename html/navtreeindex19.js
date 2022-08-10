@@ -1,5 +1,15 @@
 var NAVTREEINDEX19 =
 {
+"classvrv_1_1_slur.html#af4fa12654548c380dd0eb52f6c746c55":[1,0,0,312,18],
+"classvrv_1_1_space.html":[1,0,0,313],
+"classvrv_1_1_space.html#a132f9893694a765eab5b7c2db4f2e2f6":[1,0,0,313,5],
+"classvrv_1_1_space.html#a38980d410a75926bd5388eed43f5311a":[1,0,0,313,1],
+"classvrv_1_1_space.html#a44d9402bd745eb51ab7469a41a522447":[1,0,0,313,0],
+"classvrv_1_1_space.html#a6d0c11896962bfd3fb7bc07cbd7af6f6":[1,0,0,313,6],
+"classvrv_1_1_space.html#aa339b19539fdafa5cc5892a05aff363b":[1,0,0,313,4],
+"classvrv_1_1_space.html#acd82cac9467b38fe5ecd9160fe0193ae":[1,0,0,313,3],
+"classvrv_1_1_space.html#ad7d5b3da0c9a31a17891805e799a4229":[1,0,0,313,2],
+"classvrv_1_1_spanning_to_comparison.html":[1,0,0,315],
 "classvrv_1_1_spanning_to_comparison.html#a9be48bfb379df718c0300fb3c57c72ae":[1,0,0,315,0],
 "classvrv_1_1_spanning_to_comparison.html#abdcf79c4160fefef77a1bc3cece45d94":[1,0,0,315,2],
 "classvrv_1_1_spanning_to_comparison.html#ad330d82efb579d3ddb9bf48fc2147197":[1,0,0,315,1],
@@ -237,17 +247,7 @@ var NAVTREEINDEX19 =
 "classvrv_1_1_stemmed_drawing_interface.html#aebe78def2e8367329ee1ad24f8e5dac9":[1,0,0,323,11],
 "classvrv_1_1_subst.html":[1,0,0,324],
 "classvrv_1_1_subst.html#a0fcfee6ba50b8df1d742f8a1ee56e16b":[1,0,0,324,8],
+"classvrv_1_1_subst.html#a0ff61d39499040145cb2b143868d6653":[1,0,0,324,5],
 "classvrv_1_1_subst.html#a7bdf6cf7b4c8f2a638cda95dc970e9de":[1,0,0,324,7],
-"classvrv_1_1_subst.html#a8aed10d6feb8b118328e48d3cb515bf0":[1,0,0,324,1],
-"classvrv_1_1_subst.html#a9924866145282d1b5ba566a77918dbaa":[1,0,0,324,0],
-"classvrv_1_1_subst.html#aa7d529fc45d0f185d0f0c9768200d814":[1,0,0,324,4],
-"classvrv_1_1_subst.html#aaa4048e2c491c2539645ed029fe7618d":[1,0,0,324,5],
-"classvrv_1_1_subst.html#ab4f30fa1be9c1a27bc9f3433fce56190":[1,0,0,324,6],
-"classvrv_1_1_subst.html#acd34b152b427b1fa25fa2b7ae0692ada":[1,0,0,324,3],
-"classvrv_1_1_subst.html#ae3ca75f4d85d685670b3aa237e055713":[1,0,0,324,2],
-"classvrv_1_1_supplied.html":[1,0,0,325],
-"classvrv_1_1_supplied.html#a192018434516e50fda4a4c52e4c8fe08":[1,0,0,325,3],
-"classvrv_1_1_supplied.html#a2c6750c7880f6933048a5a576bfa4e27":[1,0,0,325,0],
-"classvrv_1_1_supplied.html#a40eee2eb9bdb7f0be113c64f4c33cc4e":[1,0,0,325,2],
-"classvrv_1_1_supplied.html#a815edfd7526b9bc7a6be5079795d0d20":[1,0,0,325,1]
+"classvrv_1_1_subst.html#a8aed10d6feb8b118328e48d3cb515bf0":[1,0,0,324,1]
 };

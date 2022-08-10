@@ -125,6 +125,8 @@ var classvrv_1_1_object =
     [ "GetAlignmentLeftRight", "classvrv_1_1_object.html#a3eb3c52e16525ed1a559a825fa85e00e", null ],
     [ "GetAncestors", "classvrv_1_1_object.html#a9520082549d438647a7fc8b1126675b4", null ],
     [ "GetAncestors", "classvrv_1_1_object.html#a323a71a1cb0b2a956e37c4e3da49a0fb", null ],
+    [ "GetAreaPosInterface", "classvrv_1_1_object.html#a6cadd7a0feb1425165258e599090f9f9", null ],
+    [ "GetAreaPosInterface", "classvrv_1_1_object.html#aa91dde17d5e02f9fb15441d175ec9ab1", null ],
     [ "GetAttributes", "classvrv_1_1_object.html#aeb7e152a62704071901972bbfa06062c", null ],
     [ "GetBeamDrawingInterface", "classvrv_1_1_object.html#a6d9d3ae387831fac891f903349348310", null ],
     [ "GetBeamDrawingInterface", "classvrv_1_1_object.html#ab136df3273e12a93e3699ae62e9d2514", null ],

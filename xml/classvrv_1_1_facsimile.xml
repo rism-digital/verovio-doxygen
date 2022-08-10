@@ -102,13 +102,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/facsimile.h" line="44" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_facsimile_1afff3ee39a01ec3ce36f05ba758ebd096" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_facsimile_1a9440219adf97d1e850ab674e3ad59691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classvrv_1_1_zone" kindref="compound">Zone</ref> *</type>
         <definition>Zone* vrv::Facsimile::FindZoneByID</definition>
-        <argsstring>(std::string zoneId)</argsstring>
+        <argsstring>(const std::string &amp;zoneId)</argsstring>
         <name>FindZoneByID</name>
         <param>
-          <type>std::string</type>
+          <type>const std::string &amp;</type>
           <declname>zoneId</declname>
         </param>
         <briefdescription>
@@ -119,23 +119,27 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/facsimile.h" line="46" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_facsimile_1a72f589aac6291fcb1dfc3f26ae061c13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int vrv::Facsimile::GetMaxY</definition>
-        <argsstring>()</argsstring>
-        <name>GetMaxY</name>
+      <memberdef kind="function" id="classvrv_1_1_facsimile_1a44e5abb96d143b8ce86cd9297d66652a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classvrv_1_1_zone" kindref="compound">Zone</ref> *</type>
+        <definition>const Zone* vrv::Facsimile::FindZoneByID</definition>
+        <argsstring>(const std::string &amp;zoneId) const</argsstring>
+        <name>FindZoneByID</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>zoneId</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/facsimile.h" line="47" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/facsimile.h" line="47" column="16"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_facsimile_1a77b90bd41348fec08f3591b930ef0031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_facsimile_1aaac254a2503aba5d73e1c2767f356dcf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int vrv::Facsimile::GetMaxX</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>GetMaxX</name>
         <briefdescription>
         </briefdescription>
@@ -144,6 +148,19 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/facsimile.h" line="48" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_facsimile_1a84e74c8216525953505d52f8ee2954a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::Facsimile::GetMaxY</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/facsimile.h" line="49" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -187,7 +204,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/facsimile.h" line="31" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/facsimile.h" bodystart="31" bodyend="49"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/facsimile.h" line="31" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/facsimile.h" bodystart="31" bodyend="50"/>
     <listofallmembers>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::Facsimile</scope><name>AddChild</name></member>
       <member refid="classvrv_1_1_object_1a5f617820a2163b5fa9d80d884bf69999" prot="public" virt="virtual"><scope>vrv::Facsimile</scope><name>AddLayerElementToFlatList</name></member>
@@ -317,7 +334,8 @@
       <member refid="classvrv_1_1_object_1a4750585ae6b8737aba3408fcc863dfeb" prot="public" virt="non-virtual"><scope>vrv::Facsimile</scope><name>FindPreviousChild</name></member>
       <member refid="classvrv_1_1_object_1a7c792936ed7e04d00172c7b0017b85a1" prot="public" virt="virtual"><scope>vrv::Facsimile</scope><name>FindPreviousChildByComparison</name></member>
       <member refid="classvrv_1_1_object_1af8ed551298a2052adaa8c7fb1af31dc2" prot="public" virt="virtual"><scope>vrv::Facsimile</scope><name>FindSpannedLayerElements</name></member>
-      <member refid="classvrv_1_1_facsimile_1afff3ee39a01ec3ce36f05ba758ebd096" prot="public" virt="non-virtual"><scope>vrv::Facsimile</scope><name>FindZoneByID</name></member>
+      <member refid="classvrv_1_1_facsimile_1a9440219adf97d1e850ab674e3ad59691" prot="public" virt="non-virtual"><scope>vrv::Facsimile</scope><name>FindZoneByID</name></member>
+      <member refid="classvrv_1_1_facsimile_1a44e5abb96d143b8ce86cd9297d66652a" prot="public" virt="non-virtual"><scope>vrv::Facsimile</scope><name>FindZoneByID</name></member>
       <member refid="classvrv_1_1_object_1a7ced59f27507ee81372cc12d7f57c8e0" prot="public" virt="virtual"><scope>vrv::Facsimile</scope><name>GenerateFeatures</name></member>
       <member refid="classvrv_1_1_object_1a426081ffba31e4251a2c36ceeb2a43ba" prot="public" virt="virtual"><scope>vrv::Facsimile</scope><name>GenerateMIDI</name></member>
       <member refid="classvrv_1_1_object_1a7c0a63c225e76daa84e102b7d531d645" prot="public" virt="virtual"><scope>vrv::Facsimile</scope><name>GenerateMIDIEnd</name></member>
@@ -326,6 +344,8 @@
       <member refid="classvrv_1_1_object_1a3eb3c52e16525ed1a559a825fa85e00e" prot="public" virt="virtual"><scope>vrv::Facsimile</scope><name>GetAlignmentLeftRight</name></member>
       <member refid="classvrv_1_1_object_1a9520082549d438647a7fc8b1126675b4" prot="public" virt="non-virtual"><scope>vrv::Facsimile</scope><name>GetAncestors</name></member>
       <member refid="classvrv_1_1_object_1a323a71a1cb0b2a956e37c4e3da49a0fb" prot="public" virt="non-virtual"><scope>vrv::Facsimile</scope><name>GetAncestors</name></member>
+      <member refid="classvrv_1_1_object_1a6cadd7a0feb1425165258e599090f9f9" prot="public" virt="virtual"><scope>vrv::Facsimile</scope><name>GetAreaPosInterface</name></member>
+      <member refid="classvrv_1_1_object_1aa91dde17d5e02f9fb15441d175ec9ab1" prot="public" virt="virtual"><scope>vrv::Facsimile</scope><name>GetAreaPosInterface</name></member>
       <member refid="classvrv_1_1_object_1aeb7e152a62704071901972bbfa06062c" prot="public" virt="non-virtual"><scope>vrv::Facsimile</scope><name>GetAttributes</name></member>
       <member refid="classvrv_1_1_object_1a6d9d3ae387831fac891f903349348310" prot="public" virt="virtual"><scope>vrv::Facsimile</scope><name>GetBeamDrawingInterface</name></member>
       <member refid="classvrv_1_1_object_1ab136df3273e12a93e3699ae62e9d2514" prot="public" virt="virtual"><scope>vrv::Facsimile</scope><name>GetBeamDrawingInterface</name></member>
@@ -386,8 +406,8 @@
       <member refid="classvrv_1_1_bounding_box_1af329372204a34520779e6b0d0596e8b9" prot="public" virt="non-virtual"><scope>vrv::Facsimile</scope><name>GetLeftBy</name></member>
       <member refid="classvrv_1_1_object_1a817a55b73b4356214fecf01d9da87d26" prot="public" virt="virtual"><scope>vrv::Facsimile</scope><name>GetLinkingInterface</name></member>
       <member refid="classvrv_1_1_object_1a71f584e3103c93a150d3a3f95a8cd6b6" prot="public" virt="virtual"><scope>vrv::Facsimile</scope><name>GetLinkingInterface</name></member>
-      <member refid="classvrv_1_1_facsimile_1a77b90bd41348fec08f3591b930ef0031" prot="public" virt="non-virtual"><scope>vrv::Facsimile</scope><name>GetMaxX</name></member>
-      <member refid="classvrv_1_1_facsimile_1a72f589aac6291fcb1dfc3f26ae061c13" prot="public" virt="non-virtual"><scope>vrv::Facsimile</scope><name>GetMaxY</name></member>
+      <member refid="classvrv_1_1_facsimile_1aaac254a2503aba5d73e1c2767f356dcf" prot="public" virt="non-virtual"><scope>vrv::Facsimile</scope><name>GetMaxX</name></member>
+      <member refid="classvrv_1_1_facsimile_1a84e74c8216525953505d52f8ee2954a4" prot="public" virt="non-virtual"><scope>vrv::Facsimile</scope><name>GetMaxY</name></member>
       <member refid="classvrv_1_1_object_1a776dc4f75ec176b5189ce8818a221bcf" prot="public" virt="non-virtual"><scope>vrv::Facsimile</scope><name>GetMilestoneEnd</name></member>
       <member refid="classvrv_1_1_object_1ab2e351247e616a3f30eaf2e3d125f054" prot="public" virt="non-virtual"><scope>vrv::Facsimile</scope><name>GetNext</name></member>
       <member refid="classvrv_1_1_object_1a0db530be167ba91d886764f066e63c2b" prot="public" virt="non-virtual"><scope>vrv::Facsimile</scope><name>GetNext</name></member>

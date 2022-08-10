@@ -127,7 +127,7 @@ var searchData=
   ['getledgerlinesabove_1991',['GetLedgerLinesAbove',['../classvrv_1_1_staff.html#a2e4177987f5f911be1f6c88633c84f43',1,'vrv::Staff']]],
   ['getleftalignment_1992',['GetLeftAlignment',['../classvrv_1_1_measure_aligner.html#a91340c51c57dcfb68de9e1436f002959',1,'vrv::MeasureAligner']]],
   ['getleftright_1993',['GetLeftRight',['../classvrv_1_1_alignment.html#aed80b800a911661778307d8103dc2b68',1,'vrv::Alignment']]],
-  ['getlevel_1994',['GetLevel',['../classvrv_1_1_app.html#a07dd8b721f08e752c19884426a183633',1,'vrv::App::GetLevel()'],['../classvrv_1_1_choice.html#a66c2af71b0ee3d8406dd0dc0aae1dcd8',1,'vrv::Choice::GetLevel()'],['../classvrv_1_1_subst.html#aaa4048e2c491c2539645ed029fe7618d',1,'vrv::Subst::GetLevel()']]],
+  ['getlevel_1994',['GetLevel',['../classvrv_1_1_app.html#a587f1669cfde483d22495b3c4902a47b',1,'vrv::App::GetLevel()'],['../classvrv_1_1_choice.html#ac0bd6d35eb17c51cc09302acaa7e7f40',1,'vrv::Choice::GetLevel()'],['../classvrv_1_1_subst.html#a0ff61d39499040145cb2b143868d6653',1,'vrv::Subst::GetLevel()']]],
   ['getlist_1995',['GetList',['../classvrv_1_1_object_list_interface.html#aec88d6b46b54ccbcd95426f7f55c4b59',1,'vrv::ObjectListInterface']]],
   ['getlistfirst_1996',['GetListFirst',['../classvrv_1_1_object_list_interface.html#ab95aaf8f363f9229cc5ea15fe38f0b89',1,'vrv::ObjectListInterface']]],
   ['getlistindex_1997',['GetListIndex',['../classvrv_1_1_object_list_interface.html#a1858b93f447366ddfbdeb011845e3f25',1,'vrv::ObjectListInterface']]],
