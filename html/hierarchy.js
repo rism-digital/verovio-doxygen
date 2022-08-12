@@ -124,6 +124,7 @@ var hierarchy =
         [ "vrv::Phrase", "classvrv_1_1_phrase.html", null ]
       ] ],
       [ "vrv::Syllable", "classvrv_1_1_syllable.html", null ],
+      [ "vrv::Symbol", "classvrv_1_1_symbol.html", null ],
       [ "vrv::Tie", "classvrv_1_1_tie.html", [
         [ "vrv::Lv", "classvrv_1_1_lv.html", null ]
       ] ],
@@ -272,6 +273,7 @@ var hierarchy =
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
       [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
+      [ "vrv::Symbol", "classvrv_1_1_symbol.html", null ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
       [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
     ] ],
@@ -892,6 +894,7 @@ var hierarchy =
         [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ],
         [ "vrv::Surface", "classvrv_1_1_surface.html", null ],
         [ "vrv::Svg", "classvrv_1_1_svg.html", null ],
+        [ "vrv::Symbol", "classvrv_1_1_symbol.html", null ],
         [ "vrv::System", "classvrv_1_1_system.html", null ],
         [ "vrv::SystemAligner", "classvrv_1_1_system_aligner.html", null ],
         [ "vrv::TextElement", "classvrv_1_1_text_element.html", null ],
@@ -917,7 +920,8 @@ var hierarchy =
         [ "vrv::MeasureAlignerTypeComparison", "classvrv_1_1_measure_aligner_type_comparison.html", null ],
         [ "vrv::MeasureOnsetOffsetComparison", "classvrv_1_1_measure_onset_offset_comparison.html", null ],
         [ "vrv::PointingToComparison", "classvrv_1_1_pointing_to_comparison.html", null ],
-        [ "vrv::SpanningToComparison", "classvrv_1_1_spanning_to_comparison.html", null ]
+        [ "vrv::SpanningToComparison", "classvrv_1_1_spanning_to_comparison.html", null ],
+        [ "vrv::VisibleSymbol", "classvrv_1_1_visible_symbol.html", null ]
       ] ],
       [ "vrv::ClassIdsComparison", "classvrv_1_1_class_ids_comparison.html", [
         [ "vrv::NoteOrRestOnsetOffsetComparison", "classvrv_1_1_note_or_rest_onset_offset_comparison.html", null ],

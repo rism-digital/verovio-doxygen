@@ -157,6 +157,7 @@ var files_dup =
     [ "svgdevicecontext.h", "svgdevicecontext_8h_source.html", null ],
     [ "syl.h", "syl_8h_source.html", null ],
     [ "syllable.h", "syllable_8h_source.html", null ],
+    [ "symbol.h", "symbol_8h_source.html", null ],
     [ "system.h", "system_8h_source.html", null ],
     [ "systemelement.h", "systemelement_8h_source.html", null ],
     [ "systemmilestone.h", "systemmilestone_8h_source.html", null ],
