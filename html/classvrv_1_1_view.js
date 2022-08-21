@@ -25,6 +25,7 @@ var classvrv_1_1_view =
     [ "DrawBracketSq", "classvrv_1_1_view.html#ae0091de7a5de97ede8c9c13e3308efc8", null ],
     [ "DrawBreath", "classvrv_1_1_view.html#a7f3e238fb9d192b46a260b51d67ffee3", null ],
     [ "DrawBTrem", "classvrv_1_1_view.html#af09dffb1d9988e08b5f6c39a81f841d8", null ],
+    [ "DrawCaesura", "classvrv_1_1_view.html#acc5b6a89d933c4d4ec913def1811733d", null ],
     [ "DrawChord", "classvrv_1_1_view.html#a06617dff07b153f941b080edb3c6fa67", null ],
     [ "DrawClef", "classvrv_1_1_view.html#a0719861210f15530bfe1e48af4add37a", null ],
     [ "DrawClefEnclosing", "classvrv_1_1_view.html#aa74cb4cd53e456ad7bfd658965f19ba7", null ],

@@ -265,6 +265,7 @@ var hierarchy =
     [ "AttExtSym", null, [
       [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
       [ "vrv::Artic", "classvrv_1_1_artic.html", null ],
+      [ "vrv::Caesura", "classvrv_1_1_caesura.html", null ],
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
       [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
