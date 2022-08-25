@@ -2612,10 +2612,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="744" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/object.h" bodystart="744" bodyend="744"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_object_1a3eb3c52e16525ed1a559a825fa85e00e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_object_1a389c0c7f2a9e74b340c44dbc68e7e886" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>int</type>
         <definition>virtual int vrv::Object::GetAlignmentLeftRight</definition>
-        <argsstring>(FunctorParams *functorParams)</argsstring>
+        <argsstring>(FunctorParams *functorParams) const</argsstring>
         <name>GetAlignmentLeftRight</name>
         <param>
           <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
@@ -3042,8 +3042,8 @@
         <definition>virtual int vrv::Object::CalcAlignmentXPos</definition>
         <argsstring>(FunctorParams *)</argsstring>
         <name>CalcAlignmentXPos</name>
-        <reimplementedby refid="classvrv_1_1_alignment_1a1c8be8cafb2f9d374ad855c224f54113">CalcAlignmentXPos</reimplementedby>
         <reimplementedby refid="classvrv_1_1_system_1a6363378ff982fda50c793ce7f0f1acd3">CalcAlignmentXPos</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_alignment_1a1c8be8cafb2f9d374ad855c224f54113">CalcAlignmentXPos</reimplementedby>
         <reimplementedby refid="classvrv_1_1_measure_1aa09c5efb86cd4d8e116e5804e789410b">CalcAlignmentXPos</reimplementedby>
         <reimplementedby refid="classvrv_1_1_measure_aligner_1a19a1278278e1ddd9ae38aede63bb4d78">CalcAlignmentXPos</reimplementedby>
         <param>
@@ -6474,8 +6474,8 @@
         <reimplementedby refid="classvrv_1_1_alignment_1afe1dce241b823edc3a32d57d159dd636">IsSupportedChild</reimplementedby>
         <reimplementedby refid="classvrv_1_1_note_1ab67af4d9db93c3538d61271730ed3750">IsSupportedChild</reimplementedby>
         <reimplementedby refid="classvrv_1_1_score_def_1aacaaa2222c639bbff720298403b3e9da">IsSupportedChild</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_alignment_reference_1ab1145409381d64fa25d3b506c14872da">IsSupportedChild</reimplementedby>
         <reimplementedby refid="classvrv_1_1_beam_1a2222ff99c31c7384fc4e3c6dff08b47a">IsSupportedChild</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_alignment_reference_1ab1145409381d64fa25d3b506c14872da">IsSupportedChild</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
           <declname>object</declname>
@@ -6615,13 +6615,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/object.h" line="409" column="12"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_object_1a32d88cd25d424a5c15b014efe736ee20" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_object_1a1f38d88b64a7f79bfea9303a16c1f556" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::Object::HasDescendant</definition>
-        <argsstring>(Object *child, int deepness=UNLIMITED_DEPTH) const</argsstring>
+        <argsstring>(const Object *child, int deepness=UNLIMITED_DEPTH) const</argsstring>
         <name>HasDescendant</name>
         <param>
-          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
           <declname>child</declname>
         </param>
         <param>
@@ -8170,7 +8170,7 @@
       <member refid="classvrv_1_1_object_1a7c0a63c225e76daa84e102b7d531d645" prot="public" virt="virtual"><scope>vrv::Object</scope><name>GenerateMIDIEnd</name></member>
       <member refid="classvrv_1_1_object_1adef7d8ebf6bbb0b9bea78a608c161791" prot="public" virt="non-virtual"><scope>vrv::Object</scope><name>GenerateRandID</name></member>
       <member refid="classvrv_1_1_object_1abe889073301d6e1dfe55e725b6532948" prot="public" virt="virtual"><scope>vrv::Object</scope><name>GenerateTimemap</name></member>
-      <member refid="classvrv_1_1_object_1a3eb3c52e16525ed1a559a825fa85e00e" prot="public" virt="virtual"><scope>vrv::Object</scope><name>GetAlignmentLeftRight</name></member>
+      <member refid="classvrv_1_1_object_1a389c0c7f2a9e74b340c44dbc68e7e886" prot="public" virt="virtual"><scope>vrv::Object</scope><name>GetAlignmentLeftRight</name></member>
       <member refid="classvrv_1_1_object_1a9520082549d438647a7fc8b1126675b4" prot="public" virt="non-virtual"><scope>vrv::Object</scope><name>GetAncestors</name></member>
       <member refid="classvrv_1_1_object_1a323a71a1cb0b2a956e37c4e3da49a0fb" prot="public" virt="non-virtual"><scope>vrv::Object</scope><name>GetAncestors</name></member>
       <member refid="classvrv_1_1_object_1a6cadd7a0feb1425165258e599090f9f9" prot="public" virt="virtual"><scope>vrv::Object</scope><name>GetAreaPosInterface</name></member>
@@ -8282,7 +8282,7 @@
       <member refid="classvrv_1_1_bounding_box_1a6cac2a9e7c863969d8e856807936574f" prot="public" virt="non-virtual"><scope>vrv::Object</scope><name>HasContentBB</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3bde41712d93b9badf88b35ac1974503" prot="public" virt="non-virtual"><scope>vrv::Object</scope><name>HasContentHorizontalBB</name></member>
       <member refid="classvrv_1_1_bounding_box_1abe8bb676a5c670242888d9034daa5a22" prot="public" virt="non-virtual"><scope>vrv::Object</scope><name>HasContentVerticalBB</name></member>
-      <member refid="classvrv_1_1_object_1a32d88cd25d424a5c15b014efe736ee20" prot="public" virt="non-virtual"><scope>vrv::Object</scope><name>HasDescendant</name></member>
+      <member refid="classvrv_1_1_object_1a1f38d88b64a7f79bfea9303a16c1f556" prot="public" virt="non-virtual"><scope>vrv::Object</scope><name>HasDescendant</name></member>
       <member refid="classvrv_1_1_object_1ac9dd387934b8960b47b96a0c05bb1b84" prot="public" virt="non-virtual"><scope>vrv::Object</scope><name>HasEditorialContent</name></member>
       <member refid="classvrv_1_1_bounding_box_1a1dfd7207c5f8431bcb56c88b5c469992" prot="public" virt="non-virtual"><scope>vrv::Object</scope><name>HasEmptyBB</name></member>
       <member refid="classvrv_1_1_object_1a1639642ba9433617ec04608f2d2570bb" prot="public" virt="non-virtual"><scope>vrv::Object</scope><name>HasInterface</name></member>
