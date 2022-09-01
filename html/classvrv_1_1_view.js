@@ -87,7 +87,7 @@ var classvrv_1_1_view =
     [ "DrawMeasureEditorialElement", "classvrv_1_1_view.html#ac9d41fe4cf84e3a5b236673a51134430", null ],
     [ "DrawMensur", "classvrv_1_1_view.html#a996684014a80ece24f0cd4a9e707d049", null ],
     [ "DrawMensuralNote", "classvrv_1_1_view.html#a651558f192674df0282bd069fb7a8e9c", null ],
-    [ "DrawMensuralStem", "classvrv_1_1_view.html#a1251c367eabd429570531db7482d2199", null ],
+    [ "DrawMensuralStem", "classvrv_1_1_view.html#a694c88ac038f6acc94349fa237999567", null ],
     [ "DrawMeterSig", "classvrv_1_1_view.html#a305a0b42285af465187b04899425a976", null ],
     [ "DrawMeterSig", "classvrv_1_1_view.html#aadbc6b836c9ad925a6bfd757d9efa02c", null ],
     [ "DrawMeterSigFigures", "classvrv_1_1_view.html#ac63129548ebe61c6e334a56e05d5495d", null ],
