@@ -112,9 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ff7746e6f963b16fdcf9a64c2414d0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_dynam.html#a9ff7746e6f963b16fdcf9a64c2414d0b">IsSymbolOnly</a> () const</td></tr>
 <tr class="memdesc:a9ff7746e6f963b16fdcf9a64c2414d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the dynam text is only composed of f, p, r, z, etc.  <a href="classvrv_1_1_dynam.html#a9ff7746e6f963b16fdcf9a64c2414d0b">More...</a><br /></td></tr>
 <tr class="separator:a9ff7746e6f963b16fdcf9a64c2414d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0234de69512a615bb0e74f09474cbdd2"><td class="memItemLeft" align="right" valign="top">std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_dynam.html#a0234de69512a615bb0e74f09474cbdd2">GetSymbolStr</a> () const</td></tr>
-<tr class="memdesc:a0234de69512a615bb0e74f09474cbdd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the SMuFL str for the dynamic symbol.  <a href="classvrv_1_1_dynam.html#a0234de69512a615bb0e74f09474cbdd2">More...</a><br /></td></tr>
-<tr class="separator:a0234de69512a615bb0e74f09474cbdd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb598bebef9c8af72fe39c2c1a4e9e74"><td class="memItemLeft" align="right" valign="top">std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_dynam.html#afb598bebef9c8af72fe39c2c1a4e9e74">GetSymbolStr</a> (const bool singleGlyphs) const</td></tr>
+<tr class="memdesc:afb598bebef9c8af72fe39c2c1a4e9e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the SMuFL str for the dynamic symbol.  <a href="classvrv_1_1_dynam.html#afb598bebef9c8af72fe39c2c1a4e9e74">More...</a><br /></td></tr>
+<tr class="separator:afb598bebef9c8af72fe39c2c1a4e9e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4385439841413bc58bbb7d607fa4a234"><td class="memItemLeft" align="right" valign="top"><a id="a4385439841413bc58bbb7d607fa4a234"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_dynam.html#a4385439841413bc58bbb7d607fa4a234">IsExtenderElement</a> () const override</td></tr>
 <tr class="memdesc:a4385439841413bc58bbb7d607fa4a234"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_floating_object.html#a8781df9fac1bad66c08cdae278be23e4" title="Check whether current object represents initial element or extender lines.">FloatingObject::IsExtenderElement</a>. <br /></td></tr>
@@ -1764,9 +1764,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetSymbolsInSt
 <tr class="memitem:ac2dad3fd8324b00c27279fa23c432b31"><td class="memItemLeft" align="right" valign="top"><a id="ac2dad3fd8324b00c27279fa23c432b31"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSymbolOnly</b> (const std::wstring &amp;str)</td></tr>
 <tr class="separator:ac2dad3fd8324b00c27279fa23c432b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75be44ce463e9c442d1e83ac223baa86"><td class="memItemLeft" align="right" valign="top"><a id="a75be44ce463e9c442d1e83ac223baa86"></a>
-static std::wstring&#160;</td><td class="memItemRight" valign="bottom"><b>GetSymbolStr</b> (const std::wstring &amp;str)</td></tr>
-<tr class="separator:a75be44ce463e9c442d1e83ac223baa86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dd92f08a3613339c2e5295fbec08607"><td class="memItemLeft" align="right" valign="top"><a id="a0dd92f08a3613339c2e5295fbec08607"></a>
+static std::wstring&#160;</td><td class="memItemRight" valign="bottom"><b>GetSymbolStr</b> (const std::wstring &amp;str, const bool singleGlyphs)</td></tr>
+<tr class="separator:a0dd92f08a3613339c2e5295fbec08607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classvrv_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classvrv_1_1_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classvrv_1_1_object.html">vrv::Object</a></td></tr>
 <tr class="memitem:a9aad68e2f4f0edf8bf413a2a5f727f1b inherit pub_static_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a9aad68e2f4f0edf8bf413a2a5f727f1b"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>SeedID</b> (unsigned int seed=0)</td></tr>
@@ -1919,8 +1919,8 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_startID</b><
 
 </div>
 </div>
-<a id="a0234de69512a615bb0e74f09474cbdd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0234de69512a615bb0e74f09474cbdd2">&#9670;&nbsp;</a></span>GetSymbolStr()</h2>
+<a id="afb598bebef9c8af72fe39c2c1a4e9e74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb598bebef9c8af72fe39c2c1a4e9e74">&#9670;&nbsp;</a></span>GetSymbolStr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1928,7 +1928,8 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_startID</b><
         <tr>
           <td class="memname">std::wstring vrv::Dynam::GetSymbolStr </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>singleGlyphs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -2029,7 +2030,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_startID</b><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_dynam.html">Dynam</a></li>
-    <li class="footer">Generated on Fri Sep 2 2022 12:49:51 for Verovio by
+    <li class="footer">Generated on Mon Sep 5 2022 07:16:25 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
