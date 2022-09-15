@@ -35,6 +35,7 @@ var classvrv_1_1_view =
     [ "DrawCustos", "classvrv_1_1_view.html#ae489413328b7ef903f186b9fc32bb5cf", null ],
     [ "DrawDiamond", "classvrv_1_1_view.html#a92d7d53a19088ce4bf4192bb1c79785f", null ],
     [ "DrawDir", "classvrv_1_1_view.html#ae5ca8f2c3fd55027afe6ae9bf00a1825", null ],
+    [ "DrawDirString", "classvrv_1_1_view.html#a980bc9c6df6e6523e9bfea8e1304c7f1", null ],
     [ "DrawDot", "classvrv_1_1_view.html#af2ab2f89a0b92ae877969133573b32ad", null ],
     [ "DrawDot", "classvrv_1_1_view.html#a85a2b586e641814ad20f2bd520e773f2", null ],
     [ "DrawDotInLigature", "classvrv_1_1_view.html#a5442d39b30587eeea850cef2b4601ca7", null ],

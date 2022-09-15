@@ -63,6 +63,7 @@ var classvrv_1_1_doc =
     [ "GetLeftMargin", "classvrv_1_1_doc.html#a135fd4af4a0d4c76708e08c342fca235", null ],
     [ "GetLeftPosition", "classvrv_1_1_doc.html#a74e981535bc84a8a2d33ab03ce3a36d0", null ],
     [ "GetMidiExportDone", "classvrv_1_1_doc.html#ab09d1142c97b77fdbb612c787049b907", null ],
+    [ "GetMusicToLyricFontSizeRatio", "classvrv_1_1_doc.html#ac57ef2adbcdc3d853c540a0c44470d49", null ],
     [ "GetOptions", "classvrv_1_1_doc.html#af2e4fe3191867281b935913086b31708", null ],
     [ "GetOptions", "classvrv_1_1_doc.html#aa2bd27306eb6314e45ab6068bdde29d7", null ],
     [ "GetPageCount", "classvrv_1_1_doc.html#a2375896e4a43e3a23c798c48fd5a8f70", null ],
