@@ -1,11 +1,5 @@
 var NAVTREEINDEX25 =
 {
-"pgfoot_8h_source.html":[2,0,116],
-"pghead2_8h_source.html":[2,0,119],
-"pghead_8h_source.html":[2,0,118],
-"phrase_8h_source.html":[2,0,120],
-"pitchinflection_8h_source.html":[2,0,121],
-"pitchinterface_8h_source.html":[2,0,122],
 "plica_8h_source.html":[2,0,123],
 "plistinterface_8h_source.html":[2,0,124],
 "positioninterface_8h_source.html":[2,0,125],

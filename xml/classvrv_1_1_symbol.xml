@@ -2,9 +2,10 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="classvrv_1_1_symbol" kind="class" language="C++" prot="public">
     <compoundname>vrv::Symbol</compoundname>
-    <basecompoundref refid="classvrv_1_1_object" prot="public" virt="non-virtual">vrv::Object</basecompoundref>
+    <basecompoundref refid="classvrv_1_1_text_element" prot="public" virt="non-virtual">vrv::TextElement</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">AttColor</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">AttExtSym</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">AttTypography</basecompoundref>
     <includes refid="symbol_8h" local="no">symbol.h</includes>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors, reset and class name methods</header>
@@ -83,23 +84,6 @@
         <location file="/home/runner/work/verovio/verovio/include/vrv/symbol.h" line="36" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/symbol.h" bodystart="36" bodyend="36"/>
       </memberdef>
       </sectiondef>
-      <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classvrv_1_1_symbol_1abd2d96a9e6d425d49d5e552f6beefa13" prot="public" static="no" mutable="no">
-        <type>VisibilityType</type>
-        <definition>VisibilityType vrv::Symbol::m_visibility</definition>
-        <argsstring></argsstring>
-        <name>m_visibility</name>
-        <briefdescription>
-<para>Holds the visibility (hidden or visible) for an symbol element. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>By default, a symbo elements is visible but it is make invisible when with mixed content The reason is that we cannot render SVG &lt;g&gt; within &lt;text&gt;. <ref refid="classvrv_1_1_symbol" kindref="compound">Symbol</ref> with text is not supported by Verovio. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/symbol.h" line="58" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/symbol.h" bodystart="58" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classvrv_1_1_symbol_1a04a3da5069bbc10bc957423906291681" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -141,62 +125,104 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3">
+      <node id="6">
+        <label>AttTyped</label>
+      </node>
+      <node id="4">
         <label>vrv::BoundingBox</label>
         <link refid="classvrv_1_1_bounding_box"/>
+      </node>
+      <node id="2">
+        <label>vrv::TextElement</label>
+        <link refid="classvrv_1_1_text_element"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>AttTypography</label>
       </node>
       <node id="1">
         <label>vrv::Symbol</label>
         <link refid="classvrv_1_1_symbol"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="4" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
-        <childnode refid="5" relation="public-inheritance">
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2">
+      <node id="3">
         <label>vrv::Object</label>
         <link refid="classvrv_1_1_object"/>
-        <childnode refid="3" relation="public-inheritance">
+        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5">
+      <node id="8">
         <label>AttExtSym</label>
       </node>
-      <node id="4">
+      <node id="7">
         <label>AttColor</label>
+      </node>
+      <node id="5">
+        <label>AttLabelled</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3">
+      <node id="6">
+        <label>AttTyped</label>
+      </node>
+      <node id="4">
         <label>vrv::BoundingBox</label>
         <link refid="classvrv_1_1_bounding_box"/>
+      </node>
+      <node id="2">
+        <label>vrv::TextElement</label>
+        <link refid="classvrv_1_1_text_element"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>AttTypography</label>
       </node>
       <node id="1">
         <label>vrv::Symbol</label>
         <link refid="classvrv_1_1_symbol"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="4" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
-        <childnode refid="5" relation="public-inheritance">
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2">
+      <node id="3">
         <label>vrv::Object</label>
         <link refid="classvrv_1_1_object"/>
-        <childnode refid="3" relation="public-inheritance">
+        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5">
+      <node id="8">
         <label>AttExtSym</label>
       </node>
-      <node id="4">
+      <node id="7">
         <label>AttColor</label>
       </node>
+      <node id="5">
+        <label>AttLabelled</label>
+      </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/symbol.h" line="25" column="62" bodyfile="/home/runner/work/verovio/verovio/include/vrv/symbol.h" bodystart="25" bodyend="61"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/symbol.h" line="25" column="89" bodyfile="/home/runner/work/verovio/verovio/include/vrv/symbol.h" bodystart="25" bodyend="53"/>
     <listofallmembers>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>AddChild</name></member>
       <member refid="classvrv_1_1_object_1a5f617820a2163b5fa9d80d884bf69999" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>AddLayerElementToFlatList</name></member>
@@ -372,8 +398,10 @@
       <member refid="classvrv_1_1_object_1a469db24aaa4907f5437576cb989fcdad" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>GetDescendantCount</name></member>
       <member refid="classvrv_1_1_object_1a6baacbb5e659f71a051d569b2c34ac07" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>GetDescendantIndex</name></member>
       <member refid="classvrv_1_1_object_1a4479cf2a953546ff59428752c479ec31" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>GetDocResources</name></member>
-      <member refid="classvrv_1_1_object_1ac707920ee385b0c7bb52d4b0184e7e54" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>GetDrawingX</name></member>
-      <member refid="classvrv_1_1_object_1a2b30e0834719af6134364237c5f78940" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>GetDrawingY</name></member>
+      <member refid="classvrv_1_1_text_element_1a1f891c325782491dae164229c4ac2358" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>GetDrawingX</name></member>
+      <member refid="classvrv_1_1_text_element_1a8e45515c5c0ebed5f4b274dc767c42e6" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>GetDrawingXRel</name></member>
+      <member refid="classvrv_1_1_text_element_1aded80df16145798e9c7779f182600e71" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>GetDrawingY</name></member>
+      <member refid="classvrv_1_1_text_element_1a95aacc7c9ceb8f7b37681b674156eed9" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>GetDrawingYRel</name></member>
       <member refid="classvrv_1_1_object_1a60120fd33bf1f7227c4dc2f6a9b265c7" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>GetDurationInterface</name></member>
       <member refid="classvrv_1_1_object_1ae6f71e6b9dc583db08e6d90edbfc8f48" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>GetDurationInterface</name></member>
       <member refid="classvrv_1_1_object_1a12c0e976636a155de9c58ead6cd743f8" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>GetFacsimileInterface</name></member>
@@ -495,7 +523,6 @@
       <member refid="classvrv_1_1_bounding_box_1a4961ebaf8f99abe31ee894345cd84a16" prot="protected" virt="non-virtual"><scope>vrv::Symbol</scope><name>m_cachedDrawingX</name></member>
       <member refid="classvrv_1_1_bounding_box_1a548baf7b854ef877313302670da5d0b8" prot="protected" virt="non-virtual"><scope>vrv::Symbol</scope><name>m_cachedDrawingY</name></member>
       <member refid="classvrv_1_1_object_1a74ae0995caefb72a71445ba43fce0652" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>m_unsupported</name></member>
-      <member refid="classvrv_1_1_symbol_1abd2d96a9e6d425d49d5e552f6beefa13" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>m_visibility</name></member>
       <member refid="classvrv_1_1_object_1a30996d1e8460f2110900b490425c16ec" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>Modify</name></member>
       <member refid="classvrv_1_1_object_1aa846e8099e10d6cf427e8255e4a62dd4" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>MoveChildrenFrom</name></member>
       <member refid="classvrv_1_1_object_1ac7063ea155c08f4e39e5c59b735f1d9e" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>MoveItselfTo</name></member>
@@ -553,7 +580,7 @@
       <member refid="classvrv_1_1_object_1acea387d6c12925339a10f94312d9a82f" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>ResetHorizontalAlignment</name></member>
       <member refid="classvrv_1_1_object_1a6a40859719b200dae8d65ee9d597bccd" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>ResetID</name></member>
       <member refid="classvrv_1_1_object_1a5d22ebda01e0b254c13d558f5ffdb098" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>ResetParent</name></member>
-      <member refid="classvrv_1_1_object_1ab5f42b79ff1721982121a8a9c493a8c1" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>ResetVerticalAlignment</name></member>
+      <member refid="classvrv_1_1_text_element_1aa1b93e07a8e5b8b6a6ae2217fec1ffe9" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>ResetVerticalAlignment</name></member>
       <member refid="classvrv_1_1_object_1a8ec6663670b4b6522cb4892babf36742" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>Save</name></member>
       <member refid="classvrv_1_1_object_1ad628dce30da1167aa84313ea7a4f5612" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>SaveEnd</name></member>
       <member refid="classvrv_1_1_object_1a109c1a6b01e78fb7978caa0577b5df6f" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>SaveObject</name></member>
@@ -570,6 +597,8 @@
       <member refid="classvrv_1_1_object_1a3a95154b135f78a323dafdfec2a76e2d" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>SetCautionaryScoreDef</name></member>
       <member refid="classvrv_1_1_object_1af0db1dd88b7d2f6c9068934312ce86c8" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>SetClosingComment</name></member>
       <member refid="classvrv_1_1_object_1a3b47aa3445a48e681db41607cedcd4b4" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>SetComment</name></member>
+      <member refid="classvrv_1_1_text_element_1aac7cecf1bf0ed2a368a577d95502535b" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>SetDrawingXRel</name></member>
+      <member refid="classvrv_1_1_text_element_1ab30eaf19d027ab698fe041b10ab30e6c" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>SetDrawingYRel</name></member>
       <member refid="classvrv_1_1_bounding_box_1ade8f7ad2283b156a2c7934c4055bd8bf" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>SetEmptyBB</name></member>
       <member refid="classvrv_1_1_object_1aa34da3a7092c0b6753c91459b52648b9" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>SetID</name></member>
       <member refid="classvrv_1_1_object_1a9f30aa6a8185b260943003a08980d376" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>SetParent</name></member>
@@ -580,6 +609,9 @@
       <member refid="classvrv_1_1_object_1ac97807a0dabfdf0d1d483f7f3e9427f9" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>StableSort</name></member>
       <member refid="classvrv_1_1_object_1a3c91cd86fa79d2b64ae677f2b2a64e9d" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>SwapID</name></member>
       <member refid="classvrv_1_1_symbol_1a46a84911e1ee98b890d9175af3e7b41d" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>Symbol</name></member>
+      <member refid="classvrv_1_1_text_element_1acd185142d83a259bf166b79495900443" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>TextElement</name></member>
+      <member refid="classvrv_1_1_text_element_1abf02f29920a6312d3d4fb7c5c222f2c4" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>TextElement</name></member>
+      <member refid="classvrv_1_1_text_element_1a6b8b2404671736d6506ec2fc1edd9254" prot="public" virt="non-virtual"><scope>vrv::Symbol</scope><name>TextElement</name></member>
       <member refid="classvrv_1_1_object_1a0ee02f42628df9898a57349899c1ba3e" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>Transpose</name></member>
       <member refid="classvrv_1_1_object_1a32d4bf7c744166174339c2d90958092b" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>TransposeEnd</name></member>
       <member refid="classvrv_1_1_object_1a84120019fd68f6d7015f6765d7114a7b" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>UnCastOff</name></member>
@@ -594,6 +626,7 @@
       <member refid="classvrv_1_1_bounding_box_1a9f87f4407c2c8d88ab5e4eacfe1ac1f0" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>~BoundingBox</name></member>
       <member refid="classvrv_1_1_object_1a350424e9cf31d3b7d1bb5f5754944401" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>~Object</name></member>
       <member refid="classvrv_1_1_symbol_1a841d4f0612e119ab6939dc9cac4ed7ab" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>~Symbol</name></member>
+      <member refid="classvrv_1_1_text_element_1ab922ad557ef315d4a683ec038b6ea6b9" prot="public" virt="virtual"><scope>vrv::Symbol</scope><name>~TextElement</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

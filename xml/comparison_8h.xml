@@ -78,7 +78,7 @@
       <node id="4">
         <label>atts_gestural.h</label>
       </node>
-      <node id="69">
+      <node id="70">
         <label>timeinterface.h</label>
         <link refid="timeinterface_8h_source"/>
         <childnode refid="5" relation="include">
@@ -233,7 +233,7 @@
         </childnode>
         <childnode refid="68" relation="include">
         </childnode>
-        <childnode refid="69" relation="include">
+        <childnode refid="70" relation="include">
         </childnode>
       </node>
       <node id="19">
@@ -273,7 +273,7 @@
         </childnode>
         <childnode refid="54" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="69" relation="include">
         </childnode>
       </node>
       <node id="30">
@@ -381,6 +381,14 @@
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>textelement.h</label>
+        <link refid="textelement_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
       <node id="55">
@@ -610,7 +618,6 @@
     <innerclass refid="classvrv_1_1_note_or_rest_onset_offset_comparison" prot="public">vrv::NoteOrRestOnsetOffsetComparison</innerclass>
     <innerclass refid="classvrv_1_1_i_d_comparison" prot="public">vrv::IDComparison</innerclass>
     <innerclass refid="classvrv_1_1_visible_staff_def_or_grp_object" prot="public">vrv::VisibleStaffDefOrGrpObject</innerclass>
-    <innerclass refid="classvrv_1_1_visible_symbol" prot="public">vrv::VisibleSymbol</innerclass>
     <innerclass refid="classvrv_1_1_filters" prot="public">vrv::Filters</innerclass>
     <innernamespace refid="namespacevrv">vrv</innernamespace>
     <briefdescription>
@@ -1111,77 +1118,60 @@
 <codeline lineno="538"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="539"><highlight class="normal"></highlight></codeline>
 <codeline lineno="540"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="541"><highlight class="normal"></highlight><highlight class="comment">//<sp/>VisibleSymbol</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="542"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight></codeline>
-<codeline lineno="546" refid="classvrv_1_1_visible_symbol" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_visible_symbol" kindref="compound">VisibleSymbol</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_class_id_comparison" kindref="compound">ClassIdComparison</ref><sp/>{</highlight></codeline>
-<codeline lineno="547"><highlight class="normal"></highlight></codeline>
+<codeline lineno="541"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Filters<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="543"><highlight class="normal"></highlight></codeline>
+<codeline lineno="547" refid="classvrv_1_1_filters" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_filters" kindref="compound">Filters</ref><sp/>{</highlight></codeline>
 <codeline lineno="548"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_visible_symbol" kindref="compound">VisibleSymbol</ref>()<sp/>:<sp/><ref refid="classvrv_1_1_class_id_comparison" kindref="compound">ClassIdComparison</ref>(SYMBOL)<sp/>{}</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>Type<sp/>{<sp/>AllOf,<sp/>AnyOf<sp/>};</highlight></codeline>
 <codeline lineno="550"><highlight class="normal"></highlight></codeline>
-<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
-<codeline lineno="552"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!MatchesType(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_symbol" kindref="compound">Symbol</ref><sp/>*symbol<sp/>=<sp/>vrv_cast&lt;const<sp/>Symbol<sp/>*&gt;(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(symbol);</highlight></codeline>
-<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(symbol-&gt;<ref refid="classvrv_1_1_symbol_1abd2d96a9e6d425d49d5e552f6beefa13" kindref="member">m_visibility</ref><sp/>==<sp/>Visible);</highlight></codeline>
-<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="558"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="559"><highlight class="normal"></highlight></codeline>
-<codeline lineno="560"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="561"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Filters<sp/>class</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="562"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="563"><highlight class="normal"></highlight></codeline>
-<codeline lineno="567" refid="classvrv_1_1_filters" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_filters" kindref="compound">Filters</ref><sp/>{</highlight></codeline>
-<codeline lineno="568"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>Type<sp/>{<sp/>AllOf,<sp/>AnyOf<sp/>};</highlight></codeline>
-<codeline lineno="570"><highlight class="normal"></highlight></codeline>
-<codeline lineno="571"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_filters" kindref="compound">Filters</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_filters" kindref="compound">Filters</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::initializer_list&lt;Comparison<sp/>*&gt;<sp/>&amp;comp)</highlight></codeline>
-<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::copy(comp.begin(),<sp/>comp.end(),<sp/>std::back_inserter(m_filters));</highlight></codeline>
-<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="577"><highlight class="normal"></highlight></codeline>
-<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_add" kindref="compound">Add</ref>(<ref refid="classvrv_1_1_comparison" kindref="compound">Comparison</ref><sp/>*comp)<sp/>{<sp/>m_filters.push_back(comp);<sp/>}</highlight></codeline>
-<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Clear()<sp/>{<sp/>m_filters.clear();<sp/>}</highlight></codeline>
-<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetType(Type<sp/>type)<sp/>{<sp/>m_type<sp/>=<sp/>type;<sp/>}</highlight></codeline>
-<codeline lineno="581"><highlight class="normal"></highlight></codeline>
-<codeline lineno="585" refid="classvrv_1_1_filters_1ab8a0e3b0097f4fee2d91f78ba735d336" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_filters_1ab8a0e3b0097f4fee2d91f78ba735d336" kindref="member">Apply</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
-<codeline lineno="586"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>condition<sp/>=<sp/>[object](<ref refid="classvrv_1_1_comparison" kindref="compound">Comparison</ref><sp/>*iter)<sp/>{</highlight></codeline>
-<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ignore<sp/>any<sp/>class<sp/>comparison<sp/>which<sp/>does<sp/>not<sp/>match<sp/>the<sp/>object<sp/>class</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_class_id_comparison" kindref="compound">ClassIdComparison</ref><sp/>*cmp<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="classvrv_1_1_class_id_comparison" kindref="compound">ClassIdComparison</ref><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(iter);</highlight></codeline>
-<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!cmp<sp/>||<sp/>(cmp-&gt;GetType()<sp/>!=<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">-&gt;GetClassId()))<sp/>{</highlight></codeline>
-<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*iter)(object);</highlight></codeline>
-<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(m_type)<sp/>{</highlight></codeline>
-<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Type::AnyOf:<sp/>{</highlight></codeline>
-<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::any_of(m_filters.cbegin(),<sp/>m_filters.cend(),<sp/>condition);</highlight></codeline>
-<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Type::AllOf:</highlight></codeline>
-<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/>{</highlight></codeline>
-<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::all_of(m_filters.cbegin(),<sp/>m_filters.cend(),<sp/>condition);</highlight></codeline>
-<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="605"><highlight class="normal"></highlight></codeline>
-<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_filters" kindref="compound">Filters</ref><sp/>&amp;operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::initializer_list&lt;Comparison<sp/>*&gt;<sp/>&amp;other)</highlight></codeline>
-<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_filters.clear();</highlight></codeline>
-<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::copy(other.begin(),<sp/>other.end(),<sp/>std::back_inserter(m_filters));</highlight></codeline>
-<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="612"><highlight class="normal"></highlight></codeline>
-<codeline lineno="613"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Comparison<sp/>*&gt;<sp/>m_filters;</highlight></codeline>
-<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/>Type<sp/>m_type<sp/>=<sp/>Type::AllOf;</highlight></codeline>
-<codeline lineno="616"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="617"><highlight class="normal"></highlight></codeline>
-<codeline lineno="618"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="619"><highlight class="normal"></highlight></codeline>
-<codeline lineno="620"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_filters" kindref="compound">Filters</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_filters" kindref="compound">Filters</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::initializer_list&lt;Comparison<sp/>*&gt;<sp/>&amp;comp)</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::copy(comp.begin(),<sp/>comp.end(),<sp/>std::back_inserter(m_filters));</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"></highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_add" kindref="compound">Add</ref>(<ref refid="classvrv_1_1_comparison" kindref="compound">Comparison</ref><sp/>*comp)<sp/>{<sp/>m_filters.push_back(comp);<sp/>}</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Clear()<sp/>{<sp/>m_filters.clear();<sp/>}</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetType(Type<sp/>type)<sp/>{<sp/>m_type<sp/>=<sp/>type;<sp/>}</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565" refid="classvrv_1_1_filters_1ab8a0e3b0097f4fee2d91f78ba735d336" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_filters_1ab8a0e3b0097f4fee2d91f78ba735d336" kindref="member">Apply</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="566"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>condition<sp/>=<sp/>[object](<ref refid="classvrv_1_1_comparison" kindref="compound">Comparison</ref><sp/>*iter)<sp/>{</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ignore<sp/>any<sp/>class<sp/>comparison<sp/>which<sp/>does<sp/>not<sp/>match<sp/>the<sp/>object<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_class_id_comparison" kindref="compound">ClassIdComparison</ref><sp/>*cmp<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="classvrv_1_1_class_id_comparison" kindref="compound">ClassIdComparison</ref><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(iter);</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!cmp<sp/>||<sp/>(cmp-&gt;GetType()<sp/>!=<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">-&gt;GetClassId()))<sp/>{</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*iter)(object);</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(m_type)<sp/>{</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Type::AnyOf:<sp/>{</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::any_of(m_filters.cbegin(),<sp/>m_filters.cend(),<sp/>condition);</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Type::AllOf:</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/>{</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::all_of(m_filters.cbegin(),<sp/>m_filters.cend(),<sp/>condition);</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"></highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_filters" kindref="compound">Filters</ref><sp/>&amp;operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::initializer_list&lt;Comparison<sp/>*&gt;<sp/>&amp;other)</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_filters.clear();</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::copy(other.begin(),<sp/>other.end(),<sp/>std::back_inserter(m_filters));</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"></highlight></codeline>
+<codeline lineno="593"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Comparison<sp/>*&gt;<sp/>m_filters;</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/>Type<sp/>m_type<sp/>=<sp/>Type::AllOf;</highlight></codeline>
+<codeline lineno="596"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"></highlight></codeline>
+<codeline lineno="598"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight></codeline>
+<codeline lineno="600"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/comparison.h"/>
   </compounddef>
