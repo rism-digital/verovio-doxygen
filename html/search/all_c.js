@@ -111,5 +111,6 @@ var searchData=
   ['mspace_911',['MSpace',['../classvrv_1_1_m_space.html',1,'vrv']]],
   ['multirest_912',['MultiRest',['../classvrv_1_1_multi_rest.html',1,'vrv']]],
   ['multirpt_913',['MultiRpt',['../classvrv_1_1_multi_rpt.html',1,'vrv']]],
-  ['musicxmlinput_914',['MusicXmlInput',['../classvrv_1_1_music_xml_input.html',1,'vrv']]]
+  ['musicxmlinput_914',['MusicXmlInput',['../classvrv_1_1_music_xml_input.html',1,'vrv']]],
+  ['methods_20not_20available_20in_20the_20javascript_20toolkit_915',['Methods not available in the JavaScript toolkit',['../group__nojs.html',1,'']]]
 ];
