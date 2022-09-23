@@ -7,7 +7,7 @@ var classvrv_1_1_trans_pitch =
     [ "GetAccidG", "classvrv_1_1_trans_pitch.html#a49aefe0cf99b4eb857e610d06172990c", null ],
     [ "GetAccidW", "classvrv_1_1_trans_pitch.html#a3ededa5e636428387d7f56eaca933bfc", null ],
     [ "GetPitchName", "classvrv_1_1_trans_pitch.html#a833f9bfb827dc2c5d1d03f70ccbca8d7", null ],
-    [ "GetPitchString", "classvrv_1_1_trans_pitch.html#ab00f22bf5b14ddf4e1c8b66a9946a903", null ],
+    [ "GetPitchString", "classvrv_1_1_trans_pitch.html#a38163a735fd96a7cd65c3249ced54f3f", null ],
     [ "GetSimplePitchString", "classvrv_1_1_trans_pitch.html#a4414400a81318c4b7980c20e58dab5a4", null ],
     [ "IsValid", "classvrv_1_1_trans_pitch.html#a1e32e1f907bc1da56fb80368cbebe036", null ],
     [ "operator++", "classvrv_1_1_trans_pitch.html#aebe0169a0e3f20bc4841b81ca6cf809c", null ],

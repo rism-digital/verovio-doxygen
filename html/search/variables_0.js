@@ -77,7 +77,7 @@ var searchData=
   ['m_5fsurface_2504',['m_surface',['../classvrv_1_1_page.html#a2f188b167ed93af6d53128faa4b3dc90',1,'vrv::Page']]],
   ['m_5fsystemleftmar_2505',['m_systemLeftMar',['../classvrv_1_1_system.html#af19a983bddd62ef8f3eb0000add766ec',1,'vrv::System']]],
   ['m_5fsystemrightmar_2506',['m_systemRightMar',['../classvrv_1_1_system.html#a00b7543c20a944c462b5b8b6ab0a0f13',1,'vrv::System']]],
-  ['m_5ftext_2507',['m_text',['../classvrv_1_1_text.html#ac8b56c524e22c536a37c696f22837412',1,'vrv::Text']]],
+  ['m_5ftext_2507',['m_text',['../classvrv_1_1_text.html#a50feb6e50bce68d771ebdf99c2820f25',1,'vrv::Text']]],
   ['m_5ftimespanningelements_2508',['m_timeSpanningElements',['../classvrv_1_1_staff.html#a172c03af3f8a3beb704f4bb35a751966',1,'vrv::Staff']]],
   ['m_5funsupported_2509',['m_unsupported',['../classvrv_1_1_object.html#a74ae0995caefb72a71445ba43fce0652',1,'vrv::Object']]],
   ['m_5fvisibility_2510',['m_visibility',['../classvrv_1_1_editorial_element.html#aeac215256d1fb1a8bb10a813be1c0eea',1,'vrv::EditorialElement::m_visibility()'],['../classvrv_1_1_mdiv.html#a2feff2dd52fe229fb3346921ef6610d9',1,'vrv::Mdiv::m_visibility()'],['../classvrv_1_1_system_element.html#ad69627f50c22cf7349d3d304ce3b550d',1,'vrv::SystemElement::m_visibility()']]],

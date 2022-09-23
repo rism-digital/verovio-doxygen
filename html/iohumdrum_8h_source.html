@@ -949,18 +949,18 @@ $(document).ready(function(){initNavTree('iohumdrum_8h_source.html',''); initRes
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    <span class="keyword">static</span> std::string getDateString();</div>
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    <span class="keyword">static</span> std::string getReferenceValue(<span class="keyword">const</span> std::string &amp;key, std::vector&lt;hum::HumdrumLine *&gt; &amp;references);</div>
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> replace(std::string &amp;str, <span class="keyword">const</span> std::string &amp;oldStr, <span class="keyword">const</span> std::string &amp;newStr);</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> replace(std::wstring &amp;str, <span class="keyword">const</span> std::wstring &amp;oldStr, <span class="keyword">const</span> std::wstring &amp;newStr);</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;    std::wstring cleanHarmString(<span class="keyword">const</span> std::string &amp;content);</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;    std::wstring cleanHarmString2(<span class="keyword">const</span> std::string &amp;content);</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;    std::wstring cleanHarmString3(<span class="keyword">const</span> std::string &amp;content);</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;    std::wstring cleanStringString(<span class="keyword">const</span> std::string &amp;content);</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;    std::vector&lt;std::wstring&gt; cleanFBString(std::vector&lt;std::string&gt; &amp;pieces, hum::HTp token);</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;    std::wstring cleanFBString2(std::vector&lt;std::string&gt; &amp;pieces, hum::HTp token);</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> replace(std::u32string &amp;str, <span class="keyword">const</span> std::u32string &amp;oldStr, <span class="keyword">const</span> std::u32string &amp;newStr);</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;    std::u32string cleanHarmString(<span class="keyword">const</span> std::string &amp;content);</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;    std::u32string cleanHarmString2(<span class="keyword">const</span> std::string &amp;content);</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;    std::u32string cleanHarmString3(<span class="keyword">const</span> std::string &amp;content);</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;    std::u32string cleanStringString(<span class="keyword">const</span> std::string &amp;content);</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;    std::vector&lt;std::u32string&gt; cleanFBString(std::vector&lt;std::string&gt; &amp;pieces, hum::HTp token);</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;    std::u32string cleanFBString2(std::vector&lt;std::string&gt; &amp;pieces, hum::HTp token);</div>
 <div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;    std::vector&lt;std::string&gt; splitFBString(<span class="keyword">const</span> std::string &amp;content, <span class="keyword">const</span> std::string &amp;separator = <span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;    std::wstring getVisualFBAccidental(<span class="keywordtype">int</span> accidental);</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    std::wstring convertFBNumber(<span class="keyword">const</span> std::string &amp;input, hum::HTp token);</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;    std::u32string getVisualFBAccidental(<span class="keywordtype">int</span> accidental);</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    std::u32string convertFBNumber(<span class="keyword">const</span> std::string &amp;input, hum::HTp token);</div>
 <div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;    <span class="keywordtype">void</span> checkForLineContinuations(hum::HTp token);</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    std::wstring convertNumberToWstring(<span class="keywordtype">int</span> number);</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    std::u32string convertNumberToWstring(<span class="keywordtype">int</span> number);</div>
 <div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160; </div>
 <div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;    <span class="comment">// m_filename == Filename to read/was read.</span></div>
@@ -1268,7 +1268,7 @@ $(document).ready(function(){initNavTree('iohumdrum_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>iohumdrum.h</b></li>
-    <li class="footer">Generated on Thu Sep 22 2022 06:34:43 for Verovio by
+    <li class="footer">Generated on Fri Sep 23 2022 11:44:24 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

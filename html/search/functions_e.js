@@ -27,7 +27,7 @@ var searchData=
   ['setascurrent_2346',['SetAsCurrent',['../classvrv_1_1_score.html#ac1074a91c1f31fa6d78e177dc152e4fe',1,'vrv::Score']]],
   ['setasreferenceobject_2347',['SetAsReferenceObject',['../classvrv_1_1_object.html#a9bc335e3bc5405f5dbaae757b5629996',1,'vrv::Object']]],
   ['setboundingbox_2348',['SetBoundingBox',['../classvrv_1_1_glyph.html#a3191a35305471ae3312c883944eba295',1,'vrv::Glyph']]],
-  ['setboundingboxglyph_2349',['SetBoundingBoxGlyph',['../classvrv_1_1_bounding_box.html#abc4feb5675ff672b2e3a94b4a65403b5',1,'vrv::BoundingBox']]],
+  ['setboundingboxglyph_2349',['SetBoundingBoxGlyph',['../classvrv_1_1_bounding_box.html#a7eccd9ca1e458dccab9c6b9fb7a24ec4',1,'vrv::BoundingBox']]],
   ['setcautionaryscoredef_2350',['SetCautionaryScoreDef',['../classvrv_1_1_object.html#a3a95154b135f78a323dafdfec2a76e2d',1,'vrv::Object']]],
   ['setclosestnoteortabdursym_2351',['SetClosestNoteOrTabDurSym',['../classvrv_1_1_beam_element_coord.html#abd402f9d51ce8ecc55ab130c148e3c27',1,'vrv::BeamElementCoord']]],
   ['setcss_2352',['SetCss',['../classvrv_1_1_svg_device_context.html#aa908539e4a0e5fe193b3aa47d639cda7',1,'vrv::SvgDeviceContext']]],
@@ -84,6 +84,6 @@ var searchData=
   ['splitmultival_2403',['SplitMultival',['../classvrv_1_1_artic.html#ac7bf2f16b9558129980adb1c29b6b0c2',1,'vrv::Artic']]],
   ['stablesort_2404',['StableSort',['../classvrv_1_1_object.html#ac97807a0dabfdf0d1d483f7f3e9427f9',1,'vrv::Object']]],
   ['stackgraceelement_2405',['StackGraceElement',['../classvrv_1_1_grace_aligner.html#adafd1105e2839665f24976d256653ad8',1,'vrv::GraceAligner']]],
-  ['stemmodtoglyph_2406',['StemModToGlyph',['../classvrv_1_1_layer_element.html#a42028faa4ea287cbfffb858e7bb370a1',1,'vrv::LayerElement']]],
+  ['stemmodtoglyph_2406',['StemModToGlyph',['../classvrv_1_1_layer_element.html#afa714fc21d6337b9f3144741dd95efef',1,'vrv::LayerElement']]],
   ['strtostr_2407',['StrToStr',['../classvrv_1_1_att.html#a65b7bc2210f5f4dad29bac63eafbcf4d',1,'vrv::Att']]]
 ];

@@ -53,7 +53,7 @@ var NAVTREEINDEX =
 "classvrv_1_1_editor_toolkit.html#a1be064ecb6ffea1b27712648a19e1312",
 "classvrv_1_1_find_all_const_between_params.html#ae3871273aa3c21542d2c55ebffac8503",
 "classvrv_1_1_gliss.html#ad60f3dace4d5979694a8cae64b5e354f",
-"classvrv_1_1_humdrum_input.html#a5b5795f5d08ead5b6d1dc6db7816b990",
+"classvrv_1_1_humdrum_input.html#a58cc0e8d37e95ee47ec150ecb99a5a51",
 "classvrv_1_1_humdrum_signifiers.html#a2449a6fbc5727cf3152ab6290a20038e",
 "classvrv_1_1_layer_count_in_time_span_params.html#a9100696a27425b5b661178d59d27e81a",
 "classvrv_1_1_m_rpt.html#a6929653836e5273d87ea270138612e64",
@@ -67,7 +67,7 @@ var NAVTREEINDEX =
 "classvrv_1_1_stemmed_drawing_interface.html#a9e931a9ab6bc750491ecd67a1a3bddb8",
 "classvrv_1_1_system_element.html#a05f7db61b9e9958376bdfe89b2d2f6a5",
 "classvrv_1_1_toolkit.html#ab29688374542c0d3fb3cf5007bd23ab2",
-"classvrv_1_1_view.html#a10fbb9af42d900ffe40032522ce1b225",
+"classvrv_1_1_view.html#a10a5f844ac299bc92820e64a62ae0a89",
 "classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e.html#a3d4c0ff1cae9fcea1128b3eccf9231db",
 "mspace_8h_source.html"
 ];
