@@ -6,6 +6,7 @@ var classvrv_1_1_resources =
     [ "StyleAttributes", "classvrv_1_1_resources.html#a70b43d51304eaa6165edfa5a46e40bcf", null ],
     [ "Resources", "classvrv_1_1_resources.html#aa62412fa9ac02f49c2b5f05279d77dba", null ],
     [ "~Resources", "classvrv_1_1_resources.html#a8d262db67c0625b9f25d0eb60abab5b5", null ],
+    [ "GetCurrentFontName", "classvrv_1_1_resources.html#a40626b74dcf02949509cc603f8756542", null ],
     [ "GetGlyph", "classvrv_1_1_resources.html#a73f8553831bc7f5b9549273831435e8c", null ],
     [ "GetGlyph", "classvrv_1_1_resources.html#ab5bc7928b34f63c14de1229623cdac62", null ],
     [ "GetGlyphCode", "classvrv_1_1_resources.html#acabfaea592f8211df74611fffdc9a682", null ],

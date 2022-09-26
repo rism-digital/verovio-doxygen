@@ -13,7 +13,7 @@ var classvrv_1_1_font_info =
     [ "GetWeight", "classvrv_1_1_font_info.html#a984eb13b7c1669bfef168bd9b2efed89", null ],
     [ "GetWidthToHeightRatio", "classvrv_1_1_font_info.html#a750378599461869ceb1ce684e150614f", null ],
     [ "SetEncoding", "classvrv_1_1_font_info.html#a267d705a74cfb4c2a7e09cf0ee10c825", null ],
-    [ "SetFaceName", "classvrv_1_1_font_info.html#a2f7575feaa37ec2e82e5dced7c099dd3", null ],
+    [ "SetFaceName", "classvrv_1_1_font_info.html#a9871466499424166dcba2a9ae9b36eb7", null ],
     [ "SetFamily", "classvrv_1_1_font_info.html#a3b6c654cc9d43f04b15d7c004aa70fb1", null ],
     [ "SetPointSize", "classvrv_1_1_font_info.html#aaa4030af9a2d1c134e45c8f693c6f374", null ],
     [ "SetSmuflFont", "classvrv_1_1_font_info.html#ad1c721fb0ed319cc4d30b3b25da53e53", null ],
