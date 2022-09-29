@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="note_8h" kind="file" language="C++">
     <compoundname>note.h</compoundname>
-    <includes local="no">assert.h</includes>
+    <includes local="no">cassert</includes>
     <includes refid="accid_8h" local="yes">accid.h</includes>
     <includes local="yes">atts_externalsymbols.h</includes>
     <includes local="yes">atts_frettab.h</includes>
@@ -58,9 +58,6 @@
       </node>
       <node id="31">
         <label>atts_frettab.h</label>
-      </node>
-      <node id="2">
-        <label>assert.h</label>
       </node>
       <node id="27">
         <label>iterator</label>
@@ -176,6 +173,9 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+      </node>
+      <node id="2">
+        <label>cassert</label>
       </node>
       <node id="20">
         <label>string</label>
@@ -460,7 +460,7 @@
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__VRV_NOTE_H__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__VRV_NOTE_H__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
@@ -554,7 +554,7 @@
 <codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>TabGrp<sp/>*<ref refid="classvrv_1_1_note_1a33d2ecc1b1027f9f6c4a978b6f268073" kindref="member">IsTabGrpNote</ref>();</highlight></codeline>
 <codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TabGrp<sp/>*<ref refid="classvrv_1_1_note_1a33d2ecc1b1027f9f6c4a978b6f268073" kindref="member">IsTabGrpNote</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="159"></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>std::wstring<sp/>GetTabFretString(data_NOTATIONTYPE<sp/>notationType)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>std::u32string<sp/>GetTabFretString(data_NOTATIONTYPE<sp/>notationType)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="166"></codeline>
 <codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_note_1a5d75468877187a156178c642140853a3" kindref="member">IsUnisonWith</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Note<sp/>*note,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ignoreAccid<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="172"><highlight class="normal"></highlight></codeline>
@@ -570,9 +570,9 @@
 <codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>GetStemDownNW(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>staffSize,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isCueSize)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CalcStemLenInThirdUnits(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref><sp/>*staff,<sp/>data_STEMDIRECTION<sp/>stemDir)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="203"></codeline>
-<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">wchar_t</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_note_1a91cd1b216fa7a33db3e79699c329a563" kindref="member">GetMensuralNoteheadGlyph</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>char32_t<sp/><ref refid="classvrv_1_1_note_1aa4c61822c22f9917dfb1324e13ad09f9" kindref="member">GetMensuralNoteheadGlyph</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"></highlight></codeline>
-<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">wchar_t</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_note_1a3f66a8f4adf8eb4174b3c1ec388ad05d" kindref="member">GetNoteheadGlyph</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>duration)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>char32_t<sp/><ref refid="classvrv_1_1_note_1a576f836b797cb299da153cfe5e0f0b8a" kindref="member">GetNoteheadGlyph</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>duration)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="213"><highlight class="normal"></highlight></codeline>
 <codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_note_1a8ed755dba1d936d881bb4d3267db6fd9" kindref="member">IsEnharmonicWith</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_note" kindref="compound">Note</ref><sp/>*note)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="218"><highlight class="normal"></highlight></codeline>

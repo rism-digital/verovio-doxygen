@@ -265,81 +265,85 @@ $(document).ready(function(){initNavTree('slur_8h_source.html',''); initResizabl
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    std::pair&lt;int, int&gt; CalcBrokenLoc(<span class="keyword">const</span> Staff *staff, <span class="keywordtype">int</span> startLoc, <span class="keywordtype">int</span> endLoc) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="comment">// Check if the slur resembles portato</span></div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    PortatoSlurType IsPortatoSlur(<span class="keyword">const</span> Doc *doc, <span class="keyword">const</span> Note *startNote, <span class="keyword">const</span> Chord *startChord) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="comment">// Discard certain spanned elements</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordtype">void</span> FilterSpannedElements(FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> margin);</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="comment">// Detect collisions near the endpoints</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    NearEndCollision DetectCollisionsNearEnd(</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> margin);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="comment">// Check if the slur starts or ends on a beam</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">bool</span> StartsOnBeam()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;HasBoundaryOnBeam(<span class="keyword">true</span>); }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordtype">bool</span> EndsOnBeam()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;HasBoundaryOnBeam(<span class="keyword">false</span>); }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordtype">bool</span> HasBoundaryOnBeam(<span class="keywordtype">bool</span> isStart) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="comment">// Discard certain spanned elements</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordtype">void</span> FilterSpannedElements(FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> margin);</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="comment">// Calculate the vertical shift of the slur end points</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    std::pair&lt;int, int&gt; CalcEndPointShift(</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">double</span> flexibility, <span class="keywordtype">int</span> margin);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="comment">// Detect collisions near the endpoints</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    NearEndCollision DetectCollisionsNearEnd(</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> margin);</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="comment">// Apply the vertical shift of the slur end points</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordtype">void</span> ApplyEndPointShift(</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        FloatingCurvePositioner *curve, BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> endPointShiftLeft, <span class="keywordtype">int</span> endPointShiftRight);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="comment">// Calculate the vertical shift of the slur end points</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    std::pair&lt;int, int&gt; CalcEndPointShift(</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">double</span> flexibility, <span class="keywordtype">int</span> margin);</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="comment">// Calculate slur from bulge values</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordtype">void</span> AdjustSlurFromBulge(FloatingCurvePositioner *curve, BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> unit);</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="comment">// Check whether control points should be adjusted horizontally</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordtype">bool</span> AllowControlOffsetAdjustment(<span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">double</span> symmetry, <span class="keywordtype">int</span> unit) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="comment">// Calculate the horizontal control point offset</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    std::tuple&lt;bool, int, int&gt; CalcControlPointOffset(</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> margin);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="comment">// Apply the vertical shift of the slur end points</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordtype">void</span> ApplyEndPointShift(</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        FloatingCurvePositioner *curve, BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> endPointShiftLeft, <span class="keywordtype">int</span> endPointShiftRight);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="comment">// Calculate slur from bulge values</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordtype">void</span> AdjustSlurFromBulge(FloatingCurvePositioner *curve, BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> unit);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="comment">// Check whether control points should be adjusted horizontally</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordtype">bool</span> AllowControlOffsetAdjustment(<span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">double</span> symmetry, <span class="keywordtype">int</span> unit) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="comment">// Calculate the vertical control point shift</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    ControlPointAdjustment CalcControlPointVerticalShift(</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">double</span> symmetry, <span class="keywordtype">int</span> margin);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="comment">// Calculate the horizontal control point offset</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    std::tuple&lt;bool, int, int&gt; CalcControlPointOffset(</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">int</span> margin);</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="comment">// Solve the constraints for vertical control point adjustment</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    std::pair&lt;int, int&gt; SolveControlPointConstraints(</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keyword">const</span> std::list&lt;ControlPointConstraint&gt; &amp;constraints, <span class="keywordtype">double</span> symmetry = 0.0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="comment">// Calculate the vertical control point shift</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    ControlPointAdjustment CalcControlPointVerticalShift(</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">double</span> symmetry, <span class="keywordtype">int</span> margin);</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="comment">// Improve the slur shape by adjusting the control point heights</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">void</span> AdjustSlurShape(BezierCurve &amp;bezierCurve, curvature_CURVEDIR dir, <span class="keywordtype">int</span> unit);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="comment">// Solve the constraints for vertical control point adjustment</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    std::pair&lt;int, int&gt; SolveControlPointConstraints(</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keyword">const</span> std::list&lt;ControlPointConstraint&gt; &amp;constraints, <span class="keywordtype">double</span> symmetry = 0.0) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="comment">// Calculate the vertical control point shift</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    ControlPointAdjustment CalcControlPointShift(FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve,</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="keyword">const</span> ArrayOfFloatingCurvePositioners &amp;innerCurves, <span class="keywordtype">double</span> symmetry, <span class="keywordtype">int</span> margin);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="comment">// Calculate the vertical shift of the slur end points</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    std::pair&lt;int, int&gt; CalcEndPointShift(FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve,</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keyword">const</span> ArrayOfFloatingCurvePositioners &amp;innerCurves, <span class="keywordtype">double</span> flexibility, <span class="keywordtype">int</span> margin);</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="comment">// Shift end points for collisions nearby</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keywordtype">void</span> ShiftEndPoints(</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordtype">int</span> &amp;shiftLeft, <span class="keywordtype">int</span> &amp;shiftRight, <span class="keywordtype">double</span> ratio, <span class="keywordtype">int</span> intersection, <span class="keywordtype">double</span> flexibility, <span class="keywordtype">bool</span> isBelow) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="comment">// Determine a quadratic interpolation function between zero and one and evaluate it</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordtype">double</span> CalcQuadraticInterpolation(<span class="keywordtype">double</span> zeroAt, <span class="keywordtype">double</span> oneAt, <span class="keywordtype">double</span> arg) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="comment">// Rotate the slope by a given number of degrees, but choose smaller angles if already close to the vertical axis</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="comment">// Choose doublingBound as the positive slope value where doubling has the same effect as rotating:</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="comment">// tan(atan(doublingBound) + degrees * PI / 180.0) ≈ 2.0 * doublingBound</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordtype">double</span> RotateSlope(<span class="keywordtype">double</span> slope, <span class="keywordtype">double</span> degrees, <span class="keywordtype">double</span> doublingBound, <span class="keywordtype">bool</span> upwards) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="comment">// Calculate the minimal angle &lt;)C1P1P2 or &lt;)P1P2C2</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordtype">float</span> GetMinControlPointAngle(<span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">float</span> angle, <span class="keywordtype">int</span> unit) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="comment">// Improve the slur shape by adjusting the control point heights</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">void</span> AdjustSlurShape(BezierCurve &amp;bezierCurve, curvature_CURVEDIR dir, <span class="keywordtype">int</span> unit);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="comment">// Calculate the vertical control point shift</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    ControlPointAdjustment CalcControlPointShift(FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve,</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keyword">const</span> ArrayOfFloatingCurvePositioners &amp;innerCurves, <span class="keywordtype">double</span> symmetry, <span class="keywordtype">int</span> margin);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="comment">// Calculate the vertical shift of the slur end points</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    std::pair&lt;int, int&gt; CalcEndPointShift(FloatingCurvePositioner *curve, <span class="keyword">const</span> BezierCurve &amp;bezierCurve,</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keyword">const</span> ArrayOfFloatingCurvePositioners &amp;innerCurves, <span class="keywordtype">double</span> flexibility, <span class="keywordtype">int</span> margin);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="comment">// Shift end points for collisions nearby</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordtype">void</span> ShiftEndPoints(</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordtype">int</span> &amp;shiftLeft, <span class="keywordtype">int</span> &amp;shiftRight, <span class="keywordtype">double</span> ratio, <span class="keywordtype">int</span> intersection, <span class="keywordtype">double</span> flexibility, <span class="keywordtype">bool</span> isBelow) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="comment">// Determine a quadratic interpolation function between zero and one and evaluate it</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">double</span> CalcQuadraticInterpolation(<span class="keywordtype">double</span> zeroAt, <span class="keywordtype">double</span> oneAt, <span class="keywordtype">double</span> arg) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="comment">// Rotate the slope by a given number of degrees, but choose smaller angles if already close to the vertical axis</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="comment">// Choose doublingBound as the positive slope value where doubling has the same effect as rotating:</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="comment">// tan(atan(doublingBound) + degrees * PI / 180.0) ≈ 2.0 * doublingBound</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordtype">double</span> RotateSlope(<span class="keywordtype">double</span> slope, <span class="keywordtype">double</span> degrees, <span class="keywordtype">double</span> doublingBound, <span class="keywordtype">bool</span> upwards) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    SlurCurveDirection m_drawingCurveDir;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;};</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="comment">// Calculate the minimal angle &lt;)C1P1P2 or &lt;)P1P2C2</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">float</span> GetMinControlPointAngle(<span class="keyword">const</span> BezierCurve &amp;bezierCurve, <span class="keywordtype">float</span> angle, <span class="keywordtype">int</span> unit) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    SlurCurveDirection m_drawingCurveDir;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;};</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructvrv_1_1_spanned_elements_html"><div class="ttname"><a href="structvrv_1_1_spanned_elements.html">vrv::SpannedElements</a></div><div class="ttdoc">Contains the layer elements used for collision detection.</div><div class="ttdef"><b>Definition:</b> slur.h:28</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html_a435e30e4f2700e05bf8100ce95451c86"><div class="ttname"><a href="classvrv_1_1_slur.html#a435e30e4f2700e05bf8100ce95451c86">vrv::Slur::AdjustSlur</a></div><div class="ttdeci">void AdjustSlur(const Doc *doc, FloatingCurvePositioner *curve, int unit)</div><div class="ttdoc">Slur adjustment.</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html_a479f96c0f063d497932d474bcd693871"><div class="ttname"><a href="classvrv_1_1_slur.html#a479f96c0f063d497932d474bcd693871">vrv::Slur::AddPositionerToArticulations</a></div><div class="ttdeci">void AddPositionerToArticulations(FloatingCurvePositioner *curve)</div><div class="ttdoc">Add curve positioner to articulations.</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:57</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:58</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html_a48b731aec93e5ea7ba9513fcdcc0f60e"><div class="ttname"><a href="classvrv_1_1_slur.html#a48b731aec93e5ea7ba9513fcdcc0f60e">vrv::Slur::InitBezierControlSides</a></div><div class="ttdeci">void InitBezierControlSides(BezierCurve &amp;bezier, curvature_CURVEDIR curveDir) const</div><div class="ttdoc">Set the bezier control sides depending on the curve direction.</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html"><div class="ttname"><a href="classvrv_1_1_slur.html">vrv::Slur</a></div><div class="ttdef"><b>Definition:</b> slur.h:79</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html_ac1b0ad6940cdd79b1d418080cdabaa5f"><div class="ttname"><a href="classvrv_1_1_slur.html#ac1b0ad6940cdd79b1d418080cdabaa5f">vrv::Slur::CalcSpannedElements</a></div><div class="ttdeci">void CalcSpannedElements(FloatingCurvePositioner *curve)</div><div class="ttdoc">Recalculate the spanned elements of the curve positioner.</div></div>
@@ -358,7 +362,7 @@ $(document).ready(function(){initNavTree('slur_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>slur.h</b></li>
-    <li class="footer">Generated on Fri Jul 15 2022 11:59:38 for Verovio by
+    <li class="footer">Generated on Thu Sep 29 2022 15:51:49 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

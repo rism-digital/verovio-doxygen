@@ -124,6 +124,7 @@ var hierarchy =
         [ "vrv::Phrase", "classvrv_1_1_phrase.html", null ]
       ] ],
       [ "vrv::Syllable", "classvrv_1_1_syllable.html", null ],
+      [ "vrv::Symbol", "classvrv_1_1_symbol.html", null ],
       [ "vrv::Tie", "classvrv_1_1_tie.html", [
         [ "vrv::Lv", "classvrv_1_1_lv.html", null ]
       ] ],
@@ -264,6 +265,7 @@ var hierarchy =
     [ "AttExtSym", null, [
       [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
       [ "vrv::Artic", "classvrv_1_1_artic.html", null ],
+      [ "vrv::Caesura", "classvrv_1_1_caesura.html", null ],
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
       [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
@@ -272,6 +274,7 @@ var hierarchy =
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
       [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
+      [ "vrv::Symbol", "classvrv_1_1_symbol.html", null ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
       [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
     ] ],
@@ -396,6 +399,7 @@ var hierarchy =
         [ "vrv::Lb", "classvrv_1_1_lb.html", null ],
         [ "vrv::Num", "classvrv_1_1_num.html", null ],
         [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
+        [ "vrv::Symbol", "classvrv_1_1_symbol.html", null ],
         [ "vrv::Text", "classvrv_1_1_text.html", null ]
       ] ]
     ] ],
@@ -738,12 +742,13 @@ var hierarchy =
     ] ],
     [ "AttStems", null, [
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
-      [ "vrv::Note", "classvrv_1_1_note.html", null ],
-      [ "vrv::Stem", "classvrv_1_1_stem.html", null ]
+      [ "vrv::Note", "classvrv_1_1_note.html", null ]
     ] ],
     [ "AttStemsCmn", null, [
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
-      [ "vrv::Note", "classvrv_1_1_note.html", null ],
+      [ "vrv::Note", "classvrv_1_1_note.html", null ]
+    ] ],
+    [ "AttStemVis", null, [
       [ "vrv::Stem", "classvrv_1_1_stem.html", null ]
     ] ],
     [ "AttSylLog", null, [
@@ -787,6 +792,7 @@ var hierarchy =
     [ "AttTyped", null, [
       [ "vrv::ControlElement", "classvrv_1_1_control_element.html", null ],
       [ "vrv::EditorialElement", "classvrv_1_1_editorial_element.html", null ],
+      [ "vrv::Facsimile", "classvrv_1_1_facsimile.html", null ],
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::LayerDef", "classvrv_1_1_layer_def.html", null ],
       [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
@@ -818,6 +824,7 @@ var hierarchy =
       [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
       [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
+      [ "vrv::Symbol", "classvrv_1_1_symbol.html", null ],
       [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
     ] ],
     [ "AttVerticalAlign", null, [
@@ -838,7 +845,8 @@ var hierarchy =
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
-      [ "vrv::Staff", "classvrv_1_1_staff.html", null ]
+      [ "vrv::Staff", "classvrv_1_1_staff.html", null ],
+      [ "vrv::Stem", "classvrv_1_1_stem.html", null ]
     ] ],
     [ "AttWhitespace", null, [
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ]

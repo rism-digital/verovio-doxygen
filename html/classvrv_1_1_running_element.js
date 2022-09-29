@@ -14,6 +14,7 @@ var classvrv_1_1_running_element =
     [ "GetColHeight", "classvrv_1_1_running_element.html#aa48cff3c850eb97a2ee139b4db020604", null ],
     [ "GetContentHeight", "classvrv_1_1_running_element.html#a0d8b430b18a0b74bd3011ea9a11b95e7", null ],
     [ "GetDrawingPage", "classvrv_1_1_running_element.html#a2d6e14c44591a620a4439b7966eb6d32", null ],
+    [ "GetDrawingPage", "classvrv_1_1_running_element.html#a94e91f5eed2242c185784edf44f14539", null ],
     [ "GetDrawingX", "classvrv_1_1_running_element.html#a79506b46add9f740c57c0afe5ecb0af3", null ],
     [ "GetDrawingY", "classvrv_1_1_running_element.html#a933bdcdf9263374039bca99c17ac54a2", null ],
     [ "GetDrawingYRel", "classvrv_1_1_running_element.html#a15732cf67a3883d9f0433af6aab7e975", null ],
@@ -28,7 +29,7 @@ var classvrv_1_1_running_element =
     [ "Reset", "classvrv_1_1_running_element.html#a2bcacf9ba0d635e41808e63d6e9cf425", null ],
     [ "Save", "classvrv_1_1_running_element.html#a6e7b3828ab10391643324100dcf3717e", null ],
     [ "SaveEnd", "classvrv_1_1_running_element.html#a37d274e6f685be829b69d047b5c24db4", null ],
-    [ "SetCurrentPageNum", "classvrv_1_1_running_element.html#a1fb0858c1b662b2c96b33c66b055b69a", null ],
+    [ "SetCurrentPageNum", "classvrv_1_1_running_element.html#a9715a70dc4ff18c6599ae8cfc2f7e31f", null ],
     [ "SetDrawingPage", "classvrv_1_1_running_element.html#ad99cddf73705a541160bed1e7b34454b", null ],
     [ "SetDrawingYRel", "classvrv_1_1_running_element.html#a212de9d05319398c856b6a065bfa203e", null ]
 ];

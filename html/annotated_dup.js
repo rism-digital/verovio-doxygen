@@ -332,6 +332,7 @@ var annotated_dup =
       [ "SvgDeviceContext", "classvrv_1_1_svg_device_context.html", "classvrv_1_1_svg_device_context" ],
       [ "Syl", "classvrv_1_1_syl.html", "classvrv_1_1_syl" ],
       [ "Syllable", "classvrv_1_1_syllable.html", "classvrv_1_1_syllable" ],
+      [ "Symbol", "classvrv_1_1_symbol.html", "classvrv_1_1_symbol" ],
       [ "System", "classvrv_1_1_system.html", "classvrv_1_1_system" ],
       [ "SystemAligner", "classvrv_1_1_system_aligner.html", "classvrv_1_1_system_aligner" ],
       [ "SystemElement", "classvrv_1_1_system_element.html", "classvrv_1_1_system_element" ],

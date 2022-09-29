@@ -8,7 +8,7 @@ var classvrv_1_1_pedal =
     [ "GenerateMIDI", "classvrv_1_1_pedal.html#a792b9bc3e417f4b149d447886c7f5b75", null ],
     [ "GetClassName", "classvrv_1_1_pedal.html#af24a83a273daf5c3ab0e72e0a5127505", null ],
     [ "GetPedalForm", "classvrv_1_1_pedal.html#a49f1ba78418daa2ba47af4e8ab0277a3", null ],
-    [ "GetPedalGlyph", "classvrv_1_1_pedal.html#a68b550860ce390cecc9d04441256a950", null ],
+    [ "GetPedalGlyph", "classvrv_1_1_pedal.html#a07a9260b7a5e4999fdd32d1bbd10c6d3", null ],
     [ "GetTimePointInterface", "classvrv_1_1_pedal.html#ab243eb990a388a5259ea2c1e2d90fc0d", null ],
     [ "GetTimePointInterface", "classvrv_1_1_pedal.html#a737339b0c5f99d825e422af863105482", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_pedal.html#a8e8433ff619574bfdd28d77105e64110", null ],

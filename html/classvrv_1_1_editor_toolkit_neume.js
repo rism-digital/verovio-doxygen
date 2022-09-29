@@ -32,7 +32,7 @@ var classvrv_1_1_editor_toolkit_neume =
     [ "Resize", "classvrv_1_1_editor_toolkit_neume.html#adfbae0984c8091483137b651fcee28b5", null ],
     [ "Set", "classvrv_1_1_editor_toolkit_neume.html#a485218816f0b1b8fc1a5faf96830cba6", null ],
     [ "SetClef", "classvrv_1_1_editor_toolkit_neume.html#a03f19235626c5060c2f43a5044827779", null ],
-    [ "SetText", "classvrv_1_1_editor_toolkit_neume.html#ac59c26419bc60f5d0ed3c0a452df1f8e", null ],
+    [ "SetText", "classvrv_1_1_editor_toolkit_neume.html#add4a905e8023e7a21b65e55fc40c6384", null ],
     [ "Split", "classvrv_1_1_editor_toolkit_neume.html#abad909b7228f86d3668e057ae16482f4", null ],
     [ "ToggleLigature", "classvrv_1_1_editor_toolkit_neume.html#a3feb9772f4a971797b1e072131ce696c", null ],
     [ "Ungroup", "classvrv_1_1_editor_toolkit_neume.html#a9f7bd667fcec3c23690bd5833b29ada1", null ]

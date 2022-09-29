@@ -282,17 +282,22 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="342" column="15"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_1abc6706d4a84ab68b431208a791f7ca02" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_1a059978a0881d8fb74f163808c9186b47" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int vrv::Beam::GetBeamPartDuration</definition>
-        <argsstring>(const Object *object) const</argsstring>
+        <argsstring>(const Object *object, bool includeRests=true) const</argsstring>
         <name>GetBeamPartDuration</name>
         <param>
           <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
           <declname>object</declname>
         </param>
+        <param>
+          <type>bool</type>
+          <declname>includeRests</declname>
+          <defval>true</defval>
+        </param>
         <briefdescription>
-<para>Return duration of beam part that are closest to the specified object X position. </para>
+<para>Return duration of the beam part that is closest to the specified object X position. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -436,14 +441,19 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="388" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_1ae23cb7f5a6c8f24996e13a6e2e12ffe6" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_1ac9348763f6a1dec01f260884674ca79a" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int vrv::Beam::GetBeamPartDuration</definition>
-        <argsstring>(int x) const</argsstring>
+        <argsstring>(int x, bool includeRests=true) const</argsstring>
         <name>GetBeamPartDuration</name>
         <param>
           <type>int</type>
           <declname>x</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeRests</declname>
+          <defval>true</defval>
         </param>
         <briefdescription>
 <para>Return duration of beam part for specified X coordinate. </para>
@@ -588,7 +598,7 @@
           <edgelabel>m_alignment</edgelabel>
         </childnode>
       </node>
-      <node id="77">
+      <node id="76">
         <label>AttNoteVisMensural</label>
       </node>
       <node id="8">
@@ -623,7 +633,7 @@
         <childnode refid="12" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="62">
+      <node id="61">
         <label>AttDurationRatio</label>
       </node>
       <node id="51">
@@ -636,7 +646,7 @@
       <node id="22">
         <label>AttCourseLog</label>
       </node>
-      <node id="60">
+      <node id="59">
         <label>AttDurationLogical</label>
       </node>
       <node id="34">
@@ -664,7 +674,7 @@
           <edgelabel>m_drawingStaffDef</edgelabel>
         </childnode>
       </node>
-      <node id="66">
+      <node id="65">
         <label>AttNoteGes</label>
       </node>
       <node id="26">
@@ -673,10 +683,10 @@
       <node id="36">
         <label>AttDistances</label>
       </node>
-      <node id="58">
+      <node id="57">
         <label>AttBeamSecondary</label>
       </node>
-      <node id="72">
+      <node id="71">
         <label>AttColoration</label>
       </node>
       <node id="12">
@@ -710,14 +720,14 @@
         <childnode refid="34" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="79">
+      <node id="80">
         <label>vrv::TabDurSym</label>
         <link refid="classvrv_1_1_tab_dur_sym"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
         <childnode refid="51" relation="public-inheritance">
         </childnode>
-        <childnode refid="80" relation="public-inheritance">
+        <childnode refid="81" relation="public-inheritance">
         </childnode>
       </node>
       <node id="6">
@@ -737,21 +747,23 @@
         </childnode>
         <childnode refid="51" relation="public-inheritance">
         </childnode>
-        <childnode refid="56" relation="public-inheritance">
+        <childnode refid="55" relation="public-inheritance">
         </childnode>
-        <childnode refid="65" relation="public-inheritance">
+        <childnode refid="64" relation="public-inheritance">
         </childnode>
-        <childnode refid="69" relation="public-inheritance">
+        <childnode refid="68" relation="public-inheritance">
         </childnode>
         <childnode refid="47" relation="public-inheritance">
         </childnode>
-        <childnode refid="72" relation="public-inheritance">
+        <childnode refid="71" relation="public-inheritance">
         </childnode>
         <childnode refid="16" relation="public-inheritance">
         </childnode>
-        <childnode refid="73" relation="public-inheritance">
+        <childnode refid="72" relation="public-inheritance">
         </childnode>
         <childnode refid="53" relation="public-inheritance">
+        </childnode>
+        <childnode refid="73" relation="public-inheritance">
         </childnode>
         <childnode refid="74" relation="public-inheritance">
         </childnode>
@@ -761,11 +773,9 @@
         </childnode>
         <childnode refid="77" relation="public-inheritance">
         </childnode>
-        <childnode refid="54" relation="public-inheritance">
-        </childnode>
-        <childnode refid="55" relation="public-inheritance">
-        </childnode>
         <childnode refid="78" relation="public-inheritance">
+        </childnode>
+        <childnode refid="79" relation="public-inheritance">
         </childnode>
         <childnode refid="18" relation="public-inheritance">
         </childnode>
@@ -794,7 +804,7 @@
         <childnode refid="18" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="63">
+      <node id="62">
         <label>AttFermataPresent</label>
       </node>
       <node id="33">
@@ -811,16 +821,16 @@
       <node id="37">
         <label>AttNotationType</label>
       </node>
-      <node id="65">
+      <node id="64">
         <label>vrv::PitchInterface</label>
         <link refid="classvrv_1_1_pitch_interface"/>
         <childnode refid="6" relation="public-inheritance">
         </childnode>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
         <childnode refid="66" relation="public-inheritance">
         </childnode>
         <childnode refid="67" relation="public-inheritance">
-        </childnode>
-        <childnode refid="68" relation="public-inheritance">
         </childnode>
       </node>
       <node id="49">
@@ -829,7 +839,7 @@
         <childnode refid="50" relation="usage">
           <edgelabel>m_closestNote</edgelabel>
         </childnode>
-        <childnode refid="79" relation="usage">
+        <childnode refid="80" relation="usage">
           <edgelabel>m_tabDurSym</edgelabel>
         </childnode>
         <childnode refid="2" relation="usage">
@@ -846,16 +856,18 @@
         <label>vrv::DrawingListInterface</label>
         <link refid="classvrv_1_1_drawing_list_interface"/>
       </node>
-      <node id="68">
+      <node id="67">
         <label>AttPitch</label>
       </node>
       <node id="20">
         <label>AttCoordY1</label>
       </node>
-      <node id="56">
+      <node id="55">
         <label>vrv::DurationInterface</label>
         <link refid="classvrv_1_1_duration_interface"/>
         <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="56" relation="public-inheritance">
         </childnode>
         <childnode refid="57" relation="public-inheritance">
         </childnode>
@@ -871,8 +883,6 @@
         </childnode>
         <childnode refid="63" relation="public-inheritance">
         </childnode>
-        <childnode refid="64" relation="public-inheritance">
-        </childnode>
       </node>
       <node id="21">
         <label>vrv::Tuning</label>
@@ -882,29 +892,29 @@
         <childnode refid="22" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="70">
+      <node id="69">
         <label>AttStaffLoc</label>
       </node>
-      <node id="78">
+      <node id="79">
         <label>AttTiePresent</label>
       </node>
       <node id="45">
         <label>AttBeamedWith</label>
       </node>
-      <node id="71">
+      <node id="70">
         <label>AttStaffLocPitched</label>
       </node>
       <node id="35">
         <label>vrv::StaffDefDrawingInterface</label>
         <link refid="classvrv_1_1_staff_def_drawing_interface"/>
       </node>
-      <node id="54">
+      <node id="77">
         <label>AttStems</label>
       </node>
-      <node id="75">
+      <node id="74">
         <label>AttNoteGesTab</label>
       </node>
-      <node id="57">
+      <node id="56">
         <label>AttAugmentDots</label>
       </node>
       <node id="23">
@@ -942,17 +952,17 @@
       <node id="7">
         <label>AttFacsimile</label>
       </node>
-      <node id="67">
+      <node id="66">
         <label>AttOctave</label>
       </node>
-      <node id="69">
+      <node id="68">
         <label>vrv::PositionInterface</label>
         <link refid="classvrv_1_1_position_interface"/>
         <childnode refid="6" relation="public-inheritance">
         </childnode>
-        <childnode refid="70" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
-        <childnode refid="71" relation="public-inheritance">
+        <childnode refid="70" relation="public-inheritance">
         </childnode>
       </node>
       <node id="42">
@@ -973,7 +983,7 @@
         <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="76">
+      <node id="75">
         <label>AttNoteHeads</label>
       </node>
       <node id="32">
@@ -982,10 +992,10 @@
       <node id="39">
         <label>AttStaffDefLog</label>
       </node>
-      <node id="55">
+      <node id="78">
         <label>AttStemsCmn</label>
       </node>
-      <node id="64">
+      <node id="63">
         <label>AttStaffIdent</label>
       </node>
       <node id="44">
@@ -1004,10 +1014,10 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="73">
+      <node id="72">
         <label>AttExtSym</label>
       </node>
-      <node id="74">
+      <node id="73">
         <label>AttMidiVelocity</label>
       </node>
       <node id="52">
@@ -1019,8 +1029,11 @@
         </childnode>
         <childnode refid="54" relation="public-inheritance">
         </childnode>
-        <childnode refid="55" relation="public-inheritance">
+        <childnode refid="18" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="54">
+        <label>AttStemVis</label>
       </node>
       <node id="47">
         <label>AttColor</label>
@@ -1028,7 +1041,7 @@
       <node id="29">
         <label>AttMeasureNumbers</label>
       </node>
-      <node id="61">
+      <node id="60">
         <label>AttDurationQuality</label>
       </node>
       <node id="38">
@@ -1038,7 +1051,7 @@
         <label>vrv::ObjectListInterface</label>
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
-      <node id="59">
+      <node id="58">
         <label>AttDurationGestural</label>
       </node>
       <node id="1">
@@ -1063,7 +1076,7 @@
       <node id="41">
         <label>AttTimeBase</label>
       </node>
-      <node id="80">
+      <node id="81">
         <label>AttNNumberLike</label>
       </node>
       <node id="11">
@@ -1223,7 +1236,7 @@
       <member refid="classvrv_1_1_layer_element_1a5d22f797b37bd60c3571dda3b91bebc2" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetAlignment</name></member>
       <member refid="classvrv_1_1_layer_element_1a3b4902898ea009daf4242585c329d39b" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetAlignmentDuration</name></member>
       <member refid="classvrv_1_1_layer_element_1a2fb9126c18e349cefe4a66479c97f17a" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetAlignmentLayerN</name></member>
-      <member refid="classvrv_1_1_object_1a3eb3c52e16525ed1a559a825fa85e00e" prot="public" virt="virtual"><scope>vrv::Beam</scope><name>GetAlignmentLeftRight</name></member>
+      <member refid="classvrv_1_1_object_1a389c0c7f2a9e74b340c44dbc68e7e886" prot="public" virt="virtual"><scope>vrv::Beam</scope><name>GetAlignmentLeftRight</name></member>
       <member refid="classvrv_1_1_layer_element_1a817e0da7e6a5f8508fa02b0a39d4f1a5" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetAncestorBeam</name></member>
       <member refid="classvrv_1_1_layer_element_1affe0a49e0066adfa5699a73b2033d902" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetAncestorBeam</name></member>
       <member refid="classvrv_1_1_layer_element_1a627fdafe6ad90a68616a82d30b259b5d" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetAncestorFTrem</name></member>
@@ -1232,6 +1245,8 @@
       <member refid="classvrv_1_1_object_1a323a71a1cb0b2a956e37c4e3da49a0fb" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetAncestors</name></member>
       <member refid="classvrv_1_1_layer_element_1a40c452b4d86ad373111099cca9a36fba" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetAncestorStaff</name></member>
       <member refid="classvrv_1_1_layer_element_1ac11fb05cc13263eb4ff2f923b02c3a38" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetAncestorStaff</name></member>
+      <member refid="classvrv_1_1_object_1a6cadd7a0feb1425165258e599090f9f9" prot="public" virt="virtual"><scope>vrv::Beam</scope><name>GetAreaPosInterface</name></member>
+      <member refid="classvrv_1_1_object_1aa91dde17d5e02f9fb15441d175ec9ab1" prot="public" virt="virtual"><scope>vrv::Beam</scope><name>GetAreaPosInterface</name></member>
       <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual" ambiguityscope="vrv::"><scope>vrv::Beam</scope><name>GetAttClasses</name></member>
       <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual" ambiguityscope="vrv::LinkingInterface::"><scope>vrv::Beam</scope><name>GetAttClasses</name></member>
       <member refid="classvrv_1_1_object_1aeb7e152a62704071901972bbfa06062c" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetAttributes</name></member>
@@ -1239,11 +1254,11 @@
       <member refid="classvrv_1_1_beam_1aea2dbf22048c56831aad736c815b83b5" prot="public" virt="virtual"><scope>vrv::Beam</scope><name>GetBeamDrawingInterface</name></member>
       <member refid="classvrv_1_1_beam_1a30b0869084e93fa6f7b3b63120f2aae2" prot="public" virt="virtual"><scope>vrv::Beam</scope><name>GetBeamDrawingInterface</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1acc72272b8e6226e5016687b9b8f3c056" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetBeamOverflow</name></member>
-      <member refid="classvrv_1_1_beam_1abc6706d4a84ab68b431208a791f7ca02" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetBeamPartDuration</name></member>
-      <member refid="classvrv_1_1_beam_1ae23cb7f5a6c8f24996e13a6e2e12ffe6" prot="protected" virt="non-virtual"><scope>vrv::Beam</scope><name>GetBeamPartDuration</name></member>
+      <member refid="classvrv_1_1_beam_1a059978a0881d8fb74f163808c9186b47" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetBeamPartDuration</name></member>
+      <member refid="classvrv_1_1_beam_1ac9348763f6a1dec01f260884674ca79a" prot="protected" virt="non-virtual"><scope>vrv::Beam</scope><name>GetBeamPartDuration</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3dbe5a481e20ab4d0d9fdd47708d1c2f" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetBezierThicknessCoefficient</name></member>
       <member refid="classvrv_1_1_bounding_box_1a91a7bb36d11f909e84caab997fb49c0c" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetBottomBy</name></member>
-      <member refid="classvrv_1_1_bounding_box_1aa3fc5bcc7d25b6e975fad50b11edd781" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetBoundingBoxGlyph</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a5a9da745d928e71989c23eca8d4b77d7" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetBoundingBoxGlyph</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2b025880f04cefa1cb37b7e6f8bfb8f1" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetBoundingBoxGlyphFontSize</name></member>
       <member refid="classvrv_1_1_object_1a41604299ea07255f348600609ef90c8b" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetChild</name></member>
       <member refid="classvrv_1_1_object_1a63a2dec6cb07702ae147ec3541d44496" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>GetChild</name></member>
@@ -1403,7 +1418,7 @@
       <member refid="classvrv_1_1_bounding_box_1abe8bb676a5c670242888d9034daa5a22" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>HasContentVerticalBB</name></member>
       <member refid="classvrv_1_1_beam_drawing_interface_1ab2375a61b834b355a669a1490913fb04" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>HasCoords</name></member>
       <member refid="classvrv_1_1_layer_element_1a88c53380f669585365356b17cbeaedb2" prot="public" virt="virtual"><scope>vrv::Beam</scope><name>HasCrossStaff</name></member>
-      <member refid="classvrv_1_1_object_1a32d88cd25d424a5c15b014efe736ee20" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>HasDescendant</name></member>
+      <member refid="classvrv_1_1_object_1a1f38d88b64a7f79bfea9303a16c1f556" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>HasDescendant</name></member>
       <member refid="classvrv_1_1_object_1ac9dd387934b8960b47b96a0c05bb1b84" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>HasEditorialContent</name></member>
       <member refid="classvrv_1_1_bounding_box_1a1dfd7207c5f8431bcb56c88b5c469992" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>HasEmptyBB</name></member>
       <member refid="classvrv_1_1_object_list_interface_1a6fa4993dc2bcb87049c3bdab6a32056b" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>HasEmptyList</name></member>
@@ -1591,7 +1606,7 @@
       <member refid="classvrv_1_1_object_1a9aad68e2f4f0edf8bf413a2a5f727f1b" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>SeedID</name></member>
       <member refid="classvrv_1_1_layer_element_1a3b8755f52f0d0a2758a7bf66bab388b0" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>SetAlignmentLayerN</name></member>
       <member refid="classvrv_1_1_object_1a9bc335e3bc5405f5dbaae757b5629996" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>SetAsReferenceObject</name></member>
-      <member refid="classvrv_1_1_bounding_box_1abc4feb5675ff672b2e3a94b4a65403b5" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>SetBoundingBoxGlyph</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a7eccd9ca1e458dccab9c6b9fb7a24ec4" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>SetBoundingBoxGlyph</name></member>
       <member refid="classvrv_1_1_object_1a3a95154b135f78a323dafdfec2a76e2d" prot="public" virt="virtual"><scope>vrv::Beam</scope><name>SetCautionaryScoreDef</name></member>
       <member refid="classvrv_1_1_object_1af0db1dd88b7d2f6c9068934312ce86c8" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>SetClosingComment</name></member>
       <member refid="classvrv_1_1_object_1a3b47aa3445a48e681db41607cedcd4b4" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>SetComment</name></member>
@@ -1614,7 +1629,7 @@
       <member refid="classvrv_1_1_object_1a6c529b9574392b6c2baeaf8470e2a989" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>sortByUlx</name></member>
       <member refid="classvrv_1_1_object_1aa8caf0942b1ff1c02f6f8e879397ca21" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>SortChildren</name></member>
       <member refid="classvrv_1_1_object_1ac97807a0dabfdf0d1d483f7f3e9427f9" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>StableSort</name></member>
-      <member refid="classvrv_1_1_layer_element_1a42028faa4ea287cbfffb858e7bb370a1" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>StemModToGlyph</name></member>
+      <member refid="classvrv_1_1_layer_element_1afa714fc21d6337b9f3144741dd95efef" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>StemModToGlyph</name></member>
       <member refid="classvrv_1_1_object_1a3c91cd86fa79d2b64ae677f2b2a64e9d" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>SwapID</name></member>
       <member refid="classvrv_1_1_layer_element_1acb9de9e04da28faefe842c4d56e2c1a0" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>ThisOrSameasLink</name></member>
       <member refid="classvrv_1_1_layer_element_1a95fc27772641b7aa65665ed69369bd9a" prot="public" virt="non-virtual"><scope>vrv::Beam</scope><name>ThisOrSameasLink</name></member>
