@@ -639,9 +639,6 @@ var hierarchy =
     [ "AttScalable", null, [
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
     ] ],
-    [ "AttScoreDefGes", null, [
-      [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ]
-    ] ],
     [ "AttSectionVis", null, [
       [ "vrv::Section", "classvrv_1_1_section.html", null ]
     ] ],
@@ -780,6 +777,9 @@ var hierarchy =
     [ "AttTremMeasured", null, [
       [ "vrv::BTrem", "classvrv_1_1_b_trem.html", null ],
       [ "vrv::FTrem", "classvrv_1_1_f_trem.html", null ]
+    ] ],
+    [ "AttTuning", null, [
+      [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ]
     ] ],
     [ "AttTupletVis", null, [
       [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ],

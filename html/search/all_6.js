@@ -173,7 +173,7 @@ var searchData=
   ['getpages_565',['GetPages',['../classvrv_1_1_doc.html#abe3b780b5309b75326beac396cc5677c',1,'vrv::Doc']]],
   ['getpagewithelement_566',['GetPageWithElement',['../classvrv_1_1_toolkit.html#a234616d8b4ab54ec1b7efb79e5ae464d',1,'vrv::Toolkit']]],
   ['getparent_567',['GetParent',['../classvrv_1_1_object.html#ad2f81f683e9a94713b451395ff781627',1,'vrv::Object']]],
-  ['getpedalform_568',['GetPedalForm',['../classvrv_1_1_pedal.html#a49f1ba78418daa2ba47af4e8ab0277a3',1,'vrv::Pedal']]],
+  ['getpedalform_568',['GetPedalForm',['../classvrv_1_1_pedal.html#a09cba0ba9a6158ff73a97718a518f8fa',1,'vrv::Pedal']]],
   ['getpedalglyph_569',['GetPedalGlyph',['../classvrv_1_1_pedal.html#a07a9260b7a5e4999fdd32d1bbd10c6d3',1,'vrv::Pedal']]],
   ['getpitchclass_570',['GetPitchClass',['../classvrv_1_1_note.html#a4dd530526f7cbf5f8433976479fbc3ee',1,'vrv::Note']]],
   ['getposition_571',['GetPosition',['../classvrv_1_1_beam_drawing_interface.html#a1c8290b1b628b5ddc11c330ebea2ba87',1,'vrv::BeamDrawingInterface']]],
