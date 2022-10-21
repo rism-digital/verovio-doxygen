@@ -312,6 +312,9 @@ var hierarchy =
     [ "AttHairpinVis", null, [
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ]
     ] ],
+    [ "AttHeight", null, [
+      [ "vrv::Graphic", "classvrv_1_1_graphic.html", null ]
+    ] ],
     [ "AttHorizontalAlign", null, [
       [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", [
         [ "vrv::Fig", "classvrv_1_1_fig.html", null ],
@@ -631,6 +634,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "AttPointing", null, [
+      [ "vrv::Graphic", "classvrv_1_1_graphic.html", null ],
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ]
     ] ],
     [ "AttRestVisMensural", null, [
@@ -793,6 +797,7 @@ var hierarchy =
       [ "vrv::ControlElement", "classvrv_1_1_control_element.html", null ],
       [ "vrv::EditorialElement", "classvrv_1_1_editorial_element.html", null ],
       [ "vrv::Facsimile", "classvrv_1_1_facsimile.html", null ],
+      [ "vrv::Graphic", "classvrv_1_1_graphic.html", null ],
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::LayerDef", "classvrv_1_1_layer_def.html", null ],
       [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
@@ -852,6 +857,7 @@ var hierarchy =
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ]
     ] ],
     [ "AttWidth", null, [
+      [ "vrv::Graphic", "classvrv_1_1_graphic.html", null ],
       [ "vrv::MultiRest", "classvrv_1_1_multi_rest.html", null ]
     ] ],
     [ "vrv::BeamElementCoord", "classvrv_1_1_beam_element_coord.html", null ],
@@ -875,6 +881,7 @@ var hierarchy =
           [ "vrv::ControlElement", "classvrv_1_1_control_element.html", null ],
           [ "vrv::SystemElement", "classvrv_1_1_system_element.html", null ]
         ] ],
+        [ "vrv::Graphic", "classvrv_1_1_graphic.html", null ],
         [ "vrv::GrpSym", "classvrv_1_1_grp_sym.html", null ],
         [ "vrv::HorizontalAligner", "classvrv_1_1_horizontal_aligner.html", [
           [ "vrv::GraceAligner", "classvrv_1_1_grace_aligner.html", null ],

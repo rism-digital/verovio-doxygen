@@ -162,6 +162,7 @@ var annotated_dup =
       [ "Glyph", "classvrv_1_1_glyph.html", "classvrv_1_1_glyph" ],
       [ "GraceAligner", "classvrv_1_1_grace_aligner.html", "classvrv_1_1_grace_aligner" ],
       [ "GraceGrp", "classvrv_1_1_grace_grp.html", "classvrv_1_1_grace_grp" ],
+      [ "Graphic", "classvrv_1_1_graphic.html", "classvrv_1_1_graphic" ],
       [ "GrpSym", "classvrv_1_1_grp_sym.html", "classvrv_1_1_grp_sym" ],
       [ "Hairpin", "classvrv_1_1_hairpin.html", "classvrv_1_1_hairpin" ],
       [ "HalfmRpt", "classvrv_1_1_halfm_rpt.html", "classvrv_1_1_halfm_rpt" ],

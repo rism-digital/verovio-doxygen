@@ -253,5 +253,6 @@ var searchData=
   ['glyph_645',['Glyph',['../classvrv_1_1_glyph.html',1,'vrv']]],
   ['gracealigner_646',['GraceAligner',['../classvrv_1_1_grace_aligner.html',1,'vrv::GraceAligner'],['../classvrv_1_1_grace_aligner.html#ab08bb82df59699af188bcc229d98ea52',1,'vrv::GraceAligner::GraceAligner()']]],
   ['gracegrp_647',['GraceGrp',['../classvrv_1_1_grace_grp.html',1,'vrv']]],
-  ['grpsym_648',['GrpSym',['../classvrv_1_1_grp_sym.html',1,'vrv']]]
+  ['graphic_648',['Graphic',['../classvrv_1_1_graphic.html',1,'vrv']]],
+  ['grpsym_649',['GrpSym',['../classvrv_1_1_grp_sym.html',1,'vrv']]]
 ];

@@ -65,6 +65,7 @@ var files_dup =
     [ "gliss.h", "gliss_8h_source.html", null ],
     [ "glyph.h", "glyph_8h_source.html", null ],
     [ "gracegrp.h", "gracegrp_8h_source.html", null ],
+    [ "graphic.h", "graphic_8h_source.html", null ],
     [ "grpsym.h", "grpsym_8h_source.html", null ],
     [ "hairpin.h", "hairpin_8h_source.html", null ],
     [ "halfmrpt.h", "halfmrpt_8h_source.html", null ],
