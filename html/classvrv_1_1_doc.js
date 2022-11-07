@@ -128,6 +128,6 @@ var classvrv_1_1_doc =
     [ "m_notationType", "classvrv_1_1_doc.html#ac8c03d319f5980f42db9faba0253cb6f", null ],
     [ "m_selectionEnd", "classvrv_1_1_doc.html#a09204779df852c2945adbdd6ba53da3c", null ],
     [ "m_selectionFollowing", "classvrv_1_1_doc.html#a89c7ad2d30217a5fe090be0488471b5e", null ],
-    [ "m_selectionPreceeding", "classvrv_1_1_doc.html#adf834cb92ca7e8c484fb77053abc7568", null ],
+    [ "m_selectionPreceding", "classvrv_1_1_doc.html#a7799b02ae55c461ab0fc6818682390a6", null ],
     [ "m_selectionStart", "classvrv_1_1_doc.html#a7bc36256d5c168301dd36501963747cc", null ]
 ];

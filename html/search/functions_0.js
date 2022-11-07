@@ -88,5 +88,6 @@ var searchData=
   ['applyppufactor_1718',['ApplyPPUFactor',['../classvrv_1_1_layer_element.html#afaa8567cca80a4f2769468ffd546a2be',1,'vrv::LayerElement::ApplyPPUFactor()'],['../classvrv_1_1_measure.html#a2047d6b9134715bae2adac5821aef630',1,'vrv::Measure::ApplyPPUFactor()'],['../classvrv_1_1_object.html#a1579484058fb14c4c8cdf4ad58249db6',1,'vrv::Object::ApplyPPUFactor()'],['../classvrv_1_1_page.html#a8785e89ad3d81f119949e426f47516a5',1,'vrv::Page::ApplyPPUFactor()'],['../classvrv_1_1_staff.html#a4e90d2cf494ef942f66bf67bd4cf2277',1,'vrv::Staff::ApplyPPUFactor()'],['../classvrv_1_1_system.html#a6e0bec4b2a4dd5a6a66bbed6b1eaed20',1,'vrv::System::ApplyPPUFactor()']]],
   ['approximatebezierboundingbox_1719',['ApproximateBezierBoundingBox',['../classvrv_1_1_bounding_box.html#ae9a22cf5d306abb22ff5f557e81bd9af',1,'vrv::BoundingBox']]],
   ['arechildrenalignedto_1720',['AreChildrenAlignedTo',['../classvrv_1_1_dir.html#a25fc59a356e110c4b87676f735526bb9',1,'vrv::Dir']]],
-  ['arepointsclose_1721',['ArePointsClose',['../classvrv_1_1_bounding_box.html#aa466757865d8f747cbaaf232e3051177',1,'vrv::BoundingBox']]]
+  ['arepointsclose_1721',['ArePointsClose',['../classvrv_1_1_bounding_box.html#aa466757865d8f747cbaaf232e3051177',1,'vrv::BoundingBox']]],
+  ['attachzone_1722',['AttachZone',['../classvrv_1_1_facsimile_interface.html#ac8c7d16dc7228cd38a657ceb49af5e3e',1,'vrv::FacsimileInterface']]]
 ];
