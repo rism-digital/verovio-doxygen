@@ -20,10 +20,10 @@ var searchData=
   ['lem_798',['Lem',['../classvrv_1_1_lem.html',1,'vrv']]],
   ['ligature_799',['Ligature',['../classvrv_1_1_ligature.html',1,'vrv']]],
   ['linkinginterface_800',['LinkingInterface',['../classvrv_1_1_linking_interface.html',1,'vrv']]],
-  ['loaddata_801',['LoadData',['../group__nojs.html#ga9a08fd8e89da6c2c709eaae69e28b2b1',1,'vrv::Toolkit']]],
-  ['loadfile_802',['LoadFile',['../group__nojs.html#ga3859f9341d415376b7d8f11a1aa8e352',1,'vrv::Toolkit']]],
+  ['loaddata_801',['LoadData',['../classvrv_1_1_toolkit.html#a9a08fd8e89da6c2c709eaae69e28b2b1',1,'vrv::Toolkit']]],
+  ['loadfile_802',['LoadFile',['../classvrv_1_1_toolkit.html#a3859f9341d415376b7d8f11a1aa8e352',1,'vrv::Toolkit']]],
   ['loadfooter_803',['LoadFooter',['../classvrv_1_1_running_element.html#a809a5cb7c0a8a873168576894ea5d3a0',1,'vrv::RunningElement']]],
-  ['loadzipdatabase64_804',['LoadZipDataBase64',['../group__nojs.html#gaeae2ad736af0f0d436c9131745057556',1,'vrv::Toolkit']]],
-  ['loadzipdatabuffer_805',['LoadZipDataBuffer',['../group__nojs.html#gabf4167617faed8347a7da3291e927e05',1,'vrv::Toolkit']]],
+  ['loadzipdatabase64_804',['LoadZipDataBase64',['../classvrv_1_1_toolkit.html#aeae2ad736af0f0d436c9131745057556',1,'vrv::Toolkit']]],
+  ['loadzipdatabuffer_805',['LoadZipDataBuffer',['../classvrv_1_1_toolkit.html#abf4167617faed8347a7da3291e927e05',1,'vrv::Toolkit']]],
   ['lv_806',['Lv',['../classvrv_1_1_lv.html',1,'vrv']]]
 ];
