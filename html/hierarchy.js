@@ -8,7 +8,7 @@ var hierarchy =
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ]
     ] ],
-    [ "AttAccidentalGestural", null, [
+    [ "AttAccidentalGes", null, [
       [ "vrv::Accid", "classvrv_1_1_accid.html", null ]
     ] ],
     [ "AttAccidLog", null, [
@@ -23,7 +23,7 @@ var hierarchy =
     [ "AttArticulation", null, [
       [ "vrv::Artic", "classvrv_1_1_artic.html", null ]
     ] ],
-    [ "AttArticulationGestural", null, [
+    [ "AttArticulationGes", null, [
       [ "vrv::Artic", "classvrv_1_1_artic.html", null ]
     ] ],
     [ "AttAugmentDots", null, [
@@ -227,10 +227,10 @@ var hierarchy =
     [ "AttDurationDefault", null, [
       [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ]
     ] ],
-    [ "AttDurationGestural", null, [
+    [ "AttDurationGes", null, [
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ]
     ] ],
-    [ "AttDurationLogical", null, [
+    [ "AttDurationLog", null, [
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ]
     ] ],
     [ "AttDurationQuality", null, [
@@ -769,10 +769,10 @@ var hierarchy =
       [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
     ] ],
-    [ "AttTimestamp2Logical", null, [
+    [ "AttTimestamp2Log", null, [
       [ "vrv::TimeSpanningInterface", "classvrv_1_1_time_spanning_interface.html", null ]
     ] ],
-    [ "AttTimestampLogical", null, [
+    [ "AttTimestampLog", null, [
       [ "vrv::TimePointInterface", "classvrv_1_1_time_point_interface.html", null ]
     ] ],
     [ "AttTransposition", null, [
