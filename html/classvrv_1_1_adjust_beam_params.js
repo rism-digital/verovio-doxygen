@@ -8,6 +8,7 @@ var classvrv_1_1_adjust_beam_params =
     [ "m_isOtherLayer", "classvrv_1_1_adjust_beam_params.html#a829b4c7b25dd482b8a7a25466969ce99", null ],
     [ "m_overlapMargin", "classvrv_1_1_adjust_beam_params.html#a1e5583ec7029699e452fbadfb9529f27", null ],
     [ "m_x1", "classvrv_1_1_adjust_beam_params.html#a2080479e7985d2bca9b2995a416c151a", null ],
+    [ "m_x2", "classvrv_1_1_adjust_beam_params.html#a883ef81b4d46ca1426c2171a7d6c1ba2", null ],
     [ "m_y1", "classvrv_1_1_adjust_beam_params.html#ab1698f0b6576a4faa89e6dfaf092cdad", null ],
     [ "m_y2", "classvrv_1_1_adjust_beam_params.html#a3501b66f591d69e49e7753b261c2a340", null ]
 ];
