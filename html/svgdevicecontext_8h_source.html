@@ -223,69 +223,73 @@ $(document).ready(function(){initNavTree('svgdevicecontext_8h_source.html',''); 
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordtype">void</span> VrvTextFont() { m_vrvTextFont = <span class="keyword">true</span>; }</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordtype">void</span> Commit(<span class="keywordtype">bool</span> xml_declaration);</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordtype">void</span> WriteLine(std::string);</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    std::string GetColour(<span class="keywordtype">int</span> colour);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    pugi::xml_node AppendChild(std::string name);</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordtype">void</span> AppendStrokeLineCap(pugi::xml_node node, <span class="keyword">const</span> Pen &amp;pen);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordtype">void</span> AppendStrokeLineJoin(pugi::xml_node node, <span class="keyword">const</span> Pen &amp;pen);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordtype">void</span> AppendStrokeDashArray(pugi::xml_node node, <span class="keyword">const</span> Pen &amp;pen);</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordtype">bool</span> m_vrvTextFont;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="comment">// we use a std::stringstream because we want to prepend the &lt;defs&gt; which will know only when we reach the end of</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="comment">// the page</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="comment">// some viewer seem to support to have the &lt;defs&gt; at the end, but some do not (pdf2svg, for example)</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="comment">// for this reason, the full svg is finally written a string from the destructor or when Flush() is called</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    std::ostringstream m_outdata;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordtype">bool</span> m_committed; <span class="comment">// did we flushed the file?</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">int</span> m_originX, m_originY;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="comment">// holds the list of glyphs from the smufl font used so far</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="comment">// they will be added at the end of the file as &lt;defs&gt;</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    std::set&lt;const Glyph *&gt; m_smuflGlyphs;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="comment">// pugixml data</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    pugi::xml_document m_svgDoc;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    pugi::xml_node m_svgNode;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    pugi::xml_node m_pageNode;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    pugi::xml_node m_currentNode;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    std::list&lt;pugi::xml_node&gt; m_svgNodeStack;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="comment">// output as mm (for pdf generation with a 72 dpi)</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordtype">bool</span> m_mmOutput;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordtype">bool</span> m_facsimile;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="comment">// add bouding boxes in svg output</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordtype">bool</span> m_svgBoundingBoxes;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="comment">// use viewbox on svg root element</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordtype">bool</span> m_svgViewBox;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="comment">// output HTML5 data-* attributes</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keywordtype">bool</span> m_html5;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="comment">// additional CSS</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    std::string m_css;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="comment">// copy additional attributes of given elements to the SVG, in the form &quot;note@pname; layer@n&quot;</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    std::multimap&lt;ClassId, std::string&gt; m_svgAdditionalAttributes;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">// format output as raw, stripping extraneous whitespace and non-content newlines</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordtype">bool</span> m_formatRaw;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="comment">// remove xlink from href attributes</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">bool</span> m_removeXlink;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="comment">// indentation value (-1 for tabs)</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordtype">int</span> m_indent;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="comment">// prefix to be added to font glyphs</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    std::string m_glyphPostfixId;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;};</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor">#endif // __VRV_SVG_DC_H__</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordtype">void</span> VrvTextFontFallback() { m_vrvTextFontFallback = <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordtype">void</span> Commit(<span class="keywordtype">bool</span> xml_declaration);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordtype">void</span> WriteLine(std::string);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    std::string GetColour(<span class="keywordtype">int</span> colour);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    pugi::xml_node AppendChild(std::string name);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordtype">void</span> AppendStrokeLineCap(pugi::xml_node node, <span class="keyword">const</span> Pen &amp;pen);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordtype">void</span> AppendStrokeLineJoin(pugi::xml_node node, <span class="keyword">const</span> Pen &amp;pen);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordtype">void</span> AppendStrokeDashArray(pugi::xml_node node, <span class="keyword">const</span> Pen &amp;pen);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordtype">bool</span> m_vrvTextFont;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordtype">bool</span> m_vrvTextFontFallback;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="comment">// we use a std::stringstream because we want to prepend the &lt;defs&gt; which will know only when we reach the end of</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="comment">// the page</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="comment">// some viewer seem to support to have the &lt;defs&gt; at the end, but some do not (pdf2svg, for example)</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="comment">// for this reason, the full svg is finally written a string from the destructor or when Flush() is called</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    std::ostringstream m_outdata;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordtype">bool</span> m_committed; <span class="comment">// did we flushed the file?</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">int</span> m_originX, m_originY;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="comment">// holds the list of glyphs from the smufl font used so far</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="comment">// they will be added at the end of the file as &lt;defs&gt;</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    std::set&lt;const Glyph *&gt; m_smuflGlyphs;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="comment">// pugixml data</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    pugi::xml_document m_svgDoc;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    pugi::xml_node m_svgNode;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    pugi::xml_node m_pageNode;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    pugi::xml_node m_currentNode;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    std::list&lt;pugi::xml_node&gt; m_svgNodeStack;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="comment">// output as mm (for pdf generation with a 72 dpi)</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordtype">bool</span> m_mmOutput;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordtype">bool</span> m_facsimile;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">// add bouding boxes in svg output</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordtype">bool</span> m_svgBoundingBoxes;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="comment">// use viewbox on svg root element</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">bool</span> m_svgViewBox;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="comment">// output HTML5 data-* attributes</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordtype">bool</span> m_html5;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="comment">// additional CSS</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    std::string m_css;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="comment">// copy additional attributes of given elements to the SVG, in the form &quot;note@pname; layer@n&quot;</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    std::multimap&lt;ClassId, std::string&gt; m_svgAdditionalAttributes;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="comment">// format output as raw, stripping extraneous whitespace and non-content newlines</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">bool</span> m_formatRaw;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="comment">// remove xlink from href attributes</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordtype">bool</span> m_removeXlink;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="comment">// indentation value (-1 for tabs)</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordtype">int</span> m_indent;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="comment">// prefix to be added to font glyphs</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    std::string m_glyphPostfixId;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;};</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor">#endif // __VRV_SVG_DC_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_object_factory_html_a18433f31ae6a0aa75e9675cbf4f1b647"><div class="ttname"><a href="classvrv_1_1_object_factory.html#a18433f31ae6a0aa75e9675cbf4f1b647">vrv::ObjectFactory::GetClassId</a></div><div class="ttdeci">ClassId GetClassId(std::string name)</div><div class="ttdoc">Get the ClassId from the MEI element string name by making a lookup in the register.</div></div>
@@ -305,14 +309,14 @@ $(document).ready(function(){initNavTree('svgdevicecontext_8h_source.html',''); 
 <div class="ttc" id="aclassvrv_1_1_svg_device_context_html_a2f56ce603bd94fea5f23d21fa7117799"><div class="ttname"><a href="classvrv_1_1_svg_device_context.html#a2f56ce603bd94fea5f23d21fa7117799">vrv::SvgDeviceContext::AppendAdditionalAttributes</a></div><div class="ttdeci">void AppendAdditionalAttributes(Object *object)</div><div class="ttdoc">Append additional attributes, as given in m_svgAdditionalAttributes.</div></div>
 <div class="ttc" id="aclassvrv_1_1_view_html"><div class="ttname"><a href="classvrv_1_1_view.html">vrv::View</a></div><div class="ttdoc">This class is a drawing context and corresponds to the view of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> view.h:99</div></div>
 <div class="ttc" id="aclassvrv_1_1_svg_device_context_html_aab1bed2bb0017a81a2feb4682c95c93c"><div class="ttname"><a href="classvrv_1_1_svg_device_context.html#aab1bed2bb0017a81a2feb4682c95c93c">vrv::SvgDeviceContext::SetFormatRaw</a></div><div class="ttdeci">void SetFormatRaw(bool rawFormat)</div><div class="ttdoc">Set the SVG to have 'raw' formatting, with no extraneous whitespace or newlines.</div><div class="ttdef"><b>Definition:</b> svgdevicecontext.h:214</div></div>
-<div class="ttc" id="aclassvrv_1_1_point_html"><div class="ttname"><a href="classvrv_1_1_point.html">vrv::Point</a></div><div class="ttdoc">Simple class for representing points.</div><div class="ttdef"><b>Definition:</b> devicecontextbase.h:192</div></div>
+<div class="ttc" id="aclassvrv_1_1_point_html"><div class="ttname"><a href="classvrv_1_1_point.html">vrv::Point</a></div><div class="ttdoc">Simple class for representing points.</div><div class="ttdef"><b>Definition:</b> devicecontextbase.h:194</div></div>
 <div class="ttc" id="aclassvrv_1_1_svg_device_context_html_ae59f5620c868167fef4915c0dfe30618"><div class="ttname"><a href="classvrv_1_1_svg_device_context.html#ae59f5620c868167fef4915c0dfe30618">vrv::SvgDeviceContext::SetSvgBoundingBoxes</a></div><div class="ttdeci">void SetSvgBoundingBoxes(bool svgBoundingBoxes)</div><div class="ttdoc">Setting m_svgBoudingBoxes flag (false by default)</div><div class="ttdef"><b>Definition:</b> svgdevicecontext.h:194</div></div>
 <div class="ttc" id="aclassvrv_1_1_svg_device_context_html"><div class="ttname"><a href="classvrv_1_1_svg_device_context.html">vrv::SvgDeviceContext</a></div><div class="ttdoc">This class implements a drawing context for generating SVG files.</div><div class="ttdef"><b>Definition:</b> svgdevicecontext.h:39</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>svgdevicecontext.h</b></li>
-    <li class="footer">Generated on Fri Nov 11 2022 12:10:27 for Verovio by
+    <li class="footer">Generated on Fri Nov 11 2022 16:32:19 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
