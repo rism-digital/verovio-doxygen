@@ -574,9 +574,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>setTempoContent</b> (
 <tr class="memitem:a3456451e64157ab6c9c7cffa8113d09e"><td class="memItemLeft" align="right" valign="top"><a id="a3456451e64157ab6c9c7cffa8113d09e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>setLabelContent</b> (<a class="el" href="classvrv_1_1_label.html">Label</a> *label, const std::string &amp;text)</td></tr>
 <tr class="separator:a3456451e64157ab6c9c7cffa8113d09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59cb5cc3585d97b3abb6fdf1b4f7866e"><td class="memItemLeft" align="right" valign="top"><a id="a59cb5cc3585d97b3abb6fdf1b4f7866e"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>convertMusicSymbolNameToSmuflEntity</b> (const std::string &amp;text)</td></tr>
-<tr class="separator:a59cb5cc3585d97b3abb6fdf1b4f7866e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5724d377e249d4b0b61c5876816050a"><td class="memItemLeft" align="right" valign="top"><a id="ad5724d377e249d4b0b61c5876816050a"></a>
+std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>convertMusicSymbolNameToSmuflName</b> (const std::string &amp;text)</td></tr>
+<tr class="separator:ad5724d377e249d4b0b61c5876816050a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7332593c7955c707aad04da2bb708d03"><td class="memItemLeft" align="right" valign="top"><a id="a7332593c7955c707aad04da2bb708d03"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>processTerminalLong</b> (hum::HTp token)</td></tr>
 <tr class="separator:a7332593c7955c707aad04da2bb708d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1024,9 +1024,9 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getDataTokenId
 <tr class="memitem:af677a5e2baa8dc0e4a83d171a4d280dd"><td class="memItemLeft" align="right" valign="top"><a id="af677a5e2baa8dc0e4a83d171a4d280dd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>checkForFingeredHarmonic</b> (<a class="el" href="classvrv_1_1_chord.html">Chord</a> *chord, hum::HTp token)</td></tr>
 <tr class="separator:af677a5e2baa8dc0e4a83d171a4d280dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a848b44aede481ec41df2338ff72ccb1f"><td class="memItemLeft" align="right" valign="top"><a id="a848b44aede481ec41df2338ff72ccb1f"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getTempoScaling</b> (hum::HumdrumFile &amp;infile)</td></tr>
-<tr class="separator:a848b44aede481ec41df2338ff72ccb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4305c0eee1e374c894183c0efc5d483d"><td class="memItemLeft" align="right" valign="top"><a id="a4305c0eee1e374c894183c0efc5d483d"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>getGlobalTempoScaling</b> (hum::HumdrumFile &amp;infile)</td></tr>
+<tr class="separator:a4305c0eee1e374c894183c0efc5d483d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9692d225fb45bce337559b7cb88d52b"><td class="memItemLeft" align="right" valign="top"><a id="ac9692d225fb45bce337559b7cb88d52b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isTacet</b> (hum::HTp spinestart)</td></tr>
 <tr class="separator:ac9692d225fb45bce337559b7cb88d52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1063,6 +1063,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkForBeamStemSamea
 <tr class="memitem:a29ec8e8c74f1f6d6c7da1fa50ba560f3"><td class="memItemLeft" align="right" valign="top"><a id="a29ec8e8c74f1f6d6c7da1fa50ba560f3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>processInterpretationStuff</b> (hum::HTp token, int staffindex)</td></tr>
 <tr class="separator:a29ec8e8c74f1f6d6c7da1fa50ba560f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cfb9c5711324e58146c973b9a582079"><td class="memItemLeft" align="right" valign="top"><a id="a3cfb9c5711324e58146c973b9a582079"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>insertGlissandos</b> (std::vector&lt; hum::HTp &gt; &amp;tokens)</td></tr>
+<tr class="separator:a3cfb9c5711324e58146c973b9a582079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb60630f5d600714d927388072db11b"><td class="memItemLeft" align="right" valign="top"><a id="a9bb60630f5d600714d927388072db11b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>createGlissando</b> (hum::HTp glissStart, hum::HTp glissEnd)</td></tr>
+<tr class="separator:a9bb60630f5d600714d927388072db11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3cb6ac282a2a2182027eaa1f407b758"><td class="memItemLeft" align="right" valign="top"><a id="aa3cb6ac282a2a2182027eaa1f407b758"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSmuflContent</b> (<a class="el" href="classvrv_1_1_symbol.html">Symbol</a> *symbol, const std::string &amp;name)</td></tr>
+<tr class="separator:aa3cb6ac282a2a2182027eaa1f407b758"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a966c63e8921aded6ad9d48f54e9a583d"><td class="memItemLeft" align="right" valign="top"><a id="a966c63e8921aded6ad9d48f54e9a583d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>createHeader</b> ()</td></tr>
 <tr class="separator:a966c63e8921aded6ad9d48f54e9a583d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1184,10 +1193,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>popElementStack</b> (
 template&lt;class ELEMENT &gt; </td></tr>
 <tr class="memitem:a44aea3f1cfebb48e3fe3c37406014c4c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>addTextElement</b> (ELEMENT *element, const std::string &amp;content, const std::string &amp;fontstyle=&quot;&quot;, bool addSpacer=true)</td></tr>
 <tr class="separator:a44aea3f1cfebb48e3fe3c37406014c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5de615265bd93fec305ecb68d3647668"><td class="memTemplParams" colspan="2"><a id="a5de615265bd93fec305ecb68d3647668"></a>
+<tr class="memitem:a6ef6b77d38823c67993d9f6a6d8600d6"><td class="memTemplParams" colspan="2"><a id="a6ef6b77d38823c67993d9f6a6d8600d6"></a>
 template&lt;class ELEMENT &gt; </td></tr>
-<tr class="memitem:a5de615265bd93fec305ecb68d3647668"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>addVerovioTextElement</b> (ELEMENT *element, const std::string &amp;musictext)</td></tr>
-<tr class="separator:a5de615265bd93fec305ecb68d3647668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef6b77d38823c67993d9f6a6d8600d6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>addMusicSymbol</b> (ELEMENT *element, const std::string &amp;musictext)</td></tr>
+<tr class="separator:a6ef6b77d38823c67993d9f6a6d8600d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4087fab9d159e649c26572c1cf0a43c"><td class="memTemplParams" colspan="2"><a id="ab4087fab9d159e649c26572c1cf0a43c"></a>
 template&lt;class ELEMENT &gt; </td></tr>
 <tr class="memitem:ab4087fab9d159e649c26572c1cf0a43c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>checkForAutoStem</b> (ELEMENT element, hum::HTp token)</td></tr>
@@ -1220,10 +1229,6 @@ template&lt;class ELEMENT &gt; </td></tr>
 template&lt;class ELEMENT &gt; </td></tr>
 <tr class="memitem:a2f80ba6d36a41c0e957fd3c1df72c90e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setInstrumentAbbreviation</b> (ELEMENT *staffdef, const std::string &amp;name, hum::HTp abbrtok)</td></tr>
 <tr class="separator:a2f80ba6d36a41c0e957fd3c1df72c90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a924273ffda75bc3ea30b17e1f9cdff94"><td class="memTemplParams" colspan="2"><a id="a924273ffda75bc3ea30b17e1f9cdff94"></a>
-template&lt;class ELEMENT &gt; </td></tr>
-<tr class="memitem:a924273ffda75bc3ea30b17e1f9cdff94"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insertTwoRhythmsAndTextBetween</b> (ELEMENT *element, const std::string &amp;note1, const std::string &amp;text, const std::string &amp;note2)</td></tr>
-<tr class="separator:a924273ffda75bc3ea30b17e1f9cdff94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eaea975a983abcbbdab676e618b6c1d"><td class="memTemplParams" colspan="2"><a id="a1eaea975a983abcbbdab676e618b6c1d"></a>
 template&lt;class ELEMENT &gt; </td></tr>
 <tr class="memitem:a1eaea975a983abcbbdab676e618b6c1d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>addDurRecip</b> (ELEMENT element, const std::string &amp;ttoken)</td></tr>
@@ -1252,6 +1257,10 @@ template&lt;class ELEMENT &gt; </td></tr>
 template&lt;class ELEMENT &gt; </td></tr>
 <tr class="memitem:a3819f602a01d3fafffd9b1214a265971"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setAttachmentType</b> (ELEMENT *element, hum::HTp token)</td></tr>
 <tr class="separator:a3819f602a01d3fafffd9b1214a265971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab65c51d5584f7527d944f6098279d3a3"><td class="memTemplParams" colspan="2"><a id="ab65c51d5584f7527d944f6098279d3a3"></a>
+template&lt;class ELEMENT &gt; </td></tr>
+<tr class="memitem:ab65c51d5584f7527d944f6098279d3a3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setFontsize</b> (ELEMENT *element, const std::string &amp;percentage, const std::string &amp;original)</td></tr>
+<tr class="separator:ab65c51d5584f7527d944f6098279d3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4281fe56a5d31f664cb50b68da23a27"><td class="memItemLeft" align="right" valign="top"><a id="aa4281fe56a5d31f664cb50b68da23a27"></a>
 std::u32string&#160;</td><td class="memItemRight" valign="bottom"><b>cleanHarmString</b> (const std::string &amp;content)</td></tr>
 <tr class="separator:aa4281fe56a5d31f664cb50b68da23a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1345,7 +1354,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_outformat</b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_humdrum_input.html">HumdrumInput</a></li>
-    <li class="footer">Generated on Sat Nov 12 2022 13:01:39 for Verovio by
+    <li class="footer">Generated on Mon Nov 14 2022 14:52:48 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

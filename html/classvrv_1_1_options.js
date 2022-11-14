@@ -165,6 +165,7 @@ var classvrv_1_1_options =
     [ "m_slurMaxSlope", "classvrv_1_1_options.html#a7c3c2c679892af5b2d81b3d023d4a672", null ],
     [ "m_slurMidpointThickness", "classvrv_1_1_options.html#a7f4c9c7d1a96f7857b56db32a2c38b60", null ],
     [ "m_slurSymmetry", "classvrv_1_1_options.html#af5e5af1f7a55b436e8c0207c2b3b598e", null ],
+    [ "m_smuflTextFont", "classvrv_1_1_options.html#a0a1d70ab5b5586e6236de14b718005ed", null ],
     [ "m_spacingBraceGroup", "classvrv_1_1_options.html#ae229a76a509f7f4ebb533da0f1c79042", null ],
     [ "m_spacingBracketGroup", "classvrv_1_1_options.html#aba77f4767b08193634058d9c7d7252c2", null ],
     [ "m_spacingDurDetection", "classvrv_1_1_options.html#a73876b61dd88e9afaa3ea54adb3abf2a", null ],

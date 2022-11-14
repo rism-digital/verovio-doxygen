@@ -2777,8 +2777,13 @@
     <member refid="classvrv_1_1_humdrum_input_1ae90d90f9730e0ff814ae642184b385b1" kind="variable"><name>m_scordatura_transposition</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a61130cd2f355fa2bd44363afd3168a32" kind="variable"><name>m_humtype</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a121d915ca2476094cac58f0e775eddb0" kind="variable"><name>m_beamSpanStartDatabase</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1a38ab9f58c474dad195a3902bf126e8a4" kind="variable"><name>m_tempoScaling</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1af4dd33a159f731d32507de3f4da7effe" kind="variable"><name>m_globalTempoScaling</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a79885ef2c5ad1029ff7bb93ec94ed50b" kind="variable"><name>m_localTempoScaling</name></member>
     <member refid="classvrv_1_1_humdrum_input_1aa69b15e6c6ca09aaf77b280f392db31d" kind="variable"><name>m_join</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a41b85da86a103747d2bacc77f1082059" kind="variable"><name>m_midibpm</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a783efcc58a399e8a4b9fe00f6f9b9e59" kind="variable"><name>m_textNoteSize</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1ac6464098951008d52343bde4031e10d0" kind="variable"><name>m_textAugmentationDotSpacer</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a0f475cde6627d944ac4844d4e5e1f3c2" kind="variable"><name>m_textSmuflSpacer</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a2306faaf6a47b0b5dbb23beadf43df24" kind="function"><name>HumdrumInput</name></member>
     <member refid="classvrv_1_1_humdrum_input_1abb67aed16d8d1fe9ba31d0d1987bacf5" kind="function"><name>~HumdrumInput</name></member>
     <member refid="classvrv_1_1_humdrum_input_1aae692fe223e347d93baefe26b1ef7e0f" kind="function"><name>Import</name></member>
@@ -2931,7 +2936,7 @@
     <member refid="classvrv_1_1_humdrum_input_1aa8170eaba6e5f223a2e3ed230f20b803" kind="function"><name>addTempoDirection</name></member>
     <member refid="classvrv_1_1_humdrum_input_1ae4788bbfcd592ed7c2f7993387affbc6" kind="function"><name>setTempoContent</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a3456451e64157ab6c9c7cffa8113d09e" kind="function"><name>setLabelContent</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1a59cb5cc3585d97b3abb6fdf1b4f7866e" kind="function"><name>convertMusicSymbolNameToSmuflEntity</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1ad5724d377e249d4b0b61c5876816050a" kind="function"><name>convertMusicSymbolNameToSmuflName</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a7332593c7955c707aad04da2bb708d03" kind="function"><name>processTerminalLong</name></member>
     <member refid="classvrv_1_1_humdrum_input_1aa074e1cd6bd00b2dee5cc35a888427a4" kind="function"><name>processTerminalBreve</name></member>
     <member refid="classvrv_1_1_humdrum_input_1ae4d4abe1edab9b900aad41f8df0b3dd7" kind="function"><name>removeCharacter</name></member>
@@ -3081,7 +3086,7 @@
     <member refid="classvrv_1_1_humdrum_input_1aa79d28ae72fe54e6a387ee5270b959e7" kind="function"><name>insertBeamSpan</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a6738bc3d00240783715ba076ea546055" kind="function"><name>getDataTokenId</name></member>
     <member refid="classvrv_1_1_humdrum_input_1af677a5e2baa8dc0e4a83d171a4d280dd" kind="function"><name>checkForFingeredHarmonic</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1a848b44aede481ec41df2338ff72ccb1f" kind="function"><name>getTempoScaling</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a4305c0eee1e374c894183c0efc5d483d" kind="function"><name>getGlobalTempoScaling</name></member>
     <member refid="classvrv_1_1_humdrum_input_1ac9692d225fb45bce337559b7cb88d52b" kind="function"><name>isTacet</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a09c1cde1b4af8a1379f3a76f931c5f1c" kind="function"><name>storeBeamSpansInStartingMeasure</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a43cd7d23c5bd47cc0dc80b1d04305f94" kind="function"><name>getNextNonNullDataOrMeasureToken</name></member>
@@ -3094,6 +3099,9 @@
     <member refid="classvrv_1_1_humdrum_input_1a0948f7ee2712a575591905756018a463" kind="function"><name>checkForBeamSameas</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a783ced98c098795b7cee3f882c8c2f37" kind="function"><name>checkForBeamStemSameas</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a29ec8e8c74f1f6d6c7da1fa50ba560f3" kind="function"><name>processInterpretationStuff</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a3cfb9c5711324e58146c973b9a582079" kind="function"><name>insertGlissandos</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a9bb60630f5d600714d927388072db11b" kind="function"><name>createGlissando</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1aa3cb6ac282a2a2182027eaa1f407b758" kind="function"><name>setSmuflContent</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a966c63e8921aded6ad9d48f54e9a583d" kind="function"><name>createHeader</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a4c0eb71290772178868c723625dffb0d" kind="function"><name>insertTitle</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a5e7c38dab010fd569f7c7c0b7e778586" kind="function"><name>insertExtMeta</name></member>
@@ -3126,7 +3134,7 @@
     <member refid="classvrv_1_1_humdrum_input_1aa27ffa3996528c4c0c7371a0eedd9090" kind="function"><name>appendElement</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a3af204a38e86526f3cf0e8ea2a35cfbc" kind="function"><name>popElementStack</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a44aea3f1cfebb48e3fe3c37406014c4c" kind="function"><name>addTextElement</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1a5de615265bd93fec305ecb68d3647668" kind="function"><name>addVerovioTextElement</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a6ef6b77d38823c67993d9f6a6d8600d6" kind="function"><name>addMusicSymbol</name></member>
     <member refid="classvrv_1_1_humdrum_input_1ab4087fab9d159e649c26572c1cf0a43c" kind="function"><name>checkForAutoStem</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a9e98bba026711cad2c7ded378bf91fe1" kind="function"><name>appendTypeTag</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a957dc012b811ba4a67112882a6ed1e43" kind="function"><name>setPlaceRelStaff</name></member>
@@ -3135,7 +3143,6 @@
     <member refid="classvrv_1_1_humdrum_input_1ab55d581149964bdf4f2b6655f0860b51" kind="function"><name>setMensurationSymbol</name></member>
     <member refid="classvrv_1_1_humdrum_input_1acc051a116e1dfd5df9ced05add47c84d" kind="function"><name>setInstrumentName</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a2f80ba6d36a41c0e957fd3c1df72c90e" kind="function"><name>setInstrumentAbbreviation</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1a924273ffda75bc3ea30b17e1f9cdff94" kind="function"><name>insertTwoRhythmsAndTextBetween</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a1eaea975a983abcbbdab676e618b6c1d" kind="function"><name>addDurRecip</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a6bd1948be13ee150922204427c954373" kind="function"><name>addFermata</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a4ea33f415c99334941e4266cfbc97886" kind="function"><name>storeExpansionList</name></member>
@@ -3143,6 +3150,7 @@
     <member refid="classvrv_1_1_humdrum_input_1a9595081c91cf81606c160a4b61e18387" kind="function"><name>setWrittenAccidentalLower</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a5c9b32b25f2b8c302264c80dce6655dc" kind="function"><name>attachToToken</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a3819f602a01d3fafffd9b1214a265971" kind="function"><name>setAttachmentType</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1ab65c51d5584f7527d944f6098279d3a3" kind="function"><name>setFontsize</name></member>
     <member refid="classvrv_1_1_humdrum_input_1aa4281fe56a5d31f664cb50b68da23a27" kind="function"><name>cleanHarmString</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a0b50785a913630ead41129fa7818ecfa" kind="function"><name>cleanHarmString2</name></member>
     <member refid="classvrv_1_1_humdrum_input_1abdae54ab10d2c26f4d88e0aa92b10c8e" kind="function"><name>cleanHarmString3</name></member>
@@ -5092,6 +5100,7 @@
     <member refid="classvrv_1_1_option_1ae17478357554bfd6e80851baf602c7f5" kind="variable"><name>s_multiRestStyle</name></member>
     <member refid="classvrv_1_1_option_1ac55fdeba28d9353ec936d823cf3360a9" kind="variable"><name>s_pedalStyle</name></member>
     <member refid="classvrv_1_1_option_1af416be01a9f98071d9721db71745112c" kind="variable"><name>s_systemDivider</name></member>
+    <member refid="classvrv_1_1_option_1ace620d6cc3f2571f375d068ddb5855ec" kind="variable"><name>s_smuflTextFont</name></member>
     <member refid="classvrv_1_1_option_1a743c22feedd51435c853bc5236bae4d8" kind="variable"><name>m_title</name></member>
     <member refid="classvrv_1_1_option_1a605929a76631b73d73b83d8ecf6ed101" kind="variable"><name>m_description</name></member>
     <member refid="classvrv_1_1_option_1a44f85341a7cfbde5502bc5f01d9cab1b" kind="variable"><name>m_key</name></member>
@@ -5310,6 +5319,7 @@
     <member refid="classvrv_1_1_options_1a47f9e4b65cd8c1e013f8fb8298ce88ed" kind="variable"><name>m_scaleToPageSize</name></member>
     <member refid="classvrv_1_1_options_1afceec4fdb9cfd908bd3f27994e3bb027" kind="variable"><name>m_showRuntime</name></member>
     <member refid="classvrv_1_1_options_1a26335379e5d001bcf4014f3d9b25eb60" kind="variable"><name>m_shrinkToFit</name></member>
+    <member refid="classvrv_1_1_options_1a0a1d70ab5b5586e6236de14b718005ed" kind="variable"><name>m_smuflTextFont</name></member>
     <member refid="classvrv_1_1_options_1a7ef932575dd77e6100fb40d8f536a82a" kind="variable"><name>m_staccatoCenter</name></member>
     <member refid="classvrv_1_1_options_1a533ba481ca7a089c930e8bf427941e88" kind="variable"><name>m_svgBoundingBoxes</name></member>
     <member refid="classvrv_1_1_options_1a74d4ee785743b7955910031ede24a55d" kind="variable"><name>m_svgCss</name></member>
@@ -6865,6 +6875,7 @@
     <member refid="classvrv_1_1_svg_device_context_1ac4284235e0e28ed932cfb8a7bd7fc9e9" kind="variable"><name>m_removeXlink</name></member>
     <member refid="classvrv_1_1_svg_device_context_1ad6f5e5e9d2f6a58a113c1ffd4d2beccd" kind="variable"><name>m_indent</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a95699ee3b09839de430a3c546d03c12f" kind="variable"><name>m_glyphPostfixId</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1a4cc67c7989c254ae30aa2a9955217267" kind="variable"><name>m_smuflTextFont</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a5d3e723edc1abcc7dd80f0c57130658d" kind="function"><name>AppendIdAndClass</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a2f56ce603bd94fea5f23d21fa7117799" kind="function"><name>AppendAdditionalAttributes</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a9982cebfe646f247292b295840b7bb94" kind="function"><name>UseGlobalStyling</name></member>
@@ -6879,11 +6890,13 @@
     <member refid="classvrv_1_1_svg_device_context_1aabe3f920bbeacd0463372165d9f6a7e2" kind="function"><name>SetRemoveXlink</name></member>
     <member refid="classvrv_1_1_svg_device_context_1aa908539e4a0e5fe193b3aa47d639cda7" kind="function"><name>SetCss</name></member>
     <member refid="classvrv_1_1_svg_device_context_1aa8aeaa9724dec8881fb302854c98b519" kind="function"><name>SetAdditionalAttributes</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1a278107f59bd0aa308352e1319fa05161" kind="function"><name>SetSmuflTextFont</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a98b9adbbd2c5998c9e219fbc51a89700" kind="function"><name>CopyFileToStream</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a9c5ad4036cfe9cefc1e9cedd34eefd96" kind="function"><name>DrawSvgBoundingBox</name></member>
     <member refid="classvrv_1_1_svg_device_context_1ad54ccf427dc297c450a39ae1bbf3ddf4" kind="function"><name>DrawSvgBoundingBoxRectangle</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a7abe1801d138c3b4c28bf0df55c27f1c" kind="function"><name>VrvTextFont</name></member>
     <member refid="classvrv_1_1_svg_device_context_1acd44e950a2c3446f70a4a13cc90eb17d" kind="function"><name>VrvTextFontFallback</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1aadb63bf11317e6153369ef3baffc8df6" kind="function"><name>IncludeTextFont</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a3e68dbf24a6bf3cbb8abafca27d8119e" kind="function"><name>Commit</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a35c5c359ed81608d498925ce4a5e43a4" kind="function"><name>WriteLine</name></member>
     <member refid="classvrv_1_1_svg_device_context_1af5d9a4a71ac0c53cd5f15468c57785b4" kind="function"><name>GetColour</name></member>
@@ -8172,6 +8185,10 @@
     <member refid="options_8h_1acec3439c132d2c7853a87e447fc4a5e0ad5e91ee625a5a91592d700dfc2b74646" kind="enumvalue"><name>SYSTEMDIVIDER_auto</name></member>
     <member refid="options_8h_1acec3439c132d2c7853a87e447fc4a5e0a840c0d0ed60555db18434dd8a200cf61" kind="enumvalue"><name>SYSTEMDIVIDER_left</name></member>
     <member refid="options_8h_1acec3439c132d2c7853a87e447fc4a5e0a2e941ce2620861dbd9395b4eced17f15" kind="enumvalue"><name>SYSTEMDIVIDER_left_right</name></member>
+    <member refid="options_8h_1a09270d505060542a889a670b17f7e58a" kind="enum"><name>option_SMUFLTEXTFONT</name></member>
+    <member refid="options_8h_1a09270d505060542a889a670b17f7e58aa5af25b3059ea14ef4d9bf6008b39d680" kind="enumvalue"><name>SMUFLTEXTFONT_embedded</name></member>
+    <member refid="options_8h_1a09270d505060542a889a670b17f7e58aa9c5d128eb45d593f7912ea181ee9ad79" kind="enumvalue"><name>SMUFLTEXTFONT_linked</name></member>
+    <member refid="options_8h_1a09270d505060542a889a670b17f7e58aa720d68814778837bb12051c411a8ce1c" kind="enumvalue"><name>SMUFLTEXTFONT_none</name></member>
     <member refid="options_8h_1a29c3c95abcce23e03ab4c5ec86e7fbc5" kind="enum"><name>OptionsCategory</name></member>
     <member refid="options_8h_1a29c3c95abcce23e03ab4c5ec86e7fbc5a6adf97f83acf6453d4a6a4b1070f3754" kind="enumvalue"><name>None</name></member>
     <member refid="options_8h_1a29c3c95abcce23e03ab4c5ec86e7fbc5a095a1b43effec73955e31e790438de49" kind="enumvalue"><name>Base</name></member>
