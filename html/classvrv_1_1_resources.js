@@ -14,6 +14,7 @@ var classvrv_1_1_resources =
     [ "GetTextGlyph", "classvrv_1_1_resources.html#a1f7f592b285caa4823b4995f14b444b9", null ],
     [ "InitFonts", "classvrv_1_1_resources.html#af7823e10567dae86983fad00b0d25290", null ],
     [ "InitTextFont", "classvrv_1_1_resources.html#a6ef49babf9c905abf67e9476570a9ba3", null ],
+    [ "IsSmuflFallbackNeeded", "classvrv_1_1_resources.html#a429bb8fd6635c36a657f5a09c1572ed6", null ],
     [ "SelectTextFont", "classvrv_1_1_resources.html#ae451033365fb7e79b728be77f3ebd7aa", null ],
     [ "SetFont", "classvrv_1_1_resources.html#a112c2087e61d477c8d0dece3165f0e74", null ],
     [ "SetPath", "classvrv_1_1_resources.html#abcb461570a502e03dba625cf2cf02092", null ]

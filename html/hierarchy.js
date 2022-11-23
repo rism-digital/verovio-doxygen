@@ -8,7 +8,7 @@ var hierarchy =
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ]
     ] ],
-    [ "AttAccidentalGestural", null, [
+    [ "AttAccidentalGes", null, [
       [ "vrv::Accid", "classvrv_1_1_accid.html", null ]
     ] ],
     [ "AttAccidLog", null, [
@@ -23,7 +23,7 @@ var hierarchy =
     [ "AttArticulation", null, [
       [ "vrv::Artic", "classvrv_1_1_artic.html", null ]
     ] ],
-    [ "AttArticulationGestural", null, [
+    [ "AttArticulationGes", null, [
       [ "vrv::Artic", "classvrv_1_1_artic.html", null ]
     ] ],
     [ "AttAugmentDots", null, [
@@ -227,10 +227,10 @@ var hierarchy =
     [ "AttDurationDefault", null, [
       [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ]
     ] ],
-    [ "AttDurationGestural", null, [
+    [ "AttDurationGes", null, [
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ]
     ] ],
-    [ "AttDurationLogical", null, [
+    [ "AttDurationLog", null, [
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ]
     ] ],
     [ "AttDurationQuality", null, [
@@ -311,6 +311,9 @@ var hierarchy =
     ] ],
     [ "AttHairpinVis", null, [
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ]
+    ] ],
+    [ "AttHeight", null, [
+      [ "vrv::Graphic", "classvrv_1_1_graphic.html", null ]
     ] ],
     [ "AttHorizontalAlign", null, [
       [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", [
@@ -631,6 +634,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "AttPointing", null, [
+      [ "vrv::Graphic", "classvrv_1_1_graphic.html", null ],
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ]
     ] ],
     [ "AttRestVisMensural", null, [
@@ -638,9 +642,6 @@ var hierarchy =
     ] ],
     [ "AttScalable", null, [
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
-    ] ],
-    [ "AttScoreDefGes", null, [
-      [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ]
     ] ],
     [ "AttSectionVis", null, [
       [ "vrv::Section", "classvrv_1_1_section.html", null ]
@@ -768,10 +769,10 @@ var hierarchy =
       [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
     ] ],
-    [ "AttTimestamp2Logical", null, [
+    [ "AttTimestamp2Log", null, [
       [ "vrv::TimeSpanningInterface", "classvrv_1_1_time_spanning_interface.html", null ]
     ] ],
-    [ "AttTimestampLogical", null, [
+    [ "AttTimestampLog", null, [
       [ "vrv::TimePointInterface", "classvrv_1_1_time_point_interface.html", null ]
     ] ],
     [ "AttTransposition", null, [
@@ -780,6 +781,9 @@ var hierarchy =
     [ "AttTremMeasured", null, [
       [ "vrv::BTrem", "classvrv_1_1_b_trem.html", null ],
       [ "vrv::FTrem", "classvrv_1_1_f_trem.html", null ]
+    ] ],
+    [ "AttTuning", null, [
+      [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ]
     ] ],
     [ "AttTupletVis", null, [
       [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ],
@@ -793,6 +797,7 @@ var hierarchy =
       [ "vrv::ControlElement", "classvrv_1_1_control_element.html", null ],
       [ "vrv::EditorialElement", "classvrv_1_1_editorial_element.html", null ],
       [ "vrv::Facsimile", "classvrv_1_1_facsimile.html", null ],
+      [ "vrv::Graphic", "classvrv_1_1_graphic.html", null ],
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::LayerDef", "classvrv_1_1_layer_def.html", null ],
       [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
@@ -852,6 +857,7 @@ var hierarchy =
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ]
     ] ],
     [ "AttWidth", null, [
+      [ "vrv::Graphic", "classvrv_1_1_graphic.html", null ],
       [ "vrv::MultiRest", "classvrv_1_1_multi_rest.html", null ]
     ] ],
     [ "vrv::BeamElementCoord", "classvrv_1_1_beam_element_coord.html", null ],
@@ -875,6 +881,7 @@ var hierarchy =
           [ "vrv::ControlElement", "classvrv_1_1_control_element.html", null ],
           [ "vrv::SystemElement", "classvrv_1_1_system_element.html", null ]
         ] ],
+        [ "vrv::Graphic", "classvrv_1_1_graphic.html", null ],
         [ "vrv::GrpSym", "classvrv_1_1_grp_sym.html", null ],
         [ "vrv::HorizontalAligner", "classvrv_1_1_horizontal_aligner.html", [
           [ "vrv::GraceAligner", "classvrv_1_1_grace_aligner.html", null ],

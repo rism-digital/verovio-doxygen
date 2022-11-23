@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['methods_20not_20available_20in_20the_20javascript_20toolkit_2522',['Methods not available in the JavaScript toolkit',['../group__nojs.html',1,'']]]
+  ['public_20methods_20that_20are_20not_20listed_20in_20the_20documentation_2531',['Public methods that are not listed in the documentation',['../group__nodoc.html',1,'']]]
 ];
