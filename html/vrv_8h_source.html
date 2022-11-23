@@ -118,59 +118,61 @@ $(document).ready(function(){initNavTree('vrv_8h_source.html',''); initResizable
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> LogDebug(<span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> LogError(<span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> LogMessage(<span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> LogInfo(<span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> LogWarning(<span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> std::vector&lt;std::string&gt; logBuffer;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">bool</span> LogBufferContains(<span class="keyword">const</span> std::string &amp;s);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span> LogString(std::string message, LogLevel level);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">bool</span> AreEqual(<span class="keywordtype">double</span> dFirstVal, <span class="keywordtype">double</span> dSecondVal);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;LogLevel StrToLogLevel(<span class="keyword">const</span> std::string &amp;level);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;std::string ExtractIDFragment(std::string refID);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">bool</span> AreEqual(<span class="keywordtype">double</span> dFirstVal, <span class="keywordtype">double</span> dSecondVal);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;std::string UTF32to8(<span class="keyword">const</span> std::u32string &amp;in);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;std::string ExtractIDFragment(std::string refID);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;std::u32string UTF8to32(<span class="keyword">const</span> std::string &amp;in);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;std::string UTF32to8(<span class="keyword">const</span> std::u32string &amp;in);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;std::string StringFormat(<span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">// This is the implementation callable with variable arguments</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;std::string StringFormatVariable(<span class="keyword">const</span> <span class="keywordtype">char</span> *format, va_list arg);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;std::string GetFileVersion(<span class="keywordtype">int</span> vmaj, <span class="keywordtype">int</span> vmin, <span class="keywordtype">int</span> vrev);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;std::string GetFilename(std::string fullpath);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;std::u32string UTF8to32(<span class="keyword">const</span> std::string &amp;in);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;std::string StringFormat(<span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">// This is the implementation callable with variable arguments</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;std::string StringFormatVariable(<span class="keyword">const</span> <span class="keywordtype">char</span> *format, va_list arg);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;std::string GetFileVersion(<span class="keywordtype">int</span> vmaj, <span class="keywordtype">int</span> vmin, <span class="keywordtype">int</span> vrev);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;std::string GetVersion();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;std::string GetFilename(std::string fullpath);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;std::string BaseEncodeInt(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> value, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> base);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">extern</span> LogLevel logLevel;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> loggingToBuffer;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span>timeval start;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">void</span> LogElapsedTimeStart();</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">void</span> LogElapsedTimeEnd(<span class="keyword">const</span> <span class="keywordtype">char</span> *msg = <span class="stringliteral">&quot;unspecified operation&quot;</span>);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">bool</span> Check(Object *<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">// Base64 code borrowed</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;std::string Base64Encode(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <span class="keyword">const</span> *bytesToEncode, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;std::vector&lt;unsigned char&gt; Base64Decode(std::string <span class="keyword">const</span> &amp;encodedString);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;std::string GetVersion();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;std::string BaseEncodeInt(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> value, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> base);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">extern</span> LogLevel logLevel;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> loggingToBuffer;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span>timeval start;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">void</span> LogElapsedTimeStart();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">void</span> LogElapsedTimeEnd(<span class="keyword">const</span> <span class="keywordtype">char</span> *msg = <span class="stringliteral">&quot;unspecified operation&quot;</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">bool</span> Check(Object *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">// Base64 code borrowed</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;std::string Base64Encode(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <span class="keyword">const</span> *bytesToEncode, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;std::vector&lt;unsigned char&gt; Base64Decode(std::string <span class="keyword">const</span> &amp;encodedString);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>vrv.h</b></li>
-    <li class="footer">Generated on Tue Nov 22 2022 14:15:46 for Verovio by
+    <li class="footer">Generated on Wed Nov 23 2022 00:07:41 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
