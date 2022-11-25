@@ -44,6 +44,7 @@ var classvrv_1_1_device_context =
     [ "GetUserScaleX", "classvrv_1_1_device_context.html#a12bc02f99e26e673278dce400693a8f6", null ],
     [ "GetUserScaleY", "classvrv_1_1_device_context.html#ac192682e11cb0258024b1c3a19c8a65e", null ],
     [ "GetWidth", "classvrv_1_1_device_context.html#aaaa955faca44e2c5f870b3aa08a66ee0", null ],
+    [ "HasFont", "classvrv_1_1_device_context.html#a90a1ed33fd0dac78a8289659200c0926", null ],
     [ "HasResources", "classvrv_1_1_device_context.html#afbe4b0353109d59def684327743a32f8", null ],
     [ "Is", "classvrv_1_1_device_context.html#aecf9ed01e0d0c5e6f64f8b90c3e4bedd", null ],
     [ "MoveTextTo", "classvrv_1_1_device_context.html#a6c3c986752d435a388780f314d335939", null ],
