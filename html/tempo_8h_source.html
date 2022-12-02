@@ -110,55 +110,64 @@ $(document).ready(function(){initNavTree('tempo_8h_source.html',''); initResizab
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classvrv_1_1_tempo.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_tempo.html">Tempo</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_control_element.html">ControlElement</a>,</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;              <span class="keyword">public</span> <a class="code" href="classvrv_1_1_text_dir_interface.html">TextDirInterface</a>,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;              <span class="keyword">public</span> <a class="code" href="classvrv_1_1_time_point_interface.html">TimePointInterface</a>,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;              <span class="keyword">public</span> AttLang,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;              <span class="keyword">public</span> AttMidiTempo,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;              <span class="keyword">public</span> AttMmTempo {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classvrv_1_1_tempo.html">Tempo</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_tempo.html">Tempo</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classvrv_1_1_tempo.html#abd805c69409cdb9f718c441c8c5c8d7f">   41</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_tempo.html#abd805c69409cdb9f718c441c8c5c8d7f">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_tempo.html">Tempo</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tempo.html#a06012ac7577667239c4605f31ff5f19c">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Tempo&quot;</span>; }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    TextDirInterface *GetTextDirInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TextDirInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">const</span> TextDirInterface *GetTextDirInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const TextDirInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    TimePointInterface *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimePointInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">const</span> TimePointInterface *GetTimePointInterface()<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimePointInterface *&gt;(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_tempo.html#a1e23fec90d73196e73601756ee43b3e9">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;              <span class="keyword">public</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html">TimeSpanningInterface</a>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;              <span class="keyword">public</span> AttExtender,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;              <span class="keyword">public</span> AttLang,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;              <span class="keyword">public</span> AttMidiTempo,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;              <span class="keyword">public</span> AttMmTempo {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classvrv_1_1_tempo.html">Tempo</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_tempo.html">Tempo</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classvrv_1_1_tempo.html#abd805c69409cdb9f718c441c8c5c8d7f">   42</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_tempo.html#abd805c69409cdb9f718c441c8c5c8d7f">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_tempo.html">Tempo</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tempo.html#a06012ac7577667239c4605f31ff5f19c">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Tempo&quot;</span>; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    TextDirInterface *GetTextDirInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TextDirInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">const</span> TextDirInterface *GetTextDirInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const TextDirInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    TimePointInterface *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimePointInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">const</span> TimePointInterface *GetTimePointInterface()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimePointInterface *&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    TimeSpanningInterface *GetTimeSpanningInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimeSpanningInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">const</span> TimeSpanningInterface *GetTimeSpanningInterface()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimeSpanningInterface *&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> GetDrawingXRelativeToStaff(<span class="keywordtype">int</span> staffN) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_tempo.html#a1e23fec90d73196e73601756ee43b3e9">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tempo.html#af6b33973a7461ea800ac9027c2f98b34">AdjustTempo</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tempo.html#a7eac9866abea67fdd50efbe0c3edca2c">ResetData</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tempo.html#a032392a5f1cac64792c14fcafae107d7">InitMaxMeasureDuration</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    std::map&lt;int, int&gt; m_drawingXRels;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> GetDrawingXRelativeToStaff(<span class="keywordtype">int</span> staffN) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classvrv_1_1_tempo.html#a5c23ed4022b962566560259c7b833377">   80</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_tempo.html#a5c23ed4022b962566560259c7b833377">IsExtenderElement</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> GetExtender() == BOOLEAN_true; }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tempo.html#af6b33973a7461ea800ac9027c2f98b34">AdjustTempo</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tempo.html#a7eac9866abea67fdd50efbe0c3edca2c">ResetData</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tempo.html#a032392a5f1cac64792c14fcafae107d7">InitMaxMeasureDuration</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    std::map&lt;int, int&gt; m_drawingXRels;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_tempo_html_abd805c69409cdb9f718c441c8c5c8d7f"><div class="ttname"><a href="classvrv_1_1_tempo.html#abd805c69409cdb9f718c441c8c5c8d7f">vrv::Tempo::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> tempo.h:41</div></div>
+<div class="ttc" id="aclassvrv_1_1_tempo_html_abd805c69409cdb9f718c441c8c5c8d7f"><div class="ttname"><a href="classvrv_1_1_tempo.html#abd805c69409cdb9f718c441c8c5c8d7f">vrv::Tempo::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> tempo.h:42</div></div>
 <div class="ttc" id="aclassvrv_1_1_tempo_html"><div class="ttname"><a href="classvrv_1_1_tempo.html">vrv::Tempo</a></div><div class="ttdoc">This class is an interface for &lt;tempo&gt; elements at the measure level.</div><div class="ttdef"><b>Definition:</b> tempo.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:58</div></div>
+<div class="ttc" id="aclassvrv_1_1_tempo_html_a5c23ed4022b962566560259c7b833377"><div class="ttname"><a href="classvrv_1_1_tempo.html#a5c23ed4022b962566560259c7b833377">vrv::Tempo::IsExtenderElement</a></div><div class="ttdeci">bool IsExtenderElement() const override</div><div class="ttdoc">See FloatingObject::IsExtenderElement.</div><div class="ttdef"><b>Definition:</b> tempo.h:80</div></div>
 <div class="ttc" id="aclassvrv_1_1_tempo_html_a06012ac7577667239c4605f31ff5f19c"><div class="ttname"><a href="classvrv_1_1_tempo.html#a06012ac7577667239c4605f31ff5f19c">vrv::Tempo::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_tempo_html_a1e23fec90d73196e73601756ee43b3e9"><div class="ttname"><a href="classvrv_1_1_tempo.html#a1e23fec90d73196e73601756ee43b3e9">vrv::Tempo::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Add an element (text, rend.</div></div>
 <div class="ttc" id="aclassvrv_1_1_tempo_html_a7eac9866abea67fdd50efbe0c3edca2c"><div class="ttname"><a href="classvrv_1_1_tempo.html#a7eac9866abea67fdd50efbe0c3edca2c">vrv::Tempo::ResetData</a></div><div class="ttdeci">int ResetData(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetData.</div></div>
@@ -166,12 +175,13 @@ $(document).ready(function(){initNavTree('tempo_8h_source.html',''); initResizab
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_tempo_html_a032392a5f1cac64792c14fcafae107d7"><div class="ttname"><a href="classvrv_1_1_tempo.html#a032392a5f1cac64792c14fcafae107d7">vrv::Tempo::InitMaxMeasureDuration</a></div><div class="ttdeci">int InitMaxMeasureDuration(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::CalcMaxMeasureDuration.</div></div>
 <div class="ttc" id="aclassvrv_1_1_tempo_html_af6b33973a7461ea800ac9027c2f98b34"><div class="ttname"><a href="classvrv_1_1_tempo.html#af6b33973a7461ea800ac9027c2f98b34">vrv::Tempo::AdjustTempo</a></div><div class="ttdeci">int AdjustTempo(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::AdjustTempoX.</div></div>
-<div class="ttc" id="aclassvrv_1_1_time_point_interface_html"><div class="ttname"><a href="classvrv_1_1_time_point_interface.html">vrv::TimePointInterface</a></div><div class="ttdoc">This class is an interface for elements having a single time point, such as tempo,...</div><div class="ttdef"><b>Definition:</b> timeinterface.h:30</div></div>
+<div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html">vrv::TimeSpanningInterface</a></div><div class="ttdoc">This class is an interface for spanning elements, such as slur, hairpin, etc.</div><div class="ttdef"><b>Definition:</b> timeinterface.h:144</div></div>
+<div class="ttc" id="aclassvrv_1_1_functor_params_html"><div class="ttname"><a href="classvrv_1_1_functor_params.html">vrv::FunctorParams</a></div><div class="ttdoc">This is the base class for all MEI att classes.</div><div class="ttdef"><b>Definition:</b> functorparams.h:77</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>tempo.h</b></li>
-    <li class="footer">Generated on Fri Nov 25 2022 11:49:49 for Verovio by
+    <li class="footer">Generated on Fri Dec 2 2022 16:00:06 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

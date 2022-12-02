@@ -32,7 +32,7 @@ var searchData=
   ['isdrawnthrough_2189',['IsDrawnThrough',['../classvrv_1_1_bar_line.html#a87f90ba48eaa73ee8cf562c98fb22f4f',1,'vrv::BarLine']]],
   ['isempty_2190',['IsEmpty',['../classvrv_1_1_segmented_line.html#a2661b5e6e82eba98319d505b3e931582',1,'vrv::SegmentedLine']]],
   ['isenharmonicwith_2191',['IsEnharmonicWith',['../classvrv_1_1_note.html#a8ed755dba1d936d881bb4d3267db6fd9',1,'vrv::Note']]],
-  ['isextenderelement_2192',['IsExtenderElement',['../classvrv_1_1_dir.html#a3bc39e827b43b1431f9dc97c51bda5a4',1,'vrv::Dir::IsExtenderElement()'],['../classvrv_1_1_dynam.html#a4385439841413bc58bbb7d607fa4a234',1,'vrv::Dynam::IsExtenderElement()'],['../classvrv_1_1_floating_object.html#a8781df9fac1bad66c08cdae278be23e4',1,'vrv::FloatingObject::IsExtenderElement()']]],
+  ['isextenderelement_2192',['IsExtenderElement',['../classvrv_1_1_dir.html#a3bc39e827b43b1431f9dc97c51bda5a4',1,'vrv::Dir::IsExtenderElement()'],['../classvrv_1_1_dynam.html#a4385439841413bc58bbb7d607fa4a234',1,'vrv::Dynam::IsExtenderElement()'],['../classvrv_1_1_floating_object.html#a8781df9fac1bad66c08cdae278be23e4',1,'vrv::FloatingObject::IsExtenderElement()'],['../classvrv_1_1_tempo.html#a5c23ed4022b962566560259c7b833377',1,'vrv::Tempo::IsExtenderElement()']]],
   ['isfirstin_2193',['IsFirstIn',['../classvrv_1_1_beam_drawing_interface.html#ac4293802ae5a0f7d45cc6b106fb33032',1,'vrv::BeamDrawingInterface']]],
   ['isfirstinbeam_2194',['IsFirstInBeam',['../classvrv_1_1_duration_interface.html#ad14ac28eed0c0fbc93bf4b104abb1c2e',1,'vrv::DurationInterface']]],
   ['isfloatingobject_2195',['IsFloatingObject',['../classvrv_1_1_object.html#a3b131f39c868a8a1e9b768bdc0eae811',1,'vrv::Object']]],

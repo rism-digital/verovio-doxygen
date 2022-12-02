@@ -260,6 +260,7 @@ var hierarchy =
       [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
       [ "vrv::F", "classvrv_1_1_f.html", null ],
       [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
+      [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
     ] ],
     [ "AttExtSym", null, [
@@ -695,7 +696,6 @@ var hierarchy =
         [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
         [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
         [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
-        [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ],
         [ "vrv::TimeSpanningInterface", "classvrv_1_1_time_spanning_interface.html", [
           [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ],
           [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
@@ -710,6 +710,7 @@ var hierarchy =
           [ "vrv::PitchInflection", "classvrv_1_1_pitch_inflection.html", null ],
           [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
           [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
+          [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ],
           [ "vrv::Tie", "classvrv_1_1_tie.html", null ],
           [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
         ] ],
