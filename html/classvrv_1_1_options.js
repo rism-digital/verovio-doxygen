@@ -203,7 +203,7 @@ var classvrv_1_1_options =
     [ "m_transposeToSoundingPitch", "classvrv_1_1_options.html#acb7cc9136494029fe105866022b65b06", null ],
     [ "m_tupletBracketThickness", "classvrv_1_1_options.html#ae94e29f524be4460ad2c913ff8429a8a", null ],
     [ "m_tupletNumHead", "classvrv_1_1_options.html#a7676d295e3cb82fd728cef409e2b3706", null ],
-    [ "m_unit", "classvrv_1_1_options.html#aeee4defed73cfb5cfbd17428d2b5c696", null ],
+    [ "m_unit", "classvrv_1_1_options.html#a1653e0f2baa0ea980fa6d0b0f2d41184", null ],
     [ "m_useBraceGlyph", "classvrv_1_1_options.html#a5da26dd52d4cef7b2999a13bf38ddf13", null ],
     [ "m_useFacsimile", "classvrv_1_1_options.html#a13f3cec902927a5e97f748e26fdeca6f", null ],
     [ "m_usePgFooterForAll", "classvrv_1_1_options.html#af2efa96f02df7235c09c9688d8d528c9", null ],
