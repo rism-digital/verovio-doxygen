@@ -1,27 +1,10 @@
 var classvrv_1_1_beam_element_coord =
 [
-    [ "BeamElementCoord", "classvrv_1_1_beam_element_coord.html#a3d4c541e6a6640a5a9df1ac50db27bb2", null ],
-    [ "~BeamElementCoord", "classvrv_1_1_beam_element_coord.html#ad39a98a648db43efa4ae8d382d95d06d", null ],
     [ "CalculateStemLength", "classvrv_1_1_beam_element_coord.html#a2d28e6f4393f9d61fb6ac136ee56f024", null ],
     [ "CalculateStemLengthTab", "classvrv_1_1_beam_element_coord.html#a027f4c152d623e5cd81c3f659d15ac05", null ],
     [ "CalculateStemModAdjustment", "classvrv_1_1_beam_element_coord.html#ae2413c9f9e24d8829395823ffa2ed51c", null ],
     [ "GetStemDir", "classvrv_1_1_beam_element_coord.html#ab840311185d74d49af8357f0d2909db6", null ],
-    [ "GetStemHolderInterface", "classvrv_1_1_beam_element_coord.html#a93940155d8a91b590cc29bcda00ec8ec", null ],
+    [ "GetStemHolderInterface", "classvrv_1_1_beam_element_coord.html#a331740dc875e84587bb41a76c47bd01c", null ],
     [ "SetClosestNoteOrTabDurSym", "classvrv_1_1_beam_element_coord.html#abd402f9d51ce8ecc55ab130c148e3c27", null ],
-    [ "SetDrawingStemDir", "classvrv_1_1_beam_element_coord.html#acaf8f97534d8146d3032133e4372e504", null ],
-    [ "UpdateStemLength", "classvrv_1_1_beam_element_coord.html#a599f3e4fefc635f86a348e8313452706", null ],
-    [ "m_beamRelativePlace", "classvrv_1_1_beam_element_coord.html#a0b6ef6f8b84ee38d9811e3860b0e408f", null ],
-    [ "m_breaksec", "classvrv_1_1_beam_element_coord.html#ae86c87990d1a0fd3a79f340aafe31d6e", null ],
-    [ "m_centered", "classvrv_1_1_beam_element_coord.html#a722f671cf181576d13b9ad96e8a14e53", null ],
-    [ "m_closestNote", "classvrv_1_1_beam_element_coord.html#ac90293b4815f8f90c2c46f7d8d9c53ad", null ],
-    [ "m_dur", "classvrv_1_1_beam_element_coord.html#a1af51e56a62893fff666c463b265b5e0", null ],
-    [ "m_element", "classvrv_1_1_beam_element_coord.html#a1978586c632e48599f36d1cbd484e669", null ],
-    [ "m_maxShortening", "classvrv_1_1_beam_element_coord.html#ae0320bdb6103d0143f300623904b7282", null ],
-    [ "m_overlapMargin", "classvrv_1_1_beam_element_coord.html#a0e6c6a71cb6bb0dc5cd0e299c8ecd7a3", null ],
-    [ "m_partialFlagPlace", "classvrv_1_1_beam_element_coord.html#a960a8da7d590eb5ea152a25a92bbd54d", null ],
-    [ "m_partialFlags", "classvrv_1_1_beam_element_coord.html#a3024e5d8ba924a0f4e9bccfdaf5f41f8", null ],
-    [ "m_stem", "classvrv_1_1_beam_element_coord.html#a7979d8a8efc9eb48ceeab93b051cf9b9", null ],
-    [ "m_tabDurSym", "classvrv_1_1_beam_element_coord.html#a87b8c722e99d658486232481f61979c2", null ],
-    [ "m_x", "classvrv_1_1_beam_element_coord.html#aa7af1b2008fb449209dbbca38e22de34", null ],
-    [ "m_yBeam", "classvrv_1_1_beam_element_coord.html#a1f7fd630af091c0b6f6e1ac0509af9cb", null ]
+    [ "UpdateStemLength", "classvrv_1_1_beam_element_coord.html#a599f3e4fefc635f86a348e8313452706", null ]
 ];

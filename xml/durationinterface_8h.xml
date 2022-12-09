@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
   <compounddef id="durationinterface_8h" kind="file" language="C++">
     <compoundname>durationinterface.h</compoundname>
     <includes local="yes">atts_cmn.h</includes>
@@ -8,19 +8,13 @@
     <includes local="yes">atts_shared.h</includes>
     <includedby refid="chord_8h" local="yes">chord.h</includedby>
     <includedby refid="comparison_8h" local="yes">comparison.h</includedby>
-    <includedby refid="note_8h" local="yes">note.h</includedby>
     <includedby refid="nc_8h" local="yes">nc.h</includedby>
     <includedby refid="neume_8h" local="yes">neume.h</includedby>
+    <includedby refid="note_8h" local="yes">note.h</includedby>
     <includedby refid="rest_8h" local="yes">rest.h</includedby>
     <includedby refid="space_8h" local="yes">space.h</includedby>
     <includedby refid="tabgrp_8h" local="yes">tabgrp.h</includedby>
     <incdepgraph>
-      <node id="3">
-        <label>atts_gestural.h</label>
-      </node>
-      <node id="4">
-        <label>atts_mensural.h</label>
-      </node>
       <node id="1">
         <label>durationinterface.h</label>
         <link refid="durationinterface_8h"/>
@@ -36,23 +30,41 @@
       <node id="2">
         <label>atts_cmn.h</label>
       </node>
+      <node id="3">
+        <label>atts_gestural.h</label>
+      </node>
+      <node id="4">
+        <label>atts_mensural.h</label>
+      </node>
       <node id="5">
         <label>atts_shared.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="2">
+        <label>chord.h</label>
+        <link refid="chord_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>comparison.h</label>
+        <link refid="comparison_8h_source"/>
+      </node>
       <node id="1">
         <label>durationinterface.h</label>
         <link refid="durationinterface_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
@@ -61,31 +73,23 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="2">
-        <label>chord.h</label>
-        <link refid="chord_8h_source"/>
-        <childnode refid="3" relation="include">
-        </childnode>
+      <node id="6">
+        <label>nc.h</label>
+        <link refid="nc_8h_source"/>
+      </node>
+      <node id="3">
+        <label>neume.h</label>
+        <link refid="neume_8h_source"/>
+      </node>
+      <node id="4">
+        <label>note.h</label>
+        <link refid="note_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="7">
         <label>rest.h</label>
         <link refid="rest_8h_source"/>
-      </node>
-      <node id="3">
-        <label>note.h</label>
-        <link refid="note_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>comparison.h</label>
-        <link refid="comparison_8h_source"/>
-      </node>
-      <node id="5">
-        <label>neume.h</label>
-        <link refid="neume_8h_source"/>
       </node>
       <node id="8">
         <label>space.h</label>
@@ -95,10 +99,6 @@
         <label>tabgrp.h</label>
         <link refid="tabgrp_8h_source"/>
       </node>
-      <node id="6">
-        <label>nc.h</label>
-        <link refid="nc_8h_source"/>
-      </node>
     </invincdepgraph>
     <innerclass refid="classvrv_1_1_duration_interface" prot="public">vrv::DurationInterface</innerclass>
     <innernamespace refid="namespacevrv">vrv</innernamespace>
@@ -107,7 +107,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">//<sp/>Name:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>durationinterface.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Name:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>durationinterface.h</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author:<sp/><sp/><sp/><sp/><sp/><sp/>Laurent<sp/>Pugin</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created:<sp/><sp/><sp/><sp/><sp/>2011</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>Authors<sp/>and<sp/>others.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
@@ -130,7 +131,7 @@
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DurationInterface</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30" refid="classvrv_1_1_duration_interface" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_duration_interface" kindref="compound">DurationInterface</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_interface" kindref="compound">Interface</ref>,</highlight></codeline>
+<codeline lineno="30" refid="classvrv_1_1_duration_interface" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_duration_interface" kindref="compound">DurationInterface</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_interface" kindref="compound">Interface</ref>,</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttAugmentDots,</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttBeamSecondary,</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttDurationGes,</highlight></codeline>
@@ -140,32 +141,32 @@
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttFermataPresent,</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttStaffIdent<sp/>{</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_duration_interface" kindref="compound">DurationInterface</ref>();</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_duration_interface" kindref="compound">DurationInterface</ref>();</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1ab614c92b0802cbba7b41d89def33e9a2" kindref="member">Reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_duration_interface" kindref="compound">DurationInterface</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface" kindref="compound">~DurationInterface</ref>();</highlight></codeline>
+<codeline lineno="47" refid="classvrv_1_1_duration_interface_1ab614c92b0802cbba7b41d89def33e9a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1ab614c92b0802cbba7b41d89def33e9a2" kindref="member">Reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="48" refid="classvrv_1_1_duration_interface_1aa95bb6fba812c2b05620c3b862e0f6e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>InterfaceId<sp/><ref refid="classvrv_1_1_duration_interface_1aa95bb6fba812c2b05620c3b862e0f6e5" kindref="member">IsInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>INTERFACE_DURATION;<sp/>}</highlight></codeline>
 <codeline lineno="50"></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetDurDefault(data_DURATION<sp/>dur)<sp/>{<sp/>m_durDefault<sp/>=<sp/>dur;<sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetDurDefault(data_DURATION<sp/>dur)<sp/>{<sp/>m_durDefault<sp/>=<sp/>dur;<sp/>}</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>data_DURATION<sp/>GetDurDefault()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_durDefault;<sp/>}</highlight></codeline>
-<codeline lineno="58"></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1ab2a1d68a148ae1f515e711fff40941c9" kindref="member">GetInterfaceAlignmentDuration</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numBase)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classvrv_1_1_duration_interface_1ab2a1d68a148ae1f515e711fff40941c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1ab2a1d68a148ae1f515e711fff40941c9" kindref="member">GetInterfaceAlignmentDuration</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numBase)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1a1220b22b42b63e3632fe49149d3a17f5" kindref="member">GetInterfaceAlignmentMensuralDuration</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numBase,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mensur<sp/>*currentMensur)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72" refid="classvrv_1_1_duration_interface_1a1220b22b42b63e3632fe49149d3a17f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1a1220b22b42b63e3632fe49149d3a17f5" kindref="member">GetInterfaceAlignmentMensuralDuration</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numBase,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_mensur" kindref="compound">Mensur</ref><sp/>*currentMensur)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1ad14ac28eed0c0fbc93bf4b104abb1c2e" kindref="member">IsFirstInBeam</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LayerElement<sp/>*noteOrRest)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77" refid="classvrv_1_1_duration_interface_1ad14ac28eed0c0fbc93bf4b104abb1c2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1ad14ac28eed0c0fbc93bf4b104abb1c2e" kindref="member">IsFirstInBeam</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref><sp/>*noteOrRest)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1ab7a23457945d43056b01fde4cc1d8b46" kindref="member">IsLastInBeam</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LayerElement<sp/>*noteOrRest)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82" refid="classvrv_1_1_duration_interface_1ab7a23457945d43056b01fde4cc1d8b46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1ab7a23457945d43056b01fde4cc1d8b46" kindref="member">IsLastInBeam</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref><sp/>*noteOrRest)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetActualDur()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetActualDur()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetActualDurGes()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="94"></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1aa6d43066a4932c02ecdde2ade384257d" kindref="member">GetNoteOrChordDur</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LayerElement<sp/>*element)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="classvrv_1_1_duration_interface_1aa6d43066a4932c02ecdde2ade384257d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1aa6d43066a4932c02ecdde2ade384257d" kindref="member">GetNoteOrChordDur</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref><sp/>*element)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1a66a8195b6236d862a2234af1fb5256c1" kindref="member">IsMensuralDur</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104" refid="classvrv_1_1_duration_interface_1a66a8195b6236d862a2234af1fb5256c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1a66a8195b6236d862a2234af1fb5256c1" kindref="member">IsMensuralDur</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1a550d47c959ecccc53c488685fea3177c" kindref="member">HasIdenticalDurationInterface</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DurationInterface<sp/>*otherDurationInterface)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110" refid="classvrv_1_1_duration_interface_1a550d47c959ecccc53c488685fea3177c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1a550d47c959ecccc53c488685fea3177c" kindref="member">HasIdenticalDurationInterface</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface" kindref="compound">DurationInterface</ref><sp/>*otherDurationInterface)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1a0bee1f64b04b02e1126446701a6532aa" kindref="member">SetScoreTimeOnset</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scoreTime);</highlight></codeline>
+<codeline lineno="116" refid="classvrv_1_1_duration_interface_1a0bee1f64b04b02e1126446701a6532aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_duration_interface_1a0bee1f64b04b02e1126446701a6532aa" kindref="member">SetScoreTimeOnset</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scoreTime);</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetRealTimeOnsetSeconds(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>timeInSeconds);</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetScoreTimeOffset(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scoreTime);</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetRealTimeOffsetSeconds(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>timeInSeconds);</highlight></codeline>
@@ -181,7 +182,7 @@
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pseudo<sp/>functors<sp/>//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-----------------//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="132"><highlight class="normal"></highlight></codeline>
-<codeline lineno="140"><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CalcActualDur(data_DURATION<sp/>dur)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight></codeline>
 <codeline lineno="146"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
@@ -204,6 +205,6 @@
 <codeline lineno="192"><highlight class="normal"></highlight></codeline>
 <codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/durationinterface.h"/>
+    <location file="/Users/laurent/projects/verovio_develop/include/vrv/durationinterface.h"/>
   </compounddef>
 </doxygen>

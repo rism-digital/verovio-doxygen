@@ -1,9 +1,43 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
   <compounddef id="classvrv_1_1_beam_segment" kind="class" language="C++" prot="public">
     <compoundname>vrv::BeamSegment</compoundname>
     <derivedcompoundref refid="classvrv_1_1_beam_span_segment" prot="public" virt="non-virtual">vrv::BeamSpanSegment</derivedcompoundref>
     <includes refid="beam_8h" local="no">beam.h</includes>
+      <sectiondef kind="user-defined">
+      <header>The role in a stem.sameas situation.</header>
+      <description><para>Set in BeamSegment::InitSameasRoles and then in UpdateSameasRoles Used to determine if the beam is the primary one (normal stems and beams) or the secondary one (linking both notes).</para>
+<para>This depends on the drawing beam place, which can be encoded but otherwise calculated by CalcBeamPlace. The pointer to the other beam m_stemSameasReverseRole is set only for the first of the two beams and is not bi-directional. Is is set in InitSameasRoles. </para>
+</description>
+      <memberdef kind="variable" id="classvrv_1_1_beam_segment_1ab09b2aa639b5863612d01bfdf75f4d1a" prot="public" static="no" mutable="no">
+        <type>StemSameasDrawingRole</type>
+        <definition>StemSameasDrawingRole vrv::BeamSegment::m_stemSameasRole</definition>
+        <argsstring></argsstring>
+        <name>m_stemSameasRole</name>
+        <qualifiedname>vrv::BeamSegment::m_stemSameasRole</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="214" column="27" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_beam_segment_1ad4713706066f9cbd831207a623d28e26" prot="public" static="no" mutable="no">
+        <type>StemSameasDrawingRole *</type>
+        <definition>StemSameasDrawingRole* vrv::BeamSegment::m_stemSameasReverseRole</definition>
+        <argsstring></argsstring>
+        <name>m_stemSameasReverseRole</name>
+        <qualifiedname>vrv::BeamSegment::m_stemSameasReverseRole</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="215" column="27" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors, and other standard methods</header>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1affb5c3ee3c4310bc60db4c3880c8fb19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -11,45 +45,49 @@
         <definition>vrv::BeamSegment::BeamSegment</definition>
         <argsstring>()</argsstring>
         <name>BeamSegment</name>
+        <qualifiedname>vrv::BeamSegment::BeamSegment</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="42" column="5"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="42" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1ad00e25fbdde982ee522286831653b840" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
         <definition>virtual vrv::BeamSegment::~BeamSegment</definition>
         <argsstring>()</argsstring>
         <name>~BeamSegment</name>
+        <qualifiedname>vrv::BeamSegment::~BeamSegment</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="43" column="13"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="43" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1ae45293135277575fd4d828312f1c700c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::Reset</definition>
         <argsstring>()</argsstring>
         <name>Reset</name>
+        <qualifiedname>vrv::BeamSegment::Reset</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="45" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="45" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1ae63e0f161f2714ed05e810eab6bc1911" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcBeam</definition>
         <argsstring>(const Layer *layer, Staff *staff, const Doc *doc, BeamDrawingInterface *beamInterface, data_BEAMPLACE place=BEAMPLACE_NONE, bool init=true)</argsstring>
         <name>CalcBeam</name>
+        <qualifiedname>vrv::BeamSegment::CalcBeam</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
           <declname>layer</declname>
@@ -82,26 +120,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="47" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="47" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_segment_1ad436a14eb3e9b16228688a8b58f20a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_segment_1a8f6db7068d0d309a0bce41a81b50c983" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const ArrayOfBeamElementCoords *</type>
-        <definition>const ArrayOfBeamElementCoords* vrv::BeamSegment::GetElementCoordRefs</definition>
+        <definition>const ArrayOfBeamElementCoords * vrv::BeamSegment::GetElementCoordRefs</definition>
         <argsstring>()</argsstring>
         <name>GetElementCoordRefs</name>
+        <qualifiedname>vrv::BeamSegment::GetElementCoordRefs</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="53" column="36"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="53" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1aae2d6f202398b11757729b803cad00fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::InitCoordRefs</definition>
         <argsstring>(const ArrayOfBeamElementCoords *beamElementCoords)</argsstring>
         <name>InitCoordRefs</name>
+        <qualifiedname>vrv::BeamSegment::InitCoordRefs</qualifiedname>
         <param>
           <type>const ArrayOfBeamElementCoords *</type>
           <declname>beamElementCoords</declname>
@@ -114,13 +154,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="59" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="59" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a29c1c949f0d813b5ffc8303515bc804f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::ClearCoordRefs</definition>
         <argsstring>()</argsstring>
         <name>ClearCoordRefs</name>
+        <qualifiedname>vrv::BeamSegment::ClearCoordRefs</qualifiedname>
         <briefdescription>
 <para>Clear the m_beamElementCoords vector and delete all the objects. </para>
         </briefdescription>
@@ -128,13 +169,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="64" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="64" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1af13e9a7dcfa6b57fd10e31f68b0384ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int vrv::BeamSegment::GetAdjacentElementsDuration</definition>
         <argsstring>(int elementX) const</argsstring>
         <name>GetAdjacentElementsDuration</name>
+        <qualifiedname>vrv::BeamSegment::GetAdjacentElementsDuration</qualifiedname>
         <param>
           <type>int</type>
           <declname>elementX</declname>
@@ -146,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="69" column="9"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="69" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -156,26 +198,28 @@
         <definition>int vrv::BeamSegment::GetStartingX</definition>
         <argsstring>() const</argsstring>
         <name>GetStartingX</name>
+        <qualifiedname>vrv::BeamSegment::GetStartingX</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="75" column="9"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="75" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1ae5a38316d6505c452c70d045f67c60d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int vrv::BeamSegment::GetStartingY</definition>
         <argsstring>() const</argsstring>
         <name>GetStartingY</name>
+        <qualifiedname>vrv::BeamSegment::GetStartingY</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="76" column="9"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="76" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -185,52 +229,56 @@
         <definition>bool vrv::BeamSegment::StemSameas</definition>
         <argsstring>() const</argsstring>
         <name>StemSameas</name>
+        <qualifiedname>vrv::BeamSegment::StemSameas</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="83" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="83" bodyend="83"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="83" column="10" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="83" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a0c0437a8d0eeddefe926e4d133c66386" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::BeamSegment::StemSameasIsUnset</definition>
         <argsstring>() const</argsstring>
         <name>StemSameasIsUnset</name>
+        <qualifiedname>vrv::BeamSegment::StemSameasIsUnset</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="84" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="84" bodyend="84"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="84" column="10" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="84" bodyend="84"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a14d49d2f1fba6f75e38f7d69cf9c11c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::BeamSegment::StemSameasIsPrimary</definition>
         <argsstring>() const</argsstring>
         <name>StemSameasIsPrimary</name>
+        <qualifiedname>vrv::BeamSegment::StemSameasIsPrimary</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="85" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="85" bodyend="85"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="85" column="10" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="85" bodyend="85"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1abd268f50caa3624500f82b1c09918b0f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::BeamSegment::StemSameasIsSecondary</definition>
         <argsstring>() const</argsstring>
         <name>StemSameasIsSecondary</name>
+        <qualifiedname>vrv::BeamSegment::StemSameasIsSecondary</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="86" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="86" bodyend="86"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="86" column="10" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="86" bodyend="86"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -243,6 +291,7 @@
         <definition>void vrv::BeamSegment::InitSameasRoles</definition>
         <argsstring>(Beam *sameasBeam, data_BEAMPLACE &amp;drawingPlace)</argsstring>
         <name>InitSameasRoles</name>
+        <qualifiedname>vrv::BeamSegment::InitSameasRoles</qualifiedname>
         <param>
           <type><ref refid="classvrv_1_1_beam" kindref="compound">Beam</ref> *</type>
           <declname>sameasBeam</declname>
@@ -257,13 +306,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="95" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="95" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a76e3c0e971fefdc2d2b69cfe958c386e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::UpdateSameasRoles</definition>
         <argsstring>(data_BEAMPLACE place)</argsstring>
         <name>UpdateSameasRoles</name>
+        <qualifiedname>vrv::BeamSegment::UpdateSameasRoles</qualifiedname>
         <param>
           <type>data_BEAMPLACE</type>
           <declname>place</declname>
@@ -274,13 +324,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="96" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="96" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1add26c70127f0e7ac5c7427394dd16b6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcNoteHeadShiftForStemSameas</definition>
         <argsstring>(Beam *sameasBeam, data_BEAMPLACE place)</argsstring>
         <name>CalcNoteHeadShiftForStemSameas</name>
+        <qualifiedname>vrv::BeamSegment::CalcNoteHeadShiftForStemSameas</qualifiedname>
         <param>
           <type><ref refid="classvrv_1_1_beam" kindref="compound">Beam</ref> *</type>
           <declname>sameasBeam</declname>
@@ -295,39 +346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="97" column="10"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="user-defined">
-      <header>The role in a stem.sameas situation.</header>
-      <description><para>Set in BeamSegment::InitSameasRoles and then in UpdateSameasRoles Used to determine if the beam is the primary one (normal stems and beams) or the secondary one (linking both notes).</para>
-<para>This depends on the drawing beam place, which can be encoded but otherwise calculated by CalcBeamPlace. The pointer to the other beam m_stemSameasReverseRole is set only for the first of the two beams and is not bi-directional. Is is set in InitSameasRoles. </para>
-</description>
-      <memberdef kind="variable" id="classvrv_1_1_beam_segment_1ab09b2aa639b5863612d01bfdf75f4d1a" prot="public" static="no" mutable="no">
-        <type>StemSameasDrawingRole</type>
-        <definition>StemSameasDrawingRole vrv::BeamSegment::m_stemSameasRole</definition>
-        <argsstring></argsstring>
-        <name>m_stemSameasRole</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="214" column="27" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="214" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_beam_segment_1ad4713706066f9cbd831207a623d28e26" prot="public" static="no" mutable="no">
-        <type>StemSameasDrawingRole *</type>
-        <definition>StemSameasDrawingRole* vrv::BeamSegment::m_stemSameasReverseRole</definition>
-        <argsstring></argsstring>
-        <name>m_stemSameasReverseRole</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="215" column="27" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="215" bodyend="-1"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="97" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -336,123 +355,133 @@
         <definition>int vrv::BeamSegment::m_nbNotesOrChords</definition>
         <argsstring></argsstring>
         <name>m_nbNotesOrChords</name>
+        <qualifiedname>vrv::BeamSegment::m_nbNotesOrChords</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="188" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="188" bodyend="-1"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="188" column="9" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="188" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1aa0e86a5077d8c137969485dc69150fb5" prot="public" static="no" mutable="no">
         <type>double</type>
         <definition>double vrv::BeamSegment::m_beamSlope</definition>
         <argsstring></argsstring>
         <name>m_beamSlope</name>
+        <qualifiedname>vrv::BeamSegment::m_beamSlope</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="189" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="189" bodyend="-1"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="189" column="12" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="189" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1a15b467b4275e576f076ee509beac817d" prot="public" static="no" mutable="no">
         <type>int</type>
         <definition>int vrv::BeamSegment::m_verticalCenter</definition>
         <argsstring></argsstring>
         <name>m_verticalCenter</name>
+        <qualifiedname>vrv::BeamSegment::m_verticalCenter</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="190" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="190" bodyend="-1"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="190" column="9" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="190" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1a2e6c17db9df3871dfc055565e062353f" prot="public" static="no" mutable="no">
         <type>int</type>
         <definition>int vrv::BeamSegment::m_ledgerLinesAbove</definition>
         <argsstring></argsstring>
         <name>m_ledgerLinesAbove</name>
+        <qualifiedname>vrv::BeamSegment::m_ledgerLinesAbove</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="191" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="191" bodyend="-1"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="191" column="9" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="191" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1ac9d89a751d2ffd923a6d9435770f6935" prot="public" static="no" mutable="no">
         <type>int</type>
         <definition>int vrv::BeamSegment::m_ledgerLinesBelow</definition>
         <argsstring></argsstring>
         <name>m_ledgerLinesBelow</name>
+        <qualifiedname>vrv::BeamSegment::m_ledgerLinesBelow</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="192" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="192" bodyend="-1"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="192" column="9" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="192" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1a1787d8320f76e0afe1a7ae84c90c174c" prot="public" static="no" mutable="no">
         <type>int</type>
         <definition>int vrv::BeamSegment::m_uniformStemLength</definition>
         <argsstring></argsstring>
         <name>m_uniformStemLength</name>
+        <qualifiedname>vrv::BeamSegment::m_uniformStemLength</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="193" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="193" bodyend="-1"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="193" column="9" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="193" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1a4a6999bc33982a005f771ac051ad60de" prot="public" static="no" mutable="no">
         <type>data_BEAMPLACE</type>
         <definition>data_BEAMPLACE vrv::BeamSegment::m_weightedPlace</definition>
         <argsstring></argsstring>
         <name>m_weightedPlace</name>
+        <qualifiedname>vrv::BeamSegment::m_weightedPlace</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="194" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="194" bodyend="-1"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="194" column="20" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="194" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1ad767ec99e5feff772b50047e3892ddb2" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_beam_element_coord" kindref="compound">BeamElementCoord</ref> *</type>
         <definition>BeamElementCoord* vrv::BeamSegment::m_firstNoteOrChord</definition>
         <argsstring></argsstring>
         <name>m_firstNoteOrChord</name>
+        <qualifiedname>vrv::BeamSegment::m_firstNoteOrChord</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="196" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="196" bodyend="-1"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="196" column="22" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="196" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1a74b42d249066e9ecd4c2ecf44dc35d32" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_beam_element_coord" kindref="compound">BeamElementCoord</ref> *</type>
         <definition>BeamElementCoord* vrv::BeamSegment::m_lastNoteOrChord</definition>
         <argsstring></argsstring>
         <name>m_lastNoteOrChord</name>
+        <qualifiedname>vrv::BeamSegment::m_lastNoteOrChord</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="197" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="197" bodyend="-1"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="197" column="22" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="197" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_beam_segment_1a2f8cd54b0cdac4e3db644a8c3bd22e19" prot="public" static="no" mutable="no">
         <type>ArrayOfBeamElementCoords</type>
         <definition>ArrayOfBeamElementCoords vrv::BeamSegment::m_beamElementCoordRefs</definition>
         <argsstring></argsstring>
         <name>m_beamElementCoordRefs</name>
+        <qualifiedname>vrv::BeamSegment::m_beamElementCoordRefs</qualifiedname>
         <briefdescription>
 <para>An array of coordinates for each element. </para>
         </briefdescription>
@@ -460,7 +489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="202" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="202" bodyend="-1"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="202" column="30" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="202" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -469,6 +498,7 @@
         <definition>void vrv::BeamSegment::RequestStaffSpace</definition>
         <argsstring>(const Doc *doc, const BeamDrawingInterface *beamInterface)</argsstring>
         <name>RequestStaffSpace</name>
+        <qualifiedname>vrv::BeamSegment::RequestStaffSpace</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
@@ -484,7 +514,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="103" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="103" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -493,6 +523,7 @@
         <definition>void vrv::BeamSegment::AdjustBeamToFrenchStyle</definition>
         <argsstring>(const BeamDrawingInterface *beamInterface)</argsstring>
         <name>AdjustBeamToFrenchStyle</name>
+        <qualifiedname>vrv::BeamSegment::AdjustBeamToFrenchStyle</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_beam_drawing_interface" kindref="compound">BeamDrawingInterface</ref> *</type>
           <declname>beamInterface</declname>
@@ -503,13 +534,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="107" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="107" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1ae556404fb4191334cbe20ac02985d61f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::AdjustBeamToLedgerLines</definition>
         <argsstring>(const Doc *doc, const Staff *staff, const BeamDrawingInterface *beamInterface, bool isHorizontal)</argsstring>
         <name>AdjustBeamToLedgerLines</name>
+        <qualifiedname>vrv::BeamSegment::AdjustBeamToLedgerLines</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
@@ -532,13 +564,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="110" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="110" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1af2d0bf9e5065bcdd215a1aa9cd3c6cf2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::AdjustBeamToTremolos</definition>
         <argsstring>(const Doc *doc, const Staff *staff, const BeamDrawingInterface *beamInterface)</argsstring>
         <name>AdjustBeamToTremolos</name>
+        <qualifiedname>vrv::BeamSegment::AdjustBeamToTremolos</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
@@ -558,13 +591,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="117" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="117" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a2c8d5949cace59db032e33ee14b1aba1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcBeamInit</definition>
         <argsstring>(const Staff *staff, const Doc *doc, BeamDrawingInterface *beamInterface, data_BEAMPLACE place)</argsstring>
         <name>CalcBeamInit</name>
+        <qualifiedname>vrv::BeamSegment::CalcBeamInit</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
@@ -587,13 +621,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="119" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="119" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a1cd897efebf10ced69f0f22ba29fe7e2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcBeamInitForNotePair</definition>
         <argsstring>(const Note *note1, const Note *note2, const Staff *staff, int &amp;yMax, int &amp;yMin)</argsstring>
         <name>CalcBeamInitForNotePair</name>
+        <qualifiedname>vrv::BeamSegment::CalcBeamInitForNotePair</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
           <declname>note1</declname>
@@ -620,13 +655,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="121" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="121" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a58ae7cd58b7d6a67f4d1697c23c1acc4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::BeamSegment::CalcBeamSlope</definition>
         <argsstring>(const Staff *staff, const Doc *doc, BeamDrawingInterface *beamInterface, int &amp;step)</argsstring>
         <name>CalcBeamSlope</name>
+        <qualifiedname>vrv::BeamSegment::CalcBeamSlope</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
@@ -649,13 +685,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="123" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="123" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a7ca240410f9e66656b43bd1f0e3b1537" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int vrv::BeamSegment::CalcBeamSlopeStep</definition>
         <argsstring>(const Doc *doc, const Staff *staff, BeamDrawingInterface *beamInterface, int noteStep, bool &amp;shortStep)</argsstring>
         <name>CalcBeamSlopeStep</name>
+        <qualifiedname>vrv::BeamSegment::CalcBeamSlopeStep</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
@@ -682,13 +719,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="125" column="9"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="125" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1afdd4fdc5547a2f506a833a497da831bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcMixedBeamPosition</definition>
         <argsstring>(const BeamDrawingInterface *beamInterface, int step, int unit)</argsstring>
         <name>CalcMixedBeamPosition</name>
+        <qualifiedname>vrv::BeamSegment::CalcMixedBeamPosition</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_beam_drawing_interface" kindref="compound">BeamDrawingInterface</ref> *</type>
           <declname>beamInterface</declname>
@@ -707,13 +745,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="128" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="128" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a54a2631a86122fb192d182fde67993f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcBeamPosition</definition>
         <argsstring>(const Doc *doc, const Staff *staff, BeamDrawingInterface *beamInterface, bool isHorizontal)</argsstring>
         <name>CalcBeamPosition</name>
+        <qualifiedname>vrv::BeamSegment::CalcBeamPosition</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
@@ -736,13 +775,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="130" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="130" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1af0627f26025842bc1e8aa0c44e38c5e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcAdjustSlope</definition>
         <argsstring>(const Staff *staff, const Doc *doc, BeamDrawingInterface *beamInterface, int &amp;step)</argsstring>
         <name>CalcAdjustSlope</name>
+        <qualifiedname>vrv::BeamSegment::CalcAdjustSlope</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
@@ -765,13 +805,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="132" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="132" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a9b21a6321a1e0a7a5e110d43c5debd92" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcAdjustPosition</definition>
         <argsstring>(const Staff *staff, const Doc *doc, const BeamDrawingInterface *beamInterface)</argsstring>
         <name>CalcAdjustPosition</name>
+        <qualifiedname>vrv::BeamSegment::CalcAdjustPosition</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
@@ -790,13 +831,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="135" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="135" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1aea6018f3b80cd47754383dcdeb9fca73" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcBeamPlace</definition>
         <argsstring>(const Layer *layer, BeamDrawingInterface *beamInterface, data_BEAMPLACE place)</argsstring>
         <name>CalcBeamPlace</name>
+        <qualifiedname>vrv::BeamSegment::CalcBeamPlace</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
           <declname>layer</declname>
@@ -815,13 +857,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="137" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="137" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a548f92acad96144499e24fa140d717b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcBeamPlaceTab</definition>
         <argsstring>(const Layer *layer, const Staff *staff, const Doc *doc, BeamDrawingInterface *beamInterface, data_BEAMPLACE place)</argsstring>
         <name>CalcBeamPlaceTab</name>
+        <qualifiedname>vrv::BeamSegment::CalcBeamPlaceTab</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
           <declname>layer</declname>
@@ -850,13 +893,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="143" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="143" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1aadf7dbd07baa1d5084c0f3b631a4b80c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcBeamStemLength</definition>
         <argsstring>(const Staff *staff, data_BEAMPLACE place, bool isHorizontal)</argsstring>
         <name>CalcBeamStemLength</name>
+        <qualifiedname>vrv::BeamSegment::CalcBeamStemLength</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
@@ -875,13 +919,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="147" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="147" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1aac0d198f42a0b3b2754784bb2e352064" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcSetStemValues</definition>
         <argsstring>(const Staff *staff, const Doc *doc, const BeamDrawingInterface *beamInterface)</argsstring>
         <name>CalcSetStemValues</name>
+        <qualifiedname>vrv::BeamSegment::CalcSetStemValues</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
@@ -900,13 +945,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="150" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="150" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1ac1d07868290eaf5f105cc90e0d95e65c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcSetStemValuesTab</definition>
         <argsstring>(const Staff *staff, const Doc *doc, const BeamDrawingInterface *beamInterface)</argsstring>
         <name>CalcSetStemValuesTab</name>
+        <qualifiedname>vrv::BeamSegment::CalcSetStemValuesTab</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
@@ -925,13 +971,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="153" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="153" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a4dcd310e97b146b6f58dfad0d7d246da" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int vrv::BeamSegment::CalcMixedBeamCenterY</definition>
         <argsstring>(int step, int unit) const</argsstring>
         <name>CalcMixedBeamCenterY</name>
+        <qualifiedname>vrv::BeamSegment::CalcMixedBeamCenterY</qualifiedname>
         <param>
           <type>int</type>
           <declname>step</declname>
@@ -946,13 +993,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="156" column="9"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="156" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_segment_1aa47c3f17b156359c2dbe1a8505806948" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_segment_1ad72b1e383388ae2da3354e6249bb13cd" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; int, int &gt;</type>
-        <definition>std::pair&lt;int, int&gt; vrv::BeamSegment::CalcStemDefiningNote</definition>
+        <definition>std::pair&lt; int, int &gt; vrv::BeamSegment::CalcStemDefiningNote</definition>
         <argsstring>(const Staff *staff, data_BEAMPLACE place) const</argsstring>
         <name>CalcStemDefiningNote</name>
+        <qualifiedname>vrv::BeamSegment::CalcStemDefiningNote</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
@@ -967,13 +1015,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="159" column="15"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="159" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a00eebbb6c67b9bcb39146e4864dcabf6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcHorizontalBeam</definition>
         <argsstring>(const Doc *doc, const Staff *staff, const BeamDrawingInterface *beamInterface)</argsstring>
         <name>CalcHorizontalBeam</name>
+        <qualifiedname>vrv::BeamSegment::CalcHorizontalBeam</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
@@ -992,13 +1041,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="162" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="162" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a22e4ded63ba24fcba6b2c51415045459" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcMixedBeamPlace</definition>
         <argsstring>(const Staff *staff)</argsstring>
         <name>CalcMixedBeamPlace</name>
+        <qualifiedname>vrv::BeamSegment::CalcMixedBeamPlace</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
@@ -1009,39 +1059,42 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="165" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="165" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1aa6fdf47946952970d83932065f7b68c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcPartialFlagPlace</definition>
         <argsstring>()</argsstring>
         <name>CalcPartialFlagPlace</name>
+        <qualifiedname>vrv::BeamSegment::CalcPartialFlagPlace</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="168" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="168" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1acc2bb920c9ea28583155aba6246c9ae3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamSegment::CalcSetValues</definition>
         <argsstring>()</argsstring>
         <name>CalcSetValues</name>
+        <qualifiedname>vrv::BeamSegment::CalcSetValues</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="171" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="171" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1acb24624ed2cfe5cd65c8a47cf05dfd98" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::BeamSegment::DoesBeamOverlap</definition>
         <argsstring>(const BeamDrawingInterface *beamInterface, int topBorder, int bottomBorder, int minStemLength) const</argsstring>
         <name>DoesBeamOverlap</name>
+        <qualifiedname>vrv::BeamSegment::DoesBeamOverlap</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_beam_drawing_interface" kindref="compound">BeamDrawingInterface</ref> *</type>
           <declname>beamInterface</declname>
@@ -1064,13 +1117,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="174" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="174" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_segment_1a79857401915df7b579cab42c8e6c4834" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_segment_1aa85f85ba90628a5fa23299e67854177d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; int, int &gt;</type>
-        <definition>std::pair&lt;int, int&gt; vrv::BeamSegment::GetVerticalOffset</definition>
+        <definition>std::pair&lt; int, int &gt; vrv::BeamSegment::GetVerticalOffset</definition>
         <argsstring>(const BeamDrawingInterface *beamInterface) const</argsstring>
         <name>GetVerticalOffset</name>
+        <qualifiedname>vrv::BeamSegment::GetVerticalOffset</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_beam_drawing_interface" kindref="compound">BeamDrawingInterface</ref> *</type>
           <declname>beamInterface</declname>
@@ -1081,13 +1135,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="178" column="15"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="178" column="15"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_segment_1a8f0ef8bebd67e58dddb50cc8232aa641" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_segment_1a97468c75f59ffd4c243cd8528288c006" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; int, int &gt;</type>
-        <definition>std::pair&lt;int, int&gt; vrv::BeamSegment::GetMinimalStemLength</definition>
+        <definition>std::pair&lt; int, int &gt; vrv::BeamSegment::GetMinimalStemLength</definition>
         <argsstring>(const BeamDrawingInterface *beamInterface) const</argsstring>
         <name>GetMinimalStemLength</name>
+        <qualifiedname>vrv::BeamSegment::GetMinimalStemLength</qualifiedname>
         <param>
           <type>const <ref refid="classvrv_1_1_beam_drawing_interface" kindref="compound">BeamDrawingInterface</ref> *</type>
           <declname>beamInterface</declname>
@@ -1098,13 +1153,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="181" column="15"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="181" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1a9f53be7248347381f6276a6dac565ef3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::BeamSegment::NeedToResetPosition</definition>
         <argsstring>(Staff *staff, const Doc *doc, BeamDrawingInterface *beamInterface)</argsstring>
         <name>NeedToResetPosition</name>
+        <qualifiedname>vrv::BeamSegment::NeedToResetPosition</qualifiedname>
         <param>
           <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
@@ -1123,7 +1179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="184" column="10"/>
+        <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="184" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1145,172 +1201,290 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4">
-        <label>vrv::LayerElement</label>
-        <link refid="classvrv_1_1_layer_element"/>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-        <childnode refid="7" relation="public-inheritance">
-        </childnode>
-        <childnode refid="10" relation="public-inheritance">
-        </childnode>
-        <childnode refid="12" relation="public-inheritance">
-        </childnode>
-        <childnode refid="13" relation="public-inheritance">
-        </childnode>
-        <childnode refid="14" relation="public-inheritance">
-        </childnode>
-        <childnode refid="15" relation="usage">
-          <edgelabel>m_crossLayer</edgelabel>
-        </childnode>
-        <childnode refid="21" relation="usage">
-          <edgelabel>m_crossStaff</edgelabel>
-        </childnode>
-        <childnode refid="45" relation="usage">
-          <edgelabel>m_graceAlignment</edgelabel>
-          <edgelabel>m_alignment</edgelabel>
-        </childnode>
+      <node id="51">
+        <label>AttAugmentDots</label>
+      </node>
+      <node id="21">
+        <label>AttBarring</label>
+      </node>
+      <node id="52">
+        <label>AttBeamSecondary</label>
+      </node>
+      <node id="66">
+        <label>AttColor</label>
+      </node>
+      <node id="67">
+        <label>AttColoration</label>
+      </node>
+      <node id="11">
+        <label>AttCoordX1</label>
+      </node>
+      <node id="15">
+        <label>AttCoordY1</label>
+      </node>
+      <node id="39">
+        <label>AttCourseLog</label>
+      </node>
+      <node id="43">
+        <label>AttCue</label>
+      </node>
+      <node id="31">
+        <label>AttDistances</label>
+      </node>
+      <node id="22">
+        <label>AttDurationDefault</label>
+      </node>
+      <node id="53">
+        <label>AttDurationGes</label>
+      </node>
+      <node id="54">
+        <label>AttDurationLog</label>
+      </node>
+      <node id="55">
+        <label>AttDurationQuality</label>
+      </node>
+      <node id="56">
+        <label>AttDurationRatio</label>
+      </node>
+      <node id="68">
+        <label>AttExtSym</label>
+      </node>
+      <node id="8">
+        <label>AttFacsimile</label>
+      </node>
+      <node id="57">
+        <label>AttFermataPresent</label>
+      </node>
+      <node id="48">
+        <label>AttGraced</label>
+      </node>
+      <node id="12">
+        <label>AttLabelled</label>
+      </node>
+      <node id="10">
+        <label>AttLinking</label>
+      </node>
+      <node id="23">
+        <label>AttLyricStyle</label>
+      </node>
+      <node id="24">
+        <label>AttMeasureNumbers</label>
+      </node>
+      <node id="25">
+        <label>AttMidiTempo</label>
+      </node>
+      <node id="69">
+        <label>AttMidiVelocity</label>
+      </node>
+      <node id="26">
+        <label>AttMultinumMeasures</label>
+      </node>
+      <node id="16">
+        <label>AttNInteger</label>
+      </node>
+      <node id="77">
+        <label>AttNNumberLike</label>
+      </node>
+      <node id="32">
+        <label>AttNotationType</label>
+      </node>
+      <node id="60">
+        <label>AttNoteGes</label>
+      </node>
+      <node id="70">
+        <label>AttNoteGesTab</label>
+      </node>
+      <node id="71">
+        <label>AttNoteHeads</label>
       </node>
       <node id="72">
         <label>AttNoteVisMensural</label>
       </node>
-      <node id="10">
-        <label>vrv::LinkingInterface</label>
-        <link refid="classvrv_1_1_linking_interface"/>
-        <childnode refid="8" relation="public-inheritance">
+      <node id="61">
+        <label>AttOctave</label>
+      </node>
+      <node id="27">
+        <label>AttPianoPedals</label>
+      </node>
+      <node id="62">
+        <label>AttPitch</label>
+      </node>
+      <node id="33">
+        <label>AttScalable</label>
+      </node>
+      <node id="28">
+        <label>AttSpacing</label>
+      </node>
+      <node id="34">
+        <label>AttStaffDefLog</label>
+      </node>
+      <node id="35">
+        <label>AttStaffDefVis</label>
+      </node>
+      <node id="58">
+        <label>AttStaffIdent</label>
+      </node>
+      <node id="64">
+        <label>AttStaffLoc</label>
+      </node>
+      <node id="65">
+        <label>AttStaffLocPitched</label>
+      </node>
+      <node id="49">
+        <label>AttStemVis</label>
+      </node>
+      <node id="73">
+        <label>AttStems</label>
+      </node>
+      <node id="74">
+        <label>AttStemsCmn</label>
+      </node>
+      <node id="29">
+        <label>AttSystems</label>
+      </node>
+      <node id="75">
+        <label>AttTiePresent</label>
+      </node>
+      <node id="36">
+        <label>AttTimeBase</label>
+      </node>
+      <node id="37">
+        <label>AttTransposition</label>
+      </node>
+      <node id="13">
+        <label>AttTyped</label>
+      </node>
+      <node id="17">
+        <label>AttVisibility</label>
+      </node>
+      <node id="44">
+        <label>vrv::Alignment</label>
+        <link refid="classvrv_1_1_alignment"/>
+        <childnode refid="4" relation="public-inheritance">
         </childnode>
-        <childnode refid="11" relation="public-inheritance">
+      </node>
+      <node id="2">
+        <label>vrv::BeamElementCoord</label>
+        <link refid="classvrv_1_1_beam_element_coord"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_element</edgelabel>
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>m_closestNote</edgelabel>
+        </childnode>
+        <childnode refid="76" relation="usage">
+          <edgelabel>m_tabDurSym</edgelabel>
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>m_stem</edgelabel>
         </childnode>
       </node>
       <node id="1">
         <label>vrv::BeamSegment</label>
         <link refid="classvrv_1_1_beam_segment"/>
         <childnode refid="2" relation="usage">
-          <edgelabel>m_lastNoteOrChord</edgelabel>
           <edgelabel>m_firstNoteOrChord</edgelabel>
+          <edgelabel>m_lastNoteOrChord</edgelabel>
         </childnode>
       </node>
-      <node id="33">
-        <label>AttMultinumMeasures</label>
-      </node>
-      <node id="26">
-        <label>vrv::ScoreDefElement</label>
-        <link refid="classvrv_1_1_score_def_element"/>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-        <childnode refid="27" relation="public-inheritance">
-        </childnode>
-        <childnode refid="14" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="56">
-        <label>AttDurationRatio</label>
-      </node>
-      <node id="46">
-        <label>vrv::StemmedDrawingInterface</label>
-        <link refid="classvrv_1_1_stemmed_drawing_interface"/>
-        <childnode refid="47" relation="usage">
-          <edgelabel>m_drawingStem</edgelabel>
-        </childnode>
-      </node>
-      <node id="24">
-        <label>AttCourseLog</label>
-      </node>
-      <node id="36">
-        <label>AttSystems</label>
-      </node>
-      <node id="21">
-        <label>vrv::Staff</label>
-        <link refid="classvrv_1_1_staff"/>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-        <childnode refid="7" relation="public-inheritance">
-        </childnode>
-        <childnode refid="22" relation="public-inheritance">
-        </childnode>
-        <childnode refid="19" relation="public-inheritance">
-        </childnode>
-        <childnode refid="14" relation="public-inheritance">
-        </childnode>
-        <childnode refid="20" relation="public-inheritance">
-        </childnode>
-        <childnode refid="23" relation="usage">
-          <edgelabel>m_drawingTuning</edgelabel>
-        </childnode>
-        <childnode refid="25" relation="usage">
-          <edgelabel>m_drawingStaffDef</edgelabel>
-        </childnode>
-      </node>
-      <node id="60">
-        <label>AttNoteGes</label>
-      </node>
-      <node id="28">
-        <label>AttBarring</label>
-      </node>
-      <node id="38">
-        <label>AttDistances</label>
-      </node>
-      <node id="52">
-        <label>AttBeamSecondary</label>
-      </node>
-      <node id="67">
-        <label>AttColoration</label>
-      </node>
-      <node id="14">
-        <label>AttTyped</label>
-      </node>
-      <node id="6">
+      <node id="5">
         <label>vrv::BoundingBox</label>
         <link refid="classvrv_1_1_bounding_box"/>
       </node>
-      <node id="27">
-        <label>vrv::ScoreDefInterface</label>
-        <link refid="classvrv_1_1_score_def_interface"/>
+      <node id="41">
+        <label>vrv::DrawingListInterface</label>
+        <link refid="classvrv_1_1_drawing_list_interface"/>
+      </node>
+      <node id="50">
+        <label>vrv::DurationInterface</label>
+        <link refid="classvrv_1_1_duration_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vrv::FacsimileInterface</label>
+        <link refid="classvrv_1_1_facsimile_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
         <childnode refid="8" relation="public-inheritance">
         </childnode>
-        <childnode refid="28" relation="public-inheritance">
-        </childnode>
-        <childnode refid="29" relation="public-inheritance">
-        </childnode>
-        <childnode refid="30" relation="public-inheritance">
-        </childnode>
-        <childnode refid="31" relation="public-inheritance">
-        </childnode>
-        <childnode refid="32" relation="public-inheritance">
-        </childnode>
-        <childnode refid="33" relation="public-inheritance">
-        </childnode>
-        <childnode refid="34" relation="public-inheritance">
-        </childnode>
-        <childnode refid="35" relation="public-inheritance">
-        </childnode>
-        <childnode refid="36" relation="public-inheritance">
-        </childnode>
       </node>
-      <node id="76">
-        <label>vrv::TabDurSym</label>
-        <link refid="classvrv_1_1_tab_dur_sym"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-        <childnode refid="46" relation="public-inheritance">
-        </childnode>
-        <childnode refid="77" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="8">
+      <node id="7">
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="32">
-        <label>AttMidiTempo</label>
-      </node>
-      <node id="20">
-        <label>AttVisibility</label>
+      <node id="40">
+        <label>vrv::Layer</label>
+        <link refid="classvrv_1_1_layer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="3">
+        <label>vrv::LayerElement</label>
+        <link refid="classvrv_1_1_layer_element"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>m_crossStaff</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>m_crossLayer</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>m_alignment</edgelabel>
+          <edgelabel>m_graceAlignment</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vrv::LinkingInterface</label>
+        <link refid="classvrv_1_1_linking_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
         <label>vrv::Note</label>
         <link refid="classvrv_1_1_note"/>
-        <childnode refid="4" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
         <childnode refid="46" relation="public-inheritance">
         </childnode>
@@ -1324,7 +1498,7 @@
         </childnode>
         <childnode refid="67" relation="public-inheritance">
         </childnode>
-        <childnode refid="18" relation="public-inheritance">
+        <childnode refid="43" relation="public-inheritance">
         </childnode>
         <childnode refid="68" relation="public-inheritance">
         </childnode>
@@ -1344,57 +1518,23 @@
         </childnode>
         <childnode refid="75" relation="public-inheritance">
         </childnode>
-        <childnode refid="20" relation="public-inheritance">
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vrv::Object</label>
+        <link refid="classvrv_1_1_object"/>
+        <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
       <node id="42">
-        <label>AttStaffDefVis</label>
-      </node>
-      <node id="19">
-        <label>AttNInteger</label>
-      </node>
-      <node id="15">
-        <label>vrv::Layer</label>
-        <link refid="classvrv_1_1_layer"/>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-        <childnode refid="16" relation="public-inheritance">
-        </childnode>
-        <childnode refid="17" relation="public-inheritance">
-        </childnode>
-        <childnode refid="18" relation="public-inheritance">
-        </childnode>
-        <childnode refid="19" relation="public-inheritance">
-        </childnode>
-        <childnode refid="14" relation="public-inheritance">
-        </childnode>
-        <childnode refid="20" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="57">
-        <label>AttFermataPresent</label>
-      </node>
-      <node id="54">
-        <label>AttDurationLog</label>
-      </node>
-      <node id="35">
-        <label>AttSpacing</label>
-      </node>
-      <node id="7">
-        <label>vrv::FacsimileInterface</label>
-        <link refid="classvrv_1_1_facsimile_interface"/>
-        <childnode refid="8" relation="public-inheritance">
-        </childnode>
-        <childnode refid="9" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="39">
-        <label>AttNotationType</label>
+        <label>vrv::ObjectListInterface</label>
+        <link refid="classvrv_1_1_object_list_interface"/>
       </node>
       <node id="59">
         <label>vrv::PitchInterface</label>
         <link refid="classvrv_1_1_pitch_interface"/>
-        <childnode refid="8" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
         <childnode refid="60" relation="public-inheritance">
         </childnode>
@@ -1403,225 +1543,141 @@
         <childnode refid="62" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2">
-        <label>vrv::BeamElementCoord</label>
-        <link refid="classvrv_1_1_beam_element_coord"/>
-        <childnode refid="3" relation="usage">
-          <edgelabel>m_closestNote</edgelabel>
-        </childnode>
-        <childnode refid="76" relation="usage">
-          <edgelabel>m_tabDurSym</edgelabel>
-        </childnode>
-        <childnode refid="4" relation="usage">
-          <edgelabel>m_element</edgelabel>
-        </childnode>
-        <childnode refid="47" relation="usage">
-          <edgelabel>m_stem</edgelabel>
-        </childnode>
-      </node>
-      <node id="12">
-        <label>AttCoordX1</label>
-      </node>
-      <node id="16">
-        <label>vrv::DrawingListInterface</label>
-        <link refid="classvrv_1_1_drawing_list_interface"/>
-      </node>
-      <node id="62">
-        <label>AttPitch</label>
-      </node>
-      <node id="22">
-        <label>AttCoordY1</label>
-      </node>
-      <node id="50">
-        <label>vrv::DurationInterface</label>
-        <link refid="classvrv_1_1_duration_interface"/>
-        <childnode refid="8" relation="public-inheritance">
-        </childnode>
-        <childnode refid="51" relation="public-inheritance">
-        </childnode>
-        <childnode refid="52" relation="public-inheritance">
-        </childnode>
-        <childnode refid="53" relation="public-inheritance">
-        </childnode>
-        <childnode refid="54" relation="public-inheritance">
-        </childnode>
-        <childnode refid="55" relation="public-inheritance">
-        </childnode>
-        <childnode refid="56" relation="public-inheritance">
-        </childnode>
-        <childnode refid="57" relation="public-inheritance">
-        </childnode>
-        <childnode refid="58" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="23">
-        <label>vrv::Tuning</label>
-        <link refid="classvrv_1_1_tuning"/>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-        <childnode refid="24" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="64">
-        <label>AttStaffLoc</label>
-      </node>
-      <node id="75">
-        <label>AttTiePresent</label>
-      </node>
-      <node id="65">
-        <label>AttStaffLocPitched</label>
-      </node>
-      <node id="37">
-        <label>vrv::StaffDefDrawingInterface</label>
-        <link refid="classvrv_1_1_staff_def_drawing_interface"/>
-      </node>
-      <node id="73">
-        <label>AttStems</label>
-      </node>
-      <node id="70">
-        <label>AttNoteGesTab</label>
-      </node>
-      <node id="51">
-        <label>AttAugmentDots</label>
-      </node>
-      <node id="25">
-        <label>vrv::StaffDef</label>
-        <link refid="classvrv_1_1_staff_def"/>
-        <childnode refid="26" relation="public-inheritance">
-        </childnode>
-        <childnode refid="37" relation="public-inheritance">
-        </childnode>
-        <childnode refid="38" relation="public-inheritance">
-        </childnode>
-        <childnode refid="13" relation="public-inheritance">
-        </childnode>
-        <childnode refid="19" relation="public-inheritance">
-        </childnode>
-        <childnode refid="39" relation="public-inheritance">
-        </childnode>
-        <childnode refid="40" relation="public-inheritance">
-        </childnode>
-        <childnode refid="41" relation="public-inheritance">
-        </childnode>
-        <childnode refid="42" relation="public-inheritance">
-        </childnode>
-        <childnode refid="43" relation="public-inheritance">
-        </childnode>
-        <childnode refid="44" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="11">
-        <label>AttLinking</label>
-      </node>
-      <node id="30">
-        <label>AttLyricStyle</label>
-      </node>
-      <node id="9">
-        <label>AttFacsimile</label>
-      </node>
-      <node id="61">
-        <label>AttOctave</label>
-      </node>
       <node id="63">
         <label>vrv::PositionInterface</label>
         <link refid="classvrv_1_1_position_interface"/>
-        <childnode refid="8" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
         <childnode refid="64" relation="public-inheritance">
         </childnode>
         <childnode refid="65" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="44">
-        <label>AttTransposition</label>
-      </node>
-      <node id="29">
-        <label>AttDurationDefault</label>
-      </node>
-      <node id="48">
-        <label>AttGraced</label>
-      </node>
-      <node id="18">
-        <label>AttCue</label>
-      </node>
-      <node id="45">
-        <label>vrv::Alignment</label>
-        <link refid="classvrv_1_1_alignment"/>
-        <childnode refid="5" relation="public-inheritance">
+      <node id="19">
+        <label>vrv::ScoreDefElement</label>
+        <link refid="classvrv_1_1_score_def_element"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="71">
-        <label>AttNoteHeads</label>
+      <node id="20">
+        <label>vrv::ScoreDefInterface</label>
+        <link refid="classvrv_1_1_score_def_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="34">
-        <label>AttPianoPedals</label>
-      </node>
-      <node id="41">
-        <label>AttStaffDefLog</label>
-      </node>
-      <node id="74">
-        <label>AttStemsCmn</label>
-      </node>
-      <node id="58">
-        <label>AttStaffIdent</label>
-      </node>
-      <node id="5">
-        <label>vrv::Object</label>
-        <link refid="classvrv_1_1_object"/>
+      <node id="14">
+        <label>vrv::Staff</label>
+        <link refid="classvrv_1_1_staff"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
         <childnode refid="6" relation="public-inheritance">
         </childnode>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>m_drawingStaffDef</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>m_drawingTuning</edgelabel>
+        </childnode>
       </node>
-      <node id="68">
-        <label>AttExtSym</label>
+      <node id="18">
+        <label>vrv::StaffDef</label>
+        <link refid="classvrv_1_1_staff_def"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="69">
-        <label>AttMidiVelocity</label>
+      <node id="30">
+        <label>vrv::StaffDefDrawingInterface</label>
+        <link refid="classvrv_1_1_staff_def_drawing_interface"/>
       </node>
       <node id="47">
         <label>vrv::Stem</label>
         <link refid="classvrv_1_1_stem"/>
-        <childnode refid="4" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
         <childnode refid="48" relation="public-inheritance">
         </childnode>
         <childnode refid="49" relation="public-inheritance">
         </childnode>
-        <childnode refid="20" relation="public-inheritance">
+        <childnode refid="17" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="66">
-        <label>AttColor</label>
+      <node id="46">
+        <label>vrv::StemmedDrawingInterface</label>
+        <link refid="classvrv_1_1_stemmed_drawing_interface"/>
+        <childnode refid="47" relation="usage">
+          <edgelabel>m_drawingStem</edgelabel>
+        </childnode>
       </node>
-      <node id="49">
-        <label>AttStemVis</label>
+      <node id="76">
+        <label>vrv::TabDurSym</label>
+        <link refid="classvrv_1_1_tab_dur_sym"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="53">
-        <label>AttDurationGes</label>
-      </node>
-      <node id="31">
-        <label>AttMeasureNumbers</label>
-      </node>
-      <node id="55">
-        <label>AttDurationQuality</label>
-      </node>
-      <node id="40">
-        <label>AttScalable</label>
-      </node>
-      <node id="17">
-        <label>vrv::ObjectListInterface</label>
-        <link refid="classvrv_1_1_object_list_interface"/>
-      </node>
-      <node id="43">
-        <label>AttTimeBase</label>
-      </node>
-      <node id="77">
-        <label>AttNNumberLike</label>
-      </node>
-      <node id="13">
-        <label>AttLabelled</label>
+      <node id="38">
+        <label>vrv::Tuning</label>
+        <link refid="classvrv_1_1_tuning"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="36" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="36" bodyend="217"/>
+    <location file="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" line="36" column="1" bodyfile="/Users/laurent/projects/verovio_develop/include/vrv/beam.h" bodystart="36" bodyend="217"/>
     <listofallmembers>
       <member refid="classvrv_1_1_beam_segment_1ac05b7937c4f2ae18ed7122b7f0d43f43" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>AdjustBeamToFrenchStyle</name></member>
       <member refid="classvrv_1_1_beam_segment_1ae556404fb4191334cbe20ac02985d61f" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>AdjustBeamToLedgerLines</name></member>
@@ -1647,15 +1703,15 @@
       <member refid="classvrv_1_1_beam_segment_1aac0d198f42a0b3b2754784bb2e352064" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>CalcSetStemValues</name></member>
       <member refid="classvrv_1_1_beam_segment_1ac1d07868290eaf5f105cc90e0d95e65c" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>CalcSetStemValuesTab</name></member>
       <member refid="classvrv_1_1_beam_segment_1acc2bb920c9ea28583155aba6246c9ae3" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>CalcSetValues</name></member>
-      <member refid="classvrv_1_1_beam_segment_1aa47c3f17b156359c2dbe1a8505806948" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>CalcStemDefiningNote</name></member>
+      <member refid="classvrv_1_1_beam_segment_1ad72b1e383388ae2da3354e6249bb13cd" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>CalcStemDefiningNote</name></member>
       <member refid="classvrv_1_1_beam_segment_1a29c1c949f0d813b5ffc8303515bc804f" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>ClearCoordRefs</name></member>
       <member refid="classvrv_1_1_beam_segment_1acb24624ed2cfe5cd65c8a47cf05dfd98" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>DoesBeamOverlap</name></member>
       <member refid="classvrv_1_1_beam_segment_1af13e9a7dcfa6b57fd10e31f68b0384ec" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>GetAdjacentElementsDuration</name></member>
-      <member refid="classvrv_1_1_beam_segment_1ad436a14eb3e9b16228688a8b58f20a47" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>GetElementCoordRefs</name></member>
-      <member refid="classvrv_1_1_beam_segment_1a8f0ef8bebd67e58dddb50cc8232aa641" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>GetMinimalStemLength</name></member>
+      <member refid="classvrv_1_1_beam_segment_1a8f6db7068d0d309a0bce41a81b50c983" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>GetElementCoordRefs</name></member>
+      <member refid="classvrv_1_1_beam_segment_1a97468c75f59ffd4c243cd8528288c006" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>GetMinimalStemLength</name></member>
       <member refid="classvrv_1_1_beam_segment_1aa43df64644702d318671474f55b0b964" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>GetStartingX</name></member>
       <member refid="classvrv_1_1_beam_segment_1ae5a38316d6505c452c70d045f67c60d0" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>GetStartingY</name></member>
-      <member refid="classvrv_1_1_beam_segment_1a79857401915df7b579cab42c8e6c4834" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>GetVerticalOffset</name></member>
+      <member refid="classvrv_1_1_beam_segment_1aa85f85ba90628a5fa23299e67854177d" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>GetVerticalOffset</name></member>
       <member refid="classvrv_1_1_beam_segment_1aae2d6f202398b11757729b803cad00fd" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>InitCoordRefs</name></member>
       <member refid="classvrv_1_1_beam_segment_1acfe45e16f7394be35573eb5bbc235929" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>InitSameasRoles</name></member>
       <member refid="classvrv_1_1_beam_segment_1a2f8cd54b0cdac4e3db644a8c3bd22e19" prot="public" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>m_beamElementCoordRefs</name></member>

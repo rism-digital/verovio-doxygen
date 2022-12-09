@@ -1,9 +1,5 @@
 var classvrv_1_1_system_element =
 [
-    [ "SystemElement", "classvrv_1_1_system_element.html#aa7a18d72a6a41165b2025a441789076b", null ],
-    [ "SystemElement", "classvrv_1_1_system_element.html#ae908caadafe663ed9611976e92457720", null ],
-    [ "SystemElement", "classvrv_1_1_system_element.html#a4ac3ad16b29d3fc709cf803fdb73dae9", null ],
-    [ "~SystemElement", "classvrv_1_1_system_element.html#a839ea703922d774c2bbbb6acd64e0137", null ],
     [ "CastOffEncoding", "classvrv_1_1_system_element.html#a05f7db61b9e9958376bdfe89b2d2f6a5", null ],
     [ "CastOffSystems", "classvrv_1_1_system_element.html#a17d947a62f84e74d4af850851ca4f058", null ],
     [ "CastOffToSelection", "classvrv_1_1_system_element.html#acd8b29e7809f360a5a0ffd56ed37ce69", null ],

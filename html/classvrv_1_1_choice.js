@@ -1,10 +1,6 @@
 var classvrv_1_1_choice =
 [
-    [ "Choice", "classvrv_1_1_choice.html#a8d6ad6242babef790bc7ad7ff211514a", null ],
-    [ "Choice", "classvrv_1_1_choice.html#a46b28e0c77b379a0c2515578be9c181c", null ],
-    [ "~Choice", "classvrv_1_1_choice.html#abec4b699133db1e3dc6e9317bf31deaf", null ],
-    [ "Clone", "classvrv_1_1_choice.html#a5ca4d732c7ef15b125ac3d231bab429c", null ],
-    [ "GetClassName", "classvrv_1_1_choice.html#a927d7bc1385740dffbed007aa76a14be", null ],
+    [ "Clone", "classvrv_1_1_choice.html#a14002c779b35afa9cc14d71e577dc5f3", null ],
     [ "GetLevel", "classvrv_1_1_choice.html#ac0bd6d35eb17c51cc09302acaa7e7f40", null ],
     [ "IsSupportedChild", "classvrv_1_1_choice.html#ada45d970caff729349be1349a8f5d5bb", null ],
     [ "Reset", "classvrv_1_1_choice.html#a52458c7545f5c629fd65359b146c3644", null ],

@@ -1,8 +1,5 @@
 var classvrv_1_1_alignment =
 [
-    [ "Alignment", "classvrv_1_1_alignment.html#a4c02b09d436d667982a8c50dcb03c6b0", null ],
-    [ "Alignment", "classvrv_1_1_alignment.html#a7a64c1f1a0c13505f4150192da2a4115", null ],
-    [ "~Alignment", "classvrv_1_1_alignment.html#ac34d76c9e71df51687df4400b32a9da3", null ],
     [ "AddLayerElementRef", "classvrv_1_1_alignment.html#ab52c03819037b643b89612716dc4629a", null ],
     [ "AddToAccidSpace", "classvrv_1_1_alignment.html#a54d97c1551306ae4def0e8ceb7be0152", null ],
     [ "AdjustAccidX", "classvrv_1_1_alignment.html#a93d538597c744dc68fd012f314a8c733", null ],
@@ -14,15 +11,10 @@ var classvrv_1_1_alignment =
     [ "AdjustXPosEnd", "classvrv_1_1_alignment.html#ac45d33fe6354e482173d5daddd3f4b44", null ],
     [ "CalcAlignmentXPos", "classvrv_1_1_alignment.html#a1c8be8cafb2f9d374ad855c224f54113", null ],
     [ "ClearGraceAligners", "classvrv_1_1_alignment.html#a69dbbfa23611f87db7df6c03a26e52a9", null ],
-    [ "GetAlignmentTopBottom", "classvrv_1_1_alignment.html#a0d0a0f0b03ae0a91009f7964b2b1d0ea", null ],
-    [ "GetGraceAligner", "classvrv_1_1_alignment.html#ae806f6c44d2251c5adf385d21d22e2be", null ],
+    [ "GetAlignmentTopBottom", "classvrv_1_1_alignment.html#add134ebc18539a90a48c978b1636e6e1", null ],
+    [ "GetGraceAligner", "classvrv_1_1_alignment.html#a4412435e0f16af7ef2e720bd6120db96", null ],
     [ "GetLeftRight", "classvrv_1_1_alignment.html#ae3c0a34714789e1c7196d4dbf67875f6", null ],
-    [ "GetLeftRight", "classvrv_1_1_alignment.html#aea13f1f2a70a7cd91ba808f06ee36fd6", null ],
-    [ "GetReferenceWithElement", "classvrv_1_1_alignment.html#a1e317b58f08e922e04da6c672ba2a0a1", null ],
-    [ "GetReferenceWithElement", "classvrv_1_1_alignment.html#aab2220cffed4bd29bab46fe6d6158e14", null ],
-    [ "GetTime", "classvrv_1_1_alignment.html#aa23ca5d6feda8b0c8d61d6d74c4d39f4", null ],
-    [ "GetType", "classvrv_1_1_alignment.html#ace5b196a887793320b1461e32d721bb9", null ],
-    [ "GetXRel", "classvrv_1_1_alignment.html#a7c472c8d3a8acf0a5dbf48aca473655e", null ],
+    [ "GetReferenceWithElement", "classvrv_1_1_alignment.html#a228b533b9cc9f0a55252c1b277936cc2", null ],
     [ "HasAccidVerticalOverlap", "classvrv_1_1_alignment.html#a4513083acf6e7acbea6e894c3285750e", null ],
     [ "HasAlignmentReference", "classvrv_1_1_alignment.html#ad026c49cccdf5a3437d24c359ea8a4e5", null ],
     [ "HasGraceAligner", "classvrv_1_1_alignment.html#ae694154976e041cf41059ba6274b3d79", null ],
@@ -31,8 +23,5 @@ var classvrv_1_1_alignment =
     [ "IsSupportedChild", "classvrv_1_1_alignment.html#afe1dce241b823edc3a32d57d159dd636", null ],
     [ "JustifyX", "classvrv_1_1_alignment.html#a2215302c810f28dda3a2e7fafeeb1531", null ],
     [ "PerformBoundingBoxAlignment", "classvrv_1_1_alignment.html#afb339241a9493a380e64c673f8adca84", null ],
-    [ "Reset", "classvrv_1_1_alignment.html#ad43591d11620170af7123f2e6ccc18e2", null ],
-    [ "SetTime", "classvrv_1_1_alignment.html#a51972727e9ef02059b5d6aa4718de290", null ],
-    [ "SetType", "classvrv_1_1_alignment.html#aa5ca7ecc63865e44151b4331faf43a05", null ],
-    [ "SetXRel", "classvrv_1_1_alignment.html#ace45fe11ad8e9befcdaea18ecc2cf5ca", null ]
+    [ "Reset", "classvrv_1_1_alignment.html#ad43591d11620170af7123f2e6ccc18e2", null ]
 ];

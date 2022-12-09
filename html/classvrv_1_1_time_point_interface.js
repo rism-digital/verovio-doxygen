@@ -1,13 +1,8 @@
 var classvrv_1_1_time_point_interface =
 [
-    [ "TimePointInterface", "classvrv_1_1_time_point_interface.html#a470841fa6a90f560e791882bd0d7ff3d", null ],
-    [ "~TimePointInterface", "classvrv_1_1_time_point_interface.html#af09ee1866e7e88461f21fae70f267862", null ],
     [ "AddStaff", "classvrv_1_1_time_point_interface.html#a67678cf06ae06579a830344df5c5598a", null ],
-    [ "GetStart", "classvrv_1_1_time_point_interface.html#a3cd14634c9ef2903e83a560ba52788a9", null ],
-    [ "GetStart", "classvrv_1_1_time_point_interface.html#a298a2ef9e43a61c8682134ac890b2b0e", null ],
-    [ "GetStartMeasure", "classvrv_1_1_time_point_interface.html#a54007f47ab2054a75b29618b8b47dd4f", null ],
-    [ "GetStartMeasure", "classvrv_1_1_time_point_interface.html#ac1222d78b3eb4fefc697eaabb564c368", null ],
-    [ "GetTstampStaves", "classvrv_1_1_time_point_interface.html#a27a48797d818dd92d3f7ff82f0678a17", null ],
+    [ "GetStartMeasure", "classvrv_1_1_time_point_interface.html#a317c8bb6b6eb211f2e1091f86ea78011", null ],
+    [ "GetTstampStaves", "classvrv_1_1_time_point_interface.html#a2403f2a2b383994c0ced8e56b98dac39", null ],
     [ "HasStart", "classvrv_1_1_time_point_interface.html#a32c10ebc5af582117f680bbf37878ba2", null ],
     [ "InterfacePrepareTimePointing", "classvrv_1_1_time_point_interface.html#af12c0fb8fe5605633e3ceeb75806d798", null ],
     [ "InterfacePrepareTimestamps", "classvrv_1_1_time_point_interface.html#aad4fd22f92288ae7c9f8a7b2500ee6a5", null ],
@@ -16,9 +11,6 @@ var classvrv_1_1_time_point_interface =
     [ "IsOnStaff", "classvrv_1_1_time_point_interface.html#aedd9182fd1cd2cc1bcfdf5b9de955ab7", null ],
     [ "Reset", "classvrv_1_1_time_point_interface.html#aa1c20e4df6aa79d7f30ea46b73b902bc", null ],
     [ "SetIDStr", "classvrv_1_1_time_point_interface.html#a9f18f4208c3ffecce88778d4a391e81a", null ],
-    [ "SetStart", "classvrv_1_1_time_point_interface.html#a657ad24cb9280451b4a5f2b914be0644", null ],
     [ "SetStartOnly", "classvrv_1_1_time_point_interface.html#a4c3a7f2c3fd21358c4c25dbae8443f4a", null ],
-    [ "VerifyMeasure", "classvrv_1_1_time_point_interface.html#ae039ba772895c597f23b01cc8f0105ab", null ],
-    [ "m_start", "classvrv_1_1_time_point_interface.html#a0acc50cd71a220b0142a0ec22377c88a", null ],
-    [ "m_startID", "classvrv_1_1_time_point_interface.html#ac504cb97f324c80f11378f21b9870e38", null ]
+    [ "VerifyMeasure", "classvrv_1_1_time_point_interface.html#ae039ba772895c597f23b01cc8f0105ab", null ]
 ];

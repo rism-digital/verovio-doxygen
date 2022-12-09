@@ -1,11 +1,7 @@
 var classvrv_1_1_sb =
 [
-    [ "Sb", "classvrv_1_1_sb.html#a1199063c049c955f5e3a1418a039c7f5", null ],
-    [ "~Sb", "classvrv_1_1_sb.html#a4e2cd79f3b1d415e2de87baa6a90b38b", null ],
-    [ "CastOffEncoding", "classvrv_1_1_sb.html#afc89859f4b7333bb04bde88d995c4732", null ],
-    [ "CastOffSystems", "classvrv_1_1_sb.html#ab25617535beabced2e5bb1bf874b9624", null ],
-    [ "Clone", "classvrv_1_1_sb.html#aaa03bd2fa2230cd5149bf6cf4db0f93e", null ],
-    [ "GetClassId", "classvrv_1_1_sb.html#a58e18defc2d478bc7f33f08980ecde8b", null ],
-    [ "GetClassName", "classvrv_1_1_sb.html#a28c3b2f4003c0a24e9526767aa2b3948", null ],
-    [ "Reset", "classvrv_1_1_sb.html#a551be1cf0301942047b57576508f1134", null ]
+    [ "CastOffEncoding", "classvrv_1_1_sb.html#aabcd893f8a4dcdfd321128e0e693aaf3", null ],
+    [ "CastOffSystems", "classvrv_1_1_sb.html#aab939b06f45e826f08d9823188ac9a6d", null ],
+    [ "Clone", "classvrv_1_1_sb.html#a42c592d506085a7e6b08abf32155d22c", null ],
+    [ "Reset", "classvrv_1_1_sb.html#ad4ffff3a5ae69293b99d10687bf8b176", null ]
 ];
