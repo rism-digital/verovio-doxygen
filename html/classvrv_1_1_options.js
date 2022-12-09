@@ -63,6 +63,7 @@ var classvrv_1_1_options =
     [ "m_header", "classvrv_1_1_options.html#aa08a14710d2bb6bda9719aee5ceb721e", null ],
     [ "m_help", "classvrv_1_1_options.html#a117943c7fd1e2d7c59027278fbd11788", null ],
     [ "m_humType", "classvrv_1_1_options.html#a2f7899685445e82ff96770b404cf8410", null ],
+    [ "m_incip", "classvrv_1_1_options.html#a3fdb46a1958ffd04ee8d2907f817fffc", null ],
     [ "m_inputFrom", "classvrv_1_1_options.html#a942a5e5df01abfde53e6b09de448d24e", null ],
     [ "m_justificationBraceGroup", "classvrv_1_1_options.html#a929c9bc5f87773b745299d46ee298083", null ],
     [ "m_justificationBracketGroup", "classvrv_1_1_options.html#a3d0cad5a947b1d3805d827adb8d23186", null ],
