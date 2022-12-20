@@ -3,6 +3,7 @@
   <compounddef id="classvrv_1_1_control_element" kind="class" language="C++" prot="public">
     <compoundname>vrv::ControlElement</compoundname>
     <basecompoundref refid="classvrv_1_1_floating_object" prot="public" virt="non-virtual">vrv::FloatingObject</basecompoundref>
+    <basecompoundref refid="classvrv_1_1_alt_sym_interface" prot="public" virt="non-virtual">vrv::AltSymInterface</basecompoundref>
     <basecompoundref refid="classvrv_1_1_linking_interface" prot="public" virt="non-virtual">vrv::LinkingInterface</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">AttLabelled</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">AttTyped</basecompoundref>
@@ -46,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="33" column="5"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="38" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_control_element_1aa9be5bc11d51b4d8c0be3ccc93baf6bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -63,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="34" column="5"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="39" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_control_element_1a3609eb955915e4f36e0be4262f34176b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -84,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="35" column="5"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="40" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_control_element_1a2cd0ecb73934d457a4b5dcf18bfd41de" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -97,14 +98,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="36" column="13"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="41" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_control_element_1ada5a97dab22c9ea6f7eff3dbfc4cd7ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
         <definition>void vrv::ControlElement::Reset</definition>
         <argsstring>() override</argsstring>
         <name>Reset</name>
-        <reimplements refid="classvrv_1_1_interface_1a5dac3707db3650101729ff5610bb6200">Reset</reimplements>
+        <reimplements refid="classvrv_1_1_alt_sym_interface_1aed738b60a43324a2f15fdec12d19521e">Reset</reimplements>
         <reimplementedby refid="classvrv_1_1_phrase_1a0696fbea9d3b9019a7df931512339a76">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_lv_1abebb39e59a9a487a6a77aaab2dacc79d">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_pitch_inflection_1acaa21c0cd709c7c17969cd4b15831ee9">Reset</reimplementedby>
@@ -133,11 +134,39 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="37" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="42" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Getter to interfaces</header>
+      <memberdef kind="function" id="classvrv_1_1_control_element_1a22fbd4dac4a60f6f69df110cb2e462ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classvrv_1_1_alt_sym_interface" kindref="compound">AltSymInterface</ref> *</type>
+        <definition>AltSymInterface* vrv::ControlElement::GetAltSymInterface</definition>
+        <argsstring>() override</argsstring>
+        <name>GetAltSymInterface</name>
+        <reimplements refid="classvrv_1_1_object_1a802e613f29ccc215de5768b4e6d0b9d0">GetAltSymInterface</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="49" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_control_element_1a8e8c44534cf6a7b06c7dac287788af30" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="classvrv_1_1_alt_sym_interface" kindref="compound">AltSymInterface</ref> *</type>
+        <definition>const AltSymInterface* vrv::ControlElement::GetAltSymInterface</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetAltSymInterface</name>
+        <reimplements refid="classvrv_1_1_object_1ac3fdcc01a8048f6758fd787d33ddef8a">GetAltSymInterface</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="50" column="27" bodyfile="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" bodystart="50" bodyend="50"/>
+      </memberdef>
       <memberdef kind="function" id="classvrv_1_1_control_element_1a1ab03ccd8e1610d29508e9e0bb7bc7c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classvrv_1_1_linking_interface" kindref="compound">LinkingInterface</ref> *</type>
         <definition>LinkingInterface* vrv::ControlElement::GetLinkingInterface</definition>
@@ -150,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="44" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" bodystart="44" bodyend="44"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="51" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" bodystart="51" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_control_element_1aeb6ccac7f45774c4f7bb78f3b878eafd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>const <ref refid="classvrv_1_1_linking_interface" kindref="compound">LinkingInterface</ref> *</type>
@@ -164,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="45" column="28" bodyfile="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" bodystart="45" bodyend="45"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="52" column="28" bodyfile="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" bodystart="52" bodyend="52"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -180,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="51" column="30"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="58" column="30"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_control_element_1a21757f229d95373c0d53c4ac94cdcaf2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>data_STAFFREL</type>
@@ -199,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="58" column="19"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="65" column="19"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_control_element_1aac6e4a89487d479670c8db760c720073" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -218,7 +247,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="67" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="74" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_control_element_1ac6c234c1060330df08eee2ce4d7626da" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -241,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="72" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="79" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -251,39 +280,39 @@
 <para>It is not an abstract class but should not be instanciated directly. </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="30">
+      <node id="32">
         <label>vrv::Phrase</label>
         <link refid="classvrv_1_1_phrase"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="31" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5">
+      <node id="8">
         <label>vrv::LinkingInterface</label>
         <link refid="classvrv_1_1_linking_interface"/>
         <childnode refid="6" relation="public-inheritance">
         </childnode>
-        <childnode refid="7" relation="public-inheritance">
+        <childnode refid="9" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="26">
+      <node id="28">
         <label>vrv::Pedal</label>
         <link refid="classvrv_1_1_pedal"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="31">
+      <node id="33">
         <label>vrv::Tempo</label>
         <link refid="classvrv_1_1_tempo"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="25">
+      <node id="27">
         <label>vrv::Octave</label>
         <link refid="classvrv_1_1_octave"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="16">
+      <node id="18">
         <label>vrv::Dir</label>
         <link refid="classvrv_1_1_dir"/>
         <childnode refid="1" relation="public-inheritance">
@@ -295,20 +324,20 @@
         <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="22">
+      <node id="24">
         <label>vrv::Harm</label>
         <link refid="classvrv_1_1_harm"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9">
+      <node id="11">
         <label>AttTyped</label>
       </node>
       <node id="4">
         <label>vrv::BoundingBox</label>
         <link refid="classvrv_1_1_bounding_box"/>
       </node>
-      <node id="20">
+      <node id="22">
         <label>vrv::Gliss</label>
         <link refid="classvrv_1_1_gliss"/>
         <childnode refid="1" relation="public-inheritance">
@@ -318,94 +347,105 @@
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="35">
+      <node id="37">
         <label>vrv::Turn</label>
         <link refid="classvrv_1_1_turn"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="28">
+      <node id="30">
         <label>vrv::Reh</label>
         <link refid="classvrv_1_1_reh"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="18">
+      <node id="20">
         <label>vrv::Fermata</label>
         <link refid="classvrv_1_1_fermata"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10">
+      <node id="12">
         <label>vrv::AnchoredText</label>
         <link refid="classvrv_1_1_anchored_text"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="14">
+      <node id="16">
         <label>vrv::Breath</label>
         <link refid="classvrv_1_1_breath"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="24">
+      <node id="26">
         <label>vrv::Mordent</label>
         <link refid="classvrv_1_1_mordent"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="34">
+      <node id="36">
         <label>vrv::Trill</label>
         <link refid="classvrv_1_1_trill"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15">
+      <node id="17">
         <label>vrv::Caesura</label>
         <link refid="classvrv_1_1_caesura"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="33">
+      <node id="7">
+        <label>AttAltSym</label>
+      </node>
+      <node id="35">
         <label>vrv::Lv</label>
         <link refid="classvrv_1_1_lv"/>
-        <childnode refid="32" relation="public-inheritance">
+        <childnode refid="34" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="17">
+      <node id="19">
         <label>vrv::Dynam</label>
         <link refid="classvrv_1_1_dynam"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7">
+      <node id="9">
         <label>AttLinking</label>
       </node>
-      <node id="32">
+      <node id="34">
         <label>vrv::Tie</label>
         <link refid="classvrv_1_1_tie"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="23">
+      <node id="5">
+        <label>vrv::AltSymInterface</label>
+        <link refid="classvrv_1_1_alt_sym_interface"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
         <label>vrv::MNum</label>
         <link refid="classvrv_1_1_m_num"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="27">
+      <node id="29">
         <label>vrv::PitchInflection</label>
         <link refid="classvrv_1_1_pitch_inflection"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12">
+      <node id="14">
         <label>vrv::BeamSpan</label>
         <link refid="classvrv_1_1_beam_span"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="29">
+      <node id="31">
         <label>vrv::Slur</label>
         <link refid="classvrv_1_1_slur"/>
         <childnode refid="1" relation="public-inheritance">
@@ -420,7 +460,9 @@
         </childnode>
         <childnode refid="8" relation="public-inheritance">
         </childnode>
-        <childnode refid="9" relation="public-inheritance">
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
         </childnode>
       </node>
       <node id="3">
@@ -429,41 +471,41 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11">
+      <node id="13">
         <label>vrv::Arpeg</label>
         <link refid="classvrv_1_1_arpeg"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="21">
+      <node id="23">
         <label>vrv::Hairpin</label>
         <link refid="classvrv_1_1_hairpin"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13">
+      <node id="15">
         <label>vrv::BracketSpan</label>
         <link refid="classvrv_1_1_bracket_span"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="19">
+      <node id="21">
         <label>vrv::Fing</label>
         <link refid="classvrv_1_1_fing"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8">
+      <node id="10">
         <label>AttLabelled</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5">
+      <node id="8">
         <label>vrv::LinkingInterface</label>
         <link refid="classvrv_1_1_linking_interface"/>
         <childnode refid="6" relation="public-inheritance">
         </childnode>
-        <childnode refid="7" relation="public-inheritance">
+        <childnode refid="9" relation="public-inheritance">
         </childnode>
       </node>
       <node id="2">
@@ -472,7 +514,7 @@
         <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9">
+      <node id="11">
         <label>AttTyped</label>
       </node>
       <node id="4">
@@ -484,7 +526,18 @@
         <link refid="classvrv_1_1_interface"/>
       </node>
       <node id="7">
+        <label>AttAltSym</label>
+      </node>
+      <node id="9">
         <label>AttLinking</label>
+      </node>
+      <node id="5">
+        <label>vrv::AltSymInterface</label>
+        <link refid="classvrv_1_1_alt_sym_interface"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="1">
         <label>vrv::ControlElement</label>
@@ -495,7 +548,9 @@
         </childnode>
         <childnode refid="8" relation="public-inheritance">
         </childnode>
-        <childnode refid="9" relation="public-inheritance">
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
         </childnode>
       </node>
       <node id="3">
@@ -504,11 +559,11 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8">
+      <node id="10">
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="26" column="105" bodyfile="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" bodystart="26" bodyend="80"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" line="31" column="39" bodyfile="/home/runner/work/verovio/verovio/include/vrv/controlelement.h" bodystart="27" bodyend="87"/>
     <listofallmembers>
       <member refid="classvrv_1_1_linking_interface_1aaa4632e05d5d887b26dbf1789c84f573" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>AddBackLink</name></member>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>AddChild</name></member>
@@ -555,6 +610,7 @@
       <member refid="classvrv_1_1_object_1a5e3a70072c31ed3ddf96fca1d40b4241" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>AlignSystemsEnd</name></member>
       <member refid="classvrv_1_1_object_1a318b62923fa869781ad0effd2ff40648" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>AlignVertically</name></member>
       <member refid="classvrv_1_1_object_1a7456561dbdda3f5d7f47e520c3819cd3" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>AlignVerticallyEnd</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1a845bedb313536e6d19b235330e613860" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>AltSymInterface</name></member>
       <member refid="classvrv_1_1_object_1a1579484058fb14c4c8cdf4ad58249db6" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>ApplyPPUFactor</name></member>
       <member refid="classvrv_1_1_bounding_box_1ae9a22cf5d306abb22ff5f557e81bd9af" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>ApproximateBezierBoundingBox</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3901a5e4a728b8f3450cce0e30f4bd29" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>ApproximateBezierExtrema</name></member>
@@ -650,11 +706,16 @@
       <member refid="classvrv_1_1_object_1adef7d8ebf6bbb0b9bea78a608c161791" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>GenerateRandID</name></member>
       <member refid="classvrv_1_1_object_1abe889073301d6e1dfe55e725b6532948" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>GenerateTimemap</name></member>
       <member refid="classvrv_1_1_object_1a389c0c7f2a9e74b340c44dbc68e7e886" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>GetAlignmentLeftRight</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1ab8910be3f566440cde2cf57108248478" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>GetAltSymbolDef</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1ab1e4641a3121765874883831aeb7d9b0" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>GetAltSymbolDef</name></member>
+      <member refid="classvrv_1_1_control_element_1a22fbd4dac4a60f6f69df110cb2e462ea" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>GetAltSymInterface</name></member>
+      <member refid="classvrv_1_1_control_element_1a8e8c44534cf6a7b06c7dac287788af30" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>GetAltSymInterface</name></member>
       <member refid="classvrv_1_1_object_1a9520082549d438647a7fc8b1126675b4" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>GetAncestors</name></member>
       <member refid="classvrv_1_1_object_1a323a71a1cb0b2a956e37c4e3da49a0fb" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>GetAncestors</name></member>
       <member refid="classvrv_1_1_object_1a6cadd7a0feb1425165258e599090f9f9" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>GetAreaPosInterface</name></member>
       <member refid="classvrv_1_1_object_1aa91dde17d5e02f9fb15441d175ec9ab1" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>GetAreaPosInterface</name></member>
-      <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>GetAttClasses</name></member>
+      <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual" ambiguityscope="vrv::"><scope>vrv::ControlElement</scope><name>GetAttClasses</name></member>
+      <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual" ambiguityscope="vrv::LinkingInterface::"><scope>vrv::ControlElement</scope><name>GetAttClasses</name></member>
       <member refid="classvrv_1_1_object_1aeb7e152a62704071901972bbfa06062c" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>GetAttributes</name></member>
       <member refid="classvrv_1_1_object_1a6d9d3ae387831fac891f903349348310" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>GetBeamDrawingInterface</name></member>
       <member refid="classvrv_1_1_object_1ab136df3273e12a93e3699ae62e9d2514" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>GetBeamDrawingInterface</name></member>
@@ -769,6 +830,7 @@
       <member refid="classvrv_1_1_bounding_box_1a3a9666c33d5a4a7d01f4b159c128d6c5" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>GetX2By</name></member>
       <member refid="classvrv_1_1_bounding_box_1ad906e8632b28b1be81fa374ad2b5292e" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>GetY1By</name></member>
       <member refid="classvrv_1_1_bounding_box_1a242e2a41a61fb347b526a08fef162cdf" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>GetY2By</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1a6f055775c7e579f3151ff7d937226412" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>HasAltSymbolDef</name></member>
       <member refid="classvrv_1_1_object_1a9020ecbd4da7cb50ed8ffa686eeae8e5" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>HasAttClass</name></member>
       <member refid="classvrv_1_1_object_1a07880f4ad709e37ca6b5483110905383" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>HasAttribute</name></member>
       <member refid="classvrv_1_1_object_1ad52c48d64fdb14dbc0a4dcf40aa87295" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>HasClosingComment</name></member>
@@ -800,10 +862,13 @@
       <member refid="classvrv_1_1_object_1aaf1ba626f7c0d6be44373b6cfe29855f" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>InsertAfter</name></member>
       <member refid="classvrv_1_1_object_1a26dd6389f8b6ce5ff1cf9f0b779a0d14" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>InsertBefore</name></member>
       <member refid="classvrv_1_1_object_1ac14929dac6e5b5e699d16ba7fc258d9d" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>InsertChild</name></member>
-      <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>Interface</name></member>
+      <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual" ambiguityscope="vrv::"><scope>vrv::ControlElement</scope><name>Interface</name></member>
+      <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual" ambiguityscope="vrv::LinkingInterface::"><scope>vrv::ControlElement</scope><name>Interface</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1af80e1d5b04715f0a226807485b55ac23" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>InterfacePrepareAltSym</name></member>
       <member refid="classvrv_1_1_linking_interface_1a05da99de05024b8ff9287f1027aa55db" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>InterfacePrepareLinking</name></member>
       <member refid="classvrv_1_1_linking_interface_1ae2cf862874c1822f6d53ddb2de573c02" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>InterfacePrepareStaffCurrentTimeSpanning</name></member>
-      <member refid="classvrv_1_1_linking_interface_1a844644245db209bd156e09b4a22e2726" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>InterfaceResetData</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1a7c9e4e0e975ae09f62eb30c636453537" prot="public" virt="virtual" ambiguityscope="vrv::"><scope>vrv::ControlElement</scope><name>InterfaceResetData</name></member>
+      <member refid="classvrv_1_1_linking_interface_1a844644245db209bd156e09b4a22e2726" prot="public" virt="virtual" ambiguityscope="vrv::LinkingInterface::"><scope>vrv::ControlElement</scope><name>InterfaceResetData</name></member>
       <member refid="classvrv_1_1_bounding_box_1a29d29a9aaa350b53bcf58dc32978b7f8" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>Intersects</name></member>
       <member refid="classvrv_1_1_bounding_box_1a89d4ebda89785d624cb43d1c45dbbbb2" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>Intersects</name></member>
       <member refid="classvrv_1_1_bounding_box_1af366b55a8e449a12d689acd9d35ae782" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>Is</name></member>
@@ -817,7 +882,8 @@
       <member refid="classvrv_1_1_object_1a07dfe3de52f16cff12eefabe11c6cd96" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>IsExpansion</name></member>
       <member refid="classvrv_1_1_floating_object_1a8781df9fac1bad66c08cdae278be23e4" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>IsExtenderElement</name></member>
       <member refid="classvrv_1_1_object_1a3b131f39c868a8a1e9b768bdc0eae811" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>IsFloatingObject</name></member>
-      <member refid="classvrv_1_1_linking_interface_1ad1a3839eaa143c325b741151e7f9b084" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>IsInterface</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1a9fd4b58fba2208cc8bd966ac8185a619" prot="public" virt="virtual" ambiguityscope="vrv::"><scope>vrv::ControlElement</scope><name>IsInterface</name></member>
+      <member refid="classvrv_1_1_linking_interface_1ad1a3839eaa143c325b741151e7f9b084" prot="public" virt="virtual" ambiguityscope="vrv::LinkingInterface::"><scope>vrv::ControlElement</scope><name>IsInterface</name></member>
       <member refid="classvrv_1_1_object_1a311186b3525f994471394fcc38bbcda8" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>IsLayerElement</name></member>
       <member refid="classvrv_1_1_object_1aa9ad841690ea5c7b3326d8863140a7f8" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>IsMilestoneElement</name></member>
       <member refid="classvrv_1_1_object_1a4eec6780edc930e49d9874c1036735a4" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>IsModified</name></member>
@@ -846,6 +912,7 @@
       <member refid="classvrv_1_1_object_1a79f4f653686b4f612283302ab443c1c8" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>Object</name></member>
       <member refid="classvrv_1_1_object_1a8be4ecf7908559751e728551718a8bfc" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>Object</name></member>
       <member refid="classvrv_1_1_object_1a6ad51ecc97faf69c8fa8432a780aed44" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>operator=</name></member>
+      <member refid="classvrv_1_1_object_1aa1b94d9cfe12d93cb7e665f7ea82576a" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>PrepareAltSym</name></member>
       <member refid="classvrv_1_1_object_1aded479344601d210f9283ef231d79b4a" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>PrepareBeamSpanElements</name></member>
       <member refid="classvrv_1_1_object_1a873d7c2f7805530e06ebd07885c399b6" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>PrepareCrossStaff</name></member>
       <member refid="classvrv_1_1_object_1a79600c0f5d0d0c68a2501f60ef077126" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>PrepareCrossStaffEnd</name></member>
@@ -882,7 +949,8 @@
       <member refid="classvrv_1_1_bounding_box_1ae7003f6708e916b7640d4dda5a8a18ef" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>RectTopOverlap</name></member>
       <member refid="classvrv_1_1_object_1aa5bcd61a747583c6ed2b97039129df68" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>RegisterAttClass</name></member>
       <member refid="classvrv_1_1_object_1a172109ee605efdf2c2b23440adef333c" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>RegisterInterface</name></member>
-      <member refid="classvrv_1_1_interface_1a57c9a4f18b81a07ef0d14dc040f84257" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>RegisterInterfaceAttClass</name></member>
+      <member refid="classvrv_1_1_interface_1a57c9a4f18b81a07ef0d14dc040f84257" prot="public" virt="non-virtual" ambiguityscope="vrv::"><scope>vrv::ControlElement</scope><name>RegisterInterfaceAttClass</name></member>
+      <member refid="classvrv_1_1_interface_1a57c9a4f18b81a07ef0d14dc040f84257" prot="public" virt="non-virtual" ambiguityscope="vrv::LinkingInterface::"><scope>vrv::ControlElement</scope><name>RegisterInterfaceAttClass</name></member>
       <member refid="classvrv_1_1_object_1a48ea7a78dfbdf0195235b56679924c76" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>Relinquish</name></member>
       <member refid="classvrv_1_1_object_1a6865cdd4b0cc47a90e1cdf4a2aaa2c2e" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>ReorderByXPos</name></member>
       <member refid="classvrv_1_1_object_1a4a7cd0786cfd3119a6dd128c25b67a33" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>ReorderByXPos</name></member>
@@ -908,6 +976,7 @@
       <member refid="classvrv_1_1_object_1a71c3367e232d634a71c2d346dfd9f3d1" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>ScoreDefSetGrpSym</name></member>
       <member refid="classvrv_1_1_object_1ac063e5c113b30453f094ba3589a534ca" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>ScoreDefUnsetCurrent</name></member>
       <member refid="classvrv_1_1_object_1a9aad68e2f4f0edf8bf413a2a5f727f1b" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>SeedID</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1aec18270c1ba43d7ab203eda65b26b3f4" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>SetAltSymbolDef</name></member>
       <member refid="classvrv_1_1_object_1a9bc335e3bc5405f5dbaae757b5629996" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>SetAsReferenceObject</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7eccd9ca1e458dccab9c6b9fb7a24ec4" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>SetBoundingBoxGlyph</name></member>
       <member refid="classvrv_1_1_object_1a3a95154b135f78a323dafdfec2a76e2d" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>SetCautionaryScoreDef</name></member>
@@ -918,7 +987,8 @@
       <member refid="classvrv_1_1_floating_object_1abb3c371794922b14e5a0265a0bd27bba" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>SetDrawingGrpObject</name></member>
       <member refid="classvrv_1_1_bounding_box_1ade8f7ad2283b156a2c7934c4055bd8bf" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>SetEmptyBB</name></member>
       <member refid="classvrv_1_1_object_1aa34da3a7092c0b6753c91459b52648b9" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>SetID</name></member>
-      <member refid="classvrv_1_1_linking_interface_1a26bd7ff2e4a7048c03aeb56bb8f598d8" prot="protected" virt="non-virtual"><scope>vrv::ControlElement</scope><name>SetIDStr</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1a566a6b1368de80402f164f47ecd3f2b2" prot="protected" virt="non-virtual" ambiguityscope="vrv::"><scope>vrv::ControlElement</scope><name>SetIDStr</name></member>
+      <member refid="classvrv_1_1_linking_interface_1a26bd7ff2e4a7048c03aeb56bb8f598d8" prot="protected" virt="non-virtual" ambiguityscope="vrv::LinkingInterface::"><scope>vrv::ControlElement</scope><name>SetIDStr</name></member>
       <member refid="classvrv_1_1_floating_object_1a367d3e3b4bfa50bae3e6a59f863199b3" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>SetMaxDrawingYRel</name></member>
       <member refid="classvrv_1_1_linking_interface_1aa954c8b863b3372c10ec07e7c8a48087" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>SetNextLink</name></member>
       <member refid="classvrv_1_1_object_1a9f30aa6a8185b260943003a08980d376" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>SetParent</name></member>
@@ -940,6 +1010,7 @@
       <member refid="classvrv_1_1_bounding_box_1acdb36f4007fc88d79a81eed3b440c536" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>VerticalContentOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1ab9bbe1447c1e512c9154825086f34aef" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>VerticalSelfOverlap</name></member>
       <member refid="classvrv_1_1_bounding_box_1aa4dda490e649a5c4817ef99853e0a3da" prot="public" virt="non-virtual"><scope>vrv::ControlElement</scope><name>VerticalTopOverlap</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1afa70bdc6fa3bbd3eb7721746b7744a8e" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>~AltSymInterface</name></member>
       <member refid="classvrv_1_1_bounding_box_1a9f87f4407c2c8d88ab5e4eacfe1ac1f0" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>~BoundingBox</name></member>
       <member refid="classvrv_1_1_control_element_1a2cd0ecb73934d457a4b5dcf18bfd41de" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>~ControlElement</name></member>
       <member refid="classvrv_1_1_floating_object_1ac09ff8994cb1d0119fdd67d25d12f410" prot="public" virt="virtual"><scope>vrv::ControlElement</scope><name>~FloatingObject</name></member>

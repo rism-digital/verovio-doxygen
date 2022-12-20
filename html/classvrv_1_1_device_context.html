@@ -288,9 +288,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawMusicText
 <tr class="memitem:a610036a7413ea52b0ce8905d04ecb23d"><td class="memItemLeft" align="right" valign="top"><a id="a610036a7413ea52b0ce8905d04ecb23d"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawSpline</b> (int n, <a class="el" href="classvrv_1_1_point.html">Point</a> points[])=0</td></tr>
 <tr class="separator:a610036a7413ea52b0ce8905d04ecb23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3574c9b1f29fc5ca9cd9f0450ec0ac6"><td class="memItemLeft" align="right" valign="top"><a id="ac3574c9b1f29fc5ca9cd9f0450ec0ac6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawSvgShape</b> (int x, int y, int width, int height, pugi::xml_node svg)=0</td></tr>
-<tr class="separator:ac3574c9b1f29fc5ca9cd9f0450ec0ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9d1ffc5b9412f67efb9609ef9fe72b"><td class="memItemLeft" align="right" valign="top"><a id="a6a9d1ffc5b9412f67efb9609ef9fe72b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawGraphicUri</b> (int x, int y, int width, int height, const std::string &amp;uri)=0</td></tr>
+<tr class="separator:a6a9d1ffc5b9412f67efb9609ef9fe72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dae59996d2832c38e29b42630e3ad75"><td class="memItemLeft" align="right" valign="top"><a id="a3dae59996d2832c38e29b42630e3ad75"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawSvgShape</b> (int x, int y, int width, int height, double scale, pugi::xml_node svg)=0</td></tr>
+<tr class="separator:a3dae59996d2832c38e29b42630e3ad75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d7152c1b0fcc3814a81de6620ff7aee"><td class="memItemLeft" align="right" valign="top"><a id="a6d7152c1b0fcc3814a81de6620ff7aee"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawBackgroundImage</b> (int x=0, int y=0)=0</td></tr>
 <tr class="separator:a6d7152c1b0fcc3814a81de6620ff7aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -332,9 +335,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ReactivateGraphic</b>
 <tr><td colspan="2"><div class="groupHeader">Method for starting and ending a graphic</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>For example, the method can be used for grouping shapes in &lt;g&gt;&lt;/g&gt; in SVG </p>
 </div></td></tr>
-<tr class="memitem:acd5a2020df1adc99dfc9530c4c55b184"><td class="memItemLeft" align="right" valign="top"><a id="acd5a2020df1adc99dfc9530c4c55b184"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartGraphic</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object, std::string gClass, std::string gId, bool primary=true, bool preprend=false)=0</td></tr>
-<tr class="separator:acd5a2020df1adc99dfc9530c4c55b184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19153d18f7d94253fcfeed1f8be3dc89"><td class="memItemLeft" align="right" valign="top"><a id="a19153d18f7d94253fcfeed1f8be3dc89"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartGraphic</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object, std::string gClass, std::string gId, GraphicID graphicID=PRIMARY, bool preprend=false)=0</td></tr>
+<tr class="separator:a19153d18f7d94253fcfeed1f8be3dc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af40102f26edf1fd7386c6aa8ade0a0df"><td class="memItemLeft" align="right" valign="top"><a id="af40102f26edf1fd7386c6aa8ade0a0df"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>EndGraphic</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object, <a class="el" href="classvrv_1_1_view.html">View</a> *view)=0</td></tr>
 <tr class="separator:af40102f26edf1fd7386c6aa8ade0a0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -496,7 +499,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isDeactivatedY</b><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_device_context.html">DeviceContext</a></li>
-    <li class="footer">Generated on Tue Dec 20 2022 10:47:38 for Verovio by
+    <li class="footer">Generated on Tue Dec 20 2022 14:30:21 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

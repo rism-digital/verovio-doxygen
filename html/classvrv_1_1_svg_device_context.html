@@ -107,10 +107,10 @@ Inheritance diagram for vrv::SvgDeviceContext:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5d3e723edc1abcc7dd80f0c57130658d"><td class="memItemLeft" align="right" valign="top"><a id="a5d3e723edc1abcc7dd80f0c57130658d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_svg_device_context.html#a5d3e723edc1abcc7dd80f0c57130658d">AppendIdAndClass</a> (std::string gId, std::string baseClass, std::string addedClasses, bool primary=true)</td></tr>
-<tr class="memdesc:a5d3e723edc1abcc7dd80f0c57130658d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_add.html">Add</a> id, data-id and class attributes. <br /></td></tr>
-<tr class="separator:a5d3e723edc1abcc7dd80f0c57130658d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03350b9424ae910cd43b9e3d413bf380"><td class="memItemLeft" align="right" valign="top"><a id="a03350b9424ae910cd43b9e3d413bf380"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_svg_device_context.html#a03350b9424ae910cd43b9e3d413bf380">AppendIdAndClass</a> (std::string gId, std::string baseClass, std::string addedClasses, GraphicID graphicID=PRIMARY)</td></tr>
+<tr class="memdesc:a03350b9424ae910cd43b9e3d413bf380"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_add.html">Add</a> id, data-id and class attributes. <br /></td></tr>
+<tr class="separator:a03350b9424ae910cd43b9e3d413bf380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f56ce603bd94fea5f23d21fa7117799"><td class="memItemLeft" align="right" valign="top"><a id="a2f56ce603bd94fea5f23d21fa7117799"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_svg_device_context.html#a2f56ce603bd94fea5f23d21fa7117799">AppendAdditionalAttributes</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
 <tr class="memdesc:a2f56ce603bd94fea5f23d21fa7117799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append additional attributes, as given in m_svgAdditionalAttributes. <br /></td></tr>
@@ -244,9 +244,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawMusicText</b> (co
 <tr class="memitem:ad7c3d96f0a2aa3446c9fbd4ce282d43f"><td class="memItemLeft" align="right" valign="top"><a id="ad7c3d96f0a2aa3446c9fbd4ce282d43f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawSpline</b> (int n, <a class="el" href="classvrv_1_1_point.html">Point</a> points[]) override</td></tr>
 <tr class="separator:ad7c3d96f0a2aa3446c9fbd4ce282d43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9072105a173067e25cbced52921f9e6"><td class="memItemLeft" align="right" valign="top"><a id="af9072105a173067e25cbced52921f9e6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawSvgShape</b> (int x, int y, int width, int height, pugi::xml_node svg) override</td></tr>
-<tr class="separator:af9072105a173067e25cbced52921f9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4705b98e132f5675a093b9bb824eb35a"><td class="memItemLeft" align="right" valign="top"><a id="a4705b98e132f5675a093b9bb824eb35a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawGraphicUri</b> (int x, int y, int width, int height, const std::string &amp;uri) override</td></tr>
+<tr class="separator:a4705b98e132f5675a093b9bb824eb35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b499f80817f838c388edc2d29bc4c0d"><td class="memItemLeft" align="right" valign="top"><a id="a9b499f80817f838c388edc2d29bc4c0d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawSvgShape</b> (int x, int y, int width, int height, double scale, pugi::xml_node svg) override</td></tr>
+<tr class="separator:a9b499f80817f838c388edc2d29bc4c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa2ec47ec28c1a161d090de6e0fc6165"><td class="memItemLeft" align="right" valign="top"><a id="afa2ec47ec28c1a161d090de6e0fc6165"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawBackgroundImage</b> (int x=0, int y=0) override</td></tr>
 <tr class="separator:afa2ec47ec28c1a161d090de6e0fc6165"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,9 +268,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>MoveTextTo</b> (int x
 void&#160;</td><td class="memItemRight" valign="bottom"><b>MoveTextVerticallyTo</b> (int y) override</td></tr>
 <tr class="separator:a034be55fae0715655548c65a8f67cdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Method for starting and ending a graphic</div></td></tr>
-<tr class="memitem:a8db3f975e01d22db5ac561b04ccae7b7"><td class="memItemLeft" align="right" valign="top"><a id="a8db3f975e01d22db5ac561b04ccae7b7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>StartGraphic</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object, std::string gClass, std::string gId, bool primary=true, bool prepend=false) override</td></tr>
-<tr class="separator:a8db3f975e01d22db5ac561b04ccae7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af305cf134a1d606ff07df25acf224edd"><td class="memItemLeft" align="right" valign="top"><a id="af305cf134a1d606ff07df25acf224edd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartGraphic</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object, std::string gClass, std::string gId, GraphicID graphicID=PRIMARY, bool prepend=false) override</td></tr>
+<tr class="separator:af305cf134a1d606ff07df25acf224edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16eced8fcf0d3d3d04f1666429a45062"><td class="memItemLeft" align="right" valign="top"><a id="a16eced8fcf0d3d3d04f1666429a45062"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>EndGraphic</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object, <a class="el" href="classvrv_1_1_view.html">View</a> *view) override</td></tr>
 <tr class="separator:a16eced8fcf0d3d3d04f1666429a45062"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -479,7 +482,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isDeactivatedY</b><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_svg_device_context.html">SvgDeviceContext</a></li>
-    <li class="footer">Generated on Tue Dec 20 2022 10:47:42 for Verovio by
+    <li class="footer">Generated on Tue Dec 20 2022 14:30:26 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

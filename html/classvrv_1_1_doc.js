@@ -74,7 +74,7 @@ var classvrv_1_1_doc =
     [ "GetRightMargin", "classvrv_1_1_doc.html#a3df63ef3ab0a7aab8959c915413846f3", null ],
     [ "GetRightMargin", "classvrv_1_1_doc.html#a6ea96b60150601cfd0dd209a5f0a275a", null ],
     [ "GetScores", "classvrv_1_1_doc.html#ab0e9c2a56689059b6b315b91a0c7ec72", null ],
-    [ "GetStaffDistance", "classvrv_1_1_doc.html#acfd21f56e06c5e0788e2791f8d482093", null ],
+    [ "GetStaffDistance", "classvrv_1_1_doc.html#ac0a711b095727802b63ba0694e224473", null ],
     [ "GetTextGlyphAdvX", "classvrv_1_1_doc.html#addd22b1958c517d96f0370c20734c65c", null ],
     [ "GetTextGlyphDescender", "classvrv_1_1_doc.html#a00c21c77e998c155bc79a3668699f49e", null ],
     [ "GetTextGlyphHeight", "classvrv_1_1_doc.html#a8d4edd7a21ea31ac91c1c1cb6223fc16", null ],
