@@ -14,6 +14,7 @@ var classvrv_1_1_floating_object =
     [ "GetMaxDrawingYRel", "classvrv_1_1_floating_object.html#ab6520fb847c3341d60fba34277e011e0", null ],
     [ "IsCloserToStaffThan", "classvrv_1_1_floating_object.html#a33e63919403a78ab01c46e22ff264d4c", null ],
     [ "IsExtenderElement", "classvrv_1_1_floating_object.html#a8781df9fac1bad66c08cdae278be23e4", null ],
+    [ "PrepareDataInitialization", "classvrv_1_1_floating_object.html#ad8144ac6f21b03b8e2ba9bc026cf51dd", null ],
     [ "PrepareStaffCurrentTimeSpanning", "classvrv_1_1_floating_object.html#ae538ce4c774260f2e1a5bbb302e26fc3", null ],
     [ "PrepareTimePointing", "classvrv_1_1_floating_object.html#a6bc20d3cca7e15e9b1f3c77fb682d3ad", null ],
     [ "PrepareTimeSpanning", "classvrv_1_1_floating_object.html#aa06caf3b3d926aeb0cca580a357bb074", null ],

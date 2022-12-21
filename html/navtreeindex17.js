@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"classvrv_1_1_pedal.html#a94793761ed37668ea956bc78d8e0c703":[1,0,0,257,12],
 "classvrv_1_1_pedal.html#ab243eb990a388a5259ea2c1e2d90fc0d":[1,0,0,257,9],
 "classvrv_1_1_pedal.html#ad1e32c0f75395a87be003b83035593e3":[1,0,0,257,13],
 "classvrv_1_1_pedal.html#adddbe6b752e5e3268e3b818768fa57d0":[1,0,0,257,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "classvrv_1_1_reorder_by_x_pos_params.html":[1,0,0,294],
 "classvrv_1_1_reorder_by_x_pos_params.html#a631482506f3e6323c6b4403c401c7378":[1,0,0,294,0],
 "classvrv_1_1_replace_drawing_values_in_staff_def_params.html":[1,0,0,295],
-"classvrv_1_1_replace_drawing_values_in_staff_def_params.html#a03db1d9d4a720374d36f46a7d16fd410":[1,0,0,295,3],
-"classvrv_1_1_replace_drawing_values_in_staff_def_params.html#a112bfa9d5285a09baa71929ddbcb36b4":[1,0,0,295,2]
+"classvrv_1_1_replace_drawing_values_in_staff_def_params.html#a03db1d9d4a720374d36f46a7d16fd410":[1,0,0,295,3]
 };
