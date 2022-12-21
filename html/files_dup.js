@@ -112,6 +112,7 @@ var files_dup =
     [ "octave.h", "octave_8h_source.html", null ],
     [ "options.h", "options_8h_source.html", null ],
     [ "orig.h", "orig_8h_source.html", null ],
+    [ "ornam.h", "ornam_8h_source.html", null ],
     [ "page.h", "page_8h_source.html", null ],
     [ "pageelement.h", "pageelement_8h_source.html", null ],
     [ "pagemilestone.h", "pagemilestone_8h_source.html", null ],

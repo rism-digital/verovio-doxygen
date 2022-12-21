@@ -126,7 +126,7 @@ var searchData=
   ['applyppufactorparams_123',['ApplyPPUFactorParams',['../classvrv_1_1_apply_p_p_u_factor_params.html',1,'vrv']]],
   ['approximatebezierboundingbox_124',['ApproximateBezierBoundingBox',['../classvrv_1_1_bounding_box.html#ae9a22cf5d306abb22ff5f557e81bd9af',1,'vrv::BoundingBox']]],
   ['areaposinterface_125',['AreaPosInterface',['../classvrv_1_1_area_pos_interface.html',1,'vrv']]],
-  ['arechildrenalignedto_126',['AreChildrenAlignedTo',['../classvrv_1_1_dir.html#a25fc59a356e110c4b87676f735526bb9',1,'vrv::Dir']]],
+  ['arechildrenalignedto_126',['AreChildrenAlignedTo',['../classvrv_1_1_text_dir_interface.html#ae34ccabec1f4fe7c32dc3ad7f87f2fcb',1,'vrv::TextDirInterface']]],
   ['arepointsclose_127',['ArePointsClose',['../classvrv_1_1_bounding_box.html#aa466757865d8f747cbaaf232e3051177',1,'vrv::BoundingBox']]],
   ['arpeg_128',['Arpeg',['../classvrv_1_1_arpeg.html',1,'vrv']]],
   ['artic_129',['Artic',['../classvrv_1_1_artic.html',1,'vrv']]],

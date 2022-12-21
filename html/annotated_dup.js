@@ -249,6 +249,7 @@ var annotated_dup =
       [ "OptionStaffrel", "classvrv_1_1_option_staffrel.html", "classvrv_1_1_option_staffrel" ],
       [ "OptionString", "classvrv_1_1_option_string.html", "classvrv_1_1_option_string" ],
       [ "Orig", "classvrv_1_1_orig.html", "classvrv_1_1_orig" ],
+      [ "Ornam", "classvrv_1_1_ornam.html", "classvrv_1_1_ornam" ],
       [ "Output", "classvrv_1_1_output.html", "classvrv_1_1_output" ],
       [ "PAEInput", "classvrv_1_1_p_a_e_input.html", "classvrv_1_1_p_a_e_input" ],
       [ "PAEOutput", "classvrv_1_1_p_a_e_output.html", "classvrv_1_1_p_a_e_output" ],

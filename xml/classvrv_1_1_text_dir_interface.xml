@@ -10,6 +10,7 @@
     <derivedcompoundref refid="classvrv_1_1_fing" prot="public" virt="non-virtual">vrv::Fing</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_harm" prot="public" virt="non-virtual">vrv::Harm</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_m_num" prot="public" virt="non-virtual">vrv::MNum</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_ornam" prot="public" virt="non-virtual">vrv::Ornam</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_reh" prot="public" virt="non-virtual">vrv::Reh</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_tempo" prot="public" virt="non-virtual">vrv::Tempo</derivedcompoundref>
     <includes refid="textdirinterface_8h" local="no">textdirinterface.h</includes>
@@ -95,6 +96,28 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/textdirinterface.h" line="41" column="9"/>
       </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_text_dir_interface_1ae34ccabec1f4fe7c32dc3ad7f87f2fcb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::TextDirInterface::AreChildrenAlignedTo</definition>
+        <argsstring>(const Object *object, data_HORIZONTALALIGNMENT alignment) const</argsstring>
+        <name>AreChildrenAlignedTo</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>data_HORIZONTALALIGNMENT</type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+<para>Check whether one of the children has hAlign attribute set to <computeroutput>alignment</computeroutput> value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/textdirinterface.h" line="46" column="10"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>This class is an interface for elements implementing a text directive, such as &lt;dir&gt;, &lt;tempo&gt;, or &lt;dynam&gt; It is not an abstract class but should not be instanciated directly. </para>
@@ -102,7 +125,7 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="11">
+      <node id="12">
         <label>vrv::Tempo</label>
         <link refid="classvrv_1_1_tempo"/>
         <childnode refid="1" relation="public-inheritance">
@@ -124,7 +147,7 @@
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="10">
+      <node id="11">
         <label>vrv::Reh</label>
         <link refid="classvrv_1_1_reh"/>
         <childnode refid="1" relation="public-inheritance">
@@ -146,6 +169,12 @@
       </node>
       <node id="3">
         <label>AttPlacementRelStaff</label>
+      </node>
+      <node id="10">
+        <label>vrv::Ornam</label>
+        <link refid="classvrv_1_1_ornam"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="6">
         <label>vrv::Dynam</label>
@@ -183,8 +212,9 @@
         <label>AttPlacementRelStaff</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/textdirinterface.h" line="25" column="69" bodyfile="/home/runner/work/verovio/verovio/include/vrv/textdirinterface.h" bodystart="25" bodyend="48"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/textdirinterface.h" line="25" column="69" bodyfile="/home/runner/work/verovio/verovio/include/vrv/textdirinterface.h" bodystart="25" bodyend="53"/>
     <listofallmembers>
+      <member refid="classvrv_1_1_text_dir_interface_1ae34ccabec1f4fe7c32dc3ad7f87f2fcb" prot="public" virt="non-virtual"><scope>vrv::TextDirInterface</scope><name>AreChildrenAlignedTo</name></member>
       <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual"><scope>vrv::TextDirInterface</scope><name>GetAttClasses</name></member>
       <member refid="classvrv_1_1_text_dir_interface_1afc18878d20c91d1612e2317122c28e45" prot="public" virt="non-virtual"><scope>vrv::TextDirInterface</scope><name>GetNumberOfLines</name></member>
       <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual"><scope>vrv::TextDirInterface</scope><name>Interface</name></member>

@@ -33,6 +33,7 @@ var hierarchy =
           [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
           [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
           [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
+          [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
           [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
           [ "vrv::PitchInflection", "classvrv_1_1_pitch_inflection.html", null ],
           [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
@@ -150,6 +151,7 @@ var hierarchy =
       [ "vrv::Neume", "classvrv_1_1_neume.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
+      [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
       [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
@@ -303,6 +305,7 @@ var hierarchy =
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
       [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
+      [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
       [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
       [ "vrv::Symbol", "classvrv_1_1_symbol.html", null ],
@@ -584,6 +587,7 @@ var hierarchy =
     ] ],
     [ "AttOrnamentAccid", null, [
       [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
+      [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
       [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
     ] ],
@@ -622,6 +626,7 @@ var hierarchy =
         [ "vrv::Fing", "classvrv_1_1_fing.html", null ],
         [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
         [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
+        [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
         [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
         [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ]
       ] ],
@@ -700,6 +705,7 @@ var hierarchy =
         [ "vrv::Fing", "classvrv_1_1_fing.html", null ],
         [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
         [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
+        [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
         [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
         [ "vrv::TimeSpanningInterface", "classvrv_1_1_time_spanning_interface.html", [
           [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ],
@@ -1134,6 +1140,7 @@ var hierarchy =
         [ "vrv::Label", "classvrv_1_1_label.html", null ],
         [ "vrv::LabelAbbr", "classvrv_1_1_label_abbr.html", null ],
         [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
+        [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
         [ "vrv::Syl", "classvrv_1_1_syl.html", null ]
       ] ],
       [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ]
