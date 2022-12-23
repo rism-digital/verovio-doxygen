@@ -1,26 +1,24 @@
 /*
- @licstart  The following is the entire license notice for the JavaScript code in this file.
+@licstart  The following is the entire license notice for the
+JavaScript code in this file.
 
- The MIT License (MIT)
+Copyright (C) 1997-2019 by Dimitri van Heesch
 
- Copyright (C) 1997-2020 by Dimitri van Heesch
+This program is free software; you can redistribute it and/or modify
+it under the terms of version 2 of the GNU General Public License as published by
+the Free Software Foundation
 
- Permission is hereby granted, free of charge, to any person obtaining a copy of this software
- and associated documentation files (the "Software"), to deal in the Software without restriction,
- including without limitation the rights to use, copy, modify, merge, publish, distribute,
- sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
 
- The above copyright notice and this permission notice shall be included in all copies or
- substantial portions of the Software.
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
- BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
- DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
- @licend  The above is the entire license notice for the JavaScript code in this file
+@licend  The above is the entire license notice
+for the JavaScript code in this file
 */
 var NAVTREE =
 [
@@ -46,16 +44,32 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"abbr_8h_source.html",
-"classvrv_1_1_breath.html#a90e5416e9e3e0500668fa80b6ee56253",
-"classvrv_1_1_editor_toolkit_neume.html#aae7ed26ed5e4663e0828b8d41b2de256",
-"classvrv_1_1_key_sig.html#ae7a01caa6e8ea3a37521ff4db39415e6",
-"classvrv_1_1_measure.html#aa09c5efb86cd4d8e116e5804e789410b",
-"classvrv_1_1_object.html#a9649a7b25945724cbd4f8a3b29f1b115",
-"classvrv_1_1_position_interface.html#a3312dbe1415b5eafb2762ffe2e612d54",
-"classvrv_1_1_staff_alignment.html#ada30a6a055ec4a7fc2af92a9f27f72a5",
-"classvrv_1_1_time_spanning_interface.html#afdd5ee6c76457751a32e0f26310331d0",
-"group__nodoc.html#gac0b9bfca70ab200ca3e313611e37cc20"
+".html",
+"classvrv_1_1_align_measures_params.html",
+"classvrv_1_1_att.html#ae8e90c71a36b7a3de6692a29d41e0741",
+"classvrv_1_1_beam_span_segment.html#acf544d24ceaf3eef6c5e9ab9ff278533",
+"classvrv_1_1_choice.html#ac0bd6d35eb17c51cc09302acaa7e7f40",
+"classvrv_1_1_device_context.html#acb4e404ae6cbc48f586f78db3b911b1d",
+"classvrv_1_1_duration_interface.html#afd39c3b41049378b5a4baa86faf68cae",
+"classvrv_1_1_filters.html#aaf0d625146d49adff49467063f1129d2",
+"classvrv_1_1_generate_timemap_params.html#a0f6eba24b4af7438b027375da2d6bba4",
+"classvrv_1_1_humdrum_input.html#a3d716bd9917b5f2c13b855417df71a40",
+"classvrv_1_1_humdrum_input.html#aeab1fa55b027b749bece352ef47b8ed3",
+"classvrv_1_1_layer.html#a973a56164bfe4785b69e9b44ce65489c",
+"classvrv_1_1_m_e_i_output.html#abcbfdbba42ecd1741b64a255ab505c84",
+"classvrv_1_1_meter_sig_grp.html#a9c2b3dc94afad1a3c4251dd1fddd7e1d",
+"classvrv_1_1_object.html#a5d95d6ed5231e12c17d17868d337b218",
+"classvrv_1_1_option.html#a1de81987099330fafa275efd29d68450",
+"classvrv_1_1_options.html#a7676d295e3cb82fd728cef409e2b3706",
+"classvrv_1_1_pb.html#aafe79a84e4fffd8e41e14f6b2c24a5f6",
+"classvrv_1_1_reh.html#acdcbd27d572932d0ef10096effca06df",
+"classvrv_1_1_score_def_set_current_params.html#aa88654ddb4b1d07ac46748902b68743f",
+"classvrv_1_1_staff_def_drawing_interface.html#ae0721bfdbbe21623135bfd8fabbd75d6",
+"classvrv_1_1_system.html#a4dcd13387fa5b83a9dbbb7492e6ab78b",
+"classvrv_1_1_tie.html#abb48e36013d0206558dc43d05975df2f",
+"classvrv_1_1_tuplet.html#a1a282489f33013ca547cc18c4a615e41",
+"classvrv_1_1_view.html#aafac411031b669991917681ad56660b2",
+"functions_m.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
