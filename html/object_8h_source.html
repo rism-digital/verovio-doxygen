@@ -927,8 +927,8 @@ $(document).ready(function(){initNavTree('object_8h_source.html',''); initResiza
 <div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_object_factory.html#a08d2fbcb1dc6a2d2e8a869729366fd5a">GetClassIds</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;classStrings, std::vector&lt;ClassId&gt; &amp;classIds);</div>
 <div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160; </div>
 <div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;    MapOfStrConstructors s_ctorsRegistry;</div>
-<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;    MapOfStrClassIds s_classIdsRegistry;</div>
+<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;    <span class="keyword">static</span> thread_local MapOfStrConstructors s_ctorsRegistry;</div>
+<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;    <span class="keyword">static</span> thread_local MapOfStrClassIds s_classIdsRegistry;</div>
 <div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;};</div>
 <div class="line"><a name="l01908"></a><span class="lineno"> 1908</span>&#160; </div>
 <div class="line"><a name="l01909"></a><span class="lineno"> 1909</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
@@ -1166,7 +1166,7 @@ $(document).ready(function(){initNavTree('object_8h_source.html',''); initResiza
 <div class="ttc" id="aclassvrv_1_1_object_html_ac3beb8d8246e880f20c92c4e3725545a"><div class="ttname"><a href="classvrv_1_1_object.html#ac3beb8d8246e880f20c92c4e3725545a">vrv::Object::AlignHorizontally</a></div><div class="ttdeci">virtual int AlignHorizontally(FunctorParams *)</div><div class="ttdoc">Align horizontally the content of a page.</div><div class="ttdef"><b>Definition:</b> object.h:852</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html_af644f5ed4600bb29ca03ded3f95b3467"><div class="ttname"><a href="classvrv_1_1_object.html#af644f5ed4600bb29ca03ded3f95b3467">vrv::Object::JustifyX</a></div><div class="ttdeci">virtual int JustifyX(FunctorParams *)</div><div class="ttdoc">Justify the X positions.</div><div class="ttdef"><b>Definition:</b> object.h:1415</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html_a8cc3cee5e4463a0434de0fa42ab1d1cb"><div class="ttname"><a href="classvrv_1_1_object.html#a8cc3cee5e4463a0434de0fa42ab1d1cb">vrv::Object::AdjustYPos</a></div><div class="ttdeci">virtual int AdjustYPos(FunctorParams *)</div><div class="ttdoc">Adjust the position of the StaffAlignment.</div><div class="ttdef"><b>Definition:</b> object.h:1126</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html_a506499857fa99ad918b7c236670acaf2"><div class="ttname"><a href="classvrv_1_1_object.html#a506499857fa99ad918b7c236670acaf2">vrv::Object::PrepareLinking</a></div><div class="ttdeci">virtual int PrepareLinking(FunctorParams *functorParams)</div><div class="ttdoc">Match linking element (e.g, @next).</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html_a506499857fa99ad918b7c236670acaf2"><div class="ttname"><a href="classvrv_1_1_object.html#a506499857fa99ad918b7c236670acaf2">vrv::Object::PrepareLinking</a></div><div class="ttdeci">virtual int PrepareLinking(FunctorParams *functorParams)</div><div class="ttdoc">Match linking element (e.g., @next).</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html_aa7b805cd96f7dc63c47c640d01dd9954"><div class="ttname"><a href="classvrv_1_1_object.html#aa7b805cd96f7dc63c47c640d01dd9954">vrv::Object::AdjustFloatingPositionersBetween</a></div><div class="ttdeci">virtual int AdjustFloatingPositionersBetween(FunctorParams *)</div><div class="ttdoc">Adjust the position of floating positionners placed between staves.</div><div class="ttdef"><b>Definition:</b> object.h:1101</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html_a873d7c2f7805530e06ebd07885c399b6"><div class="ttname"><a href="classvrv_1_1_object.html#a873d7c2f7805530e06ebd07885c399b6">vrv::Object::PrepareCrossStaff</a></div><div class="ttdeci">virtual int PrepareCrossStaff(FunctorParams *)</div><div class="ttdoc">See cross-staff / layer pointers on LayerElement.</div><div class="ttdef"><b>Definition:</b> object.h:1247</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html_a9bc335e3bc5405f5dbaae757b5629996"><div class="ttname"><a href="classvrv_1_1_object.html#a9bc335e3bc5405f5dbaae757b5629996">vrv::Object::SetAsReferenceObject</a></div><div class="ttdeci">void SetAsReferenceObject()</div><div class="ttdoc">Make an object a reference object that do not own children.</div></div>
@@ -1190,7 +1190,7 @@ $(document).ready(function(){initNavTree('object_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>object.h</b></li>
-    <li class="footer">Generated on Fri Dec 23 2022 15:50:49 for Verovio by
+    <li class="footer">Generated on Mon Jan 9 2023 19:50:37 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
