@@ -164,16 +164,16 @@
           <declname>seed</declname>
         </param>
         <briefdescription>
-<para>Reset the seed used to generate MEI xml:id attribute values. </para>
+<para>Reset the seed used to generate MEI @xml:id attribute values. </para>
         </briefdescription>
         <detaileddescription>
-<para>Passing 0 will seed the xml:id generator with a random (time-based) seed value. This method will have no effect if the <ndash/>xml-id-checksum option is set.</para>
+<para>Passing 0 will seed the @xml:id generator with a random (time-based) seed value. This method will have no effect if the <ndash/>xml-id-checksum option is set.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>seed</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The seed value for generating the xml:id values (0 for a time-based random seed) </para>
+<para>The seed value for generating the @xml:id values (0 for a time-based random seed) </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -812,11 +812,23 @@
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
+<parametername>filename</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>The output filename </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pageNo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The page to render (1-based) </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="return"><para>True if the file was successfully written </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
@@ -857,11 +869,15 @@
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
+<parametername>filename</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>The output filename </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="return"><para>True if the file was successfully written </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
@@ -904,11 +920,15 @@
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
+<parametername>filename</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>The output filename </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="return"><para>True if the file was successfully written </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
@@ -931,11 +951,15 @@
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
+<parametername>jsonOptions</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>A stringified JSON objects with the timemap options </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="return"><para>The timemap as a string </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
@@ -964,11 +988,23 @@
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
+<parametername>filename</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>The output filename </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jsonOptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A stringified JSON objects with the timemap options </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="return"><para>True if the file was successfully written </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
@@ -1075,11 +1111,15 @@
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
+<parametername>filename</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>The output filename </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="return"><para>True if the file was successfully written </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
@@ -1166,14 +1206,14 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Data access methods</header>
-      <memberdef kind="function" id="classvrv_1_1_toolkit_1a8439ca5ca843438243bee27c14b29d6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_toolkit_1a328bf3cea7ea6b403f929d465db032a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
         <definition>std::string vrv::Toolkit::GetDescriptiveFeatures</definition>
-        <argsstring>(const std::string &amp;options)</argsstring>
+        <argsstring>(const std::string &amp;jsonOptions)</argsstring>
         <name>GetDescriptiveFeatures</name>
         <param>
           <type>const std::string &amp;</type>
-          <declname>options</declname>
+          <declname>jsonOptions</declname>
         </param>
         <briefdescription>
 <para>Return descriptive features as a JSON string. </para>
@@ -1182,7 +1222,7 @@
 <para>The features are tailored for implementing incipit search.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>options</parametername>
+<parametername>jsonOptions</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>A stringified JSON object with the feature extraction options </para>
@@ -1237,7 +1277,7 @@
           <declname>xmlId</declname>
         </param>
         <briefdescription>
-<para>Return the page on which the element is the ID (xml:id) is rendered. </para>
+<para>Return the page on which the element is the ID (@xml:id) is rendered. </para>
         </briefdescription>
         <detaileddescription>
 <para>This takes into account the current layout options.</para>
@@ -1246,7 +1286,7 @@
 <parametername>xmlId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the ID (xml:id) of the element being looked for </para>
+<para>the ID (@xml:id) of the element being looked for </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -1277,7 +1317,7 @@
 <parametername>xmlId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the ID (xml:id) of the element being looked for </para>
+<para>the ID (@xml:id) of the element being looked for </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -1307,7 +1347,7 @@
 <parametername>xmlId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the ID (xml:id) of the element being looked for </para>
+<para>the ID (@xml:id) of the element being looked for </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -1337,7 +1377,7 @@
 <parametername>xmlId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the ID (xml:id) of the element being looked for </para>
+<para>the ID (@xml:id) of the element being looked for </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -1359,7 +1399,7 @@
           <declname>xmlId</declname>
         </param>
         <briefdescription>
-<para>Return the time at which the element is the ID (xml:id) is played. </para>
+<para>Return the time at which the element is the ID (@xml:id) is played. </para>
         </briefdescription>
         <detaileddescription>
 <para><ref refid="classvrv_1_1_toolkit_1a24988e48cc901661fd4db03ec9f756e9" kindref="member">RenderToMIDI()</ref> must be called prior to using this method.</para>
@@ -1368,7 +1408,7 @@
 <parametername>xmlId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the ID (xml:id) of the element being looked for </para>
+<para>the ID (@xml:id) of the element being looked for </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -1390,7 +1430,7 @@
           <declname>xmlId</declname>
         </param>
         <briefdescription>
-<para>Return MIDI values of the element with the ID (xml:id). </para>
+<para>Return MIDI values of the element with the ID (@xml:id) </para>
         </briefdescription>
         <detaileddescription>
 <para><ref refid="classvrv_1_1_toolkit_1a24988e48cc901661fd4db03ec9f756e9" kindref="member">RenderToMIDI()</ref> must be called prior to using this method.</para>
@@ -1399,7 +1439,7 @@
 <parametername>xmlId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the ID (xml:id) of the element being looked for </para>
+<para>the ID (@xml:id) of the element being looked for </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -1430,7 +1470,7 @@
 <parametername>xmlId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the ID (xml:id) of the element being looked for </para>
+<para>the ID (@xml:id) of the element being looked for </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -2101,7 +2141,7 @@
       <member refid="classvrv_1_1_toolkit_1aad929203e47ba1fe415b1b989a31463d" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>GetClassIds</name></member>
       <member refid="group__nodoc_1ga409f7f6411678f02d7bc9a73be29c7d6" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>GetCString</name></member>
       <member refid="classvrv_1_1_toolkit_1a33570df5ac75d86628a7db641d83ec8b" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>GetDefaultOptions</name></member>
-      <member refid="classvrv_1_1_toolkit_1a8439ca5ca843438243bee27c14b29d6a" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>GetDescriptiveFeatures</name></member>
+      <member refid="classvrv_1_1_toolkit_1a328bf3cea7ea6b403f929d465db032a8" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>GetDescriptiveFeatures</name></member>
       <member refid="classvrv_1_1_toolkit_1acde5671467b4de6cacd55e7e8be87e93" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>GetElementAttr</name></member>
       <member refid="classvrv_1_1_toolkit_1a4618bafecb91784806f78751ea6b3f42" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>GetElementsAtTime</name></member>
       <member refid="classvrv_1_1_toolkit_1acbd4bf8bb87e10aa286034d8fe204469" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>GetExpansionIdsForElement</name></member>

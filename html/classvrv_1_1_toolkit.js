@@ -11,7 +11,7 @@ var classvrv_1_1_toolkit =
     [ "GetAvailableOptions", "classvrv_1_1_toolkit.html#a2ca1aa7fcc49d2b8b7717dec136c5e86", null ],
     [ "GetCString", "group__nodoc.html#ga409f7f6411678f02d7bc9a73be29c7d6", null ],
     [ "GetDefaultOptions", "classvrv_1_1_toolkit.html#a33570df5ac75d86628a7db641d83ec8b", null ],
-    [ "GetDescriptiveFeatures", "classvrv_1_1_toolkit.html#a8439ca5ca843438243bee27c14b29d6a", null ],
+    [ "GetDescriptiveFeatures", "classvrv_1_1_toolkit.html#a328bf3cea7ea6b403f929d465db032a8", null ],
     [ "GetElementAttr", "classvrv_1_1_toolkit.html#acde5671467b4de6cacd55e7e8be87e93", null ],
     [ "GetElementsAtTime", "classvrv_1_1_toolkit.html#a4618bafecb91784806f78751ea6b3f42", null ],
     [ "GetExpansionIdsForElement", "classvrv_1_1_toolkit.html#acbd4bf8bb87e10aa286034d8fe204469", null ],

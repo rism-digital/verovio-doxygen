@@ -76,7 +76,7 @@ var searchData=
   ['getcustosglyph_471',['GetCustosGlyph',['../classvrv_1_1_custos.html#a60b54266e09371986572a62560c7596d',1,'vrv::Custos']]],
   ['getdefaultoptions_472',['GetDefaultOptions',['../classvrv_1_1_toolkit.html#a33570df5ac75d86628a7db641d83ec8b',1,'vrv::Toolkit']]],
   ['getdescendantindex_473',['GetDescendantIndex',['../classvrv_1_1_object.html#a6baacbb5e659f71a051d569b2c34ac07',1,'vrv::Object']]],
-  ['getdescriptivefeatures_474',['GetDescriptiveFeatures',['../classvrv_1_1_toolkit.html#a8439ca5ca843438243bee27c14b29d6a',1,'vrv::Toolkit']]],
+  ['getdescriptivefeatures_474',['GetDescriptiveFeatures',['../classvrv_1_1_toolkit.html#a328bf3cea7ea6b403f929d465db032a8',1,'vrv::Toolkit']]],
   ['getdiatonicpitch_475',['GetDiatonicPitch',['../classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f',1,'vrv::Note']]],
   ['getdocresources_476',['GetDocResources',['../classvrv_1_1_object.html#a4479cf2a953546ff59428752c479ec31',1,'vrv::Object']]],
   ['getdotcount_477',['GetDotCount',['../classvrv_1_1_layer_element.html#ae0a0dd99fec2746b5759e15252ab4b4e',1,'vrv::LayerElement']]],
