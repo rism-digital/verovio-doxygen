@@ -23,6 +23,7 @@ var classvrv_1_1_options =
     [ "m_beamMixedStemMin", "classvrv_1_1_options.html#a308e1293398611385edb59298035db1f", null ],
     [ "m_bottomMarginArtic", "classvrv_1_1_options.html#a8637f433f0645dea49d98ae36f3d9dcf", null ],
     [ "m_bottomMarginHarm", "classvrv_1_1_options.html#a857f563b1327563c916833eb3ce8a239", null ],
+    [ "m_bottomMarginOctave", "classvrv_1_1_options.html#af9ee93ec31be9da4e2071ac527d59f92", null ],
     [ "m_bottomMarginPgHead", "classvrv_1_1_options.html#a04d38d4149806f4713dd6be8370b7d61", null ],
     [ "m_bracketThickness", "classvrv_1_1_options.html#a4311cad04890bfe936addfdf3251de25", null ],
     [ "m_breaks", "classvrv_1_1_options.html#aab37d3899f4c42e7838ed389f946c4b3", null ],
