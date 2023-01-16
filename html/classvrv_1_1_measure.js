@@ -26,7 +26,7 @@ var classvrv_1_1_measure =
     [ "ApplyPPUFactor", "classvrv_1_1_measure.html#a2047d6b9134715bae2adac5821aef630", null ],
     [ "CacheHorizontalLayout", "classvrv_1_1_measure.html#a642def6da43ff9a53dba03e1a934430a", null ],
     [ "CalcAlignmentXPos", "classvrv_1_1_measure.html#aa09c5efb86cd4d8e116e5804e789410b", null ],
-    [ "CalculateRightBarLineWidth", "classvrv_1_1_measure.html#adef8072094be1a59d9cec910d74a2945", null ],
+    [ "CalculateRightBarLineWidth", "classvrv_1_1_measure.html#a84bcb7a7885e9fb83e85498f43ee36c2", null ],
     [ "CastOffEncoding", "classvrv_1_1_measure.html#a4c793218b22e82d580df2b74b04dfdf4", null ],
     [ "CastOffSystems", "classvrv_1_1_measure.html#a2c7399596ea49621b63a2c0e1af814f2", null ],
     [ "CastOffToSelection", "classvrv_1_1_measure.html#a944a16dd188b8a72cd989edd56872f16", null ],

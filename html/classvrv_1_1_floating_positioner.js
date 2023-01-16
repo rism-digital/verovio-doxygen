@@ -3,6 +3,7 @@ var classvrv_1_1_floating_positioner =
     [ "FloatingPositioner", "classvrv_1_1_floating_positioner.html#a2e725efff149c8687d7f35595f23da16", null ],
     [ "~FloatingPositioner", "classvrv_1_1_floating_positioner.html#ac573fdccc3b55359b972e7a6794a36cd", null ],
     [ "CalcDrawingYRel", "classvrv_1_1_floating_positioner.html#a052df338690d13a4308005f8e6c308de", null ],
+    [ "GetAdmissibleHorizOverlapMargin", "classvrv_1_1_floating_positioner.html#ad91a65a8cab97e7e925ae9baae808972", null ],
     [ "GetAlignment", "classvrv_1_1_floating_positioner.html#a4fac507f16a92ec7859b6fe5dc7c986d", null ],
     [ "GetAlignment", "classvrv_1_1_floating_positioner.html#a13614bc55a83608a2bc20fbee4828263", null ],
     [ "GetClassId", "classvrv_1_1_floating_positioner.html#a08ebe8e8f9adc406db0a07d2964dc7f9", null ],

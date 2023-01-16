@@ -58,7 +58,7 @@ var searchData=
   ['calculateadjacentchordxoffset_208',['CalculateAdjacentChordXOffset',['../classvrv_1_1_tie.html#aee480e43d8666849185cc70819bb4499',1,'vrv::Tie']]],
   ['calculateclusters_209',['CalculateClusters',['../classvrv_1_1_chord.html#af666ccc0ca022458e290f90dc6c5578c',1,'vrv::Chord']]],
   ['calculateextremalstaff_210',['CalculateExtremalStaff',['../classvrv_1_1_slur.html#a0b6a473f6cbea7cf14ef2ae593fdadbb',1,'vrv::Slur']]],
-  ['calculaterightbarlinewidth_211',['CalculateRightBarLineWidth',['../classvrv_1_1_measure.html#adef8072094be1a59d9cec910d74a2945',1,'vrv::Measure']]],
+  ['calculaterightbarlinewidth_211',['CalculateRightBarLineWidth',['../classvrv_1_1_measure.html#a84bcb7a7885e9fb83e85498f43ee36c2',1,'vrv::Measure']]],
   ['calculatestemlength_212',['CalculateStemLength',['../classvrv_1_1_beam_element_coord.html#a2d28e6f4393f9d61fb6ac136ee56f024',1,'vrv::BeamElementCoord']]],
   ['calculatestemlengthtab_213',['CalculateStemLengthTab',['../classvrv_1_1_beam_element_coord.html#a027f4c152d623e5cd81c3f659d15ac05',1,'vrv::BeamElementCoord']]],
   ['calculatestemmodadjustment_214',['CalculateStemModAdjustment',['../classvrv_1_1_beam_element_coord.html#ae2413c9f9e24d8829395823ffa2ed51c',1,'vrv::BeamElementCoord::CalculateStemModAdjustment()'],['../classvrv_1_1_stem.html#a9b3e4dbc926470d30d5a54040b008daf',1,'vrv::Stem::CalculateStemModAdjustment()']]],
