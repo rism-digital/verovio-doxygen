@@ -131,7 +131,7 @@ var searchData=
   ['getleftalignment_2029',['GetLeftAlignment',['../classvrv_1_1_measure_aligner.html#a820ff586b2d660db7cc3a04d088d87b7',1,'vrv::MeasureAligner']]],
   ['getleftright_2030',['GetLeftRight',['../classvrv_1_1_alignment.html#ae3c0a34714789e1c7196d4dbf67875f6',1,'vrv::Alignment']]],
   ['getlevel_2031',['GetLevel',['../classvrv_1_1_app.html#a587f1669cfde483d22495b3c4902a47b',1,'vrv::App::GetLevel()'],['../classvrv_1_1_choice.html#ac0bd6d35eb17c51cc09302acaa7e7f40',1,'vrv::Choice::GetLevel()'],['../classvrv_1_1_subst.html#a0ff61d39499040145cb2b143868d6653',1,'vrv::Subst::GetLevel()']]],
-  ['getlinewidth_2032',['GetLineWidth',['../classvrv_1_1_octave.html#ab156e3fd834ad083da894777e44ee444',1,'vrv::Octave']]],
+  ['getlinewidth_2032',['GetLineWidth',['../classvrv_1_1_bracket_span.html#a5a9a4a3536448a42be32dd6a008dd709',1,'vrv::BracketSpan::GetLineWidth()'],['../classvrv_1_1_octave.html#ab156e3fd834ad083da894777e44ee444',1,'vrv::Octave::GetLineWidth()']]],
   ['getlist_2033',['GetList',['../classvrv_1_1_object_list_interface.html#aec88d6b46b54ccbcd95426f7f55c4b59',1,'vrv::ObjectListInterface']]],
   ['getlistfirst_2034',['GetListFirst',['../classvrv_1_1_object_list_interface.html#ab95aaf8f363f9229cc5ea15fe38f0b89',1,'vrv::ObjectListInterface']]],
   ['getlistindex_2035',['GetListIndex',['../classvrv_1_1_object_list_interface.html#a1858b93f447366ddfbdeb011845e3f25',1,'vrv::ObjectListInterface']]],
