@@ -4956,6 +4956,7 @@
     <member refid="classvrv_1_1_object_1a56434ce48d536c537485260bec7ef6c2" kind="function"><name>AdjustStaffOverlap</name></member>
     <member refid="classvrv_1_1_object_1a80bc658bb972eabcee2d0aa536386cfc" kind="function"><name>AdjustTupletsY</name></member>
     <member refid="classvrv_1_1_object_1ad431f1654f303456e7c8f2d285e4f650" kind="function"><name>AdjustTupletNumOverlap</name></member>
+    <member refid="classvrv_1_1_object_1ae9bf4c7655baf1d3f774efc99ebebb9a" kind="function"><name>AdjustTupletWithSlurs</name></member>
     <member refid="classvrv_1_1_object_1a8cc3cee5e4463a0434de0fa42ab1d1cb" kind="function"><name>AdjustYPos</name></member>
     <member refid="classvrv_1_1_object_1a6bdcb61d424d48a52281eec119128ceb" kind="function"><name>AdjustXRelForTranscription</name></member>
     <member refid="classvrv_1_1_object_1a01481f7a69cf86540c1cf4efaab8e75b" kind="function"><name>CalcBBoxOverflows</name></member>
@@ -6527,6 +6528,7 @@
     <member refid="classvrv_1_1_slur_1a172a683e43f5efc07b7df01e79fe8e83" kind="function"><name>AddSpannedElements</name></member>
     <member refid="classvrv_1_1_slur_1a9933e8e2f9c92a75e6800d0f2b4d2d58" kind="function"><name>IsElementBelow</name></member>
     <member refid="classvrv_1_1_slur_1a042af0fd53b535540d41b8922eace073" kind="function"><name>IsElementBelow</name></member>
+    <member refid="classvrv_1_1_slur_1aff3f9a6736685a00f98890e8bb699501" kind="function"><name>DiscardTupletElements</name></member>
     <member refid="classvrv_1_1_slur_1aac3d86a03edf3a035d0f24f22437ebec" kind="function"><name>CalcEndPoints</name></member>
     <member refid="classvrv_1_1_slur_1a10771d5591c5792a08145be896782b6f" kind="function"><name>GetStartEndLocs</name></member>
     <member refid="classvrv_1_1_slur_1a8218536bebd972da0b2669a0357ecb49" kind="function"><name>CalcBrokenLoc</name></member>
@@ -7706,12 +7708,16 @@
     <member refid="classvrv_1_1_tuplet_1a89dfd7b0efed4cbde4e3c48c439ab9bc" kind="function"><name>GetBracketAlignedBeam</name></member>
     <member refid="classvrv_1_1_tuplet_1aa90ff2d1d649aea1f11069c980cbcebc" kind="function"><name>GetNumAlignedBeam</name></member>
     <member refid="classvrv_1_1_tuplet_1a92894d59d889073739e60730f51797e3" kind="function"><name>GetNumAlignedBeam</name></member>
+    <member refid="classvrv_1_1_tuplet_1ad27f5e41dd475584bfe217a038d307e2" kind="function"><name>GetInnerSlurs</name></member>
+    <member refid="classvrv_1_1_tuplet_1a18aa3657ab456e5700b51f7f7d412559" kind="function"><name>AddInnerSlur</name></member>
+    <member refid="classvrv_1_1_tuplet_1ade388c2b211a5f13832116273795139f" kind="function"><name>ResetInnerSlurs</name></member>
     <member refid="classvrv_1_1_tuplet_1a3fd677bc5e0810f8b82fa3ed12380b95" kind="variable"><name>m_drawingLeft</name></member>
     <member refid="classvrv_1_1_tuplet_1a839540701c8cfa3a35a4a9abc50a3542" kind="variable"><name>m_drawingRight</name></member>
     <member refid="classvrv_1_1_tuplet_1a0eed5d263c77a4f0a5fb2521989a48c1" kind="variable"><name>m_drawingBracketPos</name></member>
     <member refid="classvrv_1_1_tuplet_1addd1cb3852450e10a9ea61fbc6b75630" kind="variable"><name>m_drawingNumPos</name></member>
     <member refid="classvrv_1_1_tuplet_1ad51a2b3eee1e9f404abbe6d505128f26" kind="variable"><name>m_bracketAlignedBeam</name></member>
     <member refid="classvrv_1_1_tuplet_1a6af3590e76f0df30add2b89d7d6d053e" kind="variable"><name>m_numAlignedBeam</name></member>
+    <member refid="classvrv_1_1_tuplet_1a612010911011bd82e2604619e61a3eba" kind="variable"><name>m_innerSlurs</name></member>
     <member refid="classvrv_1_1_tuplet_1a895dd98a22b0024d37b1f4fbbc5ec6ca" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_tuplet_1a203b018c52090608a28871ed5917c75d" kind="function"><name>AddChild</name></member>
     <member refid="classvrv_1_1_tuplet_1ac6b04379bb72ad6f90757952cf3bcc81" kind="function"><name>CalcDrawingBracketAndNumPos</name></member>
@@ -7719,7 +7725,9 @@
     <member refid="classvrv_1_1_tuplet_1aa16224b3753d223c2864d5343986534c" kind="function"><name>PrepareLayerElementParts</name></member>
     <member refid="classvrv_1_1_tuplet_1a57571265d0c90723978ef2963b58765e" kind="function"><name>AdjustTupletsX</name></member>
     <member refid="classvrv_1_1_tuplet_1acddade8d5567569047033c9fa7d49294" kind="function"><name>AdjustTupletsY</name></member>
+    <member refid="classvrv_1_1_tuplet_1a0bddfd9ad55b891a0956d9adefb90080" kind="function"><name>AdjustTupletWithSlurs</name></member>
     <member refid="classvrv_1_1_tuplet_1a6c56e4cdd6c928c51b10e9d6d8cde2f8" kind="function"><name>ResetHorizontalAlignment</name></member>
+    <member refid="classvrv_1_1_tuplet_1a5a8e94ae1408bc73540635c567ed70cb" kind="function"><name>ResetVerticalAlignment</name></member>
     <member refid="classvrv_1_1_tuplet_1ad40db781233d1b68bf74f965e39aa79c" kind="function"><name>ResetData</name></member>
     <member refid="classvrv_1_1_tuplet_1a4fc681cc5988aac3eb351d356b2b2fe4" kind="function"><name>FilterList</name></member>
     <member refid="classvrv_1_1_tuplet_1ade9e3b5c2b954f0d8eb792729c591944" kind="function"><name>AdjustTupletBracketY</name></member>
