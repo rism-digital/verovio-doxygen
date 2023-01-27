@@ -69,7 +69,6 @@ var classvrv_1_1_toolkit =
     [ "SetOutputTo", "classvrv_1_1_toolkit.html#a765716f5361637b41914ee6b74e39ac7", null ],
     [ "SetResourcePath", "classvrv_1_1_toolkit.html#aed5c67aae6d92d7c8d1d68edf5a5ae65", null ],
     [ "SetScale", "classvrv_1_1_toolkit.html#a53b48c97c58b0da6e6083193ebd966e4", null ],
-    [ "SkipLayoutOnLoad", "group__nodoc.html#ga719475b03b0dfe2b1c49da4cb9c2d643", null ],
     [ "ValidatePAE", "classvrv_1_1_toolkit.html#a7311cd71df650b10f1ce75e037b49268", null ],
     [ "ValidatePAEFile", "classvrv_1_1_toolkit.html#a00a6268261b17ac90ba802ea9780e2df", null ]
 ];

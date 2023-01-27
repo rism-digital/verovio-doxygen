@@ -9,6 +9,5 @@ var group__nodoc =
     [ "InitClock", "group__nodoc.html#ga3eb22488f8037f75c5d950271e0d9ad3", null ],
     [ "RenderToDeviceContext", "group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d", null ],
     [ "SetCString", "group__nodoc.html#ga7d77de8b102acd2f07f0fa23270f82a5", null ],
-    [ "SetHumdrumBuffer", "group__nodoc.html#ga5ae3fb587d96567263bfebc1261ff4d9", null ],
-    [ "SkipLayoutOnLoad", "group__nodoc.html#ga719475b03b0dfe2b1c49da4cb9c2d643", null ]
+    [ "SetHumdrumBuffer", "group__nodoc.html#ga5ae3fb587d96567263bfebc1261ff4d9", null ]
 ];
