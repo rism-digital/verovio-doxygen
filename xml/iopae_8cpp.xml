@@ -3592,7 +3592,7 @@
 <codeline lineno="2449"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="2450"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Before<sp/>we<sp/>clear<sp/>the<sp/>pae<sp/>list<sp/>of<sp/>tokens,<sp/>we<sp/>need<sp/>to<sp/>delete<sp/>all<sp/>token<sp/>objects.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2451"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Normally,<sp/>they<sp/>should<sp/>be<sp/>none<sp/>because<sp/>they<sp/>are<sp/>passed<sp/>to<sp/>the<sp/>doc.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2452"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="2452"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="2453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!token.m_object<sp/>||<sp/>token.IsContainerEnd())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="2454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LogDebug(</highlight><highlight class="stringliteral">&quot;Delete<sp/>token<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>token.m_object-&gt;GetClassName().c_str());</highlight></codeline>
 <codeline lineno="2455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>token.m_object;</highlight></codeline>
@@ -3682,7 +3682,7 @@
 <codeline lineno="2539"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="2540"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>long<sp/>incipits<sp/>or<sp/>to<sp/>see<sp/>full<sp/>class<sp/>name</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2541"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vertical)<sp/>{</highlight></codeline>
-<codeline lineno="2542"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="2542"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="2543"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c1<sp/>=<sp/>(token.m_char)<sp/>?<sp/>token.m_char<sp/>:<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="2544"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c2<sp/>=<sp/>(token.m_inputChar)<sp/>?<sp/>token.m_inputChar<sp/>:<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="2545"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>className<sp/>=<sp/>(token.m_object)<sp/>?<sp/>token.m_object-&gt;GetClassName()<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
@@ -3692,7 +3692,7 @@
 <codeline lineno="2549"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2550"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="2551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>row;</highlight></codeline>
-<codeline lineno="2552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="2552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="2553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>(token.m_inputChar)<sp/>?<sp/>token.m_inputChar<sp/>:<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="2554"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>row.push_back(c);</highlight></codeline>
 <codeline lineno="2555"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -3700,20 +3700,20 @@
 <codeline lineno="2557"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LogDebug(row.c_str());</highlight></codeline>
 <codeline lineno="2558"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_hasErrors)<sp/>{</highlight></codeline>
 <codeline lineno="2559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>row.clear();</highlight></codeline>
-<codeline lineno="2560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="2560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="2561"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>(token.m_isError)<sp/>?<sp/></highlight><highlight class="charliteral">&apos;^&apos;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="2562"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>row.push_back(c);</highlight></codeline>
 <codeline lineno="2563"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2564"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LogDebug(row.c_str());</highlight></codeline>
 <codeline lineno="2565"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2566"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>row.clear();</highlight></codeline>
-<codeline lineno="2567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="2567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="2568"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>className<sp/>=<sp/>(token.m_object)<sp/>?<sp/>token.m_object-&gt;GetClassName()<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="2569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>row.push_back(className.at(0));</highlight></codeline>
 <codeline lineno="2570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2571"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LogDebug(row.c_str());</highlight></codeline>
 <codeline lineno="2572"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>row.clear();</highlight></codeline>
-<codeline lineno="2573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="2573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="2574"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>(token.m_char)<sp/>?<sp/>token.m_char<sp/>:<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="2575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>row.push_back(c);</highlight></codeline>
 <codeline lineno="2576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -3765,7 +3765,7 @@
 <codeline lineno="2622"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2623"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PAEInput::PrepareInsertion(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>position,<sp/>std::list&lt;pae::Token&gt;<sp/>&amp;insertion)</highlight></codeline>
 <codeline lineno="2624"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="2625"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>insertion)<sp/>{</highlight></codeline>
+<codeline lineno="2625"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>insertion)<sp/>{</highlight></codeline>
 <codeline lineno="2626"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>token.m_position<sp/>=<sp/>position;</highlight></codeline>
 <codeline lineno="2627"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.m_object)<sp/>{</highlight></codeline>
 <codeline lineno="2628"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>token.m_object<sp/>=<sp/>token.m_object-&gt;Clone();</highlight></codeline>
@@ -4129,7 +4129,7 @@
 <codeline lineno="2986"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>meterSig,<sp/>used<sp/>to<sp/>calculate<sp/>the<sp/>tstamp2<sp/>for<sp/>open<sp/>ties</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2987"><highlight class="normal"><sp/><sp/><sp/><sp/>MeterSig<sp/>*currentMeterSig<sp/>=<sp/>&amp;m_meterSig;</highlight></codeline>
 <codeline lineno="2988"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2989"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="2989"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="2990"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="2991"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2992"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Double<sp/>check<sp/>that<sp/>we<sp/>don&apos;t<sp/>have<sp/>more<sp/>than<sp/>the<sp/>layer<sp/>on<sp/>the<sp/>layerStack</highlight><highlight class="normal"></highlight></codeline>
@@ -4267,7 +4267,7 @@
 <codeline lineno="3124"><highlight class="normal"><sp/><sp/><sp/><sp/>pae::Token<sp/>*keySigToken<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="3125"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>paeStr;</highlight></codeline>
 <codeline lineno="3126"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="3127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="3128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="3129"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.m_char<sp/>==<sp/>pae::KEYSIG_START)<sp/>{</highlight></codeline>
@@ -4305,7 +4305,7 @@
 <codeline lineno="3162"><highlight class="normal"><sp/><sp/><sp/><sp/>pae::Token<sp/>*clefToken<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="3163"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>paeStr;</highlight></codeline>
 <codeline lineno="3164"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="3165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="3166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="3167"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.m_char<sp/>==<sp/>pae::CLEF_START)<sp/>{</highlight></codeline>
@@ -4343,7 +4343,7 @@
 <codeline lineno="3200"><highlight class="normal"><sp/><sp/><sp/><sp/>pae::Token<sp/>*meterSigOrMensurToken<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="3201"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>paeStr;</highlight></codeline>
 <codeline lineno="3202"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="3203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="3204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="3205"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.m_char<sp/>==<sp/>pae::METERSIG_START)<sp/>{</highlight></codeline>
@@ -4392,7 +4392,7 @@
 <codeline lineno="3249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>measureCount<sp/>is<sp/>currently<sp/>ignored<sp/>by<sp/>the<sp/>Measure<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>measureCount<sp/>=<sp/>1;</highlight></codeline>
 <codeline lineno="3251"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="3252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="3253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="3254"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>the<sp/>first<sp/>(default)<sp/>measure<sp/>added<sp/>to<sp/>the<sp/>tokens<sp/>::Import</highlight><highlight class="normal"></highlight></codeline>
@@ -4587,7 +4587,7 @@
 <codeline lineno="3444"><highlight class="normal"><sp/><sp/><sp/><sp/>pae::Token<sp/>*mRestOrMultiRestToken<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="3445"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>paeStr;</highlight></codeline>
 <codeline lineno="3446"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3447"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="3447"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="3448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="3449"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.m_char<sp/>==<sp/></highlight><highlight class="charliteral">&apos;=&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
@@ -4628,7 +4628,7 @@
 <codeline lineno="3485"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3486"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>PAEInput::ConvertPitch()</highlight></codeline>
 <codeline lineno="3487"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="3488"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="3488"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="3489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="3490"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;Is(token,<sp/>pae::NOTENAME))<sp/>{</highlight></codeline>
@@ -4658,7 +4658,7 @@
 <codeline lineno="3515"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>oct<sp/>=<sp/>4;</highlight></codeline>
 <codeline lineno="3516"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>readingOct<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="3517"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3518"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="3518"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="3519"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="3520"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3521"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.m_char<sp/>==<sp/>pae::OCTAVEUP)<sp/>{</highlight></codeline>
@@ -4703,7 +4703,7 @@
 <codeline lineno="3560"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="3561"><highlight class="normal"><sp/><sp/><sp/><sp/>Object<sp/>*note<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="3562"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3563"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="3563"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="3564"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="3565"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3566"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Keep<sp/>a<sp/>pointer<sp/>and<sp/>simply<sp/>continue</highlight><highlight class="normal"></highlight></codeline>
@@ -4743,7 +4743,7 @@
 <codeline lineno="3600"><highlight class="normal"><sp/><sp/><sp/><sp/>pae::Token<sp/>*fermataToken<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="3601"><highlight class="normal"><sp/><sp/><sp/><sp/>Object<sp/>*fermataTarget<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="3602"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3603"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="3603"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="3604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="3605"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.m_char<sp/>==<sp/></highlight><highlight class="charliteral">&apos;(&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
@@ -4806,7 +4806,7 @@
 <codeline lineno="3663"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="3664"><highlight class="normal"><sp/><sp/><sp/><sp/>data_ACCIDENTAL_WRITTEN<sp/>accidental<sp/>=<sp/>ACCIDENTAL_WRITTEN_NONE;</highlight></codeline>
 <codeline lineno="3665"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3666"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="3666"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="3667"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="3668"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3669"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;Is(token,<sp/>pae::ACCIDENTAL_INTERNAL))<sp/>{</highlight></codeline>
@@ -4845,7 +4845,7 @@
 <codeline lineno="3702"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3703"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>PAEInput::ConvertRest()</highlight></codeline>
 <codeline lineno="3704"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="3705"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="3705"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="3706"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="3707"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3708"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.m_char<sp/>==<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
@@ -5040,7 +5040,7 @@
 <codeline lineno="3897"><highlight class="comment"><sp/><sp/><sp/><sp/>//<sp/>Do<sp/>a<sp/>first<sp/>loop<sp/>to<sp/>change<sp/>&apos;qq&apos;<sp/>to<sp/>&apos;Q&apos;<sp/>for<sp/>eaiser<sp/>grace<sp/>groups<sp/>detection</highlight></codeline>
 <codeline lineno="3898"><highlight class="comment"><sp/><sp/><sp/><sp/>pae::Token<sp/>*graceGrpToken<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="3899"><highlight class="comment"></highlight></codeline>
-<codeline lineno="3900"><highlight class="comment"><sp/><sp/><sp/><sp/>for<sp/>(auto<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="3900"><highlight class="comment"><sp/><sp/><sp/><sp/>for<sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="3901"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(token.IsVoid())<sp/>continue;</highlight></codeline>
 <codeline lineno="3902"><highlight class="comment"></highlight></codeline>
 <codeline lineno="3903"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(token.m_char<sp/>==<sp/>&apos;q&apos;)<sp/>{</highlight></codeline>
@@ -5116,7 +5116,7 @@
 <codeline lineno="3973"><highlight class="normal"><sp/><sp/><sp/><sp/>pae::Token<sp/>*graceToken<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="3974"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isAcciaccatura<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="3975"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3976"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="3976"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="3977"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="3978"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3979"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;Is(token,<sp/>pae::GRACE))<sp/>{</highlight></codeline>
@@ -5365,7 +5365,7 @@
 <codeline lineno="4222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>pointer<sp/>to<sp/>the<sp/>token<sp/>be<sp/>able<sp/>to<sp/>reset<sp/>it<sp/>to<sp/>&apos;+&apos;<sp/>in<sp/>mensural<sp/>notation</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4223"><highlight class="normal"><sp/><sp/><sp/><sp/>pae::Token<sp/>*tieToken<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="4224"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="4225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="4226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="4227"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.Is(NOTE))<sp/>{</highlight></codeline>
@@ -5541,7 +5541,7 @@
 <codeline lineno="4398"><highlight class="normal"><sp/><sp/><sp/><sp/>Note<sp/>*lastNote<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="4399"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>data_ACCIDENTAL_WRITTEN&gt;<sp/>ties;</highlight></codeline>
 <codeline lineno="4400"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4401"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="4401"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="4402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="4403"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.Is(KEYSIG))<sp/>{</highlight></codeline>
@@ -5626,7 +5626,7 @@
 <codeline lineno="4483"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!isValid<sp/>&amp;&amp;<sp/>checkCount<sp/>&lt;<sp/>5)<sp/>{</highlight></codeline>
 <codeline lineno="4484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>checkCount++;</highlight></codeline>
 <codeline lineno="4485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isValid<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="4486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="4486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="4487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid())<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="4488"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!token.m_object)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
@@ -5744,7 +5744,7 @@
 <codeline lineno="4601"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PAEInput::RemoveContainerToken(Object<sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="4602"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="4603"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>deleted<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="4604"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
+<codeline lineno="4604"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(pae::Token<sp/>&amp;token<sp/>:<sp/>m_pae)<sp/>{</highlight></codeline>
 <codeline lineno="4605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.IsVoid()<sp/>||<sp/>!token.m_object)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="4606"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(token.m_object<sp/>==<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
@@ -5780,7 +5780,7 @@
 <codeline lineno="4637"><highlight class="normal"><sp/><sp/><sp/><sp/>enclosedAccids.resize(7);</highlight></codeline>
 <codeline lineno="4638"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cancel<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="4639"><highlight class="normal"><sp/><sp/><sp/><sp/>data_ACCIDENTAL_WRITTEN<sp/>alterationType<sp/>=<sp/>ACCIDENTAL_WRITTEN_NONE;</highlight></codeline>
-<codeline lineno="4640"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>c<sp/>:<sp/>paeStr)<sp/>{</highlight></codeline>
+<codeline lineno="4640"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c<sp/>:<sp/>paeStr)<sp/>{</highlight></codeline>
 <codeline lineno="4641"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(c)<sp/>{</highlight></codeline>
 <codeline lineno="4642"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;b&apos;</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="4643"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>altNumber<sp/>=<sp/>0;</highlight></codeline>
