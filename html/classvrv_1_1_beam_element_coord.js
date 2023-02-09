@@ -2,7 +2,7 @@ var classvrv_1_1_beam_element_coord =
 [
     [ "BeamElementCoord", "classvrv_1_1_beam_element_coord.html#a3d4c541e6a6640a5a9df1ac50db27bb2", null ],
     [ "~BeamElementCoord", "classvrv_1_1_beam_element_coord.html#ad39a98a648db43efa4ae8d382d95d06d", null ],
-    [ "CalculateStemLength", "classvrv_1_1_beam_element_coord.html#a2d28e6f4393f9d61fb6ac136ee56f024", null ],
+    [ "CalculateStemLength", "classvrv_1_1_beam_element_coord.html#a1c6114787f017c6fbf9806d3bb64c05c", null ],
     [ "CalculateStemLengthTab", "classvrv_1_1_beam_element_coord.html#a027f4c152d623e5cd81c3f659d15ac05", null ],
     [ "CalculateStemModAdjustment", "classvrv_1_1_beam_element_coord.html#ae2413c9f9e24d8829395823ffa2ed51c", null ],
     [ "GetStemDir", "classvrv_1_1_beam_element_coord.html#ab840311185d74d49af8357f0d2909db6", null ],

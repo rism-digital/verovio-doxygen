@@ -282,10 +282,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="442" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_element_coord_1a2d28e6f4393f9d61fb6ac136ee56f024" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_element_coord_1a1c6114787f017c6fbf9806d3bb64c05c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int vrv::BeamElementCoord::CalculateStemLength</definition>
-        <argsstring>(const Staff *staff, data_STEMDIRECTION stemDir, bool isHorizontal) const</argsstring>
+        <argsstring>(const Staff *staff, data_STEMDIRECTION stemDir, bool isHorizontal, int preferredDur) const</argsstring>
         <name>CalculateStemLength</name>
         <param>
           <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
@@ -299,8 +299,12 @@
           <type>bool</type>
           <declname>isHorizontal</declname>
         </param>
+        <param>
+          <type>int</type>
+          <declname>preferredDur</declname>
+        </param>
         <briefdescription>
-<para>Heleper for calculating the stem length for staff notation and tablature beams within the staff. </para>
+<para>Helper for calculating the stem length for staff notation and tablature beams within the staff. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -879,7 +883,7 @@
     <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="413" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="413" bodyend="482"/>
     <listofallmembers>
       <member refid="classvrv_1_1_beam_element_coord_1a3d4c541e6a6640a5a9df1ac50db27bb2" prot="public" virt="non-virtual"><scope>vrv::BeamElementCoord</scope><name>BeamElementCoord</name></member>
-      <member refid="classvrv_1_1_beam_element_coord_1a2d28e6f4393f9d61fb6ac136ee56f024" prot="public" virt="non-virtual"><scope>vrv::BeamElementCoord</scope><name>CalculateStemLength</name></member>
+      <member refid="classvrv_1_1_beam_element_coord_1a1c6114787f017c6fbf9806d3bb64c05c" prot="public" virt="non-virtual"><scope>vrv::BeamElementCoord</scope><name>CalculateStemLength</name></member>
       <member refid="classvrv_1_1_beam_element_coord_1a027f4c152d623e5cd81c3f659d15ac05" prot="public" virt="non-virtual"><scope>vrv::BeamElementCoord</scope><name>CalculateStemLengthTab</name></member>
       <member refid="classvrv_1_1_beam_element_coord_1ae2413c9f9e24d8829395823ffa2ed51c" prot="public" virt="non-virtual"><scope>vrv::BeamElementCoord</scope><name>CalculateStemModAdjustment</name></member>
       <member refid="classvrv_1_1_beam_element_coord_1ab840311185d74d49af8357f0d2909db6" prot="public" virt="non-virtual"><scope>vrv::BeamElementCoord</scope><name>GetStemDir</name></member>
