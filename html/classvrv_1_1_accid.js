@@ -3,12 +3,9 @@ var classvrv_1_1_accid =
     [ "Accid", "classvrv_1_1_accid.html#a385ef85fbb09ef0fb17791e154ce1c3b", null ],
     [ "~Accid", "classvrv_1_1_accid.html#a3014327e53837ca3afae02ebd1766006", null ],
     [ "AdjustToLedgerLines", "classvrv_1_1_accid.html#a1329822edff3aec1913ce46bc597af55", null ],
-    [ "AdjustX", "classvrv_1_1_accid.html#aefabfa88f91592f0877541df777713cf", null ],
+    [ "AdjustX", "classvrv_1_1_accid.html#a76fd42528da09e5db02ea21618989991", null ],
     [ "Clone", "classvrv_1_1_accid.html#aa23814fce06c244b5a2b940fc6b06457", null ],
     [ "GetClassName", "classvrv_1_1_accid.html#af2ac3ba952104184ee82b2434e5d431f", null ],
-    [ "GetDrawingOctave", "classvrv_1_1_accid.html#a16e0c153da4da6a7c2267a247fe5b851", null ],
-    [ "GetDrawingOctaveAccid", "classvrv_1_1_accid.html#a210b58c7d09e02051fcf66332f3b4070", null ],
-    [ "GetDrawingOctaveAccid", "classvrv_1_1_accid.html#a24e839802f802459794264a5a2d7c006", null ],
     [ "GetDrawingUnisonAccid", "classvrv_1_1_accid.html#ad535e459f62badbc539cc1daad3a4476", null ],
     [ "GetDrawingUnisonAccid", "classvrv_1_1_accid.html#a7739d3e359555b4f9a166f83437a0e32", null ],
     [ "GetPositionInterface", "classvrv_1_1_accid.html#a480094a5b06d0c0f26273a84b64ee68a", null ],
@@ -21,7 +18,5 @@ var classvrv_1_1_accid =
     [ "Reset", "classvrv_1_1_accid.html#a7999212141783ba58dee1b18585c54fe", null ],
     [ "ResetData", "classvrv_1_1_accid.html#a2d5d4b4d7130b639bb2bdc2e50d33b46", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_accid.html#a718aba950d2c110af324f9356ab1ec4a", null ],
-    [ "SetDrawingOctave", "classvrv_1_1_accid.html#a4cb3352991cd14e4289e0a4c71c247ee", null ],
-    [ "SetDrawingOctaveAccid", "classvrv_1_1_accid.html#a7f576b52c610c48fbe26aeb7fa5c86e1", null ],
     [ "SetDrawingUnisonAccid", "classvrv_1_1_accid.html#a97a11c75ccda23d82ebc1d272f280a71", null ]
 ];

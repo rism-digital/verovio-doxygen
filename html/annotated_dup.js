@@ -4,6 +4,7 @@ var annotated_dup =
       [ "Abbr", "classvrv_1_1_abbr.html", "classvrv_1_1_abbr" ],
       [ "ABCInput", "classvrv_1_1_a_b_c_input.html", "classvrv_1_1_a_b_c_input" ],
       [ "Accid", "classvrv_1_1_accid.html", "classvrv_1_1_accid" ],
+      [ "AccidOctaveSort", "classvrv_1_1_accid_octave_sort.html", "classvrv_1_1_accid_octave_sort" ],
       [ "AccidSpaceSort", "classvrv_1_1_accid_space_sort.html", "classvrv_1_1_accid_space_sort" ],
       [ "Add", "classvrv_1_1_add.html", "classvrv_1_1_add" ],
       [ "AddLayerElementToFlatListParams", "classvrv_1_1_add_layer_element_to_flat_list_params.html", "classvrv_1_1_add_layer_element_to_flat_list_params" ],
