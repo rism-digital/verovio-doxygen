@@ -23,6 +23,7 @@ var classvrv_1_1_doc =
     [ "GenerateFooter", "classvrv_1_1_doc.html#a0347725af90af5972681ce8a6f82c209", null ],
     [ "GenerateHeader", "classvrv_1_1_doc.html#a1d4bc05da1139a74390eafda43eb991d", null ],
     [ "GenerateMeasureNumbers", "classvrv_1_1_doc.html#aa94a58d50fbe08a45b813503678bb4ac", null ],
+    [ "GenerateMEIHeader", "classvrv_1_1_doc.html#a808dc05f3c7f8087dd99071d90e4b991", null ],
     [ "GetAdjustedDrawingPageHeight", "classvrv_1_1_doc.html#a301056a989b90a286ec1f3e745226744", null ],
     [ "GetAdjustedDrawingPageWidth", "classvrv_1_1_doc.html#a71b430700d764832659b7aff1f78a8bd", null ],
     [ "GetBottomMargin", "classvrv_1_1_doc.html#a5f09c6986d723456ba22e01f9eaf95f0", null ],
