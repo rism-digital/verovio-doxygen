@@ -6,6 +6,7 @@
     <includes refid="textdirinterface_8h" local="yes">textdirinterface.h</includes>
     <includes refid="timeinterface_8h" local="yes">timeinterface.h</includes>
     <includes refid="transposition_8h" local="yes">transposition.h</includes>
+    <includedby refid="iohumdrum_8h" local="yes">iohumdrum.h</includedby>
     <incdepgraph>
       <node id="11">
         <label>list</label>
@@ -223,6 +224,18 @@
         </childnode>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>iohumdrum.h</label>
+        <link refid="iohumdrum_8h_source"/>
+      </node>
+      <node id="1">
+        <label>harm.h</label>
+        <link refid="harm_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
     <innerclass refid="classvrv_1_1_harm" prot="public">vrv::Harm</innerclass>
     <innernamespace refid="namespacevrv">vrv</innernamespace>
     <briefdescription>

@@ -344,6 +344,9 @@ var hierarchy =
     [ "AttHairpinVis", null, [
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ]
     ] ],
+    [ "AttHarmonicFunction", null, [
+      [ "vrv::Note", "classvrv_1_1_note.html", null ]
+    ] ],
     [ "AttHeight", null, [
       [ "vrv::Graphic", "classvrv_1_1_graphic.html", null ]
     ] ],
