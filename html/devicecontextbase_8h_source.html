@@ -278,8 +278,8 @@ $(document).ready(function(){initNavTree('devicecontextbase_8h_source.html','');
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_point.html">Point</a> &amp;p)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == p); }</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">// arithmetic operations (component wise)</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> operator+(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_point.html">Point</a> &amp;p)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classvrv_1_1_point.html">Point</a>(x + p.x, y + p.y); }</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> operator-(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_point.html">Point</a> &amp;p)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classvrv_1_1_point.html">Point</a>(x - p.x, y - p.y); }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> operator+(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_point.html">Point</a> &amp;p)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> { x + p.x, y + p.y }; }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> operator-(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_point.html">Point</a> &amp;p)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> { x - p.x, y - p.y }; }</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> &amp;operator+=(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_point.html">Point</a> &amp;p)</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    {</div>
@@ -294,20 +294,20 @@ $(document).ready(function(){initNavTree('devicecontextbase_8h_source.html','');
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> operator-()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classvrv_1_1_point.html">Point</a>(-x, -y); }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> operator-()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> { -x, -y }; }</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> min(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_point.html">Point</a> &amp;p)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordtype">int</span> x = std::min(this-&gt;x, p.x);</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordtype">int</span> y = std::min(this-&gt;y, p.y);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classvrv_1_1_point.html">Point</a>(x, y);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">return</span> { x, y };</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    }</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> max(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_point.html">Point</a> &amp;p)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordtype">int</span> x = std::max(this-&gt;x, p.x);</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordtype">int</span> y = std::max(this-&gt;y, p.y);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classvrv_1_1_point.html">Point</a>(x, y);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">return</span> { x, y };</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;};</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
@@ -326,7 +326,7 @@ $(document).ready(function(){initNavTree('devicecontextbase_8h_source.html','');
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <a class="code" href="classvrv_1_1_bezier_curve.html">BezierCurve</a>() {}</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <a class="code" href="classvrv_1_1_bezier_curve.html">BezierCurve</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_point.html">Point</a> &amp;p1, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_point.html">Point</a> &amp;c1, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_point.html">Point</a> &amp;c2, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_point.html">Point</a> &amp;p2) : p1(p1), c1(c1), c2(c2), p2(p2) {}</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="comment">// Helper to rotate all points within bezier curve around @rotationPoint by @angle</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="comment">// Helper to rotate all points within bezier curve around \@rotationPoint by \@angle</span></div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordtype">void</span> Rotate(<span class="keywordtype">float</span> angle, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_point.html">Point</a> &amp;rotationPoint);</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordtype">void</span> SetControlOffset(<span class="keywordtype">int</span> offset) { m_leftControlOffset = m_rightControlOffset = offset; }</div>
@@ -396,7 +396,7 @@ $(document).ready(function(){initNavTree('devicecontextbase_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>devicecontextbase.h</b></li>
-    <li class="footer">Generated on Fri Dec 23 2022 07:01:53 for Verovio by
+    <li class="footer">Generated on Wed Mar 1 2023 08:22:20 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

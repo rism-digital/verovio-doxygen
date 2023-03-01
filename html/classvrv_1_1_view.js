@@ -124,7 +124,6 @@ var classvrv_1_1_view =
     [ "DrawReh", "classvrv_1_1_view.html#aae4080234b5771317d0775f688d2c6d3", null ],
     [ "DrawRend", "classvrv_1_1_view.html#a84c4cb4dcac5576f127a73bfc7f7330d", null ],
     [ "DrawRest", "classvrv_1_1_view.html#af3bc479b7cddc1efbaa2ea086a4fd952", null ],
-    [ "DrawRoundedLine", "classvrv_1_1_view.html#ae1b2bd8525e769cd2053d61dd32e0562", null ],
     [ "DrawRunningChildren", "classvrv_1_1_view.html#a4acef75669fa57ae67c8ef80c0bdd61a", null ],
     [ "DrawRunningEditorialElement", "classvrv_1_1_view.html#a7b51ad54172cbe0e6499e1263de07a7b", null ],
     [ "DrawRunningElements", "classvrv_1_1_view.html#ad9217a906f0c2100805fd2bc27217c7f", null ],

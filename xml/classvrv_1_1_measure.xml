@@ -1217,13 +1217,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/measure.h" line="175" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/measure.h" bodystart="175" bodyend="175"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_measure_1adef8072094be1a59d9cec910d74a2945" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_measure_1a84bcb7a7885e9fb83e85498f43ee36c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int vrv::Measure::CalculateRightBarLineWidth</definition>
-        <argsstring>(Doc *doc, int staffSize)</argsstring>
+        <argsstring>(const Doc *doc, int staffSize) const</argsstring>
         <name>CalculateRightBarLineWidth</name>
         <param>
-          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
           <declname>doc</declname>
         </param>
         <param>
@@ -2352,6 +2352,7 @@
       <member refid="classvrv_1_1_object_1ad431f1654f303456e7c8f2d285e4f650" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>AdjustTupletNumOverlap</name></member>
       <member refid="classvrv_1_1_object_1a59773566ac731e75fa34166fa1d78aa3" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>AdjustTupletsX</name></member>
       <member refid="classvrv_1_1_object_1a80bc658bb972eabcee2d0aa536386cfc" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>AdjustTupletsY</name></member>
+      <member refid="classvrv_1_1_object_1ae9bf4c7655baf1d3f774efc99ebebb9a" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>AdjustTupletWithSlurs</name></member>
       <member refid="classvrv_1_1_measure_1ac4084dc35d764d95e805b6dffc03f448" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>AdjustXOverflow</name></member>
       <member refid="classvrv_1_1_object_1ae373581b24540ce6c308bd86ccca6e93" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>AdjustXOverflowEnd</name></member>
       <member refid="classvrv_1_1_measure_1a4434327b74a58e031356884784a34df5" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>AdjustXPos</name></member>
@@ -2397,7 +2398,7 @@
       <member refid="classvrv_1_1_object_1a3e00929935e3c3a646767efa319b5c2c" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>CalcSpanningBeamSpans</name></member>
       <member refid="classvrv_1_1_object_1a0b93f8b6e02c8ba98a03db67fe5d5d10" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>CalcStem</name></member>
       <member refid="classvrv_1_1_bounding_box_1a8fdd811aefcb373533b9cc2795aa04dd" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>CalcThickBezier</name></member>
-      <member refid="classvrv_1_1_measure_1adef8072094be1a59d9cec910d74a2945" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>CalculateRightBarLineWidth</name></member>
+      <member refid="classvrv_1_1_measure_1a84bcb7a7885e9fb83e85498f43ee36c2" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>CalculateRightBarLineWidth</name></member>
       <member refid="classvrv_1_1_measure_1a4c793218b22e82d580df2b74b04dfdf4" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>CastOffEncoding</name></member>
       <member refid="classvrv_1_1_object_1af4bdf6d63a5fbf43a21a5c18d3c49a10" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>CastOffPages</name></member>
       <member refid="classvrv_1_1_object_1ad2a435d1dd9a270785fca7cab265adba" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>CastOffPagesEnd</name></member>
@@ -2454,9 +2455,9 @@
       <member refid="classvrv_1_1_object_1a7c792936ed7e04d00172c7b0017b85a1" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>FindPreviousChildByComparison</name></member>
       <member refid="classvrv_1_1_measure_1a95de9c344cc5bc87366ffe3565eb716d" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>FindSpannedLayerElements</name></member>
       <member refid="classvrv_1_1_object_1a7ced59f27507ee81372cc12d7f57c8e0" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>GenerateFeatures</name></member>
+      <member refid="classvrv_1_1_object_1ab61ec322562aee0247f49e9fb008a448" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GenerateHashID</name></member>
       <member refid="classvrv_1_1_measure_1a5947d2e09adb3e9b23850c1b84a50b94" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>GenerateMIDI</name></member>
       <member refid="classvrv_1_1_object_1a7c0a63c225e76daa84e102b7d531d645" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>GenerateMIDIEnd</name></member>
-      <member refid="classvrv_1_1_object_1adef7d8ebf6bbb0b9bea78a608c161791" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>GenerateRandID</name></member>
       <member refid="classvrv_1_1_measure_1a0403180f17b62775fbf85df2a92fe62a" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>GenerateTimemap</name></member>
       <member refid="classvrv_1_1_object_1a389c0c7f2a9e74b340c44dbc68e7e886" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>GetAlignmentLeftRight</name></member>
       <member refid="classvrv_1_1_object_1a802e613f29ccc215de5768b4e6d0b9d0" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>GetAltSymInterface</name></member>
@@ -2610,6 +2611,7 @@
       <member refid="classvrv_1_1_object_1a1f38d88b64a7f79bfea9303a16c1f556" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>HasDescendant</name></member>
       <member refid="classvrv_1_1_object_1ac9dd387934b8960b47b96a0c05bb1b84" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>HasEditorialContent</name></member>
       <member refid="classvrv_1_1_bounding_box_1a1dfd7207c5f8431bcb56c88b5c469992" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>HasEmptyBB</name></member>
+      <member refid="classvrv_1_1_object_1a3eed2cd64bee454f550e6fa22995dafe" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>Hash</name></member>
       <member refid="classvrv_1_1_object_1a1639642ba9433617ec04608f2d2570bb" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>HasInterface</name></member>
       <member refid="classvrv_1_1_measure_1ad58b70aabbd1ea6dcfa17e11c3b8ae13" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>HasInvisibleStaffBarlines</name></member>
       <member refid="classvrv_1_1_object_1ae0d0368a66d1c4b590b311a1a94eb717" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>HasNonEditorialContent</name></member>
@@ -2754,7 +2756,7 @@
       <member refid="classvrv_1_1_object_1a87d360889455b91b9979b6866d499767" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>ScoreDefSetCurrentPageEnd</name></member>
       <member refid="classvrv_1_1_object_1a71c3367e232d634a71c2d346dfd9f3d1" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>ScoreDefSetGrpSym</name></member>
       <member refid="classvrv_1_1_measure_1a6f43dc071bc473cad84f75d5bfa13c32" prot="public" virt="virtual"><scope>vrv::Measure</scope><name>ScoreDefUnsetCurrent</name></member>
-      <member refid="classvrv_1_1_object_1a9aad68e2f4f0edf8bf413a2a5f727f1b" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>SeedID</name></member>
+      <member refid="classvrv_1_1_object_1aa8fa10c3b5d07eec119fe0d73aa9b6ab" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>SeedID</name></member>
       <member refid="classvrv_1_1_measure_1afa31de9cad0b7b2b382207d79e86162d" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>SelectDrawingBarLines</name></member>
       <member refid="classvrv_1_1_object_1a9bc335e3bc5405f5dbaae757b5629996" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>SetAsReferenceObject</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7eccd9ca1e458dccab9c6b9fb7a24ec4" prot="public" virt="non-virtual"><scope>vrv::Measure</scope><name>SetBoundingBoxGlyph</name></member>

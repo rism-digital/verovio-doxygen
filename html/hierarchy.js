@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "vrv::AccidOctaveSort", "classvrv_1_1_accid_octave_sort.html", null ],
     [ "vrv::AccidSpaceSort", "classvrv_1_1_accid_space_sort.html", null ],
     [ "vrv::AdjustXPosAlignmentOffset", "classvrv_1_1_adjust_x_pos_alignment_offset.html", null ],
     [ "AttAccidental", null, [
@@ -167,9 +168,6 @@ var hierarchy =
     ] ],
     [ "AttColoration", null, [
       [ "vrv::Note", "classvrv_1_1_note.html", null ]
-    ] ],
-    [ "AttConverter", null, [
-      [ "vrv::Att", "classvrv_1_1_att.html", null ]
     ] ],
     [ "AttCoordinated", null, [
       [ "vrv::Surface", "classvrv_1_1_surface.html", null ],
@@ -346,6 +344,9 @@ var hierarchy =
     [ "AttHairpinVis", null, [
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ]
     ] ],
+    [ "AttHarmonicFunction", null, [
+      [ "vrv::Note", "classvrv_1_1_note.html", null ]
+    ] ],
     [ "AttHeight", null, [
       [ "vrv::Graphic", "classvrv_1_1_graphic.html", null ]
     ] ],
@@ -499,6 +500,7 @@ var hierarchy =
       [ "vrv::Note", "classvrv_1_1_note.html", null ]
     ] ],
     [ "AttMmTempo", null, [
+      [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ],
       [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ]
     ] ],
     [ "AttMordentLog", null, [
@@ -956,12 +958,6 @@ var hierarchy =
     [ "vrv::ControlPointAdjustment", "structvrv_1_1_control_point_adjustment.html", null ],
     [ "vrv::ControlPointConstraint", "structvrv_1_1_control_point_constraint.html", null ],
     [ "vrv::CurveSpannedElement", "classvrv_1_1_curve_spanned_element.html", null ],
-    [ "vrv::data_FONTSIZE", "classvrv_1_1data___f_o_n_t_s_i_z_e.html", null ],
-    [ "vrv::data_LINEWIDTH", "classvrv_1_1data___l_i_n_e_w_i_d_t_h.html", null ],
-    [ "vrv::data_MEASUREMENTSIGNED", "classvrv_1_1data___m_e_a_s_u_r_e_m_e_n_t_s_i_g_n_e_d.html", null ],
-    [ "vrv::data_MIDIVALUE_NAME", "classvrv_1_1data___m_i_d_i_v_a_l_u_e___n_a_m_e.html", null ],
-    [ "vrv::data_MIDIVALUE_PAN", "classvrv_1_1data___m_i_d_i_v_a_l_u_e___p_a_n.html", null ],
-    [ "vrv::data_PLACEMENT", "classvrv_1_1data___p_l_a_c_e_m_e_n_t.html", null ],
     [ "vrv::DeviceContext", "classvrv_1_1_device_context.html", [
       [ "vrv::BBoxDeviceContext", "classvrv_1_1_b_box_device_context.html", null ],
       [ "vrv::SvgDeviceContext", "classvrv_1_1_svg_device_context.html", null ]

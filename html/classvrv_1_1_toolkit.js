@@ -10,7 +10,7 @@ var classvrv_1_1_toolkit =
     [ "GetAvailableOptions", "classvrv_1_1_toolkit.html#a2ca1aa7fcc49d2b8b7717dec136c5e86", null ],
     [ "GetCString", "group__nodoc.html#gac796a10dc83634e04d9b65daf7c6dc4d", null ],
     [ "GetDefaultOptions", "classvrv_1_1_toolkit.html#a33570df5ac75d86628a7db641d83ec8b", null ],
-    [ "GetDescriptiveFeatures", "classvrv_1_1_toolkit.html#a8439ca5ca843438243bee27c14b29d6a", null ],
+    [ "GetDescriptiveFeatures", "classvrv_1_1_toolkit.html#a328bf3cea7ea6b403f929d465db032a8", null ],
     [ "GetElementAttr", "classvrv_1_1_toolkit.html#acde5671467b4de6cacd55e7e8be87e93", null ],
     [ "GetElementsAtTime", "classvrv_1_1_toolkit.html#a4618bafecb91784806f78751ea6b3f42", null ],
     [ "GetExpansionIdsForElement", "classvrv_1_1_toolkit.html#acbd4bf8bb87e10aa286034d8fe204469", null ],
@@ -63,7 +63,6 @@ var classvrv_1_1_toolkit =
     [ "SetOutputTo", "classvrv_1_1_toolkit.html#a765716f5361637b41914ee6b74e39ac7", null ],
     [ "SetResourcePath", "classvrv_1_1_toolkit.html#aed5c67aae6d92d7c8d1d68edf5a5ae65", null ],
     [ "SetScale", "classvrv_1_1_toolkit.html#a53b48c97c58b0da6e6083193ebd966e4", null ],
-    [ "SkipLayoutOnLoad", "group__nodoc.html#ga719475b03b0dfe2b1c49da4cb9c2d643", null ],
     [ "ValidatePAE", "classvrv_1_1_toolkit.html#a7311cd71df650b10f1ce75e037b49268", null ],
     [ "ValidatePAEFile", "classvrv_1_1_toolkit.html#a00a6268261b17ac90ba802ea9780e2df", null ]
 ];

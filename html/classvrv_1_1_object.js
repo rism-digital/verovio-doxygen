@@ -36,6 +36,7 @@ var classvrv_1_1_object =
     [ "AdjustTupletNumOverlap", "classvrv_1_1_object.html#ad431f1654f303456e7c8f2d285e4f650", null ],
     [ "AdjustTupletsX", "classvrv_1_1_object.html#a59773566ac731e75fa34166fa1d78aa3", null ],
     [ "AdjustTupletsY", "classvrv_1_1_object.html#a80bc658bb972eabcee2d0aa536386cfc", null ],
+    [ "AdjustTupletWithSlurs", "classvrv_1_1_object.html#ae9bf4c7655baf1d3f774efc99ebebb9a", null ],
     [ "AdjustXOverflow", "classvrv_1_1_object.html#af18e010dd5e84c10b4c10cfa0636db08", null ],
     [ "AdjustXOverflowEnd", "classvrv_1_1_object.html#ae373581b24540ce6c308bd86ccca6e93", null ],
     [ "AdjustXPos", "classvrv_1_1_object.html#adacbf7e25c213d82303c739fec53828a", null ],

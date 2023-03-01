@@ -110,8 +110,9 @@ Inheritance diagram for vrv::DeviceContext:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a98b03a16d2a3ead9ac3d7e3bafe2490d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_device_context.html#a98b03a16d2a3ead9ac3d7e3bafe2490d">DrawPlaceholder</a> (int x, int y)</td></tr>
-<tr class="memdesc:a98b03a16d2a3ead9ac3d7e3bafe2490d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special method for forcing bounding boxes to be updated Used for invisible elements (e.g.  <a href="classvrv_1_1_device_context.html#a98b03a16d2a3ead9ac3d7e3bafe2490d">More...</a><br /></td></tr>
+<tr class="memitem:a98b03a16d2a3ead9ac3d7e3bafe2490d"><td class="memItemLeft" align="right" valign="top"><a id="a98b03a16d2a3ead9ac3d7e3bafe2490d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_device_context.html#a98b03a16d2a3ead9ac3d7e3bafe2490d">DrawPlaceholder</a> (int x, int y)</td></tr>
+<tr class="memdesc:a98b03a16d2a3ead9ac3d7e3bafe2490d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special method for forcing bounding boxes to be updated Used for invisible elements (e.g., &lt;space&gt;) that needs to be take into account in spacing. <br /></td></tr>
 <tr class="separator:a98b03a16d2a3ead9ac3d7e3bafe2490d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd76f01c9742de3d4a0446f905b1003b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b">UseGlobalStyling</a> ()</td></tr>
 <tr class="memdesc:afd76f01c9742de3d4a0446f905b1003b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method indicating if default global styling is used.  <a href="classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b">More...</a><br /></td></tr>
@@ -419,47 +420,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isDeactivatedY</b><
 <div class="textblock"><p>This class is an abstract device context. </p>
 <p>It enables different types of concrete classes to be implemented. For example: MusWxDC - a wrapper to wxDCs with wxWidgets; <a class="el" href="classvrv_1_1_svg_device_context.html" title="This class implements a drawing context for generating SVG files.">SvgDeviceContext</a> - a non-gui file DC; MusCairoDC - a wrapper to a Cairo surface; The class uses int-based colour encoding (instead of wxColour in wxDC). It uses <a class="el" href="classvrv_1_1_font_info.html" title="This class is store font properties.">FontInfo</a> (instead of wxFont in wxDC). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a98b03a16d2a3ead9ac3d7e3bafe2490d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98b03a16d2a3ead9ac3d7e3bafe2490d">&#9670;&nbsp;</a></span>DrawPlaceholder()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void vrv::DeviceContext::DrawPlaceholder </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Special method for forcing bounding boxes to be updated Used for invisible elements (e.g. </p>
-<p>&lt;space&gt;) that needs to be take into account in spacing </p>
-
-<p>Reimplemented in <a class="el" href="classvrv_1_1_b_box_device_context.html#aecb9534cc060d29f5ce315ce6c252ad4">vrv::BBoxDeviceContext</a>.</p>
-
-</div>
-</div>
 <a id="afd76f01c9742de3d4a0446f905b1003b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd76f01c9742de3d4a0446f905b1003b">&#9670;&nbsp;</a></span>UseGlobalStyling()</h2>
 
@@ -499,7 +459,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isDeactivatedY</b><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_device_context.html">DeviceContext</a></li>
-    <li class="footer">Generated on Fri Dec 23 2022 07:01:55 for Verovio by
+    <li class="footer">Generated on Wed Mar 1 2023 08:22:22 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

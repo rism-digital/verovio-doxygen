@@ -1,29 +1,53 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="lb_8h" kind="file" language="C++">
     <compoundname>lb.h</compoundname>
     <includes local="yes">atts_shared.h</includes>
     <includes refid="textelement_8h" local="yes">textelement.h</includes>
     <incdepgraph>
-      <node id="19">
-        <label>attdef.h</label>
-        <link refid="attdef_8h_source"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
+      <node id="15">
+        <label>list</label>
       </node>
       <node id="12">
         <label>boundingbox.h</label>
         <link refid="boundingbox_8h_source"/>
         <childnode refid="13" relation="include">
         </childnode>
+      </node>
+      <node id="6">
+        <label>functional</label>
+      </node>
+      <node id="7">
+        <label>iterator</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>map</label>
+      </node>
+      <node id="11">
+        <label>attmodule.h</label>
+      </node>
+      <node id="2">
+        <label>atts_shared.h</label>
+      </node>
+      <node id="3">
+        <label>textelement.h</label>
+        <link refid="textelement_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>tuple</label>
+      </node>
+      <node id="18">
+        <label>vector</label>
+      </node>
+      <node id="19">
+        <label>attdef.h</label>
       </node>
       <node id="1">
         <label>lb.h</label>
@@ -55,13 +79,20 @@
         <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="3">
-        <label>textelement.h</label>
-        <link refid="textelement_8h_source"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
+      <node id="20">
+        <label>math.h</label>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="10">
+        <label>attclasses.h</label>
+      </node>
+      <node id="16">
+        <label>set</label>
+      </node>
+      <node id="14">
+        <label>algorithm</label>
       </node>
       <node id="13">
         <label>vrvdef.h</label>
@@ -82,56 +113,8 @@
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
-      </node>
-      <node id="14">
-        <label>algorithm</label>
-      </node>
-      <node id="11">
-        <label>attclasses.h</label>
-      </node>
-      <node id="2">
-        <label>atts_shared.h</label>
-      </node>
-      <node id="21">
-        <label>atttypes.h</label>
-      </node>
-      <node id="5">
-        <label>cstdlib</label>
-      </node>
-      <node id="6">
-        <label>functional</label>
-      </node>
-      <node id="7">
-        <label>iterator</label>
-      </node>
-      <node id="15">
-        <label>list</label>
-      </node>
-      <node id="8">
-        <label>map</label>
-      </node>
-      <node id="22">
-        <label>math.h</label>
-      </node>
-      <node id="9">
-        <label>random</label>
-      </node>
-      <node id="16">
-        <label>set</label>
-      </node>
-      <node id="10">
-        <label>string</label>
-      </node>
-      <node id="17">
-        <label>tuple</label>
-      </node>
-      <node id="20">
-        <label>utility</label>
-      </node>
-      <node id="18">
-        <label>vector</label>
       </node>
     </incdepgraph>
     <innerclass refid="classvrv_1_1_lb" prot="public">vrv::Lb</innerclass>
@@ -141,8 +124,7 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Name:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lb.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="comment">//<sp/>Name:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lb.h</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author:<sp/><sp/><sp/><sp/><sp/><sp/>Laurent<sp/>Pugin</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created:<sp/><sp/><sp/><sp/><sp/>2017</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>Authors<sp/>and<sp/>others.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
@@ -159,14 +141,14 @@
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Lb</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23" refid="classvrv_1_1_lb" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_lb" kindref="compound">Lb</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_text_element" kindref="compound">TextElement</ref><sp/>{</highlight></codeline>
+<codeline lineno="23" refid="classvrv_1_1_lb" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_lb" kindref="compound">Lb</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_text_element" kindref="compound">TextElement</ref><sp/>{</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_lb" kindref="compound">Lb</ref>();</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_lb" kindref="compound">~Lb</ref>();</highlight></codeline>
-<codeline lineno="32" refid="classvrv_1_1_lb_1a6bdb109f0e23aa9bde02dad2aa5115b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*<ref refid="classvrv_1_1_lb_1a6bdb109f0e23aa9bde02dad2aa5115b7" kindref="member">Clone</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_lb" kindref="compound">Lb</ref>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
-<codeline lineno="33" refid="classvrv_1_1_lb_1a330e002537d7de4ce681a224b0fd73f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_lb_1a330e002537d7de4ce681a224b0fd73f2" kindref="member">Reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_lb" kindref="compound">Lb</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_lb" kindref="compound">Lb</ref>();</highlight></codeline>
+<codeline lineno="32" refid="classvrv_1_1_lb_1ab7bb2e5524ad83c2f7adbfe11e287ac9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*<ref refid="classvrv_1_1_lb_1ab7bb2e5524ad83c2f7adbfe11e287ac9" kindref="member">Clone</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_lb" kindref="compound">Lb</ref>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_lb_1a330e002537d7de4ce681a224b0fd73f2" kindref="member">Reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>GetClassName()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Lb&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"></codeline>
 <codeline lineno="40" refid="classvrv_1_1_lb_1a2b1de65f5fe2821ec0e0315a8083fd06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_lb_1a2b1de65f5fe2821ec0e0315a8083fd06" kindref="member">AddChild</ref>(<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>override</highlight><highlight class="normal">{};</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
@@ -180,6 +162,6 @@
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/Users/laurent/projects/verovio_develop/include/vrv/lb.h"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/lb.h"/>
   </compounddef>
 </doxygen>

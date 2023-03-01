@@ -147,6 +147,152 @@
         <location file="/home/runner/work/verovio/verovio/include/vrv/octave.h" line="56" column="33" bodyfile="/home/runner/work/verovio/verovio/include/vrv/octave.h" bodystart="56" bodyend="59"/>
       </memberdef>
       </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_octave_1a60779a6ef85ad9d9cddb1aed09b14bc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Octave::ResetDrawingExtenderX</definition>
+        <argsstring>()</argsstring>
+        <name>ResetDrawingExtenderX</name>
+        <briefdescription>
+<para>Store the horizontal extender line coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/octave.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_octave_1a9d609c973dd61d61eabde00b55377e0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Octave::SetDrawingExtenderX</definition>
+        <argsstring>(int left, int right)</argsstring>
+        <name>SetDrawingExtenderX</name>
+        <param>
+          <type>int</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/octave.h" line="67" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvrv_1_1_octave_1a2d22b1ebae137def4509daa488c71e88" prot="private" static="no" mutable="no">
+        <type>std::map&lt; const <ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> *, std::pair&lt; int, int &gt; &gt;</type>
+        <definition>std::map&lt;const FloatingPositioner *, std::pair&lt;int, int&gt; &gt; vrv::Octave::m_drawingExtenderX</definition>
+        <argsstring></argsstring>
+        <name>m_drawingExtenderX</name>
+        <briefdescription>
+<para>The left and right X coordinates of the drawn horizontal extender line. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/octave.h" line="108" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/octave.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvrv_1_1_octave_1aa0f3a6652c8bf25e15e94c3955122fc6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>char32_t</type>
+        <definition>char32_t vrv::Octave::GetOctaveGlyph</definition>
+        <argsstring>(bool withAltaBassa) const</argsstring>
+        <name>GetOctaveGlyph</name>
+        <param>
+          <type>bool</type>
+          <declname>withAltaBassa</declname>
+        </param>
+        <briefdescription>
+<para>Get the SMuFL glyph. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/octave.h" line="73" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_octave_1ab156e3fd834ad083da894777e44ee444" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::Octave::GetLineWidth</definition>
+        <argsstring>(const Doc *doc, int unit) const</argsstring>
+        <name>GetLineWidth</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <declname>doc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the octave line width. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/octave.h" line="78" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_octave_1a7403464904327ea0bcf7236d72d41dfb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::pair&lt; int, bool &gt;</type>
+        <definition>std::pair&lt;int, bool&gt; vrv::Octave::GetVerticalContentBoundaryRel</definition>
+        <argsstring>(const Doc *doc, const FloatingPositioner *positioner, const BoundingBox *horizOverlappingBBox, bool contentTop) const override</argsstring>
+        <name>GetVerticalContentBoundaryRel</name>
+        <reimplements refid="classvrv_1_1_floating_object_1a3adb54f7d09e39f78107e7afc708f572">GetVerticalContentBoundaryRel</reimplements>
+        <param>
+          <type>const <ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <declname>doc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> *</type>
+          <declname>positioner</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classvrv_1_1_bounding_box" kindref="compound">BoundingBox</ref> *</type>
+          <declname>horizOverlappingBBox</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>contentTop</declname>
+        </param>
+        <briefdescription>
+<para>Determine the vertical content boundary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For refined layout this can take the overlapping bbox into account. Returns a pair consisting of the boundary (relative to the object position) and a flag indicating whether refined layout was used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/octave.h" line="86" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_octave_1ab18e06f6ed7366f723d78fc4fe5fca86" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int vrv::Octave::ResetVerticalAlignment</definition>
+        <argsstring>(FunctorParams *functorParams) override</argsstring>
+        <name>ResetVerticalAlignment</name>
+        <reimplements refid="classvrv_1_1_floating_object_1a9a9271ae963c1406e733365a4ac860d8">ResetVerticalAlignment</reimplements>
+        <param>
+          <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
+          <declname>functorParams</declname>
+        </param>
+        <briefdescription>
+<para>See <ref refid="classvrv_1_1_object_1ab5f42b79ff1721982121a8a9c493a8c1" kindref="member">Object::ResetVerticalAlignment</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/octave.h" line="96" column="9"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
 <para>This class models the MEI &lt;octave&gt; element. </para>
     </briefdescription>
@@ -313,7 +459,7 @@
         <childnode refid="28" relation="usage">
           <edgelabel>m_crossStaff</edgelabel>
         </childnode>
-        <childnode refid="52" relation="usage">
+        <childnode refid="53" relation="usage">
           <edgelabel>m_graceAlignment</edgelabel>
           <edgelabel>m_alignment</edgelabel>
         </childnode>
@@ -326,10 +472,10 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="60">
+      <node id="61">
         <label>AttOctaveDisplacement</label>
       </node>
-      <node id="40">
+      <node id="41">
         <label>AttMultinumMeasures</label>
       </node>
       <node id="14">
@@ -347,7 +493,7 @@
           <edgelabel>m_start</edgelabel>
         </childnode>
       </node>
-      <node id="58">
+      <node id="59">
         <label>AttLineRendBase</label>
       </node>
       <node id="33">
@@ -367,8 +513,6 @@
         </childnode>
         <childnode refid="13" relation="public-inheritance">
         </childnode>
-        <childnode refid="55" relation="public-inheritance">
-        </childnode>
         <childnode refid="56" relation="public-inheritance">
         </childnode>
         <childnode refid="57" relation="public-inheritance">
@@ -378,6 +522,8 @@
         <childnode refid="59" relation="public-inheritance">
         </childnode>
         <childnode refid="60" relation="public-inheritance">
+        </childnode>
+        <childnode refid="61" relation="public-inheritance">
         </childnode>
       </node>
       <node id="3">
@@ -389,7 +535,7 @@
       <node id="31">
         <label>AttCourseLog</label>
       </node>
-      <node id="43">
+      <node id="44">
         <label>AttSystems</label>
       </node>
       <node id="28">
@@ -417,7 +563,7 @@
       <node id="35">
         <label>AttBarring</label>
       </node>
-      <node id="45">
+      <node id="46">
         <label>AttDistances</label>
       </node>
       <node id="12">
@@ -450,6 +596,8 @@
         </childnode>
         <childnode refid="43" relation="public-inheritance">
         </childnode>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="16">
         <label>AttStartId</label>
@@ -457,6 +605,9 @@
       <node id="7">
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
+      </node>
+      <node id="40">
+        <label>AttMmTempo</label>
       </node>
       <node id="39">
         <label>AttMidiTempo</label>
@@ -469,15 +620,15 @@
         <link refid="classvrv_1_1_time_spanning_interface"/>
         <childnode refid="14" relation="public-inheritance">
         </childnode>
-        <childnode refid="53" relation="public-inheritance">
-        </childnode>
         <childnode refid="54" relation="public-inheritance">
         </childnode>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="49">
+      <node id="50">
         <label>AttStaffDefVis</label>
       </node>
-      <node id="54">
+      <node id="55">
         <label>AttTimestamp2Log</label>
       </node>
       <node id="26">
@@ -501,7 +652,7 @@
         <childnode refid="27" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="42">
+      <node id="43">
         <label>AttSpacing</label>
       </node>
       <node id="19">
@@ -512,7 +663,7 @@
         <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="46">
+      <node id="47">
         <label>AttNotationType</label>
       </node>
       <node id="21">
@@ -522,7 +673,7 @@
         <label>vrv::DrawingListInterface</label>
         <link refid="classvrv_1_1_drawing_list_interface"/>
       </node>
-      <node id="53">
+      <node id="54">
         <label>AttStartEndId</label>
       </node>
       <node id="29">
@@ -542,7 +693,7 @@
         <childnode refid="31" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="44">
+      <node id="45">
         <label>vrv::StaffDefDrawingInterface</label>
         <link refid="classvrv_1_1_staff_def_drawing_interface"/>
       </node>
@@ -551,15 +702,13 @@
         <link refid="classvrv_1_1_staff_def"/>
         <childnode refid="33" relation="public-inheritance">
         </childnode>
-        <childnode refid="44" relation="public-inheritance">
-        </childnode>
         <childnode refid="45" relation="public-inheritance">
+        </childnode>
+        <childnode refid="46" relation="public-inheritance">
         </childnode>
         <childnode refid="11" relation="public-inheritance">
         </childnode>
         <childnode refid="26" relation="public-inheritance">
-        </childnode>
-        <childnode refid="46" relation="public-inheritance">
         </childnode>
         <childnode refid="47" relation="public-inheritance">
         </childnode>
@@ -571,6 +720,8 @@
         </childnode>
         <childnode refid="51" relation="public-inheritance">
         </childnode>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="10">
         <label>AttLinking</label>
@@ -581,7 +732,7 @@
       <node id="20">
         <label>AttFacsimile</label>
       </node>
-      <node id="51">
+      <node id="52">
         <label>AttTransposition</label>
       </node>
       <node id="36">
@@ -598,16 +749,16 @@
         <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="52">
+      <node id="53">
         <label>vrv::Alignment</label>
         <link refid="classvrv_1_1_alignment"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="41">
+      <node id="42">
         <label>AttPianoPedals</label>
       </node>
-      <node id="48">
+      <node id="49">
         <label>AttStaffDefLog</label>
       </node>
       <node id="15">
@@ -633,36 +784,36 @@
         <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="56">
+      <node id="57">
         <label>AttExtender</label>
       </node>
-      <node id="55">
+      <node id="56">
         <label>AttColor</label>
       </node>
       <node id="38">
         <label>AttMeasureNumbers</label>
       </node>
-      <node id="47">
+      <node id="48">
         <label>AttScalable</label>
       </node>
       <node id="24">
         <label>vrv::ObjectListInterface</label>
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
-      <node id="57">
+      <node id="58">
         <label>AttLineRend</label>
       </node>
-      <node id="50">
+      <node id="51">
         <label>AttTimeBase</label>
       </node>
-      <node id="59">
+      <node id="60">
         <label>AttNNumberLike</label>
       </node>
       <node id="11">
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/octave.h" line="32" column="44" bodyfile="/home/runner/work/verovio/verovio/include/vrv/octave.h" bodystart="25" bodyend="74"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/octave.h" line="32" column="44" bodyfile="/home/runner/work/verovio/verovio/include/vrv/octave.h" bodystart="25" bodyend="109"/>
     <listofallmembers>
       <member refid="classvrv_1_1_linking_interface_1aaa4632e05d5d887b26dbf1789c84f573" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>AddBackLink</name></member>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>AddChild</name></member>
@@ -696,6 +847,7 @@
       <member refid="classvrv_1_1_object_1ad431f1654f303456e7c8f2d285e4f650" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>AdjustTupletNumOverlap</name></member>
       <member refid="classvrv_1_1_object_1a59773566ac731e75fa34166fa1d78aa3" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>AdjustTupletsX</name></member>
       <member refid="classvrv_1_1_object_1a80bc658bb972eabcee2d0aa536386cfc" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>AdjustTupletsY</name></member>
+      <member refid="classvrv_1_1_object_1ae9bf4c7655baf1d3f774efc99ebebb9a" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>AdjustTupletWithSlurs</name></member>
       <member refid="classvrv_1_1_control_element_1aac6e4a89487d479670c8db760c720073" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>AdjustXOverflow</name></member>
       <member refid="classvrv_1_1_object_1ae373581b24540ce6c308bd86ccca6e93" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>AdjustXOverflowEnd</name></member>
       <member refid="classvrv_1_1_object_1adacbf7e25c213d82303c739fec53828a" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>AdjustXPos</name></member>
@@ -801,9 +953,9 @@
       <member refid="classvrv_1_1_floating_object_1a0988447a69fd83a982391248f4a19944" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>FloatingObject</name></member>
       <member refid="classvrv_1_1_floating_object_1a41170245f10c43785287cacb6e34013b" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>FloatingObject</name></member>
       <member refid="classvrv_1_1_object_1a7ced59f27507ee81372cc12d7f57c8e0" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>GenerateFeatures</name></member>
+      <member refid="classvrv_1_1_object_1ab61ec322562aee0247f49e9fb008a448" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GenerateHashID</name></member>
       <member refid="classvrv_1_1_object_1a426081ffba31e4251a2c36ceeb2a43ba" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>GenerateMIDI</name></member>
       <member refid="classvrv_1_1_object_1a7c0a63c225e76daa84e102b7d531d645" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>GenerateMIDIEnd</name></member>
-      <member refid="classvrv_1_1_object_1adef7d8ebf6bbb0b9bea78a608c161791" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GenerateRandID</name></member>
       <member refid="classvrv_1_1_object_1abe889073301d6e1dfe55e725b6532948" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>GenerateTimemap</name></member>
       <member refid="classvrv_1_1_object_1a389c0c7f2a9e74b340c44dbc68e7e886" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>GetAlignmentLeftRight</name></member>
       <member refid="classvrv_1_1_alt_sym_interface_1ab8910be3f566440cde2cf57108248478" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetAltSymbolDef</name></member>
@@ -887,6 +1039,7 @@
       <member refid="classvrv_1_1_object_1a7a014abead37ca3e27f827a5c3ae7434" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetLastAncestorNot</name></member>
       <member refid="classvrv_1_1_control_element_1a21757f229d95373c0d53c4ac94cdcaf2" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetLayerPlace</name></member>
       <member refid="classvrv_1_1_bounding_box_1af329372204a34520779e6b0d0596e8b9" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetLeftBy</name></member>
+      <member refid="classvrv_1_1_octave_1ab156e3fd834ad083da894777e44ee444" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetLineWidth</name></member>
       <member refid="classvrv_1_1_control_element_1a1ab03ccd8e1610d29508e9e0bb7bc7c5" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>GetLinkingInterface</name></member>
       <member refid="classvrv_1_1_control_element_1aeb6ccac7f45774c4f7bb78f3b878eafd" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>GetLinkingInterface</name></member>
       <member refid="classvrv_1_1_floating_object_1ab6520fb847c3341d60fba34277e011e0" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetMaxDrawingYRel</name></member>
@@ -899,6 +1052,7 @@
       <member refid="classvrv_1_1_linking_interface_1aad381d647fdfb76e556661d255333053" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetNextLink</name></member>
       <member refid="classvrv_1_1_linking_interface_1adf9d13147005f947251ada4a02c71257" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetNextMeasure</name></member>
       <member refid="classvrv_1_1_linking_interface_1a70e6577025de19a0020dc4ae3f4dcdbe" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetNextMeasure</name></member>
+      <member refid="classvrv_1_1_octave_1aa0f3a6652c8bf25e15e94c3955122fc6" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetOctaveGlyph</name></member>
       <member refid="classvrv_1_1_object_1ad2f81f683e9a94713b451395ff781627" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetParent</name></member>
       <member refid="classvrv_1_1_object_1a4e4858957b6d48a75bba2130939fe174" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetParent</name></member>
       <member refid="classvrv_1_1_object_1aace2a15227fa3db1f20b5acbb7f2b4d2" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>GetPitchInterface</name></member>
@@ -937,6 +1091,7 @@
       <member refid="classvrv_1_1_octave_1a67314e0c3f6e78f8c014ce90ba9f803e" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>GetTimeSpanningInterface</name></member>
       <member refid="classvrv_1_1_bounding_box_1a9dae1c4940695c403ba67841512f94f3" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetTopBy</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a27a48797d818dd92d3f7ff82f0678a17" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetTstampStaves</name></member>
+      <member refid="classvrv_1_1_octave_1a7403464904327ea0bcf7236d72d41dfb" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>GetVerticalContentBoundaryRel</name></member>
       <member refid="classvrv_1_1_bounding_box_1a6f1d1de5ac01ce1fe4cf43ed16b47e11" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetX1By</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3a9666c33d5a4a7d01f4b159c128d6c5" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetX2By</name></member>
       <member refid="classvrv_1_1_bounding_box_1ad906e8632b28b1be81fa374ad2b5292e" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>GetY1By</name></member>
@@ -952,6 +1107,7 @@
       <member refid="classvrv_1_1_object_1a1f38d88b64a7f79bfea9303a16c1f556" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>HasDescendant</name></member>
       <member refid="classvrv_1_1_object_1ac9dd387934b8960b47b96a0c05bb1b84" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>HasEditorialContent</name></member>
       <member refid="classvrv_1_1_bounding_box_1a1dfd7207c5f8431bcb56c88b5c469992" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>HasEmptyBB</name></member>
+      <member refid="classvrv_1_1_object_1a3eed2cd64bee454f550e6fa22995dafe" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>Hash</name></member>
       <member refid="classvrv_1_1_object_1a1639642ba9433617ec04608f2d2570bb" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>HasInterface</name></member>
       <member refid="classvrv_1_1_linking_interface_1a634bea817c5bf3e1c4e537a9d3165a63" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>HasNextLink</name></member>
       <member refid="classvrv_1_1_object_1ae0d0368a66d1c4b590b311a1a94eb717" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>HasNonEditorialContent</name></member>
@@ -1027,6 +1183,7 @@
       <member refid="classvrv_1_1_linking_interface_1ab0344fae147aef801bfca24e6dd1f016" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>LinkingInterface</name></member>
       <member refid="classvrv_1_1_bounding_box_1a4961ebaf8f99abe31ee894345cd84a16" prot="protected" virt="non-virtual"><scope>vrv::Octave</scope><name>m_cachedDrawingX</name></member>
       <member refid="classvrv_1_1_bounding_box_1a548baf7b854ef877313302670da5d0b8" prot="protected" virt="non-virtual"><scope>vrv::Octave</scope><name>m_cachedDrawingY</name></member>
+      <member refid="classvrv_1_1_octave_1a2d22b1ebae137def4509daa488c71e88" prot="private" virt="non-virtual"><scope>vrv::Octave</scope><name>m_drawingExtenderX</name></member>
       <member refid="classvrv_1_1_time_point_interface_1a0acc50cd71a220b0142a0ec22377c88a" prot="protected" virt="non-virtual"><scope>vrv::Octave</scope><name>m_start</name></member>
       <member refid="classvrv_1_1_time_point_interface_1ac504cb97f324c80f11378f21b9870e38" prot="protected" virt="non-virtual"><scope>vrv::Octave</scope><name>m_startID</name></member>
       <member refid="classvrv_1_1_object_1a74ae0995caefb72a71445ba43fce0652" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>m_unsupported</name></member>
@@ -1089,10 +1246,11 @@
       <member refid="classvrv_1_1_object_1a859aecc00ab75fc7ed2f2780bc0a6a51" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>ResetCachedDrawingX</name></member>
       <member refid="classvrv_1_1_object_1ac5b28a8625980d057d6cad83dbd52e26" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>ResetCachedDrawingY</name></member>
       <member refid="classvrv_1_1_control_element_1ac6c234c1060330df08eee2ce4d7626da" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>ResetData</name></member>
+      <member refid="classvrv_1_1_octave_1a60779a6ef85ad9d9cddb1aed09b14bc4" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>ResetDrawingExtenderX</name></member>
       <member refid="classvrv_1_1_floating_object_1aca4747e3c2a91341b053520e4da715ef" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>ResetHorizontalAlignment</name></member>
       <member refid="classvrv_1_1_object_1a6a40859719b200dae8d65ee9d597bccd" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>ResetID</name></member>
       <member refid="classvrv_1_1_object_1a5d22ebda01e0b254c13d558f5ffdb098" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>ResetParent</name></member>
-      <member refid="classvrv_1_1_floating_object_1a9a9271ae963c1406e733365a4ac860d8" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>ResetVerticalAlignment</name></member>
+      <member refid="classvrv_1_1_octave_1ab18e06f6ed7366f723d78fc4fe5fca86" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>ResetVerticalAlignment</name></member>
       <member refid="classvrv_1_1_object_1a8ec6663670b4b6522cb4892babf36742" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>Save</name></member>
       <member refid="classvrv_1_1_object_1ad628dce30da1167aa84313ea7a4f5612" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>SaveEnd</name></member>
       <member refid="classvrv_1_1_object_1a109c1a6b01e78fb7978caa0577b5df6f" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SaveObject</name></member>
@@ -1103,7 +1261,7 @@
       <member refid="classvrv_1_1_object_1a87d360889455b91b9979b6866d499767" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>ScoreDefSetCurrentPageEnd</name></member>
       <member refid="classvrv_1_1_object_1a71c3367e232d634a71c2d346dfd9f3d1" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>ScoreDefSetGrpSym</name></member>
       <member refid="classvrv_1_1_object_1ac063e5c113b30453f094ba3589a534ca" prot="public" virt="virtual"><scope>vrv::Octave</scope><name>ScoreDefUnsetCurrent</name></member>
-      <member refid="classvrv_1_1_object_1a9aad68e2f4f0edf8bf413a2a5f727f1b" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SeedID</name></member>
+      <member refid="classvrv_1_1_object_1aa8fa10c3b5d07eec119fe0d73aa9b6ab" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SeedID</name></member>
       <member refid="classvrv_1_1_alt_sym_interface_1aec18270c1ba43d7ab203eda65b26b3f4" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SetAltSymbolDef</name></member>
       <member refid="classvrv_1_1_object_1a9bc335e3bc5405f5dbaae757b5629996" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SetAsReferenceObject</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7eccd9ca1e458dccab9c6b9fb7a24ec4" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SetBoundingBoxGlyph</name></member>
@@ -1111,6 +1269,7 @@
       <member refid="classvrv_1_1_object_1af0db1dd88b7d2f6c9068934312ce86c8" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SetClosingComment</name></member>
       <member refid="classvrv_1_1_object_1a3b47aa3445a48e681db41607cedcd4b4" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SetComment</name></member>
       <member refid="classvrv_1_1_floating_object_1a819ad528a043efce1c9a8f860896b603" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SetCurrentFloatingPositioner</name></member>
+      <member refid="classvrv_1_1_octave_1a9d609c973dd61d61eabde00b55377e0b" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SetDrawingExtenderX</name></member>
       <member refid="classvrv_1_1_floating_object_1a2a54c03eab79c35ce2030916053bd1d4" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SetDrawingGrpId</name></member>
       <member refid="classvrv_1_1_floating_object_1abb3c371794922b14e5a0265a0bd27bba" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SetDrawingGrpObject</name></member>
       <member refid="classvrv_1_1_bounding_box_1ade8f7ad2283b156a2c7934c4055bd8bf" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SetEmptyBB</name></member>
@@ -1119,7 +1278,7 @@
       <member refid="classvrv_1_1_alt_sym_interface_1a566a6b1368de80402f164f47ecd3f2b2" prot="protected" virt="non-virtual" ambiguityscope="vrv::"><scope>vrv::Octave</scope><name>SetIDStr</name></member>
       <member refid="classvrv_1_1_linking_interface_1a26bd7ff2e4a7048c03aeb56bb8f598d8" prot="protected" virt="non-virtual" ambiguityscope="vrv::LinkingInterface::"><scope>vrv::Octave</scope><name>SetIDStr</name></member>
       <member refid="classvrv_1_1_time_spanning_interface_1a065e23ac386fa542f2f94cd3d42ddaec" prot="public" virt="non-virtual" ambiguityscope="vrv::TimeSpanningInterface::"><scope>vrv::Octave</scope><name>SetIDStr</name></member>
-      <member refid="classvrv_1_1_floating_object_1a367d3e3b4bfa50bae3e6a59f863199b3" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SetMaxDrawingYRel</name></member>
+      <member refid="classvrv_1_1_floating_object_1a181fb01aa1f109c4d841eef4a5947e4f" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SetMaxDrawingYRel</name></member>
       <member refid="classvrv_1_1_linking_interface_1aa954c8b863b3372c10ec07e7c8a48087" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SetNextLink</name></member>
       <member refid="classvrv_1_1_object_1a9f30aa6a8185b260943003a08980d376" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SetParent</name></member>
       <member refid="classvrv_1_1_linking_interface_1a3670fb648c0d3c6958544c5cfc6f6868" prot="public" virt="non-virtual"><scope>vrv::Octave</scope><name>SetSameasLink</name></member>

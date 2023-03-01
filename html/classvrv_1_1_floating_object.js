@@ -1,6 +1,18 @@
 var classvrv_1_1_floating_object =
 [
-    [ "GetCorrespFloatingPositioner", "classvrv_1_1_floating_object.html#a4355192b5fe7f8d753e188edf2d08dc4", null ],
+    [ "FloatingObject", "classvrv_1_1_floating_object.html#a881e66e4ba71468555b7a8abae6a346e", null ],
+    [ "FloatingObject", "classvrv_1_1_floating_object.html#a0988447a69fd83a982391248f4a19944", null ],
+    [ "FloatingObject", "classvrv_1_1_floating_object.html#a41170245f10c43785287cacb6e34013b", null ],
+    [ "~FloatingObject", "classvrv_1_1_floating_object.html#ac09ff8994cb1d0119fdd67d25d12f410", null ],
+    [ "GetCorrespFloatingPositioner", "classvrv_1_1_floating_object.html#a248177357c942919e76c7aa438aeb6a0", null ],
+    [ "GetCorrespFloatingPositioner", "classvrv_1_1_floating_object.html#a670ba7a497b9ebdc58d9a62a1027f71f", null ],
+    [ "GetCurrentFloatingPositioner", "classvrv_1_1_floating_object.html#a4d92135a6f8a1967fb53ac60e3cbb0c7", null ],
+    [ "GetCurrentFloatingPositioner", "classvrv_1_1_floating_object.html#a4aac146641f1aa60551a927f7eb4d297", null ],
+    [ "GetDrawingGrpId", "classvrv_1_1_floating_object.html#a67e6ef3b80f122a42bcccd89701bc298", null ],
+    [ "GetDrawingX", "classvrv_1_1_floating_object.html#a5c6d15419321ce64bde495eb3b6b9039", null ],
+    [ "GetDrawingY", "classvrv_1_1_floating_object.html#a87db0b64d7840dcfd006f6af2b32e4bb", null ],
+    [ "GetMaxDrawingYRel", "classvrv_1_1_floating_object.html#ab6520fb847c3341d60fba34277e011e0", null ],
+    [ "GetVerticalContentBoundaryRel", "classvrv_1_1_floating_object.html#a3adb54f7d09e39f78107e7afc708f572", null ],
     [ "IsCloserToStaffThan", "classvrv_1_1_floating_object.html#a33e63919403a78ab01c46e22ff264d4c", null ],
     [ "IsExtenderElement", "classvrv_1_1_floating_object.html#a8781df9fac1bad66c08cdae278be23e4", null ],
     [ "PrepareDataInitialization", "classvrv_1_1_floating_object.html#ad8144ac6f21b03b8e2ba9bc026cf51dd", null ],
@@ -12,5 +24,13 @@ var classvrv_1_1_floating_object =
     [ "ResetData", "classvrv_1_1_floating_object.html#a428986dbd1f8481c8717f10ca43ce31d", null ],
     [ "ResetHorizontalAlignment", "classvrv_1_1_floating_object.html#aca4747e3c2a91341b053520e4da715ef", null ],
     [ "ResetVerticalAlignment", "classvrv_1_1_floating_object.html#a9a9271ae963c1406e733365a4ac860d8", null ],
-    [ "UnCastOff", "classvrv_1_1_floating_object.html#ad76285ff372a1a1c5eca6fb7e9923afe", null ]
+    [ "SetCurrentFloatingPositioner", "classvrv_1_1_floating_object.html#a819ad528a043efce1c9a8f860896b603", null ],
+    [ "SetDrawingGrpId", "classvrv_1_1_floating_object.html#a2a54c03eab79c35ce2030916053bd1d4", null ],
+    [ "SetDrawingGrpObject", "classvrv_1_1_floating_object.html#abb3c371794922b14e5a0265a0bd27bba", null ],
+    [ "SetMaxDrawingYRel", "classvrv_1_1_floating_object.html#a181fb01aa1f109c4d841eef4a5947e4f", null ],
+    [ "UnCastOff", "classvrv_1_1_floating_object.html#ad76285ff372a1a1c5eca6fb7e9923afe", null ],
+    [ "UpdateContentBBoxX", "classvrv_1_1_floating_object.html#a79c7af4267643b1bc2a783be841975c2", null ],
+    [ "UpdateContentBBoxY", "classvrv_1_1_floating_object.html#a88f281e9a6394157894a57b546346017", null ],
+    [ "UpdateSelfBBoxX", "classvrv_1_1_floating_object.html#a29ef524752d056b1f60cab88e77a32ee", null ],
+    [ "UpdateSelfBBoxY", "classvrv_1_1_floating_object.html#a1868c149ca8ff416b6275e1637eaa626", null ]
 ];

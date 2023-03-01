@@ -3,7 +3,7 @@
   <compounddef id="devicecontextbase_8h" kind="file" language="C++">
     <compoundname>devicecontextbase.h</compoundname>
     <includes local="no">string</includes>
-    <includes refid="attdef_8h" local="yes">attdef.h</includes>
+    <includes local="yes">attdef.h</includes>
     <includes refid="vrvdef_8h" local="yes">vrvdef.h</includes>
     <includedby refid="systemelement_8h" local="yes">systemelement.h</includedby>
     <includedby refid="floatingobject_8h" local="yes">floatingobject.h</includedby>
@@ -15,19 +15,16 @@
     <includedby refid="view_8h" local="yes">view.h</includedby>
     <includedby refid="pageelement_8h" local="yes">pageelement.h</includedby>
     <incdepgraph>
-      <node id="11">
+      <node id="7">
         <label>list</label>
       </node>
-      <node id="10">
+      <node id="6">
         <label>functional</label>
-      </node>
-      <node id="7">
-        <label>atttypes.h</label>
       </node>
       <node id="2">
         <label>string</label>
       </node>
-      <node id="12">
+      <node id="8">
         <label>map</label>
       </node>
       <node id="1">
@@ -37,64 +34,47 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
+      </node>
+      <node id="10">
+        <label>tuple</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
       </node>
       <node id="3">
         <label>attdef.h</label>
-        <link refid="attdef_8h_source"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
+      </node>
+      <node id="12">
+        <label>math.h</label>
+      </node>
+      <node id="9">
+        <label>set</label>
+      </node>
+      <node id="5">
+        <label>algorithm</label>
+      </node>
+      <node id="4">
+        <label>vrvdef.h</label>
+        <link refid="vrvdef_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-      </node>
-      <node id="14">
-        <label>tuple</label>
-      </node>
-      <node id="5">
-        <label>vector</label>
-      </node>
-      <node id="4">
-        <label>utility</label>
-      </node>
-      <node id="15">
-        <label>math.h</label>
-      </node>
-      <node id="6">
-        <label>attclasses.h</label>
-      </node>
-      <node id="13">
-        <label>set</label>
-      </node>
-      <node id="9">
-        <label>algorithm</label>
-      </node>
-      <node id="8">
-        <label>vrvdef.h</label>
-        <link refid="vrvdef_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -544,6 +524,8 @@
       <node id="45">
         <label>harm.h</label>
         <link refid="harm_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
       </node>
       <node id="26">
         <label>iohumdrum.h</label>
@@ -1057,8 +1039,8 @@
 <codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>&amp;p)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>p);<sp/>}</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"></highlight></codeline>
 <codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>arithmetic<sp/>operations<sp/>(component<sp/>wise)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>operator+(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>&amp;p)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref>(x<sp/>+<sp/>p.x,<sp/>y<sp/>+<sp/>p.y);<sp/>}</highlight></codeline>
-<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>operator-(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>&amp;p)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref>(x<sp/>-<sp/>p.x,<sp/>y<sp/>-<sp/>p.y);<sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>operator+(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>&amp;p)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>x<sp/>+<sp/>p.x,<sp/>y<sp/>+<sp/>p.y<sp/>};<sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>operator-(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>&amp;p)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>x<sp/>-<sp/>p.x,<sp/>y<sp/>-<sp/>p.y<sp/>};<sp/>}</highlight></codeline>
 <codeline lineno="209"><highlight class="normal"></highlight></codeline>
 <codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>&amp;operator+=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>&amp;p)</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -1073,20 +1055,20 @@
 <codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="222"><highlight class="normal"></highlight></codeline>
-<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>operator-()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref>(-x,<sp/>-y);<sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>operator-()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>-x,<sp/>-y<sp/>};<sp/>}</highlight></codeline>
 <codeline lineno="224"><highlight class="normal"></highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>min(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>&amp;p)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="226"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>std::min(this-&gt;x,<sp/>p.x);</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>std::min(this-&gt;y,<sp/>p.y);</highlight></codeline>
-<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref>(x,<sp/>y);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>x,<sp/>y<sp/>};</highlight></codeline>
 <codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="231"><highlight class="normal"></highlight></codeline>
 <codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>max(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>&amp;p)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="233"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>std::max(this-&gt;x,<sp/>p.x);</highlight></codeline>
 <codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>std::max(this-&gt;y,<sp/>p.y);</highlight></codeline>
-<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref>(x,<sp/>y);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>x,<sp/>y<sp/>};</highlight></codeline>
 <codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="238"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="239"><highlight class="normal"></highlight></codeline>
@@ -1105,7 +1087,7 @@
 <codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref>()<sp/>{}</highlight></codeline>
 <codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>&amp;p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>&amp;c1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>&amp;c2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>&amp;p2)<sp/>:<sp/>p1(p1),<sp/>c1(c1),<sp/>c2(c2),<sp/>p2(p2)<sp/>{}</highlight></codeline>
 <codeline lineno="258"><highlight class="normal"></highlight></codeline>
-<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Helper<sp/>to<sp/>rotate<sp/>all<sp/>points<sp/>within<sp/>bezier<sp/>curve<sp/>around<sp/>@rotationPoint<sp/>by<sp/>@angle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Helper<sp/>to<sp/>rotate<sp/>all<sp/>points<sp/>within<sp/>bezier<sp/>curve<sp/>around<sp/>\@rotationPoint<sp/>by<sp/>\@angle</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Rotate(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_point" kindref="compound">Point</ref><sp/>&amp;rotationPoint);</highlight></codeline>
 <codeline lineno="261"><highlight class="normal"></highlight></codeline>
 <codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetControlOffset(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset)<sp/>{<sp/>m_leftControlOffset<sp/>=<sp/>m_rightControlOffset<sp/>=<sp/>offset;<sp/>}</highlight></codeline>
