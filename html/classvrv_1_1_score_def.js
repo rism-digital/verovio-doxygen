@@ -15,6 +15,7 @@ var classvrv_1_1_score_def =
     [ "GetClassName", "classvrv_1_1_score_def.html#ad720e9f3cb567df7caa5f5f54c8c0e11", null ],
     [ "GetDrawingLabelsWidth", "classvrv_1_1_score_def.html#a3d31e8b536fe875333510f1061d041dc", null ],
     [ "GetDrawingWidth", "classvrv_1_1_score_def.html#a9cb53f6b4fcae84ac63c8e5ad8b7bb28", null ],
+    [ "GetInsertOrderFor", "classvrv_1_1_score_def.html#a805573115294f94e9c808096eeeb00d4", null ],
     [ "GetMaxStaffSize", "classvrv_1_1_score_def.html#a62d48291e1a96bb1bddc2e9ed37341b3", null ],
     [ "GetPgFoot", "classvrv_1_1_score_def.html#a102b5f13253f242dce2723129486f4b1", null ],
     [ "GetPgFoot", "classvrv_1_1_score_def.html#a77f3a45edd1eb21918d0a9f46ab05b4e", null ],

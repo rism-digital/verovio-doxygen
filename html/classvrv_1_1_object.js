@@ -167,6 +167,8 @@ var classvrv_1_1_object =
     [ "GetFirstChildNot", "classvrv_1_1_object.html#a7cde888c2a3a0af025cd706540d7333a", null ],
     [ "GetID", "classvrv_1_1_object.html#aef1d784524c2d3c60d0c0142d1a8ab53", null ],
     [ "GetIdx", "classvrv_1_1_object.html#a2bfb8ee92dbd7e805de0aae51d07d534", null ],
+    [ "GetInsertOrderFor", "classvrv_1_1_object.html#ad8f7812ad7bdfe96dda1eda108484955", null ],
+    [ "GetInsertOrderForIn", "classvrv_1_1_object.html#afeda31a18e057eaa199a5a76d2a8cf78", null ],
     [ "GetLast", "classvrv_1_1_object.html#aa7382f9b787c517cf76a6ece195f7766", null ],
     [ "GetLast", "classvrv_1_1_object.html#a31f762f07969b77792891fdbbc5176e4", null ],
     [ "GetLastAncestorNot", "classvrv_1_1_object.html#a908d56fef5a5dd9b9808555ab4ea4daf", null ],

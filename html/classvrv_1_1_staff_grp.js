@@ -10,6 +10,7 @@ var classvrv_1_1_staff_grp =
     [ "GetFirstLastStaffDef", "classvrv_1_1_staff_grp.html#a74fe62b72e17cc7c64b6d0fabef8c186", null ],
     [ "GetGroupSymbol", "classvrv_1_1_staff_grp.html#a977720d6e343a9eda2e6410cab069162", null ],
     [ "GetGroupSymbol", "classvrv_1_1_staff_grp.html#a4893c0ab81230fc387074872a8948665", null ],
+    [ "GetInsertOrderFor", "classvrv_1_1_staff_grp.html#a734482f01aad893474c0d5af85606572", null ],
     [ "GetLabel", "classvrv_1_1_staff_grp.html#a9b3c8e7fc343e7be633cd3b088346371", null ],
     [ "GetLabel", "classvrv_1_1_staff_grp.html#adb01e5847c4f1dab6a9342174aa7f215", null ],
     [ "GetLabelAbbr", "classvrv_1_1_staff_grp.html#a360297d9a877019ea4566ca2c0187a8e", null ],
