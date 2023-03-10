@@ -1,5 +1,7 @@
 var NAVTREEINDEX25 =
 {
+"staffgrp_8h_source.html":[2,0,150],
+"stem_8h_source.html":[2,0,151],
 "structvrv_1_1_closest_b_b.html":[1,0,0,82],
 "structvrv_1_1_closest_b_b.html#a7193448e2d6a3148d7efbac14f337f74":[1,0,0,82,1],
 "structvrv_1_1_closest_b_b.html#acdc0607c597cc92e988e9d9c41173d47":[1,0,0,82,0],
