@@ -114,7 +114,6 @@ var classvrv_1_1_doc =
     [ "UnCastOffDoc", "classvrv_1_1_doc.html#a7cb1b2f4b17d550ec69fae48d0eb065f", null ],
     [ "m_back", "classvrv_1_1_doc.html#ab96acb5023fb2cdbe88b648ac7065293", null ],
     [ "m_drawingBeamMaxSlope", "classvrv_1_1_doc.html#a0acd9a295cb0a8364f55a44081197ef5", null ],
-    [ "m_drawingBeamMinSlope", "classvrv_1_1_doc.html#a673c48b796b9e7d6283ea15b9fd9de05", null ],
     [ "m_drawingPageContentHeight", "classvrv_1_1_doc.html#abda4c27fe5de166cbc9fa7b5975eea09", null ],
     [ "m_drawingPageContentWidth", "classvrv_1_1_doc.html#a3d73e278969a58436c0c8d218255a71d", null ],
     [ "m_drawingPageHeight", "classvrv_1_1_doc.html#acba1a54bcd73e33ed1323d233dd70582", null ],

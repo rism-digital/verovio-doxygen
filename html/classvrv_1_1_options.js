@@ -18,7 +18,6 @@ var classvrv_1_1_options =
     [ "m_baseOptions", "classvrv_1_1_options.html#a35cf54378bce2976a1a8185ef9f88c06", null ],
     [ "m_beamFrenchStyle", "classvrv_1_1_options.html#a423468d2ff9f44be586125dde9bc75eb", null ],
     [ "m_beamMaxSlope", "classvrv_1_1_options.html#acb34a2439c346557d99368a878510357", null ],
-    [ "m_beamMinSlope", "classvrv_1_1_options.html#af54a9973eae907c92bfb5d1e285449f2", null ],
     [ "m_beamMixedPreserve", "classvrv_1_1_options.html#a3536dccba278856e8be643994e47bef3", null ],
     [ "m_beamMixedStemMin", "classvrv_1_1_options.html#a308e1293398611385edb59298035db1f", null ],
     [ "m_bottomMarginArtic", "classvrv_1_1_options.html#a8637f433f0645dea49d98ae36f3d9dcf", null ],
