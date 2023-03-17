@@ -116,6 +116,9 @@ var hierarchy =
     [ "AttChannelized", null, [
       [ "vrv::InstrDef", "classvrv_1_1_instr_def.html", null ]
     ] ],
+    [ "AttClefLog", null, [
+      [ "vrv::Clef", "classvrv_1_1_clef.html", null ]
+    ] ],
     [ "AttClefShape", null, [
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ]
     ] ],
@@ -577,6 +580,7 @@ var hierarchy =
       [ "vrv::TupletNum", "classvrv_1_1_tuplet_num.html", null ]
     ] ],
     [ "AttOctave", null, [
+      [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
       [ "vrv::Course", "classvrv_1_1_course.html", null ],
       [ "vrv::PitchInterface", "classvrv_1_1_pitch_interface.html", null ]
     ] ],
