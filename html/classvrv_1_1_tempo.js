@@ -2,7 +2,10 @@ var classvrv_1_1_tempo =
 [
     [ "Tempo", "classvrv_1_1_tempo.html#a4031ccfa745354263263e964a1323254", null ],
     [ "~Tempo", "classvrv_1_1_tempo.html#aa38e41c56cae88acab5750a2734c0fd3", null ],
-    [ "AdjustTempo", "classvrv_1_1_tempo.html#af6b33973a7461ea800ac9027c2f98b34", null ],
+    [ "Accept", "classvrv_1_1_tempo.html#a28479fbc914c35fded62316c007d56f0", null ],
+    [ "Accept", "classvrv_1_1_tempo.html#ade7ccfba8df1a2b90272097765843746", null ],
+    [ "AcceptEnd", "classvrv_1_1_tempo.html#ab5c4c6c724007f38279561db35dbc251", null ],
+    [ "AcceptEnd", "classvrv_1_1_tempo.html#a4dc9e2b332d9aafd094236aba2063da7", null ],
     [ "Clone", "classvrv_1_1_tempo.html#abd805c69409cdb9f718c441c8c5c8d7f", null ],
     [ "GetClassName", "classvrv_1_1_tempo.html#a4c585761a3ae25c1f8c6edb41f6d9297", null ],
     [ "GetDrawingXRelativeToStaff", "classvrv_1_1_tempo.html#aafe64751f904f59835b2466df01be387", null ],
@@ -16,5 +19,6 @@ var classvrv_1_1_tempo =
     [ "IsExtenderElement", "classvrv_1_1_tempo.html#a5c23ed4022b962566560259c7b833377", null ],
     [ "IsSupportedChild", "classvrv_1_1_tempo.html#a1e23fec90d73196e73601756ee43b3e9", null ],
     [ "Reset", "classvrv_1_1_tempo.html#a06012ac7577667239c4605f31ff5f19c", null ],
-    [ "ResetData", "classvrv_1_1_tempo.html#a7eac9866abea67fdd50efbe0c3edca2c", null ]
+    [ "ResetDrawingXRelative", "classvrv_1_1_tempo.html#a5023d11bb17f205cc194f2bb0414d2a1", null ],
+    [ "SetDrawingXRelative", "classvrv_1_1_tempo.html#a200ef31f40382170d1a3677a4e433f0a", null ]
 ];

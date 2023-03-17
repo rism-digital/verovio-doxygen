@@ -2,17 +2,17 @@ var classvrv_1_1_chord =
 [
     [ "Chord", "classvrv_1_1_chord.html#ab6c5a3f6a8ec9843054579ea482a2b60", null ],
     [ "~Chord", "classvrv_1_1_chord.html#a9ae1e1fa231042a16cb94107e2572ee8", null ],
+    [ "Accept", "classvrv_1_1_chord.html#a79a42661dc0c3a803f255f9217dd5807", null ],
+    [ "Accept", "classvrv_1_1_chord.html#a1a79b11d9d70ceb0d51b1f39b832f383", null ],
+    [ "AcceptEnd", "classvrv_1_1_chord.html#a4b3e3c4b4eb3e1e157cb419f13331916", null ],
+    [ "AcceptEnd", "classvrv_1_1_chord.html#a94ae6bd87678cb95774ec5f2cc391d48", null ],
     [ "AddChild", "classvrv_1_1_chord.html#ae2f4e2f0d9f12957dddd6e523b4a4092", null ],
     [ "AdjustArtic", "classvrv_1_1_chord.html#aae29fa623ec2c53b382e3acbb841ebc6", null ],
     [ "AdjustCrossStaffYPos", "classvrv_1_1_chord.html#a1a69e37fbee2584124bb0276f23354fd", null ],
     [ "AdjustOverlappingLayers", "classvrv_1_1_chord.html#acac180ce66c91c94dd417979b36c7cb5", null ],
     [ "CalcArtic", "classvrv_1_1_chord.html#a781ed2e62b1ea64accaeb9d7a3469b32", null ],
-    [ "CalcChordNoteHeads", "classvrv_1_1_chord.html#a4d174c9c0fcd3d081fc5a4b72a6e7a3f", null ],
     [ "CalcDotLocations", "classvrv_1_1_chord.html#a10afab13db85219fed35984a84954c3e", null ],
-    [ "CalcDots", "classvrv_1_1_chord.html#a042d0aec5abab93dfae235c8a394ce1e", null ],
     [ "CalcNoteLocations", "classvrv_1_1_chord.html#a8f1440b120a8392270da3ef687352918", null ],
-    [ "CalcStem", "classvrv_1_1_chord.html#a71e3234e8cd1ac5ae75cff06e3429f02", null ],
-    [ "CalcStemDirection", "classvrv_1_1_chord.html#ad76c6121735c22be592f4fe4cd88ab53", null ],
     [ "CalcStemLenInThirdUnits", "classvrv_1_1_chord.html#ac5e128bd6475e2122665c7906c8f31a9", null ],
     [ "CalculateClusters", "classvrv_1_1_chord.html#af666ccc0ca022458e290f90dc6c5578c", null ],
     [ "ClearClusters", "classvrv_1_1_chord.html#afca94680f94f3e222e231970bc60e2d7", null ],
@@ -49,10 +49,6 @@ var classvrv_1_1_chord =
     [ "IsVisible", "classvrv_1_1_chord.html#a513eb215a397a4995e8b261df9740198", null ],
     [ "JustifyYAdjustCrossStaff", "classvrv_1_1_chord.html#ade2ce8d25c8d108b4dfbbd014e019866", null ],
     [ "PositionInChord", "classvrv_1_1_chord.html#aad7e7092366522e7bb388afb98a215e2", null ],
-    [ "PrepareDataInitialization", "classvrv_1_1_chord.html#aa5e392deeac9836a1068249c715610dd", null ],
-    [ "PrepareLayerElementParts", "classvrv_1_1_chord.html#a15242ceeb9c93c0580f91e113b1b7995", null ],
-    [ "PrepareLyrics", "classvrv_1_1_chord.html#a36150519804262324dbbc0e2a297b292", null ],
     [ "Reset", "classvrv_1_1_chord.html#a4b05be56b85202f76ab861836f8c04c2", null ],
-    [ "ResetAccidList", "classvrv_1_1_chord.html#a15da29444f2bc2ec20cd87f28b012fe5", null ],
-    [ "ResetData", "classvrv_1_1_chord.html#afb085215765307888bd87c6d82c2878a", null ]
+    [ "ResetAccidList", "classvrv_1_1_chord.html#a15da29444f2bc2ec20cd87f28b012fe5", null ]
 ];

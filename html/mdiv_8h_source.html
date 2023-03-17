@@ -122,37 +122,43 @@ $(document).ready(function(){initNavTree('mdiv_8h_source.html',''); initResizabl
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// Functors //</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//----------//</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_mdiv.html#a860750262ee1f94a9645db443479764f">Save</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_mdiv.html#a99b746a7048bc8f065cbe9065907827e">SaveEnd</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_mdiv.html#a5ca5b48a41f9b208d120357d01241e79">ConvertToPageBased</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_mdiv.html#aedec07580735cb8d4db61912204fd644">ConvertToPageBasedEnd</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_mdiv.html#ac7fd09a66621f2bf139ec65ec8825aaa">Transpose</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classvrv_1_1_mdiv.html#a2feff2dd52fe229fb3346921ef6610d9">   85</a></span>&#160;    VisibilityType <a class="code" href="classvrv_1_1_mdiv.html#a2feff2dd52fe229fb3346921ef6610d9">m_visibility</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_mdiv.html#ad3febc849d49c57fd52a5bb89ae91ef9">Accept</a>(MutableFunctor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_mdiv.html#ad3febc849d49c57fd52a5bb89ae91ef9">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    FunctorCode AcceptEnd(MutableFunctor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_mdiv.html#a860750262ee1f94a9645db443479764f">Save</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_mdiv.html#a99b746a7048bc8f065cbe9065907827e">SaveEnd</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_mdiv.html#a5ca5b48a41f9b208d120357d01241e79">ConvertToPageBased</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_mdiv.html#aedec07580735cb8d4db61912204fd644">ConvertToPageBasedEnd</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_mdiv.html#ac7fd09a66621f2bf139ec65ec8825aaa">Transpose</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classvrv_1_1_mdiv.html#a2feff2dd52fe229fb3346921ef6610d9">   95</a></span>&#160;    VisibilityType <a class="code" href="classvrv_1_1_mdiv.html#a2feff2dd52fe229fb3346921ef6610d9">m_visibility</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_mdiv_html_aed76997a32ca68f9ca9f2c1dc614bca6"><div class="ttname"><a href="classvrv_1_1_mdiv.html#aed76997a32ca68f9ca9f2c1dc614bca6">vrv::Mdiv::MakeVisible</a></div><div class="ttdeci">void MakeVisible()</div><div class="ttdoc">Make the mdiv and its parent (recursively) visible.</div></div>
-<div class="ttc" id="aclassvrv_1_1_mdiv_html_a2feff2dd52fe229fb3346921ef6610d9"><div class="ttname"><a href="classvrv_1_1_mdiv.html#a2feff2dd52fe229fb3346921ef6610d9">vrv::Mdiv::m_visibility</a></div><div class="ttdeci">VisibilityType m_visibility</div><div class="ttdoc">Holds the visibility (hidden or visible) for an mdiv element.</div><div class="ttdef"><b>Definition:</b> mdiv.h:85</div></div>
-<div class="ttc" id="aclassvrv_1_1_page_milestone_interface_html"><div class="ttname"><a href="classvrv_1_1_page_milestone_interface.html">vrv::PageMilestoneInterface</a></div><div class="ttdoc">This class is an interface for container elements that have to be turned to milestones in a page-base...</div><div class="ttdef"><b>Definition:</b> pagemilestone.h:103</div></div>
+<div class="ttc" id="aclassvrv_1_1_mdiv_html_a2feff2dd52fe229fb3346921ef6610d9"><div class="ttname"><a href="classvrv_1_1_mdiv.html#a2feff2dd52fe229fb3346921ef6610d9">vrv::Mdiv::m_visibility</a></div><div class="ttdeci">VisibilityType m_visibility</div><div class="ttdoc">Holds the visibility (hidden or visible) for an mdiv element.</div><div class="ttdef"><b>Definition:</b> mdiv.h:95</div></div>
+<div class="ttc" id="aclassvrv_1_1_page_milestone_interface_html"><div class="ttname"><a href="classvrv_1_1_page_milestone_interface.html">vrv::PageMilestoneInterface</a></div><div class="ttdoc">This class is an interface for container elements that have to be turned to milestones in a page-base...</div><div class="ttdef"><b>Definition:</b> pagemilestone.h:113</div></div>
 <div class="ttc" id="aclassvrv_1_1_mdiv_html_a99b746a7048bc8f065cbe9065907827e"><div class="ttname"><a href="classvrv_1_1_mdiv.html#a99b746a7048bc8f065cbe9065907827e">vrv::Mdiv::SaveEnd</a></div><div class="ttdeci">int SaveEnd(FunctorParams *functorParams) override</div><div class="ttdoc">End Functor for Object::Save.</div></div>
 <div class="ttc" id="aclassvrv_1_1_mdiv_html_af7775d6aa1de70f83a6432ca4c3a39bd"><div class="ttname"><a href="classvrv_1_1_mdiv.html#af7775d6aa1de70f83a6432ca4c3a39bd">vrv::Mdiv::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> mdiv.h:34</div></div>
 <div class="ttc" id="aclassvrv_1_1_page_element_html"><div class="ttname"><a href="classvrv_1_1_page_element.html">vrv::PageElement</a></div><div class="ttdoc">This class represents elements appearing within a page.</div><div class="ttdef"><b>Definition:</b> pageelement.h:25</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:59</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:61</div></div>
 <div class="ttc" id="aclassvrv_1_1_mdiv_html_a5ca5b48a41f9b208d120357d01241e79"><div class="ttname"><a href="classvrv_1_1_mdiv.html#a5ca5b48a41f9b208d120357d01241e79">vrv::Mdiv::ConvertToPageBased</a></div><div class="ttdeci">int ConvertToPageBased(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ConvertToPageBased.</div></div>
 <div class="ttc" id="aclassvrv_1_1_mdiv_html_a860750262ee1f94a9645db443479764f"><div class="ttname"><a href="classvrv_1_1_mdiv.html#a860750262ee1f94a9645db443479764f">vrv::Mdiv::Save</a></div><div class="ttdeci">int Save(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::Save Invisible Mdiv elements are not saved in page-based MEI.</div></div>
+<div class="ttc" id="aclassvrv_1_1_mdiv_html_ad3febc849d49c57fd52a5bb89ae91ef9"><div class="ttname"><a href="classvrv_1_1_mdiv.html#ad3febc849d49c57fd52a5bb89ae91ef9">vrv::Mdiv::Accept</a></div><div class="ttdeci">FunctorCode Accept(MutableFunctor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_mdiv_html"><div class="ttname"><a href="classvrv_1_1_mdiv.html">vrv::Mdiv</a></div><div class="ttdoc">This class represent a &lt;mdiv&gt; in page-based MEI.</div><div class="ttdef"><b>Definition:</b> mdiv.h:24</div></div>
 <div class="ttc" id="aclassvrv_1_1_mdiv_html_a61630b918f187093a38782ebe1c23dec"><div class="ttname"><a href="classvrv_1_1_mdiv.html#a61630b918f187093a38782ebe1c23dec">vrv::Mdiv::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Base method for checking if a child can be added.</div></div>
 <div class="ttc" id="aclassvrv_1_1_mdiv_html_aedec07580735cb8d4db61912204fd644"><div class="ttname"><a href="classvrv_1_1_mdiv.html#aedec07580735cb8d4db61912204fd644">vrv::Mdiv::ConvertToPageBasedEnd</a></div><div class="ttdeci">int ConvertToPageBasedEnd(FunctorParams *functorParams) override</div><div class="ttdoc">End Functor for Object::ConvertToPageBased.</div></div>
@@ -161,7 +167,7 @@ $(document).ready(function(){initNavTree('mdiv_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>mdiv.h</b></li>
-    <li class="footer">Generated on Fri Mar 17 2023 09:20:11 for Verovio by
+    <li class="footer">Generated on Fri Mar 17 2023 10:44:10 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

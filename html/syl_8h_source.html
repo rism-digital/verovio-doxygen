@@ -102,99 +102,95 @@ $(document).ready(function(){initNavTree('syl_8h_source.html',''); initResizable
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>AdjustSylSpacingParams;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>Note;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>TextElement;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// Syl</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classvrv_1_1_syl.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_syl.html">Syl</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keyword">public</span> <a class="code" href="classvrv_1_1_text_list_interface.html">TextListInterface</a>,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keyword">public</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html">TimeSpanningInterface</a>,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keyword">public</span> AttLang,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keyword">public</span> AttTypography,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keyword">public</span> AttSylLog {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classvrv_1_1_syl.html">Syl</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_syl.html">Syl</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classvrv_1_1_syl.html#a49723265ec79b247fa9bf1b4a4f48195">   46</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_syl.html#a49723265ec79b247fa9bf1b4a4f48195">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_syl.html">Syl</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_syl.html#a2e9a16066a8e2a0e22b8e140cdd79181">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Syl&quot;</span>; }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classvrv_1_1_syl.html#a6550dbe83c89d4e5091a99471ded5428">   52</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_syl.html#a6550dbe83c89d4e5091a99471ded5428">IsRelativeToStaff</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classvrv_1_1_time_point_interface.html">TimePointInterface</a> *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimePointInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">const</span> TimePointInterface *GetTimePointInterface()<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimePointInterface *&gt;(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    TimeSpanningInterface *GetTimeSpanningInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimeSpanningInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">const</span> TimeSpanningInterface *GetTimeSpanningInterface()<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimeSpanningInterface *&gt;(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_syl.html#a3988224b5fb94f470dc58cb5fe4f0ea0">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_syl.html#a66d380bb93bb0abd4afd78b21251bfc9">CalcConnectorSpacing</a>(Doc *doc, <span class="keywordtype">int</span> staffSize);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> GetDrawingWidth() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> GetDrawingHeight() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_syl.html#a1badd5c259029647bf2cbc5dca79e7b8">PrepareLyrics</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_syl.html#afb7362ba6329690bb427b0b791cc4a08">PrepareStaffCurrentTimeSpanning</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_syl.html#aaddb1fd37cf48bda08d0cdb30e4260a6">GenerateMIDI</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_syl.html#af1deb17e0aa430e11f160d9277930aab">ResetData</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_syl.html#a61983aa1e78d32047fffe5f3c083c09f">CreateDefaultZone</a>(Doc *doc);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classvrv_1_1_syl.html#a404f20b3057e7ff75388ef20e417b21a">  118</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_syl.html#a404f20b3057e7ff75388ef20e417b21a">m_drawingVerse</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>Note;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>TextElement;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// Syl</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classvrv_1_1_syl.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_syl.html">Syl</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keyword">public</span> <a class="code" href="classvrv_1_1_text_list_interface.html">TextListInterface</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keyword">public</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html">TimeSpanningInterface</a>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keyword">public</span> AttLang,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keyword">public</span> AttTypography,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keyword">public</span> AttSylLog {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classvrv_1_1_syl.html">Syl</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_syl.html">Syl</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classvrv_1_1_syl.html#a49723265ec79b247fa9bf1b4a4f48195">   45</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_syl.html#a49723265ec79b247fa9bf1b4a4f48195">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_syl.html">Syl</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_syl.html#a2e9a16066a8e2a0e22b8e140cdd79181">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Syl&quot;</span>; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classvrv_1_1_syl.html#a6550dbe83c89d4e5091a99471ded5428">   51</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_syl.html#a6550dbe83c89d4e5091a99471ded5428">IsRelativeToStaff</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classvrv_1_1_time_point_interface.html">TimePointInterface</a> *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimePointInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">const</span> TimePointInterface *GetTimePointInterface()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimePointInterface *&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    TimeSpanningInterface *GetTimeSpanningInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimeSpanningInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">const</span> TimeSpanningInterface *GetTimeSpanningInterface()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimeSpanningInterface *&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_syl.html#a3988224b5fb94f470dc58cb5fe4f0ea0">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_syl.html#a66d380bb93bb0abd4afd78b21251bfc9">CalcConnectorSpacing</a>(Doc *doc, <span class="keywordtype">int</span> staffSize);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">int</span> GetDrawingWidth() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> GetDrawingHeight() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_syl.html#aa2f05f2087a4c6d03c144a79716e6814">Accept</a>(MutableFunctor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_syl.html#aa2f05f2087a4c6d03c144a79716e6814">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    FunctorCode AcceptEnd(MutableFunctor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_syl.html#aaddb1fd37cf48bda08d0cdb30e4260a6">GenerateMIDI</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_syl.html#a61983aa1e78d32047fffe5f3c083c09f">CreateDefaultZone</a>(Doc *doc);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classvrv_1_1_syl.html#a404f20b3057e7ff75388ef20e417b21a">  112</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_syl.html#a404f20b3057e7ff75388ef20e417b21a">m_drawingVerse</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classvrv_1_1_syl.html#a4361a86d6f701297177228a378b9313c">  118</a></span>&#160;    <a class="code" href="classvrv_1_1_syl.html">Syl</a> *<a class="code" href="classvrv_1_1_syl.html#a4361a86d6f701297177228a378b9313c">m_nextWordSyl</a>;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classvrv_1_1_syl.html#a4361a86d6f701297177228a378b9313c">  124</a></span>&#160;    <a class="code" href="classvrv_1_1_syl.html">Syl</a> *<a class="code" href="classvrv_1_1_syl.html#a4361a86d6f701297177228a378b9313c">m_nextWordSyl</a>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;};</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_syl_html_a61983aa1e78d32047fffe5f3c083c09f"><div class="ttname"><a href="classvrv_1_1_syl.html#a61983aa1e78d32047fffe5f3c083c09f">vrv::Syl::CreateDefaultZone</a></div><div class="ttdeci">bool CreateDefaultZone(Doc *doc)</div><div class="ttdoc">Create a default zone for a syl based on syllable.</div></div>
 <div class="ttc" id="aclassvrv_1_1_syl_html_aaddb1fd37cf48bda08d0cdb30e4260a6"><div class="ttname"><a href="classvrv_1_1_syl.html#aaddb1fd37cf48bda08d0cdb30e4260a6">vrv::Syl::GenerateMIDI</a></div><div class="ttdeci">int GenerateMIDI(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::GenerateMIDI.</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:59</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:61</div></div>
 <div class="ttc" id="aclassvrv_1_1_syl_html_a2e9a16066a8e2a0e22b8e140cdd79181"><div class="ttname"><a href="classvrv_1_1_syl.html#a2e9a16066a8e2a0e22b8e140cdd79181">vrv::Syl::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
+<div class="ttc" id="aclassvrv_1_1_syl_html_aa2f05f2087a4c6d03c144a79716e6814"><div class="ttname"><a href="classvrv_1_1_syl.html#aa2f05f2087a4c6d03c144a79716e6814">vrv::Syl::Accept</a></div><div class="ttdeci">FunctorCode Accept(MutableFunctor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_syl_html_a66d380bb93bb0abd4afd78b21251bfc9"><div class="ttname"><a href="classvrv_1_1_syl.html#a66d380bb93bb0abd4afd78b21251bfc9">vrv::Syl::CalcConnectorSpacing</a></div><div class="ttdeci">int CalcConnectorSpacing(Doc *doc, int staffSize)</div><div class="ttdoc">Calculate the spacing needed depending on the @worpos and @con.</div></div>
-<div class="ttc" id="aclassvrv_1_1_syl_html_a4361a86d6f701297177228a378b9313c"><div class="ttname"><a href="classvrv_1_1_syl.html#a4361a86d6f701297177228a378b9313c">vrv::Syl::m_nextWordSyl</a></div><div class="ttdeci">Syl * m_nextWordSyl</div><div class="ttdoc">A pointer to the next syllable of the word.</div><div class="ttdef"><b>Definition:</b> syl.h:124</div></div>
-<div class="ttc" id="aclassvrv_1_1_text_list_interface_html"><div class="ttname"><a href="classvrv_1_1_text_list_interface.html">vrv::TextListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1792</div></div>
-<div class="ttc" id="aclassvrv_1_1_syl_html_af1deb17e0aa430e11f160d9277930aab"><div class="ttname"><a href="classvrv_1_1_syl.html#af1deb17e0aa430e11f160d9277930aab">vrv::Syl::ResetData</a></div><div class="ttdeci">int ResetData(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetData.</div></div>
-<div class="ttc" id="aclassvrv_1_1_syl_html_a1badd5c259029647bf2cbc5dca79e7b8"><div class="ttname"><a href="classvrv_1_1_syl.html#a1badd5c259029647bf2cbc5dca79e7b8">vrv::Syl::PrepareLyrics</a></div><div class="ttdeci">int PrepareLyrics(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::PrepareLyrics.</div></div>
-<div class="ttc" id="aclassvrv_1_1_syl_html_a49723265ec79b247fa9bf1b4a4f48195"><div class="ttname"><a href="classvrv_1_1_syl.html#a49723265ec79b247fa9bf1b4a4f48195">vrv::Syl::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> syl.h:46</div></div>
-<div class="ttc" id="aclassvrv_1_1_syl_html"><div class="ttname"><a href="classvrv_1_1_syl.html">vrv::Syl</a></div><div class="ttdoc">Syl is a TimeSpanningInterface for managing syllable connectors.</div><div class="ttdef"><b>Definition:</b> syl.h:32</div></div>
-<div class="ttc" id="aclassvrv_1_1_syl_html_afb7362ba6329690bb427b0b791cc4a08"><div class="ttname"><a href="classvrv_1_1_syl.html#afb7362ba6329690bb427b0b791cc4a08">vrv::Syl::PrepareStaffCurrentTimeSpanning</a></div><div class="ttdeci">int PrepareStaffCurrentTimeSpanning(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::PrepareStaffCurrentTimeSpanning.</div></div>
-<div class="ttc" id="aclassvrv_1_1_syl_html_a404f20b3057e7ff75388ef20e417b21a"><div class="ttname"><a href="classvrv_1_1_syl.html#a404f20b3057e7ff75388ef20e417b21a">vrv::Syl::m_drawingVerse</a></div><div class="ttdeci">int m_drawingVerse</div><div class="ttdoc">The verse number with multiple verses Value is 1 by default, set in PrepareLyrics.</div><div class="ttdef"><b>Definition:</b> syl.h:118</div></div>
+<div class="ttc" id="aclassvrv_1_1_syl_html_a4361a86d6f701297177228a378b9313c"><div class="ttname"><a href="classvrv_1_1_syl.html#a4361a86d6f701297177228a378b9313c">vrv::Syl::m_nextWordSyl</a></div><div class="ttdeci">Syl * m_nextWordSyl</div><div class="ttdoc">A pointer to the next syllable of the word.</div><div class="ttdef"><b>Definition:</b> syl.h:118</div></div>
+<div class="ttc" id="aclassvrv_1_1_text_list_interface_html"><div class="ttname"><a href="classvrv_1_1_text_list_interface.html">vrv::TextListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1293</div></div>
+<div class="ttc" id="aclassvrv_1_1_syl_html_a49723265ec79b247fa9bf1b4a4f48195"><div class="ttname"><a href="classvrv_1_1_syl.html#a49723265ec79b247fa9bf1b4a4f48195">vrv::Syl::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> syl.h:45</div></div>
+<div class="ttc" id="aclassvrv_1_1_syl_html"><div class="ttname"><a href="classvrv_1_1_syl.html">vrv::Syl</a></div><div class="ttdoc">Syl is a TimeSpanningInterface for managing syllable connectors.</div><div class="ttdef"><b>Definition:</b> syl.h:31</div></div>
+<div class="ttc" id="aclassvrv_1_1_syl_html_a404f20b3057e7ff75388ef20e417b21a"><div class="ttname"><a href="classvrv_1_1_syl.html#a404f20b3057e7ff75388ef20e417b21a">vrv::Syl::m_drawingVerse</a></div><div class="ttdeci">int m_drawingVerse</div><div class="ttdoc">The verse number with multiple verses Value is 1 by default, set in PrepareLyrics.</div><div class="ttdef"><b>Definition:</b> syl.h:112</div></div>
 <div class="ttc" id="aclassvrv_1_1_syl_html_a3988224b5fb94f470dc58cb5fe4f0ea0"><div class="ttname"><a href="classvrv_1_1_syl.html#a3988224b5fb94f470dc58cb5fe4f0ea0">vrv::Syl::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Add an element (text, rend.</div></div>
-<div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html">vrv::TimeSpanningInterface</a></div><div class="ttdoc">This class is an interface for spanning elements, such as slur, hairpin, etc.</div><div class="ttdef"><b>Definition:</b> timeinterface.h:145</div></div>
+<div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html">vrv::TimeSpanningInterface</a></div><div class="ttdoc">This class is an interface for spanning elements, such as slur, hairpin, etc.</div><div class="ttdef"><b>Definition:</b> timeinterface.h:138</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:43</div></div>
-<div class="ttc" id="aclassvrv_1_1_time_point_interface_html"><div class="ttname"><a href="classvrv_1_1_time_point_interface.html">vrv::TimePointInterface</a></div><div class="ttdoc">This class is an interface for elements having a single time point, such as tempo,...</div><div class="ttdef"><b>Definition:</b> timeinterface.h:31</div></div>
-<div class="ttc" id="aclassvrv_1_1_syl_html_a6550dbe83c89d4e5091a99471ded5428"><div class="ttname"><a href="classvrv_1_1_syl.html#a6550dbe83c89d4e5091a99471ded5428">vrv::Syl::IsRelativeToStaff</a></div><div class="ttdeci">bool IsRelativeToStaff() const override</div><div class="ttdoc">Override the method since it is align to the staff.</div><div class="ttdef"><b>Definition:</b> syl.h:52</div></div>
+<div class="ttc" id="aclassvrv_1_1_time_point_interface_html"><div class="ttname"><a href="classvrv_1_1_time_point_interface.html">vrv::TimePointInterface</a></div><div class="ttdoc">This class is an interface for elements having a single time point, such as tempo,...</div><div class="ttdef"><b>Definition:</b> timeinterface.h:35</div></div>
+<div class="ttc" id="aclassvrv_1_1_syl_html_a6550dbe83c89d4e5091a99471ded5428"><div class="ttname"><a href="classvrv_1_1_syl.html#a6550dbe83c89d4e5091a99471ded5428">vrv::Syl::IsRelativeToStaff</a></div><div class="ttdeci">bool IsRelativeToStaff() const override</div><div class="ttdoc">Override the method since it is align to the staff.</div><div class="ttdef"><b>Definition:</b> syl.h:51</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>syl.h</b></li>
-    <li class="footer">Generated on Fri Mar 17 2023 09:20:11 for Verovio by
+    <li class="footer">Generated on Fri Mar 17 2023 10:44:10 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

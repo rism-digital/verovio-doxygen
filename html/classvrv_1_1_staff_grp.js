@@ -2,6 +2,10 @@ var classvrv_1_1_staff_grp =
 [
     [ "StaffGrp", "classvrv_1_1_staff_grp.html#acfdee10e6bfbe75ae8521d2f0e76f967", null ],
     [ "~StaffGrp", "classvrv_1_1_staff_grp.html#aa5cb41c0c9cbfda06ec1512ad4c09581", null ],
+    [ "Accept", "classvrv_1_1_staff_grp.html#a05b6030015d80bc28dba102e5c44dcce", null ],
+    [ "Accept", "classvrv_1_1_staff_grp.html#abd7625e817de8cadb88fcd4aa33c2773", null ],
+    [ "AcceptEnd", "classvrv_1_1_staff_grp.html#a1b0182c7b3c493952db60431ff878002", null ],
+    [ "AcceptEnd", "classvrv_1_1_staff_grp.html#a03b45058a304cfb3790e6b42a58b8229", null ],
     [ "Clone", "classvrv_1_1_staff_grp.html#ac56b73d6ae3264fed6f2ad7a190b2c94", null ],
     [ "FilterList", "classvrv_1_1_staff_grp.html#ac6958c0073ddb430762f14c349e3c88f", null ],
     [ "GetClassName", "classvrv_1_1_staff_grp.html#a59ff3fb123ff0c0cf93a9e456f91dadf", null ],
@@ -22,7 +26,6 @@ var classvrv_1_1_staff_grp =
     [ "HasLabelInfo", "classvrv_1_1_staff_grp.html#a542ce1d55ab300c4d225e8789c020689", null ],
     [ "IsSupportedChild", "classvrv_1_1_staff_grp.html#aa21bff7d15bb42c6bc012053b3af0ec9", null ],
     [ "Reset", "classvrv_1_1_staff_grp.html#a3a45f6fd7726cee3546740b28d6cbd4a", null ],
-    [ "ScoreDefOptimizeEnd", "classvrv_1_1_staff_grp.html#ac45d8be3ad15e6403888ba77ec0e3e30", null ],
     [ "SetDrawingVisibility", "classvrv_1_1_staff_grp.html#a84b445f6a6c649cd9f35f9fd2adbecaa", null ],
     [ "SetEverythingVisible", "classvrv_1_1_staff_grp.html#acc4b1b907f5839789cbae943bd133987", null ],
     [ "SetGroupSymbol", "classvrv_1_1_staff_grp.html#a94713544a37bd12ad3b8aafaff326fd0", null ]

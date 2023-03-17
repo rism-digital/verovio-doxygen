@@ -2,7 +2,10 @@ var classvrv_1_1_tab_grp =
 [
     [ "TabGrp", "classvrv_1_1_tab_grp.html#a3f93da161d7d3efd6fd38b111c854523", null ],
     [ "~TabGrp", "classvrv_1_1_tab_grp.html#a7dd4d52ae860d55b27b0fb2098eecf60", null ],
-    [ "CalcStem", "classvrv_1_1_tab_grp.html#a3f1407ac41f5dd20076558863048799d", null ],
+    [ "Accept", "classvrv_1_1_tab_grp.html#a1057a797ec16c46ec1aa0c661b5287ae", null ],
+    [ "Accept", "classvrv_1_1_tab_grp.html#aff304e4a64347678a941c84d8dc8de6d", null ],
+    [ "AcceptEnd", "classvrv_1_1_tab_grp.html#acd4e6d6ff761f0563d1f352409712ced", null ],
+    [ "AcceptEnd", "classvrv_1_1_tab_grp.html#a93f8f517c0a4235e9df9de8584128664", null ],
     [ "FilterList", "classvrv_1_1_tab_grp.html#a04acee72bd2fed1bd113497fbe99dc6e", null ],
     [ "GetBottomNote", "classvrv_1_1_tab_grp.html#a8486feba49453626e1b31820889c2c02", null ],
     [ "GetBottomNote", "classvrv_1_1_tab_grp.html#a7d5750a1f2f5495479ed14b74b966911", null ],

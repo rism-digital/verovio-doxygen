@@ -2,6 +2,10 @@ var classvrv_1_1_accid =
 [
     [ "Accid", "classvrv_1_1_accid.html#a385ef85fbb09ef0fb17791e154ce1c3b", null ],
     [ "~Accid", "classvrv_1_1_accid.html#a3014327e53837ca3afae02ebd1766006", null ],
+    [ "Accept", "classvrv_1_1_accid.html#acf98adefcd56ea40c6e0a03b1980918b", null ],
+    [ "Accept", "classvrv_1_1_accid.html#abfe4d67d75369fb31adea657e136bd6c", null ],
+    [ "AcceptEnd", "classvrv_1_1_accid.html#a4ec0621320d49e846b700c7e9ceaff0c", null ],
+    [ "AcceptEnd", "classvrv_1_1_accid.html#a8be4362e48355069bf68ce9d3a6d7657", null ],
     [ "AdjustToLedgerLines", "classvrv_1_1_accid.html#a1329822edff3aec1913ce46bc597af55", null ],
     [ "AdjustX", "classvrv_1_1_accid.html#a76fd42528da09e5db02ea21618989991", null ],
     [ "Clone", "classvrv_1_1_accid.html#aa23814fce06c244b5a2b940fc6b06457", null ],
@@ -16,7 +20,5 @@ var classvrv_1_1_accid =
     [ "IsAlignedWithSameLayer", "classvrv_1_1_accid.html#a9bee4011667bfd5ff22541ca7151573c", null ],
     [ "IsRelativeToStaff", "classvrv_1_1_accid.html#ae2550b09c4f89c0b902b8e81130a8df0", null ],
     [ "Reset", "classvrv_1_1_accid.html#a7999212141783ba58dee1b18585c54fe", null ],
-    [ "ResetData", "classvrv_1_1_accid.html#a2d5d4b4d7130b639bb2bdc2e50d33b46", null ],
-    [ "ResetHorizontalAlignment", "classvrv_1_1_accid.html#a718aba950d2c110af324f9356ab1ec4a", null ],
     [ "SetDrawingUnisonAccid", "classvrv_1_1_accid.html#a97a11c75ccda23d82ebc1d272f280a71", null ]
 ];

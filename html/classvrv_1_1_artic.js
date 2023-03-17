@@ -2,6 +2,10 @@ var classvrv_1_1_artic =
 [
     [ "Artic", "classvrv_1_1_artic.html#aaa00075555eb6279bf17ef2bfa967f98", null ],
     [ "~Artic", "classvrv_1_1_artic.html#a3c96bf603ee31f3ea031f4a8a2ac0584", null ],
+    [ "Accept", "classvrv_1_1_artic.html#abd948ab81a3171d16814864d7abf0994", null ],
+    [ "Accept", "classvrv_1_1_artic.html#ac24e92d9caa95f2f304d27e9a4f634d6", null ],
+    [ "AcceptEnd", "classvrv_1_1_artic.html#a35b8544d49c6c40041c92e1e6852ae33", null ],
+    [ "AcceptEnd", "classvrv_1_1_artic.html#ac21f1239277753b0da61fd8aa821a081", null ],
     [ "AddSlurPositioner", "classvrv_1_1_artic.html#a898c16e5f1bb2d34999f2cf2344167ea", null ],
     [ "AdjustArtic", "classvrv_1_1_artic.html#a92fd3e822f6a12abf5c5cc5b9b47f0eb", null ],
     [ "AdjustArticWithSlurs", "classvrv_1_1_artic.html#a90d488bfbdfbcad4d55dc1aad59e7b9c", null ],
@@ -20,8 +24,8 @@ var classvrv_1_1_artic =
     [ "IsOutsideArtic", "classvrv_1_1_artic.html#a71697eeca9129013c0fc4cf92ec7ddf6", null ],
     [ "IsRelativeToStaff", "classvrv_1_1_artic.html#a7d98b5d8964b7b768cc3627b0860c276", null ],
     [ "Reset", "classvrv_1_1_artic.html#aa81d87ff6bc9f849b4c695340c488ad3", null ],
-    [ "ResetData", "classvrv_1_1_artic.html#a1165af25fc2b6f9296cd31d353b50523", null ],
     [ "ResetVerticalAlignment", "classvrv_1_1_artic.html#a775b0d8742be325b3619d78ea91b26fe", null ],
+    [ "SetDrawingPlace", "classvrv_1_1_artic.html#a323540965f65e837ab258b67ba2efc30", null ],
     [ "SplitMultival", "classvrv_1_1_artic.html#ac7bf2f16b9558129980adb1c29b6b0c2", null ],
     [ "m_endSlurPositioners", "classvrv_1_1_artic.html#a2b72f25fa8bc491faae7a148faa62d94", null ],
     [ "m_startSlurPositioners", "classvrv_1_1_artic.html#aeb7492d88bdab31de3f09ffb6adbff05", null ]

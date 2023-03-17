@@ -119,36 +119,39 @@ $(document).ready(function(){initNavTree('mrpt_8h_source.html',''); initResizabl
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// Functors //</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//----------//</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_m_rpt.html#aea48320227ec6384c5ee4e39792da56f">GenerateMIDI</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_m_rpt.html#a6929653836e5273d87ea270138612e64">PrepareRpt</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classvrv_1_1_m_rpt.html#a0c04454136a4651bc77f2f6e434f2f51">   60</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_m_rpt.html#a0c04454136a4651bc77f2f6e434f2f51">m_drawingMeasureCount</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_m_rpt.html#ac470291fd62ae8f848109c019446693f">Accept</a>(MutableFunctor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_m_rpt.html#ac470291fd62ae8f848109c019446693f">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    FunctorCode AcceptEnd(MutableFunctor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_m_rpt.html#aea48320227ec6384c5ee4e39792da56f">GenerateMIDI</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classvrv_1_1_m_rpt.html#a0c04454136a4651bc77f2f6e434f2f51">   65</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_m_rpt.html#a0c04454136a4651bc77f2f6e434f2f51">m_drawingMeasureCount</a>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:59</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:61</div></div>
 <div class="ttc" id="aclassvrv_1_1_m_rpt_html_aea48320227ec6384c5ee4e39792da56f"><div class="ttname"><a href="classvrv_1_1_m_rpt.html#aea48320227ec6384c5ee4e39792da56f">vrv::MRpt::GenerateMIDI</a></div><div class="ttdeci">int GenerateMIDI(FunctorParams *functorParams) override</div><div class="ttdoc">Export the object to a MidiFile.</div></div>
-<div class="ttc" id="aclassvrv_1_1_m_rpt_html_a6929653836e5273d87ea270138612e64"><div class="ttname"><a href="classvrv_1_1_m_rpt.html#a6929653836e5273d87ea270138612e64">vrv::MRpt::PrepareRpt</a></div><div class="ttdeci">int PrepareRpt(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::PrepareRpt.</div></div>
-<div class="ttc" id="aclassvrv_1_1_m_rpt_html_a0c04454136a4651bc77f2f6e434f2f51"><div class="ttname"><a href="classvrv_1_1_m_rpt.html#a0c04454136a4651bc77f2f6e434f2f51">vrv::MRpt::m_drawingMeasureCount</a></div><div class="ttdeci">int m_drawingMeasureCount</div><div class="ttdoc">measure count</div><div class="ttdef"><b>Definition:</b> mrpt.h:60</div></div>
+<div class="ttc" id="aclassvrv_1_1_m_rpt_html_a0c04454136a4651bc77f2f6e434f2f51"><div class="ttname"><a href="classvrv_1_1_m_rpt.html#a0c04454136a4651bc77f2f6e434f2f51">vrv::MRpt::m_drawingMeasureCount</a></div><div class="ttdeci">int m_drawingMeasureCount</div><div class="ttdoc">measure count</div><div class="ttdef"><b>Definition:</b> mrpt.h:65</div></div>
 <div class="ttc" id="aclassvrv_1_1_m_rpt_html_a6f4eb43609d814581b8862dea26374b8"><div class="ttname"><a href="classvrv_1_1_m_rpt.html#a6f4eb43609d814581b8862dea26374b8">vrv::MRpt::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> mrpt.h:35</div></div>
 <div class="ttc" id="aclassvrv_1_1_m_rpt_html"><div class="ttname"><a href="classvrv_1_1_m_rpt.html">vrv::MRpt</a></div><div class="ttdoc">This class models the MEI &lt;mRpt&gt; element.</div><div class="ttdef"><b>Definition:</b> mrpt.h:26</div></div>
+<div class="ttc" id="aclassvrv_1_1_m_rpt_html_ac470291fd62ae8f848109c019446693f"><div class="ttname"><a href="classvrv_1_1_m_rpt.html#ac470291fd62ae8f848109c019446693f">vrv::MRpt::Accept</a></div><div class="ttdeci">FunctorCode Accept(MutableFunctor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_m_rpt_html_a59b0a0b2c9f5494c59b71a0bace6e15e"><div class="ttname"><a href="classvrv_1_1_m_rpt.html#a59b0a0b2c9f5494c59b71a0bace6e15e">vrv::MRpt::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:43</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>mrpt.h</b></li>
-    <li class="footer">Generated on Fri Mar 17 2023 09:20:11 for Verovio by
+    <li class="footer">Generated on Fri Mar 17 2023 10:44:10 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

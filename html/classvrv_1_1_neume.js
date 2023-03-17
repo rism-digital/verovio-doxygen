@@ -2,6 +2,10 @@ var classvrv_1_1_neume =
 [
     [ "Neume", "classvrv_1_1_neume.html#a7ef37c29a357205c1140f08f890f8476", null ],
     [ "~Neume", "classvrv_1_1_neume.html#aa01b75b6514a606f567459c710a89753", null ],
+    [ "Accept", "classvrv_1_1_neume.html#ae07d038a54ae850970ba71aba151069c", null ],
+    [ "Accept", "classvrv_1_1_neume.html#aad48066968380e0c28e48e86ef5ce46e", null ],
+    [ "AcceptEnd", "classvrv_1_1_neume.html#af767dea52b0e99a1f445afdccfa8f3a0", null ],
+    [ "AcceptEnd", "classvrv_1_1_neume.html#a43140a306314694e8d7a9f23d56d1aa7", null ],
     [ "Clone", "classvrv_1_1_neume.html#af5594fb689bc7bdcbe4f68c62cfd02fa", null ],
     [ "GenerateChildMelodic", "classvrv_1_1_neume.html#acbf3e102b8872d17abfa71bf67faa87c", null ],
     [ "GetClassName", "classvrv_1_1_neume.html#a4eacfab5a67d84b51a798d2b2cc40df4", null ],

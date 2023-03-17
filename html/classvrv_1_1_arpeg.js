@@ -2,8 +2,11 @@ var classvrv_1_1_arpeg =
 [
     [ "Arpeg", "classvrv_1_1_arpeg.html#a05a4c5ac58f19933ccd31e631f0606ea", null ],
     [ "~Arpeg", "classvrv_1_1_arpeg.html#af310ef613bd9c5e61dd5f710b1f32ba5", null ],
-    [ "AdjustArpeg", "classvrv_1_1_arpeg.html#a6f38ec62caaa443acae4c3eb3a67ca55", null ],
-    [ "CacheHorizontalLayout", "classvrv_1_1_arpeg.html#a707b9c9d38d731e82cd982bc153f7d93", null ],
+    [ "Accept", "classvrv_1_1_arpeg.html#a2918b938751422887bf2e81ede337ba1", null ],
+    [ "Accept", "classvrv_1_1_arpeg.html#ac167d6ae2ae2aaff49188097c1cbdfd8", null ],
+    [ "AcceptEnd", "classvrv_1_1_arpeg.html#ae34d0af08b36accae0db6be1a513763c", null ],
+    [ "AcceptEnd", "classvrv_1_1_arpeg.html#af2ba3039321ee97bddcd38e04579be11", null ],
+    [ "CacheXRel", "classvrv_1_1_arpeg.html#aea1a6b467addcd181e0d6c2129769592", null ],
     [ "Clone", "classvrv_1_1_arpeg.html#afe45574f26ac977fffa6606eebd77cf4", null ],
     [ "GetClassName", "classvrv_1_1_arpeg.html#a17e42f22b656e63343988de7d35c83b9", null ],
     [ "GetCrossStaff", "classvrv_1_1_arpeg.html#aaab2107a9ec1a6c51018674da16ba32c", null ],
@@ -20,7 +23,5 @@ var classvrv_1_1_arpeg =
     [ "InitMIDI", "classvrv_1_1_arpeg.html#ae5dcc37bde57cb069b38ca292aed4d76", null ],
     [ "IsValidRef", "classvrv_1_1_arpeg.html#ae17abbb42c15c08e953b014032ba6203", null ],
     [ "Reset", "classvrv_1_1_arpeg.html#a647b7b96ece5fba2d339f1c0487cd601", null ],
-    [ "ResetData", "classvrv_1_1_arpeg.html#aa2a731c8679d1766a3582b8375b15f28", null ],
-    [ "ResetHorizontalAlignment", "classvrv_1_1_arpeg.html#a8e007b23c0fb1dc5ddd24e2ec4ce72df", null ],
     [ "SetDrawingXRel", "classvrv_1_1_arpeg.html#af1ab8eccb2a91fd27ce901e4577f942b", null ]
 ];

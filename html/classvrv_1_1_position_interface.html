@@ -122,14 +122,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>CalcDrawingLoc</b> (co
 <tr class="memitem:a3312dbe1415b5eafb2762ffe2e612d54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_position_interface.html#a3312dbe1415b5eafb2762ffe2e612d54">HasIdenticalPositionInterface</a> (const <a class="el" href="classvrv_1_1_position_interface.html">PositionInterface</a> *otherPositionInterface) const</td></tr>
 <tr class="memdesc:a3312dbe1415b5eafb2762ffe2e612d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inteface comparison operator.  <a href="classvrv_1_1_position_interface.html#a3312dbe1415b5eafb2762ffe2e612d54">More...</a><br /></td></tr>
 <tr class="separator:a3312dbe1415b5eafb2762ffe2e612d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9e4cb8b0ec7e2e411efec7f1e634205"><td class="memItemLeft" align="right" valign="top"><a id="aa9e4cb8b0ec7e2e411efec7f1e634205"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_position_interface.html#aa9e4cb8b0ec7e2e411efec7f1e634205">InterfaceResetData</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams, <a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
-<tr class="memdesc:aa9e4cb8b0ec7e2e411efec7f1e634205"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a810bab1b8cdb43737577d2d4aa9f00cb" title="Reset the drawing values before calling PrepareData after changes.">Object::ResetData</a>. <br /></td></tr>
-<tr class="separator:aa9e4cb8b0ec7e2e411efec7f1e634205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac74c74fcf22d5ae9e9286623353da322"><td class="memItemLeft" align="right" valign="top"><a id="ac74c74fcf22d5ae9e9286623353da322"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_position_interface.html#ac74c74fcf22d5ae9e9286623353da322">InterfaceResetHorizontalAlignment</a> (<a class="el" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams, <a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
-<tr class="memdesc:ac74c74fcf22d5ae9e9286623353da322"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classvrv_1_1_object.html#a810bab1b8cdb43737577d2d4aa9f00cb" title="Reset the drawing values before calling PrepareData after changes.">Object::ResetData</a>. <br /></td></tr>
-<tr class="separator:ac74c74fcf22d5ae9e9286623353da322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, reset methods</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Reset method resets all attribute classes </p>
 </div></td></tr>
@@ -146,7 +138,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~PositionInterface
 <tr class="memdesc:aca64be02a7dd6b30f996cf4151858a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method returning the InterfaceId of the interface.  <a href="classvrv_1_1_position_interface.html#aca64be02a7dd6b30f996cf4151858a58">More...</a><br /></td></tr>
 <tr class="separator:aca64be02a7dd6b30f996cf4151858a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Setter and getter for the drawing staff loc.</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>This is set by the CalcAlignmentPitchPos functor. </p>
+<tr><td colspan="2"><div class="groupText"><p>This is set by the <a class="el" href="classvrv_1_1_calc_alignment_pitch_pos_functor.html" title="This class calculates the drawing position (m_drawingX and m_drawingY) values for objects.">CalcAlignmentPitchPosFunctor</a>. </p>
 </div></td></tr>
 <tr class="memitem:a3bdb6437c6e8739beea47e4bb978493f"><td class="memItemLeft" align="right" valign="top"><a id="a3bdb6437c6e8739beea47e4bb978493f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDrawingLoc</b> (int drawingLoc)</td></tr>
@@ -154,6 +146,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDrawingLoc</b> (in
 <tr class="memitem:a48e070408ebae29ba2e89806fe4b5ff8"><td class="memItemLeft" align="right" valign="top"><a id="a48e070408ebae29ba2e89806fe4b5ff8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingLoc</b> () const</td></tr>
 <tr class="separator:a48e070408ebae29ba2e89806fe4b5ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:acb9985fed8ff285e4ba9956129bc9e22"><td class="memItemLeft" align="right" valign="top">FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_position_interface.html#acb9985fed8ff285e4ba9956129bc9e22">InterfaceResetData</a> (<a class="el" href="classvrv_1_1_reset_data_functor.html">ResetDataFunctor</a> &amp;functor, <a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:acb9985fed8ff285e4ba9956129bc9e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">We have functor code in the interface for avoiding code duplication in each implementation class.  <a href="classvrv_1_1_position_interface.html#acb9985fed8ff285e4ba9956129bc9e22">More...</a><br /></td></tr>
+<tr class="separator:acb9985fed8ff285e4ba9956129bc9e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ee8812feea8812612377a2c8b351aa"><td class="memItemLeft" align="right" valign="top"><a id="a39ee8812feea8812612377a2c8b351aa"></a>
+FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>InterfaceResetHorizontalAlignment</b> (<a class="el" href="classvrv_1_1_reset_horizontal_alignment_functor.html">ResetHorizontalAlignmentFunctor</a> &amp;functor, <a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="separator:a39ee8812feea8812612377a2c8b351aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvrv_1_1_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_interface.html">vrv::Interface</a></td></tr>
 <tr class="memitem:a57c9a4f18b81a07ef0d14dc040f84257 inherit pub_methods_classvrv_1_1_interface"><td class="memItemLeft" align="right" valign="top"><a id="a57c9a4f18b81a07ef0d14dc040f84257"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_interface.html#a57c9a4f18b81a07ef0d14dc040f84257">RegisterInterfaceAttClass</a> (AttClassId attClassId)</td></tr>
@@ -192,6 +191,37 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Interface</b> ()<
 
 <p>Inteface comparison operator. </p>
 <p>Checks if the <a class="el" href="classvrv_1_1_layer_element.html" title="This class is a base class for the Layer (&lt;layer&gt;) content.">LayerElement</a> has a <a class="el" href="classvrv_1_1_position_interface.html" title="This class is an interface for elements with a position on the staff, such as rests.">PositionInterface</a> and compares attributes </p>
+
+</div>
+</div>
+<a id="acb9985fed8ff285e4ba9956129bc9e22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb9985fed8ff285e4ba9956129bc9e22">&#9670;&nbsp;</a></span>InterfaceResetData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FunctorCode vrv::PositionInterface::InterfaceResetData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_reset_data_functor.html">ResetDataFunctor</a> &amp;&#160;</td>
+          <td class="paramname"><em>functor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>object</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>We have functor code in the interface for avoiding code duplication in each implementation class. </p>
+<p>Since we are in an interface, we need to pass the object (implementation) to the pseudo functor method. </p>
 
 </div>
 </div>
@@ -266,7 +296,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Interface</b> ()<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_position_interface.html">PositionInterface</a></li>
-    <li class="footer">Generated on Fri Mar 17 2023 09:20:16 for Verovio by
+    <li class="footer">Generated on Fri Mar 17 2023 10:44:14 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

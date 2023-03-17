@@ -2,9 +2,12 @@ var classvrv_1_1_beam =
 [
     [ "Beam", "classvrv_1_1_beam.html#ad870ee58fa2f27ea30c1123b74e0f57f", null ],
     [ "~Beam", "classvrv_1_1_beam.html#a60d90b31b728d67d6c1143c264e5af3c", null ],
+    [ "Accept", "classvrv_1_1_beam.html#a0eb65c43b2ffccc2014b6add3b716352", null ],
+    [ "Accept", "classvrv_1_1_beam.html#a88dff24cd3e4b39dd64f92348e6b5038", null ],
+    [ "AcceptEnd", "classvrv_1_1_beam.html#a4bb6485ecd656962131dace79d9626f6", null ],
+    [ "AcceptEnd", "classvrv_1_1_beam.html#aa61ad0ec6a8d9f4c0afe34b352dbf936", null ],
     [ "AdjustBeams", "classvrv_1_1_beam.html#a5330f0f47fa15e055193519f35a7d8b0", null ],
     [ "AdjustBeamsEnd", "classvrv_1_1_beam.html#adf973ec376fc00891cf66584cbce298f", null ],
-    [ "CalcStem", "classvrv_1_1_beam.html#ac64aae8acb03de44fef47888894e6b0e", null ],
     [ "Clone", "classvrv_1_1_beam.html#ac0e454de096901edf2da61d1d07c80b0", null ],
     [ "FilterList", "classvrv_1_1_beam.html#a2b3cdfa137cce9ffc5df789eb8f063b7", null ],
     [ "GetAdditionalBeamCount", "classvrv_1_1_beam.html#a091ac4c2fb6cdd046b679e61069f638d", null ],
@@ -21,8 +24,6 @@ var classvrv_1_1_beam =
     [ "IsSupportedChild", "classvrv_1_1_beam.html#a2222ff99c31c7384fc4e3c6dff08b47a", null ],
     [ "IsTabBeam", "classvrv_1_1_beam.html#a26f7b2d176314772a13b06ec15d23758", null ],
     [ "Reset", "classvrv_1_1_beam.html#a8e2ee9ef2db29335c50410da804a5fe2", null ],
-    [ "ResetData", "classvrv_1_1_beam.html#a3d37072cbcaf7ee26ecac413f6538530", null ],
-    [ "ResetHorizontalAlignment", "classvrv_1_1_beam.html#a0b5295a70f7c90a356219bef2dd87d7b", null ],
     [ "SetElementShortening", "classvrv_1_1_beam.html#ace52578a0183bd8725abe2c07e92d77a", null ],
     [ "SetStemSameasBeam", "classvrv_1_1_beam.html#a5b4cdbe83e08d709c5202e222e5090bf", null ],
     [ "m_beamSegment", "classvrv_1_1_beam.html#a522873ab5d186e4d7036d6a00a408f83", null ]

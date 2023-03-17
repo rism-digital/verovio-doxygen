@@ -2,6 +2,10 @@ var classvrv_1_1_hairpin =
 [
     [ "Hairpin", "classvrv_1_1_hairpin.html#a6427d72ce5409c30a4f5b0ba13fe6d95", null ],
     [ "~Hairpin", "classvrv_1_1_hairpin.html#a49d64afb7464a6b4b66b622a3fd6cc5c", null ],
+    [ "Accept", "classvrv_1_1_hairpin.html#a58a9c519095bd651746a358fa2a1ca6a", null ],
+    [ "Accept", "classvrv_1_1_hairpin.html#af9a62e19e3dda44ff8edaff72454c07f", null ],
+    [ "AcceptEnd", "classvrv_1_1_hairpin.html#ade4b1c6d9790018d29eda1c6927a521e", null ],
+    [ "AcceptEnd", "classvrv_1_1_hairpin.html#a1e7f7737daf6e59cacf0d94e0312527b", null ],
     [ "CalcHeight", "classvrv_1_1_hairpin.html#a47754d3ca88a4ac3ccda513a2efb6ef6", null ],
     [ "Clone", "classvrv_1_1_hairpin.html#aad801da1020dff1d4233453b023b2389", null ],
     [ "GetBarlineOverlapAdjustment", "classvrv_1_1_hairpin.html#af2977762c4e0c015fb669eb3dad77301", null ],
@@ -16,9 +20,7 @@ var classvrv_1_1_hairpin =
     [ "GetTimeSpanningInterface", "classvrv_1_1_hairpin.html#a988cac86dd200e379b6dec65fd712c37", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_hairpin.html#af6d44c90146921864559b070ad1cdbda", null ],
     [ "HasDrawingLength", "classvrv_1_1_hairpin.html#a87330b6512ff1919650f5806a9ecc25e", null ],
-    [ "PrepareFloatingGrps", "classvrv_1_1_hairpin.html#ac72b184ba2e260f5cba66f27644a40c6", null ],
     [ "Reset", "classvrv_1_1_hairpin.html#aa99fa27d4b30d321a5747ca1775a0fa0", null ],
-    [ "ResetData", "classvrv_1_1_hairpin.html#a2241571dc5eda208b8ec99c65bf3717a", null ],
     [ "SetDrawingLength", "classvrv_1_1_hairpin.html#ae477fc0bfa9959649302af9a5ca8e6f4", null ],
     [ "SetLeftLink", "classvrv_1_1_hairpin.html#a2faa176a3935b0de87496ca408ee5739", null ],
     [ "SetRightLink", "classvrv_1_1_hairpin.html#a0cc26c17205efeaf7d4e01a93bbbb7f2", null ]

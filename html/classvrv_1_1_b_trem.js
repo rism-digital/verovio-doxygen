@@ -2,6 +2,10 @@ var classvrv_1_1_b_trem =
 [
     [ "BTrem", "classvrv_1_1_b_trem.html#ab082ec3a0c9d31338df10d08eb4a9639", null ],
     [ "~BTrem", "classvrv_1_1_b_trem.html#a6d50bcf3243aecf27dc4d4c2fc8495e8", null ],
+    [ "Accept", "classvrv_1_1_b_trem.html#a5db94bfcc70f78276617449e7ee7fc9b", null ],
+    [ "Accept", "classvrv_1_1_b_trem.html#aca074a08872cf6483a08234093ead934", null ],
+    [ "AcceptEnd", "classvrv_1_1_b_trem.html#a5e4f7d43d4f19b7a09e311cae3a62697", null ],
+    [ "AcceptEnd", "classvrv_1_1_b_trem.html#a8d99bab6fa91bb7f99afc3120ff88d75", null ],
     [ "Clone", "classvrv_1_1_b_trem.html#a6e41b6981c22fe7b5931ad0dbc0cc622", null ],
     [ "GenerateMIDI", "classvrv_1_1_b_trem.html#ac3622d59fe6ef0786399836527c4bf23", null ],
     [ "GetClassName", "classvrv_1_1_b_trem.html#ab85ce2acd95085ddb323d41ee34cdaad", null ],

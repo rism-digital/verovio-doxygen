@@ -2,6 +2,10 @@ var classvrv_1_1_tuplet_bracket =
 [
     [ "TupletBracket", "classvrv_1_1_tuplet_bracket.html#a8b718156e8aea42097a7bc4caf47b055", null ],
     [ "~TupletBracket", "classvrv_1_1_tuplet_bracket.html#a651293a322a5c5fcef24d3c1f2e305ac", null ],
+    [ "Accept", "classvrv_1_1_tuplet_bracket.html#aad3748269eb428f43cf07ff9edd96dda", null ],
+    [ "Accept", "classvrv_1_1_tuplet_bracket.html#a4ebc67cd489a6ed9d21cceeb14feb8f7", null ],
+    [ "AcceptEnd", "classvrv_1_1_tuplet_bracket.html#ad1e82997c96d145f57a556fcb412527b", null ],
+    [ "AcceptEnd", "classvrv_1_1_tuplet_bracket.html#ab96a4cb25192c250913ed94e8d065bac", null ],
     [ "GetAlignedNum", "classvrv_1_1_tuplet_bracket.html#acc7da6cc80adf8679301d3a83389d698", null ],
     [ "GetAlignedNum", "classvrv_1_1_tuplet_bracket.html#ad5022fd888a432336fa3e34455e74fdf", null ],
     [ "GetClassName", "classvrv_1_1_tuplet_bracket.html#a889773144baa7e76f5e020ea7ed0f4d2", null ],
@@ -14,7 +18,6 @@ var classvrv_1_1_tuplet_bracket =
     [ "GetDrawingYRelRight", "classvrv_1_1_tuplet_bracket.html#aba76ae70cd5021365a61a0d53dfd86cd", null ],
     [ "GetDrawingYRight", "classvrv_1_1_tuplet_bracket.html#a680610c6780ca7074d521da7a9e8f3aa", null ],
     [ "Reset", "classvrv_1_1_tuplet_bracket.html#a82b5940e92da188eaa80c7c25f785716", null ],
-    [ "ResetHorizontalAlignment", "classvrv_1_1_tuplet_bracket.html#a88115e7ed21eb5190614b2427604db81", null ],
     [ "ResetVerticalAlignment", "classvrv_1_1_tuplet_bracket.html#a2c85dc189b9e64f73a3313bea68f08ed", null ],
     [ "Save", "classvrv_1_1_tuplet_bracket.html#ab5df637a389ff8b3520986742b2cc523", null ],
     [ "SaveEnd", "classvrv_1_1_tuplet_bracket.html#aa9b57feea622f5946d8f613cf5c5e291", null ],

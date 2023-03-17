@@ -100,61 +100,60 @@ $(document).ready(function(){initNavTree('positioninterface_8h_source.html','');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>FunctorParams;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>Layer;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>LayerElement;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// PositionInterface</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classvrv_1_1_position_interface.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_position_interface.html">PositionInterface</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_interface.html">Interface</a>, <span class="keyword">public</span> AttStaffLoc, <span class="keyword">public</span> AttStaffLocPitched {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classvrv_1_1_position_interface.html">PositionInterface</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_position_interface.html">PositionInterface</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_position_interface.html#a424403dca3376b2892efd8989b3ce3c5">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classvrv_1_1_position_interface.html#aca64be02a7dd6b30f996cf4151858a58">   39</a></span>&#160;    InterfaceId <a class="code" href="classvrv_1_1_position_interface.html#aca64be02a7dd6b30f996cf4151858a58">IsInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> INTERFACE_POSITION; }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> SetDrawingLoc(<span class="keywordtype">int</span> drawingLoc) { m_drawingLoc = drawingLoc; }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> GetDrawingLoc()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingLoc; }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">int</span> CalcDrawingLoc(<span class="keyword">const</span> Layer *layer, <span class="keyword">const</span> LayerElement *element);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_position_interface.html#a3312dbe1415b5eafb2762ffe2e612d54">HasIdenticalPositionInterface</a>(<span class="keyword">const</span> PositionInterface *otherPositionInterface) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//-----------------//</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// Pseudo functors //</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//-----------------//</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_position_interface.html#aa9e4cb8b0ec7e2e411efec7f1e634205">InterfaceResetData</a>(FunctorParams *functorParams, Object *<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_position_interface.html#ac74c74fcf22d5ae9e9286623353da322">InterfaceResetHorizontalAlignment</a>(FunctorParams *functorParams, Object *<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> m_drawingLoc;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>Layer;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>LayerElement;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>ResetDataFunctor;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>ResetHorizontalAlignmentFunctor;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// PositionInterface</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classvrv_1_1_position_interface.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_position_interface.html">PositionInterface</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_interface.html">Interface</a>, <span class="keyword">public</span> AttStaffLoc, <span class="keyword">public</span> AttStaffLocPitched {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classvrv_1_1_position_interface.html">PositionInterface</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_position_interface.html">PositionInterface</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_position_interface.html#a424403dca3376b2892efd8989b3ce3c5">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classvrv_1_1_position_interface.html#aca64be02a7dd6b30f996cf4151858a58">   40</a></span>&#160;    InterfaceId <a class="code" href="classvrv_1_1_position_interface.html#aca64be02a7dd6b30f996cf4151858a58">IsInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> INTERFACE_POSITION; }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> SetDrawingLoc(<span class="keywordtype">int</span> drawingLoc) { m_drawingLoc = drawingLoc; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span> GetDrawingLoc()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingLoc; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">int</span> CalcDrawingLoc(<span class="keyword">const</span> Layer *layer, <span class="keyword">const</span> LayerElement *element);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_position_interface.html#a3312dbe1415b5eafb2762ffe2e612d54">HasIdenticalPositionInterface</a>(<span class="keyword">const</span> PositionInterface *otherPositionInterface) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//-----------------//</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// Pseudo functors //</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//-----------------//</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_position_interface.html#acb9985fed8ff285e4ba9956129bc9e22">InterfaceResetData</a>(ResetDataFunctor &amp;functor, Object *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    FunctorCode InterfaceResetHorizontalAlignment(ResetHorizontalAlignmentFunctor &amp;functor, Object *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> m_drawingLoc;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_position_interface_html_aca64be02a7dd6b30f996cf4151858a58"><div class="ttname"><a href="classvrv_1_1_position_interface.html#aca64be02a7dd6b30f996cf4151858a58">vrv::PositionInterface::IsInterface</a></div><div class="ttdeci">InterfaceId IsInterface() const override</div><div class="ttdoc">Virtual method returning the InterfaceId of the interface.</div><div class="ttdef"><b>Definition:</b> positioninterface.h:39</div></div>
+<div class="ttc" id="aclassvrv_1_1_position_interface_html_aca64be02a7dd6b30f996cf4151858a58"><div class="ttname"><a href="classvrv_1_1_position_interface.html#aca64be02a7dd6b30f996cf4151858a58">vrv::PositionInterface::IsInterface</a></div><div class="ttdeci">InterfaceId IsInterface() const override</div><div class="ttdoc">Virtual method returning the InterfaceId of the interface.</div><div class="ttdef"><b>Definition:</b> positioninterface.h:40</div></div>
+<div class="ttc" id="aclassvrv_1_1_position_interface_html_acb9985fed8ff285e4ba9956129bc9e22"><div class="ttname"><a href="classvrv_1_1_position_interface.html#acb9985fed8ff285e4ba9956129bc9e22">vrv::PositionInterface::InterfaceResetData</a></div><div class="ttdeci">FunctorCode InterfaceResetData(ResetDataFunctor &amp;functor, Object *object)</div><div class="ttdoc">We have functor code in the interface for avoiding code duplication in each implementation class.</div></div>
 <div class="ttc" id="aclassvrv_1_1_position_interface_html_a3312dbe1415b5eafb2762ffe2e612d54"><div class="ttname"><a href="classvrv_1_1_position_interface.html#a3312dbe1415b5eafb2762ffe2e612d54">vrv::PositionInterface::HasIdenticalPositionInterface</a></div><div class="ttdeci">bool HasIdenticalPositionInterface(const PositionInterface *otherPositionInterface) const</div><div class="ttdoc">Inteface comparison operator.</div></div>
-<div class="ttc" id="aclassvrv_1_1_position_interface_html"><div class="ttname"><a href="classvrv_1_1_position_interface.html">vrv::PositionInterface</a></div><div class="ttdoc">This class is an interface for elements with a position on the staff, such as rests.</div><div class="ttdef"><b>Definition:</b> positioninterface.h:29</div></div>
+<div class="ttc" id="aclassvrv_1_1_position_interface_html"><div class="ttname"><a href="classvrv_1_1_position_interface.html">vrv::PositionInterface</a></div><div class="ttdoc">This class is an interface for elements with a position on the staff, such as rests.</div><div class="ttdef"><b>Definition:</b> positioninterface.h:30</div></div>
 <div class="ttc" id="aclassvrv_1_1_interface_html"><div class="ttname"><a href="classvrv_1_1_interface.html">vrv::Interface</a></div><div class="ttdoc">This is a base class for regrouping MEI att classes.</div><div class="ttdef"><b>Definition:</b> interface.h:32</div></div>
 <div class="ttc" id="aclassvrv_1_1_position_interface_html_a424403dca3376b2892efd8989b3ce3c5"><div class="ttname"><a href="classvrv_1_1_position_interface.html#a424403dca3376b2892efd8989b3ce3c5">vrv::PositionInterface::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
-<div class="ttc" id="aclassvrv_1_1_position_interface_html_aa9e4cb8b0ec7e2e411efec7f1e634205"><div class="ttname"><a href="classvrv_1_1_position_interface.html#aa9e4cb8b0ec7e2e411efec7f1e634205">vrv::PositionInterface::InterfaceResetData</a></div><div class="ttdeci">virtual int InterfaceResetData(FunctorParams *functorParams, Object *object)</div><div class="ttdoc">See Object::ResetData.</div></div>
-<div class="ttc" id="aclassvrv_1_1_position_interface_html_ac74c74fcf22d5ae9e9286623353da322"><div class="ttname"><a href="classvrv_1_1_position_interface.html#ac74c74fcf22d5ae9e9286623353da322">vrv::PositionInterface::InterfaceResetHorizontalAlignment</a></div><div class="ttdeci">virtual int InterfaceResetHorizontalAlignment(FunctorParams *functorParams, Object *object)</div><div class="ttdoc">See Object::ResetData.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>positioninterface.h</b></li>
-    <li class="footer">Generated on Fri Mar 17 2023 09:20:11 for Verovio by
+    <li class="footer">Generated on Fri Mar 17 2023 10:44:10 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

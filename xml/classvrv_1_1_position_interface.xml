@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="36" column="5"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="37" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_position_interface_1a70c7d8744d6a775a95345420e9800361" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="37" column="13"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="38" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_position_interface_1a424403dca3376b2892efd8989b3ce3c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="38" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="39" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_position_interface_1aca64be02a7dd6b30f996cf4151858a58" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>InterfaceId</type>
@@ -76,12 +76,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="39" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" bodystart="39" bodyend="39"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="40" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" bodystart="40" bodyend="40"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Setter and getter for the drawing staff loc.</header>
-      <description><para>This is set by the CalcAlignmentPitchPos functor. </para>
+      <description><para>This is set by the <ref refid="classvrv_1_1_calc_alignment_pitch_pos_functor" kindref="compound">CalcAlignmentPitchPosFunctor</ref>. </para>
 </description>
       <memberdef kind="function" id="classvrv_1_1_position_interface_1a3bdb6437c6e8739beea47e4bb978493f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="47" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" bodystart="47" bodyend="47"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="48" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" bodystart="48" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_position_interface_1a48e070408ebae29ba2e89806fe4b5ff8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -111,7 +111,53 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="48" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" bodystart="48" bodyend="48"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="49" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_position_interface_1acb9985fed8ff285e4ba9956129bc9e22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FunctorCode</type>
+        <definition>FunctorCode vrv::PositionInterface::InterfaceResetData</definition>
+        <argsstring>(ResetDataFunctor &amp;functor, Object *object)</argsstring>
+        <name>InterfaceResetData</name>
+        <param>
+          <type><ref refid="classvrv_1_1_reset_data_functor" kindref="compound">ResetDataFunctor</ref> &amp;</type>
+          <declname>functor</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>We have functor code in the interface for avoiding code duplication in each implementation class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Since we are in an interface, we need to pass the object (implementation) to the pseudo functor method. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="70" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_position_interface_1a39ee8812feea8812612377a2c8b351aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FunctorCode</type>
+        <definition>FunctorCode vrv::PositionInterface::InterfaceResetHorizontalAlignment</definition>
+        <argsstring>(ResetHorizontalAlignmentFunctor &amp;functor, Object *object)</argsstring>
+        <name>InterfaceResetHorizontalAlignment</name>
+        <param>
+          <type><ref refid="classvrv_1_1_reset_horizontal_alignment_functor" kindref="compound">ResetHorizontalAlignmentFunctor</ref> &amp;</type>
+          <declname>functor</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="71" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -127,7 +173,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="81" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" bodystart="81" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="82" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" bodystart="82" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -150,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="51" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="52" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_position_interface_1a3312dbe1415b5eafb2762ffe2e612d54" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -169,51 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="57" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_position_interface_1aa9e4cb8b0ec7e2e411efec7f1e634205" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>int</type>
-        <definition>virtual int vrv::PositionInterface::InterfaceResetData</definition>
-        <argsstring>(FunctorParams *functorParams, Object *object)</argsstring>
-        <name>InterfaceResetData</name>
-        <param>
-          <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
-          <declname>functorParams</declname>
-        </param>
-        <param>
-          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
-          <declname>object</declname>
-        </param>
-        <briefdescription>
-<para>See <ref refid="classvrv_1_1_object_1a810bab1b8cdb43737577d2d4aa9f00cb" kindref="member">Object::ResetData</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="66" column="17"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_position_interface_1ac74c74fcf22d5ae9e9286623353da322" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>int</type>
-        <definition>virtual int vrv::PositionInterface::InterfaceResetHorizontalAlignment</definition>
-        <argsstring>(FunctorParams *functorParams, Object *object)</argsstring>
-        <name>InterfaceResetHorizontalAlignment</name>
-        <param>
-          <type><ref refid="classvrv_1_1_functor_params" kindref="compound">FunctorParams</ref> *</type>
-          <declname>functorParams</declname>
-        </param>
-        <param>
-          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
-          <declname>object</declname>
-        </param>
-        <briefdescription>
-<para>See <ref refid="classvrv_1_1_object_1a810bab1b8cdb43737577d2d4aa9f00cb" kindref="member">Object::ResetData</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="71" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="58" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -320,15 +322,15 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="29" column="88" bodyfile="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" bodystart="29" bodyend="82"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="30" column="88" bodyfile="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" bodystart="30" bodyend="83"/>
     <listofallmembers>
       <member refid="classvrv_1_1_position_interface_1ad108f633f9d1d04b255f4c8a40092770" prot="public" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>CalcDrawingLoc</name></member>
       <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>GetAttClasses</name></member>
       <member refid="classvrv_1_1_position_interface_1a48e070408ebae29ba2e89806fe4b5ff8" prot="public" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>GetDrawingLoc</name></member>
       <member refid="classvrv_1_1_position_interface_1a3312dbe1415b5eafb2762ffe2e612d54" prot="public" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>HasIdenticalPositionInterface</name></member>
       <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>Interface</name></member>
-      <member refid="classvrv_1_1_position_interface_1aa9e4cb8b0ec7e2e411efec7f1e634205" prot="public" virt="virtual"><scope>vrv::PositionInterface</scope><name>InterfaceResetData</name></member>
-      <member refid="classvrv_1_1_position_interface_1ac74c74fcf22d5ae9e9286623353da322" prot="public" virt="virtual"><scope>vrv::PositionInterface</scope><name>InterfaceResetHorizontalAlignment</name></member>
+      <member refid="classvrv_1_1_position_interface_1acb9985fed8ff285e4ba9956129bc9e22" prot="public" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>InterfaceResetData</name></member>
+      <member refid="classvrv_1_1_position_interface_1a39ee8812feea8812612377a2c8b351aa" prot="public" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>InterfaceResetHorizontalAlignment</name></member>
       <member refid="classvrv_1_1_position_interface_1aca64be02a7dd6b30f996cf4151858a58" prot="public" virt="virtual"><scope>vrv::PositionInterface</scope><name>IsInterface</name></member>
       <member refid="classvrv_1_1_position_interface_1af3e5567d41a4f399e18a9e3d86721004" prot="private" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>m_drawingLoc</name></member>
       <member refid="classvrv_1_1_position_interface_1abda3bfd8e411f1e32cf2d3a746772668" prot="public" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>PositionInterface</name></member>

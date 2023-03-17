@@ -2,6 +2,10 @@ var classvrv_1_1_fermata =
 [
     [ "Fermata", "classvrv_1_1_fermata.html#acb3c8f88bd73f26627fffc29b1df1a99", null ],
     [ "~Fermata", "classvrv_1_1_fermata.html#a1bbfc5ccde7134e784cb580cc312a17f", null ],
+    [ "Accept", "classvrv_1_1_fermata.html#aaa75fc06fcc6818da3e790c98dc4460b", null ],
+    [ "Accept", "classvrv_1_1_fermata.html#a93bee07c206d1406ef78491a53d1ae0e", null ],
+    [ "AcceptEnd", "classvrv_1_1_fermata.html#aa114c155124feb441e31719bd24642d0", null ],
+    [ "AcceptEnd", "classvrv_1_1_fermata.html#a102c2db7c9245493f37655685dc71397", null ],
     [ "Clone", "classvrv_1_1_fermata.html#ae4015a263194111dabdd34e0e6a781a6", null ],
     [ "ConvertFromAnalyticalMarkup", "classvrv_1_1_fermata.html#a6f4264d78841a2fd5818f0b5a033c53f", null ],
     [ "GetClassName", "classvrv_1_1_fermata.html#a01d1ea40f44ee5585fa9d29deae202db", null ],
