@@ -371,10 +371,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="456" column="29"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beam_element_coord_1a599f3e4fefc635f86a348e8313452706" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beam_element_coord_1a4d642d3e677fe0c54be30d4b2c14524f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeamElementCoord::UpdateStemLength</definition>
-        <argsstring>(StemmedDrawingInterface *stemmedInterface, int y1, int y2, int stemAdjust)</argsstring>
+        <argsstring>(StemmedDrawingInterface *stemmedInterface, int y1, int y2, int stemAdjust, bool inMixedBeam)</argsstring>
         <name>UpdateStemLength</name>
         <param>
           <type><ref refid="classvrv_1_1_stemmed_drawing_interface" kindref="compound">StemmedDrawingInterface</ref> *</type>
@@ -391,6 +391,10 @@
         <param>
           <type>int</type>
           <declname>stemAdjust</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inMixedBeam</declname>
         </param>
         <briefdescription>
 <para>Update stem length based on the calculated coordinates and stemAdjust value. </para>
@@ -909,7 +913,7 @@
       <member refid="classvrv_1_1_beam_element_coord_1a1f7fd630af091c0b6f6e1ac0509af9cb" prot="public" virt="non-virtual"><scope>vrv::BeamElementCoord</scope><name>m_yBeam</name></member>
       <member refid="classvrv_1_1_beam_element_coord_1abd402f9d51ce8ecc55ab130c148e3c27" prot="public" virt="non-virtual"><scope>vrv::BeamElementCoord</scope><name>SetClosestNoteOrTabDurSym</name></member>
       <member refid="classvrv_1_1_beam_element_coord_1acaf8f97534d8146d3032133e4372e504" prot="public" virt="non-virtual"><scope>vrv::BeamElementCoord</scope><name>SetDrawingStemDir</name></member>
-      <member refid="classvrv_1_1_beam_element_coord_1a599f3e4fefc635f86a348e8313452706" prot="public" virt="non-virtual"><scope>vrv::BeamElementCoord</scope><name>UpdateStemLength</name></member>
+      <member refid="classvrv_1_1_beam_element_coord_1a4d642d3e677fe0c54be30d4b2c14524f" prot="public" virt="non-virtual"><scope>vrv::BeamElementCoord</scope><name>UpdateStemLength</name></member>
       <member refid="classvrv_1_1_beam_element_coord_1ad39a98a648db43efa4ae8d382d95d06d" prot="public" virt="virtual"><scope>vrv::BeamElementCoord</scope><name>~BeamElementCoord</name></member>
     </listofallmembers>
   </compounddef>
