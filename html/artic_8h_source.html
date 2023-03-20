@@ -174,32 +174,33 @@ $(document).ready(function(){initNavTree('artic_8h_source.html',''); initResizab
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_artic.html#ad60930fde904d55bc6b45c022f9a0886">IsInsideArtic</a>(data_ARTICULATION artic) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="comment">// Calculate shift for the articulation based on its type and presence of other articulations</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">int</span> CalculateHorizontalShift(<span class="keyword">const</span> Doc *doc, <span class="keyword">const</span> LayerElement *parent, data_STEMDIRECTION stemDir) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    std::vector&lt;FloatingCurvePositioner *&gt; m_startSlurPositioners;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    std::vector&lt;FloatingCurvePositioner *&gt; m_endSlurPositioners;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="classvrv_1_1_artic.html#af5632037445cf7c9b45592b11417d13e">  158</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;data_ARTICULATION&gt; <a class="code" href="classvrv_1_1_artic.html#af5632037445cf7c9b45592b11417d13e">s_outStaffArtic</a>;</div>
-<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="classvrv_1_1_artic.html#a825f179de07fb8b912d1c916ba37519a">  162</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;data_ARTICULATION&gt; <a class="code" href="classvrv_1_1_artic.html#a825f179de07fb8b912d1c916ba37519a">s_aboveStaffArtic</a>;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    data_STAFFREL m_drawingPlace;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;};</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">int</span> CalculateHorizontalShift(</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keyword">const</span> Doc *doc, <span class="keyword">const</span> LayerElement *parent, data_STEMDIRECTION stemDir, <span class="keyword">const</span> <span class="keywordtype">bool</span> virtualStem) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    std::vector&lt;FloatingCurvePositioner *&gt; m_startSlurPositioners;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    std::vector&lt;FloatingCurvePositioner *&gt; m_endSlurPositioners;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classvrv_1_1_artic.html#af5632037445cf7c9b45592b11417d13e">  159</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;data_ARTICULATION&gt; <a class="code" href="classvrv_1_1_artic.html#af5632037445cf7c9b45592b11417d13e">s_outStaffArtic</a>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classvrv_1_1_artic.html#a825f179de07fb8b912d1c916ba37519a">  163</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;data_ARTICULATION&gt; <a class="code" href="classvrv_1_1_artic.html#a825f179de07fb8b912d1c916ba37519a">s_aboveStaffArtic</a>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    data_STAFFREL m_drawingPlace;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;};</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_artic_html_ab9ba4a1a9d3d415a89932337486776e2"><div class="ttname"><a href="classvrv_1_1_artic.html#ab9ba4a1a9d3d415a89932337486776e2">vrv::Artic::GetArticGlyph</a></div><div class="ttdeci">char32_t GetArticGlyph(data_ARTICULATION artic, data_STAFFREL place) const</div><div class="ttdoc">Retrieves the appropriate SMuFL code for a data_ARTICULATION with data_STAFFREL.</div></div>
 <div class="ttc" id="aclassvrv_1_1_artic_html_abf36f6c00ec9ce1ecac1374327ef94a4"><div class="ttname"><a href="classvrv_1_1_artic.html#abf36f6c00ec9ce1ecac1374327ef94a4">vrv::Artic::AlwaysAbove</a></div><div class="ttdeci">bool AlwaysAbove() const</div><div class="ttdoc">Check if the articList contains data_ARTICULATION has to be place above staff.</div></div>
 <div class="ttc" id="aclassvrv_1_1_artic_html_a2cac8079f77d9c0c25e3171790b00560"><div class="ttname"><a href="classvrv_1_1_artic.html#a2cac8079f77d9c0c25e3171790b00560">vrv::Artic::ConvertMarkupArtic</a></div><div class="ttdeci">int ConvertMarkupArtic(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ConvertMarkupArtic.</div></div>
 <div class="ttc" id="aclassvrv_1_1_artic_html_ad2b79005c4219c56132710a33c63797c"><div class="ttname"><a href="classvrv_1_1_artic.html#ad2b79005c4219c56132710a33c63797c">vrv::Artic::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> artic.h:43</div></div>
-<div class="ttc" id="aclassvrv_1_1_artic_html_a825f179de07fb8b912d1c916ba37519a"><div class="ttname"><a href="classvrv_1_1_artic.html#a825f179de07fb8b912d1c916ba37519a">vrv::Artic::s_aboveStaffArtic</a></div><div class="ttdeci">static const std::vector&lt; data_ARTICULATION &gt; s_aboveStaffArtic</div><div class="ttdoc">A static array for storing the articulation that have to be place above the staff is possible.</div><div class="ttdef"><b>Definition:</b> artic.h:162</div></div>
+<div class="ttc" id="aclassvrv_1_1_artic_html_a825f179de07fb8b912d1c916ba37519a"><div class="ttname"><a href="classvrv_1_1_artic.html#a825f179de07fb8b912d1c916ba37519a">vrv::Artic::s_aboveStaffArtic</a></div><div class="ttdeci">static const std::vector&lt; data_ARTICULATION &gt; s_aboveStaffArtic</div><div class="ttdoc">A static array for storing the articulation that have to be place above the staff is possible.</div><div class="ttdef"><b>Definition:</b> artic.h:163</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:61</div></div>
-<div class="ttc" id="aclassvrv_1_1_artic_html_af5632037445cf7c9b45592b11417d13e"><div class="ttname"><a href="classvrv_1_1_artic.html#af5632037445cf7c9b45592b11417d13e">vrv::Artic::s_outStaffArtic</a></div><div class="ttdeci">static const std::vector&lt; data_ARTICULATION &gt; s_outStaffArtic</div><div class="ttdoc">A static array for storing the articulation that have to be placed outside the staff.</div><div class="ttdef"><b>Definition:</b> artic.h:158</div></div>
+<div class="ttc" id="aclassvrv_1_1_artic_html_af5632037445cf7c9b45592b11417d13e"><div class="ttname"><a href="classvrv_1_1_artic.html#af5632037445cf7c9b45592b11417d13e">vrv::Artic::s_outStaffArtic</a></div><div class="ttdeci">static const std::vector&lt; data_ARTICULATION &gt; s_outStaffArtic</div><div class="ttdoc">A static array for storing the articulation that have to be placed outside the staff.</div><div class="ttdef"><b>Definition:</b> artic.h:159</div></div>
 <div class="ttc" id="aclassvrv_1_1_artic_html_ad60930fde904d55bc6b45c022f9a0886"><div class="ttname"><a href="classvrv_1_1_artic.html#ad60930fde904d55bc6b45c022f9a0886">vrv::Artic::IsInsideArtic</a></div><div class="ttdeci">bool IsInsideArtic() const</div><div class="ttdoc">Return the inside and outside part of an artic if any (NULL otherwiser)</div></div>
 <div class="ttc" id="aclassvrv_1_1_artic_html_aa05fe4bc1352b8f096d353df4237bcbc"><div class="ttname"><a href="classvrv_1_1_artic.html#aa05fe4bc1352b8f096d353df4237bcbc">vrv::Artic::VerticalCorr</a></div><div class="ttdeci">static bool VerticalCorr(char32_t code, data_STAFFREL place)</div><div class="ttdoc">Static method that retrieves the vertical correction for a SMuFL code with data_STAFFREL.</div></div>
 <div class="ttc" id="aclassvrv_1_1_artic_html"><div class="ttname"><a href="classvrv_1_1_artic.html">vrv::Artic</a></div><div class="ttdef"><b>Definition:</b> artic.h:22</div></div>
@@ -220,7 +221,7 @@ $(document).ready(function(){initNavTree('artic_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>artic.h</b></li>
-    <li class="footer">Generated on Fri Mar 17 2023 10:44:09 for Verovio by
+    <li class="footer">Generated on Mon Mar 20 2023 07:34:22 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
