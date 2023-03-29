@@ -1,5 +1,8 @@
 var NAVTREEINDEX29 =
 {
+"phrase_8h_source.html":[2,0,148],
+"pitchinflection_8h_source.html":[2,0,149],
+"pitchinterface_8h_source.html":[2,0,150],
 "plica_8h_source.html":[2,0,151],
 "plistinterface_8h_source.html":[2,0,152],
 "positioninterface_8h_source.html":[2,0,153],
