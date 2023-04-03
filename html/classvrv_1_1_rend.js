@@ -6,7 +6,6 @@ var classvrv_1_1_rend =
     [ "Accept", "classvrv_1_1_rend.html#a5672618fed10c459f3eba6ee0729c3f3", null ],
     [ "AcceptEnd", "classvrv_1_1_rend.html#a3e1c8a409fbf484935213c0d942ea47f", null ],
     [ "AcceptEnd", "classvrv_1_1_rend.html#abca23db881e100e7b8bf7b4e721abc8e", null ],
-    [ "AlignVertically", "classvrv_1_1_rend.html#ae92b843d1d86f64fa76b1dc57705fcaf", null ],
     [ "Clone", "classvrv_1_1_rend.html#a9bfa5c6c915b185fa609dd7bb65aa1d2", null ],
     [ "GetAreaPosInterface", "classvrv_1_1_rend.html#a6addb4707873d510019083c58924a6ea", null ],
     [ "GetAreaPosInterface", "classvrv_1_1_rend.html#a3b338a2ac710f566cd2044e72fe2c51c", null ],

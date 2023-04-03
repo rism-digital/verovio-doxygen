@@ -13,7 +13,6 @@ var classvrv_1_1_text_element =
     [ "GetDrawingY", "classvrv_1_1_text_element.html#aded80df16145798e9c7779f182600e71", null ],
     [ "GetDrawingYRel", "classvrv_1_1_text_element.html#a95aacc7c9ceb8f7b37681b674156eed9", null ],
     [ "Reset", "classvrv_1_1_text_element.html#abc051089f67b9d85955390828593bada", null ],
-    [ "ResetVerticalAlignment", "classvrv_1_1_text_element.html#aa1b93e07a8e5b8b6a6ae2217fec1ffe9", null ],
     [ "SetDrawingXRel", "classvrv_1_1_text_element.html#aac7cecf1bf0ed2a368a577d95502535b", null ],
     [ "SetDrawingYRel", "classvrv_1_1_text_element.html#ab30eaf19d027ab698fe041b10ab30e6c", null ]
 ];

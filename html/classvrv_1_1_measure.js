@@ -13,7 +13,6 @@ var classvrv_1_1_measure =
     [ "AcceptEnd", "classvrv_1_1_measure.html#a24fe194e4adc48d11911ef79afd68bcb", null ],
     [ "AcceptEnd", "classvrv_1_1_measure.html#a8b829b9cd88e2ca0d1b2562e61bcdd47", null ],
     [ "AddChildBack", "classvrv_1_1_measure.html#afbaab874c0a2b37b3f2bbd175756f4aa", null ],
-    [ "AlignVertically", "classvrv_1_1_measure.html#af604f09d6c3a7d3b8f68044f3c57ff60", null ],
     [ "ApplyPPUFactor", "classvrv_1_1_measure.html#a2047d6b9134715bae2adac5821aef630", null ],
     [ "CacheXRel", "classvrv_1_1_measure.html#a293e3f653fc704721aae764a5e5db5aa", null ],
     [ "CalculateRightBarLineWidth", "classvrv_1_1_measure.html#a84bcb7a7885e9fb83e85498f43ee36c2", null ],

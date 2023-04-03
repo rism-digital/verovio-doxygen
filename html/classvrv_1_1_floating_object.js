@@ -23,7 +23,6 @@ var classvrv_1_1_floating_object =
     [ "ResetDrawing", "classvrv_1_1_floating_object.html#a384ed728e57f5ac0b632e94994c1b5ec", null ],
     [ "ResetDrawingObjectIDs", "classvrv_1_1_floating_object.html#a19811a14724bc587a5e27ce6768fc35c", null ],
     [ "ResetMaxDrawingYRel", "classvrv_1_1_floating_object.html#a577749f2718e2d8e542196f760e7c3b3", null ],
-    [ "ResetVerticalAlignment", "classvrv_1_1_floating_object.html#a9a9271ae963c1406e733365a4ac860d8", null ],
     [ "SetCurrentFloatingPositioner", "classvrv_1_1_floating_object.html#a819ad528a043efce1c9a8f860896b603", null ],
     [ "SetDrawingGrpId", "classvrv_1_1_floating_object.html#a2a54c03eab79c35ce2030916053bd1d4", null ],
     [ "SetDrawingGrpObject", "classvrv_1_1_floating_object.html#abb3c371794922b14e5a0265a0bd27bba", null ],

@@ -6,8 +6,6 @@ var classvrv_1_1_f_trem =
     [ "Accept", "classvrv_1_1_f_trem.html#ad7d5455ae1422211922a9afa51c6bef5", null ],
     [ "AcceptEnd", "classvrv_1_1_f_trem.html#afb55b3839e8b5dbf7c9fc658b62c654f", null ],
     [ "AcceptEnd", "classvrv_1_1_f_trem.html#a5313d15ce80557dd1b9b2ab22edf674b", null ],
-    [ "AdjustBeams", "classvrv_1_1_f_trem.html#a9dd5b1e91358a91b82a4441d71d90766", null ],
-    [ "AdjustBeamsEnd", "classvrv_1_1_f_trem.html#a42701f9ac96da5c818775e9e2ef39ebb", null ],
     [ "Clone", "classvrv_1_1_f_trem.html#a7056acec088c63ea655f91e440c7ed18", null ],
     [ "FilterList", "classvrv_1_1_f_trem.html#abbe78501ed51f8dab707a01de18d4f0f", null ],
     [ "GenerateMIDI", "classvrv_1_1_f_trem.html#a31ddc5adafbf6ae26007ee9edb9f9388", null ],

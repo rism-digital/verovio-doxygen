@@ -17,6 +17,5 @@ var classvrv_1_1_octave =
     [ "GetVerticalContentBoundaryRel", "classvrv_1_1_octave.html#a7403464904327ea0bcf7236d72d41dfb", null ],
     [ "Reset", "classvrv_1_1_octave.html#a864a842091fd0a0196ff9089edcdd6ad", null ],
     [ "ResetDrawingExtenderX", "classvrv_1_1_octave.html#a60779a6ef85ad9d9cddb1aed09b14bc4", null ],
-    [ "ResetVerticalAlignment", "classvrv_1_1_octave.html#ab18e06f6ed7366f723d78fc4fe5fca86", null ],
     [ "SetDrawingExtenderX", "classvrv_1_1_octave.html#a9d609c973dd61d61eabde00b55377e0b", null ]
 ];

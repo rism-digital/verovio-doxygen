@@ -7,7 +7,6 @@ var classvrv_1_1_verse =
     [ "AcceptEnd", "classvrv_1_1_verse.html#a9cf11a5ef7cb1106a67c9b31ab962dee", null ],
     [ "AcceptEnd", "classvrv_1_1_verse.html#a47017e0e78522083ac2532d2bfb932e6", null ],
     [ "AdjustPosition", "classvrv_1_1_verse.html#a142d94355c0ee127a1ae22cea8368c9e", null ],
-    [ "AlignVertically", "classvrv_1_1_verse.html#a8aaab73ded924d96eb2a0e317698df55", null ],
     [ "Clone", "classvrv_1_1_verse.html#a7dfc1446f007ac16a49f632746cfe437", null ],
     [ "GenerateMIDI", "classvrv_1_1_verse.html#a869e42adc000457c316e506be0bf8d3a", null ],
     [ "GetClassName", "classvrv_1_1_verse.html#a46b08a02ca8f530f7369585f9a6b9b59", null ],

@@ -235,63 +235,59 @@ $(document).ready(function(){initNavTree('elementpart_8h_source.html',''); initR
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet_bracket.html#ab5df637a389ff8b3520986742b2cc523">Save</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> FUNCTOR_CONTINUE; }</div>
 <div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="classvrv_1_1_tuplet_bracket.html#aa9b57feea622f5946d8f613cf5c5e291">  235</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet_bracket.html#aa9b57feea622f5946d8f613cf5c5e291">SaveEnd</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> FUNCTOR_CONTINUE; }</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet_bracket.html#a2c85dc189b9e64f73a3313bea68f08ed">ResetVerticalAlignment</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordtype">int</span> m_drawingXRelLeft;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordtype">int</span> m_drawingXRelRight;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">int</span> m_drawingYRelLeft = 0;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordtype">int</span> m_drawingYRelRight = 0;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <a class="code" href="classvrv_1_1_tuplet_num.html">TupletNum</a> *m_alignedNum;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;};</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">// TupletNum</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00278"></a><span class="lineno"><a class="line" href="classvrv_1_1_tuplet_num.html">  278</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_tuplet_num.html">TupletNum</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>, <span class="keyword">public</span> AttNumberPlacement, <span class="keyword">public</span> AttTupletVis {</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <a class="code" href="classvrv_1_1_tuplet_num.html">TupletNum</a>();</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_tuplet_num.html">TupletNum</a>();</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tuplet_num.html#a526852a7d5cd75b1ee3993431fbe05d3">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;TupletNum&quot;</span>; }</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">int</span> GetDrawingYMid() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">int</span> GetDrawingXMid(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc = NULL) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <a class="code" href="classvrv_1_1_tuplet_bracket.html">TupletBracket</a> *GetAlignedBracket() { <span class="keywordflow">return</span> m_alignedBracket; }</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_tuplet_bracket.html">TupletBracket</a> *GetAlignedBracket()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_alignedBracket; }</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordtype">void</span> SetAlignedBracket(<a class="code" href="classvrv_1_1_tuplet_bracket.html">TupletBracket</a> *alignedBracket);</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_tuplet_num.html#abd0e8251a0c97cc77ba0963f44bd1d68">Accept</a>(<a class="code" href="classvrv_1_1_mutable_functor.html">MutableFunctor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_tuplet_num.html#abd0e8251a0c97cc77ba0963f44bd1d68">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_mutable_functor.html">MutableFunctor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet_num.html#a059ff144b88a8b510e4256d555a053aa">Save</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> FUNCTOR_CONTINUE; }</div>
-<div class="line"><a name="l00331"></a><span class="lineno"><a class="line" href="classvrv_1_1_tuplet_num.html#a99ea5024da50bb062885db23913b34d0">  331</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet_num.html#a99ea5024da50bb062885db23913b34d0">SaveEnd</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> FUNCTOR_CONTINUE; }</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet_num.html#a336989c35bcd8f7e265fa718f9941be1">ResetVerticalAlignment</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <a class="code" href="classvrv_1_1_tuplet_bracket.html">TupletBracket</a> *m_alignedBracket;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;};</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordtype">int</span> m_drawingXRelLeft;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordtype">int</span> m_drawingXRelRight;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordtype">int</span> m_drawingYRelLeft = 0;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordtype">int</span> m_drawingYRelRight = 0;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <a class="code" href="classvrv_1_1_tuplet_num.html">TupletNum</a> *m_alignedNum;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;};</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">// TupletNum</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="classvrv_1_1_tuplet_num.html">  273</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_tuplet_num.html">TupletNum</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>, <span class="keyword">public</span> AttNumberPlacement, <span class="keyword">public</span> AttTupletVis {</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <a class="code" href="classvrv_1_1_tuplet_num.html">TupletNum</a>();</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_tuplet_num.html">TupletNum</a>();</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tuplet_num.html#a526852a7d5cd75b1ee3993431fbe05d3">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;TupletNum&quot;</span>; }</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">int</span> GetDrawingYMid() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordtype">int</span> GetDrawingXMid(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc = NULL) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <a class="code" href="classvrv_1_1_tuplet_bracket.html">TupletBracket</a> *GetAlignedBracket() { <span class="keywordflow">return</span> m_alignedBracket; }</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_tuplet_bracket.html">TupletBracket</a> *GetAlignedBracket()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_alignedBracket; }</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">void</span> SetAlignedBracket(<a class="code" href="classvrv_1_1_tuplet_bracket.html">TupletBracket</a> *alignedBracket);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_tuplet_num.html#abd0e8251a0c97cc77ba0963f44bd1d68">Accept</a>(<a class="code" href="classvrv_1_1_mutable_functor.html">MutableFunctor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_tuplet_num.html#abd0e8251a0c97cc77ba0963f44bd1d68">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_mutable_functor.html">MutableFunctor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet_num.html#a059ff144b88a8b510e4256d555a053aa">Save</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> FUNCTOR_CONTINUE; }</div>
+<div class="line"><a name="l00326"></a><span class="lineno"><a class="line" href="classvrv_1_1_tuplet_num.html#a99ea5024da50bb062885db23913b34d0">  326</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuplet_num.html#a99ea5024da50bb062885db23913b34d0">SaveEnd</a>(<a class="code" href="classvrv_1_1_functor_params.html">FunctorParams</a> *functorParams)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> FUNCTOR_CONTINUE; }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <a class="code" href="classvrv_1_1_tuplet_bracket.html">TupletBracket</a> *m_alignedBracket;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;};</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_dots_html_a51f7cd82e9067473399b0a8e8d21ff45"><div class="ttname"><a href="classvrv_1_1_dots.html#a51f7cd82e9067473399b0a8e8d21ff45">vrv::Dots::GetFlagShift</a></div><div class="ttdeci">int GetFlagShift() const</div><div class="ttdoc">Set/get methods for the flagShift.</div><div class="ttdef"><b>Definition:</b> elementpart.h:80</div></div>
@@ -311,9 +307,7 @@ $(document).ready(function(){initNavTree('elementpart_8h_source.html',''); initR
 <div class="ttc" id="aclassvrv_1_1_flag_html_a97d3d73006c4dfde14fd871de9bae93e"><div class="ttname"><a href="classvrv_1_1_flag.html#a97d3d73006c4dfde14fd871de9bae93e">vrv::Flag::Save</a></div><div class="ttdeci">int Save(FunctorParams *functorParams) override</div><div class="ttdoc">Overwritten version of Save that avoids anything to be written.</div><div class="ttdef"><b>Definition:</b> elementpart.h:145</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuplet_bracket_html_a4ebc67cd489a6ed9d21cceeb14feb8f7"><div class="ttname"><a href="classvrv_1_1_tuplet_bracket.html#a4ebc67cd489a6ed9d21cceeb14feb8f7">vrv::TupletBracket::Accept</a></div><div class="ttdeci">FunctorCode Accept(MutableFunctor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_dots_html_a2d29e04a070b61455c3d615ca6e94855"><div class="ttname"><a href="classvrv_1_1_dots.html#a2d29e04a070b61455c3d615ca6e94855">vrv::Dots::Save</a></div><div class="ttdeci">int Save(FunctorParams *functorParams) override</div><div class="ttdoc">Overwritten version of Save that avoids anything to be written.</div><div class="ttdef"><b>Definition:</b> elementpart.h:72</div></div>
-<div class="ttc" id="aclassvrv_1_1_tuplet_num_html"><div class="ttname"><a href="classvrv_1_1_tuplet_num.html">vrv::TupletNum</a></div><div class="ttdoc">This class models a tuplet num as a layer element part and has not direct MEI equivlatent.</div><div class="ttdef"><b>Definition:</b> elementpart.h:278</div></div>
-<div class="ttc" id="aclassvrv_1_1_tuplet_num_html_a336989c35bcd8f7e265fa718f9941be1"><div class="ttname"><a href="classvrv_1_1_tuplet_num.html#a336989c35bcd8f7e265fa718f9941be1">vrv::TupletNum::ResetVerticalAlignment</a></div><div class="ttdeci">int ResetVerticalAlignment(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetVerticalAlignment.</div></div>
-<div class="ttc" id="aclassvrv_1_1_tuplet_bracket_html_a2c85dc189b9e64f73a3313bea68f08ed"><div class="ttname"><a href="classvrv_1_1_tuplet_bracket.html#a2c85dc189b9e64f73a3313bea68f08ed">vrv::TupletBracket::ResetVerticalAlignment</a></div><div class="ttdeci">int ResetVerticalAlignment(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetVerticalAlignment.</div></div>
+<div class="ttc" id="aclassvrv_1_1_tuplet_num_html"><div class="ttname"><a href="classvrv_1_1_tuplet_num.html">vrv::TupletNum</a></div><div class="ttdoc">This class models a tuplet num as a layer element part and has not direct MEI equivlatent.</div><div class="ttdef"><b>Definition:</b> elementpart.h:273</div></div>
 <div class="ttc" id="aclassvrv_1_1_const_functor_html"><div class="ttname"><a href="classvrv_1_1_const_functor.html">vrv::ConstFunctor</a></div><div class="ttdoc">This abstract class is the base class for all const functors.</div><div class="ttdef"><b>Definition:</b> functor.h:109</div></div>
 <div class="ttc" id="aclassvrv_1_1_dots_html_a7ba067927d52b9f931ff1d9c885f63d2"><div class="ttname"><a href="classvrv_1_1_dots.html#a7ba067927d52b9f931ff1d9c885f63d2">vrv::Dots::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> elementpart.h:42</div></div>
 <div class="ttc" id="aclassvrv_1_1_flag_html_ade3296639430630b1f5a463cdf5f50fa"><div class="ttname"><a href="classvrv_1_1_flag.html#ade3296639430630b1f5a463cdf5f50fa">vrv::Flag::SaveEnd</a></div><div class="ttdeci">int SaveEnd(FunctorParams *functorParams) override</div><div class="ttdoc">End Functor for Object::Save.</div><div class="ttdef"><b>Definition:</b> elementpart.h:146</div></div>
@@ -324,8 +318,8 @@ $(document).ready(function(){initNavTree('elementpart_8h_source.html',''); initR
 <div class="ttc" id="aclassvrv_1_1_flag_html_a7929130917107698cecb8e3fa6f15466"><div class="ttname"><a href="classvrv_1_1_flag.html#a7929130917107698cecb8e3fa6f15466">vrv::Flag::m_drawingNbFlags</a></div><div class="ttdeci">int m_drawingNbFlags</div><div class="ttdoc">The number of flags to be drawn.</div><div class="ttdef"><b>Definition:</b> elementpart.h:153</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuplet_bracket_html_ab5df637a389ff8b3520986742b2cc523"><div class="ttname"><a href="classvrv_1_1_tuplet_bracket.html#ab5df637a389ff8b3520986742b2cc523">vrv::TupletBracket::Save</a></div><div class="ttdeci">int Save(FunctorParams *functorParams) override</div><div class="ttdoc">Overwritten version of Save that avoids anything to be written.</div><div class="ttdef"><b>Definition:</b> elementpart.h:234</div></div>
 <div class="ttc" id="aclassvrv_1_1_dots_html_a55b7ec936f65d9e33f9e0d9cece3dddb"><div class="ttname"><a href="classvrv_1_1_dots.html#a55b7ec936f65d9e33f9e0d9cece3dddb">vrv::Dots::SaveEnd</a></div><div class="ttdeci">int SaveEnd(FunctorParams *functorParams) override</div><div class="ttdoc">End Functor for Object::Save.</div><div class="ttdef"><b>Definition:</b> elementpart.h:73</div></div>
-<div class="ttc" id="aclassvrv_1_1_tuplet_num_html_a99ea5024da50bb062885db23913b34d0"><div class="ttname"><a href="classvrv_1_1_tuplet_num.html#a99ea5024da50bb062885db23913b34d0">vrv::TupletNum::SaveEnd</a></div><div class="ttdeci">int SaveEnd(FunctorParams *functorParams) override</div><div class="ttdoc">End Functor for Object::Save.</div><div class="ttdef"><b>Definition:</b> elementpart.h:331</div></div>
-<div class="ttc" id="aclassvrv_1_1_tuplet_num_html_a059ff144b88a8b510e4256d555a053aa"><div class="ttname"><a href="classvrv_1_1_tuplet_num.html#a059ff144b88a8b510e4256d555a053aa">vrv::TupletNum::Save</a></div><div class="ttdeci">int Save(FunctorParams *functorParams) override</div><div class="ttdoc">Overwritten version of Save that avoids anything to be written.</div><div class="ttdef"><b>Definition:</b> elementpart.h:330</div></div>
+<div class="ttc" id="aclassvrv_1_1_tuplet_num_html_a99ea5024da50bb062885db23913b34d0"><div class="ttname"><a href="classvrv_1_1_tuplet_num.html#a99ea5024da50bb062885db23913b34d0">vrv::TupletNum::SaveEnd</a></div><div class="ttdeci">int SaveEnd(FunctorParams *functorParams) override</div><div class="ttdoc">End Functor for Object::Save.</div><div class="ttdef"><b>Definition:</b> elementpart.h:326</div></div>
+<div class="ttc" id="aclassvrv_1_1_tuplet_num_html_a059ff144b88a8b510e4256d555a053aa"><div class="ttname"><a href="classvrv_1_1_tuplet_num.html#a059ff144b88a8b510e4256d555a053aa">vrv::TupletNum::Save</a></div><div class="ttdeci">int Save(FunctorParams *functorParams) override</div><div class="ttdoc">Overwritten version of Save that avoids anything to be written.</div><div class="ttdef"><b>Definition:</b> elementpart.h:325</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:43</div></div>
 <div class="ttc" id="aclassvrv_1_1_point_html"><div class="ttname"><a href="classvrv_1_1_point.html">vrv::Point</a></div><div class="ttdoc">Simple class for representing points.</div><div class="ttdef"><b>Definition:</b> devicecontextbase.h:193</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_params_html"><div class="ttname"><a href="classvrv_1_1_functor_params.html">vrv::FunctorParams</a></div><div class="ttdoc">This is the base class for all MEI att classes.</div><div class="ttdef"><b>Definition:</b> functorparams.h:78</div></div>
@@ -334,7 +328,7 @@ $(document).ready(function(){initNavTree('elementpart_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>elementpart.h</b></li>
-    <li class="footer">Generated on Fri Mar 31 2023 12:45:10 for Verovio by
+    <li class="footer">Generated on Mon Apr 3 2023 13:21:31 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -11,7 +11,6 @@ var classvrv_1_1_running_element =
     [ "AddPageNum", "classvrv_1_1_running_element.html#ad54c3f73d54d0d5b51eb993d7c0dd80d", null ],
     [ "AdjustDrawingScaling", "classvrv_1_1_running_element.html#a57a0db80266fb422961749454e4f35e1", null ],
     [ "AdjustRunningElementYPos", "classvrv_1_1_running_element.html#ad3969e5fb5f31e4b1c3dca9eecd6b0db", null ],
-    [ "AlignVertically", "classvrv_1_1_running_element.html#ab53acf6f04aa4b740d7f2aebce102569", null ],
     [ "AppendTextToCell", "classvrv_1_1_running_element.html#a67c2ec91815d2e3e7136e749d6d2309e", null ],
     [ "Clone", "classvrv_1_1_running_element.html#a79747fe8c2b0b4412229ea370504a1fe", null ],
     [ "FilterList", "classvrv_1_1_running_element.html#a9f45df6dec69a7470261919c46d387ac", null ],

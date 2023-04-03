@@ -7,7 +7,6 @@ var classvrv_1_1_rest =
     [ "AcceptEnd", "classvrv_1_1_rest.html#aec92b1bd7e5572722c8b15b60a27e24c", null ],
     [ "AcceptEnd", "classvrv_1_1_rest.html#a90ff9262c4c87b2e8ff15d4187a09639", null ],
     [ "AddChild", "classvrv_1_1_rest.html#a9423bd9fbe08e1d3dd011226121a8900", null ],
-    [ "AdjustBeams", "classvrv_1_1_rest.html#a091054e7185d3d91a43b1b6684008fe9", null ],
     [ "Clone", "classvrv_1_1_rest.html#a90a5a7595f5a3611e19f42144b67afb7", null ],
     [ "ConvertMarkupAnalytical", "classvrv_1_1_rest.html#af28c1188a8d8390f383828d6dbfd58e1", null ],
     [ "GenerateTimemap", "classvrv_1_1_rest.html#a085059b60202ac4b366e6f2d59861a75", null ],

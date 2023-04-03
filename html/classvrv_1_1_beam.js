@@ -6,8 +6,6 @@ var classvrv_1_1_beam =
     [ "Accept", "classvrv_1_1_beam.html#a88dff24cd3e4b39dd64f92348e6b5038", null ],
     [ "AcceptEnd", "classvrv_1_1_beam.html#a4bb6485ecd656962131dace79d9626f6", null ],
     [ "AcceptEnd", "classvrv_1_1_beam.html#aa61ad0ec6a8d9f4c0afe34b352dbf936", null ],
-    [ "AdjustBeams", "classvrv_1_1_beam.html#a5330f0f47fa15e055193519f35a7d8b0", null ],
-    [ "AdjustBeamsEnd", "classvrv_1_1_beam.html#adf973ec376fc00891cf66584cbce298f", null ],
     [ "Clone", "classvrv_1_1_beam.html#ac0e454de096901edf2da61d1d07c80b0", null ],
     [ "FilterList", "classvrv_1_1_beam.html#a2b3cdfa137cce9ffc5df789eb8f063b7", null ],
     [ "GetAdditionalBeamCount", "classvrv_1_1_beam.html#a091ac4c2fb6cdd046b679e61069f638d", null ],

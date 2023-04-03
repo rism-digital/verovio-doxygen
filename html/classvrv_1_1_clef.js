@@ -6,7 +6,6 @@ var classvrv_1_1_clef =
     [ "Accept", "classvrv_1_1_clef.html#a8db2943166d0f94f121bc0043c118cb4", null ],
     [ "AcceptEnd", "classvrv_1_1_clef.html#a619d7cd0aa41efa7bb9e825d98b08dac", null ],
     [ "AcceptEnd", "classvrv_1_1_clef.html#a47fcde5c8cd1feb60826a249ce28b8b7", null ],
-    [ "AdjustBeams", "classvrv_1_1_clef.html#a458fc3140eceb5094280a7df814c5d7f", null ],
     [ "Clone", "classvrv_1_1_clef.html#abb9d12cbce277d50a99e9681a5f0f7b6", null ],
     [ "GetClassName", "classvrv_1_1_clef.html#a23a6a1a7b1a71bfc7920a6f19cbd248e", null ],
     [ "GetClefGlyph", "classvrv_1_1_clef.html#a372c41254f60ddb6d7a13b5336d0338d", null ],

@@ -6,7 +6,6 @@ var classvrv_1_1_ligature =
     [ "Accept", "classvrv_1_1_ligature.html#a1edb0e03caf20e4c0dcd280092c65054", null ],
     [ "AcceptEnd", "classvrv_1_1_ligature.html#a354b925f48f7a728e1c85a0863990660", null ],
     [ "AcceptEnd", "classvrv_1_1_ligature.html#a034ad241c42afc34767936e761c93f9f", null ],
-    [ "CalcLigatureNotePos", "classvrv_1_1_ligature.html#aa92ecc2562a54bb335f7c3e7414373eb", null ],
     [ "Clone", "classvrv_1_1_ligature.html#a224ba002fb856c749e278fa6074f78d5", null ],
     [ "FilterList", "classvrv_1_1_ligature.html#a9280081f90f16d50797f57cef7d73304", null ],
     [ "GetClassName", "classvrv_1_1_ligature.html#af16a9b33f0a2d0da72acf05630cd715c", null ],
