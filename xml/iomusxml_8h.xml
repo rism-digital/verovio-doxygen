@@ -644,90 +644,93 @@
 <codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>PitchToMidi(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;step,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>alter,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>octave);</highlight></codeline>
 <codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MidiToPitch(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>midi,<sp/>std::string<sp/>&amp;step,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;alter,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;octave);</highlight></codeline>
 <codeline lineno="480"><highlight class="normal"></highlight></codeline>
-<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>octave<sp/>offset<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>m_octDis;</highlight></codeline>
-<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>measure<sp/>repeats<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_mRpt<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>measure<sp/>repeats<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_slash<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>MIDI<sp/>ticks<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_ppq<sp/>=<sp/>-1;</highlight></codeline>
-<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>measure<sp/>time<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_durTotal<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>measure<sp/>time<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_durFb<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>meter<sp/>signature<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>m_meterCount<sp/>=<sp/>{<sp/>4<sp/>};</highlight></codeline>
-<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_meterUnit<sp/>=<sp/>4;</highlight></codeline>
-<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/>MeterCountSign<sp/>m_meterSign<sp/>=<sp/>MeterCountSign::None;</highlight></codeline>
-<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>part<sp/>information<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_label" kindref="compound">Label</ref><sp/>*m_label<sp/>=<sp/>NULL;</highlight></codeline>
-<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_label_abbr" kindref="compound">LabelAbbr</ref><sp/>*m_labelAbbr<sp/>=<sp/>NULL;</highlight></codeline>
-<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_instr_def" kindref="compound">InstrDef</ref><sp/>*m_instrdef<sp/>=<sp/>NULL;</highlight></codeline>
-<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LastElementID<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_ID;</highlight></codeline>
-<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>A<sp/>map<sp/>of<sp/>stacks<sp/>for<sp/>piling<sp/>open<sp/>LayerElements<sp/>(beams,<sp/>tuplets,<sp/>chords,<sp/>btrem,<sp/>ftrem)<sp/>separately<sp/>per<sp/>layer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;Layer<sp/>*,<sp/>std::vector&lt;LayerElement<sp/>*&gt;&gt;<sp/>m_elementStackMap;</highlight></codeline>
-<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>A<sp/>maps<sp/>of<sp/>time<sp/>stamps<sp/>(score<sp/>time)<sp/>to<sp/>indicate<sp/>write<sp/>pointer<sp/>of<sp/>a<sp/>given<sp/>layer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;Layer<sp/>*,<sp/>int&gt;<sp/>m_layerEndTimes;</highlight></codeline>
-<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;Layer<sp/>*,<sp/>std::multimap&lt;int,<sp/>LayerElement<sp/>*&gt;&gt;<sp/>m_layerTimes;</highlight></codeline>
-<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>To<sp/>remember<sp/>layer<sp/>of<sp/>last<sp/>element<sp/>(note)<sp/>to<sp/>handle<sp/>chords<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref><sp/>*m_prevLayer<sp/>=<sp/>NULL;</highlight></codeline>
-<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>To<sp/>remember<sp/>current<sp/>layer<sp/>to<sp/>properly<sp/>handle<sp/>layers/staves/cross-staff<sp/>elements<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref><sp/>*m_currentLayer<sp/>=<sp/>NULL;</highlight></codeline>
-<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_isLayerInitialized<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>for<sp/>open<sp/>slurs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;Slur<sp/>*,<sp/>musicxml::OpenSlur&gt;&gt;<sp/>m_slurStack;</highlight></codeline>
-<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>for<sp/>slur<sp/>stops<sp/>that<sp/>might<sp/>come<sp/>before<sp/>the<sp/>slur<sp/>has<sp/>been<sp/>opened<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;LayerElement<sp/>*,<sp/>musicxml::CloseSlur&gt;&gt;<sp/>m_slurStopStack;</highlight></codeline>
-<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>for<sp/>open<sp/>ties<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;musicxml::OpenTie&gt;<sp/>m_tieStack;</highlight></codeline>
-<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>for<sp/>tie<sp/>stops<sp/>that<sp/>might<sp/>come<sp/>before<sp/>that<sp/>tie<sp/>was<sp/>opened<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;musicxml::CloseTie&gt;<sp/>m_tieStopStack;</highlight></codeline>
-<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>for<sp/>hairpins<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;Hairpin<sp/>*,<sp/>musicxml::OpenSpanner&gt;&gt;<sp/>m_hairpinStack;</highlight></codeline>
-<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>for<sp/>hairpin<sp/>stops<sp/>that<sp/>might<sp/>occur<sp/>before<sp/>a<sp/>hairpin<sp/>was<sp/>started<sp/>staffNumber,<sp/>tStamp2,<sp/>(hairpinNumber,</highlight></codeline>
-<codeline lineno="524"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>measureCount)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::tuple&lt;int,<sp/>double,<sp/>musicxml::OpenSpanner&gt;&gt;<sp/>m_hairpinStopStack;</highlight></codeline>
-<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>for<sp/>the<sp/>beamspans<sp/>with<sp/>numbers<sp/>of<sp/>staff/layer<sp/>where<sp/>starting<sp/>element<sp/>is<sp/>located*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;BeamSpan<sp/>*,<sp/>std::pair&lt;int,<sp/>int&gt;&gt;&gt;<sp/>m_beamspanStack;</highlight></codeline>
-<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;BracketSpan<sp/>*,<sp/>musicxml::OpenSpanner&gt;&gt;<sp/>m_bracketStack;</highlight></codeline>
-<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;Trill<sp/>*,<sp/>musicxml::OpenSpanner&gt;&gt;<sp/>m_trillStack;</highlight></codeline>
-<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Current<sp/>ending<sp/>info<sp/>for<sp/>start/stop<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;musicxml::EndingInfo&gt;<sp/>m_currentEndingStart;</highlight></codeline>
-<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;musicxml::EndingInfo&gt;<sp/>m_currentEndingStop;</highlight></codeline>
-<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>of<sp/>endings<sp/>to<sp/>be<sp/>inserted<sp/>at<sp/>the<sp/>end<sp/>of<sp/>XML<sp/>import<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;std::vector&lt;Measure<sp/>*&gt;,<sp/>musicxml::EndingInfo&gt;&gt;<sp/>m_endingStack;</highlight></codeline>
-<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>of<sp/>open<sp/>dashes<sp/>(direction-type)<sp/>containing<sp/>*ControlElement,<sp/>OpenDashes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;ControlElement<sp/>*,<sp/>musicxml::OpenDashes&gt;&gt;<sp/>m_openDashesStack;</highlight></codeline>
-<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stacks<sp/>for<sp/>ControlElements<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Dir<sp/>*&gt;<sp/>m_dirStack;</highlight></codeline>
-<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Dynam<sp/>*&gt;<sp/>m_dynamStack;</highlight></codeline>
-<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Gliss<sp/>*&gt;<sp/>m_glissStack;</highlight></codeline>
-<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Harm<sp/>*&gt;<sp/>m_harmStack;</highlight></codeline>
-<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Octave<sp/>*&gt;<sp/>m_octaveStack;</highlight></codeline>
-<codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Pedal<sp/>*&gt;<sp/>m_pedalStack;</highlight></codeline>
-<codeline lineno="544"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Tempo<sp/>*&gt;<sp/>m_tempoStack;</highlight></codeline>
-<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="546"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>The<sp/>stack<sp/>of<sp/>floating<sp/>elements<sp/>(tie,<sp/>slur,<sp/>etc.)<sp/>to<sp/>be<sp/>added<sp/>at<sp/>the</highlight></codeline>
-<codeline lineno="547"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>end<sp/>of<sp/>each<sp/>measure</highlight></codeline>
-<codeline lineno="548"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;std::string,<sp/>ControlElement<sp/>*&gt;&gt;<sp/>m_controlElements;</highlight></codeline>
-<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>stack<sp/>of<sp/>clef<sp/>changes<sp/>to<sp/>be<sp/>inserted<sp/>to<sp/>all<sp/>layers<sp/>of<sp/>a<sp/>given<sp/>staff<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/>std::queue&lt;musicxml::ClefChange&gt;<sp/>m_clefChangeQueue;</highlight></codeline>
-<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>stack<sp/>of<sp/>new<sp/>arpeggios<sp/>that<sp/>get<sp/>more<sp/>notes<sp/>added.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;Arpeg<sp/>*,<sp/>musicxml::OpenArpeggio&gt;&gt;<sp/>m_ArpeggioStack;</highlight></codeline>
-<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>a<sp/>map<sp/>for<sp/>the<sp/>measure<sp/>counts<sp/>storing<sp/>the<sp/>index<sp/>of<sp/>each<sp/>measure<sp/>created<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;Measure<sp/>*,<sp/>int&gt;<sp/>m_measureCounts;</highlight></codeline>
-<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>measure<sp/>rests<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;int,<sp/>int&gt;<sp/>m_multiRests;</highlight></codeline>
-<codeline lineno="558"><highlight class="normal"></highlight></codeline>
-<codeline lineno="559"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>NO_MUSICXML_SUPPORT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="560"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="483"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>octave<sp/>offset<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>m_octDis;</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>measure<sp/>repeats<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_mRpt<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>measure<sp/>repeats<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_slash<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>MIDI<sp/>ticks<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_ppq<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>measure<sp/>time<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_durTotal<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>measure<sp/>time<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_durFb<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>meter<sp/>signature<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>m_meterCount<sp/>=<sp/>{<sp/>4<sp/>};</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_meterUnit<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/>MeterCountSign<sp/>m_meterSign<sp/>=<sp/>MeterCountSign::None;</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>part<sp/>information<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_label" kindref="compound">Label</ref><sp/>*m_label<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_label_abbr" kindref="compound">LabelAbbr</ref><sp/>*m_labelAbbr<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_instr_def" kindref="compound">InstrDef</ref><sp/>*m_instrdef<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LastElementID<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_ID;</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>A<sp/>map<sp/>of<sp/>stacks<sp/>for<sp/>piling<sp/>open<sp/>LayerElements<sp/>(beams,<sp/>tuplets,<sp/>chords,<sp/>btrem,<sp/>ftrem)<sp/>separately<sp/>per<sp/>layer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;Layer<sp/>*,<sp/>std::vector&lt;LayerElement<sp/>*&gt;&gt;<sp/>m_elementStackMap;</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>A<sp/>maps<sp/>of<sp/>time<sp/>stamps<sp/>(score<sp/>time)<sp/>to<sp/>indicate<sp/>write<sp/>pointer<sp/>of<sp/>a<sp/>given<sp/>layer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;Layer<sp/>*,<sp/>int&gt;<sp/>m_layerEndTimes;</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;Layer<sp/>*,<sp/>std::multimap&lt;int,<sp/>LayerElement<sp/>*&gt;&gt;<sp/>m_layerTimes;</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>To<sp/>remember<sp/>layer<sp/>of<sp/>last<sp/>element<sp/>(note)<sp/>to<sp/>handle<sp/>chords<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref><sp/>*m_prevLayer<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>To<sp/>remember<sp/>current<sp/>layer<sp/>to<sp/>properly<sp/>handle<sp/>layers/staves/cross-staff<sp/>elements<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref><sp/>*m_currentLayer<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_isLayerInitialized<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>for<sp/>open<sp/>slurs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;Slur<sp/>*,<sp/>musicxml::OpenSlur&gt;&gt;<sp/>m_slurStack;</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>for<sp/>slur<sp/>stops<sp/>that<sp/>might<sp/>come<sp/>before<sp/>the<sp/>slur<sp/>has<sp/>been<sp/>opened<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;LayerElement<sp/>*,<sp/>musicxml::CloseSlur&gt;&gt;<sp/>m_slurStopStack;</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>for<sp/>open<sp/>ties<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;musicxml::OpenTie&gt;<sp/>m_tieStack;</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>for<sp/>tie<sp/>stops<sp/>that<sp/>might<sp/>come<sp/>before<sp/>that<sp/>tie<sp/>was<sp/>opened<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;musicxml::CloseTie&gt;<sp/>m_tieStopStack;</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>for<sp/>hairpins<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;Hairpin<sp/>*,<sp/>musicxml::OpenSpanner&gt;&gt;<sp/>m_hairpinStack;</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>for<sp/>hairpin<sp/>stops<sp/>that<sp/>might<sp/>occur<sp/>before<sp/>a<sp/>hairpin<sp/>was<sp/>started<sp/>staffNumber,<sp/>tStamp2,<sp/>(hairpinNumber,</highlight></codeline>
+<codeline lineno="527"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>measureCount)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::tuple&lt;int,<sp/>double,<sp/>musicxml::OpenSpanner&gt;&gt;<sp/>m_hairpinStopStack;</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>for<sp/>the<sp/>beamspans<sp/>with<sp/>numbers<sp/>of<sp/>staff/layer<sp/>where<sp/>starting<sp/>element<sp/>is<sp/>located*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;BeamSpan<sp/>*,<sp/>std::pair&lt;int,<sp/>int&gt;&gt;&gt;<sp/>m_beamspanStack;</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;BracketSpan<sp/>*,<sp/>musicxml::OpenSpanner&gt;&gt;<sp/>m_bracketStack;</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;Trill<sp/>*,<sp/>musicxml::OpenSpanner&gt;&gt;<sp/>m_trillStack;</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Current<sp/>ending<sp/>info<sp/>for<sp/>start/stop<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;musicxml::EndingInfo&gt;<sp/>m_currentEndingStart;</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;musicxml::EndingInfo&gt;<sp/>m_currentEndingStop;</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>of<sp/>endings<sp/>to<sp/>be<sp/>inserted<sp/>at<sp/>the<sp/>end<sp/>of<sp/>XML<sp/>import<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;std::vector&lt;Measure<sp/>*&gt;,<sp/>musicxml::EndingInfo&gt;&gt;<sp/>m_endingStack;</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stack<sp/>of<sp/>open<sp/>dashes<sp/>(direction-type)<sp/>containing<sp/>*ControlElement,<sp/>OpenDashes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;ControlElement<sp/>*,<sp/>musicxml::OpenDashes&gt;&gt;<sp/>m_openDashesStack;</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>stacks<sp/>for<sp/>ControlElements<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Dir<sp/>*&gt;<sp/>m_dirStack;</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Dynam<sp/>*&gt;<sp/>m_dynamStack;</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Gliss<sp/>*&gt;<sp/>m_glissStack;</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Harm<sp/>*&gt;<sp/>m_harmStack;</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Octave<sp/>*&gt;<sp/>m_octaveStack;</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Pedal<sp/>*&gt;<sp/>m_pedalStack;</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Tempo<sp/>*&gt;<sp/>m_tempoStack;</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="549"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>The<sp/>stack<sp/>of<sp/>floating<sp/>elements<sp/>(tie,<sp/>slur,<sp/>etc.)<sp/>to<sp/>be<sp/>added<sp/>at<sp/>the</highlight></codeline>
+<codeline lineno="550"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>end<sp/>of<sp/>each<sp/>measure</highlight></codeline>
+<codeline lineno="551"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;std::string,<sp/>ControlElement<sp/>*&gt;&gt;<sp/>m_controlElements;</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>stack<sp/>of<sp/>clef<sp/>changes<sp/>to<sp/>be<sp/>inserted<sp/>to<sp/>all<sp/>layers<sp/>of<sp/>a<sp/>given<sp/>staff<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/>std::queue&lt;musicxml::ClefChange&gt;<sp/>m_clefChangeQueue;</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>stack<sp/>of<sp/>new<sp/>arpeggios<sp/>that<sp/>get<sp/>more<sp/>notes<sp/>added.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;Arpeg<sp/>*,<sp/>musicxml::OpenArpeggio&gt;&gt;<sp/>m_ArpeggioStack;</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>a<sp/>map<sp/>for<sp/>the<sp/>measure<sp/>counts<sp/>storing<sp/>the<sp/>index<sp/>of<sp/>each<sp/>measure<sp/>created<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;Measure<sp/>*,<sp/>int&gt;<sp/>m_measureCounts;</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>measure<sp/>rests<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;int,<sp/>int&gt;<sp/>m_multiRests;</highlight></codeline>
 <codeline lineno="561"><highlight class="normal"></highlight></codeline>
-<codeline lineno="562"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="563"><highlight class="normal"></highlight></codeline>
-<codeline lineno="564"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__VRV_IOMUSXML_H__</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>NO_MUSICXML_SUPPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="563"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="566"><highlight class="normal"></highlight></codeline>
+<codeline lineno="567"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__VRV_IOMUSXML_H__</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h"/>
   </compounddef>
