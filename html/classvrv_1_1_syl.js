@@ -7,6 +7,7 @@ var classvrv_1_1_syl =
     [ "AcceptEnd", "classvrv_1_1_syl.html#ad317c685a453903a69b934cec0b11a0b", null ],
     [ "AcceptEnd", "classvrv_1_1_syl.html#ae57d24a8ab1eb6ed3b67c96b9e3e4a97", null ],
     [ "CalcConnectorSpacing", "classvrv_1_1_syl.html#a66d380bb93bb0abd4afd78b21251bfc9", null ],
+    [ "CalcHyphenLength", "classvrv_1_1_syl.html#aa54f049014e438aa49c670d5daafc07d", null ],
     [ "Clone", "classvrv_1_1_syl.html#a49723265ec79b247fa9bf1b4a4f48195", null ],
     [ "CreateDefaultZone", "classvrv_1_1_syl.html#a61983aa1e78d32047fffe5f3c083c09f", null ],
     [ "GenerateMIDI", "classvrv_1_1_syl.html#aaddb1fd37cf48bda08d0cdb30e4260a6", null ],

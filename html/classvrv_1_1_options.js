@@ -95,7 +95,6 @@ var classvrv_1_1_options =
     [ "m_loadSelectedMdivOnly", "classvrv_1_1_options.html#a19c2b0f189a3b2930750b26240ae0b20", null ],
     [ "m_logLevel", "classvrv_1_1_options.html#ac61fa811d4ecd7537b7744cf95c9f8b4", null ],
     [ "m_lyricElision", "classvrv_1_1_options.html#a4fe74a82c23ffc4bac6e37c72b99c1d4", null ],
-    [ "m_lyricHyphenLength", "classvrv_1_1_options.html#ab9cb7c56f3b7b04e25bdff161ac97dc7", null ],
     [ "m_lyricLineThickness", "classvrv_1_1_options.html#a8e2b0a84fd5b3dbaabe354329de62cb7", null ],
     [ "m_lyricNoStartHyphen", "classvrv_1_1_options.html#a7c71920d1b69d857c51a801d942d074e", null ],
     [ "m_lyricSize", "classvrv_1_1_options.html#ad5caf6faa464e6c6306a8b182dc788a3", null ],
