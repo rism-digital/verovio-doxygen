@@ -2190,6 +2190,7 @@
     <member refid="classvrv_1_1_doc_1ae0d680385b78c8ba2e1b84452ad27889" kind="function"><name>HasTimemap</name></member>
     <member refid="classvrv_1_1_doc_1a4b8be5eebe48afb3668ec97c133148a5" kind="function"><name>ExportMIDI</name></member>
     <member refid="classvrv_1_1_doc_1aa8808429c70b8fd2756dd9634671789c" kind="function"><name>ExportTimemap</name></member>
+    <member refid="classvrv_1_1_doc_1aff4b57776460fb8bb24eb8dcfc4fcdcf" kind="function"><name>ExportExpansionMap</name></member>
     <member refid="classvrv_1_1_doc_1a6e47232f8eef26473e867f4d2f96701c" kind="function"><name>ExportFeatures</name></member>
     <member refid="classvrv_1_1_doc_1acdae54ac378140e0eeea99e21aabfdf4" kind="function"><name>ScoreDefSetCurrentDoc</name></member>
     <member refid="classvrv_1_1_doc_1a5e9aa400ebeacad2373631dddbdf6baf" kind="function"><name>ScoreDefOptimizeDoc</name></member>
@@ -2490,6 +2491,7 @@
     <member refid="classvrv_1_1_expansion_map_1a9f6d987eb4632933ad16a516888830c2" kind="function"><name>HasExpansionMap</name></member>
     <member refid="classvrv_1_1_expansion_map_1a6d7e1ba46f890038bb1094b0a4e5620b" kind="function"><name>Expand</name></member>
     <member refid="classvrv_1_1_expansion_map_1aaeb9194a90c849af2db967c53138a19b" kind="function"><name>GetExpansionIDsForElement</name></member>
+    <member refid="classvrv_1_1_expansion_map_1a51f1783fd2dc369d2629a1c089cfd077" kind="function"><name>ToJson</name></member>
     <member refid="classvrv_1_1_expansion_map_1a63c5f6ba04897a9c7103cc82f962bf71" kind="function"><name>UpdateIDs</name></member>
     <member refid="classvrv_1_1_expansion_map_1a467c25024343ff885106b784747c61b8" kind="function"><name>GetIDList</name></member>
     <member refid="classvrv_1_1_expansion_map_1a6e07abf7630c0c3a768f5bae6ff179bc" kind="function"><name>GeneratePredictableIDs</name></member>
@@ -3882,16 +3884,32 @@
     <member refid="classvrv_1_1_humdrum_input_1a865723405e2302a90a89c5124426a72b" kind="function"><name>setClefOctaveDisplacement</name></member>
     <member refid="classvrv_1_1_humdrum_input_1ab9e79fddd753ae7b8eed2b6ce9653940" kind="function"><name>setClefBasicShape</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a0c2e7c3c7301c9234c8d35ad92cbd917" kind="function"><name>setClefStaffLine</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1acc37162da19cd4929c45cd51422bf2b6" kind="function"><name>cleanDegreeString</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a95e33929b3d1612e8767114e6697b071" kind="function"><name>analyzeHarmInterpretations</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a9b6bb8d22ce37b673f7cf9daf732e0cc" kind="function"><name>analyzeDegreeInterpretations</name></member>
     <member refid="classvrv_1_1_humdrum_input_1ac71d559c67e18fb3437995febd1d8e4d" kind="function"><name>analyzeTextInterpretation</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1a64ab5b9aa246e7047f9c7b89d140f34d" kind="function"><name>addHarmLabel</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a1efd80806c761f55b9f7f471f28793be" kind="function"><name>addHarmLabel</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a5d53a9ea16279842a8d4a77f8847a585" kind="function"><name>getMoveableDoName</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a27f2f3b544dbe0867b7f1ec3aef07dc1" kind="function"><name>setFontsizeForHarm</name></member>
     <member refid="classvrv_1_1_humdrum_input_1ae03ce6024bf4cbea82035c13de578b71" kind="function"><name>setFontStyleForHarm</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a1c7870f17761f09ad9b22dd15987f719" kind="function"><name>addSemitoneAdjustmentsToDeg</name></member>
     <member refid="classvrv_1_1_humdrum_input_1ade8e030d61939ecf44f040402d9ce855" kind="function"><name>hasParallelNote</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a99311bd16a677402d095a1b086414340" kind="function"><name>setHarmContent</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a52d20f274f6b85161463558510bdc294" kind="function"><name>removeRecipFromHarmContent</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a53acc9568d05937286dea22e91b80e99" kind="function"><name>setMxHarmContent</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a48246520760bc1691e9024d19877e116" kind="function"><name>setDegreeContent</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a5c9607a20674de879f2cd5b873b9205b" kind="function"><name>cleanStringString</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a44f6ce69e74d73a948ab0537ead13c69" kind="function"><name>cleanFBString</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1ab0f072153bb690966d554d08678cfc84" kind="function"><name>cleanFBString2</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a5571cebc9e1719cf676693af9082833b" kind="function"><name>splitFBString</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1af7ef992c5c0810b3440fd6dbf96d2bfa" kind="function"><name>getVisualFBAccidental</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a3ccd810ac52fe1863c27659b0acbf0aa" kind="function"><name>convertFBNumber</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a4e18d3c9d896b773a5a2c154d0f5c693" kind="function"><name>checkForLineContinuations</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a2d4f74daf454bf77b039ed9058b2b3ba" kind="function"><name>convertNumberToWstring</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1ac262dc53f26653467f353670f6151838" kind="function"><name>appendTextToRend</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a293d3b4640c7a09a3c73bf388861bbfe" kind="function"><name>parseMultiVerovioOptions</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1a3826754bfa3124bd38ba7ffe894639f9" kind="function"><name>addSforzandoToNote</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1aa9baa88f17665bd20764601a632221e5" kind="function"><name>addDynamicsMark</name></member>
+    <member refid="classvrv_1_1_humdrum_input_1adaf49dab56c55afcf491625ffb90ce11" kind="function"><name>hasNoStaves</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a966c63e8921aded6ad9d48f54e9a583d" kind="function"><name>createHeader</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a4c0eb71290772178868c723625dffb0d" kind="function"><name>insertTitle</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a5e7c38dab010fd569f7c7c0b7e778586" kind="function"><name>insertExtMeta</name></member>
@@ -3942,17 +3960,6 @@
     <member refid="classvrv_1_1_humdrum_input_1a5c9b32b25f2b8c302264c80dce6655dc" kind="function"><name>attachToToken</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a3819f602a01d3fafffd9b1214a265971" kind="function"><name>setAttachmentType</name></member>
     <member refid="classvrv_1_1_humdrum_input_1ab65c51d5584f7527d944f6098279d3a3" kind="function"><name>setFontsize</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1aa4281fe56a5d31f664cb50b68da23a27" kind="function"><name>cleanHarmString</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1a0b50785a913630ead41129fa7818ecfa" kind="function"><name>cleanHarmString2</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1abdae54ab10d2c26f4d88e0aa92b10c8e" kind="function"><name>cleanHarmString3</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1a5c9607a20674de879f2cd5b873b9205b" kind="function"><name>cleanStringString</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1a44f6ce69e74d73a948ab0537ead13c69" kind="function"><name>cleanFBString</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1ab0f072153bb690966d554d08678cfc84" kind="function"><name>cleanFBString2</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1a5571cebc9e1719cf676693af9082833b" kind="function"><name>splitFBString</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1af7ef992c5c0810b3440fd6dbf96d2bfa" kind="function"><name>getVisualFBAccidental</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1a3ccd810ac52fe1863c27659b0acbf0aa" kind="function"><name>convertFBNumber</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1a4e18d3c9d896b773a5a2c154d0f5c693" kind="function"><name>checkForLineContinuations</name></member>
-    <member refid="classvrv_1_1_humdrum_input_1a2d4f74daf454bf77b039ed9058b2b3ba" kind="function"><name>convertNumberToWstring</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a3a9cb0e5cf601ccbe32c261cd96b5ab0" kind="function"><name>unescapeHtmlEntities</name></member>
     <member refid="classvrv_1_1_humdrum_input_1a0acf7e7510ec5e0d78373afa0854aa59" kind="function"><name>WriteUTF8</name></member>
     <member refid="classvrv_1_1_humdrum_input_1ab63ec2b131f47b4ee96394932eeb25d6" kind="function"><name>UnquoteHTML</name></member>
@@ -8578,7 +8585,9 @@
     <member refid="classvrv_1_1_toolkit_1a572174dc1e44773a2ab83a0ac79b479c" kind="function"><name>RenderToPAE</name></member>
     <member refid="classvrv_1_1_toolkit_1a4360e00f3093a9360bf231e3d7f48c5f" kind="function"><name>RenderToPAEFile</name></member>
     <member refid="classvrv_1_1_toolkit_1aa0005de91225b21a57bf09ef28ad5498" kind="function"><name>RenderToTimemap</name></member>
+    <member refid="classvrv_1_1_toolkit_1a2766268f4c000fb97a5bc2e666c4f53e" kind="function"><name>RenderToExpansionMap</name></member>
     <member refid="classvrv_1_1_toolkit_1a9b4d838a1d7256322a4f842877794905" kind="function"><name>RenderToTimemapFile</name></member>
+    <member refid="classvrv_1_1_toolkit_1a58d5ff7b44f30721ca7c00bee87fdb83" kind="function"><name>RenderToExpansionMapFile</name></member>
     <member refid="classvrv_1_1_toolkit_1a1b23b93998cb39e2016130b01d1db1b3" kind="function"><name>GetHumdrum</name></member>
     <member refid="classvrv_1_1_toolkit_1adf47bbe710d3902f241db376002f55cb" kind="function"><name>ConvertMEIToHumdrum</name></member>
     <member refid="classvrv_1_1_toolkit_1a8a411c7fe22ffb9df4be52b582af550e" kind="function"><name>ConvertHumdrumToHumdrum</name></member>
@@ -9921,6 +9930,7 @@
     <member refid="toolkitdef_8h_1a6feb6bdf079a5bd110d39bf405870a8da48a983b473a7a694c2231296b78a276c" kind="enumvalue"><name>ESAC</name></member>
     <member refid="toolkitdef_8h_1a6feb6bdf079a5bd110d39bf405870a8dabb89ae7679f4750506740f5822fdb89d" kind="enumvalue"><name>MIDI</name></member>
     <member refid="toolkitdef_8h_1a6feb6bdf079a5bd110d39bf405870a8da0412dc02b203f88c887b370a40e9ff4e" kind="enumvalue"><name>TIMEMAP</name></member>
+    <member refid="toolkitdef_8h_1a6feb6bdf079a5bd110d39bf405870a8dad65765ff0897103d17875e030024be3b" kind="enumvalue"><name>EXPANSIONMAP</name></member>
     <member refid="toolkitdef_8h_1a03fd8fbbc4dc75a77e44a3e511de884e" kind="enum"><name>@5</name></member>
     <member refid="toolkitdef_8h_1a03fd8fbbc4dc75a77e44a3e511de884eab96915c60817c78e70b5db761ae5e022" kind="enumvalue"><name>LOG_OFF</name></member>
     <member refid="toolkitdef_8h_1a03fd8fbbc4dc75a77e44a3e511de884ea85efde2d1386961275f4ce865e5974fa" kind="enumvalue"><name>LOG_ERROR</name></member>

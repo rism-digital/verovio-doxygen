@@ -1,5 +1,12 @@
 var NAVTREEINDEX24 =
 {
+"classvrv_1_1_stem.html#aeffd024bc792bb416e6bb0f8d77bb157":[1,0,0,347,14],
+"classvrv_1_1_stemmed_drawing_interface.html":[1,0,0,348],
+"classvrv_1_1_stemmed_drawing_interface.html#a1867d1dfd86c7d0860f2ad616dda1569":[1,0,0,348,3],
+"classvrv_1_1_stemmed_drawing_interface.html#a328ba0ceb390cffb9ecacc582cd8d510":[1,0,0,348,2],
+"classvrv_1_1_stemmed_drawing_interface.html#a43de0958ac09bc7ca279377ad7dd490e":[1,0,0,348,12],
+"classvrv_1_1_stemmed_drawing_interface.html#a4783f03287943c8c371446d5a833f378":[1,0,0,348,0],
+"classvrv_1_1_stemmed_drawing_interface.html#a6f1751b26b5e23aeff170b744a20a09e":[1,0,0,348,7],
 "classvrv_1_1_stemmed_drawing_interface.html#a846549fb2b39c08115223645a8cf1a6f":[1,0,0,348,1],
 "classvrv_1_1_stemmed_drawing_interface.html#a9ca145a07c1cfbaebe601f1308c591e8":[1,0,0,348,13],
 "classvrv_1_1_stemmed_drawing_interface.html#a9d6a8466d3c64c1137057e7753504bf1":[1,0,0,348,9],
@@ -242,12 +249,5 @@ var NAVTREEINDEX24 =
 "classvrv_1_1_system.html#afb30e5cd096b54497afb001b7ae361ef":[1,0,0,359,43],
 "classvrv_1_1_system.html#afc3f4dd68c9cf720bb6bda66c8df0056":[1,0,0,359,14],
 "classvrv_1_1_system_aligner.html":[1,0,0,360],
-"classvrv_1_1_system_aligner.html#a014e6ec2886ed73e606d6283916d4c55":[1,0,0,360,4],
-"classvrv_1_1_system_aligner.html#a024f36eb64e0d6adf31217b55ba72b8e":[1,0,0,360,0],
-"classvrv_1_1_system_aligner.html#a024f36eb64e0d6adf31217b55ba72b8ea6adf97f83acf6453d4a6a4b1070f3754":[1,0,0,360,0,4],
-"classvrv_1_1_system_aligner.html#a024f36eb64e0d6adf31217b55ba72b8ea7d55ac077f11ad55a67924103d450612":[1,0,0,360,0,2],
-"classvrv_1_1_system_aligner.html#a024f36eb64e0d6adf31217b55ba72b8ea8f7f93630c366dc55aec88eb8e9640d0":[1,0,0,360,0,1],
-"classvrv_1_1_system_aligner.html#a024f36eb64e0d6adf31217b55ba72b8eaa45da96d0bf6575970f2d27af22be28a":[1,0,0,360,0,0],
-"classvrv_1_1_system_aligner.html#a024f36eb64e0d6adf31217b55ba72b8eab5c644787d66a37b2d0e7eefaf11506b":[1,0,0,360,0,3],
-"classvrv_1_1_system_aligner.html#a07b30ef18623217d3007616f18b341f6":[1,0,0,360,1]
+"classvrv_1_1_system_aligner.html#a014e6ec2886ed73e606d6283916d4c55":[1,0,0,360,4]
 };

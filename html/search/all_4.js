@@ -18,8 +18,9 @@ var searchData=
   ['expansion_291',['Expansion',['../classvrv_1_1_expansion.html',1,'vrv']]],
   ['expansionmap_292',['ExpansionMap',['../classvrv_1_1_expansion_map.html',1,'vrv']]],
   ['export_293',['Export',['../classvrv_1_1_m_e_i_output.html#a28a5600705fbc7516e46d77b3a7611cb',1,'vrv::MEIOutput::Export()'],['../classvrv_1_1_p_a_e_output.html#a77feed5ebe37df0bedfc96632f15712d',1,'vrv::PAEOutput::Export()']]],
-  ['exportfeatures_294',['ExportFeatures',['../classvrv_1_1_doc.html#a6e47232f8eef26473e867f4d2f96701c',1,'vrv::Doc']]],
-  ['exportmidi_295',['ExportMIDI',['../classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5',1,'vrv::Doc']]],
-  ['exporttimemap_296',['ExportTimemap',['../classvrv_1_1_doc.html#aa8808429c70b8fd2756dd9634671789c',1,'vrv::Doc']]],
-  ['extract_297',['Extract',['../classvrv_1_1_feature_extractor.html#a4423a8c50b18855e5d903c5a357d90f0',1,'vrv::FeatureExtractor']]]
+  ['exportexpansionmap_294',['ExportExpansionMap',['../classvrv_1_1_doc.html#aff4b57776460fb8bb24eb8dcfc4fcdcf',1,'vrv::Doc']]],
+  ['exportfeatures_295',['ExportFeatures',['../classvrv_1_1_doc.html#a6e47232f8eef26473e867f4d2f96701c',1,'vrv::Doc']]],
+  ['exportmidi_296',['ExportMIDI',['../classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5',1,'vrv::Doc']]],
+  ['exporttimemap_297',['ExportTimemap',['../classvrv_1_1_doc.html#aa8808429c70b8fd2756dd9634671789c',1,'vrv::Doc']]],
+  ['extract_298',['Extract',['../classvrv_1_1_feature_extractor.html#a4423a8c50b18855e5d903c5a357d90f0',1,'vrv::FeatureExtractor']]]
 ];

@@ -20,6 +20,7 @@ var classvrv_1_1_doc =
     [ "ConvertToPageBasedDoc", "classvrv_1_1_doc.html#a1f5b58cd73b6f04ce22ebf231c69db32", null ],
     [ "DeactiveateSelection", "classvrv_1_1_doc.html#ae0ebee5a808c3397d3f111c6f4a2ac4d", null ],
     [ "ExpandExpansions", "classvrv_1_1_doc.html#a69237ae834ae8fc6fc6b1255f0b1e2cc", null ],
+    [ "ExportExpansionMap", "classvrv_1_1_doc.html#aff4b57776460fb8bb24eb8dcfc4fcdcf", null ],
     [ "ExportFeatures", "classvrv_1_1_doc.html#a6e47232f8eef26473e867f4d2f96701c", null ],
     [ "ExportMIDI", "classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5", null ],
     [ "ExportTimemap", "classvrv_1_1_doc.html#aa8808429c70b8fd2756dd9634671789c", null ],

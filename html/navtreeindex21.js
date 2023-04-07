@@ -1,5 +1,12 @@
 var NAVTREEINDEX21 =
 {
+"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#aa65048fa64dd7d9dccde75d75afe56ab":[1,0,0,301,6],
+"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#ad04ea7b191b20b9fa871c54d7a9165d0":[1,0,0,301,2],
+"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#aee572601386a3702f3ca2eda910c42f5":[1,0,0,301,7],
+"classvrv_1_1_prepare_time_pointing_functor.html":[1,0,0,302],
+"classvrv_1_1_prepare_time_pointing_functor.html#a126d3fead354f9df482a44cd52cc65ac":[1,0,0,302,0],
+"classvrv_1_1_prepare_time_pointing_functor.html#a163b97a5b7b571d8e7c8d9822dc07d1d":[1,0,0,302,6],
+"classvrv_1_1_prepare_time_pointing_functor.html#a3a79cffb7d40f12b36e1db760835ed7d":[1,0,0,302,5],
 "classvrv_1_1_prepare_time_pointing_functor.html#a4c53b0215d1f14ec6ad744e84253309d":[1,0,0,302,4],
 "classvrv_1_1_prepare_time_pointing_functor.html#a83ee3e33253e36dea2e428a2bf7e0ee9":[1,0,0,302,2],
 "classvrv_1_1_prepare_time_pointing_functor.html#ae2b45cb9140e792f8a5b7a745c6756de":[1,0,0,302,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX21 =
 "classvrv_1_1_running_element.html#a9715a70dc4ff18c6599ae8cfc2f7e31f":[1,0,0,319,35],
 "classvrv_1_1_running_element.html#a9f45df6dec69a7470261919c46d387ac":[1,0,0,319,13],
 "classvrv_1_1_running_element.html#aa3f387dab6ace2fcbea02784a4d81389":[1,0,0,319,5],
-"classvrv_1_1_running_element.html#aa48cff3c850eb97a2ee139b4db020604":[1,0,0,319,16],
-"classvrv_1_1_running_element.html#aafbd7b69b9401d2cbe46aee234e25496":[1,0,0,319,28],
-"classvrv_1_1_running_element.html#abf3503469f6676f1fed21d88bb8c7334":[1,0,0,319,0],
-"classvrv_1_1_running_element.html#ac418bfe7bce6281adf36d00c35eb59d3":[1,0,0,319,15],
-"classvrv_1_1_running_element.html#aceb986ba6979779917322bf9cec5b925":[1,0,0,319,2],
-"classvrv_1_1_running_element.html#ad1466ff36a776308b176901910b0fe61":[1,0,0,319,25],
-"classvrv_1_1_running_element.html#ad3969e5fb5f31e4b1c3dca9eecd6b0db":[1,0,0,319,10],
-"classvrv_1_1_running_element.html#ad54c3f73d54d0d5b51eb993d7c0dd80d":[1,0,0,319,8]
+"classvrv_1_1_running_element.html#aa48cff3c850eb97a2ee139b4db020604":[1,0,0,319,16]
 };
