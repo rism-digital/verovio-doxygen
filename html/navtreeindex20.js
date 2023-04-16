@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"classvrv_1_1_pg_head.html#a25c4046281a76bae00a42fa29b511be3":[1,0,0,274,7],
 "classvrv_1_1_pg_head.html#a3d0da782d4e6d5f016517f9ce58c2cbf":[1,0,0,274,2],
 "classvrv_1_1_pg_head.html#a467bfb124db2dfb322e0b285c7ebb196":[1,0,0,274,1],
 "classvrv_1_1_pg_head.html#a546b65e6957088c5af587cd072e91a60":[1,0,0,274,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "classvrv_1_1_prepare_staff_current_time_spanning_functor.html#a3b6fbf3e704c34dea450da5e49258be8":[1,0,0,301,5],
 "classvrv_1_1_prepare_staff_current_time_spanning_functor.html#a72063f843f9dff620b83b74fc9de4f9a":[1,0,0,301,4],
 "classvrv_1_1_prepare_staff_current_time_spanning_functor.html#a8853e80866da0194a4ed22a128aeb36d":[1,0,0,301,3],
-"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#a9d9db77de26c666352db86e2990c6a41":[1,0,0,301,8],
-"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#aa65048fa64dd7d9dccde75d75afe56ab":[1,0,0,301,6]
+"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#a9d9db77de26c666352db86e2990c6a41":[1,0,0,301,8]
 };
