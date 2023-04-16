@@ -6,8 +6,6 @@ var classvrv_1_1_ending =
     [ "Accept", "classvrv_1_1_ending.html#ace0589f7c1369a60cdc71dc9de002369", null ],
     [ "AcceptEnd", "classvrv_1_1_ending.html#adbb8db3c896b8b2ed1d0ef44bc904204", null ],
     [ "AcceptEnd", "classvrv_1_1_ending.html#ac9631a51f2ff782cc0c7778cc730b0ce", null ],
-    [ "CastOffEncoding", "classvrv_1_1_ending.html#a741d2447c7a59bd8a15cd45d0b04e54e", null ],
-    [ "CastOffSystems", "classvrv_1_1_ending.html#a371f79d23675e2563c4f6e5d61ab6dbe", null ],
     [ "Clone", "classvrv_1_1_ending.html#ab8ed4625a2bfd1fae5b6159aaba33197", null ],
     [ "ConvertToPageBased", "classvrv_1_1_ending.html#a54759d92890407ec28b39cb08a63501c", null ],
     [ "ConvertToPageBasedEnd", "classvrv_1_1_ending.html#a02eedd2cb8e4e7325bca0c8ab5f66052", null ],

@@ -27,7 +27,6 @@ var classvrv_1_1_floating_object =
     [ "SetDrawingGrpId", "classvrv_1_1_floating_object.html#a2a54c03eab79c35ce2030916053bd1d4", null ],
     [ "SetDrawingGrpObject", "classvrv_1_1_floating_object.html#abb3c371794922b14e5a0265a0bd27bba", null ],
     [ "SetMaxDrawingYRel", "classvrv_1_1_floating_object.html#a181fb01aa1f109c4d841eef4a5947e4f", null ],
-    [ "UnCastOff", "classvrv_1_1_floating_object.html#ad76285ff372a1a1c5eca6fb7e9923afe", null ],
     [ "UpdateContentBBoxX", "classvrv_1_1_floating_object.html#a79c7af4267643b1bc2a783be841975c2", null ],
     [ "UpdateContentBBoxY", "classvrv_1_1_floating_object.html#a88f281e9a6394157894a57b546346017", null ],
     [ "UpdateSelfBBoxX", "classvrv_1_1_floating_object.html#a29ef524752d056b1f60cab88e77a32ee", null ],

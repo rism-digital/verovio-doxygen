@@ -7,7 +7,6 @@ var classvrv_1_1_page =
     [ "AcceptEnd", "classvrv_1_1_page.html#a2b209bef7a22595bfa7be67a35b3ea3d", null ],
     [ "AcceptEnd", "classvrv_1_1_page.html#ada04735ab57008c86f13d8b2e55d3047", null ],
     [ "ApplyPPUFactor", "classvrv_1_1_page.html#a8785e89ad3d81f119949e426f47516a5", null ],
-    [ "CastOffPagesEnd", "classvrv_1_1_page.html#aa7290739ed8573486c552f7c6e302f8b", null ],
     [ "GetClassName", "classvrv_1_1_page.html#aabe75ba232afaba7727445814a10b808", null ],
     [ "GetContentHeight", "classvrv_1_1_page.html#af5028d206f7fb8e8b5c58d5644ca5a29", null ],
     [ "GetContentWidth", "classvrv_1_1_page.html#a0608a60a03878f6c8223d103c3765cec", null ],

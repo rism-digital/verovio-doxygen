@@ -11,7 +11,6 @@ var classvrv_1_1_doc =
     [ "CastOffDocBase", "classvrv_1_1_doc.html#a60d959e4f877248e087e2a945e0f9f31", null ],
     [ "CastOffEncodingDoc", "classvrv_1_1_doc.html#a1f4801d2f14675afd7a372f525cbed2d", null ],
     [ "CastOffLineDoc", "classvrv_1_1_doc.html#a4676652a2b466a52a0b5462f6bd19031", null ],
-    [ "CastOffRunningElements", "classvrv_1_1_doc.html#ab50a46ae81caf105c0884f38ee88502e", null ],
     [ "CastOffSmartDoc", "classvrv_1_1_doc.html#aff86b7ca7769957dd5cfb7dfe2936936", null ],
     [ "ClearSelectionPages", "classvrv_1_1_doc.html#a7cf6f055c8c7cdad2d1e652554f43f97", null ],
     [ "ConvertFontPoint", "classvrv_1_1_doc.html#a28ad795a0d3439e48b22401c8fe6824d", null ],

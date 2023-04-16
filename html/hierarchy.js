@@ -1046,6 +1046,13 @@ var hierarchy =
           [ "vrv::CalcSlurDirectionFunctor", "classvrv_1_1_calc_slur_direction_functor.html", null ],
           [ "vrv::CalcSpanningBeamSpansFunctor", "classvrv_1_1_calc_spanning_beam_spans_functor.html", null ],
           [ "vrv::CalcStemFunctor", "classvrv_1_1_calc_stem_functor.html", null ],
+          [ "vrv::CastOffEncodingFunctor", "classvrv_1_1_cast_off_encoding_functor.html", null ],
+          [ "vrv::CastOffPagesFunctor", "classvrv_1_1_cast_off_pages_functor.html", null ],
+          [ "vrv::CastOffSystemsFunctor", "classvrv_1_1_cast_off_systems_functor.html", null ],
+          [ "vrv::CastOffToSelectionFunctor", "classvrv_1_1_cast_off_to_selection_functor.html", null ],
+          [ "vrv::JustifyXFunctor", "classvrv_1_1_justify_x_functor.html", null ],
+          [ "vrv::JustifyYAdjustCrossStaffFunctor", "classvrv_1_1_justify_y_adjust_cross_staff_functor.html", null ],
+          [ "vrv::JustifyYFunctor", "classvrv_1_1_justify_y_functor.html", null ],
           [ "vrv::PrepareDataInitializationFunctor", "classvrv_1_1_prepare_data_initialization_functor.html", null ],
           [ "vrv::PrepareFloatingGrpsFunctor", "classvrv_1_1_prepare_floating_grps_functor.html", null ],
           [ "vrv::PrepareRptFunctor", "classvrv_1_1_prepare_rpt_functor.html", null ],
@@ -1080,7 +1087,8 @@ var hierarchy =
         [ "vrv::ScoreDefSetGrpSymFunctor", "classvrv_1_1_score_def_set_grp_sym_functor.html", null ],
         [ "vrv::ScoreDefUnsetCurrentFunctor", "classvrv_1_1_score_def_unset_current_functor.html", null ],
         [ "vrv::SetCautionaryScoreDefFunctor", "classvrv_1_1_set_cautionary_score_def_functor.html", null ],
-        [ "vrv::SetStaffDefRedrawFlagsFunctor", "classvrv_1_1_set_staff_def_redraw_flags_functor.html", null ]
+        [ "vrv::SetStaffDefRedrawFlagsFunctor", "classvrv_1_1_set_staff_def_redraw_flags_functor.html", null ],
+        [ "vrv::UnCastOffFunctor", "classvrv_1_1_un_cast_off_functor.html", null ]
       ] ]
     ] ],
     [ "vrv::FunctorInterface", "classvrv_1_1_functor_interface.html", [
@@ -1088,12 +1096,7 @@ var hierarchy =
     ] ],
     [ "vrv::FunctorParams", "classvrv_1_1_functor_params.html", [
       [ "vrv::AddLayerElementToFlatListParams", "classvrv_1_1_add_layer_element_to_flat_list_params.html", null ],
-      [ "vrv::AdjustBeamParams", "classvrv_1_1_adjust_beam_params.html", null ],
       [ "vrv::ApplyPPUFactorParams", "classvrv_1_1_apply_p_p_u_factor_params.html", null ],
-      [ "vrv::CastOffEncodingParams", "classvrv_1_1_cast_off_encoding_params.html", null ],
-      [ "vrv::CastOffPagesParams", "classvrv_1_1_cast_off_pages_params.html", null ],
-      [ "vrv::CastOffSystemsParams", "classvrv_1_1_cast_off_systems_params.html", null ],
-      [ "vrv::CastOffToSelectionParams", "classvrv_1_1_cast_off_to_selection_params.html", null ],
       [ "vrv::ConvertMarkupAnalyticalParams", "classvrv_1_1_convert_markup_analytical_params.html", null ],
       [ "vrv::ConvertMarkupArticParams", "classvrv_1_1_convert_markup_artic_params.html", null ],
       [ "vrv::ConvertMarkupScoreDefParams", "classvrv_1_1_convert_markup_score_def_params.html", null ],
@@ -1110,13 +1113,9 @@ var hierarchy =
       [ "vrv::InitMIDIParams", "classvrv_1_1_init_m_i_d_i_params.html", null ],
       [ "vrv::InitOnsetOffsetParams", "classvrv_1_1_init_onset_offset_params.html", null ],
       [ "vrv::InitProcessingListsParams", "classvrv_1_1_init_processing_lists_params.html", null ],
-      [ "vrv::JustifyXParams", "classvrv_1_1_justify_x_params.html", null ],
-      [ "vrv::JustifyYAdjustCrossStaffParams", "classvrv_1_1_justify_y_adjust_cross_staff_params.html", null ],
-      [ "vrv::JustifyYParams", "classvrv_1_1_justify_y_params.html", null ],
       [ "vrv::ReorderByXPosParams", "classvrv_1_1_reorder_by_x_pos_params.html", null ],
       [ "vrv::SaveParams", "classvrv_1_1_save_params.html", null ],
-      [ "vrv::TransposeParams", "classvrv_1_1_transpose_params.html", null ],
-      [ "vrv::UnCastOffParams", "classvrv_1_1_un_cast_off_params.html", null ]
+      [ "vrv::TransposeParams", "classvrv_1_1_transpose_params.html", null ]
     ] ],
     [ "vrv::Glyph", "classvrv_1_1_glyph.html", null ],
     [ "vrv::HumdrumSignifiers", "classvrv_1_1_humdrum_signifiers.html", null ],

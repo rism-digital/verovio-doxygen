@@ -6,8 +6,6 @@ var classvrv_1_1_system_milestone_end =
     [ "Accept", "classvrv_1_1_system_milestone_end.html#a6b432d0226966382a9af5a4f4926e84e", null ],
     [ "AcceptEnd", "classvrv_1_1_system_milestone_end.html#aea7788a5f9a9b1114b5a9a5c2b431837", null ],
     [ "AcceptEnd", "classvrv_1_1_system_milestone_end.html#a366d2733601e20bb709fe3dff20b71a7", null ],
-    [ "CastOffSystems", "classvrv_1_1_system_milestone_end.html#ab6a8f38e19d5d169132b6d7292765ee2", null ],
-    [ "CastOffToSelection", "classvrv_1_1_system_milestone_end.html#ace9aaeb67f2edf9ec5209d2889e219db", null ],
     [ "GetClassName", "classvrv_1_1_system_milestone_end.html#a9ffc18ffea11841a133c47220e46c11a", null ],
     [ "GetMeasure", "classvrv_1_1_system_milestone_end.html#a5b25263ed5bb9b54d345f5504bf35b87", null ],
     [ "GetMeasure", "classvrv_1_1_system_milestone_end.html#a56038f1de94c051c59f94e5dac67889b", null ],

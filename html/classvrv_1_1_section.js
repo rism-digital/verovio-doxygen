@@ -12,6 +12,5 @@ var classvrv_1_1_section =
     [ "ConvertToUnCastOffMensural", "classvrv_1_1_section.html#a42aec18987fab11797c73252ffc1b0be", null ],
     [ "GetClassName", "classvrv_1_1_section.html#a2c8ef4863c0510d9ab4797ff06427ea6", null ],
     [ "IsSupportedChild", "classvrv_1_1_section.html#aa2d84459764b4292821e8b677a49564e", null ],
-    [ "JustifyX", "classvrv_1_1_section.html#a753ff496840a43f0699dc4e9f663d649", null ],
     [ "Reset", "classvrv_1_1_section.html#a5c2ea4ecbc1331e7270dbc481ce0ac4e", null ]
 ];

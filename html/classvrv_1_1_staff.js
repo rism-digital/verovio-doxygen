@@ -11,7 +11,6 @@ var classvrv_1_1_staff =
     [ "AdjustDrawingStaffSize", "classvrv_1_1_staff.html#ae194d3de0191a955118338c70e157133", null ],
     [ "ApplyPPUFactor", "classvrv_1_1_staff.html#a4e90d2cf494ef942f66bf67bd4cf2277", null ],
     [ "CalcPitchPosYRel", "classvrv_1_1_staff.html#a7e9c539afe51116ec5b5bf5dd60d9786", null ],
-    [ "CastOffEncoding", "classvrv_1_1_staff.html#af642152b520a4a64fbc7a0df77ac1d00", null ],
     [ "ClearLedgerLines", "classvrv_1_1_staff.html#a5981a4796f897d0f70600c0594bba6fa", null ],
     [ "Clone", "classvrv_1_1_staff.html#a7bbfb21a70a278edf953759b5f8a4efa", null ],
     [ "CloneReset", "classvrv_1_1_staff.html#af1547bf90746d2f77b44c37aeb028b82", null ],

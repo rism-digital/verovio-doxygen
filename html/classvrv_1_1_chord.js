@@ -44,7 +44,6 @@ var classvrv_1_1_chord =
     [ "InitOnsetOffsetEnd", "classvrv_1_1_chord.html#affae3a2ed2ea400e7e8588eed23878db", null ],
     [ "IsSupportedChild", "classvrv_1_1_chord.html#aa20aa8139c016d66af66fcc48001ee23", null ],
     [ "IsVisible", "classvrv_1_1_chord.html#a513eb215a397a4995e8b261df9740198", null ],
-    [ "JustifyYAdjustCrossStaff", "classvrv_1_1_chord.html#ade2ce8d25c8d108b4dfbbd014e019866", null ],
     [ "PositionInChord", "classvrv_1_1_chord.html#aad7e7092366522e7bb388afb98a215e2", null ],
     [ "Reset", "classvrv_1_1_chord.html#a4b05be56b85202f76ab861836f8c04c2", null ],
     [ "ResetAccidList", "classvrv_1_1_chord.html#a15da29444f2bc2ec20cd87f28b012fe5", null ]
