@@ -144,6 +144,7 @@ var hierarchy =
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
       [ "vrv::HalfmRpt", "classvrv_1_1_halfm_rpt.html", null ],
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
+      [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
       [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ],
       [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
       [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
