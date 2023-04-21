@@ -451,6 +451,7 @@ var hierarchy =
       [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
       [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
       [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
+      [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
       [ "vrv::Octave", "classvrv_1_1_octave.html", null ]
     ] ],
     [ "AttLinking", null, [
