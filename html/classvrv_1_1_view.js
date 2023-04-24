@@ -27,6 +27,7 @@ var classvrv_1_1_view =
     [ "DrawBTrem", "classvrv_1_1_view.html#af09dffb1d9988e08b5f6c39a81f841d8", null ],
     [ "DrawCaesura", "classvrv_1_1_view.html#acc5b6a89d933c4d4ec913def1811733d", null ],
     [ "DrawChord", "classvrv_1_1_view.html#a06617dff07b153f941b080edb3c6fa67", null ],
+    [ "DrawChordCluster", "classvrv_1_1_view.html#a6497c22584cbfd87df72917d2d478450", null ],
     [ "DrawClef", "classvrv_1_1_view.html#a0719861210f15530bfe1e48af4add37a", null ],
     [ "DrawClefEnclosing", "classvrv_1_1_view.html#ac5ff1d58bfc74b8f801612a67af7b161", null ],
     [ "DrawControlElement", "classvrv_1_1_view.html#a673da3b81291694b9cc4c54fa48fa993", null ],

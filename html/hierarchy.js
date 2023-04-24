@@ -116,6 +116,9 @@ var hierarchy =
     [ "AttChannelized", null, [
       [ "vrv::InstrDef", "classvrv_1_1_instr_def.html", null ]
     ] ],
+    [ "AttChordVis", null, [
+      [ "vrv::Chord", "classvrv_1_1_chord.html", null ]
+    ] ],
     [ "AttClefLog", null, [
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ]
     ] ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX29 =
 {
+"sic_8h_source.html":[2,0,186],
 "slur_8h_source.html":[2,0,187],
 "smufl_8h_source.html":[2,0,188],
 "space_8h_source.html":[2,0,189],
