@@ -18,8 +18,6 @@ var classvrv_1_1_tuplet_bracket =
     [ "GetDrawingYRelRight", "classvrv_1_1_tuplet_bracket.html#aba76ae70cd5021365a61a0d53dfd86cd", null ],
     [ "GetDrawingYRight", "classvrv_1_1_tuplet_bracket.html#a680610c6780ca7074d521da7a9e8f3aa", null ],
     [ "Reset", "classvrv_1_1_tuplet_bracket.html#a82b5940e92da188eaa80c7c25f785716", null ],
-    [ "Save", "classvrv_1_1_tuplet_bracket.html#ab5df637a389ff8b3520986742b2cc523", null ],
-    [ "SaveEnd", "classvrv_1_1_tuplet_bracket.html#aa9b57feea622f5946d8f613cf5c5e291", null ],
     [ "SetAlignedNum", "classvrv_1_1_tuplet_bracket.html#a343c526edeb1d651d7ca1443a2bc3a1a", null ],
     [ "SetDrawingXRelLeft", "classvrv_1_1_tuplet_bracket.html#a834a25a8f8f8821472cdfd98b41a0496", null ],
     [ "SetDrawingXRelRight", "classvrv_1_1_tuplet_bracket.html#a8da20675d526f6da592ccae3b9bead46", null ],

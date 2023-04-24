@@ -477,9 +477,39 @@ $(document).ready(function(){initNavTree('findfunctor_8h_source.html',''); initR
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    std::string m_id;</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;};</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160; </div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160; </div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="preprocessor">#endif // __VRV_FINDFUNCTOR_H__</span></div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;<span class="comment">// AddToFlatListFunctor</span></div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160; </div>
+<div class="line"><a name="l00500"></a><span class="lineno"><a class="line" href="classvrv_1_1_add_to_flat_list_functor.html">  500</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_add_to_flat_list_functor.html">AddToFlatListFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> {</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <a class="code" href="classvrv_1_1_add_to_flat_list_functor.html">AddToFlatListFunctor</a>(ListOfConstObjects *flatList);</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_add_to_flat_list_functor.html">AddToFlatListFunctor</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160; </div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00513"></a><span class="lineno"><a class="line" href="classvrv_1_1_add_to_flat_list_functor.html#a1806c7d22135e4ba283ac28036cdffca">  513</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_add_to_flat_list_functor.html#a1806c7d22135e4ba283ac28036cdffca">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160; </div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;<span class="comment">     * Functor interface</span></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    FunctorCode VisitObject(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160; </div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    <span class="comment">// The list of elements</span></div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    ListOfConstObjects *m_flatList;</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;};</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160; </div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160; </div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;<span class="preprocessor">#endif // __VRV_FINDFUNCTOR_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_find_extreme_by_comparison_functor_html_a1719cf1e313c792f89c0251a154187bb"><div class="ttname"><a href="classvrv_1_1_find_extreme_by_comparison_functor.html#a1719cf1e313c792f89c0251a154187bb">vrv::FindExtremeByComparisonFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> findfunctor.h:372</div></div>
@@ -488,7 +518,7 @@ $(document).ready(function(){initNavTree('findfunctor_8h_source.html',''); initR
 <div class="ttc" id="aclassvrv_1_1_find_all_between_functor_html"><div class="ttname"><a href="classvrv_1_1_find_all_between_functor.html">vrv::FindAllBetweenFunctor</a></div><div class="ttdoc">This class finds all elements in the tree by comparison between start and end objects.</div><div class="ttdef"><b>Definition:</b> findfunctor.h:123</div></div>
 <div class="ttc" id="aclassvrv_1_1_find_element_in_layer_staff_def_functor_html"><div class="ttname"><a href="classvrv_1_1_find_element_in_layer_staff_def_functor.html">vrv::FindElementInLayerStaffDefFunctor</a></div><div class="ttdoc">This class looks for an element with given ID in StaffDef elements (Clef, KeySig, etc....</div><div class="ttdef"><b>Definition:</b> findfunctor.h:453</div></div>
 <div class="ttc" id="aclassvrv_1_1_mutable_functor_html"><div class="ttname"><a href="classvrv_1_1_mutable_functor.html">vrv::MutableFunctor</a></div><div class="ttdoc">This abstract class is the base class for all mutable functors.</div><div class="ttdef"><b>Definition:</b> functor.h:84</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:61</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:60</div></div>
 <div class="ttc" id="aclassvrv_1_1_find_extreme_by_comparison_functor_html"><div class="ttname"><a href="classvrv_1_1_find_extreme_by_comparison_functor.html">vrv::FindExtremeByComparisonFunctor</a></div><div class="ttdoc">This class finds the last object matching the comparison.</div><div class="ttdef"><b>Definition:</b> findfunctor.h:359</div></div>
 <div class="ttc" id="aclassvrv_1_1_find_by_comparison_functor_html_ae7e514b034d8e3af5d933c742f3f98a1"><div class="ttname"><a href="classvrv_1_1_find_by_comparison_functor.html#ae7e514b034d8e3af5d933c742f3f98a1">vrv::FindByComparisonFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> findfunctor.h:180</div></div>
 <div class="ttc" id="aclassvrv_1_1_find_next_child_by_comparison_functor_html_a67e0baef341a71d7d9efeb01ff9f8390"><div class="ttname"><a href="classvrv_1_1_find_next_child_by_comparison_functor.html#a67e0baef341a71d7d9efeb01ff9f8390">vrv::FindNextChildByComparisonFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> findfunctor.h:274</div></div>
@@ -497,6 +527,7 @@ $(document).ready(function(){initNavTree('findfunctor_8h_source.html',''); initR
 <div class="ttc" id="aclassvrv_1_1_find_all_referenced_objects_functor_html"><div class="ttname"><a href="classvrv_1_1_find_all_referenced_objects_functor.html">vrv::FindAllReferencedObjectsFunctor</a></div><div class="ttdoc">This class finds all objects to which another object refers to.</div><div class="ttdef"><b>Definition:</b> findfunctor.h:406</div></div>
 <div class="ttc" id="aclassvrv_1_1_find_next_child_by_comparison_functor_html"><div class="ttname"><a href="classvrv_1_1_find_next_child_by_comparison_functor.html">vrv::FindNextChildByComparisonFunctor</a></div><div class="ttdoc">This class finds the next child matching the comparison object.</div><div class="ttdef"><b>Definition:</b> findfunctor.h:261</div></div>
 <div class="ttc" id="aclassvrv_1_1_find_all_between_functor_html_a2d60e60a16bda213150c5b772bf9ed50"><div class="ttname"><a href="classvrv_1_1_find_all_between_functor.html#a2d60e60a16bda213150c5b772bf9ed50">vrv::FindAllBetweenFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> findfunctor.h:136</div></div>
+<div class="ttc" id="aclassvrv_1_1_add_to_flat_list_functor_html"><div class="ttname"><a href="classvrv_1_1_add_to_flat_list_functor.html">vrv::AddToFlatListFunctor</a></div><div class="ttdoc">This class adds elements and its children to a flat list.</div><div class="ttdef"><b>Definition:</b> findfunctor.h:500</div></div>
 <div class="ttc" id="aclassvrv_1_1_const_functor_html"><div class="ttname"><a href="classvrv_1_1_const_functor.html">vrv::ConstFunctor</a></div><div class="ttdoc">This abstract class is the base class for all const functors.</div><div class="ttdef"><b>Definition:</b> functor.h:109</div></div>
 <div class="ttc" id="aclassvrv_1_1_find_by_comparison_functor_html"><div class="ttname"><a href="classvrv_1_1_find_by_comparison_functor.html">vrv::FindByComparisonFunctor</a></div><div class="ttdoc">This class finds an element in the tree by comparison.</div><div class="ttdef"><b>Definition:</b> findfunctor.h:167</div></div>
 <div class="ttc" id="aclassvrv_1_1_find_all_const_by_comparison_functor_html_adcee6716fdf1c6b09f97e2ec24e2cb25"><div class="ttname"><a href="classvrv_1_1_find_all_const_by_comparison_functor.html#adcee6716fdf1c6b09f97e2ec24e2cb25">vrv::FindAllConstByComparisonFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> findfunctor.h:87</div></div>
@@ -505,12 +536,13 @@ $(document).ready(function(){initNavTree('findfunctor_8h_source.html',''); initR
 <div class="ttc" id="aclassvrv_1_1_find_previous_child_by_comparison_functor_html_ade90de784600f044b25015f0ae4d9978"><div class="ttname"><a href="classvrv_1_1_find_previous_child_by_comparison_functor.html#ade90de784600f044b25015f0ae4d9978">vrv::FindPreviousChildByComparisonFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> findfunctor.h:323</div></div>
 <div class="ttc" id="aclassvrv_1_1_find_by_i_d_functor_html"><div class="ttname"><a href="classvrv_1_1_find_by_i_d_functor.html">vrv::FindByIDFunctor</a></div><div class="ttdoc">This class finds an element with a specified id.</div><div class="ttdef"><b>Definition:</b> findfunctor.h:214</div></div>
 <div class="ttc" id="aclassvrv_1_1_comparison_html"><div class="ttname"><a href="classvrv_1_1_comparison.html">vrv::Comparison</a></div><div class="ttdef"><b>Definition:</b> comparison.h:31</div></div>
+<div class="ttc" id="aclassvrv_1_1_add_to_flat_list_functor_html_a1806c7d22135e4ba283ac28036cdffca"><div class="ttname"><a href="classvrv_1_1_add_to_flat_list_functor.html#a1806c7d22135e4ba283ac28036cdffca">vrv::AddToFlatListFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> findfunctor.h:513</div></div>
 <div class="ttc" id="aclassvrv_1_1_find_all_by_comparison_functor_html"><div class="ttname"><a href="classvrv_1_1_find_all_by_comparison_functor.html">vrv::FindAllByComparisonFunctor</a></div><div class="ttdoc">This class finds all elements in the tree by comparison.</div><div class="ttdef"><b>Definition:</b> findfunctor.h:25</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>findfunctor.h</b></li>
-    <li class="footer">Generated on Mon Apr 24 2023 08:59:59 for Verovio by
+    <li class="footer">Generated on Mon Apr 24 2023 09:01:18 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

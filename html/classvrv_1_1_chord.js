@@ -14,8 +14,6 @@ var classvrv_1_1_chord =
     [ "CalculateClusters", "classvrv_1_1_chord.html#af666ccc0ca022458e290f90dc6c5578c", null ],
     [ "ClearClusters", "classvrv_1_1_chord.html#afca94680f94f3e222e231970bc60e2d7", null ],
     [ "Clone", "classvrv_1_1_chord.html#add9d8dde3f255b542d5b0e3f453ca045", null ],
-    [ "ConvertMarkupAnalytical", "classvrv_1_1_chord.html#a5a00404fab92bdd30c67cf9aa8a3d505", null ],
-    [ "ConvertMarkupAnalyticalEnd", "classvrv_1_1_chord.html#a7defe40705bd6e2e1e3f3fa420593b59", null ],
     [ "FilterList", "classvrv_1_1_chord.html#a19b0fa01d54e8866e615fd2a7b621d59", null ],
     [ "GenerateMIDI", "classvrv_1_1_chord.html#aaf36b83279aee349e173113516cef3bd", null ],
     [ "GetAdjacentNotesList", "classvrv_1_1_chord.html#accc9d11678e5311a7fcf0752540291a9", null ],

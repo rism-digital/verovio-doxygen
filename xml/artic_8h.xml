@@ -263,6 +263,12 @@
         </childnode>
         <childnode refid="43" relation="include">
         </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
       </node>
       <node id="26">
         <label>calcalignmentpitchposfunctor.h</label>
@@ -318,6 +324,10 @@
         <label>adjustarpegfunctor.h</label>
         <link refid="adjustarpegfunctor_8h_source"/>
       </node>
+      <node id="38">
+        <label>convertfunctor.h</label>
+        <link refid="convertfunctor_8h_source"/>
+      </node>
       <node id="12">
         <label>adjustharmgrpsspacingfunctor.h</label>
         <link refid="adjustharmgrpsspacingfunctor_8h_source"/>
@@ -326,11 +336,11 @@
         <label>adjustfloatingpositionerfunctor.h</label>
         <link refid="adjustfloatingpositionerfunctor_8h_source"/>
       </node>
-      <node id="41">
+      <node id="43">
         <label>preparedatafunctor.h</label>
         <link refid="preparedatafunctor_8h_source"/>
       </node>
-      <node id="38">
+      <node id="39">
         <label>findfunctor.h</label>
         <link refid="findfunctor_8h_source"/>
       </node>
@@ -348,7 +358,7 @@
         <label>adjustsylspacingfunctor.h</label>
         <link refid="adjustsylspacingfunctor_8h_source"/>
       </node>
-      <node id="39">
+      <node id="40">
         <label>findlayerelementsfunctor.h</label>
         <link refid="findlayerelementsfunctor_8h_source"/>
       </node>
@@ -376,7 +386,7 @@
         <label>adjustyposfunctor.h</label>
         <link refid="adjustyposfunctor_8h_source"/>
       </node>
-      <node id="42">
+      <node id="44">
         <label>resetfunctor.h</label>
         <link refid="resetfunctor_8h_source"/>
       </node>
@@ -396,6 +406,10 @@
         <label>alignfunctor.h</label>
         <link refid="alignfunctor_8h_source"/>
       </node>
+      <node id="42">
+        <label>miscfunctor.h</label>
+        <link refid="miscfunctor_8h_source"/>
+      </node>
       <node id="21">
         <label>adjustxposfunctor.h</label>
         <link refid="adjustxposfunctor_8h_source"/>
@@ -404,15 +418,19 @@
         <label>adjustgracexposfunctor.h</label>
         <link refid="adjustgracexposfunctor_8h_source"/>
       </node>
-      <node id="43">
+      <node id="46">
         <label>setscoredeffunctor.h</label>
         <link refid="setscoredeffunctor_8h_source"/>
+      </node>
+      <node id="45">
+        <label>savefunctor.h</label>
+        <link refid="savefunctor_8h_source"/>
       </node>
       <node id="35">
         <label>calcspanningbeamspansfunctor.h</label>
         <link refid="calcspanningbeamspansfunctor_8h_source"/>
       </node>
-      <node id="40">
+      <node id="41">
         <label>justifyfunctor.h</label>
         <link refid="justifyfunctor_8h_source"/>
       </node>
@@ -471,61 +489,57 @@
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>data_ARTICULATION<sp/>GetArticFirst()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_artic_1ac7bf2f16b9558129980adb1c29b6b0c2" kindref="member">SplitMultival</ref>(<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*parent);</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetAllArtics(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>direction,<sp/>std::vector&lt;Artic<sp/>*&gt;<sp/>&amp;artics);</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_artic_1ad60930fde904d55bc6b45c022f9a0886" kindref="member">IsInsideArtic</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsOutsideArtic()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="classvrv_1_1_artic_1ad60930fde904d55bc6b45c022f9a0886" kindref="member">IsInsideArtic</ref>();<sp/>};</highlight></codeline>
-<codeline lineno="65"></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_artic_1abf36f6c00ec9ce1ecac1374327ef94a4" kindref="member">AlwaysAbove</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddSlurPositioner(FloatingCurvePositioner<sp/>*positioner,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>start);</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>data_STAFFREL<sp/><ref refid="classvrv_1_1_artic_1a318062fc0b6c2ffbb2986c3f1d90c26a" kindref="member">GetDrawingPlace</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_drawingPlace;<sp/>}</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetDrawingPlace(data_STAFFREL<sp/>drawingPlace)<sp/>{<sp/>m_drawingPlace<sp/>=<sp/>drawingPlace;<sp/>}</highlight></codeline>
-<codeline lineno="80"></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>char32_t<sp/><ref refid="classvrv_1_1_artic_1ab9ba4a1a9d3d415a89932337486776e2" kindref="member">GetArticGlyph</ref>(data_ARTICULATION<sp/>artic,<sp/>data_STAFFREL<sp/>place)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>std::pair&lt;char32_t,<sp/>char32_t&gt;<sp/><ref refid="classvrv_1_1_artic_1a73e669c5cc97e083ab85e4f973edb14e" kindref="member">GetEnclosingGlyphs</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Static<sp/>methods<sp/>//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_artic_1aa05fe4bc1352b8f096d353df4237bcbc" kindref="member">VerticalCorr</ref>(char32_t<sp/>code,<sp/>data_STAFFREL<sp/>place);</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_artic_1a0f3c3112f20c06ce5f18d8a97c9ecea7" kindref="member">IsCentered</ref>(data_ARTICULATION<sp/>artic);</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_artic_1ac24e92d9caa95f2f304d27e9a4f634d6" kindref="member">Accept</ref>(MutableFunctor<sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_artic_1ac24e92d9caa95f2f304d27e9a4f634d6" kindref="member">Accept</ref>(ConstFunctor<sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(MutableFunctor<sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(ConstFunctor<sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="120"></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_artic_1a2cac8079f77d9c0c25e3171790b00560" kindref="member">ConvertMarkupArtic</ref>(FunctorParams<sp/>*functorParams)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_artic_1ad60930fde904d55bc6b45c022f9a0886" kindref="member">IsInsideArtic</ref>(data_ARTICULATION<sp/>artic)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;FloatingCurvePositioner<sp/>*&gt;<sp/>m_startSlurPositioners;</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;FloatingCurvePositioner<sp/>*&gt;<sp/>m_endSlurPositioners;</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight></codeline>
-<codeline lineno="136" refid="classvrv_1_1_artic_1af5632037445cf7c9b45592b11417d13e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;data_ARTICULATION&gt;<sp/><ref refid="classvrv_1_1_artic_1af5632037445cf7c9b45592b11417d13e" kindref="member">s_outStaffArtic</ref>;</highlight></codeline>
-<codeline lineno="140" refid="classvrv_1_1_artic_1a825f179de07fb8b912d1c916ba37519a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;data_ARTICULATION&gt;<sp/><ref refid="classvrv_1_1_artic_1a825f179de07fb8b912d1c916ba37519a" kindref="member">s_aboveStaffArtic</ref>;</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>data_STAFFREL<sp/>m_drawingPlace;</highlight></codeline>
-<codeline lineno="145"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"></highlight></codeline>
-<codeline lineno="147"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="148"><highlight class="normal"></highlight></codeline>
-<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetAllArtics(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>direction,<sp/>std::vector&lt;Artic<sp/>*&gt;<sp/>&amp;artics);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_artic_1ad60930fde904d55bc6b45c022f9a0886" kindref="member">IsInsideArtic</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsOutsideArtic()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="classvrv_1_1_artic_1ad60930fde904d55bc6b45c022f9a0886" kindref="member">IsInsideArtic</ref>();<sp/>};</highlight></codeline>
+<codeline lineno="59"></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_artic_1abf36f6c00ec9ce1ecac1374327ef94a4" kindref="member">AlwaysAbove</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddSlurPositioner(FloatingCurvePositioner<sp/>*positioner,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>start);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>data_STAFFREL<sp/><ref refid="classvrv_1_1_artic_1a318062fc0b6c2ffbb2986c3f1d90c26a" kindref="member">GetDrawingPlace</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_drawingPlace;<sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetDrawingPlace(data_STAFFREL<sp/>drawingPlace)<sp/>{<sp/>m_drawingPlace<sp/>=<sp/>drawingPlace;<sp/>}</highlight></codeline>
+<codeline lineno="74"></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>char32_t<sp/><ref refid="classvrv_1_1_artic_1ab9ba4a1a9d3d415a89932337486776e2" kindref="member">GetArticGlyph</ref>(data_ARTICULATION<sp/>artic,<sp/>data_STAFFREL<sp/>place)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>std::pair&lt;char32_t,<sp/>char32_t&gt;<sp/><ref refid="classvrv_1_1_artic_1a73e669c5cc97e083ab85e4f973edb14e" kindref="member">GetEnclosingGlyphs</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Static<sp/>methods<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_artic_1aa05fe4bc1352b8f096d353df4237bcbc" kindref="member">VerticalCorr</ref>(char32_t<sp/>code,<sp/>data_STAFFREL<sp/>place);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_artic_1a0f3c3112f20c06ce5f18d8a97c9ecea7" kindref="member">IsCentered</ref>(data_ARTICULATION<sp/>artic);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_artic_1ac24e92d9caa95f2f304d27e9a4f634d6" kindref="member">Accept</ref>(MutableFunctor<sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_artic_1ac24e92d9caa95f2f304d27e9a4f634d6" kindref="member">Accept</ref>(ConstFunctor<sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(MutableFunctor<sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(ConstFunctor<sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_artic_1ad60930fde904d55bc6b45c022f9a0886" kindref="member">IsInsideArtic</ref>(data_ARTICULATION<sp/>artic)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;FloatingCurvePositioner<sp/>*&gt;<sp/>m_startSlurPositioners;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;FloatingCurvePositioner<sp/>*&gt;<sp/>m_endSlurPositioners;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="classvrv_1_1_artic_1af5632037445cf7c9b45592b11417d13e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;data_ARTICULATION&gt;<sp/><ref refid="classvrv_1_1_artic_1af5632037445cf7c9b45592b11417d13e" kindref="member">s_outStaffArtic</ref>;</highlight></codeline>
+<codeline lineno="129" refid="classvrv_1_1_artic_1a825f179de07fb8b912d1c916ba37519a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;data_ARTICULATION&gt;<sp/><ref refid="classvrv_1_1_artic_1a825f179de07fb8b912d1c916ba37519a" kindref="member">s_aboveStaffArtic</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>data_STAFFREL<sp/>m_drawingPlace;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/artic.h"/>
   </compounddef>

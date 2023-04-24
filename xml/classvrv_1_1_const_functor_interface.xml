@@ -40,6 +40,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitObject</definition>
         <argsstring>(const Object *object)</argsstring>
         <name>VisitObject</name>
+        <reimplementedby refid="classvrv_1_1_get_alignment_left_right_functor_1a0ab39f89a62163cba75d232946a8243e">VisitObject</reimplementedby>
         <reimplementedby refid="classvrv_1_1_find_all_const_by_comparison_functor_1a6b13739afc03f082cf36a878714b1cdd">VisitObject</reimplementedby>
         <reimplementedby refid="classvrv_1_1_find_all_between_functor_1abacb4c7b5970fb5b3ba0fa85901dcf12">VisitObject</reimplementedby>
         <reimplementedby refid="classvrv_1_1_find_by_comparison_functor_1a9277a1636bb33ecda7bdc5503d139161">VisitObject</reimplementedby>
@@ -47,6 +48,7 @@
         <reimplementedby refid="classvrv_1_1_find_next_child_by_comparison_functor_1a967433db65b2ad88f21573af01391419">VisitObject</reimplementedby>
         <reimplementedby refid="classvrv_1_1_find_previous_child_by_comparison_functor_1ad4fbfc495c1278ba9e6f0069569eccef">VisitObject</reimplementedby>
         <reimplementedby refid="classvrv_1_1_find_extreme_by_comparison_functor_1adb92988e667cdbd0a0ca4950b0579771">VisitObject</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_add_to_flat_list_functor_1aece6c633d90a3978eb5c04d6977fad07">VisitObject</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
           <declname>object</declname>
@@ -288,6 +290,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitLayer</definition>
         <argsstring>(const Layer *layer)</argsstring>
         <name>VisitLayer</name>
+        <reimplementedby refid="classvrv_1_1_init_processing_lists_functor_1abc73df99be485df2be4b39920137288f">VisitLayer</reimplementedby>
         <reimplementedby refid="classvrv_1_1_find_element_in_layer_staff_def_functor_1a236afcb9788f5d8a716815e88fd50b2c">VisitLayer</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
@@ -3717,6 +3720,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitVerse</definition>
         <argsstring>(const Verse *verse)</argsstring>
         <name>VisitVerse</name>
+        <reimplementedby refid="classvrv_1_1_init_processing_lists_functor_1a6f7fd156d83aa73b0fcc8e9a203b4b33">VisitVerse</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_verse" kindref="compound">Verse</ref> *</type>
           <declname>verse</declname>
@@ -4446,31 +4450,43 @@
 <para>It is not an abstract class but should not be instanciated directly. </para>
     </detaileddescription>
     <inheritancegraph>
+      <node id="17">
+        <label>vrv::InitProcessingListsFunctor</label>
+        <link refid="classvrv_1_1_init_processing_lists_functor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vrv::AddToFlatListFunctor</label>
+        <link refid="classvrv_1_1_add_to_flat_list_functor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="2">
         <label>vrv::ConstFunctor</label>
         <link refid="classvrv_1_1_const_functor"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5">
+      <node id="6">
         <label>vrv::FindAllBetweenFunctor</label>
         <link refid="classvrv_1_1_find_all_between_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13">
+      <node id="14">
         <label>vrv::FindSpannedLayerElementsFunctor</label>
         <link refid="classvrv_1_1_find_spanned_layer_elements_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="14">
+      <node id="16">
         <label>vrv::GetRelativeLayerElementFunctor</label>
         <link refid="classvrv_1_1_get_relative_layer_element_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10">
+      <node id="11">
         <label>vrv::FindExtremeByComparisonFunctor</label>
         <link refid="classvrv_1_1_find_extreme_by_comparison_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -4480,61 +4496,67 @@
         <label>vrv::ConstFunctorInterface</label>
         <link refid="classvrv_1_1_const_functor_interface"/>
       </node>
-      <node id="16">
+      <node id="19">
         <label>vrv::LayersInTimeSpanFunctor</label>
         <link refid="classvrv_1_1_layers_in_time_span_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6">
+      <node id="7">
         <label>vrv::FindAllConstByComparisonFunctor</label>
         <link refid="classvrv_1_1_find_all_const_by_comparison_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7">
+      <node id="8">
         <label>vrv::FindByComparisonFunctor</label>
         <link refid="classvrv_1_1_find_by_comparison_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9">
+      <node id="10">
         <label>vrv::FindElementInLayerStaffDefFunctor</label>
         <link refid="classvrv_1_1_find_element_in_layer_staff_def_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4">
+      <node id="5">
         <label>vrv::DocConstFunctor</label>
         <link refid="classvrv_1_1_doc_const_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8">
+      <node id="9">
         <label>vrv::FindByIDFunctor</label>
         <link refid="classvrv_1_1_find_by_i_d_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3">
+      <node id="4">
         <label>vrv::AdjustTupletNumOverlapFunctor</label>
         <link refid="classvrv_1_1_adjust_tuplet_num_overlap_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11">
+      <node id="12">
         <label>vrv::FindNextChildByComparisonFunctor</label>
         <link refid="classvrv_1_1_find_next_child_by_comparison_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12">
+      <node id="13">
         <label>vrv::FindPreviousChildByComparisonFunctor</label>
         <link refid="classvrv_1_1_find_previous_child_by_comparison_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
       <node id="15">
+        <label>vrv::GetAlignmentLeftRightFunctor</label>
+        <link refid="classvrv_1_1_get_alignment_left_right_functor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
         <label>vrv::LayerElementsInTimeSpanFunctor</label>
         <link refid="classvrv_1_1_layer_elements_in_time_span_functor"/>
         <childnode refid="2" relation="public-inheritance">

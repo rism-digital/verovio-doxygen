@@ -15,7 +15,5 @@ var classvrv_1_1_m_num =
     [ "IsGenerated", "classvrv_1_1_m_num.html#aa01ec8b7ad75d13ad453adf6fa38fb38", null ],
     [ "IsGenerated", "classvrv_1_1_m_num.html#a34d932e08dcee83bcd2fd0f4e6babf0f", null ],
     [ "IsSupportedChild", "classvrv_1_1_m_num.html#a496cb97115847095575f179785ab677d", null ],
-    [ "Reset", "classvrv_1_1_m_num.html#a58caebdcbaeb4aecff396ce6d4f09306", null ],
-    [ "Save", "classvrv_1_1_m_num.html#ac1c4e660029d53f681aaf67d1360b125", null ],
-    [ "SaveEnd", "classvrv_1_1_m_num.html#ae01e1160e78389ecaf9a32052a01fa83", null ]
+    [ "Reset", "classvrv_1_1_m_num.html#a58caebdcbaeb4aecff396ce6d4f09306", null ]
 ];

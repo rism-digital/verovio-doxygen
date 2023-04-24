@@ -7,7 +7,6 @@ var classvrv_1_1_fermata =
     [ "AcceptEnd", "classvrv_1_1_fermata.html#aa114c155124feb441e31719bd24642d0", null ],
     [ "AcceptEnd", "classvrv_1_1_fermata.html#a102c2db7c9245493f37655685dc71397", null ],
     [ "Clone", "classvrv_1_1_fermata.html#ae4015a263194111dabdd34e0e6a781a6", null ],
-    [ "ConvertFromAnalyticalMarkup", "classvrv_1_1_fermata.html#a6f4264d78841a2fd5818f0b5a033c53f", null ],
     [ "GetClassName", "classvrv_1_1_fermata.html#a01d1ea40f44ee5585fa9d29deae202db", null ],
     [ "GetEnclosingGlyphs", "classvrv_1_1_fermata.html#a3fae7d34a812ac472470b927206a403b", null ],
     [ "GetFermataGlyph", "classvrv_1_1_fermata.html#a8efe2d33dbb017b0413db6ddbe3bee88", null ],

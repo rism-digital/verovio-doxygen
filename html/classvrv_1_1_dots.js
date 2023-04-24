@@ -17,8 +17,6 @@ var classvrv_1_1_dots =
     [ "ModifyDotLocsForStaff", "classvrv_1_1_dots.html#ac759ead6eec248fb833a2620a9977300", null ],
     [ "Reset", "classvrv_1_1_dots.html#ae6d3d7af0586a8741c9af93c6f65b62b", null ],
     [ "ResetMapOfDotLocs", "classvrv_1_1_dots.html#abdbeb2db83e0cef3082de256c999f15e", null ],
-    [ "Save", "classvrv_1_1_dots.html#a2d29e04a070b61455c3d615ca6e94855", null ],
-    [ "SaveEnd", "classvrv_1_1_dots.html#a55b7ec936f65d9e33f9e0d9cece3dddb", null ],
     [ "SetFlagShift", "classvrv_1_1_dots.html#aa6a1a214228d0c53a03056d55bae50db", null ],
     [ "SetMapOfDotLocs", "classvrv_1_1_dots.html#a6b805f29f35a6028b0e90414d9f49447", null ]
 ];

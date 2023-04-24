@@ -1,5 +1,10 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_beam_span_segment.html#a4ef62758ae8c5e8fb47ee81d02c6780f":[1,0,0,60,6],
+"classvrv_1_1_beam_span_segment.html#a57f99e7899343b0ec40d187b71d27a4c":[1,0,0,60,8],
+"classvrv_1_1_beam_span_segment.html#a5beed131f974663d89eb34d8d5ff9eec":[1,0,0,60,19],
+"classvrv_1_1_beam_span_segment.html#a778bb823ddd431ef3d024daa5ff5138c":[1,0,0,60,0],
+"classvrv_1_1_beam_span_segment.html#ac04ef88acadd9cc486c1e07808ce2a21":[1,0,0,60,10],
 "classvrv_1_1_beam_span_segment.html#ac5406733063ce6d06e8528cda81a45c0":[1,0,0,60,2],
 "classvrv_1_1_beam_span_segment.html#acf544d24ceaf3eef6c5e9ab9ff278533":[1,0,0,60,3],
 "classvrv_1_1_beam_span_segment.html#ad0ef1f78a8ba66e8244e820692d9fbb8":[1,0,0,60,9],
@@ -244,10 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_calc_stem_functor.html#ab8b666c1d058869bdf0c57da50d26603":[1,0,0,80,3],
 "classvrv_1_1_calc_stem_functor.html#abc40cfea5f84ed665a0536db388acea5":[1,0,0,80,5],
 "classvrv_1_1_calc_stem_functor.html#adbae2aa748055df51a88327a2a1adc87":[1,0,0,80,10],
-"classvrv_1_1_calc_stem_functor.html#ae0c58af5582b6d6675fc7128d7bb6b1c":[1,0,0,80,0],
-"classvrv_1_1_cast_off_encoding_functor.html":[1,0,0,81],
-"classvrv_1_1_cast_off_encoding_functor.html#a040759ef657034b633cdf8d72a1a083b":[1,0,0,81,1],
-"classvrv_1_1_cast_off_encoding_functor.html#a14279d1de1875886b8625047eac8a7f6":[1,0,0,81,4],
-"classvrv_1_1_cast_off_encoding_functor.html#a160c296b10ed2179fdabf81f46932856":[1,0,0,81,7],
-"classvrv_1_1_cast_off_encoding_functor.html#a372e71b82a359aba3aee1b742806999e":[1,0,0,81,10]
+"classvrv_1_1_calc_stem_functor.html#ae0c58af5582b6d6675fc7128d7bb6b1c":[1,0,0,80,0]
 };

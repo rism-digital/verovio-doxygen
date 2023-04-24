@@ -594,6 +594,7 @@
     <innerclass refid="classvrv_1_1_find_extreme_by_comparison_functor" prot="public">vrv::FindExtremeByComparisonFunctor</innerclass>
     <innerclass refid="classvrv_1_1_find_all_referenced_objects_functor" prot="public">vrv::FindAllReferencedObjectsFunctor</innerclass>
     <innerclass refid="classvrv_1_1_find_element_in_layer_staff_def_functor" prot="public">vrv::FindElementInLayerStaffDefFunctor</innerclass>
+    <innerclass refid="classvrv_1_1_add_to_flat_list_functor" prot="public">vrv::AddToFlatListFunctor</innerclass>
     <innernamespace refid="namespacevrv">vrv</innernamespace>
     <briefdescription>
     </briefdescription>
@@ -990,9 +991,39 @@
 <codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_id;</highlight></codeline>
 <codeline lineno="491"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="492"><highlight class="normal"></highlight></codeline>
-<codeline lineno="493"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="494"><highlight class="normal"></highlight></codeline>
-<codeline lineno="495"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__VRV_FINDFUNCTOR_H__</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal"></highlight><highlight class="comment">//<sp/>AddToFlatListFunctor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight></codeline>
+<codeline lineno="500" refid="classvrv_1_1_add_to_flat_list_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_add_to_flat_list_functor" kindref="compound">AddToFlatListFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>{</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_add_to_flat_list_functor" kindref="compound">AddToFlatListFunctor</ref>(ListOfConstObjects<sp/>*flatList);</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_add_to_flat_list_functor" kindref="compound">AddToFlatListFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"></highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="511"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Abstract<sp/>base<sp/>implementation</highlight></codeline>
+<codeline lineno="512"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="513" refid="classvrv_1_1_add_to_flat_list_functor_1a1806c7d22135e4ba283ac28036cdffca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_add_to_flat_list_functor_1a1806c7d22135e4ba283ac28036cdffca" kindref="member">ImplementsEndInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"></highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="516"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
+<codeline lineno="517"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitObject(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="524"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>list<sp/>of<sp/>elements</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/>ListOfConstObjects<sp/>*m_flatList;</highlight></codeline>
+<codeline lineno="531"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="535"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__VRV_FINDFUNCTOR_H__</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/findfunctor.h"/>
   </compounddef>

@@ -14,7 +14,6 @@ var classvrv_1_1_note =
     [ "CalcStemDirForSameasNote", "classvrv_1_1_note.html#a6f88ce0675e674e63fc42e3fca18fdc4", null ],
     [ "CalcStemLenInThirdUnits", "classvrv_1_1_note.html#a105ed49c9fe5687f372a9aa49dd5cfc2", null ],
     [ "Clone", "classvrv_1_1_note.html#a782b20876bae1c1f01fc871774312860", null ],
-    [ "ConvertMarkupAnalytical", "classvrv_1_1_note.html#adbea2481115dec839f5a86aa56f4c792", null ],
     [ "GenerateMIDI", "classvrv_1_1_note.html#a012e8bbeb3f7c669654284ff4e3d9b5b", null ],
     [ "GenerateTimemap", "classvrv_1_1_note.html#a9f6c57951cfc08541da10e767c878ea4", null ],
     [ "GetClassName", "classvrv_1_1_note.html#a8b0a27e2360a4813f4dfe036b0d0fcf1", null ],

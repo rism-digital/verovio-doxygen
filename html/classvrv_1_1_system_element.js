@@ -8,8 +8,6 @@ var classvrv_1_1_system_element =
     [ "Accept", "classvrv_1_1_system_element.html#aff49ae02ce1021bcf0b314c7b52f8da9", null ],
     [ "AcceptEnd", "classvrv_1_1_system_element.html#a5fd5faf25881a8ea36fca628061373a6", null ],
     [ "AcceptEnd", "classvrv_1_1_system_element.html#a8cbe50412457a515520204a6bd4152df", null ],
-    [ "ConvertToCastOffMensural", "classvrv_1_1_system_element.html#a8e83c5ad5476cd653397ec74112532ac", null ],
-    [ "ConvertToPageBased", "classvrv_1_1_system_element.html#ad6ddb7b3273585c63dc5ffabc78b8527", null ],
     [ "Reset", "classvrv_1_1_system_element.html#a052b062bad0d78113a1067212a24c816", null ],
     [ "m_visibility", "classvrv_1_1_system_element.html#ad69627f50c22cf7349d3d304ce3b550d", null ]
 ];

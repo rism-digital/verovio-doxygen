@@ -8,7 +8,6 @@ var classvrv_1_1_bar_line =
     [ "AcceptEnd", "classvrv_1_1_bar_line.html#a90b310d97aa687798d8e6ed14bb106a0", null ],
     [ "AcceptEnd", "classvrv_1_1_bar_line.html#af1ae687c97839b179ff04fbe347b1c56", null ],
     [ "Clone", "classvrv_1_1_bar_line.html#aa83586073b3ab541016f2d257663d9a3", null ],
-    [ "ConvertToCastOffMensural", "classvrv_1_1_bar_line.html#acd6c2f3ce05f5f90cc2365cafe3cf4c0", null ],
     [ "GetClassName", "classvrv_1_1_bar_line.html#a00e5e40f5819ab273dd02623056503ed", null ],
     [ "GetLength", "classvrv_1_1_bar_line.html#a4f68faaad391c2879461e90ff4cf215b", null ],
     [ "GetMethod", "classvrv_1_1_bar_line.html#a1b9e088f97e168d1800b6eecbb57cf04", null ],

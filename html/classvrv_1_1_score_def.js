@@ -7,8 +7,6 @@ var classvrv_1_1_score_def =
     [ "AcceptEnd", "classvrv_1_1_score_def.html#ab5059f85d9c9d25e0e0e5ce0858302f5", null ],
     [ "AcceptEnd", "classvrv_1_1_score_def.html#a4db5ea9da5f2d1f313539e1e22a2930f", null ],
     [ "Clone", "classvrv_1_1_score_def.html#aece43dcf4cd8986d37759ce72d4b5558", null ],
-    [ "ConvertToCastOffMensural", "classvrv_1_1_score_def.html#a477220ebfcffcd0faa1dcb0e82a0a582", null ],
-    [ "ConvertToPageBased", "classvrv_1_1_score_def.html#a1754ccca97f4999e35087cda72b87400", null ],
     [ "DrawLabels", "classvrv_1_1_score_def.html#a004881a2cfb78869dc4edd96e730344c", null ],
     [ "FilterList", "classvrv_1_1_score_def.html#a85ad8d7d1c133cbab2d7d5b02b6cc21c", null ],
     [ "GenerateMIDI", "classvrv_1_1_score_def.html#a059489f5eed56cf466021e2204886682", null ],

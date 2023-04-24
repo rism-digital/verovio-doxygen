@@ -9,7 +9,6 @@ var classvrv_1_1_layer_element =
     [ "AcceptEnd", "classvrv_1_1_layer_element.html#a6c4092433a79c197ead50a6baa745ae8", null ],
     [ "AcceptEnd", "classvrv_1_1_layer_element.html#a369f978812fd7ebb3799964292688afe", null ],
     [ "AdjustOverlappingLayers", "classvrv_1_1_layer_element.html#ae4f035f3818e7a9ec44e80e5c7097e81", null ],
-    [ "ApplyPPUFactor", "classvrv_1_1_layer_element.html#afaa8567cca80a4f2769468ffd546a2be", null ],
     [ "CacheXRel", "classvrv_1_1_layer_element.html#a7f0a813d93a3c0b514a814a1d50536bd", null ],
     [ "CacheYRel", "classvrv_1_1_layer_element.html#a948815c5f9ebb61c247db96eb5a963e9", null ],
     [ "CalcDotLocations", "classvrv_1_1_layer_element.html#a6faf15b51bf5716dea2e07e2d2cbfc1f", null ],

@@ -7,8 +7,6 @@ var classvrv_1_1_ending =
     [ "AcceptEnd", "classvrv_1_1_ending.html#adbb8db3c896b8b2ed1d0ef44bc904204", null ],
     [ "AcceptEnd", "classvrv_1_1_ending.html#ac9631a51f2ff782cc0c7778cc730b0ce", null ],
     [ "Clone", "classvrv_1_1_ending.html#ab8ed4625a2bfd1fae5b6159aaba33197", null ],
-    [ "ConvertToPageBased", "classvrv_1_1_ending.html#a54759d92890407ec28b39cb08a63501c", null ],
-    [ "ConvertToPageBasedEnd", "classvrv_1_1_ending.html#a02eedd2cb8e4e7325bca0c8ab5f66052", null ],
     [ "GetClassName", "classvrv_1_1_ending.html#a2f322dc416cd68b48ac2692e173f489d", null ],
     [ "IsSupportedChild", "classvrv_1_1_ending.html#a029c45da2ec5fb79932a1c8d8e4fb367", null ],
     [ "Reset", "classvrv_1_1_ending.html#a81e7184e2e44236c84b5491b2edf1048", null ]

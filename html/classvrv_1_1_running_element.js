@@ -33,8 +33,6 @@ var classvrv_1_1_running_element =
     [ "Reset", "classvrv_1_1_running_element.html#a2bcacf9ba0d635e41808e63d6e9cf425", null ],
     [ "ResetCells", "classvrv_1_1_running_element.html#a2b7ddc12f9aec0d03699571883a1caf7", null ],
     [ "ResetDrawingScaling", "classvrv_1_1_running_element.html#a4824c43516c41bf9f6ac5a7662733608", null ],
-    [ "Save", "classvrv_1_1_running_element.html#a6e7b3828ab10391643324100dcf3717e", null ],
-    [ "SaveEnd", "classvrv_1_1_running_element.html#a37d274e6f685be829b69d047b5c24db4", null ],
     [ "SetCurrentPageNum", "classvrv_1_1_running_element.html#a9715a70dc4ff18c6599ae8cfc2f7e31f", null ],
     [ "SetDrawingPage", "classvrv_1_1_running_element.html#ad99cddf73705a541160bed1e7b34454b", null ],
     [ "SetDrawingYRel", "classvrv_1_1_running_element.html#a212de9d05319398c856b6a065bfa203e", null ]
