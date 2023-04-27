@@ -317,11 +317,11 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/note.h" line="149" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_note_1a1a7d0a9ea9cb70585ce2b438e41dd4a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_note_1a11af0928f51d09ad2e6ee9e0597f5237" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool vrv::Note::IsClusterExtreme</definition>
+        <definition>bool vrv::Note::IsNoteGroupExtreme</definition>
         <argsstring>() const</argsstring>
-        <name>IsClusterExtreme</name>
+        <name>IsNoteGroupExtreme</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -381,15 +381,15 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <header>Setter and getter for the chord cluster and the position of the note</header>
-      <memberdef kind="function" id="classvrv_1_1_note_1a5dbdadeb93f4e6cf0f15dabc238b8349" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <header>Setter and getter for the chord note group and the position of the note</header>
+      <memberdef kind="function" id="classvrv_1_1_note_1a3ccada7adf732c747e37fad3d206eb70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void vrv::Note::SetCluster</definition>
-        <argsstring>(ChordCluster *cluster, int position)</argsstring>
-        <name>SetCluster</name>
+        <definition>void vrv::Note::SetNoteGroup</definition>
+        <argsstring>(ChordNoteGroup *noteGroup, int position)</argsstring>
+        <name>SetNoteGroup</name>
         <param>
-          <type>ChordCluster *</type>
-          <declname>cluster</declname>
+          <type>ChordNoteGroup *</type>
+          <declname>noteGroup</declname>
         </param>
         <param>
           <type>int</type>
@@ -403,24 +403,24 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/note.h" line="178" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_note_1ab7a1a6ed820c2b02e04bec0abaf03133" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>ChordCluster *</type>
-        <definition>ChordCluster* vrv::Note::GetCluster</definition>
+      <memberdef kind="function" id="classvrv_1_1_note_1a1673470e59a8f93932a49a7c29a2245d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ChordNoteGroup *</type>
+        <definition>ChordNoteGroup* vrv::Note::GetNoteGroup</definition>
         <argsstring>()</argsstring>
-        <name>GetCluster</name>
+        <name>GetNoteGroup</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/note.h" line="179" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/note.h" bodystart="179" bodyend="179"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/note.h" line="179" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/note.h" bodystart="179" bodyend="179"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_note_1ae60cf3b174efdec92ac7ad8d542d3b29" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_note_1a2db6866b410158abf49fa0c94dce8340" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
-        <definition>int vrv::Note::GetClusterPosition</definition>
+        <definition>int vrv::Note::GetNoteGroupPosition</definition>
         <argsstring>() const</argsstring>
-        <name>GetClusterPosition</name>
+        <name>GetNoteGroupPosition</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -737,27 +737,27 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/note.h" line="358" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/note.h" bodystart="358" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_note_1af2c2dbc2bd4daaadd559e1e3e9639449" prot="private" static="no" mutable="no">
-        <type>ChordCluster *</type>
-        <definition>ChordCluster* vrv::Note::m_cluster</definition>
+      <memberdef kind="variable" id="classvrv_1_1_note_1af63e655eee232a8a0e8f7d4ae4499327" prot="private" static="no" mutable="no">
+        <type>ChordNoteGroup *</type>
+        <definition>ChordNoteGroup* vrv::Note::m_noteGroup</definition>
         <argsstring></argsstring>
-        <name>m_cluster</name>
+        <name>m_noteGroup</name>
         <briefdescription>
-<para>flags for determining clusters in chord (cluster this belongs to) </para>
+<para>flags for determining note groups in chord (note group this belongs to) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/note.h" line="363" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/note.h" bodystart="363" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/note.h" line="363" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/note.h" bodystart="363" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_note_1a59c0210d052cd5c327101ed6d50c2ec1" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classvrv_1_1_note_1a53910a6525feac9b9193be23ec7b3e9e" prot="private" static="no" mutable="no">
         <type>int</type>
-        <definition>int vrv::Note::m_clusterPosition</definition>
+        <definition>int vrv::Note::m_noteGroupPosition</definition>
         <argsstring></argsstring>
-        <name>m_clusterPosition</name>
+        <name>m_noteGroupPosition</name>
         <briefdescription>
-<para>Position in the cluster (1-indexed position in said cluster; 0 if does not have position) </para>
+<para>Position in the note group (1-indexed position in said note group; 0 if does not have position) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -2153,8 +2153,6 @@
       <member refid="classvrv_1_1_object_1aab95929358aad8730f586319a3417264" prot="public" virt="virtual"><scope>vrv::Note</scope><name>GetClassId</name></member>
       <member refid="classvrv_1_1_note_1a8b0a27e2360a4813f4dfe036b0d0fcf1" prot="public" virt="virtual"><scope>vrv::Note</scope><name>GetClassName</name></member>
       <member refid="classvrv_1_1_object_1a65066ae5b40a4dc3aab9bf76abc57d36" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetClosingComment</name></member>
-      <member refid="classvrv_1_1_note_1ab7a1a6ed820c2b02e04bec0abaf03133" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetCluster</name></member>
-      <member refid="classvrv_1_1_note_1ae60cf3b174efdec92ac7ad8d542d3b29" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetClusterPosition</name></member>
       <member refid="classvrv_1_1_layer_element_1afb64a340246bd59bd429c6a2b05f5fae" prot="protected" virt="non-virtual"><scope>vrv::Note</scope><name>GetCollisionCount</name></member>
       <member refid="classvrv_1_1_object_1aa8a0722010e05e1e2cb04d90a9535cc4" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetComment</name></member>
       <member refid="classvrv_1_1_layer_element_1ad7fe5cd67ffb119e047eb429a8644ce3" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetContentAlignmentDuration</name></member>
@@ -2242,6 +2240,8 @@
       <member refid="classvrv_1_1_linking_interface_1aad381d647fdfb76e556661d255333053" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetNextLink</name></member>
       <member refid="classvrv_1_1_linking_interface_1adf9d13147005f947251ada4a02c71257" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetNextMeasure</name></member>
       <member refid="classvrv_1_1_linking_interface_1a70e6577025de19a0020dc4ae3f4dcdbe" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetNextMeasure</name></member>
+      <member refid="classvrv_1_1_note_1a1673470e59a8f93932a49a7c29a2245d" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetNoteGroup</name></member>
+      <member refid="classvrv_1_1_note_1a2db6866b410158abf49fa0c94dce8340" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetNoteGroupPosition</name></member>
       <member refid="classvrv_1_1_note_1a576f836b797cb299da153cfe5e0f0b8a" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetNoteheadGlyph</name></member>
       <member refid="classvrv_1_1_duration_interface_1aa6d43066a4932c02ecdde2ade384257d" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetNoteOrChordDur</name></member>
       <member refid="classvrv_1_1_layer_element_1a3825df92ab9215a85ec2e8fbcba6494a" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetOriginalLayerN</name></member>
@@ -2361,7 +2361,6 @@
       <member refid="classvrv_1_1_object_1a24ff4e053bb15d8d893c9a1a6b2f9639" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsAttribute</name></member>
       <member refid="classvrv_1_1_note_1a8fac70447933b92e2615280b6909e351" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsChordTone</name></member>
       <member refid="classvrv_1_1_note_1a13535f10ae41b7ec3e4f03b987f6b220" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsChordTone</name></member>
-      <member refid="classvrv_1_1_note_1a1a7d0a9ea9cb70585ce2b438e41dd4a5" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsClusterExtreme</name></member>
       <member refid="classvrv_1_1_object_1aab9a49af1e67891dcfd1b929a6d64aa9" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsControlElement</name></member>
       <member refid="classvrv_1_1_object_1a46776dd312ff3631580f9e0ff293d52e" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsEditorialElement</name></member>
       <member refid="classvrv_1_1_note_1a8ed755dba1d936d881bb4d3267db6fd9" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsEnharmonicWith</name></member>
@@ -2382,6 +2381,7 @@
       <member refid="classvrv_1_1_duration_interface_1a66a8195b6236d862a2234af1fb5256c1" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsMensuralDur</name></member>
       <member refid="classvrv_1_1_object_1aa9ad841690ea5c7b3326d8863140a7f8" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsMilestoneElement</name></member>
       <member refid="classvrv_1_1_object_1a4eec6780edc930e49d9874c1036735a4" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsModified</name></member>
+      <member refid="classvrv_1_1_note_1a11af0928f51d09ad2e6ee9e0597f5237" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsNoteGroupExtreme</name></member>
       <member refid="classvrv_1_1_object_1a6fe6d0adbd0341a514fc3645039559fd" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsPageElement</name></member>
       <member refid="classvrv_1_1_object_1af8dd22cf22d58a6c606591b9fe14597d" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsPreOrdered</name></member>
       <member refid="classvrv_1_1_object_1ad507cfd401ea330cca65a4891b90da80" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>IsReferenceObject</name></member>
@@ -2404,8 +2404,6 @@
       <member refid="classvrv_1_1_bounding_box_1a548baf7b854ef877313302670da5d0b8" prot="protected" virt="non-virtual"><scope>vrv::Note</scope><name>m_cachedDrawingY</name></member>
       <member refid="classvrv_1_1_layer_element_1a29f3a9d4472de2ece86abce25c87139c" prot="protected" virt="non-virtual"><scope>vrv::Note</scope><name>m_cachedXRel</name></member>
       <member refid="classvrv_1_1_layer_element_1ac4b9a899709b36b64228c263e4990d13" prot="protected" virt="non-virtual"><scope>vrv::Note</scope><name>m_cachedYRel</name></member>
-      <member refid="classvrv_1_1_note_1af2c2dbc2bd4daaadd559e1e3e9639449" prot="private" virt="non-virtual"><scope>vrv::Note</scope><name>m_cluster</name></member>
-      <member refid="classvrv_1_1_note_1a59c0210d052cd5c327101ed6d50c2ec1" prot="private" virt="non-virtual"><scope>vrv::Note</scope><name>m_clusterPosition</name></member>
       <member refid="classvrv_1_1_layer_element_1a93464f5da77d7acbf8565d6a70b47e91" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>m_crossLayer</name></member>
       <member refid="classvrv_1_1_layer_element_1af61467813ceb6c74c05b55484007c48b" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>m_crossStaff</name></member>
       <member refid="classvrv_1_1_layer_element_1a98868bde8bc6d40dbfc9b0fb5632354f" prot="protected" virt="non-virtual"><scope>vrv::Note</scope><name>m_drawingCueSize</name></member>
@@ -2415,6 +2413,8 @@
       <member refid="classvrv_1_1_layer_element_1a33f69b421d5fbe77c6e89e2da3e46b3b" prot="protected" virt="non-virtual"><scope>vrv::Note</scope><name>m_drawingYRel</name></member>
       <member refid="classvrv_1_1_note_1ac2be2a06ed546eabd7d5f88a7bd9e9ef" prot="private" virt="non-virtual"><scope>vrv::Note</scope><name>m_flippedNotehead</name></member>
       <member refid="classvrv_1_1_layer_element_1a6ee0bb4018d8ba684437586512ff4136" prot="protected" virt="non-virtual"><scope>vrv::Note</scope><name>m_graceAlignment</name></member>
+      <member refid="classvrv_1_1_note_1af63e655eee232a8a0e8f7d4ae4499327" prot="private" virt="non-virtual"><scope>vrv::Note</scope><name>m_noteGroup</name></member>
+      <member refid="classvrv_1_1_note_1a53910a6525feac9b9193be23ec7b3e9e" prot="private" virt="non-virtual"><scope>vrv::Note</scope><name>m_noteGroupPosition</name></member>
       <member refid="classvrv_1_1_note_1a95ecc0899100084dfd0fd37859d4cb1f" prot="private" virt="non-virtual"><scope>vrv::Note</scope><name>m_stemSameas</name></member>
       <member refid="classvrv_1_1_note_1a6c2a769f7c103ebc94d68c147184df08" prot="private" virt="non-virtual"><scope>vrv::Note</scope><name>m_stemSameasRole</name></member>
       <member refid="classvrv_1_1_object_1a74ae0995caefb72a71445ba43fce0652" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>m_unsupported</name></member>
@@ -2465,7 +2465,6 @@
       <member refid="classvrv_1_1_object_1a9bc335e3bc5405f5dbaae757b5629996" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>SetAsReferenceObject</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7eccd9ca1e458dccab9c6b9fb7a24ec4" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>SetBoundingBoxGlyph</name></member>
       <member refid="classvrv_1_1_object_1af0db1dd88b7d2f6c9068934312ce86c8" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>SetClosingComment</name></member>
-      <member refid="classvrv_1_1_note_1a5dbdadeb93f4e6cf0f15dabc238b8349" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>SetCluster</name></member>
       <member refid="classvrv_1_1_object_1a3b47aa3445a48e681db41607cedcd4b4" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>SetComment</name></member>
       <member refid="classvrv_1_1_layer_element_1aa7bb2834cef3aae358007de4bd433427" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>SetDrawingCueSize</name></member>
       <member refid="classvrv_1_1_note_1a28b46326ae7c510b1daaee0a243d325e" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>SetDrawingLoc</name></member>
@@ -2483,6 +2482,7 @@
       <member refid="classvrv_1_1_linking_interface_1a26bd7ff2e4a7048c03aeb56bb8f598d8" prot="protected" virt="non-virtual"><scope>vrv::Note</scope><name>SetIDStr</name></member>
       <member refid="classvrv_1_1_layer_element_1abde360546ca5471c7e32e57ab228b18b" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>SetIsInBeamSpan</name></member>
       <member refid="classvrv_1_1_linking_interface_1aa954c8b863b3372c10ec07e7c8a48087" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>SetNextLink</name></member>
+      <member refid="classvrv_1_1_note_1a3ccada7adf732c747e37fad3d206eb70" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>SetNoteGroup</name></member>
       <member refid="classvrv_1_1_object_1a9f30aa6a8185b260943003a08980d376" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>SetParent</name></member>
       <member refid="classvrv_1_1_duration_interface_1abfc9967983eae285202ba238c7b6e018" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>SetRealTimeOffsetSeconds</name></member>
       <member refid="classvrv_1_1_duration_interface_1a328faf68d235b814c5a8226d2575368b" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>SetRealTimeOnsetSeconds</name></member>

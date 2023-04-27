@@ -500,13 +500,13 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classvrv_1_1_chord_1ab6a3d07bd7a51b21d6300bdf5e0ebcef" prot="private" static="no" mutable="yes">
-        <type>std::list&lt; ChordCluster * &gt;</type>
-        <definition>std::list&lt;ChordCluster *&gt; vrv::Chord::m_clusters</definition>
+      <memberdef kind="variable" id="classvrv_1_1_chord_1a798b3ad315bd73988e4df927f40647f9" prot="private" static="no" mutable="yes">
+        <type>std::list&lt; ChordNoteGroup * &gt;</type>
+        <definition>std::list&lt;ChordNoteGroup *&gt; vrv::Chord::m_noteGroups</definition>
         <argsstring></argsstring>
-        <name>m_clusters</name>
+        <name>m_noteGroups</name>
         <briefdescription>
-<para>The list of chord clusters. </para>
+<para>The list of chord note groups. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -724,13 +724,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/chord.h" line="174" column="15"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_chord_1af666ccc0ca022458e290f90dc6c5578c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_chord_1a78ce2b5d8ba517a9b3ee539e1807f19e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void vrv::Chord::CalculateClusters</definition>
+        <definition>void vrv::Chord::CalculateNoteGroups</definition>
         <argsstring>()</argsstring>
-        <name>CalculateClusters</name>
+        <name>CalculateNoteGroups</name>
         <briefdescription>
-<para>Recalculate the m_clusters vector. </para>
+<para>Recalculate the m_noteGroups vector. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -823,13 +823,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/chord.h" line="216" column="18"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_chord_1afca94680f94f3e222e231970bc60e2d7" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_chord_1a9d71b290ca43301cbdf38fd58347a8bf" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void vrv::Chord::ClearClusters</definition>
+        <definition>void vrv::Chord::ClearNoteGroups</definition>
         <argsstring>() const</argsstring>
-        <name>ClearClusters</name>
+        <name>ClearNoteGroups</name>
         <briefdescription>
-<para>Clear the m_clusters vector and delete all the objects. </para>
+<para>Clear the m_noteGroups vector and delete all the objects. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -1454,11 +1454,11 @@
       <member refid="classvrv_1_1_bounding_box_1a98f3d30610a0063965fcac7ec265ef27" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>CalcSlope</name></member>
       <member refid="classvrv_1_1_chord_1ac5e128bd6475e2122665c7906c8f31a9" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>CalcStemLenInThirdUnits</name></member>
       <member refid="classvrv_1_1_bounding_box_1a8fdd811aefcb373533b9cc2795aa04dd" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>CalcThickBezier</name></member>
-      <member refid="classvrv_1_1_chord_1af666ccc0ca022458e290f90dc6c5578c" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>CalculateClusters</name></member>
+      <member refid="classvrv_1_1_chord_1a78ce2b5d8ba517a9b3ee539e1807f19e" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>CalculateNoteGroups</name></member>
       <member refid="classvrv_1_1_layer_element_1a9119ab77c4eb82a8ad74cb8a20f7784d" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>CenterDrawingX</name></member>
       <member refid="classvrv_1_1_chord_1ab6c5a3f6a8ec9843054579ea482a2b60" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>Chord</name></member>
       <member refid="classvrv_1_1_object_1a0af864d1b64a70d4ec8b62a520114bde" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>ClearChildren</name></member>
-      <member refid="classvrv_1_1_chord_1afca94680f94f3e222e231970bc60e2d7" prot="protected" virt="non-virtual"><scope>vrv::Chord</scope><name>ClearClusters</name></member>
+      <member refid="classvrv_1_1_chord_1a9d71b290ca43301cbdf38fd58347a8bf" prot="protected" virt="non-virtual"><scope>vrv::Chord</scope><name>ClearNoteGroups</name></member>
       <member refid="classvrv_1_1_object_1a667b4432b8f9d9e92bfd34fe5c885099" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>ClearRelinquishedChildren</name></member>
       <member refid="classvrv_1_1_chord_1add9d8dde3f255b542d5b0e3f453ca045" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>Clone</name></member>
       <member refid="classvrv_1_1_layer_element_1a0ed3a40420a298b9cea1d354bbbd1f9d" prot="public" virt="virtual"><scope>vrv::Chord</scope><name>CloneReset</name></member>
@@ -1784,7 +1784,6 @@
       <member refid="classvrv_1_1_bounding_box_1a548baf7b854ef877313302670da5d0b8" prot="protected" virt="non-virtual"><scope>vrv::Chord</scope><name>m_cachedDrawingY</name></member>
       <member refid="classvrv_1_1_layer_element_1a29f3a9d4472de2ece86abce25c87139c" prot="protected" virt="non-virtual"><scope>vrv::Chord</scope><name>m_cachedXRel</name></member>
       <member refid="classvrv_1_1_layer_element_1ac4b9a899709b36b64228c263e4990d13" prot="protected" virt="non-virtual"><scope>vrv::Chord</scope><name>m_cachedYRel</name></member>
-      <member refid="classvrv_1_1_chord_1ab6a3d07bd7a51b21d6300bdf5e0ebcef" prot="private" virt="non-virtual"><scope>vrv::Chord</scope><name>m_clusters</name></member>
       <member refid="classvrv_1_1_layer_element_1a93464f5da77d7acbf8565d6a70b47e91" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>m_crossLayer</name></member>
       <member refid="classvrv_1_1_layer_element_1af61467813ceb6c74c05b55484007c48b" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>m_crossStaff</name></member>
       <member refid="classvrv_1_1_layer_element_1a98868bde8bc6d40dbfc9b0fb5632354f" prot="protected" virt="non-virtual"><scope>vrv::Chord</scope><name>m_drawingCueSize</name></member>
@@ -1793,6 +1792,7 @@
       <member refid="classvrv_1_1_layer_element_1a592cebc1769e23ff79403a675a923c65" prot="protected" virt="non-virtual"><scope>vrv::Chord</scope><name>m_drawingXRel</name></member>
       <member refid="classvrv_1_1_layer_element_1a33f69b421d5fbe77c6e89e2da3e46b3b" prot="protected" virt="non-virtual"><scope>vrv::Chord</scope><name>m_drawingYRel</name></member>
       <member refid="classvrv_1_1_layer_element_1a6ee0bb4018d8ba684437586512ff4136" prot="protected" virt="non-virtual"><scope>vrv::Chord</scope><name>m_graceAlignment</name></member>
+      <member refid="classvrv_1_1_chord_1a798b3ad315bd73988e4df927f40647f9" prot="private" virt="non-virtual"><scope>vrv::Chord</scope><name>m_noteGroups</name></member>
       <member refid="classvrv_1_1_object_1a74ae0995caefb72a71445ba43fce0652" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>m_unsupported</name></member>
       <member refid="classvrv_1_1_layer_element_1a66bf79ef721a113ab2e5ff354313fe2e" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>m_xAbs</name></member>
       <member refid="classvrv_1_1_object_1a30996d1e8460f2110900b490425c16ec" prot="public" virt="non-virtual"><scope>vrv::Chord</scope><name>Modify</name></member>

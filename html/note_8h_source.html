@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('note_8h_source.html',''); initResizabl
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    Chord *<a class="code" href="classvrv_1_1_note.html#a8fac70447933b92e2615280b6909e351">IsChordTone</a>();</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">const</span> Chord *<a class="code" href="classvrv_1_1_note.html#a8fac70447933b92e2615280b6909e351">IsChordTone</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">int</span> GetDrawingDur() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">bool</span> IsClusterExtreme() <span class="keyword">const</span>; <span class="comment">// used to find if it is the highest or lowest note in a cluster</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">bool</span> IsNoteGroupExtreme() <span class="keyword">const</span>; <span class="comment">// used to find if it is the highest or lowest note in a note group</span></div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    TabGrp *<a class="code" href="classvrv_1_1_note.html#a33d2ecc1b1027f9f6c4a978b6f268073">IsTabGrpNote</a>();</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keyword">const</span> TabGrp *<a class="code" href="classvrv_1_1_note.html#a33d2ecc1b1027f9f6c4a978b6f268073">IsTabGrpNote</a>() <span class="keyword">const</span>;</div>
@@ -194,9 +194,9 @@ $(document).ready(function(){initNavTree('note_8h_source.html',''); initResizabl
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_note.html#a5d75468877187a156178c642140853a3">IsUnisonWith</a>(<span class="keyword">const</span> Note *note, <span class="keywordtype">bool</span> ignoreAccid = <span class="keyword">false</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">void</span> SetCluster(ChordCluster *cluster, <span class="keywordtype">int</span> position);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    ChordCluster *GetCluster() { <span class="keywordflow">return</span> m_cluster; }</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">int</span> GetClusterPosition()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_clusterPosition; }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">void</span> SetNoteGroup(ChordNoteGroup *noteGroup, <span class="keywordtype">int</span> position);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    ChordNoteGroup *GetNoteGroup() { <span class="keywordflow">return</span> m_noteGroup; }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">int</span> GetNoteGroupPosition()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_noteGroupPosition; }</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">void</span> SetFlippedNotehead(<span class="keywordtype">bool</span> flippedNotehead) { m_flippedNotehead = flippedNotehead; }</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordtype">bool</span> GetFlippedNotehead()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_flippedNotehead; }</div>
@@ -278,9 +278,9 @@ $(document).ready(function(){initNavTree('note_8h_source.html',''); initResizabl
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordtype">bool</span> m_flippedNotehead;</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    ChordCluster *m_cluster;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    ChordNoteGroup *m_noteGroup;</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordtype">int</span> m_clusterPosition;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordtype">int</span> m_noteGroupPosition;</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    Note *m_stemSameas;</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
@@ -373,7 +373,7 @@ $(document).ready(function(){initNavTree('note_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>note.h</b></li>
-    <li class="footer">Generated on Mon Apr 24 2023 09:01:18 for Verovio by
+    <li class="footer">Generated on Thu Apr 27 2023 07:42:38 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
