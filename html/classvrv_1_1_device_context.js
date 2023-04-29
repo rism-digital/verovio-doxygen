@@ -54,6 +54,7 @@ var classvrv_1_1_device_context =
     [ "ResetBrush", "classvrv_1_1_device_context.html#aec24567fc3eb0d2b50e3a3104f0caf1c", null ],
     [ "ResetFont", "classvrv_1_1_device_context.html#a23962774a3aa1c288e8cc3365a521aed", null ],
     [ "ResetPen", "classvrv_1_1_device_context.html#a106e653911674d054288534c8113550b", null ],
+    [ "ResetPushBack", "classvrv_1_1_device_context.html#a43ff0a95215b58e77212156fbd9b2801", null ],
     [ "ResetResources", "classvrv_1_1_device_context.html#a71fea5d7ac64e00989df226b9db7d93a", null ],
     [ "ResumeGraphic", "classvrv_1_1_device_context.html#affffa33bbf157001a8e6f87a0fe48ebe", null ],
     [ "RotateGraphic", "classvrv_1_1_device_context.html#a4e4441d51b1054301bf4f256878f6364", null ],
@@ -67,6 +68,7 @@ var classvrv_1_1_device_context =
     [ "SetHeight", "classvrv_1_1_device_context.html#a3981d3d5f658d2b9eb0c9f0cdff5d1eb", null ],
     [ "SetLogicalOrigin", "classvrv_1_1_device_context.html#a2286132c081552b93386928d21965d07", null ],
     [ "SetPen", "classvrv_1_1_device_context.html#aa296a18b4a139e993cc5f90d9a7f15c8", null ],
+    [ "SetPushBack", "classvrv_1_1_device_context.html#a019e4f455d65caf90aa8e846f2df05a5", null ],
     [ "SetResources", "classvrv_1_1_device_context.html#ae8f2a1bbb614dd755c278cc2ecac4ef0", null ],
     [ "SetTextBackground", "classvrv_1_1_device_context.html#aa29f54eff54fd3f99bd4372c094418d7", null ],
     [ "SetTextForeground", "classvrv_1_1_device_context.html#a755f6e012918365bb92eb92053061dff", null ],
@@ -83,5 +85,6 @@ var classvrv_1_1_device_context =
     [ "m_fontStack", "classvrv_1_1_device_context.html#a15965e5f7cd0e4dfc75fe44ef7f5ac72", null ],
     [ "m_isDeactivatedX", "classvrv_1_1_device_context.html#a07ec2ee8e4d62cd3adb5459f9cd62a67", null ],
     [ "m_isDeactivatedY", "classvrv_1_1_device_context.html#a66f66f27572b0b3e79cceef7db4344f3", null ],
-    [ "m_penStack", "classvrv_1_1_device_context.html#a927b9ea7ce42075fcbfc5d9d90acda13", null ]
+    [ "m_penStack", "classvrv_1_1_device_context.html#a927b9ea7ce42075fcbfc5d9d90acda13", null ],
+    [ "m_pushBack", "classvrv_1_1_device_context.html#ad5e697def2c0b4d10f43f07373b887dd", null ]
 ];
