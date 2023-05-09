@@ -43,11 +43,13 @@
     <includedby refid="findfunctor_8h" local="yes">findfunctor.h</includedby>
     <includedby refid="findlayerelementsfunctor_8h" local="yes">findlayerelementsfunctor.h</includedby>
     <includedby refid="justifyfunctor_8h" local="yes">justifyfunctor.h</includedby>
+    <includedby refid="midifunctor_8h" local="yes">midifunctor.h</includedby>
     <includedby refid="miscfunctor_8h" local="yes">miscfunctor.h</includedby>
     <includedby refid="preparedatafunctor_8h" local="yes">preparedatafunctor.h</includedby>
     <includedby refid="resetfunctor_8h" local="yes">resetfunctor.h</includedby>
     <includedby refid="savefunctor_8h" local="yes">savefunctor.h</includedby>
     <includedby refid="setscoredeffunctor_8h" local="yes">setscoredeffunctor.h</includedby>
+    <includedby refid="transposefunctor_8h" local="yes">transposefunctor.h</includedby>
     <incdepgraph>
       <node id="16">
         <label>list</label>
@@ -636,6 +638,10 @@
         <label>calcledgerlinesfunctor.h</label>
         <link refid="calcledgerlinesfunctor_8h_source"/>
       </node>
+      <node id="46">
+        <label>transposefunctor.h</label>
+        <link refid="transposefunctor_8h_source"/>
+      </node>
       <node id="1">
         <label>functor.h</label>
         <link refid="functor_8h"/>
@@ -725,6 +731,10 @@
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
       </node>
       <node id="24">
         <label>calcalignmentpitchposfunctor.h</label>
@@ -786,7 +796,7 @@
         <label>adjustfloatingpositionerfunctor.h</label>
         <link refid="adjustfloatingpositionerfunctor_8h_source"/>
       </node>
-      <node id="41">
+      <node id="42">
         <label>preparedatafunctor.h</label>
         <link refid="preparedatafunctor_8h_source"/>
       </node>
@@ -830,7 +840,7 @@
         <label>adjustyposfunctor.h</label>
         <link refid="adjustyposfunctor_8h_source"/>
       </node>
-      <node id="42">
+      <node id="43">
         <label>resetfunctor.h</label>
         <link refid="resetfunctor_8h_source"/>
       </node>
@@ -850,7 +860,7 @@
         <label>alignfunctor.h</label>
         <link refid="alignfunctor_8h_source"/>
       </node>
-      <node id="40">
+      <node id="41">
         <label>miscfunctor.h</label>
         <link refid="miscfunctor_8h_source"/>
       </node>
@@ -862,13 +872,17 @@
         <label>adjustgracexposfunctor.h</label>
         <link refid="adjustgracexposfunctor_8h_source"/>
       </node>
-      <node id="44">
+      <node id="45">
         <label>setscoredeffunctor.h</label>
         <link refid="setscoredeffunctor_8h_source"/>
       </node>
-      <node id="43">
+      <node id="44">
         <label>savefunctor.h</label>
         <link refid="savefunctor_8h_source"/>
+      </node>
+      <node id="40">
+        <label>midifunctor.h</label>
+        <link refid="midifunctor_8h_source"/>
       </node>
       <node id="33">
         <label>calcspanningbeamspansfunctor.h</label>
@@ -888,7 +902,7 @@
       </node>
     </invincdepgraph>
     <innerclass refid="classvrv_1_1_functor_base" prot="public">vrv::FunctorBase</innerclass>
-    <innerclass refid="classvrv_1_1_mutable_functor" prot="public">vrv::MutableFunctor</innerclass>
+    <innerclass refid="classvrv_1_1_functor" prot="public">vrv::Functor</innerclass>
     <innerclass refid="classvrv_1_1_const_functor" prot="public">vrv::ConstFunctor</innerclass>
     <innerclass refid="classvrv_1_1_doc_functor" prot="public">vrv::DocFunctor</innerclass>
     <innerclass refid="classvrv_1_1_doc_const_functor" prot="public">vrv::DocConstFunctor</innerclass>
@@ -952,13 +966,13 @@
 <codeline lineno="75"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MutableFunctor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Functor</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="84" refid="classvrv_1_1_mutable_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_mutable_functor" kindref="compound">MutableFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_functor_base" kindref="compound">FunctorBase</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_functor_interface" kindref="compound">FunctorInterface</ref><sp/>{</highlight></codeline>
+<codeline lineno="84" refid="classvrv_1_1_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_functor_base" kindref="compound">FunctorBase</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_functor_interface" kindref="compound">FunctorInterface</ref><sp/>{</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_mutable_functor" kindref="compound">MutableFunctor</ref>(){};</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_mutable_functor" kindref="compound">MutableFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref>(){};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -989,7 +1003,7 @@
 <codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DocFunctor</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
-<codeline lineno="134" refid="classvrv_1_1_doc_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_doc_functor" kindref="compound">DocFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_mutable_functor" kindref="compound">MutableFunctor</ref><sp/>{</highlight></codeline>
+<codeline lineno="134" refid="classvrv_1_1_doc_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_doc_functor" kindref="compound">DocFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>{</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_doc_functor" kindref="compound">DocFunctor</ref>(<ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc)<sp/>{<sp/>m_doc<sp/>=<sp/>doc;<sp/>}</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_doc_functor" kindref="compound">DocFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>

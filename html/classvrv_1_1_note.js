@@ -3,9 +3,9 @@ var classvrv_1_1_note =
     [ "Note", "classvrv_1_1_note.html#aec35e5f742e883b3c8bbd7d4a7ecc5c2", null ],
     [ "~Note", "classvrv_1_1_note.html#a63d285601a42d945b7481cb40d2dfa6b", null ],
     [ "Accept", "classvrv_1_1_note.html#a0e05ef665ca7dc27b8c023ed468254d7", null ],
-    [ "Accept", "classvrv_1_1_note.html#a776126b92ad40b817262bd02a0b9bcbd", null ],
+    [ "Accept", "classvrv_1_1_note.html#aa8f98e5a8ab24bb22912cdbd18434a08", null ],
     [ "AcceptEnd", "classvrv_1_1_note.html#a1875afdb6f2a17a96265c30972a3dc9c", null ],
-    [ "AcceptEnd", "classvrv_1_1_note.html#a10675887a531c33705e9d1f4c62febea", null ],
+    [ "AcceptEnd", "classvrv_1_1_note.html#a966a56dae04087faefa41158f2700bdd", null ],
     [ "AddChild", "classvrv_1_1_note.html#aefb4a2097eb88c3cefd73cbc72222bb0", null ],
     [ "AlignDotsShift", "classvrv_1_1_note.html#a31a25f79f3854cf1083770fe46718360", null ],
     [ "CalcDotLocations", "classvrv_1_1_note.html#a19e1747b8c15b47581048795066212aa", null ],
@@ -14,8 +14,6 @@ var classvrv_1_1_note =
     [ "CalcStemDirForSameasNote", "classvrv_1_1_note.html#a6f88ce0675e674e63fc42e3fca18fdc4", null ],
     [ "CalcStemLenInThirdUnits", "classvrv_1_1_note.html#a105ed49c9fe5687f372a9aa49dd5cfc2", null ],
     [ "Clone", "classvrv_1_1_note.html#a782b20876bae1c1f01fc871774312860", null ],
-    [ "GenerateMIDI", "classvrv_1_1_note.html#a012e8bbeb3f7c669654284ff4e3d9b5b", null ],
-    [ "GenerateTimemap", "classvrv_1_1_note.html#a9f6c57951cfc08541da10e767c878ea4", null ],
     [ "GetClassName", "classvrv_1_1_note.html#a8b0a27e2360a4813f4dfe036b0d0fcf1", null ],
     [ "GetDiatonicPitch", "classvrv_1_1_note.html#a40bd7cfa491712c99ed6d1bb22fe880f", null ],
     [ "GetDrawingAccid", "classvrv_1_1_note.html#a72a6d0881e4198532f4f6898e9d1b182", null ],
@@ -43,6 +41,7 @@ var classvrv_1_1_note =
     [ "GetStemSameasRole", "classvrv_1_1_note.html#a38d525195436f5a32fe144c9c1cfdfc3", null ],
     [ "GetStemUpSE", "classvrv_1_1_note.html#a7e01dacdaeffa510453c93250c59b77b", null ],
     [ "GetTabFretString", "classvrv_1_1_note.html#a53216ab62ba361d59f9d891ed4b65ec5", null ],
+    [ "GetTransPitch", "classvrv_1_1_note.html#a475be4c24b3429a6c797c23f53608a54", null ],
     [ "HasLedgerLines", "classvrv_1_1_note.html#afa3895e8b0aacf42f2675fdde8a30c8d", null ],
     [ "HasStemSameasNote", "classvrv_1_1_note.html#a929e7011bc7c7e187ad0ae4973c80b35", null ],
     [ "HasToBeAligned", "classvrv_1_1_note.html#a68a34dc4606c694c61020104860daa78", null ],
@@ -61,5 +60,5 @@ var classvrv_1_1_note =
     [ "SetNoteGroup", "classvrv_1_1_note.html#a3ccada7adf732c747e37fad3d206eb70", null ],
     [ "SetStemSameasNote", "classvrv_1_1_note.html#a5800384e2a83f7946c0226b8743fddd5", null ],
     [ "SetStemSameasRole", "classvrv_1_1_note.html#a53bdcb022e7e76cccff5feba98640328", null ],
-    [ "Transpose", "classvrv_1_1_note.html#a541f31357236a4ff865c00da04c31c16", null ]
+    [ "UpdateFromTransPitch", "classvrv_1_1_note.html#afa43708acf2f9ca9543997e89e4aac20", null ]
 ];

@@ -48,6 +48,7 @@
         <reimplementedby refid="classvrv_1_1_find_next_child_by_comparison_functor_1a967433db65b2ad88f21573af01391419">VisitObject</reimplementedby>
         <reimplementedby refid="classvrv_1_1_find_previous_child_by_comparison_functor_1ad4fbfc495c1278ba9e6f0069569eccef">VisitObject</reimplementedby>
         <reimplementedby refid="classvrv_1_1_find_extreme_by_comparison_functor_1adb92988e667cdbd0a0ca4950b0579771">VisitObject</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_generate_features_functor_1a42ea6c917dd49ce49334eadd99c07da3">VisitObject</reimplementedby>
         <reimplementedby refid="classvrv_1_1_add_to_flat_list_functor_1aece6c633d90a3978eb5c04d6977fad07">VisitObject</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
@@ -291,6 +292,7 @@
         <argsstring>(const Layer *layer)</argsstring>
         <name>VisitLayer</name>
         <reimplementedby refid="classvrv_1_1_init_processing_lists_functor_1abc73df99be485df2be4b39920137288f">VisitLayer</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1a3a0a534e746d05019adf60936c13f284">VisitLayer</reimplementedby>
         <reimplementedby refid="classvrv_1_1_find_element_in_layer_staff_def_functor_1a236afcb9788f5d8a716815e88fd50b2c">VisitLayer</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
@@ -309,6 +311,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitLayerEnd</definition>
         <argsstring>(const Layer *layer)</argsstring>
         <name>VisitLayerEnd</name>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1acd2adef624da7f3ecd0ce6278a86b695">VisitLayerEnd</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
           <declname>layer</declname>
@@ -361,6 +364,9 @@
         <argsstring>(const Measure *measure)</argsstring>
         <name>VisitMeasure</name>
         <reimplementedby refid="classvrv_1_1_find_spanned_layer_elements_functor_1a740582a4165988ae3f6b4a0ac7b7e5a5">VisitMeasure</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_init_m_i_d_i_functor_1a65b0ba5fd203b318a178ce933db7ce19">VisitMeasure</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1af9525d0751da871c9542776620ccea3a">VisitMeasure</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_generate_timemap_functor_1a594bb0bc2f784e48a9c92ee08260f9c2">VisitMeasure</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
           <declname>measure</declname>
@@ -531,6 +537,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitScoreDef</definition>
         <argsstring>(const ScoreDef *scoreDef)</argsstring>
         <name>VisitScoreDef</name>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1aeecb9a0b6924dfb2e402194a76c79983">VisitScoreDef</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_score_def" kindref="compound">ScoreDef</ref> *</type>
           <declname>scoreDef</declname>
@@ -599,6 +606,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitStaff</definition>
         <argsstring>(const Staff *staff)</argsstring>
         <name>VisitStaff</name>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1ad64e5c7c1d3d5066bc89f7eca273d5ff">VisitStaff</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
           <declname>staff</declname>
@@ -633,6 +641,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitStaffDef</definition>
         <argsstring>(const StaffDef *staffDef)</argsstring>
         <name>VisitStaffDef</name>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1a7fed84392a2f5b5e536eb9e67f88c4db">VisitStaffDef</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_staff_def" kindref="compound">StaffDef</ref> *</type>
           <declname>staffDef</declname>
@@ -1330,6 +1339,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitArpeg</definition>
         <argsstring>(const Arpeg *arpeg)</argsstring>
         <name>VisitArpeg</name>
+        <reimplementedby refid="classvrv_1_1_init_m_i_d_i_functor_1aa92ff7efa01aac9130a9450ff0500dd2">VisitArpeg</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_arpeg" kindref="compound">Arpeg</ref> *</type>
           <declname>arpeg</declname>
@@ -1908,6 +1918,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitPedal</definition>
         <argsstring>(const Pedal *pedal)</argsstring>
         <name>VisitPedal</name>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1ab53a0e6fcb1270824afec74b7582e289">VisitPedal</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_pedal" kindref="compound">Pedal</ref> *</type>
           <declname>pedal</declname>
@@ -2353,6 +2364,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitBeatRpt</definition>
         <argsstring>(const BeatRpt *beatRpt)</argsstring>
         <name>VisitBeatRpt</name>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1a9cfd3b0c985473faa1d979420071ba51">VisitBeatRpt</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_beat_rpt" kindref="compound">BeatRpt</ref> *</type>
           <declname>beatRpt</declname>
@@ -2387,6 +2399,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitBTrem</definition>
         <argsstring>(const BTrem *bTrem)</argsstring>
         <name>VisitBTrem</name>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1ae0c994cf7bf977bd0fab9005c06deadb">VisitBTrem</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_b_trem" kindref="compound">BTrem</ref> *</type>
           <declname>bTrem</declname>
@@ -2421,6 +2434,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitChord</definition>
         <argsstring>(const Chord *chord)</argsstring>
         <name>VisitChord</name>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1a2796790f82a1d7af48dde4cab62554e8">VisitChord</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_chord" kindref="compound">Chord</ref> *</type>
           <declname>chord</declname>
@@ -2625,6 +2639,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitFTrem</definition>
         <argsstring>(const FTrem *fTrem)</argsstring>
         <name>VisitFTrem</name>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1ad7f38c38eab2d5e32a71f38ec65fc2db">VisitFTrem</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_f_trem" kindref="compound">FTrem</ref> *</type>
           <declname>fTrem</declname>
@@ -2676,6 +2691,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitGraceGrpEnd</definition>
         <argsstring>(const GraceGrp *graceGrp)</argsstring>
         <name>VisitGraceGrpEnd</name>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1a3c182e9d88f0e249db275607f47f9b0e">VisitGraceGrpEnd</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_grace_grp" kindref="compound">GraceGrp</ref> *</type>
           <declname>graceGrp</declname>
@@ -2693,6 +2709,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitHalfmRpt</definition>
         <argsstring>(const HalfmRpt *halfmRpt)</argsstring>
         <name>VisitHalfmRpt</name>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1acaf7529dbdc1c15ac211fbadabbf593c">VisitHalfmRpt</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_halfm_rpt" kindref="compound">HalfmRpt</ref> *</type>
           <declname>halfmRpt</declname>
@@ -2800,6 +2817,8 @@
         <reimplementedby refid="classvrv_1_1_layer_elements_in_time_span_functor_1a1e2c973ccba7a05d650fdcdd8517c952">VisitLayerElement</reimplementedby>
         <reimplementedby refid="classvrv_1_1_find_spanned_layer_elements_functor_1a12a593f2197e4b35a39d2b147d485412">VisitLayerElement</reimplementedby>
         <reimplementedby refid="classvrv_1_1_get_relative_layer_element_functor_1a3cbcfdfa043ed12d8ca8a36411b52e7d">VisitLayerElement</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1aaa1173247ba47d15ba3f08f1f5024257">VisitLayerElement</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_generate_timemap_functor_1a767dfad022df4263cbcb204e6915862f">VisitLayerElement</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
           <declname>layerElement</declname>
@@ -3006,6 +3025,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitMRpt</definition>
         <argsstring>(const MRpt *mRpt)</argsstring>
         <name>VisitMRpt</name>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1ae439b288c10c90bafc3d586b27f0e2f4">VisitMRpt</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_m_rpt" kindref="compound">MRpt</ref> *</type>
           <declname>mRpt</declname>
@@ -3244,6 +3264,8 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitNote</definition>
         <argsstring>(const Note *note)</argsstring>
         <name>VisitNote</name>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1a9c343b9921f6c137372a326b82266d49">VisitNote</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_generate_timemap_functor_1ac9776e5ef6b9c3ae8f4a44426954bcf6">VisitNote</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
           <declname>note</declname>
@@ -3346,6 +3368,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitRest</definition>
         <argsstring>(const Rest *rest)</argsstring>
         <name>VisitRest</name>
+        <reimplementedby refid="classvrv_1_1_generate_timemap_functor_1a27bdb4521970f6376dcc05590a327581">VisitRest</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_rest" kindref="compound">Rest</ref> *</type>
           <declname>rest</declname>
@@ -3448,6 +3471,7 @@
         <definition>virtual FunctorCode vrv::ConstFunctorInterface::VisitSyl</definition>
         <argsstring>(const Syl *syl)</argsstring>
         <name>VisitSyl</name>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1af2a310d5a8b223a14212653e5d743c42">VisitSyl</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_syl" kindref="compound">Syl</ref> *</type>
           <declname>syl</declname>
@@ -3721,6 +3745,7 @@
         <argsstring>(const Verse *verse)</argsstring>
         <name>VisitVerse</name>
         <reimplementedby refid="classvrv_1_1_init_processing_lists_functor_1a6f7fd156d83aa73b0fcc8e9a203b4b33">VisitVerse</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_generate_m_i_d_i_functor_1af25624f2debba6f30fe9e3a5c6b4ae81">VisitVerse</reimplementedby>
         <param>
           <type>const <ref refid="classvrv_1_1_verse" kindref="compound">Verse</ref> *</type>
           <declname>verse</declname>
@@ -4450,7 +4475,7 @@
 <para>It is not an abstract class but should not be instanciated directly. </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="17">
+      <node id="21">
         <label>vrv::InitProcessingListsFunctor</label>
         <link refid="classvrv_1_1_init_processing_lists_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -4468,6 +4493,12 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="15">
+        <label>vrv::GenerateFeaturesFunctor</label>
+        <link refid="classvrv_1_1_generate_features_functor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="6">
         <label>vrv::FindAllBetweenFunctor</label>
         <link refid="classvrv_1_1_find_all_between_functor"/>
@@ -4480,7 +4511,7 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="16">
+      <node id="19">
         <label>vrv::GetRelativeLayerElementFunctor</label>
         <link refid="classvrv_1_1_get_relative_layer_element_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -4496,7 +4527,7 @@
         <label>vrv::ConstFunctorInterface</label>
         <link refid="classvrv_1_1_const_functor_interface"/>
       </node>
-      <node id="19">
+      <node id="23">
         <label>vrv::LayersInTimeSpanFunctor</label>
         <link refid="classvrv_1_1_layers_in_time_span_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -4517,6 +4548,12 @@
       <node id="10">
         <label>vrv::FindElementInLayerStaffDefFunctor</label>
         <link refid="classvrv_1_1_find_element_in_layer_staff_def_functor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>vrv::GenerateMIDIFunctor</label>
+        <link refid="classvrv_1_1_generate_m_i_d_i_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
@@ -4550,13 +4587,25 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15">
+      <node id="20">
+        <label>vrv::InitMIDIFunctor</label>
+        <link refid="classvrv_1_1_init_m_i_d_i_functor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>vrv::GenerateTimemapFunctor</label>
+        <link refid="classvrv_1_1_generate_timemap_functor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
         <label>vrv::GetAlignmentLeftRightFunctor</label>
         <link refid="classvrv_1_1_get_alignment_left_right_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="18">
+      <node id="22">
         <label>vrv::LayerElementsInTimeSpanFunctor</label>
         <link refid="classvrv_1_1_layer_elements_in_time_span_functor"/>
         <childnode refid="2" relation="public-inheritance">

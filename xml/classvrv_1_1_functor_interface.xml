@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="classvrv_1_1_functor_interface" kind="class" language="C++" prot="public">
     <compoundname>vrv::FunctorInterface</compoundname>
-    <derivedcompoundref refid="classvrv_1_1_mutable_functor" prot="public" virt="non-virtual">vrv::MutableFunctor</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_functor" prot="public" virt="non-virtual">vrv::Functor</derivedcompoundref>
     <includes refid="functorinterface_8h" local="no">functorinterface.h</includes>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors</header>
@@ -298,6 +298,7 @@
         <argsstring>(Layer *layer)</argsstring>
         <name>VisitLayer</name>
         <reimplementedby refid="classvrv_1_1_align_horizontally_functor_1a9fee430d06972edf92fba995a0881e96">VisitLayer</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_init_onset_offset_functor_1a92e8dee9661c06ae712320ae24f881c6">VisitLayer</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_data_functor_1a133d6c7d6288b36cc313f0113602ab74">VisitLayer</reimplementedby>
         <reimplementedby refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1adcdba99213b64341ffee5dad1f98d369">VisitLayer</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_horizontal_alignment_functor_1a504f28910b7edcea21d60f2ca9a179e7">VisitLayer</reimplementedby>
@@ -386,6 +387,7 @@
         <reimplementedby refid="classvrv_1_1_cache_horizontal_layout_functor_1aeca8d382bd27905236e8e33acc5516c8">VisitMeasure</reimplementedby>
         <reimplementedby refid="classvrv_1_1_save_functor_1a6fdd91d301a889eb9cd4dbc1e3375cb9">VisitMeasure</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_layers_functor_1ac28a09f5c75615d08523418b03544ef7">VisitMeasure</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_init_onset_offset_functor_1a8e0f7492a5090d7adb80a0e5a5599a58">VisitMeasure</reimplementedby>
         <reimplementedby refid="classvrv_1_1_calc_alignment_x_pos_functor_1ac6de963a1e82c5519724eaa49010f477">VisitMeasure</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_x_overflow_functor_1abce0a2680a4e5eddecb6c088d10061c9">VisitMeasure</reimplementedby>
         <reimplementedby refid="classvrv_1_1_cast_off_systems_functor_1acd86e788b39c4471399523d2af5e15ae">VisitMeasure</reimplementedby>
@@ -393,6 +395,7 @@
         <reimplementedby refid="classvrv_1_1_adjust_x_pos_functor_1a72c2bd17e76330d83145c6a41fa02fd4">VisitMeasure</reimplementedby>
         <reimplementedby refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a339aebb961914559ecdab27fa1b0d6fe">VisitMeasure</reimplementedby>
         <reimplementedby refid="classvrv_1_1_align_measures_functor_1a5790773e42fd8bf741011b9fcc90b2f3">VisitMeasure</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_init_max_measure_duration_functor_1a5cdc8071621bbb6b901419df65b5ddc9">VisitMeasure</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_horizontal_alignment_functor_1a4262ad59e122da08899ee7eaae4e36a9">VisitMeasure</reimplementedby>
         <reimplementedby refid="classvrv_1_1_prepare_cross_staff_functor_1a9980ef5b618f14ffd9f1dfd1cda25856">VisitMeasure</reimplementedby>
         <reimplementedby refid="classvrv_1_1_align_vertically_functor_1a812f5c6970e4f7d60aa1d619c8ade139">VisitMeasure</reimplementedby>
@@ -426,6 +429,7 @@
         <reimplementedby refid="classvrv_1_1_adjust_arpeg_functor_1a00a62a75f56388134980e71caaccec18">VisitMeasureEnd</reimplementedby>
         <reimplementedby refid="classvrv_1_1_align_horizontally_functor_1a0b1d8c14654d8b5e7736abc9993cd585">VisitMeasureEnd</reimplementedby>
         <reimplementedby refid="classvrv_1_1_save_functor_1a39b192131adab1ef68e451201cdb5d47">VisitMeasureEnd</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_init_max_measure_duration_functor_1ab47a268ad729e915f683135d14396eda">VisitMeasureEnd</reimplementedby>
         <reimplementedby refid="classvrv_1_1_convert_markup_analytical_functor_1acc17466476b045856f3b5284f33d8000">VisitMeasureEnd</reimplementedby>
         <reimplementedby refid="classvrv_1_1_prepare_time_pointing_functor_1aff86abec74df36b752bb069dc6d1ffdd">VisitMeasureEnd</reimplementedby>
         <reimplementedby refid="classvrv_1_1_prepare_time_spanning_functor_1ad8c6cbb469cdcd928cddc3c3e56d91d9">VisitMeasureEnd</reimplementedby>
@@ -598,9 +602,11 @@
         <name>VisitScoreDef</name>
         <reimplementedby refid="classvrv_1_1_justify_x_functor_1a060fdabfd95a6fa85baa05c74fa30abe">VisitScoreDef</reimplementedby>
         <reimplementedby refid="classvrv_1_1_convert_to_page_based_functor_1a16bc33cbe5163224b639f3a0d230e3b6">VisitScoreDef</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_transpose_functor_1aca5b0000b80bb92e61c8e446fb0ce4ec">VisitScoreDef</reimplementedby>
         <reimplementedby refid="classvrv_1_1_cast_off_systems_functor_1a1d2acbdd6bc89911b0c222800413608c">VisitScoreDef</reimplementedby>
         <reimplementedby refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a571a2450bfee288506b97c2fa71e0068">VisitScoreDef</reimplementedby>
         <reimplementedby refid="classvrv_1_1_align_measures_functor_1ab382633259b872c65e4cdf9e3890a342">VisitScoreDef</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_init_max_measure_duration_functor_1a25b3613c17958a71453fc8d0b08c0a66">VisitScoreDef</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_horizontal_alignment_functor_1a590388b38c0b36668b88ad1e7001a0aa">VisitScoreDef</reimplementedby>
         <reimplementedby refid="classvrv_1_1_cast_off_encoding_functor_1a372e71b82a359aba3aee1b742806999e">VisitScoreDef</reimplementedby>
         <reimplementedby refid="classvrv_1_1_cast_off_to_selection_functor_1a4e188c9d5b958f95ccf3bf662eb4ed6a">VisitScoreDef</reimplementedby>
@@ -622,6 +628,7 @@
         <definition>virtual FunctorCode vrv::FunctorInterface::VisitScoreDefEnd</definition>
         <argsstring>(ScoreDef *scoreDef)</argsstring>
         <name>VisitScoreDefEnd</name>
+        <reimplementedby refid="classvrv_1_1_transpose_functor_1a93d70f8e9522e449e68ba82d73a0bdba">VisitScoreDefEnd</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_score_def" kindref="compound">ScoreDef</ref> *</type>
           <declname>scoreDef</declname>
@@ -679,6 +686,8 @@
         <reimplementedby refid="classvrv_1_1_apply_p_p_u_factor_functor_1a5ca5a990bb83e9ca68572a287fd4e51c">VisitStaff</reimplementedby>
         <reimplementedby refid="classvrv_1_1_calc_stem_functor_1a9f31ac40198128f20f8d6b9a6ff0314e">VisitStaff</reimplementedby>
         <reimplementedby refid="classvrv_1_1_align_horizontally_functor_1ab6c982f0ce6d29d831cbaf448abe21a8">VisitStaff</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_init_onset_offset_functor_1ade70c809333868f137cc2e5e1c5a2dde">VisitStaff</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_transpose_functor_1a40fea11be487ffc0ef63c4498ba7a7ad">VisitStaff</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_data_functor_1aabe87be98605f577cf566f97a7f14e69">VisitStaff</reimplementedby>
         <reimplementedby refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a0d3c04cfe240761b603c7979960b68a3">VisitStaff</reimplementedby>
         <reimplementedby refid="classvrv_1_1_align_vertically_functor_1a348ea10599437c3c14022f3d77c5553b">VisitStaff</reimplementedby>
@@ -724,6 +733,7 @@
         <argsstring>(StaffDef *staffDef)</argsstring>
         <name>VisitStaffDef</name>
         <reimplementedby refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1a8a14c9352ef9b7d740198c94233b5c16">VisitStaffDef</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_transpose_functor_1a5e4537744bcd2ecca084edc100e4e7bc">VisitStaffDef</reimplementedby>
         <reimplementedby refid="classvrv_1_1_set_staff_def_redraw_flags_functor_1a7bbf3358bd8423deb8491f9aca9a252c">VisitStaffDef</reimplementedby>
         <reimplementedby refid="classvrv_1_1_prepare_duration_functor_1aa4d9ee5965289299632942300e29f2d0">VisitStaffDef</reimplementedby>
         <param>
@@ -808,6 +818,7 @@
         <reimplementedby refid="classvrv_1_1_calc_alignment_x_pos_functor_1a137b32091911fa6de63e24dc760231c7">VisitSystem</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_x_overflow_functor_1a7ab13bfe73591a411ee51ec50d205fd3">VisitSystem</reimplementedby>
         <reimplementedby refid="classvrv_1_1_cast_off_systems_functor_1af26835cac71f963b0b74d952ee2dc25a">VisitSystem</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_transpose_functor_1a68413b450f2e203ec16f5d28c7ea5cd6">VisitSystem</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_cross_staff_y_pos_functor_1a41871e85098e7c5646f376d08c526ec4">VisitSystem</reimplementedby>
         <reimplementedby refid="classvrv_1_1_justify_y_functor_1a14a7ca64c6857e368d21d319bd7f41bd">VisitSystem</reimplementedby>
         <reimplementedby refid="classvrv_1_1_align_measures_functor_1adf2dba7d6551158a1ca17b876067390f">VisitSystem</reimplementedby>
@@ -1325,6 +1336,7 @@
         <name>VisitMdiv</name>
         <reimplementedby refid="classvrv_1_1_convert_to_page_based_functor_1aab603c8c0901cdb7047cd9cafa932d02">VisitMdiv</reimplementedby>
         <reimplementedby refid="classvrv_1_1_save_functor_1ac3c79ebd4517b29c8cf3b85892b5cc1c">VisitMdiv</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_transpose_functor_1a09ceeeab16bb46c4e0a0432c72f3d24c">VisitMdiv</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_mdiv" kindref="compound">Mdiv</ref> *</type>
           <declname>mdiv</declname>
@@ -1400,6 +1412,7 @@
         <definition>virtual FunctorCode vrv::FunctorInterface::VisitPageMilestone</definition>
         <argsstring>(PageMilestoneEnd *pageMilestoneEnd)</argsstring>
         <name>VisitPageMilestone</name>
+        <reimplementedby refid="classvrv_1_1_transpose_functor_1acb776a5fe7adcd8899c057b03d232491">VisitPageMilestone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_cast_off_systems_functor_1a489402072c0d50db9029a7b684bb1c1f">VisitPageMilestone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_cast_off_pages_functor_1a117e5889cdeb538ac5dbb7ca669767f0">VisitPageMilestone</reimplementedby>
         <reimplementedby refid="classvrv_1_1_cast_off_encoding_functor_1a160c296b10ed2179fdabf81f46932856">VisitPageMilestone</reimplementedby>
@@ -1444,6 +1457,7 @@
         <reimplementedby refid="classvrv_1_1_adjust_grace_x_pos_functor_1ac86fba04e31891e7533433349aab8655">VisitScore</reimplementedby>
         <reimplementedby refid="classvrv_1_1_prepare_data_initialization_functor_1a488533e1143dd54c9c5bb3919ff41874">VisitScore</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_layers_functor_1a7027ae4772b8e646085fd7a7e740619e">VisitScore</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_transpose_functor_1a0d455bfda2f1a3ed128174c05bba6ed7">VisitScore</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_x_pos_functor_1add68a0955f70b0d2e2b5dea685d8728c">VisitScore</reimplementedby>
         <reimplementedby refid="classvrv_1_1_cast_off_pages_functor_1a2d43f1a3ead2e81d7a68bb60451b9dce">VisitScore</reimplementedby>
         <reimplementedby refid="classvrv_1_1_score_def_optimize_functor_1a348f90179a1c4f53e3dfa6dca5adfcee">VisitScore</reimplementedby>
@@ -1945,6 +1959,7 @@
         <argsstring>(Harm *harm)</argsstring>
         <name>VisitHarm</name>
         <reimplementedby refid="classvrv_1_1_adjust_harm_grps_spacing_functor_1a2e95da1160fffbace81dbf125b6e0636">VisitHarm</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_transpose_functor_1aa3089376c54fe4275a3aadc2a39b4b9c">VisitHarm</reimplementedby>
         <reimplementedby refid="classvrv_1_1_prepare_floating_grps_functor_1a0af39cdeddd5a20a17e0bbbf0446036c">VisitHarm</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_harm" kindref="compound">Harm</ref> *</type>
@@ -2293,6 +2308,7 @@
         <name>VisitTempo</name>
         <reimplementedby refid="classvrv_1_1_adjust_tempo_functor_1a565160368bb300d434afa1f07204409a">VisitTempo</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_data_functor_1a18d15b8c78ff76ad8dd061cb8805ed90">VisitTempo</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_init_max_measure_duration_functor_1a92634f66fd30728b6ebf4c14df24a8c2">VisitTempo</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_tempo" kindref="compound">Tempo</ref> *</type>
           <declname>tempo</declname>
@@ -2327,6 +2343,7 @@
         <definition>virtual FunctorCode vrv::FunctorInterface::VisitTie</definition>
         <argsstring>(Tie *tie)</argsstring>
         <name>VisitTie</name>
+        <reimplementedby refid="classvrv_1_1_init_timemap_ties_functor_1a2c0dc03488fdad970feffa09564fca28">VisitTie</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_tie" kindref="compound">Tie</ref> *</type>
           <declname>tie</declname>
@@ -2681,6 +2698,7 @@
         <definition>virtual FunctorCode vrv::FunctorInterface::VisitChordEnd</definition>
         <argsstring>(Chord *chord)</argsstring>
         <name>VisitChordEnd</name>
+        <reimplementedby refid="classvrv_1_1_init_onset_offset_functor_1abda0f4bd90ea5623ce1a4cfa366dd0f1">VisitChordEnd</reimplementedby>
         <reimplementedby refid="classvrv_1_1_convert_markup_analytical_functor_1afa2a81b5bcd0cf524eb6ad9ece91dccf">VisitChordEnd</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_chord" kindref="compound">Chord</ref> *</type>
@@ -3024,6 +3042,7 @@
         <argsstring>(KeySig *keySig)</argsstring>
         <name>VisitKeySig</name>
         <reimplementedby refid="classvrv_1_1_prepare_data_initialization_functor_1ac4c1c715d23dee33bf36cb924168e715">VisitKeySig</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_transpose_functor_1a9b56768ac42ca27bea1ee6cd5b4394a2">VisitKeySig</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_key_sig" kindref="compound">KeySig</ref> *</type>
           <declname>keySig</declname>
@@ -3068,9 +3087,11 @@
         <reimplementedby refid="classvrv_1_1_adjust_beams_functor_1a274582ef9f33c5c344d3962086fd0035">VisitLayerElement</reimplementedby>
         <reimplementedby refid="classvrv_1_1_cache_horizontal_layout_functor_1aae5c328bd53b880a558f2b234833f641">VisitLayerElement</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_layers_functor_1a19bf2bd0c9293d5e8b5a287e82bcdd28">VisitLayerElement</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_init_onset_offset_functor_1ae0b57d4f5bae34fd751560b5d97a708c">VisitLayerElement</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_data_functor_1a53d1c2de155ce9d56e59fee73a4c69be">VisitLayerElement</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_x_pos_functor_1aa2e11c5b55a8f99e5e0c5757756aea41">VisitLayerElement</reimplementedby>
         <reimplementedby refid="classvrv_1_1_prepare_cue_size_functor_1a4b58a44a92cc3c58dbd74185f60b0328">VisitLayerElement</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_init_max_measure_duration_functor_1ae4e84866d0dbb77582dfa9f8cedb1b5a">VisitLayerElement</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_horizontal_alignment_functor_1a425b4c1d4d8cfff2c320eb40592860b9">VisitLayerElement</reimplementedby>
         <reimplementedby refid="classvrv_1_1_prepare_cross_staff_functor_1abc1df2ab9a1606474cce09c77c3752ad">VisitLayerElement</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_vertical_alignment_functor_1aab3d6400609c5dae2e965071f5114ba1">VisitLayerElement</reimplementedby>
@@ -3535,6 +3556,7 @@
         <reimplementedby refid="classvrv_1_1_calc_artic_functor_1a8919d64ce2fa281be64ea47e0d3630c5">VisitNote</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_artic_functor_1a706a5d3fec34623470d8828dab5ec5ea">VisitNote</reimplementedby>
         <reimplementedby refid="classvrv_1_1_calc_stem_functor_1a5b8ec8f840187dce0507c516251d8e44">VisitNote</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_transpose_functor_1aa6ab32b49dd877f9728e0cd401024516">VisitNote</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_data_functor_1a09dad5f775bbe7baeda902ac2c21fa41">VisitNote</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_horizontal_alignment_functor_1a222ad8f5d5a9cfb021219fb284eb7ff3">VisitNote</reimplementedby>
         <reimplementedby refid="classvrv_1_1_convert_markup_analytical_functor_1a8f0583a45930267049131f0b2c99035c">VisitNote</reimplementedby>
@@ -3644,6 +3666,7 @@
         <name>VisitRest</name>
         <reimplementedby refid="classvrv_1_1_calc_dots_functor_1afb9849ed7f8a85f06eaf0ecb9279fc7a">VisitRest</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_beams_functor_1a621a0dfc1a4dcff4abffb9a228e1ca85">VisitRest</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_transpose_functor_1a57f987d281efcb6837e15fb1b16cadab">VisitRest</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_data_functor_1a61c902ab708a7c4b85cdc54a44de391c">VisitRest</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_horizontal_alignment_functor_1a1dbfab5c6389e8db64bf24385ee64edd">VisitRest</reimplementedby>
         <reimplementedby refid="classvrv_1_1_convert_markup_analytical_functor_1a3b8b7091855c83a1194fa3d1ce723834">VisitRest</reimplementedby>
@@ -3877,6 +3900,7 @@
         <definition>virtual FunctorCode vrv::FunctorInterface::VisitTabGrpEnd</definition>
         <argsstring>(TabGrp *tabGrp)</argsstring>
         <name>VisitTabGrpEnd</name>
+        <reimplementedby refid="classvrv_1_1_init_onset_offset_functor_1ae0a8c376156ef302372f99265aa41785">VisitTabGrpEnd</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_tab_grp" kindref="compound">TabGrp</ref> *</type>
           <declname>tabGrp</declname>
@@ -4831,13 +4855,13 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="86">
+      <node id="90">
         <label>vrv::ReplaceDrawingValuesInStaffDefFunctor</label>
         <link refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="82">
+      <node id="86">
         <label>vrv::PrepareTimePointingFunctor</label>
         <link refid="classvrv_1_1_prepare_time_pointing_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -4855,7 +4879,7 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="94">
+      <node id="98">
         <label>vrv::SetStaffDefRedrawFlagsFunctor</label>
         <link refid="classvrv_1_1_set_staff_def_redraw_flags_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -4867,7 +4891,7 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="76">
+      <node id="80">
         <label>vrv::PrepareLyricsFunctor</label>
         <link refid="classvrv_1_1_prepare_lyrics_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -4909,13 +4933,13 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="93">
+      <node id="97">
         <label>vrv::SetCautionaryScoreDefFunctor</label>
         <link refid="classvrv_1_1_set_cautionary_score_def_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="87">
+      <node id="91">
         <label>vrv::ResetDataFunctor</label>
         <link refid="classvrv_1_1_reset_data_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -4927,7 +4951,7 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="81">
+      <node id="85">
         <label>vrv::PrepareStaffCurrentTimeSpanningFunctor</label>
         <link refid="classvrv_1_1_prepare_staff_current_time_spanning_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -4939,13 +4963,13 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="68">
+      <node id="72">
         <label>vrv::PrepareBeamSpanElementsFunctor</label>
         <link refid="classvrv_1_1_prepare_beam_span_elements_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="92">
+      <node id="96">
         <label>vrv::ScoreDefUnsetCurrentFunctor</label>
         <link refid="classvrv_1_1_score_def_unset_current_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -4963,19 +4987,13 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2">
-        <label>vrv::MutableFunctor</label>
-        <link refid="classvrv_1_1_mutable_functor"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="80">
+      <node id="84">
         <label>vrv::PrepareRehPositionFunctor</label>
         <link refid="classvrv_1_1_prepare_reh_position_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="73">
+      <node id="77">
         <label>vrv::PrepareFacsimileFunctor</label>
         <link refid="classvrv_1_1_prepare_facsimile_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5011,7 +5029,7 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="71">
+      <node id="75">
         <label>vrv::PrepareDelayedTurnsFunctor</label>
         <link refid="classvrv_1_1_prepare_delayed_turns_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5029,7 +5047,7 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="69">
+      <node id="73">
         <label>vrv::PrepareCrossStaffFunctor</label>
         <link refid="classvrv_1_1_prepare_cross_staff_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5053,6 +5071,12 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="68">
+        <label>vrv::InitMaxMeasureDurationFunctor</label>
+        <link refid="classvrv_1_1_init_max_measure_duration_functor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="26">
         <label>vrv::AdjustStaffOverlapFunctor</label>
         <link refid="classvrv_1_1_adjust_staff_overlap_functor"/>
@@ -5071,7 +5095,7 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="85">
+      <node id="89">
         <label>vrv::ReorderByXPosFunctor</label>
         <link refid="classvrv_1_1_reorder_by_x_pos_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5089,7 +5113,7 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="79">
+      <node id="83">
         <label>vrv::PreparePointersByLayerFunctor</label>
         <link refid="classvrv_1_1_prepare_pointers_by_layer_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5101,19 +5125,19 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="89">
+      <node id="93">
         <label>vrv::ResetVerticalAlignmentFunctor</label>
         <link refid="classvrv_1_1_reset_vertical_alignment_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="88">
+      <node id="92">
         <label>vrv::ResetHorizontalAlignmentFunctor</label>
         <link refid="classvrv_1_1_reset_horizontal_alignment_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="66">
+      <node id="67">
         <label>vrv::FindAllReferencedObjectsFunctor</label>
         <link refid="classvrv_1_1_find_all_referenced_objects_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5155,25 +5179,31 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="65">
+      <node id="66">
         <label>vrv::FindAllByComparisonFunctor</label>
         <link refid="classvrv_1_1_find_all_by_comparison_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="67">
+      <node id="71">
         <label>vrv::PrepareAltSymFunctor</label>
         <link refid="classvrv_1_1_prepare_alt_sym_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="91">
+      <node id="95">
         <label>vrv::ScoreDefSetGrpSymFunctor</label>
         <link refid="classvrv_1_1_score_def_set_grp_sym_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="72">
+      <node id="69">
+        <label>vrv::InitOnsetOffsetFunctor</label>
+        <link refid="classvrv_1_1_init_onset_offset_functor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="76">
         <label>vrv::PrepareDurationFunctor</label>
         <link refid="classvrv_1_1_prepare_duration_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5182,6 +5212,12 @@
       <node id="12">
         <label>vrv::AdjustArpegFunctor</label>
         <link refid="classvrv_1_1_adjust_arpeg_functor"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>vrv::TransposeFunctor</label>
+        <link refid="classvrv_1_1_transpose_functor"/>
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
@@ -5213,7 +5249,7 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="90">
+      <node id="94">
         <label>vrv::SaveFunctor</label>
         <link refid="classvrv_1_1_save_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5249,7 +5285,7 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="74">
+      <node id="78">
         <label>vrv::PrepareLayerElementPartsFunctor</label>
         <link refid="classvrv_1_1_prepare_layer_element_parts_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5267,7 +5303,7 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="70">
+      <node id="74">
         <label>vrv::PrepareCueSizeFunctor</label>
         <link refid="classvrv_1_1_prepare_cue_size_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5279,7 +5315,7 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="83">
+      <node id="87">
         <label>vrv::PrepareTimeSpanningFunctor</label>
         <link refid="classvrv_1_1_prepare_time_spanning_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5297,7 +5333,7 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="75">
+      <node id="79">
         <label>vrv::PrepareLinkingFunctor</label>
         <link refid="classvrv_1_1_prepare_linking_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5306,6 +5342,12 @@
       <node id="8">
         <label>vrv::ConvertToPageBasedFunctor</label>
         <link refid="classvrv_1_1_convert_to_page_based_functor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>vrv::InitTimemapTiesFunctor</label>
+        <link refid="classvrv_1_1_init_timemap_ties_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
@@ -5357,13 +5399,13 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="77">
+      <node id="81">
         <label>vrv::PrepareMilestonesFunctor</label>
         <link refid="classvrv_1_1_prepare_milestones_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="78">
+      <node id="82">
         <label>vrv::PreparePlistFunctor</label>
         <link refid="classvrv_1_1_prepare_plist_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5375,13 +5417,19 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="84">
+      <node id="2">
+        <label>vrv::Functor</label>
+        <link refid="classvrv_1_1_functor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="88">
         <label>vrv::PrepareTimestampsFunctor</label>
         <link refid="classvrv_1_1_prepare_timestamps_functor"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="95">
+      <node id="99">
         <label>vrv::UnCastOffFunctor</label>
         <link refid="classvrv_1_1_un_cast_off_functor"/>
         <childnode refid="2" relation="public-inheritance">

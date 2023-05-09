@@ -978,8 +978,12 @@ var hierarchy =
         [ "vrv::FindNextChildByComparisonFunctor", "classvrv_1_1_find_next_child_by_comparison_functor.html", null ],
         [ "vrv::FindPreviousChildByComparisonFunctor", "classvrv_1_1_find_previous_child_by_comparison_functor.html", null ],
         [ "vrv::FindSpannedLayerElementsFunctor", "classvrv_1_1_find_spanned_layer_elements_functor.html", null ],
+        [ "vrv::GenerateFeaturesFunctor", "classvrv_1_1_generate_features_functor.html", null ],
+        [ "vrv::GenerateMIDIFunctor", "classvrv_1_1_generate_m_i_d_i_functor.html", null ],
+        [ "vrv::GenerateTimemapFunctor", "classvrv_1_1_generate_timemap_functor.html", null ],
         [ "vrv::GetAlignmentLeftRightFunctor", "classvrv_1_1_get_alignment_left_right_functor.html", null ],
         [ "vrv::GetRelativeLayerElementFunctor", "classvrv_1_1_get_relative_layer_element_functor.html", null ],
+        [ "vrv::InitMIDIFunctor", "classvrv_1_1_init_m_i_d_i_functor.html", null ],
         [ "vrv::InitProcessingListsFunctor", "classvrv_1_1_init_processing_lists_functor.html", null ],
         [ "vrv::LayerElementsInTimeSpanFunctor", "classvrv_1_1_layer_elements_in_time_span_functor.html", null ],
         [ "vrv::LayersInTimeSpanFunctor", "classvrv_1_1_layers_in_time_span_functor.html", null ]
@@ -1008,10 +1012,9 @@ var hierarchy =
     [ "vrv::FeatureExtractor", "classvrv_1_1_feature_extractor.html", null ],
     [ "vrv::Filters", "classvrv_1_1_filters.html", null ],
     [ "vrv::FontInfo", "classvrv_1_1_font_info.html", null ],
-    [ "vrv::Functor", "classvrv_1_1_functor.html", null ],
     [ "vrv::FunctorBase", "classvrv_1_1_functor_base.html", [
       [ "vrv::ConstFunctor", "classvrv_1_1_const_functor.html", null ],
-      [ "vrv::MutableFunctor", "classvrv_1_1_mutable_functor.html", [
+      [ "vrv::Functor", "classvrv_1_1_functor.html", [
         [ "vrv::AdjustXOverflowFunctor", "classvrv_1_1_adjust_x_overflow_functor.html", null ],
         [ "vrv::AdjustXRelForTranscriptionFunctor", "classvrv_1_1_adjust_x_rel_for_transcription_functor.html", null ],
         [ "vrv::ApplyPPUFactorFunctor", "classvrv_1_1_apply_p_p_u_factor_functor.html", null ],
@@ -1073,10 +1076,14 @@ var hierarchy =
           [ "vrv::PrepareRptFunctor", "classvrv_1_1_prepare_rpt_functor.html", null ],
           [ "vrv::ScoreDefOptimizeFunctor", "classvrv_1_1_score_def_optimize_functor.html", null ],
           [ "vrv::ScoreDefSetCurrentFunctor", "classvrv_1_1_score_def_set_current_functor.html", null ],
-          [ "vrv::ScoreDefSetCurrentPageFunctor", "classvrv_1_1_score_def_set_current_page_functor.html", null ]
+          [ "vrv::ScoreDefSetCurrentPageFunctor", "classvrv_1_1_score_def_set_current_page_functor.html", null ],
+          [ "vrv::TransposeFunctor", "classvrv_1_1_transpose_functor.html", null ]
         ] ],
         [ "vrv::FindAllByComparisonFunctor", "classvrv_1_1_find_all_by_comparison_functor.html", null ],
         [ "vrv::FindAllReferencedObjectsFunctor", "classvrv_1_1_find_all_referenced_objects_functor.html", null ],
+        [ "vrv::InitMaxMeasureDurationFunctor", "classvrv_1_1_init_max_measure_duration_functor.html", null ],
+        [ "vrv::InitOnsetOffsetFunctor", "classvrv_1_1_init_onset_offset_functor.html", null ],
+        [ "vrv::InitTimemapTiesFunctor", "classvrv_1_1_init_timemap_ties_functor.html", null ],
         [ "vrv::PrepareAltSymFunctor", "classvrv_1_1_prepare_alt_sym_functor.html", null ],
         [ "vrv::PrepareBeamSpanElementsFunctor", "classvrv_1_1_prepare_beam_span_elements_functor.html", null ],
         [ "vrv::PrepareCrossStaffFunctor", "classvrv_1_1_prepare_cross_staff_functor.html", null ],
@@ -1109,18 +1116,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "vrv::FunctorInterface", "classvrv_1_1_functor_interface.html", [
-      [ "vrv::MutableFunctor", "classvrv_1_1_mutable_functor.html", null ]
-    ] ],
-    [ "vrv::FunctorParams", "classvrv_1_1_functor_params.html", [
-      [ "vrv::FindLayerIDWithinStaffDefParams", "classvrv_1_1_find_layer_i_d_within_staff_def_params.html", null ],
-      [ "vrv::FunctorDocParams", "classvrv_1_1_functor_doc_params.html", null ],
-      [ "vrv::GenerateFeaturesParams", "classvrv_1_1_generate_features_params.html", null ],
-      [ "vrv::GenerateMIDIParams", "classvrv_1_1_generate_m_i_d_i_params.html", null ],
-      [ "vrv::GenerateTimemapParams", "classvrv_1_1_generate_timemap_params.html", null ],
-      [ "vrv::InitMaxMeasureDurationParams", "classvrv_1_1_init_max_measure_duration_params.html", null ],
-      [ "vrv::InitMIDIParams", "classvrv_1_1_init_m_i_d_i_params.html", null ],
-      [ "vrv::InitOnsetOffsetParams", "classvrv_1_1_init_onset_offset_params.html", null ],
-      [ "vrv::TransposeParams", "classvrv_1_1_transpose_params.html", null ]
+      [ "vrv::Functor", "classvrv_1_1_functor.html", null ]
     ] ],
     [ "vrv::Glyph", "classvrv_1_1_glyph.html", null ],
     [ "vrv::HumdrumSignifiers", "classvrv_1_1_humdrum_signifiers.html", null ],

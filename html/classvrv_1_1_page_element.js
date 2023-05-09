@@ -5,8 +5,8 @@ var classvrv_1_1_page_element =
     [ "PageElement", "classvrv_1_1_page_element.html#a410852aa2c02b421ac8a89fdf4bb3a03", null ],
     [ "~PageElement", "classvrv_1_1_page_element.html#a2e1e380ce458728321e03b8e709c1a7f", null ],
     [ "Accept", "classvrv_1_1_page_element.html#aa264a8518d4dde3c23984a022fddca7b", null ],
-    [ "Accept", "classvrv_1_1_page_element.html#a8c559db21789112d44c764a8f0de170a", null ],
+    [ "Accept", "classvrv_1_1_page_element.html#a01f291eefdc4e1b6f182a78a36752deb", null ],
     [ "AcceptEnd", "classvrv_1_1_page_element.html#a4fbe872385b62ade52ed9c86c072044b", null ],
-    [ "AcceptEnd", "classvrv_1_1_page_element.html#a9d1ed0a4243378f78d39e26ba28d8219", null ],
+    [ "AcceptEnd", "classvrv_1_1_page_element.html#afdee31d0905ac563220edd5dd64d8dbb", null ],
     [ "Reset", "classvrv_1_1_page_element.html#a803fda2523fa03c341a47f6c7a713464", null ]
 ];

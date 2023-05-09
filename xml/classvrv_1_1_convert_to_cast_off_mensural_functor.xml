@@ -371,14 +371,6 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3">
-        <label>vrv::MutableFunctor</label>
-        <link refid="classvrv_1_1_mutable_functor"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-      </node>
       <node id="2">
         <label>vrv::DocFunctor</label>
         <link refid="classvrv_1_1_doc_functor"/>
@@ -388,6 +380,14 @@
       <node id="5">
         <label>vrv::FunctorInterface</label>
         <link refid="classvrv_1_1_functor_interface"/>
+      </node>
+      <node id="3">
+        <label>vrv::Functor</label>
+        <link refid="classvrv_1_1_functor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
@@ -496,14 +496,6 @@
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="3">
-        <label>vrv::MutableFunctor</label>
-        <link refid="classvrv_1_1_mutable_functor"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-      </node>
       <node id="26">
         <label>AttMmTempo</label>
       </node>
@@ -592,6 +584,14 @@
         <label>vrv::ObjectListInterface</label>
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
+      <node id="3">
+        <label>vrv::Functor</label>
+        <link refid="classvrv_1_1_functor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="9">
         <label>vrv::Page</label>
         <link refid="classvrv_1_1_page"/>
@@ -621,6 +621,7 @@
       <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a33a5e86f2d6e453476177dd24c177e3d" prot="public" virt="non-virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>ClearStaffNs</name></member>
       <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a42ea73aad58ebc2de9e5f15346efdb80" prot="public" virt="non-virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>ConvertToCastOffMensuralFunctor</name></member>
       <member refid="classvrv_1_1_doc_functor_1a25eb1412bf1c48280933292b0dd26c39" prot="public" virt="non-virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>DocFunctor</name></member>
+      <member refid="classvrv_1_1_functor_1a49b8e700f8f3b3b232d6a7e558438908" prot="public" virt="non-virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>Functor</name></member>
       <member refid="classvrv_1_1_functor_base_1a45d9ca7642da874e18b1d20a086fa015" prot="public" virt="non-virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>FunctorBase</name></member>
       <member refid="classvrv_1_1_functor_interface_1a7a1d67dea0f876f2a8dc736204ec6603" prot="public" virt="non-virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>FunctorInterface</name></member>
       <member refid="classvrv_1_1_functor_base_1a7ed4d14dc996ffe7a86231566fd9e06b" prot="public" virt="non-virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>GetCode</name></member>
@@ -639,7 +640,6 @@
       <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a927e28dc5fbd14f89960fb244a0957ed" prot="private" virt="non-virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>m_targetStaff</name></member>
       <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a1aef63b2394ba9c29878fb7216322381" prot="private" virt="non-virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>m_targetSubSystem</name></member>
       <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a72cc308eda7f7e625b049e816946af58" prot="private" virt="non-virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>m_targetSystem</name></member>
-      <member refid="classvrv_1_1_mutable_functor_1af3b366469f953a3d1951bdba899d3008" prot="public" virt="non-virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>MutableFunctor</name></member>
       <member refid="classvrv_1_1_functor_base_1a08c690f2a45f5c15e38c86f1d461f02c" prot="public" virt="non-virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>ResetCode</name></member>
       <member refid="classvrv_1_1_functor_base_1af34204cf6852d525df006eb588cb2111" prot="public" virt="non-virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>SetCode</name></member>
       <member refid="classvrv_1_1_functor_base_1a5f862682a812021cc7689ba3fe9695bc" prot="public" virt="non-virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>SetDirection</name></member>
@@ -904,9 +904,9 @@
       <member refid="classvrv_1_1_functor_interface_1a20218b9d70b35e12dc46eda922190863" prot="public" virt="virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>VisitVerseEnd</name></member>
       <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1ae765d365222ceb88a5bcc80997111970" prot="public" virt="virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>~ConvertToCastOffMensuralFunctor</name></member>
       <member refid="classvrv_1_1_doc_functor_1ad6fb06cf3e5f5cb509025254c848ddb0" prot="public" virt="virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>~DocFunctor</name></member>
+      <member refid="classvrv_1_1_functor_1a2459207d9593c751f7594d3029305290" prot="public" virt="virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>~Functor</name></member>
       <member refid="classvrv_1_1_functor_base_1a89f1657d898054b2608bf25dfe8a2162" prot="public" virt="virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>~FunctorBase</name></member>
       <member refid="classvrv_1_1_functor_interface_1aa16887fffa2409e745e0171a882664bf" prot="public" virt="virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>~FunctorInterface</name></member>
-      <member refid="classvrv_1_1_mutable_functor_1a020ec58aa0b8ffe2a76046bfbbd0aa0d" prot="public" virt="virtual"><scope>vrv::ConvertToCastOffMensuralFunctor</scope><name>~MutableFunctor</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

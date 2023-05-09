@@ -242,14 +242,6 @@
         <label>vrv::FunctorBase</label>
         <link refid="classvrv_1_1_functor_base"/>
       </node>
-      <node id="3">
-        <label>vrv::MutableFunctor</label>
-        <link refid="classvrv_1_1_mutable_functor"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-      </node>
       <node id="2">
         <label>vrv::DocFunctor</label>
         <link refid="classvrv_1_1_doc_functor"/>
@@ -264,6 +256,14 @@
         <label>vrv::ScoreDefOptimizeFunctor</label>
         <link refid="classvrv_1_1_score_def_optimize_functor"/>
         <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vrv::Functor</label>
+        <link refid="classvrv_1_1_functor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
@@ -367,14 +367,6 @@
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="3">
-        <label>vrv::MutableFunctor</label>
-        <link refid="classvrv_1_1_mutable_functor"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-      </node>
       <node id="26">
         <label>AttMmTempo</label>
       </node>
@@ -469,6 +461,14 @@
         <label>vrv::ObjectListInterface</label>
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
+      <node id="3">
+        <label>vrv::Functor</label>
+        <link refid="classvrv_1_1_functor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="9">
         <label>vrv::Page</label>
         <link refid="classvrv_1_1_page"/>
@@ -495,6 +495,7 @@
     <location file="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" line="169" column="48" bodyfile="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" bodystart="169" bodyend="213"/>
     <listofallmembers>
       <member refid="classvrv_1_1_doc_functor_1a25eb1412bf1c48280933292b0dd26c39" prot="public" virt="non-virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>DocFunctor</name></member>
+      <member refid="classvrv_1_1_functor_1a49b8e700f8f3b3b232d6a7e558438908" prot="public" virt="non-virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>Functor</name></member>
       <member refid="classvrv_1_1_functor_base_1a45d9ca7642da874e18b1d20a086fa015" prot="public" virt="non-virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>FunctorBase</name></member>
       <member refid="classvrv_1_1_functor_interface_1a7a1d67dea0f876f2a8dc736204ec6603" prot="public" virt="non-virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>FunctorInterface</name></member>
       <member refid="classvrv_1_1_functor_base_1a7ed4d14dc996ffe7a86231566fd9e06b" prot="public" virt="non-virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>GetCode</name></member>
@@ -508,7 +509,6 @@
       <member refid="classvrv_1_1_score_def_optimize_functor_1a2478d414d3657023f5892c6728e60f16" prot="private" virt="non-virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>m_firstScoreDef</name></member>
       <member refid="classvrv_1_1_score_def_optimize_functor_1a8d29e40fab373e8ce05b3e4b480d0828" prot="private" virt="non-virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>m_hasFermata</name></member>
       <member refid="classvrv_1_1_score_def_optimize_functor_1a04bb8dd08c67a304f274ac7cc9eba2a3" prot="private" virt="non-virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>m_hasTempo</name></member>
-      <member refid="classvrv_1_1_mutable_functor_1af3b366469f953a3d1951bdba899d3008" prot="public" virt="non-virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>MutableFunctor</name></member>
       <member refid="classvrv_1_1_functor_base_1a08c690f2a45f5c15e38c86f1d461f02c" prot="public" virt="non-virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>ResetCode</name></member>
       <member refid="classvrv_1_1_score_def_optimize_functor_1af071203531946506dd05ef29c6fa0184" prot="public" virt="non-virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>ScoreDefOptimizeFunctor</name></member>
       <member refid="classvrv_1_1_functor_base_1af34204cf6852d525df006eb588cb2111" prot="public" virt="non-virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>SetCode</name></member>
@@ -773,9 +773,9 @@
       <member refid="classvrv_1_1_functor_interface_1af03e9bd745c37f4f9dee83f92183e081" prot="public" virt="virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>VisitVerse</name></member>
       <member refid="classvrv_1_1_functor_interface_1a20218b9d70b35e12dc46eda922190863" prot="public" virt="virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>VisitVerseEnd</name></member>
       <member refid="classvrv_1_1_doc_functor_1ad6fb06cf3e5f5cb509025254c848ddb0" prot="public" virt="virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>~DocFunctor</name></member>
+      <member refid="classvrv_1_1_functor_1a2459207d9593c751f7594d3029305290" prot="public" virt="virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>~Functor</name></member>
       <member refid="classvrv_1_1_functor_base_1a89f1657d898054b2608bf25dfe8a2162" prot="public" virt="virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>~FunctorBase</name></member>
       <member refid="classvrv_1_1_functor_interface_1aa16887fffa2409e745e0171a882664bf" prot="public" virt="virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>~FunctorInterface</name></member>
-      <member refid="classvrv_1_1_mutable_functor_1a020ec58aa0b8ffe2a76046bfbbd0aa0d" prot="public" virt="virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>~MutableFunctor</name></member>
       <member refid="classvrv_1_1_score_def_optimize_functor_1a5c45eee9cc4a2e5fb9865c851caf63ae" prot="public" virt="virtual"><scope>vrv::ScoreDefOptimizeFunctor</scope><name>~ScoreDefOptimizeFunctor</name></member>
     </listofallmembers>
   </compounddef>
