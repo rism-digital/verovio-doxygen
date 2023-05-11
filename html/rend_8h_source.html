@@ -109,43 +109,46 @@ $(document).ready(function(){initNavTree('rend_8h_source.html',''); initResizabl
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;             <span class="keyword">public</span> <a class="code" href="classvrv_1_1_area_pos_interface.html">AreaPosInterface</a>,</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;             <span class="keyword">public</span> AttColor,</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;             <span class="keyword">public</span> AttLang,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;             <span class="keyword">public</span> AttTextRendition,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;             <span class="keyword">public</span> AttTypography,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;             <span class="keyword">public</span> AttWhitespace {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classvrv_1_1_rend.html">Rend</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_rend.html">Rend</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classvrv_1_1_rend.html#a9bfa5c6c915b185fa609dd7bb65aa1d2">   39</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_rend.html#a9bfa5c6c915b185fa609dd7bb65aa1d2">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_rend.html">Rend</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_rend.html#a90b90ee331c5173ba0a5e9e6b8122c3e">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Rend&quot;</span>; }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    AreaPosInterface *GetAreaPosInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>AreaPosInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">const</span> AreaPosInterface *GetAreaPosInterface()<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>AreaPosInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_rend.html#a70916b87437664d19d48843882e20de6">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_rend.html#a16b51515b24e9a30fb1fd5fde858f117">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_rend.html#a16b51515b24e9a30fb1fd5fde858f117">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;             <span class="keyword">public</span> AttNNumberLike,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;             <span class="keyword">public</span> AttTextRendition,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;             <span class="keyword">public</span> AttTypography,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;             <span class="keyword">public</span> AttWhitespace {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classvrv_1_1_rend.html">Rend</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_rend.html">Rend</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classvrv_1_1_rend.html#a9bfa5c6c915b185fa609dd7bb65aa1d2">   40</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_rend.html#a9bfa5c6c915b185fa609dd7bb65aa1d2">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_rend.html">Rend</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_rend.html#a90b90ee331c5173ba0a5e9e6b8122c3e">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Rend&quot;</span>; }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    AreaPosInterface *GetAreaPosInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>AreaPosInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">const</span> AreaPosInterface *GetAreaPosInterface()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>AreaPosInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_rend.html#a70916b87437664d19d48843882e20de6">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_rend.html#a1647c69d39d17e4ccb5cbce4f86566ef">HasEnclosure</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_rend.html#a16b51515b24e9a30fb1fd5fde858f117">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_rend.html#a16b51515b24e9a30fb1fd5fde858f117">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_rend_html_a70916b87437664d19d48843882e20de6"><div class="ttname"><a href="classvrv_1_1_rend.html#a70916b87437664d19d48843882e20de6">vrv::Rend::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Add an element (text, rend.</div></div>
@@ -153,14 +156,15 @@ $(document).ready(function(){initNavTree('rend_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:60</div></div>
 <div class="ttc" id="aclassvrv_1_1_rend_html_a90b90ee331c5173ba0a5e9e6b8122c3e"><div class="ttname"><a href="classvrv_1_1_rend.html#a90b90ee331c5173ba0a5e9e6b8122c3e">vrv::Rend::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_area_pos_interface_html"><div class="ttname"><a href="classvrv_1_1_area_pos_interface.html">vrv::AreaPosInterface</a></div><div class="ttdoc">This class is an interface for elements implementing vertically and horizontally positionned elements...</div><div class="ttdef"><b>Definition:</b> areaposinterface.h:26</div></div>
-<div class="ttc" id="aclassvrv_1_1_rend_html_a9bfa5c6c915b185fa609dd7bb65aa1d2"><div class="ttname"><a href="classvrv_1_1_rend.html#a9bfa5c6c915b185fa609dd7bb65aa1d2">vrv::Rend::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> rend.h:39</div></div>
+<div class="ttc" id="aclassvrv_1_1_rend_html_a1647c69d39d17e4ccb5cbce4f86566ef"><div class="ttname"><a href="classvrv_1_1_rend.html#a1647c69d39d17e4ccb5cbce4f86566ef">vrv::Rend::HasEnclosure</a></div><div class="ttdeci">bool HasEnclosure() const</div><div class="ttdoc">Check if rend has an enclosing.</div></div>
+<div class="ttc" id="aclassvrv_1_1_rend_html_a9bfa5c6c915b185fa609dd7bb65aa1d2"><div class="ttname"><a href="classvrv_1_1_rend.html#a9bfa5c6c915b185fa609dd7bb65aa1d2">vrv::Rend::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> rend.h:40</div></div>
 <div class="ttc" id="aclassvrv_1_1_rend_html_a16b51515b24e9a30fb1fd5fde858f117"><div class="ttname"><a href="classvrv_1_1_rend.html#a16b51515b24e9a30fb1fd5fde858f117">vrv::Rend::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_rend_html"><div class="ttname"><a href="classvrv_1_1_rend.html">vrv::Rend</a></div><div class="ttdoc">This class models the MEI &lt;rend&gt; element.</div><div class="ttdef"><b>Definition:</b> rend.h:24</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>rend.h</b></li>
-    <li class="footer">Generated on Wed May 10 2023 06:39:48 for Verovio by
+    <li class="footer">Generated on Wed May 10 2023 06:44:18 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

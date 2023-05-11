@@ -544,6 +544,7 @@ var hierarchy =
       [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
       [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
       [ "vrv::Pb", "classvrv_1_1_pb.html", null ],
+      [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
       [ "vrv::Sb", "classvrv_1_1_sb.html", null ],
       [ "vrv::Score", "classvrv_1_1_score.html", null ],
       [ "vrv::Section", "classvrv_1_1_section.html", null ],
