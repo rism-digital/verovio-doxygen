@@ -93,6 +93,7 @@ var annotated_dup =
       [ "ClassRegistrar", "classvrv_1_1_class_registrar.html", "classvrv_1_1_class_registrar" ],
       [ "Clef", "classvrv_1_1_clef.html", "classvrv_1_1_clef" ],
       [ "ClosestBB", "structvrv_1_1_closest_b_b.html", "structvrv_1_1_closest_b_b" ],
+      [ "CollectAndProcess", "classvrv_1_1_collect_and_process.html", "classvrv_1_1_collect_and_process" ],
       [ "Comparison", "classvrv_1_1_comparison.html", "classvrv_1_1_comparison" ],
       [ "ConstFunctor", "classvrv_1_1_const_functor.html", "classvrv_1_1_const_functor" ],
       [ "ConstFunctorInterface", "classvrv_1_1_const_functor_interface.html", "classvrv_1_1_const_functor_interface" ],

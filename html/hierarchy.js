@@ -942,6 +942,12 @@ var hierarchy =
     [ "vrv::Brush", "classvrv_1_1_brush.html", null ],
     [ "vrv::ClassRegistrar< T >", "classvrv_1_1_class_registrar.html", null ],
     [ "vrv::ClosestBB", "structvrv_1_1_closest_b_b.html", null ],
+    [ "vrv::CollectAndProcess", "classvrv_1_1_collect_and_process.html", [
+      [ "vrv::PrepareDelayedTurnsFunctor", "classvrv_1_1_prepare_delayed_turns_functor.html", null ],
+      [ "vrv::PrepareLinkingFunctor", "classvrv_1_1_prepare_linking_functor.html", null ],
+      [ "vrv::PreparePlistFunctor", "classvrv_1_1_prepare_plist_functor.html", null ],
+      [ "vrv::PrepareTimeSpanningFunctor", "classvrv_1_1_prepare_time_spanning_functor.html", null ]
+    ] ],
     [ "vrv::Comparison", "classvrv_1_1_comparison.html", [
       [ "vrv::ClassIdComparison", "classvrv_1_1_class_id_comparison.html", [
         [ "vrv::AttDurExtremeComparison", "classvrv_1_1_att_dur_extreme_comparison.html", null ],
