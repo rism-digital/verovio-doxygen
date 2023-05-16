@@ -6,18 +6,14 @@
     <includes refid="findlayerelementsfunctor_8h" local="no">findlayerelementsfunctor.h</includes>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors</header>
-      <memberdef kind="function" id="classvrv_1_1_get_relative_layer_element_functor_1adb7c004e47591fd7740236a61a962e51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_get_relative_layer_element_functor_1abaea4c1fa74d0fb61712a31e24821f57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>vrv::GetRelativeLayerElementFunctor::GetRelativeLayerElementFunctor</definition>
-        <argsstring>(int elementIndex, bool searchDirection, bool anotherLayer)</argsstring>
+        <argsstring>(int elementIndex, bool anotherLayer)</argsstring>
         <name>GetRelativeLayerElementFunctor</name>
         <param>
           <type>int</type>
           <declname>elementIndex</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>searchDirection</declname>
         </param>
         <param>
           <type>bool</type>
@@ -92,19 +88,6 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/findlayerelementsfunctor.h" line="275" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/findlayerelementsfunctor.h" bodystart="275" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_get_relative_layer_element_functor_1ab882879c20ad251343f8435dbf556069" prot="private" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool vrv::GetRelativeLayerElementFunctor::m_searchDirection</definition>
-        <argsstring></argsstring>
-        <name>m_searchDirection</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/findlayerelementsfunctor.h" line="277" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/findlayerelementsfunctor.h" bodystart="277" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_get_relative_layer_element_functor_1aabf29cd7a364b26ae7bd2e21d17020a8" prot="private" static="no" mutable="no">
         <type>bool</type>
         <definition>bool vrv::GetRelativeLayerElementFunctor::m_isInNeighboringLayer</definition>
@@ -116,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/findlayerelementsfunctor.h" line="279" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/findlayerelementsfunctor.h" bodystart="279" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/findlayerelementsfunctor.h" line="277" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/findlayerelementsfunctor.h" bodystart="277" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -150,7 +133,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>This class goes through all layer elements of the layer and returns the next/previous element relative to the specified layer element. </para>
+<para>This class goes through all layer elements of the layer and returns the next/previous element (depending on traversal direction) relative to the specified layer element. </para>
     </briefdescription>
     <detaileddescription>
 <para>It will search recursively through children elements until note, chord or ftrem is found. It can be used to look into neighboring layers as well, but only the first element will be checked. </para>
@@ -203,7 +186,7 @@
         <link refid="classvrv_1_1_const_functor_interface"/>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/findlayerelementsfunctor.h" line="238" column="57" bodyfile="/home/runner/work/verovio/verovio/include/vrv/findlayerelementsfunctor.h" bodystart="238" bodyend="280"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/findlayerelementsfunctor.h" line="238" column="57" bodyfile="/home/runner/work/verovio/verovio/include/vrv/findlayerelementsfunctor.h" bodystart="238" bodyend="278"/>
     <listofallmembers>
       <member refid="classvrv_1_1_const_functor_1aaf04971778c20255ca3f215065ad537d" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>ConstFunctor</name></member>
       <member refid="classvrv_1_1_const_functor_interface_1aeb2d49c2d44c4f028f82bbf69e2ee52f" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>ConstFunctorInterface</name></member>
@@ -212,16 +195,17 @@
       <member refid="classvrv_1_1_functor_base_1a1dc2bd77ebadb86695b34484c72d3d6a" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>GetDirection</name></member>
       <member refid="classvrv_1_1_functor_base_1acf8c35f221dba7293bc8f4fa71f1e7ca" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>GetFilters</name></member>
       <member refid="classvrv_1_1_get_relative_layer_element_functor_1a25e28f08c03afea8a2eb5d15bd00a0fb" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>GetRelativeElement</name></member>
-      <member refid="classvrv_1_1_get_relative_layer_element_functor_1adb7c004e47591fd7740236a61a962e51" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>GetRelativeLayerElementFunctor</name></member>
+      <member refid="classvrv_1_1_get_relative_layer_element_functor_1abaea4c1fa74d0fb61712a31e24821f57" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>GetRelativeLayerElementFunctor</name></member>
       <member refid="classvrv_1_1_get_relative_layer_element_functor_1a8ab6bc9c2f70fc3e9fee688da0d9dedf" prot="public" virt="virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>ImplementsEndInterface</name></member>
       <member refid="classvrv_1_1_get_relative_layer_element_functor_1a668e9d1069ebf5893c6f5765f97d5e4e" prot="private" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>m_initialElementIndex</name></member>
       <member refid="classvrv_1_1_get_relative_layer_element_functor_1aabf29cd7a364b26ae7bd2e21d17020a8" prot="private" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>m_isInNeighboringLayer</name></member>
       <member refid="classvrv_1_1_get_relative_layer_element_functor_1a0e79229ab06066d51105c902d68980fe" prot="private" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>m_relativeElement</name></member>
-      <member refid="classvrv_1_1_get_relative_layer_element_functor_1ab882879c20ad251343f8435dbf556069" prot="private" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>m_searchDirection</name></member>
+      <member refid="classvrv_1_1_functor_base_1ab6d6edca499db0e20aca805c419f0e5a" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>PopDirection</name></member>
+      <member refid="classvrv_1_1_functor_base_1aba5e00c18f46d07bda4f16ad1922573c" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>PopFilters</name></member>
+      <member refid="classvrv_1_1_functor_base_1a3ba2a0636bdae93491641da1713b2037" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>PushDirection</name></member>
+      <member refid="classvrv_1_1_functor_base_1ac1e065f2e0b85d178062b2c830e67d82" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>PushFilters</name></member>
       <member refid="classvrv_1_1_functor_base_1a08c690f2a45f5c15e38c86f1d461f02c" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>ResetCode</name></member>
       <member refid="classvrv_1_1_functor_base_1af34204cf6852d525df006eb588cb2111" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>SetCode</name></member>
-      <member refid="classvrv_1_1_functor_base_1a5f862682a812021cc7689ba3fe9695bc" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>SetDirection</name></member>
-      <member refid="classvrv_1_1_functor_base_1a870f34216ea909be8db45e5833ded249" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>SetFilters</name></member>
       <member refid="classvrv_1_1_functor_base_1a8ee0a7ab511cfc7e2ea1367212b42617" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>SetVisibleOnly</name></member>
       <member refid="classvrv_1_1_functor_base_1ad3c83180489aa76f1afb5b5e6fa0c52e" prot="public" virt="non-virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>VisibleOnly</name></member>
       <member refid="classvrv_1_1_const_functor_interface_1ae3067ecfd56c04ea3da593119e8e76d2" prot="public" virt="virtual"><scope>vrv::GetRelativeLayerElementFunctor</scope><name>VisitAccid</name></member>
