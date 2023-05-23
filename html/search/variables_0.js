@@ -11,7 +11,7 @@ var searchData=
   ['m_5fcachedyrel_2262',['m_cachedYRel',['../classvrv_1_1_layer_element.html#ac4b9a899709b36b64228c263e4990d13',1,'vrv::LayerElement']]],
   ['m_5fcontent_2263',['m_content',['../classvrv_1_1_annot.html#a184f9b0fe1d935528b12ecf31e974d4c',1,'vrv::Annot']]],
   ['m_5fcrossstaff_2264',['m_crossStaff',['../classvrv_1_1_layer_element.html#af61467813ceb6c74c05b55484007c48b',1,'vrv::LayerElement']]],
-  ['m_5fcurrentcolour_2265',['m_currentColour',['../classvrv_1_1_view.html#ae6aac368e2134e991fb7a1a5e93f59df',1,'vrv::View']]],
+  ['m_5fcurrentcolor_2265',['m_currentColor',['../classvrv_1_1_view.html#a5f1597c4415673c261d4616b505be7fd',1,'vrv::View']]],
   ['m_5fdashes_2266',['m_dashes',['../classvrv_1_1_ledger_line.html#a1f028b4f8242c566116eecc0313d2618',1,'vrv::LedgerLine']]],
   ['m_5fdeprecated_2267',['m_deprecated',['../classvrv_1_1_options.html#a7c05c180e98edd4f8422bbe61b56b36f',1,'vrv::Options']]],
   ['m_5fdoc_2268',['m_doc',['../classvrv_1_1_view.html#a922bb7e5bab67bd8e28206bd6e4f8c8e',1,'vrv::View']]],

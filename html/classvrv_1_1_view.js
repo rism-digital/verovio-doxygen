@@ -202,7 +202,7 @@ var classvrv_1_1_view =
     [ "ToLogical", "classvrv_1_1_view.html#a424a26bcf7b2d53fed9446f4d3231581", null ],
     [ "ToLogicalX", "classvrv_1_1_view.html#a3329d2e9f0c6d32cca4854026036b511", null ],
     [ "ToLogicalY", "classvrv_1_1_view.html#a37a5369135a5c8dcd803c0b0e2248909", null ],
-    [ "m_currentColour", "classvrv_1_1_view.html#ae6aac368e2134e991fb7a1a5e93f59df", null ],
+    [ "m_currentColor", "classvrv_1_1_view.html#a5f1597c4415673c261d4616b505be7fd", null ],
     [ "m_currentElement", "classvrv_1_1_view.html#a7b338585e0439435ea519a4e81129f79", null ],
     [ "m_currentLayer", "classvrv_1_1_view.html#abc6c98adea6459f04ed99de19ca71416", null ],
     [ "m_currentMeasure", "classvrv_1_1_view.html#a18111f756d522b30e1dd68c5533bd3af", null ],
