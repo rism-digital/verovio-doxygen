@@ -202,6 +202,7 @@ var hierarchy =
         [ "vrv::Ligature", "classvrv_1_1_ligature.html", null ],
         [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ],
         [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ],
+        [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
         [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
         [ "vrv::MRpt", "classvrv_1_1_m_rpt.html", null ],
         [ "vrv::MRpt2", "classvrv_1_1_m_rpt2.html", null ],
@@ -408,7 +409,6 @@ var hierarchy =
       [ "vrv::LayerDef", "classvrv_1_1_layer_def.html", null ],
       [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
       [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
-      [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
       [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
       [ "vrv::Score", "classvrv_1_1_score.html", null ],
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ],
@@ -460,8 +460,7 @@ var hierarchy =
     [ "AttLinking", null, [
       [ "vrv::LinkingInterface", "classvrv_1_1_linking_interface.html", [
         [ "vrv::ControlElement", "classvrv_1_1_control_element.html", null ],
-        [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
-        [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ]
+        [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ]
       ] ]
     ] ],
     [ "AttLyricStyle", null, [
@@ -826,7 +825,6 @@ var hierarchy =
       [ "vrv::LayerDef", "classvrv_1_1_layer_def.html", null ],
       [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
-      [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
       [ "vrv::PageElement", "classvrv_1_1_page_element.html", [
         [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
         [ "vrv::PageMilestoneEnd", "classvrv_1_1_page_milestone_end.html", null ],
@@ -918,7 +916,6 @@ var hierarchy =
         [ "vrv::LayerDef", "classvrv_1_1_layer_def.html", null ],
         [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
         [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
-        [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
         [ "vrv::Page", "classvrv_1_1_page.html", null ],
         [ "vrv::PageElement", "classvrv_1_1_page_element.html", null ],
         [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
