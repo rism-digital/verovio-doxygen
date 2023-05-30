@@ -24,5 +24,6 @@ var classvrv_1_1_beam_span =
     [ "GetTimeSpanningInterface", "classvrv_1_1_beam_span.html#a7e780ffc204871932f9930394c488c25", null ],
     [ "InitBeamSegments", "classvrv_1_1_beam_span.html#a13c01b5ae8d057afb4be0513a5afecf6", null ],
     [ "Reset", "classvrv_1_1_beam_span.html#ac5726b38ecf3bfd2a8a09ad484cfaa9a", null ],
+    [ "ResetBeamedElements", "classvrv_1_1_beam_span.html#a5f66418bca9e4776ac6579a9f59a60cf", null ],
     [ "SetBeamedElements", "classvrv_1_1_beam_span.html#a08345daa5ddf58bc8531ca3e922763ac", null ]
 ];

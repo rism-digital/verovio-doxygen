@@ -7,6 +7,7 @@ var classvrv_1_1_reset_data_functor =
     [ "VisitArpeg", "classvrv_1_1_reset_data_functor.html#a5babdf8418c32fc3c24ab634f254a350", null ],
     [ "VisitArtic", "classvrv_1_1_reset_data_functor.html#afa59c54f77cc99cda928aec4457be790", null ],
     [ "VisitBeam", "classvrv_1_1_reset_data_functor.html#ac5a813cb54a033a4254da241633693aa", null ],
+    [ "VisitBeamSpan", "classvrv_1_1_reset_data_functor.html#a995419fff1d360166afb260d8aeb26b2", null ],
     [ "VisitChord", "classvrv_1_1_reset_data_functor.html#ae0d263e58f05dbe48b314f85704f09a4", null ],
     [ "VisitControlElement", "classvrv_1_1_reset_data_functor.html#aa96e927987bb3cf34701f1e673db9307", null ],
     [ "VisitCustos", "classvrv_1_1_reset_data_functor.html#a46c2a8937294c63130eaace061f0644f", null ],

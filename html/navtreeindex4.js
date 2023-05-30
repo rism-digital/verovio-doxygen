@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classvrv_1_1_cast_off_encoding_functor.html#a040759ef657034b633cdf8d72a1a083b":[1,0,0,81,1],
 "classvrv_1_1_cast_off_encoding_functor.html#a14279d1de1875886b8625047eac8a7f6":[1,0,0,81,4],
 "classvrv_1_1_cast_off_encoding_functor.html#a160c296b10ed2179fdabf81f46932856":[1,0,0,81,7],
 "classvrv_1_1_cast_off_encoding_functor.html#a372e71b82a359aba3aee1b742806999e":[1,0,0,81,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "classvrv_1_1_const_functor_interface.html#a61379b67b78d0d56685ba830d30d8f07":[1,0,0,95,25],
 "classvrv_1_1_const_functor_interface.html#a63088f075446f0da0cb876d3e74dc415":[1,0,0,95,50],
 "classvrv_1_1_const_functor_interface.html#a63351f13ad1e2740193edf25f6c88d70":[1,0,0,95,137],
-"classvrv_1_1_const_functor_interface.html#a642fdedb16e4e4e53fa941276c08c7dd":[1,0,0,95,117],
-"classvrv_1_1_const_functor_interface.html#a684ebbd14f041d51474ffb7c006ce05b":[1,0,0,95,13]
+"classvrv_1_1_const_functor_interface.html#a642fdedb16e4e4e53fa941276c08c7dd":[1,0,0,95,117]
 };

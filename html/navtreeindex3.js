@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_beam_span_segment.html#a4ef62758ae8c5e8fb47ee81d02c6780f":[1,0,0,60,6],
 "classvrv_1_1_beam_span_segment.html#a57f99e7899343b0ec40d187b71d27a4c":[1,0,0,60,8],
 "classvrv_1_1_beam_span_segment.html#a5beed131f974663d89eb34d8d5ff9eec":[1,0,0,60,19],
 "classvrv_1_1_beam_span_segment.html#a778bb823ddd431ef3d024daa5ff5138c":[1,0,0,60,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_calc_stem_functor.html#abc40cfea5f84ed665a0536db388acea5":[1,0,0,80,5],
 "classvrv_1_1_calc_stem_functor.html#adbae2aa748055df51a88327a2a1adc87":[1,0,0,80,10],
 "classvrv_1_1_calc_stem_functor.html#ae0c58af5582b6d6675fc7128d7bb6b1c":[1,0,0,80,0],
-"classvrv_1_1_cast_off_encoding_functor.html":[1,0,0,81],
-"classvrv_1_1_cast_off_encoding_functor.html#a040759ef657034b633cdf8d72a1a083b":[1,0,0,81,1]
+"classvrv_1_1_cast_off_encoding_functor.html":[1,0,0,81]
 };
