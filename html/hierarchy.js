@@ -301,7 +301,24 @@ var hierarchy =
       [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
     ] ],
-    [ "AttExtSym", null, [
+    [ "AttExtSymAuth", null, [
+      [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
+      [ "vrv::Artic", "classvrv_1_1_artic.html", null ],
+      [ "vrv::Caesura", "classvrv_1_1_caesura.html", null ],
+      [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
+      [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
+      [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
+      [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
+      [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
+      [ "vrv::Note", "classvrv_1_1_note.html", null ],
+      [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
+      [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
+      [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
+      [ "vrv::Symbol", "classvrv_1_1_symbol.html", null ],
+      [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
+      [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
+    ] ],
+    [ "AttExtSymNames", null, [
       [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
       [ "vrv::Artic", "classvrv_1_1_artic.html", null ],
       [ "vrv::Caesura", "classvrv_1_1_caesura.html", null ],
@@ -870,6 +887,7 @@ var hierarchy =
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
+      [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ],
       [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Staff", "classvrv_1_1_staff.html", null ],

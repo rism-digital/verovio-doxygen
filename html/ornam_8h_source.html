@@ -113,49 +113,50 @@ $(document).ready(function(){initNavTree('ornam_8h_source.html',''); initResizab
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;              <span class="keyword">public</span> <a class="code" href="classvrv_1_1_text_dir_interface.html">TextDirInterface</a>,</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;              <span class="keyword">public</span> <a class="code" href="classvrv_1_1_time_point_interface.html">TimePointInterface</a>,</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;              <span class="keyword">public</span> AttColor,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;              <span class="keyword">public</span> AttExtSym,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;              <span class="keyword">public</span> AttOrnamentAccid {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classvrv_1_1_ornam.html">Ornam</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_ornam.html">Ornam</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classvrv_1_1_ornam.html#ab3a9fc8d7fec8854b1667f5632ac72d4">   42</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_ornam.html#ab3a9fc8d7fec8854b1667f5632ac72d4">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_ornam.html">Ornam</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_ornam.html#a71718b67659f935450ab8b79bf2d77bf">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Ornam&quot;</span>; }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    TextDirInterface *GetTextDirInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TextDirInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">const</span> TextDirInterface *GetTextDirInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const TextDirInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    TimePointInterface *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimePointInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">const</span> TimePointInterface *GetTimePointInterface()<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimePointInterface *&gt;(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_ornam.html#ac4aa0444b3ed010b326d1863106f3ee2">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    char32_t <a class="code" href="classvrv_1_1_ornam.html#a40160caf1afea3c66f9e58df55c35fba">GetOrnamGlyph</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_ornam.html#a5fa40703c15fb7040361572b06b5f95a">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_ornam.html#a5fa40703c15fb7040361572b06b5f95a">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;              <span class="keyword">public</span> AttExtSymAuth,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;              <span class="keyword">public</span> AttExtSymNames,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;              <span class="keyword">public</span> AttOrnamentAccid {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classvrv_1_1_ornam.html">Ornam</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_ornam.html">Ornam</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classvrv_1_1_ornam.html#ab3a9fc8d7fec8854b1667f5632ac72d4">   43</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_ornam.html#ab3a9fc8d7fec8854b1667f5632ac72d4">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_ornam.html">Ornam</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_ornam.html#a71718b67659f935450ab8b79bf2d77bf">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Ornam&quot;</span>; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    TextDirInterface *GetTextDirInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TextDirInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">const</span> TextDirInterface *GetTextDirInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const TextDirInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    TimePointInterface *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimePointInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">const</span> TimePointInterface *GetTimePointInterface()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimePointInterface *&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_ornam.html#ac4aa0444b3ed010b326d1863106f3ee2">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    char32_t <a class="code" href="classvrv_1_1_ornam.html#a40160caf1afea3c66f9e58df55c35fba">GetOrnamGlyph</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_ornam.html#a5fa40703c15fb7040361572b06b5f95a">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_ornam.html#a5fa40703c15fb7040361572b06b5f95a">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:60</div></div>
@@ -167,13 +168,13 @@ $(document).ready(function(){initNavTree('ornam_8h_source.html',''); initResizab
 <div class="ttc" id="aclassvrv_1_1_ornam_html_a71718b67659f935450ab8b79bf2d77bf"><div class="ttname"><a href="classvrv_1_1_ornam.html#a71718b67659f935450ab8b79bf2d77bf">vrv::Ornam::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_ornam_html_a5fa40703c15fb7040361572b06b5f95a"><div class="ttname"><a href="classvrv_1_1_ornam.html#a5fa40703c15fb7040361572b06b5f95a">vrv::Ornam::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:27</div></div>
-<div class="ttc" id="aclassvrv_1_1_ornam_html_ab3a9fc8d7fec8854b1667f5632ac72d4"><div class="ttname"><a href="classvrv_1_1_ornam.html#ab3a9fc8d7fec8854b1667f5632ac72d4">vrv::Ornam::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> ornam.h:42</div></div>
+<div class="ttc" id="aclassvrv_1_1_ornam_html_ab3a9fc8d7fec8854b1667f5632ac72d4"><div class="ttname"><a href="classvrv_1_1_ornam.html#ab3a9fc8d7fec8854b1667f5632ac72d4">vrv::Ornam::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> ornam.h:43</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_point_interface_html"><div class="ttname"><a href="classvrv_1_1_time_point_interface.html">vrv::TimePointInterface</a></div><div class="ttdoc">This class is an interface for elements having a single time point, such as tempo,...</div><div class="ttdef"><b>Definition:</b> timeinterface.h:35</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>ornam.h</b></li>
-    <li class="footer">Generated on Tue May 30 2023 14:29:19 for Verovio by
+    <li class="footer">Generated on Thu Jun 1 2023 14:11:38 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

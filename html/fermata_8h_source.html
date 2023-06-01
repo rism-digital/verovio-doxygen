@@ -111,54 +111,55 @@ $(document).ready(function(){initNavTree('fermata_8h_source.html',''); initResiz
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="keyword">public</span> <a class="code" href="classvrv_1_1_time_point_interface.html">TimePointInterface</a>,</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keyword">public</span> AttColor,</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keyword">public</span> AttEnclosingChars,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="keyword">public</span> AttExtSym,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keyword">public</span> AttFermataVis,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keyword">public</span> AttPlacementRelStaff {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classvrv_1_1_fermata.html">Fermata</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_fermata.html">Fermata</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classvrv_1_1_fermata.html#ae4015a263194111dabdd34e0e6a781a6">   41</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_fermata.html#ae4015a263194111dabdd34e0e6a781a6">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_fermata.html">Fermata</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_fermata.html#afb7670f0139028cd80c08d6a7801f9be">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Fermata&quot;</span>; }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    TimePointInterface *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimePointInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">const</span> TimePointInterface *GetTimePointInterface()<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimePointInterface *&gt;(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    char32_t <a class="code" href="classvrv_1_1_fermata.html#a8efe2d33dbb017b0413db6ddbe3bee88">GetFermataGlyph</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    std::pair&lt;char32_t, char32_t&gt; <a class="code" href="classvrv_1_1_fermata.html#a3fae7d34a812ac472470b927206a403b">GetEnclosingGlyphs</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// Static methods //</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">static</span> data_VERTICALALIGNMENT <a class="code" href="classvrv_1_1_fermata.html#ad93016a21cf0ecb7ad7380661bfc03e2">GetVerticalAlignment</a>(char32_t code);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_fermata.html#aa883f379b14be79c0973d4008e9de5e5">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_fermata.html#aa883f379b14be79c0973d4008e9de5e5">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="keyword">public</span> AttExtSymAuth,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keyword">public</span> AttExtSymNames,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keyword">public</span> AttFermataVis,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="keyword">public</span> AttPlacementRelStaff {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classvrv_1_1_fermata.html">Fermata</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_fermata.html">Fermata</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classvrv_1_1_fermata.html#ae4015a263194111dabdd34e0e6a781a6">   42</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_fermata.html#ae4015a263194111dabdd34e0e6a781a6">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_fermata.html">Fermata</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_fermata.html#afb7670f0139028cd80c08d6a7801f9be">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Fermata&quot;</span>; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    TimePointInterface *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimePointInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">const</span> TimePointInterface *GetTimePointInterface()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimePointInterface *&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    char32_t <a class="code" href="classvrv_1_1_fermata.html#a8efe2d33dbb017b0413db6ddbe3bee88">GetFermataGlyph</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::pair&lt;char32_t, char32_t&gt; <a class="code" href="classvrv_1_1_fermata.html#a3fae7d34a812ac472470b927206a403b">GetEnclosingGlyphs</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// Static methods //</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">static</span> data_VERTICALALIGNMENT <a class="code" href="classvrv_1_1_fermata.html#ad93016a21cf0ecb7ad7380661bfc03e2">GetVerticalAlignment</a>(char32_t code);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_fermata.html#aa883f379b14be79c0973d4008e9de5e5">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_fermata.html#aa883f379b14be79c0973d4008e9de5e5">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_fermata_html_afb7670f0139028cd80c08d6a7801f9be"><div class="ttname"><a href="classvrv_1_1_fermata.html#afb7670f0139028cd80c08d6a7801f9be">vrv::Fermata::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
@@ -166,7 +167,7 @@ $(document).ready(function(){initNavTree('fermata_8h_source.html',''); initResiz
 <div class="ttc" id="aclassvrv_1_1_fermata_html_a8efe2d33dbb017b0413db6ddbe3bee88"><div class="ttname"><a href="classvrv_1_1_fermata.html#a8efe2d33dbb017b0413db6ddbe3bee88">vrv::Fermata::GetFermataGlyph</a></div><div class="ttdeci">char32_t GetFermataGlyph() const</div><div class="ttdoc">Get the SMuFL glyph for the fermata based on type, shape or glyph.num.</div></div>
 <div class="ttc" id="aclassvrv_1_1_fermata_html_a3fae7d34a812ac472470b927206a403b"><div class="ttname"><a href="classvrv_1_1_fermata.html#a3fae7d34a812ac472470b927206a403b">vrv::Fermata::GetEnclosingGlyphs</a></div><div class="ttdeci">std::pair&lt; char32_t, char32_t &gt; GetEnclosingGlyphs() const</div><div class="ttdoc">Retrieve parentheses / brackets from the enclose attribute.</div></div>
 <div class="ttc" id="aclassvrv_1_1_fermata_html_aa883f379b14be79c0973d4008e9de5e5"><div class="ttname"><a href="classvrv_1_1_fermata.html#aa883f379b14be79c0973d4008e9de5e5">vrv::Fermata::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
-<div class="ttc" id="aclassvrv_1_1_fermata_html_ae4015a263194111dabdd34e0e6a781a6"><div class="ttname"><a href="classvrv_1_1_fermata.html#ae4015a263194111dabdd34e0e6a781a6">vrv::Fermata::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> fermata.h:41</div></div>
+<div class="ttc" id="aclassvrv_1_1_fermata_html_ae4015a263194111dabdd34e0e6a781a6"><div class="ttname"><a href="classvrv_1_1_fermata.html#ae4015a263194111dabdd34e0e6a781a6">vrv::Fermata::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> fermata.h:42</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_fermata_html_ad93016a21cf0ecb7ad7380661bfc03e2"><div class="ttname"><a href="classvrv_1_1_fermata.html#ad93016a21cf0ecb7ad7380661bfc03e2">vrv::Fermata::GetVerticalAlignment</a></div><div class="ttdeci">static data_VERTICALALIGNMENT GetVerticalAlignment(char32_t code)</div><div class="ttdoc">Retrieves the vertical alignment for the fermata SMuFL code.</div></div>
 <div class="ttc" id="aclassvrv_1_1_fermata_html"><div class="ttname"><a href="classvrv_1_1_fermata.html">vrv::Fermata</a></div><div class="ttdoc">This class models the MEI &lt;fermata&gt; element.</div><div class="ttdef"><b>Definition:</b> fermata.h:26</div></div>
@@ -175,7 +176,7 @@ $(document).ready(function(){initNavTree('fermata_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>fermata.h</b></li>
-    <li class="footer">Generated on Tue May 30 2023 14:29:19 for Verovio by
+    <li class="footer">Generated on Thu Jun 1 2023 14:11:38 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
