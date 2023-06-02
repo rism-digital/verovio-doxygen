@@ -1,5 +1,16 @@
 var NAVTREEINDEX29 =
 {
+"structvrv_1_1_key_accid_info.html":[1,0,0,197],
+"structvrv_1_1_key_accid_info.html#a1d81a3341fad0019e9e963645226542e":[1,0,0,197,0],
+"structvrv_1_1_key_accid_info.html#a87c883a3ac6d1525141d7b29371db5b6":[1,0,0,197,1],
+"structvrv_1_1_m_i_d_i_chord.html":[1,0,0,222],
+"structvrv_1_1_m_i_d_i_chord.html#a5cf3c77c21b83b33489c9f8fb69d2dae":[1,0,0,222,1],
+"structvrv_1_1_m_i_d_i_chord.html#af4eb3a2b50f0c45f938fec365f5bae97":[1,0,0,222,0],
+"structvrv_1_1_m_i_d_i_held_note.html":[1,0,0,223],
+"structvrv_1_1_m_i_d_i_held_note.html#a8caee921924918efc2ebd079e2f0293b":[1,0,0,223,0],
+"structvrv_1_1_m_i_d_i_held_note.html#aeb200ab2694f4564a121b63a62eb6391":[1,0,0,223,1],
+"structvrv_1_1_m_i_d_i_note.html":[1,0,0,224],
+"structvrv_1_1_m_i_d_i_note.html#a32128781fed4395e451720d0567ccac1":[1,0,0,224,0],
 "structvrv_1_1_m_i_d_i_note.html#ad116154282fde8e30c39fbc0085bbf5a":[1,0,0,224,1],
 "structvrv_1_1_near_end_collision.html":[1,0,0,235],
 "structvrv_1_1_near_end_collision.html#a31560c558c0358b24fa8ab7aedf16e61":[1,0,0,235,1],
