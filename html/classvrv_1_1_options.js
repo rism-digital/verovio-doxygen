@@ -203,6 +203,7 @@ var classvrv_1_1_options =
     [ "m_transposeMdiv", "classvrv_1_1_options.html#af0cdcb2701236379416ef620eca25fb4", null ],
     [ "m_transposeSelectedOnly", "classvrv_1_1_options.html#a57839601f0ca3a92fa9f48526f77502a", null ],
     [ "m_transposeToSoundingPitch", "classvrv_1_1_options.html#acb7cc9136494029fe105866022b65b06", null ],
+    [ "m_tupletAngledOnBeams", "classvrv_1_1_options.html#a4785611efaf2166b8dc78c22cd86336d", null ],
     [ "m_tupletBracketThickness", "classvrv_1_1_options.html#ae94e29f524be4460ad2c913ff8429a8a", null ],
     [ "m_tupletNumHead", "classvrv_1_1_options.html#a7676d295e3cb82fd728cef409e2b3706", null ],
     [ "m_unit", "classvrv_1_1_options.html#a1653e0f2baa0ea980fa6d0b0f2d41184", null ],

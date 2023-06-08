@@ -370,6 +370,7 @@
     <member refid="classvrv_1_1_adjust_tuplets_y_functor_1a7fd2187197431a7b4baa2ec388fd49d3" kind="function"><name>AdjustTupletNumY</name></member>
     <member refid="classvrv_1_1_adjust_tuplets_y_functor_1a19cc042969b4c213868e0ec844a6ea94" kind="function"><name>ImplementsEndInterface</name></member>
     <member refid="classvrv_1_1_adjust_tuplets_y_functor_1a8f06a46bd7ed6b8470c81358318f8184" kind="function"><name>AdjustTupletBracketBeamY</name></member>
+    <member refid="classvrv_1_1_adjust_tuplets_y_functor_1a1ffa1a4ac0d080e8ee033b997e9faa6f" kind="function"><name>CalcBracketShift</name></member>
   </compound>
   <compound refid="classvrv_1_1_adjust_tuplet_with_slurs_functor" kind="class"><name>vrv::AdjustTupletWithSlursFunctor</name>
     <member refid="classvrv_1_1_adjust_tuplet_with_slurs_functor_1a447a14af23d83b2fbd9fe21cad314717" kind="function"><name>AdjustTupletWithSlursFunctor</name></member>
@@ -1133,10 +1134,14 @@
     <member refid="classvrv_1_1_bounding_box_1a26bfbd087c59e094696d2c0ff1fd89ea" kind="function"><name>GetCutOutBottom</name></member>
     <member refid="classvrv_1_1_bounding_box_1a341aeebe2fdd010ebf72aaf1c8760df3" kind="function"><name>GetCutOutLeft</name></member>
     <member refid="classvrv_1_1_bounding_box_1abc3f8eacafe2bfb2becd732507f259ae" kind="function"><name>GetCutOutRight</name></member>
+    <member refid="classvrv_1_1_bounding_box_1aff4fd28f86884cc8286be692e644521e" kind="function"><name>GetCutOutLeft</name></member>
+    <member refid="classvrv_1_1_bounding_box_1ab2703ccf19b57cc32f6e286748cc3e01" kind="function"><name>GetCutOutRight</name></member>
     <member refid="classvrv_1_1_bounding_box_1a414f972e6f1e4231d61acdd7329eb414" kind="function"><name>RectLeftOverlap</name></member>
     <member refid="classvrv_1_1_bounding_box_1a4802cf9706608398b887afd2ad3e1188" kind="function"><name>RectRightOverlap</name></member>
     <member refid="classvrv_1_1_bounding_box_1ae7003f6708e916b7640d4dda5a8a18ef" kind="function"><name>RectTopOverlap</name></member>
     <member refid="classvrv_1_1_bounding_box_1a74c28d831f2e14aec44a848a961f8b42" kind="function"><name>RectBottomOverlap</name></member>
+    <member refid="classvrv_1_1_bounding_box_1a09bb7ff6ea8816cf16fc901aa63db8c8" kind="function"><name>GetRectangles</name></member>
+    <member refid="classvrv_1_1_bounding_box_1acf124135c576c2c6e6bcd24b7e6a274c" kind="function"><name>GetRectangles</name></member>
     <member refid="classvrv_1_1_bounding_box_1a4961ebaf8f99abe31ee894345cd84a16" kind="variable"><name>m_cachedDrawingX</name></member>
     <member refid="classvrv_1_1_bounding_box_1a548baf7b854ef877313302670da5d0b8" kind="variable"><name>m_cachedDrawingY</name></member>
     <member refid="classvrv_1_1_bounding_box_1afad8fd1b368422b83377b7e86bb7845b" kind="variable"><name>m_contentBB_x1</name></member>
@@ -1167,7 +1172,6 @@
     <member refid="classvrv_1_1_bounding_box_1a8fdd811aefcb373533b9cc2795aa04dd" kind="function"><name>CalcThickBezier</name></member>
     <member refid="classvrv_1_1_bounding_box_1ae9a22cf5d306abb22ff5f557e81bd9af" kind="function"><name>ApproximateBezierBoundingBox</name></member>
     <member refid="classvrv_1_1_bounding_box_1ab4d1764142c6881678dbfcaee124e38f" kind="function"><name>SolveCubicPolynomial</name></member>
-    <member refid="classvrv_1_1_bounding_box_1acf124135c576c2c6e6bcd24b7e6a274c" kind="function"><name>GetRectangles</name></member>
     <member refid="classvrv_1_1_bounding_box_1a120b94171640aa263aac82a414268b9a" kind="function"><name>GetGlyph2PointRectangles</name></member>
     <member refid="classvrv_1_1_bounding_box_1a7eda9aaf3ac0b6e4120c71f8293f6327" kind="function"><name>GetGlyph1PointRectangles</name></member>
   </compound>
@@ -6260,6 +6264,7 @@
     <member refid="classvrv_1_1_options_1a440ab10e7afc1b9f482472b3cfccfc75" kind="variable"><name>m_tieEndpointThickness</name></member>
     <member refid="classvrv_1_1_options_1a2befb7a4762b48618c575091853089a5" kind="variable"><name>m_tieMidpointThickness</name></member>
     <member refid="classvrv_1_1_options_1a66da628f3e5f8f9a44271337c2247d05" kind="variable"><name>m_tieMinLength</name></member>
+    <member refid="classvrv_1_1_options_1a4785611efaf2166b8dc78c22cd86336d" kind="variable"><name>m_tupletAngledOnBeams</name></member>
     <member refid="classvrv_1_1_options_1ae94e29f524be4460ad2c913ff8429a8a" kind="variable"><name>m_tupletBracketThickness</name></member>
     <member refid="classvrv_1_1_options_1a7676d295e3cb82fd728cef409e2b3706" kind="variable"><name>m_tupletNumHead</name></member>
     <member refid="classvrv_1_1_options_1ad197649417d09e309b4e38f26fa8c21a" kind="variable"><name>m_selectors</name></member>
@@ -8854,6 +8859,7 @@
     <member refid="classvrv_1_1_tuplet_1a612010911011bd82e2604619e61a3eba" kind="variable"><name>m_innerSlurs</name></member>
     <member refid="classvrv_1_1_tuplet_1a895dd98a22b0024d37b1f4fbbc5ec6ca" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_tuplet_1a203b018c52090608a28871ed5917c75d" kind="function"><name>AddChild</name></member>
+    <member refid="classvrv_1_1_tuplet_1aaaa1b75edb1da95f21d2e5bc0d31bbc1" kind="function"><name>GetMelodicDirection</name></member>
     <member refid="classvrv_1_1_tuplet_1ac6b04379bb72ad6f90757952cf3bcc81" kind="function"><name>CalcDrawingBracketAndNumPos</name></member>
     <member refid="classvrv_1_1_tuplet_1a1df9d269326828fec5d714a1fd495fca" kind="function"><name>GetDrawingLeftRightXRel</name></member>
     <member refid="classvrv_1_1_tuplet_1a459298415394a7adbbe2525d55ca7fbe" kind="function"><name>CalculateTupletNumCrossStaff</name></member>
@@ -10013,6 +10019,10 @@
     <member refid="toolkitdef_8h_1a03fd8fbbc4dc75a77e44a3e511de884ea98613e9658ebb144a004b1508e0ff12d" kind="enumvalue"><name>LOG_WARNING</name></member>
     <member refid="toolkitdef_8h_1a03fd8fbbc4dc75a77e44a3e511de884eaba6f22d8f13454e96494b4cde5a04faa" kind="enumvalue"><name>LOG_INFO</name></member>
     <member refid="toolkitdef_8h_1a03fd8fbbc4dc75a77e44a3e511de884eacbf4ac1943dd3e2fbb1cb54e94018edb" kind="enumvalue"><name>LOG_DEBUG</name></member>
+    <member refid="tuplet_8h_1a9acbd6eaa4c0798eb0501ba39d1f1d2b" kind="enum"><name>MelodicDirection</name></member>
+    <member refid="tuplet_8h_1a9acbd6eaa4c0798eb0501ba39d1f1d2ba6adf97f83acf6453d4a6a4b1070f3754" kind="enumvalue"><name>None</name></member>
+    <member refid="tuplet_8h_1a9acbd6eaa4c0798eb0501ba39d1f1d2ba258f49887ef8d14ac268c92b02503aaa" kind="enumvalue"><name>Up</name></member>
+    <member refid="tuplet_8h_1a9acbd6eaa4c0798eb0501ba39d1f1d2ba08a38277b0309070706f6652eeae9a53" kind="enumvalue"><name>Down</name></member>
     <member refid="view_8h_1a0df80c5935046e1a441fa302e10b6e47" kind="enum"><name>SlurHandling</name></member>
     <member refid="view_8h_1a0df80c5935046e1a441fa302e10b6e47afd038fc7f319e48f3115d92bf5bdbef9" kind="enumvalue"><name>Ignore</name></member>
     <member refid="view_8h_1a0df80c5935046e1a441fa302e10b6e47a223e06f5cb15fc701ea1e686f7934f4f" kind="enumvalue"><name>Initialize</name></member>

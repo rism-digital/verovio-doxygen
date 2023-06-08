@@ -1,5 +1,8 @@
 var NAVTREEINDEX24 =
 {
+"classvrv_1_1_svg_device_context.html#a034be55fae0715655548c65a8f67cdda":[1,0,0,350,33],
+"classvrv_1_1_svg_device_context.html#a0fd35320419f4538134a2fcba62544ea":[1,0,0,350,57],
+"classvrv_1_1_svg_device_context.html#a1104b099bf2419013d2c790e0e4ac292":[1,0,0,350,2],
 "classvrv_1_1_svg_device_context.html#a15e6d5ffe8946ec3371c5e363b06fe3c":[1,0,0,350,34],
 "classvrv_1_1_svg_device_context.html#a16eced8fcf0d3d3d04f1666429a45062":[1,0,0,350,24],
 "classvrv_1_1_svg_device_context.html#a257b967c96a5cb94022707269a92e2f4":[1,0,0,350,50],
@@ -246,8 +249,5 @@ var NAVTREEINDEX24 =
 "classvrv_1_1_system_milestone_interface.html#aec1c69548271cb48c3277d9f44b7cdb2":[1,0,0,360,11],
 "classvrv_1_1_system_milestone_interface.html#af13abcdd6a1b35580ca881a41f52a975":[1,0,0,360,8],
 "classvrv_1_1_tab_course_sort.html":[1,0,0,361],
-"classvrv_1_1_tab_course_sort.html#a3e2370dd51357afdbf928964d8817810":[1,0,0,361,0],
-"classvrv_1_1_tab_course_sort.html#a62322c821b29ee5b1c64b5bcad60822c":[1,0,0,361,1],
-"classvrv_1_1_tab_dur_sym.html":[1,0,0,362],
-"classvrv_1_1_tab_dur_sym.html#a1e85bce43dc9ad280471f7ef5f147da0":[1,0,0,362,14]
+"classvrv_1_1_tab_course_sort.html#a3e2370dd51357afdbf928964d8817810":[1,0,0,361,0]
 };

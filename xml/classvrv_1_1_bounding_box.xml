@@ -1060,6 +1060,48 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="163" column="9"/>
       </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_bounding_box_1aff4fd28f86884cc8286be692e644521e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::BoundingBox::GetCutOutLeft</definition>
+        <argsstring>(const Resources &amp;resources, bool fromTop) const</argsstring>
+        <name>GetCutOutLeft</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_resources" kindref="compound">Resources</ref> &amp;</type>
+          <declname>resources</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fromTop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="165" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_bounding_box_1ab2703ccf19b57cc32f6e286748cc3e01" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::BoundingBox::GetCutOutRight</definition>
+        <argsstring>(const Resources &amp;resources, bool fromTop) const</argsstring>
+        <name>GetCutOutRight</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_resources" kindref="compound">Resources</ref> &amp;</type>
+          <declname>resources</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fromTop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="166" column="9"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1a414f972e6f1e4231d61acdd7329eb414" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -1092,7 +1134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="256" column="16"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="259" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1a4802cf9706608398b887afd2ad3e1188" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1123,7 +1165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="257" column="16"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="260" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1ae7003f6708e916b7640d4dda5a8a18ef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1154,7 +1196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="258" column="16"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="261" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1a74c28d831f2e14aec44a848a961f8b42" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1185,7 +1227,67 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="259" column="16"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="262" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_bounding_box_1a09bb7ff6ea8816cf16fc901aa63db8c8" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::BoundingBox::GetRectangles</definition>
+        <argsstring>(const SMuFLGlyphAnchor &amp;anchor, Point rect[2][2], const Resources &amp;resources) const</argsstring>
+        <name>GetRectangles</name>
+        <param>
+          <type>const SMuFLGlyphAnchor &amp;</type>
+          <declname>anchor</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_point" kindref="compound">Point</ref></type>
+          <declname>rect</declname>
+          <array>[2][2]</array>
+        </param>
+        <param>
+          <type>const <ref refid="classvrv_1_1_resources" kindref="compound">Resources</ref> &amp;</type>
+          <declname>resources</declname>
+        </param>
+        <briefdescription>
+<para>Get the rectangles covering the inside of a bounding box given one or two anchors (e.g., NW and NE, or NE and SE) Looks at the anchors for the smufl glyph (if any) and return the number of rectangles needed to represent the bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return 1 with no smufl glyph or no anchor, 2 with one anchor point, and 3 with 2 anchor points. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="279" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_bounding_box_1acf124135c576c2c6e6bcd24b7e6a274c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::BoundingBox::GetRectangles</definition>
+        <argsstring>(const SMuFLGlyphAnchor &amp;anchor1, const SMuFLGlyphAnchor &amp;anchor2, Point rect[3][2], const Resources &amp;resources) const</argsstring>
+        <name>GetRectangles</name>
+        <param>
+          <type>const SMuFLGlyphAnchor &amp;</type>
+          <declname>anchor1</declname>
+        </param>
+        <param>
+          <type>const SMuFLGlyphAnchor &amp;</type>
+          <declname>anchor2</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_point" kindref="compound">Point</ref></type>
+          <declname>rect</declname>
+          <array>[3][2]</array>
+        </param>
+        <param>
+          <type>const <ref refid="classvrv_1_1_resources" kindref="compound">Resources</ref> &amp;</type>
+          <declname>resources</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="280" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1202,7 +1304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="300" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="300" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="306" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="306" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_bounding_box_1a548baf7b854ef877313302670da5d0b8" prot="protected" static="no" mutable="yes">
         <type>int</type>
@@ -1215,7 +1317,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="301" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="301" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="307" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="307" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1231,7 +1333,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="308" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="308" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="314" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="314" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_bounding_box_1a00714a13d3cd4ffb493f8c320ce6fd3e" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -1244,7 +1346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="308" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="308" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="314" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="314" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_bounding_box_1a73f23ffa87a345aae81113c579d9bd02" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -1257,7 +1359,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="308" column="39" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="308" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="314" column="39" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="314" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_bounding_box_1a688cfa0cc7785d7553a15627742a49d6" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -1270,7 +1372,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="308" column="54" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="308" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="314" column="54" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="314" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_bounding_box_1a93a23ce019cf86062c8c7697b48224b0" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -1283,7 +1385,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="309" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="309" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="315" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="315" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_bounding_box_1af55ca7bfd4d71465a325b4b7b1789ffd" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -1296,7 +1398,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="309" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="309" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="315" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="315" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_bounding_box_1a8a2b05a6cf734ba05669a57ec6b2fe66" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -1309,7 +1411,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="309" column="33" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="309" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="315" column="33" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="315" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_bounding_box_1a981739fd2685aa7f711069c765e569eb" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -1322,7 +1424,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="309" column="45" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="309" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="315" column="45" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="315" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -1339,7 +1441,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="316" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="316" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="322" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="322" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_bounding_box_1acc76fbce37af69f0db7aa133ca719426" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -1353,7 +1455,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="321" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="321" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="327" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="327" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -1387,7 +1489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="169" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="172" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1a29d29a9aaa350b53bcf58dc32978b7f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1415,7 +1517,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="175" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="178" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1a89d4ebda89785d624cb43d1c45dbbbb2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1443,7 +1545,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="182" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="185" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -1472,7 +1574,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="188" column="22"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="191" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1a8008673c300accccc6dd7f10a2f12d45" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1494,7 +1596,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="194" column="19"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="197" column="19"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1aa466757865d8f747cbaaf232e3051177" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1522,7 +1624,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="199" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="202" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1a98f3d30610a0063965fcac7ec265ef27" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1544,7 +1646,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="204" column="19"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="207" column="19"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1a80465f84c7190f8cb0a9765693376be2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classvrv_1_1_point" kindref="compound">Point</ref></type>
@@ -1570,7 +1672,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="209" column="18"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="212" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1af1fdd065b198aafe35dcc7e5a35477ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1593,7 +1695,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="214" column="19"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="217" column="19"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1a91eb3e2ee9b00bc764283fe1710e199b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1616,7 +1718,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="219" column="16"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="222" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1af5401bb6040fe859bf6b7dc09c3c35b8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1646,7 +1748,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="224" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="227" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1acf2951ebea74c27b024916a4c96480a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classvrv_1_1_point" kindref="compound">Point</ref></type>
@@ -1669,7 +1771,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="229" column="18"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="232" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1a3dbe5a481e20ab4d0d9fdd47708d1c2f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1696,7 +1798,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="234" column="19"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="237" column="19"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1ac09f7239af89a7e19ca235761589e150" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classvrv_1_1_point" kindref="compound">Point</ref></type>
@@ -1719,7 +1821,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="239" column="18"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="242" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1a8fdd811aefcb373533b9cc2795aa04dd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1752,7 +1854,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="244" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="247" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1ae9a22cf5d306abb22ff5f557e81bd9af" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1791,7 +1893,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="249" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="252" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1ab4d1764142c6881678dbfcaee124e38f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::set&lt; double &gt;</type>
@@ -1821,42 +1923,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="266" column="21"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="269" column="21"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
-      <memberdef kind="function" id="classvrv_1_1_bounding_box_1acf124135c576c2c6e6bcd24b7e6a274c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int vrv::BoundingBox::GetRectangles</definition>
-        <argsstring>(const SMuFLGlyphAnchor &amp;anchor1, const SMuFLGlyphAnchor &amp;anchor2, Point rect[3][2], const Resources &amp;resources) const</argsstring>
-        <name>GetRectangles</name>
-        <param>
-          <type>const SMuFLGlyphAnchor &amp;</type>
-          <declname>anchor1</declname>
-        </param>
-        <param>
-          <type>const SMuFLGlyphAnchor &amp;</type>
-          <declname>anchor2</declname>
-        </param>
-        <param>
-          <type><ref refid="classvrv_1_1_point" kindref="compound">Point</ref></type>
-          <declname>rect</declname>
-          <array>[3][2]</array>
-        </param>
-        <param>
-          <type>const <ref refid="classvrv_1_1_resources" kindref="compound">Resources</ref> &amp;</type>
-          <declname>resources</declname>
-        </param>
-        <briefdescription>
-<para>Get the rectangles covering the inside of a bounding box given two anchors (e.g., NW and NE, or NE and SE) Looks at the anchors for the smufl glpyh (if any) and return the number of rectangles needed to represent the bounding box. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Return 1 with no smufl glyph or no anchor, 2 with on anchor point, and 3 with 2 anchor points. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="275" column="9"/>
-      </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1a120b94171640aa263aac82a414268b9a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::BoundingBox::GetGlyph2PointRectangles</definition>
@@ -1887,7 +1957,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="282" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="288" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_bounding_box_1a7eda9aaf3ac0b6e4120c71f8293f6327" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1915,7 +1985,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="289" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="295" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -2859,7 +2929,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="32" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="32" bodyend="322"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" line="32" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/boundingbox.h" bodystart="32" bodyend="328"/>
     <listofallmembers>
       <member refid="classvrv_1_1_bounding_box_1ae9a22cf5d306abb22ff5f557e81bd9af" prot="public" virt="non-virtual"><scope>vrv::BoundingBox</scope><name>ApproximateBezierBoundingBox</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3901a5e4a728b8f3450cce0e30f4bd29" prot="public" virt="non-virtual"><scope>vrv::BoundingBox</scope><name>ApproximateBezierExtrema</name></member>
@@ -2890,13 +2960,16 @@
       <member refid="classvrv_1_1_bounding_box_1a7d8f116f3c72430801e43fc9f1fb1e95" prot="public" virt="non-virtual"><scope>vrv::BoundingBox</scope><name>GetContentY2</name></member>
       <member refid="classvrv_1_1_bounding_box_1a26bfbd087c59e094696d2c0ff1fd89ea" prot="public" virt="non-virtual"><scope>vrv::BoundingBox</scope><name>GetCutOutBottom</name></member>
       <member refid="classvrv_1_1_bounding_box_1a341aeebe2fdd010ebf72aaf1c8760df3" prot="public" virt="non-virtual"><scope>vrv::BoundingBox</scope><name>GetCutOutLeft</name></member>
+      <member refid="classvrv_1_1_bounding_box_1aff4fd28f86884cc8286be692e644521e" prot="public" virt="non-virtual"><scope>vrv::BoundingBox</scope><name>GetCutOutLeft</name></member>
       <member refid="classvrv_1_1_bounding_box_1abc3f8eacafe2bfb2becd732507f259ae" prot="public" virt="non-virtual"><scope>vrv::BoundingBox</scope><name>GetCutOutRight</name></member>
+      <member refid="classvrv_1_1_bounding_box_1ab2703ccf19b57cc32f6e286748cc3e01" prot="public" virt="non-virtual"><scope>vrv::BoundingBox</scope><name>GetCutOutRight</name></member>
       <member refid="classvrv_1_1_bounding_box_1a81256810cab77e0d9fedf64fa858690f" prot="public" virt="non-virtual"><scope>vrv::BoundingBox</scope><name>GetCutOutTop</name></member>
       <member refid="classvrv_1_1_bounding_box_1a97b2b5920eb6e08b8bdf8d791c853dce" prot="public" virt="pure-virtual"><scope>vrv::BoundingBox</scope><name>GetDrawingX</name></member>
       <member refid="classvrv_1_1_bounding_box_1a94c585ec874e040e3e6e39c5d8dddc5c" prot="public" virt="pure-virtual"><scope>vrv::BoundingBox</scope><name>GetDrawingY</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7eda9aaf3ac0b6e4120c71f8293f6327" prot="private" virt="non-virtual"><scope>vrv::BoundingBox</scope><name>GetGlyph1PointRectangles</name></member>
       <member refid="classvrv_1_1_bounding_box_1a120b94171640aa263aac82a414268b9a" prot="private" virt="non-virtual"><scope>vrv::BoundingBox</scope><name>GetGlyph2PointRectangles</name></member>
       <member refid="classvrv_1_1_bounding_box_1af329372204a34520779e6b0d0596e8b9" prot="public" virt="non-virtual"><scope>vrv::BoundingBox</scope><name>GetLeftBy</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a09bb7ff6ea8816cf16fc901aa63db8c8" prot="private" virt="non-virtual"><scope>vrv::BoundingBox</scope><name>GetRectangles</name></member>
       <member refid="classvrv_1_1_bounding_box_1acf124135c576c2c6e6bcd24b7e6a274c" prot="private" virt="non-virtual"><scope>vrv::BoundingBox</scope><name>GetRectangles</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2fe9d4e0cef41c270fe6683e5fbd8223" prot="public" virt="non-virtual"><scope>vrv::BoundingBox</scope><name>GetRightBy</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7e55bc05f8dc9b3ff7768fe48c791d83" prot="public" virt="non-virtual"><scope>vrv::BoundingBox</scope><name>GetSelfBottom</name></member>

@@ -23,6 +23,7 @@ var classvrv_1_1_tuplet =
     [ "GetDrawingRight", "classvrv_1_1_tuplet.html#af2991ea4152304433e0fade2917442ac", null ],
     [ "GetDrawingRight", "classvrv_1_1_tuplet.html#a040b107263c555c60723bd499ad35487", null ],
     [ "GetInnerSlurs", "classvrv_1_1_tuplet.html#ad27f5e41dd475584bfe217a038d307e2", null ],
+    [ "GetMelodicDirection", "classvrv_1_1_tuplet.html#aaaa1b75edb1da95f21d2e5bc0d31bbc1", null ],
     [ "GetNumAlignedBeam", "classvrv_1_1_tuplet.html#aa90ff2d1d649aea1f11069c980cbcebc", null ],
     [ "GetNumAlignedBeam", "classvrv_1_1_tuplet.html#a92894d59d889073739e60730f51797e3", null ],
     [ "HasValidTupletNumPosition", "classvrv_1_1_tuplet.html#adf5b38ca4020b4eeb68c8abfbb68cb52", null ],
