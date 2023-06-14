@@ -310,6 +310,7 @@ var annotated_dup =
       [ "Reh", "classvrv_1_1_reh.html", "classvrv_1_1_reh" ],
       [ "Rend", "classvrv_1_1_rend.html", "classvrv_1_1_rend" ],
       [ "ReorderByXPosFunctor", "classvrv_1_1_reorder_by_x_pos_functor.html", "classvrv_1_1_reorder_by_x_pos_functor" ],
+      [ "RepeatMark", "classvrv_1_1_repeat_mark.html", "classvrv_1_1_repeat_mark" ],
       [ "ReplaceDrawingValuesInStaffDefFunctor", "classvrv_1_1_replace_drawing_values_in_staff_def_functor.html", "classvrv_1_1_replace_drawing_values_in_staff_def_functor" ],
       [ "ResetDataFunctor", "classvrv_1_1_reset_data_functor.html", "classvrv_1_1_reset_data_functor" ],
       [ "ResetHorizontalAlignmentFunctor", "classvrv_1_1_reset_horizontal_alignment_functor.html", "classvrv_1_1_reset_horizontal_alignment_functor" ],

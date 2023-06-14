@@ -115,38 +115,42 @@ $(document).ready(function(){initNavTree('text_8h_source.html',''); initResizabl
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> SetText(<span class="keyword">const</span> std::u32string &amp;text) { <a class="code" href="classvrv_1_1_text.html#a50feb6e50bce68d771ebdf99c2820f25">m_text</a> = text; }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::u32string GetText()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classvrv_1_1_text.html#a50feb6e50bce68d771ebdf99c2820f25">m_text</a>; }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_text.html#ae81c135fa786fbb57e272ba8715c910f">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_text.html#ae81c135fa786fbb57e272ba8715c910f">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classvrv_1_1_text.html#a50feb6e50bce68d771ebdf99c2820f25">   63</a></span>&#160;    std::u32string <a class="code" href="classvrv_1_1_text.html#a50feb6e50bce68d771ebdf99c2820f25">m_text</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">bool</span> IsGenerated()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_isGenerated; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> IsGenerated(<span class="keywordtype">bool</span> isGenerated) { m_isGenerated = isGenerated; }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_text.html#ae81c135fa786fbb57e272ba8715c910f">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_text.html#ae81c135fa786fbb57e272ba8715c910f">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classvrv_1_1_text.html#a50feb6e50bce68d771ebdf99c2820f25">   71</a></span>&#160;    std::u32string <a class="code" href="classvrv_1_1_text.html#a50feb6e50bce68d771ebdf99c2820f25">m_text</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">bool</span> m_isGenerated;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_text_html_a3f2023d5d325a5da86b252c47a7ae481"><div class="ttname"><a href="classvrv_1_1_text.html#a3f2023d5d325a5da86b252c47a7ae481">vrv::Text::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Reset the object, that is 1) removing all childs and 2) resetting all attributes.</div></div>
 <div class="ttc" id="aclassvrv_1_1_text_html"><div class="ttname"><a href="classvrv_1_1_text.html">vrv::Text</a></div><div class="ttdoc">This class models CDATA (text)</div><div class="ttdef"><b>Definition:</b> text.h:23</div></div>
 <div class="ttc" id="aclassvrv_1_1_text_element_html"><div class="ttname"><a href="classvrv_1_1_text_element.html">vrv::TextElement</a></div><div class="ttdef"><b>Definition:</b> textelement.h:22</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:60</div></div>
-<div class="ttc" id="aclassvrv_1_1_text_html_a50feb6e50bce68d771ebdf99c2820f25"><div class="ttname"><a href="classvrv_1_1_text.html#a50feb6e50bce68d771ebdf99c2820f25">vrv::Text::m_text</a></div><div class="ttdeci">std::u32string m_text</div><div class="ttdoc">The text content.</div><div class="ttdef"><b>Definition:</b> text.h:63</div></div>
+<div class="ttc" id="aclassvrv_1_1_text_html_a50feb6e50bce68d771ebdf99c2820f25"><div class="ttname"><a href="classvrv_1_1_text.html#a50feb6e50bce68d771ebdf99c2820f25">vrv::Text::m_text</a></div><div class="ttdeci">std::u32string m_text</div><div class="ttdoc">The text content.</div><div class="ttdef"><b>Definition:</b> text.h:71</div></div>
 <div class="ttc" id="aclassvrv_1_1_text_html_ae81c135fa786fbb57e272ba8715c910f"><div class="ttname"><a href="classvrv_1_1_text.html#ae81c135fa786fbb57e272ba8715c910f">vrv::Text::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_text_html_a5f1bfd8ddc03027709b6bb9e7d5ef367"><div class="ttname"><a href="classvrv_1_1_text.html#a5f1bfd8ddc03027709b6bb9e7d5ef367">vrv::Text::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> text.h:32</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>text.h</b></li>
-    <li class="footer">Generated on Tue Jun 13 2023 09:03:08 for Verovio by
+    <li class="footer">Generated on Wed Jun 14 2023 06:11:00 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

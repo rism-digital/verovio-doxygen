@@ -19,6 +19,8 @@ var classvrv_1_1_save_functor =
     [ "VisitObjectEnd", "classvrv_1_1_save_functor.html#a5e74eabcb960c8830fe0922ec4a6fa72", null ],
     [ "VisitRunningElement", "classvrv_1_1_save_functor.html#a9bc0dc40ab43dd0587d364675161a94d", null ],
     [ "VisitRunningElementEnd", "classvrv_1_1_save_functor.html#a3ad7bfce01769999f34e1a754c5e3a80", null ],
+    [ "VisitText", "classvrv_1_1_save_functor.html#a8f8ebafdffa6b3b69ce998bdd6f588cd", null ],
+    [ "VisitTextEnd", "classvrv_1_1_save_functor.html#a6e360afbc4727439417c25ae1ead13ec", null ],
     [ "VisitTupletBracket", "classvrv_1_1_save_functor.html#a9449591a0aeb4fff2fe99969688bf1ad", null ],
     [ "VisitTupletBracketEnd", "classvrv_1_1_save_functor.html#abe71250c274945a34c6c24604d46e926", null ],
     [ "VisitTupletNum", "classvrv_1_1_save_functor.html#a506da15da375be5b94d3ae789d2fc6f2", null ],

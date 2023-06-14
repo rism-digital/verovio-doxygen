@@ -6,6 +6,7 @@ var classvrv_1_1_prepare_data_initialization_functor =
     [ "VisitChord", "classvrv_1_1_prepare_data_initialization_functor.html#ae360af5dae993e5e3000e379fdd20570", null ],
     [ "VisitFloatingObject", "classvrv_1_1_prepare_data_initialization_functor.html#ab6d801c5fc65ac43f9fb10755bfbbb20", null ],
     [ "VisitKeySig", "classvrv_1_1_prepare_data_initialization_functor.html#ac4c1c715d23dee33bf36cb924168e715", null ],
+    [ "VisitRepeatMark", "classvrv_1_1_prepare_data_initialization_functor.html#a12d69479bdf850a362fce6fdd1d6697d", null ],
     [ "VisitRunningElement", "classvrv_1_1_prepare_data_initialization_functor.html#a230c0f9acc88d5e51bee0c6608ff9e30", null ],
     [ "VisitScore", "classvrv_1_1_prepare_data_initialization_functor.html#a488533e1143dd54c9c5bb3919ff41874", null ]
 ];

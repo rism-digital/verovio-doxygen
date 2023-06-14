@@ -38,6 +38,7 @@ var hierarchy =
           [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
           [ "vrv::PitchInflection", "classvrv_1_1_pitch_inflection.html", null ],
           [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
+          [ "vrv::RepeatMark", "classvrv_1_1_repeat_mark.html", null ],
           [ "vrv::Slur", "classvrv_1_1_slur.html", [
             [ "vrv::Phrase", "classvrv_1_1_phrase.html", null ]
           ] ],
@@ -163,6 +164,7 @@ var hierarchy =
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
       [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
+      [ "vrv::RepeatMark", "classvrv_1_1_repeat_mark.html", null ],
       [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
       [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
       [ "vrv::Syllable", "classvrv_1_1_syllable.html", null ],
@@ -313,6 +315,7 @@ var hierarchy =
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
+      [ "vrv::RepeatMark", "classvrv_1_1_repeat_mark.html", null ],
       [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
       [ "vrv::Symbol", "classvrv_1_1_symbol.html", null ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
@@ -330,6 +333,7 @@ var hierarchy =
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
+      [ "vrv::RepeatMark", "classvrv_1_1_repeat_mark.html", null ],
       [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
       [ "vrv::Symbol", "classvrv_1_1_symbol.html", null ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
@@ -656,6 +660,7 @@ var hierarchy =
         [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
         [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
         [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
+        [ "vrv::RepeatMark", "classvrv_1_1_repeat_mark.html", null ],
         [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ]
       ] ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
@@ -675,6 +680,9 @@ var hierarchy =
     [ "AttPointing", null, [
       [ "vrv::Graphic", "classvrv_1_1_graphic.html", null ],
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ]
+    ] ],
+    [ "AttRepeatMarkLog", null, [
+      [ "vrv::RepeatMark", "classvrv_1_1_repeat_mark.html", null ]
     ] ],
     [ "AttRestVisMensural", null, [
       [ "vrv::Rest", "classvrv_1_1_rest.html", null ]
@@ -735,6 +743,7 @@ var hierarchy =
         [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
         [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
         [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
+        [ "vrv::RepeatMark", "classvrv_1_1_repeat_mark.html", null ],
         [ "vrv::TimeSpanningInterface", "classvrv_1_1_time_spanning_interface.html", [
           [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ],
           [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
@@ -1197,6 +1206,7 @@ var hierarchy =
         [ "vrv::LabelAbbr", "classvrv_1_1_label_abbr.html", null ],
         [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
         [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
+        [ "vrv::RepeatMark", "classvrv_1_1_repeat_mark.html", null ],
         [ "vrv::Syl", "classvrv_1_1_syl.html", null ]
       ] ],
       [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ]

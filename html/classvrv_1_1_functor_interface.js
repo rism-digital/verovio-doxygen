@@ -184,6 +184,8 @@ var classvrv_1_1_functor_interface =
     [ "VisitRehEnd", "classvrv_1_1_functor_interface.html#afd64538d1c3b5e6fa024f96885a50bbc", null ],
     [ "VisitRend", "classvrv_1_1_functor_interface.html#ae446163093eff9328e58efba0928feef", null ],
     [ "VisitRendEnd", "classvrv_1_1_functor_interface.html#a96e6d7dc5d87546840465e4f35aff538", null ],
+    [ "VisitRepeatMark", "classvrv_1_1_functor_interface.html#ab1483e68d9a166baf99ee223b626fd28", null ],
+    [ "VisitRepeatMarkEnd", "classvrv_1_1_functor_interface.html#a345d0af0cb5bed4ecdb48fb3b275187d", null ],
     [ "VisitRest", "classvrv_1_1_functor_interface.html#a5e837d9ee86af3e1e9c6f282d4a817dd", null ],
     [ "VisitRestEnd", "classvrv_1_1_functor_interface.html#a841253cdb1a935b6022d6107276c31dd", null ],
     [ "VisitRunningElement", "classvrv_1_1_functor_interface.html#ab16359a5119aec301206479dda89d8fc", null ],

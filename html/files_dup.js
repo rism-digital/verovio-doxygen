@@ -176,6 +176,7 @@ var files_dup =
     [ "reg.h", "reg_8h_source.html", null ],
     [ "reh.h", "reh_8h_source.html", null ],
     [ "rend.h", "rend_8h_source.html", null ],
+    [ "repeatmark.h", "repeatmark_8h_source.html", null ],
     [ "resetfunctor.h", "resetfunctor_8h_source.html", null ],
     [ "resources.h", "resources_8h_source.html", null ],
     [ "rest.h", "rest_8h_source.html", null ],
