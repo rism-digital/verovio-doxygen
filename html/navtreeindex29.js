@@ -1,5 +1,6 @@
 var NAVTREEINDEX29 =
 {
+"section_8h_source.html":[2,0,188],
 "setscoredeffunctor_8h_source.html":[2,0,189],
 "sic_8h_source.html":[2,0,190],
 "slur_8h_source.html":[2,0,191],
