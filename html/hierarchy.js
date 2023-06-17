@@ -426,6 +426,7 @@ var hierarchy =
         [ "vrv::Supplied", "classvrv_1_1_supplied.html", null ],
         [ "vrv::Unclear", "classvrv_1_1_unclear.html", null ]
       ] ],
+      [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
       [ "vrv::InstrDef", "classvrv_1_1_instr_def.html", null ],
       [ "vrv::LayerDef", "classvrv_1_1_layer_def.html", null ],
       [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
@@ -474,6 +475,7 @@ var hierarchy =
       [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
       [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
       [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
+      [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
       [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
       [ "vrv::Octave", "classvrv_1_1_octave.html", null ]
