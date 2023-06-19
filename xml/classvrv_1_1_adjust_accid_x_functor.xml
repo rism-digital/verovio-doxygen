@@ -105,7 +105,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustaccidxfunctor.h" line="54" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustaccidxfunctor.h" bodystart="54" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustaccidxfunctor.h" line="69" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustaccidxfunctor.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_adjust_accid_x_functor_1aa4a8c10ee9b878382155c01aa1d640eb" prot="private" static="no" mutable="no">
+        <type>std::set&lt; <ref refid="classvrv_1_1_accid" kindref="compound">Accid</ref> * &gt;</type>
+        <definition>std::set&lt;Accid *&gt; vrv::AdjustAccidXFunctor::m_adjustedAccids</definition>
+        <argsstring></argsstring>
+        <name>m_adjustedAccids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustaccidxfunctor.h" line="72" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustaccidxfunctor.h" bodystart="72" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -123,6 +136,73 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/adjustaccidxfunctor.h" line="35" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustaccidxfunctor.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classvrv_1_1_adjust_accid_x_functor_1a25c30006ba088a4a5f4eabee1a7d868a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classvrv_1_1_accid" kindref="compound">Accid</ref> * &gt;</type>
+        <definition>std::vector&lt;Accid *&gt; vrv::AdjustAccidXFunctor::GetAccidentalsForAdjustment</definition>
+        <argsstring>(AlignmentReference *alignmentReference) const</argsstring>
+        <name>GetAccidentalsForAdjustment</name>
+        <param>
+          <type><ref refid="classvrv_1_1_alignment_reference" kindref="compound">AlignmentReference</ref> *</type>
+          <declname>alignmentReference</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustaccidxfunctor.h" line="52" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_accid_x_functor_1a32662c7d20c7856cc23f8f31f2b61728" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::AdjustAccidXFunctor::SetAccidLayerAlignment</definition>
+        <argsstring>(Accid *accid, const AlignmentReference *alignmentReference) const</argsstring>
+        <name>SetAccidLayerAlignment</name>
+        <param>
+          <type><ref refid="classvrv_1_1_accid" kindref="compound">Accid</ref> *</type>
+          <declname>accid</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classvrv_1_1_alignment_reference" kindref="compound">AlignmentReference</ref> *</type>
+          <declname>alignmentReference</declname>
+        </param>
+        <briefdescription>
+<para>Sets whether the accidental should be aligned with all elements of the alignmentReference or elements from the same layer only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustaccidxfunctor.h" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_accid_x_functor_1a363fd6d9d997d1e765d322b17528b038" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::AdjustAccidXFunctor::AdjustAccidWithSpace</definition>
+        <argsstring>(Accid *accid, AlignmentReference *alignmentReference, int staffSize)</argsstring>
+        <name>AdjustAccidWithSpace</name>
+        <param>
+          <type><ref refid="classvrv_1_1_accid" kindref="compound">Accid</ref> *</type>
+          <declname>accid</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_alignment_reference" kindref="compound">AlignmentReference</ref> *</type>
+          <declname>alignmentReference</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>staffSize</declname>
+        </param>
+        <briefdescription>
+<para>Adjust an accidental horizontally. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustaccidxfunctor.h" line="63" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -385,18 +465,21 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/adjustaccidxfunctor.h" line="22" column="44" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustaccidxfunctor.h" bodystart="22" bodyend="55"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/adjustaccidxfunctor.h" line="22" column="44" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustaccidxfunctor.h" bodystart="22" bodyend="73"/>
     <listofallmembers>
+      <member refid="classvrv_1_1_adjust_accid_x_functor_1a363fd6d9d997d1e765d322b17528b038" prot="private" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>AdjustAccidWithSpace</name></member>
       <member refid="classvrv_1_1_adjust_accid_x_functor_1a881ab57461cd5cce5244ec270f292567" prot="public" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>AdjustAccidXFunctor</name></member>
       <member refid="classvrv_1_1_doc_functor_1a25eb1412bf1c48280933292b0dd26c39" prot="public" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>DocFunctor</name></member>
       <member refid="classvrv_1_1_functor_1a49b8e700f8f3b3b232d6a7e558438908" prot="public" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>Functor</name></member>
       <member refid="classvrv_1_1_functor_base_1a45d9ca7642da874e18b1d20a086fa015" prot="public" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>FunctorBase</name></member>
       <member refid="classvrv_1_1_functor_interface_1a7a1d67dea0f876f2a8dc736204ec6603" prot="public" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>FunctorInterface</name></member>
+      <member refid="classvrv_1_1_adjust_accid_x_functor_1a25c30006ba088a4a5f4eabee1a7d868a" prot="private" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>GetAccidentalsForAdjustment</name></member>
       <member refid="classvrv_1_1_functor_base_1a7ed4d14dc996ffe7a86231566fd9e06b" prot="public" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>GetCode</name></member>
       <member refid="classvrv_1_1_functor_base_1a1dc2bd77ebadb86695b34484c72d3d6a" prot="public" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>GetDirection</name></member>
       <member refid="classvrv_1_1_doc_functor_1a529b3b4a949efdad3088db07eb96f6f3" prot="public" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>GetDoc</name></member>
       <member refid="classvrv_1_1_functor_base_1acf8c35f221dba7293bc8f4fa71f1e7ca" prot="public" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>GetFilters</name></member>
       <member refid="classvrv_1_1_adjust_accid_x_functor_1a4f9f2e418e39e7b372d488cfd73748f3" prot="public" virt="virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>ImplementsEndInterface</name></member>
+      <member refid="classvrv_1_1_adjust_accid_x_functor_1aa4a8c10ee9b878382155c01aa1d640eb" prot="private" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>m_adjustedAccids</name></member>
       <member refid="classvrv_1_1_adjust_accid_x_functor_1af0c2df9db8353504c74c959253f13a45" prot="private" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>m_currentMeasure</name></member>
       <member refid="classvrv_1_1_doc_functor_1a7ea8ec6a07220ec7287e648e0a4ce8df" prot="protected" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>m_doc</name></member>
       <member refid="classvrv_1_1_functor_base_1ab6d6edca499db0e20aca805c419f0e5a" prot="public" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>PopDirection</name></member>
@@ -404,6 +487,7 @@
       <member refid="classvrv_1_1_functor_base_1a3ba2a0636bdae93491641da1713b2037" prot="public" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>PushDirection</name></member>
       <member refid="classvrv_1_1_functor_base_1ac1e065f2e0b85d178062b2c830e67d82" prot="public" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>PushFilters</name></member>
       <member refid="classvrv_1_1_functor_base_1a08c690f2a45f5c15e38c86f1d461f02c" prot="public" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>ResetCode</name></member>
+      <member refid="classvrv_1_1_adjust_accid_x_functor_1a32662c7d20c7856cc23f8f31f2b61728" prot="private" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>SetAccidLayerAlignment</name></member>
       <member refid="classvrv_1_1_functor_base_1af34204cf6852d525df006eb588cb2111" prot="public" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>SetCode</name></member>
       <member refid="classvrv_1_1_functor_base_1a8ee0a7ab511cfc7e2ea1367212b42617" prot="public" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>SetVisibleOnly</name></member>
       <member refid="classvrv_1_1_functor_base_1ad3c83180489aa76f1afb5b5e6fa0c52e" prot="public" virt="non-virtual"><scope>vrv::AdjustAccidXFunctor</scope><name>VisibleOnly</name></member>

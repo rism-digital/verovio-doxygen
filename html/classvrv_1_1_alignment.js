@@ -8,7 +8,6 @@ var classvrv_1_1_alignment =
     [ "AcceptEnd", "classvrv_1_1_alignment.html#ad0b036d330a309380589740052aa94ff", null ],
     [ "AcceptEnd", "classvrv_1_1_alignment.html#a32c1e1c67e7b0245b2406a4f89f8e133", null ],
     [ "AddLayerElementRef", "classvrv_1_1_alignment.html#ab52c03819037b643b89612716dc4629a", null ],
-    [ "AddToAccidSpace", "classvrv_1_1_alignment.html#a54d97c1551306ae4def0e8ceb7be0152", null ],
     [ "ClearGraceAligners", "classvrv_1_1_alignment.html#a69dbbfa23611f87db7df6c03a26e52a9", null ],
     [ "GetAlignmentTopBottom", "classvrv_1_1_alignment.html#a0d0a0f0b03ae0a91009f7964b2b1d0ea", null ],
     [ "GetGraceAligner", "classvrv_1_1_alignment.html#ae806f6c44d2251c5adf385d21d22e2be", null ],
