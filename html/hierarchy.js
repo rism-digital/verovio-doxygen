@@ -315,6 +315,7 @@ var hierarchy =
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
+      [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
       [ "vrv::RepeatMark", "classvrv_1_1_repeat_mark.html", null ],
       [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
       [ "vrv::Symbol", "classvrv_1_1_symbol.html", null ],
