@@ -1,5 +1,18 @@
 var NAVTREEINDEX29 =
 {
+"restore_8h_source.html":[2,0,180],
+"runningelement_8h_source.html":[2,0,181],
+"runtimeclock_8h_source.html":[2,0,182],
+"savefunctor_8h_source.html":[2,0,183],
+"sb_8h_source.html":[2,0,184],
+"score_8h_source.html":[2,0,185],
+"scoredef_8h_source.html":[2,0,186],
+"scoredefinterface_8h_source.html":[2,0,187],
+"section_8h_source.html":[2,0,188],
+"setscoredeffunctor_8h_source.html":[2,0,189],
+"sic_8h_source.html":[2,0,190],
+"slur_8h_source.html":[2,0,191],
+"smufl_8h_source.html":[2,0,192],
 "space_8h_source.html":[2,0,193],
 "staff_8h_source.html":[2,0,194],
 "staffdef_8h_source.html":[2,0,195],

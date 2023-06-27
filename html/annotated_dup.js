@@ -384,6 +384,8 @@ var annotated_dup =
       [ "TransPitch", "classvrv_1_1_trans_pitch.html", "classvrv_1_1_trans_pitch" ],
       [ "TransposeFunctor", "classvrv_1_1_transpose_functor.html", "classvrv_1_1_transpose_functor" ],
       [ "Transposer", "classvrv_1_1_transposer.html", "classvrv_1_1_transposer" ],
+      [ "TransposeSelectedMdivFunctor", "classvrv_1_1_transpose_selected_mdiv_functor.html", "classvrv_1_1_transpose_selected_mdiv_functor" ],
+      [ "TransposeToSoundingPitchFunctor", "classvrv_1_1_transpose_to_sounding_pitch_functor.html", "classvrv_1_1_transpose_to_sounding_pitch_functor" ],
       [ "Trill", "classvrv_1_1_trill.html", "classvrv_1_1_trill" ],
       [ "Tuning", "classvrv_1_1_tuning.html", "classvrv_1_1_tuning" ],
       [ "Tuplet", "classvrv_1_1_tuplet.html", "classvrv_1_1_tuplet" ],

@@ -1111,7 +1111,10 @@ var hierarchy =
           [ "vrv::ScoreDefOptimizeFunctor", "classvrv_1_1_score_def_optimize_functor.html", null ],
           [ "vrv::ScoreDefSetCurrentFunctor", "classvrv_1_1_score_def_set_current_functor.html", null ],
           [ "vrv::ScoreDefSetCurrentPageFunctor", "classvrv_1_1_score_def_set_current_page_functor.html", null ],
-          [ "vrv::TransposeFunctor", "classvrv_1_1_transpose_functor.html", null ]
+          [ "vrv::TransposeFunctor", "classvrv_1_1_transpose_functor.html", [
+            [ "vrv::TransposeSelectedMdivFunctor", "classvrv_1_1_transpose_selected_mdiv_functor.html", null ],
+            [ "vrv::TransposeToSoundingPitchFunctor", "classvrv_1_1_transpose_to_sounding_pitch_functor.html", null ]
+          ] ]
         ] ],
         [ "vrv::FindAllByComparisonFunctor", "classvrv_1_1_find_all_by_comparison_functor.html", null ],
         [ "vrv::FindAllReferencedObjectsFunctor", "classvrv_1_1_find_all_referenced_objects_functor.html", null ],

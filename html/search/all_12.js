@@ -24,10 +24,12 @@ var searchData=
   ['transposedoc_1139',['TransposeDoc',['../classvrv_1_1_doc.html#a303c7a587723539a78b83f642111f2a1',1,'vrv::Doc']]],
   ['transposefunctor_1140',['TransposeFunctor',['../classvrv_1_1_transpose_functor.html',1,'vrv']]],
   ['transposer_1141',['Transposer',['../classvrv_1_1_transposer.html',1,'vrv']]],
-  ['trill_1142',['Trill',['../classvrv_1_1_trill.html',1,'vrv']]],
-  ['tuning_1143',['Tuning',['../classvrv_1_1_tuning.html',1,'vrv']]],
-  ['tuplet_1144',['Tuplet',['../classvrv_1_1_tuplet.html',1,'vrv']]],
-  ['tupletbracket_1145',['TupletBracket',['../classvrv_1_1_tuplet_bracket.html',1,'vrv']]],
-  ['tupletnum_1146',['TupletNum',['../classvrv_1_1_tuplet_num.html',1,'vrv']]],
-  ['turn_1147',['Turn',['../classvrv_1_1_turn.html',1,'vrv']]]
+  ['transposeselectedmdivfunctor_1142',['TransposeSelectedMdivFunctor',['../classvrv_1_1_transpose_selected_mdiv_functor.html',1,'vrv']]],
+  ['transposetosoundingpitchfunctor_1143',['TransposeToSoundingPitchFunctor',['../classvrv_1_1_transpose_to_sounding_pitch_functor.html',1,'vrv']]],
+  ['trill_1144',['Trill',['../classvrv_1_1_trill.html',1,'vrv']]],
+  ['tuning_1145',['Tuning',['../classvrv_1_1_tuning.html',1,'vrv']]],
+  ['tuplet_1146',['Tuplet',['../classvrv_1_1_tuplet.html',1,'vrv']]],
+  ['tupletbracket_1147',['TupletBracket',['../classvrv_1_1_tuplet_bracket.html',1,'vrv']]],
+  ['tupletnum_1148',['TupletNum',['../classvrv_1_1_tuplet_num.html',1,'vrv']]],
+  ['turn_1149',['Turn',['../classvrv_1_1_turn.html',1,'vrv']]]
 ];
