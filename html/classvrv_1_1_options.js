@@ -114,6 +114,7 @@ var classvrv_1_1_options =
     [ "m_moveScoreDefinitionToStaff", "classvrv_1_1_options.html#aa59aade30d6aba8f4ee6c4a6bf40cba4", null ],
     [ "m_multiRestStyle", "classvrv_1_1_options.html#a3256d1a305bd5936d4fe47843552e4bb", null ],
     [ "m_multiRestThickness", "classvrv_1_1_options.html#a5ded106a1115fde217014cbf2826a0e9", null ],
+    [ "m_neumeAsNote", "classvrv_1_1_options.html#a6ecb491aae00c0ebd1ab3f70a1cb9852", null ],
     [ "m_noJustification", "classvrv_1_1_options.html#a69dd05fc3c0518b6397c408802493b2c", null ],
     [ "m_octaveAlternativeSymbols", "classvrv_1_1_options.html#a5e6d1e37a0d2ea2de8b67889f9e13c4b", null ],
     [ "m_octaveLineThickness", "classvrv_1_1_options.html#a83da51f210f16af57b50095b2e5def11", null ],

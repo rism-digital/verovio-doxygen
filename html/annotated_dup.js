@@ -212,6 +212,7 @@ var annotated_dup =
       [ "Lem", "classvrv_1_1_lem.html", "classvrv_1_1_lem" ],
       [ "Ligature", "classvrv_1_1_ligature.html", "classvrv_1_1_ligature" ],
       [ "LinkingInterface", "classvrv_1_1_linking_interface.html", "classvrv_1_1_linking_interface" ],
+      [ "Liquescent", "classvrv_1_1_liquescent.html", "classvrv_1_1_liquescent" ],
       [ "Lv", "classvrv_1_1_lv.html", "classvrv_1_1_lv" ],
       [ "Mdiv", "classvrv_1_1_mdiv.html", "classvrv_1_1_mdiv" ],
       [ "Measure", "classvrv_1_1_measure.html", "classvrv_1_1_measure" ],

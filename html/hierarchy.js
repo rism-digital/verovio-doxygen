@@ -149,6 +149,7 @@ var hierarchy =
       [ "vrv::HalfmRpt", "classvrv_1_1_halfm_rpt.html", null ],
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
+      [ "vrv::Liquescent", "classvrv_1_1_liquescent.html", null ],
       [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ],
       [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
       [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
@@ -202,6 +203,7 @@ var hierarchy =
         [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
         [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
         [ "vrv::Ligature", "classvrv_1_1_ligature.html", null ],
+        [ "vrv::Liquescent", "classvrv_1_1_liquescent.html", null ],
         [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ],
         [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ],
         [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
@@ -582,6 +584,7 @@ var hierarchy =
       [ "vrv::PitchInterface", "classvrv_1_1_pitch_interface.html", [
         [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
         [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
+        [ "vrv::Liquescent", "classvrv_1_1_liquescent.html", null ],
         [ "vrv::Nc", "classvrv_1_1_nc.html", null ],
         [ "vrv::Note", "classvrv_1_1_note.html", null ]
       ] ]
@@ -775,6 +778,7 @@ var hierarchy =
         [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
         [ "vrv::Dot", "classvrv_1_1_dot.html", null ],
         [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
+        [ "vrv::Liquescent", "classvrv_1_1_liquescent.html", null ],
         [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
         [ "vrv::MultiRest", "classvrv_1_1_multi_rest.html", null ],
         [ "vrv::Nc", "classvrv_1_1_nc.html", null ],

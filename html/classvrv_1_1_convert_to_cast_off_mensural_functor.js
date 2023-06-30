@@ -11,5 +11,6 @@ var classvrv_1_1_convert_to_cast_off_mensural_functor =
     [ "VisitObject", "classvrv_1_1_convert_to_cast_off_mensural_functor.html#af9824179f3cf05c307debe4e59f5b005", null ],
     [ "VisitScoreDef", "classvrv_1_1_convert_to_cast_off_mensural_functor.html#a571a2450bfee288506b97c2fa71e0068", null ],
     [ "VisitStaff", "classvrv_1_1_convert_to_cast_off_mensural_functor.html#a0d3c04cfe240761b603c7979960b68a3", null ],
+    [ "VisitSyllable", "classvrv_1_1_convert_to_cast_off_mensural_functor.html#a74f9b6f06d4e589d3f5794f03b8c6d40", null ],
     [ "VisitSystemElement", "classvrv_1_1_convert_to_cast_off_mensural_functor.html#ac99085a9d415ca0677f33a2c6f5dcd44", null ]
 ];

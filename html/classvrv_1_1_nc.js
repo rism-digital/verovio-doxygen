@@ -12,5 +12,6 @@ var classvrv_1_1_nc =
     [ "GetDurationInterface", "classvrv_1_1_nc.html#a49af988b5643d69b465e885965c6d828", null ],
     [ "GetPitchInterface", "classvrv_1_1_nc.html#adbc6d6fa3a17d0746f1b95ecc4ed74e1", null ],
     [ "GetPitchInterface", "classvrv_1_1_nc.html#a6bcc4c30d15a1b757a8a5ac93c15f09c", null ],
+    [ "IsSupportedChild", "classvrv_1_1_nc.html#ac5958e4d125d736c5c1b27a012baef75", null ],
     [ "Reset", "classvrv_1_1_nc.html#ad21af130a5d0b2f41ab0c69ecff02b10", null ]
 ];
