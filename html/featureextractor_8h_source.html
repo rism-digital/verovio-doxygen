@@ -97,64 +97,62 @@ $(document).ready(function(){initNavTree('featureextractor_8h_source.html',''); 
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;functorparams.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;options.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;jsonxx.h&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>vrv {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classvrv_1_1_feature_extractor.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_feature_extractor.html">FeatureExtractor</a> {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classvrv_1_1_feature_extractor.html">FeatureExtractor</a>(<span class="keyword">const</span> std::string &amp;options);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_feature_extractor.html">FeatureExtractor</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     * Clear the content of the feature extractor.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Reset();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_feature_extractor.html#a4423a8c50b18855e5d903c5a357d90f0">Extract</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>, <a class="code" href="classvrv_1_1_generate_features_params.html">GenerateFeaturesParams</a> *params);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_feature_extractor.html#a088178e8f5cfd6abe00a3070d2f8bbcf">ToJson</a>(std::string &amp;output);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classvrv_1_1_feature_extractor.html#a1306554a428a7a40acac7a9195c1fe6e">   56</a></span>&#160;    std::list&lt;Note *&gt; <a class="code" href="classvrv_1_1_feature_extractor.html#a1306554a428a7a40acac7a9195c1fe6e">m_previousNotes</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    jsonxx::Array m_pitchesChromatic;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    jsonxx::Array m_pitchesDiatonic;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    jsonxx::Array m_pitchesIds;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    jsonxx::Array m_intervalsChromatic;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    jsonxx::Array m_intervalsDiatonic;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    jsonxx::Array m_intervalGrossContour;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    jsonxx::Array m_intervalRefinedContour;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    jsonxx::Array m_intervalsIds;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;options.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;jsonxx.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>vrv {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classvrv_1_1_feature_extractor.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_feature_extractor.html">FeatureExtractor</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classvrv_1_1_feature_extractor.html">FeatureExtractor</a>(<span class="keyword">const</span> std::string &amp;options);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_feature_extractor.html">FeatureExtractor</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     * Clear the content of the feature extractor.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Reset();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_feature_extractor.html#a3a0c0c3c9618191fb26bd6e27234af93">Extract</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_feature_extractor.html#a088178e8f5cfd6abe00a3070d2f8bbcf">ToJson</a>(std::string &amp;output);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classvrv_1_1_feature_extractor.html#a3245f44b066535148c2a082661438a74">   55</a></span>&#160;    std::list&lt;const Note *&gt; <a class="code" href="classvrv_1_1_feature_extractor.html#a3245f44b066535148c2a082661438a74">m_previousNotes</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    jsonxx::Array m_pitchesChromatic;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    jsonxx::Array m_pitchesDiatonic;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    jsonxx::Array m_pitchesIds;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    jsonxx::Array m_intervalsChromatic;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    jsonxx::Array m_intervalsDiatonic;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    jsonxx::Array m_intervalGrossContour;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    jsonxx::Array m_intervalRefinedContour;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    jsonxx::Array m_intervalsIds;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_feature_extractor_html_a4423a8c50b18855e5d903c5a357d90f0"><div class="ttname"><a href="classvrv_1_1_feature_extractor.html#a4423a8c50b18855e5d903c5a357d90f0">vrv::FeatureExtractor::Extract</a></div><div class="ttdeci">void Extract(Object *object, GenerateFeaturesParams *params)</div><div class="ttdoc">Extract a feature for the object.</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:59</div></div>
-<div class="ttc" id="aclassvrv_1_1_feature_extractor_html"><div class="ttname"><a href="classvrv_1_1_feature_extractor.html">vrv::FeatureExtractor</a></div><div class="ttdef"><b>Definition:</b> featureextractor.h:22</div></div>
-<div class="ttc" id="aclassvrv_1_1_generate_features_params_html"><div class="ttname"><a href="classvrv_1_1_generate_features_params.html">vrv::GenerateFeaturesParams</a></div><div class="ttdoc">member 0: a pointer to the Doc member 1: a pointer to the FeatureExtractor to which extraction is del...</div><div class="ttdef"><b>Definition:</b> functorparams.h:1723</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:60</div></div>
+<div class="ttc" id="aclassvrv_1_1_feature_extractor_html"><div class="ttname"><a href="classvrv_1_1_feature_extractor.html">vrv::FeatureExtractor</a></div><div class="ttdef"><b>Definition:</b> featureextractor.h:21</div></div>
+<div class="ttc" id="aclassvrv_1_1_feature_extractor_html_a3245f44b066535148c2a082661438a74"><div class="ttname"><a href="classvrv_1_1_feature_extractor.html#a3245f44b066535148c2a082661438a74">vrv::FeatureExtractor::m_previousNotes</a></div><div class="ttdeci">std::list&lt; const Note * &gt; m_previousNotes</div><div class="ttdoc">A list of previous notes for interval calculation.</div><div class="ttdef"><b>Definition:</b> featureextractor.h:55</div></div>
+<div class="ttc" id="aclassvrv_1_1_feature_extractor_html_a3a0c0c3c9618191fb26bd6e27234af93"><div class="ttname"><a href="classvrv_1_1_feature_extractor.html#a3a0c0c3c9618191fb26bd6e27234af93">vrv::FeatureExtractor::Extract</a></div><div class="ttdeci">void Extract(const Object *object)</div><div class="ttdoc">Extract a feature for the object.</div></div>
 <div class="ttc" id="aclassvrv_1_1_feature_extractor_html_a088178e8f5cfd6abe00a3070d2f8bbcf"><div class="ttname"><a href="classvrv_1_1_feature_extractor.html#a088178e8f5cfd6abe00a3070d2f8bbcf">vrv::FeatureExtractor::ToJson</a></div><div class="ttdeci">void ToJson(std::string &amp;output)</div><div class="ttdoc">Write the current content of the extractor to a JSON string.</div></div>
-<div class="ttc" id="aclassvrv_1_1_feature_extractor_html_a1306554a428a7a40acac7a9195c1fe6e"><div class="ttname"><a href="classvrv_1_1_feature_extractor.html#a1306554a428a7a40acac7a9195c1fe6e">vrv::FeatureExtractor::m_previousNotes</a></div><div class="ttdeci">std::list&lt; Note * &gt; m_previousNotes</div><div class="ttdoc">A list of previous notes for interval calculation.</div><div class="ttdef"><b>Definition:</b> featureextractor.h:56</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>featureextractor.h</b></li>
-    <li class="footer">Generated on Wed Mar 1 2023 08:22:20 for Verovio by
+    <li class="footer">Generated on Mon Jul 3 2023 07:14:27 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

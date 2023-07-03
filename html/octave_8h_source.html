@@ -146,39 +146,42 @@ $(document).ready(function(){initNavTree('octave_8h_source.html',''); initResiza
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// Functors //</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//----------//</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_octave.html#ab18e06f6ed7366f723d78fc4fe5fca86">ResetVerticalAlignment</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    std::map&lt;const FloatingPositioner *, std::pair&lt;int, int&gt;&gt; m_drawingExtenderX;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_octave.html#a52e56e0b8a2a577cf4afd8f8770a676e">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_octave.html#a52e56e0b8a2a577cf4afd8f8770a676e">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    std::map&lt;const FloatingPositioner *, std::pair&lt;int, int&gt;&gt; m_drawingExtenderX;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassvrv_1_1_octave_html_a52e56e0b8a2a577cf4afd8f8770a676e"><div class="ttname"><a href="classvrv_1_1_octave.html#a52e56e0b8a2a577cf4afd8f8770a676e">vrv::Octave::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_octave_html_a930ab8ef7a4f1106178b806a8dd5282a"><div class="ttname"><a href="classvrv_1_1_octave.html#a930ab8ef7a4f1106178b806a8dd5282a">vrv::Octave::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> octave.h:41</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:59</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:60</div></div>
 <div class="ttc" id="aclassvrv_1_1_octave_html_a7403464904327ea0bcf7236d72d41dfb"><div class="ttname"><a href="classvrv_1_1_octave.html#a7403464904327ea0bcf7236d72d41dfb">vrv::Octave::GetVerticalContentBoundaryRel</a></div><div class="ttdeci">std::pair&lt; int, bool &gt; GetVerticalContentBoundaryRel(const Doc *doc, const FloatingPositioner *positioner, const BoundingBox *horizOverlappingBBox, bool contentTop) const override</div><div class="ttdoc">Determine the vertical content boundary.</div></div>
 <div class="ttc" id="aclassvrv_1_1_octave_html_a60779a6ef85ad9d9cddb1aed09b14bc4"><div class="ttname"><a href="classvrv_1_1_octave.html#a60779a6ef85ad9d9cddb1aed09b14bc4">vrv::Octave::ResetDrawingExtenderX</a></div><div class="ttdeci">void ResetDrawingExtenderX()</div><div class="ttdoc">Store the horizontal extender line coordinates.</div></div>
 <div class="ttc" id="aclassvrv_1_1_octave_html_ab156e3fd834ad083da894777e44ee444"><div class="ttname"><a href="classvrv_1_1_octave.html#ab156e3fd834ad083da894777e44ee444">vrv::Octave::GetLineWidth</a></div><div class="ttdeci">int GetLineWidth(const Doc *doc, int unit) const</div><div class="ttdoc">Calculate the octave line width.</div></div>
 <div class="ttc" id="aclassvrv_1_1_octave_html"><div class="ttname"><a href="classvrv_1_1_octave.html">vrv::Octave</a></div><div class="ttdoc">This class models the MEI &lt;octave&gt; element.</div><div class="ttdef"><b>Definition:</b> octave.h:25</div></div>
 <div class="ttc" id="aclassvrv_1_1_octave_html_a864a842091fd0a0196ff9089edcdd6ad"><div class="ttname"><a href="classvrv_1_1_octave.html#a864a842091fd0a0196ff9089edcdd6ad">vrv::Octave::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_octave_html_aa0f3a6652c8bf25e15e94c3955122fc6"><div class="ttname"><a href="classvrv_1_1_octave.html#aa0f3a6652c8bf25e15e94c3955122fc6">vrv::Octave::GetOctaveGlyph</a></div><div class="ttdeci">char32_t GetOctaveGlyph(bool withAltaBassa) const</div><div class="ttdoc">Get the SMuFL glyph.</div></div>
-<div class="ttc" id="aclassvrv_1_1_octave_html_ab18e06f6ed7366f723d78fc4fe5fca86"><div class="ttname"><a href="classvrv_1_1_octave.html#ab18e06f6ed7366f723d78fc4fe5fca86">vrv::Octave::ResetVerticalAlignment</a></div><div class="ttdeci">int ResetVerticalAlignment(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetVerticalAlignment.</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:27</div></div>
-<div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html">vrv::TimeSpanningInterface</a></div><div class="ttdoc">This class is an interface for spanning elements, such as slur, hairpin, etc.</div><div class="ttdef"><b>Definition:</b> timeinterface.h:145</div></div>
+<div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html">vrv::TimeSpanningInterface</a></div><div class="ttdoc">This class is an interface for spanning elements, such as slur, hairpin, etc.</div><div class="ttdef"><b>Definition:</b> timeinterface.h:138</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>octave.h</b></li>
-    <li class="footer">Generated on Wed Mar 1 2023 08:22:21 for Verovio by
+    <li class="footer">Generated on Mon Jul 3 2023 07:14:27 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

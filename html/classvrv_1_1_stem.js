@@ -1,13 +1,29 @@
 var classvrv_1_1_stem =
 [
-    [ "CalcStem", "classvrv_1_1_stem.html#aaa339fb5324212edf1663b4273f30483", null ],
+    [ "Stem", "classvrv_1_1_stem.html#a46360b09214d81f4d130e99757632ee8", null ],
+    [ "~Stem", "classvrv_1_1_stem.html#a8feba57af3b9b967512d2cb39895d9cd", null ],
+    [ "Accept", "classvrv_1_1_stem.html#a9be9c6876e37efcd075805f6fe8c67ae", null ],
+    [ "Accept", "classvrv_1_1_stem.html#accc7b9461ef500bd06e3b1669a477db6", null ],
+    [ "AcceptEnd", "classvrv_1_1_stem.html#a960cf74039e1d444ba9f59f3c389a5e6", null ],
+    [ "AcceptEnd", "classvrv_1_1_stem.html#a02b6b2792c334b14eaef9840c8400e8f", null ],
     [ "CalculateStemModAdjustment", "classvrv_1_1_stem.html#a9b3e4dbc926470d30d5a54040b008daf", null ],
-    [ "Clone", "classvrv_1_1_stem.html#a879f9f51518f9a9a13d97b79eeb535d3", null ],
+    [ "Clone", "classvrv_1_1_stem.html#a77a7d07b9d90c3cdde502260d8b00e1a", null ],
     [ "CompareToElementPosition", "classvrv_1_1_stem.html#ab6c256a8b5e413413dfa9de0be5a318e", null ],
     [ "FillAttributes", "classvrv_1_1_stem.html#a7bad9a20740515eabc477c9ad2e18751", null ],
+    [ "GetClassName", "classvrv_1_1_stem.html#a0ad0c677151ec3134871632aecab85cc", null ],
+    [ "GetDrawingStemAdjust", "classvrv_1_1_stem.html#a1f95e0c9b29d6df218ba9cc07e8be0e0", null ],
+    [ "GetDrawingStemDir", "classvrv_1_1_stem.html#a7308248beae22f5fc81b748eb23e54ad", null ],
+    [ "GetDrawingStemLen", "classvrv_1_1_stem.html#a06628e536a1d6fafed73e0791a569ac6", null ],
     [ "GetDrawingStemMod", "classvrv_1_1_stem.html#aeffd024bc792bb416e6bb0f8d77bb157", null ],
+    [ "GetStemModRelY", "classvrv_1_1_stem.html#acf1624788185582d3fb738aed6a5b9ef", null ],
+    [ "HasDrawingStemMod", "classvrv_1_1_stem.html#a43e19267422cabff922c093b57c8e85e", null ],
     [ "HasToBeAligned", "classvrv_1_1_stem.html#a5bef255e73057dfd6d8719cfbaca268e", null ],
     [ "IsSupportedChild", "classvrv_1_1_stem.html#ada6f97bae35bbcbe9cd4b30cf14f27f3", null ],
+    [ "IsVirtual", "classvrv_1_1_stem.html#a0c1e564f8d08832e092a7536d3399b78", null ],
+    [ "IsVirtual", "classvrv_1_1_stem.html#a465d5e56923679f5c7d328c19327062c", null ],
     [ "Reset", "classvrv_1_1_stem.html#a0ae2602ead12893022b5e9a4596978b5", null ],
-    [ "ResetData", "classvrv_1_1_stem.html#acb5836a988eec7848d91a49d4197eb7d", null ]
+    [ "SetDrawingStemAdjust", "classvrv_1_1_stem.html#a999c1ff2cd8ee4f8e126ecaaa8f0244d", null ],
+    [ "SetDrawingStemDir", "classvrv_1_1_stem.html#a471a6f88cb845e4c82a36c1f7d478c52", null ],
+    [ "SetDrawingStemLen", "classvrv_1_1_stem.html#a40bf932a0daf783d36b478f64dfd6b12", null ],
+    [ "SetDrawingStemMod", "classvrv_1_1_stem.html#abcbb5eb822ca6f57aafadd45f8449f3f", null ]
 ];

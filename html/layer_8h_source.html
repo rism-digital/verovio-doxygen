@@ -227,102 +227,66 @@ $(document).ready(function(){initNavTree('layer_8h_source.html',''); initResizab
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="comment">// Functors //</span></div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="comment">//----------//</span></div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a6136147f6de13201325d1531fc73f593">ConvertMarkupArticEnd</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a3ec0ef3941f1830f0617e943db32725e">ConvertToCastOffMensural</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_layer.html#a11cb4d5fe965f62cb5210c3bd6e050bb">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_layer.html#a11cb4d5fe965f62cb5210c3bd6e050bb">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#aaf89a9d26b64458fbe3c3535c67a100c">ConvertToUnCastOffMensural</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a581c4fbf06748e51dad3516c0467f630">ScoreDefUnsetCurrent</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    data_STEMDIRECTION m_drawingStemDir;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a9ef050714620ccb5b456c0b85e57d8e1">ResetHorizontalAlignment</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a13cdf860ad5ff95446c2300afb64b040">AlignHorizontally</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a412603dfaf75956bd8275a29e6215b0b">AlignHorizontallyEnd</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a56a95f4c13e8f49dd249d8790916098a">InitProcessingLists</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a23a6e091854b5209b3322684542fb1c3">PrepareRpt</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a9c62cac4b23f05b342420eff38c61416">InitOnsetOffset</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a210f68470f5a0766b1ae4c2b0340b815">ResetData</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a2f5e619f101f3b6fb679c8db17777364">FindElementInLayerStaffDefsByID</a>(FunctorParams *) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#ae6954d60aaa59e9dfaea4a60589f78ae">GenerateMIDI</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_layer.html#a983baa94f22d6dde6e5a4155d962edf7">GenerateMIDIEnd</a>(FunctorParams *functorParams) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    data_STEMDIRECTION m_drawingStemDir;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordtype">bool</span> m_crossStaffFromBelow;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordtype">bool</span> m_crossStaffFromAbove;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    Clef *m_staffDefClef;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    KeySig *m_staffDefKeySig;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    Mensur *m_staffDefMensur;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    MeterSig *m_staffDefMeterSig;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    MeterSigGrp *m_staffDefMeterSigGrp;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keywordtype">bool</span> m_drawKeySigCancellation;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160; </div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    Clef *m_cautionStaffDefClef;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    KeySig *m_cautionStaffDefKeySig;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    Mensur *m_cautionStaffDefMensur;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    MeterSig *m_cautionStaffDefMeterSig;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordtype">bool</span> m_drawCautionKeySigCancel;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;};</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordtype">bool</span> m_crossStaffFromBelow;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordtype">bool</span> m_crossStaffFromAbove;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    Clef *m_staffDefClef;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    KeySig *m_staffDefKeySig;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    Mensur *m_staffDefMensur;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    MeterSig *m_staffDefMeterSig;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    MeterSigGrp *m_staffDefMeterSigGrp;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordtype">bool</span> m_drawKeySigCancellation;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    Clef *m_cautionStaffDefClef;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    KeySig *m_cautionStaffDefKeySig;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    Mensur *m_cautionStaffDefMensur;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    MeterSig *m_cautionStaffDefMeterSig;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordtype">bool</span> m_drawCautionKeySigCancel;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;};</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_layer_html_a9c62cac4b23f05b342420eff38c61416"><div class="ttname"><a href="classvrv_1_1_layer.html#a9c62cac4b23f05b342420eff38c61416">vrv::Layer::InitOnsetOffset</a></div><div class="ttdeci">int InitOnsetOffset(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::InitOnsetOffset.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_acffb0a40ddc0ddc2e851e6114e04f8cf"><div class="ttname"><a href="classvrv_1_1_layer.html#acffb0a40ddc0ddc2e851e6114e04f8cf">vrv::Layer::GetClefFacs</a></div><div class="ttdeci">Clef * GetClefFacs(const LayerElement *test)</div><div class="ttdoc">Get the current clef based on facsimile for the test element.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_a5adbee5370bec875186360c8721425cd"><div class="ttname"><a href="classvrv_1_1_layer.html#a5adbee5370bec875186360c8721425cd">vrv::Layer::SetDrawingCautionValues</a></div><div class="ttdeci">void SetDrawingCautionValues(StaffDef *currentStaffDef)</div><div class="ttdoc">Set drawing caution clef, keysig, mensur, metersig if necessary and if available.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_a035da33d9afb127c05050f1e95c3e760"><div class="ttname"><a href="classvrv_1_1_layer.html#a035da33d9afb127c05050f1e95c3e760">vrv::Layer::GetCrossStaffClefLocOffset</a></div><div class="ttdeci">int GetCrossStaffClefLocOffset(const LayerElement *element, int locOffset) const</div><div class="ttdoc">Return the clef offset for the position if there are cross-staff clefs on the same layer.</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_html_a2f5e619f101f3b6fb679c8db17777364"><div class="ttname"><a href="classvrv_1_1_layer.html#a2f5e619f101f3b6fb679c8db17777364">vrv::Layer::FindElementInLayerStaffDefsByID</a></div><div class="ttdeci">int FindElementInLayerStaffDefsByID(FunctorParams *) const override</div><div class="ttdoc">See Object::FindElementInLayerStaffDefsByID.</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_html_a56a95f4c13e8f49dd249d8790916098a"><div class="ttname"><a href="classvrv_1_1_layer.html#a56a95f4c13e8f49dd249d8790916098a">vrv::Layer::InitProcessingLists</a></div><div class="ttdeci">int InitProcessingLists(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::InitProcessingLists.</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_html_a581c4fbf06748e51dad3516c0467f630"><div class="ttname"><a href="classvrv_1_1_layer.html#a581c4fbf06748e51dad3516c0467f630">vrv::Layer::ScoreDefUnsetCurrent</a></div><div class="ttdeci">int ScoreDefUnsetCurrent(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::UnscoreDefSetCurrent.</div></div>
+<div class="ttc" id="aclassvrv_1_1_layer_html_a11cb4d5fe965f62cb5210c3bd6e050bb"><div class="ttname"><a href="classvrv_1_1_layer.html#a11cb4d5fe965f62cb5210c3bd6e050bb">vrv::Layer::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html_a2bfb8ee92dbd7e805de0aae51d07d534"><div class="ttname"><a href="classvrv_1_1_object.html#a2bfb8ee92dbd7e805de0aae51d07d534">vrv::Object::GetIdx</a></div><div class="ttdeci">int GetIdx() const</div><div class="ttdoc">Return the index position of the object in its parent (-1 if not found)</div></div>
 <div class="ttc" id="aclassvrv_1_1_drawing_list_interface_html"><div class="ttname"><a href="classvrv_1_1_drawing_list_interface.html">vrv::DrawingListInterface</a></div><div class="ttdoc">This class is an interface for elements with duration, such as notes and rests.</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:32</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:59</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_html_a983baa94f22d6dde6e5a4155d962edf7"><div class="ttname"><a href="classvrv_1_1_layer.html#a983baa94f22d6dde6e5a4155d962edf7">vrv::Layer::GenerateMIDIEnd</a></div><div class="ttdeci">int GenerateMIDIEnd(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::GenerateMIDIEnd.</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:60</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_a68f1bf954bce23bc23b9a3c8fb8358f8"><div class="ttname"><a href="classvrv_1_1_layer.html#a68f1bf954bce23bc23b9a3c8fb8358f8">vrv::Layer::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Base method for checking if a child can be added.</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_html_a210f68470f5a0766b1ae4c2b0340b815"><div class="ttname"><a href="classvrv_1_1_layer.html#a210f68470f5a0766b1ae4c2b0340b815">vrv::Layer::ResetData</a></div><div class="ttdeci">int ResetData(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetData.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_a3fb13988a84586f8d0831dc950720fb3"><div class="ttname"><a href="classvrv_1_1_layer.html#a3fb13988a84586f8d0831dc950720fb3">vrv::Layer::GetClef</a></div><div class="ttdeci">Clef * GetClef(const LayerElement *test)</div><div class="ttdoc">Get the current clef for the test element.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_a6795308b758c849f8f87b6db477c323e"><div class="ttname"><a href="classvrv_1_1_layer.html#a6795308b758c849f8f87b6db477c323e">vrv::Layer::GetClefLocOffset</a></div><div class="ttdeci">int GetClefLocOffset(const LayerElement *test) const</div><div class="ttdoc">Return the clef offset for the position x.</div></div>
 <div class="ttc" id="aclassvrv_1_1_clef_html"><div class="ttname"><a href="classvrv_1_1_clef.html">vrv::Clef</a></div><div class="ttdoc">This class models the MEI &lt;clef&gt; element.</div><div class="ttdef"><b>Definition:</b> clef.h:27</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_html_a13cdf860ad5ff95446c2300afb64b040"><div class="ttname"><a href="classvrv_1_1_layer.html#a13cdf860ad5ff95446c2300afb64b040">vrv::Layer::AlignHorizontally</a></div><div class="ttdeci">int AlignHorizontally(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::AlignHorizontally.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_adfcf758667726eabfc225acc484fe525"><div class="ttname"><a href="classvrv_1_1_layer.html#adfcf758667726eabfc225acc484fe525">vrv::Layer::GetLayerIdx</a></div><div class="ttdeci">int GetLayerIdx() const</div><div class="ttdoc">Return the index position of the layer in its staff parent.</div><div class="ttdef"><b>Definition:</b> layer.h:69</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_html_a23a6e091854b5209b3322684542fb1c3"><div class="ttname"><a href="classvrv_1_1_layer.html#a23a6e091854b5209b3322684542fb1c3">vrv::Layer::PrepareRpt</a></div><div class="ttdeci">int PrepareRpt(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::PrepareRpt.</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_html_a412603dfaf75956bd8275a29e6215b0b"><div class="ttname"><a href="classvrv_1_1_layer.html#a412603dfaf75956bd8275a29e6215b0b">vrv::Layer::AlignHorizontallyEnd</a></div><div class="ttdeci">int AlignHorizontallyEnd(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::AlignHorizontallyEnd.</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_list_interface_html"><div class="ttname"><a href="classvrv_1_1_object_list_interface.html">vrv::ObjectListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:1689</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_html_a3ec0ef3941f1830f0617e943db32725e"><div class="ttname"><a href="classvrv_1_1_layer.html#a3ec0ef3941f1830f0617e943db32725e">vrv::Layer::ConvertToCastOffMensural</a></div><div class="ttdeci">int ConvertToCastOffMensural(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ConvertToCastOffMensural.</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_list_interface_html"><div class="ttname"><a href="classvrv_1_1_object_list_interface.html">vrv::ObjectListInterface</a></div><div class="ttdoc">This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p...</div><div class="ttdef"><b>Definition:</b> object.h:813</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_aee6de888c37d676dece5da69241f3330"><div class="ttname"><a href="classvrv_1_1_layer.html#aee6de888c37d676dece5da69241f3330">vrv::Layer::GetLayerElementsInTimeSpan</a></div><div class="ttdeci">ListOfObjects GetLayerElementsInTimeSpan(double time, double duration, const Measure *measure, int staff, bool excludeCurrent)</div><div class="ttdoc">Get the list of the layer elements used within a time span.</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_html_ae6954d60aaa59e9dfaea4a60589f78ae"><div class="ttname"><a href="classvrv_1_1_layer.html#ae6954d60aaa59e9dfaea4a60589f78ae">vrv::Layer::GenerateMIDI</a></div><div class="ttdeci">int GenerateMIDI(FunctorParams *functorParams) override</div><div class="ttdoc">Export the object to a MidiFile.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_ab80f5a46622fce2bfdefcca4b24b85d1"><div class="ttname"><a href="classvrv_1_1_layer.html#ab80f5a46622fce2bfdefcca4b24b85d1">vrv::Layer::GetCurrentClef</a></div><div class="ttdeci">Clef * GetCurrentClef()</div><div class="ttdoc">Get the current clef, keysig, mensur and meterSig.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_a7dd3863a9b2e40c622acdc7add4a1603"><div class="ttname"><a href="classvrv_1_1_layer.html#a7dd3863a9b2e40c622acdc7add4a1603">vrv::Layer::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> layer.h:48</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_a421c1c5be200da96251d817767f13f3d"><div class="ttname"><a href="classvrv_1_1_layer.html#a421c1c5be200da96251d817767f13f3d">vrv::Layer::SetDrawingStaffDefValues</a></div><div class="ttdeci">void SetDrawingStaffDefValues(StaffDef *currentStaffDef)</div><div class="ttdoc">Set drawing clef, keysig, mensur, metersig, metersiggrp if necessary and if available.</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_html_aaf89a9d26b64458fbe3c3535c67a100c"><div class="ttname"><a href="classvrv_1_1_layer.html#aaf89a9d26b64458fbe3c3535c67a100c">vrv::Layer::ConvertToUnCastOffMensural</a></div><div class="ttdeci">int ConvertToUnCastOffMensural(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ConvertToUnCastOffMensural.</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_html_a9ef050714620ccb5b456c0b85e57d8e1"><div class="ttname"><a href="classvrv_1_1_layer.html#a9ef050714620ccb5b456c0b85e57d8e1">vrv::Layer::ResetHorizontalAlignment</a></div><div class="ttdeci">int ResetHorizontalAlignment(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ResetHorizontalAlignment.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:43</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html"><div class="ttname"><a href="classvrv_1_1_layer.html">vrv::Layer</a></div><div class="ttdoc">This class represents a layer in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> layer.h:33</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_html_a6136147f6de13201325d1531fc73f593"><div class="ttname"><a href="classvrv_1_1_layer.html#a6136147f6de13201325d1531fc73f593">vrv::Layer::ConvertMarkupArticEnd</a></div><div class="ttdeci">int ConvertMarkupArticEnd(FunctorParams *functorParams) override</div><div class="ttdoc">See Object::ConvertMarkupArtic.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_a8d832b0116452b440a07f7aa693e506b"><div class="ttname"><a href="classvrv_1_1_layer.html#a8d832b0116452b440a07f7aa693e506b">vrv::Layer::GetLayerElementsForTimeSpanOf</a></div><div class="ttdeci">ListOfObjects GetLayerElementsForTimeSpanOf(const LayerElement *element, bool excludeCurrent=false)</div><div class="ttdoc">Get the list of the layer elements for the duration of an element Takes into account cross-staff situ...</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html_a9ec47a1c0b410a8c5a964560c1e0cd7a"><div class="ttname"><a href="classvrv_1_1_layer.html#a9ec47a1c0b410a8c5a964560c1e0cd7a">vrv::Layer::CloneReset</a></div><div class="ttdeci">void CloneReset() override</div><div class="ttdoc">Overriding CloneReset() method to be called after copy / assignment calls.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>layer.h</b></li>
-    <li class="footer">Generated on Wed Mar 1 2023 08:22:21 for Verovio by
+    <li class="footer">Generated on Mon Jul 3 2023 07:14:27 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

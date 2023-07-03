@@ -1,5 +1,5 @@
 var classvrv_1_1_functor =
 [
-    [ "m_returnCode", "classvrv_1_1_functor.html#a932a34b24d1424607b862d2416b14b86", null ],
-    [ "m_visibleOnly", "classvrv_1_1_functor.html#ac210e77a1c854e2db203f26ef6c57a5a", null ]
+    [ "Functor", "classvrv_1_1_functor.html#a49b8e700f8f3b3b232d6a7e558438908", null ],
+    [ "~Functor", "classvrv_1_1_functor.html#a2459207d9593c751f7594d3029305290", null ]
 ];
