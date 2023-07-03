@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Verovio: vrv::PgFoot2 Class Reference</title>
+<title>Verovio: vrv::TextLayoutElement Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,7 +64,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('classvrv_1_1_pg_foot2.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('classvrv_1_1_text_layout_element.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -85,176 +85,125 @@ $(document).ready(function(){initNavTree('classvrv_1_1_pg_foot2.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classvrv_1_1_pg_foot2-members.html">List of all members</a>  </div>
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classvrv_1_1_text_layout_element-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vrv::PgFoot2 Class Reference</div>  </div>
+<div class="title">vrv::TextLayoutElement Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This class represents an MEI pgFoot2.  
- <a href="classvrv_1_1_pg_foot2.html#details">More...</a></p>
+<p>This class represents a text element featuring horizontal and vertical layout.  
+ <a href="classvrv_1_1_text_layout_element.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="pgfoot2_8h_source.html">pgfoot2.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="textlayoutelement_8h_source.html">textlayoutelement.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for vrv::PgFoot2:</div>
+Inheritance diagram for vrv::TextLayoutElement:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classvrv_1_1_pg_foot2.png" usemap="#vrv::PgFoot2_map" alt=""/>
-  <map id="vrv::PgFoot2_map" name="vrv::PgFoot2_map">
-<area href="classvrv_1_1_running_element.html" title="This class represents running elements (headers and footers)." alt="vrv::RunningElement" shape="rect" coords="229,112,372,136"/>
+  <img src="classvrv_1_1_text_layout_element.png" usemap="#vrv::TextLayoutElement_map" alt=""/>
+  <map id="vrv::TextLayoutElement_map" name="vrv::TextLayoutElement_map">
 <area href="classvrv_1_1_object.html" title="This class represents a basic object." alt="vrv::Object" shape="rect" coords="0,56,143,80"/>
 <area href="classvrv_1_1_object_list_interface.html" title="This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p..." alt="vrv::ObjectListInterface" shape="rect" coords="153,56,296,80"/>
 <area href="classvrv_1_1_bounding_box.html" title="This class represents a basic object in the layout domain." alt="vrv::BoundingBox" shape="rect" coords="0,0,143,24"/>
+<area href="classvrv_1_1_div.html" title="This class represents an MEI Div." alt="vrv::Div" shape="rect" coords="76,168,219,192"/>
+<area href="classvrv_1_1_running_element.html" title="This class represents running elements (headers and footers)." alt="vrv::RunningElement" shape="rect" coords="229,168,372,192"/>
+<area href="classvrv_1_1_pg_foot.html" title="This class represents an MEI pgFoot." alt="vrv::PgFoot" shape="rect" coords="153,224,296,248"/>
+<area href="classvrv_1_1_pg_head.html" title="This class represents an MEI pgHead." alt="vrv::PgHead" shape="rect" coords="306,224,449,248"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a57ca03f99c008739b8f575066907d6b6"><td class="memItemLeft" align="right" valign="top"><a id="a57ca03f99c008739b8f575066907d6b6"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_pg_foot2.html#a57ca03f99c008739b8f575066907d6b6">GetTotalHeight</a> (const <a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc) const override</td></tr>
-<tr class="memdesc:a57ca03f99c008739b8f575066907d6b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overriden to get the appropriate margin. <br /></td></tr>
-<tr class="separator:a57ca03f99c008739b8f575066907d6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b255fc6463ebeaeac7d52934d1fdc20"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_text_layout_element.html#a8b255fc6463ebeaeac7d52934d1fdc20">AdjustDrawingScaling</a> (int width)</td></tr>
+<tr class="memdesc:a8b255fc6463ebeaeac7d52934d1fdc20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale the content of the running element.  <a href="classvrv_1_1_text_layout_element.html#a8b255fc6463ebeaeac7d52934d1fdc20">More...</a><br /></td></tr>
+<tr class="separator:a8b255fc6463ebeaeac7d52934d1fdc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fcce5d3afe883e549b6a30877552ffb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_text_layout_element.html#a5fcce5d3afe883e549b6a30877552ffb">AdjustRunningElementYPos</a> ()</td></tr>
+<tr class="memdesc:a5fcce5d3afe883e549b6a30877552ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust the postition of the content of the running element.  <a href="classvrv_1_1_text_layout_element.html#a5fcce5d3afe883e549b6a30877552ffb">More...</a><br /></td></tr>
+<tr class="separator:a5fcce5d3afe883e549b6a30877552ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, and other standard methods</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Reset method resets all attribute classes </p>
 </div></td></tr>
-<tr class="memitem:a3ec6c45ccbc8f36f8cb3735d25f1bae1"><td class="memItemLeft" align="right" valign="top"><a id="a3ec6c45ccbc8f36f8cb3735d25f1bae1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PgFoot2</b> ()</td></tr>
-<tr class="separator:a3ec6c45ccbc8f36f8cb3735d25f1bae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45c388cb89e9ce47fe69c261a419c78d"><td class="memItemLeft" align="right" valign="top"><a id="a45c388cb89e9ce47fe69c261a419c78d"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~PgFoot2</b> ()</td></tr>
-<tr class="separator:a45c388cb89e9ce47fe69c261a419c78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45addc3c352b0b23edf1d0de37231d59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_pg_foot2.html#a45addc3c352b0b23edf1d0de37231d59">Reset</a> () override</td></tr>
-<tr class="memdesc:a45addc3c352b0b23edf1d0de37231d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the object, that is 1) removing all childs and 2) resetting all attributes.  <a href="classvrv_1_1_pg_foot2.html#a45addc3c352b0b23edf1d0de37231d59">More...</a><br /></td></tr>
-<tr class="separator:a45addc3c352b0b23edf1d0de37231d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17e011ec24965a506dc7289709fb87c3"><td class="memItemLeft" align="right" valign="top"><a id="a17e011ec24965a506dc7289709fb87c3"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetClassName</b> () const override</td></tr>
-<tr class="separator:a17e011ec24965a506dc7289709fb87c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:ac947e6008f6304f47634a41c6f7ebc60"><td class="memItemLeft" align="right" valign="top"><a id="ac947e6008f6304f47634a41c6f7ebc60"></a>
-FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_pg_foot2.html#ac947e6008f6304f47634a41c6f7ebc60">Accept</a> (<a class="el" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) override</td></tr>
-<tr class="memdesc:ac947e6008f6304f47634a41c6f7ebc60"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_interface.html" title="This is a base class for regrouping MEI att classes.">Interface</a> for class functor visitation. <br /></td></tr>
-<tr class="separator:ac947e6008f6304f47634a41c6f7ebc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa75e1327793146b8c33b3f55f7c154d5"><td class="memItemLeft" align="right" valign="top"><a id="aa75e1327793146b8c33b3f55f7c154d5"></a>
-FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>Accept</b> (<a class="el" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) const override</td></tr>
-<tr class="separator:aa75e1327793146b8c33b3f55f7c154d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a543e611e77b8c1995fcb8c54a5f9eacf"><td class="memItemLeft" align="right" valign="top"><a id="a543e611e77b8c1995fcb8c54a5f9eacf"></a>
-FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>AcceptEnd</b> (<a class="el" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) override</td></tr>
-<tr class="separator:a543e611e77b8c1995fcb8c54a5f9eacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a487d1cd47bfba81f464fad375d322ab4"><td class="memItemLeft" align="right" valign="top"><a id="a487d1cd47bfba81f464fad375d322ab4"></a>
-FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>AcceptEnd</b> (<a class="el" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) const override</td></tr>
-<tr class="separator:a487d1cd47bfba81f464fad375d322ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classvrv_1_1_running_element"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_running_element')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_running_element.html">vrv::RunningElement</a></td></tr>
-<tr class="memitem:a79747fe8c2b0b4412229ea370504a1fe inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_running_element.html#a79747fe8c2b0b4412229ea370504a1fe">Clone</a> () const override</td></tr>
-<tr class="memdesc:a79747fe8c2b0b4412229ea370504a1fe inherit pub_methods_classvrv_1_1_running_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable cloning of the running elements (for now?).  <a href="classvrv_1_1_running_element.html#a79747fe8c2b0b4412229ea370504a1fe">More...</a><br /></td></tr>
-<tr class="separator:a79747fe8c2b0b4412229ea370504a1fe inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1466ff36a776308b176901910b0fe61 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="ad1466ff36a776308b176901910b0fe61"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetWidth</b> () const</td></tr>
-<tr class="separator:ad1466ff36a776308b176901910b0fe61 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57a0db80266fb422961749454e4f35e1 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_running_element.html#a57a0db80266fb422961749454e4f35e1">AdjustDrawingScaling</a> (int width)</td></tr>
-<tr class="memdesc:a57a0db80266fb422961749454e4f35e1 inherit pub_methods_classvrv_1_1_running_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale the content of the running element.  <a href="classvrv_1_1_running_element.html#a57a0db80266fb422961749454e4f35e1">More...</a><br /></td></tr>
-<tr class="separator:a57a0db80266fb422961749454e4f35e1 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3969e5fb5f31e4b1c3dca9eecd6b0db inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_running_element.html#ad3969e5fb5f31e4b1c3dca9eecd6b0db">AdjustRunningElementYPos</a> ()</td></tr>
-<tr class="memdesc:ad3969e5fb5f31e4b1c3dca9eecd6b0db inherit pub_methods_classvrv_1_1_running_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust the postition of the content of the running element.  <a href="classvrv_1_1_running_element.html#ad3969e5fb5f31e4b1c3dca9eecd6b0db">More...</a><br /></td></tr>
-<tr class="separator:ad3969e5fb5f31e4b1c3dca9eecd6b0db inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9715a70dc4ff18c6599ae8cfc2f7e31f inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a9715a70dc4ff18c6599ae8cfc2f7e31f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_running_element.html#a9715a70dc4ff18c6599ae8cfc2f7e31f">SetCurrentPageNum</a> (const <a class="el" href="classvrv_1_1_page.html">Page</a> *currentPage)</td></tr>
-<tr class="memdesc:a9715a70dc4ff18c6599ae8cfc2f7e31f inherit pub_methods_classvrv_1_1_running_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current page number by looking for a &lt;num label="page"&gt;#&lt;/num&gt; element. <br /></td></tr>
-<tr class="separator:a9715a70dc4ff18c6599ae8cfc2f7e31f inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a809a5cb7c0a8a873168576894ea5d3a0 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a809a5cb7c0a8a873168576894ea5d3a0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_running_element.html#a809a5cb7c0a8a873168576894ea5d3a0">LoadFooter</a> (const <a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc)</td></tr>
-<tr class="memdesc:a809a5cb7c0a8a873168576894ea5d3a0 inherit pub_methods_classvrv_1_1_running_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the footer from the resources (footer.svg) <br /></td></tr>
-<tr class="separator:a809a5cb7c0a8a873168576894ea5d3a0 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae18c3562e3ba01fa3fd072eb3f19f25e inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="ae18c3562e3ba01fa3fd072eb3f19f25e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_running_element.html#ae18c3562e3ba01fa3fd072eb3f19f25e">GetAlignmentPos</a> (data_HORIZONTALALIGNMENT h, data_VERTICALALIGNMENT v) const</td></tr>
-<tr class="memdesc:ae18c3562e3ba01fa3fd072eb3f19f25e inherit pub_methods_classvrv_1_1_running_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the cell position. <br /></td></tr>
-<tr class="separator:ae18c3562e3ba01fa3fd072eb3f19f25e inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad54c3f73d54d0d5b51eb993d7c0dd80d inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="ad54c3f73d54d0d5b51eb993d7c0dd80d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_running_element.html#ad54c3f73d54d0d5b51eb993d7c0dd80d">AddPageNum</a> (data_HORIZONTALALIGNMENT halign, data_VERTICALALIGNMENT valign)</td></tr>
-<tr class="memdesc:ad54c3f73d54d0d5b51eb993d7c0dd80d inherit pub_methods_classvrv_1_1_running_element"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_add.html">Add</a> page numbering to the running element. <br /></td></tr>
-<tr class="separator:ad54c3f73d54d0d5b51eb993d7c0dd80d inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf3503469f6676f1fed21d88bb8c7334 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="abf3503469f6676f1fed21d88bb8c7334"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RunningElement</b> ()</td></tr>
-<tr class="separator:abf3503469f6676f1fed21d88bb8c7334 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad72120452b33134d7e92522e88864984 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="ad72120452b33134d7e92522e88864984"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RunningElement</b> (ClassId classId)</td></tr>
-<tr class="separator:ad72120452b33134d7e92522e88864984 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceb986ba6979779917322bf9cec5b925 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="aceb986ba6979779917322bf9cec5b925"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RunningElement</b> (ClassId classId, const std::string &amp;classIdStr)</td></tr>
-<tr class="separator:aceb986ba6979779917322bf9cec5b925 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f519acbbf0e778dac71089bb71ab7ab inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a4f519acbbf0e778dac71089bb71ab7ab"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~RunningElement</b> ()</td></tr>
-<tr class="separator:a4f519acbbf0e778dac71089bb71ab7ab inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bcacf9ba0d635e41808e63d6e9cf425 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_running_element.html#a2bcacf9ba0d635e41808e63d6e9cf425">Reset</a> () override</td></tr>
-<tr class="memdesc:a2bcacf9ba0d635e41808e63d6e9cf425 inherit pub_methods_classvrv_1_1_running_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the object, that is 1) removing all childs and 2) resetting all attributes.  <a href="classvrv_1_1_running_element.html#a2bcacf9ba0d635e41808e63d6e9cf425">More...</a><br /></td></tr>
-<tr class="separator:a2bcacf9ba0d635e41808e63d6e9cf425 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafbd7b69b9401d2cbe46aee234e25496 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_running_element.html#aafbd7b69b9401d2cbe46aee234e25496">IsSupportedChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object) override</td></tr>
-<tr class="memdesc:aafbd7b69b9401d2cbe46aee234e25496 inherit pub_methods_classvrv_1_1_running_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for checking if a child can be added.  <a href="classvrv_1_1_running_element.html#aafbd7b69b9401d2cbe46aee234e25496">More...</a><br /></td></tr>
-<tr class="separator:aafbd7b69b9401d2cbe46aee234e25496 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f1f270cc24df4cde5b8026a188a3a98 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a2f1f270cc24df4cde5b8026a188a3a98"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsGenerated</b> () const</td></tr>
-<tr class="separator:a2f1f270cc24df4cde5b8026a188a3a98 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61156fe440b86ccd278b6152f4874250 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a61156fe440b86ccd278b6152f4874250"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>IsGenerated</b> (bool isGenerated)</td></tr>
-<tr class="separator:a61156fe440b86ccd278b6152f4874250 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79506b46add9f740c57c0afe5ecb0af3 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a79506b46add9f740c57c0afe5ecb0af3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingX</b> () const override</td></tr>
-<tr class="separator:a79506b46add9f740c57c0afe5ecb0af3 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a933bdcdf9263374039bca99c17ac54a2 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a933bdcdf9263374039bca99c17ac54a2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingY</b> () const override</td></tr>
-<tr class="separator:a933bdcdf9263374039bca99c17ac54a2 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad99cddf73705a541160bed1e7b34454b inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="ad99cddf73705a541160bed1e7b34454b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDrawingPage</b> (<a class="el" href="classvrv_1_1_page.html">Page</a> *page)</td></tr>
-<tr class="separator:ad99cddf73705a541160bed1e7b34454b inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d6e14c44591a620a4439b7966eb6d32 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a2d6e14c44591a620a4439b7966eb6d32"></a>
-<a class="el" href="classvrv_1_1_page.html">Page</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingPage</b> ()</td></tr>
-<tr class="separator:a2d6e14c44591a620a4439b7966eb6d32 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94e91f5eed2242c185784edf44f14539 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a94e91f5eed2242c185784edf44f14539"></a>
-const <a class="el" href="classvrv_1_1_page.html">Page</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingPage</b> () const</td></tr>
-<tr class="separator:a94e91f5eed2242c185784edf44f14539 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15732cf67a3883d9f0433af6aab7e975 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a15732cf67a3883d9f0433af6aab7e975"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingYRel</b> () const</td></tr>
-<tr class="separator:a15732cf67a3883d9f0433af6aab7e975 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a212de9d05319398c856b6a065bfa203e inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a212de9d05319398c856b6a065bfa203e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDrawingYRel</b> (int drawingYRel)</td></tr>
-<tr class="separator:a212de9d05319398c856b6a065bfa203e inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b7ddc12f9aec0d03699571883a1caf7 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a2b7ddc12f9aec0d03699571883a1caf7"></a>
+<tr class="memitem:a3c768e6b8f3e14147a0f1a150d80cff8"><td class="memItemLeft" align="right" valign="top"><a id="a3c768e6b8f3e14147a0f1a150d80cff8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TextLayoutElement</b> (ClassId classId, const std::string &amp;classIdStr)</td></tr>
+<tr class="separator:a3c768e6b8f3e14147a0f1a150d80cff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a471877b86b4f60714f0382f0f63b3669"><td class="memItemLeft" align="right" valign="top"><a id="a471877b86b4f60714f0382f0f63b3669"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~TextLayoutElement</b> ()</td></tr>
+<tr class="separator:a471877b86b4f60714f0382f0f63b3669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaad2854380ace7dd7026199db406c9a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_text_layout_element.html#aaad2854380ace7dd7026199db406c9a1">Reset</a> () override</td></tr>
+<tr class="memdesc:aaad2854380ace7dd7026199db406c9a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the object, that is 1) removing all childs and 2) resetting all attributes.  <a href="classvrv_1_1_text_layout_element.html#aaad2854380ace7dd7026199db406c9a1">More...</a><br /></td></tr>
+<tr class="separator:aaad2854380ace7dd7026199db406c9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Methods for adding allowed content</div></td></tr>
+<tr class="memitem:a1b17495273bb803f249c576baaac12f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_text_layout_element.html#a1b17495273bb803f249c576baaac12f0">IsSupportedChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object) override</td></tr>
+<tr class="memdesc:a1b17495273bb803f249c576baaac12f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base method for checking if a child can be added.  <a href="classvrv_1_1_text_layout_element.html#a1b17495273bb803f249c576baaac12f0">More...</a><br /></td></tr>
+<tr class="separator:a1b17495273bb803f249c576baaac12f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Setter and getter for the text element cells</div></td></tr>
+<tr class="memitem:ae4c32c8584f9a0215b0cfd0673d413af"><td class="memItemLeft" align="right" valign="top"><a id="ae4c32c8584f9a0215b0cfd0673d413af"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetCells</b> ()</td></tr>
-<tr class="separator:a2b7ddc12f9aec0d03699571883a1caf7 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67c2ec91815d2e3e7136e749d6d2309e inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a67c2ec91815d2e3e7136e749d6d2309e"></a>
+<tr class="separator:ae4c32c8584f9a0215b0cfd0673d413af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79774b36808152e893f33efa2ee662d2"><td class="memItemLeft" align="right" valign="top"><a id="a79774b36808152e893f33efa2ee662d2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AppendTextToCell</b> (int index, <a class="el" href="classvrv_1_1_text_element.html">TextElement</a> *text)</td></tr>
-<tr class="separator:a67c2ec91815d2e3e7136e749d6d2309e inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4824c43516c41bf9f6ac5a7662733608 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a4824c43516c41bf9f6ac5a7662733608"></a>
+<tr class="separator:a79774b36808152e893f33efa2ee662d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Setter and getter for the drawing scaling</div></td></tr>
+<tr class="memitem:a737b2be5c5b21be26e7935d93b4f9288"><td class="memItemLeft" align="right" valign="top"><a id="a737b2be5c5b21be26e7935d93b4f9288"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetDrawingScaling</b> ()</td></tr>
-<tr class="separator:a4824c43516c41bf9f6ac5a7662733608 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d8b430b18a0b74bd3011ea9a11b95e7 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a0d8b430b18a0b74bd3011ea9a11b95e7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_running_element.html#a0d8b430b18a0b74bd3011ea9a11b95e7">GetContentHeight</a> () const</td></tr>
-<tr class="memdesc:a0d8b430b18a0b74bd3011ea9a11b95e7 inherit pub_methods_classvrv_1_1_running_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Content height. <br /></td></tr>
-<tr class="separator:a0d8b430b18a0b74bd3011ea9a11b95e7 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47247ae060bee6c8b0649b0cbfc489d1 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a47247ae060bee6c8b0649b0cbfc489d1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_running_element.html#a47247ae060bee6c8b0649b0cbfc489d1">GetRowHeight</a> (int row) const</td></tr>
-<tr class="memdesc:a47247ae060bee6c8b0649b0cbfc489d1 inherit pub_methods_classvrv_1_1_running_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Row from 0 to 2. <br /></td></tr>
-<tr class="separator:a47247ae060bee6c8b0649b0cbfc489d1 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa48cff3c850eb97a2ee139b4db020604 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="aa48cff3c850eb97a2ee139b4db020604"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_running_element.html#aa48cff3c850eb97a2ee139b4db020604">GetColHeight</a> (int col) const</td></tr>
-<tr class="memdesc:aa48cff3c850eb97a2ee139b4db020604 inherit pub_methods_classvrv_1_1_running_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Col from 0 to 2. <br /></td></tr>
-<tr class="separator:aa48cff3c850eb97a2ee139b4db020604 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac418bfe7bce6281adf36d00c35eb59d3 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="ac418bfe7bce6281adf36d00c35eb59d3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_running_element.html#ac418bfe7bce6281adf36d00c35eb59d3">GetCellHeight</a> (int cell) const</td></tr>
-<tr class="memdesc:ac418bfe7bce6281adf36d00c35eb59d3 inherit pub_methods_classvrv_1_1_running_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Row from 0 to 8. <br /></td></tr>
-<tr class="separator:ac418bfe7bce6281adf36d00c35eb59d3 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5dc709b4906bb7e27879726e4cf7476 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="ab5dc709b4906bb7e27879726e4cf7476"></a>
-FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_running_element.html#ab5dc709b4906bb7e27879726e4cf7476">Accept</a> (<a class="el" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) override</td></tr>
-<tr class="memdesc:ab5dc709b4906bb7e27879726e4cf7476 inherit pub_methods_classvrv_1_1_running_element"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_interface.html" title="This is a base class for regrouping MEI att classes.">Interface</a> for class functor visitation. <br /></td></tr>
-<tr class="separator:ab5dc709b4906bb7e27879726e4cf7476 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a4295f4c67d1f2bf0ebba5001cf3fee inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a5a4295f4c67d1f2bf0ebba5001cf3fee"></a>
+<tr class="separator:a737b2be5c5b21be26e7935d93b4f9288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Get the size of row, cols or cells</div></td></tr>
+<tr class="memitem:a9513edb9a22f5cc7275349e15a306618"><td class="memItemLeft" align="right" valign="top"><a id="a9513edb9a22f5cc7275349e15a306618"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_text_layout_element.html#a9513edb9a22f5cc7275349e15a306618">GetTotalHeight</a> (const <a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc) const =0</td></tr>
+<tr class="memdesc:a9513edb9a22f5cc7275349e15a306618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height including margins. <br /></td></tr>
+<tr class="separator:a9513edb9a22f5cc7275349e15a306618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a222250cd86e21c3098f279e3c5ef5639"><td class="memItemLeft" align="right" valign="top"><a id="a222250cd86e21c3098f279e3c5ef5639"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_text_layout_element.html#a222250cd86e21c3098f279e3c5ef5639">GetContentHeight</a> () const</td></tr>
+<tr class="memdesc:a222250cd86e21c3098f279e3c5ef5639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Content height. <br /></td></tr>
+<tr class="separator:a222250cd86e21c3098f279e3c5ef5639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4720a453dd639567b2a83aa2602639b7"><td class="memItemLeft" align="right" valign="top"><a id="a4720a453dd639567b2a83aa2602639b7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_text_layout_element.html#a4720a453dd639567b2a83aa2602639b7">GetRowHeight</a> (int row) const</td></tr>
+<tr class="memdesc:a4720a453dd639567b2a83aa2602639b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Row from 0 to 2. <br /></td></tr>
+<tr class="separator:a4720a453dd639567b2a83aa2602639b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882bd607d903c03c02d3496c7a91c49a"><td class="memItemLeft" align="right" valign="top"><a id="a882bd607d903c03c02d3496c7a91c49a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_text_layout_element.html#a882bd607d903c03c02d3496c7a91c49a">GetColHeight</a> (int col) const</td></tr>
+<tr class="memdesc:a882bd607d903c03c02d3496c7a91c49a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Col from 0 to 2. <br /></td></tr>
+<tr class="separator:a882bd607d903c03c02d3496c7a91c49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575fcee63ccd21bbcea7f544a1a2f347"><td class="memItemLeft" align="right" valign="top"><a id="a575fcee63ccd21bbcea7f544a1a2f347"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_text_layout_element.html#a575fcee63ccd21bbcea7f544a1a2f347">GetCellHeight</a> (int cell) const</td></tr>
+<tr class="memdesc:a575fcee63ccd21bbcea7f544a1a2f347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Row from 0 to 8. <br /></td></tr>
+<tr class="separator:a575fcee63ccd21bbcea7f544a1a2f347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac014050e1acdbffcff81651fe28f657e"><td class="memItemLeft" align="right" valign="top"><a id="ac014050e1acdbffcff81651fe28f657e"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetTotalWidth</b> (const <a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc) const =0</td></tr>
+<tr class="separator:ac014050e1acdbffcff81651fe28f657e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad699414be3bb27aa565f8ce8b5e845d9"><td class="memItemLeft" align="right" valign="top"><a id="ad699414be3bb27aa565f8ce8b5e845d9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_text_layout_element.html#ad699414be3bb27aa565f8ce8b5e845d9">GetContentWidth</a> () const</td></tr>
+<tr class="memdesc:ad699414be3bb27aa565f8ce8b5e845d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Content width. <br /></td></tr>
+<tr class="separator:ad699414be3bb27aa565f8ce8b5e845d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a799e4cd5e61f04bd778434f339f5b2e2"><td class="memItemLeft" align="right" valign="top"><a id="a799e4cd5e61f04bd778434f339f5b2e2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_text_layout_element.html#a799e4cd5e61f04bd778434f339f5b2e2">GetRowWidth</a> (int col) const</td></tr>
+<tr class="memdesc:a799e4cd5e61f04bd778434f339f5b2e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Row from 0 to 2. <br /></td></tr>
+<tr class="separator:a799e4cd5e61f04bd778434f339f5b2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac30cb7b7481983919a4ad41dc88a7300"><td class="memItemLeft" align="right" valign="top"><a id="ac30cb7b7481983919a4ad41dc88a7300"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_text_layout_element.html#ac30cb7b7481983919a4ad41dc88a7300">GetColWidth</a> (int col) const</td></tr>
+<tr class="memdesc:ac30cb7b7481983919a4ad41dc88a7300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Col from 0 to 2. <br /></td></tr>
+<tr class="separator:ac30cb7b7481983919a4ad41dc88a7300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c7dce9edb66f8a4b57acdb5ddd96d0"><td class="memItemLeft" align="right" valign="top"><a id="a34c7dce9edb66f8a4b57acdb5ddd96d0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_text_layout_element.html#a34c7dce9edb66f8a4b57acdb5ddd96d0">GetCellWidth</a> (int cell) const</td></tr>
+<tr class="memdesc:a34c7dce9edb66f8a4b57acdb5ddd96d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Row from 0 to 8. <br /></td></tr>
+<tr class="separator:a34c7dce9edb66f8a4b57acdb5ddd96d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6591c3160b35f0ca84f7517e5fbef31"><td class="memItemLeft" align="right" valign="top"><a id="ab6591c3160b35f0ca84f7517e5fbef31"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_text_layout_element.html#ab6591c3160b35f0ca84f7517e5fbef31">GetAlignmentPos</a> (data_HORIZONTALALIGNMENT h, data_VERTICALALIGNMENT v) const</td></tr>
+<tr class="memdesc:ab6591c3160b35f0ca84f7517e5fbef31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the cell position. <br /></td></tr>
+<tr class="separator:ab6591c3160b35f0ca84f7517e5fbef31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67cd110d07fc1c367b1413679776c33f"><td class="memItemLeft" align="right" valign="top"><a id="a67cd110d07fc1c367b1413679776c33f"></a>
+FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_text_layout_element.html#a67cd110d07fc1c367b1413679776c33f">Accept</a> (<a class="el" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) override</td></tr>
+<tr class="memdesc:a67cd110d07fc1c367b1413679776c33f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_interface.html" title="This is a base class for regrouping MEI att classes.">Interface</a> for class functor visitation. <br /></td></tr>
+<tr class="separator:a67cd110d07fc1c367b1413679776c33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f4adcd455a69c970477cd39d81330bf"><td class="memItemLeft" align="right" valign="top"><a id="a4f4adcd455a69c970477cd39d81330bf"></a>
 FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>Accept</b> (<a class="el" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) const override</td></tr>
-<tr class="separator:a5a4295f4c67d1f2bf0ebba5001cf3fee inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d44e19517c874a79e80a5048a8f3638 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a7d44e19517c874a79e80a5048a8f3638"></a>
+<tr class="separator:a4f4adcd455a69c970477cd39d81330bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e86fc8bc271a37d4d7a32a9a19b5a8"><td class="memItemLeft" align="right" valign="top"><a id="a56e86fc8bc271a37d4d7a32a9a19b5a8"></a>
 FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>AcceptEnd</b> (<a class="el" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) override</td></tr>
-<tr class="separator:a7d44e19517c874a79e80a5048a8f3638 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d94229d1230cae87332c7b34578cbc9 inherit pub_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top"><a id="a2d94229d1230cae87332c7b34578cbc9"></a>
+<tr class="separator:a56e86fc8bc271a37d4d7a32a9a19b5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d1bee0eda85608d68d220a3c7f7609"><td class="memItemLeft" align="right" valign="top"><a id="a85d1bee0eda85608d68d220a3c7f7609"></a>
 FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>AcceptEnd</b> (<a class="el" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) const override</td></tr>
-<tr class="separator:a2d94229d1230cae87332c7b34578cbc9 inherit pub_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a85d1bee0eda85608d68d220a3c7f7609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvrv_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_object.html">vrv::Object</a></td></tr>
 <tr class="memitem:a3b131f39c868a8a1e9b768bdc0eae811 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a3b131f39c868a8a1e9b768bdc0eae811"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a3b131f39c868a8a1e9b768bdc0eae811">IsFloatingObject</a> () const</td></tr>
@@ -283,6 +232,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SortChildren</b> (<a 
 <tr class="memitem:ac7063ea155c08f4e39e5c59b735f1d9e inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#ac7063ea155c08f4e39e5c59b735f1d9e">MoveItselfTo</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *targetParent)</td></tr>
 <tr class="memdesc:ac7063ea155c08f4e39e5c59b735f1d9e inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move an object to another parent.  <a href="classvrv_1_1_object.html#ac7063ea155c08f4e39e5c59b735f1d9e">More...</a><br /></td></tr>
 <tr class="separator:ac7063ea155c08f4e39e5c59b735f1d9e inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d363effa62d58a65f8aba1330c1379 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#ab2d363effa62d58a65f8aba1330c1379">Clone</a> () const</td></tr>
+<tr class="memdesc:ab2d363effa62d58a65f8aba1330c1379 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method call for copying child classes.  <a href="classvrv_1_1_object.html#ab2d363effa62d58a65f8aba1330c1379">More...</a><br /></td></tr>
+<tr class="separator:ab2d363effa62d58a65f8aba1330c1379 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bf38f527d70161c92062a2347b7c11e inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a4bf38f527d70161c92062a2347b7c11e">CopyChildren</a> () const</td></tr>
 <tr class="memdesc:a4bf38f527d70161c92062a2347b7c11e inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate whereas children have to be copied in copy / assignment constructors.  <a href="classvrv_1_1_object.html#a4bf38f527d70161c92062a2347b7c11e">More...</a><br /></td></tr>
 <tr class="separator:a4bf38f527d70161c92062a2347b7c11e inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -437,6 +389,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Object</b> ()</td
 <tr class="memitem:aab95929358aad8730f586319a3417264 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="aab95929358aad8730f586319a3417264"></a>
 ClassId&#160;</td><td class="memItemRight" valign="bottom"><b>GetClassId</b> () const final</td></tr>
 <tr class="separator:aab95929358aad8730f586319a3417264 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f5f4c2c61b31f3e0cfafccf6893dd3 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a85f5f4c2c61b31f3e0cfafccf6893dd3"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetClassName</b> () const</td></tr>
+<tr class="separator:a85f5f4c2c61b31f3e0cfafccf6893dd3 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bc335e3bc5405f5dbaae757b5629996 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a9bc335e3bc5405f5dbaae757b5629996">SetAsReferenceObject</a> ()</td></tr>
 <tr class="memdesc:a9bc335e3bc5405f5dbaae757b5629996 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make an object a reference object that do not own children.  <a href="classvrv_1_1_object.html#a9bc335e3bc5405f5dbaae757b5629996">More...</a><br /></td></tr>
 <tr class="separator:a9bc335e3bc5405f5dbaae757b5629996 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -646,6 +601,12 @@ const <a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td c
 <tr class="memitem:a4e4858957b6d48a75bba2130939fe174 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a4e4858957b6d48a75bba2130939fe174"></a>
 const <a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetParent</b> () const</td></tr>
 <tr class="separator:a4e4858957b6d48a75bba2130939fe174 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac707920ee385b0c7bb52d4b0184e7e54 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="ac707920ee385b0c7bb52d4b0184e7e54"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingX</b> () const override</td></tr>
+<tr class="separator:ac707920ee385b0c7bb52d4b0184e7e54 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b30e0834719af6134364237c5f78940 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a2b30e0834719af6134364237c5f78940"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawingY</b> () const override</td></tr>
+<tr class="separator:a2b30e0834719af6134364237c5f78940 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a859aecc00ab75fc7ed2f2780bc0a6a51 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a859aecc00ab75fc7ed2f2780bc0a6a51"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetCachedDrawingX</b> () const override</td></tr>
 <tr class="separator:a859aecc00ab75fc7ed2f2780bc0a6a51 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1004,6 +965,12 @@ const <a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td c
 <a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetListBack</b> (const <a class="el" href="classvrv_1_1_object.html">Object</a> *node)</td></tr>
 <tr class="separator:a233aae7f38ba7ac8a2c9f1339ab60921 inherit pub_methods_classvrv_1_1_object_list_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:afdf7de237c668a8445e609c6b64d0320"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_text_layout_element.html#afdf7de237c668a8445e609c6b64d0320">FilterList</a> (ListOfConstObjects &amp;childList) const override</td></tr>
+<tr class="memdesc:afdf7de237c668a8445e609c6b64d0320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter the list for a specific class.  <a href="classvrv_1_1_text_layout_element.html#afdf7de237c668a8445e609c6b64d0320">More...</a><br /></td></tr>
+<tr class="separator:afdf7de237c668a8445e609c6b64d0320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classvrv_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classvrv_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classvrv_1_1_object.html">vrv::Object</a></td></tr>
@@ -1098,10 +1065,6 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverl
 <tr class="memitem:a74ae0995caefb72a71445ba43fce0652 inherit pub_attribs_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">ArrayOfStrAttr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a74ae0995caefb72a71445ba43fce0652">m_unsupported</a></td></tr>
 <tr class="memdesc:a74ae0995caefb72a71445ba43fce0652 inherit pub_attribs_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keep an array of unsupported attributes as pairs.  <a href="classvrv_1_1_object.html#a74ae0995caefb72a71445ba43fce0652">More...</a><br /></td></tr>
 <tr class="separator:a74ae0995caefb72a71445ba43fce0652 inherit pub_attribs_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classvrv_1_1_running_element"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classvrv_1_1_running_element')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classvrv_1_1_running_element.html">vrv::RunningElement</a></td></tr>
-<tr class="memitem:a9f45df6dec69a7470261919c46d387ac inherit pro_methods_classvrv_1_1_running_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_running_element.html#a9f45df6dec69a7470261919c46d387ac">FilterList</a> (ListOfConstObjects &amp;childList) const override</td></tr>
-<tr class="memdesc:a9f45df6dec69a7470261919c46d387ac inherit pro_methods_classvrv_1_1_running_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter the list for a specific class.  <a href="classvrv_1_1_running_element.html#a9f45df6dec69a7470261919c46d387ac">More...</a><br /></td></tr>
-<tr class="separator:a9f45df6dec69a7470261919c46d387ac inherit pro_methods_classvrv_1_1_running_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classvrv_1_1_bounding_box"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classvrv_1_1_bounding_box')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classvrv_1_1_bounding_box.html">vrv::BoundingBox</a></td></tr>
 <tr class="memitem:a4961ebaf8f99abe31ee894345cd84a16 inherit pro_attribs_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_bounding_box.html#a4961ebaf8f99abe31ee894345cd84a16">m_cachedDrawingX</a></td></tr>
 <tr class="memdesc:a4961ebaf8f99abe31ee894345cd84a16 inherit pro_attribs_classvrv_1_1_bounding_box"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cached version of the drawingX and drawingY values.  <a href="classvrv_1_1_bounding_box.html#a4961ebaf8f99abe31ee894345cd84a16">More...</a><br /></td></tr>
@@ -1111,10 +1074,52 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <tr class="separator:a548baf7b854ef877313302670da5d0b8 inherit pro_attribs_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class represents an MEI pgFoot2. </p>
+<div class="textblock"><p>This class represents a text element featuring horizontal and vertical layout. </p>
+<p>It is not an abstract class but should not be instanciated directly. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a45addc3c352b0b23edf1d0de37231d59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45addc3c352b0b23edf1d0de37231d59">&#9670;&nbsp;</a></span>Reset()</h2>
+<a id="a8b255fc6463ebeaeac7d52934d1fdc20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b255fc6463ebeaeac7d52934d1fdc20">&#9670;&nbsp;</a></span>AdjustDrawingScaling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vrv::TextLayoutElement::AdjustDrawingScaling </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scale the content of the running element. </p>
+<p>Currently unused. </p>
+
+</div>
+</div>
+<a id="a5fcce5d3afe883e549b6a30877552ffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fcce5d3afe883e549b6a30877552ffb">&#9670;&nbsp;</a></span>AdjustRunningElementYPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vrv::TextLayoutElement::AdjustRunningElementYPos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adjust the postition of the content of the running element. </p>
+<p>First adjust the content of each cell, and then the cells themselves. </p>
+
+</div>
+</div>
+<a id="afdf7de237c668a8445e609c6b64d0320"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdf7de237c668a8445e609c6b64d0320">&#9670;&nbsp;</a></span>FilterList()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1123,7 +1128,69 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void vrv::PgFoot2::Reset </td>
+          <td class="memname">void vrv::TextLayoutElement::FilterList </td>
+          <td>(</td>
+          <td class="paramtype">ListOfConstObjects &amp;&#160;</td>
+          <td class="paramname"><em>childList</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Filter the list for a specific class. </p>
+<p>Keep only the top &lt;rend&gt; and &lt;fig&gt; </p>
+
+<p>Reimplemented from <a class="el" href="classvrv_1_1_object_list_interface.html#afcdb6796d84a327e46ac2b6e3f8bd243">vrv::ObjectListInterface</a>.</p>
+
+</div>
+</div>
+<a id="a1b17495273bb803f249c576baaac12f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b17495273bb803f249c576baaac12f0">&#9670;&nbsp;</a></span>IsSupportedChild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vrv::TextLayoutElement::IsSupportedChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Base method for checking if a child can be added. </p>
+<p>The method has to be overridden. </p>
+
+<p>Reimplemented from <a class="el" href="classvrv_1_1_object.html#a06ffb8f7f251aeea862abe1f76b5599d">vrv::Object</a>.</p>
+
+</div>
+</div>
+<a id="aaad2854380ace7dd7026199db406c9a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaad2854380ace7dd7026199db406c9a1">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vrv::TextLayoutElement::Reset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1144,15 +1211,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="pgfoot2_8h_source.html">pgfoot2.h</a></li>
+<li><a class="el" href="textlayoutelement_8h_source.html">textlayoutelement.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_pg_foot2.html">PgFoot2</a></li>
-    <li class="footer">Generated on Sun Jul 2 2023 11:21:01 for Verovio by
+    <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_text_layout_element.html">TextLayoutElement</a></li>
+    <li class="footer">Generated on Mon Jul 3 2023 07:14:33 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

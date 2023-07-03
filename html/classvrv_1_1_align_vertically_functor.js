@@ -3,6 +3,7 @@ var classvrv_1_1_align_vertically_functor =
     [ "AlignVerticallyFunctor", "classvrv_1_1_align_vertically_functor.html#a146d3dee363839f57582649c5c089995", null ],
     [ "~AlignVerticallyFunctor", "classvrv_1_1_align_vertically_functor.html#af0d9e224289ce4e58c741defffa6f80d", null ],
     [ "ImplementsEndInterface", "classvrv_1_1_align_vertically_functor.html#a09ece14f6743759ebc5e1cdf463a347d", null ],
+    [ "VisitDiv", "classvrv_1_1_align_vertically_functor.html#af3590317f785eb5820d0ef5c560dbeea", null ],
     [ "VisitFig", "classvrv_1_1_align_vertically_functor.html#ae16b67a69eb327c1f249fdb66c101f68", null ],
     [ "VisitMeasure", "classvrv_1_1_align_vertically_functor.html#a812f5c6970e4f7d60aa1d619c8ade139", null ],
     [ "VisitPageEnd", "classvrv_1_1_align_vertically_functor.html#ab9c0e21ee9fb290ff0c3f0b383f7eae5", null ],

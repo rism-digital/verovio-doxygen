@@ -3,6 +3,7 @@ var classvrv_1_1_cast_off_to_selection_functor =
     [ "CastOffToSelectionFunctor", "classvrv_1_1_cast_off_to_selection_functor.html#afe8759acd4461bd042fb22d3644c6027", null ],
     [ "~CastOffToSelectionFunctor", "classvrv_1_1_cast_off_to_selection_functor.html#abc5f4331b327bd3c10ba65bbd5ef2bea", null ],
     [ "ImplementsEndInterface", "classvrv_1_1_cast_off_to_selection_functor.html#af702aa8b41b04af333767fe33c7ccd9c", null ],
+    [ "VisitDiv", "classvrv_1_1_cast_off_to_selection_functor.html#a4d1c036c475f653bae8cb280aa1fca6f", null ],
     [ "VisitEditorialElement", "classvrv_1_1_cast_off_to_selection_functor.html#a8cf5259c2492fb142ea93472b83f0ad2", null ],
     [ "VisitMeasure", "classvrv_1_1_cast_off_to_selection_functor.html#a0021687f52111a052187d535a958296d", null ],
     [ "VisitPageElement", "classvrv_1_1_cast_off_to_selection_functor.html#a47c999bcdd6902e65c893ea1963d0eae", null ],

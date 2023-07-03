@@ -3,6 +3,7 @@ var classvrv_1_1_cast_off_encoding_functor =
     [ "CastOffEncodingFunctor", "classvrv_1_1_cast_off_encoding_functor.html#a982b0fc0752075c64152906b3f9cedf7", null ],
     [ "~CastOffEncodingFunctor", "classvrv_1_1_cast_off_encoding_functor.html#a040759ef657034b633cdf8d72a1a083b", null ],
     [ "ImplementsEndInterface", "classvrv_1_1_cast_off_encoding_functor.html#ade387e2fc5c21b9830f987f2c4a624eb", null ],
+    [ "VisitDiv", "classvrv_1_1_cast_off_encoding_functor.html#a2c09eb910f08bbd2aaf4c545d4d9566b", null ],
     [ "VisitEditorialElement", "classvrv_1_1_cast_off_encoding_functor.html#abab6863f607b6feca164c62f9785eea8", null ],
     [ "VisitEnding", "classvrv_1_1_cast_off_encoding_functor.html#a14279d1de1875886b8625047eac8a7f6", null ],
     [ "VisitMeasure", "classvrv_1_1_cast_off_encoding_functor.html#a7368bc229ad71dd1923a4f56673b4054", null ],

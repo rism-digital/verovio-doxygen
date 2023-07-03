@@ -3,6 +3,7 @@ var classvrv_1_1_convert_to_page_based_functor =
     [ "ConvertToPageBasedFunctor", "classvrv_1_1_convert_to_page_based_functor.html#a8c3b3495eb0913f994fe8a961229ee68", null ],
     [ "~ConvertToPageBasedFunctor", "classvrv_1_1_convert_to_page_based_functor.html#a666c28264af891787bdca7e6a4b0b527", null ],
     [ "ImplementsEndInterface", "classvrv_1_1_convert_to_page_based_functor.html#a6476a327353ca66df7d12bf5f1c1e67a", null ],
+    [ "VisitDiv", "classvrv_1_1_convert_to_page_based_functor.html#a4320a44f089ed04aec468fee7aa5bdb8", null ],
     [ "VisitEditorialElement", "classvrv_1_1_convert_to_page_based_functor.html#a0120c19539e70d9c836f71ddc5d89155", null ],
     [ "VisitEditorialElementEnd", "classvrv_1_1_convert_to_page_based_functor.html#a2cf3f36b1248676516d37d3cdf7a32d3", null ],
     [ "VisitEnding", "classvrv_1_1_convert_to_page_based_functor.html#aaef7ae13da461838eaa8c632440f989e", null ],

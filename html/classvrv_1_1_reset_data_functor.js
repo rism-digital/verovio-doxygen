@@ -11,6 +11,7 @@ var classvrv_1_1_reset_data_functor =
     [ "VisitChord", "classvrv_1_1_reset_data_functor.html#ae0d263e58f05dbe48b314f85704f09a4", null ],
     [ "VisitControlElement", "classvrv_1_1_reset_data_functor.html#aa96e927987bb3cf34701f1e673db9307", null ],
     [ "VisitCustos", "classvrv_1_1_reset_data_functor.html#a46c2a8937294c63130eaace061f0644f", null ],
+    [ "VisitDiv", "classvrv_1_1_reset_data_functor.html#a4c7af6e326f74c533caef198d8a7022c", null ],
     [ "VisitDot", "classvrv_1_1_reset_data_functor.html#a215c658ae2b91b457161eceade8a3c8b", null ],
     [ "VisitDots", "classvrv_1_1_reset_data_functor.html#acb8edc08e6913facef6d48ff82caeff0", null ],
     [ "VisitEditorialElement", "classvrv_1_1_reset_data_functor.html#ac383cf49c8694ae66aafdd589ac73296", null ],

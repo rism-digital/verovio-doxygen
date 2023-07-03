@@ -394,8 +394,8 @@
         <reimplementedby refid="classvrv_1_1_reset_data_functor_1a1bb6a832c4ac2487d60268f2d388dbde">VisitMeasure</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_x_pos_functor_1a72c2bd17e76330d83145c6a41fa02fd4">VisitMeasure</reimplementedby>
         <reimplementedby refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a339aebb961914559ecdab27fa1b0d6fe">VisitMeasure</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_align_measures_functor_1a5790773e42fd8bf741011b9fcc90b2f3">VisitMeasure</reimplementedby>
         <reimplementedby refid="classvrv_1_1_init_max_measure_duration_functor_1a5cdc8071621bbb6b901419df65b5ddc9">VisitMeasure</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_align_measures_functor_1a5790773e42fd8bf741011b9fcc90b2f3">VisitMeasure</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_horizontal_alignment_functor_1a4262ad59e122da08899ee7eaae4e36a9">VisitMeasure</reimplementedby>
         <reimplementedby refid="classvrv_1_1_prepare_cross_staff_functor_1a9980ef5b618f14ffd9f1dfd1cda25856">VisitMeasure</reimplementedby>
         <reimplementedby refid="classvrv_1_1_score_def_set_current_functor_1a425ac68509cb4fefa324e1e899d56ebf">VisitMeasure</reimplementedby>
@@ -812,9 +812,9 @@
         <argsstring>(System *system)</argsstring>
         <name>VisitSystem</name>
         <reimplementedby refid="classvrv_1_1_adjust_tempo_functor_1ab1b3bfb1ae4f99c357b9e945d5a801e6">VisitSystem</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_adjust_y_pos_functor_1a264113a565b7b0566ecd61dac826e8e2">VisitSystem</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_staff_overlap_functor_1a1f1228e6e37856ce0a9af09fd1a6dc39">VisitSystem</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_floating_positioners_functor_1a9d8126f68e0768df9eda5a7c1740df0b">VisitSystem</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_adjust_y_pos_functor_1a264113a565b7b0566ecd61dac826e8e2">VisitSystem</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_syl_spacing_functor_1a0d302e95b547abe92761ed999822f0a5">VisitSystem</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_harm_grps_spacing_functor_1a9d5aaecdb86d4e4ab8b0f9bbc24222a7">VisitSystem</reimplementedby>
         <reimplementedby refid="classvrv_1_1_apply_p_p_u_factor_functor_1ac47dfbdf6492653beae8f5825c6ba280">VisitSystem</reimplementedby>
@@ -961,13 +961,56 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <header>Visit running elements</header>
+      <header>Visit text layout elements</header>
+      <memberdef kind="function" id="classvrv_1_1_functor_interface_1a40e6efc638fc8a856e828f204592bdd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FunctorCode</type>
+        <definition>virtual FunctorCode vrv::FunctorInterface::VisitDiv</definition>
+        <argsstring>(Div *div)</argsstring>
+        <name>VisitDiv</name>
+        <reimplementedby refid="classvrv_1_1_convert_to_page_based_functor_1a4320a44f089ed04aec468fee7aa5bdb8">VisitDiv</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_adjust_y_pos_functor_1a177d4e6250a2645fabee1c644689c933">VisitDiv</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_prepare_data_initialization_functor_1ab877258b5e091f5f2d33266fc21ae0d5">VisitDiv</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_reset_data_functor_1a4c7af6e326f74c533caef198d8a7022c">VisitDiv</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_cast_off_systems_functor_1a711e3f7f38df9f01154c672839650c4c">VisitDiv</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_align_measures_functor_1ac502fb43714be374f652ae87a0ec27b6">VisitDiv</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_reset_horizontal_alignment_functor_1a9915239d5dd2899f7aca7bb8605e1c4a">VisitDiv</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_align_vertically_functor_1af3590317f785eb5820d0ef5c560dbeea">VisitDiv</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_cast_off_encoding_functor_1a2c09eb910f08bbd2aaf4c545d4d9566b">VisitDiv</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_cast_off_to_selection_functor_1a4d1c036c475f653bae8cb280aa1fca6f">VisitDiv</reimplementedby>
+        <param>
+          <type><ref refid="classvrv_1_1_div" kindref="compound">Div</ref> *</type>
+          <declname>div</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorinterface.h" line="230" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_functor_interface_1ae1bbff78d3348ca2a306d0760e54264c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FunctorCode</type>
+        <definition>virtual FunctorCode vrv::FunctorInterface::VisitDivEnd</definition>
+        <argsstring>(Div *div)</argsstring>
+        <name>VisitDivEnd</name>
+        <param>
+          <type><ref refid="classvrv_1_1_div" kindref="compound">Div</ref> *</type>
+          <declname>div</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorinterface.h" line="231" column="25"/>
+      </memberdef>
       <memberdef kind="function" id="classvrv_1_1_functor_interface_1ab16359a5119aec301206479dda89d8fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
         <definition>virtual FunctorCode vrv::FunctorInterface::VisitRunningElement</definition>
         <argsstring>(RunningElement *runningElement)</argsstring>
         <name>VisitRunningElement</name>
-        <reimplementedby refid="classvrv_1_1_prepare_data_initialization_functor_1a230c0f9acc88d5e51bee0c6608ff9e30">VisitRunningElement</reimplementedby>
         <reimplementedby refid="classvrv_1_1_save_functor_1a9bc0dc40ab43dd0587d364675161a94d">VisitRunningElement</reimplementedby>
         <reimplementedby refid="classvrv_1_1_align_vertically_functor_1a7ce025d65b45d2e10d333e8643cc0d5d">VisitRunningElement</reimplementedby>
         <param>
@@ -980,7 +1023,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorinterface.h" line="230" column="25"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorinterface.h" line="232" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_functor_interface_1aed6a6975be2741f0071cc53cda77f0db" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -998,7 +1041,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorinterface.h" line="231" column="25"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorinterface.h" line="233" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_functor_interface_1a1d4417b9c5cbf5d05793b5b4e6a03401" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -1015,7 +1058,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorinterface.h" line="232" column="25"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/functorinterface.h" line="234" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_functor_interface_1a55d5ec274dd78799a49c0fe861213a66" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -1025,40 +1068,6 @@
         <param>
           <type><ref refid="classvrv_1_1_pg_foot" kindref="compound">PgFoot</ref> *</type>
           <declname>pgFoot</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorinterface.h" line="233" column="25"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_functor_interface_1abbd2a5c7851a315e3176a0b97731a585" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>FunctorCode</type>
-        <definition>virtual FunctorCode vrv::FunctorInterface::VisitPgFoot2</definition>
-        <argsstring>(PgFoot2 *pgFoot2)</argsstring>
-        <name>VisitPgFoot2</name>
-        <param>
-          <type><ref refid="classvrv_1_1_pg_foot2" kindref="compound">PgFoot2</ref> *</type>
-          <declname>pgFoot2</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/functorinterface.h" line="234" column="25"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_functor_interface_1a373b2fd347f07526f811e43f3e622566" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>FunctorCode</type>
-        <definition>virtual FunctorCode vrv::FunctorInterface::VisitPgFoot2End</definition>
-        <argsstring>(PgFoot2 *pgFoot2)</argsstring>
-        <name>VisitPgFoot2End</name>
-        <param>
-          <type><ref refid="classvrv_1_1_pg_foot2" kindref="compound">PgFoot2</ref> *</type>
-          <declname>pgFoot2</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1102,14 +1111,15 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/functorinterface.h" line="237" column="25"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_functor_interface_1a672ed34a45d9ed788863ffb83a2844e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_functor_interface_1a7d11f395908eaa844aeb76e92e820315" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
-        <definition>virtual FunctorCode vrv::FunctorInterface::VisitPgHead2</definition>
-        <argsstring>(PgHead2 *pgHead2)</argsstring>
-        <name>VisitPgHead2</name>
+        <definition>virtual FunctorCode vrv::FunctorInterface::VisitTextLayoutElement</definition>
+        <argsstring>(TextLayoutElement *textLayoutElement)</argsstring>
+        <name>VisitTextLayoutElement</name>
+        <reimplementedby refid="classvrv_1_1_prepare_data_initialization_functor_1a29205d214d2484c18ff6c26c25a92760">VisitTextLayoutElement</reimplementedby>
         <param>
-          <type><ref refid="classvrv_1_1_pg_head2" kindref="compound">PgHead2</ref> *</type>
-          <declname>pgHead2</declname>
+          <type><ref refid="classvrv_1_1_text_layout_element" kindref="compound">TextLayoutElement</ref> *</type>
+          <declname>textLayoutElement</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1119,14 +1129,14 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/functorinterface.h" line="238" column="25"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_functor_interface_1a1e8b06ead3f3d3a6dd3b3bb1bf6bd10d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_functor_interface_1a582f030abd57ecdba444766e9e02481b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
-        <definition>virtual FunctorCode vrv::FunctorInterface::VisitPgHead2End</definition>
-        <argsstring>(PgHead2 *pgHead2)</argsstring>
-        <name>VisitPgHead2End</name>
+        <definition>virtual FunctorCode vrv::FunctorInterface::VisitTextLayoutElementEnd</definition>
+        <argsstring>(TextLayoutElement *textLayoutElement)</argsstring>
+        <name>VisitTextLayoutElementEnd</name>
         <param>
-          <type><ref refid="classvrv_1_1_pg_head2" kindref="compound">PgHead2</ref> *</type>
-          <declname>pgHead2</declname>
+          <type><ref refid="classvrv_1_1_text_layout_element" kindref="compound">TextLayoutElement</ref> *</type>
+          <declname>textLayoutElement</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1341,8 +1351,8 @@
         <definition>virtual FunctorCode vrv::FunctorInterface::VisitMdiv</definition>
         <argsstring>(Mdiv *mdiv)</argsstring>
         <name>VisitMdiv</name>
-        <reimplementedby refid="classvrv_1_1_convert_to_page_based_functor_1aab603c8c0901cdb7047cd9cafa932d02">VisitMdiv</reimplementedby>
         <reimplementedby refid="classvrv_1_1_save_functor_1ac3c79ebd4517b29c8cf3b85892b5cc1c">VisitMdiv</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_convert_to_page_based_functor_1aab603c8c0901cdb7047cd9cafa932d02">VisitMdiv</reimplementedby>
         <reimplementedby refid="classvrv_1_1_transpose_functor_1a09ceeeab16bb46c4e0a0432c72f3d24c">VisitMdiv</reimplementedby>
         <reimplementedby refid="classvrv_1_1_transpose_selected_mdiv_functor_1a84204878d7ba9a7080bd699405960b1f">VisitMdiv</reimplementedby>
         <reimplementedby refid="classvrv_1_1_transpose_to_sounding_pitch_functor_1a8901e1f36735c59f265208cb96a92f97">VisitMdiv</reimplementedby>
@@ -1363,8 +1373,8 @@
         <definition>virtual FunctorCode vrv::FunctorInterface::VisitMdivEnd</definition>
         <argsstring>(Mdiv *mdiv)</argsstring>
         <name>VisitMdivEnd</name>
-        <reimplementedby refid="classvrv_1_1_convert_to_page_based_functor_1ab3d14ee6ae4b33d8ed1e3beda19a617f">VisitMdivEnd</reimplementedby>
         <reimplementedby refid="classvrv_1_1_save_functor_1a73c28f02f6ae692884e32a9b50892d16">VisitMdivEnd</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_convert_to_page_based_functor_1ab3d14ee6ae4b33d8ed1e3beda19a617f">VisitMdivEnd</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_mdiv" kindref="compound">Mdiv</ref> *</type>
           <declname>mdiv</declname>
@@ -1462,8 +1472,8 @@
         <argsstring>(Score *score)</argsstring>
         <name>VisitScore</name>
         <reimplementedby refid="classvrv_1_1_adjust_dots_functor_1a4fda37d7f387bb4b7d46642d2c24bbaa">VisitScore</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_convert_to_page_based_functor_1a36e83775c1daf083bacf3139d1977b12">VisitScore</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_grace_x_pos_functor_1ac86fba04e31891e7533433349aab8655">VisitScore</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_convert_to_page_based_functor_1a36e83775c1daf083bacf3139d1977b12">VisitScore</reimplementedby>
         <reimplementedby refid="classvrv_1_1_prepare_data_initialization_functor_1a488533e1143dd54c9c5bb3919ff41874">VisitScore</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_layers_functor_1a7027ae4772b8e646085fd7a7e740619e">VisitScore</reimplementedby>
         <reimplementedby refid="classvrv_1_1_transpose_functor_1a0d455bfda2f1a3ed128174c05bba6ed7">VisitScore</reimplementedby>
@@ -2723,8 +2733,8 @@
         <reimplementedby refid="classvrv_1_1_calc_artic_functor_1ab9fb8962789a5c3606a6b4659d910745">VisitChord</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_artic_functor_1a43cafdededd937659d04f69627822684">VisitChord</reimplementedby>
         <reimplementedby refid="classvrv_1_1_calc_stem_functor_1abc40cfea5f84ed665a0536db388acea5">VisitChord</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_prepare_data_initialization_functor_1ae360af5dae993e5e3000e379fdd20570">VisitChord</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_data_functor_1ae0d263e58f05dbe48b314f85704f09a4">VisitChord</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_prepare_data_initialization_functor_1ae360af5dae993e5e3000e379fdd20570">VisitChord</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_cross_staff_y_pos_functor_1a8a1c3293228696fb63cd04d41250c235">VisitChord</reimplementedby>
         <reimplementedby refid="classvrv_1_1_justify_y_adjust_cross_staff_functor_1a46d4cc57245e5c42df3431f7f88103cd">VisitChord</reimplementedby>
         <reimplementedby refid="classvrv_1_1_convert_markup_analytical_functor_1a981496febc4fcd0cbb3bb4c7d4e533f9">VisitChord</reimplementedby>
@@ -4807,9 +4817,9 @@
         <definition>virtual FunctorCode vrv::FunctorInterface::VisitStaffAlignment</definition>
         <argsstring>(StaffAlignment *staffAlignment)</argsstring>
         <name>VisitStaffAlignment</name>
-        <reimplementedby refid="classvrv_1_1_adjust_y_pos_functor_1a2b0ee9019b77e48618833244370b65f8">VisitStaffAlignment</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_staff_overlap_functor_1af6ea769ddc54490d32d1ce20da228026">VisitStaffAlignment</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_floating_positioners_functor_1a5600cbd99ee6de85077f4601e7c115f4">VisitStaffAlignment</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_adjust_y_pos_functor_1a2b0ee9019b77e48618833244370b65f8">VisitStaffAlignment</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_slurs_functor_1a8cb3bf3bd8a1903181d7e99bb1e6c4e5">VisitStaffAlignment</reimplementedby>
         <reimplementedby refid="classvrv_1_1_adjust_floating_positioner_grps_functor_1ad28607faa52ad4685f66f01c8f229bef">VisitStaffAlignment</reimplementedby>
         <reimplementedby refid="classvrv_1_1_justify_y_functor_1acf606ebf4b071d326093f9ec03e2f67b">VisitStaffAlignment</reimplementedby>
@@ -5546,6 +5556,8 @@
       <member refid="classvrv_1_1_functor_interface_1a1108fbc1c54d6c49966f7f41cc317043" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitCustosEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1a251e394d35698c84e0f919afff7775f1" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitDir</name></member>
       <member refid="classvrv_1_1_functor_interface_1add3c8f8114c438000f92d35d8b2157b2" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitDirEnd</name></member>
+      <member refid="classvrv_1_1_functor_interface_1a40e6efc638fc8a856e828f204592bdd6" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitDiv</name></member>
+      <member refid="classvrv_1_1_functor_interface_1ae1bbff78d3348ca2a306d0760e54264c" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitDivEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1aa8cd3c3ae1254acf5442bb847ce5121c" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitDoc</name></member>
       <member refid="classvrv_1_1_functor_interface_1a85b78aa9ca924801aede94a252cb29ef" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitDocEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1ad1c50be58a316e81b789da93f988821d" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitDot</name></member>
@@ -5669,12 +5681,8 @@
       <member refid="classvrv_1_1_functor_interface_1a32a209470afc9c036a3c004e669ff274" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitPedal</name></member>
       <member refid="classvrv_1_1_functor_interface_1a2bb1422481d7d6f9a1f5435f74f481ee" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitPedalEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1a1d4417b9c5cbf5d05793b5b4e6a03401" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitPgFoot</name></member>
-      <member refid="classvrv_1_1_functor_interface_1abbd2a5c7851a315e3176a0b97731a585" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitPgFoot2</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a373b2fd347f07526f811e43f3e622566" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitPgFoot2End</name></member>
       <member refid="classvrv_1_1_functor_interface_1a55d5ec274dd78799a49c0fe861213a66" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitPgFootEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1afe9d03cd0794504830ebbedd54dc5435" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitPgHead</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a672ed34a45d9ed788863ffb83a2844e7" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitPgHead2</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a1e8b06ead3f3d3a6dd3b3bb1bf6bd10d" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitPgHead2End</name></member>
       <member refid="classvrv_1_1_functor_interface_1a1cdd5853faf10bcb5f983911272fb253" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitPgHeadEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1ada7eb0d3af2207838e99fe273da53d63" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitPhrase</name></member>
       <member refid="classvrv_1_1_functor_interface_1ade778f7530146d86bac890f40379b6a9" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitPhraseEnd</name></member>
@@ -5744,6 +5752,8 @@
       <member refid="classvrv_1_1_functor_interface_1a517e5685bbc2ff04374e2eb554b50fcb" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitTextElement</name></member>
       <member refid="classvrv_1_1_functor_interface_1a3f3116ef7b7bacd58ce11cffd21935fc" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitTextElementEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1ad77ff94758b636788055f09b3564bfee" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitTextEnd</name></member>
+      <member refid="classvrv_1_1_functor_interface_1a7d11f395908eaa844aeb76e92e820315" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitTextLayoutElement</name></member>
+      <member refid="classvrv_1_1_functor_interface_1a582f030abd57ecdba444766e9e02481b" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitTextLayoutElementEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1abc0827793a1841212a27f73776d11ef0" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitTie</name></member>
       <member refid="classvrv_1_1_functor_interface_1a0efd8e0bc7b05c792433e04343d050ac" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitTieEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1a35fb19aca547f9bd4232de5e0b7481d5" prot="public" virt="virtual"><scope>vrv::FunctorInterface</scope><name>VisitTimestamp</name></member>

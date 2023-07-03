@@ -1,0 +1,28 @@
+var classvrv_1_1_text_layout_element =
+[
+    [ "TextLayoutElement", "classvrv_1_1_text_layout_element.html#a3c768e6b8f3e14147a0f1a150d80cff8", null ],
+    [ "~TextLayoutElement", "classvrv_1_1_text_layout_element.html#a471877b86b4f60714f0382f0f63b3669", null ],
+    [ "Accept", "classvrv_1_1_text_layout_element.html#a4f4adcd455a69c970477cd39d81330bf", null ],
+    [ "Accept", "classvrv_1_1_text_layout_element.html#a67cd110d07fc1c367b1413679776c33f", null ],
+    [ "AcceptEnd", "classvrv_1_1_text_layout_element.html#a85d1bee0eda85608d68d220a3c7f7609", null ],
+    [ "AcceptEnd", "classvrv_1_1_text_layout_element.html#a56e86fc8bc271a37d4d7a32a9a19b5a8", null ],
+    [ "AdjustDrawingScaling", "classvrv_1_1_text_layout_element.html#a8b255fc6463ebeaeac7d52934d1fdc20", null ],
+    [ "AdjustRunningElementYPos", "classvrv_1_1_text_layout_element.html#a5fcce5d3afe883e549b6a30877552ffb", null ],
+    [ "AppendTextToCell", "classvrv_1_1_text_layout_element.html#a79774b36808152e893f33efa2ee662d2", null ],
+    [ "FilterList", "classvrv_1_1_text_layout_element.html#afdf7de237c668a8445e609c6b64d0320", null ],
+    [ "GetAlignmentPos", "classvrv_1_1_text_layout_element.html#ab6591c3160b35f0ca84f7517e5fbef31", null ],
+    [ "GetCellHeight", "classvrv_1_1_text_layout_element.html#a575fcee63ccd21bbcea7f544a1a2f347", null ],
+    [ "GetCellWidth", "classvrv_1_1_text_layout_element.html#a34c7dce9edb66f8a4b57acdb5ddd96d0", null ],
+    [ "GetColHeight", "classvrv_1_1_text_layout_element.html#a882bd607d903c03c02d3496c7a91c49a", null ],
+    [ "GetColWidth", "classvrv_1_1_text_layout_element.html#ac30cb7b7481983919a4ad41dc88a7300", null ],
+    [ "GetContentHeight", "classvrv_1_1_text_layout_element.html#a222250cd86e21c3098f279e3c5ef5639", null ],
+    [ "GetContentWidth", "classvrv_1_1_text_layout_element.html#ad699414be3bb27aa565f8ce8b5e845d9", null ],
+    [ "GetRowHeight", "classvrv_1_1_text_layout_element.html#a4720a453dd639567b2a83aa2602639b7", null ],
+    [ "GetRowWidth", "classvrv_1_1_text_layout_element.html#a799e4cd5e61f04bd778434f339f5b2e2", null ],
+    [ "GetTotalHeight", "classvrv_1_1_text_layout_element.html#a9513edb9a22f5cc7275349e15a306618", null ],
+    [ "GetTotalWidth", "classvrv_1_1_text_layout_element.html#ac014050e1acdbffcff81651fe28f657e", null ],
+    [ "IsSupportedChild", "classvrv_1_1_text_layout_element.html#a1b17495273bb803f249c576baaac12f0", null ],
+    [ "Reset", "classvrv_1_1_text_layout_element.html#aaad2854380ace7dd7026199db406c9a1", null ],
+    [ "ResetCells", "classvrv_1_1_text_layout_element.html#ae4c32c8584f9a0215b0cfd0673d413af", null ],
+    [ "ResetDrawingScaling", "classvrv_1_1_text_layout_element.html#a737b2be5c5b21be26e7935d93b4f9288", null ]
+];

@@ -355,6 +355,12 @@ var hierarchy =
     [ "AttFermataVis", null, [
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ]
     ] ],
+    [ "AttFormework", null, [
+      [ "vrv::RunningElement", "classvrv_1_1_running_element.html", [
+        [ "vrv::PgFoot", "classvrv_1_1_pg_foot.html", null ],
+        [ "vrv::PgHead", "classvrv_1_1_pg_head.html", null ]
+      ] ]
+    ] ],
     [ "AttFTremVis", null, [
       [ "vrv::FTrem", "classvrv_1_1_f_trem.html", null ]
     ] ],
@@ -386,12 +392,6 @@ var hierarchy =
       [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", [
         [ "vrv::Fig", "classvrv_1_1_fig.html", null ],
         [ "vrv::Rend", "classvrv_1_1_rend.html", null ]
-      ] ],
-      [ "vrv::RunningElement", "classvrv_1_1_running_element.html", [
-        [ "vrv::PgFoot", "classvrv_1_1_pg_foot.html", null ],
-        [ "vrv::PgFoot2", "classvrv_1_1_pg_foot2.html", null ],
-        [ "vrv::PgHead", "classvrv_1_1_pg_head.html", null ],
-        [ "vrv::PgHead2", "classvrv_1_1_pg_head2.html", null ]
       ] ]
     ] ],
     [ "AttIntervalMelodic", null, [
@@ -863,7 +863,6 @@ var hierarchy =
         [ "vrv::PageMilestoneEnd", "classvrv_1_1_page_milestone_end.html", null ],
         [ "vrv::Score", "classvrv_1_1_score.html", null ]
       ] ],
-      [ "vrv::RunningElement", "classvrv_1_1_running_element.html", null ],
       [ "vrv::ScoreDefElement", "classvrv_1_1_score_def_element.html", null ],
       [ "vrv::Staff", "classvrv_1_1_staff.html", null ],
       [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ],
@@ -878,6 +877,10 @@ var hierarchy =
         [ "vrv::SystemMilestoneEnd", "classvrv_1_1_system_milestone_end.html", null ]
       ] ],
       [ "vrv::TextElement", "classvrv_1_1_text_element.html", null ],
+      [ "vrv::TextLayoutElement", "classvrv_1_1_text_layout_element.html", [
+        [ "vrv::Div", "classvrv_1_1_div.html", null ],
+        [ "vrv::RunningElement", "classvrv_1_1_running_element.html", null ]
+      ] ],
       [ "vrv::Zone", "classvrv_1_1_zone.html", null ]
     ] ],
     [ "AttTypography", null, [
@@ -953,7 +956,6 @@ var hierarchy =
         [ "vrv::Page", "classvrv_1_1_page.html", null ],
         [ "vrv::PageElement", "classvrv_1_1_page_element.html", null ],
         [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
-        [ "vrv::RunningElement", "classvrv_1_1_running_element.html", null ],
         [ "vrv::ScoreDefElement", "classvrv_1_1_score_def_element.html", null ],
         [ "vrv::Staff", "classvrv_1_1_staff.html", null ],
         [ "vrv::StaffAlignment", "classvrv_1_1_staff_alignment.html", null ],
@@ -965,6 +967,7 @@ var hierarchy =
         [ "vrv::System", "classvrv_1_1_system.html", null ],
         [ "vrv::SystemAligner", "classvrv_1_1_system_aligner.html", null ],
         [ "vrv::TextElement", "classvrv_1_1_text_element.html", null ],
+        [ "vrv::TextLayoutElement", "classvrv_1_1_text_layout_element.html", null ],
         [ "vrv::TimestampAligner", "classvrv_1_1_timestamp_aligner.html", null ],
         [ "vrv::Tuning", "classvrv_1_1_tuning.html", null ],
         [ "vrv::Zone", "classvrv_1_1_zone.html", null ]
@@ -982,6 +985,7 @@ var hierarchy =
     [ "vrv::Comparison", "classvrv_1_1_comparison.html", [
       [ "vrv::ClassIdComparison", "classvrv_1_1_class_id_comparison.html", [
         [ "vrv::AttDurExtremeComparison", "classvrv_1_1_att_dur_extreme_comparison.html", null ],
+        [ "vrv::AttFormeworkComparison", "classvrv_1_1_att_formework_comparison.html", null ],
         [ "vrv::AttNIntegerAnyComparison", "classvrv_1_1_att_n_integer_any_comparison.html", null ],
         [ "vrv::AttNIntegerComparison", "classvrv_1_1_att_n_integer_comparison.html", null ],
         [ "vrv::AttNNumberLikeComparison", "classvrv_1_1_att_n_number_like_comparison.html", null ],
@@ -1202,11 +1206,11 @@ var hierarchy =
       [ "vrv::Ligature", "classvrv_1_1_ligature.html", null ],
       [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
       [ "vrv::Neume", "classvrv_1_1_neume.html", null ],
-      [ "vrv::RunningElement", "classvrv_1_1_running_element.html", null ],
       [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
       [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ],
       [ "vrv::Syllable", "classvrv_1_1_syllable.html", null ],
       [ "vrv::TabGrp", "classvrv_1_1_tab_grp.html", null ],
+      [ "vrv::TextLayoutElement", "classvrv_1_1_text_layout_element.html", null ],
       [ "vrv::TextListInterface", "classvrv_1_1_text_list_interface.html", [
         [ "vrv::Annot", "classvrv_1_1_annot.html", null ],
         [ "vrv::Dir", "classvrv_1_1_dir.html", null ],

@@ -5,6 +5,7 @@ var classvrv_1_1_cast_off_systems_functor =
     [ "GetLeftoverSystem", "classvrv_1_1_cast_off_systems_functor.html#a034e73ee2d69a1100f92eb2f3a6d61ed", null ],
     [ "ImplementsEndInterface", "classvrv_1_1_cast_off_systems_functor.html#aa7f8f82a33e0303d727f9c466fb0a10a", null ],
     [ "SetSystemWidth", "classvrv_1_1_cast_off_systems_functor.html#a23652e2ffe28e5f2f5af4cb4aa8d3a1d", null ],
+    [ "VisitDiv", "classvrv_1_1_cast_off_systems_functor.html#a711e3f7f38df9f01154c672839650c4c", null ],
     [ "VisitEditorialElement", "classvrv_1_1_cast_off_systems_functor.html#ac6c136157264a0a779590f91522fadd8", null ],
     [ "VisitEnding", "classvrv_1_1_cast_off_systems_functor.html#a24aba43e4efc7f6fd17a9b4f259911ff", null ],
     [ "VisitMeasure", "classvrv_1_1_cast_off_systems_functor.html#acd86e788b39c4471399523d2af5e15ae", null ],
