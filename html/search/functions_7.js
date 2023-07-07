@@ -16,7 +16,7 @@ var searchData=
   ['interfacepreparetimepointing_2060',['InterfacePrepareTimePointing',['../classvrv_1_1_time_point_interface.html#a28d96885ec00f8a7e577047aa2fca857',1,'vrv::TimePointInterface']]],
   ['interfacepreparetimespanning_2061',['InterfacePrepareTimeSpanning',['../classvrv_1_1_time_spanning_interface.html#a11ced307739a635ae5339612837dbb59',1,'vrv::TimeSpanningInterface']]],
   ['interfaceresetdata_2062',['InterfaceResetData',['../classvrv_1_1_position_interface.html#acb9985fed8ff285e4ba9956129bc9e22',1,'vrv::PositionInterface']]],
-  ['intersects_2063',['Intersects',['../classvrv_1_1_bounding_box.html#a29d29a9aaa350b53bcf58dc32978b7f8',1,'vrv::BoundingBox::Intersects(const FloatingCurvePositioner *curve, Accessor type, int margin=0) const'],['../classvrv_1_1_bounding_box.html#a89d4ebda89785d624cb43d1c45dbbbb2',1,'vrv::BoundingBox::Intersects(const BeamDrawingInterface *beamInterface, Accessor type, int margin=0) const']]],
+  ['intersects_2063',['Intersects',['../classvrv_1_1_bounding_box.html#a29d29a9aaa350b53bcf58dc32978b7f8',1,'vrv::BoundingBox::Intersects(const FloatingCurvePositioner *curve, Accessor type, int margin=0) const'],['../classvrv_1_1_bounding_box.html#a30378dff14a9058154de8efcc0d7632f',1,'vrv::BoundingBox::Intersects(const BeamDrawingInterface *beamInterface, Accessor type, int margin=0, bool fromBeamContentSide=false) const']]],
   ['iscastoff_2064',['IsCastOff',['../classvrv_1_1_doc.html#a570380aa9593a124ac2d85b5238a62e8',1,'vrv::Doc']]],
   ['iscentered_2065',['IsCentered',['../classvrv_1_1_artic.html#a0f3c3112f20c06ce5f18d8a97c9ecea7',1,'vrv::Artic']]],
   ['ischordtone_2066',['IsChordTone',['../classvrv_1_1_note.html#a8fac70447933b92e2615280b6909e351',1,'vrv::Note']]],

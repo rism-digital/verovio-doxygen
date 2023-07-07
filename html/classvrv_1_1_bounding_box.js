@@ -49,7 +49,7 @@ var classvrv_1_1_bounding_box =
     [ "HorizontalLeftOverlap", "classvrv_1_1_bounding_box.html#a0fdfa000c449d4c9b1de755dd1efff55", null ],
     [ "HorizontalRightOverlap", "classvrv_1_1_bounding_box.html#a7265ddc2845db5bc543200b037048a2e", null ],
     [ "HorizontalSelfOverlap", "classvrv_1_1_bounding_box.html#a363e14e29dcb72d6539a832921c538f9", null ],
-    [ "Intersects", "classvrv_1_1_bounding_box.html#a89d4ebda89785d624cb43d1c45dbbbb2", null ],
+    [ "Intersects", "classvrv_1_1_bounding_box.html#a30378dff14a9058154de8efcc0d7632f", null ],
     [ "Intersects", "classvrv_1_1_bounding_box.html#a29d29a9aaa350b53bcf58dc32978b7f8", null ],
     [ "Is", "classvrv_1_1_bounding_box.html#af366b55a8e449a12d689acd9d35ae782", null ],
     [ "Is", "classvrv_1_1_bounding_box.html#aaeb23e9d3064f863ef3857efef570a8f", null ],

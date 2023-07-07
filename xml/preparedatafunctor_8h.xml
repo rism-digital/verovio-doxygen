@@ -1136,288 +1136,294 @@
 <codeline lineno="687"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="689"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="691"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="693"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="695"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>stem<sp/>if<sp/>it<sp/>does<sp/>not<sp/>exist</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_stem" kindref="compound">Stem</ref><sp/>*EnsureStemExists(<ref refid="classvrv_1_1_stem" kindref="compound">Stem</ref><sp/>*stem,<sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*parent)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>dots<sp/>if<sp/>they<sp/>should<sp/>exist,<sp/>otherwise<sp/>remove<sp/>them</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_dots" kindref="compound">Dots</ref><sp/>*ProcessDots(<ref refid="classvrv_1_1_dots" kindref="compound">Dots</ref><sp/>*dots,<sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*parent,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>shouldExist)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>flag<sp/>if<sp/>it<sp/>should<sp/>exist,<sp/>otherwise<sp/>remove<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_flag" kindref="compound">Flag</ref><sp/>*ProcessFlag(<ref refid="classvrv_1_1_flag" kindref="compound">Flag</ref><sp/>*flag,<sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*parent,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>shouldExist)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="696"><highlight class="normal"></highlight></codeline>
-<codeline lineno="697"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="698"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PrepareRptFunctor</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="699"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="700"><highlight class="normal"></highlight></codeline>
-<codeline lineno="705" refid="classvrv_1_1_prepare_rpt_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_prepare_rpt_functor" kindref="compound">PrepareRptFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_doc_functor" kindref="compound">DocFunctor</ref><sp/>{</highlight></codeline>
-<codeline lineno="706"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="710"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_prepare_rpt_functor" kindref="compound">PrepareRptFunctor</ref>(<ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc);</highlight></codeline>
-<codeline lineno="712"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_prepare_rpt_functor" kindref="compound">PrepareRptFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="714"><highlight class="normal"></highlight></codeline>
-<codeline lineno="715"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="716"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Abstract<sp/>base<sp/>implementation</highlight></codeline>
-<codeline lineno="717"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="718" refid="classvrv_1_1_prepare_rpt_functor_1aa2295a27face6602fb4fc3368f39156f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_prepare_rpt_functor_1aa2295a27face6602fb4fc3368f39156f" kindref="member">ImplementsEndInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="719"><highlight class="normal"></highlight></codeline>
-<codeline lineno="720"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="721"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
-<codeline lineno="722"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
-<codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitLayer(<ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref><sp/>*layer)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="725"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitMRpt(<ref refid="classvrv_1_1_m_rpt" kindref="compound">MRpt</ref><sp/>*mRpt)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="726"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitStaff(<ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref><sp/>*staff)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="728"><highlight class="normal"></highlight></codeline>
-<codeline lineno="729"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="730"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="731"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="732"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="733"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="734"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="735"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>MRpt</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="737"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_m_rpt" kindref="compound">MRpt</ref><sp/>*m_currentMRpt;</highlight></codeline>
-<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>data_BOOLEAN<sp/>indicating<sp/>if<sp/>multiNumber</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="739"><highlight class="normal"><sp/><sp/><sp/><sp/>data_BOOLEAN<sp/>m_multiNumber;</highlight></codeline>
-<codeline lineno="740"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="741"><highlight class="normal"></highlight></codeline>
-<codeline lineno="742"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="743"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PrepareDelayedTurnsFunctor</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="744"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="745"><highlight class="normal"></highlight></codeline>
-<codeline lineno="750" refid="classvrv_1_1_prepare_delayed_turns_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_prepare_delayed_turns_functor" kindref="compound">PrepareDelayedTurnsFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_collect_and_process" kindref="compound">CollectAndProcess</ref><sp/>{</highlight></codeline>
-<codeline lineno="751"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="755"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_prepare_delayed_turns_functor" kindref="compound">PrepareDelayedTurnsFunctor</ref>();</highlight></codeline>
-<codeline lineno="757"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_prepare_delayed_turns_functor" kindref="compound">PrepareDelayedTurnsFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="759"><highlight class="normal"></highlight></codeline>
-<codeline lineno="760"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="761"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Abstract<sp/>base<sp/>implementation</highlight></codeline>
-<codeline lineno="762"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="763" refid="classvrv_1_1_prepare_delayed_turns_functor_1ab743618eee51ed5918942d786c976645" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_prepare_delayed_turns_functor_1ab743618eee51ed5918942d786c976645" kindref="member">ImplementsEndInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="764"><highlight class="normal"></highlight></codeline>
-<codeline lineno="765"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="766"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Getter<sp/>for<sp/>the<sp/>map<sp/>of<sp/>delayed<sp/>turns</highlight></codeline>
-<codeline lineno="767"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="768"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::map&lt;LayerElement<sp/>*,<sp/>Turn<sp/>*&gt;<sp/>&amp;GetDelayedTurns()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_delayedTurns;<sp/>}</highlight></codeline>
-<codeline lineno="769"><highlight class="normal"></highlight></codeline>
-<codeline lineno="770"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="771"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Reset<sp/>the<sp/>current<sp/>turn<sp/>and<sp/>element</highlight></codeline>
-<codeline lineno="772"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="773"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ResetCurrent();</highlight></codeline>
-<codeline lineno="774"><highlight class="normal"></highlight></codeline>
-<codeline lineno="775"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="776"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
-<codeline lineno="777"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
-<codeline lineno="779"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitLayerElement(LayerElement<sp/>*layerElement)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="780"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitTurn(Turn<sp/>*turn)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="782"><highlight class="normal"></highlight></codeline>
-<codeline lineno="783"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="784"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="785"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="786"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="787"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="788"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="789"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="790"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>element<sp/>to<sp/>which<sp/>a<sp/>turn<sp/>is<sp/>pointing<sp/>to</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="791"><highlight class="normal"><sp/><sp/><sp/><sp/>LayerElement<sp/>*m_previousElement;</highlight></codeline>
-<codeline lineno="792"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>chord</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="793"><highlight class="normal"><sp/><sp/><sp/><sp/>Chord<sp/>*m_currentChord;</highlight></codeline>
-<codeline lineno="794"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>turn<sp/>to<sp/>which<sp/>we<sp/>want<sp/>to<sp/>set<sp/>a<sp/>m_drawingEndElement</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="795"><highlight class="normal"><sp/><sp/><sp/><sp/>Turn<sp/>*m_currentTurn;</highlight></codeline>
-<codeline lineno="796"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>map<sp/>of<sp/>the<sp/>delayed<sp/>turns<sp/>and<sp/>the<sp/>layer<sp/>elements<sp/>they<sp/>point<sp/>to</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="797"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;LayerElement<sp/>*,<sp/>Turn<sp/>*&gt;<sp/>m_delayedTurns;</highlight></codeline>
-<codeline lineno="798"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="799"><highlight class="normal"></highlight></codeline>
-<codeline lineno="800"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="801"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PrepareMilestonesFunctor</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="802"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="803"><highlight class="normal"></highlight></codeline>
-<codeline lineno="807" refid="classvrv_1_1_prepare_milestones_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_prepare_milestones_functor" kindref="compound">PrepareMilestonesFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>{</highlight></codeline>
-<codeline lineno="808"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="812"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_prepare_milestones_functor" kindref="compound">PrepareMilestonesFunctor</ref>();</highlight></codeline>
-<codeline lineno="814"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_prepare_milestones_functor" kindref="compound">PrepareMilestonesFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="816"><highlight class="normal"></highlight></codeline>
-<codeline lineno="817"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="818"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Abstract<sp/>base<sp/>implementation</highlight></codeline>
-<codeline lineno="819"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="820" refid="classvrv_1_1_prepare_milestones_functor_1ab652d652c00ccd6aab30ffaad364ad5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_prepare_milestones_functor_1ab652d652c00ccd6aab30ffaad364ad5a" kindref="member">ImplementsEndInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="821"><highlight class="normal"></highlight></codeline>
-<codeline lineno="822"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="823"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Getter<sp/>and<sp/>modifier<sp/>for<sp/>the<sp/>interface<sp/>list</highlight></codeline>
-<codeline lineno="824"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
-<codeline lineno="826"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;SystemMilestoneInterface<sp/>*&gt;<sp/>&amp;GetStartMilestones()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_startMilestones;<sp/>}</highlight></codeline>
-<codeline lineno="827"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>InsertStartMilestone(SystemMilestoneInterface<sp/>*interface);</highlight></codeline>
-<codeline lineno="829"><highlight class="normal"></highlight></codeline>
-<codeline lineno="830"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="831"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
-<codeline lineno="832"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
-<codeline lineno="834"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitEditorialElement(EditorialElement<sp/>*editorialElement)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="835"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitEnding(Ending<sp/>*ending)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="836"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitMeasure(Measure<sp/>*measure)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="837"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitSection(Section<sp/>*section)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="838"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitSystemMilestone(SystemMilestoneEnd<sp/>*systemMilestoneEnd)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="840"><highlight class="normal"></highlight></codeline>
-<codeline lineno="841"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="842"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="843"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="844"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="845"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="846"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="847"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="848"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>last<sp/>measure</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="849"><highlight class="normal"><sp/><sp/><sp/><sp/>Measure<sp/>*m_lastMeasure;</highlight></codeline>
-<codeline lineno="850"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>ending</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="851"><highlight class="normal"><sp/><sp/><sp/><sp/>Ending<sp/>*m_currentEnding;</highlight></codeline>
-<codeline lineno="852"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>list<sp/>of<sp/>start<sp/>milestones</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="853"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;SystemMilestoneInterface<sp/>*&gt;<sp/>m_startMilestones;</highlight></codeline>
-<codeline lineno="854"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="855"><highlight class="normal"></highlight></codeline>
-<codeline lineno="856"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="857"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PrepareFloatingGrpsFunctor</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="858"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="859"><highlight class="normal"></highlight></codeline>
-<codeline lineno="864" refid="classvrv_1_1_prepare_floating_grps_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_prepare_floating_grps_functor" kindref="compound">PrepareFloatingGrpsFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_doc_functor" kindref="compound">DocFunctor</ref><sp/>{</highlight></codeline>
-<codeline lineno="865"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="869"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_prepare_floating_grps_functor" kindref="compound">PrepareFloatingGrpsFunctor</ref>(<ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc);</highlight></codeline>
-<codeline lineno="871"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_prepare_floating_grps_functor" kindref="compound">PrepareFloatingGrpsFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="873"><highlight class="normal"></highlight></codeline>
-<codeline lineno="874"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="875"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Abstract<sp/>base<sp/>implementation</highlight></codeline>
-<codeline lineno="876"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="877" refid="classvrv_1_1_prepare_floating_grps_functor_1ad3f7d70afef2abc5f269241558c30db7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_prepare_floating_grps_functor_1ad3f7d70afef2abc5f269241558c30db7" kindref="member">ImplementsEndInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="878"><highlight class="normal"></highlight></codeline>
-<codeline lineno="879"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="880"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
-<codeline lineno="881"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
-<codeline lineno="883"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitDir(<ref refid="classvrv_1_1_dir" kindref="compound">Dir</ref><sp/>*dir)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="884"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitDynam(<ref refid="classvrv_1_1_dynam" kindref="compound">Dynam</ref><sp/>*dynam)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="885"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitEnding(<ref refid="classvrv_1_1_ending" kindref="compound">Ending</ref><sp/>*ending)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="886"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitHairpin(<ref refid="classvrv_1_1_hairpin" kindref="compound">Hairpin</ref><sp/>*hairpin)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="887"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitHarm(<ref refid="classvrv_1_1_harm" kindref="compound">Harm</ref><sp/>*harm)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="888"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitMeasure(<ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref><sp/>*measure)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="889"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitMeasureEnd(<ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref><sp/>*measure)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="890"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitPedal(<ref refid="classvrv_1_1_pedal" kindref="compound">Pedal</ref><sp/>*pedal)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="891"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitSystemMilestone(<ref refid="classvrv_1_1_system_milestone_end" kindref="compound">SystemMilestoneEnd</ref><sp/>*systemMilestoneEnd)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="893"><highlight class="normal"></highlight></codeline>
-<codeline lineno="894"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="895"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="896"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="897"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="898"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="899"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="900"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="901"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>previous<sp/>ending</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="902"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_ending" kindref="compound">Ending</ref><sp/>*m_previousEnding;</highlight></codeline>
-<codeline lineno="903"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>dynams<sp/>in<sp/>the<sp/>current<sp/>measure</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="904"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Dynam<sp/>*&gt;<sp/>m_dynams;</highlight></codeline>
-<codeline lineno="905"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>hairpins<sp/>to<sp/>be<sp/>linked<sp/>/<sp/>grouped</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="906"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Hairpin<sp/>*&gt;<sp/>m_hairpins;</highlight></codeline>
-<codeline lineno="907"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>map<sp/>of<sp/>existing<sp/>harms<sp/>(based<sp/>on<sp/>@n)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="908"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>Harm<sp/>*&gt;<sp/>m_harms;</highlight></codeline>
-<codeline lineno="909"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>pedals<sp/>to<sp/>be<sp/>linked<sp/>/<sp/>grouped</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="910"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;Pedal<sp/>*&gt;<sp/>m_pedalLines;</highlight></codeline>
-<codeline lineno="911"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="912"><highlight class="normal"></highlight></codeline>
-<codeline lineno="913"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="914"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PrepareStaffCurrentTimeSpanningFunctor</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="915"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="916"><highlight class="normal"></highlight></codeline>
-<codeline lineno="922" refid="classvrv_1_1_prepare_staff_current_time_spanning_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_prepare_staff_current_time_spanning_functor" kindref="compound">PrepareStaffCurrentTimeSpanningFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>{</highlight></codeline>
-<codeline lineno="923"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="927"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_prepare_staff_current_time_spanning_functor" kindref="compound">PrepareStaffCurrentTimeSpanningFunctor</ref>();</highlight></codeline>
-<codeline lineno="929"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_prepare_staff_current_time_spanning_functor" kindref="compound">PrepareStaffCurrentTimeSpanningFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="931"><highlight class="normal"></highlight></codeline>
-<codeline lineno="932"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="933"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Abstract<sp/>base<sp/>implementation</highlight></codeline>
-<codeline lineno="934"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="935" refid="classvrv_1_1_prepare_staff_current_time_spanning_functor_1a8853e80866da0194a4ed22a128aeb36d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_prepare_staff_current_time_spanning_functor_1a8853e80866da0194a4ed22a128aeb36d" kindref="member">ImplementsEndInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="936"><highlight class="normal"></highlight></codeline>
-<codeline lineno="937"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="938"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Getter<sp/>and<sp/>modifier<sp/>for<sp/>the<sp/>interface<sp/>list</highlight></codeline>
-<codeline lineno="939"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
-<codeline lineno="941"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ArrayOfObjects<sp/>&amp;GetTimeSpanningElements()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_timeSpanningElements;<sp/>}</highlight></codeline>
-<codeline lineno="942"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>InsertTimeSpanningElement(Object<sp/>*element);</highlight></codeline>
-<codeline lineno="944"><highlight class="normal"></highlight></codeline>
-<codeline lineno="945"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="946"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
-<codeline lineno="947"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
-<codeline lineno="949"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitF(F<sp/>*f)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="950"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitFloatingObject(FloatingObject<sp/>*floatingObject)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="951"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitMeasureEnd(Measure<sp/>*measure)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="952"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitStaff(Staff<sp/>*staff)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="953"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitSyl(Syl<sp/>*syl)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="955"><highlight class="normal"></highlight></codeline>
-<codeline lineno="956"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="957"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="958"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="959"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="960"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="961"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="962"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="963"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>currently<sp/>running<sp/>TimeSpanningInterface<sp/>elements</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="964"><highlight class="normal"><sp/><sp/><sp/><sp/>ArrayOfObjects<sp/>m_timeSpanningElements;</highlight></codeline>
-<codeline lineno="965"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="966"><highlight class="normal"></highlight></codeline>
-<codeline lineno="967"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="968"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PrepareRehPositionFunctor</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="969"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="970"><highlight class="normal"></highlight></codeline>
-<codeline lineno="974" refid="classvrv_1_1_prepare_reh_position_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_prepare_reh_position_functor" kindref="compound">PrepareRehPositionFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>{</highlight></codeline>
-<codeline lineno="975"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="979"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_prepare_reh_position_functor" kindref="compound">PrepareRehPositionFunctor</ref>();</highlight></codeline>
-<codeline lineno="981"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_prepare_reh_position_functor" kindref="compound">PrepareRehPositionFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="983"><highlight class="normal"></highlight></codeline>
-<codeline lineno="984"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="985"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Abstract<sp/>base<sp/>implementation</highlight></codeline>
-<codeline lineno="986"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="987" refid="classvrv_1_1_prepare_reh_position_functor_1a6386728a8dbb2fa78b227194a9b75a33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_prepare_reh_position_functor_1a6386728a8dbb2fa78b227194a9b75a33" kindref="member">ImplementsEndInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="988"><highlight class="normal"></highlight></codeline>
-<codeline lineno="989"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="990"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
-<codeline lineno="991"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
-<codeline lineno="993"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitReh(<ref refid="classvrv_1_1_reh" kindref="compound">Reh</ref><sp/>*reh)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="995"><highlight class="normal"></highlight></codeline>
-<codeline lineno="996"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="997"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="998"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="999"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1000"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="1001"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1002"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="698"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="699"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="701"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"></highlight></codeline>
+<codeline lineno="703"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="704"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PrepareRptFunctor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="705"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="706"><highlight class="normal"></highlight></codeline>
+<codeline lineno="711" refid="classvrv_1_1_prepare_rpt_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_prepare_rpt_functor" kindref="compound">PrepareRptFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_doc_functor" kindref="compound">DocFunctor</ref><sp/>{</highlight></codeline>
+<codeline lineno="712"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="716"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_prepare_rpt_functor" kindref="compound">PrepareRptFunctor</ref>(<ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc);</highlight></codeline>
+<codeline lineno="718"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_prepare_rpt_functor" kindref="compound">PrepareRptFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="720"><highlight class="normal"></highlight></codeline>
+<codeline lineno="721"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="722"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Abstract<sp/>base<sp/>implementation</highlight></codeline>
+<codeline lineno="723"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="724" refid="classvrv_1_1_prepare_rpt_functor_1aa2295a27face6602fb4fc3368f39156f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_prepare_rpt_functor_1aa2295a27face6602fb4fc3368f39156f" kindref="member">ImplementsEndInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="725"><highlight class="normal"></highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="727"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
+<codeline lineno="728"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline lineno="730"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitLayer(<ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref><sp/>*layer)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="731"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitMRpt(<ref refid="classvrv_1_1_m_rpt" kindref="compound">MRpt</ref><sp/>*mRpt)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="732"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitStaff(<ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref><sp/>*staff)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="734"><highlight class="normal"></highlight></codeline>
+<codeline lineno="735"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="737"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="739"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="740"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="741"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="742"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>MRpt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="743"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_m_rpt" kindref="compound">MRpt</ref><sp/>*m_currentMRpt;</highlight></codeline>
+<codeline lineno="744"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>data_BOOLEAN<sp/>indicating<sp/>if<sp/>multiNumber</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="745"><highlight class="normal"><sp/><sp/><sp/><sp/>data_BOOLEAN<sp/>m_multiNumber;</highlight></codeline>
+<codeline lineno="746"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="747"><highlight class="normal"></highlight></codeline>
+<codeline lineno="748"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="749"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PrepareDelayedTurnsFunctor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="750"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="751"><highlight class="normal"></highlight></codeline>
+<codeline lineno="756" refid="classvrv_1_1_prepare_delayed_turns_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_prepare_delayed_turns_functor" kindref="compound">PrepareDelayedTurnsFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_collect_and_process" kindref="compound">CollectAndProcess</ref><sp/>{</highlight></codeline>
+<codeline lineno="757"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="761"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_prepare_delayed_turns_functor" kindref="compound">PrepareDelayedTurnsFunctor</ref>();</highlight></codeline>
+<codeline lineno="763"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_prepare_delayed_turns_functor" kindref="compound">PrepareDelayedTurnsFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="765"><highlight class="normal"></highlight></codeline>
+<codeline lineno="766"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="767"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Abstract<sp/>base<sp/>implementation</highlight></codeline>
+<codeline lineno="768"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="769" refid="classvrv_1_1_prepare_delayed_turns_functor_1ab743618eee51ed5918942d786c976645" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_prepare_delayed_turns_functor_1ab743618eee51ed5918942d786c976645" kindref="member">ImplementsEndInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="770"><highlight class="normal"></highlight></codeline>
+<codeline lineno="771"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="772"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Getter<sp/>for<sp/>the<sp/>map<sp/>of<sp/>delayed<sp/>turns</highlight></codeline>
+<codeline lineno="773"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="774"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::map&lt;LayerElement<sp/>*,<sp/>Turn<sp/>*&gt;<sp/>&amp;GetDelayedTurns()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_delayedTurns;<sp/>}</highlight></codeline>
+<codeline lineno="775"><highlight class="normal"></highlight></codeline>
+<codeline lineno="776"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="777"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Reset<sp/>the<sp/>current<sp/>turn<sp/>and<sp/>element</highlight></codeline>
+<codeline lineno="778"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="779"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ResetCurrent();</highlight></codeline>
+<codeline lineno="780"><highlight class="normal"></highlight></codeline>
+<codeline lineno="781"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="782"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
+<codeline lineno="783"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline lineno="785"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitLayerElement(LayerElement<sp/>*layerElement)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="786"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitTurn(Turn<sp/>*turn)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="788"><highlight class="normal"></highlight></codeline>
+<codeline lineno="789"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="790"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="791"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="792"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="793"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="794"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="795"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="796"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>element<sp/>to<sp/>which<sp/>a<sp/>turn<sp/>is<sp/>pointing<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="797"><highlight class="normal"><sp/><sp/><sp/><sp/>LayerElement<sp/>*m_previousElement;</highlight></codeline>
+<codeline lineno="798"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>chord</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="799"><highlight class="normal"><sp/><sp/><sp/><sp/>Chord<sp/>*m_currentChord;</highlight></codeline>
+<codeline lineno="800"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>turn<sp/>to<sp/>which<sp/>we<sp/>want<sp/>to<sp/>set<sp/>a<sp/>m_drawingEndElement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="801"><highlight class="normal"><sp/><sp/><sp/><sp/>Turn<sp/>*m_currentTurn;</highlight></codeline>
+<codeline lineno="802"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>map<sp/>of<sp/>the<sp/>delayed<sp/>turns<sp/>and<sp/>the<sp/>layer<sp/>elements<sp/>they<sp/>point<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="803"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;LayerElement<sp/>*,<sp/>Turn<sp/>*&gt;<sp/>m_delayedTurns;</highlight></codeline>
+<codeline lineno="804"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="805"><highlight class="normal"></highlight></codeline>
+<codeline lineno="806"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="807"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PrepareMilestonesFunctor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="808"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="809"><highlight class="normal"></highlight></codeline>
+<codeline lineno="813" refid="classvrv_1_1_prepare_milestones_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_prepare_milestones_functor" kindref="compound">PrepareMilestonesFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>{</highlight></codeline>
+<codeline lineno="814"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="818"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_prepare_milestones_functor" kindref="compound">PrepareMilestonesFunctor</ref>();</highlight></codeline>
+<codeline lineno="820"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_prepare_milestones_functor" kindref="compound">PrepareMilestonesFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="822"><highlight class="normal"></highlight></codeline>
+<codeline lineno="823"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="824"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Abstract<sp/>base<sp/>implementation</highlight></codeline>
+<codeline lineno="825"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="826" refid="classvrv_1_1_prepare_milestones_functor_1ab652d652c00ccd6aab30ffaad364ad5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_prepare_milestones_functor_1ab652d652c00ccd6aab30ffaad364ad5a" kindref="member">ImplementsEndInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="827"><highlight class="normal"></highlight></codeline>
+<codeline lineno="828"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="829"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Getter<sp/>and<sp/>modifier<sp/>for<sp/>the<sp/>interface<sp/>list</highlight></codeline>
+<codeline lineno="830"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline lineno="832"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;SystemMilestoneInterface<sp/>*&gt;<sp/>&amp;GetStartMilestones()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_startMilestones;<sp/>}</highlight></codeline>
+<codeline lineno="833"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>InsertStartMilestone(SystemMilestoneInterface<sp/>*interface);</highlight></codeline>
+<codeline lineno="835"><highlight class="normal"></highlight></codeline>
+<codeline lineno="836"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="837"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
+<codeline lineno="838"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline lineno="840"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitEditorialElement(EditorialElement<sp/>*editorialElement)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="841"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitEnding(Ending<sp/>*ending)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="842"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitMeasure(Measure<sp/>*measure)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="843"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitSection(Section<sp/>*section)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="844"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitSystemMilestone(SystemMilestoneEnd<sp/>*systemMilestoneEnd)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="846"><highlight class="normal"></highlight></codeline>
+<codeline lineno="847"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="848"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="849"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="850"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="851"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="852"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="853"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="854"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>last<sp/>measure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="855"><highlight class="normal"><sp/><sp/><sp/><sp/>Measure<sp/>*m_lastMeasure;</highlight></codeline>
+<codeline lineno="856"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>ending</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="857"><highlight class="normal"><sp/><sp/><sp/><sp/>Ending<sp/>*m_currentEnding;</highlight></codeline>
+<codeline lineno="858"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>list<sp/>of<sp/>start<sp/>milestones</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="859"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;SystemMilestoneInterface<sp/>*&gt;<sp/>m_startMilestones;</highlight></codeline>
+<codeline lineno="860"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="861"><highlight class="normal"></highlight></codeline>
+<codeline lineno="862"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="863"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PrepareFloatingGrpsFunctor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="864"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="865"><highlight class="normal"></highlight></codeline>
+<codeline lineno="870" refid="classvrv_1_1_prepare_floating_grps_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_prepare_floating_grps_functor" kindref="compound">PrepareFloatingGrpsFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_doc_functor" kindref="compound">DocFunctor</ref><sp/>{</highlight></codeline>
+<codeline lineno="871"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="875"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_prepare_floating_grps_functor" kindref="compound">PrepareFloatingGrpsFunctor</ref>(<ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc);</highlight></codeline>
+<codeline lineno="877"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_prepare_floating_grps_functor" kindref="compound">PrepareFloatingGrpsFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="879"><highlight class="normal"></highlight></codeline>
+<codeline lineno="880"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="881"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Abstract<sp/>base<sp/>implementation</highlight></codeline>
+<codeline lineno="882"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="883" refid="classvrv_1_1_prepare_floating_grps_functor_1ad3f7d70afef2abc5f269241558c30db7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_prepare_floating_grps_functor_1ad3f7d70afef2abc5f269241558c30db7" kindref="member">ImplementsEndInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="884"><highlight class="normal"></highlight></codeline>
+<codeline lineno="885"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="886"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
+<codeline lineno="887"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline lineno="889"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitDir(<ref refid="classvrv_1_1_dir" kindref="compound">Dir</ref><sp/>*dir)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="890"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitDynam(<ref refid="classvrv_1_1_dynam" kindref="compound">Dynam</ref><sp/>*dynam)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="891"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitEnding(<ref refid="classvrv_1_1_ending" kindref="compound">Ending</ref><sp/>*ending)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="892"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitHairpin(<ref refid="classvrv_1_1_hairpin" kindref="compound">Hairpin</ref><sp/>*hairpin)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="893"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitHarm(<ref refid="classvrv_1_1_harm" kindref="compound">Harm</ref><sp/>*harm)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="894"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitMeasure(<ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref><sp/>*measure)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="895"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitMeasureEnd(<ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref><sp/>*measure)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="896"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitPedal(<ref refid="classvrv_1_1_pedal" kindref="compound">Pedal</ref><sp/>*pedal)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="897"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitSystemMilestone(<ref refid="classvrv_1_1_system_milestone_end" kindref="compound">SystemMilestoneEnd</ref><sp/>*systemMilestoneEnd)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="899"><highlight class="normal"></highlight></codeline>
+<codeline lineno="900"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="901"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="902"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="903"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="904"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="905"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="906"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="907"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>previous<sp/>ending</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="908"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_ending" kindref="compound">Ending</ref><sp/>*m_previousEnding;</highlight></codeline>
+<codeline lineno="909"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>dynams<sp/>in<sp/>the<sp/>current<sp/>measure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="910"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Dynam<sp/>*&gt;<sp/>m_dynams;</highlight></codeline>
+<codeline lineno="911"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>hairpins<sp/>to<sp/>be<sp/>linked<sp/>/<sp/>grouped</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="912"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Hairpin<sp/>*&gt;<sp/>m_hairpins;</highlight></codeline>
+<codeline lineno="913"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>map<sp/>of<sp/>existing<sp/>harms<sp/>(based<sp/>on<sp/>@n)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="914"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>Harm<sp/>*&gt;<sp/>m_harms;</highlight></codeline>
+<codeline lineno="915"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>pedals<sp/>to<sp/>be<sp/>linked<sp/>/<sp/>grouped</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="916"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;Pedal<sp/>*&gt;<sp/>m_pedalLines;</highlight></codeline>
+<codeline lineno="917"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="918"><highlight class="normal"></highlight></codeline>
+<codeline lineno="919"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="920"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PrepareStaffCurrentTimeSpanningFunctor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="921"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="922"><highlight class="normal"></highlight></codeline>
+<codeline lineno="928" refid="classvrv_1_1_prepare_staff_current_time_spanning_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_prepare_staff_current_time_spanning_functor" kindref="compound">PrepareStaffCurrentTimeSpanningFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>{</highlight></codeline>
+<codeline lineno="929"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="933"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_prepare_staff_current_time_spanning_functor" kindref="compound">PrepareStaffCurrentTimeSpanningFunctor</ref>();</highlight></codeline>
+<codeline lineno="935"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_prepare_staff_current_time_spanning_functor" kindref="compound">PrepareStaffCurrentTimeSpanningFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="937"><highlight class="normal"></highlight></codeline>
+<codeline lineno="938"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="939"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Abstract<sp/>base<sp/>implementation</highlight></codeline>
+<codeline lineno="940"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="941" refid="classvrv_1_1_prepare_staff_current_time_spanning_functor_1a8853e80866da0194a4ed22a128aeb36d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_prepare_staff_current_time_spanning_functor_1a8853e80866da0194a4ed22a128aeb36d" kindref="member">ImplementsEndInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="942"><highlight class="normal"></highlight></codeline>
+<codeline lineno="943"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="944"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Getter<sp/>and<sp/>modifier<sp/>for<sp/>the<sp/>interface<sp/>list</highlight></codeline>
+<codeline lineno="945"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline lineno="947"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ArrayOfObjects<sp/>&amp;GetTimeSpanningElements()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_timeSpanningElements;<sp/>}</highlight></codeline>
+<codeline lineno="948"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>InsertTimeSpanningElement(Object<sp/>*element);</highlight></codeline>
+<codeline lineno="950"><highlight class="normal"></highlight></codeline>
+<codeline lineno="951"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="952"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
+<codeline lineno="953"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline lineno="955"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitF(F<sp/>*f)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="956"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitFloatingObject(FloatingObject<sp/>*floatingObject)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="957"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitMeasureEnd(Measure<sp/>*measure)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="958"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitStaff(Staff<sp/>*staff)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="959"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitSyl(Syl<sp/>*syl)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="961"><highlight class="normal"></highlight></codeline>
+<codeline lineno="962"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="963"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="964"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="965"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="966"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="967"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="968"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="969"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>currently<sp/>running<sp/>TimeSpanningInterface<sp/>elements</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="970"><highlight class="normal"><sp/><sp/><sp/><sp/>ArrayOfObjects<sp/>m_timeSpanningElements;</highlight></codeline>
+<codeline lineno="971"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="972"><highlight class="normal"></highlight></codeline>
+<codeline lineno="973"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="974"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PrepareRehPositionFunctor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="975"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="976"><highlight class="normal"></highlight></codeline>
+<codeline lineno="980" refid="classvrv_1_1_prepare_reh_position_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_prepare_reh_position_functor" kindref="compound">PrepareRehPositionFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>{</highlight></codeline>
+<codeline lineno="981"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="985"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_prepare_reh_position_functor" kindref="compound">PrepareRehPositionFunctor</ref>();</highlight></codeline>
+<codeline lineno="987"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_prepare_reh_position_functor" kindref="compound">PrepareRehPositionFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="989"><highlight class="normal"></highlight></codeline>
+<codeline lineno="990"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="991"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Abstract<sp/>base<sp/>implementation</highlight></codeline>
+<codeline lineno="992"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="993" refid="classvrv_1_1_prepare_reh_position_functor_1a6386728a8dbb2fa78b227194a9b75a33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_prepare_reh_position_functor_1a6386728a8dbb2fa78b227194a9b75a33" kindref="member">ImplementsEndInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="994"><highlight class="normal"></highlight></codeline>
+<codeline lineno="995"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="996"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
+<codeline lineno="997"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline lineno="999"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitReh(<ref refid="classvrv_1_1_reh" kindref="compound">Reh</ref><sp/>*reh)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1001"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1002"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="1003"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1004"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="1005"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1006"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1007"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PrepareBeamSpanElementsFunctor</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1008"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1009"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1014" refid="classvrv_1_1_prepare_beam_span_elements_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_prepare_beam_span_elements_functor" kindref="compound">PrepareBeamSpanElementsFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>{</highlight></codeline>
-<codeline lineno="1015"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="1019"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_prepare_beam_span_elements_functor" kindref="compound">PrepareBeamSpanElementsFunctor</ref>();</highlight></codeline>
-<codeline lineno="1021"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_prepare_beam_span_elements_functor" kindref="compound">PrepareBeamSpanElementsFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="1023"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1024"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="1025"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Abstract<sp/>base<sp/>implementation</highlight></codeline>
-<codeline lineno="1026"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1027" refid="classvrv_1_1_prepare_beam_span_elements_functor_1a3c8fa30d3eb714b14d052657a5246a5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_prepare_beam_span_elements_functor_1a3c8fa30d3eb714b14d052657a5246a5b" kindref="member">ImplementsEndInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="1028"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1029"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="1030"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
-<codeline lineno="1031"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
-<codeline lineno="1033"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitBeamSpan(<ref refid="classvrv_1_1_beam_span" kindref="compound">BeamSpan</ref><sp/>*beamSpan)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="1035"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1036"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="1037"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1038"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="1039"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Helper<sp/>to<sp/>get<sp/>the<sp/>element<sp/>list<sp/>for<sp/>the<sp/>beamSpan<sp/>-<sp/>elements<sp/>are<sp/>acquired<sp/>from<sp/>all<sp/>layerElements</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1040"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>that<sp/>are<sp/>located<sp/>in<sp/>between<sp/>start<sp/>and<sp/>end<sp/>of<sp/>the<sp/>beamSpan</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1041"><highlight class="normal"><sp/><sp/><sp/><sp/>ArrayOfObjects<sp/>GetBeamSpanElementList(<ref refid="classvrv_1_1_beam_span" kindref="compound">BeamSpan</ref><sp/>*beamSpan,<sp/><ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref><sp/>*layer,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref><sp/>*staff)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="1042"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1043"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="1044"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1045"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="1046"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1047"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1004"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1005"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1006"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1007"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1008"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1009"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1010"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1011"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1012"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1013"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PrepareBeamSpanElementsFunctor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1014"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1015"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1020" refid="classvrv_1_1_prepare_beam_span_elements_functor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_prepare_beam_span_elements_functor" kindref="compound">PrepareBeamSpanElementsFunctor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>{</highlight></codeline>
+<codeline lineno="1021"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1025"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_prepare_beam_span_elements_functor" kindref="compound">PrepareBeamSpanElementsFunctor</ref>();</highlight></codeline>
+<codeline lineno="1027"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_prepare_beam_span_elements_functor" kindref="compound">PrepareBeamSpanElementsFunctor</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1029"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1030"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="1031"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Abstract<sp/>base<sp/>implementation</highlight></codeline>
+<codeline lineno="1032"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1033" refid="classvrv_1_1_prepare_beam_span_elements_functor_1a3c8fa30d3eb714b14d052657a5246a5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_prepare_beam_span_elements_functor_1a3c8fa30d3eb714b14d052657a5246a5b" kindref="member">ImplementsEndInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="1034"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1035"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="1036"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
+<codeline lineno="1037"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline lineno="1039"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitBeamSpan(<ref refid="classvrv_1_1_beam_span" kindref="compound">BeamSpan</ref><sp/>*beamSpan)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1041"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1042"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1043"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1044"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1045"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Helper<sp/>to<sp/>get<sp/>the<sp/>element<sp/>list<sp/>for<sp/>the<sp/>beamSpan<sp/>-<sp/>elements<sp/>are<sp/>acquired<sp/>from<sp/>all<sp/>layerElements</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1046"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>that<sp/>are<sp/>located<sp/>in<sp/>between<sp/>start<sp/>and<sp/>end<sp/>of<sp/>the<sp/>beamSpan</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1047"><highlight class="normal"><sp/><sp/><sp/><sp/>ArrayOfObjects<sp/>GetBeamSpanElementList(<ref refid="classvrv_1_1_beam_span" kindref="compound">BeamSpan</ref><sp/>*beamSpan,<sp/><ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref><sp/>*layer,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref><sp/>*staff)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1048"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1049"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1050"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1051"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__VRV_PREPAREDATAFUNCTOR_H__</highlight></codeline>
+<codeline lineno="1049"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1050"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1051"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1052"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1053"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1054"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1055"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1056"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1057"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__VRV_PREPAREDATAFUNCTOR_H__</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/preparedatafunctor.h"/>
   </compounddef>
