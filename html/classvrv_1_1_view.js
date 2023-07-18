@@ -38,6 +38,7 @@ var classvrv_1_1_view =
     [ "DrawDiamond", "classvrv_1_1_view.html#a92d7d53a19088ce4bf4192bb1c79785f", null ],
     [ "DrawDirString", "classvrv_1_1_view.html#a0532111ca33161c07345b578adab5616", null ],
     [ "DrawDiv", "classvrv_1_1_view.html#abbd4a644feee18fa38d6b6036041f8e8", null ],
+    [ "DrawDivLine", "classvrv_1_1_view.html#a582313021c077cea7b6578256b409e10", null ],
     [ "DrawDot", "classvrv_1_1_view.html#af2ab2f89a0b92ae877969133573b32ad", null ],
     [ "DrawDot", "classvrv_1_1_view.html#a85a2b586e641814ad20f2bd520e773f2", null ],
     [ "DrawDotInLigature", "classvrv_1_1_view.html#a5442d39b30587eeea850cef2b4601ca7", null ],

@@ -8,6 +8,7 @@
     <includes refid="doc_8h" local="yes">doc.h</includes>
     <includes refid="editortoolkit_8h" local="yes">editortoolkit.h</includes>
     <includes refid="view_8h" local="yes">view.h</includes>
+    <includes refid="vrv_8h" local="yes">vrv.h</includes>
     <includes refid="zone_8h" local="yes">zone.h</includes>
     <includes local="yes">jsonxx.h</includes>
     <incdepgraph>
@@ -158,6 +159,10 @@
         <childnode refid="58" relation="include">
         </childnode>
       </node>
+      <node id="65">
+        <label>toolkitdef.h</label>
+        <link refid="toolkitdef_8h_source"/>
+      </node>
       <node id="1">
         <label>editortoolkit_neume.h</label>
         <link refid="editortoolkit__neume_8h"/>
@@ -175,8 +180,13 @@
         </childnode>
         <childnode refid="60" relation="include">
         </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
         <childnode refid="22" relation="include">
         </childnode>
+      </node>
+      <node id="61">
+        <label>cstdarg</label>
       </node>
       <node id="3">
         <label>string</label>
@@ -205,7 +215,7 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="60">
+      <node id="66">
         <label>zone.h</label>
         <link refid="zone_8h_source"/>
         <childnode refid="24" relation="include">
@@ -261,6 +271,9 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+      </node>
+      <node id="62">
+        <label>cstdio</label>
       </node>
       <node id="55">
         <label>textelement.h</label>
@@ -368,6 +381,9 @@
       <node id="28">
         <label>cstdlib</label>
       </node>
+      <node id="64">
+        <label>sys/time.h</label>
+      </node>
       <node id="46">
         <label>keysig.h</label>
         <link refid="keysig_8h_source"/>
@@ -433,6 +449,30 @@
       <node id="37">
         <label>atts_mei.h</label>
       </node>
+      <node id="60">
+        <label>vrv.h</label>
+        <link refid="vrv_8h_source"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
       <node id="13">
         <label>set</label>
       </node>
@@ -456,6 +496,9 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+      </node>
+      <node id="63">
+        <label>cstring</label>
       </node>
       <node id="8">
         <label>vrvdef.h</label>
@@ -482,6 +525,7 @@
     </incdepgraph>
     <innerclass refid="classvrv_1_1_editor_toolkit_neume" prot="public">vrv::EditorToolkitNeume</innerclass>
     <innerclass refid="structvrv_1_1_closest_b_b" prot="public">vrv::ClosestBB</innerclass>
+    <innerclass refid="structvrv_1_1_closest_neume" prot="public">vrv::ClosestNeume</innerclass>
     <innerclass refid="structvrv_1_1_staff_sort" prot="public">vrv::StaffSort</innerclass>
     <innernamespace refid="namespacevrv">vrv</innernamespace>
     <briefdescription>
@@ -506,144 +550,193 @@
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;doc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;editortoolkit.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;view.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;zone.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;jsonxx.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vrv<sp/>{</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>EditorToolkitNeume</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30" refid="classvrv_1_1_editor_toolkit_neume" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_editor_toolkit_neume" kindref="compound">EditorToolkitNeume</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_editor_toolkit" kindref="compound">EditorToolkit</ref><sp/>{</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_editor_toolkit_neume" kindref="compound">EditorToolkitNeume</ref>(<ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc,<sp/><ref refid="classvrv_1_1_view" kindref="compound">View</ref><sp/>*view)<sp/>:<sp/><ref refid="classvrv_1_1_editor_toolkit" kindref="compound">EditorToolkit</ref>(doc,<sp/>view)<sp/>{}</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_editor_toolkit_neume_1a52b69805e71ae4e855dba90cdd1cadee" kindref="member">ParseEditorAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;json_editorAction);</highlight></codeline>
-<codeline lineno="34" refid="classvrv_1_1_editor_toolkit_neume_1af12a007a759c5fbc0d4308d384cf3545" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classvrv_1_1_editor_toolkit_neume_1af12a007a759c5fbc0d4308d384cf3545" kindref="member">EditInfo</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_infoObject.json();<sp/>};</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_editor_toolkit_neume_1a43ace3311204fc2ae9adc611b103a947" kindref="member">Chain</ref>(jsonxx::Array<sp/>actions);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Drag(std::string<sp/>elementId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Insert(std::string<sp/>elementType,<sp/>std::string<sp/>staffId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ulx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>uly,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lrx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lry,</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;std::string,<sp/>std::string&gt;&gt;<sp/>attributes);</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Merge(std::vector&lt;std::string&gt;<sp/>elementIds);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Set(std::string<sp/>elementId,<sp/>std::string<sp/>attrType,<sp/>std::string<sp/>attrValue);</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetText(std::string<sp/>elementId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;text);</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetClef(std::string<sp/>elementId,<sp/>std::string<sp/>shape);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Split(std::string<sp/>elementId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Remove(std::string<sp/>elementId);</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Resize(std::string<sp/>elementId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ulx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>uly,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lrx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lry,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>resize<sp/>=<sp/>NAN);</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Group(std::string<sp/>groupType,<sp/>std::vector&lt;std::string&gt;<sp/>elementIds);</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Ungroup(std::string<sp/>groupType,<sp/>std::vector&lt;std::string&gt;<sp/>elementIds);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ChangeGroup(std::string<sp/>elementId,<sp/>std::string<sp/>contour);</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ToggleLigature(std::vector&lt;std::string&gt;<sp/>elementIds,<sp/>std::string<sp/>isLigature);</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ChangeStaff(std::string<sp/>elementId);</highlight></codeline>
-<codeline lineno="57"><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_editor_toolkit_neume_1aae7ed26ed5e4663e0828b8d41b2de256" kindref="member">ParseDragAction</ref>(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*y);</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseInsertAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementType,<sp/>std::string<sp/>*startId,<sp/>std::string<sp/>*endId);</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseInsertAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementType,<sp/>std::string<sp/>*staffId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ulx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*uly,</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*lrx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*lry,<sp/>std::vector&lt;std::pair&lt;std::string,<sp/>std::string&gt;&gt;<sp/>*attributes);</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseMergeAction(jsonxx::Object<sp/>param,<sp/>std::vector&lt;std::string&gt;<sp/>*elementIds);</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseSetAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/>std::string<sp/>*attrType,<sp/>std::string<sp/>*attrValue);</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseSetTextAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/>std::string<sp/>*text);</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseSetClefAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/>std::string<sp/>*shape);</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseSplitAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*x);</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseRemoveAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId);</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseResizeAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ulx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*uly,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*lrx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*lry);</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseResizeRotateAction(</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ulx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*uly,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*lrx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*lry,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*rotate);</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseGroupAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*groupType,<sp/>std::vector&lt;std::string&gt;<sp/>*elementIds);</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseUngroupAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*groupType,<sp/>std::vector&lt;std::string&gt;<sp/>*elementIds);</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseChangeGroupAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/>std::string<sp/>*contour);</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseToggleLigatureAction(jsonxx::Object<sp/>param,<sp/>std::vector&lt;std::string&gt;<sp/>*elementIds,<sp/>std::string<sp/>*isLigature);</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseChangeStaffAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId);</highlight></codeline>
-<codeline lineno="81"></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_editor_toolkit_neume_1aa32bf021d3d31ec9ecb894a12a2ea729" kindref="member">AdjustPitchFromPosition</ref>(<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*obj,<sp/><ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref><sp/>*clef<sp/>=<sp/>NULL);</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>AdjustClefLineFromPosition(<ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref><sp/>*clef,<sp/><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref><sp/>*staff<sp/>=<sp/>NULL);</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>jsonxx::Object<sp/>m_infoObject;</highlight></codeline>
-<codeline lineno="92"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Comparator<sp/>structs</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//<sp/>To<sp/>be<sp/>used<sp/>with<sp/>std::sort<sp/>to<sp/>find<sp/>the<sp/>object<sp/>with<sp/>a<sp/>closest<sp/>bounding</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//<sp/>box<sp/>to<sp/>a<sp/>point<sp/>defined<sp/>by<sp/>the<sp/>x<sp/>and<sp/>y<sp/>parameters<sp/>of<sp/>ClosestBB</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100" refid="structvrv_1_1_closest_b_b" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvrv_1_1_closest_b_b" kindref="compound">ClosestBB</ref><sp/>{</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y;</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>distanceToBB(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ulx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>uly,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lrx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lry,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rotate<sp/>=<sp/>0)</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>(x<sp/>-<sp/>ulx)<sp/>*<sp/>tan(rotate<sp/>*<sp/>M_PI<sp/>/<sp/>180.0);</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uly<sp/>=<sp/>uly<sp/>-<sp/>offset;</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lry<sp/>=<sp/>lry<sp/>-<sp/>offset;</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xDiff<sp/>=<sp/>std::max((ulx<sp/>&gt;<sp/>x<sp/>?<sp/>ulx<sp/>-<sp/>x<sp/>:<sp/>0),<sp/>(x<sp/>&gt;<sp/>lrx<sp/>?<sp/>x<sp/>-<sp/>lrx<sp/>:<sp/>0));</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>yDiff<sp/>=<sp/>std::max((uly<sp/>&gt;<sp/>y<sp/>?<sp/>uly<sp/>-<sp/>y<sp/>:<sp/>0),<sp/>(y<sp/>&gt;<sp/>lry<sp/>?<sp/>y<sp/>-<sp/>lry<sp/>:<sp/>0));</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vrv.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;zone.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;jsonxx.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vrv<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>EditorToolkitNeume</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classvrv_1_1_editor_toolkit_neume" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_editor_toolkit_neume" kindref="compound">EditorToolkitNeume</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_editor_toolkit" kindref="compound">EditorToolkit</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_editor_toolkit_neume" kindref="compound">EditorToolkitNeume</ref>(<ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc,<sp/><ref refid="classvrv_1_1_view" kindref="compound">View</ref><sp/>*view)<sp/>:<sp/><ref refid="classvrv_1_1_editor_toolkit" kindref="compound">EditorToolkit</ref>(doc,<sp/>view)<sp/>{}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_editor_toolkit_neume_1a52b69805e71ae4e855dba90cdd1cadee" kindref="member">ParseEditorAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;json_editorAction);</highlight></codeline>
+<codeline lineno="35" refid="classvrv_1_1_editor_toolkit_neume_1af12a007a759c5fbc0d4308d384cf3545" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classvrv_1_1_editor_toolkit_neume_1af12a007a759c5fbc0d4308d384cf3545" kindref="member">EditInfo</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_infoObject.json();<sp/>};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_editor_toolkit_neume_1a43ace3311204fc2ae9adc611b103a947" kindref="member">Chain</ref>(jsonxx::Array<sp/>actions);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>DisplaceClefOctave(std::string<sp/>elementId,<sp/>std::string<sp/>direction);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Drag(std::string<sp/>elementId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Insert(std::string<sp/>elementType,<sp/>std::string<sp/>staffId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ulx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>uly,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lrx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lry,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;std::string,<sp/>std::string&gt;&gt;<sp/>attributes);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>InsertToSyllable(std::string<sp/>elementId);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Merge(std::vector&lt;std::string&gt;<sp/>elementIds);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>MoveOutsideSyllable(std::string<sp/>elementId);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Set(std::string<sp/>elementId,<sp/>std::string<sp/>attrType,<sp/>std::string<sp/>attrValue);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetText(std::string<sp/>elementId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;text);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetClef(std::string<sp/>elementId,<sp/>std::string<sp/>shape);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Split(std::string<sp/>elementId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SplitNeume(std::string<sp/>elementId,<sp/>std::string<sp/>ncId);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Remove(std::string<sp/>elementId);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Resize(std::string<sp/>elementId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ulx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>uly,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lrx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lry,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>resize<sp/>=<sp/>NAN);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Group(std::string<sp/>groupType,<sp/>std::vector&lt;std::string&gt;<sp/>elementIds);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Ungroup(std::string<sp/>groupType,<sp/>std::vector&lt;std::string&gt;<sp/>elementIds);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ChangeGroup(std::string<sp/>elementId,<sp/>std::string<sp/>contour);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ToggleLigature(std::vector&lt;std::string&gt;<sp/>elementIds);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ChangeStaff(std::string<sp/>elementId);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ChangeStaffTo(std::string<sp/>elementId,<sp/>std::string<sp/>staffId);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ClefMovementHandler(<ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref><sp/>*clef,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="64"><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_editor_toolkit_neume_1a0cc9ca57026a756ef1fc521f83db6cdc" kindref="member">ParseDisplaceClefAction</ref>(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/>std::string<sp/>*direction);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseDragAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*y);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseInsertAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementType,<sp/>std::string<sp/>*startId,<sp/>std::string<sp/>*endId);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseInsertAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementType,<sp/>std::string<sp/>*staffId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ulx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*uly,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*lrx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*lry,<sp/>std::vector&lt;std::pair&lt;std::string,<sp/>std::string&gt;&gt;<sp/>*attributes);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseInsertToSyllableAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseMergeAction(jsonxx::Object<sp/>param,<sp/>std::vector&lt;std::string&gt;<sp/>*elementIds);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseMoveOutsideSyllableAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseSetAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/>std::string<sp/>*attrType,<sp/>std::string<sp/>*attrValue);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseSetTextAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/>std::string<sp/>*text);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseSetClefAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/>std::string<sp/>*shape);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseSplitAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*x);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseSplitNeumeAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/>std::string<sp/>*ncId);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseRemoveAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseResizeAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ulx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*uly,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*lrx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*lry);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseResizeRotateAction(</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ulx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*uly,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*lrx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*lry,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*rotate);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseGroupAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*groupType,<sp/>std::vector&lt;std::string&gt;<sp/>*elementIds);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseUngroupAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*groupType,<sp/>std::vector&lt;std::string&gt;<sp/>*elementIds);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseChangeGroupAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/>std::string<sp/>*contour);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseToggleLigatureAction(jsonxx::Object<sp/>param,<sp/>std::vector&lt;std::string&gt;<sp/>*elementIds);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseChangeStaffAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ParseChangeStaffToAction(jsonxx::Object<sp/>param,<sp/>std::string<sp/>*elementId,<sp/>std::string<sp/>*staffId);</highlight></codeline>
+<codeline lineno="93"></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_editor_toolkit_neume_1aa32bf021d3d31ec9ecb894a12a2ea729" kindref="member">AdjustPitchFromPosition</ref>(<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*obj,<sp/><ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref><sp/>*clef<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>AdjustClefLineFromPosition(<ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref><sp/>*clef,<sp/><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref><sp/>*staff<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>jsonxx::Object<sp/>m_infoObject;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Comparator<sp/>structs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//<sp/>To<sp/>be<sp/>used<sp/>with<sp/>std::sort<sp/>to<sp/>find<sp/>the<sp/>object<sp/>with<sp/>a<sp/>closest<sp/>bounding</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">//<sp/>box<sp/>to<sp/>a<sp/>point<sp/>defined<sp/>by<sp/>the<sp/>x<sp/>and<sp/>y<sp/>parameters<sp/>of<sp/>ClosestBB</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(xDiff<sp/>*<sp/>xDiff<sp/>+<sp/>yDiff<sp/>*<sp/>yDiff);</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()(<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*a,<sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*b)</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!a-&gt;GetFacsimileInterface()<sp/>||<sp/>!b-&gt;GetFacsimileInterface())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_zone" kindref="compound">Zone</ref><sp/>*zoneA<sp/>=<sp/>a-&gt;GetFacsimileInterface()-&gt;<ref refid="classvrv_1_1_facsimile_interface_1a3ca53c1bfe956ae1bfbb0a77f3c672b0" kindref="member">GetZone</ref>();</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_zone" kindref="compound">Zone</ref><sp/>*zoneB<sp/>=<sp/>b-&gt;GetFacsimileInterface()-&gt;<ref refid="classvrv_1_1_facsimile_interface_1a3ca53c1bfe956ae1bfbb0a77f3c672b0" kindref="member">GetZone</ref>();</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>distA</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>distanceToBB(zoneA-&gt;GetUlx(),<sp/>zoneA-&gt;GetUly(),<sp/>zoneA-&gt;GetLrx(),<sp/>zoneA-&gt;GetLry(),<sp/>zoneA-&gt;GetRotate());</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>distB</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>distanceToBB(zoneB-&gt;GetUlx(),<sp/>zoneB-&gt;GetUly(),<sp/>zoneB-&gt;GetLrx(),<sp/>zoneB-&gt;GetLry(),<sp/>zoneB-&gt;GetRotate());</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(distA<sp/>&lt;<sp/>distB);</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="127"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">//<sp/>To<sp/>be<sp/>used<sp/>with<sp/>std::stable_sort<sp/>to<sp/>find<sp/>the<sp/>position<sp/>to<sp/>insert<sp/>a<sp/>new<sp/>staff</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"></highlight></codeline>
-<codeline lineno="131" refid="structvrv_1_1_staff_sort" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvrv_1_1_staff_sort" kindref="compound">StaffSort</ref><sp/>{</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sort<sp/>staves<sp/>left-to-right<sp/>and<sp/>top-to-bottom</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sort<sp/>by<sp/>y<sp/>if<sp/>there<sp/>is<sp/>no<sp/>intersection,<sp/>by<sp/>x<sp/>if<sp/>there<sp/>is</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()(<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*a,<sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*b)</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!a-&gt;GetFacsimileInterface()<sp/>||<sp/>!b-&gt;GetFacsimileInterface())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_zone" kindref="compound">Zone</ref><sp/>*zoneA<sp/>=<sp/>a-&gt;GetFacsimileInterface()-&gt;<ref refid="classvrv_1_1_facsimile_interface_1a3ca53c1bfe956ae1bfbb0a77f3c672b0" kindref="member">GetZone</ref>();</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_zone" kindref="compound">Zone</ref><sp/>*zoneB<sp/>=<sp/>b-&gt;GetFacsimileInterface()-&gt;<ref refid="classvrv_1_1_facsimile_interface_1a3ca53c1bfe956ae1bfbb0a77f3c672b0" kindref="member">GetZone</ref>();</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"></highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>aLowest,<sp/>bLowest,<sp/>aHighest,<sp/>bHighest;</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aLowest<sp/>=<sp/>zoneA-&gt;GetRotate()<sp/>&lt;<sp/>0</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/>zoneA-&gt;GetLry()</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>zoneA-&gt;GetLry()<sp/>+<sp/>(zoneA-&gt;GetLrx()<sp/>-<sp/>zoneA-&gt;GetUlx())<sp/>*<sp/>tan(zoneA-&gt;GetRotate()<sp/>*<sp/>M_PI<sp/>/<sp/>180.0);</highlight></codeline>
+<codeline lineno="112" refid="structvrv_1_1_closest_b_b" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvrv_1_1_closest_b_b" kindref="compound">ClosestBB</ref><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>distanceToBB(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ulx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>uly,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lrx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lry,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rotate<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>(x<sp/>-<sp/>ulx)<sp/>*<sp/>tan(rotate<sp/>*<sp/>M_PI<sp/>/<sp/>180.0);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uly<sp/>=<sp/>uly<sp/>+<sp/>offset;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lry<sp/>=<sp/>lry<sp/>+<sp/>offset;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xDiff<sp/>=<sp/>std::max((ulx<sp/>&gt;<sp/>x<sp/>?<sp/>ulx<sp/>-<sp/>x<sp/>:<sp/>0),<sp/>(x<sp/>&gt;<sp/>lrx<sp/>?<sp/>x<sp/>-<sp/>lrx<sp/>:<sp/>0));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>yDiff<sp/>=<sp/>std::max((uly<sp/>&gt;<sp/>y<sp/>?<sp/>uly<sp/>-<sp/>y<sp/>:<sp/>0),<sp/>(y<sp/>&gt;<sp/>lry<sp/>?<sp/>y<sp/>-<sp/>lry<sp/>:<sp/>0));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(xDiff<sp/>*<sp/>xDiff<sp/>+<sp/>yDiff<sp/>*<sp/>yDiff);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()(<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*a,<sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*b)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!a-&gt;GetFacsimileInterface()<sp/>||<sp/>!b-&gt;GetFacsimileInterface())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_zone" kindref="compound">Zone</ref><sp/>*zoneA<sp/>=<sp/>a-&gt;GetFacsimileInterface()-&gt;<ref refid="classvrv_1_1_facsimile_interface_1a3ca53c1bfe956ae1bfbb0a77f3c672b0" kindref="member">GetZone</ref>();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_zone" kindref="compound">Zone</ref><sp/>*zoneB<sp/>=<sp/>b-&gt;GetFacsimileInterface()-&gt;<ref refid="classvrv_1_1_facsimile_interface_1a3ca53c1bfe956ae1bfbb0a77f3c672b0" kindref="member">GetZone</ref>();</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>distA</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>distanceToBB(zoneA-&gt;GetUlx(),<sp/>zoneA-&gt;GetUly(),<sp/>zoneA-&gt;GetLrx(),<sp/>zoneA-&gt;GetLry(),<sp/>zoneA-&gt;GetRotate());</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>distB</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>distanceToBB(zoneB-&gt;GetUlx(),<sp/>zoneB-&gt;GetUly(),<sp/>zoneB-&gt;GetLrx(),<sp/>zoneB-&gt;GetLry(),<sp/>zoneB-&gt;GetRotate());</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(distA<sp/>&lt;<sp/>distB);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">//<sp/>To<sp/>be<sp/>used<sp/>with<sp/>std::stable_sort<sp/>to<sp/>find<sp/>the<sp/>position<sp/>to<sp/>insert<sp/>a<sp/>new<sp/>accid<sp/>/<sp/>divLine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="structvrv_1_1_closest_neume" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvrv_1_1_closest_neume" kindref="compound">ClosestNeume</ref><sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y;</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aHighest<sp/>=<sp/>zoneA-&gt;GetRotate()<sp/>&lt;<sp/>0</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/>zoneA-&gt;GetUly()</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>zoneA-&gt;GetUly()<sp/>-<sp/>(zoneA-&gt;GetLrx()<sp/>-<sp/>zoneA-&gt;GetUlx())<sp/>*<sp/>tan(zoneA-&gt;GetRotate()<sp/>*<sp/>M_PI<sp/>/<sp/>180.0);</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"></highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bLowest<sp/>=<sp/>zoneB-&gt;GetRotate()<sp/>&lt;<sp/>0</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/>zoneB-&gt;GetLry()</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>zoneB-&gt;GetLry()<sp/>+<sp/>(zoneB-&gt;GetLrx()<sp/>-<sp/>zoneB-&gt;GetUlx())<sp/>*<sp/>tan(zoneB-&gt;GetRotate()<sp/>*<sp/>M_PI<sp/>/<sp/>180.0);</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"></highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bHighest<sp/>=<sp/>zoneB-&gt;GetRotate()<sp/>&lt;<sp/>0</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/>zoneB-&gt;GetUly()</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>zoneB-&gt;GetUly()<sp/>-<sp/>(zoneB-&gt;GetLrx()<sp/>-<sp/>zoneB-&gt;GetUlx())<sp/>*<sp/>tan(zoneB-&gt;GetRotate()<sp/>*<sp/>M_PI<sp/>/<sp/>180.0);</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"></highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>for<sp/>y<sp/>intersection</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((aLowest<sp/>&lt;=<sp/>bLowest<sp/>&amp;&amp;<sp/>aLowest<sp/>&gt;=<sp/>bHighest)<sp/>||<sp/>(aHighest<sp/>&lt;=<sp/>bLowest<sp/>&amp;&amp;<sp/>aHighest<sp/>&gt;=<sp/>bHighest)</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>(bLowest<sp/>&lt;=<sp/>aLowest<sp/>&amp;&amp;<sp/>bLowest<sp/>&gt;=<sp/>aHighest)<sp/>||<sp/>(bHighest<sp/>&lt;=<sp/>aLowest<sp/>&amp;&amp;<sp/>bHighest<sp/>&gt;=<sp/>aHighest))<sp/>{</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>sort<sp/>by<sp/>x<sp/>center</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(zoneA-&gt;GetUlx()<sp/>&lt;<sp/>zoneB-&gt;GetUlx());</highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="comment">//<sp/>no<sp/>intersection</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(zoneA-&gt;GetUly()<sp/>&lt;<sp/>zoneB-&gt;GetUly());</highlight></codeline>
-<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="168"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"></highlight></codeline>
-<codeline lineno="170"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="171"><highlight class="normal"></highlight></codeline>
-<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()(<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*a,<sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*b)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>if<sp/>neume<sp/>has<sp/>neume<sp/>components</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!a-&gt;GetFirst(NC))<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LogError(</highlight><highlight class="stringliteral">&quot;Neume<sp/>%s<sp/>doesn&apos;t<sp/>have<sp/>neume<sp/>components.&quot;</highlight><highlight class="normal">,<sp/>a-&gt;GetID().c_str());</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!b-&gt;GetFirst(NC))<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LogError(</highlight><highlight class="stringliteral">&quot;Neume<sp/>%s<sp/>doesn&apos;t<sp/>have<sp/>neume<sp/>components.&quot;</highlight><highlight class="normal">,<sp/>b-&gt;GetID().c_str());</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!a-&gt;GetFirst(NC)-&gt;GetFacsimileInterface())<sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LogError(</highlight><highlight class="stringliteral">&quot;Neume<sp/>component<sp/>%s<sp/>doesn&apos;t<sp/>have<sp/>facsimile.&quot;</highlight><highlight class="normal">,<sp/>a-&gt;GetFirst(NC)-&gt;GetID().c_str());</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!b-&gt;GetFirst(NC)-&gt;GetFacsimileInterface())<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LogError(</highlight><highlight class="stringliteral">&quot;Neume<sp/>component<sp/>%s<sp/>doesn&apos;t<sp/>have<sp/>facsimile.&quot;</highlight><highlight class="normal">,<sp/>b-&gt;GetFirst(NC)-&gt;GetID().c_str());</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_zone" kindref="compound">Zone</ref><sp/>*zoneA<sp/>=<sp/>a-&gt;GetFirst(NC)-&gt;GetFacsimileInterface()-&gt;<ref refid="classvrv_1_1_facsimile_interface_1a3ca53c1bfe956ae1bfbb0a77f3c672b0" kindref="member">GetZone</ref>();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_zone" kindref="compound">Zone</ref><sp/>*zoneB<sp/>=<sp/>b-&gt;GetFirst(NC)-&gt;GetFacsimileInterface()-&gt;<ref refid="classvrv_1_1_facsimile_interface_1a3ca53c1bfe956ae1bfbb0a77f3c672b0" kindref="member">GetZone</ref>();</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>distA<sp/>=<sp/>std::abs(x<sp/>-<sp/>zoneA-&gt;GetUlx());</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>distB<sp/>=<sp/>std::abs(x<sp/>-<sp/>zoneB-&gt;GetUlx());</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(distA<sp/>&lt;<sp/>distB);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="comment">//<sp/>To<sp/>be<sp/>used<sp/>with<sp/>std::stable_sort<sp/>to<sp/>find<sp/>the<sp/>position<sp/>to<sp/>insert<sp/>a<sp/>new<sp/>staff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="structvrv_1_1_staff_sort" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvrv_1_1_staff_sort" kindref="compound">StaffSort</ref><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sort<sp/>staves<sp/>left-to-right<sp/>and<sp/>top-to-bottom</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sort<sp/>by<sp/>y<sp/>if<sp/>there<sp/>is<sp/>no<sp/>intersection,<sp/>by<sp/>x<sp/>if<sp/>there<sp/>is<sp/>x<sp/>intersection<sp/>is<sp/>smaller<sp/>than<sp/>half<sp/>length<sp/>of<sp/>staff<sp/>line</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()(<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*a,<sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*b)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!a-&gt;GetFacsimileInterface()<sp/>||<sp/>!b-&gt;GetFacsimileInterface())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_zone" kindref="compound">Zone</ref><sp/>*zoneA<sp/>=<sp/>a-&gt;GetFacsimileInterface()-&gt;<ref refid="classvrv_1_1_facsimile_interface_1a3ca53c1bfe956ae1bfbb0a77f3c672b0" kindref="member">GetZone</ref>();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_zone" kindref="compound">Zone</ref><sp/>*zoneB<sp/>=<sp/>b-&gt;GetFacsimileInterface()-&gt;<ref refid="classvrv_1_1_facsimile_interface_1a3ca53c1bfe956ae1bfbb0a77f3c672b0" kindref="member">GetZone</ref>();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>aLowest,<sp/>bLowest,<sp/>aHighest,<sp/>bHighest;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aLowest<sp/>=<sp/>zoneA-&gt;GetRotate()<sp/>&lt;<sp/>0</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/>zoneA-&gt;GetLry()</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>zoneA-&gt;GetLry()<sp/>+<sp/>(zoneA-&gt;GetLrx()<sp/>-<sp/>zoneA-&gt;GetUlx())<sp/>*<sp/>tan(zoneA-&gt;GetRotate()<sp/>*<sp/>M_PI<sp/>/<sp/>180.0);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aHighest<sp/>=<sp/>zoneA-&gt;GetRotate()<sp/>&lt;<sp/>0</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/>zoneA-&gt;GetUly()</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>zoneA-&gt;GetUly()<sp/>-<sp/>(zoneA-&gt;GetLrx()<sp/>-<sp/>zoneA-&gt;GetUlx())<sp/>*<sp/>tan(zoneA-&gt;GetRotate()<sp/>*<sp/>M_PI<sp/>/<sp/>180.0);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bLowest<sp/>=<sp/>zoneB-&gt;GetRotate()<sp/>&lt;<sp/>0</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/>zoneB-&gt;GetLry()</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>zoneB-&gt;GetLry()<sp/>+<sp/>(zoneB-&gt;GetLrx()<sp/>-<sp/>zoneB-&gt;GetUlx())<sp/>*<sp/>tan(zoneB-&gt;GetRotate()<sp/>*<sp/>M_PI<sp/>/<sp/>180.0);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bHighest<sp/>=<sp/>zoneB-&gt;GetRotate()<sp/>&lt;<sp/>0</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/>zoneB-&gt;GetUly()</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>zoneB-&gt;GetUly()<sp/>-<sp/>(zoneB-&gt;GetLrx()<sp/>-<sp/>zoneB-&gt;GetUlx())<sp/>*<sp/>tan(zoneB-&gt;GetRotate()<sp/>*<sp/>M_PI<sp/>/<sp/>180.0);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>for<sp/>y<sp/>intersection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>the<sp/>x<sp/>intersection<sp/>part<sp/>is<sp/>smaller<sp/>than<sp/>half<sp/>of<sp/>length<sp/>of<sp/>staffA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>sort<sp/>by<sp/>x<sp/>coordinate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((aLowest<sp/>&lt;=<sp/>bLowest<sp/>&amp;&amp;<sp/>aLowest<sp/>&gt;=<sp/>bHighest)<sp/>||<sp/>(aHighest<sp/>&lt;=<sp/>bLowest<sp/>&amp;&amp;<sp/>aHighest<sp/>&gt;=<sp/>bHighest)</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>(bLowest<sp/>&lt;=<sp/>aLowest<sp/>&amp;&amp;<sp/>bLowest<sp/>&gt;=<sp/>aHighest)<sp/>||<sp/>(bHighest<sp/>&lt;=<sp/>aLowest<sp/>&amp;&amp;<sp/>bHighest<sp/>&gt;=<sp/>aHighest))</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>(zoneA-&gt;GetLrx()<sp/>-<sp/>zoneB-&gt;GetUlx()<sp/>&lt;=<sp/>0.5<sp/>*<sp/>(zoneA-&gt;GetLrx()<sp/>-<sp/>zoneA-&gt;GetUlx())))<sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>sort<sp/>by<sp/>x<sp/>center</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(zoneA-&gt;GetUlx()<sp/>&lt;<sp/>zoneB-&gt;GetUlx());</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="comment">//<sp/>no<sp/>intersection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(zoneA-&gt;GetUly()<sp/>&lt;<sp/>zoneB-&gt;GetUly());</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_neume.h"/>
   </compounddef>

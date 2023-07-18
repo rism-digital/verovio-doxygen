@@ -1567,6 +1567,11 @@
     <member refid="structvrv_1_1_closest_b_b_1acdc0607c597cc92e988e9d9c41173d47" kind="function"><name>distanceToBB</name></member>
     <member refid="structvrv_1_1_closest_b_b_1a7193448e2d6a3148d7efbac14f337f74" kind="function"><name>operator()</name></member>
   </compound>
+  <compound refid="structvrv_1_1_closest_neume" kind="struct"><name>vrv::ClosestNeume</name>
+    <member refid="structvrv_1_1_closest_neume_1ab6dc48060a2ef68ce7cfb98b86e1bcbe" kind="variable"><name>x</name></member>
+    <member refid="structvrv_1_1_closest_neume_1a430f7ec9ec2b426ea936a59f51408098" kind="variable"><name>y</name></member>
+    <member refid="structvrv_1_1_closest_neume_1a2ea339a672aa83eefafaf59a4d330db9" kind="function"><name>operator()</name></member>
+  </compound>
   <compound refid="classvrv_1_1_collect_and_process" kind="class"><name>vrv::CollectAndProcess</name>
     <member refid="classvrv_1_1_collect_and_process_1a772fb9abe1ca5a76cb32bb5da913a22f" kind="function"><name>CollectAndProcess</name></member>
     <member refid="classvrv_1_1_collect_and_process_1ab83d7caea54bf83764a37eb6e0cf0b8e" kind="function"><name>~CollectAndProcess</name></member>
@@ -2186,6 +2191,23 @@
     <member refid="classvrv_1_1_div_1a91d39ea4e0ef50fc1e492cf1a9194359" kind="function"><name>GetTotalHeight</name></member>
     <member refid="classvrv_1_1_div_1a2652e412e149ee2eead0aad910fa84a9" kind="function"><name>GetTotalWidth</name></member>
   </compound>
+  <compound refid="classvrv_1_1_div_line" kind="class"><name>vrv::DivLine</name>
+    <member refid="classvrv_1_1_div_line_1ac119eadec24a95062dd2f53c951f9bfc" kind="function"><name>DivLine</name></member>
+    <member refid="classvrv_1_1_div_line_1aab81e7426912b758868d091bdd5af83b" kind="function"><name>~DivLine</name></member>
+    <member refid="classvrv_1_1_div_line_1a9d3e242372d0c35f777c5c659102e0e7" kind="function"><name>Clone</name></member>
+    <member refid="classvrv_1_1_div_line_1ae1f2081648a1bad905d20f7164b75f3b" kind="function"><name>Reset</name></member>
+    <member refid="classvrv_1_1_div_line_1a8a7daf4b02e5a1286dae5bfdb2f5e283" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_div_line_1a6a36d33b120464a87e39efb77ebf9f48" kind="function"><name>GetDivLineGlyph</name></member>
+    <member refid="classvrv_1_1_div_line_1a5333d8634119e7d9963ffd3167440970" kind="function"><name>HasToBeAligned</name></member>
+    <member refid="classvrv_1_1_div_line_1aa654bdb923430d50df5e15b6294dc8ad" kind="function"><name>SetAlignment</name></member>
+    <member refid="classvrv_1_1_div_line_1af88d2fc382036120b0f517279bf6d424" kind="function"><name>GetSymbolStr</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_div_line_attr" kind="class"><name>vrv::DivLineAttr</name>
+    <member refid="classvrv_1_1_div_line_attr_1a64574ed25b1cabb7af1058ff1f841a77" kind="function"><name>DivLineAttr</name></member>
+    <member refid="classvrv_1_1_div_line_attr_1a331d7b3502b7c33a0e425ae49211e572" kind="function"><name>~DivLineAttr</name></member>
+    <member refid="classvrv_1_1_div_line_attr_1ae87715e7774dd0b90d0d05e3579ac828" kind="function"><name>Clone</name></member>
+    <member refid="classvrv_1_1_div_line_attr_1ae7251857841253cbbceea0eeb0c0f6e6" kind="function"><name>GetClassName</name></member>
+  </compound>
   <compound refid="classvrv_1_1_doc" kind="class"><name>vrv::Doc</name>
     <member refid="classvrv_1_1_doc_1a6ae80af9be1fb301753322a4d779bced" kind="function"><name>Doc</name></member>
     <member refid="classvrv_1_1_doc_1a516c030103274ed0eb17f283b6f55088" kind="function"><name>~Doc</name></member>
@@ -2533,36 +2555,47 @@
   </compound>
   <compound refid="classvrv_1_1_editor_toolkit_neume" kind="class"><name>vrv::EditorToolkitNeume</name>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a43ace3311204fc2ae9adc611b103a947" kind="function"><name>Chain</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a32187a2c54d0680c43a6e7160d5cbf77" kind="function"><name>DisplaceClefOctave</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a0b73aa2dee1a259468501b2b2da92999" kind="function"><name>Drag</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a6d156d6f2049413ff717e725cc08600c" kind="function"><name>Insert</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a9f03325dc1e673997e382671f7e3732f" kind="function"><name>InsertToSyllable</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a7e6468beb76efc0460ee6f2de23494dc" kind="function"><name>Merge</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a06e2228a675d2ff46c60837784083cf9" kind="function"><name>MoveOutsideSyllable</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a485218816f0b1b8fc1a5faf96830cba6" kind="function"><name>Set</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1add4a905e8023e7a21b65e55fc40c6384" kind="function"><name>SetText</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a03f19235626c5060c2f43a5044827779" kind="function"><name>SetClef</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1abad909b7228f86d3668e057ae16482f4" kind="function"><name>Split</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a243f0bfa3c6e9ac5f5de4fffe5804938" kind="function"><name>SplitNeume</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a8e122365fe556945a2781d7d67555b61" kind="function"><name>Remove</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1adfbae0984c8091483137b651fcee28b5" kind="function"><name>Resize</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a7a00393667ae8707ece682471426c670" kind="function"><name>Group</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a9f7bd667fcec3c23690bd5833b29ada1" kind="function"><name>Ungroup</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a2392e8f4676d39017db3c9310bea7ba3" kind="function"><name>ChangeGroup</name></member>
-    <member refid="classvrv_1_1_editor_toolkit_neume_1a3feb9772f4a971797b1e072131ce696c" kind="function"><name>ToggleLigature</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a6d87b50ae8ac3a2cffb1c537fe810cd7" kind="function"><name>ToggleLigature</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a522a796eb33cb6550d1a208781fe0bb9" kind="function"><name>ChangeStaff</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a4ef2845c608063aa95c6b8c2641b741f" kind="function"><name>ChangeStaffTo</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a8557524758bf2f6cdcd9e299237ef33c" kind="function"><name>ClefMovementHandler</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a0cc9ca57026a756ef1fc521f83db6cdc" kind="function"><name>ParseDisplaceClefAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1aae7ed26ed5e4663e0828b8d41b2de256" kind="function"><name>ParseDragAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a6b6a0867882e6273afbb2ce194849469" kind="function"><name>ParseInsertAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1ac7e46c6268edd3fd3c70b1c77943cec2" kind="function"><name>ParseInsertAction</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a8feb9cf29fd94f9bde834f7356a63905" kind="function"><name>ParseInsertToSyllableAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a7a5a0f33afee482d31bc0ec705204533" kind="function"><name>ParseMergeAction</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a3ce74a550bc674ad0af3664f8402dea4" kind="function"><name>ParseMoveOutsideSyllableAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1ac6b52c8a69a757f30c5c348484053794" kind="function"><name>ParseSetAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a169afcaec1864c831df285a39295118a" kind="function"><name>ParseSetTextAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a94f83f980d832c7cca7c9471f67a3079" kind="function"><name>ParseSetClefAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a0dc0418f8ff7675285b0548e9054d65c" kind="function"><name>ParseSplitAction</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1abaed747521c37f3afa1ff9f3048a3c47" kind="function"><name>ParseSplitNeumeAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1ad398f0b0dbac92b854b2a3e9868fad3d" kind="function"><name>ParseRemoveAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1aee03e232757687740305a7a51bd5a9ad" kind="function"><name>ParseResizeAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a84db23bc31fc036907b4f41e1d536a7e" kind="function"><name>ParseResizeRotateAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a8912de16f03c4817d414e75f6098542f" kind="function"><name>ParseGroupAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1ae38043613ee1eae9c1a333fc5c5834b8" kind="function"><name>ParseUngroupAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a470f30b5d6fba79e9dbb5b3ff31a1346" kind="function"><name>ParseChangeGroupAction</name></member>
-    <member refid="classvrv_1_1_editor_toolkit_neume_1aac7968078a355d792e6ba22b7bad6e3d" kind="function"><name>ParseToggleLigatureAction</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a8d4dbed36c218f100bb2bdfae2dc1ee7" kind="function"><name>ParseToggleLigatureAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a49bb33a9635df23c6cd2327d8d25ec01" kind="function"><name>ParseChangeStaffAction</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a75e0993335fb5123f4cb4c8c3d8ec068" kind="function"><name>ParseChangeStaffToAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1aa32bf021d3d31ec9ecb894a12a2ea729" kind="function"><name>AdjustPitchFromPosition</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a3d9c3e60ef3afb34b13c0123dd9d3beb" kind="function"><name>AdjustClefLineFromPosition</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a98a095f4844ddb54c7fde556d6b1896b" kind="variable"><name>m_infoObject</name></member>
@@ -4928,6 +4961,7 @@
     <member refid="classvrv_1_1_m_e_i_input_1a620da06f4b8af1d905f0e80f459682e9" kind="function"><name>ReadChord</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a43094337af7ca59f0c1f51c6e3b7c170" kind="function"><name>ReadClef</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1af1ee5b9cf1d515d2421092860634dfef" kind="function"><name>ReadCustos</name></member>
+    <member refid="classvrv_1_1_m_e_i_input_1a189b3ab851fda27cc21cadad890f41e8" kind="function"><name>ReadDivLine</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a294f65532fbd9185b0798d523d31f8dd" kind="function"><name>ReadDot</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a9a66cdb5d8d1488208c89f2debf61997" kind="function"><name>ReadFTrem</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a306033504807f3ab972dc54c6c343286" kind="function"><name>ReadGraceGrp</name></member>
@@ -5162,6 +5196,7 @@
     <member refid="classvrv_1_1_m_e_i_output_1aafb3b3474c4db0b7bc13e2decf44561c" kind="function"><name>WriteChord</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a3b300950db20b30551c4a7241aae2e64" kind="function"><name>WriteClef</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a2099b49d03095b4a8e68bc8e6c844440" kind="function"><name>WriteCustos</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1a3baf4bcc840ec14069c207de96870734" kind="function"><name>WriteDivLine</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a683efcc406cabeea7009445c4f889c71" kind="function"><name>WriteDot</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a5c4c5b298afd747ea5dd45ceff7f4c7f" kind="function"><name>WriteFTrem</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a2040dbd01a87a3181b70537ed7efdd82" kind="function"><name>WriteGraceGrp</name></member>
@@ -5541,6 +5576,7 @@
     <member refid="classvrv_1_1_music_xml_input_1a8062abef0fad9b19399e64c2d16fc61d" kind="function"><name>ConvertFigureGlyph</name></member>
     <member refid="classvrv_1_1_music_xml_input_1af910c54d975c65ae5d8d66b0f5c12096" kind="function"><name>PitchToMidi</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a9c676923d419e3da53597c6f8b7be9f0" kind="function"><name>MidiToPitch</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a47a4cc730b0ada82b75a3c3c0c2dec4b" kind="variable"><name>m_garbage</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a09bee8c1b4cc55fa50994ae27e02284d" kind="variable"><name>m_octDis</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a0c03c0e5920800dbc6f32de6c264d8e9" kind="variable"><name>m_mRpt</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a70af98ef677e3cbf0c2060fefdfcb0fe" kind="variable"><name>m_slash</name></member>
@@ -5585,7 +5621,6 @@
     <member refid="classvrv_1_1_music_xml_input_1a78aca75c51a3f824db94cf05486c6837" kind="variable"><name>m_ArpeggioStack</name></member>
     <member refid="classvrv_1_1_music_xml_input_1abab1e77a05342059c7dd29dc68a1b8fb" kind="variable"><name>m_measureCounts</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a98b9a1c93635bc5d21fea4b74d7c6f86" kind="variable"><name>m_multiRests</name></member>
-    <member refid="classvrv_1_1_music_xml_input_1a47a4cc730b0ada82b75a3c3c0c2dec4b" kind="variable"><name>m_garbage</name></member>
     <member refid="classvrv_1_1_music_xml_input_1aceb2632ff8c6a962087f8f768f20f355" kind="function"><name>MusicXmlInput</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a43c6dfa399db2476b24a9d36134d2edb" kind="function"><name>~MusicXmlInput</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a2f3b718f0e9cdf97de25f1de9f45b9a1" kind="function"><name>Import</name></member>
@@ -5643,6 +5678,7 @@
     <member refid="classvrv_1_1_neume_1af767dea52b0e99a1f445afdccfa8f3a0" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_neume_1a279eba0f83d8dcc4cde34008835c66fd" kind="variable"><name>s_neumes</name></member>
     <member refid="classvrv_1_1_neume_1a607d4c6dca62704277776f8662690cd6" kind="function"><name>IsSupportedChild</name></member>
+    <member refid="classvrv_1_1_neume_1a06449cac799629c8f270375c73edba24" kind="function"><name>GetLigatureCount</name></member>
     <member refid="classvrv_1_1_neume_1a3f71d0aca884aed34f54144a5c5c952f" kind="function"><name>IsLastInNeume</name></member>
     <member refid="classvrv_1_1_neume_1acbf3e102b8872d17abfa71bf67faa87c" kind="function"><name>GenerateChildMelodic</name></member>
     <member refid="classvrv_1_1_neume_1a481c55b8281aef7bbb87737b75fcc1d5" kind="function"><name>GetNeumeGroup</name></member>
@@ -6933,7 +6969,7 @@
     <member refid="classvrv_1_1_prepare_facsimile_functor_1a15c246258c28c3aa4c1d7131d2e60a96" kind="function"><name>GetZonelessSyls</name></member>
   </compound>
   <compound refid="classvrv_1_1_prepare_floating_grps_functor" kind="class"><name>vrv::PrepareFloatingGrpsFunctor</name>
-    <member refid="classvrv_1_1_prepare_floating_grps_functor_1a48605a3ee19f58db22b2f878d59fc537" kind="function"><name>PrepareFloatingGrpsFunctor</name></member>
+    <member refid="classvrv_1_1_prepare_floating_grps_functor_1aa6ae69cd1fd4bbfc81ca2200d2cd1399" kind="function"><name>PrepareFloatingGrpsFunctor</name></member>
     <member refid="classvrv_1_1_prepare_floating_grps_functor_1ad48312c7a3f1b1235f72233ffdf75bf8" kind="function"><name>~PrepareFloatingGrpsFunctor</name></member>
     <member refid="classvrv_1_1_prepare_floating_grps_functor_1afbac58a706f4715e8bdd7be06cc49347" kind="function"><name>VisitDir</name></member>
     <member refid="classvrv_1_1_prepare_floating_grps_functor_1a24238009d826ec15b5687c56274d92fd" kind="function"><name>VisitDynam</name></member>
@@ -6948,7 +6984,6 @@
     <member refid="classvrv_1_1_prepare_floating_grps_functor_1ab99520af8d7e4021e1adca88d3f29388" kind="variable"><name>m_dynams</name></member>
     <member refid="classvrv_1_1_prepare_floating_grps_functor_1ab0c9badf37275d267c2ad30ad2568c4a" kind="variable"><name>m_hairpins</name></member>
     <member refid="classvrv_1_1_prepare_floating_grps_functor_1a9a385e2dde1371a6964206cfb25963d3" kind="variable"><name>m_harms</name></member>
-    <member refid="classvrv_1_1_prepare_floating_grps_functor_1afa080d348290a7493fbed77960ceca2a" kind="variable"><name>m_pedalLines</name></member>
     <member refid="classvrv_1_1_prepare_floating_grps_functor_1ad3f7d70afef2abc5f269241558c30db7" kind="function"><name>ImplementsEndInterface</name></member>
   </compound>
   <compound refid="classvrv_1_1_prepare_layer_element_parts_functor" kind="class"><name>vrv::PrepareLayerElementPartsFunctor</name>
@@ -7005,6 +7040,14 @@
     <member refid="classvrv_1_1_prepare_milestones_functor_1a80609d83d8f08d470a0d423bf100912d" kind="variable"><name>m_currentEnding</name></member>
     <member refid="classvrv_1_1_prepare_milestones_functor_1a8525c4316acb6f57f6723e5e1566d3d7" kind="variable"><name>m_startMilestones</name></member>
     <member refid="classvrv_1_1_prepare_milestones_functor_1ab652d652c00ccd6aab30ffaad364ad5a" kind="function"><name>ImplementsEndInterface</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_prepare_pedals_functor" kind="class"><name>vrv::PreparePedalsFunctor</name>
+    <member refid="classvrv_1_1_prepare_pedals_functor_1a707c18dacfa05531d004718cdbce67a4" kind="function"><name>PreparePedalsFunctor</name></member>
+    <member refid="classvrv_1_1_prepare_pedals_functor_1a60ef178240b80dff66fe9464974daab6" kind="function"><name>~PreparePedalsFunctor</name></member>
+    <member refid="classvrv_1_1_prepare_pedals_functor_1a2e92281b95d352f6b9e1c8b1be9fed7b" kind="function"><name>VisitMeasureEnd</name></member>
+    <member refid="classvrv_1_1_prepare_pedals_functor_1a1df3a50ac3f371882a32761b6e3b2414" kind="function"><name>VisitPedal</name></member>
+    <member refid="classvrv_1_1_prepare_pedals_functor_1aaea8c495a089fd5b2023a76723ae5daf" kind="variable"><name>m_pedalLines</name></member>
+    <member refid="classvrv_1_1_prepare_pedals_functor_1a1659fec8302ddd96913a98f12702eed8" kind="function"><name>ImplementsEndInterface</name></member>
   </compound>
   <compound refid="classvrv_1_1_prepare_plist_functor" kind="class"><name>vrv::PreparePlistFunctor</name>
     <member refid="classvrv_1_1_prepare_plist_functor_1aa72d88541cd13ba2f592d3080b64676c" kind="function"><name>PreparePlistFunctor</name></member>
@@ -9178,6 +9221,7 @@
     <member refid="classvrv_1_1_view_1a0220af899cfe64232a2257afbf9f30cc" kind="function"><name>DrawBeam</name></member>
     <member refid="classvrv_1_1_view_1a2cc270dfd01f43d976d0b9dfe8ee7dd2" kind="function"><name>DrawFTrem</name></member>
     <member refid="classvrv_1_1_view_1a39c6e83a8d8593fcfd9a6f9083ccfd3a" kind="function"><name>DrawBeamSpan</name></member>
+    <member refid="classvrv_1_1_view_1a582313021c077cea7b6578256b409e10" kind="function"><name>DrawDivLine</name></member>
     <member refid="classvrv_1_1_view_1a578b7e223344dce694d64c2fc9f0f5d5" kind="function"><name>DrawSyllable</name></member>
     <member refid="classvrv_1_1_view_1a9ace0083ad59fc48cc9ded56c63d5fb5" kind="function"><name>DrawNc</name></member>
     <member refid="classvrv_1_1_view_1acc3b98f5763865e62aaa97b2ed2f291d" kind="function"><name>DrawNeume</name></member>
@@ -9375,6 +9419,7 @@
     <member refid="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922a56edcfda3238227f2899dc520f0eab88" kind="enumvalue"><name>ALIGNMENT_ACCID</name></member>
     <member refid="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922aef6707004621e2b0c3d9e2e4eb1c7d25" kind="enumvalue"><name>ALIGNMENT_GRACENOTE</name></member>
     <member refid="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922a9a82e90fdefdfca7747a55ccdf7ad50c" kind="enumvalue"><name>ALIGNMENT_BARLINE</name></member>
+    <member refid="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922a75cbf211860a281609d409da741f68fc" kind="enumvalue"><name>ALIGNMENT_DIVLINE</name></member>
     <member refid="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922a218bb4a6ca1361c17cd34a93922dc9bb" kind="enumvalue"><name>ALIGNMENT_DEFAULT</name></member>
     <member refid="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922aea1f62ef2a6d80b878521e08ad3c15f3" kind="enumvalue"><name>ALIGNMENT_MEASURE_RIGHT_BARLINE</name></member>
     <member refid="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922a9f64acac6c45abb5a96df72e886b6a7c" kind="enumvalue"><name>ALIGNMENT_SCOREDEF_CAUTION_CLEF</name></member>
@@ -10264,6 +10309,7 @@
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ac9cb0818f2dad0149a8c4552c9bd96ec" kind="enumvalue"><name>CHORD</name></member>
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a2dc8e1bec5aec38286304f56efa0c0f7" kind="enumvalue"><name>CLEF</name></member>
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a9ebaf142ecb51942dbd6bb8997a8a260" kind="enumvalue"><name>CUSTOS</name></member>
+    <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a6d1fbb1c4e5aaaa01896820487113d9b" kind="enumvalue"><name>DIVLINE</name></member>
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a2c243c6e3ac392f7a7f064c9fe7d1197" kind="enumvalue"><name>DOT</name></member>
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a1af05e49b4e40d85da750d80f6906820" kind="enumvalue"><name>DOTS</name></member>
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a0a33048e8bdefff23d638a0dc1198596" kind="enumvalue"><name>FLAG</name></member>
@@ -10765,6 +10811,8 @@
   </compound>
   <compound refid="div_8h" kind="file"><name>div.h</name>
   </compound>
+  <compound refid="divline_8h" kind="file"><name>divline.h</name>
+  </compound>
   <compound refid="doc_8h" kind="file"><name>doc.h</name>
   </compound>
   <compound refid="docselection_8h" kind="file"><name>docselection.h</name>
@@ -11159,6 +11207,8 @@
     <member refid="vrvdef_8h_1a2a9b31173cc8deb9368efce6b1d1c238" kind="define"><name>SUPER_SCRIPT_FACTOR</name></member>
     <member refid="vrvdef_8h_1a82ca896ab33563e9aba0bb7b43686065" kind="define"><name>SUPER_SCRIPT_POSITION</name></member>
     <member refid="vrvdef_8h_1ab5fa1c6a9cbf3582aed5b91db258fbff" kind="define"><name>SUB_SCRIPT_POSITION</name></member>
+    <member refid="vrvdef_8h_1aaf8f51e79dc68935c9faf9d5c1252a6f" kind="define"><name>NOTE_HEIGHT_TO_STAFF_SIZE_RATIO</name></member>
+    <member refid="vrvdef_8h_1a161ce15818a35dce1d5acd99ac886bcd" kind="define"><name>NOTE_WIDTH_TO_STAFF_SIZE_RATIO</name></member>
   </compound>
   <compound refid="zone_8h" kind="file"><name>zone.h</name>
   </compound>
