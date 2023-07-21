@@ -43,7 +43,7 @@ var searchData=
   ['resetdrawinglist_988',['ResetDrawingList',['../classvrv_1_1_drawing_list_interface.html#a4b20a831da972d0a05fa42be7c6eb5e9',1,'vrv::DrawingListInterface']]],
   ['resetfromdrawingvalues_989',['ResetFromDrawingValues',['../classvrv_1_1_score_def.html#a48b0a905d78958321c6b45d4365b2130',1,'vrv::ScoreDef']]],
   ['resethorizontalalignmentfunctor_990',['ResetHorizontalAlignmentFunctor',['../classvrv_1_1_reset_horizontal_alignment_functor.html',1,'vrv']]],
-  ['resetlist_991',['ResetList',['../classvrv_1_1_object_list_interface.html#ad840a3d0c9fa550f980534426eb9b076',1,'vrv::ObjectListInterface']]],
+  ['resetlist_991',['ResetList',['../classvrv_1_1_object_list_interface.html#afaaa1913823e9ead72c8ee2854bf881c',1,'vrv::ObjectListInterface']]],
   ['resetlogbuffer_992',['ResetLogBuffer',['../classvrv_1_1_toolkit.html#a9621011e0b28c573d62c5412a8c886ec',1,'vrv::Toolkit']]],
   ['resetoptions_993',['ResetOptions',['../classvrv_1_1_toolkit.html#a96fbf91f6688a0d81886a4a25254dc25',1,'vrv::Toolkit']]],
   ['resetparent_994',['ResetParent',['../classvrv_1_1_object.html#a5d22ebda01e0b254c13d558f5ffdb098',1,'vrv::Object']]],

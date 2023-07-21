@@ -40,7 +40,7 @@ var searchData=
   ['isemptycomparison_690',['IsEmptyComparison',['../classvrv_1_1_is_empty_comparison.html',1,'vrv']]],
   ['isenharmonicwith_691',['IsEnharmonicWith',['../classvrv_1_1_note.html#a8ed755dba1d936d881bb4d3267db6fd9',1,'vrv::Note']]],
   ['isextenderelement_692',['IsExtenderElement',['../classvrv_1_1_dir.html#a3bc39e827b43b1431f9dc97c51bda5a4',1,'vrv::Dir::IsExtenderElement()'],['../classvrv_1_1_dynam.html#a4385439841413bc58bbb7d607fa4a234',1,'vrv::Dynam::IsExtenderElement()'],['../classvrv_1_1_floating_object.html#a8781df9fac1bad66c08cdae278be23e4',1,'vrv::FloatingObject::IsExtenderElement()'],['../classvrv_1_1_tempo.html#a5c23ed4022b962566560259c7b833377',1,'vrv::Tempo::IsExtenderElement()']]],
-  ['isfirstin_693',['IsFirstIn',['../classvrv_1_1_beam_drawing_interface.html#ac4293802ae5a0f7d45cc6b106fb33032',1,'vrv::BeamDrawingInterface']]],
+  ['isfirstin_693',['IsFirstIn',['../classvrv_1_1_beam_drawing_interface.html#ac6201549e945c8f94f2ec75e3a900c98',1,'vrv::BeamDrawingInterface']]],
   ['isfirstinbeam_694',['IsFirstInBeam',['../classvrv_1_1_duration_interface.html#ad14ac28eed0c0fbc93bf4b104abb1c2e',1,'vrv::DurationInterface']]],
   ['isfloatingobject_695',['IsFloatingObject',['../classvrv_1_1_object.html#a3b131f39c868a8a1e9b768bdc0eae811',1,'vrv::Object']]],
   ['isgracenote_696',['IsGraceNote',['../classvrv_1_1_layer_element.html#aaa6b5701f29f87fa028d448a7f54409f',1,'vrv::LayerElement']]],
