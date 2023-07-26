@@ -1,7 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#aee572601386a3702f3ca2eda910c42f5":[1,0,0,303,7],
-"classvrv_1_1_prepare_time_pointing_functor.html":[1,0,0,304],
 "classvrv_1_1_prepare_time_pointing_functor.html#a126d3fead354f9df482a44cd52cc65ac":[1,0,0,304,0],
 "classvrv_1_1_prepare_time_pointing_functor.html#a163b97a5b7b571d8e7c8d9822dc07d1d":[1,0,0,304,6],
 "classvrv_1_1_prepare_time_pointing_functor.html#a3a79cffb7d40f12b36e1db760835ed7d":[1,0,0,304,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX21 =
 "classvrv_1_1_running_element.html#a3e842e74da5686b2921bc96afe860585":[1,0,0,322,13],
 "classvrv_1_1_running_element.html#a4f519acbbf0e778dac71089bb71ab7ab":[1,0,0,322,1],
 "classvrv_1_1_running_element.html#a5a4295f4c67d1f2bf0ebba5001cf3fee":[1,0,0,322,2],
-"classvrv_1_1_running_element.html#a61156fe440b86ccd278b6152f4874250":[1,0,0,322,15]
+"classvrv_1_1_running_element.html#a61156fe440b86ccd278b6152f4874250":[1,0,0,322,15],
+"classvrv_1_1_running_element.html#a79506b46add9f740c57c0afe5ecb0af3":[1,0,0,322,10],
+"classvrv_1_1_running_element.html#a79747fe8c2b0b4412229ea370504a1fe":[1,0,0,322,7]
 };

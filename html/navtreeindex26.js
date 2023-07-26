@@ -1,7 +1,5 @@
 var NAVTREEINDEX26 =
 {
-"classvrv_1_1_time_spanning_interface.html":[1,0,0,382],
-"classvrv_1_1_time_spanning_interface.html#a065e23ac386fa542f2f94cd3d42ddaec":[1,0,0,382,18],
 "classvrv_1_1_time_spanning_interface.html#a0b129d8417f345a548ced98fd4254390":[1,0,0,382,13],
 "classvrv_1_1_time_spanning_interface.html#a11ced307739a635ae5339612837dbb59":[1,0,0,382,9],
 "classvrv_1_1_time_spanning_interface.html#a239665f006283e9749b3b4e5099887fb":[1,0,0,382,15],
@@ -249,5 +247,7 @@ var NAVTREEINDEX26 =
 "classvrv_1_1_trill.html#ac8d303e708172bf2b29b570d22ceb6d7":[1,0,0,391,9],
 "classvrv_1_1_trill.html#acb7eed425189a4d80ee9cb2f913f7bb5":[1,0,0,391,6],
 "classvrv_1_1_trill.html#addb9b8bfb13df7fde57e0b9e125f03ce":[1,0,0,391,4],
-"classvrv_1_1_tuning.html":[1,0,0,392]
+"classvrv_1_1_tuning.html":[1,0,0,392],
+"classvrv_1_1_tuning.html#a091413f1d79444bb57b83cb7e8ed9e9c":[1,0,0,392,0],
+"classvrv_1_1_tuning.html#a1cd87b889ab7ea52a3f5d8bba151a0e9":[1,0,0,392,2]
 };
