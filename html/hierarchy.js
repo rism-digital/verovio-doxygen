@@ -259,10 +259,6 @@ var hierarchy =
       [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
       [ "vrv::Tie", "classvrv_1_1_tie.html", null ]
     ] ],
-    [ "AttCurveRend", null, [
-      [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
-      [ "vrv::Tie", "classvrv_1_1_tie.html", null ]
-    ] ],
     [ "AttDistances", null, [
       [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
@@ -490,7 +486,9 @@ var hierarchy =
       [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
       [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
-      [ "vrv::Octave", "classvrv_1_1_octave.html", null ]
+      [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
+      [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
+      [ "vrv::Tie", "classvrv_1_1_tie.html", null ]
     ] ],
     [ "AttLinking", null, [
       [ "vrv::LinkingInterface", "classvrv_1_1_linking_interface.html", [
