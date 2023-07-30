@@ -111,9 +111,6 @@ var hierarchy =
     [ "AttBracketSpanLog", null, [
       [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ]
     ] ],
-    [ "AttBTremLog", null, [
-      [ "vrv::BTrem", "classvrv_1_1_b_trem.html", null ]
-    ] ],
     [ "AttChannelized", null, [
       [ "vrv::InstrDef", "classvrv_1_1_instr_def.html", null ]
     ] ],
@@ -183,6 +180,10 @@ var hierarchy =
       [ "vrv::Note", "classvrv_1_1_note.html", null ]
     ] ],
     [ "AttCoordinated", null, [
+      [ "vrv::Surface", "classvrv_1_1_surface.html", null ],
+      [ "vrv::Zone", "classvrv_1_1_zone.html", null ]
+    ] ],
+    [ "AttCoordinatedUl", null, [
       [ "vrv::Surface", "classvrv_1_1_surface.html", null ],
       [ "vrv::Zone", "classvrv_1_1_zone.html", null ]
     ] ],
@@ -258,6 +259,9 @@ var hierarchy =
     [ "AttCurvature", null, [
       [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
       [ "vrv::Tie", "classvrv_1_1_tie.html", null ]
+    ] ],
+    [ "AttCurvatureDirection", null, [
+      [ "vrv::Nc", "classvrv_1_1_nc.html", null ]
     ] ],
     [ "AttDistances", null, [
       [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
@@ -402,7 +406,7 @@ var hierarchy =
     [ "AttIntervalMelodic", null, [
       [ "vrv::Nc", "classvrv_1_1_nc.html", null ]
     ] ],
-    [ "AttKeySigAnl", null, [
+    [ "AttKeyMode", null, [
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ]
     ] ],
     [ "AttKeySigLog", null, [
@@ -651,6 +655,9 @@ var hierarchy =
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
       [ "vrv::PitchInterface", "classvrv_1_1_pitch_interface.html", null ]
     ] ],
+    [ "AttPitchGes", null, [
+      [ "vrv::PitchInterface", "classvrv_1_1_pitch_interface.html", null ]
+    ] ],
     [ "AttPlacementOnStaff", null, [
       [ "vrv::Accid", "classvrv_1_1_accid.html", null ]
     ] ],
@@ -841,6 +848,9 @@ var hierarchy =
     ] ],
     [ "AttTransposition", null, [
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
+    ] ],
+    [ "AttTremForm", null, [
+      [ "vrv::BTrem", "classvrv_1_1_b_trem.html", null ]
     ] ],
     [ "AttTremMeasured", null, [
       [ "vrv::BTrem", "classvrv_1_1_b_trem.html", null ],
