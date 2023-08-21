@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"classvrv_1_1_find_previous_child_by_comparison_functor.html#a33c5f622dff84c1b75610ae6f9fd6eb6":[1,0,0,155,0],
 "classvrv_1_1_find_previous_child_by_comparison_functor.html#ab7d3f6da7ba65d32af5c1cb76160b045":[1,0,0,155,2],
 "classvrv_1_1_find_previous_child_by_comparison_functor.html#ad4fbfc495c1278ba9e6f0069569eccef":[1,0,0,155,4],
 "classvrv_1_1_find_previous_child_by_comparison_functor.html#ade90de784600f044b25015f0ae4d9978":[1,0,0,155,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "classvrv_1_1_functor_interface.html#a336cd4895cd942a5950060fe8df4f0e9":[1,0,0,166,153],
 "classvrv_1_1_functor_interface.html#a338760403bc9032da2209adac222482d":[1,0,0,166,92],
 "classvrv_1_1_functor_interface.html#a33b0435b2ff16bb220495fc01f34e417":[1,0,0,166,156],
-"classvrv_1_1_functor_interface.html#a33c284f0e40f434119ee97c4619620e7":[1,0,0,166,99],
-"classvrv_1_1_functor_interface.html#a33c5b276ce9d40bbc57c56f29ea62ae9":[1,0,0,166,172]
+"classvrv_1_1_functor_interface.html#a33c284f0e40f434119ee97c4619620e7":[1,0,0,166,99]
 };

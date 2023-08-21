@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_beam_span_segment.html#a397018826d93c7ec54ffea8ffa9efd7a":[1,0,0,61,7],
 "classvrv_1_1_beam_span_segment.html#a4e84b7a56ec2855f07917d57042a1313":[1,0,0,61,17],
 "classvrv_1_1_beam_span_segment.html#a4ef62758ae8c5e8fb47ee81d02c6780f":[1,0,0,61,6],
 "classvrv_1_1_beam_span_segment.html#a57f99e7899343b0ec40d187b71d27a4c":[1,0,0,61,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_calc_stem_functor.html#a8d5c12f4fd4f7f65b6942520051d23c0":[1,0,0,81,1],
 "classvrv_1_1_calc_stem_functor.html#a9f31ac40198128f20f8d6b9a6ff0314e":[1,0,0,81,8],
 "classvrv_1_1_calc_stem_functor.html#aa6f358c3b664d1f396917ac387951805":[1,0,0,81,4],
-"classvrv_1_1_calc_stem_functor.html#ab8b666c1d058869bdf0c57da50d26603":[1,0,0,81,3],
-"classvrv_1_1_calc_stem_functor.html#abc40cfea5f84ed665a0536db388acea5":[1,0,0,81,5]
+"classvrv_1_1_calc_stem_functor.html#ab8b666c1d058869bdf0c57da50d26603":[1,0,0,81,3]
 };

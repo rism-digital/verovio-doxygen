@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classvrv_1_1_att_dur_extreme_comparison.html#a7e3e0e0c69a18ecd1733f3ffba8e708f":[1,0,0,48,0],
 "classvrv_1_1_att_formework_comparison.html":[1,0,0,49],
 "classvrv_1_1_att_formework_comparison.html#a797e15e5c4ba133b646a9b8fe39bea83":[1,0,0,49,0],
 "classvrv_1_1_att_formework_comparison.html#aa6df5f0a98be39333c5e914ced7fbdea":[1,0,0,49,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "classvrv_1_1_beam_span_segment.html#a20c7942461214ac15a30cc10e92a83cd":[1,0,0,61,4],
 "classvrv_1_1_beam_span_segment.html#a2a2bf832daf13fd00338255b2fb5a749":[1,0,0,61,5],
 "classvrv_1_1_beam_span_segment.html#a2a8702ebf49c26b24e77d5567208882f":[1,0,0,61,12],
-"classvrv_1_1_beam_span_segment.html#a3092cedf4f5d9348ccc736b6192975a2":[1,0,0,61,16],
-"classvrv_1_1_beam_span_segment.html#a397018826d93c7ec54ffea8ffa9efd7a":[1,0,0,61,7]
+"classvrv_1_1_beam_span_segment.html#a3092cedf4f5d9348ccc736b6192975a2":[1,0,0,61,16]
 };

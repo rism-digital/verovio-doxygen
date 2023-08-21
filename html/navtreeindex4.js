@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classvrv_1_1_calc_stem_functor.html#abc40cfea5f84ed665a0536db388acea5":[1,0,0,81,5],
 "classvrv_1_1_calc_stem_functor.html#adbae2aa748055df51a88327a2a1adc87":[1,0,0,81,10],
 "classvrv_1_1_calc_stem_functor.html#ae0c58af5582b6d6675fc7128d7bb6b1c":[1,0,0,81,0],
 "classvrv_1_1_cast_off_encoding_functor.html":[1,0,0,82],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "classvrv_1_1_const_functor_interface.html#a5cc80d03ddc84609c95bacb454c5f192":[1,0,0,97,126],
 "classvrv_1_1_const_functor_interface.html#a5d6e28bf5cda49b922b9040d80e8b164":[1,0,0,97,21],
 "classvrv_1_1_const_functor_interface.html#a5eb2493452477bce92de541a284b7083":[1,0,0,97,219],
-"classvrv_1_1_const_functor_interface.html#a5fdb9b4921ac65d7dfee1e465d89b4f6":[1,0,0,97,65],
-"classvrv_1_1_const_functor_interface.html#a5ff9fa354f62e1851eac2fa19ee533d0":[1,0,0,97,144]
+"classvrv_1_1_const_functor_interface.html#a5fdb9b4921ac65d7dfee1e465d89b4f6":[1,0,0,97,65]
 };

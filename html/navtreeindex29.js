@@ -1,7 +1,5 @@
 var NAVTREEINDEX29 =
 {
-"keyaccid_8h_source.html":[2,0,118],
-"keysig_8h_source.html":[2,0,119],
 "label_8h_source.html":[2,0,120],
 "labelabbr_8h_source.html":[2,0,121],
 "layer_8h_source.html":[2,0,122],
