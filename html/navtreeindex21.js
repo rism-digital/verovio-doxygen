@@ -1,5 +1,12 @@
 var NAVTREEINDEX21 =
 {
+"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#a3b6fbf3e704c34dea450da5e49258be8":[1,0,0,303,5],
+"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#a72063f843f9dff620b83b74fc9de4f9a":[1,0,0,303,4],
+"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#a8853e80866da0194a4ed22a128aeb36d":[1,0,0,303,3],
+"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#a9d9db77de26c666352db86e2990c6a41":[1,0,0,303,8],
+"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#aa65048fa64dd7d9dccde75d75afe56ab":[1,0,0,303,6],
+"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#ad04ea7b191b20b9fa871c54d7a9165d0":[1,0,0,303,2],
+"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#aee572601386a3702f3ca2eda910c42f5":[1,0,0,303,7],
 "classvrv_1_1_prepare_time_pointing_functor.html":[1,0,0,304],
 "classvrv_1_1_prepare_time_pointing_functor.html#a126d3fead354f9df482a44cd52cc65ac":[1,0,0,304,0],
 "classvrv_1_1_prepare_time_pointing_functor.html#a163b97a5b7b571d8e7c8d9822dc07d1d":[1,0,0,304,6],
@@ -242,12 +249,5 @@ var NAVTREEINDEX21 =
 "classvrv_1_1_running_element.html#a15732cf67a3883d9f0433af6aab7e975":[1,0,0,322,12],
 "classvrv_1_1_running_element.html#a212de9d05319398c856b6a065bfa203e":[1,0,0,322,20],
 "classvrv_1_1_running_element.html#a2bcacf9ba0d635e41808e63d6e9cf425":[1,0,0,322,17],
-"classvrv_1_1_running_element.html#a2d6e14c44591a620a4439b7966eb6d32":[1,0,0,322,8],
-"classvrv_1_1_running_element.html#a2d94229d1230cae87332c7b34578cbc9":[1,0,0,322,4],
-"classvrv_1_1_running_element.html#a2f1f270cc24df4cde5b8026a188a3a98":[1,0,0,322,14],
-"classvrv_1_1_running_element.html#a3e842e74da5686b2921bc96afe860585":[1,0,0,322,13],
-"classvrv_1_1_running_element.html#a4f519acbbf0e778dac71089bb71ab7ab":[1,0,0,322,1],
-"classvrv_1_1_running_element.html#a5a4295f4c67d1f2bf0ebba5001cf3fee":[1,0,0,322,2],
-"classvrv_1_1_running_element.html#a61156fe440b86ccd278b6152f4874250":[1,0,0,322,15],
-"classvrv_1_1_running_element.html#a79506b46add9f740c57c0afe5ecb0af3":[1,0,0,322,10]
+"classvrv_1_1_running_element.html#a2d6e14c44591a620a4439b7966eb6d32":[1,0,0,322,8]
 };
