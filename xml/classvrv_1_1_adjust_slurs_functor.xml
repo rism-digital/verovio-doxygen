@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="28" column="5"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="55" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1afbefcf8e1a234a19a65024ce92205ad7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="29" column="13"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="56" column="13"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="46" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="78" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a6e6bcc7c0f3de142eb7444779e784649" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -72,7 +72,492 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="47" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="79" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1ad8c87eb6573db88e805f54cba17f3013" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::AdjustSlursFunctor::AdjustSlur</definition>
+        <argsstring>(int unit) const</argsstring>
+        <name>AdjustSlur</name>
+        <param>
+          <type>int</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>High level helper functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="89" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a4e3928cf9c8b50c6af00355de71b2748" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::AdjustSlursFunctor::AdjustOuterSlur</definition>
+        <argsstring>(const ArrayOfFloatingCurvePositioners &amp;innerCurves, int unit) const</argsstring>
+        <name>AdjustOuterSlur</name>
+        <param>
+          <type>const ArrayOfFloatingCurvePositioners &amp;</type>
+          <declname>innerCurves</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="91" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a1a25344cf928bda4e3618625a0ddf950" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::AdjustSlursFunctor::FilterSpannedElements</definition>
+        <argsstring>(const BezierCurve &amp;bezierCurve, int margin) const</argsstring>
+        <name>FilterSpannedElements</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>bezierCurve</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>margin</declname>
+        </param>
+        <briefdescription>
+<para>Intermediate level helper functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="99" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a96b20aac8674cffc33bd3bc5a2edd56e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structvrv_1_1_near_end_collision" kindref="compound">NearEndCollision</ref></type>
+        <definition>NearEndCollision vrv::AdjustSlursFunctor::DetectCollisionsNearEnd</definition>
+        <argsstring>(const BezierCurve &amp;bezierCurve, int margin) const</argsstring>
+        <name>DetectCollisionsNearEnd</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>bezierCurve</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>margin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="102" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a0de144851d17f04bd26cfa520eb950d3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; int, int &gt;</type>
+        <definition>std::pair&lt;int, int&gt; vrv::AdjustSlursFunctor::CalcEndPointShift</definition>
+        <argsstring>(const BezierCurve &amp;bezierCurve, double flexibility, int margin) const</argsstring>
+        <name>CalcEndPointShift</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>bezierCurve</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>flexibility</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>margin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="105" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1af65f70929a284393b6658e7eeb9da9b3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::AdjustSlursFunctor::ApplyEndPointShift</definition>
+        <argsstring>(BezierCurve &amp;bezierCurve, int endPointShiftLeft, int endPointShiftRight) const</argsstring>
+        <name>ApplyEndPointShift</name>
+        <param>
+          <type><ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>bezierCurve</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>endPointShiftLeft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>endPointShiftRight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="108" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a7eefd98ffbeec11824a371fcacef481b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::AdjustSlursFunctor::AdjustSlurFromBulge</definition>
+        <argsstring>(BezierCurve &amp;bezierCurve, int unit) const</argsstring>
+        <name>AdjustSlurFromBulge</name>
+        <param>
+          <type><ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>bezierCurve</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="111" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a30228e5e023495ed1c0d0e721351b035" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::AdjustSlursFunctor::AllowControlOffsetAdjustment</definition>
+        <argsstring>(const BezierCurve &amp;bezierCurve, double symmetry, int unit) const</argsstring>
+        <name>AllowControlOffsetAdjustment</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>bezierCurve</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>symmetry</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="114" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a9a399baab6e7c2bd96054f5ac5c8586b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::tuple&lt; bool, int, int &gt;</type>
+        <definition>std::tuple&lt;bool, int, int&gt; vrv::AdjustSlursFunctor::CalcControlPointOffset</definition>
+        <argsstring>(const BezierCurve &amp;bezierCurve, int margin) const</argsstring>
+        <name>CalcControlPointOffset</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>bezierCurve</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>margin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="117" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a45b4b46b38bee3c056a09ef63789c1f3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structvrv_1_1_control_point_adjustment" kindref="compound">ControlPointAdjustment</ref></type>
+        <definition>ControlPointAdjustment vrv::AdjustSlursFunctor::CalcControlPointVerticalShift</definition>
+        <argsstring>(const BezierCurve &amp;bezierCurve, double symmetry, int margin) const</argsstring>
+        <name>CalcControlPointVerticalShift</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>bezierCurve</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>symmetry</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>margin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="120" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a9eecb86aaf2830d9d28f41e972a6cef3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; int, int &gt;</type>
+        <definition>std::pair&lt;int, int&gt; vrv::AdjustSlursFunctor::SolveControlPointConstraints</definition>
+        <argsstring>(const std::list&lt; ControlPointConstraint &gt; &amp;constraints, double symmetry=0.0) const</argsstring>
+        <name>SolveControlPointConstraints</name>
+        <param>
+          <type>const std::list&lt; <ref refid="structvrv_1_1_control_point_constraint" kindref="compound">ControlPointConstraint</ref> &gt; &amp;</type>
+          <declname>constraints</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>symmetry</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="124" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a3e6b6bdd8111efe912ed62935be8b10a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::AdjustSlursFunctor::AdjustSlurShape</definition>
+        <argsstring>(BezierCurve &amp;bezierCurve, curvature_CURVEDIR dir, int unit) const</argsstring>
+        <name>AdjustSlurShape</name>
+        <param>
+          <type><ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>bezierCurve</declname>
+        </param>
+        <param>
+          <type>curvature_CURVEDIR</type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="128" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1ae478fd5adff787f9e5b5dd3a00231f7a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structvrv_1_1_control_point_adjustment" kindref="compound">ControlPointAdjustment</ref></type>
+        <definition>ControlPointAdjustment vrv::AdjustSlursFunctor::CalcControlPointShift</definition>
+        <argsstring>(const BezierCurve &amp;bezierCurve, const ArrayOfFloatingCurvePositioners &amp;innerCurves, double symmetry, int margin) const</argsstring>
+        <name>CalcControlPointShift</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>bezierCurve</declname>
+        </param>
+        <param>
+          <type>const ArrayOfFloatingCurvePositioners &amp;</type>
+          <declname>innerCurves</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>symmetry</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>margin</declname>
+        </param>
+        <briefdescription>
+<para>Intermediate level helper functions for adjustment w.r.t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>inner slurs </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="136" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a4ffe45d4ee72150c9cfbb2206339e004" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; int, int &gt;</type>
+        <definition>std::pair&lt;int, int&gt; vrv::AdjustSlursFunctor::CalcEndPointShift</definition>
+        <argsstring>(const BezierCurve &amp;bezierCurve, const ArrayOfFloatingCurvePositioners &amp;innerCurves, double flexibility, int margin) const</argsstring>
+        <name>CalcEndPointShift</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>bezierCurve</declname>
+        </param>
+        <param>
+          <type>const ArrayOfFloatingCurvePositioners &amp;</type>
+          <declname>innerCurves</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>flexibility</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>margin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="140" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a28f2665c1319df42b24edb72af281af2" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::AdjustSlursFunctor::ShiftEndPoints</definition>
+        <argsstring>(int &amp;shiftLeft, int &amp;shiftRight, double ratio, int intersection, double flexibility, bool isBelow, char spanningType) const</argsstring>
+        <name>ShiftEndPoints</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>shiftLeft</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>shiftRight</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ratio</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>intersection</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>flexibility</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isBelow</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>spanningType</declname>
+        </param>
+        <briefdescription>
+<para>Low level helper functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="149" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a65f49cd18211b5012e6d325c35775b65" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; double, double &gt;</type>
+        <definition>std::pair&lt;double, double&gt; vrv::AdjustSlursFunctor::CalcShiftRadii</definition>
+        <argsstring>(bool forShiftLeft, double flexibility, char spanningType) const</argsstring>
+        <name>CalcShiftRadii</name>
+        <param>
+          <type>bool</type>
+          <declname>forShiftLeft</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>flexibility</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>spanningType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="153" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a00469dcd1cfe0961dc6cc20b12462657" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double vrv::AdjustSlursFunctor::CalcQuadraticInterpolation</definition>
+        <argsstring>(double zeroAt, double oneAt, double arg) const</argsstring>
+        <name>CalcQuadraticInterpolation</name>
+        <param>
+          <type>double</type>
+          <declname>zeroAt</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>oneAt</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="156" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1aadbfa1c00686ea812f409b88206bad51" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double vrv::AdjustSlursFunctor::RotateSlope</definition>
+        <argsstring>(double slope, double degrees, double doublingBound, bool upwards) const</argsstring>
+        <name>RotateSlope</name>
+        <param>
+          <type>double</type>
+          <declname>slope</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>degrees</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>doublingBound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>upwards</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="161" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a75a9cb47e2560c16166ba5c64b4fca41" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float vrv::AdjustSlursFunctor::GetMinControlPointAngle</definition>
+        <argsstring>(const BezierCurve &amp;bezierCurve, float angle, int unit) const</argsstring>
+        <name>GetMinControlPointAngle</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>bezierCurve</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="164" column="11"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -87,7 +572,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="58" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" bodystart="58" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="171" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_adjust_slurs_functor_1a60b14d96503df71a0dda79e64d68cbe5" prot="private" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_slur" kindref="compound">Slur</ref> *</type>
+        <definition>Slur* vrv::AdjustSlursFunctor::m_currentSlur</definition>
+        <argsstring></argsstring>
+        <name>m_currentSlur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="173" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_adjust_slurs_functor_1a786ffeee52ccfe6ab76df45c93ba5e5c" prot="private" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_floating_curve_positioner" kindref="compound">FloatingCurvePositioner</ref> *</type>
+        <definition>FloatingCurvePositioner* vrv::AdjustSlursFunctor::m_currentCurve</definition>
+        <argsstring></argsstring>
+        <name>m_currentCurve</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="175" column="29" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" bodystart="175" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -104,7 +615,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="35" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" bodystart="35" bodyend="35"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="62" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" bodystart="62" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a5115582795c85e5ef595cfc181ca5e35" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -117,7 +628,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="40" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" bodystart="40" bodyend="40"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="67" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_slurs_functor_1a36ed953b3da536b07cc4ec0928e1f735" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::AdjustSlursFunctor::ResetCurrent</definition>
+        <argsstring>()</argsstring>
+        <name>ResetCurrent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="72" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -380,28 +904,48 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="22" column="43" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" bodystart="22" bodyend="59"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" line="49" column="43" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustslursfunctor.h" bodystart="49" bodyend="176"/>
     <listofallmembers>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a4e3928cf9c8b50c6af00355de71b2748" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>AdjustOuterSlur</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1ad8c87eb6573db88e805f54cba17f3013" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>AdjustSlur</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a7eefd98ffbeec11824a371fcacef481b" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>AdjustSlurFromBulge</name></member>
       <member refid="classvrv_1_1_adjust_slurs_functor_1a1f159a0962a83d573ddae564b1619a5f" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>AdjustSlursFunctor</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a3e6b6bdd8111efe912ed62935be8b10a" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>AdjustSlurShape</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a30228e5e023495ed1c0d0e721351b035" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>AllowControlOffsetAdjustment</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1af65f70929a284393b6658e7eeb9da9b3" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>ApplyEndPointShift</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a9a399baab6e7c2bd96054f5ac5c8586b" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>CalcControlPointOffset</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1ae478fd5adff787f9e5b5dd3a00231f7a" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>CalcControlPointShift</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a45b4b46b38bee3c056a09ef63789c1f3" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>CalcControlPointVerticalShift</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a0de144851d17f04bd26cfa520eb950d3" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>CalcEndPointShift</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a4ffe45d4ee72150c9cfbb2206339e004" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>CalcEndPointShift</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a00469dcd1cfe0961dc6cc20b12462657" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>CalcQuadraticInterpolation</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a65f49cd18211b5012e6d325c35775b65" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>CalcShiftRadii</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a96b20aac8674cffc33bd3bc5a2edd56e" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>DetectCollisionsNearEnd</name></member>
       <member refid="classvrv_1_1_doc_functor_1a25eb1412bf1c48280933292b0dd26c39" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>DocFunctor</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a1a25344cf928bda4e3618625a0ddf950" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>FilterSpannedElements</name></member>
       <member refid="classvrv_1_1_functor_1a49b8e700f8f3b3b232d6a7e558438908" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>Functor</name></member>
       <member refid="classvrv_1_1_functor_base_1a45d9ca7642da874e18b1d20a086fa015" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>FunctorBase</name></member>
       <member refid="classvrv_1_1_functor_interface_1a7a1d67dea0f876f2a8dc736204ec6603" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>FunctorInterface</name></member>
       <member refid="classvrv_1_1_functor_base_1a7ed4d14dc996ffe7a86231566fd9e06b" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>GetCode</name></member>
       <member refid="classvrv_1_1_functor_base_1a1dc2bd77ebadb86695b34484c72d3d6a" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>GetDirection</name></member>
       <member refid="classvrv_1_1_doc_functor_1a529b3b4a949efdad3088db07eb96f6f3" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>GetDoc</name></member>
-      <member refid="classvrv_1_1_functor_base_1acf8c35f221dba7293bc8f4fa71f1e7ca" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>GetFilters</name></member>
+      <member refid="classvrv_1_1_functor_base_1abd2a529c6eb36f4fe29ef14792766433" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>GetFilters</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a75a9cb47e2560c16166ba5c64b4fca41" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>GetMinControlPointAngle</name></member>
       <member refid="classvrv_1_1_adjust_slurs_functor_1a5115582795c85e5ef595cfc181ca5e35" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>HasCrossStaffSlurs</name></member>
       <member refid="classvrv_1_1_adjust_slurs_functor_1a5366229612316f45b54661ffe0c000e2" prot="public" virt="virtual"><scope>vrv::AdjustSlursFunctor</scope><name>ImplementsEndInterface</name></member>
       <member refid="classvrv_1_1_adjust_slurs_functor_1a5ee0931f96d6bf83519a9e636cd903a8" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>m_crossStaffSlurs</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a786ffeee52ccfe6ab76df45c93ba5e5c" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>m_currentCurve</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a60b14d96503df71a0dda79e64d68cbe5" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>m_currentSlur</name></member>
       <member refid="classvrv_1_1_doc_functor_1a7ea8ec6a07220ec7287e648e0a4ce8df" prot="protected" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>m_doc</name></member>
-      <member refid="classvrv_1_1_functor_base_1ab6d6edca499db0e20aca805c419f0e5a" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>PopDirection</name></member>
-      <member refid="classvrv_1_1_functor_base_1aba5e00c18f46d07bda4f16ad1922573c" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>PopFilters</name></member>
-      <member refid="classvrv_1_1_functor_base_1a3ba2a0636bdae93491641da1713b2037" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>PushDirection</name></member>
-      <member refid="classvrv_1_1_functor_base_1ac1e065f2e0b85d178062b2c830e67d82" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>PushFilters</name></member>
       <member refid="classvrv_1_1_functor_base_1a08c690f2a45f5c15e38c86f1d461f02c" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>ResetCode</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a36ed953b3da536b07cc4ec0928e1f735" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>ResetCurrent</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1aadbfa1c00686ea812f409b88206bad51" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>RotateSlope</name></member>
       <member refid="classvrv_1_1_functor_base_1af34204cf6852d525df006eb588cb2111" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>SetCode</name></member>
+      <member refid="classvrv_1_1_functor_base_1a1626c36afa525748588b3de2d4312907" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>SetDirection</name></member>
+      <member refid="classvrv_1_1_functor_base_1a459bb10918c10c82573d644054c18d13" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>SetFilters</name></member>
       <member refid="classvrv_1_1_functor_base_1a8ee0a7ab511cfc7e2ea1367212b42617" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>SetVisibleOnly</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a28f2665c1319df42b24edb72af281af2" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>ShiftEndPoints</name></member>
+      <member refid="classvrv_1_1_adjust_slurs_functor_1a9eecb86aaf2830d9d28f41e972a6cef3" prot="private" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>SolveControlPointConstraints</name></member>
       <member refid="classvrv_1_1_functor_base_1ad3c83180489aa76f1afb5b5e6fa0c52e" prot="public" virt="non-virtual"><scope>vrv::AdjustSlursFunctor</scope><name>VisibleOnly</name></member>
       <member refid="classvrv_1_1_functor_interface_1acd94de717a9eb6601de2b1c48878ac36" prot="public" virt="virtual"><scope>vrv::AdjustSlursFunctor</scope><name>VisitAccid</name></member>
       <member refid="classvrv_1_1_functor_interface_1a2b8ba86b8d2a1b07158b8359f1ec8daf" prot="public" virt="virtual"><scope>vrv::AdjustSlursFunctor</scope><name>VisitAccidEnd</name></member>

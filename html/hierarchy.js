@@ -111,9 +111,6 @@ var hierarchy =
     [ "AttBracketSpanLog", null, [
       [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ]
     ] ],
-    [ "AttBTremLog", null, [
-      [ "vrv::BTrem", "classvrv_1_1_b_trem.html", null ]
-    ] ],
     [ "AttChannelized", null, [
       [ "vrv::InstrDef", "classvrv_1_1_instr_def.html", null ]
     ] ],
@@ -140,6 +137,9 @@ var hierarchy =
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
       [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
+      [ "vrv::DivLine", "classvrv_1_1_div_line.html", [
+        [ "vrv::DivLineAttr", "classvrv_1_1_div_line_attr.html", null ]
+      ] ],
       [ "vrv::Dot", "classvrv_1_1_dot.html", null ],
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
       [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
@@ -183,6 +183,10 @@ var hierarchy =
       [ "vrv::Surface", "classvrv_1_1_surface.html", null ],
       [ "vrv::Zone", "classvrv_1_1_zone.html", null ]
     ] ],
+    [ "AttCoordinatedUl", null, [
+      [ "vrv::Surface", "classvrv_1_1_surface.html", null ],
+      [ "vrv::Zone", "classvrv_1_1_zone.html", null ]
+    ] ],
     [ "AttCoordX1", null, [
       [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", [
         [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
@@ -194,6 +198,7 @@ var hierarchy =
         [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
         [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
         [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
+        [ "vrv::DivLine", "classvrv_1_1_div_line.html", null ],
         [ "vrv::Dot", "classvrv_1_1_dot.html", null ],
         [ "vrv::Dots", "classvrv_1_1_dots.html", null ],
         [ "vrv::Flag", "classvrv_1_1_flag.html", null ],
@@ -255,13 +260,15 @@ var hierarchy =
       [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
       [ "vrv::Tie", "classvrv_1_1_tie.html", null ]
     ] ],
-    [ "AttCurveRend", null, [
-      [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
-      [ "vrv::Tie", "classvrv_1_1_tie.html", null ]
+    [ "AttCurvatureDirection", null, [
+      [ "vrv::Nc", "classvrv_1_1_nc.html", null ]
     ] ],
     [ "AttDistances", null, [
       [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
+    ] ],
+    [ "AttDivLineLog", null, [
+      [ "vrv::DivLine", "classvrv_1_1_div_line.html", null ]
     ] ],
     [ "AttDotLog", null, [
       [ "vrv::Dot", "classvrv_1_1_dot.html", null ]
@@ -311,11 +318,11 @@ var hierarchy =
       [ "vrv::Caesura", "classvrv_1_1_caesura.html", null ],
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
       [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
+      [ "vrv::DivLine", "classvrv_1_1_div_line.html", null ],
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
       [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
-      [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
       [ "vrv::RepeatMark", "classvrv_1_1_repeat_mark.html", null ],
@@ -330,11 +337,11 @@ var hierarchy =
       [ "vrv::Caesura", "classvrv_1_1_caesura.html", null ],
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
       [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
+      [ "vrv::DivLine", "classvrv_1_1_div_line.html", null ],
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
       [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
-      [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
       [ "vrv::RepeatMark", "classvrv_1_1_repeat_mark.html", null ],
       [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
@@ -397,7 +404,7 @@ var hierarchy =
     [ "AttIntervalMelodic", null, [
       [ "vrv::Nc", "classvrv_1_1_nc.html", null ]
     ] ],
-    [ "AttKeySigAnl", null, [
+    [ "AttKeyMode", null, [
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ]
     ] ],
     [ "AttKeySigLog", null, [
@@ -481,7 +488,9 @@ var hierarchy =
       [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
       [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
-      [ "vrv::Octave", "classvrv_1_1_octave.html", null ]
+      [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
+      [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
+      [ "vrv::Tie", "classvrv_1_1_tie.html", null ]
     ] ],
     [ "AttLinking", null, [
       [ "vrv::LinkingInterface", "classvrv_1_1_linking_interface.html", [
@@ -559,6 +568,7 @@ var hierarchy =
     [ "AttNNumberLike", null, [
       [ "vrv::BarLine", "classvrv_1_1_bar_line.html", null ],
       [ "vrv::Course", "classvrv_1_1_course.html", null ],
+      [ "vrv::DivLine", "classvrv_1_1_div_line.html", null ],
       [ "vrv::Ending", "classvrv_1_1_ending.html", null ],
       [ "vrv::Fing", "classvrv_1_1_fing.html", null ],
       [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
@@ -641,6 +651,9 @@ var hierarchy =
     [ "AttPitch", null, [
       [ "vrv::Course", "classvrv_1_1_course.html", null ],
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
+      [ "vrv::PitchInterface", "classvrv_1_1_pitch_interface.html", null ]
+    ] ],
+    [ "AttPitchGes", null, [
       [ "vrv::PitchInterface", "classvrv_1_1_pitch_interface.html", null ]
     ] ],
     [ "AttPlacementOnStaff", null, [
@@ -834,6 +847,9 @@ var hierarchy =
     [ "AttTransposition", null, [
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
     ] ],
+    [ "AttTremForm", null, [
+      [ "vrv::BTrem", "classvrv_1_1_b_trem.html", null ]
+    ] ],
     [ "AttTremMeasured", null, [
       [ "vrv::BTrem", "classvrv_1_1_b_trem.html", null ],
       [ "vrv::FTrem", "classvrv_1_1_f_trem.html", null ]
@@ -904,6 +920,7 @@ var hierarchy =
       [ "vrv::BarLine", "classvrv_1_1_bar_line.html", null ],
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
+      [ "vrv::DivLine", "classvrv_1_1_div_line.html", null ],
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ],
@@ -976,6 +993,7 @@ var hierarchy =
     [ "vrv::Brush", "classvrv_1_1_brush.html", null ],
     [ "vrv::ClassRegistrar< T >", "classvrv_1_1_class_registrar.html", null ],
     [ "vrv::ClosestBB", "structvrv_1_1_closest_b_b.html", null ],
+    [ "vrv::ClosestNeume", "structvrv_1_1_closest_neume.html", null ],
     [ "vrv::CollectAndProcess", "classvrv_1_1_collect_and_process.html", [
       [ "vrv::PrepareDelayedTurnsFunctor", "classvrv_1_1_prepare_delayed_turns_functor.html", null ],
       [ "vrv::PrepareLinkingFunctor", "classvrv_1_1_prepare_linking_functor.html", null ],
@@ -1114,7 +1132,7 @@ var hierarchy =
           [ "vrv::JustifyYAdjustCrossStaffFunctor", "classvrv_1_1_justify_y_adjust_cross_staff_functor.html", null ],
           [ "vrv::JustifyYFunctor", "classvrv_1_1_justify_y_functor.html", null ],
           [ "vrv::PrepareDataInitializationFunctor", "classvrv_1_1_prepare_data_initialization_functor.html", null ],
-          [ "vrv::PrepareFloatingGrpsFunctor", "classvrv_1_1_prepare_floating_grps_functor.html", null ],
+          [ "vrv::PreparePedalsFunctor", "classvrv_1_1_prepare_pedals_functor.html", null ],
           [ "vrv::PrepareRptFunctor", "classvrv_1_1_prepare_rpt_functor.html", null ],
           [ "vrv::ScoreDefOptimizeFunctor", "classvrv_1_1_score_def_optimize_functor.html", null ],
           [ "vrv::ScoreDefSetCurrentFunctor", "classvrv_1_1_score_def_set_current_functor.html", null ],
@@ -1136,6 +1154,7 @@ var hierarchy =
         [ "vrv::PrepareDelayedTurnsFunctor", "classvrv_1_1_prepare_delayed_turns_functor.html", null ],
         [ "vrv::PrepareDurationFunctor", "classvrv_1_1_prepare_duration_functor.html", null ],
         [ "vrv::PrepareFacsimileFunctor", "classvrv_1_1_prepare_facsimile_functor.html", null ],
+        [ "vrv::PrepareFloatingGrpsFunctor", "classvrv_1_1_prepare_floating_grps_functor.html", null ],
         [ "vrv::PrepareLayerElementPartsFunctor", "classvrv_1_1_prepare_layer_element_parts_functor.html", null ],
         [ "vrv::PrepareLinkingFunctor", "classvrv_1_1_prepare_linking_functor.html", null ],
         [ "vrv::PrepareLyricsFunctor", "classvrv_1_1_prepare_lyrics_functor.html", null ],

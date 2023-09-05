@@ -215,10 +215,11 @@ var NAVTREEINDEX0 =
 "classvrv_1_1_adjust_layers_functor.html#ac28a09f5c75615d08523418b03544ef7":[1,0,0,20,7],
 "classvrv_1_1_adjust_slurs_functor.html":[1,0,0,21],
 "classvrv_1_1_adjust_slurs_functor.html#a1f159a0962a83d573ddae564b1619a5f":[1,0,0,21,0],
+"classvrv_1_1_adjust_slurs_functor.html#a36ed953b3da536b07cc4ec0928e1f735":[1,0,0,21,4],
 "classvrv_1_1_adjust_slurs_functor.html#a5115582795c85e5ef595cfc181ca5e35":[1,0,0,21,2],
 "classvrv_1_1_adjust_slurs_functor.html#a5366229612316f45b54661ffe0c000e2":[1,0,0,21,3],
-"classvrv_1_1_adjust_slurs_functor.html#a6e6bcc7c0f3de142eb7444779e784649":[1,0,0,21,5],
-"classvrv_1_1_adjust_slurs_functor.html#a8cb3bf3bd8a1903181d7e99bb1e6c4e5":[1,0,0,21,4],
+"classvrv_1_1_adjust_slurs_functor.html#a6e6bcc7c0f3de142eb7444779e784649":[1,0,0,21,6],
+"classvrv_1_1_adjust_slurs_functor.html#a8cb3bf3bd8a1903181d7e99bb1e6c4e5":[1,0,0,21,5],
 "classvrv_1_1_adjust_slurs_functor.html#afbefcf8e1a234a19a65024ce92205ad7":[1,0,0,21,1],
 "classvrv_1_1_adjust_staff_overlap_functor.html":[1,0,0,22],
 "classvrv_1_1_adjust_staff_overlap_functor.html#a1f1228e6e37856ce0a9af09fd1a6dc39":[1,0,0,22,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classvrv_1_1_adjust_tuplet_num_overlap_functor.html#a7927d2b7b68b6e41318284790c1d7942":[1,0,0,25,1],
 "classvrv_1_1_adjust_tuplet_num_overlap_functor.html#a8c8593dde48911cfda68a42ffbfa0e03":[1,0,0,25,0],
 "classvrv_1_1_adjust_tuplet_num_overlap_functor.html#ab44339ec241955b2b0c069323170fc2f":[1,0,0,25,4],
-"classvrv_1_1_adjust_tuplet_num_overlap_functor.html#afff68010b0896e586b3935768402e602":[1,0,0,25,5],
-"classvrv_1_1_adjust_tuplet_with_slurs_functor.html":[1,0,0,28]
+"classvrv_1_1_adjust_tuplet_num_overlap_functor.html#afff68010b0896e586b3935768402e602":[1,0,0,25,5]
 };

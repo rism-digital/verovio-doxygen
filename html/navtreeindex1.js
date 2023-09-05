@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"classvrv_1_1_adjust_tuplet_with_slurs_functor.html":[1,0,0,28],
 "classvrv_1_1_adjust_tuplet_with_slurs_functor.html#a447a14af23d83b2fbd9fe21cad314717":[1,0,0,28,0],
 "classvrv_1_1_adjust_tuplet_with_slurs_functor.html#a5c91594884547efa5b114853f9af0798":[1,0,0,28,3],
 "classvrv_1_1_adjust_tuplet_with_slurs_functor.html#a79fa9f3017bd644f3b8f28c5203b0437":[1,0,0,28,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "classvrv_1_1_artic.html#aeb7492d88bdab31de3f09ffb6adbff05":[1,0,0,47,22],
 "classvrv_1_1_artic.html#aebafe014185c3b1357258d06f358a172":[1,0,0,47,10],
 "classvrv_1_1_att_dur_extreme_comparison.html":[1,0,0,48],
-"classvrv_1_1_att_dur_extreme_comparison.html#a6c348e4f01ace3cb6d3b9aa999775dea":[1,0,0,48,1],
-"classvrv_1_1_att_dur_extreme_comparison.html#a7e3e0e0c69a18ecd1733f3ffba8e708f":[1,0,0,48,0]
+"classvrv_1_1_att_dur_extreme_comparison.html#a6c348e4f01ace3cb6d3b9aa999775dea":[1,0,0,48,1]
 };

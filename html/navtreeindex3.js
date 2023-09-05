@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_beam_span_segment.html#a397018826d93c7ec54ffea8ffa9efd7a":[1,0,0,61,7],
 "classvrv_1_1_beam_span_segment.html#a4e84b7a56ec2855f07917d57042a1313":[1,0,0,61,17],
 "classvrv_1_1_beam_span_segment.html#a4ef62758ae8c5e8fb47ee81d02c6780f":[1,0,0,61,6],
 "classvrv_1_1_beam_span_segment.html#a57f99e7899343b0ec40d187b71d27a4c":[1,0,0,61,8],
@@ -65,6 +66,7 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_bounding_box.html#a2e094936f23e6b9c044ccd28a3aa0681":[1,0,0,64,28],
 "classvrv_1_1_bounding_box.html#a2fb7e4b83e390c3cd436e3a73ddfa269":[1,0,0,64,26],
 "classvrv_1_1_bounding_box.html#a2fe9d4e0cef41c270fe6683e5fbd8223":[1,0,0,64,24],
+"classvrv_1_1_bounding_box.html#a30378dff14a9058154de8efcc0d7632f":[1,0,0,64,49],
 "classvrv_1_1_bounding_box.html#a33e2d9c410be02f476ca19e0f063284c":[1,0,0,64,43],
 "classvrv_1_1_bounding_box.html#a341aeebe2fdd010ebf72aaf1c8760df3":[1,0,0,64,16],
 "classvrv_1_1_bounding_box.html#a363e14e29dcb72d6539a832921c538f9":[1,0,0,64,48],
@@ -90,7 +92,6 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_bounding_box.html#a7eccd9ca1e458dccab9c6b9fb7a24ec4":[1,0,0,64,56],
 "classvrv_1_1_bounding_box.html#a81256810cab77e0d9fedf64fa858690f":[1,0,0,64,20],
 "classvrv_1_1_bounding_box.html#a8343f2b84e7bb194cb9377c304703bba":[1,0,0,64,10],
-"classvrv_1_1_bounding_box.html#a89d4ebda89785d624cb43d1c45dbbbb2":[1,0,0,64,49],
 "classvrv_1_1_bounding_box.html#a8cc083afb0d6f3a68d60fae9569645b8":[1,0,0,64,58],
 "classvrv_1_1_bounding_box.html#a91a7bb36d11f909e84caab997fb49c0c":[1,0,0,64,3],
 "classvrv_1_1_bounding_box.html#a928808d6ff900985afdfe1856490d505":[1,0,0,64,55],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_calc_stem_functor.html#a8d5c12f4fd4f7f65b6942520051d23c0":[1,0,0,81,1],
 "classvrv_1_1_calc_stem_functor.html#a9f31ac40198128f20f8d6b9a6ff0314e":[1,0,0,81,8],
 "classvrv_1_1_calc_stem_functor.html#aa6f358c3b664d1f396917ac387951805":[1,0,0,81,4],
-"classvrv_1_1_calc_stem_functor.html#ab8b666c1d058869bdf0c57da50d26603":[1,0,0,81,3],
-"classvrv_1_1_calc_stem_functor.html#abc40cfea5f84ed665a0536db388acea5":[1,0,0,81,5]
+"classvrv_1_1_calc_stem_functor.html#ab8b666c1d058869bdf0c57da50d26603":[1,0,0,81,3]
 };

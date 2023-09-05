@@ -10,6 +10,7 @@ var classvrv_1_1_neume =
     [ "GenerateChildMelodic", "classvrv_1_1_neume.html#acbf3e102b8872d17abfa71bf67faa87c", null ],
     [ "GetClassName", "classvrv_1_1_neume.html#a4eacfab5a67d84b51a798d2b2cc40df4", null ],
     [ "GetHighestPitch", "classvrv_1_1_neume.html#aab282c046c77511a725c6da629341910", null ],
+    [ "GetLigatureCount", "classvrv_1_1_neume.html#a06449cac799629c8f270375c73edba24", null ],
     [ "GetLowestPitch", "classvrv_1_1_neume.html#af47bcdf0360357ebe69e8185ad210e99", null ],
     [ "GetNeumeGroup", "classvrv_1_1_neume.html#a481c55b8281aef7bbb87737b75fcc1d5", null ],
     [ "GetPitchDifferences", "classvrv_1_1_neume.html#ae5b28d67395ab6013e98cce077b71046", null ],

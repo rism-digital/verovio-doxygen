@@ -1,11 +1,26 @@
 var classvrv_1_1_object_list_interface =
 [
+    [ "ObjectListInterface", "classvrv_1_1_object_list_interface.html#a29f1291f341cd2fd6b4d3351d0db3330", null ],
+    [ "~ObjectListInterface", "classvrv_1_1_object_list_interface.html#a44118ef8dc2eeb97fff1a68127bd55f4", null ],
+    [ "ObjectListInterface", "classvrv_1_1_object_list_interface.html#abd871c40f32f79e61d3001dce73277b2", null ],
     [ "FilterList", "classvrv_1_1_object_list_interface.html#afcdb6796d84a327e46ac2b6e3f8bd243", null ],
-    [ "GetList", "classvrv_1_1_object_list_interface.html#a4e640d5cf03206ba36f958494365401f", null ],
-    [ "GetListFirst", "classvrv_1_1_object_list_interface.html#a5161136f99eb5744177f2a287fd9ce25", null ],
+    [ "GetList", "classvrv_1_1_object_list_interface.html#a74180ca1bf2284e0cfc969077c890ffd", null ],
+    [ "GetList", "classvrv_1_1_object_list_interface.html#a8bc25b8ab455533f14b56bb66bc7ff73", null ],
+    [ "GetListBack", "classvrv_1_1_object_list_interface.html#abd3b0941c31c317f373be4561d281a84", null ],
+    [ "GetListBack", "classvrv_1_1_object_list_interface.html#aa4975be12e4b23e2f020cc46fdf6ada5", null ],
+    [ "GetListFirst", "classvrv_1_1_object_list_interface.html#a1dd620b5a71dbbc985d19972d404b04c", null ],
+    [ "GetListFirst", "classvrv_1_1_object_list_interface.html#ab95aaf8f363f9229cc5ea15fe38f0b89", null ],
+    [ "GetListFirstBackward", "classvrv_1_1_object_list_interface.html#a4d0adf01cac8d4e2ca9ad676b6842f33", null ],
+    [ "GetListFirstBackward", "classvrv_1_1_object_list_interface.html#aebf49146dc5792275d39546a08f95608", null ],
+    [ "GetListFront", "classvrv_1_1_object_list_interface.html#a99829877cb8583c650ab1472b65db266", null ],
+    [ "GetListFront", "classvrv_1_1_object_list_interface.html#a0170673afb1744b7af0141864deac31c", null ],
     [ "GetListIndex", "classvrv_1_1_object_list_interface.html#a1858b93f447366ddfbdeb011845e3f25", null ],
-    [ "GetListNext", "classvrv_1_1_object_list_interface.html#aa232c4a4fb42a49d0052e19d53682d7d", null ],
-    [ "GetListPrevious", "classvrv_1_1_object_list_interface.html#aefe598ce65966397c0277d4a5295ebea", null ],
-    [ "HasEmptyList", "classvrv_1_1_object_list_interface.html#a6fa4993dc2bcb87049c3bdab6a32056b", null ],
-    [ "ResetList", "classvrv_1_1_object_list_interface.html#ad840a3d0c9fa550f980534426eb9b076", null ]
+    [ "GetListNext", "classvrv_1_1_object_list_interface.html#aa390767e556fa0acfbf39dfd97476200", null ],
+    [ "GetListNext", "classvrv_1_1_object_list_interface.html#a30e4fc57355193bb9f9db195a1ff5afb", null ],
+    [ "GetListPrevious", "classvrv_1_1_object_list_interface.html#a5262feebeeb70f9a2583c6750daa6e54", null ],
+    [ "GetListPrevious", "classvrv_1_1_object_list_interface.html#a2c9f803e6cca17417584290ff938bc0d", null ],
+    [ "GetListSize", "classvrv_1_1_object_list_interface.html#af5f9910d7919614d00d877db1c9c703c", null ],
+    [ "HasEmptyList", "classvrv_1_1_object_list_interface.html#afd253a913544e16b2e95ad8d139276b4", null ],
+    [ "operator=", "classvrv_1_1_object_list_interface.html#ac286d029a9ee5021f0f40c8bec72fce0", null ],
+    [ "ResetList", "classvrv_1_1_object_list_interface.html#afaaa1913823e9ead72c8ee2854bf881c", null ]
 ];
