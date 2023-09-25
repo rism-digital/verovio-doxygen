@@ -2242,6 +2242,12 @@
     <member refid="classvrv_1_1_doc_1a37e132213aabf855ee05e8c64488f474" kind="function"><name>SetType</name></member>
     <member refid="classvrv_1_1_doc_1abe3b780b5309b75326beac396cc5677c" kind="function"><name>GetPages</name></member>
     <member refid="classvrv_1_1_doc_1ab4055d376f01510632673d6e71046717" kind="function"><name>GetPages</name></member>
+    <member refid="classvrv_1_1_doc_1ae6c98db85d71601a7c52a41d43687828" kind="function"><name>GetFirstScoreDef</name></member>
+    <member refid="classvrv_1_1_doc_1a53491bd2207a98ee313903696d6fa7fe" kind="function"><name>GetFirstScoreDef</name></member>
+    <member refid="classvrv_1_1_doc_1a5ca7d95af82a68284ef32f98dced6666" kind="function"><name>GetVisibleScores</name></member>
+    <member refid="classvrv_1_1_doc_1ac559ab3ae1cb6d0d0e6be45851578b35" kind="function"><name>GetFirstVisibleScore</name></member>
+    <member refid="classvrv_1_1_doc_1a3cd24fa7b798c6ec77928c0111ae82dc" kind="function"><name>GetCorrespondingScore</name></member>
+    <member refid="classvrv_1_1_doc_1abc5fc83e433fc6c2585d54f6e04d4463" kind="function"><name>GetCorrespondingScore</name></member>
     <member refid="classvrv_1_1_doc_1ae6b359a9f2a0398fac03d286097f0a41" kind="function"><name>GetGlyphHeight</name></member>
     <member refid="classvrv_1_1_doc_1a2c3660e0380661b548274c42ce1fcd1d" kind="function"><name>GetGlyphWidth</name></member>
     <member refid="classvrv_1_1_doc_1a6d9d841e5f1c5dfabe62a331c9175603" kind="function"><name>GetGlyphLeft</name></member>
@@ -2290,10 +2296,6 @@
     <member refid="classvrv_1_1_doc_1a1b34235ac83320b5abdaef5d1c4fb3c8" kind="function"><name>GetFacsimile</name></member>
     <member refid="classvrv_1_1_doc_1a3e7d29a01d571f0082fcffabe149c002" kind="function"><name>GetFacsimile</name></member>
     <member refid="classvrv_1_1_doc_1a047c911499ccc787cb9288792ead88b9" kind="function"><name>HasFacsimile</name></member>
-    <member refid="classvrv_1_1_doc_1a1e4bbe3532ef56417466083e519604b3" kind="function"><name>GetCurrentScore</name></member>
-    <member refid="classvrv_1_1_doc_1a9cea4dcc5865c9d8a5381da45f6d20ab" kind="function"><name>GetCurrentScoreDef</name></member>
-    <member refid="classvrv_1_1_doc_1a5d9f3644bfc9ff57ae5d832329c45041" kind="function"><name>SetCurrentScore</name></member>
-    <member refid="classvrv_1_1_doc_1a2b019b663fb7916ddf5874df67bd28e5" kind="function"><name>HasCurrentScore</name></member>
     <member refid="classvrv_1_1_doc_1a30bfdcba22ec584c3ba946a312bb2035" kind="function"><name>InitSelectionDoc</name></member>
     <member refid="classvrv_1_1_doc_1aea047fcb782253d6a81450f00e8362b9" kind="function"><name>ResetSelectionDoc</name></member>
     <member refid="classvrv_1_1_doc_1aa67199b00f932064061a957a6200f362" kind="function"><name>HasSelection</name></member>
@@ -2303,7 +2305,6 @@
     <member refid="classvrv_1_1_doc_1a0ba3558262dd38ed19da17dd1434e30e" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_doc_1a711414694a0536c55b6f0cef817760f7" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_doc_1a20e29fbc21983d743ad3ea780b35d3e5" kind="function"><name>AcceptEnd</name></member>
-    <member refid="classvrv_1_1_doc_1a37a1e27953869ca3f265e61f066d8682" kind="variable"><name>m_currentScore</name></member>
     <member refid="classvrv_1_1_doc_1a7799b02ae55c461ab0fc6818682390a6" kind="variable"><name>m_selectionPreceding</name></member>
     <member refid="classvrv_1_1_doc_1a89c7ad2d30217a5fe090be0488471b5e" kind="variable"><name>m_selectionFollowing</name></member>
     <member refid="classvrv_1_1_doc_1a7bc36256d5c168301dd36501963747cc" kind="variable"><name>m_selectionStart</name></member>
@@ -2325,6 +2326,7 @@
     <member refid="classvrv_1_1_doc_1a2d9d5bcbc74573393d92860992760d1e" kind="variable"><name>m_type</name></member>
     <member refid="classvrv_1_1_doc_1a91957055a4ab1bf8edb2ab2716ef2d8c" kind="variable"><name>m_options</name></member>
     <member refid="classvrv_1_1_doc_1a7c9396d00dee4f807caca2aa7684ee7c" kind="variable"><name>m_resources</name></member>
+    <member refid="classvrv_1_1_doc_1ab42e758e094027f18ce535abec407873" kind="variable"><name>m_visibleScores</name></member>
     <member refid="classvrv_1_1_doc_1ac55dd2b657b6f3ee8b5e8f13a2169ddf" kind="variable"><name>m_isCastOff</name></member>
     <member refid="classvrv_1_1_doc_1ab1f93216c0a1c9548f19f985b5834b7c" kind="variable"><name>m_drawingPage</name></member>
     <member refid="classvrv_1_1_doc_1a815ba27ca61098b053d668862df39535" kind="variable"><name>m_drawingBeamWidth</name></member>
@@ -2352,17 +2354,16 @@
     <member refid="classvrv_1_1_doc_1a8e5d2a994915fb93f56ca86dc4ae5e6e" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_doc_1a7cf6f055c8c7cdad2d1e652554f43f97" kind="function"><name>ClearSelectionPages</name></member>
     <member refid="classvrv_1_1_doc_1add470d20e80b6fb3b87f5fbfb8cbd222" kind="function"><name>GenerateDocumentScoreDef</name></member>
-    <member refid="classvrv_1_1_doc_1a0347725af90af5972681ce8a6f82c209" kind="function"><name>GenerateFooter</name></member>
-    <member refid="classvrv_1_1_doc_1a1d4bc05da1139a74390eafda43eb991d" kind="function"><name>GenerateHeader</name></member>
+    <member refid="classvrv_1_1_doc_1a59a77ebea9671b372b2840c67fe49eb7" kind="function"><name>GenerateFooter</name></member>
+    <member refid="classvrv_1_1_doc_1a62a74a66efbef8f608bb53175fa3c105" kind="function"><name>GenerateHeader</name></member>
     <member refid="classvrv_1_1_doc_1aa94a58d50fbe08a45b813503678bb4ac" kind="function"><name>GenerateMeasureNumbers</name></member>
     <member refid="classvrv_1_1_doc_1a808dc05f3c7f8087dd99071d90e4b991" kind="function"><name>GenerateMEIHeader</name></member>
     <member refid="classvrv_1_1_doc_1a9306ab87c7b995679b365cbc62bdc26d" kind="function"><name>HasPage</name></member>
-    <member refid="classvrv_1_1_doc_1ab0e9c2a56689059b6b315b91a0c7ec72" kind="function"><name>GetScores</name></member>
     <member refid="classvrv_1_1_doc_1a2375896e4a43e3a23c798c48fd5a8f70" kind="function"><name>GetPageCount</name></member>
     <member refid="classvrv_1_1_doc_1ab09d1142c97b77fdbb612c787049b907" kind="function"><name>GetMidiExportDone</name></member>
     <member refid="classvrv_1_1_doc_1a28ad795a0d3439e48b22401c8fe6824d" kind="function"><name>ConvertFontPoint</name></member>
     <member refid="classvrv_1_1_doc_1ac57ef2adbcdc3d853c540a0c44470d49" kind="function"><name>GetMusicToLyricFontSizeRatio</name></member>
-    <member refid="classvrv_1_1_doc_1ac0a711b095727802b63ba0694e224473" kind="function"><name>GetStaffDistance</name></member>
+    <member refid="classvrv_1_1_doc_1a838cd1b9f9b28b230a47abed47daad1e" kind="function"><name>GetStaffDistance</name></member>
     <member refid="classvrv_1_1_doc_1a162e05164bbd41fefa38c12639f91c44" kind="function"><name>CalculateTimemap</name></member>
     <member refid="classvrv_1_1_doc_1ae0d680385b78c8ba2e1b84452ad27889" kind="function"><name>HasTimemap</name></member>
     <member refid="classvrv_1_1_doc_1a4b8be5eebe48afb3668ec97c133148a5" kind="function"><name>ExportMIDI</name></member>
@@ -2392,6 +2393,7 @@
     <member refid="classvrv_1_1_doc_1a570380aa9593a124ac2d85b5238a62e8" kind="function"><name>IsCastOff</name></member>
     <member refid="classvrv_1_1_doc_1a47ba988110ca11b0d677e07f99d2d07d" kind="function"><name>CalcMusicFontSize</name></member>
     <member refid="classvrv_1_1_doc_1affc2cd69bd867d30e1da75ac8b658f54" kind="function"><name>PrepareMeasureIndices</name></member>
+    <member refid="classvrv_1_1_doc_1a2239082025cd3a924a9cd7681439c0c1" kind="function"><name>CollectVisibleScores</name></member>
   </compound>
   <compound refid="classvrv_1_1_doc_const_functor" kind="class"><name>vrv::DocConstFunctor</name>
     <member refid="classvrv_1_1_doc_const_functor_1acabc3899092e465a402ed5792a05e381" kind="function"><name>DocConstFunctor</name></member>
@@ -3055,7 +3057,7 @@
     <member refid="classvrv_1_1_floating_positioner_1a05d7aea6bc5fa725d499e445500840f5" kind="function"><name>GetDrawingPlace</name></member>
     <member refid="classvrv_1_1_floating_positioner_1a42ac74724476be7aa4ffdb85bd9c6eea" kind="function"><name>HasHorizontalOverlapWith</name></member>
     <member refid="classvrv_1_1_floating_positioner_1ad91a65a8cab97e7e925ae9baae808972" kind="function"><name>GetAdmissibleHorizOverlapMargin</name></member>
-    <member refid="classvrv_1_1_floating_positioner_1a052df338690d13a4308005f8e6c308de" kind="function"><name>CalcDrawingYRel</name></member>
+    <member refid="classvrv_1_1_floating_positioner_1ae60754617677c5e7195f6265c9fbde55" kind="function"><name>CalcDrawingYRel</name></member>
     <member refid="classvrv_1_1_floating_positioner_1af826adf8c650a5e8ff858f7179da56b3" kind="function"><name>AdjustExtenders</name></member>
     <member refid="classvrv_1_1_floating_positioner_1a41e76ae10db9e8cb08ea407aa8c4bbd9" kind="function"><name>GetSpaceBelow</name></member>
     <member refid="classvrv_1_1_floating_positioner_1af47842971525f2065e7dc49bdd0f60e5" kind="function"><name>HasVerticalContentOverlap</name></member>
@@ -5179,7 +5181,7 @@
     <member refid="classvrv_1_1_m_e_i_output_1a92f031c056bf77529afc44c541a5d540" kind="function"><name>WriteObjectInternalEnd</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1ad8904057632354d7d87929d42f80353d" kind="function"><name>WriteStackedObjects</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a62b56329824c8edc4e330a7917537696" kind="function"><name>WriteStackedObjectsEnd</name></member>
-    <member refid="classvrv_1_1_m_e_i_output_1a2f08dbab02c71e211b9b32ec62eab452" kind="function"><name>WriteCustomScoreDef</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1a706995f3c477e5b628afcc86d9002cdc" kind="function"><name>WriteCustomScoreDef</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a0c990fd91fc7cb2bb491187d25efa953" kind="function"><name>AdjustStaffDef</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1ac07425dce8d6c31a1702d73708cbbf88" kind="function"><name>AdjustLabel</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1aa673c000af3853b637c0dd6ededbe6c2" kind="function"><name>WriteMdiv</name></member>
@@ -5921,7 +5923,6 @@
     <member refid="classvrv_1_1_object_1a159b4bb92475586050e3ffdb3a7d5459" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_object_1ad93bf90a3a3a2955970a5b4c05fde748" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_object_1a38c9de93620af8ace7f1832e387c22dc" kind="function"><name>AcceptEnd</name></member>
-    <member refid="classvrv_1_1_object_1a58522b51991ecb8d00a1697a074d9cec" kind="function"><name>UpdateDocumentScore</name></member>
     <member refid="classvrv_1_1_object_1add77fb3f7c5d8796cd68363aa2e7f927" kind="function"><name>SkipChildren</name></member>
     <member refid="classvrv_1_1_object_1ac59fddc250e594844b385a6ef9fa90b4" kind="function"><name>FiltersApply</name></member>
     <member refid="classvrv_1_1_object_1a8633ea00fff8623cd8fab399835dd873" kind="variable"><name>m_id</name></member>
@@ -6675,7 +6676,6 @@
     <member refid="classvrv_1_1_page_1a9f9973481f71fb5308a29eb0930b0dbc" kind="variable"><name>m_drawingJustifiableHeight</name></member>
     <member refid="classvrv_1_1_page_1afe1ab085c1c4c7245eb740586ff791fb" kind="variable"><name>m_justificationSum</name></member>
     <member refid="classvrv_1_1_page_1a7864fd466016d74c709ba4a3c0e9283c" kind="variable"><name>m_layoutDone</name></member>
-    <member refid="classvrv_1_1_page_1ad61c7e4e46e6c81a2da83f9737aa08e5" kind="function"><name>GetSystemCount</name></member>
     <member refid="classvrv_1_1_page_1ac2c454a5c9a14e6a8f24debe2b438dd1" kind="function"><name>GetPageIdx</name></member>
     <member refid="classvrv_1_1_page_1a29a3f02e9620a674f4f1f1ebdf818089" kind="function"><name>LayOut</name></member>
     <member refid="classvrv_1_1_page_1a0c2dafbc00b0f3185a4ee416f019498f" kind="function"><name>LayOutTranscription</name></member>
@@ -7497,7 +7497,6 @@
     <member refid="classvrv_1_1_score_1a17f43f0111eb3922d20c845779acfa14" kind="variable"><name>m_drawingPgHead2Height</name></member>
     <member refid="classvrv_1_1_score_1a9b66adafb9c792e27e8a3e7c4cd071f5" kind="variable"><name>m_drawingPgFoot2Height</name></member>
     <member refid="classvrv_1_1_score_1a26146f88f76d778ea24d167c18bce683" kind="variable"><name>m_scoreDef</name></member>
-    <member refid="classvrv_1_1_score_1ac1074a91c1f31fa6d78e177dc152e4fe" kind="function"><name>SetAsCurrent</name></member>
     <member refid="classvrv_1_1_score_1acd59d1d7b84c0b8efa3c63646f7c8388" kind="function"><name>CalcRunningElementHeight</name></member>
     <member refid="classvrv_1_1_score_1a3a2637750d08541d340b1f6055995e32" kind="function"><name>ScoreDefNeedsOptimization</name></member>
   </compound>
