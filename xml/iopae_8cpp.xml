@@ -1218,7 +1218,7 @@
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>m_currentDots<sp/>=<sp/>-1;</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>m_grace<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;<ref refid="classvrv_1_1_doc_1ae6c98db85d71601a7c52a41d43687828" kindref="member">GetFirstScoreDef</ref>()-&gt;<ref refid="classvrv_1_1_object_1a86b033680370fc35b444ef74a55bca92" kindref="member">SaveObject</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;GetCurrentScoreDef()-&gt;<ref refid="classvrv_1_1_object_1a86b033680370fc35b444ef74a55bca92" kindref="member">SaveObject</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>m_docScoreDef<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
@@ -2162,20 +2162,20 @@
 <codeline lineno="1019"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staffDef-&gt;AddChild(staffDefClef);</highlight></codeline>
 <codeline lineno="1020"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1021"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(scoreDefKeySig)<sp/>{</highlight></codeline>
-<codeline lineno="1022"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score-&gt;GetScoreDef()-&gt;AddChild(scoreDefKeySig);</highlight></codeline>
+<codeline lineno="1022"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_doc-&gt;GetCurrentScoreDef()-&gt;<ref refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" kindref="member">AddChild</ref>(scoreDefKeySig);</highlight></codeline>
 <codeline lineno="1023"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1024"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(scoreDefMeterSig)<sp/>{</highlight></codeline>
 <codeline lineno="1025"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Make<sp/>it<sp/>an<sp/>attribute<sp/>for<sp/>now</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1026"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scoreDefMeterSig-&gt;IsAttribute(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="1027"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score-&gt;GetScoreDef()-&gt;AddChild(scoreDefMeterSig);</highlight></codeline>
+<codeline lineno="1027"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_doc-&gt;GetCurrentScoreDef()-&gt;<ref refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" kindref="member">AddChild</ref>(scoreDefMeterSig);</highlight></codeline>
 <codeline lineno="1028"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1029"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(scoreDefMensur)<sp/>{</highlight></codeline>
 <codeline lineno="1030"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Make<sp/>it<sp/>an<sp/>attribute<sp/>for<sp/>now</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1031"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scoreDefMensur-&gt;IsAttribute(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="1032"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score-&gt;GetScoreDef()-&gt;AddChild(scoreDefMensur);</highlight></codeline>
+<codeline lineno="1032"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_doc-&gt;GetCurrentScoreDef()-&gt;<ref refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" kindref="member">AddChild</ref>(scoreDefMensur);</highlight></codeline>
 <codeline lineno="1033"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1034"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1035"><highlight class="normal"><sp/><sp/><sp/><sp/>score-&gt;GetScoreDef()-&gt;AddChild(staffGrp);</highlight></codeline>
+<codeline lineno="1035"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;GetCurrentScoreDef()-&gt;<ref refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" kindref="member">AddChild</ref>(staffGrp);</highlight></codeline>
 <codeline lineno="1036"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1037"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_tie<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
 <codeline lineno="1038"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LogWarning(</highlight><highlight class="stringliteral">&quot;Open<sp/>tie<sp/>will<sp/>not<sp/>render<sp/>because<sp/>tstamp2<sp/>is<sp/>missing&quot;</highlight><highlight class="normal">);</highlight></codeline>
@@ -4093,7 +4093,7 @@
 <codeline lineno="2966"><highlight class="normal"><sp/><sp/><sp/><sp/>staffDef-&gt;SetN(1);</highlight></codeline>
 <codeline lineno="2967"><highlight class="normal"><sp/><sp/><sp/><sp/>staffDef-&gt;SetLines(5);</highlight></codeline>
 <codeline lineno="2968"><highlight class="normal"><sp/><sp/><sp/><sp/>staffGrp-&gt;AddChild(staffDef);</highlight></codeline>
-<codeline lineno="2969"><highlight class="normal"><sp/><sp/><sp/><sp/>score-&gt;GetScoreDef()-&gt;AddChild(staffGrp);</highlight></codeline>
+<codeline lineno="2969"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;GetCurrentScoreDef()-&gt;<ref refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" kindref="member">AddChild</ref>(staffGrp);</highlight></codeline>
 <codeline lineno="2970"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2971"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_isMensural)<sp/>{</highlight></codeline>
 <codeline lineno="2972"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staffDef-&gt;SetNotationtype(NOTATIONTYPE_mensural);</highlight></codeline>
@@ -4104,17 +4104,17 @@
 <codeline lineno="2977"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staffDef-&gt;AddChild(m_clef.<ref refid="classvrv_1_1_clef_1abb9d12cbce277d50a99e9681a5f0f7b6" kindref="member">Clone</ref>());</highlight></codeline>
 <codeline lineno="2978"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2979"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_hasKeySig)<sp/>{</highlight></codeline>
-<codeline lineno="2980"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score-&gt;GetScoreDef()-&gt;AddChild(m_keySig.<ref refid="classvrv_1_1_key_sig_1aa602f4a016a1548a905bbbb19fc014ca" kindref="member">Clone</ref>());</highlight></codeline>
+<codeline lineno="2980"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_doc-&gt;GetCurrentScoreDef()-&gt;<ref refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" kindref="member">AddChild</ref>(m_keySig.<ref refid="classvrv_1_1_key_sig_1aa602f4a016a1548a905bbbb19fc014ca" kindref="member">Clone</ref>());</highlight></codeline>
 <codeline lineno="2981"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2982"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_hasMeterSig)<sp/>{</highlight></codeline>
 <codeline lineno="2983"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Make<sp/>it<sp/>an<sp/>attribute<sp/>for<sp/>now</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2984"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_meterSig.IsAttribute(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="2985"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score-&gt;GetScoreDef()-&gt;AddChild(m_meterSig.<ref refid="classvrv_1_1_meter_sig_1aeae06cc8509a4b237f24018f38284e78" kindref="member">Clone</ref>());</highlight></codeline>
+<codeline lineno="2985"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_doc-&gt;GetCurrentScoreDef()-&gt;<ref refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" kindref="member">AddChild</ref>(m_meterSig.<ref refid="classvrv_1_1_meter_sig_1aeae06cc8509a4b237f24018f38284e78" kindref="member">Clone</ref>());</highlight></codeline>
 <codeline lineno="2986"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2987"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_hasMensur)<sp/>{</highlight></codeline>
 <codeline lineno="2988"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Make<sp/>it<sp/>an<sp/>attribute<sp/>for<sp/>now</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2989"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_mensur.IsAttribute(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="2990"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score-&gt;GetScoreDef()-&gt;AddChild(m_mensur.<ref refid="classvrv_1_1_mensur_1aed526dc458dd12a6fe19ac79a84bfd36" kindref="member">Clone</ref>());</highlight></codeline>
+<codeline lineno="2990"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_doc-&gt;GetCurrentScoreDef()-&gt;<ref refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" kindref="member">AddChild</ref>(m_mensur.<ref refid="classvrv_1_1_mensur_1aed526dc458dd12a6fe19ac79a84bfd36" kindref="member">Clone</ref>());</highlight></codeline>
 <codeline lineno="2991"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2992"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2993"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>stack<sp/>to<sp/>which<sp/>layer<sp/>element<sp/>are<sp/>added.<sp/>At<sp/>least<sp/>a<sp/>Layer,<sp/>but<sp/>then<sp/>Beam,<sp/>GraceGrp,<sp/>Chord,<sp/>etc.</highlight><highlight class="normal"></highlight></codeline>

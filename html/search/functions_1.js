@@ -8,7 +8,7 @@ var searchData=
   ['calcdistance_1631',['CalcDistance',['../classvrv_1_1_bounding_box.html#a8008673c300accccc6dd7f10a2f12d45',1,'vrv::BoundingBox']]],
   ['calcdotlocations_1632',['CalcDotLocations',['../classvrv_1_1_chord.html#a10afab13db85219fed35984a84954c3e',1,'vrv::Chord::CalcDotLocations()'],['../classvrv_1_1_layer_element.html#a6faf15b51bf5716dea2e07e2d2cbfc1f',1,'vrv::LayerElement::CalcDotLocations()'],['../classvrv_1_1_note.html#a19e1747b8c15b47581048795066212aa',1,'vrv::Note::CalcDotLocations()']]],
   ['calcdrawingbracketandnumpos_1633',['CalcDrawingBracketAndNumPos',['../classvrv_1_1_tuplet.html#ac6b04379bb72ad6f90757952cf3bcc81',1,'vrv::Tuplet']]],
-  ['calcdrawingyrel_1634',['CalcDrawingYRel',['../classvrv_1_1_floating_positioner.html#ae60754617677c5e7195f6265c9fbde55',1,'vrv::FloatingPositioner']]],
+  ['calcdrawingyrel_1634',['CalcDrawingYRel',['../classvrv_1_1_floating_positioner.html#a052df338690d13a4308005f8e6c308de',1,'vrv::FloatingPositioner']]],
   ['calcelementhorizontaloverlap_1635',['CalcElementHorizontalOverlap',['../classvrv_1_1_layer_element.html#a55718065d5951c44917fd1072df649df',1,'vrv::LayerElement']]],
   ['calchyphenlength_1636',['CalcHyphenLength',['../classvrv_1_1_syl.html#aa54f049014e438aa49c670d5daafc07d',1,'vrv::Syl']]],
   ['calcindividualnoteduration_1637',['CalcIndividualNoteDuration',['../classvrv_1_1_b_trem.html#a9963ff35c8b7abea13d52f912e3c83ea',1,'vrv::BTrem']]],

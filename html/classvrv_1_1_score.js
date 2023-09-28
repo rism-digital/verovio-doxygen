@@ -13,6 +13,7 @@ var classvrv_1_1_score =
     [ "IsSupportedChild", "classvrv_1_1_score.html#af3a729806cc822784e21a8b38649aba6", null ],
     [ "Reset", "classvrv_1_1_score.html#a4edefe15e3054f89b5db69f3a92eee15", null ],
     [ "ScoreDefNeedsOptimization", "classvrv_1_1_score.html#a3a2637750d08541d340b1f6055995e32", null ],
+    [ "SetAsCurrent", "classvrv_1_1_score.html#ac1074a91c1f31fa6d78e177dc152e4fe", null ],
     [ "m_drawingPgFoot2Height", "classvrv_1_1_score.html#a9b66adafb9c792e27e8a3e7c4cd071f5", null ],
     [ "m_drawingPgFootHeight", "classvrv_1_1_score.html#a1ba70d8aabe2c138467c4f333c4364eb", null ],
     [ "m_drawingPgHead2Height", "classvrv_1_1_score.html#a17f43f0111eb3922d20c845779acfa14", null ],
