@@ -230,6 +230,7 @@ var NAVTREEINDEX20 =
 "classvrv_1_1_prepare_pointers_by_layer_functor.html":[1,0,0,300],
 "classvrv_1_1_prepare_pointers_by_layer_functor.html#a111ccf803053a2bccfe7914ed40b4bfe":[1,0,0,300,0],
 "classvrv_1_1_prepare_pointers_by_layer_functor.html#a4df60069436c97836d3b289ed5cb9649":[1,0,0,300,1],
+"classvrv_1_1_prepare_pointers_by_layer_functor.html#a9adb5bdc6b7e6f6d7a3efe679cdf625b":[1,0,0,300,5],
 "classvrv_1_1_prepare_pointers_by_layer_functor.html#ac76c74f161ca914ec05a896d38fa8730":[1,0,0,300,2],
 "classvrv_1_1_prepare_pointers_by_layer_functor.html#ad1a0653e0846320984d6434c19698492":[1,0,0,300,4],
 "classvrv_1_1_prepare_pointers_by_layer_functor.html#ad77fc1ce8818acb38b270b96caf798bf":[1,0,0,300,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "classvrv_1_1_prepare_staff_current_time_spanning_functor.html":[1,0,0,303],
 "classvrv_1_1_prepare_staff_current_time_spanning_functor.html#a0056d95a7518adb843809d80fce9a6a1":[1,0,0,303,9],
 "classvrv_1_1_prepare_staff_current_time_spanning_functor.html#a04ea1e8c17a84db10bd6a4d4d9d323f2":[1,0,0,303,0],
-"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#a2517a53779cef2f4814788ae44e25e08":[1,0,0,303,1],
-"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#a3b6fbf3e704c34dea450da5e49258be8":[1,0,0,303,5]
+"classvrv_1_1_prepare_staff_current_time_spanning_functor.html#a2517a53779cef2f4814788ae44e25e08":[1,0,0,303,1]
 };
