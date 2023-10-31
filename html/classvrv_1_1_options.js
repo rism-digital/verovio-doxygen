@@ -104,6 +104,7 @@ var classvrv_1_1_options =
     [ "m_mdivAll", "classvrv_1_1_options.html#a8f6a55752ffe6a852c93c67794d5fc35", null ],
     [ "m_mdivXPathQuery", "classvrv_1_1_options.html#ac94939b1b904c41073c45d33a4dbea7f", null ],
     [ "m_measureMinWidth", "classvrv_1_1_options.html#aa05a631b62399492d3c89c8bc6cbae26", null ],
+    [ "m_mensural", "classvrv_1_1_options.html#aaac54391e25f2f2177ad0dbf64c4cc2e", null ],
     [ "m_mensuralToMeasure", "classvrv_1_1_options.html#ace0da799034ed728698c346b5c604fb3", null ],
     [ "m_midi", "classvrv_1_1_options.html#a3a52042ee86eb2aa5f0540a41a6f35fa", null ],
     [ "m_midiNoCue", "classvrv_1_1_options.html#a8f4846d524263f9e851c03582532b001", null ],
