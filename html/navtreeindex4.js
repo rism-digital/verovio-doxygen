@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"classvrv_1_1_calc_stem_functor.html#a9f31ac40198128f20f8d6b9a6ff0314e":[1,0,0,81,8],
+"classvrv_1_1_calc_stem_functor.html#aa6f358c3b664d1f396917ac387951805":[1,0,0,81,4],
+"classvrv_1_1_calc_stem_functor.html#ab8b666c1d058869bdf0c57da50d26603":[1,0,0,81,3],
 "classvrv_1_1_calc_stem_functor.html#abc40cfea5f84ed665a0536db388acea5":[1,0,0,81,5],
 "classvrv_1_1_calc_stem_functor.html#adbae2aa748055df51a88327a2a1adc87":[1,0,0,81,10],
 "classvrv_1_1_calc_stem_functor.html#ae0c58af5582b6d6675fc7128d7bb6b1c":[1,0,0,81,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "classvrv_1_1_const_functor_interface.html#a5c22e33e24bbc6a168622a4a67c77903":[1,0,0,97,53],
 "classvrv_1_1_const_functor_interface.html#a5ca4dd8c7ccac50072802bc223e3f005":[1,0,0,97,131],
 "classvrv_1_1_const_functor_interface.html#a5cbb5e17ac9ceb544e3060cd05f261ac":[1,0,0,97,20],
-"classvrv_1_1_const_functor_interface.html#a5cc80d03ddc84609c95bacb454c5f192":[1,0,0,97,126],
-"classvrv_1_1_const_functor_interface.html#a5d6e28bf5cda49b922b9040d80e8b164":[1,0,0,97,21],
-"classvrv_1_1_const_functor_interface.html#a5eb2493452477bce92de541a284b7083":[1,0,0,97,219],
-"classvrv_1_1_const_functor_interface.html#a5fdb9b4921ac65d7dfee1e465d89b4f6":[1,0,0,97,65]
+"classvrv_1_1_const_functor_interface.html#a5cc80d03ddc84609c95bacb454c5f192":[1,0,0,97,126]
 };

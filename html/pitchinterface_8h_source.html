@@ -115,36 +115,40 @@ $(document).ready(function(){initNavTree('pitchinterface_8h_source.html',''); in
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_pitch_interface.html#aadb1bc4e09bd2ea9686c06d75a077bb6">Reset</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classvrv_1_1_pitch_interface.html#ad5eb2bfb6682e72699fe4fb140a47350">   38</a></span>&#160;    InterfaceId <a class="code" href="classvrv_1_1_pitch_interface.html#ad5eb2bfb6682e72699fe4fb140a47350">IsInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> INTERFACE_PITCH; }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_pitch_interface.html#ab31f6dd5d225135f3b35f32ab2573d99">HasIdenticalPitchInterface</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_pitch_interface.html">PitchInterface</a> *otherPitchInterface) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_pitch_interface.html#aa50e2d8637677e753a582083b7b8afb7">AdjustPitchByOffset</a>(<span class="keywordtype">int</span> pitchOffset);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_pitch_interface.html#a3f1089bfeddc84c7b3c31e3a239b4a76">PitchDifferenceTo</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_pitch_interface.html">PitchInterface</a> *pi) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_pitch_interface.html#a720eabf22b709d13987df460e0c40c89">AdjustPitchForNewClef</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_clef.html">Clef</a> *oldClef, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_clef.html">Clef</a> *newClef);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Static methods //</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_pitch_interface.html#a3efb531b25e89181a821d237fbdf903e">AdjustPname</a>(<span class="keywordtype">int</span> &amp;pname, <span class="keywordtype">int</span> &amp;oct);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_pitch_interface.html#a5e9d080f4132195df6c62c8a92cb7320">CalcLoc</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *element, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_layer.html">Layer</a> *layer, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *crossStaffElement,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">bool</span> topChordNote = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_pitch_interface.html#a5e9d080f4132195df6c62c8a92cb7320">CalcLoc</a>(data_PITCHNAME pname, <span class="keywordtype">int</span> oct, <span class="keywordtype">int</span> clefLocOffset);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> SetOctDefault(data_OCTAVE oct) { m_octDefault = oct; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    data_OCTAVE GetOctDefault()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_octDefault; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> HasOctDefault()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_octDefault != MEI_UNSET_OCT); }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_pitch_interface.html#ab31f6dd5d225135f3b35f32ab2573d99">HasIdenticalPitchInterface</a>(<span class="keyword">const</span> PitchInterface *otherPitchInterface) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_pitch_interface.html#aa50e2d8637677e753a582083b7b8afb7">AdjustPitchByOffset</a>(<span class="keywordtype">int</span> pitchOffset);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_pitch_interface.html#a3f1089bfeddc84c7b3c31e3a239b4a76">PitchDifferenceTo</a>(<span class="keyword">const</span> PitchInterface *pi) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_pitch_interface.html#a720eabf22b709d13987df460e0c40c89">AdjustPitchForNewClef</a>(<span class="keyword">const</span> Clef *oldClef, <span class="keyword">const</span> Clef *newClef);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// Static methods //</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_pitch_interface.html#a3efb531b25e89181a821d237fbdf903e">AdjustPname</a>(<span class="keywordtype">int</span> &amp;pname, <span class="keywordtype">int</span> &amp;oct);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_pitch_interface.html#a5e9d080f4132195df6c62c8a92cb7320">CalcLoc</a>(<span class="keyword">const</span> LayerElement *element, <span class="keyword">const</span> Layer *layer, <span class="keyword">const</span> LayerElement *crossStaffElement,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">bool</span> topChordNote = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_pitch_interface.html#a5e9d080f4132195df6c62c8a92cb7320">CalcLoc</a>(data_PITCHNAME pname, <span class="keywordtype">int</span> oct, <span class="keywordtype">int</span> clefLocOffset);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    data_OCTAVE m_octDefault;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_pitch_interface_html_a3efb531b25e89181a821d237fbdf903e"><div class="ttname"><a href="classvrv_1_1_pitch_interface.html#a3efb531b25e89181a821d237fbdf903e">vrv::PitchInterface::AdjustPname</a></div><div class="ttdeci">static void AdjustPname(int &amp;pname, int &amp;oct)</div><div class="ttdoc">Adjust the pname and the octave for values outside the range.</div></div>
@@ -153,18 +157,15 @@ $(document).ready(function(){initNavTree('pitchinterface_8h_source.html',''); in
 <div class="ttc" id="aclassvrv_1_1_pitch_interface_html_a720eabf22b709d13987df460e0c40c89"><div class="ttname"><a href="classvrv_1_1_pitch_interface.html#a720eabf22b709d13987df460e0c40c89">vrv::PitchInterface::AdjustPitchForNewClef</a></div><div class="ttdeci">void AdjustPitchForNewClef(const Clef *oldClef, const Clef *newClef)</div><div class="ttdoc">adjust the pitch value so that it stays in the same x,y position given it's new and old clefs</div></div>
 <div class="ttc" id="aclassvrv_1_1_pitch_interface_html_a5e9d080f4132195df6c62c8a92cb7320"><div class="ttname"><a href="classvrv_1_1_pitch_interface.html#a5e9d080f4132195df6c62c8a92cb7320">vrv::PitchInterface::CalcLoc</a></div><div class="ttdeci">static int CalcLoc(const LayerElement *element, const Layer *layer, const LayerElement *crossStaffElement, bool topChordNote=true)</div><div class="ttdoc">Calculate the loc for a note, rest or chord considering its position in the layer.</div></div>
 <div class="ttc" id="aclassvrv_1_1_pitch_interface_html_a3f1089bfeddc84c7b3c31e3a239b4a76"><div class="ttname"><a href="classvrv_1_1_pitch_interface.html#a3f1089bfeddc84c7b3c31e3a239b4a76">vrv::PitchInterface::PitchDifferenceTo</a></div><div class="ttdeci">int PitchDifferenceTo(const PitchInterface *pi) const</div><div class="ttdoc">Get steps between calling object and parameter.</div></div>
-<div class="ttc" id="aclassvrv_1_1_clef_html"><div class="ttname"><a href="classvrv_1_1_clef.html">vrv::Clef</a></div><div class="ttdoc">This class models the MEI &lt;clef&gt; element.</div><div class="ttdef"><b>Definition:</b> clef.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_pitch_interface_html_ab31f6dd5d225135f3b35f32ab2573d99"><div class="ttname"><a href="classvrv_1_1_pitch_interface.html#ab31f6dd5d225135f3b35f32ab2573d99">vrv::PitchInterface::HasIdenticalPitchInterface</a></div><div class="ttdeci">bool HasIdenticalPitchInterface(const PitchInterface *otherPitchInterface) const</div><div class="ttdoc">Interface comparison operator.</div></div>
 <div class="ttc" id="aclassvrv_1_1_pitch_interface_html_ad5eb2bfb6682e72699fe4fb140a47350"><div class="ttname"><a href="classvrv_1_1_pitch_interface.html#ad5eb2bfb6682e72699fe4fb140a47350">vrv::PitchInterface::IsInterface</a></div><div class="ttdeci">InterfaceId IsInterface() const override</div><div class="ttdoc">Virtual method returning the InterfaceId of the interface.</div><div class="ttdef"><b>Definition:</b> pitchinterface.h:38</div></div>
 <div class="ttc" id="aclassvrv_1_1_pitch_interface_html_aadb1bc4e09bd2ea9686c06d75a077bb6"><div class="ttname"><a href="classvrv_1_1_pitch_interface.html#aadb1bc4e09bd2ea9686c06d75a077bb6">vrv::PitchInterface::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_pitch_interface_html"><div class="ttname"><a href="classvrv_1_1_pitch_interface.html">vrv::PitchInterface</a></div><div class="ttdoc">This class is an interface for elements with pitch, such as notes and neumes.</div><div class="ttdef"><b>Definition:</b> pitchinterface.h:28</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:44</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_html"><div class="ttname"><a href="classvrv_1_1_layer.html">vrv::Layer</a></div><div class="ttdoc">This class represents a layer in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> layer.h:33</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>pitchinterface.h</b></li>
-    <li class="footer">Generated on Fri Oct 27 2023 15:30:56 for Verovio by
+    <li class="footer">Generated on Tue Oct 31 2023 09:51:09 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

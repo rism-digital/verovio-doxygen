@@ -626,6 +626,9 @@ var hierarchy =
       [ "vrv::Course", "classvrv_1_1_course.html", null ],
       [ "vrv::PitchInterface", "classvrv_1_1_pitch_interface.html", null ]
     ] ],
+    [ "AttOctaveDefault", null, [
+      [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ]
+    ] ],
     [ "AttOctaveDisplacement", null, [
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
       [ "vrv::Octave", "classvrv_1_1_octave.html", null ]

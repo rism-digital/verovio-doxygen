@@ -117,24 +117,33 @@ $(document).ready(function(){initNavTree('calcalignmentpitchposfunctor_8h_source
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     * Functor interface</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    FunctorCode VisitLayerElement(<a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *layerElement) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif // __VRV_CALCALIGNMENTPITCHPOSFUNCTOR_H__</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    FunctorCode VisitScore(<a class="code" href="classvrv_1_1_score.html">Score</a> *score) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    FunctorCode VisitScoreDef(<a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *scoreDef) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    FunctorCode VisitStaffDef(<a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *staffDef) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// The current scoreDef default octave</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    data_OCTAVE m_octDefault;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// The current staffDef default octaves</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::map&lt;int, data_OCTAVE&gt; m_octDefaultForStaffN;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif // __VRV_CALCALIGNMENTPITCHPOSFUNCTOR_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassvrv_1_1_staff_def_html"><div class="ttname"><a href="classvrv_1_1_staff_def.html">vrv::StaffDef</a></div><div class="ttdoc">This class represents a MEI staffDef.</div><div class="ttdef"><b>Definition:</b> staffdef.h:25</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:40</div></div>
 <div class="ttc" id="aclassvrv_1_1_calc_alignment_pitch_pos_functor_html"><div class="ttname"><a href="classvrv_1_1_calc_alignment_pitch_pos_functor.html">vrv::CalcAlignmentPitchPosFunctor</a></div><div class="ttdoc">This class calculates the drawing position (m_drawingX and m_drawingY) values for objects.</div><div class="ttdef"><b>Definition:</b> calcalignmentpitchposfunctor.h:23</div></div>
+<div class="ttc" id="aclassvrv_1_1_score_def_html"><div class="ttname"><a href="classvrv_1_1_score_def.html">vrv::ScoreDef</a></div><div class="ttdoc">This class represents a MEI scoreDef.</div><div class="ttdef"><b>Definition:</b> scoredef.h:130</div></div>
+<div class="ttc" id="aclassvrv_1_1_score_html"><div class="ttname"><a href="classvrv_1_1_score.html">vrv::Score</a></div><div class="ttdoc">This class represent a &lt;score&gt; in MEI.</div><div class="ttdef"><b>Definition:</b> score.h:30</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:44</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_functor_html"><div class="ttname"><a href="classvrv_1_1_doc_functor.html">vrv::DocFunctor</a></div><div class="ttdoc">This abstract class is the base class for all mutable functors that need access to the document.</div><div class="ttdef"><b>Definition:</b> functor.h:151</div></div>
 <div class="ttc" id="aclassvrv_1_1_calc_alignment_pitch_pos_functor_html_adeb42c0008ca535dd8fef470541d0c72"><div class="ttname"><a href="classvrv_1_1_calc_alignment_pitch_pos_functor.html#adeb42c0008ca535dd8fef470541d0c72">vrv::CalcAlignmentPitchPosFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> calcalignmentpitchposfunctor.h:36</div></div>
@@ -142,7 +151,7 @@ $(document).ready(function(){initNavTree('calcalignmentpitchposfunctor_8h_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>calcalignmentpitchposfunctor.h</b></li>
-    <li class="footer">Generated on Fri Oct 27 2023 15:30:55 for Verovio by
+    <li class="footer">Generated on Tue Oct 31 2023 09:51:09 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
