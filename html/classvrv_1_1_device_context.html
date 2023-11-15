@@ -114,6 +114,10 @@ Public Member Functions</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_device_context.html#a98b03a16d2a3ead9ac3d7e3bafe2490d">DrawPlaceholder</a> (int x, int y)</td></tr>
 <tr class="memdesc:a98b03a16d2a3ead9ac3d7e3bafe2490d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special method for forcing bounding boxes to be updated Used for invisible elements (e.g., &lt;space&gt;) that needs to be take into account in spacing. <br /></td></tr>
 <tr class="separator:a98b03a16d2a3ead9ac3d7e3bafe2490d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a135649ef93deb35278b06dbc541b24d5"><td class="memItemLeft" align="right" valign="top"><a id="a135649ef93deb35278b06dbc541b24d5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_device_context.html#a135649ef93deb35278b06dbc541b24d5">SetCustomGraphicColor</a> (const std::string &amp;color)</td></tr>
+<tr class="memdesc:a135649ef93deb35278b06dbc541b24d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for changing the color of a custom graphic. <br /></td></tr>
+<tr class="separator:a135649ef93deb35278b06dbc541b24d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd76f01c9742de3d4a0446f905b1003b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b">UseGlobalStyling</a> ()</td></tr>
 <tr class="memdesc:afd76f01c9742de3d4a0446f905b1003b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method indicating if default global styling is used.  <a href="classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b">More...</a><br /></td></tr>
 <tr class="separator:afd76f01c9742de3d4a0446f905b1003b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -342,18 +346,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ReactivateGraphic</b>
 <tr><td colspan="2"><div class="groupHeader">Method for starting and ending a graphic</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>For example, the method can be used for grouping shapes in &lt;g&gt;&lt;/g&gt; in SVG </p>
 </div></td></tr>
-<tr class="memitem:a19153d18f7d94253fcfeed1f8be3dc89"><td class="memItemLeft" align="right" valign="top"><a id="a19153d18f7d94253fcfeed1f8be3dc89"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartGraphic</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object, std::string gClass, std::string gId, GraphicID graphicID=PRIMARY, bool preprend=false)=0</td></tr>
-<tr class="separator:a19153d18f7d94253fcfeed1f8be3dc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c8cd2944b57b1acc64653b531df0d7"><td class="memItemLeft" align="right" valign="top"><a id="a97c8cd2944b57b1acc64653b531df0d7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartGraphic</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object, const std::string &amp;gClass, const std::string &amp;gId, GraphicID graphicID=PRIMARY, bool preprend=false)=0</td></tr>
+<tr class="separator:a97c8cd2944b57b1acc64653b531df0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af40102f26edf1fd7386c6aa8ade0a0df"><td class="memItemLeft" align="right" valign="top"><a id="af40102f26edf1fd7386c6aa8ade0a0df"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>EndGraphic</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object, <a class="el" href="classvrv_1_1_view.html">View</a> *view)=0</td></tr>
 <tr class="separator:af40102f26edf1fd7386c6aa8ade0a0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Method for starting and ending a graphic custom graphic that do not correspond to an Object</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>For example, the method can be used for grouping shapes in &lt;g&gt;&lt;/g&gt; in SVG </p>
 </div></td></tr>
-<tr class="memitem:aab8fc6ed6a6247cbce87fba6e391689b"><td class="memItemLeft" align="right" valign="top"><a id="aab8fc6ed6a6247cbce87fba6e391689b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartCustomGraphic</b> (std::string name, std::string gClass=&quot;&quot;, std::string gId=&quot;&quot;)</td></tr>
-<tr class="separator:aab8fc6ed6a6247cbce87fba6e391689b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab429e6accdbb87c0a0c7bc088711b6d3"><td class="memItemLeft" align="right" valign="top"><a id="ab429e6accdbb87c0a0c7bc088711b6d3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartCustomGraphic</b> (const std::string &amp;name, std::string gClass=&quot;&quot;, std::string gId=&quot;&quot;)</td></tr>
+<tr class="separator:ab429e6accdbb87c0a0c7bc088711b6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aa27f5f2cfae5422eeffd5c9b18b102"><td class="memItemLeft" align="right" valign="top"><a id="a5aa27f5f2cfae5422eeffd5c9b18b102"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>EndCustomGraphic</b> ()</td></tr>
 <tr class="separator:a5aa27f5f2cfae5422eeffd5c9b18b102"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -369,9 +373,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>EndResumedGra
 <tr><td colspan="2"><div class="groupHeader">Method for starting and ending a text graphic when it needs to be different from a normal graphic.</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>For example, in SVG, a text graphic is a &lt;tspan&gt; (and not a &lt;g&gt;) </p>
 </div></td></tr>
-<tr class="memitem:a4126a3b56d0560415460c58a664e56fd"><td class="memItemLeft" align="right" valign="top"><a id="a4126a3b56d0560415460c58a664e56fd"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartTextGraphic</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object, std::string gClass, std::string gId)</td></tr>
-<tr class="separator:a4126a3b56d0560415460c58a664e56fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72c2cf73b8c937c87bf56c5b0267e92"><td class="memItemLeft" align="right" valign="top"><a id="aa72c2cf73b8c937c87bf56c5b0267e92"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartTextGraphic</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object, const std::string &amp;gClass, const std::string &amp;gId)</td></tr>
+<tr class="separator:aa72c2cf73b8c937c87bf56c5b0267e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00aa64395ad2f5854f87dca59db6a9ef"><td class="memItemLeft" align="right" valign="top"><a id="a00aa64395ad2f5854f87dca59db6a9ef"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>EndTextGraphic</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object, <a class="el" href="classvrv_1_1_view.html">View</a> *view)</td></tr>
 <tr class="separator:a00aa64395ad2f5854f87dca59db6a9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -469,7 +473,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_device_context.html">DeviceContext</a></li>
-    <li class="footer">Generated on Tue Nov 14 2023 14:04:03 for Verovio by
+    <li class="footer">Generated on Wed Nov 15 2023 16:03:15 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
