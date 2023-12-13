@@ -1055,6 +1055,8 @@ var hierarchy =
     [ "vrv::ControlPointAdjustment", "structvrv_1_1_control_point_adjustment.html", null ],
     [ "vrv::ControlPointConstraint", "structvrv_1_1_control_point_constraint.html", null ],
     [ "vrv::CurveSpannedElement", "classvrv_1_1_curve_spanned_element.html", null ],
+    [ "vrv::DateConstruct", "structvrv_1_1_date_construct.html", null ],
+    [ "vrv::DateWithErrors", "structvrv_1_1_date_with_errors.html", null ],
     [ "vrv::DeviceContext", "classvrv_1_1_device_context.html", [
       [ "vrv::BBoxDeviceContext", "classvrv_1_1_b_box_device_context.html", null ],
       [ "vrv::SvgDeviceContext", "classvrv_1_1_svg_device_context.html", null ]
@@ -1186,6 +1188,7 @@ var hierarchy =
       [ "vrv::Functor", "classvrv_1_1_functor.html", null ]
     ] ],
     [ "vrv::Glyph", "classvrv_1_1_glyph.html", null ],
+    [ "vrv::HumdrumReferenceItem", "structvrv_1_1_humdrum_reference_item.html", null ],
     [ "vrv::HumdrumSignifiers", "classvrv_1_1_humdrum_signifiers.html", null ],
     [ "vrv::Input", "classvrv_1_1_input.html", [
       [ "vrv::ABCInput", "classvrv_1_1_a_b_c_input.html", null ],
