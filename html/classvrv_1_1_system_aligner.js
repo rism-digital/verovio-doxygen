@@ -25,6 +25,8 @@ var classvrv_1_1_system_aligner =
     [ "GetStaffAlignmentForStaffN", "classvrv_1_1_system_aligner.html#a4c9fd8a96d8c6a1eaac690739c2c733b", null ],
     [ "GetStaffAlignmentForStaffN", "classvrv_1_1_system_aligner.html#a7252d8c86f1fb194d6f186c11d6b5c5e", null ],
     [ "GetSystem", "classvrv_1_1_system_aligner.html#a5c916b5e3799ce149199694090b2f1ce", null ],
+    [ "IsSupportedChild", "classvrv_1_1_system_aligner.html#a5cff4faf2592ead0b44a85e7ddbff183", null ],
+    [ "ReorderBy", "classvrv_1_1_system_aligner.html#a34a0912ed2b22d610fe6eed155b2d0b5", null ],
     [ "Reset", "classvrv_1_1_system_aligner.html#aa5961fa9bf6c71d9871c33f263d5faa8", null ],
     [ "SetSpacing", "classvrv_1_1_system_aligner.html#a118f13b660eb1e8ccd5dc4b59a4045d4", null ]
 ];
