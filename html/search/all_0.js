@@ -83,7 +83,7 @@ var searchData=
   ['annot_80',['Annot',['../classvrv_1_1_annot.html',1,'vrv']]],
   ['app_81',['App',['../classvrv_1_1_app.html',1,'vrv']]],
   ['appendadditionalattributes_82',['AppendAdditionalAttributes',['../classvrv_1_1_svg_device_context.html#a2f56ce603bd94fea5f23d21fa7117799',1,'vrv::SvgDeviceContext']]],
-  ['appendidandclass_83',['AppendIdAndClass',['../classvrv_1_1_svg_device_context.html#a03350b9424ae910cd43b9e3d413bf380',1,'vrv::SvgDeviceContext']]],
+  ['appendidandclass_83',['AppendIdAndClass',['../classvrv_1_1_svg_device_context.html#aa978c5f1995e03c72f491407086894eb',1,'vrv::SvgDeviceContext']]],
   ['apply_84',['Apply',['../classvrv_1_1_filters.html#ab8a0e3b0097f4fee2d91f78ba735d336',1,'vrv::Filters']]],
   ['applyppufactorfunctor_85',['ApplyPPUFactorFunctor',['../classvrv_1_1_apply_p_p_u_factor_functor.html',1,'vrv']]],
   ['approximatebezierboundingbox_86',['ApproximateBezierBoundingBox',['../classvrv_1_1_bounding_box.html#ae9a22cf5d306abb22ff5f557e81bd9af',1,'vrv::BoundingBox']]],

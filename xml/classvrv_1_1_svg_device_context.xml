@@ -826,22 +826,22 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Method for starting and ending a graphic</header>
-      <memberdef kind="function" id="classvrv_1_1_svg_device_context_1af305cf134a1d606ff07df25acf224edd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_svg_device_context_1af004f015646e8aaeb637504b932cf0cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
         <definition>void vrv::SvgDeviceContext::StartGraphic</definition>
-        <argsstring>(Object *object, std::string gClass, std::string gId, GraphicID graphicID=PRIMARY, bool prepend=false) override</argsstring>
+        <argsstring>(Object *object, const std::string &amp;gClass, const std::string &amp;gId, GraphicID graphicID=PRIMARY, bool prepend=false) override</argsstring>
         <name>StartGraphic</name>
-        <reimplements refid="classvrv_1_1_device_context_1a19153d18f7d94253fcfeed1f8be3dc89">StartGraphic</reimplements>
+        <reimplements refid="classvrv_1_1_device_context_1a97c8cd2944b57b1acc64653b531df0d7">StartGraphic</reimplements>
         <param>
           <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
           <declname>object</declname>
         </param>
         <param>
-          <type>std::string</type>
+          <type>const std::string &amp;</type>
           <declname>gClass</declname>
         </param>
         <param>
-          <type>std::string</type>
+          <type>const std::string &amp;</type>
           <declname>gId</declname>
         </param>
         <param>
@@ -887,14 +887,14 @@
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Method for starting and ending a graphic custom graphic that do not correspond to an Object</header>
-      <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a4884673a86680b72d1fbfc64ccc975f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a8fd57d6656b607b95b96739bdfb6a128" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
         <definition>void vrv::SvgDeviceContext::StartCustomGraphic</definition>
-        <argsstring>(std::string name, std::string gClass=&quot;&quot;, std::string gId=&quot;&quot;) override</argsstring>
+        <argsstring>(const std::string &amp;name, std::string gClass=&quot;&quot;, std::string gId=&quot;&quot;) override</argsstring>
         <name>StartCustomGraphic</name>
-        <reimplements refid="classvrv_1_1_device_context_1aab8fc6ed6a6247cbce87fba6e391689b">StartCustomGraphic</reimplements>
+        <reimplements refid="classvrv_1_1_device_context_1ab429e6accdbb87c0a0c7bc088711b6d3">StartCustomGraphic</reimplements>
         <param>
-          <type>std::string</type>
+          <type>const std::string &amp;</type>
           <declname>name</declname>
         </param>
         <param>
@@ -952,7 +952,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="137" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="142" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a4725cccebdad6e2add2b59a9e50a39d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -974,27 +974,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="138" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="143" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Method for starting and ending a text (&lt;tspan&gt;) text graphic</header>
-      <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a0fd35320419f4538134a2fcba62544ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_svg_device_context_1ad4cd0f57880e1d39f4d27f2920855827" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
         <definition>void vrv::SvgDeviceContext::StartTextGraphic</definition>
-        <argsstring>(Object *object, std::string gClass, std::string gId) override</argsstring>
+        <argsstring>(Object *object, const std::string &amp;gClass, const std::string &amp;gId) override</argsstring>
         <name>StartTextGraphic</name>
-        <reimplements refid="classvrv_1_1_device_context_1a4126a3b56d0560415460c58a664e56fd">StartTextGraphic</reimplements>
+        <reimplements refid="classvrv_1_1_device_context_1aa72c2cf73b8c937c87bf56c5b0267e92">StartTextGraphic</reimplements>
         <param>
           <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
           <declname>object</declname>
         </param>
         <param>
-          <type>std::string</type>
+          <type>const std::string &amp;</type>
           <declname>gClass</declname>
         </param>
         <param>
-          <type>std::string</type>
+          <type>const std::string &amp;</type>
           <declname>gId</declname>
         </param>
         <briefdescription>
@@ -1003,7 +1003,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="145" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="150" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a8136fc784d6fb5ae5d1006f55800ee3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1025,7 +1025,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="146" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="151" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1050,7 +1050,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="153" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="158" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1067,7 +1067,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="160" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="165" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1afef3eca51c26e35fe3f72d12e2d43840" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1081,7 +1081,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="161" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="166" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1102,7 +1102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="168" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="173" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1126,7 +1126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="297" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="302" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a5acf2f6b77c54c0ad6dc57f1a6aab206" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1147,7 +1147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="298" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="303" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a396f5dbd47acc0900cc12b6afec02408" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1168,7 +1168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="299" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="304" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -1185,7 +1185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="310" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="310" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="315" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="315" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a09123acea6322a086d28186023186600" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -1199,7 +1199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="315" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="315" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="320" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="320" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a2f1fa4c78eafb0e13e1b7977dc7e0955" prot="private" static="no" mutable="no">
         <type>std::ostringstream</type>
@@ -1212,7 +1212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="321" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="321" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="326" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="326" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1ab1fab10d547c9871ec5dbf3cf769cf3a" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -1225,7 +1225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="323" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="323" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="328" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="328" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a607b8c5c9764ded03c3c4289eee5eb41" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -1238,7 +1238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="324" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="324" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="329" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="329" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1ac6160e09f01b8dc6c63e38436e58cb8f" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -1251,7 +1251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="324" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="324" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="329" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="329" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a7ad99118b49df39db821c7c8589e889c" prot="private" static="no" mutable="no">
         <type>std::set&lt; const <ref refid="classvrv_1_1_glyph" kindref="compound">Glyph</ref> * &gt;</type>
@@ -1264,7 +1264,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="328" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="328" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="333" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="333" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1ab1774bf1ce232d707d57432cf32a552c" prot="private" static="no" mutable="no">
         <type>pugi::xml_document</type>
@@ -1277,7 +1277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="331" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="331" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="336" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="336" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a6bb969dc2bab4b2dc9861377a5924f1f" prot="private" static="no" mutable="no">
         <type>pugi::xml_node</type>
@@ -1290,7 +1290,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="332" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="332" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="337" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="337" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a9b82e2625b53dcd637d53b0b8a397a96" prot="private" static="no" mutable="no">
         <type>pugi::xml_node</type>
@@ -1303,7 +1303,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="333" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="333" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="338" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="338" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a79fab8345d12d615353d646d0fbc4977" prot="private" static="no" mutable="no">
         <type>pugi::xml_node</type>
@@ -1316,7 +1316,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="334" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="334" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="339" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="339" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1ab31fe6357db3d17a24c70852a152aeb9" prot="private" static="no" mutable="no">
         <type>std::list&lt; pugi::xml_node &gt;</type>
@@ -1329,7 +1329,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="335" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="335" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="340" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="340" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a0c4a124f95be1529a2d6392253c70023" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -1342,7 +1342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="338" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="338" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="343" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="343" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a89043a67354672f664125a38335bb1a7" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -1355,7 +1355,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="339" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="339" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="344" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="344" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1aeecbb65f37519370932e63cd3bfffe4b" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -1368,7 +1368,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="341" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="341" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="346" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="346" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a88f621fa5b159ddfc8c5ed63583c0a40" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -1381,7 +1381,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="343" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="343" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="348" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="348" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a2c965223da045c62c00022bdc4bf8995" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -1394,7 +1394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="345" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="345" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="350" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="350" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a1bab58ca676db44ed4bacc143f039311" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -1407,7 +1407,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="347" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="347" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="352" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="352" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a1f6ffea4b845e159ade0bee1128efae2" prot="private" static="no" mutable="no">
         <type>std::multimap&lt; ClassId, std::string &gt;</type>
@@ -1420,7 +1420,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="349" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="349" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="354" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="354" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a4d021b7be99fb6f19e3592761e578b6d" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -1433,7 +1433,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="351" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="351" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="356" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="356" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1ac4284235e0e28ed932cfb8a7bd7fc9e9" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -1446,7 +1446,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="353" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="353" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="358" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="358" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1ad6f5e5e9d2f6a58a113c1ffd4d2beccd" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -1459,7 +1459,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="355" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="355" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="360" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="360" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a95699ee3b09839de430a3c546d03c12f" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -1472,7 +1472,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="357" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="357" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="362" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="362" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_svg_device_context_1a4cc67c7989c254ae30aa2a9955217267" prot="private" static="no" mutable="no">
         <type>option_SMUFLTEXTFONT</type>
@@ -1485,25 +1485,44 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="359" column="26" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="359" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="364" column="26" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="364" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a03350b9424ae910cd43b9e3d413bf380" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_svg_device_context_1aff283d78eb31b531a049107988c1c785" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void vrv::SvgDeviceContext::SetCustomGraphicColor</definition>
+        <argsstring>(const std::string &amp;color) override</argsstring>
+        <name>SetCustomGraphicColor</name>
+        <reimplements refid="classvrv_1_1_device_context_1a135649ef93deb35278b06dbc541b24d5">SetCustomGraphicColor</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Method for changing the color of a custom graphic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="136" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_svg_device_context_1aa978c5f1995e03c72f491407086894eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::SvgDeviceContext::AppendIdAndClass</definition>
-        <argsstring>(std::string gId, std::string baseClass, std::string addedClasses, GraphicID graphicID=PRIMARY)</argsstring>
+        <argsstring>(const std::string &amp;gId, const std::string &amp;baseClass, const std::string &amp;addedClasses, GraphicID graphicID=PRIMARY)</argsstring>
         <name>AppendIdAndClass</name>
         <param>
-          <type>std::string</type>
+          <type>const std::string &amp;</type>
           <declname>gId</declname>
         </param>
         <param>
-          <type>std::string</type>
+          <type>const std::string &amp;</type>
           <declname>baseClass</declname>
         </param>
         <param>
-          <type>std::string</type>
+          <type>const std::string &amp;</type>
           <declname>addedClasses</declname>
         </param>
         <param>
@@ -1518,7 +1537,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="174" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="179" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a2f56ce603bd94fea5f23d21fa7117799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1536,7 +1555,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="180" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="185" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a9982cebfe646f247292b295840b7bb94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -1551,7 +1570,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="185" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="185" bodyend="185"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="190" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="190" bodyend="190"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a57ff509fb8c71c3fd48092ba269cc159" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1569,7 +1588,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="190" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="190" bodyend="190"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="195" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="195" bodyend="195"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a8b65f0e3f8f263b8c2d241e602c085f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1586,7 +1605,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="192" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="192" bodyend="192"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="197" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="197" bodyend="197"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1aa924b39defc555046d658c2abe70d0d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -1599,7 +1618,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="193" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="193" bodyend="193"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="198" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="198" bodyend="198"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1ae59f5620c868167fef4915c0dfe30618" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1617,7 +1636,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="198" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="198" bodyend="198"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="203" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="203" bodyend="203"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a257b967c96a5cb94022707269a92e2f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1635,7 +1654,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="203" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="203" bodyend="203"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="208" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="208" bodyend="208"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1adc6379479221d18e869b45fe29c563fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1653,7 +1672,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="208" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="208" bodyend="208"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="213" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="213" bodyend="213"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a28e178314d34a9d0876b23aa9972067c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1671,7 +1690,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="213" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="213" bodyend="213"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="218" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="218" bodyend="218"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1aab1bed2bb0017a81a2feb4682c95c93c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1689,7 +1708,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="218" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="218" bodyend="218"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="223" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="223" bodyend="223"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1aabe3f920bbeacd0463372165d9f6a7e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1707,15 +1726,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="223" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="223" bodyend="223"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="228" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="228" bodyend="228"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_svg_device_context_1aa908539e4a0e5fe193b3aa47d639cda7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a25f3ff45496487556c367df1f167819c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::SvgDeviceContext::SetCss</definition>
-        <argsstring>(std::string css)</argsstring>
+        <argsstring>(const std::string &amp;css)</argsstring>
         <name>SetCss</name>
         <param>
-          <type>std::string</type>
+          <type>const std::string &amp;</type>
           <declname>css</declname>
         </param>
         <briefdescription>
@@ -1725,7 +1744,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="228" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="228" bodyend="228"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="233" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="233" bodyend="233"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1aa8aeaa9724dec8881fb302854c98b519" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1743,7 +1762,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="234" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="234" bodyend="242"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="239" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="239" bodyend="247"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a278107f59bd0aa308352e1319fa05161" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1761,7 +1780,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="247" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="247" bodyend="247"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="252" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="252" bodyend="252"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -1786,7 +1805,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="254" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="259" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a9c5ad4036cfe9cefc1e9cedd34eefd96" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1808,7 +1827,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="259" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="264" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1ad54ccf427dc297c450a39ae1bbf3ddf4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1838,7 +1857,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="264" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="269" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a7abe1801d138c3b4c28bf0df55c27f1c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1852,7 +1871,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="269" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="269" bodyend="269"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="274" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="274" bodyend="274"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1acd44e950a2c3446f70a4a13cc90eb17d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1866,7 +1885,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="274" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="274" bodyend="274"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="279" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="279" bodyend="279"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1aadb63bf11317e6153369ef3baffc8df6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1888,7 +1907,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="279" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="284" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a3e68dbf24a6bf3cbb8abafca27d8119e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1907,7 +1926,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="285" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="290" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a35c5c359ed81608d498925ce4a5e43a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1923,7 +1942,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="287" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="292" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a7a542abbefc49378c39eaa80ac4ce150" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1940,7 +1959,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="289" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="294" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_svg_device_context_1a1f95cd2ecaf74197c2c254e71e5b04d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>pugi::xml_node</type>
@@ -1957,7 +1976,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="291" column="20"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="296" column="20"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -2024,12 +2043,12 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="41" column="44" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="41" bodyend="360"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" line="41" column="44" bodyfile="/home/runner/work/verovio/verovio/include/vrv/svgdevicecontext.h" bodystart="41" bodyend="365"/>
     <listofallmembers>
       <member refid="classvrv_1_1_svg_device_context_1a1f95cd2ecaf74197c2c254e71e5b04d6" prot="private" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>AddChild</name></member>
       <member refid="classvrv_1_1_svg_device_context_1a1104b099bf2419013d2c790e0e4ac292" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>AddDescription</name></member>
       <member refid="classvrv_1_1_svg_device_context_1a2f56ce603bd94fea5f23d21fa7117799" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>AppendAdditionalAttributes</name></member>
-      <member refid="classvrv_1_1_svg_device_context_1a03350b9424ae910cd43b9e3d413bf380" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>AppendIdAndClass</name></member>
+      <member refid="classvrv_1_1_svg_device_context_1aa978c5f1995e03c72f491407086894eb" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>AppendIdAndClass</name></member>
       <member refid="classvrv_1_1_svg_device_context_1a396f5dbd47acc0900cc12b6afec02408" prot="private" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>AppendStrokeDashArray</name></member>
       <member refid="classvrv_1_1_svg_device_context_1ae8ccd1ac1be92568a27e76a4c1e3e5ac" prot="private" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>AppendStrokeLineCap</name></member>
       <member refid="classvrv_1_1_svg_device_context_1a5acf2f6b77c54c0ad6dc57f1a6aab206" prot="private" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>AppendStrokeLineJoin</name></member>
@@ -2135,7 +2154,8 @@
       <member refid="classvrv_1_1_device_context_1abd2b6367abef894d3d7490fa2e176296" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SetBaseSize</name></member>
       <member refid="classvrv_1_1_device_context_1af25b0fd0aa20694cfc09b711fca4df5e" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SetBrush</name></member>
       <member refid="classvrv_1_1_device_context_1af91bb7e0130d56330457e6775b33332c" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SetContentHeight</name></member>
-      <member refid="classvrv_1_1_svg_device_context_1aa908539e4a0e5fe193b3aa47d639cda7" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SetCss</name></member>
+      <member refid="classvrv_1_1_svg_device_context_1a25f3ff45496487556c367df1f167819c" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SetCss</name></member>
+      <member refid="classvrv_1_1_svg_device_context_1aff283d78eb31b531a049107988c1c785" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>SetCustomGraphicColor</name></member>
       <member refid="classvrv_1_1_svg_device_context_1a8b65f0e3f8f263b8c2d241e602c085f8" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SetFacsimile</name></member>
       <member refid="classvrv_1_1_device_context_1aa1ca850cc42d7688a1a795194d6a65f9" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SetFont</name></member>
       <member refid="classvrv_1_1_svg_device_context_1aab1bed2bb0017a81a2feb4682c95c93c" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SetFormatRaw</name></member>
@@ -2155,11 +2175,11 @@
       <member refid="classvrv_1_1_svg_device_context_1a808bd2c543af0b56bc0ab0742c32e5db" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>SetTextForeground</name></member>
       <member refid="classvrv_1_1_device_context_1a667b03b2f73ad526b6eca886a06a27a1" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SetUserScale</name></member>
       <member refid="classvrv_1_1_device_context_1a60ab4809a1030d0445c6998daf06efcd" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SetWidth</name></member>
-      <member refid="classvrv_1_1_svg_device_context_1a4884673a86680b72d1fbfc64ccc975f6" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>StartCustomGraphic</name></member>
-      <member refid="classvrv_1_1_svg_device_context_1af305cf134a1d606ff07df25acf224edd" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>StartGraphic</name></member>
+      <member refid="classvrv_1_1_svg_device_context_1a8fd57d6656b607b95b96739bdfb6a128" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>StartCustomGraphic</name></member>
+      <member refid="classvrv_1_1_svg_device_context_1af004f015646e8aaeb637504b932cf0cd" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>StartGraphic</name></member>
       <member refid="classvrv_1_1_svg_device_context_1a25df7dabeece7afc21b9e35a3ab97710" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>StartPage</name></member>
       <member refid="classvrv_1_1_svg_device_context_1a56a3cfdba6f0b45523557c0d886db23c" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>StartText</name></member>
-      <member refid="classvrv_1_1_svg_device_context_1a0fd35320419f4538134a2fcba62544ea" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>StartTextGraphic</name></member>
+      <member refid="classvrv_1_1_svg_device_context_1ad4cd0f57880e1d39f4d27f2920855827" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>StartTextGraphic</name></member>
       <member refid="classvrv_1_1_svg_device_context_1a323435cc92c74019ffde5bb562ead4c6" prot="public" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>SvgDeviceContext</name></member>
       <member refid="classvrv_1_1_svg_device_context_1a9982cebfe646f247292b295840b7bb94" prot="public" virt="virtual"><scope>vrv::SvgDeviceContext</scope><name>UseGlobalStyling</name></member>
       <member refid="classvrv_1_1_svg_device_context_1a7abe1801d138c3b4c28bf0df55c27f1c" prot="private" virt="non-virtual"><scope>vrv::SvgDeviceContext</scope><name>VrvTextFont</name></member>

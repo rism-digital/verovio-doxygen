@@ -38,7 +38,7 @@ var classvrv_1_1_b_box_device_context =
     [ "SetTextBackground", "classvrv_1_1_b_box_device_context.html#a0e174f13cb062711190ca6654448bc3b", null ],
     [ "SetTextForeground", "classvrv_1_1_b_box_device_context.html#ad2382733ddbfffb90e238a87fc3d6278", null ],
     [ "SetUserScale", "classvrv_1_1_b_box_device_context.html#ab591c1a67038abcf03623c0604dc48bf", null ],
-    [ "StartGraphic", "classvrv_1_1_b_box_device_context.html#a4d310d125bd4f1fd79817abbf6c10c0b", null ],
+    [ "StartGraphic", "classvrv_1_1_b_box_device_context.html#a2747bdbf3367bd2a81fe0859641beacc", null ],
     [ "StartPage", "classvrv_1_1_b_box_device_context.html#a0fffacc5c23f61dcc20fd2ca03495dfc", null ],
     [ "StartText", "classvrv_1_1_b_box_device_context.html#af62809b1cc42bf9b24d9f8e960c1f222", null ],
     [ "UpdateHorizontalValues", "classvrv_1_1_b_box_device_context.html#a41e28126a080ce13fc3c93a91d8120f1", null ],

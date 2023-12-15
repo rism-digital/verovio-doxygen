@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_beam_span_segment.html#a3092cedf4f5d9348ccc736b6192975a2":[1,0,0,61,16],
 "classvrv_1_1_beam_span_segment.html#a397018826d93c7ec54ffea8ffa9efd7a":[1,0,0,61,7],
 "classvrv_1_1_beam_span_segment.html#a4e84b7a56ec2855f07917d57042a1313":[1,0,0,61,17],
 "classvrv_1_1_beam_span_segment.html#a4ef62758ae8c5e8fb47ee81d02c6780f":[1,0,0,61,6],
@@ -178,8 +179,11 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_caesura.html#abdd77406dd80236da807cdff8b7a5d37":[1,0,0,70,2],
 "classvrv_1_1_caesura.html#ae43f9bb9361c5794d660ccdc198c8470":[1,0,0,70,11],
 "classvrv_1_1_calc_alignment_pitch_pos_functor.html":[1,0,0,71],
+"classvrv_1_1_calc_alignment_pitch_pos_functor.html#a1ba75e41c089671ab12d6ca4a2f08f9c":[1,0,0,71,5],
+"classvrv_1_1_calc_alignment_pitch_pos_functor.html#a42b143e72c91e7b809c84f0822e84c01":[1,0,0,71,4],
 "classvrv_1_1_calc_alignment_pitch_pos_functor.html#a977e7a33f22e851cd69a3400251c6860":[1,0,0,71,3],
 "classvrv_1_1_calc_alignment_pitch_pos_functor.html#ad3af020184479c428b9055dfb376a5d6":[1,0,0,71,1],
+"classvrv_1_1_calc_alignment_pitch_pos_functor.html#ad426488a3d5a751b628418692c017335":[1,0,0,71,6],
 "classvrv_1_1_calc_alignment_pitch_pos_functor.html#adeb42c0008ca535dd8fef470541d0c72":[1,0,0,71,2],
 "classvrv_1_1_calc_alignment_pitch_pos_functor.html#aea4fa3f9ac4a26b8816e6f333a5c4ea5":[1,0,0,71,0],
 "classvrv_1_1_calc_alignment_x_pos_functor.html":[1,0,0,72],
@@ -245,9 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_calc_stem_functor.html#a4a8759b49785aa38a119bd4bab3388f9":[1,0,0,81,6],
 "classvrv_1_1_calc_stem_functor.html#a58120d104ffe3ff0203ef285dc1b6b6d":[1,0,0,81,9],
 "classvrv_1_1_calc_stem_functor.html#a5b8ec8f840187dce0507c516251d8e44":[1,0,0,81,7],
-"classvrv_1_1_calc_stem_functor.html#a841f4524ba6fdf7f2fe6578f3813e412":[1,0,0,81,11],
-"classvrv_1_1_calc_stem_functor.html#a8d5c12f4fd4f7f65b6942520051d23c0":[1,0,0,81,1],
-"classvrv_1_1_calc_stem_functor.html#a9f31ac40198128f20f8d6b9a6ff0314e":[1,0,0,81,8],
-"classvrv_1_1_calc_stem_functor.html#aa6f358c3b664d1f396917ac387951805":[1,0,0,81,4],
-"classvrv_1_1_calc_stem_functor.html#ab8b666c1d058869bdf0c57da50d26603":[1,0,0,81,3]
+"classvrv_1_1_calc_stem_functor.html#a841f4524ba6fdf7f2fe6578f3813e412":[1,0,0,81,11]
 };

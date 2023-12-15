@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['justifyhorizontally_2104',['JustifyHorizontally',['../classvrv_1_1_page.html#a01e27bb8082d59453406dd7848a8d1b2',1,'vrv::Page']]],
-  ['justifyvertically_2105',['JustifyVertically',['../classvrv_1_1_page.html#a677cbec6a571326d624fe812a0c432fa',1,'vrv::Page']]]
+  ['justifyhorizontally_2117',['JustifyHorizontally',['../classvrv_1_1_page.html#a01e27bb8082d59453406dd7848a8d1b2',1,'vrv::Page']]],
+  ['justifyvertically_2118',['JustifyVertically',['../classvrv_1_1_page.html#a677cbec6a571326d624fe812a0c432fa',1,'vrv::Page']]]
 ];
