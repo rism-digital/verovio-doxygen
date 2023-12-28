@@ -1,5 +1,12 @@
 var NAVTREEINDEX14 =
 {
+"classvrv_1_1_justify_x_functor.html#aeb5bed7c3faab04847ee150bfc518b6d":[1,0,0,201,3],
+"classvrv_1_1_justify_y_adjust_cross_staff_functor.html":[1,0,0,202],
+"classvrv_1_1_justify_y_adjust_cross_staff_functor.html#a0513b9dc4e7695f7e4fd2686121bdb9f":[1,0,0,202,2],
+"classvrv_1_1_justify_y_adjust_cross_staff_functor.html#a46d4cc57245e5c42df3431f7f88103cd":[1,0,0,202,4],
+"classvrv_1_1_justify_y_adjust_cross_staff_functor.html#a8ceb29707f915f275292df3d1e1e76f3":[1,0,0,202,1],
+"classvrv_1_1_justify_y_adjust_cross_staff_functor.html#ac08df5fe762747d2d7f90c06132e4dee":[1,0,0,202,3],
+"classvrv_1_1_justify_y_adjust_cross_staff_functor.html#ae4c185e580c4ce73e1e5df272500d8ad":[1,0,0,202,0],
 "classvrv_1_1_justify_y_functor.html":[1,0,0,203],
 "classvrv_1_1_justify_y_functor.html#a03558968e94fb6923ddb5bc92a36de3f":[1,0,0,203,2],
 "classvrv_1_1_justify_y_functor.html#a0fab494b3c5a7dfb7716cc9a70c318d7":[1,0,0,203,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX14 =
 "classvrv_1_1_layer_element.html#af3c196500ca219d904972a85c68b8a40":[1,0,0,211,35],
 "classvrv_1_1_layer_element.html#af61467813ceb6c74c05b55484007c48b":[1,0,0,211,81],
 "classvrv_1_1_layer_element.html#af7dc9beccbdababcc7635ceeea73ad5b":[1,0,0,211,55],
-"classvrv_1_1_layer_element.html#afa714fc21d6337b9f3144741dd95efef":[1,0,0,211,74],
-"classvrv_1_1_layer_element.html#affe0a49e0066adfa5699a73b2033d902":[1,0,0,211,24],
-"classvrv_1_1_layer_elements_in_time_span_functor.html":[1,0,0,212],
-"classvrv_1_1_layer_elements_in_time_span_functor.html#a1a457e0e09486bca5b452bcfc1036a80":[1,0,0,212,1],
-"classvrv_1_1_layer_elements_in_time_span_functor.html#a1e2c973ccba7a05d650fdcdd8517c952":[1,0,0,212,6],
-"classvrv_1_1_layer_elements_in_time_span_functor.html#a1f4f1402ccdfccf2cfbe4955130c3df2":[1,0,0,212,0],
-"classvrv_1_1_layer_elements_in_time_span_functor.html#aaf6b227c60974851694da14882cb615d":[1,0,0,212,5],
-"classvrv_1_1_layer_elements_in_time_span_functor.html#ad1d6e059481cb13ee9418fa3e4a5db65":[1,0,0,212,3]
+"classvrv_1_1_layer_element.html#afa714fc21d6337b9f3144741dd95efef":[1,0,0,211,74]
 };

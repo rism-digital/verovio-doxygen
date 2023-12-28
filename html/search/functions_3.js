@@ -1,7 +1,7 @@
 var searchData=
 [
   ['edit_1724',['Edit',['../classvrv_1_1_toolkit.html#a25adbe86763cca1c51603b9e4c4831f3',1,'vrv::Toolkit']]],
-  ['editinfo_1725',['EditInfo',['../classvrv_1_1_editor_toolkit.html#a1be064ecb6ffea1b27712648a19e1312',1,'vrv::EditorToolkit::EditInfo()'],['../classvrv_1_1_editor_toolkit_c_m_n.html#a8cfefe067438281e92d6e4a3fe92b851',1,'vrv::EditorToolkitCMN::EditInfo()'],['../classvrv_1_1_editor_toolkit_neume.html#af12a007a759c5fbc0d4308d384cf3545',1,'vrv::EditorToolkitNeume::EditInfo()'],['../classvrv_1_1_toolkit.html#a369f22c61679d97bdd05c0689d6f0a44',1,'vrv::Toolkit::EditInfo()']]],
+  ['editinfo_1725',['EditInfo',['../classvrv_1_1_editor_toolkit.html#a1be064ecb6ffea1b27712648a19e1312',1,'vrv::EditorToolkit::EditInfo()'],['../classvrv_1_1_editor_toolkit_c_m_n.html#a8cfefe067438281e92d6e4a3fe92b851',1,'vrv::EditorToolkitCMN::EditInfo()'],['../classvrv_1_1_editor_toolkit_neume.html#a73a7c47fe8d5420da6467592ece61e55',1,'vrv::EditorToolkitNeume::EditInfo()'],['../classvrv_1_1_toolkit.html#a369f22c61679d97bdd05c0689d6f0a44',1,'vrv::Toolkit::EditInfo()']]],
   ['encloses_1726',['Encloses',['../classvrv_1_1_bounding_box.html#a52ac837dc797c5f292c98ddb3f43a098',1,'vrv::BoundingBox']]],
   ['enclosestime_1727',['EnclosesTime',['../classvrv_1_1_measure.html#a7fe08d9e1f4a7ee4f783b2b389553b83',1,'vrv::Measure']]],
   ['estimatecurveparamforcontrolpoints_1728',['EstimateCurveParamForControlPoints',['../classvrv_1_1_bezier_curve.html#af4300b38b4151de20a8a733db8a36a6c',1,'vrv::BezierCurve']]],

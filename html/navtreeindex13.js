@@ -1,5 +1,12 @@
 var NAVTREEINDEX13 =
 {
+"classvrv_1_1_humdrum_input.html#abe3fb60c7c5f6bc4d1a6457834988682":[1,0,0,184,278],
+"classvrv_1_1_humdrum_input.html#abe5d63a645ca8dffbede62d5a5d99d21":[1,0,0,184,120],
+"classvrv_1_1_humdrum_input.html#abe8d24d13c4053e3f35a4bb445ace325":[1,0,0,184,309],
+"classvrv_1_1_humdrum_input.html#abf1a66b55b253bd54a2261984f4ea7a0":[1,0,0,184,187],
+"classvrv_1_1_humdrum_input.html#ac09b20d8362f4bdf1355b8fa274b1da8":[1,0,0,184,213],
+"classvrv_1_1_humdrum_input.html#ac1c149b18e2179b1bf9678174dbc5a68":[1,0,0,184,238],
+"classvrv_1_1_humdrum_input.html#ac24957f737680b8fa740b76a82ac2a2b":[1,0,0,184,161],
 "classvrv_1_1_humdrum_input.html#ac25d5bed24d395280690f78360f04db8":[1,0,0,184,144],
 "classvrv_1_1_humdrum_input.html#ac262dc53f26653467f353670f6151838":[1,0,0,184,62],
 "classvrv_1_1_humdrum_input.html#ac302a2361bfa6e01b24357ea163e0bf5":[1,0,0,184,218],
@@ -242,12 +249,5 @@ var NAVTREEINDEX13 =
 "classvrv_1_1_justify_x_functor.html#a9ee93b64645821328b3247efcd719142":[1,0,0,201,9],
 "classvrv_1_1_justify_x_functor.html#ac005306d8a167867783af6e7e2d96840":[1,0,0,201,2],
 "classvrv_1_1_justify_x_functor.html#ac2484be752bdc129fda250aec7b4e207":[1,0,0,201,1],
-"classvrv_1_1_justify_x_functor.html#accc30c508e40a1ac6da22761a94c82cb":[1,0,0,201,0],
-"classvrv_1_1_justify_x_functor.html#aeb5bed7c3faab04847ee150bfc518b6d":[1,0,0,201,3],
-"classvrv_1_1_justify_y_adjust_cross_staff_functor.html":[1,0,0,202],
-"classvrv_1_1_justify_y_adjust_cross_staff_functor.html#a0513b9dc4e7695f7e4fd2686121bdb9f":[1,0,0,202,2],
-"classvrv_1_1_justify_y_adjust_cross_staff_functor.html#a46d4cc57245e5c42df3431f7f88103cd":[1,0,0,202,4],
-"classvrv_1_1_justify_y_adjust_cross_staff_functor.html#a8ceb29707f915f275292df3d1e1e76f3":[1,0,0,202,1],
-"classvrv_1_1_justify_y_adjust_cross_staff_functor.html#ac08df5fe762747d2d7f90c06132e4dee":[1,0,0,202,3],
-"classvrv_1_1_justify_y_adjust_cross_staff_functor.html#ae4c185e580c4ce73e1e5df272500d8ad":[1,0,0,202,0]
+"classvrv_1_1_justify_x_functor.html#accc30c508e40a1ac6da22761a94c82cb":[1,0,0,201,0]
 };

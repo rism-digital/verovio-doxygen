@@ -2270,6 +2270,10 @@
     <member refid="classvrv_1_1_doc_1abd23ea24fb7fe91e7646599b2e2fc0ec" kind="function"><name>GetResourcesForModification</name></member>
     <member refid="classvrv_1_1_doc_1a213c6fa5fa357db062f4b86665689e44" kind="function"><name>GetType</name></member>
     <member refid="classvrv_1_1_doc_1a37e132213aabf855ee05e8c64488f474" kind="function"><name>SetType</name></member>
+    <member refid="classvrv_1_1_doc_1a56ebb77f14a46a735001ce2d595d6ad4" kind="function"><name>IsFacs</name></member>
+    <member refid="classvrv_1_1_doc_1a3e59739f177a87b1e5659ef73d26005d" kind="function"><name>IsRaw</name></member>
+    <member refid="classvrv_1_1_doc_1ad3059fae3a4106334e0e788da0f0176f" kind="function"><name>IsRendering</name></member>
+    <member refid="classvrv_1_1_doc_1aead4e3b9f87eeb7e63f7ae6d903591d7" kind="function"><name>IsTranscription</name></member>
     <member refid="classvrv_1_1_doc_1abe3b780b5309b75326beac396cc5677c" kind="function"><name>GetPages</name></member>
     <member refid="classvrv_1_1_doc_1ab4055d376f01510632673d6e71046717" kind="function"><name>GetPages</name></member>
     <member refid="classvrv_1_1_doc_1ae6c98db85d71601a7c52a41d43687828" kind="function"><name>GetFirstScoreDef</name></member>
@@ -2614,6 +2618,7 @@
     <member refid="classvrv_1_1_editor_toolkit_neume_1a0b73aa2dee1a259468501b2b2da92999" kind="function"><name>Drag</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a6d156d6f2049413ff717e725cc08600c" kind="function"><name>Insert</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a9f03325dc1e673997e382671f7e3732f" kind="function"><name>InsertToSyllable</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a6802f821cbad2b679c77dac9814ff48d" kind="function"><name>MatchHeight</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a7e6468beb76efc0460ee6f2de23494dc" kind="function"><name>Merge</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a06e2228a675d2ff46c60837784083cf9" kind="function"><name>MoveOutsideSyllable</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a485218816f0b1b8fc1a5faf96830cba6" kind="function"><name>Set</name></member>
@@ -2624,6 +2629,7 @@
     <member refid="classvrv_1_1_editor_toolkit_neume_1a8e122365fe556945a2781d7d67555b61" kind="function"><name>Remove</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1adfbae0984c8091483137b651fcee28b5" kind="function"><name>Resize</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a7a00393667ae8707ece682471426c670" kind="function"><name>Group</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a611131137c5e9d683b93de47ba7d609e" kind="function"><name>UnlinkSyllable</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a9f7bd667fcec3c23690bd5833b29ada1" kind="function"><name>Ungroup</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a2392e8f4676d39017db3c9310bea7ba3" kind="function"><name>ChangeGroup</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a6d87b50ae8ac3a2cffb1c537fe810cd7" kind="function"><name>ToggleLigature</name></member>
@@ -2635,6 +2641,7 @@
     <member refid="classvrv_1_1_editor_toolkit_neume_1a6b6a0867882e6273afbb2ce194849469" kind="function"><name>ParseInsertAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1ac7e46c6268edd3fd3c70b1c77943cec2" kind="function"><name>ParseInsertAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a8feb9cf29fd94f9bde834f7356a63905" kind="function"><name>ParseInsertToSyllableAction</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a350af142abdb9fb3effedbfe5d9a0fe0" kind="function"><name>ParseMatchHeightAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a7a5a0f33afee482d31bc0ec705204533" kind="function"><name>ParseMergeAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a3ce74a550bc674ad0af3664f8402dea4" kind="function"><name>ParseMoveOutsideSyllableAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1ac6b52c8a69a757f30c5c348484053794" kind="function"><name>ParseSetAction</name></member>
@@ -2653,10 +2660,9 @@
     <member refid="classvrv_1_1_editor_toolkit_neume_1a75e0993335fb5123f4cb4c8c3d8ec068" kind="function"><name>ParseChangeStaffToAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1aa32bf021d3d31ec9ecb894a12a2ea729" kind="function"><name>AdjustPitchFromPosition</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a3d9c3e60ef3afb34b13c0123dd9d3beb" kind="function"><name>AdjustClefLineFromPosition</name></member>
-    <member refid="classvrv_1_1_editor_toolkit_neume_1a98a095f4844ddb54c7fde556d6b1896b" kind="variable"><name>m_infoObject</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1ad240f83d46bf3a95a0232403afd37f48" kind="function"><name>EditorToolkitNeume</name></member>
-    <member refid="classvrv_1_1_editor_toolkit_neume_1a52b69805e71ae4e855dba90cdd1cadee" kind="function"><name>ParseEditorAction</name></member>
-    <member refid="classvrv_1_1_editor_toolkit_neume_1af12a007a759c5fbc0d4308d384cf3545" kind="function"><name>EditInfo</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a2308ad0010cf842ec7c9e86252f15850" kind="function"><name>ParseEditorAction</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_neume_1a73a7c47fe8d5420da6467592ece61e55" kind="function"><name>EditInfo</name></member>
   </compound>
   <compound refid="classvrv_1_1_ending" kind="class"><name>vrv::Ending</name>
     <member refid="classvrv_1_1_ending_1a0e07ec0f722dda2d1b773ace3b3ffff6" kind="function"><name>Ending</name></member>

@@ -1,5 +1,12 @@
 var NAVTREEINDEX9 =
 {
+"classvrv_1_1_find_element_in_layer_staff_def_functor.html#af699e61b5e622b975175d22d7e846708":[1,0,0,154,1],
+"classvrv_1_1_find_extreme_by_comparison_functor.html":[1,0,0,155],
+"classvrv_1_1_find_extreme_by_comparison_functor.html#a07305b420253a47f68f87105d530c1b2":[1,0,0,155,1],
+"classvrv_1_1_find_extreme_by_comparison_functor.html#a1719cf1e313c792f89c0251a154187bb":[1,0,0,155,3],
+"classvrv_1_1_find_extreme_by_comparison_functor.html#a4fba384b48d621d1e68b98760e2537f6":[1,0,0,155,2],
+"classvrv_1_1_find_extreme_by_comparison_functor.html#a66c9408833123046b05cb45b045baae9":[1,0,0,155,0],
+"classvrv_1_1_find_extreme_by_comparison_functor.html#adb92988e667cdbd0a0ca4950b0579771":[1,0,0,155,4],
 "classvrv_1_1_find_next_child_by_comparison_functor.html":[1,0,0,156],
 "classvrv_1_1_find_next_child_by_comparison_functor.html#a2bd41fd09988619707c7927575d55a92":[1,0,0,156,2],
 "classvrv_1_1_find_next_child_by_comparison_functor.html#a5b337dbb3f0289935b8ecd0811f56ff4":[1,0,0,156,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX9 =
 "classvrv_1_1_functor_interface.html#a240df75dc3b51ecbfad569527491677d":[1,0,0,168,100],
 "classvrv_1_1_functor_interface.html#a251e394d35698c84e0f919afff7775f1":[1,0,0,168,40],
 "classvrv_1_1_functor_interface.html#a25b84db7226ef05edb38fc3ea9e72ee4":[1,0,0,168,244],
-"classvrv_1_1_functor_interface.html#a283168fca7f5d8fbaa74d0639c41077f":[1,0,0,168,226],
-"classvrv_1_1_functor_interface.html#a29326e5060990bc199901b4e826ff097":[1,0,0,168,70],
-"classvrv_1_1_functor_interface.html#a2aaf3310698f614f038a1de7504a9f50":[1,0,0,168,253],
-"classvrv_1_1_functor_interface.html#a2b8ba86b8d2a1b07158b8359f1ec8daf":[1,0,0,168,3],
-"classvrv_1_1_functor_interface.html#a2bb1422481d7d6f9a1f5435f74f481ee":[1,0,0,168,165],
-"classvrv_1_1_functor_interface.html#a2e063dd960cb5beea454430655dd607b":[1,0,0,168,161],
-"classvrv_1_1_functor_interface.html#a2e8293d68c1a95c2921d72143d9c0928":[1,0,0,168,11],
-"classvrv_1_1_functor_interface.html#a30e5038d90ff64059ac6117a9adbc5e1":[1,0,0,168,109]
+"classvrv_1_1_functor_interface.html#a283168fca7f5d8fbaa74d0639c41077f":[1,0,0,168,226]
 };

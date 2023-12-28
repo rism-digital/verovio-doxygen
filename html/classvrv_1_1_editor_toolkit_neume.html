@@ -105,14 +105,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad240f83d46bf3a95a0232403afd37f48"><td class="memItemLeft" align="right" valign="top"><a id="ad240f83d46bf3a95a0232403afd37f48"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EditorToolkitNeume</b> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="el" href="classvrv_1_1_view.html">View</a> *view)</td></tr>
 <tr class="separator:ad240f83d46bf3a95a0232403afd37f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52b69805e71ae4e855dba90cdd1cadee"><td class="memItemLeft" align="right" valign="top"><a id="a52b69805e71ae4e855dba90cdd1cadee"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editor_toolkit_neume.html#a52b69805e71ae4e855dba90cdd1cadee">ParseEditorAction</a> (const std::string &amp;json_editorAction)</td></tr>
-<tr class="memdesc:a52b69805e71ae4e855dba90cdd1cadee"><td class="mdescLeft">&#160;</td><td class="mdescRight">In child classes, this parses the provided editor action and then performs the correct action. <br /></td></tr>
-<tr class="separator:a52b69805e71ae4e855dba90cdd1cadee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af12a007a759c5fbc0d4308d384cf3545"><td class="memItemLeft" align="right" valign="top"><a id="af12a007a759c5fbc0d4308d384cf3545"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editor_toolkit_neume.html#af12a007a759c5fbc0d4308d384cf3545">EditInfo</a> ()</td></tr>
-<tr class="memdesc:af12a007a759c5fbc0d4308d384cf3545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information on the last editor function used. <br /></td></tr>
-<tr class="separator:af12a007a759c5fbc0d4308d384cf3545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2308ad0010cf842ec7c9e86252f15850"><td class="memItemLeft" align="right" valign="top"><a id="a2308ad0010cf842ec7c9e86252f15850"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editor_toolkit_neume.html#a2308ad0010cf842ec7c9e86252f15850">ParseEditorAction</a> (const std::string &amp;json_editorAction) override</td></tr>
+<tr class="memdesc:a2308ad0010cf842ec7c9e86252f15850"><td class="mdescLeft">&#160;</td><td class="mdescRight">In child classes, this parses the provided editor action and then performs the correct action. <br /></td></tr>
+<tr class="separator:a2308ad0010cf842ec7c9e86252f15850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a7c47fe8d5420da6467592ece61e55"><td class="memItemLeft" align="right" valign="top"><a id="a73a7c47fe8d5420da6467592ece61e55"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editor_toolkit_neume.html#a73a7c47fe8d5420da6467592ece61e55">EditInfo</a> () override</td></tr>
+<tr class="memdesc:a73a7c47fe8d5420da6467592ece61e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information on the last editor function used. <br /></td></tr>
+<tr class="separator:a73a7c47fe8d5420da6467592ece61e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a43ace3311204fc2ae9adc611b103a947"><td class="memItemLeft" align="right" valign="top"><a id="a43ace3311204fc2ae9adc611b103a947"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editor_toolkit_neume.html#a43ace3311204fc2ae9adc611b103a947">Chain</a> (jsonxx::Array actions)</td></tr>
@@ -130,6 +130,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>Insert</b> (std::stri
 <tr class="memitem:a9f03325dc1e673997e382671f7e3732f"><td class="memItemLeft" align="right" valign="top"><a id="a9f03325dc1e673997e382671f7e3732f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>InsertToSyllable</b> (std::string elementId)</td></tr>
 <tr class="separator:a9f03325dc1e673997e382671f7e3732f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6802f821cbad2b679c77dac9814ff48d"><td class="memItemLeft" align="right" valign="top"><a id="a6802f821cbad2b679c77dac9814ff48d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>MatchHeight</b> (std::string elementId)</td></tr>
+<tr class="separator:a6802f821cbad2b679c77dac9814ff48d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e6468beb76efc0460ee6f2de23494dc"><td class="memItemLeft" align="right" valign="top"><a id="a7e6468beb76efc0460ee6f2de23494dc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Merge</b> (std::vector&lt; std::string &gt; elementIds)</td></tr>
 <tr class="separator:a7e6468beb76efc0460ee6f2de23494dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,6 +163,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>Resize</b> (std::stri
 <tr class="memitem:a7a00393667ae8707ece682471426c670"><td class="memItemLeft" align="right" valign="top"><a id="a7a00393667ae8707ece682471426c670"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Group</b> (std::string groupType, std::vector&lt; std::string &gt; elementIds)</td></tr>
 <tr class="separator:a7a00393667ae8707ece682471426c670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611131137c5e9d683b93de47ba7d609e"><td class="memItemLeft" align="right" valign="top"><a id="a611131137c5e9d683b93de47ba7d609e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnlinkSyllable</b> (<a class="el" href="classvrv_1_1_syllable.html">Syllable</a> *syllable)</td></tr>
+<tr class="separator:a611131137c5e9d683b93de47ba7d609e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f7bd667fcec3c23690bd5833b29ada1"><td class="memItemLeft" align="right" valign="top"><a id="a9f7bd667fcec3c23690bd5833b29ada1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Ungroup</b> (std::string groupType, std::vector&lt; std::string &gt; elementIds)</td></tr>
 <tr class="separator:a9f7bd667fcec3c23690bd5833b29ada1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,6 +208,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ParseInsertAction</b>
 <tr class="memitem:a8feb9cf29fd94f9bde834f7356a63905"><td class="memItemLeft" align="right" valign="top"><a id="a8feb9cf29fd94f9bde834f7356a63905"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ParseInsertToSyllableAction</b> (jsonxx::Object param, std::string *elementId)</td></tr>
 <tr class="separator:a8feb9cf29fd94f9bde834f7356a63905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350af142abdb9fb3effedbfe5d9a0fe0"><td class="memItemLeft" align="right" valign="top"><a id="a350af142abdb9fb3effedbfe5d9a0fe0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ParseMatchHeightAction</b> (jsonxx::Object param, std::string *elementId)</td></tr>
+<tr class="separator:a350af142abdb9fb3effedbfe5d9a0fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a5a0f33afee482d31bc0ec705204533"><td class="memItemLeft" align="right" valign="top"><a id="a7a5a0f33afee482d31bc0ec705204533"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ParseMergeAction</b> (jsonxx::Object param, std::vector&lt; std::string &gt; *elementIds)</td></tr>
 <tr class="separator:a7a5a0f33afee482d31bc0ec705204533"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -281,7 +290,7 @@ jsonxx::Object&#160;</td><td class="memItemRight" valign="bottom"><b>m_editInfo<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_editor_toolkit_neume.html">EditorToolkitNeume</a></li>
-    <li class="footer">Generated on Sat Dec 23 2023 06:08:17 for Verovio by
+    <li class="footer">Generated on Thu Dec 28 2023 12:36:35 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

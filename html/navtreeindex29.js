@@ -1,5 +1,12 @@
 var NAVTREEINDEX29 =
 {
+"functions_u.html":[1,3,0,17],
+"functions_v.html":[1,3,0,18],
+"functions_vars.html":[1,3,2],
+"functions_w.html":[1,3,0,19],
+"functor_8h_source.html":[2,0,98],
+"functorinterface_8h_source.html":[2,0,99],
+"gliss_8h_source.html":[2,0,100],
 "glyph_8h_source.html":[2,0,101],
 "gracegrp_8h_source.html":[2,0,102],
 "graphic_8h_source.html":[2,0,103],
@@ -242,12 +249,5 @@ var NAVTREEINDEX29 =
 "transposefunctor_8h_source.html":[2,0,225],
 "transposition_8h_source.html":[2,0,226],
 "trill_8h_source.html":[2,0,227],
-"tuning_8h_source.html":[2,0,228],
-"tuplet_8h_source.html":[2,0,229],
-"turn_8h_source.html":[2,0,230],
-"unclear_8h_source.html":[2,0,231],
-"verse_8h_source.html":[2,0,232],
-"verticalaligner_8h_source.html":[2,0,233],
-"view_8h_source.html":[2,0,234],
-"vrv_8h_source.html":[2,0,235]
+"tuning_8h_source.html":[2,0,228]
 };
