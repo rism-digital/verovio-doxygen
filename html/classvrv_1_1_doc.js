@@ -33,6 +33,8 @@ var classvrv_1_1_doc =
     [ "GetBottomMargin", "classvrv_1_1_doc.html#a5f09c6986d723456ba22e01f9eaf95f0", null ],
     [ "GetCorrespondingScore", "classvrv_1_1_doc.html#a3cd24fa7b798c6ec77928c0111ae82dc", null ],
     [ "GetCorrespondingScore", "classvrv_1_1_doc.html#abc5fc83e433fc6c2585d54f6e04d4463", null ],
+    [ "GetCorrespondingScore", "classvrv_1_1_doc.html#a1e041c46ec1a54911e2933d27c65f7db", null ],
+    [ "GetCorrespondingScore", "classvrv_1_1_doc.html#a9809059a863cdc93210fd40d56b325c5", null ],
     [ "GetCueScaling", "classvrv_1_1_doc.html#a396a023e43889afb8c83bc368cada12b", null ],
     [ "GetCueSize", "classvrv_1_1_doc.html#aa31b34923fb0e5b4f062f36f5793a734", null ],
     [ "GetDrawingBarLineWidth", "classvrv_1_1_doc.html#a1a3b982ebffef07e95fdabb6ca473304", null ],

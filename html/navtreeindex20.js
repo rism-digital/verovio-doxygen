@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"classvrv_1_1_pb.html#a4f6dda7ce864d3ae9ce88ec48619b7fd":[1,0,0,275,6],
+"classvrv_1_1_pb.html#a645e255124de746a391f4f8d90d0972d":[1,0,0,275,3],
 "classvrv_1_1_pb.html#a85037abe7f77e54e3b05acfe21367a97":[1,0,0,275,5],
 "classvrv_1_1_pb.html#aa745f643df6d504e9149d8d16e7b2975":[1,0,0,275,4],
 "classvrv_1_1_pb.html#aafe79a84e4fffd8e41e14f6b2c24a5f6":[1,0,0,275,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "classvrv_1_1_prepare_lyrics_functor.html#abde348ccd73716e73dfa2b4822e1e228":[1,0,0,299,4],
 "classvrv_1_1_prepare_lyrics_functor.html#ad8b7b18defc8e655b3498dc5e8ba3f28":[1,0,0,299,0],
 "classvrv_1_1_prepare_lyrics_functor.html#addd66405ebacd115f798ce31ba7d995c":[1,0,0,299,1],
-"classvrv_1_1_prepare_lyrics_functor.html#aee1630622fb9dc5e0e226e3d1fd20b44":[1,0,0,299,6],
-"classvrv_1_1_prepare_milestones_functor.html":[1,0,0,300],
-"classvrv_1_1_prepare_milestones_functor.html#a00559812a0dda3d4d0c27c42fbdb800a":[1,0,0,300,5]
+"classvrv_1_1_prepare_lyrics_functor.html#aee1630622fb9dc5e0e226e3d1fd20b44":[1,0,0,299,6]
 };
