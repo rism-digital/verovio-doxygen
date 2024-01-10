@@ -2420,9 +2420,12 @@
     <member refid="classvrv_1_1_doc_1a1f5b58cd73b6f04ce22ebf231c69db32" kind="function"><name>ConvertToPageBasedDoc</name></member>
     <member refid="classvrv_1_1_doc_1a4dbe6bc0e603e609a9ff44138e84f3e1" kind="function"><name>ConvertToCastOffMensuralDoc</name></member>
     <member refid="classvrv_1_1_doc_1a2bb7a46eafe2a2b41dc4adaec8110b19" kind="function"><name>ConvertMarkupDoc</name></member>
+    <member refid="classvrv_1_1_doc_1a4afeaed0111a1192a5a03569008807ff" kind="function"><name>SyncFromFacsimileDoc</name></member>
+    <member refid="classvrv_1_1_doc_1ad3e688aa30bc1ff3b9c7381bc4bd7a83" kind="function"><name>SyncToFacsimileDoc</name></member>
     <member refid="classvrv_1_1_doc_1a303c7a587723539a78b83f642111f2a1" kind="function"><name>TransposeDoc</name></member>
     <member refid="classvrv_1_1_doc_1a69237ae834ae8fc6fc6b1255f0b1e2cc" kind="function"><name>ExpandExpansions</name></member>
     <member refid="classvrv_1_1_doc_1a136fd09720322fbf70dd48fbf026c9f4" kind="function"><name>SetDrawingPage</name></member>
+    <member refid="classvrv_1_1_doc_1a1fc55e74595046fc57621f3a0ad52788" kind="function"><name>UpdatePageDrawingSizes</name></member>
     <member refid="classvrv_1_1_doc_1a05086f8905312e8fa756236931155a9e" kind="function"><name>ResetDataPage</name></member>
     <member refid="classvrv_1_1_doc_1a71b430700d764832659b7aff1f78a8bd" kind="function"><name>GetAdjustedDrawingPageWidth</name></member>
     <member refid="classvrv_1_1_doc_1a301056a989b90a286ec1f3e745226744" kind="function"><name>GetAdjustedDrawingPageHeight</name></member>
@@ -2747,7 +2750,10 @@
     <member refid="classvrv_1_1_facsimile_interface_1abdcdd8ff1cefaa17fab33ee7c78a2ec2" kind="function"><name>IsInterface</name></member>
     <member refid="classvrv_1_1_facsimile_interface_1a3ca53c1bfe956ae1bfbb0a77f3c672b0" kind="function"><name>GetZone</name></member>
     <member refid="classvrv_1_1_facsimile_interface_1aeb29928fb7cd1c29db2026bfb2b49a24" kind="function"><name>GetZone</name></member>
+    <member refid="classvrv_1_1_facsimile_interface_1a10d9e160f567f038e3259cfa4cf577e2" kind="function"><name>InterfacePrepareFacsimile</name></member>
+    <member refid="classvrv_1_1_facsimile_interface_1a91cab6a443ade870428a191831c1e4be" kind="function"><name>InterfaceResetData</name></member>
     <member refid="classvrv_1_1_facsimile_interface_1a0aa0b268a7f7040e9c7fa2df38c4210c" kind="variable"><name>m_zone</name></member>
+    <member refid="classvrv_1_1_facsimile_interface_1a276dfbfdadb3b65f68f9668dd7440280" kind="variable"><name>m_surface</name></member>
     <member refid="classvrv_1_1_facsimile_interface_1a3b371e4cbee5acbf94a885a2011a081e" kind="function"><name>GetDrawingX</name></member>
     <member refid="classvrv_1_1_facsimile_interface_1ab83684a3b022a92f51a1aa64b586ebfc" kind="function"><name>GetDrawingY</name></member>
     <member refid="classvrv_1_1_facsimile_interface_1a980c5d6d8bc03897efdd86bdb94fd593" kind="function"><name>GetWidth</name></member>
@@ -4681,7 +4687,7 @@
     <member refid="classvrv_1_1_layer_element_1a17098be42f0295426372afa9d28e9134" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_layer_element_1aa8c5d08a24c95ccc043a2f92973227eb" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_layer_element_1a6c4092433a79c197ead50a6baa745ae8" kind="function"><name>AcceptEnd</name></member>
-    <member refid="classvrv_1_1_layer_element_1a66bf79ef721a113ab2e5ff354313fe2e" kind="variable"><name>m_xAbs</name></member>
+    <member refid="classvrv_1_1_layer_element_1a8826af23d498e796f12c455bb425d487" kind="variable"><name>m_drawingFacsX</name></member>
     <member refid="classvrv_1_1_layer_element_1af61467813ceb6c74c05b55484007c48b" kind="variable"><name>m_crossStaff</name></member>
     <member refid="classvrv_1_1_layer_element_1a93464f5da77d7acbf8565d6a70b47e91" kind="variable"><name>m_crossLayer</name></member>
     <member refid="classvrv_1_1_layer_element_1aad5569b5dbc43a1fcfba069c58e18ada" kind="variable"><name>m_alignment</name></member>
@@ -4868,6 +4874,8 @@
     <member refid="classvrv_1_1_measure_1a3ded201d3376ae72e58f31caf84f878c" kind="function"><name>Clone</name></member>
     <member refid="classvrv_1_1_measure_1abea90dea35729eb5ce1fd1f1aad9dcda" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_measure_1ac5786cb3e0aedb69fb45211ab763fe09" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_measure_1aa89e1c930b0e9d7802d1e13310a784f2" kind="function"><name>GetFacsimileInterface</name></member>
+    <member refid="classvrv_1_1_measure_1a6bf60d684aa4101fce7d34f5b30895aa" kind="function"><name>GetFacsimileInterface</name></member>
     <member refid="classvrv_1_1_measure_1a3bf495c89cefc76c00bb002facefdf54" kind="function"><name>GetIndex</name></member>
     <member refid="classvrv_1_1_measure_1a21014d673e2ecd0e64aa33fe010ee133" kind="function"><name>SetIndex</name></member>
     <member refid="classvrv_1_1_measure_1ae13e1598a773c355074d7e1d72cc8ceb" kind="function"><name>GetDrawingXRel</name></member>
@@ -4922,8 +4930,8 @@
     <member refid="classvrv_1_1_measure_1af0fe3249afcd491c2c1b17a59705dc97" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_measure_1a53f312b4a6e1d33a3398caad5d7313ca" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_measure_1a24fe194e4adc48d11911ef79afd68bcb" kind="function"><name>AcceptEnd</name></member>
-    <member refid="classvrv_1_1_measure_1a01d1317a4566fcddf833550820277d91" kind="variable"><name>m_xAbs</name></member>
-    <member refid="classvrv_1_1_measure_1ac8572f7f5fc2b99d09d5f4fc5e3e42e2" kind="variable"><name>m_xAbs2</name></member>
+    <member refid="classvrv_1_1_measure_1a74bf7ce62a9f5f49985336483516d8a8" kind="variable"><name>m_drawingFacsX1</name></member>
+    <member refid="classvrv_1_1_measure_1a1824e60c99ec4a759b89cd4b14b6278a" kind="variable"><name>m_drawingFacsX2</name></member>
     <member refid="classvrv_1_1_measure_1a0e9b8f947c5c738f51e30de4d7bf94bf" kind="variable"><name>m_cachedOverflow</name></member>
     <member refid="classvrv_1_1_measure_1a26a94118f64e123ae7d15800b0b128bf" kind="variable"><name>m_cachedWidth</name></member>
     <member refid="classvrv_1_1_measure_1af78ac7ac33707d073e4355dea1a6097f" kind="variable"><name>m_leftBarLine</name></member>
@@ -6832,6 +6840,8 @@
     <member refid="classvrv_1_1_pb_1a4f6dda7ce864d3ae9ce88ec48619b7fd" kind="function"><name>Clone</name></member>
     <member refid="classvrv_1_1_pb_1aafe79a84e4fffd8e41e14f6b2c24a5f6" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_pb_1ae8606f593b0504d05cb7b122e0f5a966" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_pb_1a60ac85ec39bda060fd92b2fd214ffabe" kind="function"><name>GetFacsimileInterface</name></member>
+    <member refid="classvrv_1_1_pb_1a6253da890e8ca5373025478a86c474a3" kind="function"><name>GetFacsimileInterface</name></member>
     <member refid="classvrv_1_1_pb_1a645e255124de746a391f4f8d90d0972d" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_pb_1abbad0bd44493d3a46d83ce45b808a9b8" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_pb_1a85037abe7f77e54e3b05acfe21367a97" kind="function"><name>AcceptEnd</name></member>
@@ -7085,6 +7095,7 @@
     <member refid="classvrv_1_1_prepare_facsimile_functor_1a7f994676cb761468e8b51d6464cdcf3d" kind="variable"><name>m_zonelessSyls</name></member>
     <member refid="classvrv_1_1_prepare_facsimile_functor_1a88d24b18f1426f9b25d19bacad185dba" kind="function"><name>ImplementsEndInterface</name></member>
     <member refid="classvrv_1_1_prepare_facsimile_functor_1a15c246258c28c3aa4c1d7131d2e60a96" kind="function"><name>GetZonelessSyls</name></member>
+    <member refid="classvrv_1_1_prepare_facsimile_functor_1a9b90e52251390e6ae87b54cda3db90d9" kind="function"><name>GetFacsimile</name></member>
   </compound>
   <compound refid="classvrv_1_1_prepare_floating_grps_functor" kind="class"><name>vrv::PrepareFloatingGrpsFunctor</name>
     <member refid="classvrv_1_1_prepare_floating_grps_functor_1aa6ae69cd1fd4bbfc81ca2200d2cd1399" kind="function"><name>PrepareFloatingGrpsFunctor</name></member>
@@ -7377,6 +7388,7 @@
     <member refid="classvrv_1_1_reset_data_functor_1a1bb6a832c4ac2487d60268f2d388dbde" kind="function"><name>VisitMeasure</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1a3cf66c7d63e8b28a4189a8dbcadacd2d" kind="function"><name>VisitMRest</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1a09dad5f775bbe7baeda902ac2c21fa41" kind="function"><name>VisitNote</name></member>
+    <member refid="classvrv_1_1_reset_data_functor_1a7cabb905452e6f2221d88b2cfc006496" kind="function"><name>VisitObject</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1a53f821d4f14732621644dd5ae7ddc232" kind="function"><name>VisitRepeatMark</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1a61c902ab708a7c4b85cdc54a44de391c" kind="function"><name>VisitRest</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1a2de645de47858f7de1ccbb1c5ddfb064" kind="function"><name>VisitSection</name></member>
@@ -7566,6 +7578,8 @@
     <member refid="classvrv_1_1_sb_1a4c1e504295c595132beb348ef1e540e2" kind="function"><name>Clone</name></member>
     <member refid="classvrv_1_1_sb_1ad4ffff3a5ae69293b99d10687bf8b176" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_sb_1ae6ff67cc02a91e1a4ca3b0238ac1f8d2" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_sb_1ad582e2b68b9510545271b571d660e683" kind="function"><name>GetFacsimileInterface</name></member>
+    <member refid="classvrv_1_1_sb_1a0d04237eaf47a186d960f25bb7b7fe2a" kind="function"><name>GetFacsimileInterface</name></member>
     <member refid="classvrv_1_1_sb_1a4077a217efbe92cf91eb663953f2f559" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_sb_1a364c4eefa71d43435f3ffa77eecc4985" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_sb_1a31a83361f098fed76f761d17c42e205b" kind="function"><name>AcceptEnd</name></member>
@@ -7903,7 +7917,7 @@
     <member refid="classvrv_1_1_staff_1a51a65ab400013ddc21d125a01aa2256e" kind="variable"><name>m_drawingNotationType</name></member>
     <member refid="classvrv_1_1_staff_1af64a2d11ba5b97412094e00d6f908c63" kind="variable"><name>m_drawingStaffSize</name></member>
     <member refid="classvrv_1_1_staff_1a172c03af3f8a3beb704f4bb35a751966" kind="variable"><name>m_timeSpanningElements</name></member>
-    <member refid="classvrv_1_1_staff_1abf3552a9fecc27efcc21fae14cf1836f" kind="variable"><name>m_yAbs</name></member>
+    <member refid="classvrv_1_1_staff_1a427bb15c6479bda6a432dc208d25921e" kind="variable"><name>m_drawingFacsY</name></member>
     <member refid="classvrv_1_1_staff_1a4fcf7b214a32b47b0a8597d8a69089ec" kind="variable"><name>m_drawingStaffDef</name></member>
     <member refid="classvrv_1_1_staff_1a03ed750f41c544c2a808be4016e910c2" kind="variable"><name>m_drawingTuning</name></member>
     <member refid="classvrv_1_1_staff_1ab244485c24f406426dde7064289c23b4" kind="variable"><name>m_staffAlignment</name></member>
@@ -8367,6 +8381,42 @@
     <member refid="classvrv_1_1_symbol_table_1a8171f2ea3aac846927f9926965913556" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_symbol_table_1a4bfecace10cccc9c1c3518fb515f9f13" kind="function"><name>Clone</name></member>
   </compound>
+  <compound refid="classvrv_1_1_sync_from_facsimile_functor" kind="class"><name>vrv::SyncFromFacsimileFunctor</name>
+    <member refid="classvrv_1_1_sync_from_facsimile_functor_1a11266daf470bafa288343af2fd013b4c" kind="function"><name>SyncFromFacsimileFunctor</name></member>
+    <member refid="classvrv_1_1_sync_from_facsimile_functor_1a3f729d591520c74564edaf156f272a29" kind="function"><name>~SyncFromFacsimileFunctor</name></member>
+    <member refid="classvrv_1_1_sync_from_facsimile_functor_1a98f2ba829d7307a0e983f6b06f7d0d05" kind="function"><name>VisitLayerElement</name></member>
+    <member refid="classvrv_1_1_sync_from_facsimile_functor_1a632d56bc28e340196005e4df8e7f8fff" kind="function"><name>VisitMeasure</name></member>
+    <member refid="classvrv_1_1_sync_from_facsimile_functor_1abf6ee794ee9ae85920fed65c1563077c" kind="function"><name>VisitPage</name></member>
+    <member refid="classvrv_1_1_sync_from_facsimile_functor_1a032344b30d23e36b5e8070a24cde698d" kind="function"><name>VisitPb</name></member>
+    <member refid="classvrv_1_1_sync_from_facsimile_functor_1ae34c3568b34bfaa1f8502fcc0a6ce268" kind="function"><name>VisitSb</name></member>
+    <member refid="classvrv_1_1_sync_from_facsimile_functor_1ad759ad8cdd70cf53dff3172206452dea" kind="function"><name>VisitStaff</name></member>
+    <member refid="classvrv_1_1_sync_from_facsimile_functor_1a44634be8ea9969256580ac1519ab6cf8" kind="function"><name>VisitSystem</name></member>
+    <member refid="classvrv_1_1_sync_from_facsimile_functor_1a3176ab64e7b04fe1ec8427f0d10e1101" kind="variable"><name>m_doc</name></member>
+    <member refid="classvrv_1_1_sync_from_facsimile_functor_1ae62c701dd227420b780dc8594602e14b" kind="variable"><name>m_view</name></member>
+    <member refid="classvrv_1_1_sync_from_facsimile_functor_1a20a5dd0ccf258f753a0be1ac98a2065e" kind="variable"><name>m_currentPage</name></member>
+    <member refid="classvrv_1_1_sync_from_facsimile_functor_1a205e077952977d75747964fc1dc27fe9" kind="variable"><name>m_currentSystem</name></member>
+    <member refid="classvrv_1_1_sync_from_facsimile_functor_1afa89f15db501550a09e82fb03c5802be" kind="function"><name>ImplementsEndInterface</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_sync_to_facsimile_functor" kind="class"><name>vrv::SyncToFacsimileFunctor</name>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1adf47f14d0e5823e4805056174a8fb91a" kind="function"><name>SyncToFacsimileFunctor</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1a66f9832f880c36c554603d264664209f" kind="function"><name>~SyncToFacsimileFunctor</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1ab70005d1eb4badc6679547845996b9c7" kind="function"><name>VisitLayerElement</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1ab4b7b7eaf14e5daedd5694834ad7a6e8" kind="function"><name>VisitMeasure</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1ae5252c1c7037cf794fb7204ac3261d07" kind="function"><name>VisitPage</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1a8585c0c7a623f3235da6179eb64bbe4d" kind="function"><name>VisitPb</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1a7e45a7bbfd297438564a12a5333a206b" kind="function"><name>VisitSb</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1a15bac66343d900209b0dcc27931f08ca" kind="function"><name>VisitStaff</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1a5a04ef58360430468192cc3f5528854d" kind="function"><name>VisitSystem</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1ade60d2f57199a94646f64b1dbe1a9dcc" kind="variable"><name>m_doc</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1aeca5ae928c64f7a817dba389e1f84472" kind="variable"><name>m_view</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1a35ee08d1b8ce716b292d4a5b4dcf5a27" kind="variable"><name>m_surface</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1a07e713853dfeadc11e56c96de29908b8" kind="variable"><name>m_currentPage</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1a4b424def04d3f3afd80c040dee8f47df" kind="variable"><name>m_currentSystem</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1af941c4857cf75f8403b2d07905272027" kind="variable"><name>m_pageMarginTop</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1a0048cb3f86cbf43e844c8047c2c7ed64" kind="variable"><name>m_pageMarginLeft</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1a457028198fe048883a39f4e11e8c380e" kind="function"><name>ImplementsEndInterface</name></member>
+    <member refid="classvrv_1_1_sync_to_facsimile_functor_1a134860f4522520f4cea09ad93e606553" kind="function"><name>GetZone</name></member>
+  </compound>
   <compound refid="classvrv_1_1_system" kind="class"><name>vrv::System</name>
     <member refid="classvrv_1_1_system_1a223d2c59c2cf8254fa2da02eb838e506" kind="function"><name>System</name></member>
     <member refid="classvrv_1_1_system_1af4320266d4e1284a2721f1f370843fbf" kind="function"><name>~System</name></member>
@@ -8407,8 +8457,8 @@
     <member refid="classvrv_1_1_system_1a3084bd054a72ee11d2651fe39bcdc779" kind="variable"><name>m_systemAligner</name></member>
     <member refid="classvrv_1_1_system_1af19a983bddd62ef8f3eb0000add766ec" kind="variable"><name>m_systemLeftMar</name></member>
     <member refid="classvrv_1_1_system_1a00b7543c20a944c462b5b8b6ab0a0f13" kind="variable"><name>m_systemRightMar</name></member>
-    <member refid="classvrv_1_1_system_1a876d12958421f4a97b13dabd64deeb08" kind="variable"><name>m_yAbs</name></member>
-    <member refid="classvrv_1_1_system_1a81e14c9e77b2637c4899c8ce0646ca59" kind="variable"><name>m_xAbs</name></member>
+    <member refid="classvrv_1_1_system_1aae39dcbd3c43127af9dae3b712d3500e" kind="variable"><name>m_drawingFacsY</name></member>
+    <member refid="classvrv_1_1_system_1adabe245f4c276316e22316d6cd2cc75a" kind="variable"><name>m_drawingFacsX</name></member>
     <member refid="classvrv_1_1_system_1a7b772466b57f56986b857cac4c08a018" kind="variable"><name>m_drawingAbbrLabelsWidth</name></member>
     <member refid="classvrv_1_1_system_1ab233f37912d21801c6b4537ea8098fe2" kind="variable"><name>m_drawingXRel</name></member>
     <member refid="classvrv_1_1_system_1ab553279dd8a0432402c4a3b122973b8c" kind="variable"><name>m_drawingYRel</name></member>
@@ -10954,6 +11004,8 @@
   </compound>
   <compound refid="facsimile_8h" kind="file"><name>facsimile.h</name>
   </compound>
+  <compound refid="facsimilefunctor_8h" kind="file"><name>facsimilefunctor.h</name>
+  </compound>
   <compound refid="facsimileinterface_8h" kind="file"><name>facsimileinterface.h</name>
   </compound>
   <compound refid="fb_8h" kind="file"><name>fb.h</name>
@@ -11275,7 +11327,6 @@
     <member refid="vrvdef_8h_1af7eca4512d6ed0d66bab75d508eabca1" kind="define"><name>VERSION_DEV</name></member>
     <member refid="vrvdef_8h_1ac6d9cbefa0ea88129eddc01cf9e9707e" kind="define"><name>VRV_RESOURCE_DIR</name></member>
     <member refid="vrvdef_8h_1a533a579e75c8a0050216e5577181d9ac" kind="define"><name>vrv_cast</name></member>
-    <member refid="vrvdef_8h_1a5c64ee16c0094a99f7aa55f29b80a3e1" kind="define"><name>vrv_params_cast</name></member>
     <member refid="vrvdef_8h_1a30d53f4e99013f0287e9abec9503efa0" kind="define"><name>MIDI_VELOCITY</name></member>
     <member refid="vrvdef_8h_1a3af7f472271add85b7c49f464cd7b3f3" kind="define"><name>MIDI_TEMPO</name></member>
     <member refid="vrvdef_8h_1a099e275fc3d5dde0dd5dbf6777a5241a" kind="define"><name>UNACC_GRACENOTE_DUR</name></member>

@@ -88,6 +88,7 @@ var files_dup =
     [ "expansionmap.h", "expansionmap_8h_source.html", null ],
     [ "f.h", "f_8h_source.html", null ],
     [ "facsimile.h", "facsimile_8h_source.html", null ],
+    [ "facsimilefunctor.h", "facsimilefunctor_8h_source.html", null ],
     [ "facsimileinterface.h", "facsimileinterface_8h_source.html", null ],
     [ "fb.h", "fb_8h_source.html", null ],
     [ "featureextractor.h", "featureextractor_8h_source.html", null ],

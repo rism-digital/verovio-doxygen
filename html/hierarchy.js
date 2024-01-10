@@ -352,6 +352,9 @@ var hierarchy =
     [ "AttFacsimile", null, [
       [ "vrv::FacsimileInterface", "classvrv_1_1_facsimile_interface.html", [
         [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
+        [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
+        [ "vrv::Pb", "classvrv_1_1_pb.html", null ],
+        [ "vrv::Sb", "classvrv_1_1_sb.html", null ],
         [ "vrv::Staff", "classvrv_1_1_staff.html", null ]
       ] ]
     ] ],
@@ -1181,6 +1184,8 @@ var hierarchy =
         [ "vrv::ScoreDefUnsetCurrentFunctor", "classvrv_1_1_score_def_unset_current_functor.html", null ],
         [ "vrv::SetCautionaryScoreDefFunctor", "classvrv_1_1_set_cautionary_score_def_functor.html", null ],
         [ "vrv::SetStaffDefRedrawFlagsFunctor", "classvrv_1_1_set_staff_def_redraw_flags_functor.html", null ],
+        [ "vrv::SyncFromFacsimileFunctor", "classvrv_1_1_sync_from_facsimile_functor.html", null ],
+        [ "vrv::SyncToFacsimileFunctor", "classvrv_1_1_sync_to_facsimile_functor.html", null ],
         [ "vrv::UnCastOffFunctor", "classvrv_1_1_un_cast_off_functor.html", null ]
       ] ]
     ] ],

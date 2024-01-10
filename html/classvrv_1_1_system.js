@@ -45,13 +45,13 @@ var classvrv_1_1_system =
     [ "m_castOffJustifiableWidth", "classvrv_1_1_system.html#acbb9ef065078db1c6a8598d22757766a", null ],
     [ "m_castOffTotalWidth", "classvrv_1_1_system.html#a66d0eeb21e5749e2589a422df637e2f5", null ],
     [ "m_drawingAbbrLabelsWidth", "classvrv_1_1_system.html#a7b772466b57f56986b857cac4c08a018", null ],
+    [ "m_drawingFacsX", "classvrv_1_1_system.html#adabe245f4c276316e22316d6cd2cc75a", null ],
+    [ "m_drawingFacsY", "classvrv_1_1_system.html#aae39dcbd3c43127af9dae3b712d3500e", null ],
     [ "m_drawingJustifiableWidth", "classvrv_1_1_system.html#a81a37b4e788b4507eda62212068673b9", null ],
     [ "m_drawingTotalWidth", "classvrv_1_1_system.html#a45abb6bf72d83fa52d6d51bba0df3601", null ],
     [ "m_drawingXRel", "classvrv_1_1_system.html#ab233f37912d21801c6b4537ea8098fe2", null ],
     [ "m_drawingYRel", "classvrv_1_1_system.html#ab553279dd8a0432402c4a3b122973b8c", null ],
     [ "m_systemAligner", "classvrv_1_1_system.html#a3084bd054a72ee11d2651fe39bcdc779", null ],
     [ "m_systemLeftMar", "classvrv_1_1_system.html#af19a983bddd62ef8f3eb0000add766ec", null ],
-    [ "m_systemRightMar", "classvrv_1_1_system.html#a00b7543c20a944c462b5b8b6ab0a0f13", null ],
-    [ "m_xAbs", "classvrv_1_1_system.html#a81e14c9e77b2637c4899c8ce0646ca59", null ],
-    [ "m_yAbs", "classvrv_1_1_system.html#a876d12958421f4a97b13dabd64deeb08", null ]
+    [ "m_systemRightMar", "classvrv_1_1_system.html#a00b7543c20a944c462b5b8b6ab0a0f13", null ]
 ];

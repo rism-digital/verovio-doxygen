@@ -27,6 +27,7 @@ var classvrv_1_1_reset_data_functor =
     [ "VisitMeasure", "classvrv_1_1_reset_data_functor.html#a1bb6a832c4ac2487d60268f2d388dbde", null ],
     [ "VisitMRest", "classvrv_1_1_reset_data_functor.html#a3cf66c7d63e8b28a4189a8dbcadacd2d", null ],
     [ "VisitNote", "classvrv_1_1_reset_data_functor.html#a09dad5f775bbe7baeda902ac2c21fa41", null ],
+    [ "VisitObject", "classvrv_1_1_reset_data_functor.html#a7cabb905452e6f2221d88b2cfc006496", null ],
     [ "VisitRepeatMark", "classvrv_1_1_reset_data_functor.html#a53f821d4f14732621644dd5ae7ddc232", null ],
     [ "VisitRest", "classvrv_1_1_reset_data_functor.html#a61c902ab708a7c4b85cdc54a44de391c", null ],
     [ "VisitSection", "classvrv_1_1_reset_data_functor.html#a2de645de47858f7de1ccbb1c5ddfb064", null ],
