@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"classvrv_1_1_reset_vertical_alignment_functor.html#a81255e56c604467ec31a319ed471132b":[1,0,0,321,12],
+"classvrv_1_1_reset_vertical_alignment_functor.html#a8d67bf927d834f017018ff05f0a88bfe":[1,0,0,321,7],
 "classvrv_1_1_reset_vertical_alignment_functor.html#aab3d6400609c5dae2e965071f5114ba1":[1,0,0,321,5],
 "classvrv_1_1_reset_vertical_alignment_functor.html#ab5818956765fe046db120d47fb076bcc":[1,0,0,321,10],
 "classvrv_1_1_reset_vertical_alignment_functor.html#ac58643a6a4121ee1ae96f90330557e2f":[1,0,0,321,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "classvrv_1_1_score_def_set_grp_sym_functor.html#a0d902ea1574919b0e23ee22b9b333da1":[1,0,0,336,1],
 "classvrv_1_1_score_def_set_grp_sym_functor.html#a37b014148ed4bc96dddfc8586e087f5f":[1,0,0,336,3],
 "classvrv_1_1_score_def_set_grp_sym_functor.html#a3a2e58a0bef5ff65f00f1a48e7f04167":[1,0,0,336,2],
-"classvrv_1_1_score_def_set_grp_sym_functor.html#a73221d3ba344e5aa7768a855b7866c29":[1,0,0,336,4],
-"classvrv_1_1_score_def_set_grp_sym_functor.html#a747e54386af76ceff26e617d43da4870":[1,0,0,336,0],
-"classvrv_1_1_score_def_unset_current_functor.html":[1,0,0,337]
+"classvrv_1_1_score_def_set_grp_sym_functor.html#a73221d3ba344e5aa7768a855b7866c29":[1,0,0,336,4]
 };
