@@ -8,5 +8,6 @@ var classvrv_1_1_prepare_time_spanning_functor =
     [ "VisitF", "classvrv_1_1_prepare_time_spanning_functor.html#a95b532f4e7e636a88b79793bb7326a10", null ],
     [ "VisitFloatingObject", "classvrv_1_1_prepare_time_spanning_functor.html#adb3b20b3a5389cebb490ab6b6e2dfbaf", null ],
     [ "VisitLayerElement", "classvrv_1_1_prepare_time_spanning_functor.html#ab0fa9591ff0dea76f54b0914d83cec93", null ],
+    [ "VisitMeasure", "classvrv_1_1_prepare_time_spanning_functor.html#a1f2ca5f9b6026a92a4d20dff12b09c04", null ],
     [ "VisitMeasureEnd", "classvrv_1_1_prepare_time_spanning_functor.html#ad8c6cbb469cdcd928cddc3c3e56d91d9", null ]
 ];

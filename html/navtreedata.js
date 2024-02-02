@@ -66,15 +66,15 @@ var NAVTREEINDEX =
 "classvrv_1_1_options.html#a6a940aa9b39509710316b3a0bf414f5f",
 "classvrv_1_1_pages.html#a4ef7988b7575557f65792a288361c003",
 "classvrv_1_1_prepare_linking_functor.html#ab1f636230dba34aaef01b70c0dc15e09",
-"classvrv_1_1_reset_vertical_alignment_functor.html#a81255e56c604467ec31a319ed471132b",
-"classvrv_1_1_score_def_set_grp_sym_functor.html#a747e54386af76ceff26e617d43da4870",
-"classvrv_1_1_staff_def_drawing_interface.html#add26e35bff4cfc953b52375a9204960d",
-"classvrv_1_1_sync_from_facsimile_functor.html#a3f729d591520c74564edaf156f272a29",
-"classvrv_1_1_text_element.html#a8e45515c5c0ebed5f4b274dc767c42e6",
-"classvrv_1_1_transpose_to_sounding_pitch_functor.html#a66536054e5242025762d8f4a6c278920",
-"classvrv_1_1_view.html#a1ab1a369039358ad7b6440c62b442ceb",
-"ftrem_8h_source.html",
-"structvrv_1_1_spanned_elements.html#aa88e4314cc25d9758202bb5d7c37b8d2"
+"classvrv_1_1_reset_vertical_alignment_functor.html#a6d4e3d79ee18459de387665b022a044f",
+"classvrv_1_1_score_def_set_grp_sym_functor.html#a73221d3ba344e5aa7768a855b7866c29",
+"classvrv_1_1_staff_def_drawing_interface.html#ab7c393e092331b16656f2aa593c79a4c",
+"classvrv_1_1_sync_from_facsimile_functor.html#a11266daf470bafa288343af2fd013b4c",
+"classvrv_1_1_text_element.html#a6b8b2404671736d6506ec2fc1edd9254",
+"classvrv_1_1_transpose_to_sounding_pitch_functor.html#a2a029adfb5a8396ed760e0149ce4d0c6",
+"classvrv_1_1_view.html#a199365a21ec85a20cf1be22abee66f34",
+"floatingobject_8h_source.html",
+"structvrv_1_1_spanned_elements.html#a216693563181e15676656cd587c6eb57"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

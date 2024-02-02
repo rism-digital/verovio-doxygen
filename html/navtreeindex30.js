@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"structvrv_1_1_spanned_elements.html#a216693563181e15676656cd587c6eb57":[1,0,0,345,0],
 "structvrv_1_1_spanned_elements.html#aa88e4314cc25d9758202bb5d7c37b8d2":[1,0,0,345,1],
 "structvrv_1_1_staff_sort.html":[1,0,0,352],
 "structvrv_1_1_staff_sort.html#a6bdec7c49db040406f1b91c1504f0529":[1,0,0,352,0],
