@@ -9,7 +9,7 @@ var classvrv_1_1_option =
     [ "GetShortOption", "classvrv_1_1_option.html#ac8b50b534f9fa37b8514d5faa9f126a1", null ],
     [ "GetStrValue", "classvrv_1_1_option.html#a93f27878278319c656b7351aadcfd789", null ],
     [ "GetTitle", "classvrv_1_1_option.html#a00ea4b5fa5b1167de94e5ea3e2b3c755", null ],
-    [ "IsArgumentRequired", "classvrv_1_1_option.html#a7a0c69e1e10524d04ed91336c95b0588", null ],
+    [ "IsArgumentRequired", "classvrv_1_1_option.html#a810bc13d6166f6c462f21dd2d7df9b48", null ],
     [ "IsCmdOnly", "classvrv_1_1_option.html#aa68765042bdfb08c28904a21fb72e48e", null ],
     [ "IsSet", "classvrv_1_1_option.html#a33d5cd86bdc6a5cb307a106d1301817d", null ],
     [ "Reset", "classvrv_1_1_option.html#a1de81987099330fafa275efd29d68450", null ],
