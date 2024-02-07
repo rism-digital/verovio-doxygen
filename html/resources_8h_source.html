@@ -99,90 +99,144 @@ $(document).ready(function(){initNavTree('resources_8h_source.html',''); initRes
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;glyph.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>vrv {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// Resources</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classvrv_1_1_resources.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_resources.html">Resources</a> {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">using</span> StyleAttributes = std::pair&lt;data_FONTWEIGHT, data_FONTSTYLE&gt;;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">using</span> GlyphTable = std::unordered_map&lt;char32_t, Glyph&gt;;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">using</span> GlyphNameTable = std::unordered_map&lt;std::string, char32_t&gt;;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">using</span> GlyphTextMap = std::map&lt;StyleAttributes, GlyphTable&gt;;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classvrv_1_1_resources.html">Resources</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_resources.html">Resources</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">static</span> std::string GetDefaultPath() { <span class="keywordflow">return</span> s_defaultPath; }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> SetDefaultPath(<span class="keyword">const</span> std::string &amp;path) { s_defaultPath = path; }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    std::string GetPath()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_path; }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> SetPath(<span class="keyword">const</span> std::string &amp;path) { m_path = path; }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_resources.html#af7823e10567dae86983fad00b0d25290">InitFonts</a>();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_resources.html#a6ef49babf9c905abf67e9476570a9ba3">InitTextFont</a>(<span class="keyword">const</span> std::string &amp;fontName, <span class="keyword">const</span> StyleAttributes &amp;style);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_resources.html#a112c2087e61d477c8d0dece3165f0e74">SetFont</a>(<span class="keyword">const</span> std::string &amp;fontName);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::string GetCurrentFontName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_fontName; }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_glyph.html">Glyph</a> *<a class="code" href="classvrv_1_1_resources.html#a73f8553831bc7f5b9549273831435e8c">GetGlyph</a>(char32_t smuflCode) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_glyph.html">Glyph</a> *<a class="code" href="classvrv_1_1_resources.html#a73f8553831bc7f5b9549273831435e8c">GetGlyph</a>(<span class="keyword">const</span> std::string &amp;smuflName) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    char32_t <a class="code" href="classvrv_1_1_resources.html#acabfaea592f8211df74611fffdc9a682">GetGlyphCode</a>(<span class="keyword">const</span> std::string &amp;smuflName) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_resources.html#a429bb8fd6635c36a657f5a09c1572ed6">IsSmuflFallbackNeeded</a>(<span class="keyword">const</span> std::u32string &amp;text) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;filereader.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;glyph.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>vrv {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// Resources</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classvrv_1_1_resources.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_resources.html">Resources</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">using</span> StyleAttributes = std::pair&lt;data_FONTWEIGHT, data_FONTSTYLE&gt;;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">using</span> GlyphTable = std::unordered_map&lt;char32_t, Glyph&gt;;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">using</span> GlyphNameTable = std::unordered_map&lt;std::string, char32_t&gt;;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">using</span> GlyphTextMap = std::map&lt;StyleAttributes, GlyphTable&gt;;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classvrv_1_1_resources.html">Resources</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_resources.html">Resources</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">static</span> std::string GetDefaultPath() { <span class="keywordflow">return</span> s_defaultPath; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> SetDefaultPath(<span class="keyword">const</span> std::string &amp;path) { s_defaultPath = path; }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    std::string GetPath()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_path; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> SetPath(<span class="keyword">const</span> std::string &amp;path) { m_path = path; }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_resources.html#af7823e10567dae86983fad00b0d25290">InitFonts</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_resources.html#a112c2087e61d477c8d0dece3165f0e74">SetFont</a>(<span class="keyword">const</span> std::string &amp;fontName);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_resources.html#a99311b8060a09ac649a7fdfcd9204706">AddCustom</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;extraFonts);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_resources.html#ab79e6a3f74b0ea800441772eda681b63">LoadAll</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_resources.html#a5b6bfcc955bd884b778002984cd4b737">SetFallback</a>(<span class="keyword">const</span> std::string &amp;fontName);</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classvrv_1_1_resources.html#a01c062ee9a55162a4eb32df48db3eb81">   70</a></span>&#160;    std::string <a class="code" href="classvrv_1_1_resources.html#a01c062ee9a55162a4eb32df48db3eb81">GetFallbackFont</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_defaultFontName; }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_resources.html#a6ef49babf9c905abf67e9476570a9ba3">InitTextFont</a>(<span class="keyword">const</span> std::string &amp;fontName, <span class="keyword">const</span> StyleAttributes &amp;style);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_resources.html#afb853e55da58afb39639efa801c22651">SetCurrentFont</a>(<span class="keyword">const</span> std::string &amp;fontName, <span class="keywordtype">bool</span> allowLoading = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::string GetCurrentFont()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_currentFontName; }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">bool</span> IsFontLoaded(<span class="keyword">const</span> std::string &amp;fontName)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_loadedFonts.find(fontName) != m_loadedFonts.end(); }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_resources.html#ae451033365fb7e79b728be77f3ebd7aa">SelectTextFont</a>(data_FONTWEIGHT fontWeight, data_FONTSTYLE fontStyle) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_glyph.html">Glyph</a> *<a class="code" href="classvrv_1_1_resources.html#a1f7f592b285caa4823b4995f14b444b9">GetTextGlyph</a>(char32_t code) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">static</span> char32_t <a class="code" href="classvrv_1_1_resources.html#a0d5e5aa5e0c55823ac823e00dd8445b8">GetSmuflGlyphForUnicodeChar</a>(<span class="keyword">const</span> char32_t unicodeChar);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> LoadFont(<span class="keyword">const</span> std::string &amp;fontName, <span class="keywordtype">bool</span> withFallback = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    std::string m_fontName;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    std::string m_path;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    GlyphTable m_fontGlyphTable;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    GlyphTextMap m_textFont;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">mutable</span> StyleAttributes m_currentStyle;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    GlyphNameTable m_glyphNameTable;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// Static members //</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">static</span> thread_local std::string s_defaultPath;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">const</span> Glyph *<a class="code" href="classvrv_1_1_resources.html#a73f8553831bc7f5b9549273831435e8c">GetGlyph</a>(char32_t smuflCode) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">const</span> Glyph *<a class="code" href="classvrv_1_1_resources.html#a73f8553831bc7f5b9549273831435e8c">GetGlyph</a>(<span class="keyword">const</span> std::string &amp;smuflName) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    char32_t <a class="code" href="classvrv_1_1_resources.html#acabfaea592f8211df74611fffdc9a682">GetGlyphCode</a>(<span class="keyword">const</span> std::string &amp;smuflName) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_resources.html#a429bb8fd6635c36a657f5a09c1572ed6">IsSmuflFallbackNeeded</a>(<span class="keyword">const</span> std::u32string &amp;text) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_resources.html#a9859292deedcc9780ce51a1b6119bf41">IsCurrentFontFallback</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_resources.html#ae451033365fb7e79b728be77f3ebd7aa">SelectTextFont</a>(data_FONTWEIGHT fontWeight, data_FONTSTYLE fontStyle) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">const</span> Glyph *<a class="code" href="classvrv_1_1_resources.html#a1f7f592b285caa4823b4995f14b444b9">GetTextGlyph</a>(char32_t code) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_resources.html#a0f1c2272251fcf14cd8b7f8dc30e1f07">FontHasGlyphAvailable</a>(<span class="keyword">const</span> std::string &amp;fontName, char32_t smuflCode) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    std::string <a class="code" href="classvrv_1_1_resources.html#a5956754faab53214f2cae96d8cf9ce68">GetCSSFontFor</a>(<span class="keyword">const</span> std::string &amp;fontName) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    std::string <a class="code" href="classvrv_1_1_resources.html#a1fd9a6a8a2db85b961bad2cb92df1c5c">GetCustomFontname</a>(<span class="keyword">const</span> std::string &amp;filename, <span class="keyword">const</span> ZipFileReader &amp;zipFile);</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> StyleAttributes k_defaultStyle;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;};</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keyword">static</span> char32_t <a class="code" href="classvrv_1_1_resources.html#a0d5e5aa5e0c55823ac823e00dd8445b8">GetSmuflGlyphForUnicodeChar</a>(<span class="keyword">const</span> char32_t unicodeChar);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">// LoadedFont</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keyword">class </span>LoadedFont {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        LoadedFont(<span class="keyword">const</span> std::string &amp;name, <span class="keywordtype">bool</span> isFallback) : m_name(name), m_isFallback(isFallback){};</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        ~LoadedFont(){};</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keyword">const</span> std::string GetName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_name; };</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keyword">const</span> GlyphTable &amp;GetGlyphTable()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_glyphTable; };</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        GlyphTable &amp;GetGlyphTableForModification() { <span class="keywordflow">return</span> m_glyphTable; };</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordtype">bool</span> isFallback()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_isFallback; };</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordtype">void</span> SetCSSFont(<span class="keyword">const</span> std::string &amp;css) { m_css = css; }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        std::string GetCSSFont(<span class="keyword">const</span> std::string &amp;path) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        std::string m_name;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        GlyphTable m_glyphTable;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> m_isFallback;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        std::string m_css;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    };</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">bool</span> LoadFont(<span class="keyword">const</span> std::string &amp;fontName, ZipFileReader *zipFile = NULL);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keyword">const</span> GlyphTable &amp;GetCurrentGlyphTable()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_loadedFonts.at(m_currentFontName).GetGlyphTable(); };</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">const</span> GlyphTable &amp;GetFallbackGlyphTable()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_loadedFonts.at(m_fallbackFontName).GetGlyphTable(); };</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    std::string m_path;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    std::string m_defaultFontName;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    std::string m_fallbackFontName;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    std::map&lt;std::string, LoadedFont&gt; m_loadedFonts;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    std::string m_currentFontName;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    GlyphTextMap m_textFont;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keyword">mutable</span> StyleAttributes m_currentStyle;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    GlyphNameTable m_glyphNameTable;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">// Static members //</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keyword">static</span> thread_local std::string s_defaultPath;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> StyleAttributes k_defaultStyle;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;};</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_resources_html_a112c2087e61d477c8d0dece3165f0e74"><div class="ttname"><a href="classvrv_1_1_resources.html#a112c2087e61d477c8d0dece3165f0e74">vrv::Resources::SetFont</a></div><div class="ttdeci">bool SetFont(const std::string &amp;fontName)</div><div class="ttdoc">Select a particular font.</div></div>
+<div class="ttc" id="aclassvrv_1_1_resources_html_a99311b8060a09ac649a7fdfcd9204706"><div class="ttname"><a href="classvrv_1_1_resources.html#a99311b8060a09ac649a7fdfcd9204706">vrv::Resources::AddCustom</a></div><div class="ttdeci">bool AddCustom(const std::vector&lt; std::string &gt; &amp;extraFonts)</div><div class="ttdoc">Add custom (external) fonts.</div></div>
+<div class="ttc" id="aclassvrv_1_1_resources_html_a112c2087e61d477c8d0dece3165f0e74"><div class="ttname"><a href="classvrv_1_1_resources.html#a112c2087e61d477c8d0dece3165f0e74">vrv::Resources::SetFont</a></div><div class="ttdeci">bool SetFont(const std::string &amp;fontName)</div><div class="ttdoc">Set the font to be used and loads it if necessary.</div></div>
 <div class="ttc" id="aclassvrv_1_1_resources_html_a73f8553831bc7f5b9549273831435e8c"><div class="ttname"><a href="classvrv_1_1_resources.html#a73f8553831bc7f5b9549273831435e8c">vrv::Resources::GetGlyph</a></div><div class="ttdeci">const Glyph * GetGlyph(char32_t smuflCode) const</div><div class="ttdoc">Retrieving glyphs.</div></div>
 <div class="ttc" id="aclassvrv_1_1_resources_html_a1f7f592b285caa4823b4995f14b444b9"><div class="ttname"><a href="classvrv_1_1_resources.html#a1f7f592b285caa4823b4995f14b444b9">vrv::Resources::GetTextGlyph</a></div><div class="ttdeci">const Glyph * GetTextGlyph(char32_t code) const</div><div class="ttdoc">Returns the glyph (if exists) for the text font (bounding box and ASCII only)</div></div>
 <div class="ttc" id="aclassvrv_1_1_resources_html_a6ef49babf9c905abf67e9476570a9ba3"><div class="ttname"><a href="classvrv_1_1_resources.html#a6ef49babf9c905abf67e9476570a9ba3">vrv::Resources::InitTextFont</a></div><div class="ttdeci">bool InitTextFont(const std::string &amp;fontName, const StyleAttributes &amp;style)</div><div class="ttdoc">Init the text font (bounding boxes and ASCII only)</div></div>
+<div class="ttc" id="aclassvrv_1_1_resources_html_a5b6bfcc955bd884b778002984cd4b737"><div class="ttname"><a href="classvrv_1_1_resources.html#a5b6bfcc955bd884b778002984cd4b737">vrv::Resources::SetFallback</a></div><div class="ttdeci">bool SetFallback(const std::string &amp;fontName)</div><div class="ttdoc">Set the fallback font (Leipzig or Bravura) when some glyphs are missing in the current font.</div></div>
+<div class="ttc" id="aclassvrv_1_1_resources_html_afb853e55da58afb39639efa801c22651"><div class="ttname"><a href="classvrv_1_1_resources.html#afb853e55da58afb39639efa801c22651">vrv::Resources::SetCurrentFont</a></div><div class="ttdeci">bool SetCurrentFont(const std::string &amp;fontName, bool allowLoading=false)</div><div class="ttdoc">Select a particular font.</div></div>
+<div class="ttc" id="aclassvrv_1_1_resources_html_a01c062ee9a55162a4eb32df48db3eb81"><div class="ttname"><a href="classvrv_1_1_resources.html#a01c062ee9a55162a4eb32df48db3eb81">vrv::Resources::GetFallbackFont</a></div><div class="ttdeci">std::string GetFallbackFont() const</div><div class="ttdoc">Get the fallback font name.</div><div class="ttdef"><b>Definition:</b> resources.h:70</div></div>
+<div class="ttc" id="aclassvrv_1_1_resources_html_a1fd9a6a8a2db85b961bad2cb92df1c5c"><div class="ttname"><a href="classvrv_1_1_resources.html#a1fd9a6a8a2db85b961bad2cb92df1c5c">vrv::Resources::GetCustomFontname</a></div><div class="ttdeci">std::string GetCustomFontname(const std::string &amp;filename, const ZipFileReader &amp;zipFile)</div><div class="ttdoc">Retrieve the font name either from the filename path or from the zipFile content.</div></div>
 <div class="ttc" id="aclassvrv_1_1_resources_html_a429bb8fd6635c36a657f5a09c1572ed6"><div class="ttname"><a href="classvrv_1_1_resources.html#a429bb8fd6635c36a657f5a09c1572ed6">vrv::Resources::IsSmuflFallbackNeeded</a></div><div class="ttdeci">bool IsSmuflFallbackNeeded(const std::u32string &amp;text) const</div><div class="ttdoc">Check if the text has any charachter that needs the smufl fallback font.</div></div>
+<div class="ttc" id="aclassvrv_1_1_resources_html_a0f1c2272251fcf14cd8b7f8dc30e1f07"><div class="ttname"><a href="classvrv_1_1_resources.html#a0f1c2272251fcf14cd8b7f8dc30e1f07">vrv::Resources::FontHasGlyphAvailable</a></div><div class="ttdeci">bool FontHasGlyphAvailable(const std::string &amp;fontName, char32_t smuflCode) const</div><div class="ttdoc">Returns true if the specified font is loaded and it contains the requested glyph.</div></div>
 <div class="ttc" id="aclassvrv_1_1_resources_html_acabfaea592f8211df74611fffdc9a682"><div class="ttname"><a href="classvrv_1_1_resources.html#acabfaea592f8211df74611fffdc9a682">vrv::Resources::GetGlyphCode</a></div><div class="ttdeci">char32_t GetGlyphCode(const std::string &amp;smuflName) const</div><div class="ttdoc">Returns the glyph (if exists) for a glyph name in the current SMuFL font.</div></div>
-<div class="ttc" id="aclassvrv_1_1_resources_html"><div class="ttname"><a href="classvrv_1_1_resources.html">vrv::Resources</a></div><div class="ttdoc">This class provides resource values.</div><div class="ttdef"><b>Definition:</b> resources.h:28</div></div>
+<div class="ttc" id="aclassvrv_1_1_resources_html"><div class="ttname"><a href="classvrv_1_1_resources.html">vrv::Resources</a></div><div class="ttdoc">This class provides resource values.</div><div class="ttdef"><b>Definition:</b> resources.h:29</div></div>
 <div class="ttc" id="aclassvrv_1_1_resources_html_ae451033365fb7e79b728be77f3ebd7aa"><div class="ttname"><a href="classvrv_1_1_resources.html#ae451033365fb7e79b728be77f3ebd7aa">vrv::Resources::SelectTextFont</a></div><div class="ttdeci">void SelectTextFont(data_FONTWEIGHT fontWeight, data_FONTSTYLE fontStyle) const</div><div class="ttdoc">Text fonts.</div></div>
-<div class="ttc" id="aclassvrv_1_1_glyph_html"><div class="ttname"><a href="classvrv_1_1_glyph.html">vrv::Glyph</a></div><div class="ttdoc">This class is used for storing a music font glyph.</div><div class="ttdef"><b>Definition:</b> glyph.h:31</div></div>
+<div class="ttc" id="aclassvrv_1_1_resources_html_a5956754faab53214f2cae96d8cf9ce68"><div class="ttname"><a href="classvrv_1_1_resources.html#a5956754faab53214f2cae96d8cf9ce68">vrv::Resources::GetCSSFontFor</a></div><div class="ttdeci">std::string GetCSSFontFor(const std::string &amp;fontName) const</div><div class="ttdoc">Get the CSS font string for the corresponding font.</div></div>
+<div class="ttc" id="aclassvrv_1_1_resources_html_ab79e6a3f74b0ea800441772eda681b63"><div class="ttname"><a href="classvrv_1_1_resources.html#ab79e6a3f74b0ea800441772eda681b63">vrv::Resources::LoadAll</a></div><div class="ttdeci">bool LoadAll()</div><div class="ttdoc">Load all music fonts available in the resource directory.</div></div>
 <div class="ttc" id="aclassvrv_1_1_resources_html_af7823e10567dae86983fad00b0d25290"><div class="ttname"><a href="classvrv_1_1_resources.html#af7823e10567dae86983fad00b0d25290">vrv::Resources::InitFonts</a></div><div class="ttdeci">bool InitFonts()</div><div class="ttdoc">Font initialization.</div></div>
+<div class="ttc" id="aclassvrv_1_1_resources_html_a9859292deedcc9780ce51a1b6119bf41"><div class="ttname"><a href="classvrv_1_1_resources.html#a9859292deedcc9780ce51a1b6119bf41">vrv::Resources::IsCurrentFontFallback</a></div><div class="ttdeci">bool IsCurrentFontFallback() const</div><div class="ttdoc">Check if the current font is the fallback font.</div></div>
 <div class="ttc" id="aclassvrv_1_1_resources_html_a0d5e5aa5e0c55823ac823e00dd8445b8"><div class="ttname"><a href="classvrv_1_1_resources.html#a0d5e5aa5e0c55823ac823e00dd8445b8">vrv::Resources::GetSmuflGlyphForUnicodeChar</a></div><div class="ttdeci">static char32_t GetSmuflGlyphForUnicodeChar(const char32_t unicodeChar)</div><div class="ttdoc">Static method that converts unicode music code points to SMuFL equivalent.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>resources.h</b></li>
-    <li class="footer">Generated on Tue Feb 6 2024 12:08:25 for Verovio by
+    <li class="footer">Generated on Wed Feb 7 2024 16:44:31 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

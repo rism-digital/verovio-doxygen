@@ -3,6 +3,7 @@
   <compounddef id="classvrv_1_1_resources" kind="class" language="C++" prot="public">
     <compoundname>vrv::Resources</compoundname>
     <includes refid="resources_8h" local="no">resources.h</includes>
+    <innerclass refid="classvrv_1_1_resources_1_1_loaded_font" prot="private">vrv::Resources::LoadedFont</innerclass>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors, and other standard methods</header>
       <memberdef kind="function" id="classvrv_1_1_resources_1aa62412fa9ac02f49c2b5f05279d77dba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -16,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="39" column="5"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="40" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_resources_1a8d262db67c0625b9f25d0eb60abab5b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -29,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="40" column="13"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="41" column="13"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -45,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="50" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="50" bodyend="50"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="51" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="51" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_resources_1abcb461570a502e03dba625cf2cf02092" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -62,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="51" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="51" bodyend="51"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="52" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="52" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_resources_1ad1b9c8369b5ab981a2c0af196c4c6e5d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
@@ -75,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="47" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="47" bodyend="47"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="48" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="48" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_resources_1a371f5c1b14476b1b5b78364e825bdedf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -92,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="48" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="48" bodyend="48"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="49" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="49" bodyend="49"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -109,7 +110,89 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="59" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="60" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_resources_1a112c2087e61d477c8d0dece3165f0e74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Resources::SetFont</definition>
+        <argsstring>(const std::string &amp;fontName)</argsstring>
+        <name>SetFont</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fontName</declname>
+        </param>
+        <briefdescription>
+<para>Set the font to be used and loads it if necessary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="62" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_resources_1a99311b8060a09ac649a7fdfcd9204706" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Resources::AddCustom</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;extraFonts)</argsstring>
+        <name>AddCustom</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>extraFonts</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classvrv_1_1_add" kindref="compound">Add</ref> custom (external) fonts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="64" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_resources_1ab79e6a3f74b0ea800441772eda681b63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Resources::LoadAll</definition>
+        <argsstring>()</argsstring>
+        <name>LoadAll</name>
+        <briefdescription>
+<para>Load all music fonts available in the resource directory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_resources_1a5b6bfcc955bd884b778002984cd4b737" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Resources::SetFallback</definition>
+        <argsstring>(const std::string &amp;fontName)</argsstring>
+        <name>SetFallback</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fontName</declname>
+        </param>
+        <briefdescription>
+<para>Set the fallback font (Leipzig or Bravura) when some glyphs are missing in the current font. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="68" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_resources_1a01c062ee9a55162a4eb32df48db3eb81" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string vrv::Resources::GetFallbackFont</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFallbackFont</name>
+        <briefdescription>
+<para>Get the fallback font name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="70" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="70" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_resources_1a6ef49babf9c905abf67e9476570a9ba3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -131,16 +214,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="61" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="72" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_resources_1a112c2087e61d477c8d0dece3165f0e74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_resources_1afb853e55da58afb39639efa801c22651" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool vrv::Resources::SetFont</definition>
-        <argsstring>(const std::string &amp;fontName)</argsstring>
-        <name>SetFont</name>
+        <definition>bool vrv::Resources::SetCurrentFont</definition>
+        <argsstring>(const std::string &amp;fontName, bool allowLoading=false)</argsstring>
+        <name>SetCurrentFont</name>
         <param>
           <type>const std::string &amp;</type>
           <declname>fontName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>allowLoading</declname>
+          <defval>false</defval>
         </param>
         <briefdescription>
 <para>Select a particular font. </para>
@@ -149,20 +237,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="63" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="75" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_resources_1a40626b74dcf02949509cc603f8756542" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_resources_1ad177a4bd037d8791f0552cc710de96c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
-        <definition>std::string vrv::Resources::GetCurrentFontName</definition>
+        <definition>std::string vrv::Resources::GetCurrentFont</definition>
         <argsstring>() const</argsstring>
-        <name>GetCurrentFontName</name>
+        <name>GetCurrentFont</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="64" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="64" bodyend="64"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="76" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_resources_1a032385c5e9c000508bf52394f560b72e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Resources::IsFontLoaded</definition>
+        <argsstring>(const std::string &amp;fontName) const</argsstring>
+        <name>IsFontLoaded</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fontName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="77" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="77" bodyend="77"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -183,7 +288,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="72" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="85" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_resources_1ab5bc7928b34f63c14de1229623cdac62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classvrv_1_1_glyph" kindref="compound">Glyph</ref> *</type>
@@ -201,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="74" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="87" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_resources_1acabfaea592f8211df74611fffdc9a682" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>char32_t</type>
@@ -219,7 +324,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="76" column="14"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="89" column="14"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -244,7 +349,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="89" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="107" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_resources_1a1f7f592b285caa4823b4995f14b444b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classvrv_1_1_glyph" kindref="compound">Glyph</ref> *</type>
@@ -262,7 +367,29 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="91" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="109" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_resources_1a0f1c2272251fcf14cd8b7f8dc30e1f07" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Resources::FontHasGlyphAvailable</definition>
+        <argsstring>(const std::string &amp;fontName, char32_t smuflCode) const</argsstring>
+        <name>FontHasGlyphAvailable</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fontName</declname>
+        </param>
+        <param>
+          <type>char32_t</type>
+          <declname>smuflCode</declname>
+        </param>
+        <briefdescription>
+<para>Returns true if the specified font is loaded and it contains the requested glyph. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="111" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-type">
@@ -277,7 +404,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="30" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="30" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="31" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="31" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classvrv_1_1_resources_1a505983d35f81c7af2f78fb2739f89207" prot="public" static="no">
         <type>std::unordered_map&lt; char32_t, <ref refid="classvrv_1_1_glyph" kindref="compound">Glyph</ref> &gt;</type>
@@ -290,7 +417,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="31" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="31" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="32" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classvrv_1_1_resources_1a3ce6be92b62b53671763e0fcdc6d0ec1" prot="public" static="no">
         <type>std::unordered_map&lt; std::string, char32_t &gt;</type>
@@ -303,7 +430,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="32" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="32" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="33" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classvrv_1_1_resources_1a6b12162a60479843638aeb9f2ce939b4" prot="public" static="no">
         <type>std::map&lt; StyleAttributes, GlyphTable &gt;</type>
@@ -316,51 +443,74 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="33" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="33" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="34" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classvrv_1_1_resources_1a0f1cac5d4e33de94adec05bce51a3398" prot="private" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string vrv::Resources::m_fontName</definition>
-        <argsstring></argsstring>
-        <name>m_fontName</name>
-        <briefdescription>
-<para>The font name of the font that is currently loaded. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="105" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="105" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_resources_1a3a664ee3b7608fe446797623eac4fcc0" prot="private" static="no" mutable="no">
         <type>std::string</type>
         <definition>std::string vrv::Resources::m_path</definition>
         <argsstring></argsstring>
         <name>m_path</name>
         <briefdescription>
-<para>The path to the resources directory (e.g., for the svg/ subdirectory with fonts as XML. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="107" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="107" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="166" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="164" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_resources_1aa320b3f5a2fc1481f89068b8303a3c65" prot="private" static="no" mutable="no">
-        <type>GlyphTable</type>
-        <definition>GlyphTable vrv::Resources::m_fontGlyphTable</definition>
+      <memberdef kind="variable" id="classvrv_1_1_resources_1ab57ccdaa3df2b6c0376dba6b6aaa3c47" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string vrv::Resources::m_defaultFontName</definition>
         <argsstring></argsstring>
-        <name>m_fontGlyphTable</name>
+        <name>m_defaultFontName</name>
         <briefdescription>
-<para>The loaded SMuFL font. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="109" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="109" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="167" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_resources_1ab354c6e8bd561d12971aa1406c1d66d0" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string vrv::Resources::m_fallbackFontName</definition>
+        <argsstring></argsstring>
+        <name>m_fallbackFontName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="168" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_resources_1aa54d0454f32e545500c2b88dd6c0e66b" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, LoadedFont &gt;</type>
+        <definition>std::map&lt;std::string, LoadedFont&gt; vrv::Resources::m_loadedFonts</definition>
+        <argsstring></argsstring>
+        <name>m_loadedFonts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="169" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_resources_1a9abb593528d018db9996277952bd69c5" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string vrv::Resources::m_currentFontName</definition>
+        <argsstring></argsstring>
+        <name>m_currentFontName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="170" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="170" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_resources_1a65089b88930f2aec9cec2ce74caf1aea" prot="private" static="no" mutable="no">
         <type>GlyphTextMap</type>
@@ -374,7 +524,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="111" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="111" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="173" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="173" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_resources_1a61a52ab8d6ed3cc694f1943bb6054036" prot="private" static="no" mutable="yes">
         <type>StyleAttributes</type>
@@ -387,7 +537,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="112" column="29" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="112" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="174" column="29" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="174" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_resources_1a7835d2995b5e739464f156ae2c983439" prot="private" static="no" mutable="no">
         <type>GlyphNameTable</type>
@@ -401,7 +551,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="116" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="116" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="178" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="178" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-attrib">
@@ -417,7 +567,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="123" column="37" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="123" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="185" column="37" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="185" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_resources_1aff9ebc78f90ff388fbc64a7cad7a5790" prot="private" static="yes" mutable="no">
         <type>const StyleAttributes</type>
@@ -431,7 +581,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="126" column="34" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="126" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="188" column="34" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="188" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -451,7 +601,62 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="82" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="95" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_resources_1a9859292deedcc9780ce51a1b6119bf41" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Resources::IsCurrentFontFallback</definition>
+        <argsstring>() const</argsstring>
+        <name>IsCurrentFontFallback</name>
+        <briefdescription>
+<para>Check if the current font is the fallback font. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="100" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_resources_1a5956754faab53214f2cae96d8cf9ce68" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string vrv::Resources::GetCSSFontFor</definition>
+        <argsstring>(const std::string &amp;fontName) const</argsstring>
+        <name>GetCSSFontFor</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fontName</declname>
+        </param>
+        <briefdescription>
+<para>Get the CSS font string for the corresponding font. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return an empty string if the font has not been loaded. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="118" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_resources_1a1fd9a6a8a2db85b961bad2cb92df1c5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string vrv::Resources::GetCustomFontname</definition>
+        <argsstring>(const std::string &amp;filename, const ZipFileReader &amp;zipFile)</argsstring>
+        <name>GetCustomFontname</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classvrv_1_1_zip_file_reader" kindref="compound">ZipFileReader</ref> &amp;</type>
+          <declname>zipFile</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the font name either from the filename path or from the zipFile content. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="123" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -472,23 +677,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="98" column="21"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="129" column="21"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
-      <memberdef kind="function" id="classvrv_1_1_resources_1ab126682a00b577f9c654bf07245f422b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_resources_1a60969bd603f9f96aa8d29c16617c36e8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::Resources::LoadFont</definition>
-        <argsstring>(const std::string &amp;fontName, bool withFallback=true)</argsstring>
+        <argsstring>(const std::string &amp;fontName, ZipFileReader *zipFile=NULL)</argsstring>
         <name>LoadFont</name>
         <param>
           <type>const std::string &amp;</type>
           <declname>fontName</declname>
         </param>
         <param>
-          <type>bool</type>
-          <declname>withFallback</declname>
-          <defval>true</defval>
+          <type><ref refid="classvrv_1_1_zip_file_reader" kindref="compound">ZipFileReader</ref> *</type>
+          <declname>zipFile</declname>
+          <defval>NULL</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -496,7 +701,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="101" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="161" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_resources_1a72dbaca870cf602e9caa7b6ca34e1951" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const GlyphTable &amp;</type>
+        <definition>const GlyphTable&amp; vrv::Resources::GetCurrentGlyphTable</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCurrentGlyphTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="163" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="163" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_resources_1aa3a43b8298e86075825e81c7d3cf1c9e" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const GlyphTable &amp;</type>
+        <definition>const GlyphTable&amp; vrv::Resources::GetFallbackGlyphTable</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFallbackGlyphTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="164" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="164" bodyend="164"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -505,10 +736,17 @@
     <detaileddescription>
 <para>It manages fonts and glyph tables. </para>
     </detaileddescription>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="28" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="28" bodyend="127"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/resources.h" line="29" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/resources.h" bodystart="29" bodyend="189"/>
     <listofallmembers>
-      <member refid="classvrv_1_1_resources_1a40626b74dcf02949509cc603f8756542" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>GetCurrentFontName</name></member>
+      <member refid="classvrv_1_1_resources_1a99311b8060a09ac649a7fdfcd9204706" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>AddCustom</name></member>
+      <member refid="classvrv_1_1_resources_1a0f1c2272251fcf14cd8b7f8dc30e1f07" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>FontHasGlyphAvailable</name></member>
+      <member refid="classvrv_1_1_resources_1a5956754faab53214f2cae96d8cf9ce68" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>GetCSSFontFor</name></member>
+      <member refid="classvrv_1_1_resources_1ad177a4bd037d8791f0552cc710de96c9" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>GetCurrentFont</name></member>
+      <member refid="classvrv_1_1_resources_1a72dbaca870cf602e9caa7b6ca34e1951" prot="private" virt="non-virtual"><scope>vrv::Resources</scope><name>GetCurrentGlyphTable</name></member>
+      <member refid="classvrv_1_1_resources_1a1fd9a6a8a2db85b961bad2cb92df1c5c" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>GetCustomFontname</name></member>
       <member refid="classvrv_1_1_resources_1ad1b9c8369b5ab981a2c0af196c4c6e5d" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>GetDefaultPath</name></member>
+      <member refid="classvrv_1_1_resources_1a01c062ee9a55162a4eb32df48db3eb81" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>GetFallbackFont</name></member>
+      <member refid="classvrv_1_1_resources_1aa3a43b8298e86075825e81c7d3cf1c9e" prot="private" virt="non-virtual"><scope>vrv::Resources</scope><name>GetFallbackGlyphTable</name></member>
       <member refid="classvrv_1_1_resources_1a73f8553831bc7f5b9549273831435e8c" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>GetGlyph</name></member>
       <member refid="classvrv_1_1_resources_1ab5bc7928b34f63c14de1229623cdac62" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>GetGlyph</name></member>
       <member refid="classvrv_1_1_resources_1acabfaea592f8211df74611fffdc9a682" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>GetGlyphCode</name></member>
@@ -520,19 +758,26 @@
       <member refid="classvrv_1_1_resources_1a6b12162a60479843638aeb9f2ce939b4" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>GlyphTextMap</name></member>
       <member refid="classvrv_1_1_resources_1af7823e10567dae86983fad00b0d25290" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>InitFonts</name></member>
       <member refid="classvrv_1_1_resources_1a6ef49babf9c905abf67e9476570a9ba3" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>InitTextFont</name></member>
+      <member refid="classvrv_1_1_resources_1a9859292deedcc9780ce51a1b6119bf41" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>IsCurrentFontFallback</name></member>
+      <member refid="classvrv_1_1_resources_1a032385c5e9c000508bf52394f560b72e" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>IsFontLoaded</name></member>
       <member refid="classvrv_1_1_resources_1a429bb8fd6635c36a657f5a09c1572ed6" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>IsSmuflFallbackNeeded</name></member>
       <member refid="classvrv_1_1_resources_1aff9ebc78f90ff388fbc64a7cad7a5790" prot="private" virt="non-virtual"><scope>vrv::Resources</scope><name>k_defaultStyle</name></member>
-      <member refid="classvrv_1_1_resources_1ab126682a00b577f9c654bf07245f422b" prot="private" virt="non-virtual"><scope>vrv::Resources</scope><name>LoadFont</name></member>
+      <member refid="classvrv_1_1_resources_1ab79e6a3f74b0ea800441772eda681b63" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>LoadAll</name></member>
+      <member refid="classvrv_1_1_resources_1a60969bd603f9f96aa8d29c16617c36e8" prot="private" virt="non-virtual"><scope>vrv::Resources</scope><name>LoadFont</name></member>
+      <member refid="classvrv_1_1_resources_1a9abb593528d018db9996277952bd69c5" prot="private" virt="non-virtual"><scope>vrv::Resources</scope><name>m_currentFontName</name></member>
       <member refid="classvrv_1_1_resources_1a61a52ab8d6ed3cc694f1943bb6054036" prot="private" virt="non-virtual"><scope>vrv::Resources</scope><name>m_currentStyle</name></member>
-      <member refid="classvrv_1_1_resources_1aa320b3f5a2fc1481f89068b8303a3c65" prot="private" virt="non-virtual"><scope>vrv::Resources</scope><name>m_fontGlyphTable</name></member>
-      <member refid="classvrv_1_1_resources_1a0f1cac5d4e33de94adec05bce51a3398" prot="private" virt="non-virtual"><scope>vrv::Resources</scope><name>m_fontName</name></member>
+      <member refid="classvrv_1_1_resources_1ab57ccdaa3df2b6c0376dba6b6aaa3c47" prot="private" virt="non-virtual"><scope>vrv::Resources</scope><name>m_defaultFontName</name></member>
+      <member refid="classvrv_1_1_resources_1ab354c6e8bd561d12971aa1406c1d66d0" prot="private" virt="non-virtual"><scope>vrv::Resources</scope><name>m_fallbackFontName</name></member>
       <member refid="classvrv_1_1_resources_1a7835d2995b5e739464f156ae2c983439" prot="private" virt="non-virtual"><scope>vrv::Resources</scope><name>m_glyphNameTable</name></member>
+      <member refid="classvrv_1_1_resources_1aa54d0454f32e545500c2b88dd6c0e66b" prot="private" virt="non-virtual"><scope>vrv::Resources</scope><name>m_loadedFonts</name></member>
       <member refid="classvrv_1_1_resources_1a3a664ee3b7608fe446797623eac4fcc0" prot="private" virt="non-virtual"><scope>vrv::Resources</scope><name>m_path</name></member>
       <member refid="classvrv_1_1_resources_1a65089b88930f2aec9cec2ce74caf1aea" prot="private" virt="non-virtual"><scope>vrv::Resources</scope><name>m_textFont</name></member>
       <member refid="classvrv_1_1_resources_1aa62412fa9ac02f49c2b5f05279d77dba" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>Resources</name></member>
       <member refid="classvrv_1_1_resources_1a719c63d8a8039823a78387340ca69aeb" prot="private" virt="non-virtual"><scope>vrv::Resources</scope><name>s_defaultPath</name></member>
       <member refid="classvrv_1_1_resources_1ae451033365fb7e79b728be77f3ebd7aa" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>SelectTextFont</name></member>
+      <member refid="classvrv_1_1_resources_1afb853e55da58afb39639efa801c22651" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>SetCurrentFont</name></member>
       <member refid="classvrv_1_1_resources_1a371f5c1b14476b1b5b78364e825bdedf" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>SetDefaultPath</name></member>
+      <member refid="classvrv_1_1_resources_1a5b6bfcc955bd884b778002984cd4b737" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>SetFallback</name></member>
       <member refid="classvrv_1_1_resources_1a112c2087e61d477c8d0dece3165f0e74" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>SetFont</name></member>
       <member refid="classvrv_1_1_resources_1abcb461570a502e03dba625cf2cf02092" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>SetPath</name></member>
       <member refid="classvrv_1_1_resources_1a70b43d51304eaa6165edfa5a46e40bcf" prot="public" virt="non-virtual"><scope>vrv::Resources</scope><name>StyleAttributes</name></member>

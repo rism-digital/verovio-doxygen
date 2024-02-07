@@ -94,6 +94,7 @@ var files_dup =
     [ "featureextractor.h", "featureextractor_8h_source.html", null ],
     [ "fermata.h", "fermata_8h_source.html", null ],
     [ "fig.h", "fig_8h_source.html", null ],
+    [ "filereader.h", "filereader_8h_source.html", null ],
     [ "findfunctor.h", "findfunctor_8h_source.html", null ],
     [ "findlayerelementsfunctor.h", "findlayerelementsfunctor_8h_source.html", null ],
     [ "fing.h", "fing_8h_source.html", null ],

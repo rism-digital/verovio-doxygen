@@ -117,6 +117,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 const <a class="el" href="classvrv_1_1_point.html">Point</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_glyph.html#ae251d880e06030eeee6ef86d66d96c90">GetAnchor</a> (SMuFLGlyphAnchor anchor) const</td></tr>
 <tr class="memdesc:ae251d880e06030eeee6ef86d66d96c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the SMuFL anchor for the glyph. <br /></td></tr>
 <tr class="separator:ae251d880e06030eeee6ef86d66d96c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659233c25afa497947e075a8705a4779"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_glyph.html#a659233c25afa497947e075a8705a4779">SetXML</a> (const std::string &amp;xml)</td></tr>
+<tr class="memdesc:a659233c25afa497947e075a8705a4779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the XML (content) of the glyph.  <a href="classvrv_1_1_glyph.html#a659233c25afa497947e075a8705a4779">More...</a><br /></td></tr>
+<tr class="separator:a659233c25afa497947e075a8705a4779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dd5d2e8c5a83e62b5e423d0a65180d6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_glyph.html#a3dd5d2e8c5a83e62b5e423d0a65180d6">GetXML</a> () const</td></tr>
+<tr class="memdesc:a3dd5d2e8c5a83e62b5e423d0a65180d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the XML (content) of the glyph.  <a href="classvrv_1_1_glyph.html#a3dd5d2e8c5a83e62b5e423d0a65180d6">More...</a><br /></td></tr>
+<tr class="separator:a3dd5d2e8c5a83e62b5e423d0a65180d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, and other standard methods</div></td></tr>
 <tr class="memitem:abaa81649fa0f26a56a1ce36130bcd9ef"><td class="memItemLeft" align="right" valign="top"><a id="abaa81649fa0f26a56a1ce36130bcd9ef"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Glyph</b> ()</td></tr>
@@ -170,6 +176,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFallback</b> (bool
 <div class="textblock"><p>This class is used for storing a music font glyph. </p>
 <p>All glyph values are integers. However, for keeping precision as high as possible, they are 10 times the original values. Since the unit per em value is also 10 times the original, there is no incident on calculations elsewhere. However, it does increase the precision because units are always multiplied by a point size before being divided by the unit per em. See Ex: 10.2 become 102, with a unit per em of 20480 (instead of 2048) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3dd5d2e8c5a83e62b5e423d0a65180d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dd5d2e8c5a83e62b5e423d0a65180d6">&#9670;&nbsp;</a></span>GetXML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vrv::Glyph::GetXML </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the XML (content) of the glyph. </p>
+<p>Return the stored XML or load it from the path. </p>
+
+</div>
+</div>
 <a id="a009d8cbbd328a087d26cec6c411de075"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a009d8cbbd328a087d26cec6c411de075">&#9670;&nbsp;</a></span>SetAnchor()</h2>
 
@@ -207,6 +233,35 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFallback</b> (bool
 
 </div>
 </div>
+<a id="a659233c25afa497947e075a8705a4779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a659233c25afa497947e075a8705a4779">&#9670;&nbsp;</a></span>SetXML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vrv::Glyph::SetXML </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>xml</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the XML (content) of the glyph. </p>
+<p>This is used only for glyph added from zip archive custom fonts. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="glyph_8h_source.html">glyph.h</a></li>
 </ul>
@@ -216,7 +271,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFallback</b> (bool
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_glyph.html">Glyph</a></li>
-    <li class="footer">Generated on Tue Feb 6 2024 12:08:27 for Verovio by
+    <li class="footer">Generated on Wed Feb 7 2024 16:44:33 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
