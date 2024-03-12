@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"classvrv_1_1_view.html#a0e5d3049d1c711a8d559d013e151c663":[1,0,0,405,7],
 "classvrv_1_1_view.html#a0fcdbfbc866251cd70ecf43b28337b18":[1,0,0,405,193],
 "classvrv_1_1_view.html#a1030a9c20338a0079f17aabf135cdf23":[1,0,0,405,71],
 "classvrv_1_1_view.html#a10a5f844ac299bc92820e64a62ae0a89":[1,0,0,405,137],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "divline_8h_source.html":[2,0,69],
 "doc_8h_source.html":[2,0,70],
 "docselection_8h_source.html":[2,0,71],
-"dot_8h_source.html":[2,0,72],
-"drawinginterface_8h_source.html":[2,0,73]
+"dot_8h_source.html":[2,0,72]
 };
