@@ -164,6 +164,7 @@ var classvrv_1_1_options =
     [ "m_scale", "classvrv_1_1_options.html#a0803ac5fc1a56fea47ba279ae760f71f", null ],
     [ "m_scaleToPageSize", "classvrv_1_1_options.html#a47f9e4b65cd8c1e013f8fb8298ce88ed", null ],
     [ "m_selectors", "classvrv_1_1_options.html#ad197649417d09e309b4e38f26fa8c21a", null ],
+    [ "m_setLocale", "classvrv_1_1_options.html#ab5b8eb62cd6e01dd492709762890333a", null ],
     [ "m_showRuntime", "classvrv_1_1_options.html#afceec4fdb9cfd908bd3f27994e3bb027", null ],
     [ "m_shrinkToFit", "classvrv_1_1_options.html#a26335379e5d001bcf4014f3d9b25eb60", null ],
     [ "m_slurCurveFactor", "classvrv_1_1_options.html#a64a431024a6555bc0ae5ee7247bec6cf", null ],

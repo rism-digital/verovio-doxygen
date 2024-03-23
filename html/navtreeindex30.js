@@ -1,5 +1,9 @@
 var NAVTREEINDEX30 =
 {
+"structvrv_1_1_date_with_errors.html#ae1b5b1b355a27662c5a28e2013164982":[1,0,0,114,9],
+"structvrv_1_1_date_with_errors.html#af60f6a524184fa614358b730a6ecfa23":[1,0,0,114,8],
+"structvrv_1_1_humdrum_reference_item.html":[1,0,0,185],
+"structvrv_1_1_humdrum_reference_item.html#a0a2c0de80845438f1883bc988ab991ea":[1,0,0,185,4],
 "structvrv_1_1_humdrum_reference_item.html#a2d00099bd57a04217fa21c2a5fa3db2f":[1,0,0,185,5],
 "structvrv_1_1_humdrum_reference_item.html#a418c884eca3740683848d549dfd9342f":[1,0,0,185,1],
 "structvrv_1_1_humdrum_reference_item.html#a68e6b1101ed91a7a09b070979be1a593":[1,0,0,185,6],
