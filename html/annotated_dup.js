@@ -35,6 +35,7 @@ var annotated_dup =
       [ "AdjustXPosFunctor", "classvrv_1_1_adjust_x_pos_functor.html", "classvrv_1_1_adjust_x_pos_functor" ],
       [ "AdjustXRelForTranscriptionFunctor", "classvrv_1_1_adjust_x_rel_for_transcription_functor.html", "classvrv_1_1_adjust_x_rel_for_transcription_functor" ],
       [ "AdjustYPosFunctor", "classvrv_1_1_adjust_y_pos_functor.html", "classvrv_1_1_adjust_y_pos_functor" ],
+      [ "AdjustYRelForTranscriptionFunctor", "classvrv_1_1_adjust_y_rel_for_transcription_functor.html", "classvrv_1_1_adjust_y_rel_for_transcription_functor" ],
       [ "AlignHorizontallyFunctor", "classvrv_1_1_align_horizontally_functor.html", "classvrv_1_1_align_horizontally_functor" ],
       [ "AlignMeasuresFunctor", "classvrv_1_1_align_measures_functor.html", "classvrv_1_1_align_measures_functor" ],
       [ "Alignment", "classvrv_1_1_alignment.html", "classvrv_1_1_alignment" ],
