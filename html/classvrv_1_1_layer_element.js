@@ -84,7 +84,6 @@ var classvrv_1_1_layer_element =
     [ "m_crossStaff", "classvrv_1_1_layer_element.html#af61467813ceb6c74c05b55484007c48b", null ],
     [ "m_drawingCueSize", "classvrv_1_1_layer_element.html#a98868bde8bc6d40dbfc9b0fb5632354f", null ],
     [ "m_drawingFacsX", "classvrv_1_1_layer_element.html#a8826af23d498e796f12c455bb425d487", null ],
-    [ "m_drawingFacsY", "classvrv_1_1_layer_element.html#a3cf45495eb876c8f1a8b28f404f048b7", null ],
     [ "m_drawingXRel", "classvrv_1_1_layer_element.html#a592cebc1769e23ff79403a675a923c65", null ],
     [ "m_drawingYRel", "classvrv_1_1_layer_element.html#a33f69b421d5fbe77c6e89e2da3e46b3b", null ],
     [ "m_graceAlignment", "classvrv_1_1_layer_element.html#a6ee0bb4018d8ba684437586512ff4136", null ]

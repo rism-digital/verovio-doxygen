@@ -23,7 +23,6 @@ var files_dup =
     [ "adjustxposfunctor.h", "adjustxposfunctor_8h_source.html", null ],
     [ "adjustxrelfortranscriptionfunctor.h", "adjustxrelfortranscriptionfunctor_8h_source.html", null ],
     [ "adjustyposfunctor.h", "adjustyposfunctor_8h_source.html", null ],
-    [ "adjustyrelfortranscriptionfunctor.h", "adjustyrelfortranscriptionfunctor_8h_source.html", null ],
     [ "alignfunctor.h", "alignfunctor_8h_source.html", null ],
     [ "altsyminterface.h", "altsyminterface_8h_source.html", null ],
     [ "anchoredtext.h", "anchoredtext_8h_source.html", null ],

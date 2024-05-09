@@ -6,7 +6,7 @@ var classvrv_1_1_measure =
       [ "INVISIBLE_MEASURE_CURRENT", "classvrv_1_1_measure.html#a489541375d86be65d53f2eafb1c46ff8a8c4f55b03cedb9339d71fdc85dd5f555", null ],
       [ "INVISIBLE_MEASURE_PREVIOUS", "classvrv_1_1_measure.html#a489541375d86be65d53f2eafb1c46ff8ac4265f6e66e741ad2ddc16594bda0718", null ]
     ] ],
-    [ "Measure", "classvrv_1_1_measure.html#acf355c81495b01be09494c549195abac", null ],
+    [ "Measure", "classvrv_1_1_measure.html#a61646aedd32264c9b5c2f812dde7f402", null ],
     [ "~Measure", "classvrv_1_1_measure.html#a8d4529908c3720683e20a001b5881336", null ],
     [ "Accept", "classvrv_1_1_measure.html#af0fe3249afcd491c2c1b17a59705dc97", null ],
     [ "Accept", "classvrv_1_1_measure.html#af0fba6d5327bf0080eaf281efbc36566", null ],
@@ -73,7 +73,6 @@ var classvrv_1_1_measure =
     [ "IsFirstInSystem", "classvrv_1_1_measure.html#adf8577b487347935b6890e5b67042b5c", null ],
     [ "IsLastInSystem", "classvrv_1_1_measure.html#abdfb4aa56b83ab6a1769646f7f5b052a", null ],
     [ "IsMeasuredMusic", "classvrv_1_1_measure.html#a53fc4fd98146722a9cc4784f1b9a7498", null ],
-    [ "IsNeumeLine", "classvrv_1_1_measure.html#a6368df68944bc1713602ccba6c3e2341", null ],
     [ "IsSupportedChild", "classvrv_1_1_measure.html#a9757eaa14e314e66fc650836870a7fc3", null ],
     [ "Reset", "classvrv_1_1_measure.html#abea90dea35729eb5ce1fd1f1aad9dcda", null ],
     [ "ResetCachedDrawingX", "classvrv_1_1_measure.html#abb732e601d47f3dfe7f409d303e0bb8a", null ],
