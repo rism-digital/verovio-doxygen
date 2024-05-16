@@ -1089,7 +1089,6 @@ var hierarchy =
       [ "vrv::Functor", "classvrv_1_1_functor.html", [
         [ "vrv::AdjustXOverflowFunctor", "classvrv_1_1_adjust_x_overflow_functor.html", null ],
         [ "vrv::AdjustXRelForTranscriptionFunctor", "classvrv_1_1_adjust_x_rel_for_transcription_functor.html", null ],
-        [ "vrv::AdjustYRelForTranscriptionFunctor", "classvrv_1_1_adjust_y_rel_for_transcription_functor.html", null ],
         [ "vrv::ApplyPPUFactorFunctor", "classvrv_1_1_apply_p_p_u_factor_functor.html", null ],
         [ "vrv::ConvertMarkupAnalyticalFunctor", "classvrv_1_1_convert_markup_analytical_functor.html", null ],
         [ "vrv::ConvertMarkupArticFunctor", "classvrv_1_1_convert_markup_artic_functor.html", null ],

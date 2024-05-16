@@ -7,8 +7,6 @@ var classvrv_1_1_facsimile_interface =
     [ "GetDrawingX", "classvrv_1_1_facsimile_interface.html#a3b371e4cbee5acbf94a885a2011a081e", null ],
     [ "GetDrawingY", "classvrv_1_1_facsimile_interface.html#ab83684a3b022a92f51a1aa64b586ebfc", null ],
     [ "GetHeight", "classvrv_1_1_facsimile_interface.html#aeb56023df1f90d41fb8e5087a580a56f", null ],
-    [ "GetSurface", "classvrv_1_1_facsimile_interface.html#af4fee51649a606f38afcd97d6d3f319a", null ],
-    [ "GetSurface", "classvrv_1_1_facsimile_interface.html#a8d74f629ae6f5d87b040f4d522017fd9", null ],
     [ "GetSurfaceY", "classvrv_1_1_facsimile_interface.html#af64a523941de42e832c352d6a50124d5", null ],
     [ "GetWidth", "classvrv_1_1_facsimile_interface.html#a980c5d6d8bc03897efdd86bdb94fd593", null ],
     [ "GetZone", "classvrv_1_1_facsimile_interface.html#a3ca53c1bfe956ae1bfbb0a77f3c672b0", null ],
