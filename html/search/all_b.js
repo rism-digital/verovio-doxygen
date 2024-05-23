@@ -19,12 +19,13 @@ var searchData=
   ['ligature_762',['Ligature',['../classvrv_1_1_ligature.html',1,'vrv']]],
   ['linkinginterface_763',['LinkingInterface',['../classvrv_1_1_linking_interface.html',1,'vrv']]],
   ['liquescent_764',['Liquescent',['../classvrv_1_1_liquescent.html',1,'vrv']]],
-  ['load_765',['Load',['../classvrv_1_1_zip_file_reader.html#a1ef09100ea6be6f0e6a2a37f99fae81e',1,'vrv::ZipFileReader::Load(const std::string &amp;filename)'],['../classvrv_1_1_zip_file_reader.html#a640fb7cb092a18748aae614b9ffe8053',1,'vrv::ZipFileReader::Load(const std::vector&lt; unsigned char &gt; &amp;bytes)']]],
+  ['load_765',['Load',['../classvrv_1_1_zip_file_reader.html#a1ef09100ea6be6f0e6a2a37f99fae81e',1,'vrv::ZipFileReader']]],
   ['loadall_766',['LoadAll',['../classvrv_1_1_resources.html#ab79e6a3f74b0ea800441772eda681b63',1,'vrv::Resources']]],
-  ['loaddata_767',['LoadData',['../classvrv_1_1_toolkit.html#a9a08fd8e89da6c2c709eaae69e28b2b1',1,'vrv::Toolkit']]],
-  ['loadfile_768',['LoadFile',['../classvrv_1_1_toolkit.html#a3859f9341d415376b7d8f11a1aa8e352',1,'vrv::Toolkit']]],
-  ['loadfooter_769',['LoadFooter',['../classvrv_1_1_running_element.html#a809a5cb7c0a8a873168576894ea5d3a0',1,'vrv::RunningElement']]],
-  ['loadzipdatabase64_770',['LoadZipDataBase64',['../classvrv_1_1_toolkit.html#aeae2ad736af0f0d436c9131745057556',1,'vrv::Toolkit']]],
-  ['loadzipdatabuffer_771',['LoadZipDataBuffer',['../classvrv_1_1_toolkit.html#abf4167617faed8347a7da3291e927e05',1,'vrv::Toolkit']]],
-  ['lv_772',['Lv',['../classvrv_1_1_lv.html',1,'vrv']]]
+  ['loadbytes_767',['LoadBytes',['../classvrv_1_1_zip_file_reader.html#af8d5de2b5412e72104c97c3605aabb59',1,'vrv::ZipFileReader']]],
+  ['loaddata_768',['LoadData',['../classvrv_1_1_toolkit.html#a9a08fd8e89da6c2c709eaae69e28b2b1',1,'vrv::Toolkit']]],
+  ['loadfile_769',['LoadFile',['../classvrv_1_1_toolkit.html#a3859f9341d415376b7d8f11a1aa8e352',1,'vrv::Toolkit']]],
+  ['loadfooter_770',['LoadFooter',['../classvrv_1_1_running_element.html#a809a5cb7c0a8a873168576894ea5d3a0',1,'vrv::RunningElement']]],
+  ['loadzipdatabase64_771',['LoadZipDataBase64',['../classvrv_1_1_toolkit.html#aeae2ad736af0f0d436c9131745057556',1,'vrv::Toolkit']]],
+  ['loadzipdatabuffer_772',['LoadZipDataBuffer',['../classvrv_1_1_toolkit.html#abf4167617faed8347a7da3291e927e05',1,'vrv::Toolkit']]],
+  ['lv_773',['Lv',['../classvrv_1_1_lv.html',1,'vrv']]]
 ];
