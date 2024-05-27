@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['zipfilereader_1624',['ZipFileReader',['../classvrv_1_1_zip_file_reader.html',1,'vrv']]],
-  ['zone_1625',['Zone',['../classvrv_1_1_zone.html',1,'vrv']]]
+  ['verse_1625',['Verse',['../classvrv_1_1_verse.html',1,'vrv']]],
+  ['view_1626',['View',['../classvrv_1_1_view.html',1,'vrv']]],
+  ['visiblestaffdeforgrpobject_1627',['VisibleStaffDefOrGrpObject',['../classvrv_1_1_visible_staff_def_or_grp_object.html',1,'vrv']]]
 ];

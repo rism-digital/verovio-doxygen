@@ -18,6 +18,7 @@ var searchData=
   ['optionstaffrel_910',['OptionStaffrel',['../classvrv_1_1_option_staffrel.html',1,'vrv']]],
   ['optionstring_911',['OptionString',['../classvrv_1_1_option_string.html',1,'vrv']]],
   ['orig_912',['Orig',['../classvrv_1_1_orig.html',1,'vrv']]],
-  ['ornam_913',['Ornam',['../classvrv_1_1_ornam.html',1,'vrv']]],
-  ['output_914',['Output',['../classvrv_1_1_output.html',1,'vrv']]]
+  ['oriscus_913',['Oriscus',['../classvrv_1_1_oriscus.html',1,'vrv']]],
+  ['ornam_914',['Ornam',['../classvrv_1_1_ornam.html',1,'vrv']]],
+  ['output_915',['Output',['../classvrv_1_1_output.html',1,'vrv']]]
 ];

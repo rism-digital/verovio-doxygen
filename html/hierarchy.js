@@ -162,8 +162,10 @@ var hierarchy =
       [ "vrv::Neume", "classvrv_1_1_neume.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
+      [ "vrv::Oriscus", "classvrv_1_1_oriscus.html", null ],
       [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
+      [ "vrv::Quilisma", "classvrv_1_1_quilisma.html", null ],
       [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
       [ "vrv::RepeatMark", "classvrv_1_1_repeat_mark.html", null ],
@@ -222,8 +224,10 @@ var hierarchy =
         [ "vrv::Nc", "classvrv_1_1_nc.html", null ],
         [ "vrv::Neume", "classvrv_1_1_neume.html", null ],
         [ "vrv::Note", "classvrv_1_1_note.html", null ],
+        [ "vrv::Oriscus", "classvrv_1_1_oriscus.html", null ],
         [ "vrv::Plica", "classvrv_1_1_plica.html", null ],
         [ "vrv::Proport", "classvrv_1_1_proport.html", null ],
+        [ "vrv::Quilisma", "classvrv_1_1_quilisma.html", null ],
         [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
         [ "vrv::Space", "classvrv_1_1_space.html", null ],
         [ "vrv::Stem", "classvrv_1_1_stem.html", null ],
@@ -601,7 +605,9 @@ var hierarchy =
         [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
         [ "vrv::Liquescent", "classvrv_1_1_liquescent.html", null ],
         [ "vrv::Nc", "classvrv_1_1_nc.html", null ],
-        [ "vrv::Note", "classvrv_1_1_note.html", null ]
+        [ "vrv::Note", "classvrv_1_1_note.html", null ],
+        [ "vrv::Oriscus", "classvrv_1_1_oriscus.html", null ],
+        [ "vrv::Quilisma", "classvrv_1_1_quilisma.html", null ]
       ] ]
     ] ],
     [ "AttNoteGesTab", null, [
@@ -804,6 +810,8 @@ var hierarchy =
         [ "vrv::MultiRest", "classvrv_1_1_multi_rest.html", null ],
         [ "vrv::Nc", "classvrv_1_1_nc.html", null ],
         [ "vrv::Note", "classvrv_1_1_note.html", null ],
+        [ "vrv::Oriscus", "classvrv_1_1_oriscus.html", null ],
+        [ "vrv::Quilisma", "classvrv_1_1_quilisma.html", null ],
         [ "vrv::Rest", "classvrv_1_1_rest.html", null ]
       ] ]
     ] ],
