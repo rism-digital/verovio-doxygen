@@ -115,6 +115,7 @@ var classvrv_1_1_view =
     [ "DrawNotFilledEllipse", "classvrv_1_1_view.html#a9c5433e3e9f4bffd5594cf5c44c344e8", null ],
     [ "DrawNotFilledRectangle", "classvrv_1_1_view.html#a467521c9dfcfa1f3963a0fd6cba5f1b6", null ],
     [ "DrawNum", "classvrv_1_1_view.html#a1225ad274bb4a5f2ed8ddd7217b279b0", null ],
+    [ "DrawObliqueLine", "classvrv_1_1_view.html#abb746f9695fc784829d7047f53960cee", null ],
     [ "DrawObliquePolygon", "classvrv_1_1_view.html#a91c2eb84f422eec8085474a75b9aed82", null ],
     [ "DrawOctave", "classvrv_1_1_view.html#ac0c76bea5f32e2f8074693c14c2e6195", null ],
     [ "DrawPageElement", "classvrv_1_1_view.html#a145de60dc07293a5a74122ebb76d677a", null ],
