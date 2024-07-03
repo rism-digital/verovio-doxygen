@@ -1078,6 +1078,7 @@ var hierarchy =
     ] ],
     [ "vrv::DiatonicSort", "classvrv_1_1_diatonic_sort.html", null ],
     [ "vrv::DocSelection", "classvrv_1_1_doc_selection.html", null ],
+    [ "vrv::Nc::DrawingGlyph", "structvrv_1_1_nc_1_1_drawing_glyph.html", null ],
     [ "vrv::DrawingListInterface", "classvrv_1_1_drawing_list_interface.html", [
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],

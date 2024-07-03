@@ -1,5 +1,9 @@
 var NAVTREEINDEX30 =
 {
+"rend_8h_source.html":[2,0,182],
+"repeatmark_8h_source.html":[2,0,183],
+"resetfunctor_8h_source.html":[2,0,184],
+"resources_8h_source.html":[2,0,185],
 "rest_8h_source.html":[2,0,186],
 "restore_8h_source.html":[2,0,187],
 "runningelement_8h_source.html":[2,0,188],
@@ -87,6 +91,10 @@ var NAVTREEINDEX30 =
 "structvrv_1_1_m_i_d_i_note.html":[1,0,0,235],
 "structvrv_1_1_m_i_d_i_note.html#a32128781fed4395e451720d0567ccac1":[1,0,0,235,0],
 "structvrv_1_1_m_i_d_i_note.html#ad116154282fde8e30c39fbc0085bbf5a":[1,0,0,235,1],
+"structvrv_1_1_nc_1_1_drawing_glyph.html":[1,0,0,245,0],
+"structvrv_1_1_nc_1_1_drawing_glyph.html#a172d503469a4b57c798e31893188cf9a":[1,0,0,245,0,2],
+"structvrv_1_1_nc_1_1_drawing_glyph.html#a1887826a5b066c937d1930578a28ebf3":[1,0,0,245,0,1],
+"structvrv_1_1_nc_1_1_drawing_glyph.html#a70fc51ca7a8b55cfb8317e8b5a289b18":[1,0,0,245,0,0],
 "structvrv_1_1_near_end_collision.html":[1,0,0,246],
 "structvrv_1_1_near_end_collision.html#a31560c558c0358b24fa8ab7aedf16e61":[1,0,0,246,1],
 "structvrv_1_1_near_end_collision.html#a84cb4fb1addcd8a4f1a1cec64f759302":[1,0,0,246,0],

@@ -110,6 +110,7 @@ var classvrv_1_1_view =
     [ "DrawMultiRpt", "classvrv_1_1_view.html#ac24e35ba414d2caf69ee5a5f16c9daf2", null ],
     [ "DrawNc", "classvrv_1_1_view.html#a9ace0083ad59fc48cc9ded56c63d5fb5", null ],
     [ "DrawNcAsNotehead", "classvrv_1_1_view.html#aa3161cd45c4417e5cc11eb365676660d", null ],
+    [ "DrawNcGlyphs", "classvrv_1_1_view.html#a02d9a3445a975c5b32cb82eb59e712bd", null ],
     [ "DrawNeume", "classvrv_1_1_view.html#acc3b98f5763865e62aaa97b2ed2f291d", null ],
     [ "DrawNote", "classvrv_1_1_view.html#aaf547cea61f0aea7e0d4a9844b9b3360", null ],
     [ "DrawNotFilledEllipse", "classvrv_1_1_view.html#a9c5433e3e9f4bffd5594cf5c44c344e8", null ],

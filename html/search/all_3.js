@@ -22,10 +22,11 @@ var searchData=
   ['dot_257',['Dot',['../classvrv_1_1_dot.html',1,'vrv']]],
   ['dots_258',['Dots',['../classvrv_1_1_dots.html',1,'vrv']]],
   ['drawcurrentpage_259',['DrawCurrentPage',['../classvrv_1_1_view.html#a1ab1a369039358ad7b6440c62b442ceb',1,'vrv::View']]],
-  ['drawingisvisible_260',['DrawingIsVisible',['../classvrv_1_1_staff.html#a906d08aab4882552a9bc231b8e474b11',1,'vrv::Staff']]],
-  ['drawinglistinterface_261',['DrawingListInterface',['../classvrv_1_1_drawing_list_interface.html',1,'vrv']]],
-  ['drawmetersigfigures_262',['DrawMeterSigFigures',['../classvrv_1_1_view.html#ac63129548ebe61c6e334a56e05d5495d',1,'vrv::View']]],
-  ['drawplaceholder_263',['DrawPlaceholder',['../classvrv_1_1_b_box_device_context.html#aecb9534cc060d29f5ce315ce6c252ad4',1,'vrv::BBoxDeviceContext::DrawPlaceholder()'],['../classvrv_1_1_device_context.html#a98b03a16d2a3ead9ac3d7e3bafe2490d',1,'vrv::DeviceContext::DrawPlaceholder()']]],
-  ['durationinterface_264',['DurationInterface',['../classvrv_1_1_duration_interface.html',1,'vrv']]],
-  ['dynam_265',['Dynam',['../classvrv_1_1_dynam.html',1,'vrv']]]
+  ['drawingglyph_260',['DrawingGlyph',['../structvrv_1_1_nc_1_1_drawing_glyph.html',1,'vrv::Nc']]],
+  ['drawingisvisible_261',['DrawingIsVisible',['../classvrv_1_1_staff.html#a906d08aab4882552a9bc231b8e474b11',1,'vrv::Staff']]],
+  ['drawinglistinterface_262',['DrawingListInterface',['../classvrv_1_1_drawing_list_interface.html',1,'vrv']]],
+  ['drawmetersigfigures_263',['DrawMeterSigFigures',['../classvrv_1_1_view.html#ac63129548ebe61c6e334a56e05d5495d',1,'vrv::View']]],
+  ['drawplaceholder_264',['DrawPlaceholder',['../classvrv_1_1_b_box_device_context.html#aecb9534cc060d29f5ce315ce6c252ad4',1,'vrv::BBoxDeviceContext::DrawPlaceholder()'],['../classvrv_1_1_device_context.html#a98b03a16d2a3ead9ac3d7e3bafe2490d',1,'vrv::DeviceContext::DrawPlaceholder()']]],
+  ['durationinterface_265',['DurationInterface',['../classvrv_1_1_duration_interface.html',1,'vrv']]],
+  ['dynam_266',['Dynam',['../classvrv_1_1_dynam.html',1,'vrv']]]
 ];
