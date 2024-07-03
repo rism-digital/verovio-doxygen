@@ -140,6 +140,8 @@ var classvrv_1_1_object =
     [ "IsSupportedChild", "classvrv_1_1_object.html#a06ffb8f7f251aeea862abe1f76b5599d", null ],
     [ "IsSystemElement", "classvrv_1_1_object.html#a334a7956ff32ade0704f4afdd74f37a6", null ],
     [ "IsTextElement", "classvrv_1_1_object.html#a958bf53eb4117b0438aa5ddb9264c1c8", null ],
+    [ "LogDebugTree", "classvrv_1_1_object.html#aab9ecbebd597a128912b7dd43a410b90", null ],
+    [ "LogDebugTreeMsg", "classvrv_1_1_object.html#af9632e5d159e4dcdf0f91e127be0fb4a", null ],
     [ "Modify", "classvrv_1_1_object.html#a30996d1e8460f2110900b490425c16ec", null ],
     [ "MoveChildrenFrom", "classvrv_1_1_object.html#aa846e8099e10d6cf427e8255e4a62dd4", null ],
     [ "MoveItselfTo", "classvrv_1_1_object.html#ac7063ea155c08f4e39e5c59b735f1d9e", null ],

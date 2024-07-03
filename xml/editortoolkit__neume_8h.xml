@@ -253,6 +253,8 @@
         </childnode>
         <childnode refid="27" relation="include">
         </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
       </node>
       <node id="53">
         <label>scoredefinterface.h</label>
@@ -689,8 +691,8 @@
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>(x<sp/>-<sp/>ulx)<sp/>*<sp/>tan(rotate<sp/>*<sp/>M_PI<sp/>/<sp/>180.0);</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uly<sp/>=<sp/>uly<sp/>+<sp/>offset;</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lry<sp/>=<sp/>lry<sp/>+<sp/>offset;</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xDiff<sp/>=<sp/>std::abs(x<sp/>-<sp/>ulx);</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>yDiff<sp/>=<sp/>std::abs(y<sp/>-<sp/>uly);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xDiff<sp/>=<sp/>std::max((ulx<sp/>&gt;<sp/>x<sp/>?<sp/>ulx<sp/>-<sp/>x<sp/>:<sp/>0),<sp/>(x<sp/>&gt;<sp/>lrx<sp/>?<sp/>x<sp/>-<sp/>lrx<sp/>:<sp/>0));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>yDiff<sp/>=<sp/>std::max((uly<sp/>&gt;<sp/>y<sp/>?<sp/>uly<sp/>-<sp/>y<sp/>:<sp/>0),<sp/>(y<sp/>&gt;<sp/>lry<sp/>?<sp/>y<sp/>-<sp/>lry<sp/>:<sp/>0));</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight></codeline>
 <codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(xDiff<sp/>*<sp/>xDiff<sp/>+<sp/>yDiff<sp/>*<sp/>yDiff);</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>

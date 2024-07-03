@@ -23,6 +23,7 @@
     <innerclass refid="classvrv_1_1_adjust_grace_x_pos_functor" prot="public">vrv::AdjustGraceXPosFunctor</innerclass>
     <innerclass refid="classvrv_1_1_adjust_harm_grps_spacing_functor" prot="public">vrv::AdjustHarmGrpsSpacingFunctor</innerclass>
     <innerclass refid="classvrv_1_1_adjust_layers_functor" prot="public">vrv::AdjustLayersFunctor</innerclass>
+    <innerclass refid="classvrv_1_1_adjust_neume_x_functor" prot="public">vrv::AdjustNeumeXFunctor</innerclass>
     <innerclass refid="classvrv_1_1_adjust_slurs_functor" prot="public">vrv::AdjustSlursFunctor</innerclass>
     <innerclass refid="classvrv_1_1_adjust_staff_overlap_functor" prot="public">vrv::AdjustStaffOverlapFunctor</innerclass>
     <innerclass refid="classvrv_1_1_adjust_syl_spacing_functor" prot="public">vrv::AdjustSylSpacingFunctor</innerclass>
@@ -81,7 +82,7 @@
     <innerclass refid="classvrv_1_1_calc_chord_note_heads_functor" prot="public">vrv::CalcChordNoteHeadsFunctor</innerclass>
     <innerclass refid="classvrv_1_1_calc_dots_functor" prot="public">vrv::CalcDotsFunctor</innerclass>
     <innerclass refid="classvrv_1_1_calc_ledger_lines_functor" prot="public">vrv::CalcLedgerLinesFunctor</innerclass>
-    <innerclass refid="classvrv_1_1_calc_ligature_note_pos_functor" prot="public">vrv::CalcLigatureNotePosFunctor</innerclass>
+    <innerclass refid="classvrv_1_1_calc_ligature_or_neume_pos_functor" prot="public">vrv::CalcLigatureOrNeumePosFunctor</innerclass>
     <innerclass refid="classvrv_1_1_calc_slur_direction_functor" prot="public">vrv::CalcSlurDirectionFunctor</innerclass>
     <innerclass refid="classvrv_1_1_calc_spanning_beam_spans_functor" prot="public">vrv::CalcSpanningBeamSpansFunctor</innerclass>
     <innerclass refid="classvrv_1_1_calc_stem_functor" prot="public">vrv::CalcStemFunctor</innerclass>
@@ -971,7 +972,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="29" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="29" bodyend="57"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="30" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="30" bodyend="58"/>
       </memberdef>
       <memberdef kind="enum" id="layerelement_8h_1aa6c1325b6ed491faed83e6e57047f372" prot="public" static="no" strong="no">
         <type></type>
@@ -5418,6 +5419,14 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="smufl_8h_1a6e3c7b5a84ebcdfeeca4461ff16ef24ca0b48c07949eb6cedebafd84689689b6f" prot="public">
+          <name>SMUFL_E9A1_chantPunctumDeminutum</name>
+          <initializer>= 0xE9A1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <enumvalue id="smufl_8h_1a6e3c7b5a84ebcdfeeca4461ff16ef24ca03fb4bf1e36d560b91056ef992855007" prot="public">
           <name>SMUFL_E9B0_chantPodatusLower</name>
           <initializer>= 0xE9B0</initializer>
@@ -5677,6 +5686,14 @@
         <enumvalue id="smufl_8h_1a6e3c7b5a84ebcdfeeca4461ff16ef24ca065ffed8b9f516d17c37bbcfb4b5c996" prot="public">
           <name>SMUFL_EA06_chantCustosStemUpPosMiddle</name>
           <initializer>= 0xEA06</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="smufl_8h_1a6e3c7b5a84ebcdfeeca4461ff16ef24cafc79d0f59a4f6420d24c0b41bc1599a4" prot="public">
+          <name>SMUFL_EA2A_medRenOriscusCMN</name>
+          <initializer>= 0xEA2A</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -6904,7 +6921,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/smufl.h" line="24" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/smufl.h" bodystart="24" bodyend="654"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/smufl.h" line="24" column="6" bodyfile="/home/runner/work/verovio/verovio/include/vrv/smufl.h" bodystart="24" bodyend="656"/>
       </memberdef>
       <memberdef kind="enum" id="toolkitdef_8h_1a6feb6bdf079a5bd110d39bf405870a8d" prot="public" static="no" strong="no">
         <type></type>
