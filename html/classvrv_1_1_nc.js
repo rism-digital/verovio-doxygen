@@ -14,6 +14,7 @@ var classvrv_1_1_nc =
     [ "GetPitchInterface", "classvrv_1_1_nc.html#adbc6d6fa3a17d0746f1b95ecc4ed74e1", null ],
     [ "GetPitchInterface", "classvrv_1_1_nc.html#a6bcc4c30d15a1b757a8a5ac93c15f09c", null ],
     [ "IsSupportedChild", "classvrv_1_1_nc.html#ac5958e4d125d736c5c1b27a012baef75", null ],
+    [ "PitchOrLocDifferenceTo", "classvrv_1_1_nc.html#aaaa97986f6e4a2251996515827a17e71", null ],
     [ "Reset", "classvrv_1_1_nc.html#ad21af130a5d0b2f41ab0c69ecff02b10", null ],
     [ "m_drawingGlyphs", "classvrv_1_1_nc.html#a0e876488ecf5a622bb71a09eba15d0a4", null ]
 ];
