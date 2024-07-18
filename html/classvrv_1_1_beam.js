@@ -7,6 +7,7 @@ var classvrv_1_1_beam =
     [ "AcceptEnd", "classvrv_1_1_beam.html#a4bb6485ecd656962131dace79d9626f6", null ],
     [ "AcceptEnd", "classvrv_1_1_beam.html#a31f984c65a4bb7d44bb57aeadfeac8d2", null ],
     [ "Clone", "classvrv_1_1_beam.html#ac0e454de096901edf2da61d1d07c80b0", null ],
+    [ "CloneReset", "classvrv_1_1_beam.html#a45e6311da15fa719e6fbdc8fe32600ed", null ],
     [ "FilterList", "classvrv_1_1_beam.html#a2b3cdfa137cce9ffc5df789eb8f063b7", null ],
     [ "GetAdditionalBeamCount", "classvrv_1_1_beam.html#a091ac4c2fb6cdd046b679e61069f638d", null ],
     [ "GetBeamDrawingInterface", "classvrv_1_1_beam.html#a30b0869084e93fa6f7b3b63120f2aae2", null ],

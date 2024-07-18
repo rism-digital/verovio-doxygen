@@ -301,106 +301,108 @@ $(document).ready(function(){initNavTree('beam_8h_source.html',''); initResizabl
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">void</span> Reset() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Beam&quot;</span>; }</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    BeamDrawingInterface *GetBeamDrawingInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;BeamDrawingInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keyword">const</span> BeamDrawingInterface *GetBeamDrawingInterface()<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const BeamDrawingInterface *&gt;(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    }</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordtype">int</span> GetNoteCount()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;GetChildCount(NOTE); }</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_beam.html#a2222ff99c31c7384fc4e3c6dff08b47a">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keyword">const</span> ArrayOfBeamElementCoords *GetElementCoords();</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_beam.html#a45e6311da15fa719e6fbdc8fe32600ed">CloneReset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    BeamDrawingInterface *GetBeamDrawingInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;BeamDrawingInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keyword">const</span> BeamDrawingInterface *GetBeamDrawingInterface()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const BeamDrawingInterface *&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    }</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordtype">int</span> GetNoteCount()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;GetChildCount(NOTE); }</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_beam.html#a2222ff99c31c7384fc4e3c6dff08b47a">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_beam.html#a26f7b2d176314772a13b06ec15d23758">IsTabBeam</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordtype">bool</span> HasStemSameasBeam()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_stemSameas); }</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    Beam *GetStemSameasBeam() { <span class="keywordflow">return</span> m_stemSameas; }</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keyword">const</span> Beam *GetStemSameasBeam()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_stemSameas; }</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordtype">void</span> SetStemSameasBeam(Beam *stemSameas) { m_stemSameas = stemSameas; }</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    std::pair&lt;int, int&gt; <a class="code" href="classvrv_1_1_beam.html#a091ac4c2fb6cdd046b679e61069f638d">GetAdditionalBeamCount</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keyword">const</span> ArrayOfBeamElementCoords *GetElementCoords();</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_beam.html#a26f7b2d176314772a13b06ec15d23758">IsTabBeam</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">bool</span> HasStemSameasBeam()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_stemSameas); }</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    Beam *GetStemSameasBeam() { <span class="keywordflow">return</span> m_stemSameas; }</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keyword">const</span> Beam *GetStemSameasBeam()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_stemSameas; }</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordtype">void</span> SetStemSameasBeam(Beam *stemSameas) { m_stemSameas = stemSameas; }</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam.html#ac9348763f6a1dec01f260884674ca79a">GetBeamPartDuration</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">bool</span> includeRests = <span class="keyword">true</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam.html#ac9348763f6a1dec01f260884674ca79a">GetBeamPartDuration</a>(<span class="keyword">const</span> Object *<span class="keywordtype">object</span>, <span class="keywordtype">bool</span> includeRests = <span class="keyword">true</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_beam.html#a4fb497638bec34cb738fae7e3419fe52">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_beam.html#a4fb497638bec34cb738fae7e3419fe52">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_beam.html#a2b3cdfa137cce9ffc5df789eb8f063b7">FilterList</a>(ListOfConstObjects &amp;childList) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_beam.html#ace52578a0183bd8725abe2c07e92d77a">SetElementShortening</a>(<span class="keywordtype">int</span> shortening) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    std::pair&lt;int, int&gt; <a class="code" href="classvrv_1_1_beam.html#a091ac4c2fb6cdd046b679e61069f638d">GetAdditionalBeamCount</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam.html#ac9348763f6a1dec01f260884674ca79a">GetBeamPartDuration</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">bool</span> includeRests = <span class="keyword">true</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam.html#ac9348763f6a1dec01f260884674ca79a">GetBeamPartDuration</a>(<span class="keyword">const</span> Object *<span class="keywordtype">object</span>, <span class="keywordtype">bool</span> includeRests = <span class="keyword">true</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_beam.html#a4fb497638bec34cb738fae7e3419fe52">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_beam.html#a4fb497638bec34cb738fae7e3419fe52">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_beam.html#a2b3cdfa137cce9ffc5df789eb8f063b7">FilterList</a>(ListOfConstObjects &amp;childList) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    Beam *m_stemSameas;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    BeamSegment m_beamSegment;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;};</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_beam.html#ace52578a0183bd8725abe2c07e92d77a">SetElementShortening</a>(<span class="keywordtype">int</span> shortening) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    Beam *m_stemSameas;</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">// BeamElementCoord</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
-<div class="line"><a name="l00395"></a><span class="lineno"><a class="line" href="classvrv_1_1_beam_element_coord.html">  395</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_beam_element_coord.html">BeamElementCoord</a> {</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <a class="code" href="classvrv_1_1_beam_element_coord.html">BeamElementCoord</a>()</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    {</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        m_element = NULL;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        m_closestNote = NULL;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        m_tabDurSym = NULL;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        m_stem = NULL;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        m_overlapMargin = 0;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        m_maxShortening = -1;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        m_beamRelativePlace = BEAMPLACE_NONE;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        m_partialFlagPlace = BEAMPLACE_NONE;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    }</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_beam_element_coord.html">BeamElementCoord</a>();</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    data_STEMDIRECTION <a class="code" href="classvrv_1_1_beam_element_coord.html#ab840311185d74d49af8357f0d2909db6">GetStemDir</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keywordtype">void</span> SetDrawingStemDir(data_STEMDIRECTION stemDir, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_beam_segment.html">BeamSegment</a> *segment,</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvrv_1_1_beam_drawing_interface.html">BeamDrawingInterface</a> *interface);</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160; </div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_beam_element_coord.html#abd402f9d51ce8ecc55ab130c148e3c27">SetClosestNoteOrTabDurSym</a>(data_STEMDIRECTION stemDir, <span class="keywordtype">bool</span> outsideStaff);</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_element_coord.html#a1c6114787f017c6fbf9806d3bb64c05c">CalculateStemLength</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff, data_STEMDIRECTION stemDir, <span class="keywordtype">bool</span> isHorizontal, <span class="keywordtype">int</span> preferredDur) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_element_coord.html#a027f4c152d623e5cd81c3f659d15ac05">CalculateStemLengthTab</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff, data_STEMDIRECTION stemDir) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_element_coord.html#ae2413c9f9e24d8829395823ffa2ed51c">CalculateStemModAdjustment</a>(<span class="keywordtype">int</span> stemLength, <span class="keywordtype">int</span> directionBias) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    BeamSegment m_beamSegment;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;};</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">// BeamElementCoord</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00400"></a><span class="lineno"><a class="line" href="classvrv_1_1_beam_element_coord.html">  400</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_beam_element_coord.html">BeamElementCoord</a> {</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <a class="code" href="classvrv_1_1_beam_element_coord.html">BeamElementCoord</a>()</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    {</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        m_element = NULL;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        m_closestNote = NULL;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        m_tabDurSym = NULL;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        m_stem = NULL;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        m_overlapMargin = 0;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        m_maxShortening = -1;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        m_beamRelativePlace = BEAMPLACE_NONE;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        m_partialFlagPlace = BEAMPLACE_NONE;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    }</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_beam_element_coord.html">BeamElementCoord</a>();</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160; </div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    data_STEMDIRECTION <a class="code" href="classvrv_1_1_beam_element_coord.html#ab840311185d74d49af8357f0d2909db6">GetStemDir</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordtype">void</span> SetDrawingStemDir(data_STEMDIRECTION stemDir, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_beam_segment.html">BeamSegment</a> *segment,</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvrv_1_1_beam_drawing_interface.html">BeamDrawingInterface</a> *interface);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_beam_element_coord.html#abd402f9d51ce8ecc55ab130c148e3c27">SetClosestNoteOrTabDurSym</a>(data_STEMDIRECTION stemDir, <span class="keywordtype">bool</span> outsideStaff);</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_element_coord.html#a1c6114787f017c6fbf9806d3bb64c05c">CalculateStemLength</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff, data_STEMDIRECTION stemDir, <span class="keywordtype">bool</span> isHorizontal, <span class="keywordtype">int</span> preferredDur) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_element_coord.html#a027f4c152d623e5cd81c3f659d15ac05">CalculateStemLengthTab</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff, data_STEMDIRECTION stemDir) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <a class="code" href="classvrv_1_1_stemmed_drawing_interface.html">StemmedDrawingInterface</a> *<a class="code" href="classvrv_1_1_beam_element_coord.html#a93940155d8a91b590cc29bcda00ec8ec">GetStemHolderInterface</a>();</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160; </div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_beam_element_coord.html#a4d642d3e677fe0c54be30d4b2c14524f">UpdateStemLength</a>(<a class="code" href="classvrv_1_1_stemmed_drawing_interface.html">StemmedDrawingInterface</a> *stemmedInterface, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> y2, <span class="keywordtype">int</span> stemAdjust, <span class="keywordtype">bool</span> inMixedBeam);</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_beam_element_coord.html#ae2413c9f9e24d8829395823ffa2ed51c">CalculateStemModAdjustment</a>(<span class="keywordtype">int</span> stemLength, <span class="keywordtype">int</span> directionBias) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160; </div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <a class="code" href="classvrv_1_1_stemmed_drawing_interface.html">StemmedDrawingInterface</a> *<a class="code" href="classvrv_1_1_beam_element_coord.html#a93940155d8a91b590cc29bcda00ec8ec">GetStemHolderInterface</a>();</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160; </div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordtype">int</span> m_x;</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keywordtype">int</span> m_yBeam; <span class="comment">// y value of stem top position</span></div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <span class="keywordtype">int</span> m_dur; <span class="comment">// drawing duration</span></div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordtype">int</span> m_breaksec;</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keywordtype">int</span> m_overlapMargin;</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordtype">int</span> m_maxShortening; <span class="comment">// maximum allowed shortening in half units</span></div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <span class="keywordtype">bool</span> m_centered; <span class="comment">// beam is centered on the line</span></div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    data_BEAMPLACE m_beamRelativePlace;</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keywordtype">char</span> m_partialFlags[MAX_DURATION_PARTIALS];</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    data_BEAMPLACE m_partialFlagPlace;</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *m_element;</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <a class="code" href="classvrv_1_1_note.html">Note</a> *m_closestNote;</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    <a class="code" href="classvrv_1_1_tab_dur_sym.html">TabDurSym</a> *m_tabDurSym;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <a class="code" href="classvrv_1_1_stem.html">Stem</a> *m_stem; <span class="comment">// a pointer to the stem in order to avoid to have to re-cast it</span></div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;};</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160; </div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160; </div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_beam_element_coord.html#a4d642d3e677fe0c54be30d4b2c14524f">UpdateStemLength</a>(<a class="code" href="classvrv_1_1_stemmed_drawing_interface.html">StemmedDrawingInterface</a> *stemmedInterface, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> y2, <span class="keywordtype">int</span> stemAdjust, <span class="keywordtype">bool</span> inMixedBeam);</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160; </div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordtype">int</span> m_x;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <span class="keywordtype">int</span> m_yBeam; <span class="comment">// y value of stem top position</span></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <span class="keywordtype">int</span> m_dur; <span class="comment">// drawing duration</span></div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keywordtype">int</span> m_breaksec;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    <span class="keywordtype">int</span> m_overlapMargin;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="keywordtype">int</span> m_maxShortening; <span class="comment">// maximum allowed shortening in half units</span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <span class="keywordtype">bool</span> m_centered; <span class="comment">// beam is centered on the line</span></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    data_BEAMPLACE m_beamRelativePlace;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <span class="keywordtype">char</span> m_partialFlags[MAX_DURATION_PARTIALS];</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    data_BEAMPLACE m_partialFlagPlace;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *m_element;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <a class="code" href="classvrv_1_1_note.html">Note</a> *m_closestNote;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    <a class="code" href="classvrv_1_1_tab_dur_sym.html">TabDurSym</a> *m_tabDurSym;</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    <a class="code" href="classvrv_1_1_stem.html">Stem</a> *m_stem; <span class="comment">// a pointer to the stem in order to avoid to have to re-cast it</span></div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;};</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160; </div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_staff_html"><div class="ttname"><a href="classvrv_1_1_staff.html">vrv::Staff</a></div><div class="ttdoc">This class represents a staff in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> staff.h:79</div></div>
@@ -409,6 +411,7 @@ $(document).ready(function(){initNavTree('beam_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassvrv_1_1_beam_segment_html_a2f8cd54b0cdac4e3db644a8c3bd22e19"><div class="ttname"><a href="classvrv_1_1_beam_segment.html#a2f8cd54b0cdac4e3db644a8c3bd22e19">vrv::BeamSegment::m_beamElementCoordRefs</a></div><div class="ttdeci">ArrayOfBeamElementCoords m_beamElementCoordRefs</div><div class="ttdoc">An array of coordinates for each element.</div><div class="ttdef"><b>Definition:</b> beam.h:202</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_segment_html_a1650d7d3d85c0a06a2bc642a00024254"><div class="ttname"><a href="classvrv_1_1_beam_segment.html#a1650d7d3d85c0a06a2bc642a00024254">vrv::BeamSegment::RequestStaffSpace</a></div><div class="ttdeci">void RequestStaffSpace(const Doc *doc, const BeamDrawingInterface *beamInterface)</div><div class="ttdoc">Request staff space for mixed beams if minimal stem length is too short.</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_element_coord_html_ae2413c9f9e24d8829395823ffa2ed51c"><div class="ttname"><a href="classvrv_1_1_beam_element_coord.html#ae2413c9f9e24d8829395823ffa2ed51c">vrv::BeamElementCoord::CalculateStemModAdjustment</a></div><div class="ttdeci">int CalculateStemModAdjustment(int stemLength, int directionBias) const</div><div class="ttdoc">Return stem length adjustment in half units, depending on the @stem.mode attribute.</div></div>
+<div class="ttc" id="aclassvrv_1_1_beam_html_a45e6311da15fa719e6fbdc8fe32600ed"><div class="ttname"><a href="classvrv_1_1_beam.html#a45e6311da15fa719e6fbdc8fe32600ed">vrv::Beam::CloneReset</a></div><div class="ttdeci">void CloneReset() override</div><div class="ttdoc">Overriding CloneReset() method to be called after copy / assignment calls.</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_html_ace52578a0183bd8725abe2c07e92d77a"><div class="ttname"><a href="classvrv_1_1_beam.html#ace52578a0183bd8725abe2c07e92d77a">vrv::Beam::SetElementShortening</a></div><div class="ttdeci">void SetElementShortening(int shortening) override</div><div class="ttdoc">See LayerElement::SetElementShortening.</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:40</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_span_segment_html_aeb452897f9114b72fbe690e5da506355"><div class="ttname"><a href="classvrv_1_1_beam_span_segment.html#aeb452897f9114b72fbe690e5da506355">vrv::BeamSpanSegment::SetSpanningType</a></div><div class="ttdeci">void SetSpanningType(int systemIndex, int systemCount)</div><div class="ttdoc">Set/get methods for spanning type of segment.</div></div>
@@ -418,7 +421,7 @@ $(document).ready(function(){initNavTree('beam_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassvrv_1_1_beam_segment_html_af13e9a7dcfa6b57fd10e31f68b0384ec"><div class="ttname"><a href="classvrv_1_1_beam_segment.html#af13e9a7dcfa6b57fd10e31f68b0384ec">vrv::BeamSegment::GetAdjacentElementsDuration</a></div><div class="ttdeci">int GetAdjacentElementsDuration(int elementX) const</div><div class="ttdoc">Get longest duration of the elements that are adjacent to the X coordinate passed.</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_segment_html_a29c1c949f0d813b5ffc8303515bc804f"><div class="ttname"><a href="classvrv_1_1_beam_segment.html#a29c1c949f0d813b5ffc8303515bc804f">vrv::BeamSegment::ClearCoordRefs</a></div><div class="ttdeci">void ClearCoordRefs()</div><div class="ttdoc">Clear the m_beamElementCoords vector and delete all the objects.</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_segment_html_aae2d6f202398b11757729b803cad00fd"><div class="ttname"><a href="classvrv_1_1_beam_segment.html#aae2d6f202398b11757729b803cad00fd">vrv::BeamSegment::InitCoordRefs</a></div><div class="ttdeci">void InitCoordRefs(const ArrayOfBeamElementCoords *beamElementCoords)</div><div class="ttdoc">Initializes the m_beamElementCoords vector objects.</div></div>
-<div class="ttc" id="aclassvrv_1_1_beam_element_coord_html"><div class="ttname"><a href="classvrv_1_1_beam_element_coord.html">vrv::BeamElementCoord</a></div><div class="ttdef"><b>Definition:</b> beam.h:395</div></div>
+<div class="ttc" id="aclassvrv_1_1_beam_element_coord_html"><div class="ttname"><a href="classvrv_1_1_beam_element_coord.html">vrv::BeamElementCoord</a></div><div class="ttdef"><b>Definition:</b> beam.h:400</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_element_coord_html_a4d642d3e677fe0c54be30d4b2c14524f"><div class="ttname"><a href="classvrv_1_1_beam_element_coord.html#a4d642d3e677fe0c54be30d4b2c14524f">vrv::BeamElementCoord::UpdateStemLength</a></div><div class="ttdeci">void UpdateStemLength(StemmedDrawingInterface *stemmedInterface, int y1, int y2, int stemAdjust, bool inMixedBeam)</div><div class="ttdoc">Update stem length based on the calculated coordinates and stemAdjust value.</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_html_ac9348763f6a1dec01f260884674ca79a"><div class="ttname"><a href="classvrv_1_1_beam.html#ac9348763f6a1dec01f260884674ca79a">vrv::Beam::GetBeamPartDuration</a></div><div class="ttdeci">int GetBeamPartDuration(int x, bool includeRests=true) const</div><div class="ttdoc">Return duration of the beam part that is closest to the specified object X position.</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_html_a26f7b2d176314772a13b06ec15d23758"><div class="ttname"><a href="classvrv_1_1_beam.html#a26f7b2d176314772a13b06ec15d23758">vrv::Beam::IsTabBeam</a></div><div class="ttdeci">bool IsTabBeam() const</div><div class="ttdoc">Return true if the beam has a tabGrp child.</div></div>
@@ -444,7 +447,7 @@ $(document).ready(function(){initNavTree('beam_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>beam.h</b></li>
-    <li class="footer">Generated on Thu Jul 18 2024 12:03:55 for Verovio by
+    <li class="footer">Generated on Thu Jul 18 2024 14:06:57 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

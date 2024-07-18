@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_beam_span.html#a90fb9935bc624b4e65313413d98b1abc":[1,0,0,62,2],
 "classvrv_1_1_beam_span.html#a91b17f1a50690705eeab44c3b4d1cfdb":[1,0,0,62,19],
 "classvrv_1_1_beam_span.html#a9fbc09163a98ea929cd0f937030bea76":[1,0,0,62,0],
 "classvrv_1_1_beam_span.html#aad2417b1c8d85f879838b14ae1799913":[1,0,0,62,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_calc_ligature_or_neume_pos_functor.html":[1,0,0,80],
 "classvrv_1_1_calc_ligature_or_neume_pos_functor.html#a169aaa50ecbab600bb0631d8db0b69ea":[1,0,0,80,3],
 "classvrv_1_1_calc_ligature_or_neume_pos_functor.html#a5d2654437d7b71db2dc2b18fb11b6897":[1,0,0,80,0],
-"classvrv_1_1_calc_ligature_or_neume_pos_functor.html#a61cf98a783b98f2cb294d634fb403f58":[1,0,0,80,4],
-"classvrv_1_1_calc_ligature_or_neume_pos_functor.html#ab2b73a857edafe1a954fb6d6c5583d93":[1,0,0,80,1]
+"classvrv_1_1_calc_ligature_or_neume_pos_functor.html#a61cf98a783b98f2cb294d634fb403f58":[1,0,0,80,4]
 };
