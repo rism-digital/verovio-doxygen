@@ -1215,7 +1215,8 @@ var hierarchy =
       [ "vrv::HumdrumInput", "classvrv_1_1_humdrum_input.html", null ],
       [ "vrv::MEIInput", "classvrv_1_1_m_e_i_input.html", null ],
       [ "vrv::MusicXmlInput", "classvrv_1_1_music_xml_input.html", null ],
-      [ "vrv::PAEInput", "classvrv_1_1_p_a_e_input.html", null ]
+      [ "vrv::PAEInput", "classvrv_1_1_p_a_e_input.html", null ],
+      [ "vrv::VolpianoInput", "classvrv_1_1_volpiano_input.html", null ]
     ] ],
     [ "vrv::Interface", "classvrv_1_1_interface.html", [
       [ "vrv::AltSymInterface", "classvrv_1_1_alt_sym_interface.html", null ],

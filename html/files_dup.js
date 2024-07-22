@@ -121,6 +121,7 @@ var files_dup =
     [ "iomei.h", "iomei_8h_source.html", null ],
     [ "iomusxml.h", "iomusxml_8h_source.html", null ],
     [ "iopae.h", "iopae_8h_source.html", null ],
+    [ "iovolpiano.h", "iovolpiano_8h_source.html", null ],
     [ "justifyfunctor.h", "justifyfunctor_8h_source.html", null ],
     [ "keyaccid.h", "keyaccid_8h_source.html", null ],
     [ "keysig.h", "keysig_8h_source.html", null ],

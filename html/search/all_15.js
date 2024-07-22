@@ -8,5 +8,6 @@ var searchData=
   ['verticalrest_1216',['verticalRest',['../classvrv_1_1_humdrum_input.html#aeab1fa55b027b749bece352ef47b8ed3',1,'vrv::HumdrumInput']]],
   ['view_1217',['View',['../classvrv_1_1_view.html',1,'vrv::View'],['../classvrv_1_1_view.html#a721ff64f1ce15ac64a4e0b78308e84bd',1,'vrv::View::View()']]],
   ['visibleonly_1218',['VisibleOnly',['../classvrv_1_1_functor_base.html#ad3c83180489aa76f1afb5b5e6fa0c52e',1,'vrv::FunctorBase']]],
-  ['visiblestaffdeforgrpobject_1219',['VisibleStaffDefOrGrpObject',['../classvrv_1_1_visible_staff_def_or_grp_object.html',1,'vrv']]]
+  ['visiblestaffdeforgrpobject_1219',['VisibleStaffDefOrGrpObject',['../classvrv_1_1_visible_staff_def_or_grp_object.html',1,'vrv']]],
+  ['volpianoinput_1220',['VolpianoInput',['../classvrv_1_1_volpiano_input.html',1,'vrv']]]
 ];
