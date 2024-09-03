@@ -77,6 +77,9 @@ var hierarchy =
     [ "AttBarLineLog", null, [
       [ "vrv::BarLine", "classvrv_1_1_bar_line.html", null ]
     ] ],
+    [ "AttBarLineVis", null, [
+      [ "vrv::BarLine", "classvrv_1_1_bar_line.html", null ]
+    ] ],
     [ "AttBarring", null, [
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
       [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", [
