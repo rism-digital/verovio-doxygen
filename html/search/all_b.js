@@ -29,5 +29,7 @@ var searchData=
   ['loadzipdatabuffer_774',['LoadZipDataBuffer',['../classvrv_1_1_toolkit.html#abf4167617faed8347a7da3291e927e05',1,'vrv::Toolkit']]],
   ['logdebugtree_775',['LogDebugTree',['../classvrv_1_1_object.html#aab9ecbebd597a128912b7dd43a410b90',1,'vrv::Object']]],
   ['logdebugtreemsg_776',['LogDebugTreeMsg',['../classvrv_1_1_alignment.html#a56610938a75cd860b174ec00bfd0295c',1,'vrv::Alignment']]],
-  ['lv_777',['Lv',['../classvrv_1_1_lv.html',1,'vrv']]]
+  ['logredirectstart_777',['LogRedirectStart',['../classvrv_1_1_toolkit.html#a3fd248c628b6e25a38ac0cb8b3dcd9f7',1,'vrv::Toolkit']]],
+  ['logredirectstop_778',['LogRedirectStop',['../classvrv_1_1_toolkit.html#a3a00a9335de59deb1dd2785d5c944397',1,'vrv::Toolkit']]],
+  ['lv_779',['Lv',['../classvrv_1_1_lv.html',1,'vrv']]]
 ];

@@ -44,6 +44,8 @@ var classvrv_1_1_toolkit =
     [ "LoadFile", "classvrv_1_1_toolkit.html#a3859f9341d415376b7d8f11a1aa8e352", null ],
     [ "LoadZipDataBase64", "classvrv_1_1_toolkit.html#aeae2ad736af0f0d436c9131745057556", null ],
     [ "LoadZipDataBuffer", "classvrv_1_1_toolkit.html#abf4167617faed8347a7da3291e927e05", null ],
+    [ "LogRedirectStart", "classvrv_1_1_toolkit.html#a3fd248c628b6e25a38ac0cb8b3dcd9f7", null ],
+    [ "LogRedirectStop", "classvrv_1_1_toolkit.html#a3a00a9335de59deb1dd2785d5c944397", null ],
     [ "LogRuntime", "group__nodoc.html#gabd5f684704d8e4736ea416e43cdc5827", null ],
     [ "PrintOptionUsage", "classvrv_1_1_toolkit.html#ade313a25a731e494eba87d3c4619cbad", null ],
     [ "PrintOptionUsageOutput", "classvrv_1_1_toolkit.html#ab9ba4f30abf5a45944e83926efad3294", null ],

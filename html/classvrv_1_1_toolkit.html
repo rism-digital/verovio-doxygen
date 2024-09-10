@@ -355,6 +355,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#a9621011e0b28c573d62c5412a8c886ec">ResetLogBuffer</a> ()</td></tr>
 <tr class="memdesc:a9621011e0b28c573d62c5412a8c886ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the vrv::logBuffer. <br /></td></tr>
 <tr class="separator:a9621011e0b28c573d62c5412a8c886ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd248c628b6e25a38ac0cb8b3dcd9f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#a3fd248c628b6e25a38ac0cb8b3dcd9f7">LogRedirectStart</a> ()</td></tr>
+<tr class="memdesc:a3fd248c628b6e25a38ac0cb8b3dcd9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start capturing std::cerr from an external codebase for redirection to vrv::logBuffer.  <a href="classvrv_1_1_toolkit.html#a3fd248c628b6e25a38ac0cb8b3dcd9f7">More...</a><br /></td></tr>
+<tr class="separator:a3fd248c628b6e25a38ac0cb8b3dcd9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a00a9335de59deb1dd2785d5c944397"><td class="memItemLeft" align="right" valign="top"><a id="a3a00a9335de59deb1dd2785d5c944397"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#a3a00a9335de59deb1dd2785d5c944397">LogRedirectStop</a> ()</td></tr>
+<tr class="memdesc:a3a00a9335de59deb1dd2785d5c944397"><td class="mdescLeft">&#160;</td><td class="mdescRight">End capturing std::cerr from an external codebase for redirection to vrv::logBuffer. <br /></td></tr>
+<tr class="separator:a3a00a9335de59deb1dd2785d5c944397"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af03d8520c77603ed893203b0fa5a8821"><td class="memItemLeft" align="right" valign="top"><a id="af03d8520c77603ed893203b0fa5a8821"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#af03d8520c77603ed893203b0fa5a8821">LoadData</a> (const std::string &amp;data, bool resetLogBuffer)</td></tr>
 <tr class="memdesc:af03d8520c77603ed893203b0fa5a8821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a string data with or without resetting the log buffer. <br /></td></tr>
@@ -1144,6 +1151,34 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="a3fd248c628b6e25a38ac0cb8b3dcd9f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fd248c628b6e25a38ac0cb8b3dcd9f7">&#9670;&nbsp;</a></span>LogRedirectStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vrv::Toolkit::LogRedirectStart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Start capturing std::cerr from an external codebase for redirection to vrv::logBuffer. </p>
+<p>Only one capture should be active at a given time. Finish by calling LogRedirectStop. </p>
+
+</div>
+</div>
 <a id="acd2477cdd946bbc98936c00347ddf3af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd2477cdd946bbc98936c00347ddf3af">&#9670;&nbsp;</a></span>RedoLayout()</h2>
 
@@ -1819,7 +1854,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_toolkit.html">Toolkit</a></li>
-    <li class="footer">Generated on Tue Sep 10 2024 07:13:10 for Verovio by
+    <li class="footer">Generated on Tue Sep 10 2024 08:36:58 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
