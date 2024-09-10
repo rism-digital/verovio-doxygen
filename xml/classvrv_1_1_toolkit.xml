@@ -1987,11 +1987,11 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="822" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="822" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_toolkit_1af22c8ebbb6dd5f4c9f2b8864103cd02f" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classvrv_1_1_toolkit_1a5dd3dfc0559da991281bdb82c3a2c79e" prot="private" static="no" mutable="no">
         <type>std::stringstream</type>
-        <definition>std::stringstream vrv::Toolkit::m_captured_cerr</definition>
+        <definition>std::stringstream vrv::Toolkit::m_cerrCaptured</definition>
         <argsstring></argsstring>
-        <name>m_captured_cerr</name>
+        <name>m_cerrCaptured</name>
         <briefdescription>
 <para>Temporary capture buffer for redirecting std::cerr to vrv::LogWarning. </para>
         </briefdescription>
@@ -2002,11 +2002,11 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="828" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="828" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_toolkit_1a39ec59011008f830bfeec8124df7df95" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classvrv_1_1_toolkit_1ad2e8b62cd24ad9085df97ed5cdf1034a" prot="private" static="no" mutable="no">
         <type>std::streambuf *</type>
-        <definition>std::streambuf* vrv::Toolkit::m_original_cerr_buf</definition>
+        <definition>std::streambuf* vrv::Toolkit::m_cerrOriginalBuf</definition>
         <argsstring></argsstring>
-        <name>m_original_cerr_buf</name>
+        <name>m_cerrOriginalBuf</name>
         <briefdescription>
 <para>Temporary storage of the std::cerr read buffer during LogCapture. </para>
         </briefdescription>
@@ -2380,7 +2380,8 @@
       <member refid="classvrv_1_1_toolkit_1a3fd248c628b6e25a38ac0cb8b3dcd9f7" prot="protected" virt="non-virtual"><scope>vrv::Toolkit</scope><name>LogRedirectStart</name></member>
       <member refid="classvrv_1_1_toolkit_1a3a00a9335de59deb1dd2785d5c944397" prot="protected" virt="non-virtual"><scope>vrv::Toolkit</scope><name>LogRedirectStop</name></member>
       <member refid="group__nodoc_1gabd5f684704d8e4736ea416e43cdc5827" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>LogRuntime</name></member>
-      <member refid="classvrv_1_1_toolkit_1af22c8ebbb6dd5f4c9f2b8864103cd02f" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_captured_cerr</name></member>
+      <member refid="classvrv_1_1_toolkit_1a5dd3dfc0559da991281bdb82c3a2c79e" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_cerrCaptured</name></member>
+      <member refid="classvrv_1_1_toolkit_1ad2e8b62cd24ad9085df97ed5cdf1034a" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_cerrOriginalBuf</name></member>
       <member refid="classvrv_1_1_toolkit_1ac0bd285a5155dd9737032d26edba729d" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_cString</name></member>
       <member refid="classvrv_1_1_toolkit_1a5e0a77331e07aefa6f9471a1bc34f185" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_doc</name></member>
       <member refid="classvrv_1_1_toolkit_1a308a98315c470e7f7466c8c5e9439911" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_docSelection</name></member>
@@ -2388,7 +2389,6 @@
       <member refid="classvrv_1_1_toolkit_1af139b70cab7a8189edeec53a0093e93d" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_humdrumBuffer</name></member>
       <member refid="classvrv_1_1_toolkit_1a4c0d66ae08c2a5e24af9e0ac137f3433" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_inputFrom</name></member>
       <member refid="classvrv_1_1_toolkit_1a8f5060c2fec413147a6bde2fcd672565" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_options</name></member>
-      <member refid="classvrv_1_1_toolkit_1a39ec59011008f830bfeec8124df7df95" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_original_cerr_buf</name></member>
       <member refid="classvrv_1_1_toolkit_1ab3948b7bb4d42e1a2770a0701ee01dc2" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_outputTo</name></member>
       <member refid="classvrv_1_1_toolkit_1aa2dc0652c3641dc9e7000df9a3d7f0ed" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_previousLocale</name></member>
       <member refid="classvrv_1_1_toolkit_1a95517ce80380b990a5e37c8e5bde8018" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_runtimeClock</name></member>
