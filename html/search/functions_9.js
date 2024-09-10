@@ -9,7 +9,7 @@ var searchData=
   ['load_2187',['Load',['../classvrv_1_1_zip_file_reader.html#a1ef09100ea6be6f0e6a2a37f99fae81e',1,'vrv::ZipFileReader']]],
   ['loadall_2188',['LoadAll',['../classvrv_1_1_resources.html#ab79e6a3f74b0ea800441772eda681b63',1,'vrv::Resources']]],
   ['loadbytes_2189',['LoadBytes',['../classvrv_1_1_zip_file_reader.html#af8d5de2b5412e72104c97c3605aabb59',1,'vrv::ZipFileReader']]],
-  ['loaddata_2190',['LoadData',['../classvrv_1_1_toolkit.html#a9a08fd8e89da6c2c709eaae69e28b2b1',1,'vrv::Toolkit']]],
+  ['loaddata_2190',['LoadData',['../classvrv_1_1_toolkit.html#a9a08fd8e89da6c2c709eaae69e28b2b1',1,'vrv::Toolkit::LoadData(const std::string &amp;data)'],['../classvrv_1_1_toolkit.html#af03d8520c77603ed893203b0fa5a8821',1,'vrv::Toolkit::LoadData(const std::string &amp;data, bool resetLogBuffer)']]],
   ['loadfile_2191',['LoadFile',['../classvrv_1_1_toolkit.html#a3859f9341d415376b7d8f11a1aa8e352',1,'vrv::Toolkit']]],
   ['loadfooter_2192',['LoadFooter',['../classvrv_1_1_running_element.html#a809a5cb7c0a8a873168576894ea5d3a0',1,'vrv::RunningElement']]],
   ['loadzipdatabase64_2193',['LoadZipDataBase64',['../classvrv_1_1_toolkit.html#aeae2ad736af0f0d436c9131745057556',1,'vrv::Toolkit']]],

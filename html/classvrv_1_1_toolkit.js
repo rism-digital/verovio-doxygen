@@ -40,6 +40,7 @@ var classvrv_1_1_toolkit =
     [ "IdentifyInputFrom", "classvrv_1_1_toolkit.html#a05feed813407bca32d82d34319f5185a", null ],
     [ "InitClock", "group__nodoc.html#ga3eb22488f8037f75c5d950271e0d9ad3", null ],
     [ "LoadData", "classvrv_1_1_toolkit.html#a9a08fd8e89da6c2c709eaae69e28b2b1", null ],
+    [ "LoadData", "classvrv_1_1_toolkit.html#af03d8520c77603ed893203b0fa5a8821", null ],
     [ "LoadFile", "classvrv_1_1_toolkit.html#a3859f9341d415376b7d8f11a1aa8e352", null ],
     [ "LoadZipDataBase64", "classvrv_1_1_toolkit.html#aeae2ad736af0f0d436c9131745057556", null ],
     [ "LoadZipDataBuffer", "classvrv_1_1_toolkit.html#abf4167617faed8347a7da3291e927e05", null ],
