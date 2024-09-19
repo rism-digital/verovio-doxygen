@@ -62,6 +62,7 @@ var classvrv_1_1_view =
     [ "DrawFing", "classvrv_1_1_view.html#a3360426bb9b5843ebcb1375ae43eacc3", null ],
     [ "DrawFlag", "classvrv_1_1_view.html#a248475c16901e329189a1daf1470bd40", null ],
     [ "DrawFTrem", "classvrv_1_1_view.html#a2cc270dfd01f43d976d0b9dfe8ee7dd2", null ],
+    [ "DrawGenericLayerElement", "classvrv_1_1_view.html#a22703880760716636b56e4e7761394e8", null ],
     [ "DrawGliss", "classvrv_1_1_view.html#a31c72e813fd88ae486ad754378aa8267", null ],
     [ "DrawGraceGrp", "classvrv_1_1_view.html#abc6d0a996e82ac4c0cebf76e88132446", null ],
     [ "DrawGraphic", "classvrv_1_1_view.html#a827f92a52dca6bf7d3f81e1d95851e2d", null ],

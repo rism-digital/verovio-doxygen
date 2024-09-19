@@ -175,6 +175,7 @@ var annotated_dup =
       [ "GenerateFeaturesFunctor", "classvrv_1_1_generate_features_functor.html", "classvrv_1_1_generate_features_functor" ],
       [ "GenerateMIDIFunctor", "classvrv_1_1_generate_m_i_d_i_functor.html", "classvrv_1_1_generate_m_i_d_i_functor" ],
       [ "GenerateTimemapFunctor", "classvrv_1_1_generate_timemap_functor.html", "classvrv_1_1_generate_timemap_functor" ],
+      [ "GenericLayerElement", "classvrv_1_1_generic_layer_element.html", "classvrv_1_1_generic_layer_element" ],
       [ "GetAlignmentLeftRightFunctor", "classvrv_1_1_get_alignment_left_right_functor.html", "classvrv_1_1_get_alignment_left_right_functor" ],
       [ "GetRelativeLayerElementFunctor", "classvrv_1_1_get_relative_layer_element_functor.html", "classvrv_1_1_get_relative_layer_element_functor" ],
       [ "Gliss", "classvrv_1_1_gliss.html", "classvrv_1_1_gliss" ],

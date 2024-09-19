@@ -209,6 +209,7 @@ var hierarchy =
         [ "vrv::Dots", "classvrv_1_1_dots.html", null ],
         [ "vrv::Flag", "classvrv_1_1_flag.html", null ],
         [ "vrv::FTrem", "classvrv_1_1_f_trem.html", null ],
+        [ "vrv::GenericLayerElement", "classvrv_1_1_generic_layer_element.html", null ],
         [ "vrv::GraceGrp", "classvrv_1_1_grace_grp.html", null ],
         [ "vrv::HalfmRpt", "classvrv_1_1_halfm_rpt.html", null ],
         [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],

@@ -74,6 +74,8 @@ var classvrv_1_1_functor_interface =
     [ "VisitFloatingObjectEnd", "classvrv_1_1_functor_interface.html#afdf3fdaed8d9379d5c921f4eb159396f", null ],
     [ "VisitFTrem", "classvrv_1_1_functor_interface.html#acbf6e68c3c4dce3e6666297d01f656fc", null ],
     [ "VisitFTremEnd", "classvrv_1_1_functor_interface.html#a62a9dce7bee788597225dded117d6d76", null ],
+    [ "VisitGenericLayerElement", "classvrv_1_1_functor_interface.html#a774b230bf9cf9d943741a6366923e069", null ],
+    [ "VisitGenericLayerElementEnd", "classvrv_1_1_functor_interface.html#a8cbc2f8a88c7fb0f3fd0d2bd2d6850c7", null ],
     [ "VisitGliss", "classvrv_1_1_functor_interface.html#ad48230cd74615cb59fd558d7855b01b6", null ],
     [ "VisitGlissEnd", "classvrv_1_1_functor_interface.html#a318d073078c914bfe9c5dcded002137a", null ],
     [ "VisitGraceAligner", "classvrv_1_1_functor_interface.html#a9e6b7d2689dd93d29e25f3433daab7f5", null ],
