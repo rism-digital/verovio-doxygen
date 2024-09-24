@@ -97,109 +97,109 @@ $(document).ready(function(){initNavTree('findlayerelementsfunctor_8h_source.htm
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;functor.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>vrv {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// LayersInTimeSpanFunctor</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;alignfunctor.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classvrv_1_1_layers_in_time_span_functor.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_layers_in_time_span_functor.html">LayersInTimeSpanFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classvrv_1_1_layers_in_time_span_functor.html">LayersInTimeSpanFunctor</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a> *meterSig, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_mensur.html">Mensur</a> *mensur);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_layers_in_time_span_functor.html">LayersInTimeSpanFunctor</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classvrv_1_1_layers_in_time_span_functor.html#a2e7d1e0980c17a1b25d6f84178c1b25f">   35</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_layers_in_time_span_functor.html#a2e7d1e0980c17a1b25d6f84178c1b25f">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     * Set the time and duration of the event</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> SetEvent(<span class="keywordtype">double</span> time, <span class="keywordtype">double</span> duration);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">     * Retrieve the search result</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::set&lt;int&gt; GetLayers()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_layers; }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">     * Functor interface</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    FunctorCode VisitLayerElement(<span class="keyword">const</span> LayerElement *layerElement) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    FunctorCode VisitMensur(<span class="keyword">const</span> Mensur *mensur) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    FunctorCode VisitMeterSig(<span class="keyword">const</span> MeterSig *meterSig) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// LayersInTimeSpanFunctor</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classvrv_1_1_layers_in_time_span_functor.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_layers_in_time_span_functor.html">LayersInTimeSpanFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classvrv_1_1_layers_in_time_span_functor.html">LayersInTimeSpanFunctor</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a> *meterSig, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_mensur.html">Mensur</a> *mensur);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_layers_in_time_span_functor.html">LayersInTimeSpanFunctor</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classvrv_1_1_layers_in_time_span_functor.html#a2e7d1e0980c17a1b25d6f84178c1b25f">   39</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_layers_in_time_span_functor.html#a2e7d1e0980c17a1b25d6f84178c1b25f">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">     * Set the time and duration of the event</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> SetEvent(<span class="keywordtype">double</span> time, <span class="keywordtype">double</span> duration);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">     * Retrieve the search result</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::set&lt;int&gt; GetLayers()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_layers; }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">     * Functor interface</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    FunctorCode VisitLayerElement(<span class="keyword">const</span> LayerElement *layerElement) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    FunctorCode VisitMensur(<span class="keyword">const</span> Mensur *mensur) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    FunctorCode VisitMeterSig(<span class="keyword">const</span> MeterSig *meterSig) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// The time of the event</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">double</span> m_time;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// The duration of the event</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">double</span> m_duration;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// The layers (layerN) found</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::set&lt;int&gt; m_layers;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// The current meter signature</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> MeterSig *m_meterSig;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// The current mensur</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">const</span> Mensur *m_mensur;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// LayerElementsInTimeSpanFunctor</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// The time of the event</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">double</span> m_time;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// The duration of the event</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">double</span> m_duration;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// The layers (layerN) found</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    std::set&lt;int&gt; m_layers;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// The current time alignment parameters</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    AlignMeterParams m_meterParams;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classvrv_1_1_layer_elements_in_time_span_functor.html">   82</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_layer_elements_in_time_span_functor.html">LayerElementsInTimeSpanFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classvrv_1_1_layer_elements_in_time_span_functor.html">LayerElementsInTimeSpanFunctor</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a> *meterSig, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_mensur.html">Mensur</a> *mensur, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_layer.html">Layer</a> *layer);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_layer_elements_in_time_span_functor.html">LayerElementsInTimeSpanFunctor</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classvrv_1_1_layer_elements_in_time_span_functor.html#ae932cda3a197f1faf8cc0814c810f7bf">   95</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_layer_elements_in_time_span_functor.html#ae932cda3a197f1faf8cc0814c810f7bf">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">     * Set the time and duration of the event</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> SetEvent(<span class="keywordtype">double</span> time, <span class="keywordtype">double</span> duration);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">     * Consider all layers except the current one</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> ConsiderAllLayersButCurrent() { m_allLayersButCurrent = <span class="keyword">true</span>; }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">     * Retrieve the search result</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    ListOfConstObjects GetElements()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_elements; }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">     * Functor interface</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    FunctorCode VisitLayerElement(<span class="keyword">const</span> LayerElement *layerElement) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">// LayerElementsInTimeSpanFunctor</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classvrv_1_1_layer_elements_in_time_span_functor.html">   84</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_layer_elements_in_time_span_functor.html">LayerElementsInTimeSpanFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classvrv_1_1_layer_elements_in_time_span_functor.html">LayerElementsInTimeSpanFunctor</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_meter_sig.html">MeterSig</a> *meterSig, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_mensur.html">Mensur</a> *mensur, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_layer.html">Layer</a> *layer);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_layer_elements_in_time_span_functor.html">LayerElementsInTimeSpanFunctor</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classvrv_1_1_layer_elements_in_time_span_functor.html#ae932cda3a197f1faf8cc0814c810f7bf">   97</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_layer_elements_in_time_span_functor.html#ae932cda3a197f1faf8cc0814c810f7bf">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">     * Set the time and duration of the event</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> SetEvent(<span class="keywordtype">double</span> time, <span class="keywordtype">double</span> duration);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">     * Consider all layers except the current one</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> ConsiderAllLayersButCurrent() { m_allLayersButCurrent = <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">     * Retrieve the search result</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    ListOfConstObjects GetElements()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_elements; }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">     * Functor interface</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    FunctorCode VisitLayerElement(<span class="keyword">const</span> LayerElement *layerElement) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// The time of the event</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">double</span> m_time;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">// The duration of the event</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">double</span> m_duration;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// The list of layer elements found</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    ListOfConstObjects m_elements;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">// The current meter signature</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">const</span> MeterSig *m_meterSig;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">// The current mensur</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">const</span> Mensur *m_mensur;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">// The time of the event</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">double</span> m_time;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// The duration of the event</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">double</span> m_duration;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">// The list of layer elements found</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    ListOfConstObjects m_elements;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">// The current time alignment parameters</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    AlignMeterParams m_meterParams;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">// The layer to consider</span></div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">const</span> Layer *m_layer;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">// ... or to ignore</span></div>
@@ -325,25 +325,25 @@ $(document).ready(function(){initNavTree('findlayerelementsfunctor_8h_source.htm
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#endif // __VRV_FINDLAYERELEMENTSFUNCTOR_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_layers_in_time_span_functor_html_a2e7d1e0980c17a1b25d6f84178c1b25f"><div class="ttname"><a href="classvrv_1_1_layers_in_time_span_functor.html#a2e7d1e0980c17a1b25d6f84178c1b25f">vrv::LayersInTimeSpanFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> findlayerelementsfunctor.h:35</div></div>
+<div class="ttc" id="aclassvrv_1_1_layers_in_time_span_functor_html_a2e7d1e0980c17a1b25d6f84178c1b25f"><div class="ttname"><a href="classvrv_1_1_layers_in_time_span_functor.html#a2e7d1e0980c17a1b25d6f84178c1b25f">vrv::LayersInTimeSpanFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> findlayerelementsfunctor.h:39</div></div>
 <div class="ttc" id="aclassvrv_1_1_get_relative_layer_element_functor_html"><div class="ttname"><a href="classvrv_1_1_get_relative_layer_element_functor.html">vrv::GetRelativeLayerElementFunctor</a></div><div class="ttdoc">This class goes through all layer elements of the layer and returns the next/previous element (depend...</div><div class="ttdef"><b>Definition:</b> findlayerelementsfunctor.h:238</div></div>
 <div class="ttc" id="aclassvrv_1_1_meter_sig_html"><div class="ttname"><a href="classvrv_1_1_meter_sig.html">vrv::MeterSig</a></div><div class="ttdoc">This class models the MEI &lt;meterSig&gt; element.</div><div class="ttdef"><b>Definition:</b> metersig.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_get_relative_layer_element_functor_html_a8ab6bc9c2f70fc3e9fee688da0d9dedf"><div class="ttname"><a href="classvrv_1_1_get_relative_layer_element_functor.html#a8ab6bc9c2f70fc3e9fee688da0d9dedf">vrv::GetRelativeLayerElementFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> findlayerelementsfunctor.h:251</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_elements_in_time_span_functor_html_ae932cda3a197f1faf8cc0814c810f7bf"><div class="ttname"><a href="classvrv_1_1_layer_elements_in_time_span_functor.html#ae932cda3a197f1faf8cc0814c810f7bf">vrv::LayerElementsInTimeSpanFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> findlayerelementsfunctor.h:95</div></div>
+<div class="ttc" id="aclassvrv_1_1_layer_elements_in_time_span_functor_html_ae932cda3a197f1faf8cc0814c810f7bf"><div class="ttname"><a href="classvrv_1_1_layer_elements_in_time_span_functor.html#ae932cda3a197f1faf8cc0814c810f7bf">vrv::LayerElementsInTimeSpanFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> findlayerelementsfunctor.h:97</div></div>
 <div class="ttc" id="aclassvrv_1_1_mensur_html"><div class="ttname"><a href="classvrv_1_1_mensur.html">vrv::Mensur</a></div><div class="ttdoc">This class models the MEI &lt;mensur&gt; element.</div><div class="ttdef"><b>Definition:</b> mensur.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_find_spanned_layer_elements_functor_html"><div class="ttname"><a href="classvrv_1_1_find_spanned_layer_elements_functor.html">vrv::FindSpannedLayerElementsFunctor</a></div><div class="ttdoc">This class retrieves all layer elements between two horizontal positions.</div><div class="ttdef"><b>Definition:</b> findlayerelementsfunctor.h:150</div></div>
-<div class="ttc" id="aclassvrv_1_1_layers_in_time_span_functor_html"><div class="ttname"><a href="classvrv_1_1_layers_in_time_span_functor.html">vrv::LayersInTimeSpanFunctor</a></div><div class="ttdoc">This class collects all layers which appear in the given time / duration.</div><div class="ttdef"><b>Definition:</b> findlayerelementsfunctor.h:22</div></div>
+<div class="ttc" id="aclassvrv_1_1_layers_in_time_span_functor_html"><div class="ttname"><a href="classvrv_1_1_layers_in_time_span_functor.html">vrv::LayersInTimeSpanFunctor</a></div><div class="ttdoc">This class collects all layers which appear in the given time / duration.</div><div class="ttdef"><b>Definition:</b> findlayerelementsfunctor.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_const_functor_html"><div class="ttname"><a href="classvrv_1_1_const_functor.html">vrv::ConstFunctor</a></div><div class="ttdoc">This abstract class is the base class for all const functors.</div><div class="ttdef"><b>Definition:</b> functor.h:126</div></div>
 <div class="ttc" id="aclassvrv_1_1_find_spanned_layer_elements_functor_html_a56cf300b5330c4f5a8c373812922a2d5"><div class="ttname"><a href="classvrv_1_1_find_spanned_layer_elements_functor.html#a56cf300b5330c4f5a8c373812922a2d5">vrv::FindSpannedLayerElementsFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> findlayerelementsfunctor.h:163</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_elements_in_time_span_functor_html"><div class="ttname"><a href="classvrv_1_1_layer_elements_in_time_span_functor.html">vrv::LayerElementsInTimeSpanFunctor</a></div><div class="ttdoc">This class collects all layer elements which appear in the given time / duration.</div><div class="ttdef"><b>Definition:</b> findlayerelementsfunctor.h:82</div></div>
+<div class="ttc" id="aclassvrv_1_1_layer_elements_in_time_span_functor_html"><div class="ttname"><a href="classvrv_1_1_layer_elements_in_time_span_functor.html">vrv::LayerElementsInTimeSpanFunctor</a></div><div class="ttdoc">This class collects all layer elements which appear in the given time / duration.</div><div class="ttdef"><b>Definition:</b> findlayerelementsfunctor.h:84</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html">vrv::TimeSpanningInterface</a></div><div class="ttdoc">This class is an interface for spanning elements, such as slur, hairpin, etc.</div><div class="ttdef"><b>Definition:</b> timeinterface.h:138</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:44</div></div>
+<div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:45</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html"><div class="ttname"><a href="classvrv_1_1_layer.html">vrv::Layer</a></div><div class="ttdoc">This class represents a layer in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> layer.h:33</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>findlayerelementsfunctor.h</b></li>
-    <li class="footer">Generated on Thu Sep 19 2024 13:10:39 for Verovio by
+    <li class="footer">Generated on Tue Sep 24 2024 10:07:36 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

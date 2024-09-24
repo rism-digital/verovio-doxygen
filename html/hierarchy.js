@@ -3,6 +3,7 @@ var hierarchy =
     [ "vrv::AccidOctaveSort", "classvrv_1_1_accid_octave_sort.html", null ],
     [ "vrv::AccidSpaceSort", "classvrv_1_1_accid_space_sort.html", null ],
     [ "vrv::AdjustXPosAlignmentOffset", "structvrv_1_1_adjust_x_pos_alignment_offset.html", null ],
+    [ "vrv::AlignMeterParams", "structvrv_1_1_align_meter_params.html", null ],
     [ "AttAccidental", null, [
       [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
       [ "vrv::Course", "classvrv_1_1_course.html", null ],

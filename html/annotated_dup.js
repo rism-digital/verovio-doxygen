@@ -41,6 +41,7 @@ var annotated_dup =
       [ "AlignMeasuresFunctor", "classvrv_1_1_align_measures_functor.html", "classvrv_1_1_align_measures_functor" ],
       [ "Alignment", "classvrv_1_1_alignment.html", "classvrv_1_1_alignment" ],
       [ "AlignmentReference", "classvrv_1_1_alignment_reference.html", "classvrv_1_1_alignment_reference" ],
+      [ "AlignMeterParams", "structvrv_1_1_align_meter_params.html", "structvrv_1_1_align_meter_params" ],
       [ "AlignSystemsFunctor", "classvrv_1_1_align_systems_functor.html", "classvrv_1_1_align_systems_functor" ],
       [ "AlignVerticallyFunctor", "classvrv_1_1_align_vertically_functor.html", "classvrv_1_1_align_vertically_functor" ],
       [ "AltSymInterface", "classvrv_1_1_alt_sym_interface.html", "classvrv_1_1_alt_sym_interface" ],

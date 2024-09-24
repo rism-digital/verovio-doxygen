@@ -505,8 +505,7 @@
     <member refid="classvrv_1_1_align_horizontally_functor_1a6be51db96736d73934064b701572d125" kind="function"><name>VisitSystem</name></member>
     <member refid="classvrv_1_1_align_horizontally_functor_1ad5204bd7d40404955c48e43f0393514b" kind="variable"><name>m_measureAligner</name></member>
     <member refid="classvrv_1_1_align_horizontally_functor_1a830405549b58df9fc90c5e8b8cfdb91d" kind="variable"><name>m_time</name></member>
-    <member refid="classvrv_1_1_align_horizontally_functor_1ae351e9ceae819453d1f6a1ee8d6f8840" kind="variable"><name>m_currentMensur</name></member>
-    <member refid="classvrv_1_1_align_horizontally_functor_1af5caec32edc6a76ee1cb87da12d9c073" kind="variable"><name>m_currentMeterSig</name></member>
+    <member refid="classvrv_1_1_align_horizontally_functor_1a0d9e1456a67305aa8e8a40fe10f22de4" kind="variable"><name>m_currentParams</name></member>
     <member refid="classvrv_1_1_align_horizontally_functor_1a5aaf12f98305cb5f57a9be22fdb1ef3e" kind="variable"><name>m_notationType</name></member>
     <member refid="classvrv_1_1_align_horizontally_functor_1a1ca79e78ec04b295c80cfe9a60385ef1" kind="variable"><name>m_scoreDefRole</name></member>
     <member refid="classvrv_1_1_align_horizontally_functor_1a62e1a9097e494835034fad09b5d0edf7" kind="variable"><name>m_isFirstMeasure</name></member>
@@ -583,6 +582,10 @@
     <member refid="classvrv_1_1_alignment_reference_1a20a67edf81f6a10054bafac29530d8a5" kind="function"><name>HasAccidVerticalOverlap</name></member>
     <member refid="classvrv_1_1_alignment_reference_1a9c1895942dd54bf9ac12b788dbf7570c" kind="function"><name>HasMultipleLayer</name></member>
     <member refid="classvrv_1_1_alignment_reference_1ad88dbf946e0441c77075ae5d6e43320b" kind="function"><name>HasCrossStaffElements</name></member>
+  </compound>
+  <compound refid="structvrv_1_1_align_meter_params" kind="struct"><name>vrv::AlignMeterParams</name>
+    <member refid="structvrv_1_1_align_meter_params_1aa7eb3ad0a8af0ad0d418f7ee117b5b48" kind="variable"><name>meterSig</name></member>
+    <member refid="structvrv_1_1_align_meter_params_1ad54262c33c9a657894894405b1fd6ea6" kind="variable"><name>mensur</name></member>
   </compound>
   <compound refid="classvrv_1_1_align_systems_functor" kind="class"><name>vrv::AlignSystemsFunctor</name>
     <member refid="classvrv_1_1_align_systems_functor_1a9356735781ccdf30554393f6d494881f" kind="function"><name>AlignSystemsFunctor</name></member>
@@ -4420,8 +4423,7 @@
     <member refid="classvrv_1_1_init_onset_offset_functor_1ae0a8c376156ef302372f99265aa41785" kind="function"><name>VisitTabGrpEnd</name></member>
     <member refid="classvrv_1_1_init_onset_offset_functor_1a70321e5c363a14ad9a8ef2dc0659bd48" kind="variable"><name>m_currentScoreTime</name></member>
     <member refid="classvrv_1_1_init_onset_offset_functor_1a00dfc76271ed73179c8c13394e972f14" kind="variable"><name>m_currentRealTimeSeconds</name></member>
-    <member refid="classvrv_1_1_init_onset_offset_functor_1a3facf598d0095b7ad1a6fe8b5f066e2a" kind="variable"><name>m_currentMensur</name></member>
-    <member refid="classvrv_1_1_init_onset_offset_functor_1a316353edcf6c6804c793f60545cf6396" kind="variable"><name>m_currentMeterSig</name></member>
+    <member refid="classvrv_1_1_init_onset_offset_functor_1a281baa775c8b69c58fd734a9373c0c77" kind="variable"><name>m_meterParams</name></member>
     <member refid="classvrv_1_1_init_onset_offset_functor_1a9770970eaaf153ada2b15cbc8eaccffe" kind="variable"><name>m_notationType</name></member>
     <member refid="classvrv_1_1_init_onset_offset_functor_1adcbe7630ccd4303cc38a17d01faed06a" kind="variable"><name>m_currentTempo</name></member>
     <member refid="classvrv_1_1_init_onset_offset_functor_1afc4a81cb0254a14d1e48e03f7d5108c0" kind="function"><name>ImplementsEndInterface</name></member>
@@ -4791,9 +4793,11 @@
     <member refid="classvrv_1_1_layer_element_1af3c196500ca219d904972a85c68b8a40" kind="function"><name>GetDrawingRadius</name></member>
     <member refid="classvrv_1_1_layer_element_1ab71a22a3ba9cf83fd357b4c8ade4a552" kind="function"><name>GetCrossStaffRel</name></member>
     <member refid="classvrv_1_1_layer_element_1a9fbc187f793cf5bd7c8c18661d6f2985" kind="function"><name>GetOverflowStaffAlignments</name></member>
-    <member refid="classvrv_1_1_layer_element_1a3b4902898ea009daf4242585c329d39b" kind="function"><name>GetAlignmentDuration</name></member>
-    <member refid="classvrv_1_1_layer_element_1ad51f58cb76d5e045c8f2872d7bb51bd2" kind="function"><name>GetSameAsContentAlignmentDuration</name></member>
-    <member refid="classvrv_1_1_layer_element_1ad7fe5cd67ffb119e047eb429a8644ce3" kind="function"><name>GetContentAlignmentDuration</name></member>
+    <member refid="classvrv_1_1_layer_element_1a5b007683ce76e4c9fb57df85b3747a76" kind="function"><name>GetAlignmentDuration</name></member>
+    <member refid="classvrv_1_1_layer_element_1a848e89b9ba11f1150f2fab5217254381" kind="function"><name>GetAlignmentDuration</name></member>
+    <member refid="classvrv_1_1_layer_element_1af324e22f83e8e03b1b18d26c8cd63ff2" kind="function"><name>GetSameAsContentAlignmentDuration</name></member>
+    <member refid="classvrv_1_1_layer_element_1a96503886d0c7b64b5ab975c7386edb17" kind="function"><name>GetContentAlignmentDuration</name></member>
+    <member refid="classvrv_1_1_layer_element_1afbd962a925926ed70d3a774f3993deb8" kind="function"><name>GetContentAlignmentDuration</name></member>
     <member refid="classvrv_1_1_layer_element_1a39adc1a3bb53a8836b1dc8bf375d15a1" kind="function"><name>GenerateZoneBounds</name></member>
     <member refid="classvrv_1_1_layer_element_1ae4f035f3818e7a9ec44e80e5c7097e81" kind="function"><name>AdjustOverlappingLayers</name></member>
     <member refid="classvrv_1_1_layer_element_1a55718065d5951c44917fd1072df649df" kind="function"><name>CalcElementHorizontalOverlap</name></member>
@@ -4818,8 +4822,7 @@
     <member refid="classvrv_1_1_layer_elements_in_time_span_functor_1ab2dc14aa9fa45361be0fd0ea26e66022" kind="variable"><name>m_time</name></member>
     <member refid="classvrv_1_1_layer_elements_in_time_span_functor_1a0e40d94911ac417ef2a99fb32e0a832c" kind="variable"><name>m_duration</name></member>
     <member refid="classvrv_1_1_layer_elements_in_time_span_functor_1abde4f5439fa72e0d4ceb6acea47b7f7b" kind="variable"><name>m_elements</name></member>
-    <member refid="classvrv_1_1_layer_elements_in_time_span_functor_1a39fcf39404ce5380f3ffe1e8c60c5bdb" kind="variable"><name>m_meterSig</name></member>
-    <member refid="classvrv_1_1_layer_elements_in_time_span_functor_1a4e1ee615c20dbe35e289c31ef86ed0ca" kind="variable"><name>m_mensur</name></member>
+    <member refid="classvrv_1_1_layer_elements_in_time_span_functor_1ae916baeb15f09cbcd34f1c5b9ac60675" kind="variable"><name>m_meterParams</name></member>
     <member refid="classvrv_1_1_layer_elements_in_time_span_functor_1a96fe84071cc86ac63569e43f7305acc5" kind="variable"><name>m_layer</name></member>
     <member refid="classvrv_1_1_layer_elements_in_time_span_functor_1ae587a1fa626faea90ba87b782d014327" kind="variable"><name>m_allLayersButCurrent</name></member>
     <member refid="classvrv_1_1_layer_elements_in_time_span_functor_1ae932cda3a197f1faf8cc0814c810f7bf" kind="function"><name>ImplementsEndInterface</name></member>
@@ -4836,8 +4839,7 @@
     <member refid="classvrv_1_1_layers_in_time_span_functor_1a318fa24f8657a9b8d7205b2f76f4e897" kind="variable"><name>m_time</name></member>
     <member refid="classvrv_1_1_layers_in_time_span_functor_1a89854ee9552645125cbfbfe80a49d63f" kind="variable"><name>m_duration</name></member>
     <member refid="classvrv_1_1_layers_in_time_span_functor_1aa4296351dc0013fd7b722a8758d252a5" kind="variable"><name>m_layers</name></member>
-    <member refid="classvrv_1_1_layers_in_time_span_functor_1ad34a01b90961eca88b89d3e40e639dc7" kind="variable"><name>m_meterSig</name></member>
-    <member refid="classvrv_1_1_layers_in_time_span_functor_1a9f29d22ba15d34ba0cbfa3466c7200e1" kind="variable"><name>m_mensur</name></member>
+    <member refid="classvrv_1_1_layers_in_time_span_functor_1a522a94e6741017e7269010e17405e1bd" kind="variable"><name>m_meterParams</name></member>
     <member refid="classvrv_1_1_layers_in_time_span_functor_1a2e7d1e0980c17a1b25d6f84178c1b25f" kind="function"><name>ImplementsEndInterface</name></member>
     <member refid="classvrv_1_1_layers_in_time_span_functor_1aa9bb16c83f985b67923fd67203e3cb86" kind="function"><name>SetEvent</name></member>
     <member refid="classvrv_1_1_layers_in_time_span_functor_1a0a9a9aa5185aea38bd6b3510fdcea5b5" kind="function"><name>GetLayers</name></member>
