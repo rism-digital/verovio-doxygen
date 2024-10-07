@@ -5,6 +5,7 @@
     <includes local="no">set</includes>
     <includes local="yes">atts_shared.h</includes>
     <includes refid="facsimileinterface_8h" local="yes">facsimileinterface.h</includes>
+    <includes refid="horizontalaligner_8h" local="yes">horizontalaligner.h</includes>
     <includes refid="linkinginterface_8h" local="yes">linkinginterface.h</includes>
     <includes refid="object_8h" local="yes">object.h</includes>
     <includedby refid="accid_8h" local="yes">accid.h</includedby>
@@ -69,6 +70,9 @@
       <node id="20">
         <label>iterator</label>
       </node>
+      <node id="30">
+        <label>atttypes.h</label>
+      </node>
       <node id="1">
         <label>layerelement.h</label>
         <link refid="layerelement_8h"/>
@@ -80,8 +84,17 @@
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
         <childnode refid="18" relation="include">
         </childnode>
+      </node>
+      <node id="31">
+        <label>toolkitdef.h</label>
+        <link refid="toolkitdef_8h_source"/>
+      </node>
+      <node id="25">
+        <label>cstdarg</label>
       </node>
       <node id="7">
         <label>string</label>
@@ -100,10 +113,20 @@
       <node id="22">
         <label>attmodule.h</label>
       </node>
+      <node id="17">
+        <label>horizontalaligner.h</label>
+        <link refid="horizontalaligner_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
       <node id="3">
         <label>atts_shared.h</label>
       </node>
-      <node id="17">
+      <node id="32">
         <label>linkinginterface.h</label>
         <link refid="linkinginterface_8h_source"/>
         <childnode refid="3" relation="include">
@@ -112,6 +135,9 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+      </node>
+      <node id="26">
+        <label>cstdio</label>
       </node>
       <node id="13">
         <label>tuple</label>
@@ -163,14 +189,49 @@
       <node id="19">
         <label>cstdlib</label>
       </node>
+      <node id="29">
+        <label>sys/time.h</label>
+      </node>
+      <node id="28">
+        <label>unordered_map</label>
+      </node>
       <node id="21">
         <label>attclasses.h</label>
+      </node>
+      <node id="24">
+        <label>vrv.h</label>
+        <link refid="vrv_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
       </node>
       <node id="2">
         <label>set</label>
       </node>
       <node id="9">
         <label>algorithm</label>
+      </node>
+      <node id="27">
+        <label>cstring</label>
       </node>
       <node id="8">
         <label>vrvdef.h</label>
@@ -1034,12 +1095,12 @@
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atts_shared.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;facsimileinterface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linkinginterface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;object.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vrv<sp/>{</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Alignment;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;horizontalaligner.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linkinginterface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;object.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vrv<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Beam;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">BeamElementCoord;</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">FTrem;</highlight></codeline>
@@ -1153,18 +1214,18 @@
 <codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetGraceAlignment(Alignment<sp/>*graceAlignment);</highlight></codeline>
 <codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>HasGraceAlignment()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="classvrv_1_1_layer_element_1a6ee0bb4018d8ba684437586512ff4136" kindref="member">m_graceAlignment</ref><sp/>!=<sp/>NULL);<sp/>}</highlight></codeline>
 <codeline lineno="261"></codeline>
-<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_layer_element_1a5b007683ce76e4c9fb57df85b3747a76" kindref="member">GetAlignmentDuration</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AlignMeterParams<sp/>&amp;params,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>notGraceOnly<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>Fraction<sp/><ref refid="classvrv_1_1_layer_element_1afb5a9e701dfc1682a4c4cb7f3adeec55" kindref="member">GetAlignmentDuration</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AlignMeterParams<sp/>&amp;params,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>notGraceOnly<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
 <codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data_NOTATIONTYPE<sp/>notationType<sp/>=<sp/>NOTATIONTYPE_cmn)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"></highlight></codeline>
-<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_layer_element_1a5b007683ce76e4c9fb57df85b3747a76" kindref="member">GetAlignmentDuration</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>notGraceOnly<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>data_NOTATIONTYPE<sp/>notationType<sp/>=<sp/>NOTATIONTYPE_cmn)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>Fraction<sp/><ref refid="classvrv_1_1_layer_element_1afb5a9e701dfc1682a4c4cb7f3adeec55" kindref="member">GetAlignmentDuration</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>notGraceOnly<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>data_NOTATIONTYPE<sp/>notationType<sp/>=<sp/>NOTATIONTYPE_cmn)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="273"><highlight class="normal"></highlight></codeline>
-<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_layer_element_1af324e22f83e8e03b1b18d26c8cd63ff2" kindref="member">GetSameAsContentAlignmentDuration</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AlignMeterParams<sp/>&amp;params,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>notGraceOnly<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>Fraction<sp/><ref refid="classvrv_1_1_layer_element_1a5452b530b1549292158f3891c42dcf76" kindref="member">GetSameAsContentAlignmentDuration</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AlignMeterParams<sp/>&amp;params,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>notGraceOnly<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
 <codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data_NOTATIONTYPE<sp/>notationType<sp/>=<sp/>NOTATIONTYPE_cmn)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="280"><highlight class="normal"></highlight></codeline>
-<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GetContentAlignmentDuration(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AlignMeterParams<sp/>&amp;params,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>notGraceOnly<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>Fraction<sp/>GetContentAlignmentDuration(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AlignMeterParams<sp/>&amp;params,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>notGraceOnly<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
 <codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data_NOTATIONTYPE<sp/>notationType<sp/>=<sp/>NOTATIONTYPE_cmn)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="283"><highlight class="normal"></highlight></codeline>
-<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GetContentAlignmentDuration(</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>Fraction<sp/>GetContentAlignmentDuration(</highlight></codeline>
 <codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>notGraceOnly<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>data_NOTATIONTYPE<sp/>notationType<sp/>=<sp/>NOTATIONTYPE_cmn)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="286"><highlight class="normal"></highlight></codeline>
 <codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_layer_element_1a39adc1a3bb53a8836b1dc8bf375d15a1" kindref="member">GenerateZoneBounds</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ulx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*uly,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*lrx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*lry)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>

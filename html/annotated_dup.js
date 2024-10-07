@@ -169,6 +169,7 @@ var annotated_dup =
       [ "FloatingObject", "classvrv_1_1_floating_object.html", "classvrv_1_1_floating_object" ],
       [ "FloatingPositioner", "classvrv_1_1_floating_positioner.html", "classvrv_1_1_floating_positioner" ],
       [ "FontInfo", "classvrv_1_1_font_info.html", "classvrv_1_1_font_info" ],
+      [ "Fraction", "classvrv_1_1_fraction.html", "classvrv_1_1_fraction" ],
       [ "FTrem", "classvrv_1_1_f_trem.html", "classvrv_1_1_f_trem" ],
       [ "Functor", "classvrv_1_1_functor.html", "classvrv_1_1_functor" ],
       [ "FunctorBase", "classvrv_1_1_functor_base.html", "classvrv_1_1_functor_base" ],

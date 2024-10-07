@@ -41,8 +41,9 @@ var searchData=
   ['floatingpositioner_329',['FloatingPositioner',['../classvrv_1_1_floating_positioner.html',1,'vrv']]],
   ['fonthasglyphavailable_330',['FontHasGlyphAvailable',['../classvrv_1_1_resources.html#a0f1c2272251fcf14cd8b7f8dc30e1f07',1,'vrv::Resources']]],
   ['fontinfo_331',['FontInfo',['../classvrv_1_1_font_info.html',1,'vrv']]],
-  ['ftrem_332',['FTrem',['../classvrv_1_1_f_trem.html',1,'vrv']]],
-  ['functor_333',['Functor',['../classvrv_1_1_functor.html',1,'vrv']]],
-  ['functorbase_334',['FunctorBase',['../classvrv_1_1_functor_base.html',1,'vrv']]],
-  ['functorinterface_335',['FunctorInterface',['../classvrv_1_1_functor_interface.html',1,'vrv']]]
+  ['fraction_332',['Fraction',['../classvrv_1_1_fraction.html',1,'vrv']]],
+  ['ftrem_333',['FTrem',['../classvrv_1_1_f_trem.html',1,'vrv']]],
+  ['functor_334',['Functor',['../classvrv_1_1_functor.html',1,'vrv']]],
+  ['functorbase_335',['FunctorBase',['../classvrv_1_1_functor_base.html',1,'vrv']]],
+  ['functorinterface_336',['FunctorInterface',['../classvrv_1_1_functor_interface.html',1,'vrv']]]
 ];

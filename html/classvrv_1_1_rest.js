@@ -15,7 +15,7 @@ var classvrv_1_1_rest =
     [ "GetPositionInterface", "classvrv_1_1_rest.html#a7bade79fe5e753a0214adfd14982867b", null ],
     [ "GetPositionInterface", "classvrv_1_1_rest.html#ac7bf04a331feb93bdd02d4b477776304", null ],
     [ "GetRestGlyph", "classvrv_1_1_rest.html#a1912729f9332702f9c27dc2669f337fb", null ],
-    [ "GetRestGlyph", "classvrv_1_1_rest.html#ae1a001a1b5a5abab228028a3678d07f1", null ],
+    [ "GetRestGlyph", "classvrv_1_1_rest.html#a9d1a8d1586605ed6f0ea42f87eb61964", null ],
     [ "HasToBeAligned", "classvrv_1_1_rest.html#a80065d5795046cf1ebaf9c01b80cd897", null ],
     [ "IsSupportedChild", "classvrv_1_1_rest.html#a440179df00a09ea5e7892e0c5eff5695", null ],
     [ "Reset", "classvrv_1_1_rest.html#a5ecc39383af3006f31d2bcb0d7b09fac", null ],

@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="418" column="5"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="489" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_measure_aligner_1a7ce3ea4c4aa1d31690eeda721e823139" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="419" column="13"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="490" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_measure_aligner_1a8c1fa7cdc214b01b2804f7a6b3b2c30d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="420" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="491" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -64,20 +64,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="451" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="451" bodyend="451"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="522" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="522" bodyend="522"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Set and Get the initial tstamp duration.</header>
       <description><para>Setter takes a meter unit parameter. </para>
 </description>
-      <memberdef kind="function" id="classvrv_1_1_measure_aligner_1a49a407aaec5b22bfa71116770b3746a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_measure_aligner_1ad32dbca896d7753eec67391b24b82860" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::MeasureAligner::SetInitialTstamp</definition>
-        <argsstring>(int meterUnit)</argsstring>
+        <argsstring>(data_DURATION meterUnit)</argsstring>
         <name>SetInitialTstamp</name>
         <param>
-          <type>int</type>
+          <type>data_DURATION</type>
           <declname>meterUnit</declname>
         </param>
         <briefdescription>
@@ -86,11 +86,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="459" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="530" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_measure_aligner_1a70c73263b1a8a7d11482a73351b43a75" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>double</type>
-        <definition>double vrv::MeasureAligner::GetInitialTstampDur</definition>
+      <memberdef kind="function" id="classvrv_1_1_measure_aligner_1ad9887988fc96f5ba057337693a41b770" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref></type>
+        <definition>Fraction vrv::MeasureAligner::GetInitialTstampDur</definition>
         <argsstring>() const</argsstring>
         <name>GetInitialTstampDur</name>
         <briefdescription>
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="460" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="460" bodyend="460"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="531" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="531" bodyend="531"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -112,11 +112,11 @@
 <para>Get left <ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> for the measure and for the left <ref refid="classvrv_1_1_bar_line" kindref="compound">BarLine</ref>. </para>
         </briefdescription>
         <detaileddescription>
-<para>For each <ref refid="classvrv_1_1_measure_aligner" kindref="compound">MeasureAligner</ref>, we keep and <ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> for the left position. The <ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> time will be always -1.0 * DUR_MAX and will appear first in the list. </para>
+<para>For each <ref refid="classvrv_1_1_measure_aligner" kindref="compound">MeasureAligner</ref>, we keep and <ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> for the left position. The <ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> time will be always -1.0 and will appear first in the list. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="469" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="469" bodyend="469"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="540" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="540" bodyend="540"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_measure_aligner_1ad2145eb0f9507bf774f2799c586dc845" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> *</type>
@@ -129,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="470" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="470" bodyend="470"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="541" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="541" bodyend="541"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_measure_aligner_1ab196c809e7b14445ff738a516c6d1877" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> *</type>
@@ -142,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="471" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="471" bodyend="471"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="542" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="542" bodyend="542"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_measure_aligner_1a992ff8238accc731eabf338f2de1a28d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> *</type>
@@ -155,7 +155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="472" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="472" bodyend="472"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="543" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="543" bodyend="543"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -172,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="481" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="481" bodyend="481"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="552" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="552" bodyend="552"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_measure_aligner_1afd40e8d1ed3297d8adfb71682cd040c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> *</type>
@@ -185,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="482" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="482" bodyend="482"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="553" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="553" bodyend="553"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_measure_aligner_1af93ae964b1d11021b94bfa1c0dc36431" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> *</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="483" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="483" bodyend="483"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="554" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="554" bodyend="554"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_measure_aligner_1a68308782eae082da602f9ad6d34e393b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> *</type>
@@ -211,7 +211,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="484" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="484" bodyend="484"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="555" column="21" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="555" bodyend="555"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -232,7 +232,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="513" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="584" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_measure_aligner_1a9266df5a9e5f1ae49c069519f28e6f31" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -250,7 +250,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="514" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="585" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_measure_aligner_1a87effbfe4e9a5c9e83ab75f9ead8e76e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -268,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="515" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="586" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_measure_aligner_1ab3d1e1c58a98b6aec76ace41d1b3eb95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -286,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="516" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="587" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -302,7 +302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="527" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="527" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="598" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="598" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_measure_aligner_1a073a58021c05f3afcf17d730bce5f6a0" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> *</type>
@@ -315,7 +315,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="528" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="528" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="599" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="599" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_measure_aligner_1a296fe52a14e0d133cefba4c3c263c5e9" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> *</type>
@@ -329,7 +329,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="533" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="533" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="604" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="604" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_measure_aligner_1ab585428c5844bad6e63e94457c37af61" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> *</type>
@@ -342,7 +342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="534" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="534" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="605" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="605" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_measure_aligner_1a20d122c43d76274d038d23ff320e20da" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -356,11 +356,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="539" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="539" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="610" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="610" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_measure_aligner_1afbf24791102fdb6848a45ab7690e4e1b" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double vrv::MeasureAligner::m_initialTstampDur</definition>
+      <memberdef kind="variable" id="classvrv_1_1_measure_aligner_1aa6b9fa689f6686380cf8c7335de65911" prot="private" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref></type>
+        <definition>Fraction vrv::MeasureAligner::m_initialTstampDur</definition>
         <argsstring></argsstring>
         <name>m_initialTstampDur</name>
         <briefdescription>
@@ -371,7 +371,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="545" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="545" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="616" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="616" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -392,15 +392,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="426" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="497" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_measure_aligner_1aeac4bcbe00b4bd1b05cae495b8dbb977" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_measure_aligner_1a7b19df17768c52c57de3e5d87056188e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> *</type>
         <definition>Alignment* vrv::MeasureAligner::GetAlignmentAtTime</definition>
-        <argsstring>(double time, AlignmentType type)</argsstring>
+        <argsstring>(const Fraction &amp;time, AlignmentType type)</argsstring>
         <name>GetAlignmentAtTime</name>
         <param>
-          <type>double</type>
+          <type>const <ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref> &amp;</type>
           <declname>time</declname>
         </param>
         <param>
@@ -415,15 +415,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="433" column="15"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="504" column="15"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_measure_aligner_1aab4edf29c88be6e12e726668af041d9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_measure_aligner_1a5ea39bc18c4e613620932a35e12fef87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::MeasureAligner::SetMaxTime</definition>
-        <argsstring>(double time)</argsstring>
+        <argsstring>(const Fraction &amp;time)</argsstring>
         <name>SetMaxTime</name>
         <param>
-          <type>double</type>
+          <type>const <ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref> &amp;</type>
           <declname>time</declname>
         </param>
         <briefdescription>
@@ -434,11 +434,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="440" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="511" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_measure_aligner_1af9c8e8bed146847a7cfd14db87164ff8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double vrv::MeasureAligner::GetMaxTime</definition>
+      <memberdef kind="function" id="classvrv_1_1_measure_aligner_1a31dfc213071b64994ee17c9ca9f1d917" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref></type>
+        <definition>Fraction vrv::MeasureAligner::GetMaxTime</definition>
         <argsstring>() const</argsstring>
         <name>GetMaxTime</name>
         <briefdescription>
@@ -448,7 +448,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="445" column="12"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="516" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_measure_aligner_1ae6a64b2c27e8f75b9bf6071b10fd2e07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -467,7 +467,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="491" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="562" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_measure_aligner_1a2ea7245b5f0cf0bb1bc4fc144f29e8af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -482,7 +482,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="497" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="568" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_measure_aligner_1a7d9b7857e1a626e78e19915824e01349" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -508,7 +508,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="503" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="574" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -564,7 +564,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="411" column="46" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="411" bodyend="546"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" line="482" column="46" bodyfile="/home/runner/work/verovio/verovio/include/vrv/horizontalaligner.h" bodystart="482" bodyend="617"/>
     <listofallmembers>
       <member refid="classvrv_1_1_measure_aligner_1a4ab3fe228e0fbb7c68ac80a300d2f448" prot="public" virt="virtual"><scope>vrv::MeasureAligner</scope><name>Accept</name></member>
       <member refid="classvrv_1_1_measure_aligner_1a9266df5a9e5f1ae49c069519f28e6f31" prot="public" virt="virtual"><scope>vrv::MeasureAligner</scope><name>Accept</name></member>
@@ -615,7 +615,7 @@
       <member refid="classvrv_1_1_object_1a5783461a8f5bee6d95391b86e0004ff4" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>FindNextChild</name></member>
       <member refid="classvrv_1_1_object_1a4750585ae6b8737aba3408fcc863dfeb" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>FindPreviousChild</name></member>
       <member refid="classvrv_1_1_object_1ab61ec322562aee0247f49e9fb008a448" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GenerateHashID</name></member>
-      <member refid="classvrv_1_1_measure_aligner_1aeac4bcbe00b4bd1b05cae495b8dbb977" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GetAlignmentAtTime</name></member>
+      <member refid="classvrv_1_1_measure_aligner_1a7b19df17768c52c57de3e5d87056188e" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GetAlignmentAtTime</name></member>
       <member refid="classvrv_1_1_horizontal_aligner_1a17563d5f8fd0073caef0fdc4016292ff" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GetAlignmentCount</name></member>
       <member refid="classvrv_1_1_object_1a802e613f29ccc215de5768b4e6d0b9d0" prot="public" virt="virtual"><scope>vrv::MeasureAligner</scope><name>GetAltSymInterface</name></member>
       <member refid="classvrv_1_1_object_1ac3fdcc01a8048f6758fd787d33ddef8a" prot="public" virt="virtual"><scope>vrv::MeasureAligner</scope><name>GetAltSymInterface</name></member>
@@ -678,7 +678,7 @@
       <member refid="classvrv_1_1_object_1a7cde888c2a3a0af025cd706540d7333a" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GetFirstChildNot</name></member>
       <member refid="classvrv_1_1_object_1aef1d784524c2d3c60d0c0142d1a8ab53" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GetID</name></member>
       <member refid="classvrv_1_1_object_1a2bfb8ee92dbd7e805de0aae51d07d534" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GetIdx</name></member>
-      <member refid="classvrv_1_1_measure_aligner_1a70c73263b1a8a7d11482a73351b43a75" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GetInitialTstampDur</name></member>
+      <member refid="classvrv_1_1_measure_aligner_1ad9887988fc96f5ba057337693a41b770" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GetInitialTstampDur</name></member>
       <member refid="classvrv_1_1_object_1ad8f7812ad7bdfe96dda1eda108484955" prot="public" virt="virtual"><scope>vrv::MeasureAligner</scope><name>GetInsertOrderFor</name></member>
       <member refid="classvrv_1_1_object_1afeda31a18e057eaa199a5a76d2a8cf78" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GetInsertOrderForIn</name></member>
       <member refid="classvrv_1_1_object_1aa7382f9b787c517cf76a6ece195f7766" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GetLast</name></member>
@@ -692,7 +692,7 @@
       <member refid="classvrv_1_1_bounding_box_1af329372204a34520779e6b0d0596e8b9" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GetLeftBy</name></member>
       <member refid="classvrv_1_1_object_1a817a55b73b4356214fecf01d9da87d26" prot="public" virt="virtual"><scope>vrv::MeasureAligner</scope><name>GetLinkingInterface</name></member>
       <member refid="classvrv_1_1_object_1a71f584e3103c93a150d3a3f95a8cd6b6" prot="public" virt="virtual"><scope>vrv::MeasureAligner</scope><name>GetLinkingInterface</name></member>
-      <member refid="classvrv_1_1_measure_aligner_1af9c8e8bed146847a7cfd14db87164ff8" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GetMaxTime</name></member>
+      <member refid="classvrv_1_1_measure_aligner_1a31dfc213071b64994ee17c9ca9f1d917" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GetMaxTime</name></member>
       <member refid="classvrv_1_1_object_1a776dc4f75ec176b5189ce8818a221bcf" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GetMilestoneEnd</name></member>
       <member refid="classvrv_1_1_object_1ab2e351247e616a3f30eaf2e3d125f054" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GetNext</name></member>
       <member refid="classvrv_1_1_object_1a0db530be167ba91d886764f066e63c2b" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>GetNext</name></member>
@@ -787,7 +787,7 @@
       <member refid="classvrv_1_1_object_1af9632e5d159e4dcdf0f91e127be0fb4a" prot="public" virt="virtual"><scope>vrv::MeasureAligner</scope><name>LogDebugTreeMsg</name></member>
       <member refid="classvrv_1_1_bounding_box_1a4961ebaf8f99abe31ee894345cd84a16" prot="protected" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>m_cachedDrawingX</name></member>
       <member refid="classvrv_1_1_bounding_box_1a548baf7b854ef877313302670da5d0b8" prot="protected" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>m_cachedDrawingY</name></member>
-      <member refid="classvrv_1_1_measure_aligner_1afbf24791102fdb6848a45ab7690e4e1b" prot="private" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>m_initialTstampDur</name></member>
+      <member refid="classvrv_1_1_measure_aligner_1aa6b9fa689f6686380cf8c7335de65911" prot="private" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>m_initialTstampDur</name></member>
       <member refid="classvrv_1_1_measure_aligner_1a2404897633bf0f3bf9338d000e67a32f" prot="private" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>m_leftAlignment</name></member>
       <member refid="classvrv_1_1_measure_aligner_1a296fe52a14e0d133cefba4c3c263c5e9" prot="private" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>m_leftBarLineAlignment</name></member>
       <member refid="classvrv_1_1_measure_aligner_1a20d122c43d76274d038d23ff320e20da" prot="private" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>m_nonJustifiableLeftMargin</name></member>
@@ -822,8 +822,8 @@
       <member refid="classvrv_1_1_object_1a6a40859719b200dae8d65ee9d597bccd" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>ResetID</name></member>
       <member refid="classvrv_1_1_object_1a5d22ebda01e0b254c13d558f5ffdb098" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>ResetParent</name></member>
       <member refid="classvrv_1_1_object_1a86b033680370fc35b444ef74a55bca92" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SaveObject</name></member>
-      <member refid="classvrv_1_1_horizontal_aligner_1a1b3764dfcb51917eca727e2e55c402b2" prot="protected" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SearchAlignmentAtTime</name></member>
-      <member refid="classvrv_1_1_horizontal_aligner_1a491f568c56098e90b4c69fd172a55890" prot="protected" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SearchAlignmentAtTime</name></member>
+      <member refid="classvrv_1_1_horizontal_aligner_1a524f10edef2486134cc4a3fae568a2c0" prot="protected" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SearchAlignmentAtTime</name></member>
+      <member refid="classvrv_1_1_horizontal_aligner_1a3635d323ce693817935f26675db26eaf" prot="protected" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SearchAlignmentAtTime</name></member>
       <member refid="classvrv_1_1_object_1aa8fa10c3b5d07eec119fe0d73aa9b6ab" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SeedID</name></member>
       <member refid="classvrv_1_1_object_1a9bc335e3bc5405f5dbaae757b5629996" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SetAsReferenceObject</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7eccd9ca1e458dccab9c6b9fb7a24ec4" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SetBoundingBoxGlyph</name></member>
@@ -831,8 +831,8 @@
       <member refid="classvrv_1_1_object_1a3b47aa3445a48e681db41607cedcd4b4" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SetComment</name></member>
       <member refid="classvrv_1_1_bounding_box_1ade8f7ad2283b156a2c7934c4055bd8bf" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SetEmptyBB</name></member>
       <member refid="classvrv_1_1_object_1aa34da3a7092c0b6753c91459b52648b9" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SetID</name></member>
-      <member refid="classvrv_1_1_measure_aligner_1a49a407aaec5b22bfa71116770b3746a8" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SetInitialTstamp</name></member>
-      <member refid="classvrv_1_1_measure_aligner_1aab4edf29c88be6e12e726668af041d9d" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SetMaxTime</name></member>
+      <member refid="classvrv_1_1_measure_aligner_1ad32dbca896d7753eec67391b24b82860" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SetInitialTstamp</name></member>
+      <member refid="classvrv_1_1_measure_aligner_1a5ea39bc18c4e613620932a35e12fef87" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SetMaxTime</name></member>
       <member refid="classvrv_1_1_object_1a9f30aa6a8185b260943003a08980d376" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SetParent</name></member>
       <member refid="classvrv_1_1_bounding_box_1ab4d1764142c6881678dbfcaee124e38f" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>SolveCubicPolynomial</name></member>
       <member refid="classvrv_1_1_object_1a6c529b9574392b6c2baeaf8470e2a989" prot="public" virt="non-virtual"><scope>vrv::MeasureAligner</scope><name>sortByUlx</name></member>

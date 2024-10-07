@@ -99,83 +99,84 @@ $(document).ready(function(){initNavTree('durationinterface_8h_source.html','');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;atts_gestural.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;atts_mensural.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;atts_shared.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;interface.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>vrv {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>Mensur;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>Object;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// DurationInterface</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classvrv_1_1_duration_interface.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_duration_interface.html">DurationInterface</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_interface.html">Interface</a>,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                          <span class="keyword">public</span> AttAugmentDots,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                          <span class="keyword">public</span> AttBeamSecondary,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                          <span class="keyword">public</span> AttDurationGes,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                          <span class="keyword">public</span> AttDurationLog,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                          <span class="keyword">public</span> AttDurationQuality,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                          <span class="keyword">public</span> AttDurationRatio,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                          <span class="keyword">public</span> AttFermataPresent,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                          <span class="keyword">public</span> AttStaffIdent {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classvrv_1_1_duration_interface.html">DurationInterface</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_duration_interface.html">DurationInterface</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_duration_interface.html#ab614c92b0802cbba7b41d89def33e9a2">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classvrv_1_1_duration_interface.html#aa95bb6fba812c2b05620c3b862e0f6e5">   48</a></span>&#160;    InterfaceId <a class="code" href="classvrv_1_1_duration_interface.html#aa95bb6fba812c2b05620c3b862e0f6e5">IsInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> INTERFACE_DURATION; }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> SetDurDefault(data_DURATION dur) { m_durDefault = dur; }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    data_DURATION GetDurDefault()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_durDefault; }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classvrv_1_1_duration_interface.html#ab2a1d68a148ae1f515e711fff40941c9">GetInterfaceAlignmentDuration</a>(<span class="keywordtype">int</span> num, <span class="keywordtype">int</span> numBase) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classvrv_1_1_duration_interface.html#a1220b22b42b63e3632fe49149d3a17f5">GetInterfaceAlignmentMensuralDuration</a>(<span class="keywordtype">int</span> num, <span class="keywordtype">int</span> numBase, <span class="keyword">const</span> Mensur *currentMensur) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_duration_interface.html#ad14ac28eed0c0fbc93bf4b104abb1c2e">IsFirstInBeam</a>(<span class="keyword">const</span> LayerElement *noteOrRest) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_duration_interface.html#ab7a23457945d43056b01fde4cc1d8b46">IsLastInBeam</a>(<span class="keyword">const</span> LayerElement *noteOrRest) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">int</span> GetActualDur() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">int</span> GetActualDurGes() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;horizontalaligner.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;interface.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>vrv {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>Mensur;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>Object;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// DurationInterface</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classvrv_1_1_duration_interface.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_duration_interface.html">DurationInterface</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_interface.html">Interface</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                          <span class="keyword">public</span> AttAugmentDots,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                          <span class="keyword">public</span> AttBeamSecondary,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                          <span class="keyword">public</span> AttDurationGes,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                          <span class="keyword">public</span> AttDurationLog,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                          <span class="keyword">public</span> AttDurationQuality,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                          <span class="keyword">public</span> AttDurationRatio,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                          <span class="keyword">public</span> AttFermataPresent,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                          <span class="keyword">public</span> AttStaffIdent {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classvrv_1_1_duration_interface.html">DurationInterface</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_duration_interface.html">DurationInterface</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_duration_interface.html#ab614c92b0802cbba7b41d89def33e9a2">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classvrv_1_1_duration_interface.html#aa95bb6fba812c2b05620c3b862e0f6e5">   49</a></span>&#160;    InterfaceId <a class="code" href="classvrv_1_1_duration_interface.html#aa95bb6fba812c2b05620c3b862e0f6e5">IsInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> INTERFACE_DURATION; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> SetDurDefault(data_DURATION dur) { m_durDefault = dur; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    data_DURATION GetDurDefault()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_durDefault; }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    Fraction <a class="code" href="classvrv_1_1_duration_interface.html#a1b27be2ecd1bcd7366219fd1216a7667">GetInterfaceAlignmentDuration</a>(<span class="keywordtype">int</span> num, <span class="keywordtype">int</span> numBase) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    Fraction <a class="code" href="classvrv_1_1_duration_interface.html#a40ff7919dfa3bba8251c37c64da4cf1a">GetInterfaceAlignmentMensuralDuration</a>(<span class="keywordtype">int</span> num, <span class="keywordtype">int</span> numBase, <span class="keyword">const</span> Mensur *currentMensur) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_duration_interface.html#ad14ac28eed0c0fbc93bf4b104abb1c2e">IsFirstInBeam</a>(<span class="keyword">const</span> LayerElement *noteOrRest) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_duration_interface.html#ab7a23457945d43056b01fde4cc1d8b46">IsLastInBeam</a>(<span class="keyword">const</span> LayerElement *noteOrRest) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    data_DURATION GetActualDur() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    data_DURATION GetActualDurGes() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_duration_interface.html#aa6d43066a4932c02ecdde2ade384257d">GetNoteOrChordDur</a>(<span class="keyword">const</span> LayerElement *element) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    data_DURATION <a class="code" href="classvrv_1_1_duration_interface.html#a7bc0fd1fb0dda4f72ba3f78ef6da128a">GetNoteOrChordDur</a>(<span class="keyword">const</span> LayerElement *element) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_duration_interface.html#a66a8195b6236d862a2234af1fb5256c1">IsMensuralDur</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_duration_interface.html#a550d47c959ecccc53c488685fea3177c">HasIdenticalDurationInterface</a>(<span class="keyword">const</span> DurationInterface *otherDurationInterface) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_duration_interface.html#a0bee1f64b04b02e1126446701a6532aa">SetScoreTimeOnset</a>(<span class="keywordtype">double</span> scoreTime);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_duration_interface.html#a279fddb621315efe35003c60ab2c359f">SetScoreTimeOnset</a>(Fraction scoreTime);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> SetRealTimeOnsetSeconds(<span class="keywordtype">double</span> timeInSeconds);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> SetScoreTimeOffset(<span class="keywordtype">double</span> scoreTime);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> SetScoreTimeOffset(Fraction scoreTime);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">void</span> SetRealTimeOffsetSeconds(<span class="keywordtype">double</span> timeInSeconds);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> SetScoreTimeTiedDuration(<span class="keywordtype">double</span> timeInSeconds);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">double</span> GetScoreTimeOnset() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> SetScoreTimeTiedDuration(Fraction timeInSeconds);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    Fraction GetScoreTimeOnset() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">double</span> GetRealTimeOnsetMilliseconds() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">double</span> GetScoreTimeOffset() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">double</span> GetScoreTimeTiedDuration() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    Fraction GetScoreTimeOffset() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    Fraction GetScoreTimeTiedDuration() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">double</span> GetRealTimeOffsetMilliseconds() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">double</span> GetScoreTimeDuration() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    Fraction GetScoreTimeDuration() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="comment">//-----------------//</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// Pseudo functors //</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">//-----------------//</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">int</span> CalcActualDur(data_DURATION dur) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    data_DURATION CalcActualDur(data_DURATION dur) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">double</span> m_scoreTimeOnset;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    Fraction m_scoreTimeOnset;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">double</span> m_scoreTimeOffset;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    Fraction m_scoreTimeOffset;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">double</span> m_realTimeOnsetMilliseconds;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">double</span> m_realTimeOffsetMilliseconds;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordtype">double</span> m_scoreTimeTiedDuration;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    Fraction m_scoreTimeTiedDuration;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    data_DURATION m_durDefault;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;};</div>
@@ -185,23 +186,23 @@ $(document).ready(function(){initNavTree('durationinterface_8h_source.html','');
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_duration_interface_html_aa95bb6fba812c2b05620c3b862e0f6e5"><div class="ttname"><a href="classvrv_1_1_duration_interface.html#aa95bb6fba812c2b05620c3b862e0f6e5">vrv::DurationInterface::IsInterface</a></div><div class="ttdeci">InterfaceId IsInterface() const override</div><div class="ttdoc">Virtual method returning the InterfaceId of the interface.</div><div class="ttdef"><b>Definition:</b> durationinterface.h:48</div></div>
-<div class="ttc" id="aclassvrv_1_1_duration_interface_html_ab2a1d68a148ae1f515e711fff40941c9"><div class="ttname"><a href="classvrv_1_1_duration_interface.html#ab2a1d68a148ae1f515e711fff40941c9">vrv::DurationInterface::GetInterfaceAlignmentDuration</a></div><div class="ttdeci">double GetInterfaceAlignmentDuration(int num, int numBase) const</div><div class="ttdoc">Returns the duration (in double) for the element.</div></div>
+<div class="ttc" id="aclassvrv_1_1_duration_interface_html_aa95bb6fba812c2b05620c3b862e0f6e5"><div class="ttname"><a href="classvrv_1_1_duration_interface.html#aa95bb6fba812c2b05620c3b862e0f6e5">vrv::DurationInterface::IsInterface</a></div><div class="ttdeci">InterfaceId IsInterface() const override</div><div class="ttdoc">Virtual method returning the InterfaceId of the interface.</div><div class="ttdef"><b>Definition:</b> durationinterface.h:49</div></div>
+<div class="ttc" id="aclassvrv_1_1_duration_interface_html_a1b27be2ecd1bcd7366219fd1216a7667"><div class="ttname"><a href="classvrv_1_1_duration_interface.html#a1b27be2ecd1bcd7366219fd1216a7667">vrv::DurationInterface::GetInterfaceAlignmentDuration</a></div><div class="ttdeci">Fraction GetInterfaceAlignmentDuration(int num, int numBase) const</div><div class="ttdoc">Returns the duration (in Fraction) for the element.</div></div>
 <div class="ttc" id="aclassvrv_1_1_interface_html"><div class="ttname"><a href="classvrv_1_1_interface.html">vrv::Interface</a></div><div class="ttdoc">This is a base class for regrouping MEI att classes.</div><div class="ttdef"><b>Definition:</b> interface.h:32</div></div>
 <div class="ttc" id="aclassvrv_1_1_duration_interface_html_ad14ac28eed0c0fbc93bf4b104abb1c2e"><div class="ttname"><a href="classvrv_1_1_duration_interface.html#ad14ac28eed0c0fbc93bf4b104abb1c2e">vrv::DurationInterface::IsFirstInBeam</a></div><div class="ttdeci">bool IsFirstInBeam(const LayerElement *noteOrRest) const</div><div class="ttdoc">Return true if the note or rest is the first of a beam.</div></div>
 <div class="ttc" id="aclassvrv_1_1_duration_interface_html_ab614c92b0802cbba7b41d89def33e9a2"><div class="ttname"><a href="classvrv_1_1_duration_interface.html#ab614c92b0802cbba7b41d89def33e9a2">vrv::DurationInterface::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_duration_interface_html_a66a8195b6236d862a2234af1fb5256c1"><div class="ttname"><a href="classvrv_1_1_duration_interface.html#a66a8195b6236d862a2234af1fb5256c1">vrv::DurationInterface::IsMensuralDur</a></div><div class="ttdeci">bool IsMensuralDur() const</div><div class="ttdoc">Return true if the value is a mensural (DURATION_longa, brevis, etc.)</div></div>
-<div class="ttc" id="aclassvrv_1_1_duration_interface_html_a1220b22b42b63e3632fe49149d3a17f5"><div class="ttname"><a href="classvrv_1_1_duration_interface.html#a1220b22b42b63e3632fe49149d3a17f5">vrv::DurationInterface::GetInterfaceAlignmentMensuralDuration</a></div><div class="ttdeci">double GetInterfaceAlignmentMensuralDuration(int num, int numBase, const Mensur *currentMensur) const</div><div class="ttdoc">Returns the duration (in double) for the element for mensural notation Currently this assume brevis e...</div></div>
-<div class="ttc" id="aclassvrv_1_1_duration_interface_html_aa6d43066a4932c02ecdde2ade384257d"><div class="ttname"><a href="classvrv_1_1_duration_interface.html#aa6d43066a4932c02ecdde2ade384257d">vrv::DurationInterface::GetNoteOrChordDur</a></div><div class="ttdeci">int GetNoteOrChordDur(const LayerElement *element) const</div><div class="ttdoc">If the element is part of a chord, return the chord actual duration, otherwise the note actual durati...</div></div>
-<div class="ttc" id="aclassvrv_1_1_duration_interface_html_a0bee1f64b04b02e1126446701a6532aa"><div class="ttname"><a href="classvrv_1_1_duration_interface.html#a0bee1f64b04b02e1126446701a6532aa">vrv::DurationInterface::SetScoreTimeOnset</a></div><div class="ttdeci">void SetScoreTimeOnset(double scoreTime)</div><div class="ttdoc">MIDI timing information.</div></div>
-<div class="ttc" id="aclassvrv_1_1_duration_interface_html"><div class="ttname"><a href="classvrv_1_1_duration_interface.html">vrv::DurationInterface</a></div><div class="ttdoc">This class is an interface for elements with duration, such as notes and rests.</div><div class="ttdef"><b>Definition:</b> durationinterface.h:30</div></div>
+<div class="ttc" id="aclassvrv_1_1_duration_interface_html_a40ff7919dfa3bba8251c37c64da4cf1a"><div class="ttname"><a href="classvrv_1_1_duration_interface.html#a40ff7919dfa3bba8251c37c64da4cf1a">vrv::DurationInterface::GetInterfaceAlignmentMensuralDuration</a></div><div class="ttdeci">Fraction GetInterfaceAlignmentMensuralDuration(int num, int numBase, const Mensur *currentMensur) const</div><div class="ttdoc">Returns the duration (in Fraction) for the element for mensural notation Currently this assume brevis...</div></div>
+<div class="ttc" id="aclassvrv_1_1_duration_interface_html_a7bc0fd1fb0dda4f72ba3f78ef6da128a"><div class="ttname"><a href="classvrv_1_1_duration_interface.html#a7bc0fd1fb0dda4f72ba3f78ef6da128a">vrv::DurationInterface::GetNoteOrChordDur</a></div><div class="ttdeci">data_DURATION GetNoteOrChordDur(const LayerElement *element) const</div><div class="ttdoc">If the element is part of a chord, return the chord actual duration, otherwise the note actual durati...</div></div>
+<div class="ttc" id="aclassvrv_1_1_duration_interface_html_a279fddb621315efe35003c60ab2c359f"><div class="ttname"><a href="classvrv_1_1_duration_interface.html#a279fddb621315efe35003c60ab2c359f">vrv::DurationInterface::SetScoreTimeOnset</a></div><div class="ttdeci">void SetScoreTimeOnset(Fraction scoreTime)</div><div class="ttdoc">MIDI timing information.</div></div>
+<div class="ttc" id="aclassvrv_1_1_duration_interface_html"><div class="ttname"><a href="classvrv_1_1_duration_interface.html">vrv::DurationInterface</a></div><div class="ttdoc">This class is an interface for elements with duration, such as notes and rests.</div><div class="ttdef"><b>Definition:</b> durationinterface.h:31</div></div>
 <div class="ttc" id="aclassvrv_1_1_duration_interface_html_a550d47c959ecccc53c488685fea3177c"><div class="ttname"><a href="classvrv_1_1_duration_interface.html#a550d47c959ecccc53c488685fea3177c">vrv::DurationInterface::HasIdenticalDurationInterface</a></div><div class="ttdeci">bool HasIdenticalDurationInterface(const DurationInterface *otherDurationInterface) const</div><div class="ttdoc">Interface comparison operator.</div></div>
 <div class="ttc" id="aclassvrv_1_1_duration_interface_html_ab7a23457945d43056b01fde4cc1d8b46"><div class="ttname"><a href="classvrv_1_1_duration_interface.html#ab7a23457945d43056b01fde4cc1d8b46">vrv::DurationInterface::IsLastInBeam</a></div><div class="ttdeci">bool IsLastInBeam(const LayerElement *noteOrRest) const</div><div class="ttdoc">Return true if the note or rest is the last of a beam.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>durationinterface.h</b></li>
-    <li class="footer">Generated on Mon Oct 7 2024 08:09:50 for Verovio by
+    <li class="footer">Generated on Mon Oct 7 2024 11:53:13 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -85,13 +85,13 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classvrv_1_1_beat_rpt_1aa30a960c5be7e82620ac868a20ea89d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_beat_rpt_1a789d83957f5f3b37bf179d23a8a304d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::BeatRpt::SetScoreTimeOnset</definition>
-        <argsstring>(double scoreTime)</argsstring>
+        <argsstring>(Fraction scoreTime)</argsstring>
         <name>SetScoreTimeOnset</name>
         <param>
-          <type>double</type>
+          <type><ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref></type>
           <declname>scoreTime</declname>
         </param>
         <briefdescription>
@@ -103,9 +103,9 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/beatrpt.h" line="52" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beat_rpt_1a801afd02d7d6363c9b8f2057ab032afa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double vrv::BeatRpt::GetScoreTimeOnset</definition>
+      <memberdef kind="function" id="classvrv_1_1_beat_rpt_1a7fafa10443b9c3c664283eb0183e5b90" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref></type>
+        <definition>Fraction vrv::BeatRpt::GetScoreTimeOnset</definition>
         <argsstring>() const</argsstring>
         <name>GetScoreTimeOnset</name>
         <briefdescription>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beatrpt.h" line="53" column="12"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beatrpt.h" line="53" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_beat_rpt_1a73ef33c6fde120255962996d4136a5f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -191,9 +191,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classvrv_1_1_beat_rpt_1a3e87920d0ed1b4d17652f5a82ac44459" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double vrv::BeatRpt::m_scoreTimeOnset</definition>
+      <memberdef kind="variable" id="classvrv_1_1_beat_rpt_1aad90e1164ec8c5bd0e908eb1b0d36409" prot="private" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref></type>
+        <definition>Fraction vrv::BeatRpt::m_scoreTimeOnset</definition>
         <argsstring></argsstring>
         <name>m_scoreTimeOnset</name>
         <briefdescription>
@@ -203,7 +203,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beatrpt.h" line="78" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beatrpt.h" bodystart="78" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beatrpt.h" line="78" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beatrpt.h" bodystart="78" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -222,23 +222,23 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/beatrpt.h" line="40" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beatrpt.h" bodystart="40" bodyend="40"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_beat_rpt_1a46d10bc1d9d4d3fae07fc25b08621b10" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double vrv::BeatRpt::GetBeatRptAlignmentDuration</definition>
-        <argsstring>(int meterUnit) const</argsstring>
+      <memberdef kind="function" id="classvrv_1_1_beat_rpt_1a241a29c0b82b49adfd626edaf52f19c1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref></type>
+        <definition>Fraction vrv::BeatRpt::GetBeatRptAlignmentDuration</definition>
+        <argsstring>(data_DURATION meterUnit) const</argsstring>
         <name>GetBeatRptAlignmentDuration</name>
         <param>
-          <type>int</type>
+          <type>data_DURATION</type>
           <declname>meterUnit</declname>
         </param>
         <briefdescription>
-<para>Returns the duration (in double) for the <ref refid="classvrv_1_1_beat_rpt" kindref="compound">BeatRpt</ref>. </para>
+<para>Returns the duration (in <ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref>) for the <ref refid="classvrv_1_1_beat_rpt" kindref="compound">BeatRpt</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beatrpt.h" line="46" column="12"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beatrpt.h" line="46" column="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -687,8 +687,8 @@
       <member refid="classvrv_1_1_layer_element_1a39adc1a3bb53a8836b1dc8bf375d15a1" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GenerateZoneBounds</name></member>
       <member refid="classvrv_1_1_layer_element_1aaf37de33bde75ed90873dead9d515860" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetAlignment</name></member>
       <member refid="classvrv_1_1_layer_element_1a5d22f797b37bd60c3571dda3b91bebc2" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetAlignment</name></member>
-      <member refid="classvrv_1_1_layer_element_1a5b007683ce76e4c9fb57df85b3747a76" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetAlignmentDuration</name></member>
-      <member refid="classvrv_1_1_layer_element_1a848e89b9ba11f1150f2fab5217254381" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetAlignmentDuration</name></member>
+      <member refid="classvrv_1_1_layer_element_1afb5a9e701dfc1682a4c4cb7f3adeec55" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetAlignmentDuration</name></member>
+      <member refid="classvrv_1_1_layer_element_1aed956667c1892e7d006ad447efd78e18" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetAlignmentDuration</name></member>
       <member refid="classvrv_1_1_layer_element_1a2fb9126c18e349cefe4a66479c97f17a" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetAlignmentLayerN</name></member>
       <member refid="classvrv_1_1_object_1a802e613f29ccc215de5768b4e6d0b9d0" prot="public" virt="virtual"><scope>vrv::BeatRpt</scope><name>GetAltSymInterface</name></member>
       <member refid="classvrv_1_1_object_1ac3fdcc01a8048f6758fd787d33ddef8a" prot="public" virt="virtual"><scope>vrv::BeatRpt</scope><name>GetAltSymInterface</name></member>
@@ -707,7 +707,7 @@
       <member refid="classvrv_1_1_object_1aeb7e152a62704071901972bbfa06062c" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetAttributes</name></member>
       <member refid="classvrv_1_1_object_1a6d9d3ae387831fac891f903349348310" prot="public" virt="virtual"><scope>vrv::BeatRpt</scope><name>GetBeamDrawingInterface</name></member>
       <member refid="classvrv_1_1_object_1ab136df3273e12a93e3699ae62e9d2514" prot="public" virt="virtual"><scope>vrv::BeatRpt</scope><name>GetBeamDrawingInterface</name></member>
-      <member refid="classvrv_1_1_beat_rpt_1a46d10bc1d9d4d3fae07fc25b08621b10" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetBeatRptAlignmentDuration</name></member>
+      <member refid="classvrv_1_1_beat_rpt_1a241a29c0b82b49adfd626edaf52f19c1" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetBeatRptAlignmentDuration</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3dbe5a481e20ab4d0d9fdd47708d1c2f" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetBezierThicknessCoefficient</name></member>
       <member refid="classvrv_1_1_bounding_box_1a91a7bb36d11f909e84caab997fb49c0c" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetBottomBy</name></member>
       <member refid="classvrv_1_1_bounding_box_1a5a9da745d928e71989c23eca8d4b77d7" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetBoundingBoxGlyph</name></member>
@@ -728,8 +728,8 @@
       <member refid="classvrv_1_1_object_1a65066ae5b40a4dc3aab9bf76abc57d36" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetClosingComment</name></member>
       <member refid="classvrv_1_1_layer_element_1afb64a340246bd59bd429c6a2b05f5fae" prot="protected" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetCollisionCount</name></member>
       <member refid="classvrv_1_1_object_1aa8a0722010e05e1e2cb04d90a9535cc4" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetComment</name></member>
-      <member refid="classvrv_1_1_layer_element_1a96503886d0c7b64b5ab975c7386edb17" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetContentAlignmentDuration</name></member>
-      <member refid="classvrv_1_1_layer_element_1afbd962a925926ed70d3a774f3993deb8" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetContentAlignmentDuration</name></member>
+      <member refid="classvrv_1_1_layer_element_1a136d3092e895b4c161a15a0f3519318d" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetContentAlignmentDuration</name></member>
+      <member refid="classvrv_1_1_layer_element_1ad5f41fe682d6ffd35b56673bfc7010b1" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetContentAlignmentDuration</name></member>
       <member refid="classvrv_1_1_bounding_box_1a74fec7caf937bc6892cd0de8c1f29355" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetContentBottom</name></member>
       <member refid="classvrv_1_1_bounding_box_1a9a33f5750af51cfb292ff2a553744e2d" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetContentLeft</name></member>
       <member refid="classvrv_1_1_bounding_box_1a755302fda960358f076a3175783a5d78" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetContentRight</name></member>
@@ -811,13 +811,13 @@
       <member refid="classvrv_1_1_object_1a26a7c60cdf50a4072927aa671112f1f3" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetPrevious</name></member>
       <member refid="classvrv_1_1_object_1ad3b827c4f53d81386c192ce462f09b3e" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetPrevious</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2fe9d4e0cef41c270fe6683e5fbd8223" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetRightBy</name></member>
-      <member refid="classvrv_1_1_layer_element_1af324e22f83e8e03b1b18d26c8cd63ff2" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetSameAsContentAlignmentDuration</name></member>
+      <member refid="classvrv_1_1_layer_element_1a5452b530b1549292158f3891c42dcf76" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetSameAsContentAlignmentDuration</name></member>
       <member refid="classvrv_1_1_linking_interface_1ab531ee1a9df9e2edc5413a967fbce53f" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetSameasLink</name></member>
       <member refid="classvrv_1_1_linking_interface_1a16e98894fa7294f7d2032466dde3c2ce" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetSameasLink</name></member>
       <member refid="classvrv_1_1_object_1a36ae3be40fa20c6255a6003e5d56133f" prot="public" virt="virtual"><scope>vrv::BeatRpt</scope><name>GetScoreDefInterface</name></member>
       <member refid="classvrv_1_1_object_1af26b539ef3e271bc568bebff37c01a33" prot="public" virt="virtual"><scope>vrv::BeatRpt</scope><name>GetScoreDefInterface</name></member>
       <member refid="classvrv_1_1_layer_element_1abcd8e1cf9412090b3de520f1119b7196" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetScoreDefRole</name></member>
-      <member refid="classvrv_1_1_beat_rpt_1a801afd02d7d6363c9b8f2057ab032afa" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetScoreTimeOnset</name></member>
+      <member refid="classvrv_1_1_beat_rpt_1a7fafa10443b9c3c664283eb0183e5b90" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetScoreTimeOnset</name></member>
       <member refid="classvrv_1_1_bounding_box_1a7e55bc05f8dc9b3ff7768fe48c791d83" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetSelfBottom</name></member>
       <member refid="classvrv_1_1_bounding_box_1a2fb7e4b83e390c3cd436e3a73ddfa269" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetSelfLeft</name></member>
       <member refid="classvrv_1_1_bounding_box_1aaae2c8d3d80e7203585052862288f2d5" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>GetSelfRight</name></member>
@@ -928,7 +928,7 @@
       <member refid="classvrv_1_1_layer_element_1a592cebc1769e23ff79403a675a923c65" prot="protected" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>m_drawingXRel</name></member>
       <member refid="classvrv_1_1_layer_element_1a33f69b421d5fbe77c6e89e2da3e46b3b" prot="protected" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>m_drawingYRel</name></member>
       <member refid="classvrv_1_1_layer_element_1a6ee0bb4018d8ba684437586512ff4136" prot="protected" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>m_graceAlignment</name></member>
-      <member refid="classvrv_1_1_beat_rpt_1a3e87920d0ed1b4d17652f5a82ac44459" prot="private" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>m_scoreTimeOnset</name></member>
+      <member refid="classvrv_1_1_beat_rpt_1aad90e1164ec8c5bd0e908eb1b0d36409" prot="private" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>m_scoreTimeOnset</name></member>
       <member refid="classvrv_1_1_object_1a74ae0995caefb72a71445ba43fce0652" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>m_unsupported</name></member>
       <member refid="classvrv_1_1_object_1a30996d1e8460f2110900b490425c16ec" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>Modify</name></member>
       <member refid="classvrv_1_1_object_1aa846e8099e10d6cf427e8255e4a62dd4" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>MoveChildrenFrom</name></member>
@@ -980,7 +980,7 @@
       <member refid="classvrv_1_1_object_1a9f30aa6a8185b260943003a08980d376" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>SetParent</name></member>
       <member refid="classvrv_1_1_linking_interface_1a3670fb648c0d3c6958544c5cfc6f6868" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>SetSameasLink</name></member>
       <member refid="classvrv_1_1_layer_element_1a4595a64d4bc651cc59928d15bc8c0ff2" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>SetScoreDefRole</name></member>
-      <member refid="classvrv_1_1_beat_rpt_1aa30a960c5be7e82620ac868a20ea89d4" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>SetScoreTimeOnset</name></member>
+      <member refid="classvrv_1_1_beat_rpt_1a789d83957f5f3b37bf179d23a8a304d3" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>SetScoreTimeOnset</name></member>
       <member refid="classvrv_1_1_bounding_box_1ab4d1764142c6881678dbfcaee124e38f" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>SolveCubicPolynomial</name></member>
       <member refid="classvrv_1_1_object_1a6c529b9574392b6c2baeaf8470e2a989" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>sortByUlx</name></member>
       <member refid="classvrv_1_1_object_1aa8caf0942b1ff1c02f6f8e879397ca21" prot="public" virt="non-virtual"><scope>vrv::BeatRpt</scope><name>SortChildren</name></member>

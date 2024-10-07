@@ -1098,6 +1098,7 @@ var hierarchy =
     [ "vrv::FeatureExtractor", "classvrv_1_1_feature_extractor.html", null ],
     [ "vrv::Filters", "classvrv_1_1_filters.html", null ],
     [ "vrv::FontInfo", "classvrv_1_1_font_info.html", null ],
+    [ "vrv::Fraction", "classvrv_1_1_fraction.html", null ],
     [ "vrv::FunctorBase", "classvrv_1_1_functor_base.html", [
       [ "vrv::ConstFunctor", "classvrv_1_1_const_functor.html", null ],
       [ "vrv::Functor", "classvrv_1_1_functor.html", [

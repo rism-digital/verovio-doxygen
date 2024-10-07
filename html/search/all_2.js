@@ -50,7 +50,7 @@ var searchData=
   ['calculateextremalstaff_166',['CalculateExtremalStaff',['../classvrv_1_1_slur.html#a0b6a473f6cbea7cf14ef2ae593fdadbb',1,'vrv::Slur']]],
   ['calculatenotegroups_167',['CalculateNoteGroups',['../classvrv_1_1_chord.html#a78ce2b5d8ba517a9b3ee539e1807f19e',1,'vrv::Chord']]],
   ['calculaterightbarlinewidth_168',['CalculateRightBarLineWidth',['../classvrv_1_1_measure.html#a84bcb7a7885e9fb83e85498f43ee36c2',1,'vrv::Measure']]],
-  ['calculatestemlength_169',['CalculateStemLength',['../classvrv_1_1_beam_element_coord.html#a1c6114787f017c6fbf9806d3bb64c05c',1,'vrv::BeamElementCoord']]],
+  ['calculatestemlength_169',['CalculateStemLength',['../classvrv_1_1_beam_element_coord.html#ab4a75a1a4a1b65194c26eb3bedc083bd',1,'vrv::BeamElementCoord']]],
   ['calculatestemlengthtab_170',['CalculateStemLengthTab',['../classvrv_1_1_beam_element_coord.html#a027f4c152d623e5cd81c3f659d15ac05',1,'vrv::BeamElementCoord']]],
   ['calculatestemmodadjustment_171',['CalculateStemModAdjustment',['../classvrv_1_1_beam_element_coord.html#ae2413c9f9e24d8829395823ffa2ed51c',1,'vrv::BeamElementCoord::CalculateStemModAdjustment()'],['../classvrv_1_1_stem.html#a9b3e4dbc926470d30d5a54040b008daf',1,'vrv::Stem::CalculateStemModAdjustment()']]],
   ['calculatetimemap_172',['CalculateTimemap',['../classvrv_1_1_doc.html#a162e05164bbd41fefa38c12639f91c44',1,'vrv::Doc']]],

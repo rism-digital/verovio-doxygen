@@ -2,7 +2,7 @@ var classvrv_1_1_beam_element_coord =
 [
     [ "BeamElementCoord", "classvrv_1_1_beam_element_coord.html#a3d4c541e6a6640a5a9df1ac50db27bb2", null ],
     [ "~BeamElementCoord", "classvrv_1_1_beam_element_coord.html#ad39a98a648db43efa4ae8d382d95d06d", null ],
-    [ "CalculateStemLength", "classvrv_1_1_beam_element_coord.html#a1c6114787f017c6fbf9806d3bb64c05c", null ],
+    [ "CalculateStemLength", "classvrv_1_1_beam_element_coord.html#ab4a75a1a4a1b65194c26eb3bedc083bd", null ],
     [ "CalculateStemLengthTab", "classvrv_1_1_beam_element_coord.html#a027f4c152d623e5cd81c3f659d15ac05", null ],
     [ "CalculateStemModAdjustment", "classvrv_1_1_beam_element_coord.html#ae2413c9f9e24d8829395823ffa2ed51c", null ],
     [ "GetStemDir", "classvrv_1_1_beam_element_coord.html#ab840311185d74d49af8357f0d2909db6", null ],
@@ -14,7 +14,7 @@ var classvrv_1_1_beam_element_coord =
     [ "m_breaksec", "classvrv_1_1_beam_element_coord.html#ae86c87990d1a0fd3a79f340aafe31d6e", null ],
     [ "m_centered", "classvrv_1_1_beam_element_coord.html#a722f671cf181576d13b9ad96e8a14e53", null ],
     [ "m_closestNote", "classvrv_1_1_beam_element_coord.html#ac90293b4815f8f90c2c46f7d8d9c53ad", null ],
-    [ "m_dur", "classvrv_1_1_beam_element_coord.html#a1af51e56a62893fff666c463b265b5e0", null ],
+    [ "m_dur", "classvrv_1_1_beam_element_coord.html#a8ebefe39f00c7e96257969fa9f787914", null ],
     [ "m_element", "classvrv_1_1_beam_element_coord.html#a1978586c632e48599f36d1cbd484e669", null ],
     [ "m_maxShortening", "classvrv_1_1_beam_element_coord.html#ae0320bdb6103d0143f300623904b7282", null ],
     [ "m_overlapMargin", "classvrv_1_1_beam_element_coord.html#a0e6c6a71cb6bb0dc5cd0e299c8ecd7a3", null ],
