@@ -10,6 +10,7 @@ var classvrv_1_1_meter_sig =
     [ "GetClassName", "classvrv_1_1_meter_sig.html#ac01c415936d616f3620690b15258d028", null ],
     [ "GetEnclosingGlyphs", "classvrv_1_1_meter_sig.html#afda9633f65d198c2bba0e6c95574050a", null ],
     [ "GetSymbolGlyph", "classvrv_1_1_meter_sig.html#ab4b89570209b50bf2cad140e032b6f94", null ],
+    [ "GetSymImplicitUnit", "classvrv_1_1_meter_sig.html#a90e7c0b61e08989d66f21ece2bbbe6a5", null ],
     [ "GetTotalCount", "classvrv_1_1_meter_sig.html#a626f1377088f7297de38790d467f927e", null ],
     [ "GetUnitAsDur", "classvrv_1_1_meter_sig.html#ae631e6afd92892d7727a82ff5aed748f", null ],
     [ "HasToBeAligned", "classvrv_1_1_meter_sig.html#aa96ecc888ef0a5d0d7807e492bd71039", null ],
