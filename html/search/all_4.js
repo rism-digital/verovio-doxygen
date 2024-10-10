@@ -21,6 +21,6 @@ var searchData=
   ['exportexpansionmap_286',['ExportExpansionMap',['../classvrv_1_1_doc.html#aff4b57776460fb8bb24eb8dcfc4fcdcf',1,'vrv::Doc']]],
   ['exportfeatures_287',['ExportFeatures',['../classvrv_1_1_doc.html#a6e47232f8eef26473e867f4d2f96701c',1,'vrv::Doc']]],
   ['exportmidi_288',['ExportMIDI',['../classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5',1,'vrv::Doc']]],
-  ['exporttimemap_289',['ExportTimemap',['../classvrv_1_1_doc.html#aa8808429c70b8fd2756dd9634671789c',1,'vrv::Doc']]],
+  ['exporttimemap_289',['ExportTimemap',['../classvrv_1_1_doc.html#a9632686d61ccb8de3814dd9c3028a19e',1,'vrv::Doc']]],
   ['extract_290',['Extract',['../classvrv_1_1_feature_extractor.html#a3a0c0c3c9618191fb26bd6e27234af93',1,'vrv::FeatureExtractor']]]
 ];

@@ -6,9 +6,36 @@
     <includes local="no">map</includes>
     <includes local="no">string</includes>
     <includes local="no">vector</includes>
+    <includes refid="horizontalaligner_8h" local="yes">horizontalaligner.h</includes>
+    <includes local="yes">jsonxx.h</includes>
     <incdepgraph>
+      <node id="17">
+        <label>list</label>
+      </node>
+      <node id="14">
+        <label>boundingbox.h</label>
+        <link refid="boundingbox_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>functional</label>
+      </node>
+      <node id="11">
+        <label>iterator</label>
+      </node>
+      <node id="28">
+        <label>atttypes.h</label>
+      </node>
       <node id="2">
         <label>cassert</label>
+      </node>
+      <node id="29">
+        <label>toolkitdef.h</label>
+        <link refid="toolkitdef_8h_source"/>
+      </node>
+      <node id="23">
+        <label>cstdarg</label>
       </node>
       <node id="4">
         <label>string</label>
@@ -16,8 +43,73 @@
       <node id="3">
         <label>map</label>
       </node>
+      <node id="30">
+        <label>jsonxx.h</label>
+      </node>
+      <node id="13">
+        <label>attmodule.h</label>
+      </node>
+      <node id="6">
+        <label>horizontalaligner.h</label>
+        <link refid="horizontalaligner_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>atts_shared.h</label>
+      </node>
+      <node id="24">
+        <label>cstdio</label>
+      </node>
+      <node id="19">
+        <label>tuple</label>
+      </node>
       <node id="5">
         <label>vector</label>
+      </node>
+      <node id="20">
+        <label>attdef.h</label>
+      </node>
+      <node id="8">
+        <label>object.h</label>
+        <link refid="object_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>math.h</label>
+      </node>
+      <node id="9">
+        <label>cstdlib</label>
+      </node>
+      <node id="27">
+        <label>sys/time.h</label>
+      </node>
+      <node id="26">
+        <label>unordered_map</label>
+      </node>
+      <node id="12">
+        <label>attclasses.h</label>
       </node>
       <node id="1">
         <label>timemap.h</label>
@@ -29,6 +121,67 @@
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vrv.h</label>
+        <link refid="vrv_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>set</label>
+      </node>
+      <node id="16">
+        <label>algorithm</label>
+      </node>
+      <node id="25">
+        <label>cstring</label>
+      </node>
+      <node id="15">
+        <label>vrvdef.h</label>
+        <link refid="vrvdef_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -55,51 +208,59 @@
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vrv<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;horizontalaligner.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Object;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TimemapEntry</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;jsonxx.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vrv<sp/>{</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29" refid="structvrv_1_1_timemap_entry" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvrv_1_1_timemap_entry" kindref="compound">TimemapEntry</ref><sp/>{</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tempo<sp/>=<sp/>-1000.0;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>qstamp;</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>notesOn;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>notesOff;</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>restsOn;</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>restsOff;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>measureOn;</highlight></codeline>
-<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Timemap</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46" refid="classvrv_1_1_timemap" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_timemap" kindref="compound">Timemap</ref><sp/>{</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_timemap" kindref="compound">Timemap</ref>();</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_timemap" kindref="compound">Timemap</ref>();</highlight></codeline>
-<codeline lineno="55"></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_timemap_1ae6718bde249d9ef72ee8b0e6fe927381" kindref="member">Reset</ref>();</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62" refid="classvrv_1_1_timemap_1a5779601595a8eab68a09d82ffc95cf3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvrv_1_1_timemap_entry" kindref="compound">TimemapEntry</ref><sp/>&amp;<ref refid="classvrv_1_1_timemap_1a5779601595a8eab68a09d82ffc95cf3a" kindref="member">GetEntry</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>time)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_map[time];<sp/>}</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_timemap_1aebe2bdffcabe29d3d335effbfb727d60" kindref="member">ToJson</ref>(std::string<sp/>&amp;output,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>includetRests,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>includetMeasures);</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;double,<sp/>TimemapEntry&gt;<sp/>m_map;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Object;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TimemapEntry</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="structvrv_1_1_timemap_entry" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvrv_1_1_timemap_entry" kindref="compound">TimemapEntry</ref><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tempo<sp/>=<sp/>-1000.0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tstamp;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>notesOn;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>notesOff;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>restsOn;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>restsOff;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>measureOn;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Timemap</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classvrv_1_1_timemap" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_timemap" kindref="compound">Timemap</ref><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_timemap" kindref="compound">Timemap</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_timemap" kindref="compound">Timemap</ref>();</highlight></codeline>
+<codeline lineno="61"></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_timemap_1ae6718bde249d9ef72ee8b0e6fe927381" kindref="member">Reset</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classvrv_1_1_timemap_1afb046a873798fe9930c51b0571b2414d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvrv_1_1_timemap_entry" kindref="compound">TimemapEntry</ref><sp/>&amp;<ref refid="classvrv_1_1_timemap_1afb046a873798fe9930c51b0571b2414d" kindref="member">GetEntry</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref><sp/>&amp;time)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_map[time];<sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_timemap_1a45a49bb50831dd3565eb0afd80a61c61" kindref="member">ToJson</ref>(std::string<sp/>&amp;output,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>includeRests,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>includeMeasures,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>useFractions);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>jsonxx::Array<sp/>ToArray(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref><sp/>&amp;fraction);</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>class<sp/>Timemap</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__VRV_TIMEMAP_H__</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;Fraction,<sp/>TimemapEntry&gt;<sp/>m_map;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>class<sp/>Timemap</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__VRV_TIMEMAP_H__</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h"/>
   </compounddef>

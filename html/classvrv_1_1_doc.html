@@ -171,9 +171,9 @@ data_MEASUREMENTSIGNED&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <tr class="memitem:a4b8be5eebe48afb3668ec97c133148a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5">ExportMIDI</a> (smf::MidiFile *midiFile)</td></tr>
 <tr class="memdesc:a4b8be5eebe48afb3668ec97c133148a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the document to a MIDI file.  <a href="classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5">More...</a><br /></td></tr>
 <tr class="separator:a4b8be5eebe48afb3668ec97c133148a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8808429c70b8fd2756dd9634671789c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_doc.html#aa8808429c70b8fd2756dd9634671789c">ExportTimemap</a> (std::string &amp;output, bool includeRests, bool includeMeasures)</td></tr>
-<tr class="memdesc:aa8808429c70b8fd2756dd9634671789c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract a timemap from the document to a JSON string.  <a href="classvrv_1_1_doc.html#aa8808429c70b8fd2756dd9634671789c">More...</a><br /></td></tr>
-<tr class="separator:aa8808429c70b8fd2756dd9634671789c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9632686d61ccb8de3814dd9c3028a19e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_doc.html#a9632686d61ccb8de3814dd9c3028a19e">ExportTimemap</a> (std::string &amp;output, bool includeRests, bool includeMeasures, bool useFractions)</td></tr>
+<tr class="memdesc:a9632686d61ccb8de3814dd9c3028a19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract a timemap from the document to a JSON string.  <a href="classvrv_1_1_doc.html#a9632686d61ccb8de3814dd9c3028a19e">More...</a><br /></td></tr>
+<tr class="separator:a9632686d61ccb8de3814dd9c3028a19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff4b57776460fb8bb24eb8dcfc4fcdcf"><td class="memItemLeft" align="right" valign="top"><a id="aff4b57776460fb8bb24eb8dcfc4fcdcf"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_doc.html#aff4b57776460fb8bb24eb8dcfc4fcdcf">ExportExpansionMap</a> (std::string &amp;output)</td></tr>
 <tr class="memdesc:aff4b57776460fb8bb24eb8dcfc4fcdcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract expansionMap from the document to JSON string. <br /></td></tr>
@@ -1609,8 +1609,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
-<a id="aa8808429c70b8fd2756dd9634671789c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8808429c70b8fd2756dd9634671789c">&#9670;&nbsp;</a></span>ExportTimemap()</h2>
+<a id="a9632686d61ccb8de3814dd9c3028a19e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9632686d61ccb8de3814dd9c3028a19e">&#9670;&nbsp;</a></span>ExportTimemap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1631,7 +1631,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>includeMeasures</em>&#160;</td>
+          <td class="paramname"><em>includeMeasures</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useFractions</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1790,7 +1796,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 </div><div class="memdoc">
 
 <p>Check to see if the timemap has already been calculated. </p>
-<p>This needs to return true before <a class="el" href="classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5" title="Export the document to a MIDI file.">ExportMIDI()</a> or <a class="el" href="classvrv_1_1_doc.html#aa8808429c70b8fd2756dd9634671789c" title="Extract a timemap from the document to a JSON string.">ExportTimemap()</a> can export anything (These two functions will automatically run <a class="el" href="classvrv_1_1_doc.html#a162e05164bbd41fefa38c12639f91c44" title="Prepare the timemap for MIDI and timemap file export.">CalculateTimemap()</a> if <a class="el" href="classvrv_1_1_doc.html#ae0d680385b78c8ba2e1b84452ad27889" title="Check to see if the timemap has already been calculated.">HasTimemap()</a> return false. </p>
+<p>This needs to return true before <a class="el" href="classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5" title="Export the document to a MIDI file.">ExportMIDI()</a> or <a class="el" href="classvrv_1_1_doc.html#a9632686d61ccb8de3814dd9c3028a19e" title="Extract a timemap from the document to a JSON string.">ExportTimemap()</a> can export anything (These two functions will automatically run <a class="el" href="classvrv_1_1_doc.html#a162e05164bbd41fefa38c12639f91c44" title="Prepare the timemap for MIDI and timemap file export.">CalculateTimemap()</a> if <a class="el" href="classvrv_1_1_doc.html#ae0d680385b78c8ba2e1b84452ad27889" title="Check to see if the timemap has already been calculated.">HasTimemap()</a> return false. </p>
 
 </div>
 </div>
@@ -2001,7 +2007,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_doc.html">Doc</a></li>
-    <li class="footer">Generated on Thu Oct 10 2024 18:57:13 for Verovio by
+    <li class="footer">Generated on Thu Oct 10 2024 19:01:52 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

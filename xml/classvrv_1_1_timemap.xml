@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="52" column="5"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="58" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_timemap_1a69594da797809527113bef5d332c5317" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -29,13 +29,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="53" column="13"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="59" column="13"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classvrv_1_1_timemap_1a542515798df4324a1bbca3c176d2ea79" prot="private" static="no" mutable="no">
-        <type>std::map&lt; double, <ref refid="structvrv_1_1_timemap_entry" kindref="compound">TimemapEntry</ref> &gt;</type>
-        <definition>std::map&lt;double, TimemapEntry&gt; vrv::Timemap::m_map</definition>
+      <memberdef kind="variable" id="classvrv_1_1_timemap_1a27177dd7c53ad509c3dc46e83fd06e32" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref>, <ref refid="structvrv_1_1_timemap_entry" kindref="compound">TimemapEntry</ref> &gt;</type>
+        <definition>std::map&lt;Fraction, TimemapEntry&gt; vrv::Timemap::m_map</definition>
         <argsstring></argsstring>
         <name>m_map</name>
         <briefdescription>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="75" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/timemap.h" bodystart="75" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="83" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/timemap.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -61,15 +61,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="57" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="63" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_timemap_1a5779601595a8eab68a09d82ffc95cf3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_timemap_1afb046a873798fe9930c51b0571b2414d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structvrv_1_1_timemap_entry" kindref="compound">TimemapEntry</ref> &amp;</type>
         <definition>TimemapEntry&amp; vrv::Timemap::GetEntry</definition>
-        <argsstring>(double time)</argsstring>
+        <argsstring>(const Fraction &amp;time)</argsstring>
         <name>GetEntry</name>
         <param>
-          <type>double</type>
+          <type>const <ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref> &amp;</type>
           <declname>time</declname>
         </param>
         <briefdescription>
@@ -79,12 +79,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="62" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/timemap.h" bodystart="62" bodyend="62"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="68" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/timemap.h" bodystart="68" bodyend="68"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_timemap_1aebe2bdffcabe29d3d335effbfb727d60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_timemap_1a45a49bb50831dd3565eb0afd80a61c61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::Timemap::ToJson</definition>
-        <argsstring>(std::string &amp;output, bool includetRests, bool includetMeasures)</argsstring>
+        <argsstring>(std::string &amp;output, bool includeRests, bool includeMeasures, bool useFractions)</argsstring>
         <name>ToJson</name>
         <param>
           <type>std::string &amp;</type>
@@ -92,11 +92,15 @@
         </param>
         <param>
           <type>bool</type>
-          <declname>includetRests</declname>
+          <declname>includeRests</declname>
         </param>
         <param>
           <type>bool</type>
-          <declname>includetMeasures</declname>
+          <declname>includeMeasures</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useFractions</declname>
         </param>
         <briefdescription>
 <para>Write the current timemap to a JSON string. </para>
@@ -105,7 +109,26 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="67" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="73" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classvrv_1_1_timemap_1a4a43f0edd2ef95cfaf9078365a4c7128" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>jsonxx::Array</type>
+        <definition>static jsonxx::Array vrv::Timemap::ToArray</definition>
+        <argsstring>(const Fraction &amp;fraction)</argsstring>
+        <name>ToArray</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref> &amp;</type>
+          <declname>fraction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="75" column="26"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -113,13 +136,14 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="46" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/timemap.h" bodystart="46" bodyend="77"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/timemap.h" line="52" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/timemap.h" bodystart="52" bodyend="85"/>
     <listofallmembers>
-      <member refid="classvrv_1_1_timemap_1a5779601595a8eab68a09d82ffc95cf3a" prot="public" virt="non-virtual"><scope>vrv::Timemap</scope><name>GetEntry</name></member>
-      <member refid="classvrv_1_1_timemap_1a542515798df4324a1bbca3c176d2ea79" prot="private" virt="non-virtual"><scope>vrv::Timemap</scope><name>m_map</name></member>
+      <member refid="classvrv_1_1_timemap_1afb046a873798fe9930c51b0571b2414d" prot="public" virt="non-virtual"><scope>vrv::Timemap</scope><name>GetEntry</name></member>
+      <member refid="classvrv_1_1_timemap_1a27177dd7c53ad509c3dc46e83fd06e32" prot="private" virt="non-virtual"><scope>vrv::Timemap</scope><name>m_map</name></member>
       <member refid="classvrv_1_1_timemap_1ae6718bde249d9ef72ee8b0e6fe927381" prot="public" virt="non-virtual"><scope>vrv::Timemap</scope><name>Reset</name></member>
       <member refid="classvrv_1_1_timemap_1a5bdedb009ea1ab046f307d6592eb63d7" prot="public" virt="non-virtual"><scope>vrv::Timemap</scope><name>Timemap</name></member>
-      <member refid="classvrv_1_1_timemap_1aebe2bdffcabe29d3d335effbfb727d60" prot="public" virt="non-virtual"><scope>vrv::Timemap</scope><name>ToJson</name></member>
+      <member refid="classvrv_1_1_timemap_1a4a43f0edd2ef95cfaf9078365a4c7128" prot="public" virt="non-virtual"><scope>vrv::Timemap</scope><name>ToArray</name></member>
+      <member refid="classvrv_1_1_timemap_1a45a49bb50831dd3565eb0afd80a61c61" prot="public" virt="non-virtual"><scope>vrv::Timemap</scope><name>ToJson</name></member>
       <member refid="classvrv_1_1_timemap_1a69594da797809527113bef5d332c5317" prot="public" virt="virtual"><scope>vrv::Timemap</scope><name>~Timemap</name></member>
     </listofallmembers>
   </compounddef>

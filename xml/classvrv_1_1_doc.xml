@@ -2426,7 +2426,7 @@
 <para>Check to see if the timemap has already been calculated. </para>
         </briefdescription>
         <detaileddescription>
-<para>This needs to return true before <ref refid="classvrv_1_1_doc_1a4b8be5eebe48afb3668ec97c133148a5" kindref="member">ExportMIDI()</ref> or <ref refid="classvrv_1_1_doc_1aa8808429c70b8fd2756dd9634671789c" kindref="member">ExportTimemap()</ref> can export anything (These two functions will automatically run <ref refid="classvrv_1_1_doc_1a162e05164bbd41fefa38c12639f91c44" kindref="member">CalculateTimemap()</ref> if <ref refid="classvrv_1_1_doc_1ae0d680385b78c8ba2e1b84452ad27889" kindref="member">HasTimemap()</ref> return false. </para>
+<para>This needs to return true before <ref refid="classvrv_1_1_doc_1a4b8be5eebe48afb3668ec97c133148a5" kindref="member">ExportMIDI()</ref> or <ref refid="classvrv_1_1_doc_1a9632686d61ccb8de3814dd9c3028a19e" kindref="member">ExportTimemap()</ref> can export anything (These two functions will automatically run <ref refid="classvrv_1_1_doc_1a162e05164bbd41fefa38c12639f91c44" kindref="member">CalculateTimemap()</ref> if <ref refid="classvrv_1_1_doc_1ae0d680385b78c8ba2e1b84452ad27889" kindref="member">HasTimemap()</ref> return false. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -2451,10 +2451,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/doc.h" line="273" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_doc_1aa8808429c70b8fd2756dd9634671789c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_doc_1a9632686d61ccb8de3814dd9c3028a19e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::Doc::ExportTimemap</definition>
-        <argsstring>(std::string &amp;output, bool includeRests, bool includeMeasures)</argsstring>
+        <argsstring>(std::string &amp;output, bool includeRests, bool includeMeasures, bool useFractions)</argsstring>
         <name>ExportTimemap</name>
         <param>
           <type>std::string &amp;</type>
@@ -2467,6 +2467,10 @@
         <param>
           <type>bool</type>
           <declname>includeMeasures</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useFractions</declname>
         </param>
         <briefdescription>
 <para>Extract a timemap from the document to a JSON string. </para>
@@ -3250,7 +3254,7 @@
       <member refid="classvrv_1_1_doc_1aff4b57776460fb8bb24eb8dcfc4fcdcf" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ExportExpansionMap</name></member>
       <member refid="classvrv_1_1_doc_1a6e47232f8eef26473e867f4d2f96701c" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ExportFeatures</name></member>
       <member refid="classvrv_1_1_doc_1a4b8be5eebe48afb3668ec97c133148a5" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ExportMIDI</name></member>
-      <member refid="classvrv_1_1_doc_1aa8808429c70b8fd2756dd9634671789c" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ExportTimemap</name></member>
+      <member refid="classvrv_1_1_doc_1a9632686d61ccb8de3814dd9c3028a19e" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>ExportTimemap</name></member>
       <member refid="classvrv_1_1_object_1a24dd9389c537dda7046c097132ae9a9a" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>FillFlatList</name></member>
       <member refid="classvrv_1_1_object_1accb9f790ac276469b8ca9ce7ca5fe19d" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>FindAllDescendantsBetween</name></member>
       <member refid="classvrv_1_1_object_1a0d0ae6bac5470fbd7aa1555edf9341e5" prot="public" virt="non-virtual"><scope>vrv::Doc</scope><name>FindAllDescendantsBetween</name></member>

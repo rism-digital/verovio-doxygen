@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classvrv_1_1_timemap.html',''); initRe
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classvrv_1_1_timemap-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vrv::Timemap Class Reference</div>  </div>
@@ -102,14 +103,14 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_timemap.html#ae6718bde249d9ef72ee8b0e6fe927381">Reset</a> ()</td></tr>
 <tr class="memdesc:ae6718bde249d9ef72ee8b0e6fe927381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the timemap. <br /></td></tr>
 <tr class="separator:ae6718bde249d9ef72ee8b0e6fe927381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5779601595a8eab68a09d82ffc95cf3a"><td class="memItemLeft" align="right" valign="top"><a id="a5779601595a8eab68a09d82ffc95cf3a"></a>
-<a class="el" href="structvrv_1_1_timemap_entry.html">TimemapEntry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_timemap.html#a5779601595a8eab68a09d82ffc95cf3a">GetEntry</a> (double time)</td></tr>
-<tr class="memdesc:a5779601595a8eab68a09d82ffc95cf3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return (and possibly add) an entry for the given time. <br /></td></tr>
-<tr class="separator:a5779601595a8eab68a09d82ffc95cf3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebe2bdffcabe29d3d335effbfb727d60"><td class="memItemLeft" align="right" valign="top"><a id="aebe2bdffcabe29d3d335effbfb727d60"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_timemap.html#aebe2bdffcabe29d3d335effbfb727d60">ToJson</a> (std::string &amp;output, bool includetRests, bool includetMeasures)</td></tr>
-<tr class="memdesc:aebe2bdffcabe29d3d335effbfb727d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the current timemap to a JSON string. <br /></td></tr>
-<tr class="separator:aebe2bdffcabe29d3d335effbfb727d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb046a873798fe9930c51b0571b2414d"><td class="memItemLeft" align="right" valign="top"><a id="afb046a873798fe9930c51b0571b2414d"></a>
+<a class="el" href="structvrv_1_1_timemap_entry.html">TimemapEntry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_timemap.html#afb046a873798fe9930c51b0571b2414d">GetEntry</a> (const <a class="el" href="classvrv_1_1_fraction.html">Fraction</a> &amp;time)</td></tr>
+<tr class="memdesc:afb046a873798fe9930c51b0571b2414d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return (and possibly add) an entry for the given time. <br /></td></tr>
+<tr class="separator:afb046a873798fe9930c51b0571b2414d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a49bb50831dd3565eb0afd80a61c61"><td class="memItemLeft" align="right" valign="top"><a id="a45a49bb50831dd3565eb0afd80a61c61"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_timemap.html#a45a49bb50831dd3565eb0afd80a61c61">ToJson</a> (std::string &amp;output, bool includeRests, bool includeMeasures, bool useFractions)</td></tr>
+<tr class="memdesc:a45a49bb50831dd3565eb0afd80a61c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the current timemap to a JSON string. <br /></td></tr>
+<tr class="separator:a45a49bb50831dd3565eb0afd80a61c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, and other standard methods</div></td></tr>
 <tr class="memitem:a5bdedb009ea1ab046f307d6592eb63d7"><td class="memItemLeft" align="right" valign="top"><a id="a5bdedb009ea1ab046f307d6592eb63d7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Timemap</b> ()</td></tr>
@@ -117,6 +118,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a69594da797809527113bef5d332c5317"><td class="memItemLeft" align="right" valign="top"><a id="a69594da797809527113bef5d332c5317"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Timemap</b> ()</td></tr>
 <tr class="separator:a69594da797809527113bef5d332c5317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4a43f0edd2ef95cfaf9078365a4c7128"><td class="memItemLeft" align="right" valign="top"><a id="a4a43f0edd2ef95cfaf9078365a4c7128"></a>
+static jsonxx::Array&#160;</td><td class="memItemRight" valign="bottom"><b>ToArray</b> (const <a class="el" href="classvrv_1_1_fraction.html">Fraction</a> &amp;fraction)</td></tr>
+<tr class="separator:a4a43f0edd2ef95cfaf9078365a4c7128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class holds a timemap for exporting onset / offset values. </p>
@@ -129,7 +136,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Timemap</b> ()</t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_timemap.html">Timemap</a></li>
-    <li class="footer">Generated on Thu Oct 10 2024 18:57:16 for Verovio by
+    <li class="footer">Generated on Thu Oct 10 2024 19:01:55 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

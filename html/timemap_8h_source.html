@@ -102,63 +102,72 @@ $(document).ready(function(){initNavTree('timemap_8h_source.html',''); initResiz
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>vrv {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;horizontalaligner.h&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>Object;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// TimemapEntry</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;jsonxx.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structvrv_1_1_timemap_entry.html">   29</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvrv_1_1_timemap_entry.html">TimemapEntry</a> {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">double</span> tempo = -1000.0;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">double</span> qstamp;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::vector&lt;std::string&gt; notesOn;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::vector&lt;std::string&gt; notesOff;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::vector&lt;std::string&gt; restsOn;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::vector&lt;std::string&gt; restsOff;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::string measureOn;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// Timemap</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classvrv_1_1_timemap.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_timemap.html">Timemap</a> {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classvrv_1_1_timemap.html">Timemap</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_timemap.html">Timemap</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_timemap.html#ae6718bde249d9ef72ee8b0e6fe927381">Reset</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classvrv_1_1_timemap.html#a5779601595a8eab68a09d82ffc95cf3a">   62</a></span>&#160;    <a class="code" href="structvrv_1_1_timemap_entry.html">TimemapEntry</a> &amp;<a class="code" href="classvrv_1_1_timemap.html#a5779601595a8eab68a09d82ffc95cf3a">GetEntry</a>(<span class="keywordtype">double</span> time) { <span class="keywordflow">return</span> m_map[time]; }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_timemap.html#aebe2bdffcabe29d3d335effbfb727d60">ToJson</a>(std::string &amp;output, <span class="keywordtype">bool</span> includetRests, <span class="keywordtype">bool</span> includetMeasures);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::map&lt;double, TimemapEntry&gt; m_map;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span>Object;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// TimemapEntry</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structvrv_1_1_timemap_entry.html">   35</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvrv_1_1_timemap_entry.html">TimemapEntry</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">double</span> tempo = -1000.0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">double</span> tstamp;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::vector&lt;std::string&gt; notesOn;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::vector&lt;std::string&gt; notesOff;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    std::vector&lt;std::string&gt; restsOn;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::vector&lt;std::string&gt; restsOff;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::string measureOn;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">// Timemap</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classvrv_1_1_timemap.html">   52</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_timemap.html">Timemap</a> {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classvrv_1_1_timemap.html">Timemap</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_timemap.html">Timemap</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_timemap.html#ae6718bde249d9ef72ee8b0e6fe927381">Reset</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classvrv_1_1_timemap.html#afb046a873798fe9930c51b0571b2414d">   68</a></span>&#160;    <a class="code" href="structvrv_1_1_timemap_entry.html">TimemapEntry</a> &amp;<a class="code" href="classvrv_1_1_timemap.html#afb046a873798fe9930c51b0571b2414d">GetEntry</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> &amp;time) { <span class="keywordflow">return</span> m_map[time]; }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_timemap.html#a45a49bb50831dd3565eb0afd80a61c61">ToJson</a>(std::string &amp;output, <span class="keywordtype">bool</span> includeRests, <span class="keywordtype">bool</span> includeMeasures, <span class="keywordtype">bool</span> useFractions);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">static</span> jsonxx::Array ToArray(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> &amp;fraction);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}; <span class="comment">// class Timemap</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif // __VRV_TIMEMAP_H__</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::map&lt;Fraction, TimemapEntry&gt; m_map;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}; <span class="comment">// class Timemap</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif // __VRV_TIMEMAP_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_timemap_html"><div class="ttname"><a href="classvrv_1_1_timemap.html">vrv::Timemap</a></div><div class="ttdoc">This class holds a timemap for exporting onset / offset values.</div><div class="ttdef"><b>Definition:</b> timemap.h:46</div></div>
-<div class="ttc" id="astructvrv_1_1_timemap_entry_html"><div class="ttname"><a href="structvrv_1_1_timemap_entry.html">vrv::TimemapEntry</a></div><div class="ttdoc">Helper struct to store timemap entries.</div><div class="ttdef"><b>Definition:</b> timemap.h:29</div></div>
-<div class="ttc" id="aclassvrv_1_1_timemap_html_a5779601595a8eab68a09d82ffc95cf3a"><div class="ttname"><a href="classvrv_1_1_timemap.html#a5779601595a8eab68a09d82ffc95cf3a">vrv::Timemap::GetEntry</a></div><div class="ttdeci">TimemapEntry &amp; GetEntry(double time)</div><div class="ttdoc">Return (and possibly add) an entry for the given time.</div><div class="ttdef"><b>Definition:</b> timemap.h:62</div></div>
+<div class="ttc" id="aclassvrv_1_1_timemap_html"><div class="ttname"><a href="classvrv_1_1_timemap.html">vrv::Timemap</a></div><div class="ttdoc">This class holds a timemap for exporting onset / offset values.</div><div class="ttdef"><b>Definition:</b> timemap.h:52</div></div>
+<div class="ttc" id="aclassvrv_1_1_fraction_html"><div class="ttname"><a href="classvrv_1_1_fraction.html">vrv::Fraction</a></div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:67</div></div>
+<div class="ttc" id="astructvrv_1_1_timemap_entry_html"><div class="ttname"><a href="structvrv_1_1_timemap_entry.html">vrv::TimemapEntry</a></div><div class="ttdoc">Helper struct to store timemap entries.</div><div class="ttdef"><b>Definition:</b> timemap.h:35</div></div>
 <div class="ttc" id="aclassvrv_1_1_timemap_html_ae6718bde249d9ef72ee8b0e6fe927381"><div class="ttname"><a href="classvrv_1_1_timemap.html#ae6718bde249d9ef72ee8b0e6fe927381">vrv::Timemap::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">Resets the timemap.</div></div>
-<div class="ttc" id="aclassvrv_1_1_timemap_html_aebe2bdffcabe29d3d335effbfb727d60"><div class="ttname"><a href="classvrv_1_1_timemap.html#aebe2bdffcabe29d3d335effbfb727d60">vrv::Timemap::ToJson</a></div><div class="ttdeci">void ToJson(std::string &amp;output, bool includetRests, bool includetMeasures)</div><div class="ttdoc">Write the current timemap to a JSON string.</div></div>
+<div class="ttc" id="aclassvrv_1_1_timemap_html_afb046a873798fe9930c51b0571b2414d"><div class="ttname"><a href="classvrv_1_1_timemap.html#afb046a873798fe9930c51b0571b2414d">vrv::Timemap::GetEntry</a></div><div class="ttdeci">TimemapEntry &amp; GetEntry(const Fraction &amp;time)</div><div class="ttdoc">Return (and possibly add) an entry for the given time.</div><div class="ttdef"><b>Definition:</b> timemap.h:68</div></div>
+<div class="ttc" id="aclassvrv_1_1_timemap_html_a45a49bb50831dd3565eb0afd80a61c61"><div class="ttname"><a href="classvrv_1_1_timemap.html#a45a49bb50831dd3565eb0afd80a61c61">vrv::Timemap::ToJson</a></div><div class="ttdeci">void ToJson(std::string &amp;output, bool includeRests, bool includeMeasures, bool useFractions)</div><div class="ttdoc">Write the current timemap to a JSON string.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>timemap.h</b></li>
-    <li class="footer">Generated on Thu Oct 10 2024 18:57:11 for Verovio by
+    <li class="footer">Generated on Thu Oct 10 2024 19:01:51 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
