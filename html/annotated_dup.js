@@ -1,6 +1,9 @@
 var annotated_dup =
 [
     [ "vrv", null, [
+      [ "cmme", null, [
+        [ "mensInfo", "structvrv_1_1cmme_1_1mens_info.html", "structvrv_1_1cmme_1_1mens_info" ]
+      ] ],
       [ "Abbr", "classvrv_1_1_abbr.html", "classvrv_1_1_abbr" ],
       [ "ABCInput", "classvrv_1_1_a_b_c_input.html", "classvrv_1_1_a_b_c_input" ],
       [ "Accid", "classvrv_1_1_accid.html", "classvrv_1_1_accid" ],
@@ -98,6 +101,7 @@ var annotated_dup =
       [ "Clef", "classvrv_1_1_clef.html", "classvrv_1_1_clef" ],
       [ "ClosestBB", "structvrv_1_1_closest_b_b.html", "structvrv_1_1_closest_b_b" ],
       [ "ClosestNeume", "structvrv_1_1_closest_neume.html", "structvrv_1_1_closest_neume" ],
+      [ "CmmeInput", "classvrv_1_1_cmme_input.html", "classvrv_1_1_cmme_input" ],
       [ "CollectAndProcess", "classvrv_1_1_collect_and_process.html", "classvrv_1_1_collect_and_process" ],
       [ "Comparison", "classvrv_1_1_comparison.html", "classvrv_1_1_comparison" ],
       [ "ConstFunctor", "classvrv_1_1_const_functor.html", "classvrv_1_1_const_functor" ],

@@ -119,6 +119,7 @@ var files_dup =
     [ "interface.h", "interface_8h_source.html", null ],
     [ "ioabc.h", "ioabc_8h_source.html", null ],
     [ "iobase.h", "iobase_8h_source.html", null ],
+    [ "iocmme.h", "iocmme_8h_source.html", null ],
     [ "iohumdrum.h", "iohumdrum_8h_source.html", null ],
     [ "iomei.h", "iomei_8h_source.html", null ],
     [ "iomusxml.h", "iomusxml_8h_source.html", null ],

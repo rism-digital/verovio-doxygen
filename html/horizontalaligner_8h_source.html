@@ -126,347 +126,349 @@ $(document).ready(function(){initNavTree('horizontalaligner_8h_source.html','');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    ALIGNMENT_KEYSIG,</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    ALIGNMENT_MENSUR,</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    ALIGNMENT_METERSIG,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ALIGNMENT_DOT,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ALIGNMENT_ACCID,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    ALIGNMENT_GRACENOTE,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    ALIGNMENT_BARLINE,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    ALIGNMENT_DIVLINE,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    ALIGNMENT_DEFAULT,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// Non-justifiable</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    ALIGNMENT_MEASURE_RIGHT_BARLINE,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    ALIGNMENT_SCOREDEF_CAUTION_CLEF,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    ALIGNMENT_SCOREDEF_CAUTION_KEYSIG,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    ALIGNMENT_SCOREDEF_CAUTION_MENSUR,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    ALIGNMENT_SCOREDEF_CAUTION_METERSIG,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    ALIGNMENT_MEASURE_END</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#define BARLINE_REFERENCES -1</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#define TSTAMP_REFERENCES -2</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// Alignment</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ALIGNMENT_PROPORT,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ALIGNMENT_DOT,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    ALIGNMENT_CUSTOS,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    ALIGNMENT_ACCID,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    ALIGNMENT_GRACENOTE,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    ALIGNMENT_BARLINE,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    ALIGNMENT_DIVLINE,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    ALIGNMENT_DEFAULT,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// Non-justifiable</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    ALIGNMENT_MEASURE_RIGHT_BARLINE,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    ALIGNMENT_SCOREDEF_CAUTION_CLEF,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    ALIGNMENT_SCOREDEF_CAUTION_KEYSIG,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    ALIGNMENT_SCOREDEF_CAUTION_MENSUR,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    ALIGNMENT_SCOREDEF_CAUTION_METERSIG,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    ALIGNMENT_MEASURE_END</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#define BARLINE_REFERENCES -1</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#define TSTAMP_REFERENCES -2</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classvrv_1_1_alignment.html">   71</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_alignment.html">Alignment</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a>();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> &amp;time, AlignmentType type = ALIGNMENT_DEFAULT);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_alignment.html">Alignment</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_alignment.html#ad43591d11620170af7123f2e6ccc18e2">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_alignment.html#a69dbbfa23611f87db7df6c03a26e52a9">ClearGraceAligners</a>();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment.html#afe1dce241b823edc3a32d57d159dd636">IsSupportedChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> SetXRel(<span class="keywordtype">int</span> xRel);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">int</span> GetXRel()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_xRel; }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> SetTime(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> &amp;time) { m_time = time; }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> GetTime()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_time; }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment.html#ab52c03819037b643b89612716dc4629a">AddLayerElementRef</a>(<a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *element);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> SetType(AlignmentType type) { m_type = type; }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    AlignmentType GetType()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_type; }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment.html#abea5738c5b4b494dbda993185dfd0e92">IsOfType</a>(<span class="keyword">const</span> std::vector&lt;AlignmentType&gt; &amp;types) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_alignment.html#a522317d835a28e60074f4b1c3ff38829">GetLeftRight</a>(</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keyword">const</span> std::vector&lt;int&gt; &amp;staffNs, <span class="keywordtype">int</span> &amp;minLeft, <span class="keywordtype">int</span> &amp;maxRight, <span class="keyword">const</span> std::vector&lt;ClassId&gt; &amp;excludes = {}) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_alignment.html#a522317d835a28e60074f4b1c3ff38829">GetLeftRight</a>(<span class="keywordtype">int</span> staffN, <span class="keywordtype">int</span> &amp;minLeft, <span class="keywordtype">int</span> &amp;maxRight, <span class="keyword">const</span> std::vector&lt;ClassId&gt; &amp;excludes = {}) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="classvrv_1_1_alignment.html#af3c2e284729d4ffbd49b07f18615a7d1">  142</a></span>&#160;    <span class="keyword">const</span> MapOfIntGraceAligners &amp;<a class="code" href="classvrv_1_1_alignment.html#af3c2e284729d4ffbd49b07f18615a7d1">GetGraceAligners</a>() { <span class="keywordflow">return</span> m_graceAligners; }</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="classvrv_1_1_grace_aligner.html">GraceAligner</a> *<a class="code" href="classvrv_1_1_alignment.html#ae806f6c44d2251c5adf385d21d22e2be">GetGraceAligner</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment.html#ae694154976e041cf41059ba6274b3d79">HasGraceAligner</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment.html#afb339241a9493a380e64c673f8adca84">PerformBoundingBoxAlignment</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="classvrv_1_1_alignment_reference.html">AlignmentReference</a> *<a class="code" href="classvrv_1_1_alignment.html#a1e317b58f08e922e04da6c672ba2a0a1">GetReferenceWithElement</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *element, <span class="keywordtype">int</span> staffN = VRV_UNSET);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_alignment_reference.html">AlignmentReference</a> *<a class="code" href="classvrv_1_1_alignment.html#a1e317b58f08e922e04da6c672ba2a0a1">GetReferenceWithElement</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *element, <span class="keywordtype">int</span> staffN = VRV_UNSET) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    std::pair&lt;int, int&gt; <a class="code" href="classvrv_1_1_alignment.html#a0d0a0f0b03ae0a91009f7964b2b1d0ea">GetAlignmentTopBottom</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment.html#a4513083acf6e7acbea6e894c3285750e">HasAccidVerticalOverlap</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *otherAlignment, <span class="keywordtype">int</span> staffN) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment.html#ad026c49cccdf5a3437d24c359ea8a4e5">HasAlignmentReference</a>(<span class="keywordtype">int</span> staffN) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment.html#a91732fc83a25ace6d09b87ff0afdfdb1">HasTimestampOnly</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="classvrv_1_1_alignment.html#a56610938a75cd860b174ec00bfd0295c">  192</a></span>&#160;    std::string <a class="code" href="classvrv_1_1_alignment.html#a56610938a75cd860b174ec00bfd0295c">LogDebugTreeMsg</a>()<span class="keyword"> override</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> StringFormat(<span class="stringliteral">&quot;%d %s&quot;</span>, this-&gt;GetXRel(), this-&gt;GetTime().ToString().c_str());</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">// Static methods //</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">// Alignment</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classvrv_1_1_alignment.html">   73</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_alignment.html">Alignment</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> &amp;time, AlignmentType type = ALIGNMENT_DEFAULT);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_alignment.html">Alignment</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_alignment.html#ad43591d11620170af7123f2e6ccc18e2">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_alignment.html#a69dbbfa23611f87db7df6c03a26e52a9">ClearGraceAligners</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment.html#afe1dce241b823edc3a32d57d159dd636">IsSupportedChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> SetXRel(<span class="keywordtype">int</span> xRel);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">int</span> GetXRel()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_xRel; }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> SetTime(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> &amp;time) { m_time = time; }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> GetTime()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_time; }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment.html#ab52c03819037b643b89612716dc4629a">AddLayerElementRef</a>(<a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *element);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">void</span> SetType(AlignmentType type) { m_type = type; }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    AlignmentType GetType()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_type; }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment.html#abea5738c5b4b494dbda993185dfd0e92">IsOfType</a>(<span class="keyword">const</span> std::vector&lt;AlignmentType&gt; &amp;types) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_alignment.html#a522317d835a28e60074f4b1c3ff38829">GetLeftRight</a>(</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keyword">const</span> std::vector&lt;int&gt; &amp;staffNs, <span class="keywordtype">int</span> &amp;minLeft, <span class="keywordtype">int</span> &amp;maxRight, <span class="keyword">const</span> std::vector&lt;ClassId&gt; &amp;excludes = {}) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_alignment.html#a522317d835a28e60074f4b1c3ff38829">GetLeftRight</a>(<span class="keywordtype">int</span> staffN, <span class="keywordtype">int</span> &amp;minLeft, <span class="keywordtype">int</span> &amp;maxRight, <span class="keyword">const</span> std::vector&lt;ClassId&gt; &amp;excludes = {}) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classvrv_1_1_alignment.html#af3c2e284729d4ffbd49b07f18615a7d1">  144</a></span>&#160;    <span class="keyword">const</span> MapOfIntGraceAligners &amp;<a class="code" href="classvrv_1_1_alignment.html#af3c2e284729d4ffbd49b07f18615a7d1">GetGraceAligners</a>() { <span class="keywordflow">return</span> m_graceAligners; }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="classvrv_1_1_grace_aligner.html">GraceAligner</a> *<a class="code" href="classvrv_1_1_alignment.html#ae806f6c44d2251c5adf385d21d22e2be">GetGraceAligner</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment.html#ae694154976e041cf41059ba6274b3d79">HasGraceAligner</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment.html#afb339241a9493a380e64c673f8adca84">PerformBoundingBoxAlignment</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <a class="code" href="classvrv_1_1_alignment_reference.html">AlignmentReference</a> *<a class="code" href="classvrv_1_1_alignment.html#a1e317b58f08e922e04da6c672ba2a0a1">GetReferenceWithElement</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *element, <span class="keywordtype">int</span> staffN = VRV_UNSET);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_alignment_reference.html">AlignmentReference</a> *<a class="code" href="classvrv_1_1_alignment.html#a1e317b58f08e922e04da6c672ba2a0a1">GetReferenceWithElement</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *element, <span class="keywordtype">int</span> staffN = VRV_UNSET) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    std::pair&lt;int, int&gt; <a class="code" href="classvrv_1_1_alignment.html#a0d0a0f0b03ae0a91009f7964b2b1d0ea">GetAlignmentTopBottom</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment.html#a4513083acf6e7acbea6e894c3285750e">HasAccidVerticalOverlap</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *otherAlignment, <span class="keywordtype">int</span> staffN) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment.html#ad026c49cccdf5a3437d24c359ea8a4e5">HasAlignmentReference</a>(<span class="keywordtype">int</span> staffN) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment.html#a91732fc83a25ace6d09b87ff0afdfdb1">HasTimestampOnly</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="classvrv_1_1_alignment.html#a56610938a75cd860b174ec00bfd0295c">  194</a></span>&#160;    std::string <a class="code" href="classvrv_1_1_alignment.html#a56610938a75cd860b174ec00bfd0295c">LogDebugTreeMsg</a>()<span class="keyword"> override</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">return</span> StringFormat(<span class="stringliteral">&quot;%d %s&quot;</span>, this-&gt;GetXRel(), this-&gt;GetTime().ToString().c_str());</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_alignment.html#a50f052e2fbad6b9e2047f384f27d1890">HorizontalSpaceForDuration</a>(</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> &amp;intervalTime, data_DURATION maxActualDur, <span class="keywordtype">double</span> spacingLinear, <span class="keywordtype">double</span> spacingNonLinear);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="comment">// Static methods //</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_alignment.html#a50f052e2fbad6b9e2047f384f27d1890">HorizontalSpaceForDuration</a>(</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> &amp;intervalTime, data_DURATION maxActualDur, <span class="keywordtype">double</span> spacingLinear, <span class="keywordtype">double</span> spacingNonLinear);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_alignment.html#affc4399bfe85f4fcb885b172c75b4bb8">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_alignment.html#affc4399bfe85f4fcb885b172c75b4bb8">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <a class="code" href="classvrv_1_1_alignment_reference.html">AlignmentReference</a> *GetAlignmentReference(<span class="keywordtype">int</span> staffN);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordtype">int</span> m_xRel;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> m_time;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    AlignmentType m_type;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    MapOfIntGraceAligners m_graceAligners;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;};</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">// AlignmentReference</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_alignment.html#affc4399bfe85f4fcb885b172c75b4bb8">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_alignment.html#affc4399bfe85f4fcb885b172c75b4bb8">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <a class="code" href="classvrv_1_1_alignment_reference.html">AlignmentReference</a> *GetAlignmentReference(<span class="keywordtype">int</span> staffN);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordtype">int</span> m_xRel;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> m_time;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    AlignmentType m_type;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    MapOfIntGraceAligners m_graceAligners;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;};</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00280"></a><span class="lineno"><a class="line" href="classvrv_1_1_alignment_reference.html">  280</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_alignment_reference.html">AlignmentReference</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_object.html">Object</a>, <span class="keyword">public</span> AttNInteger {</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <a class="code" href="classvrv_1_1_alignment_reference.html">AlignmentReference</a>();</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <a class="code" href="classvrv_1_1_alignment_reference.html">AlignmentReference</a>(<span class="keywordtype">int</span> staffN);</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_alignment_reference.html">AlignmentReference</a>();</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_alignment_reference.html#a084e3418ace027cbfa49a29e889186a4">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment_reference.html#ab1145409381d64fa25d3b506c14872da">IsSupportedChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_alignment_reference.html#a95d76d62a688a262fbee1b4c2971daa6">AddChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment_reference.html#a20a67edf81f6a10054bafac29530d8a5">HasAccidVerticalOverlap</a>(<span class="keyword">const</span> ArrayOfConstObjects &amp;objects) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
-<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="classvrv_1_1_alignment_reference.html#a9c1895942dd54bf9ac12b788dbf7570c">  311</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment_reference.html#a9c1895942dd54bf9ac12b788dbf7570c">HasMultipleLayer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_layerCount &gt; 1); }</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment_reference.html#ad88dbf946e0441c77075ae5d6e43320b">HasCrossStaffElements</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">// AlignmentReference</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="classvrv_1_1_alignment_reference.html">  282</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_alignment_reference.html">AlignmentReference</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_object.html">Object</a>, <span class="keyword">public</span> AttNInteger {</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <a class="code" href="classvrv_1_1_alignment_reference.html">AlignmentReference</a>();</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="classvrv_1_1_alignment_reference.html">AlignmentReference</a>(<span class="keywordtype">int</span> staffN);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_alignment_reference.html">AlignmentReference</a>();</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_alignment_reference.html#a084e3418ace027cbfa49a29e889186a4">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment_reference.html#ab1145409381d64fa25d3b506c14872da">IsSupportedChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_alignment_reference.html#a95d76d62a688a262fbee1b4c2971daa6">AddChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment_reference.html#a20a67edf81f6a10054bafac29530d8a5">HasAccidVerticalOverlap</a>(<span class="keyword">const</span> ArrayOfConstObjects &amp;objects) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
+<div class="line"><a name="l00313"></a><span class="lineno"><a class="line" href="classvrv_1_1_alignment_reference.html#a9c1895942dd54bf9ac12b788dbf7570c">  313</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment_reference.html#a9c1895942dd54bf9ac12b788dbf7570c">HasMultipleLayer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_layerCount &gt; 1); }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_alignment_reference.html#ad88dbf946e0441c77075ae5d6e43320b">HasCrossStaffElements</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_alignment_reference.html#abfce0e3d8af2e853cc08625a6754aaf2">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_alignment_reference.html#abfce0e3d8af2e853cc08625a6754aaf2">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_alignment_reference.html#abfce0e3d8af2e853cc08625a6754aaf2">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_alignment_reference.html#abfce0e3d8af2e853cc08625a6754aaf2">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordtype">int</span> m_layerCount;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;};</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="comment">// HorizontalAligner</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordtype">int</span> m_layerCount;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;};</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
-<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="classvrv_1_1_horizontal_aligner.html">  352</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_horizontal_aligner.html">HorizontalAligner</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <a class="code" href="classvrv_1_1_horizontal_aligner.html#a714d158a6d3ef8e8b1f9198ec61985db">HorizontalAligner</a>(ClassId classId);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_horizontal_aligner.html">HorizontalAligner</a>();</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_horizontal_aligner.html#a7d32f8b15fd9718940f8d7b08bf5107e">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
-<div class="line"><a name="l00367"></a><span class="lineno"><a class="line" href="classvrv_1_1_horizontal_aligner.html#ac0a12119f9fbbdec17a10e9429a97724">  367</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_horizontal_aligner.html#ac0a12119f9fbbdec17a10e9429a97724">CopyChildren</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keywordtype">int</span> GetAlignmentCount()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;GetChildCount(); }</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="comment">// HorizontalAligner</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="classvrv_1_1_horizontal_aligner.html">  354</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_horizontal_aligner.html">HorizontalAligner</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <a class="code" href="classvrv_1_1_horizontal_aligner.html#a714d158a6d3ef8e8b1f9198ec61985db">HorizontalAligner</a>(ClassId classId);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_horizontal_aligner.html">HorizontalAligner</a>();</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_horizontal_aligner.html#a7d32f8b15fd9718940f8d7b08bf5107e">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
+<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="classvrv_1_1_horizontal_aligner.html#ac0a12119f9fbbdec17a10e9429a97724">  369</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_horizontal_aligner.html#ac0a12119f9fbbdec17a10e9429a97724">CopyChildren</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordtype">int</span> GetAlignmentCount()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;GetChildCount(); }</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_horizontal_aligner.html#a182ccd38b43724539b2a55c22b21598a">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_horizontal_aligner.html#a182ccd38b43724539b2a55c22b21598a">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    Alignment *<a class="code" href="classvrv_1_1_horizontal_aligner.html#a524f10edef2486134cc4a3fae568a2c0">SearchAlignmentAtTime</a>(<span class="keyword">const</span> Fraction &amp;time, AlignmentType type, <span class="keywordtype">int</span> &amp;idx);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keyword">const</span> Alignment *<a class="code" href="classvrv_1_1_horizontal_aligner.html#a524f10edef2486134cc4a3fae568a2c0">SearchAlignmentAtTime</a>(<span class="keyword">const</span> Fraction &amp;time, AlignmentType type, <span class="keywordtype">int</span> &amp;idx) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_horizontal_aligner.html#ae93eb41d1c2ad2a6cb3f42e3ac523cde">AddAlignment</a>(Alignment *alignment, <span class="keywordtype">int</span> idx = -1);</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_horizontal_aligner.html#a182ccd38b43724539b2a55c22b21598a">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_horizontal_aligner.html#a182ccd38b43724539b2a55c22b21598a">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    Alignment *<a class="code" href="classvrv_1_1_horizontal_aligner.html#a524f10edef2486134cc4a3fae568a2c0">SearchAlignmentAtTime</a>(<span class="keyword">const</span> Fraction &amp;time, AlignmentType type, <span class="keywordtype">int</span> &amp;idx);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keyword">const</span> Alignment *<a class="code" href="classvrv_1_1_horizontal_aligner.html#a524f10edef2486134cc4a3fae568a2c0">SearchAlignmentAtTime</a>(<span class="keyword">const</span> Fraction &amp;time, AlignmentType type, <span class="keywordtype">int</span> &amp;idx) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_horizontal_aligner.html#ae93eb41d1c2ad2a6cb3f42e3ac523cde">AddAlignment</a>(Alignment *alignment, <span class="keywordtype">int</span> idx = -1);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160; </div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;};</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">// MeasureAligner</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;};</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
-<div class="line"><a name="l00415"></a><span class="lineno"><a class="line" href="classvrv_1_1_measure_aligner.html">  415</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_measure_aligner.html">MeasureAligner</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_horizontal_aligner.html">HorizontalAligner</a> {</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <a class="code" href="classvrv_1_1_measure_aligner.html">MeasureAligner</a>();</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_measure_aligner.html">MeasureAligner</a>();</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_measure_aligner.html#a8c1fa7cdc214b01b2804f7a6b3b2c30d">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_measure_aligner.html#a268ddc7a43d53796374c10771d641d87">IsSupportedChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *<a class="code" href="classvrv_1_1_measure_aligner.html#a7b19df17768c52c57de3e5d87056188e">GetAlignmentAtTime</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> &amp;time, AlignmentType type);</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160; </div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_measure_aligner.html#a5ea39bc18c4e613620932a35e12fef87">SetMaxTime</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> &amp;time);</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160; </div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> <a class="code" href="classvrv_1_1_measure_aligner.html#a31dfc213071b64994ee17c9ca9f1d917">GetMaxTime</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keywordtype">int</span> GetNonJustifiableMargin()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_nonJustifiableLeftMargin; }</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    <span class="keywordtype">void</span> SetInitialTstamp(data_DURATION meterUnit);</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> GetInitialTstampDur()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_initialTstampDur; }</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160; </div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *<a class="code" href="classvrv_1_1_measure_aligner.html#a820ff586b2d660db7cc3a04d088d87b7">GetLeftAlignment</a>() { <span class="keywordflow">return</span> m_leftAlignment; }</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *<a class="code" href="classvrv_1_1_measure_aligner.html#a820ff586b2d660db7cc3a04d088d87b7">GetLeftAlignment</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_leftAlignment; }</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *GetLeftBarLineAlignment() { <span class="keywordflow">return</span> m_leftBarLineAlignment; }</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *GetLeftBarLineAlignment()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_leftBarLineAlignment; }</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160; </div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *<a class="code" href="classvrv_1_1_measure_aligner.html#a8af99381dcec89fba04d962b24a54093">GetRightAlignment</a>() { <span class="keywordflow">return</span> m_rightAlignment; }</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *<a class="code" href="classvrv_1_1_measure_aligner.html#a8af99381dcec89fba04d962b24a54093">GetRightAlignment</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_rightAlignment; }</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *GetRightBarLineAlignment() { <span class="keywordflow">return</span> m_rightBarLineAlignment; }</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *GetRightBarLineAlignment()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_rightBarLineAlignment; }</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160; </div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_measure_aligner.html#ae6a64b2c27e8f75b9bf6071b10fd2e07">AdjustProportionally</a>(<span class="keyword">const</span> ArrayOfAdjustmentTuples &amp;adjustments);</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160; </div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_measure_aligner.html#a2ea7245b5f0cf0bb1bc4fc144f29e8af">PushAlignmentsRight</a>();</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160; </div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_measure_aligner.html#a7d9b7857e1a626e78e19915824e01349">AdjustGraceNoteSpacing</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *alignment, <span class="keywordtype">int</span> staffN);</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160; </div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment">// MeasureAligner</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
+<div class="line"><a name="l00417"></a><span class="lineno"><a class="line" href="classvrv_1_1_measure_aligner.html">  417</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_measure_aligner.html">MeasureAligner</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_horizontal_aligner.html">HorizontalAligner</a> {</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <a class="code" href="classvrv_1_1_measure_aligner.html">MeasureAligner</a>();</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_measure_aligner.html">MeasureAligner</a>();</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_measure_aligner.html#a8c1fa7cdc214b01b2804f7a6b3b2c30d">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_measure_aligner.html#a268ddc7a43d53796374c10771d641d87">IsSupportedChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *<a class="code" href="classvrv_1_1_measure_aligner.html#a7b19df17768c52c57de3e5d87056188e">GetAlignmentAtTime</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> &amp;time, AlignmentType type);</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160; </div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_measure_aligner.html#a5ea39bc18c4e613620932a35e12fef87">SetMaxTime</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> &amp;time);</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160; </div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> <a class="code" href="classvrv_1_1_measure_aligner.html#a31dfc213071b64994ee17c9ca9f1d917">GetMaxTime</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160; </div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <span class="keywordtype">int</span> GetNonJustifiableMargin()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_nonJustifiableLeftMargin; }</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160; </div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <span class="keywordtype">void</span> SetInitialTstamp(data_DURATION meterUnit);</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> GetInitialTstampDur()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_initialTstampDur; }</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160; </div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *<a class="code" href="classvrv_1_1_measure_aligner.html#a820ff586b2d660db7cc3a04d088d87b7">GetLeftAlignment</a>() { <span class="keywordflow">return</span> m_leftAlignment; }</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *<a class="code" href="classvrv_1_1_measure_aligner.html#a820ff586b2d660db7cc3a04d088d87b7">GetLeftAlignment</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_leftAlignment; }</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *GetLeftBarLineAlignment() { <span class="keywordflow">return</span> m_leftBarLineAlignment; }</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *GetLeftBarLineAlignment()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_leftBarLineAlignment; }</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160; </div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *<a class="code" href="classvrv_1_1_measure_aligner.html#a8af99381dcec89fba04d962b24a54093">GetRightAlignment</a>() { <span class="keywordflow">return</span> m_rightAlignment; }</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *<a class="code" href="classvrv_1_1_measure_aligner.html#a8af99381dcec89fba04d962b24a54093">GetRightAlignment</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_rightAlignment; }</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *GetRightBarLineAlignment() { <span class="keywordflow">return</span> m_rightBarLineAlignment; }</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *GetRightBarLineAlignment()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_rightBarLineAlignment; }</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160; </div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_measure_aligner.html#ae6a64b2c27e8f75b9bf6071b10fd2e07">AdjustProportionally</a>(<span class="keyword">const</span> ArrayOfAdjustmentTuples &amp;adjustments);</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160; </div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_measure_aligner.html#a2ea7245b5f0cf0bb1bc4fc144f29e8af">PushAlignmentsRight</a>();</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160; </div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_measure_aligner.html#a7d9b7857e1a626e78e19915824e01349">AdjustGraceNoteSpacing</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *alignment, <span class="keywordtype">int</span> staffN);</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160; </div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160; </div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_measure_aligner.html#a4ab3fe228e0fbb7c68ac80a300d2f448">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_measure_aligner.html#a4ab3fe228e0fbb7c68ac80a300d2f448">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160; </div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160; </div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_measure_aligner.html#a4ab3fe228e0fbb7c68ac80a300d2f448">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_measure_aligner.html#a4ab3fe228e0fbb7c68ac80a300d2f448">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160; </div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *m_leftAlignment;</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *m_rightAlignment;</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160; </div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *m_leftBarLineAlignment;</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *m_rightBarLineAlignment;</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160; </div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    <span class="keywordtype">int</span> m_nonJustifiableLeftMargin;</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160; </div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> m_initialTstampDur;</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;};</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160; </div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;<span class="comment">// GraceAligner</span></div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *m_leftAlignment;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *m_rightAlignment;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160; </div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *m_leftBarLineAlignment;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *m_rightBarLineAlignment;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160; </div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    <span class="keywordtype">int</span> m_nonJustifiableLeftMargin;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160; </div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> m_initialTstampDur;</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;};</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160; </div>
 <div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160; </div>
-<div class="line"><a name="l00560"></a><span class="lineno"><a class="line" href="classvrv_1_1_grace_aligner.html">  560</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_grace_aligner.html">GraceAligner</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_horizontal_aligner.html">HorizontalAligner</a> {</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    <a class="code" href="classvrv_1_1_grace_aligner.html#ab08bb82df59699af188bcc229d98ea52">GraceAligner</a>();</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_grace_aligner.html">GraceAligner</a>();</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_grace_aligner.html#a3365834414a59b88baa68bba24edc4a6">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160; </div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *<a class="code" href="classvrv_1_1_grace_aligner.html#afa8727d3992e34ee3d000abcad1ee79a">GetAlignmentAtTime</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> &amp;time, AlignmentType type);</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160; </div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_grace_aligner.html#adafd1105e2839665f24976d256653ad8">StackGraceElement</a>(<a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160; </div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_grace_aligner.html#a1e4d3cfbb5784cb1d4524fe20089a166">AlignStack</a>();</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160; </div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    <span class="keywordtype">void</span> SetWidth(<span class="keywordtype">int</span> totalWidth) { m_totalWidth = totalWidth; }</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    <span class="keywordtype">int</span> GetWidth()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_totalWidth; }</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160; </div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    <span class="keywordtype">int</span> GetGraceGroupLeft(<span class="keywordtype">int</span> staffN) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    <span class="keywordtype">int</span> GetGraceGroupRight(<span class="keywordtype">int</span> staffN) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160; </div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_grace_aligner.html#a92a2851c2ee5b7b6705671cd69eb2379">SetGraceAlignmentXPos</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc);</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160; </div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;<span class="comment">// GraceAligner</span></div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160; </div>
+<div class="line"><a name="l00562"></a><span class="lineno"><a class="line" href="classvrv_1_1_grace_aligner.html">  562</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_grace_aligner.html">GraceAligner</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_horizontal_aligner.html">HorizontalAligner</a> {</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    <a class="code" href="classvrv_1_1_grace_aligner.html#ab08bb82df59699af188bcc229d98ea52">GraceAligner</a>();</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_grace_aligner.html">GraceAligner</a>();</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_grace_aligner.html#a3365834414a59b88baa68bba24edc4a6">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160; </div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    <a class="code" href="classvrv_1_1_alignment.html">Alignment</a> *<a class="code" href="classvrv_1_1_grace_aligner.html#afa8727d3992e34ee3d000abcad1ee79a">GetAlignmentAtTime</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_fraction.html">Fraction</a> &amp;time, AlignmentType type);</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160; </div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_grace_aligner.html#adafd1105e2839665f24976d256653ad8">StackGraceElement</a>(<a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160; </div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_grace_aligner.html#a1e4d3cfbb5784cb1d4524fe20089a166">AlignStack</a>();</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160; </div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    <span class="keywordtype">void</span> SetWidth(<span class="keywordtype">int</span> totalWidth) { m_totalWidth = totalWidth; }</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    <span class="keywordtype">int</span> GetWidth()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_totalWidth; }</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160; </div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    <span class="keywordtype">int</span> GetGraceGroupLeft(<span class="keywordtype">int</span> staffN) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    <span class="keywordtype">int</span> GetGraceGroupRight(<span class="keywordtype">int</span> staffN) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160; </div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_grace_aligner.html#a92a2851c2ee5b7b6705671cd69eb2379">SetGraceAlignmentXPos</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc);</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160; </div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160; </div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_grace_aligner.html#a260da705dfb5077b5f80d140204d6878">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_grace_aligner.html#a260da705dfb5077b5f80d140204d6878">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160; </div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160; </div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_grace_aligner.html#a260da705dfb5077b5f80d140204d6878">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_grace_aligner.html#a260da705dfb5077b5f80d140204d6878">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160; </div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    ArrayOfObjects m_graceStack;</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <span class="keywordtype">int</span> m_totalWidth;</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;};</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160; </div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;<span class="comment">// TimestampAligner</span></div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    ArrayOfObjects m_graceStack;</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <span class="keywordtype">int</span> m_totalWidth;</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;};</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160; </div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160; </div>
-<div class="line"><a name="l00654"></a><span class="lineno"><a class="line" href="classvrv_1_1_timestamp_aligner.html">  654</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_timestamp_aligner.html">TimestampAligner</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    <span class="comment">// constructors and destructors</span></div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    <a class="code" href="classvrv_1_1_timestamp_aligner.html">TimestampAligner</a>();</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_timestamp_aligner.html">TimestampAligner</a>();</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160; </div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_timestamp_aligner.html#a57bc007a4312c29ccecfb3338c90cf76">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160; </div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_timestamp_aligner.html#a866380e02cd4d5520b2041958eca7496">IsSupportedChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160; </div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    <a class="code" href="classvrv_1_1_timestamp_attr.html">TimestampAttr</a> *<a class="code" href="classvrv_1_1_timestamp_aligner.html#a7bb2cf662de501c0a64060552f0116e3">GetTimestampAtTime</a>(<span class="keywordtype">double</span> time);</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160; </div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;<span class="comment">// TimestampAligner</span></div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160; </div>
+<div class="line"><a name="l00656"></a><span class="lineno"><a class="line" href="classvrv_1_1_timestamp_aligner.html">  656</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_timestamp_aligner.html">TimestampAligner</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    <span class="comment">// constructors and destructors</span></div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <a class="code" href="classvrv_1_1_timestamp_aligner.html">TimestampAligner</a>();</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_timestamp_aligner.html">TimestampAligner</a>();</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160; </div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_timestamp_aligner.html#a57bc007a4312c29ccecfb3338c90cf76">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160; </div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_timestamp_aligner.html#a866380e02cd4d5520b2041958eca7496">IsSupportedChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160; </div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    <a class="code" href="classvrv_1_1_timestamp_attr.html">TimestampAttr</a> *<a class="code" href="classvrv_1_1_timestamp_aligner.html#a7bb2cf662de501c0a64060552f0116e3">GetTimestampAtTime</a>(<span class="keywordtype">double</span> time);</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160; </div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160; </div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_timestamp_aligner.html#a6a740e04cfcb91ff8bedae44650e369d">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_timestamp_aligner.html#a6a740e04cfcb91ff8bedae44650e369d">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160; </div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160; </div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_timestamp_aligner.html#a6a740e04cfcb91ff8bedae44650e369d">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_timestamp_aligner.html#a6a740e04cfcb91ff8bedae44650e369d">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160; </div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;};</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160; </div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;};</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160; </div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160; </div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_alignment_html_ad026c49cccdf5a3437d24c359ea8a4e5"><div class="ttname"><a href="classvrv_1_1_alignment.html#ad026c49cccdf5a3437d24c359ea8a4e5">vrv::Alignment::HasAlignmentReference</a></div><div class="ttdeci">bool HasAlignmentReference(int staffN) const</div><div class="ttdoc">Return true if the alignment contains at least one reference with staffN.</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_aligner_html_a268ddc7a43d53796374c10771d641d87"><div class="ttname"><a href="classvrv_1_1_measure_aligner.html#a268ddc7a43d53796374c10771d641d87">vrv::MeasureAligner::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Override the method of adding AlignmentReference children.</div></div>
-<div class="ttc" id="aclassvrv_1_1_measure_aligner_html_a8af99381dcec89fba04d962b24a54093"><div class="ttname"><a href="classvrv_1_1_measure_aligner.html#a8af99381dcec89fba04d962b24a54093">vrv::MeasureAligner::GetRightAlignment</a></div><div class="ttdeci">Alignment * GetRightAlignment()</div><div class="ttdoc">Get right Alignment for the measure.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:485</div></div>
-<div class="ttc" id="aclassvrv_1_1_alignment_html_af3c2e284729d4ffbd49b07f18615a7d1"><div class="ttname"><a href="classvrv_1_1_alignment.html#af3c2e284729d4ffbd49b07f18615a7d1">vrv::Alignment::GetGraceAligners</a></div><div class="ttdeci">const MapOfIntGraceAligners &amp; GetGraceAligners()</div><div class="ttdoc">Return all GraceAligners for the Alignment.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:142</div></div>
+<div class="ttc" id="aclassvrv_1_1_measure_aligner_html_a8af99381dcec89fba04d962b24a54093"><div class="ttname"><a href="classvrv_1_1_measure_aligner.html#a8af99381dcec89fba04d962b24a54093">vrv::MeasureAligner::GetRightAlignment</a></div><div class="ttdeci">Alignment * GetRightAlignment()</div><div class="ttdoc">Get right Alignment for the measure.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:487</div></div>
+<div class="ttc" id="aclassvrv_1_1_alignment_html_af3c2e284729d4ffbd49b07f18615a7d1"><div class="ttname"><a href="classvrv_1_1_alignment.html#af3c2e284729d4ffbd49b07f18615a7d1">vrv::Alignment::GetGraceAligners</a></div><div class="ttdeci">const MapOfIntGraceAligners &amp; GetGraceAligners()</div><div class="ttdoc">Return all GraceAligners for the Alignment.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:144</div></div>
 <div class="ttc" id="aclassvrv_1_1_horizontal_aligner_html_ae93eb41d1c2ad2a6cb3f42e3ac523cde"><div class="ttname"><a href="classvrv_1_1_horizontal_aligner.html#ae93eb41d1c2ad2a6cb3f42e3ac523cde">vrv::HorizontalAligner::AddAlignment</a></div><div class="ttdeci">void AddAlignment(Alignment *alignment, int idx=-1)</div><div class="ttdoc">Add an alignment at the appropriate position (at the end if -1)</div></div>
-<div class="ttc" id="aclassvrv_1_1_timestamp_aligner_html"><div class="ttname"><a href="classvrv_1_1_timestamp_aligner.html">vrv::TimestampAligner</a></div><div class="ttdoc">This class stores the timestamps (TimestampsAttr) in a measure.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:654</div></div>
+<div class="ttc" id="aclassvrv_1_1_timestamp_aligner_html"><div class="ttname"><a href="classvrv_1_1_timestamp_aligner.html">vrv::TimestampAligner</a></div><div class="ttdoc">This class stores the timestamps (TimestampsAttr) in a measure.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:656</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:40</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_html_a522317d835a28e60074f4b1c3ff38829"><div class="ttname"><a href="classvrv_1_1_alignment.html#a522317d835a28e60074f4b1c3ff38829">vrv::Alignment::GetLeftRight</a></div><div class="ttdeci">void GetLeftRight(const std::vector&lt; int &gt; &amp;staffNs, int &amp;minLeft, int &amp;maxRight, const std::vector&lt; ClassId &gt; &amp;excludes={}) const</div><div class="ttdoc">Retrieve the minimum left and maximum right position for the objects in an alignment.</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_reference_html_a084e3418ace027cbfa49a29e889186a4"><div class="ttname"><a href="classvrv_1_1_alignment_reference.html#a084e3418ace027cbfa49a29e889186a4">vrv::AlignmentReference::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Reset the object, that is 1) removing all children and 2) resetting all attributes.</div></div>
-<div class="ttc" id="aclassvrv_1_1_horizontal_aligner_html"><div class="ttname"><a href="classvrv_1_1_horizontal_aligner.html">vrv::HorizontalAligner</a></div><div class="ttdoc">This class aligns the content horizontally It contains a vector of Alignment.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:352</div></div>
+<div class="ttc" id="aclassvrv_1_1_horizontal_aligner_html"><div class="ttname"><a href="classvrv_1_1_horizontal_aligner.html">vrv::HorizontalAligner</a></div><div class="ttdoc">This class aligns the content horizontally It contains a vector of Alignment.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:354</div></div>
 <div class="ttc" id="aclassvrv_1_1_grace_aligner_html_ab08bb82df59699af188bcc229d98ea52"><div class="ttname"><a href="classvrv_1_1_grace_aligner.html#ab08bb82df59699af188bcc229d98ea52">vrv::GraceAligner::GraceAligner</a></div><div class="ttdeci">GraceAligner()</div><div class="ttdoc">@(</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_html_ae806f6c44d2251c5adf385d21d22e2be"><div class="ttname"><a href="classvrv_1_1_alignment.html#ae806f6c44d2251c5adf385d21d22e2be">vrv::Alignment::GetGraceAligner</a></div><div class="ttdeci">GraceAligner * GetGraceAligner(int id)</div><div class="ttdoc">Returns the GraceAligner for the Alignment.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:59</div></div>
 <div class="ttc" id="aclassvrv_1_1_grace_aligner_html_a1e4d3cfbb5784cb1d4524fe20089a166"><div class="ttname"><a href="classvrv_1_1_grace_aligner.html#a1e4d3cfbb5784cb1d4524fe20089a166">vrv::GraceAligner::AlignStack</a></div><div class="ttdeci">void AlignStack()</div><div class="ttdoc">Align the notes in the reverse order.</div></div>
 <div class="ttc" id="aclassvrv_1_1_horizontal_aligner_html_a524f10edef2486134cc4a3fae568a2c0"><div class="ttname"><a href="classvrv_1_1_horizontal_aligner.html#a524f10edef2486134cc4a3fae568a2c0">vrv::HorizontalAligner::SearchAlignmentAtTime</a></div><div class="ttdeci">Alignment * SearchAlignmentAtTime(const Fraction &amp;time, AlignmentType type, int &amp;idx)</div><div class="ttdoc">Search if an alignment of the type is already there at the time.</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_reference_html_a95d76d62a688a262fbee1b4c2971daa6"><div class="ttname"><a href="classvrv_1_1_alignment_reference.html#a95d76d62a688a262fbee1b4c2971daa6">vrv::AlignmentReference::AddChild</a></div><div class="ttdeci">void AddChild(Object *object) override</div><div class="ttdoc">Overwritten method for AlignmentReference children.</div></div>
-<div class="ttc" id="aclassvrv_1_1_grace_aligner_html"><div class="ttname"><a href="classvrv_1_1_grace_aligner.html">vrv::GraceAligner</a></div><div class="ttdoc">This class aligns the content of a grace note group It contains a vector of Alignment.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:560</div></div>
+<div class="ttc" id="aclassvrv_1_1_grace_aligner_html"><div class="ttname"><a href="classvrv_1_1_grace_aligner.html">vrv::GraceAligner</a></div><div class="ttdoc">This class aligns the content of a grace note group It contains a vector of Alignment.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:562</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_html_a50f052e2fbad6b9e2047f384f27d1890"><div class="ttname"><a href="classvrv_1_1_alignment.html#a50f052e2fbad6b9e2047f384f27d1890">vrv::Alignment::HorizontalSpaceForDuration</a></div><div class="ttdeci">static int HorizontalSpaceForDuration(const Fraction &amp;intervalTime, data_DURATION maxActualDur, double spacingLinear, double spacingNonLinear)</div><div class="ttdoc">Compute &quot;ideal&quot; horizontal space to allow for a given time interval, ignoring the need to keep consec...</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_reference_html_ab1145409381d64fa25d3b506c14872da"><div class="ttname"><a href="classvrv_1_1_alignment_reference.html#ab1145409381d64fa25d3b506c14872da">vrv::AlignmentReference::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Override the method of adding Alignment children.</div></div>
 <div class="ttc" id="aclassvrv_1_1_fraction_html"><div class="ttname"><a href="classvrv_1_1_fraction.html">vrv::Fraction</a></div><div class="ttdef"><b>Definition:</b> fraction.h:19</div></div>
-<div class="ttc" id="aclassvrv_1_1_alignment_reference_html"><div class="ttname"><a href="classvrv_1_1_alignment_reference.html">vrv::AlignmentReference</a></div><div class="ttdoc">This class stores a references of LayerElements for a staff.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:280</div></div>
+<div class="ttc" id="aclassvrv_1_1_alignment_reference_html"><div class="ttname"><a href="classvrv_1_1_alignment_reference.html">vrv::AlignmentReference</a></div><div class="ttdoc">This class stores a references of LayerElements for a staff.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:282</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_html_affc4399bfe85f4fcb885b172c75b4bb8"><div class="ttname"><a href="classvrv_1_1_alignment.html#affc4399bfe85f4fcb885b172c75b4bb8">vrv::Alignment::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_horizontal_aligner_html_a182ccd38b43724539b2a55c22b21598a"><div class="ttname"><a href="classvrv_1_1_horizontal_aligner.html#a182ccd38b43724539b2a55c22b21598a">vrv::HorizontalAligner::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_html_a0d0a0f0b03ae0a91009f7964b2b1d0ea"><div class="ttname"><a href="classvrv_1_1_alignment.html#a0d0a0f0b03ae0a91009f7964b2b1d0ea">vrv::Alignment::GetAlignmentTopBottom</a></div><div class="ttdeci">std::pair&lt; int, int &gt; GetAlignmentTopBottom() const</div><div class="ttdoc">Return pair of max and min Y value within alignment.</div></div>
@@ -475,22 +477,22 @@ $(document).ready(function(){initNavTree('horizontalaligner_8h_source.html','');
 <div class="ttc" id="aclassvrv_1_1_timestamp_aligner_html_a57bc007a4312c29ccecfb3338c90cf76"><div class="ttname"><a href="classvrv_1_1_timestamp_aligner.html#a57bc007a4312c29ccecfb3338c90cf76">vrv::TimestampAligner::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Reset the aligner (clear the content)</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_html"><div class="ttname"><a href="classvrv_1_1_functor.html">vrv::Functor</a></div><div class="ttdoc">This abstract class is the base class for all mutable functors.</div><div class="ttdef"><b>Definition:</b> functor.h:101</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_html_a91732fc83a25ace6d09b87ff0afdfdb1"><div class="ttname"><a href="classvrv_1_1_alignment.html#a91732fc83a25ace6d09b87ff0afdfdb1">vrv::Alignment::HasTimestampOnly</a></div><div class="ttdeci">bool HasTimestampOnly() const</div><div class="ttdoc">Return true if the alignment contains only references to timestamp attributes.</div></div>
-<div class="ttc" id="aclassvrv_1_1_measure_aligner_html_a820ff586b2d660db7cc3a04d088d87b7"><div class="ttname"><a href="classvrv_1_1_measure_aligner.html#a820ff586b2d660db7cc3a04d088d87b7">vrv::MeasureAligner::GetLeftAlignment</a></div><div class="ttdeci">Alignment * GetLeftAlignment()</div><div class="ttdoc">Get left Alignment for the measure and for the left BarLine.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:473</div></div>
+<div class="ttc" id="aclassvrv_1_1_measure_aligner_html_a820ff586b2d660db7cc3a04d088d87b7"><div class="ttname"><a href="classvrv_1_1_measure_aligner.html#a820ff586b2d660db7cc3a04d088d87b7">vrv::MeasureAligner::GetLeftAlignment</a></div><div class="ttdeci">Alignment * GetLeftAlignment()</div><div class="ttdoc">Get left Alignment for the measure and for the left BarLine.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:475</div></div>
 <div class="ttc" id="aclassvrv_1_1_timestamp_aligner_html_a6a740e04cfcb91ff8bedae44650e369d"><div class="ttname"><a href="classvrv_1_1_timestamp_aligner.html#a6a740e04cfcb91ff8bedae44650e369d">vrv::TimestampAligner::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_grace_aligner_html_a3365834414a59b88baa68bba24edc4a6"><div class="ttname"><a href="classvrv_1_1_grace_aligner.html#a3365834414a59b88baa68bba24edc4a6">vrv::GraceAligner::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Reset the object, that is 1) removing all children and 2) resetting all attributes.</div></div>
 <div class="ttc" id="aclassvrv_1_1_horizontal_aligner_html_a714d158a6d3ef8e8b1f9198ec61985db"><div class="ttname"><a href="classvrv_1_1_horizontal_aligner.html#a714d158a6d3ef8e8b1f9198ec61985db">vrv::HorizontalAligner::HorizontalAligner</a></div><div class="ttdeci">HorizontalAligner(ClassId classId)</div><div class="ttdoc">@(</div></div>
-<div class="ttc" id="aclassvrv_1_1_alignment_html"><div class="ttname"><a href="classvrv_1_1_alignment.html">vrv::Alignment</a></div><div class="ttdoc">This class stores an alignment position elements will point to.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:71</div></div>
+<div class="ttc" id="aclassvrv_1_1_alignment_html"><div class="ttname"><a href="classvrv_1_1_alignment.html">vrv::Alignment</a></div><div class="ttdoc">This class stores an alignment position elements will point to.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:73</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_html_a69dbbfa23611f87db7df6c03a26e52a9"><div class="ttname"><a href="classvrv_1_1_alignment.html#a69dbbfa23611f87db7df6c03a26e52a9">vrv::Alignment::ClearGraceAligners</a></div><div class="ttdeci">void ClearGraceAligners()</div><div class="ttdoc">Delete the grace aligners in the map.</div></div>
 <div class="ttc" id="aclassvrv_1_1_grace_aligner_html_adafd1105e2839665f24976d256653ad8"><div class="ttname"><a href="classvrv_1_1_grace_aligner.html#adafd1105e2839665f24976d256653ad8">vrv::GraceAligner::StackGraceElement</a></div><div class="ttdeci">void StackGraceElement(LayerElement *object)</div><div class="ttdoc">Because the grace notes appear from left to right but need to be aligned from right to left,...</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_aligner_html_a2ea7245b5f0cf0bb1bc4fc144f29e8af"><div class="ttname"><a href="classvrv_1_1_measure_aligner.html#a2ea7245b5f0cf0bb1bc4fc144f29e8af">vrv::MeasureAligner::PushAlignmentsRight</a></div><div class="ttdeci">void PushAlignmentsRight()</div><div class="ttdoc">Push all the ALIGNMENT_GRACENOTE and ALIGNMENT_CONTAINER to the right.</div></div>
 <div class="ttc" id="aclassvrv_1_1_const_functor_html"><div class="ttname"><a href="classvrv_1_1_const_functor.html">vrv::ConstFunctor</a></div><div class="ttdoc">This abstract class is the base class for all const functors.</div><div class="ttdef"><b>Definition:</b> functor.h:126</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_reference_html_a20a67edf81f6a10054bafac29530d8a5"><div class="ttname"><a href="classvrv_1_1_alignment_reference.html#a20a67edf81f6a10054bafac29530d8a5">vrv::AlignmentReference::HasAccidVerticalOverlap</a></div><div class="ttdeci">bool HasAccidVerticalOverlap(const ArrayOfConstObjects &amp;objects) const</div><div class="ttdoc">Return true if one of objects overlaps with accidentals from current reference (i....</div></div>
-<div class="ttc" id="aclassvrv_1_1_measure_aligner_html"><div class="ttname"><a href="classvrv_1_1_measure_aligner.html">vrv::MeasureAligner</a></div><div class="ttdoc">This class aligns the content of a measure It contains a vector of Alignment.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:415</div></div>
+<div class="ttc" id="aclassvrv_1_1_measure_aligner_html"><div class="ttname"><a href="classvrv_1_1_measure_aligner.html">vrv::MeasureAligner</a></div><div class="ttdoc">This class aligns the content of a measure It contains a vector of Alignment.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:417</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_html_a4513083acf6e7acbea6e894c3285750e"><div class="ttname"><a href="classvrv_1_1_alignment.html#a4513083acf6e7acbea6e894c3285750e">vrv::Alignment::HasAccidVerticalOverlap</a></div><div class="ttdeci">bool HasAccidVerticalOverlap(const Alignment *otherAlignment, int staffN) const</div><div class="ttdoc">Return true if there is vertical overlap with accidentals from another alignment for specific staffN.</div></div>
 <div class="ttc" id="aclassvrv_1_1_horizontal_aligner_html_a7d32f8b15fd9718940f8d7b08bf5107e"><div class="ttname"><a href="classvrv_1_1_horizontal_aligner.html#a7d32f8b15fd9718940f8d7b08bf5107e">vrv::HorizontalAligner::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Reset the object, that is 1) removing all children and 2) resetting all attributes.</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_reference_html_ad88dbf946e0441c77075ae5d6e43320b"><div class="ttname"><a href="classvrv_1_1_alignment_reference.html#ad88dbf946e0441c77075ae5d6e43320b">vrv::AlignmentReference::HasCrossStaffElements</a></div><div class="ttdeci">bool HasCrossStaffElements() const</div><div class="ttdoc">Return true if the reference has elements from cross-staff.</div></div>
-<div class="ttc" id="aclassvrv_1_1_alignment_html_a56610938a75cd860b174ec00bfd0295c"><div class="ttname"><a href="classvrv_1_1_alignment.html#a56610938a75cd860b174ec00bfd0295c">vrv::Alignment::LogDebugTreeMsg</a></div><div class="ttdeci">std::string LogDebugTreeMsg() override</div><div class="ttdoc">Debug message.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:192</div></div>
-<div class="ttc" id="aclassvrv_1_1_alignment_reference_html_a9c1895942dd54bf9ac12b788dbf7570c"><div class="ttname"><a href="classvrv_1_1_alignment_reference.html#a9c1895942dd54bf9ac12b788dbf7570c">vrv::AlignmentReference::HasMultipleLayer</a></div><div class="ttdeci">bool HasMultipleLayer() const</div><div class="ttdoc">Return true if the reference has elements from multiple layers.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:311</div></div>
+<div class="ttc" id="aclassvrv_1_1_alignment_html_a56610938a75cd860b174ec00bfd0295c"><div class="ttname"><a href="classvrv_1_1_alignment.html#a56610938a75cd860b174ec00bfd0295c">vrv::Alignment::LogDebugTreeMsg</a></div><div class="ttdeci">std::string LogDebugTreeMsg() override</div><div class="ttdoc">Debug message.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:194</div></div>
+<div class="ttc" id="aclassvrv_1_1_alignment_reference_html_a9c1895942dd54bf9ac12b788dbf7570c"><div class="ttname"><a href="classvrv_1_1_alignment_reference.html#a9c1895942dd54bf9ac12b788dbf7570c">vrv::AlignmentReference::HasMultipleLayer</a></div><div class="ttdeci">bool HasMultipleLayer() const</div><div class="ttdoc">Return true if the reference has elements from multiple layers.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:313</div></div>
 <div class="ttc" id="aclassvrv_1_1_grace_aligner_html_afa8727d3992e34ee3d000abcad1ee79a"><div class="ttname"><a href="classvrv_1_1_grace_aligner.html#afa8727d3992e34ee3d000abcad1ee79a">vrv::GraceAligner::GetAlignmentAtTime</a></div><div class="ttdeci">Alignment * GetAlignmentAtTime(const Fraction &amp;time, AlignmentType type)</div><div class="ttdoc">Retrieve the alignmnet of the type at that time.</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_html_ab52c03819037b643b89612716dc4629a"><div class="ttname"><a href="classvrv_1_1_alignment.html#ab52c03819037b643b89612716dc4629a">vrv::Alignment::AddLayerElementRef</a></div><div class="ttdeci">bool AddLayerElementRef(LayerElement *element)</div><div class="ttdoc">Add the LayerElement to the appropriate AlignmentReference child.</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_aligner_html_a7b19df17768c52c57de3e5d87056188e"><div class="ttname"><a href="classvrv_1_1_measure_aligner.html#a7b19df17768c52c57de3e5d87056188e">vrv::MeasureAligner::GetAlignmentAtTime</a></div><div class="ttdeci">Alignment * GetAlignmentAtTime(const Fraction &amp;time, AlignmentType type)</div><div class="ttdoc">Retrieve the alignmnet of the type at that time.</div></div>
@@ -511,12 +513,12 @@ $(document).ready(function(){initNavTree('horizontalaligner_8h_source.html','');
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:46</div></div>
 <div class="ttc" id="aclassvrv_1_1_alignment_html_afe1dce241b823edc3a32d57d159dd636"><div class="ttname"><a href="classvrv_1_1_alignment.html#afe1dce241b823edc3a32d57d159dd636">vrv::Alignment::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Override the method of adding AlignmentReference children.</div></div>
 <div class="ttc" id="aclassvrv_1_1_timestamp_aligner_html_a7bb2cf662de501c0a64060552f0116e3"><div class="ttname"><a href="classvrv_1_1_timestamp_aligner.html#a7bb2cf662de501c0a64060552f0116e3">vrv::TimestampAligner::GetTimestampAtTime</a></div><div class="ttdeci">TimestampAttr * GetTimestampAtTime(double time)</div><div class="ttdoc">Look for an existing TimestampAttr at a certain time.</div></div>
-<div class="ttc" id="aclassvrv_1_1_horizontal_aligner_html_ac0a12119f9fbbdec17a10e9429a97724"><div class="ttname"><a href="classvrv_1_1_horizontal_aligner.html#ac0a12119f9fbbdec17a10e9429a97724">vrv::HorizontalAligner::CopyChildren</a></div><div class="ttdeci">bool CopyChildren() const override</div><div class="ttdoc">Do not copy children for HorizontalAligner.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:367</div></div>
+<div class="ttc" id="aclassvrv_1_1_horizontal_aligner_html_ac0a12119f9fbbdec17a10e9429a97724"><div class="ttname"><a href="classvrv_1_1_horizontal_aligner.html#ac0a12119f9fbbdec17a10e9429a97724">vrv::HorizontalAligner::CopyChildren</a></div><div class="ttdeci">bool CopyChildren() const override</div><div class="ttdoc">Do not copy children for HorizontalAligner.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:369</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>horizontalaligner.h</b></li>
-    <li class="footer">Generated on Thu Oct 17 2024 10:15:20 for Verovio by
+    <li class="footer">Generated on Thu Oct 17 2024 12:40:19 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

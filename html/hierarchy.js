@@ -1218,6 +1218,7 @@ var hierarchy =
     [ "vrv::HumdrumSignifiers", "classvrv_1_1_humdrum_signifiers.html", null ],
     [ "vrv::Input", "classvrv_1_1_input.html", [
       [ "vrv::ABCInput", "classvrv_1_1_a_b_c_input.html", null ],
+      [ "vrv::CmmeInput", "classvrv_1_1_cmme_input.html", null ],
       [ "vrv::HumdrumInput", "classvrv_1_1_humdrum_input.html", null ],
       [ "vrv::MEIInput", "classvrv_1_1_m_e_i_input.html", null ],
       [ "vrv::MusicXmlInput", "classvrv_1_1_music_xml_input.html", null ],
@@ -1240,6 +1241,7 @@ var hierarchy =
     [ "vrv::IntTree", "structvrv_1_1_int_tree.html", null ],
     [ "vrv::KeyAccidInfo", "structvrv_1_1_key_accid_info.html", null ],
     [ "vrv::LedgerLine", "classvrv_1_1_ledger_line.html", null ],
+    [ "vrv::cmme::mensInfo", "structvrv_1_1cmme_1_1mens_info.html", null ],
     [ "vrv::MIDIChord", "structvrv_1_1_m_i_d_i_chord.html", null ],
     [ "vrv::MIDIHeldNote", "structvrv_1_1_m_i_d_i_held_note.html", null ],
     [ "vrv::MIDINote", "structvrv_1_1_m_i_d_i_note.html", null ],

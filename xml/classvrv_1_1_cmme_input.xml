@@ -1,0 +1,981 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classvrv_1_1_cmme_input" kind="class" language="C++" prot="public">
+    <compoundname>vrv::CmmeInput</compoundname>
+    <basecompoundref refid="classvrv_1_1_input" prot="public" virt="non-virtual">vrv::Input</basecompoundref>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1ae2216351c6dfd83ebdce529c4fc9e333" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string vrv::CmmeInput::AsString</definition>
+        <argsstring>(const pugi::xml_node node) const</argsstring>
+        <name>AsString</name>
+        <param>
+          <type>const pugi::xml_node</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Helper methods for accessing and converting text in elements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return &quot;&quot; or VRV_UNSET if the node is NULL or the node or the text not found </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="91" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a92ced82f4c5f1b5662a58f71daa04b6f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string vrv::CmmeInput::ChildAsString</definition>
+        <argsstring>(const pugi::xml_node node, const std::string &amp;child) const</argsstring>
+        <name>ChildAsString</name>
+        <param>
+          <type>const pugi::xml_node</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="92" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1ad47c4fc57228610428353a9a0cf7b2c1" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::CmmeInput::AsInt</definition>
+        <argsstring>(const pugi::xml_node node) const</argsstring>
+        <name>AsInt</name>
+        <param>
+          <type>const pugi::xml_node</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="93" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1aa25d354ded0f3a0ed9e10cbf383d4f9a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::CmmeInput::ChildAsInt</definition>
+        <argsstring>(const pugi::xml_node node, const std::string &amp;child) const</argsstring>
+        <name>ChildAsInt</name>
+        <param>
+          <type>const pugi::xml_node</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="94" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvrv_1_1_cmme_input_1ae3ad39b4748246335de874573e80248b" prot="private" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_score" kindref="compound">Score</ref> *</type>
+        <definition>Score* vrv::CmmeInput::m_score</definition>
+        <argsstring></argsstring>
+        <name>m_score</name>
+        <briefdescription>
+<para>The current score (only one) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="101" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cmme_input_1a9f87993152963c493e45c650412e33bc" prot="private" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
+        <definition>Measure* vrv::CmmeInput::m_currentSection</definition>
+        <argsstring></argsstring>
+        <name>m_currentSection</name>
+        <briefdescription>
+<para>The current un-measured measure acting a a MEI section. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="103" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cmme_input_1a09a030d3f64f18e06eccd83aeb52415c" prot="private" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+        <definition>Object* vrv::CmmeInput::m_currentContainer</definition>
+        <argsstring></argsstring>
+        <name>m_currentContainer</name>
+        <briefdescription>
+<para>The current layer (or container) to which the layer elements have to be added. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="105" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cmme_input_1aff94dff3807c7ca6565aa8e694e80fca" prot="private" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_key_sig" kindref="compound">KeySig</ref> *</type>
+        <definition>KeySig* vrv::CmmeInput::m_currentSignature</definition>
+        <argsstring></argsstring>
+        <name>m_currentSignature</name>
+        <briefdescription>
+<para>The current key signature to which extra flats might be added. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="107" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cmme_input_1a44ac6ec884d890a1e965489029897a53" prot="private" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_note" kindref="compound">Note</ref> *</type>
+        <definition>Note* vrv::CmmeInput::m_currentNote</definition>
+        <argsstring></argsstring>
+        <name>m_currentNote</name>
+        <briefdescription>
+<para>The current note. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="109" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cmme_input_1a33b971e19594c3f04466a1c34ed0e864" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool vrv::CmmeInput::m_isInSyllable</definition>
+        <argsstring></argsstring>
+        <name>m_isInSyllable</name>
+        <briefdescription>
+<para>The syllable is not the first. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="111" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cmme_input_1a5e07bffcb1b819b2394a5ed2ab3c598e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structvrv_1_1cmme_1_1mens_info" kindref="compound">cmme::mensInfo</ref> &gt;</type>
+        <definition>std::vector&lt;cmme::mensInfo&gt; vrv::CmmeInput::m_mensInfos</definition>
+        <argsstring></argsstring>
+        <name>m_mensInfos</name>
+        <briefdescription>
+<para>The mensural infos for all voices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="113" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cmme_input_1a0d8de5b85c687fe6eeee99e06ef08406" prot="private" static="no" mutable="no">
+        <type><ref refid="structvrv_1_1cmme_1_1mens_info" kindref="compound">cmme::mensInfo</ref> *</type>
+        <definition>cmme::mensInfo* vrv::CmmeInput::m_mensInfo</definition>
+        <argsstring></argsstring>
+        <name>m_mensInfo</name>
+        <briefdescription>
+<para>The mensural info for the current voice. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="115" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cmme_input_1a50080a8389806dd62463dd8ac3d93ff6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vrv::CmmeInput::m_numVoices</definition>
+        <argsstring></argsstring>
+        <name>m_numVoices</name>
+        <briefdescription>
+<para>The number of voices as given in the general data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="118" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cmme_input_1a2366abbce8447569581778985f6d1473" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; vrv::CmmeInput::m_voices</definition>
+        <argsstring></argsstring>
+        <name>m_voices</name>
+        <briefdescription>
+<para>The name of the voices - if any. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="120" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a847fae6758850df9282dd94aba93bb07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vrv::CmmeInput::CmmeInput</definition>
+        <argsstring>(Doc *doc)</argsstring>
+        <name>CmmeInput</name>
+        <param>
+          <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="51" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a66dc8b02d6302c87256471a211302337" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual vrv::CmmeInput::~CmmeInput</definition>
+        <argsstring>()</argsstring>
+        <name>~CmmeInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="52" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a3182ef68f4c990d32189bf757cb38916" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool vrv::CmmeInput::Import</definition>
+        <argsstring>(const std::string &amp;cmme) override</argsstring>
+        <name>Import</name>
+        <reimplements refid="classvrv_1_1_input_1a7a19750d81786d0a71ab4665a16b78e1">Import</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>cmme</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="54" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1ab9c855d3d1c8e4287159ff291ce49eab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateSection</definition>
+        <argsstring>(pugi::xml_node musicSectionNode)</argsstring>
+        <name>CreateSection</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>musicSectionNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="57" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1ae0016b351e77db857664816f9956ee0b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateStaff</definition>
+        <argsstring>(pugi::xml_node voiceNode)</argsstring>
+        <name>CreateStaff</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>voiceNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a94f2c72784d4180075f30b5887d1deab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateApp</definition>
+        <argsstring>(pugi::xml_node appNode)</argsstring>
+        <name>CreateApp</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>appNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="59" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1aabf788f32f71758f201d22639fa51919" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateLemOrRdg</definition>
+        <argsstring>(pugi::xml_node lemOrRdgNode, bool isFirst)</argsstring>
+        <name>CreateLemOrRdg</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>lemOrRdgNode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isFirst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="60" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1ab4913a491119a8ab945622256e2a792a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::ReadEvents</definition>
+        <argsstring>(pugi::xml_node eventsNode)</argsstring>
+        <name>ReadEvents</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>eventsNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="62" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1ae93702f7b89327c546ee0cb3a14f5e37" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::ReadEditorialCommentary</definition>
+        <argsstring>(pugi::xml_node evenNode, Object *object)</argsstring>
+        <name>ReadEditorialCommentary</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>evenNode</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="63" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1ae9480eed4e79a23a8eac4391608a297b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateAccid</definition>
+        <argsstring>(pugi::xml_node accidNode)</argsstring>
+        <name>CreateAccid</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>accidNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="65" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a7141fce40600e286fd50bc93afd0f98e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateBarline</definition>
+        <argsstring>(pugi::xml_node barlineNode)</argsstring>
+        <name>CreateBarline</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>barlineNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a5e32fa9d90ef603edbd402587cf5370b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateBreak</definition>
+        <argsstring>(pugi::xml_node breakNode)</argsstring>
+        <name>CreateBreak</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>breakNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1ae01b0ab439d803ce9c4c5801230403c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateChord</definition>
+        <argsstring>(pugi::xml_node chordNode)</argsstring>
+        <name>CreateChord</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>chordNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="68" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a4b48ee8fc77f292a1e11783bc6b20dae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateClef</definition>
+        <argsstring>(pugi::xml_node clefNode)</argsstring>
+        <name>CreateClef</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>clefNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="69" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a6fd36281a97ba1b2024bd367e5e4697f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateCustos</definition>
+        <argsstring>(pugi::xml_node custosNode)</argsstring>
+        <name>CreateCustos</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>custosNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="70" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1ae5e7de5b61e302906a7a37b223a38a98" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateDot</definition>
+        <argsstring>(pugi::xml_node dotNode)</argsstring>
+        <name>CreateDot</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>dotNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a07f5b6ad40b143889f0a75a6b57eda14" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateEllipsis</definition>
+        <argsstring>()</argsstring>
+        <name>CreateEllipsis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="72" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a2c7c204a0b6faca8c0c005e6885f3477" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateKeySig</definition>
+        <argsstring>(pugi::xml_node keyNode)</argsstring>
+        <name>CreateKeySig</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>keyNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="73" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a619b51506a8ee7134fac35de211d5bc7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateLacuna</definition>
+        <argsstring>(pugi::xml_node lacunaNode)</argsstring>
+        <name>CreateLacuna</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>lacunaNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a4ada1f20bffd65df8c1353e55fe43db0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateMensuration</definition>
+        <argsstring>(pugi::xml_node mensurationNode)</argsstring>
+        <name>CreateMensuration</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>mensurationNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="75" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a1741d68ada6c9ed0f9c4aa7d28a2d2fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateOriginalText</definition>
+        <argsstring>(pugi::xml_node originalTextNode)</argsstring>
+        <name>CreateOriginalText</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>originalTextNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a5f51481d275b38d31464fa71920b6237" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateProport</definition>
+        <argsstring>(pugi::xml_node proportNode)</argsstring>
+        <name>CreateProport</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>proportNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="77" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1aa79d054105337beb0dcc572dc1741f1c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateNote</definition>
+        <argsstring>(pugi::xml_node noteNode)</argsstring>
+        <name>CreateNote</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>noteNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="78" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1ac4dd691bacf6452715824bf938f4484f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateRest</definition>
+        <argsstring>(pugi::xml_node restNode)</argsstring>
+        <name>CreateRest</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>restNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="79" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a59189809e3e6b5f82b5bf49b22af540c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::CmmeInput::CreateVerse</definition>
+        <argsstring>(pugi::xml_node verseNode)</argsstring>
+        <name>CreateVerse</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>verseNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="81" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1a460975651aec1d73d695232c0597bf33" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>data_DURATION</type>
+        <definition>data_DURATION vrv::CmmeInput::ReadDuration</definition>
+        <argsstring>(pugi::xml_node durationNode, int &amp;num, int &amp;numbase) const</argsstring>
+        <name>ReadDuration</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>durationNode</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>numbase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="83" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cmme_input_1ab7555c6804741edc6a82ab78d53c33e9" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::CmmeInput::IsClef</definition>
+        <argsstring>(pugi::xml_node clefNode) const</argsstring>
+        <name>IsClef</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>clefNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="84" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>vrv::Input</label>
+        <link refid="classvrv_1_1_input"/>
+      </node>
+      <node id="1">
+        <label>vrv::CmmeInput</label>
+        <link refid="classvrv_1_1_cmme_input"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>vrv::Doc</label>
+        <link refid="classvrv_1_1_doc"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>m_selectionFollowing</edgelabel>
+          <edgelabel>m_selectionPreceding</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>m_expansionMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vrv::PageElement</label>
+        <link refid="classvrv_1_1_page_element"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>AttMultinumMeasures</label>
+      </node>
+      <node id="15">
+        <label>vrv::ScoreDefElement</label>
+        <link refid="classvrv_1_1_score_def_element"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>AttSystems</label>
+      </node>
+      <node id="18">
+        <label>AttBarring</label>
+      </node>
+      <node id="7">
+        <label>vrv::Score</label>
+        <link refid="classvrv_1_1_score"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vrv::Input</label>
+        <link refid="classvrv_1_1_input"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_doc</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>AttDistances</label>
+      </node>
+      <node id="9">
+        <label>AttTyped</label>
+      </node>
+      <node id="5">
+        <label>vrv::BoundingBox</label>
+        <link refid="classvrv_1_1_bounding_box"/>
+      </node>
+      <node id="16">
+        <label>vrv::ScoreDefInterface</label>
+        <link refid="classvrv_1_1_score_def_interface"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>AttTuning</label>
+      </node>
+      <node id="17">
+        <label>vrv::Interface</label>
+        <link refid="classvrv_1_1_interface"/>
+      </node>
+      <node id="1">
+        <label>vrv::CmmeInput</label>
+        <link refid="classvrv_1_1_cmme_input"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>AttMmTempo</label>
+      </node>
+      <node id="22">
+        <label>AttMidiTempo</label>
+      </node>
+      <node id="31">
+        <label>AttEndings</label>
+      </node>
+      <node id="27">
+        <label>AttSpacing</label>
+      </node>
+      <node id="10">
+        <label>vrv::PageMilestoneInterface</label>
+        <link refid="classvrv_1_1_page_milestone_interface"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>m_end</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>AttOctaveDefault</label>
+      </node>
+      <node id="11">
+        <label>vrv::PageMilestoneEnd</label>
+        <link refid="classvrv_1_1_page_milestone_end"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_start</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vrv::ExpansionMap</label>
+        <link refid="classvrv_1_1_expansion_map"/>
+      </node>
+      <node id="20">
+        <label>AttLyricStyle</label>
+      </node>
+      <node id="19">
+        <label>AttDurationDefault</label>
+      </node>
+      <node id="14">
+        <label>vrv::ScoreDef</label>
+        <link refid="classvrv_1_1_score_def"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>AttOptimization</label>
+      </node>
+      <node id="26">
+        <label>AttPianoPedals</label>
+      </node>
+      <node id="4">
+        <label>vrv::Object</label>
+        <link refid="classvrv_1_1_object"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>AttMeasureNumbers</label>
+      </node>
+      <node id="29">
+        <label>vrv::ObjectListInterface</label>
+        <link refid="classvrv_1_1_object_list_interface"/>
+      </node>
+      <node id="6">
+        <label>vrv::Page</label>
+        <link refid="classvrv_1_1_page"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>m_score</edgelabel>
+          <edgelabel>m_scoreEnd</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>m_drawingScoreDef</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>AttTimeBase</label>
+      </node>
+      <node id="13">
+        <label>AttNNumberLike</label>
+      </node>
+      <node id="12">
+        <label>AttLabelled</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" line="48" column="29" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iocmme.h" bodystart="48" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classvrv_1_1_cmme_input_1ad47c4fc57228610428353a9a0cf7b2c1" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>AsInt</name></member>
+      <member refid="classvrv_1_1_cmme_input_1ae2216351c6dfd83ebdce529c4fc9e333" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>AsString</name></member>
+      <member refid="classvrv_1_1_cmme_input_1aa25d354ded0f3a0ed9e10cbf383d4f9a" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>ChildAsInt</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a92ced82f4c5f1b5662a58f71daa04b6f" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>ChildAsString</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a847fae6758850df9282dd94aba93bb07" prot="public" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CmmeInput</name></member>
+      <member refid="classvrv_1_1_cmme_input_1ae9480eed4e79a23a8eac4391608a297b" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateAccid</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a94f2c72784d4180075f30b5887d1deab" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateApp</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a7141fce40600e286fd50bc93afd0f98e" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateBarline</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a5e32fa9d90ef603edbd402587cf5370b" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateBreak</name></member>
+      <member refid="classvrv_1_1_cmme_input_1ae01b0ab439d803ce9c4c5801230403c6" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateChord</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a4b48ee8fc77f292a1e11783bc6b20dae" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateClef</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a6fd36281a97ba1b2024bd367e5e4697f" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateCustos</name></member>
+      <member refid="classvrv_1_1_cmme_input_1ae5e7de5b61e302906a7a37b223a38a98" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateDot</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a07f5b6ad40b143889f0a75a6b57eda14" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateEllipsis</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a2c7c204a0b6faca8c0c005e6885f3477" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateKeySig</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a619b51506a8ee7134fac35de211d5bc7" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateLacuna</name></member>
+      <member refid="classvrv_1_1_cmme_input_1aabf788f32f71758f201d22639fa51919" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateLemOrRdg</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a4ada1f20bffd65df8c1353e55fe43db0" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateMensuration</name></member>
+      <member refid="classvrv_1_1_cmme_input_1aa79d054105337beb0dcc572dc1741f1c" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateNote</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a1741d68ada6c9ed0f9c4aa7d28a2d2fe" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateOriginalText</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a5f51481d275b38d31464fa71920b6237" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateProport</name></member>
+      <member refid="classvrv_1_1_cmme_input_1ac4dd691bacf6452715824bf938f4484f" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateRest</name></member>
+      <member refid="classvrv_1_1_cmme_input_1ab9c855d3d1c8e4287159ff291ce49eab" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateSection</name></member>
+      <member refid="classvrv_1_1_cmme_input_1ae0016b351e77db857664816f9956ee0b" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateStaff</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a59189809e3e6b5f82b5bf49b22af540c" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>CreateVerse</name></member>
+      <member refid="classvrv_1_1_input_1a762b1b42c1fba541b913b0569896b05b" prot="public" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>GetLayoutInformation</name></member>
+      <member refid="classvrv_1_1_input_1a1b05f76bf7cb69133dff8178b0b25b59" prot="public" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>GetOutputFormat</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a3182ef68f4c990d32189bf757cb38916" prot="public" virt="virtual"><scope>vrv::CmmeInput</scope><name>Import</name></member>
+      <member refid="classvrv_1_1_input_1ae8b21e281d8a92b924c4276b2b89c8b1" prot="public" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>Input</name></member>
+      <member refid="classvrv_1_1_cmme_input_1ab7555c6804741edc6a82ab78d53c33e9" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>IsClef</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a09a030d3f64f18e06eccd83aeb52415c" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>m_currentContainer</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a44ac6ec884d890a1e965489029897a53" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>m_currentNote</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a9f87993152963c493e45c650412e33bc" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>m_currentSection</name></member>
+      <member refid="classvrv_1_1_cmme_input_1aff94dff3807c7ca6565aa8e694e80fca" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>m_currentSignature</name></member>
+      <member refid="classvrv_1_1_input_1a19dccc7ba8689777b0f2558e8b839305" prot="protected" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>m_doc</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a33b971e19594c3f04466a1c34ed0e864" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>m_isInSyllable</name></member>
+      <member refid="classvrv_1_1_input_1a4682cae07963c3646b22850447bf9120" prot="protected" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>m_layoutInformation</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a0d8de5b85c687fe6eeee99e06ef08406" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>m_mensInfo</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a5e07bffcb1b819b2394a5ed2ab3c598e" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>m_mensInfos</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a50080a8389806dd62463dd8ac3d93ff6" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>m_numVoices</name></member>
+      <member refid="classvrv_1_1_input_1a12d911b9d747f92ef5b6e57253c06b3d" prot="protected" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>m_outformat</name></member>
+      <member refid="classvrv_1_1_cmme_input_1ae3ad39b4748246335de874573e80248b" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>m_score</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a2366abbce8447569581778985f6d1473" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>m_voices</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a460975651aec1d73d695232c0597bf33" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>ReadDuration</name></member>
+      <member refid="classvrv_1_1_cmme_input_1ae93702f7b89327c546ee0cb3a14f5e37" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>ReadEditorialCommentary</name></member>
+      <member refid="classvrv_1_1_cmme_input_1ab4913a491119a8ab945622256e2a792a" prot="private" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>ReadEvents</name></member>
+      <member refid="classvrv_1_1_input_1ad6290a083918bae0c62dac7795a9771d" prot="public" virt="non-virtual"><scope>vrv::CmmeInput</scope><name>SetOutputFormat</name></member>
+      <member refid="classvrv_1_1_cmme_input_1a66dc8b02d6302c87256471a211302337" prot="public" virt="virtual"><scope>vrv::CmmeInput</scope><name>~CmmeInput</name></member>
+      <member refid="classvrv_1_1_input_1ad97e045cb680e5d79ffb593da1def219" prot="public" virt="virtual"><scope>vrv::CmmeInput</scope><name>~Input</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

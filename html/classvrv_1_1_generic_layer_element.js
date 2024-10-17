@@ -9,6 +9,8 @@ var classvrv_1_1_generic_layer_element =
     [ "AcceptEnd", "classvrv_1_1_generic_layer_element.html#ab5b13c91e2bfd4bdc4978d0aa76677ef", null ],
     [ "Clone", "classvrv_1_1_generic_layer_element.html#a061e6fe177712b36b5974913fcb87b67", null ],
     [ "GetClassName", "classvrv_1_1_generic_layer_element.html#aa9c506590b1ea1aa1d11ca8f0cedeebf", null ],
+    [ "GetContent", "classvrv_1_1_generic_layer_element.html#afef9aee147a12c1e1328dec5b8c17e19", null ],
     [ "GetMEIName", "classvrv_1_1_generic_layer_element.html#a2c6af64f69ff4f4b0cd61ecc024bde55", null ],
-    [ "Reset", "classvrv_1_1_generic_layer_element.html#abc78f1d5fee2e18318b8ba2382d021df", null ]
+    [ "Reset", "classvrv_1_1_generic_layer_element.html#abc78f1d5fee2e18318b8ba2382d021df", null ],
+    [ "SetContent", "classvrv_1_1_generic_layer_element.html#a5ee7577a218ac85390664adcfb8207e4", null ]
 ];

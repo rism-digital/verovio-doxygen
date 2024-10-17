@@ -114,34 +114,37 @@ $(document).ready(function(){initNavTree('genericlayerelement_8h_source.html',''
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classvrv_1_1_generic_layer_element.html#a2c6af64f69ff4f4b0cd61ecc024bde55">   40</a></span>&#160;    std::string <a class="code" href="classvrv_1_1_generic_layer_element.html#a2c6af64f69ff4f4b0cd61ecc024bde55">GetMEIName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_meiName; }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_generic_layer_element.html#a3f1ebcf81044252ae237b72329453d34">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_generic_layer_element.html#a3f1ebcf81044252ae237b72329453d34">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::string m_className;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::string m_meiName;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classvrv_1_1_generic_layer_element.html#afef9aee147a12c1e1328dec5b8c17e19">   45</a></span>&#160;    std::string <a class="code" href="classvrv_1_1_generic_layer_element.html#afef9aee147a12c1e1328dec5b8c17e19">GetContent</a>() { <span class="keywordflow">return</span> m_content; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> SetContent(std::string content) { m_content = content; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_generic_layer_element.html#a3f1ebcf81044252ae237b72329453d34">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_generic_layer_element.html#a3f1ebcf81044252ae237b72329453d34">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::string m_className;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::string m_meiName;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::string m_content;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_generic_layer_element_html_a061e6fe177712b36b5974913fcb87b67"><div class="ttname"><a href="classvrv_1_1_generic_layer_element.html#a061e6fe177712b36b5974913fcb87b67">vrv::GenericLayerElement::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> genericlayerelement.h:32</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:59</div></div>
 <div class="ttc" id="aclassvrv_1_1_generic_layer_element_html"><div class="ttname"><a href="classvrv_1_1_generic_layer_element.html">vrv::GenericLayerElement</a></div><div class="ttdoc">This class holds generic elements existing within MEI &lt;layer&gt; but not supported by Verovio.</div><div class="ttdef"><b>Definition:</b> genericlayerelement.h:22</div></div>
-<div class="ttc" id="aclassvrv_1_1_functor_html"><div class="ttname"><a href="classvrv_1_1_functor.html">vrv::Functor</a></div><div class="ttdoc">This abstract class is the base class for all mutable functors.</div><div class="ttdef"><b>Definition:</b> functor.h:101</div></div>
-<div class="ttc" id="aclassvrv_1_1_const_functor_html"><div class="ttname"><a href="classvrv_1_1_const_functor.html">vrv::ConstFunctor</a></div><div class="ttdoc">This abstract class is the base class for all const functors.</div><div class="ttdef"><b>Definition:</b> functor.h:126</div></div>
+<div class="ttc" id="aclassvrv_1_1_generic_layer_element_html_afef9aee147a12c1e1328dec5b8c17e19"><div class="ttname"><a href="classvrv_1_1_generic_layer_element.html#afef9aee147a12c1e1328dec5b8c17e19">vrv::GenericLayerElement::GetContent</a></div><div class="ttdeci">std::string GetContent()</div><div class="ttdoc">Return the MEI element original name.</div><div class="ttdef"><b>Definition:</b> genericlayerelement.h:45</div></div>
 <div class="ttc" id="aclassvrv_1_1_generic_layer_element_html_a3f1ebcf81044252ae237b72329453d34"><div class="ttname"><a href="classvrv_1_1_generic_layer_element.html#a3f1ebcf81044252ae237b72329453d34">vrv::GenericLayerElement::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_generic_layer_element_html_abc78f1d5fee2e18318b8ba2382d021df"><div class="ttname"><a href="classvrv_1_1_generic_layer_element.html#abc78f1d5fee2e18318b8ba2382d021df">vrv::GenericLayerElement::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_generic_layer_element_html_a2c6af64f69ff4f4b0cd61ecc024bde55"><div class="ttname"><a href="classvrv_1_1_generic_layer_element.html#a2c6af64f69ff4f4b0cd61ecc024bde55">vrv::GenericLayerElement::GetMEIName</a></div><div class="ttdeci">std::string GetMEIName() const</div><div class="ttdoc">Return the MEI element original name.</div><div class="ttdef"><b>Definition:</b> genericlayerelement.h:40</div></div>
@@ -150,7 +153,7 @@ $(document).ready(function(){initNavTree('genericlayerelement_8h_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>genericlayerelement.h</b></li>
-    <li class="footer">Generated on Thu Oct 17 2024 10:15:20 for Verovio by
+    <li class="footer">Generated on Thu Oct 17 2024 12:40:19 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

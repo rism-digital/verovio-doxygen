@@ -192,252 +192,254 @@ $(document).ready(function(){initNavTree('setscoredeffunctor_8h_source.html','')
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    FunctorCode VisitMeasure(<a class="code" href="classvrv_1_1_measure.html">Measure</a> *measure) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    FunctorCode VisitMensur(<a class="code" href="classvrv_1_1_mensur.html">Mensur</a> *mensur) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    FunctorCode VisitPage(<a class="code" href="classvrv_1_1_page.html">Page</a> *page) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    FunctorCode VisitScore(<a class="code" href="classvrv_1_1_score.html">Score</a> *score) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    FunctorCode VisitScoreDef(<a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *scoreDef) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    FunctorCode VisitStaff(<a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    FunctorCode VisitStaffDef(<a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *staffDef) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    FunctorCode VisitStaffGrp(<a class="code" href="classvrv_1_1_staff_grp.html">StaffGrp</a> *staffGrp) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    FunctorCode VisitSystem(<a class="code" href="classvrv_1_1_system.html">System</a> *system) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">// The current score</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <a class="code" href="classvrv_1_1_score.html">Score</a> *m_currentScore;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="comment">// The current scoreDef</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *m_currentScoreDef;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="comment">// The current staffDef</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *m_currentStaffDef;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="comment">// The upcoming scoreDef</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> m_upcomingScoreDef;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="comment">// The previous measure (for setting cautionary scoreDef)</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="classvrv_1_1_measure.html">Measure</a> *m_previousMeasure;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="comment">// The current system (for setting the system scoreDef)</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="classvrv_1_1_system.html">System</a> *m_currentSystem;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">// Flag indicating whether full labels have to be drawn</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">bool</span> m_drawLabels;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="comment">// Flag indicating that the scoreDef restarts (draw brace and label)</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">bool</span> m_restart;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="comment">// Flag indicating if we already have a measure in the system</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">bool</span> m_hasMeasure;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;};</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">// ScoreDefOptimizeFunctor</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="classvrv_1_1_score_def_optimize_functor.html">  182</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_score_def_optimize_functor.html">ScoreDefOptimizeFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_doc_functor.html">DocFunctor</a> {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="classvrv_1_1_score_def_optimize_functor.html">ScoreDefOptimizeFunctor</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_score_def_optimize_functor.html">ScoreDefOptimizeFunctor</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="classvrv_1_1_score_def_optimize_functor.html#a6781d82c5f9be22a3f2cc3c078017bc8">  195</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_score_def_optimize_functor.html#a6781d82c5f9be22a3f2cc3c078017bc8">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment">     * Functor interface</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    FunctorCode VisitMeasure(<a class="code" href="classvrv_1_1_measure.html">Measure</a> *measure) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    FunctorCode VisitScore(<a class="code" href="classvrv_1_1_score.html">Score</a> *score) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    FunctorCode VisitStaff(<a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    FunctorCode VisitStaffGrpEnd(<a class="code" href="classvrv_1_1_staff_grp.html">StaffGrp</a> *staffGrp) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    FunctorCode VisitSystem(<a class="code" href="classvrv_1_1_system.html">System</a> *system) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    FunctorCode VisitSystemEnd(<a class="code" href="classvrv_1_1_system.html">System</a> *system) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="comment">// The current scoreDef</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *m_currentScoreDef;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="comment">// Flag indicating if we are optimizing encoded layout</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordtype">bool</span> m_encoded;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="comment">// Flag indicating if we consider the first scoreDef</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">bool</span> m_firstScoreDef;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="comment">// Flag indicating if a Fermata element is present</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">bool</span> m_hasFermata;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="comment">// Flag indicating if a Tempo element is present</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordtype">bool</span> m_hasTempo;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;};</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">// SetCautionaryScoreDefFunctor</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="classvrv_1_1_set_cautionary_score_def_functor.html">  235</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_set_cautionary_score_def_functor.html">SetCautionaryScoreDefFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_functor.html">Functor</a> {</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <a class="code" href="classvrv_1_1_set_cautionary_score_def_functor.html">SetCautionaryScoreDefFunctor</a>(<a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *currentScoreDef);</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_set_cautionary_score_def_functor.html">SetCautionaryScoreDefFunctor</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="classvrv_1_1_set_cautionary_score_def_functor.html#a591569889248de35c550144f9cd6c36f">  248</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_set_cautionary_score_def_functor.html#a591569889248de35c550144f9cd6c36f">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment">     * Functor interface</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    FunctorCode VisitObject(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="comment">// The current scoreDef</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *m_currentScoreDef;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="comment">// The current staffDef</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *m_currentStaffDef;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;};</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">// ScoreDefSetGrpSymFunctor</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="classvrv_1_1_score_def_set_grp_sym_functor.html">  277</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_score_def_set_grp_sym_functor.html">ScoreDefSetGrpSymFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_functor.html">Functor</a> {</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <a class="code" href="classvrv_1_1_score_def_set_grp_sym_functor.html">ScoreDefSetGrpSymFunctor</a>();</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_score_def_set_grp_sym_functor.html">ScoreDefSetGrpSymFunctor</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno"><a class="line" href="classvrv_1_1_score_def_set_grp_sym_functor.html#a3a2e58a0bef5ff65f00f1a48e7f04167">  290</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_score_def_set_grp_sym_functor.html#a3a2e58a0bef5ff65f00f1a48e7f04167">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment">     * Functor interface</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    FunctorCode VisitGrpSym(<a class="code" href="classvrv_1_1_grp_sym.html">GrpSym</a> *grpSym) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    FunctorCode VisitSystem(<a class="code" href="classvrv_1_1_system.html">System</a> *system) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;};</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment">// ScoreDefUnsetCurrentFunctor</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
-<div class="line"><a name="l00317"></a><span class="lineno"><a class="line" href="classvrv_1_1_score_def_unset_current_functor.html">  317</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_score_def_unset_current_functor.html">ScoreDefUnsetCurrentFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_functor.html">Functor</a> {</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <a class="code" href="classvrv_1_1_score_def_unset_current_functor.html">ScoreDefUnsetCurrentFunctor</a>();</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_score_def_unset_current_functor.html">ScoreDefUnsetCurrentFunctor</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="classvrv_1_1_score_def_unset_current_functor.html#af41a6608fc01280bc848294b68f0e94d">  330</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_score_def_unset_current_functor.html#af41a6608fc01280bc848294b68f0e94d">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment">     * Functor interface</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    FunctorCode VisitAlignmentReference(<a class="code" href="classvrv_1_1_alignment_reference.html">AlignmentReference</a> *alignmentReference) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    FunctorCode VisitLayer(<a class="code" href="classvrv_1_1_layer.html">Layer</a> *layer) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    FunctorCode VisitMeasure(<a class="code" href="classvrv_1_1_measure.html">Measure</a> *measure) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    FunctorCode VisitPage(<a class="code" href="classvrv_1_1_page.html">Page</a> *page) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    FunctorCode VisitStaff(<a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    FunctorCode VisitSystem(<a class="code" href="classvrv_1_1_system.html">System</a> *system) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;};</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment">// SetStaffDefRedrawFlagsFunctor</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="keyword">enum</span> StaffDefRedrawFlags {</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    REDRAW_CLEF = 0x1,</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    REDRAW_KEYSIG = 0x2,</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    REDRAW_MENSUR = 0x4,</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    REDRAW_METERSIG = 0x8,</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    REDRAW_METERSIGGRP = 0x10,</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="comment">// all flags</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    REDRAW_ALL = REDRAW_CLEF | REDRAW_KEYSIG | REDRAW_MENSUR | REDRAW_METERSIG | REDRAW_METERSIGGRP,</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    FORCE_REDRAW = 0x100</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;};</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
-<div class="line"><a name="l00374"></a><span class="lineno"><a class="line" href="classvrv_1_1_set_staff_def_redraw_flags_functor.html">  374</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_set_staff_def_redraw_flags_functor.html">SetStaffDefRedrawFlagsFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_functor.html">Functor</a> {</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <a class="code" href="classvrv_1_1_set_staff_def_redraw_flags_functor.html">SetStaffDefRedrawFlagsFunctor</a>(<span class="keywordtype">int</span> redrawFlags);</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_set_staff_def_redraw_flags_functor.html">SetStaffDefRedrawFlagsFunctor</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno"><a class="line" href="classvrv_1_1_set_staff_def_redraw_flags_functor.html#a0e56d2c32dd56bae71de88c31ada766d">  387</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_set_staff_def_redraw_flags_functor.html#a0e56d2c32dd56bae71de88c31ada766d">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment">     * Functor interface</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    FunctorCode VisitStaffDef(<a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *staffDef) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="comment">// The staffDef redraw flags</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keywordtype">int</span> m_redrawFlags;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;};</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="preprocessor">#endif // __VRV_SETSCOREDEFFUNCTOR_H__</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    FunctorCode VisitProport(<a class="code" href="classvrv_1_1_proport.html">Proport</a> *proport) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    FunctorCode VisitScore(<a class="code" href="classvrv_1_1_score.html">Score</a> *score) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    FunctorCode VisitScoreDef(<a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *scoreDef) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    FunctorCode VisitStaff(<a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    FunctorCode VisitStaffDef(<a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *staffDef) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    FunctorCode VisitStaffGrp(<a class="code" href="classvrv_1_1_staff_grp.html">StaffGrp</a> *staffGrp) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    FunctorCode VisitSystem(<a class="code" href="classvrv_1_1_system.html">System</a> *system) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// The current score</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <a class="code" href="classvrv_1_1_score.html">Score</a> *m_currentScore;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="comment">// The current scoreDef</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *m_currentScoreDef;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="comment">// The current staffDef</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *m_currentStaffDef;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="comment">// The upcoming scoreDef</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> m_upcomingScoreDef;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">// The previous measure (for setting cautionary scoreDef)</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="classvrv_1_1_measure.html">Measure</a> *m_previousMeasure;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="comment">// The current system (for setting the system scoreDef)</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <a class="code" href="classvrv_1_1_system.html">System</a> *m_currentSystem;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">// Flag indicating whether full labels have to be drawn</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">bool</span> m_drawLabels;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="comment">// Flag indicating that the scoreDef restarts (draw brace and label)</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">bool</span> m_restart;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="comment">// Flag indicating if we already have a measure in the system</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">bool</span> m_hasMeasure;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;};</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">// ScoreDefOptimizeFunctor</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classvrv_1_1_score_def_optimize_functor.html">  183</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_score_def_optimize_functor.html">ScoreDefOptimizeFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_doc_functor.html">DocFunctor</a> {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <a class="code" href="classvrv_1_1_score_def_optimize_functor.html">ScoreDefOptimizeFunctor</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_score_def_optimize_functor.html">ScoreDefOptimizeFunctor</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="classvrv_1_1_score_def_optimize_functor.html#a6781d82c5f9be22a3f2cc3c078017bc8">  196</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_score_def_optimize_functor.html#a6781d82c5f9be22a3f2cc3c078017bc8">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">     * Functor interface</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    FunctorCode VisitMeasure(<a class="code" href="classvrv_1_1_measure.html">Measure</a> *measure) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    FunctorCode VisitScore(<a class="code" href="classvrv_1_1_score.html">Score</a> *score) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    FunctorCode VisitStaff(<a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    FunctorCode VisitStaffGrpEnd(<a class="code" href="classvrv_1_1_staff_grp.html">StaffGrp</a> *staffGrp) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    FunctorCode VisitSystem(<a class="code" href="classvrv_1_1_system.html">System</a> *system) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    FunctorCode VisitSystemEnd(<a class="code" href="classvrv_1_1_system.html">System</a> *system) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="comment">// The current scoreDef</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *m_currentScoreDef;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="comment">// Flag indicating if we are optimizing encoded layout</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">bool</span> m_encoded;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="comment">// Flag indicating if we consider the first scoreDef</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">bool</span> m_firstScoreDef;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="comment">// Flag indicating if a Fermata element is present</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordtype">bool</span> m_hasFermata;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="comment">// Flag indicating if a Tempo element is present</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordtype">bool</span> m_hasTempo;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;};</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">// SetCautionaryScoreDefFunctor</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="classvrv_1_1_set_cautionary_score_def_functor.html">  236</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_set_cautionary_score_def_functor.html">SetCautionaryScoreDefFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_functor.html">Functor</a> {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <a class="code" href="classvrv_1_1_set_cautionary_score_def_functor.html">SetCautionaryScoreDefFunctor</a>(<a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *currentScoreDef);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_set_cautionary_score_def_functor.html">SetCautionaryScoreDefFunctor</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="classvrv_1_1_set_cautionary_score_def_functor.html#a591569889248de35c550144f9cd6c36f">  249</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_set_cautionary_score_def_functor.html#a591569889248de35c550144f9cd6c36f">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">     * Functor interface</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    FunctorCode VisitObject(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="comment">// The current scoreDef</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *m_currentScoreDef;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="comment">// The current staffDef</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *m_currentStaffDef;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;};</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">// ScoreDefSetGrpSymFunctor</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno"><a class="line" href="classvrv_1_1_score_def_set_grp_sym_functor.html">  278</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_score_def_set_grp_sym_functor.html">ScoreDefSetGrpSymFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_functor.html">Functor</a> {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <a class="code" href="classvrv_1_1_score_def_set_grp_sym_functor.html">ScoreDefSetGrpSymFunctor</a>();</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_score_def_set_grp_sym_functor.html">ScoreDefSetGrpSymFunctor</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="classvrv_1_1_score_def_set_grp_sym_functor.html#a3a2e58a0bef5ff65f00f1a48e7f04167">  291</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_score_def_set_grp_sym_functor.html#a3a2e58a0bef5ff65f00f1a48e7f04167">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">     * Functor interface</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    FunctorCode VisitGrpSym(<a class="code" href="classvrv_1_1_grp_sym.html">GrpSym</a> *grpSym) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    FunctorCode VisitSystem(<a class="code" href="classvrv_1_1_system.html">System</a> *system) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;};</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment">// ScoreDefUnsetCurrentFunctor</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="classvrv_1_1_score_def_unset_current_functor.html">  318</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_score_def_unset_current_functor.html">ScoreDefUnsetCurrentFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_functor.html">Functor</a> {</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <a class="code" href="classvrv_1_1_score_def_unset_current_functor.html">ScoreDefUnsetCurrentFunctor</a>();</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_score_def_unset_current_functor.html">ScoreDefUnsetCurrentFunctor</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno"><a class="line" href="classvrv_1_1_score_def_unset_current_functor.html#af41a6608fc01280bc848294b68f0e94d">  331</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_score_def_unset_current_functor.html#af41a6608fc01280bc848294b68f0e94d">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment">     * Functor interface</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    FunctorCode VisitAlignmentReference(<a class="code" href="classvrv_1_1_alignment_reference.html">AlignmentReference</a> *alignmentReference) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    FunctorCode VisitLayer(<a class="code" href="classvrv_1_1_layer.html">Layer</a> *layer) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    FunctorCode VisitMeasure(<a class="code" href="classvrv_1_1_measure.html">Measure</a> *measure) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    FunctorCode VisitPage(<a class="code" href="classvrv_1_1_page.html">Page</a> *page) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    FunctorCode VisitStaff(<a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    FunctorCode VisitSystem(<a class="code" href="classvrv_1_1_system.html">System</a> *system) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;};</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">// SetStaffDefRedrawFlagsFunctor</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="keyword">enum</span> StaffDefRedrawFlags {</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    REDRAW_CLEF = 0x1,</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    REDRAW_KEYSIG = 0x2,</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    REDRAW_MENSUR = 0x4,</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    REDRAW_METERSIG = 0x8,</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    REDRAW_METERSIGGRP = 0x10,</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="comment">// all flags</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    REDRAW_ALL = REDRAW_CLEF | REDRAW_KEYSIG | REDRAW_MENSUR | REDRAW_METERSIG | REDRAW_METERSIGGRP,</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    FORCE_REDRAW = 0x100</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;};</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
+<div class="line"><a name="l00375"></a><span class="lineno"><a class="line" href="classvrv_1_1_set_staff_def_redraw_flags_functor.html">  375</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_set_staff_def_redraw_flags_functor.html">SetStaffDefRedrawFlagsFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_functor.html">Functor</a> {</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <a class="code" href="classvrv_1_1_set_staff_def_redraw_flags_functor.html">SetStaffDefRedrawFlagsFunctor</a>(<span class="keywordtype">int</span> redrawFlags);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_set_staff_def_redraw_flags_functor.html">SetStaffDefRedrawFlagsFunctor</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="classvrv_1_1_set_staff_def_redraw_flags_functor.html#a0e56d2c32dd56bae71de88c31ada766d">  388</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_set_staff_def_redraw_flags_functor.html#a0e56d2c32dd56bae71de88c31ada766d">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">     * Functor interface</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    FunctorCode VisitStaffDef(<a class="code" href="classvrv_1_1_staff_def.html">StaffDef</a> *staffDef) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="comment">// The staffDef redraw flags</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="keywordtype">int</span> m_redrawFlags;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;};</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor">#endif // __VRV_SETSCOREDEFFUNCTOR_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_staff_def_html"><div class="ttname"><a href="classvrv_1_1_staff_def.html">vrv::StaffDef</a></div><div class="ttdoc">This class represents a MEI staffDef.</div><div class="ttdef"><b>Definition:</b> staffdef.h:25</div></div>
 <div class="ttc" id="aclassvrv_1_1_staff_html"><div class="ttname"><a href="classvrv_1_1_staff.html">vrv::Staff</a></div><div class="ttdoc">This class represents a staff in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> staff.h:74</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html"><div class="ttname"><a href="classvrv_1_1_measure.html">vrv::Measure</a></div><div class="ttdoc">This class represents a measure in a page-based score (Doc).</div><div class="ttdef"><b>Definition:</b> measure.h:37</div></div>
 <div class="ttc" id="aclassvrv_1_1_score_def_set_current_functor_html_a8b72c1f11fb3c26d5f856419c22cf49b"><div class="ttname"><a href="classvrv_1_1_score_def_set_current_functor.html#a8b72c1f11fb3c26d5f856419c22cf49b">vrv::ScoreDefSetCurrentFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:127</div></div>
-<div class="ttc" id="aclassvrv_1_1_score_def_set_grp_sym_functor_html"><div class="ttname"><a href="classvrv_1_1_score_def_set_grp_sym_functor.html">vrv::ScoreDefSetGrpSymFunctor</a></div><div class="ttdoc">This class prepares the group symbol starting and ending staffDefs for drawing.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:277</div></div>
-<div class="ttc" id="aclassvrv_1_1_score_def_unset_current_functor_html"><div class="ttname"><a href="classvrv_1_1_score_def_unset_current_functor.html">vrv::ScoreDefUnsetCurrentFunctor</a></div><div class="ttdoc">This class unsets the initial scoreDef for each system and measure.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:317</div></div>
+<div class="ttc" id="aclassvrv_1_1_score_def_set_grp_sym_functor_html"><div class="ttname"><a href="classvrv_1_1_score_def_set_grp_sym_functor.html">vrv::ScoreDefSetGrpSymFunctor</a></div><div class="ttdoc">This class prepares the group symbol starting and ending staffDefs for drawing.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:278</div></div>
+<div class="ttc" id="aclassvrv_1_1_score_def_unset_current_functor_html"><div class="ttname"><a href="classvrv_1_1_score_def_unset_current_functor.html">vrv::ScoreDefUnsetCurrentFunctor</a></div><div class="ttdoc">This class unsets the initial scoreDef for each system and measure.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:318</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:40</div></div>
-<div class="ttc" id="aclassvrv_1_1_score_def_optimize_functor_html"><div class="ttname"><a href="classvrv_1_1_score_def_optimize_functor.html">vrv::ScoreDefOptimizeFunctor</a></div><div class="ttdoc">This class optimizes the scoreDef for each system.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:182</div></div>
+<div class="ttc" id="aclassvrv_1_1_score_def_optimize_functor_html"><div class="ttname"><a href="classvrv_1_1_score_def_optimize_functor.html">vrv::ScoreDefOptimizeFunctor</a></div><div class="ttdoc">This class optimizes the scoreDef for each system.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:183</div></div>
 <div class="ttc" id="aclassvrv_1_1_meter_sig_html"><div class="ttname"><a href="classvrv_1_1_meter_sig.html">vrv::MeterSig</a></div><div class="ttdoc">This class models the MEI &lt;meterSig&gt; element.</div><div class="ttdef"><b>Definition:</b> metersig.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_score_def_set_current_page_functor_html_a684ce15cb53b9337c3b1dcc011c38024"><div class="ttname"><a href="classvrv_1_1_score_def_set_current_page_functor.html#a684ce15cb53b9337c3b1dcc011c38024">vrv::ScoreDefSetCurrentPageFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:84</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:59</div></div>
-<div class="ttc" id="aclassvrv_1_1_score_def_optimize_functor_html_a6781d82c5f9be22a3f2cc3c078017bc8"><div class="ttname"><a href="classvrv_1_1_score_def_optimize_functor.html#a6781d82c5f9be22a3f2cc3c078017bc8">vrv::ScoreDefOptimizeFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:195</div></div>
+<div class="ttc" id="aclassvrv_1_1_score_def_optimize_functor_html_a6781d82c5f9be22a3f2cc3c078017bc8"><div class="ttname"><a href="classvrv_1_1_score_def_optimize_functor.html#a6781d82c5f9be22a3f2cc3c078017bc8">vrv::ScoreDefOptimizeFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:196</div></div>
 <div class="ttc" id="aclassvrv_1_1_meter_sig_grp_html"><div class="ttname"><a href="classvrv_1_1_meter_sig_grp.html">vrv::MeterSigGrp</a></div><div class="ttdoc">This class represents a MEI meterSigGrp.</div><div class="ttdef"><b>Definition:</b> metersiggrp.h:28</div></div>
-<div class="ttc" id="aclassvrv_1_1_score_def_set_grp_sym_functor_html_a3a2e58a0bef5ff65f00f1a48e7f04167"><div class="ttname"><a href="classvrv_1_1_score_def_set_grp_sym_functor.html#a3a2e58a0bef5ff65f00f1a48e7f04167">vrv::ScoreDefSetGrpSymFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:290</div></div>
-<div class="ttc" id="aclassvrv_1_1_score_def_unset_current_functor_html_af41a6608fc01280bc848294b68f0e94d"><div class="ttname"><a href="classvrv_1_1_score_def_unset_current_functor.html#af41a6608fc01280bc848294b68f0e94d">vrv::ScoreDefUnsetCurrentFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:330</div></div>
+<div class="ttc" id="aclassvrv_1_1_score_def_set_grp_sym_functor_html_a3a2e58a0bef5ff65f00f1a48e7f04167"><div class="ttname"><a href="classvrv_1_1_score_def_set_grp_sym_functor.html#a3a2e58a0bef5ff65f00f1a48e7f04167">vrv::ScoreDefSetGrpSymFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:291</div></div>
+<div class="ttc" id="aclassvrv_1_1_score_def_unset_current_functor_html_af41a6608fc01280bc848294b68f0e94d"><div class="ttname"><a href="classvrv_1_1_score_def_unset_current_functor.html#af41a6608fc01280bc848294b68f0e94d">vrv::ScoreDefUnsetCurrentFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:331</div></div>
 <div class="ttc" id="aclassvrv_1_1_mensur_html"><div class="ttname"><a href="classvrv_1_1_mensur.html">vrv::Mensur</a></div><div class="ttdoc">This class models the MEI &lt;mensur&gt; element.</div><div class="ttdef"><b>Definition:</b> mensur.h:27</div></div>
-<div class="ttc" id="aclassvrv_1_1_alignment_reference_html"><div class="ttname"><a href="classvrv_1_1_alignment_reference.html">vrv::AlignmentReference</a></div><div class="ttdoc">This class stores a references of LayerElements for a staff.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:280</div></div>
-<div class="ttc" id="aclassvrv_1_1_set_cautionary_score_def_functor_html"><div class="ttname"><a href="classvrv_1_1_set_cautionary_score_def_functor.html">vrv::SetCautionaryScoreDefFunctor</a></div><div class="ttdoc">This class sets the cautionary scoreDef wherever needed.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:235</div></div>
-<div class="ttc" id="aclassvrv_1_1_set_staff_def_redraw_flags_functor_html_a0e56d2c32dd56bae71de88c31ada766d"><div class="ttname"><a href="classvrv_1_1_set_staff_def_redraw_flags_functor.html#a0e56d2c32dd56bae71de88c31ada766d">vrv::SetStaffDefRedrawFlagsFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:387</div></div>
+<div class="ttc" id="aclassvrv_1_1_alignment_reference_html"><div class="ttname"><a href="classvrv_1_1_alignment_reference.html">vrv::AlignmentReference</a></div><div class="ttdoc">This class stores a references of LayerElements for a staff.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:282</div></div>
+<div class="ttc" id="aclassvrv_1_1_set_cautionary_score_def_functor_html"><div class="ttname"><a href="classvrv_1_1_set_cautionary_score_def_functor.html">vrv::SetCautionaryScoreDefFunctor</a></div><div class="ttdoc">This class sets the cautionary scoreDef wherever needed.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:236</div></div>
+<div class="ttc" id="aclassvrv_1_1_set_staff_def_redraw_flags_functor_html_a0e56d2c32dd56bae71de88c31ada766d"><div class="ttname"><a href="classvrv_1_1_set_staff_def_redraw_flags_functor.html#a0e56d2c32dd56bae71de88c31ada766d">vrv::SetStaffDefRedrawFlagsFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:388</div></div>
 <div class="ttc" id="aclassvrv_1_1_clef_html"><div class="ttname"><a href="classvrv_1_1_clef.html">vrv::Clef</a></div><div class="ttdoc">This class models the MEI &lt;clef&gt; element.</div><div class="ttdef"><b>Definition:</b> clef.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_html"><div class="ttname"><a href="classvrv_1_1_functor.html">vrv::Functor</a></div><div class="ttdoc">This abstract class is the base class for all mutable functors.</div><div class="ttdef"><b>Definition:</b> functor.h:101</div></div>
+<div class="ttc" id="aclassvrv_1_1_proport_html"><div class="ttname"><a href="classvrv_1_1_proport.html">vrv::Proport</a></div><div class="ttdoc">This class models the MEI &lt;proport&gt; element.</div><div class="ttdef"><b>Definition:</b> proport.h:23</div></div>
 <div class="ttc" id="aclassvrv_1_1_page_html"><div class="ttname"><a href="classvrv_1_1_page.html">vrv::Page</a></div><div class="ttdoc">This class represents a page in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> page.h:31</div></div>
 <div class="ttc" id="aclassvrv_1_1_replace_drawing_values_in_staff_def_functor_html_aae06c24dbc77ad0589b26828ea1d2237"><div class="ttname"><a href="classvrv_1_1_replace_drawing_values_in_staff_def_functor.html#aae06c24dbc77ad0589b26828ea1d2237">vrv::ReplaceDrawingValuesInStaffDefFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:36</div></div>
-<div class="ttc" id="aclassvrv_1_1_set_staff_def_redraw_flags_functor_html"><div class="ttname"><a href="classvrv_1_1_set_staff_def_redraw_flags_functor.html">vrv::SetStaffDefRedrawFlagsFunctor</a></div><div class="ttdoc">This class sets drawing flags for the StaffDef for indicating whether clefs, keysigs,...</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:374</div></div>
+<div class="ttc" id="aclassvrv_1_1_set_staff_def_redraw_flags_functor_html"><div class="ttname"><a href="classvrv_1_1_set_staff_def_redraw_flags_functor.html">vrv::SetStaffDefRedrawFlagsFunctor</a></div><div class="ttdoc">This class sets drawing flags for the StaffDef for indicating whether clefs, keysigs,...</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:375</div></div>
 <div class="ttc" id="aclassvrv_1_1_system_html"><div class="ttname"><a href="classvrv_1_1_system.html">vrv::System</a></div><div class="ttdoc">This class represents a system in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> system.h:36</div></div>
-<div class="ttc" id="aclassvrv_1_1_set_cautionary_score_def_functor_html_a591569889248de35c550144f9cd6c36f"><div class="ttname"><a href="classvrv_1_1_set_cautionary_score_def_functor.html#a591569889248de35c550144f9cd6c36f">vrv::SetCautionaryScoreDefFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:248</div></div>
+<div class="ttc" id="aclassvrv_1_1_set_cautionary_score_def_functor_html_a591569889248de35c550144f9cd6c36f"><div class="ttname"><a href="classvrv_1_1_set_cautionary_score_def_functor.html#a591569889248de35c550144f9cd6c36f">vrv::SetCautionaryScoreDefFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:249</div></div>
 <div class="ttc" id="aclassvrv_1_1_grp_sym_html"><div class="ttname"><a href="classvrv_1_1_grp_sym.html">vrv::GrpSym</a></div><div class="ttdoc">This class represents a MEI grpSym.</div><div class="ttdef"><b>Definition:</b> grpsym.h:25</div></div>
 <div class="ttc" id="aclassvrv_1_1_score_def_html"><div class="ttname"><a href="classvrv_1_1_score_def.html">vrv::ScoreDef</a></div><div class="ttdoc">This class represents a MEI scoreDef.</div><div class="ttdef"><b>Definition:</b> scoredef.h:130</div></div>
 <div class="ttc" id="aclassvrv_1_1_replace_drawing_values_in_staff_def_functor_html"><div class="ttname"><a href="classvrv_1_1_replace_drawing_values_in_staff_def_functor.html">vrv::ReplaceDrawingValuesInStaffDefFunctor</a></div><div class="ttdoc">This class sets the current drawing clef, key signature, etc.</div><div class="ttdef"><b>Definition:</b> setscoredeffunctor.h:22</div></div>
@@ -452,7 +454,7 @@ $(document).ready(function(){initNavTree('setscoredeffunctor_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>setscoredeffunctor.h</b></li>
-    <li class="footer">Generated on Thu Oct 17 2024 10:15:20 for Verovio by
+    <li class="footer">Generated on Thu Oct 17 2024 12:40:19 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
