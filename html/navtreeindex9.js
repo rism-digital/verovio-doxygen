@@ -1,8 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"classvrv_1_1_filters.html#ae201664dc9286334117f4dfc9f26023da70d5c589d08329d2a666ad0fc3a944f6":[1,0,0,152,0,1],
-"classvrv_1_1_filters.html#ae201664dc9286334117f4dfc9f26023dac5fc8c53f043d5df43f4c3e2c00805a1":[1,0,0,152,0,0],
-"classvrv_1_1_filters.html#afe371185686cf590fa12461dd65fd43f":[1,0,0,152,2],
 "classvrv_1_1_find_all_between_functor.html":[1,0,0,153],
 "classvrv_1_1_find_all_between_functor.html#a2d60e60a16bda213150c5b772bf9ed50":[1,0,0,153,2],
 "classvrv_1_1_find_all_between_functor.html#a8809ab5ef5de9b10ee1a09864fea430f":[1,0,0,153,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX9 =
 "classvrv_1_1_fraction.html#a5563d80988263170927b513eb38b8df9":[1,0,0,170,6],
 "classvrv_1_1_fraction.html#a8ee0ad9515afa2f646635735fbe46133":[1,0,0,170,0],
 "classvrv_1_1_fraction.html#a9c751b4e2d9cf8779b0b6a0ed1dc9f6e":[1,0,0,170,1],
-"classvrv_1_1_fraction.html#a9e450d676d4ea8a47530ff23739ec702":[1,0,0,170,10]
+"classvrv_1_1_fraction.html#a9e450d676d4ea8a47530ff23739ec702":[1,0,0,170,10],
+"classvrv_1_1_fraction.html#abc5b9512946155d481557c65b74647b2":[1,0,0,170,11],
+"classvrv_1_1_fraction.html#ac3142f465ea3f2ce947a6977ea3ed8ac":[1,0,0,170,13],
+"classvrv_1_1_fraction.html#afce78665c1707cf4fde426986da3befe":[1,0,0,170,5]
 };

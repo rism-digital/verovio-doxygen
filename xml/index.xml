@@ -194,6 +194,8 @@
     <member refid="classvrv_1_1_adjust_beams_functor_1a962f0d57f4779924b6f87de69f0898c3" kind="variable"><name>m_isOtherLayer</name></member>
     <member refid="classvrv_1_1_adjust_beams_functor_1ab9ac433ba1182781dccf38f3bc408d9b" kind="function"><name>ImplementsEndInterface</name></member>
     <member refid="classvrv_1_1_adjust_beams_functor_1a81ac70b79733f5da5c554d8b113f7b9f" kind="function"><name>GetOuterBeamInterface</name></member>
+    <member refid="classvrv_1_1_adjust_beams_functor_1a338cab4a332c8b6c2de2b4479fbb44b0" kind="function"><name>CalcLayerOverlap</name></member>
+    <member refid="classvrv_1_1_adjust_beams_functor_1ab172cb2eab6363972ba58a67cff5859f" kind="function"><name>AdjustOverlapToHalfUnit</name></member>
   </compound>
   <compound refid="classvrv_1_1_adjust_clef_changes_functor" kind="class"><name>vrv::AdjustClefChangesFunctor</name>
     <member refid="classvrv_1_1_adjust_clef_changes_functor_1a1a12a405e1788987081218746169a682" kind="function"><name>AdjustClefChangesFunctor</name></member>
@@ -897,7 +899,6 @@
     <member refid="classvrv_1_1_beam_1a26f7b2d176314772a13b06ec15d23758" kind="function"><name>IsTabBeam</name></member>
     <member refid="classvrv_1_1_beam_1a091ac4c2fb6cdd046b679e61069f638d" kind="function"><name>GetAdditionalBeamCount</name></member>
     <member refid="classvrv_1_1_beam_1a2b3cdfa137cce9ffc5df789eb8f063b7" kind="function"><name>FilterList</name></member>
-    <member refid="classvrv_1_1_beam_1ace52578a0183bd8725abe2c07e92d77a" kind="function"><name>SetElementShortening</name></member>
   </compound>
   <compound refid="classvrv_1_1_beam_drawing_interface" kind="class"><name>vrv::BeamDrawingInterface</name>
     <member refid="classvrv_1_1_beam_drawing_interface_1acb9893d7a46b9fd187813a3d2fe30d8b" kind="function"><name>BeamDrawingInterface</name></member>
@@ -944,7 +945,6 @@
     <member refid="classvrv_1_1_beam_element_coord_1a8ebefe39f00c7e96257969fa9f787914" kind="variable"><name>m_dur</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1ae86c87990d1a0fd3a79f340aafe31d6e" kind="variable"><name>m_breaksec</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1a0e6c6a71cb6bb0dc5cd0e299c8ecd7a3" kind="variable"><name>m_overlapMargin</name></member>
-    <member refid="classvrv_1_1_beam_element_coord_1ae0320bdb6103d0143f300623904b7282" kind="variable"><name>m_maxShortening</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1a722f671cf181576d13b9ad96e8a14e53" kind="variable"><name>m_centered</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1a0b6ef6f8b84ee38d9811e3860b0e408f" kind="variable"><name>m_beamRelativePlace</name></member>
     <member refid="classvrv_1_1_beam_element_coord_1a3024e5d8ba924a0f4e9bccfdaf5f41f8" kind="variable"><name>m_partialFlags</name></member>
@@ -3275,7 +3275,6 @@
     <member refid="classvrv_1_1_f_trem_1a270a3423f2b04333eb277f23fec99046" kind="function"><name>GetAdditionalBeamCount</name></member>
     <member refid="classvrv_1_1_f_trem_1acd5a1a4e0505f99639607998d30ed30d" kind="function"><name>GetFloatingBeamCount</name></member>
     <member refid="classvrv_1_1_f_trem_1abbe78501ed51f8dab707a01de18d4f0f" kind="function"><name>FilterList</name></member>
-    <member refid="classvrv_1_1_f_trem_1a00d6684b07e0ea53867fb915a77a1a41" kind="function"><name>SetElementShortening</name></member>
   </compound>
   <compound refid="classvrv_1_1_functor" kind="class"><name>vrv::Functor</name>
     <member refid="classvrv_1_1_functor_1a49b8e700f8f3b3b232d6a7e558438908" kind="function"><name>Functor</name></member>
@@ -4872,12 +4871,10 @@
     <member refid="classvrv_1_1_layer_element_1a39adc1a3bb53a8836b1dc8bf375d15a1" kind="function"><name>GenerateZoneBounds</name></member>
     <member refid="classvrv_1_1_layer_element_1ae4f035f3818e7a9ec44e80e5c7097e81" kind="function"><name>AdjustOverlappingLayers</name></member>
     <member refid="classvrv_1_1_layer_element_1a55718065d5951c44917fd1072df649df" kind="function"><name>CalcElementHorizontalOverlap</name></member>
-    <member refid="classvrv_1_1_layer_element_1ae89f22d40bd5303aea5eb58f0d84d149" kind="function"><name>SetElementShortening</name></member>
     <member refid="classvrv_1_1_layer_element_1a5cc66a12312b10a25f9bd0a1c4a857cd" kind="function"><name>GetDrawingStemMod</name></member>
     <member refid="classvrv_1_1_layer_element_1a88c53380f669585365356b17cbeaedb2" kind="function"><name>HasCrossStaff</name></member>
     <member refid="classvrv_1_1_layer_element_1afa714fc21d6337b9f3144741dd95efef" kind="function"><name>StemModToGlyph</name></member>
     <member refid="classvrv_1_1_layer_element_1a78700de97d76aca246ed070e737f3f20" kind="function"><name>CalcOptimalDotLocations</name></member>
-    <member refid="classvrv_1_1_layer_element_1abc8635c7eabf3227a42669edf6076f0d" kind="function"><name>CalcLayerOverlap</name></member>
     <member refid="classvrv_1_1_layer_element_1a998044536a4b57baf739bfbe7db67af8" kind="function"><name>GetElementsInUnison</name></member>
     <member refid="classvrv_1_1_layer_element_1a21212712fd5760874206bc0caff85b8c" kind="function"><name>CalcNoteLocations</name></member>
     <member refid="classvrv_1_1_layer_element_1a6faf15b51bf5716dea2e07e2d2cbfc1f" kind="function"><name>CalcDotLocations</name></member>
