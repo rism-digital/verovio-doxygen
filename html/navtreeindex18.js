@@ -1,7 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"classvrv_1_1_object.html#ac3fdcc01a8048f6758fd787d33ddef8a":[1,0,0,256,37],
-"classvrv_1_1_object.html#ac42744411cd519011fe914f200f6e0f5":[1,0,0,256,48],
 "classvrv_1_1_object.html#ac5b28a8625980d057d6cad83dbd52e26":[1,0,0,256,155],
 "classvrv_1_1_object.html#ac7063ea155c08f4e39e5c59b735f1d9e":[1,0,0,256,144],
 "classvrv_1_1_object.html#ac707920ee385b0c7bb52d4b0184e7e54":[1,0,0,256,63],
@@ -249,5 +247,7 @@ var NAVTREEINDEX18 =
 "classvrv_1_1_options.html":[1,0,0,269],
 "classvrv_1_1_options.html#a026f093b9f1623e8580e8d98be6ee6ce":[1,0,0,269,52],
 "classvrv_1_1_options.html#a02ded0c8e17a9eb4a2abaf311ca5603e":[1,0,0,269,49],
-"classvrv_1_1_options.html#a04d38d4149806f4713dd6be8370b7d61":[1,0,0,269,23]
+"classvrv_1_1_options.html#a04d38d4149806f4713dd6be8370b7d61":[1,0,0,269,23],
+"classvrv_1_1_options.html#a0803ac5fc1a56fea47ba279ae760f71f":[1,0,0,269,162],
+"classvrv_1_1_options.html#a09ce1fa8b5b0c00a179d9594bfca587e":[1,0,0,269,85]
 };

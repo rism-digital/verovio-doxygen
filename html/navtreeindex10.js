@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"classvrv_1_1_fraction.html#afce78665c1707cf4fde426986da3befe":[1,0,0,170,5],
 "classvrv_1_1_functor.html":[1,0,0,172],
 "classvrv_1_1_functor.html#a2459207d9593c751f7594d3029305290":[1,0,0,172,1],
 "classvrv_1_1_functor.html#a49b8e700f8f3b3b232d6a7e558438908":[1,0,0,172,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "classvrv_1_1_functor_interface.html#ade778f7530146d86bac890f40379b6a9":[1,0,0,174,173],
 "classvrv_1_1_functor_interface.html#adf1018282bd3813e5d5ec839edcec9da":[1,0,0,174,216],
 "classvrv_1_1_functor_interface.html#ae1bbff78d3348ca2a306d0760e54264c":[1,0,0,174,43],
-"classvrv_1_1_functor_interface.html#ae281c2c5e8c3b1737edfe5cc4dbb436c":[1,0,0,174,17],
-"classvrv_1_1_functor_interface.html#ae348fe9af74231d2f51124ac6c3379d7":[1,0,0,174,178]
+"classvrv_1_1_functor_interface.html#ae281c2c5e8c3b1737edfe5cc4dbb436c":[1,0,0,174,17]
 };

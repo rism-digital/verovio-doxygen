@@ -29,7 +29,7 @@ var searchData=
   ['hasidenticalpositioninterface_650',['HasIdenticalPositionInterface',['../classvrv_1_1_position_interface.html#a3312dbe1415b5eafb2762ffe2e612d54',1,'vrv::PositionInterface']]],
   ['hasinvisiblestaffbarlines_651',['HasInvisibleStaffBarlines',['../classvrv_1_1_measure.html#ad58b70aabbd1ea6dcfa17e11c3b8ae13',1,'vrv::Measure']]],
   ['haslayerdefwithlabel_652',['HasLayerDefWithLabel',['../classvrv_1_1_staff_def.html#a1223238d63db9b0f81bb9a3095c11b6f',1,'vrv::StaffDef']]],
-  ['hasledgerlines_653',['HasLedgerLines',['../classvrv_1_1_note.html#afa3895e8b0aacf42f2675fdde8a30c8d',1,'vrv::Note']]],
+  ['hasledgerlines_653',['HasLedgerLines',['../classvrv_1_1_position_interface.html#a6e8bf8831df746be05f4ce177c880e96',1,'vrv::PositionInterface']]],
   ['hasmixeddrawingstemdir_654',['HasMixedDrawingStemDir',['../classvrv_1_1_system.html#ac859406d686fedbf63ea12690af4a120',1,'vrv::System']]],
   ['hasmultiplelayer_655',['HasMultipleLayer',['../classvrv_1_1_alignment_reference.html#a9c1895942dd54bf9ac12b788dbf7570c',1,'vrv::AlignmentReference']]],
   ['hasnextlink_656',['HasNextLink',['../classvrv_1_1_linking_interface.html#a634bea817c5bf3e1c4e537a9d3165a63',1,'vrv::LinkingInterface']]],

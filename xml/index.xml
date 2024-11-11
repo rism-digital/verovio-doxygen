@@ -1386,9 +1386,11 @@
   <compound refid="classvrv_1_1_calc_ledger_lines_functor" kind="class"><name>vrv::CalcLedgerLinesFunctor</name>
     <member refid="classvrv_1_1_calc_ledger_lines_functor_1a8fa735d63227f8b75b90ac9989a4b612" kind="function"><name>CalcLedgerLinesFunctor</name></member>
     <member refid="classvrv_1_1_calc_ledger_lines_functor_1ae3a3e4c7e90f66d154499e19ef0e298f" kind="function"><name>~CalcLedgerLinesFunctor</name></member>
+    <member refid="classvrv_1_1_calc_ledger_lines_functor_1ab15b7ff3a51386b2c292c834487c6fc9" kind="function"><name>VisitAccid</name></member>
     <member refid="classvrv_1_1_calc_ledger_lines_functor_1a7551539a321be16e867f0dc1d31bcb8d" kind="function"><name>VisitNote</name></member>
     <member refid="classvrv_1_1_calc_ledger_lines_functor_1ae00b036dc1183de83be7a0beb4c72238" kind="function"><name>VisitStaffEnd</name></member>
     <member refid="classvrv_1_1_calc_ledger_lines_functor_1a46acada4a0d97d46d7058dbf1c2de6f0" kind="function"><name>ImplementsEndInterface</name></member>
+    <member refid="classvrv_1_1_calc_ledger_lines_functor_1a3e130ac9ebe8258f352132a47b03fe4a" kind="function"><name>CalcForLayerElement</name></member>
     <member refid="classvrv_1_1_calc_ledger_lines_functor_1a02441ce23fb972a67e371b478884a78e" kind="function"><name>AdjustLedgerLines</name></member>
   </compound>
   <compound refid="classvrv_1_1_calc_ligature_or_neume_pos_functor" kind="class"><name>vrv::CalcLigatureOrNeumePosFunctor</name>
@@ -6008,8 +6010,6 @@
     <member refid="classvrv_1_1_note_1ad5a3d098ac78d4c81e33f5738a33c26f" kind="function"><name>GetStemmedDrawingInterface</name></member>
     <member refid="classvrv_1_1_note_1a72a6d0881e4198532f4f6898e9d1b182" kind="function"><name>GetDrawingAccid</name></member>
     <member refid="classvrv_1_1_note_1a49e70a4d4699d44ec4199f285b038301" kind="function"><name>GetDrawingAccid</name></member>
-    <member refid="classvrv_1_1_note_1a28b46326ae7c510b1daaee0a243d325e" kind="function"><name>SetDrawingLoc</name></member>
-    <member refid="classvrv_1_1_note_1ab6a03a24edabc295b5c5c7aa6319e274" kind="function"><name>GetDrawingLoc</name></member>
     <member refid="classvrv_1_1_note_1a8fac70447933b92e2615280b6909e351" kind="function"><name>IsChordTone</name></member>
     <member refid="classvrv_1_1_note_1a13535f10ae41b7ec3e4f03b987f6b220" kind="function"><name>IsChordTone</name></member>
     <member refid="classvrv_1_1_note_1a6149d49bbb5357a7c56a28c2d6b05451" kind="function"><name>GetDrawingDur</name></member>
@@ -6037,7 +6037,6 @@
     <member refid="classvrv_1_1_note_1a0e05ef665ca7dc27b8c023ed468254d7" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_note_1a966a56dae04087faefa41158f2700bdd" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_note_1a1875afdb6f2a17a96265c30972a3dc9c" kind="function"><name>AcceptEnd</name></member>
-    <member refid="classvrv_1_1_note_1abce26caa4bbaf565dac44824d9607fcc" kind="variable"><name>m_drawingLoc</name></member>
     <member refid="classvrv_1_1_note_1ac2be2a06ed546eabd7d5f88a7bd9e9ef" kind="variable"><name>m_flippedNotehead</name></member>
     <member refid="classvrv_1_1_note_1af63e655eee232a8a0e8f7d4ae4499327" kind="variable"><name>m_noteGroup</name></member>
     <member refid="classvrv_1_1_note_1a53910a6525feac9b9193be23ec7b3e9e" kind="variable"><name>m_noteGroupPosition</name></member>
@@ -6047,7 +6046,6 @@
     <member refid="classvrv_1_1_note_1ab67af4d9db93c3538d61271730ed3750" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_note_1aefb4a2097eb88c3cefd73cbc72222bb0" kind="function"><name>AddChild</name></member>
     <member refid="classvrv_1_1_note_1a31a25f79f3854cf1083770fe46718360" kind="function"><name>AlignDotsShift</name></member>
-    <member refid="classvrv_1_1_note_1afa3895e8b0aacf42f2675fdde8a30c8d" kind="function"><name>HasLedgerLines</name></member>
     <member refid="classvrv_1_1_note_1a5d75468877187a156178c642140853a3" kind="function"><name>IsUnisonWith</name></member>
     <member refid="classvrv_1_1_note_1a40bd7cfa491712c99ed6d1bb22fe880f" kind="function"><name>GetDiatonicPitch</name></member>
     <member refid="classvrv_1_1_note_1aa4c61822c22f9917dfb1324e13ad09f9" kind="function"><name>GetMensuralNoteheadGlyph</name></member>
@@ -7224,6 +7222,7 @@
     <member refid="classvrv_1_1_position_interface_1af3e5567d41a4f399e18a9e3d86721004" kind="variable"><name>m_drawingLoc</name></member>
     <member refid="classvrv_1_1_position_interface_1ad108f633f9d1d04b255f4c8a40092770" kind="function"><name>CalcDrawingLoc</name></member>
     <member refid="classvrv_1_1_position_interface_1a3312dbe1415b5eafb2762ffe2e612d54" kind="function"><name>HasIdenticalPositionInterface</name></member>
+    <member refid="classvrv_1_1_position_interface_1a6e8bf8831df746be05f4ce177c880e96" kind="function"><name>HasLedgerLines</name></member>
   </compound>
   <compound refid="classvrv_1_1_prepare_alt_sym_functor" kind="class"><name>vrv::PrepareAltSymFunctor</name>
     <member refid="classvrv_1_1_prepare_alt_sym_functor_1a4c9bec55e52facbc84386697a394c12b" kind="function"><name>PrepareAltSymFunctor</name></member>

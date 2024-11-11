@@ -241,13 +241,13 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_calc_dots_functor.html#afb9849ed7f8a85f06eaf0ecb9279fc7a":[1,0,0,80,5],
 "classvrv_1_1_calc_ledger_lines_functor.html":[1,0,0,81],
 "classvrv_1_1_calc_ledger_lines_functor.html#a46acada4a0d97d46d7058dbf1c2de6f0":[1,0,0,81,2],
-"classvrv_1_1_calc_ledger_lines_functor.html#a7551539a321be16e867f0dc1d31bcb8d":[1,0,0,81,3],
+"classvrv_1_1_calc_ledger_lines_functor.html#a7551539a321be16e867f0dc1d31bcb8d":[1,0,0,81,4],
 "classvrv_1_1_calc_ledger_lines_functor.html#a8fa735d63227f8b75b90ac9989a4b612":[1,0,0,81,0],
-"classvrv_1_1_calc_ledger_lines_functor.html#ae00b036dc1183de83be7a0beb4c72238":[1,0,0,81,4],
+"classvrv_1_1_calc_ledger_lines_functor.html#ab15b7ff3a51386b2c292c834487c6fc9":[1,0,0,81,3],
+"classvrv_1_1_calc_ledger_lines_functor.html#ae00b036dc1183de83be7a0beb4c72238":[1,0,0,81,5],
 "classvrv_1_1_calc_ledger_lines_functor.html#ae3a3e4c7e90f66d154499e19ef0e298f":[1,0,0,81,1],
 "classvrv_1_1_calc_ligature_or_neume_pos_functor.html":[1,0,0,82],
 "classvrv_1_1_calc_ligature_or_neume_pos_functor.html#a169aaa50ecbab600bb0631d8db0b69ea":[1,0,0,82,3],
 "classvrv_1_1_calc_ligature_or_neume_pos_functor.html#a5d2654437d7b71db2dc2b18fb11b6897":[1,0,0,82,0],
-"classvrv_1_1_calc_ligature_or_neume_pos_functor.html#a61cf98a783b98f2cb294d634fb403f58":[1,0,0,82,4],
-"classvrv_1_1_calc_ligature_or_neume_pos_functor.html#ab2b73a857edafe1a954fb6d6c5583d93":[1,0,0,82,1]
+"classvrv_1_1_calc_ligature_or_neume_pos_functor.html#a61cf98a783b98f2cb294d634fb403f58":[1,0,0,82,4]
 };
