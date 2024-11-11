@@ -67,14 +67,14 @@ var NAVTREEINDEX =
 "classvrv_1_1_output.html#a7bbeb13af9cb85b727703fd272fd4406",
 "classvrv_1_1_pointing_to_comparison.html#a41c26fdf5e391705380cc5e138e16e28",
 "classvrv_1_1_rend.html#a1647c69d39d17e4ccb5cbce4f86566ef",
-"classvrv_1_1_score.html#a9b66adafb9c792e27e8a3e7c4cd071f5",
-"classvrv_1_1_staff.html#a82d6d9931b179e98f9eb8eb80736314e",
-"classvrv_1_1_svg_device_context.html#a1104b099bf2419013d2c790e0e4ac292",
-"classvrv_1_1_system_milestone_end.html#a56038f1de94c051c59f94e5dac67889b",
-"classvrv_1_1_timestamp_aligner.html#a57bc007a4312c29ccecfb3338c90cf76",
-"classvrv_1_1_tuplet.html#a8cf5357ba2e76e61b65eeef64eeee549",
-"classvrv_1_1_view.html#a9c5433e3e9f4bffd5594cf5c44c344e8",
-"iovolpiano_8h_source.html"
+"classvrv_1_1_score.html#aaf724fa7365d2d302ab1b8d77b136c10",
+"classvrv_1_1_staff.html#a84bcb3fad2d06d2ca4b898e860b14814",
+"classvrv_1_1_svg_device_context.html#a15e6d5ffe8946ec3371c5e363b06fe3c",
+"classvrv_1_1_system_milestone_end.html#a5b25263ed5bb9b54d345f5504bf35b87",
+"classvrv_1_1_timestamp_aligner.html#a6a740e04cfcb91ff8bedae44650e369d",
+"classvrv_1_1_tuplet.html#a8d6fdcff7d4bf182919675a1272fd8e3",
+"classvrv_1_1_view.html#a9fddb730ffdbd943413244594704cd6d",
+"justifyfunctor_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
