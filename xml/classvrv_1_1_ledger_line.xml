@@ -3,11 +3,12 @@
   <compounddef id="classvrv_1_1_ledger_line" kind="class" language="C++" prot="public">
     <compoundname>vrv::LedgerLine</compoundname>
     <includes refid="staff_8h" local="no">staff.h</includes>
+    <innerclass refid="classvrv_1_1_ledger_line_1_1_dash" prot="public">vrv::LedgerLine::Dash</innerclass>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors, reset methods</header>
-      <memberdef kind="variable" id="classvrv_1_1_ledger_line_1a1f028b4f8242c566116eecc0313d2618" prot="public" static="no" mutable="no">
-        <type>std::list&lt; std::pair&lt; int, int &gt; &gt;</type>
-        <definition>std::list&lt;std::pair&lt;int, int&gt; &gt; vrv::LedgerLine::m_dashes</definition>
+      <memberdef kind="variable" id="classvrv_1_1_ledger_line_1abf95ed1fa469cc9f2f75a4efe2634384" prot="public" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="classvrv_1_1_ledger_line_1_1_dash" kindref="compound">Dash</ref> &gt;</type>
+        <definition>std::list&lt;Dash&gt; vrv::LedgerLine::m_dashes</definition>
         <argsstring></argsstring>
         <name>m_dashes</name>
         <briefdescription>
@@ -17,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/staff.h" line="56" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/staff.h" bodystart="56" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/staff.h" line="84" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/staff.h" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_ledger_line_1a71e2463f1b9fc6e02215b5ae62486554" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -32,10 +33,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/staff.h" line="40" column="5"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_ledger_line_1adad6d12d0ee5220059bc573ffe7ec273" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_ledger_line_1aa81fa38ecc593d76d9bc3a179440eb52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::LedgerLine::AddDash</definition>
-        <argsstring>(int left, int right, int extension)</argsstring>
+        <argsstring>(int left, int right, int extension, const Object *event)</argsstring>
         <name>AddDash</name>
         <param>
           <type>int</type>
@@ -48,6 +49,10 @@
         <param>
           <type>int</type>
           <declname>extension</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>event</declname>
         </param>
         <briefdescription>
 <para><ref refid="classvrv_1_1_add" kindref="compound">Add</ref> a dash to the ledger line object. </para>
@@ -66,11 +71,11 @@
     <detaileddescription>
 <para>A ledger line is represented by a list of dashes. Each dash is represented by a pair of points (left - right). </para>
     </detaileddescription>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/staff.h" line="35" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/staff.h" bodystart="35" bodyend="62"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/staff.h" line="35" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/staff.h" bodystart="35" bodyend="90"/>
     <listofallmembers>
-      <member refid="classvrv_1_1_ledger_line_1adad6d12d0ee5220059bc573ffe7ec273" prot="public" virt="non-virtual"><scope>vrv::LedgerLine</scope><name>AddDash</name></member>
+      <member refid="classvrv_1_1_ledger_line_1aa81fa38ecc593d76d9bc3a179440eb52" prot="public" virt="non-virtual"><scope>vrv::LedgerLine</scope><name>AddDash</name></member>
       <member refid="classvrv_1_1_ledger_line_1a71e2463f1b9fc6e02215b5ae62486554" prot="public" virt="non-virtual"><scope>vrv::LedgerLine</scope><name>LedgerLine</name></member>
-      <member refid="classvrv_1_1_ledger_line_1a1f028b4f8242c566116eecc0313d2618" prot="public" virt="non-virtual"><scope>vrv::LedgerLine</scope><name>m_dashes</name></member>
+      <member refid="classvrv_1_1_ledger_line_1abf95ed1fa469cc9f2f75a4efe2634384" prot="public" virt="non-virtual"><scope>vrv::LedgerLine</scope><name>m_dashes</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

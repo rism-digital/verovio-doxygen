@@ -65,6 +65,7 @@ var classvrv_1_1_device_context =
     [ "SetBaseSize", "classvrv_1_1_device_context.html#abd2b6367abef894d3d7490fa2e176296", null ],
     [ "SetBrush", "classvrv_1_1_device_context.html#af25b0fd0aa20694cfc09b711fca4df5e", null ],
     [ "SetContentHeight", "classvrv_1_1_device_context.html#af91bb7e0130d56330457e6775b33332c", null ],
+    [ "SetCustomGraphicAttributes", "classvrv_1_1_device_context.html#a38235e843ab93fa1fe79ec8af24e1f45", null ],
     [ "SetCustomGraphicColor", "classvrv_1_1_device_context.html#a135649ef93deb35278b06dbc541b24d5", null ],
     [ "SetFont", "classvrv_1_1_device_context.html#aa1ca850cc42d7688a1a795194d6a65f9", null ],
     [ "SetHeight", "classvrv_1_1_device_context.html#a3981d3d5f658d2b9eb0c9f0cdff5d1eb", null ],

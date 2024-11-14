@@ -59,6 +59,8 @@ var classvrv_1_1_const_functor_interface =
     [ "VisitExpansion", "classvrv_1_1_const_functor_interface.html#a761c2f3c3d3b2d0aee0765deb8bea3fe", null ],
     [ "VisitExpansionEnd", "classvrv_1_1_const_functor_interface.html#a71133611a4697f27e15d4e21823b850f", null ],
     [ "VisitF", "classvrv_1_1_const_functor_interface.html#a20c1c1423fb310765e12b5f78c427e6b", null ],
+    [ "VisitFacsimile", "classvrv_1_1_const_functor_interface.html#afbcae46ebcdf99655f6a6bc76a50b331", null ],
+    [ "VisitFacsimileEnd", "classvrv_1_1_const_functor_interface.html#abb2f8ca0043c91b87f19955589d7aad6", null ],
     [ "VisitFb", "classvrv_1_1_const_functor_interface.html#ad16380c9557a2d2b020dbf1b7d953f42", null ],
     [ "VisitFbEnd", "classvrv_1_1_const_functor_interface.html#af650348fb2f736711ad3aca72fe61817", null ],
     [ "VisitFEnd", "classvrv_1_1_const_functor_interface.html#a9315909887c69a9b609faeed621c8621", null ],
@@ -82,6 +84,8 @@ var classvrv_1_1_const_functor_interface =
     [ "VisitGraceAlignerEnd", "classvrv_1_1_const_functor_interface.html#a94b240161f872862b889c787b10db645", null ],
     [ "VisitGraceGrp", "classvrv_1_1_const_functor_interface.html#a320a1a8debf4912faa9b6cc4ee45bf84", null ],
     [ "VisitGraceGrpEnd", "classvrv_1_1_const_functor_interface.html#a2bff3adb24f035a1a18ca40a1fd80d3a", null ],
+    [ "VisitGraphic", "classvrv_1_1_const_functor_interface.html#ad80d58fa691371838c0718731654de81", null ],
+    [ "VisitGraphicEnd", "classvrv_1_1_const_functor_interface.html#a44dfcd9af74c9d1294c5cdb97842d2f7", null ],
     [ "VisitGrpSym", "classvrv_1_1_const_functor_interface.html#a575fa51a0323599e299225cdc80c99c8", null ],
     [ "VisitGrpSymEnd", "classvrv_1_1_const_functor_interface.html#a476d189dac7dabc59921cf73e5c61a4b", null ],
     [ "VisitHairpin", "classvrv_1_1_const_functor_interface.html#a88756e9d3302eca55d45e070910cf275", null ],
@@ -214,6 +218,8 @@ var classvrv_1_1_const_functor_interface =
     [ "VisitStaffGrpEnd", "classvrv_1_1_const_functor_interface.html#aa35a66b22be33f91da851cb0c2f56cbb", null ],
     [ "VisitStem", "classvrv_1_1_const_functor_interface.html#a954c69197c6ef26f7d70be9e115fdeea", null ],
     [ "VisitStemEnd", "classvrv_1_1_const_functor_interface.html#a89064ec9202729d8884d7dd69794e9e1", null ],
+    [ "VisitSurface", "classvrv_1_1_const_functor_interface.html#a9eea026b99f5a799538a0e845f051519", null ],
+    [ "VisitSurfaceEnd", "classvrv_1_1_const_functor_interface.html#a516c9b8057df5e47bb20651a2e1867e9", null ],
     [ "VisitSvg", "classvrv_1_1_const_functor_interface.html#aa58df48848ef2db34c80b9fb5f02c05e", null ],
     [ "VisitSvgEnd", "classvrv_1_1_const_functor_interface.html#adbafb3304cdb1e43cf45bb4828757f7b", null ],
     [ "VisitSyl", "classvrv_1_1_const_functor_interface.html#ac61661cf298337f9f49a445a3899076b", null ],
@@ -261,5 +267,7 @@ var classvrv_1_1_const_functor_interface =
     [ "VisitTurn", "classvrv_1_1_const_functor_interface.html#aa9604ad00c965fb707358b13729a3789", null ],
     [ "VisitTurnEnd", "classvrv_1_1_const_functor_interface.html#ab05d62cccc28101433526ce212a646b4", null ],
     [ "VisitVerse", "classvrv_1_1_const_functor_interface.html#a7b7d126286e24eb2497c1d7a13fa7dba", null ],
-    [ "VisitVerseEnd", "classvrv_1_1_const_functor_interface.html#ab7f803ba6a4cef5fd692c7e9a15cd57b", null ]
+    [ "VisitVerseEnd", "classvrv_1_1_const_functor_interface.html#ab7f803ba6a4cef5fd692c7e9a15cd57b", null ],
+    [ "VisitZone", "classvrv_1_1_const_functor_interface.html#a39a8885db4ae72fbcb109f48a9b30501", null ],
+    [ "VisitZoneEnd", "classvrv_1_1_const_functor_interface.html#a096fe13c92fe97ee00e2806d208951b5", null ]
 ];
