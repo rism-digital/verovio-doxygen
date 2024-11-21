@@ -589,6 +589,7 @@
     <member refid="structvrv_1_1_align_meter_params_1aa7eb3ad0a8af0ad0d418f7ee117b5b48" kind="variable"><name>meterSig</name></member>
     <member refid="structvrv_1_1_align_meter_params_1ad54262c33c9a657894894405b1fd6ea6" kind="variable"><name>mensur</name></member>
     <member refid="structvrv_1_1_align_meter_params_1ac0117446492460c7047207fbce7611df" kind="variable"><name>proport</name></member>
+    <member refid="structvrv_1_1_align_meter_params_1a7f467ff9d125e1c05282b1cc3b5d9bc1" kind="variable"><name>equivalence</name></member>
   </compound>
   <compound refid="classvrv_1_1_align_systems_functor" kind="class"><name>vrv::AlignSystemsFunctor</name>
     <member refid="classvrv_1_1_align_systems_functor_1a9356735781ccdf30554393f6d494881f" kind="function"><name>AlignSystemsFunctor</name></member>
@@ -1647,11 +1648,14 @@
     <member refid="classvrv_1_1_cmme_input_1a33b971e19594c3f04466a1c34ed0e864" kind="variable"><name>m_isInSyllable</name></member>
     <member refid="classvrv_1_1_cmme_input_1a5e07bffcb1b819b2394a5ed2ab3c598e" kind="variable"><name>m_mensInfos</name></member>
     <member refid="classvrv_1_1_cmme_input_1a0d8de5b85c687fe6eeee99e06ef08406" kind="variable"><name>m_mensInfo</name></member>
+    <member refid="classvrv_1_1_cmme_input_1a38370f0dc6d985eca333bd9212d178b3" kind="variable"><name>m_currentColor</name></member>
     <member refid="classvrv_1_1_cmme_input_1a50080a8389806dd62463dd8ac3d93ff6" kind="variable"><name>m_numVoices</name></member>
     <member refid="classvrv_1_1_cmme_input_1a2366abbce8447569581778985f6d1473" kind="variable"><name>m_voices</name></member>
+    <member refid="classvrv_1_1_cmme_input_1adcdad78ae6e663329370b759e86fa507" kind="variable"><name>m_activeTempoChange</name></member>
     <member refid="classvrv_1_1_cmme_input_1a847fae6758850df9282dd94aba93bb07" kind="function"><name>CmmeInput</name></member>
     <member refid="classvrv_1_1_cmme_input_1a66dc8b02d6302c87256471a211302337" kind="function"><name>~CmmeInput</name></member>
     <member refid="classvrv_1_1_cmme_input_1a3182ef68f4c990d32189bf757cb38916" kind="function"><name>Import</name></member>
+    <member refid="classvrv_1_1_cmme_input_1a229ef8ed13f193f0a97d260c1e80af03" kind="function"><name>CreateMetadata</name></member>
     <member refid="classvrv_1_1_cmme_input_1ab9c855d3d1c8e4287159ff291ce49eab" kind="function"><name>CreateSection</name></member>
     <member refid="classvrv_1_1_cmme_input_1ae0016b351e77db857664816f9956ee0b" kind="function"><name>CreateStaff</name></member>
     <member refid="classvrv_1_1_cmme_input_1a94f2c72784d4180075f30b5887d1deab" kind="function"><name>CreateApp</name></member>
@@ -1659,6 +1663,7 @@
     <member refid="classvrv_1_1_cmme_input_1ab4913a491119a8ab945622256e2a792a" kind="function"><name>ReadEvents</name></member>
     <member refid="classvrv_1_1_cmme_input_1ae93702f7b89327c546ee0cb3a14f5e37" kind="function"><name>ReadEditorialCommentary</name></member>
     <member refid="classvrv_1_1_cmme_input_1ae9480eed4e79a23a8eac4391608a297b" kind="function"><name>CreateAccid</name></member>
+    <member refid="classvrv_1_1_cmme_input_1aa92a229ff56ec7b362e75089bd0a456b" kind="function"><name>CreateColorChange</name></member>
     <member refid="classvrv_1_1_cmme_input_1a7141fce40600e286fd50bc93afd0f98e" kind="function"><name>CreateBarline</name></member>
     <member refid="classvrv_1_1_cmme_input_1a5e32fa9d90ef603edbd402587cf5370b" kind="function"><name>CreateBreak</name></member>
     <member refid="classvrv_1_1_cmme_input_1ae01b0ab439d803ce9c4c5801230403c6" kind="function"><name>CreateChord</name></member>
@@ -1676,6 +1681,14 @@
     <member refid="classvrv_1_1_cmme_input_1a59189809e3e6b5f82b5bf49b22af540c" kind="function"><name>CreateVerse</name></member>
     <member refid="classvrv_1_1_cmme_input_1a460975651aec1d73d695232c0597bf33" kind="function"><name>ReadDuration</name></member>
     <member refid="classvrv_1_1_cmme_input_1ab7555c6804741edc6a82ab78d53c33e9" kind="function"><name>IsClef</name></member>
+    <member refid="classvrv_1_1_cmme_input_1a10b980b545aa96f53eef2ff84c20176d" kind="function"><name>PostProcessProport</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_convert_to_cmn_functor_1_1_cmn_duration" kind="class"><name>vrv::ConvertToCmnFunctor::CmnDuration</name>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1_1_cmn_duration_1a1a55f96a027b49eeb6e948ce2f7105fc" kind="variable"><name>m_duration</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1_1_cmn_duration_1a2983dc4e1fed017bb8e3141f0c9d72fc" kind="variable"><name>m_dots</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1_1_cmn_duration_1a7fe391ddfcbb7a0b571805b426539365" kind="variable"><name>m_num</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1_1_cmn_duration_1abdc388ff7f947830c8e6de1fa7bb28fc" kind="variable"><name>m_numbase</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1_1_cmn_duration_1a986cb5616ffca898c256bf9308597aa8" kind="function"><name>CmnDuration</name></member>
   </compound>
   <compound refid="classvrv_1_1_collect_and_process" kind="class"><name>vrv::CollectAndProcess</name>
     <member refid="classvrv_1_1_collect_and_process_1a772fb9abe1ca5a76cb32bb5da913a22f" kind="function"><name>CollectAndProcess</name></member>
@@ -2037,29 +2050,83 @@
     <member refid="classvrv_1_1_convert_markup_score_def_functor_1af1e774f0e4d349f06999818994a03911" kind="function"><name>ImplementsEndInterface</name></member>
   </compound>
   <compound refid="classvrv_1_1_convert_to_cast_off_mensural_functor" kind="class"><name>vrv::ConvertToCastOffMensuralFunctor</name>
-    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a42ea73aad58ebc2de9e5f15346efdb80" kind="function"><name>ConvertToCastOffMensuralFunctor</name></member>
+    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a3cb4b9ed00817991aec61accef254b9b" kind="function"><name>ConvertToCastOffMensuralFunctor</name></member>
     <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1ae765d365222ceb88a5bcc80997111970" kind="function"><name>~ConvertToCastOffMensuralFunctor</name></member>
-    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a3b92de8dac41aafbda2d07ff6e88dddc" kind="function"><name>AddStaffN</name></member>
-    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a33a5e86f2d6e453476177dd24c177e3d" kind="function"><name>ClearStaffNs</name></member>
-    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a70bc12c14a04ab14acb0673a2f0c33dc" kind="function"><name>VisitBarLine</name></member>
     <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1adcdba99213b64341ffee5dad1f98d369" kind="function"><name>VisitLayer</name></member>
     <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a339aebb961914559ecdab27fa1b0d6fe" kind="function"><name>VisitMeasure</name></member>
     <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1af9824179f3cf05c307debe4e59f5b005" kind="function"><name>VisitObject</name></member>
     <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a571a2450bfee288506b97c2fa71e0068" kind="function"><name>VisitScoreDef</name></member>
     <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a0d3c04cfe240761b603c7979960b68a3" kind="function"><name>VisitStaff</name></member>
-    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a74f9b6f06d4e589d3f5794f03b8c6d40" kind="function"><name>VisitSyllable</name></member>
     <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1ac99085a9d415ca0677f33a2c6f5dcd44" kind="function"><name>VisitSystemElement</name></member>
-    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1acb7d7ce54034a2119ca3060ba81d17a5" kind="variable"><name>m_staffNs</name></member>
+    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a3904536099160abd26a9636fb1e44da4" kind="variable"><name>m_segments</name></member>
+    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a476ac7d79f177769f53dcac9e1edd874" kind="variable"><name>m_currentSegment</name></member>
+    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1ab4e828b73522f383789f69f969a52a82" kind="variable"><name>m_breakPoints</name></member>
+    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1aeb4beb3f7bf4eebe0172ed5e66262c07" kind="variable"><name>m_currentBreakPoint</name></member>
+    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a0e158e6ae6271d80acda04486d7bc98e" kind="variable"><name>m_contentStaff</name></member>
     <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a382dc5ef86ba03d481453f337034f531" kind="variable"><name>m_contentLayer</name></member>
     <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a72cc308eda7f7e625b049e816946af58" kind="variable"><name>m_targetSystem</name></member>
-    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a86ab8250a75d279c32a91f111b58c94d" kind="variable"><name>m_targetMeasure</name></member>
     <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a927e28dc5fbd14f89960fb244a0957ed" kind="variable"><name>m_targetStaff</name></member>
     <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a4c7b875c9fc0f36b2128bd4e117a9b9a" kind="variable"><name>m_targetLayer</name></member>
-    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a1aef63b2394ba9c29878fb7216322381" kind="variable"><name>m_targetSubSystem</name></member>
-    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1ab0080631641ae5f714ef134d117649ca" kind="variable"><name>m_segmentIdx</name></member>
-    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a1589c17a6555348de088e1aafd8b4f63" kind="variable"><name>m_segmentTotal</name></member>
-    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a046ef2765b907dee8082542fa205803b" kind="variable"><name>m_layerTree</name></member>
     <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1af9c8fd45d36418c4d1c2d693823d86ee" kind="function"><name>ImplementsEndInterface</name></member>
+    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1aa355ad2da913c0a20c2ec1b689ae078a" kind="function"><name>IsValidBreakPoint</name></member>
+    <member refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1a5053c6dcb846a09d2569c2084b0bd873" kind="function"><name>InitSegment</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_convert_to_cmn_functor" kind="class"><name>vrv::ConvertToCmnFunctor</name>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1ae02c178fea9a390392788d26aee1b09d" kind="function"><name>ConvertToCmnFunctor</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a172f1680063c2e86ed7d1db603fb2d83" kind="function"><name>~ConvertToCmnFunctor</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1ab6c96e5a0de8ccabab16ae3888950c88" kind="function"><name>VisitChord</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a539661a19f53bf0783c6f0a773381870" kind="function"><name>VisitLayer</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1ae716a418290a523649f96c1451b7a14c" kind="function"><name>VisitLayerElement</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1ad722727c1e4836dcdc1c0e028ded5005" kind="function"><name>VisitLigature</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1abf73bf64788252225481dac6b7008c23" kind="function"><name>VisitLigatureEnd</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a833fd4b07152bbe99eb900cdbecd01fd" kind="function"><name>VisitMeasure</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a49f913b4dc6c382fdbcbc08b5c963e7e" kind="function"><name>VisitMeasureEnd</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a5beed2f9fe82b6ce1773b5a5dd65fca6" kind="function"><name>VisitNote</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a7f2446705fad041c1601ddbb6d0323bf" kind="function"><name>VisitRest</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1ac660112476ef772b36ec37d121cd2dd9" kind="function"><name>VisitScoreDef</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1ade780510f494b02ff4477adccd24e82d" kind="function"><name>VisitStaff</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a680f5dde037bcf8733384ebd6a729392" kind="function"><name>VisitStaffEnd</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a7f25271e121df8d6dc2c0bfa4284617c" kind="function"><name>VisitSystemElement</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a313ce8931fa2c0c059b3d22b2366fabc" kind="function"><name>VisitSystemEnd</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1add74fa68a51c458ab8b685097e819856" kind="variable"><name>m_score</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1acf0d9292eb4d47d5634fc908db48332e" kind="variable"><name>m_measures</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a3a12ba00cc454cb4ed99d0090583f5ec" kind="variable"><name>m_currentMeasure</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a68283c34795339c8b3482438a36a8f92" kind="variable"><name>m_layers</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1ac521ed8f64ed90c662225b6174cd0133" kind="variable"><name>m_currentLayer</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a2c2d3eb54a11874018a3b8d3c92862fe" kind="variable"><name>m_clefs</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a4f6c191540ed04675142e2f948d495bd" kind="variable"><name>m_layerClef</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a667e3175dbf2b127ccbc4157e888cc6d" kind="variable"><name>m_targetSystem</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1aa6d44d42589bdba7572a2579e969d006" kind="variable"><name>m_currentParams</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a269653253b66ba7b0b10cb97483d8b8e" kind="variable"><name>m_durationElements</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1aab1a0d99d420715cdd0e8cfea9f89f41" kind="variable"><name>m_ligature</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a8be757bbaa310a3633a0af9e5b426670" kind="variable"><name>m_coloration</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a9389323c2b82eb88f97bb51bc49e3991" kind="variable"><name>m_proportTuplet</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1ad5e43a55c59334159be0cb7d6e28d4c2" kind="variable"><name>m_currentStaff</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a4b61629a73ac3b9c95815894aa2d0d1f" kind="variable"><name>m_startid</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a205b22a447b794d5a4ce8ae91be3645b" kind="variable"><name>m_n</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1ac8ff81b7e698d9747ce251df6f3dfbcf" kind="function"><name>ImplementsEndInterface</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a086167164b127dc9827cb22a4d7df4bf" kind="function"><name>IsGlobalMensur</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a94da9b424f79732875fd2a2029775138" kind="function"><name>CalcMeasureDuration</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1aedf8a145b43adae4f70ae6244a1e5144" kind="function"><name>ConvertDurationInterface</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1af2166d1526801e3d3fbcf1696b1934b7" kind="function"><name>SplitDurationInterface</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1ade3543799e066744036a58d2278683d1" kind="function"><name>ConvertAccid</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a47daf8acb8776755d6d2fbb38406f950" kind="function"><name>ConvertClef</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a292805c25a5ea6df875b04412298970b" kind="function"><name>ConvertMensur</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1a87b571f85590b80cdd0ee72edaf8f968" kind="function"><name>SplitDurationIntoCmn</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_convert_to_mensural_view_functor" kind="class"><name>vrv::ConvertToMensuralViewFunctor</name>
+    <member refid="classvrv_1_1_convert_to_mensural_view_functor_1ae363a2dcc64db1b55b1acb4e91bcf194" kind="function"><name>ConvertToMensuralViewFunctor</name></member>
+    <member refid="classvrv_1_1_convert_to_mensural_view_functor_1ad1aab8fd2318cfb57b4f525715dcb165" kind="function"><name>~ConvertToMensuralViewFunctor</name></member>
+    <member refid="classvrv_1_1_convert_to_mensural_view_functor_1a4c80a25e792464bd8e2edcdc59adaf5b" kind="function"><name>VisitEditorialElement</name></member>
+    <member refid="classvrv_1_1_convert_to_mensural_view_functor_1a8fc973a6089d0726caecd6a5b6078f2c" kind="function"><name>VisitLayer</name></member>
+    <member refid="classvrv_1_1_convert_to_mensural_view_functor_1aa0e5dcda3ddcfa675579cc49763acb08" kind="function"><name>VisitLayerEnd</name></member>
+    <member refid="classvrv_1_1_convert_to_mensural_view_functor_1ad968186d1d4a9806ecb1a9695254b2d1" kind="function"><name>VisitLayerElement</name></member>
+    <member refid="classvrv_1_1_convert_to_mensural_view_functor_1a4bb62dfd2f28be97730c3e758286b78b" kind="function"><name>VisitLayerElementEnd</name></member>
+    <member refid="classvrv_1_1_convert_to_mensural_view_functor_1aa65a052c19df4fe0c0406787eb429eac" kind="function"><name>VisitLigature</name></member>
+    <member refid="classvrv_1_1_convert_to_mensural_view_functor_1a6358e2b327d24dff97d5badcd054476d" kind="function"><name>VisitLigatureEnd</name></member>
+    <member refid="classvrv_1_1_convert_to_mensural_view_functor_1a9f45e07db87828d5837106365efbf08f" kind="variable"><name>m_viewLayer</name></member>
+    <member refid="classvrv_1_1_convert_to_mensural_view_functor_1a95193c211159a81517d44d5f3c2f9104" kind="variable"><name>m_stack</name></member>
+    <member refid="classvrv_1_1_convert_to_mensural_view_functor_1a8f45305f10fff66c7a19ae2db3cde844" kind="function"><name>ImplementsEndInterface</name></member>
   </compound>
   <compound refid="classvrv_1_1_convert_to_page_based_functor" kind="class"><name>vrv::ConvertToPageBasedFunctor</name>
     <member refid="classvrv_1_1_convert_to_page_based_functor_1a8c3b3495eb0913f994fe8a961229ee68" kind="function"><name>ConvertToPageBasedFunctor</name></member>
@@ -2424,7 +2491,7 @@
     <member refid="classvrv_1_1_doc_1ace174d712f8281af1ef91a51f67acad9" kind="function"><name>GetTopMargin</name></member>
     <member refid="classvrv_1_1_doc_1ae1ad9d75102a46826083deb4f787c65c" kind="function"><name>GetDrawingPage</name></member>
     <member refid="classvrv_1_1_doc_1aa95fdb9aef5bdf034bad3aac286edd79" kind="function"><name>GetDrawingPage</name></member>
-    <member refid="classvrv_1_1_doc_1a8441cb0b67a44650505421ce5bc13bb5" kind="function"><name>SetMensuralMusicOnly</name></member>
+    <member refid="classvrv_1_1_doc_1a4601a3be189f11f18e2425ba9274ac56" kind="function"><name>SetMensuralMusicOnly</name></member>
     <member refid="classvrv_1_1_doc_1aa9fb208cd70f668767cd70d0f742baca" kind="function"><name>IsMensuralMusicOnly</name></member>
     <member refid="classvrv_1_1_doc_1af5334291fb9f983ce1dd8e8c407d07e3" kind="function"><name>SetNeumeLines</name></member>
     <member refid="classvrv_1_1_doc_1a3cf220eb2862ad11f076ae12bda7e0e6" kind="function"><name>IsNeumeLines</name></member>
@@ -2479,7 +2546,7 @@
     <member refid="classvrv_1_1_doc_1acce33f1dc0f2db0158059d1449f4a7b4" kind="variable"><name>m_dataPreparationDone</name></member>
     <member refid="classvrv_1_1_doc_1aab3b31c873d2f6eee7e563b03f82e046" kind="variable"><name>m_timemapTempo</name></member>
     <member refid="classvrv_1_1_doc_1aa01c87dbef00d6bef969e49cb69ba3da" kind="variable"><name>m_markup</name></member>
-    <member refid="classvrv_1_1_doc_1aedab591458e4309da45e1e0e271fdd51" kind="variable"><name>m_isMensuralMusicOnly</name></member>
+    <member refid="classvrv_1_1_doc_1a97eb802dcf9f62ec0e12727711b3c90d" kind="variable"><name>m_isMensuralMusicOnly</name></member>
     <member refid="classvrv_1_1_doc_1aa39e69976f53d1d1a6423188e058675b" kind="variable"><name>m_isNeumeLines</name></member>
     <member refid="classvrv_1_1_doc_1adb8e58256a491be0907a7046e8b024e8" kind="variable"><name>m_pageWidth</name></member>
     <member refid="classvrv_1_1_doc_1a51e94b496de90680c6fb9be09841a4f1" kind="variable"><name>m_pageHeight</name></member>
@@ -2495,7 +2562,8 @@
     <member refid="classvrv_1_1_doc_1a59a77ebea9671b372b2840c67fe49eb7" kind="function"><name>GenerateFooter</name></member>
     <member refid="classvrv_1_1_doc_1a62a74a66efbef8f608bb53175fa3c105" kind="function"><name>GenerateHeader</name></member>
     <member refid="classvrv_1_1_doc_1aa94a58d50fbe08a45b813503678bb4ac" kind="function"><name>GenerateMeasureNumbers</name></member>
-    <member refid="classvrv_1_1_doc_1a808dc05f3c7f8087dd99071d90e4b991" kind="function"><name>GenerateMEIHeader</name></member>
+    <member refid="classvrv_1_1_doc_1ab65d189921d9de9cde712ac7c928d289" kind="function"><name>GenerateMEIHeader</name></member>
+    <member refid="classvrv_1_1_doc_1ad56838983dea97279006d12cb46fbf10" kind="function"><name>ConvertHeaderToMEIBasic</name></member>
     <member refid="classvrv_1_1_doc_1a9306ab87c7b995679b365cbc62bdc26d" kind="function"><name>HasPage</name></member>
     <member refid="classvrv_1_1_doc_1a2375896e4a43e3a23c798c48fd5a8f70" kind="function"><name>GetPageCount</name></member>
     <member refid="classvrv_1_1_doc_1ab09d1142c97b77fdbb612c787049b907" kind="function"><name>GetMidiExportDone</name></member>
@@ -2520,7 +2588,10 @@
     <member refid="classvrv_1_1_doc_1a1f4801d2f14675afd7a372f525cbed2d" kind="function"><name>CastOffEncodingDoc</name></member>
     <member refid="classvrv_1_1_doc_1a1f5b58cd73b6f04ce22ebf231c69db32" kind="function"><name>ConvertToPageBasedDoc</name></member>
     <member refid="classvrv_1_1_doc_1a4dbe6bc0e603e609a9ff44138e84f3e1" kind="function"><name>ConvertToCastOffMensuralDoc</name></member>
+    <member refid="classvrv_1_1_doc_1a3e10fe179621ec933eb5eefcb30efffd" kind="function"><name>ConvertToCmnDoc</name></member>
     <member refid="classvrv_1_1_doc_1a2bb7a46eafe2a2b41dc4adaec8110b19" kind="function"><name>ConvertMarkupDoc</name></member>
+    <member refid="classvrv_1_1_doc_1a3cf46df7b13c937b30efe6e1cb197c93" kind="function"><name>ConvertToMensuralViewDoc</name></member>
+    <member refid="classvrv_1_1_doc_1a28cfa2ef4f8bc9e79c40df6b41893f1e" kind="function"><name>ConvertMensuralToCmnDoc</name></member>
     <member refid="classvrv_1_1_doc_1a4afeaed0111a1192a5a03569008807ff" kind="function"><name>SyncFromFacsimileDoc</name></member>
     <member refid="classvrv_1_1_doc_1ad3e688aa30bc1ff3b9c7381bc4bd7a83" kind="function"><name>SyncToFacsimileDoc</name></member>
     <member refid="classvrv_1_1_doc_1a303c7a587723539a78b83f642111f2a1" kind="function"><name>TransposeDoc</name></member>
@@ -2621,6 +2692,9 @@
     <member refid="classvrv_1_1_duration_interface_1aa95bb6fba812c2b05620c3b862e0f6e5" kind="function"><name>IsInterface</name></member>
     <member refid="classvrv_1_1_duration_interface_1abacec4efd7744748f4c0d40a87fd2784" kind="function"><name>SetDurDefault</name></member>
     <member refid="classvrv_1_1_duration_interface_1afd39c3b41049378b5a4baa86faf68cae" kind="function"><name>GetDurDefault</name></member>
+    <member refid="classvrv_1_1_duration_interface_1a9304a4f7d66c3cb9fb44a0c07a17758e" kind="function"><name>DurationWithBrevisEquivalence</name></member>
+    <member refid="classvrv_1_1_duration_interface_1a305349d0e2754908424d915a52f5ba79" kind="function"><name>DurationWithSemibrevisEquivalence</name></member>
+    <member refid="classvrv_1_1_duration_interface_1afbb4d68aef4bcad20e733edc943e41f8" kind="function"><name>DurationWithMinimaEquivalence</name></member>
     <member refid="classvrv_1_1_duration_interface_1ae08b71cfec94af5edb02b3372d178d9c" kind="function"><name>GetActualDur</name></member>
     <member refid="classvrv_1_1_duration_interface_1adf6087baf2b0d95aab8bbe3f5ae8e389" kind="function"><name>GetActualDurGes</name></member>
     <member refid="classvrv_1_1_duration_interface_1a279fddb621315efe35003c60ab2c359f" kind="function"><name>SetScoreTimeOnset</name></member>
@@ -2641,7 +2715,7 @@
     <member refid="classvrv_1_1_duration_interface_1a7aa528ce2ae26ddae716c2c9de56adab" kind="variable"><name>m_scoreTimeTiedDuration</name></member>
     <member refid="classvrv_1_1_duration_interface_1abde0dcbc837ae74f91551819a1978db9" kind="variable"><name>m_durDefault</name></member>
     <member refid="classvrv_1_1_duration_interface_1a1b27be2ecd1bcd7366219fd1216a7667" kind="function"><name>GetInterfaceAlignmentDuration</name></member>
-    <member refid="classvrv_1_1_duration_interface_1a40ff7919dfa3bba8251c37c64da4cf1a" kind="function"><name>GetInterfaceAlignmentMensuralDuration</name></member>
+    <member refid="classvrv_1_1_duration_interface_1a5b4642cb99c88aee50ffb5415dfe912e" kind="function"><name>GetInterfaceAlignmentMensuralDuration</name></member>
     <member refid="classvrv_1_1_duration_interface_1ad14ac28eed0c0fbc93bf4b104abb1c2e" kind="function"><name>IsFirstInBeam</name></member>
     <member refid="classvrv_1_1_duration_interface_1ab7a23457945d43056b01fde4cc1d8b46" kind="function"><name>IsLastInBeam</name></member>
     <member refid="classvrv_1_1_duration_interface_1a7bc0fd1fb0dda4f72ba3f78ef6da128a" kind="function"><name>GetNoteOrChordDur</name></member>
@@ -3272,6 +3346,7 @@
     <member refid="classvrv_1_1_fraction_1a12f85b298c02a1e6abb9077061f7bc1d" kind="function"><name>operator-</name></member>
     <member refid="classvrv_1_1_fraction_1a5563d80988263170927b513eb38b8df9" kind="function"><name>operator*</name></member>
     <member refid="classvrv_1_1_fraction_1a1639fe5f665decc11763d02b28a9d6a5" kind="function"><name>operator/</name></member>
+    <member refid="classvrv_1_1_fraction_1a4746e7e5cf311cefa26e228b26d8bceb" kind="function"><name>operator%</name></member>
     <member refid="classvrv_1_1_fraction_1a9e450d676d4ea8a47530ff23739ec702" kind="function"><name>operator==</name></member>
     <member refid="classvrv_1_1_fraction_1afce78665c1707cf4fde426986da3befe" kind="function"><name>operator</name></member>
     <member refid="classvrv_1_1_fraction_1a3403af108372dcd9b66d559e0961dc86" kind="function"><name>GetNumerator</name></member>
@@ -4518,7 +4593,7 @@
     <member refid="classvrv_1_1_init_m_i_d_i_functor_1aff08741fe3f76d706865fd9c5b4017a7" kind="function"><name>ImplementsEndInterface</name></member>
   </compound>
   <compound refid="classvrv_1_1_init_onset_offset_functor" kind="class"><name>vrv::InitOnsetOffsetFunctor</name>
-    <member refid="classvrv_1_1_init_onset_offset_functor_1aeaac82fe434d66915a1910c99562fb98" kind="function"><name>InitOnsetOffsetFunctor</name></member>
+    <member refid="classvrv_1_1_init_onset_offset_functor_1afdb70a507380d190bf302619672e8825" kind="function"><name>InitOnsetOffsetFunctor</name></member>
     <member refid="classvrv_1_1_init_onset_offset_functor_1a2d5ed8c73ebc253a42540c936e8e3a7e" kind="function"><name>~InitOnsetOffsetFunctor</name></member>
     <member refid="classvrv_1_1_init_onset_offset_functor_1abda0f4bd90ea5623ce1a4cfa366dd0f1" kind="function"><name>VisitChordEnd</name></member>
     <member refid="classvrv_1_1_init_onset_offset_functor_1a92e8dee9661c06ae712320ae24f881c6" kind="function"><name>VisitLayer</name></member>
@@ -5218,6 +5293,12 @@
     <member refid="classvrv_1_1_measure_aligner_type_comparison_1ac1addc8bcc6d9195a394e62d99637e63" kind="function"><name>SetType</name></member>
     <member refid="classvrv_1_1_measure_aligner_type_comparison_1a94e6e55aa61a9eb86a7e58ed0f0703b4" kind="function"><name>operator()</name></member>
   </compound>
+  <compound refid="classvrv_1_1_convert_to_cmn_functor_1_1_measure_info" kind="class"><name>vrv::ConvertToCmnFunctor::MeasureInfo</name>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1_1_measure_info_1ad71869e4bc6f1fff600799d04f9b3fbf" kind="variable"><name>m_measure</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1_1_measure_info_1a3e5d9bb3d96888f696658759acf19def" kind="variable"><name>m_time</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1_1_measure_info_1a1808baee35c5d8c691dedeffdd5cf701" kind="variable"><name>m_duration</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1_1_measure_info_1a93cd45fd559b59095de7c1ad6e20efdd" kind="function"><name>MeasureInfo</name></member>
+  </compound>
   <compound refid="classvrv_1_1_measure_onset_offset_comparison" kind="class"><name>vrv::MeasureOnsetOffsetComparison</name>
     <member refid="classvrv_1_1_measure_onset_offset_comparison_1a92964796c781b3110621542dfa34a630" kind="variable"><name>m_time</name></member>
     <member refid="classvrv_1_1_measure_onset_offset_comparison_1a97af3ffd5dae29d324a19d623bb827a7" kind="function"><name>MeasureOnsetOffsetComparison</name></member>
@@ -5695,6 +5776,10 @@
     <member refid="classvrv_1_1_mensur_1a44bb3c18cc9a28a7c30e91403b98785b" kind="variable"><name>s_numBase</name></member>
     <member refid="classvrv_1_1_mensur_1a873acd8af60660c28ddd93836a182fcd" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_mensur_1aaece553366c9649d2838bc3e037ef1a8" kind="function"><name>IsScoreDefElement</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_convert_to_cmn_functor_1_1_mensur_info" kind="class"><name>vrv::ConvertToCmnFunctor::MensurInfo</name>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1_1_mensur_info_1ae17fb8a03e24a78b6b8548f431554c9f" kind="variable"><name>m_mensur</name></member>
+    <member refid="classvrv_1_1_convert_to_cmn_functor_1_1_mensur_info_1a7e46c873fc52aa99744980ace3da6b3b" kind="variable"><name>m_time</name></member>
   </compound>
   <compound refid="classvrv_1_1_meter_sig" kind="class"><name>vrv::MeterSig</name>
     <member refid="classvrv_1_1_meter_sig_1ab0dad49ff9a7ea71bd52396e0e118edc" kind="function"><name>MeterSig</name></member>
@@ -6277,6 +6362,7 @@
     <member refid="classvrv_1_1_object_1af0db1dd88b7d2f6c9068934312ce86c8" kind="function"><name>SetClosingComment</name></member>
     <member refid="classvrv_1_1_object_1ad52c48d64fdb14dbc0a4dcf40aa87295" kind="function"><name>HasClosingComment</name></member>
     <member refid="classvrv_1_1_object_1a6613607b9361b6cc4d568ce189ba9c32" kind="function"><name>GetChildrenForModification</name></member>
+    <member refid="classvrv_1_1_object_1a5ded43771526c4de94f02da17c47b3bc" kind="function"><name>CopyAttributesTo</name></member>
     <member refid="classvrv_1_1_object_1aeb7e152a62704071901972bbfa06062c" kind="function"><name>GetAttributes</name></member>
     <member refid="classvrv_1_1_object_1a07880f4ad709e37ca6b5483110905383" kind="function"><name>HasAttribute</name></member>
     <member refid="classvrv_1_1_object_1a9f30aa6a8185b260943003a08980d376" kind="function"><name>SetParent</name></member>
@@ -6320,10 +6406,11 @@
     <member refid="classvrv_1_1_object_comparison_1aa4be5c15d0f42e62561b33a8d600c615" kind="function"><name>operator()</name></member>
   </compound>
   <compound refid="classvrv_1_1_object_factory" kind="class"><name>vrv::ObjectFactory</name>
-    <member refid="classvrv_1_1_object_factory_1a95a027cc2a97e2c5dd77da4531a46cbf" kind="variable"><name>s_ctorsRegistry</name></member>
+    <member refid="classvrv_1_1_object_factory_1aaedbcb646e3a31bba3a112548b36d7e2" kind="variable"><name>s_ctorsRegistry</name></member>
     <member refid="classvrv_1_1_object_factory_1a3de375108b361f0dfea899ae591bfef5" kind="variable"><name>s_classIdsRegistry</name></member>
     <member refid="classvrv_1_1_object_factory_1abb4435d1b404de50c98ae24d31520786" kind="function"><name>GetInstance</name></member>
     <member refid="classvrv_1_1_object_factory_1a83da56ce4ef8b890f1e224dfea4e8fdc" kind="function"><name>Create</name></member>
+    <member refid="classvrv_1_1_object_factory_1a15a5b657c81141ab41073bfc6cdb7f3d" kind="function"><name>Create</name></member>
     <member refid="classvrv_1_1_object_factory_1aa762c621a31dc9ac0759b860e367bea3" kind="function"><name>Register</name></member>
     <member refid="classvrv_1_1_object_factory_1a18433f31ae6a0aa75e9675cbf4f1b647" kind="function"><name>GetClassId</name></member>
     <member refid="classvrv_1_1_object_factory_1a08d2fbcb1dc6a2d2e8a869729366fd5a" kind="function"><name>GetClassIds</name></member>
@@ -6380,6 +6467,7 @@
   <compound refid="classvrv_1_1_option" kind="class"><name>vrv::Option</name>
     <member refid="classvrv_1_1_option_1a4f1d640dd2b72a23a4987c31e262715f" kind="variable"><name>s_breaks</name></member>
     <member refid="classvrv_1_1_option_1a582a7279f3217fead90a86c0435e05b2" kind="variable"><name>s_condense</name></member>
+    <member refid="classvrv_1_1_option_1a3515689458a59a0b507183e6fe02e2a1" kind="variable"><name>s_durationEq</name></member>
     <member refid="classvrv_1_1_option_1a34d31a33f75e2ab945d6fa6eec4c1c21" kind="variable"><name>s_elision</name></member>
     <member refid="classvrv_1_1_option_1abe8bc730659cf25707fa4a068fde3b14" kind="variable"><name>s_fontFallback</name></member>
     <member refid="classvrv_1_1_option_1a14d07a13838db691bd2884fd910e45b4" kind="variable"><name>s_footer</name></member>
@@ -6768,8 +6856,10 @@
     <member refid="classvrv_1_1_options_1a8f4846d524263f9e851c03582532b001" kind="variable"><name>m_midiNoCue</name></member>
     <member refid="classvrv_1_1_options_1ac5351533fcb3dc839e95adba9cafbf0d" kind="variable"><name>m_midiTempoAdjustment</name></member>
     <member refid="classvrv_1_1_options_1aaac54391e25f2f2177ad0dbf64c4cc2e" kind="variable"><name>m_mensural</name></member>
+    <member refid="classvrv_1_1_options_1a9b2b94d15885fea232c28344d51c6134" kind="variable"><name>m_durationEquivalence</name></member>
     <member refid="classvrv_1_1_options_1a1bdbc5c08be3c228c9c617ecbe157b2e" kind="variable"><name>m_ligatureAsBracket</name></member>
-    <member refid="classvrv_1_1_options_1ace0da799034ed728698c346b5c604fb3" kind="variable"><name>m_mensuralToMeasure</name></member>
+    <member refid="classvrv_1_1_options_1a93164b68509f5f1b967b3d8aedc90aef" kind="variable"><name>m_mensuralResponsiveView</name></member>
+    <member refid="classvrv_1_1_options_1ab55045e580ef622b2bc11713d143a28b" kind="variable"><name>m_mensuralToCmn</name></member>
     <member refid="classvrv_1_1_options_1ab5f675f2cea16512f03af23a2753d2d8" kind="variable"><name>m_jsonCmdLineOptions</name></member>
     <member refid="classvrv_1_1_options_1a3f6ba2f16ff1f1e1822b7447502594ad" kind="variable"><name>m_timemapOptions</name></member>
     <member refid="classvrv_1_1_options_1a7c05c180e98edd4f8422bbe61b56b36f" kind="variable"><name>m_deprecated</name></member>
@@ -7520,6 +7610,7 @@
     <member refid="classvrv_1_1_proport_1ad137dcebed54e0a143e56a22b3c2f052" kind="function"><name>GetCumulatedNum</name></member>
     <member refid="classvrv_1_1_proport_1a0a0370653b298412361d64ea4ae58df8" kind="function"><name>GetCumulatedNumbase</name></member>
     <member refid="classvrv_1_1_proport_1afc283cfcbdfda0208d87626a34fcbad6" kind="function"><name>Cumulate</name></member>
+    <member refid="classvrv_1_1_proport_1a0c772b40eeadea7b1d72ca386ec65ee5" kind="function"><name>ResetCumulate</name></member>
     <member refid="classvrv_1_1_proport_1a709615a7579cd3d411ddcc60e1dfb91b" kind="function"><name>HasToBeAligned</name></member>
   </compound>
   <compound refid="classvrv_1_1_quilisma" kind="class"><name>vrv::Quilisma</name>
@@ -7677,6 +7768,7 @@
     <member refid="classvrv_1_1_reset_horizontal_alignment_functor_1a4262ad59e122da08899ee7eaae4e36a9" kind="function"><name>VisitMeasure</name></member>
     <member refid="classvrv_1_1_reset_horizontal_alignment_functor_1a387df61d72afeae0d4b6f3c43acc1e3b" kind="function"><name>VisitMRest</name></member>
     <member refid="classvrv_1_1_reset_horizontal_alignment_functor_1a222ad8f5d5a9cfb021219fb284eb7ff3" kind="function"><name>VisitNote</name></member>
+    <member refid="classvrv_1_1_reset_horizontal_alignment_functor_1a7d7935341542c6151a760e28042853eb" kind="function"><name>VisitProport</name></member>
     <member refid="classvrv_1_1_reset_horizontal_alignment_functor_1a1dbfab5c6389e8db64bf24385ee64edd" kind="function"><name>VisitRest</name></member>
     <member refid="classvrv_1_1_reset_horizontal_alignment_functor_1a590388b38c0b36668b88ad1e7001a0aa" kind="function"><name>VisitScoreDef</name></member>
     <member refid="classvrv_1_1_reset_horizontal_alignment_functor_1af463998a317e4a485cc9878a63aa4792" kind="function"><name>VisitSystem</name></member>
@@ -8770,7 +8862,6 @@
     <member refid="classvrv_1_1_system_1ab16a3b327ed12fe7fb49d272a83290ac" kind="function"><name>GetPreferredCurveDirection</name></member>
     <member refid="classvrv_1_1_system_1a7e20fbe9349386570ced5136a45deb17" kind="function"><name>AddToDrawingListIfNecessary</name></member>
     <member refid="classvrv_1_1_system_1a5db54bb1ba2ba6f290a466e9eafe5c73" kind="function"><name>EstimateJustificationRatio</name></member>
-    <member refid="classvrv_1_1_system_1aefdd1e5f24596300dc7e34f25ff80123" kind="function"><name>ConvertToCastOffMensuralSystem</name></member>
     <member refid="classvrv_1_1_system_1afc3f4dd68c9cf720bb6bda66c8df0056" kind="function"><name>ConvertToUnCastOffMensuralSystem</name></member>
   </compound>
   <compound refid="classvrv_1_1_system_aligner" kind="class"><name>vrv::SystemAligner</name>
@@ -9949,6 +10040,10 @@
     <member refid="options_8h_1a11a4dbb4752b018741a8391ebc630b75aab6980023fd0d2c582cc17846296b9e8" kind="enumvalue"><name>CONDENSE_auto</name></member>
     <member refid="options_8h_1a11a4dbb4752b018741a8391ebc630b75af3a18c4b533b5439d52411d84855e1d0" kind="enumvalue"><name>CONDENSE_all</name></member>
     <member refid="options_8h_1a11a4dbb4752b018741a8391ebc630b75a69e681e723d6ff435087982eb4419f3f" kind="enumvalue"><name>CONDENSE_encoded</name></member>
+    <member refid="options_8h_1a4e9bf5bca5abbd861514d010d5ccf681" kind="enum"><name>option_DURATION_EQ</name></member>
+    <member refid="options_8h_1a4e9bf5bca5abbd861514d010d5ccf681ac0aca240d9ddef02d01f98625ca4e4af" kind="enumvalue"><name>DURATION_EQ_brevis</name></member>
+    <member refid="options_8h_1a4e9bf5bca5abbd861514d010d5ccf681aa0b4309e1d95ffd566f05d9ccb9f7240" kind="enumvalue"><name>DURATION_EQ_semibrevis</name></member>
+    <member refid="options_8h_1a4e9bf5bca5abbd861514d010d5ccf681abb17611603c2548cb8ae2b44120dd23c" kind="enumvalue"><name>DURATION_EQ_minima</name></member>
     <member refid="options_8h_1aea55d3aac283d6f3d56c636f5b089ad8" kind="enum"><name>option_ELISION</name></member>
     <member refid="options_8h_1aea55d3aac283d6f3d56c636f5b089ad8a01237c10624f56c26866707d26d575c7" kind="enumvalue"><name>ELISION_regular</name></member>
     <member refid="options_8h_1aea55d3aac283d6f3d56c636f5b089ad8ae46f5dbcac1b9a4d8099718aa19808f5" kind="enumvalue"><name>ELISION_narrow</name></member>
@@ -11091,7 +11186,7 @@
     <member refid="vrvdef_8h_1a207030d5c19cad8aa8acb678bb000a57" kind="typedef"><name>MapOfOctavedPitchAccid</name></member>
     <member refid="vrvdef_8h_1a9ad8e2dec088a44b2422586ba3227543" kind="typedef"><name>MapOfIntGraceAligners</name></member>
     <member refid="vrvdef_8h_1a4bd9306118d9ce7dcdbe57068e5366dc" kind="typedef"><name>ArrayOfStringDynamTypePairs</name></member>
-    <member refid="vrvdef_8h_1a5257655c4b12f7a0ca7deddedffd0384" kind="typedef"><name>MapOfStrConstructors</name></member>
+    <member refid="vrvdef_8h_1ac24d62b4074c45adb1ad7fca6b90a813" kind="typedef"><name>MapOfClassIdConstructors</name></member>
     <member refid="vrvdef_8h_1a6734b082828b7dd744510bae2314b18a" kind="typedef"><name>MapOfStrClassIds</name></member>
     <member refid="vrvdef_8h_1a49059e0ab531dc8234d82fd5acd07542" kind="typedef"><name>MeasureTieEndpoints</name></member>
     <member refid="vrvdef_8h_1a8e62c48dc2369378e97224bc85ecdcfc" kind="typedef"><name>NotePredicate</name></member>

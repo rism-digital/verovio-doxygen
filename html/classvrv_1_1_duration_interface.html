@@ -116,10 +116,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1b27be2ecd1bcd7366219fd1216a7667"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvrv_1_1_fraction.html">Fraction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_duration_interface.html#a1b27be2ecd1bcd7366219fd1216a7667">GetInterfaceAlignmentDuration</a> (int num, int numBase) const</td></tr>
 <tr class="memdesc:a1b27be2ecd1bcd7366219fd1216a7667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the duration (in <a class="el" href="classvrv_1_1_fraction.html">Fraction</a>) for the element.  <a href="classvrv_1_1_duration_interface.html#a1b27be2ecd1bcd7366219fd1216a7667">More...</a><br /></td></tr>
 <tr class="separator:a1b27be2ecd1bcd7366219fd1216a7667"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40ff7919dfa3bba8251c37c64da4cf1a"><td class="memItemLeft" align="right" valign="top"><a id="a40ff7919dfa3bba8251c37c64da4cf1a"></a>
-<a class="el" href="classvrv_1_1_fraction.html">Fraction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_duration_interface.html#a40ff7919dfa3bba8251c37c64da4cf1a">GetInterfaceAlignmentMensuralDuration</a> (int num, int numBase, const <a class="el" href="classvrv_1_1_mensur.html">Mensur</a> *currentMensur) const</td></tr>
-<tr class="memdesc:a40ff7919dfa3bba8251c37c64da4cf1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the duration (in <a class="el" href="classvrv_1_1_fraction.html">Fraction</a>) for the element for mensural notation Currently this assume brevis equality and would need to be modified for shorter equality in later repertoire. <br /></td></tr>
-<tr class="separator:a40ff7919dfa3bba8251c37c64da4cf1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b4642cb99c88aee50ffb5415dfe912e"><td class="memItemLeft" align="right" valign="top"><a id="a5b4642cb99c88aee50ffb5415dfe912e"></a>
+<a class="el" href="classvrv_1_1_fraction.html">Fraction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_duration_interface.html#a5b4642cb99c88aee50ffb5415dfe912e">GetInterfaceAlignmentMensuralDuration</a> (int num, int numBase, const <a class="el" href="classvrv_1_1_mensur.html">Mensur</a> *currentMensur, data_DURATION equivalence) const</td></tr>
+<tr class="memdesc:a5b4642cb99c88aee50ffb5415dfe912e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the duration (in <a class="el" href="classvrv_1_1_fraction.html">Fraction</a>) for the element for mensural notation The level of equality is given in equivalence (brevis, semibrevis or minima) <br /></td></tr>
+<tr class="separator:a5b4642cb99c88aee50ffb5415dfe912e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad14ac28eed0c0fbc93bf4b104abb1c2e"><td class="memItemLeft" align="right" valign="top"><a id="ad14ac28eed0c0fbc93bf4b104abb1c2e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_duration_interface.html#ad14ac28eed0c0fbc93bf4b104abb1c2e">IsFirstInBeam</a> (const <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *noteOrRest) const</td></tr>
 <tr class="memdesc:ad14ac28eed0c0fbc93bf4b104abb1c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the note or rest is the first of a beam. <br /></td></tr>
@@ -160,6 +160,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDurDefault</b> (da
 <tr class="memitem:afd39c3b41049378b5a4baa86faf68cae"><td class="memItemLeft" align="right" valign="top"><a id="afd39c3b41049378b5a4baa86faf68cae"></a>
 data_DURATION&#160;</td><td class="memItemRight" valign="bottom"><b>GetDurDefault</b> () const</td></tr>
 <tr class="separator:afd39c3b41049378b5a4baa86faf68cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Return the duration (in Fraction) for the corresponding level of equivalence</div></td></tr>
+<tr class="memitem:a9304a4f7d66c3cb9fb44a0c07a17758e"><td class="memItemLeft" align="right" valign="top"><a id="a9304a4f7d66c3cb9fb44a0c07a17758e"></a>
+<a class="el" href="classvrv_1_1_fraction.html">Fraction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DurationWithBrevisEquivalence</b> (int num, int numBase, const <a class="el" href="classvrv_1_1_mensur.html">Mensur</a> *currentMensur, data_DURATION noteDur) const</td></tr>
+<tr class="separator:a9304a4f7d66c3cb9fb44a0c07a17758e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305349d0e2754908424d915a52f5ba79"><td class="memItemLeft" align="right" valign="top"><a id="a305349d0e2754908424d915a52f5ba79"></a>
+<a class="el" href="classvrv_1_1_fraction.html">Fraction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DurationWithSemibrevisEquivalence</b> (int num, int numBase, const <a class="el" href="classvrv_1_1_mensur.html">Mensur</a> *currentMensur, data_DURATION noteDur) const</td></tr>
+<tr class="separator:a305349d0e2754908424d915a52f5ba79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb4d68aef4bcad20e733edc943e41f8"><td class="memItemLeft" align="right" valign="top"><a id="afbb4d68aef4bcad20e733edc943e41f8"></a>
+<a class="el" href="classvrv_1_1_fraction.html">Fraction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DurationWithMinimaEquivalence</b> (int num, int numBase, const <a class="el" href="classvrv_1_1_mensur.html">Mensur</a> *currentMensur, data_DURATION noteDur) const</td></tr>
+<tr class="separator:afbb4d68aef4bcad20e733edc943e41f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Return the actual (gestural) duration of the note, for both CMN and mensural durations</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>See data_DURATION For Mensural, it is the same (DURATION_2 == DURATION_minima) </p>
 </div></td></tr>
@@ -368,7 +378,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Interface</b> ()<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_duration_interface.html">DurationInterface</a></li>
-    <li class="footer">Generated on Thu Nov 21 2024 13:36:30 for Verovio by
+    <li class="footer">Generated on Thu Nov 21 2024 15:12:46 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

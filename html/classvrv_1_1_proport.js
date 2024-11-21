@@ -12,5 +12,6 @@ var classvrv_1_1_proport =
     [ "GetCumulatedNum", "classvrv_1_1_proport.html#ad137dcebed54e0a143e56a22b3c2f052", null ],
     [ "GetCumulatedNumbase", "classvrv_1_1_proport.html#a0a0370653b298412361d64ea4ae58df8", null ],
     [ "HasToBeAligned", "classvrv_1_1_proport.html#a709615a7579cd3d411ddcc60e1dfb91b", null ],
-    [ "Reset", "classvrv_1_1_proport.html#aefc4610597f2084236c62d348765d062", null ]
+    [ "Reset", "classvrv_1_1_proport.html#aefc4610597f2084236c62d348765d062", null ],
+    [ "ResetCumulate", "classvrv_1_1_proport.html#a0c772b40eeadea7b1d72ca386ec65ee5", null ]
 ];

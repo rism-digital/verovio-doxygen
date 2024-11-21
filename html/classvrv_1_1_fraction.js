@@ -6,6 +6,7 @@ var classvrv_1_1_fraction =
     [ "GetDenominator", "classvrv_1_1_fraction.html#a1ab693fc96e04d173df2c6615ebce166", null ],
     [ "GetNumerator", "classvrv_1_1_fraction.html#a3403af108372dcd9b66d559e0961dc86", null ],
     [ "operator", "classvrv_1_1_fraction.html#afce78665c1707cf4fde426986da3befe", null ],
+    [ "operator%", "classvrv_1_1_fraction.html#a4746e7e5cf311cefa26e228b26d8bceb", null ],
     [ "operator*", "classvrv_1_1_fraction.html#a5563d80988263170927b513eb38b8df9", null ],
     [ "operator+", "classvrv_1_1_fraction.html#a4c6a22ba45f016ba6371321abfd88372", null ],
     [ "operator-", "classvrv_1_1_fraction.html#a12f85b298c02a1e6abb9077061f7bc1d", null ],

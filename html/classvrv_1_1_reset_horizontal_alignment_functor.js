@@ -17,6 +17,7 @@ var classvrv_1_1_reset_horizontal_alignment_functor =
     [ "VisitMeasure", "classvrv_1_1_reset_horizontal_alignment_functor.html#a4262ad59e122da08899ee7eaae4e36a9", null ],
     [ "VisitMRest", "classvrv_1_1_reset_horizontal_alignment_functor.html#a387df61d72afeae0d4b6f3c43acc1e3b", null ],
     [ "VisitNote", "classvrv_1_1_reset_horizontal_alignment_functor.html#a222ad8f5d5a9cfb021219fb284eb7ff3", null ],
+    [ "VisitProport", "classvrv_1_1_reset_horizontal_alignment_functor.html#a7d7935341542c6151a760e28042853eb", null ],
     [ "VisitRest", "classvrv_1_1_reset_horizontal_alignment_functor.html#a1dbfab5c6389e8db64bf24385ee64edd", null ],
     [ "VisitScoreDef", "classvrv_1_1_reset_horizontal_alignment_functor.html#a590388b38c0b36668b88ad1e7001a0aa", null ],
     [ "VisitSystem", "classvrv_1_1_reset_horizontal_alignment_functor.html#af463998a317e4a485cc9878a63aa4792", null ],

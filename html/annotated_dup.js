@@ -113,6 +113,8 @@ var annotated_dup =
       [ "ConvertMarkupArticFunctor", "classvrv_1_1_convert_markup_artic_functor.html", "classvrv_1_1_convert_markup_artic_functor" ],
       [ "ConvertMarkupScoreDefFunctor", "classvrv_1_1_convert_markup_score_def_functor.html", "classvrv_1_1_convert_markup_score_def_functor" ],
       [ "ConvertToCastOffMensuralFunctor", "classvrv_1_1_convert_to_cast_off_mensural_functor.html", "classvrv_1_1_convert_to_cast_off_mensural_functor" ],
+      [ "ConvertToCmnFunctor", "classvrv_1_1_convert_to_cmn_functor.html", "classvrv_1_1_convert_to_cmn_functor" ],
+      [ "ConvertToMensuralViewFunctor", "classvrv_1_1_convert_to_mensural_view_functor.html", "classvrv_1_1_convert_to_mensural_view_functor" ],
       [ "ConvertToPageBasedFunctor", "classvrv_1_1_convert_to_page_based_functor.html", "classvrv_1_1_convert_to_page_based_functor" ],
       [ "ConvertToUnCastOffMensuralFunctor", "classvrv_1_1_convert_to_un_cast_off_mensural_functor.html", "classvrv_1_1_convert_to_un_cast_off_mensural_functor" ],
       [ "Corr", "classvrv_1_1_corr.html", "classvrv_1_1_corr" ],

@@ -15,6 +15,7 @@ var classvrv_1_1_object =
     [ "ClearRelinquishedChildren", "classvrv_1_1_object.html#a667b4432b8f9d9e92bfd34fe5c885099", null ],
     [ "Clone", "classvrv_1_1_object.html#ab2d363effa62d58a65f8aba1330c1379", null ],
     [ "CloneReset", "classvrv_1_1_object.html#a2a1c4d0ed1a15f33637b03670c9aa98f", null ],
+    [ "CopyAttributesTo", "classvrv_1_1_object.html#a5ded43771526c4de94f02da17c47b3bc", null ],
     [ "CopyChildren", "classvrv_1_1_object.html#a4bf38f527d70161c92062a2347b7c11e", null ],
     [ "DeleteChild", "classvrv_1_1_object.html#aa24fba8bae1f0876567f564f98020966", null ],
     [ "DeleteChildrenByComparison", "classvrv_1_1_object.html#acbb7a83e4ae3f1ba54bcd408dce066ee", null ],
