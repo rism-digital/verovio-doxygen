@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classvrv_1_1_calc_ligature_or_neume_pos_functor.html#a169aaa50ecbab600bb0631d8db0b69ea":[1,0,0,82,3],
 "classvrv_1_1_calc_ligature_or_neume_pos_functor.html#a5d2654437d7b71db2dc2b18fb11b6897":[1,0,0,82,0],
 "classvrv_1_1_calc_ligature_or_neume_pos_functor.html#a61cf98a783b98f2cb294d634fb403f58":[1,0,0,82,4],
 "classvrv_1_1_calc_ligature_or_neume_pos_functor.html#ab2b73a857edafe1a954fb6d6c5583d93":[1,0,0,82,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "classvrv_1_1_const_functor_interface.html#a38fc073354d6f565bf8ab74b833fbb5c":[1,0,0,102,17],
 "classvrv_1_1_const_functor_interface.html#a38ff2a143168a10e23993cd13c15deab":[1,0,0,102,259],
 "classvrv_1_1_const_functor_interface.html#a39a8885db4ae72fbcb109f48a9b30501":[1,0,0,102,268],
-"classvrv_1_1_const_functor_interface.html#a39dd6d60fda043cd72ac00574e8d0919":[1,0,0,102,41],
-"classvrv_1_1_const_functor_interface.html#a3a9bd6c0e466acf58d19c34cab812c31":[1,0,0,102,249]
+"classvrv_1_1_const_functor_interface.html#a39dd6d60fda043cd72ac00574e8d0919":[1,0,0,102,41]
 };
