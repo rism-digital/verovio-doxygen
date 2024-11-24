@@ -115,6 +115,7 @@ var classvrv_1_1_doc =
     [ "Reset", "classvrv_1_1_doc.html#a8e5d2a994915fb93f56ca86dc4ae5e6e", null ],
     [ "ResetDataPage", "classvrv_1_1_doc.html#a05086f8905312e8fa756236931155a9e", null ],
     [ "ResetSelectionDoc", "classvrv_1_1_doc.html#aea047fcb782253d6a81450f00e8362b9", null ],
+    [ "ResetToLoading", "classvrv_1_1_doc.html#a584eeab05ce41fd44a5d08d8d8f9d2dd", null ],
     [ "ScoreDefOptimizeDoc", "classvrv_1_1_doc.html#a5e9aa400ebeacad2373631dddbdf6baf", null ],
     [ "ScoreDefSetCurrentDoc", "classvrv_1_1_doc.html#acdae54ac378140e0eeea99e21aabfdf4", null ],
     [ "ScoreDefSetGrpSymDoc", "classvrv_1_1_doc.html#a6f04894a3ea7d133ad51571697ac2a4f", null ],
