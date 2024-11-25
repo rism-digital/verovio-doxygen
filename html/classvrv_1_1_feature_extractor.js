@@ -11,6 +11,7 @@ var classvrv_1_1_feature_extractor =
     [ "m_intervalsDiatonic", "classvrv_1_1_feature_extractor.html#a18563d68c83f16d2d2bed2a73dbeda54", null ],
     [ "m_intervalsIds", "classvrv_1_1_feature_extractor.html#a7de149b115c781799fea4d41d7961209", null ],
     [ "m_pitchesChromatic", "classvrv_1_1_feature_extractor.html#a4069b9e470028273fd00d3e55581ea06", null ],
+    [ "m_pitchesChromaticWithDuration", "classvrv_1_1_feature_extractor.html#ad7825bcb88f91469f38ad1d89292d096", null ],
     [ "m_pitchesDiatonic", "classvrv_1_1_feature_extractor.html#aa4c644b5a1a87be4722d4ea1eaf73224", null ],
     [ "m_pitchesIds", "classvrv_1_1_feature_extractor.html#a4f4aa680b7d22087480f5c77331be83f", null ],
     [ "m_previousNotes", "classvrv_1_1_feature_extractor.html#a3245f44b066535148c2a082661438a74", null ]

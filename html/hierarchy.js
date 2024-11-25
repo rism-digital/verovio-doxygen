@@ -151,6 +151,7 @@ var hierarchy =
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
       [ "vrv::Liquescent", "classvrv_1_1_liquescent.html", null ],
       [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ],
+      [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ],
       [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
       [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
       [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
@@ -340,6 +341,7 @@ var hierarchy =
       [ "vrv::DivLine", "classvrv_1_1_div_line.html", null ],
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
+      [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ],
       [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
@@ -352,6 +354,9 @@ var hierarchy =
     [ "AttFacsimile", null, [
       [ "vrv::FacsimileInterface", "classvrv_1_1_facsimile_interface.html", [
         [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
+        [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
+        [ "vrv::Pb", "classvrv_1_1_pb.html", null ],
+        [ "vrv::Sb", "classvrv_1_1_sb.html", null ],
         [ "vrv::Staff", "classvrv_1_1_staff.html", null ]
       ] ]
     ] ],
@@ -903,6 +908,8 @@ var hierarchy =
       [ "vrv::Zone", "classvrv_1_1_zone.html", null ]
     ] ],
     [ "AttTypography", null, [
+      [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
+      [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ],
       [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
       [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
@@ -1181,6 +1188,8 @@ var hierarchy =
         [ "vrv::ScoreDefUnsetCurrentFunctor", "classvrv_1_1_score_def_unset_current_functor.html", null ],
         [ "vrv::SetCautionaryScoreDefFunctor", "classvrv_1_1_set_cautionary_score_def_functor.html", null ],
         [ "vrv::SetStaffDefRedrawFlagsFunctor", "classvrv_1_1_set_staff_def_redraw_flags_functor.html", null ],
+        [ "vrv::SyncFromFacsimileFunctor", "classvrv_1_1_sync_from_facsimile_functor.html", null ],
+        [ "vrv::SyncToFacsimileFunctor", "classvrv_1_1_sync_to_facsimile_functor.html", null ],
         [ "vrv::UnCastOffFunctor", "classvrv_1_1_un_cast_off_functor.html", null ]
       ] ]
     ] ],
@@ -1298,5 +1307,6 @@ var hierarchy =
     [ "vrv::Toolkit", "classvrv_1_1_toolkit.html", null ],
     [ "vrv::TransPitch", "classvrv_1_1_trans_pitch.html", null ],
     [ "vrv::Transposer", "classvrv_1_1_transposer.html", null ],
-    [ "vrv::View", "classvrv_1_1_view.html", null ]
+    [ "vrv::View", "classvrv_1_1_view.html", null ],
+    [ "vrv::ZipFileReader", "classvrv_1_1_zip_file_reader.html", null ]
 ];

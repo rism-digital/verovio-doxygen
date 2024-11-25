@@ -40,6 +40,8 @@ var classvrv_1_1_measure =
     [ "GetDrawingScoreDef", "classvrv_1_1_measure.html#a2767904582c566e3040d109de818b1ab", null ],
     [ "GetDrawingX", "classvrv_1_1_measure.html#a2d8b2d4baeea0f3c888a25804d8145ba", null ],
     [ "GetDrawingXRel", "classvrv_1_1_measure.html#ae13e1598a773c355074d7e1d72cc8ceb", null ],
+    [ "GetFacsimileInterface", "classvrv_1_1_measure.html#a6bf60d684aa4101fce7d34f5b30895aa", null ],
+    [ "GetFacsimileInterface", "classvrv_1_1_measure.html#aa89e1c930b0e9d7802d1e13310a784f2", null ],
     [ "GetFirstStaffGrpStaves", "classvrv_1_1_measure.html#a361599317323129d770b37bb2fb88576", null ],
     [ "GetIndex", "classvrv_1_1_measure.html#a3bf495c89cefc76c00bb002facefdf54", null ],
     [ "GetInnerCenterX", "classvrv_1_1_measure.html#a0fefb48a87e3b9ccd5b5f2539cdebee1", null ],
@@ -91,9 +93,9 @@ var classvrv_1_1_measure =
     [ "m_cachedOverflow", "classvrv_1_1_measure.html#a0e9b8f947c5c738f51e30de4d7bf94bf", null ],
     [ "m_cachedWidth", "classvrv_1_1_measure.html#a26a94118f64e123ae7d15800b0b128bf", null ],
     [ "m_cachedXRel", "classvrv_1_1_measure.html#a665f3d9783f81d741ffa3a140bd61485", null ],
+    [ "m_drawingFacsX1", "classvrv_1_1_measure.html#a74bf7ce62a9f5f49985336483516d8a8", null ],
+    [ "m_drawingFacsX2", "classvrv_1_1_measure.html#a1824e60c99ec4a759b89cd4b14b6278a", null ],
     [ "m_drawingXRel", "classvrv_1_1_measure.html#a0f66f8a9a11ea45c967fbb796b21d91f", null ],
     [ "m_measureAligner", "classvrv_1_1_measure.html#a39f4319275584a57b898dcbfcbed760e", null ],
-    [ "m_timestampAligner", "classvrv_1_1_measure.html#a680391bcbb2cbc1cc3859a22194133e5", null ],
-    [ "m_xAbs", "classvrv_1_1_measure.html#a01d1317a4566fcddf833550820277d91", null ],
-    [ "m_xAbs2", "classvrv_1_1_measure.html#ac8572f7f5fc2b99d09d5f4fc5e3e42e2", null ]
+    [ "m_timestampAligner", "classvrv_1_1_measure.html#a680391bcbb2cbc1cc3859a22194133e5", null ]
 ];

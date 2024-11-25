@@ -366,6 +366,8 @@ var annotated_dup =
       [ "Symbol", "classvrv_1_1_symbol.html", "classvrv_1_1_symbol" ],
       [ "SymbolDef", "classvrv_1_1_symbol_def.html", "classvrv_1_1_symbol_def" ],
       [ "SymbolTable", "classvrv_1_1_symbol_table.html", "classvrv_1_1_symbol_table" ],
+      [ "SyncFromFacsimileFunctor", "classvrv_1_1_sync_from_facsimile_functor.html", "classvrv_1_1_sync_from_facsimile_functor" ],
+      [ "SyncToFacsimileFunctor", "classvrv_1_1_sync_to_facsimile_functor.html", "classvrv_1_1_sync_to_facsimile_functor" ],
       [ "System", "classvrv_1_1_system.html", "classvrv_1_1_system" ],
       [ "SystemAligner", "classvrv_1_1_system_aligner.html", "classvrv_1_1_system_aligner" ],
       [ "SystemElement", "classvrv_1_1_system_element.html", "classvrv_1_1_system_element" ],
@@ -406,6 +408,7 @@ var annotated_dup =
       [ "Verse", "classvrv_1_1_verse.html", "classvrv_1_1_verse" ],
       [ "View", "classvrv_1_1_view.html", "classvrv_1_1_view" ],
       [ "VisibleStaffDefOrGrpObject", "classvrv_1_1_visible_staff_def_or_grp_object.html", "classvrv_1_1_visible_staff_def_or_grp_object" ],
+      [ "ZipFileReader", "classvrv_1_1_zip_file_reader.html", "classvrv_1_1_zip_file_reader" ],
       [ "Zone", "classvrv_1_1_zone.html", "classvrv_1_1_zone" ]
     ] ]
 ];

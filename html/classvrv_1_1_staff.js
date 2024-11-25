@@ -46,11 +46,11 @@ var classvrv_1_1_staff =
     [ "Reset", "classvrv_1_1_staff.html#a5d121ffdcc450f5e40f8066626ed7ecf", null ],
     [ "SetAlignment", "classvrv_1_1_staff.html#ae1946399a16d77b31e81fe40fd517695", null ],
     [ "SetFromFacsimile", "classvrv_1_1_staff.html#a1b0a3fddf3ccdc77aebc8ea65158ba7b", null ],
+    [ "m_drawingFacsY", "classvrv_1_1_staff.html#a427bb15c6479bda6a432dc208d25921e", null ],
     [ "m_drawingLines", "classvrv_1_1_staff.html#a983ca678e5969c874a018a2b3587942c", null ],
     [ "m_drawingNotationType", "classvrv_1_1_staff.html#a51a65ab400013ddc21d125a01aa2256e", null ],
     [ "m_drawingStaffDef", "classvrv_1_1_staff.html#a4fcf7b214a32b47b0a8597d8a69089ec", null ],
     [ "m_drawingStaffSize", "classvrv_1_1_staff.html#af64a2d11ba5b97412094e00d6f908c63", null ],
     [ "m_drawingTuning", "classvrv_1_1_staff.html#a03ed750f41c544c2a808be4016e910c2", null ],
-    [ "m_timeSpanningElements", "classvrv_1_1_staff.html#a172c03af3f8a3beb704f4bb35a751966", null ],
-    [ "m_yAbs", "classvrv_1_1_staff.html#abf3552a9fecc27efcc21fae14cf1836f", null ]
+    [ "m_timeSpanningElements", "classvrv_1_1_staff.html#a172c03af3f8a3beb704f4bb35a751966", null ]
 ];
