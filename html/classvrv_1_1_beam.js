@@ -7,6 +7,7 @@ var classvrv_1_1_beam =
     [ "AcceptEnd", "classvrv_1_1_beam.html#a4bb6485ecd656962131dace79d9626f6", null ],
     [ "AcceptEnd", "classvrv_1_1_beam.html#a31f984c65a4bb7d44bb57aeadfeac8d2", null ],
     [ "Clone", "classvrv_1_1_beam.html#ac0e454de096901edf2da61d1d07c80b0", null ],
+    [ "CloneReset", "classvrv_1_1_beam.html#a45e6311da15fa719e6fbdc8fe32600ed", null ],
     [ "FilterList", "classvrv_1_1_beam.html#a2b3cdfa137cce9ffc5df789eb8f063b7", null ],
     [ "GetAdditionalBeamCount", "classvrv_1_1_beam.html#a091ac4c2fb6cdd046b679e61069f638d", null ],
     [ "GetBeamDrawingInterface", "classvrv_1_1_beam.html#a30b0869084e93fa6f7b3b63120f2aae2", null ],
@@ -22,7 +23,6 @@ var classvrv_1_1_beam =
     [ "IsSupportedChild", "classvrv_1_1_beam.html#a2222ff99c31c7384fc4e3c6dff08b47a", null ],
     [ "IsTabBeam", "classvrv_1_1_beam.html#a26f7b2d176314772a13b06ec15d23758", null ],
     [ "Reset", "classvrv_1_1_beam.html#a8e2ee9ef2db29335c50410da804a5fe2", null ],
-    [ "SetElementShortening", "classvrv_1_1_beam.html#ace52578a0183bd8725abe2c07e92d77a", null ],
     [ "SetStemSameasBeam", "classvrv_1_1_beam.html#a5b4cdbe83e08d709c5202e222e5090bf", null ],
     [ "m_beamSegment", "classvrv_1_1_beam.html#a522873ab5d186e4d7036d6a00a408f83", null ]
 ];

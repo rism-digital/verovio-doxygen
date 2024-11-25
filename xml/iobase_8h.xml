@@ -6,10 +6,12 @@
     <includes local="no">vector</includes>
     <includes refid="vrvdef_8h" local="yes">vrvdef.h</includes>
     <includedby refid="ioabc_8h" local="yes">ioabc.h</includedby>
+    <includedby refid="iocmme_8h" local="yes">iocmme.h</includedby>
     <includedby refid="iohumdrum_8h" local="yes">iohumdrum.h</includedby>
     <includedby refid="iomei_8h" local="yes">iomei.h</includedby>
     <includedby refid="iomusxml_8h" local="yes">iomusxml.h</includedby>
     <includedby refid="iopae_8h" local="yes">iopae.h</includedby>
+    <includedby refid="iovolpiano_8h" local="yes">iovolpiano.h</includedby>
     <incdepgraph>
       <node id="7">
         <label>list</label>
@@ -75,23 +77,27 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4">
+      <node id="5">
         <label>iomei.h</label>
         <link refid="iomei_8h_source"/>
       </node>
-      <node id="6">
+      <node id="7">
         <label>iopae.h</label>
         <link refid="iopae_8h_source"/>
+      </node>
+      <node id="8">
+        <label>iovolpiano.h</label>
+        <link refid="iovolpiano_8h_source"/>
       </node>
       <node id="2">
         <label>ioabc.h</label>
         <link refid="ioabc_8h_source"/>
       </node>
-      <node id="5">
+      <node id="6">
         <label>iomusxml.h</label>
         <link refid="iomusxml_8h_source"/>
       </node>
-      <node id="3">
+      <node id="4">
         <label>iohumdrum.h</label>
         <link refid="iohumdrum_8h_source"/>
       </node>
@@ -108,6 +114,14 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iocmme.h</label>
+        <link refid="iocmme_8h_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classvrv_1_1_output" prot="public">vrv::Output</innerclass>
@@ -147,7 +161,7 @@
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors<sp/>and<sp/>destructors</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_output" kindref="compound">Output</ref>(<ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc,<sp/>std::string<sp/>filename);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_output" kindref="compound">Output</ref>(<ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_output" kindref="compound">Output</ref>(){};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_output" kindref="compound">Output</ref>()<sp/>{}</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_output" kindref="compound">Output</ref>();</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="42" refid="classvrv_1_1_output_1a2f9a229fd8899ee37bb3575f1c769a1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_output_1a2f9a229fd8899ee37bb3575f1c769a1c" kindref="member">WriteObject</ref>(<ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>

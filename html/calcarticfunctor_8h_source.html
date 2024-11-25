@@ -125,37 +125,39 @@ $(document).ready(function(){initNavTree('calcarticfunctor_8h_source.html',''); 
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// Calculate shift for the articulation based on its type and presence of other articulations</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> CalculateHorizontalShift(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_artic.html">Artic</a> *artic, <span class="keywordtype">bool</span> virtualStem) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// The layer element parent</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *m_parent;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// The current stem direction</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    data_STEMDIRECTION m_stemDir;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// The above and below staff</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classvrv_1_1_staff.html">Staff</a> *m_staffAbove;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classvrv_1_1_staff.html">Staff</a> *m_staffBelow;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// The above and below layer</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classvrv_1_1_layer.html">Layer</a> *m_layerAbove;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classvrv_1_1_layer.html">Layer</a> *m_layerBelow;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// True if above/below is cross staff</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> m_crossStaffAbove;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> m_crossStaffBelow;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// Include the parent beam staff in the calculation of the above and below staff</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> IncludeBeamStaff(<a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *layerElement);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// The layer element parent</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *m_parent;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// The current stem direction</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    data_STEMDIRECTION m_stemDir;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// The above and below staff</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classvrv_1_1_staff.html">Staff</a> *m_staffAbove;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classvrv_1_1_staff.html">Staff</a> *m_staffBelow;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// The above and below layer</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classvrv_1_1_layer.html">Layer</a> *m_layerAbove;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classvrv_1_1_layer.html">Layer</a> *m_layerBelow;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// True if above/below is cross staff</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> m_crossStaffAbove;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> m_crossStaffBelow;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif // __VRV_CALCARTICFUNCTOR_H__</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif // __VRV_CALCARTICFUNCTOR_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_staff_html"><div class="ttname"><a href="classvrv_1_1_staff.html">vrv::Staff</a></div><div class="ttdoc">This class represents a staff in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> staff.h:79</div></div>
+<div class="ttc" id="aclassvrv_1_1_staff_html"><div class="ttname"><a href="classvrv_1_1_staff.html">vrv::Staff</a></div><div class="ttdoc">This class represents a staff in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> staff.h:102</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:40</div></div>
 <div class="ttc" id="aclassvrv_1_1_chord_html"><div class="ttname"><a href="classvrv_1_1_chord.html">vrv::Chord</a></div><div class="ttdoc">This class represents a collection of notes in the same layer with the same onset time.</div><div class="ttdef"><b>Definition:</b> chord.h:32</div></div>
 <div class="ttc" id="aclassvrv_1_1_calc_artic_functor_html_a485fa22ba1b81d7d7edc6bb456f51d12"><div class="ttname"><a href="classvrv_1_1_calc_artic_functor.html#a485fa22ba1b81d7d7edc6bb456f51d12">vrv::CalcArticFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> calcarticfunctor.h:35</div></div>
 <div class="ttc" id="aclassvrv_1_1_artic_html"><div class="ttname"><a href="classvrv_1_1_artic.html">vrv::Artic</a></div><div class="ttdef"><b>Definition:</b> artic.h:22</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html"><div class="ttname"><a href="classvrv_1_1_note.html">vrv::Note</a></div><div class="ttdoc">This class models the MEI &lt;note&gt; element.</div><div class="ttdef"><b>Definition:</b> note.h:46</div></div>
-<div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:44</div></div>
+<div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:46</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_html"><div class="ttname"><a href="classvrv_1_1_layer.html">vrv::Layer</a></div><div class="ttdoc">This class represents a layer in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> layer.h:33</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_functor_html"><div class="ttname"><a href="classvrv_1_1_doc_functor.html">vrv::DocFunctor</a></div><div class="ttdoc">This abstract class is the base class for all mutable functors that need access to the document.</div><div class="ttdef"><b>Definition:</b> functor.h:151</div></div>
 <div class="ttc" id="aclassvrv_1_1_calc_artic_functor_html"><div class="ttname"><a href="classvrv_1_1_calc_artic_functor.html">vrv::CalcArticFunctor</a></div><div class="ttdoc">This class calculates the position of the outside articulations.</div><div class="ttdef"><b>Definition:</b> calcarticfunctor.h:22</div></div>
@@ -163,7 +165,7 @@ $(document).ready(function(){initNavTree('calcarticfunctor_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>calcarticfunctor.h</b></li>
-    <li class="footer">Generated on Tue May 7 2024 13:52:46 for Verovio by
+    <li class="footer">Generated on Mon Nov 25 2024 13:25:05 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

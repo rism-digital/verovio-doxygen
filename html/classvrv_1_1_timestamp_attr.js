@@ -8,7 +8,7 @@ var classvrv_1_1_timestamp_attr =
     [ "AcceptEnd", "classvrv_1_1_timestamp_attr.html#ab9646a275933f4e78875d65f03a741bb", null ],
     [ "GetActualDurPos", "classvrv_1_1_timestamp_attr.html#a12c9da5bc08e5b8edad9f1b19506034f", null ],
     [ "GetClassName", "classvrv_1_1_timestamp_attr.html#a99058722d68b11bf41e882955d95f965", null ],
-    [ "GetTimestampAttrAlignmentDuration", "classvrv_1_1_timestamp_attr.html#a31df3f579a4941c27081c35ac30ad8cd", null ],
+    [ "GetTimestampAttrAlignmentDuration", "classvrv_1_1_timestamp_attr.html#a27622b1e41918202707b46e8fe8e56df", null ],
     [ "Reset", "classvrv_1_1_timestamp_attr.html#ab45a5b594dc5ba903510f1ddc9b73751", null ],
     [ "SetDrawingPos", "classvrv_1_1_timestamp_attr.html#a8f4392d33fe27f6275b8e585e4576127", null ]
 ];

@@ -123,22 +123,37 @@ $(document).ready(function(){initNavTree('facsimile_8h_source.html',''); initRes
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> Zone *FindZoneByID(<span class="keyword">const</span> std::string &amp;zoneId) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> GetMaxX() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span> GetMaxY() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_facsimile.html#afae3f5b8d7b3a852e87c02de6796ee7f">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_facsimile.html#afae3f5b8d7b3a852e87c02de6796ee7f">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassvrv_1_1_facsimile_html_afae3f5b8d7b3a852e87c02de6796ee7f"><div class="ttname"><a href="classvrv_1_1_facsimile.html#afae3f5b8d7b3a852e87c02de6796ee7f">vrv::Facsimile::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:59</div></div>
 <div class="ttc" id="aclassvrv_1_1_facsimile_html_acb7baa3837aafe0d953673a03387a66d"><div class="ttname"><a href="classvrv_1_1_facsimile.html#acb7baa3837aafe0d953673a03387a66d">vrv::Facsimile::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> facsimile.h:40</div></div>
 <div class="ttc" id="aclassvrv_1_1_facsimile_html_a98f220f56f306ef54977504ada1249fb"><div class="ttname"><a href="classvrv_1_1_facsimile.html#a98f220f56f306ef54977504ada1249fb">vrv::Facsimile::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Base method for checking if a child can be added.</div></div>
 <div class="ttc" id="aclassvrv_1_1_facsimile_html"><div class="ttname"><a href="classvrv_1_1_facsimile.html">vrv::Facsimile</a></div><div class="ttdoc">Implements the facsimile element in MEI.</div><div class="ttdef"><b>Definition:</b> facsimile.h:31</div></div>
-<div class="ttc" id="aclassvrv_1_1_facsimile_html_a647ce9a5ee0ef989ef9da2db1d05705b"><div class="ttname"><a href="classvrv_1_1_facsimile.html#a647ce9a5ee0ef989ef9da2db1d05705b">vrv::Facsimile::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Reset the object, that is 1) removing all childs and 2) resetting all attributes.</div></div>
+<div class="ttc" id="aclassvrv_1_1_facsimile_html_a647ce9a5ee0ef989ef9da2db1d05705b"><div class="ttname"><a href="classvrv_1_1_facsimile.html#a647ce9a5ee0ef989ef9da2db1d05705b">vrv::Facsimile::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Reset the object, that is 1) removing all children and 2) resetting all attributes.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>facsimile.h</b></li>
-    <li class="footer">Generated on Tue May 7 2024 13:52:46 for Verovio by
+    <li class="footer">Generated on Mon Nov 25 2024 13:25:05 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

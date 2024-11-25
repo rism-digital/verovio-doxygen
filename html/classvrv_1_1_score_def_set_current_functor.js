@@ -9,6 +9,7 @@ var classvrv_1_1_score_def_set_current_functor =
     [ "VisitMeasure", "classvrv_1_1_score_def_set_current_functor.html#a425ac68509cb4fefa324e1e899d56ebf", null ],
     [ "VisitMensur", "classvrv_1_1_score_def_set_current_functor.html#a60563e4830b4ef3b63c4ec4c26fb68ff", null ],
     [ "VisitPage", "classvrv_1_1_score_def_set_current_functor.html#a1a850ec95660d27fc19c7774342d3f6b", null ],
+    [ "VisitProport", "classvrv_1_1_score_def_set_current_functor.html#abb7c7010243fb54d670cda875052134f", null ],
     [ "VisitScore", "classvrv_1_1_score_def_set_current_functor.html#a77cb064b921ce1b8becd273f3b229665", null ],
     [ "VisitScoreDef", "classvrv_1_1_score_def_set_current_functor.html#ad62ced4a4f06ef5286f989ab0f0d3c94", null ],
     [ "VisitStaff", "classvrv_1_1_score_def_set_current_functor.html#a5d2b533c177c732d52bc1ab0e473b406", null ],

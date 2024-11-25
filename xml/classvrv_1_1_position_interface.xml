@@ -14,6 +14,8 @@
     <derivedcompoundref refid="classvrv_1_1_multi_rest" prot="public" virt="non-virtual">vrv::MultiRest</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_nc" prot="public" virt="non-virtual">vrv::Nc</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_note" prot="public" virt="non-virtual">vrv::Note</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_oriscus" prot="public" virt="non-virtual">vrv::Oriscus</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_quilisma" prot="public" virt="non-virtual">vrv::Quilisma</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_rest" prot="public" virt="non-virtual">vrv::Rest</derivedcompoundref>
     <includes refid="positioninterface_8h" local="no">positioninterface.h</includes>
       <sectiondef kind="user-defined">
@@ -52,6 +54,7 @@
         <argsstring>() override</argsstring>
         <name>Reset</name>
         <reimplements refid="classvrv_1_1_interface_1a5dac3707db3650101729ff5610bb6200">Reset</reimplements>
+        <reimplementedby refid="classvrv_1_1_quilisma_1a36dfcd7d82b8ea67e7ea2afeff406733">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_rest_1a5ecc39383af3006f31d2bcb0d7b09fac">Reset</reimplementedby>
         <briefdescription>
 <para>Virtual reset method. </para>
@@ -137,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="70" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="78" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_position_interface_1a39ee8812feea8812612377a2c8b351aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>FunctorCode</type>
@@ -158,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="71" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="79" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -174,7 +177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="82" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" bodystart="82" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="90" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" bodystart="90" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -218,6 +221,33 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="58" column="10"/>
       </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_position_interface_1a6e8bf8831df746be05f4ce177c880e96" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::PositionInterface::HasLedgerLines</definition>
+        <argsstring>(int &amp;linesAbove, int &amp;linesBelow, const Staff *staff) const</argsstring>
+        <name>HasLedgerLines</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>linesAbove</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>linesBelow</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <declname>staff</declname>
+        </param>
+        <briefdescription>
+<para>Check if the note has ledger lines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If staff is passed, use it for getting the staff line number. Otherwise, it will look for the <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> ancestor. Set the value of ledger lines above or below. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="66" column="10"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>This class is an interface for elements with a position on the staff, such as rests. </para>
@@ -238,6 +268,12 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="15">
+        <label>vrv::Quilisma</label>
+        <link refid="classvrv_1_1_quilisma"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="6">
         <label>vrv::Custos</label>
         <link refid="classvrv_1_1_custos"/>
@@ -248,13 +284,19 @@
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
+      <node id="14">
+        <label>vrv::Oriscus</label>
+        <link refid="classvrv_1_1_oriscus"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="13">
         <label>vrv::Note</label>
         <link refid="classvrv_1_1_note"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="14">
+      <node id="16">
         <label>vrv::Rest</label>
         <link refid="classvrv_1_1_rest"/>
         <childnode refid="1" relation="public-inheritance">
@@ -329,12 +371,13 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="30" column="88" bodyfile="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" bodystart="30" bodyend="83"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" line="30" column="88" bodyfile="/home/runner/work/verovio/verovio/include/vrv/positioninterface.h" bodystart="30" bodyend="91"/>
     <listofallmembers>
       <member refid="classvrv_1_1_position_interface_1ad108f633f9d1d04b255f4c8a40092770" prot="public" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>CalcDrawingLoc</name></member>
       <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>GetAttClasses</name></member>
       <member refid="classvrv_1_1_position_interface_1a48e070408ebae29ba2e89806fe4b5ff8" prot="public" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>GetDrawingLoc</name></member>
       <member refid="classvrv_1_1_position_interface_1a3312dbe1415b5eafb2762ffe2e612d54" prot="public" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>HasIdenticalPositionInterface</name></member>
+      <member refid="classvrv_1_1_position_interface_1a6e8bf8831df746be05f4ce177c880e96" prot="public" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>HasLedgerLines</name></member>
       <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>Interface</name></member>
       <member refid="classvrv_1_1_position_interface_1acb9985fed8ff285e4ba9956129bc9e22" prot="public" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>InterfaceResetData</name></member>
       <member refid="classvrv_1_1_position_interface_1a39ee8812feea8812612377a2c8b351aa" prot="public" virt="non-virtual"><scope>vrv::PositionInterface</scope><name>InterfaceResetHorizontalAlignment</name></member>

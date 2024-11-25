@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['zipfilereader_1619',['ZipFileReader',['../classvrv_1_1_zip_file_reader.html',1,'vrv']]],
-  ['zone_1620',['Zone',['../classvrv_1_1_zone.html',1,'vrv']]]
+  ['verse_1671',['Verse',['../classvrv_1_1_verse.html',1,'vrv']]],
+  ['view_1672',['View',['../classvrv_1_1_view.html',1,'vrv']]],
+  ['visiblestaffdeforgrpobject_1673',['VisibleStaffDefOrGrpObject',['../classvrv_1_1_visible_staff_def_or_grp_object.html',1,'vrv']]],
+  ['volpianoinput_1674',['VolpianoInput',['../classvrv_1_1_volpiano_input.html',1,'vrv']]]
 ];

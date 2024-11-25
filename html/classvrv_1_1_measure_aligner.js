@@ -8,13 +8,13 @@ var classvrv_1_1_measure_aligner =
     [ "AcceptEnd", "classvrv_1_1_measure_aligner.html#a87effbfe4e9a5c9e83ab75f9ead8e76e", null ],
     [ "AdjustGraceNoteSpacing", "classvrv_1_1_measure_aligner.html#a7d9b7857e1a626e78e19915824e01349", null ],
     [ "AdjustProportionally", "classvrv_1_1_measure_aligner.html#ae6a64b2c27e8f75b9bf6071b10fd2e07", null ],
-    [ "GetAlignmentAtTime", "classvrv_1_1_measure_aligner.html#aeac4bcbe00b4bd1b05cae495b8dbb977", null ],
-    [ "GetInitialTstampDur", "classvrv_1_1_measure_aligner.html#a70c73263b1a8a7d11482a73351b43a75", null ],
+    [ "GetAlignmentAtTime", "classvrv_1_1_measure_aligner.html#a7b19df17768c52c57de3e5d87056188e", null ],
+    [ "GetInitialTstampDur", "classvrv_1_1_measure_aligner.html#ad9887988fc96f5ba057337693a41b770", null ],
     [ "GetLeftAlignment", "classvrv_1_1_measure_aligner.html#a820ff586b2d660db7cc3a04d088d87b7", null ],
     [ "GetLeftAlignment", "classvrv_1_1_measure_aligner.html#ad2145eb0f9507bf774f2799c586dc845", null ],
     [ "GetLeftBarLineAlignment", "classvrv_1_1_measure_aligner.html#ab196c809e7b14445ff738a516c6d1877", null ],
     [ "GetLeftBarLineAlignment", "classvrv_1_1_measure_aligner.html#a992ff8238accc731eabf338f2de1a28d", null ],
-    [ "GetMaxTime", "classvrv_1_1_measure_aligner.html#af9c8e8bed146847a7cfd14db87164ff8", null ],
+    [ "GetMaxTime", "classvrv_1_1_measure_aligner.html#a31dfc213071b64994ee17c9ca9f1d917", null ],
     [ "GetNonJustifiableMargin", "classvrv_1_1_measure_aligner.html#a7532c4d14f839f6227cba5ca14ccf8f8", null ],
     [ "GetRightAlignment", "classvrv_1_1_measure_aligner.html#a8af99381dcec89fba04d962b24a54093", null ],
     [ "GetRightAlignment", "classvrv_1_1_measure_aligner.html#afd40e8d1ed3297d8adfb71682cd040c9", null ],
@@ -23,6 +23,6 @@ var classvrv_1_1_measure_aligner =
     [ "IsSupportedChild", "classvrv_1_1_measure_aligner.html#a268ddc7a43d53796374c10771d641d87", null ],
     [ "PushAlignmentsRight", "classvrv_1_1_measure_aligner.html#a2ea7245b5f0cf0bb1bc4fc144f29e8af", null ],
     [ "Reset", "classvrv_1_1_measure_aligner.html#a8c1fa7cdc214b01b2804f7a6b3b2c30d", null ],
-    [ "SetInitialTstamp", "classvrv_1_1_measure_aligner.html#a49a407aaec5b22bfa71116770b3746a8", null ],
-    [ "SetMaxTime", "classvrv_1_1_measure_aligner.html#aab4edf29c88be6e12e726668af041d9d", null ]
+    [ "SetInitialTstamp", "classvrv_1_1_measure_aligner.html#ad32dbca896d7753eec67391b24b82860", null ],
+    [ "SetMaxTime", "classvrv_1_1_measure_aligner.html#a5ea39bc18c4e613620932a35e12fef87", null ]
 ];

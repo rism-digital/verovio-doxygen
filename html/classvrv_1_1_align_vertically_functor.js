@@ -11,6 +11,7 @@ var classvrv_1_1_align_vertically_functor =
     [ "VisitRunningElement", "classvrv_1_1_align_vertically_functor.html#a7ce025d65b45d2e10d333e8643cc0d5d", null ],
     [ "VisitStaff", "classvrv_1_1_align_vertically_functor.html#a348ea10599437c3c14022f3d77c5553b", null ],
     [ "VisitStaffAlignmentEnd", "classvrv_1_1_align_vertically_functor.html#a2e9f5f7157d3f9ac9a568139acbbefa3", null ],
+    [ "VisitSyllable", "classvrv_1_1_align_vertically_functor.html#a934059a145139500f617013eb6ac5a16", null ],
     [ "VisitSystem", "classvrv_1_1_align_vertically_functor.html#a8acfa98f93b9b004026b7a5510f156fe", null ],
     [ "VisitSystemEnd", "classvrv_1_1_align_vertically_functor.html#a793cfeb0d46656789c1acca411771690", null ],
     [ "VisitVerse", "classvrv_1_1_align_vertically_functor.html#ac15a5d1ee111243698224e0974caf788", null ]
