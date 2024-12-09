@@ -260,7 +260,7 @@ var searchData=
   ['gettotalheight_2101',['GetTotalHeight',['../classvrv_1_1_div.html#a91d39ea4e0ef50fc1e492cf1a9194359',1,'vrv::Div::GetTotalHeight()'],['../classvrv_1_1_pg_foot.html#aaa4f24ede17c57dd9500deec30c2612a',1,'vrv::PgFoot::GetTotalHeight()'],['../classvrv_1_1_pg_head.html#ad591b9968d3b1bc9bb448989131a4112',1,'vrv::PgHead::GetTotalHeight()'],['../classvrv_1_1_text_layout_element.html#a9513edb9a22f5cc7275349e15a306618',1,'vrv::TextLayoutElement::GetTotalHeight()']]],
   ['gettranspitch_2102',['GetTransPitch',['../classvrv_1_1_note.html#a475be4c24b3429a6c797c23f53608a54',1,'vrv::Note']]],
   ['gettrillglyph_2103',['GetTrillGlyph',['../classvrv_1_1_trill.html#a236a83842af6545bc6cab3ac28dfa629',1,'vrv::Trill']]],
-  ['gettstampstaves_2104',['GetTstampStaves',['../classvrv_1_1_time_point_interface.html#a27a48797d818dd92d3f7ff82f0678a17',1,'vrv::TimePointInterface']]],
+  ['gettstampstaves_2104',['GetTstampStaves',['../classvrv_1_1_time_point_interface.html#ae4f6394e5f3bf1d2bc5b027f1c964cdc',1,'vrv::TimePointInterface']]],
   ['getturnglyph_2105',['GetTurnGlyph',['../classvrv_1_1_turn.html#a48a67a7daeac935a7b21eb17a94f7192',1,'vrv::Turn']]],
   ['getturnheight_2106',['GetTurnHeight',['../classvrv_1_1_turn.html#a473be451c390d4f472b559a04b6ed81d',1,'vrv::Turn']]],
   ['gettype_2107',['GetType',['../classvrv_1_1_doc.html#a213c6fa5fa357db062f4b86665689e44',1,'vrv::Doc']]],
