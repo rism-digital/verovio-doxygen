@@ -7,7 +7,7 @@ var classvrv_1_1_tuning =
     [ "AcceptEnd", "classvrv_1_1_tuning.html#a92b62f0a81febdd24c2d3f566370b67d", null ],
     [ "AcceptEnd", "classvrv_1_1_tuning.html#a3e708ff35af878edc465acbe2be2bbc3", null ],
     [ "CalcPitchNumber", "classvrv_1_1_tuning.html#aeeb00152593a29cc5f107b3f2bb45b3e", null ],
-    [ "CalcPitchPos", "classvrv_1_1_tuning.html#ab3462e2b0610232c52c1dbe6f72b3434", null ],
+    [ "CalcPitchPos", "classvrv_1_1_tuning.html#ad40e7e05599f3e075f1991ba4094b04d", null ],
     [ "Clone", "classvrv_1_1_tuning.html#a554c7b662fe5f1532eb2b345ffb644e9", null ],
     [ "GetClassName", "classvrv_1_1_tuning.html#a7258606a9496e39419181ff6919bb492", null ],
     [ "IsSupportedChild", "classvrv_1_1_tuning.html#ac1a9a7216be86af817baa6aa00c9556f", null ],

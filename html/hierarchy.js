@@ -49,7 +49,9 @@ var hierarchy =
           ] ],
           [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
           [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
-        ] ]
+        ] ],
+        [ "vrv::Note", "classvrv_1_1_note.html", null ],
+        [ "vrv::Rest", "classvrv_1_1_rest.html", null ]
       ] ]
     ] ],
     [ "AttArpegLog", null, [
@@ -818,7 +820,8 @@ var hierarchy =
         [ "vrv::Oriscus", "classvrv_1_1_oriscus.html", null ],
         [ "vrv::Quilisma", "classvrv_1_1_quilisma.html", null ],
         [ "vrv::Rest", "classvrv_1_1_rest.html", null ]
-      ] ]
+      ] ],
+      [ "vrv::TabDurSym", "classvrv_1_1_tab_dur_sym.html", null ]
     ] ],
     [ "AttStaffLocPitched", null, [
       [ "vrv::PositionInterface", "classvrv_1_1_position_interface.html", null ]
@@ -930,7 +933,8 @@ var hierarchy =
       [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
     ] ],
     [ "AttVerticalAlign", null, [
-      [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", null ]
+      [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", null ],
+      [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
     ] ],
     [ "AttVerticalGroup", null, [
       [ "vrv::Dir", "classvrv_1_1_dir.html", null ],

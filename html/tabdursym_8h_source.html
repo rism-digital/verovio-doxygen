@@ -105,53 +105,54 @@ $(document).ready(function(){initNavTree('tabdursym_8h_source.html',''); initRes
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// TabDurSym</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classvrv_1_1_tab_dur_sym.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_tab_dur_sym.html">TabDurSym</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>, <span class="keyword">public</span> <a class="code" href="classvrv_1_1_stemmed_drawing_interface.html">StemmedDrawingInterface</a>, <span class="keyword">public</span> AttNNumberLike {</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classvrv_1_1_tab_dur_sym.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_tab_dur_sym.html">TabDurSym</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>, <span class="keyword">public</span> <a class="code" href="classvrv_1_1_stemmed_drawing_interface.html">StemmedDrawingInterface</a>, <span class="keyword">public</span> AttNNumberLike, <span class="keyword">public</span> AttStaffLoc {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classvrv_1_1_tab_dur_sym.html">TabDurSym</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_tab_dur_sym.html">TabDurSym</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> Reset() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;TabDurSym&quot;</span>; }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classvrv_1_1_stemmed_drawing_interface.html">StemmedDrawingInterface</a> *GetStemmedDrawingInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;StemmedDrawingInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_stemmed_drawing_interface.html">StemmedDrawingInterface</a> *GetStemmedDrawingInterface()<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const StemmedDrawingInterface *&gt;(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classvrv_1_1_tab_dur_sym.html#a1e85bce43dc9ad280471f7ef5f147da0">   49</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_tab_dur_sym.html#a1e85bce43dc9ad280471f7ef5f147da0">HasToBeAligned</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_tab_dur_sym.html#a2d7ba2c667df361c9dcda9df8b75093a">IsSupportedChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tab_dur_sym.html#a3d84edc997ae622affddd9f02ae1ce3c">AddChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> <a class="code" href="classvrv_1_1_tab_dur_sym.html#a974af81521dc9b6ef3a2891f894eb687">GetStemUpSE</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">bool</span> isCueSize) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> GetStemDownNW(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">bool</span> isCueSize) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> CalcStemLenInThirdUnits(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff, data_STEMDIRECTION stemDir) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tab_dur_sym.html#a22d57605fa11c88d50c0a2fc5a4be9d7">AdjustDrawingYRel</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_tab_dur_sym.html#adb50b1aab19a6eef70e7eecad53140a5">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_tab_dur_sym.html#adb50b1aab19a6eef70e7eecad53140a5">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classvrv_1_1_tab_dur_sym.html#a689b8839f1832ef851618fe42e2dbba2">   33</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_tab_dur_sym.html#a689b8839f1832ef851618fe42e2dbba2">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_tab_dur_sym.html">TabDurSym</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> Reset() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;TabDurSym&quot;</span>; }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    StemmedDrawingInterface *GetStemmedDrawingInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;StemmedDrawingInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> StemmedDrawingInterface *GetStemmedDrawingInterface()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const StemmedDrawingInterface *&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classvrv_1_1_tab_dur_sym.html#a1e85bce43dc9ad280471f7ef5f147da0">   50</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_tab_dur_sym.html#a1e85bce43dc9ad280471f7ef5f147da0">HasToBeAligned</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_tab_dur_sym.html#a2d7ba2c667df361c9dcda9df8b75093a">IsSupportedChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tab_dur_sym.html#a3d84edc997ae622affddd9f02ae1ce3c">AddChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> <a class="code" href="classvrv_1_1_tab_dur_sym.html#a974af81521dc9b6ef3a2891f894eb687">GetStemUpSE</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">bool</span> isCueSize) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classvrv_1_1_point.html">Point</a> GetStemDownNW(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> staffSize, <span class="keywordtype">bool</span> isCueSize) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> CalcStemLenInThirdUnits(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff, data_STEMDIRECTION stemDir) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_tab_dur_sym.html#a22d57605fa11c88d50c0a2fc5a4be9d7">AdjustDrawingYRel</a>(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff, <span class="keyword">const</span> <a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_tab_dur_sym.html#adb50b1aab19a6eef70e7eecad53140a5">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_tab_dur_sym.html#adb50b1aab19a6eef70e7eecad53140a5">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_staff_html"><div class="ttname"><a href="classvrv_1_1_staff.html">vrv::Staff</a></div><div class="ttdoc">This class represents a staff in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> staff.h:102</div></div>
@@ -165,15 +166,16 @@ $(document).ready(function(){initNavTree('tabdursym_8h_source.html',''); initRes
 <div class="ttc" id="aclassvrv_1_1_const_functor_html"><div class="ttname"><a href="classvrv_1_1_const_functor.html">vrv::ConstFunctor</a></div><div class="ttdoc">This abstract class is the base class for all const functors.</div><div class="ttdef"><b>Definition:</b> functor.h:126</div></div>
 <div class="ttc" id="aclassvrv_1_1_tab_dur_sym_html_adb50b1aab19a6eef70e7eecad53140a5"><div class="ttname"><a href="classvrv_1_1_tab_dur_sym.html#adb50b1aab19a6eef70e7eecad53140a5">vrv::TabDurSym::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_stemmed_drawing_interface_html"><div class="ttname"><a href="classvrv_1_1_stemmed_drawing_interface.html">vrv::StemmedDrawingInterface</a></div><div class="ttdoc">This class is an interface for MEI stemmed element.</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:320</div></div>
-<div class="ttc" id="aclassvrv_1_1_tab_dur_sym_html_a1e85bce43dc9ad280471f7ef5f147da0"><div class="ttname"><a href="classvrv_1_1_tab_dur_sym.html#a1e85bce43dc9ad280471f7ef5f147da0">vrv::TabDurSym::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> tabdursym.h:49</div></div>
+<div class="ttc" id="aclassvrv_1_1_tab_dur_sym_html_a1e85bce43dc9ad280471f7ef5f147da0"><div class="ttname"><a href="classvrv_1_1_tab_dur_sym.html#a1e85bce43dc9ad280471f7ef5f147da0">vrv::TabDurSym::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> tabdursym.h:50</div></div>
 <div class="ttc" id="aclassvrv_1_1_tab_dur_sym_html_a974af81521dc9b6ef3a2891f894eb687"><div class="ttname"><a href="classvrv_1_1_tab_dur_sym.html#a974af81521dc9b6ef3a2891f894eb687">vrv::TabDurSym::GetStemUpSE</a></div><div class="ttdeci">Point GetStemUpSE(const Doc *doc, int staffSize, bool isCueSize) const override</div><div class="ttdoc">Get the stem up / stem down attachment point.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:46</div></div>
 <div class="ttc" id="aclassvrv_1_1_point_html"><div class="ttname"><a href="classvrv_1_1_point.html">vrv::Point</a></div><div class="ttdoc">Simple class for representing points.</div><div class="ttdef"><b>Definition:</b> devicecontextbase.h:197</div></div>
+<div class="ttc" id="aclassvrv_1_1_tab_dur_sym_html_a689b8839f1832ef851618fe42e2dbba2"><div class="ttname"><a href="classvrv_1_1_tab_dur_sym.html#a689b8839f1832ef851618fe42e2dbba2">vrv::TabDurSym::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> tabdursym.h:33</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>tabdursym.h</b></li>
-    <li class="footer">Generated on Tue Dec 10 2024 11:04:25 for Verovio by
+    <li class="footer">Generated on Wed Dec 11 2024 15:40:45 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
