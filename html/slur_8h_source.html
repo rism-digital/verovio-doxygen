@@ -133,126 +133,125 @@ $(document).ready(function(){initNavTree('slur_8h_source.html',''); initResizabl
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classvrv_1_1_slur.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_slur.html">Slur</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_control_element.html">ControlElement</a>,</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;             <span class="keyword">public</span> <a class="code" href="classvrv_1_1_time_spanning_interface.html">TimeSpanningInterface</a>,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;             <span class="keyword">public</span> AttColor,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;             <span class="keyword">public</span> AttCurvature,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;             <span class="keyword">public</span> AttLayerIdent,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;             <span class="keyword">public</span> AttLineRendBase {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>(ClassId classId);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>(ClassId classId, <span class="keyword">const</span> std::string &amp;classIdStr);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_slur.html">Slur</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classvrv_1_1_slur.html#a9e7812ed9bc701150792295d4e277802">   69</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_slur.html#a9e7812ed9bc701150792295d4e277802">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_slur.html">Slur</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_slur.html#a44edee9624d0cf10b0e35bd772aca3a5">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Slur&quot;</span>; }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    TimePointInterface *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimePointInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">const</span> TimePointInterface *GetTimePointInterface()<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimePointInterface *&gt;(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    TimeSpanningInterface *GetTimeSpanningInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimeSpanningInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">const</span> TimeSpanningInterface *GetTimeSpanningInterface()<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimeSpanningInterface *&gt;(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    SlurCurveDirection GetDrawingCurveDir()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingCurveDir; }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> SetDrawingCurveDir(SlurCurveDirection curveDir) { m_drawingCurveDir = curveDir; }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">bool</span> HasDrawingCurveDir()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_drawingCurveDir != SlurCurveDirection::None); }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    curvature_CURVEDIR CalcDrawingCurveDir(<span class="keywordtype">char</span> spanningType) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">bool</span> HasMixedCurveDir()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">return</span> (m_drawingCurveDir == SlurCurveDirection::AboveBelow)</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            || (m_drawingCurveDir == SlurCurveDirection::BelowAbove);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">bool</span> HasEndpointAboveStart()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">return</span> (m_drawingCurveDir == SlurCurveDirection::Above)</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            || (m_drawingCurveDir == SlurCurveDirection::AboveBelow);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">bool</span> HasEndpointBelowStart()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">return</span> (m_drawingCurveDir == SlurCurveDirection::Below)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            || (m_drawingCurveDir == SlurCurveDirection::BelowAbove);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">bool</span> HasEndpointAboveEnd()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">return</span> (m_drawingCurveDir == SlurCurveDirection::Above)</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            || (m_drawingCurveDir == SlurCurveDirection::BelowAbove);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">bool</span> HasEndpointBelowEnd()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">return</span> (m_drawingCurveDir == SlurCurveDirection::Below)</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            || (m_drawingCurveDir == SlurCurveDirection::AboveBelow);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">bool</span> HasInnerSlur(<span class="keyword">const</span> Slur *innerSlur) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_slur.html#a8e4388d4a78c7ca42d4b0a97dc33c755">CalcInitialCurve</a>(<span class="keyword">const</span> Doc *doc, FloatingCurvePositioner *curve, NearEndCollision *nearEndCollision = NULL);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_slur.html#ac1b0ad6940cdd79b1d418080cdabaa5f">CalcSpannedElements</a>(FloatingCurvePositioner *curve);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_slur.html#a479f96c0f063d497932d474bcd693871">AddPositionerToArticulations</a>(FloatingCurvePositioner *curve);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    Staff *<a class="code" href="classvrv_1_1_slur.html#ad9bcee406874ecfc4b8b4d6529acd835">CalculatePrincipalStaff</a>(<span class="keyword">const</span> Staff *staff, <span class="keywordtype">int</span> xMin, <span class="keywordtype">int</span> xMax);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">const</span> Staff *<a class="code" href="classvrv_1_1_slur.html#ad9bcee406874ecfc4b8b4d6529acd835">CalculatePrincipalStaff</a>(<span class="keyword">const</span> Staff *staff, <span class="keywordtype">int</span> xMin, <span class="keywordtype">int</span> xMax) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    std::pair&lt;const Layer *, const LayerElement *&gt; <a class="code" href="classvrv_1_1_slur.html#ac91b83f8f14d2227eb227763f7557cec">GetBoundaryLayer</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">const</span> Staff *GetBoundaryCrossStaff() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_slur.html#a48b731aec93e5ea7ba9513fcdcc0f60e">InitBezierControlSides</a>(BezierCurve &amp;bezier, curvature_CURVEDIR curveDir) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_slur.html#a8363bfafa733753cbaff19a3978f8ebb">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_slur.html#a8363bfafa733753cbaff19a3978f8ebb">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="comment">// Determine layer elements spanned by the slur</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    SpannedElements CollectSpannedElements(<span class="keyword">const</span> Staff *staff, <span class="keywordtype">int</span> xMin, <span class="keywordtype">int</span> xMax) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">// Filter and add layer elements spanned by the slur to the positioner</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">void</span> AddSpannedElements(</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        FloatingCurvePositioner *curve, <span class="keyword">const</span> SpannedElements &amp;elements, Staff *staff, <span class="keywordtype">int</span> xMin, <span class="keywordtype">int</span> xMax);</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="comment">// Determine whether a layer element should lie above or below the slur</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">bool</span> IsElementBelow(<span class="keyword">const</span> LayerElement *element, <span class="keyword">const</span> Staff *startStaff, <span class="keyword">const</span> Staff *endStaff) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordtype">bool</span> IsElementBelow(<span class="keyword">const</span> FloatingPositioner *positioner, <span class="keyword">const</span> Staff *startStaff, <span class="keyword">const</span> Staff *endStaff) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="comment">// Discard tuplets that don&#39;t have to be considered for slur adjustment</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">void</span> DiscardTupletElements(FloatingCurvePositioner *curve, <span class="keywordtype">int</span> xMin, <span class="keywordtype">int</span> xMax);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">// Calculate the endpoint coordinates depending on the curve direction and spanning type of the slur</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    std::pair&lt;Point, Point&gt; CalcEndPoints(<span class="keyword">const</span> Doc *doc, <span class="keyword">const</span> Staff *staff, NearEndCollision *nearEndCollision,</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> x2, curvature_CURVEDIR drawingCurveDir, <span class="keywordtype">char</span> spanningType) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="comment">// Consider the melodic direction for the break location?</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordtype">bool</span> ConsiderMelodicDirection() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="comment">// Retrieve the start and end note locations of the slur</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    std::pair&lt;int, int&gt; GetStartEndLocs(</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keyword">const</span> Note *startNote, <span class="keyword">const</span> Chord *startChord, <span class="keyword">const</span> Note *endNote, <span class="keyword">const</span> Chord *endChord) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="comment">// Calculate the pitch difference used to adjust for melodic direction</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordtype">int</span> CalcPitchDifference(<span class="keyword">const</span> Staff *staff, <span class="keywordtype">int</span> startLoc, <span class="keywordtype">int</span> endLoc) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="comment">// Check if the slur resembles portato</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    PortatoSlurType IsPortatoSlur(<span class="keyword">const</span> Doc *doc, <span class="keyword">const</span> Note *startNote, <span class="keyword">const</span> Chord *startChord) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="comment">// Check if the slur starts or ends on a beam</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">bool</span> StartsOnBeam()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;HasBoundaryOnBeam(<span class="keyword">true</span>); }</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">bool</span> EndsOnBeam()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;HasBoundaryOnBeam(<span class="keyword">false</span>); }</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">bool</span> HasBoundaryOnBeam(<span class="keywordtype">bool</span> isStart) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="comment">// Angle adjustment</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordtype">float</span> GetAdjustedSlurAngle(<span class="keyword">const</span> Doc *doc, Point &amp;p1, Point &amp;p2, curvature_CURVEDIR curveDir) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    SlurCurveDirection m_drawingCurveDir;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;};</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;             <span class="keyword">public</span> AttCurvature,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;             <span class="keyword">public</span> AttLayerIdent,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;             <span class="keyword">public</span> AttLineRendBase {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>(ClassId classId);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classvrv_1_1_slur.html">Slur</a>(ClassId classId, <span class="keyword">const</span> std::string &amp;classIdStr);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_slur.html">Slur</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classvrv_1_1_slur.html#a9e7812ed9bc701150792295d4e277802">   68</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_slur.html#a9e7812ed9bc701150792295d4e277802">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_slur.html">Slur</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_slur.html#a44edee9624d0cf10b0e35bd772aca3a5">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Slur&quot;</span>; }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    TimePointInterface *GetTimePointInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimePointInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">const</span> TimePointInterface *GetTimePointInterface()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimePointInterface *&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    TimeSpanningInterface *GetTimeSpanningInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;TimeSpanningInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">const</span> TimeSpanningInterface *GetTimeSpanningInterface()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">return</span> vrv_cast&lt;const TimeSpanningInterface *&gt;(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    SlurCurveDirection GetDrawingCurveDir()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingCurveDir; }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> SetDrawingCurveDir(SlurCurveDirection curveDir) { m_drawingCurveDir = curveDir; }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">bool</span> HasDrawingCurveDir()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_drawingCurveDir != SlurCurveDirection::None); }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    curvature_CURVEDIR CalcDrawingCurveDir(<span class="keywordtype">char</span> spanningType) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">bool</span> HasMixedCurveDir()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">return</span> (m_drawingCurveDir == SlurCurveDirection::AboveBelow)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            || (m_drawingCurveDir == SlurCurveDirection::BelowAbove);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">bool</span> HasEndpointAboveStart()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">return</span> (m_drawingCurveDir == SlurCurveDirection::Above)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            || (m_drawingCurveDir == SlurCurveDirection::AboveBelow);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">bool</span> HasEndpointBelowStart()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">return</span> (m_drawingCurveDir == SlurCurveDirection::Below)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            || (m_drawingCurveDir == SlurCurveDirection::BelowAbove);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">bool</span> HasEndpointAboveEnd()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> (m_drawingCurveDir == SlurCurveDirection::Above)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            || (m_drawingCurveDir == SlurCurveDirection::BelowAbove);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">bool</span> HasEndpointBelowEnd()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">return</span> (m_drawingCurveDir == SlurCurveDirection::Below)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            || (m_drawingCurveDir == SlurCurveDirection::AboveBelow);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">bool</span> HasInnerSlur(<span class="keyword">const</span> Slur *innerSlur) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_slur.html#a8e4388d4a78c7ca42d4b0a97dc33c755">CalcInitialCurve</a>(<span class="keyword">const</span> Doc *doc, FloatingCurvePositioner *curve, NearEndCollision *nearEndCollision = NULL);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_slur.html#ac1b0ad6940cdd79b1d418080cdabaa5f">CalcSpannedElements</a>(FloatingCurvePositioner *curve);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_slur.html#a479f96c0f063d497932d474bcd693871">AddPositionerToArticulations</a>(FloatingCurvePositioner *curve);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    Staff *<a class="code" href="classvrv_1_1_slur.html#ad9bcee406874ecfc4b8b4d6529acd835">CalculatePrincipalStaff</a>(<span class="keyword">const</span> Staff *staff, <span class="keywordtype">int</span> xMin, <span class="keywordtype">int</span> xMax);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keyword">const</span> Staff *<a class="code" href="classvrv_1_1_slur.html#ad9bcee406874ecfc4b8b4d6529acd835">CalculatePrincipalStaff</a>(<span class="keyword">const</span> Staff *staff, <span class="keywordtype">int</span> xMin, <span class="keywordtype">int</span> xMax) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    std::pair&lt;const Layer *, const LayerElement *&gt; <a class="code" href="classvrv_1_1_slur.html#ac91b83f8f14d2227eb227763f7557cec">GetBoundaryLayer</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keyword">const</span> Staff *GetBoundaryCrossStaff() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_slur.html#a48b731aec93e5ea7ba9513fcdcc0f60e">InitBezierControlSides</a>(BezierCurve &amp;bezier, curvature_CURVEDIR curveDir) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_slur.html#a8363bfafa733753cbaff19a3978f8ebb">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_slur.html#a8363bfafa733753cbaff19a3978f8ebb">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="comment">// Determine layer elements spanned by the slur</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    SpannedElements CollectSpannedElements(<span class="keyword">const</span> Staff *staff, <span class="keywordtype">int</span> xMin, <span class="keywordtype">int</span> xMax) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="comment">// Filter and add layer elements spanned by the slur to the positioner</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">void</span> AddSpannedElements(</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        FloatingCurvePositioner *curve, <span class="keyword">const</span> SpannedElements &amp;elements, Staff *staff, <span class="keywordtype">int</span> xMin, <span class="keywordtype">int</span> xMax);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="comment">// Determine whether a layer element should lie above or below the slur</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">bool</span> IsElementBelow(<span class="keyword">const</span> LayerElement *element, <span class="keyword">const</span> Staff *startStaff, <span class="keyword">const</span> Staff *endStaff) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">bool</span> IsElementBelow(<span class="keyword">const</span> FloatingPositioner *positioner, <span class="keyword">const</span> Staff *startStaff, <span class="keyword">const</span> Staff *endStaff) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">// Discard tuplets that don&#39;t have to be considered for slur adjustment</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">void</span> DiscardTupletElements(FloatingCurvePositioner *curve, <span class="keywordtype">int</span> xMin, <span class="keywordtype">int</span> xMax);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="comment">// Calculate the endpoint coordinates depending on the curve direction and spanning type of the slur</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    std::pair&lt;Point, Point&gt; CalcEndPoints(<span class="keyword">const</span> Doc *doc, <span class="keyword">const</span> Staff *staff, NearEndCollision *nearEndCollision,</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> x2, curvature_CURVEDIR drawingCurveDir, <span class="keywordtype">char</span> spanningType) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="comment">// Consider the melodic direction for the break location?</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">bool</span> ConsiderMelodicDirection() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="comment">// Retrieve the start and end note locations of the slur</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    std::pair&lt;int, int&gt; GetStartEndLocs(</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="keyword">const</span> Note *startNote, <span class="keyword">const</span> Chord *startChord, <span class="keyword">const</span> Note *endNote, <span class="keyword">const</span> Chord *endChord) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="comment">// Calculate the pitch difference used to adjust for melodic direction</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordtype">int</span> CalcPitchDifference(<span class="keyword">const</span> Staff *staff, <span class="keywordtype">int</span> startLoc, <span class="keywordtype">int</span> endLoc) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="comment">// Check if the slur resembles portato</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    PortatoSlurType IsPortatoSlur(<span class="keyword">const</span> Doc *doc, <span class="keyword">const</span> Note *startNote, <span class="keyword">const</span> Chord *startChord) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="comment">// Check if the slur starts or ends on a beam</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordtype">bool</span> StartsOnBeam()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;HasBoundaryOnBeam(<span class="keyword">true</span>); }</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">bool</span> EndsOnBeam()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;HasBoundaryOnBeam(<span class="keyword">false</span>); }</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">bool</span> HasBoundaryOnBeam(<span class="keywordtype">bool</span> isStart) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="comment">// Angle adjustment</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">float</span> GetAdjustedSlurAngle(<span class="keyword">const</span> Doc *doc, Point &amp;p1, Point &amp;p2, curvature_CURVEDIR curveDir) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    SlurCurveDirection m_drawingCurveDir;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;};</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_slur_html_ad9bcee406874ecfc4b8b4d6529acd835"><div class="ttname"><a href="classvrv_1_1_slur.html#ad9bcee406874ecfc4b8b4d6529acd835">vrv::Slur::CalculatePrincipalStaff</a></div><div class="ttdeci">Staff * CalculatePrincipalStaff(const Staff *staff, int xMin, int xMax)</div><div class="ttdoc">Calculate the staff where the slur's floating curve positioner lives.</div></div>
@@ -265,16 +264,16 @@ $(document).ready(function(){initNavTree('slur_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassvrv_1_1_slur_html"><div class="ttname"><a href="classvrv_1_1_slur.html">vrv::Slur</a></div><div class="ttdef"><b>Definition:</b> slur.h:53</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html_ac1b0ad6940cdd79b1d418080cdabaa5f"><div class="ttname"><a href="classvrv_1_1_slur.html#ac1b0ad6940cdd79b1d418080cdabaa5f">vrv::Slur::CalcSpannedElements</a></div><div class="ttdeci">void CalcSpannedElements(FloatingCurvePositioner *curve)</div><div class="ttdoc">Recalculate the spanned elements of the curve positioner.</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html_a8e4388d4a78c7ca42d4b0a97dc33c755"><div class="ttname"><a href="classvrv_1_1_slur.html#a8e4388d4a78c7ca42d4b0a97dc33c755">vrv::Slur::CalcInitialCurve</a></div><div class="ttdeci">void CalcInitialCurve(const Doc *doc, FloatingCurvePositioner *curve, NearEndCollision *nearEndCollision=NULL)</div><div class="ttdoc">Calculate the initial slur bezier curve and store it in the curve positioner.</div></div>
-<div class="ttc" id="aclassvrv_1_1_slur_html_a9e7812ed9bc701150792295d4e277802"><div class="ttname"><a href="classvrv_1_1_slur.html#a9e7812ed9bc701150792295d4e277802">vrv::Slur::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> slur.h:69</div></div>
+<div class="ttc" id="aclassvrv_1_1_slur_html_a9e7812ed9bc701150792295d4e277802"><div class="ttname"><a href="classvrv_1_1_slur.html#a9e7812ed9bc701150792295d4e277802">vrv::Slur::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> slur.h:68</div></div>
 <div class="ttc" id="aclassvrv_1_1_slur_html_a44edee9624d0cf10b0e35bd772aca3a5"><div class="ttname"><a href="classvrv_1_1_slur.html#a44edee9624d0cf10b0e35bd772aca3a5">vrv::Slur::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
-<div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:27</div></div>
+<div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:28</div></div>
 <div class="ttc" id="aclassvrv_1_1_time_spanning_interface_html"><div class="ttname"><a href="classvrv_1_1_time_spanning_interface.html">vrv::TimeSpanningInterface</a></div><div class="ttdoc">This class is an interface for spanning elements, such as slur, hairpin, etc.</div><div class="ttdef"><b>Definition:</b> timeinterface.h:141</div></div>
 <div class="ttc" id="astructvrv_1_1_near_end_collision_html"><div class="ttname"><a href="structvrv_1_1_near_end_collision.html">vrv::NearEndCollision</a></div><div class="ttdoc">Measure collisions near the end points.</div><div class="ttdef"><b>Definition:</b> slur.h:39</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>slur.h</b></li>
-    <li class="footer">Generated on Wed Dec 11 2024 17:32:55 for Verovio by
+    <li class="footer">Generated on Mon Dec 16 2024 07:36:33 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
