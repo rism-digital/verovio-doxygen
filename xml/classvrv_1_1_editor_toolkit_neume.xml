@@ -43,10 +43,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_neume.h" line="43" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_neume_1a0b73aa2dee1a259468501b2b2da92999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_neume_1a51181adeed490953b99648a6ed67a95e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::EditorToolkitNeume::Drag</definition>
-        <argsstring>(std::string elementId, int x, int y)</argsstring>
+        <argsstring>(std::string elementId, int x, int y, bool topLevel=true)</argsstring>
         <name>Drag</name>
         <param>
           <type>std::string</type>
@@ -59,6 +59,11 @@
         <param>
           <type>int</type>
           <declname>y</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>topLevel</declname>
+          <defval>true</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1147,19 +1152,19 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_neume_1aa32bf021d3d31ec9ecb894a12a2ea729" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_neume_1acdaf0c47350d8e452dc052d8c00bf7a0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool vrv::EditorToolkitNeume::AdjustPitchFromPosition</definition>
-        <argsstring>(Object *obj, Clef *clef=NULL)</argsstring>
-        <name>AdjustPitchFromPosition</name>
+        <definition>bool vrv::EditorToolkitNeume::AdjustPitchAfterDrag</definition>
+        <argsstring>(Object *obj, int y=0)</argsstring>
+        <name>AdjustPitchAfterDrag</name>
         <param>
           <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
           <declname>obj</declname>
         </param>
         <param>
-          <type><ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref> *</type>
-          <declname>clef</declname>
-          <defval>NULL</defval>
+          <type>int</type>
+          <declname>y</declname>
+          <defval>0</defval>
         </param>
         <briefdescription>
 <para>Helper functions for editor actions. </para>
@@ -1169,6 +1174,23 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_neume.h" line="105" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_neume_1aefbcc308a24d1418bdb292f2fdbbe484" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitNeume::AdjustPitchFromPosition</definition>
+        <argsstring>(Object *obj)</argsstring>
+        <name>AdjustPitchFromPosition</name>
+        <param>
+          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_neume.h" line="106" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_neume_1a3d9c3e60ef3afb34b13c0123dd9d3beb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1190,7 +1212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_neume.h" line="106" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_neume.h" line="107" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -1908,17 +1930,18 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_neume.h" line="32" column="46" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_neume.h" bodystart="32" bodyend="108"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_neume.h" line="32" column="46" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_neume.h" bodystart="32" bodyend="109"/>
     <listofallmembers>
       <member refid="classvrv_1_1_editor_toolkit_neume_1a3d9c3e60ef3afb34b13c0123dd9d3beb" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitNeume</scope><name>AdjustClefLineFromPosition</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_neume_1aa32bf021d3d31ec9ecb894a12a2ea729" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitNeume</scope><name>AdjustPitchFromPosition</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_neume_1acdaf0c47350d8e452dc052d8c00bf7a0" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitNeume</scope><name>AdjustPitchAfterDrag</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_neume_1aefbcc308a24d1418bdb292f2fdbbe484" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitNeume</scope><name>AdjustPitchFromPosition</name></member>
       <member refid="classvrv_1_1_editor_toolkit_neume_1a43ace3311204fc2ae9adc611b103a947" prot="public" virt="non-virtual"><scope>vrv::EditorToolkitNeume</scope><name>Chain</name></member>
       <member refid="classvrv_1_1_editor_toolkit_neume_1a2392e8f4676d39017db3c9310bea7ba3" prot="public" virt="non-virtual"><scope>vrv::EditorToolkitNeume</scope><name>ChangeGroup</name></member>
       <member refid="classvrv_1_1_editor_toolkit_neume_1a522a796eb33cb6550d1a208781fe0bb9" prot="public" virt="non-virtual"><scope>vrv::EditorToolkitNeume</scope><name>ChangeStaff</name></member>
       <member refid="classvrv_1_1_editor_toolkit_neume_1a4ef2845c608063aa95c6b8c2641b741f" prot="public" virt="non-virtual"><scope>vrv::EditorToolkitNeume</scope><name>ChangeStaffTo</name></member>
       <member refid="classvrv_1_1_editor_toolkit_neume_1a8557524758bf2f6cdcd9e299237ef33c" prot="public" virt="non-virtual"><scope>vrv::EditorToolkitNeume</scope><name>ClefMovementHandler</name></member>
       <member refid="classvrv_1_1_editor_toolkit_neume_1a32187a2c54d0680c43a6e7160d5cbf77" prot="public" virt="non-virtual"><scope>vrv::EditorToolkitNeume</scope><name>DisplaceClefOctave</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_neume_1a0b73aa2dee1a259468501b2b2da92999" prot="public" virt="non-virtual"><scope>vrv::EditorToolkitNeume</scope><name>Drag</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_neume_1a51181adeed490953b99648a6ed67a95e" prot="public" virt="non-virtual"><scope>vrv::EditorToolkitNeume</scope><name>Drag</name></member>
       <member refid="classvrv_1_1_editor_toolkit_neume_1a73a7c47fe8d5420da6467592ece61e55" prot="public" virt="virtual"><scope>vrv::EditorToolkitNeume</scope><name>EditInfo</name></member>
       <member refid="classvrv_1_1_editor_toolkit_1a6dd004f7d4c73c36012a459434d15c6f" prot="public" virt="non-virtual"><scope>vrv::EditorToolkitNeume</scope><name>EditorToolkit</name></member>
       <member refid="classvrv_1_1_editor_toolkit_neume_1ad240f83d46bf3a95a0232403afd37f48" prot="public" virt="non-virtual"><scope>vrv::EditorToolkitNeume</scope><name>EditorToolkitNeume</name></member>
