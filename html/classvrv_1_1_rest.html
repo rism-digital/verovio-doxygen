@@ -101,8 +101,9 @@ Inheritance diagram for vrv::Rest:</div>
  <div class="center">
   <img src="classvrv_1_1_rest.png" usemap="#vrv::Rest_map" alt=""/>
   <map id="vrv::Rest_map" name="vrv::Rest_map">
-<area href="classvrv_1_1_position_interface.html" title="This class is an interface for elements with a position on the staff, such as rests." alt="vrv::PositionInterface" shape="rect" coords="145,112,280,136"/>
-<area href="classvrv_1_1_duration_interface.html" title="This class is an interface for elements with duration, such as notes and rests." alt="vrv::DurationInterface" shape="rect" coords="145,56,280,80"/>
+<area href="classvrv_1_1_position_interface.html" title="This class is an interface for elements with a position on the staff, such as rests." alt="vrv::PositionInterface" shape="rect" coords="145,168,280,192"/>
+<area href="classvrv_1_1_duration_interface.html" title="This class is an interface for elements with duration, such as notes and rests." alt="vrv::DurationInterface" shape="rect" coords="145,112,280,136"/>
+<area href="classvrv_1_1_alt_sym_interface.html" title="This class is an interface for elements having a @altsym It is not an abstract class but should not b..." alt="vrv::AltSymInterface" shape="rect" coords="145,56,280,80"/>
 <area href="classvrv_1_1_layer_element.html" title="This class is a base class for the Layer (&lt;layer&gt;) content." alt="vrv::LayerElement" shape="rect" coords="145,0,280,24"/>
   </map>
 </div></div>
@@ -147,6 +148,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Rest</b> ()</td><
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetClassName</b> () const override</td></tr>
 <tr class="separator:a2dfcf0969db9808e3454c6012ced7d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Getter to interfaces</div></td></tr>
+<tr class="memitem:ab6ddd6cdf97d2a3437a77190c0bbded9"><td class="memItemLeft" align="right" valign="top"><a id="ab6ddd6cdf97d2a3437a77190c0bbded9"></a>
+<a class="el" href="classvrv_1_1_alt_sym_interface.html">AltSymInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAltSymInterface</b> () override</td></tr>
+<tr class="separator:ab6ddd6cdf97d2a3437a77190c0bbded9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7bf04a331feb93bdd02d4b477776304"><td class="memItemLeft" align="right" valign="top"><a id="ac7bf04a331feb93bdd02d4b477776304"></a>
 <a class="el" href="classvrv_1_1_position_interface.html">PositionInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPositionInterface</b> () override</td></tr>
 <tr class="separator:ac7bf04a331feb93bdd02d4b477776304"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -628,9 +632,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterInterface</b>
 <tr class="memitem:a1639642ba9433617ec04608f2d2570bb inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a1639642ba9433617ec04608f2d2570bb"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasInterface</b> (InterfaceId interfaceId) const</td></tr>
 <tr class="separator:a1639642ba9433617ec04608f2d2570bb inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a802e613f29ccc215de5768b4e6d0b9d0 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a802e613f29ccc215de5768b4e6d0b9d0"></a>
-virtual <a class="el" href="classvrv_1_1_alt_sym_interface.html">AltSymInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAltSymInterface</b> ()</td></tr>
-<tr class="separator:a802e613f29ccc215de5768b4e6d0b9d0 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3fdcc01a8048f6758fd787d33ddef8a inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="ac3fdcc01a8048f6758fd787d33ddef8a"></a>
 virtual const <a class="el" href="classvrv_1_1_alt_sym_interface.html">AltSymInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAltSymInterface</b> () const</td></tr>
 <tr class="separator:ac3fdcc01a8048f6758fd787d33ddef8a inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1188,6 +1189,35 @@ FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>InterfacePrepa
 <tr class="memitem:a0482e4a7ea764d9b54d74b8565dd34f4 inherit pub_methods_classvrv_1_1_linking_interface"><td class="memItemLeft" align="right" valign="top"><a id="a0482e4a7ea764d9b54d74b8565dd34f4"></a>
 FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>InterfaceResetData</b> (<a class="el" href="classvrv_1_1_reset_data_functor.html">ResetDataFunctor</a> &amp;functor, <a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
 <tr class="separator:a0482e4a7ea764d9b54d74b8565dd34f4 inherit pub_methods_classvrv_1_1_linking_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classvrv_1_1_alt_sym_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_alt_sym_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_alt_sym_interface.html">vrv::AltSymInterface</a></td></tr>
+<tr class="memitem:a845bedb313536e6d19b235330e613860 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memItemLeft" align="right" valign="top"><a id="a845bedb313536e6d19b235330e613860"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AltSymInterface</b> ()</td></tr>
+<tr class="separator:a845bedb313536e6d19b235330e613860 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa70bdc6fa3bbd3eb7721746b7744a8e inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memItemLeft" align="right" valign="top"><a id="afa70bdc6fa3bbd3eb7721746b7744a8e"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~AltSymInterface</b> ()</td></tr>
+<tr class="separator:afa70bdc6fa3bbd3eb7721746b7744a8e inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fd4b58fba2208cc8bd966ac8185a619 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memItemLeft" align="right" valign="top">InterfaceId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_alt_sym_interface.html#a9fd4b58fba2208cc8bd966ac8185a619">IsInterface</a> () const override</td></tr>
+<tr class="memdesc:a9fd4b58fba2208cc8bd966ac8185a619 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method returning the InterfaceId of the interface.  <a href="classvrv_1_1_alt_sym_interface.html#a9fd4b58fba2208cc8bd966ac8185a619">More...</a><br /></td></tr>
+<tr class="separator:a9fd4b58fba2208cc8bd966ac8185a619 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec18270c1ba43d7ab203eda65b26b3f4 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memItemLeft" align="right" valign="top"><a id="aec18270c1ba43d7ab203eda65b26b3f4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAltSymbolDef</b> (<a class="el" href="classvrv_1_1_symbol_def.html">SymbolDef</a> *symbolDef)</td></tr>
+<tr class="separator:aec18270c1ba43d7ab203eda65b26b3f4 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8910be3f566440cde2cf57108248478 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memItemLeft" align="right" valign="top"><a id="ab8910be3f566440cde2cf57108248478"></a>
+<a class="el" href="classvrv_1_1_symbol_def.html">SymbolDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAltSymbolDef</b> ()</td></tr>
+<tr class="separator:ab8910be3f566440cde2cf57108248478 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e4641a3121765874883831aeb7d9b0 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memItemLeft" align="right" valign="top"><a id="ab1e4641a3121765874883831aeb7d9b0"></a>
+const <a class="el" href="classvrv_1_1_symbol_def.html">SymbolDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAltSymbolDef</b> () const</td></tr>
+<tr class="separator:ab1e4641a3121765874883831aeb7d9b0 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f055775c7e579f3151ff7d937226412 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memItemLeft" align="right" valign="top"><a id="a6f055775c7e579f3151ff7d937226412"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_alt_sym_interface.html#a6f055775c7e579f3151ff7d937226412">HasAltSymbolDef</a> () const</td></tr>
+<tr class="memdesc:a6f055775c7e579f3151ff7d937226412 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if a symbolDef is given and resolved. <br /></td></tr>
+<tr class="separator:a6f055775c7e579f3151ff7d937226412 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b05c285a481767e4444541211bef04 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memItemLeft" align="right" valign="top">FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_alt_sym_interface.html#ad2b05c285a481767e4444541211bef04">InterfacePrepareAltSym</a> (<a class="el" href="classvrv_1_1_prepare_alt_sym_functor.html">PrepareAltSymFunctor</a> &amp;functor, <a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:ad2b05c285a481767e4444541211bef04 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">We have functor code in the interface for avoiding code duplication in each implementation class.  <a href="classvrv_1_1_alt_sym_interface.html#ad2b05c285a481767e4444541211bef04">More...</a><br /></td></tr>
+<tr class="separator:ad2b05c285a481767e4444541211bef04 inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe9ea486dc1348debbb673b0be83fb9f inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memItemLeft" align="right" valign="top"><a id="abe9ea486dc1348debbb673b0be83fb9f"></a>
+FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>InterfaceResetData</b> (<a class="el" href="classvrv_1_1_reset_data_functor.html">ResetDataFunctor</a> &amp;functor, <a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="separator:abe9ea486dc1348debbb673b0be83fb9f inherit pub_methods_classvrv_1_1_alt_sym_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvrv_1_1_duration_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_duration_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_duration_interface.html">vrv::DurationInterface</a></td></tr>
 <tr class="memitem:a1b27be2ecd1bcd7366219fd1216a7667 inherit pub_methods_classvrv_1_1_duration_interface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvrv_1_1_fraction.html">Fraction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_duration_interface.html#a1b27be2ecd1bcd7366219fd1216a7667">GetInterfaceAlignmentDuration</a> (int num, int numBase) const</td></tr>
 <tr class="memdesc:a1b27be2ecd1bcd7366219fd1216a7667 inherit pub_methods_classvrv_1_1_duration_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the duration (in <a class="el" href="classvrv_1_1_fraction.html">Fraction</a>) for the element.  <a href="classvrv_1_1_duration_interface.html#a1b27be2ecd1bcd7366219fd1216a7667">More...</a><br /></td></tr>
@@ -1433,6 +1463,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_drawingFacsY</b></td
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_linking_interface.html#a26bd7ff2e4a7048c03aeb56bb8f598d8">SetIDStr</a> ()</td></tr>
 <tr class="memdesc:a26bd7ff2e4a7048c03aeb56bb8f598d8 inherit pro_methods_classvrv_1_1_linking_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the fragment of the start or end @xml:id if given. <br /></td></tr>
 <tr class="separator:a26bd7ff2e4a7048c03aeb56bb8f598d8 inherit pro_methods_classvrv_1_1_linking_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classvrv_1_1_alt_sym_interface"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classvrv_1_1_alt_sym_interface')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classvrv_1_1_alt_sym_interface.html">vrv::AltSymInterface</a></td></tr>
+<tr class="memitem:a566a6b1368de80402f164f47ecd3f2b2 inherit pro_methods_classvrv_1_1_alt_sym_interface"><td class="memItemLeft" align="right" valign="top"><a id="a566a6b1368de80402f164f47ecd3f2b2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_alt_sym_interface.html#a566a6b1368de80402f164f47ecd3f2b2">SetIDStr</a> ()</td></tr>
+<tr class="memdesc:a566a6b1368de80402f164f47ecd3f2b2 inherit pro_methods_classvrv_1_1_alt_sym_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the fragment of the start or end @xml:id if given. <br /></td></tr>
+<tr class="separator:a566a6b1368de80402f164f47ecd3f2b2 inherit pro_methods_classvrv_1_1_alt_sym_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_methods_classvrv_1_1_layer_element"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classvrv_1_1_layer_element')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></td></tr>
 <tr class="memitem:ae0a0dd99fec2746b5759e15252ab4b4e inherit pro_static_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="ae0a0dd99fec2746b5759e15252ab4b4e"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#ae0a0dd99fec2746b5759e15252ab4b4e">GetDotCount</a> (const MapOfDotLocs &amp;dotLocations)</td></tr>
@@ -1586,7 +1621,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <p>Virtual reset method. </p>
 <p>Needs to be overridden in child classes. </p>
 
-<p>Reimplemented from <a class="el" href="classvrv_1_1_duration_interface.html#ab614c92b0802cbba7b41d89def33e9a2">vrv::DurationInterface</a>.</p>
+<p>Reimplemented from <a class="el" href="classvrv_1_1_alt_sym_interface.html#aed738b60a43324a2f15fdec12d19521e">vrv::AltSymInterface</a>.</p>
 
 </div>
 </div>
@@ -1599,7 +1634,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_rest.html">Rest</a></li>
-    <li class="footer">Generated on Mon Nov 25 2024 13:25:09 for Verovio by
+    <li class="footer">Generated on Sun Dec 22 2024 10:52:51 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

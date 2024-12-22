@@ -49,7 +49,9 @@ var hierarchy =
           ] ],
           [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
           [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
-        ] ]
+        ] ],
+        [ "vrv::Note", "classvrv_1_1_note.html", null ],
+        [ "vrv::Rest", "classvrv_1_1_rest.html", null ]
       ] ]
     ] ],
     [ "AttArpegLog", null, [
@@ -129,35 +131,26 @@ var hierarchy =
     ] ],
     [ "AttColor", null, [
       [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
-      [ "vrv::Arpeg", "classvrv_1_1_arpeg.html", null ],
       [ "vrv::Artic", "classvrv_1_1_artic.html", null ],
       [ "vrv::BarLine", "classvrv_1_1_bar_line.html", null ],
       [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
-      [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ],
       [ "vrv::BeatRpt", "classvrv_1_1_beat_rpt.html", null ],
-      [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
-      [ "vrv::Breath", "classvrv_1_1_breath.html", null ],
-      [ "vrv::Caesura", "classvrv_1_1_caesura.html", null ],
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
+      [ "vrv::ControlElement", "classvrv_1_1_control_element.html", null ],
       [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
       [ "vrv::DivLine", "classvrv_1_1_div_line.html", [
         [ "vrv::DivLineAttr", "classvrv_1_1_div_line_attr.html", null ]
       ] ],
       [ "vrv::Dot", "classvrv_1_1_dot.html", null ],
-      [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
-      [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
       [ "vrv::GraceGrp", "classvrv_1_1_grace_grp.html", null ],
       [ "vrv::GrpSym", "classvrv_1_1_grp_sym.html", null ],
-      [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
       [ "vrv::HalfmRpt", "classvrv_1_1_halfm_rpt.html", null ],
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
       [ "vrv::Liquescent", "classvrv_1_1_liquescent.html", null ],
       [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ],
       [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ],
-      [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
-      [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
       [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
       [ "vrv::MRpt", "classvrv_1_1_m_rpt.html", null ],
       [ "vrv::MRpt2", "classvrv_1_1_m_rpt2.html", null ],
@@ -165,22 +158,13 @@ var hierarchy =
       [ "vrv::Nc", "classvrv_1_1_nc.html", null ],
       [ "vrv::Neume", "classvrv_1_1_neume.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
-      [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
       [ "vrv::Oriscus", "classvrv_1_1_oriscus.html", null ],
-      [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
-      [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
       [ "vrv::Quilisma", "classvrv_1_1_quilisma.html", null ],
-      [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
-      [ "vrv::RepeatMark", "classvrv_1_1_repeat_mark.html", null ],
       [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
-      [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
       [ "vrv::Syllable", "classvrv_1_1_syllable.html", null ],
       [ "vrv::Symbol", "classvrv_1_1_symbol.html", null ],
-      [ "vrv::Tie", "classvrv_1_1_tie.html", null ],
-      [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
       [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ],
-      [ "vrv::Turn", "classvrv_1_1_turn.html", null ],
       [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
     ] ],
     [ "AttColoration", null, [
@@ -818,7 +802,8 @@ var hierarchy =
         [ "vrv::Oriscus", "classvrv_1_1_oriscus.html", null ],
         [ "vrv::Quilisma", "classvrv_1_1_quilisma.html", null ],
         [ "vrv::Rest", "classvrv_1_1_rest.html", null ]
-      ] ]
+      ] ],
+      [ "vrv::TabDurSym", "classvrv_1_1_tab_dur_sym.html", null ]
     ] ],
     [ "AttStaffLocPitched", null, [
       [ "vrv::PositionInterface", "classvrv_1_1_position_interface.html", null ]
@@ -930,7 +915,8 @@ var hierarchy =
       [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
     ] ],
     [ "AttVerticalAlign", null, [
-      [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", null ]
+      [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", null ],
+      [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
     ] ],
     [ "AttVerticalGroup", null, [
       [ "vrv::Dir", "classvrv_1_1_dir.html", null ],

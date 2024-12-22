@@ -1,5 +1,13 @@
 var NAVTREEINDEX31 =
 {
+"structvrv_1_1_nc_1_1_drawing_glyph.html#a172d503469a4b57c798e31893188cf9a":[1,0,0,252,0,2],
+"structvrv_1_1_nc_1_1_drawing_glyph.html#a1887826a5b066c937d1930578a28ebf3":[1,0,0,252,0,1],
+"structvrv_1_1_nc_1_1_drawing_glyph.html#a70fc51ca7a8b55cfb8317e8b5a289b18":[1,0,0,252,0,0],
+"structvrv_1_1_near_end_collision.html":[1,0,0,253],
+"structvrv_1_1_near_end_collision.html#a31560c558c0358b24fa8ab7aedf16e61":[1,0,0,253,1],
+"structvrv_1_1_near_end_collision.html#a84cb4fb1addcd8a4f1a1cec64f759302":[1,0,0,253,0],
+"structvrv_1_1_near_end_collision.html#aeef6d186fc72dac1316fdc305f4dea6a":[1,0,0,253,2],
+"structvrv_1_1_spanned_elements.html":[1,0,0,356],
 "structvrv_1_1_spanned_elements.html#a216693563181e15676656cd587c6eb57":[1,0,0,356,0],
 "structvrv_1_1_spanned_elements.html#aa88e4314cc25d9758202bb5d7c37b8d2":[1,0,0,356,1],
 "structvrv_1_1_staff_sort.html":[1,0,0,363],

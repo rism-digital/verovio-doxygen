@@ -6,6 +6,7 @@ var classvrv_1_1_tab_grp =
     [ "Accept", "classvrv_1_1_tab_grp.html#af416f246bc763eadba2c8f1049823bd8", null ],
     [ "AcceptEnd", "classvrv_1_1_tab_grp.html#acd4e6d6ff761f0563d1f352409712ced", null ],
     [ "AcceptEnd", "classvrv_1_1_tab_grp.html#a11a40039475c143a5e510907c0b9aa09", null ],
+    [ "Clone", "classvrv_1_1_tab_grp.html#af7a125545fff5f4cd094094bfa0a7d20", null ],
     [ "FilterList", "classvrv_1_1_tab_grp.html#a04acee72bd2fed1bd113497fbe99dc6e", null ],
     [ "GetBottomNote", "classvrv_1_1_tab_grp.html#a8486feba49453626e1b31820889c2c02", null ],
     [ "GetBottomNote", "classvrv_1_1_tab_grp.html#a7d5750a1f2f5495479ed14b74b966911", null ],

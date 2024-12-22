@@ -5,6 +5,7 @@ var classvrv_1_1_generate_m_i_d_i_functor =
     [ "GetTempoEventTicks", "classvrv_1_1_generate_m_i_d_i_functor.html#acdeddb46c5a3b7549942f5f57de91455", null ],
     [ "ImplementsEndInterface", "classvrv_1_1_generate_m_i_d_i_functor.html#a45df2245c7a83928c30cc3b11727e89c", null ],
     [ "SetChannel", "classvrv_1_1_generate_m_i_d_i_functor.html#aea48fa5537739578692cb1cbff0901d7", null ],
+    [ "SetControlEvents", "classvrv_1_1_generate_m_i_d_i_functor.html#ad9a3f41bf1e6a529218e3b1a9a6a457b", null ],
     [ "SetCueExclusion", "classvrv_1_1_generate_m_i_d_i_functor.html#a73362051c5837d630ea01f9874dbd611", null ],
     [ "SetCurrentTempo", "classvrv_1_1_generate_m_i_d_i_functor.html#ac596b3b6165edbf2509f9187c310793d", null ],
     [ "SetDeferredNotes", "classvrv_1_1_generate_m_i_d_i_functor.html#a7043b4083488d75551a7b77ae5f69463", null ],
