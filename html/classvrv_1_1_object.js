@@ -154,6 +154,7 @@ var classvrv_1_1_object =
     [ "Relinquish", "classvrv_1_1_object.html#a48ea7a78dfbdf0195235b56679924c76", null ],
     [ "ReorderByXPos", "classvrv_1_1_object.html#a84d8c0e7b117807cbecca85ca7695ce8", null ],
     [ "ReplaceChild", "classvrv_1_1_object.html#aba32b01b87b8f31455e68c77a3d8ee40", null ],
+    [ "ReplaceWithCopyOf", "classvrv_1_1_object.html#a0501bfc3dc91f5300df99d4037374085", null ],
     [ "Reset", "classvrv_1_1_object.html#acdbfa3602b2a05ed4c7ba41c77f92b7e", null ],
     [ "ResetCachedDrawingX", "classvrv_1_1_object.html#a859aecc00ab75fc7ed2f2780bc0a6a51", null ],
     [ "ResetCachedDrawingY", "classvrv_1_1_object.html#ac5b28a8625980d057d6cad83dbd52e26", null ],
