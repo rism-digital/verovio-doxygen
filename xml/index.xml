@@ -6779,6 +6779,7 @@
     <member refid="classvrv_1_1_options_1ae99ce146ec6282593872b971467dbba2" kind="variable"><name>m_ledgerLineThickness</name></member>
     <member refid="classvrv_1_1_options_1ac748f355a4213dd79da79a1adf2a6f5a" kind="variable"><name>m_ledgerLineExtension</name></member>
     <member refid="classvrv_1_1_options_1a4fe74a82c23ffc4bac6e37c72b99c1d4" kind="variable"><name>m_lyricElision</name></member>
+    <member refid="classvrv_1_1_options_1a25a0ac2140b63751b234f58a3918c5d2" kind="variable"><name>m_lyricHeightFactor</name></member>
     <member refid="classvrv_1_1_options_1a8e2b0a84fd5b3dbaabe354329de62cb7" kind="variable"><name>m_lyricLineThickness</name></member>
     <member refid="classvrv_1_1_options_1a7c71920d1b69d857c51a801d942d074e" kind="variable"><name>m_lyricNoStartHyphen</name></member>
     <member refid="classvrv_1_1_options_1ad5caf6faa464e6c6306a8b182dc788a3" kind="variable"><name>m_lyricSize</name></member>
@@ -8336,9 +8337,12 @@
     <member refid="classvrv_1_1_staff_alignment_1aee6f25fca4808c69dd40b1b2419c9a52" kind="function"><name>~StaffAlignment</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a6c9d2d1c71958c112774409638ff501b" kind="function"><name>SetYRel</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a1abdba3b5c8406e42f16e06340a906b5" kind="function"><name>GetYRel</name></member>
-    <member refid="classvrv_1_1_staff_alignment_1a7804d94fb3fb3db00ed433a22edea5d6" kind="function"><name>AddVerseN</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1aa6450b19dc3bc9e7d15f142c0fb875d6" kind="function"><name>AddVerseN</name></member>
     <member refid="classvrv_1_1_staff_alignment_1ae289d82b696a41fd832abdbf43afefac" kind="function"><name>GetVerseCount</name></member>
-    <member refid="classvrv_1_1_staff_alignment_1a02a6cbdb61d48392778770d372f3c732" kind="function"><name>GetVersePosition</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1a2de2f6ed7e4b30e3cbd4f0f1d650fc89" kind="function"><name>GetVerseCountAbove</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1a69d7e024be6fd3ec86a87f25d7d643fe" kind="function"><name>GetVerseCountBelow</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1a133ef4ea740ee92af348590d178ce9db" kind="function"><name>GetVersePositionAbove</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1a19cb7512728ed74364d734f1afb9d442" kind="function"><name>GetVersePositionBelow</name></member>
     <member refid="classvrv_1_1_staff_alignment_1aebb16e118406ae41bf59ef1730842a78" kind="function"><name>FindFirstFloatingPositioner</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a4e559368a27154149c0654d34b982cee" kind="function"><name>FindFirstFloatingPositioner</name></member>
     <member refid="classvrv_1_1_staff_alignment_1acfcff2df0f692d09057b8801c5a446a0" kind="function"><name>GetCorrespFloatingPositioner</name></member>
@@ -8399,7 +8403,8 @@
     <member refid="classvrv_1_1_staff_alignment_1aed230042c44c7cd23fe58bc82d08e5d9" kind="variable"><name>m_staff</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a8fbdb29d9fb58c6b6a3de08c03411ed4" kind="variable"><name>m_system</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a366a4051d7602f053bc7b944d9266f09" kind="variable"><name>m_yRel</name></member>
-    <member refid="classvrv_1_1_staff_alignment_1a5265a43a6ab421c5be56b5bd1814d1cd" kind="variable"><name>m_verseNs</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1a99e5dfce9fa4358f4017a0a05fb63c6a" kind="variable"><name>m_verseAboveNs</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1abfc7e370027a0ef9edb61ac322021cb1" kind="variable"><name>m_verseBelowNs</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a3926f1ae1ffb8eb8498562432ea7a49a" kind="variable"><name>m_overflowAboveBBoxes</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a807cbb879bf4ea63d744d45042390d7c" kind="variable"><name>m_overflowBelowBBoxes</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a2509f2cdd8ef0e40f10aaca7ec29c814" kind="function"><name>SetCurrentFloatingPositioner</name></member>
@@ -8730,7 +8735,8 @@
     <member refid="classvrv_1_1_syl_1ac9c3bf6b38ccb9e802500b90d4d07136" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_syl_1a4c5ced2536ebb241d0cd4b6e8579638d" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_syl_1ad317c685a453903a69b934cec0b11a0b" kind="function"><name>AcceptEnd</name></member>
-    <member refid="classvrv_1_1_syl_1a404f20b3057e7ff75388ef20e417b21a" kind="variable"><name>m_drawingVerse</name></member>
+    <member refid="classvrv_1_1_syl_1acbb794e9e3c25e9bf5372735e4ecfcd2" kind="variable"><name>m_drawingVerseN</name></member>
+    <member refid="classvrv_1_1_syl_1a6846b5cb57d6f3d3d9b6fdff50c8af41" kind="variable"><name>m_drawingVersePlace</name></member>
     <member refid="classvrv_1_1_syl_1a4361a86d6f701297177228a378b9313c" kind="variable"><name>m_nextWordSyl</name></member>
     <member refid="classvrv_1_1_syl_1a6550dbe83c89d4e5091a99471ded5428" kind="function"><name>IsRelativeToStaff</name></member>
     <member refid="classvrv_1_1_syl_1a3988224b5fb94f470dc58cb5fe4f0ea0" kind="function"><name>IsSupportedChild</name></member>
@@ -9894,7 +9900,7 @@
     <member refid="classvrv_1_1_view_1ab5c67dfc99fc2035f0d4fffac83f5280" kind="function"><name>IntToTimeSigFigures</name></member>
     <member refid="classvrv_1_1_view_1a447b3f8708ef89dcdcbcd808292cb0ed" kind="function"><name>IntToSmuflFigures</name></member>
     <member refid="classvrv_1_1_view_1a8cfa3a4db8f61f1056203e73cff20a1a" kind="function"><name>NestedTuplets</name></member>
-    <member refid="classvrv_1_1_view_1a9bdee020b09491bd61e84a8d6d33be6e" kind="function"><name>GetSylYRel</name></member>
+    <member refid="classvrv_1_1_view_1a28ec69d97911e9ac0d46fef2f19791fe" kind="function"><name>GetSylYRel</name></member>
     <member refid="classvrv_1_1_view_1ab9f22b52c5f715977bca0a0c27b2a17b" kind="function"><name>GetFYRel</name></member>
     <member refid="classvrv_1_1_view_1a2f7ac3ab4cfb71bb4fbc809648f27ec7" kind="function"><name>CalcInitialSlur</name></member>
     <member refid="classvrv_1_1_view_1a0151299a3395da27a27021ffd9650068" kind="function"><name>CalcBrevisPoints</name></member>

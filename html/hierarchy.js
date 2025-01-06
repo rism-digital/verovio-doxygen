@@ -686,7 +686,8 @@ var hierarchy =
         [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ]
       ] ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
-      [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
+      [ "vrv::Turn", "classvrv_1_1_turn.html", null ],
+      [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
     ] ],
     [ "AttPlicaVis", null, [
       [ "vrv::Plica", "classvrv_1_1_plica.html", null ]

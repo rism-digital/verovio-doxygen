@@ -74,14 +74,18 @@
 <para>This occurs Typically with one single verse and no @n in &lt;verse&gt; Without the collapse option, the count is the greatest <linebreak/>
 With the collapse option, the count is number of verses. The position is calculated from the bottom. </para>
 </description>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a7804d94fb3fb3db00ed433a22edea5d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1aa6450b19dc3bc9e7d15f142c0fb875d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::StaffAlignment::AddVerseN</definition>
-        <argsstring>(int verseN)</argsstring>
+        <argsstring>(int verseN, data_STAFFREL place)</argsstring>
         <name>AddVerseN</name>
         <param>
           <type>int</type>
           <declname>verseN</declname>
+        </param>
+        <param>
+          <type>data_STAFFREL</type>
+          <declname>place</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -108,11 +112,45 @@ With the collapse option, the count is number of verses. The position is calcula
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="199" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a02a6cbdb61d48392778770d372f3c732" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a2de2f6ed7e4b30e3cbd4f0f1d650fc89" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
-        <definition>int vrv::StaffAlignment::GetVersePosition</definition>
+        <definition>int vrv::StaffAlignment::GetVerseCountAbove</definition>
+        <argsstring>(bool collapse) const</argsstring>
+        <name>GetVerseCountAbove</name>
+        <param>
+          <type>bool</type>
+          <declname>collapse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="200" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a69d7e024be6fd3ec86a87f25d7d643fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::GetVerseCountBelow</definition>
+        <argsstring>(bool collapse) const</argsstring>
+        <name>GetVerseCountBelow</name>
+        <param>
+          <type>bool</type>
+          <declname>collapse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="201" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a133ef4ea740ee92af348590d178ce9db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::GetVersePositionAbove</definition>
         <argsstring>(int verseN, bool collapse) const</argsstring>
-        <name>GetVersePosition</name>
+        <name>GetVersePositionAbove</name>
         <param>
           <type>int</type>
           <declname>verseN</declname>
@@ -127,7 +165,28 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="200" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="202" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a19cb7512728ed74364d734f1afb9d442" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::StaffAlignment::GetVersePositionBelow</definition>
+        <argsstring>(int verseN, bool collapse) const</argsstring>
+        <name>GetVersePositionBelow</name>
+        <param>
+          <type>int</type>
+          <declname>verseN</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>collapse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="203" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -148,7 +207,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="218" column="24"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="221" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a4e559368a27154149c0654d34b982cee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> *</type>
@@ -165,7 +224,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="219" column="30"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="222" column="30"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -186,7 +245,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="232" column="24"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="235" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1aa3190ad467726e71e7c6e796fe7bb287" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classvrv_1_1_floating_positioner" kindref="compound">FloatingPositioner</ref> *</type>
@@ -203,7 +262,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="233" column="30"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="236" column="30"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -221,7 +280,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="241" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="241" bodyend="241"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="244" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="244" bodyend="244"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a79a11f4e2b45c302db4de78d25ccdaa5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
@@ -234,7 +293,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="242" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="242" bodyend="242"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="245" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="245" bodyend="245"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ad5ace532441a932e5001aa9295a7477d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -259,7 +318,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="243" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="246" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -275,7 +334,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="250" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="250" bodyend="250"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="253" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="253" bodyend="253"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a3fdda508f142cf8b1ba6f63e1d07608a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
@@ -288,7 +347,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="251" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="251" bodyend="251"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="254" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="254" bodyend="254"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a99f275e12e81e39016074ae63fa39c2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -305,7 +364,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="252" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="255" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -327,7 +386,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="271" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="274" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ac1fe4fe012cbfe1c0e3f907d53cda5e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -344,7 +403,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="272" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="275" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -364,7 +423,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="279" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="282" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a8439d39daad273cdc338e1741a4b45ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -381,7 +440,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="280" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="283" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ac0fbe200bce845ea16ec780239077075" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classvrv_1_1_system_aligner_1a024f36eb64e0d6adf31217b55ba72b8e" kindref="member">SystemAligner::SpacingType</ref></type>
@@ -394,7 +453,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="281" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="281" bodyend="281"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="284" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="284" bodyend="284"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -414,7 +473,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="288" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="291" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1aa44565764f93a854ea71bc6b63e7227e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -427,7 +486,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="289" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="289" bodyend="289"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="292" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="292" bodyend="292"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1adebf5d0f38a753d8af894af8ab2b3da6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -444,7 +503,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="290" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="293" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1aca990971e8025a3f499abf7a64c3617c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -457,7 +516,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="291" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="291" bodyend="291"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="294" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="294" bodyend="294"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a52f47b3d146de94276e2b29b20cf9bbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -474,7 +533,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="292" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="295" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a6ed49d27f75b6f76726db774f91b6005" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -487,7 +546,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="293" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="293" bodyend="293"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="296" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="296" bodyend="296"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a8d01f0ae9658c247f3a155070eb8de02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -504,7 +563,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="294" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="297" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a03bf3b0ec9c3970afd742b4f19d00a6d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -517,7 +576,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="295" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="295" bodyend="295"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="298" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="298" bodyend="298"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1aee15d3f9cfe8f6e2351463397fc95b70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -534,7 +593,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="296" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="299" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a86ff178b860b027bd8379c9a69088ad0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -547,7 +606,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="297" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="297" bodyend="297"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="300" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="300" bodyend="300"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a19752789b923277bf26235ace4d30fd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -564,7 +623,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="298" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="298" bodyend="298"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="301" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="301" bodyend="301"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ac94e5464a192043896b00182fb401b71" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -577,7 +636,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="299" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="299" bodyend="299"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="302" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="302" bodyend="302"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a46bbc916af3129153608f26d68f42f2d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -590,7 +649,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="300" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="300" bodyend="300"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="303" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="303" bodyend="303"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a4bf0e7cbd5d6a5ee25e3e226983b483e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -607,7 +666,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="301" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="301" bodyend="301"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="304" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="304" bodyend="304"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a2d87d3d047765e77135b7112c57684b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -620,7 +679,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="302" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="302" bodyend="302"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="305" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="305" bodyend="305"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a71fa593b159a4b1d259efd7d38a27957" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -637,7 +696,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="303" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="303" bodyend="303"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="306" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="306" bodyend="306"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a27ad8ec54b8e0ebb742a535184ae7fee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -650,7 +709,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="304" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="304" bodyend="304"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="307" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="307" bodyend="307"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -670,7 +729,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="311" column="12"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="314" column="12"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -690,7 +749,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="318" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="318" bodyend="318"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="321" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="321" bodyend="321"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1aad91647368dc7d03520e0bd3f5139602" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -707,7 +766,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="319" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="319" bodyend="319"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="322" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="322" bodyend="322"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1abaaa0f361d222d6f30f8c56098008e4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -720,7 +779,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="320" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="320" bodyend="320"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="323" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="323" bodyend="323"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a62d862305729805153003425a0942d57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -733,7 +792,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="321" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="321" bodyend="321"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="324" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="324" bodyend="324"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a534062d4a262a60128bf4d9b3165576c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>ArrayOfBoundingBoxes &amp;</type>
@@ -746,7 +805,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="322" column="26" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="322" bodyend="322"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="325" column="26" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="325" bodyend="325"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a4ffe925a7aa2ea999ba83369c95099d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>ArrayOfBoundingBoxes &amp;</type>
@@ -759,7 +818,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="323" column="26" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="323" bodyend="323"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="326" column="26" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="326" bodyend="326"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a60a1f4cf8e0b7a85b3503f83ef98957b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const ArrayOfBoundingBoxes &amp;</type>
@@ -772,7 +831,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="324" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="324" bodyend="324"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="327" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="327" bodyend="327"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a32543b4e39634d6ac3fb5822ee67f69b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const ArrayOfBoundingBoxes &amp;</type>
@@ -785,7 +844,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="325" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="325" bodyend="325"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="328" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="328" bodyend="328"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -806,7 +865,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="357" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="360" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a764637e5bfb9b267035cb9775a05af69" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -824,7 +883,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="358" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="361" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a48f23821d3b4d1b8e5d480baf9a9c9df" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -842,7 +901,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="359" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="362" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a129b14144978d5a2379bbd3a95e8258e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -860,7 +919,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="360" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="363" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -876,7 +935,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="413" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="413" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="417" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="417" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a582a505deb9284b19f3456f60d149fad" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -889,7 +948,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="414" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="414" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="418" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="418" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a6886768062aec7882ee433c83736fade" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -902,7 +961,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="415" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="415" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="419" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="419" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a04c5bf1b1f044f387059aa281fb43b9d" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -915,7 +974,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="416" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="416" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="420" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="420" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a29ed7dbb0cce4fb861e2c20371bd794b" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -928,7 +987,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="417" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="417" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="421" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="421" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1afd84589b4e2d1d68dcc3d89375ef131d" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -941,7 +1000,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="418" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="418" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="422" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="422" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a9d9c9d575fceeddc4ae4df3c095d16de" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -954,7 +1013,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="419" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="419" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="423" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="423" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a5aa57d1b79407a837e2e846c385fa9d9" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -967,7 +1026,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="420" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="420" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="424" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="424" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a940c8f079c41f13917c1d874d8288a4b" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -980,7 +1039,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="421" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="421" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="425" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="425" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -997,7 +1056,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="380" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="380" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="383" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="383" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a1c400898e1cbf838dec08429daf9b087" prot="private" static="no" mutable="no">
         <type>ArrayOfFloatingPositioners</type>
@@ -1011,7 +1070,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="385" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="385" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="388" column="32" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="388" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a2b1ed36e2eb2085a5ca4137356f5d787" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -1025,7 +1084,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="389" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="389" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="392" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="392" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1aed230042c44c7cd23fe58bc82d08e5d9" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
@@ -1040,7 +1099,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="394" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="394" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="397" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="397" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a8fbdb29d9fb58c6b6a3de08c03411ed4" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_system" kindref="compound">System</ref> *</type>
@@ -1054,7 +1113,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="399" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="399" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="402" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="402" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a366a4051d7602f053bc7b944d9266f09" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -1068,22 +1127,35 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="403" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="403" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="406" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="406" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a5265a43a6ab421c5be56b5bd1814d1cd" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a99e5dfce9fa4358f4017a0a05fb63c6a" prot="private" static="no" mutable="no">
         <type>std::set&lt; int &gt;</type>
-        <definition>std::set&lt;int&gt; vrv::StaffAlignment::m_verseNs</definition>
+        <definition>std::set&lt;int&gt; vrv::StaffAlignment::m_verseAboveNs</definition>
         <argsstring></argsstring>
-        <name>m_verseNs</name>
+        <name>m_verseAboveNs</name>
         <briefdescription>
 <para>Stores the verse<linebreak/>
- of the staves attached to the aligner. </para>
+ of the staves attached to the aligner (above and below) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="407" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="407" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="410" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1abfc7e370027a0ef9edb61ac322021cb1" prot="private" static="no" mutable="no">
+        <type>std::set&lt; int &gt;</type>
+        <definition>std::set&lt;int&gt; vrv::StaffAlignment::m_verseBelowNs</definition>
+        <argsstring></argsstring>
+        <name>m_verseBelowNs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="411" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="411" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a3926f1ae1ffb8eb8498562432ea7a49a" prot="private" static="no" mutable="no">
         <type>ArrayOfBoundingBoxes</type>
@@ -1097,7 +1169,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="427" column="26" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="427" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="431" column="26" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="431" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_staff_alignment_1a807cbb879bf4ea63d744d45042390d7c" prot="private" static="no" mutable="no">
         <type>ArrayOfBoundingBoxes</type>
@@ -1110,7 +1182,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="428" column="26" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="428" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="432" column="26" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="432" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -1142,7 +1214,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="206" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="209" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ad1449015f86a39bf97ae7851ad6ca3d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const ArrayOfFloatingPositioners &amp;</type>
@@ -1156,7 +1228,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="211" column="38" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="211" bodyend="211"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="214" column="38" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="214" bodyend="214"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a45c9254734f194b8625f2ecb835d2dbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>ArrayOfFloatingPositioners</type>
@@ -1174,7 +1246,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="225" column="32"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="228" column="32"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a7fa1759557d1353566cfdcd56de6edf7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1188,7 +1260,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="258" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="261" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1a8df2e2be909bfb617bf1cd3b1b278c2d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const AttSpacing *</type>
@@ -1202,7 +1274,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="263" column="22"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="266" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ab0c857aa5a9a585e4107edd6ef102f3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1216,7 +1288,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="331" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="334" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ae760f3785a9a3cdaa22a693272adfaee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1230,7 +1302,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="336" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="339" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ac0fccd1747b5d662103b9cdcf64edeed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1260,7 +1332,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="341" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="344" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1ae57c01e1034bef16c5101e479709c9bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1286,7 +1358,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="347" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="350" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -1310,7 +1382,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="367" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="370" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_staff_alignment_1aa0b9e06063fc5f881028a8cc0c00c181" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1328,7 +1400,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="372" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="375" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1372,7 +1444,7 @@ With the collapse option, the count is number of verses. The position is calcula
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="172" column="35" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="172" bodyend="429"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" line="172" column="35" bodyfile="/home/runner/work/verovio/verovio/include/vrv/verticalaligner.h" bodystart="172" bodyend="433"/>
     <listofallmembers>
       <member refid="classvrv_1_1_staff_alignment_1a709857a0c1dff9f5014292c5afa9e617" prot="public" virt="virtual"><scope>vrv::StaffAlignment</scope><name>Accept</name></member>
       <member refid="classvrv_1_1_staff_alignment_1a764637e5bfb9b267035cb9775a05af69" prot="public" virt="virtual"><scope>vrv::StaffAlignment</scope><name>Accept</name></member>
@@ -1381,7 +1453,7 @@ With the collapse option, the count is number of verses. The position is calcula
       <member refid="classvrv_1_1_staff_alignment_1abe912a2607606376bea1a21731c5195d" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>AddBBoxAbove</name></member>
       <member refid="classvrv_1_1_staff_alignment_1aad91647368dc7d03520e0bd3f5139602" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>AddBBoxBelow</name></member>
       <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" prot="public" virt="virtual"><scope>vrv::StaffAlignment</scope><name>AddChild</name></member>
-      <member refid="classvrv_1_1_staff_alignment_1a7804d94fb3fb3db00ed433a22edea5d6" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>AddVerseN</name></member>
+      <member refid="classvrv_1_1_staff_alignment_1aa6450b19dc3bc9e7d15f142c0fb875d6" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>AddVerseN</name></member>
       <member refid="classvrv_1_1_staff_alignment_1ae57c01e1034bef16c5101e479709c9bc" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>AdjustBracketGroupSpacing</name></member>
       <member refid="classvrv_1_1_bounding_box_1ae9a22cf5d306abb22ff5f557e81bd9af" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>ApproximateBezierBoundingBox</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3901a5e4a728b8f3450cce0e30f4bd29" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>ApproximateBezierExtrema</name></member>
@@ -1567,7 +1639,10 @@ With the collapse option, the count is number of verses. The position is calcula
       <member refid="classvrv_1_1_object_1a93ba097fdba73b383a5aee0771e484d7" prot="public" virt="virtual"><scope>vrv::StaffAlignment</scope><name>GetTimeSpanningInterface</name></member>
       <member refid="classvrv_1_1_bounding_box_1a9dae1c4940695c403ba67841512f94f3" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetTopBy</name></member>
       <member refid="classvrv_1_1_staff_alignment_1ae289d82b696a41fd832abdbf43afefac" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetVerseCount</name></member>
-      <member refid="classvrv_1_1_staff_alignment_1a02a6cbdb61d48392778770d372f3c732" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetVersePosition</name></member>
+      <member refid="classvrv_1_1_staff_alignment_1a2de2f6ed7e4b30e3cbd4f0f1d650fc89" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetVerseCountAbove</name></member>
+      <member refid="classvrv_1_1_staff_alignment_1a69d7e024be6fd3ec86a87f25d7d643fe" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetVerseCountBelow</name></member>
+      <member refid="classvrv_1_1_staff_alignment_1a133ef4ea740ee92af348590d178ce9db" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetVersePositionAbove</name></member>
+      <member refid="classvrv_1_1_staff_alignment_1a19cb7512728ed74364d734f1afb9d442" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetVersePositionBelow</name></member>
       <member refid="classvrv_1_1_bounding_box_1a6f1d1de5ac01ce1fe4cf43ed16b47e11" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetX1By</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3a9666c33d5a4a7d01f4b159c128d6c5" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetX2By</name></member>
       <member refid="classvrv_1_1_bounding_box_1ad906e8632b28b1be81fa374ad2b5292e" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>GetY1By</name></member>
@@ -1640,7 +1715,8 @@ With the collapse option, the count is number of verses. The position is calcula
       <member refid="classvrv_1_1_staff_alignment_1a9d9c9d575fceeddc4ae4df3c095d16de" prot="private" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>m_staffHeight</name></member>
       <member refid="classvrv_1_1_staff_alignment_1a8fbdb29d9fb58c6b6a3de08c03411ed4" prot="private" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>m_system</name></member>
       <member refid="classvrv_1_1_object_1a74ae0995caefb72a71445ba43fce0652" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>m_unsupported</name></member>
-      <member refid="classvrv_1_1_staff_alignment_1a5265a43a6ab421c5be56b5bd1814d1cd" prot="private" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>m_verseNs</name></member>
+      <member refid="classvrv_1_1_staff_alignment_1a99e5dfce9fa4358f4017a0a05fb63c6a" prot="private" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>m_verseAboveNs</name></member>
+      <member refid="classvrv_1_1_staff_alignment_1abfc7e370027a0ef9edb61ac322021cb1" prot="private" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>m_verseBelowNs</name></member>
       <member refid="classvrv_1_1_staff_alignment_1a366a4051d7602f053bc7b944d9266f09" prot="private" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>m_yRel</name></member>
       <member refid="classvrv_1_1_object_1a30996d1e8460f2110900b490425c16ec" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>Modify</name></member>
       <member refid="classvrv_1_1_object_1aa846e8099e10d6cf427e8255e4a62dd4" prot="public" virt="non-virtual"><scope>vrv::StaffAlignment</scope><name>MoveChildrenFrom</name></member>

@@ -1,5 +1,10 @@
 var NAVTREEINDEX31 =
 {
+"structvrv_1_1_key_accid_info.html#a1d81a3341fad0019e9e963645226542e":[1,0,0,214,0],
+"structvrv_1_1_key_accid_info.html#a87c883a3ac6d1525141d7b29371db5b6":[1,0,0,214,1],
+"structvrv_1_1_m_i_d_i_chord.html":[1,0,0,240],
+"structvrv_1_1_m_i_d_i_chord.html#a5cf3c77c21b83b33489c9f8fb69d2dae":[1,0,0,240,1],
+"structvrv_1_1_m_i_d_i_chord.html#af4eb3a2b50f0c45f938fec365f5bae97":[1,0,0,240,0],
 "structvrv_1_1_m_i_d_i_held_note.html":[1,0,0,241],
 "structvrv_1_1_m_i_d_i_held_note.html#a8caee921924918efc2ebd079e2f0293b":[1,0,0,241,0],
 "structvrv_1_1_m_i_d_i_held_note.html#aeb200ab2694f4564a121b63a62eb6391":[1,0,0,241,1],

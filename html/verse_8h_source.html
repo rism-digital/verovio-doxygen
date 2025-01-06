@@ -107,42 +107,47 @@ $(document).ready(function(){initNavTree('verse_8h_source.html',''); initResizab
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// Verse</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classvrv_1_1_verse.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_verse.html">Verse</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>, <span class="keyword">public</span> AttColor, <span class="keyword">public</span> AttLang, <span class="keyword">public</span> AttNInteger, <span class="keyword">public</span> AttTypography {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classvrv_1_1_verse.html">Verse</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_verse.html">Verse</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classvrv_1_1_verse.html#a7dfc1446f007ac16a49f632746cfe437">   32</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_verse.html#a7dfc1446f007ac16a49f632746cfe437">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_verse.html">Verse</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_verse.html#a5022420900bb50d029ad1226325b42aa">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Verse&quot;</span>; }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_verse.html#af6c20c2a1cfd122a4f625a6dbef89eda">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    LabelAbbr *GetDrawingLabelAbbr() { <span class="keywordflow">return</span> m_drawingLabelAbbr; }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">const</span> LabelAbbr *GetDrawingLabelAbbr()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingLabelAbbr; }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> SetDrawingLabelAbbr(LabelAbbr *labelAbbr) { m_drawingLabelAbbr = labelAbbr; }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_verse.html#a142d94355c0ee127a1ae22cea8368c9e">AdjustPosition</a>(<span class="keywordtype">int</span> &amp;overlap, <span class="keywordtype">int</span> freeSpace, <span class="keyword">const</span> Doc *doc);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_verse.html#a140da90b66e83dab9c0342a9f93de1de">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_verse.html#a140da90b66e83dab9c0342a9f93de1de">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    LabelAbbr *m_drawingLabelAbbr;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classvrv_1_1_verse.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_verse.html">Verse</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;              <span class="keyword">public</span> AttColor,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;              <span class="keyword">public</span> AttLang,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;              <span class="keyword">public</span> AttNInteger,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;              <span class="keyword">public</span> AttPlacementRelStaff,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;              <span class="keyword">public</span> AttTypography {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classvrv_1_1_verse.html">Verse</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_verse.html">Verse</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classvrv_1_1_verse.html#a7dfc1446f007ac16a49f632746cfe437">   37</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_verse.html#a7dfc1446f007ac16a49f632746cfe437">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_verse.html">Verse</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_verse.html#a5022420900bb50d029ad1226325b42aa">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Verse&quot;</span>; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_verse.html#af6c20c2a1cfd122a4f625a6dbef89eda">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    LabelAbbr *GetDrawingLabelAbbr() { <span class="keywordflow">return</span> m_drawingLabelAbbr; }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">const</span> LabelAbbr *GetDrawingLabelAbbr()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_drawingLabelAbbr; }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> SetDrawingLabelAbbr(LabelAbbr *labelAbbr) { m_drawingLabelAbbr = labelAbbr; }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_verse.html#a142d94355c0ee127a1ae22cea8368c9e">AdjustPosition</a>(<span class="keywordtype">int</span> &amp;overlap, <span class="keywordtype">int</span> freeSpace, <span class="keyword">const</span> Doc *doc);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_verse.html#a140da90b66e83dab9c0342a9f93de1de">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_verse.html#a140da90b66e83dab9c0342a9f93de1de">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    LabelAbbr *m_drawingLabelAbbr;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_verse_html_af6c20c2a1cfd122a4f625a6dbef89eda"><div class="ttname"><a href="classvrv_1_1_verse.html#af6c20c2a1cfd122a4f625a6dbef89eda">vrv::Verse::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Add an element (a syl) to a verse.</div></div>
@@ -152,12 +157,12 @@ $(document).ready(function(){initNavTree('verse_8h_source.html',''); initResizab
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:59</div></div>
 <div class="ttc" id="aclassvrv_1_1_verse_html_a140da90b66e83dab9c0342a9f93de1de"><div class="ttname"><a href="classvrv_1_1_verse.html#a140da90b66e83dab9c0342a9f93de1de">vrv::Verse::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:46</div></div>
-<div class="ttc" id="aclassvrv_1_1_verse_html_a7dfc1446f007ac16a49f632746cfe437"><div class="ttname"><a href="classvrv_1_1_verse.html#a7dfc1446f007ac16a49f632746cfe437">vrv::Verse::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> verse.h:32</div></div>
+<div class="ttc" id="aclassvrv_1_1_verse_html_a7dfc1446f007ac16a49f632746cfe437"><div class="ttname"><a href="classvrv_1_1_verse.html#a7dfc1446f007ac16a49f632746cfe437">vrv::Verse::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> verse.h:37</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>verse.h</b></li>
-    <li class="footer">Generated on Mon Jan 6 2025 08:31:08 for Verovio by
+    <li class="footer">Generated on Mon Jan 6 2025 12:41:21 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
