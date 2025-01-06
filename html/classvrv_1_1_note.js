@@ -25,7 +25,7 @@ var classvrv_1_1_note =
     [ "GetDurationInterface", "classvrv_1_1_note.html#a5a58cd23ffb4bb37ffe155ef11231c11", null ],
     [ "GetFlippedNotehead", "classvrv_1_1_note.html#a520f34e67cd0e66c90216e942720b646", null ],
     [ "GetMensuralNoteheadGlyph", "classvrv_1_1_note.html#aa4c61822c22f9917dfb1324e13ad09f9", null ],
-    [ "GetMIDIPitch", "classvrv_1_1_note.html#a98a495b0db9b39996f2eb2c2ad286753", null ],
+    [ "GetMIDIPitch", "classvrv_1_1_note.html#a23d4b57a1a6e98cb2805cf8cbeda59d4", null ],
     [ "GetNoteGroup", "classvrv_1_1_note.html#a1673470e59a8f93932a49a7c29a2245d", null ],
     [ "GetNoteGroupPosition", "classvrv_1_1_note.html#a2db6866b410158abf49fa0c94dce8340", null ],
     [ "GetNoteheadGlyph", "classvrv_1_1_note.html#a4fba3384361effe5ffe4cb8970a78a1e", null ],

@@ -1268,6 +1268,7 @@ var hierarchy =
       ] ],
       [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ]
     ] ],
+    [ "vrv::OctaveInfo", "structvrv_1_1_octave_info.html", null ],
     [ "vrv::Option", "classvrv_1_1_option.html", [
       [ "vrv::OptionArray", "classvrv_1_1_option_array.html", null ],
       [ "vrv::OptionBool", "classvrv_1_1_option_bool.html", null ],

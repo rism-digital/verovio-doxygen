@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_beam_span.html#a6b36d0cc5075fde046789643a3ace068":[1,0,0,64,17],
+"classvrv_1_1_beam_span.html#a7474b3dad3b755b8ff4dfe06f37c1890":[1,0,0,64,4],
 "classvrv_1_1_beam_span.html#a7e780ffc204871932f9930394c488c25":[1,0,0,64,21],
 "classvrv_1_1_beam_span.html#a8e8949725dad8fc03ba193cf7d899c08":[1,0,0,64,12],
 "classvrv_1_1_beam_span.html#a90fb9935bc624b4e65313413d98b1abc":[1,0,0,64,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_calc_ledger_lines_functor.html#a7551539a321be16e867f0dc1d31bcb8d":[1,0,0,81,4],
 "classvrv_1_1_calc_ledger_lines_functor.html#a8fa735d63227f8b75b90ac9989a4b612":[1,0,0,81,0],
 "classvrv_1_1_calc_ledger_lines_functor.html#ab15b7ff3a51386b2c292c834487c6fc9":[1,0,0,81,3],
-"classvrv_1_1_calc_ledger_lines_functor.html#ae00b036dc1183de83be7a0beb4c72238":[1,0,0,81,5],
-"classvrv_1_1_calc_ledger_lines_functor.html#ae3a3e4c7e90f66d154499e19ef0e298f":[1,0,0,81,1],
-"classvrv_1_1_calc_ligature_or_neume_pos_functor.html":[1,0,0,82]
+"classvrv_1_1_calc_ledger_lines_functor.html#ae00b036dc1183de83be7a0beb4c72238":[1,0,0,81,5]
 };

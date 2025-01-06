@@ -170,7 +170,7 @@ var searchData=
   ['getmelodicdirection_511',['GetMelodicDirection',['../classvrv_1_1_tuplet.html#aaaa1b75edb1da95f21d2e5bc0d31bbc1',1,'vrv::Tuplet']]],
   ['getmensuralnoteheadglyph_512',['GetMensuralNoteheadGlyph',['../classvrv_1_1_note.html#aa4c61822c22f9917dfb1324e13ad09f9',1,'vrv::Note']]],
   ['getmidiexportdone_513',['GetMidiExportDone',['../classvrv_1_1_doc.html#ab09d1142c97b77fdbb612c787049b907',1,'vrv::Doc']]],
-  ['getmidipitch_514',['GetMIDIPitch',['../classvrv_1_1_note.html#a98a495b0db9b39996f2eb2c2ad286753',1,'vrv::Note']]],
+  ['getmidipitch_514',['GetMIDIPitch',['../classvrv_1_1_note.html#a23d4b57a1a6e98cb2805cf8cbeda59d4',1,'vrv::Note']]],
   ['getmidivaluesforelement_515',['GetMIDIValuesForElement',['../classvrv_1_1_toolkit.html#a1b7c6ef82b1ec90af16f8f32da24dd5f',1,'vrv::Toolkit']]],
   ['getminimumsystemspacing_516',['GetMinimumSystemSpacing',['../classvrv_1_1_system.html#a1434a0fad021420d35b35540604d0a39',1,'vrv::System']]],
   ['getmordentglyph_517',['GetMordentGlyph',['../classvrv_1_1_mordent.html#afb2c6b22088d7f1cc26064c23e21d1d5',1,'vrv::Mordent']]],

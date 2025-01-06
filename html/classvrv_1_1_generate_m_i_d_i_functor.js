@@ -9,6 +9,8 @@ var classvrv_1_1_generate_m_i_d_i_functor =
     [ "SetCueExclusion", "classvrv_1_1_generate_m_i_d_i_functor.html#a73362051c5837d630ea01f9874dbd611", null ],
     [ "SetCurrentTempo", "classvrv_1_1_generate_m_i_d_i_functor.html#ac596b3b6165edbf2509f9187c310793d", null ],
     [ "SetDeferredNotes", "classvrv_1_1_generate_m_i_d_i_functor.html#a7043b4083488d75551a7b77ae5f69463", null ],
+    [ "SetLayerN", "classvrv_1_1_generate_m_i_d_i_functor.html#ad7572d7650ab02386cc9592ac02fb2d5", null ],
+    [ "SetOctaves", "classvrv_1_1_generate_m_i_d_i_functor.html#a68b205341bbc045a6c024ba7b155d1ef", null ],
     [ "SetStaffN", "classvrv_1_1_generate_m_i_d_i_functor.html#a900912f9ea5bfed0066006eae0928d84", null ],
     [ "SetTempoEventTicks", "classvrv_1_1_generate_m_i_d_i_functor.html#a0dab2fed0ed9583d590e2700a38f2275", null ],
     [ "SetTrack", "classvrv_1_1_generate_m_i_d_i_functor.html#a714dc56a556ff18e6c02cc9bfbd2a4da", null ],

@@ -266,6 +266,7 @@ var annotated_dup =
       [ "ObjectFactory", "classvrv_1_1_object_factory.html", "classvrv_1_1_object_factory" ],
       [ "ObjectListInterface", "classvrv_1_1_object_list_interface.html", "classvrv_1_1_object_list_interface" ],
       [ "Octave", "classvrv_1_1_octave.html", "classvrv_1_1_octave" ],
+      [ "OctaveInfo", "structvrv_1_1_octave_info.html", "structvrv_1_1_octave_info" ],
       [ "Option", "classvrv_1_1_option.html", "classvrv_1_1_option" ],
       [ "OptionArray", "classvrv_1_1_option_array.html", "classvrv_1_1_option_array" ],
       [ "OptionBool", "classvrv_1_1_option_bool.html", "classvrv_1_1_option_bool" ],
