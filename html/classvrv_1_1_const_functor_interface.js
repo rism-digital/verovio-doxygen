@@ -38,6 +38,8 @@ var classvrv_1_1_const_functor_interface =
     [ "VisitControlElementEnd", "classvrv_1_1_const_functor_interface.html#a8e159ed01556f71b99a823bbf55fdb86", null ],
     [ "VisitCourse", "classvrv_1_1_const_functor_interface.html#aa5fa26dec193e0728675576c1dc7deeb", null ],
     [ "VisitCourseEnd", "classvrv_1_1_const_functor_interface.html#aeb85fe6fb29db2d52624626fc9a16308", null ],
+    [ "VisitCpMark", "classvrv_1_1_const_functor_interface.html#ad339c95690a42214a65bcdbfb0d5837a", null ],
+    [ "VisitCpMarkEnd", "classvrv_1_1_const_functor_interface.html#afb050743e67f2eb5f47798b1e5bffad6", null ],
     [ "VisitCustos", "classvrv_1_1_const_functor_interface.html#adcf36e209d094a327e53eb1abfc9fe6b", null ],
     [ "VisitCustosEnd", "classvrv_1_1_const_functor_interface.html#af9f8152029d35a0ca53d7f4e0622e75e", null ],
     [ "VisitDir", "classvrv_1_1_const_functor_interface.html#a3c271ad15a33c19448b53c7142887db5", null ],

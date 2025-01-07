@@ -64,6 +64,7 @@ var files_dup =
     [ "convertfunctor.h", "convertfunctor_8h_source.html", null ],
     [ "corr.h", "corr_8h_source.html", null ],
     [ "course.h", "course_8h_source.html", null ],
+    [ "cpmark.h", "cpmark_8h_source.html", null ],
     [ "custos.h", "custos_8h_source.html", null ],
     [ "damage.h", "damage_8h_source.html", null ],
     [ "del.h", "del_8h_source.html", null ],

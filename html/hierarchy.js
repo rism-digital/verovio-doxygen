@@ -25,6 +25,7 @@ var hierarchy =
           [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
           [ "vrv::Breath", "classvrv_1_1_breath.html", null ],
           [ "vrv::Caesura", "classvrv_1_1_caesura.html", null ],
+          [ "vrv::CpMark", "classvrv_1_1_cp_mark.html", null ],
           [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
           [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
           [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
@@ -675,6 +676,7 @@ var hierarchy =
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
       [ "vrv::TextDirInterface", "classvrv_1_1_text_dir_interface.html", [
         [ "vrv::AnchoredText", "classvrv_1_1_anchored_text.html", null ],
+        [ "vrv::CpMark", "classvrv_1_1_cp_mark.html", null ],
         [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
         [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
         [ "vrv::Fing", "classvrv_1_1_fing.html", null ],
@@ -770,6 +772,7 @@ var hierarchy =
         [ "vrv::TimeSpanningInterface", "classvrv_1_1_time_spanning_interface.html", [
           [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ],
           [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
+          [ "vrv::CpMark", "classvrv_1_1_cp_mark.html", null ],
           [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
           [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
           [ "vrv::F", "classvrv_1_1_f.html", null ],
@@ -1257,6 +1260,7 @@ var hierarchy =
       [ "vrv::TextLayoutElement", "classvrv_1_1_text_layout_element.html", null ],
       [ "vrv::TextListInterface", "classvrv_1_1_text_list_interface.html", [
         [ "vrv::Annot", "classvrv_1_1_annot.html", null ],
+        [ "vrv::CpMark", "classvrv_1_1_cp_mark.html", null ],
         [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
         [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
         [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
