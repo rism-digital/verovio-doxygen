@@ -326,7 +326,7 @@ $(document).ready(function(){initNavTree('midifunctor_8h_source.html',''); initR
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordtype">void</span> SetChannel(<span class="keywordtype">int</span> channel) { m_midiChannel = channel; }</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">void</span> SetControlEvents(<span class="keywordtype">bool</span> controlEvents) { m_controlEvents = controlEvents; }</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordtype">void</span> SetCueExclusion(<span class="keywordtype">bool</span> cueExclusion) { m_cueExclusion = cueExclusion; }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordtype">void</span> SetNoCue(<span class="keywordtype">bool</span> noCue) { m_noCue = noCue; }</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordtype">void</span> SetCurrentTempo(<span class="keywordtype">double</span> tempo) { m_currentTempo = tempo; }</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordtype">void</span> SetDeferredNotes(<span class="keyword">const</span> std::map&lt;const Note *, double&gt; &amp;deferredNotes) { m_deferredNotes = deferredNotes; }</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordtype">void</span> SetLayerN(<span class="keywordtype">int</span> layerN) { m_layerN = layerN; }</div>
@@ -406,7 +406,7 @@ $(document).ready(function(){initNavTree('midifunctor_8h_source.html',''); initR
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="comment">// Indicates whether the last grace note/chord was accented</span></div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keywordtype">bool</span> m_accentedGraceNote;</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="comment">// Indicates whether cue notes should be included</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordtype">bool</span> m_cueExclusion;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordtype">bool</span> m_noCue;</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="comment">// Tablature held notes indexed by (course - 1)</span></div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    std::vector&lt;MIDIHeldNote&gt; m_heldNotes;</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="comment">// A flag indicating we want to process control events</span></div>
@@ -430,7 +430,7 @@ $(document).ready(function(){initNavTree('midifunctor_8h_source.html',''); initR
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="comment">     * Set the cue exclusion flag</span></div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordtype">void</span> SetCueExclusion(<span class="keywordtype">bool</span> cueExclusion) { m_cueExclusion = cueExclusion; }</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordtype">void</span> SetNoCue(<span class="keywordtype">bool</span> noCue) { m_noCue = noCue; }</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160; </div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="comment">     * Functor interface</span></div>
@@ -455,7 +455,7 @@ $(document).ready(function(){initNavTree('midifunctor_8h_source.html',''); initR
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="comment">// The current tempo</span></div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <span class="keywordtype">double</span> m_currentTempo;</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    <span class="comment">// Indicates whether cue notes should be included</span></div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    <span class="keywordtype">bool</span> m_cueExclusion;</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    <span class="keywordtype">bool</span> m_noCue;</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="comment">// The timemap</span></div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    Timemap *m_timemap;</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;};</div>
@@ -534,7 +534,7 @@ $(document).ready(function(){initNavTree('midifunctor_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>midifunctor.h</b></li>
-    <li class="footer">Generated on Thu Jan 9 2025 06:43:07 for Verovio by
+    <li class="footer">Generated on Tue Jan 14 2025 07:21:14 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
