@@ -1,6 +1,7 @@
 var classvrv_1_1_fraction =
 [
-    [ "Fraction", "classvrv_1_1_fraction.html#a8ee0ad9515afa2f646635735fbe46133", null ],
+    [ "Fraction", "classvrv_1_1_fraction.html#ad3efced575d29faf12c533970eec045d", null ],
+    [ "Fraction", "classvrv_1_1_fraction.html#ae4ef45a13965ef8b44d67036db922cfc", null ],
     [ "Fraction", "classvrv_1_1_fraction.html#a9c751b4e2d9cf8779b0b6a0ed1dc9f6e", null ],
     [ "Fraction", "classvrv_1_1_fraction.html#a51871e4e9be424eaab34c6a1ad2e49e1", null ],
     [ "GetDenominator", "classvrv_1_1_fraction.html#a1ab693fc96e04d173df2c6615ebce166", null ],
