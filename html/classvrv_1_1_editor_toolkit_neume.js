@@ -1,6 +1,7 @@
 var classvrv_1_1_editor_toolkit_neume =
 [
     [ "EditorToolkitNeume", "classvrv_1_1_editor_toolkit_neume.html#ad240f83d46bf3a95a0232403afd37f48", null ],
+    [ "AddSyl", "classvrv_1_1_editor_toolkit_neume.html#a86198f2ba436635596f18777434cf998", null ],
     [ "AdjustClefLineFromPosition", "classvrv_1_1_editor_toolkit_neume.html#a3d9c3e60ef3afb34b13c0123dd9d3beb", null ],
     [ "AdjustPitchAfterDrag", "classvrv_1_1_editor_toolkit_neume.html#acdaf0c47350d8e452dc052d8c00bf7a0", null ],
     [ "AdjustPitchFromPosition", "classvrv_1_1_editor_toolkit_neume.html#aefbcc308a24d1418bdb292f2fdbbe484", null ],
@@ -18,6 +19,7 @@ var classvrv_1_1_editor_toolkit_neume =
     [ "MatchHeight", "classvrv_1_1_editor_toolkit_neume.html#a6802f821cbad2b679c77dac9814ff48d", null ],
     [ "Merge", "classvrv_1_1_editor_toolkit_neume.html#a7e6468beb76efc0460ee6f2de23494dc", null ],
     [ "MoveOutsideSyllable", "classvrv_1_1_editor_toolkit_neume.html#a06e2228a675d2ff46c60837784083cf9", null ],
+    [ "ParseAddSylAction", "classvrv_1_1_editor_toolkit_neume.html#abb945ed27a7e5f9755873826ae100ca4", null ],
     [ "ParseChangeGroupAction", "classvrv_1_1_editor_toolkit_neume.html#a470f30b5d6fba79e9dbb5b3ff31a1346", null ],
     [ "ParseChangeStaffAction", "classvrv_1_1_editor_toolkit_neume.html#a49bb33a9635df23c6cd2327d8d25ec01", null ],
     [ "ParseChangeStaffToAction", "classvrv_1_1_editor_toolkit_neume.html#a75e0993335fb5123f4cb4c8c3d8ec068", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"classvrv_1_1_text_element.html#a95aacc7c9ceb8f7b37681b674156eed9":[1,0,0,392,11],
+"classvrv_1_1_text_element.html#aac7cecf1bf0ed2a368a577d95502535b":[1,0,0,392,13],
 "classvrv_1_1_text_element.html#ab30eaf19d027ab698fe041b10ab30e6c":[1,0,0,392,14],
 "classvrv_1_1_text_element.html#ab922ad557ef315d4a683ec038b6ea6b9":[1,0,0,392,3],
 "classvrv_1_1_text_element.html#abc051089f67b9d85955390828593bada":[1,0,0,392,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "classvrv_1_1_transpose_selected_mdiv_functor.html#ab799484a042df2763bc1784de64f9dbc":[1,0,0,407,2],
 "classvrv_1_1_transpose_selected_mdiv_functor.html#aca9dedcea401fcec670bc87338268bed":[1,0,0,407,3],
 "classvrv_1_1_transpose_to_sounding_pitch_functor.html":[1,0,0,408],
-"classvrv_1_1_transpose_to_sounding_pitch_functor.html#a063dfe184743d6b2e9c45a7be9141468":[1,0,0,408,5],
-"classvrv_1_1_transpose_to_sounding_pitch_functor.html#a0b4689f006daaa7dcfa4b1918cbadb19":[1,0,0,408,8],
-"classvrv_1_1_transpose_to_sounding_pitch_functor.html#a1081019655c765a6ff367598a16de18a":[1,0,0,408,2]
+"classvrv_1_1_transpose_to_sounding_pitch_functor.html#a063dfe184743d6b2e9c45a7be9141468":[1,0,0,408,5]
 };
