@@ -678,6 +678,7 @@
       </node>
     </incdepgraph>
     <innerclass refid="classvrv_1_1_scoring_up_functor" prot="public">vrv::ScoringUpFunctor</innerclass>
+    <innerclass refid="structvrv_1_1_scoring_up_functor_1_1_mens_info" prot="private">vrv::ScoringUpFunctor::MensInfo</innerclass>
     <innernamespace refid="namespacevrv">vrv</innernamespace>
     <briefdescription>
     </briefdescription>
@@ -744,38 +745,39 @@
 <codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>score<sp/>time<sp/>in<sp/>the<sp/>measure<sp/>(incremented<sp/>by<sp/>each<sp/>element)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_currentScoreTime;</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>Mensur</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_mensur" kindref="compound">Mensur</ref><sp/>*m_currentMensur;</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_modusMaior;</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_modusMinor;</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_tempus;</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_prolatio;</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>std::tuple&lt;int,<sp/>int,<sp/>int,<sp/>int&gt;<sp/>m_mensurAsTuplet;</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>data<sp/>of<sp/>each<sp/>voice<sp/>in<sp/>the<sp/>form<sp/>of<sp/>an<sp/>array<sp/>of<sp/>pairs<sp/>made<sp/>up<sp/>of<sp/>&apos;mensuration&apos;<sp/>{m_modusMaior,<sp/>m_modusMinor,</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>m_tempus,<sp/>m_prolatio}<sp/>and<sp/>the<sp/>notes/rests/dots<sp/>in<sp/>that<sp/>voice<sp/>that<sp/>follows<sp/>that<sp/>mensuration</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(m_dursInVoiceWithSameMensur)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;std::tuple&lt;int,<sp/>int,<sp/>int,<sp/>int&gt;,<sp/>ArrayOfElementDurPairs&gt;&gt;<sp/>m_voiceData;</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Vector<sp/>of<sp/>pairs<sp/>of<sp/>elements<sp/>(that<sp/>are<sp/>notes,<sp/>rests,<sp/>or<sp/>dots)<sp/>and<sp/>their<sp/>durations</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>ArrayOfElementDurPairs<sp/>m_dursInVoiceWithSameMensur;</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Vector<sp/>of<sp/>vectors<sp/>of<sp/>pairs<sp/>of<sp/>elements<sp/>(that<sp/>are<sp/>notes,<sp/>rests,<sp/>or<sp/>dots)<sp/>and<sp/>their<sp/>durations</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;ArrayOfElementDurPairs&gt;<sp/>m_listOfSequences;</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>List<sp/>of<sp/>pairs<sp/>made<sp/>of<sp/>the<sp/>form<sp/>{note,<sp/>following_dot}<sp/>for<sp/>notes<sp/>followed<sp/>by<sp/>dots<sp/>of<sp/>augmentation</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;std::pair&lt;Note<sp/>*,<sp/>Dot<sp/>*&gt;&gt;<sp/>m_listOfAugNotesDotsPairs;</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>List<sp/>of<sp/>pairs<sp/>made<sp/>of<sp/>the<sp/>form<sp/>{note,<sp/>following_dot}<sp/>for<sp/>notes<sp/>followed<sp/>by<sp/>dots<sp/>of<sp/>perfection</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;std::pair&lt;Note<sp/>*,<sp/>Dot<sp/>*&gt;&gt;<sp/>m_listOfPerfNotesDotsPairs;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"></highlight></codeline>
-<codeline lineno="125"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"></highlight></codeline>
-<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>scoringupfunctor_h<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Simplified<sp/>structure<sp/>for<sp/>a<sp/>Mensur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MensInfo<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prolatio<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tempus<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>modusminor<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>modusmaior<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>Mensur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>Mensur<sp/>*m_currentMensur;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>mensuration<sp/>info</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>MensInfo<sp/>m_mensInfo;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>data<sp/>of<sp/>each<sp/>voice<sp/>in<sp/>the<sp/>form<sp/>of<sp/>an<sp/>array<sp/>of<sp/>pairs<sp/>made<sp/>up<sp/>of<sp/>mensuratin<sp/>info</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>and<sp/>the<sp/>notes/rests/dots<sp/>in<sp/>that<sp/>voice<sp/>that<sp/>follows<sp/>that<sp/>mensuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(m_dursInVoiceWithSameMensur)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;MensInfo,<sp/>ArrayOfElementDurPairs&gt;&gt;<sp/>m_voiceData;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Vector<sp/>of<sp/>pairs<sp/>of<sp/>elements<sp/>(that<sp/>are<sp/>notes,<sp/>rests,<sp/>or<sp/>dots)<sp/>and<sp/>their<sp/>durations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>ArrayOfElementDurPairs<sp/>m_dursInVoiceWithSameMensur;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Vector<sp/>of<sp/>vectors<sp/>of<sp/>pairs<sp/>of<sp/>elements<sp/>(that<sp/>are<sp/>notes,<sp/>rests,<sp/>or<sp/>dots)<sp/>and<sp/>their<sp/>durations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;ArrayOfElementDurPairs&gt;<sp/>m_listOfSequences;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>List<sp/>of<sp/>pairs<sp/>made<sp/>of<sp/>the<sp/>form<sp/>{note,<sp/>following_dot}<sp/>for<sp/>notes<sp/>followed<sp/>by<sp/>dots<sp/>of<sp/>augmentation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;std::pair&lt;Note<sp/>*,<sp/>Dot<sp/>*&gt;&gt;<sp/>m_listOfAugNotesDotsPairs;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>List<sp/>of<sp/>pairs<sp/>made<sp/>of<sp/>the<sp/>form<sp/>{note,<sp/>following_dot}<sp/>for<sp/>notes<sp/>followed<sp/>by<sp/>dots<sp/>of<sp/>perfection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;std::pair&lt;Note<sp/>*,<sp/>Dot<sp/>*&gt;&gt;<sp/>m_listOfPerfNotesDotsPairs;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>scoringupfunctor_h<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/scoringupfunctor.h"/>
   </compounddef>

@@ -147,41 +147,41 @@ $(document).ready(function(){initNavTree('scoringupfunctor_8h_source.html',''); 
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// The current score time in the measure (incremented by each element)</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">double</span> m_currentScoreTime;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// The current Mensur</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="classvrv_1_1_mensur.html">Mensur</a> *m_currentMensur;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">int</span> m_modusMaior;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">int</span> m_modusMinor;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">int</span> m_tempus;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">int</span> m_prolatio;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::tuple&lt;int, int, int, int&gt; m_mensurAsTuplet;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// The data of each voice in the form of an array of pairs made up of &#39;mensuration&#39; {m_modusMaior, m_modusMinor,</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// m_tempus, m_prolatio} and the notes/rests/dots in that voice that follows that mensuration</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// (m_dursInVoiceWithSameMensur)</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    std::vector&lt;std::pair&lt;std::tuple&lt;int, int, int, int&gt;, ArrayOfElementDurPairs&gt;&gt; m_voiceData;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// Vector of pairs of elements (that are notes, rests, or dots) and their durations</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    ArrayOfElementDurPairs m_dursInVoiceWithSameMensur;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// Vector of vectors of pairs of elements (that are notes, rests, or dots) and their durations</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    std::vector&lt;ArrayOfElementDurPairs&gt; m_listOfSequences;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// List of pairs made of the form {note, following_dot} for notes followed by dots of augmentation</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    std::list&lt;std::pair&lt;Note *, Dot *&gt;&gt; m_listOfAugNotesDotsPairs;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">// List of pairs made of the form {note, following_dot} for notes followed by dots of perfection</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    std::list&lt;std::pair&lt;Note *, Dot *&gt;&gt; m_listOfPerfNotesDotsPairs;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;};</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* scoringupfunctor_h */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// Simplified structure for a Mensur</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">struct </span>MensInfo {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">int</span> prolatio = 2;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">int</span> tempus = 2;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">int</span> modusminor = 2;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">int</span> modusmaior = 2;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    };</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// The current Mensur</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    Mensur *m_currentMensur;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// The current mensuration info</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    MensInfo m_mensInfo;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// The data of each voice in the form of an array of pairs made up of mensuratin info</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// and the notes/rests/dots in that voice that follows that mensuration</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">// (m_dursInVoiceWithSameMensur)</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    std::vector&lt;std::pair&lt;MensInfo, ArrayOfElementDurPairs&gt;&gt; m_voiceData;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// Vector of pairs of elements (that are notes, rests, or dots) and their durations</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    ArrayOfElementDurPairs m_dursInVoiceWithSameMensur;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// Vector of vectors of pairs of elements (that are notes, rests, or dots) and their durations</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::vector&lt;ArrayOfElementDurPairs&gt; m_listOfSequences;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// List of pairs made of the form {note, following_dot} for notes followed by dots of augmentation</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    std::list&lt;std::pair&lt;Note *, Dot *&gt;&gt; m_listOfAugNotesDotsPairs;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">// List of pairs made of the form {note, following_dot} for notes followed by dots of perfection</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    std::list&lt;std::pair&lt;Note *, Dot *&gt;&gt; m_listOfPerfNotesDotsPairs;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* scoringupfunctor_h */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvrv_1_1_mensur_html"><div class="ttname"><a href="classvrv_1_1_mensur.html">vrv::Mensur</a></div><div class="ttdoc">This class models the MEI &lt;mensur&gt; element.</div><div class="ttdef"><b>Definition:</b> mensur.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_html"><div class="ttname"><a href="classvrv_1_1_functor.html">vrv::Functor</a></div><div class="ttdoc">This abstract class is the base class for all mutable functors.</div><div class="ttdef"><b>Definition:</b> functor.h:101</div></div>
 <div class="ttc" id="aclassvrv_1_1_scoring_up_functor_html_a4ee1861f1c5192991564fc19541cc7ce"><div class="ttname"><a href="classvrv_1_1_scoring_up_functor.html#a4ee1861f1c5192991564fc19541cc7ce">vrv::ScoringUpFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> scoringupfunctor.h:35</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html"><div class="ttname"><a href="classvrv_1_1_note.html">vrv::Note</a></div><div class="ttdoc">This class models the MEI &lt;note&gt; element.</div><div class="ttdef"><b>Definition:</b> note.h:47</div></div>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('scoringupfunctor_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>scoringupfunctor.h</b></li>
-    <li class="footer">Generated on Thu Feb 6 2025 10:53:11 for Verovio by
+    <li class="footer">Generated on Thu Feb 6 2025 15:05:21 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
