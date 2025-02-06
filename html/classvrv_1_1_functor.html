@@ -142,11 +142,12 @@ Inheritance diagram for vrv::Functor:</div>
 <area href="classvrv_1_1_save_functor.html" title="This class saves the content of any object by calling the appropriate FileOutputStream method." alt="vrv::SaveFunctor" shape="rect" coords="427,2184,702,2208"/>
 <area href="classvrv_1_1_score_def_set_grp_sym_functor.html" title="This class prepares the group symbol starting and ending staffDefs for drawing." alt="vrv::ScoreDefSetGrpSymFunctor" shape="rect" coords="427,2240,702,2264"/>
 <area href="classvrv_1_1_score_def_unset_current_functor.html" title="This class unsets the initial scoreDef for each system and measure." alt="vrv::ScoreDefUnsetCurrentFunctor" shape="rect" coords="427,2296,702,2320"/>
-<area href="classvrv_1_1_set_cautionary_score_def_functor.html" title="This class sets the cautionary scoreDef wherever needed." alt="vrv::SetCautionaryScoreDefFunctor" shape="rect" coords="427,2352,702,2376"/>
-<area href="classvrv_1_1_set_staff_def_redraw_flags_functor.html" title="This class sets drawing flags for the StaffDef for indicating whether clefs, keysigs,..." alt="vrv::SetStaffDefRedrawFlagsFunctor" shape="rect" coords="427,2408,702,2432"/>
-<area href="classvrv_1_1_sync_from_facsimile_functor.html" title="This class sync the layout encoded in the facsimile to m_Abs members." alt="vrv::SyncFromFacsimileFunctor" shape="rect" coords="427,2464,702,2488"/>
-<area href="classvrv_1_1_sync_to_facsimile_functor.html" title="This class sync the layout calculated to the facsimile." alt="vrv::SyncToFacsimileFunctor" shape="rect" coords="427,2520,702,2544"/>
-<area href="classvrv_1_1_un_cast_off_functor.html" title="This class undoes the cast off for both pages and systems." alt="vrv::UnCastOffFunctor" shape="rect" coords="427,2576,702,2600"/>
+<area href="classvrv_1_1_scoring_up_functor.html" title="This class..." alt="vrv::ScoringUpFunctor" shape="rect" coords="427,2352,702,2376"/>
+<area href="classvrv_1_1_set_cautionary_score_def_functor.html" title="This class sets the cautionary scoreDef wherever needed." alt="vrv::SetCautionaryScoreDefFunctor" shape="rect" coords="427,2408,702,2432"/>
+<area href="classvrv_1_1_set_staff_def_redraw_flags_functor.html" title="This class sets drawing flags for the StaffDef for indicating whether clefs, keysigs,..." alt="vrv::SetStaffDefRedrawFlagsFunctor" shape="rect" coords="427,2464,702,2488"/>
+<area href="classvrv_1_1_sync_from_facsimile_functor.html" title="This class sync the layout encoded in the facsimile to m_Abs members." alt="vrv::SyncFromFacsimileFunctor" shape="rect" coords="427,2520,702,2544"/>
+<area href="classvrv_1_1_sync_to_facsimile_functor.html" title="This class sync the layout calculated to the facsimile." alt="vrv::SyncToFacsimileFunctor" shape="rect" coords="427,2576,702,2600"/>
+<area href="classvrv_1_1_un_cast_off_functor.html" title="This class undoes the cast off for both pages and systems." alt="vrv::UnCastOffFunctor" shape="rect" coords="427,2632,702,2656"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -465,6 +466,12 @@ virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitC
 <tr class="memitem:a0b4d9831e4c61843150080c73fc39059 inherit pub_methods_classvrv_1_1_functor_interface"><td class="memItemLeft" align="right" valign="top"><a id="a0b4d9831e4c61843150080c73fc39059"></a>
 virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitControlElementEnd</b> (<a class="el" href="classvrv_1_1_control_element.html">ControlElement</a> *controlElement)</td></tr>
 <tr class="separator:a0b4d9831e4c61843150080c73fc39059 inherit pub_methods_classvrv_1_1_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf01a48311ddad6f04a05abafa9c178c inherit pub_methods_classvrv_1_1_functor_interface"><td class="memItemLeft" align="right" valign="top"><a id="adf01a48311ddad6f04a05abafa9c178c"></a>
+virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitCpMark</b> (<a class="el" href="classvrv_1_1_cp_mark.html">CpMark</a> *cpMark)</td></tr>
+<tr class="separator:adf01a48311ddad6f04a05abafa9c178c inherit pub_methods_classvrv_1_1_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88fa276aa743fe00b90e46d988f3bf43 inherit pub_methods_classvrv_1_1_functor_interface"><td class="memItemLeft" align="right" valign="top"><a id="a88fa276aa743fe00b90e46d988f3bf43"></a>
+virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitCpMarkEnd</b> (<a class="el" href="classvrv_1_1_cp_mark.html">CpMark</a> *cpMark)</td></tr>
+<tr class="separator:a88fa276aa743fe00b90e46d988f3bf43 inherit pub_methods_classvrv_1_1_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a251e394d35698c84e0f919afff7775f1 inherit pub_methods_classvrv_1_1_functor_interface"><td class="memItemLeft" align="right" valign="top"><a id="a251e394d35698c84e0f919afff7775f1"></a>
 virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitDir</b> (<a class="el" href="classvrv_1_1_dir.html">Dir</a> *dir)</td></tr>
 <tr class="separator:a251e394d35698c84e0f919afff7775f1 inherit pub_methods_classvrv_1_1_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1023,7 +1030,7 @@ virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitF
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_functor.html">Functor</a></li>
-    <li class="footer">Generated on Sun Dec 22 2024 10:52:49 for Verovio by
+    <li class="footer">Generated on Thu Feb 6 2025 15:05:23 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

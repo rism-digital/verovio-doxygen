@@ -1005,14 +1005,19 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/note.h" line="211" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_note_1a98a495b0db9b39996f2eb2c2ad286753" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_note_1a23d4b57a1a6e98cb2805cf8cbeda59d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int vrv::Note::GetMIDIPitch</definition>
-        <argsstring>(int shift=0) const</argsstring>
+        <argsstring>(int shift=0, int octaveShift=0) const</argsstring>
         <name>GetMIDIPitch</name>
         <param>
           <type>int</type>
           <declname>shift</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>octaveShift</declname>
           <defval>0</defval>
         </param>
         <briefdescription>
@@ -2144,7 +2149,7 @@
       <member refid="classvrv_1_1_layer_element_1a53c9a4d1ab100c4c18f24b2d8563989c" prot="public" virt="virtual"><scope>vrv::Note</scope><name>GetLinkingInterface</name></member>
       <member refid="classvrv_1_1_layer_element_1addec7dd657de5589a53659aa8d17d3c2" prot="public" virt="virtual"><scope>vrv::Note</scope><name>GetLinkingInterface</name></member>
       <member refid="classvrv_1_1_note_1aa4c61822c22f9917dfb1324e13ad09f9" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetMensuralNoteheadGlyph</name></member>
-      <member refid="classvrv_1_1_note_1a98a495b0db9b39996f2eb2c2ad286753" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetMIDIPitch</name></member>
+      <member refid="classvrv_1_1_note_1a23d4b57a1a6e98cb2805cf8cbeda59d4" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetMIDIPitch</name></member>
       <member refid="classvrv_1_1_object_1a776dc4f75ec176b5189ce8818a221bcf" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetMilestoneEnd</name></member>
       <member refid="classvrv_1_1_object_1ab2e351247e616a3f30eaf2e3d125f054" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetNext</name></member>
       <member refid="classvrv_1_1_object_1a0db530be167ba91d886764f066e63c2b" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>GetNext</name></member>
@@ -2223,8 +2228,8 @@
       <member refid="classvrv_1_1_alt_sym_interface_1a6f055775c7e579f3151ff7d937226412" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>HasAltSymbolDef</name></member>
       <member refid="classvrv_1_1_object_1a9020ecbd4da7cb50ed8ffa686eeae8e5" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>HasAttClass</name></member>
       <member refid="classvrv_1_1_object_1a07880f4ad709e37ca6b5483110905383" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>HasAttribute</name></member>
-      <member refid="classvrv_1_1_object_1ad52c48d64fdb14dbc0a4dcf40aa87295" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>HasClosingComment</name></member>
-      <member refid="classvrv_1_1_object_1a5d95d6ed5231e12c17d17868d337b218" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>HasComment</name></member>
+      <member refid="classvrv_1_1_object_1ab49442d7fde160052a5cfafd24f4ce6f" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>HasClosingComment</name></member>
+      <member refid="classvrv_1_1_object_1a68a0e90ae2f8262b3fae11c2484f3e13" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>HasComment</name></member>
       <member refid="classvrv_1_1_bounding_box_1a6cac2a9e7c863969d8e856807936574f" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>HasContentBB</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3bde41712d93b9badf88b35ac1974503" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>HasContentHorizontalBB</name></member>
       <member refid="classvrv_1_1_bounding_box_1abe8bb676a5c670242888d9034daa5a22" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>HasContentVerticalBB</name></member>
@@ -2370,6 +2375,7 @@
       <member refid="classvrv_1_1_object_1a48ea7a78dfbdf0195235b56679924c76" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>Relinquish</name></member>
       <member refid="classvrv_1_1_object_1a84d8c0e7b117807cbecca85ca7695ce8" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>ReorderByXPos</name></member>
       <member refid="classvrv_1_1_object_1aba32b01b87b8f31455e68c77a3d8ee40" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>ReplaceChild</name></member>
+      <member refid="classvrv_1_1_object_1a0501bfc3dc91f5300df99d4037374085" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>ReplaceWithCopyOf</name></member>
       <member refid="classvrv_1_1_note_1abca9669b833294866e46d310a4ce1ec0" prot="public" virt="virtual"><scope>vrv::Note</scope><name>Reset</name></member>
       <member refid="classvrv_1_1_layer_element_1ab75f3185eb89bb129f9859a6af09ec18" prot="public" virt="non-virtual"><scope>vrv::Note</scope><name>ResetAlignment</name></member>
       <member refid="classvrv_1_1_bounding_box_1ae79b9324168608f36cb71c8ca4174220" prot="public" virt="virtual"><scope>vrv::Note</scope><name>ResetBoundingBox</name></member>

@@ -20,6 +20,7 @@ var classvrv_1_1_syl =
     [ "IsRelativeToStaff", "classvrv_1_1_syl.html#a6550dbe83c89d4e5091a99471ded5428", null ],
     [ "IsSupportedChild", "classvrv_1_1_syl.html#a3988224b5fb94f470dc58cb5fe4f0ea0", null ],
     [ "Reset", "classvrv_1_1_syl.html#a2e9a16066a8e2a0e22b8e140cdd79181", null ],
-    [ "m_drawingVerse", "classvrv_1_1_syl.html#a404f20b3057e7ff75388ef20e417b21a", null ],
+    [ "m_drawingVerseN", "classvrv_1_1_syl.html#acbb794e9e3c25e9bf5372735e4ecfcd2", null ],
+    [ "m_drawingVersePlace", "classvrv_1_1_syl.html#a6846b5cb57d6f3d3d9b6fdff50c8af41", null ],
     [ "m_nextWordSyl", "classvrv_1_1_syl.html#a4361a86d6f701297177228a378b9313c", null ]
 ];
