@@ -119,6 +119,7 @@ var classvrv_1_1_doc =
     [ "ScoreDefOptimizeDoc", "classvrv_1_1_doc.html#a5e9aa400ebeacad2373631dddbdf6baf", null ],
     [ "ScoreDefSetCurrentDoc", "classvrv_1_1_doc.html#acdae54ac378140e0eeea99e21aabfdf4", null ],
     [ "ScoreDefSetGrpSymDoc", "classvrv_1_1_doc.html#a6f04894a3ea7d133ad51571697ac2a4f", null ],
+    [ "ScoringUpDoc", "classvrv_1_1_doc.html#a0159c00c7ea30d9902d52c427e466a33", null ],
     [ "SetDrawingPage", "classvrv_1_1_doc.html#a136fd09720322fbf70dd48fbf026c9f4", null ],
     [ "SetFacsimile", "classvrv_1_1_doc.html#a826cf502aa431cc359d0b5078707a41b", null ],
     [ "SetMarkup", "classvrv_1_1_doc.html#af000e1f2d2f79967f09122f6e94760b7", null ],

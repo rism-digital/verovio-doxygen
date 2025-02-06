@@ -354,6 +354,7 @@ var annotated_dup =
       [ "ScoreDefSetCurrentPageFunctor", "classvrv_1_1_score_def_set_current_page_functor.html", "classvrv_1_1_score_def_set_current_page_functor" ],
       [ "ScoreDefSetGrpSymFunctor", "classvrv_1_1_score_def_set_grp_sym_functor.html", "classvrv_1_1_score_def_set_grp_sym_functor" ],
       [ "ScoreDefUnsetCurrentFunctor", "classvrv_1_1_score_def_unset_current_functor.html", "classvrv_1_1_score_def_unset_current_functor" ],
+      [ "ScoringUpFunctor", "classvrv_1_1_scoring_up_functor.html", "classvrv_1_1_scoring_up_functor" ],
       [ "Section", "classvrv_1_1_section.html", "classvrv_1_1_section" ],
       [ "SegmentedLine", "classvrv_1_1_segmented_line.html", "classvrv_1_1_segmented_line" ],
       [ "SetCautionaryScoreDefFunctor", "classvrv_1_1_set_cautionary_score_def_functor.html", "classvrv_1_1_set_cautionary_score_def_functor" ],

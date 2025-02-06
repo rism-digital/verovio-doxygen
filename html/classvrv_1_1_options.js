@@ -112,6 +112,7 @@ var classvrv_1_1_options =
     [ "m_measureMinWidth", "classvrv_1_1_options.html#aa05a631b62399492d3c89c8bc6cbae26", null ],
     [ "m_mensural", "classvrv_1_1_options.html#aaac54391e25f2f2177ad0dbf64c4cc2e", null ],
     [ "m_mensuralResponsiveView", "classvrv_1_1_options.html#a93164b68509f5f1b967b3d8aedc90aef", null ],
+    [ "m_mensuralScoreUp", "classvrv_1_1_options.html#ab63c1c596a8ea507a5019eae75d905b9", null ],
     [ "m_mensuralToCmn", "classvrv_1_1_options.html#ab55045e580ef622b2bc11713d143a28b", null ],
     [ "m_midi", "classvrv_1_1_options.html#a3a52042ee86eb2aa5f0540a41a6f35fa", null ],
     [ "m_midiNoCue", "classvrv_1_1_options.html#a8f4846d524263f9e851c03582532b001", null ],

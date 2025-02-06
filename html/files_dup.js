@@ -200,6 +200,7 @@ var files_dup =
     [ "score.h", "score_8h_source.html", null ],
     [ "scoredef.h", "scoredef_8h_source.html", null ],
     [ "scoredefinterface.h", "scoredefinterface_8h_source.html", null ],
+    [ "scoringupfunctor.h", "scoringupfunctor_8h_source.html", null ],
     [ "section.h", "section_8h_source.html", null ],
     [ "setscoredeffunctor.h", "setscoredeffunctor_8h_source.html", null ],
     [ "sic.h", "sic_8h_source.html", null ],

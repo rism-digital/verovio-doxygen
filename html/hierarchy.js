@@ -1196,6 +1196,7 @@ var hierarchy =
         [ "vrv::SaveFunctor", "classvrv_1_1_save_functor.html", null ],
         [ "vrv::ScoreDefSetGrpSymFunctor", "classvrv_1_1_score_def_set_grp_sym_functor.html", null ],
         [ "vrv::ScoreDefUnsetCurrentFunctor", "classvrv_1_1_score_def_unset_current_functor.html", null ],
+        [ "vrv::ScoringUpFunctor", "classvrv_1_1_scoring_up_functor.html", null ],
         [ "vrv::SetCautionaryScoreDefFunctor", "classvrv_1_1_set_cautionary_score_def_functor.html", null ],
         [ "vrv::SetStaffDefRedrawFlagsFunctor", "classvrv_1_1_set_staff_def_redraw_flags_functor.html", null ],
         [ "vrv::SyncFromFacsimileFunctor", "classvrv_1_1_sync_from_facsimile_functor.html", null ],
