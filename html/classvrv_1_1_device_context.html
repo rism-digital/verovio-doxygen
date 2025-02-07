@@ -201,12 +201,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>GetViewBoxFactor</b
 <tr><td colspan="2"><div class="groupHeader">Setters</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Non-virtual methods cannot be overridden and manage the <a class="el" href="classvrv_1_1_pen.html" title="These classes are used for storing drawing style parameters during SVG and bounding box engraving.">Pen</a>, <a class="el" href="classvrv_1_1_brush.html">Brush</a> and <a class="el" href="classvrv_1_1_font_info.html" title="This class is store font properties.">FontInfo</a> stacks </p>
 </div></td></tr>
-<tr class="memitem:af25b0fd0aa20694cfc09b711fca4df5e"><td class="memItemLeft" align="right" valign="top"><a id="af25b0fd0aa20694cfc09b711fca4df5e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBrush</b> (int color, int opacity)</td></tr>
-<tr class="separator:af25b0fd0aa20694cfc09b711fca4df5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e5ffcd23c5fff16ceb0e41f7ef2fc79"><td class="memItemLeft" align="right" valign="top"><a id="a5e5ffcd23c5fff16ceb0e41f7ef2fc79"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPen</b> (int color, int width, int style, int dashLength=0, int gapLength=0, int lineCap=0, int lineJoin=0)</td></tr>
-<tr class="separator:a5e5ffcd23c5fff16ceb0e41f7ef2fc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad608f03cc8964a899a0cf1aa70526d7f"><td class="memItemLeft" align="right" valign="top"><a id="ad608f03cc8964a899a0cf1aa70526d7f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBrush</b> (int color, float opacity=1.0)</td></tr>
+<tr class="separator:ad608f03cc8964a899a0cf1aa70526d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2939f2ac3183ab1c9dd516539bab52ce"><td class="memItemLeft" align="right" valign="top"><a id="a2939f2ac3183ab1c9dd516539bab52ce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPen</b> (int color, int width, PenStyle style, int dashLength=0, int gapLength=0, LineCapStyle lineCap=LINECAP_DEFAULT, LineJoinStyle lineJoin=LINEJOIN_DEFAULT, float opacity=1.0)</td></tr>
+<tr class="separator:a2939f2ac3183ab1c9dd516539bab52ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1ca850cc42d7688a1a795194d6a65f9"><td class="memItemLeft" align="right" valign="top"><a id="aa1ca850cc42d7688a1a795194d6a65f9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFont</b> (<a class="el" href="classvrv_1_1_font_info.html">FontInfo</a> *font)</td></tr>
 <tr class="separator:aa1ca850cc42d7688a1a795194d6a65f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,9 +225,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetFont</b> ()</td>
 <tr class="memitem:a43ff0a95215b58e77212156fbd9b2801"><td class="memItemLeft" align="right" valign="top"><a id="a43ff0a95215b58e77212156fbd9b2801"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetPushBack</b> ()</td></tr>
 <tr class="separator:a43ff0a95215b58e77212156fbd9b2801"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac43ffc819d933f568b4a7de21944bccd"><td class="memItemLeft" align="right" valign="top"><a id="ac43ffc819d933f568b4a7de21944bccd"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBackground</b> (int color, int style=AxSOLID)=0</td></tr>
-<tr class="separator:ac43ffc819d933f568b4a7de21944bccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bca735ef649a3806752537b73bf1a0f"><td class="memItemLeft" align="right" valign="top"><a id="a1bca735ef649a3806752537b73bf1a0f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBackground</b> (int color, int style=PEN_SOLID)=0</td></tr>
+<tr class="separator:a1bca735ef649a3806752537b73bf1a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedf032effd9e08abb64a17169b6cb7d5"><td class="memItemLeft" align="right" valign="top"><a id="aedf032effd9e08abb64a17169b6cb7d5"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBackgroundImage</b> (void *image, double opacity=1.0)=0</td></tr>
 <tr class="separator:aedf032effd9e08abb64a17169b6cb7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -483,7 +483,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_device_context.html">DeviceContext</a></li>
-    <li class="footer">Generated on Thu Feb 6 2025 17:26:27 for Verovio by
+    <li class="footer">Generated on Fri Feb 7 2025 18:37:30 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

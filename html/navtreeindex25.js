@@ -1,5 +1,7 @@
 var NAVTREEINDEX25 =
 {
+"classvrv_1_1_staff_def_drawing_interface.html#a4b1512e617a613c57829d87d147aa77f":[1,0,0,364,6],
+"classvrv_1_1_staff_def_drawing_interface.html#a4eab54ab49ffc228a17a529a106dbef8":[1,0,0,364,12],
 "classvrv_1_1_staff_def_drawing_interface.html#a4fdc510388ee897bf0f5e0c9e6d49afa":[1,0,0,364,23],
 "classvrv_1_1_staff_def_drawing_interface.html#a5a48e5d4eddd28d3c2cdb33d6cf1cca1":[1,0,0,364,28],
 "classvrv_1_1_staff_def_drawing_interface.html#a5bf8d4ea6e29fdfcc5cc8baefcc454b6":[1,0,0,364,19],
@@ -161,6 +163,7 @@ var NAVTREEINDEX25 =
 "classvrv_1_1_svg_device_context.html#a5c4303b611cc28d0de11f0fb77c83b6d":[1,0,0,373,38],
 "classvrv_1_1_svg_device_context.html#a63fb322b5382384cab8b784a5318ade9":[1,0,0,373,19],
 "classvrv_1_1_svg_device_context.html#a6906aaca37890d3807c1ade7084a21fe":[1,0,0,373,32],
+"classvrv_1_1_svg_device_context.html#a6ba071c2501fa15906176e0da11788d3":[1,0,0,373,37],
 "classvrv_1_1_svg_device_context.html#a808bd2c543af0b56bc0ab0742c32e5db":[1,0,0,373,54],
 "classvrv_1_1_svg_device_context.html#a8136fc784d6fb5ae5d1006f55800ee3a":[1,0,0,373,28],
 "classvrv_1_1_svg_device_context.html#a831b2cca25a8a75dbd12979785548ba0":[1,0,0,373,16],
@@ -176,7 +179,6 @@ var NAVTREEINDEX25 =
 "classvrv_1_1_svg_device_context.html#aa9b9c3d319fb507ad296bad981e60653":[1,0,0,373,1],
 "classvrv_1_1_svg_device_context.html#aab1bed2bb0017a81a2feb4682c95c93c":[1,0,0,373,44],
 "classvrv_1_1_svg_device_context.html#aabe3f920bbeacd0463372165d9f6a7e2":[1,0,0,373,49],
-"classvrv_1_1_svg_device_context.html#aad38dff7004b7a71e1c9158aab8733e3":[1,0,0,373,37],
 "classvrv_1_1_svg_device_context.html#abbb49bc2c26ac35a0a0bc5fda9ee7d5c":[1,0,0,373,14],
 "classvrv_1_1_svg_device_context.html#abc409bb01a54758e755fdefbcd55ac74":[1,0,0,373,17],
 "classvrv_1_1_svg_device_context.html#abdd9a2a2379508112c59f3848e798e11":[1,0,0,373,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX25 =
 "classvrv_1_1_symbol.html#a91c597a97fda6fd46324ce41b42bdc1a":[1,0,0,376,3],
 "classvrv_1_1_symbol.html#ac7f02a2730d4b817267c35738c825982":[1,0,0,376,8],
 "classvrv_1_1_symbol.html#acbc440e7a3435a3c108a24e4c84a4131":[1,0,0,376,5],
-"classvrv_1_1_symbol.html#ae899a71c634d5bc344548212406a703a":[1,0,0,376,2],
-"classvrv_1_1_symbol.html#af1eac05acdca7fb89244e07a4daa7ea3":[1,0,0,376,7],
-"classvrv_1_1_symbol_def.html":[1,0,0,377]
+"classvrv_1_1_symbol.html#ae899a71c634d5bc344548212406a703a":[1,0,0,376,2]
 };

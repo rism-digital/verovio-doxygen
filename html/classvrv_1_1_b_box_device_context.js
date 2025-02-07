@@ -31,7 +31,7 @@ var classvrv_1_1_b_box_device_context =
     [ "MoveTextVerticallyTo", "classvrv_1_1_b_box_device_context.html#a824cb3262520f4f13c8475a86bb2cafd", null ],
     [ "ResumeGraphic", "classvrv_1_1_b_box_device_context.html#a3c1f820b308e7cbed68c12c2aae06b95", null ],
     [ "RotateGraphic", "classvrv_1_1_b_box_device_context.html#aefcf409b9e0629d8dc938573648aba66", null ],
-    [ "SetBackground", "classvrv_1_1_b_box_device_context.html#ae001186e20a1f992253954260d2cc7a5", null ],
+    [ "SetBackground", "classvrv_1_1_b_box_device_context.html#ad2d594c032b03ef25a9feb259f8e0ff7", null ],
     [ "SetBackgroundImage", "classvrv_1_1_b_box_device_context.html#a99cecafc8bece71bc9a0d6ff9a6cc6d7", null ],
     [ "SetBackgroundMode", "classvrv_1_1_b_box_device_context.html#ae4fccfebdb6ec28b2cf15cc051e444f9", null ],
     [ "SetLogicalOrigin", "classvrv_1_1_b_box_device_context.html#a39243345e1e43fd2b2077ba80def5d1d", null ],

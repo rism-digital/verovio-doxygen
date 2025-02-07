@@ -37,7 +37,7 @@ var classvrv_1_1_svg_device_context =
     [ "ResumeGraphic", "classvrv_1_1_svg_device_context.html#a15e6d5ffe8946ec3371c5e363b06fe3c", null ],
     [ "RotateGraphic", "classvrv_1_1_svg_device_context.html#adc3f1ba3ed171d9eb388f268bc8c1f4a", null ],
     [ "SetAdditionalAttributes", "classvrv_1_1_svg_device_context.html#aa8aeaa9724dec8881fb302854c98b519", null ],
-    [ "SetBackground", "classvrv_1_1_svg_device_context.html#aad38dff7004b7a71e1c9158aab8733e3", null ],
+    [ "SetBackground", "classvrv_1_1_svg_device_context.html#a6ba071c2501fa15906176e0da11788d3", null ],
     [ "SetBackgroundImage", "classvrv_1_1_svg_device_context.html#a5c4303b611cc28d0de11f0fb77c83b6d", null ],
     [ "SetBackgroundMode", "classvrv_1_1_svg_device_context.html#afa69899094b909d493b56bbf4f8c00c6", null ],
     [ "SetCss", "classvrv_1_1_svg_device_context.html#a25f3ff45496487556c367df1f167819c", null ],

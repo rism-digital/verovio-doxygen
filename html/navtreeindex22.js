@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"classvrv_1_1_prepare_pointers_by_layer_functor.html#ad77fc1ce8818acb38b270b96caf798bf":[1,0,0,315,3],
+"classvrv_1_1_prepare_reh_position_functor.html":[1,0,0,316],
 "classvrv_1_1_prepare_reh_position_functor.html#a2ac4084e47e2e77eb06ffb1074ed93bc":[1,0,0,316,3],
 "classvrv_1_1_prepare_reh_position_functor.html#a6386728a8dbb2fa78b227194a9b75a33":[1,0,0,316,2],
 "classvrv_1_1_prepare_reh_position_functor.html#a97c3b552e31e180fcaf9fcbd8ea957de":[1,0,0,316,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "classvrv_1_1_resources.html#a73f8553831bc7f5b9549273831435e8c":[1,0,0,335,12],
 "classvrv_1_1_resources.html#a8d262db67c0625b9f25d0eb60abab5b5":[1,0,0,335,5],
 "classvrv_1_1_resources.html#a9859292deedcc9780ce51a1b6119bf41":[1,0,0,335,18],
-"classvrv_1_1_resources.html#a99311b8060a09ac649a7fdfcd9204706":[1,0,0,335,6],
-"classvrv_1_1_resources.html#aa62412fa9ac02f49c2b5f05279d77dba":[1,0,0,335,4],
-"classvrv_1_1_resources.html#ab5bc7928b34f63c14de1229623cdac62":[1,0,0,335,13]
+"classvrv_1_1_resources.html#a99311b8060a09ac649a7fdfcd9204706":[1,0,0,335,6]
 };
