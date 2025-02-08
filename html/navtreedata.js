@@ -66,16 +66,16 @@ var NAVTREEINDEX =
 "classvrv_1_1_option_dbl.html#a68be379c8a5621cc2efb46d278d4928f",
 "classvrv_1_1_options.html#aa7802ef2ba975cf0081f9f4a89126106",
 "classvrv_1_1_pen.html#a661b401d9ece2e1a824645a3e2afa911",
-"classvrv_1_1_prepare_pointers_by_layer_functor.html#ad77fc1ce8818acb38b270b96caf798bf",
-"classvrv_1_1_resources.html#aa62412fa9ac02f49c2b5f05279d77dba",
-"classvrv_1_1_scoring_up_functor.html#a3dae2c7ca61000f99873a8cb191f9cfe",
-"classvrv_1_1_staff_def_drawing_interface.html#a4b1512e617a613c57829d87d147aa77f",
-"classvrv_1_1_symbol.html#af1eac05acdca7fb89244e07a4daa7ea3",
-"classvrv_1_1_text_dir_interface.html#ae34ccabec1f4fe7c32dc3ad7f87f2fcb",
-"classvrv_1_1_trans_pitch.html#aebe0169a0e3f20bc4841b81ca6cf809c",
-"classvrv_1_1_verse.html#a98529570ab28b9440bfa26c9afd60f03",
-"classvrv_1_1_zone.html#a1cf4d9b29a0e5c0cf649422bb9812183",
-"structvrv_1_1_align_meter_params.html#ac0117446492460c7047207fbce7611df"
+"classvrv_1_1_prepare_reh_position_functor.html#a2ac4084e47e2e77eb06ffb1074ed93bc",
+"classvrv_1_1_resources.html#ab79e6a3f74b0ea800441772eda681b63",
+"classvrv_1_1_scoring_up_functor.html#a4ee1861f1c5192991564fc19541cc7ce",
+"classvrv_1_1_staff_def_drawing_interface.html#a4fdc510388ee897bf0f5e0c9e6d49afa",
+"classvrv_1_1_symbol_def.html#a11dc701590a4b3c27ace0ba206b76ee2",
+"classvrv_1_1_text_drawing_params.html",
+"classvrv_1_1_transpose_functor.html#a059f639b3e5ad8c797bfee53a8498aa6",
+"classvrv_1_1_verse.html#ae8b57a86bf5f09a45f14dc3cba8b85bd",
+"classvrv_1_1_zone.html#a4aeaaa9f400e056d7b7a405d33999e98",
+"structvrv_1_1_closest_b_b.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
