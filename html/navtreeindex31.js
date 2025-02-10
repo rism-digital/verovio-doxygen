@@ -1,10 +1,5 @@
 var NAVTREEINDEX31 =
 {
-"structvrv_1_1_closest_b_b.html":[1,0,0,96],
-"structvrv_1_1_closest_b_b.html#a7193448e2d6a3148d7efbac14f337f74":[1,0,0,96,1],
-"structvrv_1_1_closest_b_b.html#acdc0607c597cc92e988e9d9c41173d47":[1,0,0,96,0],
-"structvrv_1_1_closest_b_b.html#acea28781d0d1b123aae14c872a6367eb":[1,0,0,96,3],
-"structvrv_1_1_closest_b_b.html#ae4c15a00f3ead7ec067bf72ce647aa55":[1,0,0,96,2],
 "structvrv_1_1_closest_neume.html":[1,0,0,97],
 "structvrv_1_1_closest_neume.html#a2ea339a672aa83eefafaf59a4d330db9":[1,0,0,97,0],
 "structvrv_1_1_closest_neume.html#a430f7ec9ec2b426ea936a59f51408098":[1,0,0,97,2],
