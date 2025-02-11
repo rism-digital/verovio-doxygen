@@ -10,6 +10,8 @@ var classvrv_1_1_pen =
     [ "GetOpacity", "classvrv_1_1_pen.html#aed2f3f78a98aef17e1bab9f13dcd3ee2", null ],
     [ "GetStyle", "classvrv_1_1_pen.html#aaf8b8dbd00b1b1ee217cfe0d77ebe48a", null ],
     [ "GetWidth", "classvrv_1_1_pen.html#a661b401d9ece2e1a824645a3e2afa911", null ],
+    [ "HasColor", "classvrv_1_1_pen.html#ac81c1f2cd8e77b2ebb8e622ea1d42960", null ],
+    [ "HasOpacity", "classvrv_1_1_pen.html#a60303bd53e2bc125c914acb9b3d0db82", null ],
     [ "SetColor", "classvrv_1_1_pen.html#af364d256ad50fefe6b4158791a7cc1b9", null ],
     [ "SetDashLength", "classvrv_1_1_pen.html#abefb553ea35eef07dd24bebf63be57dd", null ],
     [ "SetGapLength", "classvrv_1_1_pen.html#a4e82a121242774f1d354d1edfa43b49b", null ],
