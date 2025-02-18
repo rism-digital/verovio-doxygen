@@ -1,5 +1,12 @@
 var NAVTREEINDEX23 =
 {
+"classvrv_1_1_resources.html#a429bb8fd6635c36a657f5a09c1572ed6":[1,0,0,335,20],
+"classvrv_1_1_resources.html#a505983d35f81c7af2f78fb2739f89207":[1,0,0,335,1],
+"classvrv_1_1_resources.html#a5956754faab53214f2cae96d8cf9ce68":[1,0,0,335,8],
+"classvrv_1_1_resources.html#a6b12162a60479843638aeb9f2ce939b4":[1,0,0,335,2],
+"classvrv_1_1_resources.html#a70b43d51304eaa6165edfa5a46e40bcf":[1,0,0,335,3],
+"classvrv_1_1_resources.html#a73f8553831bc7f5b9549273831435e8c":[1,0,0,335,12],
+"classvrv_1_1_resources.html#a8d262db67c0625b9f25d0eb60abab5b5":[1,0,0,335,5],
 "classvrv_1_1_resources.html#a9859292deedcc9780ce51a1b6119bf41":[1,0,0,335,18],
 "classvrv_1_1_resources.html#a99311b8060a09ac649a7fdfcd9204706":[1,0,0,335,6],
 "classvrv_1_1_resources.html#aa62412fa9ac02f49c2b5f05279d77dba":[1,0,0,335,4],
@@ -242,12 +249,5 @@ var NAVTREEINDEX23 =
 "classvrv_1_1_score_def_unset_current_functor.html#a0fb9d068307725fd59cb7f2b451d9eb2":[1,0,0,350,3],
 "classvrv_1_1_score_def_unset_current_functor.html#a3747099714a19facf8dfbc1a453a7aa1":[1,0,0,350,6],
 "classvrv_1_1_score_def_unset_current_functor.html#a475d381d5c8fcbbf330bb6ff42e98085":[1,0,0,350,7],
-"classvrv_1_1_score_def_unset_current_functor.html#a6d449b0d63ba83e709aa16e2d37e63e0":[1,0,0,350,8],
-"classvrv_1_1_score_def_unset_current_functor.html#aa6c93b6c93bf17fdde705d1bd81ea931":[1,0,0,350,4],
-"classvrv_1_1_score_def_unset_current_functor.html#acb60b9b4fead1a5d89f7cd6274df5b01":[1,0,0,350,5],
-"classvrv_1_1_score_def_unset_current_functor.html#ae5f64867f014a9047a9158b1ac5aa0b0":[1,0,0,350,1],
-"classvrv_1_1_score_def_unset_current_functor.html#af41a6608fc01280bc848294b68f0e94d":[1,0,0,350,2],
-"classvrv_1_1_scoring_up_functor.html":[1,0,0,351],
-"classvrv_1_1_scoring_up_functor.html#a1937aabd5a57be4fd42b652891a9e8d9":[1,0,0,351,8],
-"classvrv_1_1_scoring_up_functor.html#a34f5c466c9e947ca2643f354ff7574d4":[1,0,0,351,2]
+"classvrv_1_1_score_def_unset_current_functor.html#a6d449b0d63ba83e709aa16e2d37e63e0":[1,0,0,350,8]
 };
