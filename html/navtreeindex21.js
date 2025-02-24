@@ -1,5 +1,8 @@
 var NAVTREEINDEX21 =
 {
+"classvrv_1_1_pedal.html#ab243eb990a388a5259ea2c1e2d90fc0d":[1,0,0,288,12],
+"classvrv_1_1_pedal.html#ac555b89b92e6f62c138dc4b090cd541e":[1,0,0,288,5],
+"classvrv_1_1_pedal.html#adddbe6b752e5e3268e3b818768fa57d0":[1,0,0,288,1],
 "classvrv_1_1_pedal.html#af24a83a273daf5c3ab0e72e0a5127505":[1,0,0,288,9],
 "classvrv_1_1_pedal.html#afee6ee852f40b04c3f40fed4c6f63f89":[1,0,0,288,2],
 "classvrv_1_1_pen.html":[1,0,0,289],
@@ -246,8 +249,5 @@ var NAVTREEINDEX21 =
 "classvrv_1_1_prepare_pedals_functor.html#a2e92281b95d352f6b9e1c8b1be9fed7b":[1,0,0,313,3],
 "classvrv_1_1_prepare_pedals_functor.html#a60ef178240b80dff66fe9464974daab6":[1,0,0,313,1],
 "classvrv_1_1_prepare_pedals_functor.html#a707c18dacfa05531d004718cdbce67a4":[1,0,0,313,0],
-"classvrv_1_1_prepare_plist_functor.html":[1,0,0,314],
-"classvrv_1_1_prepare_plist_functor.html#a26d07524cf6d94b60ff9601000ed4592":[1,0,0,314,1],
-"classvrv_1_1_prepare_plist_functor.html#a770cab2b24cdee0b8c0d3f6e0c6937cf":[1,0,0,314,5],
-"classvrv_1_1_prepare_plist_functor.html#aa72d88541cd13ba2f592d3080b64676c":[1,0,0,314,0]
+"classvrv_1_1_prepare_plist_functor.html":[1,0,0,314]
 };

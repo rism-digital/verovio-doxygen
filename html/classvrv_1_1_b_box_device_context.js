@@ -4,6 +4,7 @@ var classvrv_1_1_b_box_device_context =
     [ "~BBoxDeviceContext", "classvrv_1_1_b_box_device_context.html#a4daf13fd80c5c30e0d138252b95683f6", null ],
     [ "AddDescription", "classvrv_1_1_b_box_device_context.html#a7e2998f3808031787f3e439cae4fd4d4", null ],
     [ "DrawBackgroundImage", "classvrv_1_1_b_box_device_context.html#aa935a477f863fda47679da2f529a9755", null ],
+    [ "DrawBentParallelogramFilled", "classvrv_1_1_b_box_device_context.html#a6dd81f62797a933206ecf101c2a32beb", null ],
     [ "DrawCircle", "classvrv_1_1_b_box_device_context.html#a28fb63c5d751b05c4044f4119f24a144", null ],
     [ "DrawCubicBezierPath", "classvrv_1_1_b_box_device_context.html#a1b6c7ae66d5b1b944696e4ccc722b3ed", null ],
     [ "DrawCubicBezierPathFilled", "classvrv_1_1_b_box_device_context.html#a5254de770ffa5e2cc34c0f5db86563ab", null ],

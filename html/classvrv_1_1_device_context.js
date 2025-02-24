@@ -8,6 +8,7 @@ var classvrv_1_1_device_context =
     [ "DeactivateGraphicX", "classvrv_1_1_device_context.html#a872fc5700311884640e4956cac4a26a9", null ],
     [ "DeactivateGraphicY", "classvrv_1_1_device_context.html#a9843522526eee72a9db4cc5ab566f943", null ],
     [ "DrawBackgroundImage", "classvrv_1_1_device_context.html#a6d7152c1b0fcc3814a81de6620ff7aee", null ],
+    [ "DrawBentParallelogramFilled", "classvrv_1_1_device_context.html#a375e79e59ec1633787bc6d2cf3fa2a58", null ],
     [ "DrawCircle", "classvrv_1_1_device_context.html#af0f4325b56f2fe5945b4828aec0a068e", null ],
     [ "DrawCubicBezierPath", "classvrv_1_1_device_context.html#a29617eda120d75359d3cebb63c6cc010", null ],
     [ "DrawCubicBezierPathFilled", "classvrv_1_1_device_context.html#a072ece33800a03573d5bcc0e7d9f95a2", null ],

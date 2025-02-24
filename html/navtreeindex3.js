@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_beam_span.html#a66e5f24e85ce62d3f04454faa07928ed":[1,0,0,64,11],
 "classvrv_1_1_beam_span.html#a6b36d0cc5075fde046789643a3ace068":[1,0,0,64,17],
 "classvrv_1_1_beam_span.html#a7474b3dad3b755b8ff4dfe06f37c1890":[1,0,0,64,4],
 "classvrv_1_1_beam_span.html#a7e780ffc204871932f9930394c488c25":[1,0,0,64,21],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_calc_dots_functor.html#afb9849ed7f8a85f06eaf0ecb9279fc7a":[1,0,0,80,5],
 "classvrv_1_1_calc_ledger_lines_functor.html":[1,0,0,81],
 "classvrv_1_1_calc_ledger_lines_functor.html#a46acada4a0d97d46d7058dbf1c2de6f0":[1,0,0,81,2],
-"classvrv_1_1_calc_ledger_lines_functor.html#a7551539a321be16e867f0dc1d31bcb8d":[1,0,0,81,4],
-"classvrv_1_1_calc_ledger_lines_functor.html#a8fa735d63227f8b75b90ac9989a4b612":[1,0,0,81,0]
+"classvrv_1_1_calc_ledger_lines_functor.html#a7551539a321be16e867f0dc1d31bcb8d":[1,0,0,81,4]
 };
