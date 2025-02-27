@@ -175,16 +175,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a278107f59bd0aa308352e1319fa05161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for a the smufl text font option. <br /></td></tr>
 <tr class="separator:a278107f59bd0aa308352e1319fa05161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, and other standard methods</div></td></tr>
-<tr class="memitem:a323435cc92c74019ffde5bb562ead4c6"><td class="memItemLeft" align="right" valign="top"><a id="a323435cc92c74019ffde5bb562ead4c6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SvgDeviceContext</b> ()</td></tr>
-<tr class="separator:a323435cc92c74019ffde5bb562ead4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a727ac745356e3376007c8c0490c9871f"><td class="memItemLeft" align="right" valign="top"><a id="a727ac745356e3376007c8c0490c9871f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SvgDeviceContext</b> (const std::string &amp;docId)</td></tr>
+<tr class="separator:a727ac745356e3376007c8c0490c9871f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9b9c3d319fb507ad296bad981e60653"><td class="memItemLeft" align="right" valign="top"><a id="aa9b9c3d319fb507ad296bad981e60653"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~SvgDeviceContext</b> ()</td></tr>
 <tr class="separator:aa9b9c3d319fb507ad296bad981e60653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Setters</div></td></tr>
-<tr class="memitem:aad38dff7004b7a71e1c9158aab8733e3"><td class="memItemLeft" align="right" valign="top"><a id="aad38dff7004b7a71e1c9158aab8733e3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBackground</b> (int color, int style=AxSOLID) override</td></tr>
-<tr class="separator:aad38dff7004b7a71e1c9158aab8733e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba071c2501fa15906176e0da11788d3"><td class="memItemLeft" align="right" valign="top"><a id="a6ba071c2501fa15906176e0da11788d3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBackground</b> (int color, int style=PEN_SOLID) override</td></tr>
+<tr class="separator:a6ba071c2501fa15906176e0da11788d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c4303b611cc28d0de11f0fb77c83b6d"><td class="memItemLeft" align="right" valign="top"><a id="a5c4303b611cc28d0de11f0fb77c83b6d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBackgroundImage</b> (void *image, double opacity=1.0) override</td></tr>
 <tr class="separator:a5c4303b611cc28d0de11f0fb77c83b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,6 +217,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawCubicBezierPath</
 <tr class="memitem:af1898bfdc5d179afcbec9456634c932d"><td class="memItemLeft" align="right" valign="top"><a id="af1898bfdc5d179afcbec9456634c932d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawCubicBezierPathFilled</b> (<a class="el" href="classvrv_1_1_point.html">Point</a> bezier1[4], <a class="el" href="classvrv_1_1_point.html">Point</a> bezier2[4]) override</td></tr>
 <tr class="separator:af1898bfdc5d179afcbec9456634c932d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d798973e011a86f18c476c85ef8d2d7"><td class="memItemLeft" align="right" valign="top"><a id="a3d798973e011a86f18c476c85ef8d2d7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawBentParallelogramFilled</b> (<a class="el" href="classvrv_1_1_point.html">Point</a> side[4], int height) override</td></tr>
+<tr class="separator:a3d798973e011a86f18c476c85ef8d2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e964a005f023ff73635593ac1288ca4"><td class="memItemLeft" align="right" valign="top"><a id="a3e964a005f023ff73635593ac1288ca4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawCircle</b> (int x, int y, int radius) override</td></tr>
 <tr class="separator:a3e964a005f023ff73635593ac1288ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,12 +232,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawEllipticArc</b> (
 <tr class="memitem:abdd9a2a2379508112c59f3848e798e11"><td class="memItemLeft" align="right" valign="top"><a id="abdd9a2a2379508112c59f3848e798e11"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawLine</b> (int x1, int y1, int x2, int y2) override</td></tr>
 <tr class="separator:abdd9a2a2379508112c59f3848e798e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abed6d2f02a7809154ad61da583076c50"><td class="memItemLeft" align="right" valign="top"><a id="abed6d2f02a7809154ad61da583076c50"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawPolyline</b> (int n, <a class="el" href="classvrv_1_1_point.html">Point</a> points[], int xOffset, int yOffset) override</td></tr>
-<tr class="separator:abed6d2f02a7809154ad61da583076c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbb49bc2c26ac35a0a0bc5fda9ee7d5c"><td class="memItemLeft" align="right" valign="top"><a id="abbb49bc2c26ac35a0a0bc5fda9ee7d5c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawPolygon</b> (int n, <a class="el" href="classvrv_1_1_point.html">Point</a> points[], int xOffset, int yOffset) override</td></tr>
-<tr class="separator:abbb49bc2c26ac35a0a0bc5fda9ee7d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca1c51449667f06d603ad846a2bbd3f7"><td class="memItemLeft" align="right" valign="top"><a id="aca1c51449667f06d603ad846a2bbd3f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawPolyline</b> (int n, <a class="el" href="classvrv_1_1_point.html">Point</a> points[], bool close) override</td></tr>
+<tr class="separator:aca1c51449667f06d603ad846a2bbd3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88b71d53272a80881598fdffd8ba7af"><td class="memItemLeft" align="right" valign="top"><a id="ad88b71d53272a80881598fdffd8ba7af"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawPolygon</b> (int n, <a class="el" href="classvrv_1_1_point.html">Point</a> points[]) override</td></tr>
+<tr class="separator:ad88b71d53272a80881598fdffd8ba7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc409bb01a54758e755fdefbcd55ac74"><td class="memItemLeft" align="right" valign="top"><a id="abc409bb01a54758e755fdefbcd55ac74"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawRectangle</b> (int x, int y, int width, int height) override</td></tr>
 <tr class="separator:abc409bb01a54758e755fdefbcd55ac74"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -390,12 +393,12 @@ std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><
 <tr class="memitem:a4e34f3b73e77a051ed99e55c6b3812b3 inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="a4e34f3b73e77a051ed99e55c6b3812b3"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>GetViewBoxFactor</b> () const</td></tr>
 <tr class="separator:a4e34f3b73e77a051ed99e55c6b3812b3 inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af25b0fd0aa20694cfc09b711fca4df5e inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="af25b0fd0aa20694cfc09b711fca4df5e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBrush</b> (int color, int opacity)</td></tr>
-<tr class="separator:af25b0fd0aa20694cfc09b711fca4df5e inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e5ffcd23c5fff16ceb0e41f7ef2fc79 inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="a5e5ffcd23c5fff16ceb0e41f7ef2fc79"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPen</b> (int color, int width, int style, int dashLength=0, int gapLength=0, int lineCap=0, int lineJoin=0)</td></tr>
-<tr class="separator:a5e5ffcd23c5fff16ceb0e41f7ef2fc79 inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42b811c364b8909e9804b3b4207f0c5 inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="aa42b811c364b8909e9804b3b4207f0c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBrush</b> (float opacity, int color=COLOR_NONE)</td></tr>
+<tr class="separator:aa42b811c364b8909e9804b3b4207f0c5 inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fae71dedef742fa553528a290d99096 inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="a5fae71dedef742fa553528a290d99096"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPen</b> (int width, PenStyle style, int dashLength=0, int gapLength=0, LineCapStyle lineCap=LINECAP_DEFAULT, LineJoinStyle lineJoin=LINEJOIN_DEFAULT, float opacity=1.0, int color=COLOR_NONE)</td></tr>
+<tr class="separator:a5fae71dedef742fa553528a290d99096 inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1ca850cc42d7688a1a795194d6a65f9 inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="aa1ca850cc42d7688a1a795194d6a65f9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFont</b> (<a class="el" href="classvrv_1_1_font_info.html">FontInfo</a> *font)</td></tr>
 <tr class="separator:aa1ca850cc42d7688a1a795194d6a65f9 inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -508,7 +511,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_svg_device_context.html">SvgDeviceContext</a></li>
-    <li class="footer">Generated on Thu Feb 6 2025 15:05:26 for Verovio by
+    <li class="footer">Generated on Mon Feb 24 2025 11:42:01 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

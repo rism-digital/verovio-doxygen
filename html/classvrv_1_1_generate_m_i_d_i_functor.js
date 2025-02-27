@@ -19,7 +19,6 @@ var classvrv_1_1_generate_m_i_d_i_functor =
     [ "VisitBTrem", "classvrv_1_1_generate_m_i_d_i_functor.html#ae0c994cf7bf977bd0fab9005c06deadb", null ],
     [ "VisitChord", "classvrv_1_1_generate_m_i_d_i_functor.html#a2796790f82a1d7af48dde4cab62554e8", null ],
     [ "VisitFTrem", "classvrv_1_1_generate_m_i_d_i_functor.html#ad7f38c38eab2d5e32a71f38ec65fc2db", null ],
-    [ "VisitGraceGrpEnd", "classvrv_1_1_generate_m_i_d_i_functor.html#a3c182e9d88f0e249db275607f47f9b0e", null ],
     [ "VisitHalfmRpt", "classvrv_1_1_generate_m_i_d_i_functor.html#acaf7529dbdc1c15ac211fbadabbf593c", null ],
     [ "VisitLayer", "classvrv_1_1_generate_m_i_d_i_functor.html#a3a0a534e746d05019adf60936c13f284", null ],
     [ "VisitLayerElement", "classvrv_1_1_generate_m_i_d_i_functor.html#aaa1173247ba47d15ba3f08f1f5024257", null ],
