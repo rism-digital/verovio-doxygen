@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classvrv_1_1_calc_ledger_lines_functor.html#a7551539a321be16e867f0dc1d31bcb8d":[1,0,0,81,4],
 "classvrv_1_1_calc_ledger_lines_functor.html#a8fa735d63227f8b75b90ac9989a4b612":[1,0,0,81,0],
 "classvrv_1_1_calc_ledger_lines_functor.html#ab15b7ff3a51386b2c292c834487c6fc9":[1,0,0,81,3],
 "classvrv_1_1_calc_ledger_lines_functor.html#ae00b036dc1183de83be7a0beb4c72238":[1,0,0,81,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "classvrv_1_1_const_functor_interface.html#a324d4a8afd5651da743bafc6ecb9bc95":[1,0,0,102,123],
 "classvrv_1_1_const_functor_interface.html#a32b8c4c94b36dd613590e8062717a54e":[1,0,0,102,3],
 "classvrv_1_1_const_functor_interface.html#a364065e605036365b0a72433c887439b":[1,0,0,102,32],
-"classvrv_1_1_const_functor_interface.html#a3860d0af1b1677ad23cbce0a7eccebdf":[1,0,0,102,70],
-"classvrv_1_1_const_functor_interface.html#a38a6264701ef7c50bf86a4f92876f8ab":[1,0,0,102,150]
+"classvrv_1_1_const_functor_interface.html#a3860d0af1b1677ad23cbce0a7eccebdf":[1,0,0,102,70]
 };

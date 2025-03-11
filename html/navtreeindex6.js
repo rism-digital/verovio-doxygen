@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classvrv_1_1_convert_markup_score_def_functor.html#a24bf9aaf1bc8604545715135cfea922e":[1,0,0,108,0],
 "classvrv_1_1_convert_markup_score_def_functor.html#a313bd9a3c7a3a38a43c6267f2f3b4501":[1,0,0,108,1],
 "classvrv_1_1_convert_markup_score_def_functor.html#a3646cabc7f87d9e364b508e98a5988b5":[1,0,0,108,3],
 "classvrv_1_1_convert_markup_score_def_functor.html#a7231c98453808a2f8ecc49f141f1c2f8":[1,0,0,108,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classvrv_1_1_dir.html#a68a11827775af0233be1bea3f50d3876":[1,0,0,126,10],
 "classvrv_1_1_dir.html#a71210ff94d9fc48732efa32704f26dad":[1,0,0,126,1],
 "classvrv_1_1_dir.html#a80bb28a453db077203b6f75307446464":[1,0,0,126,0],
-"classvrv_1_1_dir.html#a81858fa3ccc46b6f7d0b8c069c8f749c":[1,0,0,126,9],
-"classvrv_1_1_dir.html#a8c7d4a965ecde94614bbd19ab1528678":[1,0,0,126,7]
+"classvrv_1_1_dir.html#a81858fa3ccc46b6f7d0b8c069c8f749c":[1,0,0,126,9]
 };

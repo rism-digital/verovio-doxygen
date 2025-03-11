@@ -115,26 +115,27 @@ $(document).ready(function(){initNavTree('quilisma_8h_source.html',''); initResi
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_quilisma.html#a36dfcd7d82b8ea67e7ea2afeff406733">Reset</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Quilisma&quot;</span>; }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    PitchInterface *GetPitchInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>PitchInterface *<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classvrv_1_1_quilisma.html#a77ad108a9cde5cca2cdc8c9a001a45f2">   45</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_quilisma.html#a77ad108a9cde5cca2cdc8c9a001a45f2">HasToBeAligned</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    PitchInterface *GetPitchInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;PitchInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> PitchInterface *GetPitchInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const PitchInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classvrv_1_1_quilisma.html#a77ad108a9cde5cca2cdc8c9a001a45f2">   46</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_quilisma.html#a77ad108a9cde5cca2cdc8c9a001a45f2">HasToBeAligned</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_position_interface_html"><div class="ttname"><a href="classvrv_1_1_position_interface.html">vrv::PositionInterface</a></div><div class="ttdoc">This class is an interface for elements with a position on the staff, such as rests.</div><div class="ttdef"><b>Definition:</b> positioninterface.h:30</div></div>
 <div class="ttc" id="aclassvrv_1_1_quilisma_html_af0781b9305195a60c2d0a71a5787a8d9"><div class="ttname"><a href="classvrv_1_1_quilisma.html#af0781b9305195a60c2d0a71a5787a8d9">vrv::Quilisma::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> quilisma.h:32</div></div>
 <div class="ttc" id="aclassvrv_1_1_quilisma_html"><div class="ttname"><a href="classvrv_1_1_quilisma.html">vrv::Quilisma</a></div><div class="ttdef"><b>Definition:</b> quilisma.h:23</div></div>
-<div class="ttc" id="aclassvrv_1_1_quilisma_html_a77ad108a9cde5cca2cdc8c9a001a45f2"><div class="ttname"><a href="classvrv_1_1_quilisma.html#a77ad108a9cde5cca2cdc8c9a001a45f2">vrv::Quilisma::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> quilisma.h:45</div></div>
+<div class="ttc" id="aclassvrv_1_1_quilisma_html_a77ad108a9cde5cca2cdc8c9a001a45f2"><div class="ttname"><a href="classvrv_1_1_quilisma.html#a77ad108a9cde5cca2cdc8c9a001a45f2">vrv::Quilisma::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> quilisma.h:46</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:59</div></div>
 <div class="ttc" id="aclassvrv_1_1_quilisma_html_a36dfcd7d82b8ea67e7ea2afeff406733"><div class="ttname"><a href="classvrv_1_1_quilisma.html#a36dfcd7d82b8ea67e7ea2afeff406733">vrv::Quilisma::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_pitch_interface_html"><div class="ttname"><a href="classvrv_1_1_pitch_interface.html">vrv::PitchInterface</a></div><div class="ttdoc">This class is an interface for elements with pitch, such as notes and neumes.</div><div class="ttdef"><b>Definition:</b> pitchinterface.h:28</div></div>
@@ -143,7 +144,7 @@ $(document).ready(function(){initNavTree('quilisma_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>quilisma.h</b></li>
-    <li class="footer">Generated on Mon Mar 10 2025 07:20:36 for Verovio by
+    <li class="footer">Generated on Tue Mar 11 2025 09:56:35 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

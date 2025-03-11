@@ -12,6 +12,7 @@ var classvrv_1_1_stemmed_drawing_interface =
     [ "GetDrawingStemStart", "classvrv_1_1_stemmed_drawing_interface.html#a9d6a8466d3c64c1137057e7753504bf1", null ],
     [ "GetStemDownNW", "classvrv_1_1_stemmed_drawing_interface.html#aaa95e55e23d3bcadb56eb3094305d580", null ],
     [ "GetStemUpSE", "classvrv_1_1_stemmed_drawing_interface.html#aebe78def2e8367329ee1ad24f8e5dac9", null ],
+    [ "InterfaceResetData", "classvrv_1_1_stemmed_drawing_interface.html#ab56a5098689ccd26d3b6e3103c66a580", null ],
     [ "Reset", "classvrv_1_1_stemmed_drawing_interface.html#a43de0958ac09bc7ca279377ad7dd490e", null ],
     [ "SetDrawingStem", "classvrv_1_1_stemmed_drawing_interface.html#a9ca145a07c1cfbaebe601f1308c591e8", null ],
     [ "SetDrawingStemDir", "classvrv_1_1_stemmed_drawing_interface.html#aa6ca072d56e6db65adf4ea7ef1600fa5", null ],

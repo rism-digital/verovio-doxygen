@@ -1,10 +1,16 @@
 var NAVTREEINDEX8 =
 {
-"classvrv_1_1_drawing_list_interface.html#a1a69c8d2fecf12f6b22f2544e0312298":[1,0,0,136,4],
+"classvrv_1_1_dots.html#ac759ead6eec248fb833a2620a9977300":[1,0,0,135,14],
+"classvrv_1_1_dots.html#acb8b0ea29cc9397a1a96e1f29c024051":[1,0,0,135,7],
+"classvrv_1_1_dots.html#ad6440f0c319481daa6f5ea98536ab183":[1,0,0,135,5],
+"classvrv_1_1_dots.html#ae6d3d7af0586a8741c9af93c6f65b62b":[1,0,0,135,15],
+"classvrv_1_1_drawing_list_interface.html":[1,0,0,136],
+"classvrv_1_1_drawing_list_interface.html#a1a69c8d2fecf12f6b22f2544e0312298":[1,0,0,136,5],
 "classvrv_1_1_drawing_list_interface.html#a1d255ea3d329ebbd6d7cd32fbe88646d":[1,0,0,136,2],
-"classvrv_1_1_drawing_list_interface.html#a20ea943a21971a0b45f024a604adec57":[1,0,0,136,6],
+"classvrv_1_1_drawing_list_interface.html#a20ea943a21971a0b45f024a604adec57":[1,0,0,136,7],
+"classvrv_1_1_drawing_list_interface.html#a28ab2fa069f0ee96cb0ae47a114a706b":[1,0,0,136,4],
 "classvrv_1_1_drawing_list_interface.html#a33795e2af86cbbe66f71c10266e81b2a":[1,0,0,136,0],
-"classvrv_1_1_drawing_list_interface.html#a4b20a831da972d0a05fa42be7c6eb5e9":[1,0,0,136,5],
+"classvrv_1_1_drawing_list_interface.html#a4b20a831da972d0a05fa42be7c6eb5e9":[1,0,0,136,6],
 "classvrv_1_1_drawing_list_interface.html#a92cab20a8ca65a588e6acd0facca43c9":[1,0,0,136,1],
 "classvrv_1_1_drawing_list_interface.html#acffbc6780719ad0f0342be03a3aa2a3e":[1,0,0,136,3],
 "classvrv_1_1_duration_interface.html":[1,0,0,137],
@@ -243,11 +249,5 @@ var NAVTREEINDEX8 =
 "classvrv_1_1_facsimile.html#aaac254a2503aba5d73e1c2767f356dcf":[1,0,0,149,10],
 "classvrv_1_1_facsimile.html#ab309bae354e8bc6714c25970fb1e8d27":[1,0,0,149,0],
 "classvrv_1_1_facsimile.html#acb7baa3837aafe0d953673a03387a66d":[1,0,0,149,6],
-"classvrv_1_1_facsimile.html#ae9318bef4271fef3b1ed651e0ee671af":[1,0,0,149,9],
-"classvrv_1_1_facsimile.html#afae3f5b8d7b3a852e87c02de6796ee7f":[1,0,0,149,3],
-"classvrv_1_1_facsimile_interface.html":[1,0,0,150],
-"classvrv_1_1_facsimile_interface.html#a10d9e160f567f038e3259cfa4cf577e2":[1,0,0,150,14],
-"classvrv_1_1_facsimile_interface.html#a2e3d8694d94a66c6784f844c1f883a90":[1,0,0,150,3],
-"classvrv_1_1_facsimile_interface.html#a3b371e4cbee5acbf94a885a2011a081e":[1,0,0,150,4],
-"classvrv_1_1_facsimile_interface.html#a3ca53c1bfe956ae1bfbb0a77f3c672b0":[1,0,0,150,11]
+"classvrv_1_1_facsimile.html#ae9318bef4271fef3b1ed651e0ee671af":[1,0,0,149,9]
 };

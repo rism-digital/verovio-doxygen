@@ -20,6 +20,7 @@ var classvrv_1_1_staff_def_drawing_interface =
     [ "GetCurrentMeterSigGrp", "classvrv_1_1_staff_def_drawing_interface.html#ae0721bfdbbe21623135bfd8fabbd75d6", null ],
     [ "GetCurrentProport", "classvrv_1_1_staff_def_drawing_interface.html#ac13424098f8eafeb6c319a2b68473693", null ],
     [ "GetCurrentProport", "classvrv_1_1_staff_def_drawing_interface.html#a5bf8d4ea6e29fdfcc5cc8baefcc454b6", null ],
+    [ "InterfaceResetData", "classvrv_1_1_staff_def_drawing_interface.html#a95ad5267db526f1a322d286329807168", null ],
     [ "Reset", "classvrv_1_1_staff_def_drawing_interface.html#a9aaf5432c024a82344ee3afdad491fdd", null ],
     [ "SetCurrentClef", "classvrv_1_1_staff_def_drawing_interface.html#add26e35bff4cfc953b52375a9204960d", null ],
     [ "SetCurrentKeySig", "classvrv_1_1_staff_def_drawing_interface.html#ab7c393e092331b16656f2aa593c79a4c", null ],

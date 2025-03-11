@@ -440,7 +440,9 @@ var hierarchy =
       [ "vrv::LayerDef", "classvrv_1_1_layer_def.html", null ],
       [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
       [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
-      [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
+      [ "vrv::Pages", "classvrv_1_1_pages.html", [
+        [ "vrv::PageRange", "classvrv_1_1_page_range.html", null ]
+      ] ],
       [ "vrv::Score", "classvrv_1_1_score.html", null ],
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ],
       [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ],

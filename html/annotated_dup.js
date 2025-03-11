@@ -289,6 +289,7 @@ var annotated_dup =
       [ "PageElement", "classvrv_1_1_page_element.html", "classvrv_1_1_page_element" ],
       [ "PageMilestoneEnd", "classvrv_1_1_page_milestone_end.html", "classvrv_1_1_page_milestone_end" ],
       [ "PageMilestoneInterface", "classvrv_1_1_page_milestone_interface.html", "classvrv_1_1_page_milestone_interface" ],
+      [ "PageRange", "classvrv_1_1_page_range.html", "classvrv_1_1_page_range" ],
       [ "Pages", "classvrv_1_1_pages.html", "classvrv_1_1_pages" ],
       [ "Pb", "classvrv_1_1_pb.html", "classvrv_1_1_pb" ],
       [ "Pedal", "classvrv_1_1_pedal.html", "classvrv_1_1_pedal" ],
