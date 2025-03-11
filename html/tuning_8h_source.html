@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('tuning_8h_source.html',''); initResiza
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __VRV_TUNING_H__</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __VRV_TUNING_H__</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;atts_frettab.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;atts_shared.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;object.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>vrv {</div>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('tuning_8h_source.html',''); initResiza
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// Tuning</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classvrv_1_1_tuning.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_tuning.html">Tuning</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_object.html">Object</a>, <span class="keyword">public</span> AttCourseLog {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classvrv_1_1_tuning.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_tuning.html">Tuning</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_object.html">Object</a>, <span class="keyword">public</span> AttTuningLog {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classvrv_1_1_tuning.html">Tuning</a>();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_tuning.html">Tuning</a>();</div>
@@ -114,40 +114,40 @@ $(document).ready(function(){initNavTree('tuning_8h_source.html',''); initResiza
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_tuning.html#ac1a9a7216be86af817baa6aa00c9556f">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuning.html#ad40e7e05599f3e075f1991ba4094b04d">CalcPitchPos</a>(</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">int</span> course, data_NOTATIONTYPE notationType, <span class="keywordtype">int</span> lines, <span class="keywordtype">int</span> listSize, <span class="keywordtype">int</span> index, <span class="keywordtype">int</span> loc, <span class="keywordtype">bool</span> topAlign) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuning.html#aeeb00152593a29cc5f107b3f2bb45b3e">CalcPitchNumber</a>(<span class="keywordtype">int</span> course, <span class="keywordtype">int</span> fret, data_NOTATIONTYPE notationType) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuning.html#ae8defaa2f0b4e9b4d70cd2f496390bcc">CalcPitchPos</a>(<span class="keywordtype">int</span> course, data_NOTATIONTYPE notationType, <span class="keywordtype">int</span> lines, <span class="keywordtype">int</span> listSize, <span class="keywordtype">int</span> index, <span class="keywordtype">int</span> loc,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">int</span> tabLine, <span class="keywordtype">int</span> tabAnchorline, <span class="keywordtype">bool</span> topAlign) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_tuning.html#aeeb00152593a29cc5f107b3f2bb45b3e">CalcPitchNumber</a>(<span class="keywordtype">int</span> course, <span class="keywordtype">int</span> fret, data_NOTATIONTYPE notationType) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_tuning.html#a2121483a081f2f63777ca64542cb0207">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_tuning.html#a2121483a081f2f63777ca64542cb0207">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_tuning.html#a2121483a081f2f63777ca64542cb0207">Accept</a>(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_tuning.html#a2121483a081f2f63777ca64542cb0207">Accept</a>(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    FunctorCode AcceptEnd(Functor &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    FunctorCode AcceptEnd(ConstFunctor &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:59</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuning_html"><div class="ttname"><a href="classvrv_1_1_tuning.html">vrv::Tuning</a></div><div class="ttdoc">This class models the MEI &lt;tuning&gt; element.</div><div class="ttdef"><b>Definition:</b> tuning.h:23</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuning_html_a554c7b662fe5f1532eb2b345ffb644e9"><div class="ttname"><a href="classvrv_1_1_tuning.html#a554c7b662fe5f1532eb2b345ffb644e9">vrv::Tuning::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> tuning.h:32</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuning_html_ac1a9a7216be86af817baa6aa00c9556f"><div class="ttname"><a href="classvrv_1_1_tuning.html#ac1a9a7216be86af817baa6aa00c9556f">vrv::Tuning::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Add an element to a element.</div></div>
-<div class="ttc" id="aclassvrv_1_1_tuning_html_ad40e7e05599f3e075f1991ba4094b04d"><div class="ttname"><a href="classvrv_1_1_tuning.html#ad40e7e05599f3e075f1991ba4094b04d">vrv::Tuning::CalcPitchPos</a></div><div class="ttdeci">int CalcPitchPos(int course, data_NOTATIONTYPE notationType, int lines, int listSize, int index, int loc, bool topAlign) const</div><div class="ttdoc">Return the line for a note according to tablature type.</div></div>
+<div class="ttc" id="aclassvrv_1_1_tuning_html_ae8defaa2f0b4e9b4d70cd2f496390bcc"><div class="ttname"><a href="classvrv_1_1_tuning.html#ae8defaa2f0b4e9b4d70cd2f496390bcc">vrv::Tuning::CalcPitchPos</a></div><div class="ttdeci">int CalcPitchPos(int course, data_NOTATIONTYPE notationType, int lines, int listSize, int index, int loc, int tabLine, int tabAnchorline, bool topAlign) const</div><div class="ttdoc">Return the line for a note according to tablature type.</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuning_html_a2121483a081f2f63777ca64542cb0207"><div class="ttname"><a href="classvrv_1_1_tuning.html#a2121483a081f2f63777ca64542cb0207">vrv::Tuning::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuning_html_aeeb00152593a29cc5f107b3f2bb45b3e"><div class="ttname"><a href="classvrv_1_1_tuning.html#aeeb00152593a29cc5f107b3f2bb45b3e">vrv::Tuning::CalcPitchNumber</a></div><div class="ttdeci">int CalcPitchNumber(int course, int fret, data_NOTATIONTYPE notationType) const</div><div class="ttdoc">Calculate the MIDI note number for course/fret.</div></div>
 <div class="ttc" id="aclassvrv_1_1_tuning_html_a7a699c68a13ded13b068d4e724695c08"><div class="ttname"><a href="classvrv_1_1_tuning.html#a7a699c68a13ded13b068d4e724695c08">vrv::Tuning::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Reset the object, that is 1) removing all children and 2) resetting all attributes.</div></div>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('tuning_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>tuning.h</b></li>
-    <li class="footer">Generated on Tue Mar 11 2025 09:56:35 for Verovio by
+    <li class="footer">Generated on Tue Mar 11 2025 09:58:38 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

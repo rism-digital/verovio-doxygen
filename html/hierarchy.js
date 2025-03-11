@@ -239,9 +239,6 @@ var hierarchy =
     [ "AttCoordY1", null, [
       [ "vrv::Staff", "classvrv_1_1_staff.html", null ]
     ] ],
-    [ "AttCourseLog", null, [
-      [ "vrv::Tuning", "classvrv_1_1_tuning.html", null ]
-    ] ],
     [ "AttCue", null, [
       [ "vrv::Beam", "classvrv_1_1_beam.html", null ],
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
@@ -602,9 +599,6 @@ var hierarchy =
         [ "vrv::Quilisma", "classvrv_1_1_quilisma.html", null ]
       ] ]
     ] ],
-    [ "AttNoteGesTab", null, [
-      [ "vrv::Note", "classvrv_1_1_note.html", null ]
-    ] ],
     [ "AttNoteHeads", null, [
       [ "vrv::Note", "classvrv_1_1_note.html", null ]
     ] ],
@@ -750,6 +744,9 @@ var hierarchy =
     [ "AttStaffDefVis", null, [
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
     ] ],
+    [ "AttStaffDefVisTablature", null, [
+      [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
+    ] ],
     [ "AttStaffGroupingSym", null, [
       [ "vrv::GrpSym", "classvrv_1_1_grp_sym.html", null ],
       [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ]
@@ -808,8 +805,7 @@ var hierarchy =
         [ "vrv::Oriscus", "classvrv_1_1_oriscus.html", null ],
         [ "vrv::Quilisma", "classvrv_1_1_quilisma.html", null ],
         [ "vrv::Rest", "classvrv_1_1_rest.html", null ]
-      ] ],
-      [ "vrv::TabDurSym", "classvrv_1_1_tab_dur_sym.html", null ]
+      ] ]
     ] ],
     [ "AttStaffLocPitched", null, [
       [ "vrv::PositionInterface", "classvrv_1_1_position_interface.html", null ]
@@ -832,6 +828,10 @@ var hierarchy =
     ] ],
     [ "AttStemVis", null, [
       [ "vrv::Stem", "classvrv_1_1_stem.html", null ]
+    ] ],
+    [ "AttStringtab", null, [
+      [ "vrv::Note", "classvrv_1_1_note.html", null ],
+      [ "vrv::TabDurSym", "classvrv_1_1_tab_dur_sym.html", null ]
     ] ],
     [ "AttSylLog", null, [
       [ "vrv::Syl", "classvrv_1_1_syl.html", null ]
@@ -868,6 +868,9 @@ var hierarchy =
     ] ],
     [ "AttTuning", null, [
       [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ]
+    ] ],
+    [ "AttTuningLog", null, [
+      [ "vrv::Tuning", "classvrv_1_1_tuning.html", null ]
     ] ],
     [ "AttTupletVis", null, [
       [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ],
@@ -921,8 +924,7 @@ var hierarchy =
       [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
     ] ],
     [ "AttVerticalAlign", null, [
-      [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", null ],
-      [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
+      [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", null ]
     ] ],
     [ "AttVerticalGroup", null, [
       [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
@@ -943,6 +945,9 @@ var hierarchy =
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Staff", "classvrv_1_1_staff.html", null ],
       [ "vrv::Stem", "classvrv_1_1_stem.html", null ]
+    ] ],
+    [ "AttVisualOffsetVo", null, [
+      [ "vrv::TabDurSym", "classvrv_1_1_tab_dur_sym.html", null ]
     ] ],
     [ "AttWhitespace", null, [
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ]

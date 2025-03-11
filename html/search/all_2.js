@@ -30,7 +30,7 @@ var searchData=
   ['calcnotelocations_147',['CalcNoteLocations',['../classvrv_1_1_chord.html#a8f1440b120a8392270da3ef687352918',1,'vrv::Chord::CalcNoteLocations()'],['../classvrv_1_1_layer_element.html#a21212712fd5760874206bc0caff85b8c',1,'vrv::LayerElement::CalcNoteLocations()'],['../classvrv_1_1_note.html#a82d1612019d3e768f54337c985a82bd9',1,'vrv::Note::CalcNoteLocations()']]],
   ['calcoptimaldotlocations_148',['CalcOptimalDotLocations',['../classvrv_1_1_layer_element.html#a78700de97d76aca246ed070e737f3f20',1,'vrv::LayerElement']]],
   ['calcpitchnumber_149',['CalcPitchNumber',['../classvrv_1_1_tuning.html#aeeb00152593a29cc5f107b3f2bb45b3e',1,'vrv::Tuning']]],
-  ['calcpitchpos_150',['CalcPitchPos',['../classvrv_1_1_tuning.html#ad40e7e05599f3e075f1991ba4094b04d',1,'vrv::Tuning']]],
+  ['calcpitchpos_150',['CalcPitchPos',['../classvrv_1_1_tuning.html#ae8defaa2f0b4e9b4d70cd2f496390bcc',1,'vrv::Tuning']]],
   ['calcpitchposyrel_151',['CalcPitchPosYRel',['../classvrv_1_1_staff.html#a7e9c539afe51116ec5b5bf5dd60d9786',1,'vrv::Staff']]],
   ['calcpointatbezier_152',['CalcPointAtBezier',['../classvrv_1_1_bounding_box.html#acf2951ebea74c27b024916a4c96480a5',1,'vrv::BoundingBox']]],
   ['calcpositionafterrotation_153',['CalcPositionAfterRotation',['../classvrv_1_1_bounding_box.html#a80465f84c7190f8cb0a9765693376be2',1,'vrv::BoundingBox']]],
