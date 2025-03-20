@@ -15,6 +15,6 @@ var classvrv_1_1_dir =
     [ "GetTimeSpanningInterface", "classvrv_1_1_dir.html#ae2d92a6bffd554534b59dde9de96ffab", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_dir.html#af5bfb3be056b4e9879398e425dcf91e7", null ],
     [ "IsExtenderElement", "classvrv_1_1_dir.html#a3bc39e827b43b1431f9dc97c51bda5a4", null ],
-    [ "IsSupportedChild", "classvrv_1_1_dir.html#a5d4b6ca7d565ee66584e3801b2615681", null ],
+    [ "IsSupportedChild", "classvrv_1_1_dir.html#a1e11a6d31683ae3e9f37c8ef62cb0619", null ],
     [ "Reset", "classvrv_1_1_dir.html#a04dde11e9d20a43494f52995ede2af07", null ]
 ];

@@ -18,7 +18,7 @@ var classvrv_1_1_page =
     [ "GetPPUFactor", "classvrv_1_1_page.html#a8490304e26cdf6b0ab0b9bf342d956be", null ],
     [ "IsFirstOfSelection", "classvrv_1_1_page.html#af0dfbf8e757e682983cffcfb6594644d", null ],
     [ "IsLastOfSelection", "classvrv_1_1_page.html#a175f527d428106897c13fe43176bfc8c", null ],
-    [ "IsSupportedChild", "classvrv_1_1_page.html#a8914102e927cd858174b52fbe638f8fe", null ],
+    [ "IsSupportedChild", "classvrv_1_1_page.html#a0f0838cd91283589d0d172bd2f1dacfb", null ],
     [ "JustifyHorizontally", "classvrv_1_1_page.html#a01e27bb8082d59453406dd7848a8d1b2", null ],
     [ "JustifyVertically", "classvrv_1_1_page.html#a677cbec6a571326d624fe812a0c432fa", null ],
     [ "LayOut", "classvrv_1_1_page.html#a006e4902c1b476ded557eb86c86242a1", null ],

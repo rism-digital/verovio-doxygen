@@ -17,6 +17,6 @@ var classvrv_1_1_tab_grp =
     [ "GetTopNote", "classvrv_1_1_tab_grp.html#a9cb0571c8748ed3ac06bddbd9a695746", null ],
     [ "GetYBottom", "classvrv_1_1_tab_grp.html#af44483acaf39692cdb84c7835d6666ac", null ],
     [ "GetYTop", "classvrv_1_1_tab_grp.html#a174528f8d844e1717e1b834af6cffc26", null ],
-    [ "IsSupportedChild", "classvrv_1_1_tab_grp.html#a4d88df1eeb835725c99b618aebaa4e5f", null ],
+    [ "IsSupportedChild", "classvrv_1_1_tab_grp.html#a4b9ef8c28deb592969581f1404a3c8b6", null ],
     [ "Reset", "classvrv_1_1_tab_grp.html#a9b2fd5cbad6e65977c31711ff82c70e0", null ]
 ];

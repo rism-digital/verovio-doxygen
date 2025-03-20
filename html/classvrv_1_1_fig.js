@@ -10,6 +10,6 @@ var classvrv_1_1_fig =
     [ "GetAreaPosInterface", "classvrv_1_1_fig.html#a3222c7173061a4a1fee86f4b20796632", null ],
     [ "GetAreaPosInterface", "classvrv_1_1_fig.html#a6dc5f1fe5b8c16121c5cc0c8eb31258f", null ],
     [ "GetClassName", "classvrv_1_1_fig.html#aa31dfb87befe09e49fecb2aa5dac9e3f", null ],
-    [ "IsSupportedChild", "classvrv_1_1_fig.html#a3f70a460e1cf51861a45dd6ce1b43cce", null ],
+    [ "IsSupportedChild", "classvrv_1_1_fig.html#a19c12da545ebfb47e00cd962c3da59d7", null ],
     [ "Reset", "classvrv_1_1_fig.html#a203dee1b68d43c958f96288b15174172", null ]
 ];

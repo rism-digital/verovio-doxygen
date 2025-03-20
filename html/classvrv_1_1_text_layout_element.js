@@ -21,7 +21,7 @@ var classvrv_1_1_text_layout_element =
     [ "GetRowWidth", "classvrv_1_1_text_layout_element.html#a799e4cd5e61f04bd778434f339f5b2e2", null ],
     [ "GetTotalHeight", "classvrv_1_1_text_layout_element.html#a9513edb9a22f5cc7275349e15a306618", null ],
     [ "GetTotalWidth", "classvrv_1_1_text_layout_element.html#ac014050e1acdbffcff81651fe28f657e", null ],
-    [ "IsSupportedChild", "classvrv_1_1_text_layout_element.html#a1b17495273bb803f249c576baaac12f0", null ],
+    [ "IsSupportedChild", "classvrv_1_1_text_layout_element.html#adca8504a939b464f971dfd43a332c67d", null ],
     [ "Reset", "classvrv_1_1_text_layout_element.html#aaad2854380ace7dd7026199db406c9a1", null ],
     [ "ResetCells", "classvrv_1_1_text_layout_element.html#ae4c32c8584f9a0215b0cfd0673d413af", null ],
     [ "ResetDrawingScaling", "classvrv_1_1_text_layout_element.html#a737b2be5c5b21be26e7935d93b4f9288", null ]

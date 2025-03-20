@@ -10,6 +10,6 @@ var classvrv_1_1_tuning =
     [ "CalcPitchPos", "classvrv_1_1_tuning.html#ae8defaa2f0b4e9b4d70cd2f496390bcc", null ],
     [ "Clone", "classvrv_1_1_tuning.html#a554c7b662fe5f1532eb2b345ffb644e9", null ],
     [ "GetClassName", "classvrv_1_1_tuning.html#a7258606a9496e39419181ff6919bb492", null ],
-    [ "IsSupportedChild", "classvrv_1_1_tuning.html#ac1a9a7216be86af817baa6aa00c9556f", null ],
+    [ "IsSupportedChild", "classvrv_1_1_tuning.html#a66718dceb61135d507cb30f778abe663", null ],
     [ "Reset", "classvrv_1_1_tuning.html#a7a699c68a13ded13b068d4e724695c08", null ]
 ];

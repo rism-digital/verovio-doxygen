@@ -31,7 +31,7 @@ var classvrv_1_1_system =
     [ "IsLastInPage", "classvrv_1_1_system.html#ad0f189c699553709b1715d4d5742b971", null ],
     [ "IsLastOfMdiv", "classvrv_1_1_system.html#a2df3679536e019b6c2d946b74bf7aa00", null ],
     [ "IsLastOfSelection", "classvrv_1_1_system.html#a220f7282ee87726486d3d10da9004e81", null ],
-    [ "IsSupportedChild", "classvrv_1_1_system.html#a5ebf90e3e6f3d54e19c780bbac81a6d4", null ],
+    [ "IsSupportedChild", "classvrv_1_1_system.html#a4f0822bdcb3331f6066895e87edb2cfd", null ],
     [ "Reset", "classvrv_1_1_system.html#a4288aadcbfa97fa58417834d35ad8170", null ],
     [ "ResetDrawingAbbrLabelsWidth", "classvrv_1_1_system.html#a37369dab44bd649002ddd5e608b7de45", null ],
     [ "ResetDrawingScoreDef", "classvrv_1_1_system.html#afb30e5cd096b54497afb001b7ae361ef", null ],

@@ -109,7 +109,7 @@ var classvrv_1_1_doc =
     [ "IsNeumeLines", "classvrv_1_1_doc.html#a3cf220eb2862ad11f076ae12bda7e0e6", null ],
     [ "IsRaw", "classvrv_1_1_doc.html#a3e59739f177a87b1e5659ef73d26005d", null ],
     [ "IsRendering", "classvrv_1_1_doc.html#ad3059fae3a4106334e0e788da0f0176f", null ],
-    [ "IsSupportedChild", "classvrv_1_1_doc.html#a1729e3b10e832cace0a5d262f49540c1", null ],
+    [ "IsSupportedChild", "classvrv_1_1_doc.html#a20b8314ed54233af06fd66e23d2d8c9a", null ],
     [ "IsTranscription", "classvrv_1_1_doc.html#aead4e3b9f87eeb7e63f7ae6d903591d7", null ],
     [ "PrepareData", "classvrv_1_1_doc.html#a863c2bb1a0b28c6f52adb5ce662a14e8", null ],
     [ "ReactivateSelection", "classvrv_1_1_doc.html#af9bdb401ee225620c35623035b7e046e", null ],

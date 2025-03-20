@@ -12,7 +12,7 @@ var classvrv_1_1_meter_sig_grp =
     [ "GetClassName", "classvrv_1_1_meter_sig_grp.html#a6b38e7cd4637a582508271c60c701143", null ],
     [ "GetSimplifiedMeterSig", "classvrv_1_1_meter_sig_grp.html#a9db79270ec429a057032a2679735a424", null ],
     [ "IsScoreDefElement", "classvrv_1_1_meter_sig_grp.html#a2a46382babbe02c243d05664e2302578", null ],
-    [ "IsSupportedChild", "classvrv_1_1_meter_sig_grp.html#aad2431fb308c4b005add881ace1a58b0", null ],
+    [ "IsSupportedChild", "classvrv_1_1_meter_sig_grp.html#ad778630006cee6c89fcaf490181cdab7", null ],
     [ "Reset", "classvrv_1_1_meter_sig_grp.html#a45467b999047fb76dd5f686749c13f5f", null ],
     [ "SetMeasureBasedCount", "classvrv_1_1_meter_sig_grp.html#ae4b3efdb4c54180a133fd082147682ba", null ]
 ];

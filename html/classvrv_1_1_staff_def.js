@@ -11,7 +11,7 @@ var classvrv_1_1_staff_def =
     [ "GetDrawingVisibility", "classvrv_1_1_staff_def.html#ac00775b16a0b570eb727442fd181852d", null ],
     [ "GetInsertOrderFor", "classvrv_1_1_staff_def.html#a9998beabf9e4bed3854d156f78577d9c", null ],
     [ "HasLayerDefWithLabel", "classvrv_1_1_staff_def.html#a1223238d63db9b0f81bb9a3095c11b6f", null ],
-    [ "IsSupportedChild", "classvrv_1_1_staff_def.html#af1ecece5715ab0974b7d33407e566166", null ],
+    [ "IsSupportedChild", "classvrv_1_1_staff_def.html#a46eb0c5ff30a60145220b048a64bcf72", null ],
     [ "Reset", "classvrv_1_1_staff_def.html#a5b130da96f4e9bf269dc12fd2c5f1952", null ],
     [ "SetDrawingVisibility", "classvrv_1_1_staff_def.html#a150107fdc8ac0951b9b506b208a75fd5", null ]
 ];

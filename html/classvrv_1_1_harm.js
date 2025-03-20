@@ -16,7 +16,7 @@ var classvrv_1_1_harm =
     [ "GetTimePointInterface", "classvrv_1_1_harm.html#acc2dae3b031dd1e5ed8798ec5d9f9354", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_harm.html#a97ff4069242aa8860e13e08077476dbe", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_harm.html#a0145767c94be35415a43da444e411b35", null ],
-    [ "IsSupportedChild", "classvrv_1_1_harm.html#a970c0880b3a06ad9efec68d15c78e473", null ],
+    [ "IsSupportedChild", "classvrv_1_1_harm.html#a9123b281c784efd3f15dfbce9452a4f8", null ],
     [ "Reset", "classvrv_1_1_harm.html#a5287374d5b3322b1040e2ec9ad16248b", null ],
     [ "SetBassPitch", "classvrv_1_1_harm.html#a4c4e3406e3059e04200b1a191623da52", null ],
     [ "SetRootPitch", "classvrv_1_1_harm.html#a7e373b52e2da733634d497a65c3db8b0", null ]

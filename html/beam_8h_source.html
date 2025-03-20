@@ -311,7 +311,7 @@ $(document).ready(function(){initNavTree('beam_8h_source.html',''); initResizabl
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordtype">int</span> GetNoteCount()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;GetChildCount(NOTE); }</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_beam.html#a2222ff99c31c7384fc4e3c6dff08b47a">IsSupportedChild</a>(Object *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_beam.html#ae20b0eeeb4f3d69632c7abc7c20037ca">IsSupportedChild</a>(ClassId classId) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keyword">const</span> ArrayOfBeamElementCoords *GetElementCoords();</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
@@ -419,10 +419,10 @@ $(document).ready(function(){initNavTree('beam_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassvrv_1_1_beam_segment_html_aae2d6f202398b11757729b803cad00fd"><div class="ttname"><a href="classvrv_1_1_beam_segment.html#aae2d6f202398b11757729b803cad00fd">vrv::BeamSegment::InitCoordRefs</a></div><div class="ttdeci">void InitCoordRefs(const ArrayOfBeamElementCoords *beamElementCoords)</div><div class="ttdoc">Initializes the m_beamElementCoords vector objects.</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_element_coord_html"><div class="ttname"><a href="classvrv_1_1_beam_element_coord.html">vrv::BeamElementCoord</a></div><div class="ttdef"><b>Definition:</b> beam.h:395</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_element_coord_html_a4d642d3e677fe0c54be30d4b2c14524f"><div class="ttname"><a href="classvrv_1_1_beam_element_coord.html#a4d642d3e677fe0c54be30d4b2c14524f">vrv::BeamElementCoord::UpdateStemLength</a></div><div class="ttdeci">void UpdateStemLength(StemmedDrawingInterface *stemmedInterface, int y1, int y2, int stemAdjust, bool inMixedBeam)</div><div class="ttdoc">Update stem length based on the calculated coordinates and stemAdjust value.</div></div>
+<div class="ttc" id="aclassvrv_1_1_beam_html_ae20b0eeeb4f3d69632c7abc7c20037ca"><div class="ttname"><a href="classvrv_1_1_beam.html#ae20b0eeeb4f3d69632c7abc7c20037ca">vrv::Beam::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(ClassId classId) override</div><div class="ttdoc">Add an element (a note or a rest) to a beam.</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_html_ac9348763f6a1dec01f260884674ca79a"><div class="ttname"><a href="classvrv_1_1_beam.html#ac9348763f6a1dec01f260884674ca79a">vrv::Beam::GetBeamPartDuration</a></div><div class="ttdeci">int GetBeamPartDuration(int x, bool includeRests=true) const</div><div class="ttdoc">Return duration of the beam part that is closest to the specified object X position.</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_html_a26f7b2d176314772a13b06ec15d23758"><div class="ttname"><a href="classvrv_1_1_beam.html#a26f7b2d176314772a13b06ec15d23758">vrv::Beam::IsTabBeam</a></div><div class="ttdeci">bool IsTabBeam() const</div><div class="ttdoc">Return true if the beam has a tabGrp child.</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_element_coord_html_a93940155d8a91b590cc29bcda00ec8ec"><div class="ttname"><a href="classvrv_1_1_beam_element_coord.html#a93940155d8a91b590cc29bcda00ec8ec">vrv::BeamElementCoord::GetStemHolderInterface</a></div><div class="ttdeci">StemmedDrawingInterface * GetStemHolderInterface()</div><div class="ttdoc">Helper to get the StemmedDrawingInterface associated with the m_element (if any) Return the Chord or ...</div></div>
-<div class="ttc" id="aclassvrv_1_1_beam_html_a2222ff99c31c7384fc4e3c6dff08b47a"><div class="ttname"><a href="classvrv_1_1_beam.html#a2222ff99c31c7384fc4e3c6dff08b47a">vrv::Beam::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Add an element (a note or a rest) to a beam.</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_html"><div class="ttname"><a href="classvrv_1_1_beam.html">vrv::Beam</a></div><div class="ttdef"><b>Definition:</b> beam.h:279</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html"><div class="ttname"><a href="classvrv_1_1_note.html">vrv::Note</a></div><div class="ttdoc">This class models the MEI &lt;note&gt; element.</div><div class="ttdef"><b>Definition:</b> note.h:47</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_span_segment_html"><div class="ttname"><a href="classvrv_1_1_beam_span_segment.html">vrv::BeamSpanSegment</a></div><div class="ttdef"><b>Definition:</b> beam.h:225</div></div>
@@ -443,7 +443,7 @@ $(document).ready(function(){initNavTree('beam_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>beam.h</b></li>
-    <li class="footer">Generated on Tue Mar 18 2025 10:21:16 for Verovio by
+    <li class="footer">Generated on Thu Mar 20 2025 15:27:54 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

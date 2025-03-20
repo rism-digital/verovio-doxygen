@@ -11,6 +11,6 @@ var classvrv_1_1_rend =
     [ "GetAreaPosInterface", "classvrv_1_1_rend.html#a3b338a2ac710f566cd2044e72fe2c51c", null ],
     [ "GetClassName", "classvrv_1_1_rend.html#a23180d6f74d80c6ff5d46721de7a392f", null ],
     [ "HasEnclosure", "classvrv_1_1_rend.html#a1647c69d39d17e4ccb5cbce4f86566ef", null ],
-    [ "IsSupportedChild", "classvrv_1_1_rend.html#a70916b87437664d19d48843882e20de6", null ],
+    [ "IsSupportedChild", "classvrv_1_1_rend.html#a60991380795c00e76f6ba973ea6b37e7", null ],
     [ "Reset", "classvrv_1_1_rend.html#a90b90ee331c5173ba0a5e9e6b8122c3e", null ]
 ];

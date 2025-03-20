@@ -13,6 +13,6 @@ var classvrv_1_1_repeat_mark =
     [ "GetTextDirInterface", "classvrv_1_1_repeat_mark.html#a539c5a68100f31fe9eb0a4aab789f474", null ],
     [ "GetTimePointInterface", "classvrv_1_1_repeat_mark.html#acc978af4a0620dbf261e65c17ae44cdf", null ],
     [ "GetTimePointInterface", "classvrv_1_1_repeat_mark.html#a8fe0a4bfdd9bee7f44299b3242a64b62", null ],
-    [ "IsSupportedChild", "classvrv_1_1_repeat_mark.html#a9b413c908da99a44b0b78d28f2471e28", null ],
+    [ "IsSupportedChild", "classvrv_1_1_repeat_mark.html#a7b30cea04f4285cf7c6111bd2d5199ed", null ],
     [ "Reset", "classvrv_1_1_repeat_mark.html#a77e7b45f4404cbdcff9126f267a3c65a", null ]
 ];

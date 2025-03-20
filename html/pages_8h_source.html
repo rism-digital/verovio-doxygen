@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('pages_8h_source.html',''); initResizab
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_pages.html#a51f82d6c1aa03f5ce8427ff81921c06b">Reset</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Pages&quot;</span>; }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_pages.html#a8a17f0b25f6099dde7d2ee3238b1a196">IsSupportedChild</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_pages.html#a6d17f3e1c18bf16e7c330b9cf0a0b539">IsSupportedChild</a>(ClassId classId) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> ConvertFrom(<a class="code" href="classvrv_1_1_score.html">Score</a> *score);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
@@ -176,9 +176,9 @@ $(document).ready(function(){initNavTree('pages_8h_source.html',''); initResizab
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:59</div></div>
 <div class="ttc" id="aclassvrv_1_1_pages_html"><div class="ttname"><a href="classvrv_1_1_pages.html">vrv::Pages</a></div><div class="ttdoc">This class represent a &lt;pages&gt; in page-based MEI.</div><div class="ttdef"><b>Definition:</b> pages.h:27</div></div>
 <div class="ttc" id="aclassvrv_1_1_page_range_html"><div class="ttname"><a href="classvrv_1_1_page_range.html">vrv::PageRange</a></div><div class="ttdoc">This class represent a page range not owning child pages.</div><div class="ttdef"><b>Definition:</b> pages.h:87</div></div>
+<div class="ttc" id="aclassvrv_1_1_pages_html_a6d17f3e1c18bf16e7c330b9cf0a0b539"><div class="ttname"><a href="classvrv_1_1_pages.html#a6d17f3e1c18bf16e7c330b9cf0a0b539">vrv::Pages::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(ClassId classId) override</div><div class="ttdoc">Base method for checking if a child can be added.</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_html"><div class="ttname"><a href="classvrv_1_1_functor.html">vrv::Functor</a></div><div class="ttdoc">This abstract class is the base class for all mutable functors.</div><div class="ttdef"><b>Definition:</b> functor.h:101</div></div>
 <div class="ttc" id="aclassvrv_1_1_pages_html_aceb9edb9067b17733f9f7cf3405b1a91"><div class="ttname"><a href="classvrv_1_1_pages.html#aceb9edb9067b17733f9f7cf3405b1a91">vrv::Pages::LayOutAll</a></div><div class="ttdeci">void LayOutAll()</div><div class="ttdoc">Refresh the layout of all the child pages.</div></div>
-<div class="ttc" id="aclassvrv_1_1_pages_html_a8a17f0b25f6099dde7d2ee3238b1a196"><div class="ttname"><a href="classvrv_1_1_pages.html#a8a17f0b25f6099dde7d2ee3238b1a196">vrv::Pages::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(Object *object) override</div><div class="ttdoc">Base method for checking if a child can be added.</div></div>
 <div class="ttc" id="aclassvrv_1_1_page_html"><div class="ttname"><a href="classvrv_1_1_page.html">vrv::Page</a></div><div class="ttdoc">This class represents a page in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> page.h:31</div></div>
 <div class="ttc" id="aclassvrv_1_1_const_functor_html"><div class="ttname"><a href="classvrv_1_1_const_functor.html">vrv::ConstFunctor</a></div><div class="ttdoc">This abstract class is the base class for all const functors.</div><div class="ttdef"><b>Definition:</b> functor.h:126</div></div>
 <div class="ttc" id="aclassvrv_1_1_pages_html_a0444b07872e6ea782a12a054c8ef8913"><div class="ttname"><a href="classvrv_1_1_pages.html#a0444b07872e6ea782a12a054c8ef8913">vrv::Pages::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('pages_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>pages.h</b></li>
-    <li class="footer">Generated on Tue Mar 18 2025 10:21:16 for Verovio by
+    <li class="footer">Generated on Thu Mar 20 2025 15:27:54 for Verovio by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

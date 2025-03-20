@@ -8,6 +8,6 @@ var classvrv_1_1_grace_grp =
     [ "AcceptEnd", "classvrv_1_1_grace_grp.html#aca006039b10fe90d2f4a80dca39b419a", null ],
     [ "Clone", "classvrv_1_1_grace_grp.html#aa73da189a01c4ed6e5b665b4c0d1431e", null ],
     [ "GetClassName", "classvrv_1_1_grace_grp.html#ad90052ab336ab589fa7247a8b1b18bf3", null ],
-    [ "IsSupportedChild", "classvrv_1_1_grace_grp.html#a81889cf240d1ee6ab83f2b28d6d267f5", null ],
+    [ "IsSupportedChild", "classvrv_1_1_grace_grp.html#aba0429d3600c2825fd19b4db6afe8507", null ],
     [ "Reset", "classvrv_1_1_grace_grp.html#a2a4d197e81270af5747371079c4fec7b", null ]
 ];

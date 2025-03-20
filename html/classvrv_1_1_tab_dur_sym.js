@@ -16,6 +16,6 @@ var classvrv_1_1_tab_dur_sym =
     [ "GetStemmedDrawingInterface", "classvrv_1_1_tab_dur_sym.html#a6a846a4d4e931838c6781bc8979410d2", null ],
     [ "GetStemUpSE", "classvrv_1_1_tab_dur_sym.html#a974af81521dc9b6ef3a2891f894eb687", null ],
     [ "HasToBeAligned", "classvrv_1_1_tab_dur_sym.html#a1e85bce43dc9ad280471f7ef5f147da0", null ],
-    [ "IsSupportedChild", "classvrv_1_1_tab_dur_sym.html#a2d7ba2c667df361c9dcda9df8b75093a", null ],
+    [ "IsSupportedChild", "classvrv_1_1_tab_dur_sym.html#a156649d1c7a8bcef58687003c28bc75f", null ],
     [ "Reset", "classvrv_1_1_tab_dur_sym.html#adbcbfec64d9b682d161c8448f0ecfde1", null ]
 ];

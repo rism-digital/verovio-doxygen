@@ -16,7 +16,7 @@ var classvrv_1_1_tempo =
     [ "GetTimeSpanningInterface", "classvrv_1_1_tempo.html#aee0221117f8f4daaaa941d7ebf2ccc57", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_tempo.html#aa526713cc0679e67fcba1207cb1952f3", null ],
     [ "IsExtenderElement", "classvrv_1_1_tempo.html#a5c23ed4022b962566560259c7b833377", null ],
-    [ "IsSupportedChild", "classvrv_1_1_tempo.html#a1e23fec90d73196e73601756ee43b3e9", null ],
+    [ "IsSupportedChild", "classvrv_1_1_tempo.html#a3f4b92531fce8f7797c069d9a88ffedb", null ],
     [ "Reset", "classvrv_1_1_tempo.html#a06012ac7577667239c4605f31ff5f19c", null ],
     [ "ResetDrawingXRelative", "classvrv_1_1_tempo.html#a5023d11bb17f205cc194f2bb0414d2a1", null ],
     [ "SetDrawingXRelative", "classvrv_1_1_tempo.html#a200ef31f40382170d1a3677a4e433f0a", null ]

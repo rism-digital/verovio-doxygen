@@ -12,6 +12,6 @@ var classvrv_1_1_facsimile =
     [ "GetClassName", "classvrv_1_1_facsimile.html#ae9318bef4271fef3b1ed651e0ee671af", null ],
     [ "GetMaxX", "classvrv_1_1_facsimile.html#aaac254a2503aba5d73e1c2767f356dcf", null ],
     [ "GetMaxY", "classvrv_1_1_facsimile.html#a84e74c8216525953505d52f8ee2954a4", null ],
-    [ "IsSupportedChild", "classvrv_1_1_facsimile.html#a98f220f56f306ef54977504ada1249fb", null ],
+    [ "IsSupportedChild", "classvrv_1_1_facsimile.html#a6d6de5c9ad697a23b3e6850cf440bd21", null ],
     [ "Reset", "classvrv_1_1_facsimile.html#a647ce9a5ee0ef989ef9da2db1d05705b", null ]
 ];

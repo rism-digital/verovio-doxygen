@@ -12,6 +12,6 @@ var classvrv_1_1_ornam =
     [ "GetTextDirInterface", "classvrv_1_1_ornam.html#a793479438c38a4dc76e3c37f08407cfc", null ],
     [ "GetTimePointInterface", "classvrv_1_1_ornam.html#a2671937ed8b8c30616d3b4dcf58eeb52", null ],
     [ "GetTimePointInterface", "classvrv_1_1_ornam.html#af70530e670e3cf0a2fb13a167a5875d4", null ],
-    [ "IsSupportedChild", "classvrv_1_1_ornam.html#ac4aa0444b3ed010b326d1863106f3ee2", null ],
+    [ "IsSupportedChild", "classvrv_1_1_ornam.html#a07fc6927e489f653b9d80f2b5467d215", null ],
     [ "Reset", "classvrv_1_1_ornam.html#a71718b67659f935450ab8b79bf2d77bf", null ]
 ];

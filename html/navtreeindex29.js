@@ -1,5 +1,11 @@
 var NAVTREEINDEX29 =
 {
+"classvrv_1_1_tuplet_num.html#ace55160065d45af4036cdc0b50a0d6d6":[1,0,0,415,7],
+"classvrv_1_1_tuplet_num.html#aeb853a6a2b5db2926a115715b22170db":[1,0,0,415,0],
+"classvrv_1_1_tuplet_num.html#afb0f338ad279fc5ec66aa88afa47dec7":[1,0,0,415,9],
+"classvrv_1_1_turn.html":[1,0,0,416],
+"classvrv_1_1_turn.html#a3ac89933a5a6030b9b6066b3688b432c":[1,0,0,416,0],
+"classvrv_1_1_turn.html#a468f98e0c5cb39dba3c1259d2e811ba6":[1,0,0,416,4],
 "classvrv_1_1_turn.html#a473be451c390d4f472b559a04b6ed81d":[1,0,0,416,11],
 "classvrv_1_1_turn.html#a48a67a7daeac935a7b21eb17a94f7192":[1,0,0,416,10],
 "classvrv_1_1_turn.html#a4a09c4e43294dff8dbd2909f02d8573a":[1,0,0,416,8],
@@ -42,7 +48,7 @@ var NAVTREEINDEX29 =
 "classvrv_1_1_verse.html#a98529570ab28b9440bfa26c9afd60f03":[1,0,0,419,1],
 "classvrv_1_1_verse.html#a9cf11a5ef7cb1106a67c9b31ab962dee":[1,0,0,419,4],
 "classvrv_1_1_verse.html#ae8b57a86bf5f09a45f14dc3cba8b85bd":[1,0,0,419,5],
-"classvrv_1_1_verse.html#af6c20c2a1cfd122a4f625a6dbef89eda":[1,0,0,419,11],
+"classvrv_1_1_verse.html#af29caee61a19a83a4c5aca91df1148f6":[1,0,0,419,11],
 "classvrv_1_1_verse.html#af887e92f12d0c54fead6db48366942a6":[1,0,0,419,9],
 "classvrv_1_1_view.html":[1,0,0,420],
 "classvrv_1_1_view.html#a0220af899cfe64232a2257afbf9f30cc":[1,0,0,420,13],
@@ -243,11 +249,5 @@ var NAVTREEINDEX29 =
 "classvrv_1_1_view.html#af1ad1da56835eef701839b9f04a8cd36":[1,0,0,420,206],
 "classvrv_1_1_view.html#af2ab2f89a0b92ae877969133573b32ad":[1,0,0,420,36],
 "classvrv_1_1_view.html#af301e8e99bc2946c263bf0ec66827a7d":[1,0,0,420,1],
-"classvrv_1_1_view.html#af38267bc45571bab12e3a770b056d847":[1,0,0,420,9],
-"classvrv_1_1_view.html#af3b10a0cb226363aa10095adbdcafb98":[1,0,0,420,79],
-"classvrv_1_1_view.html#af3bc479b7cddc1efbaa2ea086a4fd952":[1,0,0,420,129],
-"classvrv_1_1_view.html#af3d784a5dec18db724d2f6bd62e81f79":[1,0,0,420,42],
-"classvrv_1_1_view.html#af43ac12fd9cd41b9dbdc05dc69b91519":[1,0,0,420,184],
-"classvrv_1_1_view.html#af62a0d79af6e0c2a0da7473dc0baaa83":[1,0,0,420,181],
-"classvrv_1_1_view.html#af9ce531ef5d76bb05a14293ee86a89b5":[1,0,0,420,121]
+"classvrv_1_1_view.html#af38267bc45571bab12e3a770b056d847":[1,0,0,420,9]
 };

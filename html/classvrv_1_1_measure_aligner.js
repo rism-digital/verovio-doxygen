@@ -20,7 +20,7 @@ var classvrv_1_1_measure_aligner =
     [ "GetRightAlignment", "classvrv_1_1_measure_aligner.html#afd40e8d1ed3297d8adfb71682cd040c9", null ],
     [ "GetRightBarLineAlignment", "classvrv_1_1_measure_aligner.html#af93ae964b1d11021b94bfa1c0dc36431", null ],
     [ "GetRightBarLineAlignment", "classvrv_1_1_measure_aligner.html#a68308782eae082da602f9ad6d34e393b", null ],
-    [ "IsSupportedChild", "classvrv_1_1_measure_aligner.html#a268ddc7a43d53796374c10771d641d87", null ],
+    [ "IsSupportedChild", "classvrv_1_1_measure_aligner.html#aed438d67d32f81fdb0683babe93484fd", null ],
     [ "PushAlignmentsRight", "classvrv_1_1_measure_aligner.html#a2ea7245b5f0cf0bb1bc4fc144f29e8af", null ],
     [ "Reset", "classvrv_1_1_measure_aligner.html#a8c1fa7cdc214b01b2804f7a6b3b2c30d", null ],
     [ "SetInitialTstamp", "classvrv_1_1_measure_aligner.html#ad32dbca896d7753eec67391b24b82860", null ],
