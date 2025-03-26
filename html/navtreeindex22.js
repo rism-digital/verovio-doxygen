@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"classvrv_1_1_prepare_lyrics_functor.html#a74ad2be252f8cdac1e159f91a37569c4":[1,0,0,312,3],
 "classvrv_1_1_prepare_lyrics_functor.html#ab14147f31e770365d9526f72247e805a":[1,0,0,312,2],
 "classvrv_1_1_prepare_lyrics_functor.html#abde348ccd73716e73dfa2b4822e1e228":[1,0,0,312,4],
 "classvrv_1_1_prepare_lyrics_functor.html#ad8b7b18defc8e655b3498dc5e8ba3f28":[1,0,0,312,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "classvrv_1_1_reset_horizontal_alignment_functor.html#a504f28910b7edcea21d60f2ca9a179e7":[1,0,0,334,12],
 "classvrv_1_1_reset_horizontal_alignment_functor.html#a590388b38c0b36668b88ad1e7001a0aa":[1,0,0,334,19],
 "classvrv_1_1_reset_horizontal_alignment_functor.html#a60dcdb850f3136eb7d2e9878746a67be":[1,0,0,334,2],
-"classvrv_1_1_reset_horizontal_alignment_functor.html#a7d7935341542c6151a760e28042853eb":[1,0,0,334,17],
-"classvrv_1_1_reset_horizontal_alignment_functor.html#a97fbc636e34cf7a2d43a8b776c775300":[1,0,0,334,21]
+"classvrv_1_1_reset_horizontal_alignment_functor.html#a7d7935341542c6151a760e28042853eb":[1,0,0,334,17]
 };

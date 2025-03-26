@@ -58,6 +58,7 @@ var searchData=
   ['rest_1066',['Rest',['../classvrv_1_1_rest.html',1,'vrv']]],
   ['restore_1067',['Restore',['../classvrv_1_1_restore.html',1,'vrv']]],
   ['rgb2int_1068',['RGB2Int',['../classvrv_1_1_device_context.html#a73f8ff83665f5699325367b3a3743bae',1,'vrv::DeviceContext']]],
-  ['runningelement_1069',['RunningElement',['../classvrv_1_1_running_element.html',1,'vrv']]],
-  ['runtimeclock_1070',['RuntimeClock',['../classvrv_1_1_runtime_clock.html',1,'vrv']]]
+  ['rotatechildren_1069',['RotateChildren',['../classvrv_1_1_object.html#a19cb63d229f04226f8a941a332edd03e',1,'vrv::Object']]],
+  ['runningelement_1070',['RunningElement',['../classvrv_1_1_running_element.html',1,'vrv']]],
+  ['runtimeclock_1071',['RuntimeClock',['../classvrv_1_1_runtime_clock.html',1,'vrv']]]
 ];
