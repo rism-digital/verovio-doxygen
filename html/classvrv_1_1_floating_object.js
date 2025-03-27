@@ -2,7 +2,6 @@ var classvrv_1_1_floating_object =
 [
     [ "FloatingObject", "classvrv_1_1_floating_object.html#a881e66e4ba71468555b7a8abae6a346e", null ],
     [ "FloatingObject", "classvrv_1_1_floating_object.html#a0988447a69fd83a982391248f4a19944", null ],
-    [ "FloatingObject", "classvrv_1_1_floating_object.html#a41170245f10c43785287cacb6e34013b", null ],
     [ "~FloatingObject", "classvrv_1_1_floating_object.html#ac09ff8994cb1d0119fdd67d25d12f410", null ],
     [ "Accept", "classvrv_1_1_floating_object.html#a8a51051ca9ea672ed5ac1a46633fa3d4", null ],
     [ "Accept", "classvrv_1_1_floating_object.html#a91acd867790c69c87719b9561537ad1e", null ],

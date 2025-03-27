@@ -2,7 +2,6 @@ var classvrv_1_1_score_def_element =
 [
     [ "ScoreDefElement", "classvrv_1_1_score_def_element.html#a78710fc697f91b71fb4b9ad5b2a6c447", null ],
     [ "ScoreDefElement", "classvrv_1_1_score_def_element.html#ab55bea4f5777547ab4ab5df958549f53", null ],
-    [ "ScoreDefElement", "classvrv_1_1_score_def_element.html#ae1196d9264a4c7ca2fe02d6946b49fb7", null ],
     [ "~ScoreDefElement", "classvrv_1_1_score_def_element.html#ae0fc9475af23e50d5128282fa8482a1c", null ],
     [ "Accept", "classvrv_1_1_score_def_element.html#af086da0b786da225c5822340e1cce855", null ],
     [ "Accept", "classvrv_1_1_score_def_element.html#ad8a263a6c4b79db972f0233ded883710", null ],

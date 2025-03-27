@@ -1021,6 +1021,7 @@ var hierarchy =
       [ "vrv::PrepareTimeSpanningFunctor", "classvrv_1_1_prepare_time_spanning_functor.html", null ]
     ] ],
     [ "vrv::Comparison", "classvrv_1_1_comparison.html", [
+      [ "vrv::ChildOfClassIdComparison", "classvrv_1_1_child_of_class_id_comparison.html", null ],
       [ "vrv::ClassIdComparison", "classvrv_1_1_class_id_comparison.html", [
         [ "vrv::AttDurExtremeComparison", "classvrv_1_1_att_dur_extreme_comparison.html", null ],
         [ "vrv::AttFormeworkComparison", "classvrv_1_1_att_formework_comparison.html", null ],
@@ -1174,6 +1175,7 @@ var hierarchy =
         ] ],
         [ "vrv::FindAllByComparisonFunctor", "classvrv_1_1_find_all_by_comparison_functor.html", null ],
         [ "vrv::FindAllReferencedObjectsFunctor", "classvrv_1_1_find_all_referenced_objects_functor.html", null ],
+        [ "vrv::FindAllReferringObjectsFunctor", "classvrv_1_1_find_all_referring_objects_functor.html", null ],
         [ "vrv::InitMaxMeasureDurationFunctor", "classvrv_1_1_init_max_measure_duration_functor.html", null ],
         [ "vrv::InitTimemapAdjustNotesFunctor", "classvrv_1_1_init_timemap_adjust_notes_functor.html", null ],
         [ "vrv::InitTimemapTiesFunctor", "classvrv_1_1_init_timemap_ties_functor.html", null ],
