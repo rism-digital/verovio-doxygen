@@ -1,5 +1,11 @@
 var NAVTREEINDEX23 =
 {
+"classvrv_1_1_reset_horizontal_alignment_functor.html#a40c3a1aa8770f98a9d534b75fdd6d382":[1,0,0,336,1],
+"classvrv_1_1_reset_horizontal_alignment_functor.html#a425b4c1d4d8cfff2c320eb40592860b9":[1,0,0,336,13],
+"classvrv_1_1_reset_horizontal_alignment_functor.html#a4262ad59e122da08899ee7eaae4e36a9":[1,0,0,336,14],
+"classvrv_1_1_reset_horizontal_alignment_functor.html#a4a15997d3dd79f627d787174d32cd686":[1,0,0,336,10],
+"classvrv_1_1_reset_horizontal_alignment_functor.html#a4c23a5b48532e316c7ab9a359e03dad0":[1,0,0,336,7],
+"classvrv_1_1_reset_horizontal_alignment_functor.html#a504f28910b7edcea21d60f2ca9a179e7":[1,0,0,336,12],
 "classvrv_1_1_reset_horizontal_alignment_functor.html#a590388b38c0b36668b88ad1e7001a0aa":[1,0,0,336,19],
 "classvrv_1_1_reset_horizontal_alignment_functor.html#a60dcdb850f3136eb7d2e9878746a67be":[1,0,0,336,2],
 "classvrv_1_1_reset_horizontal_alignment_functor.html#a7d7935341542c6151a760e28042853eb":[1,0,0,336,17],
@@ -243,11 +249,5 @@ var NAVTREEINDEX23 =
 "classvrv_1_1_score_def_optimize_functor.html":[1,0,0,349],
 "classvrv_1_1_score_def_optimize_functor.html#a348f90179a1c4f53e3dfa6dca5adfcee":[1,0,0,349,4],
 "classvrv_1_1_score_def_optimize_functor.html#a39ef96cae81b1ed448abf3fa6b997516":[1,0,0,349,3],
-"classvrv_1_1_score_def_optimize_functor.html#a4f9eca070e64a9e28eec86317c1f7725":[1,0,0,349,7],
-"classvrv_1_1_score_def_optimize_functor.html#a5c45eee9cc4a2e5fb9865c851caf63ae":[1,0,0,349,1],
-"classvrv_1_1_score_def_optimize_functor.html#a6781d82c5f9be22a3f2cc3c078017bc8":[1,0,0,349,2],
-"classvrv_1_1_score_def_optimize_functor.html#a84a98d3dfc5c590b9f5aa8c4a1af7b13":[1,0,0,349,6],
-"classvrv_1_1_score_def_optimize_functor.html#a97c7c75787ccabb43d87689bd802a14d":[1,0,0,349,5],
-"classvrv_1_1_score_def_optimize_functor.html#af071203531946506dd05ef29c6fa0184":[1,0,0,349,0],
-"classvrv_1_1_score_def_optimize_functor.html#aff649d8335311e78c4d2ece424a1b40d":[1,0,0,349,8]
+"classvrv_1_1_score_def_optimize_functor.html#a4f9eca070e64a9e28eec86317c1f7725":[1,0,0,349,7]
 };
