@@ -1,7 +1,7 @@
 var searchData=
 [
   ['edit_279',['Edit',['../classvrv_1_1_toolkit.html#a25adbe86763cca1c51603b9e4c4831f3',1,'vrv::Toolkit']]],
-  ['editinfo_280',['EditInfo',['../classvrv_1_1_editor_toolkit.html#a1be064ecb6ffea1b27712648a19e1312',1,'vrv::EditorToolkit::EditInfo()'],['../classvrv_1_1_editor_toolkit_c_m_n.html#a8cfefe067438281e92d6e4a3fe92b851',1,'vrv::EditorToolkitCMN::EditInfo()'],['../classvrv_1_1_editor_toolkit_neume.html#a73a7c47fe8d5420da6467592ece61e55',1,'vrv::EditorToolkitNeume::EditInfo()'],['../classvrv_1_1_toolkit.html#a369f22c61679d97bdd05c0689d6f0a44',1,'vrv::Toolkit::EditInfo()']]],
+  ['editinfo_280',['EditInfo',['../classvrv_1_1_toolkit.html#a369f22c61679d97bdd05c0689d6f0a44',1,'vrv::Toolkit::EditInfo()'],['../classvrv_1_1_editor_toolkit_neume.html#a73a7c47fe8d5420da6467592ece61e55',1,'vrv::EditorToolkitNeume::EditInfo()'],['../classvrv_1_1_editor_toolkit_c_m_n.html#a8cfefe067438281e92d6e4a3fe92b851',1,'vrv::EditorToolkitCMN::EditInfo()'],['../classvrv_1_1_editor_toolkit.html#a1be064ecb6ffea1b27712648a19e1312',1,'vrv::EditorToolkit::EditInfo()']]],
   ['editorialelement_281',['EditorialElement',['../classvrv_1_1_editorial_element.html',1,'vrv']]],
   ['editortoolkit_282',['EditorToolkit',['../classvrv_1_1_editor_toolkit.html',1,'vrv']]],
   ['editortoolkitcmn_283',['EditorToolkitCMN',['../classvrv_1_1_editor_toolkit_c_m_n.html',1,'vrv']]],

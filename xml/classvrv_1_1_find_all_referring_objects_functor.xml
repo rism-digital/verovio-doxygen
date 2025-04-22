@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classvrv_1_1_find_all_referring_objects_functor" kind="class" language="C++" prot="public">
     <compoundname>vrv::FindAllReferringObjectsFunctor</compoundname>
-    <basecompoundref refid="classvrv_1_1_functor" prot="public" virt="non-virtual">vrv::Functor</basecompoundref>
+    <basecompoundref refid="classvrv_1_1_const_functor" prot="public" virt="non-virtual">vrv::ConstFunctor</basecompoundref>
     <includes refid="findfunctor_8h" local="no">findfunctor.h</includes>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors</header>
@@ -42,14 +42,14 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classvrv_1_1_find_all_referring_objects_functor_1a06546b4280306d3d8c64815a564e05eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_find_all_referring_objects_functor_1a98e9dc5db51ec8b9e76ca35ed8666549" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
         <definition>FunctorCode vrv::FindAllReferringObjectsFunctor::VisitObject</definition>
-        <argsstring>(Object *object) override</argsstring>
+        <argsstring>(const Object *object) override</argsstring>
         <name>VisitObject</name>
-        <reimplements refid="classvrv_1_1_functor_interface_1a3b14a49e5074299188fa3113eff49c02">VisitObject</reimplements>
+        <reimplements refid="classvrv_1_1_const_functor_interface_1a0c9458567ecf7524a6213e6601c016fb">VisitObject</reimplements>
         <param>
-          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
           <declname>object</declname>
         </param>
         <briefdescription>
@@ -116,22 +116,22 @@
         <label>vrv::FunctorBase</label>
         <link refid="classvrv_1_1_functor_base"/>
       </node>
+      <node id="2">
+        <label>vrv::ConstFunctor</label>
+        <link refid="classvrv_1_1_const_functor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="4">
-        <label>vrv::FunctorInterface</label>
-        <link refid="classvrv_1_1_functor_interface"/>
+        <label>vrv::ConstFunctorInterface</label>
+        <link refid="classvrv_1_1_const_functor_interface"/>
       </node>
       <node id="1">
         <label>vrv::FindAllReferringObjectsFunctor</label>
         <link refid="classvrv_1_1_find_all_referring_objects_functor"/>
         <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>vrv::Functor</label>
-        <link refid="classvrv_1_1_functor"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
@@ -140,9 +140,17 @@
         <label>vrv::FunctorBase</label>
         <link refid="classvrv_1_1_functor_base"/>
       </node>
+      <node id="2">
+        <label>vrv::ConstFunctor</label>
+        <link refid="classvrv_1_1_const_functor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="4">
-        <label>vrv::FunctorInterface</label>
-        <link refid="classvrv_1_1_functor_interface"/>
+        <label>vrv::ConstFunctorInterface</label>
+        <link refid="classvrv_1_1_const_functor_interface"/>
       </node>
       <node id="1">
         <label>vrv::FindAllReferringObjectsFunctor</label>
@@ -150,21 +158,13 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2">
-        <label>vrv::Functor</label>
-        <link refid="classvrv_1_1_functor"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-      </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/findfunctor.h" line="458" column="52" bodyfile="/home/runner/work/verovio/verovio/include/vrv/findfunctor.h" bodystart="458" bodyend="491"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/findfunctor.h" line="458" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/findfunctor.h" bodystart="458" bodyend="491"/>
     <listofallmembers>
+      <member refid="classvrv_1_1_const_functor_1aaf04971778c20255ca3f215065ad537d" prot="public" virt="non-virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>ConstFunctor</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aeb2d49c2d44c4f028f82bbf69e2ee52f" prot="public" virt="non-virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>ConstFunctorInterface</name></member>
       <member refid="classvrv_1_1_find_all_referring_objects_functor_1a9fd81284274509152313ad983c81231c" prot="public" virt="non-virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>FindAllReferringObjectsFunctor</name></member>
-      <member refid="classvrv_1_1_functor_1a49b8e700f8f3b3b232d6a7e558438908" prot="public" virt="non-virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>Functor</name></member>
       <member refid="classvrv_1_1_functor_base_1a45d9ca7642da874e18b1d20a086fa015" prot="public" virt="non-virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>FunctorBase</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a7a1d67dea0f876f2a8dc736204ec6603" prot="public" virt="non-virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>FunctorInterface</name></member>
       <member refid="classvrv_1_1_functor_base_1a7ed4d14dc996ffe7a86231566fd9e06b" prot="public" virt="non-virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>GetCode</name></member>
       <member refid="classvrv_1_1_functor_base_1a1dc2bd77ebadb86695b34484c72d3d6a" prot="public" virt="non-virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>GetDirection</name></member>
       <member refid="classvrv_1_1_functor_base_1abd2a529c6eb36f4fe29ef14792766433" prot="public" virt="non-virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>GetFilters</name></member>
@@ -177,280 +177,280 @@
       <member refid="classvrv_1_1_functor_base_1a459bb10918c10c82573d644054c18d13" prot="public" virt="non-virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>SetFilters</name></member>
       <member refid="classvrv_1_1_functor_base_1a8ee0a7ab511cfc7e2ea1367212b42617" prot="public" virt="non-virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>SetVisibleOnly</name></member>
       <member refid="classvrv_1_1_functor_base_1ad3c83180489aa76f1afb5b5e6fa0c52e" prot="public" virt="non-virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisibleOnly</name></member>
-      <member refid="classvrv_1_1_functor_interface_1acd94de717a9eb6601de2b1c48878ac36" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitAccid</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a2b8ba86b8d2a1b07158b8359f1ec8daf" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitAccidEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aedf6f337aef45e7dc154dfefc8eb0dbb" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitAlignment</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a6ffcf425738818e48b3c4f112f12f814" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitAlignmentEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ad20846625abf73b7435e6d7736698a20" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitAlignmentReference</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aa0edc48780f5c95422ae235249fe88e5" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitAlignmentReferenceEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a0431b3f932cc81587df1ceef43ed6c81" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitAnchoredText</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aa8171d85bfefe7c571e26343efa23832" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitAnchoredTextEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a05d991c700a96049a707d7a4572ce05b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitArpeg</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a2e8293d68c1a95c2921d72143d9c0928" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitArpegEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a63ccd3b651e6ce170461a4cde55d6532" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitArtic</name></member>
-      <member refid="classvrv_1_1_functor_interface_1af5c7fd0a29068e61cac054cdd18a4c52" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitArticEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1af203e26e8d98fe25d0d2bf9420fbf773" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBarLine</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a3e97006ab41b849392f66fb937c8f78f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBarLineEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a45460de589c78d399391734a0ae5003f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBeam</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ae281c2c5e8c3b1737edfe5cc4dbb436c" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBeamEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a820a604bf48d79dcd285c2b741068a96" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBeamSpan</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a8e31b58038c1264aace04ac3d7f0c9f8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBeamSpanEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aaad5dde9795ce7988037722dfc6305db" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBeatRpt</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a13045fdc3b98333b78d6b73dd693e94f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBeatRptEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a1d0972f0b5b675f404b1870719eeca56" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBracketSpan</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a6cab7d69c5bd455df2a67160e2654145" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBracketSpanEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a7a0b1f39945325fe3113e27ba3036160" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBreath</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a5d6810c878d22584089d499cb5d0c596" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBreathEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a0686f31f5de40a983acee83b34359827" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBTrem</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ab8dbc838635bb5b01992c37e21b6a221" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBTremEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1af40e9bd73b730764c996cced5006bd77" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitCaesura</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a4a3a9226a1baa26c343c13e317a7e593" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitCaesuraEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a09eff356bfe48a2e5100e740afcb84f5" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitChord</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a8c2540beb58ecbf288988e9d1dc95705" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitChordEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a0d596b18c631669e4c80536ec7e03850" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitClef</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a1085aee0cc0caf087305fd525e0f90a8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitClefEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a7f6d61043df5f3cd7abfd04c42a098e0" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitControlElement</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a0b4d9831e4c61843150080c73fc39059" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitControlElementEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a703ff0657b6df4c4a5b0af81e9d39977" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitCourse</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a36acf357572b27faaf3de26444c7535b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitCourseEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1adf01a48311ddad6f04a05abafa9c178c" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitCpMark</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a88fa276aa743fe00b90e46d988f3bf43" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitCpMarkEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a3ee8d2e9b91e0aa782c4eb4e8abc5915" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitCustos</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a1108fbc1c54d6c49966f7f41cc317043" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitCustosEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a251e394d35698c84e0f919afff7775f1" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDir</name></member>
-      <member refid="classvrv_1_1_functor_interface_1add3c8f8114c438000f92d35d8b2157b2" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDirEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a40e6efc638fc8a856e828f204592bdd6" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDiv</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ae1bbff78d3348ca2a306d0760e54264c" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDivEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aa8cd3c3ae1254acf5442bb847ce5121c" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDoc</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a85b78aa9ca924801aede94a252cb29ef" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDocEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ad1c50be58a316e81b789da93f988821d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDot</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aa4e29da65536de434a6faf87a2ffd9ee" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDotEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aae03807b7b298d177363bd10f5862a67" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDots</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a635ba26d6a09fc9a2a3efc855957441a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDotsEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a165473b6fd94a3e5913e20aa458ee30a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDynam</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ae72b4533d06af892da2ebbf5ef9aebe9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDynamEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1af848f3fd5cbced83d677a3e982e9136a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitEditorialElement</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aeda847651cfb0ceb29957630d68b8be8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitEditorialElementEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ac440d311b686e422e8f439b707e433ef" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitEnding</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a97a29ac45bc340b9e05cb8f2d485ca60" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitEndingEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ad1e750e3cb89fb6c38b9e753b9bec881" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitExpansion</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ad68d81a92b119f1e5a79c180496dd58d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitExpansionEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1af2af1f9e3b5aeaaa274348e367d26faa" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitF</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a09f62d86ba97f060b801a32578232df9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFacsimile</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aebfd23c89df0e1e30e6d68900ddce0fb" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFacsimileEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a44258c8396c4f8c91590242c07f6c004" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFb</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a8efcd6738c8368d05791c8a93961b53e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFbEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a868f32ef362e497225f6835cb7bee40d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a6708f85d490d3125df3f89c1e7451bea" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFermata</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a8f4b855a4f5731f9c9266088297f06c9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFermataEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aa24ff03de27b226122c79945744bbcc0" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFig</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a39ef27ccfb66eedb8780a782e6705ea4" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFigEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a5ce32ee35de9a5c15bb4bcd3568765c8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFing</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a899cec2737ed1cc921b68def5f9882b6" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFingEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a34b18180d603a21c2d78bd7dc37d7be9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFlag</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a497d061e90491344f1235869bf8c3d1f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFlagEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a29326e5060990bc199901b4e826ff097" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFloatingObject</name></member>
-      <member refid="classvrv_1_1_functor_interface_1afdf3fdaed8d9379d5c921f4eb159396f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFloatingObjectEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1acbf6e68c3c4dce3e6666297d01f656fc" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFTrem</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a62a9dce7bee788597225dded117d6d76" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFTremEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a774b230bf9cf9d943741a6366923e069" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGenericLayerElement</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a8cbc2f8a88c7fb0f3fd0d2bd2d6850c7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGenericLayerElementEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ad48230cd74615cb59fd558d7855b01b6" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGliss</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a318d073078c914bfe9c5dcded002137a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGlissEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a9e6b7d2689dd93d29e25f3433daab7f5" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGraceAligner</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a9e5315a678a73d062353a41aa07872e3" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGraceAlignerEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a889e71216860ffb25c3a9d3e5ec36238" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGraceGrp</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aeb49c54fbdd5d33d708d16c2514db295" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGraceGrpEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ac464655ee59ecde84548050debe59422" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGraphic</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a67ff4fe76f65a5ee6e4644a1669b8662" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGraphicEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a4751efd54ccce186afce84aee8f20d25" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGrpSym</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a5196c5ec425675e09ba57911b526a113" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGrpSymEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aa0dcdd0f78061cf4f3973ec489be9438" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitHairpin</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a386c74980b4b45d589b9351da2479c62" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitHairpinEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aa39a4b0f7b76fe758e9709155254e22f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitHalfmRpt</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ae5b80008fc0b9a86b11b457c716b47fe" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitHalfmRptEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a80c326963c94146f569ff0c1cc1bb918" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitHarm</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a18ad8275cb144be73376fb721984dadc" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitHarmEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a1d2f0a778e7671c45f7b4ffd3afe590c" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitHorizontalAligner</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a9bd468879d91b7cbffe235660520bbbd" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitHorizontalAlignerEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aafc5123a1779ee2f6a6a7aa182856b72" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitInstrDef</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ab23d01b54bc70f48eab8b0897af34953" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitInstrDefEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a338760403bc9032da2209adac222482d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitKeyAccid</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a8a61f7e730ddbd334aa45a920ca589b2" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitKeyAccidEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a7eb79657d4fb97cd07d7565eb0b5894e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitKeySig</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ad3ef7b72830ad60e64afa3fbdccdb86a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitKeySigEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a935122e7e24c3f0d2641d92e9c4b33b9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLabel</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aafc28de25c8a847a121ea609441263fd" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLabelAbbr</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aeeb6491e593dde914052e9fc89bcfe7d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLabelAbbrEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a33c284f0e40f434119ee97c4619620e7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLabelEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a240df75dc3b51ecbfad569527491677d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLayer</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a6306634d2302fa1fada8d2b5b20efb3a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLayerDef</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a5e08926cfa8f6f5c1e0e744469b9ff7d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLayerDefEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a62feb09af88b2ce76491949369667b01" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLayerElement</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ace6519788b5748b1ec5fe0ee49156cf9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLayerElementEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a0660d117aaace9e427b84613016a8311" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLayerEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a90355586e234561d5800e34389897fbc" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLb</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a50e95b0e8201816fdc589321e50fe4ab" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLbEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ac1912985bcf72fe49065ef0c5de6e2bd" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLigature</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a30e5038d90ff64059ac6117a9adbc5e1" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLigatureEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a2208caac00cce12cbacde245c0eea307" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLv</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a333d1a122936903b83dbfd13e93bbb66" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLvEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a5799d80a32974ef7508128272124f09e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMdiv</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a97c0f056bf7a58fb0fa0b448c33992b8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMdivEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ad128b5777dd03b5f74206c31ddd5e464" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMeasure</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ab29e108ec8ccfac5798f8411559ccf7a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMeasureAligner</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ac3b027742e0c46243eb4b7cfe1dd50ab" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMeasureAlignerEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ac0574ac1eed98cd6f39621233ff0bcee" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMeasureEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ad0cb80221b52c0f84f6f9b113fe3f1f9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMensur</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ad5274bc1fa7d42487447b59aae7eaab0" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMensurEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a7910c2579969a2a82b079568fcdeed9a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMeterSig</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a7ab1d8966fc01b8ef41950d23e424808" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMeterSigEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a157ff516fb202e89f1ae5de2daf94df6" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMeterSigGrp</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a9d13e67a0aa85c6ddc06f2cba467d63e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMeterSigGrpEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a014efa04c242f7e379e088d71d6f0ef1" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMNum</name></member>
-      <member refid="classvrv_1_1_functor_interface_1af73b4c2de5e1e4dd94841b94c41d3c40" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMNumEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a975cdb2b361f799561703faa264bf85e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMordent</name></member>
-      <member refid="classvrv_1_1_functor_interface_1acd1e084aa8a772fcb046e6d307327d9c" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMordentEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a0aba875d642adc40351be40cbead2276" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMRest</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a843fe689ebbf4e69b5ec3e1f9f2023c6" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMRestEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aa8d85a97bde0093688e450bec78ffce2" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMRpt</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a4534e54151173fa1f9d5926d6a09cf7f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMRpt2</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a7cfb5717d6dae31a6bc82ac5b33feaf1" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMRpt2End</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a3d8f47ad229b1c08fc2da1d50c6b5108" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMRptEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a43b1d9b5fc4ae203c36238f3a22751b8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMSpace</name></member>
-      <member refid="classvrv_1_1_functor_interface_1afd5575d435dd1aee64a36ed2770d505d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMSpaceEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a697570c88331e860b55118264075cbd7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMultiRest</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a9829d8bb06762343426ee53114f211c7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMultiRestEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a7a17d75371700b6bceee89a0eb928c68" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMultiRpt</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a21d9be0c0e97dcf7c57dd5b9cce81bf8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMultiRptEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ad0be8e13d7067057827b3e8b61e0d4db" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitNc</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a076556e9ac7c1b827c9c777361975df3" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitNcEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a69eb2539c871230b200af14358f389e6" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitNeume</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a9ed1c48afbd325946b5db734bc4b7496" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitNeumeEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a22019f92975cad82fa065d810767f1bf" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitNote</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aa752d21a093eb455edf410b3f79cfc43" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitNoteEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a49d8b56aa44f0b48133cc10f03f01100" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitNum</name></member>
-      <member refid="classvrv_1_1_functor_interface_1abf5c035008be55f6a8612db1b4ac6685" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitNumEnd</name></member>
-      <member refid="classvrv_1_1_find_all_referring_objects_functor_1a06546b4280306d3d8c64815a564e05eb" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitObject</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a9aa4b2a8c4f77b3d925f452ef65ed23f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitObjectEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a32a5cfcd1751b12da8658399307549de" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitOctave</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a9a00da0e354b4af8578a50f6ad9c8a49" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitOctaveEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a3e7b57ce1fdf719d29955dd927caaa16" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitOrnam</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a336cd4895cd942a5950060fe8df4f0e9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitOrnamEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a529a4703400de6da0179cea642455ba8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPage</name></member>
-      <member refid="classvrv_1_1_functor_interface_1afc377045d87459311f00493591fbcdbb" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPageElement</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a33b0435b2ff16bb220495fc01f34e417" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPageElementEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a86c038f7018ffd42de345ad24102bddb" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPageEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1adbea69c67ca912bcb817bab17ba4a1a0" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPageMilestone</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a4556280f79249caa3446ca8337d6c87b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPageMilestoneEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1afe60604c91064a41ac2d0651044821dc" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPages</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a2e063dd960cb5beea454430655dd607b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPagesEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a9c7997e06ef154aecd1bf73560501d02" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPb</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ab19b3b8af36314ecb73cb249ef8083cd" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPbEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a32a209470afc9c036a3c004e669ff274" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPedal</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a2bb1422481d7d6f9a1f5435f74f481ee" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPedalEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a1d4417b9c5cbf5d05793b5b4e6a03401" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPgFoot</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a55d5ec274dd78799a49c0fe861213a66" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPgFootEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1afe9d03cd0794504830ebbedd54dc5435" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPgHead</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a1cdd5853faf10bcb5f983911272fb253" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPgHeadEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ada7eb0d3af2207838e99fe273da53d63" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPhrase</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ade778f7530146d86bac890f40379b6a9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPhraseEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a33c5b276ce9d40bbc57c56f29ea62ae9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPitchInflection</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a072d53ccf699b0b412a4bfc0357957b7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPitchInflectionEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a9fbb0a51fbb8e63d03e7c6e6e661cf2b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPlica</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a1819ba42a3d4c4e79a790c3a92b3c7dc" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPlicaEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ae348fe9af74231d2f51124ac6c3379d7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitProport</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a4d0322f66f1ca8df7b2739df70269f44" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitProportEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a69325c4765d2bc960044060d2bde5e7a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitReh</name></member>
-      <member refid="classvrv_1_1_functor_interface_1afd64538d1c3b5e6fa024f96885a50bbc" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRehEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ae446163093eff9328e58efba0928feef" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRend</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a96e6d7dc5d87546840465e4f35aff538" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRendEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ab1483e68d9a166baf99ee223b626fd28" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRepeatMark</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a345d0af0cb5bed4ecdb48fb3b275187d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRepeatMarkEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a5e837d9ee86af3e1e9c6f282d4a817dd" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRest</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a841253cdb1a935b6022d6107276c31dd" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRestEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ab16359a5119aec301206479dda89d8fc" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRunningElement</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aed6a6975be2741f0071cc53cda77f0db" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRunningElementEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1af55a42c30bd3a45228f6777ebd0143a8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSb</name></member>
-      <member refid="classvrv_1_1_functor_interface_1abeb10c937514cfcae8c040a0060162c9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSbEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1add596524e106d0aad0afb99f322eaea7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitScore</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a8565999b5d47469eac6281864c70766d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitScoreDef</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a616302f40042a408f4e2131d5190317a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitScoreDefElement</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aa91f866e66afacb77880f0c43042e90f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitScoreDefElementEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a48ca2aea98cebc411414e197a11d2192" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitScoreDefEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a6f661646e07355884c24db1a5cadfb91" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitScoreEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aef52cba275e4f753832b4b70929349d8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSection</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a80b4b1d9425101a7cab9b1cb42194282" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSectionEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a0beb9ee831e1db91a64bcc1aaf5fbbd3" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSlur</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a3ba28020e391d0210e79fd7f70b00d42" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSlurEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1adb0592d1ef4bedc423e2535af1445db5" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSpace</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a6fa843d37593dbbd6b21b8e1093f5f81" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSpaceEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a1956d3f16097d400f7f042badda376a2" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStaff</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a5c5bb00d27fa5a77a4d1c4cc73307f4e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStaffAlignment</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a6e96bd107bfd3b335547e679a031d73f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStaffAlignmentEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a33cb7a096ef56e953ce3628834cbe525" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStaffDef</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a7f81bc1bcfbc36be4465eec25f81c340" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStaffDefEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a4b80ed3481267850344d5fde93995521" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStaffEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a215c0a2be993402ee52255e3e9f21334" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStaffGrp</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a53ca542501df09dc9dd198acd9283c90" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStaffGrpEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ae8097a06ad4934ddb5e8fe76fcf32c92" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStem</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a579103751a55f7b3f8f8c014e0f47862" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStemEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a3714296e17712615dda71ef72db3c20f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSurface</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a6496e4cfa067898010e51ca752322e88" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSurfaceEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ab2969d0f871588b0afcece2d8bd8031d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSvg</name></member>
-      <member refid="classvrv_1_1_functor_interface_1afff0debeb6d90c0dd1ccf113b2cf21be" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSvgEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1adf1018282bd3813e5d5ec839edcec9da" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSyl</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ae745fc695026c18245f5d7a0b495d4c3" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSylEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aa72de825b8c454b1043a6bdc58d5455b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSyllable</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a4de423f99733781375f7d806fa03313c" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSyllableEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a1baf189060978b9052c3a1d5fb2e3868" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSymbol</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ad500015f460dd7995dfbf5dfcab0fac0" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSymbolEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aef04642999f8e21363c9501b4e2bce60" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSystem</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a5ac1e886c61bba8ed7bde9d14196dc91" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSystemAligner</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a311b8fd5752cf1c650d609fe9ea9bdf6" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSystemAlignerEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ad1f5a167dc9dba78bfff1ce141dc7716" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSystemElement</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aa85b8c8c0d8014aee26f288480863ba5" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSystemElementEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ab50b0d663077c3ea459f5ba429283ce4" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSystemEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a283168fca7f5d8fbaa74d0639c41077f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSystemMilestone</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aac0e5fe1b5ae2a124d80c68888f5c498" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSystemMilestoneEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1afea367cb5ead77c78f0e91e1493c5313" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTabDurSym</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a91708be85ece13ccb3ca98e19d4695db" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTabDurSymEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a0d26473e0acb9cf45c6a762bb75d7c58" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTabGrp</name></member>
-      <member refid="classvrv_1_1_functor_interface_1abd1918b1b9baa613b4607af7ec97d8c8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTabGrpEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a3e92a8fa429962ab94bdca9541d27956" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTempo</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a7ff0ca749a94af0b6d4cf586c06f76bb" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTempoEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ac68affc35dd7fac744741e2dc017ba1b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitText</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a517e5685bbc2ff04374e2eb554b50fcb" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTextElement</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a3f3116ef7b7bacd58ce11cffd21935fc" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTextElementEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ad77ff94758b636788055f09b3564bfee" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTextEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a7d11f395908eaa844aeb76e92e820315" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTextLayoutElement</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a582f030abd57ecdba444766e9e02481b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTextLayoutElementEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1abc0827793a1841212a27f73776d11ef0" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTie</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a0efd8e0bc7b05c792433e04343d050ac" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTieEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a35fb19aca547f9bd4232de5e0b7481d5" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTimestamp</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a0bb80801ba533b4d7bf1d34e04305873" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTimestampAligner</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a25b84db7226ef05edb38fc3ea9e72ee4" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTimestampAlignerEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ac8dcadb46d21d9b93689fdd7d81379e4" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTimestampEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a6338485c184d6019bbb0fe4d17dac466" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTrill</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ad124de46bb5e0e1816140199ff470071" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTrillEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a763718110dd5c580c4ae96bd60db231d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTuning</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a16e04f165434d663b576a9c64f56e1d1" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTuningEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a06152fad68f26b1c316513241756b60f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTuplet</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a3805c9e553ebbc1ef49fc184afc6bde4" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTupletBracket</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a5ec5d9bf5249265839ee89b99c4d0835" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTupletBracketEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a2aaf3310698f614f038a1de7504a9f50" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTupletEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a466f429c50b926107dbddc7b0aa898c8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTupletNum</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ad2c6be5140c20ad4adf3bb0ea7ba7205" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTupletNumEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a5d984aa9609a44bbf7f7fa4ccbc04a19" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTurn</name></member>
-      <member refid="classvrv_1_1_functor_interface_1ae66ddbaceaee00e34fdaaaee7c8386e7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTurnEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1af03e9bd745c37f4f9dee83f92183e081" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitVerse</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a20218b9d70b35e12dc46eda922190863" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitVerseEnd</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a95206f69130557f867613f10d0da85d7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitZone</name></member>
-      <member refid="classvrv_1_1_functor_interface_1a34bbf4e4364c591a252de06782489127" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitZoneEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ae3067ecfd56c04ea3da593119e8e76d2" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitAccid</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a32b8c4c94b36dd613590e8062717a54e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitAccidEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ae81e3a5c217ccdb0b27d7e057e344f61" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitAlignment</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aaf9aeedf05cc829082033c359ce13ad4" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitAlignmentEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ae8b6f1956246fdfae975792246380290" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitAlignmentReference</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a744a21746f280f59c18311930d64d508" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitAlignmentReferenceEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a8720f97c9528bcad824219ab05aac6ea" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitAnchoredText</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ae46727e03af8596d2d261b3c434670b1" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitAnchoredTextEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ace66635bafd934a25bc3614c3d958d30" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitArpeg</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a06cd945bab0ce5c7fb0880ef7daab5cc" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitArpegEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ab8210047d0f8764b2a93f32f0e3713f4" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitArtic</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a684ebbd14f041d51474ffb7c006ce05b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitArticEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ade181cbf1e8ebb9c39dd71b882e84f9e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBarLine</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a141a497bbd764deb8360ed1ada9b50ec" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBarLineEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a166bec3f045b61f68d8a35b9010e5cee" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBeam</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a38fc073354d6f565bf8ab74b833fbb5c" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBeamEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1af38cc013e44e641a232621ff80732821" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBeamSpan</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a9ff4ee4a61e5d35396207379cf843587" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBeamSpanEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a5cbb5e17ac9ceb544e3060cd05f261ac" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBeatRpt</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a5d6e28bf5cda49b922b9040d80e8b164" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBeatRptEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a9b439a77506bfe4fa567a6ecd5999a96" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBracketSpan</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aca5c81ca7f04007186c055ad71a7b868" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBracketSpanEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a588290f1be72b7bb618f189fa0cdbe9f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBreath</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a61379b67b78d0d56685ba830d30d8f07" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBreathEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a120bebbb9caadb709b723998b21a6fa7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBTrem</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1af9dd18d5500cb85f08c9b1122cc1c72b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitBTremEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ae31bd46fe3cd8208fa391dbde286d3d0" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitCaesura</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a08cd8bb1770fc190e16f1107925dbb7d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitCaesuraEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a9996adc1b14f8459d4d9938839db36fa" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitChord</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a2aba5d07b3021c78f29ac770794cfc57" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitChordEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a364065e605036365b0a72433c887439b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitClef</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ac97820a3ef6605ba59c4770dd303dc4a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitClefEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1acd2613c262cc243a2fba7da6136c4286" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitControlElement</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a8e159ed01556f71b99a823bbf55fdb86" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitControlElementEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aa5fa26dec193e0728675576c1dc7deeb" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitCourse</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aeb85fe6fb29db2d52624626fc9a16308" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitCourseEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ad339c95690a42214a65bcdbfb0d5837a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitCpMark</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1afb050743e67f2eb5f47798b1e5bffad6" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitCpMarkEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1adcf36e209d094a327e53eb1abfc9fe6b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitCustos</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1af9f8152029d35a0ca53d7f4e0622e75e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitCustosEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a3c271ad15a33c19448b53c7142887db5" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDir</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a39dd6d60fda043cd72ac00574e8d0919" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDirEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ade7a88bf456a90da7cf5e000f1497790" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDiv</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a60dadea7cb1357861a58da96d38b45af" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDivEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ac3f66ae322e26b7ac3b5afac80c4b634" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDoc</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a223cc6e30cdf11d8fa3b947b523a1652" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDocEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a76c2116241ad6b9f66f01c6f5cd29b11" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDot</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a2a1b283bff4b3dbe8e265b74b27aa148" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDotEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a926016f7f6d8d537dee90c880ba08b3e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDots</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ada74dc5bccadcf7701154fae6324c439" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDotsEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a6c1a875bf731bed7b1b0aaa79bd50f39" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDynam</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1af65bb0431cbc0d875f597653bc28ea15" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitDynamEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a63088f075446f0da0cb876d3e74dc415" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitEditorialElement</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a5c22e33e24bbc6a168622a4a67c77903" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitEditorialElementEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a0f89d7f60cd87b1ce9ef2529ac2a8a8c" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitEnding</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a21574819b9136794e168ffdad5c371a4" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitEndingEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a761c2f3c3d3b2d0aee0765deb8bea3fe" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitExpansion</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a71133611a4697f27e15d4e21823b850f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitExpansionEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a20c1c1423fb310765e12b5f78c427e6b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitF</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1afbcae46ebcdf99655f6a6bc76a50b331" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFacsimile</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1abb2f8ca0043c91b87f19955589d7aad6" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFacsimileEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ad16380c9557a2d2b020dbf1b7d953f42" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFb</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1af650348fb2f736711ad3aca72fe61817" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFbEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a9315909887c69a9b609faeed621c8621" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a5242e50d56d578983655366689af8d7c" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFermata</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1abede202bce5faf5d9e25dde44f15dcb0" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFermataEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a9d2bfd481c64a837ff13b4f5a1d9d629" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFig</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a5fdb9b4921ac65d7dfee1e465d89b4f6" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFigEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a3860d0af1b1677ad23cbce0a7eccebdf" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFing</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a9b72dff36d91db870179a6bc49dc925e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFingEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a8433e76012215087863040369ad80698" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFlag</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a098890497f17291a39598e5e2b561fd9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFlagEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a5854402ebb56fc6053577512c2e02842" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFloatingObject</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a8b1bdc81100822903995c7ed10464cb0" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFloatingObjectEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aa759cb0049f658013fb28959fc64487f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFTrem</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a70e3f7bd2358e564f8dba3ed97ee1020" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitFTremEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ae1e8155fd0491a12dfc0ae005b6c8097" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGenericLayerElement</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a9745ae1f736fab317628f7491424bb6b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGenericLayerElementEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a2a83b2d61dee1a23d20d1bf2cab05e6d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGliss</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a533ab0a59b565941c72369a6b19c6513" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGlissEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a40bf60803d396752a5b3e2abf346c313" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGraceAligner</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a94b240161f872862b889c787b10db645" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGraceAlignerEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a320a1a8debf4912faa9b6cc4ee45bf84" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGraceGrp</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a2bff3adb24f035a1a18ca40a1fd80d3a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGraceGrpEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ad80d58fa691371838c0718731654de81" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGraphic</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a44dfcd9af74c9d1294c5cdb97842d2f7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGraphicEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a575fa51a0323599e299225cdc80c99c8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGrpSym</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a476d189dac7dabc59921cf73e5c61a4b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitGrpSymEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a88756e9d3302eca55d45e070910cf275" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitHairpin</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1add90ed629aa09cdf104b497bc805f398" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitHairpinEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a86cfcc0df913d9d494904b67493af0d8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitHalfmRpt</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a2cfa6b4b8955cfd27d49d0220ea536e5" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitHalfmRptEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aa4c449eba7a88489fe6954e5a1011053" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitHarm</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a46ab4266a0c1bafa8ff46a48b6297992" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitHarmEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a42e2c596429b9b8ef84a578420aaf2a7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitHorizontalAligner</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a19ad3cb686489fc133169843bf69b0ab" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitHorizontalAlignerEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a15208152eb0405e88e072b7b2abbe232" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitInstrDef</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1acae83354702aea800786d410eed5c7dd" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitInstrDefEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1afcb119c7b3337cf2f0c11eefe0b2cea7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitKeyAccid</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a9e14ae7fa4bcbffa1eefb2023ae07ebd" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitKeyAccidEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a3bbfdacd7735209290a511246843294c" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitKeySig</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ad551369138ec66f78cb0487aebf80f49" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitKeySigEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a197bafab9f933b53aa5c4e286ef655c7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLabel</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aff97a1fd7937050c36c94985d290bdd7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLabelAbbr</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a22932b197be7435b14fbe9ea5ece3ab0" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLabelAbbrEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aab525d7cea84cd017151adb10a959d59" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLabelEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a268ff4222edc04fa36947c3dde571be0" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLayer</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aec3e52040954bbc35269eb5b7d2af984" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLayerDef</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a11fed7fc1e04d0376a0f4f817e61cd76" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLayerDefEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a6d0bfa9dfbfa28700194b85bf68691ea" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLayerElement</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ac2b1be5441054825826ce6299cd2a27e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLayerElementEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a8e0906a84f69313310837d10411c60bc" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLayerEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a288b3f9ae5a489d9b0e78229c0eecfa4" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLb</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aa65dd081baacc6228d1bedca6f63e2c5" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLbEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a8e275cf18f98f575425848fe2b36a787" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLigature</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a0fcdf8c8b7df473668a84a94ad00dd3a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLigatureEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ad2cbc0cce784822aacc7d9a9bebd4808" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLv</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ae5bed513b288c89b7a314d1b09c290f5" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitLvEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a1d6642a306eb37d44dc7542b4d78b8ed" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMdiv</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aa86d2bf4eed07c1a15345c11ea15c5b9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMdivEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a80ceef66fa08cfa71a1c3aa1a301dc55" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMeasure</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a324d4a8afd5651da743bafc6ecb9bc95" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMeasureAligner</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aec610d2c52095a9e18d5aa15de0a7f1c" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMeasureAlignerEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a0bef610370b12d0a7f680a31575cbc09" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMeasureEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ab68e8dba73b22dcf65ead6f7688b3ac9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMensur</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a642fdedb16e4e4e53fa941276c08c7dd" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMensurEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a9d21b26936f7b1a57b3fff11a0c3f076" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMeterSig</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ae76e7867db64c146f3b2fc277940844e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMeterSigEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a4d3eb61abcecc58af948db8255851006" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMeterSigGrp</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aa578ca0b3a5d75bbac67d0798456ad1d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMeterSigGrpEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a7d326f45174d07d7d932be30374c9c9a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMNum</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a52319a07c3ea7770e9eaed9fa48536bf" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMNumEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a5cc80d03ddc84609c95bacb454c5f192" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMordent</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a7a14b81e92c0d1e7ecdc855f2c9dfcaa" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMordentEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a1076e6fa1e930fa57a61c568ffdbc38d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMRest</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1afdeee4189f52f1827b5d22418e853768" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMRestEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a135e1e5b552c3e04cac9199e5a303049" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMRpt</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a5ca4dd8c7ccac50072802bc223e3f005" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMRpt2</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a8e9371cd3bdfaccd024e5b735a87e9c4" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMRpt2End</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a93d2b18cdd2443d0487194ed2710e7bb" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMRptEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ad77c7b397b1658e6c01f600c3bceaaea" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMSpace</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a443a4b6aa8fe958235f9efb2c6af9bdc" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMSpaceEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a23233889595ad9eff8d2b9004891bd57" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMultiRest</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a7456663ad5c0c46f37e05e795d6f01df" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMultiRestEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a5779b56528c3fd872c4e27361191111d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMultiRpt</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a63351f13ad1e2740193edf25f6c88d70" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitMultiRptEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a84b0dfe1a49b98bf6795aaa7afac8b90" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitNc</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ab84811fb74cc3f8addfdeb24bb5f7160" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitNcEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a38a6264701ef7c50bf86a4f92876f8ab" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitNeume</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a51dfe8133ed490b18266c2ad97552b84" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitNeumeEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a5ff9fa354f62e1851eac2fa19ee533d0" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitNote</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ac2dba08875368d708f5839f3d4d30560" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitNoteEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a2d97c1ebb114791362cda23ecc6fe8b7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitNum</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a38bcfe410168af0aaf442f18f16bcc23" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitNumEnd</name></member>
+      <member refid="classvrv_1_1_find_all_referring_objects_functor_1a98e9dc5db51ec8b9e76ca35ed8666549" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitObject</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aecf79c0d25a39f81efdd9bcbce5cde01" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitObjectEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a7ebbb6f67ecb96616b3abddbb97fe580" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitOctave</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ad40ab17849e99a4d5e8a6eba2762a47c" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitOctaveEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ac99ac7d97909f03231a752b197cb0c7f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitOrnam</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ae6ac0c291a1fd05d3fa70719745b0fb9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitOrnamEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a06e1395bdb81f8403df6ff4ceb1edf59" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPage</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ad19f0a6378e69da90b7a819069df8123" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPageElement</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ae4f6c7c3fc6899b78748032dfc511deb" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPageElementEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ad8942048d4694e0633f73e0856899a0e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPageEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a10a7e39b6988d28bfdf1094fbc97e559" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPageMilestone</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a16650ea6f0140d46785d6c3e9a88b1c0" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPageMilestoneEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1af0153504359a4d3205308a1ec815bc3e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPages</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a879476e04efabe5991a83e36bfebcf2b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPagesEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a4f8941ecb412f03789e44c7480a99840" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPb</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ab053a49bcb533c48b118ca0dda838519" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPbEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a841a895c6bd540c58f207373dd25fbdf" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPedal</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aeda5f956ed800d9e460b7ed97dcc6393" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPedalEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aa11403fa1ecf384084cfbc5f3d34bf2c" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPgFoot</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ad32a1df0202c628fff4ee7744f399b29" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPgFootEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a7b0951891d57e7199090ff5d95a3ff5a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPgHead</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a2544c160005c6f98f163f424e2f872de" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPgHeadEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aab0c8cd45115ff6afd462eba570351c0" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPhrase</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a2f52f341f07670f5d914317f114dff1c" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPhraseEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1adcfd934493a7df4da9b887347df29172" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPitchInflection</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ad3ae4f21b5d6de1fc322a9f87ce146ae" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPitchInflectionEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aebceae0b817dfeb06fc3f23b01ea78b5" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPlica</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a0f222f45f8c792f64f205b5f0e946098" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitPlicaEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1adf6a942257d18a241f791c49f111584b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitProport</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ae90a0885ae1b396f03afbacacffc1f87" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitProportEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a949982917662c4be6beca88e2d709e25" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitReh</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a6a84ae670da89c50a6b4b52f319e8677" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRehEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aaca403055c54d7c9379235a31997c5c7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRend</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aadd157e8d88f194468fcc5878ed9e4cf" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRendEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a1ce1557bb08d56aaea187a7b242dafe6" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRepeatMark</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1abcb05d164a38b46c30c5b3c0c3b71bdb" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRepeatMarkEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a516832bbed9c6042d9855f435c5c73a7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRest</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a9fe17eebdb04b9fe45c6f4657e79fc89" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRestEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1abaf2d30efa5fb615d37101c349127b06" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRunningElement</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a120bb63eebcb2ce622867cae509752aa" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitRunningElementEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a77c9133dedd5c4565467253e55903fa9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSb</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a23cbae4136212fc804565a0cff8843bb" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSbEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aed3e09e96a69d07b465c8772cd1a1d18" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitScore</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a888f185b391eae0111da5d77f5d1be65" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitScoreDef</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a004aa2f5bf187c96d6ea500df4da4273" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitScoreDefElement</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a848bd082daf2358b1e6c167a86cb1202" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitScoreDefElementEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a0d4479a23954a1c2ff50131d3c449a0f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitScoreDefEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a1d171d683e42f8b8d050c8c632ba0d04" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitScoreEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a15300015002621977bdf8c99b21d1724" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSection</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a500146aec3587317e3376a9e04fed8cf" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSectionEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a1e9837d7c9a8cc645fd1dde36a2a540a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSlur</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ae02322ece8521674633b424ac7b5e72a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSlurEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ab225a3fbc4fe9100c08da0a7d95ba01b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSpace</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a0e90e5264f0e0c364eb2908dde93d0e7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSpaceEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a1fb83c09082644089fc202a930850df5" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStaff</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ab89b5abd45d2348bf25081c1240ba90b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStaffAlignment</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1abb739cd6db88f9c66c5fa9cf382f3e88" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStaffAlignmentEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a7afbe756ea0ce51f0b7e837a70adb56b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStaffDef</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ae998495d9044605d6e75f2b0b4579d9b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStaffDefEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a8ee99fda85b7ef1506a13e0afee01557" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStaffEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aad515b42487e9ed9a65d1003d41252d1" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStaffGrp</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aa35a66b22be33f91da851cb0c2f56cbb" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStaffGrpEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a954c69197c6ef26f7d70be9e115fdeea" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStem</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a89064ec9202729d8884d7dd69794e9e1" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitStemEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a9eea026b99f5a799538a0e845f051519" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSurface</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a516c9b8057df5e47bb20651a2e1867e9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSurfaceEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aa58df48848ef2db34c80b9fb5f02c05e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSvg</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1adbafb3304cdb1e43cf45bb4828757f7b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSvgEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ac61661cf298337f9f49a445a3899076b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSyl</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aff959191e0a3e99782e6d995135c684d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSylEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ac23588abb484b16b07d9557ce71fb1a8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSyllable</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a75c7687ef6b788a56cce16364c008db4" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSyllableEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1af2d42704336571f9fea1e176b610b097" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSymbol</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a5eb2493452477bce92de541a284b7083" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSymbolEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a899f036572a0dd1aac114e844454aee7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSystem</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1acd7290e65346f88cb2e4b70056c472fc" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSystemAligner</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aa53f31f77cf8d614b4f3f765e0663899" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSystemAlignerEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ae319af6854e5aab1cc8d399133a8fd44" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSystemElement</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a49c43d695a0e59b534cbd28511614c58" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSystemElementEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a55edd306a5744dd4ef62f3cfb04cb037" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSystemEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1add608cc448b778f91f704f4b6baef8b8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSystemMilestone</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ae076846cf5337cc52934e9ad7a1c6609" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitSystemMilestoneEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a24582bd5f639e3b5a7bd0a842bc3170f" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTabDurSym</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a58435117cfe2bbf52248dd255d1cd7d0" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTabDurSymEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a7de0479688197f1330441ccce3068357" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTabGrp</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ab81aa73d2e3c38a07a6ad317aed77e49" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTabGrpEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a26c698a83c39ce6c56566215cadf8a68" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTempo</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a89ffcbb07ed0ad72334cbbeb13b570d8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTempoEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a8cba33c2bb2b1dfca98599151e59702c" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitText</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ac125599fc3f8c847f06ca9a1b7a7874e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTextElement</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aeb9edb138ee0e1f122ddb4e8332f8d5e" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTextElementEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a91447efde1b73f7e12d391a65b9ca9dd" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTextEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1afdd6390b8bc58a6092bc71bf47358cf9" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTextLayoutElement</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a9e3f91058dec13792f3323c4559c4663" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTextLayoutElementEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a4478ec58ff7a0225f1b994e38de34d4a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTie</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a3a9bd6c0e466acf58d19c34cab812c31" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTieEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a9d52cadb0b20a15ee8604b8cfd52b171" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTimestamp</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1af279a8c07579ad1217af0ae2144fa3f7" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTimestampAligner</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1afcf8b61319a475b5321ee963477648ee" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTimestampAlignerEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ae31c7b9f23a58206a05fa82ff455ea0a" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTimestampEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1af7b06a287c744f999dd5c8fd4c064270" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTrill</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a073b5d481c78a4778badf61c9ad45eda" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTrillEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a2d69f2bb49c465bd583506cbb9ea4ee6" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTuning</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a90d7c45153d556a764d91d48727bdfc8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTuningEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1adc8c8d3a0d51534c96af5c4a161b3bf2" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTuplet</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a38ff2a143168a10e23993cd13c15deab" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTupletBracket</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1af7c22d80c1e204ad32acc2279bd94c4d" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTupletBracketEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a1236e31d8c9ab2a5e94b91d73e1ba340" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTupletEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a85fd1f2668e9076c718f73b9a5d7dee8" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTupletNum</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ac9e7e3b0f101e6f22c97cdaf88ee5ffe" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTupletNumEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1aa9604ad00c965fb707358b13729a3789" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTurn</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ab05d62cccc28101433526ce212a646b4" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitTurnEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a7b7d126286e24eb2497c1d7a13fa7dba" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitVerse</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1ab7f803ba6a4cef5fd692c7e9a15cd57b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitVerseEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a39a8885db4ae72fbcb109f48a9b30501" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitZone</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a096fe13c92fe97ee00e2806d208951b5" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>VisitZoneEnd</name></member>
+      <member refid="classvrv_1_1_const_functor_1a2c2869b213d3da8726309681cb62713b" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>~ConstFunctor</name></member>
+      <member refid="classvrv_1_1_const_functor_interface_1a417de9a6d279c7592b83c1b84d922cc0" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>~ConstFunctorInterface</name></member>
       <member refid="classvrv_1_1_find_all_referring_objects_functor_1a759bf5051676bfc39adf3d09dc2eba84" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>~FindAllReferringObjectsFunctor</name></member>
-      <member refid="classvrv_1_1_functor_1a2459207d9593c751f7594d3029305290" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>~Functor</name></member>
       <member refid="classvrv_1_1_functor_base_1a89f1657d898054b2608bf25dfe8a2162" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>~FunctorBase</name></member>
-      <member refid="classvrv_1_1_functor_interface_1aa16887fffa2409e745e0171a882664bf" prot="public" virt="virtual"><scope>vrv::FindAllReferringObjectsFunctor</scope><name>~FunctorInterface</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

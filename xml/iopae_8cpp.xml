@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="iopae_8cpp" kind="file" language="C++">
     <compoundname>iopae.cpp</compoundname>
     <includes refid="iopae_8h" local="yes">iopae.h</includes>
@@ -170,6 +170,8 @@
         </childnode>
         <childnode refid="54" relation="include">
         </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
         <childnode refid="98" relation="include">
         </childnode>
       </node>
@@ -231,6 +233,8 @@
         <label>mdiv.h</label>
         <link refid="mdiv_8h_source"/>
         <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
         </childnode>
         <childnode refid="104" relation="include">
         </childnode>
@@ -1262,7 +1266,7 @@
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal">PAEOutput::~PAEOutput()<sp/>{}</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_p_a_e_output_1a77feed5ebe37df0bedfc96632f15712d" kindref="member">PAEOutput::Export</ref>(std::string<sp/>&amp;output)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>PAEOutput::Export(std::string<sp/>&amp;output)</highlight></codeline>
 <codeline lineno="65"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>m_docScoreDef<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>m_mensural<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
@@ -1274,18 +1278,18 @@
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>m_currentDots<sp/>=<sp/>-1;</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>m_grace<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;<ref refid="classvrv_1_1_doc_1ae6c98db85d71601a7c52a41d43687828" kindref="member">GetFirstScoreDef</ref>()-&gt;<ref refid="classvrv_1_1_object_1a86b033680370fc35b444ef74a55bca92" kindref="member">SaveObject</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;GetFirstScoreDef()-&gt;SaveObject(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>m_docScoreDef<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;<ref refid="classvrv_1_1_object_1a86b033680370fc35b444ef74a55bca92" kindref="member">SaveObject</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;SaveObject(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>output<sp/>=<sp/>m_streamStringOutput.str();</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="85"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_p_a_e_output_1a85a3ed4250131dece8de13f1938b88d2" kindref="member">PAEOutput::WriteObject</ref>(Object<sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>PAEOutput::WriteObject(Object<sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="88"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(object-&gt;Is(MDIV))<sp/>{</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;WriteMdiv(vrv_cast&lt;Mdiv<sp/>*&gt;(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">));</highlight></codeline>
@@ -1361,7 +1365,7 @@
 <codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="161"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"></highlight></codeline>
-<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_p_a_e_output_1adc640487c78a0f99726aa04b245e9ad3" kindref="member">PAEOutput::WriteObjectEnd</ref>(Object<sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>PAEOutput::WriteObjectEnd(Object<sp/>*</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="164"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(object-&gt;Is(MDIV))<sp/>{</highlight></codeline>
 <codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;WriteMdivEnd(vrv_cast&lt;Mdiv<sp/>*&gt;(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">));</highlight></codeline>
@@ -1563,7 +1567,7 @@
 <codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>sig;</highlight></codeline>
 <codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(accidType<sp/>!=<sp/>ACCIDENTAL_WRITTEN_n)<sp/>sig.push_back((accidType<sp/>==<sp/>ACCIDENTAL_WRITTEN_s)<sp/>?<sp/></highlight><highlight class="charliteral">&apos;x&apos;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="charliteral">&apos;b&apos;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>keySig-&gt;GetSig().first;<sp/>++i)<sp/>{</highlight></codeline>
-<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data_PITCHNAME<sp/>pname<sp/>=<sp/><ref refid="classvrv_1_1_key_sig_1a02cd5e22517b0651ea6dbec0e0044230" kindref="member">KeySig::GetAccidPnameAt</ref>(accidType,<sp/>i);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data_PITCHNAME<sp/>pname<sp/>=<sp/>KeySig::GetAccidPnameAt(accidType,<sp/>i);</highlight></codeline>
 <codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>pnameStr<sp/>=<sp/>keySig-&gt;AttTyped::PitchnameToStr(pname);</highlight></codeline>
 <codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sig.push_back(std::toupper(pnameStr.at(0)));</highlight></codeline>
 <codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -1680,11 +1684,11 @@
 <codeline lineno="479"><highlight class="normal"></highlight></codeline>
 <codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_currentMeasure)<sp/>{</highlight></codeline>
 <codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PointingToComparison<sp/>pointingToComparisonTrill(TRILL,<sp/>note);</highlight></codeline>
-<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Trill<sp/>*trill<sp/>=<sp/>vrv_cast&lt;Trill<sp/>*&gt;(m_currentMeasure-&gt;<ref refid="classvrv_1_1_object_1a75077fdacaa928e36fe20b90eaca7a7a" kindref="member">FindDescendantByComparison</ref>(&amp;pointingToComparisonTrill,<sp/>1));</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Trill<sp/>*trill<sp/>=<sp/>vrv_cast&lt;Trill<sp/>*&gt;(m_currentMeasure-&gt;FindDescendantByComparison(&amp;pointingToComparisonTrill,<sp/>1));</highlight></codeline>
 <codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(trill)<sp/>m_streamStringOutput<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;t&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="484"><highlight class="normal"></highlight></codeline>
 <codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PointingToComparison<sp/>pointingToComparisonTie(TIE,<sp/>note);</highlight></codeline>
-<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Tie<sp/>*tie<sp/>=<sp/>vrv_cast&lt;Tie<sp/>*&gt;(m_currentMeasure-&gt;<ref refid="classvrv_1_1_object_1a75077fdacaa928e36fe20b90eaca7a7a" kindref="member">FindDescendantByComparison</ref>(&amp;pointingToComparisonTie,<sp/>1));</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Tie<sp/>*tie<sp/>=<sp/>vrv_cast&lt;Tie<sp/>*&gt;(m_currentMeasure-&gt;FindDescendantByComparison(&amp;pointingToComparisonTie,<sp/>1));</highlight></codeline>
 <codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tie)<sp/>m_streamStringOutput<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;+&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="489"><highlight class="normal">}</highlight></codeline>
@@ -1755,7 +1759,7 @@
 <codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/>m_streamStringOutput<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>tuplet-&gt;GetNum()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="555"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="556"><highlight class="normal"></highlight></codeline>
-<codeline lineno="557"><highlight class="normal">std::string<sp/><ref refid="classvrv_1_1_p_a_e_output_1a448eec0c160421ea52023b6ce5a8a125" kindref="member">PAEOutput::GetPaeDur</ref>(data_DURATION<sp/>ndur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndots)</highlight></codeline>
+<codeline lineno="557"><highlight class="normal">std::string<sp/>PAEOutput::GetPaeDur(data_DURATION<sp/>ndur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndots)</highlight></codeline>
 <codeline lineno="558"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>dur;</highlight></codeline>
 <codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(ndur)<sp/>{</highlight></codeline>
@@ -1795,7 +1799,7 @@
 <codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((interface-&gt;GetDur()<sp/>!=<sp/>m_currentDur)<sp/>||<sp/>(ndots<sp/>!=<sp/>m_currentDots))<sp/>{</highlight></codeline>
 <codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_currentDur<sp/>=<sp/>interface-&gt;GetDur();</highlight></codeline>
 <codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_currentDots<sp/>=<sp/>ndots;</highlight></codeline>
-<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_streamStringOutput<sp/>&lt;&lt;<sp/><ref refid="classvrv_1_1_p_a_e_output_1a448eec0c160421ea52023b6ce5a8a125" kindref="member">PAEOutput::GetPaeDur</ref>(interface-&gt;GetDur(),<sp/>m_currentDots);</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_streamStringOutput<sp/>&lt;&lt;<sp/>PAEOutput::GetPaeDur(interface-&gt;GetDur(),<sp/>m_currentDots);</highlight></codeline>
 <codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="599"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="600"><highlight class="normal"></highlight></codeline>
@@ -1820,7 +1824,7 @@
 <codeline lineno="619"><highlight class="normal"></highlight></codeline>
 <codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/>PointingToComparison<sp/>pointingToComparisonFermata(FERMATA,<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/>Fermata<sp/>*fermata</highlight></codeline>
-<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>vrv_cast&lt;Fermata<sp/>*&gt;(m_currentMeasure-&gt;<ref refid="classvrv_1_1_object_1a75077fdacaa928e36fe20b90eaca7a7a" kindref="member">FindDescendantByComparison</ref>(&amp;pointingToComparisonFermata,<sp/>1));</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>vrv_cast&lt;Fermata<sp/>*&gt;(m_currentMeasure-&gt;FindDescendantByComparison(&amp;pointingToComparisonFermata,<sp/>1));</highlight></codeline>
 <codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(fermata);</highlight></codeline>
 <codeline lineno="624"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="625"><highlight class="normal"></highlight></codeline>
@@ -1852,7 +1856,7 @@
 <codeline lineno="651"><highlight class="normal"></highlight></codeline>
 <codeline lineno="652"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Global<sp/>variables:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="653"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data_line[10001]<sp/>=<sp/>{<sp/>0<sp/>};</highlight></codeline>
-<codeline lineno="654"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_DATA_LEN<sp/>1024<sp/>//<sp/>One<sp/>line<sp/>of<sp/>the<sp/>pae<sp/>file<sp/>would<sp/>not<sp/>be<sp/>that<sp/>long!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="654"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_DATA_LEN<sp/>1024<sp/></highlight><highlight class="comment">//<sp/>One<sp/>line<sp/>of<sp/>the<sp/>pae<sp/>file<sp/>would<sp/>not<sp/>be<sp/>that<sp/>long!</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="655"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data_key[MAX_DATA_LEN];</highlight></codeline>
 <codeline lineno="656"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data_value[MAX_DATA_LEN];<sp/></highlight><highlight class="comment">//<sp/>ditto<sp/>as<sp/>above</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="657"><highlight class="normal"></highlight></codeline>
@@ -1880,7 +1884,7 @@
 <codeline lineno="679"><highlight class="normal"></highlight></codeline>
 <codeline lineno="680"><highlight class="normal">PAEInput::~PAEInput()<sp/>{}</highlight></codeline>
 <codeline lineno="681"><highlight class="normal"></highlight></codeline>
-<codeline lineno="682"><highlight class="normal">jsonxx::Object<sp/><ref refid="classvrv_1_1_p_a_e_input_1a2c7eb5002ee302d228c2fc307de055fe" kindref="member">PAEInput::GetValidationLog</ref>()</highlight></codeline>
+<codeline lineno="682"><highlight class="normal">jsonxx::Object<sp/>PAEInput::GetValidationLog()</highlight></codeline>
 <codeline lineno="683"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/>jsonxx::Object<sp/>log;</highlight></codeline>
 <codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/>log<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Using<sp/>old<sp/>PAE<sp/>parser&quot;</highlight><highlight class="normal">;</highlight></codeline>
@@ -1922,12 +1926,12 @@
 <codeline lineno="723"><highlight class="normal"></highlight></codeline>
 <codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;pae::Measure&gt;<sp/>staff;</highlight></codeline>
 <codeline lineno="725"><highlight class="normal"></highlight></codeline>
-<codeline lineno="726"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;<ref refid="classvrv_1_1_doc_1a8e5d2a994915fb93f56ca86dc4ae5e6e" kindref="member">Reset</ref>();</highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;Reset();</highlight></codeline>
 <codeline lineno="727"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;SetType(Raw);</highlight></codeline>
 <codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>mdiv</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="729"><highlight class="normal"><sp/><sp/><sp/><sp/>Mdiv<sp/>*mdiv<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Mdiv();</highlight></codeline>
 <codeline lineno="730"><highlight class="normal"><sp/><sp/><sp/><sp/>mdiv-&gt;m_visibility<sp/>=<sp/>Visible;</highlight></codeline>
-<codeline lineno="731"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;<ref refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" kindref="member">AddChild</ref>(mdiv);</highlight></codeline>
+<codeline lineno="731"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;AddChild(mdiv);</highlight></codeline>
 <codeline lineno="732"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>score</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="733"><highlight class="normal"><sp/><sp/><sp/><sp/>Score<sp/>*score<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Score();</highlight></codeline>
 <codeline lineno="734"><highlight class="normal"><sp/><sp/><sp/><sp/>mdiv-&gt;AddChild(score);</highlight></codeline>
@@ -2277,7 +2281,7 @@
 <codeline lineno="1078"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LogWarning(</highlight><highlight class="stringliteral">&quot;Open<sp/>tie<sp/>will<sp/>not<sp/>render<sp/>because<sp/>tstamp2<sp/>is<sp/>missing&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="1079"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1080"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1081"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;<ref refid="classvrv_1_1_doc_1a1f5b58cd73b6f04ce22ebf231c69db32" kindref="member">ConvertToPageBasedDoc</ref>();</highlight></codeline>
+<codeline lineno="1081"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;ConvertToPageBasedDoc();</highlight></codeline>
 <codeline lineno="1082"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1083"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1085"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -3419,11 +3423,11 @@
 <codeline lineno="2236"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2237"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2238"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2239"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>NO_PAE_SUPPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2239"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>NO_PAE_SUPPORT</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2240"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2241"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2242"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2243"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/>//<sp/>USE_PAE_OLD_PARSER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2243"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">//<sp/>USE_PAE_OLD_PARSER</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2244"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2245"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2246"><highlight class="normal"></highlight></codeline>
@@ -3688,7 +3692,7 @@
 <codeline lineno="2505"><highlight class="normal"><sp/><sp/><sp/><sp/>m_pae.clear();</highlight></codeline>
 <codeline lineno="2506"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2507"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2508"><highlight class="normal">jsonxx::Object<sp/><ref refid="classvrv_1_1_p_a_e_input_1a2c7eb5002ee302d228c2fc307de055fe" kindref="member">PAEInput::GetValidationLog</ref>()</highlight></codeline>
+<codeline lineno="2508"><highlight class="normal">jsonxx::Object<sp/>PAEInput::GetValidationLog()</highlight></codeline>
 <codeline lineno="2509"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="2510"><highlight class="normal"><sp/><sp/><sp/><sp/>jsonxx::Object<sp/>log;</highlight></codeline>
 <codeline lineno="2511"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>we<sp/>have<sp/>an<sp/>input<sp/>error,<sp/>that<sp/>is<sp/>the<sp/>only<sp/>one<sp/>to<sp/>log</highlight><highlight class="normal"></highlight></codeline>
@@ -4005,12 +4009,12 @@
 <codeline lineno="2822"><highlight class="normal"><sp/><sp/><sp/><sp/>m_hasMeterSig<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="2823"><highlight class="normal"><sp/><sp/><sp/><sp/>m_hasMensur<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="2824"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2825"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;<ref refid="classvrv_1_1_doc_1a8e5d2a994915fb93f56ca86dc4ae5e6e" kindref="member">Reset</ref>();</highlight></codeline>
+<codeline lineno="2825"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;Reset();</highlight></codeline>
 <codeline lineno="2826"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;SetType(Raw);</highlight></codeline>
 <codeline lineno="2827"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2828"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Genereate<sp/>the<sp/>header<sp/>and<sp/>add<sp/>a<sp/>comment<sp/>to<sp/>the<sp/>project<sp/>description</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2829"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;<ref refid="classvrv_1_1_doc_1ab65d189921d9de9cde712ac7c928d289" kindref="member">GenerateMEIHeader</ref>();</highlight></codeline>
-<codeline lineno="2830"><highlight class="normal"><sp/><sp/><sp/><sp/>pugi::xml_node<sp/>projectDesc<sp/>=<sp/>m_doc-&gt;<ref refid="classvrv_1_1_doc_1a316c65ece6773370792d689e832ffe50" kindref="member">m_header</ref>.first_child().select_node(</highlight><highlight class="stringliteral">&quot;//projectDesc&quot;</highlight><highlight class="normal">).node();</highlight></codeline>
+<codeline lineno="2829"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;GenerateMEIHeader();</highlight></codeline>
+<codeline lineno="2830"><highlight class="normal"><sp/><sp/><sp/><sp/>pugi::xml_node<sp/>projectDesc<sp/>=<sp/>m_doc-&gt;m_header.first_child().select_node(</highlight><highlight class="stringliteral">&quot;//projectDesc&quot;</highlight><highlight class="normal">).node();</highlight></codeline>
 <codeline lineno="2831"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(projectDesc)<sp/>{</highlight></codeline>
 <codeline lineno="2832"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pugi::xml_node<sp/>p1<sp/>=<sp/>projectDesc.append_child(</highlight><highlight class="stringliteral">&quot;p&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="2833"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p1.text().set(</highlight><highlight class="stringliteral">&quot;Converted<sp/>from<sp/>Plaine<sp/>and<sp/>Easie<sp/>to<sp/>MEI&quot;</highlight><highlight class="normal">);</highlight></codeline>
@@ -4178,11 +4182,11 @@
 <codeline lineno="2995"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2996"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2997"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>notation<sp/>type</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2998"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_isMensural)<sp/>m_doc-&gt;<ref refid="classvrv_1_1_doc_1ac8c03d319f5980f42db9faba0253cb6f" kindref="member">m_notationType</ref><sp/>=<sp/>NOTATIONTYPE_mensural;</highlight></codeline>
+<codeline lineno="2998"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_isMensural)<sp/>m_doc-&gt;m_notationType<sp/>=<sp/>NOTATIONTYPE_mensural;</highlight></codeline>
 <codeline lineno="2999"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>mdiv</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3000"><highlight class="normal"><sp/><sp/><sp/><sp/>Mdiv<sp/>*mdiv<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Mdiv();</highlight></codeline>
-<codeline lineno="3001"><highlight class="normal"><sp/><sp/><sp/><sp/>mdiv-&gt;m_visibility<sp/>=<sp/>Visible;</highlight></codeline>
-<codeline lineno="3002"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;<ref refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" kindref="member">AddChild</ref>(mdiv);</highlight></codeline>
+<codeline lineno="3001"><highlight class="normal"><sp/><sp/><sp/><sp/>mdiv-&gt;SetVisibility(Visible);</highlight></codeline>
+<codeline lineno="3002"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;AddChild(mdiv);</highlight></codeline>
 <codeline lineno="3003"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>score</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3004"><highlight class="normal"><sp/><sp/><sp/><sp/>Score<sp/>*score<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Score();</highlight></codeline>
 <codeline lineno="3005"><highlight class="normal"><sp/><sp/><sp/><sp/>mdiv-&gt;AddChild(score);</highlight></codeline>
@@ -4204,20 +4208,20 @@
 <codeline lineno="3021"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_hasClef)<sp/>{</highlight></codeline>
 <codeline lineno="3022"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Make<sp/>it<sp/>an<sp/>attribute<sp/>for<sp/>now</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3023"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_clef.IsAttribute(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="3024"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staffDef-&gt;AddChild(m_clef.<ref refid="classvrv_1_1_clef_1abb9d12cbce277d50a99e9681a5f0f7b6" kindref="member">Clone</ref>());</highlight></codeline>
+<codeline lineno="3024"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>staffDef-&gt;AddChild(m_clef.Clone());</highlight></codeline>
 <codeline lineno="3025"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="3026"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_hasKeySig)<sp/>{</highlight></codeline>
-<codeline lineno="3027"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score-&gt;GetScoreDef()-&gt;AddChild(m_keySig.<ref refid="classvrv_1_1_key_sig_1aa602f4a016a1548a905bbbb19fc014ca" kindref="member">Clone</ref>());</highlight></codeline>
+<codeline lineno="3027"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score-&gt;GetScoreDef()-&gt;AddChild(m_keySig.Clone());</highlight></codeline>
 <codeline lineno="3028"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="3029"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_hasMeterSig)<sp/>{</highlight></codeline>
 <codeline lineno="3030"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Make<sp/>it<sp/>an<sp/>attribute<sp/>for<sp/>now</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3031"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_meterSig.IsAttribute(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="3032"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score-&gt;GetScoreDef()-&gt;AddChild(m_meterSig.<ref refid="classvrv_1_1_meter_sig_1aeae06cc8509a4b237f24018f38284e78" kindref="member">Clone</ref>());</highlight></codeline>
+<codeline lineno="3032"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score-&gt;GetScoreDef()-&gt;AddChild(m_meterSig.Clone());</highlight></codeline>
 <codeline lineno="3033"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="3034"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_hasMensur)<sp/>{</highlight></codeline>
 <codeline lineno="3035"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Make<sp/>it<sp/>an<sp/>attribute<sp/>for<sp/>now</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3036"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_mensur.IsAttribute(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="3037"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score-&gt;GetScoreDef()-&gt;AddChild(m_mensur.<ref refid="classvrv_1_1_mensur_1aed526dc458dd12a6fe19ac79a84bfd36" kindref="member">Clone</ref>());</highlight></codeline>
+<codeline lineno="3037"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score-&gt;GetScoreDef()-&gt;AddChild(m_mensur.Clone());</highlight></codeline>
 <codeline lineno="3038"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="3039"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3040"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>stack<sp/>to<sp/>which<sp/>layer<sp/>element<sp/>are<sp/>added.<sp/>At<sp/>least<sp/>a<sp/>Layer,<sp/>but<sp/>then<sp/>Beam,<sp/>GraceGrp,<sp/>Chord,<sp/>etc.</highlight><highlight class="normal"></highlight></codeline>
@@ -4359,7 +4363,7 @@
 <codeline lineno="3176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>should<sp/>have<sp/>no<sp/>object<sp/>left,<sp/>just<sp/>in<sp/>case<sp/>they<sp/>need<sp/>to<sp/>be<sp/>delete.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3177"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;ClearTokenObjects();</highlight></codeline>
 <codeline lineno="3178"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!m_scoreBased)<sp/>m_doc-&gt;<ref refid="classvrv_1_1_doc_1a1f5b58cd73b6f04ce22ebf231c69db32" kindref="member">ConvertToPageBasedDoc</ref>();</highlight></codeline>
+<codeline lineno="3179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!m_scoreBased)<sp/>m_doc-&gt;ConvertToPageBasedDoc();</highlight></codeline>
 <codeline lineno="3180"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>success;</highlight></codeline>
 <codeline lineno="3182"><highlight class="normal">}</highlight></codeline>
@@ -4405,7 +4409,7 @@
 <codeline lineno="3222"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PAEInput::ParseHeader(jsonxx::Object<sp/>&amp;header)</highlight></codeline>
 <codeline lineno="3223"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="3224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>nodes<sp/>for<sp/>element<sp/>that<sp/>has<sp/>to<sp/>be<sp/>already<sp/>in<sp/>the<sp/>header</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3225"><highlight class="normal"><sp/><sp/><sp/><sp/>pugi::xml_node<sp/>fileDesc<sp/>=<sp/>m_doc-&gt;<ref refid="classvrv_1_1_doc_1a316c65ece6773370792d689e832ffe50" kindref="member">m_header</ref>.first_child().select_node(</highlight><highlight class="stringliteral">&quot;//fileDesc&quot;</highlight><highlight class="normal">).node();</highlight></codeline>
+<codeline lineno="3225"><highlight class="normal"><sp/><sp/><sp/><sp/>pugi::xml_node<sp/>fileDesc<sp/>=<sp/>m_doc-&gt;m_header.first_child().select_node(</highlight><highlight class="stringliteral">&quot;//fileDesc&quot;</highlight><highlight class="normal">).node();</highlight></codeline>
 <codeline lineno="3226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!fileDesc)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="3227"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3228"><highlight class="normal"><sp/><sp/><sp/><sp/>pugi::xml_node<sp/>titleStmt<sp/>=<sp/>fileDesc.select_node(</highlight><highlight class="stringliteral">&quot;//titleStmt&quot;</highlight><highlight class="normal">).node();</highlight></codeline>
@@ -4464,7 +4468,7 @@
 <codeline lineno="3281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hasIncip<sp/>=<sp/>hasIncip<sp/>||<sp/>header.has&lt;jsonxx::String&gt;(key)<sp/>||<sp/>header.has&lt;jsonxx::Array&gt;(key);</highlight></codeline>
 <codeline lineno="3282"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="3283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hasIncip)<sp/>{</highlight></codeline>
-<codeline lineno="3284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pugi::xml_node<sp/>work<sp/>=<sp/>m_doc-&gt;<ref refid="classvrv_1_1_doc_1a316c65ece6773370792d689e832ffe50" kindref="member">m_header</ref>.first_child().append_child(</highlight><highlight class="stringliteral">&quot;workList&quot;</highlight><highlight class="normal">).append_child(</highlight><highlight class="stringliteral">&quot;work&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pugi::xml_node<sp/>work<sp/>=<sp/>m_doc-&gt;m_header.first_child().append_child(</highlight><highlight class="stringliteral">&quot;workList&quot;</highlight><highlight class="normal">).append_child(</highlight><highlight class="stringliteral">&quot;work&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="3285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pugi::xml_node<sp/>title<sp/>=<sp/>work.append_child(</highlight><highlight class="stringliteral">&quot;title&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="3286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(header.has&lt;jsonxx::String&gt;(</highlight><highlight class="stringliteral">&quot;title&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
 <codeline lineno="3287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>title.text().set(header.get&lt;jsonxx::String&gt;(</highlight><highlight class="stringliteral">&quot;title&quot;</highlight><highlight class="normal">).c_str());</highlight></codeline>
@@ -5732,7 +5736,7 @@
 <codeline lineno="4549"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>PAEInput::ConvertAccidGes()</highlight></codeline>
 <codeline lineno="4550"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="4551"><highlight class="normal"><sp/><sp/><sp/><sp/>MapOfOctavedPitchAccid<sp/>currentAccids;</highlight></codeline>
-<codeline lineno="4552"><highlight class="normal"><sp/><sp/><sp/><sp/>m_keySig.<ref refid="classvrv_1_1_key_sig_1a0da336bde31a402882b705c25076c7c5" kindref="member">FillMap</ref>(currentAccids);</highlight></codeline>
+<codeline lineno="4552"><highlight class="normal"><sp/><sp/><sp/><sp/>m_keySig.FillMap(currentAccids);</highlight></codeline>
 <codeline lineno="4553"><highlight class="normal"><sp/><sp/><sp/><sp/>MapOfOctavedPitchAccid<sp/>currentKeySigAccids<sp/>=<sp/>currentAccids;</highlight></codeline>
 <codeline lineno="4554"><highlight class="normal"><sp/><sp/><sp/><sp/>Note<sp/>*lastNote<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="4555"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>data_ACCIDENTAL_WRITTEN&gt;<sp/>ties;</highlight></codeline>
@@ -5937,7 +5941,7 @@
 <codeline lineno="4754"><highlight class="normal"><sp/><sp/><sp/><sp/>ClassIdsComparison<sp/>comparison({<sp/>BEAM,<sp/>GRACEGRP<sp/>});</highlight></codeline>
 <codeline lineno="4755"><highlight class="normal"><sp/><sp/><sp/><sp/>ClassIdsComparison<sp/>noteOrRest({<sp/>NOTE,<sp/>REST<sp/>});</highlight></codeline>
 <codeline lineno="4756"><highlight class="normal"><sp/><sp/><sp/><sp/>ListOfObjects<sp/>containers;</highlight></codeline>
-<codeline lineno="4757"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;<ref refid="classvrv_1_1_object_1a02c322a63d089b388e6b122598e88077" kindref="member">FindAllDescendantsByComparison</ref>(&amp;containers,<sp/>&amp;comparison);</highlight></codeline>
+<codeline lineno="4757"><highlight class="normal"><sp/><sp/><sp/><sp/>m_doc-&gt;FindAllDescendantsByComparison(&amp;containers,<sp/>&amp;comparison);</highlight></codeline>
 <codeline lineno="4758"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;container<sp/>:<sp/>containers)<sp/>{</highlight></codeline>
 <codeline lineno="4759"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ListOfObjects<sp/>notesOrRests;</highlight></codeline>
 <codeline lineno="4760"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>container-&gt;FindAllDescendantsByComparison(&amp;notesOrRests,<sp/>&amp;noteOrRest);</highlight></codeline>
@@ -6357,11 +6361,11 @@
 <codeline lineno="5174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="5175"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="5176"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5177"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>NO_PAE_SUPPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5177"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>NO_PAE_SUPPORT</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5178"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5179"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5180"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5181"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>USE_PAE_OLD_PARSER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5181"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>USE_PAE_OLD_PARSER</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5182"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5183"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5184"><highlight class="normal"></highlight></codeline>

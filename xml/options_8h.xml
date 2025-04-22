@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="options_8h" kind="file" language="C++">
     <compoundname>options.h</compoundname>
     <includes local="no">map</includes>
@@ -10,8 +10,8 @@
     <includes refid="smufl_8h" local="yes">smufl.h</includes>
     <includes refid="vrvdef_8h" local="yes">vrvdef.h</includes>
     <includes local="yes">jsonxx.h</includes>
-    <includedby refid="expansionmap_8h" local="yes">expansionmap.h</includedby>
     <includedby refid="doc_8h" local="yes">doc.h</includedby>
+    <includedby refid="expansionmap_8h" local="yes">expansionmap.h</includedby>
     <includedby refid="featureextractor_8h" local="yes">featureextractor.h</includedby>
     <includedby refid="iohumdrum_8h" local="yes">iohumdrum.h</includedby>
     <includedby refid="score_8h" local="yes">score.h</includedby>
@@ -104,17 +104,17 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4">
+      <node id="3">
         <label>editortoolkit.h</label>
         <link refid="editortoolkit_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
       </node>
-      <node id="8">
+      <node id="7">
         <label>iomei.h</label>
         <link refid="iomei_8h_source"/>
       </node>
@@ -127,7 +127,7 @@
         <link refid="options_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="3" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
@@ -142,7 +142,7 @@
         <label>score.h</label>
         <link refid="score_8h_source"/>
       </node>
-      <node id="7">
+      <node id="6">
         <label>editortoolkit_neume.h</label>
         <link refid="editortoolkit__neume_8h_source"/>
       </node>
@@ -150,27 +150,29 @@
         <label>svgdevicecontext.h</label>
         <link refid="svgdevicecontext_8h_source"/>
       </node>
-      <node id="5">
+      <node id="4">
         <label>editortoolkit_cmn.h</label>
         <link refid="editortoolkit__cmn_8h_source"/>
       </node>
-      <node id="6">
+      <node id="5">
         <label>editortoolkit_mensural.h</label>
         <link refid="editortoolkit__mensural_8h_source"/>
       </node>
-      <node id="2">
+      <node id="9">
         <label>expansionmap.h</label>
         <link refid="expansionmap_8h_source"/>
-        <childnode refid="3" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
       <node id="11">
         <label>iohumdrum.h</label>
         <link refid="iohumdrum_8h_source"/>
       </node>
-      <node id="3">
+      <node id="2">
         <label>doc.h</label>
         <link refid="doc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
@@ -181,10 +183,8 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
       </node>
-      <node id="9">
+      <node id="8">
         <label>toolkit.h</label>
         <link refid="toolkit_8h_source"/>
       </node>
@@ -368,7 +368,7 @@
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>OptionsCategory<sp/>{<sp/>None,<sp/>Base,<sp/>General,<sp/>Json,<sp/>Layout,<sp/>Mensural,<sp/>Margins,<sp/>Midi,<sp/>Selectors,<sp/>Full<sp/>};</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100" refid="classvrv_1_1_option" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
+<codeline lineno="100" refid="classvrv_1_1_option" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors<sp/>and<sp/>destructors</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref>()</highlight></codeline>
@@ -401,7 +401,7 @@
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsCmdOnly()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_isCmdOnly;<sp/>}</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsArgumentRequired()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>jsonxx::Object<sp/><ref refid="classvrv_1_1_option_1a8197df949d810a3f12aac223d8593036" kindref="member">ToJson</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136" refid="classvrv_1_1_option_1a8197df949d810a3f12aac223d8593036" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>jsonxx::Object<sp/><ref refid="classvrv_1_1_option_1a8197df949d810a3f12aac223d8593036" kindref="member">ToJson</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"></highlight></codeline>
 <codeline lineno="138"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------//</highlight><highlight class="normal"></highlight></codeline>
@@ -437,7 +437,7 @@
 <codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OptionBool</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="174"><highlight class="normal"></highlight></codeline>
-<codeline lineno="178" refid="classvrv_1_1_option_bool" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_bool" kindref="compound">OptionBool</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
+<codeline lineno="178" refid="classvrv_1_1_option_bool" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_bool" kindref="compound">OptionBool</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
 <codeline lineno="179"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors<sp/>and<sp/>destructors</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_bool" kindref="compound">OptionBool</ref>()<sp/>{<sp/>m_defaultValue<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
@@ -473,7 +473,7 @@
 <codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OptionDbl</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="212"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="213"><highlight class="normal"></highlight></codeline>
-<codeline lineno="217" refid="classvrv_1_1_option_dbl" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_dbl" kindref="compound">OptionDbl</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
+<codeline lineno="217" refid="classvrv_1_1_option_dbl" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_dbl" kindref="compound">OptionDbl</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
 <codeline lineno="218"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors<sp/>and<sp/>destructors</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_dbl" kindref="compound">OptionDbl</ref>()</highlight></codeline>
@@ -518,7 +518,7 @@
 <codeline lineno="259"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OptionInt</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="260"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="261"><highlight class="normal"></highlight></codeline>
-<codeline lineno="265" refid="classvrv_1_1_option_int" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_int" kindref="compound">OptionInt</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
+<codeline lineno="265" refid="classvrv_1_1_option_int" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_int" kindref="compound">OptionInt</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
 <codeline lineno="266"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors<sp/>and<sp/>destructors</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_int" kindref="compound">OptionInt</ref>()</highlight></codeline>
@@ -563,7 +563,7 @@
 <codeline lineno="307"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OptionString</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="308"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="309"><highlight class="normal"></highlight></codeline>
-<codeline lineno="313" refid="classvrv_1_1_option_string" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_string" kindref="compound">OptionString</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
+<codeline lineno="313" refid="classvrv_1_1_option_string" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_string" kindref="compound">OptionString</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
 <codeline lineno="314"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors<sp/>and<sp/>destructors</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_string" kindref="compound">OptionString</ref>()<sp/>{}</highlight></codeline>
@@ -594,7 +594,7 @@
 <codeline lineno="341"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OptionArray</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="342"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="343"><highlight class="normal"></highlight></codeline>
-<codeline lineno="347" refid="classvrv_1_1_option_array" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_array" kindref="compound">OptionArray</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
+<codeline lineno="347" refid="classvrv_1_1_option_array" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_array" kindref="compound">OptionArray</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
 <codeline lineno="348"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors<sp/>and<sp/>destructors</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_array" kindref="compound">OptionArray</ref>()<sp/>{}</highlight></codeline>
@@ -628,7 +628,7 @@
 <codeline lineno="378"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OptionIntMap</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="379"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="380"><highlight class="normal"></highlight></codeline>
-<codeline lineno="384" refid="classvrv_1_1_option_int_map" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_int_map" kindref="compound">OptionIntMap</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
+<codeline lineno="384" refid="classvrv_1_1_option_int_map" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_int_map" kindref="compound">OptionIntMap</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
 <codeline lineno="385"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors<sp/>and<sp/>destructors</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_int_map" kindref="compound">OptionIntMap</ref>();</highlight></codeline>
@@ -664,7 +664,7 @@
 <codeline lineno="417"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OptionStaffrel</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="418"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="419"><highlight class="normal"></highlight></codeline>
-<codeline lineno="423" refid="classvrv_1_1_option_staffrel" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_staffrel" kindref="compound">OptionStaffrel</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
+<codeline lineno="423" refid="classvrv_1_1_option_staffrel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_staffrel" kindref="compound">OptionStaffrel</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
 <codeline lineno="424"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors<sp/>and<sp/>destructors</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_staffrel" kindref="compound">OptionStaffrel</ref>()<sp/>{}</highlight></codeline>
@@ -700,32 +700,32 @@
 <codeline lineno="456"><highlight class="normal"></highlight></codeline>
 <codeline lineno="458"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>JsonSource<sp/>{<sp/>String,<sp/>FilePath<sp/>};</highlight></codeline>
 <codeline lineno="459"><highlight class="normal"></highlight></codeline>
-<codeline lineno="464" refid="classvrv_1_1_option_json" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_json" kindref="compound">OptionJson</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
+<codeline lineno="464" refid="classvrv_1_1_option_json" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_json" kindref="compound">OptionJson</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
 <codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>JsonPath<sp/>=<sp/>std::vector&lt;std::reference_wrapper&lt;jsonxx::Value&gt;&gt;;</highlight></codeline>
 <codeline lineno="466"><highlight class="normal"></highlight></codeline>
 <codeline lineno="467"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_json" kindref="compound">OptionJson</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_json" kindref="compound">OptionJson</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_option_json" kindref="compound">OptionJson</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CopyTo(<ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>*option)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Init(JsonSource<sp/>source,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;defaultValue);</highlight></codeline>
-<codeline lineno="477"></codeline>
-<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/>JsonSource<sp/><ref refid="classvrv_1_1_option_json_1a84f4c87bc0217e8bce496ef9610222ea" kindref="member">GetSource</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481" refid="classvrv_1_1_option_json_1a84f4c87bc0217e8bce496ef9610222ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>JsonSource<sp/><ref refid="classvrv_1_1_option_json_1a84f4c87bc0217e8bce496ef9610222ea" kindref="member">GetSource</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/>jsonxx::Object<sp/>GetValue(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>getDefault<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="483"><highlight class="normal"></highlight></codeline>
-<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option_json_1abbfe45064b60f80519b5f54528245377" kindref="member">SetValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;value)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="488" refid="classvrv_1_1_option_json_1abbfe45064b60f80519b5f54528245377" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option_json_1abbfe45064b60f80519b5f54528245377" kindref="member">SetValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;value)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>GetStrValue()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>GetDefaultStrValue()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="491"><highlight class="normal"></highlight></codeline>
 <codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsSet()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="495"></codeline>
-<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option_json_1aac2951d68e22ec5baf9001501e671604" kindref="member">HasValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>&amp;jsonNodePath)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="500" refid="classvrv_1_1_option_json_1aac2951d68e22ec5baf9001501e671604" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option_json_1aac2951d68e22ec5baf9001501e671604" kindref="member">HasValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>&amp;jsonNodePath)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetIntValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>&amp;jsonNodePath,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>getDefault<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GetDblValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>&amp;jsonNodePath,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>getDefault<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>GetStrValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>&amp;jsonNodePath,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>getDefault<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>UpdateNodeValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>&amp;jsonNodePath,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;value);</highlight></codeline>
 <codeline lineno="506"></codeline>
-<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/>std::set&lt;std::string&gt;<sp/><ref refid="classvrv_1_1_option_json_1a24331e37779a4eb4667cbd2d12d606fe" kindref="member">GetKeys</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="511" refid="classvrv_1_1_option_json_1a24331e37779a4eb4667cbd2d12d606fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::set&lt;std::string&gt;<sp/><ref refid="classvrv_1_1_option_json_1a24331e37779a4eb4667cbd2d12d606fe" kindref="member">GetKeys</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/>std::set&lt;std::string&gt;<sp/>GetKeysByNode(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;nodeName,<sp/>std::list&lt;std::string&gt;<sp/>&amp;jsonNodePath)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="514"><highlight class="normal"></highlight></codeline>
 <codeline lineno="515"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
@@ -735,7 +735,7 @@
 <codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>jsonxx::Object<sp/>*FindNodeByName(</highlight></codeline>
 <codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>jsonxx::Object<sp/>&amp;obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;jsonNodeName,<sp/>std::list&lt;std::string&gt;<sp/>&amp;jsonNodePath)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="521"><highlight class="normal"></highlight></codeline>
-<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option_json_1a5ff9ad862e7310387519ee222ea335e4" kindref="member">ReadJson</ref>(jsonxx::Object<sp/>&amp;output,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;input)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="523" refid="classvrv_1_1_option_json_1a5ff9ad862e7310387519ee222ea335e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_option_json_1a5ff9ad862e7310387519ee222ea335e4" kindref="member">ReadJson</ref>(jsonxx::Object<sp/>&amp;output,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;input)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="524"><highlight class="normal"></highlight></codeline>
 <codeline lineno="525"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/>JsonSource<sp/>m_source<sp/>=<sp/>JsonSource::String;</highlight></codeline>
@@ -748,7 +748,7 @@
 <codeline lineno="533"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OptionGrp</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="534"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="535"><highlight class="normal"></highlight></codeline>
-<codeline lineno="539" refid="classvrv_1_1_option_grp" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_grp" kindref="compound">OptionGrp</ref><sp/>{</highlight></codeline>
+<codeline lineno="539" refid="classvrv_1_1_option_grp" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option_grp" kindref="compound">OptionGrp</ref><sp/>{</highlight></codeline>
 <codeline lineno="540"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors<sp/>and<sp/>destructors</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_grp" kindref="compound">OptionGrp</ref>()<sp/>{}</highlight></codeline>
@@ -782,7 +782,7 @@
 <codeline lineno="570"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Options</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="571"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="572"><highlight class="normal"></highlight></codeline>
-<codeline lineno="576" refid="classvrv_1_1_options" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_options" kindref="compound">Options</ref><sp/>{</highlight></codeline>
+<codeline lineno="576" refid="classvrv_1_1_options" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_options" kindref="compound">Options</ref><sp/>{</highlight></codeline>
 <codeline lineno="577"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors<sp/>and<sp/>destructors</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_options" kindref="compound">Options</ref>();</highlight></codeline>
@@ -1055,9 +1055,9 @@
 <codeline lineno="874"><highlight class="normal"></highlight></codeline>
 <codeline lineno="875"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="876"><highlight class="normal"></highlight></codeline>
-<codeline lineno="877"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CUSTOM_VEROVIO_OPTIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="877"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>CUSTOM_VEROVIO_OPTIONS</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="878"><highlight class="normal"></highlight></codeline>
-<codeline lineno="879"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__VRV_DEF_H__</highlight></codeline>
+<codeline lineno="879"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__VRV_DEF_H__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/options.h"/>
   </compounddef>

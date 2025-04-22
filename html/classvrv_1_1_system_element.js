@@ -7,6 +7,7 @@ var classvrv_1_1_system_element =
     [ "Accept", "classvrv_1_1_system_element.html#a9f9c7151d76af6a893dc9848fae075ad", null ],
     [ "AcceptEnd", "classvrv_1_1_system_element.html#a5fd5faf25881a8ea36fca628061373a6", null ],
     [ "AcceptEnd", "classvrv_1_1_system_element.html#aa172aca4bb77fc80c1fc3b217caf6993", null ],
-    [ "Reset", "classvrv_1_1_system_element.html#a052b062bad0d78113a1067212a24c816", null ],
-    [ "m_visibility", "classvrv_1_1_system_element.html#ad69627f50c22cf7349d3d304ce3b550d", null ]
+    [ "GetVisibilityDrawingInterface", "classvrv_1_1_system_element.html#a2dd8b78e003f3afa1cbcb02217ee26f9", null ],
+    [ "GetVisibilityDrawingInterface", "classvrv_1_1_system_element.html#ad3480d82e52561234d9d370229778c6f", null ],
+    [ "Reset", "classvrv_1_1_system_element.html#a052b062bad0d78113a1067212a24c816", null ]
 ];
