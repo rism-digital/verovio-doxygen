@@ -48,6 +48,7 @@ var annotated_dup =
       [ "AltSymInterface", "classvrv_1_1_alt_sym_interface.html", "classvrv_1_1_alt_sym_interface" ],
       [ "AnchoredText", "classvrv_1_1_anchored_text.html", "classvrv_1_1_anchored_text" ],
       [ "Annot", "classvrv_1_1_annot.html", "classvrv_1_1_annot" ],
+      [ "AnnotScore", "classvrv_1_1_annot_score.html", "classvrv_1_1_annot_score" ],
       [ "App", "classvrv_1_1_app.html", "classvrv_1_1_app" ],
       [ "AreaPosInterface", "classvrv_1_1_area_pos_interface.html", "classvrv_1_1_area_pos_interface" ],
       [ "Arpeg", "classvrv_1_1_arpeg.html", "classvrv_1_1_arpeg" ],

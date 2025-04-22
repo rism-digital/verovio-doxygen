@@ -6,6 +6,7 @@ var classvrv_1_1_view =
     [ "DrawAcciaccaturaSlash", "classvrv_1_1_view.html#a40ebbe142ce17e46484b0c907e15d7df", null ],
     [ "DrawAccid", "classvrv_1_1_view.html#a0e5d3049d1c711a8d559d013e151c663", null ],
     [ "DrawAnnot", "classvrv_1_1_view.html#abfecad24328bff0988ca6488214d6d52", null ],
+    [ "DrawAnnotScore", "classvrv_1_1_view.html#af637ee9f39b57a92d2a78a9ef40f6fd0", null ],
     [ "DrawArpeg", "classvrv_1_1_view.html#a97a1829d5bbc7e84a9f89559b35a0fa5", null ],
     [ "DrawArpegEnclosing", "classvrv_1_1_view.html#a1583fec9b1376ecb78fe115881b2130a", null ],
     [ "DrawArtic", "classvrv_1_1_view.html#a0566695d628047766ec499dbcd3ace09", null ],

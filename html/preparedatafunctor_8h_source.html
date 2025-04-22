@@ -345,8 +345,8 @@ $(document).ready(function(){initNavTree('preparedatafunctor_8h_source.html','')
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment">     * Getter and modifier for the interface / id pairs</span></div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keyword">const</span> ArrayOfPlistInterfaceIDPairs &amp;GetInterfaceIDPairs()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_interfaceIDPairs; }</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordtype">void</span> InsertInterfaceIDPair(<span class="keyword">const</span> std::string &amp;elementID, PlistInterface *interface);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keyword">const</span> ArrayOfPlistObjectIDPairs &amp;GetInterfaceIDPairs()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_plistObjectIDPairs; }</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordtype">void</span> InsertInterfaceObjectIDPair(Object *objectWithPlist, <span class="keyword">const</span> std::string &amp;elementID);</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment">     * Functor interface</span></div>
@@ -360,8 +360,8 @@ $(document).ready(function(){initNavTree('preparedatafunctor_8h_source.html','')
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="comment">// Holds the interface / id pairs to match</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    ArrayOfPlistInterfaceIDPairs m_interfaceIDPairs;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="comment">// Holds the object with plist / id pairs to match</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    ArrayOfPlistObjectIDPairs m_plistObjectIDPairs;</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;};</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
@@ -961,7 +961,7 @@ $(document).ready(function(){initNavTree('preparedatafunctor_8h_source.html','')
 <div class="ttc" id="aclassvrv_1_1_m_rpt_html"><div class="ttname"><a href="classvrv_1_1_m_rpt.html">vrv::MRpt</a></div><div class="ttdoc">This class models the MEI &lt;mRpt&gt; element.</div><div class="ttdef"><b>Definition:</b> mrpt.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html"><div class="ttname"><a href="classvrv_1_1_measure.html">vrv::Measure</a></div><div class="ttdoc">This class represents a measure in a page-based score (Doc).</div><div class="ttdef"><b>Definition:</b> measure.h:46</div></div>
 <div class="ttc" id="aclassvrv_1_1_note_html"><div class="ttname"><a href="classvrv_1_1_note.html">vrv::Note</a></div><div class="ttdoc">This class models the MEI &lt;note&gt; element.</div><div class="ttdef"><b>Definition:</b> note.h:67</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:60</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:61</div></div>
 <div class="ttc" id="aclassvrv_1_1_pedal_html"><div class="ttname"><a href="classvrv_1_1_pedal.html">vrv::Pedal</a></div><div class="ttdoc">This class models the MEI &lt;pedal&gt; element.</div><div class="ttdef"><b>Definition:</b> pedal.h:34</div></div>
 <div class="ttc" id="aclassvrv_1_1_prepare_alt_sym_functor_html"><div class="ttname"><a href="classvrv_1_1_prepare_alt_sym_functor.html">vrv::PrepareAltSymFunctor</a></div><div class="ttdoc">This class matches the @altsym element to the corresponding symbolDef.</div><div class="ttdef"><b>Definition:</b> preparedatafunctor.h:156</div></div>
 <div class="ttc" id="aclassvrv_1_1_prepare_alt_sym_functor_html_a1e209c6f98018dbd907ae7cee3c17bac"><div class="ttname"><a href="classvrv_1_1_prepare_alt_sym_functor.html#a1e209c6f98018dbd907ae7cee3c17bac">vrv::PrepareAltSymFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> preparedatafunctor.h:169</div></div>
@@ -1028,7 +1028,7 @@ $(document).ready(function(){initNavTree('preparedatafunctor_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>preparedatafunctor.h</b></li>
-    <li class="footer">Generated on Tue Apr 22 2025 11:27:11 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 22 2025 11:27:41 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

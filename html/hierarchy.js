@@ -20,6 +20,7 @@ var hierarchy =
       [ "vrv::AltSymInterface", "classvrv_1_1_alt_sym_interface.html", [
         [ "vrv::ControlElement", "classvrv_1_1_control_element.html", [
           [ "vrv::AnchoredText", "classvrv_1_1_anchored_text.html", null ],
+          [ "vrv::AnnotScore", "classvrv_1_1_annot_score.html", null ],
           [ "vrv::Arpeg", "classvrv_1_1_arpeg.html", null ],
           [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ],
           [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
@@ -652,6 +653,7 @@ var hierarchy =
         [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
         [ "vrv::RepeatMark", "classvrv_1_1_repeat_mark.html", null ],
         [ "vrv::TimeSpanningInterface", "classvrv_1_1_time_spanning_interface.html", [
+          [ "vrv::AnnotScore", "classvrv_1_1_annot_score.html", null ],
           [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ],
           [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
           [ "vrv::CpMark", "classvrv_1_1_cp_mark.html", null ],
@@ -727,6 +729,7 @@ var hierarchy =
     [ "AttPlist", null, [
       [ "vrv::Annot", "classvrv_1_1_annot.html", null ],
       [ "vrv::PlistInterface", "classvrv_1_1_plist_interface.html", [
+        [ "vrv::AnnotScore", "classvrv_1_1_annot_score.html", null ],
         [ "vrv::Arpeg", "classvrv_1_1_arpeg.html", null ],
         [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ],
         [ "vrv::Expansion", "classvrv_1_1_expansion.html", null ]

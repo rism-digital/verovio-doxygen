@@ -10,6 +10,8 @@ var classvrv_1_1_const_functor_interface =
     [ "VisitAlignmentReferenceEnd", "classvrv_1_1_const_functor_interface.html#a744a21746f280f59c18311930d64d508", null ],
     [ "VisitAnchoredText", "classvrv_1_1_const_functor_interface.html#a8720f97c9528bcad824219ab05aac6ea", null ],
     [ "VisitAnchoredTextEnd", "classvrv_1_1_const_functor_interface.html#ae46727e03af8596d2d261b3c434670b1", null ],
+    [ "VisitAnnotScore", "classvrv_1_1_const_functor_interface.html#ae157b8acfcd533c336e8d41cea82ab09", null ],
+    [ "VisitAnnotScoreEnd", "classvrv_1_1_const_functor_interface.html#a548e0419a623fa70319729ace740d6ee", null ],
     [ "VisitArpeg", "classvrv_1_1_const_functor_interface.html#ace66635bafd934a25bc3614c3d958d30", null ],
     [ "VisitArpegEnd", "classvrv_1_1_const_functor_interface.html#a06cd945bab0ce5c7fb0880ef7daab5cc", null ],
     [ "VisitArtic", "classvrv_1_1_const_functor_interface.html#ab8210047d0f8764b2a93f32f0e3713f4", null ],
