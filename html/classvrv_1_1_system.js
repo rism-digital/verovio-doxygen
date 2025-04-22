@@ -22,6 +22,8 @@ var classvrv_1_1_system =
     [ "GetMinimumSystemSpacing", "classvrv_1_1_system.html#a1434a0fad021420d35b35540604d0a39", null ],
     [ "GetPreferredCurveDirection", "classvrv_1_1_system.html#ab16a3b327ed12fe7fb49d272a83290ac", null ],
     [ "GetSystemIdx", "classvrv_1_1_system.html#a89c0cdfa6d45bb5af1927608ca06cb52", null ],
+    [ "GetTopVisibleStaff", "classvrv_1_1_system.html#a9e1509d9845221f03101e6be160dd0f3", null ],
+    [ "GetTopVisibleStaff", "classvrv_1_1_system.html#a4537bedba57c93202f8defdd33985909", null ],
     [ "HasMixedDrawingStemDir", "classvrv_1_1_system.html#ac859406d686fedbf63ea12690af4a120", null ],
     [ "IsDrawingOptimized", "classvrv_1_1_system.html#ac19fbd767747babe72806961d9d30bbd", null ],
     [ "IsDrawingOptimized", "classvrv_1_1_system.html#a060b80619621bf26c076b69e7a4bd0c7", null ],

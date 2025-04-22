@@ -64,8 +64,6 @@ var classvrv_1_1_measure =
     [ "GetRightBarLineRight", "classvrv_1_1_measure.html#ac302be4e65ce4567b86806ed257002d7", null ],
     [ "GetRightBarLineXRel", "classvrv_1_1_measure.html#ac1bb604df97282f84e038010d1ce3fb0", null ],
     [ "GetSectionRestartShift", "classvrv_1_1_measure.html#a48fc03935905d04e3280bf3bf9812dda", null ],
-    [ "GetTopVisibleStaff", "classvrv_1_1_measure.html#a763effb0962a66b89e7b083f1e2a10f2", null ],
-    [ "GetTopVisibleStaff", "classvrv_1_1_measure.html#a3e9337bf948aa4fb33cad7aa67a3312d", null ],
     [ "GetWidth", "classvrv_1_1_measure.html#aaea9b1238acf043b2ea503ce946080a3", null ],
     [ "HasAlignmentRefWithMultipleLayers", "classvrv_1_1_measure.html#aa89eefb02eda36ff7d13f0d45098aee7", null ],
     [ "HasAlignmentRefWithMultipleLayers", "classvrv_1_1_measure.html#a3a75ded671717028d0130988ea78e669", null ],

@@ -254,7 +254,7 @@ var searchData=
   ['gettimestampattime_2120',['GetTimestampAtTime',['../classvrv_1_1_timestamp_aligner.html#a7bb2cf662de501c0a64060552f0116e3',1,'vrv::TimestampAligner']]],
   ['gettimestampattralignmentduration_2121',['GetTimestampAttrAlignmentDuration',['../classvrv_1_1_timestamp_attr.html#a27622b1e41918202707b46e8fe8e56df',1,'vrv::TimestampAttr']]],
   ['gettopnote_2122',['GetTopNote',['../classvrv_1_1_chord.html#aeeb2849de0748966d70c7078bdfd4530',1,'vrv::Chord::GetTopNote()'],['../classvrv_1_1_tab_grp.html#af93f0a5fe85cacaf6ba6e1371097ca15',1,'vrv::TabGrp::GetTopNote()']]],
-  ['gettopvisiblestaff_2123',['GetTopVisibleStaff',['../classvrv_1_1_measure.html#a763effb0962a66b89e7b083f1e2a10f2',1,'vrv::Measure']]],
+  ['gettopvisiblestaff_2123',['GetTopVisibleStaff',['../classvrv_1_1_system.html#a9e1509d9845221f03101e6be160dd0f3',1,'vrv::System']]],
   ['gettotalbeamwidth_2124',['GetTotalBeamWidth',['../classvrv_1_1_beam_drawing_interface.html#adaec7fb532d7ee8f2d8b5f06e7eb79aa',1,'vrv::BeamDrawingInterface']]],
   ['gettotalcount_2125',['GetTotalCount',['../classvrv_1_1_meter_sig.html#a626f1377088f7297de38790d467f927e',1,'vrv::MeterSig']]],
   ['gettotalheight_2126',['GetTotalHeight',['../classvrv_1_1_div.html#a91d39ea4e0ef50fc1e492cf1a9194359',1,'vrv::Div::GetTotalHeight()'],['../classvrv_1_1_pg_foot.html#aaa4f24ede17c57dd9500deec30c2612a',1,'vrv::PgFoot::GetTotalHeight()'],['../classvrv_1_1_pg_head.html#ad591b9968d3b1bc9bb448989131a4112',1,'vrv::PgHead::GetTotalHeight()'],['../classvrv_1_1_text_layout_element.html#a9513edb9a22f5cc7275349e15a306618',1,'vrv::TextLayoutElement::GetTotalHeight()']]],

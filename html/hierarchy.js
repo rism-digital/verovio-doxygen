@@ -639,6 +639,40 @@ var hierarchy =
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
       [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
     ] ],
+    [ "AttPartIdent", null, [
+      [ "vrv::TimePointInterface", "classvrv_1_1_time_point_interface.html", [
+        [ "vrv::Arpeg", "classvrv_1_1_arpeg.html", null ],
+        [ "vrv::Breath", "classvrv_1_1_breath.html", null ],
+        [ "vrv::Caesura", "classvrv_1_1_caesura.html", null ],
+        [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
+        [ "vrv::Fing", "classvrv_1_1_fing.html", null ],
+        [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
+        [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
+        [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
+        [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
+        [ "vrv::RepeatMark", "classvrv_1_1_repeat_mark.html", null ],
+        [ "vrv::TimeSpanningInterface", "classvrv_1_1_time_spanning_interface.html", [
+          [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ],
+          [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
+          [ "vrv::CpMark", "classvrv_1_1_cp_mark.html", null ],
+          [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
+          [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
+          [ "vrv::F", "classvrv_1_1_f.html", null ],
+          [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
+          [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
+          [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
+          [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
+          [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
+          [ "vrv::PitchInflection", "classvrv_1_1_pitch_inflection.html", null ],
+          [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
+          [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
+          [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ],
+          [ "vrv::Tie", "classvrv_1_1_tie.html", null ],
+          [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
+        ] ],
+        [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
+      ] ]
+    ] ],
     [ "AttPedalLog", null, [
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ]
     ] ],
@@ -757,38 +791,7 @@ var hierarchy =
     [ "AttStaffIdent", null, [
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ],
-      [ "vrv::TimePointInterface", "classvrv_1_1_time_point_interface.html", [
-        [ "vrv::Arpeg", "classvrv_1_1_arpeg.html", null ],
-        [ "vrv::Breath", "classvrv_1_1_breath.html", null ],
-        [ "vrv::Caesura", "classvrv_1_1_caesura.html", null ],
-        [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
-        [ "vrv::Fing", "classvrv_1_1_fing.html", null ],
-        [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
-        [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
-        [ "vrv::Ornam", "classvrv_1_1_ornam.html", null ],
-        [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
-        [ "vrv::RepeatMark", "classvrv_1_1_repeat_mark.html", null ],
-        [ "vrv::TimeSpanningInterface", "classvrv_1_1_time_spanning_interface.html", [
-          [ "vrv::BeamSpan", "classvrv_1_1_beam_span.html", null ],
-          [ "vrv::BracketSpan", "classvrv_1_1_bracket_span.html", null ],
-          [ "vrv::CpMark", "classvrv_1_1_cp_mark.html", null ],
-          [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
-          [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
-          [ "vrv::F", "classvrv_1_1_f.html", null ],
-          [ "vrv::Gliss", "classvrv_1_1_gliss.html", null ],
-          [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
-          [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
-          [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
-          [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
-          [ "vrv::PitchInflection", "classvrv_1_1_pitch_inflection.html", null ],
-          [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
-          [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
-          [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ],
-          [ "vrv::Tie", "classvrv_1_1_tie.html", null ],
-          [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
-        ] ],
-        [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
-      ] ]
+      [ "vrv::TimePointInterface", "classvrv_1_1_time_point_interface.html", null ]
     ] ],
     [ "AttStaffLoc", null, [
       [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ],
