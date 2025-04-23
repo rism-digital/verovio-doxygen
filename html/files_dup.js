@@ -29,6 +29,7 @@ var files_dup =
     [ "altsyminterface.h", "altsyminterface_8h_source.html", null ],
     [ "anchoredtext.h", "anchoredtext_8h_source.html", null ],
     [ "annot.h", "annot_8h_source.html", null ],
+    [ "annotscore.h", "annotscore_8h_source.html", null ],
     [ "app.h", "app_8h_source.html", null ],
     [ "areaposinterface.h", "areaposinterface_8h_source.html", null ],
     [ "arpeg.h", "arpeg_8h_source.html", null ],

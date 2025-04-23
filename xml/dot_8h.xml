@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dot_8h" kind="file" language="C++">
     <compoundname>dot.h</compoundname>
     <includes refid="layerelement_8h" local="yes">layerelement.h</includes>
@@ -9,7 +9,7 @@
       <node id="12">
         <label>list</label>
       </node>
-      <node id="33">
+      <node id="34">
         <label>boundingbox.h</label>
         <link refid="boundingbox_8h_source"/>
         <childnode refid="9" relation="include">
@@ -24,7 +24,7 @@
       <node id="25">
         <label>atttypes.h</label>
       </node>
-      <node id="34">
+      <node id="35">
         <label>positioninterface.h</label>
         <link refid="positioninterface_8h_source"/>
         <childnode refid="4" relation="include">
@@ -69,7 +69,7 @@
       <node id="13">
         <label>map</label>
       </node>
-      <node id="32">
+      <node id="33">
         <label>attmodule.h</label>
       </node>
       <node id="4">
@@ -91,6 +91,9 @@
       <node id="14">
         <label>tuple</label>
       </node>
+      <node id="31">
+        <label>optional</label>
+      </node>
       <node id="15">
         <label>vector</label>
       </node>
@@ -99,7 +102,7 @@
         <link refid="dot_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="34" relation="include">
+        <childnode refid="35" relation="include">
         </childnode>
       </node>
       <node id="16">
@@ -129,13 +132,15 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
         <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="32" relation="include">
         </childnode>
         <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
@@ -152,7 +157,7 @@
       <node id="23">
         <label>unordered_map</label>
       </node>
-      <node id="31">
+      <node id="32">
         <label>attclasses.h</label>
       </node>
       <node id="19">
@@ -179,6 +184,8 @@
         <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -247,22 +254,22 @@
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22" refid="classvrv_1_1_dot" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_dot" kindref="compound">Dot</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_position_interface" kindref="compound">PositionInterface</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttColor,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttDotLog<sp/>{</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_dot" kindref="compound">Dot</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_dot" kindref="compound">Dot</ref>();</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_dot" kindref="compound">Dot</ref>();</highlight></codeline>
 <codeline lineno="31" refid="classvrv_1_1_dot_1af02dc52ea7b62b411661617819f654b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*<ref refid="classvrv_1_1_dot_1af02dc52ea7b62b411661617819f654b2" kindref="member">Clone</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_dot" kindref="compound">Dot</ref>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_dot_1ac4cae3b2c715e9da73a7d21a4eed2e5d" kindref="member">Reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>GetClassName()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Dot&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="32" refid="classvrv_1_1_dot_1ac4cae3b2c715e9da73a7d21a4eed2e5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_dot_1ac4cae3b2c715e9da73a7d21a4eed2e5d" kindref="member">Reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>GetClassName()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;dot&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
 <codeline lineno="35"></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>PositionInterface<sp/>*GetPositionInterface()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vrv_cast&lt;PositionInterface<sp/>*&gt;(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_position_interface" kindref="compound">PositionInterface</ref><sp/>*GetPositionInterface()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vrv_cast&lt;PositionInterface<sp/>*&gt;(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PositionInterface<sp/>*GetPositionInterface()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vrv_cast&lt;const<sp/>PositionInterface<sp/>*&gt;(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
-<codeline lineno="43"></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45" refid="classvrv_1_1_dot_1aed33dfbb9942927d9e935d656533c88b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_dot_1aed33dfbb9942927d9e935d656533c88b" kindref="member">HasToBeAligned</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_dot_1a3e60963bddaec441fb8628902e1f85e1" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55" refid="classvrv_1_1_dot_1a3e60963bddaec441fb8628902e1f85e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_dot_1a3e60963bddaec441fb8628902e1f85e1" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_dot_1a3e60963bddaec441fb8628902e1f85e1" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>

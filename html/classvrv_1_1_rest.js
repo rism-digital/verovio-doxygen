@@ -8,6 +8,7 @@ var classvrv_1_1_rest =
     [ "AcceptEnd", "classvrv_1_1_rest.html#acbfbab4fd6dafbec642739ec04b02735", null ],
     [ "AddChild", "classvrv_1_1_rest.html#a9423bd9fbe08e1d3dd011226121a8900", null ],
     [ "Clone", "classvrv_1_1_rest.html#a90a5a7595f5a3611e19f42144b67afb7", null ],
+    [ "GetAltSymInterface", "classvrv_1_1_rest.html#a6ea6c4f93a3b0d38aad1e2d48109dba0", null ],
     [ "GetAltSymInterface", "classvrv_1_1_rest.html#ab6ddd6cdf97d2a3437a77190c0bbded9", null ],
     [ "GetClassName", "classvrv_1_1_rest.html#a2dfcf0969db9808e3454c6012ced7d8f", null ],
     [ "GetDurationInterface", "classvrv_1_1_rest.html#a4c0c5b2317f30ae407e69f1bd3f86b18", null ],
@@ -18,7 +19,7 @@ var classvrv_1_1_rest =
     [ "GetRestGlyph", "classvrv_1_1_rest.html#a1912729f9332702f9c27dc2669f337fb", null ],
     [ "GetRestGlyph", "classvrv_1_1_rest.html#a9d1a8d1586605ed6f0ea42f87eb61964", null ],
     [ "HasToBeAligned", "classvrv_1_1_rest.html#a80065d5795046cf1ebaf9c01b80cd897", null ],
-    [ "IsSupportedChild", "classvrv_1_1_rest.html#a440179df00a09ea5e7892e0c5eff5695", null ],
+    [ "IsSupportedChild", "classvrv_1_1_rest.html#ab7c5fc5c7590037a1d4cc5666ed0b188", null ],
     [ "Reset", "classvrv_1_1_rest.html#a5ecc39383af3006f31d2bcb0d7b09fac", null ],
     [ "UpdateFromTransLoc", "classvrv_1_1_rest.html#a2abfa9a01f57ac36187c78ebe7a30b9a", null ]
 ];

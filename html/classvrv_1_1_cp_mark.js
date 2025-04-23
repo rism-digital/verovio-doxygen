@@ -14,6 +14,6 @@ var classvrv_1_1_cp_mark =
     [ "GetTimePointInterface", "classvrv_1_1_cp_mark.html#ad23c0cca43e78cf603631cd33fba75dc", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_cp_mark.html#a73b787dae22950475da6db84a6882cd8", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_cp_mark.html#abd7dcd335bc4d2be74afed3f620bbd06", null ],
-    [ "IsSupportedChild", "classvrv_1_1_cp_mark.html#aff01f2b52ab6712a7de5c1f2b9f519cd", null ],
+    [ "IsSupportedChild", "classvrv_1_1_cp_mark.html#a5326686ba4e12bc196a8d8d0472c797b", null ],
     [ "Reset", "classvrv_1_1_cp_mark.html#ab45b2ed0df8adb52142207e824773007", null ]
 ];

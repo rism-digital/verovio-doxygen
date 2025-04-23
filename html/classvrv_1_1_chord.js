@@ -38,7 +38,7 @@ var classvrv_1_1_chord =
     [ "HasCrossStaff", "classvrv_1_1_chord.html#a10b9babfd1099c156e19a49ffc7eaaec", null ],
     [ "HasNoteWithDots", "classvrv_1_1_chord.html#a236218f4740c511e02d71a5ea722a3af", null ],
     [ "HasToBeAligned", "classvrv_1_1_chord.html#a817274133e13ef710a089fd19881e8d0", null ],
-    [ "IsSupportedChild", "classvrv_1_1_chord.html#aa20aa8139c016d66af66fcc48001ee23", null ],
+    [ "IsSupportedChild", "classvrv_1_1_chord.html#aff5be37b218a760a30b6018fe156aa0c", null ],
     [ "IsVisible", "classvrv_1_1_chord.html#a513eb215a397a4995e8b261df9740198", null ],
     [ "PositionInChord", "classvrv_1_1_chord.html#aad7e7092366522e7bb388afb98a215e2", null ],
     [ "Reset", "classvrv_1_1_chord.html#a4b05be56b85202f76ab861836f8c04c2", null ],

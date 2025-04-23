@@ -12,6 +12,6 @@ var classvrv_1_1_f =
     [ "GetTimePointInterface", "classvrv_1_1_f.html#a90df12d61729469dffd379e3f11d962e", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_f.html#a14b926eef3b019468a6201c696c57d94", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_f.html#a5a78c03481eed0d003de92fadda5195f", null ],
-    [ "IsSupportedChild", "classvrv_1_1_f.html#ab1b30e82af9256ff56937b5b96a18ee1", null ],
+    [ "IsSupportedChild", "classvrv_1_1_f.html#af10342df6095dc44e08f35a03bbab1bd", null ],
     [ "Reset", "classvrv_1_1_f.html#ae2df627f5b98b03575c2d8bd23b24fd9", null ]
 ];

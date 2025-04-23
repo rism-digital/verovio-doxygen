@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classvrv_1_1_drawing_list_interface" kind="class" language="C++" prot="public">
     <compoundname>vrv::DrawingListInterface</compoundname>
     <derivedcompoundref refid="classvrv_1_1_chord" prot="public" virt="non-virtual">vrv::Chord</derivedcompoundref>
@@ -41,9 +41,9 @@
         <definition>virtual void vrv::DrawingListInterface::Reset</definition>
         <argsstring>()</argsstring>
         <name>Reset</name>
-        <reimplementedby refid="classvrv_1_1_system_1a4288aadcbfa97fa58417834d35ad8170">Reset</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_layer_1aa7af69d108375236a7d3e190f4493d13">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_chord_1a4b05be56b85202f76ab861836f8c04c2">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_layer_1aa7af69d108375236a7d3e190f4493d13">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_system_1a4288aadcbfa97fa58417834d35ad8170">Reset</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -51,6 +51,26 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="42" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_drawing_list_interface_1a28ab2fa069f0ee96cb0ae47a114a706b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FunctorCode</type>
+        <definition>FunctorCode vrv::DrawingListInterface::InterfaceResetData</definition>
+        <argsstring>(ResetDataFunctor &amp;functor)</argsstring>
+        <name>InterfaceResetData</name>
+        <param>
+          <type><ref refid="classvrv_1_1_reset_data_functor" kindref="compound">ResetDataFunctor</ref> &amp;</type>
+          <declname>functor</declname>
+        </param>
+        <briefdescription>
+<para>Called explicitly from <ref refid="classvrv_1_1_reset_data_functor" kindref="compound">ResetDataFunctor</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="73" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -66,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="71" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="71" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="82" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="82" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -150,11 +170,12 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="33" column="27" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="33" bodyend="75"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" line="33" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/drawinginterface.h" bodystart="33" bodyend="86"/>
     <listofallmembers>
       <member refid="classvrv_1_1_drawing_list_interface_1a1d255ea3d329ebbd6d7cd32fbe88646d" prot="public" virt="non-virtual"><scope>vrv::DrawingListInterface</scope><name>AddToDrawingList</name></member>
       <member refid="classvrv_1_1_drawing_list_interface_1a33795e2af86cbbe66f71c10266e81b2a" prot="public" virt="non-virtual"><scope>vrv::DrawingListInterface</scope><name>DrawingListInterface</name></member>
       <member refid="classvrv_1_1_drawing_list_interface_1acffbc6780719ad0f0342be03a3aa2a3e" prot="public" virt="non-virtual"><scope>vrv::DrawingListInterface</scope><name>GetDrawingList</name></member>
+      <member refid="classvrv_1_1_drawing_list_interface_1a28ab2fa069f0ee96cb0ae47a114a706b" prot="public" virt="non-virtual"><scope>vrv::DrawingListInterface</scope><name>InterfaceResetData</name></member>
       <member refid="classvrv_1_1_drawing_list_interface_1a20ea943a21971a0b45f024a604adec57" prot="protected" virt="non-virtual"><scope>vrv::DrawingListInterface</scope><name>m_drawingList</name></member>
       <member refid="classvrv_1_1_drawing_list_interface_1a1a69c8d2fecf12f6b22f2544e0312298" prot="public" virt="virtual"><scope>vrv::DrawingListInterface</scope><name>Reset</name></member>
       <member refid="classvrv_1_1_drawing_list_interface_1a4b20a831da972d0a05fa42be7c6eb5e9" prot="public" virt="non-virtual"><scope>vrv::DrawingListInterface</scope><name>ResetDrawingList</name></member>

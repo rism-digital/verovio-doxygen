@@ -12,6 +12,6 @@ var classvrv_1_1_custos =
     [ "GetPitchInterface", "classvrv_1_1_custos.html#a90dfd0fb598e68f2f39a7e96f618440e", null ],
     [ "GetPitchInterface", "classvrv_1_1_custos.html#a7c0e3a01af3e2a957993128301cc8f84", null ],
     [ "HasToBeAligned", "classvrv_1_1_custos.html#a6bfa3e27b29e13b40e346adb3dcbaacf", null ],
-    [ "IsSupportedChild", "classvrv_1_1_custos.html#a4436311935cefa3da14017a6e03166b7", null ],
+    [ "IsSupportedChild", "classvrv_1_1_custos.html#aa60c460f934eb19113c2b4162b36a77f", null ],
     [ "Reset", "classvrv_1_1_custos.html#ac349d697333ee8966b9a8dc845b772b5", null ]
 ];

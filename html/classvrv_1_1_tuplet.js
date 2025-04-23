@@ -27,7 +27,7 @@ var classvrv_1_1_tuplet =
     [ "GetNumAlignedBeam", "classvrv_1_1_tuplet.html#aa90ff2d1d649aea1f11069c980cbcebc", null ],
     [ "GetNumAlignedBeam", "classvrv_1_1_tuplet.html#a92894d59d889073739e60730f51797e3", null ],
     [ "HasValidTupletNumPosition", "classvrv_1_1_tuplet.html#adf5b38ca4020b4eeb68c8abfbb68cb52", null ],
-    [ "IsSupportedChild", "classvrv_1_1_tuplet.html#a895dd98a22b0024d37b1f4fbbc5ec6ca", null ],
+    [ "IsSupportedChild", "classvrv_1_1_tuplet.html#abf532531c654468cdea005bbf3f2e7bd", null ],
     [ "Reset", "classvrv_1_1_tuplet.html#aad4c98481dc0f4dc718b9f5ed7bd4b99", null ],
     [ "ResetInnerSlurs", "classvrv_1_1_tuplet.html#ade388c2b211a5f13832116273795139f", null ],
     [ "SetBracketAlignedBeam", "classvrv_1_1_tuplet.html#addcb699687b8cce875586420b9e8efd4", null ],

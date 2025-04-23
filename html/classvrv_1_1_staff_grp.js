@@ -24,7 +24,7 @@ var classvrv_1_1_staff_grp =
     [ "GetMaxStaffSize", "classvrv_1_1_staff_grp.html#a63ed3fa8fc47b39e734fadc8fcbbec86", null ],
     [ "HasLabelAbbrInfo", "classvrv_1_1_staff_grp.html#a059e84318a4cfb3d406b0a3464e4eedc", null ],
     [ "HasLabelInfo", "classvrv_1_1_staff_grp.html#a542ce1d55ab300c4d225e8789c020689", null ],
-    [ "IsSupportedChild", "classvrv_1_1_staff_grp.html#aa21bff7d15bb42c6bc012053b3af0ec9", null ],
+    [ "IsSupportedChild", "classvrv_1_1_staff_grp.html#adca9f61e3081b2a6e75fd13c8c473ac0", null ],
     [ "Reset", "classvrv_1_1_staff_grp.html#a3a45f6fd7726cee3546740b28d6cbd4a", null ],
     [ "SetDrawingVisibility", "classvrv_1_1_staff_grp.html#a84b445f6a6c649cd9f35f9fd2adbecaa", null ],
     [ "SetEverythingVisible", "classvrv_1_1_staff_grp.html#acc4b1b907f5839789cbae943bd133987", null ],

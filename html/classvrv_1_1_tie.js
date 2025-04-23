@@ -2,7 +2,6 @@ var classvrv_1_1_tie =
 [
     [ "Tie", "classvrv_1_1_tie.html#a60640a38d8682c328c0bed21970ca334", null ],
     [ "Tie", "classvrv_1_1_tie.html#a178f8bcabda3db93e93ea94e74965fca", null ],
-    [ "Tie", "classvrv_1_1_tie.html#a5a738e31e6686fa6abc1343490869bce", null ],
     [ "~Tie", "classvrv_1_1_tie.html#a4ef66bfe13023a47286d34913cbcda19", null ],
     [ "Accept", "classvrv_1_1_tie.html#aaa0486d5919d68d4a68ea3790ca74404", null ],
     [ "Accept", "classvrv_1_1_tie.html#affb4923e708d4d9a758cedd9a1ff8e15", null ],

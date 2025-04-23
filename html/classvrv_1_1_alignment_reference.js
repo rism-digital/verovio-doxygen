@@ -11,6 +11,6 @@ var classvrv_1_1_alignment_reference =
     [ "HasAccidVerticalOverlap", "classvrv_1_1_alignment_reference.html#a20a67edf81f6a10054bafac29530d8a5", null ],
     [ "HasCrossStaffElements", "classvrv_1_1_alignment_reference.html#ad88dbf946e0441c77075ae5d6e43320b", null ],
     [ "HasMultipleLayer", "classvrv_1_1_alignment_reference.html#a9c1895942dd54bf9ac12b788dbf7570c", null ],
-    [ "IsSupportedChild", "classvrv_1_1_alignment_reference.html#ab1145409381d64fa25d3b506c14872da", null ],
+    [ "IsSupportedChild", "classvrv_1_1_alignment_reference.html#a2643808f9e26935be6b8c3714d3afc95", null ],
     [ "Reset", "classvrv_1_1_alignment_reference.html#a084e3418ace027cbfa49a29e889186a4", null ]
 ];

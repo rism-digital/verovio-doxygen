@@ -14,6 +14,6 @@ var classvrv_1_1_m_num =
     [ "GetTimePointInterface", "classvrv_1_1_m_num.html#a3925b400fb0923d9345748a48c0a8de5", null ],
     [ "IsGenerated", "classvrv_1_1_m_num.html#aa01ec8b7ad75d13ad453adf6fa38fb38", null ],
     [ "IsGenerated", "classvrv_1_1_m_num.html#a34d932e08dcee83bcd2fd0f4e6babf0f", null ],
-    [ "IsSupportedChild", "classvrv_1_1_m_num.html#a496cb97115847095575f179785ab677d", null ],
+    [ "IsSupportedChild", "classvrv_1_1_m_num.html#adb90d74d8352d0ed840291d272e76f07", null ],
     [ "Reset", "classvrv_1_1_m_num.html#a58caebdcbaeb4aecff396ce6d4f09306", null ]
 ];

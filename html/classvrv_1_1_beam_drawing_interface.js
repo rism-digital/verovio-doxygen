@@ -15,6 +15,7 @@ var classvrv_1_1_beam_drawing_interface =
     [ "InitCoords", "classvrv_1_1_beam_drawing_interface.html#a93af1921113f5427a78398d175be022d", null ],
     [ "InitCue", "classvrv_1_1_beam_drawing_interface.html#af5aa6e1d0fd35b213dc1b8114c87cd58", null ],
     [ "InitGraceStemDir", "classvrv_1_1_beam_drawing_interface.html#a4b33dd25569bab76b1707e9f60e2f7e1", null ],
+    [ "InterfaceResetData", "classvrv_1_1_beam_drawing_interface.html#af949e75870e153abf5a5a235577bb95e", null ],
     [ "IsFirstIn", "classvrv_1_1_beam_drawing_interface.html#ac6201549e945c8f94f2ec75e3a900c98", null ],
     [ "IsHorizontal", "classvrv_1_1_beam_drawing_interface.html#a97c459ebe3802fafd2c4b80ef95bca7c", null ],
     [ "IsLastIn", "classvrv_1_1_beam_drawing_interface.html#af59e165a9c043e1c1fb42af11e7a596f", null ],

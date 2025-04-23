@@ -2,7 +2,6 @@ var classvrv_1_1_layer_element =
 [
     [ "LayerElement", "classvrv_1_1_layer_element.html#a6294e2662280f0cf6f48bbf9855cf28c", null ],
     [ "LayerElement", "classvrv_1_1_layer_element.html#a26721461ae7b348cc9893106fffc7b01", null ],
-    [ "LayerElement", "classvrv_1_1_layer_element.html#add03013020c062950b4d10526c812698", null ],
     [ "~LayerElement", "classvrv_1_1_layer_element.html#a7bd87c91c7e394f0299a6b9a3b6d6d9a", null ],
     [ "Accept", "classvrv_1_1_layer_element.html#a17098be42f0295426372afa9d28e9134", null ],
     [ "Accept", "classvrv_1_1_layer_element.html#a4b50a20c4e6de476f92f2a9265a25e6d", null ],

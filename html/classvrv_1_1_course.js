@@ -8,6 +8,6 @@ var classvrv_1_1_course =
     [ "AcceptEnd", "classvrv_1_1_course.html#a4bcafec320e3d9209507796da7bc64c9", null ],
     [ "Clone", "classvrv_1_1_course.html#ac5c3aad9e1969e5bd10a0e1c3aa6d409", null ],
     [ "GetClassName", "classvrv_1_1_course.html#a494a774409ae005db3e2fd575c781366", null ],
-    [ "IsSupportedChild", "classvrv_1_1_course.html#a7dd9e033c07d058e7c4493e790fd25a3", null ],
+    [ "IsSupportedChild", "classvrv_1_1_course.html#a52875a7519230193caa1747672e35d72", null ],
     [ "Reset", "classvrv_1_1_course.html#aef751399f1bbab235ed65beb74f79ee3", null ]
 ];

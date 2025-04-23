@@ -65,7 +65,7 @@ var classvrv_1_1_layer =
     [ "HasCrossStaffFromAbove", "classvrv_1_1_layer.html#adbe990fc7f90739f43103ca3e2805504", null ],
     [ "HasCrossStaffFromBelow", "classvrv_1_1_layer.html#a02e25e8082abddb22bec2cdb8b440ad8", null ],
     [ "HasStaffDef", "classvrv_1_1_layer.html#adccd73277fa97e64979b7782f51f1d8f", null ],
-    [ "IsSupportedChild", "classvrv_1_1_layer.html#a68f1bf954bce23bc23b9a3c8fb8358f8", null ],
+    [ "IsSupportedChild", "classvrv_1_1_layer.html#a6f8f431a10aa5c767ecff7d2b9eff705", null ],
     [ "Reset", "classvrv_1_1_layer.html#aa7af69d108375236a7d3e190f4493d13", null ],
     [ "ResetStaffDefObjects", "classvrv_1_1_layer.html#a973a56164bfe4785b69e9b44ce65489c", null ],
     [ "SetCrossStaffFromAbove", "classvrv_1_1_layer.html#af2b6c3163468f34d782e334675d82bb9", null ],

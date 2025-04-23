@@ -7,6 +7,6 @@ var classvrv_1_1_timestamp_aligner =
     [ "AcceptEnd", "classvrv_1_1_timestamp_aligner.html#a0e85b8894d2ee802ef4f9a24d99cfdf6", null ],
     [ "AcceptEnd", "classvrv_1_1_timestamp_aligner.html#ab2184c9ae0ff85f5e49ad28b8ff1d9b6", null ],
     [ "GetTimestampAtTime", "classvrv_1_1_timestamp_aligner.html#a7bb2cf662de501c0a64060552f0116e3", null ],
-    [ "IsSupportedChild", "classvrv_1_1_timestamp_aligner.html#a866380e02cd4d5520b2041958eca7496", null ],
+    [ "IsSupportedChild", "classvrv_1_1_timestamp_aligner.html#a03c1405b3ec6c973bc3f6276c58731fd", null ],
     [ "Reset", "classvrv_1_1_timestamp_aligner.html#a57bc007a4312c29ccecfb3338c90cf76", null ]
 ];

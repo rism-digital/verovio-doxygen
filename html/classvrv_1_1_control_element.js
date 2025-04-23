@@ -2,7 +2,6 @@ var classvrv_1_1_control_element =
 [
     [ "ControlElement", "classvrv_1_1_control_element.html#a85bf4f12a52a3484bd10a638b4b3fbe8", null ],
     [ "ControlElement", "classvrv_1_1_control_element.html#aa9be5bc11d51b4d8c0be3ccc93baf6bf", null ],
-    [ "ControlElement", "classvrv_1_1_control_element.html#a3609eb955915e4f36e0be4262f34176b", null ],
     [ "~ControlElement", "classvrv_1_1_control_element.html#a2cd0ecb73934d457a4b5dcf18bfd41de", null ],
     [ "Accept", "classvrv_1_1_control_element.html#a6d5919267cc78de27e1853518222a7b1", null ],
     [ "Accept", "classvrv_1_1_control_element.html#af1c21268c89fb885ff36c2d0583f7b00", null ],

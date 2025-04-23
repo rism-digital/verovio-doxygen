@@ -15,7 +15,7 @@ var classvrv_1_1_ligature =
     [ "GetLastNote", "classvrv_1_1_ligature.html#a1db3d26a346811010619d9039062aed6", null ],
     [ "GetLastNote", "classvrv_1_1_ligature.html#aeaebba3df28eb4a3b179d128c6bfb347", null ],
     [ "HasToBeAligned", "classvrv_1_1_ligature.html#a15f9a61e96129d0a6b8009ee9df62bad", null ],
-    [ "IsSupportedChild", "classvrv_1_1_ligature.html#a1c55450510e851184811ea55831f9d49", null ],
+    [ "IsSupportedChild", "classvrv_1_1_ligature.html#a47e39cb357b123dee158fa0fd81c58b3", null ],
     [ "Reset", "classvrv_1_1_ligature.html#a43486ca3783c707d30a22c7403a91d08", null ],
     [ "m_drawingShapes", "classvrv_1_1_ligature.html#a3a19dd9f115ed2bde44093767a27ae0f", null ]
 ];

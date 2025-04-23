@@ -1,9 +1,41 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classvrv_1_1_beam_segment" kind="class" language="C++" prot="public">
     <compoundname>vrv::BeamSegment</compoundname>
     <derivedcompoundref refid="classvrv_1_1_beam_span_segment" prot="public" virt="non-virtual">vrv::BeamSpanSegment</derivedcompoundref>
     <includes refid="beam_8h" local="no">beam.h</includes>
+      <sectiondef kind="user-defined">
+      <header>The role in a stem.sameas situation.</header>
+      <description><para>Set in BeamSegment::InitSameasRoles and then in UpdateSameasRoles Used to determine if the beam is the primary one (normal stems and beams) or the secondary one (linking both notes).</para>
+<para>This depends on the drawing beam place, which can be encoded but otherwise calculated by CalcBeamPlace. The pointer to the other beam m_stemSameasReverseRole is set only for the first of the two beams and is not bi-directional. Is is set in InitSameasRoles. </para>
+</description>
+      <memberdef kind="variable" id="classvrv_1_1_beam_segment_1ab09b2aa639b5863612d01bfdf75f4d1a" prot="public" static="no" mutable="no">
+        <type>StemSameasDrawingRole</type>
+        <definition>StemSameasDrawingRole vrv::BeamSegment::m_stemSameasRole</definition>
+        <argsstring></argsstring>
+        <name>m_stemSameasRole</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="214" column="27" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_beam_segment_1ad4713706066f9cbd831207a623d28e26" prot="public" static="no" mutable="no">
+        <type>StemSameasDrawingRole *</type>
+        <definition>StemSameasDrawingRole* vrv::BeamSegment::m_stemSameasReverseRole</definition>
+        <argsstring></argsstring>
+        <name>m_stemSameasReverseRole</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="215" column="27" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors, and other standard methods</header>
       <memberdef kind="function" id="classvrv_1_1_beam_segment_1affb5c3ee3c4310bc60db4c3880c8fb19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -296,38 +328,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="97" column="10"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="user-defined">
-      <header>The role in a stem.sameas situation.</header>
-      <description><para>Set in BeamSegment::InitSameasRoles and then in UpdateSameasRoles Used to determine if the beam is the primary one (normal stems and beams) or the secondary one (linking both notes).</para>
-<para>This depends on the drawing beam place, which can be encoded but otherwise calculated by CalcBeamPlace. The pointer to the other beam m_stemSameasReverseRole is set only for the first of the two beams and is not bi-directional. Is is set in InitSameasRoles. </para>
-</description>
-      <memberdef kind="variable" id="classvrv_1_1_beam_segment_1ab09b2aa639b5863612d01bfdf75f4d1a" prot="public" static="no" mutable="no">
-        <type>StemSameasDrawingRole</type>
-        <definition>StemSameasDrawingRole vrv::BeamSegment::m_stemSameasRole</definition>
-        <argsstring></argsstring>
-        <name>m_stemSameasRole</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="214" column="27" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="214" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_beam_segment_1ad4713706066f9cbd831207a623d28e26" prot="public" static="no" mutable="no">
-        <type>StemSameasDrawingRole *</type>
-        <definition>StemSameasDrawingRole* vrv::BeamSegment::m_stemSameasReverseRole</definition>
-        <argsstring></argsstring>
-        <name>m_stemSameasReverseRole</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="215" column="27" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="215" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -1167,11 +1167,11 @@
           <edgelabel>m_crossStaff</edgelabel>
         </childnode>
         <childnode refid="48" relation="usage">
-          <edgelabel>m_graceAlignment</edgelabel>
           <edgelabel>m_alignment</edgelabel>
+          <edgelabel>m_graceAlignment</edgelabel>
         </childnode>
       </node>
-      <node id="80">
+      <node id="79">
         <label>AttNoteVisMensural</label>
       </node>
       <node id="10">
@@ -1186,8 +1186,8 @@
         <label>vrv::BeamSegment</label>
         <link refid="classvrv_1_1_beam_segment"/>
         <childnode refid="2" relation="usage">
-          <edgelabel>m_lastNoteOrChord</edgelabel>
           <edgelabel>m_firstNoteOrChord</edgelabel>
+          <edgelabel>m_lastNoteOrChord</edgelabel>
         </childnode>
       </node>
       <node id="34">
@@ -1212,9 +1212,6 @@
         <childnode refid="50" relation="usage">
           <edgelabel>m_drawingStem</edgelabel>
         </childnode>
-      </node>
-      <node id="24">
-        <label>AttCourseLog</label>
       </node>
       <node id="38">
         <label>AttSystems</label>
@@ -1300,7 +1297,9 @@
         </childnode>
         <childnode refid="85" relation="public-inheritance">
         </childnode>
-        <childnode refid="70" relation="public-inheritance">
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+        <childnode refid="86" relation="public-inheritance">
         </childnode>
       </node>
       <node id="8">
@@ -1442,6 +1441,9 @@
       <node id="12">
         <label>AttCoordX1</label>
       </node>
+      <node id="82">
+        <label>AttStringtab</label>
+      </node>
       <node id="16">
         <label>vrv::DrawingListInterface</label>
         <link refid="classvrv_1_1_drawing_list_interface"/>
@@ -1498,11 +1500,8 @@
         <label>vrv::StaffDefDrawingInterface</label>
         <link refid="classvrv_1_1_staff_def_drawing_interface"/>
       </node>
-      <node id="81">
+      <node id="80">
         <label>AttStems</label>
-      </node>
-      <node id="78">
-        <label>AttNoteGesTab</label>
       </node>
       <node id="56">
         <label>AttAugmentDots</label>
@@ -1560,7 +1559,7 @@
         <childnode refid="71" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="46">
+      <node id="47">
         <label>AttTransposition</label>
       </node>
       <node id="76">
@@ -1574,6 +1573,9 @@
       </node>
       <node id="18">
         <label>AttCue</label>
+      </node>
+      <node id="45">
+        <label>AttStaffDefVisTablature</label>
       </node>
       <node id="53">
         <label>vrv::AltSymInterface</label>
@@ -1589,7 +1591,7 @@
         <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="79">
+      <node id="78">
         <label>AttNoteHeads</label>
       </node>
       <node id="36">
@@ -1598,7 +1600,7 @@
       <node id="43">
         <label>AttStaffDefLog</label>
       </node>
-      <node id="82">
+      <node id="81">
         <label>AttStemsCmn</label>
       </node>
       <node id="63">
@@ -1625,6 +1627,9 @@
         <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="86">
+        <label>AttVisualOffsetVo</label>
+      </node>
       <node id="72">
         <label>AttColor</label>
       </node>
@@ -1647,13 +1652,13 @@
         <label>vrv::ObjectListInterface</label>
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
+      <node id="24">
+        <label>AttTuningLog</label>
+      </node>
       <node id="74">
         <label>AttExtSymAuth</label>
       </node>
-      <node id="47">
-        <label>AttVerticalAlign</label>
-      </node>
-      <node id="45">
+      <node id="46">
         <label>AttTimeBase</label>
       </node>
       <node id="85">
@@ -1666,7 +1671,7 @@
         <label>AttExtSymNames</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="36" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="36" bodyend="217"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/beam.h" line="36" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/beam.h" bodystart="36" bodyend="217"/>
     <listofallmembers>
       <member refid="classvrv_1_1_beam_segment_1ac05b7937c4f2ae18ed7122b7f0d43f43" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>AdjustBeamToFrenchStyle</name></member>
       <member refid="classvrv_1_1_beam_segment_1ae556404fb4191334cbe20ac02985d61f" prot="private" virt="non-virtual"><scope>vrv::BeamSegment</scope><name>AdjustBeamToLedgerLines</name></member>

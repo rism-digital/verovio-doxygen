@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classvrv_1_1_music_xml_input" kind="class" language="C++" prot="public">
     <compoundname>vrv::MusicXmlInput</compoundname>
     <basecompoundref refid="classvrv_1_1_input" prot="public" virt="non-virtual">vrv::Input</basecompoundref>
@@ -1075,9 +1075,9 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="460" column="26"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a0e7241f442f5718ab98dc30a6fce5448" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>data_HEADSHAPE</type>
-        <definition>static data_HEADSHAPE vrv::MusicXmlInput::ConvertNotehead</definition>
+      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a1b0df67468cf28246d004d61c705806b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>data_HEADSHAPE_list</type>
+        <definition>static data_HEADSHAPE_list vrv::MusicXmlInput::ConvertNotehead</definition>
         <argsstring>(const std::string &amp;value)</argsstring>
         <name>ConvertNotehead</name>
         <param>
@@ -1090,7 +1090,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="461" column="27"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="461" column="32"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_music_xml_input_1aa261287e35c392aa20b3c743836609f7" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>data_LINESTARTENDSYMBOL</type>
@@ -2508,50 +2508,53 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
         <childnode refid="6" relation="usage">
+          <edgelabel>m_focusRange</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
           <edgelabel>m_selectionFollowing</edgelabel>
           <edgelabel>m_selectionPreceding</edgelabel>
         </childnode>
-        <childnode refid="35" relation="usage">
+        <childnode refid="37" relation="usage">
           <edgelabel>m_expansionMap</edgelabel>
         </childnode>
       </node>
-      <node id="8">
+      <node id="12">
         <label>vrv::PageElement</label>
         <link refid="classvrv_1_1_page_element"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
-        <childnode refid="9" relation="public-inheritance">
+        <childnode refid="13" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="24">
+      <node id="26">
         <label>AttMultinumMeasures</label>
       </node>
-      <node id="15">
+      <node id="17">
         <label>vrv::ScoreDefElement</label>
         <link refid="classvrv_1_1_score_def_element"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
-        <childnode refid="16" relation="public-inheritance">
-        </childnode>
-        <childnode refid="9" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="28">
-        <label>AttSystems</label>
-      </node>
-      <node id="18">
-        <label>AttBarring</label>
-      </node>
-      <node id="7">
-        <label>vrv::Score</label>
-        <link refid="classvrv_1_1_score"/>
-        <childnode refid="8" relation="public-inheritance">
-        </childnode>
-        <childnode refid="10" relation="public-inheritance">
-        </childnode>
-        <childnode refid="12" relation="public-inheritance">
+        <childnode refid="18" relation="public-inheritance">
         </childnode>
         <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>AttSystems</label>
+      </node>
+      <node id="20">
+        <label>AttBarring</label>
+      </node>
+      <node id="11">
+        <label>vrv::Score</label>
+        <link refid="classvrv_1_1_score"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
         </childnode>
       </node>
       <node id="2">
@@ -2561,23 +2564,19 @@
           <edgelabel>m_doc</edgelabel>
         </childnode>
       </node>
-      <node id="30">
+      <node id="32">
         <label>AttDistances</label>
       </node>
-      <node id="9">
+      <node id="13">
         <label>AttTyped</label>
       </node>
       <node id="5">
         <label>vrv::BoundingBox</label>
         <link refid="classvrv_1_1_bounding_box"/>
       </node>
-      <node id="16">
+      <node id="18">
         <label>vrv::ScoreDefInterface</label>
         <link refid="classvrv_1_1_score_def_interface"/>
-        <childnode refid="17" relation="public-inheritance">
-        </childnode>
-        <childnode refid="18" relation="public-inheritance">
-        </childnode>
         <childnode refid="19" relation="public-inheritance">
         </childnode>
         <childnode refid="20" relation="public-inheritance">
@@ -2598,63 +2597,79 @@
         </childnode>
         <childnode refid="28" relation="public-inheritance">
         </childnode>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="34">
+      <node id="36">
         <label>AttTuning</label>
       </node>
-      <node id="17">
+      <node id="19">
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="23">
+      <node id="25">
         <label>AttMmTempo</label>
       </node>
-      <node id="22">
+      <node id="24">
         <label>AttMidiTempo</label>
       </node>
-      <node id="31">
+      <node id="7">
+        <label>vrv::Pages</label>
+        <link refid="classvrv_1_1_pages"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
         <label>AttEndings</label>
       </node>
-      <node id="27">
+      <node id="29">
         <label>AttSpacing</label>
       </node>
-      <node id="10">
+      <node id="14">
         <label>vrv::PageMilestoneInterface</label>
         <link refid="classvrv_1_1_page_milestone_interface"/>
-        <childnode refid="11" relation="usage">
+        <childnode refid="15" relation="usage">
           <edgelabel>m_end</edgelabel>
         </childnode>
       </node>
-      <node id="25">
+      <node id="27">
         <label>AttOctaveDefault</label>
       </node>
-      <node id="11">
+      <node id="15">
         <label>vrv::PageMilestoneEnd</label>
         <link refid="classvrv_1_1_page_milestone_end"/>
-        <childnode refid="8" relation="public-inheritance">
+        <childnode refid="12" relation="public-inheritance">
         </childnode>
         <childnode refid="4" relation="usage">
           <edgelabel>m_start</edgelabel>
         </childnode>
       </node>
-      <node id="35">
+      <node id="37">
         <label>vrv::ExpansionMap</label>
         <link refid="classvrv_1_1_expansion_map"/>
       </node>
-      <node id="20">
+      <node id="6">
+        <label>vrv::PageRange</label>
+        <link refid="classvrv_1_1_page_range"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
         <label>AttLyricStyle</label>
       </node>
-      <node id="19">
+      <node id="21">
         <label>AttDurationDefault</label>
       </node>
-      <node id="14">
+      <node id="16">
         <label>vrv::ScoreDef</label>
         <link refid="classvrv_1_1_score_def"/>
-        <childnode refid="15" relation="public-inheritance">
-        </childnode>
-        <childnode refid="29" relation="public-inheritance">
-        </childnode>
-        <childnode refid="30" relation="public-inheritance">
+        <childnode refid="17" relation="public-inheritance">
         </childnode>
         <childnode refid="31" relation="public-inheritance">
         </childnode>
@@ -2664,11 +2679,15 @@
         </childnode>
         <childnode refid="34" relation="public-inheritance">
         </childnode>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="32">
+      <node id="34">
         <label>AttOptimization</label>
       </node>
-      <node id="26">
+      <node id="28">
         <label>AttPianoPedals</label>
       </node>
       <node id="4">
@@ -2677,10 +2696,10 @@
         <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="21">
+      <node id="23">
         <label>AttMeasureNumbers</label>
       </node>
-      <node id="29">
+      <node id="31">
         <label>vrv::ObjectListInterface</label>
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
@@ -2690,30 +2709,30 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6">
+      <node id="10">
         <label>vrv::Page</label>
         <link refid="classvrv_1_1_page"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
-        <childnode refid="7" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>m_score</edgelabel>
           <edgelabel>m_scoreEnd</edgelabel>
         </childnode>
-        <childnode refid="14" relation="usage">
+        <childnode refid="16" relation="usage">
           <edgelabel>m_drawingScoreDef</edgelabel>
         </childnode>
       </node>
-      <node id="33">
+      <node id="35">
         <label>AttTimeBase</label>
       </node>
-      <node id="13">
+      <node id="9">
         <label>AttNNumberLike</label>
       </node>
-      <node id="12">
+      <node id="8">
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="194" column="33" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="194" bodyend="569"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="194" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="194" bodyend="569"/>
     <listofallmembers>
       <member refid="classvrv_1_1_music_xml_input_1a3831ba95070ce1c18cfc61d7bc588518" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>AddClefs</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a6a6477943252070a302ea05b36868242" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>AddLayerElement</name></member>
@@ -2737,7 +2756,7 @@
       <member refid="classvrv_1_1_music_xml_input_1aa81ea592262d045a34fa0b889c523fa5" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ConvertKindToSymbol</name></member>
       <member refid="classvrv_1_1_music_xml_input_1ab21ca10e23b37dfed8860be571fbf70d" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ConvertKindToText</name></member>
       <member refid="classvrv_1_1_music_xml_input_1aa261287e35c392aa20b3c743836609f7" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ConvertLineEndSymbol</name></member>
-      <member refid="classvrv_1_1_music_xml_input_1a0e7241f442f5718ab98dc30a6fce5448" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ConvertNotehead</name></member>
+      <member refid="classvrv_1_1_music_xml_input_1a1b0df67468cf28246d004d61c705806b" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ConvertNotehead</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a9104f53db17fabcb5036c5593afd3344" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ConvertPedalTypeToDir</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a7952b96bd43e2e91dd12c2ae1313bd46" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ConvertStepToPitchName</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a63ad04d9c43850bbbf4ef6d092e5bae3" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ConvertStyleToRend</name></member>

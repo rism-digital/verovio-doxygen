@@ -18,7 +18,7 @@ var classvrv_1_1_stem =
     [ "GetStemModRelY", "classvrv_1_1_stem.html#acf1624788185582d3fb738aed6a5b9ef", null ],
     [ "HasDrawingStemMod", "classvrv_1_1_stem.html#a43e19267422cabff922c093b57c8e85e", null ],
     [ "HasToBeAligned", "classvrv_1_1_stem.html#a5bef255e73057dfd6d8719cfbaca268e", null ],
-    [ "IsSupportedChild", "classvrv_1_1_stem.html#ada6f97bae35bbcbe9cd4b30cf14f27f3", null ],
+    [ "IsSupportedChild", "classvrv_1_1_stem.html#afff89e029b0c02aa5ed3eaaa48d0636a", null ],
     [ "IsVirtual", "classvrv_1_1_stem.html#a0c1e564f8d08832e092a7536d3399b78", null ],
     [ "IsVirtual", "classvrv_1_1_stem.html#a465d5e56923679f5c7d328c19327062c", null ],
     [ "Reset", "classvrv_1_1_stem.html#a0ae2602ead12893022b5e9a4596978b5", null ],
