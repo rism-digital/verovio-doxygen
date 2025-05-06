@@ -21,6 +21,7 @@ var classvrv_1_1_reset_data_functor =
     [ "VisitFloatingObject", "classvrv_1_1_reset_data_functor.html#a1615e17288326e091e8173743b075a05", null ],
     [ "VisitFTrem", "classvrv_1_1_reset_data_functor.html#a25bdcf744d55dc9e0c4b529236a489cb", null ],
     [ "VisitHairpin", "classvrv_1_1_reset_data_functor.html#a81f1da6f6ecae5a505756f3761f0b091", null ],
+    [ "VisitKeySig", "classvrv_1_1_reset_data_functor.html#a55ac69fd680c8ed79790ca0215b8e901", null ],
     [ "VisitLayer", "classvrv_1_1_reset_data_functor.html#a133d6c7d6288b36cc313f0113602ab74", null ],
     [ "VisitLayerElement", "classvrv_1_1_reset_data_functor.html#a53d1c2de155ce9d56e59fee73a4c69be", null ],
     [ "VisitLigature", "classvrv_1_1_reset_data_functor.html#ac9a8f72f1f3fba5c83ce755612c54328", null ],

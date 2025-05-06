@@ -1,5 +1,11 @@
 var NAVTREEINDEX31 =
 {
+"metersig_8h_source.html":[2,0,145],
+"metersiggrp_8h_source.html":[2,0,146],
+"midifunctor_8h_source.html":[2,0,147],
+"miscfunctor_8h_source.html":[2,0,148],
+"mnum_8h_source.html":[2,0,149],
+"modules.html":[0],
 "mordent_8h_source.html":[2,0,150],
 "mrest_8h_source.html":[2,0,151],
 "mrpt2_8h_source.html":[2,0,153],

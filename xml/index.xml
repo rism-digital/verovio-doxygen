@@ -1652,7 +1652,7 @@
     <member refid="classvrv_1_1_clef_1a619d7cd0aa41efa7bb9e825d98b08dac" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_clef_1af8a09e042f0969d9264aec72059694df" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_clef_1ac3d9be304c4eaf15f129a55771cbc30f" kind="function"><name>IsScoreDefElement</name></member>
-    <member refid="classvrv_1_1_clef_1a1b7a85210baa4d3c877f379e0d4be13a" kind="function"><name>GetClefLocOffset</name></member>
+    <member refid="classvrv_1_1_clef_1a3024936525419403269c083ac4332940" kind="function"><name>GetClefLocOffset</name></member>
     <member refid="classvrv_1_1_clef_1a372c41254f60ddb6d7a13b5336d0338d" kind="function"><name>GetClefGlyph</name></member>
   </compound>
   <compound refid="structvrv_1_1_closest_b_b" kind="struct"><name>vrv::ClosestBB</name>
@@ -4866,12 +4866,16 @@
     <member refid="classvrv_1_1_key_sig_1afc9df0a6d302e3af915909cfcf811ce2" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_key_sig_1a73ccdad80dbf3be6958c98ef12f66efc" kind="function"><name>HasNonAttribKeyAccidChildren</name></member>
     <member refid="classvrv_1_1_key_sig_1a35e19b1fba819c9a59219b5433e11a9a" kind="function"><name>GenerateKeyAccidAttribChildren</name></member>
+    <member refid="classvrv_1_1_key_sig_1a866d5aea0f4aa4c6f1d4ef0dc213a8b4" kind="function"><name>GetDrawingClef</name></member>
+    <member refid="classvrv_1_1_key_sig_1aeda2b7373479c08d97eb5e17c6080fe2" kind="function"><name>ResetDrawingClef</name></member>
+    <member refid="classvrv_1_1_key_sig_1a7bd3fe65651ea2a063466d2f053d5007" kind="function"><name>SetDrawingClef</name></member>
     <member refid="classvrv_1_1_key_sig_1a206dab7a5bece4431ff81449b678a56b" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_key_sig_1ab69a0688314b895dc08c7e7a3bc325f1" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_key_sig_1afa97c7e774254e2abdedcf5ae1abd247" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_key_sig_1abe3f39e08b6e6a1a93723ca1d3f2a12f" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_key_sig_1a737a4431abc44572beee860763036171" kind="variable"><name>s_pnameForFlats</name></member>
     <member refid="classvrv_1_1_key_sig_1a8b34a56c55096963a15a6016e172efbb" kind="variable"><name>s_pnameForSharps</name></member>
+    <member refid="classvrv_1_1_key_sig_1abe2bfc389dbb4ac70316af4e7b8f7c77" kind="variable"><name>m_drawingClef</name></member>
     <member refid="classvrv_1_1_key_sig_1a7890b5f87acb46a4d376383a9506d4f9" kind="variable"><name>octave_map</name></member>
     <member refid="classvrv_1_1_key_sig_1aeb3ee65a123ae63db5bf5c92d1ad4d46" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_key_sig_1a96e2e5cd2d46c34128359086e75ee16d" kind="function"><name>IsScoreDefElement</name></member>
@@ -7906,6 +7910,7 @@
     <member refid="classvrv_1_1_reset_data_functor_1a1615e17288326e091e8173743b075a05" kind="function"><name>VisitFloatingObject</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1a25bdcf744d55dc9e0c4b529236a489cb" kind="function"><name>VisitFTrem</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1a81f1da6f6ecae5a505756f3761f0b091" kind="function"><name>VisitHairpin</name></member>
+    <member refid="classvrv_1_1_reset_data_functor_1a55ac69fd680c8ed79790ca0215b8e901" kind="function"><name>VisitKeySig</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1a133d6c7d6288b36cc313f0113602ab74" kind="function"><name>VisitLayer</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1a53d1c2de155ce9d56e59fee73a4c69be" kind="function"><name>VisitLayerElement</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1ac9a8f72f1f3fba5c83ce755612c54328" kind="function"><name>VisitLigature</name></member>
@@ -8296,6 +8301,7 @@
     <member refid="classvrv_1_1_score_def_unset_current_functor_1a05ab88167063c5e0fc8fab05bd8e056f" kind="function"><name>ScoreDefUnsetCurrentFunctor</name></member>
     <member refid="classvrv_1_1_score_def_unset_current_functor_1ae5f64867f014a9047a9158b1ac5aa0b0" kind="function"><name>~ScoreDefUnsetCurrentFunctor</name></member>
     <member refid="classvrv_1_1_score_def_unset_current_functor_1a0fb9d068307725fd59cb7f2b451d9eb2" kind="function"><name>VisitAlignmentReference</name></member>
+    <member refid="classvrv_1_1_score_def_unset_current_functor_1ae6f7bb0c124f7ba8f459ed000dad9c4a" kind="function"><name>VisitKeySig</name></member>
     <member refid="classvrv_1_1_score_def_unset_current_functor_1aa6c93b6c93bf17fdde705d1bd81ea931" kind="function"><name>VisitLayer</name></member>
     <member refid="classvrv_1_1_score_def_unset_current_functor_1acb60b9b4fead1a5d89f7cd6274df5b01" kind="function"><name>VisitMeasure</name></member>
     <member refid="classvrv_1_1_score_def_unset_current_functor_1a3747099714a19facf8dfbc1a453a7aa1" kind="function"><name>VisitPage</name></member>
@@ -8358,7 +8364,8 @@
   <compound refid="classvrv_1_1_set_cautionary_score_def_functor" kind="class"><name>vrv::SetCautionaryScoreDefFunctor</name>
     <member refid="classvrv_1_1_set_cautionary_score_def_functor_1acd4b90b6784861fc5312cb47b1604fca" kind="function"><name>SetCautionaryScoreDefFunctor</name></member>
     <member refid="classvrv_1_1_set_cautionary_score_def_functor_1a491166514553452808c73d1f99f7f9e5" kind="function"><name>~SetCautionaryScoreDefFunctor</name></member>
-    <member refid="classvrv_1_1_set_cautionary_score_def_functor_1a1abff7a60ca190aba90d1f8794ecf402" kind="function"><name>VisitObject</name></member>
+    <member refid="classvrv_1_1_set_cautionary_score_def_functor_1aedfecd9c73ac9ea5be6961a666746c09" kind="function"><name>VisitLayer</name></member>
+    <member refid="classvrv_1_1_set_cautionary_score_def_functor_1a619d1c71e21092668dd0550bc4b2b5a3" kind="function"><name>VisitStaff</name></member>
     <member refid="classvrv_1_1_set_cautionary_score_def_functor_1ab3458727ec4bb526b8c08f9d999064aa" kind="variable"><name>m_currentScoreDef</name></member>
     <member refid="classvrv_1_1_set_cautionary_score_def_functor_1a589e42c7561de3549a1e7d13283e83bc" kind="variable"><name>m_currentStaffDef</name></member>
     <member refid="classvrv_1_1_set_cautionary_score_def_functor_1a591569889248de35c550144f9cd6c36f" kind="function"><name>ImplementsEndInterface</name></member>

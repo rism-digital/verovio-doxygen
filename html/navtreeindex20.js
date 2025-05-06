@@ -1,5 +1,8 @@
 var NAVTREEINDEX20 =
 {
+"classvrv_1_1_options.html#a66da628f3e5f8f9a44271337c2247d05":[1,0,0,300,207],
+"classvrv_1_1_options.html#a67a343d8c1dfe4c5432f1b49ae6ef67d":[1,0,0,300,210],
+"classvrv_1_1_options.html#a68368d266873d514eb6c5d7979d349c3":[1,0,0,300,60],
 "classvrv_1_1_options.html#a68a4f1007a6e61c01f8b20559f9ebf06":[1,0,0,300,58],
 "classvrv_1_1_options.html#a68f639357c0a5e439e81bad3a2e07f09":[1,0,0,300,145],
 "classvrv_1_1_options.html#a696fcf40a211039dff14c8e6d6cfafdc":[1,0,0,300,154],
@@ -246,8 +249,5 @@ var NAVTREEINDEX20 =
 "classvrv_1_1_page_element.html#aa264a8518d4dde3c23984a022fddca7b":[1,0,0,305,3],
 "classvrv_1_1_page_element.html#afdee31d0905ac563220edd5dd64d8dbb":[1,0,0,305,6],
 "classvrv_1_1_page_milestone_end.html":[1,0,0,306],
-"classvrv_1_1_page_milestone_end.html#a12086f9ed184597707f3722942be265e":[1,0,0,306,4],
-"classvrv_1_1_page_milestone_end.html#a28cabbb8437bfa39291ae1d2f03c058e":[1,0,0,306,8],
-"classvrv_1_1_page_milestone_end.html#a2da4e3978a4bd7aadbaed1141deae875":[1,0,0,306,5],
-"classvrv_1_1_page_milestone_end.html#a372913b9900a978450b7f2bcf8924605":[1,0,0,306,1]
+"classvrv_1_1_page_milestone_end.html#a12086f9ed184597707f3722942be265e":[1,0,0,306,4]
 };
