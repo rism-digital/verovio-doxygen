@@ -1,6 +1,6 @@
 var classvrv_1_1_save_functor =
 [
-    [ "SaveFunctor", "classvrv_1_1_save_functor.html#a0ca12c2f4314c0a348e59e80ec2bd062", null ],
+    [ "SaveFunctor", "classvrv_1_1_save_functor.html#ab4d8b09b2f9d5bfc4e0b017c85f92472", null ],
     [ "~SaveFunctor", "classvrv_1_1_save_functor.html#a1e39112475462274c173a36324e28257", null ],
     [ "ImplementsEndInterface", "classvrv_1_1_save_functor.html#a8b787d57173ee65d8e9a7c62cc94fbd3", null ],
     [ "VisitDots", "classvrv_1_1_save_functor.html#a5647dbfb179d96d5e9ee5966ab2fcfee", null ],

@@ -1,5 +1,9 @@
 var NAVTREEINDEX23 =
 {
+"classvrv_1_1_reset_data_functor.html#a61c902ab708a7c4b85cdc54a44de391c":[1,0,0,350,32],
+"classvrv_1_1_reset_data_functor.html#a6326d37982ef68b31ca9efe39b6ecbca":[1,0,0,350,17],
+"classvrv_1_1_reset_data_functor.html#a67beee66642a57cd5a4e51a8a587c207":[1,0,0,350,39],
+"classvrv_1_1_reset_data_functor.html#a69ccabcf2a09034d6909b3ba90c064eb":[1,0,0,350,3],
 "classvrv_1_1_reset_data_functor.html#a7121ec3288916ffeffbfe02bae061022":[1,0,0,350,16],
 "classvrv_1_1_reset_data_functor.html#a72dd5f57bdcd223056c075a302cac29f":[1,0,0,350,36],
 "classvrv_1_1_reset_data_functor.html#a79da3815723f7039c84f69e40257c5ce":[1,0,0,350,1],
@@ -147,7 +151,6 @@ var NAVTREEINDEX23 =
 "classvrv_1_1_runtime_clock.html#a434391b93ba7dadaac053fa7c25c4700":[1,0,0,357,1],
 "classvrv_1_1_runtime_clock.html#a8c6365bbafa39e7273d529a7c9d062dc":[1,0,0,357,0],
 "classvrv_1_1_save_functor.html":[1,0,0,358],
-"classvrv_1_1_save_functor.html#a0ca12c2f4314c0a348e59e80ec2bd062":[1,0,0,358,0],
 "classvrv_1_1_save_functor.html#a1879a91070d74e53ff728268e5b4fd65":[1,0,0,358,5],
 "classvrv_1_1_save_functor.html#a1e39112475462274c173a36324e28257":[1,0,0,358,1],
 "classvrv_1_1_save_functor.html#a23501f114b991e3d747b9fffc3fdda5a":[1,0,0,358,4],
@@ -170,6 +173,7 @@ var NAVTREEINDEX23 =
 "classvrv_1_1_save_functor.html#a9449591a0aeb4fff2fe99969688bf1ad":[1,0,0,358,21],
 "classvrv_1_1_save_functor.html#a9bc0dc40ab43dd0587d364675161a94d":[1,0,0,358,17],
 "classvrv_1_1_save_functor.html#ab336acbec3dfe3f6753e7262e6871699":[1,0,0,358,8],
+"classvrv_1_1_save_functor.html#ab4d8b09b2f9d5bfc4e0b017c85f92472":[1,0,0,358,0],
 "classvrv_1_1_save_functor.html#abe71250c274945a34c6c24604d46e926":[1,0,0,358,22],
 "classvrv_1_1_save_functor.html#ac3c79ebd4517b29c8cf3b85892b5cc1c":[1,0,0,358,9],
 "classvrv_1_1_sb.html":[1,0,0,359],
@@ -245,9 +249,5 @@ var NAVTREEINDEX23 =
 "classvrv_1_1_score_def.html#af51ff1e8fe16c96cdbf75c2c091282e8":[1,0,0,362,37],
 "classvrv_1_1_score_def.html#afd16c952de1b8829f86ee7499bbb1fa6":[1,0,0,362,19],
 "classvrv_1_1_score_def.html#affdd25fbf69e2079f23fb9d40a330650":[1,0,0,362,20],
-"classvrv_1_1_score_def_element.html":[1,0,0,361],
-"classvrv_1_1_score_def_element.html#a0b817bfcc5b7639c4f1993557dfd386c":[1,0,0,361,5],
-"classvrv_1_1_score_def_element.html#a164b285418aaace19e6f436fb88ec720":[1,0,0,361,16],
-"classvrv_1_1_score_def_element.html#a1fd112e5c2442db24208206540b03ac0":[1,0,0,361,14],
-"classvrv_1_1_score_def_element.html#a213a1ba52ee4b10fb00ec110bd7f37fe":[1,0,0,361,21]
+"classvrv_1_1_score_def_element.html":[1,0,0,361]
 };

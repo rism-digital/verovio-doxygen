@@ -5640,10 +5640,12 @@
     <member refid="classvrv_1_1_m_e_i_input_1aff59e2a66f728b3a2e840be08f5c0799" kind="variable"><name>m_hasScoreDef</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a89008105bba779e6f4688d88051aad9c" kind="variable"><name>m_selectedMdiv</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a8be56dad4917f370428a21fec539435c" kind="variable"><name>m_comment</name></member>
+    <member refid="classvrv_1_1_m_e_i_input_1a88f222dda1b040e4cabbc9214eaf84ee" kind="variable"><name>m_deserializing</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a0846ead36ceaaa1744a0c7615c534bc0" kind="variable"><name>s_editorialElementNames</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a864e82c5bf269800bfcdb99774f71db2" kind="function"><name>MEIInput</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1ac668411802426b6a920724456bf58221" kind="function"><name>~MEIInput</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1ad6d7260384219ec9cbb659ea5ebfa0a5" kind="function"><name>Import</name></member>
+    <member refid="classvrv_1_1_m_e_i_input_1a77ca46037bcc57b0977eb4118489ef2b" kind="function"><name>SetDeserializing</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1a3edef0123b2820ea85e8c8e371ff2bd7" kind="function"><name>ReadDoc</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1af81e85a481decaa36f4a525812a6f345" kind="function"><name>ReadIncipits</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1ae3236daad0549aedcff65f57977cc25f" kind="function"><name>ReadUnsupportedAttr</name></member>
@@ -5670,7 +5672,6 @@
     <member refid="classvrv_1_1_m_e_i_output_1adb8fce8f101f355901ccfe66354138fe" kind="function"><name>WriteObject</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1adee02b2bee08c54163423e03fb3ffc05" kind="function"><name>WriteObjectEnd</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1ada785a9d7f36e7f2eb8e5d9b2e4bdba4" kind="function"><name>SetScoreBasedMEI</name></member>
-    <member refid="classvrv_1_1_m_e_i_output_1ab56053b83581735a44cde5ce33e05e22" kind="function"><name>GetScoreBasedMEI</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a128aaa6353845dbe7cb83ea7d0410a6f" kind="function"><name>SetBasic</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1ae1c5092ad22aaeabf775a6e8bb98555d" kind="function"><name>GetBasic</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1ad9ceb7e54aba4517bbf303aa9ab2c56a" kind="function"><name>HasFilter</name></member>
@@ -5682,6 +5683,7 @@
     <member refid="classvrv_1_1_m_e_i_output_1a2935904455d4355f0b2cda7dfd76777e" kind="function"><name>ResetFilter</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a75e07d1c2588f004fcf9429b893f2dbe" kind="function"><name>IsScoreBasedMEI</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1ae4d7d30ebf3c00b9e30de9d48282329b" kind="function"><name>IsPageBasedMEI</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1ac900927969f971d37d5fecff9196b9e2" kind="function"><name>IsSerializing</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a38b193fba8011ee9acca05574705534c" kind="function"><name>HasValidFilter</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1af22bd0e625195dc6e7842acf5cef840f" kind="function"><name>IsMatchingFilter</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a4142bc161c55bfa9648e8989bbcccf6f" kind="function"><name>UpdateFilter</name></member>
@@ -5857,10 +5859,10 @@
     <member refid="classvrv_1_1_m_e_i_output_1a19f6c1b0f138637ba41fca55aeccc49c" kind="function"><name>WriteTimeSpanningInterface</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a84b63acef76a52541d95aedc2abbdb3f" kind="function"><name>IDToMeiStr</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a0f905614aad7304fbf75618a9b1a67a7" kind="function"><name>DocTypeToStr</name></member>
-    <member refid="classvrv_1_1_m_e_i_output_1a0793c9c7a4c3d1b9ec446dc6f083c456" kind="variable"><name>m_streamStringOutput</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a3612aa91e8c1e34f8a1169af57ab3ef3" kind="variable"><name>m_indent</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1aed1146a1f2baf4fd64b10cfaba93f873" kind="variable"><name>m_scoreBasedMEI</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a760c0bea0135a500fe405cc54e04fc07" kind="variable"><name>m_basic</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1a1d20dd8fdeec9119bd7da3e349b56256" kind="variable"><name>m_serializing</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a7d8650837114dda1ae184b215f40f20a" kind="variable"><name>m_mei</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1aa5a7e5bf5397d4112fa553cc1256944f" kind="variable"><name>m_currentNode</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a34f35584724b02b4d87a7fa42591f509" kind="variable"><name>m_nodeStack</name></member>
@@ -5869,10 +5871,11 @@
     <member refid="classvrv_1_1_m_e_i_output_1a01ba2a36c3cd5cfb91c15f4711e5a542" kind="variable"><name>m_ignoreHeader</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1ad2bfa31af6682c4e1197a0731d332d01" kind="variable"><name>m_removeIds</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1aa0efa613114bfa38b926ea711977b075" kind="variable"><name>m_referredObjects</name></member>
-    <member refid="classvrv_1_1_m_e_i_output_1a28a5600705fbc7516e46d77b3a7611cb" kind="function"><name>Export</name></member>
-    <member refid="classvrv_1_1_m_e_i_output_1a905d6e3994968d225753651a2f8a8b92" kind="function"><name>GetOutput</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1acb24963f5cf79d29b199e530c40583bc" kind="function"><name>Export</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1ab2d2819250544530b8efe3dbbd9b8b88" kind="function"><name>Skip</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a4633a24c057d8a068a514c9efcccdb1a" kind="function"><name>SetIndent</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a558d51368b5c5c46b5ff19bd64dbb728" kind="function"><name>SetIgnoreHeader</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1a1dbafde1d16c73433f7d589d60ceb5f9" kind="function"><name>SetSerializing</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a2ecd99315ccb1bac894cca2dc4dfa6ec" kind="function"><name>SetRemoveIds</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a9b627fafe14f3bc827424bdb2896f2e0" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a046dede5d933331359a7288b9e60aa25" kind="function"><name>IsTreeObject</name></member>
@@ -6538,7 +6541,7 @@
     <member refid="classvrv_1_1_object_1a30996d1e8460f2110900b490425c16ec" kind="function"><name>Modify</name></member>
     <member refid="classvrv_1_1_object_1ac9dd387934b8960b47b96a0c05bb1b84" kind="function"><name>HasEditorialContent</name></member>
     <member refid="classvrv_1_1_object_1ae0d0368a66d1c4b590b311a1a94eb717" kind="function"><name>HasNonEditorialContent</name></member>
-    <member refid="classvrv_1_1_object_1a86b033680370fc35b444ef74a55bca92" kind="function"><name>SaveObject</name></member>
+    <member refid="classvrv_1_1_object_1a88de04c8c4a5d8fd00b0f786fa13bdb9" kind="function"><name>SaveObject</name></member>
     <member refid="classvrv_1_1_object_1ac97807a0dabfdf0d1d483f7f3e9427f9" kind="function"><name>StableSort</name></member>
     <member refid="classvrv_1_1_object_1a84d8c0e7b117807cbecca85ca7695ce8" kind="function"><name>ReorderByXPos</name></member>
     <member refid="classvrv_1_1_object_1a5783461a8f5bee6d95391b86e0004ff4" kind="function"><name>FindNextChild</name></member>
@@ -7107,8 +7110,10 @@
     <member refid="classvrv_1_1_output_1a7bbeb13af9cb85b727703fd272fd4406" kind="function"><name>Output</name></member>
     <member refid="classvrv_1_1_output_1af349589f17cb08da9e22dba222034a83" kind="function"><name>Output</name></member>
     <member refid="classvrv_1_1_output_1a8237f1ce839467ff66ed61126dfa5588" kind="function"><name>~Output</name></member>
+    <member refid="classvrv_1_1_output_1a69fbc98c1031c44a9cb1ca445c5e9378" kind="function"><name>Export</name></member>
     <member refid="classvrv_1_1_output_1a2f9a229fd8899ee37bb3575f1c769a1c" kind="function"><name>WriteObject</name></member>
     <member refid="classvrv_1_1_output_1aae4a87a3b59a0de4e1d73ac366639802" kind="function"><name>WriteObjectEnd</name></member>
+    <member refid="classvrv_1_1_output_1a30fec8fba091bd8acaa0e97fbc8d8dba" kind="function"><name>Skip</name></member>
   </compound>
   <compound refid="classvrv_1_1_p_a_e_input" kind="class"><name>vrv::PAEInput</name>
     <member refid="classvrv_1_1_p_a_e_input_1afecb804b6ad54e47661c387cc42c50e3" kind="variable"><name>m_clef</name></member>
@@ -7224,7 +7229,7 @@
     <member refid="classvrv_1_1_p_a_e_output_1a000aa22792d8d694ff8864919a17dfcb" kind="variable"><name>m_currentDots</name></member>
     <member refid="classvrv_1_1_p_a_e_output_1a8b7e0f2f790038305ba451c97ce7bb5e" kind="variable"><name>m_grace</name></member>
     <member refid="classvrv_1_1_p_a_e_output_1aade0b248f277508b648b78ff098fe7b6" kind="variable"><name>m_currentMeasure</name></member>
-    <member refid="classvrv_1_1_p_a_e_output_1a77feed5ebe37df0bedfc96632f15712d" kind="function"><name>Export</name></member>
+    <member refid="classvrv_1_1_p_a_e_output_1a888221542f8f4ad3728540a74a9ea355" kind="function"><name>Export</name></member>
     <member refid="classvrv_1_1_p_a_e_output_1a85a3ed4250131dece8de13f1938b88d2" kind="function"><name>WriteObject</name></member>
     <member refid="classvrv_1_1_p_a_e_output_1adc640487c78a0f99726aa04b245e9ad3" kind="function"><name>WriteObjectEnd</name></member>
     <member refid="classvrv_1_1_p_a_e_output_1a448eec0c160421ea52023b6ce5a8a125" kind="function"><name>GetPaeDur</name></member>
@@ -8097,7 +8102,7 @@
     <member refid="classvrv_1_1_runtime_clock_1a434391b93ba7dadaac053fa7c25c4700" kind="function"><name>GetSeconds</name></member>
   </compound>
   <compound refid="classvrv_1_1_save_functor" kind="class"><name>vrv::SaveFunctor</name>
-    <member refid="classvrv_1_1_save_functor_1a0ca12c2f4314c0a348e59e80ec2bd062" kind="function"><name>SaveFunctor</name></member>
+    <member refid="classvrv_1_1_save_functor_1ab4d8b09b2f9d5bfc4e0b017c85f92472" kind="function"><name>SaveFunctor</name></member>
     <member refid="classvrv_1_1_save_functor_1a1e39112475462274c173a36324e28257" kind="function"><name>~SaveFunctor</name></member>
     <member refid="classvrv_1_1_save_functor_1a5647dbfb179d96d5e9ee5966ab2fcfee" kind="function"><name>VisitDots</name></member>
     <member refid="classvrv_1_1_save_functor_1a23501f114b991e3d747b9fffc3fdda5a" kind="function"><name>VisitDotsEnd</name></member>
@@ -8122,7 +8127,6 @@
     <member refid="classvrv_1_1_save_functor_1a506da15da375be5b94d3ae789d2fc6f2" kind="function"><name>VisitTupletNum</name></member>
     <member refid="classvrv_1_1_save_functor_1a6f8b89940cdc77418632deda9c0d570b" kind="function"><name>VisitTupletNumEnd</name></member>
     <member refid="classvrv_1_1_save_functor_1a09ed2f3275e313e885f2238c6a769525" kind="variable"><name>m_output</name></member>
-    <member refid="classvrv_1_1_save_functor_1a479a8f56ff1a8dcfbe892c6b6dd18a6c" kind="variable"><name>m_basic</name></member>
     <member refid="classvrv_1_1_save_functor_1a8b787d57173ee65d8e9a7c62cc94fbd3" kind="function"><name>ImplementsEndInterface</name></member>
   </compound>
   <compound refid="classvrv_1_1_sb" kind="class"><name>vrv::Sb</name>
@@ -9573,6 +9577,7 @@
     <member refid="classvrv_1_1_toolkit_1acd24044c6c9fe0e03ac72726a5ec330a" kind="function"><name>LoadZipData</name></member>
     <member refid="classvrv_1_1_toolkit_1aad929203e47ba1fe415b1b989a31463d" kind="function"><name>GetClassIds</name></member>
     <member refid="classvrv_1_1_toolkit_1aebe87c2bdaa8388550be5529a1c72163" kind="function"><name>GetOptions</name></member>
+    <member refid="classvrv_1_1_toolkit_1af112a3cbc40256368437433a1d3ea271" kind="function"><name>SetViewAndEditor</name></member>
   </compound>
   <compound refid="classvrv_1_1_trans_pitch" kind="class"><name>vrv::TransPitch</name>
     <member refid="classvrv_1_1_trans_pitch_1a3d3e6a644641f51262056dd35d89b14b" kind="variable"><name>m_pname</name></member>
@@ -11026,6 +11031,7 @@
     <member refid="toolkitdef_8h_1a6feb6bdf079a5bd110d39bf405870a8dabb89ae7679f4750506740f5822fdb89d" kind="enumvalue"><name>MIDI</name></member>
     <member refid="toolkitdef_8h_1a6feb6bdf079a5bd110d39bf405870a8da0412dc02b203f88c887b370a40e9ff4e" kind="enumvalue"><name>TIMEMAP</name></member>
     <member refid="toolkitdef_8h_1a6feb6bdf079a5bd110d39bf405870a8dad65765ff0897103d17875e030024be3b" kind="enumvalue"><name>EXPANSIONMAP</name></member>
+    <member refid="toolkitdef_8h_1a6feb6bdf079a5bd110d39bf405870a8da8b7a6c836cfb0ef905f910c17dcb44a2" kind="enumvalue"><name>SERIALIZATION</name></member>
     <member refid="toolkitdef_8h_1a442a9bd68bfd9c7306ccdadd86f1b566" kind="enum"><name>@2</name></member>
     <member refid="toolkitdef_8h_1a442a9bd68bfd9c7306ccdadd86f1b566ab96915c60817c78e70b5db761ae5e022" kind="enumvalue"><name>LOG_OFF</name></member>
     <member refid="toolkitdef_8h_1a442a9bd68bfd9c7306ccdadd86f1b566a85efde2d1386961275f4ce865e5974fa" kind="enumvalue"><name>LOG_ERROR</name></member>
