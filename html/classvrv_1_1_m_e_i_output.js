@@ -1,11 +1,26 @@
 var classvrv_1_1_m_e_i_output =
 [
-    [ "Export", "classvrv_1_1_m_e_i_output.html#a28a5600705fbc7516e46d77b3a7611cb", null ],
-    [ "GetOutput", "classvrv_1_1_m_e_i_output.html#a905d6e3994968d225753651a2f8a8b92", null ],
+    [ "MEIOutput", "classvrv_1_1_m_e_i_output.html#abcbfdbba42ecd1741b64a255ab505c84", null ],
+    [ "~MEIOutput", "classvrv_1_1_m_e_i_output.html#a0fdf610034d25168589b7cb88729e205", null ],
+    [ "Export", "classvrv_1_1_m_e_i_output.html#acb24963f5cf79d29b199e530c40583bc", null ],
+    [ "GetBasic", "classvrv_1_1_m_e_i_output.html#ae1c5092ad22aaeabf775a6e8bb98555d", null ],
     [ "HasFilter", "classvrv_1_1_m_e_i_output.html#ad9ceb7e54aba4517bbf303aa9ab2c56a", null ],
+    [ "IsPageBasedMEI", "classvrv_1_1_m_e_i_output.html#ae4d7d30ebf3c00b9e30de9d48282329b", null ],
+    [ "IsScoreBasedMEI", "classvrv_1_1_m_e_i_output.html#a75e07d1c2588f004fcf9429b893f2dbe", null ],
+    [ "IsSerializing", "classvrv_1_1_m_e_i_output.html#ac900927969f971d37d5fecff9196b9e2", null ],
+    [ "ResetFilter", "classvrv_1_1_m_e_i_output.html#a2935904455d4355f0b2cda7dfd76777e", null ],
+    [ "SetBasic", "classvrv_1_1_m_e_i_output.html#a128aaa6353845dbe7cb83ea7d0410a6f", null ],
+    [ "SetFirstMeasure", "classvrv_1_1_m_e_i_output.html#a350b3e697d355c4738a0c717fc9a7a40", null ],
+    [ "SetFirstPage", "classvrv_1_1_m_e_i_output.html#a1d8d05aa9e7a39e7961949704d89d762", null ],
     [ "SetIgnoreHeader", "classvrv_1_1_m_e_i_output.html#a558d51368b5c5c46b5ff19bd64dbb728", null ],
     [ "SetIndent", "classvrv_1_1_m_e_i_output.html#a4633a24c057d8a068a514c9efcccdb1a", null ],
+    [ "SetLastMeasure", "classvrv_1_1_m_e_i_output.html#a95f7f98ac4f0c0d014a4fefbac5a8841", null ],
+    [ "SetLastPage", "classvrv_1_1_m_e_i_output.html#acba7137154c72c77467a2b4214353714", null ],
+    [ "SetMdiv", "classvrv_1_1_m_e_i_output.html#aaa6098d32906f95f86b5c1957e2c2b76", null ],
     [ "SetRemoveIds", "classvrv_1_1_m_e_i_output.html#a2ecd99315ccb1bac894cca2dc4dfa6ec", null ],
+    [ "SetScoreBasedMEI", "classvrv_1_1_m_e_i_output.html#ada785a9d7f36e7f2eb8e5d9b2e4bdba4", null ],
+    [ "SetSerializing", "classvrv_1_1_m_e_i_output.html#a1dbafde1d16c73433f7d589d60ceb5f9", null ],
+    [ "Skip", "classvrv_1_1_m_e_i_output.html#ab2d2819250544530b8efe3dbbd9b8b88", null ],
     [ "WriteObject", "classvrv_1_1_m_e_i_output.html#adb8fce8f101f355901ccfe66354138fe", null ],
     [ "WriteObjectEnd", "classvrv_1_1_m_e_i_output.html#adee02b2bee08c54163423e03fb3ffc05", null ]
 ];

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
-  <compounddef id="classvrv_1_1_output" kind="class" language="C++" prot="public">
+  <compounddef id="classvrv_1_1_output" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>vrv::Output</compoundname>
     <derivedcompoundref refid="classvrv_1_1_m_e_i_output" prot="public" virt="non-virtual">vrv::MEIOutput</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_p_a_e_output" prot="public" virt="non-virtual">vrv::PAEOutput</derivedcompoundref>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iobase.h" line="52" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iobase.h" bodystart="52" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iobase.h" line="62" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iobase.h" bodystart="62" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -85,6 +85,23 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/iobase.h" line="37" column="13"/>
       </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_output_1a69fbc98c1031c44a9cb1ca445c5e9378" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string vrv::Output::Export</definition>
+        <argsstring>()=0</argsstring>
+        <name>Export</name>
+        <reimplementedby refid="classvrv_1_1_m_e_i_output_1acb24963f5cf79d29b199e530c40583bc">Export</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_p_a_e_output_1a888221542f8f4ad3728540a74a9ea355">Export</reimplementedby>
+        <briefdescription>
+<para>Main method for exporting the data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Overridden in child classes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iobase.h" line="42" column="25"/>
+      </memberdef>
       <memberdef kind="function" id="classvrv_1_1_output_1a2f9a229fd8899ee37bb3575f1c769a1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
         <definition>virtual bool vrv::Output::WriteObject</definition>
@@ -103,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iobase.h" line="42" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iobase.h" bodystart="42" bodyend="42"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iobase.h" line="47" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iobase.h" bodystart="47" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_output_1aae4a87a3b59a0de4e1d73ac366639802" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -123,7 +140,26 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/iobase.h" line="47" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iobase.h" bodystart="47" bodyend="47"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iobase.h" line="52" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iobase.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_output_1a30fec8fba091bd8acaa0e97fbc8d8dba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool vrv::Output::Skip</definition>
+        <argsstring>(Object *object) const</argsstring>
+        <name>Skip</name>
+        <reimplementedby refid="classvrv_1_1_m_e_i_output_1ab2d2819250544530b8efe3dbbd9b8b88">Skip</reimplementedby>
+        <param>
+          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>Method for skipping under certain circumstances. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iobase.h" line="57" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iobase.h" bodystart="57" bodyend="57"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -375,12 +411,14 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/iobase.h" line="31" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iobase.h" bodystart="31" bodyend="53"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/iobase.h" line="31" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iobase.h" bodystart="31" bodyend="63"/>
     <listofallmembers>
+      <member refid="classvrv_1_1_output_1a69fbc98c1031c44a9cb1ca445c5e9378" prot="public" virt="pure-virtual"><scope>vrv::Output</scope><name>Export</name></member>
       <member refid="classvrv_1_1_output_1ae6309d99027038fc89735e3a4186ded8" prot="protected" virt="non-virtual"><scope>vrv::Output</scope><name>m_doc</name></member>
       <member refid="classvrv_1_1_output_1ab8293a488f55b424692bad0940a34d27" prot="public" virt="non-virtual"><scope>vrv::Output</scope><name>Output</name></member>
       <member refid="classvrv_1_1_output_1a7bbeb13af9cb85b727703fd272fd4406" prot="public" virt="non-virtual"><scope>vrv::Output</scope><name>Output</name></member>
       <member refid="classvrv_1_1_output_1af349589f17cb08da9e22dba222034a83" prot="public" virt="non-virtual"><scope>vrv::Output</scope><name>Output</name></member>
+      <member refid="classvrv_1_1_output_1a30fec8fba091bd8acaa0e97fbc8d8dba" prot="public" virt="virtual"><scope>vrv::Output</scope><name>Skip</name></member>
       <member refid="classvrv_1_1_output_1a2f9a229fd8899ee37bb3575f1c769a1c" prot="public" virt="virtual"><scope>vrv::Output</scope><name>WriteObject</name></member>
       <member refid="classvrv_1_1_output_1aae4a87a3b59a0de4e1d73ac366639802" prot="public" virt="virtual"><scope>vrv::Output</scope><name>WriteObjectEnd</name></member>
       <member refid="classvrv_1_1_output_1a8237f1ce839467ff66ed61126dfa5588" prot="public" virt="virtual"><scope>vrv::Output</scope><name>~Output</name></member>

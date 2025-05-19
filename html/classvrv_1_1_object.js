@@ -167,7 +167,7 @@ var classvrv_1_1_object =
     [ "ResetParent", "classvrv_1_1_object.html#a5d22ebda01e0b254c13d558f5ffdb098", null ],
     [ "ResetPlistReferences", "classvrv_1_1_object.html#af13a62dfc05048448a52ee441f45a5a6", null ],
     [ "RotateChildren", "classvrv_1_1_object.html#a19cb63d229f04226f8a941a332edd03e", null ],
-    [ "SaveObject", "classvrv_1_1_object.html#a86b033680370fc35b444ef74a55bca92", null ],
+    [ "SaveObject", "classvrv_1_1_object.html#a88de04c8c4a5d8fd00b0f786fa13bdb9", null ],
     [ "SetAsReferenceObject", "classvrv_1_1_object.html#a9bc335e3bc5405f5dbaae757b5629996", null ],
     [ "SetClosingComment", "classvrv_1_1_object.html#af0db1dd88b7d2f6c9068934312ce86c8", null ],
     [ "SetComment", "classvrv_1_1_object.html#a3b47aa3445a48e681db41607cedcd4b4", null ],

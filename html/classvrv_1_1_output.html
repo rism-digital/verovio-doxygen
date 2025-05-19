@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('classvrv_1_1_output.html',''); initRes
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classvrv_1_1_output-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vrv::Output Class Reference</div>  </div>
+<div class="title">vrv::Output Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -115,6 +115,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7bbeb13af9cb85b727703fd272fd4406"><td class="memItemLeft" align="right" valign="top"><a id="a7bbeb13af9cb85b727703fd272fd4406"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Output</b> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc)</td></tr>
 <tr class="separator:a7bbeb13af9cb85b727703fd272fd4406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69fbc98c1031c44a9cb1ca445c5e9378"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_output.html#a69fbc98c1031c44a9cb1ca445c5e9378">Export</a> ()=0</td></tr>
+<tr class="memdesc:a69fbc98c1031c44a9cb1ca445c5e9378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main method for exporting the data.  <a href="classvrv_1_1_output.html#a69fbc98c1031c44a9cb1ca445c5e9378">More...</a><br /></td></tr>
+<tr class="separator:a69fbc98c1031c44a9cb1ca445c5e9378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f9a229fd8899ee37bb3575f1c769a1c"><td class="memItemLeft" align="right" valign="top"><a id="a2f9a229fd8899ee37bb3575f1c769a1c"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_output.html#a2f9a229fd8899ee37bb3575f1c769a1c">WriteObject</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
 <tr class="memdesc:a2f9a229fd8899ee37bb3575f1c769a1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy object method that must be overridden in child class. <br /></td></tr>
@@ -123,6 +126,10 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_output.html#aae4a87a3b59a0de4e1d73ac366639802">WriteObjectEnd</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
 <tr class="memdesc:aae4a87a3b59a0de4e1d73ac366639802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy object method that must be overridden in child class. <br /></td></tr>
 <tr class="separator:aae4a87a3b59a0de4e1d73ac366639802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30fec8fba091bd8acaa0e97fbc8d8dba"><td class="memItemLeft" align="right" valign="top"><a id="a30fec8fba091bd8acaa0e97fbc8d8dba"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_output.html#a30fec8fba091bd8acaa0e97fbc8d8dba">Skip</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *object) const</td></tr>
+<tr class="memdesc:a30fec8fba091bd8acaa0e97fbc8d8dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for skipping under certain circumstances. <br /></td></tr>
+<tr class="separator:a30fec8fba091bd8acaa0e97fbc8d8dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -133,7 +140,38 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is a base class for output classes. </p>
 <p>It is not an abstract class but should not be instanciated directly. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a69fbc98c1031c44a9cb1ca445c5e9378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69fbc98c1031c44a9cb1ca445c5e9378">&#9670;&nbsp;</a></span>Export()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string vrv::Output::Export </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Main method for exporting the data. </p>
+<p>Overridden in child classes. </p>
+
+<p>Implemented in <a class="el" href="classvrv_1_1_p_a_e_output.html#a888221542f8f4ad3728540a74a9ea355">vrv::PAEOutput</a>, and <a class="el" href="classvrv_1_1_m_e_i_output.html#acb24963f5cf79d29b199e530c40583bc">vrv::MEIOutput</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="iobase_8h_source.html">iobase.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -142,7 +180,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_output.html">Output</a></li>
-    <li class="footer">Generated on Wed Apr 23 2025 08:04:12 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 19 2025 08:31:10 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
