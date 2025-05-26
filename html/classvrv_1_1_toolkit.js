@@ -72,7 +72,6 @@ var classvrv_1_1_toolkit =
     [ "Select", "classvrv_1_1_toolkit.html#acd94a639c138408298c34bb41562ee6a", null ],
     [ "SetCString", "group__nodoc.html#ga7d77de8b102acd2f07f0fa23270f82a5", null ],
     [ "SetHumdrumBuffer", "group__nodoc.html#ga5ae3fb587d96567263bfebc1261ff4d9", null ],
-    [ "SetInputFrom", "group__nodoc.html#ga5b3b3c80844a342a465d4887bb599ae0", null ],
     [ "SetInputFrom", "classvrv_1_1_toolkit.html#abbe738f9285b31845ea71cb322d9a581", null ],
     [ "SetLocale", "group__nodoc.html#ga80b1e5c4211c1f7972d55cf2e4cd6c16", null ],
     [ "SetOptions", "classvrv_1_1_toolkit.html#a09c79a752dd0b9e752506d9bcf583ecd", null ],
