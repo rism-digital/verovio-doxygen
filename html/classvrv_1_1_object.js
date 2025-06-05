@@ -100,7 +100,7 @@ var classvrv_1_1_object =
     [ "GetPitchInterface", "classvrv_1_1_object.html#abe3b4b7b0763dc04d1c85fdb1d9a81e8", null ],
     [ "GetPlistInterface", "classvrv_1_1_object.html#a32a7bc21b1323f31cb9d9e68686ce345", null ],
     [ "GetPlistInterface", "classvrv_1_1_object.html#aa246db2175561352dd71e7d2925697bf", null ],
-    [ "GetPlistReferences", "classvrv_1_1_object.html#ab7a1184aa3fb3afa803cbe15c3b816d5", null ],
+    [ "GetPlistReferences", "classvrv_1_1_object.html#a16ea9165be114a5399cd4a959c037d8b", null ],
     [ "GetPositionInterface", "classvrv_1_1_object.html#a68eb08599ac194e3dfc2c149e96db67a", null ],
     [ "GetPositionInterface", "classvrv_1_1_object.html#a1125eeb9dfc51655c68758107cd616fe", null ],
     [ "GetPrevious", "classvrv_1_1_object.html#a26a7c60cdf50a4072927aa671112f1f3", null ],

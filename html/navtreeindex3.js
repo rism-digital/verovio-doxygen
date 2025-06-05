@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_beam_segment.html#ad4713706066f9cbd831207a623d28e26":[1,0,0,52,25],
 "classvrv_1_1_beam_segment.html#ad767ec99e5feff772b50047e3892ddb2":[1,0,0,52,20],
 "classvrv_1_1_beam_segment.html#add26c70127f0e7ac5c7427394dd16b6d":[1,0,0,52,3],
 "classvrv_1_1_beam_segment.html#ae45293135277575fd4d828312f1c700c":[1,0,0,52,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_calc_artic_functor.html#afa24311adfc97ad32d82054077b46ef3":[1,0,0,67,0],
 "classvrv_1_1_calc_b_box_overflows_functor.html":[1,0,0,68],
 "classvrv_1_1_calc_b_box_overflows_functor.html#a0615dbe65c4ccb1eab6d4f31e8af1553":[1,0,0,68,2],
-"classvrv_1_1_calc_b_box_overflows_functor.html#a0e5dfcbac14b8c87dddff8afecc9ac29":[1,0,0,68,4],
-"classvrv_1_1_calc_b_box_overflows_functor.html#a68ae70a052e53971c087f6888c145a9e":[1,0,0,68,3]
+"classvrv_1_1_calc_b_box_overflows_functor.html#a0e5dfcbac14b8c87dddff8afecc9ac29":[1,0,0,68,4]
 };
