@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"classvrv_1_1_layers_in_time_span_functor.html#a866d729e563955686d4849caae3ce883":[1,0,0,181,6],
 "classvrv_1_1_layers_in_time_span_functor.html#aa950ad401cbec83bf7d9ff9c7847128e":[1,0,0,181,5],
 "classvrv_1_1_layers_in_time_span_functor.html#af8f78fa92a19529be79de7842ed140e9":[1,0,0,181,7],
 "classvrv_1_1_layers_in_time_span_functor.html#afcc0e2727d333a5a0e20c56f1f17dc41":[1,0,0,181,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "classvrv_1_1_measure.html#a6d6ed6ef9c33d5546c7fd0b62875f0a7":[1,0,0,250,72],
 "classvrv_1_1_measure.html#a74bf7ce62a9f5f49985336483516d8a8":[1,0,0,250,88],
 "classvrv_1_1_measure.html#a7c65d955fcf6f9e27d79734068ad1fdb":[1,0,0,250,27],
-"classvrv_1_1_measure.html#a7da8b580ffac24e43c189226e655bd60":[1,0,0,250,71],
-"classvrv_1_1_measure.html#a7fe08d9e1f4a7ee4f783b2b389553b83":[1,0,0,250,17]
+"classvrv_1_1_measure.html#a7da8b580ffac24e43c189226e655bd60":[1,0,0,250,71]
 };
