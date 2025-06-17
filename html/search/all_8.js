@@ -34,7 +34,7 @@ var searchData=
   ['iscastoff_719',['IsCastOff',['../classvrv_1_1_doc.html#a570380aa9593a124ac2d85b5238a62e8',1,'vrv::Doc']]],
   ['iscentered_720',['IsCentered',['../classvrv_1_1_artic.html#a0f3c3112f20c06ce5f18d8a97c9ecea7',1,'vrv::Artic']]],
   ['ischordtone_721',['IsChordTone',['../classvrv_1_1_note.html#a8fac70447933b92e2615280b6909e351',1,'vrv::Note']]],
-  ['isclosertostaffthan_722',['IsCloserToStaffThan',['../classvrv_1_1_fing.html#a7211238932fbf4fc20c94e97c7dbc9ca',1,'vrv::Fing::IsCloserToStaffThan()'],['../classvrv_1_1_floating_object.html#a33e63919403a78ab01c46e22ff264d4c',1,'vrv::FloatingObject::IsCloserToStaffThan()']]],
+  ['isclosertostaffthan_722',['IsCloserToStaffThan',['../classvrv_1_1_fing.html#a7211238932fbf4fc20c94e97c7dbc9ca',1,'vrv::Fing::IsCloserToStaffThan()'],['../classvrv_1_1_floating_object.html#a0d0f850b0fd59b8a6ffda63678fbae72',1,'vrv::FloatingObject::IsCloserToStaffThan()']]],
   ['iscollectingdata_723',['IsCollectingData',['../classvrv_1_1_collect_and_process.html#a67b129293b2a6f53a187c62fbaad1a84',1,'vrv::CollectAndProcess']]],
   ['iscurrentfontfallback_724',['IsCurrentFontFallback',['../classvrv_1_1_resources.html#a9859292deedcc9780ce51a1b6119bf41',1,'vrv::Resources']]],
   ['isdrawnthrough_725',['IsDrawnThrough',['../classvrv_1_1_bar_line.html#a87f90ba48eaa73ee8cf562c98fb22f4f',1,'vrv::BarLine']]],
