@@ -81,7 +81,7 @@ var searchData=
   ['clearnotegroups_200',['ClearNoteGroups',['../classvrv_1_1_chord.html#a9d71b290ca43301cbdf38fd58347a8bf',1,'vrv::Chord']]],
   ['clearpositioners_201',['ClearPositioners',['../classvrv_1_1_staff_alignment.html#ab0c857aa5a9a585e4107edd6ef102f3e',1,'vrv::StaffAlignment']]],
   ['clearrelinquishedchildren_202',['ClearRelinquishedChildren',['../classvrv_1_1_object.html#a667b4432b8f9d9e92bfd34fe5c885099',1,'vrv::Object']]],
-  ['clearscoretimeoffset_203',['ClearScoreTimeOffset',['../classvrv_1_1_measure.html#afd716189fcf5661a30ee0db3513610b9',1,'vrv::Measure']]],
+  ['clearscoretimeonset_203',['ClearScoreTimeOnset',['../classvrv_1_1_measure.html#ac30dc54e7bc5bda49adb366294a417f7',1,'vrv::Measure']]],
   ['clearselectionpages_204',['ClearSelectionPages',['../classvrv_1_1_doc.html#a7cf6f055c8c7cdad2d1e652554f43f97',1,'vrv::Doc']]],
   ['clearspannedelements_205',['ClearSpannedElements',['../classvrv_1_1_floating_curve_positioner.html#acf6229982048e963f98e56b66074d33f',1,'vrv::FloatingCurvePositioner']]],
   ['clef_206',['Clef',['../classvrv_1_1_clef.html',1,'vrv']]],

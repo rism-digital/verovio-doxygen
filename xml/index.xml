@@ -3816,10 +3816,12 @@
     <member refid="classvrv_1_1_generate_timemap_functor_1a05412b2e1f9d42405b5593b28f276988" kind="function"><name>~GenerateTimemapFunctor</name></member>
     <member refid="classvrv_1_1_generate_timemap_functor_1a767dfad022df4263cbcb204e6915862f" kind="function"><name>VisitLayerElement</name></member>
     <member refid="classvrv_1_1_generate_timemap_functor_1a594bb0bc2f784e48a9c92ee08260f9c2" kind="function"><name>VisitMeasure</name></member>
+    <member refid="classvrv_1_1_generate_timemap_functor_1ae32ebe4018f208c0c2e1573097456a3e" kind="function"><name>VisitMRest</name></member>
+    <member refid="classvrv_1_1_generate_timemap_functor_1acd6f2e829a0deeca524722024c84f3a3" kind="function"><name>VisitMultiRest</name></member>
     <member refid="classvrv_1_1_generate_timemap_functor_1ac9776e5ef6b9c3ae8f4a44426954bcf6" kind="function"><name>VisitNote</name></member>
     <member refid="classvrv_1_1_generate_timemap_functor_1a27bdb4521970f6376dcc05590a327581" kind="function"><name>VisitRest</name></member>
-    <member refid="classvrv_1_1_generate_timemap_functor_1a02da9d8890691eed6b721ef87062d673" kind="variable"><name>m_scoreTimeOffset</name></member>
-    <member refid="classvrv_1_1_generate_timemap_functor_1a52802563a4bd8a856f1cfbcbdc8d2ae1" kind="variable"><name>m_realTimeOffsetMilliseconds</name></member>
+    <member refid="classvrv_1_1_generate_timemap_functor_1a08bb7e509f6e2e28032120d6f2f55f83" kind="variable"><name>m_currentScoreTime</name></member>
+    <member refid="classvrv_1_1_generate_timemap_functor_1a5eee0f3ad3defb35eb94b59f878dd2c3" kind="variable"><name>m_currentRealTimeMilliseconds</name></member>
     <member refid="classvrv_1_1_generate_timemap_functor_1af420862024da7f6bd616faa69b629042" kind="variable"><name>m_currentTempo</name></member>
     <member refid="classvrv_1_1_generate_timemap_functor_1a1d0c895c24f23db45f08d57f0fdd3007" kind="variable"><name>m_noCue</name></member>
     <member refid="classvrv_1_1_generate_timemap_functor_1a1fd29010e780ca25a438eb22b6657f32" kind="variable"><name>m_timemap</name></member>
@@ -5321,12 +5323,14 @@
     <member refid="classvrv_1_1_measure_1a3a75ded671717028d0130988ea78e669" kind="function"><name>HasAlignmentRefWithMultipleLayers</name></member>
     <member refid="classvrv_1_1_measure_1aebb30d801973e472dade538e89a1ee93" kind="function"><name>GetBottomVisibleStaff</name></member>
     <member refid="classvrv_1_1_measure_1a67666b5465d3767e61797184bb8a4322" kind="function"><name>GetBottomVisibleStaff</name></member>
-    <member refid="classvrv_1_1_measure_1a9b90727de26e10838237f2a13ae3e018" kind="function"><name>GetLastRealTimeOffset</name></member>
-    <member refid="classvrv_1_1_measure_1a2e0a2e000a3f00933d117d2257503425" kind="function"><name>GetRealTimeOffsetMilliseconds</name></member>
+    <member refid="classvrv_1_1_measure_1ac30dc54e7bc5bda49adb366294a417f7" kind="function"><name>ClearScoreTimeOnset</name></member>
+    <member refid="classvrv_1_1_measure_1a2809eaeff54b0f46bf70e0eb6a3fdf34" kind="function"><name>AddScoreTimeOnset</name></member>
+    <member refid="classvrv_1_1_measure_1a0aa6b487a674f4d55cdaef5b08e99612" kind="function"><name>ClearRealTimeOnsetMilliseconds</name></member>
+    <member refid="classvrv_1_1_measure_1a7a0e8ae7052d3c28c26b08005b86a1ba" kind="function"><name>AddRealTimeOnsetMilliseconds</name></member>
     <member refid="classvrv_1_1_measure_1afd716189fcf5661a30ee0db3513610b9" kind="function"><name>ClearScoreTimeOffset</name></member>
     <member refid="classvrv_1_1_measure_1afff1aa06ee53db5aa115112f7aefa7e0" kind="function"><name>AddScoreTimeOffset</name></member>
-    <member refid="classvrv_1_1_measure_1a2849253b9ba61b92f4b3a4005f3788aa" kind="function"><name>ClearRealTimeOffset</name></member>
-    <member refid="classvrv_1_1_measure_1a9e84fc6efe02da5f5326bbce5acfda64" kind="function"><name>AddRealTimeOffset</name></member>
+    <member refid="classvrv_1_1_measure_1aca192a0313d9398c302afc0ead6b68bc" kind="function"><name>ClearRealTimeOffsetMilliseconds</name></member>
+    <member refid="classvrv_1_1_measure_1ab832c18e4f7fb5a613b654f77b99ffba" kind="function"><name>AddRealTimeOffsetMilliseconds</name></member>
     <member refid="classvrv_1_1_measure_1a4201006dc4785bd7b9219648737d9b3c" kind="function"><name>SetCurrentTempo</name></member>
     <member refid="classvrv_1_1_measure_1a35d091d88fc6e075a35334982515aff4" kind="function"><name>GetCurrentTempo</name></member>
     <member refid="classvrv_1_1_measure_1af0fba6d5327bf0080eaf281efbc36566" kind="function"><name>Accept</name></member>
@@ -5348,6 +5352,8 @@
     <member refid="classvrv_1_1_measure_1ac1f791c8055a37be1f1e5cbc1f32bd4f" kind="variable"><name>m_drawingScoreDef</name></member>
     <member refid="classvrv_1_1_measure_1a713428fa909f3a88dc7df063b803f802" kind="variable"><name>m_drawingEnding</name></member>
     <member refid="classvrv_1_1_measure_1a16e45bd487f9690aee3dfc8b8e845393" kind="variable"><name>m_hasAlignmentRefWithMultipleLayers</name></member>
+    <member refid="classvrv_1_1_measure_1a08783749cfbb5ff2162e364aae8ea0e0" kind="variable"><name>m_scoreTimeOnset</name></member>
+    <member refid="classvrv_1_1_measure_1aedbb666c7d5ff88d197f415a8b611c2f" kind="variable"><name>m_realTimeOnsetMilliseconds</name></member>
     <member refid="classvrv_1_1_measure_1a6c78f15c698699c484efb64bb3c7d75a" kind="variable"><name>m_scoreTimeOffset</name></member>
     <member refid="classvrv_1_1_measure_1a685f145475c478901e13009451b49b6e" kind="variable"><name>m_realTimeOffsetMilliseconds</name></member>
     <member refid="classvrv_1_1_measure_1adf0d8138e56dc9ca4901a04c4f6943ce" kind="variable"><name>m_currentTempo</name></member>
@@ -5375,7 +5381,10 @@
     <member refid="classvrv_1_1_measure_1a48fc03935905d04e3280bf3bf9812dda" kind="function"><name>GetSectionRestartShift</name></member>
     <member refid="classvrv_1_1_measure_1a361599317323129d770b37bb2fb88576" kind="function"><name>GetFirstStaffGrpStaves</name></member>
     <member refid="classvrv_1_1_measure_1a7fe08d9e1f4a7ee4f783b2b389553b83" kind="function"><name>EnclosesTime</name></member>
-    <member refid="classvrv_1_1_measure_1a1c70302412ed284b0e6ecc22798c5042" kind="function"><name>GetLastTimeOffset</name></member>
+    <member refid="classvrv_1_1_measure_1a8fc0b8e4825d324f7a6915da6deff498" kind="function"><name>GetScoreTimeOnset</name></member>
+    <member refid="classvrv_1_1_measure_1a5597cb3f7add34120258acd7436ba2b7" kind="function"><name>GetRealTimeOnsetMilliseconds</name></member>
+    <member refid="classvrv_1_1_measure_1aeb22402d7d7f5908a49b1f15d7cd28f5" kind="function"><name>GetScoreTimeOffset</name></member>
+    <member refid="classvrv_1_1_measure_1a6fce86dd5a9e982205d8471a19428a56" kind="function"><name>GetRealTimeOffsetMilliseconds</name></member>
     <member refid="classvrv_1_1_measure_1a21e59c0fc21d2b1500d84fa527b7d0d1" kind="function"><name>GetInternalTieEndpoints</name></member>
   </compound>
   <compound refid="classvrv_1_1_measure_aligner" kind="class"><name>vrv::MeasureAligner</name>

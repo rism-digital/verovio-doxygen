@@ -211,10 +211,18 @@ std::vector&lt; <a class="el" href="classvrv_1_1_staff.html">Staff</a> * &gt;&#1
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a7fe08d9e1f4a7ee4f783b2b389553b83">EnclosesTime</a> (int time) const</td></tr>
 <tr class="memdesc:a7fe08d9e1f4a7ee4f783b2b389553b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the measure encloses the given time (in millisecond) Return the playing repeat time (1-based), 0 otherwise. <br /></td></tr>
 <tr class="separator:a7fe08d9e1f4a7ee4f783b2b389553b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c70302412ed284b0e6ecc22798c5042"><td class="memItemLeft" align="right" valign="top"><a id="a1c70302412ed284b0e6ecc22798c5042"></a>
-<a class="el" href="classvrv_1_1_fraction.html">Fraction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a1c70302412ed284b0e6ecc22798c5042">GetLastTimeOffset</a> () const</td></tr>
-<tr class="memdesc:a1c70302412ed284b0e6ecc22798c5042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read only access to m_scoreTimeOffset. <br /></td></tr>
-<tr class="separator:a1c70302412ed284b0e6ecc22798c5042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc0b8e4825d324f7a6915da6deff498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvrv_1_1_fraction.html">Fraction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a8fc0b8e4825d324f7a6915da6deff498">GetScoreTimeOnset</a> (int repeat=VRV_UNSET) const</td></tr>
+<tr class="memdesc:a8fc0b8e4825d324f7a6915da6deff498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-only access to onset and offset.  <a href="classvrv_1_1_measure.html#a8fc0b8e4825d324f7a6915da6deff498">More...</a><br /></td></tr>
+<tr class="separator:a8fc0b8e4825d324f7a6915da6deff498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5597cb3f7add34120258acd7436ba2b7"><td class="memItemLeft" align="right" valign="top"><a id="a5597cb3f7add34120258acd7436ba2b7"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>GetRealTimeOnsetMilliseconds</b> (int repeat=VRV_UNSET) const</td></tr>
+<tr class="separator:a5597cb3f7add34120258acd7436ba2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb22402d7d7f5908a49b1f15d7cd28f5"><td class="memItemLeft" align="right" valign="top"><a id="aeb22402d7d7f5908a49b1f15d7cd28f5"></a>
+<a class="el" href="classvrv_1_1_fraction.html">Fraction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetScoreTimeOffset</b> (int repeat=VRV_UNSET) const</td></tr>
+<tr class="separator:aeb22402d7d7f5908a49b1f15d7cd28f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fce86dd5a9e982205d8471a19428a56"><td class="memItemLeft" align="right" valign="top"><a id="a6fce86dd5a9e982205d8471a19428a56"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>GetRealTimeOffsetMilliseconds</b> (int repeat=VRV_UNSET) const</td></tr>
+<tr class="separator:a6fce86dd5a9e982205d8471a19428a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21e59c0fc21d2b1500d84fa527b7d0d1"><td class="memItemLeft" align="right" valign="top"><a id="a21e59c0fc21d2b1500d84fa527b7d0d1"></a>
 std::vector&lt; std::pair&lt; <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *, <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a21e59c0fc21d2b1500d84fa527b7d0d1">GetInternalTieEndpoints</a> ()</td></tr>
 <tr class="memdesc:a21e59c0fc21d2b1500d84fa527b7d0d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return vector with tie endpoints for ties that start and end in current measure. <br /></td></tr>
@@ -386,27 +394,31 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HasAlignmentRefWithMu
 const <a class="el" href="classvrv_1_1_staff.html">Staff</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBottomVisibleStaff</b> () const</td></tr>
 <tr class="separator:a67666b5465d3767e61797184bb8a4322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a9b90727de26e10838237f2a13ae3e018"><td class="memItemLeft" align="right" valign="top"><a id="a9b90727de26e10838237f2a13ae3e018"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a9b90727de26e10838237f2a13ae3e018">GetLastRealTimeOffset</a> () const</td></tr>
-<tr class="memdesc:a9b90727de26e10838237f2a13ae3e018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the real time offset in milliseconds. <br /></td></tr>
-<tr class="separator:a9b90727de26e10838237f2a13ae3e018"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e0a2e000a3f00933d117d2257503425"><td class="memItemLeft" align="right" valign="top"><a id="a2e0a2e000a3f00933d117d2257503425"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>GetRealTimeOffsetMilliseconds</b> (int repeat) const</td></tr>
-<tr class="separator:a2e0a2e000a3f00933d117d2257503425"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ac30dc54e7bc5bda49adb366294a417f7"><td class="memItemLeft" align="right" valign="top"><a id="ac30dc54e7bc5bda49adb366294a417f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#ac30dc54e7bc5bda49adb366294a417f7">ClearScoreTimeOnset</a> ()</td></tr>
+<tr class="memdesc:ac30dc54e7bc5bda49adb366294a417f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for the time offset. <br /></td></tr>
+<tr class="separator:ac30dc54e7bc5bda49adb366294a417f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2809eaeff54b0f46bf70e0eb6a3fdf34"><td class="memItemLeft" align="right" valign="top"><a id="a2809eaeff54b0f46bf70e0eb6a3fdf34"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddScoreTimeOnset</b> (<a class="el" href="classvrv_1_1_fraction.html">Fraction</a> offset)</td></tr>
+<tr class="separator:a2809eaeff54b0f46bf70e0eb6a3fdf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa6b487a674f4d55cdaef5b08e99612"><td class="memItemLeft" align="right" valign="top"><a id="a0aa6b487a674f4d55cdaef5b08e99612"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearRealTimeOnsetMilliseconds</b> ()</td></tr>
+<tr class="separator:a0aa6b487a674f4d55cdaef5b08e99612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a0e8ae7052d3c28c26b08005b86a1ba"><td class="memItemLeft" align="right" valign="top"><a id="a7a0e8ae7052d3c28c26b08005b86a1ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRealTimeOnsetMilliseconds</b> (double milliseconds)</td></tr>
+<tr class="separator:a7a0e8ae7052d3c28c26b08005b86a1ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd716189fcf5661a30ee0db3513610b9"><td class="memItemLeft" align="right" valign="top"><a id="afd716189fcf5661a30ee0db3513610b9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#afd716189fcf5661a30ee0db3513610b9">ClearScoreTimeOffset</a> ()</td></tr>
-<tr class="memdesc:afd716189fcf5661a30ee0db3513610b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for the time offset. <br /></td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearScoreTimeOffset</b> ()</td></tr>
 <tr class="separator:afd716189fcf5661a30ee0db3513610b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afff1aa06ee53db5aa115112f7aefa7e0"><td class="memItemLeft" align="right" valign="top"><a id="afff1aa06ee53db5aa115112f7aefa7e0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddScoreTimeOffset</b> (<a class="el" href="classvrv_1_1_fraction.html">Fraction</a> offset)</td></tr>
 <tr class="separator:afff1aa06ee53db5aa115112f7aefa7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2849253b9ba61b92f4b3a4005f3788aa"><td class="memItemLeft" align="right" valign="top"><a id="a2849253b9ba61b92f4b3a4005f3788aa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearRealTimeOffset</b> ()</td></tr>
-<tr class="separator:a2849253b9ba61b92f4b3a4005f3788aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e84fc6efe02da5f5326bbce5acfda64"><td class="memItemLeft" align="right" valign="top"><a id="a9e84fc6efe02da5f5326bbce5acfda64"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRealTimeOffset</b> (double milliseconds)</td></tr>
-<tr class="separator:a9e84fc6efe02da5f5326bbce5acfda64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca192a0313d9398c302afc0ead6b68bc"><td class="memItemLeft" align="right" valign="top"><a id="aca192a0313d9398c302afc0ead6b68bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearRealTimeOffsetMilliseconds</b> ()</td></tr>
+<tr class="separator:aca192a0313d9398c302afc0ead6b68bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab832c18e4f7fb5a613b654f77b99ffba"><td class="memItemLeft" align="right" valign="top"><a id="ab832c18e4f7fb5a613b654f77b99ffba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRealTimeOffsetMilliseconds</b> (double milliseconds)</td></tr>
+<tr class="separator:ab832c18e4f7fb5a613b654f77b99ffba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a4201006dc4785bd7b9219648737d9b3c"><td class="memItemLeft" align="right" valign="top"><a id="a4201006dc4785bd7b9219648737d9b3c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_measure.html#a4201006dc4785bd7b9219648737d9b3c">SetCurrentTempo</a> (double tempo)</td></tr>
@@ -1438,6 +1450,27 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverl
 
 </div>
 </div>
+<a id="a8fc0b8e4825d324f7a6915da6deff498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fc0b8e4825d324f7a6915da6deff498">&#9670;&nbsp;</a></span>GetScoreTimeOnset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvrv_1_1_fraction.html">Fraction</a> vrv::Measure::GetScoreTimeOnset </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>repeat</em> = <code>VRV_UNSET</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read-only access to onset and offset. </p>
+<p>Passing repeat unset return last one. </p>
+
+</div>
+</div>
 <a id="abea90dea35729eb5ce1fd1f1aad9dcda"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abea90dea35729eb5ce1fd1f1aad9dcda">&#9670;&nbsp;</a></span>Reset()</h2>
 
@@ -1615,7 +1648,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_measure.html">Measure</a></li>
-    <li class="footer">Generated on Tue Jun 17 2025 07:59:31 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jun 20 2025 11:47:42 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

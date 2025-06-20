@@ -1,5 +1,12 @@
 var NAVTREEINDEX22 =
 {
+"classvrv_1_1_prepare_delayed_turns_functor.html#acc434387d22dac609ed7d182c2513961":[1,0,0,336,6],
+"classvrv_1_1_prepare_delayed_turns_functor.html#acc553a8e4a2849a1a7f42f3a6f215819":[1,0,0,336,4],
+"classvrv_1_1_prepare_delayed_turns_functor.html#adb06ebde616123f51ee5ca77b662c77e":[1,0,0,336,0],
+"classvrv_1_1_prepare_duration_functor.html":[1,0,0,327],
+"classvrv_1_1_prepare_duration_functor.html#a11bb15d22b18a0f931298860ae1da0be":[1,0,0,327,4],
+"classvrv_1_1_prepare_duration_functor.html#a1bda40faa8deb40a2c2ae60b27bb1c9d":[1,0,0,327,2],
+"classvrv_1_1_prepare_duration_functor.html#a5412757404ed992e94b2b851b09bd5e1":[1,0,0,327,0],
 "classvrv_1_1_prepare_duration_functor.html#a708f444403cb2dda1efa7acfbf2c1c85":[1,0,0,327,3],
 "classvrv_1_1_prepare_duration_functor.html#aa49a377c4a7807522f587d425db68dcf":[1,0,0,327,1],
 "classvrv_1_1_prepare_duration_functor.html#aa4d9ee5965289299632942300e29f2d0":[1,0,0,327,6],
@@ -242,12 +249,5 @@ var NAVTREEINDEX22 =
 "classvrv_1_1_reset_data_functor.html#a1bb6a832c4ac2487d60268f2d388dbde":[1,0,0,350,25],
 "classvrv_1_1_reset_data_functor.html#a1dc17222a1471f55254c48a0782cd2ca":[1,0,0,350,45],
 "classvrv_1_1_reset_data_functor.html#a215c658ae2b91b457161eceade8a3c8b":[1,0,0,350,12],
-"classvrv_1_1_reset_data_functor.html#a25bdcf744d55dc9e0c4b529236a489cb":[1,0,0,350,19],
-"classvrv_1_1_reset_data_functor.html#a2de645de47858f7de1ccbb1c5ddfb064":[1,0,0,350,33],
-"classvrv_1_1_reset_data_functor.html#a3cf66c7d63e8b28a4189a8dbcadacd2d":[1,0,0,350,26],
-"classvrv_1_1_reset_data_functor.html#a46c2a8937294c63130eaace061f0644f":[1,0,0,350,10],
-"classvrv_1_1_reset_data_functor.html#a4c7af6e326f74c533caef198d8a7022c":[1,0,0,350,11],
-"classvrv_1_1_reset_data_functor.html#a53d1c2de155ce9d56e59fee73a4c69be":[1,0,0,350,23],
-"classvrv_1_1_reset_data_functor.html#a53f821d4f14732621644dd5ae7ddc232":[1,0,0,350,31],
-"classvrv_1_1_reset_data_functor.html#a55ac69fd680c8ed79790ca0215b8e901":[1,0,0,350,21]
+"classvrv_1_1_reset_data_functor.html#a25bdcf744d55dc9e0c4b529236a489cb":[1,0,0,350,19]
 };
