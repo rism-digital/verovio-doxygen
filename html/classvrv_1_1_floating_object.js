@@ -16,7 +16,7 @@ var classvrv_1_1_floating_object =
     [ "GetDrawingY", "classvrv_1_1_floating_object.html#a87db0b64d7840dcfd006f6af2b32e4bb", null ],
     [ "GetMaxDrawingYRel", "classvrv_1_1_floating_object.html#ab6520fb847c3341d60fba34277e011e0", null ],
     [ "GetVerticalContentBoundaryRel", "classvrv_1_1_floating_object.html#a3adb54f7d09e39f78107e7afc708f572", null ],
-    [ "IsCloserToStaffThan", "classvrv_1_1_floating_object.html#a33e63919403a78ab01c46e22ff264d4c", null ],
+    [ "IsCloserToStaffThan", "classvrv_1_1_floating_object.html#a0d0f850b0fd59b8a6ffda63678fbae72", null ],
     [ "IsExtenderElement", "classvrv_1_1_floating_object.html#a8781df9fac1bad66c08cdae278be23e4", null ],
     [ "Reset", "classvrv_1_1_floating_object.html#a268bb28f158e0a74e306c08683406fe3", null ],
     [ "ResetDrawing", "classvrv_1_1_floating_object.html#a384ed728e57f5ac0b632e94994c1b5ec", null ],

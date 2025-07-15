@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classvrv_1_1_calc_b_box_overflows_functor.html#a68ae70a052e53971c087f6888c145a9e":[1,0,0,68,3],
 "classvrv_1_1_calc_b_box_overflows_functor.html#aa878344b5fc984c5126daf8704512e51":[1,0,0,68,0],
 "classvrv_1_1_calc_b_box_overflows_functor.html#ad8915cd6670d6879222c91a33b0b8540":[1,0,0,68,1],
 "classvrv_1_1_calc_chord_note_heads_functor.html":[1,0,0,69],
@@ -222,7 +223,6 @@ var NAVTREEINDEX4 =
 "classvrv_1_1_const_functor_interface.html#a096fe13c92fe97ee00e2806d208951b5":[1,0,0,199,273],
 "classvrv_1_1_const_functor_interface.html#a098890497f17291a39598e5e2b561fd9":[1,0,0,199,75],
 "classvrv_1_1_const_functor_interface.html#a0bef610370b12d0a7f680a31575cbc09":[1,0,0,199,127],
-"classvrv_1_1_const_functor_interface.html#a0c9458567ecf7524a6213e6601c016fb":[1,0,0,199,158],
 "classvrv_1_1_const_functor_interface.html#a0d4479a23954a1c2ff50131d3c449a0f":[1,0,0,199,204],
 "classvrv_1_1_const_functor_interface.html#a0e90e5264f0e0c364eb2908dde93d0e7":[1,0,0,199,211],
 "classvrv_1_1_const_functor_interface.html#a0f222f45f8c792f64f205b5f0e946098":[1,0,0,199,185],

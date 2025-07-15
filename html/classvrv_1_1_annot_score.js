@@ -6,6 +6,7 @@ var classvrv_1_1_annot_score =
     [ "Accept", "classvrv_1_1_annot_score.html#a19089562477e46538b30949437d56238", null ],
     [ "AcceptEnd", "classvrv_1_1_annot_score.html#a9cd31b8c7e52a869b56450b8a5d01d4a", null ],
     [ "AcceptEnd", "classvrv_1_1_annot_score.html#a41b29fada6d572c6a9b05ee938f22281", null ],
+    [ "Clone", "classvrv_1_1_annot_score.html#a1ee41b943077276af498be63e947a37b", null ],
     [ "GetBoxHeight", "classvrv_1_1_annot_score.html#ade5ee03f9dbda619d87b86db538516ed", null ],
     [ "GetClassName", "classvrv_1_1_annot_score.html#a2944dadaaa6db35df6ea2959b7120a03", null ],
     [ "GetLineWidth", "classvrv_1_1_annot_score.html#a4267ff0bbecc8c5266cecb5c97aef50f", null ],

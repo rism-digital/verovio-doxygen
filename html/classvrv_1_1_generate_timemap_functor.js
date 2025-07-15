@@ -6,6 +6,8 @@ var classvrv_1_1_generate_timemap_functor =
     [ "SetNoCue", "classvrv_1_1_generate_timemap_functor.html#aff61bb521e434a55edd46000774a74f5", null ],
     [ "VisitLayerElement", "classvrv_1_1_generate_timemap_functor.html#a767dfad022df4263cbcb204e6915862f", null ],
     [ "VisitMeasure", "classvrv_1_1_generate_timemap_functor.html#a594bb0bc2f784e48a9c92ee08260f9c2", null ],
+    [ "VisitMRest", "classvrv_1_1_generate_timemap_functor.html#ae32ebe4018f208c0c2e1573097456a3e", null ],
+    [ "VisitMultiRest", "classvrv_1_1_generate_timemap_functor.html#acd6f2e829a0deeca524722024c84f3a3", null ],
     [ "VisitNote", "classvrv_1_1_generate_timemap_functor.html#ac9776e5ef6b9c3ae8f4a44426954bcf6", null ],
     [ "VisitRest", "classvrv_1_1_generate_timemap_functor.html#a27bdb4521970f6376dcc05590a327581", null ]
 ];

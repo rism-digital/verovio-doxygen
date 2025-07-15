@@ -133,9 +133,6 @@
       <node id="17">
         <label>tuple</label>
       </node>
-      <node id="34">
-        <label>optional</label>
-      </node>
       <node id="18">
         <label>vector</label>
       </node>
@@ -252,6 +249,9 @@
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
+      </node>
+      <node id="34">
+        <label>memory</label>
       </node>
       <node id="21">
         <label>fraction.h</label>
@@ -746,77 +746,83 @@
 <codeline lineno="305"><highlight class="normal"></highlight></codeline>
 <codeline lineno="310" refid="classvrv_1_1_measure_1a7fe08d9e1f4a7ee4f783b2b389553b83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_measure_1a7fe08d9e1f4a7ee4f783b2b389553b83" kindref="member">EnclosesTime</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>time)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="311"><highlight class="normal"></highlight></codeline>
-<codeline lineno="315" refid="classvrv_1_1_measure_1a1c70302412ed284b0e6ecc22798c5042" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref><sp/><ref refid="classvrv_1_1_measure_1a1c70302412ed284b0e6ecc22798c5042" kindref="member">GetLastTimeOffset</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_scoreTimeOffset.back();<sp/>}</highlight></codeline>
-<codeline lineno="316"><highlight class="normal"></highlight></codeline>
-<codeline lineno="321" refid="classvrv_1_1_measure_1a9b90727de26e10838237f2a13ae3e018" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_measure_1a9b90727de26e10838237f2a13ae3e018" kindref="member">GetLastRealTimeOffset</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_realTimeOffsetMilliseconds.back();<sp/>}</highlight></codeline>
-<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GetRealTimeOffsetMilliseconds(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>repeat)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="324"></codeline>
-<codeline lineno="329" refid="classvrv_1_1_measure_1afd716189fcf5661a30ee0db3513610b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_measure_1afd716189fcf5661a30ee0db3513610b9" kindref="member">ClearScoreTimeOffset</ref>()<sp/>{<sp/>m_scoreTimeOffset.clear();<sp/>}</highlight></codeline>
-<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddScoreTimeOffset(<ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref><sp/>offset)<sp/>{<sp/>m_scoreTimeOffset.push_back(offset);<sp/>}</highlight></codeline>
-<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ClearRealTimeOffset()<sp/>{<sp/>m_realTimeOffsetMilliseconds.clear();<sp/>}</highlight></codeline>
-<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddRealTimeOffset(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>milliseconds)<sp/>{<sp/>m_realTimeOffsetMilliseconds.push_back(milliseconds);<sp/>}</highlight></codeline>
-<codeline lineno="334"></codeline>
-<codeline lineno="339" refid="classvrv_1_1_measure_1a4201006dc4785bd7b9219648737d9b3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_measure_1a4201006dc4785bd7b9219648737d9b3c" kindref="member">SetCurrentTempo</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tempo)<sp/>{<sp/>m_currentTempo<sp/>=<sp/>tempo;<sp/>}</highlight></codeline>
-<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GetCurrentTempo()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_currentTempo;<sp/>}</highlight></codeline>
-<codeline lineno="342"><highlight class="normal"></highlight></codeline>
-<codeline lineno="346" refid="classvrv_1_1_measure_1a21e59c0fc21d2b1500d84fa527b7d0d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;LayerElement<sp/>*,<sp/>LayerElement<sp/>*&gt;&gt;<sp/><ref refid="classvrv_1_1_measure_1a21e59c0fc21d2b1500d84fa527b7d0d1" kindref="member">GetInternalTieEndpoints</ref>();</highlight></codeline>
-<codeline lineno="347"><highlight class="normal"></highlight></codeline>
-<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="351"><highlight class="normal"></highlight></codeline>
-<codeline lineno="356" refid="classvrv_1_1_measure_1af0fba6d5327bf0080eaf281efbc36566" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_measure_1af0fba6d5327bf0080eaf281efbc36566" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_measure_1af0fba6d5327bf0080eaf281efbc36566" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="361"><highlight class="normal"></highlight></codeline>
-<codeline lineno="362"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>flags<sp/>for<sp/>drawing<sp/>measure<sp/>barline<sp/>based<sp/>on<sp/>visibility<sp/>or<sp/>other<sp/>conditions</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>BarlineDrawingFlags<sp/>{</highlight></codeline>
-<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SYSTEM_BREAK<sp/>=<sp/>0x1,</highlight></codeline>
-<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SCORE_DEF_INSERT<sp/>=<sp/>0x2,</highlight></codeline>
-<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INVISIBLE_MEASURE_CURRENT<sp/>=<sp/>0x4,</highlight></codeline>
-<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INVISIBLE_MEASURE_PREVIOUS<sp/>=<sp/>0x8</highlight></codeline>
-<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="375" refid="classvrv_1_1_measure_1a74bf7ce62a9f5f49985336483516d8a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_measure_1a74bf7ce62a9f5f49985336483516d8a8" kindref="member">m_drawingFacsX1</ref>;</highlight></codeline>
-<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_drawingFacsX2;</highlight></codeline>
-<codeline lineno="378"><highlight class="normal"></highlight></codeline>
-<codeline lineno="382" refid="classvrv_1_1_measure_1a39f4319275584a57b898dcbfcbed760e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_measure_aligner" kindref="compound">MeasureAligner</ref><sp/><ref refid="classvrv_1_1_measure_1a39f4319275584a57b898dcbfcbed760e" kindref="member">m_measureAligner</ref>;</highlight></codeline>
-<codeline lineno="383"><highlight class="normal"></highlight></codeline>
-<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_timestamp_aligner" kindref="compound">TimestampAligner</ref><sp/>m_timestampAligner;</highlight></codeline>
-<codeline lineno="385"><highlight class="normal"></highlight></codeline>
-<codeline lineno="386"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="391" refid="classvrv_1_1_measure_1a0f66f8a9a11ea45c967fbb796b21d91f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_measure_1a0f66f8a9a11ea45c967fbb796b21d91f" kindref="member">m_drawingXRel</ref>;</highlight></codeline>
-<codeline lineno="392"><highlight class="normal"></highlight></codeline>
-<codeline lineno="396" refid="classvrv_1_1_measure_1a665f3d9783f81d741ffa3a140bd61485" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_measure_1a665f3d9783f81d741ffa3a140bd61485" kindref="member">m_cachedXRel</ref>;</highlight></codeline>
-<codeline lineno="397"><highlight class="normal"></highlight></codeline>
-<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_cachedOverflow;</highlight></codeline>
-<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_cachedWidth;</highlight></codeline>
-<codeline lineno="405"><highlight class="normal"></highlight></codeline>
-<codeline lineno="406"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/>MeasureType<sp/>m_measureType;</highlight></codeline>
-<codeline lineno="412"><highlight class="normal"></highlight></codeline>
-<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_index;</highlight></codeline>
-<codeline lineno="417"><highlight class="normal"></highlight></codeline>
-<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_bar_line" kindref="compound">BarLine</ref><sp/>m_leftBarLine;</highlight></codeline>
-<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_bar_line" kindref="compound">BarLine</ref><sp/>m_rightBarLine;</highlight></codeline>
-<codeline lineno="425"><highlight class="normal"></highlight></codeline>
-<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_score_def" kindref="compound">ScoreDef</ref><sp/>*m_drawingScoreDef;</highlight></codeline>
-<codeline lineno="432"><highlight class="normal"></highlight></codeline>
-<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_ending" kindref="compound">Ending</ref><sp/>*m_drawingEnding;</highlight></codeline>
-<codeline lineno="438"><highlight class="normal"></highlight></codeline>
-<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_hasAlignmentRefWithMultipleLayers;</highlight></codeline>
-<codeline lineno="443"><highlight class="normal"></highlight></codeline>
-<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Fraction&gt;<sp/>m_scoreTimeOffset;</highlight></codeline>
-<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>m_realTimeOffsetMilliseconds;</highlight></codeline>
-<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_currentTempo;</highlight></codeline>
-<codeline lineno="450"><highlight class="normal"></highlight></codeline>
-<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;int,<sp/>BarlineRenditionPair&gt;<sp/>m_invisibleStaffBarlines;</highlight></codeline>
-<codeline lineno="452"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="453"><highlight class="normal"></highlight></codeline>
-<codeline lineno="454"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="455"><highlight class="normal"></highlight></codeline>
-<codeline lineno="456"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="316" refid="classvrv_1_1_measure_1a8fc0b8e4825d324f7a6915da6deff498" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref><sp/><ref refid="classvrv_1_1_measure_1a8fc0b8e4825d324f7a6915da6deff498" kindref="member">GetScoreTimeOnset</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>repeat<sp/>=<sp/>VRV_UNSET)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GetRealTimeOnsetMilliseconds(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>repeat<sp/>=<sp/>VRV_UNSET)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref><sp/>GetScoreTimeOffset(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>repeat<sp/>=<sp/>VRV_UNSET)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GetRealTimeOffsetMilliseconds(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>repeat<sp/>=<sp/>VRV_UNSET)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="321"></codeline>
+<codeline lineno="326" refid="classvrv_1_1_measure_1ac30dc54e7bc5bda49adb366294a417f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_measure_1ac30dc54e7bc5bda49adb366294a417f7" kindref="member">ClearScoreTimeOnset</ref>()<sp/>{<sp/>m_scoreTimeOnset.clear();<sp/>}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddScoreTimeOnset(<ref refid="classvrv_1_1_fraction" kindref="compound">Fraction</ref><sp/>offset)<sp/>{<sp/>m_scoreTimeOnset.push_back(offset);<sp/>}</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ClearRealTimeOnsetMilliseconds()<sp/>{<sp/>m_realTimeOnsetMilliseconds.clear();<sp/>}</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddRealTimeOnsetMilliseconds(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>milliseconds)<sp/>{<sp/>m_realTimeOnsetMilliseconds.push_back(milliseconds);<sp/>}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ClearScoreTimeOffset()<sp/>{<sp/>m_scoreTimeOffset.clear();<sp/>}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddScoreTimeOffset(Fraction<sp/>offset)<sp/>{<sp/>m_scoreTimeOffset.push_back(offset);<sp/>}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ClearRealTimeOffsetMilliseconds()<sp/>{<sp/>m_realTimeOffsetMilliseconds.clear();<sp/>}</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddRealTimeOffsetMilliseconds(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>milliseconds)<sp/>{<sp/>m_realTimeOffsetMilliseconds.push_back(milliseconds);<sp/>}</highlight></codeline>
+<codeline lineno="335"></codeline>
+<codeline lineno="340" refid="classvrv_1_1_measure_1a4201006dc4785bd7b9219648737d9b3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_measure_1a4201006dc4785bd7b9219648737d9b3c" kindref="member">SetCurrentTempo</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tempo)<sp/>{<sp/>m_currentTempo<sp/>=<sp/>tempo;<sp/>}</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GetCurrentTempo()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_currentTempo;<sp/>}</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347" refid="classvrv_1_1_measure_1a21e59c0fc21d2b1500d84fa527b7d0d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;LayerElement<sp/>*,<sp/>LayerElement<sp/>*&gt;&gt;<sp/><ref refid="classvrv_1_1_measure_1a21e59c0fc21d2b1500d84fa527b7d0d1" kindref="member">GetInternalTieEndpoints</ref>();</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357" refid="classvrv_1_1_measure_1af0fba6d5327bf0080eaf281efbc36566" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_measure_1af0fba6d5327bf0080eaf281efbc36566" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_measure_1af0fba6d5327bf0080eaf281efbc36566" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>flags<sp/>for<sp/>drawing<sp/>measure<sp/>barline<sp/>based<sp/>on<sp/>visibility<sp/>or<sp/>other<sp/>conditions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>BarlineDrawingFlags<sp/>{</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SYSTEM_BREAK<sp/>=<sp/>0x1,</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SCORE_DEF_INSERT<sp/>=<sp/>0x2,</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INVISIBLE_MEASURE_CURRENT<sp/>=<sp/>0x4,</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INVISIBLE_MEASURE_PREVIOUS<sp/>=<sp/>0x8</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="376" refid="classvrv_1_1_measure_1a74bf7ce62a9f5f49985336483516d8a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_measure_1a74bf7ce62a9f5f49985336483516d8a8" kindref="member">m_drawingFacsX1</ref>;</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_drawingFacsX2;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383" refid="classvrv_1_1_measure_1a39f4319275584a57b898dcbfcbed760e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_measure_aligner" kindref="compound">MeasureAligner</ref><sp/><ref refid="classvrv_1_1_measure_1a39f4319275584a57b898dcbfcbed760e" kindref="member">m_measureAligner</ref>;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_timestamp_aligner" kindref="compound">TimestampAligner</ref><sp/>m_timestampAligner;</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="392" refid="classvrv_1_1_measure_1a0f66f8a9a11ea45c967fbb796b21d91f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_measure_1a0f66f8a9a11ea45c967fbb796b21d91f" kindref="member">m_drawingXRel</ref>;</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397" refid="classvrv_1_1_measure_1a665f3d9783f81d741ffa3a140bd61485" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_measure_1a665f3d9783f81d741ffa3a140bd61485" kindref="member">m_cachedXRel</ref>;</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_cachedOverflow;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_cachedWidth;</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/>MeasureType<sp/>m_measureType;</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_index;</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_bar_line" kindref="compound">BarLine</ref><sp/>m_leftBarLine;</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_bar_line" kindref="compound">BarLine</ref><sp/>m_rightBarLine;</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_score_def" kindref="compound">ScoreDef</ref><sp/>*m_drawingScoreDef;</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_ending" kindref="compound">Ending</ref><sp/>*m_drawingEnding;</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_hasAlignmentRefWithMultipleLayers;</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Fraction&gt;<sp/>m_scoreTimeOnset;</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>m_realTimeOnsetMilliseconds;</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Fraction&gt;<sp/>m_scoreTimeOffset;</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>m_realTimeOffsetMilliseconds;</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_currentTempo;</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;int,<sp/>BarlineRenditionPair&gt;<sp/>m_invisibleStaffBarlines;</highlight></codeline>
+<codeline lineno="456"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/measure.h"/>
   </compounddef>

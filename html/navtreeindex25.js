@@ -1,5 +1,16 @@
 var NAVTREEINDEX25 =
 {
+"classvrv_1_1_staff.html#acf0e10f252459d8feb38f1b630c0a0f0":[1,0,0,380,40],
+"classvrv_1_1_staff.html#acf15987ce1d154b3d0a086a0418414f3":[1,0,0,380,3],
+"classvrv_1_1_staff.html#ad047ee1f4b843550634122d55eac0e47":[1,0,0,380,7],
+"classvrv_1_1_staff.html#add7cd8536082e2b1e3e1bf107f54d327":[1,0,0,380,19],
+"classvrv_1_1_staff.html#ae1946399a16d77b31e81fe40fd517695":[1,0,0,380,48],
+"classvrv_1_1_staff.html#ae194d3de0191a955118338c70e157133":[1,0,0,380,9],
+"classvrv_1_1_staff.html#aee928f1f471b78c2e81dd9bef04ef431":[1,0,0,380,37],
+"classvrv_1_1_staff.html#af1547bf90746d2f77b44c37aeb028b82":[1,0,0,380,13],
+"classvrv_1_1_staff.html#af64a2d11ba5b97412094e00d6f908c63":[1,0,0,380,55],
+"classvrv_1_1_staff.html#af93e0b0832633be44cdac73069cc4445":[1,0,0,380,39],
+"classvrv_1_1_staff.html#af9f220562c4d14372c409de9b0f57293":[1,0,0,380,16],
 "classvrv_1_1_staff_alignment.html":[1,0,0,425],
 "classvrv_1_1_staff_alignment.html#a03bf3b0ec9c3970afd742b4f19d00a6d":[1,0,0,425,35],
 "classvrv_1_1_staff_alignment.html#a129b14144978d5a2379bbd3a95e8258e":[1,0,0,425,4],
@@ -238,16 +249,5 @@ var NAVTREEINDEX25 =
 "classvrv_1_1_svg_device_context.html#a15e6d5ffe8946ec3371c5e363b06fe3c":[1,0,0,388,35],
 "classvrv_1_1_svg_device_context.html#a16eced8fcf0d3d3d04f1666429a45062":[1,0,0,388,25],
 "classvrv_1_1_svg_device_context.html#a257b967c96a5cb94022707269a92e2f4":[1,0,0,388,53],
-"classvrv_1_1_svg_device_context.html#a25df7dabeece7afc21b9e35a3ab97710":[1,0,0,388,58],
-"classvrv_1_1_svg_device_context.html#a25f3ff45496487556c367df1f167819c":[1,0,0,388,41],
-"classvrv_1_1_svg_device_context.html#a278107f59bd0aa308352e1319fa05161":[1,0,0,388,51],
-"classvrv_1_1_svg_device_context.html#a28e178314d34a9d0876b23aa9972067c":[1,0,0,388,47],
-"classvrv_1_1_svg_device_context.html#a2f56ce603bd94fea5f23d21fa7117799":[1,0,0,388,3],
-"classvrv_1_1_svg_device_context.html#a39c5cefcde73bdea9179e39f8a6a6f19":[1,0,0,388,14],
-"classvrv_1_1_svg_device_context.html#a3d798973e011a86f18c476c85ef8d2d7":[1,0,0,388,6],
-"classvrv_1_1_svg_device_context.html#a3e964a005f023ff73635593ac1288ca4":[1,0,0,388,7],
-"classvrv_1_1_svg_device_context.html#a4705b98e132f5675a093b9bb824eb35a":[1,0,0,388,12],
-"classvrv_1_1_svg_device_context.html#a4725cccebdad6e2add2b59a9e50a39d4":[1,0,0,388,27],
-"classvrv_1_1_svg_device_context.html#a49eb15ae209f1ab05b072c5fb9589d3a":[1,0,0,388,32],
-"classvrv_1_1_svg_device_context.html#a529662dd7b2d84d74c36d0d02efc2fe4":[1,0,0,388,10]
+"classvrv_1_1_svg_device_context.html#a25df7dabeece7afc21b9e35a3ab97710":[1,0,0,388,58]
 };
