@@ -22,6 +22,7 @@ var classvrv_1_1_resources =
     [ "IsFontLoaded", "classvrv_1_1_resources.html#a032385c5e9c000508bf52394f560b72e", null ],
     [ "IsSmuflFallbackNeeded", "classvrv_1_1_resources.html#a429bb8fd6635c36a657f5a09c1572ed6", null ],
     [ "LoadAll", "classvrv_1_1_resources.html#ab79e6a3f74b0ea800441772eda681b63", null ],
+    [ "Ok", "classvrv_1_1_resources.html#ab2c9f323ba47fad214f37f9aad3d9525", null ],
     [ "SelectTextFont", "classvrv_1_1_resources.html#ae451033365fb7e79b728be77f3ebd7aa", null ],
     [ "SetCurrentFont", "classvrv_1_1_resources.html#afb853e55da58afb39639efa801c22651", null ],
     [ "SetFallbackFont", "classvrv_1_1_resources.html#a3c26f04d5a1d9a6b7ffc848161306624", null ],
