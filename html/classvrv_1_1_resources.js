@@ -16,15 +16,19 @@ var classvrv_1_1_resources =
     [ "GetGlyph", "classvrv_1_1_resources.html#ab5bc7928b34f63c14de1229623cdac62", null ],
     [ "GetGlyphCode", "classvrv_1_1_resources.html#acabfaea592f8211df74611fffdc9a682", null ],
     [ "GetPath", "classvrv_1_1_resources.html#abb5423785eb49bc813f0113603f0b342", null ],
+    [ "GetTextFont", "classvrv_1_1_resources.html#a0654f8ccad91d70405568790615b0a31", null ],
     [ "GetTextGlyph", "classvrv_1_1_resources.html#a1f7f592b285caa4823b4995f14b444b9", null ],
     [ "InitFonts", "classvrv_1_1_resources.html#af7823e10567dae86983fad00b0d25290", null ],
     [ "IsCurrentFontFallback", "classvrv_1_1_resources.html#a9859292deedcc9780ce51a1b6119bf41", null ],
     [ "IsFontLoaded", "classvrv_1_1_resources.html#a032385c5e9c000508bf52394f560b72e", null ],
     [ "IsSmuflFallbackNeeded", "classvrv_1_1_resources.html#a429bb8fd6635c36a657f5a09c1572ed6", null ],
     [ "LoadAll", "classvrv_1_1_resources.html#ab79e6a3f74b0ea800441772eda681b63", null ],
+    [ "Ok", "classvrv_1_1_resources.html#ab2c9f323ba47fad214f37f9aad3d9525", null ],
     [ "SelectTextFont", "classvrv_1_1_resources.html#ae451033365fb7e79b728be77f3ebd7aa", null ],
     [ "SetCurrentFont", "classvrv_1_1_resources.html#afb853e55da58afb39639efa801c22651", null ],
     [ "SetFallbackFont", "classvrv_1_1_resources.html#a3c26f04d5a1d9a6b7ffc848161306624", null ],
     [ "SetFont", "classvrv_1_1_resources.html#a112c2087e61d477c8d0dece3165f0e74", null ],
-    [ "SetPath", "classvrv_1_1_resources.html#abcb461570a502e03dba625cf2cf02092", null ]
+    [ "SetPath", "classvrv_1_1_resources.html#abcb461570a502e03dba625cf2cf02092", null ],
+    [ "UseLiberationTextFont", "classvrv_1_1_resources.html#a6e39a7adf460365b030a6289d0afc1e3", null ],
+    [ "UseLiberationTextFont", "classvrv_1_1_resources.html#ab2b6f36c4af802d7f57f36cae6ff00f4", null ]
 ];
