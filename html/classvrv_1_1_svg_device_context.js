@@ -56,6 +56,7 @@ var classvrv_1_1_svg_device_context =
     [ "SetSvgViewBox", "classvrv_1_1_svg_device_context.html#a257b967c96a5cb94022707269a92e2f4", null ],
     [ "SetTextBackground", "classvrv_1_1_svg_device_context.html#acc066c9f753fe702c0f05f1729ea7876", null ],
     [ "SetTextForeground", "classvrv_1_1_svg_device_context.html#a808bd2c543af0b56bc0ab0742c32e5db", null ],
+    [ "SetUseLiberation", "classvrv_1_1_svg_device_context.html#a5c2758eb5a508b7ff8c7b359bd1f77e5", null ],
     [ "StartCustomGraphic", "classvrv_1_1_svg_device_context.html#a8fd57d6656b607b95b96739bdfb6a128", null ],
     [ "StartGraphic", "classvrv_1_1_svg_device_context.html#af004f015646e8aaeb637504b932cf0cd", null ],
     [ "StartPage", "classvrv_1_1_svg_device_context.html#a25df7dabeece7afc21b9e35a3ab97710", null ],

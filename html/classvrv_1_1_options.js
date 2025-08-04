@@ -54,6 +54,7 @@ var classvrv_1_1_options =
     [ "m_fontAddCustom", "classvrv_1_1_options.html#a95689f01e02c685c22c9d607c16a036d", null ],
     [ "m_fontFallback", "classvrv_1_1_options.html#a70dbab370a124dfee8bf88428b65e3cc", null ],
     [ "m_fontLoadAll", "classvrv_1_1_options.html#a026f093b9f1623e8580e8d98be6ee6ce", null ],
+    [ "m_fontTextLiberation", "classvrv_1_1_options.html#a8deb310b3b5a10155e4508c1f11b947b", null ],
     [ "m_footer", "classvrv_1_1_options.html#a3f6b2b692977ecc6c6e30e50f704712e", null ],
     [ "m_general", "classvrv_1_1_options.html#a39af9494b89df90199d208bd5bd0d73c", null ],
     [ "m_generalLayout", "classvrv_1_1_options.html#a2f2ea31f618b0fc45a40a64e637bda68", null ],

@@ -67,17 +67,17 @@ var NAVTREEINDEX =
 "classvrv_1_1_note.html#a8fac70447933b92e2615280b6909e351",
 "classvrv_1_1_octave.html#a070f0a9de7b6d9f9d865545ae535b833",
 "classvrv_1_1_options.html#a57839601f0ca3a92fa9f48526f77502a",
-"classvrv_1_1_page.html#aef17cc516b80dce4f3cc8c86a417e4b8",
-"classvrv_1_1_prepare_delayed_turns_functor.html#a9930a3b72bcc4bf329f32282453107a8",
-"classvrv_1_1_reset_data_functor.html#a215c658ae2b91b457161eceade8a3c8b",
-"classvrv_1_1_score_def.html#abb8ff0e1365fc22be7b06d0ec1277d0c",
-"classvrv_1_1_staff.html#ac1d1348838c1c0af7bfff5cc04693ebd",
-"classvrv_1_1_svg_device_context.html#a25df7dabeece7afc21b9e35a3ab97710",
-"classvrv_1_1_system_milestone_end.html#a53ad67013ab659e71d9e7a045ddef8ea",
-"classvrv_1_1_timestamp_aligner.html#a0e85b8894d2ee802ef4f9a24d99cfdf6",
-"classvrv_1_1_tuplet.html#a4fc681cc5988aac3eb351d356b2b2fe4",
-"classvrv_1_1_view.html#aa2e78145592d2b9c39e1d49f87c2b4f6",
-"justifyfunctor_8h_source.html"
+"classvrv_1_1_page.html#aec718fc1ac6ba74b3cadba551753f8c1",
+"classvrv_1_1_prepare_delayed_turns_functor.html#a67c7b19eb7fbedc2add5bb92f9670d3d",
+"classvrv_1_1_reset_data_functor.html#a1dc17222a1471f55254c48a0782cd2ca",
+"classvrv_1_1_score_def.html#aab715718f3ded112af05499bad59eeca",
+"classvrv_1_1_staff.html#a9b3e71b82af2a34de350fe10d438ac4f",
+"classvrv_1_1_svg_device_context.html#a1104b099bf2419013d2c790e0e4ac292",
+"classvrv_1_1_system_milestone_end.html#a0d6406f44398e0f01414fa8fb1327684",
+"classvrv_1_1_timemap.html#a69594da797809527113bef5d332c5317",
+"classvrv_1_1_tuplet.html#a203b018c52090608a28871ed5917c75d",
+"classvrv_1_1_view.html#a9c5433e3e9f4bffd5594cf5c44c344e8",
+"iohumdrum_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
