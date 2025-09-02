@@ -13,7 +13,7 @@ var searchData=
   ['estimatecurveparamforcontrolpoints_290',['EstimateCurveParamForControlPoints',['../classvrv_1_1_bezier_curve.html#af4300b38b4151de20a8a733db8a36a6c',1,'vrv::BezierCurve']]],
   ['estimatejustificationratio_291',['EstimateJustificationRatio',['../classvrv_1_1_system.html#a5db54bb1ba2ba6f290a466e9eafe5c73',1,'vrv::System']]],
   ['expan_292',['Expan',['../classvrv_1_1_expan.html',1,'vrv']]],
-  ['expand_293',['Expand',['../classvrv_1_1_expansion_map.html#a6d7e1ba46f890038bb1094b0a4e5620b',1,'vrv::ExpansionMap']]],
+  ['expand_293',['Expand',['../classvrv_1_1_expansion_map.html#a64bf311e7231dcbbc5e1054d48359d1e',1,'vrv::ExpansionMap']]],
   ['expandexpansions_294',['ExpandExpansions',['../classvrv_1_1_doc.html#a69237ae834ae8fc6fc6b1255f0b1e2cc',1,'vrv::Doc']]],
   ['expansion_295',['Expansion',['../classvrv_1_1_expansion.html',1,'vrv']]],
   ['expansionmap_296',['ExpansionMap',['../classvrv_1_1_expansion_map.html',1,'vrv']]],
