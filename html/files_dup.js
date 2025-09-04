@@ -80,6 +80,7 @@ var files_dup =
     [ "drawinginterface.h", "drawinginterface_8h_source.html", null ],
     [ "durationinterface.h", "durationinterface_8h_source.html", null ],
     [ "dynam.h", "dynam_8h_source.html", null ],
+    [ "editfunctor.h", "editfunctor_8h_source.html", null ],
     [ "editorial.h", "editorial_8h_source.html", null ],
     [ "editortoolkit.h", "editortoolkit_8h_source.html", null ],
     [ "editortoolkit_cmn.h", "editortoolkit__cmn_8h_source.html", null ],
