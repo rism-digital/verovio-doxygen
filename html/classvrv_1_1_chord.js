@@ -6,7 +6,7 @@ var classvrv_1_1_chord =
     [ "Accept", "classvrv_1_1_chord.html#ad855f3ba37a5f749faf4f38c7ae134b9", null ],
     [ "AcceptEnd", "classvrv_1_1_chord.html#a4b3e3c4b4eb3e1e157cb419f13331916", null ],
     [ "AcceptEnd", "classvrv_1_1_chord.html#a9738b24a13b07277a6b0cc8bbd40682b", null ],
-    [ "AddChild", "classvrv_1_1_chord.html#ae2f4e2f0d9f12957dddd6e523b4a4092", null ],
+    [ "AddChild", "classvrv_1_1_chord.html#a16b083a8a0c854b86a004f9e47b765da", null ],
     [ "AdjustOverlappingLayers", "classvrv_1_1_chord.html#acac180ce66c91c94dd417979b36c7cb5", null ],
     [ "CalcDotLocations", "classvrv_1_1_chord.html#a10afab13db85219fed35984a84954c3e", null ],
     [ "CalcNoteLocations", "classvrv_1_1_chord.html#a8f1440b120a8392270da3ef687352918", null ],

@@ -9,7 +9,7 @@ var classvrv_1_1_object =
     [ "Accept", "classvrv_1_1_object.html#a4fe6d153925502ceb462193169a74891", null ],
     [ "AcceptEnd", "classvrv_1_1_object.html#a38c9de93620af8ace7f1832e387c22dc", null ],
     [ "AcceptEnd", "classvrv_1_1_object.html#ad93bf90a3a3a2955970a5b4c05fde748", null ],
-    [ "AddChild", "classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948", null ],
+    [ "AddChild", "classvrv_1_1_object.html#ab94977fbc6851fc8080cb24de413713b", null ],
     [ "AddChildAdditionalCheck", "classvrv_1_1_object.html#a4a7dac5e21e6c8d7bf7810bfa1655644", null ],
     [ "AddPlistReference", "classvrv_1_1_object.html#a9bb3c177dca69d225baecea71a5fb4be", null ],
     [ "ClearChildren", "classvrv_1_1_object.html#a0af864d1b64a70d4ec8b62a520114bde", null ],

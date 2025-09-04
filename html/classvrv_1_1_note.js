@@ -6,7 +6,7 @@ var classvrv_1_1_note =
     [ "Accept", "classvrv_1_1_note.html#aa8f98e5a8ab24bb22912cdbd18434a08", null ],
     [ "AcceptEnd", "classvrv_1_1_note.html#a1875afdb6f2a17a96265c30972a3dc9c", null ],
     [ "AcceptEnd", "classvrv_1_1_note.html#a966a56dae04087faefa41158f2700bdd", null ],
-    [ "AddChild", "classvrv_1_1_note.html#aefb4a2097eb88c3cefd73cbc72222bb0", null ],
+    [ "AddChild", "classvrv_1_1_note.html#a3b30bdc539b65b90c1f855d0e31d43e9", null ],
     [ "AddChildAdditionalCheck", "classvrv_1_1_note.html#a7f9a1cac90b424c99003d062f7720bb4", null ],
     [ "AlignDotsShift", "classvrv_1_1_note.html#a31a25f79f3854cf1083770fe46718360", null ],
     [ "CalcDotLocations", "classvrv_1_1_note.html#a19e1747b8c15b47581048795066212aa", null ],

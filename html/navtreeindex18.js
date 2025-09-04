@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"classvrv_1_1_note.html#a8ed755dba1d936d881bb4d3267db6fd9":[1,0,0,279,48],
 "classvrv_1_1_note.html#a8fac70447933b92e2615280b6909e351":[1,0,0,279,46],
 "classvrv_1_1_note.html#a9041eca0a9cf4aeb6536a96c797a46a3":[1,0,0,279,31],
 "classvrv_1_1_note.html#a929e7011bc7c7e187ad0ae4973c80b35":[1,0,0,279,44],
@@ -17,7 +18,6 @@ var NAVTREEINDEX18 =
 "classvrv_1_1_note.html#ac6e442fe010db664b7fcd4dfd4bc45f2":[1,0,0,279,35],
 "classvrv_1_1_note.html#ad5a3d098ac78d4c81e33f5738a33c26f":[1,0,0,279,36],
 "classvrv_1_1_note.html#aec35e5f742e883b3c8bbd7d4a7ecc5c2":[1,0,0,279,0],
-"classvrv_1_1_note.html#aefb4a2097eb88c3cefd73cbc72222bb0":[1,0,0,279,6],
 "classvrv_1_1_note.html#af0a2d92ac85ea6fad61325133739336a":[1,0,0,279,42],
 "classvrv_1_1_note.html#afa43708acf2f9ca9543997e89e4aac20":[1,0,0,279,60],
 "classvrv_1_1_note_or_rest_onset_offset_comparison.html":[1,0,0,103],
@@ -64,7 +64,6 @@ var NAVTREEINDEX18 =
 "classvrv_1_1_object.html#a26dd6389f8b6ce5ff1cf9f0b779a0d14":[1,0,0,283,127],
 "classvrv_1_1_object.html#a2775c11d5b1013116cb8636e8e81f49c":[1,0,0,283,81],
 "classvrv_1_1_object.html#a2a1c4d0ed1a15f33637b03670c9aa98f":[1,0,0,283,15],
-"classvrv_1_1_object.html#a2ab113f1faf62ee0332687ff981c0948":[1,0,0,283,9],
 "classvrv_1_1_object.html#a2ac1817c7492a51e6bb550f3002b32de":[1,0,0,283,113],
 "classvrv_1_1_object.html#a2b30e0834719af6134364237c5f78940":[1,0,0,283,66],
 "classvrv_1_1_object.html#a2bfb8ee92dbd7e805de0aae51d07d534":[1,0,0,283,80],
@@ -179,6 +178,7 @@ var NAVTREEINDEX18 =
 "classvrv_1_1_object.html#ab2e351247e616a3f30eaf2e3d125f054":[1,0,0,283,90],
 "classvrv_1_1_object.html#ab49442d7fde160052a5cfafd24f4ce6f":[1,0,0,283,119],
 "classvrv_1_1_object.html#ab7545a6790428020dc60d6f65f50edb0":[1,0,0,283,108],
+"classvrv_1_1_object.html#ab94977fbc6851fc8080cb24de413713b":[1,0,0,283,9],
 "classvrv_1_1_object.html#aba32b01b87b8f31455e68c77a3d8ee40":[1,0,0,283,158],
 "classvrv_1_1_object.html#abafdbeb5dae2dc78a285277fbb12006f":[1,0,0,283,72],
 "classvrv_1_1_object.html#abe3b4b7b0763dc04d1c85fdb1d9a81e8":[1,0,0,283,97],

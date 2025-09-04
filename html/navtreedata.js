@@ -63,8 +63,8 @@ var NAVTREEINDEX =
 "classvrv_1_1_humdrum_input.html#ace24bcfac2a06bbdcee4564738062f5f",
 "classvrv_1_1_justify_y_functor.html#ad328a9b0b634ec2b90c8f475f73684ec",
 "classvrv_1_1_layers_in_time_span_functor.html",
-"classvrv_1_1_measure.html#a6d6ed6ef9c33d5546c7fd0b62875f0a7",
-"classvrv_1_1_note.html#a8fac70447933b92e2615280b6909e351",
+"classvrv_1_1_measure.html#a6bf60d684aa4101fce7d34f5b30895aa",
+"classvrv_1_1_note.html#a8ed755dba1d936d881bb4d3267db6fd9",
 "classvrv_1_1_octave.html#a070f0a9de7b6d9f9d865545ae535b833",
 "classvrv_1_1_options.html#a57839601f0ca3a92fa9f48526f77502a",
 "classvrv_1_1_page.html#aec718fc1ac6ba74b3cadba551753f8c1",
@@ -75,7 +75,7 @@ var NAVTREEINDEX =
 "classvrv_1_1_svg_device_context.html#a1104b099bf2419013d2c790e0e4ac292",
 "classvrv_1_1_system_milestone_end.html#a0d6406f44398e0f01414fa8fb1327684",
 "classvrv_1_1_timemap.html#a69594da797809527113bef5d332c5317",
-"classvrv_1_1_tuplet.html#a203b018c52090608a28871ed5917c75d",
+"classvrv_1_1_tuplet.html#a249e0481dbea9b8a551236e77d0e8dc8",
 "classvrv_1_1_view.html#a9c5433e3e9f4bffd5594cf5c44c344e8",
 "iohumdrum_8h_source.html"
 ];
