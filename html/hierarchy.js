@@ -948,6 +948,7 @@ var hierarchy =
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
       [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ],
+      [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Staff", "classvrv_1_1_staff.html", null ],
       [ "vrv::Stem", "classvrv_1_1_stem.html", null ]
