@@ -1,16 +1,16 @@
 var searchData=
 [
-  ['parse_2300',['Parse',['../classvrv_1_1_doc_selection.html#af0b386df41afb9e204b4776c13976a9b',1,'vrv::DocSelection']]],
-  ['parseaddsylaction_2301',['ParseAddSylAction',['../classvrv_1_1_editor_toolkit_neume.html#abb945ed27a7e5f9755873826ae100ca4',1,'vrv::EditorToolkitNeume']]],
-  ['parseeditoraction_2302',['ParseEditorAction',['../classvrv_1_1_editor_toolkit.html#a4072ba0fc25bf93cf164daa8b0772f2f',1,'vrv::EditorToolkit::ParseEditorAction()'],['../classvrv_1_1_editor_toolkit_c_m_n.html#aeb8a59e5f10e9448c8fa0e3a747a02bf',1,'vrv::EditorToolkitCMN::ParseEditorAction()'],['../classvrv_1_1_editor_toolkit_mensural.html#a2270595080e4c4618c355cea7d71f0b1',1,'vrv::EditorToolkitMensural::ParseEditorAction()'],['../classvrv_1_1_editor_toolkit_neume.html#a2308ad0010cf842ec7c9e86252f15850',1,'vrv::EditorToolkitNeume::ParseEditorAction()']]],
-  ['performboundingboxalignment_2303',['PerformBoundingBoxAlignment',['../classvrv_1_1_alignment.html#afb339241a9493a380e64c673f8adca84',1,'vrv::Alignment']]],
-  ['pitchdifferenceto_2304',['PitchDifferenceTo',['../classvrv_1_1_pitch_interface.html#a3f1089bfeddc84c7b3c31e3a239b4a76',1,'vrv::PitchInterface']]],
-  ['pitchorlocdifferenceto_2305',['PitchOrLocDifferenceTo',['../classvrv_1_1_nc.html#aaaa97986f6e4a2251996515827a17e71',1,'vrv::Nc']]],
-  ['pnametopclass_2306',['PnameToPclass',['../classvrv_1_1_note.html#ab9dc5dff1a2e11c5e182dd72208c587d',1,'vrv::Note']]],
-  ['positioninchord_2307',['PositionInChord',['../classvrv_1_1_chord.html#aad7e7092366522e7bb388afb98a215e2',1,'vrv::Chord']]],
-  ['preparedata_2308',['PrepareData',['../classvrv_1_1_doc.html#a863c2bb1a0b28c6f52adb5ce662a14e8',1,'vrv::Doc']]],
-  ['printoptionusage_2309',['PrintOptionUsage',['../classvrv_1_1_toolkit.html#ade313a25a731e494eba87d3c4619cbad',1,'vrv::Toolkit']]],
-  ['printoptionusageoutput_2310',['PrintOptionUsageOutput',['../classvrv_1_1_toolkit.html#ab9ba4f30abf5a45944e83926efad3294',1,'vrv::Toolkit']]],
-  ['process_2311',['Process',['../classvrv_1_1_object.html#ab1b4dbc50eb6f628feea75d202a22e18',1,'vrv::Object']]],
-  ['pushalignmentsright_2312',['PushAlignmentsRight',['../classvrv_1_1_measure_aligner.html#a2ea7245b5f0cf0bb1bc4fc144f29e8af',1,'vrv::MeasureAligner']]]
+  ['parse_2308',['Parse',['../classvrv_1_1_doc_selection.html#af0b386df41afb9e204b4776c13976a9b',1,'vrv::DocSelection']]],
+  ['parseaddsylaction_2309',['ParseAddSylAction',['../classvrv_1_1_editor_toolkit_neume.html#abb945ed27a7e5f9755873826ae100ca4',1,'vrv::EditorToolkitNeume']]],
+  ['parseeditoraction_2310',['ParseEditorAction',['../classvrv_1_1_editor_toolkit.html#a4072ba0fc25bf93cf164daa8b0772f2f',1,'vrv::EditorToolkit::ParseEditorAction()'],['../classvrv_1_1_editor_toolkit_c_m_n.html#aeb8a59e5f10e9448c8fa0e3a747a02bf',1,'vrv::EditorToolkitCMN::ParseEditorAction()'],['../classvrv_1_1_editor_toolkit_mensural.html#a2270595080e4c4618c355cea7d71f0b1',1,'vrv::EditorToolkitMensural::ParseEditorAction()'],['../classvrv_1_1_editor_toolkit_neume.html#a2308ad0010cf842ec7c9e86252f15850',1,'vrv::EditorToolkitNeume::ParseEditorAction()']]],
+  ['performboundingboxalignment_2311',['PerformBoundingBoxAlignment',['../classvrv_1_1_alignment.html#afb339241a9493a380e64c673f8adca84',1,'vrv::Alignment']]],
+  ['pitchdifferenceto_2312',['PitchDifferenceTo',['../classvrv_1_1_pitch_interface.html#a3f1089bfeddc84c7b3c31e3a239b4a76',1,'vrv::PitchInterface']]],
+  ['pitchorlocdifferenceto_2313',['PitchOrLocDifferenceTo',['../classvrv_1_1_nc.html#aaaa97986f6e4a2251996515827a17e71',1,'vrv::Nc']]],
+  ['pnametopclass_2314',['PnameToPclass',['../classvrv_1_1_note.html#ab9dc5dff1a2e11c5e182dd72208c587d',1,'vrv::Note']]],
+  ['positioninchord_2315',['PositionInChord',['../classvrv_1_1_chord.html#aad7e7092366522e7bb388afb98a215e2',1,'vrv::Chord']]],
+  ['preparedata_2316',['PrepareData',['../classvrv_1_1_doc.html#a863c2bb1a0b28c6f52adb5ce662a14e8',1,'vrv::Doc']]],
+  ['printoptionusage_2317',['PrintOptionUsage',['../classvrv_1_1_toolkit.html#ade313a25a731e494eba87d3c4619cbad',1,'vrv::Toolkit']]],
+  ['printoptionusageoutput_2318',['PrintOptionUsageOutput',['../classvrv_1_1_toolkit.html#ab9ba4f30abf5a45944e83926efad3294',1,'vrv::Toolkit']]],
+  ['process_2319',['Process',['../classvrv_1_1_object.html#ab1b4dbc50eb6f628feea75d202a22e18',1,'vrv::Object']]],
+  ['pushalignmentsright_2320',['PushAlignmentsRight',['../classvrv_1_1_measure_aligner.html#a2ea7245b5f0cf0bb1bc4fc144f29e8af',1,'vrv::MeasureAligner']]]
 ];

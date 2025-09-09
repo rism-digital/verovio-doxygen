@@ -982,6 +982,7 @@ var hierarchy =
         [ "vrv::Facsimile", "classvrv_1_1_facsimile.html", null ],
         [ "vrv::Fb", "classvrv_1_1_fb.html", null ],
         [ "vrv::FloatingObject", "classvrv_1_1_floating_object.html", [
+          [ "vrv::AccidFloatingObject", "classvrv_1_1_accid_floating_object.html", null ],
           [ "vrv::ControlElement", "classvrv_1_1_control_element.html", null ],
           [ "vrv::SystemElement", "classvrv_1_1_system_element.html", null ]
         ] ],

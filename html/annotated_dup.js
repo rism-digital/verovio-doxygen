@@ -6,6 +6,7 @@ var annotated_dup =
       ] ],
       [ "Abbr", "classvrv_1_1_abbr.html", "classvrv_1_1_abbr" ],
       [ "Accid", "classvrv_1_1_accid.html", "classvrv_1_1_accid" ],
+      [ "AccidFloatingObject", "classvrv_1_1_accid_floating_object.html", "classvrv_1_1_accid_floating_object" ],
       [ "AccidSpaceSort", "classvrv_1_1_accid_space_sort.html", "classvrv_1_1_accid_space_sort" ],
       [ "AccidOctaveSort", "classvrv_1_1_accid_octave_sort.html", "classvrv_1_1_accid_octave_sort" ],
       [ "Add", "classvrv_1_1_add.html", "classvrv_1_1_add" ],

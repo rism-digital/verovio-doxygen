@@ -105,11 +105,21 @@
     <member refid="classvrv_1_1_accid_1a8e034944cbddfd64c7dc7acdf60f0065" kind="function"><name>CreateSymbolStr</name></member>
     <member refid="classvrv_1_1_accid_1aacc4d9aa3b1d302c8e98004b2d875f75" kind="variable"><name>m_drawingUnison</name></member>
     <member refid="classvrv_1_1_accid_1af46e5c69ea07da8b232ff1afd6b37979" kind="variable"><name>m_alignedWithSameLayer</name></member>
+    <member refid="classvrv_1_1_accid_1ac7b897038b95a87687fff0976451c0e8" kind="variable"><name>m_floatingObject</name></member>
+    <member refid="classvrv_1_1_accid_1aede88b1122dce3e857b60b6e887ccd93" kind="function"><name>ClearFloatingObject</name></member>
+    <member refid="classvrv_1_1_accid_1a205a11500949acf4371406a811255eaa" kind="function"><name>InitFloatingObject</name></member>
+    <member refid="classvrv_1_1_accid_1ae76f48361c8c8293312a57aef963720c" kind="function"><name>GetFloatingObject</name></member>
     <member refid="classvrv_1_1_accid_1ae2550b09c4f89c0b902b8e81130a8df0" kind="function"><name>IsRelativeToStaff</name></member>
     <member refid="classvrv_1_1_accid_1a540367368be706aabb5722e8933e3fdc" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_accid_1aee1dcf71f46ebc446356d97dff6e7574" kind="function"><name>GetSymbolStr</name></member>
     <member refid="classvrv_1_1_accid_1a76fd42528da09e5db02ea21618989991" kind="function"><name>AdjustX</name></member>
     <member refid="classvrv_1_1_accid_1a1329822edff3aec1913ce46bc597af55" kind="function"><name>AdjustToLedgerLines</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_accid_floating_object" kind="class"><name>vrv::AccidFloatingObject</name>
+    <member refid="classvrv_1_1_accid_floating_object_1a6b51ceb596487f25a6e1961247710e03" kind="function"><name>AccidFloatingObject</name></member>
+    <member refid="classvrv_1_1_accid_floating_object_1a0944f8cf88f48ea9bab1266528bea006" kind="function"><name>~AccidFloatingObject</name></member>
+    <member refid="classvrv_1_1_accid_floating_object_1ad878d13822713439b7e9c68de23b6c1e" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_accid_floating_object_1a2b3d77607f968d56fe7398a311201cba" kind="function"><name>Reset</name></member>
   </compound>
   <compound refid="classvrv_1_1_accid_octave_sort" kind="class"><name>vrv::AccidOctaveSort</name>
     <member refid="classvrv_1_1_accid_octave_sort_1a663d647be9763eb2bf4714b4ffa62009" kind="function"><name>AccidOctaveSort</name></member>
@@ -7625,6 +7635,7 @@
   <compound refid="classvrv_1_1_prepare_data_initialization_functor" kind="class"><name>vrv::PrepareDataInitializationFunctor</name>
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1ae89808db28b06773dbcbd97b1e784305" kind="function"><name>PrepareDataInitializationFunctor</name></member>
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1a2bf0841d40e18f038dee8e8afd75455e" kind="function"><name>~PrepareDataInitializationFunctor</name></member>
+    <member refid="classvrv_1_1_prepare_data_initialization_functor_1acae1385a1bca8f3b7cdc54ca671e26d1" kind="function"><name>VisitAccid</name></member>
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1ab877258b5e091f5f2d33266fc21ae0d5" kind="function"><name>VisitDiv</name></member>
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1ae360af5dae993e5e3000e379fdd20570" kind="function"><name>VisitChord</name></member>
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1ab6d801c5fc65ac43f9fb10755bfbbb20" kind="function"><name>VisitFloatingObject</name></member>
@@ -11136,6 +11147,7 @@
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a8a2ac7b294df3ad0fc75c2859c04d1ac" kind="enumvalue"><name>FLOATING_OBJECT</name></member>
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5adcffa629363a4c63352fa6994306904d" kind="enumvalue"><name>FLOATING_POSITIONER</name></member>
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ac86b832d5d049b99366164c09c5ca50b" kind="enumvalue"><name>FLOATING_CURVE_POSITIONER</name></member>
+    <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a44be8b2707af451f02aef1a642652270" kind="enumvalue"><name>ACCID_FLOATING</name></member>
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a9b3a330ccd2c01d91961ff208e4450b6" kind="enumvalue"><name>ALIGNMENT</name></member>
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ace564857c4e045e20e01c5a9526b3d4d" kind="enumvalue"><name>ALIGNMENT_REFERENCE</name></member>
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a8a6925cf74312fa740e6e14dab3a2f6a" kind="enumvalue"><name>CLEF_ATTR</name></member>
