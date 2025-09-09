@@ -47,6 +47,7 @@
     <member refid="classvrv_1_1_a_b_c_input_1a8769bbe0b80c956a30c6836b910567b4" kind="variable"><name>m_dynam</name></member>
     <member refid="classvrv_1_1_a_b_c_input_1a3837c4970238932e7ab0c3c906ea162b" kind="variable"><name>m_ornam</name></member>
     <member refid="classvrv_1_1_a_b_c_input_1a077ae88aae913a752a5983445e783ddc" kind="variable"><name>m_fermata</name></member>
+    <member refid="classvrv_1_1_a_b_c_input_1aa48c5f913073d9fe9ad5adceff6c9b3c" kind="variable"><name>m_repeatMark</name></member>
     <member refid="classvrv_1_1_a_b_c_input_1aa1ecd27ad1a11546f20e80b9373393eb" kind="variable"><name>m_controlElements</name></member>
     <member refid="classvrv_1_1_a_b_c_input_1a05f56471fa3b0a512cb2204844173cda" kind="variable"><name>m_workList</name></member>
     <member refid="classvrv_1_1_a_b_c_input_1a5578b9af73fd78de0383dc30558d955e" kind="function"><name>ABCInput</name></member>
@@ -76,6 +77,7 @@
     <member refid="classvrv_1_1_a_b_c_input_1a1eeed56bde7f49444ce006a8ef9fe480" kind="function"><name>AddDynamic</name></member>
     <member refid="classvrv_1_1_a_b_c_input_1ac5a8b633281d0d40bd863140aab3abc3" kind="function"><name>AddFermata</name></member>
     <member refid="classvrv_1_1_a_b_c_input_1a59db2acaa2a329f0001e9b347e2b6efe" kind="function"><name>AddOrnaments</name></member>
+    <member refid="classvrv_1_1_a_b_c_input_1aa0d9da5f475f756ea2f3134f9463f5c9" kind="function"><name>AddRepeatMark</name></member>
     <member refid="classvrv_1_1_a_b_c_input_1acb080c5788ad16f9d777508851f72a5b" kind="function"><name>PrintInformationFields</name></member>
     <member refid="classvrv_1_1_a_b_c_input_1aa5feb9c64f30e15129c469c6f79471f2" kind="function"><name>CreateHeader</name></member>
     <member refid="classvrv_1_1_a_b_c_input_1a408e764789c3096f38be8baf576983c8" kind="function"><name>CreateWorkEntry</name></member>
@@ -103,11 +105,21 @@
     <member refid="classvrv_1_1_accid_1a8e034944cbddfd64c7dc7acdf60f0065" kind="function"><name>CreateSymbolStr</name></member>
     <member refid="classvrv_1_1_accid_1aacc4d9aa3b1d302c8e98004b2d875f75" kind="variable"><name>m_drawingUnison</name></member>
     <member refid="classvrv_1_1_accid_1af46e5c69ea07da8b232ff1afd6b37979" kind="variable"><name>m_alignedWithSameLayer</name></member>
+    <member refid="classvrv_1_1_accid_1ac7b897038b95a87687fff0976451c0e8" kind="variable"><name>m_floatingObject</name></member>
+    <member refid="classvrv_1_1_accid_1aede88b1122dce3e857b60b6e887ccd93" kind="function"><name>ClearFloatingObject</name></member>
+    <member refid="classvrv_1_1_accid_1a205a11500949acf4371406a811255eaa" kind="function"><name>InitFloatingObject</name></member>
+    <member refid="classvrv_1_1_accid_1ae76f48361c8c8293312a57aef963720c" kind="function"><name>GetFloatingObject</name></member>
     <member refid="classvrv_1_1_accid_1ae2550b09c4f89c0b902b8e81130a8df0" kind="function"><name>IsRelativeToStaff</name></member>
     <member refid="classvrv_1_1_accid_1a540367368be706aabb5722e8933e3fdc" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_accid_1aee1dcf71f46ebc446356d97dff6e7574" kind="function"><name>GetSymbolStr</name></member>
     <member refid="classvrv_1_1_accid_1a76fd42528da09e5db02ea21618989991" kind="function"><name>AdjustX</name></member>
     <member refid="classvrv_1_1_accid_1a1329822edff3aec1913ce46bc597af55" kind="function"><name>AdjustToLedgerLines</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_accid_floating_object" kind="class"><name>vrv::AccidFloatingObject</name>
+    <member refid="classvrv_1_1_accid_floating_object_1a6b51ceb596487f25a6e1961247710e03" kind="function"><name>AccidFloatingObject</name></member>
+    <member refid="classvrv_1_1_accid_floating_object_1a0944f8cf88f48ea9bab1266528bea006" kind="function"><name>~AccidFloatingObject</name></member>
+    <member refid="classvrv_1_1_accid_floating_object_1ad878d13822713439b7e9c68de23b6c1e" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_accid_floating_object_1a2b3d77607f968d56fe7398a311201cba" kind="function"><name>Reset</name></member>
   </compound>
   <compound refid="classvrv_1_1_accid_octave_sort" kind="class"><name>vrv::AccidOctaveSort</name>
     <member refid="classvrv_1_1_accid_octave_sort_1a663d647be9763eb2bf4714b4ffa62009" kind="function"><name>AccidOctaveSort</name></member>
@@ -582,7 +594,7 @@
     <member refid="classvrv_1_1_alignment_reference_1a5a7419d87bbd6f784a956f968624e4cc" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_alignment_reference_1ab91e80bd5941668d4f9dd0bf133649ad" kind="variable"><name>m_layerCount</name></member>
     <member refid="classvrv_1_1_alignment_reference_1a2643808f9e26935be6b8c3714d3afc95" kind="function"><name>IsSupportedChild</name></member>
-    <member refid="classvrv_1_1_alignment_reference_1a95d76d62a688a262fbee1b4c2971daa6" kind="function"><name>AddChild</name></member>
+    <member refid="classvrv_1_1_alignment_reference_1aa88be7bddca421bad5ae8cd0b9cdb790" kind="function"><name>AddChild</name></member>
     <member refid="classvrv_1_1_alignment_reference_1a20a67edf81f6a10054bafac29530d8a5" kind="function"><name>HasAccidVerticalOverlap</name></member>
     <member refid="classvrv_1_1_alignment_reference_1a9c1895942dd54bf9ac12b788dbf7570c" kind="function"><name>HasMultipleLayer</name></member>
     <member refid="classvrv_1_1_alignment_reference_1ad88dbf946e0441c77075ae5d6e43320b" kind="function"><name>HasCrossStaffElements</name></member>
@@ -1611,7 +1623,7 @@
     <member refid="classvrv_1_1_chord_1a798b3ad315bd73988e4df927f40647f9" kind="variable"><name>m_noteGroups</name></member>
     <member refid="classvrv_1_1_chord_1a817274133e13ef710a089fd19881e8d0" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_chord_1aff5be37b218a760a30b6018fe156aa0c" kind="function"><name>IsSupportedChild</name></member>
-    <member refid="classvrv_1_1_chord_1ae2f4e2f0d9f12957dddd6e523b4a4092" kind="function"><name>AddChild</name></member>
+    <member refid="classvrv_1_1_chord_1a16b083a8a0c854b86a004f9e47b765da" kind="function"><name>AddChild</name></member>
     <member refid="classvrv_1_1_chord_1ad2eaf6e2fc23b2ab1f3e931590eae35c" kind="function"><name>GetYExtremes</name></member>
     <member refid="classvrv_1_1_chord_1a10b9babfd1099c156e19a49ffc7eaaec" kind="function"><name>HasCrossStaff</name></member>
     <member refid="classvrv_1_1_chord_1a15da29444f2bc2ec20cd87f28b012fe5" kind="function"><name>ResetAccidList</name></member>
@@ -2483,6 +2495,7 @@
   <compound refid="classvrv_1_1_doc" kind="class"><name>vrv::Doc</name>
     <member refid="classvrv_1_1_doc_1a6ae80af9be1fb301753322a4d779bced" kind="function"><name>Doc</name></member>
     <member refid="classvrv_1_1_doc_1a516c030103274ed0eb17f283b6f55088" kind="function"><name>~Doc</name></member>
+    <member refid="classvrv_1_1_doc_1a35989894095b3b8414655cdd397a81d1" kind="function"><name>GetClassName</name></member>
     <member refid="classvrv_1_1_doc_1af2e4fe3191867281b935913086b31708" kind="function"><name>GetOptions</name></member>
     <member refid="classvrv_1_1_doc_1aa2bd27306eb6314e45ab6068bdde29d7" kind="function"><name>GetOptions</name></member>
     <member refid="classvrv_1_1_doc_1a737120e0423e4dcdfbab9fa19ae6a284" kind="function"><name>SetOptions</name></member>
@@ -2614,6 +2627,7 @@
     <member refid="classvrv_1_1_doc_1a4f1df3b8603c6034b67b3ef2610bbd68" kind="variable"><name>m_facsimile</name></member>
     <member refid="classvrv_1_1_doc_1a20b8314ed54233af06fd66e23d2d8c9a" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_doc_1a8e5d2a994915fb93f56ca86dc4ae5e6e" kind="function"><name>Reset</name></member>
+    <member refid="classvrv_1_1_doc_1ab475cc05d04a07ead0b8f31c7a2fcae6" kind="function"><name>ResetToSerialization</name></member>
     <member refid="classvrv_1_1_doc_1a584eeab05ce41fd44a5d08d8d8f9d2dd" kind="function"><name>ResetToLoading</name></member>
     <member refid="classvrv_1_1_doc_1a7cf6f055c8c7cdad2d1e652554f43f97" kind="function"><name>ClearSelectionPages</name></member>
     <member refid="classvrv_1_1_doc_1add470d20e80b6fb3b87f5fbfb8cbd222" kind="function"><name>GenerateDocumentScoreDef</name></member>
@@ -2837,6 +2851,7 @@
   </compound>
   <compound refid="classvrv_1_1_editor_toolkit_c_m_n" kind="class"><name>vrv::EditorToolkitCMN</name>
     <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a683fef0158ea252795b25b0fb798c5f1" kind="function"><name>Chain</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a8a4524972d8a0f41a9943d6e7444d045" kind="function"><name>ParseContextAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_c_m_n_1adb2dc6b05317dba04b698499d7655d56" kind="function"><name>ParseDeleteAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a149f0b7b6896fd97ff9a7386b2347067" kind="function"><name>ParseDragAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_c_m_n_1aac1ff4194ce8fa3ed17ee19452d827f4" kind="function"><name>ParseKeyDownAction</name></member>
@@ -2849,17 +2864,41 @@
     <member refid="classvrv_1_1_editor_toolkit_c_m_n_1ac869f4e09a2cf6f235934f2d1088aff6" kind="function"><name>Insert</name></member>
     <member refid="classvrv_1_1_editor_toolkit_c_m_n_1ac147d71491a65338af6d57055eec95f3" kind="function"><name>Set</name></member>
     <member refid="classvrv_1_1_editor_toolkit_c_m_n_1aba3501eeccab7f46a6f02e9921a2b31e" kind="variable"><name>m_chainedId</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1aa17b01936e300565a74184bc689c5938" kind="variable"><name>m_undoPrepared</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1ac8b0e9e910b68b975cb402627132c845" kind="variable"><name>m_undoStack</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a52e7717bcb1a861677226781da305fdb" kind="variable"><name>m_redoStack</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1ad3ecb332ba727bb7d9caea193ecd2fee" kind="variable"><name>m_undoMemoryUsage</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a71c7854f7d5ee722623452336c457d26" kind="variable"><name>m_scoreContext</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a2060e7e2b683ca4cb773b6e95a7fb4b3" kind="variable"><name>m_sectionContext</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a153b8aa56a1a505c6d3e772226632c15" kind="variable"><name>m_currentContext</name></member>
     <member refid="classvrv_1_1_editor_toolkit_c_m_n_1aec51f93c00b6b229bde68e9ceea667b1" kind="function"><name>EditorToolkitCMN</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1afc25274781a0d26fb2267171ef268fd2" kind="function"><name>~EditorToolkitCMN</name></member>
     <member refid="classvrv_1_1_editor_toolkit_c_m_n_1aeb8a59e5f10e9448c8fa0e3a747a02bf" kind="function"><name>ParseEditorAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a065dd8b5095804e7f2fbfa3fe7247706" kind="function"><name>ParseEditorAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a8cfefe067438281e92d6e4a3fe92b851" kind="function"><name>EditInfo</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a811e8110b37f5b326787a2a8bbd68059" kind="function"><name>PrepareUndo</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a8a1e176f1a2c29622d0a5aa998fa6da8" kind="function"><name>GetCurrentState</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1ac616e363d8e9ef5b95302c4fc08b8e6d" kind="function"><name>ReloadState</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a600616dbefd26feb6789e0cbcd419feb" kind="function"><name>TrimUndoMemory</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1abb8e19cbf413623bee84e7321d4eed53" kind="function"><name>CanUndo</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1ae49921ce69b2bc4ca12e99520e34a7e5" kind="function"><name>CanRedo</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a4ec6d4b17253f376038314add76a976c" kind="function"><name>Undo</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a9bdc3cec55c8b87dc5bbbe9b86c74a05" kind="function"><name>Redo</name></member>
     <member refid="classvrv_1_1_editor_toolkit_c_m_n_1aff288b5f00929f2d28ea8c8d39909222" kind="function"><name>InsertNote</name></member>
     <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a815fc7bf4750f78cc8c9650e0fab3493" kind="function"><name>DeleteNote</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a5b630dca126dd546dd55d294854d5c79" kind="function"><name>ClearContext</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a8f2e9d860d77bd7f3ab6798472fec9b7" kind="function"><name>ContextForElement</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a1b45c213ca8f267da1abb3c4cd0f676c" kind="function"><name>ContextForScores</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a7ba923894137f9e365f5e61341d860b3" kind="function"><name>ContextForSections</name></member>
     <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a7b6763f1f0213873bd7bc19225dced31" kind="function"><name>GetElement</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1ae908557e20789fe8c886b50118126806" kind="function"><name>ContextForObject</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a63a6893222a98acde5b4333899e2c4b0" kind="function"><name>ContextForObjects</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1a2dce35e1e2293077cdff440243603a93" kind="function"><name>ContextForReferences</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_c_m_n_1acbf86a8afda9782f668a6a1202aeaefa" kind="function"><name>GetScoreBasedChildrenFor</name></member>
   </compound>
   <compound refid="classvrv_1_1_editor_toolkit_mensural" kind="class"><name>vrv::EditorToolkitMensural</name>
     <member refid="classvrv_1_1_editor_toolkit_mensural_1a933d6f85afde75723a6c1a0354fc0c61" kind="function"><name>EditorToolkitMensural</name></member>
-    <member refid="classvrv_1_1_editor_toolkit_mensural_1aa78a02e5cad8f859edc5bb99aa8ed62d" kind="function"><name>ParseEditorAction</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_mensural_1a2270595080e4c4618c355cea7d71f0b1" kind="function"><name>ParseEditorAction</name></member>
   </compound>
   <compound refid="classvrv_1_1_editor_toolkit_neume" kind="class"><name>vrv::EditorToolkitNeume</name>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a86198f2ba436635596f18777434cf998" kind="function"><name>AddSyl</name></member>
@@ -2921,6 +2960,18 @@
     <member refid="classvrv_1_1_editor_toolkit_neume_1a2308ad0010cf842ec7c9e86252f15850" kind="function"><name>ParseEditorAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a73a7c47fe8d5420da6467592ece61e55" kind="function"><name>EditInfo</name></member>
   </compound>
+  <compound refid="classvrv_1_1_editor_tree_object" kind="class"><name>vrv::EditorTreeObject</name>
+    <member refid="classvrv_1_1_editor_tree_object_1a3098ab1c0aa27d1cf555d0075639f713" kind="function"><name>EditorTreeObject</name></member>
+    <member refid="classvrv_1_1_editor_tree_object_1a8a44b38ec25b2778de48a900b8454a67" kind="function"><name>~EditorTreeObject</name></member>
+    <member refid="classvrv_1_1_editor_tree_object_1a7d68cf68cebe65360240cd784f98f1b9" kind="function"><name>Reset</name></member>
+    <member refid="classvrv_1_1_editor_tree_object_1a95050102a619f5a3d37a095e3b031cac" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_editor_tree_object_1a979f331ac8e10016f2cbb56388a32a3c" kind="function"><name>IsSupportedChild</name></member>
+    <member refid="classvrv_1_1_editor_tree_object_1a59780133b2a6606d5aa8a71b9477b161" kind="function"><name>GetVisibilityDrawingInterface</name></member>
+    <member refid="classvrv_1_1_editor_tree_object_1a8769c6b741f35364345be4e8a2c39476" kind="function"><name>GetVisibilityDrawingInterface</name></member>
+    <member refid="classvrv_1_1_editor_tree_object_1aaa51bc8861255dd0a4a3fcab08028523" kind="variable"><name>m_className</name></member>
+    <member refid="classvrv_1_1_editor_tree_object_1a9a4b1be09070f3add3f757337af1e517" kind="variable"><name>m_object</name></member>
+    <member refid="classvrv_1_1_editor_tree_object_1a7217ad8f4bc5f016d2c13fbaeccc5cf1" kind="function"><name>GetChildObjects</name></member>
+  </compound>
   <compound refid="classvrv_1_1_ending" kind="class"><name>vrv::Ending</name>
     <member refid="classvrv_1_1_ending_1a0e07ec0f722dda2d1b773ace3b3ffff6" kind="function"><name>Ending</name></member>
     <member refid="classvrv_1_1_ending_1ae25642ebcaacb55aec1bd662571641d4" kind="function"><name>~Ending</name></member>
@@ -2959,7 +3010,7 @@
     <member refid="classvrv_1_1_expansion_map_1a4ce51ed5c4444cc8feb4e3dc83cdf40b" kind="variable"><name>m_map</name></member>
     <member refid="classvrv_1_1_expansion_map_1ab103d69c8250a1a4d7ce72bd42e23b46" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_expansion_map_1a9f6d987eb4632933ad16a516888830c2" kind="function"><name>HasExpansionMap</name></member>
-    <member refid="classvrv_1_1_expansion_map_1a6d7e1ba46f890038bb1094b0a4e5620b" kind="function"><name>Expand</name></member>
+    <member refid="classvrv_1_1_expansion_map_1a64bf311e7231dcbbc5e1054d48359d1e" kind="function"><name>Expand</name></member>
     <member refid="classvrv_1_1_expansion_map_1aaeb9194a90c849af2db967c53138a19b" kind="function"><name>GetExpansionIDsForElement</name></member>
     <member refid="classvrv_1_1_expansion_map_1a51f1783fd2dc369d2629a1c089cfd077" kind="function"><name>ToJson</name></member>
     <member refid="classvrv_1_1_expansion_map_1a63c5f6ba04897a9c7103cc82f962bf71" kind="function"><name>UpdateIDs</name></member>
@@ -4738,8 +4789,8 @@
     <member refid="classvrv_1_1_init_timemap_adjust_notes_functor_1a32e3c6e1d95cdb47374f33ff318ed6ff" kind="variable"><name>m_lastNote</name></member>
     <member refid="classvrv_1_1_init_timemap_adjust_notes_functor_1a1a4f041aafc58acef301ba202db26702" kind="function"><name>ImplementsEndInterface</name></member>
     <member refid="classvrv_1_1_init_timemap_adjust_notes_functor_1ad1b6247ddef71db28237b8244023e8f4" kind="function"><name>SetGraceNotesFor</name></member>
-    <member refid="classvrv_1_1_init_timemap_adjust_notes_functor_1aca01347a94f657b0553e7533f432dd63" kind="function"><name>SetNoteStartStop</name></member>
-    <member refid="classvrv_1_1_init_timemap_adjust_notes_functor_1a4bced03f30bc6b48c36b0b35473e4075" kind="function"><name>SetNoteStart</name></member>
+    <member refid="classvrv_1_1_init_timemap_adjust_notes_functor_1ad0840f42708dd84b9d6a72a11ce33286" kind="function"><name>SetNoteOrChordStartStop</name></member>
+    <member refid="classvrv_1_1_init_timemap_adjust_notes_functor_1a3871908c0c482ab7a5269ef767ece85c" kind="function"><name>SetNoteStartStop</name></member>
   </compound>
   <compound refid="classvrv_1_1_init_timemap_ties_functor" kind="class"><name>vrv::InitTimemapTiesFunctor</name>
     <member refid="classvrv_1_1_init_timemap_ties_functor_1a444efe8c1f26155fe74af8e34cbb5705" kind="function"><name>InitTimemapTiesFunctor</name></member>
@@ -5160,7 +5211,7 @@
     <member refid="classvrv_1_1_lb_1a101e03893a719d4b4e295e1de9ac33d4" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_lb_1a14e58120f502d42821fab315a2c3b65a" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_lb_1a2809df3cf097207ad4a62c7864560778" kind="function"><name>AcceptEnd</name></member>
-    <member refid="classvrv_1_1_lb_1a2b1de65f5fe2821ec0e0315a8083fd06" kind="function"><name>AddChild</name></member>
+    <member refid="classvrv_1_1_lb_1ab417d3aef5fbb66e97be78ce4f35e498" kind="function"><name>AddChild</name></member>
   </compound>
   <compound refid="classvrv_1_1_ledger_line" kind="class"><name>vrv::LedgerLine</name>
     <member refid="classvrv_1_1_ledger_line_1abf95ed1fa469cc9f2f75a4efe2634384" kind="variable"><name>m_dashes</name></member>
@@ -5366,7 +5417,7 @@
     <member refid="classvrv_1_1_measure_1a6368df68944bc1713602ccba6c3e2341" kind="function"><name>IsNeumeLine</name></member>
     <member refid="classvrv_1_1_measure_1a2d89cffaa1b1255964c50dd7ad1ef691" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_measure_1a1bd6ab6f774c6ddc261da3901f698d3d" kind="function"><name>AddChildAdditionalCheck</name></member>
-    <member refid="classvrv_1_1_measure_1afbaab874c0a2b37b3f2bbd175756f4aa" kind="function"><name>AddChildBack</name></member>
+    <member refid="classvrv_1_1_measure_1a294e2db6947ce8c2e962331368d30f7d" kind="function"><name>AddChildBack</name></member>
     <member refid="classvrv_1_1_measure_1a5a45b03920fff1323cfca86c78f58db6" kind="function"><name>HasCachedHorizontalLayout</name></member>
     <member refid="classvrv_1_1_measure_1a2d8b2d4baeea0f3c888a25804d8145ba" kind="function"><name>GetDrawingX</name></member>
     <member refid="classvrv_1_1_measure_1abb732e601d47f3dfe7f409d303e0bb8a" kind="function"><name>ResetCachedDrawingX</name></member>
@@ -6314,7 +6365,7 @@
     <member refid="classvrv_1_1_note_1a6c2a769f7c103ebc94d68c147184df08" kind="variable"><name>m_stemSameasRole</name></member>
     <member refid="classvrv_1_1_note_1a68a34dc4606c694c61020104860daa78" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_note_1a529546e5bbc3107208540b9e2eff082b" kind="function"><name>IsSupportedChild</name></member>
-    <member refid="classvrv_1_1_note_1aefb4a2097eb88c3cefd73cbc72222bb0" kind="function"><name>AddChild</name></member>
+    <member refid="classvrv_1_1_note_1a3b30bdc539b65b90c1f855d0e31d43e9" kind="function"><name>AddChild</name></member>
     <member refid="classvrv_1_1_note_1a7f9a1cac90b424c99003d062f7720bb4" kind="function"><name>AddChildAdditionalCheck</name></member>
     <member refid="classvrv_1_1_note_1a31a25f79f3854cf1083770fe46718360" kind="function"><name>AlignDotsShift</name></member>
     <member refid="classvrv_1_1_note_1a5d75468877187a156178c642140853a3" kind="function"><name>IsUnisonWith</name></member>
@@ -6533,7 +6584,7 @@
     <member refid="classvrv_1_1_object_1a9f30aa6a8185b260943003a08980d376" kind="function"><name>SetParent</name></member>
     <member refid="classvrv_1_1_object_1a5d22ebda01e0b254c13d558f5ffdb098" kind="function"><name>ResetParent</name></member>
     <member refid="classvrv_1_1_object_1a20139d6b0a596877d4819989e2553797" kind="function"><name>IsSupportedChild</name></member>
-    <member refid="classvrv_1_1_object_1a2ab113f1faf62ee0332687ff981c0948" kind="function"><name>AddChild</name></member>
+    <member refid="classvrv_1_1_object_1ab94977fbc6851fc8080cb24de413713b" kind="function"><name>AddChild</name></member>
     <member refid="classvrv_1_1_object_1a4a7dac5e21e6c8d7bf7810bfa1655644" kind="function"><name>AddChildAdditionalCheck</name></member>
     <member refid="classvrv_1_1_object_1a2775c11d5b1013116cb8636e8e81f49c" kind="function"><name>GetInsertOrderFor</name></member>
     <member refid="classvrv_1_1_object_1afeda31a18e057eaa199a5a76d2a8cf78" kind="function"><name>GetInsertOrderForIn</name></member>
@@ -7584,6 +7635,7 @@
   <compound refid="classvrv_1_1_prepare_data_initialization_functor" kind="class"><name>vrv::PrepareDataInitializationFunctor</name>
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1ae89808db28b06773dbcbd97b1e784305" kind="function"><name>PrepareDataInitializationFunctor</name></member>
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1a2bf0841d40e18f038dee8e8afd75455e" kind="function"><name>~PrepareDataInitializationFunctor</name></member>
+    <member refid="classvrv_1_1_prepare_data_initialization_functor_1acae1385a1bca8f3b7cdc54ca671e26d1" kind="function"><name>VisitAccid</name></member>
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1ab877258b5e091f5f2d33266fc21ae0d5" kind="function"><name>VisitDiv</name></member>
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1ae360af5dae993e5e3000e379fdd20570" kind="function"><name>VisitChord</name></member>
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1ab6d801c5fc65ac43f9fb10755bfbbb20" kind="function"><name>VisitFloatingObject</name></member>
@@ -8070,7 +8122,7 @@
     <member refid="classvrv_1_1_rest_1acbfbab4fd6dafbec642739ec04b02735" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_rest_1aec92b1bd7e5572722c8b15b60a27e24c" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_rest_1ab7c5fc5c7590037a1d4cc5666ed0b188" kind="function"><name>IsSupportedChild</name></member>
-    <member refid="classvrv_1_1_rest_1a9423bd9fbe08e1d3dd011226121a8900" kind="function"><name>AddChild</name></member>
+    <member refid="classvrv_1_1_rest_1a41fe8f7563bf3f7b3bbdd5735ac63cf0" kind="function"><name>AddChild</name></member>
     <member refid="classvrv_1_1_rest_1a80065d5795046cf1ebaf9c01b80cd897" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_rest_1acc2964b7ec92cf5e29277de42f7fd173" kind="function"><name>GetOptimalLayerLocation</name></member>
     <member refid="classvrv_1_1_rest_1a2abfa9a01f57ac36187c78ebe7a30b9a" kind="function"><name>UpdateFromTransLoc</name></member>
@@ -8185,6 +8237,19 @@
     <member refid="classvrv_1_1_score_1a454077be1771aec1464d96a0457e0807" kind="variable"><name>m_scoreDefSubtree</name></member>
     <member refid="classvrv_1_1_score_1acd59d1d7b84c0b8efa3c63646f7c8388" kind="function"><name>CalcRunningElementHeight</name></member>
     <member refid="classvrv_1_1_score_1a3a2637750d08541d340b1f6055995e32" kind="function"><name>ScoreDefNeedsOptimization</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_score_context_functor" kind="class"><name>vrv::ScoreContextFunctor</name>
+    <member refid="classvrv_1_1_score_context_functor_1af44c2f590aeda0d96909c24440b22b00" kind="function"><name>ScoreContextFunctor</name></member>
+    <member refid="classvrv_1_1_score_context_functor_1a840e41bb71560b14f35f101bbb54ec81" kind="function"><name>~ScoreContextFunctor</name></member>
+    <member refid="classvrv_1_1_score_context_functor_1ab1d8bbed3a2a97f51f8c2b748f439f55" kind="function"><name>ImplementsEndInterface</name></member>
+    <member refid="classvrv_1_1_score_context_functor_1aba4b6ecc8a0d84a89640ca4d3541b5fc" kind="function"><name>VisitObject</name></member>
+    <member refid="classvrv_1_1_score_context_functor_1a4d7d5a9f16f5186faad2d3e0fb62ba6f" kind="function"><name>VisitObjectEnd</name></member>
+    <member refid="classvrv_1_1_score_context_functor_1a793756e72cd6a19c8da648b17b6f9dd6" kind="enum"><name>TreeLevel</name></member>
+    <member refid="classvrv_1_1_score_context_functor_1a793756e72cd6a19c8da648b17b6f9dd6a5dd585fbdf9a211b70e8d8e55a31eae3" kind="enumvalue"><name>NOT_IN_SCORE</name></member>
+    <member refid="classvrv_1_1_score_context_functor_1a793756e72cd6a19c8da648b17b6f9dd6a254b1d4eb118f4a3843d027b117122e6" kind="enumvalue"><name>TO_INCLUDE</name></member>
+    <member refid="classvrv_1_1_score_context_functor_1a793756e72cd6a19c8da648b17b6f9dd6a4a343fd71b42b9b9d90e803d53612564" kind="enumvalue"><name>INCLUDED</name></member>
+    <member refid="classvrv_1_1_score_context_functor_1a8efa9a14f150b873964b22a3a255e38b" kind="variable"><name>m_current</name></member>
+    <member refid="classvrv_1_1_score_context_functor_1a38801000be3f8c09a6c4fd4c078f390b" kind="variable"><name>m_inScoreLevel</name></member>
   </compound>
   <compound refid="classvrv_1_1_score_def" kind="class"><name>vrv::ScoreDef</name>
     <member refid="classvrv_1_1_score_def_1ab886ff9d7830dab871f0ab00d33ce30f" kind="function"><name>ScoreDef</name></member>
@@ -8378,6 +8443,14 @@
     <member refid="classvrv_1_1_section_1a729fdf8b9066fa84da4f27aaf4a44ecf" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_section_1a371a69a6ddc16692b9ad08116ebbac1a" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_section_1ab47ee0552e2dd59f0d788688d1043929" kind="function"><name>IsSupportedChild</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_section_context_functor" kind="class"><name>vrv::SectionContextFunctor</name>
+    <member refid="classvrv_1_1_section_context_functor_1a0047d77b74590085d7f42fd7a4cd3b19" kind="function"><name>SectionContextFunctor</name></member>
+    <member refid="classvrv_1_1_section_context_functor_1a03c3e6f469390f937f5ccf2f9a367251" kind="function"><name>~SectionContextFunctor</name></member>
+    <member refid="classvrv_1_1_section_context_functor_1a8b7e8043dc763bc7cddad8dcf1192bfa" kind="function"><name>ImplementsEndInterface</name></member>
+    <member refid="classvrv_1_1_section_context_functor_1a10e237b899df669d2359f581553a2005" kind="function"><name>VisitObject</name></member>
+    <member refid="classvrv_1_1_section_context_functor_1abbad049291aa6a4ae55bc92e107c58f1" kind="function"><name>VisitObjectEnd</name></member>
+    <member refid="classvrv_1_1_section_context_functor_1a67dafa559b4a478f3d99854b2b65f8ca" kind="variable"><name>m_current</name></member>
   </compound>
   <compound refid="classvrv_1_1_segmented_line" kind="class"><name>vrv::SegmentedLine</name>
     <member refid="classvrv_1_1_segmented_line_1a109e7cfadfccd78acb2c87196ea7bc8d" kind="function"><name>SegmentedLine</name></member>
@@ -9230,7 +9303,7 @@
     <member refid="classvrv_1_1_tab_dur_sym_1a30a265f4abd3b69d7729825b5f378e03" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_tab_dur_sym_1a1e85bce43dc9ad280471f7ef5f147da0" kind="function"><name>HasToBeAligned</name></member>
     <member refid="classvrv_1_1_tab_dur_sym_1a156649d1c7a8bcef58687003c28bc75f" kind="function"><name>IsSupportedChild</name></member>
-    <member refid="classvrv_1_1_tab_dur_sym_1a3d84edc997ae622affddd9f02ae1ce3c" kind="function"><name>AddChild</name></member>
+    <member refid="classvrv_1_1_tab_dur_sym_1ac1c93fe22a48976da9c54c1610eae84a" kind="function"><name>AddChild</name></member>
     <member refid="classvrv_1_1_tab_dur_sym_1a22d57605fa11c88d50c0a2fc5a4be9d7" kind="function"><name>AdjustDrawingYRel</name></member>
   </compound>
   <compound refid="classvrv_1_1_tab_grp" kind="class"><name>vrv::TabGrp</name>
@@ -9808,7 +9881,7 @@
     <member refid="classvrv_1_1_tuplet_1a6af3590e76f0df30add2b89d7d6d053e" kind="variable"><name>m_numAlignedBeam</name></member>
     <member refid="classvrv_1_1_tuplet_1a612010911011bd82e2604619e61a3eba" kind="variable"><name>m_innerSlurs</name></member>
     <member refid="classvrv_1_1_tuplet_1abf532531c654468cdea005bbf3f2e7bd" kind="function"><name>IsSupportedChild</name></member>
-    <member refid="classvrv_1_1_tuplet_1a203b018c52090608a28871ed5917c75d" kind="function"><name>AddChild</name></member>
+    <member refid="classvrv_1_1_tuplet_1ab4988b7a8e8ddc8de88ee23afcc3e99f" kind="function"><name>AddChild</name></member>
     <member refid="classvrv_1_1_tuplet_1aaaa1b75edb1da95f21d2e5bc0d31bbc1" kind="function"><name>GetMelodicDirection</name></member>
     <member refid="classvrv_1_1_tuplet_1ac6b04379bb72ad6f90757952cf3bcc81" kind="function"><name>CalcDrawingBracketAndNumPos</name></member>
     <member refid="classvrv_1_1_tuplet_1a1df9d269326828fec5d714a1fd495fca" kind="function"><name>GetDrawingLeftRightXRel</name></member>
@@ -11074,6 +11147,7 @@
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a8a2ac7b294df3ad0fc75c2859c04d1ac" kind="enumvalue"><name>FLOATING_OBJECT</name></member>
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5adcffa629363a4c63352fa6994306904d" kind="enumvalue"><name>FLOATING_POSITIONER</name></member>
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ac86b832d5d049b99366164c09c5ca50b" kind="enumvalue"><name>FLOATING_CURVE_POSITIONER</name></member>
+    <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a44be8b2707af451f02aef1a642652270" kind="enumvalue"><name>ACCID_FLOATING</name></member>
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a9b3a330ccd2c01d91961ff208e4450b6" kind="enumvalue"><name>ALIGNMENT</name></member>
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5ace564857c4e045e20e01c5a9526b3d4d" kind="enumvalue"><name>ALIGNMENT_REFERENCE</name></member>
     <member refid="vrvdef_8h_1add6b61c8ada3f79dc1f540fbead73ca5a8a6925cf74312fa740e6e14dab3a2f6a" kind="enumvalue"><name>CLEF_ATTR</name></member>
@@ -11736,6 +11810,8 @@
   <compound refid="durationinterface_8h" kind="file"><name>durationinterface.h</name>
   </compound>
   <compound refid="dynam_8h" kind="file"><name>dynam.h</name>
+  </compound>
+  <compound refid="editfunctor_8h" kind="file"><name>editfunctor.h</name>
   </compound>
   <compound refid="editorial_8h" kind="file"><name>editorial.h</name>
   </compound>

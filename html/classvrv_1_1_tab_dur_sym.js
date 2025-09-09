@@ -6,7 +6,7 @@ var classvrv_1_1_tab_dur_sym =
     [ "Accept", "classvrv_1_1_tab_dur_sym.html#adb50b1aab19a6eef70e7eecad53140a5", null ],
     [ "AcceptEnd", "classvrv_1_1_tab_dur_sym.html#a30a265f4abd3b69d7729825b5f378e03", null ],
     [ "AcceptEnd", "classvrv_1_1_tab_dur_sym.html#a20939e69c4a014e28161addd14fb580c", null ],
-    [ "AddChild", "classvrv_1_1_tab_dur_sym.html#a3d84edc997ae622affddd9f02ae1ce3c", null ],
+    [ "AddChild", "classvrv_1_1_tab_dur_sym.html#ac1c93fe22a48976da9c54c1610eae84a", null ],
     [ "AdjustDrawingYRel", "classvrv_1_1_tab_dur_sym.html#a22d57605fa11c88d50c0a2fc5a4be9d7", null ],
     [ "CalcStemLenInThirdUnits", "classvrv_1_1_tab_dur_sym.html#a8bb9f58a908ec631bba1c567a086c1c8", null ],
     [ "Clone", "classvrv_1_1_tab_dur_sym.html#a689b8839f1832ef851618fe42e2dbba2", null ],

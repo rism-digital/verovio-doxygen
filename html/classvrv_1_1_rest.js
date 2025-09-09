@@ -6,7 +6,7 @@ var classvrv_1_1_rest =
     [ "Accept", "classvrv_1_1_rest.html#a5c706054372c31fd3e969ba3a0444810", null ],
     [ "AcceptEnd", "classvrv_1_1_rest.html#aec92b1bd7e5572722c8b15b60a27e24c", null ],
     [ "AcceptEnd", "classvrv_1_1_rest.html#acbfbab4fd6dafbec642739ec04b02735", null ],
-    [ "AddChild", "classvrv_1_1_rest.html#a9423bd9fbe08e1d3dd011226121a8900", null ],
+    [ "AddChild", "classvrv_1_1_rest.html#a41fe8f7563bf3f7b3bbdd5735ac63cf0", null ],
     [ "Clone", "classvrv_1_1_rest.html#a90a5a7595f5a3611e19f42144b67afb7", null ],
     [ "GetAltSymInterface", "classvrv_1_1_rest.html#a6ea6c4f93a3b0d38aad1e2d48109dba0", null ],
     [ "GetAltSymInterface", "classvrv_1_1_rest.html#ab6ddd6cdf97d2a3437a77190c0bbded9", null ],

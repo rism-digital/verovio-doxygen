@@ -948,6 +948,7 @@ var hierarchy =
       [ "vrv::Layer", "classvrv_1_1_layer.html", null ],
       [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
       [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ],
+      [ "vrv::MeterSigGrp", "classvrv_1_1_meter_sig_grp.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],
       [ "vrv::Staff", "classvrv_1_1_staff.html", null ],
       [ "vrv::Stem", "classvrv_1_1_stem.html", null ]
@@ -976,10 +977,12 @@ var hierarchy =
         [ "vrv::AlignmentReference", "classvrv_1_1_alignment_reference.html", null ],
         [ "vrv::Course", "classvrv_1_1_course.html", null ],
         [ "vrv::Doc", "classvrv_1_1_doc.html", null ],
+        [ "vrv::EditorTreeObject", "classvrv_1_1_editor_tree_object.html", null ],
         [ "vrv::EditorialElement", "classvrv_1_1_editorial_element.html", null ],
         [ "vrv::Facsimile", "classvrv_1_1_facsimile.html", null ],
         [ "vrv::Fb", "classvrv_1_1_fb.html", null ],
         [ "vrv::FloatingObject", "classvrv_1_1_floating_object.html", [
+          [ "vrv::AccidFloatingObject", "classvrv_1_1_accid_floating_object.html", null ],
           [ "vrv::ControlElement", "classvrv_1_1_control_element.html", null ],
           [ "vrv::SystemElement", "classvrv_1_1_system_element.html", null ]
         ] ],
@@ -1210,9 +1213,11 @@ var hierarchy =
         [ "vrv::ResetHorizontalAlignmentFunctor", "classvrv_1_1_reset_horizontal_alignment_functor.html", null ],
         [ "vrv::ResetVerticalAlignmentFunctor", "classvrv_1_1_reset_vertical_alignment_functor.html", null ],
         [ "vrv::SaveFunctor", "classvrv_1_1_save_functor.html", null ],
+        [ "vrv::ScoreContextFunctor", "classvrv_1_1_score_context_functor.html", null ],
         [ "vrv::ScoreDefSetGrpSymFunctor", "classvrv_1_1_score_def_set_grp_sym_functor.html", null ],
         [ "vrv::ScoreDefUnsetCurrentFunctor", "classvrv_1_1_score_def_unset_current_functor.html", null ],
         [ "vrv::ScoringUpFunctor", "classvrv_1_1_scoring_up_functor.html", null ],
+        [ "vrv::SectionContextFunctor", "classvrv_1_1_section_context_functor.html", null ],
         [ "vrv::SetCautionaryScoreDefFunctor", "classvrv_1_1_set_cautionary_score_def_functor.html", null ],
         [ "vrv::SetStaffDefRedrawFlagsFunctor", "classvrv_1_1_set_staff_def_redraw_flags_functor.html", null ],
         [ "vrv::SyncFromFacsimileFunctor", "classvrv_1_1_sync_from_facsimile_functor.html", null ],
@@ -1340,6 +1345,7 @@ var hierarchy =
     [ "vrv::Transposer", "classvrv_1_1_transposer.html", null ],
     [ "vrv::View", "classvrv_1_1_view.html", null ],
     [ "vrv::VisibilityDrawingInterface", "classvrv_1_1_visibility_drawing_interface.html", [
+      [ "vrv::EditorTreeObject", "classvrv_1_1_editor_tree_object.html", null ],
       [ "vrv::EditorialElement", "classvrv_1_1_editorial_element.html", null ],
       [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
       [ "vrv::SystemElement", "classvrv_1_1_system_element.html", null ]

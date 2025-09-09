@@ -7,7 +7,7 @@ var classvrv_1_1_alignment_reference =
     [ "Accept", "classvrv_1_1_alignment_reference.html#abfce0e3d8af2e853cc08625a6754aaf2", null ],
     [ "AcceptEnd", "classvrv_1_1_alignment_reference.html#a5a7419d87bbd6f784a956f968624e4cc", null ],
     [ "AcceptEnd", "classvrv_1_1_alignment_reference.html#af7bf049f07b5d611788169f3f18a4c75", null ],
-    [ "AddChild", "classvrv_1_1_alignment_reference.html#a95d76d62a688a262fbee1b4c2971daa6", null ],
+    [ "AddChild", "classvrv_1_1_alignment_reference.html#aa88be7bddca421bad5ae8cd0b9cdb790", null ],
     [ "HasAccidVerticalOverlap", "classvrv_1_1_alignment_reference.html#a20a67edf81f6a10054bafac29530d8a5", null ],
     [ "HasCrossStaffElements", "classvrv_1_1_alignment_reference.html#ad88dbf946e0441c77075ae5d6e43320b", null ],
     [ "HasMultipleLayer", "classvrv_1_1_alignment_reference.html#a9c1895942dd54bf9ac12b788dbf7570c", null ],

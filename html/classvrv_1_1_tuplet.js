@@ -6,7 +6,7 @@ var classvrv_1_1_tuplet =
     [ "Accept", "classvrv_1_1_tuplet.html#a9e53a0231c7c51d0d698cb5f80d85580", null ],
     [ "AcceptEnd", "classvrv_1_1_tuplet.html#adbc9bdf36495b1fa729f45d05f4a2dfa", null ],
     [ "AcceptEnd", "classvrv_1_1_tuplet.html#a7ef9d88e42db59abffc537e3213709b9", null ],
-    [ "AddChild", "classvrv_1_1_tuplet.html#a203b018c52090608a28871ed5917c75d", null ],
+    [ "AddChild", "classvrv_1_1_tuplet.html#ab4988b7a8e8ddc8de88ee23afcc3e99f", null ],
     [ "AddInnerSlur", "classvrv_1_1_tuplet.html#a18aa3657ab456e5700b51f7f7d412559", null ],
     [ "CalcDrawingBracketAndNumPos", "classvrv_1_1_tuplet.html#ac6b04379bb72ad6f90757952cf3bcc81", null ],
     [ "CalculateTupletNumCrossStaff", "classvrv_1_1_tuplet.html#a459298415394a7adbbe2525d55ca7fbe", null ],

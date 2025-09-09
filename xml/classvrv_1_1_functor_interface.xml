@@ -42,6 +42,8 @@
         <name>VisitObject</name>
         <reimplementedby refid="classvrv_1_1_calc_b_box_overflows_functor_1a0e5dfcbac14b8c87dddff8afecc9ac29">VisitObject</reimplementedby>
         <reimplementedby refid="classvrv_1_1_convert_to_cast_off_mensural_functor_1af9824179f3cf05c307debe4e59f5b005">VisitObject</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_section_context_functor_1a10e237b899df669d2359f581553a2005">VisitObject</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_score_context_functor_1aba4b6ecc8a0d84a89640ca4d3541b5fc">VisitObject</reimplementedby>
         <reimplementedby refid="classvrv_1_1_find_all_by_comparison_functor_1a57fdfc477e0768fe3a397ce924b2b6c4">VisitObject</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reorder_by_x_pos_functor_1adbf23ea0953ed9bbe4b665421ff3861e">VisitObject</reimplementedby>
         <reimplementedby refid="classvrv_1_1_prepare_alt_sym_functor_1a84f3b13e24f67d0159f0f6fe378a1d3e">VisitObject</reimplementedby>
@@ -66,6 +68,8 @@
         <definition>virtual FunctorCode vrv::FunctorInterface::VisitObjectEnd</definition>
         <argsstring>(Object *)</argsstring>
         <name>VisitObjectEnd</name>
+        <reimplementedby refid="classvrv_1_1_section_context_functor_1abbad049291aa6a4ae55bc92e107c58f1">VisitObjectEnd</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_score_context_functor_1a4d7d5a9f16f5186faad2d3e0fb62ba6f">VisitObjectEnd</reimplementedby>
         <reimplementedby refid="classvrv_1_1_save_functor_1a5e74eabcb960c8830fe0922ec4a6fa72">VisitObjectEnd</reimplementedby>
         <param>
           <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
@@ -2622,6 +2626,7 @@
         <argsstring>(Accid *accid)</argsstring>
         <name>VisitAccid</name>
         <reimplementedby refid="classvrv_1_1_calc_ledger_lines_functor_1ab15b7ff3a51386b2c292c834487c6fc9">VisitAccid</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_prepare_data_initialization_functor_1acae1385a1bca8f3b7cdc54ca671e26d1">VisitAccid</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_data_functor_1a69ccabcf2a09034d6909b3ba90c064eb">VisitAccid</reimplementedby>
         <reimplementedby refid="classvrv_1_1_reset_horizontal_alignment_functor_1ad275df768a3484bf4925dec146a10450">VisitAccid</reimplementedby>
         <param>
@@ -5262,7 +5267,7 @@
         <childnode refid="11" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="106">
+      <node id="108">
         <label>vrv::SetStaffDefRedrawFlagsFunctor</label>
         <link refid="classvrv_1_1_set_staff_def_redraw_flags_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5328,7 +5333,7 @@
         <childnode refid="11" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="105">
+      <node id="107">
         <label>vrv::SetCautionaryScoreDefFunctor</label>
         <link refid="classvrv_1_1_set_cautionary_score_def_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5364,7 +5369,7 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="103">
+      <node id="104">
         <label>vrv::ScoreDefUnsetCurrentFunctor</label>
         <link refid="classvrv_1_1_score_def_unset_current_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5380,6 +5385,12 @@
         <label>vrv::CastOffToSelectionFunctor</label>
         <link refid="classvrv_1_1_cast_off_to_selection_functor"/>
         <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>vrv::ScoreContextFunctor</label>
+        <link refid="classvrv_1_1_score_context_functor"/>
+        <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
       <node id="91">
@@ -5430,7 +5441,7 @@
         <childnode refid="11" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="107">
+      <node id="109">
         <label>vrv::SyncFromFacsimileFunctor</label>
         <link refid="classvrv_1_1_sync_from_facsimile_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5526,6 +5537,12 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="106">
+        <label>vrv::SectionContextFunctor</label>
+        <link refid="classvrv_1_1_section_context_functor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="3">
         <label>vrv::AdjustXOverflowFunctor</label>
         <link refid="classvrv_1_1_adjust_x_overflow_functor"/>
@@ -5592,7 +5609,7 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="102">
+      <node id="103">
         <label>vrv::ScoreDefSetGrpSymFunctor</label>
         <link refid="classvrv_1_1_score_def_set_grp_sym_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5746,7 +5763,7 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="104">
+      <node id="105">
         <label>vrv::ScoringUpFunctor</label>
         <link refid="classvrv_1_1_scoring_up_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5824,7 +5841,7 @@
         <childnode refid="11" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="108">
+      <node id="110">
         <label>vrv::SyncToFacsimileFunctor</label>
         <link refid="classvrv_1_1_sync_to_facsimile_functor"/>
         <childnode refid="2" relation="public-inheritance">
@@ -5860,7 +5877,7 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="109">
+      <node id="111">
         <label>vrv::UnCastOffFunctor</label>
         <link refid="classvrv_1_1_un_cast_off_functor"/>
         <childnode refid="2" relation="public-inheritance">

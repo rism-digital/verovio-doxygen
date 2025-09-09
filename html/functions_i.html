@@ -205,12 +205,14 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classvrv_1_1_reset_horizontal_alignment_functor.html#a60dcdb850f3136eb7d2e9878746a67be">vrv::ResetHorizontalAlignmentFunctor</a>
 , <a class="el" href="classvrv_1_1_reset_vertical_alignment_functor.html#ad9bff81ff7224ef91dc0e98169165c89">vrv::ResetVerticalAlignmentFunctor</a>
 , <a class="el" href="classvrv_1_1_save_functor.html#a8b787d57173ee65d8e9a7c62cc94fbd3">vrv::SaveFunctor</a>
+, <a class="el" href="classvrv_1_1_score_context_functor.html#ab1d8bbed3a2a97f51f8c2b748f439f55">vrv::ScoreContextFunctor</a>
 , <a class="el" href="classvrv_1_1_score_def_optimize_functor.html#a6781d82c5f9be22a3f2cc3c078017bc8">vrv::ScoreDefOptimizeFunctor</a>
 , <a class="el" href="classvrv_1_1_score_def_set_current_functor.html#a8b72c1f11fb3c26d5f856419c22cf49b">vrv::ScoreDefSetCurrentFunctor</a>
 , <a class="el" href="classvrv_1_1_score_def_set_current_page_functor.html#a684ce15cb53b9337c3b1dcc011c38024">vrv::ScoreDefSetCurrentPageFunctor</a>
 , <a class="el" href="classvrv_1_1_score_def_set_grp_sym_functor.html#a3a2e58a0bef5ff65f00f1a48e7f04167">vrv::ScoreDefSetGrpSymFunctor</a>
 , <a class="el" href="classvrv_1_1_score_def_unset_current_functor.html#af41a6608fc01280bc848294b68f0e94d">vrv::ScoreDefUnsetCurrentFunctor</a>
 , <a class="el" href="classvrv_1_1_scoring_up_functor.html#a4ee1861f1c5192991564fc19541cc7ce">vrv::ScoringUpFunctor</a>
+, <a class="el" href="classvrv_1_1_section_context_functor.html#a8b7e8043dc763bc7cddad8dcf1192bfa">vrv::SectionContextFunctor</a>
 , <a class="el" href="classvrv_1_1_set_cautionary_score_def_functor.html#a591569889248de35c550144f9cd6c36f">vrv::SetCautionaryScoreDefFunctor</a>
 , <a class="el" href="classvrv_1_1_set_staff_def_redraw_flags_functor.html#a0e56d2c32dd56bae71de88c31ada766d">vrv::SetStaffDefRedrawFlagsFunctor</a>
 , <a class="el" href="classvrv_1_1_sync_from_facsimile_functor.html#afa89f15db501550a09e82fb03c5802be">vrv::SyncFromFacsimileFunctor</a>
@@ -231,6 +233,9 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 </li>
 <li>InitCue()
 : <a class="el" href="classvrv_1_1_beam_drawing_interface.html#af5aa6e1d0fd35b213dc1b8114c87cd58">vrv::BeamDrawingInterface</a>
+</li>
+<li>InitFloatingObject()
+: <a class="el" href="classvrv_1_1_accid.html#a205a11500949acf4371406a811255eaa">vrv::Accid</a>
 </li>
 <li>InitFonts()
 : <a class="el" href="classvrv_1_1_resources.html#af7823e10567dae86983fad00b0d25290">vrv::Resources</a>
@@ -270,7 +275,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classvrv_1_1_stemmed_drawing_interface.html#ab56a5098689ccd26d3b6e3103c66a580">vrv::StemmedDrawingInterface</a>
 </li>
 <li>Intersects()
-: <a class="el" href="classvrv_1_1_bounding_box.html#a30378dff14a9058154de8efcc0d7632f">vrv::BoundingBox</a>
+: <a class="el" href="classvrv_1_1_bounding_box.html#a29d29a9aaa350b53bcf58dc32978b7f8">vrv::BoundingBox</a>
 </li>
 <li>IsCastOff()
 : <a class="el" href="classvrv_1_1_doc.html#a570380aa9593a124ac2d85b5238a62e8">vrv::Doc</a>
@@ -410,6 +415,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classvrv_1_1_doc.html#a20b8314ed54233af06fd66e23d2d8c9a">vrv::Doc</a>
 , <a class="el" href="classvrv_1_1_dynam.html#a0cffae257736f98d3d958061e7920cb8">vrv::Dynam</a>
 , <a class="el" href="classvrv_1_1_editorial_element.html#a7ed6ff5be5ac6ba254ec415ed4c3db83">vrv::EditorialElement</a>
+, <a class="el" href="classvrv_1_1_editor_tree_object.html#a979f331ac8e10016f2cbb56388a32a3c">vrv::EditorTreeObject</a>
 , <a class="el" href="classvrv_1_1_ending.html#ab3560fc0a0b6271c5ae4240b0eefa9ac">vrv::Ending</a>
 , <a class="el" href="classvrv_1_1_f.html#af10342df6095dc44e08f35a03bbab1bd">vrv::F</a>
 , <a class="el" href="classvrv_1_1_facsimile.html#a6d6de5c9ad697a23b3e6850cf440bd21">vrv::Facsimile</a>
@@ -496,7 +502,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Aug 4 2025 08:45:30 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 9 2025 09:45:19 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

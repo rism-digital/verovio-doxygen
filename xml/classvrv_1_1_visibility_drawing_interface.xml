@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classvrv_1_1_visibility_drawing_interface" kind="class" language="C++" prot="public">
     <compoundname>vrv::VisibilityDrawingInterface</compoundname>
+    <derivedcompoundref refid="classvrv_1_1_editor_tree_object" prot="public" virt="non-virtual">vrv::EditorTreeObject</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_editorial_element" prot="public" virt="non-virtual">vrv::EditorialElement</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_mdiv" prot="public" virt="non-virtual">vrv::Mdiv</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_system_element" prot="public" virt="non-virtual">vrv::SystemElement</derivedcompoundref>
@@ -48,6 +49,7 @@
         <reimplementedby refid="classvrv_1_1_damage_1aee96e1a93dc6e91be47066b0ffa14ef9">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_del_1ab5b7b40083784cc520df0f39c447f7a1">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_editorial_element_1a7ef9e3e924fb5881ae60a67956eeb497">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_editor_tree_object_1a7d68cf68cebe65360240cd784f98f1b9">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_ending_1a81e7184e2e44236c84b5491b2edf1048">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_expan_1ac335f8eb63eb5562bf3349245dfc188d">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_expansion_1a5759e6093db59b4902973c5f07e09d51">Reset</reimplementedby>
@@ -132,13 +134,13 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="8">
+      <node id="9">
         <label>vrv::Corr</label>
         <link refid="classvrv_1_1_corr"/>
-        <childnode refid="2" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2">
+      <node id="3">
         <label>vrv::EditorialElement</label>
         <link refid="classvrv_1_1_editorial_element"/>
         <childnode refid="1" relation="public-inheritance">
@@ -148,160 +150,166 @@
         <label>vrv::VisibilityDrawingInterface</label>
         <link refid="classvrv_1_1_visibility_drawing_interface"/>
       </node>
-      <node id="11">
+      <node id="12">
         <label>vrv::Expan</label>
         <link refid="classvrv_1_1_expan"/>
-        <childnode refid="2" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vrv::Choice</label>
+        <link refid="classvrv_1_1_choice"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vrv::Section</label>
+        <link refid="classvrv_1_1_section"/>
+        <childnode refid="24" relation="public-inheritance">
         </childnode>
       </node>
       <node id="7">
-        <label>vrv::Choice</label>
-        <link refid="classvrv_1_1_choice"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="28">
-        <label>vrv::Section</label>
-        <link refid="classvrv_1_1_section"/>
-        <childnode refid="23" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="6">
         <label>vrv::App</label>
         <link refid="classvrv_1_1_app"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="25">
-        <label>vrv::Expansion</label>
-        <link refid="classvrv_1_1_expansion"/>
-        <childnode refid="23" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="15">
-        <label>vrv::Ref</label>
-        <link refid="classvrv_1_1_ref"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="16">
-        <label>vrv::Reg</label>
-        <link refid="classvrv_1_1_reg"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="14">
-        <label>vrv::Rdg</label>
-        <link refid="classvrv_1_1_rdg"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>vrv::Add</label>
-        <link refid="classvrv_1_1_add"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="9">
-        <label>vrv::Damage</label>
-        <link refid="classvrv_1_1_damage"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="19">
-        <label>vrv::Subst</label>
-        <link refid="classvrv_1_1_subst"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="24">
-        <label>vrv::Ending</label>
-        <link refid="classvrv_1_1_ending"/>
-        <childnode refid="23" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
       <node id="26">
+        <label>vrv::Expansion</label>
+        <link refid="classvrv_1_1_expansion"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>vrv::Ref</label>
+        <link refid="classvrv_1_1_ref"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>vrv::Reg</label>
+        <link refid="classvrv_1_1_reg"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vrv::Rdg</label>
+        <link refid="classvrv_1_1_rdg"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vrv::EditorTreeObject</label>
+        <link refid="classvrv_1_1_editor_tree_object"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vrv::Add</label>
+        <link refid="classvrv_1_1_add"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vrv::Damage</label>
+        <link refid="classvrv_1_1_damage"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vrv::Subst</label>
+        <link refid="classvrv_1_1_subst"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vrv::Ending</label>
+        <link refid="classvrv_1_1_ending"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
         <label>vrv::Pb</label>
         <link refid="classvrv_1_1_pb"/>
-        <childnode refid="23" relation="public-inheritance">
+        <childnode refid="24" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3">
+      <node id="4">
         <label>vrv::Abbr</label>
         <link refid="classvrv_1_1_abbr"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="21">
-        <label>vrv::Unclear</label>
-        <link refid="classvrv_1_1_unclear"/>
-        <childnode refid="2" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
       <node id="22">
+        <label>vrv::Unclear</label>
+        <link refid="classvrv_1_1_unclear"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
         <label>vrv::Mdiv</label>
         <link refid="classvrv_1_1_mdiv"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13">
+      <node id="14">
         <label>vrv::Orig</label>
         <link refid="classvrv_1_1_orig"/>
-        <childnode refid="2" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10">
+      <node id="11">
         <label>vrv::Del</label>
         <link refid="classvrv_1_1_del"/>
-        <childnode refid="2" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="17">
+      <node id="18">
         <label>vrv::Restore</label>
         <link refid="classvrv_1_1_restore"/>
-        <childnode refid="2" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="27">
+      <node id="28">
         <label>vrv::Sb</label>
         <link refid="classvrv_1_1_sb"/>
-        <childnode refid="23" relation="public-inheritance">
+        <childnode refid="24" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12">
+      <node id="13">
         <label>vrv::Lem</label>
         <link refid="classvrv_1_1_lem"/>
-        <childnode refid="2" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="23">
+      <node id="24">
         <label>vrv::SystemElement</label>
         <link refid="classvrv_1_1_system_element"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5">
+      <node id="6">
         <label>vrv::Annot</label>
         <link refid="classvrv_1_1_annot"/>
-        <childnode refid="2" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="20">
+      <node id="21">
         <label>vrv::Supplied</label>
         <link refid="classvrv_1_1_supplied"/>
-        <childnode refid="2" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="29">
+      <node id="30">
         <label>vrv::SystemMilestoneEnd</label>
         <link refid="classvrv_1_1_system_milestone_end"/>
-        <childnode refid="23" relation="public-inheritance">
+        <childnode refid="24" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="18">
+      <node id="19">
         <label>vrv::Sic</label>
         <link refid="classvrv_1_1_sic"/>
-        <childnode refid="2" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

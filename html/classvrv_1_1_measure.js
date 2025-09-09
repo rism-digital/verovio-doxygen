@@ -13,7 +13,7 @@ var classvrv_1_1_measure =
     [ "AcceptEnd", "classvrv_1_1_measure.html#a24fe194e4adc48d11911ef79afd68bcb", null ],
     [ "AcceptEnd", "classvrv_1_1_measure.html#a53f312b4a6e1d33a3398caad5d7313ca", null ],
     [ "AddChildAdditionalCheck", "classvrv_1_1_measure.html#a1bd6ab6f774c6ddc261da3901f698d3d", null ],
-    [ "AddChildBack", "classvrv_1_1_measure.html#afbaab874c0a2b37b3f2bbd175756f4aa", null ],
+    [ "AddChildBack", "classvrv_1_1_measure.html#a294e2db6947ce8c2e962331368d30f7d", null ],
     [ "AddRealTimeOffsetMilliseconds", "classvrv_1_1_measure.html#ab832c18e4f7fb5a613b654f77b99ffba", null ],
     [ "AddRealTimeOnsetMilliseconds", "classvrv_1_1_measure.html#a7a0e8ae7052d3c28c26b08005b86a1ba", null ],
     [ "AddScoreTimeOffset", "classvrv_1_1_measure.html#afff1aa06ee53db5aa115112f7aefa7e0", null ],
