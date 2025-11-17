@@ -292,7 +292,8 @@ var hierarchy =
       [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
-      [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ]
+      [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ],
+      [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
     ] ],
     [ "AttEndings", null, [
       [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ]

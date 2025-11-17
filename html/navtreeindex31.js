@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"functions_func_r.html":[1,3,1,13],
 "functions_func_s.html":[1,3,1,14],
 "functions_func_t.html":[1,3,1,15],
 "functions_func_u.html":[1,3,1,16],
@@ -30,8 +31,8 @@ var NAVTREEINDEX31 =
 "graphic_8h_source.html":[2,0,112],
 "group__nodoc.html":[0,0],
 "group__nodoc.html#ga028fa93d6698315a5f04ab96160a6a62":[1,0,0,416,64],
-"group__nodoc.html#ga11e13d1850cadf28b00a85fde655e133":[0,0,3],
 "group__nodoc.html#ga11e13d1850cadf28b00a85fde655e133":[1,0,0,416,17],
+"group__nodoc.html#ga11e13d1850cadf28b00a85fde655e133":[0,0,3],
 "group__nodoc.html#ga3eb22488f8037f75c5d950271e0d9ad3":[0,0,6],
 "group__nodoc.html#ga3eb22488f8037f75c5d950271e0d9ad3":[1,0,0,416,38],
 "group__nodoc.html#ga409f7f6411678f02d7bc9a73be29c7d6":[1,0,0,416,9],
@@ -46,13 +47,13 @@ var NAVTREEINDEX31 =
 "group__nodoc.html#ga7d77de8b102acd2f07f0fa23270f82a5":[0,0,8],
 "group__nodoc.html#ga80b1e5c4211c1f7972d55cf2e4cd6c16":[0,0,10],
 "group__nodoc.html#ga80b1e5c4211c1f7972d55cf2e4cd6c16":[1,0,0,416,73],
-"group__nodoc.html#ga942ab5856517907ea4f2082d9f35f532":[0,0,2],
 "group__nodoc.html#ga942ab5856517907ea4f2082d9f35f532":[1,0,0,416,16],
+"group__nodoc.html#ga942ab5856517907ea4f2082d9f35f532":[0,0,2],
 "group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d":[0,0,7],
 "group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d":[1,0,0,416,52],
 "group__nodoc.html#gabd5f684704d8e4736ea416e43cdc5827":[1,0,0,416,46],
-"group__nodoc.html#gac0b9bfca70ab200ca3e313611e37cc20":[1,0,0,416,20],
 "group__nodoc.html#gac0b9bfca70ab200ca3e313611e37cc20":[0,0,4],
+"group__nodoc.html#gac0b9bfca70ab200ca3e313611e37cc20":[1,0,0,416,20],
 "group__nodoc.html#gae5a104614acc4edf6794abe71d027210":[0,0,0],
 "group__nodoc.html#gae5a104614acc4edf6794abe71d027210":[1,0,0,416,2],
 "group__nodoc.html#gaff331abcba4d70c7e6ecc17d08df382c":[1,0,0,416,32],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "structvrv_1_1_spanned_elements.html":[1,0,0,379],
 "structvrv_1_1_spanned_elements.html#a216693563181e15676656cd587c6eb57":[1,0,0,379,0],
 "structvrv_1_1_spanned_elements.html#aa88e4314cc25d9758202bb5d7c37b8d2":[1,0,0,379,1],
-"structvrv_1_1_staff_sort.html":[1,0,0,154],
-"structvrv_1_1_staff_sort.html#a6bdec7c49db040406f1b91c1504f0529":[1,0,0,154,0]
+"structvrv_1_1_staff_sort.html":[1,0,0,154]
 };

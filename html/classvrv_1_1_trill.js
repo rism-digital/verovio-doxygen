@@ -8,6 +8,7 @@ var classvrv_1_1_trill =
     [ "AcceptEnd", "classvrv_1_1_trill.html#aaef5ae06ca2fa5fccd2cc98068a76c70", null ],
     [ "Clone", "classvrv_1_1_trill.html#acb7eed425189a4d80ee9cb2f913f7bb5", null ],
     [ "GetClassName", "classvrv_1_1_trill.html#a9978e6935d1d5370ad183dfd8b0fa6c4", null ],
+    [ "GetEnclosingGlyphs", "classvrv_1_1_trill.html#a47854839698ba81921b02f1f25195ab2", null ],
     [ "GetTimePointInterface", "classvrv_1_1_trill.html#aa5ff9b7b859ac1a70872582f947bd9fe", null ],
     [ "GetTimePointInterface", "classvrv_1_1_trill.html#ac8d303e708172bf2b29b570d22ceb6d7", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_trill.html#a644c220c4894cf655a29aa7eff4b971c", null ],
