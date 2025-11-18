@@ -256,6 +256,9 @@ var hierarchy =
     [ "AttCurvatureDirection", null, [
       [ "vrv::Nc", "classvrv_1_1_nc.html", null ]
     ] ],
+    [ "AttCutout", null, [
+      [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ]
+    ] ],
     [ "AttDistances", null, [
       [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
