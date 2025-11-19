@@ -339,10 +339,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="188" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_view_1aa006a92a125e5b1e3f63f7c4438e6731" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_view_1a21c88161b39ce73aa71c3bf1f8a8c9db" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::View::DrawScoreDef</definition>
-        <argsstring>(DeviceContext *dc, ScoreDef *scoreDef, Measure *measure, int x, BarLine *barLine=NULL, bool isLastMeasure=false, bool isLastSystem=false)</argsstring>
+        <argsstring>(DeviceContext *dc, ScoreDef *scoreDef, Measure *measure, int x, BarLine *barLine=NULL, bool isLastMeasure=false, bool isLastSystem=false, bool noLabels=false)</argsstring>
         <name>DrawScoreDef</name>
         <param>
           <type><ref refid="classvrv_1_1_device_context" kindref="compound">DeviceContext</ref> *</type>
@@ -375,6 +375,11 @@
           <declname>isLastSystem</declname>
           <defval>false</defval>
         </param>
+        <param>
+          <type>bool</type>
+          <declname>noLabels</declname>
+          <defval>false</defval>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -383,10 +388,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="189" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_view_1a558ddfe856c5aa32afe8bc9e61d9a9a9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_view_1a30443ce662940152cba7b4ec59dce911" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::View::DrawStaffGrp</definition>
-        <argsstring>(DeviceContext *dc, Measure *measure, StaffGrp *staffGrp, int x, bool topStaffGrp=false, bool abbreviations=false)</argsstring>
+        <argsstring>(DeviceContext *dc, Measure *measure, StaffGrp *staffGrp, int x, bool topStaffGrp=false, ScoreDefDrawingLabels drawingLabels=DRAWING_LABEL_ABBR)</argsstring>
         <name>DrawStaffGrp</name>
         <param>
           <type><ref refid="classvrv_1_1_device_context" kindref="compound">DeviceContext</ref> *</type>
@@ -410,9 +415,9 @@
           <defval>false</defval>
         </param>
         <param>
-          <type>bool</type>
-          <declname>abbreviations</declname>
-          <defval>false</defval>
+          <type>ScoreDefDrawingLabels</type>
+          <declname>drawingLabels</declname>
+          <defval>DRAWING_LABEL_ABBR</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -7570,7 +7575,7 @@
       <member refid="classvrv_1_1_view_1a4acef75669fa57ae67c8ef80c0bdd61a" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawRunningChildren</name></member>
       <member refid="classvrv_1_1_view_1a7b51ad54172cbe0e6499e1263de07a7b" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawRunningEditorialElement</name></member>
       <member refid="classvrv_1_1_view_1ad9217a906f0c2100805fd2bc27217c7f" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawRunningElements</name></member>
-      <member refid="classvrv_1_1_view_1aa006a92a125e5b1e3f63f7c4438e6731" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawScoreDef</name></member>
+      <member refid="classvrv_1_1_view_1a21c88161b39ce73aa71c3bf1f8a8c9db" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawScoreDef</name></member>
       <member refid="classvrv_1_1_view_1a68d86b67e466c9d49ca6e3c12a473d33" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawSlur</name></member>
       <member refid="classvrv_1_1_view_1a9bb00e0e212bc96374c34bba4d8343d4" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawSmuflCode</name></member>
       <member refid="classvrv_1_1_view_1a9a46fc7af2c03e5a185c59b86cff8b70" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawSmuflLine</name></member>
@@ -7583,7 +7588,7 @@
       <member refid="classvrv_1_1_view_1a3fa1b793b97e6dc280493bfdbcdcb738" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawStaffDefCautionary</name></member>
       <member refid="classvrv_1_1_view_1add23e8b3aa2cd5befe43d16ad695d230" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawStaffDefLabels</name></member>
       <member refid="classvrv_1_1_view_1a4cad4e627eaa84b4567adefa6983045e" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawStaffEditorialElement</name></member>
-      <member refid="classvrv_1_1_view_1a558ddfe856c5aa32afe8bc9e61d9a9a9" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawStaffGrp</name></member>
+      <member refid="classvrv_1_1_view_1a30443ce662940152cba7b4ec59dce911" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawStaffGrp</name></member>
       <member refid="classvrv_1_1_view_1ad2889d9738b543276d6e1d74623b051e" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawStaffLines</name></member>
       <member refid="classvrv_1_1_view_1a2cec524c77a81e17a402520c25c0b86d" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawStem</name></member>
       <member refid="classvrv_1_1_view_1a183aeafe10d9f37cfeb90714875438fe" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawStemMod</name></member>
