@@ -77,16 +77,17 @@ var NAVTREEINDEX1 =
 "classvrv_1_1_adjust_y_rel_for_transcription_functor.html#a3903944babff172ade2333fb2d097c3d":[1,0,0,37,3],
 "classvrv_1_1_adjust_y_rel_for_transcription_functor.html#aa5439f692feab80d1fa661c93f2eef0c":[1,0,0,37,1],
 "classvrv_1_1_align_horizontally_functor.html":[1,0,0,39],
+"classvrv_1_1_align_horizontally_functor.html#a0501635010ff9dd49c666004c258f06e":[1,0,0,39,9],
 "classvrv_1_1_align_horizontally_functor.html#a0b1d8c14654d8b5e7736abc9993cd585":[1,0,0,39,7],
 "classvrv_1_1_align_horizontally_functor.html#a2f1cd0722e2342485b4c981a464d7c9f":[1,0,0,39,4],
 "classvrv_1_1_align_horizontally_functor.html#a4f5cc0741cb1a0604343e9e311f89b6a":[1,0,0,39,2],
-"classvrv_1_1_align_horizontally_functor.html#a6be51db96736d73934064b701572d125":[1,0,0,39,10],
+"classvrv_1_1_align_horizontally_functor.html#a6be51db96736d73934064b701572d125":[1,0,0,39,11],
 "classvrv_1_1_align_horizontally_functor.html#a826bf269f3bc3113a86fc3ccc51c0c68":[1,0,0,39,8],
 "classvrv_1_1_align_horizontally_functor.html#a8d3c3833b559a48691e2b9b57e876ae9":[1,0,0,39,0],
 "classvrv_1_1_align_horizontally_functor.html#a9fee430d06972edf92fba995a0881e96":[1,0,0,39,3],
 "classvrv_1_1_align_horizontally_functor.html#aa6a2fe6a410a313834afa6811a0ec306":[1,0,0,39,1],
 "classvrv_1_1_align_horizontally_functor.html#ab2943a3702a12faba48b09dddfb2c29a":[1,0,0,39,6],
-"classvrv_1_1_align_horizontally_functor.html#ab6c982f0ce6d29d831cbaf448abe21a8":[1,0,0,39,9],
+"classvrv_1_1_align_horizontally_functor.html#ab6c982f0ce6d29d831cbaf448abe21a8":[1,0,0,39,10],
 "classvrv_1_1_align_horizontally_functor.html#aee8526b834108363a568031f31783eee":[1,0,0,39,5],
 "classvrv_1_1_align_measures_functor.html":[1,0,0,40],
 "classvrv_1_1_align_measures_functor.html#a16a6c386ed4cc1fa4006797211bfee6f":[1,0,0,40,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "classvrv_1_1_area_pos_interface.html#a04fcaebaacc3d7b4eca5a91b8855f9d3":[1,0,0,48,2],
 "classvrv_1_1_area_pos_interface.html#a09bebdaf9d93dabe934537d8c29de474":[1,0,0,48,3],
 "classvrv_1_1_area_pos_interface.html#a61b001d94c83adb44945bce55e8ac220":[1,0,0,48,0],
-"classvrv_1_1_area_pos_interface.html#a9417c5beef29adfdabf86900de818f85":[1,0,0,48,1],
-"classvrv_1_1_arpeg.html":[1,0,0,49]
+"classvrv_1_1_area_pos_interface.html#a9417c5beef29adfdabf86900de818f85":[1,0,0,48,1]
 };

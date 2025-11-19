@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classvrv_1_1_calc_artic_functor.html#a485fa22ba1b81d7d7edc6bb456f51d12":[1,0,0,68,2],
 "classvrv_1_1_calc_artic_functor.html#a6a73e307656dd252b211f87cf08f8bdf":[1,0,0,68,3],
 "classvrv_1_1_calc_artic_functor.html#a8919d64ce2fa281be64ea47e0d3630c5":[1,0,0,68,5],
 "classvrv_1_1_calc_artic_functor.html#ab9fb8962789a5c3606a6b4659d910745":[1,0,0,68,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "classvrv_1_1_const_functor_interface.html#a15300015002621977bdf8c99b21d1724":[1,0,0,203,206],
 "classvrv_1_1_const_functor_interface.html#a16650ea6f0140d46785d6c3e9a88b1c0":[1,0,0,203,169],
 "classvrv_1_1_const_functor_interface.html#a166bec3f045b61f68d8a35b9010e5cee":[1,0,0,203,18],
-"classvrv_1_1_const_functor_interface.html#a197bafab9f933b53aa5c4e286ef655c7":[1,0,0,203,106],
-"classvrv_1_1_const_functor_interface.html#a19ad3cb686489fc133169843bf69b0ab":[1,0,0,203,99]
+"classvrv_1_1_const_functor_interface.html#a197bafab9f933b53aa5c4e286ef655c7":[1,0,0,203,106]
 };
