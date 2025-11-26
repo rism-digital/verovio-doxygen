@@ -70,15 +70,15 @@ var NAVTREEINDEX =
 "classvrv_1_1_output.html#ab8293a488f55b424692bad0940a34d27",
 "classvrv_1_1_point.html#af2aff1e06b6b00c9e3941adeeb52d0e4",
 "classvrv_1_1_reh.html#a8cc8a466720d1526bb0089784def812a",
-"classvrv_1_1_sb.html#a31a83361f098fed76f761d17c42e205b",
-"classvrv_1_1_slur.html#ace6b566010648118388c07ea991988fa",
-"classvrv_1_1_stem.html#accc7b9461ef500bd06e3b1669a477db6",
-"classvrv_1_1_system.html#a7b772466b57f56986b857cac4c08a018",
-"classvrv_1_1_text_list_interface.html#a017ed90acaa91d34fed336df56b60b32",
-"classvrv_1_1_transposer.html#a8fd236bd9a4570242de748e4f9d64a2d",
-"classvrv_1_1_view.html#a467521c9dfcfa1f3963a0fd6cba5f1b6",
-"functions_func_p.html",
-"structvrv_1_1_staff_sort.html"
+"classvrv_1_1_sb.html#a1199063c049c955f5e3a1418a039c7f5",
+"classvrv_1_1_slur.html#ac91b83f8f14d2227eb227763f7557cec",
+"classvrv_1_1_stem.html#abcbb5eb822ca6f57aafadd45f8449f3f",
+"classvrv_1_1_system.html#a757fb470eefdf9c851a4ece205c7b1b3",
+"classvrv_1_1_text_list_interface.html#a00cb970a3594161cf1d8e8432cf7fafc",
+"classvrv_1_1_transposer.html#a896a9e8b33f62f6bd01bd8170f60aef4",
+"classvrv_1_1_view.html#a43cb88b980f283552501c310615ab5ee",
+"functions_func_o.html",
+"structvrv_1_1_spanned_elements.html#aa88e4314cc25d9758202bb5d7c37b8d2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -13,6 +13,7 @@ var classvrv_1_1_rest =
     [ "GetClassName", "classvrv_1_1_rest.html#a2dfcf0969db9808e3454c6012ced7d8f", null ],
     [ "GetDurationInterface", "classvrv_1_1_rest.html#a4c0c5b2317f30ae407e69f1bd3f86b18", null ],
     [ "GetDurationInterface", "classvrv_1_1_rest.html#a7e1827ce92f1a2c8b157a0513602d428", null ],
+    [ "GetEnclosingGlyphs", "classvrv_1_1_rest.html#a23ab3a265f4016221d7dc5a4d7d9d02d", null ],
     [ "GetOptimalLayerLocation", "classvrv_1_1_rest.html#acc2964b7ec92cf5e29277de42f7fd173", null ],
     [ "GetPositionInterface", "classvrv_1_1_rest.html#a7bade79fe5e753a0214adfd14982867b", null ],
     [ "GetPositionInterface", "classvrv_1_1_rest.html#ac7bf04a331feb93bdd02d4b477776304", null ],
