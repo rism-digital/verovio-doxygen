@@ -71,7 +71,7 @@ var classvrv_1_1_device_context =
     [ "SetFont", "classvrv_1_1_device_context.html#aa1ca850cc42d7688a1a795194d6a65f9", null ],
     [ "SetHeight", "classvrv_1_1_device_context.html#a3981d3d5f658d2b9eb0c9f0cdff5d1eb", null ],
     [ "SetLogicalOrigin", "classvrv_1_1_device_context.html#a2286132c081552b93386928d21965d07", null ],
-    [ "SetPen", "classvrv_1_1_device_context.html#a5fae71dedef742fa553528a290d99096", null ],
+    [ "SetPen", "classvrv_1_1_device_context.html#a9e8321ff97b91bbc107794360d798db0", null ],
     [ "SetPushBack", "classvrv_1_1_device_context.html#a019e4f455d65caf90aa8e846f2df05a5", null ],
     [ "SetResources", "classvrv_1_1_device_context.html#ae8f2a1bbb614dd755c278cc2ecac4ef0", null ],
     [ "SetTextBackground", "classvrv_1_1_device_context.html#a7397354df257baf35d171203344a3117", null ],
