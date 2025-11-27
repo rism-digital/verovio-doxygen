@@ -13,6 +13,8 @@ var classvrv_1_1_neume =
     [ "GetLigatureCount", "classvrv_1_1_neume.html#a06449cac799629c8f270375c73edba24", null ],
     [ "GetLowestPitch", "classvrv_1_1_neume.html#af47bcdf0360357ebe69e8185ad210e99", null ],
     [ "GetNeumeGroup", "classvrv_1_1_neume.html#a481c55b8281aef7bbb87737b75fcc1d5", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_neume.html#a3766718dbd19eb4c5c38fb625e107bc9", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_neume.html#a9593f0019be665af4432f28039eef395", null ],
     [ "GetPitchDifferences", "classvrv_1_1_neume.html#ae5b28d67395ab6013e98cce077b71046", null ],
     [ "IsLastInNeume", "classvrv_1_1_neume.html#a3f71d0aca884aed34f54144a5c5c952f", null ],
     [ "IsSupportedChild", "classvrv_1_1_neume.html#a89ed76987d143522f51ff03543d17556", null ],

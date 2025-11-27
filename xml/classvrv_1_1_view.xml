@@ -3,6 +3,7 @@
   <compounddef id="classvrv_1_1_view" kind="class" language="C++" prot="public">
     <compoundname>vrv::View</compoundname>
     <includes refid="view_8h" local="no">view.h</includes>
+    <innerclass refid="classvrv_1_1_view_1_1_offset" prot="private">vrv::View::Offset</innerclass>
       <sectiondef kind="user-defined">
       <header>The objects currently selected.</header>
       <description><para>To be used in child classes, but defined here because it can be useful for changing the color, for example </para>
@@ -18,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="656" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="656" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="689" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="689" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -34,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="685" column="29" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="685" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="718" column="29" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="718" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1a1d01243f4662f825735f9a05d5a9c4a5" prot="private" static="yes" mutable="no">
         <type>thread_local int</type>
@@ -47,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="685" column="43" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="685" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="718" column="43" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="718" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1a5e13b73dec85c2f2ad1507c41bb841d3" prot="private" static="yes" mutable="no">
         <type>thread_local bool</type>
@@ -60,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="686" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="686" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="719" column="30" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="719" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -3209,10 +3210,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="340" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_view_1a4b70f14ea0f950f9d841adf98d6b71d7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_view_1ae3e1fd105a1fed0bcaf17f0ca80a8294" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::View::DrawMRptPart</definition>
-        <argsstring>(DeviceContext *dc, int xCentered, char32_t smulfCode, int num, bool line, Staff *staff)</argsstring>
+        <argsstring>(DeviceContext *dc, int xCentered, int y, char32_t smulfCode, int num, bool line, Staff *staff)</argsstring>
         <name>DrawMRptPart</name>
         <param>
           <type><ref refid="classvrv_1_1_device_context" kindref="compound">DeviceContext</ref> *</type>
@@ -3221,6 +3222,10 @@
         <param>
           <type>int</type>
           <declname>xCentered</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
         </param>
         <param>
           <type>char32_t</type>
@@ -6799,6 +6804,174 @@
         <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="631" column="10"/>
       </memberdef>
       </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_view_1a490c71f6261457b3da671575802563c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::View::StartOffset</definition>
+        <argsstring>(DeviceContext *dc, const Object *object, int staffSize)</argsstring>
+        <name>StartOffset</name>
+        <param>
+          <type><ref refid="classvrv_1_1_device_context" kindref="compound">DeviceContext</ref> *</type>
+          <declname>dc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>staffSize</declname>
+        </param>
+        <briefdescription>
+<para>Start and end offset calculation for elements with <computeroutput>@vo</computeroutput> or <computeroutput>@ho</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset will be applied only if required by the <ref refid="classvrv_1_1_device_context" kindref="compound">DeviceContext</ref>. The staff size can be changed when it does for a particular element (e.g., control elements). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="650" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_view_1a252fdbf700dbcdf69e88914a7475fb19" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::View::EndOffset</definition>
+        <argsstring>(DeviceContext *dc, const Object *object)</argsstring>
+        <name>EndOffset</name>
+        <param>
+          <type><ref refid="classvrv_1_1_device_context" kindref="compound">DeviceContext</ref> *</type>
+          <declname>dc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="651" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_view_1a3d44938c2b635489d6c5732050c1f4f6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::View::SetOffsetStaffSize</definition>
+        <argsstring>(const Object *object, int staffSize)</argsstring>
+        <name>SetOffsetStaffSize</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>staffSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="652" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_view_1a22c7d7a689e5db9000bd49726be4a2a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::View::CalcOffset</definition>
+        <argsstring>(DeviceContext *dc, int &amp;x, int &amp;y)</argsstring>
+        <name>CalcOffset</name>
+        <param>
+          <type><ref refid="classvrv_1_1_device_context" kindref="compound">DeviceContext</ref> *</type>
+          <declname>dc</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the current offset for a point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Applies currents offsets recursively (e.g., accid within note). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="660" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_view_1a0fb8971db10076559bee05dcb2a390c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::View::CalcOffsetX</definition>
+        <argsstring>(DeviceContext *dc, int &amp;x)</argsstring>
+        <name>CalcOffsetX</name>
+        <param>
+          <type><ref refid="classvrv_1_1_device_context" kindref="compound">DeviceContext</ref> *</type>
+          <declname>dc</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="661" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_view_1a8a936a7450e2dd7501d6d0d6776d3fc4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::View::CalcOffsetY</definition>
+        <argsstring>(DeviceContext *dc, int &amp;y)</argsstring>
+        <name>CalcOffsetY</name>
+        <param>
+          <type><ref refid="classvrv_1_1_device_context" kindref="compound">DeviceContext</ref> *</type>
+          <declname>dc</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="662" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_view_1add986e42de932351ae8a20bba355903b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::View::CalcOffsetBezier</definition>
+        <argsstring>(DeviceContext *dc, Point points[4], char spanningType)</argsstring>
+        <name>CalcOffsetBezier</name>
+        <param>
+          <type><ref refid="classvrv_1_1_device_context" kindref="compound">DeviceContext</ref> *</type>
+          <declname>dc</declname>
+        </param>
+        <param>
+          <type><ref refid="classvrv_1_1_point" kindref="compound">Point</ref></type>
+          <declname>points</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>spanningType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="663" column="10"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classvrv_1_1_view_1a922bb7e5bab67bd8e28206bd6e4f8c8e" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
@@ -6812,7 +6985,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="646" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="646" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="679" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="679" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1a63a1674d9b36c2b1d1ccb358cc968961" prot="public" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_options" kindref="compound">Options</ref> *</type>
@@ -6826,7 +6999,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="648" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="648" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="681" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="681" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -6843,7 +7016,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="664" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="664" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="697" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="697" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1af1ad1da56835eef701839b9f04a8cd36" prot="protected" static="no" mutable="no">
         <type>SlurHandling</type>
@@ -6857,7 +7030,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="669" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="669" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="702" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="702" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_view_1ab16976e8a08645f3fdb70a658ede2c15" prot="protected" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_score_def" kindref="compound">ScoreDef</ref></type>
@@ -6872,7 +7045,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="676" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="676" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="709" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="709" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvrv_1_1_view_1a66152ea535ce5c08c7d561fd8f6b3717" prot="private" static="no" mutable="no">
+        <type>std::list&lt; Offset &gt;</type>
+        <definition>std::list&lt;Offset&gt; vrv::View::m_currentOffsets</definition>
+        <argsstring></argsstring>
+        <name>m_currentOffsets</name>
+        <briefdescription>
+<para>The list of current offset values for the element being drawn. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="723" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="723" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -7436,11 +7625,15 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="106" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="106" bodyend="688"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/view.h" line="106" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/view.h" bodystart="106" bodyend="724"/>
     <listofallmembers>
       <member refid="classvrv_1_1_view_1a0151299a3395da27a27021ffd9650068" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>CalcBrevisPoints</name></member>
       <member refid="classvrv_1_1_view_1a2f7ac3ab4cfb71bb4fbc809648f27ec7" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>CalcInitialSlur</name></member>
       <member refid="classvrv_1_1_view_1aa10c701331d2a7430abbc2f125640446" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>CalcObliquePoints</name></member>
+      <member refid="classvrv_1_1_view_1a22c7d7a689e5db9000bd49726be4a2a7" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>CalcOffset</name></member>
+      <member refid="classvrv_1_1_view_1add986e42de932351ae8a20bba355903b" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>CalcOffsetBezier</name></member>
+      <member refid="classvrv_1_1_view_1a0fb8971db10076559bee05dcb2a390c3" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>CalcOffsetX</name></member>
+      <member refid="classvrv_1_1_view_1a8a936a7450e2dd7501d6d0d6776d3fc4" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>CalcOffsetY</name></member>
       <member refid="classvrv_1_1_view_1a2112e69dbe8de940f486983ebfcdd21c" prot="public" virt="non-virtual"><scope>vrv::View</scope><name>CalculatePitchCode</name></member>
       <member refid="classvrv_1_1_view_1a40ebbe142ce17e46484b0c907e15d7df" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawAcciaccaturaSlash</name></member>
       <member refid="classvrv_1_1_view_1a0e5d3049d1c711a8d559d013e151c663" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawAccid</name></member>
@@ -7544,7 +7737,7 @@
       <member refid="classvrv_1_1_view_1a27851d5dab8760ea84fa4e0e1545d06c" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawMRest</name></member>
       <member refid="classvrv_1_1_view_1ab77c16dfaa2a8d7ec437ae58e8282672" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawMRpt</name></member>
       <member refid="classvrv_1_1_view_1aa2e78145592d2b9c39e1d49f87c2b4f6" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawMRpt2</name></member>
-      <member refid="classvrv_1_1_view_1a4b70f14ea0f950f9d841adf98d6b71d7" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawMRptPart</name></member>
+      <member refid="classvrv_1_1_view_1ae3e1fd105a1fed0bcaf17f0ca80a8294" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawMRptPart</name></member>
       <member refid="classvrv_1_1_view_1aa745e375702204cffce77b26af9d8fb4" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawMSpace</name></member>
       <member refid="classvrv_1_1_view_1a46cc2f53f9476d25cc85c2cbede0a1a8" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawMultiRest</name></member>
       <member refid="classvrv_1_1_view_1ac24e35ba414d2caf69ee5a5f16c9daf2" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawMultiRpt</name></member>
@@ -7630,6 +7823,7 @@
       <member refid="classvrv_1_1_view_1a7329720e64407161b224945fa4e078c3" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawVerticalDots</name></member>
       <member refid="classvrv_1_1_view_1a5f538ab501c4e9c232c76852e1a5dfb2" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawVerticalLine</name></member>
       <member refid="classvrv_1_1_view_1a5cc9023c0c2a89c3f6f568e6b2dfdf47" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>DrawVerticalSegmentedLine</name></member>
+      <member refid="classvrv_1_1_view_1a252fdbf700dbcdf69e88914a7475fb19" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>EndOffset</name></member>
       <member refid="classvrv_1_1_view_1ab9f22b52c5f715977bca0a0c27b2a17b" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>GetFYRel</name></member>
       <member refid="classvrv_1_1_view_1adb9ec40c4b0a281045eb9de4bbb7cb4c" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>GetMensuralStemDir</name></member>
       <member refid="classvrv_1_1_view_1afe6147dc2aa9a756204fbc2a180ec24c" prot="public" virt="non-virtual"><scope>vrv::View</scope><name>GetNotationMode</name></member>
@@ -7642,6 +7836,7 @@
       <member refid="classvrv_1_1_view_1ab5c67dfc99fc2035f0d4fffac83f5280" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>IntToTimeSigFigures</name></member>
       <member refid="classvrv_1_1_view_1a2172c2d138fa895a5cb6e1cfa169df53" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>IntToTupletFigures</name></member>
       <member refid="classvrv_1_1_view_1a5f1597c4415673c261d4616b505be7fd" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>m_currentColor</name></member>
+      <member refid="classvrv_1_1_view_1a66152ea535ce5c08c7d561fd8f6b3717" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>m_currentOffsets</name></member>
       <member refid="classvrv_1_1_view_1a10fbb9af42d900ffe40032522ce1b225" prot="public" virt="non-virtual"><scope>vrv::View</scope><name>m_currentPage</name></member>
       <member refid="classvrv_1_1_view_1a922bb7e5bab67bd8e28206bd6e4f8c8e" prot="public" virt="non-virtual"><scope>vrv::View</scope><name>m_doc</name></member>
       <member refid="classvrv_1_1_view_1ab16976e8a08645f3fdb70a658ede2c15" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>m_drawingScoreDef</name></member>
@@ -7652,9 +7847,11 @@
       <member refid="classvrv_1_1_view_1a18e71a5b8d16826f0f3d243943d6fe96" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>s_drawingLigX</name></member>
       <member refid="classvrv_1_1_view_1a1d01243f4662f825735f9a05d5a9c4a5" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>s_drawingLigY</name></member>
       <member refid="classvrv_1_1_view_1a851d75c2d465a1c90b7d97082b961a1b" prot="public" virt="non-virtual"><scope>vrv::View</scope><name>SetDoc</name></member>
+      <member refid="classvrv_1_1_view_1a3d44938c2b635489d6c5732050c1f4f6" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>SetOffsetStaffSize</name></member>
       <member refid="classvrv_1_1_view_1a277589b2b42f16e8125846dbb37efad4" prot="public" virt="non-virtual"><scope>vrv::View</scope><name>SetPage</name></member>
       <member refid="classvrv_1_1_view_1a303f43f2ba8d9098e6391efc79711fbf" prot="protected" virt="non-virtual"><scope>vrv::View</scope><name>SetScoreDefDrawingWidth</name></member>
       <member refid="classvrv_1_1_view_1a468ebad3111e0aeac2897840cc029f38" prot="public" virt="non-virtual"><scope>vrv::View</scope><name>SetSlurHandling</name></member>
+      <member refid="classvrv_1_1_view_1a490c71f6261457b3da671575802563c3" prot="private" virt="non-virtual"><scope>vrv::View</scope><name>StartOffset</name></member>
       <member refid="classvrv_1_1_view_1a3847668818a6ab7867786708b43f34d8" prot="public" virt="non-virtual"><scope>vrv::View</scope><name>ToDeviceContext</name></member>
       <member refid="classvrv_1_1_view_1afe9a057654a48943b239e032265aa35c" prot="public" virt="non-virtual"><scope>vrv::View</scope><name>ToDeviceContextX</name></member>
       <member refid="classvrv_1_1_view_1a3bd9c64e228101079a731e338f5f5060" prot="public" virt="non-virtual"><scope>vrv::View</scope><name>ToDeviceContextY</name></member>

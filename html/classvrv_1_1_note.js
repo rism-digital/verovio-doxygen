@@ -30,6 +30,8 @@ var classvrv_1_1_note =
     [ "GetNoteGroup", "classvrv_1_1_note.html#a1673470e59a8f93932a49a7c29a2245d", null ],
     [ "GetNoteGroupPosition", "classvrv_1_1_note.html#a2db6866b410158abf49fa0c94dce8340", null ],
     [ "GetNoteheadGlyph", "classvrv_1_1_note.html#a4fba3384361effe5ffe4cb8970a78a1e", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_note.html#a277bf1777e064b439472b8bb9708567d", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_note.html#a930499b82b2d0ed4a4dbfd9d4d900b96", null ],
     [ "GetPitchClass", "classvrv_1_1_note.html#a4dd530526f7cbf5f8433976479fbc3ee", null ],
     [ "GetPitchInterface", "classvrv_1_1_note.html#a9041eca0a9cf4aeb6536a96c797a46a3", null ],
     [ "GetPitchInterface", "classvrv_1_1_note.html#ab310c26ef7aa9313660a2ad90a930c96", null ],

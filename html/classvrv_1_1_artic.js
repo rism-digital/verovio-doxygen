@@ -15,6 +15,8 @@ var classvrv_1_1_artic =
     [ "GetClassName", "classvrv_1_1_artic.html#a0fe5df1b0413217ee7d62f2072e2c564", null ],
     [ "GetDrawingPlace", "classvrv_1_1_artic.html#a318062fc0b6c2ffbb2986c3f1d90c26a", null ],
     [ "GetEnclosingGlyphs", "classvrv_1_1_artic.html#a73e669c5cc97e083ab85e4f973edb14e", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_artic.html#a39f3fc2ad1a71685653941a8e802eaa7", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_artic.html#a8355d4b630b2eb9cd26b586e3fe291af", null ],
     [ "HasToBeAligned", "classvrv_1_1_artic.html#ad2b79005c4219c56132710a33c63797c", null ],
     [ "IsInsideArtic", "classvrv_1_1_artic.html#ad60930fde904d55bc6b45c022f9a0886", null ],
     [ "IsOutsideArtic", "classvrv_1_1_artic.html#a71697eeca9129013c0fc4cf92ec7ddf6", null ],

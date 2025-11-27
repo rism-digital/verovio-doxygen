@@ -5,6 +5,7 @@
     <includes local="yes">atts_externalsymbols.h</includes>
     <includes local="yes">atts_shared.h</includes>
     <includes refid="layerelement_8h" local="yes">layerelement.h</includes>
+    <includes refid="offsetinterface_8h" local="yes">offsetinterface.h</includes>
     <includes refid="vrvdef_8h" local="yes">vrvdef.h</includes>
     <includedby refid="drawinginterface_8h" local="yes">drawinginterface.h</includedby>
     <includedby refid="iohumdrum_8h" local="yes">iohumdrum.h</includedby>
@@ -38,6 +39,8 @@
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
@@ -166,6 +169,16 @@
       </node>
       <node id="34">
         <label>attclasses.h</label>
+      </node>
+      <node id="37">
+        <label>offsetinterface.h</label>
+        <link refid="offsetinterface_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
       </node>
       <node id="20">
         <label>vrv.h</label>
@@ -1008,68 +1021,73 @@
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atts_externalsymbols.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;atts_shared.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;layerelement.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vrvdef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vrv<sp/>{</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ScoreDefInterface;</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Clef</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27" refid="classvrv_1_1_clef" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref>,</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttClefLog,</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttClefShape,</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttColor,</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttEnclosingChars,</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttExtSymAuth,</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttExtSymNames,</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttLineLoc,</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttOctave,</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttOctaveDisplacement,</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttStaffIdent,</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttTypography,</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttVisibility<sp/>{</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref>();</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref>();</highlight></codeline>
-<codeline lineno="48" refid="classvrv_1_1_clef_1abb9d12cbce277d50a99e9681a5f0f7b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*<ref refid="classvrv_1_1_clef_1abb9d12cbce277d50a99e9681a5f0f7b6" kindref="member">Clone</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
-<codeline lineno="49" refid="classvrv_1_1_clef_1a3122df9da14e30b7b0092930c2432330" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_clef_1a3122df9da14e30b7b0092930c2432330" kindref="member">Reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>GetClassName()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;clef&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54" refid="classvrv_1_1_clef_1af8a09e042f0969d9264aec72059694df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_clef_1af8a09e042f0969d9264aec72059694df" kindref="member">HasToBeAligned</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57" refid="classvrv_1_1_clef_1ac3d9be304c4eaf15f129a55771cbc30f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_clef_1ac3d9be304c4eaf15f129a55771cbc30f" kindref="member">IsScoreDefElement</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="classvrv_1_1_object_1ad2f81f683e9a94713b451395ff781627" kindref="member">GetParent</ref>()<sp/>&amp;&amp;<sp/>this-&gt;<ref refid="classvrv_1_1_object_1a4124844dc62f3a263b5f2480a7c4a105" kindref="member">GetFirstAncestor</ref>(SCOREDEF));<sp/>}</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62" refid="classvrv_1_1_clef_1a3024936525419403269c083ac4332940" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_clef_1a3024936525419403269c083ac4332940" kindref="member">GetClefLocOffset</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Static<sp/>methods<sp/>//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71" refid="classvrv_1_1_clef_1a372c41254f60ddb6d7a13b5336d0338d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>char32_t<sp/><ref refid="classvrv_1_1_clef_1a372c41254f60ddb6d7a13b5336d0338d" kindref="member">GetClefGlyph</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>data_NOTATIONTYPE<sp/>notationType)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81" refid="classvrv_1_1_clef_1a6cc79683c354c6a2a0f7048162ae1033" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_clef_1a6cc79683c354c6a2a0f7048162ae1033" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_clef_1a6cc79683c354c6a2a0f7048162ae1033" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;offsetinterface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vrvdef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vrv<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ScoreDefInterface;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Clef</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classvrv_1_1_clef" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref>,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_offset_interface" kindref="compound">OffsetInterface</ref>,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttClefLog,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttClefShape,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttColor,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttEnclosingChars,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttExtSymAuth,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttExtSymNames,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttLineLoc,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttOctave,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttOctaveDisplacement,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttStaffIdent,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttTypography,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttVisibility<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref>();</highlight></codeline>
+<codeline lineno="50" refid="classvrv_1_1_clef_1abb9d12cbce277d50a99e9681a5f0f7b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*<ref refid="classvrv_1_1_clef_1abb9d12cbce277d50a99e9681a5f0f7b6" kindref="member">Clone</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="51" refid="classvrv_1_1_clef_1a3122df9da14e30b7b0092930c2432330" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_clef_1a3122df9da14e30b7b0092930c2432330" kindref="member">Reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>GetClassName()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;clef&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="54"></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_offset_interface" kindref="compound">OffsetInterface</ref><sp/>*GetOffsetInterface()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vrv_cast&lt;OffsetInterface<sp/>*&gt;(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>OffsetInterface<sp/>*GetOffsetInterface()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vrv_cast&lt;const<sp/>OffsetInterface<sp/>*&gt;(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="classvrv_1_1_clef_1af8a09e042f0969d9264aec72059694df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_clef_1af8a09e042f0969d9264aec72059694df" kindref="member">HasToBeAligned</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="classvrv_1_1_clef_1ac3d9be304c4eaf15f129a55771cbc30f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_clef_1ac3d9be304c4eaf15f129a55771cbc30f" kindref="member">IsScoreDefElement</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="classvrv_1_1_object_1ad2f81f683e9a94713b451395ff781627" kindref="member">GetParent</ref>()<sp/>&amp;&amp;<sp/>this-&gt;<ref refid="classvrv_1_1_object_1a4124844dc62f3a263b5f2480a7c4a105" kindref="member">GetFirstAncestor</ref>(SCOREDEF));<sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classvrv_1_1_clef_1a3024936525419403269c083ac4332940" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_clef_1a3024936525419403269c083ac4332940" kindref="member">GetClefLocOffset</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Static<sp/>methods<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classvrv_1_1_clef_1a372c41254f60ddb6d7a13b5336d0338d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>char32_t<sp/><ref refid="classvrv_1_1_clef_1a372c41254f60ddb6d7a13b5336d0338d" kindref="member">GetClefGlyph</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>data_NOTATIONTYPE<sp/>notationType)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classvrv_1_1_clef_1a6cc79683c354c6a2a0f7048162ae1033" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_clef_1a6cc79683c354c6a2a0f7048162ae1033" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_clef_1a6cc79683c354c6a2a0f7048162ae1033" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/clef.h"/>
   </compounddef>

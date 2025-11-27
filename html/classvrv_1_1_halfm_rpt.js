@@ -8,6 +8,8 @@ var classvrv_1_1_halfm_rpt =
     [ "AcceptEnd", "classvrv_1_1_halfm_rpt.html#a872fe47082ba0f69245cc6e265d723b9", null ],
     [ "Clone", "classvrv_1_1_halfm_rpt.html#a577071397fc3a3e779e11a4de61aa7e5", null ],
     [ "GetClassName", "classvrv_1_1_halfm_rpt.html#ad4074e02f91fc3166f73106f12e54a2c", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_halfm_rpt.html#a9a49818bcf1c134f30ce1b6c701ded65", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_halfm_rpt.html#a83963a15f4cc4eeff65c594d7a0cf4ee", null ],
     [ "HasToBeAligned", "classvrv_1_1_halfm_rpt.html#a0dac55fb1d92bc2628c3a0ac6700aa1d", null ],
     [ "Reset", "classvrv_1_1_halfm_rpt.html#aa2d38a04191488c9b03db43b502d25ce", null ]
 ];

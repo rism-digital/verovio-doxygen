@@ -14,6 +14,8 @@ var classvrv_1_1_accid =
     [ "GetDrawingUnisonAccid", "classvrv_1_1_accid.html#ad535e459f62badbc539cc1daad3a4476", null ],
     [ "GetDrawingUnisonAccid", "classvrv_1_1_accid.html#a7739d3e359555b4f9a166f83437a0e32", null ],
     [ "GetFloatingObject", "classvrv_1_1_accid.html#ae76f48361c8c8293312a57aef963720c", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_accid.html#af1e238669bf9afbe0c4cb7d198dee81f", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_accid.html#a6abcffea04280a86453ba57da4a7d0eb", null ],
     [ "GetPositionInterface", "classvrv_1_1_accid.html#a480094a5b06d0c0f26273a84b64ee68a", null ],
     [ "GetPositionInterface", "classvrv_1_1_accid.html#ac75a911c016ddfb3984d1e7d988d9b2c", null ],
     [ "GetSymbolStr", "classvrv_1_1_accid.html#aee1dcf71f46ebc446356d97dff6e7574", null ],

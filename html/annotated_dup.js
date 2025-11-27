@@ -297,6 +297,8 @@ var annotated_dup =
       [ "ObjectFactory", "classvrv_1_1_object_factory.html", "classvrv_1_1_object_factory" ],
       [ "ClassRegistrar", "classvrv_1_1_class_registrar.html", "classvrv_1_1_class_registrar" ],
       [ "Octave", "classvrv_1_1_octave.html", "classvrv_1_1_octave" ],
+      [ "OffsetInterface", "classvrv_1_1_offset_interface.html", "classvrv_1_1_offset_interface" ],
+      [ "OffsetSpanningInterface", "classvrv_1_1_offset_spanning_interface.html", "classvrv_1_1_offset_spanning_interface" ],
       [ "Option", "classvrv_1_1_option.html", "classvrv_1_1_option" ],
       [ "OptionBool", "classvrv_1_1_option_bool.html", "classvrv_1_1_option_bool" ],
       [ "OptionDbl", "classvrv_1_1_option_dbl.html", "classvrv_1_1_option_dbl" ],
