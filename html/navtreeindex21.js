@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"classvrv_1_1_options.html#af9ee93ec31be9da4e2071ac527d59f92":[1,0,0,306,22],
+"classvrv_1_1_options.html#afa488d5e3725d1f06caf036856e9f0be":[1,0,0,306,41],
 "classvrv_1_1_options.html#afa5100ae66b2f177f98d8311375d617a":[1,0,0,306,98],
 "classvrv_1_1_options.html#afb68eac71e0886e6458018e63ee94524":[1,0,0,306,76],
 "classvrv_1_1_options.html#afc24ddffb25350e041b0ca133a24bac4":[1,0,0,306,83],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "classvrv_1_1_pitch_inflection.html#aae5887c4f81c2925d20fec71df968f97":[1,0,0,321,4],
 "classvrv_1_1_pitch_inflection.html#ac678407670186bb46291e60fd4465ef0":[1,0,0,321,7],
 "classvrv_1_1_pitch_inflection.html#acaa21c0cd709c7c17969cd4b15831ee9":[1,0,0,321,12],
-"classvrv_1_1_pitch_inflection.html#ad4dff13bc46b9030b5497b0448d53873":[1,0,0,321,10],
-"classvrv_1_1_pitch_inflection.html#affcb012bcf700609aa2e874d92ea6e71":[1,0,0,321,2],
-"classvrv_1_1_pitch_interface.html":[1,0,0,322]
+"classvrv_1_1_pitch_inflection.html#ad4dff13bc46b9030b5497b0448d53873":[1,0,0,321,10]
 };

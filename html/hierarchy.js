@@ -959,7 +959,11 @@ var hierarchy =
       [ "vrv::Stem", "classvrv_1_1_stem.html", null ]
     ] ],
     [ "AttVisualOffset2Ho", null, [
-      [ "vrv::OffsetSpanningInterface", "classvrv_1_1_offset_spanning_interface.html", null ]
+      [ "vrv::OffsetSpanningInterface", "classvrv_1_1_offset_spanning_interface.html", [
+        [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
+        [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
+        [ "vrv::Tie", "classvrv_1_1_tie.html", null ]
+      ] ]
     ] ],
     [ "AttVisualOffset2Vo", null, [
       [ "vrv::OffsetSpanningInterface", "classvrv_1_1_offset_spanning_interface.html", null ]
