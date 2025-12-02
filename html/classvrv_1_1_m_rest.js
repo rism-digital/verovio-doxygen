@@ -8,6 +8,8 @@ var classvrv_1_1_m_rest =
     [ "AcceptEnd", "classvrv_1_1_m_rest.html#a7f9d796e6ea727ca5fe4a8e23ee01586", null ],
     [ "Clone", "classvrv_1_1_m_rest.html#acc519eca07b0e04531a83acb494a9096", null ],
     [ "GetClassName", "classvrv_1_1_m_rest.html#ac6a5dbb1d0f7077b45b143b47e9ff16d", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_m_rest.html#a907bcc93cccb3c3556815511cc731c2e", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_m_rest.html#ab2836e8498e97543b6e809311ffe2ad6", null ],
     [ "GetOptimalLayerLocation", "classvrv_1_1_m_rest.html#a8b5196c1d76d40ba69480ba13d202f83", null ],
     [ "GetPositionInterface", "classvrv_1_1_m_rest.html#af78e4b659b7424b0aa8aab7cf9cd870a", null ],
     [ "GetPositionInterface", "classvrv_1_1_m_rest.html#a662dd95ebd8ae31020322902d35014af", null ],

@@ -98,44 +98,52 @@ $(document).ready(function(){initNavTree('oriscus_8h_source.html',''); initResiz
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;atts_analytical.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;atts_shared.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;layerelement.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;pitchinterface.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;positioninterface.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>vrv {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// oriscus</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classvrv_1_1_oriscus.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_oriscus.html">Oriscus</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>, <span class="keyword">public</span> <a class="code" href="classvrv_1_1_pitch_interface.html">PitchInterface</a>, <span class="keyword">public</span> <a class="code" href="classvrv_1_1_position_interface.html">PositionInterface</a>, <span class="keyword">public</span> AttColor {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classvrv_1_1_oriscus.html">Oriscus</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_oriscus.html">Oriscus</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classvrv_1_1_oriscus.html#a6e84bf20f270835e86b6f1968b6ea1fe">   32</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_oriscus.html#a6e84bf20f270835e86b6f1968b6ea1fe">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_oriscus.html">Oriscus</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classvrv_1_1_oriscus.html#a2f5b16916fc8101ce235c78fa32878d3">   33</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_oriscus.html#a2f5b16916fc8101ce235c78fa32878d3">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;oriscus&quot;</span>; }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classvrv_1_1_pitch_interface.html">PitchInterface</a> *GetPitchInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;PitchInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> PitchInterface *GetPitchInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const PitchInterface *&gt;(<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classvrv_1_1_oriscus.html#af82f7bfeac101728bdaf2cc833f739be">   46</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_oriscus.html#af82f7bfeac101728bdaf2cc833f739be">HasToBeAligned</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;offsetinterface.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;pitchinterface.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;positioninterface.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>vrv {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// oriscus</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classvrv_1_1_oriscus.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_oriscus.html">Oriscus</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keyword">public</span> <a class="code" href="classvrv_1_1_offset_interface.html">OffsetInterface</a>,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="keyword">public</span> <a class="code" href="classvrv_1_1_pitch_interface.html">PitchInterface</a>,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="keyword">public</span> <a class="code" href="classvrv_1_1_position_interface.html">PositionInterface</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keyword">public</span> AttColor {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classvrv_1_1_oriscus.html">Oriscus</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_oriscus.html">Oriscus</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classvrv_1_1_oriscus.html#a6e84bf20f270835e86b6f1968b6ea1fe">   37</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_oriscus.html#a6e84bf20f270835e86b6f1968b6ea1fe">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_oriscus.html">Oriscus</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classvrv_1_1_oriscus.html#a2f5b16916fc8101ce235c78fa32878d3">   38</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_oriscus.html#a2f5b16916fc8101ce235c78fa32878d3">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;oriscus&quot;</span>; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classvrv_1_1_offset_interface.html">OffsetInterface</a> *GetOffsetInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;OffsetInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> OffsetInterface *GetOffsetInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const OffsetInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    PitchInterface *GetPitchInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;PitchInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">const</span> PitchInterface *GetPitchInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const PitchInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classvrv_1_1_oriscus.html#af82f7bfeac101728bdaf2cc833f739be">   53</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_oriscus.html#af82f7bfeac101728bdaf2cc833f739be">HasToBeAligned</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:51</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:62</div></div>
-<div class="ttc" id="aclassvrv_1_1_oriscus_html"><div class="ttname"><a href="classvrv_1_1_oriscus.html">vrv::Oriscus</a></div><div class="ttdef"><b>Definition:</b> oriscus.h:23</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:64</div></div>
+<div class="ttc" id="aclassvrv_1_1_offset_interface_html"><div class="ttname"><a href="classvrv_1_1_offset_interface.html">vrv::OffsetInterface</a></div><div class="ttdoc">This class is an interface for elements having a single visual offset, such as arpeg,...</div><div class="ttdef"><b>Definition:</b> offsetinterface.h:28</div></div>
+<div class="ttc" id="aclassvrv_1_1_oriscus_html"><div class="ttname"><a href="classvrv_1_1_oriscus.html">vrv::Oriscus</a></div><div class="ttdef"><b>Definition:</b> oriscus.h:28</div></div>
 <div class="ttc" id="aclassvrv_1_1_oriscus_html_a2f5b16916fc8101ce235c78fa32878d3"><div class="ttname"><a href="classvrv_1_1_oriscus.html#a2f5b16916fc8101ce235c78fa32878d3">vrv::Oriscus::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
-<div class="ttc" id="aclassvrv_1_1_oriscus_html_a6e84bf20f270835e86b6f1968b6ea1fe"><div class="ttname"><a href="classvrv_1_1_oriscus.html#a6e84bf20f270835e86b6f1968b6ea1fe">vrv::Oriscus::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> oriscus.h:32</div></div>
-<div class="ttc" id="aclassvrv_1_1_oriscus_html_af82f7bfeac101728bdaf2cc833f739be"><div class="ttname"><a href="classvrv_1_1_oriscus.html#af82f7bfeac101728bdaf2cc833f739be">vrv::Oriscus::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> oriscus.h:46</div></div>
+<div class="ttc" id="aclassvrv_1_1_oriscus_html_a6e84bf20f270835e86b6f1968b6ea1fe"><div class="ttname"><a href="classvrv_1_1_oriscus.html#a6e84bf20f270835e86b6f1968b6ea1fe">vrv::Oriscus::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> oriscus.h:37</div></div>
+<div class="ttc" id="aclassvrv_1_1_oriscus_html_af82f7bfeac101728bdaf2cc833f739be"><div class="ttname"><a href="classvrv_1_1_oriscus.html#af82f7bfeac101728bdaf2cc833f739be">vrv::Oriscus::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> oriscus.h:53</div></div>
 <div class="ttc" id="aclassvrv_1_1_pitch_interface_html"><div class="ttname"><a href="classvrv_1_1_pitch_interface.html">vrv::PitchInterface</a></div><div class="ttdoc">This class is an interface for elements with pitch, such as notes and neumes.</div><div class="ttdef"><b>Definition:</b> pitchinterface.h:28</div></div>
 <div class="ttc" id="aclassvrv_1_1_position_interface_html"><div class="ttname"><a href="classvrv_1_1_position_interface.html">vrv::PositionInterface</a></div><div class="ttdoc">This class is an interface for elements with a position on the staff, such as rests.</div><div class="ttdef"><b>Definition:</b> positioninterface.h:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -144,7 +152,7 @@ $(document).ready(function(){initNavTree('oriscus_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>oriscus.h</b></li>
-    <li class="footer">Generated on Tue Sep 9 2025 09:45:15 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 2 2025 10:57:12 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

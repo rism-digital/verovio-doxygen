@@ -13,6 +13,8 @@ var classvrv_1_1_syl =
     [ "GetClassName", "classvrv_1_1_syl.html#a0e306a177e586acba88026833a9fcc04", null ],
     [ "GetDrawingHeight", "classvrv_1_1_syl.html#a71acabc60c670d31993618d795d396b7", null ],
     [ "GetDrawingWidth", "classvrv_1_1_syl.html#a927dd56459671262c408f9ce1e9ae0e2", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_syl.html#af2c2e0b27b0bb05e8d3d7299ff44c4fe", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_syl.html#aabb5caf4c273b3cd080bb1e9be9b3b44", null ],
     [ "GetTimePointInterface", "classvrv_1_1_syl.html#a891927cbf0319f2be0957bb230e84028", null ],
     [ "GetTimePointInterface", "classvrv_1_1_syl.html#aa8ac540c33e3529794ddd8ff7363ad14", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_syl.html#abd66cfb9b670d003e9a3ca11bc33bdc2", null ],

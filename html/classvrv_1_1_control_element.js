@@ -13,5 +13,7 @@ var classvrv_1_1_control_element =
     [ "GetLayerPlace", "classvrv_1_1_control_element.html#a21757f229d95373c0d53c4ac94cdcaf2", null ],
     [ "GetLinkingInterface", "classvrv_1_1_control_element.html#aeb6ccac7f45774c4f7bb78f3b878eafd", null ],
     [ "GetLinkingInterface", "classvrv_1_1_control_element.html#a1ab03ccd8e1610d29508e9e0bb7bc7c5", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_control_element.html#add00a9d0685ae1ace5545a6165910d57", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_control_element.html#a8949957e6aa84b98666795d89ec4491f", null ],
     [ "Reset", "classvrv_1_1_control_element.html#ada5a97dab22c9ea6f7eff3dbfc4cd7ea", null ]
 ];

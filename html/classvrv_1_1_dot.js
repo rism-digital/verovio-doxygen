@@ -8,6 +8,8 @@ var classvrv_1_1_dot =
     [ "AcceptEnd", "classvrv_1_1_dot.html#a356da366ae3eedcba67ab82f48094dd7", null ],
     [ "Clone", "classvrv_1_1_dot.html#af02dc52ea7b62b411661617819f654b2", null ],
     [ "GetClassName", "classvrv_1_1_dot.html#a5238956c7fa43b8515e8e6bc583b6bec", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_dot.html#a495272de8111f4c92b8f9656e399788e", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_dot.html#ac6018865dea1e949b8f42f0f6437a304", null ],
     [ "GetPositionInterface", "classvrv_1_1_dot.html#ae141cbc449380118fb0a370536b40c68", null ],
     [ "GetPositionInterface", "classvrv_1_1_dot.html#a21645bd7a5998a54b69c4ebe061a6506", null ],
     [ "HasToBeAligned", "classvrv_1_1_dot.html#aed33dfbb9942927d9e935d656533c88b", null ],

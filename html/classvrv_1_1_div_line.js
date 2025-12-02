@@ -4,6 +4,8 @@ var classvrv_1_1_div_line =
     [ "~DivLine", "classvrv_1_1_div_line.html#aab81e7426912b758868d091bdd5af83b", null ],
     [ "Clone", "classvrv_1_1_div_line.html#a342f6154f1463c3a678b0ab9c6280b9b", null ],
     [ "GetClassName", "classvrv_1_1_div_line.html#a90e8f3570a99767e189d37c773205928", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_div_line.html#ace4ed7607e448a5e89c854b5419bd4bf", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_div_line.html#a120dc946de3cc61359528b206401edf2", null ],
     [ "GetSymbolStr", "classvrv_1_1_div_line.html#af88d2fc382036120b0f517279bf6d424", null ],
     [ "HasToBeAligned", "classvrv_1_1_div_line.html#aa2b7fb3fb064b28f009d790230c05e2c", null ],
     [ "Reset", "classvrv_1_1_div_line.html#a6526d1917a93071f999f7d34cca465c2", null ],

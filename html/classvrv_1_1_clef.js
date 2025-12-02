@@ -10,6 +10,8 @@ var classvrv_1_1_clef =
     [ "GetClassName", "classvrv_1_1_clef.html#a23a6a1a7b1a71bfc7920a6f19cbd248e", null ],
     [ "GetClefGlyph", "classvrv_1_1_clef.html#a372c41254f60ddb6d7a13b5336d0338d", null ],
     [ "GetClefLocOffset", "classvrv_1_1_clef.html#a3024936525419403269c083ac4332940", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_clef.html#a75ed21392872c8e5ab5f823d9ee06a49", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_clef.html#a92463dffebe67553609235b88b0efc9a", null ],
     [ "HasToBeAligned", "classvrv_1_1_clef.html#af8a09e042f0969d9264aec72059694df", null ],
     [ "IsScoreDefElement", "classvrv_1_1_clef.html#ac3d9be304c4eaf15f129a55771cbc30f", null ],
     [ "Reset", "classvrv_1_1_clef.html#a3122df9da14e30b7b0092930c2432330", null ]

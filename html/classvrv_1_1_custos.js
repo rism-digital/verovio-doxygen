@@ -9,6 +9,8 @@ var classvrv_1_1_custos =
     [ "Clone", "classvrv_1_1_custos.html#ad1b464b129fae013c6d18bea00917610", null ],
     [ "GetClassName", "classvrv_1_1_custos.html#aad3fba7ef3383aae40325c7ffad630f8", null ],
     [ "GetCustosGlyph", "classvrv_1_1_custos.html#a60b54266e09371986572a62560c7596d", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_custos.html#ac9ae8b4536cf3394881d3d4b34476218", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_custos.html#a18622d565ec8e15b8c5834ddc3f82a0f", null ],
     [ "GetPitchInterface", "classvrv_1_1_custos.html#a90dfd0fb598e68f2f39a7e96f618440e", null ],
     [ "GetPitchInterface", "classvrv_1_1_custos.html#a7c0e3a01af3e2a957993128301cc8f84", null ],
     [ "HasToBeAligned", "classvrv_1_1_custos.html#a6bfa3e27b29e13b40e346adb3dcbaacf", null ],

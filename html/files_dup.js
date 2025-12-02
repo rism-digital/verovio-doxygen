@@ -164,6 +164,7 @@ var files_dup =
     [ "num.h", "num_8h_source.html", null ],
     [ "object.h", "object_8h_source.html", null ],
     [ "octave.h", "octave_8h_source.html", null ],
+    [ "offsetinterface.h", "offsetinterface_8h_source.html", null ],
     [ "options.h", "options_8h_source.html", null ],
     [ "orig.h", "orig_8h_source.html", null ],
     [ "oriscus.h", "oriscus_8h_source.html", null ],

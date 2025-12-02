@@ -103,14 +103,13 @@ Inheritance diagram for vrv::Neume:</div>
  <div class="center">
   <img src="classvrv_1_1_neume.png" usemap="#vrv::Neume_map" alt=""/>
   <map id="vrv::Neume_map" name="vrv::Neume_map">
-<area href="classvrv_1_1_layer_element.html" title="This class is a base class for the Layer (&lt;layer&gt;) content." alt="vrv::LayerElement" shape="rect" coords="612,112,755,136"/>
-<area href="classvrv_1_1_object_list_interface.html" title="This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p..." alt="vrv::ObjectListInterface" shape="rect" coords="765,112,908,136"/>
-<area href="classvrv_1_1_object.html" title="This class represents a basic object." alt="vrv::Object" shape="rect" coords="0,56,143,80"/>
-<area href="classvrv_1_1_facsimile_interface.html" alt="vrv::FacsimileInterface" shape="rect" coords="229,56,372,80"/>
-<area href="classvrv_1_1_linking_interface.html" title="This class is an interface for elements having a link It is not an abstract class but should not be i..." alt="vrv::LinkingInterface" shape="rect" coords="535,56,678,80"/>
-<area href="classvrv_1_1_bounding_box.html" title="This class represents a basic object in the layout domain." alt="vrv::BoundingBox" shape="rect" coords="0,0,143,24"/>
-<area href="classvrv_1_1_interface.html" title="This is a base class for regrouping MEI att classes." alt="vrv::Interface" shape="rect" coords="153,0,296,24"/>
-<area href="classvrv_1_1_interface.html" title="This is a base class for regrouping MEI att classes." alt="vrv::Interface" shape="rect" coords="459,0,602,24"/>
+<area href="classvrv_1_1_layer_element.html" title="This class is a base class for the Layer (&lt;layer&gt;) content." alt="vrv::LayerElement" shape="rect" coords="0,336,143,360"/>
+<area href="classvrv_1_1_object_list_interface.html" title="This class is an pseudo interface for elements maintaining a flat list of children LayerElement for p..." alt="vrv::ObjectListInterface" shape="rect" coords="153,336,296,360"/>
+<area href="classvrv_1_1_offset_interface.html" title="This class is an interface for elements having a single visual offset, such as arpeg,..." alt="vrv::OffsetInterface" shape="rect" coords="306,336,449,360"/>
+<area href="classvrv_1_1_interface.html" title="This is a base class for regrouping MEI att classes." alt="vrv::Interface" shape="rect" coords="459,168,602,192"/>
+<area href="classvrv_1_1_linking_interface.html" title="This class is an interface for elements having a link It is not an abstract class but should not be i..." alt="vrv::LinkingInterface" shape="rect" coords="153,112,296,136"/>
+<area href="classvrv_1_1_facsimile_interface.html" alt="vrv::FacsimileInterface" shape="rect" coords="153,56,296,80"/>
+<area href="classvrv_1_1_object.html" title="This class represents a basic object." alt="vrv::Object" shape="rect" coords="153,0,296,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -158,6 +157,13 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Neume</b> ()</td>
 <tr class="memitem:a4eacfab5a67d84b51a798d2b2cc40df4"><td class="memItemLeft" align="right" valign="top"><a id="a4eacfab5a67d84b51a798d2b2cc40df4"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetClassName</b> () const override</td></tr>
 <tr class="separator:a4eacfab5a67d84b51a798d2b2cc40df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Getter to interfaces</div></td></tr>
+<tr class="memitem:a9593f0019be665af4432f28039eef395"><td class="memItemLeft" align="right" valign="top"><a id="a9593f0019be665af4432f28039eef395"></a>
+<a class="el" href="classvrv_1_1_offset_interface.html">OffsetInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetOffsetInterface</b> () override</td></tr>
+<tr class="separator:a9593f0019be665af4432f28039eef395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3766718dbd19eb4c5c38fb625e107bc9"><td class="memItemLeft" align="right" valign="top"><a id="a3766718dbd19eb4c5c38fb625e107bc9"></a>
+const <a class="el" href="classvrv_1_1_offset_interface.html">OffsetInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetOffsetInterface</b> () const override</td></tr>
+<tr class="separator:a3766718dbd19eb4c5c38fb625e107bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:ac3d887e793c86b1fecf68cbac352b20a"><td class="memItemLeft" align="right" valign="top"><a id="ac3d887e793c86b1fecf68cbac352b20a"></a>
 FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_neume.html#ac3d887e793c86b1fecf68cbac352b20a">Accept</a> (<a class="el" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) override</td></tr>
@@ -455,6 +461,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetClosingComment</b>
 <tr class="memitem:ab49442d7fde160052a5cfafd24f4ce6f inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="ab49442d7fde160052a5cfafd24f4ce6f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasClosingComment</b> () const</td></tr>
 <tr class="separator:ab49442d7fde160052a5cfafd24f4ce6f inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff440aa5d20256ffb2adf40b11fc53eb inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#aff440aa5d20256ffb2adf40b11fc53eb">GetDirectChild</a> (<a class="el" href="classvrv_1_1_object.html">Object</a> *parent, <a class="el" href="classvrv_1_1_object.html">Object</a> *descendant)</td></tr>
+<tr class="memdesc:aff440aa5d20256ffb2adf40b11fc53eb inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return reference to the object that is the ancestor of the indicated descendant object and that is a direct child of the indicated parent object.  <a href="classvrv_1_1_object.html#aff440aa5d20256ffb2adf40b11fc53eb">More...</a><br /></td></tr>
+<tr class="separator:aff440aa5d20256ffb2adf40b11fc53eb inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6613607b9361b6cc4d568ce189ba9c32 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">ArrayOfObjects &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a6613607b9361b6cc4d568ce189ba9c32">GetChildrenForModification</a> ()</td></tr>
 <tr class="memdesc:a6613607b9361b6cc4d568ce189ba9c32 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the children that allows modification.  <a href="classvrv_1_1_object.html#a6613607b9361b6cc4d568ce189ba9c32">More...</a><br /></td></tr>
 <tr class="separator:a6613607b9361b6cc4d568ce189ba9c32 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -655,6 +664,12 @@ virtual <a class="el" href="classvrv_1_1_duration_interface.html">DurationInterf
 <tr class="memitem:ae6f71e6b9dc583db08e6d90edbfc8f48 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="ae6f71e6b9dc583db08e6d90edbfc8f48"></a>
 virtual const <a class="el" href="classvrv_1_1_duration_interface.html">DurationInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDurationInterface</b> () const</td></tr>
 <tr class="separator:ae6f71e6b9dc583db08e6d90edbfc8f48 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff15f7c9c1e5d6ee5ccab0ca646b671 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="adff15f7c9c1e5d6ee5ccab0ca646b671"></a>
+virtual <a class="el" href="classvrv_1_1_offset_spanning_interface.html">OffsetSpanningInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetOffsetSpanningInterface</b> ()</td></tr>
+<tr class="separator:adff15f7c9c1e5d6ee5ccab0ca646b671 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf4cd09ab5190e9880a3ac2a0e3a6bd inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="afbf4cd09ab5190e9880a3ac2a0e3a6bd"></a>
+virtual const <a class="el" href="classvrv_1_1_offset_spanning_interface.html">OffsetSpanningInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetOffsetSpanningInterface</b> () const</td></tr>
+<tr class="separator:afbf4cd09ab5190e9880a3ac2a0e3a6bd inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aace2a15227fa3db1f20b5acbb7f2b4d2 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="aace2a15227fa3db1f20b5acbb7f2b4d2"></a>
 virtual <a class="el" href="classvrv_1_1_pitch_interface.html">PitchInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPitchInterface</b> ()</td></tr>
 <tr class="separator:aace2a15227fa3db1f20b5acbb7f2b4d2 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1288,6 +1303,22 @@ const <a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td c
 <tr class="memitem:abd3b0941c31c317f373be4561d281a84 inherit pub_methods_classvrv_1_1_object_list_interface"><td class="memItemLeft" align="right" valign="top"><a id="abd3b0941c31c317f373be4561d281a84"></a>
 <a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetListBack</b> ()</td></tr>
 <tr class="separator:abd3b0941c31c317f373be4561d281a84 inherit pub_methods_classvrv_1_1_object_list_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classvrv_1_1_offset_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_offset_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_offset_interface.html">vrv::OffsetInterface</a></td></tr>
+<tr class="memitem:acbd52b98b576dfe5c6650e0c1c14a3e8 inherit pub_methods_classvrv_1_1_offset_interface"><td class="memItemLeft" align="right" valign="top">FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_offset_interface.html#acbd52b98b576dfe5c6650e0c1c14a3e8">InterfaceResetData</a> (<a class="el" href="classvrv_1_1_reset_data_functor.html">ResetDataFunctor</a> &amp;functor, <a class="el" href="classvrv_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memdesc:acbd52b98b576dfe5c6650e0c1c14a3e8 inherit pub_methods_classvrv_1_1_offset_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">We have functor code in the interface for avoiding code duplication in each implementation class.  <a href="classvrv_1_1_offset_interface.html#acbd52b98b576dfe5c6650e0c1c14a3e8">More...</a><br /></td></tr>
+<tr class="separator:acbd52b98b576dfe5c6650e0c1c14a3e8 inherit pub_methods_classvrv_1_1_offset_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f56743196c4c92bcbc040c5a0b95e4 inherit pub_methods_classvrv_1_1_offset_interface"><td class="memItemLeft" align="right" valign="top"><a id="ad0f56743196c4c92bcbc040c5a0b95e4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>OffsetInterface</b> ()</td></tr>
+<tr class="separator:ad0f56743196c4c92bcbc040c5a0b95e4 inherit pub_methods_classvrv_1_1_offset_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a159a49862af6c4328ef9b4006bbfd0ff inherit pub_methods_classvrv_1_1_offset_interface"><td class="memItemLeft" align="right" valign="top"><a id="a159a49862af6c4328ef9b4006bbfd0ff"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~OffsetInterface</b> ()</td></tr>
+<tr class="separator:a159a49862af6c4328ef9b4006bbfd0ff inherit pub_methods_classvrv_1_1_offset_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51123a693ae77e2368999848926ae15a inherit pub_methods_classvrv_1_1_offset_interface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_offset_interface.html#a51123a693ae77e2368999848926ae15a">Reset</a> () override</td></tr>
+<tr class="memdesc:a51123a693ae77e2368999848926ae15a inherit pub_methods_classvrv_1_1_offset_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual reset method.  <a href="classvrv_1_1_offset_interface.html#a51123a693ae77e2368999848926ae15a">More...</a><br /></td></tr>
+<tr class="separator:a51123a693ae77e2368999848926ae15a inherit pub_methods_classvrv_1_1_offset_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4c0f588d145af69f01696d79656cbf inherit pub_methods_classvrv_1_1_offset_interface"><td class="memItemLeft" align="right" valign="top">InterfaceId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_offset_interface.html#a4b4c0f588d145af69f01696d79656cbf">IsInterface</a> () const override</td></tr>
+<tr class="memdesc:a4b4c0f588d145af69f01696d79656cbf inherit pub_methods_classvrv_1_1_offset_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method returning the InterfaceId of the interface.  <a href="classvrv_1_1_offset_interface.html#a4b4c0f588d145af69f01696d79656cbf">More...</a><br /></td></tr>
+<tr class="separator:a4b4c0f588d145af69f01696d79656cbf inherit pub_methods_classvrv_1_1_offset_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -1599,7 +1630,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_neume.html">Neume</a></li>
-    <li class="footer">Generated on Tue Sep 9 2025 09:45:17 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 2 2025 10:57:15 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

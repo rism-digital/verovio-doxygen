@@ -18,6 +18,8 @@ var classvrv_1_1_slur =
     [ "GetBoundaryLayer", "classvrv_1_1_slur.html#ac91b83f8f14d2227eb227763f7557cec", null ],
     [ "GetClassName", "classvrv_1_1_slur.html#a0a61fc1769b931320ae12a269fd6dfef", null ],
     [ "GetDrawingCurveDir", "classvrv_1_1_slur.html#aebc8bc19eb3cf4dc7c19df7aeb952f3b", null ],
+    [ "GetOffsetSpanningInterface", "classvrv_1_1_slur.html#a166db17c6f9d725a5e73e8ff2001aec3", null ],
+    [ "GetOffsetSpanningInterface", "classvrv_1_1_slur.html#af2816d4951520d774434de1256e9f011", null ],
     [ "GetTimePointInterface", "classvrv_1_1_slur.html#a245f41e219017a3089b4492f92d08cf1", null ],
     [ "GetTimePointInterface", "classvrv_1_1_slur.html#af4fa12654548c380dd0eb52f6c746c55", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_slur.html#aece63ca541d9f2dfe578c0e20d15b673", null ],

@@ -256,6 +256,9 @@ var hierarchy =
     [ "AttCurvatureDirection", null, [
       [ "vrv::Nc", "classvrv_1_1_nc.html", null ]
     ] ],
+    [ "AttCutout", null, [
+      [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ]
+    ] ],
     [ "AttDistances", null, [
       [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ],
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
@@ -292,7 +295,11 @@ var hierarchy =
       [ "vrv::Dynam", "classvrv_1_1_dynam.html", null ],
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
-      [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ]
+      [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ],
+      [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
+      [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
+      [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
+      [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
     ] ],
     [ "AttEndings", null, [
       [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ]
@@ -953,7 +960,40 @@ var hierarchy =
       [ "vrv::Staff", "classvrv_1_1_staff.html", null ],
       [ "vrv::Stem", "classvrv_1_1_stem.html", null ]
     ] ],
+    [ "AttVisualOffset2Ho", null, [
+      [ "vrv::OffsetSpanningInterface", "classvrv_1_1_offset_spanning_interface.html", [
+        [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
+        [ "vrv::Slur", "classvrv_1_1_slur.html", null ],
+        [ "vrv::Tie", "classvrv_1_1_tie.html", null ]
+      ] ]
+    ] ],
+    [ "AttVisualOffset2Vo", null, [
+      [ "vrv::OffsetSpanningInterface", "classvrv_1_1_offset_spanning_interface.html", null ]
+    ] ],
+    [ "AttVisualOffsetHo", null, [
+      [ "vrv::OffsetInterface", "classvrv_1_1_offset_interface.html", [
+        [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
+        [ "vrv::Artic", "classvrv_1_1_artic.html", null ],
+        [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
+        [ "vrv::ControlElement", "classvrv_1_1_control_element.html", null ],
+        [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
+        [ "vrv::DivLine", "classvrv_1_1_div_line.html", null ],
+        [ "vrv::Dot", "classvrv_1_1_dot.html", null ],
+        [ "vrv::HalfmRpt", "classvrv_1_1_halfm_rpt.html", null ],
+        [ "vrv::Liquescent", "classvrv_1_1_liquescent.html", null ],
+        [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
+        [ "vrv::Nc", "classvrv_1_1_nc.html", null ],
+        [ "vrv::Neume", "classvrv_1_1_neume.html", null ],
+        [ "vrv::Note", "classvrv_1_1_note.html", null ],
+        [ "vrv::Oriscus", "classvrv_1_1_oriscus.html", null ],
+        [ "vrv::Quilisma", "classvrv_1_1_quilisma.html", null ],
+        [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
+        [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
+        [ "vrv::TabGrp", "classvrv_1_1_tab_grp.html", null ]
+      ] ]
+    ] ],
     [ "AttVisualOffsetVo", null, [
+      [ "vrv::OffsetInterface", "classvrv_1_1_offset_interface.html", null ],
       [ "vrv::TabDurSym", "classvrv_1_1_tab_dur_sym.html", null ]
     ] ],
     [ "AttWhitespace", null, [
@@ -1246,6 +1286,8 @@ var hierarchy =
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ],
       [ "vrv::FacsimileInterface", "classvrv_1_1_facsimile_interface.html", null ],
       [ "vrv::LinkingInterface", "classvrv_1_1_linking_interface.html", null ],
+      [ "vrv::OffsetInterface", "classvrv_1_1_offset_interface.html", null ],
+      [ "vrv::OffsetSpanningInterface", "classvrv_1_1_offset_spanning_interface.html", null ],
       [ "vrv::PitchInterface", "classvrv_1_1_pitch_interface.html", null ],
       [ "vrv::PlistInterface", "classvrv_1_1_plist_interface.html", null ],
       [ "vrv::PositionInterface", "classvrv_1_1_position_interface.html", null ],

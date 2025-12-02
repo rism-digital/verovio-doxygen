@@ -11,6 +11,8 @@ var classvrv_1_1_tie =
     [ "CalculatePosition", "classvrv_1_1_tie.html#abb48e36013d0206558dc43d05975df2f", null ],
     [ "Clone", "classvrv_1_1_tie.html#a538f07744e778a68aaa0a796f6b614e7", null ],
     [ "GetClassName", "classvrv_1_1_tie.html#aba9d6af19636774abab7d33a0ccb22b2", null ],
+    [ "GetOffsetSpanningInterface", "classvrv_1_1_tie.html#a5255c03bda19c58d73884d27830ad2f3", null ],
+    [ "GetOffsetSpanningInterface", "classvrv_1_1_tie.html#a6d0e3e5e74ce900a6895f41ee19b1ae4", null ],
     [ "GetTimePointInterface", "classvrv_1_1_tie.html#a9b08452c4b14ce1685d1b410f9c8199c", null ],
     [ "GetTimePointInterface", "classvrv_1_1_tie.html#aa8e25b0f4a327cae2dbb70aa16ea2707", null ],
     [ "GetTimeSpanningInterface", "classvrv_1_1_tie.html#af63958a21766012a24ec0a1b37514a39", null ],

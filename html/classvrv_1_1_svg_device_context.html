@@ -108,6 +108,10 @@ Inheritance diagram for vrv::SvgDeviceContext:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab0a402361306d2957ab9be9ba2c24393"><td class="memItemLeft" align="right" valign="top"><a id="ab0a402361306d2957ab9be9ba2c24393"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_svg_device_context.html#ab0a402361306d2957ab9be9ba2c24393">ApplyOffset</a> () override</td></tr>
+<tr class="memdesc:ab0a402361306d2957ab9be9ba2c24393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate if offset should be applied. <br /></td></tr>
+<tr class="separator:ab0a402361306d2957ab9be9ba2c24393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae747f2e0c21d2d1d777e8c429a909649"><td class="memItemLeft" align="right" valign="top"><a id="ae747f2e0c21d2d1d777e8c429a909649"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_svg_device_context.html#ae747f2e0c21d2d1d777e8c429a909649">SetCustomGraphicColor</a> (const std::string &amp;color) override</td></tr>
 <tr class="memdesc:ae747f2e0c21d2d1d777e8c429a909649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for changing the color of a custom graphic. <br /></td></tr>
@@ -146,6 +150,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_svg_device_context.html#ae59f5620c868167fef4915c0dfe30618">SetSvgBoundingBoxes</a> (bool svgBoundingBoxes)</td></tr>
 <tr class="memdesc:ae59f5620c868167fef4915c0dfe30618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting m_svgBoudingBoxes flag (false by default) <br /></td></tr>
 <tr class="separator:ae59f5620c868167fef4915c0dfe30618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c297f45536115b38383cff255fa1c5a"><td class="memItemLeft" align="right" valign="top"><a id="a1c297f45536115b38383cff255fa1c5a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_svg_device_context.html#a1c297f45536115b38383cff255fa1c5a">SetSvgContentBoundingBoxes</a> (bool svgContentBoundingBoxes)</td></tr>
+<tr class="memdesc:a1c297f45536115b38383cff255fa1c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting m_svgContentBoundingBoxes flag (false by default) <br /></td></tr>
+<tr class="separator:a1c297f45536115b38383cff255fa1c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a257b967c96a5cb94022707269a92e2f4"><td class="memItemLeft" align="right" valign="top"><a id="a257b967c96a5cb94022707269a92e2f4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_svg_device_context.html#a257b967c96a5cb94022707269a92e2f4">SetSvgViewBox</a> (bool svgViewBox)</td></tr>
 <tr class="memdesc:a257b967c96a5cb94022707269a92e2f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting m_svgViewBox flag (false by default) <br /></td></tr>
@@ -400,9 +408,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>GetViewBoxFactor</b
 <tr class="memitem:aa42b811c364b8909e9804b3b4207f0c5 inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="aa42b811c364b8909e9804b3b4207f0c5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBrush</b> (float opacity, int color=COLOR_NONE)</td></tr>
 <tr class="separator:aa42b811c364b8909e9804b3b4207f0c5 inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fae71dedef742fa553528a290d99096 inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="a5fae71dedef742fa553528a290d99096"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPen</b> (int width, PenStyle style, int dashLength=0, int gapLength=0, LineCapStyle lineCap=LINECAP_DEFAULT, LineJoinStyle lineJoin=LINEJOIN_DEFAULT, float opacity=1.0, int color=COLOR_NONE)</td></tr>
-<tr class="separator:a5fae71dedef742fa553528a290d99096 inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e8321ff97b91bbc107794360d798db0 inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="a9e8321ff97b91bbc107794360d798db0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPen</b> (int width, PenStyle style, int dashLength=0, int gapLength=0, LineCapStyle lineCap=LINECAP_DEFAULT, LineJoinStyle lineJoin=LINEJOIN_DEFAULT, float opacity=-1.0, int color=COLOR_NONE)</td></tr>
+<tr class="separator:a9e8321ff97b91bbc107794360d798db0 inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1ca850cc42d7688a1a795194d6a65f9 inherit pub_methods_classvrv_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="aa1ca850cc42d7688a1a795194d6a65f9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFont</b> (<a class="el" href="classvrv_1_1_font_info.html">FontInfo</a> *font)</td></tr>
 <tr class="separator:aa1ca850cc42d7688a1a795194d6a65f9 inherit pub_methods_classvrv_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -515,7 +523,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_svg_device_context.html">SvgDeviceContext</a></li>
-    <li class="footer">Generated on Tue Sep 9 2025 09:45:18 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 2 2025 10:57:16 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

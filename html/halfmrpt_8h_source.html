@@ -100,58 +100,63 @@ $(document).ready(function(){initNavTree('halfmrpt_8h_source.html',''); initResi
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;atts_visual.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;beam.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;layerelement.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>vrv {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// HalfmRpt (half-measure repeat)</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classvrv_1_1_halfm_rpt.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_halfm_rpt.html">HalfmRpt</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>, <span class="keyword">public</span> AttColor {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classvrv_1_1_halfm_rpt.html">HalfmRpt</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_halfm_rpt.html">HalfmRpt</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classvrv_1_1_halfm_rpt.html#a577071397fc3a3e779e11a4de61aa7e5">   35</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_halfm_rpt.html#a577071397fc3a3e779e11a4de61aa7e5">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_halfm_rpt.html">HalfmRpt</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classvrv_1_1_halfm_rpt.html#aa2d38a04191488c9b03db43b502d25ce">   36</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_halfm_rpt.html#aa2d38a04191488c9b03db43b502d25ce">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;halfmRpt&quot;</span>; }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classvrv_1_1_halfm_rpt.html#a0dac55fb1d92bc2628c3a0ac6700aa1d">   41</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_halfm_rpt.html#a0dac55fb1d92bc2628c3a0ac6700aa1d">HasToBeAligned</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classvrv_1_1_halfm_rpt.html#aacae7d0ade306b8474d1430e15cde99a">   51</a></span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_halfm_rpt.html#aacae7d0ade306b8474d1430e15cde99a">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_halfm_rpt.html#aacae7d0ade306b8474d1430e15cde99a">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;offsetinterface.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>vrv {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// HalfmRpt (half-measure repeat)</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classvrv_1_1_halfm_rpt.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_halfm_rpt.html">HalfmRpt</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a>, <span class="keyword">public</span> <a class="code" href="classvrv_1_1_offset_interface.html">OffsetInterface</a>, <span class="keyword">public</span> AttColor {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classvrv_1_1_halfm_rpt.html">HalfmRpt</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_halfm_rpt.html">HalfmRpt</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classvrv_1_1_halfm_rpt.html#a577071397fc3a3e779e11a4de61aa7e5">   36</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_halfm_rpt.html#a577071397fc3a3e779e11a4de61aa7e5">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_halfm_rpt.html">HalfmRpt</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classvrv_1_1_halfm_rpt.html#aa2d38a04191488c9b03db43b502d25ce">   37</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_halfm_rpt.html#aa2d38a04191488c9b03db43b502d25ce">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;halfmRpt&quot;</span>; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classvrv_1_1_offset_interface.html">OffsetInterface</a> *GetOffsetInterface()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;OffsetInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">const</span> OffsetInterface *GetOffsetInterface()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> vrv_cast&lt;const OffsetInterface *&gt;(<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classvrv_1_1_halfm_rpt.html#a0dac55fb1d92bc2628c3a0ac6700aa1d">   50</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_halfm_rpt.html#a0dac55fb1d92bc2628c3a0ac6700aa1d">HasToBeAligned</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classvrv_1_1_halfm_rpt.html#aacae7d0ade306b8474d1430e15cde99a">   60</a></span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_halfm_rpt.html#aacae7d0ade306b8474d1430e15cde99a">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_halfm_rpt.html#aacae7d0ade306b8474d1430e15cde99a">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassvrv_1_1_const_functor_html"><div class="ttname"><a href="classvrv_1_1_const_functor.html">vrv::ConstFunctor</a></div><div class="ttdoc">This abstract class is the base class for all const functors.</div><div class="ttdef"><b>Definition:</b> functor.h:126</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_html"><div class="ttname"><a href="classvrv_1_1_functor.html">vrv::Functor</a></div><div class="ttdoc">This abstract class is the base class for all mutable functors.</div><div class="ttdef"><b>Definition:</b> functor.h:101</div></div>
-<div class="ttc" id="aclassvrv_1_1_halfm_rpt_html"><div class="ttname"><a href="classvrv_1_1_halfm_rpt.html">vrv::HalfmRpt</a></div><div class="ttdoc">This class models the MEI &lt;halfmRpt&gt; element.</div><div class="ttdef"><b>Definition:</b> halfmrpt.h:26</div></div>
-<div class="ttc" id="aclassvrv_1_1_halfm_rpt_html_a0dac55fb1d92bc2628c3a0ac6700aa1d"><div class="ttname"><a href="classvrv_1_1_halfm_rpt.html#a0dac55fb1d92bc2628c3a0ac6700aa1d">vrv::HalfmRpt::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> halfmrpt.h:41</div></div>
-<div class="ttc" id="aclassvrv_1_1_halfm_rpt_html_a577071397fc3a3e779e11a4de61aa7e5"><div class="ttname"><a href="classvrv_1_1_halfm_rpt.html#a577071397fc3a3e779e11a4de61aa7e5">vrv::HalfmRpt::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> halfmrpt.h:35</div></div>
+<div class="ttc" id="aclassvrv_1_1_halfm_rpt_html"><div class="ttname"><a href="classvrv_1_1_halfm_rpt.html">vrv::HalfmRpt</a></div><div class="ttdoc">This class models the MEI &lt;halfmRpt&gt; element.</div><div class="ttdef"><b>Definition:</b> halfmrpt.h:27</div></div>
+<div class="ttc" id="aclassvrv_1_1_halfm_rpt_html_a0dac55fb1d92bc2628c3a0ac6700aa1d"><div class="ttname"><a href="classvrv_1_1_halfm_rpt.html#a0dac55fb1d92bc2628c3a0ac6700aa1d">vrv::HalfmRpt::HasToBeAligned</a></div><div class="ttdeci">bool HasToBeAligned() const override</div><div class="ttdoc">Override the method since alignment is required.</div><div class="ttdef"><b>Definition:</b> halfmrpt.h:50</div></div>
+<div class="ttc" id="aclassvrv_1_1_halfm_rpt_html_a577071397fc3a3e779e11a4de61aa7e5"><div class="ttname"><a href="classvrv_1_1_halfm_rpt.html#a577071397fc3a3e779e11a4de61aa7e5">vrv::HalfmRpt::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> halfmrpt.h:36</div></div>
 <div class="ttc" id="aclassvrv_1_1_halfm_rpt_html_aa2d38a04191488c9b03db43b502d25ce"><div class="ttname"><a href="classvrv_1_1_halfm_rpt.html#aa2d38a04191488c9b03db43b502d25ce">vrv::HalfmRpt::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Virtual reset method.</div></div>
 <div class="ttc" id="aclassvrv_1_1_halfm_rpt_html_aacae7d0ade306b8474d1430e15cde99a"><div class="ttname"><a href="classvrv_1_1_halfm_rpt.html#aacae7d0ade306b8474d1430e15cde99a">vrv::HalfmRpt::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
 <div class="ttc" id="aclassvrv_1_1_layer_element_html"><div class="ttname"><a href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></div><div class="ttdoc">This class is a base class for the Layer (&lt;layer&gt;) content.</div><div class="ttdef"><b>Definition:</b> layerelement.h:51</div></div>
-<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:62</div></div>
+<div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:64</div></div>
+<div class="ttc" id="aclassvrv_1_1_offset_interface_html"><div class="ttname"><a href="classvrv_1_1_offset_interface.html">vrv::OffsetInterface</a></div><div class="ttdoc">This class is an interface for elements having a single visual offset, such as arpeg,...</div><div class="ttdef"><b>Definition:</b> offsetinterface.h:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>halfmrpt.h</b></li>
-    <li class="footer">Generated on Tue Sep 9 2025 09:45:15 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 2 2025 10:57:12 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -13,6 +13,8 @@ var classvrv_1_1_tab_grp =
     [ "GetClassName", "classvrv_1_1_tab_grp.html#a0c3377390a0ad28b2e2a0fc0cc10e98c", null ],
     [ "GetDurationInterface", "classvrv_1_1_tab_grp.html#accc1964b234ebbe58640f1a679797796", null ],
     [ "GetDurationInterface", "classvrv_1_1_tab_grp.html#a1aed8cc5fe4e59e8a9196b4d6463f952", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_tab_grp.html#a4eb4898183d2fa9fb776f21e4286ecc0", null ],
+    [ "GetOffsetInterface", "classvrv_1_1_tab_grp.html#a152ebc98d96c79c549738ed0bb8bc8ad", null ],
     [ "GetTopNote", "classvrv_1_1_tab_grp.html#af93f0a5fe85cacaf6ba6e1371097ca15", null ],
     [ "GetTopNote", "classvrv_1_1_tab_grp.html#a9cb0571c8748ed3ac06bddbd9a695746", null ],
     [ "GetYBottom", "classvrv_1_1_tab_grp.html#af44483acaf39692cdb84c7835d6666ac", null ],
