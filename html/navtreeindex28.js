@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"classvrv_1_1_text_drawing_params.html#a5559ee485fafc9f8d2afd7a2ea524084":[1,0,0,410,3],
 "classvrv_1_1_text_drawing_params.html#a572160298d4ba44a31fb053a51338b9f":[1,0,0,410,9],
 "classvrv_1_1_text_drawing_params.html#a69f55af21b9cd7fe7d26c406c875a8bb":[1,0,0,410,12],
 "classvrv_1_1_text_drawing_params.html#a6eeb3805750dd4cea472cf0c52beb81c":[1,0,0,410,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "classvrv_1_1_transpose_functor.html#a57f987d281efcb6837e15fb1b16cadab":[1,0,0,419,10],
 "classvrv_1_1_transpose_functor.html#a598e0d72621e18c4673a23211c7af3a1":[1,0,0,419,1],
 "classvrv_1_1_transpose_functor.html#a5af33f8cd822b5165051c5805ac2e694":[1,0,0,419,3],
-"classvrv_1_1_transpose_functor.html#a5e4537744bcd2ecca084edc100e4e7bc":[1,0,0,419,12],
-"classvrv_1_1_transpose_functor.html#a9b56768ac42ca27bea1ee6cd5b4394a2":[1,0,0,419,7]
+"classvrv_1_1_transpose_functor.html#a5e4537744bcd2ecca084edc100e4e7bc":[1,0,0,419,12]
 };

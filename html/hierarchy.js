@@ -296,8 +296,10 @@ var hierarchy =
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
       [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ],
+      [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
       [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
-      [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
+      [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
+      [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
     ] ],
     [ "AttEndings", null, [
       [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ]
