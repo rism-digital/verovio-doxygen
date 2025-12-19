@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tuning.h" line="83" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tuning.h" line="87" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_tuning_1a1cd87b889ab7ea52a3f5d8bba151a0e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tuning.h" line="84" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tuning.h" line="88" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_tuning_1a3e708ff35af878edc465acbe2be2bbc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tuning.h" line="85" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tuning.h" line="89" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_tuning_1a92b62f0a81febdd24c2d3f566370b67d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -154,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tuning.h" line="86" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tuning.h" line="90" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -177,10 +177,66 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/tuning.h" line="40" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_tuning_1ae8defaa2f0b4e9b4d70cd2f496390bcc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_tuning_1aeeb00152593a29cc5f107b3f2bb45b3e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
-        <definition>int vrv::Tuning::CalcPitchPos</definition>
-        <argsstring>(int course, data_NOTATIONTYPE notationType, int lines, int listSize, int index, int loc, int tabLine, int tabAnchorline, bool topAlign) const</argsstring>
+        <definition>int vrv::Tuning::CalcPitchNumber</definition>
+        <argsstring>(int course, int fret, data_NOTATIONTYPE notationType) const</argsstring>
+        <name>CalcPitchNumber</name>
+        <param>
+          <type>int</type>
+          <declname>course</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fret</declname>
+        </param>
+        <param>
+          <type>data_NOTATIONTYPE</type>
+          <declname>notationType</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the MIDI note number for course/fret. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">course</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The course number </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fret</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fret number </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">notationType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The notationType used to default tuning if not otherwise specified</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>MIDI note number </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tuning.h" line="51" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classvrv_1_1_tuning_1adec0afe66fbcc6fdb9d5cc0054b1e052" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int vrv::Tuning::CalcPitchPos</definition>
+        <argsstring>(int course, data_NOTATIONTYPE notationType, int lines, int listSize, int index, int loc, int tabLine, int tabAnchorline, bool topAlign)</argsstring>
         <name>CalcPitchPos</name>
         <param>
           <type>int</type>
@@ -302,61 +358,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tuning.h" line="61" column="9"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_tuning_1aeeb00152593a29cc5f107b3f2bb45b3e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int vrv::Tuning::CalcPitchNumber</definition>
-        <argsstring>(int course, int fret, data_NOTATIONTYPE notationType) const</argsstring>
-        <name>CalcPitchNumber</name>
-        <param>
-          <type>int</type>
-          <declname>course</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>fret</declname>
-        </param>
-        <param>
-          <type>data_NOTATIONTYPE</type>
-          <declname>notationType</declname>
-        </param>
-        <briefdescription>
-<para>Calculate the MIDI note number for course/fret. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername direction="in">course</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The course number </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername direction="in">fret</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The fret number </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername direction="in">notationType</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The notationType used to default tuning if not otherwise specified</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>MIDI note number </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/tuning.h" line="73" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/tuning.h" line="76" column="16"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -410,7 +412,7 @@
         <label>AttTuningLog</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/tuning.h" line="23" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/tuning.h" bodystart="23" bodyend="97"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/tuning.h" line="23" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/tuning.h" bodystart="23" bodyend="101"/>
     <listofallmembers>
       <member refid="classvrv_1_1_tuning_1a2121483a081f2f63777ca64542cb0207" prot="public" virt="virtual"><scope>vrv::Tuning</scope><name>Accept</name></member>
       <member refid="classvrv_1_1_tuning_1a1cd87b889ab7ea52a3f5d8bba151a0e9" prot="public" virt="virtual"><scope>vrv::Tuning</scope><name>Accept</name></member>
@@ -430,7 +432,7 @@
       <member refid="classvrv_1_1_bounding_box_1a8008673c300accccc6dd7f10a2f12d45" prot="public" virt="non-virtual"><scope>vrv::Tuning</scope><name>CalcDistance</name></member>
       <member refid="classvrv_1_1_bounding_box_1af5401bb6040fe859bf6b7dc09c3c35b8" prot="public" virt="non-virtual"><scope>vrv::Tuning</scope><name>CalcLinearInterpolation</name></member>
       <member refid="classvrv_1_1_tuning_1aeeb00152593a29cc5f107b3f2bb45b3e" prot="public" virt="non-virtual"><scope>vrv::Tuning</scope><name>CalcPitchNumber</name></member>
-      <member refid="classvrv_1_1_tuning_1ae8defaa2f0b4e9b4d70cd2f496390bcc" prot="public" virt="non-virtual"><scope>vrv::Tuning</scope><name>CalcPitchPos</name></member>
+      <member refid="classvrv_1_1_tuning_1adec0afe66fbcc6fdb9d5cc0054b1e052" prot="public" virt="non-virtual"><scope>vrv::Tuning</scope><name>CalcPitchPos</name></member>
       <member refid="classvrv_1_1_bounding_box_1acf2951ebea74c27b024916a4c96480a5" prot="public" virt="non-virtual"><scope>vrv::Tuning</scope><name>CalcPointAtBezier</name></member>
       <member refid="classvrv_1_1_bounding_box_1a80465f84c7190f8cb0a9765693376be2" prot="public" virt="non-virtual"><scope>vrv::Tuning</scope><name>CalcPositionAfterRotation</name></member>
       <member refid="classvrv_1_1_bounding_box_1a98f3d30610a0063965fcac7ec265ef27" prot="public" virt="non-virtual"><scope>vrv::Tuning</scope><name>CalcSlope</name></member>

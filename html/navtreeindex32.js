@@ -1,6 +1,5 @@
 var NAVTREEINDEX32 =
 {
-"structvrv_1_1_control_point_adjustment.html#aaf5604ef167ddc7c57013a421ebc12bd":[1,0,0,22,3],
 "structvrv_1_1_control_point_adjustment.html#aeba6d12ef7c0048f6e5759adce4ff302":[1,0,0,22,1],
 "structvrv_1_1_control_point_constraint.html":[1,0,0,21],
 "structvrv_1_1_control_point_constraint.html#a84f062ff2c159b679a6ac0d5356b919a":[1,0,0,21,0],
