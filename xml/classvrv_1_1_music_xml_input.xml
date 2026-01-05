@@ -1957,9 +1957,9 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="558" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="558" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a3df71381adfa40014c5368ecb4519ba5" prot="private" static="no" mutable="no">
-        <type>std::queue&lt; musicxml::ClefChange &gt;</type>
-        <definition>std::queue&lt;musicxml::ClefChange&gt; vrv::MusicXmlInput::m_clefChangeQueue</definition>
+      <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1ad9132f522f2653823af16471779ebe25" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; musicxml::ClefChange &gt;</type>
+        <definition>std::deque&lt;musicxml::ClefChange&gt; vrv::MusicXmlInput::m_clefChangeQueue</definition>
         <argsstring></argsstring>
         <name>m_clefChangeQueue</name>
         <briefdescription>
@@ -2008,6 +2008,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="566" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_music_xml_input_1a066aa61b5b13524dde8ef1c18846f3dc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vrv::MusicXmlInput::m_clefChanged</definition>
+        <argsstring></argsstring>
+        <name>m_clefChanged</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="568" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="568" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -2423,10 +2437,10 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="378" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1af444dbcd16ec5e8b54f45d54f87e581b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_music_xml_input_1a5e58818868c4c1a48e35636dc9f82a5e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::MusicXmlInput::FillSpace</definition>
-        <argsstring>(Layer *layer, int dur)</argsstring>
+        <argsstring>(Layer *layer, int dur, bool withClefs=false, int processed=0)</argsstring>
         <name>FillSpace</name>
         <param>
           <type><ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
@@ -2435,6 +2449,16 @@
         <param>
           <type>int</type>
           <declname>dur</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withClefs</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>processed</declname>
+          <defval>0</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -2732,7 +2756,7 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="194" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="194" bodyend="569"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" line="194" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h" bodystart="194" bodyend="571"/>
     <listofallmembers>
       <member refid="classvrv_1_1_music_xml_input_1a3831ba95070ce1c18cfc61d7bc588518" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>AddClefs</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a6a6477943252070a302ea05b36868242" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>AddLayerElement</name></member>
@@ -2764,7 +2788,7 @@
       <member refid="classvrv_1_1_music_xml_input_1a2858379b11eefe50c9da252ed1ffc43c" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ConvertTypeToDur</name></member>
       <member refid="classvrv_1_1_music_xml_input_1ad50411d9647128f6a5c19c6013f4fbbb" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ConvertTypeToVerovioText</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a9f1300a933b5b531234f0be02e0a8426" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>ConvertWordToBool</name></member>
-      <member refid="classvrv_1_1_music_xml_input_1af444dbcd16ec5e8b54f45d54f87e581b" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>FillSpace</name></member>
+      <member refid="classvrv_1_1_music_xml_input_1a5e58818868c4c1a48e35636dc9f82a5e" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>FillSpace</name></member>
       <member refid="classvrv_1_1_music_xml_input_1ae391b00d26d40fdc0c6b08e97d43f6ba" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>GenerateID</name></member>
       <member refid="classvrv_1_1_music_xml_input_1af50caaafd1ac0db931e9d1f872eb7a60" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>GetContent</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a100fea4bd408f879de6007423ec96b24" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>GetContentOfChild</name></member>
@@ -2789,7 +2813,8 @@
       <member refid="classvrv_1_1_music_xml_input_1a78aca75c51a3f824db94cf05486c6837" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>m_ArpeggioStack</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a0504466e0eccc212ba3d671279dc5f29" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>m_beamspanStack</name></member>
       <member refid="classvrv_1_1_music_xml_input_1ae81a21d760894ccf3806d0858f220ba1" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>m_bracketStack</name></member>
-      <member refid="classvrv_1_1_music_xml_input_1a3df71381adfa40014c5368ecb4519ba5" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>m_clefChangeQueue</name></member>
+      <member refid="classvrv_1_1_music_xml_input_1a066aa61b5b13524dde8ef1c18846f3dc" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>m_clefChanged</name></member>
+      <member refid="classvrv_1_1_music_xml_input_1ad9132f522f2653823af16471779ebe25" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>m_clefChangeQueue</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a4663eab885248d0cf41b975def917d3d" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>m_controlElements</name></member>
       <member refid="classvrv_1_1_music_xml_input_1a8b394f58058991608e3fa8eaf4b48f23" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>m_currentEndingStart</name></member>
       <member refid="classvrv_1_1_music_xml_input_1ad890a9ddc116e4c7cca65a6b4de66168" prot="private" virt="non-virtual"><scope>vrv::MusicXmlInput</scope><name>m_currentEndingStop</name></member>

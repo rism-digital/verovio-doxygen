@@ -437,7 +437,7 @@ $(document).ready(function(){initNavTree('iomusxml_8h_source.html',''); initResi
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="comment">     * @name Helper methods for filling in space elements</span></div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keywordtype">void</span> FillSpace(<a class="code" href="classvrv_1_1_layer.html">Layer</a> *layer, <span class="keywordtype">int</span> dur);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keywordtype">void</span> FillSpace(<a class="code" href="classvrv_1_1_layer.html">Layer</a> *layer, <span class="keywordtype">int</span> dur, <span class="keywordtype">bool</span> withClefs = <span class="keyword">false</span>, <span class="keywordtype">int</span> processed = 0);</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment">     * @name Helper method for generating additional IDs</span></div>
@@ -592,20 +592,22 @@ $(document).ready(function(){initNavTree('iomusxml_8h_source.html',''); initResi
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    std::vector&lt;std::pair&lt;std::string, ControlElement *&gt;&gt; m_controlElements;</div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    <span class="comment">/* stack of clef changes to be inserted to all layers of a given staff */</span></div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    std::queue&lt;musicxml::ClefChange&gt; m_clefChangeQueue;</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    std::deque&lt;musicxml::ClefChange&gt; m_clefChangeQueue;</div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    <span class="comment">/* stack of new arpeggios that get more notes added. */</span></div>
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    std::vector&lt;std::pair&lt;Arpeg *, musicxml::OpenArpeggio&gt;&gt; m_ArpeggioStack;</div>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    <span class="comment">/* a map for the measure counts storing the index of each measure created */</span></div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    std::map&lt;Measure *, int&gt; m_measureCounts;</div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="comment">/* measure rests */</span></div>
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    std::map&lt;int, int&gt; m_multiRests;</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160; </div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// NO_MUSICXML_SUPPORT</span></div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;};</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160; </div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    <span class="comment">/* A flag indicating we had a clef change */</span></div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    <span class="keywordtype">int</span> m_clefChanged = 0;</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160; </div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// NO_MUSICXML_SUPPORT</span></div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;};</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160; </div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __VRV_IOMUSXML_H__</span></div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160; </div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __VRV_IOMUSXML_H__</span></div>
 <div class="ttc" id="aclassvrv_1_1_clef_html"><div class="ttname"><a href="classvrv_1_1_clef.html">vrv::Clef</a></div><div class="ttdoc">This class models the MEI &lt;clef&gt; element.</div><div class="ttdef"><b>Definition:</b> clef.h:41</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:35</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:41</div></div>
@@ -634,7 +636,7 @@ $(document).ready(function(){initNavTree('iomusxml_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>iomusxml.h</b></li>
-    <li class="footer">Generated on Mon Jan 5 2026 10:21:42 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jan 5 2026 10:37:23 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

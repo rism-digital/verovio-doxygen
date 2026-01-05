@@ -641,7 +641,7 @@
 <codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="381"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@name<sp/>Helper<sp/>methods<sp/>for<sp/>filling<sp/>in<sp/>space<sp/>elements</highlight></codeline>
 <codeline lineno="382"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
-<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FillSpace(<ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref><sp/>*layer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dur);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FillSpace(<ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref><sp/>*layer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dur,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withClefs<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>processed<sp/>=<sp/>0);</highlight></codeline>
 <codeline lineno="386"><highlight class="normal"></highlight></codeline>
 <codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="388"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@name<sp/>Helper<sp/>method<sp/>for<sp/>generating<sp/>additional<sp/>IDs</highlight></codeline>
@@ -796,20 +796,22 @@
 <codeline lineno="557"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;std::string,<sp/>ControlElement<sp/>*&gt;&gt;<sp/>m_controlElements;</highlight></codeline>
 <codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>stack<sp/>of<sp/>clef<sp/>changes<sp/>to<sp/>be<sp/>inserted<sp/>to<sp/>all<sp/>layers<sp/>of<sp/>a<sp/>given<sp/>staff<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/>std::queue&lt;musicxml::ClefChange&gt;<sp/>m_clefChangeQueue;</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/>std::deque&lt;musicxml::ClefChange&gt;<sp/>m_clefChangeQueue;</highlight></codeline>
 <codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>stack<sp/>of<sp/>new<sp/>arpeggios<sp/>that<sp/>get<sp/>more<sp/>notes<sp/>added.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;Arpeg<sp/>*,<sp/>musicxml::OpenArpeggio&gt;&gt;<sp/>m_ArpeggioStack;</highlight></codeline>
 <codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>a<sp/>map<sp/>for<sp/>the<sp/>measure<sp/>counts<sp/>storing<sp/>the<sp/>index<sp/>of<sp/>each<sp/>measure<sp/>created<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;Measure<sp/>*,<sp/>int&gt;<sp/>m_measureCounts;</highlight></codeline>
 <codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>measure<sp/>rests<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;int,<sp/>int&gt;<sp/>m_multiRests;</highlight></codeline>
-<codeline lineno="567"><highlight class="normal"></highlight></codeline>
-<codeline lineno="568"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>NO_MUSICXML_SUPPORT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="569"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="570"><highlight class="normal"></highlight></codeline>
-<codeline lineno="571"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>A<sp/>flag<sp/>indicating<sp/>we<sp/>had<sp/>a<sp/>clef<sp/>change<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_clefChanged<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"></highlight></codeline>
+<codeline lineno="570"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>NO_MUSICXML_SUPPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="571"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="572"><highlight class="normal"></highlight></codeline>
-<codeline lineno="573"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__VRV_IOMUSXML_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="573"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="normal"></highlight></codeline>
+<codeline lineno="575"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__VRV_IOMUSXML_H__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/iomusxml.h"/>
   </compounddef>
