@@ -322,11 +322,15 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classvrv_1_1_system_1a9e1509d9845221f03101e6be160dd0f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_system_1a6238d32bd0afd4f5d9d4f93c7b0ecc42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
         <definition>Staff* vrv::System::GetTopVisibleStaff</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(bool includeOssia)</argsstring>
         <name>GetTopVisibleStaff</name>
+        <param>
+          <type>bool</type>
+          <declname>includeOssia</declname>
+        </param>
         <briefdescription>
 <para>Return the top (first) visible staff in the measure (if any). </para>
         </briefdescription>
@@ -337,11 +341,15 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/system.h" line="95" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_system_1a4537bedba57c93202f8defdd33985909" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_system_1a1779dd14da9707b78efda764cbd50390" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
         <definition>const Staff* vrv::System::GetTopVisibleStaff</definition>
-        <argsstring>() const</argsstring>
+        <argsstring>(bool includeOssia) const</argsstring>
         <name>GetTopVisibleStaff</name>
+        <param>
+          <type>bool</type>
+          <declname>includeOssia</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1023,6 +1031,8 @@
       <member refid="classvrv_1_1_bounding_box_1ae9a22cf5d306abb22ff5f557e81bd9af" prot="public" virt="non-virtual"><scope>vrv::System</scope><name>ApproximateBezierBoundingBox</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3901a5e4a728b8f3450cce0e30f4bd29" prot="public" virt="non-virtual"><scope>vrv::System</scope><name>ApproximateBezierExtrema</name></member>
       <member refid="classvrv_1_1_bounding_box_1aa466757865d8f747cbaaf232e3051177" prot="public" virt="non-virtual"><scope>vrv::System</scope><name>ArePointsClose</name></member>
+      <member refid="classvrv_1_1_object_1a9d6ab0b2d5e2e811845b0f4fa47f0fa7" prot="public" virt="virtual"><scope>vrv::System</scope><name>AttributesToExternal</name></member>
+      <member refid="classvrv_1_1_object_1a20faae47d0db79fc7de092565b019e9c" prot="public" virt="virtual"><scope>vrv::System</scope><name>AttributesToInternal</name></member>
       <member refid="classvrv_1_1_object_1aa63ca849b67044acc38f89a6030b03c2" prot="public" virt="non-virtual"><scope>vrv::System</scope><name>binaryComp</name></member>
       <member refid="classvrv_1_1_bounding_box_1a5601855899250709d9fa94f3c280aa72" prot="public" virt="non-virtual"><scope>vrv::System</scope><name>BoundingBox</name></member>
       <member refid="classvrv_1_1_bounding_box_1a91eb3e2ee9b00bc764283fe1710e199b" prot="public" virt="non-virtual"><scope>vrv::System</scope><name>CalcBezierAtPosition</name></member>
@@ -1071,7 +1081,7 @@
       <member refid="classvrv_1_1_object_1a323a71a1cb0b2a956e37c4e3da49a0fb" prot="public" virt="non-virtual"><scope>vrv::System</scope><name>GetAncestors</name></member>
       <member refid="classvrv_1_1_object_1a6cadd7a0feb1425165258e599090f9f9" prot="public" virt="virtual"><scope>vrv::System</scope><name>GetAreaPosInterface</name></member>
       <member refid="classvrv_1_1_object_1aa91dde17d5e02f9fb15441d175ec9ab1" prot="public" virt="virtual"><scope>vrv::System</scope><name>GetAreaPosInterface</name></member>
-      <member refid="classvrv_1_1_object_1aeb7e152a62704071901972bbfa06062c" prot="public" virt="non-virtual"><scope>vrv::System</scope><name>GetAttributes</name></member>
+      <member refid="classvrv_1_1_object_1af985fc595df04b36b8ff3e6b1e38b7c4" prot="public" virt="non-virtual"><scope>vrv::System</scope><name>GetAttributes</name></member>
       <member refid="classvrv_1_1_object_1a6d9d3ae387831fac891f903349348310" prot="public" virt="virtual"><scope>vrv::System</scope><name>GetBeamDrawingInterface</name></member>
       <member refid="classvrv_1_1_object_1ab136df3273e12a93e3699ae62e9d2514" prot="public" virt="virtual"><scope>vrv::System</scope><name>GetBeamDrawingInterface</name></member>
       <member refid="classvrv_1_1_bounding_box_1a3dbe5a481e20ab4d0d9fdd47708d1c2f" prot="public" virt="non-virtual"><scope>vrv::System</scope><name>GetBezierThicknessCoefficient</name></member>
@@ -1187,8 +1197,8 @@
       <member refid="classvrv_1_1_object_1a2ac1817c7492a51e6bb550f3002b32de" prot="public" virt="virtual"><scope>vrv::System</scope><name>GetTimeSpanningInterface</name></member>
       <member refid="classvrv_1_1_object_1a93ba097fdba73b383a5aee0771e484d7" prot="public" virt="virtual"><scope>vrv::System</scope><name>GetTimeSpanningInterface</name></member>
       <member refid="classvrv_1_1_bounding_box_1a9dae1c4940695c403ba67841512f94f3" prot="public" virt="non-virtual"><scope>vrv::System</scope><name>GetTopBy</name></member>
-      <member refid="classvrv_1_1_system_1a9e1509d9845221f03101e6be160dd0f3" prot="public" virt="non-virtual"><scope>vrv::System</scope><name>GetTopVisibleStaff</name></member>
-      <member refid="classvrv_1_1_system_1a4537bedba57c93202f8defdd33985909" prot="public" virt="non-virtual"><scope>vrv::System</scope><name>GetTopVisibleStaff</name></member>
+      <member refid="classvrv_1_1_system_1a6238d32bd0afd4f5d9d4f93c7b0ecc42" prot="public" virt="non-virtual"><scope>vrv::System</scope><name>GetTopVisibleStaff</name></member>
+      <member refid="classvrv_1_1_system_1a1779dd14da9707b78efda764cbd50390" prot="public" virt="non-virtual"><scope>vrv::System</scope><name>GetTopVisibleStaff</name></member>
       <member refid="classvrv_1_1_object_1a4edebc79c5a629520307e3dd5b0caed5" prot="public" virt="virtual"><scope>vrv::System</scope><name>GetVisibilityDrawingInterface</name></member>
       <member refid="classvrv_1_1_object_1a017bd1fd73bec2b656a1b9bb9e2a4491" prot="public" virt="virtual"><scope>vrv::System</scope><name>GetVisibilityDrawingInterface</name></member>
       <member refid="classvrv_1_1_bounding_box_1a6f1d1de5ac01ce1fe4cf43ed16b47e11" prot="public" virt="non-virtual"><scope>vrv::System</scope><name>GetX1By</name></member>

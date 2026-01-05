@@ -9,6 +9,7 @@ var classvrv_1_1_align_horizontally_functor =
     [ "VisitMeasure", "classvrv_1_1_align_horizontally_functor.html#ab2943a3702a12faba48b09dddfb2c29a", null ],
     [ "VisitMeasureEnd", "classvrv_1_1_align_horizontally_functor.html#a0b1d8c14654d8b5e7736abc9993cd585", null ],
     [ "VisitMeterSigGrp", "classvrv_1_1_align_horizontally_functor.html#a826bf269f3bc3113a86fc3ccc51c0c68", null ],
+    [ "VisitOssia", "classvrv_1_1_align_horizontally_functor.html#aa00781d67bc3bea3b5d52406ca2e6014", null ],
     [ "VisitSection", "classvrv_1_1_align_horizontally_functor.html#a0501635010ff9dd49c666004c258f06e", null ],
     [ "VisitStaff", "classvrv_1_1_align_horizontally_functor.html#ab6c982f0ce6d29d831cbaf448abe21a8", null ],
     [ "VisitSystem", "classvrv_1_1_align_horizontally_functor.html#a6be51db96736d73934064b701572d125", null ]

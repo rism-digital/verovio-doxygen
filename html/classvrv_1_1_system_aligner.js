@@ -5,6 +5,7 @@ var classvrv_1_1_system_aligner =
       [ "Staff", "classvrv_1_1_system_aligner.html#a024f36eb64e0d6adf31217b55ba72b8ea8f7f93630c366dc55aec88eb8e9640d0", null ],
       [ "Brace", "classvrv_1_1_system_aligner.html#a024f36eb64e0d6adf31217b55ba72b8ea7d55ac077f11ad55a67924103d450612", null ],
       [ "Bracket", "classvrv_1_1_system_aligner.html#a024f36eb64e0d6adf31217b55ba72b8eab5c644787d66a37b2d0e7eefaf11506b", null ],
+      [ "Ossia", "classvrv_1_1_system_aligner.html#a024f36eb64e0d6adf31217b55ba72b8eadfda9aa355d67f7db7f3d7e49ba585c1", null ],
       [ "None", "classvrv_1_1_system_aligner.html#a024f36eb64e0d6adf31217b55ba72b8ea6adf97f83acf6453d4a6a4b1070f3754", null ]
     ] ],
     [ "SystemAligner", "classvrv_1_1_system_aligner.html#a07b30ef18623217d3007616f18b341f6", null ],

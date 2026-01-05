@@ -10,6 +10,7 @@ var classvrv_1_1_layer =
     [ "CloneReset", "classvrv_1_1_layer.html#a9ec47a1c0b410a8c5a964560c1e0cd7a", null ],
     [ "DrawCautionKeySigCancel", "classvrv_1_1_layer.html#a4b87456367ee3f8df018532939334e85", null ],
     [ "DrawKeySigCancellation", "classvrv_1_1_layer.html#a1f78b3afb187a7617918d35bd204c01d", null ],
+    [ "DrawOssiaStaffDef", "classvrv_1_1_layer.html#adb28d1ff8343ac5d6f0824c3518e25ca", null ],
     [ "GetAtPos", "classvrv_1_1_layer.html#ae4ab5665285cd18a1784d83cf7fb41c5", null ],
     [ "GetAtPos", "classvrv_1_1_layer.html#a15309433305fa5b7343756bc5e4bca64", null ],
     [ "GetCautionStaffDefClef", "classvrv_1_1_layer.html#a7db376fca793628d68589e71ce3e0c09", null ],
@@ -37,6 +38,7 @@ var classvrv_1_1_layer =
     [ "GetCurrentMeterSig", "classvrv_1_1_layer.html#a99756b9aab949875a7230926736b4111", null ],
     [ "GetCurrentProport", "classvrv_1_1_layer.html#a24b7bdd675e8ef7b5958215c977c2e0d", null ],
     [ "GetCurrentProport", "classvrv_1_1_layer.html#a41132991880a035e5c047ec79801d011", null ],
+    [ "GetDrawingStaffDefValues", "classvrv_1_1_layer.html#ad7ab9a057870a927283d515c668645c2", null ],
     [ "GetDrawingStemDir", "classvrv_1_1_layer.html#af71aa62ee9cde4f16a1d2a504c8845c7", null ],
     [ "GetDrawingStemDir", "classvrv_1_1_layer.html#af31d2667e99331aef1ae8d477d117cec", null ],
     [ "GetDrawingStemDir", "classvrv_1_1_layer.html#a623ad5792f12b635fa48d5726163fd05", null ],
@@ -74,5 +76,6 @@ var classvrv_1_1_layer =
     [ "SetDrawingCautionValues", "classvrv_1_1_layer.html#a5adbee5370bec875186360c8721425cd", null ],
     [ "SetDrawingStaffDefValues", "classvrv_1_1_layer.html#a421c1c5be200da96251d817767f13f3d", null ],
     [ "SetDrawingStemDir", "classvrv_1_1_layer.html#a5dcc8411b2ec5d975c0fc1f32ce48d72", null ],
-    [ "SetDrawKeySigCancellation", "classvrv_1_1_layer.html#a6451d65100ffa53da3f46f173f3e98cf", null ]
+    [ "SetDrawKeySigCancellation", "classvrv_1_1_layer.html#a6451d65100ffa53da3f46f173f3e98cf", null ],
+    [ "SetDrawOssiaStaffDef", "classvrv_1_1_layer.html#a72e5daf7b6a44018809a3d3a007afd00", null ]
 ];
