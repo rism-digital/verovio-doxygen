@@ -6219,6 +6219,7 @@
     <member refid="classvrv_1_1_music_xml_input_1a36d0dc466de976a70e82dd28b3b2579d" kind="function"><name>ReadMusicXmlHarmony</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a6b22037cea47c1a24d75c1dc37516906" kind="function"><name>ReadMusicXmlNote</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a396019a3ffda20c80ca434f31da1cfeb" kind="function"><name>ReadMusicXmlPrint</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1aaa7cb73eaa6f4128383f2e54e060cef1" kind="function"><name>ReadMusicXmlSound</name></member>
     <member refid="classvrv_1_1_music_xml_input_1aa1ece3337e7822dd9ff5920bd823fa11" kind="function"><name>ReadMusicXmlBeamsAndTuplets</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a434f2cb69c8521e5c9fe843357ec9793" kind="function"><name>ReadMusicXmlTupletStart</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a93d4e8e72021a096f44db602516ec8c6" kind="function"><name>ReadMusicXmlBeamStart</name></member>
@@ -6231,7 +6232,8 @@
     <member refid="classvrv_1_1_music_xml_input_1a76401d3e75b506272e9c73ecf6d436fd" kind="function"><name>HasAttributeWithValue</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a6a6a01a263e0092c0b7a1630cf65da91" kind="function"><name>IsElement</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a9c345cec8d3675856c380ea0c9022379" kind="function"><name>HasContentWithValue</name></member>
-    <member refid="classvrv_1_1_music_xml_input_1aebd0b7762e1a59be36fcd276b6ed756f" kind="function"><name>NotInEndingStack</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1af9ac7d9955897073a5c8992c1d6147ef" kind="function"><name>MeasureInExistingSection</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1ad3f76f142c2e563e42b34d79c2f2b5bd" kind="function"><name>CreateExpansion</name></member>
     <member refid="classvrv_1_1_music_xml_input_1af50caaafd1ac0db931e9d1f872eb7a60" kind="function"><name>GetContent</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a100fea4bd408f879de6007423ec96b24" kind="function"><name>GetContentOfChild</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a870a6843d491c54711e53b7890c93e70" kind="function"><name>OpenTie</name></member>
@@ -6240,6 +6242,12 @@
     <member refid="classvrv_1_1_music_xml_input_1a9d8d969a3ed1124eec1cca6fe6f743c2" kind="function"><name>CloseSlur</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a1206dab9e83d936cbd0ed14787eed7d2" kind="function"><name>CloseBeamSpan</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a0f1edc6cfcb568fd2b430fc7a492bae8" kind="function"><name>MatchTies</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1af4533a1322673a39fd0b14414cf6baa3" kind="function"><name>GetWordsOrDynamicsText</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1af6f715e94a7b6af283630fa6cd660438" kind="function"><name>TextRendition</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a7c5b01443404c494ec846d9f3e48966f" kind="function"><name>StyleLabel</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a9fde4961d07a159bbc847f0008c94505" kind="function"><name>PrintMetronome</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a5e58818868c4c1a48e35636dc9f82a5e" kind="function"><name>FillSpace</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1ae391b00d26d40fdc0c6b08e97d43f6ba" kind="function"><name>GenerateID</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a1723e513370aff33bbd5a08be7ec7e14" kind="function"><name>GetMeterSigGrpValues</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a2511c4232cfe220a0829d566b6669abe" kind="function"><name>GetMrestMeasuresCountBeforeIndex</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a20364c116323dcab9e24858665df79e2" kind="function"><name>IsMultirestMeasure</name></member>
@@ -6301,9 +6309,11 @@
     <member refid="classvrv_1_1_music_xml_input_1a0504466e0eccc212ba3d671279dc5f29" kind="variable"><name>m_beamspanStack</name></member>
     <member refid="classvrv_1_1_music_xml_input_1ae81a21d760894ccf3806d0858f220ba1" kind="variable"><name>m_bracketStack</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a9488e25e70515cb064b889ae9a35ecc4" kind="variable"><name>m_trillStack</name></member>
-    <member refid="classvrv_1_1_music_xml_input_1a8b394f58058991608e3fa8eaf4b48f23" kind="variable"><name>m_currentEndingStart</name></member>
-    <member refid="classvrv_1_1_music_xml_input_1ad890a9ddc116e4c7cca65a6b4de66168" kind="variable"><name>m_currentEndingStop</name></member>
-    <member refid="classvrv_1_1_music_xml_input_1a905c022904e56d30fdbba8972f196900" kind="variable"><name>m_endingStack</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a360040187948ea63c43da9c91dbcf7e2" kind="variable"><name>m_sectionStart</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1ae41ab757fc78ec6ae756aa4a46ebb99d" kind="variable"><name>m_sectionStop</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a5cbb79a2ee06fbdbcae3e779c767faea" kind="variable"><name>m_jumpInfo</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1ad7baa8310f0ce93cde5f8c304be76747" kind="variable"><name>m_fineInfo</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a434fc5fed5698bdee04729cf6a4dfd73" kind="variable"><name>m_sections</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a43b065c93eb2c401cb781a69ff503dcb" kind="variable"><name>m_openDashesStack</name></member>
     <member refid="classvrv_1_1_music_xml_input_1ad649056fe80cda91233967e0a7f4c831" kind="variable"><name>m_dirStack</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a496d6f5300f269f61e07b6badbac31b5" kind="variable"><name>m_dynamStack</name></member>
@@ -6334,12 +6344,6 @@
     <member refid="classvrv_1_1_music_xml_input_1ace8326bce372093e12c51bb734e0cd98" kind="function"><name>SelectLayer</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a5fbe5273544a47af5f1d5ddddb3ed2c6" kind="function"><name>RemoveLastFromStack</name></member>
     <member refid="classvrv_1_1_music_xml_input_1ad0c5f2883148f310edb73a66b1488380" kind="function"><name>IsInStack</name></member>
-    <member refid="classvrv_1_1_music_xml_input_1af4533a1322673a39fd0b14414cf6baa3" kind="function"><name>GetWordsOrDynamicsText</name></member>
-    <member refid="classvrv_1_1_music_xml_input_1af6f715e94a7b6af283630fa6cd660438" kind="function"><name>TextRendition</name></member>
-    <member refid="classvrv_1_1_music_xml_input_1a7c5b01443404c494ec846d9f3e48966f" kind="function"><name>StyleLabel</name></member>
-    <member refid="classvrv_1_1_music_xml_input_1a9fde4961d07a159bbc847f0008c94505" kind="function"><name>PrintMetronome</name></member>
-    <member refid="classvrv_1_1_music_xml_input_1a5e58818868c4c1a48e35636dc9f82a5e" kind="function"><name>FillSpace</name></member>
-    <member refid="classvrv_1_1_music_xml_input_1ae391b00d26d40fdc0c6b08e97d43f6ba" kind="function"><name>GenerateID</name></member>
     <member refid="classvrv_1_1_music_xml_input_1ad1ceb17ed3209b61fbeaf046c808075a" kind="function"><name>CombineCurvedir</name></member>
   </compound>
   <compound refid="classvrv_1_1_nc" kind="class"><name>vrv::Nc</name>
@@ -7012,6 +7016,7 @@
     <member refid="classvrv_1_1_options_1a13f3eb429b22f8a683946fd452de830a" kind="variable"><name>m_condenseTempoPages</name></member>
     <member refid="classvrv_1_1_options_1a47a6b8323bcd89b41cfe0c105f4b2855" kind="variable"><name>m_evenNoteSpacing</name></member>
     <member refid="classvrv_1_1_options_1a8b723e65a35248961c4778eb630ede91" kind="variable"><name>m_expand</name></member>
+    <member refid="classvrv_1_1_options_1a948bde56c7e6b14ef7b9c3db7bba7345" kind="variable"><name>m_expandFirst</name></member>
     <member refid="classvrv_1_1_options_1a3f6b2b692977ecc6c6e30e50f704712e" kind="variable"><name>m_footer</name></member>
     <member refid="classvrv_1_1_options_1aa08a14710d2bb6bda9719aee5ceb721e" kind="variable"><name>m_header</name></member>
     <member refid="classvrv_1_1_options_1a2f7899685445e82ff96770b404cf8410" kind="variable"><name>m_humType</name></member>
