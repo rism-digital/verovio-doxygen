@@ -49,6 +49,7 @@ var classvrv_1_1_options =
     [ "m_evenNoteSpacing", "classvrv_1_1_options.html#a47a6b8323bcd89b41cfe0c105f4b2855", null ],
     [ "m_expand", "classvrv_1_1_options.html#a8b723e65a35248961c4778eb630ede91", null ],
     [ "m_expandFirst", "classvrv_1_1_options.html#a948bde56c7e6b14ef7b9c3db7bba7345", null ],
+    [ "m_expandGenerate", "classvrv_1_1_options.html#abed18700974aaf5982fb2dfe1c6138bf", null ],
     [ "m_extenderLineMinSpace", "classvrv_1_1_options.html#aa1eb522878a82945305811f632b9170a", null ],
     [ "m_fingeringScale", "classvrv_1_1_options.html#a9a57d4867ee3e463e348edb770fb26af", null ],
     [ "m_font", "classvrv_1_1_options.html#a02ded0c8e17a9eb4a2abaf311ca5603e", null ],

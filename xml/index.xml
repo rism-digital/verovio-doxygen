@@ -3053,16 +3053,22 @@
   <compound refid="classvrv_1_1_expansion_map" kind="class"><name>vrv::ExpansionMap</name>
     <member refid="classvrv_1_1_expansion_map_1a48218a031dc2da18b2494b057e52a676" kind="function"><name>ExpansionMap</name></member>
     <member refid="classvrv_1_1_expansion_map_1adbeb010af79d36ddf100ed10629e013a" kind="function"><name>~ExpansionMap</name></member>
+    <member refid="classvrv_1_1_expansion_map_1a3d47f542e98ba73e491a41ca7694422a" kind="function"><name>IsRepeatStart</name></member>
+    <member refid="classvrv_1_1_expansion_map_1a5c7189e6b91e344fc9244cd8282394c2" kind="function"><name>IsRepeatEnd</name></member>
+    <member refid="classvrv_1_1_expansion_map_1a27be81232b65375b6bca3e9f6b7b4e5c" kind="function"><name>IsNextRepeatStart</name></member>
+    <member refid="classvrv_1_1_expansion_map_1afbeec3efb91df3c060a8c23cd6fad7e9" kind="function"><name>IsPreviousRepeatEnd</name></member>
     <member refid="classvrv_1_1_expansion_map_1a4ce51ed5c4444cc8feb4e3dc83cdf40b" kind="variable"><name>m_map</name></member>
     <member refid="classvrv_1_1_expansion_map_1ab103d69c8250a1a4d7ce72bd42e23b46" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_expansion_map_1a9f6d987eb4632933ad16a516888830c2" kind="function"><name>HasExpansionMap</name></member>
     <member refid="classvrv_1_1_expansion_map_1a5eea66c66294e56b95a59e0e14108102" kind="function"><name>Expand</name></member>
     <member refid="classvrv_1_1_expansion_map_1aaeb9194a90c849af2db967c53138a19b" kind="function"><name>GetExpansionIDsForElement</name></member>
     <member refid="classvrv_1_1_expansion_map_1a51f1783fd2dc369d2629a1c089cfd077" kind="function"><name>ToJson</name></member>
+    <member refid="classvrv_1_1_expansion_map_1a15670782c4a452fedf027c9375996ed3" kind="function"><name>GenerateExpansionFor</name></member>
     <member refid="classvrv_1_1_expansion_map_1a63c5f6ba04897a9c7103cc82f962bf71" kind="function"><name>UpdateIDs</name></member>
     <member refid="classvrv_1_1_expansion_map_1a467c25024343ff885106b784747c61b8" kind="function"><name>GetIDList</name></member>
     <member refid="classvrv_1_1_expansion_map_1a6e07abf7630c0c3a768f5bae6ff179bc" kind="function"><name>GeneratePredictableIDs</name></member>
     <member refid="classvrv_1_1_expansion_map_1a6c4bef207ca48a1077626074056be10f" kind="function"><name>AddExpandedIDToExpansionMap</name></member>
+    <member refid="classvrv_1_1_expansion_map_1a9fc6e7baedbce8a672b5332c9f3f700a" kind="function"><name>CreateSection</name></member>
   </compound>
   <compound refid="classvrv_1_1_f" kind="class"><name>vrv::F</name>
     <member refid="classvrv_1_1_f_1ad0a7577e9c093b9a3c7d2c2a2fb17d5b" kind="function"><name>F</name></member>
@@ -6271,6 +6277,7 @@
     <member refid="classvrv_1_1_music_xml_input_1a978f8ec1281a4820300215672d3a3a7a" kind="function"><name>InferCurvedir</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a865d89f94fe45219364e7bef94414e3b" kind="function"><name>ConvertFermataShape</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a9104f53db17fabcb5036c5593afd3344" kind="function"><name>ConvertPedalTypeToDir</name></member>
+    <member refid="classvrv_1_1_music_xml_input_1a4cd13f5dd4297547b98ae3e12e6591d9" kind="function"><name>ConvertJumpType</name></member>
     <member refid="classvrv_1_1_music_xml_input_1a6ea5938027ad28bb016ef12693075d09" kind="function"><name>ConvertTupletNumberValue</name></member>
     <member refid="classvrv_1_1_music_xml_input_1ad50411d9647128f6a5c19c6013f4fbbb" kind="function"><name>ConvertTypeToVerovioText</name></member>
     <member refid="classvrv_1_1_music_xml_input_1ab1f724ca533564462038616e06b30361" kind="function"><name>ConvertAlterToSymbol</name></member>
@@ -7015,8 +7022,6 @@
     <member refid="classvrv_1_1_options_1af1d9d4177bc006d8ef52395090e679ce" kind="variable"><name>m_condenseNotLastSystem</name></member>
     <member refid="classvrv_1_1_options_1a13f3eb429b22f8a683946fd452de830a" kind="variable"><name>m_condenseTempoPages</name></member>
     <member refid="classvrv_1_1_options_1a47a6b8323bcd89b41cfe0c105f4b2855" kind="variable"><name>m_evenNoteSpacing</name></member>
-    <member refid="classvrv_1_1_options_1a8b723e65a35248961c4778eb630ede91" kind="variable"><name>m_expand</name></member>
-    <member refid="classvrv_1_1_options_1a948bde56c7e6b14ef7b9c3db7bba7345" kind="variable"><name>m_expandFirst</name></member>
     <member refid="classvrv_1_1_options_1a3f6b2b692977ecc6c6e30e50f704712e" kind="variable"><name>m_footer</name></member>
     <member refid="classvrv_1_1_options_1aa08a14710d2bb6bda9719aee5ceb721e" kind="variable"><name>m_header</name></member>
     <member refid="classvrv_1_1_options_1a2f7899685445e82ff96770b404cf8410" kind="variable"><name>m_humType</name></member>
@@ -7148,6 +7153,9 @@
     <member refid="classvrv_1_1_options_1ad197649417d09e309b4e38f26fa8c21a" kind="variable"><name>m_selectors</name></member>
     <member refid="classvrv_1_1_options_1a1c542c27c270b7daff4b7f56e6f38eaa" kind="variable"><name>m_appXPathQuery</name></member>
     <member refid="classvrv_1_1_options_1a3b9c987a4dcdf48c94e242f5f46c77ff" kind="variable"><name>m_choiceXPathQuery</name></member>
+    <member refid="classvrv_1_1_options_1a8b723e65a35248961c4778eb630ede91" kind="variable"><name>m_expand</name></member>
+    <member refid="classvrv_1_1_options_1a948bde56c7e6b14ef7b9c3db7bba7345" kind="variable"><name>m_expandFirst</name></member>
+    <member refid="classvrv_1_1_options_1abed18700974aaf5982fb2dfe1c6138bf" kind="variable"><name>m_expandGenerate</name></member>
     <member refid="classvrv_1_1_options_1a19c2b0f189a3b2930750b26240ae0b20" kind="variable"><name>m_loadSelectedMdivOnly</name></member>
     <member refid="classvrv_1_1_options_1a8f6a55752ffe6a852c93c67794d5fc35" kind="variable"><name>m_mdivAll</name></member>
     <member refid="classvrv_1_1_options_1ac94939b1b904c41073c45d33a4dbea7f" kind="variable"><name>m_mdivXPathQuery</name></member>
