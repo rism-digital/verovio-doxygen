@@ -273,9 +273,9 @@ $(document).ready(function(){initNavTree('toolkit_8h_source.html',''); initResiz
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160; </div>
 <div class="line"><a name="l00715"></a><span class="lineno"><a class="line" href="group__nodoc.html#gae5a104614acc4edf6794abe71d027210">  715</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group__nodoc.html#gae5a104614acc4edf6794abe71d027210">ClearHumdrumBuffer</a>();</div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160; </div>
-<div class="line"><a name="l00724"></a><span class="lineno"><a class="line" href="group__nodoc.html#gac0b9bfca70ab200ca3e313611e37cc20">  724</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__nodoc.html#gac0b9bfca70ab200ca3e313611e37cc20">GetInputFrom</a>() { <span class="keywordflow">return</span> m_inputFrom; }</div>
+<div class="line"><a name="l00724"></a><span class="lineno"><a class="line" href="group__nodoc.html#ga92b5b63c8184f79a52d5d34764377979">  724</a></span>&#160;    FileFormat <a class="code" href="group__nodoc.html#ga92b5b63c8184f79a52d5d34764377979">GetInputFrom</a>() { <span class="keywordflow">return</span> m_options-&gt;GetInputFrom(); }</div>
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160; </div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    <span class="keywordtype">int</span> GetOutputTo() { <span class="keywordflow">return</span> m_outputTo; }</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    FileFormat GetOutputTo() { <span class="keywordflow">return</span> m_options-&gt;GetOutputTo(); }</div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160; </div>
 <div class="line"><a name="l00735"></a><span class="lineno"><a class="line" href="group__nodoc.html#ga80b1e5c4211c1f7972d55cf2e4cd6c16">  735</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="group__nodoc.html#ga80b1e5c4211c1f7972d55cf2e4cd6c16">SetLocale</a>();</div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    <span class="keywordtype">void</span> ResetLocale();</div>
@@ -299,59 +299,62 @@ $(document).ready(function(){initNavTree('toolkit_8h_source.html',''); initResiz
 <div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160; </div>
 <div class="line"><a name="l00783"></a><span class="lineno"><a class="line" href="classvrv_1_1_toolkit.html#af03d8520c77603ed893203b0fa5a8821">  783</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_toolkit.html#af03d8520c77603ed893203b0fa5a8821">LoadData</a>(<span class="keyword">const</span> std::string &amp;data, <span class="keywordtype">bool</span> resetLogBuffer);</div>
 <div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160; </div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;    <span class="keywordtype">bool</span> SetFont(<span class="keyword">const</span> std::string &amp;fontName);</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    <span class="keywordtype">bool</span> IsUTF16(<span class="keyword">const</span> std::string &amp;filename);</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    <span class="keywordtype">bool</span> LoadUTF16File(<span class="keyword">const</span> std::string &amp;filename);</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    <span class="keywordtype">bool</span> IsZip(<span class="keyword">const</span> std::string &amp;filename);</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;    <span class="keywordtype">bool</span> LoadZipFile(<span class="keyword">const</span> std::string &amp;filename);</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    <span class="keywordtype">bool</span> LoadZipData(<span class="keyword">const</span> std::vector&lt;unsigned char&gt; &amp;bytes);</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    <span class="keywordtype">void</span> GetClassIds(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;classStrings, std::vector&lt;ClassId&gt; &amp;classIds);</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160; </div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;    std::string <a class="code" href="classvrv_1_1_toolkit.html#a44f1dbad7f6b6f24a9717ab32294be8a">GetOptions</a>(<span class="keywordtype">bool</span> defaultValues) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160; </div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    <span class="keywordtype">void</span> SetViewAndEditor();</div>
+<div class="line"><a name="l00788"></a><span class="lineno"><a class="line" href="classvrv_1_1_toolkit.html#aca51300ccd6adbd2dd3d039b678e340d">  788</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_toolkit.html#aca51300ccd6adbd2dd3d039b678e340d">ResetMidiDoc</a>();</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160; </div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    <span class="keywordtype">bool</span> SetFont(<span class="keyword">const</span> std::string &amp;fontName);</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    <span class="keywordtype">bool</span> IsUTF16(<span class="keyword">const</span> std::string &amp;filename);</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;    <span class="keywordtype">bool</span> LoadUTF16File(<span class="keyword">const</span> std::string &amp;filename);</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    <span class="keywordtype">bool</span> IsZip(<span class="keyword">const</span> std::string &amp;filename);</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    <span class="keywordtype">bool</span> LoadZipFile(<span class="keyword">const</span> std::string &amp;filename);</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;    <span class="keywordtype">bool</span> LoadZipData(<span class="keyword">const</span> std::vector&lt;unsigned char&gt; &amp;bytes);</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;    <span class="keywordtype">void</span> GetClassIds(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;classStrings, std::vector&lt;ClassId&gt; &amp;classIds);</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160; </div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    std::string <a class="code" href="classvrv_1_1_toolkit.html#a44f1dbad7f6b6f24a9717ab32294be8a">GetOptions</a>(<span class="keywordtype">bool</span> defaultValues) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160; </div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    <a class="code" href="classvrv_1_1_doc.html">Doc</a> m_doc;</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;    <a class="code" href="classvrv_1_1_doc_selection.html">DocSelection</a> m_docSelection;</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;    <a class="code" href="classvrv_1_1_view.html">View</a> m_view;</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;    FileFormat m_inputFrom;</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;    FileFormat m_outputTo;</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160; </div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    <a class="code" href="classvrv_1_1_options.html">Options</a> *m_options;</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    <span class="keywordtype">void</span> SetViewAndEditor();</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160; </div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    <span class="keywordtype">void</span> SetMidiDoc();</div>
 <div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160; </div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    std::optional&lt;std::locale&gt; m_previousLocale;</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160; </div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    <span class="keywordtype">char</span> *m_cString;</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160; </div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    std::stringstream m_cerrCaptured;</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160; </div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;    std::streambuf *m_cerrOriginalBuf;</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160; </div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;    <a class="code" href="classvrv_1_1_editor_toolkit.html">EditorToolkit</a> *m_editorToolkit;</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160; </div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;<span class="preprocessor">#ifndef NO_RUNTIME</span></div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    <a class="code" href="classvrv_1_1_runtime_clock.html">RuntimeClock</a> *m_runtimeClock;</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160; </div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;    <span class="comment">// Static members //</span></div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160; </div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">char</span> *m_humdrumBuffer;</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;};</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160; </div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;    <a class="code" href="classvrv_1_1_doc.html">Doc</a> m_doc;</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    <a class="code" href="classvrv_1_1_doc_selection.html">DocSelection</a> m_docSelection;</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    <a class="code" href="classvrv_1_1_view.html">View</a> m_view;</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    <a class="code" href="classvrv_1_1_doc.html">Doc</a> *m_midiDoc;</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160; </div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    <a class="code" href="classvrv_1_1_options.html">Options</a> *m_options;</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160; </div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    std::optional&lt;std::locale&gt; m_previousLocale;</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160; </div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    <span class="keywordtype">char</span> *m_cString;</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160; </div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    std::stringstream m_cerrCaptured;</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160; </div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;    std::streambuf *m_cerrOriginalBuf;</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160; </div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;    <a class="code" href="classvrv_1_1_editor_toolkit.html">EditorToolkit</a> *m_editorToolkit;</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160; </div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;<span class="preprocessor">#ifndef NO_RUNTIME</span></div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    <a class="code" href="classvrv_1_1_runtime_clock.html">RuntimeClock</a> *m_runtimeClock;</div>
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160; </div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;    <span class="comment">// Static members //</span></div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160; </div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">char</span> *m_humdrumBuffer;</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;};</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160; </div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassvrv_1_1_device_context_html"><div class="ttname"><a href="classvrv_1_1_device_context.html">vrv::DeviceContext</a></div><div class="ttdoc">This class is an abstract device context.</div><div class="ttdef"><b>Definition:</b> devicecontext.h:57</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:41</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_selection_html"><div class="ttname"><a href="classvrv_1_1_doc_selection.html">vrv::DocSelection</a></div><div class="ttdoc">This class stores a document selection.</div><div class="ttdef"><b>Definition:</b> docselection.h:24</div></div>
 <div class="ttc" id="aclassvrv_1_1_editor_toolkit_html"><div class="ttname"><a href="classvrv_1_1_editor_toolkit.html">vrv::EditorToolkit</a></div><div class="ttdef"><b>Definition:</b> editortoolkit.h:28</div></div>
-<div class="ttc" id="aclassvrv_1_1_option_html"><div class="ttname"><a href="classvrv_1_1_option.html">vrv::Option</a></div><div class="ttdoc">This class is a base class of each styling parameter.</div><div class="ttdef"><b>Definition:</b> options.h:100</div></div>
-<div class="ttc" id="aclassvrv_1_1_options_html"><div class="ttname"><a href="classvrv_1_1_options.html">vrv::Options</a></div><div class="ttdoc">This class contains the document styling parameters.</div><div class="ttdef"><b>Definition:</b> options.h:576</div></div>
+<div class="ttc" id="aclassvrv_1_1_option_html"><div class="ttname"><a href="classvrv_1_1_option.html">vrv::Option</a></div><div class="ttdoc">This class is a base class of each styling parameter.</div><div class="ttdef"><b>Definition:</b> options.h:101</div></div>
+<div class="ttc" id="aclassvrv_1_1_options_html"><div class="ttname"><a href="classvrv_1_1_options.html">vrv::Options</a></div><div class="ttdoc">This class contains the document styling parameters.</div><div class="ttdef"><b>Definition:</b> options.h:577</div></div>
 <div class="ttc" id="aclassvrv_1_1_runtime_clock_html"><div class="ttname"><a href="classvrv_1_1_runtime_clock.html">vrv::RuntimeClock</a></div><div class="ttdoc">This class represents a clock to measure runtime.</div><div class="ttdef"><b>Definition:</b> runtimeclock.h:26</div></div>
 <div class="ttc" id="aclassvrv_1_1_toolkit_html"><div class="ttname"><a href="classvrv_1_1_toolkit.html">vrv::Toolkit</a></div><div class="ttdef"><b>Definition:</b> toolkit.h:35</div></div>
 <div class="ttc" id="aclassvrv_1_1_toolkit_html_a00a6268261b17ac90ba802ea9780e2df"><div class="ttname"><a href="classvrv_1_1_toolkit.html#a00a6268261b17ac90ba802ea9780e2df">vrv::Toolkit::ValidatePAEFile</a></div><div class="ttdeci">std::string ValidatePAEFile(const std::string &amp;filename)</div><div class="ttdoc">Validate the Plaine &amp; Easie code from a file.</div></div>
@@ -402,6 +405,7 @@ $(document).ready(function(){initNavTree('toolkit_8h_source.html',''); initResiz
 <div class="ttc" id="aclassvrv_1_1_toolkit_html_ab9ba4f30abf5a45944e83926efad3294"><div class="ttname"><a href="classvrv_1_1_toolkit.html#ab9ba4f30abf5a45944e83926efad3294">vrv::Toolkit::PrintOptionUsageOutput</a></div><div class="ttdeci">void PrintOptionUsageOutput(const vrv::Option *option, std::ostream &amp;output) const</div><div class="ttdoc">Print formatted option usage for specific option to output stream.</div></div>
 <div class="ttc" id="aclassvrv_1_1_toolkit_html_abbe738f9285b31845ea71cb322d9a581"><div class="ttname"><a href="classvrv_1_1_toolkit.html#abbe738f9285b31845ea71cb322d9a581">vrv::Toolkit::SetInputFrom</a></div><div class="ttdeci">bool SetInputFrom(std::string const &amp;inputFrom)</div><div class="ttdoc">Set the input from option.</div></div>
 <div class="ttc" id="aclassvrv_1_1_toolkit_html_abf4167617faed8347a7da3291e927e05"><div class="ttname"><a href="classvrv_1_1_toolkit.html#abf4167617faed8347a7da3291e927e05">vrv::Toolkit::LoadZipDataBuffer</a></div><div class="ttdeci">bool LoadZipDataBuffer(const unsigned char *data, int length)</div><div class="ttdoc">Load a MusicXML compressed file passed as a buffer of bytes.</div></div>
+<div class="ttc" id="aclassvrv_1_1_toolkit_html_aca51300ccd6adbd2dd3d039b678e340d"><div class="ttname"><a href="classvrv_1_1_toolkit.html#aca51300ccd6adbd2dd3d039b678e340d">vrv::Toolkit::ResetMidiDoc</a></div><div class="ttdeci">void ResetMidiDoc()</div><div class="ttdoc">Reset the Doc pointer used for MIDI / Timemap rendering.</div></div>
 <div class="ttc" id="aclassvrv_1_1_toolkit_html_acbd4bf8bb87e10aa286034d8fe204469"><div class="ttname"><a href="classvrv_1_1_toolkit.html#acbd4bf8bb87e10aa286034d8fe204469">vrv::Toolkit::GetExpansionIdsForElement</a></div><div class="ttdeci">std::string GetExpansionIdsForElement(const std::string &amp;xmlId)</div><div class="ttdoc">Return a vector of ID strings of all elements (the notated and the expanded) for a given element.</div></div>
 <div class="ttc" id="aclassvrv_1_1_toolkit_html_acd2477cdd946bbc98936c00347ddf3af"><div class="ttname"><a href="classvrv_1_1_toolkit.html#acd2477cdd946bbc98936c00347ddf3af">vrv::Toolkit::RedoLayout</a></div><div class="ttdeci">void RedoLayout(const std::string &amp;jsonOptions=&quot;&quot;)</div><div class="ttdoc">Redo the layout of the loaded data.</div></div>
 <div class="ttc" id="aclassvrv_1_1_toolkit_html_acd94a639c138408298c34bb41562ee6a"><div class="ttname"><a href="classvrv_1_1_toolkit.html#acd94a639c138408298c34bb41562ee6a">vrv::Toolkit::Select</a></div><div class="ttdeci">bool Select(const std::string &amp;selection)</div><div class="ttdoc">Set the value for a selection.</div></div>
@@ -425,9 +429,9 @@ $(document).ready(function(){initNavTree('toolkit_8h_source.html',''); initResiz
 <div class="ttc" id="agroup__nodoc_html_ga60b58e56aa730d920b18901d1b4d6a9a"><div class="ttname"><a href="group__nodoc.html#ga60b58e56aa730d920b18901d1b4d6a9a">vrv::Toolkit::GetOptionsObj</a></div><div class="ttdeci">Options * GetOptionsObj()</div><div class="ttdoc">Return the Options object of the Toolkit instance.</div><div class="ttdef"><b>Definition:</b> toolkit.h:669</div></div>
 <div class="ttc" id="agroup__nodoc_html_ga7d77de8b102acd2f07f0fa23270f82a5"><div class="ttname"><a href="group__nodoc.html#ga7d77de8b102acd2f07f0fa23270f82a5">vrv::Toolkit::SetCString</a></div><div class="ttdeci">void SetCString(const std::string &amp;data)</div><div class="ttdoc">Copy the data to the cstring internal buffer.</div></div>
 <div class="ttc" id="agroup__nodoc_html_ga80b1e5c4211c1f7972d55cf2e4cd6c16"><div class="ttname"><a href="group__nodoc.html#ga80b1e5c4211c1f7972d55cf2e4cd6c16">vrv::Toolkit::SetLocale</a></div><div class="ttdeci">void SetLocale()</div><div class="ttdoc">Setting the global locale.</div></div>
+<div class="ttc" id="agroup__nodoc_html_ga92b5b63c8184f79a52d5d34764377979"><div class="ttname"><a href="group__nodoc.html#ga92b5b63c8184f79a52d5d34764377979">vrv::Toolkit::GetInputFrom</a></div><div class="ttdeci">FileFormat GetInputFrom()</div><div class="ttdoc">Get the input format.</div><div class="ttdef"><b>Definition:</b> toolkit.h:724</div></div>
 <div class="ttc" id="agroup__nodoc_html_ga942ab5856517907ea4f2082d9f35f532"><div class="ttname"><a href="group__nodoc.html#ga942ab5856517907ea4f2082d9f35f532">vrv::Toolkit::GetHumdrum</a></div><div class="ttdeci">void GetHumdrum(std::ostream &amp;output)</div><div class="ttdoc">Write the Humdrum buffer to the outputstream.</div></div>
 <div class="ttc" id="agroup__nodoc_html_gaa6f27919ec3642d4da89408f8143f51d"><div class="ttname"><a href="group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d">vrv::Toolkit::RenderToDeviceContext</a></div><div class="ttdeci">bool RenderToDeviceContext(int pageNo, DeviceContext *deviceContext)</div><div class="ttdoc">Render the page to the deviceContext.</div></div>
-<div class="ttc" id="agroup__nodoc_html_gac0b9bfca70ab200ca3e313611e37cc20"><div class="ttname"><a href="group__nodoc.html#gac0b9bfca70ab200ca3e313611e37cc20">vrv::Toolkit::GetInputFrom</a></div><div class="ttdeci">int GetInputFrom()</div><div class="ttdoc">Get the input format.</div><div class="ttdef"><b>Definition:</b> toolkit.h:724</div></div>
 <div class="ttc" id="agroup__nodoc_html_gae5a104614acc4edf6794abe71d027210"><div class="ttname"><a href="group__nodoc.html#gae5a104614acc4edf6794abe71d027210">vrv::Toolkit::ClearHumdrumBuffer</a></div><div class="ttdeci">void ClearHumdrumBuffer()</div><div class="ttdoc">Clear the Humdrum buffer of any contents.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -435,7 +439,7 @@ $(document).ready(function(){initNavTree('toolkit_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>toolkit.h</b></li>
-    <li class="footer">Generated on Fri Jan 23 2026 10:46:38 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jan 26 2026 13:40:04 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

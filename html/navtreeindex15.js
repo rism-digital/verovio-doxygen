@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"classvrv_1_1_init_onset_offset_functor.html#afc4a81cb0254a14d1e48e03f7d5108c0":[1,0,0,259,2],
+"classvrv_1_1_init_onset_offset_functor.html#afdb70a507380d190bf302619672e8825":[1,0,0,259,0],
 "classvrv_1_1_init_processing_lists_functor.html":[1,0,0,272],
 "classvrv_1_1_init_processing_lists_functor.html#a23af8f9dc2b11bf26ee9e40bd5d8b51d":[1,0,0,272,3],
 "classvrv_1_1_init_processing_lists_functor.html#a3610befe3414d830b2ded202352ed9f3":[1,0,0,272,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "classvrv_1_1_layer_def.html#adc1ab933172d26f8bbf5b129ed178b22":[1,0,0,246,5],
 "classvrv_1_1_layer_def.html#ade2652799b9e2d808a9a25d231dcac29":[1,0,0,246,6],
 "classvrv_1_1_layer_element.html":[1,0,0,247],
-"classvrv_1_1_layer_element.html#a0587b46544f84d658158e7e521e6ae45":[1,0,0,247,39],
-"classvrv_1_1_layer_element.html#a0a488dfa6fbdb4f93ec9b1ca95850010":[1,0,0,247,58],
-"classvrv_1_1_layer_element.html#a0ed3a40420a298b9cea1d354bbbd1f9d":[1,0,0,247,15]
+"classvrv_1_1_layer_element.html#a0587b46544f84d658158e7e521e6ae45":[1,0,0,247,39]
 };

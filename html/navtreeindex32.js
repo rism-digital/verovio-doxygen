@@ -1,5 +1,16 @@
 var NAVTREEINDEX32 =
 {
+"iomusxml_8h_source.html":[2,0,126],
+"iopae_8h_source.html":[2,0,127],
+"iovolpiano_8h_source.html":[2,0,128],
+"justifyfunctor_8h_source.html":[2,0,129],
+"keyaccid_8h_source.html":[2,0,130],
+"keysig_8h_source.html":[2,0,131],
+"label_8h_source.html":[2,0,132],
+"labelabbr_8h_source.html":[2,0,133],
+"layer_8h_source.html":[2,0,134],
+"layerdef_8h_source.html":[2,0,135],
+"layerelement_8h_source.html":[2,0,136],
 "lb_8h_source.html":[2,0,137],
 "lem_8h_source.html":[2,0,138],
 "libmei_8h_source.html":[2,0,139],

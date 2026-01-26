@@ -8,6 +8,8 @@ var classvrv_1_1_multi_rest =
     [ "AcceptEnd", "classvrv_1_1_multi_rest.html#a57401ce502490b972fa75ec7b0d4b79a", null ],
     [ "Clone", "classvrv_1_1_multi_rest.html#a4d678547521a0a3f19f30a3bff644010", null ],
     [ "GetClassName", "classvrv_1_1_multi_rest.html#abaef53580d04bbdb350f3fe6ee18a1bf", null ],
+    [ "GetPositionInterface", "classvrv_1_1_multi_rest.html#aaaeb2923bdb4d19ee3829d73a6562550", null ],
+    [ "GetPositionInterface", "classvrv_1_1_multi_rest.html#ad2738ad5663af0a44c25a341515357a6", null ],
     [ "Reset", "classvrv_1_1_multi_rest.html#a9134659bfa9bd5a244a2b39551f3beea", null ],
     [ "UseBlockStyle", "classvrv_1_1_multi_rest.html#a6373ae6443b859e81d2acd04aa549cc7", null ]
 ];

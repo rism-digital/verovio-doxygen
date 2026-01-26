@@ -4,7 +4,7 @@ var group__nodoc =
     [ "GetCString", "group__nodoc.html#ga409f7f6411678f02d7bc9a73be29c7d6", null ],
     [ "GetHumdrum", "group__nodoc.html#ga942ab5856517907ea4f2082d9f35f532", null ],
     [ "GetHumdrumBuffer", "group__nodoc.html#ga11e13d1850cadf28b00a85fde655e133", null ],
-    [ "GetInputFrom", "group__nodoc.html#gac0b9bfca70ab200ca3e313611e37cc20", null ],
+    [ "GetInputFrom", "group__nodoc.html#ga92b5b63c8184f79a52d5d34764377979", null ],
     [ "GetOptionsObj", "group__nodoc.html#ga60b58e56aa730d920b18901d1b4d6a9a", null ],
     [ "InitClock", "group__nodoc.html#ga3eb22488f8037f75c5d950271e0d9ad3", null ],
     [ "RenderToDeviceContext", "group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d", null ],

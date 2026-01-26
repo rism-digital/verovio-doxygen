@@ -53,12 +53,14 @@ var NAVTREEINDEX9 =
 "classvrv_1_1_expansion_map.html":[1,0,0,163],
 "classvrv_1_1_expansion_map.html#a15670782c4a452fedf027c9375996ed3":[1,0,0,163,3],
 "classvrv_1_1_expansion_map.html#a48218a031dc2da18b2494b057e52a676":[1,0,0,163,0],
-"classvrv_1_1_expansion_map.html#a4ce51ed5c4444cc8feb4e3dc83cdf40b":[1,0,0,163,8],
-"classvrv_1_1_expansion_map.html#a51f1783fd2dc369d2629a1c089cfd077":[1,0,0,163,7],
+"classvrv_1_1_expansion_map.html#a4ce51ed5c4444cc8feb4e3dc83cdf40b":[1,0,0,163,10],
+"classvrv_1_1_expansion_map.html#a51f1783fd2dc369d2629a1c089cfd077":[1,0,0,163,9],
 "classvrv_1_1_expansion_map.html#a5eea66c66294e56b95a59e0e14108102":[1,0,0,163,2],
 "classvrv_1_1_expansion_map.html#a9f6d987eb4632933ad16a516888830c2":[1,0,0,163,5],
 "classvrv_1_1_expansion_map.html#aaeb9194a90c849af2db967c53138a19b":[1,0,0,163,4],
-"classvrv_1_1_expansion_map.html#ab103d69c8250a1a4d7ce72bd42e23b46":[1,0,0,163,6],
+"classvrv_1_1_expansion_map.html#ab103d69c8250a1a4d7ce72bd42e23b46":[1,0,0,163,7],
+"classvrv_1_1_expansion_map.html#ac525b8dafc88b11e46a86c96b2e70539":[1,0,0,163,6],
+"classvrv_1_1_expansion_map.html#ad4b087be3070dab13854559608f55199":[1,0,0,163,8],
 "classvrv_1_1_expansion_map.html#adbeb010af79d36ddf100ed10629e013a":[1,0,0,163,1],
 "classvrv_1_1_f.html":[1,0,0,164],
 "classvrv_1_1_f.html#a14b926eef3b019468a6201c696c57d94":[1,0,0,164,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "classvrv_1_1_find_extreme_by_comparison_functor.html#adb92988e667cdbd0a0ca4950b0579771":[1,0,0,181,4],
 "classvrv_1_1_find_next_child_by_comparison_functor.html":[1,0,0,179],
 "classvrv_1_1_find_next_child_by_comparison_functor.html#a2bd41fd09988619707c7927575d55a92":[1,0,0,179,2],
-"classvrv_1_1_find_next_child_by_comparison_functor.html#a5b337dbb3f0289935b8ecd0811f56ff4":[1,0,0,179,1],
-"classvrv_1_1_find_next_child_by_comparison_functor.html#a67e0baef341a71d7d9efeb01ff9f8390":[1,0,0,179,3],
-"classvrv_1_1_find_next_child_by_comparison_functor.html#a80579697b5131a9f26c7f239207196eb":[1,0,0,179,0]
+"classvrv_1_1_find_next_child_by_comparison_functor.html#a5b337dbb3f0289935b8ecd0811f56ff4":[1,0,0,179,1]
 };

@@ -3053,11 +3053,14 @@
   <compound refid="classvrv_1_1_expansion_map" kind="class"><name>vrv::ExpansionMap</name>
     <member refid="classvrv_1_1_expansion_map_1a48218a031dc2da18b2494b057e52a676" kind="function"><name>ExpansionMap</name></member>
     <member refid="classvrv_1_1_expansion_map_1adbeb010af79d36ddf100ed10629e013a" kind="function"><name>~ExpansionMap</name></member>
+    <member refid="classvrv_1_1_expansion_map_1ad4b087be3070dab13854559608f55199" kind="function"><name>SetProcessed</name></member>
+    <member refid="classvrv_1_1_expansion_map_1ac525b8dafc88b11e46a86c96b2e70539" kind="function"><name>IsProcessed</name></member>
     <member refid="classvrv_1_1_expansion_map_1a3d47f542e98ba73e491a41ca7694422a" kind="function"><name>IsRepeatStart</name></member>
     <member refid="classvrv_1_1_expansion_map_1a5c7189e6b91e344fc9244cd8282394c2" kind="function"><name>IsRepeatEnd</name></member>
     <member refid="classvrv_1_1_expansion_map_1a27be81232b65375b6bca3e9f6b7b4e5c" kind="function"><name>IsNextRepeatStart</name></member>
     <member refid="classvrv_1_1_expansion_map_1afbeec3efb91df3c060a8c23cd6fad7e9" kind="function"><name>IsPreviousRepeatEnd</name></member>
     <member refid="classvrv_1_1_expansion_map_1a4ce51ed5c4444cc8feb4e3dc83cdf40b" kind="variable"><name>m_map</name></member>
+    <member refid="classvrv_1_1_expansion_map_1a2f7bf861914e769dc74e5d02ce6ce566" kind="variable"><name>m_isProcessed</name></member>
     <member refid="classvrv_1_1_expansion_map_1ab103d69c8250a1a4d7ce72bd42e23b46" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_expansion_map_1a9f6d987eb4632933ad16a516888830c2" kind="function"><name>HasExpansionMap</name></member>
     <member refid="classvrv_1_1_expansion_map_1a5eea66c66294e56b95a59e0e14108102" kind="function"><name>Expand</name></member>
@@ -6196,6 +6199,8 @@
     <member refid="classvrv_1_1_multi_rest_1a4d678547521a0a3f19f30a3bff644010" kind="function"><name>Clone</name></member>
     <member refid="classvrv_1_1_multi_rest_1a9134659bfa9bd5a244a2b39551f3beea" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_multi_rest_1abaef53580d04bbdb350f3fe6ee18a1bf" kind="function"><name>GetClassName</name></member>
+    <member refid="classvrv_1_1_multi_rest_1ad2738ad5663af0a44c25a341515357a6" kind="function"><name>GetPositionInterface</name></member>
+    <member refid="classvrv_1_1_multi_rest_1aaaeb2923bdb4d19ee3829d73a6562550" kind="function"><name>GetPositionInterface</name></member>
     <member refid="classvrv_1_1_multi_rest_1ae4d635d9300c1a94669ecef175bbf737" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_multi_rest_1aee9f016ee46b4550bc3aabf886d73c7e" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_multi_rest_1a57401ce502490b972fa75ec7b0d4b79a" kind="function"><name>AcceptEnd</name></member>
@@ -7012,6 +7017,8 @@
     <member refid="classvrv_1_1_options_1a6625ce2ef1f927acc8cf3918d37d2037" kind="variable"><name>m_outputTo</name></member>
     <member refid="classvrv_1_1_options_1ab840cdbceb6ad9f3e0e700e0f8a6ed6f" kind="variable"><name>m_version</name></member>
     <member refid="classvrv_1_1_options_1adf74318d2408d579508ac0c54b90cd62" kind="variable"><name>m_xmlIdSeed</name></member>
+    <member refid="classvrv_1_1_options_1a63ac398e658ff95c7b4b8fc9ba352bf3" kind="variable"><name>m_inputFromFormat</name></member>
+    <member refid="classvrv_1_1_options_1a3c0d08488253432a8c1bd045717ef822" kind="variable"><name>m_outputToFormat</name></member>
     <member refid="classvrv_1_1_options_1a39af9494b89df90199d208bd5bd0d73c" kind="variable"><name>m_general</name></member>
     <member refid="classvrv_1_1_options_1a735a57989544427597a3861dbfb1d342" kind="variable"><name>m_adjustPageHeight</name></member>
     <member refid="classvrv_1_1_options_1a9079f2d91e591e1803a88ad21b80abdf" kind="variable"><name>m_adjustPageWidth</name></member>
@@ -7154,8 +7161,8 @@
     <member refid="classvrv_1_1_options_1a1c542c27c270b7daff4b7f56e6f38eaa" kind="variable"><name>m_appXPathQuery</name></member>
     <member refid="classvrv_1_1_options_1a3b9c987a4dcdf48c94e242f5f46c77ff" kind="variable"><name>m_choiceXPathQuery</name></member>
     <member refid="classvrv_1_1_options_1a8b723e65a35248961c4778eb630ede91" kind="variable"><name>m_expand</name></member>
-    <member refid="classvrv_1_1_options_1a948bde56c7e6b14ef7b9c3db7bba7345" kind="variable"><name>m_expandFirst</name></member>
-    <member refid="classvrv_1_1_options_1abed18700974aaf5982fb2dfe1c6138bf" kind="variable"><name>m_expandGenerate</name></member>
+    <member refid="classvrv_1_1_options_1adc559d0244ad8a3c10c499572cfcc902" kind="variable"><name>m_expandAlways</name></member>
+    <member refid="classvrv_1_1_options_1a23d973edb15d53043bf82aff7b7db2d0" kind="variable"><name>m_expandNever</name></member>
     <member refid="classvrv_1_1_options_1a19c2b0f189a3b2930750b26240ae0b20" kind="variable"><name>m_loadSelectedMdivOnly</name></member>
     <member refid="classvrv_1_1_options_1a8f6a55752ffe6a852c93c67794d5fc35" kind="variable"><name>m_mdivAll</name></member>
     <member refid="classvrv_1_1_options_1ac94939b1b904c41073c45d33a4dbea7f" kind="variable"><name>m_mdivXPathQuery</name></member>
@@ -7230,6 +7237,10 @@
     <member refid="classvrv_1_1_options_1ab1792a43850eb5d6bee9a18a23597e93" kind="function"><name>~Options</name></member>
     <member refid="classvrv_1_1_options_1ab44b3ef50863dbef676f0989a15cef20" kind="function"><name>Options</name></member>
     <member refid="classvrv_1_1_options_1a74dc71b87ede438281effef92b0565ab" kind="function"><name>operator=</name></member>
+    <member refid="classvrv_1_1_options_1a348dd55e7b3670ae15d7c21faea4b825" kind="function"><name>SetInputFrom</name></member>
+    <member refid="classvrv_1_1_options_1a3fed51a17818cd451e023d0c2f9ecb32" kind="function"><name>SetOutputTo</name></member>
+    <member refid="classvrv_1_1_options_1a0ce0ec33a89d9dcf444296e0db30b475" kind="function"><name>GetInputFrom</name></member>
+    <member refid="classvrv_1_1_options_1a77ee8daca97a0f2c9c109346a93a1038" kind="function"><name>GetOutputTo</name></member>
     <member refid="classvrv_1_1_options_1af6975fbacba7a01a6dd9b3d2bd10b49e" kind="function"><name>GetItems</name></member>
     <member refid="classvrv_1_1_options_1a58163db68452eebb70060ba56049940b" kind="function"><name>GetGrps</name></member>
     <member refid="classvrv_1_1_options_1afe6da1534d915f47eeab6724901777ff" kind="function"><name>GetBaseOptGrp</name></member>
@@ -9878,8 +9889,8 @@
     <member refid="group__nodoc_1ga5ae3fb587d96567263bfebc1261ff4d9" kind="function"><name>SetHumdrumBuffer</name></member>
     <member refid="group__nodoc_1ga11e13d1850cadf28b00a85fde655e133" kind="function"><name>GetHumdrumBuffer</name></member>
     <member refid="group__nodoc_1gae5a104614acc4edf6794abe71d027210" kind="function"><name>ClearHumdrumBuffer</name></member>
-    <member refid="group__nodoc_1gac0b9bfca70ab200ca3e313611e37cc20" kind="function"><name>GetInputFrom</name></member>
-    <member refid="group__nodoc_1ga602e2e1f79bb73affe064cb9ba7a4f5a" kind="function"><name>GetOutputTo</name></member>
+    <member refid="group__nodoc_1ga92b5b63c8184f79a52d5d34764377979" kind="function"><name>GetInputFrom</name></member>
+    <member refid="group__nodoc_1ga48014e7f933b9b68a49d62aec16ff862" kind="function"><name>GetOutputTo</name></member>
     <member refid="group__nodoc_1ga80b1e5c4211c1f7972d55cf2e4cd6c16" kind="function"><name>SetLocale</name></member>
     <member refid="group__nodoc_1ga028fa93d6698315a5f04ab96160a6a62" kind="function"><name>ResetLocale</name></member>
     <member refid="group__nodoc_1ga3eb22488f8037f75c5d950271e0d9ad3" kind="function"><name>InitClock</name></member>
@@ -9889,8 +9900,7 @@
     <member refid="classvrv_1_1_toolkit_1a5e0a77331e07aefa6f9471a1bc34f185" kind="variable"><name>m_doc</name></member>
     <member refid="classvrv_1_1_toolkit_1a308a98315c470e7f7466c8c5e9439911" kind="variable"><name>m_docSelection</name></member>
     <member refid="classvrv_1_1_toolkit_1a41a694f23fc26f10b27c56dccf0cec68" kind="variable"><name>m_view</name></member>
-    <member refid="classvrv_1_1_toolkit_1a4c0d66ae08c2a5e24af9e0ac137f3433" kind="variable"><name>m_inputFrom</name></member>
-    <member refid="classvrv_1_1_toolkit_1ab3948b7bb4d42e1a2770a0701ee01dc2" kind="variable"><name>m_outputTo</name></member>
+    <member refid="classvrv_1_1_toolkit_1a726447c37c69a8aea872239b965ba352" kind="variable"><name>m_midiDoc</name></member>
     <member refid="classvrv_1_1_toolkit_1a8f5060c2fec413147a6bde2fcd672565" kind="variable"><name>m_options</name></member>
     <member refid="classvrv_1_1_toolkit_1aa2dc0652c3641dc9e7000df9a3d7f0ed" kind="variable"><name>m_previousLocale</name></member>
     <member refid="classvrv_1_1_toolkit_1ac0bd285a5155dd9737032d26edba729d" kind="variable"><name>m_cString</name></member>
@@ -9905,6 +9915,7 @@
     <member refid="classvrv_1_1_toolkit_1a3fd248c628b6e25a38ac0cb8b3dcd9f7" kind="function"><name>LogRedirectStart</name></member>
     <member refid="classvrv_1_1_toolkit_1a3a00a9335de59deb1dd2785d5c944397" kind="function"><name>LogRedirectStop</name></member>
     <member refid="classvrv_1_1_toolkit_1af03d8520c77603ed893203b0fa5a8821" kind="function"><name>LoadData</name></member>
+    <member refid="classvrv_1_1_toolkit_1aca51300ccd6adbd2dd3d039b678e340d" kind="function"><name>ResetMidiDoc</name></member>
     <member refid="classvrv_1_1_toolkit_1aa871f542892a4ea2ad8441dcd4fc6396" kind="function"><name>SetFont</name></member>
     <member refid="classvrv_1_1_toolkit_1a8d00a1762ebe79c8d9021148017a2072" kind="function"><name>IsUTF16</name></member>
     <member refid="classvrv_1_1_toolkit_1ad4839601f6e6a10f32e8c843e1bacfb9" kind="function"><name>LoadUTF16File</name></member>
@@ -9914,6 +9925,7 @@
     <member refid="classvrv_1_1_toolkit_1aad929203e47ba1fe415b1b989a31463d" kind="function"><name>GetClassIds</name></member>
     <member refid="classvrv_1_1_toolkit_1aebe87c2bdaa8388550be5529a1c72163" kind="function"><name>GetOptions</name></member>
     <member refid="classvrv_1_1_toolkit_1af112a3cbc40256368437433a1d3ea271" kind="function"><name>SetViewAndEditor</name></member>
+    <member refid="classvrv_1_1_toolkit_1ac54dcdac7517a3b11f9fef2001e9ac27" kind="function"><name>SetMidiDoc</name></member>
   </compound>
   <compound refid="classvrv_1_1_trans_pitch" kind="class"><name>vrv::TransPitch</name>
     <member refid="classvrv_1_1_trans_pitch_1a3d3e6a644641f51262056dd35d89b14b" kind="variable"><name>m_pname</name></member>
@@ -12507,8 +12519,8 @@
     <member refid="group__nodoc_1ga5ae3fb587d96567263bfebc1261ff4d9" kind="function"><name>SetHumdrumBuffer</name></member>
     <member refid="group__nodoc_1ga11e13d1850cadf28b00a85fde655e133" kind="function"><name>GetHumdrumBuffer</name></member>
     <member refid="group__nodoc_1gae5a104614acc4edf6794abe71d027210" kind="function"><name>ClearHumdrumBuffer</name></member>
-    <member refid="group__nodoc_1gac0b9bfca70ab200ca3e313611e37cc20" kind="function"><name>GetInputFrom</name></member>
-    <member refid="group__nodoc_1ga602e2e1f79bb73affe064cb9ba7a4f5a" kind="function"><name>GetOutputTo</name></member>
+    <member refid="group__nodoc_1ga92b5b63c8184f79a52d5d34764377979" kind="function"><name>GetInputFrom</name></member>
+    <member refid="group__nodoc_1ga48014e7f933b9b68a49d62aec16ff862" kind="function"><name>GetOutputTo</name></member>
     <member refid="group__nodoc_1ga80b1e5c4211c1f7972d55cf2e4cd6c16" kind="function"><name>SetLocale</name></member>
     <member refid="group__nodoc_1ga028fa93d6698315a5f04ab96160a6a62" kind="function"><name>ResetLocale</name></member>
     <member refid="group__nodoc_1ga3eb22488f8037f75c5d950271e0d9ad3" kind="function"><name>InitClock</name></member>

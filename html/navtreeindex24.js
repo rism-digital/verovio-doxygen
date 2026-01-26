@@ -1,5 +1,15 @@
 var NAVTREEINDEX24 =
 {
+"classvrv_1_1_reset_vertical_alignment_functor.html":[1,0,0,360],
+"classvrv_1_1_reset_vertical_alignment_functor.html#a00f661dcec5e98b30270f7cd2a8b95ee":[1,0,0,360,1],
+"classvrv_1_1_reset_vertical_alignment_functor.html#a34078187907ad5a03a4f075c276a9bfc":[1,0,0,360,6],
+"classvrv_1_1_reset_vertical_alignment_functor.html#a56eb3c96987a6662cfbbd1ec3ae01ba8":[1,0,0,360,9],
+"classvrv_1_1_reset_vertical_alignment_functor.html#a6d4e3d79ee18459de387665b022a044f":[1,0,0,360,11],
+"classvrv_1_1_reset_vertical_alignment_functor.html#a81255e56c604467ec31a319ed471132b":[1,0,0,360,12],
+"classvrv_1_1_reset_vertical_alignment_functor.html#a8d67bf927d834f017018ff05f0a88bfe":[1,0,0,360,7],
+"classvrv_1_1_reset_vertical_alignment_functor.html#aab3d6400609c5dae2e965071f5114ba1":[1,0,0,360,5],
+"classvrv_1_1_reset_vertical_alignment_functor.html#ab5818956765fe046db120d47fb076bcc":[1,0,0,360,10],
+"classvrv_1_1_reset_vertical_alignment_functor.html#ac58643a6a4121ee1ae96f90330557e2f":[1,0,0,360,3],
 "classvrv_1_1_reset_vertical_alignment_functor.html#ad1a373e6206881cd442e6499fb75e5d5":[1,0,0,360,4],
 "classvrv_1_1_reset_vertical_alignment_functor.html#ad9bff81ff7224ef91dc0e98169165c89":[1,0,0,360,2],
 "classvrv_1_1_reset_vertical_alignment_functor.html#adcf8848f1063ee4b3de21b6df2cea61f":[1,0,0,360,8],
@@ -239,15 +249,5 @@ var NAVTREEINDEX24 =
 "classvrv_1_1_score_def_optimize_functor.html":[1,0,0,377],
 "classvrv_1_1_score_def_optimize_functor.html#a348f90179a1c4f53e3dfa6dca5adfcee":[1,0,0,377,4],
 "classvrv_1_1_score_def_optimize_functor.html#a39ef96cae81b1ed448abf3fa6b997516":[1,0,0,377,3],
-"classvrv_1_1_score_def_optimize_functor.html#a4f9eca070e64a9e28eec86317c1f7725":[1,0,0,377,7],
-"classvrv_1_1_score_def_optimize_functor.html#a5c45eee9cc4a2e5fb9865c851caf63ae":[1,0,0,377,1],
-"classvrv_1_1_score_def_optimize_functor.html#a6781d82c5f9be22a3f2cc3c078017bc8":[1,0,0,377,2],
-"classvrv_1_1_score_def_optimize_functor.html#a84a98d3dfc5c590b9f5aa8c4a1af7b13":[1,0,0,377,6],
-"classvrv_1_1_score_def_optimize_functor.html#a97c7c75787ccabb43d87689bd802a14d":[1,0,0,377,5],
-"classvrv_1_1_score_def_optimize_functor.html#af071203531946506dd05ef29c6fa0184":[1,0,0,377,0],
-"classvrv_1_1_score_def_optimize_functor.html#aff649d8335311e78c4d2ece424a1b40d":[1,0,0,377,8],
-"classvrv_1_1_score_def_set_current_functor.html":[1,0,0,376],
-"classvrv_1_1_score_def_set_current_functor.html#a1a850ec95660d27fc19c7774342d3f6b":[1,0,0,376,10],
-"classvrv_1_1_score_def_set_current_functor.html#a2b8daca890f14b434bd42ec992d8f8c9":[1,0,0,376,18],
-"classvrv_1_1_score_def_set_current_functor.html#a379eb939d6175bac6bdd4c6d5003ad1a":[1,0,0,376,2]
+"classvrv_1_1_score_def_optimize_functor.html#a4f9eca070e64a9e28eec86317c1f7725":[1,0,0,377,7]
 };

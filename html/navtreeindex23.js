@@ -1,5 +1,15 @@
 var NAVTREEINDEX23 =
 {
+"classvrv_1_1_prepare_milestones_functor.html#a9294911646c06284d8cb6237f6fc1cec":[1,0,0,345,8],
+"classvrv_1_1_prepare_milestones_functor.html#ab652d652c00ccd6aab30ffaad364ad5a":[1,0,0,345,3],
+"classvrv_1_1_prepare_milestones_functor.html#aede918c81c5d9f453dae6195a450928c":[1,0,0,345,7],
+"classvrv_1_1_prepare_milestones_functor.html#af71adc893ce571f99b18558454e72456":[1,0,0,345,9],
+"classvrv_1_1_prepare_pedals_functor.html":[1,0,0,339],
+"classvrv_1_1_prepare_pedals_functor.html#a1659fec8302ddd96913a98f12702eed8":[1,0,0,339,2],
+"classvrv_1_1_prepare_pedals_functor.html#a1df3a50ac3f371882a32761b6e3b2414":[1,0,0,339,4],
+"classvrv_1_1_prepare_pedals_functor.html#a2e92281b95d352f6b9e1c8b1be9fed7b":[1,0,0,339,3],
+"classvrv_1_1_prepare_pedals_functor.html#a60ef178240b80dff66fe9464974daab6":[1,0,0,339,1],
+"classvrv_1_1_prepare_pedals_functor.html#a707c18dacfa05531d004718cdbce67a4":[1,0,0,339,0],
 "classvrv_1_1_prepare_plist_functor.html":[1,0,0,334],
 "classvrv_1_1_prepare_plist_functor.html#a26d07524cf6d94b60ff9601000ed4592":[1,0,0,334,1],
 "classvrv_1_1_prepare_plist_functor.html#a2fe459a478b0485e6a8269685edea1aa":[1,0,0,334,4],
@@ -239,15 +249,5 @@ var NAVTREEINDEX23 =
 "classvrv_1_1_reset_horizontal_alignment_functor.html#ad275df768a3484bf4925dec146a10450":[1,0,0,359,3],
 "classvrv_1_1_reset_horizontal_alignment_functor.html#adabe74c6501c0ec4cd5a678e88455b98":[1,0,0,359,6],
 "classvrv_1_1_reset_horizontal_alignment_functor.html#af1fa95fb0b2a6a05b2498e9b10db9c9a":[1,0,0,359,11],
-"classvrv_1_1_reset_horizontal_alignment_functor.html#af463998a317e4a485cc9878a63aa4792":[1,0,0,359,21],
-"classvrv_1_1_reset_vertical_alignment_functor.html":[1,0,0,360],
-"classvrv_1_1_reset_vertical_alignment_functor.html#a00f661dcec5e98b30270f7cd2a8b95ee":[1,0,0,360,1],
-"classvrv_1_1_reset_vertical_alignment_functor.html#a34078187907ad5a03a4f075c276a9bfc":[1,0,0,360,6],
-"classvrv_1_1_reset_vertical_alignment_functor.html#a56eb3c96987a6662cfbbd1ec3ae01ba8":[1,0,0,360,9],
-"classvrv_1_1_reset_vertical_alignment_functor.html#a6d4e3d79ee18459de387665b022a044f":[1,0,0,360,11],
-"classvrv_1_1_reset_vertical_alignment_functor.html#a81255e56c604467ec31a319ed471132b":[1,0,0,360,12],
-"classvrv_1_1_reset_vertical_alignment_functor.html#a8d67bf927d834f017018ff05f0a88bfe":[1,0,0,360,7],
-"classvrv_1_1_reset_vertical_alignment_functor.html#aab3d6400609c5dae2e965071f5114ba1":[1,0,0,360,5],
-"classvrv_1_1_reset_vertical_alignment_functor.html#ab5818956765fe046db120d47fb076bcc":[1,0,0,360,10],
-"classvrv_1_1_reset_vertical_alignment_functor.html#ac58643a6a4121ee1ae96f90330557e2f":[1,0,0,360,3]
+"classvrv_1_1_reset_horizontal_alignment_functor.html#af463998a317e4a485cc9878a63aa4792":[1,0,0,359,21]
 };
