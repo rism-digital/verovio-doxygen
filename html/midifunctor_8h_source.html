@@ -480,60 +480,61 @@ $(document).ready(function(){initNavTree('midifunctor_8h_source.html',''); initR
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    FunctorCode VisitMultiRest(<span class="keyword">const</span> MultiRest *multiRest) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    FunctorCode VisitNote(<span class="keyword">const</span> Note *note) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    FunctorCode VisitRest(<span class="keyword">const</span> Rest *rest) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160; </div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keywordtype">void</span> AddTimemapEntry(<span class="keyword">const</span> Object *<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160; </div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    <span class="comment">// The score time from the start of the piece to the previous barline in quarter notes</span></div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    Fraction m_currentScoreTime;</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <span class="comment">// Real time from the start of the piece to the previous barline in ms</span></div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    <span class="keywordtype">double</span> m_currentRealTimeMilliseconds;</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    <span class="comment">// The current tempo</span></div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="keywordtype">double</span> m_currentTempo;</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <span class="comment">// Indicates whether cue notes should be included</span></div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="keywordtype">bool</span> m_noCue;</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <span class="comment">// The timemap</span></div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    Timemap *m_timemap;</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;};</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160; </div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;<span class="comment">// GenerateFeaturesFunctor</span></div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160; </div>
-<div class="line"><a name="l00536"></a><span class="lineno"><a class="line" href="classvrv_1_1_generate_features_functor.html">  536</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_generate_features_functor.html">GenerateFeaturesFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> {</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <a class="code" href="classvrv_1_1_generate_features_functor.html">GenerateFeaturesFunctor</a>(<a class="code" href="classvrv_1_1_feature_extractor.html">FeatureExtractor</a> *extractor);</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_generate_features_functor.html">GenerateFeaturesFunctor</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160; </div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00549"></a><span class="lineno"><a class="line" href="classvrv_1_1_generate_features_functor.html#ac547e5eba1b5c213a9777a3fa07b347d">  549</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_generate_features_functor.html#ac547e5eba1b5c213a9777a3fa07b347d">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160; </div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;<span class="comment">     * Functor interface</span></div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    FunctorCode VisitObject(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160; </div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="comment">// The FeatureExtractor to which extraction is delegated</span></div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    <a class="code" href="classvrv_1_1_feature_extractor.html">FeatureExtractor</a> *m_extractor;</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;};</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160; </div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160; </div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __VRV_MIDIFUNCTOR_H__</span></div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    FunctorCode VisitStaff(<span class="keyword">const</span> Staff *staff) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160; </div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <span class="keywordtype">void</span> AddTimemapEntry(<span class="keyword">const</span> Object *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160; </div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <span class="comment">// The score time from the start of the piece to the previous barline in quarter notes</span></div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    Fraction m_currentScoreTime;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    <span class="comment">// Real time from the start of the piece to the previous barline in ms</span></div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    <span class="keywordtype">double</span> m_currentRealTimeMilliseconds;</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="comment">// The current tempo</span></div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <span class="keywordtype">double</span> m_currentTempo;</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="comment">// Indicates whether cue notes should be included</span></div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <span class="keywordtype">bool</span> m_noCue;</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <span class="comment">// The timemap</span></div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    Timemap *m_timemap;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;};</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160; </div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;<span class="comment">// GenerateFeaturesFunctor</span></div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160; </div>
+<div class="line"><a name="l00537"></a><span class="lineno"><a class="line" href="classvrv_1_1_generate_features_functor.html">  537</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_generate_features_functor.html">GenerateFeaturesFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> {</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    <a class="code" href="classvrv_1_1_generate_features_functor.html">GenerateFeaturesFunctor</a>(<a class="code" href="classvrv_1_1_feature_extractor.html">FeatureExtractor</a> *extractor);</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_generate_features_functor.html">GenerateFeaturesFunctor</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160; </div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00550"></a><span class="lineno"><a class="line" href="classvrv_1_1_generate_features_functor.html#ac547e5eba1b5c213a9777a3fa07b347d">  550</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_generate_features_functor.html#ac547e5eba1b5c213a9777a3fa07b347d">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160; </div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;<span class="comment">     * Functor interface</span></div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    FunctorCode VisitObject(<span class="keyword">const</span> <a class="code" href="classvrv_1_1_object.html">Object</a> *<span class="keywordtype">object</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160; </div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    <span class="comment">// The FeatureExtractor to which extraction is delegated</span></div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    <a class="code" href="classvrv_1_1_feature_extractor.html">FeatureExtractor</a> *m_extractor;</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;};</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160; </div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160; </div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __VRV_MIDIFUNCTOR_H__</span></div>
 <div class="ttc" id="aclassvrv_1_1_chord_html"><div class="ttname"><a href="classvrv_1_1_chord.html">vrv::Chord</a></div><div class="ttdoc">This class represents a collection of notes in the same layer with the same onset time.</div><div class="ttdef"><b>Definition:</b> chord.h:44</div></div>
 <div class="ttc" id="aclassvrv_1_1_const_functor_html"><div class="ttname"><a href="classvrv_1_1_const_functor.html">vrv::ConstFunctor</a></div><div class="ttdoc">This abstract class is the base class for all const functors.</div><div class="ttdef"><b>Definition:</b> functor.h:126</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_functor_html"><div class="ttname"><a href="classvrv_1_1_doc_functor.html">vrv::DocFunctor</a></div><div class="ttdoc">This abstract class is the base class for all mutable functors that need access to the document.</div><div class="ttdef"><b>Definition:</b> functor.h:151</div></div>
@@ -541,8 +542,8 @@ $(document).ready(function(){initNavTree('midifunctor_8h_source.html',''); initR
 <div class="ttc" id="aclassvrv_1_1_feature_extractor_html"><div class="ttname"><a href="classvrv_1_1_feature_extractor.html">vrv::FeatureExtractor</a></div><div class="ttdef"><b>Definition:</b> featureextractor.h:21</div></div>
 <div class="ttc" id="aclassvrv_1_1_fraction_html"><div class="ttname"><a href="classvrv_1_1_fraction.html">vrv::Fraction</a></div><div class="ttdef"><b>Definition:</b> fraction.h:19</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_html"><div class="ttname"><a href="classvrv_1_1_functor.html">vrv::Functor</a></div><div class="ttdoc">This abstract class is the base class for all mutable functors.</div><div class="ttdef"><b>Definition:</b> functor.h:101</div></div>
-<div class="ttc" id="aclassvrv_1_1_generate_features_functor_html"><div class="ttname"><a href="classvrv_1_1_generate_features_functor.html">vrv::GenerateFeaturesFunctor</a></div><div class="ttdoc">This class exports the object to a JSON feature file.</div><div class="ttdef"><b>Definition:</b> midifunctor.h:536</div></div>
-<div class="ttc" id="aclassvrv_1_1_generate_features_functor_html_ac547e5eba1b5c213a9777a3fa07b347d"><div class="ttname"><a href="classvrv_1_1_generate_features_functor.html#ac547e5eba1b5c213a9777a3fa07b347d">vrv::GenerateFeaturesFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> midifunctor.h:549</div></div>
+<div class="ttc" id="aclassvrv_1_1_generate_features_functor_html"><div class="ttname"><a href="classvrv_1_1_generate_features_functor.html">vrv::GenerateFeaturesFunctor</a></div><div class="ttdoc">This class exports the object to a JSON feature file.</div><div class="ttdef"><b>Definition:</b> midifunctor.h:537</div></div>
+<div class="ttc" id="aclassvrv_1_1_generate_features_functor_html_ac547e5eba1b5c213a9777a3fa07b347d"><div class="ttname"><a href="classvrv_1_1_generate_features_functor.html#ac547e5eba1b5c213a9777a3fa07b347d">vrv::GenerateFeaturesFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> midifunctor.h:550</div></div>
 <div class="ttc" id="aclassvrv_1_1_generate_m_i_d_i_functor_html"><div class="ttname"><a href="classvrv_1_1_generate_m_i_d_i_functor.html">vrv::GenerateMIDIFunctor</a></div><div class="ttdoc">This class performs the export to a MidiFile.</div><div class="ttdef"><b>Definition:</b> midifunctor.h:347</div></div>
 <div class="ttc" id="aclassvrv_1_1_generate_m_i_d_i_functor_html_a45df2245c7a83928c30cc3b11727e89c"><div class="ttname"><a href="classvrv_1_1_generate_m_i_d_i_functor.html#a45df2245c7a83928c30cc3b11727e89c">vrv::GenerateMIDIFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> midifunctor.h:360</div></div>
 <div class="ttc" id="aclassvrv_1_1_generate_timemap_functor_html"><div class="ttname"><a href="classvrv_1_1_generate_timemap_functor.html">vrv::GenerateTimemapFunctor</a></div><div class="ttdoc">This class exports the object to a JSON timemap file.</div><div class="ttdef"><b>Definition:</b> midifunctor.h:474</div></div>
@@ -562,7 +563,7 @@ $(document).ready(function(){initNavTree('midifunctor_8h_source.html',''); initR
 <div class="ttc" id="aclassvrv_1_1_measure_html"><div class="ttname"><a href="classvrv_1_1_measure.html">vrv::Measure</a></div><div class="ttdoc">This class represents a measure in a page-based score (Doc).</div><div class="ttdef"><b>Definition:</b> measure.h:46</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:64</div></div>
 <div class="ttc" id="aclassvrv_1_1_octave_html"><div class="ttname"><a href="classvrv_1_1_octave.html">vrv::Octave</a></div><div class="ttdoc">This class models the MEI &lt;octave&gt; element.</div><div class="ttdef"><b>Definition:</b> octave.h:31</div></div>
-<div class="ttc" id="aclassvrv_1_1_staff_html"><div class="ttname"><a href="classvrv_1_1_staff.html">vrv::Staff</a></div><div class="ttdoc">This class represents a staff in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> staff.h:107</div></div>
+<div class="ttc" id="aclassvrv_1_1_staff_html"><div class="ttname"><a href="classvrv_1_1_staff.html">vrv::Staff</a></div><div class="ttdoc">This class represents a staff in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> staff.h:110</div></div>
 <div class="ttc" id="aclassvrv_1_1_tab_grp_html"><div class="ttname"><a href="classvrv_1_1_tab_grp.html">vrv::TabGrp</a></div><div class="ttdoc">This class models the MEI &lt;tabGrp&gt; element.</div><div class="ttdef"><b>Definition:</b> tabgrp.h:24</div></div>
 <div class="ttc" id="aclassvrv_1_1_tie_html"><div class="ttname"><a href="classvrv_1_1_tie.html">vrv::Tie</a></div><div class="ttdoc">This class models the MEI &lt;tie&gt; element.</div><div class="ttdef"><b>Definition:</b> tie.h:32</div></div>
 <div class="ttc" id="aclassvrv_1_1_timemap_html"><div class="ttname"><a href="classvrv_1_1_timemap.html">vrv::Timemap</a></div><div class="ttdoc">This class holds a timemap for exporting onset / offset values.</div><div class="ttdef"><b>Definition:</b> timemap.h:52</div></div>
@@ -576,7 +577,7 @@ $(document).ready(function(){initNavTree('midifunctor_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>midifunctor.h</b></li>
-    <li class="footer">Generated on Tue Dec 2 2025 10:57:12 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jan 28 2026 10:13:42 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

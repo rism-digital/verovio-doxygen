@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('adjustxposfunctor_8h_source.html','');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classvrv_1_1_adjust_x_pos_functor.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_adjust_x_pos_functor.html">AdjustXPosFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_doc_functor.html">DocFunctor</a> {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classvrv_1_1_adjust_x_pos_functor.html">AdjustXPosFunctor</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keyword">const</span> std::vector&lt;int&gt; &amp;staffNs);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classvrv_1_1_adjust_x_pos_functor.html">AdjustXPosFunctor</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_adjust_x_pos_functor.html">AdjustXPosFunctor</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">/*</span></div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('adjustxposfunctor_8h_source.html','');
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    FunctorCode VisitAlignmentEnd(Alignment *alignment) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    FunctorCode VisitLayerElement(LayerElement *layerElement) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    FunctorCode VisitMeasure(Measure *measure) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    FunctorCode VisitScore(Score *score) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    FunctorCode VisitSystem(System *system) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">//</span></div>
@@ -202,7 +202,7 @@ $(document).ready(function(){initNavTree('adjustxposfunctor_8h_source.html','');
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __VRV_ADJUSTXPOSFUNCTOR_H__</span></div>
 <div class="ttc" id="aclassvrv_1_1_adjust_x_pos_functor_html"><div class="ttname"><a href="classvrv_1_1_adjust_x_pos_functor.html">vrv::AdjustXPosFunctor</a></div><div class="ttdoc">This class adjusts the X positions of the staff content by looking at the bounding boxes.</div><div class="ttdef"><b>Definition:</b> adjustxposfunctor.h:48</div></div>
 <div class="ttc" id="aclassvrv_1_1_adjust_x_pos_functor_html_ad0de906b0930d7c4434f3ea912ca3f02"><div class="ttname"><a href="classvrv_1_1_adjust_x_pos_functor.html#ad0de906b0930d7c4434f3ea912ca3f02">vrv::AdjustXPosFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> adjustxposfunctor.h:61</div></div>
-<div class="ttc" id="aclassvrv_1_1_alignment_html"><div class="ttname"><a href="classvrv_1_1_alignment.html">vrv::Alignment</a></div><div class="ttdoc">This class stores an alignment position elements will point to.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:73</div></div>
+<div class="ttc" id="aclassvrv_1_1_alignment_html"><div class="ttname"><a href="classvrv_1_1_alignment.html">vrv::Alignment</a></div><div class="ttdoc">This class stores an alignment position elements will point to.</div><div class="ttdef"><b>Definition:</b> horizontalaligner.h:75</div></div>
 <div class="ttc" id="aclassvrv_1_1_bounding_box_html"><div class="ttname"><a href="classvrv_1_1_bounding_box.html">vrv::BoundingBox</a></div><div class="ttdoc">This class represents a basic object in the layout domain.</div><div class="ttdef"><b>Definition:</b> boundingbox.h:32</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_functor_html"><div class="ttname"><a href="classvrv_1_1_doc_functor.html">vrv::DocFunctor</a></div><div class="ttdoc">This abstract class is the base class for all mutable functors that need access to the document.</div><div class="ttdef"><b>Definition:</b> functor.h:151</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:41</div></div>
@@ -213,7 +213,7 @@ $(document).ready(function(){initNavTree('adjustxposfunctor_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>adjustxposfunctor.h</b></li>
-    <li class="footer">Generated on Tue Dec 2 2025 10:57:12 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jan 28 2026 10:13:42 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

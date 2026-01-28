@@ -119,6 +119,7 @@ var classvrv_1_1_view =
     [ "DrawObliquePolygon", "classvrv_1_1_view.html#a91c2eb84f422eec8085474a75b9aed82", null ],
     [ "DrawOctave", "classvrv_1_1_view.html#ac0c76bea5f32e2f8074693c14c2e6195", null ],
     [ "DrawOriscus", "classvrv_1_1_view.html#acb648bb781cabe48e14c5402d40aca06", null ],
+    [ "DrawOssia", "classvrv_1_1_view.html#a43d69b2fc1f77229f8caa7b4cdecf476", null ],
     [ "DrawPageElement", "classvrv_1_1_view.html#a145de60dc07293a5a74122ebb76d677a", null ],
     [ "DrawPedal", "classvrv_1_1_view.html#a5d9f88428c22c67573f7fb56ed086ab3", null ],
     [ "DrawPedalLine", "classvrv_1_1_view.html#a97d482d2124dcc5e84c0bf697b14fde7", null ],

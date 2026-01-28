@@ -902,6 +902,7 @@ var hierarchy =
       [ "vrv::LayerDef", "classvrv_1_1_layer_def.html", null ],
       [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
+      [ "vrv::Ossia", "classvrv_1_1_ossia.html", null ],
       [ "vrv::PageElement", "classvrv_1_1_page_element.html", [
         [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
         [ "vrv::PageMilestoneEnd", "classvrv_1_1_page_milestone_end.html", null ],
@@ -1039,6 +1040,7 @@ var hierarchy =
         [ "vrv::LayerDef", "classvrv_1_1_layer_def.html", null ],
         [ "vrv::LayerElement", "classvrv_1_1_layer_element.html", null ],
         [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
+        [ "vrv::Ossia", "classvrv_1_1_ossia.html", null ],
         [ "vrv::Page", "classvrv_1_1_page.html", null ],
         [ "vrv::PageElement", "classvrv_1_1_page_element.html", null ],
         [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
@@ -1176,6 +1178,7 @@ var hierarchy =
           [ "vrv::AdjustHarmGrpsSpacingFunctor", "classvrv_1_1_adjust_harm_grps_spacing_functor.html", null ],
           [ "vrv::AdjustLayersFunctor", "classvrv_1_1_adjust_layers_functor.html", null ],
           [ "vrv::AdjustNeumeXFunctor", "classvrv_1_1_adjust_neume_x_functor.html", null ],
+          [ "vrv::AdjustOssiaStaffDefFunctor", "classvrv_1_1_adjust_ossia_staff_def_functor.html", null ],
           [ "vrv::AdjustSlursFunctor", "classvrv_1_1_adjust_slurs_functor.html", null ],
           [ "vrv::AdjustStaffOverlapFunctor", "classvrv_1_1_adjust_staff_overlap_functor.html", null ],
           [ "vrv::AdjustSylSpacingFunctor", "classvrv_1_1_adjust_syl_spacing_functor.html", null ],
@@ -1219,6 +1222,7 @@ var hierarchy =
           [ "vrv::ScoreDefOptimizeFunctor", "classvrv_1_1_score_def_optimize_functor.html", null ],
           [ "vrv::ScoreDefSetCurrentFunctor", "classvrv_1_1_score_def_set_current_functor.html", null ],
           [ "vrv::ScoreDefSetCurrentPageFunctor", "classvrv_1_1_score_def_set_current_page_functor.html", null ],
+          [ "vrv::ScoreDefSetOssiaFunctor", "classvrv_1_1_score_def_set_ossia_functor.html", null ],
           [ "vrv::TransposeFunctor", "classvrv_1_1_transpose_functor.html", [
             [ "vrv::TransposeSelectedMdivFunctor", "classvrv_1_1_transpose_selected_mdiv_functor.html", null ],
             [ "vrv::TransposeToSoundingPitchFunctor", "classvrv_1_1_transpose_to_sounding_pitch_functor.html", null ]
@@ -1390,6 +1394,7 @@ var hierarchy =
       [ "vrv::EditorTreeObject", "classvrv_1_1_editor_tree_object.html", null ],
       [ "vrv::EditorialElement", "classvrv_1_1_editorial_element.html", null ],
       [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
+      [ "vrv::Staff", "classvrv_1_1_staff.html", null ],
       [ "vrv::SystemElement", "classvrv_1_1_system_element.html", null ]
     ] ],
     [ "vrv::ZipFileReader", "classvrv_1_1_zip_file_reader.html", null ]

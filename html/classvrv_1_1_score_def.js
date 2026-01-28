@@ -7,6 +7,7 @@ var classvrv_1_1_score_def =
     [ "AcceptEnd", "classvrv_1_1_score_def.html#ab5059f85d9c9d25e0e0e5ce0858302f5", null ],
     [ "AcceptEnd", "classvrv_1_1_score_def.html#a34117b270194a044051a5784b4db0fbe", null ],
     [ "AddChildAdditionalCheck", "classvrv_1_1_score_def.html#ac9226c0457ad25f54c5782d7bd65d1b0", null ],
+    [ "AddOssias", "classvrv_1_1_score_def.html#a75744912d9fc51cc30c7e37e493f0b7a", null ],
     [ "Clone", "classvrv_1_1_score_def.html#aece43dcf4cd8986d37759ce72d4b5558", null ],
     [ "DrawLabels", "classvrv_1_1_score_def.html#a004881a2cfb78869dc4edd96e730344c", null ],
     [ "FilterList", "classvrv_1_1_score_def.html#a85ad8d7d1c133cbab2d7d5b02b6cc21c", null ],

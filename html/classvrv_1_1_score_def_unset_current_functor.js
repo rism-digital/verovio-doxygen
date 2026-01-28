@@ -7,6 +7,7 @@ var classvrv_1_1_score_def_unset_current_functor =
     [ "VisitKeySig", "classvrv_1_1_score_def_unset_current_functor.html#ae6f7bb0c124f7ba8f459ed000dad9c4a", null ],
     [ "VisitLayer", "classvrv_1_1_score_def_unset_current_functor.html#aa6c93b6c93bf17fdde705d1bd81ea931", null ],
     [ "VisitMeasure", "classvrv_1_1_score_def_unset_current_functor.html#acb60b9b4fead1a5d89f7cd6274df5b01", null ],
+    [ "VisitOssia", "classvrv_1_1_score_def_unset_current_functor.html#ab3b0c735d5ae6116f4c827808700f654", null ],
     [ "VisitPage", "classvrv_1_1_score_def_unset_current_functor.html#a3747099714a19facf8dfbc1a453a7aa1", null ],
     [ "VisitStaff", "classvrv_1_1_score_def_unset_current_functor.html#a475d381d5c8fcbbf330bb6ff42e98085", null ],
     [ "VisitSystem", "classvrv_1_1_score_def_unset_current_functor.html#a6d449b0d63ba83e709aa16e2d37e63e0", null ]

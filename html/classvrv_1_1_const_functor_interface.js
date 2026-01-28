@@ -164,6 +164,8 @@ var classvrv_1_1_const_functor_interface =
     [ "VisitOctaveEnd", "classvrv_1_1_const_functor_interface.html#ad40ab17849e99a4d5e8a6eba2762a47c", null ],
     [ "VisitOrnam", "classvrv_1_1_const_functor_interface.html#ac99ac7d97909f03231a752b197cb0c7f", null ],
     [ "VisitOrnamEnd", "classvrv_1_1_const_functor_interface.html#ae6ac0c291a1fd05d3fa70719745b0fb9", null ],
+    [ "VisitOssia", "classvrv_1_1_const_functor_interface.html#a8abb5f6f038cac4ddc2ac824dcd5e070", null ],
+    [ "VisitOssiaEnd", "classvrv_1_1_const_functor_interface.html#adcd3bd7515b74c7501db6cdcc0cba254", null ],
     [ "VisitPage", "classvrv_1_1_const_functor_interface.html#a06e1395bdb81f8403df6ff4ceb1edf59", null ],
     [ "VisitPageElement", "classvrv_1_1_const_functor_interface.html#ad19f0a6378e69da90b7a819069df8123", null ],
     [ "VisitPageElementEnd", "classvrv_1_1_const_functor_interface.html#ae4f6c7c3fc6899b78748032dfc511deb", null ],

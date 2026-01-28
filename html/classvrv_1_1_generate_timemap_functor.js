@@ -9,5 +9,6 @@ var classvrv_1_1_generate_timemap_functor =
     [ "VisitMRest", "classvrv_1_1_generate_timemap_functor.html#ae32ebe4018f208c0c2e1573097456a3e", null ],
     [ "VisitMultiRest", "classvrv_1_1_generate_timemap_functor.html#acd6f2e829a0deeca524722024c84f3a3", null ],
     [ "VisitNote", "classvrv_1_1_generate_timemap_functor.html#ac9776e5ef6b9c3ae8f4a44426954bcf6", null ],
-    [ "VisitRest", "classvrv_1_1_generate_timemap_functor.html#a27bdb4521970f6376dcc05590a327581", null ]
+    [ "VisitRest", "classvrv_1_1_generate_timemap_functor.html#a27bdb4521970f6376dcc05590a327581", null ],
+    [ "VisitStaff", "classvrv_1_1_generate_timemap_functor.html#a14d7c14147caedec0e510f2934cceb5a", null ]
 ];
