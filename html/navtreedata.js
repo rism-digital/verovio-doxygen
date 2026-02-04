@@ -67,7 +67,7 @@ var NAVTREEINDEX =
 "classvrv_1_1_multi_rest.html",
 "classvrv_1_1_object.html#a859aecc00ab75fc7ed2f2780bc0a6a51",
 "classvrv_1_1_option_int_map.html",
-"classvrv_1_1_options.html#ac855ab06d149182343eb3334253d7187",
+"classvrv_1_1_options.html#ac8edf454ded0f1f146b1af941734190f",
 "classvrv_1_1_pedal.html#a09cba0ba9a6158ff73a97718a518f8fa",
 "classvrv_1_1_prepare_milestones_functor.html#a9294911646c06284d8cb6237f6fc1cec",
 "classvrv_1_1_reset_vertical_alignment_functor.html",
