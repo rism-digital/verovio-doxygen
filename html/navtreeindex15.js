@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"classvrv_1_1_init_onset_offset_functor.html#ae0a8c376156ef302372f99265aa41785":[1,0,0,259,8],
+"classvrv_1_1_init_onset_offset_functor.html#ae0b57d4f5bae34fd751560b5d97a708c":[1,0,0,259,5],
 "classvrv_1_1_init_onset_offset_functor.html#afc4a81cb0254a14d1e48e03f7d5108c0":[1,0,0,259,2],
 "classvrv_1_1_init_onset_offset_functor.html#afdb70a507380d190bf302619672e8825":[1,0,0,259,0],
 "classvrv_1_1_init_processing_lists_functor.html":[1,0,0,272],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "classvrv_1_1_layer_def.html#ad057a9f960c08b2f5add18c9eb3efbbb":[1,0,0,246,0],
 "classvrv_1_1_layer_def.html#adb3205f928b22dd7a12dfbae4e673720":[1,0,0,246,3],
 "classvrv_1_1_layer_def.html#adc1ab933172d26f8bbf5b129ed178b22":[1,0,0,246,5],
-"classvrv_1_1_layer_def.html#ade2652799b9e2d808a9a25d231dcac29":[1,0,0,246,6],
-"classvrv_1_1_layer_element.html":[1,0,0,247],
-"classvrv_1_1_layer_element.html#a0587b46544f84d658158e7e521e6ae45":[1,0,0,247,39]
+"classvrv_1_1_layer_def.html#ade2652799b9e2d808a9a25d231dcac29":[1,0,0,246,6]
 };

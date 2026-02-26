@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"classvrv_1_1_pedal.html#a06e5a67b00c9c8f8e560d174c36fb309":[1,0,0,319,8],
+"classvrv_1_1_pedal.html#a07a9260b7a5e4999fdd32d1bbd10c6d3":[1,0,0,319,11],
 "classvrv_1_1_pedal.html#a09cba0ba9a6158ff73a97718a518f8fa":[1,0,0,319,10],
 "classvrv_1_1_pedal.html#a1772311cdf12a7c008ac969dc77c0db6":[1,0,0,319,3],
 "classvrv_1_1_pedal.html#a2261ebf8824e419224c376fa42b1db70":[1,0,0,319,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "classvrv_1_1_prepare_milestones_functor.html#a00559812a0dda3d4d0c27c42fbdb800a":[1,0,0,345,5],
 "classvrv_1_1_prepare_milestones_functor.html#a086ede5eb83f1b09591ecd259aa1954d":[1,0,0,345,1],
 "classvrv_1_1_prepare_milestones_functor.html#a32a5e97c74d961b02cb2f8bab482bedf":[1,0,0,345,0],
-"classvrv_1_1_prepare_milestones_functor.html#a4660fab4cc57c871eb06fc3524e79b23":[1,0,0,345,2],
-"classvrv_1_1_prepare_milestones_functor.html#a827a54accd660ea9efe81b01269e5b16":[1,0,0,345,6],
-"classvrv_1_1_prepare_milestones_functor.html#a88861ef41b61e7725e92a69871b196e3":[1,0,0,345,4]
+"classvrv_1_1_prepare_milestones_functor.html#a4660fab4cc57c871eb06fc3524e79b23":[1,0,0,345,2]
 };
