@@ -126,6 +126,7 @@ var classvrv_1_1_options =
     [ "m_midi", "classvrv_1_1_options.html#a3a52042ee86eb2aa5f0540a41a6f35fa", null ],
     [ "m_midiNoCue", "classvrv_1_1_options.html#a8f4846d524263f9e851c03582532b001", null ],
     [ "m_midiTempoAdjustment", "classvrv_1_1_options.html#ac5351533fcb3dc839e95adba9cafbf0d", null ],
+    [ "m_midiTuningFile", "classvrv_1_1_options.html#ae126e4531cb0468c476b902f3ead5d14", null ],
     [ "m_minLastJustification", "classvrv_1_1_options.html#af64ac4b535712ec5fca92a9086a4437f", null ],
     [ "m_mmOutput", "classvrv_1_1_options.html#af6b86f9f5c11eb1ce187ce7b90143c3f", null ],
     [ "m_mnumInterval", "classvrv_1_1_options.html#a7d7b0ae2657f39ef6819ed7ec23ce721", null ],

@@ -1126,6 +1126,7 @@ var hierarchy =
     [ "vrv::ControlPointAdjustment", "structvrv_1_1_control_point_adjustment.html", null ],
     [ "vrv::ControlPointConstraint", "structvrv_1_1_control_point_constraint.html", null ],
     [ "vrv::CurveSpannedElement", "classvrv_1_1_curve_spanned_element.html", null ],
+    [ "vrv::CustomTuning", "classvrv_1_1_custom_tuning.html", null ],
     [ "vrv::LedgerLine::Dash", "classvrv_1_1_ledger_line_1_1_dash.html", null ],
     [ "vrv::DateConstruct", "structvrv_1_1_date_construct.html", null ],
     [ "vrv::DateWithErrors", "structvrv_1_1_date_with_errors.html", null ],
