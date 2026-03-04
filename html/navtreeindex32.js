@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d":[1,0,0,422,52],
 "group__nodoc.html#gabd5f684704d8e4736ea416e43cdc5827":[1,0,0,422,46],
 "group__nodoc.html#gae5a104614acc4edf6794abe71d027210":[1,0,0,422,2],
 "group__nodoc.html#gae5a104614acc4edf6794abe71d027210":[0,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX32 =
 "tuplet_8h_source.html":[2,0,247],
 "turn_8h_source.html":[2,0,248],
 "unclear_8h_source.html":[2,0,249],
-"verse_8h_source.html":[2,0,250],
-"verticalaligner_8h_source.html":[2,0,251]
+"verse_8h_source.html":[2,0,250]
 };

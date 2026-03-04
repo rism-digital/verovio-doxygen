@@ -7,8 +7,7 @@ var hierarchy =
     [ "AttAccidental", null, [
       [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
       [ "vrv::Course", "classvrv_1_1_course.html", null ],
-      [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
-      [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ]
+      [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ]
     ] ],
     [ "AttAccidentalGes", null, [
       [ "vrv::Accid", "classvrv_1_1_accid.html", null ]
@@ -408,7 +407,7 @@ var hierarchy =
     [ "AttIntervalMelodic", null, [
       [ "vrv::Nc", "classvrv_1_1_nc.html", null ]
     ] ],
-    [ "AttKeyMode", null, [
+    [ "AttKeySigAnl", null, [
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ]
     ] ],
     [ "AttKeySigLog", null, [
