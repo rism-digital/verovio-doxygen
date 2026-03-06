@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classvrv_1_1_calc_alignment_pitch_pos_functor.html#a977e7a33f22e851cd69a3400251c6860":[1,0,0,67,3],
 "classvrv_1_1_calc_alignment_pitch_pos_functor.html#ad3af020184479c428b9055dfb376a5d6":[1,0,0,67,1],
 "classvrv_1_1_calc_alignment_pitch_pos_functor.html#ad426488a3d5a751b628418692c017335":[1,0,0,67,6],
 "classvrv_1_1_calc_alignment_pitch_pos_functor.html#adeb42c0008ca535dd8fef470541d0c72":[1,0,0,67,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "classvrv_1_1_const_functor_interface.html#a073b5d481c78a4778badf61c9ad45eda":[1,0,0,205,261],
 "classvrv_1_1_const_functor_interface.html#a08cd8bb1770fc190e16f1107925dbb7d":[1,0,0,205,31],
 "classvrv_1_1_const_functor_interface.html#a096fe13c92fe97ee00e2806d208951b5":[1,0,0,205,275],
-"classvrv_1_1_const_functor_interface.html#a098890497f17291a39598e5e2b561fd9":[1,0,0,205,75],
-"classvrv_1_1_const_functor_interface.html#a0bef610370b12d0a7f680a31575cbc09":[1,0,0,205,127]
+"classvrv_1_1_const_functor_interface.html#a098890497f17291a39598e5e2b561fd9":[1,0,0,205,75]
 };
