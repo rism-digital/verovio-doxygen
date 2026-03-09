@@ -1,5 +1,7 @@
 var NAVTREEINDEX32 =
 {
+"group__nodoc.html#ga942ab5856517907ea4f2082d9f35f532":[0,0,2],
+"group__nodoc.html#ga942ab5856517907ea4f2082d9f35f532":[1,0,0,422,16],
 "group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d":[0,0,7],
 "group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d":[1,0,0,422,52],
 "group__nodoc.html#gabd5f684704d8e4736ea416e43cdc5827":[1,0,0,422,46],
@@ -247,7 +249,5 @@ var NAVTREEINDEX32 =
 "transposition_8h_source.html":[2,0,244],
 "trill_8h_source.html":[2,0,245],
 "tuning_8h_source.html":[2,0,246],
-"tuplet_8h_source.html":[2,0,247],
-"turn_8h_source.html":[2,0,248],
-"unclear_8h_source.html":[2,0,249]
+"tuplet_8h_source.html":[2,0,247]
 };
