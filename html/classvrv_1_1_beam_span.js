@@ -10,6 +10,7 @@ var classvrv_1_1_beam_span =
     [ "AddSpanningSegment", "classvrv_1_1_beam_span.html#a07172e8f13f4577611883be10ed74ac0", null ],
     [ "ClearBeamSegments", "classvrv_1_1_beam_span.html#ab2ed5da83b69d9d07dfe84f561debb83", null ],
     [ "Clone", "classvrv_1_1_beam_span.html#a517b985b3f088f8694392afde8f48d00", null ],
+    [ "CloneReset", "classvrv_1_1_beam_span.html#a63b9e203e0fbc2bcea798a00cf4b1b17", null ],
     [ "GetBeamedElements", "classvrv_1_1_beam_span.html#a3b5c3febdf9ce62ce2b4c52eb7024d87", null ],
     [ "GetClassName", "classvrv_1_1_beam_span.html#a66e5f24e85ce62d3f04454faa07928ed", null ],
     [ "GetPlistInterface", "classvrv_1_1_beam_span.html#a8e8949725dad8fc03ba193cf7d899c08", null ],

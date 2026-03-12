@@ -6,10 +6,10 @@
     <includes refid="setscoredeffunctor_8h" local="no">setscoredeffunctor.h</includes>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors</header>
-      <memberdef kind="function" id="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1ad204783cce6ac7dfa0f8e7d5c73ab5b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1a2dd56e74354fcb6a63e351cb5942631b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>vrv::ReplaceDrawingValuesInStaffDefFunctor::ReplaceDrawingValuesInStaffDefFunctor</definition>
-        <argsstring>(const Clef *clef, const KeySig *keySig, const Mensur *mensur, const MeterSig *meterSig, const MeterSigGrp *meterSigGrp)</argsstring>
+        <argsstring>(const Clef *clef, const KeySig *keySig, const Mensur *mensur, const MeterSig *meterSig, const MeterSigGrp *meterSigGrp, const ScoreDef *newScoreDef, int &amp;redrawFlags)</argsstring>
         <name>ReplaceDrawingValuesInStaffDefFunctor</name>
         <param>
           <type>const <ref refid="classvrv_1_1_clef" kindref="compound">Clef</ref> *</type>
@@ -30,6 +30,14 @@
         <param>
           <type>const <ref refid="classvrv_1_1_meter_sig_grp" kindref="compound">MeterSigGrp</ref> *</type>
           <declname>meterSigGrp</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classvrv_1_1_score_def" kindref="compound">ScoreDef</ref> *</type>
+          <declname>newScoreDef</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>redrawFlags</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -139,6 +147,32 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" line="61" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" bodystart="61" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1a9d434935366ed2b315d05be4398ddb0a" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classvrv_1_1_score_def" kindref="compound">ScoreDef</ref> *</type>
+        <definition>const ScoreDef* vrv::ReplaceDrawingValuesInStaffDefFunctor::m_newScoreDef</definition>
+        <argsstring></argsstring>
+        <name>m_newScoreDef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" line="63" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1a55a8b9e52b177d94d1853bfca10e1c5c" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* vrv::ReplaceDrawingValuesInStaffDefFunctor::m_redrawFlags</definition>
+        <argsstring></argsstring>
+        <name>m_redrawFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" line="65" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1aae06c24dbc77ad0589b26828ea1d2237" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
@@ -211,7 +245,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" line="22" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" bodystart="22" bodyend="62"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" line="22" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" bodystart="22" bodyend="66"/>
     <listofallmembers>
       <member refid="classvrv_1_1_functor_1a49b8e700f8f3b3b232d6a7e558438908" prot="public" virt="non-virtual"><scope>vrv::ReplaceDrawingValuesInStaffDefFunctor</scope><name>Functor</name></member>
       <member refid="classvrv_1_1_functor_base_1a45d9ca7642da874e18b1d20a086fa015" prot="public" virt="non-virtual"><scope>vrv::ReplaceDrawingValuesInStaffDefFunctor</scope><name>FunctorBase</name></member>
@@ -225,7 +259,9 @@
       <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1a8b32a249db1f0edf98780fd42d7cfffd" prot="private" virt="non-virtual"><scope>vrv::ReplaceDrawingValuesInStaffDefFunctor</scope><name>m_mensur</name></member>
       <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1a1198d694354b0b5b7e9508716fd8d68d" prot="private" virt="non-virtual"><scope>vrv::ReplaceDrawingValuesInStaffDefFunctor</scope><name>m_meterSig</name></member>
       <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1ad73202b79c26389e884f41ed500c1288" prot="private" virt="non-virtual"><scope>vrv::ReplaceDrawingValuesInStaffDefFunctor</scope><name>m_meterSigGrp</name></member>
-      <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1ad204783cce6ac7dfa0f8e7d5c73ab5b9" prot="public" virt="non-virtual"><scope>vrv::ReplaceDrawingValuesInStaffDefFunctor</scope><name>ReplaceDrawingValuesInStaffDefFunctor</name></member>
+      <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1a9d434935366ed2b315d05be4398ddb0a" prot="private" virt="non-virtual"><scope>vrv::ReplaceDrawingValuesInStaffDefFunctor</scope><name>m_newScoreDef</name></member>
+      <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1a55a8b9e52b177d94d1853bfca10e1c5c" prot="private" virt="non-virtual"><scope>vrv::ReplaceDrawingValuesInStaffDefFunctor</scope><name>m_redrawFlags</name></member>
+      <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1a2dd56e74354fcb6a63e351cb5942631b" prot="public" virt="non-virtual"><scope>vrv::ReplaceDrawingValuesInStaffDefFunctor</scope><name>ReplaceDrawingValuesInStaffDefFunctor</name></member>
       <member refid="classvrv_1_1_functor_base_1a08c690f2a45f5c15e38c86f1d461f02c" prot="public" virt="non-virtual"><scope>vrv::ReplaceDrawingValuesInStaffDefFunctor</scope><name>ResetCode</name></member>
       <member refid="classvrv_1_1_functor_base_1af34204cf6852d525df006eb588cb2111" prot="public" virt="non-virtual"><scope>vrv::ReplaceDrawingValuesInStaffDefFunctor</scope><name>SetCode</name></member>
       <member refid="classvrv_1_1_functor_base_1a1626c36afa525748588b3de2d4312907" prot="public" virt="non-virtual"><scope>vrv::ReplaceDrawingValuesInStaffDefFunctor</scope><name>SetDirection</name></member>

@@ -124,6 +124,7 @@ var annotated_dup =
       [ "Corr", "classvrv_1_1_corr.html", "classvrv_1_1_corr" ],
       [ "Course", "classvrv_1_1_course.html", "classvrv_1_1_course" ],
       [ "CpMark", "classvrv_1_1_cp_mark.html", "classvrv_1_1_cp_mark" ],
+      [ "CustomTuning", "classvrv_1_1_custom_tuning.html", "classvrv_1_1_custom_tuning" ],
       [ "Custos", "classvrv_1_1_custos.html", "classvrv_1_1_custos" ],
       [ "Damage", "classvrv_1_1_damage.html", "classvrv_1_1_damage" ],
       [ "Del", "classvrv_1_1_del.html", "classvrv_1_1_del" ],

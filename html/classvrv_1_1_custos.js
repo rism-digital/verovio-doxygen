@@ -13,6 +13,8 @@ var classvrv_1_1_custos =
     [ "GetOffsetInterface", "classvrv_1_1_custos.html#a18622d565ec8e15b8c5834ddc3f82a0f", null ],
     [ "GetPitchInterface", "classvrv_1_1_custos.html#a90dfd0fb598e68f2f39a7e96f618440e", null ],
     [ "GetPitchInterface", "classvrv_1_1_custos.html#a7c0e3a01af3e2a957993128301cc8f84", null ],
+    [ "GetPositionInterface", "classvrv_1_1_custos.html#a19ac4b20ac7def5f55aed3495c398f8a", null ],
+    [ "GetPositionInterface", "classvrv_1_1_custos.html#a251b45684bc321a64f17aba1d1a9d115", null ],
     [ "HasToBeAligned", "classvrv_1_1_custos.html#a6bfa3e27b29e13b40e346adb3dcbaacf", null ],
     [ "IsSupportedChild", "classvrv_1_1_custos.html#aa60c460f934eb19113c2b4162b36a77f", null ],
     [ "Reset", "classvrv_1_1_custos.html#ac349d697333ee8966b9a8dc845b772b5", null ]
