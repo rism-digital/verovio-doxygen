@@ -1,9 +1,12 @@
 var NAVTREEINDEX32 =
 {
-"group__nodoc.html#ga942ab5856517907ea4f2082d9f35f532":[0,0,2],
+"group__nodoc.html#ga80b1e5c4211c1f7972d55cf2e4cd6c16":[1,0,0,422,74],
+"group__nodoc.html#ga92b5b63c8184f79a52d5d34764377979":[0,0,4],
+"group__nodoc.html#ga92b5b63c8184f79a52d5d34764377979":[1,0,0,422,20],
 "group__nodoc.html#ga942ab5856517907ea4f2082d9f35f532":[1,0,0,422,16],
-"group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d":[0,0,7],
+"group__nodoc.html#ga942ab5856517907ea4f2082d9f35f532":[0,0,2],
 "group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d":[1,0,0,422,52],
+"group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d":[0,0,7],
 "group__nodoc.html#gabd5f684704d8e4736ea416e43cdc5827":[1,0,0,422,46],
 "group__nodoc.html#gae5a104614acc4edf6794abe71d027210":[0,0,0],
 "group__nodoc.html#gae5a104614acc4edf6794abe71d027210":[1,0,0,422,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX32 =
 "toolkit_8h_source.html":[2,0,241],
 "toolkitdef_8h_source.html":[2,0,242],
 "transposefunctor_8h_source.html":[2,0,243],
-"transposition_8h_source.html":[2,0,244],
-"trill_8h_source.html":[2,0,245],
-"tuning_8h_source.html":[2,0,246],
-"tuplet_8h_source.html":[2,0,247]
+"transposition_8h_source.html":[2,0,244]
 };

@@ -54,6 +54,7 @@ var classvrv_1_1_staff =
     [ "IsTabLuteFrench", "classvrv_1_1_staff.html#a7dc0cc5194f98d2afe9f423e9dbe11a5", null ],
     [ "IsTabLuteGerman", "classvrv_1_1_staff.html#abf152654163c36e7777148cd7918960e", null ],
     [ "IsTabLuteItalian", "classvrv_1_1_staff.html#a8597e4878ce9408df16eb50b2e124072", null ],
+    [ "IsTabStaffLike", "classvrv_1_1_staff.html#a4d6d414efbb7dc982f190d3689d07f10", null ],
     [ "IsTabWithStemsOutside", "classvrv_1_1_staff.html#a9b3e71b82af2a34de350fe10d438ac4f", null ],
     [ "Reset", "classvrv_1_1_staff.html#a5d121ffdcc450f5e40f8066626ed7ecf", null ],
     [ "SetAlignment", "classvrv_1_1_staff.html#ae1946399a16d77b31e81fe40fd517695", null ],

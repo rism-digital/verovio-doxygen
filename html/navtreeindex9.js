@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"classvrv_1_1_editor_toolkit_neume.html#abaed747521c37f3afa1ff9f3048a3c47":[1,0,0,153,42],
+"classvrv_1_1_editor_toolkit_neume.html#abb945ed27a7e5f9755873826ae100ca4":[1,0,0,153,19],
 "classvrv_1_1_editor_toolkit_neume.html#ac6b52c8a69a757f30c5c348484053794":[1,0,0,153,36],
 "classvrv_1_1_editor_toolkit_neume.html#ac7e46c6268edd3fd3c70b1c77943cec2":[1,0,0,153,27],
 "classvrv_1_1_editor_toolkit_neume.html#acdaf0c47350d8e452dc052d8c00bf7a0":[1,0,0,153,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "classvrv_1_1_find_by_i_d_functor.html#a11845a8865189b168f44227aa63598e8":[1,0,0,179,3],
 "classvrv_1_1_find_by_i_d_functor.html#a8b07299eb1ee0a1f1dad086bb796d09b":[1,0,0,179,4],
 "classvrv_1_1_find_by_i_d_functor.html#acfbc1f87f35794aeb52c5dd1d94e54b2":[1,0,0,179,1],
-"classvrv_1_1_find_by_i_d_functor.html#af789f1f9e4174e4960a4d495226b0ddf":[1,0,0,179,2],
-"classvrv_1_1_find_element_in_layer_staff_def_functor.html":[1,0,0,185],
-"classvrv_1_1_find_element_in_layer_staff_def_functor.html#a1cf62fad27c99d72e5a0bcd7646caa08":[1,0,0,185,5]
+"classvrv_1_1_find_by_i_d_functor.html#af789f1f9e4174e4960a4d495226b0ddf":[1,0,0,179,2]
 };

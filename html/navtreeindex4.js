@@ -30,10 +30,12 @@ var NAVTREEINDEX4 =
 "classvrv_1_1_calc_b_box_overflows_functor.html#ad8915cd6670d6879222c91a33b0b8540":[1,0,0,70,1],
 "classvrv_1_1_calc_chord_note_heads_functor.html":[1,0,0,71],
 "classvrv_1_1_calc_chord_note_heads_functor.html#a086677c0785dccb4b1a7861521d0914d":[1,0,0,71,3],
+"classvrv_1_1_calc_chord_note_heads_functor.html#a1893cb33642a5bf5b5b5d97f111a6ef3":[1,0,0,71,6],
 "classvrv_1_1_calc_chord_note_heads_functor.html#a3910577425016cdea45b0e80c86e78b7":[1,0,0,71,1],
 "classvrv_1_1_calc_chord_note_heads_functor.html#a4287fb223b8645a7a84b91d9fd352d3f":[1,0,0,71,4],
 "classvrv_1_1_calc_chord_note_heads_functor.html#a6f25dbbbb456e3161f5eea574bc5a788":[1,0,0,71,2],
 "classvrv_1_1_calc_chord_note_heads_functor.html#a77bfbb87438c6126a82b4dc901fe834a":[1,0,0,71,0],
+"classvrv_1_1_calc_chord_note_heads_functor.html#a96641e785890009e63b17831a1f8f472":[1,0,0,71,5],
 "classvrv_1_1_calc_dots_functor.html":[1,0,0,72],
 "classvrv_1_1_calc_dots_functor.html#a38748048eb4c235cd6195aa7221be302":[1,0,0,72,2],
 "classvrv_1_1_calc_dots_functor.html#a48fa339aaf05538a2755125ea64209a4":[1,0,0,72,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "classvrv_1_1_const_functor_interface.html#a06cd945bab0ce5c7fb0880ef7daab5cc":[1,0,0,205,13],
 "classvrv_1_1_const_functor_interface.html#a06e1395bdb81f8403df6ff4ceb1edf59":[1,0,0,205,166],
 "classvrv_1_1_const_functor_interface.html#a073b5d481c78a4778badf61c9ad45eda":[1,0,0,205,261],
-"classvrv_1_1_const_functor_interface.html#a08cd8bb1770fc190e16f1107925dbb7d":[1,0,0,205,31],
-"classvrv_1_1_const_functor_interface.html#a096fe13c92fe97ee00e2806d208951b5":[1,0,0,205,275],
-"classvrv_1_1_const_functor_interface.html#a098890497f17291a39598e5e2b561fd9":[1,0,0,205,75]
+"classvrv_1_1_const_functor_interface.html#a08cd8bb1770fc190e16f1107925dbb7d":[1,0,0,205,31]
 };
