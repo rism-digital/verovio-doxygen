@@ -88,6 +88,7 @@ var files_dup =
     [ "editortoolkit_cmn.h", "editortoolkit__cmn_8h_source.html", null ],
     [ "editortoolkit_mensural.h", "editortoolkit__mensural_8h_source.html", null ],
     [ "editortoolkit_neume.h", "editortoolkit__neume_8h_source.html", null ],
+    [ "editortoolkit_shared.h", "editortoolkit__shared_8h_source.html", null ],
     [ "elementpart.h", "elementpart_8h_source.html", null ],
     [ "ending.h", "ending_8h_source.html", null ],
     [ "expan.h", "expan_8h_source.html", null ],

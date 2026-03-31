@@ -2,9 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classvrv_1_1_editor_toolkit" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>vrv::EditorToolkit</compoundname>
-    <derivedcompoundref refid="classvrv_1_1_editor_toolkit_c_m_n" prot="public" virt="non-virtual">vrv::EditorToolkitCMN</derivedcompoundref>
-    <derivedcompoundref refid="classvrv_1_1_editor_toolkit_mensural" prot="public" virt="non-virtual">vrv::EditorToolkitMensural</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_editor_toolkit_neume" prot="public" virt="non-virtual">vrv::EditorToolkitNeume</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_editor_toolkit_shared" prot="public" virt="non-virtual">vrv::EditorToolkitShared</derivedcompoundref>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classvrv_1_1_editor_toolkit_1a7f13a9e3501c89738646d52704854230" prot="protected" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
@@ -86,9 +85,8 @@
         <definition>virtual bool vrv::EditorToolkit::ParseEditorAction</definition>
         <argsstring>(const std::string &amp;json_editorAction)=0</argsstring>
         <name>ParseEditorAction</name>
-        <reimplementedby refid="classvrv_1_1_editor_toolkit_c_m_n_1aeb8a59e5f10e9448c8fa0e3a747a02bf">ParseEditorAction</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_editor_toolkit_mensural_1a2270595080e4c4618c355cea7d71f0b1">ParseEditorAction</reimplementedby>
         <reimplementedby refid="classvrv_1_1_editor_toolkit_neume_1a2308ad0010cf842ec7c9e86252f15850">ParseEditorAction</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_editor_toolkit_shared_1a175437957380f6c62e8c2384b2e03936">ParseEditorAction</reimplementedby>
         <param>
           <type>const std::string &amp;</type>
           <declname>json_editorAction</declname>
@@ -107,8 +105,8 @@
         <definition>virtual std::string vrv::EditorToolkit::EditInfo</definition>
         <argsstring>()</argsstring>
         <name>EditInfo</name>
-        <reimplementedby refid="classvrv_1_1_editor_toolkit_c_m_n_1a8cfefe067438281e92d6e4a3fe92b851">EditInfo</reimplementedby>
         <reimplementedby refid="classvrv_1_1_editor_toolkit_neume_1a73a7c47fe8d5420da6467592ece61e55">EditInfo</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_editor_toolkit_shared_1a60502d6d24a7c6ef060c80226c2dca92">EditInfo</reimplementedby>
         <briefdescription>
 <para>Get information on the last editor function used. </para>
         </briefdescription>
@@ -227,13 +225,19 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
-        <label>vrv::EditorToolkitCMN</label>
-        <link refid="classvrv_1_1_editor_toolkit_c_m_n"/>
+      <node id="3">
+        <label>vrv::EditorToolkitShared</label>
+        <link refid="classvrv_1_1_editor_toolkit_shared"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
       <node id="4">
+        <label>vrv::EditorToolkitCMN</label>
+        <link refid="classvrv_1_1_editor_toolkit_c_m_n"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
         <label>vrv::EditorToolkitNeume</label>
         <link refid="classvrv_1_1_editor_toolkit_neume"/>
         <childnode refid="1" relation="public-inheritance">
@@ -243,10 +247,10 @@
         <label>vrv::EditorToolkit</label>
         <link refid="classvrv_1_1_editor_toolkit"/>
       </node>
-      <node id="3">
+      <node id="5">
         <label>vrv::EditorToolkitMensural</label>
         <link refid="classvrv_1_1_editor_toolkit_mensural"/>
-        <childnode refid="1" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

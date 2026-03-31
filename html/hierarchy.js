@@ -1142,9 +1142,11 @@ var hierarchy =
       [ "vrv::System", "classvrv_1_1_system.html", null ]
     ] ],
     [ "vrv::EditorToolkit", "classvrv_1_1_editor_toolkit.html", [
-      [ "vrv::EditorToolkitCMN", "classvrv_1_1_editor_toolkit_c_m_n.html", null ],
-      [ "vrv::EditorToolkitMensural", "classvrv_1_1_editor_toolkit_mensural.html", null ],
-      [ "vrv::EditorToolkitNeume", "classvrv_1_1_editor_toolkit_neume.html", null ]
+      [ "vrv::EditorToolkitNeume", "classvrv_1_1_editor_toolkit_neume.html", null ],
+      [ "vrv::EditorToolkitShared", "classvrv_1_1_editor_toolkit_shared.html", [
+        [ "vrv::EditorToolkitCMN", "classvrv_1_1_editor_toolkit_c_m_n.html", null ],
+        [ "vrv::EditorToolkitMensural", "classvrv_1_1_editor_toolkit_mensural.html", null ]
+      ] ]
     ] ],
     [ "vrv::ExpansionMap", "classvrv_1_1_expansion_map.html", null ],
     [ "vrv::FeatureExtractor", "classvrv_1_1_feature_extractor.html", null ],
