@@ -838,7 +838,7 @@
 <codeline lineno="370"><highlight class="normal"></highlight></codeline>
 <codeline lineno="376" refid="classvrv_1_1_doc_1a1f5b58cd73b6f04ce22ebf231c69db32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_doc_1a1f5b58cd73b6f04ce22ebf231c69db32" kindref="member">ConvertToPageBasedDoc</ref>();</highlight></codeline>
 <codeline lineno="377"><highlight class="normal"></highlight></codeline>
-<codeline lineno="383" refid="classvrv_1_1_doc_1a4dbe6bc0e603e609a9ff44138e84f3e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_doc_1a4dbe6bc0e603e609a9ff44138e84f3e1" kindref="member">ConvertToCastOffMensuralDoc</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>castOff);</highlight></codeline>
+<codeline lineno="383" refid="classvrv_1_1_doc_1af1ed41f1019f31648a84243763d8caec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_doc_1af1ed41f1019f31648a84243763d8caec" kindref="member">ConvertToCastOffMensuralDoc</ref>(MensuralCastOffType<sp/>castOff);</highlight></codeline>
 <codeline lineno="384"><highlight class="normal"></highlight></codeline>
 <codeline lineno="388" refid="classvrv_1_1_doc_1a3e10fe179621ec933eb5eefcb30efffd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_doc_1a3e10fe179621ec933eb5eefcb30efffd" kindref="member">ConvertToCmnDoc</ref>();</highlight></codeline>
 <codeline lineno="389"><highlight class="normal"></highlight></codeline>
@@ -991,23 +991,25 @@
 <codeline lineno="725"><highlight class="normal"></highlight></codeline>
 <codeline lineno="731"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_markup;</highlight></codeline>
 <codeline lineno="732"><highlight class="normal"></highlight></codeline>
-<codeline lineno="737"><highlight class="normal"><sp/><sp/><sp/><sp/>data_BOOLEAN<sp/>m_isMensuralMusicOnly;</highlight></codeline>
-<codeline lineno="738"><highlight class="normal"></highlight></codeline>
-<codeline lineno="743"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_isNeumeLines;</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/>data_BOOLEAN<sp/>m_isMensuralMusicOnly;</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"></highlight></codeline>
+<codeline lineno="743"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_mensuralCastOff;</highlight></codeline>
 <codeline lineno="744"><highlight class="normal"></highlight></codeline>
-<codeline lineno="746"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_pageWidth;</highlight></codeline>
-<codeline lineno="748"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_pageHeight;</highlight></codeline>
-<codeline lineno="750"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_pageMarginBottom;</highlight></codeline>
-<codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_pageMarginLeft;</highlight></codeline>
-<codeline lineno="754"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_pageMarginRight;</highlight></codeline>
-<codeline lineno="756"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_pageMarginTop;</highlight></codeline>
-<codeline lineno="757"><highlight class="normal"></highlight></codeline>
-<codeline lineno="759"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_facsimile" kindref="compound">Facsimile</ref><sp/>*m_facsimile;</highlight></codeline>
-<codeline lineno="760"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="761"><highlight class="normal"></highlight></codeline>
-<codeline lineno="762"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="749"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_isNeumeLines;</highlight></codeline>
+<codeline lineno="750"><highlight class="normal"></highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_pageWidth;</highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_pageHeight;</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_pageMarginBottom;</highlight></codeline>
+<codeline lineno="758"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_pageMarginLeft;</highlight></codeline>
+<codeline lineno="760"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_pageMarginRight;</highlight></codeline>
+<codeline lineno="762"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_pageMarginTop;</highlight></codeline>
 <codeline lineno="763"><highlight class="normal"></highlight></codeline>
-<codeline lineno="764"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="765"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_facsimile" kindref="compound">Facsimile</ref><sp/>*m_facsimile;</highlight></codeline>
+<codeline lineno="766"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="767"><highlight class="normal"></highlight></codeline>
+<codeline lineno="768"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="769"><highlight class="normal"></highlight></codeline>
+<codeline lineno="770"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/doc.h"/>
   </compounddef>
