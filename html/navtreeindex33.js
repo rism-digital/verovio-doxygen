@@ -1,5 +1,8 @@
 var NAVTREEINDEX33 =
 {
+"toolkitdef_8h_source.html":[2,0,243],
+"transposefunctor_8h_source.html":[2,0,244],
+"transposition_8h_source.html":[2,0,245],
 "trill_8h_source.html":[2,0,246],
 "tuning_8h_source.html":[2,0,247],
 "tuplet_8h_source.html":[2,0,248],

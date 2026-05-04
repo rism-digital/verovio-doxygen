@@ -80,5 +80,8 @@ var classvrv_1_1_toolkit =
     [ "SetResourcePath", "classvrv_1_1_toolkit.html#aed5c67aae6d92d7c8d1d68edf5a5ae65", null ],
     [ "SetScale", "classvrv_1_1_toolkit.html#a53b48c97c58b0da6e6083193ebd966e4", null ],
     [ "ValidatePAE", "classvrv_1_1_toolkit.html#a7311cd71df650b10f1ce75e037b49268", null ],
-    [ "ValidatePAEFile", "classvrv_1_1_toolkit.html#a00a6268261b17ac90ba802ea9780e2df", null ]
+    [ "ValidatePAEFile", "classvrv_1_1_toolkit.html#a00a6268261b17ac90ba802ea9780e2df", null ],
+    [ "m_doc", "classvrv_1_1_toolkit.html#a5e0a77331e07aefa6f9471a1bc34f185", null ],
+    [ "m_docSelection", "classvrv_1_1_toolkit.html#a308a98315c470e7f7466c8c5e9439911", null ],
+    [ "m_view", "classvrv_1_1_toolkit.html#a41a694f23fc26f10b27c56dccf0cec68", null ]
 ];
