@@ -8,12 +8,14 @@
     <basecompoundref prot="public" virt="non-virtual">AttPitch</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">AttPitchGes</basecompoundref>
     <derivedcompoundref refid="classvrv_1_1_custos" prot="public" virt="non-virtual">vrv::Custos</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_episema" prot="public" virt="non-virtual">vrv::Episema</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_key_accid" prot="public" virt="non-virtual">vrv::KeyAccid</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_liquescent" prot="public" virt="non-virtual">vrv::Liquescent</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_nc" prot="public" virt="non-virtual">vrv::Nc</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_note" prot="public" virt="non-virtual">vrv::Note</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_oriscus" prot="public" virt="non-virtual">vrv::Oriscus</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_quilisma" prot="public" virt="non-virtual">vrv::Quilisma</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_strophicus" prot="public" virt="non-virtual">vrv::Strophicus</derivedcompoundref>
     <includes refid="pitchinterface_8h" local="no">pitchinterface.h</includes>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors, reset methods</header>
@@ -52,6 +54,7 @@
         <name>Reset</name>
         <reimplements refid="classvrv_1_1_interface_1a5dac3707db3650101729ff5610bb6200">Reset</reimplements>
         <reimplementedby refid="classvrv_1_1_quilisma_1a36dfcd7d82b8ea67e7ea2afeff406733">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_strophicus_1a0f3d039f076d173b8a954618ae24bf72">Reset</reimplementedby>
         <briefdescription>
 <para>Virtual reset method. </para>
         </briefdescription>
@@ -312,7 +315,7 @@
 <para>It is not an abstract class but should not be instanciated directly. </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="13">
+      <node id="14">
         <label>vrv::Quilisma</label>
         <link refid="classvrv_1_1_quilisma"/>
         <childnode refid="1" relation="public-inheritance">
@@ -331,13 +334,19 @@
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="12">
+      <node id="13">
         <label>vrv::Oriscus</label>
         <link refid="classvrv_1_1_oriscus"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11">
+      <node id="15">
+        <label>vrv::Strophicus</label>
+        <link refid="classvrv_1_1_strophicus"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
         <label>vrv::Note</label>
         <link refid="classvrv_1_1_note"/>
         <childnode refid="1" relation="public-inheritance">
@@ -357,10 +366,16 @@
         <childnode refid="6" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="8">
+        <label>vrv::Episema</label>
+        <link refid="classvrv_1_1_episema"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="5">
         <label>AttPitch</label>
       </node>
-      <node id="10">
+      <node id="11">
         <label>vrv::Nc</label>
         <link refid="classvrv_1_1_nc"/>
         <childnode refid="1" relation="public-inheritance">
@@ -369,7 +384,7 @@
       <node id="6">
         <label>AttPitchGes</label>
       </node>
-      <node id="8">
+      <node id="9">
         <label>vrv::KeyAccid</label>
         <link refid="classvrv_1_1_key_accid"/>
         <childnode refid="1" relation="public-inheritance">
@@ -378,7 +393,7 @@
       <node id="4">
         <label>AttOctave</label>
       </node>
-      <node id="9">
+      <node id="10">
         <label>vrv::Liquescent</label>
         <link refid="classvrv_1_1_liquescent"/>
         <childnode refid="1" relation="public-inheritance">

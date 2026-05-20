@@ -8,6 +8,8 @@ var classvrv_1_1_quilisma =
     [ "GetOffsetInterface", "classvrv_1_1_quilisma.html#af0bd9975dae5507780e1970f4eca1606", null ],
     [ "GetPitchInterface", "classvrv_1_1_quilisma.html#ad3ed1e47b429789388f83c1cc3bea5f3", null ],
     [ "GetPitchInterface", "classvrv_1_1_quilisma.html#a5131e00dce7614b214c2a76cf979e8f9", null ],
+    [ "GetPositionInterface", "classvrv_1_1_quilisma.html#adac251fd156b8347f9f2f91ffcefef17", null ],
+    [ "GetPositionInterface", "classvrv_1_1_quilisma.html#af8fefe7c040542e6b0fdf1c12ba09e23", null ],
     [ "HasToBeAligned", "classvrv_1_1_quilisma.html#a77ad108a9cde5cca2cdc8c9a001a45f2", null ],
     [ "Reset", "classvrv_1_1_quilisma.html#a36dfcd7d82b8ea67e7ea2afeff406733", null ]
 ];

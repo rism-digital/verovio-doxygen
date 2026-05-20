@@ -144,6 +144,7 @@ var hierarchy =
         [ "vrv::DivLineAttr", "classvrv_1_1_div_line_attr.html", null ]
       ] ],
       [ "vrv::Dot", "classvrv_1_1_dot.html", null ],
+      [ "vrv::Episema", "classvrv_1_1_episema.html", null ],
       [ "vrv::GraceGrp", "classvrv_1_1_grace_grp.html", null ],
       [ "vrv::GrpSym", "classvrv_1_1_grp_sym.html", null ],
       [ "vrv::HalfmRpt", "classvrv_1_1_halfm_rpt.html", null ],
@@ -163,6 +164,7 @@ var hierarchy =
       [ "vrv::Quilisma", "classvrv_1_1_quilisma.html", null ],
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
       [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
+      [ "vrv::Strophicus", "classvrv_1_1_strophicus.html", null ],
       [ "vrv::Syllable", "classvrv_1_1_syllable.html", null ],
       [ "vrv::Symbol", "classvrv_1_1_symbol.html", null ],
       [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ],
@@ -193,6 +195,7 @@ var hierarchy =
         [ "vrv::DivLine", "classvrv_1_1_div_line.html", null ],
         [ "vrv::Dot", "classvrv_1_1_dot.html", null ],
         [ "vrv::Dots", "classvrv_1_1_dots.html", null ],
+        [ "vrv::Episema", "classvrv_1_1_episema.html", null ],
         [ "vrv::FTrem", "classvrv_1_1_f_trem.html", null ],
         [ "vrv::Flag", "classvrv_1_1_flag.html", null ],
         [ "vrv::GenericLayerElement", "classvrv_1_1_generic_layer_element.html", null ],
@@ -221,6 +224,7 @@ var hierarchy =
         [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
         [ "vrv::Space", "classvrv_1_1_space.html", null ],
         [ "vrv::Stem", "classvrv_1_1_stem.html", null ],
+        [ "vrv::Strophicus", "classvrv_1_1_strophicus.html", null ],
         [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
         [ "vrv::Syllable", "classvrv_1_1_syllable.html", null ],
         [ "vrv::TabDurSym", "classvrv_1_1_tab_dur_sym.html", null ],
@@ -302,6 +306,9 @@ var hierarchy =
     ] ],
     [ "AttEndings", null, [
       [ "vrv::ScoreDef", "classvrv_1_1_score_def.html", null ]
+    ] ],
+    [ "AttEpisemaVis", null, [
+      [ "vrv::Episema", "classvrv_1_1_episema.html", null ]
     ] ],
     [ "AttExtender", null, [
       [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
@@ -598,12 +605,14 @@ var hierarchy =
     [ "AttNoteGes", null, [
       [ "vrv::PitchInterface", "classvrv_1_1_pitch_interface.html", [
         [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
+        [ "vrv::Episema", "classvrv_1_1_episema.html", null ],
         [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
         [ "vrv::Liquescent", "classvrv_1_1_liquescent.html", null ],
         [ "vrv::Nc", "classvrv_1_1_nc.html", null ],
         [ "vrv::Note", "classvrv_1_1_note.html", null ],
         [ "vrv::Oriscus", "classvrv_1_1_oriscus.html", null ],
-        [ "vrv::Quilisma", "classvrv_1_1_quilisma.html", null ]
+        [ "vrv::Quilisma", "classvrv_1_1_quilisma.html", null ],
+        [ "vrv::Strophicus", "classvrv_1_1_strophicus.html", null ]
       ] ]
     ] ],
     [ "AttNoteHeads", null, [
@@ -808,6 +817,7 @@ var hierarchy =
         [ "vrv::Accid", "classvrv_1_1_accid.html", null ],
         [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
         [ "vrv::Dot", "classvrv_1_1_dot.html", null ],
+        [ "vrv::Episema", "classvrv_1_1_episema.html", null ],
         [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
         [ "vrv::Liquescent", "classvrv_1_1_liquescent.html", null ],
         [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
@@ -816,7 +826,8 @@ var hierarchy =
         [ "vrv::Note", "classvrv_1_1_note.html", null ],
         [ "vrv::Oriscus", "classvrv_1_1_oriscus.html", null ],
         [ "vrv::Quilisma", "classvrv_1_1_quilisma.html", null ],
-        [ "vrv::Rest", "classvrv_1_1_rest.html", null ]
+        [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
+        [ "vrv::Strophicus", "classvrv_1_1_strophicus.html", null ]
       ] ]
     ] ],
     [ "AttStaffLocPitched", null, [
@@ -979,6 +990,7 @@ var hierarchy =
         [ "vrv::Custos", "classvrv_1_1_custos.html", null ],
         [ "vrv::DivLine", "classvrv_1_1_div_line.html", null ],
         [ "vrv::Dot", "classvrv_1_1_dot.html", null ],
+        [ "vrv::Episema", "classvrv_1_1_episema.html", null ],
         [ "vrv::HalfmRpt", "classvrv_1_1_halfm_rpt.html", null ],
         [ "vrv::Liquescent", "classvrv_1_1_liquescent.html", null ],
         [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
@@ -988,6 +1000,7 @@ var hierarchy =
         [ "vrv::Oriscus", "classvrv_1_1_oriscus.html", null ],
         [ "vrv::Quilisma", "classvrv_1_1_quilisma.html", null ],
         [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
+        [ "vrv::Strophicus", "classvrv_1_1_strophicus.html", null ],
         [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
         [ "vrv::TabGrp", "classvrv_1_1_tab_grp.html", null ]
       ] ]
@@ -1280,6 +1293,7 @@ var hierarchy =
     [ "vrv::Input", "classvrv_1_1_input.html", [
       [ "vrv::ABCInput", "classvrv_1_1_a_b_c_input.html", null ],
       [ "vrv::CmmeInput", "classvrv_1_1_cmme_input.html", null ],
+      [ "vrv::GABCInput", "classvrv_1_1_g_a_b_c_input.html", null ],
       [ "vrv::HumdrumInput", "classvrv_1_1_humdrum_input.html", null ],
       [ "vrv::MEIInput", "classvrv_1_1_m_e_i_input.html", null ],
       [ "vrv::MusicXmlInput", "classvrv_1_1_music_xml_input.html", null ],
