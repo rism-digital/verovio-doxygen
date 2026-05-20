@@ -118,14 +118,12 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
       </node>
-      <node id="7">
+      <node id="8">
         <label>iomei.h</label>
         <link refid="iomei_8h_source"/>
       </node>
-      <node id="10">
+      <node id="11">
         <label>featureextractor.h</label>
         <link refid="featureextractor_8h_source"/>
       </node>
@@ -133,8 +131,6 @@
         <label>options.h</label>
         <link refid="options_8h"/>
         <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
@@ -144,34 +140,44 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
       </node>
-      <node id="12">
+      <node id="13">
         <label>score.h</label>
         <link refid="score_8h_source"/>
       </node>
-      <node id="6">
+      <node id="4">
         <label>editortoolkit_neume.h</label>
         <link refid="editortoolkit__neume_8h_source"/>
       </node>
-      <node id="13">
+      <node id="14">
         <label>svgdevicecontext.h</label>
         <link refid="svgdevicecontext_8h_source"/>
       </node>
-      <node id="4">
+      <node id="6">
         <label>editortoolkit_cmn.h</label>
         <link refid="editortoolkit__cmn_8h_source"/>
       </node>
-      <node id="5">
+      <node id="7">
         <label>editortoolkit_mensural.h</label>
         <link refid="editortoolkit__mensural_8h_source"/>
       </node>
-      <node id="9">
+      <node id="5">
+        <label>editortoolkit_shared.h</label>
+        <link refid="editortoolkit__shared_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
         <label>expansionmap.h</label>
         <link refid="expansionmap_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="11">
+      <node id="12">
         <label>iohumdrum.h</label>
         <link refid="iohumdrum_8h_source"/>
       </node>
@@ -180,18 +186,20 @@
         <link refid="doc_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
-      <node id="8">
+      <node id="9">
         <label>toolkit.h</label>
         <link refid="toolkit_8h_source"/>
       </node>
@@ -376,7 +384,7 @@
 <codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Option</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>OptionsCategory<sp/>{<sp/>None,<sp/>Base,<sp/>General,<sp/>Json,<sp/>Layout,<sp/>Mensural,<sp/>Margins,<sp/>Midi,<sp/>Selectors,<sp/>Full<sp/>};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>OptionsCategory<sp/>{<sp/>None,<sp/>Base,<sp/>General,<sp/>Json,<sp/>Layout,<sp/>Mensural,<sp/>Margins,<sp/>Midi,<sp/>Neume,<sp/>Selectors,<sp/>Full<sp/>};</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
 <codeline lineno="103" refid="classvrv_1_1_option" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_option" kindref="compound">Option</ref><sp/>{</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
@@ -1068,23 +1076,33 @@
 <codeline lineno="873"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_int_map" kindref="compound">OptionIntMap</ref><sp/>m_mensuralResponsiveView;</highlight></codeline>
 <codeline lineno="874"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_bool" kindref="compound">OptionBool</ref><sp/>m_mensuralToCmn;</highlight></codeline>
 <codeline lineno="875"><highlight class="normal"></highlight></codeline>
-<codeline lineno="879" refid="classvrv_1_1_options_1ab5f675f2cea16512f03af23a2753d2d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_grp" kindref="compound">OptionGrp</ref><sp/><ref refid="classvrv_1_1_options_1ab5f675f2cea16512f03af23a2753d2d8" kindref="member">m_jsonCmdLineOptions</ref>;</highlight></codeline>
+<codeline lineno="879" refid="classvrv_1_1_options_1aab00ec2b33500bafb65c33304ba2cb8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_grp" kindref="compound">OptionGrp</ref><sp/><ref refid="classvrv_1_1_options_1aab00ec2b33500bafb65c33304ba2cb8b" kindref="member">m_neume</ref>;</highlight></codeline>
 <codeline lineno="880"><highlight class="normal"></highlight></codeline>
-<codeline lineno="881"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_string" kindref="compound">OptionString</ref><sp/>m_timemapOptions;</highlight></codeline>
-<codeline lineno="882"><highlight class="normal"></highlight></codeline>
-<codeline lineno="886" refid="classvrv_1_1_options_1a7c05c180e98edd4f8422bbe61b56b36f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_grp" kindref="compound">OptionGrp</ref><sp/><ref refid="classvrv_1_1_options_1a7c05c180e98edd4f8422bbe61b56b36f" kindref="member">m_deprecated</ref>;</highlight></codeline>
-<codeline lineno="887"><highlight class="normal"></highlight></codeline>
-<codeline lineno="888"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="890"><highlight class="normal"><sp/><sp/><sp/><sp/>MapOfStrOptions<sp/>m_items;</highlight></codeline>
-<codeline lineno="891"><highlight class="normal"></highlight></codeline>
-<codeline lineno="892"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;OptionGrp<sp/>*&gt;<sp/>m_grps;</highlight></codeline>
-<codeline lineno="893"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="894"><highlight class="normal"></highlight></codeline>
-<codeline lineno="895"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="896"><highlight class="normal"></highlight></codeline>
-<codeline lineno="897"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>CUSTOM_VEROVIO_OPTIONS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="898"><highlight class="normal"></highlight></codeline>
-<codeline lineno="899"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__VRV_DEF_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="881"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>18-may-2026<sp/>Neume<sp/>options.<sp/>Cover<sp/>GABC<sp/>import<sp/>features<sp/>that<sp/>have<sp/>no<sp/>direct<sp/>MEI<sp/>Neume<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="882"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>counterpart<sp/>(grammar<sp/>rules:<sp/>clef,<sp/>virga_left,<sp/>S-GABC<sp/>sec.<sp/>6.3/6.5)<sp/>plus<sp/>rendering<sp/>tweaks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="883"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>chant<sp/>notation.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="884"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_bool" kindref="compound">OptionBool</ref><sp/>m_gabcAquitanianContext;</highlight></codeline>
+<codeline lineno="885"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_bool" kindref="compound">OptionBool</ref><sp/>m_gabcExtendedSymbols;</highlight></codeline>
+<codeline lineno="886"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_int" kindref="compound">OptionInt</ref><sp/>m_gabcStaffLines;</highlight></codeline>
+<codeline lineno="887"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_bool" kindref="compound">OptionBool</ref><sp/>m_liquescentWithoutTails;</highlight></codeline>
+<codeline lineno="888"><highlight class="normal"></highlight></codeline>
+<codeline lineno="892" refid="classvrv_1_1_options_1ab5f675f2cea16512f03af23a2753d2d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_grp" kindref="compound">OptionGrp</ref><sp/><ref refid="classvrv_1_1_options_1ab5f675f2cea16512f03af23a2753d2d8" kindref="member">m_jsonCmdLineOptions</ref>;</highlight></codeline>
+<codeline lineno="893"><highlight class="normal"></highlight></codeline>
+<codeline lineno="894"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_string" kindref="compound">OptionString</ref><sp/>m_timemapOptions;</highlight></codeline>
+<codeline lineno="895"><highlight class="normal"></highlight></codeline>
+<codeline lineno="899" refid="classvrv_1_1_options_1a7c05c180e98edd4f8422bbe61b56b36f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_option_grp" kindref="compound">OptionGrp</ref><sp/><ref refid="classvrv_1_1_options_1a7c05c180e98edd4f8422bbe61b56b36f" kindref="member">m_deprecated</ref>;</highlight></codeline>
+<codeline lineno="900"><highlight class="normal"></highlight></codeline>
+<codeline lineno="901"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="903"><highlight class="normal"><sp/><sp/><sp/><sp/>MapOfStrOptions<sp/>m_items;</highlight></codeline>
+<codeline lineno="904"><highlight class="normal"></highlight></codeline>
+<codeline lineno="905"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;OptionGrp<sp/>*&gt;<sp/>m_grps;</highlight></codeline>
+<codeline lineno="906"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="907"><highlight class="normal"></highlight></codeline>
+<codeline lineno="908"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="909"><highlight class="normal"></highlight></codeline>
+<codeline lineno="910"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>CUSTOM_VEROVIO_OPTIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="911"><highlight class="normal"></highlight></codeline>
+<codeline lineno="912"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__VRV_DEF_H__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/options.h"/>
   </compounddef>

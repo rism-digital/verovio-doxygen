@@ -270,7 +270,7 @@ $(document).ready(function(){initNavTree('doc_8h_source.html',''); initResizable
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
 <div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="classvrv_1_1_doc.html#a1f5b58cd73b6f04ce22ebf231c69db32">  376</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_doc.html#a1f5b58cd73b6f04ce22ebf231c69db32">ConvertToPageBasedDoc</a>();</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
-<div class="line"><a name="l00383"></a><span class="lineno"><a class="line" href="classvrv_1_1_doc.html#a4dbe6bc0e603e609a9ff44138e84f3e1">  383</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_doc.html#a4dbe6bc0e603e609a9ff44138e84f3e1">ConvertToCastOffMensuralDoc</a>(<span class="keywordtype">bool</span> castOff);</div>
+<div class="line"><a name="l00383"></a><span class="lineno"><a class="line" href="classvrv_1_1_doc.html#af1ed41f1019f31648a84243763d8caec">  383</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_doc.html#af1ed41f1019f31648a84243763d8caec">ConvertToCastOffMensuralDoc</a>(MensuralCastOffType castOff);</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
 <div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="classvrv_1_1_doc.html#a3e10fe179621ec933eb5eefcb30efffd">  388</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_doc.html#a3e10fe179621ec933eb5eefcb30efffd">ConvertToCmnDoc</a>();</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
@@ -423,23 +423,25 @@ $(document).ready(function(){initNavTree('doc_8h_source.html',''); initResizable
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160; </div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    <span class="keywordtype">int</span> m_markup;</div>
 <div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160; </div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    data_BOOLEAN m_isMensuralMusicOnly;</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160; </div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    <span class="keywordtype">bool</span> m_isNeumeLines;</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    data_BOOLEAN m_isMensuralMusicOnly;</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160; </div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    <span class="keywordtype">bool</span> m_mensuralCastOff;</div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160; </div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    <span class="keywordtype">int</span> m_pageWidth;</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <span class="keywordtype">int</span> m_pageHeight;</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    <span class="keywordtype">int</span> m_pageMarginBottom;</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    <span class="keywordtype">int</span> m_pageMarginLeft;</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    <span class="keywordtype">int</span> m_pageMarginRight;</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    <span class="keywordtype">int</span> m_pageMarginTop;</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160; </div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    <a class="code" href="classvrv_1_1_facsimile.html">Facsimile</a> *m_facsimile;</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;};</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160; </div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <span class="keywordtype">bool</span> m_isNeumeLines;</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160; </div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    <span class="keywordtype">int</span> m_pageWidth;</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    <span class="keywordtype">int</span> m_pageHeight;</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    <span class="keywordtype">int</span> m_pageMarginBottom;</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;    <span class="keywordtype">int</span> m_pageMarginLeft;</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    <span class="keywordtype">int</span> m_pageMarginRight;</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;    <span class="keywordtype">int</span> m_pageMarginTop;</div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160; </div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;    <a class="code" href="classvrv_1_1_facsimile.html">Facsimile</a> *m_facsimile;</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;};</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160; </div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160; </div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassvrv_1_1_const_functor_html"><div class="ttname"><a href="classvrv_1_1_const_functor.html">vrv::ConstFunctor</a></div><div class="ttdoc">This abstract class is the base class for all const functors.</div><div class="ttdef"><b>Definition:</b> functor.h:126</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:41</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html_a0159c00c7ea30d9902d52c427e466a33"><div class="ttname"><a href="classvrv_1_1_doc.html#a0159c00c7ea30d9902d52c427e466a33">vrv::Doc::ScoringUpDoc</a></div><div class="ttdeci">void ScoringUpDoc()</div><div class="ttdoc">Calls the scoringUpFunctor and applies it.</div></div>
@@ -467,7 +469,6 @@ $(document).ready(function(){initNavTree('doc_8h_source.html',''); initResizable
 <div class="ttc" id="aclassvrv_1_1_doc_html_a4972e18528807396094ffb1ba9e029ea"><div class="ttname"><a href="classvrv_1_1_doc.html#a4972e18528807396094ffb1ba9e029ea">vrv::Doc::GetResources</a></div><div class="ttdeci">const Resources &amp; GetResources() const</div><div class="ttdoc">Getter for the resources.</div><div class="ttdef"><b>Definition:</b> doc.h:92</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html_a4afeaed0111a1192a5a03569008807ff"><div class="ttname"><a href="classvrv_1_1_doc.html#a4afeaed0111a1192a5a03569008807ff">vrv::Doc::SyncFromFacsimileDoc</a></div><div class="ttdeci">void SyncFromFacsimileDoc()</div><div class="ttdoc">Sync the coordinate provided trought &lt;facsimile&gt; to m_drawingFacsX/Y.</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html_a4b8be5eebe48afb3668ec97c133148a5"><div class="ttname"><a href="classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5">vrv::Doc::ExportMIDI</a></div><div class="ttdeci">void ExportMIDI(smf::MidiFile *midiFile)</div><div class="ttdoc">Export the document to a MIDI file.</div></div>
-<div class="ttc" id="aclassvrv_1_1_doc_html_a4dbe6bc0e603e609a9ff44138e84f3e1"><div class="ttname"><a href="classvrv_1_1_doc.html#a4dbe6bc0e603e609a9ff44138e84f3e1">vrv::Doc::ConvertToCastOffMensuralDoc</a></div><div class="ttdeci">void ConvertToCastOffMensuralDoc(bool castOff)</div><div class="ttdoc">Convert mensural MEI into cast-off (measure) segments looking at the barLine objects.</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html_a570380aa9593a124ac2d85b5238a62e8"><div class="ttname"><a href="classvrv_1_1_doc.html#a570380aa9593a124ac2d85b5238a62e8">vrv::Doc::IsCastOff</a></div><div class="ttdeci">bool IsCastOff() const</div><div class="ttdoc">Return true if the document has been cast off already.</div><div class="ttdef"><b>Definition:</b> doc.h:518</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html_a584eeab05ce41fd44a5d08d8d8f9d2dd"><div class="ttname"><a href="classvrv_1_1_doc.html#a584eeab05ce41fd44a5d08d8d8f9d2dd">vrv::Doc::ResetToLoading</a></div><div class="ttdeci">void ResetToLoading()</div><div class="ttdoc">Reset to the loading state (unset the scoreDef)</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html_a59a77ebea9671b372b2840c67fe49eb7"><div class="ttname"><a href="classvrv_1_1_doc.html#a59a77ebea9671b372b2840c67fe49eb7">vrv::Doc::GenerateFooter</a></div><div class="ttdeci">void GenerateFooter()</div><div class="ttdoc">Generate a document pgFoot if none is provided.</div></div>
@@ -516,6 +517,7 @@ $(document).ready(function(){initNavTree('doc_8h_source.html',''); initResizable
 <div class="ttc" id="aclassvrv_1_1_doc_html_ae6c98db85d71601a7c52a41d43687828"><div class="ttname"><a href="classvrv_1_1_doc.html#ae6c98db85d71601a7c52a41d43687828">vrv::Doc::GetFirstScoreDef</a></div><div class="ttdeci">ScoreDef * GetFirstScoreDef()</div><div class="ttdoc">Get the first scoreDef.</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html_aee7a01999fe14b6db1b194660626fc67"><div class="ttname"><a href="classvrv_1_1_doc.html#aee7a01999fe14b6db1b194660626fc67">vrv::Doc::CheckPageSize</a></div><div class="ttdeci">bool CheckPageSize(const Page *page) const</div><div class="ttdoc">Check that the page is the drawing page or that they have no given dimensions.</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html_af000e1f2d2f79967f09122f6e94760b7"><div class="ttname"><a href="classvrv_1_1_doc.html#af000e1f2d2f79967f09122f6e94760b7">vrv::Doc::SetMarkup</a></div><div class="ttdeci">void SetMarkup(int markup)</div><div class="ttdoc">Setter for markup flag.</div><div class="ttdef"><b>Definition:</b> doc.h:487</div></div>
+<div class="ttc" id="aclassvrv_1_1_doc_html_af1ed41f1019f31648a84243763d8caec"><div class="ttname"><a href="classvrv_1_1_doc.html#af1ed41f1019f31648a84243763d8caec">vrv::Doc::ConvertToCastOffMensuralDoc</a></div><div class="ttdeci">void ConvertToCastOffMensuralDoc(MensuralCastOffType castOff)</div><div class="ttdoc">Convert mensural MEI into cast-off (measure) segments looking at the barLine objects.</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html_af2e4fe3191867281b935913086b31708"><div class="ttname"><a href="classvrv_1_1_doc.html#af2e4fe3191867281b935913086b31708">vrv::Doc::GetOptions</a></div><div class="ttdeci">Options * GetOptions()</div><div class="ttdoc">Getter for the options.</div><div class="ttdef"><b>Definition:</b> doc.h:83</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html_af7116b1917f0a7cf8ed2b9b617496082"><div class="ttname"><a href="classvrv_1_1_doc.html#af7116b1917f0a7cf8ed2b9b617496082">vrv::Doc::m_front</a></div><div class="ttdeci">pugi::xml_document m_front</div><div class="ttdoc">A copy of the front tree stored as pugi::xml_document.</div><div class="ttdef"><b>Definition:</b> doc.h:600</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html_aff4b57776460fb8bb24eb8dcfc4fcdcf"><div class="ttname"><a href="classvrv_1_1_doc.html#aff4b57776460fb8bb24eb8dcfc4fcdcf">vrv::Doc::ExportExpansionMap</a></div><div class="ttdeci">bool ExportExpansionMap(std::string &amp;output)</div><div class="ttdoc">Extract expansionMap from the document to JSON string.</div></div>
@@ -541,7 +543,7 @@ $(document).ready(function(){initNavTree('doc_8h_source.html',''); initResizable
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>doc.h</b></li>
-    <li class="footer">Generated on Thu Mar 12 2026 12:15:51 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 20 2026 13:51:31 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

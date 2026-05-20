@@ -6,7 +6,7 @@ var searchData=
   ['datewitherrors_259',['DateWithErrors',['../structvrv_1_1_date_with_errors.html',1,'vrv']]],
   ['deactiveateselection_260',['DeactiveateSelection',['../classvrv_1_1_doc.html#ae0ebee5a808c3397d3f111c6f4a2ac4d',1,'vrv::Doc']]],
   ['del_261',['Del',['../classvrv_1_1_del.html',1,'vrv']]],
-  ['delete_262',['Delete',['../classvrv_1_1_editor_toolkit_c_m_n.html#a0e3b26992317a6ce3168dee3849ab9e8',1,'vrv::EditorToolkitCMN']]],
+  ['delete_262',['Delete',['../classvrv_1_1_editor_toolkit_shared.html#ada39214689a10a807eb22ee495b86fdf',1,'vrv::EditorToolkitShared']]],
   ['deletechild_263',['DeleteChild',['../classvrv_1_1_object.html#aa24fba8bae1f0876567f564f98020966',1,'vrv::Object']]],
   ['deletechildrenbycomparison_264',['DeleteChildrenByComparison',['../classvrv_1_1_object.html#acbb7a83e4ae3f1ba54bcd408dce066ee',1,'vrv::Object']]],
   ['detachchild_265',['DetachChild',['../classvrv_1_1_object.html#ac846569894fc8b08083e5a8526ba5834',1,'vrv::Object']]],

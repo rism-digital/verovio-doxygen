@@ -8,6 +8,8 @@ var classvrv_1_1_oriscus =
     [ "GetOffsetInterface", "classvrv_1_1_oriscus.html#aa5fbf31ea919bd3b3616c63bf8a53d09", null ],
     [ "GetPitchInterface", "classvrv_1_1_oriscus.html#a4805b7996cc6a1368cd2ef8d96d37e16", null ],
     [ "GetPitchInterface", "classvrv_1_1_oriscus.html#aecead03b432b04fbc60a840f513af9ba", null ],
+    [ "GetPositionInterface", "classvrv_1_1_oriscus.html#af4e49764bc8b31cce1c4c79fa2b3549c", null ],
+    [ "GetPositionInterface", "classvrv_1_1_oriscus.html#aabd16fc3a717f43a4beaf3431b8109fe", null ],
     [ "HasToBeAligned", "classvrv_1_1_oriscus.html#af82f7bfeac101728bdaf2cc833f739be", null ],
     [ "Reset", "classvrv_1_1_oriscus.html#a2f5b16916fc8101ce235c78fa32878d3", null ]
 ];

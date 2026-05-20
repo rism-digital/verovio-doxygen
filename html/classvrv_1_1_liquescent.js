@@ -10,6 +10,8 @@ var classvrv_1_1_liquescent =
     [ "GetPitchInterface", "classvrv_1_1_liquescent.html#a2511a6ae9f57615a9d16847fcf0b3701", null ],
     [ "GetPositionInterface", "classvrv_1_1_liquescent.html#a180a6c59995108c42007f5d5c758278f", null ],
     [ "GetPositionInterface", "classvrv_1_1_liquescent.html#ade385dfda8908ca62b7064797c601050", null ],
+    [ "HasNoTails", "classvrv_1_1_liquescent.html#ad22d42a1f894521f7890f7b75d09cb53", null ],
     [ "HasToBeAligned", "classvrv_1_1_liquescent.html#aa5daadfbb45012a6e54ffc4ed4ec66a2", null ],
-    [ "Reset", "classvrv_1_1_liquescent.html#a7efcf6b1f6aa6516730df361df82cfd6", null ]
+    [ "Reset", "classvrv_1_1_liquescent.html#a7efcf6b1f6aa6516730df361df82cfd6", null ],
+    [ "SetNoTails", "classvrv_1_1_liquescent.html#ac6a8daf9ab066f4b4168167c955afa6d", null ]
 ];
