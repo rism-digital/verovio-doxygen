@@ -2911,6 +2911,7 @@
     <member refid="classvrv_1_1_editorial_element_1aff62214b5681ffeeb73c976786d86dd4" kind="function"><name>AcceptEnd</name></member>
   </compound>
   <compound refid="classvrv_1_1_editor_toolkit" kind="class"><name>vrv::EditorToolkit</name>
+    <member refid="classvrv_1_1_editor_toolkit_1af73136c951b50ee2e4e13dbaa400d0ad" kind="variable"><name>m_chainedId</name></member>
     <member refid="classvrv_1_1_editor_toolkit_1a7f13a9e3501c89738646d52704854230" kind="variable"><name>m_doc</name></member>
     <member refid="classvrv_1_1_editor_toolkit_1aee2461420e8735846056fb6fd9b33f40" kind="variable"><name>m_view</name></member>
     <member refid="classvrv_1_1_editor_toolkit_1aab58ec0ad523f9b339bde7dd1fff289e" kind="variable"><name>m_editInfo</name></member>
@@ -2918,11 +2919,12 @@
     <member refid="classvrv_1_1_editor_toolkit_1a5357f6dafd2f655359871f881e3209c6" kind="function"><name>~EditorToolkit</name></member>
     <member refid="classvrv_1_1_editor_toolkit_1a4072ba0fc25bf93cf164daa8b0772f2f" kind="function"><name>ParseEditorAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_1a1be064ecb6ffea1b27712648a19e1312" kind="function"><name>EditInfo</name></member>
-    <member refid="classvrv_1_1_editor_toolkit_1a32f50765b06401974ba0ca6d74ed2895" kind="function"><name>AppendChild</name></member>
-    <member refid="classvrv_1_1_editor_toolkit_1a640e3c05651e69c09c2c6f4987a10b0e" kind="function"><name>InsertBefore</name></member>
-    <member refid="classvrv_1_1_editor_toolkit_1a105edaaecf92bbee719781edbd3313aa" kind="function"><name>InsertAfter</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_1a3c2e1d4a870184f7e541a57ad5f9da26" kind="function"><name>AppendChild</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_1a0dc96dbfa7409e2e2b85868febac3f4c" kind="function"><name>InsertBefore</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_1ad1511dd6a2504934e3a7a312c55b9956" kind="function"><name>InsertAfter</name></member>
     <member refid="classvrv_1_1_editor_toolkit_1a82f2a31a881fff8e957912e6a488e6e1" kind="function"><name>GetElement</name></member>
     <member refid="classvrv_1_1_editor_toolkit_1a3fd8664fe8b9ec4be7162e656b067f06" kind="function"><name>PrepareInsertion</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_1a4731cd8b4d6bbf1fba253e0a06cda80e" kind="function"><name>GetChainedElement</name></member>
   </compound>
   <compound refid="classvrv_1_1_editor_toolkit_c_m_n" kind="class"><name>vrv::EditorToolkitCMN</name>
     <member refid="classvrv_1_1_editor_toolkit_c_m_n_1aec51f93c00b6b229bde68e9ceea667b1" kind="function"><name>EditorToolkitCMN</name></member>
@@ -2989,7 +2991,6 @@
     <member refid="classvrv_1_1_editor_toolkit_neume_1a3d9c3e60ef3afb34b13c0123dd9d3beb" kind="function"><name>AdjustClefLineFromPosition</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1ad240f83d46bf3a95a0232403afd37f48" kind="function"><name>EditorToolkitNeume</name></member>
     <member refid="classvrv_1_1_editor_toolkit_neume_1a2308ad0010cf842ec7c9e86252f15850" kind="function"><name>ParseEditorAction</name></member>
-    <member refid="classvrv_1_1_editor_toolkit_neume_1a73a7c47fe8d5420da6467592ece61e55" kind="function"><name>EditInfo</name></member>
   </compound>
   <compound refid="classvrv_1_1_editor_toolkit_shared" kind="class"><name>vrv::EditorToolkitShared</name>
     <member refid="classvrv_1_1_editor_toolkit_shared_1a1e25a619a451ce20528bb997b4ab1188" kind="function"><name>Chain</name></member>
@@ -2998,12 +2999,16 @@
     <member refid="classvrv_1_1_editor_toolkit_shared_1a52968d7dd78b5292ad67487c01c92914" kind="function"><name>ParseDragAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1a0dad73969622befb6dcf4329d2cdec11" kind="function"><name>ParseKeyDownAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1a4d145a1803c897b038e49a0bea05eda1" kind="function"><name>ParseInsertAction</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_shared_1a06a5e1e246cd2e13191c40c908372d3a" kind="function"><name>ParseInsertControlAction</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_shared_1a921b68de7c31c084e22e5bd14b17e5c5" kind="function"><name>ParseNavigate</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_shared_1aed0f806267ebdc908436dbff8a93034a" kind="function"><name>ParsePropertiesAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1a3171c1b2f56b0f8a63e82d0c1f866459" kind="function"><name>ParseSetAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1ada39214689a10a807eb22ee495b86fdf" kind="function"><name>Delete</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1a9728896e7abd3d2097c6e1cf25a40dd4" kind="function"><name>Drag</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_shared_1a8f0105e5760bdf8820a8b5fdb393508c" kind="function"><name>InsertControl</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1aaf696f24502ea43820495da69c907cf5" kind="function"><name>KeyDown</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_shared_1a20fd0a7e2857f9835e7e438d3aa8a855" kind="function"><name>Navigate</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1adec6af70c1866b34c297aea12f205b86" kind="function"><name>Set</name></member>
-    <member refid="classvrv_1_1_editor_toolkit_shared_1a0666b8dd6a813bfad07a5d2e4d8ea345" kind="variable"><name>m_chainedId</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1a7967cc7bd6d2e58c93cf3e7ab04a0a65" kind="variable"><name>m_undoPrepared</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1af3417f72e686b7e41864af290b8209e3" kind="variable"><name>m_undoStack</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1af63d6b2e548961146a74a54ed7f4c83e" kind="variable"><name>m_redoStack</name></member>
@@ -3015,7 +3020,6 @@
     <member refid="classvrv_1_1_editor_toolkit_shared_1a4a37d2d1d164cd92c1d1200bca78c985" kind="function"><name>~EditorToolkitShared</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1a175437957380f6c62e8c2384b2e03936" kind="function"><name>ParseEditorAction</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1a6808a8b0a9acbb58f65762d15a945118" kind="function"><name>ParseEditorAction</name></member>
-    <member refid="classvrv_1_1_editor_toolkit_shared_1a60502d6d24a7c6ef060c80226c2dca92" kind="function"><name>EditInfo</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1a6054ff67a4de58ec592c051388339c34" kind="function"><name>SetEditInfo</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1a05ff5edd82a5fe0163301ac5e4ac2abe" kind="function"><name>PrepareUndo</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1ae5ca3ac9288161f5190d3bbff1593001" kind="function"><name>GetCurrentState</name></member>
@@ -3029,11 +3033,13 @@
     <member refid="classvrv_1_1_editor_toolkit_shared_1ade7f13c88a349af79aa1513d6fe295b4" kind="function"><name>ContextForElement</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1ac3b399758e8dec0b24a97404eb11612f" kind="function"><name>ContextForScores</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1a2f998b3fde87e395ee1a8c3c32449d4c" kind="function"><name>ContextForSections</name></member>
-    <member refid="classvrv_1_1_editor_toolkit_shared_1a6c54d76479952f86e0ef9f16dfc38aff" kind="function"><name>GetChainedElement</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_shared_1a0580e51688af59a800dfc52a59f0738b" kind="function"><name>GetScoreDef</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_shared_1a8d37f2fba9f5cba7925792c53b3835f8" kind="function"><name>SetScoreDef</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1a011dadcfeddfc9e601356f0e99c8e1a6" kind="function"><name>ContextForObject</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1aec609411675eeb8df85b679151e25524" kind="function"><name>ContextForObjects</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1a8837d0a75098c21dd9f9b6ab1e7d2b2f" kind="function"><name>ContextForReferences</name></member>
     <member refid="classvrv_1_1_editor_toolkit_shared_1a3a4fe0b894efc16d6536e07116fca74c" kind="function"><name>GetScoreBasedChildrenFor</name></member>
+    <member refid="classvrv_1_1_editor_toolkit_shared_1ae058b8ba2cd0cf81f68eb824190f74f9" kind="function"><name>CollectReferringObjects</name></member>
   </compound>
   <compound refid="classvrv_1_1_editor_tree_object" kind="class"><name>vrv::EditorTreeObject</name>
     <member refid="classvrv_1_1_editor_tree_object_1a3098ab1c0aa27d1cf555d0075639f713" kind="function"><name>EditorTreeObject</name></member>
@@ -5195,8 +5201,10 @@
     <member refid="classvrv_1_1_layer_1a5614758a16c65e080ddc8405f8875262" kind="variable"><name>m_drawCautionKeySigCancel</name></member>
     <member refid="classvrv_1_1_layer_1a9ec47a1c0b410a8c5a964560c1e0cd7a" kind="function"><name>CloneReset</name></member>
     <member refid="classvrv_1_1_layer_1adfcf758667726eabfc225acc484fe525" kind="function"><name>GetLayerIdx</name></member>
-    <member refid="classvrv_1_1_layer_1aa6f0f869355f0b38ee6ef3ee375e3b67" kind="function"><name>GetPrevious</name></member>
-    <member refid="classvrv_1_1_layer_1a9b00061922445ff6c40443a2395443ed" kind="function"><name>GetPrevious</name></member>
+    <member refid="classvrv_1_1_layer_1a2115db4d76fce202492ddacea3a425b9" kind="function"><name>GetPreviousInLayer</name></member>
+    <member refid="classvrv_1_1_layer_1a4566bd168b64dd11f3114f326d363e12" kind="function"><name>GetPreviousInLayer</name></member>
+    <member refid="classvrv_1_1_layer_1a41955b9eda94b1caeeaf226e73da51f7" kind="function"><name>GetNextInLayer</name></member>
+    <member refid="classvrv_1_1_layer_1a5d2ea0f4ca114beda9f56fa625385e4a" kind="function"><name>GetNextInLayer</name></member>
     <member refid="classvrv_1_1_layer_1ae4ab5665285cd18a1784d83cf7fb41c5" kind="function"><name>GetAtPos</name></member>
     <member refid="classvrv_1_1_layer_1a15309433305fa5b7343756bc5e4bca64" kind="function"><name>GetAtPos</name></member>
     <member refid="classvrv_1_1_layer_1a6795308b758c849f8f87b6db477c323e" kind="function"><name>GetClefLocOffset</name></member>
@@ -5875,6 +5883,11 @@
     <member refid="classvrv_1_1_m_e_i_input_1a382a1dec367f425faacea75957b1c358" kind="function"><name>ReadScoreBasedMei</name></member>
     <member refid="classvrv_1_1_m_e_i_input_1ab1dc4eee4d1dec9c4143a4cbe808ec29" kind="function"><name>IsAllowed</name></member>
   </compound>
+  <compound refid="classvrv_1_1_m_e_i_input_extended" kind="class"><name>vrv::MEIInputExtended</name>
+    <member refid="classvrv_1_1_m_e_i_input_extended_1abcc6e6511c42e0a71319c258a3cfcf77" kind="function"><name>MEIInputExtended</name></member>
+    <member refid="classvrv_1_1_m_e_i_input_extended_1a2db590702a8fe2e1cec07b5c84343be0" kind="function"><name>ImportScoreDef</name></member>
+    <member refid="classvrv_1_1_m_e_i_input_extended_1afcbc5d4439b387b96e90d4ffd64ac19d" kind="function"><name>FromJson</name></member>
+  </compound>
   <compound refid="classvrv_1_1_m_e_i_output" kind="class"><name>vrv::MEIOutput</name>
     <member refid="classvrv_1_1_m_e_i_output_1aff65485642bc0ce8f1e148be9e7e89fe" kind="variable"><name>m_hasFilter</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a62fbf996999dacb35d40403849ab5dd9" kind="variable"><name>m_filterMatchLocation</name></member>
@@ -6085,13 +6098,13 @@
     <member refid="classvrv_1_1_m_e_i_output_1a19f6c1b0f138637ba41fca55aeccc49c" kind="function"><name>WriteTimeSpanningInterface</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a84b63acef76a52541d95aedc2abbdb3f" kind="function"><name>IDToMeiStr</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a0f905614aad7304fbf75618a9b1a67a7" kind="function"><name>DocTypeToStr</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1aa5a7e5bf5397d4112fa553cc1256944f" kind="variable"><name>m_currentNode</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_1a34f35584724b02b4d87a7fa42591f509" kind="variable"><name>m_nodeStack</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a3612aa91e8c1e34f8a1169af57ab3ef3" kind="variable"><name>m_indent</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1aed1146a1f2baf4fd64b10cfaba93f873" kind="variable"><name>m_scoreBasedMEI</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a760c0bea0135a500fe405cc54e04fc07" kind="variable"><name>m_basic</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a1d20dd8fdeec9119bd7da3e349b56256" kind="variable"><name>m_serializing</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a7d8650837114dda1ae184b215f40f20a" kind="variable"><name>m_mei</name></member>
-    <member refid="classvrv_1_1_m_e_i_output_1aa5a7e5bf5397d4112fa553cc1256944f" kind="variable"><name>m_currentNode</name></member>
-    <member refid="classvrv_1_1_m_e_i_output_1a34f35584724b02b4d87a7fa42591f509" kind="variable"><name>m_nodeStack</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1ab8674da73fc7cff442bc3e7b7bbabff6" kind="variable"><name>m_boundaries</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1ace9aaed3bb8c59041a299d500971bc9c" kind="variable"><name>m_objectStack</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a01ba2a36c3cd5cfb91c15f4711e5a542" kind="variable"><name>m_ignoreHeader</name></member>
@@ -6110,6 +6123,11 @@
     <member refid="classvrv_1_1_m_e_i_output_1a83df3f40e7f1e5de7e90d2130b1453ea" kind="function"><name>WriteXmlId</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1a445a8d084085621bc637c72a74c30793" kind="function"><name>WriteUnsupportedAttr</name></member>
     <member refid="classvrv_1_1_m_e_i_output_1ac23cfea0a5b11907f95328dfe5be3543" kind="function"><name>EscapeSMuFL</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_m_e_i_output_extended" kind="class"><name>vrv::MEIOutputExtended</name>
+    <member refid="classvrv_1_1_m_e_i_output_extended_1ae240a6ade04e74e7e9e3acf430d75f46" kind="function"><name>MEIOutputExtended</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_extended_1a2395b191ed45d74f1fd63250b390ddff" kind="function"><name>ExportScoreDef</name></member>
+    <member refid="classvrv_1_1_m_e_i_output_extended_1a8f89d2bc1f1ac84f7d92bc05502d0501" kind="function"><name>ToJson</name></member>
   </compound>
   <compound refid="structvrv_1_1cmme_1_1mens_info" kind="struct"><name>vrv::cmme::mensInfo</name>
     <member refid="structvrv_1_1cmme_1_1mens_info_1a8b807ecfeafe857881abc9aac99ce4e6" kind="variable"><name>prolatio</name></member>
@@ -6790,6 +6808,7 @@
     <member refid="classvrv_1_1_object_1a0af864d1b64a70d4ec8b62a520114bde" kind="function"><name>ClearChildren</name></member>
     <member refid="classvrv_1_1_object_1aa24fba8bae1f0876567f564f98020966" kind="function"><name>DeleteChild</name></member>
     <member refid="classvrv_1_1_object_1acbb7a83e4ae3f1ba54bcd408dce066ee" kind="function"><name>DeleteChildrenByComparison</name></member>
+    <member refid="classvrv_1_1_object_1a70b9c473e61ad09e70352ad301045ac8" kind="function"><name>IsAncestorOf</name></member>
     <member refid="classvrv_1_1_object_1a24dd9389c537dda7046c097132ae9a9a" kind="function"><name>FillFlatList</name></member>
     <member refid="classvrv_1_1_object_1a4eec6780edc930e49d9874c1036735a4" kind="function"><name>IsModified</name></member>
     <member refid="classvrv_1_1_object_1a30996d1e8460f2110900b490425c16ec" kind="function"><name>Modify</name></member>

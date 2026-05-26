@@ -136,6 +136,7 @@ var classvrv_1_1_object =
     [ "InsertAfter", "classvrv_1_1_object.html#aaf1ba626f7c0d6be44373b6cfe29855f", null ],
     [ "InsertBefore", "classvrv_1_1_object.html#a26dd6389f8b6ce5ff1cf9f0b779a0d14", null ],
     [ "InsertChild", "classvrv_1_1_object.html#ac14929dac6e5b5e699d16ba7fc258d9d", null ],
+    [ "IsAncestorOf", "classvrv_1_1_object.html#a70b9c473e61ad09e70352ad301045ac8", null ],
     [ "IsAttribute", "classvrv_1_1_object.html#af8ee73eca8e0a08ae535318c4462fad1", null ],
     [ "IsAttribute", "classvrv_1_1_object.html#a24ff4e053bb15d8d893c9a1a6b2f9639", null ],
     [ "IsControlElement", "classvrv_1_1_object.html#aab9a49af1e67891dcfd1b929a6d64aa9", null ],

@@ -5,6 +5,19 @@
     <derivedcompoundref refid="classvrv_1_1_editor_toolkit_neume" prot="public" virt="non-virtual">vrv::EditorToolkitNeume</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_editor_toolkit_shared" prot="public" virt="non-virtual">vrv::EditorToolkitShared</derivedcompoundref>
       <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classvrv_1_1_editor_toolkit_1af73136c951b50ee2e4e13dbaa400d0ad" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string vrv::EditorToolkit::m_chainedId</definition>
+        <argsstring></argsstring>
+        <name>m_chainedId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" line="58" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_editor_toolkit_1a7f13a9e3501c89738646d52704854230" prot="protected" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
         <definition>Doc* vrv::EditorToolkit::m_doc</definition>
@@ -16,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" line="57" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" bodystart="57" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" line="59" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_editor_toolkit_1aee2461420e8735846056fb6fd9b33f40" prot="protected" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_view" kindref="compound">View</ref> *</type>
@@ -29,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" line="58" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" bodystart="58" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" line="60" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_editor_toolkit_1aab58ec0ad523f9b339bde7dd1fff289e" prot="protected" static="no" mutable="no">
         <type>jsonxx::Object</type>
@@ -42,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" line="59" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" bodystart="59" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" line="61" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -105,8 +118,6 @@
         <definition>virtual std::string vrv::EditorToolkit::EditInfo</definition>
         <argsstring>()</argsstring>
         <name>EditInfo</name>
-        <reimplementedby refid="classvrv_1_1_editor_toolkit_neume_1a73a7c47fe8d5420da6467592ece61e55">EditInfo</reimplementedby>
-        <reimplementedby refid="classvrv_1_1_editor_toolkit_shared_1a60502d6d24a7c6ef060c80226c2dca92">EditInfo</reimplementedby>
         <briefdescription>
 <para>Get information on the last editor function used. </para>
         </briefdescription>
@@ -118,18 +129,22 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_1a32f50765b06401974ba0ca6d74ed2895" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_1a3c2e1d4a870184f7e541a57ad5f9da26" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::EditorToolkit::AppendChild</definition>
-        <argsstring>(const std::string &amp;elementId, const std::string &amp;elementName)</argsstring>
+        <argsstring>(std::string &amp;elementId, const std::string &amp;elementName, bool unique)</argsstring>
         <name>AppendChild</name>
         <param>
-          <type>const std::string &amp;</type>
+          <type>std::string &amp;</type>
           <declname>elementId</declname>
         </param>
         <param>
           <type>const std::string &amp;</type>
           <declname>elementName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>unique</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -139,13 +154,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" line="49" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_1a640e3c05651e69c09c2c6f4987a10b0e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_1a0dc96dbfa7409e2e2b85868febac3f4c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::EditorToolkit::InsertBefore</definition>
-        <argsstring>(const std::string &amp;elementId, const std::string &amp;elementName)</argsstring>
+        <argsstring>(std::string &amp;elementId, const std::string &amp;elementName)</argsstring>
         <name>InsertBefore</name>
         <param>
-          <type>const std::string &amp;</type>
+          <type>std::string &amp;</type>
           <declname>elementId</declname>
         </param>
         <param>
@@ -160,13 +175,13 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" line="50" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_1a105edaaecf92bbee719781edbd3313aa" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_1ad1511dd6a2504934e3a7a312c55b9956" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::EditorToolkit::InsertAfter</definition>
-        <argsstring>(const std::string &amp;elementId, const std::string &amp;elementName)</argsstring>
+        <argsstring>(std::string &amp;elementId, const std::string &amp;elementName)</argsstring>
         <name>InsertAfter</name>
         <param>
-          <type>const std::string &amp;</type>
+          <type>std::string &amp;</type>
           <declname>elementId</declname>
         </param>
         <param>
@@ -218,6 +233,23 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" line="53" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_1a4731cd8b4d6bbf1fba253e0a06cda80e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+        <definition>Object* vrv::EditorToolkit::GetChainedElement</definition>
+        <argsstring>(std::string &amp;elementId)</argsstring>
+        <name>GetChainedElement</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>elementId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" line="54" column="12"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -643,14 +675,16 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" line="28" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" bodystart="28" bodyend="60"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" line="28" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit.h" bodystart="28" bodyend="62"/>
     <listofallmembers>
-      <member refid="classvrv_1_1_editor_toolkit_1a32f50765b06401974ba0ca6d74ed2895" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkit</scope><name>AppendChild</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1a3c2e1d4a870184f7e541a57ad5f9da26" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkit</scope><name>AppendChild</name></member>
       <member refid="classvrv_1_1_editor_toolkit_1a1be064ecb6ffea1b27712648a19e1312" prot="public" virt="virtual"><scope>vrv::EditorToolkit</scope><name>EditInfo</name></member>
       <member refid="classvrv_1_1_editor_toolkit_1a6dd004f7d4c73c36012a459434d15c6f" prot="public" virt="non-virtual"><scope>vrv::EditorToolkit</scope><name>EditorToolkit</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1a4731cd8b4d6bbf1fba253e0a06cda80e" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkit</scope><name>GetChainedElement</name></member>
       <member refid="classvrv_1_1_editor_toolkit_1a82f2a31a881fff8e957912e6a488e6e1" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkit</scope><name>GetElement</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_1a105edaaecf92bbee719781edbd3313aa" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkit</scope><name>InsertAfter</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_1a640e3c05651e69c09c2c6f4987a10b0e" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkit</scope><name>InsertBefore</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1ad1511dd6a2504934e3a7a312c55b9956" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkit</scope><name>InsertAfter</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1a0dc96dbfa7409e2e2b85868febac3f4c" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkit</scope><name>InsertBefore</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1af73136c951b50ee2e4e13dbaa400d0ad" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkit</scope><name>m_chainedId</name></member>
       <member refid="classvrv_1_1_editor_toolkit_1a7f13a9e3501c89738646d52704854230" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkit</scope><name>m_doc</name></member>
       <member refid="classvrv_1_1_editor_toolkit_1aab58ec0ad523f9b339bde7dd1fff289e" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkit</scope><name>m_editInfo</name></member>
       <member refid="classvrv_1_1_editor_toolkit_1aee2461420e8735846056fb6fd9b33f40" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkit</scope><name>m_view</name></member>

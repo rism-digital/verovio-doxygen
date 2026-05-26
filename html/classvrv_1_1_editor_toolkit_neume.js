@@ -12,7 +12,6 @@ var classvrv_1_1_editor_toolkit_neume =
     [ "ClefMovementHandler", "classvrv_1_1_editor_toolkit_neume.html#a8557524758bf2f6cdcd9e299237ef33c", null ],
     [ "DisplaceClefOctave", "classvrv_1_1_editor_toolkit_neume.html#a32187a2c54d0680c43a6e7160d5cbf77", null ],
     [ "Drag", "classvrv_1_1_editor_toolkit_neume.html#a51181adeed490953b99648a6ed67a95e", null ],
-    [ "EditInfo", "classvrv_1_1_editor_toolkit_neume.html#a73a7c47fe8d5420da6467592ece61e55", null ],
     [ "Group", "classvrv_1_1_editor_toolkit_neume.html#a7a00393667ae8707ece682471426c670", null ],
     [ "Insert", "classvrv_1_1_editor_toolkit_neume.html#a6d156d6f2049413ff717e725cc08600c", null ],
     [ "InsertToSyllable", "classvrv_1_1_editor_toolkit_neume.html#a9f03325dc1e673997e382671f7e3732f", null ],

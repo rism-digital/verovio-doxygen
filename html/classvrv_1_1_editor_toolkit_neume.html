@@ -109,10 +109,6 @@ Public Member Functions</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editor_toolkit_neume.html#a2308ad0010cf842ec7c9e86252f15850">ParseEditorAction</a> (const std::string &amp;json_editorAction) override</td></tr>
 <tr class="memdesc:a2308ad0010cf842ec7c9e86252f15850"><td class="mdescLeft">&#160;</td><td class="mdescRight">In child classes, this parses the provided editor action and then performs the correct action. <br /></td></tr>
 <tr class="separator:a2308ad0010cf842ec7c9e86252f15850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73a7c47fe8d5420da6467592ece61e55"><td class="memItemLeft" align="right" valign="top"><a id="a73a7c47fe8d5420da6467592ece61e55"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editor_toolkit_neume.html#a73a7c47fe8d5420da6467592ece61e55">EditInfo</a> () override</td></tr>
-<tr class="memdesc:a73a7c47fe8d5420da6467592ece61e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information on the last editor function used. <br /></td></tr>
-<tr class="separator:a73a7c47fe8d5420da6467592ece61e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a86198f2ba436635596f18777434cf998"><td class="memItemLeft" align="right" valign="top"><a id="a86198f2ba436635596f18777434cf998"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editor_toolkit_neume.html#a86198f2ba436635596f18777434cf998">AddSyl</a> (std::string elementId, std::string sylText)</td></tr>
@@ -200,6 +196,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ClefMovementHandler</
 <tr class="memitem:a6dd004f7d4c73c36012a459434d15c6f inherit pub_methods_classvrv_1_1_editor_toolkit"><td class="memItemLeft" align="right" valign="top"><a id="a6dd004f7d4c73c36012a459434d15c6f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EditorToolkit</b> (<a class="el" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="el" href="classvrv_1_1_view.html">View</a> *view)</td></tr>
 <tr class="separator:a6dd004f7d4c73c36012a459434d15c6f inherit pub_methods_classvrv_1_1_editor_toolkit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be064ecb6ffea1b27712648a19e1312 inherit pub_methods_classvrv_1_1_editor_toolkit"><td class="memItemLeft" align="right" valign="top"><a id="a1be064ecb6ffea1b27712648a19e1312"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editor_toolkit.html#a1be064ecb6ffea1b27712648a19e1312">EditInfo</a> ()</td></tr>
+<tr class="memdesc:a1be064ecb6ffea1b27712648a19e1312 inherit pub_methods_classvrv_1_1_editor_toolkit"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information on the last editor function used. <br /></td></tr>
+<tr class="separator:a1be064ecb6ffea1b27712648a19e1312 inherit pub_methods_classvrv_1_1_editor_toolkit"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -292,25 +292,31 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>AdjustPitchFromPositi
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>AdjustClefLineFromPosition</b> (<a class="el" href="classvrv_1_1_clef.html">Clef</a> *clef, <a class="el" href="classvrv_1_1_staff.html">Staff</a> *staff=NULL)</td></tr>
 <tr class="separator:a3d9c3e60ef3afb34b13c0123dd9d3beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classvrv_1_1_editor_toolkit"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classvrv_1_1_editor_toolkit')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classvrv_1_1_editor_toolkit.html">vrv::EditorToolkit</a></td></tr>
-<tr class="memitem:a32f50765b06401974ba0ca6d74ed2895 inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memItemLeft" align="right" valign="top"><a id="a32f50765b06401974ba0ca6d74ed2895"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>AppendChild</b> (const std::string &amp;elementId, const std::string &amp;elementName)</td></tr>
-<tr class="separator:a32f50765b06401974ba0ca6d74ed2895 inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a640e3c05651e69c09c2c6f4987a10b0e inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memItemLeft" align="right" valign="top"><a id="a640e3c05651e69c09c2c6f4987a10b0e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>InsertBefore</b> (const std::string &amp;elementId, const std::string &amp;elementName)</td></tr>
-<tr class="separator:a640e3c05651e69c09c2c6f4987a10b0e inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a105edaaecf92bbee719781edbd3313aa inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memItemLeft" align="right" valign="top"><a id="a105edaaecf92bbee719781edbd3313aa"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>InsertAfter</b> (const std::string &amp;elementId, const std::string &amp;elementName)</td></tr>
-<tr class="separator:a105edaaecf92bbee719781edbd3313aa inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c2e1d4a870184f7e541a57ad5f9da26 inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memItemLeft" align="right" valign="top"><a id="a3c2e1d4a870184f7e541a57ad5f9da26"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>AppendChild</b> (std::string &amp;elementId, const std::string &amp;elementName, bool unique)</td></tr>
+<tr class="separator:a3c2e1d4a870184f7e541a57ad5f9da26 inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc96dbfa7409e2e2b85868febac3f4c inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memItemLeft" align="right" valign="top"><a id="a0dc96dbfa7409e2e2b85868febac3f4c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>InsertBefore</b> (std::string &amp;elementId, const std::string &amp;elementName)</td></tr>
+<tr class="separator:a0dc96dbfa7409e2e2b85868febac3f4c inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1511dd6a2504934e3a7a312c55b9956 inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memItemLeft" align="right" valign="top"><a id="ad1511dd6a2504934e3a7a312c55b9956"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>InsertAfter</b> (std::string &amp;elementId, const std::string &amp;elementName)</td></tr>
+<tr class="separator:ad1511dd6a2504934e3a7a312c55b9956 inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82f2a31a881fff8e957912e6a488e6e1 inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memItemLeft" align="right" valign="top"><a id="a82f2a31a881fff8e957912e6a488e6e1"></a>
 <a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetElement</b> (const std::string &amp;elementId)</td></tr>
 <tr class="separator:a82f2a31a881fff8e957912e6a488e6e1 inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fd8664fe8b9ec4be7162e656b067f06 inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memItemLeft" align="right" valign="top"><a id="a3fd8664fe8b9ec4be7162e656b067f06"></a>
 <a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareInsertion</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *parent, const std::string &amp;elementName)</td></tr>
 <tr class="separator:a3fd8664fe8b9ec4be7162e656b067f06 inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4731cd8b4d6bbf1fba253e0a06cda80e inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memItemLeft" align="right" valign="top"><a id="a4731cd8b4d6bbf1fba253e0a06cda80e"></a>
+<a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetChainedElement</b> (std::string &amp;elementId)</td></tr>
+<tr class="separator:a4731cd8b4d6bbf1fba253e0a06cda80e inherit pro_methods_classvrv_1_1_editor_toolkit"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classvrv_1_1_editor_toolkit"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classvrv_1_1_editor_toolkit')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classvrv_1_1_editor_toolkit.html">vrv::EditorToolkit</a></td></tr>
+<tr class="memitem:af73136c951b50ee2e4e13dbaa400d0ad inherit pro_attribs_classvrv_1_1_editor_toolkit"><td class="memItemLeft" align="right" valign="top"><a id="af73136c951b50ee2e4e13dbaa400d0ad"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_chainedId</b></td></tr>
+<tr class="separator:af73136c951b50ee2e4e13dbaa400d0ad inherit pro_attribs_classvrv_1_1_editor_toolkit"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f13a9e3501c89738646d52704854230 inherit pro_attribs_classvrv_1_1_editor_toolkit"><td class="memItemLeft" align="right" valign="top"><a id="a7f13a9e3501c89738646d52704854230"></a>
 <a class="el" href="classvrv_1_1_doc.html">Doc</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_doc</b></td></tr>
 <tr class="separator:a7f13a9e3501c89738646d52704854230 inherit pro_attribs_classvrv_1_1_editor_toolkit"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,7 +336,7 @@ jsonxx::Object&#160;</td><td class="memItemRight" valign="bottom"><b>m_editInfo<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_editor_toolkit_neume.html">EditorToolkitNeume</a></li>
-    <li class="footer">Generated on Fri May 22 2026 18:37:44 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 26 2026 02:28:51 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

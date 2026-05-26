@@ -127,21 +127,23 @@ $(document).ready(function(){initNavTree('editortoolkit_8h_source.html',''); ini
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#ifndef NO_EDIT_SUPPORT</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">bool</span> AppendChild(<span class="keyword">const</span> std::string &amp;elementId, <span class="keyword">const</span> std::string &amp;elementName);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">bool</span> InsertBefore(<span class="keyword">const</span> std::string &amp;elementId, <span class="keyword">const</span> std::string &amp;elementName);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> InsertAfter(<span class="keyword">const</span> std::string &amp;elementId, <span class="keyword">const</span> std::string &amp;elementName);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">bool</span> AppendChild(std::string &amp;elementId, <span class="keyword">const</span> std::string &amp;elementName, <span class="keywordtype">bool</span> unique);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">bool</span> InsertBefore(std::string &amp;elementId, <span class="keyword">const</span> std::string &amp;elementName);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> InsertAfter(std::string &amp;elementId, <span class="keyword">const</span> std::string &amp;elementName);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *GetElement(<span class="keyword">const</span> std::string &amp;elementId);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *PrepareInsertion(<a class="code" href="classvrv_1_1_object.html">Object</a> *parent, <span class="keyword">const</span> std::string &amp;elementName);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classvrv_1_1_doc.html">Doc</a> *m_doc;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classvrv_1_1_view.html">View</a> *m_view;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    jsonxx::Object m_editInfo;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *GetChainedElement(std::string &amp;elementId);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::string m_chainedId;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classvrv_1_1_doc.html">Doc</a> *m_doc;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classvrv_1_1_view.html">View</a> *m_view;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    jsonxx::Object m_editInfo;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:41</div></div>
 <div class="ttc" id="aclassvrv_1_1_editor_toolkit_html"><div class="ttname"><a href="classvrv_1_1_editor_toolkit.html">vrv::EditorToolkit</a></div><div class="ttdef"><b>Definition:</b> editortoolkit.h:28</div></div>
 <div class="ttc" id="aclassvrv_1_1_editor_toolkit_html_a1be064ecb6ffea1b27712648a19e1312"><div class="ttname"><a href="classvrv_1_1_editor_toolkit.html#a1be064ecb6ffea1b27712648a19e1312">vrv::EditorToolkit::EditInfo</a></div><div class="ttdeci">virtual std::string EditInfo()</div><div class="ttdoc">Get information on the last editor function used.</div><div class="ttdef"><b>Definition:</b> editortoolkit.h:45</div></div>
@@ -154,7 +156,7 @@ $(document).ready(function(){initNavTree('editortoolkit_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>editortoolkit.h</b></li>
-    <li class="footer">Generated on Fri May 22 2026 18:37:43 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 26 2026 02:28:50 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
