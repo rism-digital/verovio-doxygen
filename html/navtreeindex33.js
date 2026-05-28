@@ -1,5 +1,6 @@
 var NAVTREEINDEX33 =
 {
+"structvrv_1_1_m_i_d_i_held_note.html#a8caee921924918efc2ebd079e2f0293b":[1,0,0,272,0],
 "structvrv_1_1_m_i_d_i_held_note.html#aeb200ab2694f4564a121b63a62eb6391":[1,0,0,272,1],
 "structvrv_1_1_m_i_d_i_note.html":[1,0,0,271],
 "structvrv_1_1_m_i_d_i_note.html#a32128781fed4395e451720d0567ccac1":[1,0,0,271,0],
