@@ -52,7 +52,7 @@ var classvrv_1_1_bounding_box =
     [ "Intersects", "classvrv_1_1_bounding_box.html#a30378dff14a9058154de8efcc0d7632f", null ],
     [ "Intersects", "classvrv_1_1_bounding_box.html#a29d29a9aaa350b53bcf58dc32978b7f8", null ],
     [ "Is", "classvrv_1_1_bounding_box.html#af366b55a8e449a12d689acd9d35ae782", null ],
-    [ "Is", "classvrv_1_1_bounding_box.html#aaeb23e9d3064f863ef3857efef570a8f", null ],
+    [ "IsAnyOf", "classvrv_1_1_bounding_box.html#adca20d1f299f683ce31a688e44fe0d4a", null ],
     [ "ResetBoundingBox", "classvrv_1_1_bounding_box.html#ae79b9324168608f36cb71c8ca4174220", null ],
     [ "ResetCachedDrawingX", "classvrv_1_1_bounding_box.html#a5b37b259a20df6f83ff94908c4d9fbea", null ],
     [ "ResetCachedDrawingY", "classvrv_1_1_bounding_box.html#a928808d6ff900985afdfe1856490d505", null ],
