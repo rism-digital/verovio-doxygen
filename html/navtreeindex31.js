@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"classvrv_1_1_view.html#a36bad20e7ec3ff717a67852ef9ee99da":[1,0,0,442,16],
 "classvrv_1_1_view.html#a36c099dbaa2678c80e73ceb93ea030f1":[1,0,0,442,18],
 "classvrv_1_1_view.html#a3738d55851defd326fd3e6b546765ca7":[1,0,0,442,161],
 "classvrv_1_1_view.html#a37a5369135a5c8dcd803c0b0e2248909":[1,0,0,442,204],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "fraction_8h_source.html":[2,0,108],
 "ftrem_8h_source.html":[2,0,109],
 "functions.html":[1,3,0,0],
-"functions.html":[1,3,0],
-"functions_b.html":[1,3,0,1]
+"functions.html":[1,3,0]
 };
