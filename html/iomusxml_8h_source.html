@@ -643,101 +643,108 @@ $(document).ready(function(){initNavTree('iomusxml_8h_source.html',''); initResi
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> PitchToMidi(<span class="keyword">const</span> std::string &amp;step, <span class="keywordtype">int</span> alter, <span class="keywordtype">int</span> octave);</div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> MidiToPitch(<span class="keywordtype">int</span> midi, std::string &amp;step, <span class="keywordtype">int</span> &amp;alter, <span class="keywordtype">int</span> &amp;octave);</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160; </div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    <span class="comment">/* octave offset */</span></div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    std::vector&lt;int&gt; m_octDis;</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    <span class="comment">/* measure repeats */</span></div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <span class="keywordtype">bool</span> m_mRpt = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    <span class="comment">/* measure repeats */</span></div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    <span class="keywordtype">bool</span> m_slash = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <span class="comment">/* MIDI ticks */</span></div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="keywordtype">int</span> m_ppq = -1;</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    <span class="comment">/* measure time */</span></div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    <span class="keywordtype">int</span> m_durTotal = 0;</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    <span class="comment">/* measure time */</span></div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <span class="keywordtype">int</span> m_durFb = 0;</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    <span class="comment">/* meter signature */</span></div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    std::vector&lt;int&gt; m_meterCount = { 4 };</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <span class="keywordtype">int</span> m_meterUnit = 4;</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    MeterCountSign m_meterSign = MeterCountSign::None;</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <span class="comment">/* part information */</span></div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <a class="code" href="classvrv_1_1_label.html">Label</a> *m_label = NULL;</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <a class="code" href="classvrv_1_1_label_abbr.html">LabelAbbr</a> *m_labelAbbr = NULL;</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    <a class="code" href="classvrv_1_1_instr_def.html">InstrDef</a> *m_instrdef = NULL;</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <span class="comment">/* LastElementID */</span></div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    std::string m_ID;</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <span class="comment">/* A map of stacks for piling open LayerElements (beams, tuplets, chords, btrem, ftrem) separately per layer */</span></div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    std::map&lt;Layer *, std::vector&lt;LayerElement *&gt;&gt; m_elementStackMap;</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <span class="comment">/* A maps of time stamps (score time) to indicate write pointer of a given layer */</span></div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    std::map&lt;Layer *, int&gt; m_layerEndTimes;</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    std::map&lt;Layer *, std::multimap&lt;int, LayerElement *&gt;&gt; m_layerTimes;</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    <span class="comment">/* To remember layer of last element (note) to handle chords */</span></div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <a class="code" href="classvrv_1_1_layer.html">Layer</a> *m_prevLayer = NULL;</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    <span class="comment">/* To remember current layer to properly handle layers/staves/cross-staff elements */</span></div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    <a class="code" href="classvrv_1_1_layer.html">Layer</a> *m_currentLayer = NULL;</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    <span class="keywordtype">bool</span> m_isLayerInitialized = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="comment">/* The stack for open slurs */</span></div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    std::vector&lt;std::pair&lt;Slur *, musicxml::OpenSlur&gt;&gt; m_slurStack;</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;    <span class="comment">/* The stack for slur stops that might come before the slur has been opened */</span></div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    std::vector&lt;std::pair&lt;LayerElement *, musicxml::CloseSlur&gt;&gt; m_slurStopStack;</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    <span class="comment">/* The stack for open ties */</span></div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    std::vector&lt;musicxml::OpenTie&gt; m_tieStack;</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <span class="comment">/* The stack for tie stops that might come before that tie was opened */</span></div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    std::vector&lt;musicxml::CloseTie&gt; m_tieStopStack;</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    <span class="comment">/* The stack for hairpins */</span></div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    std::vector&lt;std::pair&lt;Hairpin *, musicxml::OpenSpanner&gt;&gt; m_hairpinStack;</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    <span class="comment">/* The stack for hairpin stops that might occur before a hairpin was started staffNumber, tStamp2, (hairpinNumber,</span></div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;<span class="comment">     * measureCount) */</span></div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    std::vector&lt;std::tuple&lt;int, double, musicxml::OpenSpanner&gt;&gt; m_hairpinStopStack;</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    <span class="comment">/* The stack for the beamspans with numbers of staff/layer where starting element is located*/</span></div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    std::vector&lt;std::pair&lt;BeamSpan *, std::pair&lt;int, int&gt;&gt;&gt; m_beamspanStack;</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    std::vector&lt;std::pair&lt;BracketSpan *, musicxml::OpenSpanner&gt;&gt; m_bracketStack;</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    std::vector&lt;std::pair&lt;Trill *, musicxml::OpenSpanner&gt;&gt; m_trillStack;</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    <span class="comment">/* Current section/ending info for start/stop */</span></div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;    std::optional&lt;musicxml::SectionInfo&gt; m_sectionStart;</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    std::optional&lt;musicxml::SectionInfo&gt; m_sectionStop;</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    std::optional&lt;musicxml::JumpInfo&gt; m_jumpInfo;</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    std::optional&lt;musicxml::FineInfo&gt; m_fineInfo;</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <span class="comment">/* The list of sections/endings to be inserted at the end of XML import */</span></div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    std::vector&lt;std::pair&lt;musicxml::SectionInfo, std::vector&lt;Measure *&gt;&gt;&gt; m_sections;</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    <span class="comment">/* The stack of open dashes (direction-type) containing *ControlElement, OpenDashes */</span></div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    std::vector&lt;std::pair&lt;ControlElement *, musicxml::OpenDashes&gt;&gt; m_openDashesStack;</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    <span class="comment">/* The stacks for ControlElements */</span></div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    std::vector&lt;Dir *&gt; m_dirStack;</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    std::vector&lt;Dynam *&gt; m_dynamStack;</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    std::vector&lt;Gliss *&gt; m_glissStack;</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    std::vector&lt;Harm *&gt; m_harmStack;</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    std::vector&lt;Octave *&gt; m_octaveStack;</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    std::vector&lt;Pedal *&gt; m_pedalStack;</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    std::vector&lt;Tempo *&gt; m_tempoStack;</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;<span class="comment">     * The stack of floating elements (tie, slur, etc.) to be added at the</span></div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;<span class="comment">     * end of each measure</span></div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    std::vector&lt;std::pair&lt;std::string, ControlElement *&gt;&gt; m_controlElements;</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    <span class="comment">/* stack of clef changes to be inserted to all layers of a given staff */</span></div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    std::deque&lt;musicxml::ClefChange&gt; m_clefChangeQueue;</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;    <span class="comment">/* stack of new arpeggios that get more notes added. */</span></div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    std::vector&lt;std::pair&lt;Arpeg *, musicxml::OpenArpeggio&gt;&gt; m_ArpeggioStack;</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    <span class="comment">/* a map for the measure counts storing the index of each measure created */</span></div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    std::map&lt;Measure *, int&gt; m_measureCounts;</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    <span class="comment">/* measure rests */</span></div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;    std::map&lt;int, int&gt; m_multiRests;</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <span class="comment">/* a map of current accidental for each pitch class */</span></div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    std::map&lt;data_PITCHNAME, std::vector&lt;musicxml::Accidental&gt;&gt; m_currentAccids;</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    <span class="comment">/* current key signature */</span></div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    <a class="code" href="classvrv_1_1_key_sig.html">KeySig</a> *m_currentKeySig = NULL;</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    <span class="comment">/* A flag indicating we had a clef change */</span></div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;    <span class="keywordtype">int</span> m_clefChanged = 0;</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160; </div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// NO_MUSICXML_SUPPORT</span></div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;};</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160; </div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160; </div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __VRV_IOMUSXML_H__</span></div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;<span class="comment">     * @name Helper to create a string from pitch/alter values.</span></div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    <span class="keyword">static</span> std::string PitchAlterToString(data_PITCHNAME pname, <span class="keywordtype">float</span> alter);</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160; </div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    <span class="comment">/* octave offset */</span></div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    std::vector&lt;int&gt; m_octDis;</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="comment">/* measure repeats */</span></div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    <span class="keywordtype">bool</span> m_mRpt = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    <span class="comment">/* measure repeats */</span></div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    <span class="keywordtype">bool</span> m_slash = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <span class="comment">/* MIDI ticks */</span></div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    <span class="keywordtype">int</span> m_ppq = -1;</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <span class="comment">/* measure time */</span></div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <span class="keywordtype">int</span> m_durTotal = 0;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    <span class="comment">/* measure time */</span></div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <span class="keywordtype">int</span> m_durFb = 0;</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <span class="comment">/* meter signature */</span></div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    std::vector&lt;int&gt; m_meterCount = { 4 };</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    <span class="keywordtype">int</span> m_meterUnit = 4;</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    MeterCountSign m_meterSign = MeterCountSign::None;</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    <span class="comment">/* part information */</span></div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <a class="code" href="classvrv_1_1_label.html">Label</a> *m_label = NULL;</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    <a class="code" href="classvrv_1_1_label_abbr.html">LabelAbbr</a> *m_labelAbbr = NULL;</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <a class="code" href="classvrv_1_1_instr_def.html">InstrDef</a> *m_instrdef = NULL;</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    <span class="comment">/* LastElementID */</span></div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    std::string m_ID;</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    <span class="comment">/* A map of stacks for piling open LayerElements (beams, tuplets, chords, btrem, ftrem) separately per layer */</span></div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    std::map&lt;Layer *, std::vector&lt;LayerElement *&gt;&gt; m_elementStackMap;</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    <span class="comment">/* A maps of time stamps (score time) to indicate write pointer of a given layer */</span></div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    std::map&lt;Layer *, int&gt; m_layerEndTimes;</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    std::map&lt;Layer *, std::multimap&lt;int, LayerElement *&gt;&gt; m_layerTimes;</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="comment">/* To remember layer of last element (note) to handle chords */</span></div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    <a class="code" href="classvrv_1_1_layer.html">Layer</a> *m_prevLayer = NULL;</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;    <span class="comment">/* To remember current layer to properly handle layers/staves/cross-staff elements */</span></div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    <a class="code" href="classvrv_1_1_layer.html">Layer</a> *m_currentLayer = NULL;</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    <span class="keywordtype">bool</span> m_isLayerInitialized = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    <span class="comment">/* The stack for open slurs */</span></div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    std::vector&lt;std::pair&lt;Slur *, musicxml::OpenSlur&gt;&gt; m_slurStack;</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    <span class="comment">/* The stack for slur stops that might come before the slur has been opened */</span></div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    std::vector&lt;std::pair&lt;LayerElement *, musicxml::CloseSlur&gt;&gt; m_slurStopStack;</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    <span class="comment">/* The stack for open ties */</span></div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    std::vector&lt;musicxml::OpenTie&gt; m_tieStack;</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    <span class="comment">/* The stack for tie stops that might come before that tie was opened */</span></div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    std::vector&lt;musicxml::CloseTie&gt; m_tieStopStack;</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    <span class="comment">/* The stack for hairpins */</span></div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    std::vector&lt;std::pair&lt;Hairpin *, musicxml::OpenSpanner&gt;&gt; m_hairpinStack;</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    <span class="comment">/* The stack for hairpin stops that might occur before a hairpin was started staffNumber, tStamp2, (hairpinNumber,</span></div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;<span class="comment">     * measureCount) */</span></div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    std::vector&lt;std::tuple&lt;int, double, musicxml::OpenSpanner&gt;&gt; m_hairpinStopStack;</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;    <span class="comment">/* The stack for the beamspans with numbers of staff/layer where starting element is located*/</span></div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    std::vector&lt;std::pair&lt;BeamSpan *, std::pair&lt;int, int&gt;&gt;&gt; m_beamspanStack;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    std::vector&lt;std::pair&lt;BracketSpan *, musicxml::OpenSpanner&gt;&gt; m_bracketStack;</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    std::vector&lt;std::pair&lt;Trill *, musicxml::OpenSpanner&gt;&gt; m_trillStack;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <span class="comment">/* Current section/ending info for start/stop */</span></div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    std::optional&lt;musicxml::SectionInfo&gt; m_sectionStart;</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    std::optional&lt;musicxml::SectionInfo&gt; m_sectionStop;</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    std::optional&lt;musicxml::JumpInfo&gt; m_jumpInfo;</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    std::optional&lt;musicxml::FineInfo&gt; m_fineInfo;</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    <span class="comment">/* The list of sections/endings to be inserted at the end of XML import */</span></div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    std::vector&lt;std::pair&lt;musicxml::SectionInfo, std::vector&lt;Measure *&gt;&gt;&gt; m_sections;</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    <span class="comment">/* The stack of open dashes (direction-type) containing *ControlElement, OpenDashes */</span></div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    std::vector&lt;std::pair&lt;ControlElement *, musicxml::OpenDashes&gt;&gt; m_openDashesStack;</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    <span class="comment">/* The stacks for ControlElements */</span></div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    std::vector&lt;Dir *&gt; m_dirStack;</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    std::vector&lt;Dynam *&gt; m_dynamStack;</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    std::vector&lt;Gliss *&gt; m_glissStack;</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;    std::vector&lt;Harm *&gt; m_harmStack;</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    std::vector&lt;Octave *&gt; m_octaveStack;</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    std::vector&lt;Pedal *&gt; m_pedalStack;</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    std::vector&lt;Tempo *&gt; m_tempoStack;</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;<span class="comment">     * The stack of floating elements (tie, slur, etc.) to be added at the</span></div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;<span class="comment">     * end of each measure</span></div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    std::vector&lt;std::pair&lt;std::string, ControlElement *&gt;&gt; m_controlElements;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <span class="comment">/* stack of clef changes to be inserted to all layers of a given staff */</span></div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    std::deque&lt;musicxml::ClefChange&gt; m_clefChangeQueue;</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;    <span class="comment">/* stack of new arpeggios that get more notes added. */</span></div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    std::vector&lt;std::pair&lt;Arpeg *, musicxml::OpenArpeggio&gt;&gt; m_ArpeggioStack;</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    <span class="comment">/* a map for the measure counts storing the index of each measure created */</span></div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    std::map&lt;Measure *, int&gt; m_measureCounts;</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    <span class="comment">/* measure rests */</span></div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    std::map&lt;int, int&gt; m_multiRests;</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;    <span class="comment">/* a map of pitch classes to their current accidental(s) */</span></div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;    std::map&lt;data_PITCHNAME, std::vector&lt;musicxml::Accidental&gt;&gt; m_currentAccids;</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;    <span class="comment">/* a map of pitch/alter values to their corresponding accidental(s) */</span></div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    std::map&lt;std::string, std::vector&lt;musicxml::Accidental&gt;&gt; m_alterAccids;</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    <span class="comment">/* current key signature */</span></div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    <a class="code" href="classvrv_1_1_key_sig.html">KeySig</a> *m_currentKeySig = NULL;</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    <span class="comment">/* A flag indicating we had a clef change */</span></div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    <span class="keywordtype">int</span> m_clefChanged = 0;</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160; </div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// NO_MUSICXML_SUPPORT</span></div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;};</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160; </div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160; </div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __VRV_IOMUSXML_H__</span></div>
 <div class="ttc" id="aclassvrv_1_1_clef_html"><div class="ttname"><a href="classvrv_1_1_clef.html">vrv::Clef</a></div><div class="ttdoc">This class models the MEI &lt;clef&gt; element.</div><div class="ttdef"><b>Definition:</b> clef.h:41</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:35</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:41</div></div>
@@ -767,7 +774,7 @@ $(document).ready(function(){initNavTree('iomusxml_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>iomusxml.h</b></li>
-    <li class="footer">Generated on Thu Jul 9 2026 19:46:10 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jul 10 2026 07:08:02 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
