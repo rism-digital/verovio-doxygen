@@ -278,71 +278,72 @@ $(document).ready(function(){initNavTree('svgdevicecontext_8h_source.html',''); 
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keywordtype">bool</span> m_committed; <span class="comment">// did we flushed the file?</span></div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keywordtype">int</span> m_originX, m_originY;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="comment">// Here we hold references to all different glyphs used so far,</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="comment">// including any glyph for the same code but from different fonts.</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="comment">// They will be added at the end of the file as &lt;defs&gt;.</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="comment">// With multiple font support we need to keep track of:</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="comment">//  a) the glyph (to check if is has been already added)</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="comment">//  b) the id assigned to glyphs on the (that is has been consumed by the already rendered elements)</span></div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="comment">// To keep things as similar as possible to previous versions we generate ids with as uuuu-ss (where uuuu is the</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="comment">// Smulf code for the glyph and ss the per-session suffix) for most of the cases (single font usage). When the same</span></div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="comment">// glyph has been used from several fonts we use uuuu-n-ss where n indicates the collision count.</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keyword">class </span>GlyphRef {</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        GlyphRef(<span class="keyword">const</span> Glyph *glyph, <span class="keywordtype">int</span> count, <span class="keyword">const</span> std::string &amp;postfix);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="keyword">const</span> Glyph *GetGlyph()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_glyph; };</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keyword">const</span> std::string &amp;GetRefId()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_refId; };</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keyword">const</span> Glyph *m_glyph;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        std::string m_refId;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    };</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keyword">const</span> std::string InsertGlyphRef(<span class="keyword">const</span> Glyph *glyph);</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    std::vector&lt;std::pair&lt;const Glyph *, GlyphRef&gt;&gt; m_smuflGlyphs;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    std::map&lt;std::string, int&gt; m_glyphCodeFontCounter;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="comment">// pugixml data</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    pugi::xml_document m_svgDoc;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    pugi::xml_node m_svgNode;</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    pugi::xml_node m_pageNode;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    pugi::xml_node m_currentNode;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    std::list&lt;pugi::xml_node&gt; m_svgNodeStack;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="comment">// output as mm (for pdf generation with a 72 dpi)</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keywordtype">bool</span> m_mmOutput;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordtype">bool</span> m_facsimile;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="comment">// use LiberationTextFont</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keywordtype">bool</span> m_useLiberation;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="comment">// add bouding boxes in svg output</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordtype">bool</span> m_svgBoundingBoxes;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="comment">// add content bounding boxes in svg output</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keywordtype">bool</span> m_svgContentBoundingBoxes;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="comment">// use viewbox on svg root element</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordtype">bool</span> m_svgViewBox;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="comment">// output HTML5 data-* attributes</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keywordtype">bool</span> m_html5;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="comment">// additional CSS</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    std::string m_css;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="comment">// copy additional attributes of given elements to the SVG, in the form &quot;note@pname; layer@n&quot;</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    std::multimap&lt;ClassId, std::string&gt; m_svgAdditionalAttributes;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="comment">// format output as raw, stripping extraneous whitespace and non-content newlines</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordtype">bool</span> m_formatRaw;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="comment">// remove xlink from href attributes</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordtype">bool</span> m_removeXlink;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="comment">// indentation value (-1 for tabs)</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordtype">int</span> m_indent;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="comment">// postfix to be added to font glyphs</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    std::string m_glyphPostfixId;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="comment">// embedding of the smufl text font</span></div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    option_SMUFLTEXTFONT m_smuflTextFont;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="comment">// the document id</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    std::string m_docId;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;};</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160; </div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordtype">int</span> m_textY;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="comment">// Here we hold references to all different glyphs used so far,</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="comment">// including any glyph for the same code but from different fonts.</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="comment">// They will be added at the end of the file as &lt;defs&gt;.</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="comment">// With multiple font support we need to keep track of:</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="comment">//  a) the glyph (to check if is has been already added)</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="comment">//  b) the id assigned to glyphs on the (that is has been consumed by the already rendered elements)</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="comment">// To keep things as similar as possible to previous versions we generate ids with as uuuu-ss (where uuuu is the</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="comment">// Smulf code for the glyph and ss the per-session suffix) for most of the cases (single font usage). When the same</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="comment">// glyph has been used from several fonts we use uuuu-n-ss where n indicates the collision count.</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keyword">class </span>GlyphRef {</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        GlyphRef(<span class="keyword">const</span> Glyph *glyph, <span class="keywordtype">int</span> count, <span class="keyword">const</span> std::string &amp;postfix);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keyword">const</span> Glyph *GetGlyph()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_glyph; };</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keyword">const</span> std::string &amp;GetRefId()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_refId; };</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keyword">const</span> Glyph *m_glyph;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        std::string m_refId;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    };</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keyword">const</span> std::string InsertGlyphRef(<span class="keyword">const</span> Glyph *glyph);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    std::vector&lt;std::pair&lt;const Glyph *, GlyphRef&gt;&gt; m_smuflGlyphs;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    std::map&lt;std::string, int&gt; m_glyphCodeFontCounter;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="comment">// pugixml data</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    pugi::xml_document m_svgDoc;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    pugi::xml_node m_svgNode;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    pugi::xml_node m_pageNode;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    pugi::xml_node m_currentNode;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    std::list&lt;pugi::xml_node&gt; m_svgNodeStack;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="comment">// output as mm (for pdf generation with a 72 dpi)</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordtype">bool</span> m_mmOutput;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keywordtype">bool</span> m_facsimile;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="comment">// use LiberationTextFont</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordtype">bool</span> m_useLiberation;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="comment">// add bouding boxes in svg output</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keywordtype">bool</span> m_svgBoundingBoxes;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="comment">// add content bounding boxes in svg output</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordtype">bool</span> m_svgContentBoundingBoxes;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="comment">// use viewbox on svg root element</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keywordtype">bool</span> m_svgViewBox;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="comment">// output HTML5 data-* attributes</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordtype">bool</span> m_html5;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="comment">// additional CSS</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    std::string m_css;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="comment">// copy additional attributes of given elements to the SVG, in the form &quot;note@pname; layer@n&quot;</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    std::multimap&lt;ClassId, std::string&gt; m_svgAdditionalAttributes;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="comment">// format output as raw, stripping extraneous whitespace and non-content newlines</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordtype">bool</span> m_formatRaw;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="comment">// remove xlink from href attributes</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordtype">bool</span> m_removeXlink;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="comment">// indentation value (-1 for tabs)</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordtype">int</span> m_indent;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="comment">// postfix to be added to font glyphs</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    std::string m_glyphPostfixId;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="comment">// embedding of the smufl text font</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    option_SMUFLTEXTFONT m_smuflTextFont;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="comment">// the document id</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    std::string m_docId;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;};</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __VRV_SVG_DC_H__</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __VRV_SVG_DC_H__</span></div>
 <div class="ttc" id="aclassvrv_1_1_device_context_html"><div class="ttname"><a href="classvrv_1_1_device_context.html">vrv::DeviceContext</a></div><div class="ttdoc">This class is an abstract device context.</div><div class="ttdef"><b>Definition:</b> devicecontext.h:57</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_factory_html_a18433f31ae6a0aa75e9675cbf4f1b647"><div class="ttname"><a href="classvrv_1_1_object_factory.html#a18433f31ae6a0aa75e9675cbf4f1b647">vrv::ObjectFactory::GetClassId</a></div><div class="ttdeci">ClassId GetClassId(std::string name)</div><div class="ttdoc">Get the ClassId from the MEI element string name by making a lookup in the register.</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_factory_html_abb4435d1b404de50c98ae24d31520786"><div class="ttname"><a href="classvrv_1_1_object_factory.html#abb4435d1b404de50c98ae24d31520786">vrv::ObjectFactory::GetInstance</a></div><div class="ttdeci">static ObjectFactory * GetInstance()</div><div class="ttdoc">A static method returning a static object in order to guarantee initialisation.</div></div>
@@ -375,7 +376,7 @@ $(document).ready(function(){initNavTree('svgdevicecontext_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>svgdevicecontext.h</b></li>
-    <li class="footer">Generated on Thu Jul 23 2026 07:59:07 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jul 23 2026 10:06:15 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
