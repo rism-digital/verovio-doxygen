@@ -532,19 +532,23 @@ $(document).ready(function(){initNavTree('view_8h_source.html',''); initResizabl
 <div class="line"><a name="l00721"></a><span class="lineno"><a class="line" href="classvrv_1_1_view.html#ab16976e8a08645f3fdb70a658ede2c15">  721</a></span>&#160;    <a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> <a class="code" href="classvrv_1_1_view.html#ab16976e8a08645f3fdb70a658ede2c15">m_drawingScoreDef</a>;</div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160; </div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    <span class="comment">// Static members //</span></div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    <span class="comment">//----------------//</span></div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160; </div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    <span class="keyword">static</span> thread_local <span class="keywordtype">int</span> s_drawingLigX[2], s_drawingLigY[2];</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    <span class="keyword">static</span> thread_local <span class="keywordtype">bool</span> s_drawingLigObliqua;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    <span class="keywordtype">int</span> ConvertFontSizeNumeric(<span class="keyword">const</span> data_FONTSIZE &amp;fontSize, <span class="keywordtype">int</span> staffSize) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160; </div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    <span class="comment">// Static members //</span></div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    <span class="comment">//----------------//</span></div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160; </div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> ConvertFontPointSize(<span class="keywordtype">double</span> pointSize);</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160; </div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    std::list&lt;Offset&gt; m_currentOffsets;</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;};</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160; </div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    <span class="keyword">static</span> thread_local <span class="keywordtype">int</span> s_drawingLigX[2], s_drawingLigY[2];</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    <span class="keyword">static</span> thread_local <span class="keywordtype">bool</span> s_drawingLigObliqua;</div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160; </div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    std::list&lt;Offset&gt; m_currentOffsets;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;};</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160; </div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160; </div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassvrv_1_1_annot_score_html"><div class="ttname"><a href="classvrv_1_1_annot_score.html">vrv::AnnotScore</a></div><div class="ttdoc">This class models the MEI &lt;annot&gt; element where @type is score.</div><div class="ttdef"><b>Definition:</b> annotscore.h:24</div></div>
 <div class="ttc" id="aclassvrv_1_1_arpeg_html"><div class="ttname"><a href="classvrv_1_1_arpeg.html">vrv::Arpeg</a></div><div class="ttdoc">This class models the MEI &lt;arpeg&gt; element.</div><div class="ttdef"><b>Definition:</b> arpeg.h:31</div></div>
 <div class="ttc" id="aclassvrv_1_1_beam_drawing_interface_html"><div class="ttname"><a href="classvrv_1_1_beam_drawing_interface.html">vrv::BeamDrawingInterface</a></div><div class="ttdoc">This class is an interface for MEI beam elements (beam, beamSpan).</div><div class="ttdef"><b>Definition:</b> drawinginterface.h:98</div></div>
@@ -627,7 +631,7 @@ $(document).ready(function(){initNavTree('view_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>view.h</b></li>
-    <li class="footer">Generated on Mon Jul 20 2026 07:01:08 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jul 23 2026 07:59:07 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
