@@ -7,7 +7,7 @@ var searchData=
   ['redopagepitchposlayout_2383',['RedoPagePitchPosLayout',['../classvrv_1_1_toolkit.html#aff4b4b830b5859bf07d19e8ca63d2335',1,'vrv::Toolkit']]],
   ['reduce_2384',['Reduce',['../classvrv_1_1_fraction.html#a3670e176e3289ac1c3e8b2e9522e512b',1,'vrv::Fraction']]],
   ['refreshlayout_2385',['RefreshLayout',['../classvrv_1_1_doc.html#a8ab1f3b20b1913e55cd9e9e3c7cfcde7',1,'vrv::Doc']]],
-  ['register_2386',['Register',['../classvrv_1_1_object_factory.html#aa762c621a31dc9ac0759b860e367bea3',1,'vrv::ObjectFactory']]],
+  ['register_2386',['Register',['../classvrv_1_1_object_factory.html#a3fd5ea8fc6505fd15e32282b014d7113',1,'vrv::ObjectFactory']]],
   ['registerinterfaceattclass_2387',['RegisterInterfaceAttClass',['../classvrv_1_1_interface.html#a57c9a4f18b81a07ef0d14dc040f84257',1,'vrv::Interface']]],
   ['relinquish_2388',['Relinquish',['../classvrv_1_1_object.html#a48ea7a78dfbdf0195235b56679924c76',1,'vrv::Object']]],
   ['renderdata_2389',['RenderData',['../classvrv_1_1_toolkit.html#ad211393138b2c6b8f0afd933c117a9a4',1,'vrv::Toolkit']]],

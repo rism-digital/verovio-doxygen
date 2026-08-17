@@ -49,7 +49,7 @@ var searchData=
   ['centerdrawingx_1863',['CenterDrawingX',['../classvrv_1_1_layer_element.html#a9119ab77c4eb82a8ad74cb8a20f7784d',1,'vrv::LayerElement']]],
   ['chain_1864',['Chain',['../classvrv_1_1_editor_toolkit_shared.html#a1e25a619a451ce20528bb997b4ab1188',1,'vrv::EditorToolkitShared']]],
   ['checkpagesize_1865',['CheckPageSize',['../classvrv_1_1_doc.html#aee7a01999fe14b6db1b194660626fc67',1,'vrv::Doc']]],
-  ['classregistrar_1866',['ClassRegistrar',['../classvrv_1_1_class_registrar.html#a2a0036d5b5ceecbd2a12ba3ccedb8d91',1,'vrv::ClassRegistrar::ClassRegistrar(std::string name, ClassId classId)'],['../classvrv_1_1_class_registrar.html#a51212d4d08aaa4c48a4e9126a82af81e',1,'vrv::ClassRegistrar::ClassRegistrar(const std::string &amp;name, ClassId pseudoClassId, std::function&lt; Object *()&gt; factory)']]],
+  ['classregistrar_1866',['ClassRegistrar',['../classvrv_1_1_class_registrar.html#a6d3998ef565f297b2d72441b93bc7177',1,'vrv::ClassRegistrar::ClassRegistrar(const std::string &amp;name, ClassId classId)'],['../classvrv_1_1_class_registrar.html#a51212d4d08aaa4c48a4e9126a82af81e',1,'vrv::ClassRegistrar::ClassRegistrar(const std::string &amp;name, ClassId pseudoClassId, std::function&lt; Object *()&gt; factory)']]],
   ['clearchildren_1867',['ClearChildren',['../classvrv_1_1_object.html#a0af864d1b64a70d4ec8b62a520114bde',1,'vrv::Object']]],
   ['clearcoordrefs_1868',['ClearCoordRefs',['../classvrv_1_1_beam_segment.html#a29c1c949f0d813b5ffc8303515bc804f',1,'vrv::BeamSegment']]],
   ['clearcoords_1869',['ClearCoords',['../classvrv_1_1_beam_drawing_interface.html#ace5c4c0657c94d8de99b933c75eb3e8f',1,'vrv::BeamDrawingInterface']]],
@@ -79,7 +79,7 @@ var searchData=
   ['converttouncastoffmensuralsystem_1893',['ConvertToUnCastOffMensuralSystem',['../classvrv_1_1_system.html#afc3f4dd68c9cf720bb6bda66c8df0056',1,'vrv::System']]],
   ['copyattributesto_1894',['CopyAttributesTo',['../classvrv_1_1_object.html#a5ded43771526c4de94f02da17c47b3bc',1,'vrv::Object']]],
   ['copychildren_1895',['CopyChildren',['../classvrv_1_1_horizontal_aligner.html#ac0a12119f9fbbdec17a10e9429a97724',1,'vrv::HorizontalAligner::CopyChildren()'],['../classvrv_1_1_object.html#a4bf38f527d70161c92062a2347b7c11e',1,'vrv::Object::CopyChildren()'],['../classvrv_1_1_system_aligner.html#af4900d0bffe36fafb8196c6d00790c40',1,'vrv::SystemAligner::CopyChildren()']]],
-  ['create_1896',['Create',['../classvrv_1_1_object_factory.html#a83da56ce4ef8b890f1e224dfea4e8fdc',1,'vrv::ObjectFactory::Create(std::string name)'],['../classvrv_1_1_object_factory.html#a15a5b657c81141ab41073bfc6cdb7f3d',1,'vrv::ObjectFactory::Create(ClassId classId)']]],
+  ['create_1896',['Create',['../classvrv_1_1_object_factory.html#a7d12f7b5aeae51f28560bbc71e1d80c5',1,'vrv::ObjectFactory::Create(const std::string &amp;name)'],['../classvrv_1_1_object_factory.html#a15a5b657c81141ab41073bfc6cdb7f3d',1,'vrv::ObjectFactory::Create(ClassId classId)']]],
   ['createdefaultzone_1897',['CreateDefaultZone',['../classvrv_1_1_syl.html#a61983aa1e78d32047fffe5f3c083c09f',1,'vrv::Syl']]],
   ['createsymbolstr_1898',['CreateSymbolStr',['../classvrv_1_1_accid.html#a8e034944cbddfd64c7dc7acdf60f0065',1,'vrv::Accid']]]
 ];

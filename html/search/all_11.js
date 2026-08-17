@@ -10,7 +10,7 @@ var searchData=
   ['ref_1052',['Ref',['../classvrv_1_1_ref.html',1,'vrv']]],
   ['refreshlayout_1053',['RefreshLayout',['../classvrv_1_1_doc.html#a8ab1f3b20b1913e55cd9e9e3c7cfcde7',1,'vrv::Doc']]],
   ['reg_1054',['Reg',['../classvrv_1_1_reg.html',1,'vrv']]],
-  ['register_1055',['Register',['../classvrv_1_1_object_factory.html#aa762c621a31dc9ac0759b860e367bea3',1,'vrv::ObjectFactory']]],
+  ['register_1055',['Register',['../classvrv_1_1_object_factory.html#a3fd5ea8fc6505fd15e32282b014d7113',1,'vrv::ObjectFactory']]],
   ['registerinterfaceattclass_1056',['RegisterInterfaceAttClass',['../classvrv_1_1_interface.html#a57c9a4f18b81a07ef0d14dc040f84257',1,'vrv::Interface']]],
   ['reh_1057',['Reh',['../classvrv_1_1_reh.html',1,'vrv']]],
   ['relinquish_1058',['Relinquish',['../classvrv_1_1_object.html#a48ea7a78dfbdf0195235b56679924c76',1,'vrv::Object']]],

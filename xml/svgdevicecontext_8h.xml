@@ -14,13 +14,13 @@
       <node id="3">
         <label>list</label>
       </node>
-      <node id="30">
+      <node id="32">
         <label>boundingbox.h</label>
         <link refid="boundingbox_8h_source"/>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="32">
+      <node id="34">
         <label>attalternates.h</label>
       </node>
       <node id="13">
@@ -29,13 +29,13 @@
       <node id="25">
         <label>iterator</label>
       </node>
-      <node id="33">
+      <node id="35">
         <label>atttypes.h</label>
       </node>
       <node id="22">
         <label>pugixml.hpp</label>
       </node>
-      <node id="31">
+      <node id="33">
         <label>options.h</label>
         <link refid="options_8h_source"/>
         <childnode refid="14" relation="include">
@@ -44,17 +44,17 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
-        </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
         <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="35" relation="include">
         </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
       </node>
       <node id="17">
@@ -69,7 +69,7 @@
         <childnode refid="21" relation="include">
         </childnode>
       </node>
-      <node id="35">
+      <node id="37">
         <label>toolkitdef.h</label>
         <link refid="toolkitdef_8h_source"/>
       </node>
@@ -109,16 +109,16 @@
         </childnode>
         <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
       </node>
       <node id="14">
         <label>map</label>
       </node>
-      <node id="36">
+      <node id="38">
         <label>jsonxx.h</label>
       </node>
-      <node id="27">
+      <node id="29">
         <label>unordered_set</label>
       </node>
       <node id="9">
@@ -133,14 +133,14 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="34">
+      <node id="36">
         <label>smufl.h</label>
         <link refid="smufl_8h_source"/>
       </node>
       <node id="2">
         <label>fstream</label>
       </node>
-      <node id="29">
+      <node id="31">
         <label>attmodule.h</label>
       </node>
       <node id="15">
@@ -171,15 +171,19 @@
         </childnode>
         <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
         <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="29" relation="include">
         </childnode>
         <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
@@ -216,6 +220,12 @@
         <label>unordered_map</label>
       </node>
       <node id="28">
+        <label>shared_mutex</label>
+      </node>
+      <node id="27">
+        <label>mutex</label>
+      </node>
+      <node id="30">
         <label>attclasses.h</label>
       </node>
       <node id="4">
@@ -400,7 +410,7 @@
 <codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::string<sp/>s<sp/>:<sp/>additionalAttributes)<sp/>{</highlight></codeline>
 <codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>className<sp/>=<sp/>s.substr(0,<sp/>s.find(</highlight><highlight class="stringliteral">&quot;@&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="comment">//<sp/>parse<sp/>&lt;element@attribute&gt;,<sp/>e.g.,<sp/>&quot;note@pname&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>attributeName<sp/>=<sp/>s.substr(s.find(</highlight><highlight class="stringliteral">&quot;@&quot;</highlight><highlight class="normal">)<sp/>+<sp/>1);</highlight></codeline>
-<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ClassId<sp/>classId<sp/>=<sp/><ref refid="classvrv_1_1_object_factory_1abb4435d1b404de50c98ae24d31520786" kindref="member">ObjectFactory::GetInstance</ref>()-&gt;<ref refid="classvrv_1_1_object_factory_1a18433f31ae6a0aa75e9675cbf4f1b647" kindref="member">GetClassId</ref>(className);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ClassId<sp/>classId<sp/>=<sp/><ref refid="classvrv_1_1_object_factory_1a0016b2e157726832d8fdbd01362798f5" kindref="member">ObjectFactory::GetInstance</ref>().<ref refid="classvrv_1_1_object_factory_1a1916d919138bd78bd556465fd8b4f16a" kindref="member">GetClassId</ref>(className);</highlight></codeline>
 <codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_svgAdditionalAttributes.insert({<sp/>classId,<sp/>attributeName<sp/>});</highlight></codeline>
 <codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
