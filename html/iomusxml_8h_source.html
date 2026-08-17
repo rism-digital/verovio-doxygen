@@ -730,21 +730,17 @@ $(document).ready(function(){initNavTree('iomusxml_8h_source.html',''); initResi
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;    std::map&lt;Measure *, int&gt; m_measureCounts;</div>
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    <span class="comment">/* measure rests */</span></div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    std::map&lt;int, int&gt; m_multiRests;</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    <span class="comment">/* a map of pitch classes to their current accidental(s) */</span></div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    std::map&lt;data_PITCHNAME, std::vector&lt;musicxml::Accidental&gt;&gt; m_currentAccids;</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    <span class="comment">/* a map of pitch/alter values to their corresponding accidental(s) */</span></div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    std::map&lt;std::string, std::vector&lt;musicxml::Accidental&gt;&gt; m_alterAccids;</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <span class="comment">/* current key signature */</span></div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    <a class="code" href="classvrv_1_1_key_sig.html">KeySig</a> *m_currentKeySig = NULL;</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    <span class="comment">/* A flag indicating we had a clef change */</span></div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    <span class="keywordtype">int</span> m_clefChanged = 0;</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160; </div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// NO_MUSICXML_SUPPORT</span></div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;};</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160; </div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160; </div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __VRV_IOMUSXML_H__</span></div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    <span class="comment">/* a map of pitch/alter values to their corresponding accidental(s) */</span></div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    std::map&lt;std::string, std::vector&lt;musicxml::Accidental&gt;&gt; m_alterAccids;</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    <span class="comment">/* A flag indicating we had a clef change */</span></div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    <span class="keywordtype">int</span> m_clefChanged = 0;</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160; </div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// NO_MUSICXML_SUPPORT</span></div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;};</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160; </div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160; </div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __VRV_IOMUSXML_H__</span></div>
 <div class="ttc" id="aclassvrv_1_1_clef_html"><div class="ttname"><a href="classvrv_1_1_clef.html">vrv::Clef</a></div><div class="ttdoc">This class models the MEI &lt;clef&gt; element.</div><div class="ttdef"><b>Definition:</b> clef.h:41</div></div>
 <div class="ttc" id="aclassvrv_1_1_control_element_html"><div class="ttname"><a href="classvrv_1_1_control_element.html">vrv::ControlElement</a></div><div class="ttdoc">This class represents elements appearing within a measure.</div><div class="ttdef"><b>Definition:</b> controlelement.h:35</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:41</div></div>
@@ -774,7 +770,7 @@ $(document).ready(function(){initNavTree('iomusxml_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>iomusxml.h</b></li>
-    <li class="footer">Generated on Sun Aug 2 2026 10:05:16 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Aug 17 2026 06:53:04 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
