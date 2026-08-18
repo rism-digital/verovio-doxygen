@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"classvrv_1_1_beam_element_coord.html#ad39a98a648db43efa4ae8d382d95d06d":[1,0,0,57,1],
+"classvrv_1_1_beam_element_coord.html#ae2413c9f9e24d8829395823ffa2ed51c":[1,0,0,57,4],
 "classvrv_1_1_beam_element_coord.html#ae86c87990d1a0fd3a79f340aafe31d6e":[1,0,0,57,11],
 "classvrv_1_1_beam_segment.html":[1,0,0,54],
 "classvrv_1_1_beam_segment.html#a0c0437a8d0eeddefe926e4d133c66386":[1,0,0,54,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "classvrv_1_1_caesura.html#ab832b59977f796220e55f9db1a17d601":[1,0,0,66,5],
 "classvrv_1_1_caesura.html#abdd77406dd80236da807cdff8b7a5d37":[1,0,0,66,2],
 "classvrv_1_1_caesura.html#ae43f9bb9361c5794d660ccdc198c8470":[1,0,0,66,11],
-"classvrv_1_1_calc_alignment_pitch_pos_functor.html":[1,0,0,67],
-"classvrv_1_1_calc_alignment_pitch_pos_functor.html#a1ba75e41c089671ab12d6ca4a2f08f9c":[1,0,0,67,6],
-"classvrv_1_1_calc_alignment_pitch_pos_functor.html#a42b143e72c91e7b809c84f0822e84c01":[1,0,0,67,5]
+"classvrv_1_1_calc_alignment_pitch_pos_functor.html":[1,0,0,67]
 };

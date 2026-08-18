@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"classvrv_1_1_floating_curve_positioner.html#a8d4476965d072b7ddc771764905428ab":[1,0,0,198,21],
+"classvrv_1_1_floating_curve_positioner.html#a91f91d2639e931d321fae0dc47dd2f07":[1,0,0,198,25],
 "classvrv_1_1_floating_curve_positioner.html#a9bf76981377bc2618013786108c229fe":[1,0,0,198,20],
 "classvrv_1_1_floating_curve_positioner.html#aa58e5cba5f93a511a0cceef8fe4094a7":[1,0,0,198,16],
 "classvrv_1_1_floating_curve_positioner.html#acabb8e7619f73abd41833951e65f0f59":[1,0,0,198,24],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "classvrv_1_1_functor_interface.html#a5d6810c878d22584089d499cb5d0c596":[1,0,0,208,27],
 "classvrv_1_1_functor_interface.html#a5d984aa9609a44bbf7f7fa4ccbc04a19":[1,0,0,208,272],
 "classvrv_1_1_functor_interface.html#a5e08926cfa8f6f5c1e0e744469b9ff7d":[1,0,0,208,114],
-"classvrv_1_1_functor_interface.html#a5e837d9ee86af3e1e9c6f282d4a817dd":[1,0,0,208,198],
-"classvrv_1_1_functor_interface.html#a5ec5d9bf5249265839ee89b99c4d0835":[1,0,0,208,268],
-"classvrv_1_1_functor_interface.html#a616302f40042a408f4e2131d5190317a":[1,0,0,208,206]
+"classvrv_1_1_functor_interface.html#a5e837d9ee86af3e1e9c6f282d4a817dd":[1,0,0,208,198]
 };

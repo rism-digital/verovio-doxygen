@@ -108,8 +108,10 @@
     <member refid="classvrv_1_1_accid_1aacc4d9aa3b1d302c8e98004b2d875f75" kind="variable"><name>m_drawingUnison</name></member>
     <member refid="classvrv_1_1_accid_1af46e5c69ea07da8b232ff1afd6b37979" kind="variable"><name>m_alignedWithSameLayer</name></member>
     <member refid="classvrv_1_1_accid_1ac7b897038b95a87687fff0976451c0e8" kind="variable"><name>m_floatingObject</name></member>
+    <member refid="classvrv_1_1_accid_1a08728c51f2a9b1a9372a56799e9311a6" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_accid_1aede88b1122dce3e857b60b6e887ccd93" kind="function"><name>ClearFloatingObject</name></member>
     <member refid="classvrv_1_1_accid_1a205a11500949acf4371406a811255eaa" kind="function"><name>InitFloatingObject</name></member>
+    <member refid="classvrv_1_1_accid_1ad9245243b2ddf6e63208c2967a1d343e" kind="function"><name>InitShowAccidGes</name></member>
     <member refid="classvrv_1_1_accid_1ae76f48361c8c8293312a57aef963720c" kind="function"><name>GetFloatingObject</name></member>
     <member refid="classvrv_1_1_accid_1ae2550b09c4f89c0b902b8e81130a8df0" kind="function"><name>IsRelativeToStaff</name></member>
     <member refid="classvrv_1_1_accid_1a540367368be706aabb5722e8933e3fdc" kind="function"><name>HasToBeAligned</name></member>
@@ -6462,6 +6464,8 @@
     <member refid="classvrv_1_1_m_space_1a210d22f004b2959439bccc89e77c67dd" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_m_space_1a54527fe630049662b0df6467a582238e" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_m_space_1ae52f6b82c27553f96703bbb25fc01d98" kind="function"><name>AcceptEnd</name></member>
+    <member refid="classvrv_1_1_m_space_1af2409d64164700ee12962bd8413a67e7" kind="function"><name>IsSupportedChild</name></member>
+    <member refid="classvrv_1_1_m_space_1a3e951c15991b5ea991c27c8a0849ff67" kind="function"><name>InitShowMSpace</name></member>
   </compound>
   <compound refid="classvrv_1_1_multi_rest" kind="class"><name>vrv::MultiRest</name>
     <member refid="classvrv_1_1_multi_rest_1a979a840af1ae0cda54ec172c51765e09" kind="function"><name>MultiRest</name></member>
@@ -7337,6 +7341,7 @@
     <member refid="classvrv_1_1_options_1a90c42c497b2adcd4486a8db5f8a3dc8b" kind="variable"><name>m_removeIds</name></member>
     <member refid="classvrv_1_1_options_1a47f9e4b65cd8c1e013f8fb8298ce88ed" kind="variable"><name>m_scaleToPageSize</name></member>
     <member refid="classvrv_1_1_options_1ab5b8eb62cd6e01dd492709762890333a" kind="variable"><name>m_setLocale</name></member>
+    <member refid="classvrv_1_1_options_1a64a9c2cfb1990d9df099f6d22c735a93" kind="variable"><name>m_showHidden</name></member>
     <member refid="classvrv_1_1_options_1afceec4fdb9cfd908bd3f27994e3bb027" kind="variable"><name>m_showRuntime</name></member>
     <member refid="classvrv_1_1_options_1a26335379e5d001bcf4014f3d9b25eb60" kind="variable"><name>m_shrinkToFit</name></member>
     <member refid="classvrv_1_1_options_1a0a1d70ab5b5586e6236de14b718005ed" kind="variable"><name>m_smuflTextFont</name></member>
@@ -8117,8 +8122,10 @@
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1ae360af5dae993e5e3000e379fdd20570" kind="function"><name>VisitChord</name></member>
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1ab6d801c5fc65ac43f9fb10755bfbbb20" kind="function"><name>VisitFloatingObject</name></member>
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1ac4c1c715d23dee33bf36cb924168e715" kind="function"><name>VisitKeySig</name></member>
+    <member refid="classvrv_1_1_prepare_data_initialization_functor_1adffd1f598dfa3f7b4fa987c0956211e7" kind="function"><name>VisitMSpace</name></member>
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1a12d69479bdf850a362fce6fdd1d6697d" kind="function"><name>VisitRepeatMark</name></member>
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1a488533e1143dd54c9c5bb3919ff41874" kind="function"><name>VisitScore</name></member>
+    <member refid="classvrv_1_1_prepare_data_initialization_functor_1a5c0a414fed2f5130d5b15043055f71da" kind="function"><name>VisitSpace</name></member>
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1a29205d214d2484c18ff6c26c25a92760" kind="function"><name>VisitTextLayoutElement</name></member>
     <member refid="classvrv_1_1_prepare_data_initialization_functor_1a1bb63fcf53bc3059e16f6e2527f3bfba" kind="function"><name>ImplementsEndInterface</name></member>
   </compound>
@@ -8175,7 +8182,7 @@
     <member refid="classvrv_1_1_prepare_floating_grps_functor_1ad3f7d70afef2abc5f269241558c30db7" kind="function"><name>ImplementsEndInterface</name></member>
   </compound>
   <compound refid="classvrv_1_1_prepare_layer_element_parts_functor" kind="class"><name>vrv::PrepareLayerElementPartsFunctor</name>
-    <member refid="classvrv_1_1_prepare_layer_element_parts_functor_1af99021db9d63e32a1738ac4aa0d67e89" kind="function"><name>PrepareLayerElementPartsFunctor</name></member>
+    <member refid="classvrv_1_1_prepare_layer_element_parts_functor_1a214fc028c0946797e0884789f1e938aa" kind="function"><name>PrepareLayerElementPartsFunctor</name></member>
     <member refid="classvrv_1_1_prepare_layer_element_parts_functor_1abd65e15d86d420087a687d260ac74a9f" kind="function"><name>~PrepareLayerElementPartsFunctor</name></member>
     <member refid="classvrv_1_1_prepare_layer_element_parts_functor_1a38afbcca2b14fa4d26b7e2da75d39709" kind="function"><name>VisitChord</name></member>
     <member refid="classvrv_1_1_prepare_layer_element_parts_functor_1ab9f9797d3dee175e925ec2a7a67afb51" kind="function"><name>VisitNote</name></member>
@@ -8472,6 +8479,7 @@
     <member refid="classvrv_1_1_reset_data_functor_1ac9a8f72f1f3fba5c83ce755612c54328" kind="function"><name>VisitLigature</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1a1bb6a832c4ac2487d60268f2d388dbde" kind="function"><name>VisitMeasure</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1a3cf66c7d63e8b28a4189a8dbcadacd2d" kind="function"><name>VisitMRest</name></member>
+    <member refid="classvrv_1_1_reset_data_functor_1ae79a5573e43c412ca77d82fdf1872475" kind="function"><name>VisitMSpace</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1a09dad5f775bbe7baeda902ac2c21fa41" kind="function"><name>VisitNote</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1ad22b06531e64c9b33b9cf13ac9e20dff" kind="function"><name>VisitNc</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1a7cabb905452e6f2221d88b2cfc006496" kind="function"><name>VisitObject</name></member>
@@ -8480,6 +8488,7 @@
     <member refid="classvrv_1_1_reset_data_functor_1a61c902ab708a7c4b85cdc54a44de391c" kind="function"><name>VisitRest</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1a2de645de47858f7de1ccbb1c5ddfb064" kind="function"><name>VisitSection</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1adc4d397488168f222ccff580c157bf3d" kind="function"><name>VisitSlur</name></member>
+    <member refid="classvrv_1_1_reset_data_functor_1a226f6cbe0e4236fb1311c8e62a5148cc" kind="function"><name>VisitSpace</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1aabe87be98605f577cf566f97a7f14e69" kind="function"><name>VisitStaff</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1a72dd5f57bdcd223056c075a302cac29f" kind="function"><name>VisitStaffDef</name></member>
     <member refid="classvrv_1_1_reset_data_functor_1a5cbccf56abc121c00eed1885ec521519" kind="function"><name>VisitStem</name></member>
@@ -8664,6 +8673,8 @@
   <compound refid="classvrv_1_1_save_functor" kind="class"><name>vrv::SaveFunctor</name>
     <member refid="classvrv_1_1_save_functor_1ab4d8b09b2f9d5bfc4e0b017c85f92472" kind="function"><name>SaveFunctor</name></member>
     <member refid="classvrv_1_1_save_functor_1a1e39112475462274c173a36324e28257" kind="function"><name>~SaveFunctor</name></member>
+    <member refid="classvrv_1_1_save_functor_1a0a26f389884e37a7cd30c68da342e449" kind="function"><name>VisitAccid</name></member>
+    <member refid="classvrv_1_1_save_functor_1ac7f1271aec736d306fc90ecd85b48fc5" kind="function"><name>VisitAccidEnd</name></member>
     <member refid="classvrv_1_1_save_functor_1a5647dbfb179d96d5e9ee5966ab2fcfee" kind="function"><name>VisitDots</name></member>
     <member refid="classvrv_1_1_save_functor_1a23501f114b991e3d747b9fffc3fdda5a" kind="function"><name>VisitDotsEnd</name></member>
     <member refid="classvrv_1_1_save_functor_1a1879a91070d74e53ff728268e5b4fd65" kind="function"><name>VisitEditorialElement</name></member>
@@ -8676,8 +8687,12 @@
     <member refid="classvrv_1_1_save_functor_1a39b192131adab1ef68e451201cdb5d47" kind="function"><name>VisitMeasureEnd</name></member>
     <member refid="classvrv_1_1_save_functor_1a3a3d7cc1ea5da7beb37cfa8ccf943d94" kind="function"><name>VisitMNum</name></member>
     <member refid="classvrv_1_1_save_functor_1a2cd6b31d13b947e89c275dd9f4b30b34" kind="function"><name>VisitMNumEnd</name></member>
+    <member refid="classvrv_1_1_save_functor_1a4bfe093b0190fa4b46dfa76ddeda1c24" kind="function"><name>VisitMRest</name></member>
+    <member refid="classvrv_1_1_save_functor_1ab3180554660422eff84d90c69ce99329" kind="function"><name>VisitMRestEnd</name></member>
     <member refid="classvrv_1_1_save_functor_1a66fd218d6ab6eedfc4978ba53e7c3a44" kind="function"><name>VisitObject</name></member>
     <member refid="classvrv_1_1_save_functor_1a5e74eabcb960c8830fe0922ec4a6fa72" kind="function"><name>VisitObjectEnd</name></member>
+    <member refid="classvrv_1_1_save_functor_1a2e24c4bb1d94cbeb63ed089c5d09275d" kind="function"><name>VisitRest</name></member>
+    <member refid="classvrv_1_1_save_functor_1ad6aca98b225d2b00ada3ca700787c6a1" kind="function"><name>VisitRestEnd</name></member>
     <member refid="classvrv_1_1_save_functor_1a9bc0dc40ab43dd0587d364675161a94d" kind="function"><name>VisitRunningElement</name></member>
     <member refid="classvrv_1_1_save_functor_1a3ad7bfce01769999f34e1a754c5e3a80" kind="function"><name>VisitRunningElementEnd</name></member>
     <member refid="classvrv_1_1_save_functor_1a8f8ebafdffa6b3b69ce998bdd6f588cd" kind="function"><name>VisitText</name></member>
@@ -9073,6 +9088,8 @@
     <member refid="classvrv_1_1_space_1a1327402660d40e011c8c84077b75ca0b" kind="function"><name>Accept</name></member>
     <member refid="classvrv_1_1_space_1aa372c240cdffcb9aeaebefbe8acbb303" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_space_1ab64c60ab5ac8cbe806a7b21a23f83e30" kind="function"><name>AcceptEnd</name></member>
+    <member refid="classvrv_1_1_space_1ad0c1d364567949b75729452b8379b4a8" kind="function"><name>IsSupportedChild</name></member>
+    <member refid="classvrv_1_1_space_1ab83e50846d565836fa5e973f64bf71e7" kind="function"><name>InitShowSpace</name></member>
   </compound>
   <compound refid="structvrv_1_1_spanned_elements" kind="struct"><name>vrv::SpannedElements</name>
     <member refid="structvrv_1_1_spanned_elements_1a216693563181e15676656cd587c6eb57" kind="variable"><name>elements</name></member>
@@ -9542,6 +9559,7 @@
     <member refid="classvrv_1_1_svg_device_context_1a79fab8345d12d615353d646d0fbc4977" kind="variable"><name>m_currentNode</name></member>
     <member refid="classvrv_1_1_svg_device_context_1ab31fe6357db3d17a24c70852a152aeb9" kind="variable"><name>m_svgNodeStack</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a0c4a124f95be1529a2d6392253c70023" kind="variable"><name>m_mmOutput</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1ae076153409413acb47bb96c956887c94" kind="variable"><name>m_showHidden</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a89043a67354672f664125a38335bb1a7" kind="variable"><name>m_facsimile</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a1c1d608fa0fdc30475554b89a0c7a5b5" kind="variable"><name>m_useLiberation</name></member>
     <member refid="classvrv_1_1_svg_device_context_1aeecbb65f37519370932e63cd3bfffe4b" kind="variable"><name>m_svgBoundingBoxes</name></member>
@@ -9565,6 +9583,7 @@
     <member refid="classvrv_1_1_svg_device_context_1a57ff509fb8c71c3fd48092ba269cc159" kind="function"><name>SetMMOutput</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a8b65f0e3f8f263b8c2d241e602c085f8" kind="function"><name>SetFacsimile</name></member>
     <member refid="classvrv_1_1_svg_device_context_1aa924b39defc555046d658c2abe70d0d9" kind="function"><name>GetFacsimile</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1ace2cce516db295705b684cb761d1abf8" kind="function"><name>SetShowHidden</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a5c2758eb5a508b7ff8c7b359bd1f77e5" kind="function"><name>SetUseLiberation</name></member>
     <member refid="classvrv_1_1_svg_device_context_1ae59f5620c868167fef4915c0dfe30618" kind="function"><name>SetSvgBoundingBoxes</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a1c297f45536115b38383cff255fa1c5a" kind="function"><name>SetSvgContentBoundingBoxes</name></member>
@@ -12870,6 +12889,7 @@
     <member refid="vrvdef_8h_1aeb08e9bbf52113894121dff32eb2d886" kind="define"><name>LINEWIDTHTERM_factor_wide</name></member>
     <member refid="vrvdef_8h_1a62daba5cb6b3ceaa4cd62484c9adf48c" kind="define"><name>SCORE_TIME_UNIT</name></member>
     <member refid="vrvdef_8h_1a82aa29946d79eae78464ae5bcdc5b949" kind="define"><name>NEUME_LINE_TYPE</name></member>
+    <member refid="vrvdef_8h_1ab4d721468a9e8f89cbd80dd662609a23" kind="define"><name>CSS_SHOW_HIDDEN</name></member>
     <member refid="vrvdef_8h_1a8e48086ec95b10d9c33a4bd2b21892c9" kind="define"><name>OCTAVE_OFFSET</name></member>
     <member refid="vrvdef_8h_1a599046fa688f5cc8168b94f1be04e519" kind="define"><name>STANDARD_STEMLENGTH</name></member>
     <member refid="vrvdef_8h_1a94397e0a7d77d0c6834022aee41165bc" kind="define"><name>STANDARD_STEMLENGTH_TAB</name></member>

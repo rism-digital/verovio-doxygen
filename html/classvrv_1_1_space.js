@@ -10,5 +10,7 @@ var classvrv_1_1_space =
     [ "GetClassName", "classvrv_1_1_space.html#acd82cac9467b38fe5ecd9160fe0193ae", null ],
     [ "GetDurationInterface", "classvrv_1_1_space.html#aa339b19539fdafa5cc5892a05aff363b", null ],
     [ "GetDurationInterface", "classvrv_1_1_space.html#a132f9893694a765eab5b7c2db4f2e2f6", null ],
+    [ "InitShowSpace", "classvrv_1_1_space.html#ab83e50846d565836fa5e973f64bf71e7", null ],
+    [ "IsSupportedChild", "classvrv_1_1_space.html#ad0c1d364567949b75729452b8379b4a8", null ],
     [ "Reset", "classvrv_1_1_space.html#a6d0c11896962bfd3fb7bc07cbd7af6f6", null ]
 ];

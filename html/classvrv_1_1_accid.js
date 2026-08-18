@@ -21,9 +21,11 @@ var classvrv_1_1_accid =
     [ "GetSymbolStr", "classvrv_1_1_accid.html#aee1dcf71f46ebc446356d97dff6e7574", null ],
     [ "HasToBeAligned", "classvrv_1_1_accid.html#a540367368be706aabb5722e8933e3fdc", null ],
     [ "InitFloatingObject", "classvrv_1_1_accid.html#a205a11500949acf4371406a811255eaa", null ],
+    [ "InitShowAccidGes", "classvrv_1_1_accid.html#ad9245243b2ddf6e63208c2967a1d343e", null ],
     [ "IsAlignedWithSameLayer", "classvrv_1_1_accid.html#a4f0651febebf8ce2bbfc6a71cc94bccf", null ],
     [ "IsAlignedWithSameLayer", "classvrv_1_1_accid.html#a9bee4011667bfd5ff22541ca7151573c", null ],
     [ "IsRelativeToStaff", "classvrv_1_1_accid.html#ae2550b09c4f89c0b902b8e81130a8df0", null ],
+    [ "IsSupportedChild", "classvrv_1_1_accid.html#a08728c51f2a9b1a9372a56799e9311a6", null ],
     [ "Reset", "classvrv_1_1_accid.html#a7999212141783ba58dee1b18585c54fe", null ],
     [ "SetDrawingUnisonAccid", "classvrv_1_1_accid.html#a97a11c75ccda23d82ebc1d272f280a71", null ]
 ];
