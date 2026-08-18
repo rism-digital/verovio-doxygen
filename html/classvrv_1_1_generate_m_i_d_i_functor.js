@@ -29,9 +29,11 @@ var classvrv_1_1_generate_m_i_d_i_functor =
     [ "VisitMRpt", "classvrv_1_1_generate_m_i_d_i_functor.html#ae439b288c10c90bafc3d586b27f0e2f4", null ],
     [ "VisitNote", "classvrv_1_1_generate_m_i_d_i_functor.html#a9c343b9921f6c137372a326b82266d49", null ],
     [ "VisitPedal", "classvrv_1_1_generate_m_i_d_i_functor.html#ab53a0e6fcb1270824afec74b7582e289", null ],
+    [ "VisitRefrain", "classvrv_1_1_generate_m_i_d_i_functor.html#ad00be743bbbf6049cda0680970befa50", null ],
     [ "VisitScoreDef", "classvrv_1_1_generate_m_i_d_i_functor.html#aeecb9a0b6924dfb2e402194a76c79983", null ],
     [ "VisitStaff", "classvrv_1_1_generate_m_i_d_i_functor.html#ad64e5c7c1d3d5066bc89f7eca273d5ff", null ],
     [ "VisitStaffDef", "classvrv_1_1_generate_m_i_d_i_functor.html#a7fed84392a2f5b5e536eb9e67f88c4db", null ],
     [ "VisitSyl", "classvrv_1_1_generate_m_i_d_i_functor.html#af2a310d5a8b223a14212653e5d743c42", null ],
-    [ "VisitVerse", "classvrv_1_1_generate_m_i_d_i_functor.html#af25624f2debba6f30fe9e3a5c6b4ae81", null ]
+    [ "VisitVerse", "classvrv_1_1_generate_m_i_d_i_functor.html#af25624f2debba6f30fe9e3a5c6b4ae81", null ],
+    [ "VisitVolta", "classvrv_1_1_generate_m_i_d_i_functor.html#a09ba41e2178aadb04767e4d5968f4f48", null ]
 ];

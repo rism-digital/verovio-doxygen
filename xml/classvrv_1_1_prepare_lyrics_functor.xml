@@ -6,11 +6,16 @@
     <includes refid="preparedatafunctor_8h" local="no">preparedatafunctor.h</includes>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors</header>
-      <memberdef kind="function" id="classvrv_1_1_prepare_lyrics_functor_1ad8b7b18defc8e655b3498dc5e8ba3f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_prepare_lyrics_functor_1a442b8c961b115c244f6b9a5e035203f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>vrv::PrepareLyricsFunctor::PrepareLyricsFunctor</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(int voltaTrack=0)</argsstring>
         <name>PrepareLyricsFunctor</name>
+        <param>
+          <type>int</type>
+          <declname>voltaTrack</declname>
+          <defval>0</defval>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -147,6 +152,19 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/preparedatafunctor.h" line="706" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/preparedatafunctor.h" bodystart="706" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_prepare_lyrics_functor_1a718bc7ad19b9b996c1fa7d3630c4f1b8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vrv::PrepareLyricsFunctor::m_voltaTrack</definition>
+        <argsstring></argsstring>
+        <name>m_voltaTrack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/preparedatafunctor.h" line="708" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/preparedatafunctor.h" bodystart="708" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classvrv_1_1_prepare_lyrics_functor_1ab14147f31e770365d9526f72247e805a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
@@ -219,7 +237,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/preparedatafunctor.h" line="669" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/preparedatafunctor.h" bodystart="669" bodyend="707"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/preparedatafunctor.h" line="669" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/preparedatafunctor.h" bodystart="669" bodyend="709"/>
     <listofallmembers>
       <member refid="classvrv_1_1_functor_1a49b8e700f8f3b3b232d6a7e558438908" prot="public" virt="non-virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>Functor</name></member>
       <member refid="classvrv_1_1_functor_base_1a45d9ca7642da874e18b1d20a086fa015" prot="public" virt="non-virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>FunctorBase</name></member>
@@ -231,7 +249,8 @@
       <member refid="classvrv_1_1_prepare_lyrics_functor_1aa9aaf1cc61978b23322753ea4acc221a" prot="private" virt="non-virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>m_currentSyl</name></member>
       <member refid="classvrv_1_1_prepare_lyrics_functor_1af8384f936ecee2cf1f321da2eba99587" prot="private" virt="non-virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>m_lastNoteOrChord</name></member>
       <member refid="classvrv_1_1_prepare_lyrics_functor_1a13afc1faccfdfcb3e0fd2ff6467efff5" prot="private" virt="non-virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>m_penultimateNoteOrChord</name></member>
-      <member refid="classvrv_1_1_prepare_lyrics_functor_1ad8b7b18defc8e655b3498dc5e8ba3f28" prot="public" virt="non-virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>PrepareLyricsFunctor</name></member>
+      <member refid="classvrv_1_1_prepare_lyrics_functor_1a718bc7ad19b9b996c1fa7d3630c4f1b8" prot="private" virt="non-virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>m_voltaTrack</name></member>
+      <member refid="classvrv_1_1_prepare_lyrics_functor_1a442b8c961b115c244f6b9a5e035203f0" prot="public" virt="non-virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>PrepareLyricsFunctor</name></member>
       <member refid="classvrv_1_1_functor_base_1a08c690f2a45f5c15e38c86f1d461f02c" prot="public" virt="non-virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>ResetCode</name></member>
       <member refid="classvrv_1_1_functor_base_1af34204cf6852d525df006eb588cb2111" prot="public" virt="non-virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>SetCode</name></member>
       <member refid="classvrv_1_1_functor_base_1a1626c36afa525748588b3de2d4312907" prot="public" virt="non-virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>SetDirection</name></member>
@@ -360,6 +379,8 @@
       <member refid="classvrv_1_1_functor_interface_1a30e5038d90ff64059ac6117a9adbc5e1" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitLigatureEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1a2208caac00cce12cbacde245c0eea307" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitLv</name></member>
       <member refid="classvrv_1_1_functor_interface_1a333d1a122936903b83dbfd13e93bbb66" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitLvEnd</name></member>
+      <member refid="classvrv_1_1_functor_interface_1a988099ab532c2ace22ad462ea1fdbce3" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitLyricElement</name></member>
+      <member refid="classvrv_1_1_functor_interface_1a1d2ed1500ded2eeef96c01520189d4f5" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitLyricElementEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1a5799d80a32974ef7508128272124f09e" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitMdiv</name></member>
       <member refid="classvrv_1_1_functor_interface_1a97c0f056bf7a58fb0fa0b448c33992b8" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitMdivEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1ad128b5777dd03b5f74206c31ddd5e464" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitMeasure</name></member>
@@ -428,6 +449,8 @@
       <member refid="classvrv_1_1_functor_interface_1a1819ba42a3d4c4e79a790c3a92b3c7dc" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitPlicaEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1ae348fe9af74231d2f51124ac6c3379d7" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitProport</name></member>
       <member refid="classvrv_1_1_functor_interface_1a4d0322f66f1ca8df7b2739df70269f44" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitProportEnd</name></member>
+      <member refid="classvrv_1_1_functor_interface_1a596325aef77c895f9b92f6f86ce7cfad" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitRefrain</name></member>
+      <member refid="classvrv_1_1_functor_interface_1a7be0f5fcc941c91f6a3d2ccca9c64a34" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitRefrainEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1a69325c4765d2bc960044060d2bde5e7a" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitReh</name></member>
       <member refid="classvrv_1_1_functor_interface_1afd64538d1c3b5e6fa024f96885a50bbc" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitRehEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1ae446163093eff9328e58efba0928feef" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitRend</name></member>
@@ -512,6 +535,8 @@
       <member refid="classvrv_1_1_functor_interface_1ae66ddbaceaee00e34fdaaaee7c8386e7" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitTurnEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1af03e9bd745c37f4f9dee83f92183e081" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitVerse</name></member>
       <member refid="classvrv_1_1_functor_interface_1a20218b9d70b35e12dc46eda922190863" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitVerseEnd</name></member>
+      <member refid="classvrv_1_1_functor_interface_1accbfa94842bd7136d8f20d38f98fc98c" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitVolta</name></member>
+      <member refid="classvrv_1_1_functor_interface_1a1cf473222f1179ce0bbbfd13370bae97" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitVoltaEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1a95206f69130557f867613f10d0da85d7" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitZone</name></member>
       <member refid="classvrv_1_1_functor_interface_1a34bbf4e4364c591a252de06782489127" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>VisitZoneEnd</name></member>
       <member refid="classvrv_1_1_functor_1a2459207d9593c751f7594d3029305290" prot="public" virt="virtual"><scope>vrv::PrepareLyricsFunctor</scope><name>~Functor</name></member>

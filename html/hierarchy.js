@@ -153,6 +153,10 @@ var hierarchy =
       [ "vrv::KeyAccid", "classvrv_1_1_key_accid.html", null ],
       [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
       [ "vrv::Liquescent", "classvrv_1_1_liquescent.html", null ],
+      [ "vrv::LyricElement", "classvrv_1_1_lyric_element.html", [
+        [ "vrv::Refrain", "classvrv_1_1_refrain.html", null ],
+        [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
+      ] ],
       [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
       [ "vrv::MRpt", "classvrv_1_1_m_rpt.html", null ],
       [ "vrv::MRpt2", "classvrv_1_1_m_rpt2.html", null ],
@@ -170,7 +174,7 @@ var hierarchy =
       [ "vrv::Syllable", "classvrv_1_1_syllable.html", null ],
       [ "vrv::Symbol", "classvrv_1_1_symbol.html", null ],
       [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ],
-      [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
+      [ "vrv::Volta", "classvrv_1_1_volta.html", null ]
     ] ],
     [ "AttColoration", null, [
       [ "vrv::Note", "classvrv_1_1_note.html", null ]
@@ -207,6 +211,7 @@ var hierarchy =
         [ "vrv::KeySig", "classvrv_1_1_key_sig.html", null ],
         [ "vrv::Ligature", "classvrv_1_1_ligature.html", null ],
         [ "vrv::Liquescent", "classvrv_1_1_liquescent.html", null ],
+        [ "vrv::LyricElement", "classvrv_1_1_lyric_element.html", null ],
         [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
         [ "vrv::MRpt", "classvrv_1_1_m_rpt.html", null ],
         [ "vrv::MRpt2", "classvrv_1_1_m_rpt2.html", null ],
@@ -235,7 +240,7 @@ var hierarchy =
         [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ],
         [ "vrv::TupletBracket", "classvrv_1_1_tuplet_bracket.html", null ],
         [ "vrv::TupletNum", "classvrv_1_1_tuplet_num.html", null ],
-        [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
+        [ "vrv::Volta", "classvrv_1_1_volta.html", null ]
       ] ],
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ]
     ] ],
@@ -472,12 +477,13 @@ var hierarchy =
     [ "AttLang", null, [
       [ "vrv::Dir", "classvrv_1_1_dir.html", null ],
       [ "vrv::Harm", "classvrv_1_1_harm.html", null ],
+      [ "vrv::LyricElement", "classvrv_1_1_lyric_element.html", null ],
       [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
       [ "vrv::Reh", "classvrv_1_1_reh.html", null ],
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
       [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
       [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ],
-      [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
+      [ "vrv::Volta", "classvrv_1_1_volta.html", null ]
     ] ],
     [ "AttLayerIdent", null, [
       [ "vrv::Slur", "classvrv_1_1_slur.html", null ]
@@ -593,13 +599,15 @@ var hierarchy =
       [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
       [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
       [ "vrv::Pb", "classvrv_1_1_pb.html", null ],
+      [ "vrv::Refrain", "classvrv_1_1_refrain.html", null ],
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
       [ "vrv::Sb", "classvrv_1_1_sb.html", null ],
       [ "vrv::Score", "classvrv_1_1_score.html", null ],
       [ "vrv::Section", "classvrv_1_1_section.html", null ],
       [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ],
       [ "vrv::TabDurSym", "classvrv_1_1_tab_dur_sym.html", null ],
-      [ "vrv::Trill", "classvrv_1_1_trill.html", null ]
+      [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
+      [ "vrv::Volta", "classvrv_1_1_volta.html", null ]
     ] ],
     [ "AttNotationType", null, [
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
@@ -721,6 +729,7 @@ var hierarchy =
       [ "vrv::Caesura", "classvrv_1_1_caesura.html", null ],
       [ "vrv::Fermata", "classvrv_1_1_fermata.html", null ],
       [ "vrv::Hairpin", "classvrv_1_1_hairpin.html", null ],
+      [ "vrv::LyricElement", "classvrv_1_1_lyric_element.html", null ],
       [ "vrv::Mordent", "classvrv_1_1_mordent.html", null ],
       [ "vrv::Pedal", "classvrv_1_1_pedal.html", null ],
       [ "vrv::TextDirInterface", "classvrv_1_1_text_dir_interface.html", [
@@ -737,8 +746,7 @@ var hierarchy =
         [ "vrv::Tempo", "classvrv_1_1_tempo.html", null ]
       ] ],
       [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
-      [ "vrv::Turn", "classvrv_1_1_turn.html", null ],
-      [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
+      [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
     ] ],
     [ "AttPlicaVis", null, [
       [ "vrv::Plica", "classvrv_1_1_plica.html", null ]
@@ -942,12 +950,13 @@ var hierarchy =
     ] ],
     [ "AttTypography", null, [
       [ "vrv::Clef", "classvrv_1_1_clef.html", null ],
+      [ "vrv::LyricElement", "classvrv_1_1_lyric_element.html", null ],
       [ "vrv::MNum", "classvrv_1_1_m_num.html", null ],
       [ "vrv::MeterSig", "classvrv_1_1_meter_sig.html", null ],
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
       [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
       [ "vrv::Symbol", "classvrv_1_1_symbol.html", null ],
-      [ "vrv::Verse", "classvrv_1_1_verse.html", null ]
+      [ "vrv::Volta", "classvrv_1_1_volta.html", null ]
     ] ],
     [ "AttVerticalAlign", null, [
       [ "vrv::AreaPosInterface", "classvrv_1_1_area_pos_interface.html", null ]
@@ -995,6 +1004,7 @@ var hierarchy =
         [ "vrv::Episema", "classvrv_1_1_episema.html", null ],
         [ "vrv::HalfmRpt", "classvrv_1_1_halfm_rpt.html", null ],
         [ "vrv::Liquescent", "classvrv_1_1_liquescent.html", null ],
+        [ "vrv::LyricElement", "classvrv_1_1_lyric_element.html", null ],
         [ "vrv::MRest", "classvrv_1_1_m_rest.html", null ],
         [ "vrv::Nc", "classvrv_1_1_nc.html", null ],
         [ "vrv::Neume", "classvrv_1_1_neume.html", null ],
@@ -1004,12 +1014,16 @@ var hierarchy =
         [ "vrv::Rest", "classvrv_1_1_rest.html", null ],
         [ "vrv::Strophicus", "classvrv_1_1_strophicus.html", null ],
         [ "vrv::Syl", "classvrv_1_1_syl.html", null ],
-        [ "vrv::TabGrp", "classvrv_1_1_tab_grp.html", null ]
+        [ "vrv::TabGrp", "classvrv_1_1_tab_grp.html", null ],
+        [ "vrv::Volta", "classvrv_1_1_volta.html", null ]
       ] ]
     ] ],
     [ "AttVisualOffsetVo", null, [
       [ "vrv::OffsetInterface", "classvrv_1_1_offset_interface.html", null ],
       [ "vrv::TabDurSym", "classvrv_1_1_tab_dur_sym.html", null ]
+    ] ],
+    [ "AttVoltaGroupingSym", null, [
+      [ "vrv::LyricElement", "classvrv_1_1_lyric_element.html", null ]
     ] ],
     [ "AttWhitespace", null, [
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ]
@@ -1098,6 +1112,7 @@ var hierarchy =
         [ "vrv::IDComparison", "classvrv_1_1_i_d_comparison.html", null ],
         [ "vrv::IsAttributeComparison", "classvrv_1_1_is_attribute_comparison.html", null ],
         [ "vrv::IsEmptyComparison", "classvrv_1_1_is_empty_comparison.html", null ],
+        [ "vrv::LyricElementComparison", "classvrv_1_1_lyric_element_comparison.html", null ],
         [ "vrv::MeasureAlignerTypeComparison", "classvrv_1_1_measure_aligner_type_comparison.html", null ],
         [ "vrv::MeasureOnsetOffsetComparison", "classvrv_1_1_measure_onset_offset_comparison.html", null ],
         [ "vrv::PointingToComparison", "classvrv_1_1_pointing_to_comparison.html", null ],

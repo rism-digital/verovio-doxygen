@@ -101,6 +101,7 @@ var annotated_dup =
       [ "IsAttributeComparison", "classvrv_1_1_is_attribute_comparison.html", "classvrv_1_1_is_attribute_comparison" ],
       [ "AttNIntegerComparison", "classvrv_1_1_att_n_integer_comparison.html", "classvrv_1_1_att_n_integer_comparison" ],
       [ "AttNIntegerAnyComparison", "classvrv_1_1_att_n_integer_any_comparison.html", "classvrv_1_1_att_n_integer_any_comparison" ],
+      [ "LyricElementComparison", "classvrv_1_1_lyric_element_comparison.html", "classvrv_1_1_lyric_element_comparison" ],
       [ "AttNNumberLikeComparison", "classvrv_1_1_att_n_number_like_comparison.html", "classvrv_1_1_att_n_number_like_comparison" ],
       [ "AttDurExtremeComparison", "classvrv_1_1_att_dur_extreme_comparison.html", "classvrv_1_1_att_dur_extreme_comparison" ],
       [ "AttVisibilityComparison", "classvrv_1_1_att_visibility_comparison.html", "classvrv_1_1_att_visibility_comparison" ],
@@ -265,6 +266,7 @@ var annotated_dup =
       [ "LinkingInterface", "classvrv_1_1_linking_interface.html", "classvrv_1_1_linking_interface" ],
       [ "Liquescent", "classvrv_1_1_liquescent.html", "classvrv_1_1_liquescent" ],
       [ "Lv", "classvrv_1_1_lv.html", "classvrv_1_1_lv" ],
+      [ "LyricElement", "classvrv_1_1_lyric_element.html", "classvrv_1_1_lyric_element" ],
       [ "Mdiv", "classvrv_1_1_mdiv.html", "classvrv_1_1_mdiv" ],
       [ "Measure", "classvrv_1_1_measure.html", "classvrv_1_1_measure" ],
       [ "Mensur", "classvrv_1_1_mensur.html", "classvrv_1_1_mensur" ],
@@ -365,6 +367,7 @@ var annotated_dup =
       [ "Quilisma", "classvrv_1_1_quilisma.html", "classvrv_1_1_quilisma" ],
       [ "Rdg", "classvrv_1_1_rdg.html", "classvrv_1_1_rdg" ],
       [ "Ref", "classvrv_1_1_ref.html", "classvrv_1_1_ref" ],
+      [ "Refrain", "classvrv_1_1_refrain.html", "classvrv_1_1_refrain" ],
       [ "Reg", "classvrv_1_1_reg.html", "classvrv_1_1_reg" ],
       [ "Reh", "classvrv_1_1_reh.html", "classvrv_1_1_reh" ],
       [ "Rend", "classvrv_1_1_rend.html", "classvrv_1_1_rend" ],
@@ -448,6 +451,7 @@ var annotated_dup =
       [ "SystemAligner", "classvrv_1_1_system_aligner.html", "classvrv_1_1_system_aligner" ],
       [ "StaffAlignment", "classvrv_1_1_staff_alignment.html", "classvrv_1_1_staff_alignment" ],
       [ "View", "classvrv_1_1_view.html", "classvrv_1_1_view" ],
+      [ "Volta", "classvrv_1_1_volta.html", "classvrv_1_1_volta" ],
       [ "IntTree", "structvrv_1_1_int_tree.html", "structvrv_1_1_int_tree" ],
       [ "Zone", "classvrv_1_1_zone.html", "classvrv_1_1_zone" ]
     ] ]

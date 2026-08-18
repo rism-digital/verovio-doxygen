@@ -145,6 +145,7 @@ var classvrv_1_1_object =
     [ "IsExpansion", "classvrv_1_1_object.html#a07dfe3de52f16cff12eefabe11c6cd96", null ],
     [ "IsFloatingObject", "classvrv_1_1_object.html#a3b131f39c868a8a1e9b768bdc0eae811", null ],
     [ "IsLayerElement", "classvrv_1_1_object.html#a311186b3525f994471394fcc38bbcda8", null ],
+    [ "IsLyricElement", "classvrv_1_1_object.html#a27d10872ab38d0c97931783359b0c502", null ],
     [ "IsMilestoneElement", "classvrv_1_1_object.html#a8fed81d7637364dd582fbea10ce3e636", null ],
     [ "IsModified", "classvrv_1_1_object.html#a4eec6780edc930e49d9874c1036735a4", null ],
     [ "IsPageElement", "classvrv_1_1_object.html#a6fe6d0adbd0341a514fc3645039559fd", null ],

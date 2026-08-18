@@ -124,6 +124,8 @@ var classvrv_1_1_const_functor_interface =
     [ "VisitLigatureEnd", "classvrv_1_1_const_functor_interface.html#a0fcdf8c8b7df473668a84a94ad00dd3a", null ],
     [ "VisitLv", "classvrv_1_1_const_functor_interface.html#ad2cbc0cce784822aacc7d9a9bebd4808", null ],
     [ "VisitLvEnd", "classvrv_1_1_const_functor_interface.html#ae5bed513b288c89b7a314d1b09c290f5", null ],
+    [ "VisitLyricElement", "classvrv_1_1_const_functor_interface.html#afc4d4c37c8077d42c4ecdeeef31e1d16", null ],
+    [ "VisitLyricElementEnd", "classvrv_1_1_const_functor_interface.html#adf5dce172e428645a626de19d54188f2", null ],
     [ "VisitMdiv", "classvrv_1_1_const_functor_interface.html#a1d6642a306eb37d44dc7542b4d78b8ed", null ],
     [ "VisitMdivEnd", "classvrv_1_1_const_functor_interface.html#aa86d2bf4eed07c1a15345c11ea15c5b9", null ],
     [ "VisitMeasure", "classvrv_1_1_const_functor_interface.html#a80ceef66fa08cfa71a1c3aa1a301dc55", null ],
@@ -192,6 +194,8 @@ var classvrv_1_1_const_functor_interface =
     [ "VisitPlicaEnd", "classvrv_1_1_const_functor_interface.html#a0f222f45f8c792f64f205b5f0e946098", null ],
     [ "VisitProport", "classvrv_1_1_const_functor_interface.html#adf6a942257d18a241f791c49f111584b", null ],
     [ "VisitProportEnd", "classvrv_1_1_const_functor_interface.html#ae90a0885ae1b396f03afbacacffc1f87", null ],
+    [ "VisitRefrain", "classvrv_1_1_const_functor_interface.html#a8cf3115f3ca211d4c4da714902b994db", null ],
+    [ "VisitRefrainEnd", "classvrv_1_1_const_functor_interface.html#ab17bd1af48419f8c637459cb8f885434", null ],
     [ "VisitReh", "classvrv_1_1_const_functor_interface.html#a949982917662c4be6beca88e2d709e25", null ],
     [ "VisitRehEnd", "classvrv_1_1_const_functor_interface.html#a6a84ae670da89c50a6b4b52f319e8677", null ],
     [ "VisitRend", "classvrv_1_1_const_functor_interface.html#aaca403055c54d7c9379235a31997c5c7", null ],
@@ -276,6 +280,8 @@ var classvrv_1_1_const_functor_interface =
     [ "VisitTurnEnd", "classvrv_1_1_const_functor_interface.html#ab05d62cccc28101433526ce212a646b4", null ],
     [ "VisitVerse", "classvrv_1_1_const_functor_interface.html#a7b7d126286e24eb2497c1d7a13fa7dba", null ],
     [ "VisitVerseEnd", "classvrv_1_1_const_functor_interface.html#ab7f803ba6a4cef5fd692c7e9a15cd57b", null ],
+    [ "VisitVolta", "classvrv_1_1_const_functor_interface.html#a62395b982629968f3640ee0fda1f4d2a", null ],
+    [ "VisitVoltaEnd", "classvrv_1_1_const_functor_interface.html#ab188085352c8d2940decc9cfdd75c304", null ],
     [ "VisitZone", "classvrv_1_1_const_functor_interface.html#a39a8885db4ae72fbcb109f48a9b30501", null ],
     [ "VisitZoneEnd", "classvrv_1_1_const_functor_interface.html#a096fe13c92fe97ee00e2806d208951b5", null ]
 ];

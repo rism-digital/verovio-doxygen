@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('classvrv_1_1_init_processing_lists_fun
 </div><!--header-->
 <div class="contents">
 
-<p>This class builds a tree of ints (<a class="el" href="structvrv_1_1_int_tree.html" title="Generic int map recursive structure for storing hierachy of values For example, we want to process al...">IntTree</a>) with the staff/layer/verse numbers.  
+<p>This class builds trees of ints with staff/layer and staff/layer/verse/volta-track numbers.  
  <a href="classvrv_1_1_init_processing_lists_functor.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="miscfunctor_8h_source.html">miscfunctor.h</a>&gt;</code></p>
@@ -121,16 +121,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~InitProcessingListsFunctor</b> ()=default</td></tr>
 <tr class="separator:ab00ebef08cf44ed63b3035d3c68d14a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a5972835653966da67bd7f7e0d42ad412"><td class="memItemLeft" align="right" valign="top"><a id="a5972835653966da67bd7f7e0d42ad412"></a>
-const <a class="el" href="structvrv_1_1_int_tree.html">IntTree</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetLayerTree</b> () const</td></tr>
-<tr class="separator:a5972835653966da67bd7f7e0d42ad412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23af8f9dc2b11bf26ee9e40bd5d8b51d"><td class="memItemLeft" align="right" valign="top"><a id="a23af8f9dc2b11bf26ee9e40bd5d8b51d"></a>
-const <a class="el" href="structvrv_1_1_int_tree.html">IntTree</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVerseTree</b> () const</td></tr>
-<tr class="separator:a23af8f9dc2b11bf26ee9e40bd5d8b51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c8354a27599bed93e3d1fee132ac66"><td class="memItemLeft" align="right" valign="top"><a id="ab1c8354a27599bed93e3d1fee132ac66"></a>
+const <a class="el" href="structvrv_1_1_int_tree.html">IntTree</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetLayerTree</b> ()</td></tr>
+<tr class="separator:ab1c8354a27599bed93e3d1fee132ac66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec3626da00e8df163eb57ff545afeab2"><td class="memItemLeft" align="right" valign="top"><a id="aec3626da00e8df163eb57ff545afeab2"></a>
+const <a class="el" href="structvrv_1_1_int_tree.html">IntTree</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVerseTree</b> ()</td></tr>
+<tr class="separator:aec3626da00e8df163eb57ff545afeab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:abc73df99be485df2be4b39920137288f"><td class="memItemLeft" align="right" valign="top"><a id="abc73df99be485df2be4b39920137288f"></a>
 FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitLayer</b> (const <a class="el" href="classvrv_1_1_layer.html">Layer</a> *layer) override</td></tr>
 <tr class="separator:abc73df99be485df2be4b39920137288f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f32ad25a830237b3a8e31180c63c1f"><td class="memItemLeft" align="right" valign="top"><a id="aa9f32ad25a830237b3a8e31180c63c1f"></a>
+FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitRefrain</b> (const <a class="el" href="classvrv_1_1_refrain.html">Refrain</a> *refrain) override</td></tr>
+<tr class="separator:aa9f32ad25a830237b3a8e31180c63c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f7fd156d83aa73b0fcc8e9a203b4b33"><td class="memItemLeft" align="right" valign="top"><a id="a6f7fd156d83aa73b0fcc8e9a203b4b33"></a>
 FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitVerse</b> (const <a class="el" href="classvrv_1_1_verse.html">Verse</a> *verse) override</td></tr>
 <tr class="separator:a6f7fd156d83aa73b0fcc8e9a203b4b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -704,6 +707,12 @@ virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitL
 <tr class="memitem:ac2b1be5441054825826ce6299cd2a27e inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memItemLeft" align="right" valign="top"><a id="ac2b1be5441054825826ce6299cd2a27e"></a>
 virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitLayerElementEnd</b> (const <a class="el" href="classvrv_1_1_layer_element.html">LayerElement</a> *layerElement)</td></tr>
 <tr class="separator:ac2b1be5441054825826ce6299cd2a27e inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc4d4c37c8077d42c4ecdeeef31e1d16 inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memItemLeft" align="right" valign="top"><a id="afc4d4c37c8077d42c4ecdeeef31e1d16"></a>
+virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitLyricElement</b> (const <a class="el" href="classvrv_1_1_lyric_element.html">LyricElement</a> *lyricElement)</td></tr>
+<tr class="separator:afc4d4c37c8077d42c4ecdeeef31e1d16 inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5dce172e428645a626de19d54188f2 inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memItemLeft" align="right" valign="top"><a id="adf5dce172e428645a626de19d54188f2"></a>
+virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitLyricElementEnd</b> (const <a class="el" href="classvrv_1_1_lyric_element.html">LyricElement</a> *lyricElement)</td></tr>
+<tr class="separator:adf5dce172e428645a626de19d54188f2 inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e275cf18f98f575425848fe2b36a787 inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memItemLeft" align="right" valign="top"><a id="a8e275cf18f98f575425848fe2b36a787"></a>
 virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitLigature</b> (const <a class="el" href="classvrv_1_1_ligature.html">Ligature</a> *ligature)</td></tr>
 <tr class="separator:a8e275cf18f98f575425848fe2b36a787 inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -794,6 +803,9 @@ virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitP
 <tr class="memitem:ae90a0885ae1b396f03afbacacffc1f87 inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memItemLeft" align="right" valign="top"><a id="ae90a0885ae1b396f03afbacacffc1f87"></a>
 virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitProportEnd</b> (const <a class="el" href="classvrv_1_1_proport.html">Proport</a> *proport)</td></tr>
 <tr class="separator:ae90a0885ae1b396f03afbacacffc1f87 inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab17bd1af48419f8c637459cb8f885434 inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memItemLeft" align="right" valign="top"><a id="ab17bd1af48419f8c637459cb8f885434"></a>
+virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitRefrainEnd</b> (const <a class="el" href="classvrv_1_1_refrain.html">Refrain</a> *refrain)</td></tr>
+<tr class="separator:ab17bd1af48419f8c637459cb8f885434 inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a516832bbed9c6042d9855f435c5c73a7 inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memItemLeft" align="right" valign="top"><a id="a516832bbed9c6042d9855f435c5c73a7"></a>
 virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitRest</b> (const <a class="el" href="classvrv_1_1_rest.html">Rest</a> *rest)</td></tr>
 <tr class="separator:a516832bbed9c6042d9855f435c5c73a7 inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -860,6 +872,12 @@ virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitT
 <tr class="memitem:ac9e7e3b0f101e6f22c97cdaf88ee5ffe inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memItemLeft" align="right" valign="top"><a id="ac9e7e3b0f101e6f22c97cdaf88ee5ffe"></a>
 virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitTupletNumEnd</b> (const <a class="el" href="classvrv_1_1_tuplet_num.html">TupletNum</a> *tupletNum)</td></tr>
 <tr class="separator:ac9e7e3b0f101e6f22c97cdaf88ee5ffe inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62395b982629968f3640ee0fda1f4d2a inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memItemLeft" align="right" valign="top"><a id="a62395b982629968f3640ee0fda1f4d2a"></a>
+virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitVolta</b> (const <a class="el" href="classvrv_1_1_volta.html">Volta</a> *volta)</td></tr>
+<tr class="separator:a62395b982629968f3640ee0fda1f4d2a inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab188085352c8d2940decc9cfdd75c304 inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memItemLeft" align="right" valign="top"><a id="ab188085352c8d2940decc9cfdd75c304"></a>
+virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitVoltaEnd</b> (const <a class="el" href="classvrv_1_1_volta.html">Volta</a> *volta)</td></tr>
+<tr class="separator:ab188085352c8d2940decc9cfdd75c304 inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7f803ba6a4cef5fd692c7e9a15cd57b inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memItemLeft" align="right" valign="top"><a id="ab7f803ba6a4cef5fd692c7e9a15cd57b"></a>
 virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitVerseEnd</b> (const <a class="el" href="classvrv_1_1_verse.html">Verse</a> *verse)</td></tr>
 <tr class="separator:ab7f803ba6a4cef5fd692c7e9a15cd57b inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1009,7 +1027,7 @@ virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitF
 <tr class="separator:a8b1bdc81100822903995c7ed10464cb0 inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class builds a tree of ints (<a class="el" href="structvrv_1_1_int_tree.html" title="Generic int map recursive structure for storing hierachy of values For example, we want to process al...">IntTree</a>) with the staff/layer/verse numbers. </p>
+<div class="textblock"><p>This class builds trees of ints with staff/layer and staff/layer/verse/volta-track numbers. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="miscfunctor_8h_source.html">miscfunctor.h</a></li>
 </ul>
@@ -1019,7 +1037,7 @@ virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitF
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_init_processing_lists_functor.html">InitProcessingListsFunctor</a></li>
-    <li class="footer">Generated on Tue Aug 18 2026 12:27:41 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Aug 18 2026 13:05:06 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
