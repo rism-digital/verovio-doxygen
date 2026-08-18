@@ -67,6 +67,7 @@ var files_dup =
     [ "corr.h", "corr_8h_source.html", null ],
     [ "course.h", "course_8h_source.html", null ],
     [ "cpmark.h", "cpmark_8h_source.html", null ],
+    [ "cursor.h", "cursor_8h_source.html", null ],
     [ "customtuning.h", "customtuning_8h_source.html", null ],
     [ "custos.h", "custos_8h_source.html", null ],
     [ "damage.h", "damage_8h_source.html", null ],

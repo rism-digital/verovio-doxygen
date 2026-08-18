@@ -6,6 +6,7 @@ var classvrv_1_1_tuplet_num =
     [ "Accept", "classvrv_1_1_tuplet_num.html#ac00ff3b54aca6367960fac25fe3e47af", null ],
     [ "AcceptEnd", "classvrv_1_1_tuplet_num.html#a6ef0ef97218ff9bc897fcdbf2d131e41", null ],
     [ "AcceptEnd", "classvrv_1_1_tuplet_num.html#a017cd7309576dcc6d17376062de4d948", null ],
+    [ "Clone", "classvrv_1_1_tuplet_num.html#aa490164a323e1af3cd5a7832cead50f4", null ],
     [ "GetAlignedBracket", "classvrv_1_1_tuplet_num.html#abf45907dcb09a5d28c6c99693c952515", null ],
     [ "GetAlignedBracket", "classvrv_1_1_tuplet_num.html#ace55160065d45af4036cdc0b50a0d6d6", null ],
     [ "GetClassName", "classvrv_1_1_tuplet_num.html#a34d03d2cb1ca08b805b2fe87256afcf0", null ],

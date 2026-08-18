@@ -51,7 +51,9 @@ var hierarchy =
           [ "vrv::Trill", "classvrv_1_1_trill.html", null ],
           [ "vrv::Turn", "classvrv_1_1_turn.html", null ]
         ] ],
-        [ "vrv::Note", "classvrv_1_1_note.html", null ],
+        [ "vrv::Note", "classvrv_1_1_note.html", [
+          [ "vrv::Cursor", "classvrv_1_1_cursor.html", null ]
+        ] ],
         [ "vrv::Rest", "classvrv_1_1_rest.html", null ]
       ] ]
     ] ],
@@ -1177,6 +1179,7 @@ var hierarchy =
         [ "vrv::ConvertMarkupArticFunctor", "classvrv_1_1_convert_markup_artic_functor.html", null ],
         [ "vrv::ConvertToPageBasedFunctor", "classvrv_1_1_convert_to_page_based_functor.html", null ],
         [ "vrv::ConvertToUnCastOffMensuralFunctor", "classvrv_1_1_convert_to_un_cast_off_mensural_functor.html", null ],
+        [ "vrv::CursorFunctor", "classvrv_1_1_cursor_functor.html", null ],
         [ "vrv::DocFunctor", "classvrv_1_1_doc_functor.html", [
           [ "vrv::AdjustAccidXFunctor", "classvrv_1_1_adjust_accid_x_functor.html", null ],
           [ "vrv::AdjustArpegFunctor", "classvrv_1_1_adjust_arpeg_functor.html", null ],
@@ -1391,6 +1394,7 @@ var hierarchy =
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
     ] ],
     [ "vrv::StaffSort", "structvrv_1_1_staff_sort.html", null ],
+    [ "vrv::EditorToolkitShared::State", "structvrv_1_1_editor_toolkit_shared_1_1_state.html", null ],
     [ "vrv::StemmedDrawingInterface", "classvrv_1_1_stemmed_drawing_interface.html", [
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ],

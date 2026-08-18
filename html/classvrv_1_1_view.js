@@ -32,6 +32,7 @@ var classvrv_1_1_view =
     [ "DrawControlElementConnector", "classvrv_1_1_view.html#ab0077d2e28777dbb4f743c8055707fe3", null ],
     [ "DrawControlElementText", "classvrv_1_1_view.html#a3d303b64c11bc880db60fa703902ac46", null ],
     [ "DrawCurrentPage", "classvrv_1_1_view.html#a1ab1a369039358ad7b6440c62b442ceb", null ],
+    [ "DrawCursor", "classvrv_1_1_view.html#a6a89d3195ccde607c40bf587e5e8b133", null ],
     [ "DrawCustos", "classvrv_1_1_view.html#ae489413328b7ef903f186b9fc32bb5cf", null ],
     [ "DrawDiamond", "classvrv_1_1_view.html#a92d7d53a19088ce4bf4192bb1c79785f", null ],
     [ "DrawDirString", "classvrv_1_1_view.html#a0532111ca33161c07345b578adab5616", null ],

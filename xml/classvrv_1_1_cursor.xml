@@ -1,0 +1,2279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classvrv_1_1_cursor" kind="class" language="C++" prot="public">
+    <compoundname>vrv::Cursor</compoundname>
+    <basecompoundref refid="classvrv_1_1_note" prot="public" virt="non-virtual">vrv::Note</basecompoundref>
+    <includes refid="cursor_8h" local="no">cursor.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Constructors, destructors, reset and class name methods</header>
+      <description><para>Reset method resets all attribute classes </para>
+</description>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a40e15fbdf51b7a3dc0446573db84341d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vrv::Cursor::Cursor</definition>
+        <argsstring>()</argsstring>
+        <name>Cursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="34" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1aef475ff437a77c9b2354db9039b6e600" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual vrv::Cursor::~Cursor</definition>
+        <argsstring>()</argsstring>
+        <name>~Cursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="35" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1ae5a313004c1e865596d0be702574c478" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+        <definition>Object* vrv::Cursor::Clone</definition>
+        <argsstring>() const override</argsstring>
+        <name>Clone</name>
+        <reimplements refid="classvrv_1_1_object_1ab2d363effa62d58a65f8aba1330c1379">Clone</reimplements>
+        <briefdescription>
+<para>Method call for copying child classes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The method has to be overridden. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="36" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a0d26d4525f6d674dada915699b8394c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void vrv::Cursor::Reset</definition>
+        <argsstring>() override</argsstring>
+        <name>Reset</name>
+        <reimplements refid="classvrv_1_1_alt_sym_interface_1aed738b60a43324a2f15fdec12d19521e">Reset</reimplements>
+        <briefdescription>
+<para>Virtual reset method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Needs to be overridden in child classes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="37" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a52551ae6e8d3c725589824c444bbbf70" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string vrv::Cursor::GetClassName</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetClassName</name>
+        <reimplements refid="classvrv_1_1_object_1a85f5f4c2c61b31f3e0cfafccf6893dd3">GetClassName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="38" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a1116a2cbaffd1eebcb84872dd3164db5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FunctorCode</type>
+        <definition>FunctorCode vrv::Cursor::Accept</definition>
+        <argsstring>(Functor &amp;functor) override</argsstring>
+        <name>Accept</name>
+        <reimplements refid="classvrv_1_1_object_1a4fe6d153925502ceb462193169a74891">Accept</reimplements>
+        <param>
+          <type><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref> &amp;</type>
+          <declname>functor</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classvrv_1_1_interface" kindref="compound">Interface</ref> for class functor visitation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="109" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a6715344ebac740613bde56bd56490349" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FunctorCode</type>
+        <definition>FunctorCode vrv::Cursor::Accept</definition>
+        <argsstring>(ConstFunctor &amp;functor) const override</argsstring>
+        <name>Accept</name>
+        <reimplements refid="classvrv_1_1_object_1a159b4bb92475586050e3ffdb3a7d5459">Accept</reimplements>
+        <param>
+          <type><ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref> &amp;</type>
+          <declname>functor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="110" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1adc671e2cf0c3cc2d5391a6b4ea3fa326" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FunctorCode</type>
+        <definition>FunctorCode vrv::Cursor::AcceptEnd</definition>
+        <argsstring>(Functor &amp;functor) override</argsstring>
+        <name>AcceptEnd</name>
+        <reimplements refid="classvrv_1_1_object_1ad93bf90a3a3a2955970a5b4c05fde748">AcceptEnd</reimplements>
+        <param>
+          <type><ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref> &amp;</type>
+          <declname>functor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="111" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a29385703aa1a8a89e38332de62a1b0e3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FunctorCode</type>
+        <definition>FunctorCode vrv::Cursor::AcceptEnd</definition>
+        <argsstring>(ConstFunctor &amp;functor) const override</argsstring>
+        <name>AcceptEnd</name>
+        <reimplements refid="classvrv_1_1_object_1a38c9de93620af8ace7f1832e387c22dc">AcceptEnd</reimplements>
+        <param>
+          <type><ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref> &amp;</type>
+          <declname>functor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="112" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classvrv_1_1_cursor_1a860cd22e6a97dea7f1f1b6eb8c534a77" prot="public" static="no" strong="no">
+        <type>int8_t</type>
+        <name>ChordMode</name>
+        <enumvalue id="classvrv_1_1_cursor_1a860cd22e6a97dea7f1f1b6eb8c534a77ab2cd37b60772263a39236b61eca208fd" prot="public">
+          <name>CHORD_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_cursor_1a860cd22e6a97dea7f1f1b6eb8c534a77aed4393aeb3adf276475b035f6c8593ed" prot="public">
+          <name>NEW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_cursor_1a860cd22e6a97dea7f1f1b6eb8c534a77a42c4954ef9112549cb5b80452e6d6d08" prot="public">
+          <name>EDIT_NEW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_cursor_1a860cd22e6a97dea7f1f1b6eb8c534a77a3fe465edb2c82ca9f8bb87b976a00dd5" prot="public">
+          <name>EDIT_EXISTING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="74" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="enum" id="classvrv_1_1_cursor_1a9b67ec45c1b2c153801c2e818aef3537" prot="public" static="no" strong="no">
+        <type>int8_t</type>
+        <name>TieMode</name>
+        <enumvalue id="classvrv_1_1_cursor_1a9b67ec45c1b2c153801c2e818aef3537a30ffcab8cd0a147c2bf8e706881b938d" prot="public">
+          <name>TIE_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_cursor_1a9b67ec45c1b2c153801c2e818aef3537ac4b378f29f822eaf5c7bd4b8658f1a3e" prot="public">
+          <name>TIE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_cursor_1a9b67ec45c1b2c153801c2e818aef3537aae9b384520e79dcde9b8039e0180de0c" prot="public">
+          <name>COPY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="84" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="enum" id="classvrv_1_1_cursor_1abc7cc48955e49885ee99a90addd19fd8" prot="public" static="no" strong="no">
+        <type>int8_t</type>
+        <name>InputMode</name>
+        <enumvalue id="classvrv_1_1_cursor_1abc7cc48955e49885ee99a90addd19fd8a8aaaba1e6696b03428e9d416e09ef1fd" prot="public">
+          <name>PITCH_FIRST</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_cursor_1abc7cc48955e49885ee99a90addd19fd8ae8e51af21d357e381914e0975e3813eb" prot="public">
+          <name>DURATION_FIRST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="90" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvrv_1_1_cursor_1ad201116981db6fb88c91d81186fc80e2" prot="private" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+        <definition>LayerElement* vrv::Cursor::m_position</definition>
+        <argsstring></argsstring>
+        <name>m_position</name>
+        <briefdescription>
+<para>The reference postion. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="121" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cursor_1a2a4753f4c7a73d222204740de73e16d3" prot="private" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_accid" kindref="compound">Accid</ref></type>
+        <definition>Accid vrv::Cursor::m_accid</definition>
+        <argsstring></argsstring>
+        <name>m_accid</name>
+        <briefdescription>
+<para>Accidentals and dots. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="123" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cursor_1a3f1ac2678eb1a7632e5eb655926b6f75" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool vrv::Cursor::m_isAccidImplicit</definition>
+        <argsstring></argsstring>
+        <name>m_isAccidImplicit</name>
+        <briefdescription>
+<para>A flag indicating if the accidental is implicit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="125" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cursor_1a3afddb1c613dd9bbb7d747d8f9818c00" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool vrv::Cursor::m_restMode</definition>
+        <argsstring></argsstring>
+        <name>m_restMode</name>
+        <briefdescription>
+<para>A flag indicating it is in restMode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="127" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cursor_1a2d494c477866994b9083ac7133f02514" prot="private" static="no" mutable="no">
+        <type>ChordMode</type>
+        <definition>ChordMode vrv::Cursor::m_chordMode</definition>
+        <argsstring></argsstring>
+        <name>m_chordMode</name>
+        <briefdescription>
+<para>A field indicating the chordMode status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="129" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cursor_1a52c0369655e6740cf5063e7305f2bcdb" prot="private" static="no" mutable="no">
+        <type>InputMode</type>
+        <definition>InputMode vrv::Cursor::m_inputMode</definition>
+        <argsstring></argsstring>
+        <name>m_inputMode</name>
+        <briefdescription>
+<para>A field indicating the inputMode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="131" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cursor_1a9d20b7863bdd58085875a840566fb02a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vrv::Cursor::m_yRelPitchC</definition>
+        <argsstring></argsstring>
+        <name>m_yRelPitchC</name>
+        <briefdescription>
+<para>yRel for pitch C </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="133" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cursor_1adde24d5797a7223b246a93081073026f" prot="private" static="no" mutable="no">
+        <type>TieMode</type>
+        <definition>TieMode vrv::Cursor::m_tieMode</definition>
+        <argsstring></argsstring>
+        <name>m_tieMode</name>
+        <briefdescription>
+<para>A field indicating the tieMode status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="135" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_cursor_1a37b2bd17d7c135471691cf51baed2e67" prot="private" static="no" mutable="no">
+        <type>std::stack&lt; <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> * &gt;</type>
+        <definition>std::stack&lt;LayerElement *&gt; vrv::Cursor::m_container</definition>
+        <argsstring></argsstring>
+        <name>m_container</name>
+        <briefdescription>
+<para>The cursor container (e.g., tuplet, graceGrp) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="137" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a4369952ac43cdd562225a3dd3e6e01ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void vrv::Cursor::CloneReset</definition>
+        <argsstring>() override</argsstring>
+        <name>CloneReset</name>
+        <reimplements refid="classvrv_1_1_object_1a2a1c4d0ed1a15f33637b03670c9aa98f">CloneReset</reimplements>
+        <briefdescription>
+<para>Overriding <ref refid="classvrv_1_1_cursor_1a4369952ac43cdd562225a3dd3e6e01ac" kindref="member">CloneReset()</ref> method to be called after copy / assignment calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="44" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a0c8566efc3a1af5e358d06694162ccc6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool vrv::Cursor::IsCursor</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsCursor</name>
+        <reimplements refid="classvrv_1_1_note_1acaf4ce19125dcb0fe78a75593e5870fa">IsCursor</reimplements>
+        <briefdescription>
+<para><ref refid="classvrv_1_1_flag" kindref="compound">Flag</ref> indicator if or <ref refid="classvrv_1_1_cursor" kindref="compound">Cursor</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="46" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1aaefee93af4937ffbfff7a11e4be69065" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int vrv::Cursor::GetDrawingX</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetDrawingX</name>
+        <reimplements refid="classvrv_1_1_facsimile_interface_1a3b371e4cbee5acbf94a885a2011a081e">GetDrawingX</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="48" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a0249e7944f6993806fc21a3e3c7345f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Cursor::SetCursorAlignment</definition>
+        <argsstring>(Alignment *alignment)</argsstring>
+        <name>SetCursorAlignment</name>
+        <param>
+          <type><ref refid="classvrv_1_1_alignment" kindref="compound">Alignment</ref> *</type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="50" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a7079e08d1248da56ccf5ff4494555376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Cursor::ResetCursorAlignment</definition>
+        <argsstring>()</argsstring>
+        <name>ResetCursorAlignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="51" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1ae0737742ee20c16b05ac783b5ee16373" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Cursor::SetPosition</definition>
+        <argsstring>(LayerElement *position)</argsstring>
+        <name>SetPosition</name>
+        <param>
+          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="53" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1ac4df9995ac2edc6f7858079e9361acdb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+        <definition>LayerElement* vrv::Cursor::GetPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="54" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a9e90504dd6664b5a3d87dbb0f5d5b4f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Cursor::HasPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>HasPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="55" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a0aa5498e1cf878295c987c7254e6a375" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Cursor::SetContainer</definition>
+        <argsstring>(LayerElement *container)</argsstring>
+        <name>SetContainer</name>
+        <param>
+          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <declname>container</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="57" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1addf58f3e23db9c056b12574589778a1c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+        <definition>LayerElement* vrv::Cursor::GetContainer</definition>
+        <argsstring>() const</argsstring>
+        <name>GetContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="58" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a8b0563fad8ad0f1472d028d882531bbd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Cursor::HasContainer</definition>
+        <argsstring>() const</argsstring>
+        <name>HasContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="59" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a0255ac3db99862aecc92262738a84f4e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Cursor::HasAccid</definition>
+        <argsstring>() const</argsstring>
+        <name>HasAccid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="61" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1ad9ef7f1756ba0a5e746f50666cb24d29" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>data_ACCIDENTAL_WRITTEN</type>
+        <definition>data_ACCIDENTAL_WRITTEN vrv::Cursor::GetAccid</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAccid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="62" column="29" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a70fe9074e57f33e7c9afc138d0abdff9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Cursor::SetAccid</definition>
+        <argsstring>(data_ACCIDENTAL_WRITTEN accid)</argsstring>
+        <name>SetAccid</name>
+        <param>
+          <type>data_ACCIDENTAL_WRITTEN</type>
+          <declname>accid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="63" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a0e258c486c87504c0f38afc7a7453968" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Cursor::IsAccidImplicit</definition>
+        <argsstring>() const</argsstring>
+        <name>IsAccidImplicit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="64" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a6ba255a7b2593f5be42e185c854ee752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Cursor::SetAccidImplicit</definition>
+        <argsstring>(bool isAccidImplicit)</argsstring>
+        <name>SetAccidImplicit</name>
+        <param>
+          <type>bool</type>
+          <declname>isAccidImplicit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="65" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a2d6a10c5b24831c134193bc68b07b327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Cursor::SetAccidValue</definition>
+        <argsstring>(const Accid *accid)</argsstring>
+        <name>SetAccidValue</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_accid" kindref="compound">Accid</ref> *</type>
+          <declname>accid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a09bd509d6fc1d4eeba890a883820f555" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; data_ACCIDENTAL_WRITTEN, data_ACCIDENTAL_GESTURAL &gt;</type>
+        <definition>std::pair&lt;data_ACCIDENTAL_WRITTEN, data_ACCIDENTAL_GESTURAL&gt; vrv::Cursor::GetAccidValue</definition>
+        <argsstring>()</argsstring>
+        <name>GetAccidValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="67" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a6e57e4a65a6984233be054d2d02952d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classvrv_1_1_accid" kindref="compound">Accid</ref> *</type>
+        <definition>Accid* vrv::Cursor::GetAccidElement</definition>
+        <argsstring>()</argsstring>
+        <name>GetAccidElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="69" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1ab827b37f5b09f8a5c56a3dd7390c35c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Cursor::IsRestMode</definition>
+        <argsstring>() const</argsstring>
+        <name>IsRestMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="71" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a13e78397a9e4b1e3a3a73d52d3d5eafe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Cursor::SetRestMode</definition>
+        <argsstring>(bool restMode)</argsstring>
+        <name>SetRestMode</name>
+        <param>
+          <type>bool</type>
+          <declname>restMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="72" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a8fb9eb3a22279c1fc2e8d58ee1805b03" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>ChordMode</type>
+        <definition>ChordMode vrv::Cursor::GetChordMode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetChordMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="76" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1ac95b8c61b5924248c91d35909f0842c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Cursor::SetChordMode</definition>
+        <argsstring>(ChordMode chordMode)</argsstring>
+        <name>SetChordMode</name>
+        <param>
+          <type>ChordMode</type>
+          <declname>chordMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="77" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1abaa4d65766c45354628d1ed277105e50" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Cursor::IsChordMode</definition>
+        <argsstring>() const</argsstring>
+        <name>IsChordMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="78" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a4f7ab8fb381b99cf8e0a501e285943af" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Cursor::IsChordEditMode</definition>
+        <argsstring>() const</argsstring>
+        <name>IsChordEditMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="79" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a3f460801e5f45e93873ca9b1ec5a1fbe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TieMode</type>
+        <definition>TieMode vrv::Cursor::GetTieMode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTieMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="86" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1aab4b41e85846e63a465efc263fde906a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Cursor::SetTieMode</definition>
+        <argsstring>(TieMode tieMode)</argsstring>
+        <name>SetTieMode</name>
+        <param>
+          <type>TieMode</type>
+          <declname>tieMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="87" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a4e081cb714945a0356770d16a71310c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Cursor::IsTieMode</definition>
+        <argsstring>() const</argsstring>
+        <name>IsTieMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="88" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a7e6815ec199d43cbc166abda9d53c6df" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>InputMode</type>
+        <definition>InputMode vrv::Cursor::GetInputMode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetInputMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="92" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1ac4e2e5b2ab236374215d589426f3f562" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Cursor::SetInputMode</definition>
+        <argsstring>(InputMode inputMode)</argsstring>
+        <name>SetInputMode</name>
+        <param>
+          <type>InputMode</type>
+          <declname>inputMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="93" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a3edde978d87abea64d2337872ce17413" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::Cursor::GetYRelPitchC</definition>
+        <argsstring>() const</argsstring>
+        <name>GetYRelPitchC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="95" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a48150a2d7efa412a70ee97289224e434" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Cursor::SetYRelPitchC</definition>
+        <argsstring>(int yRelPitchC)</argsstring>
+        <name>SetYRelPitchC</name>
+        <param>
+          <type>int</type>
+          <declname>yRelPitchC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="96" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a2f20f0076c5486e3bce58c447e073451" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Cursor::Veto</definition>
+        <argsstring>(const std::string &amp;attribute) const</argsstring>
+        <name>Veto</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="98" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_cursor_1a5dcf6c33119fddfe4a7e3f58ac0a2e25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Cursor::OnSet</definition>
+        <argsstring>(const std::string &amp;attribute)</argsstring>
+        <name>OnSet</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="99" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class implements a curor for the editor. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>vrv::LayerElement</label>
+        <link refid="classvrv_1_1_layer_element"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>AttNoteVisMensural</label>
+      </node>
+      <node id="9">
+        <label>vrv::LinkingInterface</label>
+        <link refid="classvrv_1_1_linking_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>AttDurationRatio</label>
+      </node>
+      <node id="14">
+        <label>vrv::StemmedDrawingInterface</label>
+        <link refid="classvrv_1_1_stemmed_drawing_interface"/>
+      </node>
+      <node id="30">
+        <label>AttNoteGes</label>
+      </node>
+      <node id="19">
+        <label>AttBeamSecondary</label>
+      </node>
+      <node id="38">
+        <label>AttColoration</label>
+      </node>
+      <node id="13">
+        <label>AttTyped</label>
+      </node>
+      <node id="5">
+        <label>vrv::BoundingBox</label>
+        <link refid="classvrv_1_1_bounding_box"/>
+      </node>
+      <node id="1">
+        <label>vrv::Cursor</label>
+        <link refid="classvrv_1_1_cursor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vrv::Interface</label>
+        <link refid="classvrv_1_1_interface"/>
+      </node>
+      <node id="26">
+        <label>vrv::OffsetInterface</label>
+        <link refid="classvrv_1_1_offset_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>AttVisibility</label>
+      </node>
+      <node id="2">
+        <label>vrv::Note</label>
+        <link refid="classvrv_1_1_note"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+        <childnode refid="48" relation="public-inheritance">
+        </childnode>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+        <childnode refid="50" relation="public-inheritance">
+        </childnode>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>AttFermataPresent</label>
+      </node>
+      <node id="21">
+        <label>AttDurationLog</label>
+      </node>
+      <node id="6">
+        <label>vrv::FacsimileInterface</label>
+        <link refid="classvrv_1_1_facsimile_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vrv::PitchInterface</label>
+        <link refid="classvrv_1_1_pitch_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>AttCoordX1</label>
+      </node>
+      <node id="49">
+        <label>AttStringtab</label>
+      </node>
+      <node id="32">
+        <label>AttPitch</label>
+      </node>
+      <node id="16">
+        <label>AttAltSym</label>
+      </node>
+      <node id="17">
+        <label>vrv::DurationInterface</label>
+        <link refid="classvrv_1_1_duration_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>AttStaffLoc</label>
+      </node>
+      <node id="50">
+        <label>AttTiePresent</label>
+      </node>
+      <node id="36">
+        <label>AttStaffLocPitched</label>
+      </node>
+      <node id="47">
+        <label>AttStems</label>
+      </node>
+      <node id="18">
+        <label>AttAugmentDots</label>
+      </node>
+      <node id="10">
+        <label>AttLinking</label>
+      </node>
+      <node id="27">
+        <label>AttVisualOffsetHo</label>
+      </node>
+      <node id="33">
+        <label>AttPitchGes</label>
+      </node>
+      <node id="8">
+        <label>AttFacsimile</label>
+      </node>
+      <node id="31">
+        <label>AttOctave</label>
+      </node>
+      <node id="34">
+        <label>vrv::PositionInterface</label>
+        <link refid="classvrv_1_1_position_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>AttHarmonicFunction</label>
+      </node>
+      <node id="42">
+        <label>AttGraced</label>
+      </node>
+      <node id="39">
+        <label>AttCue</label>
+      </node>
+      <node id="15">
+        <label>vrv::AltSymInterface</label>
+        <link refid="classvrv_1_1_alt_sym_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>AttNoteHeads</label>
+      </node>
+      <node id="48">
+        <label>AttStemsCmn</label>
+      </node>
+      <node id="25">
+        <label>AttStaffIdent</label>
+      </node>
+      <node id="4">
+        <label>vrv::Object</label>
+        <link refid="classvrv_1_1_object"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>AttMidiVelocity</label>
+      </node>
+      <node id="28">
+        <label>AttVisualOffsetVo</label>
+      </node>
+      <node id="37">
+        <label>AttColor</label>
+      </node>
+      <node id="20">
+        <label>AttDurationGes</label>
+      </node>
+      <node id="22">
+        <label>AttDurationQuality</label>
+      </node>
+      <node id="40">
+        <label>AttExtSymAuth</label>
+      </node>
+      <node id="12">
+        <label>AttLabelled</label>
+      </node>
+      <node id="41">
+        <label>AttExtSymNames</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>vrv::LayerElement</label>
+        <link refid="classvrv_1_1_layer_element"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>m_crossLayer</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>m_crossStaff</edgelabel>
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>m_alignment</edgelabel>
+          <edgelabel>m_graceAlignment</edgelabel>
+        </childnode>
+      </node>
+      <node id="82">
+        <label>AttNoteVisMensural</label>
+      </node>
+      <node id="9">
+        <label>vrv::LinkingInterface</label>
+        <link refid="classvrv_1_1_linking_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>AttMultinumMeasures</label>
+      </node>
+      <node id="26">
+        <label>vrv::ScoreDefElement</label>
+        <link refid="classvrv_1_1_score_def_element"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vrv::VisibilityDrawingInterface</label>
+        <link refid="classvrv_1_1_visibility_drawing_interface"/>
+      </node>
+      <node id="61">
+        <label>AttDurationRatio</label>
+      </node>
+      <node id="49">
+        <label>vrv::StemmedDrawingInterface</label>
+        <link refid="classvrv_1_1_stemmed_drawing_interface"/>
+        <childnode refid="50" relation="usage">
+          <edgelabel>m_drawingStem</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>AttSystems</label>
+      </node>
+      <node id="20">
+        <label>vrv::Staff</label>
+        <link refid="classvrv_1_1_staff"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>m_drawingTuning</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>m_drawingStaffDef</edgelabel>
+        </childnode>
+      </node>
+      <node id="68">
+        <label>AttNoteGes</label>
+      </node>
+      <node id="28">
+        <label>AttBarring</label>
+      </node>
+      <node id="40">
+        <label>AttDistances</label>
+      </node>
+      <node id="57">
+        <label>AttBeamSecondary</label>
+      </node>
+      <node id="76">
+        <label>AttColoration</label>
+      </node>
+      <node id="13">
+        <label>AttTyped</label>
+      </node>
+      <node id="5">
+        <label>vrv::BoundingBox</label>
+        <link refid="classvrv_1_1_bounding_box"/>
+      </node>
+      <node id="1">
+        <label>vrv::Cursor</label>
+        <link refid="classvrv_1_1_cursor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vrv::ScoreDefInterface</label>
+        <link refid="classvrv_1_1_score_def_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vrv::Interface</label>
+        <link refid="classvrv_1_1_interface"/>
+      </node>
+      <node id="33">
+        <label>AttMmTempo</label>
+      </node>
+      <node id="64">
+        <label>vrv::OffsetInterface</label>
+        <link refid="classvrv_1_1_offset_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>AttMidiTempo</label>
+      </node>
+      <node id="19">
+        <label>AttVisibility</label>
+      </node>
+      <node id="2">
+        <label>vrv::Note</label>
+        <link refid="classvrv_1_1_note"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+        <childnode refid="67" relation="public-inheritance">
+        </childnode>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+        <childnode refid="83" relation="public-inheritance">
+        </childnode>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>AttStaffDefVis</label>
+      </node>
+      <node id="18">
+        <label>AttNInteger</label>
+      </node>
+      <node id="14">
+        <label>vrv::Layer</label>
+        <link refid="classvrv_1_1_layer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>AttFermataPresent</label>
+      </node>
+      <node id="59">
+        <label>AttDurationLog</label>
+      </node>
+      <node id="37">
+        <label>AttSpacing</label>
+      </node>
+      <node id="6">
+        <label>vrv::FacsimileInterface</label>
+        <link refid="classvrv_1_1_facsimile_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>AttNotationType</label>
+      </node>
+      <node id="67">
+        <label>vrv::PitchInterface</label>
+        <link refid="classvrv_1_1_pitch_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>AttOctaveDefault</label>
+      </node>
+      <node id="11">
+        <label>AttCoordX1</label>
+      </node>
+      <node id="85">
+        <label>AttStringtab</label>
+      </node>
+      <node id="15">
+        <label>vrv::DrawingListInterface</label>
+        <link refid="classvrv_1_1_drawing_list_interface"/>
+      </node>
+      <node id="70">
+        <label>AttPitch</label>
+      </node>
+      <node id="22">
+        <label>AttCoordY1</label>
+      </node>
+      <node id="54">
+        <label>AttAltSym</label>
+      </node>
+      <node id="55">
+        <label>vrv::DurationInterface</label>
+        <link refid="classvrv_1_1_duration_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vrv::Tuning</label>
+        <link refid="classvrv_1_1_tuning"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>AttStaffLoc</label>
+      </node>
+      <node id="86">
+        <label>AttTiePresent</label>
+      </node>
+      <node id="74">
+        <label>AttStaffLocPitched</label>
+      </node>
+      <node id="39">
+        <label>vrv::StaffDefDrawingInterface</label>
+        <link refid="classvrv_1_1_staff_def_drawing_interface"/>
+      </node>
+      <node id="83">
+        <label>AttStems</label>
+      </node>
+      <node id="56">
+        <label>AttAugmentDots</label>
+      </node>
+      <node id="25">
+        <label>vrv::StaffDef</label>
+        <link refid="classvrv_1_1_staff_def"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>AttLinking</label>
+      </node>
+      <node id="65">
+        <label>AttVisualOffsetHo</label>
+      </node>
+      <node id="30">
+        <label>AttLyricStyle</label>
+      </node>
+      <node id="71">
+        <label>AttPitchGes</label>
+      </node>
+      <node id="8">
+        <label>AttFacsimile</label>
+      </node>
+      <node id="69">
+        <label>AttOctave</label>
+      </node>
+      <node id="72">
+        <label>vrv::PositionInterface</label>
+        <link refid="classvrv_1_1_position_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+        <childnode refid="74" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>AttTransposition</label>
+      </node>
+      <node id="79">
+        <label>AttHarmonicFunction</label>
+      </node>
+      <node id="29">
+        <label>AttDurationDefault</label>
+      </node>
+      <node id="51">
+        <label>AttGraced</label>
+      </node>
+      <node id="17">
+        <label>AttCue</label>
+      </node>
+      <node id="45">
+        <label>AttStaffDefVisTablature</label>
+      </node>
+      <node id="53">
+        <label>vrv::AltSymInterface</label>
+        <link refid="classvrv_1_1_alt_sym_interface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>vrv::Alignment</label>
+        <link refid="classvrv_1_1_alignment"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>AttNoteHeads</label>
+      </node>
+      <node id="36">
+        <label>AttPianoPedals</label>
+      </node>
+      <node id="43">
+        <label>AttStaffDefLog</label>
+      </node>
+      <node id="84">
+        <label>AttStemsCmn</label>
+      </node>
+      <node id="63">
+        <label>AttStaffIdent</label>
+      </node>
+      <node id="4">
+        <label>vrv::Object</label>
+        <link refid="classvrv_1_1_object"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>AttMidiVelocity</label>
+      </node>
+      <node id="50">
+        <label>vrv::Stem</label>
+        <link refid="classvrv_1_1_stem"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>AttVisualOffsetVo</label>
+      </node>
+      <node id="75">
+        <label>AttColor</label>
+      </node>
+      <node id="52">
+        <label>AttStemVis</label>
+      </node>
+      <node id="58">
+        <label>AttDurationGes</label>
+      </node>
+      <node id="31">
+        <label>AttMeasureNumbers</label>
+      </node>
+      <node id="60">
+        <label>AttDurationQuality</label>
+      </node>
+      <node id="42">
+        <label>AttScalable</label>
+      </node>
+      <node id="16">
+        <label>vrv::ObjectListInterface</label>
+        <link refid="classvrv_1_1_object_list_interface"/>
+      </node>
+      <node id="24">
+        <label>AttTuningLog</label>
+      </node>
+      <node id="77">
+        <label>AttExtSymAuth</label>
+      </node>
+      <node id="46">
+        <label>AttTimeBase</label>
+      </node>
+      <node id="12">
+        <label>AttLabelled</label>
+      </node>
+      <node id="78">
+        <label>AttExtSymNames</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/cursor.h" line="27" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/cursor.h" bodystart="27" bodyend="138"/>
+    <listofallmembers>
+      <member refid="classvrv_1_1_cursor_1a1116a2cbaffd1eebcb84872dd3164db5" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>Accept</name></member>
+      <member refid="classvrv_1_1_cursor_1a6715344ebac740613bde56bd56490349" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>Accept</name></member>
+      <member refid="classvrv_1_1_cursor_1adc671e2cf0c3cc2d5391a6b4ea3fa326" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>AcceptEnd</name></member>
+      <member refid="classvrv_1_1_cursor_1a29385703aa1a8a89e38332de62a1b0e3" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>AcceptEnd</name></member>
+      <member refid="classvrv_1_1_linking_interface_1aaa4632e05d5d887b26dbf1789c84f573" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>AddBackLink</name></member>
+      <member refid="classvrv_1_1_note_1a3b30bdc539b65b90c1f855d0e31d43e9" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>AddChild</name></member>
+      <member refid="classvrv_1_1_note_1a7f9a1cac90b424c99003d062f7720bb4" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>AddChildAdditionalCheck</name></member>
+      <member refid="classvrv_1_1_object_1a9bb3c177dca69d225baecea71a5fb4be" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>AddPlistReference</name></member>
+      <member refid="classvrv_1_1_layer_element_1ae4f035f3818e7a9ec44e80e5c7097e81" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>AdjustOverlappingLayers</name></member>
+      <member refid="classvrv_1_1_pitch_interface_1aa50e2d8637677e753a582083b7b8afb7" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>AdjustPitchByOffset</name></member>
+      <member refid="classvrv_1_1_pitch_interface_1a720eabf22b709d13987df460e0c40c89" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>AdjustPitchForNewClef</name></member>
+      <member refid="classvrv_1_1_pitch_interface_1a3efb531b25e89181a821d237fbdf903e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>AdjustPname</name></member>
+      <member refid="classvrv_1_1_note_1a31a25f79f3854cf1083770fe46718360" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>AlignDotsShift</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1a845bedb313536e6d19b235330e613860" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>AltSymInterface</name></member>
+      <member refid="classvrv_1_1_bounding_box_1ae9a22cf5d306abb22ff5f557e81bd9af" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ApproximateBezierBoundingBox</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a3901a5e4a728b8f3450cce0e30f4bd29" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ApproximateBezierExtrema</name></member>
+      <member refid="classvrv_1_1_bounding_box_1aa466757865d8f747cbaaf232e3051177" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ArePointsClose</name></member>
+      <member refid="classvrv_1_1_facsimile_interface_1ac8c7d16dc7228cd38a657ceb49af5e3e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>AttachZone</name></member>
+      <member refid="classvrv_1_1_object_1a9d6ab0b2d5e2e811845b0f4fa47f0fa7" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>AttributesToExternal</name></member>
+      <member refid="classvrv_1_1_object_1a20faae47d0db79fc7de092565b019e9c" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>AttributesToInternal</name></member>
+      <member refid="classvrv_1_1_object_1aa63ca849b67044acc38f89a6030b03c2" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>binaryComp</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a5601855899250709d9fa94f3c280aa72" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>BoundingBox</name></member>
+      <member refid="classvrv_1_1_layer_element_1a7f0a813d93a3c0b514a814a1d50536bd" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CacheXRel</name></member>
+      <member refid="classvrv_1_1_layer_element_1a948815c5f9ebb61c247db96eb5a963e9" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CacheYRel</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a91eb3e2ee9b00bc764283fe1710e199b" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcBezierAtPosition</name></member>
+      <member refid="classvrv_1_1_bounding_box_1af1fdd065b198aafe35dcc7e5a35477ee" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcBezierParamAtPosition</name></member>
+      <member refid="classvrv_1_1_bounding_box_1ac09f7239af89a7e19ca235761589e150" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcDeCasteljau</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a8008673c300accccc6dd7f10a2f12d45" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcDistance</name></member>
+      <member refid="classvrv_1_1_note_1a19e1747b8c15b47581048795066212aa" prot="protected" virt="virtual"><scope>vrv::Cursor</scope><name>CalcDotLocations</name></member>
+      <member refid="classvrv_1_1_position_interface_1ad108f633f9d1d04b255f4c8a40092770" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcDrawingLoc</name></member>
+      <member refid="classvrv_1_1_layer_element_1a55718065d5951c44917fd1072df649df" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcElementHorizontalOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1af5401bb6040fe859bf6b7dc09c3c35b8" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcLinearInterpolation</name></member>
+      <member refid="classvrv_1_1_pitch_interface_1a5e9d080f4132195df6c62c8a92cb7320" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcLoc</name></member>
+      <member refid="classvrv_1_1_pitch_interface_1ac6d9b7ec74dba44097241bb60b365284" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcLoc</name></member>
+      <member refid="classvrv_1_1_note_1aa267b22e6d10946e4b865ae4819d0f45" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcNoteHeadShiftForSameasNote</name></member>
+      <member refid="classvrv_1_1_note_1a82d1612019d3e768f54337c985a82bd9" prot="protected" virt="virtual"><scope>vrv::Cursor</scope><name>CalcNoteLocations</name></member>
+      <member refid="classvrv_1_1_layer_element_1a78700de97d76aca246ed070e737f3f20" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcOptimalDotLocations</name></member>
+      <member refid="classvrv_1_1_pitch_interface_1aa3bdd86d93c8924be70235cc43f46e1b" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcPitch</name></member>
+      <member refid="classvrv_1_1_bounding_box_1acf2951ebea74c27b024916a4c96480a5" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcPointAtBezier</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a80465f84c7190f8cb0a9765693376be2" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcPositionAfterRotation</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a98f3d30610a0063965fcac7ec265ef27" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcSlope</name></member>
+      <member refid="classvrv_1_1_note_1a6f88ce0675e674e63fc42e3fca18fdc4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcStemDirForSameasNote</name></member>
+      <member refid="classvrv_1_1_note_1a105ed49c9fe5687f372a9aa49dd5cfc2" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>CalcStemLenInThirdUnits</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a8fdd811aefcb373533b9cc2795aa04dd" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CalcThickBezier</name></member>
+      <member refid="classvrv_1_1_layer_element_1a9119ab77c4eb82a8ad74cb8a20f7784d" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CenterDrawingX</name></member>
+      <member refid="classvrv_1_1_cursor_1a860cd22e6a97dea7f1f1b6eb8c534a77ab2cd37b60772263a39236b61eca208fd" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CHORD_NONE</name></member>
+      <member refid="classvrv_1_1_cursor_1a860cd22e6a97dea7f1f1b6eb8c534a77" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ChordMode</name></member>
+      <member refid="classvrv_1_1_object_1a0af864d1b64a70d4ec8b62a520114bde" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ClearChildren</name></member>
+      <member refid="classvrv_1_1_object_1a667b4432b8f9d9e92bfd34fe5c885099" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ClearRelinquishedChildren</name></member>
+      <member refid="classvrv_1_1_cursor_1ae5a313004c1e865596d0be702574c478" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>Clone</name></member>
+      <member refid="classvrv_1_1_cursor_1a4369952ac43cdd562225a3dd3e6e01ac" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>CloneReset</name></member>
+      <member refid="classvrv_1_1_cursor_1a9b67ec45c1b2c153801c2e818aef3537aae9b384520e79dcde9b8039e0180de0c" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>COPY</name></member>
+      <member refid="classvrv_1_1_object_1a5ded43771526c4de94f02da17c47b3bc" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>CopyAttributesTo</name></member>
+      <member refid="classvrv_1_1_object_1a4bf38f527d70161c92062a2347b7c11e" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>CopyChildren</name></member>
+      <member refid="classvrv_1_1_cursor_1a40e15fbdf51b7a3dc0446573db84341d" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>Cursor</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a9cad6401ea6904f121c39ed002ee7751" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>DecreaseCMNDuration</name></member>
+      <member refid="classvrv_1_1_object_1aa24fba8bae1f0876567f564f98020966" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>DeleteChild</name></member>
+      <member refid="classvrv_1_1_object_1acbb7a83e4ae3f1ba54bcd408dce066ee" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>DeleteChildrenByComparison</name></member>
+      <member refid="classvrv_1_1_object_1ac846569894fc8b08083e5a8526ba5834" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>DetachChild</name></member>
+      <member refid="classvrv_1_1_cursor_1abc7cc48955e49885ee99a90addd19fd8ae8e51af21d357e381914e0975e3813eb" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>DURATION_FIRST</name></member>
+      <member refid="classvrv_1_1_duration_interface_1abcb2f792eeb999beb3a5f247c812d274" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>DurationInterface</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a9304a4f7d66c3cb9fb44a0c07a17758e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>DurationWithBrevisEquivalence</name></member>
+      <member refid="classvrv_1_1_duration_interface_1afbb4d68aef4bcad20e733edc943e41f8" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>DurationWithMinimaEquivalence</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a305349d0e2754908424d915a52f5ba79" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>DurationWithSemibrevisEquivalence</name></member>
+      <member refid="classvrv_1_1_cursor_1a860cd22e6a97dea7f1f1b6eb8c534a77a3fe465edb2c82ca9f8bb87b976a00dd5" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>EDIT_EXISTING</name></member>
+      <member refid="classvrv_1_1_cursor_1a860cd22e6a97dea7f1f1b6eb8c534a77a42c4954ef9112549cb5b80452e6d6d08" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>EDIT_NEW</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a52ac837dc797c5f292c98ddb3f43a098" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>Encloses</name></member>
+      <member refid="classvrv_1_1_facsimile_interface_1ae681c0fa1158e116060f15c9796c782c" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FacsimileInterface</name></member>
+      <member refid="classvrv_1_1_object_1a24dd9389c537dda7046c097132ae9a9a" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FillFlatList</name></member>
+      <member refid="classvrv_1_1_object_1accb9f790ac276469b8ca9ce7ca5fe19d" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FindAllDescendantsBetween</name></member>
+      <member refid="classvrv_1_1_object_1a0d0ae6bac5470fbd7aa1555edf9341e5" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FindAllDescendantsBetween</name></member>
+      <member refid="classvrv_1_1_object_1a02c322a63d089b388e6b122598e88077" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FindAllDescendantsByComparison</name></member>
+      <member refid="classvrv_1_1_object_1adedb8c10d4e5f780f48aa1a45cf3d20f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FindAllDescendantsByComparison</name></member>
+      <member refid="classvrv_1_1_object_1a56b1782e737b97f3e3145cbe08296b19" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FindAllDescendantsByType</name></member>
+      <member refid="classvrv_1_1_object_1a41ee471e72e60d72b177f9f97264fab3" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FindAllDescendantsByType</name></member>
+      <member refid="classvrv_1_1_object_1a75077fdacaa928e36fe20b90eaca7a7a" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FindDescendantByComparison</name></member>
+      <member refid="classvrv_1_1_object_1a948e6633d515f523bb38dad79af046b2" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FindDescendantByComparison</name></member>
+      <member refid="classvrv_1_1_object_1a00d5ad76400a768dd634806998166ab7" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FindDescendantByID</name></member>
+      <member refid="classvrv_1_1_object_1a71f296d277f77a37c45687f97a73bf83" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FindDescendantByID</name></member>
+      <member refid="classvrv_1_1_object_1a2c65f3e559db5add1055a45e60d44536" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FindDescendantByType</name></member>
+      <member refid="classvrv_1_1_object_1a6765a4a8d789472f5c0b1598440d675f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FindDescendantByType</name></member>
+      <member refid="classvrv_1_1_object_1a95acdd9f46d55cf067b567ef11526b68" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FindDescendantExtremeByComparison</name></member>
+      <member refid="classvrv_1_1_object_1af9c8c3326a8eb6745bb1a94da8d76627" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FindDescendantExtremeByComparison</name></member>
+      <member refid="classvrv_1_1_object_1a5783461a8f5bee6d95391b86e0004ff4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FindNextChild</name></member>
+      <member refid="classvrv_1_1_object_1a4750585ae6b8737aba3408fcc863dfeb" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>FindPreviousChild</name></member>
+      <member refid="classvrv_1_1_object_1ab61ec322562aee0247f49e9fb008a448" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GenerateHashID</name></member>
+      <member refid="classvrv_1_1_layer_element_1a39adc1a3bb53a8836b1dc8bf375d15a1" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GenerateZoneBounds</name></member>
+      <member refid="classvrv_1_1_cursor_1ad9ef7f1756ba0a5e746f50666cb24d29" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAccid</name></member>
+      <member refid="classvrv_1_1_cursor_1a6e57e4a65a6984233be054d2d02952d8" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAccidElement</name></member>
+      <member refid="classvrv_1_1_cursor_1a09bd509d6fc1d4eeba890a883820f555" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAccidValue</name></member>
+      <member refid="classvrv_1_1_duration_interface_1ae08b71cfec94af5edb02b3372d178d9c" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetActualDur</name></member>
+      <member refid="classvrv_1_1_duration_interface_1adf6087baf2b0d95aab8bbe3f5ae8e389" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetActualDurGes</name></member>
+      <member refid="classvrv_1_1_layer_element_1aaf37de33bde75ed90873dead9d515860" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAlignment</name></member>
+      <member refid="classvrv_1_1_layer_element_1a5d22f797b37bd60c3571dda3b91bebc2" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAlignment</name></member>
+      <member refid="classvrv_1_1_layer_element_1afb5a9e701dfc1682a4c4cb7f3adeec55" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAlignmentDuration</name></member>
+      <member refid="classvrv_1_1_layer_element_1aed956667c1892e7d006ad447efd78e18" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAlignmentDuration</name></member>
+      <member refid="classvrv_1_1_layer_element_1a2fb9126c18e349cefe4a66479c97f17a" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAlignmentLayerN</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1ab8910be3f566440cde2cf57108248478" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAltSymbolDef</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1ab1e4641a3121765874883831aeb7d9b0" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAltSymbolDef</name></member>
+      <member refid="classvrv_1_1_note_1a47b791801c871fe4ba009b86284d3c42" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetAltSymInterface</name></member>
+      <member refid="classvrv_1_1_note_1a739674e3f56771df67308995725eaac9" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetAltSymInterface</name></member>
+      <member refid="classvrv_1_1_layer_element_1a817e0da7e6a5f8508fa02b0a39d4f1a5" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAncestorBeam</name></member>
+      <member refid="classvrv_1_1_layer_element_1affe0a49e0066adfa5699a73b2033d902" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAncestorBeam</name></member>
+      <member refid="classvrv_1_1_layer_element_1a627fdafe6ad90a68616a82d30b259b5d" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAncestorFTrem</name></member>
+      <member refid="classvrv_1_1_layer_element_1a7cc013a17eee544d96555422ac06b658" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAncestorFTrem</name></member>
+      <member refid="classvrv_1_1_object_1a9520082549d438647a7fc8b1126675b4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAncestors</name></member>
+      <member refid="classvrv_1_1_object_1a323a71a1cb0b2a956e37c4e3da49a0fb" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAncestors</name></member>
+      <member refid="classvrv_1_1_layer_element_1a40c452b4d86ad373111099cca9a36fba" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAncestorStaff</name></member>
+      <member refid="classvrv_1_1_layer_element_1ac11fb05cc13263eb4ff2f923b02c3a38" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAncestorStaff</name></member>
+      <member refid="classvrv_1_1_object_1a6cadd7a0feb1425165258e599090f9f9" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetAreaPosInterface</name></member>
+      <member refid="classvrv_1_1_object_1aa91dde17d5e02f9fb15441d175ec9ab1" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetAreaPosInterface</name></member>
+      <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual" ambiguityscope="vrv::"><scope>vrv::Cursor</scope><name>GetAttClasses</name></member>
+      <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual" ambiguityscope="vrv::LinkingInterface::"><scope>vrv::Cursor</scope><name>GetAttClasses</name></member>
+      <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual" ambiguityscope="vrv::AltSymInterface::"><scope>vrv::Cursor</scope><name>GetAttClasses</name></member>
+      <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual" ambiguityscope="vrv::DurationInterface::"><scope>vrv::Cursor</scope><name>GetAttClasses</name></member>
+      <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual" ambiguityscope="vrv::OffsetInterface::"><scope>vrv::Cursor</scope><name>GetAttClasses</name></member>
+      <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual" ambiguityscope="vrv::PitchInterface::"><scope>vrv::Cursor</scope><name>GetAttClasses</name></member>
+      <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual" ambiguityscope="vrv::PositionInterface::"><scope>vrv::Cursor</scope><name>GetAttClasses</name></member>
+      <member refid="classvrv_1_1_object_1af985fc595df04b36b8ff3e6b1e38b7c4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetAttributes</name></member>
+      <member refid="classvrv_1_1_object_1a6d9d3ae387831fac891f903349348310" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetBeamDrawingInterface</name></member>
+      <member refid="classvrv_1_1_object_1ab136df3273e12a93e3699ae62e9d2514" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetBeamDrawingInterface</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a3dbe5a481e20ab4d0d9fdd47708d1c2f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetBezierThicknessCoefficient</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a91a7bb36d11f909e84caab997fb49c0c" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetBottomBy</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a5a9da745d928e71989c23eca8d4b77d7" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetBoundingBoxGlyph</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a2b025880f04cefa1cb37b7e6f8bfb8f1" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetBoundingBoxGlyphFontSize</name></member>
+      <member refid="classvrv_1_1_object_1a41604299ea07255f348600609ef90c8b" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetChild</name></member>
+      <member refid="classvrv_1_1_object_1a63a2dec6cb07702ae147ec3541d44496" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetChild</name></member>
+      <member refid="classvrv_1_1_object_1a889936363e6eb4b03172c86219c275fc" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetChild</name></member>
+      <member refid="classvrv_1_1_object_1ac42744411cd519011fe914f200f6e0f5" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetChild</name></member>
+      <member refid="classvrv_1_1_object_1a96ae60d000961398754d5b22de89cc4e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetChildCount</name></member>
+      <member refid="classvrv_1_1_object_1a21704672a51a54150db818e2e14af2da" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetChildCount</name></member>
+      <member refid="classvrv_1_1_object_1a5ebca520373bf015cd3b5667791b8334" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetChildCount</name></member>
+      <member refid="classvrv_1_1_object_1a747b062af53580bf736f3c163cb6602a" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetChildIndex</name></member>
+      <member refid="classvrv_1_1_object_1a65ebcdfcab707aacab9176303d4d3bf6" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetChildren</name></member>
+      <member refid="classvrv_1_1_object_1a676255bd808b50dc0f18b863c3d37be8" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetChildren</name></member>
+      <member refid="classvrv_1_1_object_1a6613607b9361b6cc4d568ce189ba9c32" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetChildrenForModification</name></member>
+      <member refid="classvrv_1_1_cursor_1a8fb9eb3a22279c1fc2e8d58ee1805b03" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetChordMode</name></member>
+      <member refid="classvrv_1_1_object_1aab95929358aad8730f586319a3417264" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetClassId</name></member>
+      <member refid="classvrv_1_1_cursor_1a52551ae6e8d3c725589824c444bbbf70" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetClassName</name></member>
+      <member refid="classvrv_1_1_object_1a65066ae5b40a4dc3aab9bf76abc57d36" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetClosingComment</name></member>
+      <member refid="classvrv_1_1_layer_element_1afb64a340246bd59bd429c6a2b05f5fae" prot="protected" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetCollisionCount</name></member>
+      <member refid="classvrv_1_1_object_1aa8a0722010e05e1e2cb04d90a9535cc4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetComment</name></member>
+      <member refid="classvrv_1_1_cursor_1addf58f3e23db9c056b12574589778a1c" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetContainer</name></member>
+      <member refid="classvrv_1_1_layer_element_1a136d3092e895b4c161a15a0f3519318d" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetContentAlignmentDuration</name></member>
+      <member refid="classvrv_1_1_layer_element_1ad5f41fe682d6ffd35b56673bfc7010b1" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetContentAlignmentDuration</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a74fec7caf937bc6892cd0de8c1f29355" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetContentBottom</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a9a33f5750af51cfb292ff2a553744e2d" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetContentLeft</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a755302fda960358f076a3175783a5d78" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetContentRight</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a8343f2b84e7bb194cb9377c304703bba" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetContentTop</name></member>
+      <member refid="classvrv_1_1_bounding_box_1ac2b3dff1054fee47d8d22c2183c4c346" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetContentX1</name></member>
+      <member refid="classvrv_1_1_bounding_box_1aca490fbb8d4d5c0179e05f790e0e2951" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetContentX2</name></member>
+      <member refid="classvrv_1_1_bounding_box_1afb681918250b5eceeab06a8752c794a0" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetContentY1</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a7d8f116f3c72430801e43fc9f1fb1e95" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetContentY2</name></member>
+      <member refid="classvrv_1_1_layer_element_1ae05dbb4b519765c15f859c08fb97de74" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetCrossStaff</name></member>
+      <member refid="classvrv_1_1_layer_element_1a8274fb4c0607766b1179dfc217811cb9" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetCrossStaff</name></member>
+      <member refid="classvrv_1_1_layer_element_1ab71a22a3ba9cf83fd357b4c8ade4a552" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetCrossStaffRel</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a26bfbd087c59e094696d2c0ff1fd89ea" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetCutOutBottom</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a341aeebe2fdd010ebf72aaf1c8760df3" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetCutOutLeft</name></member>
+      <member refid="classvrv_1_1_bounding_box_1aff4fd28f86884cc8286be692e644521e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetCutOutLeft</name></member>
+      <member refid="classvrv_1_1_bounding_box_1abc3f8eacafe2bfb2becd732507f259ae" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetCutOutRight</name></member>
+      <member refid="classvrv_1_1_bounding_box_1ab2703ccf19b57cc32f6e286748cc3e01" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetCutOutRight</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a81256810cab77e0d9fedf64fa858690f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetCutOutTop</name></member>
+      <member refid="classvrv_1_1_object_1a469db24aaa4907f5437576cb989fcdad" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDescendantCount</name></member>
+      <member refid="classvrv_1_1_object_1a6baacbb5e659f71a051d569b2c34ac07" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDescendantIndex</name></member>
+      <member refid="classvrv_1_1_note_1a40bd7cfa491712c99ed6d1bb22fe880f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDiatonicPitch</name></member>
+      <member refid="classvrv_1_1_object_1aff440aa5d20256ffb2adf40b11fc53eb" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDirectChild</name></member>
+      <member refid="classvrv_1_1_object_1a4479cf2a953546ff59428752c479ec31" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDocResources</name></member>
+      <member refid="classvrv_1_1_layer_element_1ae0a0dd99fec2746b5759e15252ab4b4e" prot="protected" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDotCount</name></member>
+      <member refid="classvrv_1_1_note_1a72a6d0881e4198532f4f6898e9d1b182" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingAccid</name></member>
+      <member refid="classvrv_1_1_note_1a49e70a4d4699d44ec4199f285b038301" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingAccid</name></member>
+      <member refid="classvrv_1_1_layer_element_1ac353cf7648e3213f55748671d344fdb9" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingBottom</name></member>
+      <member refid="classvrv_1_1_layer_element_1ae0892552c2a0397e84024139a0292f6f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingCueSize</name></member>
+      <member refid="classvrv_1_1_note_1a6149d49bbb5357a7c56a28c2d6b05451" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingDur</name></member>
+      <member refid="classvrv_1_1_position_interface_1a48e070408ebae29ba2e89806fe4b5ff8" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingLoc</name></member>
+      <member refid="classvrv_1_1_layer_element_1af3c196500ca219d904972a85c68b8a40" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingRadius</name></member>
+      <member refid="classvrv_1_1_facsimile_interface_1a2e3d8694d94a66c6784f844c1f883a90" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingRotate</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1a1867d1dfd86c7d0860f2ad616dda1569" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingStem</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1acc5d25d69cbd03b2f18e107c9aa40c4c" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingStem</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1adc1a6d0b12c9c93b2664ce797af5d458" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingStemDir</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1ab0e135692c3d2e7986aca564c8aa4ab2" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingStemEnd</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1a6f1751b26b5e23aeff170b744a20a09e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingStemLen</name></member>
+      <member refid="classvrv_1_1_layer_element_1a5cc66a12312b10a25f9bd0a1c4a857cd" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetDrawingStemMod</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1a9e931a9ab6bc750491ecd67a1a3bddb8" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingStemModRelY</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1a9d6a8466d3c64c1137057e7753504bf1" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingStemStart</name></member>
+      <member refid="classvrv_1_1_layer_element_1a3c646e2df61cf8191fffae6843a1ade4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingTop</name></member>
+      <member refid="classvrv_1_1_cursor_1aaefee93af4937ffbfff7a11e4be69065" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetDrawingX</name></member>
+      <member refid="classvrv_1_1_layer_element_1a0587b46544f84d658158e7e521e6ae45" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingXRel</name></member>
+      <member refid="classvrv_1_1_layer_element_1a53d35a25d75146e989b232582d752c74" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetDrawingY</name></member>
+      <member refid="classvrv_1_1_layer_element_1a4e488b36c98c828a39acab21f28cb5c9" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDrawingYRel</name></member>
+      <member refid="classvrv_1_1_note_1a5a58cd23ffb4bb37ffe155ef11231c11" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetDurationInterface</name></member>
+      <member refid="classvrv_1_1_note_1a2656616d5f74fc0cbbf6affa4a814cdc" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetDurationInterface</name></member>
+      <member refid="classvrv_1_1_duration_interface_1afd39c3b41049378b5a4baa86faf68cae" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetDurDefault</name></member>
+      <member refid="classvrv_1_1_layer_element_1a998044536a4b57baf739bfbe7db67af8" prot="protected" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetElementsInUnison</name></member>
+      <member refid="classvrv_1_1_layer_element_1a3cdd0f340d30d9a665b7ab21990c0c7d" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetFacsimileInterface</name></member>
+      <member refid="classvrv_1_1_layer_element_1ab5588ba667f86fc861a1758427801553" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetFacsimileInterface</name></member>
+      <member refid="classvrv_1_1_object_1a4f539160a7684d67d0c4e01e5dd06c36" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetFirst</name></member>
+      <member refid="classvrv_1_1_object_1abafdbeb5dae2dc78a285277fbb12006f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetFirst</name></member>
+      <member refid="classvrv_1_1_object_1a4124844dc62f3a263b5f2480a7c4a105" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetFirstAncestor</name></member>
+      <member refid="classvrv_1_1_object_1a3c2a13430f342970d3a3cf8f029ba7f0" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetFirstAncestor</name></member>
+      <member refid="classvrv_1_1_object_1a5ec4736caa32bf31168fd2ce62f21d0d" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetFirstAncestorInRange</name></member>
+      <member refid="classvrv_1_1_object_1a4e9a608419295411e4f3cf4ea7fbf19f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetFirstAncestorInRange</name></member>
+      <member refid="classvrv_1_1_object_1a10fe05578ee7f669ca3591c5a2a3a428" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetFirstChildNot</name></member>
+      <member refid="classvrv_1_1_object_1a7cde888c2a3a0af025cd706540d7333a" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetFirstChildNot</name></member>
+      <member refid="classvrv_1_1_note_1a520f34e67cd0e66c90216e942720b646" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetFlippedNotehead</name></member>
+      <member refid="classvrv_1_1_layer_element_1a343fd0fa07a4d90a89791435b9740fa9" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetGraceAlignment</name></member>
+      <member refid="classvrv_1_1_layer_element_1a1692a02f6047545c4584323081c41de4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetGraceAlignment</name></member>
+      <member refid="classvrv_1_1_facsimile_interface_1aeb56023df1f90d41fb8e5087a580a56f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetHeight</name></member>
+      <member refid="classvrv_1_1_object_1aef1d784524c2d3c60d0c0142d1a8ab53" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetID</name></member>
+      <member refid="classvrv_1_1_object_1a2bfb8ee92dbd7e805de0aae51d07d534" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetIdx</name></member>
+      <member refid="classvrv_1_1_cursor_1a7e6815ec199d43cbc166abda9d53c6df" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetInputMode</name></member>
+      <member refid="classvrv_1_1_object_1a2775c11d5b1013116cb8636e8e81f49c" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetInsertOrderFor</name></member>
+      <member refid="classvrv_1_1_object_1afeda31a18e057eaa199a5a76d2a8cf78" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetInsertOrderForIn</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a1b27be2ecd1bcd7366219fd1216a7667" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetInterfaceAlignmentDuration</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a5b4642cb99c88aee50ffb5415dfe912e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetInterfaceAlignmentMensuralDuration</name></member>
+      <member refid="classvrv_1_1_layer_element_1ae7df1fe63480083682902283dee0a812" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetIsInBeamSpan</name></member>
+      <member refid="classvrv_1_1_object_1aa7382f9b787c517cf76a6ece195f7766" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetLast</name></member>
+      <member refid="classvrv_1_1_object_1a31f762f07969b77792891fdbbc5176e4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetLast</name></member>
+      <member refid="classvrv_1_1_object_1a908d56fef5a5dd9b9808555ab4ea4daf" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetLastAncestorNot</name></member>
+      <member refid="classvrv_1_1_object_1a7a014abead37ca3e27f827a5c3ae7434" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetLastAncestorNot</name></member>
+      <member refid="classvrv_1_1_bounding_box_1af329372204a34520779e6b0d0596e8b9" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetLeftBy</name></member>
+      <member refid="classvrv_1_1_layer_element_1a53c9a4d1ab100c4c18f24b2d8563989c" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetLinkingInterface</name></member>
+      <member refid="classvrv_1_1_layer_element_1addec7dd657de5589a53659aa8d17d3c2" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetLinkingInterface</name></member>
+      <member refid="classvrv_1_1_note_1aa4c61822c22f9917dfb1324e13ad09f9" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetMensuralNoteheadGlyph</name></member>
+      <member refid="classvrv_1_1_note_1a23d4b57a1a6e98cb2805cf8cbeda59d4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetMIDIPitch</name></member>
+      <member refid="classvrv_1_1_object_1a776dc4f75ec176b5189ce8818a221bcf" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetMilestoneEnd</name></member>
+      <member refid="classvrv_1_1_object_1ab2e351247e616a3f30eaf2e3d125f054" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetNext</name></member>
+      <member refid="classvrv_1_1_object_1a0db530be167ba91d886764f066e63c2b" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetNext</name></member>
+      <member refid="classvrv_1_1_object_1a3fda6549b288e139959f2e50355792e7" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetNext</name></member>
+      <member refid="classvrv_1_1_object_1a8eaec660ff6955684042402e40ea3a99" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetNext</name></member>
+      <member refid="classvrv_1_1_linking_interface_1a4002e13d005d2e6eafb7ec2efef4a080" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetNextLink</name></member>
+      <member refid="classvrv_1_1_linking_interface_1aad381d647fdfb76e556661d255333053" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetNextLink</name></member>
+      <member refid="classvrv_1_1_linking_interface_1adf9d13147005f947251ada4a02c71257" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetNextMeasure</name></member>
+      <member refid="classvrv_1_1_linking_interface_1a70e6577025de19a0020dc4ae3f4dcdbe" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetNextMeasure</name></member>
+      <member refid="classvrv_1_1_note_1a1673470e59a8f93932a49a7c29a2245d" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetNoteGroup</name></member>
+      <member refid="classvrv_1_1_note_1a2db6866b410158abf49fa0c94dce8340" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetNoteGroupPosition</name></member>
+      <member refid="classvrv_1_1_note_1a4fba3384361effe5ffe4cb8970a78a1e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetNoteheadGlyph</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a7bc0fd1fb0dda4f72ba3f78ef6da128a" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetNoteOrChordDur</name></member>
+      <member refid="classvrv_1_1_pitch_interface_1a0707cb9f6a194c84d4e4f395d092c45f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetOctDefault</name></member>
+      <member refid="classvrv_1_1_note_1a930499b82b2d0ed4a4dbfd9d4d900b96" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetOffsetInterface</name></member>
+      <member refid="classvrv_1_1_note_1a277bf1777e064b439472b8bb9708567d" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetOffsetInterface</name></member>
+      <member refid="classvrv_1_1_object_1adff15f7c9c1e5d6ee5ccab0ca646b671" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetOffsetSpanningInterface</name></member>
+      <member refid="classvrv_1_1_object_1afbf4cd09ab5190e9880a3ac2a0e3a6bd" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetOffsetSpanningInterface</name></member>
+      <member refid="classvrv_1_1_layer_element_1a3825df92ab9215a85ec2e8fbcba6494a" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetOriginalLayerN</name></member>
+      <member refid="classvrv_1_1_layer_element_1a9fbc187f793cf5bd7c8c18661d6f2985" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetOverflowStaffAlignments</name></member>
+      <member refid="classvrv_1_1_object_1ad2f81f683e9a94713b451395ff781627" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetParent</name></member>
+      <member refid="classvrv_1_1_object_1a4e4858957b6d48a75bba2130939fe174" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetParent</name></member>
+      <member refid="classvrv_1_1_note_1a4dd530526f7cbf5f8433976479fbc3ee" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetPitchClass</name></member>
+      <member refid="classvrv_1_1_note_1ab310c26ef7aa9313660a2ad90a930c96" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetPitchInterface</name></member>
+      <member refid="classvrv_1_1_note_1a9041eca0a9cf4aeb6536a96c797a46a3" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetPitchInterface</name></member>
+      <member refid="classvrv_1_1_object_1a32a7bc21b1323f31cb9d9e68686ce345" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetPlistInterface</name></member>
+      <member refid="classvrv_1_1_object_1aa246db2175561352dd71e7d2925697bf" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetPlistInterface</name></member>
+      <member refid="classvrv_1_1_object_1a16ea9165be114a5399cd4a959c037d8b" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetPlistReferences</name></member>
+      <member refid="classvrv_1_1_cursor_1ac4df9995ac2edc6f7858079e9361acdb" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetPosition</name></member>
+      <member refid="classvrv_1_1_note_1a3641b3ece80086ac7dc6cc4324a84337" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetPositionInterface</name></member>
+      <member refid="classvrv_1_1_note_1a04d615c8dc3eb8bcdd6718897f65d6b5" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetPositionInterface</name></member>
+      <member refid="classvrv_1_1_object_1a26a7c60cdf50a4072927aa671112f1f3" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetPrevious</name></member>
+      <member refid="classvrv_1_1_object_1ad3b827c4f53d81386c192ce462f09b3e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetPrevious</name></member>
+      <member refid="classvrv_1_1_duration_interface_1ae37688db2032d291d2b673343775c8e4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetRealTimeOffsetMilliseconds</name></member>
+      <member refid="classvrv_1_1_duration_interface_1aec4ff1cc30f1f5e7729489f2ed76b12f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetRealTimeOnsetMilliseconds</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a2fe9d4e0cef41c270fe6683e5fbd8223" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetRightBy</name></member>
+      <member refid="classvrv_1_1_layer_element_1a5452b530b1549292158f3891c42dcf76" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetSameAsContentAlignmentDuration</name></member>
+      <member refid="classvrv_1_1_linking_interface_1ab531ee1a9df9e2edc5413a967fbce53f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetSameasLink</name></member>
+      <member refid="classvrv_1_1_linking_interface_1a16e98894fa7294f7d2032466dde3c2ce" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetSameasLink</name></member>
+      <member refid="classvrv_1_1_object_1a36ae3be40fa20c6255a6003e5d56133f" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetScoreDefInterface</name></member>
+      <member refid="classvrv_1_1_object_1af26b539ef3e271bc568bebff37c01a33" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetScoreDefInterface</name></member>
+      <member refid="classvrv_1_1_layer_element_1abcd8e1cf9412090b3de520f1119b7196" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetScoreDefRole</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a6f3df5bb9aea12b9b38c76c4bfbd10c1" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetScoreTimeDuration</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a42620eb9ac3e562a08433be50f536984" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetScoreTimeOffset</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a2649423abc3f8b702b421d26d521127d" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetScoreTimeOnset</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a3d40fe79a3818b6a49681e11aca1eb6f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetScoreTimeTiedDuration</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a7e55bc05f8dc9b3ff7768fe48c791d83" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetSelfBottom</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a2fb7e4b83e390c3cd436e3a73ddfa269" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetSelfLeft</name></member>
+      <member refid="classvrv_1_1_bounding_box_1aaae2c8d3d80e7203585052862288f2d5" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetSelfRight</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a2e094936f23e6b9c044ccd28a3aa0681" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetSelfTop</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a588e6d63bc9e9d149dc6fdd784886a78" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetSelfX1</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a025b101dd81de0a3802ba5ac2a86f9c5" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetSelfX2</name></member>
+      <member refid="classvrv_1_1_bounding_box_1ad958652328dd6762612727f064f56b3c" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetSelfY1</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a7ba0ddf13040f3747a7421232c9bc21d" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetSelfY2</name></member>
+      <member refid="classvrv_1_1_note_1ac6e442fe010db664b7fcd4dfd4bc45f2" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetStemDownNW</name></member>
+      <member refid="classvrv_1_1_note_1a93d3f20b63580552e78097143ce5dbe7" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetStemmedDrawingInterface</name></member>
+      <member refid="classvrv_1_1_note_1ad5a3d098ac78d4c81e33f5738a33c26f" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetStemmedDrawingInterface</name></member>
+      <member refid="classvrv_1_1_note_1ab719a0f22e132bce60f2e2dd56ef98f6" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetStemSameasNote</name></member>
+      <member refid="classvrv_1_1_note_1a952fb6619e5775a703c7f76a1b4046c0" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetStemSameasNote</name></member>
+      <member refid="classvrv_1_1_note_1a38d525195436f5a32fe144c9c1cfdfc3" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetStemSameasRole</name></member>
+      <member refid="classvrv_1_1_note_1a7e01dacdaeffa510453c93250c59b77b" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetStemUpSE</name></member>
+      <member refid="classvrv_1_1_facsimile_interface_1af4fee51649a606f38afcd97d6d3f319a" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetSurface</name></member>
+      <member refid="classvrv_1_1_facsimile_interface_1a8d74f629ae6f5d87b040f4d522017fd9" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetSurface</name></member>
+      <member refid="classvrv_1_1_facsimile_interface_1af64a523941de42e832c352d6a50124d5" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetSurfaceY</name></member>
+      <member refid="classvrv_1_1_note_1af0a2d92ac85ea6fad61325133739336a" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetTabFretString</name></member>
+      <member refid="classvrv_1_1_object_1ac2308546f247b47d6fdaaf0e90490fa5" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetTextDirInterface</name></member>
+      <member refid="classvrv_1_1_object_1a3524d9d7b5a93fed82ad1a90812cfcdd" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetTextDirInterface</name></member>
+      <member refid="classvrv_1_1_cursor_1a3f460801e5f45e93873ca9b1ec5a1fbe" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetTieMode</name></member>
+      <member refid="classvrv_1_1_object_1a738ca662cfaa09bb0122966cb29b43c6" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetTimePointInterface</name></member>
+      <member refid="classvrv_1_1_object_1af721a04d95924b4da05c2285f5b01e33" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetTimePointInterface</name></member>
+      <member refid="classvrv_1_1_object_1a2ac1817c7492a51e6bb550f3002b32de" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetTimeSpanningInterface</name></member>
+      <member refid="classvrv_1_1_object_1a93ba097fdba73b383a5aee0771e484d7" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetTimeSpanningInterface</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a9dae1c4940695c403ba67841512f94f3" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetTopBy</name></member>
+      <member refid="classvrv_1_1_note_1a475be4c24b3429a6c797c23f53608a54" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetTransPitch</name></member>
+      <member refid="classvrv_1_1_object_1a4edebc79c5a629520307e3dd5b0caed5" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetVisibilityDrawingInterface</name></member>
+      <member refid="classvrv_1_1_object_1a017bd1fd73bec2b656a1b9bb9e2a4491" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>GetVisibilityDrawingInterface</name></member>
+      <member refid="classvrv_1_1_facsimile_interface_1a980c5d6d8bc03897efdd86bdb94fd593" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetWidth</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a6f1d1de5ac01ce1fe4cf43ed16b47e11" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetX1By</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a3a9666c33d5a4a7d01f4b159c128d6c5" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetX2By</name></member>
+      <member refid="classvrv_1_1_bounding_box_1ad906e8632b28b1be81fa374ad2b5292e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetY1By</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a242e2a41a61fb347b526a08fef162cdf" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetY2By</name></member>
+      <member refid="classvrv_1_1_cursor_1a3edde978d87abea64d2337872ce17413" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetYRelPitchC</name></member>
+      <member refid="classvrv_1_1_facsimile_interface_1a3ca53c1bfe956ae1bfbb0a77f3c672b0" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetZone</name></member>
+      <member refid="classvrv_1_1_facsimile_interface_1aeb29928fb7cd1c29db2026bfb2b49a24" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>GetZone</name></member>
+      <member refid="classvrv_1_1_note_1a439ad8bb358267fa18e92f60549e03ff" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HandleLedgerLineStemCollision</name></member>
+      <member refid="classvrv_1_1_cursor_1a0255ac3db99862aecc92262738a84f4e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasAccid</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1a6f055775c7e579f3151ff7d937226412" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasAltSymbolDef</name></member>
+      <member refid="classvrv_1_1_object_1a9020ecbd4da7cb50ed8ffa686eeae8e5" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasAttClass</name></member>
+      <member refid="classvrv_1_1_object_1a07880f4ad709e37ca6b5483110905383" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasAttribute</name></member>
+      <member refid="classvrv_1_1_object_1ab49442d7fde160052a5cfafd24f4ce6f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasClosingComment</name></member>
+      <member refid="classvrv_1_1_object_1a68a0e90ae2f8262b3fae11c2484f3e13" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasComment</name></member>
+      <member refid="classvrv_1_1_cursor_1a8b0563fad8ad0f1472d028d882531bbd" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasContainer</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a6cac2a9e7c863969d8e856807936574f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasContentBB</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a3bde41712d93b9badf88b35ac1974503" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasContentHorizontalBB</name></member>
+      <member refid="classvrv_1_1_bounding_box_1abe8bb676a5c670242888d9034daa5a22" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasContentVerticalBB</name></member>
+      <member refid="classvrv_1_1_layer_element_1a88c53380f669585365356b17cbeaedb2" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>HasCrossStaff</name></member>
+      <member refid="classvrv_1_1_object_1a1f38d88b64a7f79bfea9303a16c1f556" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasDescendant</name></member>
+      <member refid="classvrv_1_1_object_1ac9dd387934b8960b47b96a0c05bb1b84" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasEditorialContent</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a1dfd7207c5f8431bcb56c88b5c469992" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasEmptyBB</name></member>
+      <member refid="classvrv_1_1_facsimile_interface_1afdb40c1c0b9e225f2de25bf1ca1aedf7" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasFacsimile</name></member>
+      <member refid="classvrv_1_1_layer_element_1af7dc9beccbdababcc7635ceeea73ad5b" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasGraceAlignment</name></member>
+      <member refid="classvrv_1_1_object_1a3eed2cd64bee454f550e6fa22995dafe" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>Hash</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a550d47c959ecccc53c488685fea3177c" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasIdenticalDurationInterface</name></member>
+      <member refid="classvrv_1_1_pitch_interface_1ab31f6dd5d225135f3b35f32ab2573d99" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasIdenticalPitchInterface</name></member>
+      <member refid="classvrv_1_1_position_interface_1a3312dbe1415b5eafb2762ffe2e612d54" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasIdenticalPositionInterface</name></member>
+      <member refid="classvrv_1_1_object_1a1639642ba9433617ec04608f2d2570bb" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasInterface</name></member>
+      <member refid="classvrv_1_1_position_interface_1a6e8bf8831df746be05f4ce177c880e96" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasLedgerLines</name></member>
+      <member refid="classvrv_1_1_linking_interface_1a634bea817c5bf3e1c4e537a9d3165a63" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasNextLink</name></member>
+      <member refid="classvrv_1_1_object_1ae0d0368a66d1c4b590b311a1a94eb717" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasNonEditorialContent</name></member>
+      <member refid="classvrv_1_1_pitch_interface_1a174da71eca8e2f2144d4b1f030148d18" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasOctDefault</name></member>
+      <member refid="classvrv_1_1_object_1a6d0ef6a4e4b7cc754029d0e76ca82519" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasPlistReferences</name></member>
+      <member refid="classvrv_1_1_cursor_1a9e90504dd6664b5a3d87dbb0f5d5b4f6" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasPosition</name></member>
+      <member refid="classvrv_1_1_linking_interface_1adf9fe3c7fa532723cd218c5258597c4e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasSameasLink</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a72744aa255a0d861577275366e711729" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasSelfBB</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a33e2d9c410be02f476ca19e0f063284c" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasSelfHorizontalBB</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a20afc38171ff613053a28a3530a66a05" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasSelfVerticalBB</name></member>
+      <member refid="classvrv_1_1_note_1a929e7011bc7c7e187ad0ae4973c80b35" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HasStemSameasNote</name></member>
+      <member refid="classvrv_1_1_note_1a68a34dc4606c694c61020104860daa78" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>HasToBeAligned</name></member>
+      <member refid="classvrv_1_1_bounding_box_1aee28c8f38335a02d395f132eac3174a2" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HorizontalContentOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a0fdfa000c449d4c9b1de755dd1efff55" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HorizontalLeftOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a7265ddc2845db5bc543200b037048a2e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HorizontalRightOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a363e14e29dcb72d6539a832921c538f9" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>HorizontalSelfOverlap</name></member>
+      <member refid="classvrv_1_1_duration_interface_1afb6d0620a189387779e19648cf05c4df" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IncreaseCMNDuration</name></member>
+      <member refid="classvrv_1_1_cursor_1abc7cc48955e49885ee99a90addd19fd8" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>InputMode</name></member>
+      <member refid="classvrv_1_1_object_1aaf1ba626f7c0d6be44373b6cfe29855f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>InsertAfter</name></member>
+      <member refid="classvrv_1_1_object_1a26dd6389f8b6ce5ff1cf9f0b779a0d14" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>InsertBefore</name></member>
+      <member refid="classvrv_1_1_object_1ac14929dac6e5b5e699d16ba7fc258d9d" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>InsertChild</name></member>
+      <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual" ambiguityscope="vrv::"><scope>vrv::Cursor</scope><name>Interface</name></member>
+      <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual" ambiguityscope="vrv::LinkingInterface::"><scope>vrv::Cursor</scope><name>Interface</name></member>
+      <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual" ambiguityscope="vrv::AltSymInterface::"><scope>vrv::Cursor</scope><name>Interface</name></member>
+      <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual" ambiguityscope="vrv::DurationInterface::"><scope>vrv::Cursor</scope><name>Interface</name></member>
+      <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual" ambiguityscope="vrv::OffsetInterface::"><scope>vrv::Cursor</scope><name>Interface</name></member>
+      <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual" ambiguityscope="vrv::PitchInterface::"><scope>vrv::Cursor</scope><name>Interface</name></member>
+      <member refid="classvrv_1_1_interface_1adaf168ce6b150aef8967391bf4f20e5f" prot="public" virt="non-virtual" ambiguityscope="vrv::PositionInterface::"><scope>vrv::Cursor</scope><name>Interface</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1ad2b05c285a481767e4444541211bef04" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>InterfacePrepareAltSym</name></member>
+      <member refid="classvrv_1_1_facsimile_interface_1a10d9e160f567f038e3259cfa4cf577e2" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>InterfacePrepareFacsimile</name></member>
+      <member refid="classvrv_1_1_linking_interface_1ad7d1a406fa2117b2f5871c1a556c3559" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>InterfacePrepareLinking</name></member>
+      <member refid="classvrv_1_1_linking_interface_1ade7b189fef7032e18fb7525b8f0c8bfe" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>InterfacePrepareStaffCurrentTimeSpanning</name></member>
+      <member refid="classvrv_1_1_facsimile_interface_1a91cab6a443ade870428a191831c1e4be" prot="public" virt="non-virtual" ambiguityscope="vrv::"><scope>vrv::Cursor</scope><name>InterfaceResetData</name></member>
+      <member refid="classvrv_1_1_linking_interface_1a0482e4a7ea764d9b54d74b8565dd34f4" prot="public" virt="non-virtual" ambiguityscope="vrv::LinkingInterface::"><scope>vrv::Cursor</scope><name>InterfaceResetData</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1ab56a5098689ccd26d3b6e3103c66a580" prot="public" virt="non-virtual" ambiguityscope="vrv::StemmedDrawingInterface::"><scope>vrv::Cursor</scope><name>InterfaceResetData</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1abe9ea486dc1348debbb673b0be83fb9f" prot="public" virt="non-virtual" ambiguityscope="vrv::AltSymInterface::"><scope>vrv::Cursor</scope><name>InterfaceResetData</name></member>
+      <member refid="classvrv_1_1_offset_interface_1acbd52b98b576dfe5c6650e0c1c14a3e8" prot="public" virt="non-virtual" ambiguityscope="vrv::OffsetInterface::"><scope>vrv::Cursor</scope><name>InterfaceResetData</name></member>
+      <member refid="classvrv_1_1_position_interface_1acb9985fed8ff285e4ba9956129bc9e22" prot="public" virt="non-virtual" ambiguityscope="vrv::PositionInterface::"><scope>vrv::Cursor</scope><name>InterfaceResetData</name></member>
+      <member refid="classvrv_1_1_position_interface_1a39ee8812feea8812612377a2c8b351aa" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>InterfaceResetHorizontalAlignment</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a29d29a9aaa350b53bcf58dc32978b7f8" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>Intersects</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a30378dff14a9058154de8efcc0d7632f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>Intersects</name></member>
+      <member refid="classvrv_1_1_bounding_box_1af366b55a8e449a12d689acd9d35ae782" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>Is</name></member>
+      <member refid="classvrv_1_1_cursor_1a0e258c486c87504c0f38afc7a7453968" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsAccidImplicit</name></member>
+      <member refid="classvrv_1_1_object_1a70b9c473e61ad09e70352ad301045ac8" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsAncestorOf</name></member>
+      <member refid="classvrv_1_1_bounding_box_1adca20d1f299f683ce31a688e44fe0d4a" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsAnyOf</name></member>
+      <member refid="classvrv_1_1_object_1af8ee73eca8e0a08ae535318c4462fad1" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsAttribute</name></member>
+      <member refid="classvrv_1_1_object_1a24ff4e053bb15d8d893c9a1a6b2f9639" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsAttribute</name></member>
+      <member refid="classvrv_1_1_cursor_1a4f7ab8fb381b99cf8e0a501e285943af" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsChordEditMode</name></member>
+      <member refid="classvrv_1_1_cursor_1abaa4d65766c45354628d1ed277105e50" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsChordMode</name></member>
+      <member refid="classvrv_1_1_note_1a8fac70447933b92e2615280b6909e351" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsChordTone</name></member>
+      <member refid="classvrv_1_1_note_1a13535f10ae41b7ec3e4f03b987f6b220" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsChordTone</name></member>
+      <member refid="classvrv_1_1_object_1aab9a49af1e67891dcfd1b929a6d64aa9" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsControlElement</name></member>
+      <member refid="classvrv_1_1_object_1ae51c8df30ff296754c7bc3cff998e10b" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsControlElement</name></member>
+      <member refid="classvrv_1_1_cursor_1a0c8566efc3a1af5e358d06694162ccc6" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>IsCursor</name></member>
+      <member refid="classvrv_1_1_object_1a46776dd312ff3631580f9e0ff293d52e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsEditorialElement</name></member>
+      <member refid="classvrv_1_1_object_1a34eceed663f82de1fca7e7297eb983ec" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsEditorialElement</name></member>
+      <member refid="classvrv_1_1_note_1a8ed755dba1d936d881bb4d3267db6fd9" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsEnharmonicWith</name></member>
+      <member refid="classvrv_1_1_object_1a76f4663d1b09c5fe2b0c771eeb3f7d0e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsExpansion</name></member>
+      <member refid="classvrv_1_1_object_1a07dfe3de52f16cff12eefabe11c6cd96" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsExpansion</name></member>
+      <member refid="classvrv_1_1_duration_interface_1ad14ac28eed0c0fbc93bf4b104abb1c2e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsFirstInBeam</name></member>
+      <member refid="classvrv_1_1_object_1a3b131f39c868a8a1e9b768bdc0eae811" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsFloatingObject</name></member>
+      <member refid="classvrv_1_1_layer_element_1aaa6b5701f29f87fa028d448a7f54409f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsGraceNote</name></member>
+      <member refid="classvrv_1_1_layer_element_1a0a488dfa6fbdb4f93ec9b1ca95850010" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsInBeam</name></member>
+      <member refid="classvrv_1_1_layer_element_1a6d695a92219be680737010275c9cd282" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsInLigature</name></member>
+      <member refid="classvrv_1_1_facsimile_interface_1abdcdd8ff1cefaa17fab33ee7c78a2ec2" prot="public" virt="virtual" ambiguityscope="vrv::"><scope>vrv::Cursor</scope><name>IsInterface</name></member>
+      <member refid="classvrv_1_1_linking_interface_1ad1a3839eaa143c325b741151e7f9b084" prot="public" virt="virtual" ambiguityscope="vrv::LinkingInterface::"><scope>vrv::Cursor</scope><name>IsInterface</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1a9fd4b58fba2208cc8bd966ac8185a619" prot="public" virt="virtual" ambiguityscope="vrv::AltSymInterface::"><scope>vrv::Cursor</scope><name>IsInterface</name></member>
+      <member refid="classvrv_1_1_duration_interface_1aa95bb6fba812c2b05620c3b862e0f6e5" prot="public" virt="virtual" ambiguityscope="vrv::DurationInterface::"><scope>vrv::Cursor</scope><name>IsInterface</name></member>
+      <member refid="classvrv_1_1_offset_interface_1a4b4c0f588d145af69f01696d79656cbf" prot="public" virt="virtual" ambiguityscope="vrv::OffsetInterface::"><scope>vrv::Cursor</scope><name>IsInterface</name></member>
+      <member refid="classvrv_1_1_pitch_interface_1ad5eb2bfb6682e72699fe4fb140a47350" prot="public" virt="virtual" ambiguityscope="vrv::PitchInterface::"><scope>vrv::Cursor</scope><name>IsInterface</name></member>
+      <member refid="classvrv_1_1_position_interface_1aca64be02a7dd6b30f996cf4151858a58" prot="public" virt="virtual" ambiguityscope="vrv::PositionInterface::"><scope>vrv::Cursor</scope><name>IsInterface</name></member>
+      <member refid="classvrv_1_1_duration_interface_1ab7a23457945d43056b01fde4cc1d8b46" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsLastInBeam</name></member>
+      <member refid="classvrv_1_1_object_1a311186b3525f994471394fcc38bbcda8" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsLayerElement</name></member>
+      <member refid="classvrv_1_1_object_1abe1da75cb49a9c2accca3482779a55a1" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsLayerElement</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a66a8195b6236d862a2234af1fb5256c1" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsMensuralDur</name></member>
+      <member refid="classvrv_1_1_object_1a8fed81d7637364dd582fbea10ce3e636" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsMilestoneElement</name></member>
+      <member refid="classvrv_1_1_object_1a4eec6780edc930e49d9874c1036735a4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsModified</name></member>
+      <member refid="classvrv_1_1_note_1a11af0928f51d09ad2e6ee9e0597f5237" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsNoteGroupExtreme</name></member>
+      <member refid="classvrv_1_1_object_1a6fe6d0adbd0341a514fc3645039559fd" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsPageElement</name></member>
+      <member refid="classvrv_1_1_object_1a80f120643f6620773decf1a06bf4130d" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsPageElement</name></member>
+      <member refid="classvrv_1_1_object_1af8dd22cf22d58a6c606591b9fe14597d" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsPreOrdered</name></member>
+      <member refid="classvrv_1_1_object_1ad507cfd401ea330cca65a4891b90da80" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsReferenceObject</name></member>
+      <member refid="classvrv_1_1_layer_element_1a96557dae7229251dbdadfeb15f0d8b91" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>IsRelativeToStaff</name></member>
+      <member refid="classvrv_1_1_cursor_1ab827b37f5b09f8a5c56a3dd7390c35c3" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsRestMode</name></member>
+      <member refid="classvrv_1_1_object_1a5b19179d87ef32147c3d513fa735c07f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsRunningElement</name></member>
+      <member refid="classvrv_1_1_object_1a5e63f44a32ddeb55745cc2fa27999c42" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsRunningElement</name></member>
+      <member refid="classvrv_1_1_layer_element_1a76c5dc2122f41da2f352a8d585b382c8" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>IsScoreDefElement</name></member>
+      <member refid="classvrv_1_1_object_1aa75980c6a4fafe28d730240ee11341f8" prot="public" virt="non-virtual" ambiguityscope="vrv::Object::"><scope>vrv::Cursor</scope><name>IsScoreDefElement</name></member>
+      <member refid="classvrv_1_1_note_1a529546e5bbc3107208540b9e2eff082b" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>IsSupportedChild</name></member>
+      <member refid="classvrv_1_1_object_1a334a7956ff32ade0704f4afdd74f37a6" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsSystemElement</name></member>
+      <member refid="classvrv_1_1_object_1aeb75be5c8a4fba0d1b6d33c1bd18a372" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsSystemElement</name></member>
+      <member refid="classvrv_1_1_note_1a33d2ecc1b1027f9f6c4a978b6f268073" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsTabGrpNote</name></member>
+      <member refid="classvrv_1_1_note_1ac26e2929345acac8005ff5c3c7117069" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsTabGrpNote</name></member>
+      <member refid="classvrv_1_1_object_1a958bf53eb4117b0438aa5ddb9264c1c8" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsTextElement</name></member>
+      <member refid="classvrv_1_1_object_1a16d928dbd6cacc910a35934385112f14" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsTextElement</name></member>
+      <member refid="classvrv_1_1_cursor_1a4e081cb714945a0356770d16a71310c9" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsTieMode</name></member>
+      <member refid="classvrv_1_1_note_1a5d75468877187a156178c642140853a3" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsUnisonWith</name></member>
+      <member refid="classvrv_1_1_note_1a4bbaa20a8cbdc5405f513135cc6117f6" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>IsVisible</name></member>
+      <member refid="classvrv_1_1_layer_element_1a6294e2662280f0cf6f48bbf9855cf28c" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>LayerElement</name></member>
+      <member refid="classvrv_1_1_layer_element_1a26721461ae7b348cc9893106fffc7b01" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>LayerElement</name></member>
+      <member refid="classvrv_1_1_linking_interface_1ab0344fae147aef801bfca24e6dd1f016" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>LinkingInterface</name></member>
+      <member refid="classvrv_1_1_object_1aab9ecbebd597a128912b7dd43a410b90" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>LogDebugTree</name></member>
+      <member refid="classvrv_1_1_object_1af9632e5d159e4dcdf0f91e127be0fb4a" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>LogDebugTreeMsg</name></member>
+      <member refid="classvrv_1_1_cursor_1a2a4753f4c7a73d222204740de73e16d3" prot="private" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_accid</name></member>
+      <member refid="classvrv_1_1_layer_element_1aad5569b5dbc43a1fcfba069c58e18ada" prot="protected" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_alignment</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a4961ebaf8f99abe31ee894345cd84a16" prot="protected" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_cachedDrawingX</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a548baf7b854ef877313302670da5d0b8" prot="protected" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_cachedDrawingY</name></member>
+      <member refid="classvrv_1_1_layer_element_1a29f3a9d4472de2ece86abce25c87139c" prot="protected" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_cachedXRel</name></member>
+      <member refid="classvrv_1_1_layer_element_1ac4b9a899709b36b64228c263e4990d13" prot="protected" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_cachedYRel</name></member>
+      <member refid="classvrv_1_1_cursor_1a2d494c477866994b9083ac7133f02514" prot="private" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_chordMode</name></member>
+      <member refid="classvrv_1_1_cursor_1a37b2bd17d7c135471691cf51baed2e67" prot="private" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_container</name></member>
+      <member refid="classvrv_1_1_layer_element_1a93464f5da77d7acbf8565d6a70b47e91" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_crossLayer</name></member>
+      <member refid="classvrv_1_1_layer_element_1af61467813ceb6c74c05b55484007c48b" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_crossStaff</name></member>
+      <member refid="classvrv_1_1_layer_element_1a98868bde8bc6d40dbfc9b0fb5632354f" prot="protected" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_drawingCueSize</name></member>
+      <member refid="classvrv_1_1_layer_element_1a8826af23d498e796f12c455bb425d487" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_drawingFacsX</name></member>
+      <member refid="classvrv_1_1_layer_element_1a3cf45495eb876c8f1a8b28f404f048b7" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_drawingFacsY</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1ab55442afdb100573dc6b84d7563edf00" prot="protected" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_drawingStem</name></member>
+      <member refid="classvrv_1_1_layer_element_1a592cebc1769e23ff79403a675a923c65" prot="protected" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_drawingXRel</name></member>
+      <member refid="classvrv_1_1_layer_element_1a33f69b421d5fbe77c6e89e2da3e46b3b" prot="protected" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_drawingYRel</name></member>
+      <member refid="classvrv_1_1_layer_element_1a6ee0bb4018d8ba684437586512ff4136" prot="protected" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_graceAlignment</name></member>
+      <member refid="classvrv_1_1_cursor_1a52c0369655e6740cf5063e7305f2bcdb" prot="private" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_inputMode</name></member>
+      <member refid="classvrv_1_1_cursor_1a3f1ac2678eb1a7632e5eb655926b6f75" prot="private" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_isAccidImplicit</name></member>
+      <member refid="classvrv_1_1_cursor_1ad201116981db6fb88c91d81186fc80e2" prot="private" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_position</name></member>
+      <member refid="classvrv_1_1_cursor_1a3afddb1c613dd9bbb7d747d8f9818c00" prot="private" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_restMode</name></member>
+      <member refid="classvrv_1_1_cursor_1adde24d5797a7223b246a93081073026f" prot="private" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_tieMode</name></member>
+      <member refid="classvrv_1_1_object_1a74ae0995caefb72a71445ba43fce0652" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_unsupported</name></member>
+      <member refid="classvrv_1_1_cursor_1a9d20b7863bdd58085875a840566fb02a" prot="private" virt="non-virtual"><scope>vrv::Cursor</scope><name>m_yRelPitchC</name></member>
+      <member refid="classvrv_1_1_object_1a30996d1e8460f2110900b490425c16ec" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>Modify</name></member>
+      <member refid="classvrv_1_1_object_1aa846e8099e10d6cf427e8255e4a62dd4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>MoveChildrenFrom</name></member>
+      <member refid="classvrv_1_1_object_1ac7063ea155c08f4e39e5c59b735f1d9e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>MoveItselfTo</name></member>
+      <member refid="classvrv_1_1_cursor_1a860cd22e6a97dea7f1f1b6eb8c534a77aed4393aeb3adf276475b035f6c8593ed" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>NEW</name></member>
+      <member refid="classvrv_1_1_note_1aec35e5f742e883b3c8bbd7d4a7ecc5c2" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>Note</name></member>
+      <member refid="classvrv_1_1_object_1ae10fe4f6d8a8b450b680f10cfe39a9cc" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>Object</name></member>
+      <member refid="classvrv_1_1_object_1a98c0701bde5924c064607250d567883a" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>Object</name></member>
+      <member refid="classvrv_1_1_object_1a8be4ecf7908559751e728551718a8bfc" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>Object</name></member>
+      <member refid="classvrv_1_1_offset_interface_1ad0f56743196c4c92bcbc040c5a0b95e4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>OffsetInterface</name></member>
+      <member refid="classvrv_1_1_cursor_1a5dcf6c33119fddfe4a7e3f58ac0a2e25" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>OnSet</name></member>
+      <member refid="classvrv_1_1_object_1a6ad51ecc97faf69c8fa8432a780aed44" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>operator=</name></member>
+      <member refid="classvrv_1_1_cursor_1abc7cc48955e49885ee99a90addd19fd8a8aaaba1e6696b03428e9d416e09ef1fd" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>PITCH_FIRST</name></member>
+      <member refid="classvrv_1_1_pitch_interface_1a3f1089bfeddc84c7b3c31e3a239b4a76" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>PitchDifferenceTo</name></member>
+      <member refid="classvrv_1_1_pitch_interface_1a4e00c45beb10eba31d98b5325151d8f5" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>PitchInterface</name></member>
+      <member refid="classvrv_1_1_note_1ab9dc5dff1a2e11c5e182dd72208c587d" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>PnameToPclass</name></member>
+      <member refid="classvrv_1_1_position_interface_1abda3bfd8e411f1e32cf2d3a746772668" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>PositionInterface</name></member>
+      <member refid="classvrv_1_1_object_1ab1b4dbc50eb6f628feea75d202a22e18" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>Process</name></member>
+      <member refid="classvrv_1_1_object_1ac83fb39df04943815cd3a275d2924e16" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>Process</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a74c28d831f2e14aec44a848a961f8b42" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>RectBottomOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a414f972e6f1e4231d61acdd7329eb414" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>RectLeftOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a4802cf9706608398b887afd2ad3e1188" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>RectRightOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1ae7003f6708e916b7640d4dda5a8a18ef" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>RectTopOverlap</name></member>
+      <member refid="classvrv_1_1_object_1aa5bcd61a747583c6ed2b97039129df68" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>RegisterAttClass</name></member>
+      <member refid="classvrv_1_1_object_1a172109ee605efdf2c2b23440adef333c" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>RegisterInterface</name></member>
+      <member refid="classvrv_1_1_interface_1a57c9a4f18b81a07ef0d14dc040f84257" prot="public" virt="non-virtual" ambiguityscope="vrv::"><scope>vrv::Cursor</scope><name>RegisterInterfaceAttClass</name></member>
+      <member refid="classvrv_1_1_interface_1a57c9a4f18b81a07ef0d14dc040f84257" prot="public" virt="non-virtual" ambiguityscope="vrv::LinkingInterface::"><scope>vrv::Cursor</scope><name>RegisterInterfaceAttClass</name></member>
+      <member refid="classvrv_1_1_interface_1a57c9a4f18b81a07ef0d14dc040f84257" prot="public" virt="non-virtual" ambiguityscope="vrv::AltSymInterface::"><scope>vrv::Cursor</scope><name>RegisterInterfaceAttClass</name></member>
+      <member refid="classvrv_1_1_interface_1a57c9a4f18b81a07ef0d14dc040f84257" prot="public" virt="non-virtual" ambiguityscope="vrv::DurationInterface::"><scope>vrv::Cursor</scope><name>RegisterInterfaceAttClass</name></member>
+      <member refid="classvrv_1_1_interface_1a57c9a4f18b81a07ef0d14dc040f84257" prot="public" virt="non-virtual" ambiguityscope="vrv::OffsetInterface::"><scope>vrv::Cursor</scope><name>RegisterInterfaceAttClass</name></member>
+      <member refid="classvrv_1_1_interface_1a57c9a4f18b81a07ef0d14dc040f84257" prot="public" virt="non-virtual" ambiguityscope="vrv::PitchInterface::"><scope>vrv::Cursor</scope><name>RegisterInterfaceAttClass</name></member>
+      <member refid="classvrv_1_1_interface_1a57c9a4f18b81a07ef0d14dc040f84257" prot="public" virt="non-virtual" ambiguityscope="vrv::PositionInterface::"><scope>vrv::Cursor</scope><name>RegisterInterfaceAttClass</name></member>
+      <member refid="classvrv_1_1_object_1a48ea7a78dfbdf0195235b56679924c76" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>Relinquish</name></member>
+      <member refid="classvrv_1_1_object_1a84d8c0e7b117807cbecca85ca7695ce8" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ReorderByXPos</name></member>
+      <member refid="classvrv_1_1_object_1aba32b01b87b8f31455e68c77a3d8ee40" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ReplaceChild</name></member>
+      <member refid="classvrv_1_1_object_1a0501bfc3dc91f5300df99d4037374085" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ReplaceWithCopyOf</name></member>
+      <member refid="classvrv_1_1_cursor_1a0d26d4525f6d674dada915699b8394c1" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>Reset</name></member>
+      <member refid="classvrv_1_1_layer_element_1ab75f3185eb89bb129f9859a6af09ec18" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ResetAlignment</name></member>
+      <member refid="classvrv_1_1_bounding_box_1ae79b9324168608f36cb71c8ca4174220" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>ResetBoundingBox</name></member>
+      <member refid="classvrv_1_1_object_1a859aecc00ab75fc7ed2f2780bc0a6a51" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>ResetCachedDrawingX</name></member>
+      <member refid="classvrv_1_1_object_1ac5b28a8625980d057d6cad83dbd52e26" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>ResetCachedDrawingY</name></member>
+      <member refid="classvrv_1_1_cursor_1a7079e08d1248da56ccf5ff4494555376" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ResetCursorAlignment</name></member>
+      <member refid="classvrv_1_1_layer_element_1a18cd20e919e2d2d2ef17a47d20231518" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ResetGraceAlignment</name></member>
+      <member refid="classvrv_1_1_object_1a6a40859719b200dae8d65ee9d597bccd" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ResetID</name></member>
+      <member refid="classvrv_1_1_object_1a5d22ebda01e0b254c13d558f5ffdb098" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ResetParent</name></member>
+      <member refid="classvrv_1_1_object_1af13a62dfc05048448a52ee441f45a5a6" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ResetPlistReferences</name></member>
+      <member refid="classvrv_1_1_object_1a19cb63d229f04226f8a941a332edd03e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>RotateChildren</name></member>
+      <member refid="classvrv_1_1_object_1a88de04c8c4a5d8fd00b0f786fa13bdb9" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SaveObject</name></member>
+      <member refid="classvrv_1_1_object_1aa8fa10c3b5d07eec119fe0d73aa9b6ab" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SeedID</name></member>
+      <member refid="classvrv_1_1_cursor_1a70fe9074e57f33e7c9afc138d0abdff9" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetAccid</name></member>
+      <member refid="classvrv_1_1_cursor_1a6ba255a7b2593f5be42e185c854ee752" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetAccidImplicit</name></member>
+      <member refid="classvrv_1_1_cursor_1a2d6a10c5b24831c134193bc68b07b327" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetAccidValue</name></member>
+      <member refid="classvrv_1_1_layer_element_1aeb0a15c42843137aee6b5df7709f84ff" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetAlignment</name></member>
+      <member refid="classvrv_1_1_layer_element_1a3b8755f52f0d0a2758a7bf66bab388b0" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetAlignmentLayerN</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1aec18270c1ba43d7ab203eda65b26b3f4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetAltSymbolDef</name></member>
+      <member refid="classvrv_1_1_object_1a9bc335e3bc5405f5dbaae757b5629996" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetAsReferenceObject</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a7eccd9ca1e458dccab9c6b9fb7a24ec4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetBoundingBoxGlyph</name></member>
+      <member refid="classvrv_1_1_cursor_1ac95b8c61b5924248c91d35909f0842c8" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetChordMode</name></member>
+      <member refid="classvrv_1_1_object_1af0db1dd88b7d2f6c9068934312ce86c8" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetClosingComment</name></member>
+      <member refid="classvrv_1_1_object_1a3b47aa3445a48e681db41607cedcd4b4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetComment</name></member>
+      <member refid="classvrv_1_1_cursor_1a0aa5498e1cf878295c987c7254e6a375" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetContainer</name></member>
+      <member refid="classvrv_1_1_cursor_1a0249e7944f6993806fc21a3e3c7345f4" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetCursorAlignment</name></member>
+      <member refid="classvrv_1_1_layer_element_1aa7bb2834cef3aae358007de4bd433427" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetDrawingCueSize</name></member>
+      <member refid="classvrv_1_1_position_interface_1a3bdb6437c6e8739beea47e4bb978493f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetDrawingLoc</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1a9ca145a07c1cfbaebe601f1308c591e8" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetDrawingStem</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1aa6ca072d56e6db65adf4ea7ef1600fa5" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetDrawingStemDir</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1ad3647b086385d8f6586a6d140c1198c1" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetDrawingStemLen</name></member>
+      <member refid="classvrv_1_1_layer_element_1af14973423c50d4a301799acafee56877" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>SetDrawingXRel</name></member>
+      <member refid="classvrv_1_1_layer_element_1adb18b12c6bfd3cc96d9b310a89b9e9bf" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>SetDrawingYRel</name></member>
+      <member refid="classvrv_1_1_duration_interface_1abacec4efd7744748f4c0d40a87fd2784" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetDurDefault</name></member>
+      <member refid="classvrv_1_1_bounding_box_1ade8f7ad2283b156a2c7934c4055bd8bf" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetEmptyBB</name></member>
+      <member refid="classvrv_1_1_note_1a9bd4ecffc2b79ff14134ca3c4da8ebbe" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetFlippedNotehead</name></member>
+      <member refid="classvrv_1_1_layer_element_1a5400b35645e87d29779e5ad10648100a" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetGraceAlignment</name></member>
+      <member refid="classvrv_1_1_object_1aa34da3a7092c0b6753c91459b52648b9" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetID</name></member>
+      <member refid="classvrv_1_1_linking_interface_1a26bd7ff2e4a7048c03aeb56bb8f598d8" prot="protected" virt="non-virtual" ambiguityscope="vrv::"><scope>vrv::Cursor</scope><name>SetIDStr</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1a566a6b1368de80402f164f47ecd3f2b2" prot="protected" virt="non-virtual" ambiguityscope="vrv::AltSymInterface::"><scope>vrv::Cursor</scope><name>SetIDStr</name></member>
+      <member refid="classvrv_1_1_cursor_1ac4e2e5b2ab236374215d589426f3f562" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetInputMode</name></member>
+      <member refid="classvrv_1_1_layer_element_1abde360546ca5471c7e32e57ab228b18b" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetIsInBeamSpan</name></member>
+      <member refid="classvrv_1_1_linking_interface_1aa954c8b863b3372c10ec07e7c8a48087" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetNextLink</name></member>
+      <member refid="classvrv_1_1_note_1a3ccada7adf732c747e37fad3d206eb70" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetNoteGroup</name></member>
+      <member refid="classvrv_1_1_pitch_interface_1a5b20f4557b98d2e312b2e605cd05b42a" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetOctDefault</name></member>
+      <member refid="classvrv_1_1_object_1a9f30aa6a8185b260943003a08980d376" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetParent</name></member>
+      <member refid="classvrv_1_1_cursor_1ae0737742ee20c16b05ac783b5ee16373" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetPosition</name></member>
+      <member refid="classvrv_1_1_duration_interface_1abfc9967983eae285202ba238c7b6e018" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetRealTimeOffsetSeconds</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a328faf68d235b814c5a8226d2575368b" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetRealTimeOnsetSeconds</name></member>
+      <member refid="classvrv_1_1_cursor_1a13e78397a9e4b1e3a3a73d52d3d5eafe" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetRestMode</name></member>
+      <member refid="classvrv_1_1_linking_interface_1a3670fb648c0d3c6958544c5cfc6f6868" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetSameasLink</name></member>
+      <member refid="classvrv_1_1_layer_element_1a4595a64d4bc651cc59928d15bc8c0ff2" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetScoreDefRole</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a0fe0e24b3103558c804c70db5107283f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetScoreTimeOffset</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a279fddb621315efe35003c60ab2c359f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetScoreTimeOnset</name></member>
+      <member refid="classvrv_1_1_duration_interface_1aa5bff51ebd749d02e79829b0a517a2cb" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetScoreTimeTiedDuration</name></member>
+      <member refid="classvrv_1_1_note_1a5800384e2a83f7946c0226b8743fddd5" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetStemSameasNote</name></member>
+      <member refid="classvrv_1_1_note_1a53bdcb022e7e76cccff5feba98640328" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetStemSameasRole</name></member>
+      <member refid="classvrv_1_1_cursor_1aab4b41e85846e63a465efc263fde906a" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetTieMode</name></member>
+      <member refid="classvrv_1_1_cursor_1a48150a2d7efa412a70ee97289224e434" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SetYRelPitchC</name></member>
+      <member refid="classvrv_1_1_bounding_box_1ab4d1764142c6881678dbfcaee124e38f" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SolveCubicPolynomial</name></member>
+      <member refid="classvrv_1_1_object_1a6c529b9574392b6c2baeaf8470e2a989" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>sortByUlx</name></member>
+      <member refid="classvrv_1_1_object_1aa8caf0942b1ff1c02f6f8e879397ca21" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SortChildren</name></member>
+      <member refid="classvrv_1_1_object_1ac97807a0dabfdf0d1d483f7f3e9427f9" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>StableSort</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1a4783f03287943c8c371446d5a833f378" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>StemmedDrawingInterface</name></member>
+      <member refid="classvrv_1_1_layer_element_1afa714fc21d6337b9f3144741dd95efef" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>StemModToGlyph</name></member>
+      <member refid="classvrv_1_1_object_1a3c91cd86fa79d2b64ae677f2b2a64e9d" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>SwapID</name></member>
+      <member refid="classvrv_1_1_layer_element_1acb9de9e04da28faefe842c4d56e2c1a0" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ThisOrSameasLink</name></member>
+      <member refid="classvrv_1_1_layer_element_1a95fc27772641b7aa65665ed69369bd9a" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>ThisOrSameasLink</name></member>
+      <member refid="classvrv_1_1_cursor_1a9b67ec45c1b2c153801c2e818aef3537ac4b378f29f822eaf5c7bd4b8658f1a3e" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>TIE</name></member>
+      <member refid="classvrv_1_1_cursor_1a9b67ec45c1b2c153801c2e818aef3537a30ffcab8cd0a147c2bf8e706881b938d" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>TIE_NONE</name></member>
+      <member refid="classvrv_1_1_cursor_1a9b67ec45c1b2c153801c2e818aef3537" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>TieMode</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a8cc083afb0d6f3a68d60fae9569645b8" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>UpdateContentBBoxX</name></member>
+      <member refid="classvrv_1_1_bounding_box_1af90ec4f1a3393d9c89473f5a2b146b5b" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>UpdateContentBBoxY</name></member>
+      <member refid="classvrv_1_1_note_1afa43708acf2f9ca9543997e89e4aac20" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>UpdateFromTransPitch</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a5b5db30b70a0c954d37ae58e523dbead" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>UpdateSelfBBoxX</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a029f007d1150f88d906b318b17ecdccc" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>UpdateSelfBBoxY</name></member>
+      <member refid="classvrv_1_1_bounding_box_1aeff55f50ac7cae031dfa289d422b77c0" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>VerticalBottomOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1acdb36f4007fc88d79a81eed3b440c536" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>VerticalContentOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1ab9bbe1447c1e512c9154825086f34aef" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>VerticalSelfOverlap</name></member>
+      <member refid="classvrv_1_1_bounding_box_1aa4dda490e649a5c4817ef99853e0a3da" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>VerticalTopOverlap</name></member>
+      <member refid="classvrv_1_1_cursor_1a2f20f0076c5486e3bce58c447e073451" prot="public" virt="non-virtual"><scope>vrv::Cursor</scope><name>Veto</name></member>
+      <member refid="classvrv_1_1_alt_sym_interface_1afa70bdc6fa3bbd3eb7721746b7744a8e" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>~AltSymInterface</name></member>
+      <member refid="classvrv_1_1_bounding_box_1a9f87f4407c2c8d88ab5e4eacfe1ac1f0" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>~BoundingBox</name></member>
+      <member refid="classvrv_1_1_cursor_1aef475ff437a77c9b2354db9039b6e600" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>~Cursor</name></member>
+      <member refid="classvrv_1_1_duration_interface_1a2010593a7681cd4a3e34c3a9098ed9aa" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>~DurationInterface</name></member>
+      <member refid="classvrv_1_1_facsimile_interface_1a7535d1053dc0072322f448fc9a2aa1b5" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>~FacsimileInterface</name></member>
+      <member refid="classvrv_1_1_interface_1a1fbabd3b506190dc2f1b4584a49a85ea" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>~Interface</name></member>
+      <member refid="classvrv_1_1_layer_element_1a7bd87c91c7e394f0299a6b9a3b6d6d9a" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>~LayerElement</name></member>
+      <member refid="classvrv_1_1_linking_interface_1a228d75ecb1fef240f421b1fad7c45a64" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>~LinkingInterface</name></member>
+      <member refid="classvrv_1_1_note_1a63d285601a42d945b7481cb40d2dfa6b" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>~Note</name></member>
+      <member refid="classvrv_1_1_object_1a350424e9cf31d3b7d1bb5f5754944401" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>~Object</name></member>
+      <member refid="classvrv_1_1_offset_interface_1a159a49862af6c4328ef9b4006bbfd0ff" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>~OffsetInterface</name></member>
+      <member refid="classvrv_1_1_pitch_interface_1aab83493ea7752c45e398ebfcea706928" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>~PitchInterface</name></member>
+      <member refid="classvrv_1_1_position_interface_1a70c7d8744d6a775a95345420e9800361" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>~PositionInterface</name></member>
+      <member refid="classvrv_1_1_stemmed_drawing_interface_1a846549fb2b39c08115223645a8cf1a6f" prot="public" virt="virtual"><scope>vrv::Cursor</scope><name>~StemmedDrawingInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

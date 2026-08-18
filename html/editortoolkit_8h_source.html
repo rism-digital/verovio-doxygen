@@ -108,46 +108,71 @@ $(document).ready(function(){initNavTree('editortoolkit_8h_source.html',''); ini
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>vrv {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//--------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// EditorToolkit</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span>Cursor;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//--------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classvrv_1_1_editor_toolkit.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_editor_toolkit.html">EditorToolkit</a> {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classvrv_1_1_editor_toolkit.html">EditorToolkit</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="code" href="classvrv_1_1_view.html">View</a> *view)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        m_doc = doc;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        m_view = view;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        m_editInfo.reset();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_editor_toolkit.html">EditorToolkit</a>() {}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// EditorToolkit</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//--------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classvrv_1_1_editor_toolkit.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_editor_toolkit.html">EditorToolkit</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classvrv_1_1_editor_toolkit.html">EditorToolkit</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <a class="code" href="classvrv_1_1_view.html">View</a> *view)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        m_doc = doc;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        m_view = view;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        m_editStatus.reset();</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classvrv_1_1_editor_toolkit.html#a4072ba0fc25bf93cf164daa8b0772f2f">   41</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_editor_toolkit.html#a4072ba0fc25bf93cf164daa8b0772f2f">ParseEditorAction</a>(<span class="keyword">const</span> std::string &amp;json_editorAction) = 0;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classvrv_1_1_editor_toolkit.html#a1be064ecb6ffea1b27712648a19e1312">   45</a></span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="classvrv_1_1_editor_toolkit.html#a1be064ecb6ffea1b27712648a19e1312">EditInfo</a>() { <span class="keywordflow">return</span> m_editInfo.json(); }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        m_selectionId = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        m_selectionClassId = UNSPECIFIED;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        m_selectionSecondaryId = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        m_cursor = NULL;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classvrv_1_1_editor_toolkit.html#a23a46e854711b755deffb6856888ec56">m_options</a> = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_editor_toolkit.html">EditorToolkit</a>() {}</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#ifndef NO_EDIT_SUPPORT</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">bool</span> AppendChild(std::string &amp;elementId, <span class="keyword">const</span> std::string &amp;elementName, <span class="keywordtype">bool</span> unique);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">bool</span> InsertBefore(std::string &amp;elementId, <span class="keyword">const</span> std::string &amp;elementName);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> InsertAfter(std::string &amp;elementId, <span class="keyword">const</span> std::string &amp;elementName);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *GetElement(<span class="keyword">const</span> std::string &amp;elementId);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *PrepareInsertion(<a class="code" href="classvrv_1_1_object.html">Object</a> *parent, <span class="keyword">const</span> std::string &amp;elementName);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *GetChainedElement(std::string &amp;elementId);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::string m_chainedId;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classvrv_1_1_doc.html">Doc</a> *m_doc;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classvrv_1_1_view.html">View</a> *m_view;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    jsonxx::Object m_editInfo;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classvrv_1_1_editor_toolkit.html#a4072ba0fc25bf93cf164daa8b0772f2f">   50</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_editor_toolkit.html#a4072ba0fc25bf93cf164daa8b0772f2f">ParseEditorAction</a>(<span class="keyword">const</span> std::string &amp;json_editorAction) = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classvrv_1_1_editor_toolkit.html#ad2636f4c7e3bdac1ff16d473c01f8af2">   54</a></span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="classvrv_1_1_editor_toolkit.html#ad2636f4c7e3bdac1ff16d473c01f8af2">EditStatus</a>() { <span class="keywordflow">return</span> m_editStatus.json(); }</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classvrv_1_1_editor_toolkit.html#a2f0eeaf4c5360e9a22af1dd90219d901">   58</a></span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="classvrv_1_1_editor_toolkit.html#a2f0eeaf4c5360e9a22af1dd90219d901">EditResponse</a>() { <span class="keywordflow">return</span> m_editResponse.json(); }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classvrv_1_1_editor_toolkit.html#aea7f982eda641f2d108a51f235509ec1">   63</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_editor_toolkit.html#aea7f982eda641f2d108a51f235509ec1">OptionsChanged</a>() { <a class="code" href="classvrv_1_1_editor_toolkit.html#a23a46e854711b755deffb6856888ec56">m_options</a>++; }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#ifndef NO_EDIT_SUPPORT</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> ResetSelect();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> AppendChild(std::string &amp;elementId, <span class="keyword">const</span> std::string &amp;elementName, <span class="keywordtype">bool</span> unique);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> InsertBefore(std::string &amp;elementId, <span class="keyword">const</span> std::string &amp;elementName);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span> InsertAfter(std::string &amp;elementId, <span class="keyword">const</span> std::string &amp;elementName);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *GetElement(<span class="keyword">const</span> std::string &amp;elementId);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *PrepareInsertion(<a class="code" href="classvrv_1_1_object.html">Object</a> *parent, <span class="keyword">const</span> std::string &amp;elementName);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *ResolveElement(std::string &amp;elementId, <span class="keywordtype">bool</span> chain = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">bool</span> InsertMode()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_cursor); }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    std::string m_chainedId;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    std::string m_selectionId;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    ClassId m_selectionClassId;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    std::string m_selectionSecondaryId;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    Cursor *m_cursor;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    Doc *m_doc;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    View *m_view;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    jsonxx::Object m_editStatus;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    jsonxx::Object m_editResponse;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classvrv_1_1_editor_toolkit.html#a23a46e854711b755deffb6856888ec56">   90</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvrv_1_1_editor_toolkit.html#a23a46e854711b755deffb6856888ec56">m_options</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:41</div></div>
-<div class="ttc" id="aclassvrv_1_1_editor_toolkit_html"><div class="ttname"><a href="classvrv_1_1_editor_toolkit.html">vrv::EditorToolkit</a></div><div class="ttdef"><b>Definition:</b> editortoolkit.h:28</div></div>
-<div class="ttc" id="aclassvrv_1_1_editor_toolkit_html_a1be064ecb6ffea1b27712648a19e1312"><div class="ttname"><a href="classvrv_1_1_editor_toolkit.html#a1be064ecb6ffea1b27712648a19e1312">vrv::EditorToolkit::EditInfo</a></div><div class="ttdeci">virtual std::string EditInfo()</div><div class="ttdoc">Get information on the last editor function used.</div><div class="ttdef"><b>Definition:</b> editortoolkit.h:45</div></div>
+<div class="ttc" id="aclassvrv_1_1_editor_toolkit_html"><div class="ttname"><a href="classvrv_1_1_editor_toolkit.html">vrv::EditorToolkit</a></div><div class="ttdef"><b>Definition:</b> editortoolkit.h:30</div></div>
+<div class="ttc" id="aclassvrv_1_1_editor_toolkit_html_a23a46e854711b755deffb6856888ec56"><div class="ttname"><a href="classvrv_1_1_editor_toolkit.html#a23a46e854711b755deffb6856888ec56">vrv::EditorToolkit::m_options</a></div><div class="ttdeci">int m_options</div><div class="ttdoc">Record option changes</div><div class="ttdef"><b>Definition:</b> editortoolkit.h:90</div></div>
+<div class="ttc" id="aclassvrv_1_1_editor_toolkit_html_a2f0eeaf4c5360e9a22af1dd90219d901"><div class="ttname"><a href="classvrv_1_1_editor_toolkit.html#a2f0eeaf4c5360e9a22af1dd90219d901">vrv::EditorToolkit::EditResponse</a></div><div class="ttdeci">virtual std::string EditResponse()</div><div class="ttdoc">Get response on the last editor function used.</div><div class="ttdef"><b>Definition:</b> editortoolkit.h:58</div></div>
 <div class="ttc" id="aclassvrv_1_1_editor_toolkit_html_a4072ba0fc25bf93cf164daa8b0772f2f"><div class="ttname"><a href="classvrv_1_1_editor_toolkit.html#a4072ba0fc25bf93cf164daa8b0772f2f">vrv::EditorToolkit::ParseEditorAction</a></div><div class="ttdeci">virtual bool ParseEditorAction(const std::string &amp;json_editorAction)=0</div><div class="ttdoc">In child classes, this parses the provided editor action and then performs the correct action.</div></div>
+<div class="ttc" id="aclassvrv_1_1_editor_toolkit_html_ad2636f4c7e3bdac1ff16d473c01f8af2"><div class="ttname"><a href="classvrv_1_1_editor_toolkit.html#ad2636f4c7e3bdac1ff16d473c01f8af2">vrv::EditorToolkit::EditStatus</a></div><div class="ttdeci">virtual std::string EditStatus()</div><div class="ttdoc">Get status of the editor (undo, selection, etc.)</div><div class="ttdef"><b>Definition:</b> editortoolkit.h:54</div></div>
+<div class="ttc" id="aclassvrv_1_1_editor_toolkit_html_aea7f982eda641f2d108a51f235509ec1"><div class="ttname"><a href="classvrv_1_1_editor_toolkit.html#aea7f982eda641f2d108a51f235509ec1">vrv::EditorToolkit::OptionsChanged</a></div><div class="ttdeci">void OptionsChanged()</div><div class="ttdoc">Increase the option change count.</div><div class="ttdef"><b>Definition:</b> editortoolkit.h:63</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:66</div></div>
 <div class="ttc" id="aclassvrv_1_1_view_html"><div class="ttname"><a href="classvrv_1_1_view.html">vrv::View</a></div><div class="ttdoc">This class is a drawing context and corresponds to the view of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> view.h:107</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -156,7 +181,7 @@ $(document).ready(function(){initNavTree('editortoolkit_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>editortoolkit.h</b></li>
-    <li class="footer">Generated on Tue Aug 18 2026 07:21:33 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Aug 18 2026 11:26:00 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
