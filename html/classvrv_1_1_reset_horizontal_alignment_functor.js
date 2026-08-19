@@ -7,6 +7,7 @@ var classvrv_1_1_reset_horizontal_alignment_functor =
     [ "VisitArpeg", "classvrv_1_1_reset_horizontal_alignment_functor.html#acc20fde54460949c1a6d238ef6c61a50", null ],
     [ "VisitBeam", "classvrv_1_1_reset_horizontal_alignment_functor.html#a29f7b48739b78f5b19c4eccf03389dfd", null ],
     [ "VisitBeamSpan", "classvrv_1_1_reset_horizontal_alignment_functor.html#adabe74c6501c0ec4cd5a678e88455b98", null ],
+    [ "VisitCursor", "classvrv_1_1_reset_horizontal_alignment_functor.html#ac21fc6cc5132c20e0b645f73f48d09ea", null ],
     [ "VisitCustos", "classvrv_1_1_reset_horizontal_alignment_functor.html#a4c23a5b48532e316c7ab9a359e03dad0", null ],
     [ "VisitDiv", "classvrv_1_1_reset_horizontal_alignment_functor.html#a9915239d5dd2899f7aca7bb8605e1c4a", null ],
     [ "VisitDot", "classvrv_1_1_reset_horizontal_alignment_functor.html#a1d18c8d1b97d7389dc781ffe1a6c45e9", null ],

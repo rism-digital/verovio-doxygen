@@ -2,6 +2,7 @@ var classvrv_1_1_duration_interface =
 [
     [ "DurationInterface", "classvrv_1_1_duration_interface.html#abcb2f792eeb999beb3a5f247c812d274", null ],
     [ "~DurationInterface", "classvrv_1_1_duration_interface.html#a2010593a7681cd4a3e34c3a9098ed9aa", null ],
+    [ "DecreaseCMNDuration", "classvrv_1_1_duration_interface.html#a9cad6401ea6904f121c39ed002ee7751", null ],
     [ "DurationWithBrevisEquivalence", "classvrv_1_1_duration_interface.html#a9304a4f7d66c3cb9fb44a0c07a17758e", null ],
     [ "DurationWithMinimaEquivalence", "classvrv_1_1_duration_interface.html#afbb4d68aef4bcad20e733edc943e41f8", null ],
     [ "DurationWithSemibrevisEquivalence", "classvrv_1_1_duration_interface.html#a305349d0e2754908424d915a52f5ba79", null ],
@@ -18,6 +19,7 @@ var classvrv_1_1_duration_interface =
     [ "GetScoreTimeOnset", "classvrv_1_1_duration_interface.html#a2649423abc3f8b702b421d26d521127d", null ],
     [ "GetScoreTimeTiedDuration", "classvrv_1_1_duration_interface.html#a3d40fe79a3818b6a49681e11aca1eb6f", null ],
     [ "HasIdenticalDurationInterface", "classvrv_1_1_duration_interface.html#a550d47c959ecccc53c488685fea3177c", null ],
+    [ "IncreaseCMNDuration", "classvrv_1_1_duration_interface.html#afb6d0620a189387779e19648cf05c4df", null ],
     [ "IsFirstInBeam", "classvrv_1_1_duration_interface.html#ad14ac28eed0c0fbc93bf4b104abb1c2e", null ],
     [ "IsInterface", "classvrv_1_1_duration_interface.html#aa95bb6fba812c2b05620c3b862e0f6e5", null ],
     [ "IsLastInBeam", "classvrv_1_1_duration_interface.html#ab7a23457945d43056b01fde4cc1d8b46", null ],

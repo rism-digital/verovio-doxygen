@@ -6,11 +6,12 @@
     <includes local="yes">atts_shared.h</includes>
     <includes local="yes">atts_visual.h</includes>
     <includes refid="layerelement_8h" local="yes">layerelement.h</includes>
+    <includedby refid="cursor_8h" local="yes">cursor.h</includedby>
     <incdepgraph>
       <node id="14">
         <label>list</label>
       </node>
-      <node id="37">
+      <node id="39">
         <label>boundingbox.h</label>
         <link refid="boundingbox_8h_source"/>
         <childnode refid="11" relation="include">
@@ -65,10 +66,10 @@
       <node id="15">
         <label>map</label>
       </node>
-      <node id="34">
+      <node id="36">
         <label>unordered_set</label>
       </node>
-      <node id="36">
+      <node id="38">
         <label>attmodule.h</label>
       </node>
       <node id="2">
@@ -125,15 +126,19 @@
         </childnode>
         <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
         <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="35" relation="include">
         </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
         <childnode refid="36" relation="include">
         </childnode>
         <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
@@ -150,6 +155,9 @@
       <node id="25">
         <label>unordered_map</label>
       </node>
+      <node id="35">
+        <label>shared_mutex</label>
+      </node>
       <node id="1">
         <label>elementpart.h</label>
         <link refid="elementpart_8h"/>
@@ -162,7 +170,10 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="35">
+      <node id="34">
+        <label>mutex</label>
+      </node>
+      <node id="37">
         <label>attclasses.h</label>
       </node>
       <node id="21">
@@ -234,6 +245,42 @@
         </childnode>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>editfunctor.h</label>
+        <link refid="editfunctor_8h_source"/>
+      </node>
+      <node id="5">
+        <label>editortoolkit_cmn.h</label>
+        <link refid="editortoolkit__cmn_8h_source"/>
+      </node>
+      <node id="6">
+        <label>editortoolkit_mensural.h</label>
+        <link refid="editortoolkit__mensural_8h_source"/>
+      </node>
+      <node id="4">
+        <label>editortoolkit_shared.h</label>
+        <link refid="editortoolkit__shared_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>elementpart.h</label>
+        <link refid="elementpart_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cursor.h</label>
+        <link refid="cursor_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
     <innerclass refid="classvrv_1_1_dots" prot="public">vrv::Dots</innerclass>
     <innerclass refid="classvrv_1_1_flag" prot="public">vrv::Flag</innerclass>
     <innerclass refid="classvrv_1_1_tuplet_bracket" prot="public">vrv::TupletBracket</innerclass>
@@ -354,85 +401,87 @@
 <codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_tuplet_bracket" kindref="compound">TupletBracket</ref>();</highlight></codeline>
 <codeline lineno="159" refid="classvrv_1_1_tuplet_bracket_1a82b5940e92da188eaa80c7c25f785716" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_tuplet_bracket_1a82b5940e92da188eaa80c7c25f785716" kindref="member">Reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>GetClassName()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;tupletBracket&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="162"></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingXRelLeft()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_drawingXRelLeft;<sp/>}</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetDrawingXRelLeft(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drawingXRelLeft)<sp/>{<sp/>m_drawingXRelLeft<sp/>=<sp/>drawingXRelLeft;<sp/>}</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingXRelRight()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_drawingXRelRight;<sp/>}</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetDrawingXRelRight(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drawingXRelRight)<sp/>{<sp/>m_drawingXRelRight<sp/>=<sp/>drawingXRelRight;<sp/>}</highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Vertical<sp/>positions</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingYRelLeft()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_drawingYRelLeft;<sp/>}</highlight></codeline>
-<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetDrawingYRelLeft(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drawingYRelLeft)<sp/>{<sp/>m_drawingYRelLeft<sp/>=<sp/>drawingYRelLeft;<sp/>}</highlight></codeline>
-<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingYRelRight()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_drawingYRelRight;<sp/>}</highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetDrawingYRelRight(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drawingYRelRight)<sp/>{<sp/>m_drawingYRelRight<sp/>=<sp/>drawingYRelRight;<sp/>}</highlight></codeline>
-<codeline lineno="177"></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingXLeft()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingXRight()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingYLeft()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingYRight()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="190"></codeline>
-<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>TupletNum<sp/>*GetAlignedNum()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_alignedNum;<sp/>}</highlight></codeline>
-<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TupletNum<sp/>*GetAlignedNum()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_alignedNum;<sp/>}</highlight></codeline>
-<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetAlignedNum(TupletNum<sp/>*alignedNum)<sp/>{<sp/>m_alignedNum<sp/>=<sp/>alignedNum;<sp/>}</highlight></codeline>
-<codeline lineno="199"><highlight class="normal"></highlight></codeline>
-<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="203"><highlight class="normal"></highlight></codeline>
-<codeline lineno="208" refid="classvrv_1_1_tuplet_bracket_1ab1be1e71ee28b9ce451b4afa2ea6cffd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_tuplet_bracket_1ab1be1e71ee28b9ce451b4afa2ea6cffd" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_tuplet_bracket_1ab1be1e71ee28b9ce451b4afa2ea6cffd" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="213"><highlight class="normal"></highlight></codeline>
-<codeline lineno="214"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="216"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="218"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_drawingXRelLeft;</highlight></codeline>
-<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_drawingXRelRight;</highlight></codeline>
-<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_drawingYRelLeft<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_drawingYRelRight<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_tuplet_num" kindref="compound">TupletNum</ref><sp/>*m_alignedNum;</highlight></codeline>
-<codeline lineno="239"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="240"><highlight class="normal"></highlight></codeline>
-<codeline lineno="241"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="242"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TupletNum</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="243"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="244"><highlight class="normal"></highlight></codeline>
-<codeline lineno="249" refid="classvrv_1_1_tuplet_num" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_tuplet_num" kindref="compound">TupletNum</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttNumberPlacement,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttTupletVis<sp/>{</highlight></codeline>
-<codeline lineno="250"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_tuplet_num" kindref="compound">TupletNum</ref>();</highlight></codeline>
-<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_tuplet_num" kindref="compound">TupletNum</ref>();</highlight></codeline>
-<codeline lineno="258" refid="classvrv_1_1_tuplet_num_1a526852a7d5cd75b1ee3993431fbe05d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_tuplet_num_1a526852a7d5cd75b1ee3993431fbe05d3" kindref="member">Reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>GetClassName()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;tupletNum&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="261"></codeline>
-<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingYMid()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingXMid(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc<sp/>=<sp/>NULL)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="273"></codeline>
-<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_tuplet_bracket" kindref="compound">TupletBracket</ref><sp/>*GetAlignedBracket()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_alignedBracket;<sp/>}</highlight></codeline>
-<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TupletBracket<sp/>*GetAlignedBracket()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_alignedBracket;<sp/>}</highlight></codeline>
-<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetAlignedBracket(TupletBracket<sp/>*alignedBracket);</highlight></codeline>
-<codeline lineno="282"><highlight class="normal"></highlight></codeline>
-<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="classvrv_1_1_tuplet_bracket_1a1b59d3ccef61da44c23842a025472623" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*<ref refid="classvrv_1_1_tuplet_bracket_1a1b59d3ccef61da44c23842a025472623" kindref="member">Clone</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_tuplet_bracket" kindref="compound">TupletBracket</ref>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="163"></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingXRelLeft()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_drawingXRelLeft;<sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetDrawingXRelLeft(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drawingXRelLeft)<sp/>{<sp/>m_drawingXRelLeft<sp/>=<sp/>drawingXRelLeft;<sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingXRelRight()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_drawingXRelRight;<sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetDrawingXRelRight(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drawingXRelRight)<sp/>{<sp/>m_drawingXRelRight<sp/>=<sp/>drawingXRelRight;<sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Vertical<sp/>positions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingYRelLeft()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_drawingYRelLeft;<sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetDrawingYRelLeft(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drawingYRelLeft)<sp/>{<sp/>m_drawingYRelLeft<sp/>=<sp/>drawingYRelLeft;<sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingYRelRight()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_drawingYRelRight;<sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetDrawingYRelRight(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drawingYRelRight)<sp/>{<sp/>m_drawingYRelRight<sp/>=<sp/>drawingYRelRight;<sp/>}</highlight></codeline>
+<codeline lineno="178"></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingXLeft()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingXRight()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingYLeft()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingYRight()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>TupletNum<sp/>*GetAlignedNum()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_alignedNum;<sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TupletNum<sp/>*GetAlignedNum()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_alignedNum;<sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetAlignedNum(TupletNum<sp/>*alignedNum)<sp/>{<sp/>m_alignedNum<sp/>=<sp/>alignedNum;<sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="classvrv_1_1_tuplet_bracket_1ab1be1e71ee28b9ce451b4afa2ea6cffd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_tuplet_bracket_1ab1be1e71ee28b9ce451b4afa2ea6cffd" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_tuplet_bracket_1ab1be1e71ee28b9ce451b4afa2ea6cffd" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_drawingXRelLeft;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_drawingXRelRight;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_drawingYRelLeft<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_drawingYRelRight<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_tuplet_num" kindref="compound">TupletNum</ref><sp/>*m_alignedNum;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TupletNum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="classvrv_1_1_tuplet_num" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvrv_1_1_tuplet_num" kindref="compound">TupletNum</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttNumberPlacement,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AttTupletVis<sp/>{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_tuplet_num" kindref="compound">TupletNum</ref>();</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classvrv_1_1_tuplet_num" kindref="compound">TupletNum</ref>();</highlight></codeline>
+<codeline lineno="259" refid="classvrv_1_1_tuplet_num_1a526852a7d5cd75b1ee3993431fbe05d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_tuplet_num_1a526852a7d5cd75b1ee3993431fbe05d3" kindref="member">Reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>GetClassName()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;tupletNum&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="261" refid="classvrv_1_1_tuplet_num_1aa490164a323e1af3cd5a7832cead50f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_object" kindref="compound">Object</ref><sp/>*<ref refid="classvrv_1_1_tuplet_num_1aa490164a323e1af3cd5a7832cead50f4" kindref="member">Clone</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_tuplet_num" kindref="compound">TupletNum</ref>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="263"></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingYMid()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDrawingXMid(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref><sp/>*doc<sp/>=<sp/>NULL)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="275"></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_tuplet_bracket" kindref="compound">TupletBracket</ref><sp/>*GetAlignedBracket()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_alignedBracket;<sp/>}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TupletBracket<sp/>*GetAlignedBracket()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_alignedBracket;<sp/>}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetAlignedBracket(TupletBracket<sp/>*alignedBracket);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
 <codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="286"><highlight class="normal"></highlight></codeline>
-<codeline lineno="291" refid="classvrv_1_1_tuplet_num_1ac00ff3b54aca6367960fac25fe3e47af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_tuplet_num_1ac00ff3b54aca6367960fac25fe3e47af" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_tuplet_num_1ac00ff3b54aca6367960fac25fe3e47af" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="296"><highlight class="normal"></highlight></codeline>
-<codeline lineno="297"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="299"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Functors<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="classvrv_1_1_tuplet_num_1ac00ff3b54aca6367960fac25fe3e47af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_tuplet_num_1ac00ff3b54aca6367960fac25fe3e47af" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/><ref refid="classvrv_1_1_tuplet_num_1ac00ff3b54aca6367960fac25fe3e47af" kindref="member">Accept</ref>(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_functor" kindref="compound">Functor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>AcceptEnd(<ref refid="classvrv_1_1_const_functor" kindref="compound">ConstFunctor</ref><sp/>&amp;functor)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="301"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_tuplet_bracket" kindref="compound">TupletBracket</ref><sp/>*m_alignedBracket;</highlight></codeline>
-<codeline lineno="304"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="305"><highlight class="normal"></highlight></codeline>
-<codeline lineno="306"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvrv_1_1_tuplet_bracket" kindref="compound">TupletBracket</ref><sp/>*m_alignedBracket;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="307"><highlight class="normal"></highlight></codeline>
-<codeline lineno="308"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="308"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vrv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/verovio/verovio/include/vrv/elementpart.h"/>
   </compounddef>

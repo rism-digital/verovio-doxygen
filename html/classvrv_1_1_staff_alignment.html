@@ -165,9 +165,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetYRel</b> () const</
 <p>This occurs Typically with one single verse and no @n in &lt;verse&gt; Without the collapse option, the count is the greatest <br  />
 With the collapse option, the count is number of verses. The position is calculated from the bottom. </p>
 </div></td></tr>
-<tr class="memitem:aa6450b19dc3bc9e7d15f142c0fb875d6"><td class="memItemLeft" align="right" valign="top"><a id="aa6450b19dc3bc9e7d15f142c0fb875d6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddVerseN</b> (int verseN, data_STAFFREL place)</td></tr>
-<tr class="separator:aa6450b19dc3bc9e7d15f142c0fb875d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a249d06762737ee8d0803b72766017aa1"><td class="memItemLeft" align="right" valign="top"><a id="a249d06762737ee8d0803b72766017aa1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddLyricElement</b> (const <a class="el" href="classvrv_1_1_lyric_element.html">LyricElement</a> *lyricElement)</td></tr>
+<tr class="separator:a249d06762737ee8d0803b72766017aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a286cc037b0d2f7d65b3e0389d63c5c8f"><td class="memItemLeft" align="right" valign="top"><a id="a286cc037b0d2f7d65b3e0389d63c5c8f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddVerseN</b> (int verseN, data_STAFFREL place, int lineCount=1)</td></tr>
+<tr class="separator:a286cc037b0d2f7d65b3e0389d63c5c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae289d82b696a41fd832abdbf43afefac"><td class="memItemLeft" align="right" valign="top"><a id="ae289d82b696a41fd832abdbf43afefac"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>GetVerseCount</b> (bool collapse) const</td></tr>
 <tr class="separator:ae289d82b696a41fd832abdbf43afefac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,12 +180,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetVerseCountAbove</b>
 <tr class="memitem:a69d7e024be6fd3ec86a87f25d7d643fe"><td class="memItemLeft" align="right" valign="top"><a id="a69d7e024be6fd3ec86a87f25d7d643fe"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>GetVerseCountBelow</b> (bool collapse) const</td></tr>
 <tr class="separator:a69d7e024be6fd3ec86a87f25d7d643fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a133ef4ea740ee92af348590d178ce9db"><td class="memItemLeft" align="right" valign="top"><a id="a133ef4ea740ee92af348590d178ce9db"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetVersePositionAbove</b> (int verseN, bool collapse) const</td></tr>
-<tr class="separator:a133ef4ea740ee92af348590d178ce9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19cb7512728ed74364d734f1afb9d442"><td class="memItemLeft" align="right" valign="top"><a id="a19cb7512728ed74364d734f1afb9d442"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetVersePositionBelow</b> (int verseN, bool collapse) const</td></tr>
-<tr class="separator:a19cb7512728ed74364d734f1afb9d442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25dc2e24ec078f1f90aa1e679aea1529"><td class="memItemLeft" align="right" valign="top"><a id="a25dc2e24ec078f1f90aa1e679aea1529"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetVersePositionAbove</b> (int verseN, bool collapse, int lineN=1) const</td></tr>
+<tr class="separator:a25dc2e24ec078f1f90aa1e679aea1529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95fab9d9877418f2b94c8af510851ea"><td class="memItemLeft" align="right" valign="top"><a id="ad95fab9d9877418f2b94c8af510851ea"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetVersePositionBelow</b> (int verseN, bool collapse, int lineN=1) const</td></tr>
+<tr class="separator:ad95fab9d9877418f2b94c8af510851ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:aebb16e118406ae41bf59ef1730842a78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvrv_1_1_floating_positioner.html">FloatingPositioner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_staff_alignment.html#aebb16e118406ae41bf59ef1730842a78">FindFirstFloatingPositioner</a> (ClassId classId)</td></tr>
 <tr class="memdesc:aebb16e118406ae41bf59ef1730842a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look for the first <a class="el" href="classvrv_1_1_floating_positioner.html" title="This class represents a basic object in the layout domain.">FloatingPositioner</a> corresponding to the <a class="el" href="classvrv_1_1_floating_object.html" title="This class represents elements appearing within a measure.">FloatingObject</a> of the ClassId.  <a href="classvrv_1_1_staff_alignment.html#aebb16e118406ae41bf59ef1730842a78">More...</a><br /></td></tr>
@@ -488,6 +491,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:acbb7a83e4ae3f1ba54bcd408dce066ee inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#acbb7a83e4ae3f1ba54bcd408dce066ee">DeleteChildrenByComparison</a> (<a class="el" href="classvrv_1_1_comparison.html">Comparison</a> *comparison)</td></tr>
 <tr class="memdesc:acbb7a83e4ae3f1ba54bcd408dce066ee inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the children that match the comparison.  <a href="classvrv_1_1_object.html#acbb7a83e4ae3f1ba54bcd408dce066ee">More...</a><br /></td></tr>
 <tr class="separator:acbb7a83e4ae3f1ba54bcd408dce066ee inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b9c473e61ad09e70352ad301045ac8 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a70b9c473e61ad09e70352ad301045ac8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a70b9c473e61ad09e70352ad301045ac8">IsAncestorOf</a> (const <a class="el" href="classvrv_1_1_object.html">Object</a> *object) const</td></tr>
+<tr class="memdesc:a70b9c473e61ad09e70352ad301045ac8 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the object is the ancestor of the other one. <br /></td></tr>
+<tr class="separator:a70b9c473e61ad09e70352ad301045ac8 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24dd9389c537dda7046c097132ae9a9a inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a24dd9389c537dda7046c097132ae9a9a">FillFlatList</a> (ListOfConstObjects &amp;list) const</td></tr>
 <tr class="memdesc:a24dd9389c537dda7046c097132ae9a9a inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the list of all the children <a class="el" href="classvrv_1_1_layer_element.html" title="This class is a base class for the Layer (&lt;layer&gt;) content.">LayerElement</a>.  <a href="classvrv_1_1_object.html#a24dd9389c537dda7046c097132ae9a9a">More...</a><br /></td></tr>
 <tr class="separator:a24dd9389c537dda7046c097132ae9a9a inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -562,6 +569,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEditorialElement</b
 <tr class="memitem:a311186b3525f994471394fcc38bbcda8 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a311186b3525f994471394fcc38bbcda8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLayerElement</b> () const</td></tr>
 <tr class="separator:a311186b3525f994471394fcc38bbcda8 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d10872ab38d0c97931783359b0c502 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a27d10872ab38d0c97931783359b0c502"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLyricElement</b> () const</td></tr>
+<tr class="separator:a27d10872ab38d0c97931783359b0c502 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fe6d0adbd0341a514fc3645039559fd inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a6fe6d0adbd0341a514fc3645039559fd"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsPageElement</b> () const</td></tr>
 <tr class="separator:a6fe6d0adbd0341a514fc3645039559fd inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -926,9 +936,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BoundingBox</b> (
 <tr class="memitem:af366b55a8e449a12d689acd9d35ae782 inherit pub_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="af366b55a8e449a12d689acd9d35ae782"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Is</b> (ClassId classId) const</td></tr>
 <tr class="separator:af366b55a8e449a12d689acd9d35ae782 inherit pub_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaeb23e9d3064f863ef3857efef570a8f inherit pub_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="aaeb23e9d3064f863ef3857efef570a8f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Is</b> (const std::vector&lt; ClassId &gt; &amp;classIds) const</td></tr>
-<tr class="separator:aaeb23e9d3064f863ef3857efef570a8f inherit pub_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca20d1f299f683ce31a688e44fe0d4a inherit pub_methods_classvrv_1_1_bounding_box"><td class="memTemplParams" colspan="2"><a id="adca20d1f299f683ce31a688e44fe0d4a"></a>
+template&lt;typename Range &gt; </td></tr>
+<tr class="memitem:adca20d1f299f683ce31a688e44fe0d4a inherit pub_methods_classvrv_1_1_bounding_box"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>IsAnyOf</b> (const Range &amp;classIds) const</td></tr>
+<tr class="separator:adca20d1f299f683ce31a688e44fe0d4a inherit pub_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cc083afb0d6f3a68d60fae9569645b8 inherit pub_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="a8cc083afb0d6f3a68d60fae9569645b8"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateContentBBoxX</b> (int x1, int x2)</td></tr>
 <tr class="separator:a8cc083afb0d6f3a68d60fae9569645b8 inherit pub_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1122,6 +1133,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEditorialEle
 <tr class="memitem:abe1da75cb49a9c2accca3482779a55a1 inherit pub_static_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="abe1da75cb49a9c2accca3482779a55a1"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLayerElement</b> (ClassId classId)</td></tr>
 <tr class="separator:abe1da75cb49a9c2accca3482779a55a1 inherit pub_static_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9978a2f85ace14d17748562798be4b91 inherit pub_static_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a9978a2f85ace14d17748562798be4b91"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLyricElement</b> (ClassId classId)</td></tr>
+<tr class="separator:a9978a2f85ace14d17748562798be4b91 inherit pub_static_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80f120643f6620773decf1a06bf4130d inherit pub_static_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a80f120643f6620773decf1a06bf4130d"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsPageElement</b> (ClassId classId)</td></tr>
 <tr class="separator:a80f120643f6620773decf1a06bf4130d inherit pub_static_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1270,7 +1284,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_staff_alignment.html">StaffAlignment</a></li>
-    <li class="footer">Generated on Wed May 20 2026 13:51:35 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Aug 19 2026 14:30:58 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

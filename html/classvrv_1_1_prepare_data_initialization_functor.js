@@ -8,7 +8,9 @@ var classvrv_1_1_prepare_data_initialization_functor =
     [ "VisitDiv", "classvrv_1_1_prepare_data_initialization_functor.html#ab877258b5e091f5f2d33266fc21ae0d5", null ],
     [ "VisitFloatingObject", "classvrv_1_1_prepare_data_initialization_functor.html#ab6d801c5fc65ac43f9fb10755bfbbb20", null ],
     [ "VisitKeySig", "classvrv_1_1_prepare_data_initialization_functor.html#ac4c1c715d23dee33bf36cb924168e715", null ],
+    [ "VisitMSpace", "classvrv_1_1_prepare_data_initialization_functor.html#adffd1f598dfa3f7b4fa987c0956211e7", null ],
     [ "VisitRepeatMark", "classvrv_1_1_prepare_data_initialization_functor.html#a12d69479bdf850a362fce6fdd1d6697d", null ],
     [ "VisitScore", "classvrv_1_1_prepare_data_initialization_functor.html#a488533e1143dd54c9c5bb3919ff41874", null ],
+    [ "VisitSpace", "classvrv_1_1_prepare_data_initialization_functor.html#a5c0a414fed2f5130d5b15043055f71da", null ],
     [ "VisitTextLayoutElement", "classvrv_1_1_prepare_data_initialization_functor.html#a29205d214d2484c18ff6c26c25a92760", null ]
 ];

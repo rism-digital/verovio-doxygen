@@ -25,16 +25,20 @@ var classvrv_1_1_reset_data_functor =
     [ "VisitLayer", "classvrv_1_1_reset_data_functor.html#a133d6c7d6288b36cc313f0113602ab74", null ],
     [ "VisitLayerElement", "classvrv_1_1_reset_data_functor.html#a53d1c2de155ce9d56e59fee73a4c69be", null ],
     [ "VisitLigature", "classvrv_1_1_reset_data_functor.html#ac9a8f72f1f3fba5c83ce755612c54328", null ],
+    [ "VisitLyricElement", "classvrv_1_1_reset_data_functor.html#a0be78bc4379ec77aae35760743744b90", null ],
     [ "VisitMeasure", "classvrv_1_1_reset_data_functor.html#a1bb6a832c4ac2487d60268f2d388dbde", null ],
     [ "VisitMRest", "classvrv_1_1_reset_data_functor.html#a3cf66c7d63e8b28a4189a8dbcadacd2d", null ],
+    [ "VisitMSpace", "classvrv_1_1_reset_data_functor.html#ae79a5573e43c412ca77d82fdf1872475", null ],
     [ "VisitNc", "classvrv_1_1_reset_data_functor.html#ad22b06531e64c9b33b9cf13ac9e20dff", null ],
     [ "VisitNote", "classvrv_1_1_reset_data_functor.html#a09dad5f775bbe7baeda902ac2c21fa41", null ],
     [ "VisitObject", "classvrv_1_1_reset_data_functor.html#a7cabb905452e6f2221d88b2cfc006496", null ],
     [ "VisitPage", "classvrv_1_1_reset_data_functor.html#a943e51bbb5a6a93741cabfd171920281", null ],
+    [ "VisitRefrain", "classvrv_1_1_reset_data_functor.html#a4bed47aad375edea3b3267b9a1aa1f3a", null ],
     [ "VisitRepeatMark", "classvrv_1_1_reset_data_functor.html#a53f821d4f14732621644dd5ae7ddc232", null ],
     [ "VisitRest", "classvrv_1_1_reset_data_functor.html#a61c902ab708a7c4b85cdc54a44de391c", null ],
     [ "VisitSection", "classvrv_1_1_reset_data_functor.html#a2de645de47858f7de1ccbb1c5ddfb064", null ],
     [ "VisitSlur", "classvrv_1_1_reset_data_functor.html#adc4d397488168f222ccff580c157bf3d", null ],
+    [ "VisitSpace", "classvrv_1_1_reset_data_functor.html#a226f6cbe0e4236fb1311c8e62a5148cc", null ],
     [ "VisitStaff", "classvrv_1_1_reset_data_functor.html#aabe87be98605f577cf566f97a7f14e69", null ],
     [ "VisitStaffDef", "classvrv_1_1_reset_data_functor.html#a72dd5f57bdcd223056c075a302cac29f", null ],
     [ "VisitStem", "classvrv_1_1_reset_data_functor.html#a5cbccf56abc121c00eed1885ec521519", null ],
@@ -45,5 +49,6 @@ var classvrv_1_1_reset_data_functor =
     [ "VisitTempo", "classvrv_1_1_reset_data_functor.html#a18d15b8c78ff76ad8dd061cb8805ed90", null ],
     [ "VisitTuplet", "classvrv_1_1_reset_data_functor.html#af9420e9313ed3060afd99949878195ef", null ],
     [ "VisitTurn", "classvrv_1_1_reset_data_functor.html#aa5702becde6ad61f4b52d04bd990be37", null ],
-    [ "VisitVerse", "classvrv_1_1_reset_data_functor.html#a1dc17222a1471f55254c48a0782cd2ca", null ]
+    [ "VisitVerse", "classvrv_1_1_reset_data_functor.html#a1dc17222a1471f55254c48a0782cd2ca", null ],
+    [ "VisitVolta", "classvrv_1_1_reset_data_functor.html#a97060da61b7e54e54446e0d8c34553cd", null ]
 ];

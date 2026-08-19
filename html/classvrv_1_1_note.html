@@ -110,11 +110,16 @@ Inheritance diagram for vrv::Note:</div>
 <area href="classvrv_1_1_alt_sym_interface.html" title="This class is an interface for elements having a @altsym It is not an abstract class but should not b..." alt="vrv::AltSymInterface" shape="rect" coords="194,112,378,136"/>
 <area href="classvrv_1_1_stemmed_drawing_interface.html" title="This class is an interface for MEI stemmed element." alt="vrv::StemmedDrawingInterface" shape="rect" coords="194,56,378,80"/>
 <area href="classvrv_1_1_layer_element.html" title="This class is a base class for the Layer (&lt;layer&gt;) content." alt="vrv::LayerElement" shape="rect" coords="194,0,378,24"/>
+<area href="classvrv_1_1_cursor.html" title="This class implements a curor for the editor." alt="vrv::Cursor" shape="rect" coords="0,1288,184,1312"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a25b60cc49f2f7de9c0e9544fc352a8a3"><td class="memItemLeft" align="right" valign="top"><a id="a25b60cc49f2f7de9c0e9544fc352a8a3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a25b60cc49f2f7de9c0e9544fc352a8a3">CloneReset</a> () override</td></tr>
+<tr class="memdesc:a25b60cc49f2f7de9c0e9544fc352a8a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overriding <a class="el" href="classvrv_1_1_note.html#a25b60cc49f2f7de9c0e9544fc352a8a3" title="Overriding CloneReset() method to be called after copy / assignment calls.">CloneReset()</a> method to be called after copy / assignment calls. <br /></td></tr>
+<tr class="separator:a25b60cc49f2f7de9c0e9544fc352a8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68a34dc4606c694c61020104860daa78"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#a68a34dc4606c694c61020104860daa78">HasToBeAligned</a> () const override</td></tr>
 <tr class="memdesc:a68a34dc4606c694c61020104860daa78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the method since alignment is required.  <a href="classvrv_1_1_note.html#a68a34dc4606c694c61020104860daa78">More...</a><br /></td></tr>
 <tr class="separator:a68a34dc4606c694c61020104860daa78"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,6 +174,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memitem:aa267b22e6d10946e4b865ae4819d0f45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#aa267b22e6d10946e4b865ae4819d0f45">CalcNoteHeadShiftForSameasNote</a> (<a class="el" href="classvrv_1_1_note.html">Note</a> *stemSameas, data_STEMDIRECTION stemDir)</td></tr>
 <tr class="memdesc:aa267b22e6d10946e4b865ae4819d0f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Note::m_flippedNotehead flag if one of the two notes needs to be placed on the side.  <a href="classvrv_1_1_note.html#aa267b22e6d10946e4b865ae4819d0f45">More...</a><br /></td></tr>
 <tr class="separator:aa267b22e6d10946e4b865ae4819d0f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf4ce19125dcb0fe78a75593e5870fa"><td class="memItemLeft" align="right" valign="top"><a id="acaf4ce19125dcb0fe78a75593e5870fa"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_note.html#acaf4ce19125dcb0fe78a75593e5870fa">IsCursor</a> () const</td></tr>
+<tr class="memdesc:acaf4ce19125dcb0fe78a75593e5870fa"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_flag.html" title="This class models a stem as a layer element part and has no direct MEI equivalent.">Flag</a> indicator if or <a class="el" href="classvrv_1_1_cursor.html" title="This class implements a curor for the editor.">Cursor</a> instance. <br /></td></tr>
+<tr class="separator:acaf4ce19125dcb0fe78a75593e5870fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, reset and class name methods</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Reset method resets all attribute classes </p>
 </div></td></tr>
@@ -328,10 +337,6 @@ FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>AcceptEnd</b> 
 FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>AcceptEnd</b> (<a class="el" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) const override</td></tr>
 <tr class="separator:a1875afdb6f2a17a96265c30972a3dc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvrv_1_1_layer_element"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvrv_1_1_layer_element')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvrv_1_1_layer_element.html">vrv::LayerElement</a></td></tr>
-<tr class="memitem:a0ed3a40420a298b9cea1d354bbbd1f9d inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a0ed3a40420a298b9cea1d354bbbd1f9d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a0ed3a40420a298b9cea1d354bbbd1f9d">CloneReset</a> () override</td></tr>
-<tr class="memdesc:a0ed3a40420a298b9cea1d354bbbd1f9d inherit pub_methods_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overriding <a class="el" href="classvrv_1_1_layer_element.html#a0ed3a40420a298b9cea1d354bbbd1f9d" title="Overriding CloneReset() method to be called after copy / assignment calls.">CloneReset()</a> method to be called after copy / assignment calls. <br /></td></tr>
-<tr class="separator:a0ed3a40420a298b9cea1d354bbbd1f9d inherit pub_methods_classvrv_1_1_layer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76c5dc2122f41da2f352a8d585b382c8 inherit pub_methods_classvrv_1_1_layer_element"><td class="memItemLeft" align="right" valign="top"><a id="a76c5dc2122f41da2f352a8d585b382c8"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_layer_element.html#a76c5dc2122f41da2f352a8d585b382c8">IsScoreDefElement</a> () const</td></tr>
 <tr class="memdesc:a76c5dc2122f41da2f352a8d585b382c8 inherit pub_methods_classvrv_1_1_layer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the element is part of a scoreDef or staffDef. <br /></td></tr>
@@ -680,6 +685,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:acbb7a83e4ae3f1ba54bcd408dce066ee inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#acbb7a83e4ae3f1ba54bcd408dce066ee">DeleteChildrenByComparison</a> (<a class="el" href="classvrv_1_1_comparison.html">Comparison</a> *comparison)</td></tr>
 <tr class="memdesc:acbb7a83e4ae3f1ba54bcd408dce066ee inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the children that match the comparison.  <a href="classvrv_1_1_object.html#acbb7a83e4ae3f1ba54bcd408dce066ee">More...</a><br /></td></tr>
 <tr class="separator:acbb7a83e4ae3f1ba54bcd408dce066ee inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b9c473e61ad09e70352ad301045ac8 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a70b9c473e61ad09e70352ad301045ac8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a70b9c473e61ad09e70352ad301045ac8">IsAncestorOf</a> (const <a class="el" href="classvrv_1_1_object.html">Object</a> *object) const</td></tr>
+<tr class="memdesc:a70b9c473e61ad09e70352ad301045ac8 inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the object is the ancestor of the other one. <br /></td></tr>
+<tr class="separator:a70b9c473e61ad09e70352ad301045ac8 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24dd9389c537dda7046c097132ae9a9a inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_object.html#a24dd9389c537dda7046c097132ae9a9a">FillFlatList</a> (ListOfConstObjects &amp;list) const</td></tr>
 <tr class="memdesc:a24dd9389c537dda7046c097132ae9a9a inherit pub_methods_classvrv_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the list of all the children <a class="el" href="classvrv_1_1_layer_element.html" title="This class is a base class for the Layer (&lt;layer&gt;) content.">LayerElement</a>.  <a href="classvrv_1_1_object.html#a24dd9389c537dda7046c097132ae9a9a">More...</a><br /></td></tr>
 <tr class="separator:a24dd9389c537dda7046c097132ae9a9a inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -751,6 +760,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEditorialElement</b
 <tr class="memitem:a311186b3525f994471394fcc38bbcda8 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a311186b3525f994471394fcc38bbcda8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLayerElement</b> () const</td></tr>
 <tr class="separator:a311186b3525f994471394fcc38bbcda8 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d10872ab38d0c97931783359b0c502 inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a27d10872ab38d0c97931783359b0c502"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLyricElement</b> () const</td></tr>
+<tr class="separator:a27d10872ab38d0c97931783359b0c502 inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fe6d0adbd0341a514fc3645039559fd inherit pub_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a6fe6d0adbd0341a514fc3645039559fd"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsPageElement</b> () const</td></tr>
 <tr class="separator:a6fe6d0adbd0341a514fc3645039559fd inherit pub_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1067,9 +1079,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~BoundingBox</b> (
 <tr class="memitem:af366b55a8e449a12d689acd9d35ae782 inherit pub_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="af366b55a8e449a12d689acd9d35ae782"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Is</b> (ClassId classId) const</td></tr>
 <tr class="separator:af366b55a8e449a12d689acd9d35ae782 inherit pub_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaeb23e9d3064f863ef3857efef570a8f inherit pub_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="aaeb23e9d3064f863ef3857efef570a8f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Is</b> (const std::vector&lt; ClassId &gt; &amp;classIds) const</td></tr>
-<tr class="separator:aaeb23e9d3064f863ef3857efef570a8f inherit pub_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca20d1f299f683ce31a688e44fe0d4a inherit pub_methods_classvrv_1_1_bounding_box"><td class="memTemplParams" colspan="2"><a id="adca20d1f299f683ce31a688e44fe0d4a"></a>
+template&lt;typename Range &gt; </td></tr>
+<tr class="memitem:adca20d1f299f683ce31a688e44fe0d4a inherit pub_methods_classvrv_1_1_bounding_box"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>IsAnyOf</b> (const Range &amp;classIds) const</td></tr>
+<tr class="separator:adca20d1f299f683ce31a688e44fe0d4a inherit pub_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cc083afb0d6f3a68d60fae9569645b8 inherit pub_methods_classvrv_1_1_bounding_box"><td class="memItemLeft" align="right" valign="top"><a id="a8cc083afb0d6f3a68d60fae9569645b8"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateContentBBoxX</b> (int x1, int x2)</td></tr>
 <tr class="separator:a8cc083afb0d6f3a68d60fae9569645b8 inherit pub_methods_classvrv_1_1_bounding_box"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1446,6 +1459,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a550d47c959ecccc53c488685fea3177c inherit pub_methods_classvrv_1_1_duration_interface"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_duration_interface.html#a550d47c959ecccc53c488685fea3177c">HasIdenticalDurationInterface</a> (const <a class="el" href="classvrv_1_1_duration_interface.html">DurationInterface</a> *otherDurationInterface) const</td></tr>
 <tr class="memdesc:a550d47c959ecccc53c488685fea3177c inherit pub_methods_classvrv_1_1_duration_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvrv_1_1_interface.html" title="This is a base class for regrouping MEI att classes.">Interface</a> comparison operator.  <a href="classvrv_1_1_duration_interface.html#a550d47c959ecccc53c488685fea3177c">More...</a><br /></td></tr>
 <tr class="separator:a550d47c959ecccc53c488685fea3177c inherit pub_methods_classvrv_1_1_duration_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6d0620a189387779e19648cf05c4df inherit pub_methods_classvrv_1_1_duration_interface"><td class="memItemLeft" align="right" valign="top"><a id="afb6d0620a189387779e19648cf05c4df"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseCMNDuration</b> ()</td></tr>
+<tr class="separator:afb6d0620a189387779e19648cf05c4df inherit pub_methods_classvrv_1_1_duration_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cad6401ea6904f121c39ed002ee7751 inherit pub_methods_classvrv_1_1_duration_interface"><td class="memItemLeft" align="right" valign="top"><a id="a9cad6401ea6904f121c39ed002ee7751"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DecreaseCMNDuration</b> ()</td></tr>
+<tr class="separator:a9cad6401ea6904f121c39ed002ee7751 inherit pub_methods_classvrv_1_1_duration_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcb2f792eeb999beb3a5f247c812d274 inherit pub_methods_classvrv_1_1_duration_interface"><td class="memItemLeft" align="right" valign="top"><a id="abcb2f792eeb999beb3a5f247c812d274"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DurationInterface</b> ()</td></tr>
 <tr class="separator:abcb2f792eeb999beb3a5f247c812d274 inherit pub_methods_classvrv_1_1_duration_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1633,6 +1652,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEditorialEle
 <tr class="memitem:abe1da75cb49a9c2accca3482779a55a1 inherit pub_static_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="abe1da75cb49a9c2accca3482779a55a1"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLayerElement</b> (ClassId classId)</td></tr>
 <tr class="separator:abe1da75cb49a9c2accca3482779a55a1 inherit pub_static_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9978a2f85ace14d17748562798be4b91 inherit pub_static_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a9978a2f85ace14d17748562798be4b91"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLyricElement</b> (ClassId classId)</td></tr>
+<tr class="separator:a9978a2f85ace14d17748562798be4b91 inherit pub_static_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80f120643f6620773decf1a06bf4130d inherit pub_static_methods_classvrv_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a80f120643f6620773decf1a06bf4130d"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsPageElement</b> (ClassId classId)</td></tr>
 <tr class="separator:a80f120643f6620773decf1a06bf4130d inherit pub_static_methods_classvrv_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1725,6 +1747,9 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>RectBottomOverl
 <tr class="memitem:ac6d9b7ec74dba44097241bb60b365284 inherit pub_static_methods_classvrv_1_1_pitch_interface"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_pitch_interface.html#ac6d9b7ec74dba44097241bb60b365284">CalcLoc</a> (data_PITCHNAME pname, int oct, int clefLocOffset)</td></tr>
 <tr class="memdesc:ac6d9b7ec74dba44097241bb60b365284 inherit pub_static_methods_classvrv_1_1_pitch_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the loc for a pitch and octave and considerting the clef loc offset.  <a href="classvrv_1_1_pitch_interface.html#ac6d9b7ec74dba44097241bb60b365284">More...</a><br /></td></tr>
 <tr class="separator:ac6d9b7ec74dba44097241bb60b365284 inherit pub_static_methods_classvrv_1_1_pitch_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3bdd86d93c8924be70235cc43f46e1b inherit pub_static_methods_classvrv_1_1_pitch_interface"><td class="memItemLeft" align="right" valign="top"><a id="aa3bdd86d93c8924be70235cc43f46e1b"></a>
+static std::pair&lt; data_PITCHNAME, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CalcPitch</b> (int loc, int clefLocOffset)</td></tr>
+<tr class="separator:aa3bdd86d93c8924be70235cc43f46e1b inherit pub_static_methods_classvrv_1_1_pitch_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -2177,7 +2202,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_note.html">Note</a></li>
-    <li class="footer">Generated on Wed May 20 2026 13:51:34 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Aug 19 2026 14:30:56 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

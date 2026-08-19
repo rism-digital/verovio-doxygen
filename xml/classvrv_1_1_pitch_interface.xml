@@ -141,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/pitchinterface.h" line="105" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/pitchinterface.h" bodystart="105" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/pitchinterface.h" line="106" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/pitchinterface.h" bodystart="106" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -307,6 +307,27 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/pitchinterface.h" line="95" column="16"/>
       </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_pitch_interface_1aa3bdd86d93c8924be70235cc43f46e1b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; data_PITCHNAME, int &gt;</type>
+        <definition>static std::pair&lt;data_PITCHNAME, int&gt; vrv::PitchInterface::CalcPitch</definition>
+        <argsstring>(int loc, int clefLocOffset)</argsstring>
+        <name>CalcPitch</name>
+        <param>
+          <type>int</type>
+          <declname>loc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>clefLocOffset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/pitchinterface.h" line="96" column="22"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>This class is an interface for elements with pitch, such as notes and neumes. </para>
@@ -315,7 +336,7 @@
 <para>It is not an abstract class but should not be instanciated directly. </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="14">
+      <node id="15">
         <label>vrv::Quilisma</label>
         <link refid="classvrv_1_1_quilisma"/>
         <childnode refid="1" relation="public-inheritance">
@@ -330,17 +351,23 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="13">
+        <label>vrv::Cursor</label>
+        <link refid="classvrv_1_1_cursor"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="2">
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="13">
+      <node id="14">
         <label>vrv::Oriscus</label>
         <link refid="classvrv_1_1_oriscus"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15">
+      <node id="16">
         <label>vrv::Strophicus</label>
         <link refid="classvrv_1_1_strophicus"/>
         <childnode refid="1" relation="public-inheritance">
@@ -432,13 +459,14 @@
         <label>AttOctave</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/pitchinterface.h" line="28" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/pitchinterface.h" bodystart="28" bodyend="106"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/pitchinterface.h" line="28" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/pitchinterface.h" bodystart="28" bodyend="107"/>
     <listofallmembers>
       <member refid="classvrv_1_1_pitch_interface_1aa50e2d8637677e753a582083b7b8afb7" prot="public" virt="non-virtual"><scope>vrv::PitchInterface</scope><name>AdjustPitchByOffset</name></member>
       <member refid="classvrv_1_1_pitch_interface_1a720eabf22b709d13987df460e0c40c89" prot="public" virt="non-virtual"><scope>vrv::PitchInterface</scope><name>AdjustPitchForNewClef</name></member>
       <member refid="classvrv_1_1_pitch_interface_1a3efb531b25e89181a821d237fbdf903e" prot="public" virt="non-virtual"><scope>vrv::PitchInterface</scope><name>AdjustPname</name></member>
       <member refid="classvrv_1_1_pitch_interface_1a5e9d080f4132195df6c62c8a92cb7320" prot="public" virt="non-virtual"><scope>vrv::PitchInterface</scope><name>CalcLoc</name></member>
       <member refid="classvrv_1_1_pitch_interface_1ac6d9b7ec74dba44097241bb60b365284" prot="public" virt="non-virtual"><scope>vrv::PitchInterface</scope><name>CalcLoc</name></member>
+      <member refid="classvrv_1_1_pitch_interface_1aa3bdd86d93c8924be70235cc43f46e1b" prot="public" virt="non-virtual"><scope>vrv::PitchInterface</scope><name>CalcPitch</name></member>
       <member refid="classvrv_1_1_interface_1aa0b1e2570e8f6c9d0c7f9edd28fc344c" prot="public" virt="non-virtual"><scope>vrv::PitchInterface</scope><name>GetAttClasses</name></member>
       <member refid="classvrv_1_1_pitch_interface_1a0707cb9f6a194c84d4e4f395d092c45f" prot="public" virt="non-virtual"><scope>vrv::PitchInterface</scope><name>GetOctDefault</name></member>
       <member refid="classvrv_1_1_pitch_interface_1ab31f6dd5d225135f3b35f32ab2573d99" prot="public" virt="non-virtual"><scope>vrv::PitchInterface</scope><name>HasIdenticalPitchInterface</name></member>

@@ -6,6 +6,7 @@ var classvrv_1_1_timestamp_attr =
     [ "Accept", "classvrv_1_1_timestamp_attr.html#a81ecec37a7962cb1c28e33b42277bf5d", null ],
     [ "AcceptEnd", "classvrv_1_1_timestamp_attr.html#a1cb9dad1693fa2ed09835ca065fe5951", null ],
     [ "AcceptEnd", "classvrv_1_1_timestamp_attr.html#ab9646a275933f4e78875d65f03a741bb", null ],
+    [ "Clone", "classvrv_1_1_timestamp_attr.html#aa6246763cdd1076e66032b6df0b7a41b", null ],
     [ "GetActualDurPos", "classvrv_1_1_timestamp_attr.html#a12c9da5bc08e5b8edad9f1b19506034f", null ],
     [ "GetClassName", "classvrv_1_1_timestamp_attr.html#a99058722d68b11bf41e882955d95f965", null ],
     [ "GetTimestampAttrAlignmentDuration", "classvrv_1_1_timestamp_attr.html#a27622b1e41918202707b46e8fe8e56df", null ],

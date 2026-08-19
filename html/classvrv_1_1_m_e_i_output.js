@@ -22,5 +22,7 @@ var classvrv_1_1_m_e_i_output =
     [ "SetSerializing", "classvrv_1_1_m_e_i_output.html#a1dbafde1d16c73433f7d589d60ceb5f9", null ],
     [ "Skip", "classvrv_1_1_m_e_i_output.html#ab2d2819250544530b8efe3dbbd9b8b88", null ],
     [ "WriteObject", "classvrv_1_1_m_e_i_output.html#adb8fce8f101f355901ccfe66354138fe", null ],
-    [ "WriteObjectEnd", "classvrv_1_1_m_e_i_output.html#adee02b2bee08c54163423e03fb3ffc05", null ]
+    [ "WriteObjectEnd", "classvrv_1_1_m_e_i_output.html#adee02b2bee08c54163423e03fb3ffc05", null ],
+    [ "m_currentNode", "classvrv_1_1_m_e_i_output.html#aa5a7e5bf5397d4112fa553cc1256944f", null ],
+    [ "m_nodeStack", "classvrv_1_1_m_e_i_output.html#a34f35584724b02b4d87a7fa42591f509", null ]
 ];

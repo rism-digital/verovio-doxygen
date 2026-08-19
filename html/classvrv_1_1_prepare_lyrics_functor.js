@@ -1,6 +1,6 @@
 var classvrv_1_1_prepare_lyrics_functor =
 [
-    [ "PrepareLyricsFunctor", "classvrv_1_1_prepare_lyrics_functor.html#ad8b7b18defc8e655b3498dc5e8ba3f28", null ],
+    [ "PrepareLyricsFunctor", "classvrv_1_1_prepare_lyrics_functor.html#a442b8c961b115c244f6b9a5e035203f0", null ],
     [ "~PrepareLyricsFunctor", "classvrv_1_1_prepare_lyrics_functor.html#addd66405ebacd115f798ce31ba7d995c", null ],
     [ "ImplementsEndInterface", "classvrv_1_1_prepare_lyrics_functor.html#ab14147f31e770365d9526f72247e805a", null ],
     [ "VisitChord", "classvrv_1_1_prepare_lyrics_functor.html#a74ad2be252f8cdac1e159f91a37569c4", null ],

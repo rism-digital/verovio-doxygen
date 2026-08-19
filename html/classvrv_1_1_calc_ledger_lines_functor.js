@@ -4,6 +4,8 @@ var classvrv_1_1_calc_ledger_lines_functor =
     [ "~CalcLedgerLinesFunctor", "classvrv_1_1_calc_ledger_lines_functor.html#ae3a3e4c7e90f66d154499e19ef0e298f", null ],
     [ "ImplementsEndInterface", "classvrv_1_1_calc_ledger_lines_functor.html#a46acada4a0d97d46d7058dbf1c2de6f0", null ],
     [ "VisitAccid", "classvrv_1_1_calc_ledger_lines_functor.html#ab15b7ff3a51386b2c292c834487c6fc9", null ],
+    [ "VisitCursor", "classvrv_1_1_calc_ledger_lines_functor.html#aba0673b1c5f2c95d196971cfee6c99ba", null ],
+    [ "VisitLayer", "classvrv_1_1_calc_ledger_lines_functor.html#a0a327226202e0ed5627a1a94b5efc720", null ],
     [ "VisitNote", "classvrv_1_1_calc_ledger_lines_functor.html#a7551539a321be16e867f0dc1d31bcb8d", null ],
     [ "VisitStaffEnd", "classvrv_1_1_calc_ledger_lines_functor.html#ae00b036dc1183de83be7a0beb4c72238", null ]
 ];

@@ -5,14 +5,16 @@
     <basecompoundref refid="classvrv_1_1_editor_toolkit" prot="public" virt="non-virtual">vrv::EditorToolkit</basecompoundref>
     <derivedcompoundref refid="classvrv_1_1_editor_toolkit_c_m_n" prot="public" virt="non-virtual">vrv::EditorToolkitCMN</derivedcompoundref>
     <derivedcompoundref refid="classvrv_1_1_editor_toolkit_mensural" prot="public" virt="non-virtual">vrv::EditorToolkitMensural</derivedcompoundref>
+    <innerclass refid="structvrv_1_1_editor_toolkit_shared_1_1_midi_spelling" prot="private">vrv::EditorToolkitShared::MidiSpelling</innerclass>
+    <innerclass refid="structvrv_1_1_editor_toolkit_shared_1_1_state" prot="protected">vrv::EditorToolkitShared::State</innerclass>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a1e25a619a451ce20528bb997b4ab1188" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a741fc9065477c0c55833e884798f084a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::EditorToolkitShared::Chain</definition>
-        <argsstring>(jsonxx::Array actions)</argsstring>
+        <argsstring>(const jsonxx::Array &amp;actions)</argsstring>
         <name>Chain</name>
         <param>
-          <type>jsonxx::Array</type>
+          <type>const jsonxx::Array &amp;</type>
           <declname>actions</declname>
         </param>
         <briefdescription>
@@ -22,15 +24,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="49" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="60" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1abefa2dcd749a1ef1271fa671231671f0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1ab55a8c526e00244d7bc94e2bfab281e5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::EditorToolkitShared::ParseContextAction</definition>
-        <argsstring>(jsonxx::Object param, std::string &amp;elementId, bool &amp;scores, bool &amp;sections)</argsstring>
+        <argsstring>(const jsonxx::Object &amp;param, std::string &amp;elementId, bool &amp;scores, bool &amp;sections)</argsstring>
         <name>ParseContextAction</name>
         <param>
-          <type>jsonxx::Object</type>
+          <type>const jsonxx::Object &amp;</type>
           <declname>param</declname>
         </param>
         <param>
@@ -51,20 +53,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="50" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="61" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a660221d78813ca0aebbfe675f60ec799" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a87a233ce4514a41fa4694b0ae8d1ef32" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::EditorToolkitShared::ParseDeleteAction</definition>
-        <argsstring>(jsonxx::Object param, std::string &amp;elementId)</argsstring>
+        <argsstring>(const jsonxx::Object &amp;param, std::string &amp;elementId, DeleteNavigation &amp;navigation)</argsstring>
         <name>ParseDeleteAction</name>
         <param>
-          <type>jsonxx::Object</type>
+          <type>const jsonxx::Object &amp;</type>
           <declname>param</declname>
         </param>
         <param>
           <type>std::string &amp;</type>
           <declname>elementId</declname>
+        </param>
+        <param>
+          <type>DeleteNavigation &amp;</type>
+          <declname>navigation</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -72,15 +78,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="51" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="62" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a52968d7dd78b5292ad67487c01c92914" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1ad1c1b85adba6703bb24e4546b268c69a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::EditorToolkitShared::ParseDragAction</definition>
-        <argsstring>(jsonxx::Object param, std::string &amp;elementId, int &amp;x, int &amp;y)</argsstring>
+        <argsstring>(const jsonxx::Object &amp;param, std::string &amp;elementId, int &amp;x, int &amp;y)</argsstring>
         <name>ParseDragAction</name>
         <param>
-          <type>jsonxx::Object</type>
+          <type>const jsonxx::Object &amp;</type>
           <declname>param</declname>
         </param>
         <param>
@@ -101,15 +107,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="52" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="63" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a0dad73969622befb6dcf4329d2cdec11" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a6eaf591a28bd627390c5435810c4a00e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::EditorToolkitShared::ParseKeyDownAction</definition>
-        <argsstring>(jsonxx::Object param, std::string &amp;elementid, int &amp;key, bool &amp;shiftKey, bool &amp;ctrlKey)</argsstring>
+        <argsstring>(const jsonxx::Object &amp;param, std::string &amp;elementid, int &amp;key, bool &amp;shiftKey, bool &amp;ctrlKey)</argsstring>
         <name>ParseKeyDownAction</name>
         <param>
-          <type>jsonxx::Object</type>
+          <type>const jsonxx::Object &amp;</type>
           <declname>param</declname>
         </param>
         <param>
@@ -134,15 +140,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="53" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="64" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a4d145a1803c897b038e49a0bea05eda1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a4b80ed0b4c6b93c74cb9326ee1c9fb2d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::EditorToolkitShared::ParseInsertAction</definition>
-        <argsstring>(jsonxx::Object param, std::string &amp;elementName, std::string &amp;elementId, std::string &amp;insertMode)</argsstring>
+        <argsstring>(const jsonxx::Object &amp;param, std::string &amp;elementName, std::string &amp;elementId, std::string &amp;insertMode)</argsstring>
         <name>ParseInsertAction</name>
         <param>
-          <type>jsonxx::Object</type>
+          <type>const jsonxx::Object &amp;</type>
           <declname>param</declname>
         </param>
         <param>
@@ -163,15 +169,140 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="54" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="66" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a3171c1b2f56b0f8a63e82d0c1f866459" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a2940a2e04054f083af037cc1f86542cd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::ParseInsertControlAction</definition>
+        <argsstring>(const jsonxx::Object &amp;param, std::string &amp;elementName, std::string &amp;startId, std::string &amp;endId)</argsstring>
+        <name>ParseInsertControlAction</name>
+        <param>
+          <type>const jsonxx::Object &amp;</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>elementName</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>startId</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>endId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="68" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a6a92c54df5d3508623505358bda24d0e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::ParseNavigate</definition>
+        <argsstring>(const jsonxx::Object &amp;param, std::string &amp;elementId, int &amp;direction)</argsstring>
+        <name>ParseNavigate</name>
+        <param>
+          <type>const jsonxx::Object &amp;</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>elementId</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="70" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a9858198425afba1d496333a0b4d12dba" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::ParsePropertiesAction</definition>
+        <argsstring>(const jsonxx::Object &amp;param, std::string &amp;scoreDef)</argsstring>
+        <name>ParsePropertiesAction</name>
+        <param>
+          <type>const jsonxx::Object &amp;</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>scoreDef</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a48640618e3128645c5b27269186ecb77" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::ParseResetCursorAction</definition>
+        <argsstring>(const jsonxx::Object &amp;param, bool &amp;maintainChordMode)</argsstring>
+        <name>ParseResetCursorAction</name>
+        <param>
+          <type>const jsonxx::Object &amp;</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>maintainChordMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="72" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a222da42ab6c3ed9a4d1044d9473f5c66" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::ParseSelectAction</definition>
+        <argsstring>(const jsonxx::Object &amp;param, std::string &amp;elementId, bool &amp;secondary, SelectCustom &amp;custom)</argsstring>
+        <name>ParseSelectAction</name>
+        <param>
+          <type>const jsonxx::Object &amp;</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>elementId</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>secondary</declname>
+        </param>
+        <param>
+          <type>SelectCustom &amp;</type>
+          <declname>custom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="73" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a3fdd4c3ca7ced620ecf9fe65107ae232" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::EditorToolkitShared::ParseSetAction</definition>
-        <argsstring>(jsonxx::Object param, std::string &amp;elementId, std::string &amp;attribute, std::string &amp;value)</argsstring>
+        <argsstring>(const jsonxx::Object &amp;param, std::string &amp;elementId, std::string &amp;attribute, std::string &amp;value)</argsstring>
         <name>ParseSetAction</name>
         <param>
-          <type>jsonxx::Object</type>
+          <type>const jsonxx::Object &amp;</type>
           <declname>param</declname>
         </param>
         <param>
@@ -192,18 +323,121 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="56" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="74" column="10"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="user-defined">
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1ada39214689a10a807eb22ee495b86fdf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1ac1390577dd196bbcbe6c093c80c21303" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool vrv::EditorToolkitShared::Delete</definition>
-        <argsstring>(std::string &amp;elementId)</argsstring>
-        <name>Delete</name>
+        <definition>bool vrv::EditorToolkitShared::ParseSetCursorAction</definition>
+        <argsstring>(const jsonxx::Object &amp;param, std::string &amp;elementId, Cursor::InputMode &amp;inputMode, bool &amp;chordMode)</argsstring>
+        <name>ParseSetCursorAction</name>
+        <param>
+          <type>const jsonxx::Object &amp;</type>
+          <declname>param</declname>
+        </param>
         <param>
           <type>std::string &amp;</type>
           <declname>elementId</declname>
+        </param>
+        <param>
+          <type>Cursor::InputMode &amp;</type>
+          <declname>inputMode</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>chordMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1addd43d2107c8d4dbada66da22fc6dd7b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::ParseUpdateCursorAction</definition>
+        <argsstring>(const jsonxx::Object &amp;param, bool &amp;restMode, bool &amp;chordMode, Cursor::TieMode &amp;tieMode)</argsstring>
+        <name>ParseUpdateCursorAction</name>
+        <param>
+          <type>const jsonxx::Object &amp;</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>restMode</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>chordMode</declname>
+        </param>
+        <param>
+          <type>Cursor::TieMode &amp;</type>
+          <declname>tieMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="78" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a92a828ec7b4d75811a0f820ae5daa6a7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::ParseUpdatePitchAction</definition>
+        <argsstring>(const jsonxx::Object &amp;param, std::string &amp;elementId, data_PITCHNAME &amp;pname, int &amp;oct, data_ACCIDENTAL_WRITTEN &amp;accid, int &amp;midi)</argsstring>
+        <name>ParseUpdatePitchAction</name>
+        <param>
+          <type>const jsonxx::Object &amp;</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>elementId</declname>
+        </param>
+        <param>
+          <type>data_PITCHNAME &amp;</type>
+          <declname>pname</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>oct</declname>
+        </param>
+        <param>
+          <type>data_ACCIDENTAL_WRITTEN &amp;</type>
+          <declname>accid</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>midi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="80" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a1ca587a36091b6698b3bb9a8a47f315c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::SetCursor</definition>
+        <argsstring>(std::string &amp;elementId, Cursor::InputMode inputMode, bool chordMode)</argsstring>
+        <name>SetCursor</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>elementId</declname>
+        </param>
+        <param>
+          <type>Cursor::InputMode</type>
+          <declname>inputMode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>chordMode</declname>
         </param>
         <briefdescription>
 <para>Experimental editor functions. </para>
@@ -212,7 +446,70 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="73" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="100" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a90d8b25572cde90477dfb7555ee2b3df" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::UpdateCursor</definition>
+        <argsstring>(bool restMode, bool chordMode, Cursor::TieMode tieMode)</argsstring>
+        <name>UpdateCursor</name>
+        <param>
+          <type>bool</type>
+          <declname>restMode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>chordMode</declname>
+        </param>
+        <param>
+          <type>Cursor::TieMode</type>
+          <declname>tieMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="101" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a72e6f7c8dce97dc18e4f9bf56829ac04" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::ResetCursor</definition>
+        <argsstring>(bool maintainChordMode)</argsstring>
+        <name>ResetCursor</name>
+        <param>
+          <type>bool</type>
+          <declname>maintainChordMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="102" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a30bbc7fbf7652073ecdb3930dbc5cdf2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::Delete</definition>
+        <argsstring>(std::string &amp;elementId, DeleteNavigation navigation)</argsstring>
+        <name>Delete</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>elementId</declname>
+        </param>
+        <param>
+          <type>DeleteNavigation</type>
+          <declname>navigation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="103" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a9728896e7abd3d2097c6e1cf25a40dd4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -237,7 +534,32 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="74" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="104" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1aa773a87c41921dcae2f6ed6dbf3a4e14" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::InsertControl</definition>
+        <argsstring>(std::string &amp;elementName, std::string &amp;startId, std::string &amp;endId)</argsstring>
+        <name>InsertControl</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>elementName</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>startId</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>endId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="105" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1aaf696f24502ea43820495da69c907cf5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -266,23 +588,69 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="75" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="106" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1adec6af70c1866b34c297aea12f205b86" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a20fd0a7e2857f9835e7e438d3aa8a855" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::Navigate</definition>
+        <argsstring>(std::string &amp;elementId, const int &amp;direction)</argsstring>
+        <name>Navigate</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>elementId</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="107" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1ae83b19912f0abf192d63cf57e63d61ed" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::Select</definition>
+        <argsstring>(std::string &amp;elementId, bool secondary, SelectCustom custom)</argsstring>
+        <name>Select</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>elementId</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>secondary</declname>
+        </param>
+        <param>
+          <type>SelectCustom</type>
+          <declname>custom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="108" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a88576c0607ed729a764e094a65f392a3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::EditorToolkitShared::Set</definition>
-        <argsstring>(std::string &amp;elementId, std::string const &amp;attribute, std::string const &amp;value)</argsstring>
+        <argsstring>(std::string &amp;elementId, const std::string &amp;attribute, const std::string &amp;value)</argsstring>
         <name>Set</name>
         <param>
           <type>std::string &amp;</type>
           <declname>elementId</declname>
         </param>
         <param>
-          <type>std::string const &amp;</type>
+          <type>const std::string &amp;</type>
           <declname>attribute</declname>
         </param>
         <param>
-          <type>std::string const &amp;</type>
+          <type>const std::string &amp;</type>
           <declname>value</declname>
         </param>
         <briefdescription>
@@ -291,23 +659,111 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="76" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="109" column="10"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="protected-attrib">
-      <memberdef kind="variable" id="classvrv_1_1_editor_toolkit_shared_1a0666b8dd6a813bfad07a5d2e4d8ea345" prot="protected" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string vrv::EditorToolkitShared::m_chainedId</definition>
-        <argsstring></argsstring>
-        <name>m_chainedId</name>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a86f18b94f6a90f62df27620ae62b886d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::UpdatePitch</definition>
+        <argsstring>(std::string &amp;elementId, data_PITCHNAME pname, int oct, data_ACCIDENTAL_WRITTEN accid, int midi)</argsstring>
+        <name>UpdatePitch</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>elementId</declname>
+        </param>
+        <param>
+          <type>data_PITCHNAME</type>
+          <declname>pname</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>oct</declname>
+        </param>
+        <param>
+          <type>data_ACCIDENTAL_WRITTEN</type>
+          <declname>accid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>midi</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="95" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="95" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="110" column="10"/>
       </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-type">
+      <memberdef kind="enum" id="classvrv_1_1_editor_toolkit_shared_1af2e2b4564e3132fefd84f8c0d747d5ff" prot="protected" static="no" strong="no">
+        <type>int8_t</type>
+        <name>SelectCustom</name>
+        <enumvalue id="classvrv_1_1_editor_toolkit_shared_1af2e2b4564e3132fefd84f8c0d747d5ffa3a8f207e09c28d7cf29495524700abb0" prot="protected">
+          <name>SELECT_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_editor_toolkit_shared_1af2e2b4564e3132fefd84f8c0d747d5ffa883232315f7ad72d9ad2caaf8f00ac04" prot="protected">
+          <name>SELECT_NOTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_editor_toolkit_shared_1af2e2b4564e3132fefd84f8c0d747d5ffaca4f3c33f7e9751ade1ddf98d0959619" prot="protected">
+          <name>SELECT_TEXT_PARENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="46" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="enum" id="classvrv_1_1_editor_toolkit_shared_1a8059c2964760e0cee36669e0eafd7c4b" prot="protected" static="no" strong="no">
+        <type>int8_t</type>
+        <name>DeleteNavigation</name>
+        <enumvalue id="classvrv_1_1_editor_toolkit_shared_1a8059c2964760e0cee36669e0eafd7c4ba033c20610eb218b7a01bdf9ca15b378a" prot="protected">
+          <name>DELETE_NO_NAVIGATON</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_editor_toolkit_shared_1a8059c2964760e0cee36669e0eafd7c4ba383e8f4411c6dfa8a70ddbe5ae5d4e8c" prot="protected">
+          <name>DELETE_BACKSPACE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_editor_toolkit_shared_1a8059c2964760e0cee36669e0eafd7c4ba11a672d7e82b0b90efcf6af42dc47425" prot="protected">
+          <name>DELETE_FORWARD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="54" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classvrv_1_1_editor_toolkit_shared_1a7967cc7bd6d2e58c93cf3e7ab04a0a65" prot="protected" static="no" mutable="no">
         <type>bool</type>
         <definition>bool vrv::EditorToolkitShared::m_undoPrepared</definition>
@@ -319,11 +775,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="97" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="97" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="150" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="150" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_editor_toolkit_shared_1af3417f72e686b7e41864af290b8209e3" prot="protected" static="no" mutable="no">
-        <type>std::deque&lt; std::string &gt;</type>
-        <definition>std::deque&lt;std::string&gt; vrv::EditorToolkitShared::m_undoStack</definition>
+      <memberdef kind="variable" id="classvrv_1_1_editor_toolkit_shared_1a2fb262832d86524707e5a1d5d85e6ef6" prot="protected" static="no" mutable="no">
+        <type>std::deque&lt; <ref refid="structvrv_1_1_editor_toolkit_shared_1_1_state" kindref="compound">State</ref> &gt;</type>
+        <definition>std::deque&lt;State&gt; vrv::EditorToolkitShared::m_undoStack</definition>
         <argsstring></argsstring>
         <name>m_undoStack</name>
         <briefdescription>
@@ -332,11 +788,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="98" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="98" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="152" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="152" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_editor_toolkit_shared_1af63d6b2e548961146a74a54ed7f4c83e" prot="protected" static="no" mutable="no">
-        <type>std::deque&lt; std::string &gt;</type>
-        <definition>std::deque&lt;std::string&gt; vrv::EditorToolkitShared::m_redoStack</definition>
+      <memberdef kind="variable" id="classvrv_1_1_editor_toolkit_shared_1a09a4fc4a508fd6744b73efac7ec31b51" prot="protected" static="no" mutable="no">
+        <type>std::deque&lt; <ref refid="structvrv_1_1_editor_toolkit_shared_1_1_state" kindref="compound">State</ref> &gt;</type>
+        <definition>std::deque&lt;State&gt; vrv::EditorToolkitShared::m_redoStack</definition>
         <argsstring></argsstring>
         <name>m_redoStack</name>
         <briefdescription>
@@ -345,7 +801,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="99" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="99" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="153" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="153" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_editor_toolkit_shared_1aad0ed4b5fb1f26fdb7273998ed9df88c" prot="protected" static="no" mutable="no">
         <type>size_t</type>
@@ -359,7 +815,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="100" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="100" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="154" column="12" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="154" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_editor_toolkit_shared_1a0f55409d2cfdea8f0ee297d8d9ac2721" prot="protected" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_editor_tree_object" kindref="compound">EditorTreeObject</ref> *</type>
@@ -372,7 +828,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="102" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="102" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="156" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="156" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_editor_toolkit_shared_1a8591f23d2775c9f6ef9e59f342a61771" prot="protected" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_editor_tree_object" kindref="compound">EditorTreeObject</ref> *</type>
@@ -385,7 +841,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="103" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="103" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="157" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="157" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_editor_toolkit_shared_1af8bf81e83f26514448c3633a1d1048a1" prot="protected" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_editor_tree_object" kindref="compound">EditorTreeObject</ref> *</type>
@@ -398,7 +854,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="104" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="104" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="158" column="22" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="158" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -421,7 +877,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="34" column="5"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="35" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a4a37d2d1d164cd92c1d1200bca78c985" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -434,7 +890,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="35" column="13"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="36" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a175437957380f6c62e8c2384b2e03936" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -453,7 +909,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="36" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="36" bodyend="39"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="37" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="37" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a6808a8b0a9acbb58f65762d15a945118" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -475,50 +931,61 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="40" column="10"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a60502d6d24a7c6ef060c80226c2dca92" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>std::string</type>
-        <definition>std::string vrv::EditorToolkitShared::EditInfo</definition>
-        <argsstring>() override</argsstring>
-        <name>EditInfo</name>
-        <reimplements refid="classvrv_1_1_editor_toolkit_1a1be064ecb6ffea1b27712648a19e1312">EditInfo</reimplements>
-        <briefdescription>
-<para>Get information on the last editor function used. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="41" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="41" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a6054ff67a4de58ec592c051388339c34" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a287480a98627c09fd93b36cfaff3a5d6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void vrv::EditorToolkitShared::SetEditInfo</definition>
+        <definition>void vrv::EditorToolkitShared::SetEditStatus</definition>
         <argsstring>()</argsstring>
-        <name>SetEditInfo</name>
+        <name>SetEditStatus</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="59" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="85" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a05ff5edd82a5fe0163301ac5e4ac2abe" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a53b6055249f59bb94c2fb1e8348f6b08" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::EditorToolkitShared::ReloadEditStatus</definition>
+        <argsstring>(const std::string &amp;statusStr, bool insertMode)</argsstring>
+        <name>ReloadEditStatus</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>statusStr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>insertMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="86" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1aa5027775443992dbaa0142b983ed61ad" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void vrv::EditorToolkitShared::PrepareUndo</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(bool ignoreInsertMode=false)</argsstring>
         <name>PrepareUndo</name>
+        <param>
+          <type>bool</type>
+          <declname>ignoreInsertMode</declname>
+          <defval>false</defval>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="60" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="87" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1ae5ca3ac9288161f5190d3bbff1593001" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -531,16 +998,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="61" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="88" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a79b8b73196c0aba17c4de226a45424fe" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a18716a4828abe80452392204d682ddaf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::EditorToolkitShared::ReloadState</definition>
-        <argsstring>(const std::string &amp;data)</argsstring>
+        <argsstring>(const State &amp;state)</argsstring>
         <name>ReloadState</name>
         <param>
-          <type>const std::string &amp;</type>
-          <declname>data</declname>
+          <type>const <ref refid="structvrv_1_1_editor_toolkit_shared_1_1_state" kindref="compound">State</ref> &amp;</type>
+          <declname>state</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -548,7 +1015,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="62" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="89" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a665694e3c0f41cc6af55e1ef359b0509" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -561,7 +1028,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="63" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="90" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a7825447e2a43b3a492d1464e2a719653" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -574,7 +1041,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="64" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="91" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a06884136b6e244d19d5e38616d5b8558" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -587,7 +1054,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="65" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="92" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1aa2f47c50c7fc00ba2e2ab76e554d6bd5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -600,7 +1067,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="66" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="93" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1ac8042cc8c64e719ec3bc2fec4bd1d4f1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -613,7 +1080,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="67" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="94" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a86cd1384662130ae64a0d898494880fc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -626,7 +1093,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="79" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="114" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1ade7f13c88a349af79aa1513d6fe295b4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -643,16 +1110,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="80" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="115" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1ac3b399758e8dec0b24a97404eb11612f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1ace9a9dec26b4949382c7c1c200896e94" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::EditorToolkitShared::ContextForScores</definition>
-        <argsstring>(bool editInfo)</argsstring>
+        <argsstring>(bool updateResponse)</argsstring>
         <name>ContextForScores</name>
         <param>
           <type>bool</type>
-          <declname>editInfo</declname>
+          <declname>updateResponse</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -660,16 +1127,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="81" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="116" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a2f998b3fde87e395ee1a8c3c32449d4c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a4083aa6ca2133737e4180aa85ff6e424" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool vrv::EditorToolkitShared::ContextForSections</definition>
-        <argsstring>(bool editInfo)</argsstring>
+        <argsstring>(bool updateResponse)</argsstring>
         <name>ContextForSections</name>
         <param>
           <type>bool</type>
-          <declname>editInfo</declname>
+          <declname>updateResponse</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -677,16 +1144,29 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="82" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="117" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a6c54d76479952f86e0ef9f16dfc38aff" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
-        <definition>Object* vrv::EditorToolkitShared::GetChainedElement</definition>
-        <argsstring>(std::string &amp;elementId)</argsstring>
-        <name>GetChainedElement</name>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a0580e51688af59a800dfc52a59f0738b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::GetScoreDef</definition>
+        <argsstring>()</argsstring>
+        <name>GetScoreDef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="119" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a8d37f2fba9f5cba7925792c53b3835f8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::EditorToolkitShared::SetScoreDef</definition>
+        <argsstring>(const std::string scoreDef)</argsstring>
+        <name>SetScoreDef</name>
         <param>
-          <type>std::string &amp;</type>
-          <declname>elementId</declname>
+          <type>const std::string</type>
+          <declname>scoreDef</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -694,7 +1174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="84" column="12"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="120" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a011dadcfeddfc9e601356f0e99c8e1a6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -720,7 +1200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="86" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="122" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1aec609411675eeb8df85b679151e25524" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -741,7 +1221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="87" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="123" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a8837d0a75098c21dd9f9b6ab1e7d2b2f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -762,7 +1242,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="88" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="124" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a3a4fe0b894efc16d6536e07116fca74c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>ArrayOfConstObjects</type>
@@ -779,7 +1259,280 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="90" column="25"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="126" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1ae058b8ba2cd0cf81f68eb824190f74f9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::EditorToolkitShared::CollectReferringObjects</definition>
+        <argsstring>(const Object *element, std::set&lt; std::string &gt; &amp;toDelete, std::set&lt; const Object * &gt; &amp;visited)</argsstring>
+        <name>CollectReferringObjects</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>std::set&lt; std::string &gt; &amp;</type>
+          <declname>toDelete</declname>
+        </param>
+        <param>
+          <type>std::set&lt; const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> * &gt; &amp;</type>
+          <declname>visited</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="128" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a1ff02a238e1cfebfab7a5d9484a0b52a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::EditorToolkitShared::PostProcessDeleteObjects</definition>
+        <argsstring>(const Object *element, std::set&lt; std::string &gt; &amp;toPostProcess)</argsstring>
+        <name>PostProcessDeleteObjects</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>std::set&lt; std::string &gt; &amp;</type>
+          <declname>toPostProcess</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="130" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1afe8002141e388f9fe365843bf83cedc5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::EditorToolkitShared::PostProcessDelete</definition>
+        <argsstring>(const std::string &amp;elementId)</argsstring>
+        <name>PostProcessDelete</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>elementId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="131" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1ac3fd2d8820b4e39054f59ca5a2c392ba" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::EditorToolkitShared::PostEditRestriction</definition>
+        <argsstring>(Object *element)</argsstring>
+        <name>PostEditRestriction</name>
+        <param>
+          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="133" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1aba3c28f434b3c426b5b243ec583f4ad3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::EditorToolkitShared::MoveCursor</definition>
+        <argsstring>(LayerElement *element, bool maintainChordMode=false)</argsstring>
+        <name>MoveCursor</name>
+        <param>
+          <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>maintainChordMode</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="135" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a669bca66eac8160e98a7093b699b061b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>data_ACCIDENTAL_WRITTEN</type>
+        <definition>data_ACCIDENTAL_WRITTEN vrv::EditorToolkitShared::GetAccidBefore</definition>
+        <argsstring>(const LayerElement *element, data_PITCHNAME pname, int oct)</argsstring>
+        <name>GetAccidBefore</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>data_PITCHNAME</type>
+          <declname>pname</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>oct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="137" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1acacfd6fb61f3b991c5a0b2c32bc995f4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; data_ACCIDENTAL_WRITTEN, bool &gt;</type>
+        <definition>std::pair&lt;data_ACCIDENTAL_WRITTEN, bool&gt; vrv::EditorToolkitShared::GetActualAccid</definition>
+        <argsstring>(Object *element, data_ACCIDENTAL_WRITTEN accid)</argsstring>
+        <name>GetActualAccid</name>
+        <param>
+          <type><ref refid="classvrv_1_1_object" kindref="compound">Object</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>data_ACCIDENTAL_WRITTEN</type>
+          <declname>accid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="138" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a835d37acca42bb91e1c692b88ee0c86d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
+        <definition>const Measure* vrv::EditorToolkitShared::GetPreviousMeasure</definition>
+        <argsstring>(const Measure *measure)</argsstring>
+        <name>GetPreviousMeasure</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
+          <declname>measure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="140" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1aff153df3b56fc3e31cf91202ff2b6d11" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+        <definition>const Staff* vrv::EditorToolkitShared::GetPreviousStaff</definition>
+        <argsstring>(const Staff *staff)</argsstring>
+        <name>GetPreviousStaff</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <declname>staff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="141" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1aee7813a6a7a4f19c0bb43d7cc39f417b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
+        <definition>const Layer* vrv::EditorToolkitShared::GetPreviousLayer</definition>
+        <argsstring>(const Layer *layer)</argsstring>
+        <name>GetPreviousLayer</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="142" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a7a7a321101044296a4f90520124c0e1c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
+        <definition>const Measure* vrv::EditorToolkitShared::GetNextMeasure</definition>
+        <argsstring>(const Measure *measure)</argsstring>
+        <name>GetNextMeasure</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
+          <declname>measure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="143" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a7d636659c706facc6cc5d78235cb1d52" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+        <definition>const Staff* vrv::EditorToolkitShared::GetNextStaff</definition>
+        <argsstring>(const Staff *staff)</argsstring>
+        <name>GetNextStaff</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
+          <declname>staff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="144" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a43673df30a8afa9d4c63c23327c152c8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
+        <definition>const Layer* vrv::EditorToolkitShared::GetNextLayer</definition>
+        <argsstring>(const Layer *layer)</argsstring>
+        <name>GetNextLayer</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_layer" kindref="compound">Layer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="145" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classvrv_1_1_editor_toolkit_shared_1a97c0cc8605abb326b4a6f1433c80ff44" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MidiSpelling</type>
+        <definition>MidiSpelling vrv::EditorToolkitShared::SpellMidi</definition>
+        <argsstring>(int midi, const data_KEYSIGNATURE &amp;keySig)</argsstring>
+        <name>SpellMidi</name>
+        <param>
+          <type>int</type>
+          <declname>midi</declname>
+        </param>
+        <param>
+          <type>const data_KEYSIGNATURE &amp;</type>
+          <declname>keySig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="166" column="18"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -811,6 +1564,32 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="51">
+        <label>vrv::LayerElement</label>
+        <link refid="classvrv_1_1_layer_element"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="57" relation="usage">
+          <edgelabel>m_crossLayer</edgelabel>
+        </childnode>
+        <childnode refid="62" relation="usage">
+          <edgelabel>m_crossStaff</edgelabel>
+        </childnode>
+        <childnode refid="75" relation="usage">
+          <edgelabel>m_alignment</edgelabel>
+          <edgelabel>m_graceAlignment</edgelabel>
+        </childnode>
+      </node>
       <node id="45">
         <label>vrv::Doc</label>
         <link refid="classvrv_1_1_doc"/>
@@ -827,12 +1606,23 @@
           <edgelabel>m_expansionMap</edgelabel>
         </childnode>
       </node>
+      <node id="109">
+        <label>AttNoteVisMensural</label>
+      </node>
       <node id="8">
         <label>vrv::PageElement</label>
         <link refid="classvrv_1_1_page_element"/>
         <childnode refid="5" relation="public-inheritance">
         </childnode>
         <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>vrv::LinkingInterface</label>
+        <link refid="classvrv_1_1_linking_interface"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="55" relation="public-inheritance">
         </childnode>
       </node>
       <node id="24">
@@ -843,7 +1633,7 @@
         <link refid="classvrv_1_1_editor_toolkit_shared"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="49" relation="usage">
+        <childnode refid="114" relation="usage">
           <edgelabel>m_currentContext</edgelabel>
           <edgelabel>m_scoreContext</edgelabel>
           <edgelabel>m_sectionContext</edgelabel>
@@ -859,9 +1649,19 @@
         <childnode refid="9" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="50">
+      <node id="63">
         <label>vrv::VisibilityDrawingInterface</label>
         <link refid="classvrv_1_1_visibility_drawing_interface"/>
+      </node>
+      <node id="88">
+        <label>AttDurationRatio</label>
+      </node>
+      <node id="76">
+        <label>vrv::StemmedDrawingInterface</label>
+        <link refid="classvrv_1_1_stemmed_drawing_interface"/>
+        <childnode refid="77" relation="usage">
+          <edgelabel>m_drawingStem</edgelabel>
+        </childnode>
       </node>
       <node id="39">
         <label>vrv::OptionBool</label>
@@ -871,6 +1671,33 @@
       </node>
       <node id="28">
         <label>AttSystems</label>
+      </node>
+      <node id="62">
+        <label>vrv::Staff</label>
+        <link refid="classvrv_1_1_staff"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+        <childnode refid="65" relation="usage">
+          <edgelabel>m_drawingTuning</edgelabel>
+        </childnode>
+        <childnode refid="67" relation="usage">
+          <edgelabel>m_drawingStaffDef</edgelabel>
+        </childnode>
+      </node>
+      <node id="95">
+        <label>AttNoteGes</label>
       </node>
       <node id="18">
         <label>AttBarring</label>
@@ -890,8 +1717,20 @@
       <node id="30">
         <label>AttDistances</label>
       </node>
+      <node id="84">
+        <label>AttBeamSecondary</label>
+      </node>
+      <node id="103">
+        <label>AttColoration</label>
+      </node>
       <node id="9">
         <label>AttTyped</label>
+      </node>
+      <node id="49">
+        <label>vrv::Cursor</label>
+        <link refid="classvrv_1_1_cursor"/>
+        <childnode refid="50" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="6">
         <label>vrv::BoundingBox</label>
@@ -932,12 +1771,12 @@
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="49">
+      <node id="114">
         <label>vrv::EditorTreeObject</label>
         <link refid="classvrv_1_1_editor_tree_object"/>
         <childnode refid="5" relation="public-inheritance">
         </childnode>
-        <childnode refid="50" relation="public-inheritance">
+        <childnode refid="63" relation="public-inheritance">
         </childnode>
         <childnode refid="5" relation="usage">
           <edgelabel>m_object</edgelabel>
@@ -946,12 +1785,73 @@
       <node id="23">
         <label>AttMmTempo</label>
       </node>
+      <node id="91">
+        <label>vrv::OffsetInterface</label>
+        <link refid="classvrv_1_1_offset_interface"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="92" relation="public-inheritance">
+        </childnode>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="37">
         <label>vrv::Option</label>
         <link refid="classvrv_1_1_option"/>
       </node>
       <node id="22">
         <label>AttMidiTempo</label>
+      </node>
+      <node id="61">
+        <label>AttVisibility</label>
+      </node>
+      <node id="50">
+        <label>vrv::Note</label>
+        <link refid="classvrv_1_1_note"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+        <childnode refid="91" relation="public-inheritance">
+        </childnode>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+        <childnode refid="102" relation="public-inheritance">
+        </childnode>
+        <childnode refid="103" relation="public-inheritance">
+        </childnode>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+        <childnode refid="104" relation="public-inheritance">
+        </childnode>
+        <childnode refid="105" relation="public-inheritance">
+        </childnode>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+        <childnode refid="106" relation="public-inheritance">
+        </childnode>
+        <childnode refid="107" relation="public-inheritance">
+        </childnode>
+        <childnode refid="108" relation="public-inheritance">
+        </childnode>
+        <childnode refid="109" relation="public-inheritance">
+        </childnode>
+        <childnode refid="110" relation="public-inheritance">
+        </childnode>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="42">
         <label>vrv::OptionString</label>
@@ -969,11 +1869,49 @@
         <childnode refid="13" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="72">
+        <label>AttStaffDefVis</label>
+      </node>
+      <node id="60">
+        <label>AttNInteger</label>
+      </node>
+      <node id="57">
+        <label>vrv::Layer</label>
+        <link refid="classvrv_1_1_layer"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>AttFermataPresent</label>
+      </node>
       <node id="31">
         <label>AttEndings</label>
       </node>
+      <node id="86">
+        <label>AttDurationLog</label>
+      </node>
       <node id="27">
         <label>AttSpacing</label>
+      </node>
+      <node id="52">
+        <label>vrv::FacsimileInterface</label>
+        <link refid="classvrv_1_1_facsimile_interface"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="40">
         <label>vrv::OptionJson</label>
@@ -981,10 +1919,27 @@
         <childnode refid="37" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="69">
+        <label>AttNotationType</label>
+      </node>
       <node id="43">
         <label>vrv::OptionDbl</label>
         <link refid="classvrv_1_1_option_dbl"/>
         <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>vrv::PitchInterface</label>
+        <link refid="classvrv_1_1_pitch_interface"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+        <childnode refid="96" relation="public-inheritance">
+        </childnode>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+        <childnode refid="98" relation="public-inheritance">
         </childnode>
       </node>
       <node id="38">
@@ -1000,6 +1955,22 @@
       </node>
       <node id="25">
         <label>AttOctaveDefault</label>
+      </node>
+      <node id="56">
+        <label>AttCoordX1</label>
+      </node>
+      <node id="112">
+        <label>AttStringtab</label>
+      </node>
+      <node id="58">
+        <label>vrv::DrawingListInterface</label>
+        <link refid="classvrv_1_1_drawing_list_interface"/>
+      </node>
+      <node id="97">
+        <label>AttPitch</label>
+      </node>
+      <node id="64">
+        <label>AttCoordY1</label>
       </node>
       <node id="35">
         <label>vrv::Options</label>
@@ -1112,6 +2083,39 @@
           <edgelabel>m_drawingScoreDef</edgelabel>
         </childnode>
       </node>
+      <node id="81">
+        <label>AttAltSym</label>
+      </node>
+      <node id="82">
+        <label>vrv::DurationInterface</label>
+        <link refid="classvrv_1_1_duration_interface"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="83" relation="public-inheritance">
+        </childnode>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+        <childnode refid="87" relation="public-inheritance">
+        </childnode>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+        <childnode refid="90" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>vrv::Tuning</label>
+        <link refid="classvrv_1_1_tuning"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="11">
         <label>vrv::PageMilestoneEnd</label>
         <link refid="classvrv_1_1_page_milestone_end"/>
@@ -1121,14 +2125,61 @@
           <edgelabel>m_start</edgelabel>
         </childnode>
       </node>
+      <node id="100">
+        <label>AttStaffLoc</label>
+      </node>
+      <node id="113">
+        <label>AttTiePresent</label>
+      </node>
       <node id="48">
         <label>vrv::ExpansionMap</label>
         <link refid="classvrv_1_1_expansion_map"/>
+      </node>
+      <node id="101">
+        <label>AttStaffLocPitched</label>
+      </node>
+      <node id="68">
+        <label>vrv::StaffDefDrawingInterface</label>
+        <link refid="classvrv_1_1_staff_def_drawing_interface"/>
+      </node>
+      <node id="110">
+        <label>AttStems</label>
       </node>
       <node id="46">
         <label>vrv::PageRange</label>
         <link refid="classvrv_1_1_page_range"/>
         <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>AttAugmentDots</label>
+      </node>
+      <node id="67">
+        <label>vrv::StaffDef</label>
+        <link refid="classvrv_1_1_staff_def"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+        <childnode refid="74" relation="public-inheritance">
         </childnode>
       </node>
       <node id="44">
@@ -1137,11 +2188,51 @@
         <childnode refid="37" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="55">
+        <label>AttLinking</label>
+      </node>
+      <node id="92">
+        <label>AttVisualOffsetHo</label>
+      </node>
       <node id="20">
         <label>AttLyricStyle</label>
       </node>
+      <node id="98">
+        <label>AttPitchGes</label>
+      </node>
+      <node id="53">
+        <label>AttFacsimile</label>
+      </node>
+      <node id="96">
+        <label>AttOctave</label>
+      </node>
+      <node id="99">
+        <label>vrv::PositionInterface</label>
+        <link refid="classvrv_1_1_position_interface"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>AttTransposition</label>
+      </node>
+      <node id="106">
+        <label>AttHarmonicFunction</label>
+      </node>
       <node id="19">
         <label>AttDurationDefault</label>
+      </node>
+      <node id="78">
+        <label>AttGraced</label>
+      </node>
+      <node id="59">
+        <label>AttCue</label>
+      </node>
+      <node id="73">
+        <label>AttStaffDefVisTablature</label>
       </node>
       <node id="14">
         <label>vrv::ScoreDef</label>
@@ -1161,6 +2252,14 @@
         <childnode refid="34" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="80">
+        <label>vrv::AltSymInterface</label>
+        <link refid="classvrv_1_1_alt_sym_interface"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="36">
         <label>vrv::OptionIntMap</label>
         <link refid="classvrv_1_1_option_int_map"/>
@@ -1170,14 +2269,32 @@
       <node id="32">
         <label>AttOptimization</label>
       </node>
+      <node id="75">
+        <label>vrv::Alignment</label>
+        <link refid="classvrv_1_1_alignment"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>AttNoteHeads</label>
+      </node>
       <node id="26">
         <label>AttPianoPedals</label>
+      </node>
+      <node id="71">
+        <label>AttStaffDefLog</label>
+      </node>
+      <node id="111">
+        <label>AttStemsCmn</label>
       </node>
       <node id="41">
         <label>vrv::OptionArray</label>
         <link refid="classvrv_1_1_option_array"/>
         <childnode refid="37" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="90">
+        <label>AttStaffIdent</label>
       </node>
       <node id="2">
         <label>vrv::EditorToolkit</label>
@@ -1188,6 +2305,9 @@
         <childnode refid="45" relation="usage">
           <edgelabel>m_doc</edgelabel>
         </childnode>
+        <childnode refid="49" relation="usage">
+          <edgelabel>m_cursor</edgelabel>
+        </childnode>
       </node>
       <node id="5">
         <label>vrv::Object</label>
@@ -1195,12 +2315,51 @@
         <childnode refid="6" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="107">
+        <label>AttMidiVelocity</label>
+      </node>
+      <node id="77">
+        <label>vrv::Stem</label>
+        <link refid="classvrv_1_1_stem"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>AttVisualOffsetVo</label>
+      </node>
+      <node id="102">
+        <label>AttColor</label>
+      </node>
+      <node id="79">
+        <label>AttStemVis</label>
+      </node>
+      <node id="85">
+        <label>AttDurationGes</label>
+      </node>
       <node id="21">
         <label>AttMeasureNumbers</label>
+      </node>
+      <node id="87">
+        <label>AttDurationQuality</label>
+      </node>
+      <node id="70">
+        <label>AttScalable</label>
       </node>
       <node id="29">
         <label>vrv::ObjectListInterface</label>
         <link refid="classvrv_1_1_object_list_interface"/>
+      </node>
+      <node id="66">
+        <label>AttTuningLog</label>
+      </node>
+      <node id="104">
+        <label>AttExtSymAuth</label>
       </node>
       <node id="4">
         <label>vrv::Page</label>
@@ -1224,59 +2383,112 @@
       <node id="12">
         <label>AttLabelled</label>
       </node>
+      <node id="105">
+        <label>AttExtSymNames</label>
+      </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="32" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="32" bodyend="105"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" line="33" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editortoolkit_shared.h" bodystart="33" bodyend="167"/>
     <listofallmembers>
-      <member refid="classvrv_1_1_editor_toolkit_1a32f50765b06401974ba0ca6d74ed2895" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>AppendChild</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1a3c2e1d4a870184f7e541a57ad5f9da26" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>AppendChild</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1a06884136b6e244d19d5e38616d5b8558" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>CanRedo</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1a7825447e2a43b3a492d1464e2a719653" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>CanUndo</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1a1e25a619a451ce20528bb997b4ab1188" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>Chain</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a741fc9065477c0c55833e884798f084a" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>Chain</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1a86cd1384662130ae64a0d898494880fc" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ClearContext</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1ae058b8ba2cd0cf81f68eb824190f74f9" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>CollectReferringObjects</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1ade7f13c88a349af79aa1513d6fe295b4" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ContextForElement</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1a011dadcfeddfc9e601356f0e99c8e1a6" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ContextForObject</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1aec609411675eeb8df85b679151e25524" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ContextForObjects</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1a8837d0a75098c21dd9f9b6ab1e7d2b2f" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ContextForReferences</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1ac3b399758e8dec0b24a97404eb11612f" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ContextForScores</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1a2f998b3fde87e395ee1a8c3c32449d4c" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ContextForSections</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1ada39214689a10a807eb22ee495b86fdf" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>Delete</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1ace9a9dec26b4949382c7c1c200896e94" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ContextForScores</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a4083aa6ca2133737e4180aa85ff6e424" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ContextForSections</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a30bbc7fbf7652073ecdb3930dbc5cdf2" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>Delete</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a8059c2964760e0cee36669e0eafd7c4ba383e8f4411c6dfa8a70ddbe5ae5d4e8c" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>DELETE_BACKSPACE</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a8059c2964760e0cee36669e0eafd7c4ba11a672d7e82b0b90efcf6af42dc47425" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>DELETE_FORWARD</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a8059c2964760e0cee36669e0eafd7c4ba033c20610eb218b7a01bdf9ca15b378a" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>DELETE_NO_NAVIGATON</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a8059c2964760e0cee36669e0eafd7c4b" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>DeleteNavigation</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1a9728896e7abd3d2097c6e1cf25a40dd4" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>Drag</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1a60502d6d24a7c6ef060c80226c2dca92" prot="public" virt="virtual"><scope>vrv::EditorToolkitShared</scope><name>EditInfo</name></member>
       <member refid="classvrv_1_1_editor_toolkit_1a6dd004f7d4c73c36012a459434d15c6f" prot="public" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>EditorToolkit</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1a55adfbd016ea1865347b06e116feec8b" prot="public" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>EditorToolkitShared</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1a6c54d76479952f86e0ef9f16dfc38aff" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>GetChainedElement</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1a2f0eeaf4c5360e9a22af1dd90219d901" prot="public" virt="virtual"><scope>vrv::EditorToolkitShared</scope><name>EditResponse</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1ad2636f4c7e3bdac1ff16d473c01f8af2" prot="public" virt="virtual"><scope>vrv::EditorToolkitShared</scope><name>EditStatus</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a669bca66eac8160e98a7093b699b061b" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>GetAccidBefore</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1acacfd6fb61f3b991c5a0b2c32bc995f4" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>GetActualAccid</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1ae5ca3ac9288161f5190d3bbff1593001" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>GetCurrentState</name></member>
       <member refid="classvrv_1_1_editor_toolkit_1a82f2a31a881fff8e957912e6a488e6e1" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>GetElement</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a43673df30a8afa9d4c63c23327c152c8" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>GetNextLayer</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a7a7a321101044296a4f90520124c0e1c" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>GetNextMeasure</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a7d636659c706facc6cc5d78235cb1d52" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>GetNextStaff</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1aee7813a6a7a4f19c0bb43d7cc39f417b" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>GetPreviousLayer</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a835d37acca42bb91e1c692b88ee0c86d" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>GetPreviousMeasure</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1aff153df3b56fc3e31cf91202ff2b6d11" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>GetPreviousStaff</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1a3a4fe0b894efc16d6536e07116fca74c" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>GetScoreBasedChildrenFor</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_1a105edaaecf92bbee719781edbd3313aa" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>InsertAfter</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_1a640e3c05651e69c09c2c6f4987a10b0e" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>InsertBefore</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a0580e51688af59a800dfc52a59f0738b" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>GetScoreDef</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1ad1511dd6a2504934e3a7a312c55b9956" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>InsertAfter</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1a0dc96dbfa7409e2e2b85868febac3f4c" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>InsertBefore</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1aa773a87c41921dcae2f6ed6dbf3a4e14" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>InsertControl</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1a62737deeaa34a8f354c3876d81945d05" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>InsertMode</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1aaf696f24502ea43820495da69c907cf5" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>KeyDown</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1a0666b8dd6a813bfad07a5d2e4d8ea345" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_chainedId</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1af73136c951b50ee2e4e13dbaa400d0ad" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_chainedId</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1af8bf81e83f26514448c3633a1d1048a1" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_currentContext</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1a28113ce32e849c87316c87b2e9217f37" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_cursor</name></member>
       <member refid="classvrv_1_1_editor_toolkit_1a7f13a9e3501c89738646d52704854230" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_doc</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_1aab58ec0ad523f9b339bde7dd1fff289e" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_editInfo</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1af63d6b2e548961146a74a54ed7f4c83e" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_redoStack</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1afda6e14eef758c086da4854d7447203c" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_editResponse</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1afcd4f6c05718558567367e4671edd56c" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_editStatus</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1a23a46e854711b755deffb6856888ec56" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_options</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a09a4fc4a508fd6744b73efac7ec31b51" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_redoStack</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1a0f55409d2cfdea8f0ee297d8d9ac2721" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_scoreContext</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1a8591f23d2775c9f6ef9e59f342a61771" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_sectionContext</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1aa8a38438ff48985252eda98f77094944" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_selectionClassId</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1a9d360d8f5073d778ebaf79f3874f3582" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_selectionId</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1a106a2d50541381f20650654216e0299b" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_selectionSecondaryId</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1aad0ed4b5fb1f26fdb7273998ed9df88c" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_undoMemoryUsage</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1a7967cc7bd6d2e58c93cf3e7ab04a0a65" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_undoPrepared</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1af3417f72e686b7e41864af290b8209e3" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_undoStack</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a2fb262832d86524707e5a1d5d85e6ef6" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_undoStack</name></member>
       <member refid="classvrv_1_1_editor_toolkit_1aee2461420e8735846056fb6fd9b33f40" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>m_view</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1abefa2dcd749a1ef1271fa671231671f0" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseContextAction</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1a660221d78813ca0aebbfe675f60ec799" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseDeleteAction</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1a52968d7dd78b5292ad67487c01c92914" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseDragAction</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1aba3c28f434b3c426b5b243ec583f4ad3" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>MoveCursor</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a20fd0a7e2857f9835e7e438d3aa8a855" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>Navigate</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1aea7f982eda641f2d108a51f235509ec1" prot="public" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>OptionsChanged</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1ab55a8c526e00244d7bc94e2bfab281e5" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseContextAction</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a87a233ce4514a41fa4694b0ae8d1ef32" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseDeleteAction</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1ad1c1b85adba6703bb24e4546b268c69a" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseDragAction</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1a175437957380f6c62e8c2384b2e03936" prot="public" virt="virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseEditorAction</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1a6808a8b0a9acbb58f65762d15a945118" prot="public" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseEditorAction</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1a4d145a1803c897b038e49a0bea05eda1" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseInsertAction</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1a0dad73969622befb6dcf4329d2cdec11" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseKeyDownAction</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1a3171c1b2f56b0f8a63e82d0c1f866459" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseSetAction</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a4b80ed0b4c6b93c74cb9326ee1c9fb2d" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseInsertAction</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a2940a2e04054f083af037cc1f86542cd" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseInsertControlAction</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a6eaf591a28bd627390c5435810c4a00e" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseKeyDownAction</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a6a92c54df5d3508623505358bda24d0e" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseNavigate</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a9858198425afba1d496333a0b4d12dba" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParsePropertiesAction</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a48640618e3128645c5b27269186ecb77" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseResetCursorAction</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a222da42ab6c3ed9a4d1044d9473f5c66" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseSelectAction</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a3fdd4c3ca7ced620ecf9fe65107ae232" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseSetAction</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1ac1390577dd196bbcbe6c093c80c21303" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseSetCursorAction</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1addd43d2107c8d4dbada66da22fc6dd7b" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseUpdateCursorAction</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a92a828ec7b4d75811a0f820ae5daa6a7" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ParseUpdatePitchAction</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1ac3fd2d8820b4e39054f59ca5a2c392ba" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>PostEditRestriction</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1afe8002141e388f9fe365843bf83cedc5" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>PostProcessDelete</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a1ff02a238e1cfebfab7a5d9484a0b52a" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>PostProcessDeleteObjects</name></member>
       <member refid="classvrv_1_1_editor_toolkit_1a3fd8664fe8b9ec4be7162e656b067f06" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>PrepareInsertion</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1a05ff5edd82a5fe0163301ac5e4ac2abe" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>PrepareUndo</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1aa5027775443992dbaa0142b983ed61ad" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>PrepareUndo</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1ac8042cc8c64e719ec3bc2fec4bd1d4f1" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>Redo</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1a79b8b73196c0aba17c4de226a45424fe" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ReloadState</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1adec6af70c1866b34c297aea12f205b86" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>Set</name></member>
-      <member refid="classvrv_1_1_editor_toolkit_shared_1a6054ff67a4de58ec592c051388339c34" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>SetEditInfo</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a53b6055249f59bb94c2fb1e8348f6b08" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ReloadEditStatus</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a18716a4828abe80452392204d682ddaf" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ReloadState</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a72e6f7c8dce97dc18e4f9bf56829ac04" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ResetCursor</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1a7fa65855f8083e0c3b97550f2df8d3f5" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ResetSelect</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_1aafdd940f7604e889c3ae0fb5c80f550b" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>ResolveElement</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1ae83b19912f0abf192d63cf57e63d61ed" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>Select</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1af2e2b4564e3132fefd84f8c0d747d5ffa3a8f207e09c28d7cf29495524700abb0" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>SELECT_NONE</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1af2e2b4564e3132fefd84f8c0d747d5ffa883232315f7ad72d9ad2caaf8f00ac04" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>SELECT_NOTE</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1af2e2b4564e3132fefd84f8c0d747d5ffaca4f3c33f7e9751ade1ddf98d0959619" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>SELECT_TEXT_PARENT</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1af2e2b4564e3132fefd84f8c0d747d5ff" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>SelectCustom</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a88576c0607ed729a764e094a65f392a3" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>Set</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a1ca587a36091b6698b3bb9a8a47f315c" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>SetCursor</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a287480a98627c09fd93b36cfaff3a5d6" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>SetEditStatus</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a8d37f2fba9f5cba7925792c53b3835f8" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>SetScoreDef</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a97c0cc8605abb326b4a6f1433c80ff44" prot="private" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>SpellMidi</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1a665694e3c0f41cc6af55e1ef359b0509" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>TrimUndoMemory</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1aa2f47c50c7fc00ba2e2ab76e554d6bd5" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>Undo</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a90d8b25572cde90477dfb7555ee2b3df" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>UpdateCursor</name></member>
+      <member refid="classvrv_1_1_editor_toolkit_shared_1a86f18b94f6a90f62df27620ae62b886d" prot="protected" virt="non-virtual"><scope>vrv::EditorToolkitShared</scope><name>UpdatePitch</name></member>
       <member refid="classvrv_1_1_editor_toolkit_1a5357f6dafd2f655359871f881e3209c6" prot="public" virt="virtual"><scope>vrv::EditorToolkitShared</scope><name>~EditorToolkit</name></member>
       <member refid="classvrv_1_1_editor_toolkit_shared_1a4a37d2d1d164cd92c1d1200bca78c985" prot="public" virt="virtual"><scope>vrv::EditorToolkitShared</scope><name>~EditorToolkitShared</name></member>
     </listofallmembers>

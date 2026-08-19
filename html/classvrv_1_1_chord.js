@@ -14,6 +14,7 @@ var classvrv_1_1_chord =
     [ "CalculateNoteGroups", "classvrv_1_1_chord.html#a78ce2b5d8ba517a9b3ee539e1807f19e", null ],
     [ "ClearNoteGroups", "classvrv_1_1_chord.html#a9d71b290ca43301cbdf38fd58347a8bf", null ],
     [ "Clone", "classvrv_1_1_chord.html#add9d8dde3f255b542d5b0e3f453ca045", null ],
+    [ "CloneReset", "classvrv_1_1_chord.html#a3a3a94fda8ae93710541140158228c18", null ],
     [ "FilterList", "classvrv_1_1_chord.html#a19b0fa01d54e8866e615fd2a7b621d59", null ],
     [ "GetAdjacentNotesList", "classvrv_1_1_chord.html#accc9d11678e5311a7fcf0752540291a9", null ],
     [ "GetBottomNote", "classvrv_1_1_chord.html#a5ff5cc2fe7d98d2d85b3e984b8ea0591", null ],

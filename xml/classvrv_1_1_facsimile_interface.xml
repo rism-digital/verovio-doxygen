@@ -54,6 +54,7 @@
         <reimplementedby refid="classvrv_1_1_layer_element_1a6cc22ea81270327ac7b87a5a3c20216e">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_ligature_1a43486ca3783c707d30a22c7403a91d08">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_liquescent_1a7efcf6b1f6aa6516730df361df82cfd6">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_lyric_element_1a3879587ee664e0804ba5d85813b1ab00">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_measure_1abea90dea35729eb5ce1fd1f1aad9dcda">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_mensur_1a07bbdde95e82134865ba07bf0425f6a0">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_meter_sig_1aeb8bbe358329d11186dcfa2458b2b988">Reset</reimplementedby>
@@ -72,6 +73,7 @@
         <reimplementedby refid="classvrv_1_1_plica_1a9d95ce105836a539d0da0035224f9925">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_proport_1aefc4610597f2084236c62d348765d062">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_quilisma_1a36dfcd7d82b8ea67e7ea2afeff406733">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_refrain_1a4fa5ad964d7868a551b207a825a4ce74">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_rest_1a5ecc39383af3006f31d2bcb0d7b09fac">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_sb_1ad4ffff3a5ae69293b99d10687bf8b176">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_space_1a6d0c11896962bfd3fb7bc07cbd7af6f6">Reset</reimplementedby>
@@ -85,6 +87,7 @@
         <reimplementedby refid="classvrv_1_1_timestamp_attr_1ab45a5b594dc5ba903510f1ddc9b73751">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_tuplet_1aad4c98481dc0f4dc718b9f5ed7bd4b99">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_verse_1a5022420900bb50d029ad1226325b42aa">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_volta_1a3271c7c324fc0b6e9190a93847b98d14">Reset</reimplementedby>
         <briefdescription>
 <para>Virtual reset method. </para>
         </briefdescription>
@@ -250,6 +253,7 @@
         <definition>virtual int vrv::FacsimileInterface::GetDrawingX</definition>
         <argsstring>() const</argsstring>
         <name>GetDrawingX</name>
+        <reimplementedby refid="classvrv_1_1_cursor_1aaefee93af4937ffbfff7a11e4be69065">GetDrawingX</reimplementedby>
         <reimplementedby refid="classvrv_1_1_layer_element_1a18ae9ace02986235dfe89b03d1e2ebf4">GetDrawingX</reimplementedby>
         <reimplementedby refid="classvrv_1_1_measure_1a2d8b2d4baeea0f3c888a25804d8145ba">GetDrawingX</reimplementedby>
         <reimplementedby refid="classvrv_1_1_staff_1ac1d1348838c1c0af7bfff5cc04693ebd">GetDrawingX</reimplementedby>
@@ -372,7 +376,7 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="41">
+      <node id="45">
         <label>vrv::Plica</label>
         <link refid="classvrv_1_1_plica"/>
         <childnode refid="4" relation="public-inheritance">
@@ -396,31 +400,31 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="54">
+      <node id="58">
         <label>vrv::TupletBracket</label>
         <link refid="classvrv_1_1_tuplet_bracket"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="28">
+      <node id="31">
         <label>vrv::MRest</label>
         <link refid="classvrv_1_1_m_rest"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="57">
+      <node id="61">
         <label>vrv::Measure</label>
         <link refid="classvrv_1_1_measure"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="43">
+      <node id="47">
         <label>vrv::Quilisma</label>
         <link refid="classvrv_1_1_quilisma"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="60">
+      <node id="64">
         <label>vrv::Staff</label>
         <link refid="classvrv_1_1_staff"/>
         <childnode refid="1" relation="public-inheritance">
@@ -432,7 +436,7 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="52">
+      <node id="56">
         <label>vrv::TimestampAttr</label>
         <link refid="classvrv_1_1_timestamp_attr"/>
         <childnode refid="4" relation="public-inheritance">
@@ -450,19 +454,25 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="43">
+        <label>vrv::Cursor</label>
+        <link refid="classvrv_1_1_cursor"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="14">
         <label>vrv::DivLine</label>
         <link refid="classvrv_1_1_div_line"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="56">
+      <node id="30">
         <label>vrv::Verse</label>
         <link refid="classvrv_1_1_verse"/>
-        <childnode refid="4" relation="public-inheritance">
+        <childnode refid="28" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="50">
+      <node id="54">
         <label>vrv::TabDurSym</label>
         <link refid="classvrv_1_1_tab_dur_sym"/>
         <childnode refid="4" relation="public-inheritance">
@@ -474,17 +484,29 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="60">
+        <label>vrv::Volta</label>
+        <link refid="classvrv_1_1_volta"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="2">
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="33">
+      <node id="29">
+        <label>vrv::Refrain</label>
+        <link refid="classvrv_1_1_refrain"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
         <label>vrv::MeterSig</label>
         <link refid="classvrv_1_1_meter_sig"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="40">
+      <node id="44">
         <label>vrv::Oriscus</label>
         <link refid="classvrv_1_1_oriscus"/>
         <childnode refid="4" relation="public-inheritance">
@@ -496,7 +518,7 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="45">
+      <node id="49">
         <label>vrv::Space</label>
         <link refid="classvrv_1_1_space"/>
         <childnode refid="4" relation="public-inheritance">
@@ -508,19 +530,19 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="47">
+      <node id="51">
         <label>vrv::Strophicus</label>
         <link refid="classvrv_1_1_strophicus"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="55">
+      <node id="59">
         <label>vrv::TupletNum</label>
         <link refid="classvrv_1_1_tuplet_num"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="39">
+      <node id="42">
         <label>vrv::Note</label>
         <link refid="classvrv_1_1_note"/>
         <childnode refid="4" relation="public-inheritance">
@@ -540,7 +562,7 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="42">
+      <node id="46">
         <label>vrv::Proport</label>
         <link refid="classvrv_1_1_proport"/>
         <childnode refid="4" relation="public-inheritance">
@@ -552,37 +574,37 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="44">
+      <node id="48">
         <label>vrv::Rest</label>
         <link refid="classvrv_1_1_rest"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="30">
+      <node id="33">
         <label>vrv::MRpt2</label>
         <link refid="classvrv_1_1_m_rpt2"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="58">
+      <node id="62">
         <label>vrv::Pb</label>
         <link refid="classvrv_1_1_pb"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="32">
+      <node id="35">
         <label>vrv::Mensur</label>
         <link refid="classvrv_1_1_mensur"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="38">
+      <node id="41">
         <label>vrv::Neume</label>
         <link refid="classvrv_1_1_neume"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="34">
+      <node id="37">
         <label>vrv::MeterSigGrp</label>
         <link refid="classvrv_1_1_meter_sig_grp"/>
         <childnode refid="4" relation="public-inheritance">
@@ -600,19 +622,19 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="37">
+      <node id="40">
         <label>vrv::Nc</label>
         <link refid="classvrv_1_1_nc"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="35">
+      <node id="38">
         <label>vrv::MultiRest</label>
         <link refid="classvrv_1_1_multi_rest"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="51">
+      <node id="55">
         <label>vrv::TabGrp</label>
         <link refid="classvrv_1_1_tab_grp"/>
         <childnode refid="4" relation="public-inheritance">
@@ -633,19 +655,19 @@
         <childnode refid="14" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="49">
+      <node id="53">
         <label>vrv::Syllable</label>
         <link refid="classvrv_1_1_syllable"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="48">
+      <node id="52">
         <label>vrv::Syl</label>
         <link refid="classvrv_1_1_syl"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="59">
+      <node id="63">
         <label>vrv::Sb</label>
         <link refid="classvrv_1_1_sb"/>
         <childnode refid="1" relation="public-inheritance">
@@ -657,19 +679,19 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="31">
+      <node id="34">
         <label>vrv::MSpace</label>
         <link refid="classvrv_1_1_m_space"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="29">
+      <node id="32">
         <label>vrv::MRpt</label>
         <link refid="classvrv_1_1_m_rpt"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="36">
+      <node id="39">
         <label>vrv::MultiRpt</label>
         <link refid="classvrv_1_1_multi_rpt"/>
         <childnode refid="4" relation="public-inheritance">
@@ -687,7 +709,7 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="46">
+      <node id="50">
         <label>vrv::Stem</label>
         <link refid="classvrv_1_1_stem"/>
         <childnode refid="4" relation="public-inheritance">
@@ -699,7 +721,7 @@
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="53">
+      <node id="57">
         <label>vrv::Tuplet</label>
         <link refid="classvrv_1_1_tuplet"/>
         <childnode refid="4" relation="public-inheritance">
@@ -708,6 +730,12 @@
       <node id="10">
         <label>vrv::BeatRpt</label>
         <link refid="classvrv_1_1_beat_rpt"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vrv::LyricElement</label>
+        <link refid="classvrv_1_1_lyric_element"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>

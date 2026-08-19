@@ -114,40 +114,80 @@ Public Member Functions</h2></td></tr>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editor_toolkit.html#a4072ba0fc25bf93cf164daa8b0772f2f">ParseEditorAction</a> (const std::string &amp;json_editorAction)=0</td></tr>
 <tr class="memdesc:a4072ba0fc25bf93cf164daa8b0772f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">In child classes, this parses the provided editor action and then performs the correct action. <br /></td></tr>
 <tr class="separator:a4072ba0fc25bf93cf164daa8b0772f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1be064ecb6ffea1b27712648a19e1312"><td class="memItemLeft" align="right" valign="top"><a id="a1be064ecb6ffea1b27712648a19e1312"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editor_toolkit.html#a1be064ecb6ffea1b27712648a19e1312">EditInfo</a> ()</td></tr>
-<tr class="memdesc:a1be064ecb6ffea1b27712648a19e1312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information on the last editor function used. <br /></td></tr>
-<tr class="separator:a1be064ecb6ffea1b27712648a19e1312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2636f4c7e3bdac1ff16d473c01f8af2"><td class="memItemLeft" align="right" valign="top"><a id="ad2636f4c7e3bdac1ff16d473c01f8af2"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editor_toolkit.html#ad2636f4c7e3bdac1ff16d473c01f8af2">EditStatus</a> ()</td></tr>
+<tr class="memdesc:ad2636f4c7e3bdac1ff16d473c01f8af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get status of the editor (undo, selection, etc.) <br /></td></tr>
+<tr class="separator:ad2636f4c7e3bdac1ff16d473c01f8af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0eeaf4c5360e9a22af1dd90219d901"><td class="memItemLeft" align="right" valign="top"><a id="a2f0eeaf4c5360e9a22af1dd90219d901"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editor_toolkit.html#a2f0eeaf4c5360e9a22af1dd90219d901">EditResponse</a> ()</td></tr>
+<tr class="memdesc:a2f0eeaf4c5360e9a22af1dd90219d901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get response on the last editor function used. <br /></td></tr>
+<tr class="separator:a2f0eeaf4c5360e9a22af1dd90219d901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea7f982eda641f2d108a51f235509ec1"><td class="memItemLeft" align="right" valign="top"><a id="aea7f982eda641f2d108a51f235509ec1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editor_toolkit.html#aea7f982eda641f2d108a51f235509ec1">OptionsChanged</a> ()</td></tr>
+<tr class="memdesc:aea7f982eda641f2d108a51f235509ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the option change count. <br /></td></tr>
+<tr class="separator:aea7f982eda641f2d108a51f235509ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a32f50765b06401974ba0ca6d74ed2895"><td class="memItemLeft" align="right" valign="top"><a id="a32f50765b06401974ba0ca6d74ed2895"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>AppendChild</b> (const std::string &amp;elementId, const std::string &amp;elementName)</td></tr>
-<tr class="separator:a32f50765b06401974ba0ca6d74ed2895"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a640e3c05651e69c09c2c6f4987a10b0e"><td class="memItemLeft" align="right" valign="top"><a id="a640e3c05651e69c09c2c6f4987a10b0e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>InsertBefore</b> (const std::string &amp;elementId, const std::string &amp;elementName)</td></tr>
-<tr class="separator:a640e3c05651e69c09c2c6f4987a10b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a105edaaecf92bbee719781edbd3313aa"><td class="memItemLeft" align="right" valign="top"><a id="a105edaaecf92bbee719781edbd3313aa"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>InsertAfter</b> (const std::string &amp;elementId, const std::string &amp;elementName)</td></tr>
-<tr class="separator:a105edaaecf92bbee719781edbd3313aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa65855f8083e0c3b97550f2df8d3f5"><td class="memItemLeft" align="right" valign="top"><a id="a7fa65855f8083e0c3b97550f2df8d3f5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetSelect</b> ()</td></tr>
+<tr class="separator:a7fa65855f8083e0c3b97550f2df8d3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c2e1d4a870184f7e541a57ad5f9da26"><td class="memItemLeft" align="right" valign="top"><a id="a3c2e1d4a870184f7e541a57ad5f9da26"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>AppendChild</b> (std::string &amp;elementId, const std::string &amp;elementName, bool unique)</td></tr>
+<tr class="separator:a3c2e1d4a870184f7e541a57ad5f9da26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc96dbfa7409e2e2b85868febac3f4c"><td class="memItemLeft" align="right" valign="top"><a id="a0dc96dbfa7409e2e2b85868febac3f4c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>InsertBefore</b> (std::string &amp;elementId, const std::string &amp;elementName)</td></tr>
+<tr class="separator:a0dc96dbfa7409e2e2b85868febac3f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1511dd6a2504934e3a7a312c55b9956"><td class="memItemLeft" align="right" valign="top"><a id="ad1511dd6a2504934e3a7a312c55b9956"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>InsertAfter</b> (std::string &amp;elementId, const std::string &amp;elementName)</td></tr>
+<tr class="separator:ad1511dd6a2504934e3a7a312c55b9956"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82f2a31a881fff8e957912e6a488e6e1"><td class="memItemLeft" align="right" valign="top"><a id="a82f2a31a881fff8e957912e6a488e6e1"></a>
 <a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetElement</b> (const std::string &amp;elementId)</td></tr>
 <tr class="separator:a82f2a31a881fff8e957912e6a488e6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fd8664fe8b9ec4be7162e656b067f06"><td class="memItemLeft" align="right" valign="top"><a id="a3fd8664fe8b9ec4be7162e656b067f06"></a>
 <a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareInsertion</b> (<a class="el" href="classvrv_1_1_object.html">Object</a> *parent, const std::string &amp;elementName)</td></tr>
 <tr class="separator:a3fd8664fe8b9ec4be7162e656b067f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafdd940f7604e889c3ae0fb5c80f550b"><td class="memItemLeft" align="right" valign="top"><a id="aafdd940f7604e889c3ae0fb5c80f550b"></a>
+<a class="el" href="classvrv_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ResolveElement</b> (std::string &amp;elementId, bool chain=true)</td></tr>
+<tr class="separator:aafdd940f7604e889c3ae0fb5c80f550b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62737deeaa34a8f354c3876d81945d05"><td class="memItemLeft" align="right" valign="top"><a id="a62737deeaa34a8f354c3876d81945d05"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>InsertMode</b> () const</td></tr>
+<tr class="separator:a62737deeaa34a8f354c3876d81945d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:af73136c951b50ee2e4e13dbaa400d0ad"><td class="memItemLeft" align="right" valign="top"><a id="af73136c951b50ee2e4e13dbaa400d0ad"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_chainedId</b></td></tr>
+<tr class="separator:af73136c951b50ee2e4e13dbaa400d0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d360d8f5073d778ebaf79f3874f3582"><td class="memItemLeft" align="right" valign="top"><a id="a9d360d8f5073d778ebaf79f3874f3582"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_selectionId</b></td></tr>
+<tr class="separator:a9d360d8f5073d778ebaf79f3874f3582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a38438ff48985252eda98f77094944"><td class="memItemLeft" align="right" valign="top"><a id="aa8a38438ff48985252eda98f77094944"></a>
+ClassId&#160;</td><td class="memItemRight" valign="bottom"><b>m_selectionClassId</b></td></tr>
+<tr class="separator:aa8a38438ff48985252eda98f77094944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106a2d50541381f20650654216e0299b"><td class="memItemLeft" align="right" valign="top"><a id="a106a2d50541381f20650654216e0299b"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_selectionSecondaryId</b></td></tr>
+<tr class="separator:a106a2d50541381f20650654216e0299b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28113ce32e849c87316c87b2e9217f37"><td class="memItemLeft" align="right" valign="top"><a id="a28113ce32e849c87316c87b2e9217f37"></a>
+<a class="el" href="classvrv_1_1_cursor.html">Cursor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_cursor</b></td></tr>
+<tr class="separator:a28113ce32e849c87316c87b2e9217f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f13a9e3501c89738646d52704854230"><td class="memItemLeft" align="right" valign="top"><a id="a7f13a9e3501c89738646d52704854230"></a>
 <a class="el" href="classvrv_1_1_doc.html">Doc</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_doc</b></td></tr>
 <tr class="separator:a7f13a9e3501c89738646d52704854230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee2461420e8735846056fb6fd9b33f40"><td class="memItemLeft" align="right" valign="top"><a id="aee2461420e8735846056fb6fd9b33f40"></a>
 <a class="el" href="classvrv_1_1_view.html">View</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_view</b></td></tr>
 <tr class="separator:aee2461420e8735846056fb6fd9b33f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab58ec0ad523f9b339bde7dd1fff289e"><td class="memItemLeft" align="right" valign="top"><a id="aab58ec0ad523f9b339bde7dd1fff289e"></a>
-jsonxx::Object&#160;</td><td class="memItemRight" valign="bottom"><b>m_editInfo</b></td></tr>
-<tr class="separator:aab58ec0ad523f9b339bde7dd1fff289e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd4f6c05718558567367e4671edd56c"><td class="memItemLeft" align="right" valign="top"><a id="afcd4f6c05718558567367e4671edd56c"></a>
+jsonxx::Object&#160;</td><td class="memItemRight" valign="bottom"><b>m_editStatus</b></td></tr>
+<tr class="separator:afcd4f6c05718558567367e4671edd56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda6e14eef758c086da4854d7447203c"><td class="memItemLeft" align="right" valign="top"><a id="afda6e14eef758c086da4854d7447203c"></a>
+jsonxx::Object&#160;</td><td class="memItemRight" valign="bottom"><b>m_editResponse</b></td></tr>
+<tr class="separator:afda6e14eef758c086da4854d7447203c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23a46e854711b755deffb6856888ec56"><td class="memItemLeft" align="right" valign="top"><a id="a23a46e854711b755deffb6856888ec56"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_editor_toolkit.html#a23a46e854711b755deffb6856888ec56">m_options</a></td></tr>
+<tr class="memdesc:a23a46e854711b755deffb6856888ec56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record option changes <br  />
+ <br /></td></tr>
+<tr class="separator:a23a46e854711b755deffb6856888ec56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="editortoolkit_8h_source.html">editortoolkit.h</a></li>
@@ -158,7 +198,7 @@ jsonxx::Object&#160;</td><td class="memItemRight" valign="bottom"><b>m_editInfo<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_editor_toolkit.html">EditorToolkit</a></li>
-    <li class="footer">Generated on Wed May 20 2026 13:51:33 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Aug 19 2026 14:30:55 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
