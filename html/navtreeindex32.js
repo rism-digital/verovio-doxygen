@@ -1,5 +1,7 @@
 var NAVTREEINDEX32 =
 {
+"classvrv_1_1_view.html#a3fa1b793b97e6dc280493bfdbcdcb738":[1,0,0,447,148],
+"classvrv_1_1_view.html#a40ebbe142ce17e46484b0c907e15d7df":[1,0,0,447,3],
 "classvrv_1_1_view.html#a424a26bcf7b2d53fed9446f4d3231581":[1,0,0,447,204],
 "classvrv_1_1_view.html#a43cb88b980f283552501c310615ab5ee":[1,0,0,447,130],
 "classvrv_1_1_view.html#a43d69b2fc1f77229f8caa7b4cdecf476":[1,0,0,447,122],
@@ -247,7 +249,5 @@ var NAVTREEINDEX32 =
 "featureextractor_8h_source.html":[2,0,101],
 "fermata_8h_source.html":[2,0,102],
 "fig_8h_source.html":[2,0,103],
-"filereader_8h_source.html":[2,0,104],
-"files.html":[2,0],
-"findfunctor_8h_source.html":[2,0,105]
+"filereader_8h_source.html":[2,0,104]
 };

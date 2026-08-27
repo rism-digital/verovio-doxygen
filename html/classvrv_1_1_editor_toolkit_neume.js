@@ -43,6 +43,7 @@ var classvrv_1_1_editor_toolkit_neume =
     [ "ParseSplitAction", "classvrv_1_1_editor_toolkit_neume.html#a0dc0418f8ff7675285b0548e9054d65c", null ],
     [ "ParseSplitNeumeAction", "classvrv_1_1_editor_toolkit_neume.html#abaed747521c37f3afa1ff9f3048a3c47", null ],
     [ "ParseToggleLigatureAction", "classvrv_1_1_editor_toolkit_neume.html#a8d4dbed36c218f100bb2bdfae2dc1ee7", null ],
+    [ "ParseToggleNeumeConnectionAction", "classvrv_1_1_editor_toolkit_neume.html#ab94479dd084b7e35152683d98475e499", null ],
     [ "ParseUngroupAction", "classvrv_1_1_editor_toolkit_neume.html#ae38043613ee1eae9c1a333fc5c5834b8", null ],
     [ "Remove", "classvrv_1_1_editor_toolkit_neume.html#a8e122365fe556945a2781d7d67555b61", null ],
     [ "Resize", "classvrv_1_1_editor_toolkit_neume.html#adfbae0984c8091483137b651fcee28b5", null ],
@@ -55,6 +56,7 @@ var classvrv_1_1_editor_toolkit_neume =
     [ "Split", "classvrv_1_1_editor_toolkit_neume.html#abad909b7228f86d3668e057ae16482f4", null ],
     [ "SplitNeume", "classvrv_1_1_editor_toolkit_neume.html#a243f0bfa3c6e9ac5f5de4fffe5804938", null ],
     [ "ToggleLigature", "classvrv_1_1_editor_toolkit_neume.html#a6d87b50ae8ac3a2cffb1c537fe810cd7", null ],
+    [ "ToggleNeumeConnection", "classvrv_1_1_editor_toolkit_neume.html#ab27cf7b12b7b8ca00172cf5c2da217a5", null ],
     [ "Ungroup", "classvrv_1_1_editor_toolkit_neume.html#a9f7bd667fcec3c23690bd5833b29ada1", null ],
     [ "UnlinkSyllable", "classvrv_1_1_editor_toolkit_neume.html#a611131137c5e9d683b93de47ba7d609e", null ]
 ];
