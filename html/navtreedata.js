@@ -69,18 +69,18 @@ var NAVTREEINDEX =
 "classvrv_1_1_object.html#a85f5f4c2c61b31f3e0cfafccf6893dd3",
 "classvrv_1_1_option_int.html#aeb9250c94d216801f27a6c045589e902",
 "classvrv_1_1_options.html#ac07598b462731f6f0386279effeb59f7",
-"classvrv_1_1_pb.html#a6253da890e8ca5373025478a86c474a3",
-"classvrv_1_1_prepare_lyrics_functor.html#a1c29dc85ec46db6b2cb9978bfb4faf0f",
-"classvrv_1_1_reset_data_functor.html#ae0d263e58f05dbe48b314f85704f09a4",
-"classvrv_1_1_score_def.html#affdd25fbf69e2079f23fb9d40a330650",
-"classvrv_1_1_staff.html#a753363906cd1b2dd73203e85f120d79f",
-"classvrv_1_1_subst.html",
-"classvrv_1_1_system.html#ab16a3b327ed12fe7fb49d272a83290ac",
-"classvrv_1_1_tie.html#a4ef66bfe13023a47286d34913cbcda19",
-"classvrv_1_1_transposer.html#a896a9e8b33f62f6bd01bd8170f60aef4",
-"classvrv_1_1_view.html#a3fa1b793b97e6dc280493bfdbcdcb738",
-"files.html",
-"structvrv_1_1_editor_toolkit_shared_1_1_state.html#abf1c6e4c57ba4addaaf0ef07af61c0fe"
+"classvrv_1_1_pb.html#a60ac85ec39bda060fd92b2fd214ffabe",
+"classvrv_1_1_prepare_lyrics_functor.html",
+"classvrv_1_1_reset_data_functor.html#adc4d397488168f222ccff580c157bf3d",
+"classvrv_1_1_score_def.html#afd16c952de1b8829f86ee7499bbb1fa6",
+"classvrv_1_1_staff.html#a6ff2e9e95ce80067a086af924f1a8e2d",
+"classvrv_1_1_strophicus.html#ae331d461e441eefaeddeb4931e6ed518",
+"classvrv_1_1_system.html#aaf2ffaa73e3f3d9fd4199524375550aa",
+"classvrv_1_1_tie.html#a3f2f010f32642fc78cb9f8f1cbaa5f97",
+"classvrv_1_1_transposer.html#a884068de3501fb96c5c78a1b51722df1",
+"classvrv_1_1_view.html#a3e7743d54fbce9e7c342de037b8d2c22",
+"filereader_8h_source.html",
+"structvrv_1_1_editor_toolkit_shared_1_1_state.html#a8e4facafad443d348a213af0f3d31e1c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
