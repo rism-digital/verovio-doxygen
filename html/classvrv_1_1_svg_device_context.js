@@ -3,6 +3,7 @@ var classvrv_1_1_svg_device_context =
     [ "SvgDeviceContext", "classvrv_1_1_svg_device_context.html#a727ac745356e3376007c8c0490c9871f", null ],
     [ "~SvgDeviceContext", "classvrv_1_1_svg_device_context.html#aa9b9c3d319fb507ad296bad981e60653", null ],
     [ "AddDescription", "classvrv_1_1_svg_device_context.html#a1104b099bf2419013d2c790e0e4ac292", null ],
+    [ "AddGraphicClass", "classvrv_1_1_svg_device_context.html#aa6570014062a3eab57cfeafac933edbe", null ],
     [ "AppendAdditionalAttributes", "classvrv_1_1_svg_device_context.html#a2f56ce603bd94fea5f23d21fa7117799", null ],
     [ "AppendIdAndClass", "classvrv_1_1_svg_device_context.html#aa978c5f1995e03c72f491407086894eb", null ],
     [ "ApplyOffset", "classvrv_1_1_svg_device_context.html#ab0a402361306d2957ab9be9ba2c24393", null ],

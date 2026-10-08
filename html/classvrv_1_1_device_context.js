@@ -4,6 +4,7 @@ var classvrv_1_1_device_context =
     [ "DeviceContext", "classvrv_1_1_device_context.html#a2d49308e19bd27524ef0b26427853cfb", null ],
     [ "~DeviceContext", "classvrv_1_1_device_context.html#ae3758acb41e34d14ba0ec760648776b4", null ],
     [ "AddDescription", "classvrv_1_1_device_context.html#aededb30ba44efb6c40ff3b2570d7868c", null ],
+    [ "AddGraphicClass", "classvrv_1_1_device_context.html#a4422597c8053fbb494dc53cf8981d5d4", null ],
     [ "ApplyOffset", "classvrv_1_1_device_context.html#a3e1c874b1a3f037f6dfda23e7c2647b9", null ],
     [ "DeactivateGraphic", "classvrv_1_1_device_context.html#a48b74c4a9ba8bb520dab35be4b7e2ff3", null ],
     [ "DeactivateGraphicX", "classvrv_1_1_device_context.html#a872fc5700311884640e4956cac4a26a9", null ],

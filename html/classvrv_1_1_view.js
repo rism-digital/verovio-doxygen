@@ -127,6 +127,7 @@ var classvrv_1_1_view =
     [ "DrawPedal", "classvrv_1_1_view.html#a5d9f88428c22c67573f7fb56ed086ab3", null ],
     [ "DrawPedalLine", "classvrv_1_1_view.html#a97d482d2124dcc5e84c0bf697b14fde7", null ],
     [ "DrawPitchInflection", "classvrv_1_1_view.html#af9ce531ef5d76bb05a14293ee86a89b5", null ],
+    [ "DrawPlaceholder", "classvrv_1_1_view.html#ab8ba55755f2da79c49cf6cf724aca18f", null ],
     [ "DrawPlica", "classvrv_1_1_view.html#a802c11ac9e457ff039c3390e61c96ff1", null ],
     [ "DrawProport", "classvrv_1_1_view.html#ad0095a78977a0f62eb9bdbe247b602fd", null ],
     [ "DrawProportFigures", "classvrv_1_1_view.html#ae6004afb083cecb78e8ca94b2b7f0b99", null ],
