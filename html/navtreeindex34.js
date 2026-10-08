@@ -1,5 +1,6 @@
 var NAVTREEINDEX34 =
 {
+"structvrv_1_1_editor_toolkit_shared_1_1_state.html#a555a09543bb700604ddeee8e09ed576e":[1,0,0,159,0,2],
 "structvrv_1_1_editor_toolkit_shared_1_1_state.html#a8e4facafad443d348a213af0f3d31e1c":[1,0,0,159,0,0],
 "structvrv_1_1_editor_toolkit_shared_1_1_state.html#abf1c6e4c57ba4addaaf0ef07af61c0fe":[1,0,0,159,0,1],
 "structvrv_1_1_humdrum_reference_item.html":[1,0,0,234],

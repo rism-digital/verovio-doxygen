@@ -14,6 +14,7 @@ var classvrv_1_1_score_def_set_current_functor =
     [ "VisitProport", "classvrv_1_1_score_def_set_current_functor.html#abb7c7010243fb54d670cda875052134f", null ],
     [ "VisitScore", "classvrv_1_1_score_def_set_current_functor.html#a77cb064b921ce1b8becd273f3b229665", null ],
     [ "VisitScoreDef", "classvrv_1_1_score_def_set_current_functor.html#ad62ced4a4f06ef5286f989ab0f0d3c94", null ],
+    [ "VisitScoreDefEnd", "classvrv_1_1_score_def_set_current_functor.html#a24f7ddb1cd8263cd47dcc2a949e7d3a9", null ],
     [ "VisitStaff", "classvrv_1_1_score_def_set_current_functor.html#a5d2b533c177c732d52bc1ab0e473b406", null ],
     [ "VisitStaffDef", "classvrv_1_1_score_def_set_current_functor.html#a580e1ddbd52324e66894124f7086cc99", null ],
     [ "VisitStaffGrp", "classvrv_1_1_score_def_set_current_functor.html#a5861b0397de8e6c14054808822386ffb", null ],
