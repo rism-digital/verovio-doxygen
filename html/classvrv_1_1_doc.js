@@ -112,6 +112,7 @@ var classvrv_1_1_doc =
     [ "IsRendering", "classvrv_1_1_doc.html#ad3059fae3a4106334e0e788da0f0176f", null ],
     [ "IsSupportedChild", "classvrv_1_1_doc.html#a20b8314ed54233af06fd66e23d2d8c9a", null ],
     [ "IsTranscription", "classvrv_1_1_doc.html#aead4e3b9f87eeb7e63f7ae6d903591d7", null ],
+    [ "MarkAsCastOff", "classvrv_1_1_doc.html#abafdc3da698d61eab76a65645fa21350", null ],
     [ "PrepareData", "classvrv_1_1_doc.html#a863c2bb1a0b28c6f52adb5ce662a14e8", null ],
     [ "ReactivateSelection", "classvrv_1_1_doc.html#af9bdb401ee225620c35623035b7e046e", null ],
     [ "RefreshLayout", "classvrv_1_1_doc.html#a8ab1f3b20b1913e55cd9e9e3c7cfcde7", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX34 =
 {
+"structvrv_1_1_date_with_errors.html#acd017ec11f1a065f58c58f969229a236":[1,0,0,235,5],
 "structvrv_1_1_date_with_errors.html#ae1b5b1b355a27662c5a28e2013164982":[1,0,0,235,9],
 "structvrv_1_1_date_with_errors.html#af60f6a524184fa614358b730a6ecfa23":[1,0,0,235,8],
 "structvrv_1_1_editor_toolkit_shared_1_1_state.html":[1,0,0,159,0],
