@@ -41,6 +41,8 @@ var classvrv_1_1_score_def =
     [ "SetDrawingWidth", "classvrv_1_1_score_def.html#a24599b07e4ea1e57697cf91c71e273c7", null ],
     [ "SetDrawLabels", "classvrv_1_1_score_def.html#a49017e0016bda64cdc7751ee191b931e", null ],
     [ "SetRedrawFlags", "classvrv_1_1_score_def.html#a3fd0342289c22892afde358bf48e4738", null ],
+    [ "UpdateKeySig", "classvrv_1_1_score_def.html#ab4c1682800e8a866712b69deb6a0a6f3", null ],
+    [ "UpdateMeterSig", "classvrv_1_1_score_def.html#ae4ec1cc8724da05cd89e8479fec7ef8d", null ],
     [ "m_insertScoreDef", "classvrv_1_1_score_def.html#af51ff1e8fe16c96cdbf75c2c091282e8", null ],
     [ "m_setAsDrawing", "classvrv_1_1_score_def.html#a6760d8d9bb94a8f220dddbc769346aeb", null ]
 ];

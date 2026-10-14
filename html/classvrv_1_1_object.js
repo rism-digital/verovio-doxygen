@@ -185,5 +185,6 @@ var classvrv_1_1_object =
     [ "SortChildren", "classvrv_1_1_object.html#aa8caf0942b1ff1c02f6f8e879397ca21", null ],
     [ "StableSort", "classvrv_1_1_object.html#ac97807a0dabfdf0d1d483f7f3e9427f9", null ],
     [ "SwapID", "classvrv_1_1_object.html#a3c91cd86fa79d2b64ae677f2b2a64e9d", null ],
+    [ "SwapWith", "classvrv_1_1_object.html#aa95ccb7c37643258c833c0da8a41c89a", null ],
     [ "m_unsupported", "classvrv_1_1_object.html#a74ae0995caefb72a71445ba43fce0652", null ]
 ];

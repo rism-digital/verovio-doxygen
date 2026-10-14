@@ -14,6 +14,7 @@ var classvrv_1_1_doc =
     [ "CastOffSmartDoc", "classvrv_1_1_doc.html#aff86b7ca7769957dd5cfb7dfe2936936", null ],
     [ "CheckPageSize", "classvrv_1_1_doc.html#aee7a01999fe14b6db1b194660626fc67", null ],
     [ "ClearSelectionPages", "classvrv_1_1_doc.html#a7cf6f055c8c7cdad2d1e652554f43f97", null ],
+    [ "CollectReferringObjects", "classvrv_1_1_doc.html#a962739a2e8b5133617125ce33c3355a9", null ],
     [ "ConvertFontPoint", "classvrv_1_1_doc.html#a28ad795a0d3439e48b22401c8fe6824d", null ],
     [ "ConvertHeaderToMEIBasic", "classvrv_1_1_doc.html#ad56838983dea97279006d12cb46fbf10", null ],
     [ "ConvertMarkupDoc", "classvrv_1_1_doc.html#a2bb7a46eafe2a2b41dc4adaec8110b19", null ],

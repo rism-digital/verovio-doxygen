@@ -149,6 +149,10 @@
     <innerclass refid="classvrv_1_1_visibility_drawing_interface" prot="public">vrv::VisibilityDrawingInterface</innerclass>
     <innerclass refid="classvrv_1_1_duration_interface" prot="public">vrv::DurationInterface</innerclass>
     <innerclass refid="classvrv_1_1_dynam" prot="public">vrv::Dynam</innerclass>
+    <innerclass refid="classvrv_1_1_add_staff_functor" prot="public">vrv::AddStaffFunctor</innerclass>
+    <innerclass refid="classvrv_1_1_delete_staff_functor" prot="public">vrv::DeleteStaffFunctor</innerclass>
+    <innerclass refid="classvrv_1_1_move_staff_functor" prot="public">vrv::MoveStaffFunctor</innerclass>
+    <innerclass refid="classvrv_1_1_reorder_staff_n_functor" prot="public">vrv::ReorderStaffNFunctor</innerclass>
     <innerclass refid="classvrv_1_1_cursor_functor" prot="public">vrv::CursorFunctor</innerclass>
     <innerclass refid="classvrv_1_1_section_context_functor" prot="public">vrv::SectionContextFunctor</innerclass>
     <innerclass refid="classvrv_1_1_score_context_functor" prot="public">vrv::ScoreContextFunctor</innerclass>
@@ -816,6 +820,58 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/doc.h" line="32" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/doc.h" bodystart="32" bodyend="32"/>
       </memberdef>
+      <memberdef kind="enum" id="editfunctor_8h_1af23a123c880803a776cf24d3d527b909" prot="public" static="no" strong="no">
+        <type>int8_t</type>
+        <name>StaffInsert</name>
+        <enumvalue id="editfunctor_8h_1af23a123c880803a776cf24d3d527b909a262b7c5449f2bd72152a67460919e24e" prot="public">
+          <name>INSERT_ABOVE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="editfunctor_8h_1af23a123c880803a776cf24d3d527b909a44a4142e3a35da12557c8b5e88d3ca37" prot="public">
+          <name>INSERT_BELOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editfunctor.h" line="16" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editfunctor.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="enum" id="editfunctor_8h_1aeb5bc3209e0723fdba62e84cee6174bd" prot="public" static="no" strong="no">
+        <type>int8_t</type>
+        <name>StaffMove</name>
+        <enumvalue id="editfunctor_8h_1aeb5bc3209e0723fdba62e84cee6174bda12ac76cc6f4028232e148363e9f1eec5" prot="public">
+          <name>MOVE_UP</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="editfunctor_8h_1aeb5bc3209e0723fdba62e84cee6174bda57b709473f417ed2a2b57212ce50c53e" prot="public">
+          <name>MOVE_DOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/editfunctor.h" line="18" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/editfunctor.h" bodystart="18" bodyend="18"/>
+      </memberdef>
       <memberdef kind="enum" id="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922" prot="public" static="no" strong="no">
         <type></type>
         <name>AlignmentType</name>
@@ -891,20 +947,6 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922a85bdc5047c62d7ee9dc37cbbbbc58ad4" prot="public">
-          <name>ALIGNMENT_CURSOR</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922a3d39121a5d76b28ce416d13de373d317" prot="public">
-          <name>ALIGNMENT_CURSOR_CHORD</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
         <enumvalue id="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922a25618474776c27153e6765d01ecb5584" prot="public">
           <name>ALIGNMENT_CLEF</name>
           <briefdescription>
@@ -963,6 +1005,20 @@
         </enumvalue>
         <enumvalue id="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922aef6707004621e2b0c3d9e2e4eb1c7d25" prot="public">
           <name>ALIGNMENT_GRACENOTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922a85bdc5047c62d7ee9dc37cbbbbc58ad4" prot="public">
+          <name>ALIGNMENT_CURSOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="horizontalaligner_8h_1acbf6eb578110ee61906ad288b5803922a3d39121a5d76b28ce416d13de373d317" prot="public">
+          <name>ALIGNMENT_CURSOR_CHORD</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>

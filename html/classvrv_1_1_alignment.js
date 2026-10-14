@@ -23,6 +23,7 @@ var classvrv_1_1_alignment =
     [ "HasAlignmentReference", "classvrv_1_1_alignment.html#ad026c49cccdf5a3437d24c359ea8a4e5", null ],
     [ "HasGraceAligner", "classvrv_1_1_alignment.html#ae694154976e041cf41059ba6274b3d79", null ],
     [ "HasTimestampOnly", "classvrv_1_1_alignment.html#a91732fc83a25ace6d09b87ff0afdfdb1", null ],
+    [ "IsAnyOfType", "classvrv_1_1_alignment.html#a239d1cdf418419d6d03ce3c8dfa3e284", null ],
     [ "IsOfType", "classvrv_1_1_alignment.html#abea5738c5b4b494dbda993185dfd0e92", null ],
     [ "IsSupportedChild", "classvrv_1_1_alignment.html#af944add95a2d7181f39b615e44423de9", null ],
     [ "LogDebugTreeMsg", "classvrv_1_1_alignment.html#a56610938a75cd860b174ec00bfd0295c", null ],

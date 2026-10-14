@@ -8,6 +8,7 @@ var classvrv_1_1_score =
     [ "AcceptEnd", "classvrv_1_1_score.html#a307b72650682938e4638dac043f30768", null ],
     [ "AcceptEnd", "classvrv_1_1_score.html#ae2bd44b86515e4d2946bc9de73e367da", null ],
     [ "CalcRunningElementHeight", "classvrv_1_1_score.html#acd59d1d7b84c0b8efa3c63646f7c8388", null ],
+    [ "ClearScoreDef", "classvrv_1_1_score.html#a053fea11d0b298613fbf439433b9c0b9", null ],
     [ "GetClassName", "classvrv_1_1_score.html#a4bdc6ff45b630792df0902dafb3f8eb4", null ],
     [ "GetScoreDef", "classvrv_1_1_score.html#ae9f5589c307428d5957b1bc3a682c216", null ],
     [ "GetScoreDef", "classvrv_1_1_score.html#a94ab06885b673bd498a1fcc2ed557ca1", null ],

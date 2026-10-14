@@ -1187,6 +1187,7 @@ var hierarchy =
     [ "vrv::FunctorBase", "classvrv_1_1_functor_base.html", [
       [ "vrv::ConstFunctor", "classvrv_1_1_const_functor.html", null ],
       [ "vrv::Functor", "classvrv_1_1_functor.html", [
+        [ "vrv::AddStaffFunctor", "classvrv_1_1_add_staff_functor.html", null ],
         [ "vrv::AdjustXOverflowFunctor", "classvrv_1_1_adjust_x_overflow_functor.html", null ],
         [ "vrv::AdjustXRelForTranscriptionFunctor", "classvrv_1_1_adjust_x_rel_for_transcription_functor.html", null ],
         [ "vrv::AdjustYRelForTranscriptionFunctor", "classvrv_1_1_adjust_y_rel_for_transcription_functor.html", null ],
@@ -1196,6 +1197,7 @@ var hierarchy =
         [ "vrv::ConvertToPageBasedFunctor", "classvrv_1_1_convert_to_page_based_functor.html", null ],
         [ "vrv::ConvertToUnCastOffMensuralFunctor", "classvrv_1_1_convert_to_un_cast_off_mensural_functor.html", null ],
         [ "vrv::CursorFunctor", "classvrv_1_1_cursor_functor.html", null ],
+        [ "vrv::DeleteStaffFunctor", "classvrv_1_1_delete_staff_functor.html", null ],
         [ "vrv::DocFunctor", "classvrv_1_1_doc_functor.html", [
           [ "vrv::AdjustAccidXFunctor", "classvrv_1_1_adjust_accid_x_functor.html", null ],
           [ "vrv::AdjustArpegFunctor", "classvrv_1_1_adjust_arpeg_functor.html", null ],
@@ -1267,6 +1269,7 @@ var hierarchy =
         [ "vrv::InitMaxMeasureDurationFunctor", "classvrv_1_1_init_max_measure_duration_functor.html", null ],
         [ "vrv::InitTimemapAdjustNotesFunctor", "classvrv_1_1_init_timemap_adjust_notes_functor.html", null ],
         [ "vrv::InitTimemapTiesFunctor", "classvrv_1_1_init_timemap_ties_functor.html", null ],
+        [ "vrv::MoveStaffFunctor", "classvrv_1_1_move_staff_functor.html", null ],
         [ "vrv::PrepareAltSymFunctor", "classvrv_1_1_prepare_alt_sym_functor.html", null ],
         [ "vrv::PrepareBeamSpanElementsFunctor", "classvrv_1_1_prepare_beam_span_elements_functor.html", null ],
         [ "vrv::PrepareCrossStaffFunctor", "classvrv_1_1_prepare_cross_staff_functor.html", null ],
@@ -1286,6 +1289,7 @@ var hierarchy =
         [ "vrv::PrepareTimeSpanningFunctor", "classvrv_1_1_prepare_time_spanning_functor.html", null ],
         [ "vrv::PrepareTimestampsFunctor", "classvrv_1_1_prepare_timestamps_functor.html", null ],
         [ "vrv::ReorderByXPosFunctor", "classvrv_1_1_reorder_by_x_pos_functor.html", null ],
+        [ "vrv::ReorderStaffNFunctor", "classvrv_1_1_reorder_staff_n_functor.html", null ],
         [ "vrv::ReplaceDrawingValuesInStaffDefFunctor", "classvrv_1_1_replace_drawing_values_in_staff_def_functor.html", null ],
         [ "vrv::ResetDataFunctor", "classvrv_1_1_reset_data_functor.html", null ],
         [ "vrv::ResetHorizontalAlignmentFunctor", "classvrv_1_1_reset_horizontal_alignment_functor.html", null ],
