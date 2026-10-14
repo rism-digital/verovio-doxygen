@@ -36,6 +36,8 @@ var classvrv_1_1_layer =
     [ "GetCurrentMensur", "classvrv_1_1_layer.html#a0927bc3c786f827c9eed73fd61ff1572", null ],
     [ "GetCurrentMeterSig", "classvrv_1_1_layer.html#a9ecb7ca00e9d18b067775dd2158cb65d", null ],
     [ "GetCurrentMeterSig", "classvrv_1_1_layer.html#a99756b9aab949875a7230926736b4111", null ],
+    [ "GetCurrentNumAndNumbase", "classvrv_1_1_layer.html#ac7e09dfcfdb5f9ad47de510e53b631df", null ],
+    [ "GetCurrentNumAndNumbase", "classvrv_1_1_layer.html#aedef71327922d04bcca5e0eb390057ce", null ],
     [ "GetCurrentProport", "classvrv_1_1_layer.html#a24b7bdd675e8ef7b5958215c977c2e0d", null ],
     [ "GetCurrentProport", "classvrv_1_1_layer.html#a41132991880a035e5c047ec79801d011", null ],
     [ "GetCursor", "classvrv_1_1_layer.html#aee08967606e5a4b50fd23f848bb94c5c", null ],

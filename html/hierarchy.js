@@ -295,6 +295,7 @@ var hierarchy =
       [ "vrv::DurationInterface", "classvrv_1_1_duration_interface.html", null ],
       [ "vrv::Mensur", "classvrv_1_1_mensur.html", null ],
       [ "vrv::Proport", "classvrv_1_1_proport.html", null ],
+      [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ],
       [ "vrv::Tuplet", "classvrv_1_1_tuplet.html", null ]
     ] ],
     [ "AttEnclosingChars", null, [
