@@ -105,57 +105,72 @@ $(document).ready(function(){initNavTree('adjustsylspacingfunctor_8h_source.html
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// AdjustSylSpacingFunctor</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classvrv_1_1_adjust_syl_spacing_functor.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_adjust_syl_spacing_functor.html">AdjustSylSpacingFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_doc_functor.html">DocFunctor</a> {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classvrv_1_1_adjust_syl_spacing_functor.html">AdjustSylSpacingFunctor</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> voltaTrack = 0);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_adjust_syl_spacing_functor.html">AdjustSylSpacingFunctor</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classvrv_1_1_adjust_syl_spacing_functor.html#a45e9175fc5fe6de99b268438bcb204f2">   37</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_adjust_syl_spacing_functor.html#a45e9175fc5fe6de99b268438bcb204f2">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     * Functor interface</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    FunctorCode VisitMeasureEnd(<a class="code" href="classvrv_1_1_measure.html">Measure</a> *measure) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    FunctorCode VisitStaff(<a class="code" href="classvrv_1_1_staff.html">Staff</a> *staff) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    FunctorCode VisitSystem(<a class="code" href="classvrv_1_1_system.html">System</a> *system) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    FunctorCode VisitSystemEnd(<a class="code" href="classvrv_1_1_system.html">System</a> *system) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    FunctorCode VisitLyricElement(<a class="code" href="classvrv_1_1_lyric_element.html">LyricElement</a> *lyricElement) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    FunctorCode VisitRefrain(<a class="code" href="classvrv_1_1_refrain.html">Refrain</a> *refrain) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    FunctorCode VisitVerse(<a class="code" href="classvrv_1_1_verse.html">Verse</a> *verse) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// List of adjustment tuples (Alignment start|Alignment end|distance)</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    ArrayOfAdjustmentTuples m_overlappingSyl;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// The previous verse or volta lyric container</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *m_previousContainer;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// The previous syl</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classvrv_1_1_syl.html">Syl</a> *m_lastSyl;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// The previous measure</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classvrv_1_1_measure.html">Measure</a> *m_previousMeasure;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// The current LabelAbbr</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classvrv_1_1_label_abbr.html">LabelAbbr</a> *m_currentLabelAbbr;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// Amount of free space</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span> m_freeSpace;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// The staff size</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">int</span> m_staffSize;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// 0 for direct verse content, otherwise the normalized volta alternative.</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> m_voltaTrack;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __VRV_ADJUSTSYLSPACINGFUNCTOR_H__</span></div>
-<div class="ttc" id="aclassvrv_1_1_adjust_syl_spacing_functor_html"><div class="ttname"><a href="classvrv_1_1_adjust_syl_spacing_functor.html">vrv::AdjustSylSpacingFunctor</a></div><div class="ttdoc">This class adjusts the spacing of the syl processing verse by verse.</div><div class="ttdef"><b>Definition:</b> adjustsylspacingfunctor.h:24</div></div>
-<div class="ttc" id="aclassvrv_1_1_adjust_syl_spacing_functor_html_a45e9175fc5fe6de99b268438bcb204f2"><div class="ttname"><a href="classvrv_1_1_adjust_syl_spacing_functor.html#a45e9175fc5fe6de99b268438bcb204f2">vrv::AdjustSylSpacingFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> adjustsylspacingfunctor.h:37</div></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classvrv_1_1_adjust_syl_spacing_functor.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_adjust_syl_spacing_functor.html">AdjustSylSpacingFunctor</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_doc_functor.html">DocFunctor</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classvrv_1_1_adjust_syl_spacing_functor.html">AdjustSylSpacingFunctor</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc, <span class="keywordtype">int</span> voltaTrack, <span class="keyword">const</span> std::pair&lt;int, data_STAFFREL&gt; &amp;lyricLine,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">const</span> std::map&lt;int, int&gt; &amp;previousStaffNs);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_adjust_syl_spacing_functor.html">AdjustSylSpacingFunctor</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     * Abstract base implementation</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classvrv_1_1_adjust_syl_spacing_functor.html#a45e9175fc5fe6de99b268438bcb204f2">   39</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_adjust_syl_spacing_functor.html#a45e9175fc5fe6de99b268438bcb204f2">ImplementsEndInterface</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classvrv_1_1_adjust_syl_spacing_functor.html#a4558be0bca871747fc1353a8adc37b6a">   45</a></span>&#160;    <span class="keyword">static</span> std::pair&lt;int, data_STAFFREL&gt; <a class="code" href="classvrv_1_1_adjust_syl_spacing_functor.html#a4558be0bca871747fc1353a8adc37b6a">GetLyricLine</a>(</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">int</span> staffN, data_STAFFREL place, <span class="keyword">const</span> std::map&lt;int, int&gt; &amp;previousStaffNs);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">     * Functor interface</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    FunctorCode VisitMeasureEnd(<a class="code" href="classvrv_1_1_measure.html">Measure</a> *measure) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    FunctorCode VisitSystem(<a class="code" href="classvrv_1_1_system.html">System</a> *system) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    FunctorCode VisitSystemEnd(<a class="code" href="classvrv_1_1_system.html">System</a> *system) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    FunctorCode VisitLyricElement(<a class="code" href="classvrv_1_1_lyric_element.html">LyricElement</a> *lyricElement) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    FunctorCode VisitRefrain(<a class="code" href="classvrv_1_1_refrain.html">Refrain</a> *refrain) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    FunctorCode VisitVerse(<a class="code" href="classvrv_1_1_verse.html">Verse</a> *verse) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> AdjustLyricElement(<a class="code" href="classvrv_1_1_lyric_element.html">LyricElement</a> *lyricElement);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">int</span> AdjustPreviousLyricPosition(<span class="keywordtype">int</span> &amp;overlap);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// List of adjustment tuples (Alignment start|Alignment end|distance)</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    ArrayOfAdjustmentTuples m_overlappingSyl;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// The previous verse or volta lyric container</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classvrv_1_1_layer_element.html">LayerElement</a> *m_previousContainer;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// The lyric containers in other staves or layers at the same position as the previous one</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    std::vector&lt;LayerElement *&gt; m_simultaneousContainers;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// The previous syl</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="classvrv_1_1_syl.html">Syl</a> *m_lastSyl;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// The previous measure</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classvrv_1_1_measure.html">Measure</a> *m_previousMeasure;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// The current LabelAbbr for each staff and layer @n</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::map&lt;std::pair&lt;int, int&gt;, <a class="code" href="classvrv_1_1_label_abbr.html">LabelAbbr</a> *&gt; m_currentLabelAbbrs;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// The staff and layer @n with a syllable already in the current system</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::set&lt;std::pair&lt;int, int&gt;&gt; m_systemLyricSources;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// Amount of free space</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">int</span> m_freeSpace;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// 0 for direct verse content, otherwise the normalized volta alternative.</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">int</span> m_voltaTrack;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// The staff @n and the placement of the lyric line being processed</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    std::pair&lt;int, data_STAFFREL&gt; m_lyricLine;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// The previous staff @n of each staff @n in drawing order</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">const</span> std::map&lt;int, int&gt; &amp;m_previousStaffNs;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// The lyric elements of the current measure</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    std::vector&lt;LyricElement *&gt; m_measureLyricElements;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __VRV_ADJUSTSYLSPACINGFUNCTOR_H__</span></div>
+<div class="ttc" id="aclassvrv_1_1_adjust_syl_spacing_functor_html"><div class="ttname"><a href="classvrv_1_1_adjust_syl_spacing_functor.html">vrv::AdjustSylSpacingFunctor</a></div><div class="ttdoc">This class adjusts the spacing of the syl processing verse by verse.</div><div class="ttdef"><b>Definition:</b> adjustsylspacingfunctor.h:25</div></div>
+<div class="ttc" id="aclassvrv_1_1_adjust_syl_spacing_functor_html_a4558be0bca871747fc1353a8adc37b6a"><div class="ttname"><a href="classvrv_1_1_adjust_syl_spacing_functor.html#a4558be0bca871747fc1353a8adc37b6a">vrv::AdjustSylSpacingFunctor::GetLyricLine</a></div><div class="ttdeci">static std::pair&lt; int, data_STAFFREL &gt; GetLyricLine(int staffN, data_STAFFREL place, const std::map&lt; int, int &gt; &amp;previousStaffNs)</div><div class="ttdoc">Return the lyric line (staff @n and placement) of verses with the given placement.</div></div>
+<div class="ttc" id="aclassvrv_1_1_adjust_syl_spacing_functor_html_a45e9175fc5fe6de99b268438bcb204f2"><div class="ttname"><a href="classvrv_1_1_adjust_syl_spacing_functor.html#a45e9175fc5fe6de99b268438bcb204f2">vrv::AdjustSylSpacingFunctor::ImplementsEndInterface</a></div><div class="ttdeci">bool ImplementsEndInterface() const override</div><div class="ttdoc">Return true if the functor implements the end interface.</div><div class="ttdef"><b>Definition:</b> adjustsylspacingfunctor.h:39</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_functor_html"><div class="ttname"><a href="classvrv_1_1_doc_functor.html">vrv::DocFunctor</a></div><div class="ttdoc">This abstract class is the base class for all mutable functors that need access to the document.</div><div class="ttdef"><b>Definition:</b> functor.h:151</div></div>
 <div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:41</div></div>
 <div class="ttc" id="aclassvrv_1_1_label_abbr_html"><div class="ttname"><a href="classvrv_1_1_label_abbr.html">vrv::LabelAbbr</a></div><div class="ttdoc">This class models the MEI &lt;labelAbbr&gt; element.</div><div class="ttdef"><b>Definition:</b> labelabbr.h:22</div></div>
@@ -163,7 +178,6 @@ $(document).ready(function(){initNavTree('adjustsylspacingfunctor_8h_source.html
 <div class="ttc" id="aclassvrv_1_1_lyric_element_html"><div class="ttname"><a href="classvrv_1_1_lyric_element.html">vrv::LyricElement</a></div><div class="ttdoc">Shared implementation for note-attached verse and refrain lyrics.</div><div class="ttdef"><b>Definition:</b> lyricelement.h:33</div></div>
 <div class="ttc" id="aclassvrv_1_1_measure_html"><div class="ttname"><a href="classvrv_1_1_measure.html">vrv::Measure</a></div><div class="ttdoc">This class represents a measure in a page-based score (Doc).</div><div class="ttdef"><b>Definition:</b> measure.h:46</div></div>
 <div class="ttc" id="aclassvrv_1_1_refrain_html"><div class="ttname"><a href="classvrv_1_1_refrain.html">vrv::Refrain</a></div><div class="ttdoc">Recurring note-attached lyrics, such as a chorus.</div><div class="ttdef"><b>Definition:</b> refrain.h:19</div></div>
-<div class="ttc" id="aclassvrv_1_1_staff_html"><div class="ttname"><a href="classvrv_1_1_staff.html">vrv::Staff</a></div><div class="ttdoc">This class represents a staff in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> staff.h:110</div></div>
 <div class="ttc" id="aclassvrv_1_1_syl_html"><div class="ttname"><a href="classvrv_1_1_syl.html">vrv::Syl</a></div><div class="ttdoc">Syl is a TimeSpanningInterface for managing syllable connectors.</div><div class="ttdef"><b>Definition:</b> syl.h:38</div></div>
 <div class="ttc" id="aclassvrv_1_1_system_html"><div class="ttname"><a href="classvrv_1_1_system.html">vrv::System</a></div><div class="ttdoc">This class represents a system in a laid-out score (Doc).</div><div class="ttdef"><b>Definition:</b> system.h:36</div></div>
 <div class="ttc" id="aclassvrv_1_1_verse_html"><div class="ttname"><a href="classvrv_1_1_verse.html">vrv::Verse</a></div><div class="ttdef"><b>Definition:</b> verse.h:21</div></div>
@@ -173,7 +187,7 @@ $(document).ready(function(){initNavTree('adjustsylspacingfunctor_8h_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>adjustsylspacingfunctor.h</b></li>
-    <li class="footer">Generated on Wed Oct 14 2026 12:39:38 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 14 2026 12:40:12 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

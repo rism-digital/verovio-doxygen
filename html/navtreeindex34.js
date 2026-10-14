@@ -1,5 +1,8 @@
 var NAVTREEINDEX34 =
 {
+"structvrv_1_1_date_with_errors.html#a610e23c6e7bde67a69e2b9cd4b3ae744":[1,0,0,235,13],
+"structvrv_1_1_date_with_errors.html#a6d80b623a33266f7281f95e8870a3591":[1,0,0,235,0],
+"structvrv_1_1_date_with_errors.html#a83010adb0835b116740b0a861f340a27":[1,0,0,235,4],
 "structvrv_1_1_date_with_errors.html#a8e576a2d8ac39c8b600d403f9776510d":[1,0,0,235,7],
 "structvrv_1_1_date_with_errors.html#a930d9899a30ecc5ffb6ca813eca6fbad":[1,0,0,235,6],
 "structvrv_1_1_date_with_errors.html#a9cf16a3ddc4408603f00937166b90f81":[1,0,0,235,1],

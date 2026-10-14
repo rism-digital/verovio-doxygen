@@ -389,10 +389,9 @@
     <member refid="classvrv_1_1_adjust_staff_overlap_functor_1a678a818969edc9ab3bade8f3f5f5caba" kind="function"><name>ImplementsEndInterface</name></member>
   </compound>
   <compound refid="classvrv_1_1_adjust_syl_spacing_functor" kind="class"><name>vrv::AdjustSylSpacingFunctor</name>
-    <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a4fa116cdcb1ce523b87e822696f4af2a" kind="function"><name>AdjustSylSpacingFunctor</name></member>
+    <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a37d4c290edbc2a3de3c3a57a48c22a16" kind="function"><name>AdjustSylSpacingFunctor</name></member>
     <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a383c970624f7a21f3866579f182536a6" kind="function"><name>~AdjustSylSpacingFunctor</name></member>
     <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a7ec1bdeb9283deb2d53dca74e0c780a4" kind="function"><name>VisitMeasureEnd</name></member>
-    <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a88336f1a23c1035df32a03b6aa5791ae" kind="function"><name>VisitStaff</name></member>
     <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a0d302e95b547abe92761ed999822f0a5" kind="function"><name>VisitSystem</name></member>
     <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a51337f74f7592fea92962d44a68bdf69" kind="function"><name>VisitSystemEnd</name></member>
     <member refid="classvrv_1_1_adjust_syl_spacing_functor_1ab896c47db66df51a763ca6fd2f91bb7f" kind="function"><name>VisitLyricElement</name></member>
@@ -400,13 +399,20 @@
     <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a699a9da78dd757967baf2f9a6ee81d2a" kind="function"><name>VisitVerse</name></member>
     <member refid="classvrv_1_1_adjust_syl_spacing_functor_1af5117aac5ebab4d6978fd524addee827" kind="variable"><name>m_overlappingSyl</name></member>
     <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a2889bc7693147d03d9b989eef239a54c" kind="variable"><name>m_previousContainer</name></member>
+    <member refid="classvrv_1_1_adjust_syl_spacing_functor_1acb20fb57f4cac8af30df96cc5e128e81" kind="variable"><name>m_simultaneousContainers</name></member>
     <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a9955473ff341ffe846b1a99364695db1" kind="variable"><name>m_lastSyl</name></member>
     <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a8f9ff363bb655dedbe10f1384e89b7a8" kind="variable"><name>m_previousMeasure</name></member>
-    <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a0c1fd7781aee62371ddaee29a55b6e91" kind="variable"><name>m_currentLabelAbbr</name></member>
+    <member refid="classvrv_1_1_adjust_syl_spacing_functor_1ae5be8108ae2a605d5aff57c7a190a724" kind="variable"><name>m_currentLabelAbbrs</name></member>
+    <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a9e2fb850aa8d41f392ea35527784c4c9" kind="variable"><name>m_systemLyricSources</name></member>
     <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a84ea3f8f03c78c33a20643b36a4727d7" kind="variable"><name>m_freeSpace</name></member>
-    <member refid="classvrv_1_1_adjust_syl_spacing_functor_1abf8c78da4bf94a2c98569b5ff8b39958" kind="variable"><name>m_staffSize</name></member>
     <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a5965cd0c83442cc4d6e6b65899fcfc00" kind="variable"><name>m_voltaTrack</name></member>
+    <member refid="classvrv_1_1_adjust_syl_spacing_functor_1ad2cac2cdc49af3caf6a272cd70cdf2f1" kind="variable"><name>m_lyricLine</name></member>
+    <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a59be8395328024a36e417de9eba7c094" kind="variable"><name>m_previousStaffNs</name></member>
+    <member refid="classvrv_1_1_adjust_syl_spacing_functor_1ab278e9995024df61150283f26dc71665" kind="variable"><name>m_measureLyricElements</name></member>
     <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a45e9175fc5fe6de99b268438bcb204f2" kind="function"><name>ImplementsEndInterface</name></member>
+    <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a4558be0bca871747fc1353a8adc37b6a" kind="function"><name>GetLyricLine</name></member>
+    <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a5d3ff66f8d36c4b82e52da72c79f8457" kind="function"><name>AdjustLyricElement</name></member>
+    <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a262c1a3af56b81e6a003ab14a73ed121" kind="function"><name>AdjustPreviousLyricPosition</name></member>
   </compound>
   <compound refid="classvrv_1_1_adjust_tempo_functor" kind="class"><name>vrv::AdjustTempoFunctor</name>
     <member refid="classvrv_1_1_adjust_tempo_functor_1acf660cca02165897f01cbb8e7743b307" kind="function"><name>AdjustTempoFunctor</name></member>
@@ -5107,7 +5113,9 @@
     <member refid="classvrv_1_1_init_processing_lists_functor_1a5828d85bbbfb2c9c94ec61a361eee4a4" kind="variable"><name>m_nextVoltaTrack</name></member>
     <member refid="classvrv_1_1_init_processing_lists_functor_1ac7028425708b7d6eed3bed9443ed0f40" kind="variable"><name>m_lyricElementGroups</name></member>
     <member refid="classvrv_1_1_init_processing_lists_functor_1a46dfbea45d27ba301763920fb5ac0cc7" kind="variable"><name>m_directSylTrackGroups</name></member>
+    <member refid="classvrv_1_1_init_processing_lists_functor_1a0c3094513cd4eecba2c4357eda12ee55" kind="variable"><name>m_lyricGroupPlaces</name></member>
     <member refid="classvrv_1_1_init_processing_lists_functor_1aa1c94527a38e71a73d7f30084de3323c" kind="function"><name>ImplementsEndInterface</name></member>
+    <member refid="classvrv_1_1_init_processing_lists_functor_1aa05b8d16cd550e16a1020268720bbb73" kind="function"><name>GetLyricGroupPlaces</name></member>
     <member refid="classvrv_1_1_init_processing_lists_functor_1a9e2790f99912d60c14ece7705bd94f15" kind="function"><name>PrepareLyricElementTracks</name></member>
     <member refid="classvrv_1_1_init_processing_lists_functor_1aa23d58ab290ead1a6cf6d654be6d9c08" kind="function"><name>CollectLyricElement</name></member>
   </compound>
@@ -7905,7 +7913,7 @@
     <member refid="classvrv_1_1_page_1a801f4b7752db01eb9201e355fe4aa000" kind="function"><name>LayOutPitchPos</name></member>
     <member refid="classvrv_1_1_page_1af5028d206f7fb8e8b5c58d5644ca5a29" kind="function"><name>GetContentHeight</name></member>
     <member refid="classvrv_1_1_page_1a0608a60a03878f6c8223d103c3765cec" kind="function"><name>GetContentWidth</name></member>
-    <member refid="classvrv_1_1_page_1a09fb76aac59bc54fc8f82f62e5ac7c1d" kind="function"><name>AdjustSylSpacingByVerse</name></member>
+    <member refid="classvrv_1_1_page_1ae41db957d0e3f9a308fbf027289e6a38" kind="function"><name>AdjustSylSpacingByVerse</name></member>
     <member refid="classvrv_1_1_page_1aa5168ea5d91983863d7e80ecbe26adb0" kind="function"><name>ReduceJustifiableHeight</name></member>
   </compound>
   <compound refid="classvrv_1_1_page_element" kind="class"><name>vrv::PageElement</name>
@@ -9292,6 +9300,8 @@
     <member refid="classvrv_1_1_staff_alignment_1a69d7e024be6fd3ec86a87f25d7d643fe" kind="function"><name>GetVerseCountBelow</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a25dc2e24ec078f1f90aa1e679aea1529" kind="function"><name>GetVersePositionAbove</name></member>
     <member refid="classvrv_1_1_staff_alignment_1ad95fab9d9877418f2b94c8af510851ea" kind="function"><name>GetVersePositionBelow</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1a1ec16a162765884463be39d74fba526a" kind="function"><name>ShareLyricsWithPrevious</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1aabe4ae9c5b5c33a3801b0dcbdfd08841" kind="function"><name>GetSharedLyricsAlignment</name></member>
     <member refid="classvrv_1_1_staff_alignment_1aebb16e118406ae41bf59ef1730842a78" kind="function"><name>FindFirstFloatingPositioner</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a4e559368a27154149c0654d34b982cee" kind="function"><name>FindFirstFloatingPositioner</name></member>
     <member refid="classvrv_1_1_staff_alignment_1acfcff2df0f692d09057b8801c5a446a0" kind="function"><name>GetCorrespFloatingPositioner</name></member>
@@ -9345,6 +9355,9 @@
     <member refid="classvrv_1_1_staff_alignment_1a366a4051d7602f053bc7b944d9266f09" kind="variable"><name>m_yRel</name></member>
     <member refid="classvrv_1_1_staff_alignment_1abb1a6bc2033a5d047388c6bc7ed09f6c" kind="variable"><name>m_verseAboveNs</name></member>
     <member refid="classvrv_1_1_staff_alignment_1acac1ebe0206b51eddf096fa21608485f" kind="variable"><name>m_verseBelowNs</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1ae43788fcd7a4b186c2e4bee1cc315120" kind="variable"><name>m_lyricPositionsAbove</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1ae18b11efc3d5074494e50dfde67d8983" kind="variable"><name>m_lyricPositionsBelow</name></member>
+    <member refid="classvrv_1_1_staff_alignment_1a5215460c416914b725e7517d74ab9404" kind="variable"><name>m_sharedLyricsAlignment</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a3926f1ae1ffb8eb8498562432ea7a49a" kind="variable"><name>m_overflowAboveBBoxes</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a807cbb879bf4ea63d744d45042390d7c" kind="variable"><name>m_overflowBelowBBoxes</name></member>
     <member refid="classvrv_1_1_staff_alignment_1a2509f2cdd8ef0e40f10aaca7ec29c814" kind="function"><name>SetCurrentFloatingPositioner</name></member>
@@ -9920,6 +9933,7 @@
     <member refid="classvrv_1_1_system_aligner_1aa5961fa9bf6c71d9871c33f263d5faa8" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_system_aligner_1a69d83e1ae9c5fa09bcd39defad713c9c" kind="function"><name>GetStaffAlignment</name></member>
     <member refid="classvrv_1_1_system_aligner_1a34a0912ed2b22d610fe6eed155b2d0b5" kind="function"><name>ReorderBy</name></member>
+    <member refid="classvrv_1_1_system_aligner_1ad0e06e496695311765d23f27e0f69131" kind="function"><name>ShareLyricLines</name></member>
     <member refid="classvrv_1_1_system_aligner_1a5c916b5e3799ce149199694090b2f1ce" kind="function"><name>GetSystem</name></member>
     <member refid="classvrv_1_1_system_aligner_1af23ac88b55c4dfcd4e7d038e1eef6196" kind="function"><name>FindAllPositionerPointingTo</name></member>
     <member refid="classvrv_1_1_system_aligner_1acb530599a3c9d0ba25439d795b3764ce" kind="function"><name>FindAllIntersectionPoints</name></member>

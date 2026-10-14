@@ -41,6 +41,7 @@ var classvrv_1_1_staff_alignment =
     [ "GetRequestedSpacing", "classvrv_1_1_staff_alignment.html#ac94e5464a192043896b00182fb401b71", null ],
     [ "GetScoreDefClefOverflowAbove", "classvrv_1_1_staff_alignment.html#a2d87d3d047765e77135b7112c57684b2", null ],
     [ "GetScoreDefClefOverflowBelow", "classvrv_1_1_staff_alignment.html#a27ad8ec54b8e0ebb742a535184ae7fee", null ],
+    [ "GetSharedLyricsAlignment", "classvrv_1_1_staff_alignment.html#aabe4ae9c5b5c33a3801b0dcbdfd08841", null ],
     [ "GetSpacingType", "classvrv_1_1_staff_alignment.html#ac0fbe200bce845ea16ec780239077075", null ],
     [ "GetStaff", "classvrv_1_1_staff_alignment.html#aca9160baf58fa797aaf766b8259f46d7", null ],
     [ "GetStaff", "classvrv_1_1_staff_alignment.html#a79a11f4e2b45c302db4de78d25ccdaa5", null ],
@@ -64,5 +65,6 @@ var classvrv_1_1_staff_alignment =
     [ "SetScoreDefClefOverflowBelow", "classvrv_1_1_staff_alignment.html#a71fa593b159a4b1d259efd7d38a27957", null ],
     [ "SetStaff", "classvrv_1_1_staff_alignment.html#ad5ace532441a932e5001aa9295a7477d", null ],
     [ "SetYRel", "classvrv_1_1_staff_alignment.html#a6c9d2d1c71958c112774409638ff501b", null ],
+    [ "ShareLyricsWithPrevious", "classvrv_1_1_staff_alignment.html#a1ec16a162765884463be39d74fba526a", null ],
     [ "SortPositioners", "classvrv_1_1_staff_alignment.html#ae760f3785a9a3cdaa22a693272adfaee", null ]
 ];

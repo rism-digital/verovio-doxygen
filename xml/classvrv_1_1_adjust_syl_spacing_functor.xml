@@ -6,10 +6,10 @@
     <includes refid="adjustsylspacingfunctor_8h" local="no">adjustsylspacingfunctor.h</includes>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors</header>
-      <memberdef kind="function" id="classvrv_1_1_adjust_syl_spacing_functor_1a4fa116cdcb1ce523b87e822696f4af2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classvrv_1_1_adjust_syl_spacing_functor_1a37d4c290edbc2a3de3c3a57a48c22a16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>vrv::AdjustSylSpacingFunctor::AdjustSylSpacingFunctor</definition>
-        <argsstring>(Doc *doc, int voltaTrack=0)</argsstring>
+        <argsstring>(Doc *doc, int voltaTrack, const std::pair&lt; int, data_STAFFREL &gt; &amp;lyricLine, const std::map&lt; int, int &gt; &amp;previousStaffNs)</argsstring>
         <name>AdjustSylSpacingFunctor</name>
         <param>
           <type><ref refid="classvrv_1_1_doc" kindref="compound">Doc</ref> *</type>
@@ -18,7 +18,14 @@
         <param>
           <type>int</type>
           <declname>voltaTrack</declname>
-          <defval>0</defval>
+        </param>
+        <param>
+          <type>const std::pair&lt; int, data_STAFFREL &gt; &amp;</type>
+          <declname>lyricLine</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; int, int &gt; &amp;</type>
+          <declname>previousStaffNs</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -26,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="30" column="5"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="31" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_adjust_syl_spacing_functor_1a383c970624f7a21f3866579f182536a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -39,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="31" column="13"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="33" column="13"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -59,25 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="43" column="17"/>
-      </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_adjust_syl_spacing_functor_1a88336f1a23c1035df32a03b6aa5791ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>FunctorCode</type>
-        <definition>FunctorCode vrv::AdjustSylSpacingFunctor::VisitStaff</definition>
-        <argsstring>(Staff *staff) override</argsstring>
-        <name>VisitStaff</name>
-        <reimplements refid="classvrv_1_1_functor_interface_1a1956d3f16097d400f7f042badda376a2">VisitStaff</reimplements>
-        <param>
-          <type><ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref> *</type>
-          <declname>staff</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="44" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="52" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_adjust_syl_spacing_functor_1a0d302e95b547abe92761ed999822f0a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -95,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="45" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="53" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_adjust_syl_spacing_functor_1a51337f74f7592fea92962d44a68bdf69" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -113,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="46" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="54" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_adjust_syl_spacing_functor_1ab896c47db66df51a763ca6fd2f91bb7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -131,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="47" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="55" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_adjust_syl_spacing_functor_1ae49eff348a3e1c905d2474fb2662965d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -149,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="48" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="56" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_adjust_syl_spacing_functor_1a699a9da78dd757967baf2f9a6ee81d2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
@@ -167,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="49" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="57" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -182,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="60" column="29" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="60" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="77" column="29" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_adjust_syl_spacing_functor_1a2889bc7693147d03d9b989eef239a54c" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> *</type>
@@ -195,7 +184,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="62" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="62" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="79" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_adjust_syl_spacing_functor_1acb20fb57f4cac8af30df96cc5e128e81" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classvrv_1_1_layer_element" kindref="compound">LayerElement</ref> * &gt;</type>
+        <definition>std::vector&lt;LayerElement *&gt; vrv::AdjustSylSpacingFunctor::m_simultaneousContainers</definition>
+        <argsstring></argsstring>
+        <name>m_simultaneousContainers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="81" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_adjust_syl_spacing_functor_1a9955473ff341ffe846b1a99364695db1" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_syl" kindref="compound">Syl</ref> *</type>
@@ -208,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="64" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="64" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="83" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_adjust_syl_spacing_functor_1a8f9ff363bb655dedbe10f1384e89b7a8" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref> *</type>
@@ -221,20 +223,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="66" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="66" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="85" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="85" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_adjust_syl_spacing_functor_1a0c1fd7781aee62371ddaee29a55b6e91" prot="private" static="no" mutable="no">
-        <type><ref refid="classvrv_1_1_label_abbr" kindref="compound">LabelAbbr</ref> *</type>
-        <definition>LabelAbbr* vrv::AdjustSylSpacingFunctor::m_currentLabelAbbr</definition>
+      <memberdef kind="variable" id="classvrv_1_1_adjust_syl_spacing_functor_1ae5be8108ae2a605d5aff57c7a190a724" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::pair&lt; int, int &gt;, <ref refid="classvrv_1_1_label_abbr" kindref="compound">LabelAbbr</ref> * &gt;</type>
+        <definition>std::map&lt;std::pair&lt;int, int&gt;, LabelAbbr *&gt; vrv::AdjustSylSpacingFunctor::m_currentLabelAbbrs</definition>
         <argsstring></argsstring>
-        <name>m_currentLabelAbbr</name>
+        <name>m_currentLabelAbbrs</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="68" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="68" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="87" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_adjust_syl_spacing_functor_1a9e2fb850aa8d41f392ea35527784c4c9" prot="private" static="no" mutable="no">
+        <type>std::set&lt; std::pair&lt; int, int &gt; &gt;</type>
+        <definition>std::set&lt;std::pair&lt;int, int&gt; &gt; vrv::AdjustSylSpacingFunctor::m_systemLyricSources</definition>
+        <argsstring></argsstring>
+        <name>m_systemLyricSources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="89" column="14" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_adjust_syl_spacing_functor_1a84ea3f8f03c78c33a20643b36a4727d7" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -247,20 +262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="70" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="70" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classvrv_1_1_adjust_syl_spacing_functor_1abf8c78da4bf94a2c98569b5ff8b39958" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int vrv::AdjustSylSpacingFunctor::m_staffSize</definition>
-        <argsstring></argsstring>
-        <name>m_staffSize</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="72" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="72" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="91" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="91" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_adjust_syl_spacing_functor_1a5965cd0c83442cc4d6e6b65899fcfc00" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -273,7 +275,46 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="74" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="74" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="93" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_adjust_syl_spacing_functor_1ad2cac2cdc49af3caf6a272cd70cdf2f1" prot="private" static="no" mutable="no">
+        <type>std::pair&lt; int, data_STAFFREL &gt;</type>
+        <definition>std::pair&lt;int, data_STAFFREL&gt; vrv::AdjustSylSpacingFunctor::m_lyricLine</definition>
+        <argsstring></argsstring>
+        <name>m_lyricLine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="95" column="15" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_adjust_syl_spacing_functor_1a59be8395328024a36e417de9eba7c094" prot="private" static="no" mutable="no">
+        <type>const std::map&lt; int, int &gt; &amp;</type>
+        <definition>const std::map&lt;int, int&gt;&amp; vrv::AdjustSylSpacingFunctor::m_previousStaffNs</definition>
+        <argsstring></argsstring>
+        <name>m_previousStaffNs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="97" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_adjust_syl_spacing_functor_1ab278e9995024df61150283f26dc71665" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classvrv_1_1_lyric_element" kindref="compound">LyricElement</ref> * &gt;</type>
+        <definition>std::vector&lt;LyricElement *&gt; vrv::AdjustSylSpacingFunctor::m_measureLyricElements</definition>
+        <argsstring></argsstring>
+        <name>m_measureLyricElements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="99" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="99" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -290,13 +331,81 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="37" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="37" bodyend="37"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="39" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classvrv_1_1_adjust_syl_spacing_functor_1a4558be0bca871747fc1353a8adc37b6a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; int, data_STAFFREL &gt;</type>
+        <definition>static std::pair&lt;int, data_STAFFREL&gt; vrv::AdjustSylSpacingFunctor::GetLyricLine</definition>
+        <argsstring>(int staffN, data_STAFFREL place, const std::map&lt; int, int &gt; &amp;previousStaffNs)</argsstring>
+        <name>GetLyricLine</name>
+        <param>
+          <type>int</type>
+          <declname>staffN</declname>
+        </param>
+        <param>
+          <type>data_STAFFREL</type>
+          <declname>place</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; int, int &gt; &amp;</type>
+          <declname>previousStaffNs</declname>
+        </param>
+        <briefdescription>
+<para>Return the lyric line (staff @n and placement) of verses with the given placement. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Verses above a staff are on the line below the previous staff, even if the vertical layout does not share it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="45" column="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classvrv_1_1_adjust_syl_spacing_functor_1a5d3ff66f8d36c4b82e52da72c79f8457" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::AdjustSylSpacingFunctor::AdjustLyricElement</definition>
+        <argsstring>(LyricElement *lyricElement)</argsstring>
+        <name>AdjustLyricElement</name>
+        <param>
+          <type><ref refid="classvrv_1_1_lyric_element" kindref="compound">LyricElement</ref> *</type>
+          <declname>lyricElement</declname>
+        </param>
+        <briefdescription>
+<para>Adjust the spacing between the previous lyric element and the current one. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_adjust_syl_spacing_functor_1a262c1a3af56b81e6a003ab14a73ed121" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::AdjustSylSpacingFunctor::AdjustPreviousLyricPosition</definition>
+        <argsstring>(int &amp;overlap)</argsstring>
+        <name>AdjustPreviousLyricPosition</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>overlap</declname>
+        </param>
+        <briefdescription>
+<para>Move the previous lyric container back into the free space, together with the ones at the same position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="71" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>This class adjusts the spacing of the syl processing verse by verse. </para>
     </briefdescription>
     <detaileddescription>
+<para>A lyric line covers all layers of a staff, plus the verses above the next staff, processed from left to right. </para>
     </detaileddescription>
     <inheritancegraph>
       <node id="4">
@@ -582,9 +691,11 @@
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="24" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="24" bodyend="75"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" line="25" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/adjustsylspacingfunctor.h" bodystart="25" bodyend="100"/>
     <listofallmembers>
-      <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a4fa116cdcb1ce523b87e822696f4af2a" prot="public" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>AdjustSylSpacingFunctor</name></member>
+      <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a5d3ff66f8d36c4b82e52da72c79f8457" prot="private" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>AdjustLyricElement</name></member>
+      <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a262c1a3af56b81e6a003ab14a73ed121" prot="private" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>AdjustPreviousLyricPosition</name></member>
+      <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a37d4c290edbc2a3de3c3a57a48c22a16" prot="public" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>AdjustSylSpacingFunctor</name></member>
       <member refid="classvrv_1_1_doc_functor_1a25eb1412bf1c48280933292b0dd26c39" prot="public" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>DocFunctor</name></member>
       <member refid="classvrv_1_1_functor_1a49b8e700f8f3b3b232d6a7e558438908" prot="public" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>Functor</name></member>
       <member refid="classvrv_1_1_functor_base_1a45d9ca7642da874e18b1d20a086fa015" prot="public" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>FunctorBase</name></member>
@@ -593,15 +704,20 @@
       <member refid="classvrv_1_1_functor_base_1a1dc2bd77ebadb86695b34484c72d3d6a" prot="public" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>GetDirection</name></member>
       <member refid="classvrv_1_1_doc_functor_1a529b3b4a949efdad3088db07eb96f6f3" prot="public" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>GetDoc</name></member>
       <member refid="classvrv_1_1_functor_base_1abd2a529c6eb36f4fe29ef14792766433" prot="public" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>GetFilters</name></member>
+      <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a4558be0bca871747fc1353a8adc37b6a" prot="public" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>GetLyricLine</name></member>
       <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a45e9175fc5fe6de99b268438bcb204f2" prot="public" virt="virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>ImplementsEndInterface</name></member>
-      <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a0c1fd7781aee62371ddaee29a55b6e91" prot="private" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>m_currentLabelAbbr</name></member>
+      <member refid="classvrv_1_1_adjust_syl_spacing_functor_1ae5be8108ae2a605d5aff57c7a190a724" prot="private" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>m_currentLabelAbbrs</name></member>
       <member refid="classvrv_1_1_doc_functor_1a7ea8ec6a07220ec7287e648e0a4ce8df" prot="protected" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>m_doc</name></member>
       <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a84ea3f8f03c78c33a20643b36a4727d7" prot="private" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>m_freeSpace</name></member>
       <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a9955473ff341ffe846b1a99364695db1" prot="private" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>m_lastSyl</name></member>
+      <member refid="classvrv_1_1_adjust_syl_spacing_functor_1ad2cac2cdc49af3caf6a272cd70cdf2f1" prot="private" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>m_lyricLine</name></member>
+      <member refid="classvrv_1_1_adjust_syl_spacing_functor_1ab278e9995024df61150283f26dc71665" prot="private" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>m_measureLyricElements</name></member>
       <member refid="classvrv_1_1_adjust_syl_spacing_functor_1af5117aac5ebab4d6978fd524addee827" prot="private" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>m_overlappingSyl</name></member>
       <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a2889bc7693147d03d9b989eef239a54c" prot="private" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>m_previousContainer</name></member>
       <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a8f9ff363bb655dedbe10f1384e89b7a8" prot="private" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>m_previousMeasure</name></member>
-      <member refid="classvrv_1_1_adjust_syl_spacing_functor_1abf8c78da4bf94a2c98569b5ff8b39958" prot="private" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>m_staffSize</name></member>
+      <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a59be8395328024a36e417de9eba7c094" prot="private" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>m_previousStaffNs</name></member>
+      <member refid="classvrv_1_1_adjust_syl_spacing_functor_1acb20fb57f4cac8af30df96cc5e128e81" prot="private" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>m_simultaneousContainers</name></member>
+      <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a9e2fb850aa8d41f392ea35527784c4c9" prot="private" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>m_systemLyricSources</name></member>
       <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a5965cd0c83442cc4d6e6b65899fcfc00" prot="private" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>m_voltaTrack</name></member>
       <member refid="classvrv_1_1_functor_base_1a08c690f2a45f5c15e38c86f1d461f02c" prot="public" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>ResetCode</name></member>
       <member refid="classvrv_1_1_functor_base_1af34204cf6852d525df006eb588cb2111" prot="public" virt="non-virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>SetCode</name></member>
@@ -827,7 +943,7 @@
       <member refid="classvrv_1_1_functor_interface_1a3ba28020e391d0210e79fd7f70b00d42" prot="public" virt="virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>VisitSlurEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1adb0592d1ef4bedc423e2535af1445db5" prot="public" virt="virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>VisitSpace</name></member>
       <member refid="classvrv_1_1_functor_interface_1a6fa843d37593dbbd6b21b8e1093f5f81" prot="public" virt="virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>VisitSpaceEnd</name></member>
-      <member refid="classvrv_1_1_adjust_syl_spacing_functor_1a88336f1a23c1035df32a03b6aa5791ae" prot="public" virt="virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>VisitStaff</name></member>
+      <member refid="classvrv_1_1_functor_interface_1a1956d3f16097d400f7f042badda376a2" prot="public" virt="virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>VisitStaff</name></member>
       <member refid="classvrv_1_1_functor_interface_1a5c5bb00d27fa5a77a4d1c4cc73307f4e" prot="public" virt="virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>VisitStaffAlignment</name></member>
       <member refid="classvrv_1_1_functor_interface_1a6e96bd107bfd3b335547e679a031d73f" prot="public" virt="virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>VisitStaffAlignmentEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1a33cb7a096ef56e953ce3628834cbe525" prot="public" virt="virtual"><scope>vrv::AdjustSylSpacingFunctor</scope><name>VisitStaffDef</name></member>

@@ -29,5 +29,6 @@ var classvrv_1_1_system_aligner =
     [ "IsSupportedChild", "classvrv_1_1_system_aligner.html#af6e99ee653f45a8e2701891531046e73", null ],
     [ "ReorderBy", "classvrv_1_1_system_aligner.html#a34a0912ed2b22d610fe6eed155b2d0b5", null ],
     [ "Reset", "classvrv_1_1_system_aligner.html#aa5961fa9bf6c71d9871c33f263d5faa8", null ],
-    [ "SetSpacing", "classvrv_1_1_system_aligner.html#a118f13b660eb1e8ccd5dc4b59a4045d4", null ]
+    [ "SetSpacing", "classvrv_1_1_system_aligner.html#a118f13b660eb1e8ccd5dc4b59a4045d4", null ],
+    [ "ShareLyricLines", "classvrv_1_1_system_aligner.html#ad0e06e496695311765d23f27e0f69131", null ]
 ];

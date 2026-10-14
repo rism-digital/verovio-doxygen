@@ -11,14 +11,13 @@ var NAVTREEINDEX1 =
 "classvrv_1_1_adjust_staff_overlap_functor.html#a9fea78ec39dcb08f277ca83cadc415ef":[1,0,0,25,1],
 "classvrv_1_1_adjust_staff_overlap_functor.html#af6ea769ddc54490d32d1ce20da228026":[1,0,0,25,3],
 "classvrv_1_1_adjust_syl_spacing_functor.html":[1,0,0,26],
-"classvrv_1_1_adjust_syl_spacing_functor.html#a0d302e95b547abe92761ed999822f0a5":[1,0,0,26,7],
+"classvrv_1_1_adjust_syl_spacing_functor.html#a0d302e95b547abe92761ed999822f0a5":[1,0,0,26,6],
+"classvrv_1_1_adjust_syl_spacing_functor.html#a37d4c290edbc2a3de3c3a57a48c22a16":[1,0,0,26,0],
 "classvrv_1_1_adjust_syl_spacing_functor.html#a383c970624f7a21f3866579f182536a6":[1,0,0,26,1],
 "classvrv_1_1_adjust_syl_spacing_functor.html#a45e9175fc5fe6de99b268438bcb204f2":[1,0,0,26,2],
-"classvrv_1_1_adjust_syl_spacing_functor.html#a4fa116cdcb1ce523b87e822696f4af2a":[1,0,0,26,0],
-"classvrv_1_1_adjust_syl_spacing_functor.html#a51337f74f7592fea92962d44a68bdf69":[1,0,0,26,8],
-"classvrv_1_1_adjust_syl_spacing_functor.html#a699a9da78dd757967baf2f9a6ee81d2a":[1,0,0,26,9],
+"classvrv_1_1_adjust_syl_spacing_functor.html#a51337f74f7592fea92962d44a68bdf69":[1,0,0,26,7],
+"classvrv_1_1_adjust_syl_spacing_functor.html#a699a9da78dd757967baf2f9a6ee81d2a":[1,0,0,26,8],
 "classvrv_1_1_adjust_syl_spacing_functor.html#a7ec1bdeb9283deb2d53dca74e0c780a4":[1,0,0,26,4],
-"classvrv_1_1_adjust_syl_spacing_functor.html#a88336f1a23c1035df32a03b6aa5791ae":[1,0,0,26,6],
 "classvrv_1_1_adjust_syl_spacing_functor.html#ab896c47db66df51a763ca6fd2f91bb7f":[1,0,0,26,3],
 "classvrv_1_1_adjust_syl_spacing_functor.html#ae49eff348a3e1c905d2474fb2662965d":[1,0,0,26,5],
 "classvrv_1_1_adjust_tempo_functor.html":[1,0,0,27],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "classvrv_1_1_app.html#a49d2c4bb85b76af5c2375d4d5a1d87e6":[1,0,0,48,3],
 "classvrv_1_1_app.html#a587f1669cfde483d22495b3c4902a47b":[1,0,0,48,5],
 "classvrv_1_1_app.html#a5f309fa01beb42fdba4cc65cb6311d4a":[1,0,0,48,1],
-"classvrv_1_1_app.html#a7a809c0044d3d7324e74ef3814c59aa1":[1,0,0,48,6]
+"classvrv_1_1_app.html#a7a809c0044d3d7324e74ef3814c59aa1":[1,0,0,48,6],
+"classvrv_1_1_app.html#a90fbb611db6c45cbcc78253277099590":[1,0,0,48,4]
 };
