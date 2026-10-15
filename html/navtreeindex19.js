@@ -1,9 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"classvrv_1_1_measure_aligner_type_comparison.html#ac1addc8bcc6d9195a394e62d99637e63":[1,0,0,104,2],
-"classvrv_1_1_measure_onset_offset_comparison.html":[1,0,0,105],
-"classvrv_1_1_measure_onset_offset_comparison.html#a7f2408925ec539efaf75de65901c1619":[1,0,0,105,2],
-"classvrv_1_1_measure_onset_offset_comparison.html#a97af3ffd5dae29d324a19d623bb827a7":[1,0,0,105,0],
 "classvrv_1_1_measure_onset_offset_comparison.html#aeaf19307fb8d81ef0eafafe68cb0d644":[1,0,0,105,1],
 "classvrv_1_1_mensur.html":[1,0,0,270],
 "classvrv_1_1_mensur.html#a07bbdde95e82134865ba07bf0425f6a0":[1,0,0,270,10],
@@ -249,5 +245,9 @@ var NAVTREEINDEX19 =
 "classvrv_1_1_object.html#a26a7c60cdf50a4072927aa671112f1f3":[1,0,0,302,110],
 "classvrv_1_1_object.html#a26dd6389f8b6ce5ff1cf9f0b779a0d14":[1,0,0,302,134],
 "classvrv_1_1_object.html#a2775c11d5b1013116cb8636e8e81f49c":[1,0,0,302,84],
-"classvrv_1_1_object.html#a27d10872ab38d0c97931783359b0c502":[1,0,0,302,145]
+"classvrv_1_1_object.html#a27d10872ab38d0c97931783359b0c502":[1,0,0,302,145],
+"classvrv_1_1_object.html#a2a1c4d0ed1a15f33637b03670c9aa98f":[1,0,0,302,17],
+"classvrv_1_1_object.html#a2ac1817c7492a51e6bb550f3002b32de":[1,0,0,302,120],
+"classvrv_1_1_object.html#a2b30e0834719af6134364237c5f78940":[1,0,0,302,69],
+"classvrv_1_1_object.html#a2bfb8ee92dbd7e805de0aae51d07d534":[1,0,0,302,83]
 };

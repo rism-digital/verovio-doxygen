@@ -1,10 +1,5 @@
 var NAVTREEINDEX34 =
 {
-"pedal_8h_source.html":[2,0,182],
-"pgfoot_8h_source.html":[2,0,183],
-"pghead_8h_source.html":[2,0,184],
-"phrase_8h_source.html":[2,0,185],
-"pitchinflection_8h_source.html":[2,0,186],
 "pitchinterface_8h_source.html":[2,0,187],
 "plica_8h_source.html":[2,0,188],
 "plistinterface_8h_source.html":[2,0,189],

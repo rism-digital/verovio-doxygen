@@ -9,7 +9,6 @@ var classvrv_1_1_syl =
     [ "CalcConnectorSpacing", "classvrv_1_1_syl.html#a66d380bb93bb0abd4afd78b21251bfc9", null ],
     [ "CalcHyphenLength", "classvrv_1_1_syl.html#aa54f049014e438aa49c670d5daafc07d", null ],
     [ "Clone", "classvrv_1_1_syl.html#a49723265ec79b247fa9bf1b4a4f48195", null ],
-    [ "CreateDefaultZone", "classvrv_1_1_syl.html#a61983aa1e78d32047fffe5f3c083c09f", null ],
     [ "GetClassName", "classvrv_1_1_syl.html#a0e306a177e586acba88026833a9fcc04", null ],
     [ "GetDrawingHeight", "classvrv_1_1_syl.html#a71acabc60c670d31993618d795d396b7", null ],
     [ "GetDrawingTextInkBottom", "classvrv_1_1_syl.html#a318c839cc09995743ee94addc9d79981", null ],

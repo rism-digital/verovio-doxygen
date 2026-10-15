@@ -1,7 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"classvrv_1_1_ending.html#ae25642ebcaacb55aec1bd662571641d4":[1,0,0,169,1],
-"classvrv_1_1_ending.html#ae5c2c12e6adc107ccb63bd7f26c9131d":[1,0,0,169,5],
 "classvrv_1_1_episema.html":[1,0,0,170],
 "classvrv_1_1_episema.html#a0b82d3768e5c16de90325fa032c6ebc0":[1,0,0,170,10],
 "classvrv_1_1_episema.html#a39ed7ebf32aa5b4e452335e3aec98754":[1,0,0,170,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX10 =
 "classvrv_1_1_find_spanned_layer_elements_functor.html#a2c2ba875eea4dc00ad50885ad05ed757":[1,0,0,198,3],
 "classvrv_1_1_find_spanned_layer_elements_functor.html#a2f3992acf8d228222123621857ff9c5f":[1,0,0,198,2],
 "classvrv_1_1_find_spanned_layer_elements_functor.html#a4f97836ff03097ab7b7162588ddc999a":[1,0,0,198,1],
-"classvrv_1_1_find_spanned_layer_elements_functor.html#a56cf300b5330c4f5a8c373812922a2d5":[1,0,0,198,4]
+"classvrv_1_1_find_spanned_layer_elements_functor.html#a56cf300b5330c4f5a8c373812922a2d5":[1,0,0,198,4],
+"classvrv_1_1_find_spanned_layer_elements_functor.html#a5a8745c938c8e0485ec274b08d99ce39":[1,0,0,198,5],
+"classvrv_1_1_find_spanned_layer_elements_functor.html#a6045840f381f1ccb1493cba5b9ecfb49":[1,0,0,198,8]
 };
