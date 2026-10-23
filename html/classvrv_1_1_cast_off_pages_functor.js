@@ -8,6 +8,6 @@ var classvrv_1_1_cast_off_pages_functor =
     [ "VisitPageElement", "classvrv_1_1_cast_off_pages_functor.html#ae6b5ce01323aa3a66192fb2899d42041", null ],
     [ "VisitPageEnd", "classvrv_1_1_cast_off_pages_functor.html#ad69d209a4d7a9eb2742da2b67e8e57e7", null ],
     [ "VisitPageMilestone", "classvrv_1_1_cast_off_pages_functor.html#a117e5889cdeb538ac5dbb7ca669767f0", null ],
-    [ "VisitScore", "classvrv_1_1_cast_off_pages_functor.html#a2d43f1a3ead2e81d7a68bb60451b9dce", null ],
+    [ "VisitScoreOrPartElement", "classvrv_1_1_cast_off_pages_functor.html#a5188a78a2e9cb98e8f737bbbe210cda8", null ],
     [ "VisitSystem", "classvrv_1_1_cast_off_pages_functor.html#aa81acb339e99522f01ea56dbb294ec1b", null ]
 ];

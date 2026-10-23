@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['uncastoffdoc_2597',['UnCastOffDoc',['../classvrv_1_1_doc.html#a7cb1b2f4b17d550ec69fae48d0eb065f',1,'vrv::Doc']]],
-  ['unescapehtmlentities_2598',['unescapeHtmlEntities',['../classvrv_1_1_humdrum_input.html#a3a9cb0e5cf601ccbe32c261cd96b5ab0',1,'vrv::HumdrumInput']]],
-  ['updatecontrolpointparams_2599',['UpdateControlPointParams',['../classvrv_1_1_bezier_curve.html#ac67345936404ebba9295358c35a6c562',1,'vrv::BezierCurve']]],
-  ['updatecurveparams_2600',['UpdateCurveParams',['../classvrv_1_1_floating_curve_positioner.html#a30ccff64031b6f8e36666e5ff1890223',1,'vrv::FloatingCurvePositioner']]],
-  ['updatefromtransloc_2601',['UpdateFromTransLoc',['../classvrv_1_1_rest.html#a2abfa9a01f57ac36187c78ebe7a30b9a',1,'vrv::Rest']]],
-  ['updatekeysig_2602',['UpdateKeySig',['../classvrv_1_1_score_def.html#ab4c1682800e8a866712b69deb6a0a6f3',1,'vrv::ScoreDef']]],
-  ['updatemetersig_2603',['UpdateMeterSig',['../classvrv_1_1_score_def.html#ae4ec1cc8724da05cd89e8479fec7ef8d',1,'vrv::ScoreDef']]],
-  ['updatepagedrawingsizes_2604',['UpdatePageDrawingSizes',['../classvrv_1_1_doc.html#a1fc55e74595046fc57621f3a0ad52788',1,'vrv::Doc']]],
-  ['updatestemlength_2605',['UpdateStemLength',['../classvrv_1_1_beam_element_coord.html#a4d642d3e677fe0c54be30d4b2c14524f',1,'vrv::BeamElementCoord']]],
-  ['useblockstyle_2606',['UseBlockStyle',['../classvrv_1_1_multi_rest.html#a6373ae6443b859e81d2acd04aa549cc7',1,'vrv::MultiRest']]],
-  ['useglobalstyling_2607',['UseGlobalStyling',['../classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b',1,'vrv::DeviceContext::UseGlobalStyling()'],['../classvrv_1_1_svg_device_context.html#a9982cebfe646f247292b295840b7bb94',1,'vrv::SvgDeviceContext::UseGlobalStyling()']]],
-  ['useliberationtextfont_2608',['UseLiberationTextFont',['../classvrv_1_1_resources.html#ab2b6f36c4af802d7f57f36cae6ff00f4',1,'vrv::Resources']]]
+  ['uncastoffdoc_2603',['UnCastOffDoc',['../classvrv_1_1_doc.html#a7cb1b2f4b17d550ec69fae48d0eb065f',1,'vrv::Doc']]],
+  ['unescapehtmlentities_2604',['unescapeHtmlEntities',['../classvrv_1_1_humdrum_input.html#a3a9cb0e5cf601ccbe32c261cd96b5ab0',1,'vrv::HumdrumInput']]],
+  ['updatecontrolpointparams_2605',['UpdateControlPointParams',['../classvrv_1_1_bezier_curve.html#ac67345936404ebba9295358c35a6c562',1,'vrv::BezierCurve']]],
+  ['updatecurveparams_2606',['UpdateCurveParams',['../classvrv_1_1_floating_curve_positioner.html#a30ccff64031b6f8e36666e5ff1890223',1,'vrv::FloatingCurvePositioner']]],
+  ['updatefromtransloc_2607',['UpdateFromTransLoc',['../classvrv_1_1_rest.html#a2abfa9a01f57ac36187c78ebe7a30b9a',1,'vrv::Rest']]],
+  ['updatekeysig_2608',['UpdateKeySig',['../classvrv_1_1_score_def.html#ab4c1682800e8a866712b69deb6a0a6f3',1,'vrv::ScoreDef']]],
+  ['updatemetersig_2609',['UpdateMeterSig',['../classvrv_1_1_score_def.html#ae4ec1cc8724da05cd89e8479fec7ef8d',1,'vrv::ScoreDef']]],
+  ['updatepagedrawingsizes_2610',['UpdatePageDrawingSizes',['../classvrv_1_1_doc.html#a1fc55e74595046fc57621f3a0ad52788',1,'vrv::Doc']]],
+  ['updatestemlength_2611',['UpdateStemLength',['../classvrv_1_1_beam_element_coord.html#a4d642d3e677fe0c54be30d4b2c14524f',1,'vrv::BeamElementCoord']]],
+  ['useblockstyle_2612',['UseBlockStyle',['../classvrv_1_1_multi_rest.html#a6373ae6443b859e81d2acd04aa549cc7',1,'vrv::MultiRest']]],
+  ['useglobalstyling_2613',['UseGlobalStyling',['../classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b',1,'vrv::DeviceContext::UseGlobalStyling()'],['../classvrv_1_1_svg_device_context.html#a9982cebfe646f247292b295840b7bb94',1,'vrv::SvgDeviceContext::UseGlobalStyling()']]],
+  ['useliberationtextfont_2614',['UseLiberationTextFont',['../classvrv_1_1_resources.html#ab2b6f36c4af802d7f57f36cae6ff00f4',1,'vrv::Resources']]]
 ];

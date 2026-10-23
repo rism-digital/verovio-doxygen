@@ -182,15 +182,15 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" line="145" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classvrv_1_1_score_def_set_current_functor_1a77cb064b921ce1b8becd273f3b229665" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classvrv_1_1_score_def_set_current_functor_1af4e6ac40383ca498225a8be7f45fa9a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>FunctorCode</type>
-        <definition>FunctorCode vrv::ScoreDefSetCurrentFunctor::VisitScore</definition>
-        <argsstring>(Score *score) override</argsstring>
-        <name>VisitScore</name>
-        <reimplements refid="classvrv_1_1_functor_interface_1add596524e106d0aad0afb99f322eaea7">VisitScore</reimplements>
+        <definition>FunctorCode vrv::ScoreDefSetCurrentFunctor::VisitScoreOrPartElement</definition>
+        <argsstring>(ScoreOrPartElement *scoreOrPart) override</argsstring>
+        <name>VisitScoreOrPartElement</name>
+        <reimplements refid="classvrv_1_1_functor_interface_1a520dd0320bf6ca3af0ee15c1ce29de7a">VisitScoreOrPartElement</reimplements>
         <param>
-          <type><ref refid="classvrv_1_1_score" kindref="compound">Score</ref> *</type>
-          <declname>score</declname>
+          <type><ref refid="classvrv_1_1_score_or_part_element" kindref="compound">ScoreOrPartElement</ref> *</type>
+          <declname>scoreOrPart</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -328,9 +328,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classvrv_1_1_score_def_set_current_functor_1ae3c9753766d64666577dde06fc562786" prot="private" static="no" mutable="no">
-        <type><ref refid="classvrv_1_1_score" kindref="compound">Score</ref> *</type>
-        <definition>Score* vrv::ScoreDefSetCurrentFunctor::m_currentScore</definition>
+      <memberdef kind="variable" id="classvrv_1_1_score_def_set_current_functor_1a2a27a75eb63982626884b4405449e4f1" prot="private" static="no" mutable="no">
+        <type><ref refid="classvrv_1_1_score_or_part_element" kindref="compound">ScoreOrPartElement</ref> *</type>
+        <definition>ScoreOrPartElement* vrv::ScoreDefSetCurrentFunctor::m_currentScore</definition>
         <argsstring></argsstring>
         <name>m_currentScore</name>
         <briefdescription>
@@ -339,7 +339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" line="164" column="11" bodyfile="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" bodystart="164" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" line="164" column="24" bodyfile="/home/runner/work/verovio/verovio/include/vrv/setscoredeffunctor.h" bodystart="164" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_score_def_set_current_functor_1a7e87c9900d5d0b14944d4437b5f1c707" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_score_def" kindref="compound">ScoreDef</ref> *</type>
@@ -568,65 +568,75 @@
           <edgelabel>m_expansionMap</edgelabel>
         </childnode>
       </node>
-      <node id="15">
+      <node id="38">
         <label>vrv::PageElement</label>
         <link refid="classvrv_1_1_page_element"/>
         <childnode refid="7" relation="public-inheritance">
         </childnode>
-        <childnode refid="16" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="30">
+      <node id="25">
         <label>AttMultinumMeasures</label>
       </node>
-      <node id="20">
+      <node id="15">
         <label>vrv::ScoreDefElement</label>
         <link refid="classvrv_1_1_score_def_element"/>
         <childnode refid="7" relation="public-inheritance">
         </childnode>
-        <childnode refid="21" relation="public-inheritance">
-        </childnode>
         <childnode refid="16" relation="public-inheritance">
         </childnode>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="25">
+      <node id="20">
         <label>AttDurationRatio</label>
       </node>
       <node id="4">
         <label>vrv::FunctorBase</label>
         <link refid="classvrv_1_1_functor_base"/>
       </node>
-      <node id="34">
-        <label>AttSystems</label>
-      </node>
-      <node id="23">
-        <label>AttBarring</label>
-      </node>
-      <node id="14">
-        <label>vrv::Score</label>
-        <link refid="classvrv_1_1_score"/>
-        <childnode refid="15" relation="public-inheritance">
+      <node id="37">
+        <label>vrv::ScoreOrPartElement</label>
+        <link refid="classvrv_1_1_score_or_part_element"/>
+        <childnode refid="38" relation="public-inheritance">
         </childnode>
-        <childnode refid="17" relation="public-inheritance">
+        <childnode refid="39" relation="public-inheritance">
         </childnode>
         <childnode refid="11" relation="public-inheritance">
         </childnode>
         <childnode refid="12" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="36">
+      <node id="29">
+        <label>AttSystems</label>
+      </node>
+      <node id="18">
+        <label>AttBarring</label>
+      </node>
+      <node id="32">
         <label>AttDistances</label>
       </node>
-      <node id="16">
+      <node id="30">
         <label>AttTyped</label>
       </node>
       <node id="8">
         <label>vrv::BoundingBox</label>
         <link refid="classvrv_1_1_bounding_box"/>
       </node>
-      <node id="21">
+      <node id="16">
         <label>vrv::ScoreDefInterface</label>
         <link refid="classvrv_1_1_score_def_interface"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
         <childnode refid="22" relation="public-inheritance">
         </childnode>
         <childnode refid="23" relation="public-inheritance">
@@ -643,28 +653,18 @@
         </childnode>
         <childnode refid="29" relation="public-inheritance">
         </childnode>
-        <childnode refid="30" relation="public-inheritance">
-        </childnode>
-        <childnode refid="31" relation="public-inheritance">
-        </childnode>
-        <childnode refid="32" relation="public-inheritance">
-        </childnode>
-        <childnode refid="33" relation="public-inheritance">
-        </childnode>
-        <childnode refid="34" relation="public-inheritance">
-        </childnode>
       </node>
-      <node id="40">
+      <node id="36">
         <label>AttTuning</label>
       </node>
-      <node id="22">
+      <node id="17">
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
-      <node id="29">
+      <node id="24">
         <label>AttMmTempo</label>
       </node>
-      <node id="28">
+      <node id="23">
         <label>AttMidiTempo</label>
       </node>
       <node id="10">
@@ -677,20 +677,20 @@
         <childnode refid="12" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="37">
+      <node id="33">
         <label>AttEndings</label>
       </node>
-      <node id="33">
+      <node id="28">
         <label>AttSpacing</label>
       </node>
-      <node id="17">
+      <node id="39">
         <label>vrv::PageMilestoneInterface</label>
         <link refid="classvrv_1_1_page_milestone_interface"/>
-        <childnode refid="18" relation="usage">
+        <childnode refid="40" relation="usage">
           <edgelabel>m_end</edgelabel>
         </childnode>
       </node>
-      <node id="31">
+      <node id="26">
         <label>AttOctaveDefault</label>
       </node>
       <node id="2">
@@ -708,10 +708,10 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="18">
+      <node id="40">
         <label>vrv::PageMilestoneEnd</label>
         <link refid="classvrv_1_1_page_milestone_end"/>
-        <childnode refid="15" relation="public-inheritance">
+        <childnode refid="38" relation="public-inheritance">
         </childnode>
         <childnode refid="7" relation="usage">
           <edgelabel>m_start</edgelabel>
@@ -731,34 +731,34 @@
         <childnode refid="10" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="26">
+      <node id="21">
         <label>AttLyricStyle</label>
       </node>
-      <node id="24">
+      <node id="19">
         <label>AttDurationDefault</label>
       </node>
-      <node id="19">
+      <node id="14">
         <label>vrv::ScoreDef</label>
         <link refid="classvrv_1_1_score_def"/>
-        <childnode refid="20" relation="public-inheritance">
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+        <childnode refid="34" relation="public-inheritance">
         </childnode>
         <childnode refid="35" relation="public-inheritance">
         </childnode>
         <childnode refid="36" relation="public-inheritance">
         </childnode>
-        <childnode refid="37" relation="public-inheritance">
-        </childnode>
-        <childnode refid="38" relation="public-inheritance">
-        </childnode>
-        <childnode refid="39" relation="public-inheritance">
-        </childnode>
-        <childnode refid="40" relation="public-inheritance">
-        </childnode>
       </node>
-      <node id="38">
+      <node id="34">
         <label>AttOptimization</label>
       </node>
-      <node id="32">
+      <node id="27">
         <label>AttPianoPedals</label>
       </node>
       <node id="7">
@@ -767,10 +767,10 @@
         <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="27">
+      <node id="22">
         <label>AttMeasureNumbers</label>
       </node>
-      <node id="35">
+      <node id="31">
         <label>vrv::ObjectListInterface</label>
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
@@ -788,14 +788,14 @@
         <childnode refid="7" relation="public-inheritance">
         </childnode>
         <childnode refid="14" relation="usage">
+          <edgelabel>m_drawingScoreDef</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
           <edgelabel>m_score</edgelabel>
           <edgelabel>m_scoreEnd</edgelabel>
         </childnode>
-        <childnode refid="19" relation="usage">
-          <edgelabel>m_drawingScoreDef</edgelabel>
-        </childnode>
       </node>
-      <node id="39">
+      <node id="35">
         <label>AttTimeBase</label>
       </node>
       <node id="12">
@@ -817,7 +817,7 @@
       <member refid="classvrv_1_1_functor_base_1abd2a529c6eb36f4fe29ef14792766433" prot="public" virt="non-virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>GetFilters</name></member>
       <member refid="classvrv_1_1_score_def_set_current_functor_1a379eb939d6175bac6bdd4c6d5003ad1a" prot="public" virt="non-virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>HasOssia</name></member>
       <member refid="classvrv_1_1_score_def_set_current_functor_1a8b72c1f11fb3c26d5f856419c22cf49b" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>ImplementsEndInterface</name></member>
-      <member refid="classvrv_1_1_score_def_set_current_functor_1ae3c9753766d64666577dde06fc562786" prot="private" virt="non-virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>m_currentScore</name></member>
+      <member refid="classvrv_1_1_score_def_set_current_functor_1a2a27a75eb63982626884b4405449e4f1" prot="private" virt="non-virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>m_currentScore</name></member>
       <member refid="classvrv_1_1_score_def_set_current_functor_1a7e87c9900d5d0b14944d4437b5f1c707" prot="private" virt="non-virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>m_currentScoreDef</name></member>
       <member refid="classvrv_1_1_score_def_set_current_functor_1a730497bd0a2e60f1755d5339f0596aad" prot="private" virt="non-virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>m_currentStaffDef</name></member>
       <member refid="classvrv_1_1_score_def_set_current_functor_1a3731a216563c3fadab5e8652f969b78b" prot="private" virt="non-virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>m_currentSystem</name></member>
@@ -1013,6 +1013,10 @@
       <member refid="classvrv_1_1_functor_interface_1a4556280f79249caa3446ca8337d6c87b" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitPageMilestoneEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1afe60604c91064a41ac2d0651044821dc" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitPages</name></member>
       <member refid="classvrv_1_1_functor_interface_1a2e063dd960cb5beea454430655dd607b" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitPagesEnd</name></member>
+      <member refid="classvrv_1_1_functor_interface_1a184ed9564b286d42ec2e9979bb6458b9" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitPart</name></member>
+      <member refid="classvrv_1_1_functor_interface_1a05120d43e8a0b279ad25798afa07535c" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitPartEnd</name></member>
+      <member refid="classvrv_1_1_functor_interface_1ac74ea83b6ae2ba3e5bc3643f2ec8bcef" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitParts</name></member>
+      <member refid="classvrv_1_1_functor_interface_1aab07a8626f922128fe350318c933d63c" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitPartsEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1a9c7997e06ef154aecd1bf73560501d02" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitPb</name></member>
       <member refid="classvrv_1_1_functor_interface_1ab19b3b8af36314ecb73cb249ef8083cd" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitPbEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1a32a209470afc9c036a3c004e669ff274" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitPedal</name></member>
@@ -1043,12 +1047,14 @@
       <member refid="classvrv_1_1_functor_interface_1aed6a6975be2741f0071cc53cda77f0db" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitRunningElementEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1af55a42c30bd3a45228f6777ebd0143a8" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitSb</name></member>
       <member refid="classvrv_1_1_functor_interface_1abeb10c937514cfcae8c040a0060162c9" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitSbEnd</name></member>
-      <member refid="classvrv_1_1_score_def_set_current_functor_1a77cb064b921ce1b8becd273f3b229665" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitScore</name></member>
+      <member refid="classvrv_1_1_functor_interface_1add596524e106d0aad0afb99f322eaea7" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitScore</name></member>
       <member refid="classvrv_1_1_score_def_set_current_functor_1ad62ced4a4f06ef5286f989ab0f0d3c94" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitScoreDef</name></member>
       <member refid="classvrv_1_1_functor_interface_1a616302f40042a408f4e2131d5190317a" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitScoreDefElement</name></member>
       <member refid="classvrv_1_1_functor_interface_1aa91f866e66afacb77880f0c43042e90f" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitScoreDefElementEnd</name></member>
       <member refid="classvrv_1_1_score_def_set_current_functor_1a24f7ddb1cd8263cd47dcc2a949e7d3a9" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitScoreDefEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1a6f661646e07355884c24db1a5cadfb91" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitScoreEnd</name></member>
+      <member refid="classvrv_1_1_score_def_set_current_functor_1af4e6ac40383ca498225a8be7f45fa9a5" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitScoreOrPartElement</name></member>
+      <member refid="classvrv_1_1_functor_interface_1a3b7ea0d4a431319bc1f911cfe6b44874" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitScoreOrPartElementEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1aef52cba275e4f753832b4b70929349d8" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitSection</name></member>
       <member refid="classvrv_1_1_functor_interface_1a80b4b1d9425101a7cab9b1cb42194282" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitSectionEnd</name></member>
       <member refid="classvrv_1_1_functor_interface_1a0beb9ee831e1db91a64bcc1aaf5fbbd3" prot="public" virt="virtual"><scope>vrv::ScoreDefSetCurrentFunctor</scope><name>VisitSlur</name></member>

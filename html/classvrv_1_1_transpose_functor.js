@@ -11,7 +11,7 @@ var classvrv_1_1_transpose_functor =
     [ "VisitMdiv", "classvrv_1_1_transpose_functor.html#a09ceeeab16bb46c4e0a0432c72f3d24c", null ],
     [ "VisitNote", "classvrv_1_1_transpose_functor.html#aa6ab32b49dd877f9728e0cd401024516", null ],
     [ "VisitRest", "classvrv_1_1_transpose_functor.html#a57f987d281efcb6837e15fb1b16cadab", null ],
-    [ "VisitScore", "classvrv_1_1_transpose_functor.html#a0d455bfda2f1a3ed128174c05bba6ed7", null ],
+    [ "VisitScoreOrPartElement", "classvrv_1_1_transpose_functor.html#a485e195fc413993934447286a3544023", null ],
     [ "VisitStaffDef", "classvrv_1_1_transpose_functor.html#a5e4537744bcd2ecca084edc100e4e7bc", null ],
     [ "m_keySigForStaffN", "classvrv_1_1_transpose_functor.html#ad409cf33bcd5797511d141ef78cf2d07", null ],
     [ "m_transposer", "classvrv_1_1_transpose_functor.html#aa802a86ee53d9ab07077cc7d5b79ed8d", null ]

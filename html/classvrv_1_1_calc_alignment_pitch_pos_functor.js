@@ -5,7 +5,7 @@ var classvrv_1_1_calc_alignment_pitch_pos_functor =
     [ "ImplementsEndInterface", "classvrv_1_1_calc_alignment_pitch_pos_functor.html#adeb42c0008ca535dd8fef470541d0c72", null ],
     [ "VisitLayer", "classvrv_1_1_calc_alignment_pitch_pos_functor.html#acb8803d388c767241436f81c04f18318", null ],
     [ "VisitLayerElement", "classvrv_1_1_calc_alignment_pitch_pos_functor.html#a977e7a33f22e851cd69a3400251c6860", null ],
-    [ "VisitScore", "classvrv_1_1_calc_alignment_pitch_pos_functor.html#a42b143e72c91e7b809c84f0822e84c01", null ],
     [ "VisitScoreDef", "classvrv_1_1_calc_alignment_pitch_pos_functor.html#a1ba75e41c089671ab12d6ca4a2f08f9c", null ],
+    [ "VisitScoreOrPartElement", "classvrv_1_1_calc_alignment_pitch_pos_functor.html#a73f1c09c6035f75592b3e3cf4123a3f2", null ],
     [ "VisitStaffDef", "classvrv_1_1_calc_alignment_pitch_pos_functor.html#ad426488a3d5a751b628418692c017335", null ]
 ];

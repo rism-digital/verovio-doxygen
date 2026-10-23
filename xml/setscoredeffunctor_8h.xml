@@ -850,7 +850,7 @@
 <codeline lineno="87"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
 <codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitPageEnd(<ref refid="classvrv_1_1_page" kindref="compound">Page</ref><sp/>*page)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitScore(<ref refid="classvrv_1_1_score" kindref="compound">Score</ref><sp/>*score)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitScoreOrPartElement(<ref refid="classvrv_1_1_score_or_part_element" kindref="compound">ScoreOrPartElement</ref><sp/>*scoreOrPart)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -860,7 +860,7 @@
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>list<sp/>of<sp/>all<sp/>scores</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;Score<sp/>*&gt;<sp/>m_scores;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;ScoreOrPartElement<sp/>*&gt;<sp/>m_scores;</highlight></codeline>
 <codeline lineno="103"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
@@ -893,7 +893,7 @@
 <codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitOssia(Ossia<sp/>*ossia)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitPage(Page<sp/>*page)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitProport(Proport<sp/>*proport)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitScore(Score<sp/>*score)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitScoreOrPartElement(ScoreOrPartElement<sp/>*scoreOrPart)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitScoreDef(ScoreDef<sp/>*scoreDef)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitScoreDefEnd(ScoreDef<sp/>*scoreDef)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitStaff(Staff<sp/>*staff)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
@@ -910,7 +910,7 @@
 <codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="162"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>score</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>Score<sp/>*m_currentScore;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>ScoreOrPartElement<sp/>*m_currentScore;</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>scoreDef</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>ScoreDef<sp/>*m_currentScoreDef;</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>staffDef</highlight><highlight class="normal"></highlight></codeline>
@@ -953,7 +953,7 @@
 <codeline lineno="213"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Functor<sp/>interface</highlight></codeline>
 <codeline lineno="214"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitMeasure(<ref refid="classvrv_1_1_measure" kindref="compound">Measure</ref><sp/>*measure)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitScore(<ref refid="classvrv_1_1_score" kindref="compound">Score</ref><sp/>*score)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitScoreOrPartElement(<ref refid="classvrv_1_1_score_or_part_element" kindref="compound">ScoreOrPartElement</ref><sp/>*scoreOrPart)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitStaff(<ref refid="classvrv_1_1_staff" kindref="compound">Staff</ref><sp/>*staff)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitStaffGrpEnd(<ref refid="classvrv_1_1_staff_grp" kindref="compound">StaffGrp</ref><sp/>*staffGrp)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>FunctorCode<sp/>VisitSystem(<ref refid="classvrv_1_1_system" kindref="compound">System</ref><sp/>*system)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>

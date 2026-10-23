@@ -89,93 +89,65 @@ $(document).ready(function(){initNavTree('score_8h_source.html',''); initResizab
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Name:        score.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Author:      Laurent Pugin</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Created:     29/08/2016</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Created:     2026</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Copyright (c) Authors and others. All rights reserved.</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __VRV_SCORE_H__</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __VRV_SCORE_H__</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;atts_shared.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;options.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;pageelement.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;pagemilestone.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;scoredef.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>vrv {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;scoreorpartelement.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>vrv {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Score</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>SymbolDef;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// Score</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classvrv_1_1_score.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_score.html">Score</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_page_element.html">PageElement</a>, <span class="keyword">public</span> <a class="code" href="classvrv_1_1_page_milestone_interface.html">PageMilestoneInterface</a>, <span class="keyword">public</span> AttLabelled, <span class="keyword">public</span> AttNNumberLike {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classvrv_1_1_score.html">Score</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classvrv_1_1_score.html">Score</a>(<span class="keywordtype">bool</span> createScoreDef);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_score.html">Score</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classvrv_1_1_score.html#a4edefe15e3054f89b5db69f3a92eee15">   41</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_score.html#a4edefe15e3054f89b5db69f3a92eee15">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;score&quot;</span>; }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classvrv_1_1_score.html#a1960d7a74077e2cffaf903cfba9a4849">   49</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_score.html#a1960d7a74077e2cffaf903cfba9a4849">IsSupportedChild</a>(ClassId classId) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classvrv_1_1_score.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvrv_1_1_score.html">Score</a> : <span class="keyword">public</span> <a class="code" href="classvrv_1_1_score_or_part_element.html">ScoreOrPartElement</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classvrv_1_1_score.html">Score</a>(<span class="keywordtype">bool</span> createScoreDef);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classvrv_1_1_score.html">Score</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classvrv_1_1_score.html">Score</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classvrv_1_1_score.html#a154d91c787e8a0d688aa3032dc32bc74">   33</a></span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *<a class="code" href="classvrv_1_1_score.html#a154d91c787e8a0d688aa3032dc32bc74">Clone</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classvrv_1_1_score.html">Score</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classvrv_1_1_score.html#a4edefe15e3054f89b5db69f3a92eee15">   34</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_score.html#a4edefe15e3054f89b5db69f3a92eee15">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::string GetClassName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;score&quot;</span>; }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// Functors //</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//----------//</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classvrv_1_1_score.html#a883e8e0525f738d8ace2c0a29642f2eb">   46</a></span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_score.html#a883e8e0525f738d8ace2c0a29642f2eb">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_score.html#a883e8e0525f738d8ace2c0a29642f2eb">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classvrv_1_1_score.html#aff1164fbb0e576ee4dc2bac3dd6342ab">   56</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_score.html#aff1164fbb0e576ee4dc2bac3dd6342ab">SetScoreDefSubtree</a>(<a class="code" href="classvrv_1_1_object.html">Object</a> *subtree, <a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *scoreScoreDef);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *GetScoreDef() { <span class="keywordflow">return</span> m_scoreDef; }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *GetScoreDef()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_scoreDef; }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    Object *GetScoreDefSubtree() { <span class="keywordflow">return</span> m_scoreDefSubtree; }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> ClearScoreDef();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classvrv_1_1_score.html#acd59d1d7b84c0b8efa3c63646f7c8388">   68</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvrv_1_1_score.html#acd59d1d7b84c0b8efa3c63646f7c8388">CalcRunningElementHeight</a>(<a class="code" href="classvrv_1_1_doc.html">Doc</a> *doc);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classvrv_1_1_score.html#a3a2637750d08541d340b1f6055995e32">   73</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvrv_1_1_score.html#a3a2637750d08541d340b1f6055995e32">ScoreDefNeedsOptimization</a>(<span class="keywordtype">int</span> optionCondense) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// Functors //</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//----------//</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classvrv_1_1_score.html#a883e8e0525f738d8ace2c0a29642f2eb">   83</a></span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_score.html#a883e8e0525f738d8ace2c0a29642f2eb">Accept</a>(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    FunctorCode <a class="code" href="classvrv_1_1_score.html#a883e8e0525f738d8ace2c0a29642f2eb">Accept</a>(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_functor.html">Functor</a> &amp;functor) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    FunctorCode AcceptEnd(<a class="code" href="classvrv_1_1_const_functor.html">ConstFunctor</a> &amp;functor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classvrv_1_1_score_def.html">ScoreDef</a> *m_scoreDef;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="classvrv_1_1_object.html">Object</a> *m_scoreDefSubtree;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">int</span> m_drawingPgHeadHeight;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">int</span> m_drawingPgFootHeight;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">int</span> m_drawingPgHead2Height;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">int</span> m_drawingPgFoot2Height;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;} <span class="comment">// namespace vrv</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <span class="comment">// namespace vrv</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassvrv_1_1_const_functor_html"><div class="ttname"><a href="classvrv_1_1_const_functor.html">vrv::ConstFunctor</a></div><div class="ttdoc">This abstract class is the base class for all const functors.</div><div class="ttdef"><b>Definition:</b> functor.h:126</div></div>
-<div class="ttc" id="aclassvrv_1_1_doc_html"><div class="ttname"><a href="classvrv_1_1_doc.html">vrv::Doc</a></div><div class="ttdoc">This class is a hold the data and corresponds to the model of a MVC design pattern.</div><div class="ttdef"><b>Definition:</b> doc.h:41</div></div>
 <div class="ttc" id="aclassvrv_1_1_functor_html"><div class="ttname"><a href="classvrv_1_1_functor.html">vrv::Functor</a></div><div class="ttdoc">This abstract class is the base class for all mutable functors.</div><div class="ttdef"><b>Definition:</b> functor.h:101</div></div>
 <div class="ttc" id="aclassvrv_1_1_object_html"><div class="ttname"><a href="classvrv_1_1_object.html">vrv::Object</a></div><div class="ttdoc">This class represents a basic object.</div><div class="ttdef"><b>Definition:</b> object.h:66</div></div>
-<div class="ttc" id="aclassvrv_1_1_page_element_html"><div class="ttname"><a href="classvrv_1_1_page_element.html">vrv::PageElement</a></div><div class="ttdoc">This class represents elements appearing within a page.</div><div class="ttdef"><b>Definition:</b> pageelement.h:25</div></div>
-<div class="ttc" id="aclassvrv_1_1_page_milestone_interface_html"><div class="ttname"><a href="classvrv_1_1_page_milestone_interface.html">vrv::PageMilestoneInterface</a></div><div class="ttdoc">This class is an interface for container elements that have to be turned to milestones in a page-base...</div><div class="ttdef"><b>Definition:</b> pagemilestone.h:83</div></div>
-<div class="ttc" id="aclassvrv_1_1_score_def_html"><div class="ttname"><a href="classvrv_1_1_score_def.html">vrv::ScoreDef</a></div><div class="ttdoc">This class represents a MEI scoreDef.</div><div class="ttdef"><b>Definition:</b> scoredef.h:136</div></div>
-<div class="ttc" id="aclassvrv_1_1_score_html"><div class="ttname"><a href="classvrv_1_1_score.html">vrv::Score</a></div><div class="ttdoc">This class represent a &lt;score&gt; in MEI.</div><div class="ttdef"><b>Definition:</b> score.h:30</div></div>
-<div class="ttc" id="aclassvrv_1_1_score_html_a1960d7a74077e2cffaf903cfba9a4849"><div class="ttname"><a href="classvrv_1_1_score.html#a1960d7a74077e2cffaf903cfba9a4849">vrv::Score::IsSupportedChild</a></div><div class="ttdeci">bool IsSupportedChild(ClassId classId) override</div><div class="ttdoc">Base method for checking if a child can be added.</div></div>
-<div class="ttc" id="aclassvrv_1_1_score_html_a3a2637750d08541d340b1f6055995e32"><div class="ttname"><a href="classvrv_1_1_score.html#a3a2637750d08541d340b1f6055995e32">vrv::Score::ScoreDefNeedsOptimization</a></div><div class="ttdeci">bool ScoreDefNeedsOptimization(int optionCondense) const</div><div class="ttdoc">Check whether we need to optimize score based on the condense option.</div></div>
+<div class="ttc" id="aclassvrv_1_1_score_html"><div class="ttname"><a href="classvrv_1_1_score.html">vrv::Score</a></div><div class="ttdoc">This class represent a &lt;score&gt; MEI.</div><div class="ttdef"><b>Definition:</b> score.h:22</div></div>
+<div class="ttc" id="aclassvrv_1_1_score_html_a154d91c787e8a0d688aa3032dc32bc74"><div class="ttname"><a href="classvrv_1_1_score.html#a154d91c787e8a0d688aa3032dc32bc74">vrv::Score::Clone</a></div><div class="ttdeci">Object * Clone() const override</div><div class="ttdoc">Method call for copying child classes.</div><div class="ttdef"><b>Definition:</b> score.h:33</div></div>
 <div class="ttc" id="aclassvrv_1_1_score_html_a4edefe15e3054f89b5db69f3a92eee15"><div class="ttname"><a href="classvrv_1_1_score.html#a4edefe15e3054f89b5db69f3a92eee15">vrv::Score::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Reset the object, that is 1) removing all children and 2) resetting all attributes.</div></div>
 <div class="ttc" id="aclassvrv_1_1_score_html_a883e8e0525f738d8ace2c0a29642f2eb"><div class="ttname"><a href="classvrv_1_1_score.html#a883e8e0525f738d8ace2c0a29642f2eb">vrv::Score::Accept</a></div><div class="ttdeci">FunctorCode Accept(Functor &amp;functor) override</div><div class="ttdoc">Interface for class functor visitation.</div></div>
-<div class="ttc" id="aclassvrv_1_1_score_html_acd59d1d7b84c0b8efa3c63646f7c8388"><div class="ttname"><a href="classvrv_1_1_score.html#acd59d1d7b84c0b8efa3c63646f7c8388">vrv::Score::CalcRunningElementHeight</a></div><div class="ttdeci">void CalcRunningElementHeight(Doc *doc)</div><div class="ttdoc">Calculate the height of the pgHead/pgHead2 and pgFoot/pgFoot2 (if any) Requires the Doc to have an em...</div></div>
-<div class="ttc" id="aclassvrv_1_1_score_html_aff1164fbb0e576ee4dc2bac3dd6342ab"><div class="ttname"><a href="classvrv_1_1_score.html#aff1164fbb0e576ee4dc2bac3dd6342ab">vrv::Score::SetScoreDefSubtree</a></div><div class="ttdeci">void SetScoreDefSubtree(Object *subtree, ScoreDef *scoreScoreDef)</div><div class="ttdoc">Getter for the score/scoreDef.</div></div>
+<div class="ttc" id="aclassvrv_1_1_score_or_part_element_html"><div class="ttname"><a href="classvrv_1_1_score_or_part_element.html">vrv::ScoreOrPartElement</a></div><div class="ttdoc">This class represents a &lt;score&gt; or a &lt;part&gt; in MEI.</div><div class="ttdef"><b>Definition:</b> scoreorpartelement.h:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c4b80f8a98d79512eca1f5c943145ccd.html">vrv</a></li><li class="navelem"><b>score.h</b></li>
-    <li class="footer">Generated on Thu Oct 22 2026 09:32:06 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Oct 23 2026 10:09:29 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

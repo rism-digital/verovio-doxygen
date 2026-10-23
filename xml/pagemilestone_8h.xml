@@ -5,7 +5,8 @@
     <includes refid="pageelement_8h" local="yes">pageelement.h</includes>
     <includes refid="vrvdef_8h" local="yes">vrvdef.h</includes>
     <includedby refid="mdiv_8h" local="yes">mdiv.h</includedby>
-    <includedby refid="score_8h" local="yes">score.h</includedby>
+    <includedby refid="parts_8h" local="yes">parts.h</includedby>
+    <includedby refid="scoreorpartelement_8h" local="yes">scoreorpartelement.h</includedby>
     <incdepgraph>
       <node id="10">
         <label>list</label>
@@ -166,9 +167,25 @@
         <label>mdiv.h</label>
         <link refid="mdiv_8h_source"/>
       </node>
-      <node id="3">
+      <node id="6">
         <label>score.h</label>
         <link refid="score_8h_source"/>
+      </node>
+      <node id="5">
+        <label>part.h</label>
+        <link refid="part_8h_source"/>
+      </node>
+      <node id="4">
+        <label>scoreorpartelement.h</label>
+        <link refid="scoreorpartelement_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>parts.h</label>
+        <link refid="parts_8h_source"/>
       </node>
       <node id="1">
         <label>pagemilestone.h</label>
@@ -176,6 +193,8 @@
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

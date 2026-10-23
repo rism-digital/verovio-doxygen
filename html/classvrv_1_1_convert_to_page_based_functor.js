@@ -11,9 +11,11 @@ var classvrv_1_1_convert_to_page_based_functor =
     [ "VisitMdiv", "classvrv_1_1_convert_to_page_based_functor.html#aab603c8c0901cdb7047cd9cafa932d02", null ],
     [ "VisitMdivEnd", "classvrv_1_1_convert_to_page_based_functor.html#ab3d14ee6ae4b33d8ed1e3beda19a617f", null ],
     [ "VisitMeasure", "classvrv_1_1_convert_to_page_based_functor.html#af1c8310d3143426a4ed8065b5f05a088", null ],
-    [ "VisitScore", "classvrv_1_1_convert_to_page_based_functor.html#a36e83775c1daf083bacf3139d1977b12", null ],
+    [ "VisitParts", "classvrv_1_1_convert_to_page_based_functor.html#a203effaed4c2e152b5e7f7963ce907f8", null ],
+    [ "VisitPartsEnd", "classvrv_1_1_convert_to_page_based_functor.html#a09a19719c799e674c85b4fe25b1f1e59", null ],
     [ "VisitScoreDef", "classvrv_1_1_convert_to_page_based_functor.html#a16bc33cbe5163224b639f3a0d230e3b6", null ],
-    [ "VisitScoreEnd", "classvrv_1_1_convert_to_page_based_functor.html#aedc202fc320135d73010e07729291025", null ],
+    [ "VisitScoreOrPartElement", "classvrv_1_1_convert_to_page_based_functor.html#a54ae31cc414550c561162bba9fb2da64", null ],
+    [ "VisitScoreOrPartElementEnd", "classvrv_1_1_convert_to_page_based_functor.html#a586322aa22c74ae75c424b0175b73528", null ],
     [ "VisitSection", "classvrv_1_1_convert_to_page_based_functor.html#a7fe4e9bc7151a385680344055efcf428", null ],
     [ "VisitSectionEnd", "classvrv_1_1_convert_to_page_based_functor.html#a975fd6f31809d5e0da4beb092c772945", null ],
     [ "VisitSystemElement", "classvrv_1_1_convert_to_page_based_functor.html#a62c5c6762678507a0df6baf700a998db", null ]

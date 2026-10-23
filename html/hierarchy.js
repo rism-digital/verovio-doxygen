@@ -462,7 +462,11 @@ var hierarchy =
       [ "vrv::Pages", "classvrv_1_1_pages.html", [
         [ "vrv::PageRange", "classvrv_1_1_page_range.html", null ]
       ] ],
-      [ "vrv::Score", "classvrv_1_1_score.html", null ],
+      [ "vrv::Parts", "classvrv_1_1_parts.html", null ],
+      [ "vrv::ScoreOrPartElement", "classvrv_1_1_score_or_part_element.html", [
+        [ "vrv::Part", "classvrv_1_1_part.html", null ],
+        [ "vrv::Score", "classvrv_1_1_score.html", null ]
+      ] ],
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ],
       [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ],
       [ "vrv::TextElement", "classvrv_1_1_text_element.html", [
@@ -599,11 +603,12 @@ var hierarchy =
       [ "vrv::Measure", "classvrv_1_1_measure.html", null ],
       [ "vrv::Octave", "classvrv_1_1_octave.html", null ],
       [ "vrv::Pages", "classvrv_1_1_pages.html", null ],
+      [ "vrv::Parts", "classvrv_1_1_parts.html", null ],
       [ "vrv::Pb", "classvrv_1_1_pb.html", null ],
       [ "vrv::Refrain", "classvrv_1_1_refrain.html", null ],
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ],
       [ "vrv::Sb", "classvrv_1_1_sb.html", null ],
-      [ "vrv::Score", "classvrv_1_1_score.html", null ],
+      [ "vrv::ScoreOrPartElement", "classvrv_1_1_score_or_part_element.html", null ],
       [ "vrv::Section", "classvrv_1_1_section.html", null ],
       [ "vrv::StaffGrp", "classvrv_1_1_staff_grp.html", null ],
       [ "vrv::TabDurSym", "classvrv_1_1_tab_dur_sym.html", null ],
@@ -927,7 +932,8 @@ var hierarchy =
       [ "vrv::PageElement", "classvrv_1_1_page_element.html", [
         [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
         [ "vrv::PageMilestoneEnd", "classvrv_1_1_page_milestone_end.html", null ],
-        [ "vrv::Score", "classvrv_1_1_score.html", null ]
+        [ "vrv::Parts", "classvrv_1_1_parts.html", null ],
+        [ "vrv::ScoreOrPartElement", "classvrv_1_1_score_or_part_element.html", null ]
       ] ],
       [ "vrv::ScoreDefElement", "classvrv_1_1_score_def_element.html", null ],
       [ "vrv::Staff", "classvrv_1_1_staff.html", null ],
@@ -1402,7 +1408,8 @@ var hierarchy =
     ] ],
     [ "vrv::PageMilestoneInterface", "classvrv_1_1_page_milestone_interface.html", [
       [ "vrv::Mdiv", "classvrv_1_1_mdiv.html", null ],
-      [ "vrv::Score", "classvrv_1_1_score.html", null ]
+      [ "vrv::Parts", "classvrv_1_1_parts.html", null ],
+      [ "vrv::ScoreOrPartElement", "classvrv_1_1_score_or_part_element.html", null ]
     ] ],
     [ "vrv::Pen", "classvrv_1_1_pen.html", null ],
     [ "vrv::Point", "classvrv_1_1_point.html", null ],

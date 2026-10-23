@@ -3,7 +3,8 @@
   <compounddef id="classvrv_1_1_page_milestone_interface" kind="class" language="C++" prot="public">
     <compoundname>vrv::PageMilestoneInterface</compoundname>
     <derivedcompoundref refid="classvrv_1_1_mdiv" prot="public" virt="non-virtual">vrv::Mdiv</derivedcompoundref>
-    <derivedcompoundref refid="classvrv_1_1_score" prot="public" virt="non-virtual">vrv::Score</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_parts" prot="public" virt="non-virtual">vrv::Parts</derivedcompoundref>
+    <derivedcompoundref refid="classvrv_1_1_score_or_part_element" prot="public" virt="non-virtual">vrv::ScoreOrPartElement</derivedcompoundref>
     <includes refid="pagemilestone_8h" local="no">pagemilestone.h</includes>
       <sectiondef kind="user-defined">
       <header>Constructors, destructors, reset methods</header>
@@ -41,7 +42,10 @@
         <argsstring>()</argsstring>
         <name>Reset</name>
         <reimplementedby refid="classvrv_1_1_mdiv_1a0402d6c78f71a1657fcc7e56573c0cff">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_part_1a66b20ea37c0525d934032ac6225b259e">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_parts_1a6c4cb7208f2e18f059984ae4dfa1053b">Reset</reimplementedby>
         <reimplementedby refid="classvrv_1_1_score_1a4edefe15e3054f89b5db69f3a92eee15">Reset</reimplementedby>
+        <reimplementedby refid="classvrv_1_1_score_or_part_element_1a8950805be6ef58b6e2ea6b599f254fd3">Reset</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -158,14 +162,32 @@
     </detaileddescription>
     <inheritancegraph>
       <node id="3">
+        <label>vrv::Parts</label>
+        <link refid="classvrv_1_1_parts"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vrv::ScoreOrPartElement</label>
+        <link refid="classvrv_1_1_score_or_part_element"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
         <label>vrv::Score</label>
         <link refid="classvrv_1_1_score"/>
-        <childnode refid="1" relation="public-inheritance">
+        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1">
         <label>vrv::PageMilestoneInterface</label>
         <link refid="classvrv_1_1_page_milestone_interface"/>
+      </node>
+      <node id="5">
+        <label>vrv::Part</label>
+        <link refid="classvrv_1_1_part"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="2">
         <label>vrv::Mdiv</label>

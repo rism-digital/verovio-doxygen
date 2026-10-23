@@ -40,7 +40,7 @@ var classvrv_1_1_page =
     [ "m_pageMarginTop", "classvrv_1_1_page.html#a561c8c529d822cbd5eda0f03866f33d6", null ],
     [ "m_pageWidth", "classvrv_1_1_page.html#a7915248836b2e53973c22840963fc8a9", null ],
     [ "m_PPUFactor", "classvrv_1_1_page.html#aec718fc1ac6ba74b3cadba551753f8c1", null ],
-    [ "m_score", "classvrv_1_1_page.html#adbcbc8b6a54d8f5eb9f96e2d8bc33b64", null ],
-    [ "m_scoreEnd", "classvrv_1_1_page.html#a80b0dd81ded5e68fc5a56052d794d875", null ],
+    [ "m_score", "classvrv_1_1_page.html#a9c9d9c280da0d36e0bafbe1e0f0fbca7", null ],
+    [ "m_scoreEnd", "classvrv_1_1_page.html#a4ef255ea1a0e5069a0221187b44ae898", null ],
     [ "m_surface", "classvrv_1_1_page.html#a2f188b167ed93af6d53128faa4b3dc90", null ]
 ];
